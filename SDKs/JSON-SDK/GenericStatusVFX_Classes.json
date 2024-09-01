@@ -1,4 +1,18 @@
 {
+  "GenericStatusVFXResponse": {
+    "Super": "StatusResponse",
+    "FullSize": "0x38",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "VFXDataAsset",
+        "Type": "class GenericStatusVFXDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
   "GenericStatusVFXDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x90",
@@ -40,20 +54,6 @@
         "Type": "struct Transform",
         "Size": "0x30",
         "Offset": "0x60"
-      }
-    ]
-  },
-  "GenericStatusVFXResponse": {
-    "Super": "StatusResponse",
-    "FullSize": "0x38",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "VFXDataAsset",
-        "Type": "class GenericStatusVFXDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x30"
       }
     ]
   },

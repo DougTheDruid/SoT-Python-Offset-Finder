@@ -6,14 +6,13 @@
 #include "GameEventsOnDemandFramework_Structs.h"
 
 
-// Size 0x150 (Full Size[0x178] - InheritedSize[0x28]
-class GameEventOnDemandAvailabilityHandler: public Object
+// Size 0x138 (Full Size[0x160] - InheritedSize[0x28]
+class GameEventOnDemandAvailabilityStateTracker: public Object
 {
 public:
-	class GameEventAvailabilityParamsDataAsset*                  AvailabilityParamsAsset;                           // 0x28(0x8)
-	class GameEventOnDemandAvailabilityStateTracker*             AvailabilityStateTracker;                          // 0x30(0x8)
-	class UClass*                                                GameEventType;                                     // 0x38(0x8)
-	char                                                         CompletedState;                                    // 0xa0(0x1)
+	class UClass*                                                ShipTypeLimit;                                     // 0xb0(0x8)
+	TArray<struct Guid>                                          OnDemandParticipatingCrewIds;                      // 0xb8(0x10)
+	TArray<struct Guid>                                          EmergentlyParticipatingCrewIds;                    // 0xc8(0x10)
 };
 
 
@@ -34,13 +33,14 @@ public:
 };
 
 
-// Size 0x138 (Full Size[0x160] - InheritedSize[0x28]
-class GameEventOnDemandAvailabilityStateTracker: public Object
+// Size 0x150 (Full Size[0x178] - InheritedSize[0x28]
+class GameEventOnDemandAvailabilityHandler: public Object
 {
 public:
-	class UClass*                                                ShipTypeLimit;                                     // 0xb0(0x8)
-	TArray<struct Guid>                                          OnDemandParticipatingCrewIds;                      // 0xb8(0x10)
-	TArray<struct Guid>                                          EmergentlyParticipatingCrewIds;                    // 0xc8(0x10)
+	class GameEventAvailabilityParamsDataAsset*                  AvailabilityParamsAsset;                           // 0x28(0x8)
+	class GameEventOnDemandAvailabilityStateTracker*             AvailabilityStateTracker;                          // 0x30(0x8)
+	class UClass*                                                GameEventType;                                     // 0x38(0x8)
+	char                                                         CompletedState;                                    // 0xa0(0x1)
 };
 
 

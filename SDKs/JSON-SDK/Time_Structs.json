@@ -1,4 +1,15 @@
 {
+  "ReplicatedDateTime": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Ticks",
+        "Type": "int64",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "EventSetDateTime": {
     "ClassSize": "0x14",
     "Attributes": [
@@ -34,34 +45,23 @@
       }
     ]
   },
-  "GameTime": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "DateTimeRepresentation",
-        "Type": "struct DateTime",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ReplicatedDateTime": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Ticks",
-        "Type": "int64",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "ReplicatedTimespan": {
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "Ticks",
         "Type": "int64",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GameTime": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "DateTimeRepresentation",
+        "Type": "struct DateTime",
         "Size": "0x8",
         "Offset": "0x0"
       }

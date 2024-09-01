@@ -1,4 +1,61 @@
 {
+  "Margin": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Left",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Top",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "Right",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Bottom",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "SlateSound": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ResourceObject",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SlateColor": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "SpecifiedColor",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ColorUseRule",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "FontData": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -66,80 +123,6 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x3c"
-      }
-    ]
-  },
-  "SlateColor": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "SpecifiedColor",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ColorUseRule",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "Margin": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Left",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Top",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "Right",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Bottom",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "SlateSound": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "ResourceObject",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TypefaceEntry": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "Name",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Font",
-        "Type": "struct FontData",
-        "Size": "0x30",
-        "Offset": "0x8"
       }
     ]
   },
@@ -223,6 +206,323 @@
         "Type": "struct Box2D",
         "Size": "0x14",
         "Offset": "0x7c"
+      }
+    ]
+  },
+  "TypefaceEntry": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "Name",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Font",
+        "Type": "struct FontData",
+        "Size": "0x30",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "SpinBoxStyle": {
+    "ClassSize": "0x318",
+    "Attributes": [
+      {
+        "Name": "BackgroundBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "HoveredBackgroundBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "ActiveFillBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "InactiveFillBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x1b8"
+      },
+      {
+        "Name": "ArrowsImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x248"
+      },
+      {
+        "Name": "ForegroundColor",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x2d8"
+      },
+      {
+        "Name": "TextPadding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x308"
+      }
+    ]
+  },
+  "ScrollBoxStyle": {
+    "ClassSize": "0x248",
+    "Attributes": [
+      {
+        "Name": "TopShadowBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "BottomShadowBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "LeftShadowBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "RightShadowBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x1b8"
+      }
+    ]
+  },
+  "TableColumnHeaderStyle": {
+    "ClassSize": "0x518",
+    "Attributes": [
+      {
+        "Name": "SortPrimaryAscendingImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "SortPrimaryDescendingImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "SortSecondaryAscendingImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "SortSecondaryDescendingImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x1b8"
+      },
+      {
+        "Name": "NormalBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x248"
+      },
+      {
+        "Name": "HoveredBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x2d8"
+      },
+      {
+        "Name": "MenuDropdownImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x368"
+      },
+      {
+        "Name": "MenuDropdownNormalBorderBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "MenuDropdownHoveredBorderBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x488"
+      }
+    ]
+  },
+  "TableRowStyle": {
+    "ClassSize": "0x728",
+    "Attributes": [
+      {
+        "Name": "SelectorFocusedBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ActiveHoveredBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "ActiveBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "InactiveHoveredBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x1b8"
+      },
+      {
+        "Name": "InactiveBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x248"
+      },
+      {
+        "Name": "EvenRowBackgroundHoveredBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x2d8"
+      },
+      {
+        "Name": "EvenRowBackgroundBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x368"
+      },
+      {
+        "Name": "OddRowBackgroundHoveredBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "OddRowBackgroundBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x488"
+      },
+      {
+        "Name": "TextColor",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x518"
+      },
+      {
+        "Name": "SelectedTextColor",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x548"
+      },
+      {
+        "Name": "DropIndicator_Above",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x578"
+      },
+      {
+        "Name": "DropIndicator_Onto",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x608"
+      },
+      {
+        "Name": "DropIndicator_Below",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x698"
+      }
+    ]
+  },
+  "ExpandableAreaStyle": {
+    "ClassSize": "0x128",
+    "Attributes": [
+      {
+        "Name": "CollapsedImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ExpandedImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "ScrollBarStyle": {
+    "ClassSize": "0x518",
+    "Attributes": [
+      {
+        "Name": "HorizontalBackgroundImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "VerticalBackgroundImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "VerticalTopSlotImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "HorizontalTopSlotImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x1b8"
+      },
+      {
+        "Name": "VerticalBottomSlotImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x248"
+      },
+      {
+        "Name": "HorizontalBottomSlotImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x2d8"
+      },
+      {
+        "Name": "NormalThumbImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x368"
+      },
+      {
+        "Name": "HoveredThumbImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "DraggedThumbImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x488"
       }
     ]
   },
@@ -380,6 +680,81 @@
       }
     ]
   },
+  "TextBlockStyle": {
+    "ClassSize": "0x160",
+    "Attributes": [
+      {
+        "Name": "Font",
+        "Type": "struct SlateFontInfo",
+        "Size": "0x40",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ColorAndOpacity",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "ShadowOffset",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "ShadowColorAndOpacity",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "SelectedBackgroundColor",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "HighlightColor",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "HighlightShape",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "Typeface": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Fonts",
+        "Type": "TArray<struct TypefaceEntry>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ScrollBorderStyle": {
+    "ClassSize": "0x128",
+    "Attributes": [
+      {
+        "Name": "TopShadowBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "BottomShadowBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x98"
+      }
+    ]
+  },
   "ButtonStyle": {
     "ClassSize": "0x2a8",
     "Attributes": [
@@ -445,52 +820,6 @@
       }
     ]
   },
-  "InlineTextImageStyle": {
-    "ClassSize": "0xa0",
-    "Attributes": [
-      {
-        "Name": "Image",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Baseline",
-        "Type": "int16",
-        "Size": "0x2",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "ScrollBoxStyle": {
-    "ClassSize": "0x248",
-    "Attributes": [
-      {
-        "Name": "TopShadowBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "BottomShadowBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "LeftShadowBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x128"
-      },
-      {
-        "Name": "RightShadowBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x1b8"
-      }
-    ]
-  },
   "SliderStyle": {
     "ClassSize": "0x248",
     "Attributes": [
@@ -520,156 +849,37 @@
       }
     ]
   },
-  "TextBlockStyle": {
-    "ClassSize": "0x160",
+  "SplitterStyle": {
+    "ClassSize": "0x128",
     "Attributes": [
       {
-        "Name": "Font",
-        "Type": "struct SlateFontInfo",
-        "Size": "0x40",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "ColorAndOpacity",
-        "Type": "struct SlateColor",
-        "Size": "0x30",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "ShadowOffset",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "ShadowColorAndOpacity",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "SelectedBackgroundColor",
-        "Type": "struct SlateColor",
-        "Size": "0x30",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "HighlightColor",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "HighlightShape",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0xd0"
-      }
-    ]
-  },
-  "ScrollBarStyle": {
-    "ClassSize": "0x518",
-    "Attributes": [
-      {
-        "Name": "HorizontalBackgroundImage",
+        "Name": "HandleNormalBrush",
         "Type": "struct SlateBrush",
         "Size": "0x90",
         "Offset": "0x8"
       },
       {
-        "Name": "VerticalBackgroundImage",
+        "Name": "HandleHighlightBrush",
         "Type": "struct SlateBrush",
         "Size": "0x90",
         "Offset": "0x98"
-      },
-      {
-        "Name": "VerticalTopSlotImage",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x128"
-      },
-      {
-        "Name": "HorizontalTopSlotImage",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x1b8"
-      },
-      {
-        "Name": "VerticalBottomSlotImage",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x248"
-      },
-      {
-        "Name": "HorizontalBottomSlotImage",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x2d8"
-      },
-      {
-        "Name": "NormalThumbImage",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x368"
-      },
-      {
-        "Name": "HoveredThumbImage",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "DraggedThumbImage",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x488"
       }
     ]
   },
-  "SpinBoxStyle": {
-    "ClassSize": "0x318",
+  "InlineTextImageStyle": {
+    "ClassSize": "0xa0",
     "Attributes": [
       {
-        "Name": "BackgroundBrush",
+        "Name": "Image",
         "Type": "struct SlateBrush",
         "Size": "0x90",
         "Offset": "0x8"
       },
       {
-        "Name": "HoveredBackgroundBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
+        "Name": "Baseline",
+        "Type": "int16",
+        "Size": "0x2",
         "Offset": "0x98"
-      },
-      {
-        "Name": "ActiveFillBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x128"
-      },
-      {
-        "Name": "InactiveFillBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x1b8"
-      },
-      {
-        "Name": "ArrowsImage",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x248"
-      },
-      {
-        "Name": "ForegroundColor",
-        "Type": "struct SlateColor",
-        "Size": "0x30",
-        "Offset": "0x2d8"
-      },
-      {
-        "Name": "TextPadding",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0x308"
       }
     ]
   },
@@ -693,316 +903,6 @@
         "Type": "struct SlateBrush",
         "Size": "0x90",
         "Offset": "0x128"
-      }
-    ]
-  },
-  "Typeface": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Fonts",
-        "Type": "TArray<struct TypefaceEntry>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TableColumnHeaderStyle": {
-    "ClassSize": "0x518",
-    "Attributes": [
-      {
-        "Name": "SortPrimaryAscendingImage",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "SortPrimaryDescendingImage",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "SortSecondaryAscendingImage",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x128"
-      },
-      {
-        "Name": "SortSecondaryDescendingImage",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x1b8"
-      },
-      {
-        "Name": "NormalBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x248"
-      },
-      {
-        "Name": "HoveredBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x2d8"
-      },
-      {
-        "Name": "MenuDropdownImage",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x368"
-      },
-      {
-        "Name": "MenuDropdownNormalBorderBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "MenuDropdownHoveredBorderBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x488"
-      }
-    ]
-  },
-  "TableRowStyle": {
-    "ClassSize": "0x728",
-    "Attributes": [
-      {
-        "Name": "SelectorFocusedBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "ActiveHoveredBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "ActiveBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x128"
-      },
-      {
-        "Name": "InactiveHoveredBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x1b8"
-      },
-      {
-        "Name": "InactiveBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x248"
-      },
-      {
-        "Name": "EvenRowBackgroundHoveredBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x2d8"
-      },
-      {
-        "Name": "EvenRowBackgroundBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x368"
-      },
-      {
-        "Name": "OddRowBackgroundHoveredBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "OddRowBackgroundBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x488"
-      },
-      {
-        "Name": "TextColor",
-        "Type": "struct SlateColor",
-        "Size": "0x30",
-        "Offset": "0x518"
-      },
-      {
-        "Name": "SelectedTextColor",
-        "Type": "struct SlateColor",
-        "Size": "0x30",
-        "Offset": "0x548"
-      },
-      {
-        "Name": "DropIndicator_Above",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x578"
-      },
-      {
-        "Name": "DropIndicator_Onto",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x608"
-      },
-      {
-        "Name": "DropIndicator_Below",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x698"
-      }
-    ]
-  },
-  "SplitterStyle": {
-    "ClassSize": "0x128",
-    "Attributes": [
-      {
-        "Name": "HandleNormalBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "HandleHighlightBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "ExpandableAreaStyle": {
-    "ClassSize": "0x128",
-    "Attributes": [
-      {
-        "Name": "CollapsedImage",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "ExpandedImage",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "ScrollBorderStyle": {
-    "ClassSize": "0x128",
-    "Attributes": [
-      {
-        "Name": "TopShadowBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "BottomShadowBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "ComboButtonStyle": {
-    "ClassSize": "0x3e0",
-    "Attributes": [
-      {
-        "Name": "ButtonStyle",
-        "Type": "struct ButtonStyle",
-        "Size": "0x2a8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "DownArrowImage",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x2b0"
-      },
-      {
-        "Name": "MenuBorderBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x340"
-      },
-      {
-        "Name": "MenuBorderPadding",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0x3d0"
-      }
-    ]
-  },
-  "DockTabStyle": {
-    "ClassSize": "0x6e8",
-    "Attributes": [
-      {
-        "Name": "CloseButtonStyle",
-        "Type": "struct ButtonStyle",
-        "Size": "0x2a8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "NormalBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x2b0"
-      },
-      {
-        "Name": "ActiveBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x340"
-      },
-      {
-        "Name": "ColorOverlayBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "ForegroundBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x460"
-      },
-      {
-        "Name": "HoveredBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x4f0"
-      },
-      {
-        "Name": "ContentAreaBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x580"
-      },
-      {
-        "Name": "TabWellBrush",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x610"
-      },
-      {
-        "Name": "TabPadding",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0x6a0"
-      },
-      {
-        "Name": "OverlapWidth",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x6b0"
-      },
-      {
-        "Name": "FlashColor",
-        "Type": "struct SlateColor",
-        "Size": "0x30",
-        "Offset": "0x6b8"
       }
     ]
   },
@@ -1035,103 +935,32 @@
       }
     ]
   },
-  "EditableTextBoxStyle": {
-    "ClassSize": "0x860",
+  "ComboButtonStyle": {
+    "ClassSize": "0x3e0",
     "Attributes": [
       {
-        "Name": "BackgroundImageNormal",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "BackgroundImageHovered",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "BackgroundImageFocused",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x128"
-      },
-      {
-        "Name": "BackgroundImageReadOnly",
-        "Type": "struct SlateBrush",
-        "Size": "0x90",
-        "Offset": "0x1b8"
-      },
-      {
-        "Name": "Padding",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0x248"
-      },
-      {
-        "Name": "Font",
-        "Type": "struct SlateFontInfo",
-        "Size": "0x40",
-        "Offset": "0x258"
-      },
-      {
-        "Name": "ForegroundColor",
-        "Type": "struct SlateColor",
-        "Size": "0x30",
-        "Offset": "0x298"
-      },
-      {
-        "Name": "BackgroundColor",
-        "Type": "struct SlateColor",
-        "Size": "0x30",
-        "Offset": "0x2c8"
-      },
-      {
-        "Name": "ReadOnlyForegroundColor",
-        "Type": "struct SlateColor",
-        "Size": "0x30",
-        "Offset": "0x2f8"
-      },
-      {
-        "Name": "HScrollBarPadding",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0x328"
-      },
-      {
-        "Name": "VScrollBarPadding",
-        "Type": "struct Margin",
-        "Size": "0x10",
-        "Offset": "0x338"
-      },
-      {
-        "Name": "ScrollBarStyle",
-        "Type": "struct ScrollBarStyle",
-        "Size": "0x518",
-        "Offset": "0x348"
-      }
-    ]
-  },
-  "HyperlinkStyle": {
-    "ClassSize": "0x420",
-    "Attributes": [
-      {
-        "Name": "UnderlineStyle",
+        "Name": "ButtonStyle",
         "Type": "struct ButtonStyle",
         "Size": "0x2a8",
         "Offset": "0x8"
       },
       {
-        "Name": "TextStyle",
-        "Type": "struct TextBlockStyle",
-        "Size": "0x160",
+        "Name": "DownArrowImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
         "Offset": "0x2b0"
       },
       {
-        "Name": "Padding",
+        "Name": "MenuBorderBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x340"
+      },
+      {
+        "Name": "MenuBorderPadding",
         "Type": "struct Margin",
         "Size": "0x10",
-        "Offset": "0x410"
+        "Offset": "0x3d0"
       }
     ]
   },
@@ -1218,6 +1047,83 @@
       }
     ]
   },
+  "EditableTextBoxStyle": {
+    "ClassSize": "0x860",
+    "Attributes": [
+      {
+        "Name": "BackgroundImageNormal",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "BackgroundImageHovered",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "BackgroundImageFocused",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "BackgroundImageReadOnly",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x1b8"
+      },
+      {
+        "Name": "Padding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x248"
+      },
+      {
+        "Name": "Font",
+        "Type": "struct SlateFontInfo",
+        "Size": "0x40",
+        "Offset": "0x258"
+      },
+      {
+        "Name": "ForegroundColor",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x298"
+      },
+      {
+        "Name": "BackgroundColor",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x2c8"
+      },
+      {
+        "Name": "ReadOnlyForegroundColor",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x2f8"
+      },
+      {
+        "Name": "HScrollBarPadding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x328"
+      },
+      {
+        "Name": "VScrollBarPadding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x338"
+      },
+      {
+        "Name": "ScrollBarStyle",
+        "Type": "struct ScrollBarStyle",
+        "Size": "0x518",
+        "Offset": "0x348"
+      }
+    ]
+  },
   "HeaderRowStyle": {
     "ClassSize": "0xc20",
     "Attributes": [
@@ -1294,55 +1200,97 @@
       }
     ]
   },
-  "InlineEditableTextBlockStyle": {
-    "ClassSize": "0x9c8",
+  "DockTabStyle": {
+    "ClassSize": "0x6e8",
     "Attributes": [
       {
-        "Name": "EditableTextBoxStyle",
-        "Type": "struct EditableTextBoxStyle",
-        "Size": "0x860",
+        "Name": "CloseButtonStyle",
+        "Type": "struct ButtonStyle",
+        "Size": "0x2a8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "NormalBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x2b0"
+      },
+      {
+        "Name": "ActiveBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x340"
+      },
+      {
+        "Name": "ColorOverlayBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "ForegroundBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x460"
+      },
+      {
+        "Name": "HoveredBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x4f0"
+      },
+      {
+        "Name": "ContentAreaBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x580"
+      },
+      {
+        "Name": "TabWellBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x610"
+      },
+      {
+        "Name": "TabPadding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x6a0"
+      },
+      {
+        "Name": "OverlapWidth",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x6b0"
+      },
+      {
+        "Name": "FlashColor",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x6b8"
+      }
+    ]
+  },
+  "HyperlinkStyle": {
+    "ClassSize": "0x420",
+    "Attributes": [
+      {
+        "Name": "UnderlineStyle",
+        "Type": "struct ButtonStyle",
+        "Size": "0x2a8",
         "Offset": "0x8"
       },
       {
         "Name": "TextStyle",
         "Type": "struct TextBlockStyle",
         "Size": "0x160",
-        "Offset": "0x868"
-      }
-    ]
-  },
-  "ComboBoxStyle": {
-    "ClassSize": "0x428",
-    "Attributes": [
-      {
-        "Name": "ComboButtonStyle",
-        "Type": "struct ComboButtonStyle",
-        "Size": "0x3e0",
-        "Offset": "0x8"
+        "Offset": "0x2b0"
       },
       {
-        "Name": "PressedSlateSound",
-        "Type": "struct SlateSound",
-        "Size": "0x18",
-        "Offset": "0x3e8"
-      },
-      {
-        "Name": "SelectionChangeSlateSound",
-        "Type": "struct SlateSound",
-        "Size": "0x18",
-        "Offset": "0x400"
-      },
-      {
-        "Name": "PressedSound",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "SelectionChangeSound",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x420"
+        "Name": "Padding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x410"
       }
     ]
   },
@@ -1360,6 +1308,23 @@
         "Type": "TArray<struct CompositeSubFont>",
         "Size": "0x10",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "InlineEditableTextBlockStyle": {
+    "ClassSize": "0x9c8",
+    "Attributes": [
+      {
+        "Name": "EditableTextBoxStyle",
+        "Type": "struct EditableTextBoxStyle",
+        "Size": "0x860",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "TextStyle",
+        "Type": "struct TextBlockStyle",
+        "Size": "0x160",
+        "Offset": "0x868"
       }
     ]
   },
@@ -1413,6 +1378,41 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xaf8"
+      }
+    ]
+  },
+  "ComboBoxStyle": {
+    "ClassSize": "0x428",
+    "Attributes": [
+      {
+        "Name": "ComboButtonStyle",
+        "Type": "struct ComboButtonStyle",
+        "Size": "0x3e0",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "PressedSlateSound",
+        "Type": "struct SlateSound",
+        "Size": "0x18",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "SelectionChangeSlateSound",
+        "Type": "struct SlateSound",
+        "Size": "0x18",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "PressedSound",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Name": "SelectionChangeSound",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x420"
       }
     ]
   },

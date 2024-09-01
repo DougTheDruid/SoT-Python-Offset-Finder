@@ -1420,10 +1420,10 @@ AthenaAIControllerSenseSettingOverride:
     Type: class UClass*
   - Name: SenseSettings
     Offset: '0x8'
-    Size: '0x20'
+    Size: '0x24'
     Type: struct AthenaAIControllerSenseSettings
   - Name: ClearPerceivedData
-    Offset: '0x28'
+    Offset: '0x2c'
     Size: '0x1'
     Type: bool
   ClassSize: '0x30'
@@ -1457,19 +1457,23 @@ AthenaAIControllerSenseSettings:
     Offset: '0x10'
     Size: '0x4'
     Type: float
-  - Name: SightRadiusForCrouching
+  - Name: MaxHearingRangeForCrouching
     Offset: '0x14'
     Size: '0x4'
     Type: float
-  - Name: LoseSightRadiusForCrouching
+  - Name: SightRadiusForCrouching
     Offset: '0x18'
     Size: '0x4'
     Type: float
-  - Name: PeripheralVisionAngleDegreesForCrouching
+  - Name: LoseSightRadiusForCrouching
     Offset: '0x1c'
     Size: '0x4'
     Type: float
-  ClassSize: '0x20'
+  - Name: PeripheralVisionAngleDegreesForCrouching
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x24'
 AthenaAIControllerTargetPickingData:
   Attributes:
   - Name: TargetName
@@ -2195,6 +2199,10 @@ EventTinySharkSpawned:
     Offset: '0x20'
     Size: '0xc'
     Type: struct Vector
+  - Name: NumTinySharksOnServer
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: int
   ClassSize: '0x30'
 EventVisualAppearanceSelected:
   Attributes:
@@ -2714,8 +2722,12 @@ TinySharkSpawnTelemetryEvent:
     Offset: '0x20'
     Size: '0x10'
     Type: struct Guid
-  - Name: SpawnLocation
+  - Name: NumTinySharkOnServer
     Offset: '0x30'
+    Size: '0x4'
+    Type: int
+  - Name: SpawnLocation
+    Offset: '0x34'
     Size: '0xc'
     Type: struct Vector
   ClassSize: '0x40'

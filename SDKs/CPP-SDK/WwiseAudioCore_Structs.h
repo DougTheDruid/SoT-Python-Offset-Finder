@@ -22,6 +22,25 @@ public:
 };
 
 
+// Size 0x18
+struct WwiseEventParam
+{
+public:
+	class WwiseEvent*                                            WwiseEvent;                                        // 0x0(0x8)
+	struct FName                                                 SourcePath;                                        // 0x8(0x8)
+	struct FName                                                 SourceObj;                                         // 0x10(0x8)
+};
+
+
+// Size 0x20
+struct WwisePlatformMapping
+{
+public:
+	struct FString                                               UnrealPlatform;                                    // 0x0(0x10)
+	struct FString                                               WwisePlatform;                                     // 0x10(0x10)
+};
+
+
 // Size 0x28
 struct ReverbPresetControllerSettings
 {
@@ -39,34 +58,6 @@ public:
 };
 
 
-// Size 0x20
-struct WwisePlatformMapping
-{
-public:
-	struct FString                                               UnrealPlatform;                                    // 0x0(0x10)
-	struct FString                                               WwisePlatform;                                     // 0x10(0x10)
-};
-
-
-// Size 0x18
-struct WwiseEventParam
-{
-public:
-	class WwiseEvent*                                            WwiseEvent;                                        // 0x0(0x8)
-	struct FName                                                 SourcePath;                                        // 0x8(0x8)
-	struct FName                                                 SourceObj;                                         // 0x10(0x8)
-};
-
-
-// Size 0x20
-struct WwisePlatformMappings
-{
-public:
-	struct FString                                               DefaultWwisePlatform;                              // 0x0(0x10)
-	TArray<struct WwisePlatformMapping>                          Mappings;                                          // 0x10(0x10)
-};
-
-
 // Size 0x64
 struct WwiseAudioReverbPresets
 {
@@ -81,6 +72,15 @@ public:
 	float                                                        MinSpaceSizeWindowForEarlyReflections;             // 0x34(0x4)
 	float                                                        MaxSpaceSizeWindowforEarlyReflections;             // 0x38(0x4)
 	struct ReverbPresetControllerSettings                        SamplingSettings;                                  // 0x3c(0x28)
+};
+
+
+// Size 0x20
+struct WwisePlatformMappings
+{
+public:
+	struct FString                                               DefaultWwisePlatform;                              // 0x0(0x10)
+	TArray<struct WwisePlatformMapping>                          Mappings;                                          // 0x10(0x10)
 };
 
 

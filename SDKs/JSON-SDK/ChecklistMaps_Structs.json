@@ -1,41 +1,18 @@
 {
-  "ChecklistItem": {
-    "ClassSize": "0x50",
+  "ChecklistBootyDeliveredEvent": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Description",
-        "Type": "struct FText",
-        "Size": "0x38",
+        "Name": "Seller",
+        "Type": "class Actor*",
+        "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "NumRequiredActionCompletions",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "ActionData",
-        "Type": "TArray<class ChecklistActionData*>",
-        "Size": "0x10",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "ChecklistMapItemData": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "Description",
-        "Type": "struct TreasureMapTextDesc",
-        "Size": "0x48",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "IsComplete",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x48"
+        "Name": "BuyingNPC",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -73,20 +50,43 @@
       }
     ]
   },
-  "ChecklistBootyDeliveredEvent": {
-    "ClassSize": "0x10",
+  "ChecklistMapItemData": {
+    "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "Seller",
-        "Type": "class Actor*",
-        "Size": "0x8",
+        "Name": "Description",
+        "Type": "struct TreasureMapTextDesc",
+        "Size": "0x48",
         "Offset": "0x0"
       },
       {
-        "Name": "BuyingNPC",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x8"
+        "Name": "IsComplete",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "ChecklistItem": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "Description",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NumRequiredActionCompletions",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "ActionData",
+        "Type": "TArray<class ChecklistActionData*>",
+        "Size": "0x10",
+        "Offset": "0x40"
       }
     ]
   },

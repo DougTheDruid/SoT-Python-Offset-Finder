@@ -1,4 +1,21 @@
 {
+  "EventInteractionBlockingStateChanged": {
+    "ClassSize": "0x2",
+    "Attributes": [
+      {
+        "Name": "IsInteractionBlocked",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "InteractionBlockReason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1"
+      }
+    ]
+  },
   "IsNewInteractingPlayerCondition": {
     "ClassSize": "0x48",
     "Attributes": [
@@ -30,23 +47,6 @@
         "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "EventInteractionBlockingStateChanged": {
-    "ClassSize": "0x2",
-    "Attributes": [
-      {
-        "Name": "IsInteractionBlocked",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "InteractionBlockReason",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x1"
       }
     ]
   },

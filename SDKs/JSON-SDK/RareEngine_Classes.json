@@ -1,18 +1,4 @@
 {
-  "StallDetector": {
-    "Super": "Object",
-    "FullSize": "0x50",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "Callback",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x30"
-      }
-    ]
-  },
   "AssetReferencer": {
     "Super": "DataAsset",
     "FullSize": "0x38",
@@ -24,6 +10,20 @@
         "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0x28"
+      }
+    ]
+  },
+  "StallDetector": {
+    "Super": "Object",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Callback",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x30"
       }
     ]
   },

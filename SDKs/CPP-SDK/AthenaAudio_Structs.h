@@ -30,21 +30,21 @@ public:
 
 
 // Size 0x18
+struct AnimNotify_SoundSwitch
+{
+public:
+	struct StringAssetReference                                  SkeletalMeshReference;                             // 0x0(0x10)
+	struct FName                                                 SkeletalMeshCategoryName;                          // 0x10(0x8)
+};
+
+
+// Size 0x18
 struct StoryDrivenAudioPortalSetting
 {
 public:
 	struct StoryFlag                                             Story;                                             // 0x0(0x8)
 	class AudioSpaceDataAsset*                                   AudioInsideSpace;                                  // 0x8(0x8)
 	class AudioSpaceDataAsset*                                   AudioOutsideSpace;                                 // 0x10(0x8)
-};
-
-
-// Size 0x18
-struct AnimNotify_SoundSwitch
-{
-public:
-	struct StringAssetReference                                  SkeletalMeshReference;                             // 0x0(0x10)
-	struct FName                                                 SkeletalMeshCategoryName;                          // 0x10(0x8)
 };
 
 

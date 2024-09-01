@@ -1,4 +1,32 @@
 {
+  "AndCondition": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Conditions",
+        "Type": "TArray<struct ConditionInstance>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "IsSpecifiedActorCondition": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "SpecifyingActorPayloadSelector",
+        "Type": "struct ConditionContextPayloadSelectorInstance",
+        "Size": "0x20",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "TargetActorPayloadSelector",
+        "Type": "struct ConditionContextPayloadSelectorInstance",
+        "Size": "0x20",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "OrCondition": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -21,6 +49,17 @@
       }
     ]
   },
+  "IsGameOnSpecificPlayModeCondition": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "TargetMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "NotCondition": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -32,24 +71,13 @@
       }
     ]
   },
-  "IsFeatureEnabledCondition": {
-    "ClassSize": "0x18",
+  "TargetConditionContextPayload": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Feature",
-        "Type": "struct FeatureFlag",
-        "Size": "0xc",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AndCondition": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Conditions",
-        "Type": "TArray<struct ConditionInstance>",
-        "Size": "0x10",
+        "Name": "Target",
+        "Type": "class Actor*",
+        "Size": "0x8",
         "Offset": "0x8"
       }
     ]
@@ -65,24 +93,24 @@
       }
     ]
   },
-  "InstigatorConditionContextPayload": {
+  "WorldObjectConditionContextPayload": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Instigator",
-        "Type": "class Actor*",
+        "Name": "WorldObject",
+        "Type": "class World*",
         "Size": "0x8",
         "Offset": "0x8"
       }
     ]
   },
-  "TargetedPayloadConditionBase": {
-    "ClassSize": "0x28",
+  "IsFeatureEnabledCondition": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "PayloadSelector",
-        "Type": "struct ConditionContextPayloadSelectorInstance",
-        "Size": "0x20",
+        "Name": "Feature",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
         "Offset": "0x8"
       }
     ]
@@ -98,13 +126,13 @@
       }
     ]
   },
-  "TargetConditionContextPayload": {
-    "ClassSize": "0x10",
+  "TargetedPayloadConditionBase": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "Target",
-        "Type": "class Actor*",
-        "Size": "0x8",
+        "Name": "PayloadSelector",
+        "Type": "struct ConditionContextPayloadSelectorInstance",
+        "Size": "0x20",
         "Offset": "0x8"
       }
     ]
@@ -126,40 +154,12 @@
       }
     ]
   },
-  "IsGameOnSpecificPlayModeCondition": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "TargetMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "IsSpecifiedActorCondition": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "SpecifyingActorPayloadSelector",
-        "Type": "struct ConditionContextPayloadSelectorInstance",
-        "Size": "0x20",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "TargetActorPayloadSelector",
-        "Type": "struct ConditionContextPayloadSelectorInstance",
-        "Size": "0x20",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "WorldObjectConditionContextPayload": {
+  "InstigatorConditionContextPayload": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "WorldObject",
-        "Type": "class World*",
+        "Name": "Instigator",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x8"
       }

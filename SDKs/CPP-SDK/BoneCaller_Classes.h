@@ -6,20 +6,20 @@
 #include "BoneCaller_Structs.h"
 
 
-// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
-class BoneCallerOwnershipComponent: public ActorComponent
-{
-public:
-	struct Guid                                                  OwningCrewID;                                      // 0xd0(0x10)
-};
-
-
 // Size 0x310 (Full Size[0x6d8] - InheritedSize[0x3c8]
 class BoneCallerService: public Actor
 {
 public:
 	class BoneCallerServiceParams*                               ServiceParams;                                     // 0x660(0x8)
 	map                                                          PlayerBoneCallerData;                              // 0x668(0x50)
+};
+
+
+// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
+class BoneCallerOwnershipComponent: public ActorComponent
+{
+public:
+	struct Guid                                                  OwningCrewID;                                      // 0xd0(0x10)
 };
 
 

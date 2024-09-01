@@ -6,6 +6,14 @@
 #include "LevelSequence_Structs.h"
 
 
+// Size 0x40 (Full Size[0x648] - InheritedSize[0x608]
+class LevelSequencePlayer: public MovieSceneSequencePlayer
+{
+public:
+	class Actor*                                                 SpawnablesParent;                                  // 0x608(0x8)
+};
+
+
 // Size 0x80 (Full Size[0x448] - InheritedSize[0x3c8]
 class LevelSequenceActor: public Actor
 {
@@ -22,11 +30,12 @@ public:
 };
 
 
-// Size 0x40 (Full Size[0x648] - InheritedSize[0x608]
-class LevelSequencePlayer: public MovieSceneSequencePlayer
+// Size 0x98 (Full Size[0x2c8] - InheritedSize[0x230]
+class LevelSequenceBurnIn: public UserWidget
 {
 public:
-	class Actor*                                                 SpawnablesParent;                                  // 0x608(0x8)
+	struct LevelSequencePlayerSnapshot                           FrameInformation;                                  // 0x230(0x90)
+	class LevelSequenceActor*                                    LevelSequenceActor;                                // 0x2c0(0x8)
 };
 
 
@@ -37,15 +46,6 @@ public:
 	class MovieScene*                                            MovieScene;                                        // 0x2a8(0x8)
 	struct LevelSequenceObjectReferenceMap                       ObjectReferences;                                  // 0x2b0(0xa0)
 	map                                                          PossessedObjects;                                  // 0x350(0x50)
-};
-
-
-// Size 0x98 (Full Size[0x2c8] - InheritedSize[0x230]
-class LevelSequenceBurnIn: public UserWidget
-{
-public:
-	struct LevelSequencePlayerSnapshot                           FrameInformation;                                  // 0x230(0x90)
-	class LevelSequenceActor*                                    LevelSequenceActor;                                // 0x2c0(0x8)
 };
 
 

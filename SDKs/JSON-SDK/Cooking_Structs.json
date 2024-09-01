@@ -1,50 +1,5 @@
 {
-  "OnPlacedItemInCookingPot": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Interactor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ItemToCook",
-        "Type": "class ItemInfo*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "OnRemovedItemFromCookingPot": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Interactor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CookableComponentSmokeFeedbackTimingEntry": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "StateDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "StateFeedbackLevel",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "CookEndTelemetryEvent": {
+  "CookStartTelemetryEvent": {
     "ClassSize": "0x30",
     "Attributes": [
       {
@@ -70,6 +25,51 @@
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x20"
+      }
+    ]
+  },
+  "OnRemovedItemFromCookingPot": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Interactor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CookerSmokeFeedbackEntry": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "FeedbackLevel",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SmokeVFX",
+        "Type": "class ParticleSystem*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "OnPlacedItemInCookingPot": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Interactor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ItemToCook",
+        "Type": "class ItemInfo*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -132,7 +132,7 @@
       }
     ]
   },
-  "CookStartTelemetryEvent": {
+  "CookEndTelemetryEvent": {
     "ClassSize": "0x30",
     "Attributes": [
       {
@@ -161,20 +161,20 @@
       }
     ]
   },
-  "CookerSmokeFeedbackEntry": {
-    "ClassSize": "0x10",
+  "CookableComponentSmokeFeedbackTimingEntry": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "FeedbackLevel",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "StateDuration",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "SmokeVFX",
-        "Type": "class ParticleSystem*",
-        "Size": "0x8",
-        "Offset": "0x8"
+        "Name": "StateFeedbackLevel",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x4"
       }
     ]
   },

@@ -1,26 +1,4 @@
 {
-  "CustomServerLocalisationModel": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "LocalisationModelData",
-        "Type": "map",
-        "Size": "0x50",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CustomServerClientData": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Key",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "LocPairData": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -35,6 +13,28 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "CustomServerClientData": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Key",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomServerLocalisationModel": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "LocalisationModelData",
+        "Type": "map",
+        "Size": "0x50",
+        "Offset": "0x0"
       }
     ]
   },

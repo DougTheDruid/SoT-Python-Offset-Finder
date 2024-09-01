@@ -1,33 +1,27 @@
 {
-  "GameEventOnDemandAvailabilityHandler": {
+  "GameEventOnDemandAvailabilityStateTracker": {
     "Super": "Object",
-    "FullSize": "0x178",
+    "FullSize": "0x160",
     "InheritedSize": "0x28",
-    "ClassSize": "0x150",
+    "ClassSize": "0x138",
     "Attributes": [
       {
-        "Name": "AvailabilityParamsAsset",
-        "Type": "class GameEventAvailabilityParamsDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "AvailabilityStateTracker",
-        "Type": "class GameEventOnDemandAvailabilityStateTracker*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "GameEventType",
+        "Name": "ShipTypeLimit",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x38"
+        "Offset": "0xb0"
       },
       {
-        "Name": "CompletedState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xa0"
+        "Name": "OnDemandParticipatingCrewIds",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "EmergentlyParticipatingCrewIds",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0xc8"
       }
     ]
   },
@@ -99,29 +93,35 @@
       }
     ]
   },
-  "GameEventOnDemandAvailabilityStateTracker": {
+  "GameEventOnDemandAvailabilityHandler": {
     "Super": "Object",
-    "FullSize": "0x160",
+    "FullSize": "0x178",
     "InheritedSize": "0x28",
-    "ClassSize": "0x138",
+    "ClassSize": "0x150",
     "Attributes": [
       {
-        "Name": "ShipTypeLimit",
+        "Name": "AvailabilityParamsAsset",
+        "Type": "class GameEventAvailabilityParamsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "AvailabilityStateTracker",
+        "Type": "class GameEventOnDemandAvailabilityStateTracker*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "GameEventType",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0xb0"
+        "Offset": "0x38"
       },
       {
-        "Name": "OnDemandParticipatingCrewIds",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "EmergentlyParticipatingCrewIds",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0xc8"
+        "Name": "CompletedState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xa0"
       }
     ]
   },

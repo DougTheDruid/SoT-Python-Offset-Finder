@@ -4,24 +4,6 @@
 // https://github.com/DougTheDruid
 
 // Size 0x10
-struct VideoPlaybackStartEvent
-{
-public:
-	struct FString                                               MediaTextureName;                                  // 0x0(0x10)
-};
-
-
-// Size 0x28
-struct VideoSubtitleEvent
-{
-public:
-	struct FString                                               MediaTextureName;                                  // 0x0(0x10)
-	struct FString                                               SubtitleString;                                    // 0x10(0x10)
-	double                                                       SubtitleDuration;                                  // 0x20(0x8)
-};
-
-
-// Size 0x10
 struct VideoPlaybackStopEvent
 {
 public:
@@ -29,12 +11,20 @@ public:
 };
 
 
-// Size 0x20
-struct VideoPlaybackLoadEvent
+// Size 0x10
+struct VideoPlaybackStartEvent
 {
 public:
 	struct FString                                               MediaTextureName;                                  // 0x0(0x10)
-	struct FString                                               VideoUri;                                          // 0x10(0x10)
+};
+
+
+// Size 0x18
+struct VideoPlaybackStateEvent
+{
+public:
+	struct FString                                               MediaTextureName;                                  // 0x0(0x10)
+	char                                                         State;                                             // 0x10(0x1)
 };
 
 
@@ -62,12 +52,22 @@ public:
 };
 
 
-// Size 0x18
-struct VideoPlaybackStateEvent
+// Size 0x28
+struct VideoSubtitleEvent
 {
 public:
 	struct FString                                               MediaTextureName;                                  // 0x0(0x10)
-	char                                                         State;                                             // 0x10(0x1)
+	struct FString                                               SubtitleString;                                    // 0x10(0x10)
+	double                                                       SubtitleDuration;                                  // 0x20(0x8)
+};
+
+
+// Size 0x20
+struct VideoPlaybackLoadEvent
+{
+public:
+	struct FString                                               MediaTextureName;                                  // 0x0(0x10)
+	struct FString                                               VideoUri;                                          // 0x10(0x10)
 };
 
 

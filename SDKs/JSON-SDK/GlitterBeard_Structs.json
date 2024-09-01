@@ -1,20 +1,37 @@
 {
-  "UnlockEventData": {
+  "GlitterBeardVFXTransitionCompletedEvent": {
     "ClassSize": "0x4",
     "Attributes": [
       {
-        "Name": "Idx",
+        "Name": "Index",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
       }
     ]
   },
-  "GlitterBeardVFXTransitionCompletedEvent": {
+  "FinaleReplicationState": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "State",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TargetEnsemble",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "UnlockEventData": {
     "ClassSize": "0x4",
     "Attributes": [
       {
-        "Name": "Index",
+        "Name": "Idx",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
@@ -35,23 +52,6 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x4"
-      }
-    ]
-  },
-  "FinaleReplicationState": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "State",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TargetEnsemble",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
       }
     ]
   },

@@ -1,81 +1,27 @@
 {
-  "GeneralProjectSettings": {
+  "ConsoleSettings": {
     "Super": "Object",
-    "FullSize": "0x110",
+    "FullSize": "0x50",
     "InheritedSize": "0x28",
-    "ClassSize": "0xe8",
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "CompanyName",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Name": "MaxScrollbackSize",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x28"
       },
       {
-        "Name": "CompanyDistinguishedName",
-        "Type": "struct FString",
+        "Name": "ManualAutoCompleteList",
+        "Type": "TArray<struct AutoCompleteCommand>",
         "Size": "0x10",
-        "Offset": "0x38"
+        "Offset": "0x30"
       },
       {
-        "Name": "CopyrightNotice",
-        "Type": "struct FString",
+        "Name": "AutoCompleteMapPaths",
+        "Type": "TArray<String>",
         "Size": "0x10",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "Description",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "Homepage",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "LicensingTerms",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "PrivacyPolicy",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "ProjectID",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "ProjectName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0xa8"
-      },
-      {
-        "Name": "ProjectVersion",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "SupportContact",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "ProjectDisplayedTitle",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0xd8"
+        "Offset": "0x40"
       }
     ]
   },
@@ -153,22 +99,28 @@
       }
     ]
   },
-  "HudSettings": {
+  "GameSessionSettings": {
     "Super": "Object",
-    "FullSize": "0x40",
+    "FullSize": "0x38",
     "InheritedSize": "0x28",
-    "ClassSize": "0x18",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "bShowHUD",
-        "Type": "bool",
-        "Size": "0x1",
+        "Name": "MaxSpectators",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x28"
       },
       {
-        "Name": "DebugDisplay",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
+        "Name": "MaxPlayers",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "bRequiresPushToTalk",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x30"
       }
     ]
@@ -247,55 +199,103 @@
       }
     ]
   },
-  "GameSessionSettings": {
+  "HudSettings": {
     "Super": "Object",
-    "FullSize": "0x38",
+    "FullSize": "0x40",
     "InheritedSize": "0x28",
-    "ClassSize": "0x10",
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "MaxSpectators",
-        "Type": "int",
-        "Size": "0x4",
+        "Name": "bShowHUD",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x28"
       },
       {
-        "Name": "MaxPlayers",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "bRequiresPushToTalk",
-        "Type": "bool",
-        "Size": "0x1",
+        "Name": "DebugDisplay",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
         "Offset": "0x30"
       }
     ]
   },
-  "ConsoleSettings": {
+  "GeneralProjectSettings": {
     "Super": "Object",
-    "FullSize": "0x50",
+    "FullSize": "0x110",
     "InheritedSize": "0x28",
-    "ClassSize": "0x28",
+    "ClassSize": "0xe8",
     "Attributes": [
       {
-        "Name": "MaxScrollbackSize",
-        "Type": "int",
-        "Size": "0x4",
+        "Name": "CompanyName",
+        "Type": "struct FString",
+        "Size": "0x10",
         "Offset": "0x28"
       },
       {
-        "Name": "ManualAutoCompleteList",
-        "Type": "TArray<struct AutoCompleteCommand>",
+        "Name": "CompanyDistinguishedName",
+        "Type": "struct FString",
         "Size": "0x10",
-        "Offset": "0x30"
+        "Offset": "0x38"
       },
       {
-        "Name": "AutoCompleteMapPaths",
-        "Type": "TArray<String>",
+        "Name": "CopyrightNotice",
+        "Type": "struct FString",
         "Size": "0x10",
-        "Offset": "0x40"
+        "Offset": "0x48"
+      },
+      {
+        "Name": "Description",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "Homepage",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "LicensingTerms",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "PrivacyPolicy",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "ProjectID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "ProjectName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0xa8"
+      },
+      {
+        "Name": "ProjectVersion",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "SupportContact",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "ProjectDisplayedTitle",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0xd8"
       }
     ]
   },

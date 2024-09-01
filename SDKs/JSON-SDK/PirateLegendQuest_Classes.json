@@ -1,4 +1,18 @@
 {
+  "GetVeilOfTheAncientsStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "QuestVeil",
+        "Type": "struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0x80"
+      }
+    ]
+  },
   "VeilService": {
     "Super": "TaleQuestService",
     "FullSize": "0x180",
@@ -28,20 +42,6 @@
         "Type": "class Ship*",
         "Size": "0x8",
         "Offset": "0xa0"
-      }
-    ]
-  },
-  "GetVeilOfTheAncientsStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xb0",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "QuestVeil",
-        "Type": "struct QuestVariableActor",
-        "Size": "0x30",
-        "Offset": "0x80"
       }
     ]
   },

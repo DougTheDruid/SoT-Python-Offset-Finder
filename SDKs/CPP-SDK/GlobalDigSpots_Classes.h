@@ -6,6 +6,16 @@
 #include "GlobalDigSpots_Structs.h"
 
 
+// Size 0x30 (Full Size[0x3f8] - InheritedSize[0x3c8]
+class GlobalDigSpotService: public Actor
+{
+public:
+	class VoyageDescDataAsset*                                   DefaultVoyageDesc;                                 // 0x3d0(0x8)
+	class PopUpMessageDesc*                                      Notification;                                      // 0x3d8(0x8)
+	class GlobalDigSpotDefinitionList*                           DigSpotDefinitions;                                // 0x3e0(0x8)
+};
+
+
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class GlobalDigSpotDefinitionList: public DataAsset
 {
@@ -19,16 +29,6 @@ class GlobalDigSpotSettings: public DeveloperSettings
 {
 public:
 	class UClass*                                                GlobalDigSpotServiceClass;                         // 0x38(0x8)
-};
-
-
-// Size 0x30 (Full Size[0x3f8] - InheritedSize[0x3c8]
-class GlobalDigSpotService: public Actor
-{
-public:
-	class VoyageDescDataAsset*                                   DefaultVoyageDesc;                                 // 0x3d0(0x8)
-	class PopUpMessageDesc*                                      Notification;                                      // 0x3d8(0x8)
-	class GlobalDigSpotDefinitionList*                           DigSpotDefinitions;                                // 0x3e0(0x8)
 };
 
 

@@ -6,6 +6,15 @@
 #include "PlayerLootMarkerFramework_Structs.h"
 
 
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class PlayerLootMarkerServiceParams: public DataAsset
+{
+public:
+	class ShortRangeMarkerDataAsset*                             MarkerDataAsset;                                   // 0x28(0x8)
+	float                                                        JettisonMaxMarkerDistance;                         // 0x30(0x4)
+};
+
+
 // Size 0x178 (Full Size[0x540] - InheritedSize[0x3c8]
 class PlayerLootMarkerService: public Actor
 {
@@ -13,15 +22,6 @@ public:
 	class PlayerLootMarkerServiceParams*                         Params;                                            // 0x3d0(0x8)
 	TArray<uintptr_t>                                            ShortRangeMarkers;                                 // 0x3f8(0x10)
 	TArray<struct PlayerLootMarkerWorldEdgeBatchData>            BatchData;                                         // 0x520(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class PlayerLootMarkerServiceParams: public DataAsset
-{
-public:
-	class ShortRangeMarkerDataAsset*                             MarkerDataAsset;                                   // 0x28(0x8)
-	float                                                        JettisonMaxMarkerDistance;                         // 0x30(0x4)
 };
 
 

@@ -1,48 +1,4 @@
 {
-  "BreakableActorAudioComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x1c8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x100",
-    "Attributes": [
-      {
-        "Name": "UseParentEmitter",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "AudioPool",
-        "Type": "class WwiseObjectPoolWrapper*",
-        "Size": "0x8",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "PlayMusicEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0xd8"
-      },
-      {
-        "Name": "StopMusicEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "PlayDamagedEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "PlayDestroyedEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0xf0"
-      }
-    ]
-  },
   "BreakableActorVfxComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x1c0",
@@ -111,68 +67,6 @@
       }
     ]
   },
-  "BreakableActorDynamicMaterialComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x220",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x158",
-    "Attributes": [
-      {
-        "Name": "MaterialElementIndex",
-        "Type": "uint32",
-        "Size": "0x4",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "MagicColourPropertyName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xcc"
-      },
-      {
-        "Name": "DamageLevelPropertyName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xd4"
-      },
-      {
-        "Name": "TimeBasedPropertyName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xdc"
-      },
-      {
-        "Name": "HitPositionPropertyName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xe4"
-      },
-      {
-        "Name": "CollapseStartTimePropertyName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xec"
-      },
-      {
-        "Name": "TargetMesh",
-        "Type": "class PrimitiveComponent*",
-        "Size": "0x8",
-        "Offset": "0xf8"
-      },
-      {
-        "Name": "DynamicMaterials",
-        "Type": "TArray<class MaterialInstanceDynamic*>",
-        "Size": "0x10",
-        "Offset": "0x100"
-      },
-      {
-        "Name": "BreakableActor",
-        "Type": "class BreakableActorBase*",
-        "Size": "0x8",
-        "Offset": "0x110"
-      }
-    ]
-  },
   "BreakableActorBase": {
     "Super": "Actor",
     "FullSize": "0x558",
@@ -232,6 +126,112 @@
         "Type": "class ActorDamageableComponent*",
         "Size": "0x8",
         "Offset": "0x438"
+      }
+    ]
+  },
+  "BreakableActorAudioComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x1c8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x100",
+    "Attributes": [
+      {
+        "Name": "UseParentEmitter",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "AudioPool",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "PlayMusicEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "StopMusicEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "PlayDamagedEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "PlayDestroyedEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0xf0"
+      }
+    ]
+  },
+  "BreakableActorDynamicMaterialComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x220",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x158",
+    "Attributes": [
+      {
+        "Name": "MaterialElementIndex",
+        "Type": "uint32",
+        "Size": "0x4",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "MagicColourPropertyName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xcc"
+      },
+      {
+        "Name": "DamageLevelPropertyName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xd4"
+      },
+      {
+        "Name": "TimeBasedPropertyName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xdc"
+      },
+      {
+        "Name": "HitPositionPropertyName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xe4"
+      },
+      {
+        "Name": "CollapseStartTimePropertyName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xec"
+      },
+      {
+        "Name": "TargetMesh",
+        "Type": "class PrimitiveComponent*",
+        "Size": "0x8",
+        "Offset": "0xf8"
+      },
+      {
+        "Name": "DynamicMaterials",
+        "Type": "TArray<class MaterialInstanceDynamic*>",
+        "Size": "0x10",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "BreakableActor",
+        "Type": "class BreakableActorBase*",
+        "Size": "0x8",
+        "Offset": "0x110"
       }
     ]
   },

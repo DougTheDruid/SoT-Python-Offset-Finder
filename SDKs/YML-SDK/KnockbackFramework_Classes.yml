@@ -16,10 +16,10 @@ KnockbackColliderComponent:
     Type: byte
   - Name: KnockbackParams
     Offset: '0x60c'
-    Size: '0x50'
+    Size: '0x54'
     Type: struct KnockBackInfo
   - Name: ActorToTarget
-    Offset: '0x65c'
+    Offset: '0x660'
     Size: '0x8'
     Type: class Actor*
   - Name: KnockbackDamageType

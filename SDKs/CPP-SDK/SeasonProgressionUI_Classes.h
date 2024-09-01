@@ -7,18 +7,10 @@
 
 
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class SeasonProgressionUISettings: public Object
+class SeasonPopupListAsset: public DataAsset
 {
 public:
-	struct StringAssetReference                                  SeasonPopupListAsset;                              // 0x28(0x10)
-};
-
-
-// Size 0x1f8 (Full Size[0x5c0] - InheritedSize[0x3c8]
-class SeasonProgressionUIService: public Actor
-{
-public:
-	class SeasonPopupListAsset*                                  SeasonPopupListAsset;                              // 0x3f8(0x8)
+	TArray<class SeasonPopupAsset*>                              SeasonPopups;                                      // 0x28(0x10)
 };
 
 
@@ -48,10 +40,10 @@ public:
 
 
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class SeasonPopupListAsset: public DataAsset
+class SeasonProgressionUISettings: public Object
 {
 public:
-	TArray<class SeasonPopupAsset*>                              SeasonPopups;                                      // 0x28(0x10)
+	struct StringAssetReference                                  SeasonPopupListAsset;                              // 0x28(0x10)
 };
 
 
@@ -61,6 +53,14 @@ class SeasonProgressionUIComponent: public ActorComponent
 public:
 	TArray<struct EnableMoreButtonEvent>                         DetailsNavigationDesc;                             // 0xe8(0x10)
 	struct SeasonProgressionUITelemetryFragment                  NextReceivedEventsTelemetryData;                   // 0xf8(0x18)
+};
+
+
+// Size 0x1f8 (Full Size[0x5c0] - InheritedSize[0x3c8]
+class SeasonProgressionUIService: public Actor
+{
+public:
+	class SeasonPopupListAsset*                                  SeasonPopupListAsset;                              // 0x3f8(0x8)
 };
 
 

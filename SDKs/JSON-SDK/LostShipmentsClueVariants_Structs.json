@@ -1,21 +1,4 @@
 {
-  "TextEntryWithLayout": {
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "TextEntry",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TextLayout",
-        "Type": "struct TreasureMapWidgetText",
-        "Size": "0x3c",
-        "Offset": "0x38"
-      }
-    ]
-  },
   "ExistingNPCToPhasedNPC": {
     "ClassSize": "0x40",
     "Attributes": [
@@ -67,6 +50,23 @@
       }
     ]
   },
+  "ClueDestinationToTextIndex": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "DestinationType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RequiredIndexAsset",
+        "Type": "assetobject",
+        "Size": "0x20",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "MapRadialIconData": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -84,20 +84,20 @@
       }
     ]
   },
-  "ClueDestinationToTextIndex": {
-    "ClassSize": "0x28",
+  "TextEntryWithLayout": {
+    "ClassSize": "0x78",
     "Attributes": [
       {
-        "Name": "DestinationType",
-        "Type": "class UClass*",
-        "Size": "0x8",
+        "Name": "TextEntry",
+        "Type": "struct FText",
+        "Size": "0x38",
         "Offset": "0x0"
       },
       {
-        "Name": "RequiredIndexAsset",
-        "Type": "assetobject",
-        "Size": "0x20",
-        "Offset": "0x8"
+        "Name": "TextLayout",
+        "Type": "struct TreasureMapWidgetText",
+        "Size": "0x3c",
+        "Offset": "0x38"
       }
     ]
   },

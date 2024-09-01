@@ -1,4 +1,49 @@
 {
+  "SetShouldSkipFerryOfTheDamnedGameServerRequestModel": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "PlayerNetGUID",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "bShouldSkipFerryOfTheDamned",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "SetShouldUseRevivalFlowGameServerRequestModel": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "PlayerNetGUID",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "bShouldUseRevivalFlow",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "KillCrewGameServerRequestModel": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewNetGUID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "KillPlayerGameServerRequestModel": {
     "ClassSize": "0x4",
     "Attributes": [
@@ -10,29 +55,12 @@
       }
     ]
   },
-  "CustomPlayerStartConfigResponseGameServerRequestModel": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Success",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PlayerStartId",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "ResetCustomConfigForPlayerGameServerRequestModel": {
+  "GameModeDeathPenaltyRespawnTimerGameServerRequestModel": {
     "ClassSize": "0x4",
     "Attributes": [
       {
-        "Name": "PlayerNetGUID",
-        "Type": "int",
+        "Name": "SpawnTimer",
+        "Type": "float",
         "Size": "0x4",
         "Offset": "0x0"
       }
@@ -78,14 +106,20 @@
       }
     ]
   },
-  "GameModeDeathPenaltyRespawnTimerGameServerRequestModel": {
-    "ClassSize": "0x4",
+  "DestroyCustomPlayerStartGameServerRequestModel": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "SpawnTimer",
-        "Type": "float",
+        "Name": "PlayerStartActorNetID",
+        "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
+      },
+      {
+        "Name": "Tag",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
       }
     ]
   },
@@ -106,65 +140,31 @@
       }
     ]
   },
-  "SetShouldUseRevivalFlowGameServerRequestModel": {
+  "CustomPlayerStartConfigResponseGameServerRequestModel": {
     "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Success",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PlayerStartId",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "ResetCustomConfigForPlayerGameServerRequestModel": {
+    "ClassSize": "0x4",
     "Attributes": [
       {
         "Name": "PlayerNetGUID",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
-      },
-      {
-        "Name": "bShouldUseRevivalFlow",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "KillCrewGameServerRequestModel": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CrewNetGUID",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "DestroyCustomPlayerStartGameServerRequestModel": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "PlayerStartActorNetID",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Tag",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "SetShouldSkipFerryOfTheDamnedGameServerRequestModel": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "PlayerNetGUID",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "bShouldSkipFerryOfTheDamned",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x4"
       }
     ]
   },

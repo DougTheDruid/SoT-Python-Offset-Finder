@@ -1,21 +1,4 @@
 {
-  "OceanCrawlerBuffAudioSettings": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "GiveBuffAudioEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ReceiveBuffAudioEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "OceanCrawlerAudioKeyPair": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -27,6 +10,23 @@
       },
       {
         "Name": "AudioEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "OceanCrawlerBuffAudioSettings": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "GiveBuffAudioEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ReceiveBuffAudioEvent",
         "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x8"

@@ -1,24 +1,4 @@
 {
-  "ProceduralFoliageTile": {
-    "Super": "Object",
-    "FullSize": "0x150",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x128",
-    "Attributes": [
-      {
-        "Name": "FoliageSpawner",
-        "Type": "class ProceduralFoliageSpawner*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "InstancesArray",
-        "Type": "TArray<struct ProceduralFoliageInstance>",
-        "Size": "0x10",
-        "Offset": "0xd0"
-      }
-    ]
-  },
   "InteractiveFoliageActor": {
     "Super": "StaticMeshActor",
     "FullSize": "0x438",
@@ -108,124 +88,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x430"
-      }
-    ]
-  },
-  "ProceduralFoliageComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xf0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "FoliageSpawner",
-        "Type": "class ProceduralFoliageSpawner*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "TileOverlap",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "SpawningVolume",
-        "Type": "class Volume*",
-        "Size": "0x8",
-        "Offset": "0xd8"
-      },
-      {
-        "Name": "ProceduralGuid",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0xe0"
-      }
-    ]
-  },
-  "FoliageInstancedStaticMeshComponent": {
-    "Super": "HierarchicalInstancedStaticMeshComponent",
-    "FullSize": "0x7d0",
-    "InheritedSize": "0x7b0",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "OnInstanceTakePointDamage",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x7a8"
-      },
-      {
-        "Name": "OnInstanceTakeRadialDamage",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x7b8"
-      }
-    ]
-  },
-  "ProceduralFoliageSpawner": {
-    "Super": "Object",
-    "FullSize": "0x68",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "RandomSeed",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "TileSize",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "NumUniqueTiles",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "FoliageTypes",
-        "Type": "TArray<struct FoliageTypeObject>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "bNeedsSimulation",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "ProceduralFoliageVolume": {
-    "Super": "Volume",
-    "FullSize": "0x408",
-    "InheritedSize": "0x400",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "ProceduralComponent",
-        "Type": "class ProceduralFoliageComponent*",
-        "Size": "0x8",
-        "Offset": "0x400"
-      }
-    ]
-  },
-  "ProceduralFoliageBlockingVolume": {
-    "Super": "Volume",
-    "FullSize": "0x408",
-    "InheritedSize": "0x400",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "ProceduralFoliageVolume",
-        "Type": "class ProceduralFoliageVolume*",
-        "Size": "0x8",
-        "Offset": "0x400"
       }
     ]
   },
@@ -678,6 +540,144 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x35d"
+      }
+    ]
+  },
+  "ProceduralFoliageTile": {
+    "Super": "Object",
+    "FullSize": "0x150",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x128",
+    "Attributes": [
+      {
+        "Name": "FoliageSpawner",
+        "Type": "class ProceduralFoliageSpawner*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "InstancesArray",
+        "Type": "TArray<struct ProceduralFoliageInstance>",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "ProceduralFoliageSpawner": {
+    "Super": "Object",
+    "FullSize": "0x68",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "RandomSeed",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "TileSize",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "NumUniqueTiles",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "FoliageTypes",
+        "Type": "TArray<struct FoliageTypeObject>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "bNeedsSimulation",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "ProceduralFoliageComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "FoliageSpawner",
+        "Type": "class ProceduralFoliageSpawner*",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "TileOverlap",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "SpawningVolume",
+        "Type": "class Volume*",
+        "Size": "0x8",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "ProceduralGuid",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0xe0"
+      }
+    ]
+  },
+  "FoliageInstancedStaticMeshComponent": {
+    "Super": "HierarchicalInstancedStaticMeshComponent",
+    "FullSize": "0x7d0",
+    "InheritedSize": "0x7b0",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "OnInstanceTakePointDamage",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x7a8"
+      },
+      {
+        "Name": "OnInstanceTakeRadialDamage",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x7b8"
+      }
+    ]
+  },
+  "ProceduralFoliageBlockingVolume": {
+    "Super": "Volume",
+    "FullSize": "0x408",
+    "InheritedSize": "0x400",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ProceduralFoliageVolume",
+        "Type": "class ProceduralFoliageVolume*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      }
+    ]
+  },
+  "ProceduralFoliageVolume": {
+    "Super": "Volume",
+    "FullSize": "0x408",
+    "InheritedSize": "0x400",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ProceduralComponent",
+        "Type": "class ProceduralFoliageComponent*",
+        "Size": "0x8",
+        "Offset": "0x400"
       }
     ]
   },

@@ -6,6 +6,15 @@
 #include "Tethering_Structs.h"
 
 
+// Size 0x40 (Full Size[0x670] - InheritedSize[0x630]
+class CordRenderComponent: public StaticMeshComponent
+{
+public:
+	TArray<class MaterialInstanceDynamic*>                       CordMaterials;                                     // 0x638(0x10)
+	float                                                        ThicknessCm;                                       // 0x648(0x4)
+};
+
+
 // Size 0x60 (Full Size[0x128] - InheritedSize[0xc8]
 class TetherCustomisationComponent: public ActorComponent
 {
@@ -14,6 +23,20 @@ public:
 	float                                                        MassIntertiaScale;                                 // 0x120(0x4)
 	bool                                                         CanBeTethered;                                     // 0x124(0x1)
 	bool                                                         IsMassInertiaScalingEnabled;                       // 0x125(0x1)
+};
+
+
+// Size 0x88 (Full Size[0x150] - InheritedSize[0xc8]
+class DistanceJointComponent: public ActorComponent
+{
+public:
+	float                                                        MinDistance;                                       // 0x138(0x4)
+	float                                                        MaxDistance;                                       // 0x13c(0x4)
+	float                                                        SpringStiffness;                                   // 0x140(0x4)
+	float                                                        SpringDamping;                                     // 0x144(0x4)
+	bool                                                         ApplyAsSpring;                                     // 0x148(0x1)
+	bool                                                         EnforceMinDistance;                                // 0x149(0x1)
+	bool                                                         EnforceMaxDistance;                                // 0x14a(0x1)
 };
 
 
@@ -34,29 +57,6 @@ public:
 	bool                                                         HasTargetActor;                                    // 0x502(0x1)
 	bool                                                         IsSlackEnabled;                                    // 0x503(0x1)
 	char                                                         CurrentTetherMode;                                 // 0x504(0x1)
-};
-
-
-// Size 0x40 (Full Size[0x670] - InheritedSize[0x630]
-class CordRenderComponent: public StaticMeshComponent
-{
-public:
-	TArray<class MaterialInstanceDynamic*>                       CordMaterials;                                     // 0x638(0x10)
-	float                                                        ThicknessCm;                                       // 0x648(0x4)
-};
-
-
-// Size 0x88 (Full Size[0x150] - InheritedSize[0xc8]
-class DistanceJointComponent: public ActorComponent
-{
-public:
-	float                                                        MinDistance;                                       // 0x138(0x4)
-	float                                                        MaxDistance;                                       // 0x13c(0x4)
-	float                                                        SpringStiffness;                                   // 0x140(0x4)
-	float                                                        SpringDamping;                                     // 0x144(0x4)
-	bool                                                         ApplyAsSpring;                                     // 0x148(0x1)
-	bool                                                         EnforceMinDistance;                                // 0x149(0x1)
-	bool                                                         EnforceMaxDistance;                                // 0x14a(0x1)
 };
 
 

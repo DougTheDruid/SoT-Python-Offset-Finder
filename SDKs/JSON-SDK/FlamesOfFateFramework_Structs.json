@@ -1,18 +1,24 @@
 {
-  "SetFlameOfFateEvent": {
-    "ClassSize": "0x10",
+  "PlayerSetFlameOfFateEvent": {
+    "ClassSize": "0x18",
     "Attributes": [
+      {
+        "Name": "PlayerCharacter",
+        "Type": "class Character*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Target",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
       {
         "Name": "FlameOfFateType",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Source",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
+        "Offset": "0x10"
       }
     ]
   },
@@ -33,14 +39,43 @@
       }
     ]
   },
-  "CycleFlameOfFateSequence": {
+  "SetFlameOfFateEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "FlameOfFateType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Source",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "PlayerTookFlameOfFateEvent": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "FlameTypeSequence",
-        "Type": "TArray<char>",
-        "Size": "0x10",
+        "Name": "PlayerCharacter",
+        "Type": "class Character*",
+        "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "Source",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "FlameOfFateType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
       }
     ]
   },
@@ -67,49 +102,14 @@
       }
     ]
   },
-  "PlayerSetFlameOfFateEvent": {
+  "CycleFlameOfFateSequence": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "PlayerCharacter",
-        "Type": "class Character*",
-        "Size": "0x8",
+        "Name": "FlameTypeSequence",
+        "Type": "TArray<char>",
+        "Size": "0x10",
         "Offset": "0x0"
-      },
-      {
-        "Name": "Target",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "FlameOfFateType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "PlayerTookFlameOfFateEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "PlayerCharacter",
-        "Type": "class Character*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Source",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "FlameOfFateType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
       }
     ]
   },

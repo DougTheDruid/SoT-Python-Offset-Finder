@@ -1,27 +1,47 @@
 {
-  "AudioSpaceComponent": {
-    "Super": "StaticMeshComponent",
-    "FullSize": "0x660",
-    "InheritedSize": "0x630",
-    "ClassSize": "0x30",
+  "AthenaAudioConfig": {
+    "Super": "WwiseCoreAssets",
+    "FullSize": "0x108",
+    "InheritedSize": "0x58",
+    "ClassSize": "0xb0",
     "Attributes": [
       {
-        "Name": "AudioSpace",
-        "Type": "class AudioSpaceDataAsset*",
+        "Name": "ItemProxyPool",
+        "Type": "class WwiseObjectPoolWrapper*",
         "Size": "0x8",
-        "Offset": "0x630"
+        "Offset": "0x58"
       },
       {
-        "Name": "ActiveAudioSpace",
-        "Type": "class AudioSpaceDataAsset*",
+        "Name": "AnimNotifyPool",
+        "Type": "class WwiseObjectPoolWrapper*",
         "Size": "0x8",
-        "Offset": "0x638"
+        "Offset": "0x60"
       },
       {
-        "Name": "CollectionAsset",
-        "Type": "class StoryDrivenAudioPortalDataAsset*",
+        "Name": "GameStateSettings",
+        "Type": "struct AthenaAudioGameStateSettings",
+        "Size": "0x20",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "BootflowEvents",
+        "Type": "struct AthenaAudioBootflowEvents",
+        "Size": "0x80",
+        "Offset": "0x88"
+      }
+    ]
+  },
+  "MultiEmitter": {
+    "Super": "Actor",
+    "FullSize": "0x3d8",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MultiEmitterRootComponent",
+        "Type": "class MultiEmitterRootComponent*",
         "Size": "0x8",
-        "Offset": "0x640"
+        "Offset": "0x3c8"
       }
     ]
   },
@@ -48,20 +68,6 @@
         "Type": "TArray<class StoryDrivenAudioPortalDataAsset*>",
         "Size": "0x10",
         "Offset": "0x48"
-      }
-    ]
-  },
-  "AudioSpaceTrackerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CurrentSpaces",
-        "Type": "TArray<class AudioSpaceComponent*>",
-        "Size": "0x10",
-        "Offset": "0xc8"
       }
     ]
   },
@@ -177,17 +183,29 @@
       }
     ]
   },
-  "MultiEmitter": {
-    "Super": "Actor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x10",
+  "AudioSpaceComponent": {
+    "Super": "StaticMeshComponent",
+    "FullSize": "0x660",
+    "InheritedSize": "0x630",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "MultiEmitterRootComponent",
-        "Type": "class MultiEmitterRootComponent*",
+        "Name": "AudioSpace",
+        "Type": "class AudioSpaceDataAsset*",
         "Size": "0x8",
-        "Offset": "0x3c8"
+        "Offset": "0x630"
+      },
+      {
+        "Name": "ActiveAudioSpace",
+        "Type": "class AudioSpaceDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x638"
+      },
+      {
+        "Name": "CollectionAsset",
+        "Type": "class StoryDrivenAudioPortalDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x640"
       }
     ]
   },
@@ -205,35 +223,17 @@
       }
     ]
   },
-  "AthenaAudioConfig": {
-    "Super": "WwiseCoreAssets",
-    "FullSize": "0x108",
-    "InheritedSize": "0x58",
-    "ClassSize": "0xb0",
+  "AudioSpaceTrackerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "ItemProxyPool",
-        "Type": "class WwiseObjectPoolWrapper*",
-        "Size": "0x8",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "AnimNotifyPool",
-        "Type": "class WwiseObjectPoolWrapper*",
-        "Size": "0x8",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "GameStateSettings",
-        "Type": "struct AthenaAudioGameStateSettings",
-        "Size": "0x20",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "BootflowEvents",
-        "Type": "struct AthenaAudioBootflowEvents",
-        "Size": "0x80",
-        "Offset": "0x88"
+        "Name": "CurrentSpaces",
+        "Type": "TArray<class AudioSpaceComponent*>",
+        "Size": "0x10",
+        "Offset": "0xc8"
       }
     ]
   },

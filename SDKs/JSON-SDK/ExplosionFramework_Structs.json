@@ -1,6 +1,6 @@
 {
-  "EventExplosionOverlap": {
-    "ClassSize": "0x8",
+  "EventAffectedByExplosion": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "DamagerType",
@@ -38,8 +38,8 @@
       }
     ]
   },
-  "EventAffectedByExplosion": {
-    "ClassSize": "0x18",
+  "EventExplosionOverlap": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "DamagerType",

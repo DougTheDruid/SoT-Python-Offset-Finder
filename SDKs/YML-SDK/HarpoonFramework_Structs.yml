@@ -38,3 +38,26 @@ EventPortableHarpoonProjectileImpact:
     Size: '0x8'
     Type: class PhysicalMaterial*
   ClassSize: '0x38'
+PortableHarpoonTelemetryEvent:
+  Attributes:
+  - Name: AttackId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct Guid
+  - Name: AttemptedAction
+    Offset: '0x10'
+    Size: '0x1'
+    Type: byte
+  - Name: ActionStartResult
+    Offset: '0x11'
+    Size: '0x1'
+    Type: byte
+  - Name: ActionEndResult
+    Offset: '0x12'
+    Size: '0x1'
+    Type: byte
+  - Name: TargetActorName
+    Offset: '0x18'
+    Size: '0x10'
+    Type: struct FString
+  ClassSize: '0x28'

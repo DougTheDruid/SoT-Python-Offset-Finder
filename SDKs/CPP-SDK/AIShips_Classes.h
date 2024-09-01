@@ -6,43 +6,22 @@
 #include "AIShips_Structs.h"
 
 
-// Size 0x50 (Full Size[0xc0] - InheritedSize[0x70]
-class BTService_UpdateLocationWithActorLocation: public BTService
+// Size 0xa8 (Full Size[0x130] - InheritedSize[0x88]
+class BTTask_SailShipForward: public BTTask_BlackboardBase
 {
 public:
-	struct BlackboardKeySelector                                 LocationKey;                                       // 0x70(0x28)
-	struct BlackboardKeySelector                                 ActorKey;                                          // 0x98(0x28)
+	struct BlackboardKeySelector                                 ShouldSailForwardKey;                              // 0x88(0x28)
+	struct BlackboardKeySelector                                 TimeToSailForwardKey;                              // 0xb0(0x28)
+	struct BlackboardKeySelector                                 IsCaptainPresentKey;                               // 0xd8(0x28)
 };
 
 
-// Size 0xb0 (Full Size[0xd8] - InheritedSize[0x28]
-class AIShipEncounterSpawnParamsDataAsset: public DataAsset
+// Size 0x38 (Full Size[0x478] - InheritedSize[0x440]
+class ShipProxyPawn: public Pawn
 {
 public:
-	float                                                        SpawnDepth;                                        // 0x28(0x4)
-	float                                                        Radius;                                            // 0x2c(0x4)
-	float                                                        MinSafeSpawnDistanceFromOtherShips;                // 0x30(0x4)
-	float                                                        TimeDelayBetweenWaves;                             // 0x34(0x4)
-	struct RelativeSpawnLocationGeneratorParams                  RelativeSpawnLocationParams;                       // 0x38(0xa0)
-};
-
-
-// Size 0x48 (Full Size[0xd0] - InheritedSize[0x88]
-class BTTask_SailShipToLocation: public BTTask_BlackboardBase
-{
-public:
-	struct BlackboardKeySelector                                 TargetLocationKey;                                 // 0x88(0x28)
-	float                                                        DistanceThresholdToConsiderTargetReached;          // 0xb0(0x4)
-};
-
-
-// Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
-class AIShipBattlesDataAsset: public DataAsset
-{
-public:
-	TArray<struct AIShipBattleParams>                            Battles;                                           // 0x28(0x10)
-	TArray<struct Text>                                          SkellyCrewNames;                                   // 0x38(0x10)
-	struct FText                                                 EncounterCompleteText;                             // 0x48(0x38)
+	class Actor*                                                 Ship;                                              // 0x440(0x8)
+	class Actor*                                                 SpawnTargetShip;                                   // 0x448(0x8)
 };
 
 
@@ -58,139 +37,12 @@ public:
 };
 
 
-// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
-class AIShipEncounterDesc: public DataAsset
-{
-public:
-	struct Vector2D                                              Location;                                          // 0x28(0x8)
-	float                                                        Radius;                                            // 0x30(0x4)
-	bool                                                         Moveable;                                          // 0x34(0x1)
-	bool                                                         ShowRevealBanner;                                  // 0x35(0x1)
-	bool                                                         ShowCompleteBanner;                                // 0x36(0x1)
-	bool                                                         ShouldSpawnShipCloud;                              // 0x37(0x1)
-	bool                                                         RequirePlayerShipInZoneToSpawnShips;               // 0x38(0x1)
-	bool                                                         EnableSecondsUntilEncounterEndsAfterLastCrewLeft;  // 0x39(0x1)
-	int                                                          SecondsUntilEncounterEndsAfterLastCrewLeft;        // 0x3c(0x4)
-	bool                                                         EnableMaximumEncounterDuration;                    // 0x40(0x1)
-	int                                                          MaximumEncounterDuration;                          // 0x44(0x4)
-	char                                                         EncounterType;                                     // 0x48(0x1)
-	TArray<struct AIShipEncounterWave>                           Waves;                                             // 0x50(0x10)
-};
-
-
-// Size 0x60 (Full Size[0xd0] - InheritedSize[0x70]
-class BTService_UpdateTargetLocationForPassiveShip: public BTService
-{
-public:
-	struct BlackboardKeySelector                                 TargetLocationKey;                                 // 0x70(0x28)
-	float                                                        AngleOffsetFromForwardDegreesWhenNoIslands;        // 0x98(0x4)
-	float                                                        TargetLocationDistanceWhenNoIslands;               // 0x9c(0x4)
-};
-
-
-// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
-class BTTask_AIShipSurface: public BTTask_BlackboardBase
-{
-public:
-	float                                                        MaxSpeed;                                          // 0x88(0x4)
-	float                                                        PreSurfaceDelay;                                   // 0x8c(0x4)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class CursedSailsCampaignDataAsset: public DataAsset
-{
-public:
-	TArray<struct CursedSailsBattleParams>                       Battles;                                           // 0x28(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class IsAIShipEncounterTypeStatCondition: public StatCondition
-{
-public:
-	char                                                         EncounterType;                                     // 0x28(0x1)
-};
-
-
 // Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
 class AIShipGameSettings: public DeveloperSettings
 {
 public:
 	struct StringAssetReference                                  AIShipServiceDataAssetFileLocation;                // 0x38(0x10)
 	struct ToggleableAIShipsServiceDataAssetFileLocation         AIShipServiceDataAssetFileLocationOverride;        // 0x48(0x18)
-};
-
-
-// Size 0x430 (Full Size[0x7f8] - InheritedSize[0x3c8]
-class AIShipService: public Actor
-{
-public:
-	class GameEventOnDemandAvailabilityHandler*                  GameEventOnDemandAvailabilityHandler;              // 0x3d8(0x8)
-	class AIShipServiceDataAsset*                                Params;                                            // 0x3f8(0x8)
-};
-
-
-// Size 0xb8 (Full Size[0xe0] - InheritedSize[0x28]
-class AIShipContextDescDataAsset: public DataAsset
-{
-public:
-	char                                                         ShipType;                                          // 0x28(0x1)
-	char                                                         EncounterType;                                     // 0x29(0x1)
-	class UClass*                                                EventType;                                         // 0x30(0x8)
-	class ShipDescAsset*                                         ShipDesc;                                          // 0x38(0x8)
-	class AthenaAIShipControllerParamsDataAsset*                 ControllerParams;                                  // 0x40(0x8)
-	TArray<struct AIShipEncounterParamsSpawnerData>              Spawners;                                          // 0x48(0x10)
-	TArray<struct AIShipCrewSizeSpecificSpawnerEntry>            CrewSizeSpecificSpawners;                          // 0x58(0x10)
-	struct AIShipContextDescDamageParams                         DamageParams;                                      // 0x68(0x14)
-	struct AIShipSailData                                        SailsCustomisation;                                // 0x7c(0x10)
-	struct Color                                                 SailColour;                                        // 0x8c(0x4)
-	struct AIShipCrewFormType                                    FormType;                                          // 0x90(0x20)
-	struct AIShipCrewAmmoType                                    AmmoType;                                          // 0xb0(0x18)
-	class ShortRangeMarkerDataAsset*                             RewardMarkerParams;                                // 0xc8(0x8)
-	TArray<struct AIShipBootyItem>                               ItemsToSkip;                                       // 0xd0(0x10)
-};
-
-
-// Size 0x68 (Full Size[0x90] - InheritedSize[0x28]
-class AIShipContextParamsDataAsset: public DataAsset
-{
-public:
-	float                                                        TopDeckPlayerTrackerRadius;                        // 0x28(0x4)
-	float                                                        TimeSpentEmotingOnInitialSpawn;                    // 0x2c(0x4)
-	bool                                                         ForceAIToAlwaysSpawn;                              // 0x30(0x1)
-	float                                                        IntervalBetweenRepairDamageAssignments;            // 0x34(0x4)
-	float                                                        IntervalBetweenUseCannonAssignments;               // 0x38(0x4)
-	float                                                        DistForMinXYAIInteractableUtility;                 // 0x3c(0x4)
-	float                                                        DistForMaxXYAIInteractableUtility;                 // 0x40(0x4)
-	float                                                        MinXYAIInteractableUtility;                        // 0x44(0x4)
-	float                                                        MaxXYAIInteractableUtility;                        // 0x48(0x4)
-	float                                                        DistForMinZAIInteractableUtility;                  // 0x4c(0x4)
-	float                                                        DistForMaxZAIInteractableUtility;                  // 0x50(0x4)
-	float                                                        MinZAIInteractableUtility;                         // 0x54(0x4)
-	float                                                        MaxZAIInteractableUtility;                         // 0x58(0x4)
-	float                                                        MinInactiveRepairSpawnDelay;                       // 0x5c(0x4)
-	float                                                        MaxInactiveRepairSpawnDelay;                       // 0x60(0x4)
-	float                                                        SpawnSfxDistance;                                  // 0x64(0x4)
-	float                                                        SinkSfxDistance;                                   // 0x68(0x4)
-	int                                                          MinCannonAttackersWhenBoarded;                     // 0x6c(0x4)
-	float                                                        StuckCheckInterval;                                // 0x70(0x4)
-	float                                                        StuckCheckDistance;                                // 0x74(0x4)
-	float                                                        MaxDistanceFromEncounter;                          // 0x78(0x4)
-	float                                                        ShipFlippedAngle;                                  // 0x7c(0x4)
-	float                                                        SecondsUntilKillAIAfterShipDefeated;               // 0x80(0x4)
-	float                                                        SecondsDelayForAIShipDefeatedNotification;         // 0x84(0x4)
-	bool                                                         EnableShipSurfacingMusic;                          // 0x88(0x1)
-};
-
-
-// Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
-class AIShipEncounterDynamicDesc: public Object
-{
-public:
-	TArray<struct AIShipSizeDynamicContexts>                     ShipPool;                                          // 0x28(0x10)
-	class AIShipContextDescDataAsset*                            FinalShip;                                         // 0x38(0x8)
-	struct AIShipEncounterDynamicBalancingDesc                   DynamicBalancingDesc;                              // 0x40(0x58)
 };
 
 
@@ -219,6 +71,70 @@ public:
 };
 
 
+// Size 0xb8 (Full Size[0xe0] - InheritedSize[0x28]
+class AIShipContextDescDataAsset: public DataAsset
+{
+public:
+	char                                                         ShipType;                                          // 0x28(0x1)
+	char                                                         EncounterType;                                     // 0x29(0x1)
+	class UClass*                                                EventType;                                         // 0x30(0x8)
+	class ShipDescAsset*                                         ShipDesc;                                          // 0x38(0x8)
+	class AthenaAIShipControllerParamsDataAsset*                 ControllerParams;                                  // 0x40(0x8)
+	TArray<struct AIShipEncounterParamsSpawnerData>              Spawners;                                          // 0x48(0x10)
+	TArray<struct AIShipCrewSizeSpecificSpawnerEntry>            CrewSizeSpecificSpawners;                          // 0x58(0x10)
+	struct AIShipContextDescDamageParams                         DamageParams;                                      // 0x68(0x14)
+	struct AIShipSailData                                        SailsCustomisation;                                // 0x7c(0x10)
+	struct Color                                                 SailColour;                                        // 0x8c(0x4)
+	struct AIShipCrewFormType                                    FormType;                                          // 0x90(0x20)
+	struct AIShipCrewAmmoType                                    AmmoType;                                          // 0xb0(0x18)
+	class ShortRangeMarkerDataAsset*                             RewardMarkerParams;                                // 0xc8(0x8)
+	TArray<struct AIShipBootyItem>                               ItemsToSkip;                                       // 0xd0(0x10)
+};
+
+
+// Size 0x60 (Full Size[0xd0] - InheritedSize[0x70]
+class BTService_UpdateTargetLocationForPassiveShip: public BTService
+{
+public:
+	struct BlackboardKeySelector                                 TargetLocationKey;                                 // 0x70(0x28)
+	float                                                        AngleOffsetFromForwardDegreesWhenNoIslands;        // 0x98(0x4)
+	float                                                        TargetLocationDistanceWhenNoIslands;               // 0x9c(0x4)
+};
+
+
+// Size 0x250 (Full Size[0x278] - InheritedSize[0x28]
+class AIShipServiceDataAsset: public DataAsset
+{
+public:
+	TArray<struct EventTypeAIShipEncounterParams>                BattleEncounterParams;                             // 0x28(0x10)
+	struct AIShipEncounterParams                                 AggressiveEncounterParams;                         // 0x38(0x28)
+	struct AIShipEncounterParams                                 PassiveEncounterParams;                            // 0x60(0x28)
+	struct IntPoint                                              ObstacleBucketDimensions;                          // 0x88(0x8)
+	float                                                        ShipwreckObstacleRadius;                           // 0x90(0x4)
+	struct AIShipContextDescGenerationParams                     ContextDescGenerationParams;                       // 0x98(0x80)
+	struct AIShipBattleEncounterDescGenerationParams             EncounterGenerationParams;                         // 0x118(0x80)
+	struct AIShipSingleWaveEncounterDescGenerationParams         AggressiveEncounterGenerationParams;               // 0x198(0x10)
+	struct AIShipSingleWaveEncounterDescGenerationParams         PassiveEncounterGenerationParams;                  // 0x1a8(0x10)
+	struct WeightedProbabilityRangeOfRanges                      TimerBattleFirstRegenInterval;                     // 0x1b8(0x30)
+	struct WeightedProbabilityRangeOfRanges                      TimerBattleRegenInterval;                          // 0x1e8(0x30)
+	float                                                        TimerBattleFinderThrottle;                         // 0x218(0x4)
+	struct WeightedProbabilityRangeOfRanges                      TimerBattleRetryRegenInterval;                     // 0x220(0x30)
+	float                                                        TimerBattleMinActivationDistanceFromPlayers;       // 0x250(0x4)
+	class ShortRangeMarkerDataAsset*                             RewardMarkerParams;                                // 0x258(0x8)
+	TArray<struct Name>                                          IslandsToAvoid;                                    // 0x260(0x10)
+	float                                                        AvoidanceRange;                                    // 0x270(0x4)
+};
+
+
+// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
+class BTTask_AIShipSurface: public BTTask_BlackboardBase
+{
+public:
+	float                                                        MaxSpeed;                                          // 0x88(0x4)
+	float                                                        PreSurfaceDelay;                                   // 0x8c(0x4)
+};
+
+
 // Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
 class AIShipObstacleComponent: public ActorComponent
 {
@@ -228,34 +144,11 @@ public:
 };
 
 
-// Size 0xa8 (Full Size[0x130] - InheritedSize[0x88]
-class BTTask_SailShipForward: public BTTask_BlackboardBase
+// Size 0x50 (Full Size[0xd8] - InheritedSize[0x88]
+class BTTask_SailShipBesideTarget: public BTTask_BlackboardBase
 {
 public:
-	struct BlackboardKeySelector                                 ShouldSailForwardKey;                              // 0x88(0x28)
-	struct BlackboardKeySelector                                 TimeToSailForwardKey;                              // 0xb0(0x28)
-	struct BlackboardKeySelector                                 IsCaptainPresentKey;                               // 0xd8(0x28)
-};
-
-
-// Size 0x38 (Full Size[0x478] - InheritedSize[0x440]
-class ShipProxyPawn: public Pawn
-{
-public:
-	class Actor*                                                 Ship;                                              // 0x440(0x8)
-	class Actor*                                                 SpawnTargetShip;                                   // 0x448(0x8)
-};
-
-
-// Size 0x188 (Full Size[0x798] - InheritedSize[0x610]
-class AthenaAIShipController: public AthenaAIControllerBase
-{
-public:
-	bool                                                         ShouldRemoveSailDynamics;                          // 0x610(0x1)
-	class BehaviorTree*                                          BTAsset;                                           // 0x618(0x8)
-	class AthenaAIShipControllerParamsDataAsset*                 ShipParamsDataAsset;                               // 0x648(0x8)
-	class StatusEffectManagerComponent*                          StatusEffectManagerComponent;                      // 0x650(0x8)
-	struct StandardAnchorDynamicsParameters                      AnchorDynamicsParams;                              // 0x658(0x28)
+	struct TrackingNoiseGenerator                                TrackingNoiseGenerator;                            // 0xa8(0x18)
 };
 
 
@@ -264,6 +157,24 @@ class BTTask_ToggleAnchor: public BTTask_BlackboardBase
 {
 public:
 	bool                                                         IsAnchored;                                        // 0x88(0x1)
+};
+
+
+// Size 0x48 (Full Size[0xd0] - InheritedSize[0x88]
+class BTTask_SailShipToLocation: public BTTask_BlackboardBase
+{
+public:
+	struct BlackboardKeySelector                                 TargetLocationKey;                                 // 0x88(0x28)
+	float                                                        DistanceThresholdToConsiderTargetReached;          // 0xb0(0x4)
+};
+
+
+// Size 0x50 (Full Size[0xc0] - InheritedSize[0x70]
+class BTService_UpdateLocationWithActorLocation: public BTService
+{
+public:
+	struct BlackboardKeySelector                                 LocationKey;                                       // 0x70(0x28)
+	struct BlackboardKeySelector                                 ActorKey;                                          // 0x98(0x28)
 };
 
 
@@ -314,35 +225,124 @@ public:
 };
 
 
-// Size 0x50 (Full Size[0xd8] - InheritedSize[0x88]
-class BTTask_SailShipBesideTarget: public BTTask_BlackboardBase
+// Size 0x430 (Full Size[0x7f8] - InheritedSize[0x3c8]
+class AIShipService: public Actor
 {
 public:
-	struct TrackingNoiseGenerator                                TrackingNoiseGenerator;                            // 0xa8(0x18)
+	class GameEventOnDemandAvailabilityHandler*                  GameEventOnDemandAvailabilityHandler;              // 0x3d8(0x8)
+	class AIShipServiceDataAsset*                                Params;                                            // 0x3f8(0x8)
 };
 
 
-// Size 0x250 (Full Size[0x278] - InheritedSize[0x28]
-class AIShipServiceDataAsset: public DataAsset
+// Size 0x68 (Full Size[0x90] - InheritedSize[0x28]
+class AIShipContextParamsDataAsset: public DataAsset
 {
 public:
-	TArray<struct EventTypeAIShipEncounterParams>                BattleEncounterParams;                             // 0x28(0x10)
-	struct AIShipEncounterParams                                 AggressiveEncounterParams;                         // 0x38(0x28)
-	struct AIShipEncounterParams                                 PassiveEncounterParams;                            // 0x60(0x28)
-	struct IntPoint                                              ObstacleBucketDimensions;                          // 0x88(0x8)
-	float                                                        ShipwreckObstacleRadius;                           // 0x90(0x4)
-	struct AIShipContextDescGenerationParams                     ContextDescGenerationParams;                       // 0x98(0x80)
-	struct AIShipBattleEncounterDescGenerationParams             EncounterGenerationParams;                         // 0x118(0x80)
-	struct AIShipSingleWaveEncounterDescGenerationParams         AggressiveEncounterGenerationParams;               // 0x198(0x10)
-	struct AIShipSingleWaveEncounterDescGenerationParams         PassiveEncounterGenerationParams;                  // 0x1a8(0x10)
-	struct WeightedProbabilityRangeOfRanges                      TimerBattleFirstRegenInterval;                     // 0x1b8(0x30)
-	struct WeightedProbabilityRangeOfRanges                      TimerBattleRegenInterval;                          // 0x1e8(0x30)
-	float                                                        TimerBattleFinderThrottle;                         // 0x218(0x4)
-	struct WeightedProbabilityRangeOfRanges                      TimerBattleRetryRegenInterval;                     // 0x220(0x30)
-	float                                                        TimerBattleMinActivationDistanceFromPlayers;       // 0x250(0x4)
-	class ShortRangeMarkerDataAsset*                             RewardMarkerParams;                                // 0x258(0x8)
-	TArray<struct Name>                                          IslandsToAvoid;                                    // 0x260(0x10)
-	float                                                        AvoidanceRange;                                    // 0x270(0x4)
+	float                                                        TopDeckPlayerTrackerRadius;                        // 0x28(0x4)
+	float                                                        TimeSpentEmotingOnInitialSpawn;                    // 0x2c(0x4)
+	bool                                                         ForceAIToAlwaysSpawn;                              // 0x30(0x1)
+	float                                                        IntervalBetweenRepairDamageAssignments;            // 0x34(0x4)
+	float                                                        IntervalBetweenUseCannonAssignments;               // 0x38(0x4)
+	float                                                        DistForMinXYAIInteractableUtility;                 // 0x3c(0x4)
+	float                                                        DistForMaxXYAIInteractableUtility;                 // 0x40(0x4)
+	float                                                        MinXYAIInteractableUtility;                        // 0x44(0x4)
+	float                                                        MaxXYAIInteractableUtility;                        // 0x48(0x4)
+	float                                                        DistForMinZAIInteractableUtility;                  // 0x4c(0x4)
+	float                                                        DistForMaxZAIInteractableUtility;                  // 0x50(0x4)
+	float                                                        MinZAIInteractableUtility;                         // 0x54(0x4)
+	float                                                        MaxZAIInteractableUtility;                         // 0x58(0x4)
+	float                                                        MinInactiveRepairSpawnDelay;                       // 0x5c(0x4)
+	float                                                        MaxInactiveRepairSpawnDelay;                       // 0x60(0x4)
+	float                                                        SpawnSfxDistance;                                  // 0x64(0x4)
+	float                                                        SinkSfxDistance;                                   // 0x68(0x4)
+	int                                                          MinCannonAttackersWhenBoarded;                     // 0x6c(0x4)
+	float                                                        StuckCheckInterval;                                // 0x70(0x4)
+	float                                                        StuckCheckDistance;                                // 0x74(0x4)
+	float                                                        MaxDistanceFromEncounter;                          // 0x78(0x4)
+	float                                                        ShipFlippedAngle;                                  // 0x7c(0x4)
+	float                                                        SecondsUntilKillAIAfterShipDefeated;               // 0x80(0x4)
+	float                                                        SecondsDelayForAIShipDefeatedNotification;         // 0x84(0x4)
+	bool                                                         EnableShipSurfacingMusic;                          // 0x88(0x1)
+};
+
+
+// Size 0xb0 (Full Size[0xd8] - InheritedSize[0x28]
+class AIShipEncounterSpawnParamsDataAsset: public DataAsset
+{
+public:
+	float                                                        SpawnDepth;                                        // 0x28(0x4)
+	float                                                        Radius;                                            // 0x2c(0x4)
+	float                                                        MinSafeSpawnDistanceFromOtherShips;                // 0x30(0x4)
+	float                                                        TimeDelayBetweenWaves;                             // 0x34(0x4)
+	struct RelativeSpawnLocationGeneratorParams                  RelativeSpawnLocationParams;                       // 0x38(0xa0)
+};
+
+
+// Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
+class AIShipEncounterDynamicDesc: public Object
+{
+public:
+	TArray<struct AIShipSizeDynamicContexts>                     ShipPool;                                          // 0x28(0x10)
+	class AIShipContextDescDataAsset*                            FinalShip;                                         // 0x38(0x8)
+	struct AIShipEncounterDynamicBalancingDesc                   DynamicBalancingDesc;                              // 0x40(0x58)
+};
+
+
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
+class AIShipEncounterDesc: public DataAsset
+{
+public:
+	struct Vector2D                                              Location;                                          // 0x28(0x8)
+	float                                                        Radius;                                            // 0x30(0x4)
+	bool                                                         Moveable;                                          // 0x34(0x1)
+	bool                                                         ShowRevealBanner;                                  // 0x35(0x1)
+	bool                                                         ShowCompleteBanner;                                // 0x36(0x1)
+	bool                                                         ShouldSpawnShipCloud;                              // 0x37(0x1)
+	bool                                                         RequirePlayerShipInZoneToSpawnShips;               // 0x38(0x1)
+	bool                                                         EnableSecondsUntilEncounterEndsAfterLastCrewLeft;  // 0x39(0x1)
+	int                                                          SecondsUntilEncounterEndsAfterLastCrewLeft;        // 0x3c(0x4)
+	bool                                                         EnableMaximumEncounterDuration;                    // 0x40(0x1)
+	int                                                          MaximumEncounterDuration;                          // 0x44(0x4)
+	char                                                         EncounterType;                                     // 0x48(0x1)
+	TArray<struct AIShipEncounterWave>                           Waves;                                             // 0x50(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class CursedSailsCampaignDataAsset: public DataAsset
+{
+public:
+	TArray<struct CursedSailsBattleParams>                       Battles;                                           // 0x28(0x10)
+};
+
+
+// Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
+class AIShipBattlesDataAsset: public DataAsset
+{
+public:
+	TArray<struct AIShipBattleParams>                            Battles;                                           // 0x28(0x10)
+	TArray<struct Text>                                          SkellyCrewNames;                                   // 0x38(0x10)
+	struct FText                                                 EncounterCompleteText;                             // 0x48(0x38)
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class IsAIShipEncounterTypeStatCondition: public StatCondition
+{
+public:
+	char                                                         EncounterType;                                     // 0x28(0x1)
+};
+
+
+// Size 0x188 (Full Size[0x798] - InheritedSize[0x610]
+class AthenaAIShipController: public AthenaAIControllerBase
+{
+public:
+	bool                                                         ShouldRemoveSailDynamics;                          // 0x610(0x1)
+	class BehaviorTree*                                          BTAsset;                                           // 0x618(0x8)
+	class AthenaAIShipControllerParamsDataAsset*                 ShipParamsDataAsset;                               // 0x648(0x8)
+	class StatusEffectManagerComponent*                          StatusEffectManagerComponent;                      // 0x650(0x8)
+	struct StandardAnchorDynamicsParameters                      AnchorDynamicsParams;                              // 0x658(0x28)
 };
 
 

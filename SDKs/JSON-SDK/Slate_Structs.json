@@ -1,21 +1,4 @@
 {
-  "Anchors": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Minimum",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Maximum",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "InputChord": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -48,6 +31,23 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x20"
+      }
+    ]
+  },
+  "Anchors": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Minimum",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Maximum",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },

@@ -7,10 +7,35 @@
 
 
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class EmoteRandomFromListAsset: public DataAsset
+class EmotePropRandomObjectData: public EmotePropData
 {
 public:
-	TArray<struct EmoteData>                                     EmoteDataList;                                     // 0x28(0x10)
+	TArray<struct EmotePropRandomObjectInfo>                     PossibleObjects;                                   // 0x28(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class EmoteIdListingAsset: public DataAsset
+{
+public:
+	TArray<struct Name>                                          EmoteIds;                                          // 0x28(0x10)
+};
+
+
+// Size 0x140 (Full Size[0x508] - InheritedSize[0x3c8]
+class EmoteRandomObject: public Actor
+{
+public:
+	class StaticMeshComponent*                                   MeshComponent;                                     // 0x3d0(0x8)
+	class MaterialInstanceDynamic*                               DynamicMaterialInstance;                           // 0x3d8(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+class EmoteSettings: public DeveloperSettings
+{
+public:
+	int                                                          NumPages;                                          // 0x38(0x4)
 };
 
 
@@ -25,23 +50,6 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class EmoteSettings: public DeveloperSettings
-{
-public:
-	int                                                          NumPages;                                          // 0x38(0x4)
-};
-
-
-// Size 0x140 (Full Size[0x508] - InheritedSize[0x3c8]
-class EmoteRandomObject: public Actor
-{
-public:
-	class StaticMeshComponent*                                   MeshComponent;                                     // 0x3d0(0x8)
-	class MaterialInstanceDynamic*                               DynamicMaterialInstance;                           // 0x3d8(0x8)
-};
-
-
 // Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
 class EmotePropDiceData: public EmotePropData
 {
@@ -52,18 +60,10 @@ public:
 
 
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class EmotePropRandomObjectData: public EmotePropData
+class EmoteRandomFromListAsset: public DataAsset
 {
 public:
-	TArray<struct EmotePropRandomObjectInfo>                     PossibleObjects;                                   // 0x28(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class EmoteIdListingAsset: public DataAsset
-{
-public:
-	TArray<struct Name>                                          EmoteIds;                                          // 0x28(0x10)
+	TArray<struct EmoteData>                                     EmoteDataList;                                     // 0x28(0x10)
 };
 
 

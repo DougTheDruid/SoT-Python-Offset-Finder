@@ -26,14 +26,14 @@
       {
         "Name": "KnockbackParams",
         "Type": "struct KnockBackInfo",
-        "Size": "0x50",
+        "Size": "0x54",
         "Offset": "0x60c"
       },
       {
         "Name": "ActorToTarget",
         "Type": "class Actor*",
         "Size": "0x8",
-        "Offset": "0x65c"
+        "Offset": "0x660"
       },
       {
         "Name": "KnockbackDamageType",

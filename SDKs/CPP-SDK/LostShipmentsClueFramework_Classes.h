@@ -6,45 +6,6 @@
 #include "LostShipmentsClueFramework_Structs.h"
 
 
-// Size 0x68 (Full Size[0xe8] - InheritedSize[0x80]
-class TaleQuestGenerateClueSiteAtSeaLocationStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableVector                                   ApproximateLocation;                               // 0x80(0x30)
-	struct QuestVariableClueSite                                 ClueSite;                                          // 0xb0(0x30)
-	class ClueFactoryConfig*                                     ClueFactoryConfiguration;                          // 0xe0(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class LootForVoyageRankDescAsset: public DataAsset
-{
-public:
-	TArray<struct LootToRangeDist>                               RankBasedLootDistribution;                         // 0x28(0x10)
-};
-
-
-// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
-class TaleQuestUpdateBuoyancyAutoSinkSettingForItemStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableItemInfo                                 Item;                                              // 0x80(0x30)
-	bool                                                         EnableAutoSink;                                    // 0xb0(0x1)
-};
-
-
-// Size 0x78 (Full Size[0xf8] - InheritedSize[0x80]
-class TaleQuestSelectClueSiteForLootStepDesc: public TaleQuestStepDesc
-{
-public:
-	class TaleQuestArrayEntrySelectionStrategy*                  SelectionStrategy;                                 // 0x80(0x8)
-	class ClueSiteLootRestrictionsDataAsset*                     ClueSiteLootRestrictions;                          // 0x88(0x8)
-	char                                                         LootType;                                          // 0x90(0x1)
-	struct QuestVariableClueSite                                 OutputClueSite;                                    // 0x98(0x30)
-	struct QuestVariableBool                                     MaxedAllClueSites;                                 // 0xc8(0x30)
-};
-
-
 // Size 0x78 (Full Size[0xd8] - InheritedSize[0x60]
 class TaleQuestClueSiteService: public TaleQuestService
 {
@@ -53,6 +14,65 @@ public:
 	TArray<struct ClueSite>                                      ClueSites;                                         // 0x68(0x10)
 	map                                                          SpawnedLoot;                                       // 0x78(0x50)
 	TArray<struct Guid>                                          DebugClueSiteIds;                                  // 0xc8(0x10)
+};
+
+
+// Size 0xd8 (Full Size[0x158] - InheritedSize[0x80]
+class TaleQuestGenerateCluePointingToSiteStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableInt                                      Difficulty;                                        // 0x80(0x30)
+	struct QuestVariableVector                                   SourceLocation;                                    // 0xb0(0x30)
+	struct QuestVariableClueSite                                 TargetClueSite;                                    // 0xe0(0x30)
+	struct QuestVariableClueDescriptor                           GeneratedClue;                                     // 0x110(0x30)
+	TArray<class Class*>                                         AllowedClueTypes;                                  // 0x140(0x10)
+	class ClueConnectionConfig*                                  ConnectionConfiguration;                           // 0x150(0x8)
+};
+
+
+// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
+class NPCLootSpawnComponent: public ActorComponent
+{
+public:
+	TArray<struct Vector>                                        LootItemSpawnRelativeLocations;                    // 0xd0(0x10)
+};
+
+
+// Size 0x68 (Full Size[0xe8] - InheritedSize[0x80]
+class TaleQuestGenerateClueSiteOnIslandStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableName                                     IslandName;                                        // 0x80(0x30)
+	struct QuestVariableClueSite                                 ClueSite;                                          // 0xb0(0x30)
+	class ClueFactoryConfig*                                     ClueGenerationConfiguration;                       // 0xe0(0x8)
+};
+
+
+// Size 0x90 (Full Size[0x110] - InheritedSize[0x80]
+class TaleQuestStoreClueOnActorStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableClueDescriptor                           ClueDescriptor;                                    // 0x80(0x30)
+	struct QuestVariableActor                                    Actor;                                             // 0xb0(0x30)
+	struct QuestVariableActor                                    ClueActor;                                         // 0xe0(0x30)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class DebrisForVoyageRankDescAsset: public DataAsset
+{
+public:
+	TArray<struct DebrisToRangeDist>                             RankBasedDebrisDistribution;                       // 0x28(0x10)
+};
+
+
+// Size 0x68 (Full Size[0xe8] - InheritedSize[0x80]
+class TaleQuestGenerateClueSiteAtSeaLocationStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableVector                                   ApproximateLocation;                               // 0x80(0x30)
+	struct QuestVariableClueSite                                 ClueSite;                                          // 0xb0(0x30)
+	class ClueFactoryConfig*                                     ClueFactoryConfiguration;                          // 0xe0(0x8)
 };
 
 
@@ -67,31 +87,29 @@ public:
 };
 
 
-// Size 0x90 (Full Size[0x110] - InheritedSize[0x80]
-class TaleQuestStoreClueOnActorStepDesc: public TaleQuestStepDesc
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class ClueDescriptorGenerator: public Object
 {
 public:
-	struct QuestVariableClueDescriptor                           ClueDescriptor;                                    // 0x80(0x30)
-	struct QuestVariableActor                                    Actor;                                             // 0xb0(0x30)
-	struct QuestVariableActor                                    ClueActor;                                         // 0xe0(0x30)
+	class UClass*                                                DescriptorType;                                    // 0x28(0x8)
+	TArray<class Class*>                                         SupportedDestinationTypes;                         // 0x30(0x10)
 };
 
 
-// Size 0x68 (Full Size[0xe8] - InheritedSize[0x80]
-class TaleQuestIsClueOfTypeStepDesc: public TaleQuestStepDesc
+// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
+class TaleQuestUpdateBuoyancyAutoSinkSettingForItemStepDesc: public TaleQuestStepDesc
 {
 public:
-	class UClass*                                                ClueSiteTypeToMatch;                               // 0x80(0x8)
-	struct QuestVariableClueSite                                 ClueSite;                                          // 0x88(0x30)
-	struct QuestVariableBool                                     IsMatchingType;                                    // 0xb8(0x30)
+	struct QuestVariableItemInfo                                 Item;                                              // 0x80(0x30)
+	bool                                                         EnableAutoSink;                                    // 0xb0(0x1)
 };
 
 
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class ClueFactory: public Object
+// Size 0x100 (Full Size[0x198] - InheritedSize[0x98]
+class TaleQuestChooseLandOrSeaStep: public TaleQuestStep
 {
 public:
-	class ClueFactoryConfig*                                     Config;                                            // 0x28(0x8)
+	class SeaClueSiteTypesDataAsset*                             SeaClueSiteTypes;                                  // 0xb0(0x8)
 };
 
 
@@ -112,13 +130,50 @@ public:
 };
 
 
-// Size 0x68 (Full Size[0xe8] - InheritedSize[0x80]
-class TaleQuestGenerateClueSiteOnIslandStepDesc: public TaleQuestStepDesc
+// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
+class ClueDescriptorContainerComponent: public ActorComponent
 {
 public:
-	struct QuestVariableName                                     IslandName;                                        // 0x80(0x30)
-	struct QuestVariableClueSite                                 ClueSite;                                          // 0xb0(0x30)
-	class ClueFactoryConfig*                                     ClueGenerationConfiguration;                       // 0xe0(0x8)
+	class ClueDescriptor*                                        CurrentClue;                                       // 0xd0(0x8)
+	bool                                                         HasClueBeenGiven;                                  // 0xd8(0x1)
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class ClueFactory: public Object
+{
+public:
+	class ClueFactoryConfig*                                     Config;                                            // 0x28(0x8)
+};
+
+
+// Size 0x68 (Full Size[0xe8] - InheritedSize[0x80]
+class TaleQuestGenerateDebrisTypeForVoyageRankStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableInt                                      VoyageRank;                                        // 0x80(0x30)
+	struct QuestVariableActorAssetTypeArray                      DebrisTypeArray;                                   // 0xb0(0x30)
+	class DebrisForVoyageRankDescAsset*                          DebrisForRankDescAsset;                            // 0xe0(0x8)
+};
+
+
+// Size 0x78 (Full Size[0xf8] - InheritedSize[0x80]
+class TaleQuestSelectClueSiteForLootStepDesc: public TaleQuestStepDesc
+{
+public:
+	class TaleQuestArrayEntrySelectionStrategy*                  SelectionStrategy;                                 // 0x80(0x8)
+	class ClueSiteLootRestrictionsDataAsset*                     ClueSiteLootRestrictions;                          // 0x88(0x8)
+	char                                                         LootType;                                          // 0x90(0x1)
+	struct QuestVariableClueSite                                 OutputClueSite;                                    // 0x98(0x30)
+	struct QuestVariableBool                                     MaxedAllClueSites;                                 // 0xc8(0x30)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class ClueSiteData: public Object
+{
+public:
+	char                                                         DebrisTrackingType;                                // 0x28(0x1)
 };
 
 
@@ -133,36 +188,11 @@ public:
 };
 
 
-// Size 0x68 (Full Size[0x90] - InheritedSize[0x28]
-class ClueDestinationGenerator: public Object
-{
-public:
-	class UClass*                                                RequiredClueSiteDataType;                          // 0x28(0x8)
-	TArray<struct WeightedClueDestinationDescriptor>             WeightedSupportedDescriptorTypes;                  // 0x30(0x10)
-};
-
-
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class SeaClueSiteTypesDataAsset: public DataAsset
+class LootForVoyageRankDescAsset: public DataAsset
 {
 public:
-	TArray<class Class*>                                         ClueSiteTypes;                                     // 0x28(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class DebrisForVoyageRankDescAsset: public DataAsset
-{
-public:
-	TArray<struct DebrisToRangeDist>                             RankBasedDebrisDistribution;                       // 0x28(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class ClueSiteData: public Object
-{
-public:
-	char                                                         DebrisTrackingType;                                // 0x28(0x1)
+	TArray<struct LootToRangeDist>                               RankBasedLootDistribution;                         // 0x28(0x10)
 };
 
 
@@ -176,44 +206,47 @@ public:
 };
 
 
-// Size 0xd8 (Full Size[0x158] - InheritedSize[0x80]
-class TaleQuestGenerateCluePointingToSiteStepDesc: public TaleQuestStepDesc
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class ClueSiteLootRestrictionsDataAsset: public DataAsset
 {
 public:
-	struct QuestVariableInt                                      Difficulty;                                        // 0x80(0x30)
-	struct QuestVariableVector                                   SourceLocation;                                    // 0xb0(0x30)
-	struct QuestVariableClueSite                                 TargetClueSite;                                    // 0xe0(0x30)
-	struct QuestVariableClueDescriptor                           GeneratedClue;                                     // 0x110(0x30)
-	TArray<class Class*>                                         AllowedClueTypes;                                  // 0x140(0x10)
-	class ClueConnectionConfig*                                  ConnectionConfiguration;                           // 0x150(0x8)
+	TArray<struct ClueSiteLootRestriction>                       ClueSiteLootRestrictions;                          // 0x28(0x10)
 };
 
 
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class ClueDescriptorGenerator: public Object
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class FixedClueChoiceSelectionStrategy: public ClueChoiceSelectionStrategy
 {
 public:
-	class UClass*                                                DescriptorType;                                    // 0x28(0x8)
-	TArray<class Class*>                                         SupportedDestinationTypes;                         // 0x30(0x10)
+	int                                                          IndexToSelect;                                     // 0x28(0x4)
 };
 
 
-// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
-class ClueDescriptorContainerComponent: public ActorComponent
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class SeaClueSiteTypesDataAsset: public DataAsset
 {
 public:
-	class ClueDescriptor*                                        CurrentClue;                                       // 0xd0(0x8)
-	bool                                                         HasClueBeenGiven;                                  // 0xd8(0x1)
+	TArray<class Class*>                                         ClueSiteTypes;                                     // 0x28(0x10)
+};
+
+
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class ClueConnectionConfig: public DataAsset
+{
+public:
+	TArray<struct ClueSiteTypeSupportedDescribedByEntry>         CluesThatCanDescribeSites;                         // 0x28(0x10)
+	TArray<class ClueDescriptorGenerator*>                       ClueGenerators;                                    // 0x38(0x10)
+	TArray<class ClueDestinationGenerator*>                      DestinationGenerators;                             // 0x48(0x10)
 };
 
 
 // Size 0x68 (Full Size[0xe8] - InheritedSize[0x80]
-class TaleQuestGenerateDebrisTypeForVoyageRankStepDesc: public TaleQuestStepDesc
+class TaleQuestIsClueOfTypeStepDesc: public TaleQuestStepDesc
 {
 public:
-	struct QuestVariableInt                                      VoyageRank;                                        // 0x80(0x30)
-	struct QuestVariableActorAssetTypeArray                      DebrisTypeArray;                                   // 0xb0(0x30)
-	class DebrisForVoyageRankDescAsset*                          DebrisForRankDescAsset;                            // 0xe0(0x8)
+	class UClass*                                                ClueSiteTypeToMatch;                               // 0x80(0x8)
+	struct QuestVariableClueSite                                 ClueSite;                                          // 0x88(0x30)
+	struct QuestVariableBool                                     IsMatchingType;                                    // 0xb8(0x30)
 };
 
 
@@ -227,11 +260,11 @@ public:
 };
 
 
-// Size 0x100 (Full Size[0x198] - InheritedSize[0x98]
-class TaleQuestChooseLandOrSeaStep: public TaleQuestStep
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class WeightedDebrisDataAsset: public DataAsset
 {
 public:
-	class SeaClueSiteTypesDataAsset*                             SeaClueSiteTypes;                                  // 0xb0(0x8)
+	TArray<struct WeightedDebris>                                Debris;                                            // 0x28(0x10)
 };
 
 
@@ -256,45 +289,12 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class FixedClueChoiceSelectionStrategy: public ClueChoiceSelectionStrategy
+// Size 0x68 (Full Size[0x90] - InheritedSize[0x28]
+class ClueDestinationGenerator: public Object
 {
 public:
-	int                                                          IndexToSelect;                                     // 0x28(0x4)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class WeightedDebrisDataAsset: public DataAsset
-{
-public:
-	TArray<struct WeightedDebris>                                Debris;                                            // 0x28(0x10)
-};
-
-
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class ClueConnectionConfig: public DataAsset
-{
-public:
-	TArray<struct ClueSiteTypeSupportedDescribedByEntry>         CluesThatCanDescribeSites;                         // 0x28(0x10)
-	TArray<class ClueDescriptorGenerator*>                       ClueGenerators;                                    // 0x38(0x10)
-	TArray<class ClueDestinationGenerator*>                      DestinationGenerators;                             // 0x48(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class ClueSiteLootRestrictionsDataAsset: public DataAsset
-{
-public:
-	TArray<struct ClueSiteLootRestriction>                       ClueSiteLootRestrictions;                          // 0x28(0x10)
-};
-
-
-// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
-class NPCLootSpawnComponent: public ActorComponent
-{
-public:
-	TArray<struct Vector>                                        LootItemSpawnRelativeLocations;                    // 0xd0(0x10)
+	class UClass*                                                RequiredClueSiteDataType;                          // 0x28(0x8)
+	TArray<struct WeightedClueDestinationDescriptor>             WeightedSupportedDescriptorTypes;                  // 0x30(0x10)
 };
 
 

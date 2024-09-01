@@ -67,20 +67,6 @@
       }
     ]
   },
-  "OceanCrawlerAnimationData": {
-    "Super": "AnimationData",
-    "FullSize": "0xb8",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "OceanCrawlerAnimationDataStructure",
-        "Type": "struct OceanCrawlerAnimationDataStructure",
-        "Size": "0x90",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "OceanCrawlerAnimationServerData": {
     "Super": "AnimationServerData",
     "FullSize": "0x48",
@@ -110,6 +96,20 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x40"
+      }
+    ]
+  },
+  "OceanCrawlerAnimationData": {
+    "Super": "AnimationData",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "OceanCrawlerAnimationDataStructure",
+        "Type": "struct OceanCrawlerAnimationDataStructure",
+        "Size": "0x90",
+        "Offset": "0x28"
       }
     ]
   },

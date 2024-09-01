@@ -6,8 +6,8 @@ ActionStateMachineComponent:
     Offset: '0xe0'
     Size: '0x10'
     Type: multicastinlinedelegate
-  ClassSize: '0x790'
-  FullSize: '0x858'
+  ClassSize: '0x7a0'
+  FullSize: '0x868'
   InheritedSize: '0xc8'
   Super: ActorComponent
 ActionStatePriorityTableData:
@@ -59,18 +59,18 @@ CustomClientValidityCheckCallback:
 SelfInitialisingActionStateMachineComponent:
   Attributes:
   - Name: ActionStatePriorityTableData
-    Offset: '0x860'
+    Offset: '0x870'
     Size: '0x8'
     Type: class ActionStatePriorityTableData*
   - Name: ActionStateCreatorDefinition
-    Offset: '0x868'
+    Offset: '0x878'
     Size: '0x8'
     Type: class UClass*
   - Name: ActionStateInitialStateCreatorDefinition
-    Offset: '0x870'
+    Offset: '0x880'
     Size: '0x8'
     Type: class UClass*
   ClassSize: '0x48'
-  FullSize: '0x8a0'
-  InheritedSize: '0x858'
+  FullSize: '0x8b0'
+  InheritedSize: '0x868'
   Super: ActionStateMachineComponent

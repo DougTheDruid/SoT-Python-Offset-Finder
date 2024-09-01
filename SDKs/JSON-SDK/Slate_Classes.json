@@ -1,18 +1,4 @@
 {
-  "ButtonWidgetStyle": {
-    "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x2d8",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x2a8",
-    "Attributes": [
-      {
-        "Name": "ButtonStyle",
-        "Type": "struct ButtonStyle",
-        "Size": "0x2a8",
-        "Offset": "0x30"
-      }
-    ]
-  },
   "CheckBoxWidgetStyle": {
     "Super": "SlateWidgetStyleContainerBase",
     "FullSize": "0x620",
@@ -23,48 +9,6 @@
         "Name": "CheckBoxStyle",
         "Type": "struct CheckBoxStyle",
         "Size": "0x5f0",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "SpinBoxWidgetStyle": {
-    "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x348",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x318",
-    "Attributes": [
-      {
-        "Name": "SpinBoxStyle",
-        "Type": "struct SpinBoxStyle",
-        "Size": "0x318",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "ComboButtonWidgetStyle": {
-    "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x410",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x3e0",
-    "Attributes": [
-      {
-        "Name": "ComboButtonStyle",
-        "Type": "struct ComboButtonStyle",
-        "Size": "0x3e0",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "ComboBoxWidgetStyle": {
-    "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x458",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x428",
-    "Attributes": [
-      {
-        "Name": "ComboBoxStyle",
-        "Type": "struct ComboBoxStyle",
-        "Size": "0x428",
         "Offset": "0x30"
       }
     ]
@@ -83,20 +27,6 @@
       }
     ]
   },
-  "TextBlockWidgetStyle": {
-    "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x190",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x160",
-    "Attributes": [
-      {
-        "Name": "TextBlockStyle",
-        "Type": "struct TextBlockStyle",
-        "Size": "0x160",
-        "Offset": "0x30"
-      }
-    ]
-  },
   "ScrollBarWidgetStyle": {
     "Super": "SlateWidgetStyleContainerBase",
     "FullSize": "0x548",
@@ -107,6 +37,34 @@
         "Name": "ScrollBarStyle",
         "Type": "struct ScrollBarStyle",
         "Size": "0x518",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "ComboButtonWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x410",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x3e0",
+    "Attributes": [
+      {
+        "Name": "ComboButtonStyle",
+        "Type": "struct ComboButtonStyle",
+        "Size": "0x3e0",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "EditableTextWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x258",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x228",
+    "Attributes": [
+      {
+        "Name": "EditableTextStyle",
+        "Type": "struct EditableTextStyle",
+        "Size": "0x228",
         "Offset": "0x30"
       }
     ]
@@ -125,16 +83,58 @@
       }
     ]
   },
-  "EditableTextWidgetStyle": {
+  "SpinBoxWidgetStyle": {
     "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x258",
+    "FullSize": "0x348",
     "InheritedSize": "0x30",
-    "ClassSize": "0x228",
+    "ClassSize": "0x318",
     "Attributes": [
       {
-        "Name": "EditableTextStyle",
-        "Type": "struct EditableTextStyle",
-        "Size": "0x228",
+        "Name": "SpinBoxStyle",
+        "Type": "struct SpinBoxStyle",
+        "Size": "0x318",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "ButtonWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x2d8",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x2a8",
+    "Attributes": [
+      {
+        "Name": "ButtonStyle",
+        "Type": "struct ButtonStyle",
+        "Size": "0x2a8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "TextBlockWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x190",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x160",
+    "Attributes": [
+      {
+        "Name": "TextBlockStyle",
+        "Type": "struct TextBlockStyle",
+        "Size": "0x160",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "ComboBoxWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x458",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x428",
+    "Attributes": [
+      {
+        "Name": "ComboBoxStyle",
+        "Type": "struct ComboBoxStyle",
+        "Size": "0x428",
         "Offset": "0x30"
       }
     ]

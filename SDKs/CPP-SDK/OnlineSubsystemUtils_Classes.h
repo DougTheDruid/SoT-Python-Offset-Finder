@@ -6,8 +6,71 @@
 #include "OnlineSubsystemUtils_Structs.h"
 
 
+// Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
+class AchievementWriteCallbackProxy: public OnlineBlueprintCallProxyBase
+{
+public:
+	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
+	multicastinlinedelegate                                      OnFailure;                                         // 0x38(0x10)
+};
+
+
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
+class EndMatchCallbackProxy: public OnlineBlueprintCallProxyBase
+{
+public:
+	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
+	multicastinlinedelegate                                      OnFailure;                                         // 0x38(0x10)
+};
+
+
+// Size 0x68 (Full Size[0x90] - InheritedSize[0x28]
+class LeaderboardQueryCallbackProxy: public Object
+{
+public:
+	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
+	multicastinlinedelegate                                      OnFailure;                                         // 0x38(0x10)
+};
+
+
+// Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
+class InAppPurchaseQueryCallbackProxy: public Object
+{
+public:
+	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
+	multicastinlinedelegate                                      OnFailure;                                         // 0x38(0x10)
+};
+
+
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
+class EndTurnCallbackProxy: public OnlineBlueprintCallProxyBase
+{
+public:
+	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
+	multicastinlinedelegate                                      OnFailure;                                         // 0x38(0x10)
+};
+
+
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
+class LeaderboardFlushCallbackProxy: public Object
+{
+public:
+	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
+	multicastinlinedelegate                                      OnFailure;                                         // 0x38(0x10)
+};
+
+
 // Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
-class FindTurnBasedMatchCallbackProxy: public OnlineBlueprintCallProxyBase
+class InAppPurchaseCallbackProxy: public Object
+{
+public:
+	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
+	multicastinlinedelegate                                      OnFailure;                                         // 0x38(0x10)
+};
+
+
+// Size 0x130 (Full Size[0x158] - InheritedSize[0x28]
+class JoinSessionCallbackProxy: public OnlineBlueprintCallProxyBase
 {
 public:
 	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
@@ -25,26 +88,8 @@ public:
 };
 
 
-// Size 0x130 (Full Size[0x158] - InheritedSize[0x28]
-class JoinSessionCallbackProxy: public OnlineBlueprintCallProxyBase
-{
-public:
-	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
-	multicastinlinedelegate                                      OnFailure;                                         // 0x38(0x10)
-};
-
-
-// Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
-class InAppPurchaseRestoreCallbackProxy: public Object
-{
-public:
-	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
-	multicastinlinedelegate                                      OnFailure;                                         // 0x38(0x10)
-};
-
-
-// Size 0x68 (Full Size[0x90] - InheritedSize[0x28]
-class LeaderboardQueryCallbackProxy: public Object
+// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
+class ConnectionCallbackProxy: public OnlineBlueprintCallProxyBase
 {
 public:
 	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
@@ -53,16 +98,7 @@ public:
 
 
 // Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
-class FindSessionsCallbackProxy: public OnlineBlueprintCallProxyBase
-{
-public:
-	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
-	multicastinlinedelegate                                      OnFailure;                                         // 0x38(0x10)
-};
-
-
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class ShowLoginUICallbackProxy: public BlueprintAsyncActionBase
+class FindTurnBasedMatchCallbackProxy: public OnlineBlueprintCallProxyBase
 {
 public:
 	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
@@ -79,8 +115,45 @@ public:
 };
 
 
+// Size 0x50 (Full Size[0x4c8] - InheritedSize[0x478]
+class IpNetDriver: public NetDriver
+{
+public:
+	bool                                                         LogPortUnreach;                                    // 0x478(0x1)
+	bool                                                         AllowPlayerPortUnreach;                            // 0x478(0x1)
+	uint32                                                       MaxPortCountToTry;                                 // 0x47c(0x4)
+};
+
+
 // Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
 class CreateSessionCallbackProxy: public OnlineBlueprintCallProxyBase
+{
+public:
+	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
+	multicastinlinedelegate                                      OnFailure;                                         // 0x38(0x10)
+};
+
+
+// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
+class FindSessionsCallbackProxy: public OnlineBlueprintCallProxyBase
+{
+public:
+	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
+	multicastinlinedelegate                                      OnFailure;                                         // 0x38(0x10)
+};
+
+
+// Size 0x150 (Full Size[0x178] - InheritedSize[0x28]
+class OnlineSessionClient: public OnlineSession
+{
+public:
+	bool                                                         bIsFromInvite;                                     // 0x170(0x1)
+	bool                                                         bHandlingDisconnect;                               // 0x171(0x1)
+};
+
+
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class ShowLoginUICallbackProxy: public BlueprintAsyncActionBase
 {
 public:
 	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
@@ -103,35 +176,17 @@ public:
 };
 
 
-// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
-class DestroySessionCallbackProxy: public OnlineBlueprintCallProxyBase
-{
-public:
-	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
-	multicastinlinedelegate                                      OnFailure;                                         // 0x38(0x10)
-};
-
-
-// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
-class ConnectionCallbackProxy: public OnlineBlueprintCallProxyBase
-{
-public:
-	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
-	multicastinlinedelegate                                      OnFailure;                                         // 0x38(0x10)
-};
-
-
-// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
-class LeaderboardFlushCallbackProxy: public Object
-{
-public:
-	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
-	multicastinlinedelegate                                      OnFailure;                                         // 0x38(0x10)
-};
-
-
 // Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
 class AchievementQueryCallbackProxy: public OnlineBlueprintCallProxyBase
+{
+public:
+	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
+	multicastinlinedelegate                                      OnFailure;                                         // 0x38(0x10)
+};
+
+
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
+class LogoutCallbackProxy: public BlueprintAsyncActionBase
 {
 public:
 	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
@@ -149,26 +204,8 @@ public:
 };
 
 
-// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
-class InAppPurchaseCallbackProxy: public Object
-{
-public:
-	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
-	multicastinlinedelegate                                      OnFailure;                                         // 0x38(0x10)
-};
-
-
-// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
-class LogoutCallbackProxy: public BlueprintAsyncActionBase
-{
-public:
-	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
-	multicastinlinedelegate                                      OnFailure;                                         // 0x38(0x10)
-};
-
-
 // Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
-class InAppPurchaseQueryCallbackProxy: public Object
+class InAppPurchaseRestoreCallbackProxy: public Object
 {
 public:
 	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
@@ -176,45 +213,8 @@ public:
 };
 
 
-// Size 0x150 (Full Size[0x178] - InheritedSize[0x28]
-class OnlineSessionClient: public OnlineSession
-{
-public:
-	bool                                                         bIsFromInvite;                                     // 0x170(0x1)
-	bool                                                         bHandlingDisconnect;                               // 0x171(0x1)
-};
-
-
-// Size 0x50 (Full Size[0x4c8] - InheritedSize[0x478]
-class IpNetDriver: public NetDriver
-{
-public:
-	bool                                                         LogPortUnreach;                                    // 0x478(0x1)
-	bool                                                         AllowPlayerPortUnreach;                            // 0x478(0x1)
-	uint32                                                       MaxPortCountToTry;                                 // 0x47c(0x4)
-};
-
-
-// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
-class EndMatchCallbackProxy: public OnlineBlueprintCallProxyBase
-{
-public:
-	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
-	multicastinlinedelegate                                      OnFailure;                                         // 0x38(0x10)
-};
-
-
-// Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
-class AchievementWriteCallbackProxy: public OnlineBlueprintCallProxyBase
-{
-public:
-	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)
-	multicastinlinedelegate                                      OnFailure;                                         // 0x38(0x10)
-};
-
-
-// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
-class EndTurnCallbackProxy: public OnlineBlueprintCallProxyBase
+// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
+class DestroySessionCallbackProxy: public OnlineBlueprintCallProxyBase
 {
 public:
 	multicastinlinedelegate                                      OnSuccess;                                         // 0x28(0x10)

@@ -1,4 +1,18 @@
 {
+  "GameEventsOnDemandAvailabilityService": {
+    "Super": "Object",
+    "FullSize": "0x118",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xf0",
+    "Attributes": [
+      {
+        "Name": "World",
+        "Type": "class World*",
+        "Size": "0x8",
+        "Offset": "0xf8"
+      }
+    ]
+  },
   "GameEventsOnDemandLoserTunnelService": {
     "Super": "Actor",
     "FullSize": "0x508",
@@ -28,20 +42,6 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x498"
-      }
-    ]
-  },
-  "GameEventsOnDemandAvailabilityService": {
-    "Super": "Object",
-    "FullSize": "0x118",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xf0",
-    "Attributes": [
-      {
-        "Name": "World",
-        "Type": "class World*",
-        "Size": "0x8",
-        "Offset": "0xf8"
       }
     ]
   },

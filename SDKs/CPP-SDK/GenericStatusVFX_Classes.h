@@ -6,6 +6,14 @@
 #include "GenericStatusVFX_Structs.h"
 
 
+// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
+class GenericStatusVFXResponse: public StatusResponse
+{
+public:
+	class GenericStatusVFXDataAsset*                             VFXDataAsset;                                      // 0x30(0x8)
+};
+
+
 // Size 0x68 (Full Size[0x90] - InheritedSize[0x28]
 class GenericStatusVFXDataAsset: public DataAsset
 {
@@ -16,14 +24,6 @@ public:
 	float                                                        VFXFalloffMultiplier;                              // 0x4c(0x4)
 	struct FName                                                 VfxSocketName;                                     // 0x50(0x8)
 	struct Transform                                             SocketRelativeOffset;                              // 0x60(0x30)
-};
-
-
-// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
-class GenericStatusVFXResponse: public StatusResponse
-{
-public:
-	class GenericStatusVFXDataAsset*                             VFXDataAsset;                                      // 0x30(0x8)
 };
 
 

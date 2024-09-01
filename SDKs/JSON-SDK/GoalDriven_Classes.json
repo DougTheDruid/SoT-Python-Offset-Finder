@@ -1,4 +1,24 @@
 {
+  "GoalDrivenPathFollowingComponent": {
+    "Super": "PathFollowingComponent",
+    "FullSize": "0x2c8",
+    "InheritedSize": "0x2b8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ReachedGoalMaxSpeedToSlowDistanceFactor",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2b8"
+      },
+      {
+        "Name": "MinSlowDownSpeed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2bc"
+      }
+    ]
+  },
   "GoalDrivenCharacterMovementComponent": {
     "Super": "CharacterMovementComponent",
     "FullSize": "0x600",
@@ -64,26 +84,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x5c4"
-      }
-    ]
-  },
-  "GoalDrivenPathFollowingComponent": {
-    "Super": "PathFollowingComponent",
-    "FullSize": "0x2c8",
-    "InheritedSize": "0x2b8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ReachedGoalMaxSpeedToSlowDistanceFactor",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2b8"
-      },
-      {
-        "Name": "MinSlowDownSpeed",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2bc"
       }
     ]
   },

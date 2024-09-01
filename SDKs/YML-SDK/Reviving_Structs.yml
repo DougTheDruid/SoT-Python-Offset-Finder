@@ -82,37 +82,37 @@ ReviveEffectsValues:
 RevivePlayerActionStateConstructionInfo:
   Attributes:
   - Name: CharacterReviving
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x14'
     Type: struct NetActorPtr
   - Name: CharacterBeingRevived
-    Offset: '0x44'
+    Offset: '0x54'
     Size: '0x14'
     Type: struct NetSubObjectPtr
   - Name: InputID
-    Offset: '0x58'
+    Offset: '0x68'
     Size: '0x8'
     Type: class UClass*
-  ClassSize: '0x60'
+  ClassSize: '0x70'
 ReviveableActionStateConstructionInfo:
   Attributes:
   - Name: ActionStateId
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x8'
     Type: class UClass*
   - Name: DamageInstance
-    Offset: '0x38'
+    Offset: '0x48'
     Size: '0x30'
     Type: struct DamageInstance
   - Name: CharacterDeathType
-    Offset: '0x68'
+    Offset: '0x78'
     Size: '0x1'
     Type: byte
   - Name: CharacterType
-    Offset: '0x69'
+    Offset: '0x79'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x70'
+  ClassSize: '0x80'
 RevivedActionStateParams:
   Attributes:
   - Name: HealthRegained

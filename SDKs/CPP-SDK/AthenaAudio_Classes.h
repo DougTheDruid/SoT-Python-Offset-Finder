@@ -6,13 +6,22 @@
 #include "AthenaAudio_Structs.h"
 
 
-// Size 0x30 (Full Size[0x660] - InheritedSize[0x630]
-class AudioSpaceComponent: public StaticMeshComponent
+// Size 0xb0 (Full Size[0x108] - InheritedSize[0x58]
+class AthenaAudioConfig: public WwiseCoreAssets
 {
 public:
-	class AudioSpaceDataAsset*                                   AudioSpace;                                        // 0x630(0x8)
-	class AudioSpaceDataAsset*                                   ActiveAudioSpace;                                  // 0x638(0x8)
-	class StoryDrivenAudioPortalDataAsset*                       CollectionAsset;                                   // 0x640(0x8)
+	class WwiseObjectPoolWrapper*                                ItemProxyPool;                                     // 0x58(0x8)
+	class WwiseObjectPoolWrapper*                                AnimNotifyPool;                                    // 0x60(0x8)
+	struct AthenaAudioGameStateSettings                          GameStateSettings;                                 // 0x68(0x20)
+	struct AthenaAudioBootflowEvents                             BootflowEvents;                                    // 0x88(0x80)
+};
+
+
+// Size 0x10 (Full Size[0x3d8] - InheritedSize[0x3c8]
+class MultiEmitter: public Actor
+{
+public:
+	class MultiEmitterRootComponent*                             MultiEmitterRootComponent;                         // 0x3c8(0x8)
 };
 
 
@@ -23,14 +32,6 @@ public:
 	struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
 	TArray<struct StoryDrivenAudioPortalSetting>                 StoryResponses;                                    // 0x38(0x10)
 	TArray<class StoryDrivenAudioPortalDataAsset*>               AssetsList;                                        // 0x48(0x10)
-};
-
-
-// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
-class AudioSpaceTrackerComponent: public ActorComponent
-{
-public:
-	TArray<class AudioSpaceComponent*>                           CurrentSpaces;                                     // 0xc8(0x10)
 };
 
 
@@ -64,11 +65,13 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x3d8] - InheritedSize[0x3c8]
-class MultiEmitter: public Actor
+// Size 0x30 (Full Size[0x660] - InheritedSize[0x630]
+class AudioSpaceComponent: public StaticMeshComponent
 {
 public:
-	class MultiEmitterRootComponent*                             MultiEmitterRootComponent;                         // 0x3c8(0x8)
+	class AudioSpaceDataAsset*                                   AudioSpace;                                        // 0x630(0x8)
+	class AudioSpaceDataAsset*                                   ActiveAudioSpace;                                  // 0x638(0x8)
+	class StoryDrivenAudioPortalDataAsset*                       CollectionAsset;                                   // 0x640(0x8)
 };
 
 
@@ -80,14 +83,11 @@ public:
 };
 
 
-// Size 0xb0 (Full Size[0x108] - InheritedSize[0x58]
-class AthenaAudioConfig: public WwiseCoreAssets
+// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
+class AudioSpaceTrackerComponent: public ActorComponent
 {
 public:
-	class WwiseObjectPoolWrapper*                                ItemProxyPool;                                     // 0x58(0x8)
-	class WwiseObjectPoolWrapper*                                AnimNotifyPool;                                    // 0x60(0x8)
-	struct AthenaAudioGameStateSettings                          GameStateSettings;                                 // 0x68(0x20)
-	struct AthenaAudioBootflowEvents                             BootflowEvents;                                    // 0x88(0x80)
+	TArray<class AudioSpaceComponent*>                           CurrentSpaces;                                     // 0xc8(0x10)
 };
 
 

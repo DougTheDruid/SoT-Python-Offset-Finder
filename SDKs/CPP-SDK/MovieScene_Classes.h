@@ -6,6 +6,25 @@
 #include "MovieScene_Structs.h"
 
 
+// Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
+class MovieSceneBindingOverrides: public Object
+{
+public:
+	TArray<struct MovieSceneBindingOverrideData>                 BindingData;                                       // 0x30(0x10)
+};
+
+
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
+class MovieSceneFolder: public Object
+{
+public:
+	struct FName                                                 FolderName;                                        // 0x28(0x8)
+	TArray<class MovieSceneFolder*>                              ChildFolders;                                      // 0x30(0x10)
+	TArray<class MovieSceneTrack*>                               ChildMasterTracks;                                 // 0x40(0x10)
+	TArray<String>                                               ChildObjectBindingStrings;                         // 0x50(0x10)
+};
+
+
 // Size 0x5e0 (Full Size[0x608] - InheritedSize[0x28]
 class MovieSceneSequencePlayer: public Object
 {
@@ -23,25 +42,6 @@ public:
 	int                                                          CurrentNumLoops;                                   // 0x3dc(0x4)
 	struct MovieSceneSequencePlaybackSettings                    PlaybackSettings;                                  // 0x3f0(0x28)
 	class Character*                                             InteractingCharacter;                              // 0x5e8(0x8)
-};
-
-
-// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
-class MovieSceneFolder: public Object
-{
-public:
-	struct FName                                                 FolderName;                                        // 0x28(0x8)
-	TArray<class MovieSceneFolder*>                              ChildFolders;                                      // 0x30(0x10)
-	TArray<class MovieSceneTrack*>                               ChildMasterTracks;                                 // 0x40(0x10)
-	TArray<String>                                               ChildObjectBindingStrings;                         // 0x50(0x10)
-};
-
-
-// Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
-class MovieSceneBindingOverrides: public Object
-{
-public:
-	TArray<struct MovieSceneBindingOverrideData>                 BindingData;                                       // 0x30(0x10)
 };
 
 
@@ -63,21 +63,6 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0x98] - InheritedSize[0x80]
-class MovieSceneSection: public MovieSceneSignedObject
-{
-public:
-	struct MovieSceneSectionEvalOptions                          EvalOptions;                                       // 0x80(0x2)
-	float                                                        StartTime;                                         // 0x84(0x4)
-	float                                                        EndTime;                                           // 0x88(0x4)
-	int                                                          RowIndex;                                          // 0x8c(0x4)
-	int                                                          OverlapPriority;                                   // 0x90(0x4)
-	bool                                                         bIsActive;                                         // 0x94(0x1)
-	bool                                                         bIsLocked;                                         // 0x94(0x1)
-	bool                                                         bIsInfinite;                                       // 0x94(0x1)
-};
-
-
 // Size 0x80 (Full Size[0x100] - InheritedSize[0x80]
 class MovieScene: public MovieSceneSignedObject
 {
@@ -95,6 +80,21 @@ public:
 	float                                                        OutTime;                                           // 0xf4(0x4)
 	float                                                        StartTime;                                         // 0xf8(0x4)
 	float                                                        EndTime;                                           // 0xfc(0x4)
+};
+
+
+// Size 0x18 (Full Size[0x98] - InheritedSize[0x80]
+class MovieSceneSection: public MovieSceneSignedObject
+{
+public:
+	struct MovieSceneSectionEvalOptions                          EvalOptions;                                       // 0x80(0x2)
+	float                                                        StartTime;                                         // 0x84(0x4)
+	float                                                        EndTime;                                           // 0x88(0x4)
+	int                                                          RowIndex;                                          // 0x8c(0x4)
+	int                                                          OverlapPriority;                                   // 0x90(0x4)
+	bool                                                         bIsActive;                                         // 0x94(0x1)
+	bool                                                         bIsLocked;                                         // 0x94(0x1)
+	bool                                                         bIsInfinite;                                       // 0x94(0x1)
 };
 
 

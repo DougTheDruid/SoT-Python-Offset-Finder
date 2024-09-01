@@ -6,30 +6,6 @@
 #include "WaterSlide_Structs.h"
 
 
-// Size 0x68 (Full Size[0x148] - InheritedSize[0xe0]
-class RidePlayerComponent: public DoubleIntentComponent
-{
-public:
-	class ParticleSystemComponent*                               PlayerWaterSlideVFXComponent;                      // 0xe8(0x8)
-	class ParticleSystem*                                        PlayerWaterSlideVFX;                               // 0xf0(0x8)
-	float                                                        PlayerWaterSlideVFXSpawnLocationZOffset;           // 0xf8(0x4)
-	class ParticleSystemComponent*                               PlayerZiplineWindVFXComponent;                     // 0x100(0x8)
-	class ParticleSystemComponent*                               PlayerZiplineTrailVFXComponent;                    // 0x108(0x8)
-	class ParticleSystem*                                        PlayerZiplineTrailVFX;                             // 0x110(0x8)
-	class ParticleSystem*                                        PlayerZiplineWindVFX;                              // 0x118(0x8)
-	struct Vector                                                PlayerZiplineTrailVFXSpawnLocation;                // 0x120(0xc)
-	class Ride*                                                  CurrentRide;                                       // 0x140(0x8)
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class WaterSlideParamsDataAsset: public DataAsset
-{
-public:
-	struct WaterSlideParams                                      WaterSlideParams;                                  // 0x28(0x28)
-};
-
-
 // Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
 class ZiplineFXParams: public DataAsset
 {
@@ -56,6 +32,30 @@ public:
 };
 
 
+// Size 0x68 (Full Size[0x148] - InheritedSize[0xe0]
+class RidePlayerComponent: public DoubleIntentComponent
+{
+public:
+	class ParticleSystemComponent*                               PlayerWaterSlideVFXComponent;                      // 0xe8(0x8)
+	class ParticleSystem*                                        PlayerWaterSlideVFX;                               // 0xf0(0x8)
+	float                                                        PlayerWaterSlideVFXSpawnLocationZOffset;           // 0xf8(0x4)
+	class ParticleSystemComponent*                               PlayerZiplineWindVFXComponent;                     // 0x100(0x8)
+	class ParticleSystemComponent*                               PlayerZiplineTrailVFXComponent;                    // 0x108(0x8)
+	class ParticleSystem*                                        PlayerZiplineTrailVFX;                             // 0x110(0x8)
+	class ParticleSystem*                                        PlayerZiplineWindVFX;                              // 0x118(0x8)
+	struct Vector                                                PlayerZiplineTrailVFXSpawnLocation;                // 0x120(0xc)
+	class Ride*                                                  CurrentRide;                                       // 0x140(0x8)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class WaterSlideParamsDataAsset: public DataAsset
+{
+public:
+	struct WaterSlideParams                                      WaterSlideParams;                                  // 0x28(0x28)
+};
+
+
 // Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
 class WaterSlideAudioParams: public DataAsset
 {
@@ -67,21 +67,6 @@ public:
 	struct FName                                                 PlayerSpeedOnWaterSlideRTPC;                       // 0x48(0x8)
 	float                                                        PlayerSpeedThatMapsToOne;                          // 0x50(0x4)
 	float                                                        PlayerSpeedThatMapsToZero;                         // 0x54(0x4)
-};
-
-
-// Size 0x48 (Full Size[0x428] - InheritedSize[0x3e0]
-class WaterSlide: public Ride
-{
-public:
-	class WaterSlideParamsDataAsset*                             WaterSlideParamsDataAsset;                         // 0x3e0(0x8)
-	class PrimitiveComponent*                                    EntranceCollisionComponent;                        // 0x3e8(0x8)
-	class WaterSlide*                                            ContinuedWaterSlideRoute;                          // 0x3f0(0x8)
-	class WaterSlide*                                            LeftWaterSlideRoute;                               // 0x3f8(0x8)
-	class WaterSlide*                                            RightWaterSlideRoute;                              // 0x400(0x8)
-	bool                                                         IsEndOfSlide;                                      // 0x408(0x1)
-	struct Vector                                                EndOfSlideLaunchForce;                             // 0x40c(0xc)
-	class WaterSlideAudioParams*                                 WaterSlideAudioParams;                             // 0x418(0x8)
 };
 
 
@@ -102,6 +87,21 @@ public:
 	class MaterialInterface*                                     ZiplineGeometryMaterialOverride;                   // 0x750(0x8)
 	struct FName                                                 ZiplineGeometryMaterialScalerParameterName;        // 0x758(0x8)
 	struct PlayerStat                                            PlayerAttachStat;                                  // 0x760(0x4)
+};
+
+
+// Size 0x48 (Full Size[0x428] - InheritedSize[0x3e0]
+class WaterSlide: public Ride
+{
+public:
+	class WaterSlideParamsDataAsset*                             WaterSlideParamsDataAsset;                         // 0x3e0(0x8)
+	class PrimitiveComponent*                                    EntranceCollisionComponent;                        // 0x3e8(0x8)
+	class WaterSlide*                                            ContinuedWaterSlideRoute;                          // 0x3f0(0x8)
+	class WaterSlide*                                            LeftWaterSlideRoute;                               // 0x3f8(0x8)
+	class WaterSlide*                                            RightWaterSlideRoute;                              // 0x400(0x8)
+	bool                                                         IsEndOfSlide;                                      // 0x408(0x1)
+	struct Vector                                                EndOfSlideLaunchForce;                             // 0x40c(0xc)
+	class WaterSlideAudioParams*                                 WaterSlideAudioParams;                             // 0x418(0x8)
 };
 
 

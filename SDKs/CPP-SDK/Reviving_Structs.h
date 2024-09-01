@@ -11,14 +11,39 @@ public:
 };
 
 
-// Size 0x70
-struct ReviveableActionStateConstructionInfo
+// Size 0x8
+struct EventCharacterDiedDuringReviving
 {
 public:
-	class UClass*                                                ActionStateId;                                     // 0x30(0x8)
-	struct DamageInstance                                        DamageInstance;                                    // 0x38(0x30)
-	char                                                         CharacterDeathType;                                // 0x68(0x1)
-	char                                                         CharacterType;                                     // 0x69(0x1)
+	class Character*                                             OwningCharacter;                                   // 0x0(0x8)
+};
+
+
+// Size 0x1
+struct PlayerRevivalTelemetryEvent
+{
+public:
+	bool                                                         Success;                                           // 0x0(0x1)
+};
+
+
+// Size 0x70
+struct RevivePlayerActionStateConstructionInfo
+{
+public:
+	struct NetActorPtr                                           CharacterReviving;                                 // 0x40(0x14)
+	struct NetSubObjectPtr                                       CharacterBeingRevived;                             // 0x54(0x14)
+	class UClass*                                                InputID;                                           // 0x68(0x8)
+};
+
+
+// Size 0x10
+struct RevivedActionStateParams
+{
+public:
+	float                                                        HealthRegained;                                    // 0x0(0x4)
+	float                                                        ReviveDuration;                                    // 0x4(0x4)
+	class WwiseEvent*                                            ReviveGaspAudio;                                   // 0x8(0x8)
 };
 
 
@@ -41,39 +66,22 @@ public:
 };
 
 
-// Size 0x10
-struct RevivedActionStateParams
-{
-public:
-	float                                                        HealthRegained;                                    // 0x0(0x4)
-	float                                                        ReviveDuration;                                    // 0x4(0x4)
-	class WwiseEvent*                                            ReviveGaspAudio;                                   // 0x8(0x8)
-};
-
-
-// Size 0x60
-struct RevivePlayerActionStateConstructionInfo
-{
-public:
-	struct NetActorPtr                                           CharacterReviving;                                 // 0x30(0x14)
-	struct NetSubObjectPtr                                       CharacterBeingRevived;                             // 0x44(0x14)
-	class UClass*                                                InputID;                                           // 0x58(0x8)
-};
-
-
 // Size 0x1
-struct PlayerRevivalTelemetryEvent
+struct EventRevivableRepresentationSpawnCompleted
 {
 public:
-	bool                                                         Success;                                           // 0x0(0x1)
+	bool                                                         FromSwimming;                                      // 0x0(0x1)
 };
 
 
-// Size 0x8
-struct EventCharacterDiedDuringReviving
+// Size 0x80
+struct ReviveableActionStateConstructionInfo
 {
 public:
-	class Character*                                             OwningCharacter;                                   // 0x0(0x8)
+	class UClass*                                                ActionStateId;                                     // 0x40(0x8)
+	struct DamageInstance                                        DamageInstance;                                    // 0x48(0x30)
+	char                                                         CharacterDeathType;                                // 0x78(0x1)
+	char                                                         CharacterType;                                     // 0x79(0x1)
 };
 
 
@@ -84,14 +92,6 @@ public:
 	struct DamageInstance                                        DamageInstance;                                    // 0x0(0x30)
 	char                                                         CharacterDeathType;                                // 0x30(0x1)
 	class Character*                                             RevivableCharacter;                                // 0x38(0x8)
-};
-
-
-// Size 0x1
-struct EventRevivableRepresentationSpawnCompleted
-{
-public:
-	bool                                                         FromSwimming;                                      // 0x0(0x1)
 };
 
 

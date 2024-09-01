@@ -25,3 +25,15 @@ public:
 };
 
 
+// Size 0x28
+struct PortableHarpoonTelemetryEvent
+{
+public:
+	struct Guid                                                  AttackId;                                          // 0x0(0x10)
+	char                                                         AttemptedAction;                                   // 0x10(0x1)
+	char                                                         ActionStartResult;                                 // 0x11(0x1)
+	char                                                         ActionEndResult;                                   // 0x12(0x1)
+	struct FString                                               TargetActorName;                                   // 0x18(0x10)
+};
+
+

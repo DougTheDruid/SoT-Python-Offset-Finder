@@ -28,6 +28,34 @@
       }
     ]
   },
+  "IntroductionToSOTIntroAnimatic": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "ShipSize",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "IntroAnimationSettings",
+        "Type": "struct FirstPersonAnimaticSettings",
+        "Size": "0x2c",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "BeachNPCSpawnFlowNetworkEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "HasTaleCheckpointVoyage",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x18"
+      }
+    ]
+  },
   "HasTutorialStarterBegunCondition": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -76,34 +104,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x21"
-      }
-    ]
-  },
-  "BeachNPCSpawnFlowNetworkEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "HasTaleCheckpointVoyage",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "IntroductionToSOTIntroAnimatic": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "ShipSize",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "IntroAnimationSettings",
-        "Type": "struct FirstPersonAnimaticSettings",
-        "Size": "0x2c",
-        "Offset": "0x8"
       }
     ]
   },

@@ -14,6 +14,14 @@ public:
 };
 
 
+// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
+class StatusResponseSuspendStatus: public StatusResponse
+{
+public:
+	TArray<class Class*>                                         Status;                                            // 0x30(0x10)
+};
+
+
 // Size 0x40 (Full Size[0x70] - InheritedSize[0x30]
 class StatusResponseReportNoiseEvent: public StatusResponse
 {
@@ -27,28 +35,20 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
-class StatusResponseHealthRegenerationPoolChange: public StatusResponse
-{
-public:
-	float                                                        HealthPoolChangeIntensityMultiplier;               // 0x30(0x4)
-};
-
-
-// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
-class StatusResponseSuspendStatus: public StatusResponse
-{
-public:
-	TArray<class Class*>                                         Status;                                            // 0x30(0x10)
-};
-
-
 // Size 0x20 (Full Size[0x50] - InheritedSize[0x30]
 class StatusResponseApplyPersistentStatus: public StatusResponse
 {
 public:
 	struct Status                                                StatusToApply;                                     // 0x30(0x18)
 	float                                                        DurationMultiplier;                                // 0x48(0x4)
+};
+
+
+// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
+class StatusResponseHealthRegenerationPoolChange: public StatusResponse
+{
+public:
+	float                                                        HealthPoolChangeIntensityMultiplier;               // 0x30(0x4)
 };
 
 

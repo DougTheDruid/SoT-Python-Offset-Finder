@@ -6,12 +6,17 @@
 #include "MysteriousNotes_Structs.h"
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class WieldableMysteriousNoteDataAsset: public DataAsset
+// Size 0x1a0 (Full Size[0x990] - InheritedSize[0x7f0]
+class WieldableMysteriousNote: public SkeletalMeshWieldableItem
 {
 public:
-	class UClass*                                                WieldableNoteDesc;                                 // 0x28(0x8)
-	class WieldableMysteriousNoteLayout*                         NoteLayout;                                        // 0x30(0x8)
+	class MaybeCompressedCanvasRenderTarget2D*                   RenderTarget;                                      // 0x800(0x8)
+	int                                                          CanvasWidth;                                       // 0x808(0x4)
+	int                                                          CanvasHeight;                                      // 0x80c(0x4)
+	float                                                        FontScale;                                         // 0x810(0x4)
+	class WieldableMysteriousNoteLayout*                         NoteLayout;                                        // 0x870(0x8)
+	class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x878(0x8)
+	class InventoryItemComponent*                                InventoryItemComponent;                            // 0x880(0x8)
 };
 
 
@@ -22,6 +27,15 @@ public:
 	bool                                                         CinematicPlayed;                                   // 0xd0(0x1)
 	struct ClientNoteData                                        NoteData;                                          // 0x1c0(0x18)
 	bool                                                         BeenPossessed;                                     // 0x1d8(0x1)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class WieldableMysteriousNoteDataAsset: public DataAsset
+{
+public:
+	class UClass*                                                WieldableNoteDesc;                                 // 0x28(0x8)
+	class WieldableMysteriousNoteLayout*                         NoteLayout;                                        // 0x30(0x8)
 };
 
 
@@ -36,13 +50,11 @@ public:
 };
 
 
-// Size 0x98 (Full Size[0x460] - InheritedSize[0x3c8]
-class MysteriousNotesService: public Actor
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class MysteriousNotesCompletionEventsModelDataAsset: public DataAsset
 {
 public:
-	class MysteriousNoteSettings*                                CachedNoteSettings;                                // 0x3f0(0x8)
-	class WieldableMysteriousNoteDataAsset*                      WieldableNoteDataAsset;                            // 0x3f8(0x8)
-	class MysteriousNotesCompletionEventsModelDataAsset*         CompletionEventsModelData;                         // 0x400(0x8)
+	TArray<struct MysteriousNotesCompletionEventsModel>          MysteriousNoteCompletionEvents;                    // 0x28(0x10)
 };
 
 
@@ -59,25 +71,13 @@ public:
 };
 
 
-// Size 0x1a0 (Full Size[0x990] - InheritedSize[0x7f0]
-class WieldableMysteriousNote: public SkeletalMeshWieldableItem
+// Size 0x98 (Full Size[0x460] - InheritedSize[0x3c8]
+class MysteriousNotesService: public Actor
 {
 public:
-	class MaybeCompressedCanvasRenderTarget2D*                   RenderTarget;                                      // 0x7f8(0x8)
-	int                                                          CanvasWidth;                                       // 0x800(0x4)
-	int                                                          CanvasHeight;                                      // 0x804(0x4)
-	float                                                        FontScale;                                         // 0x808(0x4)
-	class WieldableMysteriousNoteLayout*                         NoteLayout;                                        // 0x868(0x8)
-	class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x870(0x8)
-	class InventoryItemComponent*                                InventoryItemComponent;                            // 0x878(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class MysteriousNotesCompletionEventsModelDataAsset: public DataAsset
-{
-public:
-	TArray<struct MysteriousNotesCompletionEventsModel>          MysteriousNoteCompletionEvents;                    // 0x28(0x10)
+	class MysteriousNoteSettings*                                CachedNoteSettings;                                // 0x3f0(0x8)
+	class WieldableMysteriousNoteDataAsset*                      WieldableNoteDataAsset;                            // 0x3f8(0x8)
+	class MysteriousNotesCompletionEventsModelDataAsset*         CompletionEventsModelData;                         // 0x400(0x8)
 };
 
 

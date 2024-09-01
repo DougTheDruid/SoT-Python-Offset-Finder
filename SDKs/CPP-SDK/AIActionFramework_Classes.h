@@ -17,14 +17,6 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
-class DockableRotationOverrideComponent: public ActorComponent
-{
-public:
-	bool                                                         KeepOwnerRotationWhileDocked;                      // 0xd0(0x1)
-};
-
-
 // Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
 class AIActionInstigatorComponent: public ActorComponent
 {
@@ -32,6 +24,14 @@ public:
 	TArray<class Class*>                                         CurrentRoles;                                      // 0xd0(0x10)
 	class UClass*                                                InitialActivity;                                   // 0xe0(0x8)
 	class UClass*                                                CurrentActivity;                                   // 0xe8(0x8)
+};
+
+
+// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
+class DockableRotationOverrideComponent: public ActorComponent
+{
+public:
+	bool                                                         KeepOwnerRotationWhileDocked;                      // 0xd0(0x1)
 };
 
 

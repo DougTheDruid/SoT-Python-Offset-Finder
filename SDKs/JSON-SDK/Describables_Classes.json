@@ -1,27 +1,27 @@
 {
   "DescribableComponent": {
     "Super": "InteractableComponent",
-    "FullSize": "0x198",
-    "InheritedSize": "0x138",
+    "FullSize": "0x1a8",
+    "InheritedSize": "0x148",
     "ClassSize": "0x60",
     "Attributes": [
       {
         "Name": "TooltipActiveOnBeginPlay",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x140"
+        "Offset": "0x150"
       },
       {
         "Name": "DescribableTooltipText",
         "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x148"
+        "Offset": "0x158"
       },
       {
         "Name": "TooltipActive",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x180"
+        "Offset": "0x190"
       }
     ]
   },

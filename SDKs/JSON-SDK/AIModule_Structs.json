@@ -1,131 +1,4 @@
 {
-  "AIStimulus": {
-    "ClassSize": "0x3c",
-    "Attributes": [
-      {
-        "Name": "Age",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ExpirationAge",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "Strength",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "StimulusLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "ReceiverLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "Tag",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x24"
-      },
-      {
-        "Name": "bSuccessfullySensed",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "AISenseAffiliationFilter": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "bDetectEnemies",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "bDetectNeutrals",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "bDetectFriendlies",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "AIPredictionEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Requestor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PredictedActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "BehaviorTreeTemplateInfo": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Asset",
-        "Type": "class BehaviorTree*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Template",
-        "Type": "class BTCompositeNode*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "EnvQueryResult": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "ItemType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "OptionIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "QueryID",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x30"
-      }
-    ]
-  },
   "EnvFloatParam_DEPRECATED": {
     "ClassSize": "0xc",
     "Attributes": [
@@ -140,23 +13,6 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x4"
-      }
-    ]
-  },
-  "IgnoreActorInfo": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "Actor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TimeRemaining",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
       }
     ]
   },
@@ -183,13 +39,30 @@
       }
     ]
   },
-  "AIRequestID": {
-    "ClassSize": "0x4",
+  "IgnoreActorInfo": {
+    "ClassSize": "0xc",
     "Attributes": [
       {
-        "Name": "RequestID",
-        "Type": "uint32",
+        "Name": "Actor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TimeRemaining",
+        "Type": "float",
         "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EnvQueryInstanceCache": {
+    "ClassSize": "0x2e0",
+    "Attributes": [
+      {
+        "Name": "Template",
+        "Type": "class EnvQuery*",
+        "Size": "0x8",
         "Offset": "0x0"
       }
     ]
@@ -223,43 +96,49 @@
       }
     ]
   },
-  "BTDecoratorLogic": {
-    "ClassSize": "0x4",
+  "AIDataProviderValue": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "Operation",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Number",
-        "Type": "uint16",
-        "Size": "0x2",
-        "Offset": "0x2"
-      }
-    ]
-  },
-  "EnvQueryRequest": {
-    "ClassSize": "0x170",
-    "Attributes": [
-      {
-        "Name": "QueryTemplate",
-        "Type": "class EnvQuery*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Owner",
-        "Type": "class Object*",
+        "Name": "CachedProperty",
+        "Type": "class Property*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
-        "Name": "World",
-        "Type": "class World*",
+        "Name": "DataBinding",
+        "Type": "class AIDataProvider*",
         "Size": "0x8",
         "Offset": "0x10"
+      },
+      {
+        "Name": "DataField",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "AISenseAffiliationFilter": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "bDetectEnemies",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "bDetectNeutrals",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "bDetectFriendlies",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },
@@ -394,76 +273,20 @@
       }
     ]
   },
-  "PawnActionEvent": {
-    "ClassSize": "0x18",
+  "CustomDataProviderObjectPropertySelector": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Action",
-        "Type": "class PawnAction*",
+        "Name": "ObjectClass",
+        "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "AITeamStimulusEvent": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "Broadcaster",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Enemy",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "PawnActionStack": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "TopAction",
-        "Type": "class PawnAction*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EnvIntParam_DEPRECATED": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "Value",
-        "Type": "int",
-        "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "ParamName",
+        "Name": "PropertyName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "CrowdAvoidanceSamplingPattern": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Angles",
-        "Type": "TArray<float>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Radii",
-        "Type": "TArray<float>",
-        "Size": "0x10",
-        "Offset": "0x10"
+        "Offset": "0x8"
       }
     ]
   },
@@ -490,221 +313,31 @@
       }
     ]
   },
-  "AINoiseEvent": {
-    "ClassSize": "0x30",
+  "BTDecoratorLogic": {
+    "ClassSize": "0x4",
     "Attributes": [
       {
-        "Name": "NoiseLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "Loudness",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "MaxRange",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "Instigator",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "Tag",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "AIDamageEvent": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Amount",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "Operation",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x0"
       },
       {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "HitLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "DamagedActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "Instigator",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x28"
+        "Name": "Number",
+        "Type": "uint16",
+        "Size": "0x2",
+        "Offset": "0x2"
       }
     ]
   },
-  "AITouchEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "TouchReceiver",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "OtherActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "AIDataProviderBoolValue": {
+  "AIDataProviderIntValue": {
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "DefaultValue",
-        "Type": "bool",
-        "Size": "0x1",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x28"
-      }
-    ]
-  },
-  "AIDataProviderTypedValue": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "PropertyType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "BlackboardKeySelector": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "AllowedTypes",
-        "Type": "TArray<class BlackboardKeyType*>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SelectedKeyName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "SelectedKeyType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "SelectedKeyID",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "bNoneIsAllowedValue",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x24"
-      }
-    ]
-  },
-  "CustomDataProviderObjectPropertySelector": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ObjectClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PropertyName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "EnvBoolParam_DEPRECATED": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "Value",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ParamName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "AIDataProviderValue": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "CachedProperty",
-        "Type": "class Property*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "DataBinding",
-        "Type": "class AIDataProvider*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "DataField",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "AISightEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "SeenActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Observer",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x10"
       }
     ]
   },
@@ -719,36 +352,65 @@
       }
     ]
   },
-  "GenericTeamId": {
-    "ClassSize": "0x1",
+  "CrowdAvoidanceSamplingPattern": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "TeamID",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "Angles",
+        "Type": "TArray<float>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Radii",
+        "Type": "TArray<float>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "AIRequestID": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "RequestID",
+        "Type": "uint32",
+        "Size": "0x4",
         "Offset": "0x0"
       }
     ]
   },
-  "AIDataProviderFloatValue": {
-    "ClassSize": "0x30",
+  "PawnActionStack": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "DefaultValue",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x28"
+        "Name": "TopAction",
+        "Type": "class PawnAction*",
+        "Size": "0x8",
+        "Offset": "0x0"
       }
     ]
   },
-  "EnvQueryInstanceCache": {
-    "ClassSize": "0x2e0",
+  "EnvQueryRequest": {
+    "ClassSize": "0x170",
     "Attributes": [
       {
-        "Name": "Template",
+        "Name": "QueryTemplate",
         "Type": "class EnvQuery*",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "Owner",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "World",
+        "Type": "class World*",
+        "Size": "0x8",
+        "Offset": "0x10"
       }
     ]
   },
@@ -817,37 +479,352 @@
       }
     ]
   },
-  "AIDataProviderIntValue": {
+  "GenericTeamId": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "TeamID",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EnvBoolParam_DEPRECATED": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "Value",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ParamName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "EnvIntParam_DEPRECATED": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "Value",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ParamName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "AIDataProviderFloatValue": {
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "DefaultValue",
-        "Type": "int",
+        "Type": "float",
         "Size": "0x4",
         "Offset": "0x28"
       }
     ]
   },
-  "ActorPerceptionBlueprintInfo": {
+  "BlackboardKeySelector": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "AllowedTypes",
+        "Type": "TArray<class BlackboardKeyType*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SelectedKeyName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "SelectedKeyType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "SelectedKeyID",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "bNoneIsAllowedValue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x24"
+      }
+    ]
+  },
+  "AITouchEvent": {
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "Target",
+        "Name": "TouchReceiver",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "OtherActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "AIStimulus": {
+    "ClassSize": "0x3c",
+    "Attributes": [
+      {
+        "Name": "Age",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ExpirationAge",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "Strength",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "StimulusLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "ReceiverLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Tag",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "bSuccessfullySensed",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "PawnActionEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Action",
+        "Type": "class PawnAction*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AIDataProviderBoolValue": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "DefaultValue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "AINoiseEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "NoiseLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "Loudness",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "MaxRange",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "Instigator",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Tag",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "EnvQueryResult": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "ItemType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "OptionIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "QueryID",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "AITeamStimulusEvent": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "Broadcaster",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Enemy",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "AIPredictionEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Requestor",
         "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "LastSensedStimuli",
-        "Type": "TArray<struct AIStimulus>",
-        "Size": "0x10",
+        "Name": "PredictedActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AISightEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "SeenActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
         "Offset": "0x8"
       },
       {
-        "Name": "bIsHostile",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x18"
+        "Name": "Observer",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "BehaviorTreeTemplateInfo": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Asset",
+        "Type": "class BehaviorTree*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Template",
+        "Type": "class BTCompositeNode*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AIDamageEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Amount",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "HitLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "DamagedActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "Instigator",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "AIDataProviderTypedValue": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "PropertyType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x20"
       }
     ]
   },
@@ -877,6 +854,29 @@
         "Type": "TArray<struct BTDecoratorLogic>",
         "Size": "0x10",
         "Offset": "0x20"
+      }
+    ]
+  },
+  "ActorPerceptionBlueprintInfo": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Target",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "LastSensedStimuli",
+        "Type": "TArray<struct AIStimulus>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "bIsHostile",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x18"
       }
     ]
   },

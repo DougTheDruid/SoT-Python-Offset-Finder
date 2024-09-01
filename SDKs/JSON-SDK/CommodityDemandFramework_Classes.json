@@ -1,83 +1,21 @@
 {
-  "CommodityItemDesc": {
-    "Super": "BootyItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x120",
-    "ClassSize": "0x10",
+  "CommodityDemandService": {
+    "Super": "Actor",
+    "FullSize": "0x440",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x78",
     "Attributes": [
       {
-        "Name": "CommodityType",
-        "Type": "struct CommoditySelectionType",
+        "Name": "ActiveCommodityDemands",
+        "Type": "struct ActiveNPCDemands",
+        "Size": "0x20",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "MerchantSovereignHandInNameInformationDataAsset",
+        "Type": "class MerchantSovereignHandInNameInformationDataAsset*",
         "Size": "0x8",
-        "Offset": "0x120"
-      },
-      {
-        "Name": "CommodityDemand",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x128"
-      }
-    ]
-  },
-  "CommodityRedemptionComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x198",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0xd0",
-    "Attributes": [
-      {
-        "Name": "RedeemTooltipText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "PendingRedemptions",
-        "Type": "TArray<class Actor*>",
-        "Size": "0x10",
-        "Offset": "0x188"
-      }
-    ]
-  },
-  "WasWieldedCommodityItemBoughtAtDemandStatCondition": {
-    "Super": "TargetedStatCondition",
-    "FullSize": "0x38",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "CommodityDemand",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "MerchantSovereignHandInNameInformationDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MerchantSovereignHandInNameInformationArray",
-        "Type": "TArray<struct MerchantSovereignHandInNameInformation>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "CommodityDemandFrameworkEditorSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x48",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CommodityDataFileLocation",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x38"
+        "Offset": "0x408"
       }
     ]
   },
@@ -101,40 +39,6 @@
       }
     ]
   },
-  "SpecificItemsCrateFillerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "ItemsToFillCrateWith",
-        "Type": "TArray<struct StorageContainerNode>",
-        "Size": "0x10",
-        "Offset": "0xd0"
-      }
-    ]
-  },
-  "CommodityDemandService": {
-    "Super": "Actor",
-    "FullSize": "0x440",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "ActiveCommodityDemands",
-        "Type": "struct ActiveNPCDemands",
-        "Size": "0x20",
-        "Offset": "0x3e8"
-      },
-      {
-        "Name": "MerchantSovereignHandInNameInformationDataAsset",
-        "Type": "class MerchantSovereignHandInNameInformationDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x408"
-      }
-    ]
-  },
   "CommodityEntitlementRedemptionAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
@@ -144,54 +48,6 @@
       {
         "Name": "CommoditiesForRedemption",
         "Type": "TArray<struct EntitlementToRedeemItems>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "CommoditySourceComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "NPCIdentifier",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "IslandIdentifier",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xd8"
-      }
-    ]
-  },
-  "IsWieldedCommodityItemInDemandStatCondition": {
-    "Super": "TargetedStatCondition",
-    "FullSize": "0x50",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "CommodityDemand",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "CommodityTypeDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CommodityEntries",
-        "Type": "TArray<struct CommodityTypeDataEntry>",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -244,6 +100,150 @@
         "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x68"
+      }
+    ]
+  },
+  "SpecificItemsCrateFillerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ItemsToFillCrateWith",
+        "Type": "TArray<struct StorageContainerNode>",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "CommoditySourceComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "NPCIdentifier",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "IslandIdentifier",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xd8"
+      }
+    ]
+  },
+  "IsWieldedCommodityItemInDemandStatCondition": {
+    "Super": "TargetedStatCondition",
+    "FullSize": "0x50",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "CommodityDemand",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "WasWieldedCommodityItemBoughtAtDemandStatCondition": {
+    "Super": "TargetedStatCondition",
+    "FullSize": "0x38",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "CommodityDemand",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "CommodityTypeDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CommodityEntries",
+        "Type": "TArray<struct CommodityTypeDataEntry>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "CommodityRedemptionComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x198",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0xd0",
+    "Attributes": [
+      {
+        "Name": "RedeemTooltipText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "PendingRedemptions",
+        "Type": "TArray<class Actor*>",
+        "Size": "0x10",
+        "Offset": "0x188"
+      }
+    ]
+  },
+  "MerchantSovereignHandInNameInformationDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MerchantSovereignHandInNameInformationArray",
+        "Type": "TArray<struct MerchantSovereignHandInNameInformation>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "CommodityItemDesc": {
+    "Super": "BootyItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CommodityType",
+        "Type": "struct CommoditySelectionType",
+        "Size": "0x8",
+        "Offset": "0x120"
+      },
+      {
+        "Name": "CommodityDemand",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x128"
+      }
+    ]
+  },
+  "CommodityDemandFrameworkEditorSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CommodityDataFileLocation",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x38"
       }
     ]
   },

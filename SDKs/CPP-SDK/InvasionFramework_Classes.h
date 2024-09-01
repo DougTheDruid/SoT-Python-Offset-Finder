@@ -6,22 +6,6 @@
 #include "InvasionFramework_Structs.h"
 
 
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class TaleQuestInvasionRemoveBattleBoundsStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableActor                                    ShipInBattleBounds;                                // 0x80(0x30)
-};
-
-
-// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class InvasionSettings: public DeveloperSettings
-{
-public:
-	struct StringAssetReference                                  InvasionServiceDataAsset;                          // 0x38(0x10)
-};
-
-
 // Size 0x98 (Full Size[0x460] - InheritedSize[0x3c8]
 class InvasionBattleBounds: public Actor
 {
@@ -34,6 +18,17 @@ public:
 	class Actor*                                                 ShipThatWasDestroyed;                              // 0x3f0(0x8)
 	TArray<class Actor*>                                         HasLeftBattleBounds;                               // 0x3f8(0x10)
 	map                                                          TimeAsSubmarine;                                   // 0x410(0x50)
+};
+
+
+// Size 0xe0 (Full Size[0x108] - InheritedSize[0x28]
+class TaleQuestInvasionServiceDesc: public TaleQuestServiceDesc
+{
+public:
+	struct FText                                                 OnCrewLeftServerMessage;                           // 0x28(0x38)
+	struct FText                                                 OnCrewLeftFightMessage;                            // 0x60(0x38)
+	struct FText                                                 FactionGBannerTag;                                 // 0x98(0x38)
+	struct FText                                                 FactionBBannerTag;                                 // 0xd0(0x38)
 };
 
 
@@ -66,42 +61,11 @@ public:
 };
 
 
-// Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
-class TaleQuestInvasionMatchmakingServiceDesc: public TaleQuestServiceDesc
-{
-public:
-	struct FText                                                 OnCrewLeftServerMessage;                           // 0x28(0x38)
-	struct FText                                                 OnCrewLeftFightMessage;                            // 0x60(0x38)
-};
-
-
 // Size 0x1c8 (Full Size[0x228] - InheritedSize[0x60]
 class TaleQuestInvasionMatchmakingService: public TaleQuestService
 {
 public:
 	class TaleQuestInvasionMatchmakingServiceDesc*               ServiceDesc;                                       // 0x60(0x8)
-};
-
-
-// Size 0xe0 (Full Size[0x108] - InheritedSize[0x28]
-class TaleQuestInvasionServiceDesc: public TaleQuestServiceDesc
-{
-public:
-	struct FText                                                 OnCrewLeftServerMessage;                           // 0x28(0x38)
-	struct FText                                                 OnCrewLeftFightMessage;                            // 0x60(0x38)
-	struct FText                                                 FactionGBannerTag;                                 // 0x98(0x38)
-	struct FText                                                 FactionBBannerTag;                                 // 0xd0(0x38)
-};
-
-
-// Size 0xa0 (Full Size[0x120] - InheritedSize[0x80]
-class DisplayInvasionBannersStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct FText                                                 Message;                                           // 0x80(0x38)
-	bool                                                         DisableMusic;                                      // 0xb8(0x1)
-	struct QuestVariableGuid                                     DisplayShipsNameForCrewId;                         // 0xc0(0x30)
-	struct QuestVariableName                                     DisplayBannersForFaction;                          // 0xf0(0x30)
 };
 
 
@@ -113,19 +77,60 @@ public:
 };
 
 
-// Size 0x1b0 (Full Size[0x230] - InheritedSize[0x80]
-class GetInvasionShipsStepDesc: public TaleQuestStepDesc
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
+class InvasionSettings: public DeveloperSettings
 {
 public:
-	struct QuestVariableActor                                    AggressiveShip;                                    // 0x80(0x30)
-	struct QuestVariableActor                                    AggressiveShip;                                    // 0xb0(0x30)
-	struct QuestVariableActor                                    PassiveShip;                                       // 0xe0(0x30)
-	struct QuestVariableGuid                                     AggressiveCrewId;                                  // 0x110(0x30)
-	struct QuestVariableGuid                                     AggressiveCrewId;                                  // 0x140(0x30)
-	struct QuestVariableGuid                                     PassiveCrewId;                                     // 0x170(0x30)
-	struct QuestVariableName                                     AggressiveFaction;                                 // 0x1a0(0x30)
-	struct QuestVariableName                                     AggressiveFaction;                                 // 0x1d0(0x30)
-	struct QuestVariableName                                     PassiveFaction;                                    // 0x200(0x30)
+	struct StringAssetReference                                  InvasionServiceDataAsset;                          // 0x38(0x10)
+};
+
+
+// Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
+class TaleQuestInvasionMatchmakingServiceDesc: public TaleQuestServiceDesc
+{
+public:
+	struct FText                                                 OnCrewLeftServerMessage;                           // 0x28(0x38)
+	struct FText                                                 OnCrewLeftFightMessage;                            // 0x60(0x38)
+};
+
+
+// Size 0x160 (Full Size[0x1e0] - InheritedSize[0x80]
+class WaitForShipToBeDefeatedStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableActor                                    WinningShip;                                       // 0x80(0x30)
+	struct QuestVariableActor                                    DefeatedShip;                                      // 0xb0(0x30)
+	struct QuestVariableGuid                                     WinningCrewId;                                     // 0xe0(0x30)
+	struct QuestVariableGuid                                     DefeatedCrewId;                                    // 0x110(0x30)
+	struct QuestVariableName                                     WinningFaction;                                    // 0x140(0x30)
+	struct QuestVariableName                                     DefeatedFaction;                                   // 0x170(0x30)
+	float                                                        TimeoutTimerIntervalInMinutes;                     // 0x1a0(0x4)
+	struct FText                                                 FailMessage;                                       // 0x1a8(0x38)
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class TaleQuestInvasionRemoveBattleBoundsStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableActor                                    ShipInBattleBounds;                                // 0x80(0x30)
+};
+
+
+// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
+class GetInvasionBattleLocationStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableVector                                   Location;                                          // 0x80(0x30)
+	struct QuestVariableFloat                                    Radius;                                            // 0xb0(0x30)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class InvasionLocationsDataAsset: public DataAsset
+{
+public:
+	TArray<struct Vector2D>                                      AggressiveAggressiveLocations;                     // 0x28(0x10)
 };
 
 
@@ -145,20 +150,19 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
-class SetInvasionMusicStateForCrewStepDesc: public TaleQuestStepDesc
+// Size 0x1b0 (Full Size[0x230] - InheritedSize[0x80]
+class GetInvasionShipsStepDesc: public TaleQuestStepDesc
 {
 public:
-	char                                                         MusicState;                                        // 0x80(0x1)
-};
-
-
-// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
-class GetInvasionBattleLocationStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableVector                                   Location;                                          // 0x80(0x30)
-	struct QuestVariableFloat                                    Radius;                                            // 0xb0(0x30)
+	struct QuestVariableActor                                    AggressiveShip;                                    // 0x80(0x30)
+	struct QuestVariableActor                                    AggressiveShip;                                    // 0xb0(0x30)
+	struct QuestVariableActor                                    PassiveShip;                                       // 0xe0(0x30)
+	struct QuestVariableGuid                                     AggressiveCrewId;                                  // 0x110(0x30)
+	struct QuestVariableGuid                                     AggressiveCrewId;                                  // 0x140(0x30)
+	struct QuestVariableGuid                                     PassiveCrewId;                                     // 0x170(0x30)
+	struct QuestVariableName                                     AggressiveFaction;                                 // 0x1a0(0x30)
+	struct QuestVariableName                                     AggressiveFaction;                                 // 0x1d0(0x30)
+	struct QuestVariableName                                     PassiveFaction;                                    // 0x200(0x30)
 };
 
 
@@ -171,26 +175,22 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class InvasionLocationsDataAsset: public DataAsset
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class SetInvasionMusicStateForCrewStepDesc: public TaleQuestStepDesc
 {
 public:
-	TArray<struct Vector2D>                                      AggressiveAggressiveLocations;                     // 0x28(0x10)
+	char                                                         MusicState;                                        // 0x80(0x1)
 };
 
 
-// Size 0x160 (Full Size[0x1e0] - InheritedSize[0x80]
-class WaitForShipToBeDefeatedStepDesc: public TaleQuestStepDesc
+// Size 0xa0 (Full Size[0x120] - InheritedSize[0x80]
+class DisplayInvasionBannersStepDesc: public TaleQuestStepDesc
 {
 public:
-	struct QuestVariableActor                                    WinningShip;                                       // 0x80(0x30)
-	struct QuestVariableActor                                    DefeatedShip;                                      // 0xb0(0x30)
-	struct QuestVariableGuid                                     WinningCrewId;                                     // 0xe0(0x30)
-	struct QuestVariableGuid                                     DefeatedCrewId;                                    // 0x110(0x30)
-	struct QuestVariableName                                     WinningFaction;                                    // 0x140(0x30)
-	struct QuestVariableName                                     DefeatedFaction;                                   // 0x170(0x30)
-	float                                                        TimeoutTimerIntervalInMinutes;                     // 0x1a0(0x4)
-	struct FText                                                 FailMessage;                                       // 0x1a8(0x38)
+	struct FText                                                 Message;                                           // 0x80(0x38)
+	bool                                                         DisableMusic;                                      // 0xb8(0x1)
+	struct QuestVariableGuid                                     DisplayShipsNameForCrewId;                         // 0xc0(0x30)
+	struct QuestVariableName                                     DisplayBannersForFaction;                          // 0xf0(0x30)
 };
 
 

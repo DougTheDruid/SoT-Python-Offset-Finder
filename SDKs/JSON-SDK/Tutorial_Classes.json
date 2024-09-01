@@ -19,17 +19,55 @@
       }
     ]
   },
-  "HasTutorialStarterBegunNPCDialogConditional": {
-    "Super": "NPCDialogConditional",
-    "FullSize": "0x38",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x8",
+  "ContextualTutorialComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x140",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x78",
     "Attributes": [
       {
-        "Name": "TutorialStarterType",
-        "Type": "byte",
+        "Name": "ContextualTutorialClasses",
+        "Type": "TArray<struct ContextualTutorialPromptDesc>",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "SpawnedPromptActors",
+        "Type": "TArray<class Actor*>",
+        "Size": "0x10",
+        "Offset": "0xd8"
+      }
+    ]
+  },
+  "TutorialStarter": {
+    "Super": "Object",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "AthenaPlayerController",
+        "Type": "class AthenaPlayerController*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ShouldPlayIntroAnimatic",
+        "Type": "bool",
         "Size": "0x1",
         "Offset": "0x30"
+      },
+      {
+        "Name": "ShouldDisableAllIntroBehaviour",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x31"
+      },
+      {
+        "Name": "IntroAnimationSettings",
+        "Type": "struct FirstPersonAnimaticSettings",
+        "Size": "0x2c",
+        "Offset": "0x34"
       }
     ]
   },
@@ -50,26 +88,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xc9"
-      }
-    ]
-  },
-  "ContextualTutorialComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x140",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "ContextualTutorialClasses",
-        "Type": "TArray<struct ContextualTutorialPromptDesc>",
-        "Size": "0x10",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "SpawnedPromptActors",
-        "Type": "TArray<class Actor*>",
-        "Size": "0x10",
-        "Offset": "0xd8"
       }
     ]
   },
@@ -183,49 +201,17 @@
       }
     ]
   },
-  "TutorialStarter": {
-    "Super": "Object",
-    "FullSize": "0x60",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "AthenaPlayerController",
-        "Type": "class AthenaPlayerController*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "ShouldPlayIntroAnimatic",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "ShouldDisableAllIntroBehaviour",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x31"
-      },
-      {
-        "Name": "IntroAnimationSettings",
-        "Type": "struct FirstPersonAnimaticSettings",
-        "Size": "0x2c",
-        "Offset": "0x34"
-      }
-    ]
-  },
-  "Tutorial2019ContextualDelegatingComponent": {
-    "Super": "Tutorial2019Component",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xd0",
+  "HasTutorialStarterBegunNPCDialogConditional": {
+    "Super": "NPCDialogConditional",
+    "FullSize": "0x38",
+    "InheritedSize": "0x30",
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "ContextualTutorialComponent",
-        "Type": "class ContextualTutorialComponent*",
-        "Size": "0x8",
-        "Offset": "0xd0"
+        "Name": "TutorialStarterType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x30"
       }
     ]
   },
@@ -314,6 +300,20 @@
         "Type": "TArray<struct IntroductionToSOTIntroAnimatic>",
         "Size": "0x10",
         "Offset": "0x68"
+      }
+    ]
+  },
+  "Tutorial2019ContextualDelegatingComponent": {
+    "Super": "Tutorial2019Component",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xd0",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ContextualTutorialComponent",
+        "Type": "class ContextualTutorialComponent*",
+        "Size": "0x8",
+        "Offset": "0xd0"
       }
     ]
   },

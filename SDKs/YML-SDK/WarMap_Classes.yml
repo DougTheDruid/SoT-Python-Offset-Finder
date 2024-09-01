@@ -77,20 +77,20 @@ StopWarMapVoyageVoteValidator:
 WarMapInteractionComponent:
   Attributes:
   - Name: OpenMapInteractionText
-    Offset: '0x140'
+    Offset: '0x150'
     Size: '0x38'
     Type: struct FText
   - Name: CannotOpenMapInteractionText
-    Offset: '0x178'
+    Offset: '0x188'
     Size: '0x38'
     Type: struct FText
   - Name: OpenMapInputId
-    Offset: '0x1b0'
+    Offset: '0x1c0'
     Size: '0x8'
     Type: class UClass*
   ClassSize: '0xa0'
-  FullSize: '0x1d8'
-  InheritedSize: '0x138'
+  FullSize: '0x1e8'
+  InheritedSize: '0x148'
   Super: InteractableComponent
 WarMapVoteConsumerBase:
   Attributes:

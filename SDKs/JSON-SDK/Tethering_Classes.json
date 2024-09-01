@@ -1,4 +1,24 @@
 {
+  "CordRenderComponent": {
+    "Super": "StaticMeshComponent",
+    "FullSize": "0x670",
+    "InheritedSize": "0x630",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "CordMaterials",
+        "Type": "TArray<class MaterialInstanceDynamic*>",
+        "Size": "0x10",
+        "Offset": "0x638"
+      },
+      {
+        "Name": "ThicknessCm",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x648"
+      }
+    ]
+  },
   "TetherCustomisationComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x128",
@@ -28,6 +48,56 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x125"
+      }
+    ]
+  },
+  "DistanceJointComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x150",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "MinDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "MaxDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x13c"
+      },
+      {
+        "Name": "SpringStiffness",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x140"
+      },
+      {
+        "Name": "SpringDamping",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x144"
+      },
+      {
+        "Name": "ApplyAsSpring",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x148"
+      },
+      {
+        "Name": "EnforceMinDistance",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x149"
+      },
+      {
+        "Name": "EnforceMaxDistance",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x14a"
       }
     ]
   },
@@ -114,76 +184,6 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x504"
-      }
-    ]
-  },
-  "CordRenderComponent": {
-    "Super": "StaticMeshComponent",
-    "FullSize": "0x670",
-    "InheritedSize": "0x630",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "CordMaterials",
-        "Type": "TArray<class MaterialInstanceDynamic*>",
-        "Size": "0x10",
-        "Offset": "0x638"
-      },
-      {
-        "Name": "ThicknessCm",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x648"
-      }
-    ]
-  },
-  "DistanceJointComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x150",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x88",
-    "Attributes": [
-      {
-        "Name": "MinDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "MaxDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x13c"
-      },
-      {
-        "Name": "SpringStiffness",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x140"
-      },
-      {
-        "Name": "SpringDamping",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x144"
-      },
-      {
-        "Name": "ApplyAsSpring",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x148"
-      },
-      {
-        "Name": "EnforceMinDistance",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x149"
-      },
-      {
-        "Name": "EnforceMaxDistance",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x14a"
       }
     ]
   },

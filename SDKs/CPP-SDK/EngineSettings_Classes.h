@@ -6,22 +6,13 @@
 #include "EngineSettings_Structs.h"
 
 
-// Size 0xe8 (Full Size[0x110] - InheritedSize[0x28]
-class GeneralProjectSettings: public Object
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class ConsoleSettings: public Object
 {
 public:
-	struct FString                                               CompanyName;                                       // 0x28(0x10)
-	struct FString                                               CompanyDistinguishedName;                          // 0x38(0x10)
-	struct FString                                               CopyrightNotice;                                   // 0x48(0x10)
-	struct FString                                               Description;                                       // 0x58(0x10)
-	struct FString                                               Homepage;                                          // 0x68(0x10)
-	struct FString                                               LicensingTerms;                                    // 0x78(0x10)
-	struct FString                                               PrivacyPolicy;                                     // 0x88(0x10)
-	struct Guid                                                  ProjectID;                                         // 0x98(0x10)
-	struct FString                                               ProjectName;                                       // 0xa8(0x10)
-	struct FString                                               ProjectVersion;                                    // 0xb8(0x10)
-	struct FString                                               SupportContact;                                    // 0xc8(0x10)
-	struct FText                                                 ProjectDisplayedTitle;                             // 0xd8(0x38)
+	int                                                          MaxScrollbackSize;                                 // 0x28(0x4)
+	TArray<struct AutoCompleteCommand>                           ManualAutoCompleteList;                            // 0x30(0x10)
+	TArray<String>                                               AutoCompleteMapPaths;                              // 0x40(0x10)
 };
 
 
@@ -43,12 +34,13 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class HudSettings: public Object
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class GameSessionSettings: public Object
 {
 public:
-	bool                                                         bShowHUD;                                          // 0x28(0x1)
-	TArray<struct Name>                                          DebugDisplay;                                      // 0x30(0x10)
+	int                                                          MaxSpectators;                                     // 0x28(0x4)
+	int                                                          MaxPlayers;                                        // 0x2c(0x4)
+	bool                                                         bRequiresPushToTalk;                               // 0x30(0x1)
 };
 
 
@@ -70,23 +62,31 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class GameSessionSettings: public Object
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class HudSettings: public Object
 {
 public:
-	int                                                          MaxSpectators;                                     // 0x28(0x4)
-	int                                                          MaxPlayers;                                        // 0x2c(0x4)
-	bool                                                         bRequiresPushToTalk;                               // 0x30(0x1)
+	bool                                                         bShowHUD;                                          // 0x28(0x1)
+	TArray<struct Name>                                          DebugDisplay;                                      // 0x30(0x10)
 };
 
 
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class ConsoleSettings: public Object
+// Size 0xe8 (Full Size[0x110] - InheritedSize[0x28]
+class GeneralProjectSettings: public Object
 {
 public:
-	int                                                          MaxScrollbackSize;                                 // 0x28(0x4)
-	TArray<struct AutoCompleteCommand>                           ManualAutoCompleteList;                            // 0x30(0x10)
-	TArray<String>                                               AutoCompleteMapPaths;                              // 0x40(0x10)
+	struct FString                                               CompanyName;                                       // 0x28(0x10)
+	struct FString                                               CompanyDistinguishedName;                          // 0x38(0x10)
+	struct FString                                               CopyrightNotice;                                   // 0x48(0x10)
+	struct FString                                               Description;                                       // 0x58(0x10)
+	struct FString                                               Homepage;                                          // 0x68(0x10)
+	struct FString                                               LicensingTerms;                                    // 0x78(0x10)
+	struct FString                                               PrivacyPolicy;                                     // 0x88(0x10)
+	struct Guid                                                  ProjectID;                                         // 0x98(0x10)
+	struct FString                                               ProjectName;                                       // 0xa8(0x10)
+	struct FString                                               ProjectVersion;                                    // 0xb8(0x10)
+	struct FString                                               SupportContact;                                    // 0xc8(0x10)
+	struct FText                                                 ProjectDisplayedTitle;                             // 0xd8(0x38)
 };
 
 

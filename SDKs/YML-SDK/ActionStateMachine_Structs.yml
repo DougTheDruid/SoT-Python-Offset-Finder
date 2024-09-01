@@ -13,11 +13,23 @@ ActionStateConstructionInfo:
     Offset: '0x0'
     Size: '0x8'
     Type: class UClass*
-  - Name: Type
+  - Name: PreviousStateToTransitionBackToId
     Offset: '0x8'
     Size: '0x8'
+    Type: class UClass*
+  - Name: ShouldTransitionBackToPreviousState
+    Offset: '0x10'
+    Size: '0x1'
+    Type: bool
+  - Name: IsTransitionState
+    Offset: '0x11'
+    Size: '0x1'
+    Type: bool
+  - Name: Type
+    Offset: '0x18'
+    Size: '0x8'
     Type: class ScriptStruct*
-  ClassSize: '0x28'
+  ClassSize: '0x38'
 ActionStateMessage:
   Attributes:
   - Name: Type
@@ -61,10 +73,10 @@ ActionStateSerialisableData:
 ActorActionStateConstructionInfo:
   Attributes:
   - Name: ActorOwner
-    Offset: '0x28'
+    Offset: '0x38'
     Size: '0x8'
     Type: class Actor*
-  ClassSize: '0x30'
+  ClassSize: '0x40'
 InnerTestStruct:
   Attributes:
   - Name: BoolProp
@@ -108,36 +120,36 @@ SerialisedConstructionInfoStore:
 TestActionStateConstructionInfo:
   Attributes:
   - Name: IntProp
-    Offset: '0x28'
+    Offset: '0x38'
     Size: '0x4'
     Type: int
-  ClassSize: '0x30'
+  ClassSize: '0x40'
 TestActionStateConstructionInfoWithInner:
   Attributes:
   - Name: FloatProp
-    Offset: '0x28'
+    Offset: '0x38'
     Size: '0x4'
     Type: float
   - Name: InnerStruct
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x18'
     Type: struct InnerTestStruct
-  ClassSize: '0x48'
+  ClassSize: '0x58'
 TestActionStateConstructionInfoWithObjPointers:
   Attributes:
   - Name: ObjPointer
-    Offset: '0x28'
+    Offset: '0x38'
     Size: '0x8'
     Type: class Object*
   - Name: Inner
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x8'
     Type: struct InnerWithObjTestStruct
   - Name: Array
-    Offset: '0x38'
+    Offset: '0x48'
     Size: '0x10'
     Type: TArray<class Object*>
-  ClassSize: '0x48'
+  ClassSize: '0x58'
 TestActionStateMessage:
   Attributes:
   - Name: TestProperty
@@ -155,7 +167,7 @@ TestActionStateSerialisableData:
 TestActorActionStateConstructionInfo:
   Attributes:
   - Name: IntProp
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x4'
     Type: int
-  ClassSize: '0x38'
+  ClassSize: '0x48'

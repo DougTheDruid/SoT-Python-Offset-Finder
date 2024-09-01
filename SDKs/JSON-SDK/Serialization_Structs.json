@@ -1,4 +1,39 @@
 {
+  "StructSerializerBuiltinTestStruct": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "Guid",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Name",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "String",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Rotator",
+        "Type": "struct Rotator",
+        "Size": "0xc",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Vector",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x34"
+      }
+    ]
+  },
   "StructSerializerNumericTestStruct": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -64,6 +99,23 @@
       }
     ]
   },
+  "StructSerializerObjectTestStruct": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Class",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ObjectPtr",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "StructSerializerArrayTestStruct": {
     "ClassSize": "0x40",
     "Attributes": [
@@ -96,58 +148,6 @@
         "Type": "TArray<struct Vector>",
         "Size": "0x10",
         "Offset": "0x30"
-      }
-    ]
-  },
-  "StructSerializerBuiltinTestStruct": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "Guid",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Name",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "String",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "Rotator",
-        "Type": "struct Rotator",
-        "Size": "0xc",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Vector",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x34"
-      }
-    ]
-  },
-  "StructSerializerObjectTestStruct": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Class",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ObjectPtr",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
       }
     ]
   },

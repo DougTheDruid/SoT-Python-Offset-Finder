@@ -3,23 +3,23 @@
 ZoomedInOnWieldableItemActionStateConstructionInfo:
   Attributes:
   - Name: ZoomedInFov
-    Offset: '0x30'
-    Size: '0x4'
-    Type: float
-  - Name: FreelookPitch
-    Offset: '0x34'
-    Size: '0x4'
-    Type: float
-  - Name: FreelookYaw
-    Offset: '0x38'
-    Size: '0x4'
-    Type: float
-  - Name: FreelookOutInterpolationRate
-    Offset: '0x3c'
-    Size: '0x4'
-    Type: float
-  - Name: LookSensitivityScaler
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  ClassSize: '0x48'
+  - Name: FreelookPitch
+    Offset: '0x44'
+    Size: '0x4'
+    Type: float
+  - Name: FreelookYaw
+    Offset: '0x48'
+    Size: '0x4'
+    Type: float
+  - Name: FreelookOutInterpolationRate
+    Offset: '0x4c'
+    Size: '0x4'
+    Type: float
+  - Name: LookSensitivityScaler
+    Offset: '0x50'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x58'

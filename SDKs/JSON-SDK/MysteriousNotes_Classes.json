@@ -1,21 +1,51 @@
 {
-  "WieldableMysteriousNoteDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
+  "WieldableMysteriousNote": {
+    "Super": "SkeletalMeshWieldableItem",
+    "FullSize": "0x990",
+    "InheritedSize": "0x7f0",
+    "ClassSize": "0x1a0",
     "Attributes": [
       {
-        "Name": "WieldableNoteDesc",
-        "Type": "class UClass*",
+        "Name": "RenderTarget",
+        "Type": "class MaybeCompressedCanvasRenderTarget2D*",
         "Size": "0x8",
-        "Offset": "0x28"
+        "Offset": "0x800"
+      },
+      {
+        "Name": "CanvasWidth",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x808"
+      },
+      {
+        "Name": "CanvasHeight",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x80c"
+      },
+      {
+        "Name": "FontScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x810"
       },
       {
         "Name": "NoteLayout",
         "Type": "class WieldableMysteriousNoteLayout*",
         "Size": "0x8",
-        "Offset": "0x30"
+        "Offset": "0x870"
+      },
+      {
+        "Name": "UsableWieldableComponent",
+        "Type": "class UsableWieldableComponent*",
+        "Size": "0x8",
+        "Offset": "0x878"
+      },
+      {
+        "Name": "InventoryItemComponent",
+        "Type": "class InventoryItemComponent*",
+        "Size": "0x8",
+        "Offset": "0x880"
       }
     ]
   },
@@ -42,6 +72,26 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1d8"
+      }
+    ]
+  },
+  "WieldableMysteriousNoteDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "WieldableNoteDesc",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "NoteLayout",
+        "Type": "class WieldableMysteriousNoteLayout*",
+        "Size": "0x8",
+        "Offset": "0x30"
       }
     ]
   },
@@ -77,29 +127,17 @@
       }
     ]
   },
-  "MysteriousNotesService": {
-    "Super": "Actor",
-    "FullSize": "0x460",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x98",
+  "MysteriousNotesCompletionEventsModelDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "CachedNoteSettings",
-        "Type": "class MysteriousNoteSettings*",
-        "Size": "0x8",
-        "Offset": "0x3f0"
-      },
-      {
-        "Name": "WieldableNoteDataAsset",
-        "Type": "class WieldableMysteriousNoteDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "CompletionEventsModelData",
-        "Type": "class MysteriousNotesCompletionEventsModelDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x400"
+        "Name": "MysteriousNoteCompletionEvents",
+        "Type": "TArray<struct MysteriousNotesCompletionEventsModel>",
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },
@@ -147,67 +185,29 @@
       }
     ]
   },
-  "WieldableMysteriousNote": {
-    "Super": "SkeletalMeshWieldableItem",
-    "FullSize": "0x990",
-    "InheritedSize": "0x7f0",
-    "ClassSize": "0x1a0",
+  "MysteriousNotesService": {
+    "Super": "Actor",
+    "FullSize": "0x460",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x98",
     "Attributes": [
       {
-        "Name": "RenderTarget",
-        "Type": "class MaybeCompressedCanvasRenderTarget2D*",
+        "Name": "CachedNoteSettings",
+        "Type": "class MysteriousNoteSettings*",
         "Size": "0x8",
-        "Offset": "0x7f8"
+        "Offset": "0x3f0"
       },
       {
-        "Name": "CanvasWidth",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x800"
-      },
-      {
-        "Name": "CanvasHeight",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x804"
-      },
-      {
-        "Name": "FontScale",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x808"
-      },
-      {
-        "Name": "NoteLayout",
-        "Type": "class WieldableMysteriousNoteLayout*",
+        "Name": "WieldableNoteDataAsset",
+        "Type": "class WieldableMysteriousNoteDataAsset*",
         "Size": "0x8",
-        "Offset": "0x868"
+        "Offset": "0x3f8"
       },
       {
-        "Name": "UsableWieldableComponent",
-        "Type": "class UsableWieldableComponent*",
+        "Name": "CompletionEventsModelData",
+        "Type": "class MysteriousNotesCompletionEventsModelDataAsset*",
         "Size": "0x8",
-        "Offset": "0x870"
-      },
-      {
-        "Name": "InventoryItemComponent",
-        "Type": "class InventoryItemComponent*",
-        "Size": "0x8",
-        "Offset": "0x878"
-      }
-    ]
-  },
-  "MysteriousNotesCompletionEventsModelDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MysteriousNoteCompletionEvents",
-        "Type": "TArray<struct MysteriousNotesCompletionEventsModel>",
-        "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x400"
       }
     ]
   },

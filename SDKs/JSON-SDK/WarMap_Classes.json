@@ -1,59 +1,27 @@
 {
   "WarMapInteractionComponent": {
     "Super": "InteractableComponent",
-    "FullSize": "0x1d8",
-    "InheritedSize": "0x138",
+    "FullSize": "0x1e8",
+    "InheritedSize": "0x148",
     "ClassSize": "0xa0",
     "Attributes": [
       {
         "Name": "OpenMapInteractionText",
         "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x140"
+        "Offset": "0x150"
       },
       {
         "Name": "CannotOpenMapInteractionText",
         "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x178"
+        "Offset": "0x188"
       },
       {
         "Name": "OpenMapInputId",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x1b0"
-      }
-    ]
-  },
-  "WarMapVoteConsumerBase": {
-    "Super": "VoteConsumerInlineBase",
-    "FullSize": "0x110",
-    "InheritedSize": "0x30",
-    "ClassSize": "0xe0",
-    "Attributes": [
-      {
-        "Name": "Validator",
-        "Type": "class WarMapVoteValidatorBase*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "OwningActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "IsHardMode",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "Votes",
-        "Type": "TArray<class PlayerState*>",
-        "Size": "0x10",
-        "Offset": "0xa8"
+        "Offset": "0x1c0"
       }
     ]
   },
@@ -124,6 +92,38 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x40"
+      }
+    ]
+  },
+  "WarMapVoteConsumerBase": {
+    "Super": "VoteConsumerInlineBase",
+    "FullSize": "0x110",
+    "InheritedSize": "0x30",
+    "ClassSize": "0xe0",
+    "Attributes": [
+      {
+        "Name": "Validator",
+        "Type": "class WarMapVoteValidatorBase*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "OwningActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "IsHardMode",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "Votes",
+        "Type": "TArray<class PlayerState*>",
+        "Size": "0x10",
+        "Offset": "0xa8"
       }
     ]
   },

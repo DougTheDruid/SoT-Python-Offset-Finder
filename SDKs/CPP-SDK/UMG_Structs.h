@@ -14,51 +14,30 @@ public:
 };
 
 
-// Size 0x10
-struct NamedSlotBinding
-{
-public:
-	struct FName                                                 Name;                                              // 0x0(0x8)
-	class Widget*                                                Content;                                           // 0x8(0x8)
-};
-
-
-// Size 0x218
-struct MovieSceneMarginSectionTemplate
-{
-public:
-	struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
-	struct RichCurve                                             TopCurve;                                          // 0x38(0x78)
-	struct RichCurve                                             LeftCurve;                                         // 0xb0(0x78)
-	struct RichCurve                                             RightCurve;                                        // 0x128(0x78)
-	struct RichCurve                                             BottomCurve;                                       // 0x1a0(0x78)
-};
-
-
-// Size 0x58
-struct MovieSceneWidgetMaterialSectionTemplate
-{
-public:
-	TArray<struct Name>                                          BrushPropertyNamePath;                             // 0x48(0x10)
-};
-
-
-// Size 0x28
-struct AnchorData
-{
-public:
-	struct Margin                                                Offsets;                                           // 0x0(0x10)
-	struct Anchors                                               Anchors;                                           // 0x10(0x10)
-	struct Vector2D                                              Alignment;                                         // 0x20(0x8)
-};
-
-
 // Size 0x14
 struct WidgetNavigationData
 {
 public:
 	char                                                         Rule;                                              // 0x0(0x1)
 	struct FName                                                 WidgetToFocus;                                     // 0x4(0x8)
+};
+
+
+// Size 0x8
+struct SlateChildSize
+{
+public:
+	float                                                        Value;                                             // 0x0(0x4)
+	char                                                         SizeRule;                                          // 0x4(0x1)
+};
+
+
+// Size 0x10
+struct NamedSlotBinding
+{
+public:
+	struct FName                                                 Name;                                              // 0x0(0x8)
+	class Widget*                                                Content;                                           // 0x8(0x8)
 };
 
 
@@ -73,12 +52,33 @@ public:
 };
 
 
-// Size 0x8
-struct SlateChildSize
+// Size 0x28
+struct AnchorData
 {
 public:
-	float                                                        Value;                                             // 0x0(0x4)
-	char                                                         SizeRule;                                          // 0x4(0x1)
+	struct Margin                                                Offsets;                                           // 0x0(0x10)
+	struct Anchors                                               Anchors;                                           // 0x10(0x10)
+	struct Vector2D                                              Alignment;                                         // 0x20(0x8)
+};
+
+
+// Size 0x58
+struct MovieSceneWidgetMaterialSectionTemplate
+{
+public:
+	TArray<struct Name>                                          BrushPropertyNamePath;                             // 0x48(0x10)
+};
+
+
+// Size 0x380
+struct MovieScene2DTransformSectionTemplate
+{
+public:
+	struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
+	struct RichCurve                                             Translation;                                       // 0x38(0x78)
+	struct RichCurve                                             Rotation;                                          // 0x128(0x78)
+	struct RichCurve                                             Scale;                                             // 0x1a0(0x78)
+	struct RichCurve                                             Shear;                                             // 0x290(0x78)
 };
 
 
@@ -93,15 +93,15 @@ public:
 };
 
 
-// Size 0x380
-struct MovieScene2DTransformSectionTemplate
+// Size 0x218
+struct MovieSceneMarginSectionTemplate
 {
 public:
 	struct MovieScenePropertySectionData                         PropertyData;                                      // 0x18(0x20)
-	struct RichCurve                                             Translation;                                       // 0x38(0x78)
-	struct RichCurve                                             Rotation;                                          // 0x128(0x78)
-	struct RichCurve                                             Scale;                                             // 0x1a0(0x78)
-	struct RichCurve                                             Shear;                                             // 0x290(0x78)
+	struct RichCurve                                             TopCurve;                                          // 0x38(0x78)
+	struct RichCurve                                             LeftCurve;                                         // 0xb0(0x78)
+	struct RichCurve                                             RightCurve;                                        // 0x128(0x78)
+	struct RichCurve                                             BottomCurve;                                       // 0x1a0(0x78)
 };
 
 

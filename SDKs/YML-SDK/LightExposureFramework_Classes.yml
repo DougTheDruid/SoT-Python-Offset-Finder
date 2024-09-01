@@ -15,9 +15,9 @@ LightSensitiveComponent:
   - Name: LightSourceManager
     Offset: '0x130'
     Size: '0x8'
-    Type: class LightSourceManager*
-  ClassSize: '0x70'
-  FullSize: '0x138'
+    Type: class Actor*
+  ClassSize: '0x78'
+  FullSize: '0x140'
   InheritedSize: '0xc8'
   Super: ActorComponent
 LightSourceManager:

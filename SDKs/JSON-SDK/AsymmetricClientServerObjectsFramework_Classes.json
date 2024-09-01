@@ -1,36 +1,4 @@
 {
-  "AsymmetricObjectServerManager": {
-    "Super": "Actor",
-    "FullSize": "0x420",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "SpawnedObject",
-        "Type": "class AsymmetricClientObject*",
-        "Size": "0x8",
-        "Offset": "0x3e0"
-      },
-      {
-        "Name": "SceneComponent",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x3e8"
-      },
-      {
-        "Name": "AsymmetricObjectAsset",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x3f0"
-      },
-      {
-        "Name": "ForcedAsymmetricObjectAsset",
-        "Type": "assetclass",
-        "Size": "0x20",
-        "Offset": "0x400"
-      }
-    ]
-  },
   "AsymmetricClientObject": {
     "Super": "Actor",
     "FullSize": "0x418",
@@ -78,6 +46,38 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x414"
+      }
+    ]
+  },
+  "AsymmetricObjectServerManager": {
+    "Super": "Actor",
+    "FullSize": "0x420",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "SpawnedObject",
+        "Type": "class AsymmetricClientObject*",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "SceneComponent",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "AsymmetricObjectAsset",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "ForcedAsymmetricObjectAsset",
+        "Type": "assetclass",
+        "Size": "0x20",
+        "Offset": "0x400"
       }
     ]
   },

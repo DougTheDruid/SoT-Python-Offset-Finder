@@ -258,6 +258,28 @@ CustomAnimationMontageStateMachine:
     Size: '0x8'
     Type: class AnimMontage*
   ClassSize: '0xd8'
+DisguiseProxyData:
+  Attributes:
+  - Name: DisguiseId
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: MeshData
+    Offset: '0x8'
+    Size: '0x10'
+    Type: struct DisguiseProxyMeshData
+  ClassSize: '0x18'
+DisguiseProxyMeshData:
+  Attributes:
+  - Name: SkeletalMesh
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class SkeletalMesh*
+  - Name: Scale
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x10'
 DockableInfo:
   Attributes:
   - Name: SocketName

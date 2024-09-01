@@ -6,11 +6,19 @@
 #include "Water_Structs.h"
 
 
-// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class MockWaterServiceWithValidWaterPlane: public MockWaterInterface
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class WaterProperties: public Object
 {
 public:
-	class FFTWaterComponent*                                     DefaultWaterComponent;                             // 0x38(0x8)
+	TArray<struct WaterInformation>                              WaterInfo;                                         // 0x28(0x10)
+};
+
+
+// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
+class WaterPlaneExclusionComponent: public ActorComponent
+{
+public:
+	struct ActorComponentSelector                                UseSpecificComponentForOverlaps;                   // 0xd0(0x10)
 };
 
 
@@ -19,6 +27,26 @@ class WaterInteractionComponent: public BoxComponent
 {
 public:
 	int                                                          ServerCorrectedWaterExclusionZoneCount;            // 0x614(0x4)
+};
+
+
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+class MockWaterServiceWithValidWaterPlane: public MockWaterInterface
+{
+public:
+	class FFTWaterComponent*                                     DefaultWaterComponent;                             // 0x38(0x8)
+};
+
+
+// Size 0x58 (Full Size[0x120] - InheritedSize[0xc8]
+class SplashProbeVFXComponent: public ActorComponent
+{
+public:
+	class SplashProbeDataAsset*                                  Probes;                                            // 0xf0(0x8)
+	class SplashProbeDataAsset*                                  ProbesInstance;                                    // 0xf8(0x8)
+	struct ActorComponentSelector                                AttachProbesToOwner;                               // 0x100(0x10)
+	class SceneComponent*                                        AttachProbesToComponent;                           // 0x110(0x8)
+	bool                                                         ProbeEnabled;                                      // 0x118(0x1)
 };
 
 
@@ -58,34 +86,6 @@ public:
 	class FFTWaterComponent*                                     FFTWaterComponent;                                 // 0x3e0(0x8)
 	class FFTWaterExtendedPlaneComponent*                        ExtendedPlaneComponent;                            // 0x3e8(0x8)
 	double                                                       ReplicatedServerCreationTime;                      // 0x440(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class WaterProperties: public Object
-{
-public:
-	TArray<struct WaterInformation>                              WaterInfo;                                         // 0x28(0x10)
-};
-
-
-// Size 0x58 (Full Size[0x120] - InheritedSize[0xc8]
-class SplashProbeVFXComponent: public ActorComponent
-{
-public:
-	class SplashProbeDataAsset*                                  Probes;                                            // 0xf0(0x8)
-	class SplashProbeDataAsset*                                  ProbesInstance;                                    // 0xf8(0x8)
-	struct ActorComponentSelector                                AttachProbesToOwner;                               // 0x100(0x10)
-	class SceneComponent*                                        AttachProbesToComponent;                           // 0x110(0x8)
-	bool                                                         ProbeEnabled;                                      // 0x118(0x1)
-};
-
-
-// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
-class WaterPlaneExclusionComponent: public ActorComponent
-{
-public:
-	struct ActorComponentSelector                                UseSpecificComponentForOverlaps;                   // 0xd0(0x10)
 };
 
 

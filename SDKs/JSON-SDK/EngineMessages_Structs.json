@@ -1,4 +1,38 @@
 {
+  "EngineServiceAuthGrant": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "UserName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "UserToGrant",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EngineServiceNotification": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Text",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TimeSeconds",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "EngineServicePong": {
     "ClassSize": "0x50",
     "Attributes": [
@@ -46,51 +80,17 @@
       }
     ]
   },
-  "EngineServiceAuthDeny": {
+  "EngineServiceExecuteCommand": {
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "UserName",
+        "Name": "Command",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
-      {
-        "Name": "UserToDeny",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "EngineServiceNotification": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Text",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TimeSeconds",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "EngineServiceAuthGrant": {
-    "ClassSize": "0x20",
-    "Attributes": [
       {
         "Name": "UserName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "UserToGrant",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
@@ -108,17 +108,17 @@
       }
     ]
   },
-  "EngineServiceExecuteCommand": {
+  "EngineServiceAuthDeny": {
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "Command",
+        "Name": "UserName",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "UserName",
+        "Name": "UserToDeny",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"

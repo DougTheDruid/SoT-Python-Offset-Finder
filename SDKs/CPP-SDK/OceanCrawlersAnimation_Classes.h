@@ -23,14 +23,6 @@ public:
 };
 
 
-// Size 0x90 (Full Size[0xb8] - InheritedSize[0x28]
-class OceanCrawlerAnimationData: public AnimationData
-{
-public:
-	struct OceanCrawlerAnimationDataStructure                    OceanCrawlerAnimationDataStructure;                // 0x28(0x90)
-};
-
-
 // Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
 class OceanCrawlerAnimationServerData: public AnimationServerData
 {
@@ -39,6 +31,14 @@ public:
 	float                                                        MaxSpawnAnimDuration;                              // 0x38(0x4)
 	float                                                        MaxSpawnOnShipAnimDuration;                        // 0x3c(0x4)
 	float                                                        MaxSpawnBoardingAnimDuration;                      // 0x40(0x4)
+};
+
+
+// Size 0x90 (Full Size[0xb8] - InheritedSize[0x28]
+class OceanCrawlerAnimationData: public AnimationData
+{
+public:
+	struct OceanCrawlerAnimationDataStructure                    OceanCrawlerAnimationDataStructure;                // 0x28(0x90)
 };
 
 

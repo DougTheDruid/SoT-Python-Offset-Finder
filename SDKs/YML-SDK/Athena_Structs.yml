@@ -10,22 +10,22 @@ AIDeadActionStateParams:
 AIKnockbackActionStateConstructionInfo:
   Attributes:
   - Name: KnockbackDirection
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0xc'
     Type: struct Vector
   - Name: KnockbackSpeed
-    Offset: '0x3c'
+    Offset: '0x4c'
     Size: '0x4'
     Type: float
   - Name: KnockbackAccel
-    Offset: '0x40'
+    Offset: '0x50'
     Size: '0x4'
     Type: float
   - Name: KnockbackStrengthType
-    Offset: '0x44'
+    Offset: '0x54'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x48'
+  ClassSize: '0x58'
 AIRowboatEncounterParamsSpawnerData:
   Attributes:
   - Name: Spawner
@@ -173,6 +173,13 @@ AIShipSpawnedEvent:
     Size: '0x4'
     Type: int
   ClassSize: '0x40'
+AIShipTargetVesselSetEvent:
+  Attributes:
+  - Name: AiShipTarget
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class Actor*
+  ClassSize: '0x8'
 AIShipWorldSettings:
   Attributes:
   - Name: FeatureToggledBattlesData
@@ -187,18 +194,18 @@ AIShipWorldSettings:
 AISpawnActionStateConstructionInfo:
   Attributes:
   - Name: HeldItemToBeginSpawn
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x8'
     Type: class UClass*
   - Name: SpawnType
-    Offset: '0x38'
+    Offset: '0x48'
     Size: '0x1'
     Type: byte
   - Name: QuickSpawn
-    Offset: '0x39'
+    Offset: '0x49'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x40'
+  ClassSize: '0x50'
 AISpawnActionStateParams:
   Attributes:
   - Name: SpawnTimeMax
@@ -2441,26 +2448,26 @@ ArmoryItemLoadoutUpdatedEvent:
 ArrivalTunnelOfTheDamnedActionStateConstructionInfo:
   Attributes:
   - Name: SourceServerSessionId
-    Offset: '0x30'
-    Size: '0x10'
-    Type: struct Guid
-  - Name: CrewId
     Offset: '0x40'
     Size: '0x10'
     Type: struct Guid
-  - Name: DepartureTunnelStreamingLevelId
+  - Name: CrewId
     Offset: '0x50'
+    Size: '0x10'
+    Type: struct Guid
+  - Name: DepartureTunnelStreamingLevelId
+    Offset: '0x60'
     Size: '0x4'
     Type: int
   - Name: TeleportAudioMode
-    Offset: '0x54'
+    Offset: '0x64'
     Size: '0x1'
     Type: byte
   - Name: PlayerLocationRelativeToShip
-    Offset: '0x58'
+    Offset: '0x68'
     Size: '0x40'
     Type: struct TeleportLocation
-  ClassSize: '0x98'
+  ClassSize: '0xa8'
 ArrivalTunnelOfTheDamnedActionStateParams:
   Attributes:
   - Name: FadeDuration
@@ -2572,7 +2579,11 @@ AshenWindSkullUseItemTelemetryEvent:
     Offset: '0x10'
     Size: '0x4'
     Type: float
-  ClassSize: '0x14'
+  - Name: WeaponName
+    Offset: '0x18'
+    Size: '0x10'
+    Type: struct FString
+  ClassSize: '0x28'
 AshenWindsSkullMissfireParams:
   Attributes:
   - Name: ChargeThreshold
@@ -2862,7 +2873,11 @@ AthenaAnimationAsyncLoadedBaseItemAnimations:
     Offset: '0x770'
     Size: '0x278'
     Type: struct AthenaAnimationAsyncLoadedContinuousActionAnimations
-  ClassSize: '0x9e8'
+  - Name: FacialActionAnimations
+    Offset: '0x9e8'
+    Size: '0x78'
+    Type: struct AthenaAnimationAsyncLoadedFacialActionAnimations
+  ClassSize: '0xa60'
 AthenaAnimationAsyncLoadedContinuousActionAnimations:
   Attributes:
   - Name: MainInto
@@ -2938,6 +2953,37 @@ AthenaAnimationAsyncLoadedContinuousActionAnimations:
     Size: '0x20'
     Type: assetobject
   ClassSize: '0x278'
+AthenaAnimationAsyncLoadedFacialActionAnimations:
+  Attributes:
+  - Name: PrimaryContinuous
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Class>
+  - Name: SecondaryContinuous
+    Offset: '0x18'
+    Size: '0x10'
+    Type: TArray<Class>
+  - Name: PrimaryOneShot
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<Class>
+  - Name: SecondaryOneShot
+    Offset: '0x38'
+    Size: '0x10'
+    Type: TArray<Class>
+  - Name: MeleeBlocking
+    Offset: '0x48'
+    Size: '0x10'
+    Type: TArray<Class>
+  - Name: MeleeAttack
+    Offset: '0x58'
+    Size: '0x10'
+    Type: TArray<Class>
+  - Name: MeleeBlockReact
+    Offset: '0x68'
+    Size: '0x10'
+    Type: TArray<Class>
+  ClassSize: '0x78'
 AthenaAnimationAsyncLoadedFishingAnimations:
   Attributes:
   - Name: CastIntoHoldBack
@@ -3107,7 +3153,11 @@ AthenaAnimationBaseItemAnimations:
     Offset: '0x1f8'
     Size: '0xa8'
     Type: struct AthenaAnimationObjectActionContinuousStruct
-  ClassSize: '0x2a0'
+  - Name: FacialActionStruct
+    Offset: '0x2a0'
+    Size: '0x70'
+    Type: struct AthenaAnimationObjectFacial
+  ClassSize: '0x310'
 AthenaAnimationCamera:
   Attributes:
   - Name: CameraAlpha
@@ -3494,39 +3544,79 @@ AthenaAnimationCrouchingAnimData:
   Attributes:
   - Name: Crouching3rdPerson
     Offset: '0x0'
-    Size: '0x8'
+    Size: '0x28'
     Type: struct AthenaAnimationCrouchingThirdPersonAnimData
   - Name: Crouching1stPerson
-    Offset: '0x8'
-    Size: '0x8'
+    Offset: '0x28'
+    Size: '0x10'
     Type: struct AthenaAnimationCrouchingFirstPersonAnimData
   - Name: IsCrouching
-    Offset: '0x10'
+    Offset: '0x38'
     Size: '0x1'
     Type: bool
   - Name: ThirdPersonBlendSpaceAssetPtr
-    Offset: '0x18'
+    Offset: '0x40'
     Size: '0x20'
     Type: assetobject
   - Name: FirstPersonBlendSpaceAssetPtr
-    Offset: '0x38'
+    Offset: '0x60'
     Size: '0x20'
     Type: assetobject
-  ClassSize: '0xa0'
+  - Name: FirstPersonAnimFallback
+    Offset: '0x80'
+    Size: '0x8'
+    Type: class AnimSequence*
+  - Name: ThirdPersonAnimFallback
+    Offset: '0x88'
+    Size: '0x8'
+    Type: class AnimSequence*
+  - Name: ThirdPersonTurn90RightAssetPtr
+    Offset: '0x90'
+    Size: '0x20'
+    Type: assetobject
+  - Name: ThirdPersonTurn90LeftAssetPtr
+    Offset: '0xb0'
+    Size: '0x20'
+    Type: assetobject
+  - Name: ThirdPersonTurnOutAssetPtr
+    Offset: '0xd0'
+    Size: '0x20'
+    Type: assetobject
+  ClassSize: '0x180'
 AthenaAnimationCrouchingFirstPersonAnimData:
   Attributes:
   - Name: CrouchBlendSpace
     Offset: '0x0'
     Size: '0x8'
     Type: class BlendSpace*
-  ClassSize: '0x8'
+  - Name: CrouchFallbackAnim
+    Offset: '0x8'
+    Size: '0x8'
+    Type: class AnimSequence*
+  ClassSize: '0x10'
 AthenaAnimationCrouchingThirdPersonAnimData:
   Attributes:
   - Name: CrouchBlendSpace
     Offset: '0x0'
     Size: '0x8'
     Type: class BlendSpace*
-  ClassSize: '0x8'
+  - Name: CrouchFallbackAnim
+    Offset: '0x8'
+    Size: '0x8'
+    Type: class AnimSequence*
+  - Name: Turn90Right
+    Offset: '0x10'
+    Size: '0x8'
+    Type: class AnimSequence*
+  - Name: Turn90Left
+    Offset: '0x18'
+    Size: '0x8'
+    Type: class AnimSequence*
+  - Name: TurnOut
+    Offset: '0x20'
+    Size: '0x8'
+    Type: class AnimSequence*
+  ClassSize: '0x28'
 AthenaAnimationCustomSkeletonAnimationBlueprintData:
   Attributes:
   - Name: SequenceActive
@@ -4302,29 +4392,29 @@ AthenaAnimationItemAnimationCache:
     Type: struct AthenaAnimationFishingAnimations
   - Name: ItemAnimations
     Offset: '0x90'
-    Size: '0x2a0'
+    Size: '0x310'
     Type: struct AthenaAnimationBaseItemAnimations
   - Name: EquipAnimations
-    Offset: '0x330'
+    Offset: '0x3a0'
     Size: '0x40'
     Type: struct AthenaAnimationObjectEquipAnimations
   - Name: LocomotionAnimations
-    Offset: '0x370'
+    Offset: '0x3e0'
     Size: '0x40'
     Type: struct AthenaAnimationObjectLocomotionAnimations
   - Name: JumpingAnimations
-    Offset: '0x3b0'
+    Offset: '0x420'
     Size: '0x20'
     Type: struct AthenaAnimationObjectJumpingAnimations
   - Name: IdleAnimations
-    Offset: '0x3d0'
+    Offset: '0x440'
     Size: '0x18'
     Type: struct AthenaAnimationObjectIdleAnimations
   - Name: HandAdditive
-    Offset: '0x3e8'
+    Offset: '0x458'
     Size: '0x8'
     Type: class AnimSequence*
-  ClassSize: '0x3f0'
+  ClassSize: '0x460'
 AthenaAnimationItemListingMappingType:
   Attributes:
   - Name: FirstPersonListing
@@ -4640,37 +4730,41 @@ AthenaAnimationLoadOnDemandItemsAnimationData:
     Type: struct AthenaAnimationAsyncLoadedFishingAnimations
   - Name: ItemUsageAnimationsToLoad
     Offset: '0x1e0'
-    Size: '0x9e8'
+    Size: '0xa60'
     Type: struct AthenaAnimationAsyncLoadedBaseItemAnimations
   - Name: LocomotionAnimationsToLoad
-    Offset: '0xbc8'
+    Offset: '0xc40'
     Size: '0x100'
     Type: struct AthenaAnimationAsyncLoadedLocomotionAnimations
   - Name: JumpingAnimationsToLoad
-    Offset: '0xcc8'
+    Offset: '0xd40'
     Size: '0x80'
     Type: struct AthenaAnimationAsyncLoadedObjectJumpingAnimations
   - Name: IdleAnimationsToLoad
-    Offset: '0xd48'
+    Offset: '0xdc0'
     Size: '0x60'
     Type: struct AthenaAnimationAsyncLoadedObjectIdleAnimations
   - Name: HandAdditiveToLoad
-    Offset: '0xda8'
+    Offset: '0xe20'
     Size: '0x20'
     Type: assetobject
   - Name: CachedItemAnimations
-    Offset: '0xdc8'
-    Size: '0x3f0'
+    Offset: '0xe40'
+    Size: '0x460'
     Type: struct AthenaAnimationItemAnimationCache
   - Name: ItemFallbackAnimations
-    Offset: '0x11b8'
-    Size: '0x3f0'
+    Offset: '0x12a0'
+    Size: '0x460'
     Type: struct AthenaAnimationItemAnimationCache
+  - Name: Params
+    Offset: '0x1700'
+    Size: '0x40'
+    Type: struct WieldAnimationParams
   - Name: ItemFeatureToggle
-    Offset: '0x15a8'
+    Offset: '0x1740'
     Size: '0xc'
     Type: struct FeatureFlag
-  ClassSize: '0x1648'
+  ClassSize: '0x17e0'
 AthenaAnimationLoadOnDemandItemsAnimgraphStructure:
   Attributes:
   - Name: FishingAnimationsToUse
@@ -4679,49 +4773,53 @@ AthenaAnimationLoadOnDemandItemsAnimgraphStructure:
     Type: struct AthenaAnimationFishingAnimations
   - Name: ItemAnimationsToUse
     Offset: '0x90'
-    Size: '0x2a0'
+    Size: '0x310'
     Type: struct AthenaAnimationBaseItemAnimations
   - Name: EquipAnimationsToUse
-    Offset: '0x330'
+    Offset: '0x3a0'
     Size: '0x40'
     Type: struct AthenaAnimationObjectEquipAnimations
   - Name: LocomotionAnimationsToUse
-    Offset: '0x370'
+    Offset: '0x3e0'
     Size: '0x40'
     Type: struct AthenaAnimationObjectLocomotionAnimations
   - Name: JumpingAnimationsToUse
-    Offset: '0x3b0'
+    Offset: '0x420'
     Size: '0x20'
     Type: struct AthenaAnimationObjectJumpingAnimations
   - Name: IdleAnimationsToUse
-    Offset: '0x3d0'
+    Offset: '0x440'
     Size: '0x18'
     Type: struct AthenaAnimationObjectIdleAnimations
   - Name: HandAdditiveToUse
-    Offset: '0x3e8'
+    Offset: '0x458'
     Size: '0x8'
     Type: class AnimSequence*
   - Name: CurrentWieldedItemID
-    Offset: '0x3f0'
+    Offset: '0x460'
     Size: '0x8'
     Type: class UClass*
+  - Name: Params
+    Offset: '0x470'
+    Size: '0x40'
+    Type: struct WieldAnimationParams
   - Name: ItemAnimationsToLoad
-    Offset: '0x400'
+    Offset: '0x4b8'
     Size: '0x50'
     Type: map
   - Name: PlayerCharacterType
-    Offset: '0x450'
+    Offset: '0x508'
     Size: '0x8'
     Type: class UClass*
   - Name: CurrentItemAnimationData
-    Offset: '0x458'
-    Size: '0x1648'
+    Offset: '0x510'
+    Size: '0x17e0'
     Type: struct AthenaAnimationLoadOnDemandItemsAnimationData
   - Name: DynamicAnimationAllocationTelemtry
-    Offset: '0x1aa0'
+    Offset: '0x1cf0'
     Size: '0x8'
     Type: class DynamicAnimationAllocationTelemtry*
-  ClassSize: '0x1ac0'
+  ClassSize: '0x1d10'
 AthenaAnimationLocomotion:
   Attributes:
   - Name: CharacterVelocity
@@ -5619,21 +5717,21 @@ AthenaAnimationPersistentItemAnimations:
     Type: struct AthenaAnimationObjectEquipAnimations
   - Name: NominatedItemFallbackItemUseAnimations
     Offset: '0x40'
-    Size: '0x2a0'
+    Size: '0x310'
     Type: struct AthenaAnimationBaseItemAnimations
   - Name: NominatedItemFallbackLocomotionAnimations
-    Offset: '0x2e0'
+    Offset: '0x350'
     Size: '0x40'
     Type: struct AthenaAnimationObjectLocomotionAnimations
   - Name: NominatedItemFallbackJumpingAnimations
-    Offset: '0x320'
+    Offset: '0x390'
     Size: '0x20'
     Type: struct AthenaAnimationObjectJumpingAnimations
   - Name: NominatedItemFallbackIdleAnimations
-    Offset: '0x340'
+    Offset: '0x3b0'
     Size: '0x18'
     Type: struct AthenaAnimationObjectIdleAnimations
-  ClassSize: '0x358'
+  ClassSize: '0x3c8'
 AthenaAnimationPetSelectedArrayAnimations:
   Attributes:
   - Name: HeldBaseIdle_A
@@ -7359,10 +7457,10 @@ AtmosphericPressureZoneParametersAndLocation:
 AttachedToObjectActionStateConstructionInfo:
   Attributes:
   - Name: AttachTransform
-    Offset: '0x50'
+    Offset: '0x60'
     Size: '0x30'
     Type: struct Transform
-  ClassSize: '0x80'
+  ClassSize: '0x90'
 AttachedToObjectActionStateParams:
   Attributes:
   - Name: LookAtOffsetParams
@@ -8004,10 +8102,14 @@ BedPartDesc:
 BeingRetractedActionStateConstructionInfo:
   Attributes:
   - Name: RetractingComponent
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x8'
     Type: class SceneComponent*
-  ClassSize: '0x38'
+  - Name: RetainOriginalOrientation
+    Offset: '0x48'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x50'
 BellDesc:
   Attributes:
   - Name: BellMesh
@@ -10190,10 +10292,10 @@ CaptainsLogCrewSessionStatsEntry:
 CaptainsLogInteractableActionStateConstructionInfo:
   Attributes:
   - Name: OwningActor
-    Offset: '0x48'
+    Offset: '0x58'
     Size: '0x8'
     Type: class Actor*
-  ClassSize: '0x50'
+  ClassSize: '0x60'
 CaptainsLogInteractableActionStateParams:
   Attributes:
   - Name: ItemToSpawn
@@ -10527,10 +10629,10 @@ CaptureChatPerformanceTelemetryFragment:
 CapturedByKrakenActionStateConstructionInfo:
   Attributes:
   - Name: Tentacle
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x14'
     Type: struct NetActorPtr
-  ClassSize: '0x48'
+  ClassSize: '0x58'
 CapturedByKrakenActionStateParams:
   Attributes:
   - Name: MovementAlphaXY
@@ -11438,10 +11540,10 @@ ChapterQuests:
 CharacterActionStateConstructionInfo:
   Attributes:
   - Name: CharacterOwner
-    Offset: '0x28'
+    Offset: '0x38'
     Size: '0x8'
     Type: class AthenaCharacter*
-  ClassSize: '0x30'
+  ClassSize: '0x40'
 CharacterFootImpactResult:
   Attributes:
   - Name: HitResult
@@ -11900,18 +12002,18 @@ CinematicShipNetworkEvent:
 ClamberActionStateConstructionInfo:
   Attributes:
   - Name: NormalisedInteractionWidth
-    Offset: '0x48'
+    Offset: '0x58'
     Size: '0x4'
     Type: float
   - Name: ClimbId
-    Offset: '0x4c'
+    Offset: '0x5c'
     Size: '0x1'
     Type: byte
   - Name: ClamberBlendParams
-    Offset: '0x50'
+    Offset: '0x60'
     Size: '0xc'
     Type: struct LadderBlendParams
-  ClassSize: '0x60'
+  ClassSize: '0x70'
 ClamberActionStateParams:
   Attributes:
   - Name: InitialClamberPitch
@@ -12625,6 +12727,17 @@ ClothingChestEquipClothingEvent:
     Size: '0x8'
     Type: class UClass*
   ClassSize: '0x8'
+ClothingChestEquipDisguiseEvent:
+  Attributes:
+  - Name: Desc
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: Index
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x10'
 ClothingChestEquipEmoteEvent:
   Attributes:
   - Name: Desc
@@ -12665,6 +12778,13 @@ ClothingChestUnequipClothingEvent:
     Size: '0x8'
     Type: class UClass*
   ClassSize: '0x8'
+ClothingChestUnequipDisguiseEvent:
+  Attributes:
+  - Name: Desc
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class UClass*
+  ClassSize: '0x8'
 ClothingChestUnequipEmoteEvent:
   Attributes:
   - Name: Desc
@@ -12678,18 +12798,26 @@ ClothingLoadout:
     Offset: '0x0'
     Size: '0x10'
     Type: TArray<class Class*>
-  ClassSize: '0x10'
+  - Name: CachedEmoteItems
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<class Class*>
+  - Name: CachedWalkableEmoteItems
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<class Class*>
+  ClassSize: '0x30'
 ClothingLoadoutContainer:
   Attributes:
   - Name: Loadout
     Offset: '0x0'
-    Size: '0x10'
+    Size: '0x30'
     Type: struct ClothingLoadout
   - Name: HasBeenSet
-    Offset: '0x10'
+    Offset: '0x30'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x18'
+  ClassSize: '0x38'
 ClothingLoadoutUpdatedEvent:
   Attributes:
   - Name: Character
@@ -13035,10 +13163,10 @@ CollectorsChestStoredItemInfo:
 CombinationLockMechanismTriggerActionStateConstructionInfo:
   Attributes:
   - Name: SceneComponent
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x8'
     Type: class SceneComponent*
-  ClassSize: '0x38'
+  ClassSize: '0x48'
 CombinationLockMechanismTriggerActionStateParams:
   Attributes:
   - Name: CameraDockTime
@@ -13401,10 +13529,10 @@ CompanyScreenInformation:
 CompanyShopActionStateConstructionInfo:
   Attributes:
   - Name: NPC
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x14'
     Type: struct NetObjectPtr
-  ClassSize: '0x58'
+  ClassSize: '0x68'
 CompanyShopActionStateParams:
   Attributes:
   - Name: CinematicCameraBlendInTimeSeconds
@@ -14494,22 +14622,22 @@ ControlObjectActionStateSerialisableData:
 ControlPulleyActionStateConstructionInfo:
   Attributes:
   - Name: ControllableType
-    Offset: '0x48'
+    Offset: '0x58'
     Size: '0x1'
     Type: byte
   - Name: AnalogInputId
-    Offset: '0x50'
+    Offset: '0x60'
     Size: '0x8'
     Type: class UClass*
   - Name: ActionStateParamsOverride
-    Offset: '0x58'
+    Offset: '0x68'
     Size: '0x34'
     Type: struct ControlPulleyActionStateParams
   - Name: UseActionStateParamsOverride
-    Offset: '0x8c'
+    Offset: '0x9c'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x90'
+  ClassSize: '0xa0'
 ControlPulleyActionStateParams:
   Attributes:
   - Name: LookAtOffsetParams
@@ -16338,18 +16466,18 @@ DeactivateHatchEvent:
 DeadActionStateConstructionInfo:
   Attributes:
   - Name: FinalBlow
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x30'
     Type: struct DamageInstance
   - Name: DeathType
-    Offset: '0x60'
+    Offset: '0x70'
     Size: '0x1'
     Type: byte
   - Name: RespawnCharacterType
-    Offset: '0x61'
+    Offset: '0x71'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x68'
+  ClassSize: '0x78'
 DeadActionStateParams:
   Attributes:
   - Name: FadeDelay
@@ -17014,14 +17142,14 @@ DistributedGuildActivityMessage:
 DockToObjectActionStateConstructionInfo:
   Attributes:
   - Name: DockToObject
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x14'
     Type: struct NetObjectPtr
   - Name: IsInteractingActorFemale
-    Offset: '0x44'
+    Offset: '0x54'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x48'
+  ClassSize: '0x58'
 DockToObjectActionStateParams:
   Attributes:
   - Name: DockTime
@@ -17198,18 +17326,18 @@ EDTelemetryEvent:
 EjectFromTunnelOfTheDamnedActionStateConstructionInfo:
   Attributes:
   - Name: TunnelId
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x4'
     Type: int
   - Name: TunnelStreamingLevelId
-    Offset: '0x34'
+    Offset: '0x44'
     Size: '0x4'
     Type: int
   - Name: TeleportLocation
-    Offset: '0x38'
+    Offset: '0x48'
     Size: '0x40'
     Type: struct TeleportLocation
-  ClassSize: '0x78'
+  ClassSize: '0x88'
 EjectFromTunnelOfTheDamnedActionStateParams:
   Attributes:
   - Name: FadeDuration
@@ -17849,18 +17977,18 @@ EmissaryValueChangeUIEvent:
 EmoteActionStateConstructionInfo:
   Attributes:
   - Name: EmoteData
-    Offset: '0x30'
-    Size: '0xd0'
+    Offset: '0x40'
+    Size: '0xc8'
     Type: struct EmoteData
   - Name: EmoteIdentifier
-    Offset: '0x100'
+    Offset: '0x108'
     Size: '0x8'
     Type: struct FName
   - Name: ForcedEmote
-    Offset: '0x108'
+    Offset: '0x110'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x110'
+  ClassSize: '0x118'
 EmoteDataEntryFrontend:
   Attributes:
   - Name: EmoteIdent
@@ -17888,13 +18016,13 @@ EmoteFlourishCategoryMapping:
     Type: struct StringAssetReference
   - Name: EmoteData
     Offset: '0x20'
-    Size: '0xd0'
+    Size: '0xc8'
     Type: struct EmoteData
   - Name: PairName
-    Offset: '0xf0'
+    Offset: '0xe8'
     Size: '0x10'
     Type: struct FString
-  ClassSize: '0x100'
+  ClassSize: '0xf8'
 EmptyWaterFromVaultGameServerRequestModel:
   Attributes:
   - Name: ActorId
@@ -18089,26 +18217,26 @@ EndedGuildedSessionEvent:
 EnterTunnelOfTheDamnedActionStateConstructionInfo:
   Attributes:
   - Name: TunnelId
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x4'
     Type: int
   - Name: TunnelStreamingLevelId
-    Offset: '0x34'
+    Offset: '0x44'
     Size: '0x4'
     Type: int
   - Name: TeleportLocation
-    Offset: '0x38'
+    Offset: '0x48'
     Size: '0x40'
     Type: struct TeleportLocation
   - Name: TeleportAudioMode
-    Offset: '0x78'
+    Offset: '0x88'
     Size: '0x1'
     Type: byte
   - Name: WasRevivable
-    Offset: '0x79'
+    Offset: '0x89'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x80'
+  ClassSize: '0x90'
 EnterTunnelOfTheDamnedActionStateParams:
   Attributes:
   - Name: FadeDuration
@@ -18623,6 +18751,13 @@ EventAthenaLocalPlayerFocalUserSet:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
+  ClassSize: '0x1'
+EventAthenaLocalPlayerGamepadTypeChange:
+  Attributes:
+  - Name: GamepadType
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
   ClassSize: '0x1'
 EventAthenaLocalPlayerPirateIdentitySet:
   Attributes:
@@ -20057,6 +20192,13 @@ EventLanternIsLightOnStateChanged:
     Size: '0x1'
     Type: bool
   ClassSize: '0x18'
+EventLocalPlayerEnteredHangingState:
+  Attributes:
+  - Name: HangingPointSupportsThirdPersonCamera
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x1'
 EventLocalPlayerEnteredSittingState:
   Attributes:
   - Name: SeatSupportsThirdPersonCamera
@@ -20157,14 +20299,18 @@ EventMovedByActorStart:
     Size: '0x8'
     Type: class Actor*
   ClassSize: '0x8'
-EventMovedByPortableHarpoonGrappleEnd:
+EventMovedByPortableHarpoonRetractionEnd:
   Attributes:
-  - Name: MovementInstigator
+  - Name: MovedActor
     Offset: '0x0'
     Size: '0x8'
     Type: class Actor*
-  ClassSize: '0x8'
-EventMovedByPortableHarpoonGrappleStart:
+  - Name: MovementInstigator
+    Offset: '0x8'
+    Size: '0x8'
+    Type: class Actor*
+  ClassSize: '0x10'
+EventMovedByPortableHarpoonRetractionStart:
   Attributes:
   - Name: MovementInstigator
     Offset: '0x0'
@@ -20561,6 +20707,17 @@ EventPlayerDockToObjectStart:
     Size: '0x1'
     Type: bool
   ClassSize: '0x18'
+EventPlayerEnteredHangingState:
+  Attributes:
+  - Name: HangingAnimationId
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: HangingPointObject
+    Offset: '0x8'
+    Size: '0x8'
+    Type: class Object*
+  ClassSize: '0x10'
 EventPlayerEnteredIslandVicinity:
   Attributes:
   - Name: Player
@@ -21984,9 +22141,9 @@ EventUserGameSettingsResponse:
   Attributes:
   - Name: CurrentSettings
     Offset: '0x0'
-    Size: '0x210'
+    Size: '0x218'
     Type: struct PersistentUserGameSettings
-  ClassSize: '0x210'
+  ClassSize: '0x218'
 EventUserGameSettingsSetBoolean:
   Attributes:
   - Name: KeyName
@@ -22243,22 +22400,22 @@ EvictPlayerMessage:
 ExitTunnelOfTheDamnedActionStateConstructionInfo:
   Attributes:
   - Name: TunnelLocation
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0xc'
     Type: struct Vector
   - Name: CameraAnim
-    Offset: '0x40'
+    Offset: '0x50'
     Size: '0x8'
     Type: class CameraAnim*
   - Name: CameraBlendCurve
-    Offset: '0x48'
+    Offset: '0x58'
     Size: '0x8'
     Type: class CurveFloat*
   - Name: CheckForMigrationConditions
-    Offset: '0x50'
+    Offset: '0x60'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x58'
+  ClassSize: '0x68'
 ExitTunnelOfTheDamnedActionStateParams:
   Attributes:
   - Name: ClientSetupResponseTimeout
@@ -22354,6 +22511,10 @@ ExplosionInfo:
     Offset: '0x2c'
     Size: '0x1'
     Type: bool
+  - Name: DealFriendlyFireStatuses
+    Offset: '0x2d'
+    Size: '0x1'
+    Type: bool
   - Name: ShipDamageParams
     Offset: '0x30'
     Size: '0x10'
@@ -22404,41 +22565,41 @@ ExplosionInfo:
     Type: float
   - Name: KnockbackParams
     Offset: '0xc8'
-    Size: '0x50'
+    Size: '0x54'
     Type: struct KnockBackInfo
   - Name: ShipSizeKnockbackModifiers
-    Offset: '0x118'
+    Offset: '0x120'
     Size: '0x10'
     Type: TArray<struct ExplosionShipSizeKnockbackModifier>
   - Name: KnockbackInnerRadiusMultiplier
-    Offset: '0x128'
+    Offset: '0x130'
     Size: '0x4'
     Type: float
   - Name: ForceFeedbackEffect
-    Offset: '0x130'
-    Size: '0x8'
-    Type: class ForceFeedbackEffect*
-  - Name: ForceFeedbackEffectLower
     Offset: '0x138'
     Size: '0x8'
     Type: class ForceFeedbackEffect*
-  - Name: ForceFeedbackEffectInnerRadiusMultiplier
+  - Name: ForceFeedbackEffectLower
     Offset: '0x140'
+    Size: '0x8'
+    Type: class ForceFeedbackEffect*
+  - Name: ForceFeedbackEffectInnerRadiusMultiplier
+    Offset: '0x148'
     Size: '0x4'
     Type: float
   - Name: ForceFeedbackTag
-    Offset: '0x144'
+    Offset: '0x14c'
     Size: '0x8'
     Type: struct FName
   - Name: CameraShake
-    Offset: '0x150'
+    Offset: '0x158'
     Size: '0x8'
     Type: class UClass*
   - Name: CameraShakeInnerRadiusMultiplier
-    Offset: '0x158'
+    Offset: '0x160'
     Size: '0x4'
     Type: float
-  ClassSize: '0x160'
+  ClassSize: '0x168'
 ExplosionShipSizeForceToApplyToShipOverride:
   Attributes:
   - Name: FeatureFlag
@@ -23308,6 +23469,10 @@ FireRequest:
     Offset: '0xc0'
     Size: '0x8'
     Type: class Actor*
+  - Name: GravityFalloffTimeScalar
+    Offset: '0xc8'
+    Size: '0x4'
+    Type: float
   ClassSize: '0xd0'
 FireRequestHitActorWorldTransform:
   Attributes:
@@ -23345,14 +23510,14 @@ FireWeaponOnServerRpc:
 FiredFromActorActionStateConstructionInfo:
   Attributes:
   - Name: FiringActor
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x14'
     Type: struct NetActorPtr
   - Name: LaunchVelocity
-    Offset: '0x44'
+    Offset: '0x54'
     Size: '0xc'
     Type: struct Vector
-  ClassSize: '0x50'
+  ClassSize: '0x60'
 FiredFromActorActionStateParams:
   Attributes:
   - Name: GravityScaleOverride
@@ -23433,14 +23598,14 @@ FirstInteractableTelemetryEvent:
 FirstPersonAnimaticActionStateConstructionInfo:
   Attributes:
   - Name: FirstPersonAnimaticSettings
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x2c'
     Type: struct FirstPersonAnimaticSettings
   - Name: FirstPersonAnimaticDockInfo
-    Offset: '0x60'
+    Offset: '0x70'
     Size: '0x20'
     Type: struct FirstPersonAnimaticDockInfo
-  ClassSize: '0x80'
+  ClassSize: '0x90'
 FirstPersonAnimaticDockInfo:
   Attributes:
   - Name: Dockable
@@ -25020,6 +25185,13 @@ GenericNotificationUIEvent:
     Size: '0x1'
     Type: bool
   ClassSize: '0xb0'
+GenericNotificationUINetworkEvent:
+  Attributes:
+  - Name: PopUpMessageDescDataAsset
+    Offset: '0x18'
+    Size: '0x10'
+    Type: struct StringAssetReference
+  ClassSize: '0x28'
 GenericPartDesc:
   Attributes:
   - Name: Mesh
@@ -26593,6 +26765,60 @@ HandOnWheelAnimationRanges:
     Size: '0x10'
     Type: struct FloatRange
   ClassSize: '0x40'
+HangingActionStateConstructionInfo:
+  Attributes:
+  - Name: HangingActionStateParams
+    Offset: '0x58'
+    Size: '0x78'
+    Type: struct HangingActionStateParams
+  ClassSize: '0xd0'
+HangingActionStateParams:
+  Attributes:
+  - Name: ControllableObjectType
+    Offset: '0x18'
+    Size: '0x1'
+    Type: byte
+  - Name: HangingAnimationId
+    Offset: '0x20'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: OnSitSfx
+    Offset: '0x28'
+    Size: '0x8'
+    Type: class WwiseEvent*
+  - Name: OnStandSfx
+    Offset: '0x30'
+    Size: '0x8'
+    Type: class WwiseEvent*
+  - Name: SeatPool
+    Offset: '0x38'
+    Size: '0x8'
+    Type: class WwiseObjectPoolWrapper*
+  - Name: AllowInteractWithOtherObjectsWhileSitting
+    Offset: '0x40'
+    Size: '0x1'
+    Type: bool
+  - Name: AllowedInteractableTypes
+    Offset: '0x48'
+    Size: '0x10'
+    Type: TArray<class Class*>
+  - Name: AllowedInteractionNotificationInputIds
+    Offset: '0x58'
+    Size: '0x10'
+    Type: TArray<class Class*>
+  - Name: DisableDisengageInput
+    Offset: '0x68'
+    Size: '0x1'
+    Type: bool
+  - Name: ThirdPersonCameraEnabled
+    Offset: '0x69'
+    Size: '0x1'
+    Type: bool
+  - Name: ThirdPersonCameraParams
+    Offset: '0x70'
+    Size: '0x8'
+    Type: class AthenaSpringArmComponentParams*
+  ClassSize: '0x78'
 HarpoonItemSlot:
   Attributes:
   - Name: Location
@@ -26738,10 +26964,10 @@ HiddenActionStateParams:
 HideInObjectActionStateConstructionInfo:
   Attributes:
   - Name: LoadableObject
-    Offset: '0x48'
+    Offset: '0x58'
     Size: '0x14'
     Type: struct NetActorPtr
-  ClassSize: '0x60'
+  ClassSize: '0x70'
 HideInObjectActionStateParams:
   Attributes:
   - Name: PreventedHealthChanges
@@ -27664,10 +27890,10 @@ IndividualMeshScoringToRemove:
 IngestedByKrakenActionStateConstructionInfo:
   Attributes:
   - Name: Tentacle
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x14'
     Type: struct NetActorPtr
-  ClassSize: '0x48'
+  ClassSize: '0x58'
 IngestedByKrakenActionStateParams:
   Attributes:
   - Name: StowItemsProgressThreshold
@@ -27800,29 +28026,29 @@ IntentSignChangedEvent:
 InteractLoadableActionStateConstructionInfo:
   Attributes:
   - Name: LoadableObject
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x14'
     Type: struct NetActorPtr
   - Name: Interactable
-    Offset: '0x44'
+    Offset: '0x54'
     Size: '0x14'
     Type: struct NetActorPtr
   - Name: ControllingLoadable
-    Offset: '0x58'
+    Offset: '0x68'
     Size: '0x1'
     Type: bool
   - Name: DefaultItemDesc
-    Offset: '0x60'
+    Offset: '0x70'
     Size: '0x8'
     Type: class UClass*
-  ClassSize: '0x68'
+  ClassSize: '0x78'
 InteractObjectActionStateConstructionInfo:
   Attributes:
   - Name: InteractObject
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x14'
     Type: struct NetSubObjectPtr
-  ClassSize: '0x48'
+  ClassSize: '0x58'
 InteractOnServerRpc:
   Attributes:
   - Name: Interactable
@@ -29454,7 +29680,11 @@ KnockBackInfo:
     Offset: '0x44'
     Size: '0xc'
     Type: struct Vector
-  ClassSize: '0x50'
+  - Name: DisableAirControl
+    Offset: '0x50'
+    Size: '0x1'
+    Type: bool
+  ClassSize: '0x54'
 KrakenAnimatedTentacleCollisionSegment:
   Attributes:
   - Name: BottomBoneIndex
@@ -30041,10 +30271,10 @@ LaunchableProjectileState:
 LaunchedFromKrakenActionStateConstructionInfo:
   Attributes:
   - Name: Tentacle
-    Offset: '0x50'
+    Offset: '0x60'
     Size: '0x14'
     Type: struct NetActorPtr
-  ClassSize: '0x68'
+  ClassSize: '0x78'
 LeaderboardScoreUpdateMessage:
   Attributes:
   - Name: PirateIdentity
@@ -30082,10 +30312,10 @@ Leak:
 LeaveGhostShipActionStateConstructionInfo:
   Attributes:
   - Name: GhostShipLevelId
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x4'
     Type: int
-  ClassSize: '0x38'
+  ClassSize: '0x48'
 LeaveGhostShipActionStateParams:
   Attributes:
   - Name: FadeDelay
@@ -31320,13 +31550,13 @@ Loadout:
     Type: struct ItemLoadout
   - Name: ClothingLoadout
     Offset: '0x20'
-    Size: '0x10'
+    Size: '0x30'
     Type: struct ClothingLoadout
   - Name: PetLoadout
-    Offset: '0x30'
+    Offset: '0x50'
     Size: '0x18'
     Type: struct PetLoadout
-  ClassSize: '0x48'
+  ClassSize: '0x68'
 LoadoutCacheEntry:
   Attributes:
   - Name: PirateId
@@ -31335,9 +31565,9 @@ LoadoutCacheEntry:
     Type: struct FString
   - Name: Loadout
     Offset: '0x10'
-    Size: '0x48'
+    Size: '0x68'
     Type: struct Loadout
-  ClassSize: '0x58'
+  ClassSize: '0x78'
 LoadoutCategory:
   Attributes:
   - Name: CategoryName
@@ -31368,13 +31598,13 @@ LoadoutEntry:
     Type: struct PirateIdentity
   - Name: Loadout
     Offset: '0x78'
-    Size: '0x48'
+    Size: '0x68'
     Type: struct Loadout
   - Name: Tag
-    Offset: '0xc0'
+    Offset: '0xe0'
     Size: '0x10'
     Type: struct FString
-  ClassSize: '0xd8'
+  ClassSize: '0xf8'
 LoadoutItemCostResponseModel:
   Attributes:
   - Name: Currency
@@ -32724,18 +32954,18 @@ MeleeAttackMoveSpeedValidationTelemetryEvent:
 MeleeBlockingActionStateConstructionInfo:
   Attributes:
   - Name: WieldedItem
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x14'
     Type: struct NetActorPtr
   - Name: InputID
-    Offset: '0x48'
+    Offset: '0x58'
     Size: '0x8'
     Type: class UClass*
   - Name: BlockMovementLockTime
-    Offset: '0x50'
+    Offset: '0x60'
     Size: '0x4'
     Type: float
-  ClassSize: '0x58'
+  ClassSize: '0x68'
 MeleeWeaponAttackTelemetryEvent:
   Attributes:
   - Name: AttackId
@@ -34110,14 +34340,14 @@ MigratableMPSDFallbackData:
 MigrationActionStateConstructionInfo:
   Attributes:
   - Name: EnableMigrationUI
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x1'
     Type: bool
   - Name: IsCrossLevel
-    Offset: '0x31'
+    Offset: '0x41'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x38'
+  ClassSize: '0x48'
 MigrationActionStateParams:
   Attributes:
   - Name: ClientSetupResponseTimeout
@@ -34222,10 +34452,10 @@ MilestoneData:
 ModalInteractionActionStateConstructionInfo:
   Attributes:
   - Name: InteractionProxy
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x14'
     Type: struct NetActorPtr
-  ClassSize: '0x48'
+  ClassSize: '0x58'
 ModalInteractionActionStateSerialisableData:
   Attributes:
   - Name: Interaction
@@ -34382,33 +34612,33 @@ MoveSpeedValidationFailedTelemetryEvent:
 MoveToLocationActionStateConstructionInfo:
   Attributes:
   - Name: RelativeToComponent
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x8'
     Type: class SceneComponent*
   - Name: TargetLocation
-    Offset: '0x38'
+    Offset: '0x48'
     Size: '0xc'
     Type: struct Vector
-  ClassSize: '0x48'
+  ClassSize: '0x58'
 MovedByActorActionStateConstructionInfo:
   Attributes:
   - Name: MovementSourceActor
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x14'
     Type: struct NetActorPtr
   - Name: StartLocation
-    Offset: '0x44'
+    Offset: '0x54'
     Size: '0xc'
     Type: struct Vector
   - Name: TargetComponent
-    Offset: '0x50'
+    Offset: '0x60'
     Size: '0x8'
     Type: class SceneComponent*
   - Name: TargetRelativeLocation
-    Offset: '0x58'
+    Offset: '0x68'
     Size: '0xc'
     Type: struct Vector
-  ClassSize: '0x68'
+  ClassSize: '0x78'
 MovedByActorActionStateParams:
   Attributes:
   - Name: InitialSpeed
@@ -34438,30 +34668,38 @@ MovedByActorActionStateParams:
   ClassSize: '0x18'
 MovedByPortableHarpoonGrappleActionStateConstructionInfo:
   Attributes:
-  - Name: TargetSurfaceNormal
-    Offset: '0x68'
+  - Name: TargetRelativeSurfaceNormal
+    Offset: '0x78'
     Size: '0xc'
     Type: struct Vector
-  ClassSize: '0x78'
+  ClassSize: '0x88'
 MovedByPortableHarpoonGrappleActionStateParams:
   Attributes:
   - Name: MaxHorizontalSpeedToInheritOnCompletion
     Offset: '0x18'
     Size: '0x4'
     Type: float
-  - Name: UpwardVaultSpeedOnCompletion
+  - Name: OnlyInheritHorizontalSpeedWhenVaulting
     Offset: '0x1c'
-    Size: '0x4'
-    Type: float
-  - Name: MinTargetSurfaceAngleForVault
+    Size: '0x1'
+    Type: bool
+  - Name: UpwardVaultSpeedOnCompletion
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: MaxDirectionAngleForVault
+  - Name: MinTargetSurfaceAngleForVault
     Offset: '0x24'
     Size: '0x4'
     Type: float
-  ClassSize: '0x28'
+  - Name: MaxDirectionToSurfaceNormalAngleForVault
+    Offset: '0x28'
+    Size: '0x4'
+    Type: float
+  - Name: MaxVerticalDirectionAngleForVault
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x30'
 MultiShopResponse:
   Attributes:
   - Name: ShopType
@@ -37505,20 +37743,28 @@ PersistentUserGameSettings:
   - Name: UniversalOverlayOpacityPercent
     Offset: '0x1fc'
     Size: '0x4'
-    Type: float
+    Type: int
   - Name: UniversalOverlayScalePercent
     Offset: '0x200'
     Size: '0x4'
-    Type: float
+    Type: int
   - Name: UniversalOverlayAnchorXPercent
     Offset: '0x204'
     Size: '0x4'
-    Type: float
+    Type: int
   - Name: UniversalOverlayAnchorYPercent
     Offset: '0x208'
     Size: '0x4'
-    Type: float
-  ClassSize: '0x210'
+    Type: int
+  - Name: UniversalOverlayFontSize
+    Offset: '0x20c'
+    Size: '0x4'
+    Type: int
+  - Name: UniversalOverlayFontStyle
+    Offset: '0x210'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x218'
 PetAnimationCycle:
   Attributes:
   - Name: In
@@ -38221,10 +38467,10 @@ PickedUpItemFromChestEvent:
 PickupObjectActionStateConstructionInfo:
   Attributes:
   - Name: PickupableObject
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x14'
     Type: struct NetActorPtr
-  ClassSize: '0x48'
+  ClassSize: '0x58'
 PinnedAccoladeResultArray:
   Attributes:
   - Name: Results
@@ -39697,6 +39943,28 @@ PlayerDeemedInactiveTelemetryEvent:
     Size: '0x78'
     Type: struct PirateIdentity
   ClassSize: '0x78'
+PlayerDefeatedReapersTributeShip:
+  Attributes:
+  - Name: ControllingCrewId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct Guid
+  - Name: ReapersTributeShip
+    Offset: '0x10'
+    Size: '0x8'
+    Type: class Actor*
+  ClassSize: '0x18'
+PlayerDefeatedReapersTributeShipBoxedRpc:
+  Attributes:
+  - Name: ControllingCrewId
+    Offset: '0x18'
+    Size: '0x10'
+    Type: struct Guid
+  - Name: ReapersTributeShip
+    Offset: '0x28'
+    Size: '0x8'
+    Type: class Actor*
+  ClassSize: '0x30'
 PlayerDepartLocationTelemetryEvent:
   Attributes:
   - Name: LocationName
@@ -40001,6 +40269,13 @@ PlayerGameStartVoyageTelemetryEvent:
     Size: '0x1'
     Type: bool
   ClassSize: '0x28'
+PlayerGamepadTypeTelemetryEvent:
+  Attributes:
+  - Name: GamepadType
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x1'
 PlayerGeneratedMapDisplayData:
   Attributes:
   - Name: CrewId
@@ -40424,6 +40699,57 @@ PlayerModerationParams:
     Size: '0x4'
     Type: float
   ClassSize: '0xc'
+PlayerModerationReportReason:
+  Attributes:
+  - Name: Type
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct FString
+  ClassSize: '0x10'
+PlayerModerationReportResultBoxedRPC:
+  Attributes:
+  - Name: PlayerModerationResponse
+    Offset: '0x18'
+    Size: '0x18'
+    Type: struct PlayerModerationReportSubmitResponse
+  ClassSize: '0x30'
+PlayerModerationReportSubmitBoxedRPC:
+  Attributes:
+  - Name: RequestedReportPayload
+    Offset: '0x18'
+    Size: '0x40'
+    Type: struct PlayerModerationReportSubmitRequest
+  ClassSize: '0x58'
+PlayerModerationReportSubmitRequest:
+  Attributes:
+  - Name: ReportingPlayerGamerTag
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct FString
+  - Name: ReportingPlayerXUID
+    Offset: '0x10'
+    Size: '0x10'
+    Type: struct FString
+  - Name: ReportedPlayers
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<struct PlayerModerationReportablePlayerDetails>
+  - Name: Reasons
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<String>
+  ClassSize: '0x40'
+PlayerModerationReportSubmitResponse:
+  Attributes:
+  - Name: Success
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: ReferenceCode
+    Offset: '0x8'
+    Size: '0x10'
+    Type: struct FString
+  ClassSize: '0x18'
 PlayerModerationReportablePlayerDetails:
   Attributes:
   - Name: ReportableGamerTag
@@ -40462,6 +40788,17 @@ PlayerModerationReportablePlayers:
     Size: '0x10'
     Type: struct FString
   ClassSize: '0x40'
+PlayerModerationReportingPlayerDetails:
+  Attributes:
+  - Name: GamerTag
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct FString
+  - Name: Xuid
+    Offset: '0x10'
+    Size: '0x10'
+    Type: struct FString
+  ClassSize: '0x20'
 PlayerMusicController:
   Attributes:
   - Name: PlayerMusicParams
@@ -40723,6 +41060,25 @@ PlayerRelevancyRequest:
     Size: '0x4'
     Type: float
   ClassSize: '0x90'
+PlayerReportPayload:
+  Attributes:
+  - Name: ReportingPlayer
+    Offset: '0x0'
+    Size: '0x20'
+    Type: struct PlayerModerationReportingPlayerDetails
+  - Name: ReportedPlayers
+    Offset: '0x20'
+    Size: '0x10'
+    Type: TArray<struct PlayerModerationReportablePlayerDetails>
+  - Name: Reasons
+    Offset: '0x30'
+    Size: '0x10'
+    Type: TArray<struct PlayerModerationReportReason>
+  - Name: ServerSessionId
+    Offset: '0x40'
+    Size: '0x10'
+    Type: struct FString
+  ClassSize: '0x50'
 PlayerRequiresMermaidTelemetryEvent:
   Attributes:
   - Name: Reason
@@ -42046,14 +42402,14 @@ ProjectileHitEvent:
     Type: class UClass*
   - Name: Effects
     Offset: '0xe0'
-    Size: '0x68'
+    Size: '0x6c'
     Type: struct WeaponProjectileEffectParams
   - Name: InitialPosition
-    Offset: '0x148'
+    Offset: '0x14c'
     Size: '0xc'
     Type: struct Vector
   - Name: TelemetryAttackId
-    Offset: '0x154'
+    Offset: '0x158'
     Size: '0x10'
     Type: struct Guid
   - Name: TrailData
@@ -42371,6 +42727,14 @@ ProjectileHitRegistrationTelemetry:
     Offset: '0x1a8'
     Size: '0x1'
     Type: byte
+  - Name: IsCrouchingOnClient
+    Offset: '0x1a9'
+    Size: '0x1'
+    Type: bool
+  - Name: IsRewindCrouching
+    Offset: '0x1aa'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0x1b0'
 ProjectileHitScanPerWeaponMeshPairings:
   Attributes:
@@ -42399,13 +42763,13 @@ ProjectileHitScanVFX:
     Type: struct Projectile
   - Name: AmmoParams
     Offset: '0x20'
-    Size: '0xc0'
+    Size: '0xd0'
     Type: struct WeaponProjectileParams
   - Name: DamagerType
-    Offset: '0xe0'
+    Offset: '0xf0'
     Size: '0x8'
     Type: class UClass*
-  ClassSize: '0x100'
+  ClassSize: '0x110'
 ProjectileHitTelemetryEvent:
   Attributes:
   - Name: AttackId
@@ -42486,17 +42850,17 @@ ProjectileQueuedEffect:
     Type: struct HitResult
   - Name: Effects
     Offset: '0x84'
-    Size: '0x68'
+    Size: '0x6c'
     Type: struct WeaponProjectileEffectParams
   - Name: InitialShootingPosition
-    Offset: '0xec'
+    Offset: '0xf0'
     Size: '0xc'
     Type: struct Vector
   - Name: DamagerType
-    Offset: '0xf8'
+    Offset: '0x100'
     Size: '0x8'
     Type: class UClass*
-  ClassSize: '0x100'
+  ClassSize: '0x108'
 ProjectileServiceClientProjectileHitVolumeImpact:
   Attributes:
   - Name: TimeStamp
@@ -42621,6 +42985,10 @@ ProjectileServiceTelemetryHitTrackingRpc:
     Offset: '0xbc'
     Size: '0x1'
     Type: byte
+  - Name: IsCrouching
+    Offset: '0xbd'
+    Size: '0x1'
+    Type: bool
   ClassSize: '0xc0'
 ProjectileServiceUpdateRewindFailedEvent:
   Attributes:
@@ -43208,129 +43576,129 @@ ProjectileWeaponParameters:
     Type: class UClass*
   - Name: AmmoParams
     Offset: '0x80'
-    Size: '0xc0'
+    Size: '0xd0'
     Type: struct WeaponProjectileParams
-  - Name: InheritWielderVelocity
-    Offset: '0x140'
-    Size: '0x1'
-    Type: bool
-  - Name: UsesHoming
-    Offset: '0x141'
-    Size: '0x1'
-    Type: bool
-  - Name: HomingDegreesPerSecond
-    Offset: '0x144'
-    Size: '0x4'
-    Type: float
-  - Name: HomingConeAngle
-    Offset: '0x148'
-    Size: '0x4'
-    Type: float
-  - Name: UsesScope
-    Offset: '0x14c'
-    Size: '0x1'
-    Type: bool
-  - Name: ZoomedRecoilDurationIncrease
+  - Name: InheritWielderVelocityMultiplier
     Offset: '0x150'
     Size: '0x4'
     Type: float
-  - Name: SecondsUntilZoomStarts
+  - Name: UsesHoming
     Offset: '0x154'
-    Size: '0x4'
-    Type: float
-  - Name: SecondsUntilPostStarts
+    Size: '0x1'
+    Type: bool
+  - Name: HomingDegreesPerSecond
     Offset: '0x158'
     Size: '0x4'
     Type: float
-  - Name: WeaponFiredAINoiseRange
+  - Name: HomingConeAngle
     Offset: '0x15c'
     Size: '0x4'
     Type: float
-  - Name: MaximumRequestPositionDelta
+  - Name: UsesScope
     Offset: '0x160'
-    Size: '0x4'
-    Type: float
-  - Name: MaximumRequestAngleDelta
+    Size: '0x1'
+    Type: bool
+  - Name: ZoomedRecoilDurationIncrease
     Offset: '0x164'
     Size: '0x4'
     Type: float
-  - Name: TimeoutTolerance
+  - Name: SecondsUntilZoomStarts
     Offset: '0x168'
     Size: '0x4'
     Type: float
-  - Name: AimingMoveSpeedScalar
+  - Name: SecondsUntilPostStarts
     Offset: '0x16c'
     Size: '0x4'
     Type: float
-  - Name: AimSensitivitySettingCategory
+  - Name: WeaponFiredAINoiseRange
     Offset: '0x170'
-    Size: '0x1'
-    Type: byte
-  - Name: InAimFOV
+    Size: '0x4'
+    Type: float
+  - Name: MaximumRequestPositionDelta
     Offset: '0x174'
     Size: '0x4'
     Type: float
-  - Name: BlendSpeed
+  - Name: MaximumRequestAngleDelta
     Offset: '0x178'
     Size: '0x4'
     Type: float
-  - Name: DryFireSfx
+  - Name: TimeoutTolerance
+    Offset: '0x17c'
+    Size: '0x4'
+    Type: float
+  - Name: AimingMoveSpeedScalar
     Offset: '0x180'
+    Size: '0x4'
+    Type: float
+  - Name: AimSensitivitySettingCategory
+    Offset: '0x184'
+    Size: '0x1'
+    Type: byte
+  - Name: InAimFOV
+    Offset: '0x188'
+    Size: '0x4'
+    Type: float
+  - Name: BlendSpeed
+    Offset: '0x18c'
+    Size: '0x4'
+    Type: float
+  - Name: DryFireSfx
+    Offset: '0x190'
     Size: '0x8'
     Type: class WwiseEvent*
   - Name: EndOfBulletsNotificationSfx
-    Offset: '0x188'
+    Offset: '0x198'
     Size: '0x8'
     Type: class WwiseEvent*
   - Name: AudioEmitterParameters
-    Offset: '0x190'
+    Offset: '0x1a0'
     Size: '0x10'
     Type: struct AudioEmitterParameters
   - Name: RumbleTag
-    Offset: '0x1a0'
+    Offset: '0x1b0'
     Size: '0x8'
     Type: struct FName
   - Name: KnockbackEnabled
-    Offset: '0x1a8'
+    Offset: '0x1b8'
     Size: '0x1'
     Type: bool
   - Name: KnockbackParams
-    Offset: '0x1ac'
-    Size: '0x50'
+    Offset: '0x1bc'
+    Size: '0x54'
     Type: struct KnockBackInfo
   - Name: StunEnabled
-    Offset: '0x1fc'
-    Size: '0x1'
-    Type: bool
-  - Name: StunDuration
-    Offset: '0x200'
-    Size: '0x4'
-    Type: float
-  - Name: TargetingOffset
-    Offset: '0x204'
-    Size: '0xc'
-    Type: struct Vector
-  - Name: OverridePlayerCharacterInterpolationConeAngleAndDistanceWhenAiming
     Offset: '0x210'
     Size: '0x1'
     Type: bool
-  - Name: OverridePlayerCharacterInterpolationConeAngleAndDistanceDuration
+  - Name: StunDuration
     Offset: '0x214'
     Size: '0x4'
     Type: float
-  - Name: PlayerCharacterInterpolationConeAngleOverride
+  - Name: TargetingOffset
     Offset: '0x218'
+    Size: '0xc'
+    Type: struct Vector
+  - Name: OverridePlayerCharacterInterpolationConeAngleAndDistanceWhenAiming
+    Offset: '0x224'
+    Size: '0x1'
+    Type: bool
+  - Name: OverridePlayerCharacterInterpolationConeAngleAndDistanceDuration
+    Offset: '0x228'
+    Size: '0x4'
+    Type: float
+  - Name: PlayerCharacterInterpolationConeAngleOverride
+    Offset: '0x22c'
     Size: '0x4'
     Type: float
   - Name: PlayerCharacterInterpolationDistanceOverride
-    Offset: '0x21c'
+    Offset: '0x230'
     Size: '0x4'
     Type: float
   - Name: AdaptiveTriggerFeedbackEnabled
-    Offset: '0x220'
+    Offset: '0x234'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x228'
+  ClassSize: '0x238'
 ProjectileWeaponQuickSwitchTimingTelemetryEvent:
   Attributes:
   - Name: OtherWeaponFireTimestamp
@@ -45084,27 +45452,31 @@ RadialInstance:
     Offset: '0x60'
     Size: '0x8'
     Type: class RadialAction*
-  - Name: InputComponent
+  - Name: OpenAlternateRadialInstanceAction
     Offset: '0x68'
+    Size: '0x8'
+    Type: class RadialAction*
+  - Name: InputComponent
+    Offset: '0x70'
     Size: '0x8'
     Type: class RadialManagerInputComponent*
   - Name: ShouldActionsUpdateWhenContextChanges
-    Offset: '0x70'
+    Offset: '0x78'
     Size: '0x1'
     Type: bool
   - Name: ShouldContentUpdateWhenContextChanges
-    Offset: '0x71'
+    Offset: '0x79'
     Size: '0x1'
     Type: bool
   - Name: ShouldRadialCloseWhenWieldingNewItem
-    Offset: '0x72'
+    Offset: '0x7a'
     Size: '0x1'
     Type: bool
   - Name: ShouldRadialCloseWhenStowingWieldedItem
-    Offset: '0x73'
+    Offset: '0x7b'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x78'
+  ClassSize: '0x80'
 RadialInventoryCenterUpdated:
   Attributes:
   - Name: X
@@ -45138,9 +45510,9 @@ RadialRuleInstanceMapping:
     Type: class RadialCreationRuleAsset*
   - Name: Instance
     Offset: '0x8'
-    Size: '0x78'
+    Size: '0x80'
     Type: struct RadialInstance
-  ClassSize: '0x80'
+  ClassSize: '0x88'
 RainZoneParameters:
   Attributes:
   - Name: OuterRadius
@@ -45422,6 +45794,28 @@ ReapersTributeShipCrewOwnershipChanged:
     Size: '0x10'
     Type: struct Guid
   ClassSize: '0x18'
+ReapersTributeShipCrewTributeChanged:
+  Attributes:
+  - Name: NewTributeCount
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: OldTributeCount
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x8'
+ReapersTributeShipCrewTributeChangedBoxedRpc:
+  Attributes:
+  - Name: NewTributeCount
+    Offset: '0x18'
+    Size: '0x4'
+    Type: int
+  - Name: OldTributeCount
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x20'
 ReapersTributeShipEventStateChanged:
   Attributes:
   - Name: OldEventState
@@ -45433,6 +45827,13 @@ ReapersTributeShipEventStateChanged:
     Size: '0x1'
     Type: byte
   ClassSize: '0x2'
+ReapersTributeShipHandInVotesCancelledEvent:
+  Attributes:
+  - Name: OldVoters
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<class PlayerState*>
+  ClassSize: '0x10'
 ReapersTributeShipHandedInTelemetryEvent:
   Attributes:
   - Name: RitualsCompleted
@@ -46150,283 +46551,291 @@ RemotePreferences:
   - Name: UniversalOverlayOpacityPercent
     Offset: '0x12c'
     Size: '0x4'
-    Type: float
+    Type: int
   - Name: UniversalOverlayScalePercent
     Offset: '0x130'
     Size: '0x4'
-    Type: float
+    Type: int
   - Name: UniversalOverlayAnchorXPercent
     Offset: '0x134'
     Size: '0x4'
-    Type: float
-  - Name: UniversalOverlayAnchorYPercent
+    Type: int
+  - Name: UniversalOverlayFontSize
     Offset: '0x138'
+    Size: '0x4'
+    Type: int
+  - Name: UniversalOverlayFontStyle
+    Offset: '0x13c'
+    Size: '0x4'
+    Type: int
+  - Name: UniversalOverlayAnchorYPercent
+    Offset: '0x140'
     Size: '0x4'
     Type: float
   - Name: EscapeAsBackAccessibilityOption
-    Offset: '0x13c'
+    Offset: '0x144'
     Size: '0x1'
     Type: bool
   - Name: CrossInputPreference
-    Offset: '0x13d'
+    Offset: '0x145'
     Size: '0x1'
     Type: bool
   - Name: AdventureCrossInputPreference
-    Offset: '0x13e'
+    Offset: '0x146'
     Size: '0x1'
     Type: bool
   - Name: AllowCrossPlatformPlayOnJupiter
-    Offset: '0x13f'
+    Offset: '0x147'
     Size: '0x1'
     Type: bool
   - Name: EnableTalkingIndicatorOnJupiter
-    Offset: '0x140'
+    Offset: '0x148'
     Size: '0x1'
     Type: bool
   - Name: AdventureIslandBanners
-    Offset: '0x144'
+    Offset: '0x14c'
     Size: '0x4'
     Type: int
   - Name: ArenaIslandBanners
-    Offset: '0x148'
-    Size: '0x4'
-    Type: int
-  - Name: OutpostLocationBanners
-    Offset: '0x14c'
-    Size: '0x1'
-    Type: bool
-  - Name: UseSingleStick
     Offset: '0x150'
     Size: '0x4'
     Type: int
-  - Name: UseSingleStickSettingsApplied
+  - Name: OutpostLocationBanners
     Offset: '0x154'
-    Size: '0x4'
-    Type: int
-  - Name: UseSingleStickCameraToggle
+    Size: '0x1'
+    Type: bool
+  - Name: UseSingleStick
     Offset: '0x158'
     Size: '0x4'
     Type: int
-  - Name: DisableControllerOnPC
+  - Name: UseSingleStickSettingsApplied
     Offset: '0x15c'
+    Size: '0x4'
+    Type: int
+  - Name: UseSingleStickCameraToggle
+    Offset: '0x160'
+    Size: '0x4'
+    Type: int
+  - Name: DisableControllerOnPC
+    Offset: '0x164'
     Size: '0x1'
     Type: bool
   - Name: RecenterMouseInMenus
-    Offset: '0x15d'
+    Offset: '0x165'
     Size: '0x1'
     Type: bool
   - Name: AutoFloatInWater
-    Offset: '0x15e'
+    Offset: '0x166'
     Size: '0x1'
     Type: bool
   - Name: DisablePirateToast
-    Offset: '0x15f'
+    Offset: '0x167'
     Size: '0x1'
     Type: bool
   - Name: DisableShipToast
-    Offset: '0x160'
-    Size: '0x1'
-    Type: bool
-  - Name: PushToTalkMode
-    Offset: '0x164'
-    Size: '0x4'
-    Type: int
-  - Name: CircularUINavigation
     Offset: '0x168'
     Size: '0x1'
     Type: bool
-  - Name: Enable120Hz
-    Offset: '0x169'
-    Size: '0x1'
-    Type: bool
-  - Name: AlwaysSkipMapTableAnimation
-    Offset: '0x16a'
-    Size: '0x1'
-    Type: bool
-  - Name: AudioMonoMix
-    Offset: '0x16b'
-    Size: '0x1'
-    Type: bool
-  - Name: AudioOutputHeadphones
+  - Name: PushToTalkMode
     Offset: '0x16c'
-    Size: '0x1'
-    Type: bool
-  - Name: DisableSeasonsNotifications
-    Offset: '0x16d'
-    Size: '0x1'
-    Type: bool
-  - Name: AllowCrewToCustomiseCaptainedShip
-    Offset: '0x16e'
-    Size: '0x1'
-    Type: bool
-  - Name: EnableTutorialAttractAnimation
-    Offset: '0x16f'
-    Size: '0x1'
-    Type: bool
-  - Name: DisableInviteNotifications
+    Size: '0x4'
+    Type: int
+  - Name: CircularUINavigation
     Offset: '0x170'
     Size: '0x1'
     Type: bool
-  - Name: ControlledTextAlignment
+  - Name: Enable120Hz
     Offset: '0x171'
     Size: '0x1'
     Type: bool
-  - Name: ControlledLineHeight
+  - Name: AlwaysSkipMapTableAnimation
     Offset: '0x172'
     Size: '0x1'
     Type: bool
-  - Name: OtherCrewsMuteState
+  - Name: AudioMonoMix
+    Offset: '0x173'
+    Size: '0x1'
+    Type: bool
+  - Name: AudioOutputHeadphones
     Offset: '0x174'
+    Size: '0x1'
+    Type: bool
+  - Name: DisableSeasonsNotifications
+    Offset: '0x175'
+    Size: '0x1'
+    Type: bool
+  - Name: AllowCrewToCustomiseCaptainedShip
+    Offset: '0x176'
+    Size: '0x1'
+    Type: bool
+  - Name: EnableTutorialAttractAnimation
+    Offset: '0x177'
+    Size: '0x1'
+    Type: bool
+  - Name: DisableInviteNotifications
+    Offset: '0x178'
+    Size: '0x1'
+    Type: bool
+  - Name: ControlledTextAlignment
+    Offset: '0x179'
+    Size: '0x1'
+    Type: bool
+  - Name: ControlledLineHeight
+    Offset: '0x17a'
+    Size: '0x1'
+    Type: bool
+  - Name: OtherCrewsMuteState
+    Offset: '0x17c'
     Size: '0x4'
     Type: int
   - Name: NauticalNarrationEnabled
-    Offset: '0x178'
+    Offset: '0x180'
     Size: '0x4'
     Type: int
   - Name: NarrateInteractableText
-    Offset: '0x17c'
+    Offset: '0x184'
     Size: '0x1'
     Type: bool
   - Name: NarrateInteractableButtons
-    Offset: '0x17d'
+    Offset: '0x185'
     Size: '0x1'
     Type: bool
   - Name: IgnoreDisabledInteractables
-    Offset: '0x17e'
+    Offset: '0x186'
     Size: '0x1'
     Type: bool
   - Name: FishNameplateNarrationEnabled
-    Offset: '0x17f'
+    Offset: '0x187'
     Size: '0x1'
     Type: bool
   - Name: UseContinuousNarration
-    Offset: '0x180'
-    Size: '0x1'
-    Type: bool
-  - Name: ContinuousNarrationDelay
-    Offset: '0x184'
-    Size: '0x4'
-    Type: float
-  - Name: DisableFlashes
     Offset: '0x188'
     Size: '0x1'
     Type: bool
+  - Name: ContinuousNarrationDelay
+    Offset: '0x18c'
+    Size: '0x4'
+    Type: float
+  - Name: DisableFlashes
+    Offset: '0x190'
+    Size: '0x1'
+    Type: bool
   - Name: DisableBlur
-    Offset: '0x189'
+    Offset: '0x191'
     Size: '0x1'
     Type: bool
   - Name: DisableScreenShake
-    Offset: '0x18a'
+    Offset: '0x192'
     Size: '0x1'
     Type: bool
   - Name: DisableOnScreenEffects
-    Offset: '0x18b'
+    Offset: '0x193'
     Size: '0x1'
     Type: bool
   - Name: EnchantedCompassProximityAnnouncerEnabled
-    Offset: '0x18c'
-    Size: '0x1'
-    Type: bool
-  - Name: DisableRats
-    Offset: '0x18d'
-    Size: '0x1'
-    Type: bool
-  - Name: EnableSqueakyWheel
-    Offset: '0x18e'
-    Size: '0x1'
-    Type: bool
-  - Name: SqueakyWheelVolume
-    Offset: '0x190'
-    Size: '0x4'
-    Type: float
-  - Name: EnableAimAssistAudio
     Offset: '0x194'
     Size: '0x1'
     Type: bool
-  - Name: RemoteGameLanguage
+  - Name: DisableRats
+    Offset: '0x195'
+    Size: '0x1'
+    Type: bool
+  - Name: EnableSqueakyWheel
+    Offset: '0x196'
+    Size: '0x1'
+    Type: bool
+  - Name: SqueakyWheelVolume
     Offset: '0x198'
     Size: '0x4'
-    Type: int
-  - Name: DisableShipSittingInteractions
+    Type: float
+  - Name: EnableAimAssistAudio
     Offset: '0x19c'
     Size: '0x1'
     Type: bool
+  - Name: RemoteGameLanguage
+    Offset: '0x1a0'
+    Size: '0x4'
+    Type: int
+  - Name: DisableShipSittingInteractions
+    Offset: '0x1a4'
+    Size: '0x1'
+    Type: bool
   - Name: DisableShipTrinketInteractions
-    Offset: '0x19d'
+    Offset: '0x1a5'
     Size: '0x1'
     Type: bool
   - Name: EnableAimAssist
-    Offset: '0x19e'
+    Offset: '0x1a6'
     Size: '0x1'
     Type: bool
   - Name: EnableHipFireSlowdownAimAssist
-    Offset: '0x19f'
+    Offset: '0x1a7'
     Size: '0x1'
     Type: bool
   - Name: EnableHipFireRotationalAimAssist
-    Offset: '0x1a0'
+    Offset: '0x1a8'
     Size: '0x1'
     Type: bool
   - Name: EnableADSSlowdownAimAssist
-    Offset: '0x1a1'
+    Offset: '0x1a9'
     Size: '0x1'
     Type: bool
   - Name: EnableADSRotationalAimAssist
-    Offset: '0x1a2'
+    Offset: '0x1aa'
     Size: '0x1'
     Type: bool
   - Name: EnableAllianceAimAssist
-    Offset: '0x1a3'
+    Offset: '0x1ab'
     Size: '0x1'
     Type: bool
   - Name: ADSSlowdownStrengthAimAssist
-    Offset: '0x1a4'
-    Size: '0x4'
-    Type: float
-  - Name: ADSRotationStrengthAimAssist
-    Offset: '0x1a8'
-    Size: '0x4'
-    Type: float
-  - Name: HipFireSlowdownStrengthAimAssist
     Offset: '0x1ac'
     Size: '0x4'
     Type: float
-  - Name: HipFireRotationStrengthAimAssist
+  - Name: ADSRotationStrengthAimAssist
     Offset: '0x1b0'
     Size: '0x4'
     Type: float
-  - Name: ShouldStabliseZiplines
+  - Name: HipFireSlowdownStrengthAimAssist
     Offset: '0x1b4'
+    Size: '0x4'
+    Type: float
+  - Name: HipFireRotationStrengthAimAssist
+    Offset: '0x1b8'
+    Size: '0x4'
+    Type: float
+  - Name: ShouldStabliseZiplines
+    Offset: '0x1bc'
     Size: '0x1'
     Type: bool
   - Name: DisableGuildInvites
-    Offset: '0x1b5'
+    Offset: '0x1bd'
     Size: '0x1'
     Type: bool
   - Name: DisableGuildActionNotifications
-    Offset: '0x1b6'
+    Offset: '0x1be'
     Size: '0x1'
     Type: bool
   - Name: HighContrastKillNotifications
-    Offset: '0x1b7'
+    Offset: '0x1bf'
     Size: '0x1'
     Type: bool
   - Name: ServerAuthoritativeHitNotifications
-    Offset: '0x1b8'
+    Offset: '0x1c0'
     Size: '0x1'
     Type: bool
   - Name: UIMenusSwapBackAndSelectButtons
-    Offset: '0x1b9'
+    Offset: '0x1c1'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x1c0'
+  ClassSize: '0x1c8'
 RemotePreferencesModel:
   Attributes:
   - Name: Preferences
     Offset: '0x0'
-    Size: '0x1c0'
+    Size: '0x1c8'
     Type: struct RemotePreferences
-  ClassSize: '0x1c0'
+  ClassSize: '0x1c8'
 RemoteProjectileAim:
   Attributes:
   - Name: AimData
@@ -46724,6 +47133,13 @@ ReplyToGuildInviteResponseModel:
 ReplyToGuildInviteSuccessEvent:
   Attributes:
   - Name: GuildId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct FString
+  ClassSize: '0x10'
+ReportedPlayerResponse:
+  Attributes:
+  - Name: ReferenceCode
     Offset: '0x0'
     Size: '0x10'
     Type: struct FString
@@ -53230,10 +53646,10 @@ ShopUpsellOfferResponse:
 ShovelDigActionStateConstructionInfo:
   Attributes:
   - Name: UsableObject
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x14'
     Type: struct NetActorPtr
-  ClassSize: '0x48'
+  ClassSize: '0x58'
 ShovelDigActionStateParams:
   Attributes:
   - Name: SuccessfulPitchBlendCurve
@@ -53341,9 +53757,9 @@ ShowUniversalDescriptorEvent:
     Type: struct UniversalDescription
   - Name: Styling
     Offset: '0x10'
-    Size: '0x18'
+    Size: '0x20'
     Type: struct UniversalDescriptorStyle
-  ClassSize: '0x28'
+  ClassSize: '0x30'
 ShroudBreakerActivateEffectsEvent:
   Attributes:
   - Name: ShroudBreakerId
@@ -53372,6 +53788,17 @@ ShroudBreakerDeactivatedEvent:
     Size: '0x10'
     Type: struct Guid
   ClassSize: '0x10'
+ShroudBreakerSetStageEvent:
+  Attributes:
+  - Name: ShroudBreakerId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct Guid
+  - Name: Stage
+    Offset: '0x10'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x14'
 ShroudBreakerSoftTearDownEvent:
   Attributes:
   - Name: ShroudBreakerId
@@ -53627,18 +54054,18 @@ SinkingShipParams:
 SinkingTunnelOfTheDamnedActionStateConstructionInfo:
   Attributes:
   - Name: TunnelId
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x4'
     Type: int
   - Name: Seed
-    Offset: '0x34'
+    Offset: '0x44'
     Size: '0x4'
     Type: int
   - Name: Entry
-    Offset: '0x38'
+    Offset: '0x48'
     Size: '0x4'
     Type: int
-  ClassSize: '0x40'
+  ClassSize: '0x50'
 SinkingTunnelOfTheDamnedActionStateParams:
   Attributes:
   - Name: LookAtOffsetParams
@@ -53718,10 +54145,10 @@ SiteGeneratorThresholdData:
 SittingActionStateConstructionInfo:
   Attributes:
   - Name: SittingActionStateParams
-    Offset: '0x48'
+    Offset: '0x58'
     Size: '0xa0'
     Type: struct SittingActionStateParams
-  ClassSize: '0xe8'
+  ClassSize: '0xf8'
 SittingActionStateParams:
   Attributes:
   - Name: ControllableObjectType
@@ -53792,14 +54219,14 @@ SittingActionStateParams:
 SittingThirdPersonCameraActionStateConstructionInfo:
   Attributes:
   - Name: SpringArmParams
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x8'
     Type: class AthenaSpringArmComponentParams*
   - Name: VerticalOffsetFactorWhenZoomed
-    Offset: '0x38'
+    Offset: '0x48'
     Size: '0x4'
     Type: float
-  ClassSize: '0x40'
+  ClassSize: '0x50'
 SkeletonAICharacterItemSpecificAudioEvents:
   Attributes:
   - Name: ItemCategories
@@ -54093,10 +54520,10 @@ SkySphereMaterialParams:
 SleepingActionStateConstructionInfo:
   Attributes:
   - Name: SleepingActionStateParams
-    Offset: '0x48'
+    Offset: '0x58'
     Size: '0x50'
     Type: struct SleepingActionStateParams
-  ClassSize: '0x98'
+  ClassSize: '0xa8'
 SleepingActionStateParams:
   Attributes:
   - Name: ControllableObjectType
@@ -55062,6 +55489,82 @@ StorageContainerBackingStore:
     Size: '0x8'
     Type: class ContainerAllowedItemsDataAsset*
   ClassSize: '0x38'
+StorageContainerContentModifier:
+  Attributes:
+  - Name: ExtraContentSpawners
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<struct StorageContainerContentModifierExtraContentSpawnerEntry>
+  - Name: ExtraSpecialEntries
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<class StorageContainerSpecialTypeSelectorEntries*>
+  ClassSize: '0x20'
+StorageContainerContentModifierConditions:
+  Attributes:
+  - Name: Shipwreck
+    Offset: '0x0'
+    Size: '0x1'
+    Type: bool
+  - Name: BarrelsOfPlenty
+    Offset: '0x1'
+    Size: '0x1'
+    Type: bool
+  - Name: IsOnShip
+    Offset: '0x2'
+    Size: '0x1'
+    Type: bool
+  - Name: ReplenishableContainerTypeRestrictions
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<char>
+  - Name: IslandTypeRestrictions
+    Offset: '0x18'
+    Size: '0x10'
+    Type: TArray<char>
+  - Name: SeaRestrictions
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<class Class*>
+  ClassSize: '0x38'
+StorageContainerContentModifierEntry:
+  Attributes:
+  - Name: StoryFlagContainer
+    Offset: '0x0'
+    Size: '0x18'
+    Type: struct StoryFlagContainer
+  - Name: FeatureFlag
+    Offset: '0x18'
+    Size: '0xc'
+    Type: struct FeatureFlag
+  - Name: Conditions
+    Offset: '0x28'
+    Size: '0x38'
+    Type: struct StorageContainerContentModifierConditions
+  - Name: Modifiers
+    Offset: '0x60'
+    Size: '0x20'
+    Type: struct StorageContainerContentModifier
+  ClassSize: '0x80'
+StorageContainerContentModifierExtraContentSpawnerEntry:
+  Attributes:
+  - Name: Weight
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: MinimumUses
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
+  - Name: MaximumUses
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  - Name: ContentSpawnerType
+    Offset: '0x10'
+    Size: '0x8'
+    Type: class UClass*
+  ClassSize: '0x18'
 StorageContainerContentSpawnerEntry:
   Attributes:
   - Name: ItemDesc
@@ -55284,7 +55787,11 @@ StoreTokenModel:
     Offset: '0x10'
     Size: '0x10'
     Type: struct FString
-  ClassSize: '0x20'
+  - Name: PlayFabXstsToken
+    Offset: '0x20'
+    Size: '0x10'
+    Type: struct FString
+  ClassSize: '0x30'
 StormAvoidanceArea:
   Attributes:
   - Name: Location
@@ -55640,10 +56147,10 @@ StunAttackerOnHitSurfacePair:
 StunnedActionStateConstructionInfo:
   Attributes:
   - Name: Params
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x18'
     Type: struct StunnedActionStateParams
-  ClassSize: '0x48'
+  ClassSize: '0x58'
 StunnedActionStateParams:
   Attributes:
   - Name: StunDuration
@@ -55783,10 +56290,10 @@ SuspensionStatusResponse:
 SwallowedByKrakenActionStateConstructionInfo:
   Attributes:
   - Name: Tentacle
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x14'
     Type: struct NetActorPtr
-  ClassSize: '0x48'
+  ClassSize: '0x58'
 SwallowedByKrakenActionStateParams:
   Attributes:
   - Name: FadeToBlackDuration
@@ -56125,10 +56632,10 @@ TakeAllItemsFromContainerRPC:
 TakeControlActionStateConstructionInfo:
   Attributes:
   - Name: ControlledObject
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x10'
     Type: interface
-  ClassSize: '0x40'
+  ClassSize: '0x50'
 TakeFlameOfFateParams:
   Attributes:
   - Name: IncludeTakeFlameOfFateActionRule
@@ -56351,14 +56858,14 @@ TaleVoteAdded:
 TalkToNPCActionStateConstructionInfo:
   Attributes:
   - Name: NPC
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x8'
     Type: class Actor*
   - Name: NPCDialogComp
-    Offset: '0x38'
+    Offset: '0x48'
     Size: '0x8'
     Type: class NPCDialogComponent*
-  ClassSize: '0x50'
+  ClassSize: '0x60'
 TalkToNPCActionStateParams:
   Attributes:
   - Name: CinematicCameraBlendInTimeSeconds
@@ -56518,54 +57025,54 @@ TelemetryStepContext:
 TeleportActionStateConstructionInfo:
   Attributes:
   - Name: TeleportLocationOverride
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x40'
     Type: struct TeleportLocation
   - Name: TeleportFadeType
-    Offset: '0x70'
+    Offset: '0x80'
     Size: '0x1'
     Type: byte
   - Name: StreamInLevelId
-    Offset: '0x74'
+    Offset: '0x84'
     Size: '0x4'
     Type: int
   - Name: StreamOutLevelId
-    Offset: '0x78'
+    Offset: '0x88'
     Size: '0x4'
     Type: int
   - Name: TeleportConditions
-    Offset: '0x7c'
+    Offset: '0x8c'
     Size: '0x1'
     Type: byte
   - Name: TeleportAudioMode
-    Offset: '0x7d'
+    Offset: '0x8d'
     Size: '0x1'
     Type: byte
   - Name: ShouldWaitForLoadout
-    Offset: '0x7f'
+    Offset: '0x8f'
     Size: '0x1'
     Type: bool
   - Name: ShouldWaitForEntitlements
-    Offset: '0x80'
+    Offset: '0x90'
     Size: '0x1'
     Type: bool
   - Name: CallFinishSpawningOnEnd
-    Offset: '0x81'
+    Offset: '0x91'
     Size: '0x1'
     Type: bool
   - Name: Reason
-    Offset: '0x82'
+    Offset: '0x92'
     Size: '0x1'
     Type: byte
   - Name: TeleportSpace
-    Offset: '0x83'
+    Offset: '0x93'
     Size: '0x1'
     Type: byte
   - Name: TeleportActionStateLargeItemMode
-    Offset: '0x84'
+    Offset: '0x94'
     Size: '0x1'
     Type: byte
-  ClassSize: '0xb8'
+  ClassSize: '0xc8'
 TeleportActionStateParams:
   Attributes:
   - Name: FadeDuration
@@ -56687,10 +57194,10 @@ TeleportStageCompletedTelemetryEvent:
 TestControlObjectActionStateConstructionInfo:
   Attributes:
   - Name: DockTime
-    Offset: '0x48'
+    Offset: '0x58'
     Size: '0x4'
     Type: float
-  ClassSize: '0x50'
+  ClassSize: '0x60'
 TestNetworkEvent:
   Attributes:
   - Name: Data
@@ -57092,22 +57599,22 @@ TransientActorEntry:
 TransitionLadderActionStateConstructionInfo:
   Attributes:
   - Name: StartingInteractionHeight
-    Offset: '0x48'
+    Offset: '0x58'
     Size: '0x4'
     Type: float
   - Name: ClimbId
-    Offset: '0x4c'
+    Offset: '0x5c'
     Size: '0x1'
     Type: byte
   - Name: LadderTransitionMode
-    Offset: '0x4d'
+    Offset: '0x5d'
     Size: '0x1'
     Type: byte
   - Name: LadderDefinition
-    Offset: '0x50'
+    Offset: '0x60'
     Size: '0x1c'
     Type: struct LadderDefinition
-  ClassSize: '0x70'
+  ClassSize: '0x80'
 TransitionLadderBeginEvent:
   Attributes:
   - Name: LadderTransitionMode
@@ -57126,6 +57633,20 @@ TransitionLadderEndEvent:
     Size: '0x1'
     Type: byte
   ClassSize: '0x1'
+TrapItemProxyRemovedEvent:
+  Attributes:
+  - Name: Proxy
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class ItemProxy*
+  ClassSize: '0x8'
+TrapItemProxySpawnEvent:
+  Attributes:
+  - Name: Proxy
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class ItemProxy*
+  ClassSize: '0x8'
 TreasureBuriedTelemetryEvent:
   Attributes:
   - Name: BootyId
@@ -58739,14 +59260,14 @@ UIWhatsNewAvailableArticlesTelemetryEvent:
 UndoRepairActionStateConstructionInfo:
   Attributes:
   - Name: RepairableObject
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x14'
     Type: struct NetSubObjectPtr
   - Name: InputID
-    Offset: '0x48'
+    Offset: '0x58'
     Size: '0x8'
     Type: class UClass*
-  ClassSize: '0x50'
+  ClassSize: '0x60'
 UndoRepairActionStateParams:
   Attributes:
   - Name: MountTime
@@ -58829,20 +59350,28 @@ UniversalDescriptorStyle:
   - Name: OpacityPercent
     Offset: '0x8'
     Size: '0x4'
-    Type: float
+    Type: int
   - Name: ScalePercent
     Offset: '0xc'
     Size: '0x4'
-    Type: float
+    Type: int
   - Name: AnchorXPercent
     Offset: '0x10'
     Size: '0x4'
-    Type: float
+    Type: int
   - Name: AnchorYPercent
     Offset: '0x14'
     Size: '0x4'
-    Type: float
-  ClassSize: '0x18'
+    Type: int
+  - Name: FontSize
+    Offset: '0x18'
+    Size: '0x4'
+    Type: int
+  - Name: FontStyle
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x20'
 UnlockableEntitlementCategory:
   Attributes:
   - Name: Category
@@ -59025,18 +59554,18 @@ UpdatedGuildDataEvent:
 UseBalanceableWalkwayActionStateConstructionInfo:
   Attributes:
   - Name: DockableObject
-    Offset: '0x48'
+    Offset: '0x58'
     Size: '0x8'
     Type: class BalanceableWalkwayComponent*
   - Name: DockLocation
-    Offset: '0x50'
+    Offset: '0x60'
     Size: '0xc'
     Type: struct Vector
   - Name: DockRotation
-    Offset: '0x60'
+    Offset: '0x70'
     Size: '0x10'
     Type: struct Quat
-  ClassSize: '0x70'
+  ClassSize: '0x80'
 UseBalanceableWalkwayActionStateParams:
   Attributes:
   - Name: BaseMovementSpeed
@@ -59162,14 +59691,14 @@ UseCannonActionStateParams:
 UseItemActionStateConstructionInfo:
   Attributes:
   - Name: UsableObject
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x14'
     Type: struct NetActorPtr
   - Name: InputID
-    Offset: '0x48'
+    Offset: '0x58'
     Size: '0x8'
     Type: class UClass*
-  ClassSize: '0x50'
+  ClassSize: '0x60'
 UseItemOnServerRpc:
   Attributes:
   - Name: Item
@@ -59180,18 +59709,18 @@ UseItemOnServerRpc:
 UseLadderActionStateConstructionInfo:
   Attributes:
   - Name: StartingInteractionHeight
-    Offset: '0x48'
+    Offset: '0x58'
     Size: '0x4'
     Type: float
   - Name: ClimbId
-    Offset: '0x4c'
+    Offset: '0x5c'
     Size: '0x1'
     Type: byte
   - Name: LadderDefinition
-    Offset: '0x50'
+    Offset: '0x60'
     Size: '0x1c'
     Type: struct LadderDefinition
-  ClassSize: '0x70'
+  ClassSize: '0x80'
 UseLadderActionStateParams:
   Attributes:
   - Name: ClimbUpSpeed
@@ -59415,13 +59944,13 @@ UserSettingsTelemetryEvent:
     Type: int
   - Name: UserSettings
     Offset: '0x8'
-    Size: '0x210'
+    Size: '0x218'
     Type: struct PersistentUserGameSettings
   - Name: RHIThread
-    Offset: '0x218'
+    Offset: '0x220'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x220'
+  ClassSize: '0x228'
 VFXHandlerComponentParams:
   Attributes:
   - Name: ParticleSystem
@@ -60511,36 +61040,40 @@ VoyageLocationRandomParams:
     Offset: '0x3'
     Size: '0x1'
     Type: bool
-  - Name: Feature
+  - Name: NoCargoRunNPCs
     Offset: '0x4'
     Size: '0x1'
     Type: bool
-  - Name: Resource
+  - Name: Feature
     Offset: '0x5'
     Size: '0x1'
     Type: bool
-  - Name: Outpost
+  - Name: Resource
     Offset: '0x6'
     Size: '0x1'
     Type: bool
-  - Name: Fort
+  - Name: Outpost
     Offset: '0x7'
     Size: '0x1'
     Type: bool
-  - Name: SeaPost
+  - Name: Fort
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: HasWashedUpItemLocations
+  - Name: SeaPost
     Offset: '0x9'
     Size: '0x1'
     Type: bool
-  - Name: HasLandmarks
+  - Name: HasWashedUpItemLocations
     Offset: '0xa'
     Size: '0x1'
     Type: bool
-  - Name: OnlyNamedIslands
+  - Name: HasLandmarks
     Offset: '0xb'
+    Size: '0x1'
+    Type: bool
+  - Name: OnlyNamedIslands
+    Offset: '0xc'
     Size: '0x1'
     Type: bool
   - Name: OnlyNamedIslandsListDataAsset
@@ -61140,34 +61673,34 @@ WaitForLoadingScreenTelemetryEvent:
 WaitingToSpawnActionStateConstructionInfo:
   Attributes:
   - Name: StartSpot
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x8'
     Type: class Actor*
   - Name: StreamOutLevel
-    Offset: '0x38'
+    Offset: '0x48'
     Size: '0x4'
     Type: int
   - Name: StreamInLevel
-    Offset: '0x3c'
+    Offset: '0x4c'
     Size: '0x4'
     Type: int
   - Name: Reason
-    Offset: '0x40'
+    Offset: '0x50'
     Size: '0x1'
     Type: byte
   - Name: ReceiveLoadout
-    Offset: '0x41'
+    Offset: '0x51'
     Size: '0x1'
     Type: bool
   - Name: ReceiveEntitlement
-    Offset: '0x42'
+    Offset: '0x52'
     Size: '0x1'
     Type: bool
   - Name: WaitForRelevancy
-    Offset: '0x43'
+    Offset: '0x53'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x48'
+  ClassSize: '0x58'
 WaitingToSpawnActionStateParams:
   Attributes:
   - Name: ClientStartedTimeout
@@ -61205,18 +61738,14 @@ WalkConditionsParams:
 WalkableEmoteActionStateConstructionInfo:
   Attributes:
   - Name: WalkableEmoteData
-    Offset: '0x30'
-    Size: '0xf0'
+    Offset: '0x40'
+    Size: '0x100'
     Type: struct WalkableEmoteData
   - Name: WalkableEmoteIdentifier
-    Offset: '0x120'
+    Offset: '0x140'
     Size: '0x8'
     Type: struct FName
-  - Name: ForcedWalkableEmote
-    Offset: '0x128'
-    Size: '0x1'
-    Type: bool
-  ClassSize: '0x130'
+  ClassSize: '0x148'
 WalletBalance:
   Attributes:
   - Name: Balances
@@ -61449,7 +61978,7 @@ WeaponProjectile:
     Offset: '0x160'
     Size: '0x8'
     Type: class Object*
-  ClassSize: '0x330'
+  ClassSize: '0x350'
 WeaponProjectileCreator:
   Attributes:
   - Name: Id
@@ -61482,57 +62011,61 @@ WeaponProjectileCreator:
     Type: TArray<class Actor*>
   - Name: Params
     Offset: '0xa0'
-    Size: '0xc0'
+    Size: '0xd0'
     Type: struct WeaponProjectileParams
   - Name: DamagerType
-    Offset: '0x160'
+    Offset: '0x170'
     Size: '0x8'
     Type: class UClass*
   - Name: TelemetryAttackId
-    Offset: '0x168'
+    Offset: '0x178'
     Size: '0x10'
     Type: struct Guid
   - Name: SubAttackGroupId
-    Offset: '0x178'
+    Offset: '0x188'
     Size: '0x4'
     Type: int
   - Name: WeaponMeshTransform
-    Offset: '0x180'
+    Offset: '0x190'
     Size: '0x30'
     Type: struct Transform
   - Name: WeaponMesh
-    Offset: '0x1b0'
+    Offset: '0x1c0'
     Size: '0x8'
     Type: class Object*
   - Name: DistanceBeforeGravity
-    Offset: '0x1b8'
+    Offset: '0x1c8'
     Size: '0x4'
     Type: float
   - Name: UseRewoundBaseVelocity
-    Offset: '0x1bc'
+    Offset: '0x1cc'
     Size: '0x1'
     Type: bool
   - Name: WielderVelocityToInherit
-    Offset: '0x1c0'
+    Offset: '0x1d0'
     Size: '0xc'
     Type: struct Vector
   - Name: HomingTarget
-    Offset: '0x1d0'
+    Offset: '0x1e0'
     Size: '0x8'
     Type: class Actor*
   - Name: HomingTargetRewindInterface
-    Offset: '0x1d8'
+    Offset: '0x1e8'
     Size: '0x10'
     Type: interface
   - Name: HomingDegreesPerSecond
-    Offset: '0x1e8'
+    Offset: '0x1f8'
     Size: '0x4'
     Type: float
   - Name: HomingConeAngle
-    Offset: '0x1ec'
+    Offset: '0x1fc'
     Size: '0x4'
     Type: float
-  ClassSize: '0x1f0'
+  - Name: GravityFalloffTimeScalar
+    Offset: '0x200'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x210'
 WeaponProjectileEffectParams:
   Attributes:
   - Name: ApplyStun
@@ -61549,21 +62082,21 @@ WeaponProjectileEffectParams:
     Type: bool
   - Name: KnockbackParams
     Offset: '0xc'
-    Size: '0x50'
+    Size: '0x54'
     Type: struct KnockBackInfo
   - Name: MinimumHitProjectilesForKnockback
-    Offset: '0x5c'
+    Offset: '0x60'
     Size: '0x4'
     Type: int
   - Name: MaximumKnockbackDistance
-    Offset: '0x60'
+    Offset: '0x64'
     Size: '0x4'
     Type: float
   - Name: EnableKnockbackFalloffOverDistance
-    Offset: '0x64'
+    Offset: '0x68'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x68'
+  ClassSize: '0x6c'
 WeaponProjectileMaxIterationsTelemetryEvent:
   Attributes:
   - Name: MaxSimulationIterations
@@ -61609,59 +62142,63 @@ WeaponProjectileParams:
     Offset: '0x14'
     Size: '0x4'
     Type: float
-  - Name: DownForceVelocityFractionPerSecond
+  - Name: GravityFalloffTimeScalar
     Offset: '0x18'
     Size: '0x4'
     Type: float
-  - Name: VelocityDampeningPerSecond
+  - Name: DownForceVelocityFractionPerSecond
     Offset: '0x1c'
     Size: '0x4'
     Type: float
-  - Name: Color
+  - Name: VelocityDampeningPerSecond
     Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  - Name: Color
+    Offset: '0x24'
     Size: '0x10'
     Type: struct LinearColor
   - Name: ProjectileId
-    Offset: '0x30'
+    Offset: '0x38'
     Size: '0x8'
     Type: class UClass*
   - Name: HealthChangeReason
-    Offset: '0x38'
+    Offset: '0x40'
     Size: '0x1'
     Type: byte
   - Name: ProjectileEffects
-    Offset: '0x3c'
-    Size: '0x68'
+    Offset: '0x44'
+    Size: '0x6c'
     Type: struct WeaponProjectileEffectParams
   - Name: SuggestedMaxSimulationIterations
-    Offset: '0xa4'
-    Size: '0x4'
-    Type: int
-  - Name: SuggestedMinTickTimeSecs
-    Offset: '0xa8'
-    Size: '0x4'
-    Type: float
-  - Name: SuggestedMaxSimulationTimeStep
-    Offset: '0xac'
-    Size: '0x4'
-    Type: float
-  - Name: SuggestedFixedTimestepMaxSimulationIterations
     Offset: '0xb0'
     Size: '0x4'
     Type: int
-  - Name: SuggestedFixedTimestepMinTickTimeSecs
+  - Name: SuggestedMinTickTimeSecs
     Offset: '0xb4'
     Size: '0x4'
     Type: float
-  - Name: SuggestedFixedSimulationTimeStep
+  - Name: SuggestedMaxSimulationTimeStep
     Offset: '0xb8'
     Size: '0x4'
     Type: float
-  - Name: DrawTrail
+  - Name: SuggestedFixedTimestepMaxSimulationIterations
     Offset: '0xbc'
+    Size: '0x4'
+    Type: int
+  - Name: SuggestedFixedTimestepMinTickTimeSecs
+    Offset: '0xc0'
+    Size: '0x4'
+    Type: float
+  - Name: SuggestedFixedSimulationTimeStep
+    Offset: '0xc4'
+    Size: '0x4'
+    Type: float
+  - Name: DrawTrail
+    Offset: '0xc8'
     Size: '0x1'
     Type: bool
-  ClassSize: '0xc0'
+  ClassSize: '0xd0'
 WeaponProjectilePendingImpact:
   Attributes:
   - Name: TimeStamp

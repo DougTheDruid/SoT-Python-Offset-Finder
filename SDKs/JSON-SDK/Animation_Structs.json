@@ -1,237 +1,4 @@
 {
-  "WeightedAnimationData": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Animation",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Weighting",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "DockableInfo": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "SocketName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SceneComponent",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "ShouldOverlapsUpdateOnParentUpdate",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "EventPreviewCharacterAnimationRequest": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "AnimationToPlay",
-        "Type": "class AnimationAsset*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CustomAnimationMontageId": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "CustomAnimationMontageId",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CustomAnimationMontageDefinitionEntry": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "MontageId",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Definition",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "EventCosmeticItemSpawnedOwnerNotification": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "CosmeticItemActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "WeightedAnimationTimeout": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "TimeoutRange",
-        "Type": "struct FloatRange",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Weighting",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "AnimationDataStoreLoadingEntry": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "AnimDataId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "AnimationLookAtParams": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "ActivationSpeed",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "HorizontalLimit",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "VerticalLimit",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "CustomAnimationMontageStagedLoopingData": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "Into",
-        "Type": "class AnimMontage*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "LoopAnims",
-        "Type": "TArray<class AnimMontage*>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "OutOfAnims",
-        "Type": "TArray<class AnimMontage*>",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "AnimationDataStoreAssetWeakReferenceEntry": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "AnimDataId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AnimData",
-        "Type": "assetclass",
-        "Size": "0x20",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AnimNode_WeightedLoadOnDemandSquencePlayer": {
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "PlayRate",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "WeightedAnimSequenceLoadOnDemand",
-        "Type": "class WeightedAnimSequenceLoadOnDemand*",
-        "Size": "0x8",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "GroupIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "GroupRole",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x54"
-      },
-      {
-        "Name": "CurrentSequence",
-        "Type": "class AnimSequence*",
-        "Size": "0x8",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "NextSequence",
-        "Type": "class AnimSequence*",
-        "Size": "0x8",
-        "Offset": "0x60"
-      }
-    ]
-  },
-  "CosmeticItems": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CosmeticItemArray",
-        "Type": "TArray<class Actor*>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "IKLookAtParams": {
     "ClassSize": "0xc",
     "Attributes": [
@@ -255,116 +22,34 @@
       }
     ]
   },
-  "CosmeticItemAnimationSetLoopData": {
-    "ClassSize": "0x20",
+  "AnimationStateCompleteEvent": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "Into",
-        "Type": "class AnimSequenceBase*",
+        "Name": "CompletedStateId",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
-      },
-      {
-        "Name": "Loop",
-        "Type": "class AnimSequenceBase*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "IntoSyncGroup",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "LoopSyncGroup",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x18"
       }
     ]
   },
-  "CustomAnimationMontageStateMachine": {
-    "ClassSize": "0xd8",
+  "AnimationLookAtParams": {
+    "ClassSize": "0xc",
     "Attributes": [
       {
-        "Name": "ActiveState",
-        "Type": "class CustomAnimationMontageDefinitionDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PendingState",
-        "Type": "class CustomAnimationMontageDefinitionDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "ActiveMontage",
-        "Type": "class AnimMontage*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "CharacterAnimationIKUpdateParams": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "CurrentAlpha",
+        "Name": "ActivationSpeed",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "TranslationStrength",
+        "Name": "HorizontalLimit",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4"
       },
       {
-        "Name": "RotationStrength",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "Orientation",
-        "Type": "struct Quat",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "EffectorSpace",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "ParentBone",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x34"
-      }
-    ]
-  },
-  "CurveUpdateValues": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "CurveName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "FinalValue",
+        "Name": "VerticalLimit",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
@@ -394,111 +79,53 @@
       }
     ]
   },
-  "EventCosmeticItemSpawned": {
-    "ClassSize": "0x10",
+  "HitReactionAnimationData": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "HitReactBlendSpace",
+        "Type": "class BlendSpace1D*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventCosmeticItemAttachmentSwitched": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "Owner",
         "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
-      },
-      {
-        "Name": "CosmeticData",
-        "Type": "class CosmeticItemAnimationSetDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x8"
       }
     ]
   },
-  "ActorVelocityData": {
-    "ClassSize": "0x18",
+  "CosmeticItemAnimationSetLoopData": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "ActorsVelocityVector",
-        "Type": "struct Vector",
-        "Size": "0xc",
+        "Name": "Into",
+        "Type": "class AnimSequenceBase*",
+        "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "ActorSpeed",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
+        "Name": "Loop",
+        "Type": "class AnimSequenceBase*",
+        "Size": "0x8",
+        "Offset": "0x8"
       },
       {
-        "Name": "IsCharacterMoving",
-        "Type": "bool",
-        "Size": "0x1",
+        "Name": "IntoSyncGroup",
+        "Type": "struct FName",
+        "Size": "0x8",
         "Offset": "0x10"
       },
       {
-        "Name": "WantedMovementSpeed",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x14"
-      }
-    ]
-  },
-  "HitReactionAnimationState": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "Yaw",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AdditiveBlend",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "ReactType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "ActivateNewHitReact",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x9"
-      }
-    ]
-  },
-  "AnimationStateCompleteEvent": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "CompletedStateId",
-        "Type": "class UClass*",
+        "Name": "LoopSyncGroup",
+        "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventHitReactAnimationRequested": {
-    "ClassSize": "0x1c",
-    "Attributes": [
-      {
-        "Name": "HitNormal",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "HitVelocity",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "ReactionAnimType",
-        "Type": "byte",
-        "Size": "0x1",
         "Offset": "0x18"
       }
     ]
@@ -556,6 +183,257 @@
       }
     ]
   },
+  "CustomAnimationMontageDefinitionEntry": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "MontageId",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Definition",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "CurveUpdateValues": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "CurveName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "FinalValue",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventHitReactAnimationRequested": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Name": "HitNormal",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "HitVelocity",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "ReactionAnimType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "DisguiseProxyMeshData": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "SkeletalMesh",
+        "Type": "class SkeletalMesh*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Scale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "ActorVelocityData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ActorsVelocityVector",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ActorSpeed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "IsCharacterMoving",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "WantedMovementSpeed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "CustomAnimationMontageId": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "CustomAnimationMontageId",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "HitReactionAnimationState": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Yaw",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AdditiveBlend",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "ReactType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ActivateNewHitReact",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x9"
+      }
+    ]
+  },
+  "WeightedAnimationData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Animation",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Weighting",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "DockableInfo": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "SocketName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SceneComponent",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ShouldOverlapsUpdateOnParentUpdate",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CosmeticItems": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CosmeticItemArray",
+        "Type": "TArray<class Actor*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AnimationDataStoreAssetWeakReferenceEntry": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "AnimDataId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AnimData",
+        "Type": "assetclass",
+        "Size": "0x20",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventCosmeticItemSpawned": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Owner",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CosmeticData",
+        "Type": "class CosmeticItemAnimationSetDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "CustomAnimationMontageStagedLoopingData": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Into",
+        "Type": "class AnimMontage*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "LoopAnims",
+        "Type": "TArray<class AnimMontage*>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "OutOfAnims",
+        "Type": "TArray<class AnimMontage*>",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
   "AnimationDataStoreEntry": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -579,65 +457,181 @@
       }
     ]
   },
-  "HitReactionAnimationData": {
+  "EventCosmeticItemSpawnedOwnerNotification": {
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "HitReactBlendSpace",
-        "Type": "class BlendSpace1D*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventCosmeticItemAttachmentSwitched": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Owner",
+        "Name": "CosmeticItemActor",
         "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       }
     ]
   },
-  "WeightedAnimationLoadOnDemandDataMetaData": {
-    "ClassSize": "0x38",
+  "AnimationDataStoreLoadingEntry": {
+    "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "AnimationList",
-        "Type": "TArray<struct WeightedAnimationData>",
-        "Size": "0x10",
+        "Name": "AnimDataId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "EventPreviewCharacterAnimationRequest": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "AnimationToPlay",
+        "Type": "class AnimationAsset*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AnimNode_WeightedLoadOnDemandSquencePlayer": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "PlayRate",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "WeightedAnimSequenceLoadOnDemand",
+        "Type": "class WeightedAnimSequenceLoadOnDemand*",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "GroupIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "GroupRole",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x54"
+      },
+      {
+        "Name": "CurrentSequence",
+        "Type": "class AnimSequence*",
+        "Size": "0x8",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "NextSequence",
+        "Type": "class AnimSequence*",
+        "Size": "0x8",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "CharacterAnimationIKUpdateParams": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "CurrentAlpha",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "AssetName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
+        "Name": "TranslationStrength",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
       },
       {
-        "Name": "FallbackSkeletonName",
-        "Type": "struct FString",
+        "Name": "RotationStrength",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "Orientation",
+        "Type": "struct Quat",
         "Size": "0x10",
         "Offset": "0x20"
       },
       {
-        "Name": "FallbackValidAdditive",
-        "Type": "bool",
+        "Name": "EffectorSpace",
+        "Type": "byte",
         "Size": "0x1",
         "Offset": "0x30"
+      },
+      {
+        "Name": "ParentBone",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x34"
       }
     ]
   },
-  "WeightedAnimationTimeoutSelector": {
-    "ClassSize": "0x10",
+  "WeightedAnimationTimeout": {
+    "ClassSize": "0x14",
     "Attributes": [
       {
-        "Name": "Weightings",
-        "Type": "TArray<struct WeightedAnimationTimeout>",
+        "Name": "TimeoutRange",
+        "Type": "struct FloatRange",
         "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "Weighting",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CustomAnimationMontageStateMachine": {
+    "ClassSize": "0xd8",
+    "Attributes": [
+      {
+        "Name": "ActiveState",
+        "Type": "class CustomAnimationMontageDefinitionDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PendingState",
+        "Type": "class CustomAnimationMontageDefinitionDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ActiveMontage",
+        "Type": "class AnimMontage*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "DisguiseProxyData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "DisguiseId",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MeshData",
+        "Type": "struct DisguiseProxyMeshData",
+        "Size": "0x10",
+        "Offset": "0x8"
       }
     ]
   },
@@ -678,6 +672,46 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x20"
+      }
+    ]
+  },
+  "WeightedAnimationTimeoutSelector": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Weightings",
+        "Type": "TArray<struct WeightedAnimationTimeout>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "WeightedAnimationLoadOnDemandDataMetaData": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "AnimationList",
+        "Type": "TArray<struct WeightedAnimationData>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AssetName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "FallbackSkeletonName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "FallbackValidAdditive",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x30"
       }
     ]
   },

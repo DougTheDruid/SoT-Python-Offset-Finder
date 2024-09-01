@@ -1,39 +1,45 @@
 {
-  "StorySpawnedActorsIndividualStoryInfo": {
-    "ClassSize": "0x18",
+  "NamedPointsGroupActorLocation": {
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "StoryName",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Name": "NamedPointsGroup",
+        "Type": "struct FName",
+        "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "NumActorsSpawned",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x10"
+        "Name": "ActorToSpawn",
+        "Type": "assetclass",
+        "Size": "0x20",
+        "Offset": "0x8"
       },
       {
-        "Name": "NumActorsDespawned",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x14"
+        "Name": "AttachToWorld",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x28"
       }
     ]
   },
-  "InstancedLayerLocation": {
+  "StoryInfo": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "ActorWithInstancedLayerComponent",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
+        "Name": "Name",
+        "Type": "struct FName",
+        "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "LayerToSpawn",
-        "Type": "class LayerActorsDataAsset*",
+        "Name": "StartTimeTicks",
+        "Type": "int64",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "EndTimeTicks",
+        "Type": "int64",
         "Size": "0x8",
         "Offset": "0x10"
       }
@@ -59,40 +65,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x30"
-      }
-    ]
-  },
-  "StoryFlag": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "StoryName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "StoryInfo": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Name",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "StartTimeTicks",
-        "Type": "int64",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "EndTimeTicks",
-        "Type": "int64",
-        "Size": "0x8",
-        "Offset": "0x10"
       }
     ]
   },
@@ -125,20 +97,42 @@
       }
     ]
   },
-  "StoryNameInfo": {
+  "StoriesRefreshRequestedTelemetryEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "IsForcedRefresh",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "InstancedLayerLocation": {
     "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ActorWithInstancedLayerComponent",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "LayerToSpawn",
+        "Type": "class LayerActorsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "StoryFlag": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "StoryName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
-      },
-      {
-        "Name": "StoryDesc",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x8"
       }
     ]
   },
@@ -182,71 +176,66 @@
       }
     ]
   },
-  "NamedPointsGroupActorLocation": {
-    "ClassSize": "0x30",
+  "StoryNameInfo": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "NamedPointsGroup",
+        "Name": "StoryName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "ActorToSpawn",
-        "Type": "assetclass",
-        "Size": "0x20",
+        "Name": "StoryDesc",
+        "Type": "struct FString",
+        "Size": "0x10",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "StorySpawnedActorsIndividualStoryInfo": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "StoryName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
       },
       {
-        "Name": "AttachToWorld",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x28"
+        "Name": "NumActorsSpawned",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "NumActorsDespawned",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
       }
     ]
   },
-  "StoriesRefreshRequestedTelemetryEvent": {
-    "ClassSize": "0x1",
+  "StoryClaimableResourcesList": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "IsForcedRefresh",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "LightingZoneStoryRelatedSettings": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Story",
+        "Name": "StoryFlag",
         "Type": "struct StoryFlag",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "TargetPointOnCurve",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "AreResourcesClaimed",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x8"
       },
       {
-        "Name": "FadeDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "IsStoryActiveConditionBase": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "StoryFlags",
-        "Type": "TArray<struct StoryFlag>",
+        "Name": "ClaimableResources",
+        "Type": "TArray<uintptr_t>",
         "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x10"
       }
     ]
   },
@@ -284,6 +273,46 @@
       }
     ]
   },
+  "StoryFlagContainer": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "StoryFlags",
+        "Type": "TArray<struct StoryFlag>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AllStoriesRequired",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "LightingZoneStoryRelatedSettings": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Story",
+        "Type": "struct StoryFlag",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TargetPointOnCurve",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "FadeDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
   "StorySpawnedActorsComponentList": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -307,26 +336,14 @@
       }
     ]
   },
-  "StoryClaimableResourcesList": {
-    "ClassSize": "0x20",
+  "IsStoryActiveConditionBase": {
+    "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "StoryFlag",
-        "Type": "struct StoryFlag",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AreResourcesClaimed",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "ClaimableResources",
-        "Type": "TArray<uintptr_t>",
+        "Name": "StoryFlags",
+        "Type": "TArray<struct StoryFlag>",
         "Size": "0x10",
-        "Offset": "0x10"
+        "Offset": "0x28"
       }
     ]
   },
@@ -338,23 +355,6 @@
         "Type": "TArray<struct StoryResourceStateChanged>",
         "Size": "0x10",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "StoryFlagContainer": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "StoryFlags",
-        "Type": "TArray<struct StoryFlag>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AllStoriesRequired",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x10"
       }
     ]
   },

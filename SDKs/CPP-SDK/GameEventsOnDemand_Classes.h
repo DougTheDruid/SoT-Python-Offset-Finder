@@ -6,6 +6,14 @@
 #include "GameEventsOnDemand_Structs.h"
 
 
+// Size 0xf0 (Full Size[0x118] - InheritedSize[0x28]
+class GameEventsOnDemandAvailabilityService: public Object
+{
+public:
+	class World*                                                 World;                                             // 0xf8(0x8)
+};
+
+
 // Size 0x140 (Full Size[0x508] - InheritedSize[0x3c8]
 class GameEventsOnDemandLoserTunnelService: public Actor
 {
@@ -14,14 +22,6 @@ public:
 	class VoyageDescDataAsset*                                   LoserTunnelVoyageDescDataAsset;                    // 0x430(0x8)
 	TArray<struct GameEventsOnDemandLoserTunnelCrewData>         TrackedCrews;                                      // 0x488(0x10)
 	struct FName                                                 TemporaryBannerTag;                                // 0x498(0x8)
-};
-
-
-// Size 0xf0 (Full Size[0x118] - InheritedSize[0x28]
-class GameEventsOnDemandAvailabilityService: public Object
-{
-public:
-	class World*                                                 World;                                             // 0xf8(0x8)
 };
 
 

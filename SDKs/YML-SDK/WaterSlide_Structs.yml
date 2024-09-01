@@ -70,18 +70,18 @@ OnStartZiplineActionStateEvent:
 RideTransitionActionStateConstructionInfo:
   Attributes:
   - Name: Ride
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x8'
     Type: class Ride*
   - Name: Direction
-    Offset: '0x38'
+    Offset: '0x48'
     Size: '0x1'
     Type: byte
   - Name: Offset
-    Offset: '0x3c'
+    Offset: '0x4c'
     Size: '0x4'
     Type: float
-  ClassSize: '0x58'
+  ClassSize: '0x68'
 RideTransitionActionStateParams:
   Attributes:
   - Name: Duration
@@ -92,10 +92,10 @@ RideTransitionActionStateParams:
 WaterSlideActionStateConstructionInfo:
   Attributes:
   - Name: SceneComponent
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x8'
     Type: class SceneComponent*
-  ClassSize: '0x38'
+  ClassSize: '0x48'
 WaterSlideActionStateParams:
   Attributes:
   - Name: ForcedFieldOfView
@@ -156,22 +156,22 @@ ZipLineActionStateParams:
 ZiplineActionStateConstructionInfo:
   Attributes:
   - Name: SceneComponent
-    Offset: '0x30'
+    Offset: '0x40'
     Size: '0x8'
     Type: class SceneComponent*
   - Name: MovementDirection
-    Offset: '0x38'
+    Offset: '0x48'
     Size: '0x1'
     Type: byte
   - Name: InitialSwingDirection
-    Offset: '0x39'
+    Offset: '0x49'
     Size: '0x1'
     Type: byte
   - Name: ZiplineStartSmoothedTime
-    Offset: '0x40'
+    Offset: '0x50'
     Size: '0x8'
     Type: double
-  ClassSize: '0x48'
+  ClassSize: '0x58'
 ZiplineFeelParameters:
   Attributes:
   - Name: MaxSpeed

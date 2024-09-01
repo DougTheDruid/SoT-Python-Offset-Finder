@@ -6,24 +6,13 @@
 #include "WarMap_Structs.h"
 
 
-// Size 0xa0 (Full Size[0x1d8] - InheritedSize[0x138]
+// Size 0xa0 (Full Size[0x1e8] - InheritedSize[0x148]
 class WarMapInteractionComponent: public InteractableComponent
 {
 public:
-	struct FText                                                 OpenMapInteractionText;                            // 0x140(0x38)
-	struct FText                                                 CannotOpenMapInteractionText;                      // 0x178(0x38)
-	class UClass*                                                OpenMapInputId;                                    // 0x1b0(0x8)
-};
-
-
-// Size 0xe0 (Full Size[0x110] - InheritedSize[0x30]
-class WarMapVoteConsumerBase: public VoteConsumerInlineBase
-{
-public:
-	class WarMapVoteValidatorBase*                               Validator;                                         // 0x30(0x8)
-	class Actor*                                                 OwningActor;                                       // 0x38(0x8)
-	bool                                                         IsHardMode;                                        // 0x40(0x1)
-	TArray<class PlayerState*>                                   Votes;                                             // 0xa8(0x10)
+	struct FText                                                 OpenMapInteractionText;                            // 0x150(0x38)
+	struct FText                                                 CannotOpenMapInteractionText;                      // 0x188(0x38)
+	class UClass*                                                OpenMapInputId;                                    // 0x1c0(0x8)
 };
 
 
@@ -47,6 +36,17 @@ public:
 	class WarMapVoteConsumerBase*                                Consumer;                                          // 0x30(0x8)
 	class Actor*                                                 OwningActor;                                       // 0x38(0x8)
 	bool                                                         ShowWithHardMode;                                  // 0x40(0x1)
+};
+
+
+// Size 0xe0 (Full Size[0x110] - InheritedSize[0x30]
+class WarMapVoteConsumerBase: public VoteConsumerInlineBase
+{
+public:
+	class WarMapVoteValidatorBase*                               Validator;                                         // 0x30(0x8)
+	class Actor*                                                 OwningActor;                                       // 0x38(0x8)
+	bool                                                         IsHardMode;                                        // 0x40(0x1)
+	TArray<class PlayerState*>                                   Votes;                                             // 0xa8(0x10)
 };
 
 

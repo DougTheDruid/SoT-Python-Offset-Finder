@@ -1,15 +1,29 @@
 {
-  "MockWaterServiceWithValidWaterPlane": {
-    "Super": "MockWaterInterface",
-    "FullSize": "0x40",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x8",
+  "WaterProperties": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "DefaultWaterComponent",
-        "Type": "class FFTWaterComponent*",
-        "Size": "0x8",
-        "Offset": "0x38"
+        "Name": "WaterInfo",
+        "Type": "TArray<struct WaterInformation>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "WaterPlaneExclusionComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "UseSpecificComponentForOverlaps",
+        "Type": "struct ActorComponentSelector",
+        "Size": "0x10",
+        "Offset": "0xd0"
       }
     ]
   },
@@ -24,6 +38,58 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x614"
+      }
+    ]
+  },
+  "MockWaterServiceWithValidWaterPlane": {
+    "Super": "MockWaterInterface",
+    "FullSize": "0x40",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "DefaultWaterComponent",
+        "Type": "class FFTWaterComponent*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "SplashProbeVFXComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x120",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "Probes",
+        "Type": "class SplashProbeDataAsset*",
+        "Size": "0x8",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "ProbesInstance",
+        "Type": "class SplashProbeDataAsset*",
+        "Size": "0x8",
+        "Offset": "0xf8"
+      },
+      {
+        "Name": "AttachProbesToOwner",
+        "Type": "struct ActorComponentSelector",
+        "Size": "0x10",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "AttachProbesToComponent",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "ProbeEnabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x118"
       }
     ]
   },
@@ -156,72 +222,6 @@
         "Type": "double",
         "Size": "0x8",
         "Offset": "0x440"
-      }
-    ]
-  },
-  "WaterProperties": {
-    "Super": "Object",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "WaterInfo",
-        "Type": "TArray<struct WaterInformation>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "SplashProbeVFXComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x120",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "Probes",
-        "Type": "class SplashProbeDataAsset*",
-        "Size": "0x8",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "ProbesInstance",
-        "Type": "class SplashProbeDataAsset*",
-        "Size": "0x8",
-        "Offset": "0xf8"
-      },
-      {
-        "Name": "AttachProbesToOwner",
-        "Type": "struct ActorComponentSelector",
-        "Size": "0x10",
-        "Offset": "0x100"
-      },
-      {
-        "Name": "AttachProbesToComponent",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x110"
-      },
-      {
-        "Name": "ProbeEnabled",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x118"
-      }
-    ]
-  },
-  "WaterPlaneExclusionComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "UseSpecificComponentForOverlaps",
-        "Type": "struct ActorComponentSelector",
-        "Size": "0x10",
-        "Offset": "0xd0"
       }
     ]
   },

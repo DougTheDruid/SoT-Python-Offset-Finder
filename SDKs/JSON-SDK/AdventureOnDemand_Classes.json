@@ -1,4 +1,54 @@
 {
+  "GameEventOnDemandArrivalTunnelWorkerBase": {
+    "Super": "AdventureOnDemandArrivalTunnelWorkerBase",
+    "FullSize": "0x158",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x128",
+    "Attributes": [
+      {
+        "Name": "TriggerTunnelFailureTimeout",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "MinRangeFromTarget",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "MaxRangeFromTarget",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "SubsequentCrewJoinRadiusModifier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "GameEventType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "LeaveTunnelVoyageDesc",
+        "Type": "class VoyageDescDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "RetryRequestEventFrequency",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x144"
+      }
+    ]
+  },
   "AdventureOnDemandService": {
     "Super": "Actor",
     "FullSize": "0x6d8",
@@ -58,56 +108,6 @@
         "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x4d8"
-      }
-    ]
-  },
-  "GameEventOnDemandArrivalTunnelWorkerBase": {
-    "Super": "AdventureOnDemandArrivalTunnelWorkerBase",
-    "FullSize": "0x158",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x128",
-    "Attributes": [
-      {
-        "Name": "TriggerTunnelFailureTimeout",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "MinRangeFromTarget",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "MaxRangeFromTarget",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "SubsequentCrewJoinRadiusModifier",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "GameEventType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "LeaveTunnelVoyageDesc",
-        "Type": "class VoyageDescDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x128"
-      },
-      {
-        "Name": "RetryRequestEventFrequency",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x144"
       }
     ]
   },

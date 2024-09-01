@@ -33,16 +33,16 @@ FactionFlipMeshComponent:
 FactionInteractionVoteComponent:
   Attributes:
   - Name: TurnHourglassInteractionHoldTime
-    Offset: '0x160'
+    Offset: '0x170'
     Size: '0x4'
     Type: float
   - Name: WaitTimeSimilarityThresholdSeconds
-    Offset: '0x164'
+    Offset: '0x174'
     Size: '0x4'
     Type: int
   ClassSize: '0x8'
-  FullSize: '0x168'
-  InheritedSize: '0x160'
+  FullSize: '0x178'
+  InheritedSize: '0x170'
   Super: InlineVotingInteractionComponent
 FactionIntervoteService:
   Attributes:
@@ -312,8 +312,8 @@ FactionVoteConsumerBase:
     Offset: '0xa8'
     Size: '0x10'
     Type: TArray<struct CrewMemberVotes>
-  ClassSize: '0xa0'
-  FullSize: '0xd0'
+  ClassSize: '0xb0'
+  FullSize: '0xe0'
   InheritedSize: '0x30'
   Super: VoteConsumerInlineBase
 FactionVoteInteractionActor:
@@ -467,114 +467,114 @@ ShipSunkTrackingComponent:
 StartFactionVoyageVoteConsumer:
   Attributes:
   - Name: FactionVotingCastVote
-    Offset: '0xd0'
+    Offset: '0xe0'
     Size: '0x38'
     Type: struct FText
   - Name: FactionVotingCantVote
-    Offset: '0x108'
+    Offset: '0x118'
     Size: '0x38'
     Type: struct FText
   - Name: FactionVotingRemoveVote
-    Offset: '0x140'
+    Offset: '0x150'
     Size: '0x38'
     Type: struct FText
   - Name: FactionVotingCantRemoveVote
-    Offset: '0x178'
+    Offset: '0x188'
     Size: '0x38'
     Type: struct FText
   - Name: FactionVotingCantVoteReasonVoterNotOnOwnShip
-    Offset: '0x1b0'
+    Offset: '0x1c0'
     Size: '0x38'
     Type: struct FText
   - Name: FactionVotingCantVoteReasonIsOpposingEmissary
-    Offset: '0x1e8'
+    Offset: '0x1f8'
     Size: '0x38'
     Type: struct FText
   - Name: FactionVotingCantVoteReasonIsOnFactionBlockedTale
-    Offset: '0x220'
+    Offset: '0x230'
     Size: '0x38'
     Type: struct FText
   - Name: FactionVotingCantVoteReasonIsInInvalidWorldRegion
-    Offset: '0x258'
+    Offset: '0x268'
     Size: '0x38'
     Type: struct FText
   - Name: FactionVotingCantVoteReasonIsNotOnNormalPlayMode
-    Offset: '0x290'
+    Offset: '0x2a0'
     Size: '0x38'
     Type: struct FText
   - Name: FactionVotingCantVoteReasonShroudbreakerIsActive
-    Offset: '0x2c8'
+    Offset: '0x2d8'
     Size: '0x38'
     Type: struct FText
   - Name: FactionVotingCantVoteReasonSaferSeas
-    Offset: '0x300'
+    Offset: '0x310'
     Size: '0x38'
     Type: struct FText
   - Name: FactionVotingSwitchVote
-    Offset: '0x338'
+    Offset: '0x348'
     Size: '0x38'
     Type: struct FText
   - Name: FactionVotingCantVoteReasonIsDivingToAdventure
-    Offset: '0x370'
+    Offset: '0x380'
     Size: '0x38'
     Type: struct FText
   - Name: FactionVotingCantVoteReasonIsInTunnelOfTheDamned
-    Offset: '0x3a8'
+    Offset: '0x3b8'
     Size: '0x38'
     Type: struct FText
   - Name: FactionVotingCantVoteReasonHasProposedOnDemandVoyage
-    Offset: '0x3e0'
+    Offset: '0x3f0'
     Size: '0x38'
     Type: struct FText
   ClassSize: '0x360'
-  FullSize: '0x430'
-  InheritedSize: '0xd0'
+  FullSize: '0x440'
+  InheritedSize: '0xe0'
   Super: FactionVoteConsumerBase
 StopFactionVoyageVoteConsumer:
   Attributes:
   - Name: FactionVotingCastVote
-    Offset: '0xd0'
+    Offset: '0xe0'
     Size: '0x38'
     Type: struct FText
   - Name: FactionVotingCantVote
-    Offset: '0x108'
+    Offset: '0x118'
     Size: '0x38'
     Type: struct FText
   - Name: FactionVotingRemoveVote
-    Offset: '0x140'
+    Offset: '0x150'
     Size: '0x38'
     Type: struct FText
   - Name: FactionVotingCantRemoveVote
-    Offset: '0x178'
+    Offset: '0x188'
     Size: '0x38'
     Type: struct FText
   - Name: FactionVotingCantVoteReasonGoToOutpost
-    Offset: '0x1b0'
+    Offset: '0x1c0'
     Size: '0x38'
     Type: struct FText
   - Name: FactionVotingCantVoteReasonActiveForDifferentCompany
-    Offset: '0x1e8'
+    Offset: '0x1f8'
     Size: '0x38'
     Type: struct FText
   - Name: FactionVotingCantVoteReasonEnemyShipNearby
-    Offset: '0x220'
+    Offset: '0x230'
     Size: '0x38'
     Type: struct FText
   - Name: FactionVotingCantVoteReasonShipNotInHarbour
-    Offset: '0x258'
+    Offset: '0x268'
     Size: '0x38'
     Type: struct FText
   - Name: FactionVotingCantVoteReasonCrewInBattle
-    Offset: '0x290'
+    Offset: '0x2a0'
     Size: '0x38'
     Type: struct FText
   - Name: FactionVotingCantVoteReasonLeaveFactionCooldownIsActive
-    Offset: '0x2c8'
+    Offset: '0x2d8'
     Size: '0x38'
     Type: struct FText
   ClassSize: '0x230'
-  FullSize: '0x300'
-  InheritedSize: '0xd0'
+  FullSize: '0x310'
+  InheritedSize: '0xe0'
   Super: FactionVoteConsumerBase
 StreakMaterialDataAsset:
   Attributes:

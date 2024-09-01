@@ -39,6 +39,46 @@
       }
     ]
   },
+  "WwiseEventParam": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "WwiseEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SourcePath",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "SourceObj",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "WwisePlatformMapping": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "UnrealPlatform",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "WwisePlatform",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "ReverbPresetControllerSettings": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -104,63 +144,6 @@
       }
     ]
   },
-  "WwisePlatformMapping": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "UnrealPlatform",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "WwisePlatform",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "WwiseEventParam": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "WwiseEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SourcePath",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "SourceObj",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "WwisePlatformMappings": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "DefaultWwisePlatform",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Mappings",
-        "Type": "TArray<struct WwisePlatformMapping>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "WwiseAudioReverbPresets": {
     "ClassSize": "0x64",
     "Attributes": [
@@ -223,6 +206,23 @@
         "Type": "struct ReverbPresetControllerSettings",
         "Size": "0x28",
         "Offset": "0x3c"
+      }
+    ]
+  },
+  "WwisePlatformMappings": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "DefaultWwisePlatform",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Mappings",
+        "Type": "TArray<struct WwisePlatformMapping>",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },

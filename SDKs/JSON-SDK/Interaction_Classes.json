@@ -1,32 +1,4 @@
 {
-  "CharacterInteractionComponent": {
-    "Super": "BoxComponent",
-    "FullSize": "0x6d0",
-    "InheritedSize": "0x600",
-    "ClassSize": "0xd0",
-    "Attributes": [
-      {
-        "Name": "CurrentOptimalInteractable",
-        "Type": "class InteractableArea*",
-        "Size": "0x8",
-        "Offset": "0x600"
-      }
-    ]
-  },
-  "InteractableService": {
-    "Super": "Object",
-    "FullSize": "0x70",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "InteractableAreas",
-        "Type": "TArray<class InteractableArea*>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
   "InteractableArea": {
     "Super": "Object",
     "FullSize": "0x70",
@@ -56,6 +28,20 @@
         "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x58"
+      }
+    ]
+  },
+  "MockActorWithCharacterInteractionComponent": {
+    "Super": "Character",
+    "FullSize": "0x690",
+    "InheritedSize": "0x5e0",
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "CharacterInteractionComponent",
+        "Type": "class CharacterInteractionComponent*",
+        "Size": "0x8",
+        "Offset": "0x5e8"
       }
     ]
   },
@@ -91,25 +77,39 @@
       }
     ]
   },
-  "PlayerInteractionTrackerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xf0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x28",
+  "InteractableService": {
+    "Super": "Object",
+    "FullSize": "0x70",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "InteractedPlayers",
-        "Type": "TArray<struct UniqueNetIdRepl>",
+        "Name": "InteractableAreas",
+        "Type": "TArray<class InteractableArea*>",
         "Size": "0x10",
-        "Offset": "0xd0"
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "CharacterInteractionComponent": {
+    "Super": "BoxComponent",
+    "FullSize": "0x6d0",
+    "InheritedSize": "0x600",
+    "ClassSize": "0xd0",
+    "Attributes": [
+      {
+        "Name": "CurrentOptimalInteractable",
+        "Type": "class InteractableArea*",
+        "Size": "0x8",
+        "Offset": "0x600"
       }
     ]
   },
   "InteractableComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x138",
+    "FullSize": "0x148",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x70",
+    "ClassSize": "0x80",
     "Attributes": [
       {
         "Name": "FeatureFlag",
@@ -178,30 +178,36 @@
         "Offset": "0x108"
       },
       {
+        "Name": "InteractionPromptOffset",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x118"
+      },
+      {
         "Name": "InteractableArea",
         "Type": "class InteractableArea*",
         "Size": "0x8",
-        "Offset": "0x118"
+        "Offset": "0x128"
       },
       {
         "Name": "CurrentInteractionState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x120"
+        "Offset": "0x130"
       }
     ]
   },
-  "MockActorWithCharacterInteractionComponent": {
-    "Super": "Character",
-    "FullSize": "0x690",
-    "InheritedSize": "0x5e0",
-    "ClassSize": "0xb0",
+  "PlayerInteractionTrackerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "CharacterInteractionComponent",
-        "Type": "class CharacterInteractionComponent*",
-        "Size": "0x8",
-        "Offset": "0x5e8"
+        "Name": "InteractedPlayers",
+        "Type": "TArray<struct UniqueNetIdRepl>",
+        "Size": "0x10",
+        "Offset": "0xd0"
       }
     ]
   },

@@ -14,6 +14,23 @@ public:
 };
 
 
+// Size 0x38
+struct IntroductionToSOTIntroAnimatic
+{
+public:
+	class UClass*                                                ShipSize;                                          // 0x0(0x8)
+	struct FirstPersonAnimaticSettings                           IntroAnimationSettings;                            // 0x8(0x2c)
+};
+
+
+// Size 0x20
+struct BeachNPCSpawnFlowNetworkEvent
+{
+public:
+	bool                                                         HasTaleCheckpointVoyage;                           // 0x18(0x1)
+};
+
+
 // Size 0x30
 struct HasTutorialStarterBegunCondition
 {
@@ -38,23 +55,6 @@ public:
 	struct FString                                               StepName;                                          // 0x10(0x10)
 	bool                                                         StepCompleted;                                     // 0x20(0x1)
 	bool                                                         IsFinalStep;                                       // 0x21(0x1)
-};
-
-
-// Size 0x20
-struct BeachNPCSpawnFlowNetworkEvent
-{
-public:
-	bool                                                         HasTaleCheckpointVoyage;                           // 0x18(0x1)
-};
-
-
-// Size 0x38
-struct IntroductionToSOTIntroAnimatic
-{
-public:
-	class UClass*                                                ShipSize;                                          // 0x0(0x8)
-	struct FirstPersonAnimaticSettings                           IntroAnimationSettings;                            // 0x8(0x2c)
 };
 
 

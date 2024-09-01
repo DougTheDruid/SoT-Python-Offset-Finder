@@ -6,11 +6,14 @@
 #include "ActionStateMachine_Structs.h"
 
 
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class CustomClientValidityCheckCallback: public Object
+// Size 0x20 (Full Size[0x600] - InheritedSize[0x5e0]
+class CharacterWithActionStateMachine: public Character
 {
 public:
-	bool                                                         ShouldPassClientValidation;                        // 0x28(0x1)
+	class ActionStateMachineComponent*                           ActionStateMachineComponent;                       // 0x5e0(0x8)
+	class ActionStatePriorityTableData*                          ActionStatePriorityTableData;                      // 0x5e8(0x8)
+	class UClass*                                                ActionStateCreatorDefinition;                      // 0x5f0(0x8)
+	class UClass*                                                ActionStateInitialStateCreatorDefinition;          // 0x5f8(0x8)
 };
 
 
@@ -23,7 +26,15 @@ public:
 };
 
 
-// Size 0x790 (Full Size[0x858] - InheritedSize[0xc8]
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class CustomClientValidityCheckCallback: public Object
+{
+public:
+	bool                                                         ShouldPassClientValidation;                        // 0x28(0x1)
+};
+
+
+// Size 0x7a0 (Full Size[0x868] - InheritedSize[0xc8]
 class ActionStateMachineComponent: public ActorComponent
 {
 public:
@@ -31,24 +42,13 @@ public:
 };
 
 
-// Size 0x20 (Full Size[0x600] - InheritedSize[0x5e0]
-class CharacterWithActionStateMachine: public Character
-{
-public:
-	class ActionStateMachineComponent*                           ActionStateMachineComponent;                       // 0x5e0(0x8)
-	class ActionStatePriorityTableData*                          ActionStatePriorityTableData;                      // 0x5e8(0x8)
-	class UClass*                                                ActionStateCreatorDefinition;                      // 0x5f0(0x8)
-	class UClass*                                                ActionStateInitialStateCreatorDefinition;          // 0x5f8(0x8)
-};
-
-
-// Size 0x48 (Full Size[0x8a0] - InheritedSize[0x858]
+// Size 0x48 (Full Size[0x8b0] - InheritedSize[0x868]
 class SelfInitialisingActionStateMachineComponent: public ActionStateMachineComponent
 {
 public:
-	class ActionStatePriorityTableData*                          ActionStatePriorityTableData;                      // 0x860(0x8)
-	class UClass*                                                ActionStateCreatorDefinition;                      // 0x868(0x8)
-	class UClass*                                                ActionStateInitialStateCreatorDefinition;          // 0x870(0x8)
+	class ActionStatePriorityTableData*                          ActionStatePriorityTableData;                      // 0x870(0x8)
+	class UClass*                                                ActionStateCreatorDefinition;                      // 0x878(0x8)
+	class UClass*                                                ActionStateInitialStateCreatorDefinition;          // 0x880(0x8)
 };
 
 

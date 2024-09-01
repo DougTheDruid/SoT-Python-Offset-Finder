@@ -6,26 +6,6 @@
 #include "GlitterBeard_Structs.h"
 
 
-// Size 0x50 (Full Size[0x118] - InheritedSize[0xc8]
-class GlitterBeardTreeVisualFeedbackComponent: public ActorComponent
-{
-public:
-	TArray<struct VisualFeedbackList>                            FeedbackActions;                                   // 0xc8(0x10)
-	TArray<char>                                                 CurrentStates;                                     // 0xe8(0x10)
-};
-
-
-// Size 0x48 (Full Size[0x80] - InheritedSize[0x38]
-class GlitterBeardLanternSoundEffect: public EffectBlendObjectBase
-{
-public:
-	float                                                        TriggerThreshold;                                  // 0x38(0x4)
-	class WwiseObjectPoolWrapper*                                WwisePool;                                         // 0x40(0x8)
-	class WwiseEvent*                                            WwiseEvent;                                        // 0x48(0x8)
-	struct WwiseEmitter                                          Emitter;                                           // 0x50(0x20)
-};
-
-
 // Size 0x328 (Full Size[0x6f0] - InheritedSize[0x3c8]
 class GlitterBeardTree: public Actor
 {
@@ -55,13 +35,14 @@ public:
 };
 
 
-// Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
-class GlitterBeardUnlockVFXCoordinatorComponent: public ActorComponent
+// Size 0x48 (Full Size[0x80] - InheritedSize[0x38]
+class GlitterBeardLanternSoundEffect: public EffectBlendObjectBase
 {
 public:
-	struct ActorComponentSelector                                TreeActor;                                         // 0xc8(0x10)
-	class MaterialInstanceDynamic*                               TreeMaterialInstanceDynamic;                       // 0xd8(0x8)
-	float                                                        TreeBlendTime;                                     // 0xe0(0x4)
+	float                                                        TriggerThreshold;                                  // 0x38(0x4)
+	class WwiseObjectPoolWrapper*                                WwisePool;                                         // 0x40(0x8)
+	class WwiseEvent*                                            WwiseEvent;                                        // 0x48(0x8)
+	struct WwiseEmitter                                          Emitter;                                           // 0x50(0x20)
 };
 
 
@@ -71,6 +52,25 @@ class GlitterBeardFinaleCoordinatorComponent: public ActorComponent
 public:
 	class WwiseEvent*                                            AudioEventToSynchronise;                           // 0xc8(0x8)
 	struct FinaleReplicationState                                ReplicationState;                                  // 0xd0(0x10)
+};
+
+
+// Size 0x50 (Full Size[0x118] - InheritedSize[0xc8]
+class GlitterBeardTreeVisualFeedbackComponent: public ActorComponent
+{
+public:
+	TArray<struct VisualFeedbackList>                            FeedbackActions;                                   // 0xc8(0x10)
+	TArray<char>                                                 CurrentStates;                                     // 0xe8(0x10)
+};
+
+
+// Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
+class GlitterBeardUnlockVFXCoordinatorComponent: public ActorComponent
+{
+public:
+	struct ActorComponentSelector                                TreeActor;                                         // 0xc8(0x10)
+	class MaterialInstanceDynamic*                               TreeMaterialInstanceDynamic;                       // 0xd8(0x8)
+	float                                                        TreeBlendTime;                                     // 0xe0(0x4)
 };
 
 

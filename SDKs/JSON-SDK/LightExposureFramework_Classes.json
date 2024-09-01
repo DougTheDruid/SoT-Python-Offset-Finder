@@ -13,20 +13,6 @@
       }
     ]
   },
-  "LightSensitiveComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x138",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "LightSourceManager",
-        "Type": "class LightSourceManager*",
-        "Size": "0x8",
-        "Offset": "0x130"
-      }
-    ]
-  },
   "LightSourceManager": {
     "Super": "Actor",
     "FullSize": "0x420",
@@ -68,6 +54,20 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x41c"
+      }
+    ]
+  },
+  "LightSensitiveComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x140",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "LightSourceManager",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x130"
       }
     ]
   },

@@ -1,38 +1,4 @@
 {
-  "VideoPlaybackStartEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MediaTextureName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "VideoSubtitleEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "MediaTextureName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SubtitleString",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "SubtitleDuration",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x20"
-      }
-    ]
-  },
   "VideoPlaybackStopEvent": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -44,8 +10,19 @@
       }
     ]
   },
-  "VideoPlaybackLoadEvent": {
-    "ClassSize": "0x20",
+  "VideoPlaybackStartEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MediaTextureName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "VideoPlaybackStateEvent": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "MediaTextureName",
@@ -54,9 +31,9 @@
         "Offset": "0x0"
       },
       {
-        "Name": "VideoUri",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Name": "State",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x10"
       }
     ]
@@ -131,8 +108,8 @@
       }
     ]
   },
-  "VideoPlaybackStateEvent": {
-    "ClassSize": "0x18",
+  "VideoSubtitleEvent": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "MediaTextureName",
@@ -141,9 +118,32 @@
         "Offset": "0x0"
       },
       {
-        "Name": "State",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "SubtitleString",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "SubtitleDuration",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "VideoPlaybackLoadEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "MediaTextureName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "VideoUri",
+        "Type": "struct FString",
+        "Size": "0x10",
         "Offset": "0x10"
       }
     ]

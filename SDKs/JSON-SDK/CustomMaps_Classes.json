@@ -1,15 +1,35 @@
 {
-  "CustomMapDisplayObjectBase": {
-    "Super": "Object",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
+  "CustomMapSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x40",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "Guid",
-        "Type": "struct Guid",
+        "Name": "CustomMapItemDescClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "CustomMap": {
+    "Super": "RenderToTextureMapBase",
+    "FullSize": "0x8d0",
+    "InheritedSize": "0x8a0",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Font",
+        "Type": "class Font*",
+        "Size": "0x8",
+        "Offset": "0x8a8"
+      },
+      {
+        "Name": "DisplayItems",
+        "Type": "TArray<class CustomMapDisplayObjectBase*>",
         "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x8b0"
       }
     ]
   },
@@ -24,26 +44,6 @@
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x28"
-      }
-    ]
-  },
-  "CustomMap": {
-    "Super": "RenderToTextureMapBase",
-    "FullSize": "0x8d0",
-    "InheritedSize": "0x8a0",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Font",
-        "Type": "class Font*",
-        "Size": "0x8",
-        "Offset": "0x8a0"
-      },
-      {
-        "Name": "DisplayItems",
-        "Type": "TArray<class CustomMapDisplayObjectBase*>",
-        "Size": "0x10",
-        "Offset": "0x8a8"
       }
     ]
   },
@@ -73,37 +73,17 @@
       }
     ]
   },
-  "CustomMapSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x40",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "CustomMapItemDescClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "CustomMapDisplayObjectPositional": {
-    "Super": "CustomMapDisplayObjectBase",
-    "FullSize": "0x48",
-    "InheritedSize": "0x38",
+  "CustomMapDisplayObjectBase": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Position",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "Orientation",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x40"
+        "Name": "Guid",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },
@@ -127,11 +107,31 @@
       }
     ]
   },
-  "CustomMapDataTypeText": {
-    "Super": "CustomMapDataTypePositional",
-    "FullSize": "0x90",
+  "CustomMapDisplayObjectPositional": {
+    "Super": "CustomMapDisplayObjectBase",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Position",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "Orientation",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "CustomMapDisplayObjectText": {
+    "Super": "CustomMapDisplayObjectPositional",
+    "FullSize": "0xd8",
     "InheritedSize": "0x48",
-    "ClassSize": "0x48",
+    "ClassSize": "0x90",
     "Attributes": [
       {
         "Name": "Text",
@@ -159,11 +159,11 @@
       }
     ]
   },
-  "CustomMapDisplayObjectText": {
-    "Super": "CustomMapDisplayObjectPositional",
-    "FullSize": "0xd8",
+  "CustomMapDataTypeText": {
+    "Super": "CustomMapDataTypePositional",
+    "FullSize": "0x90",
     "InheritedSize": "0x48",
-    "ClassSize": "0x90",
+    "ClassSize": "0x48",
     "Attributes": [
       {
         "Name": "Text",

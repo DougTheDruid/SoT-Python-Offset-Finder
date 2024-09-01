@@ -1,4 +1,18 @@
 {
+  "PottableComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CanBePutInPot",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xd0"
+      }
+    ]
+  },
   "HasRequiredCookingStateStatCondition": {
     "Super": "TargetedStatCondition",
     "FullSize": "0x38",
@@ -10,6 +24,86 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x30"
+      }
+    ]
+  },
+  "CookableComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x128",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "NextCookState",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "TimeToNextCookState",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "SmokeFeedbackLevels",
+        "Type": "TArray<struct CookableComponentSmokeFeedbackTimingEntry>",
+        "Size": "0x10",
+        "Offset": "0xf8"
+      },
+      {
+        "Name": "VisibleCookedExtentOverTime",
+        "Type": "class CurveFloat*",
+        "Size": "0x8",
+        "Offset": "0x108"
+      },
+      {
+        "Name": "DefaultVisibleCookedExtent",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "CookableTypeName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x114"
+      },
+      {
+        "Name": "CookedStat",
+        "Type": "struct PlayerStat",
+        "Size": "0x4",
+        "Offset": "0x11c"
+      },
+      {
+        "Name": "ShipCookedStat",
+        "Type": "struct PlayerStat",
+        "Size": "0x4",
+        "Offset": "0x120"
+      },
+      {
+        "Name": "CookingState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x124"
+      },
+      {
+        "Name": "InitialCookingState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x125"
+      },
+      {
+        "Name": "RemovedCookingState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x126"
+      },
+      {
+        "Name": "IgnoreCookedFromRawStats",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x127"
       }
     ]
   },
@@ -179,20 +273,6 @@
       }
     ]
   },
-  "PottableComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CanBePutInPot",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xd0"
-      }
-    ]
-  },
   "CookingComponentAudioParams": {
     "Super": "DataAsset",
     "FullSize": "0xa0",
@@ -282,86 +362,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x98"
-      }
-    ]
-  },
-  "CookableComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x128",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "NextCookState",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "TimeToNextCookState",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "SmokeFeedbackLevels",
-        "Type": "TArray<struct CookableComponentSmokeFeedbackTimingEntry>",
-        "Size": "0x10",
-        "Offset": "0xf8"
-      },
-      {
-        "Name": "VisibleCookedExtentOverTime",
-        "Type": "class CurveFloat*",
-        "Size": "0x8",
-        "Offset": "0x108"
-      },
-      {
-        "Name": "DefaultVisibleCookedExtent",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x110"
-      },
-      {
-        "Name": "CookableTypeName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x114"
-      },
-      {
-        "Name": "CookedStat",
-        "Type": "struct PlayerStat",
-        "Size": "0x4",
-        "Offset": "0x11c"
-      },
-      {
-        "Name": "ShipCookedStat",
-        "Type": "struct PlayerStat",
-        "Size": "0x4",
-        "Offset": "0x120"
-      },
-      {
-        "Name": "CookingState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x124"
-      },
-      {
-        "Name": "InitialCookingState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x125"
-      },
-      {
-        "Name": "RemovedCookingState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x126"
-      },
-      {
-        "Name": "IgnoreCookedFromRawStats",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x127"
       }
     ]
   },

@@ -1,52 +1,4 @@
 {
-  "CustomClientValidityCheckCallback": {
-    "Super": "Object",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "ShouldPassClientValidation",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "ActionStatePriorityTableData": {
-    "Super": "DataAsset",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "StateDefaultValue",
-        "Type": "TArray<struct ActionStatePriorityRelationship>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "PriorityTableEntry",
-        "Type": "TArray<struct ActionStatePriorityList>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "ActionStateMachineComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x858",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x790",
-    "Attributes": [
-      {
-        "Name": "OnActionChangedOnTrack",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0xe0"
-      }
-    ]
-  },
   "CharacterWithActionStateMachine": {
     "Super": "Character",
     "FullSize": "0x600",
@@ -79,29 +31,77 @@
       }
     ]
   },
+  "ActionStatePriorityTableData": {
+    "Super": "DataAsset",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "StateDefaultValue",
+        "Type": "TArray<struct ActionStatePriorityRelationship>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "PriorityTableEntry",
+        "Type": "TArray<struct ActionStatePriorityList>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "CustomClientValidityCheckCallback": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ShouldPassClientValidation",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "ActionStateMachineComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x868",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x7a0",
+    "Attributes": [
+      {
+        "Name": "OnActionChangedOnTrack",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0xe0"
+      }
+    ]
+  },
   "SelfInitialisingActionStateMachineComponent": {
     "Super": "ActionStateMachineComponent",
-    "FullSize": "0x8a0",
-    "InheritedSize": "0x858",
+    "FullSize": "0x8b0",
+    "InheritedSize": "0x868",
     "ClassSize": "0x48",
     "Attributes": [
       {
         "Name": "ActionStatePriorityTableData",
         "Type": "class ActionStatePriorityTableData*",
         "Size": "0x8",
-        "Offset": "0x860"
+        "Offset": "0x870"
       },
       {
         "Name": "ActionStateCreatorDefinition",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x868"
+        "Offset": "0x878"
       },
       {
         "Name": "ActionStateInitialStateCreatorDefinition",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x870"
+        "Offset": "0x880"
       }
     ]
   },

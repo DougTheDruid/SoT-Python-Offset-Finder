@@ -4,10 +4,11 @@
 // https://github.com/DougTheDruid
 
 // Size 0x10
-struct ActorsOfInterestList
+struct ActorOfInterestUnregisteredEvent
 {
 public:
-	TArray<class Actor*>                                         Actors;                                            // 0x0(0x10)
+	class Actor*                                                 ActorOfInterest;                                   // 0x0(0x8)
+	class UClass*                                                ActorOfInterestId;                                 // 0x8(0x8)
 };
 
 
@@ -21,11 +22,10 @@ public:
 
 
 // Size 0x10
-struct ActorOfInterestUnregisteredEvent
+struct ActorsOfInterestList
 {
 public:
-	class Actor*                                                 ActorOfInterest;                                   // 0x0(0x8)
-	class UClass*                                                ActorOfInterestId;                                 // 0x8(0x8)
+	TArray<class Actor*>                                         Actors;                                            // 0x0(0x10)
 };
 
 

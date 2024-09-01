@@ -12,19 +12,19 @@ public:
 
 
 // Size 0x8
-struct CaptureProtocolID
-{
-public:
-	struct FName                                                 Identifier;                                        // 0x0(0x8)
-};
-
-
-// Size 0x8
 struct CaptureResolution
 {
 public:
 	uint32                                                       ResX;                                              // 0x0(0x4)
 	uint32                                                       ResY;                                              // 0x4(0x4)
+};
+
+
+// Size 0x8
+struct CaptureProtocolID
+{
+public:
+	struct FName                                                 Identifier;                                        // 0x0(0x8)
 };
 
 

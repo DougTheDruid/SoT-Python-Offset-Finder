@@ -1,42 +1,4 @@
 {
-  "SirenPuzzleContext": {
-    "Super": "Actor",
-    "FullSize": "0x4b8",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0xf0",
-    "Attributes": [
-      {
-        "Name": "Root",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "PuzzleLocks",
-        "Type": "TArray<struct SirenPuzzleLockState>",
-        "Size": "0x10",
-        "Offset": "0x3d8"
-      },
-      {
-        "Name": "UnlockCompleteReactions",
-        "Type": "TArray<struct LandmarkReactionKeyFrame>",
-        "Size": "0x10",
-        "Offset": "0x3e8"
-      },
-      {
-        "Name": "ResetLocksReactions",
-        "Type": "TArray<struct LandmarkReactionKeyFrame>",
-        "Size": "0x10",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "LockStates",
-        "Type": "TArray<char>",
-        "Size": "0x10",
-        "Offset": "0x408"
-      }
-    ]
-  },
   "AbandonedNoteWeightedTextDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
@@ -138,6 +100,44 @@
         "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x140"
+      }
+    ]
+  },
+  "SirenPuzzleContext": {
+    "Super": "Actor",
+    "FullSize": "0x4b8",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0xf0",
+    "Attributes": [
+      {
+        "Name": "Root",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "PuzzleLocks",
+        "Type": "TArray<struct SirenPuzzleLockState>",
+        "Size": "0x10",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "UnlockCompleteReactions",
+        "Type": "TArray<struct LandmarkReactionKeyFrame>",
+        "Size": "0x10",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "ResetLocksReactions",
+        "Type": "TArray<struct LandmarkReactionKeyFrame>",
+        "Size": "0x10",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "LockStates",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x408"
       }
     ]
   },

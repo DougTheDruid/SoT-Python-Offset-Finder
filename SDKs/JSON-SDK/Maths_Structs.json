@@ -1,4 +1,21 @@
 {
+  "OrientedPoint": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Rotation",
+        "Type": "struct Rotator",
+        "Size": "0xc",
+        "Offset": "0xc"
+      }
+    ]
+  },
   "WeightedProbabilityRange": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -22,20 +39,66 @@
       }
     ]
   },
-  "OrientedPoint": {
-    "ClassSize": "0x18",
+  "InertialSmoothedFloat": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
+        "Name": "AccelerationMagnitude",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "Rotation",
-        "Type": "struct Rotator",
-        "Size": "0xc",
+        "Name": "MaxSpeed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "CurrentVelocity",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "CurrentValue",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0xc"
+      }
+    ]
+  },
+  "WeightedProbabilityRangeOfRangesFloatPair": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Min",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Max",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "FixedStepInterpCurvePointVector2D": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "OutVal",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Tangent",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -104,23 +167,6 @@
       }
     ]
   },
-  "FixedStepInterpCurvePointVector2D": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "OutVal",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Tangent",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "SpatialOffset": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -134,52 +180,6 @@
         "Name": "OffsetMethod",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "InertialSmoothedFloat": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "AccelerationMagnitude",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MaxSpeed",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "CurrentVelocity",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "CurrentValue",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "WeightedProbabilityRangeOfRangesFloatPair": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Min",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Max",
-        "Type": "float",
-        "Size": "0x4",
         "Offset": "0x4"
       }
     ]
@@ -213,6 +213,17 @@
       }
     ]
   },
+  "WeightedProbabilityRangeOfRanges": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "SubRanges",
+        "Type": "TArray<struct WeightedProbabilityRangeOfRangesFloatPair>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
   "FixedStepInterpCurveVector2D": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -233,17 +244,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x14"
-      }
-    ]
-  },
-  "WeightedProbabilityRangeOfRanges": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "SubRanges",
-        "Type": "TArray<struct WeightedProbabilityRangeOfRangesFloatPair>",
-        "Size": "0x10",
-        "Offset": "0x20"
       }
     ]
   },

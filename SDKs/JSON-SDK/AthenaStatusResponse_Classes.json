@@ -13,6 +13,20 @@
       }
     ]
   },
+  "StatusResponseSuspendStatus": {
+    "Super": "StatusResponse",
+    "FullSize": "0x40",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Status",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
   "StatusResponseReportNoiseEvent": {
     "Super": "StatusResponse",
     "FullSize": "0x70",
@@ -57,34 +71,6 @@
       }
     ]
   },
-  "StatusResponseHealthRegenerationPoolChange": {
-    "Super": "StatusResponse",
-    "FullSize": "0x38",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "HealthPoolChangeIntensityMultiplier",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "StatusResponseSuspendStatus": {
-    "Super": "StatusResponse",
-    "FullSize": "0x40",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Status",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      }
-    ]
-  },
   "StatusResponseApplyPersistentStatus": {
     "Super": "StatusResponse",
     "FullSize": "0x50",
@@ -102,6 +88,20 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x48"
+      }
+    ]
+  },
+  "StatusResponseHealthRegenerationPoolChange": {
+    "Super": "StatusResponse",
+    "FullSize": "0x38",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "HealthPoolChangeIntensityMultiplier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x30"
       }
     ]
   },

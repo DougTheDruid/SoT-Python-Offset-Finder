@@ -594,6 +594,17 @@ AIShipSpawnTelemetryEvent:
     Size: '0x4'
     Type: int
   ClassSize: '0x70'
+AIShipTargetVesselSetTelemetryEvent:
+  Attributes:
+  - Name: TargetingShipId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct FString
+  - Name: TargetedShipId
+    Offset: '0x10'
+    Size: '0x10'
+    Type: struct FString
+  ClassSize: '0x20'
 AIShipWeightedSize:
   Attributes:
   - Name: Feature

@@ -1,15 +1,57 @@
 {
-  "MaterialExpressionRopeParameter": {
-    "Super": "MaterialExpression",
-    "FullSize": "0x78",
-    "InheritedSize": "0x70",
-    "ClassSize": "0x8",
+  "RiggingSystem": {
+    "Super": "Actor",
+    "FullSize": "0x518",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x150",
     "Attributes": [
       {
-        "Name": "RopeParameterType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x70"
+        "Name": "Root",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "InstancedRopes",
+        "Type": "class InstancedRopeComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "Lines",
+        "Type": "TArray<struct RiggingSystemLine>",
+        "Size": "0x10",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "Ropes",
+        "Type": "TArray<struct InstancedRopeParams>",
+        "Size": "0x10",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "PulleyInstances",
+        "Type": "TArray<class MobileInstancedStaticMeshComponent*>",
+        "Size": "0x10",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "Pulleys",
+        "Type": "struct RiggingSystemPulleyData",
+        "Size": "0x60",
+        "Offset": "0x410"
+      },
+      {
+        "Name": "Sockets",
+        "Type": "TArray<struct SocketId>",
+        "Size": "0x10",
+        "Offset": "0x470"
+      },
+      {
+        "Name": "InitialMainRopeLengths",
+        "Type": "TArray<float>",
+        "Size": "0x10",
+        "Offset": "0x480"
       }
     ]
   },
@@ -65,59 +107,17 @@
       }
     ]
   },
-  "RiggingSystem": {
-    "Super": "Actor",
-    "FullSize": "0x518",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x150",
+  "MaterialExpressionRopeParameter": {
+    "Super": "MaterialExpression",
+    "FullSize": "0x78",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "Root",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "InstancedRopes",
-        "Type": "class InstancedRopeComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d8"
-      },
-      {
-        "Name": "Lines",
-        "Type": "TArray<struct RiggingSystemLine>",
-        "Size": "0x10",
-        "Offset": "0x3e0"
-      },
-      {
-        "Name": "Ropes",
-        "Type": "TArray<struct InstancedRopeParams>",
-        "Size": "0x10",
-        "Offset": "0x3f0"
-      },
-      {
-        "Name": "PulleyInstances",
-        "Type": "TArray<class MobileInstancedStaticMeshComponent*>",
-        "Size": "0x10",
-        "Offset": "0x400"
-      },
-      {
-        "Name": "Pulleys",
-        "Type": "struct RiggingSystemPulleyData",
-        "Size": "0x60",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "Sockets",
-        "Type": "TArray<struct SocketId>",
-        "Size": "0x10",
-        "Offset": "0x470"
-      },
-      {
-        "Name": "InitialMainRopeLengths",
-        "Type": "TArray<float>",
-        "Size": "0x10",
-        "Offset": "0x480"
+        "Name": "RopeParameterType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x70"
       }
     ]
   },

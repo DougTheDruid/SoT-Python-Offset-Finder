@@ -16,6 +16,39 @@
       }
     ]
   },
+  "TestMessageTimespan": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Timespan",
+        "Type": "struct Timespan",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TestUStructMapSerializationObject": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "StructMap",
+        "Type": "map",
+        "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TestEnumObject": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "TestEnum",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "TestFloatObject": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -40,94 +73,6 @@
         "Name": "DateTime",
         "Type": "struct DateTime",
         "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TestMessageUInt64": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "TestInt",
-        "Type": "uint64",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TestStringMapSerializationObject": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "StringMap",
-        "Type": "map",
-        "Size": "0x50",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TestMessageInt64": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "TestInt",
-        "Type": "int64",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TestUStructMapSerializationObject": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "StructMap",
-        "Type": "map",
-        "Size": "0x50",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TestInt32MapSerializationObject": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "Int32Map",
-        "Type": "map",
-        "Size": "0x50",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TestMessageTimespan": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Timespan",
-        "Type": "struct Timespan",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TestInvalidStringMapSerializationObject": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "StringMap",
-        "Type": "map",
-        "Size": "0x50",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TestEnumObject": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "TestEnum",
-        "Type": "byte",
-        "Size": "0x1",
         "Offset": "0x0"
       }
     ]
@@ -158,6 +103,61 @@
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x18"
+      }
+    ]
+  },
+  "TestMessageInt64": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "TestInt",
+        "Type": "int64",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TestInvalidStringMapSerializationObject": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "StringMap",
+        "Type": "map",
+        "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TestInt32MapSerializationObject": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "Int32Map",
+        "Type": "map",
+        "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TestStringMapSerializationObject": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "StringMap",
+        "Type": "map",
+        "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TestMessageUInt64": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "TestInt",
+        "Type": "uint64",
+        "Size": "0x8",
+        "Offset": "0x0"
       }
     ]
   },

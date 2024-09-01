@@ -264,20 +264,24 @@ AISenseConfig_Hearing:
     Offset: '0x38'
     Size: '0x4'
     Type: float
-  - Name: LoSHearingRange
+  - Name: HearingRangeForCrouching
     Offset: '0x3c'
     Size: '0x4'
     Type: float
-  - Name: bUseLoSHearing
+  - Name: LoSHearingRange
     Offset: '0x40'
+    Size: '0x4'
+    Type: float
+  - Name: bUseLoSHearing
+    Offset: '0x44'
     Size: '0x1'
     Type: bool
   - Name: DetectionByAffiliation
-    Offset: '0x44'
+    Offset: '0x48'
     Size: '0x4'
     Type: struct AISenseAffiliationFilter
-  ClassSize: '0x18'
-  FullSize: '0x48'
+  ClassSize: '0x20'
+  FullSize: '0x50'
   InheritedSize: '0x30'
   Super: AISenseConfig
 AISenseConfig_Sight:
@@ -420,7 +424,7 @@ AISense_Sight:
     Offset: '0x13c'
     Size: '0x4'
     Type: float
-  - Name: HighImportanceQueryDistanceThresholdForCrouching
+  - Name: HighImportanceQueryDistanceThresholdForStealthMode
     Offset: '0x144'
     Size: '0x4'
     Type: float

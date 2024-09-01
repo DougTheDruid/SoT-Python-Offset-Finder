@@ -6,11 +6,38 @@
 #include "Cooking_Structs.h"
 
 
+// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
+class PottableComponent: public ActorComponent
+{
+public:
+	bool                                                         CanBePutInPot;                                     // 0xd0(0x1)
+};
+
+
 // Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
 class HasRequiredCookingStateStatCondition: public TargetedStatCondition
 {
 public:
 	char                                                         RequiredState;                                     // 0x30(0x1)
+};
+
+
+// Size 0x60 (Full Size[0x128] - InheritedSize[0xc8]
+class CookableComponent: public ActorComponent
+{
+public:
+	class UClass*                                                NextCookState;                                     // 0xe8(0x8)
+	float                                                        TimeToNextCookState;                               // 0xf0(0x4)
+	TArray<struct CookableComponentSmokeFeedbackTimingEntry>     SmokeFeedbackLevels;                               // 0xf8(0x10)
+	class CurveFloat*                                            VisibleCookedExtentOverTime;                       // 0x108(0x8)
+	float                                                        DefaultVisibleCookedExtent;                        // 0x110(0x4)
+	struct FName                                                 CookableTypeName;                                  // 0x114(0x8)
+	struct PlayerStat                                            CookedStat;                                        // 0x11c(0x4)
+	struct PlayerStat                                            ShipCookedStat;                                    // 0x120(0x4)
+	char                                                         CookingState;                                      // 0x124(0x1)
+	char                                                         InitialCookingState;                               // 0x125(0x1)
+	char                                                         RemovedCookingState;                               // 0x126(0x1)
+	bool                                                         IgnoreCookedFromRawStats;                          // 0x127(0x1)
 };
 
 
@@ -53,14 +80,6 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
-class PottableComponent: public ActorComponent
-{
-public:
-	bool                                                         CanBePutInPot;                                     // 0xd0(0x1)
-};
-
-
 // Size 0x78 (Full Size[0xa0] - InheritedSize[0x28]
 class CookingComponentAudioParams: public DataAsset
 {
@@ -79,25 +98,6 @@ public:
 	struct FName                                                 FoodTypeRareMeat;                                  // 0x88(0x8)
 	struct FName                                                 FoodCookedAmount;                                  // 0x90(0x8)
 	float                                                        MaxCookingRtpcAmount;                              // 0x98(0x4)
-};
-
-
-// Size 0x60 (Full Size[0x128] - InheritedSize[0xc8]
-class CookableComponent: public ActorComponent
-{
-public:
-	class UClass*                                                NextCookState;                                     // 0xe8(0x8)
-	float                                                        TimeToNextCookState;                               // 0xf0(0x4)
-	TArray<struct CookableComponentSmokeFeedbackTimingEntry>     SmokeFeedbackLevels;                               // 0xf8(0x10)
-	class CurveFloat*                                            VisibleCookedExtentOverTime;                       // 0x108(0x8)
-	float                                                        DefaultVisibleCookedExtent;                        // 0x110(0x4)
-	struct FName                                                 CookableTypeName;                                  // 0x114(0x8)
-	struct PlayerStat                                            CookedStat;                                        // 0x11c(0x4)
-	struct PlayerStat                                            ShipCookedStat;                                    // 0x120(0x4)
-	char                                                         CookingState;                                      // 0x124(0x1)
-	char                                                         InitialCookingState;                               // 0x125(0x1)
-	char                                                         RemovedCookingState;                               // 0x126(0x1)
-	bool                                                         IgnoreCookedFromRawStats;                          // 0x127(0x1)
 };
 
 

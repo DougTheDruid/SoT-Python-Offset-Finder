@@ -1,15 +1,4 @@
 {
-  "EventAthenaLoadingScreenStateResponse": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "IsVisible",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "EventAthenaLoadingScreenBlockUntilUIIntialisedClear": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -17,6 +6,28 @@
         "Name": "Description",
         "Type": "struct FString",
         "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventAthenaLoadingScreenBlockUntilUIIntialised": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Description",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventAthenaLoadingScreenStateResponse": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "IsVisible",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x0"
       }
     ]
@@ -71,17 +82,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xb8"
-      }
-    ]
-  },
-  "EventAthenaLoadingScreenBlockUntilUIIntialised": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Description",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
       }
     ]
   },

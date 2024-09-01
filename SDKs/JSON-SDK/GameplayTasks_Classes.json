@@ -1,4 +1,30 @@
 {
+  "GameplayTasksComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x128",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "SimulatedTasks",
+        "Type": "TArray<class GameplayTask*>",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "TaskPriorityQueue",
+        "Type": "TArray<class GameplayTask*>",
+        "Size": "0x10",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "OnClaimedResourcesChange",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x118"
+      }
+    ]
+  },
   "GameplayTask": {
     "Super": "Object",
     "FullSize": "0x58",
@@ -33,46 +59,6 @@
       }
     ]
   },
-  "GameplayTasksComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x128",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "SimulatedTasks",
-        "Type": "TArray<class GameplayTask*>",
-        "Size": "0x10",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "TaskPriorityQueue",
-        "Type": "TArray<class GameplayTask*>",
-        "Size": "0x10",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "OnClaimedResourcesChange",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x118"
-      }
-    ]
-  },
-  "GameplayTask_WaitDelay": {
-    "Super": "GameplayTask",
-    "FullSize": "0x70",
-    "InheritedSize": "0x58",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "OnFinish",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x58"
-      }
-    ]
-  },
   "GameplayTask_SpawnActor": {
     "Super": "GameplayTask",
     "FullSize": "0x98",
@@ -96,6 +82,20 @@
         "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x90"
+      }
+    ]
+  },
+  "GameplayTask_WaitDelay": {
+    "Super": "GameplayTask",
+    "FullSize": "0x70",
+    "InheritedSize": "0x58",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "OnFinish",
+        "Type": "multicastinlinedelegate",
+        "Size": "0x10",
+        "Offset": "0x58"
       }
     ]
   },

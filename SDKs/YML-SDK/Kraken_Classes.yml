@@ -204,38 +204,38 @@ KrakenHead:
     Type: class UClass*
   - Name: RoarKnockbackInfo
     Offset: '0x450'
-    Size: '0x50'
+    Size: '0x54'
     Type: struct KnockBackInfo
   - Name: HeadAnimInstance
-    Offset: '0x4a0'
+    Offset: '0x4a8'
     Size: '0x8'
     Type: class KrakenHeadAnimationInstance*
   - Name: EQSQuerierLocation
-    Offset: '0x4a8'
+    Offset: '0x4b0'
     Size: '0xc'
     Type: struct Vector
   - Name: KrakenHeadHealthParams
-    Offset: '0x4b8'
+    Offset: '0x4c0'
     Size: '0x8'
     Type: class KrakenHeadHealthParamsDataAsset*
   - Name: HeadStateRequest
-    Offset: '0x4c0'
+    Offset: '0x4c8'
     Size: '0x18'
     Type: struct HeadStateChangeRequest
   - Name: IsDamageEnabled
-    Offset: '0x4d8'
+    Offset: '0x4e0'
     Size: '0x1'
     Type: bool
   - Name: Root
-    Offset: '0x4e0'
+    Offset: '0x4e8'
     Size: '0x8'
     Type: class SceneComponent*
   - Name: BiteAttackImpactNamedPointsGroupName
-    Offset: '0x5a8'
+    Offset: '0x5b0'
     Size: '0x8'
     Type: struct FName
-  ClassSize: '0x208'
-  FullSize: '0x5d0'
+  ClassSize: '0x210'
+  FullSize: '0x5d8'
   InheritedSize: '0x3c8'
   Super: Actor
 KrakenHeadAnimationInstance:
@@ -374,10 +374,10 @@ KrakenShipWrappingBehaviourParamsDataAsset:
   Attributes:
   - Name: Params
     Offset: '0x30'
-    Size: '0x420'
+    Size: '0x430'
     Type: struct KrakenShipWrappingBehaviourParams
-  ClassSize: '0x428'
-  FullSize: '0x450'
+  ClassSize: '0x438'
+  FullSize: '0x460'
   InheritedSize: '0x28'
   Super: DataAsset
 KrakenShipWrappingKnockbackRegionComponent:
@@ -396,7 +396,7 @@ KrakenShipWrappingKnockbackRegionComponent:
     Type: float
   - Name: KnockbackParams
     Offset: '0x2f8'
-    Size: '0x50'
+    Size: '0x54'
     Type: struct KnockBackInfo
   ClassSize: '0xa0'
   FullSize: '0x380'

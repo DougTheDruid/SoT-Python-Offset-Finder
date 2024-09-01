@@ -6,18 +6,6 @@
 #include "Mysteries_Structs.h"
 
 
-// Size 0xf0 (Full Size[0x4b8] - InheritedSize[0x3c8]
-class SirenPuzzleContext: public Actor
-{
-public:
-	class SceneComponent*                                        Root;                                              // 0x3d0(0x8)
-	TArray<struct SirenPuzzleLockState>                          PuzzleLocks;                                       // 0x3d8(0x10)
-	TArray<struct LandmarkReactionKeyFrame>                      UnlockCompleteReactions;                           // 0x3e8(0x10)
-	TArray<struct LandmarkReactionKeyFrame>                      ResetLocksReactions;                               // 0x3f8(0x10)
-	TArray<char>                                                 LockStates;                                        // 0x408(0x10)
-};
-
-
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class AbandonedNoteWeightedTextDataAsset: public DataAsset
 {
@@ -55,6 +43,18 @@ public:
 	assetobject                                                  WeightedText;                                      // 0xe8(0x20)
 	struct FText                                                 ClueText;                                          // 0x108(0x38)
 	struct FText                                                 TitleText;                                         // 0x140(0x38)
+};
+
+
+// Size 0xf0 (Full Size[0x4b8] - InheritedSize[0x3c8]
+class SirenPuzzleContext: public Actor
+{
+public:
+	class SceneComponent*                                        Root;                                              // 0x3d0(0x8)
+	TArray<struct SirenPuzzleLockState>                          PuzzleLocks;                                       // 0x3d8(0x10)
+	TArray<struct LandmarkReactionKeyFrame>                      UnlockCompleteReactions;                           // 0x3e8(0x10)
+	TArray<struct LandmarkReactionKeyFrame>                      ResetLocksReactions;                               // 0x3f8(0x10)
+	TArray<char>                                                 LockStates;                                        // 0x408(0x10)
 };
 
 

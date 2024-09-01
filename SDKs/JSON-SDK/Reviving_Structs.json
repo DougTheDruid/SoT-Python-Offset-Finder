@@ -10,32 +10,71 @@
       }
     ]
   },
-  "ReviveableActionStateConstructionInfo": {
+  "EventCharacterDiedDuringReviving": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "OwningCharacter",
+        "Type": "class Character*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "PlayerRevivalTelemetryEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "Success",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "RevivePlayerActionStateConstructionInfo": {
     "ClassSize": "0x70",
     "Attributes": [
       {
-        "Name": "ActionStateId",
+        "Name": "CharacterReviving",
+        "Type": "struct NetActorPtr",
+        "Size": "0x14",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "CharacterBeingRevived",
+        "Type": "struct NetSubObjectPtr",
+        "Size": "0x14",
+        "Offset": "0x54"
+      },
+      {
+        "Name": "InputID",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "DamageInstance",
-        "Type": "struct DamageInstance",
-        "Size": "0x30",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "CharacterDeathType",
-        "Type": "byte",
-        "Size": "0x1",
         "Offset": "0x68"
+      }
+    ]
+  },
+  "RevivedActionStateParams": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "HealthRegained",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
       },
       {
-        "Name": "CharacterType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x69"
+        "Name": "ReviveDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "ReviveGaspAudio",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -116,71 +155,43 @@
       }
     ]
   },
-  "RevivedActionStateParams": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "HealthRegained",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ReviveDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "ReviveGaspAudio",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "RevivePlayerActionStateConstructionInfo": {
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "CharacterReviving",
-        "Type": "struct NetActorPtr",
-        "Size": "0x14",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "CharacterBeingRevived",
-        "Type": "struct NetSubObjectPtr",
-        "Size": "0x14",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "InputID",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x58"
-      }
-    ]
-  },
-  "PlayerRevivalTelemetryEvent": {
+  "EventRevivableRepresentationSpawnCompleted": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "Success",
+        "Name": "FromSwimming",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x0"
       }
     ]
   },
-  "EventCharacterDiedDuringReviving": {
-    "ClassSize": "0x8",
+  "ReviveableActionStateConstructionInfo": {
+    "ClassSize": "0x80",
     "Attributes": [
       {
-        "Name": "OwningCharacter",
-        "Type": "class Character*",
+        "Name": "ActionStateId",
+        "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x0"
+        "Offset": "0x40"
+      },
+      {
+        "Name": "DamageInstance",
+        "Type": "struct DamageInstance",
+        "Size": "0x30",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "CharacterDeathType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "CharacterType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x79"
       }
     ]
   },
@@ -204,17 +215,6 @@
         "Type": "class Character*",
         "Size": "0x8",
         "Offset": "0x38"
-      }
-    ]
-  },
-  "EventRevivableRepresentationSpawnCompleted": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "FromSwimming",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
       }
     ]
   },

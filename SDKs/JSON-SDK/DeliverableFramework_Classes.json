@@ -1,15 +1,15 @@
 {
-  "DeliverableRedirectionLiteralDestinationDescriptor": {
-    "Super": "DeliverableRedirectionDestinationDescriptorBase",
-    "FullSize": "0x60",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x38",
+  "DeliverableComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xe8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "Destination",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x28"
+        "Name": "DeliveryRequirementsAsset",
+        "Type": "class DeliverableRequirementsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0xd8"
       }
     ]
   },
@@ -27,17 +27,31 @@
       }
     ]
   },
-  "DeliverableComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xe8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x20",
+  "DeliverableRedirectionCompositeContext": {
+    "Super": "DeliverableRedirectionContextBase",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "DeliveryRequirementsAsset",
-        "Type": "class DeliverableRequirementsDataAsset*",
-        "Size": "0x8",
-        "Offset": "0xd8"
+        "Name": "Contexts",
+        "Type": "TArray<class DeliverableRedirectionContextBase*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "DeliverableRedirectionLiteralDestinationDescriptor": {
+    "Super": "DeliverableRedirectionDestinationDescriptorBase",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "Destination",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x28"
       }
     ]
   },
@@ -72,20 +86,6 @@
         "Type": "class DeliverableRedirectionContextBase*",
         "Size": "0x8",
         "Offset": "0xd0"
-      }
-    ]
-  },
-  "DeliverableRedirectionCompositeContext": {
-    "Super": "DeliverableRedirectionContextBase",
-    "FullSize": "0x50",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "Contexts",
-        "Type": "TArray<class DeliverableRedirectionContextBase*>",
-        "Size": "0x10",
-        "Offset": "0x28"
       }
     ]
   },

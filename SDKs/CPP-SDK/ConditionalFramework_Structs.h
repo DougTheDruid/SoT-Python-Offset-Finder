@@ -4,6 +4,23 @@
 // https://github.com/DougTheDruid
 
 // Size 0x18
+struct AndCondition
+{
+public:
+	TArray<struct ConditionInstance>                             Conditions;                                        // 0x8(0x10)
+};
+
+
+// Size 0x48
+struct IsSpecifiedActorCondition
+{
+public:
+	struct ConditionContextPayloadSelectorInstance               SpecifyingActorPayloadSelector;                    // 0x8(0x20)
+	struct ConditionContextPayloadSelectorInstance               TargetActorPayloadSelector;                        // 0x28(0x20)
+};
+
+
+// Size 0x18
 struct OrCondition
 {
 public:
@@ -19,6 +36,14 @@ public:
 };
 
 
+// Size 0x30
+struct IsGameOnSpecificPlayModeCondition
+{
+public:
+	char                                                         TargetMode;                                        // 0x28(0x1)
+};
+
+
 // Size 0x28
 struct NotCondition
 {
@@ -27,19 +52,11 @@ public:
 };
 
 
-// Size 0x18
-struct IsFeatureEnabledCondition
+// Size 0x10
+struct TargetConditionContextPayload
 {
 public:
-	struct FeatureFlag                                           Feature;                                           // 0x8(0xc)
-};
-
-
-// Size 0x18
-struct AndCondition
-{
-public:
-	TArray<struct ConditionInstance>                             Conditions;                                        // 0x8(0x10)
+	class Actor*                                                 Target;                                            // 0x8(0x8)
 };
 
 
@@ -52,18 +69,18 @@ public:
 
 
 // Size 0x10
-struct InstigatorConditionContextPayload
+struct WorldObjectConditionContextPayload
 {
 public:
-	class Actor*                                                 Instigator;                                        // 0x8(0x8)
+	class World*                                                 WorldObject;                                       // 0x8(0x8)
 };
 
 
-// Size 0x28
-struct TargetedPayloadConditionBase
+// Size 0x18
+struct IsFeatureEnabledCondition
 {
 public:
-	struct ConditionContextPayloadSelectorInstance               PayloadSelector;                                   // 0x8(0x20)
+	struct FeatureFlag                                           Feature;                                           // 0x8(0xc)
 };
 
 
@@ -75,11 +92,11 @@ public:
 };
 
 
-// Size 0x10
-struct TargetConditionContextPayload
+// Size 0x28
+struct TargetedPayloadConditionBase
 {
 public:
-	class Actor*                                                 Target;                                            // 0x8(0x8)
+	struct ConditionContextPayloadSelectorInstance               PayloadSelector;                                   // 0x8(0x20)
 };
 
 
@@ -92,28 +109,11 @@ public:
 };
 
 
-// Size 0x30
-struct IsGameOnSpecificPlayModeCondition
-{
-public:
-	char                                                         TargetMode;                                        // 0x28(0x1)
-};
-
-
-// Size 0x48
-struct IsSpecifiedActorCondition
-{
-public:
-	struct ConditionContextPayloadSelectorInstance               SpecifyingActorPayloadSelector;                    // 0x8(0x20)
-	struct ConditionContextPayloadSelectorInstance               TargetActorPayloadSelector;                        // 0x28(0x20)
-};
-
-
 // Size 0x10
-struct WorldObjectConditionContextPayload
+struct InstigatorConditionContextPayload
 {
 public:
-	class World*                                                 WorldObject;                                       // 0x8(0x8)
+	class Actor*                                                 Instigator;                                        // 0x8(0x8)
 };
 
 

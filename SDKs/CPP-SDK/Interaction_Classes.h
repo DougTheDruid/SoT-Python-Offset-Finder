@@ -6,22 +6,6 @@
 #include "Interaction_Structs.h"
 
 
-// Size 0xd0 (Full Size[0x6d0] - InheritedSize[0x600]
-class CharacterInteractionComponent: public BoxComponent
-{
-public:
-	class InteractableArea*                                      CurrentOptimalInteractable;                        // 0x600(0x8)
-};
-
-
-// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
-class InteractableService: public Object
-{
-public:
-	TArray<class InteractableArea*>                              InteractableAreas;                                 // 0x38(0x10)
-};
-
-
 // Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
 class InteractableArea: public Object
 {
@@ -30,6 +14,14 @@ public:
 	struct FName                                                 Name;                                              // 0x44(0x8)
 	class Object*                                                Interactable;                                      // 0x50(0x8)
 	class Actor*                                                 Parent;                                            // 0x58(0x8)
+};
+
+
+// Size 0xb0 (Full Size[0x690] - InheritedSize[0x5e0]
+class MockActorWithCharacterInteractionComponent: public Character
+{
+public:
+	class CharacterInteractionComponent*                         CharacterInteractionComponent;                     // 0x5e8(0x8)
 };
 
 
@@ -44,15 +36,23 @@ public:
 };
 
 
-// Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
-class PlayerInteractionTrackerComponent: public ActorComponent
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
+class InteractableService: public Object
 {
 public:
-	TArray<struct UniqueNetIdRepl>                               InteractedPlayers;                                 // 0xd0(0x10)
+	TArray<class InteractableArea*>                              InteractableAreas;                                 // 0x38(0x10)
 };
 
 
-// Size 0x70 (Full Size[0x138] - InheritedSize[0xc8]
+// Size 0xd0 (Full Size[0x6d0] - InheritedSize[0x600]
+class CharacterInteractionComponent: public BoxComponent
+{
+public:
+	class InteractableArea*                                      CurrentOptimalInteractable;                        // 0x600(0x8)
+};
+
+
+// Size 0x80 (Full Size[0x148] - InheritedSize[0xc8]
 class InteractableComponent: public ActorComponent
 {
 public:
@@ -67,16 +67,17 @@ public:
 	bool                                                         RequiresNotSwimming;                               // 0xfc(0x1)
 	float                                                        InteractionRadius;                                 // 0x100(0x4)
 	TArray<class InteractionPrerequisiteBase*>                   InteractionPrerequisites;                          // 0x108(0x10)
-	class InteractableArea*                                      InteractableArea;                                  // 0x118(0x8)
-	char                                                         CurrentInteractionState;                           // 0x120(0x1)
+	struct Vector                                                InteractionPromptOffset;                           // 0x118(0xc)
+	class InteractableArea*                                      InteractableArea;                                  // 0x128(0x8)
+	char                                                         CurrentInteractionState;                           // 0x130(0x1)
 };
 
 
-// Size 0xb0 (Full Size[0x690] - InheritedSize[0x5e0]
-class MockActorWithCharacterInteractionComponent: public Character
+// Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
+class PlayerInteractionTrackerComponent: public ActorComponent
 {
 public:
-	class CharacterInteractionComponent*                         CharacterInteractionComponent;                     // 0x5e8(0x8)
+	TArray<struct UniqueNetIdRepl>                               InteractedPlayers;                                 // 0xd0(0x10)
 };
 
 

@@ -81,6 +81,23 @@
       }
     ]
   },
+  "AnimNotify_SoundSwitch": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "SkeletalMeshReference",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SkeletalMeshCategoryName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "StoryDrivenAudioPortalSetting": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -99,23 +116,6 @@
       {
         "Name": "AudioOutsideSpace",
         "Type": "class AudioSpaceDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "AnimNotify_SoundSwitch": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "SkeletalMeshReference",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SkeletalMeshCategoryName",
-        "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
       }

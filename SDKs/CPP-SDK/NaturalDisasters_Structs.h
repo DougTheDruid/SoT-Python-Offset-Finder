@@ -17,33 +17,6 @@ public:
 };
 
 
-// Size 0xc
-struct VolcanoStateData
-{
-public:
-	char                                                         State;                                             // 0x0(0x1)
-	float                                                        StateDuration;                                     // 0x4(0x4)
-	float                                                        PercentageOfMaxTargetingRange;                     // 0x8(0x4)
-};
-
-
-// Size 0x10
-struct VolcanoStoryCustomisationData
-{
-public:
-	struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
-	class VolcanoSetupDataAsset*                                 VolcanoSetupData;                                  // 0x8(0x8)
-};
-
-
-// Size 0x10
-struct EarthquakeForceFeedbackOption
-{
-public:
-	TArray<struct LandmarkReactionEventPlayForceFeedbackEntry>   ForceFeedback;                                     // 0x0(0x10)
-};
-
-
 // Size 0x10
 struct GeyserManagerStoryCustomisationData
 {
@@ -53,13 +26,11 @@ public:
 };
 
 
-// Size 0x1c
-struct VolcanoProjectileData
+// Size 0x10
+struct EarthquakeForceFeedbackOption
 {
 public:
-	int                                                          WeightedVolcanoProjectileIndex;                    // 0x0(0x4)
-	struct Vector                                                LaunchVelocity;                                    // 0x4(0xc)
-	struct Vector                                                RotationRate;                                      // 0x10(0xc)
+	TArray<struct LandmarkReactionEventPlayForceFeedbackEntry>   ForceFeedback;                                     // 0x0(0x10)
 };
 
 
@@ -81,67 +52,12 @@ public:
 };
 
 
-// Size 0x18
-struct VolcanoTarget
-{
-public:
-	char                                                         Type;                                              // 0x0(0x1)
-	char                                                         HitType;                                           // 0x1(0x1)
-	class Actor*                                                 Target;                                            // 0x8(0x8)
-	int                                                          NumExtraShots;                                     // 0x10(0x4)
-};
-
-
-// Size 0x10
-struct VolcanoTargetCoolDown
-{
-public:
-	class Actor*                                                 Target;                                            // 0x0(0x8)
-};
-
-
-// Size 0x1
-struct EventVolcanoStateChanged
-{
-public:
-	char                                                         State;                                             // 0x0(0x1)
-};
-
-
-// Size 0x10
-struct EarthquakeStoryCustomisationData
-{
-public:
-	struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
-	class EarthquakeSetupDataAsset*                              EarthquakeSetupData;                               // 0x8(0x8)
-};
-
-
 // Size 0x8
 struct AshenLordWorldEndCloudAnimation
 {
 public:
 	float                                                        ServerStartTime;                                   // 0x0(0x4)
 	float                                                        ServerLifeTime;                                    // 0x4(0x4)
-};
-
-
-// Size 0x10
-struct VolcanoSetupDataEmbersEntry
-{
-public:
-	float                                                        MaxDistanceInMetres;                               // 0x0(0x4)
-	class Object*                                                Effect;                                            // 0x8(0x8)
-};
-
-
-// Size 0xc
-struct GeyserSpawnAngleOption
-{
-public:
-	float                                                        Weight;                                            // 0x0(0x4)
-	float                                                        Direction;                                         // 0x4(0x4)
-	float                                                        Range;                                             // 0x8(0x4)
 };
 
 
@@ -164,6 +80,90 @@ public:
 	struct WeightedProbabilityRange                              OnTargetNumExtraShots;                             // 0x10(0x20)
 	struct WeightedProbabilityRange                              NearMissNumExtraShots;                             // 0x30(0x20)
 	float                                                        CoolDownDuration;                                  // 0x50(0x4)
+};
+
+
+// Size 0xc
+struct GeyserSpawnAngleOption
+{
+public:
+	float                                                        Weight;                                            // 0x0(0x4)
+	float                                                        Direction;                                         // 0x4(0x4)
+	float                                                        Range;                                             // 0x8(0x4)
+};
+
+
+// Size 0x1
+struct EventVolcanoStateChanged
+{
+public:
+	char                                                         State;                                             // 0x0(0x1)
+};
+
+
+// Size 0x10
+struct VolcanoStoryCustomisationData
+{
+public:
+	struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
+	class VolcanoSetupDataAsset*                                 VolcanoSetupData;                                  // 0x8(0x8)
+};
+
+
+// Size 0x10
+struct EarthquakeStoryCustomisationData
+{
+public:
+	struct StoryFlag                                             StoryFlag;                                         // 0x0(0x8)
+	class EarthquakeSetupDataAsset*                              EarthquakeSetupData;                               // 0x8(0x8)
+};
+
+
+// Size 0x1c
+struct VolcanoProjectileData
+{
+public:
+	int                                                          WeightedVolcanoProjectileIndex;                    // 0x0(0x4)
+	struct Vector                                                LaunchVelocity;                                    // 0x4(0xc)
+	struct Vector                                                RotationRate;                                      // 0x10(0xc)
+};
+
+
+// Size 0x18
+struct VolcanoTarget
+{
+public:
+	char                                                         Type;                                              // 0x0(0x1)
+	char                                                         HitType;                                           // 0x1(0x1)
+	class Actor*                                                 Target;                                            // 0x8(0x8)
+	int                                                          NumExtraShots;                                     // 0x10(0x4)
+};
+
+
+// Size 0x10
+struct VolcanoTargetCoolDown
+{
+public:
+	class Actor*                                                 Target;                                            // 0x0(0x8)
+};
+
+
+// Size 0xc
+struct VolcanoStateData
+{
+public:
+	char                                                         State;                                             // 0x0(0x1)
+	float                                                        StateDuration;                                     // 0x4(0x4)
+	float                                                        PercentageOfMaxTargetingRange;                     // 0x8(0x4)
+};
+
+
+// Size 0x10
+struct VolcanoSetupDataEmbersEntry
+{
+public:
+	float                                                        MaxDistanceInMetres;                               // 0x0(0x4)
+	class Object*                                                Effect;                                            // 0x8(0x8)
 };
 
 

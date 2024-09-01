@@ -79,31 +79,31 @@ PlayerMysteriousNoteComponent:
 WieldableMysteriousNote:
   Attributes:
   - Name: RenderTarget
-    Offset: '0x7f8'
+    Offset: '0x800'
     Size: '0x8'
     Type: class MaybeCompressedCanvasRenderTarget2D*
   - Name: CanvasWidth
-    Offset: '0x800'
+    Offset: '0x808'
     Size: '0x4'
     Type: int
   - Name: CanvasHeight
-    Offset: '0x804'
+    Offset: '0x80c'
     Size: '0x4'
     Type: int
   - Name: FontScale
-    Offset: '0x808'
+    Offset: '0x810'
     Size: '0x4'
     Type: float
   - Name: NoteLayout
-    Offset: '0x868'
+    Offset: '0x870'
     Size: '0x8'
     Type: class WieldableMysteriousNoteLayout*
   - Name: UsableWieldableComponent
-    Offset: '0x870'
+    Offset: '0x878'
     Size: '0x8'
     Type: class UsableWieldableComponent*
   - Name: InventoryItemComponent
-    Offset: '0x878'
+    Offset: '0x880'
     Size: '0x8'
     Type: class InventoryItemComponent*
   ClassSize: '0x1a0'

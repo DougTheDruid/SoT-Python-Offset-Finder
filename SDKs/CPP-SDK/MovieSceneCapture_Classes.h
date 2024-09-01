@@ -6,14 +6,6 @@
 #include "MovieSceneCapture_Structs.h"
 
 
-// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
-class ImageCaptureSettings: public FrameGrabberProtocolSettings
-{
-public:
-	int                                                          CompressionQuality;                                // 0x30(0x4)
-};
-
-
 // Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
 class CompositionGraphCaptureSettings: public MovieSceneCaptureProtocolSettings
 {
@@ -33,6 +25,14 @@ public:
 	bool                                                         bUseCompression;                                   // 0x30(0x1)
 	float                                                        CompressionQuality;                                // 0x34(0x4)
 	struct FString                                               VideoCodec;                                        // 0x38(0x10)
+};
+
+
+// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
+class ImageCaptureSettings: public FrameGrabberProtocolSettings
+{
+public:
+	int                                                          CompressionQuality;                                // 0x30(0x4)
 };
 
 

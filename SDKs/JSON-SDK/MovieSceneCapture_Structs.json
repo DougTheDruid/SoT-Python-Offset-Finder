@@ -10,17 +10,6 @@
       }
     ]
   },
-  "CaptureProtocolID": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Identifier",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "CaptureResolution": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -35,6 +24,17 @@
         "Type": "uint32",
         "Size": "0x4",
         "Offset": "0x4"
+      }
+    ]
+  },
+  "CaptureProtocolID": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Identifier",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
       }
     ]
   },

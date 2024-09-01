@@ -6,23 +6,6 @@
 #include "Counter_Structs.h"
 
 
-// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
-class CountHolderComponent: public ActorComponent
-{
-public:
-	TArray<struct CountHolder>                                   CountHolders;                                      // 0xd0(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
-class IsCountAmountMetStatCondition: public TargetedStatCondition
-{
-public:
-	int                                                          CountAmount;                                       // 0x30(0x4)
-	class UClass*                                                CountType;                                         // 0x38(0x8)
-};
-
-
 // Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
 class CountMaterialDisplayComponent: public ActorComponent
 {
@@ -39,6 +22,23 @@ class CountType: public Object
 {
 public:
 	struct FName                                                 UniqueTextIdentifier;                              // 0x28(0x8)
+};
+
+
+// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
+class CountHolderComponent: public ActorComponent
+{
+public:
+	TArray<struct CountHolder>                                   CountHolders;                                      // 0xd0(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
+class IsCountAmountMetStatCondition: public TargetedStatCondition
+{
+public:
+	int                                                          CountAmount;                                       // 0x30(0x4)
+	class UClass*                                                CountType;                                         // 0x38(0x8)
 };
 
 

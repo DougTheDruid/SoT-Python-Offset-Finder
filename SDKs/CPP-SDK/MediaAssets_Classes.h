@@ -35,6 +35,39 @@ public:
 };
 
 
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class BaseMediaSource: public MediaSource
+{
+public:
+	struct FName                                                 PlayerName;                                        // 0x80(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class PlatformMediaSource: public MediaSource
+{
+public:
+	class MediaSource*                                           MediaSource;                                       // 0x80(0x8)
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class MovieAssetContainer: public DataAsset
+{
+public:
+	TArray<class MediaTexture*>                                  MediaTextures;                                     // 0x28(0x10)
+	TArray<class MediaPlayer*>                                   MediaPlayers;                                      // 0x38(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class MediaTimeStampInfo: public Object
+{
+public:
+	struct Timespan                                              Time;                                              // 0x28(0x8)
+};
+
+
 // Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
 class MediaComponent: public ActorComponent
 {
@@ -67,39 +100,6 @@ class MediaPlaylist: public Object
 {
 public:
 	TArray<class MediaSource*>                                   Items;                                             // 0x28(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class MediaTimeStampInfo: public Object
-{
-public:
-	struct Timespan                                              Time;                                              // 0x28(0x8)
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class MovieAssetContainer: public DataAsset
-{
-public:
-	TArray<class MediaTexture*>                                  MediaTextures;                                     // 0x28(0x10)
-	TArray<class MediaPlayer*>                                   MediaPlayers;                                      // 0x38(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
-class BaseMediaSource: public MediaSource
-{
-public:
-	struct FName                                                 PlayerName;                                        // 0x80(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
-class PlatformMediaSource: public MediaSource
-{
-public:
-	class MediaSource*                                           MediaSource;                                       // 0x80(0x8)
 };
 
 

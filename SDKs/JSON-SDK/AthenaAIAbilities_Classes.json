@@ -1,45 +1,53 @@
 {
-  "ElectricShieldBuffComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x1d0",
+  "EelThrowAIAbilityParams": {
+    "Super": "AthenaAIAbilityParams",
+    "FullSize": "0xe8",
     "InheritedSize": "0xc8",
-    "ClassSize": "0x108",
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "ShieldVFXAsset",
-        "Type": "class ParticleSystem*",
+        "Name": "MinMaxNumberOfAttacksBeforeEnd",
+        "Type": "struct WeightedProbabilityRange",
+        "Size": "0x20",
+        "Offset": "0xc8"
+      }
+    ]
+  },
+  "AreaOfEffectHealAIAbilityParams": {
+    "Super": "AthenaAIAbilityParams",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ChanceToGoOnCooldownInsteadOfExecuting",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "HealthPercentageThresholdToHeal",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xcc"
+      },
+      {
+        "Name": "StatusEffectZone",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xd0"
       },
       {
-        "Name": "VfxSocketName",
-        "Type": "struct FName",
-        "Size": "0x8",
+        "Name": "MinimumTimeSpentHealing",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0xd8"
       },
       {
-        "Name": "StartAudioLoopEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "StopAudioLoopEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "ShieldEffectComponent",
-        "Type": "class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "IsShieldActive",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xf8"
+        "Name": "MaximumTimeSpentHealing",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xdc"
       }
     ]
   },
@@ -71,48 +79,6 @@
       }
     ]
   },
-  "BullRushAIAbility": {
-    "Super": "MeleeChargeAIAbility",
-    "FullSize": "0xb8",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "CachedWorld",
-        "Type": "class World*",
-        "Size": "0x8",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "StatusResponseActivateElectricShield": {
-    "Super": "StatusResponse",
-    "FullSize": "0x38",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Duration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "EelThrowAIAbility": {
-    "Super": "AthenaAIAbility",
-    "FullSize": "0x80",
-    "InheritedSize": "0x78",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "CachedBlackboardComponent",
-        "Type": "class BlackboardComponent*",
-        "Size": "0x8",
-        "Offset": "0x78"
-      }
-    ]
-  },
   "BullRushAIAbilityParams": {
     "Super": "MeleeChargeAIAbilityParams",
     "FullSize": "0x100",
@@ -139,17 +105,31 @@
       }
     ]
   },
-  "EelThrowAIAbilityParams": {
-    "Super": "AthenaAIAbilityParams",
-    "FullSize": "0xe8",
-    "InheritedSize": "0xc8",
+  "EelThrowAIAbility": {
+    "Super": "AthenaAIAbility",
+    "FullSize": "0x80",
+    "InheritedSize": "0x78",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "CachedBlackboardComponent",
+        "Type": "class BlackboardComponent*",
+        "Size": "0x8",
+        "Offset": "0x78"
+      }
+    ]
+  },
+  "BullRushAIAbility": {
+    "Super": "MeleeChargeAIAbility",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x98",
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "MinMaxNumberOfAttacksBeforeEnd",
-        "Type": "struct WeightedProbabilityRange",
-        "Size": "0x20",
-        "Offset": "0xc8"
+        "Name": "CachedWorld",
+        "Type": "class World*",
+        "Size": "0x8",
+        "Offset": "0x98"
       }
     ]
   },
@@ -191,41 +171,61 @@
       }
     ]
   },
-  "AreaOfEffectHealAIAbilityParams": {
-    "Super": "AthenaAIAbilityParams",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x18",
+  "StatusResponseActivateElectricShield": {
+    "Super": "StatusResponse",
+    "FullSize": "0x38",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "ChanceToGoOnCooldownInsteadOfExecuting",
+        "Name": "Duration",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xc8"
-      },
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "ElectricShieldBuffComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x1d0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x108",
+    "Attributes": [
       {
-        "Name": "HealthPercentageThresholdToHeal",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xcc"
-      },
-      {
-        "Name": "StatusEffectZone",
-        "Type": "class UClass*",
+        "Name": "ShieldVFXAsset",
+        "Type": "class ParticleSystem*",
         "Size": "0x8",
         "Offset": "0xd0"
       },
       {
-        "Name": "MinimumTimeSpentHealing",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "VfxSocketName",
+        "Type": "struct FName",
+        "Size": "0x8",
         "Offset": "0xd8"
       },
       {
-        "Name": "MaximumTimeSpentHealing",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xdc"
+        "Name": "StartAudioLoopEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "StopAudioLoopEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "ShieldEffectComponent",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "IsShieldActive",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xf8"
       }
     ]
   },

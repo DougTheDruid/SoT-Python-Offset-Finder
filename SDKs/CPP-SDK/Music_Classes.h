@@ -34,6 +34,15 @@ public:
 };
 
 
+// Size 0x30 (Full Size[0x400] - InheritedSize[0x3d0]
+class SynchedMusicZoneComponent: public MusicZoneComponent
+{
+public:
+	float                                                        StartDelayTime;                                    // 0x3c8(0x4)
+	int                                                          PlayFromStartTimeMS;                               // 0x3cc(0x4)
+};
+
+
 // Size 0x20 (Full Size[0x3f0] - InheritedSize[0x3d0]
 class AISpawnerMusicZoneComponent: public MusicZoneComponent
 {
@@ -42,15 +51,6 @@ public:
 	class AISpawner*                                             AISpawner;                                         // 0x3d0(0x8)
 	TArray<class Pawn*>                                          SpawnerPawns;                                      // 0x3d8(0x10)
 	char                                                         SpawnerState;                                      // 0x3e8(0x1)
-};
-
-
-// Size 0x30 (Full Size[0x400] - InheritedSize[0x3d0]
-class SynchedMusicZoneComponent: public MusicZoneComponent
-{
-public:
-	float                                                        StartDelayTime;                                    // 0x3c8(0x4)
-	int                                                          PlayFromStartTimeMS;                               // 0x3cc(0x4)
 };
 
 

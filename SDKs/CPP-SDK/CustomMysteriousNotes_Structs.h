@@ -12,6 +12,15 @@ public:
 
 
 // Size 0x14
+struct CreateMysteriousNoteGameServerResponseModel
+{
+public:
+	bool                                                         Success;                                           // 0x0(0x1)
+	struct Guid                                                  NoteId;                                            // 0x4(0x10)
+};
+
+
+// Size 0x14
 struct DestroyMysteriousNoteGameServerRequestModel
 {
 public:
@@ -29,15 +38,6 @@ public:
 	struct FString                                               NoteTitle;                                         // 0x18(0x10)
 	struct FString                                               NoteBody;                                          // 0x28(0x10)
 	bool                                                         AvailableInSaferSeas;                              // 0x38(0x1)
-};
-
-
-// Size 0x14
-struct CreateMysteriousNoteGameServerResponseModel
-{
-public:
-	bool                                                         Success;                                           // 0x0(0x1)
-	struct Guid                                                  NoteId;                                            // 0x4(0x10)
 };
 
 

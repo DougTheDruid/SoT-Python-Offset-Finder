@@ -1,4 +1,21 @@
 {
+  "NamedInterface": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "InterfaceName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "InterfaceObject",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "OnlineStoreCatalogItem": {
     "ClassSize": "0x90",
     "Attributes": [
@@ -64,8 +81,25 @@
       }
     ]
   },
-  "NamedInterface": {
-    "ClassSize": "0x10",
+  "InAppPurchaseProductRequest": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ProductIdentifier",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "bIsConsumable",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "NamedInterfaceDef": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "InterfaceName",
@@ -74,9 +108,9 @@
         "Offset": "0x0"
       },
       {
-        "Name": "InterfaceObject",
-        "Type": "class Object*",
-        "Size": "0x8",
+        "Name": "InterfaceClassName",
+        "Type": "struct FString",
+        "Size": "0x10",
         "Offset": "0x8"
       }
     ]
@@ -95,58 +129,6 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
-      }
-    ]
-  },
-  "AchievementUpdatedEvent": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "AchievementId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Progress",
-        "Type": "uint32",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Successful",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "Reason",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "Platform",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "NamedInterfaceDef": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "InterfaceName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "InterfaceClassName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x8"
       }
     ]
   },
@@ -215,20 +197,38 @@
       }
     ]
   },
-  "InAppPurchaseProductRequest": {
-    "ClassSize": "0x18",
+  "AchievementUpdatedEvent": {
+    "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "ProductIdentifier",
+        "Name": "AchievementId",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "bIsConsumable",
+        "Name": "Progress",
+        "Type": "uint32",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Successful",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x10"
+        "Offset": "0x14"
+      },
+      {
+        "Name": "Reason",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Platform",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },

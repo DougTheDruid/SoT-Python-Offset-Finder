@@ -6,6 +6,66 @@
 #include "EnchantedCompass_Structs.h"
 
 
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class TaleQuestRotatingCompassSplinePathSetupAndWaitForCompletionStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableActor                                    SplinePathActor;                                   // 0x80(0x30)
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class TaleQuestMultiTargetCompassRemoveTrackedLocationStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableGuid                                     TargetID;                                          // 0x80(0x30)
+};
+
+
+// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
+class TaleQuestMultiTargetCompassServiceDesc: public TaleQuestToolServiceDesc
+{
+public:
+	class UClass*                                                CompassDesc;                                       // 0x30(0x8)
+};
+
+
+// Size 0x90 (Full Size[0xa70] - InheritedSize[0x9e0]
+class RotatingCompass: public EnchantedCompass
+{
+public:
+	class PickupableComponent*                                   PickupableComponent;                               // 0x9d8(0x8)
+	class PoseableMeshMemoryConstraintComponent*                 PoseableStashedMeshComponent;                      // 0x9e0(0x8)
+	class WieldableInteractableComponent*                        WieldableInteractableComponent;                    // 0x9e8(0x8)
+	class Actor*                                                 SplinePathActor;                                   // 0x9f0(0x8)
+	class CurveFloat*                                            RotationSequenceCurve;                             // 0x9f8(0x8)
+	bool                                                         StartRotationSequenceCurve;                        // 0xa00(0x1)
+	float                                                        SplineDistanceOffset;                              // 0xa04(0x4)
+	float                                                        TargetYawAngleBeforeRotationSequence;              // 0xa08(0x4)
+	struct RotatingCompassAudioParams                            AudioParams;                                       // 0xa10(0x48)
+	float                                                        MaxSpeedToTriggerOneShotSfx;                       // 0xa58(0x4)
+};
+
+
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class TaleQuestSetRotationCurveForRotatingCompassStepDesc: public TaleQuestStepDesc
+{
+public:
+	class CurveFloat*                                            RotationSequenceCurve;                             // 0x80(0x8)
+};
+
+
+// Size 0x30 (Full Size[0x920] - InheritedSize[0x8f0]
+class MultiTargetEnchantedCompass: public Compass
+{
+public:
+	TArray<struct Vector>                                        Locations;                                         // 0x8e8(0x10)
+	TArray<struct Guid>                                          LocationIds;                                       // 0x8f8(0x10)
+	class InventoryItemComponent*                                InventoryItem;                                     // 0x908(0x8)
+	class EnchantedCompassProximityAnnouncementComponent*        ProximityAnnouncementComponent;                    // 0x910(0x8)
+};
+
+
 // Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
 class TaleQuestMultiTargetCompassAddTrackedLocationStepDesc: public TaleQuestStepDesc
 {
@@ -20,58 +80,6 @@ class TaleQuestSetCompassTargetBaseStepDesc: public TaleQuestStepDesc
 {
 public:
 	char                                                         TargetUpdateReason;                                // 0x80(0x1)
-};
-
-
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class TaleQuestMultiTargetCompassRemoveTrackedLocationStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableGuid                                     TargetID;                                          // 0x80(0x30)
-};
-
-
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class TaleQuestRotatingCompassSplinePathSetupAndWaitForCompletionStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableActor                                    SplinePathActor;                                   // 0x80(0x30)
-};
-
-
-// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
-class TaleQuestMultiTargetCompassAddTrackedLocationStep: public TaleQuestStep
-{
-public:
-	class TaleQuestMultiTargetCompassAddTrackedLocationStepDesc* Desc;                                              // 0x98(0x8)
-};
-
-
-// Size 0xc0 (Full Size[0x120] - InheritedSize[0x60]
-class TaleQuestRotatingCompassService: public TaleQuestService
-{
-public:
-	class Actor*                                                 SplinePathActor;                                   // 0x78(0x8)
-	class RotatingCompass*                                       RotatingCompass;                                   // 0x80(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
-class TaleQuestSetRotationCurveForRotatingCompassStepDesc: public TaleQuestStepDesc
-{
-public:
-	class CurveFloat*                                            RotationSequenceCurve;                             // 0x80(0x8)
-};
-
-
-// Size 0x30 (Full Size[0x910] - InheritedSize[0x8e0]
-class MultiTargetEnchantedCompass: public Compass
-{
-public:
-	TArray<struct Vector>                                        Locations;                                         // 0x8e0(0x10)
-	TArray<struct Guid>                                          LocationIds;                                       // 0x8f0(0x10)
-	class InventoryItemComponent*                                InventoryItem;                                     // 0x900(0x8)
-	class EnchantedCompassProximityAnnouncementComponent*        ProximityAnnouncementComponent;                    // 0x908(0x8)
 };
 
 
@@ -90,28 +98,20 @@ public:
 };
 
 
-// Size 0xa0 (Full Size[0xa70] - InheritedSize[0x9d0]
-class RotatingCompass: public EnchantedCompass
+// Size 0xc0 (Full Size[0x120] - InheritedSize[0x60]
+class TaleQuestRotatingCompassService: public TaleQuestService
 {
 public:
-	class PickupableComponent*                                   PickupableComponent;                               // 0x9d0(0x8)
-	class PoseableMeshMemoryConstraintComponent*                 PoseableStashedMeshComponent;                      // 0x9d8(0x8)
-	class WieldableInteractableComponent*                        WieldableInteractableComponent;                    // 0x9e0(0x8)
-	class Actor*                                                 SplinePathActor;                                   // 0x9e8(0x8)
-	class CurveFloat*                                            RotationSequenceCurve;                             // 0x9f0(0x8)
-	bool                                                         StartRotationSequenceCurve;                        // 0x9f8(0x1)
-	float                                                        SplineDistanceOffset;                              // 0x9fc(0x4)
-	float                                                        TargetYawAngleBeforeRotationSequence;              // 0xa00(0x4)
-	struct RotatingCompassAudioParams                            AudioParams;                                       // 0xa08(0x48)
-	float                                                        MaxSpeedToTriggerOneShotSfx;                       // 0xa50(0x4)
+	class Actor*                                                 SplinePathActor;                                   // 0x78(0x8)
+	class RotatingCompass*                                       RotatingCompass;                                   // 0x80(0x8)
 };
 
 
-// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
-class TaleQuestMultiTargetCompassServiceDesc: public TaleQuestToolServiceDesc
+// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
+class TaleQuestMultiTargetCompassAddTrackedLocationStep: public TaleQuestStep
 {
 public:
-	class UClass*                                                CompassDesc;                                       // 0x30(0x8)
+	class TaleQuestMultiTargetCompassAddTrackedLocationStepDesc* Desc;                                              // 0x98(0x8)
 };
 
 

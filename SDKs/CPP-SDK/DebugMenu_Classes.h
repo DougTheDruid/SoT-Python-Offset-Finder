@@ -6,14 +6,6 @@
 #include "DebugMenu_Structs.h"
 
 
-// Size 0x50 (Full Size[0x118] - InheritedSize[0xc8]
-class DebugMenuComponent: public ActorComponent
-{
-public:
-	class DebugMenu*                                             DebugMenuInstance;                                 // 0xf0(0x8)
-};
-
-
 // Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
 class DebugMenuDataAsset: public DataAsset
 {
@@ -22,6 +14,14 @@ public:
 	TArray<struct DebugMenuDataAssetEntry>                       MenuEntires;                                       // 0x38(0x10)
 	TArray<struct DebugMenuButtonShortcut>                       ButtonShortcuts;                                   // 0x48(0x10)
 	TArray<class DebugMenuEntryGenerator*>                       MenuEntryGenerators;                               // 0x58(0x10)
+};
+
+
+// Size 0x50 (Full Size[0x118] - InheritedSize[0xc8]
+class DebugMenuComponent: public ActorComponent
+{
+public:
+	class DebugMenu*                                             DebugMenuInstance;                                 // 0xf0(0x8)
 };
 
 

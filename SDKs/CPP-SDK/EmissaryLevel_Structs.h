@@ -4,129 +4,6 @@
 // https://github.com/DougTheDruid
 
 // Size 0x20
-struct EmissaryDiscoveredLootNetworkEvent
-{
-public:
-	struct FName                                                 CompanyName;                                       // 0x18(0x8)
-};
-
-
-// Size 0x8
-struct EmissaryGlobalActionRewardBoostEvent
-{
-public:
-	class UClass*                                                GameEventType;                                     // 0x0(0x8)
-};
-
-
-// Size 0x1
-struct EmissaryNonQuestCompanyActionRewardBoostEvent
-{
-public:
-	char                                                         CompanyActionType;                                 // 0x0(0x1)
-};
-
-
-// Size 0x30
-struct MaterialVisualisation
-{
-public:
-	struct ActorComponentSelector                                TargetMesh;                                        // 0x0(0x10)
-	float                                                        TransitionTime;                                    // 0x10(0x4)
-	int                                                          MaterialIndex;                                     // 0x14(0x4)
-	struct FName                                                 ParameterName;                                     // 0x18(0x8)
-	float                                                        ActiveValue;                                       // 0x20(0x4)
-	float                                                        InactiveValue;                                     // 0x24(0x4)
-	class MaterialInstanceDynamic*                               DynamicMaterial;                                   // 0x28(0x8)
-};
-
-
-// Size 0x18
-struct EmissaryGlobalActionRewardBoostServiceEvent
-{
-public:
-	class UClass*                                                FinishedEventType;                                 // 0x0(0x8)
-	struct Guid                                                  AssociatedCrew;                                    // 0x8(0x10)
-};
-
-
-// Size 0x8
-struct EmissaryCompanyActionReward
-{
-public:
-	char                                                         CompanyActionType;                                 // 0x0(0x1)
-	float                                                        Amount;                                            // 0x4(0x4)
-};
-
-
-// Size 0x8
-struct EmissaryEncounteredAIShipEvent
-{
-public:
-	struct FName                                                 CompanyName;                                       // 0x0(0x8)
-};
-
-
-// Size 0x28
-struct EmissaryProgressUpdatedNetworkEvent
-{
-public:
-	float                                                        OldRepTotal;                                       // 0x18(0x4)
-	float                                                        NewRepTotal;                                       // 0x1c(0x4)
-	struct FName                                                 CompanyId;                                         // 0x20(0x8)
-};
-
-
-// Size 0x1c
-struct EmissarySessionEndTelemetryEvent
-{
-public:
-	struct Guid                                                  EmissarySessionId;                                 // 0x0(0x10)
-	struct FName                                                 EmissaryCompany;                                   // 0x10(0x8)
-	char                                                         DisbandedReason;                                   // 0x18(0x1)
-};
-
-
-// Size 0xc
-struct EmissaryCompanyCampaignScale
-{
-public:
-	struct FName                                                 Campaign;                                          // 0x0(0x8)
-	float                                                        Scale;                                             // 0x8(0x4)
-};
-
-
-// Size 0x1c
-struct EmissaryCompanyActionRewardBoostServiceEvent
-{
-public:
-	struct FName                                                 AssociatedCompany;                                 // 0x0(0x8)
-	char                                                         CompanyActionType;                                 // 0x8(0x1)
-	struct Guid                                                  AssociatedCrew;                                    // 0xc(0x10)
-};
-
-
-// Size 0x28
-struct ParticleVisualisation
-{
-public:
-	struct ActorComponentSelector                                TargetParticles;                                   // 0x0(0x10)
-	float                                                        Delay;                                             // 0x10(0x4)
-	float                                                        DelayAfterPutOutParticles;                         // 0x14(0x4)
-	class ParticleSystem*                                        PutOutParticles;                                   // 0x18(0x8)
-	class ParticleSystemComponent*                               ParticleSystem;                                    // 0x20(0x8)
-};
-
-
-// Size 0x8
-struct EmissaryActivated
-{
-public:
-	struct FName                                                 CompanyName;                                       // 0x0(0x8)
-};
-
-
-// Size 0x20
 struct EmissaryDiscoveredCargoRunCrateNetworkEvent
 {
 public:
@@ -134,95 +11,30 @@ public:
 };
 
 
-// Size 0x20
-struct EmissaryLevelChanged
+// Size 0x8
+struct EmissaryVoteAddedEvent
 {
 public:
-	int                                                          NewLevel;                                          // 0x0(0x4)
-	int                                                          OldLevel;                                          // 0x4(0x4)
-	struct Guid                                                  AssociatedCrew;                                    // 0x8(0x10)
-	struct FName                                                 CompanyName;                                       // 0x18(0x8)
+	struct FName                                                 Company;                                           // 0x0(0x8)
 };
 
 
 // Size 0x8
-struct EmissaryKillScaleFactor
+struct EmissaryFactionActionReward
 {
 public:
-	int                                                          KillCount;                                         // 0x0(0x4)
-	float                                                        ScaleFactor;                                       // 0x4(0x4)
+	char                                                         FactionActionType;                                 // 0x0(0x1)
+	float                                                        Amount;                                            // 0x4(0x4)
 };
 
 
-// Size 0x34
-struct UpdateGuildEmissaryValueForCompany
-{
-public:
-	struct Guid                                                  GuildId;                                           // 0x0(0x10)
-	struct FName                                                 Company;                                           // 0x10(0x8)
-	struct Guid                                                  AssociatedCrew;                                    // 0x18(0x10)
-	int                                                          UpdateAmount;                                      // 0x28(0x4)
-	int                                                          From;                                              // 0x2c(0x4)
-	int                                                          To;                                                // 0x30(0x4)
-};
-
-
-// Size 0x30
-struct UpdateEmissaryValueForCompany
+// Size 0x28
+struct ReactivateEmissaryForMigratedCrew
 {
 public:
 	struct Guid                                                  SessionId;                                         // 0x0(0x10)
 	struct FName                                                 Company;                                           // 0x10(0x8)
 	struct Guid                                                  AssociatedCrew;                                    // 0x18(0x10)
-	char                                                         RewardType;                                        // 0x28(0x1)
-	int                                                          UpdateAmount;                                      // 0x2c(0x4)
-};
-
-
-// Size 0x10
-struct EmissaryLedgerVisited
-{
-public:
-	struct FString                                               CompanyId;                                         // 0x0(0x10)
-};
-
-
-// Size 0x18
-struct TrackedPlayerKillEntry
-{
-public:
-	struct FString                                               KilledPlayer;                                      // 0x0(0x10)
-	int                                                          KillCount;                                         // 0x10(0x4)
-	float                                                        KillTime;                                          // 0x14(0x4)
-};
-
-
-// Size 0x14
-struct EmissaryLevelProgressUpdatedEvent
-{
-public:
-	float                                                        LevelProgress;                                     // 0x0(0x4)
-	struct Guid                                                  AssociatedCrew;                                    // 0x4(0x10)
-};
-
-
-// Size 0x28
-struct LightVisualisation
-{
-public:
-	struct ActorComponentSelector                                TargetLight;                                       // 0x0(0x10)
-	float                                                        TransitionTime;                                    // 0x10(0x4)
-	float                                                        ActiveValue;                                       // 0x14(0x4)
-	float                                                        InactiveValue;                                     // 0x18(0x4)
-	class LightComponent*                                        Light;                                             // 0x20(0x8)
-};
-
-
-// Size 0x20
-struct EmissarySoldLootNetworkEvent
-{
-public:
-	struct FName                                                 CompanyName;                                       // 0x18(0x8)
 };
 
 
@@ -236,159 +48,21 @@ public:
 
 
 // Size 0x8
-struct EmissaryVoteAddedEvent
-{
-public:
-	struct FName                                                 Company;                                           // 0x0(0x8)
-};
-
-
-// Size 0x14
-struct EmissaryFactionActionRewardBoostServiceEvent
-{
-public:
-	char                                                         FactionActionType;                                 // 0x0(0x1)
-	struct Guid                                                  AssociatedCrew;                                    // 0x4(0x10)
-};
-
-
-// Size 0x28
-struct EmissaryKilledAnotherEmissaryNetworkEvent
-{
-public:
-	struct FName                                                 CompanyName;                                       // 0x18(0x8)
-	struct FName                                                 VictimCompanyName;                                 // 0x20(0x8)
-};
-
-
-// Size 0x2c
-struct EmissaryRoleplayActionTelemetryEvent
-{
-public:
-	struct Guid                                                  EmissarySessionId;                                 // 0x0(0x10)
-	struct FName                                                 EmissaryCompany;                                   // 0x10(0x8)
-	int                                                          EmissaryRank;                                      // 0x18(0x4)
-	char                                                         ActionName;                                        // 0x1c(0x1)
-	int                                                          PointsRewarded;                                    // 0x20(0x4)
-	int                                                          PointsAccumulated;                                 // 0x24(0x4)
-	int                                                          PointsRequiredToNextRank;                          // 0x28(0x4)
-};
-
-
-// Size 0x4
-struct EmissaryLevelStatusStatInfo
-{
-public:
-	struct PlayerStat                                            StatToFire;                                        // 0x0(0x4)
-};
-
-
-// Size 0x20
-struct EmissaryMaxRankQuestProviderQuestOverrides
-{
-public:
-	struct FeatureFlag                                           FeatureFlag;                                       // 0x0(0xc)
-	struct StringAssetReference                                  QuestDesc;                                         // 0x10(0x10)
-};
-
-
-// Size 0xc
-struct EmissaryStateUpdateEvent
-{
-public:
-	float                                                        CurrentRepTotal;                                   // 0x0(0x4)
-	struct FName                                                 CompanyId;                                         // 0x4(0x8)
-};
-
-
-// Size 0x20
-struct EmissarySecuredLootOnShipNetworkEvent
-{
-public:
-	struct FName                                                 CompanyName;                                       // 0x18(0x8)
-};
-
-
-// Size 0x14
-struct EmissaryQuestCompanyActionRewardBoostEvent
+struct EmissaryCompanyActionReward
 {
 public:
 	char                                                         CompanyActionType;                                 // 0x0(0x1)
-	struct Guid                                                  QuestId;                                           // 0x4(0x10)
+	float                                                        Amount;                                            // 0x4(0x4)
 };
 
 
-// Size 0x4
-struct ChaliceStatuePhaseUpdate
-{
-public:
-	int                                                          NewLevel;                                          // 0x0(0x4)
-};
-
-
-// Size 0x28
-struct ActivateEmissaryForCrew
-{
-public:
-	struct Guid                                                  SessionId;                                         // 0x0(0x10)
-	struct FName                                                 Company;                                           // 0x10(0x8)
-	struct Guid                                                  AssociatedCrew;                                    // 0x18(0x10)
-};
-
-
-// Size 0x8
-struct EmissaryEventAward
-{
-public:
-	bool                                                         FirstTimeOnly;                                     // 0x0(0x1)
-	bool                                                         NotOriginalOwner;                                  // 0x1(0x1)
-	char                                                         ItemQualityRequirement;                            // 0x2(0x1)
-	int                                                          EmissaryLevelIncrease;                             // 0x4(0x4)
-};
-
-
-// Size 0xc
-struct EmissaryLevelRankChange
-{
-public:
-	int                                                          NewLevel;                                          // 0x0(0x4)
-	struct FName                                                 CompanyName;                                       // 0x4(0x8)
-};
-
-
-// Size 0x30
-struct EmissaryMaxLevelReachedNetworkEvent
+// Size 0x38
+struct EmissarySunkNetworkEvent
 {
 public:
 	class DataAsset*                                             PopUpDesc;                                         // 0x18(0x8)
-	struct Guid                                                  GuildId;                                           // 0x20(0x10)
-};
-
-
-// Size 0x18
-struct PerCompanyVotes
-{
-public:
-	TArray<class PlayerState*>                                   MemberVotes;                                       // 0x0(0x10)
-	struct FName                                                 CompanyIdentifier;                                 // 0x10(0x8)
-};
-
-
-// Size 0x8
-struct EmissaryEncounteredKrakenEvent
-{
-public:
-	struct FName                                                 CompanyName;                                       // 0x0(0x8)
-};
-
-
-// Size 0x10
-struct PlayerAddedToEmissaryCrew
-{
-public:
-	int                                                          EmissaryLevel;                                     // 0x0(0x4)
-	float                                                        EmissaryLevelProgress;                             // 0x4(0x4)
-	struct FName                                                 EmissaryCompany;                                   // 0x8(0x8)
+	struct FName                                                 CompanyName;                                       // 0x20(0x8)
+	struct Guid                                                  GuildId;                                           // 0x28(0x10)
 };
 
 
@@ -414,11 +88,372 @@ public:
 };
 
 
+// Size 0x8
+struct EmissaryPointBoostMultipliers
+{
+public:
+	float                                                        PlayerWearningCompanyCostume;                      // 0x0(0x4)
+	float                                                        CrewShipFullyEquippedWithCompanyCosmetics;         // 0x4(0x4)
+};
+
+
+// Size 0xc
+struct EmissaryCompanyCampaignScale
+{
+public:
+	struct FName                                                 Campaign;                                          // 0x0(0x8)
+	float                                                        Scale;                                             // 0x8(0x4)
+};
+
+
+// Size 0x28
+struct EmissaryKilledAnotherEmissaryNetworkEvent
+{
+public:
+	struct FName                                                 CompanyName;                                       // 0x18(0x8)
+	struct FName                                                 VictimCompanyName;                                 // 0x20(0x8)
+};
+
+
+// Size 0x20
+struct EmissaryLevelChanged
+{
+public:
+	int                                                          NewLevel;                                          // 0x0(0x4)
+	int                                                          OldLevel;                                          // 0x4(0x4)
+	struct Guid                                                  AssociatedCrew;                                    // 0x8(0x10)
+	struct FName                                                 CompanyName;                                       // 0x18(0x8)
+};
+
+
+// Size 0x8
+struct EmissaryGlobalActionRewardBoostEvent
+{
+public:
+	class UClass*                                                GameEventType;                                     // 0x0(0x8)
+};
+
+
+// Size 0x8
+struct EmissaryVoteRemovedEvent
+{
+public:
+	struct FName                                                 Company;                                           // 0x0(0x8)
+};
+
+
+// Size 0x20
+struct EmissaryFlagMeshReferences
+{
+public:
+	struct StringAssetReference                                  BackOfShipEmissaryFlagMeshAssetReference;          // 0x0(0x10)
+	struct StringAssetReference                                  MastEmissaryFlagMeshAssetReference;                // 0x10(0x10)
+};
+
+
+// Size 0x2c
+struct EmissaryRoleplayActionTelemetryEvent
+{
+public:
+	struct Guid                                                  EmissarySessionId;                                 // 0x0(0x10)
+	struct FName                                                 EmissaryCompany;                                   // 0x10(0x8)
+	int                                                          EmissaryRank;                                      // 0x18(0x4)
+	char                                                         ActionName;                                        // 0x1c(0x1)
+	int                                                          PointsRewarded;                                    // 0x20(0x4)
+	int                                                          PointsAccumulated;                                 // 0x24(0x4)
+	int                                                          PointsRequiredToNextRank;                          // 0x28(0x4)
+};
+
+
+// Size 0x14
+struct EmissaryFactionActionRewardBoostServiceEvent
+{
+public:
+	char                                                         FactionActionType;                                 // 0x0(0x1)
+	struct Guid                                                  AssociatedCrew;                                    // 0x4(0x10)
+};
+
+
+// Size 0x14
+struct EmissaryQuestCompanyActionRewardBoostEvent
+{
+public:
+	char                                                         CompanyActionType;                                 // 0x0(0x1)
+	struct Guid                                                  QuestId;                                           // 0x4(0x10)
+};
+
+
+// Size 0x8
+struct EmissaryActivated
+{
+public:
+	struct FName                                                 CompanyName;                                       // 0x0(0x8)
+};
+
+
+// Size 0xc
+struct EmissaryStateUpdateEvent
+{
+public:
+	float                                                        CurrentRepTotal;                                   // 0x0(0x4)
+	struct FName                                                 CompanyId;                                         // 0x4(0x8)
+};
+
+
 // Size 0x10
 struct EmissaryEntitlementPurchasedEvent
 {
 public:
 	struct Guid                                                  OfferId;                                           // 0x0(0x10)
+};
+
+
+// Size 0x34
+struct UpdateGuildEmissaryValueForCompany
+{
+public:
+	struct Guid                                                  GuildId;                                           // 0x0(0x10)
+	struct FName                                                 Company;                                           // 0x10(0x8)
+	struct Guid                                                  AssociatedCrew;                                    // 0x18(0x10)
+	int                                                          UpdateAmount;                                      // 0x28(0x4)
+	int                                                          From;                                              // 0x2c(0x4)
+	int                                                          To;                                                // 0x30(0x4)
+};
+
+
+// Size 0xc
+struct EmissaryLevelRankChange
+{
+public:
+	int                                                          NewLevel;                                          // 0x0(0x4)
+	struct FName                                                 CompanyName;                                       // 0x4(0x8)
+};
+
+
+// Size 0x10
+struct EmissaryLedgerVisited
+{
+public:
+	struct FString                                               CompanyId;                                         // 0x0(0x10)
+};
+
+
+// Size 0x18
+struct TrackedPlayerKillEntry
+{
+public:
+	struct FString                                               KilledPlayer;                                      // 0x0(0x10)
+	int                                                          KillCount;                                         // 0x10(0x4)
+	float                                                        KillTime;                                          // 0x14(0x4)
+};
+
+
+// Size 0x30
+struct MaterialVisualisation
+{
+public:
+	struct ActorComponentSelector                                TargetMesh;                                        // 0x0(0x10)
+	float                                                        TransitionTime;                                    // 0x10(0x4)
+	int                                                          MaterialIndex;                                     // 0x14(0x4)
+	struct FName                                                 ParameterName;                                     // 0x18(0x8)
+	float                                                        ActiveValue;                                       // 0x20(0x4)
+	float                                                        InactiveValue;                                     // 0x24(0x4)
+	class MaterialInstanceDynamic*                               DynamicMaterial;                                   // 0x28(0x8)
+};
+
+
+// Size 0x20
+struct EmissarySecuredLootOnShipNetworkEvent
+{
+public:
+	struct FName                                                 CompanyName;                                       // 0x18(0x8)
+};
+
+
+// Size 0x20
+struct EmissaryDiscoveredLootNetworkEvent
+{
+public:
+	struct FName                                                 CompanyName;                                       // 0x18(0x8)
+};
+
+
+// Size 0x28
+struct ParticleVisualisation
+{
+public:
+	struct ActorComponentSelector                                TargetParticles;                                   // 0x0(0x10)
+	float                                                        Delay;                                             // 0x10(0x4)
+	float                                                        DelayAfterPutOutParticles;                         // 0x14(0x4)
+	class ParticleSystem*                                        PutOutParticles;                                   // 0x18(0x8)
+	class ParticleSystemComponent*                               ParticleSystem;                                    // 0x20(0x8)
+};
+
+
+// Size 0x28
+struct ActivateEmissaryForCrew
+{
+public:
+	struct Guid                                                  SessionId;                                         // 0x0(0x10)
+	struct FName                                                 Company;                                           // 0x10(0x8)
+	struct Guid                                                  AssociatedCrew;                                    // 0x18(0x10)
+};
+
+
+// Size 0x20
+struct EmissaryEncounteredSkellyFortNetworkEvent
+{
+public:
+	struct FName                                                 CompanyName;                                       // 0x18(0x8)
+};
+
+
+// Size 0x8
+struct EmissaryKillScaleFactor
+{
+public:
+	int                                                          KillCount;                                         // 0x0(0x4)
+	float                                                        ScaleFactor;                                       // 0x4(0x4)
+};
+
+
+// Size 0x4
+struct EmissaryLevelStatusStatInfo
+{
+public:
+	struct PlayerStat                                            StatToFire;                                        // 0x0(0x4)
+};
+
+
+// Size 0x20
+struct EmissaryMaxRankQuestProviderQuestOverrides
+{
+public:
+	struct FeatureFlag                                           FeatureFlag;                                       // 0x0(0xc)
+	struct StringAssetReference                                  QuestDesc;                                         // 0x10(0x10)
+};
+
+
+// Size 0x1c
+struct EmissaryCompanyActionRewardBoostServiceEvent
+{
+public:
+	struct FName                                                 AssociatedCompany;                                 // 0x0(0x8)
+	char                                                         CompanyActionType;                                 // 0x8(0x1)
+	struct Guid                                                  AssociatedCrew;                                    // 0xc(0x10)
+};
+
+
+// Size 0x8
+struct EmissaryEncounteredKrakenEvent
+{
+public:
+	struct FName                                                 CompanyName;                                       // 0x0(0x8)
+};
+
+
+// Size 0x14
+struct EmissaryLevelProgressUpdatedEvent
+{
+public:
+	float                                                        LevelProgress;                                     // 0x0(0x4)
+	struct Guid                                                  AssociatedCrew;                                    // 0x4(0x10)
+};
+
+
+// Size 0x1c
+struct EmissarySessionEndTelemetryEvent
+{
+public:
+	struct Guid                                                  EmissarySessionId;                                 // 0x0(0x10)
+	struct FName                                                 EmissaryCompany;                                   // 0x10(0x8)
+	char                                                         DisbandedReason;                                   // 0x18(0x1)
+};
+
+
+// Size 0x20
+struct EmissaryStoleLootNetworkEvent
+{
+public:
+	struct FName                                                 CompanyName;                                       // 0x18(0x8)
+};
+
+
+// Size 0x8
+struct EmissaryEncounteredAIShipEvent
+{
+public:
+	struct FName                                                 CompanyName;                                       // 0x0(0x8)
+};
+
+
+// Size 0x10
+struct PlayerAddedToEmissaryCrew
+{
+public:
+	int                                                          EmissaryLevel;                                     // 0x0(0x4)
+	float                                                        EmissaryLevelProgress;                             // 0x4(0x4)
+	struct FName                                                 EmissaryCompany;                                   // 0x8(0x8)
+};
+
+
+// Size 0x28
+struct LightVisualisation
+{
+public:
+	struct ActorComponentSelector                                TargetLight;                                       // 0x0(0x10)
+	float                                                        TransitionTime;                                    // 0x10(0x4)
+	float                                                        ActiveValue;                                       // 0x14(0x4)
+	float                                                        InactiveValue;                                     // 0x18(0x4)
+	class LightComponent*                                        Light;                                             // 0x20(0x8)
+};
+
+
+// Size 0x10
+struct EmissaryGameEventsReward
+{
+public:
+	class UClass*                                                FinishedEventType;                                 // 0x0(0x8)
+	float                                                        Amount;                                            // 0x8(0x4)
+};
+
+
+// Size 0x18
+struct PerCompanyVotes
+{
+public:
+	TArray<class PlayerState*>                                   MemberVotes;                                       // 0x0(0x10)
+	struct FName                                                 CompanyIdentifier;                                 // 0x10(0x8)
+};
+
+
+// Size 0x4
+struct ChaliceStatuePhaseUpdate
+{
+public:
+	int                                                          NewLevel;                                          // 0x0(0x4)
+};
+
+
+// Size 0x30
+struct UpdateEmissaryValueForCompany
+{
+public:
+	struct Guid                                                  SessionId;                                         // 0x0(0x10)
+	struct FName                                                 Company;                                           // 0x10(0x8)
+	struct Guid                                                  AssociatedCrew;                                    // 0x18(0x10)
+	char                                                         RewardType;                                        // 0x28(0x1)
+	int                                                          UpdateAmount;                                      // 0x2c(0x4)
+};
+
+
+// Size 0x28
+struct EmissaryProgressUpdatedNetworkEvent
+{
+public:
+	float                                                        OldRepTotal;                                       // 0x18(0x4)
+	float                                                        NewRepTotal;                                       // 0x1c(0x4)
+	struct FName                                                 CompanyId;                                         // 0x20(0x8)
 };
 
 
@@ -434,6 +469,42 @@ public:
 
 
 // Size 0x8
+struct EmissaryEventAward
+{
+public:
+	bool                                                         FirstTimeOnly;                                     // 0x0(0x1)
+	bool                                                         NotOriginalOwner;                                  // 0x1(0x1)
+	char                                                         ItemQualityRequirement;                            // 0x2(0x1)
+	int                                                          EmissaryLevelIncrease;                             // 0x4(0x4)
+};
+
+
+// Size 0x18
+struct EmissaryGlobalActionRewardBoostServiceEvent
+{
+public:
+	class UClass*                                                FinishedEventType;                                 // 0x0(0x8)
+	struct Guid                                                  AssociatedCrew;                                    // 0x8(0x10)
+};
+
+
+// Size 0x20
+struct EmissarySoldLootNetworkEvent
+{
+public:
+	struct FName                                                 CompanyName;                                       // 0x18(0x8)
+};
+
+
+// Size 0x1
+struct EmissaryNonQuestCompanyActionRewardBoostEvent
+{
+public:
+	char                                                         CompanyActionType;                                 // 0x0(0x1)
+};
+
+
+// Size 0x8
 struct EmissaryEncounteredTinySharkEvent
 {
 public:
@@ -441,103 +512,12 @@ public:
 };
 
 
-// Size 0x28
-struct ReactivateEmissaryForMigratedCrew
-{
-public:
-	struct Guid                                                  SessionId;                                         // 0x0(0x10)
-	struct FName                                                 Company;                                           // 0x10(0x8)
-	struct Guid                                                  AssociatedCrew;                                    // 0x18(0x10)
-};
-
-
-// Size 0x20
-struct EmissaryFlagMeshReferences
-{
-public:
-	struct StringAssetReference                                  BackOfShipEmissaryFlagMeshAssetReference;          // 0x0(0x10)
-	struct StringAssetReference                                  MastEmissaryFlagMeshAssetReference;                // 0x10(0x10)
-};
-
-
-// Size 0x8
-struct EmissaryPointBoostMultipliers
-{
-public:
-	float                                                        PlayerWearningCompanyCostume;                      // 0x0(0x4)
-	float                                                        CrewShipFullyEquippedWithCompanyCosmetics;         // 0x4(0x4)
-};
-
-
-// Size 0x20
-struct EmissaryStoleLootNetworkEvent
-{
-public:
-	struct FName                                                 CompanyName;                                       // 0x18(0x8)
-};
-
-
-// Size 0x38
-struct EmissarySunkNetworkEvent
+// Size 0x30
+struct EmissaryMaxLevelReachedNetworkEvent
 {
 public:
 	class DataAsset*                                             PopUpDesc;                                         // 0x18(0x8)
-	struct FName                                                 CompanyName;                                       // 0x20(0x8)
-	struct Guid                                                  GuildId;                                           // 0x28(0x10)
-};
-
-
-// Size 0x8
-struct EmissaryFactionActionReward
-{
-public:
-	char                                                         FactionActionType;                                 // 0x0(0x1)
-	float                                                        Amount;                                            // 0x4(0x4)
-};
-
-
-// Size 0x20
-struct EmissaryEncounteredSkellyFortNetworkEvent
-{
-public:
-	struct FName                                                 CompanyName;                                       // 0x18(0x8)
-};
-
-
-// Size 0x10
-struct EmissaryGameEventsReward
-{
-public:
-	class UClass*                                                FinishedEventType;                                 // 0x0(0x8)
-	float                                                        Amount;                                            // 0x8(0x4)
-};
-
-
-// Size 0x8
-struct EmissaryVoteRemovedEvent
-{
-public:
-	struct FName                                                 Company;                                           // 0x0(0x8)
-};
-
-
-// Size 0x60
-struct EmissaryColourSwatchInformation
-{
-public:
-	struct FString                                               ColourSwatchIdentifier;                            // 0x0(0x10)
-	struct EmissaryFlagMeshReferences                            EmissaryFlagMeshAssetReferences;                   // 0x10(0x20)
-	assetobject                                                  EmissaryFlotsamSpawnDataAsset;                     // 0x30(0x20)
-	struct StringAssetReference                                  EmissaryFlagTextureReference;                      // 0x50(0x10)
-};
-
-
-// Size 0x18
-struct EmissaryCompanyCampaignGameEvent
-{
-public:
-	class UClass*                                                EventType;                                         // 0x0(0x8)
-	TArray<struct EmissaryCompanyCampaignScale>                  Scales;                                            // 0x8(0x10)
+	struct Guid                                                  GuildId;                                           // 0x20(0x10)
 };
 
 
@@ -548,6 +528,33 @@ public:
 	int                                                          EmissaryLevelIncrease;                             // 0x0(0x4)
 	TArray<struct EmissaryKillScaleFactor>                       EmissaryLevelKillCountScaleFactors;                // 0x8(0x10)
 	TArray<class Class*>                                         ValidEmissariesToKill;                             // 0x18(0x10)
+};
+
+
+// Size 0x20
+struct CrewMemberVotes
+{
+public:
+	struct Guid                                                  CrewId;                                            // 0x0(0x10)
+	TArray<struct PerCompanyVotes>                               CompanyVotes;                                      // 0x10(0x10)
+};
+
+
+// Size 0x18
+struct EmissaryCompanyCampaignKillPlayer
+{
+public:
+	class UClass*                                                Company;                                           // 0x0(0x8)
+	TArray<struct EmissaryCompanyCampaignScale>                  Scales;                                            // 0x8(0x10)
+};
+
+
+// Size 0x18
+struct EmissaryCompanyCampaignGameEvent
+{
+public:
+	class UClass*                                                EventType;                                         // 0x0(0x8)
+	TArray<struct EmissaryCompanyCampaignScale>                  Scales;                                            // 0x8(0x10)
 };
 
 
@@ -570,35 +577,14 @@ public:
 };
 
 
-// Size 0x20
-struct CrewMemberVotes
+// Size 0x60
+struct EmissaryColourSwatchInformation
 {
 public:
-	struct Guid                                                  CrewId;                                            // 0x0(0x10)
-	TArray<struct PerCompanyVotes>                               CompanyVotes;                                      // 0x10(0x10)
-};
-
-
-// Size 0x18
-struct EmissaryCompanyCampaignKillPlayer
-{
-public:
-	class UClass*                                                Company;                                           // 0x0(0x8)
-	TArray<struct EmissaryCompanyCampaignScale>                  Scales;                                            // 0x8(0x10)
-};
-
-
-// Size 0x88
-struct EmissaryActionRewardData
-{
-public:
-	TArray<struct EmissaryEventAward>                            OwnershipChangedRewards;                           // 0x0(0x10)
-	TArray<struct EmissaryEventAward>                            PlacedOnShipRewards;                               // 0x10(0x10)
-	struct EmissaryKillPlayerReward                              KillPlayerReward;                                  // 0x20(0x28)
-	TArray<struct EmissaryGameEventsReward>                      GameEventsRewards;                                 // 0x48(0x10)
-	TArray<struct EmissaryEventAward>                            HandinRewards;                                     // 0x58(0x10)
-	TArray<struct EmissaryCompanyActionReward>                   CompanyActionRewards;                              // 0x68(0x10)
-	TArray<struct EmissaryFactionActionReward>                   FactionActionRewards;                              // 0x78(0x10)
+	struct FString                                               ColourSwatchIdentifier;                            // 0x0(0x10)
+	struct EmissaryFlagMeshReferences                            EmissaryFlagMeshAssetReferences;                   // 0x10(0x20)
+	assetobject                                                  EmissaryFlotsamSpawnDataAsset;                     // 0x30(0x20)
+	struct StringAssetReference                                  EmissaryFlagTextureReference;                      // 0x50(0x10)
 };
 
 
@@ -626,6 +612,20 @@ public:
 	class UClass*                                                Company;                                           // 0x0(0x8)
 	TArray<struct EmissaryCompanyCampaignKillPlayer>             KillPlayers;                                       // 0x8(0x10)
 	TArray<struct EmissaryCompanyCampaignGameEvent>              GameEvents;                                        // 0x18(0x10)
+};
+
+
+// Size 0x88
+struct EmissaryActionRewardData
+{
+public:
+	TArray<struct EmissaryEventAward>                            OwnershipChangedRewards;                           // 0x0(0x10)
+	TArray<struct EmissaryEventAward>                            PlacedOnShipRewards;                               // 0x10(0x10)
+	struct EmissaryKillPlayerReward                              KillPlayerReward;                                  // 0x20(0x28)
+	TArray<struct EmissaryGameEventsReward>                      GameEventsRewards;                                 // 0x48(0x10)
+	TArray<struct EmissaryEventAward>                            HandinRewards;                                     // 0x58(0x10)
+	TArray<struct EmissaryCompanyActionReward>                   CompanyActionRewards;                              // 0x68(0x10)
+	TArray<struct EmissaryFactionActionReward>                   FactionActionRewards;                              // 0x78(0x10)
 };
 
 

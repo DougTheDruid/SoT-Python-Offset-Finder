@@ -10,6 +10,23 @@
       }
     ]
   },
+  "CreateMysteriousNoteGameServerResponseModel": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "Success",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NoteId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x4"
+      }
+    ]
+  },
   "DestroyMysteriousNoteGameServerRequestModel": {
     "ClassSize": "0x14",
     "Attributes": [
@@ -59,23 +76,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x38"
-      }
-    ]
-  },
-  "CreateMysteriousNoteGameServerResponseModel": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "Success",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NoteId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x4"
       }
     ]
   },

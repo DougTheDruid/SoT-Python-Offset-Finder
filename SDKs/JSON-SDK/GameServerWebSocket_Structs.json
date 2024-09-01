@@ -1,18 +1,24 @@
 {
-  "GlobalEventSubscriptionGameServerRequestModel": {
-    "ClassSize": "0x20",
+  "GameServerWebSocketEntityEvent": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "EnableEvents",
-        "Type": "TArray<struct Name>",
+        "Name": "EventID",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "DisableEvents",
-        "Type": "TArray<struct Name>",
+        "Name": "ServerId",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
+      },
+      {
+        "Name": "ServerTimeUTC",
+        "Type": "struct DateTime",
+        "Size": "0x8",
+        "Offset": "0x20"
       }
     ]
   },
@@ -62,26 +68,20 @@
       }
     ]
   },
-  "GameServerWebSocketEntityEvent": {
-    "ClassSize": "0x28",
+  "GlobalEventSubscriptionGameServerRequestModel": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "EventID",
-        "Type": "struct FString",
+        "Name": "EnableEvents",
+        "Type": "TArray<struct Name>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "ServerId",
-        "Type": "struct FString",
+        "Name": "DisableEvents",
+        "Type": "TArray<struct Name>",
         "Size": "0x10",
         "Offset": "0x10"
-      },
-      {
-        "Name": "ServerTimeUTC",
-        "Type": "struct DateTime",
-        "Size": "0x8",
-        "Offset": "0x20"
       }
     ]
   },

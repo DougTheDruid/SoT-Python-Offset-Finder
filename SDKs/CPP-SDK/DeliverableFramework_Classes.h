@@ -6,11 +6,11 @@
 #include "DeliverableFramework_Structs.h"
 
 
-// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
-class DeliverableRedirectionLiteralDestinationDescriptor: public DeliverableRedirectionDestinationDescriptorBase
+// Size 0x20 (Full Size[0xe8] - InheritedSize[0xc8]
+class DeliverableComponent: public ActorComponent
 {
 public:
-	struct FText                                                 Destination;                                       // 0x28(0x38)
+	class DeliverableRequirementsDataAsset*                      DeliveryRequirementsAsset;                         // 0xd8(0x8)
 };
 
 
@@ -22,11 +22,19 @@ public:
 };
 
 
-// Size 0x20 (Full Size[0xe8] - InheritedSize[0xc8]
-class DeliverableComponent: public ActorComponent
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class DeliverableRedirectionCompositeContext: public DeliverableRedirectionContextBase
 {
 public:
-	class DeliverableRequirementsDataAsset*                      DeliveryRequirementsAsset;                         // 0xd8(0x8)
+	TArray<class DeliverableRedirectionContextBase*>             Contexts;                                          // 0x28(0x10)
+};
+
+
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
+class DeliverableRedirectionLiteralDestinationDescriptor: public DeliverableRedirectionDestinationDescriptorBase
+{
+public:
+	struct FText                                                 Destination;                                       // 0x28(0x38)
 };
 
 
@@ -44,14 +52,6 @@ class DeliverableRedirectionComponent: public ActorComponent
 {
 public:
 	class DeliverableRedirectionContextBase*                     Context;                                           // 0xd0(0x8)
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class DeliverableRedirectionCompositeContext: public DeliverableRedirectionContextBase
-{
-public:
-	TArray<class DeliverableRedirectionContextBase*>             Contexts;                                          // 0x28(0x10)
 };
 
 

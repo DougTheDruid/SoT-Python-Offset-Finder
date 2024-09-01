@@ -3,10 +3,10 @@
 WwiseMediaSoundComponent:
   Attributes:
   - Name: MediaSoundEvent
-    Offset: '0x340'
+    Offset: '0x368'
     Size: '0x8'
     Type: class WwiseEvent*
-  ClassSize: '0xb0'
-  FullSize: '0x390'
+  ClassSize: '0xe0'
+  FullSize: '0x3c0'
   InheritedSize: '0x2e0'
   Super: SceneComponent

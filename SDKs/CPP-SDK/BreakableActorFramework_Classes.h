@@ -6,19 +6,6 @@
 #include "BreakableActorFramework_Structs.h"
 
 
-// Size 0x100 (Full Size[0x1c8] - InheritedSize[0xc8]
-class BreakableActorAudioComponent: public ActorComponent
-{
-public:
-	bool                                                         UseParentEmitter;                                  // 0xc8(0x1)
-	class WwiseObjectPoolWrapper*                                AudioPool;                                         // 0xd0(0x8)
-	class WwiseEvent*                                            PlayMusicEvent;                                    // 0xd8(0x8)
-	class WwiseEvent*                                            StopMusicEvent;                                    // 0xe0(0x8)
-	class WwiseEvent*                                            PlayDamagedEvent;                                  // 0xe8(0x8)
-	class WwiseEvent*                                            PlayDestroyedEvent;                                // 0xf0(0x8)
-};
-
-
 // Size 0xf8 (Full Size[0x1c0] - InheritedSize[0xc8]
 class BreakableActorVfxComponent: public ActorComponent
 {
@@ -36,22 +23,6 @@ public:
 };
 
 
-// Size 0x158 (Full Size[0x220] - InheritedSize[0xc8]
-class BreakableActorDynamicMaterialComponent: public ActorComponent
-{
-public:
-	uint32                                                       MaterialElementIndex;                              // 0xc8(0x4)
-	struct FName                                                 MagicColourPropertyName;                           // 0xcc(0x8)
-	struct FName                                                 DamageLevelPropertyName;                           // 0xd4(0x8)
-	struct FName                                                 TimeBasedPropertyName;                             // 0xdc(0x8)
-	struct FName                                                 HitPositionPropertyName;                           // 0xe4(0x8)
-	struct FName                                                 CollapseStartTimePropertyName;                     // 0xec(0x8)
-	class PrimitiveComponent*                                    TargetMesh;                                        // 0xf8(0x8)
-	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x100(0x10)
-	class BreakableActorBase*                                    BreakableActor;                                    // 0x110(0x8)
-};
-
-
 // Size 0x190 (Full Size[0x558] - InheritedSize[0x3c8]
 class BreakableActorBase: public Actor
 {
@@ -65,6 +36,35 @@ public:
 	class BreakableActorVfxComponent*                            VFXComponent;                                      // 0x428(0x8)
 	class BreakableActorDynamicMaterialComponent*                DamageMaterialComponent;                           // 0x430(0x8)
 	class ActorDamageableComponent*                              DamageableComponent;                               // 0x438(0x8)
+};
+
+
+// Size 0x100 (Full Size[0x1c8] - InheritedSize[0xc8]
+class BreakableActorAudioComponent: public ActorComponent
+{
+public:
+	bool                                                         UseParentEmitter;                                  // 0xc8(0x1)
+	class WwiseObjectPoolWrapper*                                AudioPool;                                         // 0xd0(0x8)
+	class WwiseEvent*                                            PlayMusicEvent;                                    // 0xd8(0x8)
+	class WwiseEvent*                                            StopMusicEvent;                                    // 0xe0(0x8)
+	class WwiseEvent*                                            PlayDamagedEvent;                                  // 0xe8(0x8)
+	class WwiseEvent*                                            PlayDestroyedEvent;                                // 0xf0(0x8)
+};
+
+
+// Size 0x158 (Full Size[0x220] - InheritedSize[0xc8]
+class BreakableActorDynamicMaterialComponent: public ActorComponent
+{
+public:
+	uint32                                                       MaterialElementIndex;                              // 0xc8(0x4)
+	struct FName                                                 MagicColourPropertyName;                           // 0xcc(0x8)
+	struct FName                                                 DamageLevelPropertyName;                           // 0xd4(0x8)
+	struct FName                                                 TimeBasedPropertyName;                             // 0xdc(0x8)
+	struct FName                                                 HitPositionPropertyName;                           // 0xe4(0x8)
+	struct FName                                                 CollapseStartTimePropertyName;                     // 0xec(0x8)
+	class PrimitiveComponent*                                    TargetMesh;                                        // 0xf8(0x8)
+	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x100(0x10)
+	class BreakableActorBase*                                    BreakableActor;                                    // 0x110(0x8)
 };
 
 

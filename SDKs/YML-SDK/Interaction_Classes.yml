@@ -78,16 +78,20 @@ InteractableComponent:
     Offset: '0x108'
     Size: '0x10'
     Type: TArray<class InteractionPrerequisiteBase*>
-  - Name: InteractableArea
+  - Name: InteractionPromptOffset
     Offset: '0x118'
+    Size: '0xc'
+    Type: struct Vector
+  - Name: InteractableArea
+    Offset: '0x128'
     Size: '0x8'
     Type: class InteractableArea*
   - Name: CurrentInteractionState
-    Offset: '0x120'
+    Offset: '0x130'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x70'
-  FullSize: '0x138'
+  ClassSize: '0x80'
+  FullSize: '0x148'
   InheritedSize: '0xc8'
   Super: ActorComponent
 InteractableService:

@@ -3,12 +3,12 @@
 DeathSelfInteractionComponent:
   Attributes:
   - Name: HasGivenUp
-    Offset: '0x140'
+    Offset: '0x150'
     Size: '0x1'
     Type: bool
   ClassSize: '0x50'
-  FullSize: '0x188'
-  InheritedSize: '0x138'
+  FullSize: '0x198'
+  InheritedSize: '0x148'
   Super: InteractableComponent
 ReviveAudioComponent:
   Attributes:
@@ -23,36 +23,36 @@ ReviveAudioComponent:
 ReviveComponent:
   Attributes:
   - Name: OwningCharacter
-    Offset: '0x148'
+    Offset: '0x158'
     Size: '0x8'
     Type: class Character*
   - Name: ReviveableRepresentationActor
-    Offset: '0x150'
+    Offset: '0x160'
     Size: '0x8'
     Type: class Actor*
   - Name: ReviveState
-    Offset: '0x158'
+    Offset: '0x168'
     Size: '0x1'
     Type: byte
   - Name: InteractionState
-    Offset: '0x159'
+    Offset: '0x169'
     Size: '0x1'
     Type: byte
   - Name: ReviveableRepresentationClass
-    Offset: '0x160'
+    Offset: '0x170'
     Size: '0x8'
     Type: class UClass*
   - Name: ReviveWindowIsOpen
-    Offset: '0x174'
+    Offset: '0x184'
     Size: '0x1'
     Type: bool
   - Name: RevivableStatus
-    Offset: '0x248'
+    Offset: '0x258'
     Size: '0x18'
     Type: struct Status
   ClassSize: '0x140'
-  FullSize: '0x278'
-  InheritedSize: '0x138'
+  FullSize: '0x288'
+  InheritedSize: '0x148'
   Super: InteractableComponent
 ReviveEffectsDataAsset:
   Attributes:

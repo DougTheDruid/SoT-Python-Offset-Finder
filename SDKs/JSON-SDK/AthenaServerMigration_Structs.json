@@ -33,6 +33,23 @@
       }
     ]
   },
+  "ServerMigrationRefusedEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "MigrationId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CrewIds",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "ServerMigrationRequestBroadcastEvent": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -47,6 +64,17 @@
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "AthenaServerMigrationClientContext": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "StampId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },
@@ -88,34 +116,6 @@
         "Type": "TArray<String>",
         "Size": "0x10",
         "Offset": "0x50"
-      }
-    ]
-  },
-  "AthenaServerMigrationClientContext": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "StampId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ServerMigrationRefusedEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "MigrationId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CrewIds",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x10"
       }
     ]
   },

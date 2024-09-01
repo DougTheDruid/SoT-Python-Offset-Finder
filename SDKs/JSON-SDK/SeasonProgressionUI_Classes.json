@@ -1,29 +1,15 @@
 {
-  "SeasonProgressionUISettings": {
-    "Super": "Object",
+  "SeasonPopupListAsset": {
+    "Super": "DataAsset",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "SeasonPopupListAsset",
-        "Type": "struct StringAssetReference",
+        "Name": "SeasonPopups",
+        "Type": "TArray<class SeasonPopupAsset*>",
         "Size": "0x10",
         "Offset": "0x28"
-      }
-    ]
-  },
-  "SeasonProgressionUIService": {
-    "Super": "Actor",
-    "FullSize": "0x5c0",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x1f8",
-    "Attributes": [
-      {
-        "Name": "SeasonPopupListAsset",
-        "Type": "class SeasonPopupListAsset*",
-        "Size": "0x8",
-        "Offset": "0x3f8"
       }
     ]
   },
@@ -143,15 +129,15 @@
       }
     ]
   },
-  "SeasonPopupListAsset": {
-    "Super": "DataAsset",
+  "SeasonProgressionUISettings": {
+    "Super": "Object",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "SeasonPopups",
-        "Type": "TArray<class SeasonPopupAsset*>",
+        "Name": "SeasonPopupListAsset",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x28"
       }
@@ -174,6 +160,20 @@
         "Type": "struct SeasonProgressionUITelemetryFragment",
         "Size": "0x18",
         "Offset": "0xf8"
+      }
+    ]
+  },
+  "SeasonProgressionUIService": {
+    "Super": "Actor",
+    "FullSize": "0x5c0",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x1f8",
+    "Attributes": [
+      {
+        "Name": "SeasonPopupListAsset",
+        "Type": "class SeasonPopupListAsset*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
       }
     ]
   },

@@ -22,11 +22,28 @@ public:
 
 
 // Size 0x20
+struct ServerMigrationRefusedEvent
+{
+public:
+	struct Guid                                                  MigrationId;                                       // 0x0(0x10)
+	TArray<struct Guid>                                          CrewIds;                                           // 0x10(0x10)
+};
+
+
+// Size 0x20
 struct ServerMigrationRequestBroadcastEvent
 {
 public:
 	struct FString                                               DestinationAddress;                                // 0x0(0x10)
 	struct Guid                                                  CrewId;                                            // 0x10(0x10)
+};
+
+
+// Size 0x10
+struct AthenaServerMigrationClientContext
+{
+public:
+	struct FString                                               StampId;                                           // 0x0(0x10)
 };
 
 
@@ -40,23 +57,6 @@ public:
 	struct FString                                               SubMode;                                           // 0x30(0x10)
 	TArray<char>                                                 MatchmakingReasons;                                // 0x40(0x10)
 	TArray<String>                                               RequestedGameEvents;                               // 0x50(0x10)
-};
-
-
-// Size 0x10
-struct AthenaServerMigrationClientContext
-{
-public:
-	struct FString                                               StampId;                                           // 0x0(0x10)
-};
-
-
-// Size 0x20
-struct ServerMigrationRefusedEvent
-{
-public:
-	struct Guid                                                  MigrationId;                                       // 0x0(0x10)
-	TArray<struct Guid>                                          CrewIds;                                           // 0x10(0x10)
 };
 
 

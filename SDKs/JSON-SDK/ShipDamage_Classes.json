@@ -1,4 +1,32 @@
 {
+  "GenericShipDamageablePart": {
+    "Super": "Actor",
+    "FullSize": "0x3e8",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ShipDamageableComponent",
+        "Type": "class ShipDamageableComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      }
+    ]
+  },
+  "LevelOfDamagePropertiesDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "LevelOfDamageProperties",
+        "Type": "TArray<struct LevelOfDamageProperties>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "ShipRestorationSettings": {
     "Super": "DeveloperSettings",
     "FullSize": "0x48",
@@ -30,34 +58,6 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0xc8"
-      }
-    ]
-  },
-  "LevelOfDamagePropertiesDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "LevelOfDamageProperties",
-        "Type": "TArray<struct LevelOfDamageProperties>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "GenericShipDamageablePart": {
-    "Super": "Actor",
-    "FullSize": "0x3e8",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ShipDamageableComponent",
-        "Type": "class ShipDamageableComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
       }
     ]
   },

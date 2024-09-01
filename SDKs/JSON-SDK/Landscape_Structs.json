@@ -1,114 +1,4 @@
 {
-  "WeightmapLayerAllocationInfo": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "LayerInfo",
-        "Type": "class LandscapeLayerInfoObject*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "WeightmapTextureIndex",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "WeightmapTextureChannel",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x9"
-      },
-      {
-        "Name": "GrassMapChannelIndex",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xa"
-      }
-    ]
-  },
-  "LandscapeSplineSegmentConnection": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "ControlPoint",
-        "Type": "class LandscapeSplineControlPoint*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TangentLen",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "SocketName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "LandscapeWeightmapUsage": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ChannelUsage",
-        "Type": "class LandscapeComponent*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "LayerBlendInput": {
-    "ClassSize": "0x98",
-    "Attributes": [
-      {
-        "Name": "LayerName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "BlendType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "LayerInput",
-        "Type": "struct ExpressionInput",
-        "Size": "0x38",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "HeightInput",
-        "Type": "struct ExpressionInput",
-        "Size": "0x38",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "PreviewWeight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "ConstLayerInput",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x84"
-      },
-      {
-        "Name": "ConstHeightInput",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x90"
-      }
-    ]
-  },
   "LandscapeSplineMeshEntry": {
     "ClassSize": "0x38",
     "Attributes": [
@@ -165,6 +55,93 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x36"
+      }
+    ]
+  },
+  "WeightmapLayerAllocationInfo": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "LayerInfo",
+        "Type": "class LandscapeLayerInfoObject*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "WeightmapTextureIndex",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "WeightmapTextureChannel",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x9"
+      },
+      {
+        "Name": "GrassMapChannelIndex",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xa"
+      }
+    ]
+  },
+  "LayerBlendInput": {
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Name": "LayerName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BlendType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "LayerInput",
+        "Type": "struct ExpressionInput",
+        "Size": "0x38",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "HeightInput",
+        "Type": "struct ExpressionInput",
+        "Size": "0x38",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "PreviewWeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "ConstLayerInput",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x84"
+      },
+      {
+        "Name": "ConstHeightInput",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x90"
+      }
+    ]
+  },
+  "LandscapeLayerStruct": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "LayerInfoObj",
+        "Type": "class LandscapeLayerInfoObject*",
+        "Size": "0x8",
+        "Offset": "0x0"
       }
     ]
   },
@@ -232,6 +209,40 @@
       }
     ]
   },
+  "LandscapeSplineSegmentConnection": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ControlPoint",
+        "Type": "class LandscapeSplineControlPoint*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TangentLen",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "SocketName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "LandscapeWeightmapUsage": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ChannelUsage",
+        "Type": "class LandscapeComponent*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "LandscapeSplineConnection": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -263,17 +274,6 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "LandscapeLayerStruct": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "LayerInfoObj",
-        "Type": "class LandscapeLayerInfoObject*",
-        "Size": "0x8",
-        "Offset": "0x0"
       }
     ]
   },

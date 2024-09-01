@@ -226,6 +226,16 @@ AnimNotify_SpawnCosmeticItem:
   FullSize: '0x58'
   InheritedSize: '0x38'
   Super: AnimNotify
+AnimNotify_SpawnDisguise:
+  Attributes:
+  - Name: DisguisesDataAsset
+    Offset: '0x58'
+    Size: '0x8'
+    Type: class DisguiseTypesDataAsset*
+  ClassSize: '0x8'
+  FullSize: '0x60'
+  InheritedSize: '0x58'
+  Super: AnimNotify_SpawnCosmeticItem
 AnimNotify_StateComplete:
   Attributes:
   - Name: CompletedStateId
@@ -470,6 +480,16 @@ CustomAnimationMontageIdListingDataAsset:
     Offset: '0x28'
     Size: '0x10'
     Type: TArray<struct Name>
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: DataAsset
+DisguiseTypesDataAsset:
+  Attributes:
+  - Name: DisguiseData
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<struct DisguiseProxyData>
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

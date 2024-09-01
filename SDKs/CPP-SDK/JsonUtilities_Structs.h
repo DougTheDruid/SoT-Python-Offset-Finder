@@ -13,6 +13,30 @@ public:
 
 
 // Size 0x8
+struct TestMessageTimespan
+{
+public:
+	struct Timespan                                              Timespan;                                          // 0x0(0x8)
+};
+
+
+// Size 0x50
+struct TestUStructMapSerializationObject
+{
+public:
+	map                                                          StructMap;                                         // 0x0(0x50)
+};
+
+
+// Size 0x1
+struct TestEnumObject
+{
+public:
+	char                                                         TestEnum;                                          // 0x0(0x1)
+};
+
+
+// Size 0x8
 struct TestFloatObject
 {
 public:
@@ -29,19 +53,14 @@ public:
 };
 
 
-// Size 0x8
-struct TestMessageUInt64
+// Size 0x28
+struct TestSerializationObject
 {
 public:
-	uint64                                                       TestInt;                                           // 0x0(0x8)
-};
-
-
-// Size 0x50
-struct TestStringMapSerializationObject
-{
-public:
-	map                                                          StringMap;                                         // 0x0(0x50)
+	bool                                                         TestBool;                                          // 0x0(0x1)
+	int                                                          TestInt;                                           // 0x4(0x4)
+	struct FString                                               TestString;                                        // 0x8(0x10)
+	struct Guid                                                  TestGuid;                                          // 0x18(0x10)
 };
 
 
@@ -54,10 +73,10 @@ public:
 
 
 // Size 0x50
-struct TestUStructMapSerializationObject
+struct TestInvalidStringMapSerializationObject
 {
 public:
-	map                                                          StructMap;                                         // 0x0(0x50)
+	map                                                          StringMap;                                         // 0x0(0x50)
 };
 
 
@@ -69,38 +88,19 @@ public:
 };
 
 
-// Size 0x8
-struct TestMessageTimespan
-{
-public:
-	struct Timespan                                              Timespan;                                          // 0x0(0x8)
-};
-
-
 // Size 0x50
-struct TestInvalidStringMapSerializationObject
+struct TestStringMapSerializationObject
 {
 public:
 	map                                                          StringMap;                                         // 0x0(0x50)
 };
 
 
-// Size 0x1
-struct TestEnumObject
+// Size 0x8
+struct TestMessageUInt64
 {
 public:
-	char                                                         TestEnum;                                          // 0x0(0x1)
-};
-
-
-// Size 0x28
-struct TestSerializationObject
-{
-public:
-	bool                                                         TestBool;                                          // 0x0(0x1)
-	int                                                          TestInt;                                           // 0x4(0x4)
-	struct FString                                               TestString;                                        // 0x8(0x10)
-	struct Guid                                                  TestGuid;                                          // 0x18(0x10)
+	uint64                                                       TestInt;                                           // 0x0(0x8)
 };
 
 
