@@ -6,34 +6,58 @@
 #include "Retraction_Structs.h"
 
 
-// Size 0x48 (Full Size[0x110] - InheritedSize[0xc8]
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class RetractorInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class RetractableProviderInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class RetractableInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x48 (Full Size[0x100] - InheritedSize[0xb8]
 class RetractableComponent: public ActorComponent
 {
 public:
-	struct FName                                                 FeatureToggle;                                     // 0x100(0x8)
-	struct RetractorOrientationAdjustmentFlags                   OrientationAdjustmentOnRetractFlags;               // 0x108(0x3)
-	char                                                         RetractorBoxAxis;                                  // 0x10b(0x1)
-	bool                                                         ShouldAutoReleaseOnSuccessfulRetract;              // 0x10c(0x1)
-	bool                                                         MigrateAttachedWithRetractor;                      // 0x10d(0x1)
-	bool                                                         WasSimulatingPhysicsBeforeRetract;                 // 0x10e(0x1)
+	char                                                         pad0x38_PXU42[0x38];                               // 0xb8(0x38)
+	struct FName                                                 FeatureToggle;                                     // 0xf0(0x8)
+	struct RetractorOrientationAdjustmentFlags                   OrientationAdjustmentOnRetractFlags;               // 0xf8(0x3)
+	char                                                         RetractorBoxAxis;                                  // 0xfb(0x1)
+	bool                                                         ShouldAutoReleaseOnSuccessfulRetract;              // 0xfc(0x1)
+	bool                                                         MigrateAttachedWithRetractor;                      // 0xfd(0x1)
+	bool                                                         WasSimulatingPhysicsBeforeRetract;                 // 0xfe(0x1)
+	char                                                         pad0x1_LVFSZ[0x1];                                 // 0xff(0x1)
 };
 
 
-// Size 0x60 (Full Size[0x128] - InheritedSize[0xc8]
+// Size 0x60 (Full Size[0x118] - InheritedSize[0xb8]
 class RetractorComponent: public ActorComponent
 {
 public:
-	interface                                                    AttachedRetractable;                               // 0xd0(0x10)
-	class SceneComponent*                                        RetractDestinationComponent;                       // 0x110(0x8)
-	class SceneComponent*                                        RetractingComponent;                               // 0x118(0x8)
+	char                                                         pad0x48_QDDTW[0x48];                               // 0xb8(0x48)
+	class SceneComponent*                                        RetractDestinationComponent;                       // 0x100(0x8)
+	class SceneComponent*                                        RetractingComponent;                               // 0x108(0x8)
+	char                                                         pad0x8_IWTNN[0x8];                                 // 0x110(0x8)
 };
 
 
-// Size 0x10 (Full Size[0x120] - InheritedSize[0x110]
+// Size 0x10 (Full Size[0x110] - InheritedSize[0x100]
 class RetractableFloatingBarrelComponent: public RetractableComponent
 {
 public:
-	interface                                                    OwnerBuoyancyInterface;                            // 0x110(0x10)
+	char                                                         pad0x10_67Q7J[0x10];                               // 0x100(0x10)
 };
 
 

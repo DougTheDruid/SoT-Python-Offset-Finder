@@ -6,65 +6,87 @@
 #include "BreakableActorFramework_Structs.h"
 
 
-// Size 0xf8 (Full Size[0x1c0] - InheritedSize[0xc8]
-class BreakableActorVfxComponent: public ActorComponent
+// Size 0x80 (Full Size[0x500] - InheritedSize[0x480]
+class BreakableActorItemSpawnComponent: public ItemSpawnComponent
 {
 public:
-	struct Color                                                 VFXTintColour;                                     // 0xc8(0x4)
-	class Object*                                                DamagedParticleSystem;                             // 0xd0(0x8)
-	class Object*                                                DestroyedParticleSystem;                           // 0xd8(0x8)
-	int                                                          GlowMaterialIndex;                                 // 0xe0(0x4)
-	struct FName                                                 GlowMaterialPropertyName;                          // 0xe4(0x8)
-	float                                                        GlowMaterialScale;                                 // 0xec(0x4)
-	float                                                        GlowMaterialBias;                                  // 0xf0(0x4)
-	float                                                        GlowUpdateSpeed;                                   // 0xf4(0x4)
-	class BreakableActorBase*                                    BreakableActor;                                    // 0xf8(0x8)
-	class MaterialInstanceDynamic*                               GlowMaterial;                                      // 0x100(0x8)
+	char                                                         pad0x80_U8XYH[0x80];                               // 0x480(0x80)
 };
 
 
-// Size 0x190 (Full Size[0x558] - InheritedSize[0x3c8]
-class BreakableActorBase: public Actor
-{
-public:
-	float                                                        DespawnDelay;                                      // 0x3e8(0x4)
-	multicastinlinedelegate                                      OnBreakableActorDamaged;                           // 0x3f0(0x10)
-	multicastinlinedelegate                                      OnBreakableActorDestroyed;                         // 0x400(0x10)
-	class PrimitiveComponent*                                    ThirdPersonMesh;                                   // 0x410(0x8)
-	class HealthComponent*                                       HealthComponent;                                   // 0x418(0x8)
-	class BreakableActorAudioComponent*                          AudioComponent;                                    // 0x420(0x8)
-	class BreakableActorVfxComponent*                            VFXComponent;                                      // 0x428(0x8)
-	class BreakableActorDynamicMaterialComponent*                DamageMaterialComponent;                           // 0x430(0x8)
-	class ActorDamageableComponent*                              DamageableComponent;                               // 0x438(0x8)
-};
-
-
-// Size 0x100 (Full Size[0x1c8] - InheritedSize[0xc8]
+// Size 0x100 (Full Size[0x1b8] - InheritedSize[0xb8]
 class BreakableActorAudioComponent: public ActorComponent
 {
 public:
-	bool                                                         UseParentEmitter;                                  // 0xc8(0x1)
-	class WwiseObjectPoolWrapper*                                AudioPool;                                         // 0xd0(0x8)
-	class WwiseEvent*                                            PlayMusicEvent;                                    // 0xd8(0x8)
-	class WwiseEvent*                                            StopMusicEvent;                                    // 0xe0(0x8)
-	class WwiseEvent*                                            PlayDamagedEvent;                                  // 0xe8(0x8)
-	class WwiseEvent*                                            PlayDestroyedEvent;                                // 0xf0(0x8)
+	bool                                                         UseParentEmitter;                                  // 0xb8(0x1)
+	char                                                         pad0x7_YEMFA[0x7];                                 // 0xb9(0x7)
+	class WwiseObjectPoolWrapper*                                AudioPool;                                         // 0xc0(0x8)
+	class WwiseEvent*                                            PlayMusicEvent;                                    // 0xc8(0x8)
+	class WwiseEvent*                                            StopMusicEvent;                                    // 0xd0(0x8)
+	class WwiseEvent*                                            PlayDamagedEvent;                                  // 0xd8(0x8)
+	class WwiseEvent*                                            PlayDestroyedEvent;                                // 0xe0(0x8)
+	char                                                         pad0xd0_ZYNWF[0xd0];                               // 0xe8(0xd0)
 };
 
 
-// Size 0x158 (Full Size[0x220] - InheritedSize[0xc8]
+// Size 0x158 (Full Size[0x210] - InheritedSize[0xb8]
 class BreakableActorDynamicMaterialComponent: public ActorComponent
 {
 public:
-	uint32                                                       MaterialElementIndex;                              // 0xc8(0x4)
-	struct FName                                                 MagicColourPropertyName;                           // 0xcc(0x8)
-	struct FName                                                 DamageLevelPropertyName;                           // 0xd4(0x8)
-	struct FName                                                 TimeBasedPropertyName;                             // 0xdc(0x8)
-	struct FName                                                 HitPositionPropertyName;                           // 0xe4(0x8)
-	struct FName                                                 CollapseStartTimePropertyName;                     // 0xec(0x8)
-	class PrimitiveComponent*                                    TargetMesh;                                        // 0xf8(0x8)
-	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x100(0x10)
-	class BreakableActorBase*                                    BreakableActor;                                    // 0x110(0x8)
+	char                                                         pad0x4_5OZ68[0x4];                                 // 0xb8(0x4)
+	struct FName                                                 MagicColourPropertyName;                           // 0xbc(0x8)
+	struct FName                                                 DamageLevelPropertyName;                           // 0xc4(0x8)
+	struct FName                                                 TimeBasedPropertyName;                             // 0xcc(0x8)
+	struct FName                                                 HitPositionPropertyName;                           // 0xd4(0x8)
+	struct FName                                                 CollapseStartTimePropertyName;                     // 0xdc(0x8)
+	char                                                         pad0x4_M841Y[0x4];                                 // 0xe4(0x4)
+	class PrimitiveComponent*                                    TargetMesh;                                        // 0xe8(0x8)
+	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0xf0(0x10)
+	class BreakableActorBase*                                    BreakableActor;                                    // 0x100(0x8)
+	char                                                         pad0x108_F2QXT[0x108];                             // 0x108(0x108)
+};
+
+
+// Size 0x190 (Full Size[0x530] - InheritedSize[0x3a0]
+class BreakableActorBase: public Actor
+{
+public:
+	char                                                         pad0x20_A7Z7Q[0x20];                               // 0x3a0(0x20)
+	float                                                        DespawnDelay;                                      // 0x3c0(0x4)
+	char                                                         pad0x4_1ZDZJ[0x4];                                 // 0x3c4(0x4)
+	class PrimitiveComponent*                                    ThirdPersonMesh;                                   // 0x3e8(0x8)
+	class HealthComponent*                                       HealthComponent;                                   // 0x3f0(0x8)
+	class BreakableActorAudioComponent*                          AudioComponent;                                    // 0x3f8(0x8)
+	class BreakableActorVfxComponent*                            VFXComponent;                                      // 0x400(0x8)
+	class BreakableActorDynamicMaterialComponent*                DamageMaterialComponent;                           // 0x408(0x8)
+	class ActorDamageableComponent*                              DamageableComponent;                               // 0x410(0x8)
+	char                                                         pad0x118_BHYAH[0x118];                             // 0x418(0x118)
+};
+
+
+// Size 0xf8 (Full Size[0x1b0] - InheritedSize[0xb8]
+class BreakableActorVfxComponent: public ActorComponent
+{
+public:
+	struct Color                                                 VFXTintColour;                                     // 0xb8(0x4)
+	char                                                         pad0x4_GRI6B[0x4];                                 // 0xbc(0x4)
+	class Object*                                                DamagedParticleSystem;                             // 0xc0(0x8)
+	class Object*                                                DestroyedParticleSystem;                           // 0xc8(0x8)
+	int                                                          GlowMaterialIndex;                                 // 0xd0(0x4)
+	struct FName                                                 GlowMaterialPropertyName;                          // 0xd4(0x8)
+	float                                                        GlowMaterialScale;                                 // 0xdc(0x4)
+	float                                                        GlowMaterialBias;                                  // 0xe0(0x4)
+	float                                                        GlowUpdateSpeed;                                   // 0xe4(0x4)
+	class BreakableActorBase*                                    BreakableActor;                                    // 0xe8(0x8)
+	class MaterialInstanceDynamic*                               GlowMaterial;                                      // 0xf0(0x8)
+	char                                                         pad0xb8_5IGNW[0xb8];                               // 0xf8(0xb8)
+};
+
+
+// Size 0x0 (Full Size[0x530] - InheritedSize[0x530]
+class BreakableSarcophagus: public BreakableActorBase
+{
+public:
 };
 
 

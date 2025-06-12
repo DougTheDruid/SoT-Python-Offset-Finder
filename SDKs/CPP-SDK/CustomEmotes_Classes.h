@@ -7,7 +7,15 @@
 class CustomEmoteService: public Object
 {
 public:
+	char                                                         pad0x8_PA6I0[0x8];                                 // 0x28(0x8)
 	class World*                                                 World;                                             // 0x30(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CustomEmoteInterface: public Interface
+{
+public:
 };
 
 

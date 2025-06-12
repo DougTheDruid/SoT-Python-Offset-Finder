@@ -1,89 +1,134 @@
 {
-  "ShantyPuzzleComponent": {
-    "Super": "SceneComponent",
-    "FullSize": "0x3f0",
-    "InheritedSize": "0x2e0",
-    "ClassSize": "0x110",
-    "Attributes": [
-      {
-        "Name": "RequiredShantyItemDesc",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x2e8"
-      },
-      {
-        "Name": "ShantyPuzzleInteractionZoneDefinitions",
-        "Type": "TArray<struct ShantyPuzzleInteractionZoneDefinition>",
-        "Size": "0x10",
-        "Offset": "0x2f0"
-      },
-      {
-        "Name": "TimeLimited",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x300"
-      },
-      {
-        "Name": "ShouldMoveEnsembleToActorPosition",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x301"
-      },
-      {
-        "Name": "ActiveTimeRange",
-        "Type": "struct GameTimeRange",
-        "Size": "0x10",
-        "Offset": "0x308"
-      },
-      {
-        "Name": "ShantyPuzzleInteractionZones",
-        "Type": "TArray<class ShantyPuzzleInteractionZoneComponent*>",
-        "Size": "0x10",
-        "Offset": "0x318"
-      },
-      {
-        "Name": "CurrentlyPlayingShantyPuzzleEnsemble",
-        "Type": "class Ensemble*",
-        "Size": "0x8",
-        "Offset": "0x328"
-      }
-    ]
-  },
   "ShantyPuzzleCompletionComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x108",
-    "InheritedSize": "0xc8",
+    "FullSize": "0xf8",
+    "InheritedSize": "0xb8",
     "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "CompletionTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xc8"
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "pad0x4_7UG74[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xbc"
       },
       {
         "Name": "StartCompletionReaction",
         "Type": "TArray<struct LandmarkReactionKeyFrame>",
         "Size": "0x10",
-        "Offset": "0xd0"
+        "Offset": "0xc0"
       },
       {
         "Name": "AbortCompletionReaction",
         "Type": "TArray<struct LandmarkReactionKeyFrame>",
         "Size": "0x10",
-        "Offset": "0xe0"
+        "Offset": "0xd0"
       },
       {
         "Name": "PuzzleCompletedReaction",
         "Type": "TArray<struct LandmarkReactionKeyFrame>",
         "Size": "0x10",
-        "Offset": "0xf0"
+        "Offset": "0xe0"
       },
       {
         "Name": "ReactionPlayer",
         "Type": "class LandmarkReactionPlayer*",
         "Size": "0x8",
-        "Offset": "0x100"
+        "Offset": "0xf0"
+      }
+    ]
+  },
+  "ShantyPuzzleInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ShantyPuzzleComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x3e0",
+    "InheritedSize": "0x2d0",
+    "ClassSize": "0x110",
+    "Attributes": [
+      {
+        "Name": "pad0x8_KAMOF[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x2d0"
+      },
+      {
+        "Name": "RequiredShantyItemDesc",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x2d8"
+      },
+      {
+        "Name": "ShantyPuzzleInteractionZoneDefinitions",
+        "Type": "TArray<struct ShantyPuzzleInteractionZoneDefinition>",
+        "Size": "0x10",
+        "Offset": "0x2e0"
+      },
+      {
+        "Name": "TimeLimited",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x2f0"
+      },
+      {
+        "Name": "ShouldMoveEnsembleToActorPosition",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x2f1"
+      },
+      {
+        "Name": "pad0x6_D0US4[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x2f2"
+      },
+      {
+        "Name": "ActiveTimeRange",
+        "Type": "struct GameTimeRange",
+        "Size": "0x10",
+        "Offset": "0x2f8"
+      },
+      {
+        "Name": "ShantyPuzzleInteractionZones",
+        "Type": "TArray<class ShantyPuzzleInteractionZoneComponent*>",
+        "Size": "0x10",
+        "Offset": "0x308"
+      },
+      {
+        "Name": "CurrentlyPlayingShantyPuzzleEnsemble",
+        "Type": "class Ensemble*",
+        "Size": "0x8",
+        "Offset": "0x318"
+      },
+      {
+        "Name": "pad0xc0_LLJRW[0xc0]",
+        "Type": "char",
+        "Size": "0xc0",
+        "Offset": "0x320"
+      }
+    ]
+  },
+  "ShantyPuzzleInteractionZoneComponent": {
+    "Super": "SphereComponent",
+    "FullSize": "0x600",
+    "InheritedSize": "0x5e0",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_EA1X2[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x5e0"
       }
     ]
   },

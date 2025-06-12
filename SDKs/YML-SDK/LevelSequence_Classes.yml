@@ -10,55 +10,59 @@ LevelSequence:
     Offset: '0x2b0'
     Size: '0xa0'
     Type: struct LevelSequenceObjectReferenceMap
-  - Name: PossessedObjects
+  - Name: pad0x50_DW2BY[0x50]
     Offset: '0x350'
     Size: '0x50'
-    Type: map
+    Type: char
   ClassSize: '0xf8'
   FullSize: '0x3a0'
   InheritedSize: '0x2a8'
   Super: MovieSceneSequence
 LevelSequenceActor:
   Attributes:
+  - Name: pad0x8_G14CQ[0x8]
+    Offset: '0x3a0'
+    Size: '0x8'
+    Type: char
   - Name: bAutoPlay
-    Offset: '0x3d0'
+    Offset: '0x3a8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_0F42O[0x7]
+    Offset: '0x3a9'
+    Size: '0x7'
+    Type: char
   - Name: PlaybackSettings
-    Offset: '0x3d8'
+    Offset: '0x3b0'
     Size: '0x28'
     Type: struct MovieSceneSequencePlaybackSettings
   - Name: SequencePlayer
-    Offset: '0x400'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: class LevelSequencePlayer*
   - Name: LevelSequence
-    Offset: '0x408'
+    Offset: '0x3e0'
     Size: '0x10'
     Type: struct StringAssetReference
   - Name: BurnInOptions
-    Offset: '0x418'
+    Offset: '0x3f0'
     Size: '0x8'
     Type: class LevelSequenceBurnInOptions*
   - Name: BindingOverrides
-    Offset: '0x420'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: class MovieSceneBindingOverrides*
   - Name: SpawnablesParent
-    Offset: '0x428'
+    Offset: '0x400'
     Size: '0x8'
     Type: class Actor*
-  - Name: OnSequenceReadyToPlay
-    Offset: '0x430'
-    Size: '0x10'
-    Type: multicastinlinedelegate
   - Name: BurnInInstance
-    Offset: '0x440'
+    Offset: '0x418'
     Size: '0x8'
     Type: class LevelSequenceBurnIn*
   ClassSize: '0x80'
-  FullSize: '0x448'
-  InheritedSize: '0x3c8'
+  FullSize: '0x420'
+  InheritedSize: '0x3a0'
   Super: Actor
 LevelSequenceBurnIn:
   Attributes:
@@ -74,12 +78,22 @@ LevelSequenceBurnIn:
   FullSize: '0x2c8'
   InheritedSize: '0x230'
   Super: UserWidget
+LevelSequenceBurnInInitSettings:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Object
 LevelSequenceBurnInOptions:
   Attributes:
   - Name: bUseBurnIn
     Offset: '0x28'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_MCIJI[0x7]
+    Offset: '0x29'
+    Size: '0x7'
+    Type: char
   - Name: BurnInClass
     Offset: '0x30'
     Size: '0x10'
@@ -98,7 +112,17 @@ LevelSequencePlayer:
     Offset: '0x608'
     Size: '0x8'
     Type: class Actor*
+  - Name: pad0x38_S16MA[0x38]
+    Offset: '0x610'
+    Size: '0x38'
+    Type: char
   ClassSize: '0x40'
   FullSize: '0x648'
   InheritedSize: '0x608'
   Super: MovieSceneSequencePlayer
+LevelSequenceSubtitlesInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

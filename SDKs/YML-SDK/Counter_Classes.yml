@@ -2,36 +2,56 @@
 # https://github.com/DougTheDruid
 CountHolderComponent:
   Attributes:
+  - Name: pad0x8_4VZMY[0x8]
+    Offset: '0xb8'
+    Size: '0x8'
+    Type: char
   - Name: CountHolders
-    Offset: '0xd0'
+    Offset: '0xc0'
     Size: '0x10'
     Type: TArray<struct CountHolder>
   ClassSize: '0x18'
-  FullSize: '0xe0'
-  InheritedSize: '0xc8'
+  FullSize: '0xd0'
+  InheritedSize: '0xb8'
   Super: ActorComponent
+CountHolderProviderInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 CountMaterialDisplayComponent:
   Attributes:
   - Name: ScalarParameterNameToOverride
-    Offset: '0xc8'
+    Offset: '0xb8'
     Size: '0x8'
     Type: struct FName
   - Name: CountType
-    Offset: '0xd0'
+    Offset: '0xc0'
     Size: '0x8'
     Type: class UClass*
   - Name: MaximumCountForDynamicMaterialParameterAlphaValue
-    Offset: '0xd8'
+    Offset: '0xc8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_2GBTT[0x4]
+    Offset: '0xcc'
+    Size: '0x4'
+    Type: char
   - Name: OverridenMaterials
-    Offset: '0xe0'
+    Offset: '0xd0'
     Size: '0x10'
     Type: TArray<class MaterialInstanceDynamic*>
   ClassSize: '0x28'
-  FullSize: '0xf0'
-  InheritedSize: '0xc8'
+  FullSize: '0xe0'
+  InheritedSize: '0xb8'
   Super: ActorComponent
+CountPolicy:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Object
 CountType:
   Attributes:
   - Name: UniqueTextIdentifier
@@ -48,6 +68,10 @@ IsCountAmountMetStatCondition:
     Offset: '0x30'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_IODN3[0x4]
+    Offset: '0x34'
+    Size: '0x4'
+    Type: char
   - Name: CountType
     Offset: '0x38'
     Size: '0x8'

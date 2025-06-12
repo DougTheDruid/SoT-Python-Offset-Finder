@@ -25,6 +25,23 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x11"
+      },
+      {
+        "Name": "pad0x6_3N6UI[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x12"
+      }
+    ]
+  },
+  "RareGameServiceManagerStateChangedEvent": {
+    "ClassSize": "0x2",
+    "Attributes": [
+      {
+        "Name": "pad0x2_ULAUO[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x0"
       }
     ]
   },

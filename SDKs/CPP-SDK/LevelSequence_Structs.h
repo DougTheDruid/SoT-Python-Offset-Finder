@@ -7,9 +7,25 @@
 struct LevelSequenceObject
 {
 public:
-	lazyobject                                                   ObjectOrOwner;                                     // 0x0(0x1c)
+	char                                                         pad0x20_Q7F4Y[0x20];                               // 0x0(0x20)
 	struct FString                                               ComponentName;                                     // 0x20(0x10)
-	class Object*                                                CachedComponent;                                   // 0x30(0x8)
+	char                                                         pad0x8_IA7EX[0x8];                                 // 0x30(0x8)
+};
+
+
+// Size 0x28
+struct LevelSequencePlaybackSettings
+{
+public:
+	char                                                         pad0x28_E2W1W[0x28];                               // 0x0(0x28)
+};
+
+
+// Size 0xa0
+struct LevelSequenceObjectReferenceMap
+{
+public:
+	char                                                         pad0xa0_EWGON[0xa0];                               // 0x0(0xa0)
 };
 
 
@@ -18,7 +34,24 @@ struct LevelSequenceSnapshotSettings
 {
 public:
 	char                                                         ZeroPadAmount;                                     // 0x0(0x1)
+	char                                                         pad0x3_YATD9[0x3];                                 // 0x1(0x3)
 	float                                                        FrameRate;                                         // 0x4(0x4)
+};
+
+
+// Size 0x20
+struct LevelSequenceObjectReference
+{
+public:
+	char                                                         pad0x20_YUPUR[0x20];                               // 0x0(0x20)
+};
+
+
+// Size 0x1
+struct BoundActorProxy
+{
+public:
+	char                                                         pad0x1_J3Q15[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -28,8 +61,10 @@ struct LevelSequencePlayerSnapshot
 public:
 	struct FText                                                 MasterName;                                        // 0x0(0x38)
 	float                                                        MasterTime;                                        // 0x38(0x4)
+	char                                                         pad0x4_3JSKC[0x4];                                 // 0x3c(0x4)
 	struct FText                                                 CurrentShotName;                                   // 0x40(0x38)
 	float                                                        CurrentShotLocalTime;                              // 0x78(0x4)
+	char                                                         pad0x4_D7GLO[0x4];                                 // 0x7c(0x4)
 	class CameraComponent*                                       CameraComponent;                                   // 0x80(0x8)
 	struct LevelSequenceSnapshotSettings                         Settings;                                          // 0x88(0x8)
 };

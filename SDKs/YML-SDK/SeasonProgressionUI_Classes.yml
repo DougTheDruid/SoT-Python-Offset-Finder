@@ -90,28 +90,56 @@ SeasonPopupListAsset:
   Super: DataAsset
 SeasonProgressionUIComponent:
   Attributes:
+  - Name: pad0x20_P43KZ[0x20]
+    Offset: '0xb8'
+    Size: '0x20'
+    Type: char
   - Name: DetailsNavigationDesc
-    Offset: '0xe8'
+    Offset: '0xd8'
     Size: '0x10'
     Type: TArray<struct EnableMoreButtonEvent>
   - Name: NextReceivedEventsTelemetryData
-    Offset: '0xf8'
+    Offset: '0xe8'
     Size: '0x18'
     Type: struct SeasonProgressionUITelemetryFragment
+  - Name: pad0xf0_R4TVH[0xf0]
+    Offset: '0x100'
+    Size: '0xf0'
+    Type: char
   ClassSize: '0x138'
-  FullSize: '0x200'
-  InheritedSize: '0xc8'
+  FullSize: '0x1f0'
+  InheritedSize: '0xb8'
   Super: ActorComponent
+SeasonProgressionUIInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 SeasonProgressionUIService:
   Attributes:
+  - Name: pad0x30_7EK9U[0x30]
+    Offset: '0x3a0'
+    Size: '0x30'
+    Type: char
   - Name: SeasonPopupListAsset
-    Offset: '0x3f8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: class SeasonPopupListAsset*
+  - Name: pad0x1c0_3AXQH[0x1c0]
+    Offset: '0x3d8'
+    Size: '0x1c0'
+    Type: char
   ClassSize: '0x1f8'
-  FullSize: '0x5c0'
-  InheritedSize: '0x3c8'
+  FullSize: '0x598'
+  InheritedSize: '0x3a0'
   Super: Actor
+SeasonProgressionUIServiceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 SeasonProgressionUISettings:
   Attributes:
   - Name: SeasonPopupListAsset
@@ -122,3 +150,9 @@ SeasonProgressionUISettings:
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: Object
+SeasonProgressionUITelemetryInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

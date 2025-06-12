@@ -9,6 +9,10 @@ GameplayTag:
   ClassSize: '0x8'
 GameplayTagContainer:
   Attributes:
+  - Name: pad0x8_2WKCW[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: GameplayTags
     Offset: '0x8'
     Size: '0x10'
@@ -18,12 +22,23 @@ GameplayTagContainer:
     Size: '0x10'
     Type: TArray<struct Name>
   ClassSize: '0x28'
+GameplayTagNode:
+  Attributes:
+  - Name: pad0x78_BW1ZJ[0x78]
+    Offset: '0x0'
+    Size: '0x78'
+    Type: char
+  ClassSize: '0x78'
 GameplayTagQuery:
   Attributes:
   - Name: TokenStreamVersion
     Offset: '0x0'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_NNG16[0x4]
+    Offset: '0x4'
+    Size: '0x4'
+    Type: char
   - Name: TagDictionary
     Offset: '0x8'
     Size: '0x10'

@@ -7,7 +7,16 @@
 class CustomItemService: public Object
 {
 public:
+	char                                                         pad0x8_1PY2Q[0x8];                                 // 0x28(0x8)
 	class World*                                                 World;                                             // 0x30(0x8)
+	char                                                         pad0x18_63QMH[0x18];                               // 0x38(0x18)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CustomItemServiceInterface: public Interface
+{
+public:
 };
 
 

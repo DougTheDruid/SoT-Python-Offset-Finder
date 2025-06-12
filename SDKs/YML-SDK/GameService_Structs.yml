@@ -6,6 +6,10 @@ GameServiceCoordinator:
     Offset: '0x0'
     Size: '0x10'
     Type: TArray<struct GameServiceCoordinatorUnit>
+  - Name: pad0x10_T6C9U[0x10]
+    Offset: '0x10'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x20'
 GameServiceCoordinatorUnit:
   Attributes:
@@ -13,4 +17,15 @@ GameServiceCoordinatorUnit:
     Offset: '0x0'
     Size: '0x8'
     Type: class Object*
+  - Name: pad0x10_NH42D[0x10]
+    Offset: '0x8'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x18'
+GameServiceMap:
+  Attributes:
+  - Name: pad0x70_ADTG1[0x70]
+    Offset: '0x0'
+    Size: '0x70'
+    Type: char
+  ClassSize: '0x70'

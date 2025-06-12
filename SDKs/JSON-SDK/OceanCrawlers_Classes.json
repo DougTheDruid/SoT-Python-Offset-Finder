@@ -1,41 +1,33 @@
 {
   "OceanCrawlerAudioBroadcaster": {
     "Super": "ActorComponent",
-    "FullSize": "0x1f8",
-    "InheritedSize": "0xc8",
+    "FullSize": "0x1e8",
+    "InheritedSize": "0xb8",
     "ClassSize": "0x130",
     "Attributes": [
       {
-        "Name": "AudioDataAsset",
-        "Type": "assetclass",
+        "Name": "pad0x20_8KKCM[0x20]",
+        "Type": "char",
         "Size": "0x20",
-        "Offset": "0xc8"
+        "Offset": "0xb8"
       },
       {
         "Name": "CachedOwner",
         "Type": "class Actor*",
         "Size": "0x8",
-        "Offset": "0xe8"
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "pad0x100_9MRUW[0x100]",
+        "Type": "char",
+        "Size": "0x100",
+        "Offset": "0xe0"
       },
       {
         "Name": "LoadedAudioDataAsset",
         "Type": "class OceanCrawlerAudioParamsDataAsset*",
         "Size": "0x8",
-        "Offset": "0x1f0"
-      }
-    ]
-  },
-  "BTTask_BroadcastOceanCrawlerAbilityAudioEvent": {
-    "Super": "BTTaskNode",
-    "FullSize": "0x68",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "OceanCrawlerAudioKeyToBroadcast",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x60"
+        "Offset": "0x1e0"
       }
     ]
   },
@@ -80,6 +72,26 @@
         "Type": "struct OceanCrawlerBuffAudioSettings",
         "Size": "0x10",
         "Offset": "0x90"
+      }
+    ]
+  },
+  "BTTask_BroadcastOceanCrawlerAbilityAudioEvent": {
+    "Super": "BTTaskNode",
+    "FullSize": "0x68",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "OceanCrawlerAudioKeyToBroadcast",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x7_B2MIE[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x61"
       }
     ]
   },

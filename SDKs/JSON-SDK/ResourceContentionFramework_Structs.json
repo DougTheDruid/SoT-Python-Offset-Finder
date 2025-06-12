@@ -3,8 +3,8 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "Type",
-        "Type": "assetclass",
+        "Name": "pad0x20_6Q6CD[0x20]",
+        "Type": "char",
         "Size": "0x20",
         "Offset": "0x0"
       },
@@ -13,6 +13,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_SBO5R[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
       }
     ]
   },
@@ -30,6 +36,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_8L2TP[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
       }
     ]
   },

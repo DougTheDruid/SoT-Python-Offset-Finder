@@ -10,6 +10,22 @@ AssetReferencer:
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: DataAsset
+AudioHardwareDeviceService:
+  Attributes:
+  - Name: pad0x18_EW7W0[0x18]
+    Offset: '0x28'
+    Size: '0x18'
+    Type: char
+  ClassSize: '0x18'
+  FullSize: '0x40'
+  InheritedSize: '0x28'
+  Super: Object
+HitchDiagnosisBlueprintFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
 MemoryUsageVisualiserSettings:
   Attributes:
   - Name: VisualiserCategories
@@ -20,13 +36,35 @@ MemoryUsageVisualiserSettings:
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: Object
+RareGameEngine:
+  Attributes:
+  - Name: pad0x58_PKJR3[0x58]
+    Offset: '0xa48'
+    Size: '0x58'
+    Type: char
+  ClassSize: '0x58'
+  FullSize: '0xaa0'
+  InheritedSize: '0xa48'
+  Super: GameEngine
+RareHUD:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x498'
+  InheritedSize: '0x498'
+  Super: HUD
 StallDetector:
   Attributes:
-  - Name: Callback
-    Offset: '0x30'
-    Size: '0x10'
-    Type: multicastinlinedelegate
+  - Name: pad0x28_MFS3U[0x28]
+    Offset: '0x28'
+    Size: '0x28'
+    Type: char
   ClassSize: '0x28'
   FullSize: '0x50'
   InheritedSize: '0x28'
   Super: Object
+StaticMeshActorBlueprintLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary

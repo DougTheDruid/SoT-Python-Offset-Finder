@@ -22,6 +22,10 @@ AddMarkToTornMapAtLocationStepDesc:
   Super: AddMarkToTornMapStepDescBase
 AddMarkToTornMapStep:
   Attributes:
+  - Name: pad0x20_ORV85[0x20]
+    Offset: '0x98'
+    Size: '0x20'
+    Type: char
   - Name: MapMark
     Offset: '0xb8'
     Size: '0x8'
@@ -44,6 +48,16 @@ AddMarkToTornMapStepDescBase:
   FullSize: '0xe0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
+GetNumberOfCollectedTornMapPiecesStep:
+  Attributes:
+  - Name: pad0x40_HG9Q8[0x40]
+    Offset: '0x98'
+    Size: '0x40'
+    Type: char
+  ClassSize: '0x40'
+  FullSize: '0xd8'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
 GetNumberOfCollectedTornMapPiecesStepDesc:
   Attributes:
   - Name: MapID
@@ -68,6 +82,10 @@ RegionIslandFilteredSelectionStrategy:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_VUSDH[0x3]
+    Offset: '0x39'
+    Size: '0x3'
+    Type: char
   - Name: MaxDistanceFromStartingIsland
     Offset: '0x3c'
     Size: '0x4'
@@ -76,6 +94,18 @@ RegionIslandFilteredSelectionStrategy:
   FullSize: '0x40'
   InheritedSize: '0x28'
   Super: RegionIslandSelectionStrategyBase
+RegionIslandRandomSelectionStrategy:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: RegionIslandSelectionStrategyBase
+RegionIslandSelectionStrategyBase:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Object
 RegionIslandWayfinderSelectionStrategy:
   Attributes:
   - Name: IslandTypes
@@ -86,6 +116,10 @@ RegionIslandWayfinderSelectionStrategy:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_EP9EZ[0x3]
+    Offset: '0x39'
+    Size: '0x3'
+    Type: char
   - Name: StartingIslandMinDistanceFromKeyIsland
     Offset: '0x3c'
     Size: '0x4'
@@ -108,6 +142,10 @@ SelectIslandsFromRegionStep:
     Offset: '0xa0'
     Size: '0x8'
     Type: class RegionIslandSelectionStrategyBase*
+  - Name: pad0x50_YKG3B[0x50]
+    Offset: '0xa8'
+    Size: '0x50'
+    Type: char
   ClassSize: '0x60'
   FullSize: '0xf8'
   InheritedSize: '0x98'
@@ -160,6 +198,10 @@ SelectWayfinderIslandsFromRegionStep:
     Offset: '0xa8'
     Size: '0x8'
     Type: class Actor*
+  - Name: pad0x80_5JP04[0x80]
+    Offset: '0xb0'
+    Size: '0x80'
+    Type: char
   ClassSize: '0x98'
   FullSize: '0x130'
   InheritedSize: '0x98'
@@ -206,6 +248,16 @@ SelectWayfinderIslandsFromRegionStepDesc:
   FullSize: '0x1b0'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
+TaleQuestAddLocationMapStep:
+  Attributes:
+  - Name: pad0xc0_612L1[0xc0]
+    Offset: '0x98'
+    Size: '0xc0'
+    Type: char
+  ClassSize: '0xc0'
+  FullSize: '0x158'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
 TaleQuestAddLocationMapStepDesc:
   Attributes:
   - Name: MapID
@@ -232,6 +284,16 @@ TaleQuestAddLocationMapStepDesc:
   FullSize: '0x148'
   InheritedSize: '0x80'
   Super: TaleQuestMapStepDescBase
+TaleQuestAddTornMapStep:
+  Attributes:
+  - Name: pad0xd8_E74DT[0xd8]
+    Offset: '0x98'
+    Size: '0xd8'
+    Type: char
+  ClassSize: '0xd8'
+  FullSize: '0x170'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
 TaleQuestAddTornMapStepDesc:
   Attributes:
   - Name: IslandName
@@ -254,6 +316,16 @@ TaleQuestAddTornMapStepDesc:
   FullSize: '0x140'
   InheritedSize: '0x80'
   Super: TaleQuestMapStepDescBase
+TaleQuestAddTradeRouteMapStep:
+  Attributes:
+  - Name: pad0x90_VIO47[0x90]
+    Offset: '0x98'
+    Size: '0x90'
+    Type: char
+  ClassSize: '0x90'
+  FullSize: '0x128'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
 TaleQuestAddTradeRouteMapStepDesc:
   Attributes:
   - Name: TradeRouteData
@@ -276,6 +348,30 @@ TaleQuestAddTradeRouteMapStepDesc:
   FullSize: '0x118'
   InheritedSize: '0x80'
   Super: TaleQuestMapStepDescBase
+TaleQuestCustomMapFunctionLibrary:
+  Attributes:
+  - Name: QuestIconOverride
+    Offset: '0x180'
+    Size: '0x1'
+    Type: byte
+  - Name: pad0x1f_W64RF[0x1f]
+    Offset: '0x181'
+    Size: '0x1f'
+    Type: char
+  ClassSize: '0x20'
+  FullSize: '0x1a0'
+  InheritedSize: '0x180'
+  Super: TaleQuestFunctionStepLibrary
+TaleQuestLocationMapChestFoundStep:
+  Attributes:
+  - Name: pad0x8_VQPD8[0x8]
+    Offset: '0x98'
+    Size: '0x8'
+    Type: char
+  ClassSize: '0x8'
+  FullSize: '0xa0'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
 TaleQuestLocationMapChestFoundStepDesc:
   Attributes:
   - Name: MapID
@@ -286,6 +382,24 @@ TaleQuestLocationMapChestFoundStepDesc:
   FullSize: '0x88'
   InheritedSize: '0x80'
   Super: TaleQuestMapStepDescBase
+TaleQuestMapStepDescBase:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x80'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc
+TaleQuestTornMapFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
+  Super: TaleQuestFunctionStepLibrary
+TaleQuestTriggerNamedChecklistEventStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
 TaleQuestTriggerNamedChecklistEventStepDesc:
   Attributes:
   - Name: Event
@@ -296,3 +410,13 @@ TaleQuestTriggerNamedChecklistEventStepDesc:
   FullSize: '0x88'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
+TaleQuestWaitForChecklistMapCompletionStep:
+  Attributes:
+  - Name: pad0x8_0V54Y[0x8]
+    Offset: '0x98'
+    Size: '0x8'
+    Type: char
+  ClassSize: '0x8'
+  FullSize: '0xa0'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep

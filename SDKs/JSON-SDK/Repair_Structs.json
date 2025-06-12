@@ -1,27 +1,4 @@
 {
-  "RepairObjectActionStateConstructionInfo": {
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "RepairableObject",
-        "Type": "struct NetSubObjectPtr",
-        "Size": "0x14",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "WieldedItem",
-        "Type": "struct NetActorPtr",
-        "Size": "0x14",
-        "Offset": "0x54"
-      },
-      {
-        "Name": "InputID",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x68"
-      }
-    ]
-  },
   "RepairableAuthoritiveRepairState": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -30,6 +7,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_E25UP[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
       },
       {
         "Name": "RepairingList",
@@ -53,6 +36,23 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_5X5QV[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
+      }
+    ]
+  },
+  "EventRepairableObjectDestroyed": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_AS97M[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },
@@ -70,23 +70,41 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_QIE0B[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
       }
     ]
   },
-  "ShipPartDamagePersistenceModel": {
-    "ClassSize": "0x20",
+  "RepairObjectActionStateConstructionInfo": {
+    "ClassSize": "0x78",
     "Attributes": [
       {
-        "Name": "ComponentRepairableStates",
-        "Type": "TArray<char>",
-        "Size": "0x10",
+        "Name": "pad0x48_M0YSM[0x48]",
+        "Type": "char",
+        "Size": "0x48",
         "Offset": "0x0"
       },
       {
-        "Name": "Identifier",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
+        "Name": "RepairableObject",
+        "Type": "struct NetSubObjectPtr",
+        "Size": "0x14",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "WieldedItem",
+        "Type": "struct NetActorPtr",
+        "Size": "0x14",
+        "Offset": "0x5c"
+      },
+      {
+        "Name": "InputID",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x70"
       }
     ]
   },
@@ -123,6 +141,12 @@
         "Offset": "0x8"
       },
       {
+        "Name": "pad0x4_7ZSHQ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
         "Name": "RepairerActor",
         "Type": "class Actor*",
         "Size": "0x8",
@@ -139,6 +163,29 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x24"
+      },
+      {
+        "Name": "pad0x3_2QD1R[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x25"
+      }
+    ]
+  },
+  "ShipPartDamagePersistenceModel": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ComponentRepairableStates",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Identifier",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },

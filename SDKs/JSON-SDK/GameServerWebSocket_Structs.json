@@ -3,7 +3,7 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "EventID",
+        "Name": "EventId",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
@@ -19,6 +19,52 @@
         "Type": "struct DateTime",
         "Size": "0x8",
         "Offset": "0x20"
+      }
+    ]
+  },
+  "EventOverMemoryThreshold": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "EventId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ServerTimeUTC",
+        "Type": "struct DateTime",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "MemoryUsedPercentage",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x4_O36ZV[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      }
+    ]
+  },
+  "GlobalEventSubscriptionGameServerRequestModel": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "EnableEvents",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DisableEvents",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
@@ -42,46 +88,6 @@
         "Type": "TArray<int>",
         "Size": "0x10",
         "Offset": "0x18"
-      }
-    ]
-  },
-  "EventOverMemoryThreshold": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "EventID",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ServerTimeUTC",
-        "Type": "struct DateTime",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "MemoryUsedPercentage",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "GlobalEventSubscriptionGameServerRequestModel": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "EnableEvents",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DisableEvents",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x10"
       }
     ]
   },

@@ -1,18 +1,172 @@
 {
-  "EventPortableHarpoonProjectileClientStateChanged": {
-    "ClassSize": "0x2",
+  "EventPortableHarpoonHarpoonedCharacter": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "ProjectileState",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "HarpoonedCharacter",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "PortableHarpoonTelemetryEvent": {
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "AttackId",
+        "Type": "struct Guid",
+        "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "IsPredicted",
+        "Name": "WielderStartedOnShip",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x1"
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_8AORL[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "WielderStartShipClass",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "WielderStartShipId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "WielderStartShipCrew",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "WielderIsAirborne",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "WielderIsSwimming",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x49"
+      },
+      {
+        "Name": "WielderWasFiredFromActor",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x4a"
+      },
+      {
+        "Name": "AttemptedAction",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x4b"
+      },
+      {
+        "Name": "ActionStartResult",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x4c"
+      },
+      {
+        "Name": "ActionEndResult",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x4d"
+      },
+      {
+        "Name": "pad0x2_4TWQK[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x4e"
+      },
+      {
+        "Name": "TargetActorClass",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "TargetActorName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "TargetObjectId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "MovedDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "WielderEndedOnShip",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x84"
+      },
+      {
+        "Name": "pad0x3_M2ZHT[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x85"
+      },
+      {
+        "Name": "WielderEndShipClass",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "WielderEndShipId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "WielderEndShipCrew",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0xa8"
+      },
+      {
+        "Name": "GrappledToLadder",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "pad0x7_OJ39I[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xb9"
+      }
+    ]
+  },
+  "PortableHarpoonTelemetryTemporaryData": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "pad0x14_YUU6D[0x14]",
+        "Type": "char",
+        "Size": "0x14",
+        "Offset": "0x0"
       }
     ]
   },
@@ -30,6 +184,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_PUHZF[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
       },
       {
         "Name": "RelativeComponent",
@@ -57,38 +217,37 @@
       }
     ]
   },
-  "PortableHarpoonTelemetryEvent": {
-    "ClassSize": "0x28",
+  "EventPortableHarpoonProjectileClientStateChanged": {
+    "ClassSize": "0x3",
     "Attributes": [
       {
-        "Name": "AttackId",
-        "Type": "struct Guid",
-        "Size": "0x10",
+        "Name": "PreviousProjectileState",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x0"
       },
       {
-        "Name": "AttemptedAction",
+        "Name": "ProjectileState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x10"
+        "Offset": "0x1"
       },
       {
-        "Name": "ActionStartResult",
-        "Type": "byte",
+        "Name": "IsPredicted",
+        "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x11"
-      },
+        "Offset": "0x2"
+      }
+    ]
+  },
+  "EventPortableHarpoonHarpoonedItem": {
+    "ClassSize": "0x8",
+    "Attributes": [
       {
-        "Name": "ActionEndResult",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x12"
-      },
-      {
-        "Name": "TargetActorName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
+        "Name": "HarpoonedItem",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
       }
     ]
   },

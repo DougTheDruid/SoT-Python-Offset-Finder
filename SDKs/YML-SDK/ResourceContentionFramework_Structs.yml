@@ -10,15 +10,23 @@ PoolableCollectionMapConfiguration:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_8L2TP[0x7]
+    Offset: '0x11'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x18'
 PoolableCollectionMapConfigurationEntry:
   Attributes:
-  - Name: Type
+  - Name: pad0x20_6Q6CD[0x20]
     Offset: '0x0'
     Size: '0x20'
-    Type: assetclass
+    Type: char
   - Name: Size
     Offset: '0x20'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_SBO5R[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x28'

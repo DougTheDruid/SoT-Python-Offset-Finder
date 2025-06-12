@@ -1,10 +1,23 @@
 {
+  "EntityEnumerationInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "EntityEnumerationService": {
     "Super": "Object",
     "FullSize": "0x50",
     "InheritedSize": "0x28",
     "ClassSize": "0x28",
     "Attributes": [
+      {
+        "Name": "pad0x20_OPAPL[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x28"
+      },
       {
         "Name": "World",
         "Type": "class World*",

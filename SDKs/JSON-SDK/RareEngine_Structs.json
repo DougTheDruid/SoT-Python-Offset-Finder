@@ -1,4 +1,44 @@
 {
+  "StaticMeshActorList": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Actors",
+        "Type": "TArray<class StaticMeshActor*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "MemoryVisualiserStat": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "StatName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DisplayName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "MemoryUsageMB",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x4_M9820[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      }
+    ]
+  },
   "MemoryCommonData": {
     "ClassSize": "0x50",
     "Attributes": [
@@ -99,12 +139,6 @@
         "Offset": "0x3c"
       },
       {
-        "Name": "mClusterMemoryUsedBytes",
-        "Type": "uint32",
-        "Size": "0x4",
-        "Offset": "0x40"
-      },
-      {
         "Name": "mNumClusters",
         "Type": "int",
         "Size": "0x4",
@@ -121,40 +155,6 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x4c"
-      }
-    ]
-  },
-  "StaticMeshActorList": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Actors",
-        "Type": "TArray<class StaticMeshActor*>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "MemoryVisualiserStat": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "StatName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DisplayName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "MemoryUsageMB",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x18"
       }
     ]
   },
@@ -185,6 +185,12 @@
         "Offset": "0x8"
       },
       {
+        "Name": "pad0x7_6VJIN[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
+      },
+      {
         "Name": "DisplayName",
         "Type": "struct FString",
         "Size": "0x10",
@@ -195,6 +201,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_9R146[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
       }
     ]
   },
@@ -224,6 +236,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x3_MTMIV[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x31"
       },
       {
         "Name": "XboxOneBudgetMB",
@@ -272,6 +290,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x50"
+      },
+      {
+        "Name": "pad0x4_66WYK[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x54"
       }
     ]
   },

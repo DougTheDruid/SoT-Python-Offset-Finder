@@ -1,51 +1,89 @@
 {
+  "ChecklistActionData": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "NumRequiredActions",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ActionType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "pad0x3_0K2L0[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x2d"
+      }
+    ]
+  },
   "ChecklistMap": {
     "Super": "TreasureMap",
-    "FullSize": "0x990",
-    "InheritedSize": "0x840",
+    "FullSize": "0x9b0",
+    "InheritedSize": "0x860",
     "ClassSize": "0x150",
     "Attributes": [
       {
         "Name": "CanvasWidth",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x838"
+        "Offset": "0x858"
       },
       {
         "Name": "CanvasHeight",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x83c"
+        "Offset": "0x85c"
       },
       {
         "Name": "Font",
         "Type": "class Font*",
         "Size": "0x8",
-        "Offset": "0x840"
+        "Offset": "0x860"
       },
       {
         "Name": "FontScale",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x848"
+        "Offset": "0x868"
       },
       {
         "Name": "FontLineSpacingScale",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x84c"
+        "Offset": "0x86c"
+      },
+      {
+        "Name": "pad0x8_CSJT0[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x870"
       },
       {
         "Name": "ChecklistMapLayout",
         "Type": "class ChecklistMapLayout*",
         "Size": "0x8",
-        "Offset": "0x858"
+        "Offset": "0x878"
       },
       {
         "Name": "Contents",
         "Type": "struct ChecklistMapContents",
         "Size": "0xe8",
-        "Offset": "0x860"
+        "Offset": "0x880"
+      },
+      {
+        "Name": "pad0x48_D2KB8[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x968"
       }
     ]
   },
@@ -69,26 +107,6 @@
       }
     ]
   },
-  "ChecklistActionData": {
-    "Super": "Object",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "NumRequiredActions",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "ActionType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x2c"
-      }
-    ]
-  },
   "ChecklistItemsDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
@@ -103,59 +121,30 @@
       }
     ]
   },
+  "ChecklistMapCollectionInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "ChecklistMapCompletionComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x150",
-    "InheritedSize": "0xc8",
+    "FullSize": "0x140",
+    "InheritedSize": "0xb8",
     "ClassSize": "0x88",
     "Attributes": [
       {
         "Name": "ActionData",
         "Type": "class ChecklistActionData*",
         "Size": "0x8",
-        "Offset": "0xc8"
-      }
-    ]
-  },
-  "KillActorChecklistActionData": {
-    "Super": "ChecklistActionData",
-    "FullSize": "0x40",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x10",
-    "Attributes": [
+        "Offset": "0xb8"
+      },
       {
-        "Name": "TargetAIClasses",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "NamedChecklistEventActionData": {
-    "Super": "ChecklistActionData",
-    "FullSize": "0x38",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Event",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "NPCInteractionChecklistActionData": {
-    "Super": "ChecklistActionData",
-    "FullSize": "0x40",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "TargetNPCIds",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x30"
+        "Name": "pad0x80_6RXCW[0x80]",
+        "Type": "char",
+        "Size": "0x80",
+        "Offset": "0xc0"
       }
     ]
   },
@@ -176,6 +165,48 @@
         "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x40"
+      }
+    ]
+  },
+  "KillActorChecklistActionData": {
+    "Super": "ChecklistActionData",
+    "FullSize": "0x40",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "TargetAIClasses",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "NPCInteractionChecklistActionData": {
+    "Super": "ChecklistActionData",
+    "FullSize": "0x40",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "TargetNPCIds",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "NamedChecklistEventActionData": {
+    "Super": "ChecklistActionData",
+    "FullSize": "0x38",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Event",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x30"
       }
     ]
   },

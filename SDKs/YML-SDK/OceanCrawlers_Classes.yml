@@ -6,27 +6,35 @@ BTTask_BroadcastOceanCrawlerAbilityAudioEvent:
     Offset: '0x60'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_B2MIE[0x7]
+    Offset: '0x61'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x68'
   InheritedSize: '0x60'
   Super: BTTaskNode
 OceanCrawlerAudioBroadcaster:
   Attributes:
-  - Name: AudioDataAsset
-    Offset: '0xc8'
+  - Name: pad0x20_8KKCM[0x20]
+    Offset: '0xb8'
     Size: '0x20'
-    Type: assetclass
+    Type: char
   - Name: CachedOwner
-    Offset: '0xe8'
+    Offset: '0xd8'
     Size: '0x8'
     Type: class Actor*
+  - Name: pad0x100_9MRUW[0x100]
+    Offset: '0xe0'
+    Size: '0x100'
+    Type: char
   - Name: LoadedAudioDataAsset
-    Offset: '0x1f0'
+    Offset: '0x1e0'
     Size: '0x8'
     Type: class OceanCrawlerAudioParamsDataAsset*
   ClassSize: '0x130'
-  FullSize: '0x1f8'
-  InheritedSize: '0xc8'
+  FullSize: '0x1e8'
+  InheritedSize: '0xb8'
   Super: ActorComponent
 OceanCrawlerAudioParamsDataAsset:
   Attributes:

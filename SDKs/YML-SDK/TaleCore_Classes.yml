@@ -3,12 +3,12 @@
 ClientCommandHandler:
   Attributes:
   - Name: CommandQueue
-    Offset: '0x3c8'
+    Offset: '0x3a0'
     Size: '0x18'
     Type: struct ClientCommandQueue
   ClassSize: '0x18'
-  FullSize: '0x3e0'
-  InheritedSize: '0x3c8'
+  FullSize: '0x3b8'
+  InheritedSize: '0x3a0'
   Super: Actor
 TaleStruct:
   Attributes:
@@ -16,6 +16,10 @@ TaleStruct:
     Offset: '0x88'
     Size: '0x10'
     Type: struct Guid
+  - Name: pad0x20_C177W[0x20]
+    Offset: '0x98'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x30'
   FullSize: '0xb8'
   InheritedSize: '0x88'

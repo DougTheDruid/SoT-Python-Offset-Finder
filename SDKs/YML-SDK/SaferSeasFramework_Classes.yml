@@ -2,14 +2,28 @@
 # https://github.com/DougTheDruid
 SaferSeasDataAssetProviderService:
   Attributes:
+  - Name: pad0x8_JF9BD[0x8]
+    Offset: '0x3a0'
+    Size: '0x8'
+    Type: char
   - Name: SaferSeasEntitlementBlacklistDataAsset
-    Offset: '0x3d0'
+    Offset: '0x3a8'
     Size: '0x8'
     Type: class SaferSeasEntitlementBlacklistDataAsset*
+  - Name: pad0x18_QCUZ0[0x18]
+    Offset: '0x3b0'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x28'
-  FullSize: '0x3f0'
-  InheritedSize: '0x3c8'
+  FullSize: '0x3c8'
+  InheritedSize: '0x3a0'
   Super: Actor
+SaferSeasDataAssetProviderServiceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 SaferSeasEntitlementBlacklistDataAsset:
   Attributes:
   - Name: BlacklistedEntitlements

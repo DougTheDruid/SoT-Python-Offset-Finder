@@ -8,6 +8,23 @@ struct TaleStructInstance
 {
 public:
 	class TaleStruct*                                            MyType;                                            // 0x0(0x8)
+	char                                                         pad0x8_X979W[0x8];                                 // 0x8(0x8)
+};
+
+
+// Size 0x18
+struct ClientCommandQueue
+{
+public:
+	char                                                         pad0x18_EKBPT[0x18];                               // 0x0(0x18)
+};
+
+
+// Size 0x8
+struct ClientCommandBase
+{
+public:
+	char                                                         pad0x8_THFLS[0x8];                                 // 0x0(0x8)
 };
 
 

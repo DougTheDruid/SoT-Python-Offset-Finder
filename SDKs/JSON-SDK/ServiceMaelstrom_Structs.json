@@ -3,16 +3,10 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "SequenceID",
-        "Type": "uint64",
-        "Size": "0x8",
+        "Name": "pad0x10_LR24V[0x10]",
+        "Type": "char",
+        "Size": "0x10",
         "Offset": "0x0"
-      },
-      {
-        "Name": "TypeID",
-        "Type": "uint64",
-        "Size": "0x8",
-        "Offset": "0x8"
       },
       {
         "Name": "Name",

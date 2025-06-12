@@ -30,6 +30,10 @@ LevelCompletionEvent:
     Offset: '0x21'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2_HHNN3[0x2]
+    Offset: '0x22'
+    Size: '0x2'
+    Type: char
   ClassSize: '0x24'
 LevelProgressionEvent:
   Attributes:
@@ -79,6 +83,10 @@ SeasonGoalCompletionEvent:
     Offset: '0x20'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_7FOI9[0x3]
+    Offset: '0x21'
+    Size: '0x3'
+    Type: char
   - Name: GoalGroupId
     Offset: '0x24'
     Size: '0x10'
@@ -110,6 +118,10 @@ SeasonGoalProgressionEvent:
     Offset: '0x2c'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_7ZLF0[0x3]
+    Offset: '0x2d'
+    Size: '0x3'
+    Type: char
   - Name: GoalGroupId
     Offset: '0x30'
     Size: '0x10'
@@ -128,14 +140,10 @@ SeasonReward:
     Offset: '0x0'
     Size: '0x10'
     Type: struct Guid
-  - Name: Tier
+  - Name: pad0x10_X41K2[0x10]
     Offset: '0x10'
-    Size: '0x8'
-    Type: int64
-  - Name: Level
-    Offset: '0x18'
-    Size: '0x8'
-    Type: int64
+    Size: '0x10'
+    Type: char
   ClassSize: '0x20'
 SeasonRewardEarnedEvent:
   Attributes:
@@ -147,11 +155,22 @@ SeasonRewardEarnedEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_O5BVQ[0x7]
+    Offset: '0x11'
+    Size: '0x7'
+    Type: char
   - Name: Rewards
     Offset: '0x18'
     Size: '0x10'
     Type: TArray<struct SeasonReward>
   ClassSize: '0x28'
+SeasonServiceDataUpdatedEvent:
+  Attributes:
+  - Name: pad0x1_872IX[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
 TrackedObjectiveCompletionMessage:
   Attributes:
   - Name: ObjectiveId
@@ -174,11 +193,22 @@ TrackedObjectiveCompletionMessage:
     Offset: '0xd1'
     Size: '0x1'
     Type: byte
+  - Name: pad0x6_MLCH2[0x6]
+    Offset: '0xd2'
+    Size: '0x6'
+    Type: char
   - Name: CreatedAt
     Offset: '0xd8'
     Size: '0x8'
     Type: double
   ClassSize: '0xe0'
+TrackedObjectiveEvent:
+  Attributes:
+  - Name: pad0x18_YU94K[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
+  ClassSize: '0x18'
 TrackedObjectiveProgressUpdateMessage:
   Attributes:
   - Name: ObjectiveId
@@ -201,6 +231,10 @@ TrackedObjectiveProgressUpdateMessage:
     Offset: '0xd1'
     Size: '0x1'
     Type: byte
+  - Name: pad0x2_V5HQJ[0x2]
+    Offset: '0xd2'
+    Size: '0x2'
+    Type: char
   - Name: Value
     Offset: '0xd4'
     Size: '0x4'

@@ -1,4 +1,27 @@
 {
+  "MMIItemData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ExclusiveMemorySize",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_Y98TS[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "ItemData",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "MMIDebugCommandInfo": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -19,23 +42,6 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x20"
-      }
-    ]
-  },
-  "MMIItemData": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "ExclusiveMemorySize",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ItemData",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x8"
       }
     ]
   },

@@ -2,31 +2,43 @@
 # https://github.com/DougTheDruid
 AthenaCheatManager:
   Attributes:
-  - Name: CinematicCameraController
+  - Name: pad0x18_62SQC[0x18]
     Offset: '0x78'
+    Size: '0x18'
+    Type: char
+  - Name: CinematicCameraController
+    Offset: '0x90'
     Size: '0x8'
     Type: class CinematicCameraController*
   - Name: CinematicCameraControllerClass
-    Offset: '0x80'
+    Offset: '0x98'
     Size: '0x8'
     Type: class UClass*
+  - Name: pad0x28_3CMAN[0x28]
+    Offset: '0xa0'
+    Size: '0x28'
+    Type: char
   - Name: CreatedWorldMarkers
-    Offset: '0xb0'
+    Offset: '0xc8'
     Size: '0x10'
     Type: TArray<struct WorldMarkerDesc>
   - Name: DebugSchedulerSettings
-    Offset: '0xc0'
+    Offset: '0xd8'
     Size: '0x8'
     Type: class GameEventSchedulerSettingsAsset*
   - Name: ServerPerformanceReplicator
-    Offset: '0xc8'
+    Offset: '0xe0'
     Size: '0x8'
     Type: class ServerPerformanceReplicator*
   - Name: TeleportToDigsiteHeightOffset
-    Offset: '0xd0'
+    Offset: '0xe8'
     Size: '0x4'
     Type: float
-  ClassSize: '0xa8'
-  FullSize: '0x120'
+  - Name: pad0x4c_OFK6D[0x4c]
+    Offset: '0xec'
+    Size: '0x4c'
+    Type: char
+  ClassSize: '0xc0'
+  FullSize: '0x138'
   InheritedSize: '0x78'
   Super: CheatManager

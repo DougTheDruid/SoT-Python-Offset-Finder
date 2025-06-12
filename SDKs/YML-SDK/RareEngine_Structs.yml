@@ -66,10 +66,6 @@ MemoryCommonData:
     Offset: '0x3c'
     Size: '0x4'
     Type: int
-  - Name: mClusterMemoryUsedBytes
-    Offset: '0x40'
-    Size: '0x4'
-    Type: uint32
   - Name: mNumClusters
     Offset: '0x44'
     Size: '0x4'
@@ -101,6 +97,10 @@ MemoryVisualiserCategory:
     Offset: '0x30'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_MTMIV[0x3]
+    Offset: '0x31'
+    Size: '0x3'
+    Type: char
   - Name: XboxOneBudgetMB
     Offset: '0x34'
     Size: '0x4'
@@ -133,6 +133,10 @@ MemoryVisualiserCategory:
     Offset: '0x50'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_66WYK[0x4]
+    Offset: '0x54'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x58'
 MemoryVisualiserClass:
   Attributes:
@@ -144,6 +148,10 @@ MemoryVisualiserClass:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_6VJIN[0x7]
+    Offset: '0x9'
+    Size: '0x7'
+    Type: char
   - Name: DisplayName
     Offset: '0x10'
     Size: '0x10'
@@ -152,6 +160,10 @@ MemoryVisualiserClass:
     Offset: '0x20'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_9R146[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x28'
 MemoryVisualiserStat:
   Attributes:
@@ -167,6 +179,10 @@ MemoryVisualiserStat:
     Offset: '0x18'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_M9820[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x20'
 StaticMeshActorList:
   Attributes:

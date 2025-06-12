@@ -3,6 +3,12 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
+        "Name": "pad0x18_KS1SW[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
         "Name": "IsKillingHit",
         "Type": "bool",
         "Size": "0x1",
@@ -15,10 +21,22 @@
         "Offset": "0x19"
       },
       {
+        "Name": "pad0x2_C7MRA[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x1a"
+      },
+      {
         "Name": "OptionalClientAttackId",
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x1c"
+      },
+      {
+        "Name": "pad0x4_6VC49[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
       }
     ]
   },

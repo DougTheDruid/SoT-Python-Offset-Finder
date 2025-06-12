@@ -2,33 +2,57 @@
 # https://github.com/DougTheDruid
 GameEventsOnDemandAvailabilityService:
   Attributes:
+  - Name: pad0xd0_QKD0D[0xd0]
+    Offset: '0x28'
+    Size: '0xd0'
+    Type: char
   - Name: World
     Offset: '0xf8'
     Size: '0x8'
     Type: class World*
+  - Name: pad0x18_TMYSK[0x18]
+    Offset: '0x100'
+    Size: '0x18'
+    Type: char
   ClassSize: '0xf0'
   FullSize: '0x118'
   InheritedSize: '0x28'
   Super: Object
 GameEventsOnDemandLoserTunnelService:
   Attributes:
+  - Name: pad0x8_KPTAH[0x8]
+    Offset: '0x3a0'
+    Size: '0x8'
+    Type: char
   - Name: World
-    Offset: '0x3d0'
+    Offset: '0x3a8'
     Size: '0x8'
     Type: class World*
+  - Name: pad0x58_FPB4S[0x58]
+    Offset: '0x3b0'
+    Size: '0x58'
+    Type: char
   - Name: LoserTunnelVoyageDescDataAsset
-    Offset: '0x430'
+    Offset: '0x408'
     Size: '0x8'
     Type: class VoyageDescDataAsset*
+  - Name: pad0x50_XECUY[0x50]
+    Offset: '0x410'
+    Size: '0x50'
+    Type: char
   - Name: TrackedCrews
-    Offset: '0x488'
+    Offset: '0x460'
     Size: '0x10'
     Type: TArray<struct GameEventsOnDemandLoserTunnelCrewData>
   - Name: TemporaryBannerTag
-    Offset: '0x498'
+    Offset: '0x470'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x68_FX605[0x68]
+    Offset: '0x478'
+    Size: '0x68'
+    Type: char
   ClassSize: '0x140'
-  FullSize: '0x508'
-  InheritedSize: '0x3c8'
+  FullSize: '0x4e0'
+  InheritedSize: '0x3a0'
   Super: Actor

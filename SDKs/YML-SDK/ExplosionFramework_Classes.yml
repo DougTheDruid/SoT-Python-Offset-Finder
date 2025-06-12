@@ -3,28 +3,78 @@
 CreateActorInstanceOnExplodeComponent:
   Attributes:
   - Name: ActorToInstance
-    Offset: '0xc8'
+    Offset: '0xb8'
     Size: '0x8'
     Type: class UClass*
+  - Name: pad0x68_DGFUM[0x68]
+    Offset: '0xc0'
+    Size: '0x68'
+    Type: char
   ClassSize: '0x70'
-  FullSize: '0x138'
-  InheritedSize: '0xc8'
+  FullSize: '0x128'
+  InheritedSize: '0xb8'
   Super: ActorComponent
+ExplosionConditionalStatsTrigger:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x30'
+  InheritedSize: '0x30'
+  Super: ConditionalStatsTriggerType
+ExplosionInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+ExplosionReceiverInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+ExplosiveComponentInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+FuseInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+StatusResponseCancelFuse:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: StatusResponse
 StatusResponseExplodeAfterTime:
   Attributes:
   - Name: MinTimeUntilExplosion
-    Offset: '0x30'
+    Offset: '0x38'
     Size: '0x4'
     Type: float
   - Name: MaxTimeUntilExplosion
-    Offset: '0x34'
+    Offset: '0x3c'
     Size: '0x4'
     Type: float
-  - Name: CachedWorld
+  - Name: pad0x8_HS2BK[0x8]
     Offset: '0x40'
+    Size: '0x8'
+    Type: char
+  - Name: CachedWorld
+    Offset: '0x48'
     Size: '0x8'
     Type: class World*
   ClassSize: '0x18'
-  FullSize: '0x48'
-  InheritedSize: '0x30'
+  FullSize: '0x50'
+  InheritedSize: '0x38'
   Super: StatusResponse
+TaleQuestFuseFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
+  Super: TaleQuestFunctionStepLibrary

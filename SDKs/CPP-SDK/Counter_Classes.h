@@ -6,14 +6,26 @@
 #include "Counter_Structs.h"
 
 
-// Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
-class CountMaterialDisplayComponent: public ActorComponent
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CountPolicy: public Object
 {
 public:
-	struct FName                                                 ScalarParameterNameToOverride;                     // 0xc8(0x8)
-	class UClass*                                                CountType;                                         // 0xd0(0x8)
-	float                                                        MaximumCountForDynamicMaterialParameterAlphaValue; // 0xd8(0x4)
-	TArray<class MaterialInstanceDynamic*>                       OverridenMaterials;                                // 0xe0(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CountHolderProviderInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x18 (Full Size[0xd0] - InheritedSize[0xb8]
+class CountHolderComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_4VZMY[0x8];                                 // 0xb8(0x8)
+	TArray<struct CountHolder>                                   CountHolders;                                      // 0xc0(0x10)
 };
 
 
@@ -25,20 +37,25 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
-class CountHolderComponent: public ActorComponent
-{
-public:
-	TArray<struct CountHolder>                                   CountHolders;                                      // 0xd0(0x10)
-};
-
-
 // Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
 class IsCountAmountMetStatCondition: public TargetedStatCondition
 {
 public:
 	int                                                          CountAmount;                                       // 0x30(0x4)
+	char                                                         pad0x4_IODN3[0x4];                                 // 0x34(0x4)
 	class UClass*                                                CountType;                                         // 0x38(0x8)
+};
+
+
+// Size 0x28 (Full Size[0xe0] - InheritedSize[0xb8]
+class CountMaterialDisplayComponent: public ActorComponent
+{
+public:
+	struct FName                                                 ScalarParameterNameToOverride;                     // 0xb8(0x8)
+	class UClass*                                                CountType;                                         // 0xc0(0x8)
+	float                                                        MaximumCountForDynamicMaterialParameterAlphaValue; // 0xc8(0x4)
+	char                                                         pad0x4_2GBTT[0x4];                                 // 0xcc(0x4)
+	TArray<class MaterialInstanceDynamic*>                       OverridenMaterials;                                // 0xd0(0x10)
 };
 
 

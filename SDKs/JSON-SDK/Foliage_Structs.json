@@ -1,30 +1,12 @@
 {
-  "FoliageTypeObject": {
-    "ClassSize": "0x20",
+  "ConsoleCommands": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "FoliageTypeObject",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TypeInstance",
-        "Type": "class FoliageType_InstancedStaticMesh*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "bIsAsset",
-        "Type": "bool",
+        "Name": "pad0x1_AANU8[0x1]",
+        "Type": "char",
         "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Type",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x18"
+        "Offset": "0x0"
       }
     ]
   },
@@ -36,6 +18,12 @@
         "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_KHT11[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
       },
       {
         "Name": "Rotation",
@@ -62,10 +50,57 @@
         "Offset": "0x30"
       },
       {
+        "Name": "pad0x4_AS8J4[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
         "Name": "Type",
         "Type": "class FoliageType_InstancedStaticMesh*",
         "Size": "0x8",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x20_58TIM[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "FoliageTypeObject": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "FoliageTypeObject",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TypeInstance",
+        "Type": "class FoliageType_InstancedStaticMesh*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "bIsAsset",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_6EQBN[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "Type",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x18"
       }
     ]
   },

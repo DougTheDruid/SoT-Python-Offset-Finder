@@ -6,21 +6,72 @@
 #include "ExplosionFramework_Structs.h"
 
 
-// Size 0x18 (Full Size[0x48] - InheritedSize[0x30]
+// Size 0x18 (Full Size[0x50] - InheritedSize[0x38]
 class StatusResponseExplodeAfterTime: public StatusResponse
 {
 public:
-	float                                                        MinTimeUntilExplosion;                             // 0x30(0x4)
-	float                                                        MaxTimeUntilExplosion;                             // 0x34(0x4)
-	class World*                                                 CachedWorld;                                       // 0x40(0x8)
+	float                                                        MinTimeUntilExplosion;                             // 0x38(0x4)
+	float                                                        MaxTimeUntilExplosion;                             // 0x3c(0x4)
+	char                                                         pad0x8_HS2BK[0x8];                                 // 0x40(0x8)
+	class World*                                                 CachedWorld;                                       // 0x48(0x8)
 };
 
 
-// Size 0x70 (Full Size[0x138] - InheritedSize[0xc8]
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
+class ExplosionConditionalStatsTrigger: public ConditionalStatsTriggerType
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestFuseFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x70 (Full Size[0x128] - InheritedSize[0xb8]
 class CreateActorInstanceOnExplodeComponent: public ActorComponent
 {
 public:
-	class UClass*                                                ActorToInstance;                                   // 0xc8(0x8)
+	class UClass*                                                ActorToInstance;                                   // 0xb8(0x8)
+	char                                                         pad0x68_DGFUM[0x68];                               // 0xc0(0x68)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ExplosiveComponentInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ExplosionReceiverInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class FuseInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ExplosionInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
+class StatusResponseCancelFuse: public StatusResponse
+{
+public:
 };
 
 

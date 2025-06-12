@@ -6,14 +6,15 @@
 #include "ActorSequence_Structs.h"
 
 
-// Size 0x40 (Full Size[0x108] - InheritedSize[0xc8]
+// Size 0x40 (Full Size[0xf8] - InheritedSize[0xb8]
 class ActorSequenceComponent: public ActorComponent
 {
 public:
-	struct MovieSceneSequencePlaybackSettings                    PlaybackSettings;                                  // 0xc8(0x28)
-	class ActorSequence*                                         Sequence;                                          // 0xf0(0x8)
-	class ActorSequencePlayer*                                   SequencePlayer;                                    // 0xf8(0x8)
-	bool                                                         bAutoPlay;                                         // 0x100(0x1)
+	struct MovieSceneSequencePlaybackSettings                    PlaybackSettings;                                  // 0xb8(0x28)
+	class ActorSequence*                                         Sequence;                                          // 0xe0(0x8)
+	class ActorSequencePlayer*                                   SequencePlayer;                                    // 0xe8(0x8)
+	bool                                                         bAutoPlay;                                         // 0xf0(0x1)
+	char                                                         pad0x7_D55OR[0x7];                                 // 0xf1(0x7)
 };
 
 
@@ -23,6 +24,13 @@ class ActorSequence: public MovieSceneSequence
 public:
 	class MovieScene*                                            MovieScene;                                        // 0x2a8(0x8)
 	struct ActorSequenceObjectReferenceMap                       ObjectReferences;                                  // 0x2b0(0x20)
+};
+
+
+// Size 0x0 (Full Size[0x608] - InheritedSize[0x608]
+class ActorSequencePlayer: public MovieSceneSequencePlayer
+{
+public:
 };
 
 

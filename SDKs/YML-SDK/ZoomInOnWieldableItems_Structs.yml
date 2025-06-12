@@ -2,24 +2,32 @@
 # https://github.com/DougTheDruid
 ZoomedInOnWieldableItemActionStateConstructionInfo:
   Attributes:
+  - Name: pad0x48_Y8H2L[0x48]
+    Offset: '0x0'
+    Size: '0x48'
+    Type: char
   - Name: ZoomedInFov
-    Offset: '0x40'
-    Size: '0x4'
-    Type: float
-  - Name: FreelookPitch
-    Offset: '0x44'
-    Size: '0x4'
-    Type: float
-  - Name: FreelookYaw
     Offset: '0x48'
     Size: '0x4'
     Type: float
-  - Name: FreelookOutInterpolationRate
+  - Name: FreelookPitch
     Offset: '0x4c'
     Size: '0x4'
     Type: float
-  - Name: LookSensitivityScaler
+  - Name: FreelookYaw
     Offset: '0x50'
     Size: '0x4'
     Type: float
-  ClassSize: '0x58'
+  - Name: FreelookOutInterpolationRate
+    Offset: '0x54'
+    Size: '0x4'
+    Type: float
+  - Name: LookSensitivityScaler
+    Offset: '0x58'
+    Size: '0x4'
+    Type: float
+  - Name: pad0x4_KGYEI[0x4]
+    Offset: '0x5c'
+    Size: '0x4'
+    Type: char
+  ClassSize: '0x60'

@@ -2,34 +2,36 @@
 # https://github.com/DougTheDruid
 ShortRangeMarker:
   Attributes:
+  - Name: pad0x10_0QT7G[0x10]
+    Offset: '0x3a0'
+    Size: '0x10'
+    Type: char
   - Name: DynamicMaterials
-    Offset: '0x3d8'
+    Offset: '0x3b0'
     Size: '0x10'
     Type: TArray<class MaterialInstanceDynamic*>
   - Name: LifetimerTimer
-    Offset: '0x3e8'
+    Offset: '0x3c0'
     Size: '0x4'
     Type: float
   - Name: FadeTimer
-    Offset: '0x3ec'
+    Offset: '0x3c4'
     Size: '0x4'
     Type: float
-  - Name: TriggerFadeIn
-    Offset: '0x3f0'
-    Size: '0x10'
-    Type: multicastinlinedelegate
-  - Name: TriggerFadeOut
-    Offset: '0x400'
-    Size: '0x10'
-    Type: multicastinlinedelegate
   - Name: CachedActors
-    Offset: '0x410'
+    Offset: '0x3e8'
     Size: '0x10'
     Type: TArray<uintptr_t>
   ClassSize: '0x58'
-  FullSize: '0x420'
-  InheritedSize: '0x3c8'
+  FullSize: '0x3f8'
+  InheritedSize: '0x3a0'
   Super: Actor
+ShortRangeMarkerBlueprintFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
 ShortRangeMarkerDataAsset:
   Attributes:
   - Name: RewardMarker
@@ -40,7 +42,17 @@ ShortRangeMarkerDataAsset:
     Offset: '0x30'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_QY10P[0x4]
+    Offset: '0x34'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: DataAsset
+ShortRangeMarkerInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

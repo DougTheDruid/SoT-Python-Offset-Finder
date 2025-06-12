@@ -6,6 +6,10 @@ BasePromptCoordinator:
     Offset: '0x28'
     Size: '0x8'
     Type: class AthenaPlayerController*
+  - Name: pad0x10_4L2KL[0x10]
+    Offset: '0x30'
+    Size: '0x10'
+    Type: char
   - Name: PrioritisedPromptsManager
     Offset: '0x40'
     Size: '0x8'
@@ -14,16 +18,26 @@ BasePromptCoordinator:
     Offset: '0x48'
     Size: '0x8'
     Type: class Character*
+  - Name: pad0xc8_5ERBI[0xc8]
+    Offset: '0x50'
+    Size: '0xc8'
+    Type: char
   ClassSize: '0xf0'
   FullSize: '0x118'
   InheritedSize: '0x28'
   Super: Object
+GenericVoyagePrioritisedPrompt_PromptAccessKey:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: PromptCounterAccessKey
 GetPromptsLocalService:
   Attributes:
-  - Name: Loaded
+  - Name: pad0x10_QYLZG[0x10]
     Offset: '0x28'
     Size: '0x10'
-    Type: multicastinlinedelegate
+    Type: char
   - Name: WorldContextObject
     Offset: '0x38'
     Size: '0x8'
@@ -34,6 +48,10 @@ GetPromptsLocalService:
   Super: BlueprintAsyncActionBase
 PrioritisedPromptsManager:
   Attributes:
+  - Name: pad0x8_0LDUX[0x8]
+    Offset: '0x28'
+    Size: '0x8'
+    Type: char
   - Name: AllPrompts
     Offset: '0x30'
     Size: '0x10'
@@ -42,10 +60,20 @@ PrioritisedPromptsManager:
     Offset: '0x40'
     Size: '0x8'
     Type: class PlayerController*
+  - Name: pad0x30_ULXYR[0x30]
+    Offset: '0x48'
+    Size: '0x30'
+    Type: char
   ClassSize: '0x50'
   FullSize: '0x78'
   InheritedSize: '0x28'
   Super: Object
+PrioritisedPromptsManagerInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 PromptCounterAccessKey:
   Attributes:
   - Name: Key
@@ -56,3 +84,19 @@ PromptCounterAccessKey:
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: Object
+PromptsLocalService:
+  Attributes:
+  - Name: pad0x70_FSKC6[0x70]
+    Offset: '0x28'
+    Size: '0x70'
+    Type: char
+  ClassSize: '0x70'
+  FullSize: '0x98'
+  InheritedSize: '0x28'
+  Super: Object
+PromptsLocalServiceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

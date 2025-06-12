@@ -1,6 +1,35 @@
 {
-  "EventAffectedByExplosion": {
-    "ClassSize": "0x18",
+  "EventOnExploded": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "RootInstigator",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x10_66V36[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ImpactProjectileId",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "DirectHitActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "EventExplosionOverlap": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "DamagerType",
@@ -21,31 +50,31 @@
       }
     ]
   },
-  "EventOnExploded": {
-    "ClassSize": "0x20",
+  "EventInstigatedExplosionDamagedActors": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "RootInstigator",
-        "Type": "class Actor*",
-        "Size": "0x8",
+        "Name": "DamagedActors",
+        "Type": "TArray<class Actor*>",
+        "Size": "0x10",
         "Offset": "0x0"
-      },
-      {
-        "Name": "ImpactProjectileId",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x18"
       }
     ]
   },
-  "EventExplosionOverlap": {
-    "ClassSize": "0x8",
+  "EventAffectedByExplosion": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "DamagerType",
         "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x10_XPKXC[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x8"
       }
     ]
   },

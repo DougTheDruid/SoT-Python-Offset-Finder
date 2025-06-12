@@ -16,26 +16,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x88"
-      }
-    ]
-  },
-  "UtilityVoyageService": {
-    "Super": "Object",
-    "FullSize": "0xd8",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xb0",
-    "Attributes": [
-      {
-        "Name": "Participants",
-        "Type": "TArray<class CrewVoyageParticipant*>",
-        "Size": "0x10",
-        "Offset": "0xb8"
       },
       {
-        "Name": "Voyages",
-        "Type": "TArray<struct UtilityVoyageData>",
-        "Size": "0x10",
-        "Offset": "0xc8"
+        "Name": "pad0x7_RSDXI[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x89"
       }
     ]
   },
@@ -50,6 +36,32 @@
         "Type": "class DispatchUtilityVoyageTaleStepDesc*",
         "Size": "0x8",
         "Offset": "0x98"
+      }
+    ]
+  },
+  "UtilityVoyageService": {
+    "Super": "Object",
+    "FullSize": "0xd8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "pad0x90_EU994[0x90]",
+        "Type": "char",
+        "Size": "0x90",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Participants",
+        "Type": "TArray<class CrewVoyageParticipant*>",
+        "Size": "0x10",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "Voyages",
+        "Type": "TArray<struct UtilityVoyageData>",
+        "Size": "0x10",
+        "Offset": "0xc8"
       }
     ]
   },

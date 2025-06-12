@@ -1,4 +1,27 @@
 {
+  "ThrottledProjectileTickPool": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "MaxNumberToTickPerFrame",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_Q895P[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "Projectiles",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "GlobalProjectileSettings": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -7,6 +30,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_5CL2Q[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
       },
       {
         "Name": "ProjectileDestroyDepth",
@@ -25,23 +54,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xc"
-      }
-    ]
-  },
-  "ThrottledProjectileTickPool": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "MaxNumberToTickPerFrame",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Projectiles",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x8"
       }
     ]
   },

@@ -7,8 +7,17 @@
 struct ExistingNPCToPhasedNPC
 {
 public:
-	assetclass                                                   ExistingNPC;                                       // 0x0(0x20)
-	assetclass                                                   PhasedNPC;                                         // 0x20(0x20)
+	char                                                         pad0x40_XBN95[0x40];                               // 0x0(0x40)
+};
+
+
+// Size 0x78
+struct TextEntryWithLayout
+{
+public:
+	struct FText                                                 TextEntry;                                         // 0x0(0x38)
+	struct TreasureMapWidgetText                                 TextLayout;                                        // 0x38(0x3c)
+	char                                                         pad0x4_8E9YX[0x4];                                 // 0x74(0x4)
 };
 
 
@@ -17,7 +26,16 @@ struct ClueDestinationChoice
 {
 public:
 	class ClueDestinationDescriptor*                             Destination;                                       // 0x0(0x8)
-	int16                                                        ClueChoice;                                        // 0x8(0x2)
+	char                                                         pad0x8_RF4P5[0x8];                                 // 0x8(0x8)
+};
+
+
+// Size 0x28
+struct ClueDestinationToTextIndex
+{
+public:
+	class UClass*                                                DestinationType;                                   // 0x0(0x8)
+	char                                                         pad0x20_ZOVTC[0x20];                               // 0x8(0x20)
 };
 
 
@@ -30,30 +48,13 @@ public:
 };
 
 
-// Size 0x28
-struct ClueDestinationToTextIndex
-{
-public:
-	class UClass*                                                DestinationType;                                   // 0x0(0x8)
-	assetobject                                                  RequiredIndexAsset;                                // 0x8(0x20)
-};
-
-
 // Size 0x18
 struct MapRadialIconData
 {
 public:
 	struct StringAssetReference                                  AssetReference;                                    // 0x0(0x10)
 	float                                                        Rotation;                                          // 0x10(0x4)
-};
-
-
-// Size 0x78
-struct TextEntryWithLayout
-{
-public:
-	struct FText                                                 TextEntry;                                         // 0x0(0x38)
-	struct TreasureMapWidgetText                                 TextLayout;                                        // 0x38(0x3c)
+	char                                                         pad0x4_JF5NJ[0x4];                                 // 0x14(0x4)
 };
 
 

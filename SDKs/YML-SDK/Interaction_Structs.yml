@@ -22,8 +22,85 @@ EventOptimalInteractionObjectChanged:
     Size: '0x8'
     Type: class Object*
   ClassSize: '0x10'
+InteractLoadableValidityCheckFailedTelemetryEvent:
+  Attributes:
+  - Name: LoadableObject
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct FString
+  - Name: InteractableObject
+    Offset: '0x10'
+    Size: '0x10'
+    Type: struct FString
+  - Name: LoadablePosition
+    Offset: '0x20'
+    Size: '0xc'
+    Type: struct Vector
+  - Name: DistancePlayerToLoadable
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: float
+  - Name: IsLoadableValid
+    Offset: '0x30'
+    Size: '0x1'
+    Type: bool
+  - Name: IsInteractableValid
+    Offset: '0x31'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x6_SE1E6[0x6]
+    Offset: '0x32'
+    Size: '0x6'
+    Type: char
+  ClassSize: '0x38'
+InteractionDistanceCheckFailedTelemetryEvent:
+  Attributes:
+  - Name: Distance
+    Offset: '0x0'
+    Size: '0x4'
+    Type: float
+  - Name: pad0x4_42KDJ[0x4]
+    Offset: '0x4'
+    Size: '0x4'
+    Type: char
+  - Name: DistanceRating
+    Offset: '0x8'
+    Size: '0x10'
+    Type: struct FString
+  - Name: DistanceThreshold_Used
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  - Name: DistanceThreshold_Config
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: float
+  - Name: DistanceThreshold_Settings
+    Offset: '0x20'
+    Size: '0x4'
+    Type: float
+  - Name: pad0x4_URFFF[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
+  ClassSize: '0x28'
+InteractionEdTelemetryEvent:
+  Attributes:
+  - Name: InteractorPosition
+    Offset: '0x0'
+    Size: '0xc'
+    Type: struct Vector
+  - Name: TargetPosition
+    Offset: '0xc'
+    Size: '0xc'
+    Type: struct Vector
+  ClassSize: '0x18'
 IsNewInteractingPlayerCondition:
   Attributes:
+  - Name: pad0x8_FGZYR[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: PlayerPayloadSelector
     Offset: '0x8'
     Size: '0x20'

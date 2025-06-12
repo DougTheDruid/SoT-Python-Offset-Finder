@@ -1,4 +1,163 @@
 {
+  "TestActionStateMessage": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x10_QQIY0[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TestProperty",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_2LZ89[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "ActionStatePriorityTable": {
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Name": "pad0xa0_7XBKB[0xa0]",
+        "Type": "char",
+        "Size": "0xa0",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "NullActionStateConstructionInfo": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x48_6RYRS[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ActionStateSerialisableData": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x8_QH78I[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Id",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Type",
+        "Type": "class ScriptStruct*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x18_XUPGJ[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "SerialisedActionStateInfo": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "pad0x40_MIOD9[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "PendingStateTransitionsTelemetryEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "NumPendingTransitions",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MaxPendingTransitions",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "PendingTransitions",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "RequestedTransition",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "ActorActionStateConstructionInfo": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x48_0IFWS[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TestActionStateConstructionInfo": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x40_TC0RR[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "IntProp",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x4_BJYMK[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x44"
+      }
+    ]
+  },
+  "SerialisedActionStateMessage": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_UK07A[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "ActionStatePriorityRelationship": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -13,12 +172,24 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_5TYXK[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
       }
     ]
   },
-  "ActionStateSerialisableData": {
-    "ClassSize": "0x30",
+  "ActionStateConstructionInfo": {
+    "ClassSize": "0x40",
     "Attributes": [
+      {
+        "Name": "pad0x8_QBPP6[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
       {
         "Name": "Id",
         "Type": "class UClass*",
@@ -26,21 +197,80 @@
         "Offset": "0x8"
       },
       {
+        "Name": "PreviousStateToTransitionBackToId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ShouldTransitionBackToPreviousState",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "IsTransitionState",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x19"
+      },
+      {
+        "Name": "OverridePreviousStateTransition",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1a"
+      },
+      {
+        "Name": "pad0x5_WFGCJ[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0x1b"
+      },
+      {
         "Name": "Type",
         "Type": "class ScriptStruct*",
         "Size": "0x8",
-        "Offset": "0x10"
+        "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x18_POTUT[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x28"
       }
     ]
   },
-  "TestActionStateMessage": {
+  "EventWaitingToSpawnActionStateEndedClient": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_UV8RW[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "InnerTestStruct": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "TestProperty",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x10"
+        "Name": "BoolProp",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_ON7Z3[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "StringProp",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
       }
     ]
   },
@@ -55,110 +285,95 @@
       }
     ]
   },
-  "ActorActionStateConstructionInfo": {
-    "ClassSize": "0x40",
+  "TestActorActionStateConstructionInfo": {
+    "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "ActorOwner",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "InnerTestStruct": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "BoolProp",
-        "Type": "bool",
-        "Size": "0x1",
+        "Name": "pad0x48_CBGMS[0x48]",
+        "Type": "char",
+        "Size": "0x48",
         "Offset": "0x0"
       },
-      {
-        "Name": "StringProp",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "TestActionStateSerialisableData": {
-    "ClassSize": "0x38",
-    "Attributes": [
       {
         "Name": "IntProp",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x30"
+        "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x4_1G5EA[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4c"
       }
     ]
   },
-  "SerialisedConstructionInfoStore": {
-    "ClassSize": "0x140",
+  "TestActionStateMessage2": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "SerialisedConstructionInfo",
-        "Type": "struct SerialisedActionStateInfo",
-        "Size": "0x40",
+        "Name": "pad0x10_ZTWZH[0x10]",
+        "Type": "char",
+        "Size": "0x10",
         "Offset": "0x0"
       }
     ]
   },
-  "ActionStateConstructionInfo": {
-    "ClassSize": "0x38",
+  "ActionStateChangeTelemetryEvent_ConstructionInfoData": {
+    "ClassSize": "0x1c",
     "Attributes": [
       {
         "Name": "Id",
-        "Type": "class UClass*",
+        "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "PreviousStateToTransitionBackToId",
-        "Type": "class UClass*",
+        "Name": "Type",
+        "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x8"
+      },
+      {
+        "Name": "PreviousStateToTransitionBackToId",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
       },
       {
         "Name": "ShouldTransitionBackToPreviousState",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x10"
+        "Offset": "0x18"
       },
       {
         "Name": "IsTransitionState",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x11"
+        "Offset": "0x19"
+      },
+      {
+        "Name": "pad0x2_76DEP[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x1a"
+      }
+    ]
+  },
+  "ActionStateMessage": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x8_E3XDV[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
       },
       {
         "Name": "Type",
         "Type": "class ScriptStruct*",
         "Size": "0x8",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "TestActionStateConstructionInfo": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "IntProp",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "TestActorActionStateConstructionInfo": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "IntProp",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x40"
+        "Offset": "0x8"
       }
     ]
   },
@@ -173,77 +388,94 @@
       }
     ]
   },
-  "ActionStateMessage": {
-    "ClassSize": "0x10",
+  "EventWaitingToSpawnActionStateStartedClient": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "Type",
-        "Type": "class ScriptStruct*",
-        "Size": "0x8",
-        "Offset": "0x8"
+        "Name": "pad0x1_64PR3[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },
-  "ResetStateMachineRpc": {
-    "ClassSize": "0x150",
+  "TestActionStateSerialisableData": {
+    "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "LatestEpochIds",
-        "Type": "struct ActionStateChangeRequestId",
-        "Size": "0x1",
+        "Name": "pad0x30_WGIJP[0x30]",
+        "Type": "char",
+        "Size": "0x30",
         "Offset": "0x0"
       },
       {
-        "Name": "LatestRequestIds",
-        "Type": "struct ActionStateChangeRequestId",
-        "Size": "0x1",
-        "Offset": "0x5"
+        "Name": "IntProp",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
       },
       {
-        "Name": "PerTrackConstructionInfoStore",
-        "Type": "struct SerialisedConstructionInfoStore",
-        "Size": "0x140",
-        "Offset": "0x10"
+        "Name": "pad0x4_B7LKG[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
+      }
+    ]
+  },
+  "EventFirstPersonAnimaticActionStateEndedClient": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_ECGD4[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SerialisedConstructionInfoStore": {
+    "ClassSize": "0x140",
+    "Attributes": [
+      {
+        "Name": "SerialisedConstructionInfo",
+        "Type": "struct SerialisedActionStateInfo",
+        "Size": "0x40",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x100_8EAFF[0x100]",
+        "Type": "char",
+        "Size": "0x100",
+        "Offset": "0x40"
       }
     ]
   },
   "TestActionStateConstructionInfoWithObjPointers": {
-    "ClassSize": "0x58",
+    "ClassSize": "0x60",
     "Attributes": [
+      {
+        "Name": "pad0x40_GCRSH[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x0"
+      },
       {
         "Name": "ObjPointer",
         "Type": "class Object*",
         "Size": "0x8",
-        "Offset": "0x38"
+        "Offset": "0x40"
       },
       {
         "Name": "Inner",
         "Type": "struct InnerWithObjTestStruct",
         "Size": "0x8",
-        "Offset": "0x40"
+        "Offset": "0x48"
       },
       {
         "Name": "Array",
         "Type": "TArray<class Object*>",
         "Size": "0x10",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "TestActionStateConstructionInfoWithInner": {
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "FloatProp",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "InnerStruct",
-        "Type": "struct InnerTestStruct",
-        "Size": "0x18",
-        "Offset": "0x40"
+        "Offset": "0x50"
       }
     ]
   },
@@ -261,6 +493,152 @@
         "Type": "TArray<struct ActionStatePriorityRelationship>",
         "Size": "0x10",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "TestActionStateConstructionInfoWithInner": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "pad0x40_XENGG[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "FloatProp",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x4_MZCNX[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "InnerStruct",
+        "Type": "struct InnerTestStruct",
+        "Size": "0x18",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "ActionStateChangeTelemetryEvent_SerialisedActionStateInfoData": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "ConstructionInfo",
+        "Type": "struct ActionStateChangeTelemetryEvent_ConstructionInfoData",
+        "Size": "0x1c",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ActionStateIdType",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "ContentsType",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "TrackId",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      }
+    ]
+  },
+  "ActionStateChangeTelemetryEvent": {
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "NewClientState",
+        "Type": "struct ActionStateChangeTelemetryEvent_SerialisedActionStateInfoData",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NewServerState",
+        "Type": "struct ActionStateChangeTelemetryEvent_SerialisedActionStateInfoData",
+        "Size": "0x30",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "CurrentTrackStateId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "TimeInCurrentState",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "IsTrackCurrentlyChangingState",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x74"
+      },
+      {
+        "Name": "RequestedByClient",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x75"
+      },
+      {
+        "Name": "Predicted",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x76"
+      },
+      {
+        "Name": "TransitionResult",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x77"
+      }
+    ]
+  },
+  "ResetStateMachineRpc": {
+    "ClassSize": "0x150",
+    "Attributes": [
+      {
+        "Name": "LatestEpochIds",
+        "Type": "struct ActionStateChangeRequestId",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_DF4BM[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "LatestRequestIds",
+        "Type": "struct ActionStateChangeRequestId",
+        "Size": "0x1",
+        "Offset": "0x5"
+      },
+      {
+        "Name": "pad0xa_C06SB[0xa]",
+        "Type": "char",
+        "Size": "0xa",
+        "Offset": "0x6"
+      },
+      {
+        "Name": "PerTrackConstructionInfoStore",
+        "Type": "struct SerialisedConstructionInfoStore",
+        "Size": "0x140",
+        "Offset": "0x10"
       }
     ]
   },

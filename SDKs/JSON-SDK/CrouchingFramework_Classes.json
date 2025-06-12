@@ -1,57 +1,132 @@
 {
+  "IsTargetCrouchingStatCondition": {
+    "Super": "TargetedStatCondition",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CrouchActionStateId": {
+    "Super": "ActionStateId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CrouchedDistanceConditionalStatsTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "CrouchDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x50",
+    "FullSize": "0x80",
     "InheritedSize": "0x28",
-    "ClassSize": "0x28",
+    "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "PostCrouchResetTime",
+        "Name": "EnterCrouchResetTime",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x28"
       },
       {
-        "Name": "PostCrouchStealthModeResetTime",
+        "Name": "PostCrouchResetTime",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x2c"
       },
       {
-        "Name": "ProjectileCapsuleZModifierWhenCrouching",
+        "Name": "PostCrouchStealthModeResetTime",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x30"
       },
       {
-        "Name": "CrouchVignette",
-        "Type": "class MaterialInterface*",
-        "Size": "0x8",
+        "Name": "CrouchCancelAfterFallingTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "ProjectileCapsuleZModifierWhenCrouching",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x38"
       },
       {
-        "Name": "MaxAnimValue",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x40"
+        "Name": "KnockbackModifierForCrouchingPlayers",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x3c"
       },
       {
-        "Name": "BlurStrength",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "VignetteStrength",
+        "Name": "CrouchDistanceThresholdToSendStat",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x48"
       },
       {
-        "Name": "VignetteSpeedModifier",
+        "Name": "NearbyPlayersRangeToSendStat",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4c"
+      },
+      {
+        "Name": "TimeToBeNearbyPlayersToSendStat",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "pad0x4_L1DCS[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x54"
+      },
+      {
+        "Name": "CrouchVignette",
+        "Type": "class MaterialInterface*",
+        "Size": "0x8",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "MaxAnimValue",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "BlurStrength",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x64"
+      },
+      {
+        "Name": "VignetteStrength",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "VignetteSpeedModifier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x6c"
+      },
+      {
+        "Name": "CrouchStartEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "CrouchEndEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x78"
       }
     ]
   },

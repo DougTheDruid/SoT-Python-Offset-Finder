@@ -1,52 +1,24 @@
 {
-  "RedeemCommodityTelemetryEvent": {
-    "ClassSize": "0x18",
+  "CommoditySourceMetaWrapper": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "Commodity",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Name": "pad0x18_ZMOUS[0x18]",
+        "Type": "char",
+        "Size": "0x18",
         "Offset": "0x0"
       },
       {
-        "Name": "RedemptionSucceeded",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "CommoditySelectionType": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "CommodityType",
+        "Name": "NPCIdentifier",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CommodityTrackingModel": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ItemOfferId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NPCName",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "TickWhenTracked",
-        "Type": "int64",
-        "Size": "0x8",
         "Offset": "0x18"
+      },
+      {
+        "Name": "IslandIdentifier",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x20"
       }
     ]
   },
@@ -67,9 +39,89 @@
       }
     ]
   },
+  "RedeemCommodityTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Commodity",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RedemptionSucceeded",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_MT3T2[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "TimeInSecondsSinceFirstRedemptionAttempt",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "CommoditySelectionType": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "CommodityType",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "MerchantSovereignHandInNameInformation": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MerchantNPCName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SovereignNPCName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "CommodityTypeDataEntry": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CommodityType",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DisplayName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "TrackCommodityPurchaseOnServerRpc": {
     "ClassSize": "0x48",
     "Attributes": [
+      {
+        "Name": "pad0x18_FGDS9[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
       {
         "Name": "CommodityDemandStorageObject",
         "Type": "class Object*",
@@ -96,63 +148,12 @@
       }
     ]
   },
-  "CommoditySourceMetaWrapper": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "NPCIdentifier",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "IslandIdentifier",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "CommodityTypeDataEntry": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CommodityType",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DisplayName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "MerchantSovereignHandInNameInformation": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MerchantNPCName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SovereignNPCName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "CommodityRedemptionTrackingModel": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "EntitlementDesc",
-        "Type": "uint16",
+        "Name": "pad0x2_1XRCH[0x2]",
+        "Type": "char",
         "Size": "0x2",
         "Offset": "0x0"
       },
@@ -163,10 +164,62 @@
         "Offset": "0x2"
       },
       {
-        "Name": "TickWhenTracked",
-        "Type": "int64",
+        "Name": "EntitlementOwnershipConfirmed",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3"
+      },
+      {
+        "Name": "pad0x4_UPN1P[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x8_5YYWM[0x8]",
+        "Type": "char",
         "Size": "0x8",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "CommodityTrackingModel": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ItemOfferId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NPCName",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_EQNGX[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "pad0x8_89PYI[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "EventCommodityCrateRedeemed": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_KGQCR[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
       }
     ]
   },

@@ -13,6 +13,99 @@
       }
     ]
   },
+  "SeasonProgressionUIService": {
+    "Super": "Actor",
+    "FullSize": "0x598",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x1f8",
+    "Attributes": [
+      {
+        "Name": "pad0x30_7EK9U[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "SeasonPopupListAsset",
+        "Type": "class SeasonPopupListAsset*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "pad0x1c0_3AXQH[0x1c0]",
+        "Type": "char",
+        "Size": "0x1c0",
+        "Offset": "0x3d8"
+      }
+    ]
+  },
+  "SeasonProgressionUIServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SeasonProgressionUIInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SeasonProgressionUITelemetryInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SeasonProgressionUISettings": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "SeasonPopupListAsset",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "SeasonProgressionUIComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x1f0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x138",
+    "Attributes": [
+      {
+        "Name": "pad0x20_P43KZ[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "DetailsNavigationDesc",
+        "Type": "TArray<struct EnableMoreButtonEvent>",
+        "Size": "0x10",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "NextReceivedEventsTelemetryData",
+        "Type": "struct SeasonProgressionUITelemetryFragment",
+        "Size": "0x18",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "pad0xf0_R4TVH[0xf0]",
+        "Type": "char",
+        "Size": "0xf0",
+        "Offset": "0x100"
+      }
+    ]
+  },
   "SeasonPopupAsset": {
     "Super": "DataAsset",
     "FullSize": "0x2a0",
@@ -126,54 +219,6 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x290"
-      }
-    ]
-  },
-  "SeasonProgressionUISettings": {
-    "Super": "Object",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "SeasonPopupListAsset",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "SeasonProgressionUIComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x200",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x138",
-    "Attributes": [
-      {
-        "Name": "DetailsNavigationDesc",
-        "Type": "TArray<struct EnableMoreButtonEvent>",
-        "Size": "0x10",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "NextReceivedEventsTelemetryData",
-        "Type": "struct SeasonProgressionUITelemetryFragment",
-        "Size": "0x18",
-        "Offset": "0xf8"
-      }
-    ]
-  },
-  "SeasonProgressionUIService": {
-    "Super": "Actor",
-    "FullSize": "0x5c0",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x1f8",
-    "Attributes": [
-      {
-        "Name": "SeasonPopupListAsset",
-        "Type": "class SeasonPopupListAsset*",
-        "Size": "0x8",
-        "Offset": "0x3f8"
       }
     ]
   },

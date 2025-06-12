@@ -1,0 +1,444 @@
+{
+  "SandboxPerformanceConstraintActivityTelemetryData": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "ActivityType",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_4KG1J[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "LifetimeInSeconds",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintActivityDeactivationTelemetryEvent": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x30_XXHZK[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Reason",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "StartTime",
+        "Type": "struct DateTime",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "EndTime",
+        "Type": "struct DateTime",
+        "Size": "0x8",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintSharedResourceContainer": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ServerMemoryUsageInMB",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ClientMemoryUsageInMB",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "ServerCPUUsageInMs",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ClientCPUUsageInMs",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintActivityContainer": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Activities",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintActivityRequestContainer": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ActivityRequests",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintInstancedResourceContainer": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ServerMemoryUsageInMB",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ClientMemoryUsageInMB",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "ServerCPUUsageInMs",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ClientCPUUsageInMs",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintActivityBaseTelemetryEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "RequestID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ActivityType",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_V0TU6[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintSharedResourceTelemetryData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "SharedResourceType",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NumConsumers",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_ZGQ3A[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintActivityUpdateTelemetryEvent": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x30_2SG7S[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "OldLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x4_UHAKK[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "UpdateTime",
+        "Type": "struct DateTime",
+        "Size": "0x8",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintActivityScore": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ActivityType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ActivityId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Score",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x4_TS13A[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintNullConsumerTelemetryEvent": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "pad0x30_IQBP8[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Info",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintActivityActivationDeniedTelemetryEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_DX0FW[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintActivityInstanceCount": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ActivityType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NumInstances",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_4A0I7[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintTelemetryFragment": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "ActivitiesData",
+        "Type": "TArray<struct SandboxPerformanceConstraintActivityTelemetryData>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SharedResourcesData",
+        "Type": "TArray<struct SandboxPerformanceConstraintSharedResourceTelemetryData>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ServerMemoryUsedInMB",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "ServerCPUUsedInMs",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "ServerMemoryBudgetInMB",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ServerCPUBudgetInMs",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintActivityActivationTelemetryEvent": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x30_BNRW2[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SharedResourceUsage",
+        "Type": "struct SandboxPerformanceConstraintSharedResourceContainer",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "InstancedResourceUsage",
+        "Type": "struct SandboxPerformanceConstraintInstancedResourceContainer",
+        "Size": "0x10",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintResourceContainer": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "SharedResourceTypes",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "InstancedResourceUsage",
+        "Type": "struct SandboxPerformanceConstraintInstancedResourceContainer",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintActivityConsumerData": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "ResourceUsage",
+        "Type": "struct SandboxPerformanceConstraintResourceContainer",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x10_L3KN3[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "ActivityType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "RequestID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x4_GSDKE[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x54"
+      },
+      {
+        "Name": "StartTime",
+        "Type": "struct DateTime",
+        "Size": "0x8",
+        "Offset": "0x58"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintActivityData": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Consumers",
+        "Type": "TArray<struct SandboxPerformanceConstraintActivityConsumerData>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by dougthedruid on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}

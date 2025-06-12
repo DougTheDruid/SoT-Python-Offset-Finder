@@ -1,4 +1,15 @@
 {
+  "SocketLookupCache": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x50_FZU5D[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "SocketPathNode": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -18,6 +29,12 @@
         "Type": "TArray<struct SocketPathNode>",
         "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x8_IFP4I[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x10"
       }
     ]
   },

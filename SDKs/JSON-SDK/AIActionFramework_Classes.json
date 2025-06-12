@@ -1,75 +1,189 @@
 {
-  "AIActionSpotComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x120",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "SupportedRoles",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "SupportedActivities",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "ContextTags",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "CustomAnimInstance",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x100"
-      }
-    ]
-  },
   "AIActionInstigatorComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0xf0",
-    "InheritedSize": "0xc8",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xb8",
     "ClassSize": "0x28",
     "Attributes": [
+      {
+        "Name": "pad0x8_3JX23[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
       {
         "Name": "CurrentRoles",
         "Type": "TArray<class Class*>",
         "Size": "0x10",
-        "Offset": "0xd0"
+        "Offset": "0xc0"
       },
       {
         "Name": "InitialActivity",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0xe0"
+        "Offset": "0xd0"
       },
       {
         "Name": "CurrentActivity",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0xe8"
+        "Offset": "0xd8"
       }
     ]
   },
   "DockableRotationOverrideComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xc8",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xb8",
     "ClassSize": "0x10",
     "Attributes": [
+      {
+        "Name": "pad0x8_NFU4W[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
       {
         "Name": "KeepOwnerRotationWhileDocked",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0xd0"
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "pad0x7_9BOUR[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xc1"
       }
     ]
+  },
+  "AIActionSpotInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AIActionSpotService": {
+    "Super": "Object",
+    "FullSize": "0x90",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Name": "pad0x68_L1YM2[0x68]",
+        "Type": "char",
+        "Size": "0x68",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "AIActionInstigatorInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AIActionContextTag": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AIActionSpotComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x110",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "pad0x8_6G1ER[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "SupportedRoles",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "SupportedActivities",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "ContextTags",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "CustomAnimInstance",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "pad0x18_WJFUE[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0xf8"
+      }
+    ]
+  },
+  "AIActionSpotServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DockableRotationOverrideInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AIActionActivity": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AIActionRole": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AIActionActivity_Follow": {
+    "Super": "AIActionActivity",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AIActionActivity_Quest": {
+    "Super": "AIActionActivity",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AIActionActivity_Idle": {
+    "Super": "AIActionActivity",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

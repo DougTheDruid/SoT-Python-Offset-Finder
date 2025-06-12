@@ -25,6 +25,10 @@ CrewFactionEntry:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_V50B5[0x3]
+    Offset: '0x19'
+    Size: '0x3'
+    Type: char
   - Name: CurrentLootValue
     Offset: '0x1c'
     Size: '0x4'
@@ -60,6 +64,10 @@ CrewFactionEntryData:
     Offset: '0x28'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_NDCJM[0x4]
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: char
   - Name: CooldownTimeStamp
     Offset: '0x30'
     Size: '0x8'
@@ -68,6 +76,10 @@ CrewFactionEntryData:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_Y0AJ5[0x7]
+    Offset: '0x39'
+    Size: '0x7'
+    Type: char
   - Name: EligibleLootBootyIds
     Offset: '0x40'
     Size: '0x10'
@@ -76,6 +88,10 @@ CrewFactionEntryData:
     Offset: '0x50'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_O7ZXW[0x4]
+    Offset: '0x54'
+    Size: '0x4'
+    Type: char
   - Name: HasDisplayedPromptForLootLevel
     Offset: '0x58'
     Size: '0x10'
@@ -140,6 +156,10 @@ CrewLeavingFaction:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_9H1CL[0x7]
+    Offset: '0x19'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x20'
 CrewLeftFaction:
   Attributes:
@@ -155,6 +175,10 @@ CrewLeftFaction:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_VQQCS[0x7]
+    Offset: '0x19'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x20'
 CrewStreakLevelIncreased:
   Attributes:
@@ -222,6 +246,10 @@ FactionLeftTelemetryEvent:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_87SKO[0x3]
+    Offset: '0x19'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x1c'
 FactionServicePopUpData:
   Attributes:
@@ -284,10 +312,14 @@ FactionWaitTimesData:
     Offset: '0x1'
     Size: '0x1'
     Type: byte
-  - Name: WaitTimeTicks
+  - Name: pad0x6_B158Q[0x6]
+    Offset: '0x2'
+    Size: '0x6'
+    Type: char
+  - Name: pad0x8_C0GSL[0x8]
     Offset: '0x8'
     Size: '0x8'
-    Type: int64
+    Type: char
   ClassSize: '0x10'
 SandsOfFateData:
   Attributes:

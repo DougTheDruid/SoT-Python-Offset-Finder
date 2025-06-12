@@ -6,19 +6,23 @@
 #include "BumperZone_Structs.h"
 
 
-// Size 0x58 (Full Size[0x420] - InheritedSize[0x3c8]
+// Size 0x58 (Full Size[0x3f8] - InheritedSize[0x3a0]
 class ShipBumperZone: public Actor
 {
 public:
-	bool                                                         UseInverseRightVector;                             // 0x3c8(0x1)
-	class BoxComponent*                                          BumperZoneComponent;                               // 0x3f8(0x8)
-	class SphereComponent*                                       DistanceRadiusComponent;                           // 0x400(0x8)
-	bool                                                         ApplyAngularImpulse;                               // 0x408(0x1)
-	float                                                        AngularImpulse;                                    // 0x40c(0x4)
-	bool                                                         OverrideWheelControl;                              // 0x410(0x1)
-	bool                                                         ApplyWheelTurbulence;                              // 0x411(0x1)
-	float                                                        MinWheelTurbulence;                                // 0x414(0x4)
-	float                                                        MaxWheelTurbulence;                                // 0x418(0x4)
+	bool                                                         UseInverseRightVector;                             // 0x3a0(0x1)
+	char                                                         pad0x2f_4HQLF[0x2f];                               // 0x3a1(0x2f)
+	class BoxComponent*                                          BumperZoneComponent;                               // 0x3d0(0x8)
+	class SphereComponent*                                       DistanceRadiusComponent;                           // 0x3d8(0x8)
+	bool                                                         ApplyAngularImpulse;                               // 0x3e0(0x1)
+	char                                                         pad0x3_261V2[0x3];                                 // 0x3e1(0x3)
+	float                                                        AngularImpulse;                                    // 0x3e4(0x4)
+	bool                                                         OverrideWheelControl;                              // 0x3e8(0x1)
+	bool                                                         ApplyWheelTurbulence;                              // 0x3e9(0x1)
+	char                                                         pad0x2_5GZWK[0x2];                                 // 0x3ea(0x2)
+	float                                                        MinWheelTurbulence;                                // 0x3ec(0x4)
+	float                                                        MaxWheelTurbulence;                                // 0x3f0(0x4)
+	char                                                         pad0x4_GYVSQ[0x4];                                 // 0x3f4(0x4)
 };
 
 

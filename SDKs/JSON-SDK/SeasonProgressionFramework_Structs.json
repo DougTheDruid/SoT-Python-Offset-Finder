@@ -1,81 +1,6 @@
 {
-  "SeasonReward": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Id",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Tier",
-        "Type": "int64",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Level",
-        "Type": "int64",
-        "Size": "0x8",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "TrackedObjectiveCompletionMessage": {
-    "ClassSize": "0xe0",
-    "Attributes": [
-      {
-        "Name": "ObjectiveId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PirateIdentity",
-        "Type": "struct PirateIdentity",
-        "Size": "0x78",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "PlayerInfo",
-        "Type": "struct PlayerBaseTelemetryFragment",
-        "Size": "0x48",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "PlayMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "PlayModeVariant",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xd1"
-      },
-      {
-        "Name": "CreatedAt",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0xd8"
-      }
-    ]
-  },
-  "PlayerTrackedObjective": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ObjectiveId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "LevelProgressionEvent": {
-    "ClassSize": "0x30",
+  "SeasonGoalCompletionEvent": {
+    "ClassSize": "0x34",
     "Attributes": [
       {
         "Name": "SeasonId",
@@ -84,34 +9,39 @@
         "Offset": "0x0"
       },
       {
-        "Name": "SourceGoalId",
+        "Name": "GoalId",
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x10"
       },
       {
-        "Name": "XpChange",
-        "Type": "int",
-        "Size": "0x4",
+        "Name": "GoalType",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x20"
       },
       {
-        "Name": "CurrentXP",
-        "Type": "int",
-        "Size": "0x4",
+        "Name": "pad0x3_7FOI9[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x21"
+      },
+      {
+        "Name": "GoalGroupId",
+        "Type": "struct Guid",
+        "Size": "0x10",
         "Offset": "0x24"
-      },
+      }
+    ]
+  },
+  "TrackedObjectiveEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
       {
-        "Name": "CurrentTier",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "CurrentLevel",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x2c"
+        "Name": "pad0x18_YU94K[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
       }
     ]
   },
@@ -159,35 +89,145 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x21"
+      },
+      {
+        "Name": "pad0x2_HHNN3[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x22"
       }
     ]
   },
-  "SeasonGoalCompletionEvent": {
-    "ClassSize": "0x34",
+  "TrackedObjectiveProgressUpdateMessage": {
+    "ClassSize": "0xe0",
     "Attributes": [
       {
-        "Name": "SeasonId",
+        "Name": "ObjectiveId",
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "GoalId",
-        "Type": "struct Guid",
-        "Size": "0x10",
+        "Name": "PirateIdentity",
+        "Type": "struct PirateIdentity",
+        "Size": "0x78",
         "Offset": "0x10"
       },
       {
-        "Name": "GoalType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x20"
+        "Name": "PlayerInfo",
+        "Type": "struct PlayerBaseTelemetryFragment",
+        "Size": "0x48",
+        "Offset": "0x88"
       },
       {
-        "Name": "GoalGroupId",
+        "Name": "PlayMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "PlayModeVariant",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xd1"
+      },
+      {
+        "Name": "pad0x2_V5HQJ[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0xd2"
+      },
+      {
+        "Name": "Value",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0xd4"
+      },
+      {
+        "Name": "CreatedAt",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0xd8"
+      }
+    ]
+  },
+  "PlayerTrackedObjective": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ObjectiveId",
         "Type": "struct Guid",
         "Size": "0x10",
-        "Offset": "0x24"
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SeasonServiceDataUpdatedEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_872IX[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TrackedObjectiveCompletionMessage": {
+    "ClassSize": "0xe0",
+    "Attributes": [
+      {
+        "Name": "ObjectiveId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PirateIdentity",
+        "Type": "struct PirateIdentity",
+        "Size": "0x78",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "PlayerInfo",
+        "Type": "struct PlayerBaseTelemetryFragment",
+        "Size": "0x48",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "PlayMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "PlayModeVariant",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xd1"
+      },
+      {
+        "Name": "pad0x6_MLCH2[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0xd2"
+      },
+      {
+        "Name": "CreatedAt",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0xd8"
+      }
+    ]
+  },
+  "SeasonPopupAssetLoadCompleted": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "LoadSuccessful",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },
@@ -231,6 +271,12 @@
         "Offset": "0x2c"
       },
       {
+        "Name": "pad0x3_7ZLF0[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x2d"
+      },
+      {
         "Name": "GoalGroupId",
         "Type": "struct Guid",
         "Size": "0x10",
@@ -238,61 +284,61 @@
       }
     ]
   },
-  "SeasonPopupAssetLoadCompleted": {
-    "ClassSize": "0x1",
+  "LevelProgressionEvent": {
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "LoadSuccessful",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TrackedObjectiveProgressUpdateMessage": {
-    "ClassSize": "0xe0",
-    "Attributes": [
-      {
-        "Name": "ObjectiveId",
+        "Name": "SeasonId",
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "PirateIdentity",
-        "Type": "struct PirateIdentity",
-        "Size": "0x78",
+        "Name": "SourceGoalId",
+        "Type": "struct Guid",
+        "Size": "0x10",
         "Offset": "0x10"
       },
       {
-        "Name": "PlayerInfo",
-        "Type": "struct PlayerBaseTelemetryFragment",
-        "Size": "0x48",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "PlayMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "PlayModeVariant",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xd1"
-      },
-      {
-        "Name": "Value",
+        "Name": "XpChange",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0xd4"
+        "Offset": "0x20"
       },
       {
-        "Name": "CreatedAt",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0xd8"
+        "Name": "CurrentXP",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "CurrentTier",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "CurrentLevel",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      }
+    ]
+  },
+  "SeasonReward": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Id",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x10_X41K2[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
@@ -310,6 +356,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_O5BVQ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
       },
       {
         "Name": "Rewards",

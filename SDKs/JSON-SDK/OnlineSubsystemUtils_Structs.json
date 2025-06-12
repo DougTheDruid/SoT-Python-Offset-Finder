@@ -19,6 +19,23 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_HX45X[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      }
+    ]
+  },
+  "BlueprintSessionResult": {
+    "ClassSize": "0xf0",
+    "Attributes": [
+      {
+        "Name": "pad0xf0_W7JZF[0xf0]",
+        "Type": "char",
+        "Size": "0xf0",
+        "Offset": "0x0"
       }
     ]
   },
@@ -30,6 +47,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_EPO1I[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
       },
       {
         "Name": "PartyLeader",

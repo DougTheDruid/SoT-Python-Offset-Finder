@@ -3,10 +3,14 @@
 SeasonalEventMemoryReservationActor:
   Attributes:
   - Name: ReservedByteSize
-    Offset: '0x3c8'
+    Offset: '0x3a0'
     Size: '0x4'
     Type: int
+  - Name: pad0xc_90UR5[0xc]
+    Offset: '0x3a4'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x10'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3c8'
+  FullSize: '0x3b0'
+  InheritedSize: '0x3a0'
   Super: Actor

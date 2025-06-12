@@ -2,51 +2,95 @@
 # https://github.com/DougTheDruid
 DebugLightSensitiveComponent:
   Attributes:
+  - Name: pad0x8_JJD2N[0x8]
+    Offset: '0xb8'
+    Size: '0x8'
+    Type: char
   - Name: ConstellationID
-    Offset: '0xd0'
+    Offset: '0xc0'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x50_MO8WM[0x50]
+    Offset: '0xc8'
+    Size: '0x50'
+    Type: char
   ClassSize: '0x60'
-  FullSize: '0x128'
-  InheritedSize: '0xc8'
+  FullSize: '0x118'
+  InheritedSize: '0xb8'
   Super: ActorComponent
+LightEmitterInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+LightReceptorInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 LightSensitiveComponent:
   Attributes:
+  - Name: pad0x68_GUKBT[0x68]
+    Offset: '0xb8'
+    Size: '0x68'
+    Type: char
   - Name: LightSourceManager
-    Offset: '0x130'
+    Offset: '0x120'
     Size: '0x8'
     Type: class Actor*
+  - Name: pad0x8_HOZRB[0x8]
+    Offset: '0x128'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x78'
-  FullSize: '0x140'
-  InheritedSize: '0xc8'
+  FullSize: '0x130'
+  InheritedSize: '0xb8'
   Super: ActorComponent
+LightSensitivityInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 LightSourceManager:
   Attributes:
+  - Name: pad0x8_5RZXP[0x8]
+    Offset: '0x3a0'
+    Size: '0x8'
+    Type: char
   - Name: LightEmittingActors
-    Offset: '0x3d0'
+    Offset: '0x3a8'
     Size: '0x10'
     Type: TArray<class Actor*>
   - Name: LightSensitiveActors
-    Offset: '0x3e0'
+    Offset: '0x3b8'
     Size: '0x10'
     Type: TArray<class Actor*>
   - Name: UpdateTimeThreshold
-    Offset: '0x3f0'
+    Offset: '0x3c8'
     Size: '0x4'
     Type: float
   - Name: ShouldUseTimeThreshold
-    Offset: '0x3f4'
+    Offset: '0x3cc'
     Size: '0x1'
     Type: bool
-  - Name: StayActiveForNumberOfTicks
-    Offset: '0x414'
-    Size: '0x4'
-    Type: uint32
+  - Name: pad0x1f_OINSB[0x1f]
+    Offset: '0x3cd'
+    Size: '0x1f'
+    Type: char
   - Name: MaxLightsourceParamCount
-    Offset: '0x41c'
+    Offset: '0x3f4'
     Size: '0x4'
     Type: int
   ClassSize: '0x58'
-  FullSize: '0x420'
-  InheritedSize: '0x3c8'
+  FullSize: '0x3f8'
+  InheritedSize: '0x3a0'
   Super: Actor
+LightSourceManagerInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

@@ -1,5 +1,5 @@
 {
-  "JwtAuthenticationTokenSettings": {
+  "JwtAuthenticationTokenEditorSettings": {
     "Super": "Object",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
@@ -13,7 +13,7 @@
       }
     ]
   },
-  "JwtAuthenticationTokenEditorSettings": {
+  "JwtAuthenticationTokenSettings": {
     "Super": "Object",
     "FullSize": "0x38",
     "InheritedSize": "0x28",

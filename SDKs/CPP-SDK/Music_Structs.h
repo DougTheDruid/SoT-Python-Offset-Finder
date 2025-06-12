@@ -21,6 +21,22 @@ public:
 };
 
 
+// Size 0x10
+struct MusicZoneSpawnedEvent
+{
+public:
+	char                                                         pad0x10_550FY[0x10];                               // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct MusicZoneDestroyedEvent
+{
+public:
+	char                                                         pad0x10_L1OYH[0x10];                               // 0x0(0x10)
+};
+
+
 // Size 0x20
 struct MusicZoneRemoteValues
 {

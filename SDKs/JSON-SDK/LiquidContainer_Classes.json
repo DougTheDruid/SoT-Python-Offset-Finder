@@ -1,56 +1,110 @@
 {
+  "LiquidContainerServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "LiquidContainerService": {
+    "Super": "InteractableService",
+    "FullSize": "0x78",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_9QX3Z[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x70"
+      }
+    ]
+  },
+  "LiquidLevelTransferComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_ZIEZO[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0xb8"
+      }
+    ]
+  },
+  "LiquidContainerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "LiquidContainerComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x128",
-    "InheritedSize": "0xc8",
+    "FullSize": "0x118",
+    "InheritedSize": "0xb8",
     "ClassSize": "0x60",
     "Attributes": [
       {
         "Name": "LiquidMaterialName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0xc8"
+        "Offset": "0xb8"
       },
       {
         "Name": "LiquidMaterialParameterName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0xd0"
+        "Offset": "0xc0"
       },
       {
         "Name": "LiquidTypeParams",
         "Type": "TArray<struct LiquidTypeParams>",
         "Size": "0x10",
-        "Offset": "0xd8"
+        "Offset": "0xc8"
       },
       {
         "Name": "StartingLiquidLevelNormalised",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xe8"
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "pad0x4_SFTHD[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xdc"
       },
       {
         "Name": "TransitionCurve",
         "Type": "class CurveFloat*",
         "Size": "0x8",
-        "Offset": "0xf0"
+        "Offset": "0xe0"
       },
       {
         "Name": "TransitionSpeedDecrease",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xf8"
+        "Offset": "0xe8"
       },
       {
         "Name": "TransitionSpeedIncrease",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xfc"
+        "Offset": "0xec"
       },
       {
         "Name": "LiquidMaterials",
         "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "pad0x18_3C0BL[0x18]",
+        "Type": "char",
+        "Size": "0x18",
         "Offset": "0x100"
       }
     ]

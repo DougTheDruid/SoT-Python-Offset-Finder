@@ -1,81 +1,10 @@
 {
-  "CompositionGraphCaptureSettings": {
-    "Super": "MovieSceneCaptureProtocolSettings",
-    "FullSize": "0x58",
+  "MovieSceneCaptureInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
     "InheritedSize": "0x28",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "IncludeRenderPasses",
-        "Type": "struct CompositionGraphCapturePasses",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "bCaptureFramesInHDR",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "HDRCompressionQuality",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "CaptureGamut",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "PostProcessingMaterial",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "VideoCaptureSettings": {
-    "Super": "FrameGrabberProtocolSettings",
-    "FullSize": "0x48",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "bUseCompression",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "CompressionQuality",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "VideoCodec",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "ImageCaptureSettings": {
-    "Super": "FrameGrabberProtocolSettings",
-    "FullSize": "0x38",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "CompressionQuality",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x30"
-      }
-    ]
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "MovieSceneCapture": {
     "Super": "Object",
@@ -83,6 +12,12 @@
     "InheritedSize": "0x28",
     "ClassSize": "0x1b8",
     "Attributes": [
+      {
+        "Name": "pad0x10_G7CZU[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
       {
         "Name": "CaptureType",
         "Type": "struct CaptureProtocolID",
@@ -114,6 +49,12 @@
         "Offset": "0x99"
       },
       {
+        "Name": "pad0x6_8B9XF[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x9a"
+      },
+      {
         "Name": "AdditionalCommandLineArguments",
         "Type": "struct FString",
         "Size": "0x10",
@@ -124,8 +65,106 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0xb0"
+      },
+      {
+        "Name": "pad0x120_5Y3A4[0x120]",
+        "Type": "char",
+        "Size": "0x120",
+        "Offset": "0xc0"
       }
     ]
+  },
+  "MovieSceneCaptureEnvironment": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MovieSceneCaptureProtocolSettings": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CompositionGraphCaptureSettings": {
+    "Super": "MovieSceneCaptureProtocolSettings",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "IncludeRenderPasses",
+        "Type": "struct CompositionGraphCapturePasses",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "bCaptureFramesInHDR",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x3_TR8HI[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x39"
+      },
+      {
+        "Name": "HDRCompressionQuality",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "CaptureGamut",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x7_H0L8U[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x41"
+      },
+      {
+        "Name": "PostProcessingMaterial",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "AutomatedLevelSequenceCapture": {
+    "Super": "MovieSceneCapture",
+    "FullSize": "0x1e0",
+    "InheritedSize": "0x1e0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "FrameGrabberProtocolSettings": {
+    "Super": "MovieSceneCaptureProtocolSettings",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_A7YWJ[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "BmpImageCaptureSettings": {
+    "Super": "MovieSceneCaptureProtocolSettings",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "LevelCapture": {
     "Super": "MovieSceneCapture",
@@ -140,10 +179,74 @@
         "Offset": "0x1e0"
       },
       {
+        "Name": "pad0xb_0X7V3[0xb]",
+        "Type": "char",
+        "Size": "0xb",
+        "Offset": "0x1e1"
+      },
+      {
         "Name": "PrerequisiteActorId",
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x1ec"
+      },
+      {
+        "Name": "pad0x4_FDKIJ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1fc"
+      }
+    ]
+  },
+  "ImageCaptureSettings": {
+    "Super": "FrameGrabberProtocolSettings",
+    "FullSize": "0x38",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "CompressionQuality",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x4_ZUZAJ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
+      }
+    ]
+  },
+  "VideoCaptureSettings": {
+    "Super": "FrameGrabberProtocolSettings",
+    "FullSize": "0x48",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "bUseCompression",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x3_APZOD[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x31"
+      },
+      {
+        "Name": "CompressionQuality",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "VideoCodec",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x38"
       }
     ]
   },

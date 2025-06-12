@@ -1,32 +1,4 @@
 {
-  "AudioReportingConfig": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x48",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "AudioReportingSettings",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "AudioReportingComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x240",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x178",
-    "Attributes": [
-      {
-        "Name": "CachedOwningController",
-        "Type": "class PlayerController*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      }
-    ]
-  },
   "AudioReportingSettings": {
     "Super": "DataAsset",
     "FullSize": "0x48",
@@ -52,8 +24,69 @@
         "Offset": "0x30"
       },
       {
+        "Name": "pad0x4_Q6ZSV[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
         "Name": "EventReactionDataAssets",
         "Type": "TArray<class EventReactionsDataAsset*>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "AudioReportingComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x230",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x178",
+    "Attributes": [
+      {
+        "Name": "CachedOwningController",
+        "Type": "class PlayerController*",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "pad0x170_B5LC1[0x170]",
+        "Type": "char",
+        "Size": "0x170",
+        "Offset": "0xc0"
+      }
+    ]
+  },
+  "AudioReportingDebugMenuGenerator": {
+    "Super": "DebugMenuEntryGenerator",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AudioReportReaction": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_A2SGK[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "AudioReportingConfig": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AudioReportingSettings",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x38"
       }

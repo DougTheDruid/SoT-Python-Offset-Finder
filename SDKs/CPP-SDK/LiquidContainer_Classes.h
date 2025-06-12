@@ -6,18 +6,50 @@
 #include "LiquidContainer_Structs.h"
 
 
-// Size 0x60 (Full Size[0x128] - InheritedSize[0xc8]
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class LiquidContainerServiceInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
+class LiquidContainerService: public InteractableService
+{
+public:
+	char                                                         pad0x8_9QX3Z[0x8];                                 // 0x70(0x8)
+};
+
+
+// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
+class LiquidLevelTransferComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x10_ZIEZO[0x10];                               // 0xb8(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class LiquidContainerInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x60 (Full Size[0x118] - InheritedSize[0xb8]
 class LiquidContainerComponent: public ActorComponent
 {
 public:
-	struct FName                                                 LiquidMaterialName;                                // 0xc8(0x8)
-	struct FName                                                 LiquidMaterialParameterName;                       // 0xd0(0x8)
-	TArray<struct LiquidTypeParams>                              LiquidTypeParams;                                  // 0xd8(0x10)
-	float                                                        StartingLiquidLevelNormalised;                     // 0xe8(0x4)
-	class CurveFloat*                                            TransitionCurve;                                   // 0xf0(0x8)
-	float                                                        TransitionSpeedDecrease;                           // 0xf8(0x4)
-	float                                                        TransitionSpeedIncrease;                           // 0xfc(0x4)
-	TArray<class MaterialInstanceDynamic*>                       LiquidMaterials;                                   // 0x100(0x10)
+	struct FName                                                 LiquidMaterialName;                                // 0xb8(0x8)
+	struct FName                                                 LiquidMaterialParameterName;                       // 0xc0(0x8)
+	TArray<struct LiquidTypeParams>                              LiquidTypeParams;                                  // 0xc8(0x10)
+	float                                                        StartingLiquidLevelNormalised;                     // 0xd8(0x4)
+	char                                                         pad0x4_SFTHD[0x4];                                 // 0xdc(0x4)
+	class CurveFloat*                                            TransitionCurve;                                   // 0xe0(0x8)
+	float                                                        TransitionSpeedDecrease;                           // 0xe8(0x4)
+	float                                                        TransitionSpeedIncrease;                           // 0xec(0x4)
+	TArray<class MaterialInstanceDynamic*>                       LiquidMaterials;                                   // 0xf0(0x10)
+	char                                                         pad0x18_3C0BL[0x18];                               // 0x100(0x18)
 };
 
 

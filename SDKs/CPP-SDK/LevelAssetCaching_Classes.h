@@ -6,6 +6,21 @@
 #include "LevelAssetCaching_Structs.h"
 
 
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
+class RegionalAssetListWorldSetupDataAsset: public DataAsset
+{
+public:
+	char                                                         pad0x50_L4NPW[0x50];                               // 0x28(0x50)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class RegionalAssetCacheInterface: public Interface
+{
+public:
+};
+
+
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class RegionalAssetListDataAsset: public DataAsset
 {
@@ -14,11 +29,28 @@ public:
 };
 
 
+// Size 0xb0 (Full Size[0xd8] - InheritedSize[0x28]
+class RegionalAssetCache: public Object
+{
+public:
+	char                                                         pad0x10_QJMRT[0x10];                               // 0x28(0x10)
+	class RegionalAssetListDataAsset*                            CurrentListAsset;                                  // 0x38(0x8)
+	char                                                         pad0x98_ZS32E[0x98];                               // 0x40(0x98)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class RegionLookupInterface: public Interface
+{
+public:
+};
+
+
 // Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
 class RegionalAssetListSetupDataAsset: public DataAsset
 {
 public:
-	map                                                          ListMapping;                                       // 0x28(0x50)
+	char                                                         pad0x50_IFG69[0x50];                               // 0x28(0x50)
 };
 
 
@@ -26,23 +58,9 @@ public:
 class RegionLookupGeneratedGrid: public Object
 {
 public:
+	char                                                         pad0x8_M61BT[0x8];                                 // 0x28(0x8)
 	struct WorldRegionSetup                                      WorldSetup;                                        // 0x30(0x28)
-};
-
-
-// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
-class RegionalAssetListWorldSetupDataAsset: public DataAsset
-{
-public:
-	map                                                          WorldSetups;                                       // 0x28(0x50)
-};
-
-
-// Size 0xb0 (Full Size[0xd8] - InheritedSize[0x28]
-class RegionalAssetCache: public Object
-{
-public:
-	class RegionalAssetListDataAsset*                            CurrentListAsset;                                  // 0x38(0x8)
+	char                                                         pad0x58_UB73S[0x58];                               // 0x58(0x58)
 };
 
 
@@ -50,10 +68,17 @@ public:
 class LevelAssetCachingService: public Object
 {
 public:
+	char                                                         pad0x18_TID73[0x18];                               // 0x28(0x18)
 	struct FName                                                 CurrentRegion;                                     // 0x40(0x8)
-	interface                                                    AssetCache;                                        // 0x48(0x10)
-	interface                                                    RegionLookup;                                      // 0x58(0x10)
-	class Pawn*                                                  CachedPawn;                                        // 0x68(0x8)
+	char                                                         pad0x28_G43AZ[0x28];                               // 0x48(0x28)
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class RegionLookupSeaId: public Object
+{
+public:
+	char                                                         pad0x20_SR8PQ[0x20];                               // 0x28(0x20)
 };
 
 

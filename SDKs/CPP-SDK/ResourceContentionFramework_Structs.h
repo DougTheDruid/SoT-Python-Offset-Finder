@@ -7,8 +7,9 @@
 struct PoolableCollectionMapConfigurationEntry
 {
 public:
-	assetclass                                                   Type;                                              // 0x0(0x20)
+	char                                                         pad0x20_6Q6CD[0x20];                               // 0x0(0x20)
 	int                                                          Size;                                              // 0x20(0x4)
+	char                                                         pad0x4_SBO5R[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -18,6 +19,7 @@ struct PoolableCollectionMapConfiguration
 public:
 	TArray<struct PoolableCollectionMapConfigurationEntry>       Pools;                                             // 0x0(0x10)
 	bool                                                         PopulateJustInTime;                                // 0x10(0x1)
+	char                                                         pad0x7_8L2TP[0x7];                                 // 0x11(0x7)
 };
 
 

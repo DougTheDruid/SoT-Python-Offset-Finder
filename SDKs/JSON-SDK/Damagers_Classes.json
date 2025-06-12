@@ -1,205 +1,272 @@
 {
-  "ShockwaveDamagerComponent": {
+  "ShipDamagerComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x1d0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x108",
+    "FullSize": "0x210",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x158",
     "Attributes": [
       {
-        "Name": "ExpansionDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xd0"
+        "Name": "pad0x8_UFON9[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
       },
       {
-        "Name": "EndRadiusInMetres",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xd4"
+        "Name": "Shape",
+        "Type": "class PrimitiveComponent*",
+        "Size": "0x8",
+        "Offset": "0xc0"
       },
       {
-        "Name": "ApplyImpulseToShips",
-        "Type": "bool",
-        "Size": "0x1",
+        "Name": "ShipHulls",
+        "Type": "TArray<class Interface*>",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "WatercraftHealthInterfaces",
+        "Type": "TArray<class Interface*>",
+        "Size": "0x10",
         "Offset": "0xd8"
       },
       {
-        "Name": "ForceToApplyToShip",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0xe0"
+        "Name": "ShipStrainDamage",
+        "Type": "struct StrainDamage",
+        "Size": "0x28",
+        "Offset": "0xe8"
       },
       {
-        "Name": "ApplyDamageToShips",
-        "Type": "bool",
-        "Size": "0x1",
+        "Name": "TimeBetweenWatercraftDamage",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
         "Offset": "0x110"
       },
       {
-        "Name": "ShipDamageLevels",
-        "Type": "TArray<struct ShockwaveDamagerShipDamage>",
-        "Size": "0x10",
-        "Offset": "0x118"
-      },
-      {
-        "Name": "DamagerType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x128"
-      },
-      {
-        "Name": "ApplyImpulseToGhostShips",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x130"
-      },
-      {
-        "Name": "GhostShipImpulseDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x134"
-      },
-      {
-        "Name": "GhostShipImpulseMaxDeflectionAngle",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "DestroyHostileGhostShips",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x13c"
-      },
-      {
-        "Name": "NearbyEncounterDistanceInMetres",
+        "Name": "WatercraftDamage",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x140"
       },
       {
-        "Name": "OnShockwaveStarted",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x148"
+        "Name": "StartDamagingOnBeginPlay",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x144"
       },
       {
-        "Name": "OnShockwaveEnded",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x158"
-      },
-      {
-        "Name": "ProcessedShips",
-        "Type": "TArray<uintptr_t>",
-        "Size": "0x10",
-        "Offset": "0x168"
-      },
-      {
-        "Name": "ProcessedGhostShips",
-        "Type": "TArray<uintptr_t>",
-        "Size": "0x10",
-        "Offset": "0x178"
+        "Name": "pad0xcb_GQWFD[0xcb]",
+        "Type": "char",
+        "Size": "0xcb",
+        "Offset": "0x145"
       }
     ]
   },
   "RadialDamagerComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x120",
-    "InheritedSize": "0xc8",
+    "FullSize": "0x110",
+    "InheritedSize": "0xb8",
     "ClassSize": "0x58",
     "Attributes": [
       {
         "Name": "DamageIntervalSeconds",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xc8"
+        "Offset": "0xb8"
       },
       {
         "Name": "DamagePerSecondAtCentre",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xcc"
+        "Offset": "0xbc"
       },
       {
         "Name": "DamagePerSecondAtMaxRadius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xd0"
+        "Offset": "0xc0"
       },
       {
         "Name": "DamageRadius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xd4"
+        "Offset": "0xc4"
+      },
+      {
+        "Name": "pad0x8_A30FM[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
       },
       {
         "Name": "DamagerType",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0xe0"
+        "Offset": "0xd0"
       },
       {
         "Name": "HealthChangedReason",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0xe8"
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "pad0x3_30J1H[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xd9"
       },
       {
         "Name": "LocalOffset",
         "Type": "struct Vector",
         "Size": "0xc",
-        "Offset": "0xec"
+        "Offset": "0xdc"
+      },
+      {
+        "Name": "pad0x28_M8WVE[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0xe8"
       }
     ]
   },
-  "ShipDamagerComponent": {
+  "ShockwaveDamagerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ShockwaveDamagerComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x220",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x158",
+    "FullSize": "0x1c0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x108",
     "Attributes": [
       {
-        "Name": "Shape",
-        "Type": "class PrimitiveComponent*",
+        "Name": "pad0x8_1W6Y4[0x8]",
+        "Type": "char",
         "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "ExpansionDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "EndRadiusInMetres",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc4"
+      },
+      {
+        "Name": "ApplyImpulseToShips",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "pad0x7_YJ1ZM[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xc9"
+      },
+      {
+        "Name": "ForceToApplyToShip",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
         "Offset": "0xd0"
       },
       {
-        "Name": "ShipHulls",
-        "Type": "TArray<class Interface*>",
+        "Name": "ApplyDamageToShips",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "pad0x7_Q9W6X[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x101"
+      },
+      {
+        "Name": "ShipDamageLevels",
+        "Type": "TArray<struct ShockwaveDamagerShipDamage>",
         "Size": "0x10",
-        "Offset": "0xd8"
+        "Offset": "0x108"
       },
       {
-        "Name": "WatercraftHealthInterfaces",
-        "Type": "TArray<class Interface*>",
-        "Size": "0x10",
-        "Offset": "0xe8"
+        "Name": "DamagerType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x118"
       },
       {
-        "Name": "ShipStrainDamage",
-        "Type": "struct StrainDamage",
-        "Size": "0x28",
-        "Offset": "0xf8"
-      },
-      {
-        "Name": "TimeBetweenWatercraftDamage",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
+        "Name": "ApplyImpulseToGhostShips",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x120"
       },
       {
-        "Name": "WatercraftDamage",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x150"
+        "Name": "pad0x3_M0IUM[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x121"
       },
       {
-        "Name": "StartDamagingOnBeginPlay",
+        "Name": "GhostShipImpulseDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x124"
+      },
+      {
+        "Name": "GhostShipImpulseMaxDeflectionAngle",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "DestroyHostileGhostShips",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x154"
+        "Offset": "0x12c"
+      },
+      {
+        "Name": "pad0x3_IOOO5[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x12d"
+      },
+      {
+        "Name": "NearbyEncounterDistanceInMetres",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x130"
+      },
+      {
+        "Name": "pad0x4_2SIKZ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x134"
+      },
+      {
+        "Name": "ProcessedShips",
+        "Type": "TArray<uintptr_t>",
+        "Size": "0x10",
+        "Offset": "0x158"
+      },
+      {
+        "Name": "ProcessedGhostShips",
+        "Type": "TArray<uintptr_t>",
+        "Size": "0x10",
+        "Offset": "0x168"
+      },
+      {
+        "Name": "pad0x48_SHH5P[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x178"
       }
     ]
   },

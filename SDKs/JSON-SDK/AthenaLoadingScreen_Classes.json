@@ -1,4 +1,44 @@
 {
+  "AthenaLoadingScreenParams": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x68",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "BootLoadingScreen",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "TeleportLoadingScreen",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "AdventureLoadingScreens",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x58"
+      }
+    ]
+  },
+  "LoadingUtilities": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AthenaLoadingScreenBlueprintFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "SlateLoadingScreenParams": {
     "Super": "DataAsset",
     "FullSize": "0x238",
@@ -54,6 +94,12 @@
         "Offset": "0x38"
       },
       {
+        "Name": "pad0x7_E5ZVC[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x39"
+      },
+      {
         "Name": "PlaceholderSpinnerTexture",
         "Type": "struct StringAssetReference",
         "Size": "0x10",
@@ -88,6 +134,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0xb0"
+      },
+      {
+        "Name": "pad0x4_3UCJA[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xb4"
       },
       {
         "Name": "SpinnerText",
@@ -174,6 +226,12 @@
         "Offset": "0x1e8"
       },
       {
+        "Name": "pad0x4_55YOK[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1ec"
+      },
+      {
         "Name": "LoadingScreenTips",
         "Type": "TArray<struct Text>",
         "Size": "0x10",
@@ -190,32 +248,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x230"
-      }
-    ]
-  },
-  "AthenaLoadingScreenParams": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x68",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "BootLoadingScreen",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x38"
       },
       {
-        "Name": "TeleportLoadingScreen",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "AdventureLoadingScreens",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x58"
+        "Name": "pad0x7_3WDNT[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x231"
       }
     ]
   },

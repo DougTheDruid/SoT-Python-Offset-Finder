@@ -34,10 +34,20 @@ MovieScene3DAttachSection:
     Offset: '0xb8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_PBMZS[0x7]
+    Offset: '0xb9'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x18'
   FullSize: '0xc0'
   InheritedSize: '0xa8'
   Super: MovieScene3DConstraintSection
+MovieScene3DAttachTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: MovieScene3DConstraintTrack
 MovieScene3DConstraintSection:
   Attributes:
   - Name: ConstraintId
@@ -72,6 +82,10 @@ MovieScene3DPathSection:
     Offset: '0x121'
     Size: '0x1'
     Type: byte
+  - Name: pad0x2_L6ML6[0x2]
+    Offset: '0x122'
+    Size: '0x2'
+    Type: char
   - Name: bFollow
     Offset: '0x124'
     Size: '0x1'
@@ -84,34 +98,74 @@ MovieScene3DPathSection:
     Offset: '0x124'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_ALTAI[0x3]
+    Offset: '0x125'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x80'
   FullSize: '0x128'
   InheritedSize: '0xa8'
   Super: MovieScene3DConstraintSection
+MovieScene3DPathTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: MovieScene3DConstraintTrack
 MovieScene3DTransformSection:
   Attributes:
+  - Name: pad0x8_WTQE1[0x8]
+    Offset: '0x98'
+    Size: '0x8'
+    Type: char
   - Name: Translation
     Offset: '0xa0'
     Size: '0x78'
     Type: struct RichCurve
+  - Name: pad0xf0_O682I[0xf0]
+    Offset: '0x118'
+    Size: '0xf0'
+    Type: char
   - Name: Rotation
     Offset: '0x208'
     Size: '0x78'
     Type: struct RichCurve
+  - Name: pad0xf0_Y6AXC[0xf0]
+    Offset: '0x280'
+    Size: '0xf0'
+    Type: char
   - Name: Scale
     Offset: '0x370'
     Size: '0x78'
     Type: struct RichCurve
+  - Name: pad0xf0_U6G4L[0xf0]
+    Offset: '0x3e8'
+    Size: '0xf0'
+    Type: char
   ClassSize: '0x440'
   FullSize: '0x4d8'
   InheritedSize: '0x98'
   Super: MovieSceneSection
+MovieScene3DTransformTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xb0'
+  InheritedSize: '0xb0'
+  Super: MovieScenePropertyTrack
 MovieSceneActorReferenceSection:
   Attributes:
+  - Name: pad0x8_V7CMM[0x8]
+    Offset: '0x98'
+    Size: '0x8'
+    Type: char
   - Name: ActorGuidIndexCurve
     Offset: '0xa0'
     Size: '0x70'
     Type: struct IntegralCurve
+  - Name: pad0x10_89H8B[0x10]
+    Offset: '0x110'
+    Size: '0x10'
+    Type: char
   - Name: ActorGuidStrings
     Offset: '0x120'
     Size: '0x10'
@@ -120,6 +174,12 @@ MovieSceneActorReferenceSection:
   FullSize: '0x130'
   InheritedSize: '0x98'
   Super: MovieSceneSection
+MovieSceneActorReferenceTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xb0'
+  InheritedSize: '0xb0'
+  Super: MovieScenePropertyTrack
 MovieSceneAudioSection:
   Attributes:
   - Name: Sound
@@ -154,6 +214,10 @@ MovieSceneAudioSection:
     Offset: '0x1a0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_H5U7C[0x7]
+    Offset: '0x1a1'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x110'
   FullSize: '0x1a8'
   InheritedSize: '0x98'
@@ -170,10 +234,18 @@ MovieSceneAudioTrack:
   Super: MovieSceneNameableTrack
 MovieSceneBoolSection:
   Attributes:
+  - Name: pad0x8_U13G2[0x8]
+    Offset: '0x98'
+    Size: '0x8'
+    Type: char
   - Name: DefaultValue
     Offset: '0xa0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_P5A20[0x7]
+    Offset: '0xa1'
+    Size: '0x7'
+    Type: char
   - Name: BoolCurve
     Offset: '0xa8'
     Size: '0x70'
@@ -182,8 +254,18 @@ MovieSceneBoolSection:
   FullSize: '0x118'
   InheritedSize: '0x98'
   Super: MovieSceneSection
+MovieSceneBoolTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xb0'
+  InheritedSize: '0xb0'
+  Super: MovieScenePropertyTrack
 MovieSceneByteSection:
   Attributes:
+  - Name: pad0x8_NQ2YR[0x8]
+    Offset: '0x98'
+    Size: '0x8'
+    Type: char
   - Name: ByteCurve
     Offset: '0xa0'
     Size: '0x70'
@@ -232,6 +314,10 @@ MovieSceneCameraAnimSection:
     Offset: '0xd0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_MOJM5[0x7]
+    Offset: '0xd1'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x40'
   FullSize: '0xd8'
   InheritedSize: '0x98'
@@ -284,10 +370,18 @@ MovieSceneCameraShakeSection:
     Offset: '0xc4'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_VX0E9[0x3]
+    Offset: '0xc5'
+    Size: '0x3'
+    Type: char
   - Name: UserDefinedPlaySpace
     Offset: '0xc8'
     Size: '0xc'
     Type: struct Rotator
+  - Name: pad0x4_R2OX6[0x4]
+    Offset: '0xd4'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x40'
   FullSize: '0xd8'
   InheritedSize: '0x98'
@@ -312,8 +406,18 @@ MovieSceneCinematicShotSection:
   FullSize: '0x138'
   InheritedSize: '0x100'
   Super: MovieSceneSubSection
+MovieSceneCinematicShotTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: MovieSceneSubTrack
 MovieSceneColorSection:
   Attributes:
+  - Name: pad0x8_YA6FI[0x8]
+    Offset: '0x98'
+    Size: '0x8'
+    Type: char
   - Name: RedCurve
     Offset: '0xa0'
     Size: '0x78'
@@ -340,6 +444,10 @@ MovieSceneColorTrack:
     Offset: '0xb0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_LLHRJ[0x7]
+    Offset: '0xb1'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0xb8'
   InheritedSize: '0xb0'
@@ -350,12 +458,20 @@ MovieSceneComponentMaterialTrack:
     Offset: '0x98'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_MUIBP[0x4]
+    Offset: '0x9c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0xa0'
   InheritedSize: '0x98'
   Super: MovieSceneMaterialTrack
 MovieSceneEnumSection:
   Attributes:
+  - Name: pad0x8_B9YSP[0x8]
+    Offset: '0x98'
+    Size: '0x8'
+    Type: char
   - Name: EnumCurve
     Offset: '0xa0'
     Size: '0x70'
@@ -384,6 +500,10 @@ MovieSceneEventSection:
     Offset: '0x100'
     Size: '0x20'
     Type: struct MovieSceneEventSectionData
+  - Name: pad0x88_LAGU4[0x88]
+    Offset: '0x120'
+    Size: '0x88'
+    Type: char
   ClassSize: '0x110'
   FullSize: '0x1a8'
   InheritedSize: '0x98'
@@ -398,6 +518,10 @@ MovieSceneEventTrack:
     Offset: '0x88'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_37H0K[0x7]
+    Offset: '0x89'
+    Size: '0x7'
+    Type: char
   - Name: Sections
     Offset: '0x90'
     Size: '0x10'
@@ -416,12 +540,26 @@ MovieSceneFadeSection:
     Offset: '0x128'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_66D1Q[0x7]
+    Offset: '0x129'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x18'
   FullSize: '0x130'
   InheritedSize: '0x118'
   Super: MovieSceneFloatSection
+MovieSceneFadeTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xb0'
+  InheritedSize: '0xb0'
+  Super: MovieSceneFloatTrack
 MovieSceneFloatSection:
   Attributes:
+  - Name: pad0x8_TKO0J[0x8]
+    Offset: '0x98'
+    Size: '0x8'
+    Type: char
   - Name: FloatCurve
     Offset: '0xa0'
     Size: '0x78'
@@ -430,8 +568,18 @@ MovieSceneFloatSection:
   FullSize: '0x118'
   InheritedSize: '0x98'
   Super: MovieSceneSection
+MovieSceneFloatTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xb0'
+  InheritedSize: '0xb0'
+  Super: MovieScenePropertyTrack
 MovieSceneIntegerSection:
   Attributes:
+  - Name: pad0x8_DGCK4[0x8]
+    Offset: '0x98'
+    Size: '0x8'
+    Type: char
   - Name: IntegerCurve
     Offset: '0xa0'
     Size: '0x70'
@@ -440,12 +588,22 @@ MovieSceneIntegerSection:
   FullSize: '0x110'
   InheritedSize: '0x98'
   Super: MovieSceneSection
+MovieSceneIntegerTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xb0'
+  InheritedSize: '0xb0'
+  Super: MovieScenePropertyTrack
 MovieSceneLevelVisibilitySection:
   Attributes:
   - Name: Visibility
     Offset: '0x98'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_5XV0X[0x7]
+    Offset: '0x99'
+    Size: '0x7'
+    Type: char
   - Name: LevelNames
     Offset: '0xa0'
     Size: '0x10'
@@ -570,6 +728,10 @@ MovieSceneSkeletalAnimationSection:
     Offset: '0x14c'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_2BM0H[0x3]
+    Offset: '0x14d'
+    Size: '0x3'
+    Type: char
   - Name: SlotName
     Offset: '0x150'
     Size: '0x8'
@@ -584,6 +746,10 @@ MovieSceneSkeletalAnimationTrack:
     Offset: '0x88'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_P3ETG[0x7]
+    Offset: '0x89'
+    Size: '0x7'
+    Type: char
   - Name: AnimationSections
     Offset: '0x90'
     Size: '0x10'
@@ -592,6 +758,24 @@ MovieSceneSkeletalAnimationTrack:
   FullSize: '0xa0'
   InheritedSize: '0x88'
   Super: MovieSceneNameableTrack
+MovieSceneSlomoSection:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x118'
+  InheritedSize: '0x118'
+  Super: MovieSceneFloatSection
+MovieSceneSlomoTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xb0'
+  InheritedSize: '0xb0'
+  Super: MovieSceneFloatTrack
+MovieSceneSpawnSection:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x118'
+  InheritedSize: '0x118'
+  Super: MovieSceneBoolSection
 MovieSceneSpawnTrack:
   Attributes:
   - Name: Sections
@@ -608,6 +792,10 @@ MovieSceneSpawnTrack:
   Super: MovieSceneTrack
 MovieSceneStringSection:
   Attributes:
+  - Name: pad0x8_JNDOV[0x8]
+    Offset: '0x98'
+    Size: '0x8'
+    Type: char
   - Name: StringCurve
     Offset: '0xa0'
     Size: '0x78'
@@ -616,6 +804,12 @@ MovieSceneStringSection:
   FullSize: '0x118'
   InheritedSize: '0x98'
   Super: MovieSceneSection
+MovieSceneStringTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xb0'
+  InheritedSize: '0xb0'
+  Super: MovieScenePropertyTrack
 MovieSceneSubSection:
   Attributes:
   - Name: Parameters
@@ -634,14 +828,14 @@ MovieSceneSubSection:
     Offset: '0xb0'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_V1GWY[0x4]
+    Offset: '0xb4'
+    Size: '0x4'
+    Type: char
   - Name: SubSequence
     Offset: '0xb8'
     Size: '0x8'
     Type: class MovieSceneSequence*
-  - Name: ActorToRecord
-    Offset: '0xc0'
-    Size: '0x1c'
-    Type: lazyobject
   - Name: TargetSequenceName
     Offset: '0xe0'
     Size: '0x10'
@@ -666,14 +860,26 @@ MovieSceneSubTrack:
   Super: MovieSceneNameableTrack
 MovieSceneVectorSection:
   Attributes:
+  - Name: pad0x8_3CVKF[0x8]
+    Offset: '0x98'
+    Size: '0x8'
+    Type: char
   - Name: Curves
     Offset: '0xa0'
     Size: '0x78'
     Type: struct RichCurve
+  - Name: pad0x168_D4Y0L[0x168]
+    Offset: '0x118'
+    Size: '0x168'
+    Type: char
   - Name: ChannelsUsed
     Offset: '0x280'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_M8Q4W[0x4]
+    Offset: '0x284'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x1f0'
   FullSize: '0x288'
   InheritedSize: '0x98'
@@ -684,7 +890,17 @@ MovieSceneVectorTrack:
     Offset: '0xb0'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_4FXI3[0x4]
+    Offset: '0xb4'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0xb8'
   InheritedSize: '0xb0'
   Super: MovieScenePropertyTrack
+MovieSceneVisibilityTrack:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0xb0'
+  InheritedSize: '0xb0'
+  Super: MovieSceneBoolTrack

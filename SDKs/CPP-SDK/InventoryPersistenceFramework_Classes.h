@@ -6,11 +6,20 @@
 #include "InventoryPersistenceFramework_Structs.h"
 
 
-// Size 0x180 (Full Size[0x548] - InheritedSize[0x3c8]
+// Size 0x180 (Full Size[0x520] - InheritedSize[0x3a0]
 class InventoryPersistenceService: public Actor
 {
 public:
-	TArray<struct InventoryPersistencePlayerData>                PlayerItemData;                                    // 0x520(0x10)
+	char                                                         pad0x158_12X9R[0x158];                             // 0x3a0(0x158)
+	TArray<struct InventoryPersistencePlayerData>                PlayerItemData;                                    // 0x4f8(0x10)
+	char                                                         pad0x18_RQ89S[0x18];                               // 0x508(0x18)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class InventoryPersistenceServiceInterface: public Interface
+{
+public:
 };
 
 

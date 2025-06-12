@@ -1,135 +1,166 @@
 {
-  "StatusResponseApplyOneShotStatus": {
+  "StatusResponseCook": {
     "Super": "StatusResponse",
-    "FullSize": "0x48",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "StatusToApply",
-        "Type": "struct Status",
-        "Size": "0x18",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "StatusResponseSuspendStatus": {
-    "Super": "StatusResponse",
-    "FullSize": "0x40",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Status",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "StatusResponseReportNoiseEvent": {
-    "Super": "StatusResponse",
-    "FullSize": "0x70",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "NoiseInstigator",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "NoiseTag",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "NoiseRange",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "NoiseLoudness",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "NoiseMultipleTicks",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "NoiseTimerTick",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4c"
-      }
-    ]
-  },
-  "StatusResponseApplyPersistentStatus": {
-    "Super": "StatusResponse",
-    "FullSize": "0x50",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "StatusToApply",
-        "Type": "struct Status",
-        "Size": "0x18",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "DurationMultiplier",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x48"
-      }
-    ]
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "StatusResponseHealthRegenerationPoolChange": {
     "Super": "StatusResponse",
-    "FullSize": "0x38",
-    "InheritedSize": "0x30",
+    "FullSize": "0x40",
+    "InheritedSize": "0x38",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "HealthPoolChangeIntensityMultiplier",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x30"
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x4_PVGPJ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
       }
     ]
   },
-  "StatusResponseCancelStatus": {
+  "StatusResponseApplyPersistentStatus": {
     "Super": "StatusResponse",
-    "FullSize": "0x40",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x10",
+    "FullSize": "0x60",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "Status",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x30"
+        "Name": "StatusToApply",
+        "Type": "struct Status",
+        "Size": "0x20",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "DurationMultiplier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "pad0x4_O5XSG[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x5c"
+      }
+    ]
+  },
+  "StatusResponseReportNoiseEvent": {
+    "Super": "StatusResponse",
+    "FullSize": "0x78",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "NoiseInstigator",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "NoiseTag",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "NoiseRange",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "NoiseLoudness",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      },
+      {
+        "Name": "NoiseMultipleTicks",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "pad0x3_VBY4Q[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x51"
+      },
+      {
+        "Name": "NoiseTimerTick",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x54"
+      },
+      {
+        "Name": "pad0x20_RYGP9[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x58"
       }
     ]
   },
   "StatusResponseSetScalarParamOnCharacter": {
     "Super": "StatusResponse",
-    "FullSize": "0x40",
-    "InheritedSize": "0x30",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "ParamsToChange",
         "Type": "TArray<struct ScalarParamInfo>",
         "Size": "0x10",
-        "Offset": "0x30"
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "StatusResponseCancelStatus": {
+    "Super": "StatusResponse",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Status",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "StatusResponseSuspendStatus": {
+    "Super": "StatusResponse",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Status",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "StatusResponseApplyOneShotStatus": {
+    "Super": "StatusResponse",
+    "FullSize": "0x58",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "StatusToApply",
+        "Type": "struct Status",
+        "Size": "0x20",
+        "Offset": "0x38"
       }
     ]
   },

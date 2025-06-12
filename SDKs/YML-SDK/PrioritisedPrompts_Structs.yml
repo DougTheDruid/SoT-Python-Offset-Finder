@@ -2,6 +2,10 @@
 # https://github.com/DougTheDruid
 PermanentPromptNetworkEvent:
   Attributes:
+  - Name: pad0x18_ANZS2[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: Prompt
     Offset: '0x18'
     Size: '0x70'
@@ -10,6 +14,10 @@ PermanentPromptNetworkEvent:
     Offset: '0x88'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_KVTSA[0x7]
+    Offset: '0x89'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x90'
 PlayerPromptTelemetryEvent:
   Attributes:
@@ -28,6 +36,10 @@ PrioritisedPrompt:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_9GFFL[0x7]
+    Offset: '0x1'
+    Size: '0x7'
+    Type: char
   - Name: Message
     Offset: '0x8'
     Size: '0x38'
@@ -48,6 +60,10 @@ PrioritisedPrompt:
     Offset: '0x59'
     Size: '0x1'
     Type: byte
+  - Name: pad0x6_ATSE4[0x6]
+    Offset: '0x5a'
+    Size: '0x6'
+    Type: char
   ClassSize: '0x60'
 PrioritisedPromptHandle:
   Attributes:
@@ -73,6 +89,10 @@ PromptEvaluation:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_AJ4KW[0x7]
+    Offset: '0x1'
+    Size: '0x7'
+    Type: char
   - Name: Prompt
     Offset: '0x8'
     Size: '0x70'
@@ -85,3 +105,10 @@ PromptsCounterIncrementEvent:
     Size: '0x8'
     Type: class UClass*
   ClassSize: '0x8'
+PromptsServiceSetupEvent:
+  Attributes:
+  - Name: pad0x1_FA9PY[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'

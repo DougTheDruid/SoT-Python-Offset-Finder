@@ -28,6 +28,10 @@ GameEventAvailabilityData:
     Offset: '0x11'
     Size: '0x1'
     Type: byte
+  - Name: pad0x6_NCNDD[0x6]
+    Offset: '0x12'
+    Size: '0x6'
+    Type: char
   - Name: ShipSizeLimit
     Offset: '0x18'
     Size: '0x8'
@@ -81,6 +85,13 @@ GameEventOnDemandCompletedTelemetryEvent:
     Size: '0x10'
     Type: TArray<struct Guid>
   ClassSize: '0x30'
+GameEventOnDemandCrewCancelledVoyageTelemetryEvent:
+  Attributes:
+  - Name: pad0x1_ZHA7Q[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
 GameEventOnDemandCrewJoinedTelemetryEvent:
   Attributes:
   - Name: ShipType
@@ -92,6 +103,13 @@ GameEventOnDemandCrewJoinedTelemetryEvent:
     Size: '0x10'
     Type: struct FString
   ClassSize: '0x20'
+GameEventOnDemandCrewScuttledTelemetryEvent:
+  Attributes:
+  - Name: pad0x1_ZOC9L[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
 GameEventOnDemandCrewSentToSinkingTunnel:
   Attributes:
   - Name: CrewId
@@ -99,6 +117,13 @@ GameEventOnDemandCrewSentToSinkingTunnel:
     Size: '0x10'
     Type: struct Guid
   ClassSize: '0x10'
+GameEventOnDemandCrewSinkingTelemetryEvent:
+  Attributes:
+  - Name: pad0x1_CBG0G[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
 GameEventOnDemandDeactivated:
   Attributes:
   - Name: OnDemandCrewIds

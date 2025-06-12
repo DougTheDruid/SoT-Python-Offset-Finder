@@ -2,57 +2,65 @@
 # https://github.com/DougTheDruid
 AsymmetricClientObject:
   Attributes:
+  - Name: pad0x18_BDCS9[0x18]
+    Offset: '0x3a0'
+    Size: '0x18'
+    Type: char
   - Name: BaseComponent
-    Offset: '0x3e0'
+    Offset: '0x3b8'
     Size: '0x8'
     Type: class BoxComponent*
   - Name: ThirdPersonMesh
-    Offset: '0x3e8'
+    Offset: '0x3c0'
     Size: '0x8'
     Type: class StaticMeshMemoryConstraintComponent*
   - Name: WaterInteractionComponent
-    Offset: '0x3f0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: class WaterInteractionComponent*
   - Name: BuoyancyComponent
-    Offset: '0x3f8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: class BuoyancyComponent*
   - Name: SpawnDependentTrackedOwnerComponent
-    Offset: '0x400'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: class SpawnDependentTrackedOwnerComponent*
   - Name: RotationWhenPlacingWorldProxy
-    Offset: '0x408'
+    Offset: '0x3e0'
     Size: '0xc'
     Type: struct Rotator
   - Name: ZOffsetWhenPlacingWorldProxy
-    Offset: '0x414'
+    Offset: '0x3ec'
     Size: '0x4'
     Type: float
   ClassSize: '0x50'
-  FullSize: '0x418'
-  InheritedSize: '0x3c8'
+  FullSize: '0x3f0'
+  InheritedSize: '0x3a0'
   Super: Actor
 AsymmetricObjectServerManager:
   Attributes:
+  - Name: pad0x18_CBX4K[0x18]
+    Offset: '0x3a0'
+    Size: '0x18'
+    Type: char
   - Name: SpawnedObject
-    Offset: '0x3e0'
+    Offset: '0x3b8'
     Size: '0x8'
     Type: class AsymmetricClientObject*
   - Name: SceneComponent
-    Offset: '0x3e8'
+    Offset: '0x3c0'
     Size: '0x8'
     Type: class SceneComponent*
   - Name: AsymmetricObjectAsset
-    Offset: '0x3f0'
+    Offset: '0x3c8'
     Size: '0x10'
     Type: struct StringAssetReference
-  - Name: ForcedAsymmetricObjectAsset
-    Offset: '0x400'
+  - Name: pad0x20_M65L0[0x20]
+    Offset: '0x3d8'
     Size: '0x20'
-    Type: assetclass
+    Type: char
   ClassSize: '0x58'
-  FullSize: '0x420'
-  InheritedSize: '0x3c8'
+  FullSize: '0x3f8'
+  InheritedSize: '0x3a0'
   Super: Actor

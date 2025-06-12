@@ -1,4 +1,27 @@
 {
+  "WorldEdgeItemBatchTelemetryEvent": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Name": "ShipLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TeleportLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "NumItems",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x18"
+      }
+    ]
+  },
   "WorldEdgeItemServiceBatchCompletedEvent": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -24,29 +47,6 @@
         "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xc"
-      }
-    ]
-  },
-  "WorldEdgeItemBatchTelemetryEvent": {
-    "ClassSize": "0x1c",
-    "Attributes": [
-      {
-        "Name": "ShipLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TeleportLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "NumItems",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x18"
       }
     ]
   },

@@ -64,7 +64,15 @@ AthenaAudioGameStateSettings:
     Offset: '0x18'
     Size: '0x8'
     Type: struct FName
-  ClassSize: '0x20'
+  - Name: EngageAnimationStateGroupName
+    Offset: '0x20'
+    Size: '0x8'
+    Type: struct FName
+  - Name: EngageAnimationStateEngageName
+    Offset: '0x28'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x30'
 StoryDrivenAudioPortalSetting:
   Attributes:
   - Name: Story

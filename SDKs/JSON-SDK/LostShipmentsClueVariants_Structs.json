@@ -3,16 +3,33 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "ExistingNPC",
-        "Type": "assetclass",
-        "Size": "0x20",
+        "Name": "pad0x40_XBN95[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TextEntryWithLayout": {
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "TextEntry",
+        "Type": "struct FText",
+        "Size": "0x38",
         "Offset": "0x0"
       },
       {
-        "Name": "PhasedNPC",
-        "Type": "assetclass",
-        "Size": "0x20",
-        "Offset": "0x20"
+        "Name": "TextLayout",
+        "Type": "struct TreasureMapWidgetText",
+        "Size": "0x3c",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x4_8E9YX[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x74"
       }
     ]
   },
@@ -26,9 +43,26 @@
         "Offset": "0x0"
       },
       {
-        "Name": "ClueChoice",
-        "Type": "int16",
-        "Size": "0x2",
+        "Name": "pad0x8_RF4P5[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "ClueDestinationToTextIndex": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "DestinationType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x20_ZOVTC[0x20]",
+        "Type": "char",
+        "Size": "0x20",
         "Offset": "0x8"
       }
     ]
@@ -50,23 +84,6 @@
       }
     ]
   },
-  "ClueDestinationToTextIndex": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "DestinationType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "RequiredIndexAsset",
-        "Type": "assetobject",
-        "Size": "0x20",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "MapRadialIconData": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -81,23 +98,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x10"
-      }
-    ]
-  },
-  "TextEntryWithLayout": {
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "TextEntry",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x0"
       },
       {
-        "Name": "TextLayout",
-        "Type": "struct TreasureMapWidgetText",
-        "Size": "0x3c",
-        "Offset": "0x38"
+        "Name": "pad0x4_JF5NJ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
       }
     ]
   },

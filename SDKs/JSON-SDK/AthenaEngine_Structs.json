@@ -1,12 +1,41 @@
 {
-  "ServicesStampId": {
-    "ClassSize": "0x10",
+  "NativeAndUserDefinedStructSelector": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "StampId",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Name": "Struct",
+        "Type": "class ScriptStruct*",
+        "Size": "0x8",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "AdaptiveTriggerEffectMode_Vibration": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "Position",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Frequency",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "Amplitude",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x2"
+      },
+      {
+        "Name": "UseTriggerEffectForThreshold",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3"
       }
     ]
   },
@@ -62,32 +91,59 @@
       }
     ]
   },
-  "AdaptiveTriggerEffectMode_Vibration": {
-    "ClassSize": "0x4",
+  "StringAssetClassPairFeatureOverride": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "Position",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "FeatureName",
+        "Type": "struct FName",
+        "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "Frequency",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x1"
+        "Name": "pad0x20_V4O99[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventMeshAssigned": {
+    "ClassSize": "0x2",
+    "Attributes": [
+      {
+        "Name": "pad0x2_76NF4[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "InlineUserDefinedStructDetails": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Struct",
+        "Type": "class ScriptStruct*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SerialisedRpc": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x18_OESLI[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
       },
       {
-        "Name": "Amplitude",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x2"
-      },
-      {
-        "Name": "UseTriggerEffectForThreshold",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3"
+        "Name": "ContentsType",
+        "Type": "class ScriptStruct*",
+        "Size": "0x8",
+        "Offset": "0x18"
       }
     ]
   },
@@ -99,22 +155,11 @@
         "Type": "class ScriptStruct*",
         "Size": "0x8",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "StringAssetClassPairFeatureOverride": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "FeatureName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
       },
       {
-        "Name": "AssetClass",
-        "Type": "assetclass",
-        "Size": "0x20",
+        "Name": "pad0x18_89X68[0x18]",
+        "Type": "char",
+        "Size": "0x18",
         "Offset": "0x8"
       }
     ]
@@ -133,6 +178,52 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "EventTriggerForceFeedback": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ForceFeedbackEffect",
+        "Type": "class ForceFeedbackEffect*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Looping",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x3_Y99E9[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x9"
+      },
+      {
+        "Name": "Tag",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "pad0x4_EX84C[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "ServicesStampId": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "StampId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },
@@ -165,14 +256,59 @@
       }
     ]
   },
+  "AthenaAsyncAssetLoaderWrapper": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_FPARI[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AdaptiveTriggerEffectMode_Off": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_W66DG[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventMeshVFXAssigned": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_YFXDK[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "BoxedRpc": {
     "ClassSize": "0x18",
     "Attributes": [
+      {
+        "Name": "pad0x8_GR6Y7[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
       {
         "Name": "Type",
         "Type": "class ScriptStruct*",
         "Size": "0x8",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x8_LYO2Q[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x10"
       }
     ]
   },
@@ -197,6 +333,12 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
+        "Name": "pad0x18_680VY[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
         "Name": "WwiseEvent",
         "Type": "class WwiseEvent*",
         "Size": "0x8",
@@ -207,62 +349,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x20"
-      }
-    ]
-  },
-  "EventTriggerForceFeedback": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "ForceFeedbackEffect",
-        "Type": "class ForceFeedbackEffect*",
-        "Size": "0x8",
-        "Offset": "0x0"
       },
       {
-        "Name": "Looping",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Tag",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "NativeAndUserDefinedStructSelector": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Struct",
-        "Type": "class ScriptStruct*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "InlineUserDefinedStructDetails": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Struct",
-        "Type": "class ScriptStruct*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SerialisedRpc": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ContentsType",
-        "Type": "class ScriptStruct*",
-        "Size": "0x8",
-        "Offset": "0x18"
+        "Name": "pad0x7_7X071[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x21"
       }
     ]
   },
@@ -285,12 +377,6 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
-      },
-      {
-        "Name": "AssetClass",
-        "Type": "assetclass",
-        "Size": "0x20",
-        "Offset": "0x10"
       },
       {
         "Name": "FeatureOverrides",

@@ -20,6 +20,14 @@ public:
 };
 
 
+// Size 0x1
+struct EventPlayerPawnLeavingGame
+{
+public:
+	char                                                         pad0x1_9D8Q7[0x1];                                 // 0x0(0x1)
+};
+
+
 // Size 0x98
 struct InventoryPersistencePlayerData
 {

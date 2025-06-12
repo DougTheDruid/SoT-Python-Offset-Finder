@@ -7,6 +7,13 @@ RareGameServiceManagerServiceRegisteredEvent:
     Size: '0x8'
     Type: class Object*
   ClassSize: '0x8'
+RareGameServiceManagerStateChangedEvent:
+  Attributes:
+  - Name: pad0x2_ULAUO[0x2]
+    Offset: '0x0'
+    Size: '0x2'
+    Type: char
+  ClassSize: '0x2'
 RareGameServiceSpecification:
   Attributes:
   - Name: ServiceName
@@ -25,4 +32,8 @@ RareGameServiceSpecification:
     Offset: '0x11'
     Size: '0x1'
     Type: bool
+  - Name: pad0x6_3N6UI[0x6]
+    Offset: '0x12'
+    Size: '0x6'
+    Type: char
   ClassSize: '0x18'

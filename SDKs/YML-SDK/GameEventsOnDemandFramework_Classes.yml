@@ -26,6 +26,10 @@ GameEventAvailabilityParamsDataAsset:
     Offset: '0x81'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2_5SXDU[0x2]
+    Offset: '0x82'
+    Size: '0x2'
+    Type: char
   - Name: EmergentCrewLeftRegionCooldown
     Offset: '0x84'
     Size: '0x4'
@@ -38,6 +42,10 @@ GameEventAvailabilityParamsDataAsset:
     Offset: '0x89'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2_01PEU[0x2]
+    Offset: '0x8a'
+    Size: '0x2'
+    Type: char
   - Name: ActiveEventExclusionRadiusFromIslandDistanceRadiusModifier
     Offset: '0x8c'
     Size: '0x4'
@@ -60,16 +68,28 @@ GameEventOnDemandAvailabilityHandler:
     Offset: '0x38'
     Size: '0x8'
     Type: class UClass*
+  - Name: pad0x60_SN95X[0x60]
+    Offset: '0x40'
+    Size: '0x60'
+    Type: char
   - Name: CompletedState
     Offset: '0xa0'
     Size: '0x1'
     Type: byte
-  ClassSize: '0x150'
-  FullSize: '0x178'
+  - Name: pad0xdf_85GZ1[0xdf]
+    Offset: '0xa1'
+    Size: '0xdf'
+    Type: char
+  ClassSize: '0x158'
+  FullSize: '0x180'
   InheritedSize: '0x28'
   Super: Object
 GameEventOnDemandAvailabilityStateTracker:
   Attributes:
+  - Name: pad0x88_HGVSA[0x88]
+    Offset: '0x28'
+    Size: '0x88'
+    Type: char
   - Name: ShipTypeLimit
     Offset: '0xb0'
     Size: '0x8'
@@ -82,7 +102,57 @@ GameEventOnDemandAvailabilityStateTracker:
     Offset: '0xc8'
     Size: '0x10'
     Type: TArray<struct Guid>
+  - Name: pad0x88_C7GPP[0x88]
+    Offset: '0xd8'
+    Size: '0x88'
+    Type: char
   ClassSize: '0x138'
   FullSize: '0x160'
   InheritedSize: '0x28'
   Super: Object
+GameEventOnDemandVoyageProposalDesc:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x138'
+  InheritedSize: '0x138'
+  Super: VoyageProposalDesc
+GameEventsOnDemandAvailabilityServiceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+GameEventsOnDemandInstanceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+GameEventsOnDemandInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+GameEventsOnDemandLoserTunnelServiceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+WaitForGameEventOnDemandToCompleteStep:
+  Attributes:
+  - Name: pad0x90_XU6HW[0x90]
+    Offset: '0x98'
+    Size: '0x90'
+    Type: char
+  ClassSize: '0x90'
+  FullSize: '0x128'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+WaitForGameEventOnDemandToCompleteStepDesc:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x80'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc

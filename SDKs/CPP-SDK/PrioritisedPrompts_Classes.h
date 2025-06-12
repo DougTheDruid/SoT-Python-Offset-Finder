@@ -6,11 +6,25 @@
 #include "PrioritisedPrompts_Structs.h"
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class PromptCounterAccessKey: public Object
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class PromptsLocalServiceInterface: public Interface
 {
 public:
-	struct FString                                               Key;                                               // 0x28(0x10)
+};
+
+
+// Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
+class PromptsLocalService: public Object
+{
+public:
+	char                                                         pad0x70_FSKC6[0x70];                               // 0x28(0x70)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class PrioritisedPromptsManagerInterface: public Interface
+{
+public:
 };
 
 
@@ -18,8 +32,10 @@ public:
 class PrioritisedPromptsManager: public Object
 {
 public:
+	char                                                         pad0x8_0LDUX[0x8];                                 // 0x28(0x8)
 	TArray<struct PrioritisedPromptWithHandle>                   AllPrompts;                                        // 0x30(0x10)
 	class PlayerController*                                      PlayerController;                                  // 0x40(0x8)
+	char                                                         pad0x30_ULXYR[0x30];                               // 0x48(0x30)
 };
 
 
@@ -28,8 +44,18 @@ class BasePromptCoordinator: public Object
 {
 public:
 	class AthenaPlayerController*                                PlayerController;                                  // 0x28(0x8)
+	char                                                         pad0x10_4L2KL[0x10];                               // 0x30(0x10)
 	class PrioritisedPromptsManager*                             PrioritisedPromptsManager;                         // 0x40(0x8)
 	class Character*                                             CharacterWithRegisteredEvents;                     // 0x48(0x8)
+	char                                                         pad0xc8_5ERBI[0xc8];                               // 0x50(0xc8)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class PromptCounterAccessKey: public Object
+{
+public:
+	struct FString                                               Key;                                               // 0x28(0x10)
 };
 
 
@@ -37,8 +63,15 @@ public:
 class GetPromptsLocalService: public BlueprintAsyncActionBase
 {
 public:
-	multicastinlinedelegate                                      Loaded;                                            // 0x28(0x10)
+	char                                                         pad0x10_QYLZG[0x10];                               // 0x28(0x10)
 	class Object*                                                WorldContextObject;                                // 0x38(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
+class GenericVoyagePrioritisedPrompt_PromptAccessKey: public PromptCounterAccessKey
+{
+public:
 };
 
 

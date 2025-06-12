@@ -1,4 +1,59 @@
 {
+  "TaleQuestGetProjectionPointOnTradeRouteStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x130",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Name": "pad0x98_FNRIA[0x98]",
+        "Type": "char",
+        "Size": "0x98",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "WorldTradeRouteInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TradeRoutesDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "TradeRouteMappings",
+        "Type": "TArray<struct TradeRouteMapping>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "TaleQuestSelectTradeRouteStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Desc",
+        "Type": "class TaleQuestSelectTradeRouteStepDesc*",
+        "Size": "0x8",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x18_F07H4[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0xa0"
+      }
+    ]
+  },
   "TaleQuestGetProjectionPointOnTradeRouteStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0x118",
@@ -10,6 +65,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x4_Q2NUB[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x84"
       },
       {
         "Name": "SourcePoint",
@@ -28,6 +89,76 @@
         "Type": "struct QuestVariableVector",
         "Size": "0x30",
         "Offset": "0xe8"
+      }
+    ]
+  },
+  "TradeRouteDifficultyBand": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "MinimumRank",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_IHXUX[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      }
+    ]
+  },
+  "TaleQuestSelectTradeRouteStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x178",
+    "InheritedSize": "0x80",
+    "ClassSize": "0xf8",
+    "Attributes": [
+      {
+        "Name": "TradeRouteMappingFilter",
+        "Type": "struct TradeRouteMappingFilterQuestVariable",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "NumSelectFromClosestIslands",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "pad0x4_WQOTT[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xb4"
+      },
+      {
+        "Name": "SelectionOriginPointVar",
+        "Type": "struct QuestVariableVector",
+        "Size": "0x30",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "TradeRouteDifficulty",
+        "Type": "struct QuestVariableInt",
+        "Size": "0x30",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "TradeRoute",
+        "Type": "struct QuestVariableTradeRouteData",
+        "Size": "0x30",
+        "Offset": "0x118"
+      },
+      {
+        "Name": "AllocatedTradeRouteHandleVar",
+        "Type": "struct QuestVariableTaleResourceHandle",
+        "Size": "0x30",
+        "Offset": "0x148"
       }
     ]
   },
@@ -62,96 +193,16 @@
         "Offset": "0x3c"
       },
       {
+        "Name": "pad0x3_8IM2I[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x3d"
+      },
+      {
         "Name": "TradeRouteMapData",
         "Type": "struct TradeRouteMapData",
         "Size": "0x80",
         "Offset": "0x40"
-      }
-    ]
-  },
-  "TradeRoutesDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "TradeRouteMappings",
-        "Type": "TArray<struct TradeRouteMapping>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "TradeRouteDifficultyBand": {
-    "Super": "Object",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "MinimumRank",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "TaleQuestSelectTradeRouteStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0xb8",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Desc",
-        "Type": "class TaleQuestSelectTradeRouteStepDesc*",
-        "Size": "0x8",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "TaleQuestSelectTradeRouteStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x178",
-    "InheritedSize": "0x80",
-    "ClassSize": "0xf8",
-    "Attributes": [
-      {
-        "Name": "TradeRouteMappingFilter",
-        "Type": "struct TradeRouteMappingFilterQuestVariable",
-        "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "NumSelectFromClosestIslands",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "SelectionOriginPointVar",
-        "Type": "struct QuestVariableVector",
-        "Size": "0x30",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "TradeRouteDifficulty",
-        "Type": "struct QuestVariableInt",
-        "Size": "0x30",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "TradeRoute",
-        "Type": "struct QuestVariableTradeRouteData",
-        "Size": "0x30",
-        "Offset": "0x118"
-      },
-      {
-        "Name": "AllocatedTradeRouteHandleVar",
-        "Type": "struct QuestVariableTaleResourceHandle",
-        "Size": "0x30",
-        "Offset": "0x148"
       }
     ]
   },

@@ -6,6 +6,10 @@ AIShipBattleEncounterDescGenerationParams:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_9Q7FI[0x7]
+    Offset: '0x1'
+    Size: '0x7'
+    Type: char
   - Name: BattleGenerationParams
     Offset: '0x8'
     Size: '0x10'
@@ -37,6 +41,10 @@ AIShipBattleParams:
     Offset: '0x48'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_F3M2V[0x4]
+    Offset: '0x4c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x50'
 AIShipBootyItem:
   Attributes:
@@ -48,10 +56,18 @@ AIShipBootyItem:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_YWZWC[0x3]
+    Offset: '0x9'
+    Size: '0x3'
+    Type: char
   - Name: Rarity
     Offset: '0xc'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x4_18XKD[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x18'
 AIShipCaptainParams:
   Attributes:
@@ -85,6 +101,10 @@ AIShipContextDescDamageParams:
     Offset: '0x4'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_3Z513[0x3]
+    Offset: '0x5'
+    Size: '0x3'
+    Type: char
   - Name: RepairTimeMultiplier
     Offset: '0x8'
     Size: '0x4'
@@ -93,6 +113,10 @@ AIShipContextDescDamageParams:
     Offset: '0xc'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_YR7U8[0x3]
+    Offset: '0xd'
+    Size: '0x3'
+    Type: char
   - Name: LeakAmountMultiplier
     Offset: '0x10'
     Size: '0x4'
@@ -165,10 +189,6 @@ AIShipCrewAmmoType:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: IconIndex
-    Offset: '0x1'
-    Size: '0x1'
-    Type: int8
   - Name: AmmoType
     Offset: '0x8'
     Size: '0x10'
@@ -180,18 +200,14 @@ AIShipCrewFormType:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_X9LBA[0x3]
+    Offset: '0x1'
+    Size: '0x3'
+    Type: char
   - Name: IconColour
     Offset: '0x4'
     Size: '0x4'
     Type: struct Color
-  - Name: IconIndex
-    Offset: '0x8'
-    Size: '0x1'
-    Type: int8
-  - Name: CaptainIconIndex
-    Offset: '0x9'
-    Size: '0x1'
-    Type: int8
   - Name: Form
     Offset: '0x10'
     Size: '0x10'
@@ -203,6 +219,10 @@ AIShipCrewSizeSpecificSpawnerEntry:
     Offset: '0x0'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_SCI3U[0x4]
+    Offset: '0x4'
+    Size: '0x4'
+    Type: char
   - Name: SpawnerTemplates
     Offset: '0x8'
     Size: '0x10'
@@ -218,6 +238,10 @@ AIShipDamagedTelemetryEvent:
     Offset: '0x10'
     Size: '0xc'
     Type: struct Vector
+  - Name: pad0x4_JWIG4[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   - Name: DamagedShipPart
     Offset: '0x20'
     Size: '0x10'
@@ -230,6 +254,10 @@ AIShipDamagedTelemetryEvent:
     Offset: '0x34'
     Size: '0x10'
     Type: struct Guid
+  - Name: pad0x4_G7CDY[0x4]
+    Offset: '0x44'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x48'
 AIShipDespawnTelemetryEvent:
   Attributes:
@@ -241,6 +269,10 @@ AIShipDespawnTelemetryEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_G9K3R[0x7]
+    Offset: '0x11'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x18'
 AIShipEncounterBattleDesc:
   Attributes:
@@ -267,6 +299,10 @@ AIShipEncounterBattleGenerationParams:
     Offset: '0x38'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_8M4RH[0x4]
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: char
   - Name: ShipSizeLimits
     Offset: '0x40'
     Size: '0x10'
@@ -301,6 +337,10 @@ AIShipEncounterDynamicBalancingDesc:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_TAS0E[0x3]
+    Offset: '0x1'
+    Size: '0x3'
+    Type: char
   - Name: InitialWaveGenEncounterRadiusMultiplier
     Offset: '0x4'
     Size: '0x4'
@@ -317,6 +357,10 @@ AIShipEncounterDynamicBalancingDesc:
     Offset: '0x20'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_LXPLO[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   - Name: DynamicWaveCostConfigurations
     Offset: '0x28'
     Size: '0x10'
@@ -340,6 +384,10 @@ AIShipEncounterDynamicBalancingPlayerShipValueDesc:
     Offset: '0x8'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_EKR3Q[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x10'
 AIShipEncounterDynamicBalancingPoolSizeDesc:
   Attributes:
@@ -351,6 +399,10 @@ AIShipEncounterDynamicBalancingPoolSizeDesc:
     Offset: '0x8'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_6P2VF[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x10'
 AIShipEncounterDynamicBalancingWaveConfigCostDesc:
   Attributes:
@@ -362,6 +414,10 @@ AIShipEncounterDynamicBalancingWaveConfigCostDesc:
     Offset: '0x10'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_PPN7N[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x18'
 AIShipEncounterDynamicWaveShipSpawnedTelemetryEvent:
   Attributes:
@@ -430,6 +486,10 @@ AIShipEncounterParamsSpawnerData:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_7W3N0[0x3]
+    Offset: '0x11'
+    Size: '0x3'
+    Type: char
   - Name: CaptainName
     Offset: '0x14'
     Size: '0x8'
@@ -454,6 +514,14 @@ AIShipEncounterParamsSpawnerData:
     Offset: '0x20'
     Size: '0x1'
     Type: bool
+  - Name: EnableDespawnRefund
+    Offset: '0x21'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x2_40CG6[0x2]
+    Offset: '0x22'
+    Size: '0x2'
+    Type: char
   - Name: MaxNumberOfRespawns
     Offset: '0x24'
     Size: '0x4'
@@ -483,6 +551,10 @@ AIShipGenerationParams:
     Offset: '0x1'
     Size: '0x1'
     Type: byte
+  - Name: pad0x6_XGEWM[0x6]
+    Offset: '0x2'
+    Size: '0x6'
+    Type: char
   - Name: ShipControllerParams
     Offset: '0x8'
     Size: '0x8'
@@ -499,6 +571,10 @@ AIShipGenerationParams:
     Offset: '0x30'
     Size: '0x14'
     Type: struct AIShipContextDescDamageParams
+  - Name: pad0x4_8X2QW[0x4]
+    Offset: '0x44'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x48'
 AIShipSailData:
   Attributes:
@@ -547,6 +623,10 @@ AIShipSizeLimit:
     Offset: '0x8'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_A2HNS[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x10'
 AIShipSkeletonSkillsetOverride:
   Attributes:
@@ -615,6 +695,10 @@ AIShipWeightedSize:
     Offset: '0x8'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_RDD8L[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   - Name: ShipSize
     Offset: '0x10'
     Size: '0x8'
@@ -638,6 +722,10 @@ CursedSailsBattleParams:
     Offset: '0x71'
     Size: '0x1'
     Type: byte
+  - Name: pad0x6_5DCWJ[0x6]
+    Offset: '0x72'
+    Size: '0x6'
+    Type: char
   - Name: EncounterDescription
     Offset: '0x78'
     Size: '0x8'
@@ -664,6 +752,10 @@ FeatureLockedAIShipEncounterBattleGenerationParams:
     Offset: '0x8'
     Size: '0x60'
     Type: struct AIShipEncounterBattleGenerationParams
+  - Name: pad0x10_XEXD8[0x10]
+    Offset: '0x68'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x78'
 RelativeSpawnLocationGeneratorParams:
   Attributes:
@@ -671,6 +763,10 @@ RelativeSpawnLocationGeneratorParams:
     Offset: '0x0'
     Size: '0x10'
     Type: TArray<struct WeightedSpawnDirection>
+  - Name: pad0x90_BFRLV[0x90]
+    Offset: '0x10'
+    Size: '0x90'
+    Type: char
   ClassSize: '0xa0'
 ShipMovementParams:
   Attributes:
@@ -763,6 +859,10 @@ TrackingNoiseGenerator:
     Offset: '0x8'
     Size: '0x4'
     Type: float
+  - Name: pad0xc_JFKGE[0xc]
+    Offset: '0xc'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x18'
 WeightedAIShipCrewAmmoType:
   Attributes:
@@ -770,6 +870,10 @@ WeightedAIShipCrewAmmoType:
     Offset: '0x0'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_WL7RJ[0x4]
+    Offset: '0x4'
+    Size: '0x4'
+    Type: char
   - Name: Params
     Offset: '0x8'
     Size: '0x18'
@@ -778,6 +882,10 @@ WeightedAIShipCrewAmmoType:
     Offset: '0x20'
     Size: '0xc'
     Type: struct FeatureFlag
+  - Name: pad0x4_VZ4QT[0x4]
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x30'
 WeightedAIShipCrewFormType:
   Attributes:
@@ -785,6 +893,10 @@ WeightedAIShipCrewFormType:
     Offset: '0x0'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_O407V[0x4]
+    Offset: '0x4'
+    Size: '0x4'
+    Type: char
   - Name: Params
     Offset: '0x8'
     Size: '0x20'
@@ -804,10 +916,18 @@ WeightedSpawnDirection:
     Offset: '0x8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_TSJD4[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   - Name: SpawnOffsets
     Offset: '0x10'
     Size: '0x10'
     Type: TArray<struct WeightedSpawnOffset>
+  - Name: pad0x90_Z6SSH[0x90]
+    Offset: '0x20'
+    Size: '0x90'
+    Type: char
   ClassSize: '0xb0'
 WeightedSpawnOffset:
   Attributes:
@@ -823,6 +943,10 @@ WeightedSpawnOffset:
     Offset: '0x8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_I6P0K[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   - Name: SpawnRotations
     Offset: '0x10'
     Size: '0x30'

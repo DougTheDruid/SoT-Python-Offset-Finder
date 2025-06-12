@@ -10,6 +10,15 @@ public:
 	struct UniqueNetIdRepl                                       UniqueId;                                          // 0x0(0x18)
 	struct FString                                               ValidationStr;                                     // 0x18(0x10)
 	float                                                        ElapsedTime;                                       // 0x28(0x4)
+	char                                                         pad0x4_HX45X[0x4];                                 // 0x2c(0x4)
+};
+
+
+// Size 0xf0
+struct BlueprintSessionResult
+{
+public:
+	char                                                         pad0xf0_W7JZF[0xf0];                               // 0x0(0xf0)
 };
 
 
@@ -18,6 +27,7 @@ struct PartyReservation
 {
 public:
 	int                                                          TeamNum;                                           // 0x0(0x4)
+	char                                                         pad0x4_EPO1I[0x4];                                 // 0x4(0x4)
 	struct UniqueNetIdRepl                                       PartyLeader;                                       // 0x8(0x18)
 	TArray<struct PlayerReservation>                             PartyMembers;                                      // 0x20(0x10)
 };

@@ -1,4 +1,26 @@
 {
+  "RotatingCompassRotationCurveCompletedEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_QPCOQ[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "RotatingCompassSplinePathCompletedEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_HISDN[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "CompassTargetSet": {
     "ClassSize": "0xc",
     "Attributes": [
@@ -13,6 +35,12 @@
   "RotatingCompassAudioParams": {
     "ClassSize": "0x48",
     "Attributes": [
+      {
+        "Name": "pad0x20_T8ZPV[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
       {
         "Name": "EmitterPool",
         "Type": "class WwiseObjectPoolWrapper*",

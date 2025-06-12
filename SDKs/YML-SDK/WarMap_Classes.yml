@@ -42,6 +42,12 @@ StartWarMapVoyageVoteConsumer:
   FullSize: '0x308'
   InheritedSize: '0x110'
   Super: WarMapVoteConsumerBase
+StartWarMapVoyageVoteValidator:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x130'
+  InheritedSize: '0x130'
+  Super: WarMapVoteValidatorBase
 StopWarMapVoyageVoteConsumer:
   Attributes:
   - Name: WarMapVotingCastVote
@@ -70,28 +76,56 @@ StopWarMapVoyageVoteValidator:
     Offset: '0x130'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_TZ5HB[0x7]
+    Offset: '0x131'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x138'
   InheritedSize: '0x130'
   Super: WarMapVoteValidatorBase
 WarMapInteractionComponent:
   Attributes:
+  - Name: pad0x8_XAWX5[0x8]
+    Offset: '0x140'
+    Size: '0x8'
+    Type: char
   - Name: OpenMapInteractionText
-    Offset: '0x150'
+    Offset: '0x148'
     Size: '0x38'
     Type: struct FText
   - Name: CannotOpenMapInteractionText
-    Offset: '0x188'
+    Offset: '0x180'
     Size: '0x38'
     Type: struct FText
   - Name: OpenMapInputId
-    Offset: '0x1c0'
+    Offset: '0x1b8'
     Size: '0x8'
     Type: class UClass*
+  - Name: pad0x20_4BMA5[0x20]
+    Offset: '0x1c0'
+    Size: '0x20'
+    Type: char
   ClassSize: '0xa0'
-  FullSize: '0x1e8'
-  InheritedSize: '0x148'
+  FullSize: '0x1e0'
+  InheritedSize: '0x140'
   Super: InteractableComponent
+WarMapInteractionVoteComponent:
+  Attributes:
+  - Name: pad0x10_01YMR[0x10]
+    Offset: '0x168'
+    Size: '0x10'
+    Type: char
+  ClassSize: '0x10'
+  FullSize: '0x178'
+  InheritedSize: '0x168'
+  Super: InlineVotingInteractionComponent
+WarMapStateInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 WarMapVoteConsumerBase:
   Attributes:
   - Name: Validator
@@ -106,43 +140,63 @@ WarMapVoteConsumerBase:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
+  - Name: pad0x67_229AJ[0x67]
+    Offset: '0x41'
+    Size: '0x67'
+    Type: char
   - Name: Votes
     Offset: '0xa8'
     Size: '0x10'
     Type: TArray<class PlayerState*>
+  - Name: pad0x58_KUM90[0x58]
+    Offset: '0xb8'
+    Size: '0x58'
+    Type: char
   ClassSize: '0xe0'
   FullSize: '0x110'
   InheritedSize: '0x30'
   Super: VoteConsumerInlineBase
 WarMapVoteInteractionActor:
   Attributes:
+  - Name: pad0x10_TQV5H[0x10]
+    Offset: '0x3a0'
+    Size: '0x10'
+    Type: char
   - Name: TooltipUIFadeDuration
-    Offset: '0x3d8'
+    Offset: '0x3b0'
     Size: '0x4'
     Type: float
   - Name: TooltipUIScreenSpaceOffsetRatio
-    Offset: '0x3dc'
+    Offset: '0x3b4'
     Size: '0x8'
     Type: struct Vector2D
+  - Name: pad0x4_Z0QT5[0x4]
+    Offset: '0x3bc'
+    Size: '0x4'
+    Type: char
   - Name: InvasionActiveMesh
-    Offset: '0x3e8'
+    Offset: '0x3c0'
     Size: '0x8'
     Type: class StaticMeshComponent*
   - Name: BoxedRpcDispatcherComponent
-    Offset: '0x3f0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: class BoxedRpcDispatcherComponent*
   - Name: FactionInfos
-    Offset: '0x3f8'
+    Offset: '0x3d0'
     Size: '0x10'
     Type: TArray<struct FactionDisplayInfo>
   - Name: FactionInfoPtrs
-    Offset: '0x408'
+    Offset: '0x3e0'
     Size: '0x10'
     Type: TArray<struct FactionRequest>
+  - Name: pad0x230_E7MAH[0x230]
+    Offset: '0x3f0'
+    Size: '0x230'
+    Type: char
   ClassSize: '0x280'
-  FullSize: '0x648'
-  InheritedSize: '0x3c8'
+  FullSize: '0x620'
+  InheritedSize: '0x3a0'
   Super: Actor
 WarMapVoteValidatorBase:
   Attributes:
@@ -158,6 +212,10 @@ WarMapVoteValidatorBase:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
+  - Name: pad0xef_XOEFL[0xef]
+    Offset: '0x41'
+    Size: '0xef'
+    Type: char
   ClassSize: '0x100'
   FullSize: '0x130'
   InheritedSize: '0x30'

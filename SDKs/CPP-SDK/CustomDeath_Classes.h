@@ -6,11 +6,20 @@
 #include "CustomDeath_Structs.h"
 
 
-// Size 0x98 (Full Size[0x460] - InheritedSize[0x3c8]
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CustomDeathInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x98 (Full Size[0x438] - InheritedSize[0x3a0]
 class CustomDeathService: public Actor
 {
 public:
-	TArray<class PlayerStart*>                                   CustomPlayerStarts;                                // 0x400(0x10)
+	char                                                         pad0x38_GHNC8[0x38];                               // 0x3a0(0x38)
+	TArray<class PlayerStart*>                                   CustomPlayerStarts;                                // 0x3d8(0x10)
+	char                                                         pad0x50_1D3G5[0x50];                               // 0x3e8(0x50)
 };
 
 

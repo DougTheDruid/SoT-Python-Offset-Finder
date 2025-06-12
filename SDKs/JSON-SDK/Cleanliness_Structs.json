@@ -9,6 +9,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x3_JH9MN[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
         "Name": "Strength",
         "Type": "float",
         "Size": "0x4",
@@ -19,6 +25,23 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x3_3RI4O[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x9"
+      }
+    ]
+  },
+  "EventQuickCleanRequest": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_YTIY1[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },

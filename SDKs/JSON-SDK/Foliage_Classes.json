@@ -1,93 +1,282 @@
 {
+  "ProceduralFoliageVolume": {
+    "Super": "Volume",
+    "FullSize": "0x3e0",
+    "InheritedSize": "0x3d8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ProceduralComponent",
+        "Type": "class ProceduralFoliageComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      }
+    ]
+  },
+  "FoliageStatistics": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ProceduralFoliageComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "FoliageSpawner",
+        "Type": "class ProceduralFoliageSpawner*",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "TileOverlap",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "pad0x4_3OFEM[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc4"
+      },
+      {
+        "Name": "SpawningVolume",
+        "Type": "class Volume*",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "ProceduralGuid",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "ProceduralFoliageBlockingVolume": {
+    "Super": "Volume",
+    "FullSize": "0x3e0",
+    "InheritedSize": "0x3d8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ProceduralFoliageVolume",
+        "Type": "class ProceduralFoliageVolume*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      }
+    ]
+  },
   "InteractiveFoliageActor": {
     "Super": "StaticMeshActor",
-    "FullSize": "0x438",
-    "InheritedSize": "0x3d8",
+    "FullSize": "0x410",
+    "InheritedSize": "0x3b0",
     "ClassSize": "0x60",
     "Attributes": [
       {
         "Name": "CapsuleComponent",
         "Type": "class CapsuleComponent*",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x3b0"
       },
       {
         "Name": "TouchingActorEntryPosition",
         "Type": "struct Vector",
         "Size": "0xc",
-        "Offset": "0x3e0"
+        "Offset": "0x3b8"
       },
       {
         "Name": "FoliageVelocity",
         "Type": "struct Vector",
         "Size": "0xc",
-        "Offset": "0x3ec"
+        "Offset": "0x3c4"
       },
       {
         "Name": "FoliageForce",
         "Type": "struct Vector",
         "Size": "0xc",
-        "Offset": "0x3f8"
+        "Offset": "0x3d0"
       },
       {
         "Name": "FoliagePosition",
         "Type": "struct Vector",
         "Size": "0xc",
-        "Offset": "0x404"
+        "Offset": "0x3dc"
       },
       {
         "Name": "FoliageDamageImpulseScale",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x410"
+        "Offset": "0x3e8"
       },
       {
         "Name": "FoliageTouchImpulseScale",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x414"
+        "Offset": "0x3ec"
       },
       {
         "Name": "FoliageStiffness",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x418"
+        "Offset": "0x3f0"
       },
       {
         "Name": "FoliageStiffnessQuadratic",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x41c"
+        "Offset": "0x3f4"
       },
       {
         "Name": "FoliageDamping",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x420"
+        "Offset": "0x3f8"
       },
       {
         "Name": "MaxDamageImpulse",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x424"
+        "Offset": "0x3fc"
       },
       {
         "Name": "MaxTouchImpulse",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x428"
+        "Offset": "0x400"
       },
       {
         "Name": "MaxForce",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x42c"
+        "Offset": "0x404"
       },
       {
         "Name": "Mass",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x430"
+        "Offset": "0x408"
+      },
+      {
+        "Name": "pad0x4_MLX48[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x40c"
+      }
+    ]
+  },
+  "InteractiveFoliageComponent": {
+    "Super": "StaticMeshComponent",
+    "FullSize": "0x630",
+    "InheritedSize": "0x620",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_Y6KIJ[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x620"
+      }
+    ]
+  },
+  "ProceduralFoliageTile": {
+    "Super": "Object",
+    "FullSize": "0x150",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x128",
+    "Attributes": [
+      {
+        "Name": "FoliageSpawner",
+        "Type": "class ProceduralFoliageSpawner*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0xa0_QEYCD[0xa0]",
+        "Type": "char",
+        "Size": "0xa0",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "InstancesArray",
+        "Type": "TArray<struct ProceduralFoliageInstance>",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0x70_N666I[0x70]",
+        "Type": "char",
+        "Size": "0x70",
+        "Offset": "0xe0"
+      }
+    ]
+  },
+  "ProceduralFoliageSpawner": {
+    "Super": "Object",
+    "FullSize": "0x68",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "RandomSeed",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "TileSize",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "NumUniqueTiles",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x4_E8Q4U[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "FoliageTypes",
+        "Type": "TArray<struct FoliageTypeObject>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "bNeedsSimulation",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x1f_4Q6KM[0x1f]",
+        "Type": "char",
+        "Size": "0x1f",
+        "Offset": "0x49"
+      }
+    ]
+  },
+  "InstancedFoliageActor": {
+    "Super": "Actor",
+    "FullSize": "0x3f0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x50_JJ5XZ[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x3a0"
       }
     ]
   },
@@ -128,6 +317,12 @@
         "Offset": "0x44"
       },
       {
+        "Name": "pad0x3_2FAMF[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x45"
+      },
+      {
         "Name": "ScaleX",
         "Type": "struct FloatInterval",
         "Size": "0x8",
@@ -152,6 +347,12 @@
         "Offset": "0x60"
       },
       {
+        "Name": "pad0x3_4RRYJ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x61"
+      },
+      {
         "Name": "VertexColorMaskThreshold",
         "Type": "float",
         "Size": "0x4",
@@ -162,6 +363,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x68"
+      },
+      {
+        "Name": "pad0x3_G0XYN[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x69"
       },
       {
         "Name": "ZOffset",
@@ -176,6 +383,12 @@
         "Offset": "0x74"
       },
       {
+        "Name": "pad0x3_32GXC[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x75"
+      },
+      {
         "Name": "AlignMaxAngle",
         "Type": "float",
         "Size": "0x4",
@@ -186,6 +399,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x7c"
+      },
+      {
+        "Name": "pad0x3_VOGPH[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x7d"
       },
       {
         "Name": "RandomPitchAngle",
@@ -206,6 +425,12 @@
         "Offset": "0x8c"
       },
       {
+        "Name": "pad0x4_7IIBZ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x94"
+      },
+      {
         "Name": "LandscapeLayers",
         "Type": "TArray<struct Name>",
         "Size": "0x10",
@@ -222,6 +447,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xb0"
+      },
+      {
+        "Name": "pad0x3_1ZYCG[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xb1"
       },
       {
         "Name": "CollisionScale",
@@ -252,6 +483,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0xec"
+      },
+      {
+        "Name": "pad0x3_QYSNL[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xed"
       },
       {
         "Name": "CullDistance",
@@ -314,6 +551,12 @@
         "Offset": "0xf9"
       },
       {
+        "Name": "pad0x2_S3D7Z[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0xfa"
+      },
+      {
         "Name": "OverriddenLightMapRes",
         "Type": "int",
         "Size": "0x4",
@@ -324,6 +567,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x100"
+      },
+      {
+        "Name": "pad0x7_T3URY[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x101"
       },
       {
         "Name": "BodyInstance",
@@ -338,16 +587,22 @@
         "Offset": "0x288"
       },
       {
-        "Name": "HiddenEditorViews",
-        "Type": "uint64",
-        "Size": "0x8",
-        "Offset": "0x290"
+        "Name": "pad0x7_ZEITR[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x289"
       },
       {
         "Name": "IsSelected",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x298"
+      },
+      {
+        "Name": "pad0x3_OYG1E[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x299"
       },
       {
         "Name": "CollisionRadius",
@@ -414,6 +669,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x2c1"
+      },
+      {
+        "Name": "pad0x2_Q86DS[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x2c2"
       },
       {
         "Name": "MaxInitialAge",
@@ -540,144 +801,26 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x35d"
-      }
-    ]
-  },
-  "ProceduralFoliageTile": {
-    "Super": "Object",
-    "FullSize": "0x150",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x128",
-    "Attributes": [
-      {
-        "Name": "FoliageSpawner",
-        "Type": "class ProceduralFoliageSpawner*",
-        "Size": "0x8",
-        "Offset": "0x28"
       },
       {
-        "Name": "InstancesArray",
-        "Type": "TArray<struct ProceduralFoliageInstance>",
-        "Size": "0x10",
-        "Offset": "0xd0"
-      }
-    ]
-  },
-  "ProceduralFoliageSpawner": {
-    "Super": "Object",
-    "FullSize": "0x68",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "RandomSeed",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "TileSize",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "NumUniqueTiles",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "FoliageTypes",
-        "Type": "TArray<struct FoliageTypeObject>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "bNeedsSimulation",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "ProceduralFoliageComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xf0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "FoliageSpawner",
-        "Type": "class ProceduralFoliageSpawner*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "TileOverlap",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "SpawningVolume",
-        "Type": "class Volume*",
-        "Size": "0x8",
-        "Offset": "0xd8"
-      },
-      {
-        "Name": "ProceduralGuid",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0xe0"
+        "Name": "pad0x2_ZW20N[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x35e"
       }
     ]
   },
   "FoliageInstancedStaticMeshComponent": {
     "Super": "HierarchicalInstancedStaticMeshComponent",
-    "FullSize": "0x7d0",
-    "InheritedSize": "0x7b0",
+    "FullSize": "0x7c0",
+    "InheritedSize": "0x7a0",
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "OnInstanceTakePointDamage",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x7a8"
-      },
-      {
-        "Name": "OnInstanceTakeRadialDamage",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x7b8"
-      }
-    ]
-  },
-  "ProceduralFoliageBlockingVolume": {
-    "Super": "Volume",
-    "FullSize": "0x408",
-    "InheritedSize": "0x400",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "ProceduralFoliageVolume",
-        "Type": "class ProceduralFoliageVolume*",
-        "Size": "0x8",
-        "Offset": "0x400"
-      }
-    ]
-  },
-  "ProceduralFoliageVolume": {
-    "Super": "Volume",
-    "FullSize": "0x408",
-    "InheritedSize": "0x400",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "ProceduralComponent",
-        "Type": "class ProceduralFoliageComponent*",
-        "Size": "0x8",
-        "Offset": "0x400"
+        "Name": "pad0x20_CDCSC[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x7a0"
       }
     ]
   },

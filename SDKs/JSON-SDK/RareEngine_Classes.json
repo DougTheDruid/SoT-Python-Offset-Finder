@@ -1,15 +1,22 @@
 {
-  "AssetReferencer": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
+  "RareHUD": {
+    "Super": "HUD",
+    "FullSize": "0x498",
+    "InheritedSize": "0x498",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RareGameEngine": {
+    "Super": "GameEngine",
+    "FullSize": "0xaa0",
+    "InheritedSize": "0xa48",
+    "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "AssetsToReference",
-        "Type": "TArray<Class>",
-        "Size": "0x10",
-        "Offset": "0x28"
+        "Name": "pad0x58_PKJR3[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0xa48"
       }
     ]
   },
@@ -20,12 +27,40 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "Callback",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x30"
+        "Name": "pad0x28_MFS3U[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x28"
       }
     ]
+  },
+  "StaticMeshActorBlueprintLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AudioHardwareDeviceService": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_EW7W0[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "HitchDiagnosisBlueprintFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "MemoryUsageVisualiserSettings": {
     "Super": "Object",
@@ -36,6 +71,20 @@
       {
         "Name": "VisualiserCategories",
         "Type": "TArray<struct MemoryVisualiserCategory>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "AssetReferencer": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AssetsToReference",
+        "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0x28"
       }

@@ -2,11 +2,25 @@
 # https://github.com/DougTheDruid
 InventoryPersistenceService:
   Attributes:
+  - Name: pad0x158_12X9R[0x158]
+    Offset: '0x3a0'
+    Size: '0x158'
+    Type: char
   - Name: PlayerItemData
-    Offset: '0x520'
+    Offset: '0x4f8'
     Size: '0x10'
     Type: TArray<struct InventoryPersistencePlayerData>
+  - Name: pad0x18_RQ89S[0x18]
+    Offset: '0x508'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x180'
-  FullSize: '0x548'
-  InheritedSize: '0x3c8'
+  FullSize: '0x520'
+  InheritedSize: '0x3a0'
   Super: Actor
+InventoryPersistenceServiceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

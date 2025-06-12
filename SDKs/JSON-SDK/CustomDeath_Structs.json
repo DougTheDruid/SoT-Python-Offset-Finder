@@ -1,5 +1,5 @@
 {
-  "SetShouldSkipFerryOfTheDamnedGameServerRequestModel": {
+  "ForcePlayerRespawnGameServerRequestModel": {
     "ClassSize": "0x8",
     "Attributes": [
       {
@@ -9,10 +9,16 @@
         "Offset": "0x0"
       },
       {
-        "Name": "bShouldSkipFerryOfTheDamned",
+        "Name": "bRespawnAsGhost",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x3_UQ0K6[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5"
       }
     ]
   },
@@ -30,96 +36,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x4"
-      }
-    ]
-  },
-  "KillCrewGameServerRequestModel": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CrewNetGUID",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "KillPlayerGameServerRequestModel": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "PlayerNetGUID",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "GameModeDeathPenaltyRespawnTimerGameServerRequestModel": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "SpawnTimer",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CustomPlayerStartConfigGameServerRequestModel": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x0"
       },
       {
-        "Name": "Rotation",
-        "Type": "struct Quat",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Tags",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "ForcePlayerRespawnGameServerRequestModel": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "PlayerNetGUID",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "bRespawnAsGhost",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "DestroyCustomPlayerStartGameServerRequestModel": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "PlayerStartActorNetID",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Tag",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x8"
+        "Name": "pad0x3_OWO4I[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5"
       }
     ]
   },
@@ -140,20 +62,60 @@
       }
     ]
   },
-  "CustomPlayerStartConfigResponseGameServerRequestModel": {
+  "KillCrewGameServerRequestModel": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewNetGUID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SetShouldSkipFerryOfTheDamnedGameServerRequestModel": {
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "Success",
-        "Type": "bool",
-        "Size": "0x1",
+        "Name": "PlayerNetGUID",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "PlayerStartId",
+        "Name": "bShouldSkipFerryOfTheDamned",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x3_7683E[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5"
+      }
+    ]
+  },
+  "DestroyCustomPlayerStartGameServerRequestModel": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "PlayerStartActorNetID",
         "Type": "int",
         "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_YKDWX[0x4]",
+        "Type": "char",
+        "Size": "0x4",
         "Offset": "0x4"
+      },
+      {
+        "Name": "Tag",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
       }
     ]
   },
@@ -164,6 +126,91 @@
         "Name": "PlayerNetGUID",
         "Type": "int",
         "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomPlayerStartConfigGameServerRequestModel": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_LACQB[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "Rotation",
+        "Type": "struct Quat",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Tags",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "GameModeDeathPenaltyRespawnTimerGameServerRequestModel": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "SpawnTimer",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "KillPlayerGameServerRequestModel": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "PlayerNetGUID",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomPlayerStartConfigResponseGameServerRequestModel": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Success",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_9BA6H[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "PlayerStartId",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "CustomDeathConfiguration": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_4VFAP[0x18]",
+        "Type": "char",
+        "Size": "0x18",
         "Offset": "0x0"
       }
     ]

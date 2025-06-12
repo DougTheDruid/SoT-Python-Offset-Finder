@@ -1,4 +1,54 @@
 {
+  "ServiceHttpSettings": {
+    "Super": "Object",
+    "FullSize": "0x70",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "DiscoveryServiceUrl",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ServerMetricsLevel",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "ClientMetricsLevel",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x39"
+      },
+      {
+        "Name": "pad0x6_JXN0L[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x3a"
+      },
+      {
+        "Name": "SubStringToFindInUrlForXBLiveTokenRequest",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "UrlReplacementStringForXBLiveTokenRequest",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "CustomBuildVersionTag",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x60"
+      }
+    ]
+  },
   "DevelopmentAuthenticationSettings": {
     "Super": "Object",
     "FullSize": "0x78",
@@ -34,50 +84,6 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x68"
-      }
-    ]
-  },
-  "ServiceHttpSettings": {
-    "Super": "Object",
-    "FullSize": "0x70",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "DiscoveryServiceUrl",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "ServerMetricsLevel",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "ClientMetricsLevel",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x39"
-      },
-      {
-        "Name": "SubStringToFindInUrlForXBLiveTokenRequest",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "UrlReplacementStringForXBLiveTokenRequest",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "CustomBuildVersionTag",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x60"
       }
     ]
   },

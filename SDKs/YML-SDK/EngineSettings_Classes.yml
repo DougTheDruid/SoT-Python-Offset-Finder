@@ -6,6 +6,10 @@ ConsoleSettings:
     Offset: '0x28'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_K6JST[0x4]
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: char
   - Name: ManualAutoCompleteList
     Offset: '0x30'
     Size: '0x10'
@@ -44,6 +48,10 @@ GameMapsSettings:
     Offset: '0x5a'
     Size: '0x1'
     Type: byte
+  - Name: pad0x5_O58U4[0x5]
+    Offset: '0x5b'
+    Size: '0x5'
+    Type: char
   - Name: GameInstanceClass
     Offset: '0x60'
     Size: '0x10'
@@ -90,6 +98,10 @@ GameNetworkManagerSettings:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_JNHUW[0x3]
+    Offset: '0x39'
+    Size: '0x3'
+    Type: char
   - Name: StandbyRxCheatTime
     Offset: '0x3c'
     Size: '0x4'
@@ -114,6 +126,10 @@ GameNetworkManagerSettings:
     Offset: '0x50'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_LBKOE[0x4]
+    Offset: '0x54'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
@@ -132,8 +148,18 @@ GameSessionSettings:
     Offset: '0x30'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_67NWL[0x7]
+    Offset: '0x31'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x10'
   FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: Object
+GeneralEngineSettings:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Object
 GeneralProjectSettings:
@@ -196,6 +222,10 @@ HudSettings:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_IBYJZ[0x7]
+    Offset: '0x29'
+    Size: '0x7'
+    Type: char
   - Name: DebugDisplay
     Offset: '0x30'
     Size: '0x10'

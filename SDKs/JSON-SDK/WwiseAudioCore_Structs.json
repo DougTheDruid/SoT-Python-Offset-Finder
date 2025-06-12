@@ -13,6 +13,35 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x3_I1N0K[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5"
+      }
+    ]
+  },
+  "WwiseEventParam": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x8_7UO3O[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SourcePath",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "SourceObj",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
       }
     ]
   },
@@ -39,66 +68,14 @@
       }
     ]
   },
-  "WwiseEventParam": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "WwiseEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SourcePath",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "SourceObj",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "WwisePlatformMapping": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "UnrealPlatform",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "WwisePlatform",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "ReverbPresetControllerSettings": {
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "VectorsPerSegment",
-        "Type": "uint32",
-        "Size": "0x4",
+        "Name": "pad0xc_3UEJX[0xc]",
+        "Type": "char",
+        "Size": "0xc",
         "Offset": "0x0"
-      },
-      {
-        "Name": "TracesPerSegmentPerFrame",
-        "Type": "uint32",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "HorizontalSegments",
-        "Type": "uint32",
-        "Size": "0x4",
-        "Offset": "0x8"
       },
       {
         "Name": "HorizontalConeSegmentElevationAngle",
@@ -137,10 +114,27 @@
         "Offset": "0x20"
       },
       {
-        "Name": "MaxNumSampleFramesInHistory",
-        "Type": "uint32",
+        "Name": "pad0x4_I8RWL[0x4]",
+        "Type": "char",
         "Size": "0x4",
         "Offset": "0x24"
+      }
+    ]
+  },
+  "WwisePlatformMapping": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "UnrealPlatform",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "WwisePlatform",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
@@ -188,6 +182,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x3_JRY9D[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x31"
       },
       {
         "Name": "MinSpaceSizeWindowForEarlyReflections",

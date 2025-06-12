@@ -1,4 +1,33 @@
 {
+  "SpawnAICustomSetupTaskData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "MaxAI",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_3IK07[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "Region",
+        "Type": "class TaleAIRegionBase*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Body",
+        "Type": "class TaleQuestStepDesc*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "SpawnAICustomPreSpawnTaskData": {
     "ClassSize": "0x78",
     "Attributes": [
@@ -27,10 +56,10 @@
         "Offset": "0x1c"
       },
       {
-        "Name": "PawnClass",
-        "Type": "assetclass",
-        "Size": "0x20",
-        "Offset": "0x20"
+        "Name": "pad0x3_ZR2VQ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1d"
       },
       {
         "Name": "Skillset",
@@ -76,40 +105,6 @@
       }
     ]
   },
-  "SpawnActorCustomOnCompleteWaveTaskData": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Body",
-        "Type": "class TaleQuestStepDesc*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SpawnAICustomSetupTaskData": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "MaxAI",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Region",
-        "Type": "class TaleAIRegionBase*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Body",
-        "Type": "class TaleQuestStepDesc*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "SpawnAICustomOnDespawnTaskData": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -118,6 +113,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_J0P8E[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
       },
       {
         "Name": "Despawn_Pawn",
@@ -130,6 +131,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_K891H[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
       },
       {
         "Name": "Body",
@@ -147,6 +154,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_DDLT1[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
       },
       {
         "Name": "Spawn_Pawn",
@@ -172,10 +185,27 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x4_LZ8NX[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
         "Name": "Body",
         "Type": "class TaleQuestStepDesc*",
         "Size": "0x8",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "SpawnActorCustomOnCompleteWaveTaskData": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Body",
+        "Type": "class TaleQuestStepDesc*",
+        "Size": "0x8",
+        "Offset": "0x0"
       }
     ]
   },

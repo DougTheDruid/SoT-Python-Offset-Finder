@@ -1,10 +1,23 @@
 {
+  "WwiseSubSystemInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "WwiseAudioSettings": {
     "Super": "Object",
     "FullSize": "0x260",
     "InheritedSize": "0x28",
     "ClassSize": "0x238",
     "Attributes": [
+      {
+        "Name": "pad0xc0_WWJEH[0xc0]",
+        "Type": "char",
+        "Size": "0xc0",
+        "Offset": "0x28"
+      },
       {
         "Name": "PlatformMappings",
         "Type": "struct WwisePlatformMappings",
@@ -16,6 +29,12 @@
         "Type": "struct WwiseAudioReverbPresets",
         "Size": "0x64",
         "Offset": "0x108"
+      },
+      {
+        "Name": "pad0x4_S2WBI[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x16c"
       },
       {
         "Name": "WwiseCoreAssetsPath",
@@ -66,16 +85,16 @@
         "Offset": "0x1e0"
       },
       {
-        "Name": "WaapiInterpreterPort",
-        "Type": "uint32",
-        "Size": "0x4",
-        "Offset": "0x1f8"
-      },
-      {
         "Name": "WwiseCoreAssets",
         "Type": "class WwiseCoreAssets*",
         "Size": "0x8",
         "Offset": "0x200"
+      },
+      {
+        "Name": "pad0x58_WQU4S[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x208"
       }
     ]
   },

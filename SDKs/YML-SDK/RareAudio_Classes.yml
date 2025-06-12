@@ -10,10 +10,20 @@ AnimNotifyState_WwiseSound:
     Offset: '0x38'
     Size: '0x8'
     Type: class WwiseEvent*
+  - Name: pad0x50_QUD0M[0x50]
+    Offset: '0x40'
+    Size: '0x50'
+    Type: char
   ClassSize: '0x60'
   FullSize: '0x90'
   InheritedSize: '0x30'
   Super: AnimNotifyState
+AnimNotifyWwiseEmitterComponent:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x300'
+  InheritedSize: '0x300'
+  Super: WwiseEmitterComponent
 AnimNotify_WwiseSound:
   Attributes:
   - Name: WwiseEvent
@@ -24,6 +34,10 @@ AnimNotify_WwiseSound:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_L1CT0[0x3]
+    Offset: '0x41'
+    Size: '0x3'
+    Type: char
   - Name: OwnedByWorldEmitterOffset
     Offset: '0x44'
     Size: '0xc'
@@ -32,10 +46,18 @@ AnimNotify_WwiseSound:
     Offset: '0x50'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_RNUDN[0x7]
+    Offset: '0x51'
+    Size: '0x7'
+    Type: char
   - Name: OwnedByWorldWisePoolToUse
     Offset: '0x58'
     Size: '0x8'
     Type: class WwiseObjectPoolWrapper*
+  - Name: pad0x20_II66R[0x20]
+    Offset: '0x60'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x48'
   FullSize: '0x80'
   InheritedSize: '0x38'
@@ -54,6 +76,12 @@ AnimNotify_WwiseSoundMeshSwitch:
   FullSize: '0x98'
   InheritedSize: '0x80'
   Super: AnimNotify_WwiseSound
+AudioIslandStaticMeshAssociatorBase:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x3a0'
+  InheritedSize: '0x3a0'
+  Super: Actor
 AudioSpaceDataAsset:
   Attributes:
   - Name: RtpcToUpdate
@@ -72,6 +100,16 @@ AudioSpaceDataAsset:
   FullSize: '0x40'
   InheritedSize: '0x28'
   Super: DataAsset
+RareAudioHardwareDeviceService:
+  Attributes:
+  - Name: pad0x10_B8BIH[0x10]
+    Offset: '0x40'
+    Size: '0x10'
+    Type: char
+  ClassSize: '0x10'
+  FullSize: '0x50'
+  InheritedSize: '0x40'
+  Super: AudioHardwareDeviceService
 StaticMeshAudioDataAsset:
   Attributes:
   - Name: MeshToAudioAssociations
@@ -85,12 +123,12 @@ StaticMeshAudioDataAsset:
 StaticMeshAudioEmittersComponent:
   Attributes:
   - Name: InstanceAssociations
-    Offset: '0x2e0'
+    Offset: '0x2d0'
     Size: '0x10'
     Type: TArray<struct StaticMeshComponentAudioAssociation>
   ClassSize: '0x10'
-  FullSize: '0x2f0'
-  InheritedSize: '0x2e0'
+  FullSize: '0x2e0'
+  InheritedSize: '0x2d0'
   Super: SceneComponent
 TritonAcousticMap:
   Attributes:
@@ -102,6 +140,10 @@ TritonAcousticMap:
     Offset: '0x38'
     Size: '0x4'
     Type: float
+  - Name: pad0x2c_QLGMW[0x2c]
+    Offset: '0x3c'
+    Size: '0x2c'
+    Type: char
   ClassSize: '0x40'
   FullSize: '0x68'
   InheritedSize: '0x28'
@@ -109,45 +151,77 @@ TritonAcousticMap:
 TritonComponent:
   Attributes:
   - Name: TritonMapAsset
-    Offset: '0x2e0'
+    Offset: '0x2d0'
     Size: '0x8'
     Type: class TritonAcousticMap*
   - Name: TritonEffectRadius
-    Offset: '0x2e8'
+    Offset: '0x2d8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_6B1FL[0x4]
+    Offset: '0x2dc'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x10'
-  FullSize: '0x2f0'
-  InheritedSize: '0x2e0'
+  FullSize: '0x2e0'
+  InheritedSize: '0x2d0'
   Super: SceneComponent
 TritonService:
   Attributes:
+  - Name: pad0x10_A9ZQY[0x10]
+    Offset: '0x28'
+    Size: '0x10'
+    Type: char
   - Name: RegisteredTritonComponents
     Offset: '0x38'
     Size: '0x10'
     Type: TArray<class TritonComponent*>
+  - Name: pad0xa8_JBC7Y[0xa8]
+    Offset: '0x48'
+    Size: '0xa8'
+    Type: char
   - Name: CachedListenerInfo
     Offset: '0xf0'
     Size: '0x8'
     Type: class TritonComponent*
+  - Name: pad0x58_3LPTB[0x58]
+    Offset: '0xf8'
+    Size: '0x58'
+    Type: char
   ClassSize: '0x128'
   FullSize: '0x150'
   InheritedSize: '0x28'
   Super: Object
+WwiseEmitterBlueprintLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
 WwiseEmitterComponent:
   Attributes:
+  - Name: pad0x8_CZYMY[0x8]
+    Offset: '0x2d0'
+    Size: '0x8'
+    Type: char
   - Name: Emitter
-    Offset: '0x2e8'
+    Offset: '0x2d8'
     Size: '0x20'
     Type: struct WwiseEmitter
   - Name: WwiseObjectPoolWrapper
-    Offset: '0x308'
+    Offset: '0x2f8'
     Size: '0x8'
     Type: class WwiseObjectPoolWrapper*
   ClassSize: '0x30'
-  FullSize: '0x310'
-  InheritedSize: '0x2e0'
+  FullSize: '0x300'
+  InheritedSize: '0x2d0'
   Super: SceneComponent
+WwiseEmitterComponentBlueprintLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
 WwiseObjectPoolWrapper:
   Attributes:
   - Name: PoolName
@@ -166,10 +240,18 @@ WwiseObjectPoolWrapper:
     Offset: '0x35'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2_Y8O2L[0x2]
+    Offset: '0x36'
+    Size: '0x2'
+    Type: char
   - Name: PoolDensityParams
     Offset: '0x38'
     Size: '0x28'
     Type: struct WwiseNativeEmitterPoolDensityParams
+  - Name: pad0x18_7B9B0[0x18]
+    Offset: '0x60'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x50'
   FullSize: '0x78'
   InheritedSize: '0x28'

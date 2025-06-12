@@ -1,45 +1,63 @@
 {
   "AthenaCheatManager": {
     "Super": "CheatManager",
-    "FullSize": "0x120",
+    "FullSize": "0x138",
     "InheritedSize": "0x78",
-    "ClassSize": "0xa8",
+    "ClassSize": "0xc0",
     "Attributes": [
+      {
+        "Name": "pad0x18_62SQC[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x78"
+      },
       {
         "Name": "CinematicCameraController",
         "Type": "class CinematicCameraController*",
         "Size": "0x8",
-        "Offset": "0x78"
+        "Offset": "0x90"
       },
       {
         "Name": "CinematicCameraControllerClass",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x80"
+        "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x28_3CMAN[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0xa0"
       },
       {
         "Name": "CreatedWorldMarkers",
         "Type": "TArray<struct WorldMarkerDesc>",
         "Size": "0x10",
-        "Offset": "0xb0"
+        "Offset": "0xc8"
       },
       {
         "Name": "DebugSchedulerSettings",
         "Type": "class GameEventSchedulerSettingsAsset*",
         "Size": "0x8",
-        "Offset": "0xc0"
+        "Offset": "0xd8"
       },
       {
         "Name": "ServerPerformanceReplicator",
         "Type": "class ServerPerformanceReplicator*",
         "Size": "0x8",
-        "Offset": "0xc8"
+        "Offset": "0xe0"
       },
       {
         "Name": "TeleportToDigsiteHeightOffset",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xd0"
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "pad0x4c_OFK6D[0x4c]",
+        "Type": "char",
+        "Size": "0x4c",
+        "Offset": "0xec"
       }
     ]
   },

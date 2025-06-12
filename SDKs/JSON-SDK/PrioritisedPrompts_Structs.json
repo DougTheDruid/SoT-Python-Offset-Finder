@@ -1,4 +1,15 @@
 {
+  "PrioritisedPromptHandle": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Id",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "PlayerPromptTelemetryEvent": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -16,24 +27,13 @@
       }
     ]
   },
-  "PromptsCounterIncrementEvent": {
-    "ClassSize": "0x8",
+  "PromptsServiceSetupEvent": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "AccessKey",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "PrioritisedPromptHandle": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Id",
-        "Type": "struct Guid",
-        "Size": "0x10",
+        "Name": "pad0x1_FA9PY[0x1]",
+        "Type": "char",
+        "Size": "0x1",
         "Offset": "0x0"
       }
     ]
@@ -46,6 +46,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_9GFFL[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
       },
       {
         "Name": "Message",
@@ -76,6 +82,23 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x59"
+      },
+      {
+        "Name": "pad0x6_ATSE4[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x5a"
+      }
+    ]
+  },
+  "PromptsCounterIncrementEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "AccessKey",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
       }
     ]
   },
@@ -106,6 +129,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x7_AJ4KW[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
         "Name": "Prompt",
         "Type": "struct PrioritisedPromptWithHandle",
         "Size": "0x70",
@@ -117,6 +146,12 @@
     "ClassSize": "0x90",
     "Attributes": [
       {
+        "Name": "pad0x18_ANZS2[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
         "Name": "Prompt",
         "Type": "struct PrioritisedPromptWithHandle",
         "Size": "0x70",
@@ -127,6 +162,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x88"
+      },
+      {
+        "Name": "pad0x7_KVTSA[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x89"
       }
     ]
   },

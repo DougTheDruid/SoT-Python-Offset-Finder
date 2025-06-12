@@ -1,295 +1,356 @@
 {
-  "FireballCannonActivationLever": {
-    "Super": "InteractableBase",
-    "FullSize": "0x600",
-    "InheritedSize": "0x3f8",
-    "ClassSize": "0x208",
-    "Attributes": [
-      {
-        "Name": "LeverActivatedSfx",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "LeverAwaitingActivationSfx",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x400"
-      },
-      {
-        "Name": "StartLeverRechargingSfx",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x408"
-      },
-      {
-        "Name": "StopLeverRechargingSfx",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "LeverEmitterPool",
-        "Type": "class WwiseObjectPoolWrapper*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "Root",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "Pivot",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "CanActivateDisplayText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x430"
-      },
-      {
-        "Name": "CannotActivateDisplayText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x468"
-      },
-      {
-        "Name": "NotificationStartInputID",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x4a0"
-      },
-      {
-        "Name": "NotificationReleaseInputID",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x4a8"
-      },
-      {
-        "Name": "DisplayPriority",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x4b0"
-      },
-      {
-        "Name": "HoldTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4b4"
-      },
-      {
-        "Name": "Curve",
-        "Type": "struct RuntimeFloatCurve",
-        "Size": "0x80",
-        "Offset": "0x4b8"
-      },
-      {
-        "Name": "LeverStartingTransform",
-        "Type": "struct Transform",
-        "Size": "0x30",
-        "Offset": "0x540"
-      },
-      {
-        "Name": "LeverEndingTransform",
-        "Type": "struct Transform",
-        "Size": "0x30",
-        "Offset": "0x570"
-      },
-      {
-        "Name": "LeverActivationState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x5a0"
-      },
-      {
-        "Name": "ReplicatedAnimationTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x5a4"
-      },
-      {
-        "Name": "LeverCooldownRtpcName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x5c8"
-      }
-    ]
-  },
   "FireballCannonComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x2e8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x220",
+    "FullSize": "0x2e0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x228",
     "Attributes": [
+      {
+        "Name": "pad0x8_BGTPV[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
       {
         "Name": "FireballCannonProjectileFirePoints",
         "Type": "TArray<struct FireballCannonProjectileFirePoint>",
         "Size": "0x10",
-        "Offset": "0xd0"
+        "Offset": "0xc0"
       },
       {
         "Name": "FireballCannonMaterialParameters",
         "Type": "TArray<struct FireballCannonDynamicMaterialParameters>",
         "Size": "0x10",
-        "Offset": "0xe0"
+        "Offset": "0xd0"
       },
       {
         "Name": "LaunchableProjectileClass",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0xf0"
+        "Offset": "0xe0"
       },
       {
         "Name": "ProjectileLaunchVelocity",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xf8"
+        "Offset": "0xe8"
       },
       {
         "Name": "FireballCannonStartUpTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xfc"
+        "Offset": "0xec"
       },
       {
         "Name": "FireballCannonCooldownTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x100"
+        "Offset": "0xf0"
       },
       {
         "Name": "InheritOwnerForwardVelocityScalar",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x104"
+        "Offset": "0xf4"
       },
       {
         "Name": "FireballCannonCooldownMaterialDelay",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x108"
+        "Offset": "0xf8"
       },
       {
         "Name": "FireballCannonReadyToFireMaterialDelay",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x10c"
+        "Offset": "0xfc"
       },
       {
         "Name": "ActiveProjectiles",
         "Type": "TArray<uintptr_t>",
         "Size": "0x10",
-        "Offset": "0x110"
+        "Offset": "0x100"
       },
       {
         "Name": "FireballCannonFiringState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x120"
+        "Offset": "0x110"
       },
       {
-        "Name": "ActorsInsideFlame",
-        "Type": "map",
-        "Size": "0x50",
-        "Offset": "0x128"
+        "Name": "pad0x7_JHPSF[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x111"
       },
       {
         "Name": "FireRadiusCollisionChannel",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x178"
+        "Offset": "0x168"
       },
       {
         "Name": "FireRadiusCollisionResponse",
         "Type": "struct CollisionResponseContainer",
         "Size": "0x20",
-        "Offset": "0x179"
+        "Offset": "0x169"
+      },
+      {
+        "Name": "pad0x7_AZ01E[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x189"
       },
       {
         "Name": "FlamethrowerFirePropagationIgnitionParams",
         "Type": "class FireGridCellSelectionParamsDataAsset*",
         "Size": "0x8",
-        "Offset": "0x1a0"
+        "Offset": "0x190"
       },
       {
         "Name": "FlamethrowerCollisionStatusEffect",
         "Type": "struct Status",
-        "Size": "0x18",
-        "Offset": "0x1a8"
+        "Size": "0x20",
+        "Offset": "0x198"
       },
       {
         "Name": "UseScalingFlameCollisionRadius",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x1c0"
+        "Offset": "0x1b8"
+      },
+      {
+        "Name": "pad0x3_X86SG[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1b9"
       },
       {
         "Name": "FlameCollisionRadius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x1c4"
+        "Offset": "0x1bc"
       },
       {
         "Name": "DynamicFlameCollisionRadiusCurve",
         "Type": "struct RuntimeFloatCurve",
         "Size": "0x80",
-        "Offset": "0x1c8"
+        "Offset": "0x1c0"
       },
       {
         "Name": "TimeUntilApplyStatusEffect",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x248"
+        "Offset": "0x240"
       },
       {
         "Name": "TimeUntilIgniteFirePropagation",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x24c"
+        "Offset": "0x244"
       },
       {
         "Name": "TimeToConsiderActorOutsideFlame",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x250"
+        "Offset": "0x248"
       },
       {
         "Name": "FlamethrowerCollisionDamageAmount",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x254"
+        "Offset": "0x24c"
       },
       {
         "Name": "DamagePerSecondInsideFlame",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x258"
+        "Offset": "0x250"
+      },
+      {
+        "Name": "pad0x4_R00H9[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x254"
       },
       {
         "Name": "DamagerTypeClass",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x260"
+        "Offset": "0x258"
       },
       {
         "Name": "HealthChangedReason",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x268"
+        "Offset": "0x260"
       },
       {
-        "Name": "OnFiringStateChangedDelegate",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x270"
+        "Name": "pad0x7_OF1V1[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x261"
+      },
+      {
+        "Name": "pad0x78_QK814[0x78]",
+        "Type": "char",
+        "Size": "0x78",
+        "Offset": "0x268"
       }
     ]
+  },
+  "FireballCannonActivationLever": {
+    "Super": "InteractableBase",
+    "FullSize": "0x5d0",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x200",
+    "Attributes": [
+      {
+        "Name": "LeverActivatedSfx",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "LeverAwaitingActivationSfx",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "StartLeverRechargingSfx",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "StopLeverRechargingSfx",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "LeverEmitterPool",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "Root",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "Pivot",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "CanActivateDisplayText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x408"
+      },
+      {
+        "Name": "CannotActivateDisplayText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x440"
+      },
+      {
+        "Name": "NotificationStartInputID",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x478"
+      },
+      {
+        "Name": "NotificationReleaseInputID",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x480"
+      },
+      {
+        "Name": "DisplayPriority",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x488"
+      },
+      {
+        "Name": "pad0x3_X6FM6[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x489"
+      },
+      {
+        "Name": "HoldTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x48c"
+      },
+      {
+        "Name": "Curve",
+        "Type": "struct RuntimeFloatCurve",
+        "Size": "0x80",
+        "Offset": "0x490"
+      },
+      {
+        "Name": "LeverStartingTransform",
+        "Type": "struct Transform",
+        "Size": "0x30",
+        "Offset": "0x510"
+      },
+      {
+        "Name": "LeverEndingTransform",
+        "Type": "struct Transform",
+        "Size": "0x30",
+        "Offset": "0x540"
+      },
+      {
+        "Name": "LeverActivationState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x570"
+      },
+      {
+        "Name": "pad0x3_MXP43[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x571"
+      },
+      {
+        "Name": "ReplicatedAnimationTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x574"
+      },
+      {
+        "Name": "pad0x20_YVRW0[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x578"
+      },
+      {
+        "Name": "LeverCooldownRtpcName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x598"
+      },
+      {
+        "Name": "pad0x30_7ZHM2[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x5a0"
+      }
+    ]
+  },
+  "FireballCannonInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

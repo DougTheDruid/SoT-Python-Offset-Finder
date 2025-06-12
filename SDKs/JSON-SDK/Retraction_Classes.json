@@ -1,85 +1,124 @@
 {
+  "RetractorInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RetractableProviderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RetractableInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "RetractableComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x110",
-    "InheritedSize": "0xc8",
+    "FullSize": "0x100",
+    "InheritedSize": "0xb8",
     "ClassSize": "0x48",
     "Attributes": [
+      {
+        "Name": "pad0x38_PXU42[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0xb8"
+      },
       {
         "Name": "FeatureToggle",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x100"
+        "Offset": "0xf0"
       },
       {
         "Name": "OrientationAdjustmentOnRetractFlags",
         "Type": "struct RetractorOrientationAdjustmentFlags",
         "Size": "0x3",
-        "Offset": "0x108"
+        "Offset": "0xf8"
       },
       {
         "Name": "RetractorBoxAxis",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x10b"
+        "Offset": "0xfb"
       },
       {
         "Name": "ShouldAutoReleaseOnSuccessfulRetract",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x10c"
+        "Offset": "0xfc"
       },
       {
         "Name": "MigrateAttachedWithRetractor",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x10d"
+        "Offset": "0xfd"
       },
       {
         "Name": "WasSimulatingPhysicsBeforeRetract",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x10e"
+        "Offset": "0xfe"
+      },
+      {
+        "Name": "pad0x1_LVFSZ[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0xff"
       }
     ]
   },
   "RetractorComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x128",
-    "InheritedSize": "0xc8",
+    "FullSize": "0x118",
+    "InheritedSize": "0xb8",
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "AttachedRetractable",
-        "Type": "interface",
-        "Size": "0x10",
-        "Offset": "0xd0"
+        "Name": "pad0x48_QDDTW[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0xb8"
       },
       {
         "Name": "RetractDestinationComponent",
         "Type": "class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x110"
+        "Offset": "0x100"
       },
       {
         "Name": "RetractingComponent",
         "Type": "class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x118"
+        "Offset": "0x108"
+      },
+      {
+        "Name": "pad0x8_IWTNN[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x110"
       }
     ]
   },
   "RetractableFloatingBarrelComponent": {
     "Super": "RetractableComponent",
-    "FullSize": "0x120",
-    "InheritedSize": "0x110",
+    "FullSize": "0x110",
+    "InheritedSize": "0x100",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "OwnerBuoyancyInterface",
-        "Type": "interface",
+        "Name": "pad0x10_67Q7J[0x10]",
+        "Type": "char",
         "Size": "0x10",
-        "Offset": "0x110"
+        "Offset": "0x100"
       }
     ]
   },

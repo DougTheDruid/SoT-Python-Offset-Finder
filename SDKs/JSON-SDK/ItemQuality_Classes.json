@@ -1,31 +1,56 @@
 {
+  "ItemQualityInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "ItemQualityComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x110",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x48",
+    "FullSize": "0x118",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x60",
     "Attributes": [
+      {
+        "Name": "pad0x8_ZD8IB[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
       {
         "Name": "ItemQualityLevel",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0xd0"
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "pad0x7_ATWRQ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xc1"
       },
       {
         "Name": "CompanySpecificItemQualityLevels",
         "Type": "TArray<struct PerComanyItemQualityEntry>",
         "Size": "0x10",
-        "Offset": "0xd8"
+        "Offset": "0xc8"
       },
       {
         "Name": "CompanySpecificComplexItemQualityLevels",
         "Type": "TArray<struct PerComanyComplexItemQualityEntry>",
         "Size": "0x10",
-        "Offset": "0xe8"
+        "Offset": "0xd8"
       },
       {
         "Name": "CompanySpecificComplexItemQualityLevelsHandin",
         "Type": "TArray<struct PerComanyComplexItemQualityEntry>",
+        "Size": "0x10",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "CompanySpecificComplexItemQualityOverrideList",
+        "Type": "TArray<struct CompanySpecificComplexItemQualityOverrides>",
         "Size": "0x10",
         "Offset": "0xf8"
       },
@@ -34,6 +59,12 @@
         "Type": "class GuildSettings*",
         "Size": "0x8",
         "Offset": "0x108"
+      },
+      {
+        "Name": "pad0x8_3NW2C[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x110"
       }
     ]
   },

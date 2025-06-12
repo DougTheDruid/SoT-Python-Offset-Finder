@@ -6,11 +6,41 @@
 #include "AthenaObjectLinkage_Structs.h"
 
 
-// Size 0xd8 (Full Size[0x1a0] - InheritedSize[0xc8]
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class LinkEndpointIdUtilities: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class LinkEndpointInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class EndPlayHandler: public Object
+{
+public:
+	char                                                         pad0x18_C2G32[0x18];                               // 0x28(0x18)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class LinkerInterface: public Interface
+{
+public:
+};
+
+
+// Size 0xd8 (Full Size[0x190] - InheritedSize[0xb8]
 class LinkerComponent: public ActorComponent
 {
 public:
-	TArray<class EndPlayHandler*>                                EndPlayHandlers;                                   // 0x190(0x10)
+	char                                                         pad0xc8_S4QTM[0xc8];                               // 0xb8(0xc8)
+	TArray<class EndPlayHandler*>                                EndPlayHandlers;                                   // 0x180(0x10)
 };
 
 

@@ -3,94 +3,116 @@
 StatusResponseApplyOneShotStatus:
   Attributes:
   - Name: StatusToApply
-    Offset: '0x30'
-    Size: '0x18'
+    Offset: '0x38'
+    Size: '0x20'
     Type: struct Status
-  ClassSize: '0x18'
-  FullSize: '0x48'
-  InheritedSize: '0x30'
+  ClassSize: '0x20'
+  FullSize: '0x58'
+  InheritedSize: '0x38'
   Super: StatusResponse
 StatusResponseApplyPersistentStatus:
   Attributes:
   - Name: StatusToApply
-    Offset: '0x30'
-    Size: '0x18'
+    Offset: '0x38'
+    Size: '0x20'
     Type: struct Status
   - Name: DurationMultiplier
-    Offset: '0x48'
+    Offset: '0x58'
     Size: '0x4'
     Type: float
-  ClassSize: '0x20'
-  FullSize: '0x50'
-  InheritedSize: '0x30'
+  - Name: pad0x4_O5XSG[0x4]
+    Offset: '0x5c'
+    Size: '0x4'
+    Type: char
+  ClassSize: '0x28'
+  FullSize: '0x60'
+  InheritedSize: '0x38'
   Super: StatusResponse
 StatusResponseCancelStatus:
   Attributes:
   - Name: Status
-    Offset: '0x30'
+    Offset: '0x38'
     Size: '0x10'
     Type: TArray<class Class*>
   ClassSize: '0x10'
-  FullSize: '0x40'
-  InheritedSize: '0x30'
+  FullSize: '0x48'
+  InheritedSize: '0x38'
+  Super: StatusResponse
+StatusResponseCook:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
   Super: StatusResponse
 StatusResponseHealthRegenerationPoolChange:
   Attributes:
   - Name: HealthPoolChangeIntensityMultiplier
-    Offset: '0x30'
+    Offset: '0x38'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_PVGPJ[0x4]
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x8'
-  FullSize: '0x38'
-  InheritedSize: '0x30'
+  FullSize: '0x40'
+  InheritedSize: '0x38'
   Super: StatusResponse
 StatusResponseReportNoiseEvent:
   Attributes:
   - Name: NoiseInstigator
-    Offset: '0x30'
+    Offset: '0x38'
     Size: '0x8'
     Type: class UClass*
   - Name: NoiseTag
-    Offset: '0x38'
+    Offset: '0x40'
     Size: '0x8'
     Type: struct FName
   - Name: NoiseRange
-    Offset: '0x40'
+    Offset: '0x48'
     Size: '0x4'
     Type: float
   - Name: NoiseLoudness
-    Offset: '0x44'
-    Size: '0x4'
-    Type: float
-  - Name: NoiseMultipleTicks
-    Offset: '0x48'
-    Size: '0x1'
-    Type: bool
-  - Name: NoiseTimerTick
     Offset: '0x4c'
     Size: '0x4'
     Type: float
+  - Name: NoiseMultipleTicks
+    Offset: '0x50'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x3_VBY4Q[0x3]
+    Offset: '0x51'
+    Size: '0x3'
+    Type: char
+  - Name: NoiseTimerTick
+    Offset: '0x54'
+    Size: '0x4'
+    Type: float
+  - Name: pad0x20_RYGP9[0x20]
+    Offset: '0x58'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x40'
-  FullSize: '0x70'
-  InheritedSize: '0x30'
+  FullSize: '0x78'
+  InheritedSize: '0x38'
   Super: StatusResponse
 StatusResponseSetScalarParamOnCharacter:
   Attributes:
   - Name: ParamsToChange
-    Offset: '0x30'
+    Offset: '0x38'
     Size: '0x10'
     Type: TArray<struct ScalarParamInfo>
   ClassSize: '0x10'
-  FullSize: '0x40'
-  InheritedSize: '0x30'
+  FullSize: '0x48'
+  InheritedSize: '0x38'
   Super: StatusResponse
 StatusResponseSuspendStatus:
   Attributes:
   - Name: Status
-    Offset: '0x30'
+    Offset: '0x38'
     Size: '0x10'
     Type: TArray<class Class*>
   ClassSize: '0x10'
-  FullSize: '0x40'
-  InheritedSize: '0x30'
+  FullSize: '0x48'
+  InheritedSize: '0x38'
   Super: StatusResponse

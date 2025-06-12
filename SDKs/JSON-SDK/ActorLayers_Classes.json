@@ -1,4 +1,11 @@
 {
+  "ActorLayerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "LayerActorsDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x48",
@@ -21,14 +28,26 @@
   },
   "InstancedLayerComponent": {
     "Super": "SceneComponent",
-    "FullSize": "0x310",
-    "InheritedSize": "0x2e0",
+    "FullSize": "0x300",
+    "InheritedSize": "0x2d0",
     "ClassSize": "0x30",
     "Attributes": [
+      {
+        "Name": "pad0x8_P6WHR[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x2d0"
+      },
       {
         "Name": "InstancedLayers",
         "Type": "TArray<struct InstancedLayer>",
         "Size": "0x10",
+        "Offset": "0x2d8"
+      },
+      {
+        "Name": "pad0x18_UWN7M[0x18]",
+        "Type": "char",
+        "Size": "0x18",
         "Offset": "0x2e8"
       }
     ]

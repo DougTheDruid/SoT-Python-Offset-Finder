@@ -6,11 +6,12 @@
 #include "MerchantContracts_Structs.h"
 
 
-// Size 0x18 (Full Size[0xe0] - InheritedSize[0xc8]
+// Size 0x18 (Full Size[0xd0] - InheritedSize[0xb8]
 class PlayerMerchantContractsComponent: public ActorComponent
 {
 public:
-	TArray<struct PlayerMerchantContract>                        Contracts;                                         // 0xd0(0x10)
+	char                                                         pad0x8_UL9JK[0x8];                                 // 0xb8(0x8)
+	TArray<struct PlayerMerchantContract>                        Contracts;                                         // 0xc0(0x10)
 };
 
 
@@ -18,7 +19,37 @@ public:
 class MerchantContractsService: public Object
 {
 public:
+	char                                                         pad0x8_9Y1QW[0x8];                                 // 0x28(0x8)
 	TArray<struct MerchantContract>                              Contracts;                                         // 0x30(0x10)
+	char                                                         pad0x98_KKIKO[0x98];                               // 0x40(0x98)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class PlayerMerchantContractsInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class MerchantContractsBlueprintLibrary: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DoesWieldedItemSatisfyMerchantContractStatCondition: public StatCondition
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class MerchantContractsServiceInterface: public Interface
+{
+public:
 };
 
 

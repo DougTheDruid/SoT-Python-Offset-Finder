@@ -18,26 +18,10 @@ MediaPlayedTelemetryEvent:
     Offset: '0x20'
     Size: '0x8'
     Type: struct IntPoint
-  - Name: TimestampWhenEnded
+  - Name: pad0x18_3KCFZ[0x18]
     Offset: '0x28'
-    Size: '0x4'
-    Type: uint32
-  - Name: TotalMediaLength
-    Offset: '0x2c'
-    Size: '0x4'
-    Type: uint32
-  - Name: LowestBitrate
-    Offset: '0x30'
-    Size: '0x4'
-    Type: uint32
-  - Name: MedianBitrate
-    Offset: '0x34'
-    Size: '0x4'
-    Type: uint32
-  - Name: HighestBitrate
-    Offset: '0x38'
-    Size: '0x4'
-    Type: uint32
+    Size: '0x18'
+    Type: char
   ClassSize: '0x40'
 VideoPlaybackLoadEvent:
   Attributes:
@@ -74,6 +58,10 @@ VideoPlaybackStateEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_9RVZF[0x7]
+    Offset: '0x11'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x18'
 VideoPlaybackStopEvent:
   Attributes:

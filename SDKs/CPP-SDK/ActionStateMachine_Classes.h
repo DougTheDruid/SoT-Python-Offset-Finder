@@ -6,14 +6,61 @@
 #include "ActionStateMachine_Structs.h"
 
 
-// Size 0x20 (Full Size[0x600] - InheritedSize[0x5e0]
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ActionStateInitialStateCreatorDefinition: public Object
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ActionStateMachineComponentTestFunctions: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
+// Size 0x20 (Full Size[0x5d0] - InheritedSize[0x5b0]
 class CharacterWithActionStateMachine: public Character
 {
 public:
-	class ActionStateMachineComponent*                           ActionStateMachineComponent;                       // 0x5e0(0x8)
-	class ActionStatePriorityTableData*                          ActionStatePriorityTableData;                      // 0x5e8(0x8)
-	class UClass*                                                ActionStateCreatorDefinition;                      // 0x5f0(0x8)
-	class UClass*                                                ActionStateInitialStateCreatorDefinition;          // 0x5f8(0x8)
+	class ActionStateMachineComponent*                           ActionStateMachineComponent;                       // 0x5b0(0x8)
+	class ActionStatePriorityTableData*                          ActionStatePriorityTableData;                      // 0x5b8(0x8)
+	class UClass*                                                ActionStateCreatorDefinition;                      // 0x5c0(0x8)
+	class UClass*                                                ActionStateInitialStateCreatorDefinition;          // 0x5c8(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ActionStateId: public Object
+{
+public:
+};
+
+
+// Size 0x7e0 (Full Size[0x898] - InheritedSize[0xb8]
+class ActionStateMachineComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x7c8_VEDQD[0x7c8];                             // 0xb8(0x7c8)
+	bool                                                         OnScreenLoggingEnabled;                            // 0x880(0x1)
+	char                                                         pad0x17_IYRWJ[0x17];                               // 0x881(0x17)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ActionStateMachineInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class CustomClientValidityCheckCallback: public Object
+{
+public:
+	bool                                                         ShouldPassClientValidation;                        // 0x28(0x1)
+	char                                                         pad0x7_XAURC[0x7];                                 // 0x29(0x7)
 };
 
 
@@ -26,29 +73,93 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class CustomClientValidityCheckCallback: public Object
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class SerialisedActionStateConstructionInfoTestFunctions: public BlueprintFunctionLibrary
 {
 public:
-	bool                                                         ShouldPassClientValidation;                        // 0x28(0x1)
 };
 
 
-// Size 0x7a0 (Full Size[0x868] - InheritedSize[0xc8]
-class ActionStateMachineComponent: public ActorComponent
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ActionStatePriorityTableUtility: public BlueprintFunctionLibrary
 {
 public:
-	multicastinlinedelegate                                      OnActionChangedOnTrack;                            // 0xe0(0x10)
 };
 
 
-// Size 0x48 (Full Size[0x8b0] - InheritedSize[0x868]
+// Size 0x0 (Full Size[0x3a0] - InheritedSize[0x3a0]
+class ActionStateCreatorDefinition: public Actor
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TestActionStateId3: public ActionStateId
+{
+public:
+};
+
+
+// Size 0x18 (Full Size[0x3b8] - InheritedSize[0x3a0]
+class TestActionStateCreatorDefinition: public ActionStateCreatorDefinition
+{
+public:
+	char                                                         pad0x18_PAV94[0x18];                               // 0x3a0(0x18)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TestActionStateId2: public ActionStateId
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class NullActionStateId: public ActionStateId
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CustomClientValidityActionState2Id: public ActionStateId
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TestActionStateId: public ActionStateId
+{
+public:
+};
+
+
+// Size 0x48 (Full Size[0x8e0] - InheritedSize[0x898]
 class SelfInitialisingActionStateMachineComponent: public ActionStateMachineComponent
 {
 public:
-	class ActionStatePriorityTableData*                          ActionStatePriorityTableData;                      // 0x870(0x8)
-	class UClass*                                                ActionStateCreatorDefinition;                      // 0x878(0x8)
-	class UClass*                                                ActionStateInitialStateCreatorDefinition;          // 0x880(0x8)
+	char                                                         pad0x8_ISU81[0x8];                                 // 0x898(0x8)
+	class ActionStatePriorityTableData*                          ActionStatePriorityTableData;                      // 0x8a0(0x8)
+	class UClass*                                                ActionStateCreatorDefinition;                      // 0x8a8(0x8)
+	class UClass*                                                ActionStateInitialStateCreatorDefinition;          // 0x8b0(0x8)
+	char                                                         pad0x28_8BTP7[0x28];                               // 0x8b8(0x28)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CustomClientValidityActionStateId: public ActionStateId
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TestDerivedActionStateId: public TestActionStateId
+{
+public:
 };
 
 

@@ -1,10 +1,37 @@
 {
+  "VoiceChatRendererRetreivalInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "VoiceChatRendererInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "VoiceChatEmitterInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "VoiceChatRenderer": {
     "Super": "Object",
     "FullSize": "0x1c0",
     "InheritedSize": "0x28",
     "ClassSize": "0x198",
     "Attributes": [
+      {
+        "Name": "pad0x10_IOHHD[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
       {
         "Name": "AttenuatedVoiceEvent",
         "Type": "class WwiseEvent*",
@@ -42,6 +69,12 @@
         "Offset": "0x58"
       },
       {
+        "Name": "pad0x4_CISIZ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x5c"
+      },
+      {
         "Name": "UnattenuatedWwiseBusName",
         "Type": "struct FString",
         "Size": "0x10",
@@ -52,6 +85,12 @@
         "Type": "class RareAudioHardwareDeviceService*",
         "Size": "0x8",
         "Offset": "0x70"
+      },
+      {
+        "Name": "pad0x148_DAUCM[0x148]",
+        "Type": "char",
+        "Size": "0x148",
+        "Offset": "0x78"
       }
     ]
   },

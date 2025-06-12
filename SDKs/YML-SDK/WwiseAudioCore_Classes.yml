@@ -2,6 +2,10 @@
 # https://github.com/DougTheDruid
 WwiseAudioSettings:
   Attributes:
+  - Name: pad0xc0_WWJEH[0xc0]
+    Offset: '0x28'
+    Size: '0xc0'
+    Type: char
   - Name: PlatformMappings
     Offset: '0xe8'
     Size: '0x20'
@@ -10,6 +14,10 @@ WwiseAudioSettings:
     Offset: '0x108'
     Size: '0x64'
     Type: struct WwiseAudioReverbPresets
+  - Name: pad0x4_S2WBI[0x4]
+    Offset: '0x16c'
+    Size: '0x4'
+    Type: char
   - Name: WwiseCoreAssetsPath
     Offset: '0x170'
     Size: '0x10'
@@ -42,15 +50,21 @@ WwiseAudioSettings:
     Offset: '0x1e0'
     Size: '0x18'
     Type: struct WwiseNetworkRelationship
-  - Name: WaapiInterpreterPort
-    Offset: '0x1f8'
-    Size: '0x4'
-    Type: uint32
   - Name: WwiseCoreAssets
     Offset: '0x200'
     Size: '0x8'
     Type: class WwiseCoreAssets*
+  - Name: pad0x58_WQU4S[0x58]
+    Offset: '0x208'
+    Size: '0x58'
+    Type: char
   ClassSize: '0x238'
   FullSize: '0x260'
   InheritedSize: '0x28'
   Super: Object
+WwiseSubSystemInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

@@ -3,60 +3,92 @@
 ShantyPuzzleCompletionComponent:
   Attributes:
   - Name: CompletionTime
-    Offset: '0xc8'
+    Offset: '0xb8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_7UG74[0x4]
+    Offset: '0xbc'
+    Size: '0x4'
+    Type: char
   - Name: StartCompletionReaction
-    Offset: '0xd0'
+    Offset: '0xc0'
     Size: '0x10'
     Type: TArray<struct LandmarkReactionKeyFrame>
   - Name: AbortCompletionReaction
-    Offset: '0xe0'
+    Offset: '0xd0'
     Size: '0x10'
     Type: TArray<struct LandmarkReactionKeyFrame>
   - Name: PuzzleCompletedReaction
-    Offset: '0xf0'
+    Offset: '0xe0'
     Size: '0x10'
     Type: TArray<struct LandmarkReactionKeyFrame>
   - Name: ReactionPlayer
-    Offset: '0x100'
+    Offset: '0xf0'
     Size: '0x8'
     Type: class LandmarkReactionPlayer*
   ClassSize: '0x40'
-  FullSize: '0x108'
-  InheritedSize: '0xc8'
+  FullSize: '0xf8'
+  InheritedSize: '0xb8'
   Super: ActorComponent
 ShantyPuzzleComponent:
   Attributes:
+  - Name: pad0x8_KAMOF[0x8]
+    Offset: '0x2d0'
+    Size: '0x8'
+    Type: char
   - Name: RequiredShantyItemDesc
-    Offset: '0x2e8'
+    Offset: '0x2d8'
     Size: '0x8'
     Type: class UClass*
   - Name: ShantyPuzzleInteractionZoneDefinitions
-    Offset: '0x2f0'
+    Offset: '0x2e0'
     Size: '0x10'
     Type: TArray<struct ShantyPuzzleInteractionZoneDefinition>
   - Name: TimeLimited
-    Offset: '0x300'
+    Offset: '0x2f0'
     Size: '0x1'
     Type: bool
   - Name: ShouldMoveEnsembleToActorPosition
-    Offset: '0x301'
+    Offset: '0x2f1'
     Size: '0x1'
     Type: bool
+  - Name: pad0x6_D0US4[0x6]
+    Offset: '0x2f2'
+    Size: '0x6'
+    Type: char
   - Name: ActiveTimeRange
-    Offset: '0x308'
+    Offset: '0x2f8'
     Size: '0x10'
     Type: struct GameTimeRange
   - Name: ShantyPuzzleInteractionZones
-    Offset: '0x318'
+    Offset: '0x308'
     Size: '0x10'
     Type: TArray<class ShantyPuzzleInteractionZoneComponent*>
   - Name: CurrentlyPlayingShantyPuzzleEnsemble
-    Offset: '0x328'
+    Offset: '0x318'
     Size: '0x8'
     Type: class Ensemble*
+  - Name: pad0xc0_LLJRW[0xc0]
+    Offset: '0x320'
+    Size: '0xc0'
+    Type: char
   ClassSize: '0x110'
-  FullSize: '0x3f0'
-  InheritedSize: '0x2e0'
+  FullSize: '0x3e0'
+  InheritedSize: '0x2d0'
   Super: SceneComponent
+ShantyPuzzleInteractionZoneComponent:
+  Attributes:
+  - Name: pad0x20_EA1X2[0x20]
+    Offset: '0x5e0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
+  FullSize: '0x600'
+  InheritedSize: '0x5e0'
+  Super: SphereComponent
+ShantyPuzzleInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

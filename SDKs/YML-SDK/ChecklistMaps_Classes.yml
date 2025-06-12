@@ -10,6 +10,10 @@ ChecklistActionData:
     Offset: '0x2c'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_0K2L0[0x3]
+    Offset: '0x2d'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x30'
   InheritedSize: '0x28'
@@ -27,46 +31,64 @@ ChecklistItemsDataAsset:
 ChecklistMap:
   Attributes:
   - Name: CanvasWidth
-    Offset: '0x838'
+    Offset: '0x858'
     Size: '0x4'
     Type: int
   - Name: CanvasHeight
-    Offset: '0x83c'
+    Offset: '0x85c'
     Size: '0x4'
     Type: int
   - Name: Font
-    Offset: '0x840'
+    Offset: '0x860'
     Size: '0x8'
     Type: class Font*
   - Name: FontScale
-    Offset: '0x848'
+    Offset: '0x868'
     Size: '0x4'
     Type: float
   - Name: FontLineSpacingScale
-    Offset: '0x84c'
+    Offset: '0x86c'
     Size: '0x4'
     Type: float
+  - Name: pad0x8_CSJT0[0x8]
+    Offset: '0x870'
+    Size: '0x8'
+    Type: char
   - Name: ChecklistMapLayout
-    Offset: '0x858'
+    Offset: '0x878'
     Size: '0x8'
     Type: class ChecklistMapLayout*
   - Name: Contents
-    Offset: '0x860'
+    Offset: '0x880'
     Size: '0xe8'
     Type: struct ChecklistMapContents
+  - Name: pad0x48_D2KB8[0x48]
+    Offset: '0x968'
+    Size: '0x48'
+    Type: char
   ClassSize: '0x150'
-  FullSize: '0x990'
-  InheritedSize: '0x840'
+  FullSize: '0x9b0'
+  InheritedSize: '0x860'
   Super: TreasureMap
+ChecklistMapCollectionInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 ChecklistMapCompletionComponent:
   Attributes:
   - Name: ActionData
-    Offset: '0xc8'
+    Offset: '0xb8'
     Size: '0x8'
     Type: class ChecklistActionData*
+  - Name: pad0x80_6RXCW[0x80]
+    Offset: '0xc0'
+    Size: '0x80'
+    Type: char
   ClassSize: '0x88'
-  FullSize: '0x150'
-  InheritedSize: '0xc8'
+  FullSize: '0x140'
+  InheritedSize: '0xb8'
   Super: ActorComponent
 ChecklistMapSettings:
   Attributes:

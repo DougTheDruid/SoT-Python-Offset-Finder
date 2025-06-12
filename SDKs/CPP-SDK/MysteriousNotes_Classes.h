@@ -6,27 +6,81 @@
 #include "MysteriousNotes_Structs.h"
 
 
+// Size 0x30 (Full Size[0x2c0] - InheritedSize[0x290]
+class LookingAtMysteriousNoteInputComponent: public LookingAtWieldableInputComponent
+{
+public:
+	char                                                         pad0x30_GLLUW[0x30];                               // 0x290(0x30)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class PlayerMysteriousNoteInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x98 (Full Size[0x438] - InheritedSize[0x3a0]
+class MysteriousNotesService: public Actor
+{
+public:
+	char                                                         pad0x28_KQKW8[0x28];                               // 0x3a0(0x28)
+	class MysteriousNoteSettings*                                CachedNoteSettings;                                // 0x3c8(0x8)
+	class WieldableMysteriousNoteDataAsset*                      WieldableNoteDataAsset;                            // 0x3d0(0x8)
+	class MysteriousNotesCompletionEventsModelDataAsset*         CompletionEventsModelData;                         // 0x3d8(0x8)
+	char                                                         pad0x58_Q637G[0x58];                               // 0x3e0(0x58)
+};
+
+
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
+class MysteriousNoteSettings: public Object
+{
+public:
+	int                                                          LookAheadInMinutes;                                // 0x28(0x4)
+	float                                                        RequestTimeout;                                    // 0x2c(0x4)
+	struct StringAssetReference                                  MysteriousNotesCompletionStringsAsset;             // 0x30(0x10)
+	struct StringAssetReference                                  WieldableNoteDataAsset;                            // 0x40(0x10)
+	struct StringAssetReference                                  Image;                                             // 0x50(0x10)
+	struct StringAssetReference                                  NotificationBackground;                            // 0x60(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class HasPlayerMysteriousNotesRadialContext: public RadialContextBase
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x120] - InheritedSize[0x120]
+class MysteriousNoteDesc: public ItemDesc
+{
+public:
+};
+
+
 // Size 0x1a0 (Full Size[0x990] - InheritedSize[0x7f0]
 class WieldableMysteriousNote: public SkeletalMeshWieldableItem
 {
 public:
+	char                                                         pad0x10_2LG8G[0x10];                               // 0x7f0(0x10)
 	class MaybeCompressedCanvasRenderTarget2D*                   RenderTarget;                                      // 0x800(0x8)
 	int                                                          CanvasWidth;                                       // 0x808(0x4)
 	int                                                          CanvasHeight;                                      // 0x80c(0x4)
 	float                                                        FontScale;                                         // 0x810(0x4)
+	char                                                         pad0x5c_WWOOG[0x5c];                               // 0x814(0x5c)
 	class WieldableMysteriousNoteLayout*                         NoteLayout;                                        // 0x870(0x8)
 	class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x878(0x8)
 	class InventoryItemComponent*                                InventoryItemComponent;                            // 0x880(0x8)
+	char                                                         pad0x108_0231N[0x108];                             // 0x888(0x108)
 };
 
 
-// Size 0x1a0 (Full Size[0x268] - InheritedSize[0xc8]
-class PlayerMysteriousNoteComponent: public ActorComponent
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class MysteriousNotesServiceInterface: public Interface
 {
 public:
-	bool                                                         CinematicPlayed;                                   // 0xd0(0x1)
-	struct ClientNoteData                                        NoteData;                                          // 0x1c0(0x18)
-	bool                                                         BeenPossessed;                                     // 0x1d8(0x1)
 };
 
 
@@ -36,6 +90,19 @@ class WieldableMysteriousNoteDataAsset: public DataAsset
 public:
 	class UClass*                                                WieldableNoteDesc;                                 // 0x28(0x8)
 	class WieldableMysteriousNoteLayout*                         NoteLayout;                                        // 0x30(0x8)
+};
+
+
+// Size 0x1b8 (Full Size[0x270] - InheritedSize[0xb8]
+class PlayerMysteriousNoteComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_P4P9S[0x8];                                 // 0xb8(0x8)
+	bool                                                         CinematicPlayed;                                   // 0xc0(0x1)
+	char                                                         pad0xef_1NENW[0xef];                               // 0xc1(0xef)
+	struct ClientNoteData                                        NoteData;                                          // 0x1b0(0x18)
+	bool                                                         BeenPossessed;                                     // 0x1c8(0x1)
+	char                                                         pad0xa7_4VU08[0xa7];                               // 0x1c9(0xa7)
 };
 
 
@@ -55,29 +122,6 @@ class MysteriousNotesCompletionEventsModelDataAsset: public DataAsset
 {
 public:
 	TArray<struct MysteriousNotesCompletionEventsModel>          MysteriousNoteCompletionEvents;                    // 0x28(0x10)
-};
-
-
-// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
-class MysteriousNoteSettings: public Object
-{
-public:
-	int                                                          LookAheadInMinutes;                                // 0x28(0x4)
-	float                                                        RequestTimeout;                                    // 0x2c(0x4)
-	struct StringAssetReference                                  MysteriousNotesCompletionStringsAsset;             // 0x30(0x10)
-	struct StringAssetReference                                  WieldableNoteDataAsset;                            // 0x40(0x10)
-	struct StringAssetReference                                  Image;                                             // 0x50(0x10)
-	struct StringAssetReference                                  NotificationBackground;                            // 0x60(0x10)
-};
-
-
-// Size 0x98 (Full Size[0x460] - InheritedSize[0x3c8]
-class MysteriousNotesService: public Actor
-{
-public:
-	class MysteriousNoteSettings*                                CachedNoteSettings;                                // 0x3f0(0x8)
-	class WieldableMysteriousNoteDataAsset*                      WieldableNoteDataAsset;                            // 0x3f8(0x8)
-	class MysteriousNotesCompletionEventsModelDataAsset*         CompletionEventsModelData;                         // 0x400(0x8)
 };
 
 

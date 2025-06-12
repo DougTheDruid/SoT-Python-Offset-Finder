@@ -1,0 +1,232 @@
+{
+  "OverheatingComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x1a8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0xf0",
+    "Attributes": [
+      {
+        "Name": "pad0x30_LNMHY[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "VisualiserStaticMeshComponent",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "ExplosionVfxEmitter",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "HeatBuildingVfxEmitter",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0xf8"
+      },
+      {
+        "Name": "CooldownInstigator",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "OverheatingDataAsset",
+        "Type": "class OverheatingDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x108"
+      },
+      {
+        "Name": "ReplicatedData",
+        "Type": "struct OverheatingReplicatedData",
+        "Size": "0x8",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "OverheatingMaterialIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x118"
+      },
+      {
+        "Name": "IsWieldableOrProxy",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x11c"
+      },
+      {
+        "Name": "pad0x8b_XY2MW[0x8b]",
+        "Type": "char",
+        "Size": "0x8b",
+        "Offset": "0x11d"
+      }
+    ]
+  },
+  "OverheatingDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0xc0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Name": "InitialDelayForCooldown",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "NormalDelayForCooldown",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "SubmergedInWaterDelayForCooldown",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "OverheatingToAddPerBoildingWaterSplash",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "OverheatingToAddPerWeaponFired",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "OverheatingToAddPerFireDamage",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "OverheatingToRemovePerCooldownDelay",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "OverheatingToRemovePerWaterSplash",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "OverheatingToRemoveWhenExposedToRain",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "OverheatingToRemoveWhenSubmergedInWater",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      },
+      {
+        "Name": "HeatBuildingDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "SteamingDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x54"
+      },
+      {
+        "Name": "ExplosionDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "VfxEmitterLocation",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x5c"
+      },
+      {
+        "Name": "pad0x4_NIHZ1[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x64"
+      },
+      {
+        "Name": "HeatBuildingVfx",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "ExplosionVfx",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "DamageTable",
+        "Type": "TArray<struct OverheatingDamageTableEntry>",
+        "Size": "0x10",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "ExplosionSfx",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "PlayHeatingLoopSfx",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "StopHeatingLoopSfx",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "SteamingSfx",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "ExtinguishSfx",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0xa8"
+      },
+      {
+        "Name": "PoolWrapper",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "OverheatingRtpcName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by dougthedruid on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}

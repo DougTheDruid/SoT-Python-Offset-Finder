@@ -11,24 +11,23 @@ ClientSettings:
     Size: '0x1'
     Type: bool
   ClassSize: '0x2'
+ServerMigrationCustomMigrationSerialisationStruct:
+  Attributes:
+  - Name: pad0x4_Z8O35[0x4]
+    Offset: '0x0'
+    Size: '0x4'
+    Type: char
+  ClassSize: '0x4'
 ServerMigrationSerialisationDetailsTestsUStruct:
   Attributes:
   - Name: FloatWithNoMarkup
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: UInt16WithMigrationMarkup
+  - Name: pad0x8_SR7NK[0x8]
     Offset: '0x4'
-    Size: '0x2'
-    Type: uint16
-  - Name: UInt16WithNotReplicatedMarkup
-    Offset: '0x6'
-    Size: '0x2'
-    Type: uint16
-  - Name: UInt16WithMigrationAndNotReplicatedMarkup
-    Offset: '0x8'
-    Size: '0x2'
-    Type: uint16
+    Size: '0x8'
+    Type: char
   ClassSize: '0xc'
 ServerSettings:
   Attributes:
@@ -44,6 +43,10 @@ ServerSettings:
     Offset: '0x2'
     Size: '0x1'
     Type: bool
+  - Name: pad0x1_F8ICR[0x1]
+    Offset: '0x3'
+    Size: '0x1'
+    Type: char
   - Name: RefuseIncomingClientConnections
     Offset: '0x4'
     Size: '0x4'

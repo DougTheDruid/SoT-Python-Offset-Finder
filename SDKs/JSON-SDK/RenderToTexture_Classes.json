@@ -1,4 +1,11 @@
 {
+  "RenderToTextureFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "RenderToTextureSceneDetails": {
     "Super": "Object",
     "FullSize": "0xa8",
@@ -24,22 +31,16 @@
         "Offset": "0x38"
       },
       {
-        "Name": "ParentWorld",
-        "Type": "class World*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "SpawnedActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x48"
-      },
-      {
         "Name": "RenderTarget",
         "Type": "class TextureRenderTarget2D*",
         "Size": "0x8",
         "Offset": "0x50"
+      },
+      {
+        "Name": "pad0x50_I7D8O[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x58"
       }
     ]
   },

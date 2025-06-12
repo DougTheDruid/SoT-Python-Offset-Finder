@@ -1,83 +1,95 @@
 {
   "AsymmetricClientObject": {
     "Super": "Actor",
-    "FullSize": "0x418",
-    "InheritedSize": "0x3c8",
+    "FullSize": "0x3f0",
+    "InheritedSize": "0x3a0",
     "ClassSize": "0x50",
     "Attributes": [
+      {
+        "Name": "pad0x18_BDCS9[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x3a0"
+      },
       {
         "Name": "BaseComponent",
         "Type": "class BoxComponent*",
         "Size": "0x8",
-        "Offset": "0x3e0"
+        "Offset": "0x3b8"
       },
       {
         "Name": "ThirdPersonMesh",
         "Type": "class StaticMeshMemoryConstraintComponent*",
         "Size": "0x8",
-        "Offset": "0x3e8"
+        "Offset": "0x3c0"
       },
       {
         "Name": "WaterInteractionComponent",
         "Type": "class WaterInteractionComponent*",
         "Size": "0x8",
-        "Offset": "0x3f0"
+        "Offset": "0x3c8"
       },
       {
         "Name": "BuoyancyComponent",
         "Type": "class BuoyancyComponent*",
         "Size": "0x8",
-        "Offset": "0x3f8"
+        "Offset": "0x3d0"
       },
       {
         "Name": "SpawnDependentTrackedOwnerComponent",
         "Type": "class SpawnDependentTrackedOwnerComponent*",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x3d8"
       },
       {
         "Name": "RotationWhenPlacingWorldProxy",
         "Type": "struct Rotator",
         "Size": "0xc",
-        "Offset": "0x408"
+        "Offset": "0x3e0"
       },
       {
         "Name": "ZOffsetWhenPlacingWorldProxy",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x414"
+        "Offset": "0x3ec"
       }
     ]
   },
   "AsymmetricObjectServerManager": {
     "Super": "Actor",
-    "FullSize": "0x420",
-    "InheritedSize": "0x3c8",
+    "FullSize": "0x3f8",
+    "InheritedSize": "0x3a0",
     "ClassSize": "0x58",
     "Attributes": [
+      {
+        "Name": "pad0x18_CBX4K[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x3a0"
+      },
       {
         "Name": "SpawnedObject",
         "Type": "class AsymmetricClientObject*",
         "Size": "0x8",
-        "Offset": "0x3e0"
+        "Offset": "0x3b8"
       },
       {
         "Name": "SceneComponent",
         "Type": "class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x3e8"
+        "Offset": "0x3c0"
       },
       {
         "Name": "AsymmetricObjectAsset",
         "Type": "struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0x3f0"
+        "Offset": "0x3c8"
       },
       {
-        "Name": "ForcedAsymmetricObjectAsset",
-        "Type": "assetclass",
+        "Name": "pad0x20_M65L0[0x20]",
+        "Type": "char",
         "Size": "0x20",
-        "Offset": "0x400"
+        "Offset": "0x3d8"
       }
     ]
   },

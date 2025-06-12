@@ -3,35 +3,51 @@
 BarrelsOfPlentyDebugSpawnLocation:
   Attributes:
   - Name: Objects
-    Offset: '0x3c8'
+    Offset: '0x3a0'
     Size: '0x10'
     Type: TArray<struct BarrelsOfPlentyDebugLocationEntry>
   - Name: SpawnCentre
-    Offset: '0x3d8'
+    Offset: '0x3b0'
     Size: '0xc'
     Type: struct Vector
   - Name: Radius
-    Offset: '0x3e4'
+    Offset: '0x3bc'
     Size: '0x4'
     Type: float
   ClassSize: '0x20'
-  FullSize: '0x3e8'
-  InheritedSize: '0x3c8'
+  FullSize: '0x3c0'
+  InheritedSize: '0x3a0'
   Super: Actor
+BarrelsOfPlentySpawnManagerProviderInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 BarrelsOfPlentySpawnProxy:
   Attributes:
   - Name: Ship
-    Offset: '0x3c8'
+    Offset: '0x3a0'
     Size: '0x8'
     Type: class Actor*
+  - Name: pad0x18_CTLGR[0x18]
+    Offset: '0x3a8'
+    Size: '0x18'
+    Type: char
   - Name: SceneComponent
-    Offset: '0x3e8'
+    Offset: '0x3c0'
     Size: '0x8'
     Type: class SceneComponent*
   ClassSize: '0x28'
-  FullSize: '0x3f0'
-  InheritedSize: '0x3c8'
+  FullSize: '0x3c8'
+  InheritedSize: '0x3a0'
   Super: Actor
+SpawnBarrelsOfPlentyStep:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x98'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
 SpawnBarrelsOfPlentyStepDesc:
   Attributes:
   - Name: LocatorVar

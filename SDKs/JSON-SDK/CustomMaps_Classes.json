@@ -1,49 +1,39 @@
 {
-  "CustomMapSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x40",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "CustomMapItemDescClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      }
-    ]
-  },
   "CustomMap": {
     "Super": "RenderToTextureMapBase",
-    "FullSize": "0x8d0",
-    "InheritedSize": "0x8a0",
-    "ClassSize": "0x30",
+    "FullSize": "0x900",
+    "InheritedSize": "0x8c0",
+    "ClassSize": "0x40",
     "Attributes": [
+      {
+        "Name": "pad0x8_J6ATN[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x8c0"
+      },
       {
         "Name": "Font",
         "Type": "class Font*",
         "Size": "0x8",
-        "Offset": "0x8a8"
+        "Offset": "0x8c8"
       },
       {
         "Name": "DisplayItems",
         "Type": "TArray<class CustomMapDisplayObjectBase*>",
         "Size": "0x10",
-        "Offset": "0x8b0"
-      }
-    ]
-  },
-  "CustomMapDataTypeBase": {
-    "Super": "Object",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
+        "Offset": "0x8d0"
+      },
       {
-        "Name": "Guid",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x28"
+        "Name": "LineSpacing",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8e0"
+      },
+      {
+        "Name": "pad0x1c_0H772[0x1c]",
+        "Type": "char",
+        "Size": "0x1c",
+        "Offset": "0x8e4"
       }
     ]
   },
@@ -75,119 +65,392 @@
   },
   "CustomMapDisplayObjectBase": {
     "Super": "Object",
-    "FullSize": "0x38",
+    "FullSize": "0x40",
     "InheritedSize": "0x28",
-    "ClassSize": "0x10",
+    "ClassSize": "0x18",
     "Attributes": [
+      {
+        "Name": "Visible",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x3_HQI66[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x29"
+      },
       {
         "Name": "Guid",
         "Type": "struct Guid",
         "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "pad0x4_0GS25[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
       }
     ]
   },
-  "CustomMapDataTypePositional": {
-    "Super": "CustomMapDataTypeBase",
-    "FullSize": "0x48",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x10",
+  "CustomMapCollectionInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CustomMapDataTypeBase": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "Position",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x38"
+        "Name": "Visible",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x28"
       },
       {
-        "Name": "Orientation",
-        "Type": "float",
+        "Name": "pad0x3_0RWNN[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x29"
+      },
+      {
+        "Name": "Guid",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "pad0x4_U03PK[0x4]",
+        "Type": "char",
         "Size": "0x4",
-        "Offset": "0x40"
+        "Offset": "0x3c"
+      }
+    ]
+  },
+  "CustomMapSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x40",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "CustomMapItemDescClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
       }
     ]
   },
   "CustomMapDisplayObjectPositional": {
     "Super": "CustomMapDisplayObjectBase",
-    "FullSize": "0x48",
-    "InheritedSize": "0x38",
+    "FullSize": "0x50",
+    "InheritedSize": "0x40",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "Position",
         "Type": "struct Vector2D",
         "Size": "0x8",
-        "Offset": "0x38"
+        "Offset": "0x40"
       },
       {
         "Name": "Orientation",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "CustomMapDisplayObjectText": {
-    "Super": "CustomMapDisplayObjectPositional",
-    "FullSize": "0xd8",
-    "InheritedSize": "0x48",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "Text",
-        "Type": "struct FText",
-        "Size": "0x38",
         "Offset": "0x48"
       },
       {
-        "Name": "FontScale",
-        "Type": "float",
+        "Name": "pad0x4_2DX57[0x4]",
+        "Type": "char",
         "Size": "0x4",
-        "Offset": "0x80"
+        "Offset": "0x4c"
+      }
+    ]
+  },
+  "CustomMapDataTypePositional": {
+    "Super": "CustomMapDataTypeBase",
+    "FullSize": "0x50",
+    "InheritedSize": "0x40",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Position",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x40"
       },
       {
-        "Name": "StrikeThrough",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x84"
-      },
-      {
-        "Name": "StrikethroughThickness",
+        "Name": "Orientation",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x88"
+        "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x4_OFYM1[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4c"
       }
     ]
   },
   "CustomMapDataTypeText": {
     "Super": "CustomMapDataTypePositional",
-    "FullSize": "0x90",
-    "InheritedSize": "0x48",
-    "ClassSize": "0x48",
+    "FullSize": "0xa8",
+    "InheritedSize": "0x50",
+    "ClassSize": "0x58",
     "Attributes": [
       {
         "Name": "Text",
         "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x48"
+        "Offset": "0x50"
+      },
+      {
+        "Name": "MaxTextWidth",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x88"
       },
       {
         "Name": "FontScale",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x80"
+        "Offset": "0x8c"
       },
       {
         "Name": "StrikeThrough",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x84"
+        "Offset": "0x90"
+      },
+      {
+        "Name": "pad0x3_HU6LX[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x91"
       },
       {
         "Name": "StrikethroughThickness",
         "Type": "float",
         "Size": "0x4",
+        "Offset": "0x94"
+      },
+      {
+        "Name": "TextColour",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "CustomMapDisplayObjectText": {
+    "Super": "CustomMapDisplayObjectPositional",
+    "FullSize": "0x108",
+    "InheritedSize": "0x50",
+    "ClassSize": "0xb8",
+    "Attributes": [
+      {
+        "Name": "Text",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "MaxTextWidth",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x88"
+      },
+      {
+        "Name": "FontScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8c"
+      },
+      {
+        "Name": "StrikeThrough",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "pad0x3_CF6ZV[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x91"
+      },
+      {
+        "Name": "StrikethroughThickness",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x94"
+      },
+      {
+        "Name": "TextColour",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "TextArguments",
+        "Type": "TArray<struct TreasureMapTextEntry>",
+        "Size": "0x10",
+        "Offset": "0xa8"
+      },
+      {
+        "Name": "pad0x50_3G9OX[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0xb8"
+      }
+    ]
+  },
+  "CustomMapDisplayObjectImage": {
+    "Super": "CustomMapDisplayObjectPositional",
+    "FullSize": "0xd0",
+    "InheritedSize": "0x50",
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Name": "WeakImage",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "Width",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "Height",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x64"
+      },
+      {
+        "Name": "FlipX",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "ScaleHeightOnMultipleLines",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x69"
+      },
+      {
+        "Name": "pad0x2_Q6R7O[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x6a"
+      },
+      {
+        "Name": "ImageColour",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x6c"
+      },
+      {
+        "Name": "ImageBlendMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x7c"
+      },
+      {
+        "Name": "pad0x3_YNN9I[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x7d"
+      },
+      {
+        "Name": "TreasureMapWidgetTexture",
+        "Type": "struct TreasureMapWidgetTexture",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "CurrentlySetImage",
+        "Type": "class Texture*",
+        "Size": "0x8",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "pad0x18_JTNDE[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0xb8"
+      }
+    ]
+  },
+  "CustomMapDataTypeImage": {
+    "Super": "CustomMapDataTypePositional",
+    "FullSize": "0x90",
+    "InheritedSize": "0x50",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "pad0x20_F0VPG[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "Width",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "Height",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x74"
+      },
+      {
+        "Name": "FlipX",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "ScaleHeightOnMultipleLines",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x79"
+      },
+      {
+        "Name": "pad0x2_3X6K3[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x7a"
+      },
+      {
+        "Name": "ImageColour",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x7c"
+      },
+      {
+        "Name": "ImageBlendMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8c"
+      },
+      {
+        "Name": "pad0x3_5HQVY[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x8d"
       }
     ]
   },

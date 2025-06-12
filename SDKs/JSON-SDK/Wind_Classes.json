@@ -1,21 +1,124 @@
 {
+  "WindServiceParamsFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WindZoneInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "WindZoneComponent": {
     "Super": "SceneComponent",
-    "FullSize": "0x370",
-    "InheritedSize": "0x2e0",
+    "FullSize": "0x360",
+    "InheritedSize": "0x2d0",
     "ClassSize": "0x90",
     "Attributes": [
+      {
+        "Name": "pad0x8_321KP[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x2d0"
+      },
       {
         "Name": "TurbulenceParams",
         "Type": "struct WindTurbulenceParameters",
         "Size": "0x70",
-        "Offset": "0x2e8"
+        "Offset": "0x2d8"
       },
       {
         "Name": "WindZoneParams",
         "Type": "struct WindZoneParams",
         "Size": "0x10",
+        "Offset": "0x348"
+      },
+      {
+        "Name": "pad0x8_D2WQ0[0x8]",
+        "Type": "char",
+        "Size": "0x8",
         "Offset": "0x358"
+      }
+    ]
+  },
+  "WindFunctions": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WindInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DebugWindInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WindService": {
+    "Super": "Actor",
+    "FullSize": "0x4d8",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x138",
+    "Attributes": [
+      {
+        "Name": "pad0x10_ND2LI[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "GlobalWindSource",
+        "Type": "class WindDirectionalSource*",
+        "Size": "0x8",
+        "Offset": "0x3b0"
+      },
+      {
+        "Name": "pad0x10_NPNL9[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x3b8"
+      },
+      {
+        "Name": "CurrentWindAngle",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "CurrentWindMagnitude",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3cc"
+      },
+      {
+        "Name": "pad0xe8_N3ANR[0xe8]",
+        "Type": "char",
+        "Size": "0xe8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "WindZones",
+        "Type": "TArray<class Interface*>",
+        "Size": "0x10",
+        "Offset": "0x4b8"
+      },
+      {
+        "Name": "ExtraWind",
+        "Type": "TArray<struct ExtraWind>",
+        "Size": "0x10",
+        "Offset": "0x4c8"
       }
     ]
   },
@@ -30,58 +133,26 @@
         "Type": "struct WindServiceParams",
         "Size": "0x24",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x4_IB6FH[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x5c"
       }
     ]
   },
-  "TestWindInterface": {
-    "Super": "Object",
-    "FullSize": "0x68",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x40",
+  "DebugWindService": {
+    "Super": "WindService",
+    "FullSize": "0x4e8",
+    "InheritedSize": "0x4d8",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "WindZones",
-        "Type": "TArray<class Interface*>",
+        "Name": "pad0x10_25ZT7[0x10]",
+        "Type": "char",
         "Size": "0x10",
-        "Offset": "0x58"
-      }
-    ]
-  },
-  "WindService": {
-    "Super": "Actor",
-    "FullSize": "0x500",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x138",
-    "Attributes": [
-      {
-        "Name": "GlobalWindSource",
-        "Type": "class WindDirectionalSource*",
-        "Size": "0x8",
-        "Offset": "0x3d8"
-      },
-      {
-        "Name": "CurrentWindAngle",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3f0"
-      },
-      {
-        "Name": "CurrentWindMagnitude",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3f4"
-      },
-      {
-        "Name": "WindZones",
-        "Type": "TArray<class Interface*>",
-        "Size": "0x10",
-        "Offset": "0x4e0"
-      },
-      {
-        "Name": "ExtraWind",
-        "Type": "TArray<struct ExtraWind>",
-        "Size": "0x10",
-        "Offset": "0x4f0"
+        "Offset": "0x4d8"
       }
     ]
   },

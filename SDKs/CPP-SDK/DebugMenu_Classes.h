@@ -6,6 +6,30 @@
 #include "DebugMenu_Structs.h"
 
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DebugMenuEntryGenerator: public Object
+{
+public:
+};
+
+
+// Size 0x50 (Full Size[0x108] - InheritedSize[0xb8]
+class DebugMenuComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x28_FGDDC[0x28];                               // 0xb8(0x28)
+	class DebugMenu*                                             DebugMenuInstance;                                 // 0xe0(0x8)
+	char                                                         pad0x20_Y4LSR[0x20];                               // 0xe8(0x20)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DebugMenuTestFunctions: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
 // Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
 class DebugMenuDataAsset: public DataAsset
 {
@@ -17,11 +41,19 @@ public:
 };
 
 
-// Size 0x50 (Full Size[0x118] - InheritedSize[0xc8]
-class DebugMenuComponent: public ActorComponent
+// Size 0xb0 (Full Size[0x450] - InheritedSize[0x3a0]
+class DebugMenu: public Actor
 {
 public:
-	class DebugMenu*                                             DebugMenuInstance;                                 // 0xf0(0x8)
+	char                                                         pad0xb0_ETT6C[0xb0];                               // 0x3a0(0xb0)
+};
+
+
+// Size 0x8 (Full Size[0x110] - InheritedSize[0x108]
+class DebugMenuComponentMock: public DebugMenuComponent
+{
+public:
+	char                                                         pad0x8_9UHLT[0x8];                                 // 0x108(0x8)
 };
 
 

@@ -1,4 +1,21 @@
 {
+  "TaleWorldLocationPopUpServiceEntry": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MaxDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
   "PlayerEnteredWorldLocationNotificationEvent": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -19,23 +36,6 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x18"
-      }
-    ]
-  },
-  "TaleWorldLocationPopUpServiceEntry": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MaxDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
       }
     ]
   },

@@ -2,71 +2,75 @@
 # https://github.com/DougTheDruid
 LostSandsRowboatGunpowderBarrel:
   Attributes:
+  - Name: pad0xb8_2NUJ7[0xb8]
+    Offset: '0x3a0'
+    Size: '0xb8'
+    Type: char
   - Name: ActionRulesComponent
-    Offset: '0x480'
+    Offset: '0x458'
     Size: '0x8'
     Type: class ActionRulesComponent*
   - Name: InteractableComponent
-    Offset: '0x488'
+    Offset: '0x460'
     Size: '0x8'
     Type: class InteractableComponent*
   - Name: StaticMeshComponent
-    Offset: '0x490'
+    Offset: '0x468'
     Size: '0x8'
     Type: class StaticMeshMemoryConstraintComponent*
   - Name: FlammableComponent
-    Offset: '0x498'
+    Offset: '0x470'
     Size: '0x8'
     Type: class FlammableWieldableComponent*
   - Name: StatusEffectComponent
-    Offset: '0x4a0'
+    Offset: '0x478'
     Size: '0x8'
     Type: class LightWeightStatusEffectManagerComponent*
   - Name: ItemHealthComponent
-    Offset: '0x4a8'
+    Offset: '0x480'
     Size: '0x8'
     Type: class ItemHealthComponent*
   - Name: ExplosionComponent
-    Offset: '0x4b0'
+    Offset: '0x488'
     Size: '0x8'
     Type: class ExplosionComponent*
   - Name: RewindComponent
-    Offset: '0x4b8'
+    Offset: '0x490'
     Size: '0x8'
     Type: class RewindComponent*
   - Name: ToggleFuseInputId
-    Offset: '0x4c0'
+    Offset: '0x498'
     Size: '0x8'
     Type: class UClass*
   - Name: LightFuseDescription
-    Offset: '0x4c8'
+    Offset: '0x4a0'
     Size: '0x38'
     Type: struct FText
   - Name: ExtinguishFuseDescription
-    Offset: '0x500'
+    Offset: '0x4d8'
     Size: '0x38'
     Type: struct FText
   - Name: NamedPointsGroupName
-    Offset: '0x538'
+    Offset: '0x510'
     Size: '0x8'
     Type: struct FName
-  - Name: RangeReferenceNamedPointActor
-    Offset: '0x540'
-    Size: '0x20'
-    Type: assetobject
   - Name: DistanceFromNamedPoints
-    Offset: '0x560'
+    Offset: '0x538'
     Size: '0x10'
     Type: TArray<float>
   - Name: RowboatDestroyedAtGoldenSandsStat
-    Offset: '0x570'
+    Offset: '0x548'
     Size: '0x4'
     Type: struct PlayerStat
   - Name: RowboatDestroyedAwayFromGoldenSandsStat
-    Offset: '0x574'
+    Offset: '0x54c'
     Size: '0x4'
     Type: struct PlayerStat
+  - Name: pad0x90_KR0XW[0x90]
+    Offset: '0x550'
+    Size: '0x90'
+    Type: char
   ClassSize: '0x240'
-  FullSize: '0x608'
-  InheritedSize: '0x3c8'
+  FullSize: '0x5e0'
+  InheritedSize: '0x3a0'
   Super: Actor

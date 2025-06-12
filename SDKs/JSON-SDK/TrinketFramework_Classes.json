@@ -1,29 +1,10 @@
 {
-  "TrinketDesc": {
-    "Super": "EntitlementDesc",
-    "FullSize": "0xf8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "TrinketClass",
-        "Type": "struct StringClassReference",
-        "Size": "0x10",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "PreviousItem",
-        "Type": "struct StringClassReference",
-        "Size": "0x10",
-        "Offset": "0xd8"
-      },
-      {
-        "Name": "NextItem",
-        "Type": "struct StringClassReference",
-        "Size": "0x10",
-        "Offset": "0xe8"
-      }
-    ]
+  "TrinketLoadoutControlInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "TrinketSfxDataAsset": {
     "Super": "DataAsset",
@@ -54,6 +35,102 @@
         "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x40"
+      }
+    ]
+  },
+  "TrinketSetControlInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TrinketLoadoutViewInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TrinketCategory": {
+    "Super": "CategoryBase",
+    "FullSize": "0x88",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TrinketReplacementActor": {
+    "Super": "Actor",
+    "FullSize": "0x3b0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_CJ2PG[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x3a0"
+      }
+    ]
+  },
+  "TrinketDesc": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xf8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "TrinketClass",
+        "Type": "struct StringClassReference",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "PreviousItem",
+        "Type": "struct StringClassReference",
+        "Size": "0x10",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "NextItem",
+        "Type": "struct StringClassReference",
+        "Size": "0x10",
+        "Offset": "0xe8"
+      }
+    ]
+  },
+  "TrinketAudioInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TrinketLoadoutFinderPolicyBase": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "InvalidTrinketCategory": {
+    "Super": "TrinketCategory",
+    "FullSize": "0x88",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SameActorTrinketLoadoutFinderPolicy": {
+    "Super": "TrinketLoadoutFinderPolicyBase",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_RJJHT[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },

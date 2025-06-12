@@ -3,38 +3,78 @@
 LiquidContainerComponent:
   Attributes:
   - Name: LiquidMaterialName
-    Offset: '0xc8'
+    Offset: '0xb8'
     Size: '0x8'
     Type: struct FName
   - Name: LiquidMaterialParameterName
-    Offset: '0xd0'
+    Offset: '0xc0'
     Size: '0x8'
     Type: struct FName
   - Name: LiquidTypeParams
-    Offset: '0xd8'
+    Offset: '0xc8'
     Size: '0x10'
     Type: TArray<struct LiquidTypeParams>
   - Name: StartingLiquidLevelNormalised
-    Offset: '0xe8'
+    Offset: '0xd8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_SFTHD[0x4]
+    Offset: '0xdc'
+    Size: '0x4'
+    Type: char
   - Name: TransitionCurve
-    Offset: '0xf0'
+    Offset: '0xe0'
     Size: '0x8'
     Type: class CurveFloat*
   - Name: TransitionSpeedDecrease
-    Offset: '0xf8'
+    Offset: '0xe8'
     Size: '0x4'
     Type: float
   - Name: TransitionSpeedIncrease
-    Offset: '0xfc'
+    Offset: '0xec'
     Size: '0x4'
     Type: float
   - Name: LiquidMaterials
-    Offset: '0x100'
+    Offset: '0xf0'
     Size: '0x10'
     Type: TArray<class MaterialInstanceDynamic*>
+  - Name: pad0x18_3C0BL[0x18]
+    Offset: '0x100'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x60'
-  FullSize: '0x128'
-  InheritedSize: '0xc8'
+  FullSize: '0x118'
+  InheritedSize: '0xb8'
+  Super: ActorComponent
+LiquidContainerInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+LiquidContainerService:
+  Attributes:
+  - Name: pad0x8_9QX3Z[0x8]
+    Offset: '0x70'
+    Size: '0x8'
+    Type: char
+  ClassSize: '0x8'
+  FullSize: '0x78'
+  InheritedSize: '0x70'
+  Super: InteractableService
+LiquidContainerServiceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+LiquidLevelTransferComponent:
+  Attributes:
+  - Name: pad0x10_ZIEZO[0x10]
+    Offset: '0xb8'
+    Size: '0x10'
+    Type: char
+  ClassSize: '0x10'
+  FullSize: '0xc8'
+  InheritedSize: '0xb8'
   Super: ActorComponent

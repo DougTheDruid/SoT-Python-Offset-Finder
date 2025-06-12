@@ -10,3 +10,9 @@ ContestMatchmakingFactionMapping:
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: Object
+ContestMatchmakingProviderInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

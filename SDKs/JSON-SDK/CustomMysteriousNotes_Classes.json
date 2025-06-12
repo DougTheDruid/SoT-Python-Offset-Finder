@@ -1,15 +1,22 @@
 {
+  "CustomMysteriousNotesInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "CustomMysteriousNotesService": {
     "Super": "Actor",
-    "FullSize": "0x420",
-    "InheritedSize": "0x3c8",
+    "FullSize": "0x3f8",
+    "InheritedSize": "0x3a0",
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "CustomMysteriousNotes",
-        "Type": "map",
-        "Size": "0x50",
-        "Offset": "0x3d0"
+        "Name": "pad0x58_7EW5C[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x3a0"
       }
     ]
   },

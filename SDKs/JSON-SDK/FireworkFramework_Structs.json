@@ -1,21 +1,4 @@
 {
-  "FireworkSequentialSelectionType": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "SelectionIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TimeUntilNextExplosion",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
   "WeightedProjectileMeshAnimationData": {
     "ClassSize": "0x178",
     "Attributes": [
@@ -30,6 +13,47 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x170"
+      },
+      {
+        "Name": "pad0x4_1O614[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x174"
+      }
+    ]
+  },
+  "FireworkExplosionData": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "pad0x8_776YO[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "VFX",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Sfx",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "SecondarySFX",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x20_E9K4J[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x20"
       }
     ]
   },
@@ -68,29 +92,6 @@
       }
     ]
   },
-  "FireworkExplosionData": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "VFX",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Sfx",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "SecondarySFX",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      }
-    ]
-  },
   "WeightedFireworkVFXData": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -123,6 +124,29 @@
         "Type": "struct LinearColor",
         "Size": "0x10",
         "Offset": "0x1c"
+      },
+      {
+        "Name": "pad0x4_WOP4F[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      }
+    ]
+  },
+  "FireworkSequentialSelectionType": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "SelectionIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TimeUntilNextExplosion",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
       }
     ]
   },
@@ -130,10 +154,22 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
+        "Name": "pad0xc_DOVYP[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
         "Name": "FireworkAmbientLightData",
         "Type": "struct FireworkAmbientLightData",
         "Size": "0x14",
         "Offset": "0xc"
+      },
+      {
+        "Name": "pad0x8_29CL9[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x20"
       },
       {
         "Name": "ExplosionData",
@@ -152,6 +188,12 @@
         "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x8_PFYN1[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x48"
       },
       {
         "Name": "FireworkFeedbackData",

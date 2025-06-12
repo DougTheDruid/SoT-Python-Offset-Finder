@@ -1,0 +1,229 @@
+{
+  "PerObjectIncrementalActorBuildStepStats": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "NumChildActorComponents",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_MU0RT[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "SlowestChildActorComponentName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "MinTimeSpentMs",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "MaxTimeSpentMs",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "AvgTimeSpentMs",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "StdDevTimeSpentMs",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "IncrementalActorBuilderStartedTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "BuildId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ActorClassName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "IncrementalActorBuilderFailedTelemetryEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "BuildId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ActorClassName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "FailureReason",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "PerFrameIncrementalActorBuildStepStats": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "MinTimeSpentMs",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MaxTimeSpentMs",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "AvgTimeSpentMs",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "StdDevTimeSpentMs",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "StdDevChildActorComponentsProcessed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "TotalFrames",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x4_EJCMN[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "TotalTimeMs",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "IncrementalActorBuilderCompletedTelemetryEvent": {
+    "ClassSize": "0x148",
+    "Attributes": [
+      {
+        "Name": "BuildId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ActorClassName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "TotalWallClockSpawnTimeMs",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "TotalInternalSpawnTimeMs",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "SpawnInitialActorSpawnMs",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "PerObjectSpawnChildActorsStats",
+        "Type": "struct PerObjectIncrementalActorBuildStepStats",
+        "Size": "0x38",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "PerObjectChildActorConstructionStats",
+        "Type": "struct PerObjectIncrementalActorBuildStepStats",
+        "Size": "0x38",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "PerFrameSpawnChildActorsStats",
+        "Type": "struct PerFrameIncrementalActorBuildStepStats",
+        "Size": "0x40",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "PerFrameChildActorConstructionStats",
+        "Type": "struct PerFrameIncrementalActorBuildStepStats",
+        "Size": "0x40",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "AllChildActorsConstructedMs",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x130"
+      },
+      {
+        "Name": "NumChildActorComponents",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "NumComponents",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x13c"
+      },
+      {
+        "Name": "PerFrameTimeBudgetMs",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x140"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by dougthedruid on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}

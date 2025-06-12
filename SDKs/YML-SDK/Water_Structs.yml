@@ -26,6 +26,10 @@ BuoyancyDragSample:
     Offset: '0x2c'
     Size: '0x1'
     Type: byte
+  - Name: pad0x63_V70I7[0x63]
+    Offset: '0x2d'
+    Size: '0x63'
+    Type: char
   ClassSize: '0x90'
 BuoyancySampleMovement:
   Attributes:
@@ -33,6 +37,10 @@ BuoyancySampleMovement:
     Offset: '0x0'
     Size: '0x10'
     Type: TArray<struct BuoyancySampleMovementConfiguration>
+  - Name: pad0x40_VUSXY[0x40]
+    Offset: '0x10'
+    Size: '0x40'
+    Type: char
   - Name: BuoyancyScalarCurve
     Offset: '0x50'
     Size: '0x8'
@@ -41,6 +49,10 @@ BuoyancySampleMovement:
     Offset: '0x58'
     Size: '0x8'
     Type: class CurveFloat*
+  - Name: pad0x8_4FOOV[0x8]
+    Offset: '0x60'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x68'
 BuoyancySampleMovementConfiguration:
   Attributes:
@@ -56,6 +68,10 @@ BuoyancySampleMovementConfiguration:
     Offset: '0x18'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_MT1GZ[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   - Name: OverallBuoyancyScalarBlendCurve
     Offset: '0x20'
     Size: '0x8'
@@ -68,6 +84,10 @@ BuoyancySampleMovementConfiguration:
     Offset: '0x30'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_18F3U[0x4]
+    Offset: '0x34'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x38'
 BuoyancySampleMovementConfigurationEntry:
   Attributes:
@@ -75,6 +95,10 @@ BuoyancySampleMovementConfigurationEntry:
     Offset: '0x0'
     Size: '0xc'
     Type: struct Vector
+  - Name: pad0x4_NCUJS[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   - Name: BuoyancyScaleCurve
     Offset: '0x10'
     Size: '0x8'
@@ -98,6 +122,10 @@ BuoyancyVolumeSample:
     Offset: '0x11'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2_5QBUK[0x2]
+    Offset: '0x12'
+    Size: '0x2'
+    Type: char
   - Name: Scalar
     Offset: '0x14'
     Size: '0x4'
@@ -106,6 +134,10 @@ BuoyancyVolumeSample:
     Offset: '0x18'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_M0POD[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   - Name: DistUnderwaterVSBuoyancyForce
     Offset: '0x20'
     Size: '0x8'
@@ -130,6 +162,10 @@ BuoyancyVolumeSample:
     Offset: '0x44'
     Size: '0x4'
     Type: float
+  - Name: pad0x10_EE93K[0x10]
+    Offset: '0x48'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x58'
 EventCurrentWaterPlaneChange:
   Attributes:
@@ -142,6 +178,20 @@ EventCurrentWaterPlaneChange:
     Size: '0x8'
     Type: class BaseWaterComponent*
   ClassSize: '0x10'
+EventEnteredWaterExclusionZone:
+  Attributes:
+  - Name: pad0x1_ZTUZX[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
+EventLeftWaterExclusionZone:
+  Attributes:
+  - Name: pad0x1_3NNWP[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
 FFTWaterQueryResult:
   Attributes:
   - Name: Height
@@ -160,9 +210,17 @@ FFTWaterQueryResult:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_AHIEC[0x3]
+    Offset: '0x19'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x1c'
 SplashProbe:
   Attributes:
+  - Name: pad0x8_V7GL7[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: Probe
     Offset: '0x8'
     Size: '0xd8'
@@ -203,10 +261,18 @@ SplashProbe:
     Offset: '0x100'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_E86ZY[0x7]
+    Offset: '0x101'
+    Size: '0x7'
+    Type: char
   - Name: CurrentlyPlayingVFX
     Offset: '0x108'
     Size: '0x8'
     Type: class ParticleSystemComponent*
+  - Name: pad0x18_06FC5[0x18]
+    Offset: '0x110'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x128'
 WaterBuoyancy:
   Attributes:
@@ -226,6 +292,10 @@ WaterBuoyancy:
     Offset: '0x10'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_AYAC2[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   - Name: VolumeSamples
     Offset: '0x18'
     Size: '0x10'
@@ -242,6 +312,10 @@ WaterBuoyancy:
     Offset: '0x40'
     Size: '0x4'
     Type: float
+  - Name: pad0xec_LF666[0xec]
+    Offset: '0x44'
+    Size: '0xec'
+    Type: char
   ClassSize: '0x130'
 WaterInformation:
   Attributes:
@@ -253,9 +327,17 @@ WaterInformation:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_FT6Y8[0x7]
+    Offset: '0x9'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x10'
 WaterSplashProbe:
   Attributes:
+  - Name: pad0x8_W5616[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: ProbeDebugName
     Offset: '0x8'
     Size: '0x10'
@@ -300,10 +382,18 @@ WaterSplashProbe:
     Offset: '0x49'
     Size: '0x1'
     Type: byte
+  - Name: pad0x2_XEGMF[0x2]
+    Offset: '0x4a'
+    Size: '0x2'
+    Type: char
   - Name: StaticWaterHeightValue
     Offset: '0x4c'
     Size: '0x4'
     Type: float
+  - Name: pad0x88_770JK[0x88]
+    Offset: '0x50'
+    Size: '0x88'
+    Type: char
   ClassSize: '0xd8'
 WaterSplashProbesContainer:
   Attributes:
@@ -315,6 +405,10 @@ WaterSplashProbesContainer:
     Offset: '0x10'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_SEELR[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x18'
 WaterSpout:
   Attributes:
@@ -330,4 +424,8 @@ WaterSpout:
     Offset: '0x38'
     Size: '0x8'
     Type: class ParticleSystemComponent*
+  - Name: pad0x30_O771W[0x30]
+    Offset: '0x40'
+    Size: '0x30'
+    Type: char
   ClassSize: '0x70'

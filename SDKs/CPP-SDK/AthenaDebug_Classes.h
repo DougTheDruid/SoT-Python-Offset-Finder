@@ -6,37 +6,62 @@
 #include "AthenaDebug_Structs.h"
 
 
-// Size 0x10 (Full Size[0x3d8] - InheritedSize[0x3c8]
+// Size 0x10 (Full Size[0x3b0] - InheritedSize[0x3a0]
 class ShippingDebugActorSphereCollection: public Actor
 {
 public:
-	TArray<struct SphereData>                                    SphereList;                                        // 0x3c8(0x10)
+	TArray<struct SphereData>                                    SphereList;                                        // 0x3a0(0x10)
 };
 
 
-// Size 0x118 (Full Size[0x4e0] - InheritedSize[0x3c8]
+// Size 0x138 (Full Size[0x4d8] - InheritedSize[0x3a0]
 class DrawDebugService: public Actor
 {
 public:
-	TArray<struct DrawDebugItemMessage>                          MessagesReplicated;                                // 0x3d0(0x10)
-	TArray<struct DrawDebugItemSphere>                           SpheresReplicated;                                 // 0x3e0(0x10)
-	TArray<struct DrawDebugItemCircle>                           CirclesReplicated;                                 // 0x3f0(0x10)
-	TArray<struct DrawDebugItemBox>                              BoxesReplicated;                                   // 0x400(0x10)
-	TArray<struct DrawDebugItemCapsule>                          CapsulesReplicated;                                // 0x410(0x10)
-	TArray<struct DrawDebugItemLine>                             LinesReplicated;                                   // 0x420(0x10)
-	TArray<struct DrawDebugItemSector>                           SectorsReplicated;                                 // 0x430(0x10)
-	TArray<struct DrawDebugItemString>                           StringsReplicated;                                 // 0x440(0x10)
-	bool                                                         IsDrawDebugActive;                                 // 0x450(0x1)
+	char                                                         pad0x8_6V39T[0x8];                                 // 0x3a0(0x8)
+	TArray<struct DrawDebugItemMessage>                          MessagesReplicated;                                // 0x3a8(0x10)
+	TArray<struct DrawDebugItemSphere>                           SpheresReplicated;                                 // 0x3b8(0x10)
+	TArray<struct DrawDebugItemCircle>                           CirclesReplicated;                                 // 0x3c8(0x10)
+	TArray<struct DrawDebugItemBox>                              BoxesReplicated;                                   // 0x3d8(0x10)
+	TArray<struct DrawDebugItemCapsule>                          CapsulesReplicated;                                // 0x3e8(0x10)
+	TArray<struct DrawDebugItemCylinder>                         CylindersReplicated;                               // 0x3f8(0x10)
+	TArray<struct DrawDebugItemLine>                             LinesReplicated;                                   // 0x408(0x10)
+	TArray<struct DrawDebugItemSector>                           SectorsReplicated;                                 // 0x418(0x10)
+	TArray<struct DrawDebugItemString>                           StringsReplicated;                                 // 0x428(0x10)
+	bool                                                         IsDrawDebugActive;                                 // 0x438(0x1)
+	char                                                         pad0x9f_FE9DD[0x9f];                               // 0x439(0x9f)
 };
 
 
-// Size 0x28 (Full Size[0x3f0] - InheritedSize[0x3c8]
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TickableDebugDrawingServiceInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class VideprinterServiceInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DrawDebugServiceInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x28 (Full Size[0x3c8] - InheritedSize[0x3a0]
 class Videprinter: public Actor
 {
 public:
-	TArray<String>                                               OutputRingBuffer;                                  // 0x3c8(0x10)
-	int                                                          AddAt;                                             // 0x3d8(0x4)
-	struct FName                                                 Id;                                                // 0x3dc(0x8)
+	TArray<String>                                               OutputRingBuffer;                                  // 0x3a0(0x10)
+	int                                                          AddAt;                                             // 0x3b0(0x4)
+	struct FName                                                 Id;                                                // 0x3b4(0x8)
+	char                                                         pad0xc_R7WDQ[0xc];                                 // 0x3bc(0xc)
 };
 
 
@@ -44,7 +69,16 @@ public:
 class VideprinterService: public Object
 {
 public:
+	char                                                         pad0x8_XPEK2[0x8];                                 // 0x28(0x8)
 	TArray<class Videprinter*>                                   Videprinters;                                      // 0x30(0x10)
+};
+
+
+// Size 0x80 (Full Size[0x138] - InheritedSize[0xb8]
+class HitchDebugComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x80_HRI2F[0x80];                               // 0xb8(0x80)
 };
 
 

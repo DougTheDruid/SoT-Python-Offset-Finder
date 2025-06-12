@@ -10,6 +10,7 @@ public:
 	struct FText                                                 Title;                                             // 0x0(0x38)
 	struct FText                                                 Body;                                              // 0x38(0x38)
 	float                                                        Weight;                                            // 0x70(0x4)
+	char                                                         pad0x4_RGLFB[0x4];                                 // 0x74(0x4)
 };
 
 
@@ -20,6 +21,14 @@ public:
 	struct Guid                                                  LockId;                                            // 0x0(0x10)
 	TArray<struct LandmarkReactionKeyFrame>                      UnlockReactions;                                   // 0x10(0x10)
 	TArray<struct Guid>                                          UnlockingCrews;                                    // 0x20(0x10)
+};
+
+
+// Size 0x1
+struct SirenPuzzleCompleteEvent
+{
+public:
+	char                                                         pad0x1_ZS02B[0x1];                                 // 0x0(0x1)
 };
 
 

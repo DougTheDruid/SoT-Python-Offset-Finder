@@ -1,15 +1,4 @@
 {
-  "ActiveAudioReaction": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Reaction",
-        "Type": "class AudioReportReaction*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "EventReactionDesc": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -38,10 +27,33 @@
         "Offset": "0x10"
       },
       {
+        "Name": "pad0x4_227GK[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
         "Name": "TriggerEvents",
         "Type": "TArray<class WwiseEvent*>",
         "Size": "0x10",
         "Offset": "0x18"
+      }
+    ]
+  },
+  "ActiveAudioReaction": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Reaction",
+        "Type": "class AudioReportReaction*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x8_6B5JL[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },

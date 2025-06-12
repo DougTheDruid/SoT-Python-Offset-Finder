@@ -10,4 +10,8 @@ CountHolder:
     Offset: '0x8'
     Size: '0x4'
     Type: float
+  - Name: pad0x1c_HWODD[0x1c]
+    Offset: '0xc'
+    Size: '0x1c'
+    Type: char
   ClassSize: '0x28'

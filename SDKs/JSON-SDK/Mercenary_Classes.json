@@ -1,0 +1,390 @@
+{
+  "MercenaryServiceParams": {
+    "Super": "DataAsset",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "MercenaryCleanupDelayTimer",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_0E0CP[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      }
+    ]
+  },
+  "EmergentSkeletonRevivedStatTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MercenaryService": {
+    "Super": "Actor",
+    "FullSize": "0x3d0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x20_N42KU[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "MercenaryCleanupDelayTimer",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c0"
+      },
+      {
+        "Name": "pad0x4_IWL8E[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c4"
+      },
+      {
+        "Name": "ServiceParams",
+        "Type": "class MercenaryServiceParams*",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      }
+    ]
+  },
+  "MercenaryCosmeticAssetsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "PreSpawnInAnimation",
+        "Type": "class AnimationAsset*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "PreSpawnInParticleSystem",
+        "Type": "class ParticleSystem*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "MercenaryServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MercenaryItemInteractionDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "DenyItemDescClasslist",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "DenyItemCategoryClasslist",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "MercenarySpawnLocationsDataAsset": {
+    "Super": "IslandItemDataAsset",
+    "FullSize": "0x48",
+    "InheritedSize": "0x48",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmergentSkeletonHandedItemStatTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MercenaryItemInteractionsComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x2c0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x208",
+    "Attributes": [
+      {
+        "Name": "pad0x28_ZVLAB[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "EnableAICarryingItems",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "AICarryingItemsEnabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xe1"
+      },
+      {
+        "Name": "pad0x6_C7ZDV[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0xe2"
+      },
+      {
+        "Name": "HoldGiveInteractionTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x108"
+      },
+      {
+        "Name": "pad0x4_1B61I[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x10c"
+      },
+      {
+        "Name": "HoldGiveInteractionAllowText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "HoldGiveInteractionDenyText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x148"
+      },
+      {
+        "Name": "HoldTakeInteractionTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x180"
+      },
+      {
+        "Name": "pad0x4_JS650[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x184"
+      },
+      {
+        "Name": "HoldTakeInteractionAllowText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x188"
+      },
+      {
+        "Name": "HoldTakeInteractionDenyText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x1c0"
+      },
+      {
+        "Name": "CarryItemInteractionInputId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x1f8"
+      },
+      {
+        "Name": "CarryItemInteractionReleasedInputId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x200"
+      },
+      {
+        "Name": "pad0x30_YXPBO[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x208"
+      },
+      {
+        "Name": "EnableAIMapAssistanceInteraction",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x238"
+      },
+      {
+        "Name": "ConsentToAIMapAssistance",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x239"
+      },
+      {
+        "Name": "AIMapAssistanceInteractionEnabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x23a"
+      },
+      {
+        "Name": "pad0x1_JPPGG[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x23b"
+      },
+      {
+        "Name": "AIMapAssistanceInteractionHoldTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x23c"
+      },
+      {
+        "Name": "AIMapAssistanceInteractionText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x240"
+      },
+      {
+        "Name": "AIMapAssistanceInteractionInputId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x278"
+      },
+      {
+        "Name": "AIMapAssistanceInteractionReleasedInputId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x280"
+      },
+      {
+        "Name": "pad0x30_9FCZH[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x288"
+      },
+      {
+        "Name": "LoadedMercenaryItemInteractionDataAsset",
+        "Type": "class MercenaryItemInteractionDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x2b8"
+      }
+    ]
+  },
+  "MercenaryBuriableActor": {
+    "Super": "Actor",
+    "FullSize": "0x570",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x1d0",
+    "Attributes": [
+      {
+        "Name": "pad0x10_U3YZG[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "InteractableComponentWithActionRules",
+        "Type": "class InteractableComponentWithActionRules*",
+        "Size": "0x8",
+        "Offset": "0x3b0"
+      },
+      {
+        "Name": "SkeletalMeshMMC",
+        "Type": "class SkeletalMeshMemoryConstraintComponent*",
+        "Size": "0x8",
+        "Offset": "0x3b8"
+      },
+      {
+        "Name": "TrackedOwnerComponent",
+        "Type": "class TrackedOwnerComponent*",
+        "Size": "0x8",
+        "Offset": "0x3c0"
+      },
+      {
+        "Name": "CosmeticDataAsset",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "FunctionalDataAsset",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "InteractionTextLocTag",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "InvalidInteractionTextLocTag",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x420"
+      },
+      {
+        "Name": "HoldInteractionTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x458"
+      },
+      {
+        "Name": "DelayBetweenCosmeticAndConversion",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x45c"
+      },
+      {
+        "Name": "IsConverting",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x460"
+      },
+      {
+        "Name": "pad0x7_EV38M[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x461"
+      },
+      {
+        "Name": "pad0x108_FBU4D[0x108]",
+        "Type": "char",
+        "Size": "0x108",
+        "Offset": "0x468"
+      }
+    ]
+  },
+  "MercenaryFunctionalAssetsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AISpawnerSettings",
+        "Type": "class AISpawner*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "NamedAIDataAsset",
+        "Type": "class NamedAIDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by dougthedruid on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}

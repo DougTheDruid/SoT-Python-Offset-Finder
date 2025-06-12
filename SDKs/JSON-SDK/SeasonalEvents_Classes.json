@@ -1,15 +1,21 @@
 {
   "SeasonalEventMemoryReservationActor": {
     "Super": "Actor",
-    "FullSize": "0x3d8",
-    "InheritedSize": "0x3c8",
+    "FullSize": "0x3b0",
+    "InheritedSize": "0x3a0",
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "ReservedByteSize",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x3c8"
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "pad0xc_90UR5[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x3a4"
       }
     ]
   },

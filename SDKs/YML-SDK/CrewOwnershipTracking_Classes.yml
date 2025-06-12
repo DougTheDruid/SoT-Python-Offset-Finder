@@ -2,23 +2,51 @@
 # https://github.com/DougTheDruid
 CrewOwnershipTrackingComponent:
   Attributes:
+  - Name: pad0x18_PI449[0x18]
+    Offset: '0xb8'
+    Size: '0x18'
+    Type: char
   - Name: SpawningCrewId
-    Offset: '0xe0'
+    Offset: '0xd0'
     Size: '0x10'
     Type: struct Guid
   - Name: CurrentOwnedByCrewId
-    Offset: '0xf0'
+    Offset: '0xe0'
     Size: '0x10'
     Type: struct Guid
   - Name: PreviousOwnedByCrewIdList
-    Offset: '0x100'
+    Offset: '0xf0'
     Size: '0x10'
     Type: struct OwnerListEntry
-  - Name: CustomTrackingMap
-    Offset: '0x110'
-    Size: '0x50'
-    Type: map
+  - Name: pad0x60_KTNLF[0x60]
+    Offset: '0x100'
+    Size: '0x60'
+    Type: char
   ClassSize: '0xa8'
-  FullSize: '0x170'
-  InheritedSize: '0xc8'
+  FullSize: '0x160'
+  InheritedSize: '0xb8'
   Super: ActorComponent
+CrewOwnershipTrackingControlInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+CrewOwnershipTrackingInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+CrewSpawnOwnershipTrackingInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+CustomCrewTrackingInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

@@ -3,6 +3,12 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
+        "Name": "pad0x38_40S41[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
         "Name": "TunnelDesc",
         "Type": "class TunnelDesc*",
         "Size": "0x8",

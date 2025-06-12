@@ -2,18 +2,32 @@
 # https://github.com/DougTheDruid
 WorldEdgeItemService:
   Attributes:
+  - Name: pad0x8_Y8PUL[0x8]
+    Offset: '0x3a0'
+    Size: '0x8'
+    Type: char
   - Name: WorldEdgeItemParameters
-    Offset: '0x3d0'
+    Offset: '0x3a8'
     Size: '0x8'
     Type: class WorldEdgeItemServiceParams*
   - Name: SpawnItemEQSRequest
-    Offset: '0x3d8'
+    Offset: '0x3b0'
     Size: '0x170'
     Type: struct EnvQueryRequest
-  ClassSize: '0x258'
-  FullSize: '0x620'
-  InheritedSize: '0x3c8'
+  - Name: pad0xe0_88OYP[0xe0]
+    Offset: '0x520'
+    Size: '0xe0'
+    Type: char
+  ClassSize: '0x260'
+  FullSize: '0x600'
+  InheritedSize: '0x3a0'
   Super: Actor
+WorldEdgeItemServiceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 WorldEdgeItemServiceParams:
   Attributes:
   - Name: TeleportItemsEQSQuery

@@ -2,74 +2,118 @@
 # https://github.com/DougTheDruid
 ActorFlammableComponent:
   Attributes:
+  - Name: FireVFXComponent
+    Offset: '0xd8'
+    Size: '0x8'
+    Type: class ParticleSystemComponent*
+  - Name: pad0x10_W5X4E[0x10]
+    Offset: '0xe0'
+    Size: '0x10'
+    Type: char
   - Name: FireVFX
-    Offset: '0xf8'
+    Offset: '0xf0'
     Size: '0x8'
     Type: class ParticleSystem*
   - Name: SteamVFX
-    Offset: '0x100'
+    Offset: '0xf8'
     Size: '0x8'
     Type: class ParticleSystem*
   - Name: FireVFXIntensity
-    Offset: '0x108'
+    Offset: '0x100'
     Size: '0x4'
     Type: float
   - Name: FireDurationMultiplier
-    Offset: '0x10c'
+    Offset: '0x104'
     Size: '0x4'
     Type: float
   - Name: FireDuration
-    Offset: '0x110'
+    Offset: '0x108'
     Size: '0x4'
     Type: float
   - Name: PropagationInterval
-    Offset: '0x114'
+    Offset: '0x10c'
     Size: '0x4'
     Type: float
   - Name: OilSpillRadius
-    Offset: '0x118'
+    Offset: '0x110'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_IQ3A0[0x4]
+    Offset: '0x114'
+    Size: '0x4'
+    Type: char
   - Name: FireStatus
-    Offset: '0x120'
-    Size: '0x18'
+    Offset: '0x118'
+    Size: '0x20'
     Type: struct Status
   - Name: BurnStatus
     Offset: '0x138'
-    Size: '0x18'
+    Size: '0x20'
     Type: struct Status
   - Name: ShouldPropagateToShip
-    Offset: '0x150'
+    Offset: '0x158'
     Size: '0x1'
     Type: bool
+  - Name: pad0x97_W7CNK[0x97]
+    Offset: '0x159'
+    Size: '0x97'
+    Type: char
   - Name: CachedWorld
-    Offset: '0x1e8'
+    Offset: '0x1f0'
     Size: '0x8'
     Type: class World*
-  ClassSize: '0x110'
-  FullSize: '0x1f0'
-  InheritedSize: '0xe0'
+  ClassSize: '0x120'
+  FullSize: '0x1f8'
+  InheritedSize: '0xd8'
   Super: FlammableComponent
+BlownByWindStatus:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x30'
+  InheritedSize: '0x30'
+  Super: StatusBase
 CookerIgnitionComponent:
   Attributes:
   - Name: CookerIgnitionParams
-    Offset: '0xc8'
+    Offset: '0xb8'
     Size: '0x78'
     Type: struct CookerIgnitionParams
   ClassSize: '0x78'
-  FullSize: '0x140'
-  InheritedSize: '0xc8'
+  FullSize: '0x130'
+  InheritedSize: '0xb8'
   Super: ActorComponent
+ExtinguishableInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 FireCellStateTimingParamsDataAsset:
   Attributes:
   - Name: TimingParams
     Offset: '0x28'
     Size: '0x94'
     Type: struct FireCellStateTimingParams
+  - Name: pad0x4_ZIXWT[0x4]
+    Offset: '0xbc'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x98'
   FullSize: '0xc0'
   InheritedSize: '0x28'
   Super: DataAsset
+FireDamagerType:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: DamagerType
+FireExplosionDamagerType:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: DamagerType
 FireGridAudioManager:
   Attributes:
   - Name: FireAudioParams
@@ -84,6 +128,10 @@ FireGridAudioManager:
     Offset: '0x70'
     Size: '0x8'
     Type: class FirePropagator*
+  - Name: pad0x58_FVDPS[0x58]
+    Offset: '0x78'
+    Size: '0x58'
+    Type: char
   ClassSize: '0xa8'
   FullSize: '0xd0'
   InheritedSize: '0x28'
@@ -98,28 +146,28 @@ FireGridCellSelectionParamsDataAsset:
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: DataAsset
+FireGridLocationInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+FireGridProxyInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: FireGridLocationInterface
 FireGridVFXManager:
   Attributes:
   - Name: VFXParams
     Offset: '0x28'
     Size: '0x8'
     Type: class FireGridVFXParamsDataAsset*
-  - Name: SpawnedParticleSystemsForTemplates
-    Offset: '0x30'
-    Size: '0x50'
-    Type: map
   - Name: SpawnedCustomParticleSystemsForCells
     Offset: '0x80'
     Size: '0x10'
     Type: TArray<struct FireParticleSystem>
-  - Name: SpawnedMeshesForCells
-    Offset: '0x90'
-    Size: '0x50'
-    Type: map
-  - Name: SpawnedParticleSystemsForSmokeDescs
-    Offset: '0xe0'
-    Size: '0x50'
-    Type: map
   - Name: SpawnedExteriorSmokeParticleSystem
     Offset: '0x130'
     Size: '0x8'
@@ -152,6 +200,10 @@ FireGridVFXManager:
     Offset: '0x190'
     Size: '0x10'
     Type: TArray<struct FireDefaultVFXSpawnData>
+  - Name: pad0x8_2CBQ4[0x8]
+    Offset: '0x1a0'
+    Size: '0x8'
+    Type: char
   - Name: InterleavedSpawnLists
     Offset: '0x1a8'
     Size: '0x10'
@@ -160,6 +212,10 @@ FireGridVFXManager:
     Offset: '0x1b8'
     Size: '0x8'
     Type: class FirePropagator*
+  - Name: pad0x50_CS1VB[0x50]
+    Offset: '0x1c0'
+    Size: '0x50'
+    Type: char
   ClassSize: '0x1e8'
   FullSize: '0x210'
   InheritedSize: '0x28'
@@ -174,16 +230,40 @@ FireGridVFXParamsDataAsset:
   FullSize: '0x68'
   InheritedSize: '0x28'
   Super: DataAsset
+FirePropagationIgniteInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+FirePropagationInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 FirePropagator:
   Attributes:
+  - Name: pad0x90_GYQ1X[0x90]
+    Offset: '0x28'
+    Size: '0x90'
+    Type: char
   - Name: CellStateTimingParams
     Offset: '0xb8'
     Size: '0x8'
     Type: class FireCellStateTimingParamsDataAsset*
+  - Name: pad0x4_DE94D[0x4]
+    Offset: '0xc0'
+    Size: '0x4'
+    Type: char
   - Name: WaterHeightOffsetToFloodCells
     Offset: '0xc4'
     Size: '0x4'
     Type: float
+  - Name: pad0x58_FNHFV[0x58]
+    Offset: '0xc8'
+    Size: '0x58'
+    Type: char
   ClassSize: '0xf8'
   FullSize: '0x120'
   InheritedSize: '0x28'
@@ -198,54 +278,128 @@ FirePropagatorDataAsset:
   FullSize: '0x30'
   InheritedSize: '0x28'
   Super: DataAsset
+FireStatus:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x30'
+  InheritedSize: '0x30'
+  Super: StatusBase
 FlammableComponent:
   Attributes:
+  - Name: pad0x18_8MWTC[0x18]
+    Offset: '0xb8'
+    Size: '0x18'
+    Type: char
   - Name: OnFire
-    Offset: '0xd8'
+    Offset: '0xd0'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x18'
-  FullSize: '0xe0'
-  InheritedSize: '0xc8'
+  - Name: pad0x7_2LOT5[0x7]
+    Offset: '0xd1'
+    Size: '0x7'
+    Type: char
+  ClassSize: '0x20'
+  FullSize: '0xd8'
+  InheritedSize: '0xb8'
   Super: ActorComponent
+FlammableInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 FlammableWieldableComponent:
   Attributes:
   - Name: IgnitedStatus
-    Offset: '0xe0'
-    Size: '0x18'
+    Offset: '0xd8'
+    Size: '0x20'
     Type: struct Status
-  ClassSize: '0x18'
+  ClassSize: '0x20'
   FullSize: '0xf8'
-  InheritedSize: '0xe0'
+  InheritedSize: '0xd8'
   Super: FlammableComponent
+IgniteStatus:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x30'
+  InheritedSize: '0x30'
+  Super: StatusBase
 MastFlammableComponent:
   Attributes:
-  - Name: FireGridLocation
+  - Name: pad0x8_SCQHA[0x8]
     Offset: '0x1f8'
+    Size: '0x8'
+    Type: char
+  - Name: FireGridLocation
+    Offset: '0x200'
     Size: '0xc'
     Type: struct Vector
+  - Name: pad0x14_E82IQ[0x14]
+    Offset: '0x20c'
+    Size: '0x14'
+    Type: char
   ClassSize: '0x28'
-  FullSize: '0x218'
-  InheritedSize: '0x1f0'
+  FullSize: '0x220'
+  InheritedSize: '0x1f8'
   Super: ActorFlammableComponent
 OilSpill:
   Attributes:
+  - Name: pad0x8_4BZDX[0x8]
+    Offset: '0x748'
+    Size: '0x8'
+    Type: char
   - Name: BaseComponent
-    Offset: '0x720'
+    Offset: '0x750'
     Size: '0x8'
     Type: class BoxComponent*
   - Name: FlammableComponent
-    Offset: '0x728'
+    Offset: '0x758'
     Size: '0x8'
     Type: class ActorFlammableComponent*
   - Name: StatusEffectManagerComponent
-    Offset: '0x730'
+    Offset: '0x760'
     Size: '0x8'
     Type: class StatusEffectManagerComponent*
+  - Name: pad0x10_BQ5IG[0x10]
+    Offset: '0x768'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x30'
-  FullSize: '0x748'
-  InheritedSize: '0x718'
+  FullSize: '0x778'
+  InheritedSize: '0x748'
   Super: ItemProxy
+ShipFireCellDataContainer:
+  Attributes:
+  - Name: pad0x8_KGYO4[0x8]
+    Offset: '0x3a0'
+    Size: '0x8'
+    Type: char
+  - Name: Root
+    Offset: '0x3a8'
+    Size: '0x8'
+    Type: class SceneComponent*
+  - Name: ReplicatedCellData
+    Offset: '0x3b0'
+    Size: '0x10'
+    Type: TArray<struct ReplicatedFireCellData>
+  - Name: ReplicatedCellCharringData
+    Offset: '0x3c0'
+    Size: '0x18'
+    Type: struct ReplicatedFireCellCharringData
+  - Name: pad0x30_Y7A2U[0x30]
+    Offset: '0x3d8'
+    Size: '0x30'
+    Type: char
+  ClassSize: '0x68'
+  FullSize: '0x408'
+  InheritedSize: '0x3a0'
+  Super: Actor
+ShipFireCellDataInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 ShipFireDamageParamsDataAsset:
   Attributes:
   - Name: FireDamageParams
@@ -262,99 +416,127 @@ ShipFireLightParamsDataAsset:
     Offset: '0x28'
     Size: '0x14'
     Type: struct ShipFireLightParams
+  - Name: pad0x4_KAUFA[0x4]
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x18'
   FullSize: '0x40'
   InheritedSize: '0x28'
   Super: DataAsset
 ShipFirePropagationComponent:
   Attributes:
+  - Name: pad0x18_FTS8K[0x18]
+    Offset: '0xb8'
+    Size: '0x18'
+    Type: char
   - Name: FeatureToggleName
-    Offset: '0xe0'
+    Offset: '0xd0'
     Size: '0x8'
     Type: struct FName
   - Name: ShipSize
-    Offset: '0xe8'
+    Offset: '0xd8'
     Size: '0x8'
     Type: class UClass*
   - Name: CellSize
-    Offset: '0xf0'
+    Offset: '0xe0'
     Size: '0x4'
     Type: float
   - Name: GridDimensions
-    Offset: '0xf4'
+    Offset: '0xe4'
     Size: '0xc'
     Type: struct IntVector
   - Name: GridOffset
-    Offset: '0x100'
+    Offset: '0xf0'
     Size: '0xc'
     Type: struct Vector
+  - Name: pad0x4_EUBM8[0x4]
+    Offset: '0xfc'
+    Size: '0x4'
+    Type: char
   - Name: Propagator
-    Offset: '0x110'
+    Offset: '0x100'
     Size: '0x8'
     Type: class FirePropagator*
   - Name: FireDamageDataAsset
-    Offset: '0x118'
+    Offset: '0x108'
     Size: '0x8'
     Type: class ShipFireDamageParamsDataAsset*
   - Name: FireCellDescs
-    Offset: '0x120'
+    Offset: '0x110'
     Size: '0x10'
     Type: TArray<struct FireCellDesc>
+  - Name: pad0x10_7F7DW[0x10]
+    Offset: '0x120'
+    Size: '0x10'
+    Type: char
   - Name: BurnStatus
-    Offset: '0x140'
-    Size: '0x18'
+    Offset: '0x130'
+    Size: '0x20'
     Type: struct Status
   - Name: VFXManager
-    Offset: '0x158'
+    Offset: '0x150'
     Size: '0x8'
     Type: class FireGridVFXManager*
   - Name: VfxSpawnSettings
-    Offset: '0x160'
+    Offset: '0x158'
     Size: '0x58'
     Type: struct FireGridVfxSpawnSettings
   - Name: FireLightManager
-    Offset: '0x1b8'
+    Offset: '0x1b0'
     Size: '0x150'
     Type: struct ShipFireLightManager
   - Name: FireCharringManager
-    Offset: '0x308'
+    Offset: '0x300'
     Size: '0xd8'
     Type: struct FireGridCharringManager
-  - Name: ReplicatedCellData
-    Offset: '0x3e0'
-    Size: '0x10'
-    Type: TArray<struct ReplicatedFireCellData>
-  - Name: ReplicatedCellCharringData
-    Offset: '0x3f0'
-    Size: '0x18'
-    Type: struct ReplicatedFireCellCharringData
   - Name: FireAudioManager
-    Offset: '0x408'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: class FireGridAudioManager*
   - Name: FireAudioParams
-    Offset: '0x410'
+    Offset: '0x3e0'
     Size: '0x40'
     Type: struct FireCellAudioParams
-  ClassSize: '0x3e0'
-  FullSize: '0x4a8'
-  InheritedSize: '0xc8'
+  - Name: pad0x68_ZXFU7[0x68]
+    Offset: '0x420'
+    Size: '0x68'
+    Type: char
+  ClassSize: '0x3d0'
+  FullSize: '0x488'
+  InheritedSize: '0xb8'
   Super: ActorComponent
+StatusResponseExtinguish:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: StatusResponse
+StatusResponseIgnite:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: StatusResponse
 TimedFlammableComponent:
   Attributes:
   - Name: UseExtinguishTimer
-    Offset: '0xe0'
+    Offset: '0xd8'
     Size: '0x1'
     Type: bool
   - Name: AllowFireToBeReplenishedBeforeExtinguishTimerExpired
-    Offset: '0xe1'
+    Offset: '0xd9'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2_GDAN2[0x2]
+    Offset: '0xda'
+    Size: '0x2'
+    Type: char
   - Name: TimeInSecondsUntilFireExtinguished
-    Offset: '0xe4'
+    Offset: '0xdc'
     Size: '0x4'
     Type: float
   ClassSize: '0x8'
-  FullSize: '0xe8'
-  InheritedSize: '0xe0'
+  FullSize: '0xe0'
+  InheritedSize: '0xd8'
   Super: FlammableComponent

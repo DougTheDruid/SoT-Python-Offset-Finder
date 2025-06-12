@@ -30,6 +30,10 @@ CrewStoppedInvasion:
   ClassSize: '0x10'
 InvasionBannerNetworkEvent:
   Attributes:
+  - Name: pad0x18_BAOD0[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: Message
     Offset: '0x18'
     Size: '0x38'
@@ -42,6 +46,10 @@ InvasionBannerNetworkEvent:
     Offset: '0x60'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_0ICDQ[0x3]
+    Offset: '0x61'
+    Size: '0x3'
+    Type: char
   - Name: Tag
     Offset: '0x64'
     Size: '0x8'
@@ -50,6 +58,10 @@ InvasionBannerNetworkEvent:
     Offset: '0x6c'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_P14R6[0x3]
+    Offset: '0x6d'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x70'
 InvasionCrewData:
   Attributes:
@@ -61,6 +73,10 @@ InvasionCrewData:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_9KNBO[0x3]
+    Offset: '0x11'
+    Size: '0x3'
+    Type: char
   - Name: FactionIdentifier
     Offset: '0x14'
     Size: '0x8'
@@ -69,6 +85,10 @@ InvasionCrewData:
     Offset: '0x1c'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_ZKX1M[0x3]
+    Offset: '0x1d'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x20'
 InvasionEndedTelemetryEvent:
   Attributes:
@@ -84,6 +104,10 @@ InvasionEndedTelemetryEvent:
     Offset: '0x30'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_OV6L3[0x4]
+    Offset: '0x34'
+    Size: '0x4'
+    Type: char
   - Name: ParticipantFactionData
     Offset: '0x38'
     Size: '0x10'
@@ -92,6 +116,10 @@ InvasionEndedTelemetryEvent:
     Offset: '0x48'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_II4PG[0x7]
+    Offset: '0x49'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x50'
 InvasionParticipatingCrewData:
   Attributes:
@@ -103,6 +131,10 @@ InvasionParticipatingCrewData:
     Offset: '0x10'
     Size: '0x10'
     Type: TArray<class CrewVoyageParticipant*>
+  - Name: pad0x58_RTKTB[0x58]
+    Offset: '0x20'
+    Size: '0x58'
+    Type: char
   ClassSize: '0x78'
 InvasionServiceMatchmakingCrewInfo:
   Attributes:
@@ -114,9 +146,17 @@ InvasionServiceMatchmakingCrewInfo:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_SUOMA[0x3]
+    Offset: '0x11'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x14'
 MatchesCreateMatchSuccessfulRpc:
   Attributes:
+  - Name: pad0x18_20CGX[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: MatchID
     Offset: '0x18'
     Size: '0x10'
@@ -124,6 +164,10 @@ MatchesCreateMatchSuccessfulRpc:
   ClassSize: '0x28'
 MatchesTriggerCreateMatchRpc:
   Attributes:
+  - Name: pad0x18_YI992[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: ActivityId
     Offset: '0x18'
     Size: '0x10'
@@ -132,6 +176,10 @@ MatchesTriggerCreateMatchRpc:
     Offset: '0x28'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_0Z9AA[0x4]
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: char
   - Name: PlayersTeamA
     Offset: '0x30'
     Size: '0x10'
@@ -148,6 +196,10 @@ MatchesTriggerCreateMatchRpc:
     Offset: '0x51'
     Size: '0x1'
     Type: byte
+  - Name: pad0x6_DEFNL[0x6]
+    Offset: '0x52'
+    Size: '0x6'
+    Type: char
   - Name: IdTeamA
     Offset: '0x58'
     Size: '0x10'
@@ -159,6 +211,10 @@ MatchesTriggerCreateMatchRpc:
   ClassSize: '0x78'
 MatchesTriggerEndMatchRpc:
   Attributes:
+  - Name: pad0x18_PH25X[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: MatchID
     Offset: '0x18'
     Size: '0x10'
@@ -174,6 +230,10 @@ MatchesTriggerEndMatchRpc:
   ClassSize: '0x48'
 MatchesTriggerPlayerJoinRpc:
   Attributes:
+  - Name: pad0x18_9N9BP[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: MatchID
     Offset: '0x18'
     Size: '0x10'
@@ -189,6 +249,10 @@ MatchesTriggerPlayerJoinRpc:
   ClassSize: '0x60'
 MatchesTriggerPlayerLeaveRpc:
   Attributes:
+  - Name: pad0x18_OX11H[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: MatchID
     Offset: '0x18'
     Size: '0x10'
@@ -200,6 +264,10 @@ MatchesTriggerPlayerLeaveRpc:
   ClassSize: '0x50'
 MatchesTriggerStartMatchRpc:
   Attributes:
+  - Name: pad0x18_Z8IP8[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: MatchID
     Offset: '0x18'
     Size: '0x10'
@@ -207,6 +275,10 @@ MatchesTriggerStartMatchRpc:
   ClassSize: '0x28'
 MatchesTriggerUpdateMatchRpc:
   Attributes:
+  - Name: pad0x18_HLAIZ[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: MatchID
     Offset: '0x18'
     Size: '0x10'
@@ -226,6 +298,10 @@ PlayerData:
     Offset: '0x20'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_WO7AL[0x7]
+    Offset: '0x21'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x28'
 ReplicatedInvasionCrewMusicState:
   Attributes:

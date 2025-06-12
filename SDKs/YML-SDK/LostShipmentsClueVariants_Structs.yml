@@ -6,10 +6,10 @@ ClueDestinationChoice:
     Offset: '0x0'
     Size: '0x8'
     Type: class ClueDestinationDescriptor*
-  - Name: ClueChoice
+  - Name: pad0x8_RF4P5[0x8]
     Offset: '0x8'
-    Size: '0x2'
-    Type: int16
+    Size: '0x8'
+    Type: char
   ClassSize: '0x10'
 ClueDestinationToTextIndex:
   Attributes:
@@ -17,21 +17,17 @@ ClueDestinationToTextIndex:
     Offset: '0x0'
     Size: '0x8'
     Type: class UClass*
-  - Name: RequiredIndexAsset
+  - Name: pad0x20_ZOVTC[0x20]
     Offset: '0x8'
     Size: '0x20'
-    Type: assetobject
+    Type: char
   ClassSize: '0x28'
 ExistingNPCToPhasedNPC:
   Attributes:
-  - Name: ExistingNPC
+  - Name: pad0x40_XBN95[0x40]
     Offset: '0x0'
-    Size: '0x20'
-    Type: assetclass
-  - Name: PhasedNPC
-    Offset: '0x20'
-    Size: '0x20'
-    Type: assetclass
+    Size: '0x40'
+    Type: char
   ClassSize: '0x40'
 GenderSpecificTextPairings:
   Attributes:
@@ -54,6 +50,10 @@ MapRadialIconData:
     Offset: '0x10'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_JF5NJ[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x18'
 TextEntryWithLayout:
   Attributes:
@@ -65,4 +65,8 @@ TextEntryWithLayout:
     Offset: '0x38'
     Size: '0x3c'
     Type: struct TreasureMapWidgetText
+  - Name: pad0x4_8E9YX[0x4]
+    Offset: '0x74'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x78'

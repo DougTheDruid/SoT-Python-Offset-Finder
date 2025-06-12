@@ -21,6 +21,10 @@ ContestMatchmakingFactionMapEntry:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_13TWU[0x7]
+    Offset: '0x9'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x10'
 ContestMatchmakingServerRequestModel:
   Attributes:
@@ -48,10 +52,6 @@ ContestMatchmakingServerRequestModel:
     Offset: '0x50'
     Size: '0x10'
     Type: struct FString
-  - Name: FeatureHash
-    Offset: '0x60'
-    Size: '0x4'
-    Type: uint32
   - Name: PlayModeTags
     Offset: '0x68'
     Size: '0x10'
@@ -68,6 +68,10 @@ ContestMatchmakingServerRequestModel:
     Offset: '0x98'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_KV9VM[0x3]
+    Offset: '0x99'
+    Size: '0x3'
+    Type: char
   - Name: RequestCorrelationId
     Offset: '0x9c'
     Size: '0x10'
@@ -76,6 +80,10 @@ ContestMatchmakingServerRequestModel:
     Offset: '0xac'
     Size: '0x10'
     Type: struct Guid
+  - Name: pad0x4_C2272[0x4]
+    Offset: '0xbc'
+    Size: '0x4'
+    Type: char
   ClassSize: '0xc0'
 ExistingServerCrewModel:
   Attributes:
@@ -91,10 +99,18 @@ ExistingServerCrewModel:
     Offset: '0x14'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_S266V[0x3]
+    Offset: '0x15'
+    Size: '0x3'
+    Type: char
   - Name: PvPSkillLevel
     Offset: '0x18'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_A6QDL[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   - Name: TimeInMatchmaking
     Offset: '0x20'
     Size: '0x8'
@@ -145,6 +161,10 @@ GameMainEventTypeModel:
     Offset: '0x31'
     Size: '0x1'
     Type: byte
+  - Name: pad0x6_82VIO[0x6]
+    Offset: '0x32'
+    Size: '0x6'
+    Type: char
   ClassSize: '0x38'
 GameSubEventTypeModel:
   Attributes:
@@ -156,13 +176,17 @@ GameSubEventTypeModel:
     Offset: '0x10'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_EH1IU[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x18'
 OptionalPlayModeModel:
   Attributes:
-  - Name: OptionalPlayModeMap
+  - Name: pad0x50_LXBOL[0x50]
     Offset: '0x0'
     Size: '0x50'
-    Type: map
+    Type: char
   ClassSize: '0x50'
 ServerContendedModel:
   Attributes:
@@ -201,6 +225,10 @@ ServerCrewModel:
     Offset: '0x48'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_YXLHO[0x4]
+    Offset: '0x4c'
+    Size: '0x4'
+    Type: char
   - Name: Positions
     Offset: '0x50'
     Size: '0x10'
@@ -213,6 +241,10 @@ ServerCrewModel:
     Offset: '0x70'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_52429[0x3]
+    Offset: '0x71'
+    Size: '0x3'
+    Type: char
   - Name: PvPSkillLevel
     Offset: '0x74'
     Size: '0x4'
@@ -229,6 +261,10 @@ ServerCrewModel:
     Offset: '0x8c'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_D2NSP[0x3]
+    Offset: '0x8d'
+    Size: '0x3'
+    Type: char
   - Name: RequestedGameEvent
     Offset: '0x90'
     Size: '0x10'
@@ -280,10 +316,6 @@ ServerCrewRequestModel:
     Offset: '0x60'
     Size: '0x10'
     Type: struct FString
-  - Name: FeatureHash
-    Offset: '0x70'
-    Size: '0x4'
-    Type: uint32
   - Name: PlayModeTags
     Offset: '0x78'
     Size: '0x10'
@@ -335,14 +367,14 @@ ServerCrewResponseModel:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_0YK29[0x7]
+    Offset: '0x1'
+    Size: '0x7'
+    Type: char
   - Name: Crews
     Offset: '0x8'
     Size: '0x10'
     Type: TArray<struct ServerCrewModel>
-  - Name: OptionalPlayModeInfo
-    Offset: '0x18'
-    Size: '0x50'
-    Type: map
   - Name: RetryAfter
     Offset: '0x68'
     Size: '0x8'
@@ -381,10 +413,6 @@ ServerQueueWaitTimesRequestModel:
     Offset: '0x10'
     Size: '0x10'
     Type: struct FString
-  - Name: FeatureHash
-    Offset: '0x20'
-    Size: '0x4'
-    Type: uint32
   - Name: PrivateServerId
     Offset: '0x28'
     Size: '0x10'

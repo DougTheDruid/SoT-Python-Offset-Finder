@@ -9,6 +9,7 @@ struct AshenLordFireShroudParams
 public:
 	class UClass*                                                FireShroudZoneClass;                               // 0x0(0x8)
 	struct Vector                                                FireShroudCollisionVolume;                         // 0x8(0xc)
+	char                                                         pad0x4_KYL5C[0x4];                                 // 0x14(0x4)
 };
 
 
@@ -18,6 +19,7 @@ struct MeleeAttackIdWeights
 public:
 	class UClass*                                                MeleeAttackType;                                   // 0x0(0x8)
 	float                                                        Weight;                                            // 0x8(0x4)
+	char                                                         pad0x4_QUWXC[0x4];                                 // 0xc(0x4)
 };
 
 

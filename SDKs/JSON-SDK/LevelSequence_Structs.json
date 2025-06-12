@@ -3,9 +3,9 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "ObjectOrOwner",
-        "Type": "lazyobject",
-        "Size": "0x1c",
+        "Name": "pad0x20_Q7F4Y[0x20]",
+        "Type": "char",
+        "Size": "0x20",
         "Offset": "0x0"
       },
       {
@@ -15,10 +15,32 @@
         "Offset": "0x20"
       },
       {
-        "Name": "CachedComponent",
-        "Type": "class Object*",
+        "Name": "pad0x8_IA7EX[0x8]",
+        "Type": "char",
         "Size": "0x8",
         "Offset": "0x30"
+      }
+    ]
+  },
+  "LevelSequencePlaybackSettings": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x28_E2W1W[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "LevelSequenceObjectReferenceMap": {
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Name": "pad0xa0_EWGON[0xa0]",
+        "Type": "char",
+        "Size": "0xa0",
+        "Offset": "0x0"
       }
     ]
   },
@@ -32,10 +54,38 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x3_YATD9[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
         "Name": "FrameRate",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4"
+      }
+    ]
+  },
+  "LevelSequenceObjectReference": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_YUPUR[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "BoundActorProxy": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_J3Q15[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },
@@ -55,6 +105,12 @@
         "Offset": "0x38"
       },
       {
+        "Name": "pad0x4_3JSKC[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
         "Name": "CurrentShotName",
         "Type": "struct FText",
         "Size": "0x38",
@@ -65,6 +121,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x78"
+      },
+      {
+        "Name": "pad0x4_D7GLO[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x7c"
       },
       {
         "Name": "CameraComponent",

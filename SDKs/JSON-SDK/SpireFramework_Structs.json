@@ -1,4 +1,33 @@
 {
+  "SpireInfo": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "LevelId",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ShouldBeLoaded",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "ShouldBeVisible",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x5"
+      },
+      {
+        "Name": "pad0x2_78Z37[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x6"
+      }
+    ]
+  },
   "SpireEntry": {
     "ClassSize": "0x14",
     "Attributes": [
@@ -38,33 +67,10 @@
         "Offset": "0x10"
       },
       {
-        "Name": "InstancedLevelPaths",
-        "Type": "map",
+        "Name": "pad0x50_IPYQV[0x50]",
+        "Type": "char",
         "Size": "0x50",
         "Offset": "0x18"
-      }
-    ]
-  },
-  "SpireInfo": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "LevelId",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ShouldBeLoaded",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "ShouldBeVisible",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x5"
       }
     ]
   },

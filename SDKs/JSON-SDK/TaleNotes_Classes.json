@@ -6,6 +6,12 @@
     "ClassSize": "0x270",
     "Attributes": [
       {
+        "Name": "pad0x10_1Q3LL[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x7f0"
+      },
+      {
         "Name": "CanvasWidth",
         "Type": "int",
         "Size": "0x4",
@@ -22,6 +28,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x808"
+      },
+      {
+        "Name": "pad0x4_EAD89[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x80c"
       },
       {
         "Name": "Font",
@@ -106,6 +118,12 @@
         "Type": "class ZoomInOnWieldableItemComponent*",
         "Size": "0x8",
         "Offset": "0x978"
+      },
+      {
+        "Name": "pad0xe0_4CXSR[0xe0]",
+        "Type": "char",
+        "Size": "0xe0",
+        "Offset": "0x980"
       }
     ]
   },

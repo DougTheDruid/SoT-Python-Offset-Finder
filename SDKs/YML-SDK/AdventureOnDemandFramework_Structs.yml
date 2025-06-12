@@ -73,6 +73,10 @@ AdventureOnDemandTallTaleProposalGroup:
     Offset: '0x55'
     Size: '0x1'
     Type: byte
+  - Name: pad0x2_C8OVQ[0x2]
+    Offset: '0x56'
+    Size: '0x2'
+    Type: char
   - Name: InitialProposal
     Offset: '0x58'
     Size: '0x8'
@@ -100,6 +104,10 @@ AdventureOnDemandVoyageDiscoveryPageMysteryProposal:
     Offset: '0x20'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_A9C3C[0x7]
+    Offset: '0x21'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x28'
 AdventureOnDemandVoyageSelectionVoyageProposal:
   Attributes:
@@ -107,6 +115,10 @@ AdventureOnDemandVoyageSelectionVoyageProposal:
     Offset: '0x0'
     Size: '0xc'
     Type: struct FeatureFlag
+  - Name: pad0x4_SCWK7[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   - Name: Prerequisites
     Offset: '0x10'
     Size: '0x10'
@@ -127,6 +139,10 @@ AdventureOnDemandVoyageSelectionVoyageProposal:
     Offset: '0x26'
     Size: '0x1'
     Type: byte
+  - Name: pad0x1_AOCUI[0x1]
+    Offset: '0x27'
+    Size: '0x1'
+    Type: char
   - Name: Proposal
     Offset: '0x28'
     Size: '0x8'
@@ -154,6 +170,10 @@ AdventureOnDemandVoyageSelectionVoyageProposalGroup:
     Offset: '0x24'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_UX5H3[0x3]
+    Offset: '0x25'
+    Size: '0x3'
+    Type: char
   - Name: Prerequisites
     Offset: '0x28'
     Size: '0x10'
@@ -163,6 +183,13 @@ AdventureOnDemandVoyageSelectionVoyageProposalGroup:
     Size: '0x10'
     Type: TArray<struct AdventureOnDemandVoyageSelectionVoyageProposal>
   ClassSize: '0x48'
+AdventureOnDemandVoyageSurfaceTaleFinished:
+  Attributes:
+  - Name: pad0x1_VMUB0[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
 ContendedResourceGameEventOnDemandArrivalTunnelWorkerFailedTelemetryEvent:
   Attributes:
   - Name: TunnelInstanceId
@@ -192,6 +219,10 @@ ExtraSpawnDistanceByIslandType:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_32NAO[0x3]
+    Offset: '0x1'
+    Size: '0x3'
+    Type: char
   - Name: ExtraSpawnDistance
     Offset: '0x4'
     Size: '0x4'
@@ -252,7 +283,18 @@ GameEventOnDemandCompanyStatData:
     Offset: '0x8'
     Size: '0x4'
     Type: struct PlayerStat
+  - Name: pad0x4_7XADK[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x10'
+OnDemandQuestResumeConditionMetReasonQuestVariable:
+  Attributes:
+  - Name: pad0x30_AAY0R[0x30]
+    Offset: '0x0'
+    Size: '0x30'
+    Type: char
+  ClassSize: '0x30'
 QuestTableBakedDiscoverTile:
   Attributes:
   - Name: TileId
@@ -279,6 +321,10 @@ QuestTableBakedDiscoverTile:
     Offset: '0xf0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_HE4JS[0x7]
+    Offset: '0xf1'
+    Size: '0x7'
+    Type: char
   - Name: BackgroundImageUrl
     Offset: '0xf8'
     Size: '0x10'
@@ -298,6 +344,10 @@ QuestTableBakedDiscoverTile:
   ClassSize: '0x138'
 QuestTableBakedInfoDiscoverTile:
   Attributes:
+  - Name: pad0x138_D84MQ[0x138]
+    Offset: '0x0'
+    Size: '0x138'
+    Type: char
   - Name: InfoTipIdClientConfigName
     Offset: '0x138'
     Size: '0x10'
@@ -305,6 +355,10 @@ QuestTableBakedInfoDiscoverTile:
   ClassSize: '0x148'
 QuestTableBakedQuestDiscoverTile:
   Attributes:
+  - Name: pad0x138_UYY99[0x138]
+    Offset: '0x0'
+    Size: '0x138'
+    Type: char
   - Name: Proposal
     Offset: '0x138'
     Size: '0x8'
@@ -338,6 +392,10 @@ VoyageHintPopupDescEntry:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_L7HPU[0x7]
+    Offset: '0x1'
+    Size: '0x7'
+    Type: char
   - Name: HintPopUpMessageDesc
     Offset: '0x8'
     Size: '0x8'

@@ -2,6 +2,10 @@
 # https://github.com/DougTheDruid
 MovieSceneAkAudioEventTemplate:
   Attributes:
+  - Name: pad0x18_OKOMP[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: Section
     Offset: '0x18'
     Size: '0x8'
@@ -20,6 +24,10 @@ MovieSceneAkAudioRTPCSectionData:
   ClassSize: '0x88'
 MovieSceneAkAudioRTPCTemplate:
   Attributes:
+  - Name: pad0x18_ZXT94[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: Section
     Offset: '0x18'
     Size: '0x8'
@@ -43,6 +51,10 @@ MultiEmitterData:
     Offset: '0x18'
     Size: '0xc'
     Type: struct Vector
+  - Name: pad0x4_JHS2W[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x28'
 WwiseAudioAcousticSurfaceParams:
   Attributes:
@@ -102,6 +114,10 @@ WwiseNativeEmitterPoolDensityParams:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_81TCG[0x7]
+    Offset: '0x1'
+    Size: '0x7'
+    Type: char
   - Name: PoolDensityAudioPlayEvent
     Offset: '0x8'
     Size: '0x8'

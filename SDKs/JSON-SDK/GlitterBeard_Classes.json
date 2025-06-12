@@ -1,107 +1,61 @@
 {
-  "GlitterBeardTree": {
-    "Super": "Actor",
-    "FullSize": "0x6f0",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x328",
+  "GlitterBeardIsHideoutOpenConditional": {
+    "Super": "NPCDialogConditional",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GlitterBeardTrustedTreeInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GlitterBeardTreeVisualFeedbackComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x108",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "ActionRulesComponent",
-        "Type": "class ActionRulesComponent*",
-        "Size": "0x8",
-        "Offset": "0x3f0"
+        "Name": "FeedbackActions",
+        "Type": "TArray<struct VisualFeedbackList>",
+        "Size": "0x10",
+        "Offset": "0xb8"
       },
       {
-        "Name": "InteractableComponent",
-        "Type": "class ActionRulesInteractableComponent*",
-        "Size": "0x8",
-        "Offset": "0x3f8"
+        "Name": "pad0x10_1FLEP[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0xc8"
       },
       {
-        "Name": "LanternLightDelay",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x400"
+        "Name": "CurrentStates",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0xd8"
       },
       {
-        "Name": "UnlockVFXCoordinatorComponent",
-        "Type": "class GlitterBeardUnlockVFXCoordinatorComponent*",
-        "Size": "0x8",
-        "Offset": "0x408"
-      },
-      {
-        "Name": "TelemetryComponent",
-        "Type": "class GlitterBeardTelemetryComponent*",
-        "Size": "0x8",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "VocalShanty",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "VocalsFadeEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "VocalsFadeDelay",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "UnlockDelay",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x42c"
-      },
-      {
-        "Name": "FinaleCoordinator",
-        "Type": "class GlitterBeardFinaleCoordinatorComponent*",
-        "Size": "0x8",
-        "Offset": "0x430"
-      },
-      {
-        "Name": "LandmarkReactionTrigger",
-        "Type": "class LandmarkReactionTriggerComponent*",
-        "Size": "0x8",
-        "Offset": "0x438"
-      },
-      {
-        "Name": "DistanceFromTreeToPauseAISpawn",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x440"
-      },
-      {
-        "Name": "HideoutDoor",
-        "Type": "class SlidingDoor*",
-        "Size": "0x8",
-        "Offset": "0x698"
-      },
-      {
-        "Name": "SoundEmitter",
-        "Type": "struct WwiseEmitter",
+        "Name": "pad0x20_P1MKI[0x20]",
+        "Type": "char",
         "Size": "0x20",
-        "Offset": "0x6a0"
+        "Offset": "0xe8"
       }
     ]
   },
   "GlitterbeardSlidingDoor": {
     "Super": "SlidingDoor",
-    "FullSize": "0x540",
-    "InheritedSize": "0x538",
+    "FullSize": "0x518",
+    "InheritedSize": "0x510",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "DecalBlendComponent",
         "Type": "class EffectBlendControllerComponent*",
         "Size": "0x8",
-        "Offset": "0x538"
+        "Offset": "0x510"
       }
     ]
   },
@@ -116,6 +70,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x4_1AO25[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
       },
       {
         "Name": "WwisePool",
@@ -134,72 +94,207 @@
         "Type": "struct WwiseEmitter",
         "Size": "0x20",
         "Offset": "0x50"
+      },
+      {
+        "Name": "pad0x10_YCRTG[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x70"
+      }
+    ]
+  },
+  "GlitterBeardTelemetryComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x100",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x48_VGA31[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0xb8"
       }
     ]
   },
   "GlitterBeardFinaleCoordinatorComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x170",
-    "InheritedSize": "0xc8",
+    "FullSize": "0x160",
+    "InheritedSize": "0xb8",
     "ClassSize": "0xa8",
     "Attributes": [
       {
         "Name": "AudioEventToSynchronise",
         "Type": "class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0xc8"
+        "Offset": "0xb8"
       },
       {
         "Name": "ReplicationState",
         "Type": "struct FinaleReplicationState",
         "Size": "0x10",
-        "Offset": "0xd0"
-      }
-    ]
-  },
-  "GlitterBeardTreeVisualFeedbackComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x118",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "FeedbackActions",
-        "Type": "TArray<struct VisualFeedbackList>",
-        "Size": "0x10",
-        "Offset": "0xc8"
+        "Offset": "0xc0"
       },
       {
-        "Name": "CurrentStates",
-        "Type": "TArray<char>",
-        "Size": "0x10",
-        "Offset": "0xe8"
+        "Name": "pad0x90_1ZBT3[0x90]",
+        "Type": "char",
+        "Size": "0x90",
+        "Offset": "0xd0"
       }
     ]
   },
   "GlitterBeardUnlockVFXCoordinatorComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0xf0",
-    "InheritedSize": "0xc8",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xb8",
     "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "TreeActor",
         "Type": "struct ActorComponentSelector",
         "Size": "0x10",
-        "Offset": "0xc8"
+        "Offset": "0xb8"
       },
       {
         "Name": "TreeMaterialInstanceDynamic",
         "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
-        "Offset": "0xd8"
+        "Offset": "0xc8"
       },
       {
         "Name": "TreeBlendTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xe0"
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0xc_3YW4J[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0xd4"
+      }
+    ]
+  },
+  "GlitterBeardEntitlementDesc": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GlitterBeardTree": {
+    "Super": "Actor",
+    "FullSize": "0x6c0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x320",
+    "Attributes": [
+      {
+        "Name": "pad0x28_JRIKR[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "ActionRulesComponent",
+        "Type": "class ActionRulesComponent*",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "InteractableComponent",
+        "Type": "class ActionRulesInteractableComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "LanternLightDelay",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "pad0x4_UJ2RN[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3dc"
+      },
+      {
+        "Name": "UnlockVFXCoordinatorComponent",
+        "Type": "class GlitterBeardUnlockVFXCoordinatorComponent*",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "TelemetryComponent",
+        "Type": "class GlitterBeardTelemetryComponent*",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "VocalShanty",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "VocalsFadeEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "VocalsFadeDelay",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "UnlockDelay",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x404"
+      },
+      {
+        "Name": "FinaleCoordinator",
+        "Type": "class GlitterBeardFinaleCoordinatorComponent*",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Name": "LandmarkReactionTrigger",
+        "Type": "class LandmarkReactionTriggerComponent*",
+        "Size": "0x8",
+        "Offset": "0x410"
+      },
+      {
+        "Name": "DistanceFromTreeToPauseAISpawn",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x418"
+      },
+      {
+        "Name": "pad0x24c_QGZXJ[0x24c]",
+        "Type": "char",
+        "Size": "0x24c",
+        "Offset": "0x41c"
+      },
+      {
+        "Name": "HideoutDoor",
+        "Type": "class SlidingDoor*",
+        "Size": "0x8",
+        "Offset": "0x668"
+      },
+      {
+        "Name": "SoundEmitter",
+        "Type": "struct WwiseEmitter",
+        "Size": "0x20",
+        "Offset": "0x670"
+      },
+      {
+        "Name": "pad0x30_ATE2F[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x690"
       }
     ]
   },

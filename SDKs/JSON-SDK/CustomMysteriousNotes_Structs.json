@@ -1,49 +1,4 @@
 {
-  "CustomPlayerNoteList": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Notes",
-        "Type": "TArray<struct NotesRemoteServiceNoteDetailModel>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CreateMysteriousNoteGameServerResponseModel": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "Success",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NoteId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "DestroyMysteriousNoteGameServerRequestModel": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "PlayerNetGUID",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NoteGUID",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x4"
-      }
-    ]
-  },
   "CreateMysteriousNoteGameServerRequestModel": {
     "ClassSize": "0x40",
     "Attributes": [
@@ -52,6 +7,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_RLGS2[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
       },
       {
         "Name": "NoteType",
@@ -76,6 +37,63 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x7_S9FQ9[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x39"
+      }
+    ]
+  },
+  "CustomPlayerNoteList": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Notes",
+        "Type": "TArray<struct NotesRemoteServiceNoteDetailModel>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CreateMysteriousNoteGameServerResponseModel": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "Success",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_1RLWN[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "NoteId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "DestroyMysteriousNoteGameServerRequestModel": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "PlayerNetGUID",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NoteGUID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x4"
       }
     ]
   },

@@ -22,12 +22,44 @@ EventExitedWatercraft:
     Size: '0x8'
     Type: class Actor*
   ClassSize: '0x10'
+EventOarStrokeEnded:
+  Attributes:
+  - Name: pad0x1_G33JN[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
+EventRowboatEnteredWater:
+  Attributes:
+  - Name: pad0x1_ZENN6[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
+EventRowboatExitedWater:
+  Attributes:
+  - Name: pad0x1_32W0X[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
+EventRowboatLoaded:
+  Attributes:
+  - Name: pad0x1_7ZLZK[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
 Oar:
   Attributes:
   - Name: OarParams
     Offset: '0x0'
     Size: '0x38'
     Type: struct OarParams
+  - Name: pad0x28_HT3HL[0x28]
+    Offset: '0x38'
+    Size: '0x28'
+    Type: char
   ClassSize: '0x60'
 OarParams:
   Attributes:
@@ -68,6 +100,13 @@ OarParams:
     Size: '0x4'
     Type: float
   ClassSize: '0x38'
+QuestVariableWatercraft:
+  Attributes:
+  - Name: pad0x30_NZSOW[0x30]
+    Offset: '0x0'
+    Size: '0x30'
+    Type: char
+  ClassSize: '0x30'
 RowboatDamageEffectData:
   Attributes:
   - Name: DynamicMaterialInstance
@@ -78,17 +117,25 @@ RowboatDamageEffectData:
     Offset: '0x8'
     Size: '0x4'
     Type: float
+  - Name: pad0xc_U0XOC[0xc]
+    Offset: '0xc'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x18'
 RowboatLiveryByWeight:
   Attributes:
-  - Name: LiveryEntitlement
+  - Name: pad0x20_E74YQ[0x20]
     Offset: '0x0'
     Size: '0x20'
-    Type: assetclass
+    Type: char
   - Name: Weight
     Offset: '0x20'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_B0KUP[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x28'
 RowboatLiveryPickerDataAssetConditions:
   Attributes:
@@ -115,6 +162,10 @@ RowboatMountStateTelemetryEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_GREZC[0x3]
+    Offset: '0x11'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x14'
 RowboatStrainDamageData:
   Attributes:
@@ -165,6 +216,10 @@ ScrapeableDamageSpeedEntry:
     Offset: '0x10'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_HTVOG[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x18'
 WatercraftDespawnTelemetryEvent:
   Attributes:
@@ -180,6 +235,10 @@ WatercraftDespawnTelemetryEvent:
     Offset: '0x1c'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_ZW6CD[0x3]
+    Offset: '0x1d'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x20'
 WatercraftRolloverCorrector:
   Attributes:
@@ -191,6 +250,10 @@ WatercraftRolloverCorrector:
     Offset: '0x4'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_1O0SH[0x4]
+    Offset: '0x8'
+    Size: '0x4'
+    Type: char
   ClassSize: '0xc'
 WatercraftSpawnTelemetryEvent:
   Attributes:

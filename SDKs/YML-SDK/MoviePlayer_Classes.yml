@@ -10,6 +10,10 @@ MoviePlayerSettings:
     Offset: '0x29'
     Size: '0x1'
     Type: bool
+  - Name: pad0x6_ECCHU[0x6]
+    Offset: '0x2a'
+    Size: '0x6'
+    Type: char
   - Name: StartupMovies
     Offset: '0x30'
     Size: '0x10'

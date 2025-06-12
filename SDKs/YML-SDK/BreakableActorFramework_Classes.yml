@@ -3,160 +3,204 @@
 BreakableActorAudioComponent:
   Attributes:
   - Name: UseParentEmitter
-    Offset: '0xc8'
+    Offset: '0xb8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_YEMFA[0x7]
+    Offset: '0xb9'
+    Size: '0x7'
+    Type: char
   - Name: AudioPool
-    Offset: '0xd0'
+    Offset: '0xc0'
     Size: '0x8'
     Type: class WwiseObjectPoolWrapper*
   - Name: PlayMusicEvent
-    Offset: '0xd8'
+    Offset: '0xc8'
     Size: '0x8'
     Type: class WwiseEvent*
   - Name: StopMusicEvent
-    Offset: '0xe0'
+    Offset: '0xd0'
     Size: '0x8'
     Type: class WwiseEvent*
   - Name: PlayDamagedEvent
-    Offset: '0xe8'
+    Offset: '0xd8'
     Size: '0x8'
     Type: class WwiseEvent*
   - Name: PlayDestroyedEvent
-    Offset: '0xf0'
+    Offset: '0xe0'
     Size: '0x8'
     Type: class WwiseEvent*
+  - Name: pad0xd0_ZYNWF[0xd0]
+    Offset: '0xe8'
+    Size: '0xd0'
+    Type: char
   ClassSize: '0x100'
-  FullSize: '0x1c8'
-  InheritedSize: '0xc8'
+  FullSize: '0x1b8'
+  InheritedSize: '0xb8'
   Super: ActorComponent
 BreakableActorBase:
   Attributes:
+  - Name: pad0x20_A7Z7Q[0x20]
+    Offset: '0x3a0'
+    Size: '0x20'
+    Type: char
   - Name: DespawnDelay
-    Offset: '0x3e8'
+    Offset: '0x3c0'
     Size: '0x4'
     Type: float
-  - Name: OnBreakableActorDamaged
-    Offset: '0x3f0'
-    Size: '0x10'
-    Type: multicastinlinedelegate
-  - Name: OnBreakableActorDestroyed
-    Offset: '0x400'
-    Size: '0x10'
-    Type: multicastinlinedelegate
+  - Name: pad0x4_1ZDZJ[0x4]
+    Offset: '0x3c4'
+    Size: '0x4'
+    Type: char
   - Name: ThirdPersonMesh
-    Offset: '0x410'
+    Offset: '0x3e8'
     Size: '0x8'
     Type: class PrimitiveComponent*
   - Name: HealthComponent
-    Offset: '0x418'
+    Offset: '0x3f0'
     Size: '0x8'
     Type: class HealthComponent*
   - Name: AudioComponent
-    Offset: '0x420'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: class BreakableActorAudioComponent*
   - Name: VFXComponent
-    Offset: '0x428'
+    Offset: '0x400'
     Size: '0x8'
     Type: class BreakableActorVfxComponent*
   - Name: DamageMaterialComponent
-    Offset: '0x430'
+    Offset: '0x408'
     Size: '0x8'
     Type: class BreakableActorDynamicMaterialComponent*
   - Name: DamageableComponent
-    Offset: '0x438'
+    Offset: '0x410'
     Size: '0x8'
     Type: class ActorDamageableComponent*
+  - Name: pad0x118_BHYAH[0x118]
+    Offset: '0x418'
+    Size: '0x118'
+    Type: char
   ClassSize: '0x190'
-  FullSize: '0x558'
-  InheritedSize: '0x3c8'
+  FullSize: '0x530'
+  InheritedSize: '0x3a0'
   Super: Actor
 BreakableActorDynamicMaterialComponent:
   Attributes:
-  - Name: MaterialElementIndex
-    Offset: '0xc8'
+  - Name: pad0x4_5OZ68[0x4]
+    Offset: '0xb8'
     Size: '0x4'
-    Type: uint32
+    Type: char
   - Name: MagicColourPropertyName
-    Offset: '0xcc'
+    Offset: '0xbc'
     Size: '0x8'
     Type: struct FName
   - Name: DamageLevelPropertyName
-    Offset: '0xd4'
+    Offset: '0xc4'
     Size: '0x8'
     Type: struct FName
   - Name: TimeBasedPropertyName
-    Offset: '0xdc'
+    Offset: '0xcc'
     Size: '0x8'
     Type: struct FName
   - Name: HitPositionPropertyName
-    Offset: '0xe4'
+    Offset: '0xd4'
     Size: '0x8'
     Type: struct FName
   - Name: CollapseStartTimePropertyName
-    Offset: '0xec'
+    Offset: '0xdc'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x4_M841Y[0x4]
+    Offset: '0xe4'
+    Size: '0x4'
+    Type: char
   - Name: TargetMesh
-    Offset: '0xf8'
+    Offset: '0xe8'
     Size: '0x8'
     Type: class PrimitiveComponent*
   - Name: DynamicMaterials
-    Offset: '0x100'
+    Offset: '0xf0'
     Size: '0x10'
     Type: TArray<class MaterialInstanceDynamic*>
   - Name: BreakableActor
-    Offset: '0x110'
+    Offset: '0x100'
     Size: '0x8'
     Type: class BreakableActorBase*
+  - Name: pad0x108_F2QXT[0x108]
+    Offset: '0x108'
+    Size: '0x108'
+    Type: char
   ClassSize: '0x158'
-  FullSize: '0x220'
-  InheritedSize: '0xc8'
+  FullSize: '0x210'
+  InheritedSize: '0xb8'
   Super: ActorComponent
+BreakableActorItemSpawnComponent:
+  Attributes:
+  - Name: pad0x80_U8XYH[0x80]
+    Offset: '0x480'
+    Size: '0x80'
+    Type: char
+  ClassSize: '0x80'
+  FullSize: '0x500'
+  InheritedSize: '0x480'
+  Super: ItemSpawnComponent
 BreakableActorVfxComponent:
   Attributes:
   - Name: VFXTintColour
-    Offset: '0xc8'
+    Offset: '0xb8'
     Size: '0x4'
     Type: struct Color
+  - Name: pad0x4_GRI6B[0x4]
+    Offset: '0xbc'
+    Size: '0x4'
+    Type: char
   - Name: DamagedParticleSystem
-    Offset: '0xd0'
+    Offset: '0xc0'
     Size: '0x8'
     Type: class Object*
   - Name: DestroyedParticleSystem
-    Offset: '0xd8'
+    Offset: '0xc8'
     Size: '0x8'
     Type: class Object*
   - Name: GlowMaterialIndex
-    Offset: '0xe0'
+    Offset: '0xd0'
     Size: '0x4'
     Type: int
   - Name: GlowMaterialPropertyName
-    Offset: '0xe4'
+    Offset: '0xd4'
     Size: '0x8'
     Type: struct FName
   - Name: GlowMaterialScale
-    Offset: '0xec'
+    Offset: '0xdc'
     Size: '0x4'
     Type: float
   - Name: GlowMaterialBias
-    Offset: '0xf0'
+    Offset: '0xe0'
     Size: '0x4'
     Type: float
   - Name: GlowUpdateSpeed
-    Offset: '0xf4'
+    Offset: '0xe4'
     Size: '0x4'
     Type: float
   - Name: BreakableActor
-    Offset: '0xf8'
+    Offset: '0xe8'
     Size: '0x8'
     Type: class BreakableActorBase*
   - Name: GlowMaterial
-    Offset: '0x100'
+    Offset: '0xf0'
     Size: '0x8'
     Type: class MaterialInstanceDynamic*
+  - Name: pad0xb8_5IGNW[0xb8]
+    Offset: '0xf8'
+    Size: '0xb8'
+    Type: char
   ClassSize: '0xf8'
-  FullSize: '0x1c0'
-  InheritedSize: '0xc8'
+  FullSize: '0x1b0'
+  InheritedSize: '0xb8'
   Super: ActorComponent
+BreakableSarcophagus:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x530'
+  InheritedSize: '0x530'
+  Super: BreakableActorBase

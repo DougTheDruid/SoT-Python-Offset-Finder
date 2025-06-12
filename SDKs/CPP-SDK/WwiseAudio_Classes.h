@@ -6,18 +6,116 @@
 #include "WwiseAudio_Structs.h"
 
 
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class WwiseSoundFrameManager: public Object
+{
+public:
+	char                                                         pad0x20_ZYHFX[0x20];                               // 0x28(0x20)
+};
+
+
 // Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
 class WwiseEvent: public Object
 {
 public:
 	class WwiseBank*                                             RequiredBank;                                      // 0x28(0x8)
 	bool                                                         WaitForBankToLoad;                                 // 0x30(0x1)
-	uint32                                                       WwiseId;                                           // 0x34(0x4)
+	char                                                         pad0x3_AEDN4[0x3];                                 // 0x31(0x3)
 	float                                                        DurationMin;                                       // 0x38(0x4)
 	float                                                        DurationMax;                                       // 0x3c(0x4)
 	float                                                        MaxAttenuation;                                    // 0x40(0x4)
 	char                                                         DurationType;                                      // 0x44(0x1)
 	bool                                                         CookedIsStopEvent;                                 // 0x45(0x1)
+	char                                                         pad0xa_AZ6O3[0xa];                                 // 0x46(0xa)
+};
+
+
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class WwiseCoreAssets: public DataAsset
+{
+public:
+	class WwiseEvent*                                            PauseEventStart;                                   // 0x28(0x8)
+	class WwiseEvent*                                            PauseEventRelease;                                 // 0x30(0x8)
+	class WwiseEvent*                                            StopAllEvent;                                      // 0x38(0x8)
+	class WwiseEvent*                                            WwiseMediaSoundComponentEvent;                     // 0x40(0x8)
+	class WwiseNonShippingAudioRootAsset*                        NonShippingAudioRootAsset;                         // 0x48(0x8)
+	class WwiseIDsDatabase*                                      WwiseIDsDatabase;                                  // 0x50(0x8)
+};
+
+
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
+class AudioReporterSubSystem: public Object
+{
+public:
+	char                                                         pad0x50_FGD8F[0x50];                               // 0x28(0x50)
+};
+
+
+// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
+class WwiseDebugManager: public Object
+{
+public:
+	char                                                         pad0x60_GNFQO[0x60];                               // 0x28(0x60)
+};
+
+
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class WwiseNonShippingAudioAsset: public DataAsset
+{
+public:
+	struct FString                                               CodeName;                                          // 0x28(0x10)
+	struct FString                                               UAssetRelativePath;                                // 0x38(0x10)
+	struct FString                                               StreamRelativePath;                                // 0x48(0x10)
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class WwiseEmitterManager: public Object
+{
+public:
+	char                                                         pad0x20_XJD2P[0x20];                               // 0x28(0x20)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AnimNotifyWwiseEmitterComponentRetrievalInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
+class WwiseBank: public Object
+{
+public:
+	struct FString                                               path;                                              // 0x28(0x10)
+	class WwiseBank*                                             InitBank;                                          // 0x40(0x8)
+	char                                                         pad0x28_3V1C3[0x28];                               // 0x48(0x28)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class WwiseEmitterInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x90 (Full Size[0x128] - InheritedSize[0x98]
+class MovieSceneAkAudioRTPCSection: public MovieSceneSection
+{
+public:
+	char                                                         pad0x8_NIHAT[0x8];                                 // 0x98(0x8)
+	struct FString                                               Name;                                              // 0xa0(0x10)
+	struct RichCurve                                             FloatCurve;                                        // 0xb0(0x78)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class WwiseInputManager: public Object
+{
+public:
+	char                                                         pad0x28_2DUAG[0x28];                               // 0x28(0x28)
 };
 
 
@@ -36,11 +134,12 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
-class MovieSceneAkAudioEventSection: public MovieSceneSection
+// Size 0x10 (Full Size[0x310] - InheritedSize[0x300]
+class MergedMultiEmitterComponent: public WwiseEmitterComponent
 {
 public:
-	class WwiseEvent*                                            Event;                                             // 0x98(0x8)
+	class WwiseObjectPoolWrapper*                                EmitterPool;                                       // 0x300(0x8)
+	class WwiseEvent*                                            PlayEvent;                                         // 0x308(0x8)
 };
 
 
@@ -50,44 +149,16 @@ class MovieSceneAkTrack: public MovieSceneTrack
 public:
 	TArray<class MovieSceneSection*>                             Sections;                                          // 0x88(0x10)
 	bool                                                         bIsAMasterTrack;                                   // 0x98(0x1)
+	char                                                         pad0x7_6LOJM[0x7];                                 // 0x99(0x7)
 };
 
 
-// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
-class WwiseBank: public Object
+// Size 0x20 (Full Size[0x2f0] - InheritedSize[0x2d0]
+class MultiEmitterRootComponent: public SceneComponent
 {
 public:
-	struct FString                                               path;                                              // 0x28(0x10)
-	uint32                                                       WwiseId;                                           // 0x38(0x4)
-	class WwiseBank*                                             InitBank;                                          // 0x40(0x8)
-};
-
-
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class WwiseNonShippingAudioAsset: public DataAsset
-{
-public:
-	struct FString                                               CodeName;                                          // 0x28(0x10)
-	struct FString                                               UAssetRelativePath;                                // 0x38(0x10)
-	struct FString                                               StreamRelativePath;                                // 0x48(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x320] - InheritedSize[0x310]
-class MergedMultiEmitterComponent: public WwiseEmitterComponent
-{
-public:
-	class WwiseObjectPoolWrapper*                                EmitterPool;                                       // 0x310(0x8)
-	class WwiseEvent*                                            PlayEvent;                                         // 0x318(0x8)
-};
-
-
-// Size 0x90 (Full Size[0x128] - InheritedSize[0x98]
-class MovieSceneAkAudioRTPCSection: public MovieSceneSection
-{
-public:
-	struct FString                                               Name;                                              // 0xa0(0x10)
-	struct RichCurve                                             FloatCurve;                                        // 0xb0(0x78)
+	TArray<struct MultiEmitterData>                              MultiEmitterDataArray;                             // 0x2d0(0x10)
+	TArray<struct WwiseEmitter>                                  PlayingEmitters;                                   // 0x2e0(0x10)
 };
 
 
@@ -96,28 +167,52 @@ class WwiseNonShippingAudioRootAsset: public DataAsset
 {
 public:
 	TArray<class WwiseNonShippingAudioAsset*>                    NonShippingAudioAssets;                            // 0x28(0x10)
+	char                                                         pad0x10_0A72K[0x10];                               // 0x38(0x10)
 };
 
 
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class WwiseCoreAssets: public DataAsset
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class WwiseInputManagerInterface: public Interface
 {
 public:
-	class WwiseEvent*                                            PauseEventStart;                                   // 0x28(0x8)
-	class WwiseEvent*                                            PauseEventRelease;                                 // 0x30(0x8)
-	class WwiseEvent*                                            StopAllEvent;                                      // 0x38(0x8)
-	class WwiseEvent*                                            WwiseMediaSoundComponentEvent;                     // 0x40(0x8)
-	class WwiseNonShippingAudioRootAsset*                        NonShippingAudioRootAsset;                         // 0x48(0x8)
-	class WwiseIDsDatabase*                                      WwiseIDsDatabase;                                  // 0x50(0x8)
 };
 
 
-// Size 0x20 (Full Size[0x300] - InheritedSize[0x2e0]
-class MultiEmitterRootComponent: public SceneComponent
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
+class WwiseMediaManager: public Object
 {
 public:
-	TArray<struct MultiEmitterData>                              MultiEmitterDataArray;                             // 0x2e0(0x10)
-	TArray<struct WwiseEmitter>                                  PlayingEmitters;                                   // 0x2f0(0x10)
+	char                                                         pad0x50_PGA9K[0x50];                               // 0x28(0x50)
+};
+
+
+// Size 0xd8 (Full Size[0x100] - InheritedSize[0x28]
+class WwisePoolManager: public Object
+{
+public:
+	char                                                         pad0xd8_W3IO2[0xd8];                               // 0x28(0xd8)
+};
+
+
+// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
+class MovieSceneAkAudioEventSection: public MovieSceneSection
+{
+public:
+	class WwiseEvent*                                            Event;                                             // 0x98(0x8)
+};
+
+
+// Size 0x0 (Full Size[0xa0] - InheritedSize[0xa0]
+class MovieSceneAkAudioEventTrack: public MovieSceneAkTrack
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0xa0] - InheritedSize[0xa0]
+class MovieSceneAkAudioRTPCTrack: public MovieSceneAkTrack
+{
+public:
 };
 
 

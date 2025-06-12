@@ -6,10 +6,10 @@
     "ClassSize": "0x2d0",
     "Attributes": [
       {
-        "Name": "PawnOwner",
-        "Type": "class Pawn*",
-        "Size": "0x8",
-        "Offset": "0x450"
+        "Name": "pad0x18_AIITZ[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x440"
       },
       {
         "Name": "PropAttachmentSocket",
@@ -34,6 +34,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x578"
+      },
+      {
+        "Name": "pad0xc_Q18F4[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x57c"
       },
       {
         "Name": "TiltDirectionAngleDegrees",
@@ -84,6 +90,12 @@
         "Offset": "0x59b"
       },
       {
+        "Name": "pad0x4_AW3RC[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x59c"
+      },
+      {
         "Name": "StrategiesForAggressiveAnimations",
         "Type": "TArray<class Class*>",
         "Size": "0x10",
@@ -96,10 +108,22 @@
         "Offset": "0x5b0"
       },
       {
+        "Name": "pad0x8_HEIA3[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x5c0"
+      },
+      {
         "Name": "AnimationsLoaded",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x5c8"
+      },
+      {
+        "Name": "pad0x3_L367D[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5c9"
       },
       {
         "Name": "AimUpAlpha",
@@ -114,6 +138,12 @@
         "Offset": "0x5d0"
       },
       {
+        "Name": "pad0x4_CJR4L[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x5d4"
+      },
+      {
         "Name": "FullBodyStateMachine",
         "Type": "struct CustomAnimationMontageStateMachine",
         "Size": "0xd8",
@@ -124,6 +154,12 @@
         "Type": "struct HitReactionAnimationState",
         "Size": "0x28",
         "Offset": "0x6b0"
+      },
+      {
+        "Name": "pad0x38_WCKC9[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x6d8"
       }
     ]
   },

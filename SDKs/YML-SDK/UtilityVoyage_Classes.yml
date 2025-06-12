@@ -20,12 +20,20 @@ DispatchUtilityVoyageTaleStepDesc:
     Offset: '0x88'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_RSDXI[0x7]
+    Offset: '0x89'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x10'
   FullSize: '0x90'
   InheritedSize: '0x80'
   Super: TaleQuestStepDesc
 UtilityVoyageService:
   Attributes:
+  - Name: pad0x90_EU994[0x90]
+    Offset: '0x28'
+    Size: '0x90'
+    Type: char
   - Name: Participants
     Offset: '0xb8'
     Size: '0x10'

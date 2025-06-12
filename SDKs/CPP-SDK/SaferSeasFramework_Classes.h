@@ -19,11 +19,20 @@ public:
 };
 
 
-// Size 0x28 (Full Size[0x3f0] - InheritedSize[0x3c8]
+// Size 0x28 (Full Size[0x3c8] - InheritedSize[0x3a0]
 class SaferSeasDataAssetProviderService: public Actor
 {
 public:
-	class SaferSeasEntitlementBlacklistDataAsset*                SaferSeasEntitlementBlacklistDataAsset;            // 0x3d0(0x8)
+	char                                                         pad0x8_JF9BD[0x8];                                 // 0x3a0(0x8)
+	class SaferSeasEntitlementBlacklistDataAsset*                SaferSeasEntitlementBlacklistDataAsset;            // 0x3a8(0x8)
+	char                                                         pad0x18_QCUZ0[0x18];                               // 0x3b0(0x18)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class SaferSeasDataAssetProviderServiceInterface: public Interface
+{
+public:
 };
 
 

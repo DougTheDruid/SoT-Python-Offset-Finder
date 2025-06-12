@@ -7,9 +7,12 @@
 struct TriggerPlayerControllerHitNotificationNetworkEvent
 {
 public:
+	char                                                         pad0x18_KS1SW[0x18];                               // 0x0(0x18)
 	bool                                                         IsKillingHit;                                      // 0x18(0x1)
 	bool                                                         IsHitClientPredictable;                            // 0x19(0x1)
+	char                                                         pad0x2_C7MRA[0x2];                                 // 0x1a(0x2)
 	struct Guid                                                  OptionalClientAttackId;                            // 0x1c(0x10)
+	char                                                         pad0x4_6VC49[0x4];                                 // 0x2c(0x4)
 };
 
 

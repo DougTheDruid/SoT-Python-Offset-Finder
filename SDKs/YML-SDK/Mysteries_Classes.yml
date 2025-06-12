@@ -12,89 +12,109 @@ AbandonedNoteWeightedTextDataAsset:
   Super: DataAsset
 AbandonedNoteWeightedTextSourceComponent:
   Attributes:
-  - Name: WeightedText
-    Offset: '0xe8'
-    Size: '0x20'
-    Type: assetobject
+  - Name: pad0x40_JGOKD[0x40]
+    Offset: '0xb8'
+    Size: '0x40'
+    Type: char
   - Name: ClueText
-    Offset: '0x108'
+    Offset: '0xf8'
     Size: '0x38'
     Type: struct FText
   - Name: TitleText
-    Offset: '0x140'
+    Offset: '0x130'
     Size: '0x38'
     Type: struct FText
+  - Name: pad0x30_ABDOM[0x30]
+    Offset: '0x168'
+    Size: '0x30'
+    Type: char
   ClassSize: '0xe0'
-  FullSize: '0x1a8'
-  InheritedSize: '0xc8'
+  FullSize: '0x198'
+  InheritedSize: '0xb8'
   Super: ActorComponent
 OneShotRewardableObjectBase:
   Attributes:
   - Name: InteractableComponent
-    Offset: '0x460'
+    Offset: '0x438'
     Size: '0x8'
     Type: class InteractableComponent*
   - Name: StaticMeshComponent
-    Offset: '0x468'
+    Offset: '0x440'
     Size: '0x8'
     Type: class StaticMeshComponent*
   - Name: Reward
-    Offset: '0x470'
+    Offset: '0x448'
     Size: '0x8'
     Type: struct RewardId
   - Name: RewardEntitlement
-    Offset: '0x478'
+    Offset: '0x450'
     Size: '0x8'
     Type: class UClass*
   - Name: InteractionHoldTime
-    Offset: '0x480'
+    Offset: '0x458'
     Size: '0x4'
     Type: float
   - Name: InteractionRadius
-    Offset: '0x484'
+    Offset: '0x45c'
     Size: '0x4'
     Type: float
   - Name: DisplayName
-    Offset: '0x488'
+    Offset: '0x460'
     Size: '0x38'
     Type: struct FText
+  - Name: pad0x20_7F1KB[0x20]
+    Offset: '0x498'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x80'
-  FullSize: '0x4e0'
-  InheritedSize: '0x460'
+  FullSize: '0x4b8'
+  InheritedSize: '0x438'
   Super: InteractableObject
 PopUpNotificationOnItemWieldedComponent:
   Attributes:
   - Name: PopUpDesc
-    Offset: '0x148'
+    Offset: '0x138'
     Size: '0x8'
     Type: class PopUpMessageDesc*
+  - Name: pad0x18_TDHNS[0x18]
+    Offset: '0x140'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x20'
-  FullSize: '0x168'
-  InheritedSize: '0x148'
+  FullSize: '0x158'
+  InheritedSize: '0x138'
   Super: OnItemWieldedComponent
 SirenPuzzleContext:
   Attributes:
+  - Name: pad0x8_8LO29[0x8]
+    Offset: '0x3a0'
+    Size: '0x8'
+    Type: char
   - Name: Root
-    Offset: '0x3d0'
+    Offset: '0x3a8'
     Size: '0x8'
     Type: class SceneComponent*
   - Name: PuzzleLocks
-    Offset: '0x3d8'
+    Offset: '0x3b0'
     Size: '0x10'
     Type: TArray<struct SirenPuzzleLockState>
   - Name: UnlockCompleteReactions
-    Offset: '0x3e8'
+    Offset: '0x3c0'
     Size: '0x10'
     Type: TArray<struct LandmarkReactionKeyFrame>
   - Name: ResetLocksReactions
-    Offset: '0x3f8'
+    Offset: '0x3d0'
     Size: '0x10'
     Type: TArray<struct LandmarkReactionKeyFrame>
   - Name: LockStates
-    Offset: '0x408'
+    Offset: '0x3e0'
     Size: '0x10'
     Type: TArray<char>
+  - Name: pad0xa0_Q4NLK[0xa0]
+    Offset: '0x3f0'
+    Size: '0xa0'
+    Type: char
   ClassSize: '0xf0'
-  FullSize: '0x4b8'
-  InheritedSize: '0x3c8'
+  FullSize: '0x490'
+  InheritedSize: '0x3a0'
   Super: Actor

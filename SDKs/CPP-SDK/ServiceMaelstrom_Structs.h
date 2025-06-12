@@ -7,8 +7,7 @@
 struct MaelstromEventBaseFragment
 {
 public:
-	uint64                                                       SequenceID;                                        // 0x0(0x8)
-	uint64                                                       TypeID;                                            // 0x8(0x8)
+	char                                                         pad0x10_LR24V[0x10];                               // 0x0(0x10)
 	struct FString                                               Name;                                              // 0x10(0x10)
 	struct FString                                               TimestampUtc;                                      // 0x20(0x10)
 };

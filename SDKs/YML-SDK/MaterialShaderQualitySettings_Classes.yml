@@ -2,10 +2,10 @@
 # https://github.com/DougTheDruid
 MaterialShaderQualitySettings:
   Attributes:
-  - Name: ForwardSettingMap
+  - Name: pad0x58_IE51I[0x58]
     Offset: '0x28'
-    Size: '0x50'
-    Type: map
+    Size: '0x58'
+    Type: char
   ClassSize: '0x58'
   FullSize: '0x80'
   InheritedSize: '0x28'
@@ -16,6 +16,10 @@ ShaderPlatformQualitySettings:
     Offset: '0x28'
     Size: '0x4'
     Type: struct MaterialQualityOverrides
+  - Name: pad0xc_V3HXQ[0xc]
+    Offset: '0x2c'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'

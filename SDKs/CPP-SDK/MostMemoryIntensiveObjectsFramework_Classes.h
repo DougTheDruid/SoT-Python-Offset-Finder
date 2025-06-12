@@ -6,6 +6,13 @@
 #include "MostMemoryIntensiveObjectsFramework_Structs.h"
 
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class MMICategoryDebugCommandSource: public Object
+{
+public:
+};
+
+
 // Size 0x30 (Full Size[0x68] - InheritedSize[0x38]
 class MostMemoryIntensiveObjectsRuntimeSettings: public DeveloperSettings
 {

@@ -1,12 +1,24 @@
 {
-  "EventStatusScreenSpaceParticleEffectStarted": {
-    "ClassSize": "0x8",
+  "EventAppliedStatusToTargets": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "ParticleSystem",
-        "Type": "class Object*",
-        "Size": "0x8",
+        "Name": "StatusApplied",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "Targets",
+        "Type": "TArray<class Actor*>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "StatusSource",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x20"
       }
     ]
   },
@@ -51,20 +63,54 @@
       }
     ]
   },
-  "BuffedTargetData": {
-    "ClassSize": "0x18",
+  "EventStatusScreenEffectEnded": {
+    "ClassSize": "0xc",
     "Attributes": [
       {
-        "Name": "ActorBuffed",
-        "Type": "class Actor*",
+        "Name": "MaterialParamName",
+        "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "StatusEffectRecipient",
-        "Type": "interface",
+        "Name": "FadeOutAcceleration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "FeatureToggledStatusResponseList": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Feature",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ResponseAssets",
+        "Type": "TArray<class StatusResponseAsset*>",
         "Size": "0x10",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "StatusActivatedEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Id",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "StatusName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
       }
     ]
   },
@@ -91,24 +137,18 @@
       }
     ]
   },
-  "StatusDeactivatedEvent": {
-    "ClassSize": "0x18",
+  "EventStatusSuperSoakerEnded": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "Id",
-        "Type": "struct Guid",
-        "Size": "0x10",
+        "Name": "pad0x1_E0BED[0x1]",
+        "Type": "char",
+        "Size": "0x1",
         "Offset": "0x0"
-      },
-      {
-        "Name": "StatusName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x10"
       }
     ]
   },
-  "EventStatusScreenSpaceParticleEffectEnded": {
+  "EventStatusScreenSpaceParticleEffectStarted": {
     "ClassSize": "0x8",
     "Attributes": [
       {
@@ -154,43 +194,14 @@
       }
     ]
   },
-  "EventAppliedStatusToTargets": {
-    "ClassSize": "0x28",
+  "EventStatusScreenSpaceParticleEffectEnded": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "StatusApplied",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Targets",
-        "Type": "TArray<class Actor*>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "StatusSource",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "EventStatusScreenEffectEnded": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "MaterialParamName",
-        "Type": "struct FName",
+        "Name": "ParticleSystem",
+        "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x0"
-      },
-      {
-        "Name": "FadeOutAcceleration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
       }
     ]
   },
@@ -198,42 +209,36 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "EnteredZone",
-        "Type": "interface",
+        "Name": "pad0x10_SIBXV[0x10]",
+        "Type": "char",
         "Size": "0x10",
         "Offset": "0x0"
       }
     ]
   },
-  "StatusDescriptor": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "Intensity",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "FeatureToggledStatusResponseList": {
+  "BuffedTargetData": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "Feature",
-        "Type": "struct FName",
-        "Size": "0x8",
+        "Name": "pad0x18_5J2FP[0x18]",
+        "Type": "char",
+        "Size": "0x18",
         "Offset": "0x0"
-      },
-      {
-        "Name": "ResponseAssets",
-        "Type": "TArray<class StatusResponseAsset*>",
-        "Size": "0x10",
-        "Offset": "0x8"
       }
     ]
   },
-  "StatusActivatedEvent": {
+  "EventStatusSuperSoakerStarted": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_57EJP[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "StatusDeactivatedEvent": {
     "ClassSize": "0x18",
     "Attributes": [
       {
@@ -250,20 +255,25 @@
       }
     ]
   },
-  "Status": {
-    "ClassSize": "0x18",
+  "EventExitedSurfaceMaterialStatusZone": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "Type",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
+        "Name": "pad0x1_VWV0O[0x1]",
+        "Type": "char",
+        "Size": "0x1",
         "Offset": "0x0"
-      },
+      }
+    ]
+  },
+  "StatusDescriptor": {
+    "ClassSize": "0x4",
+    "Attributes": [
       {
-        "Name": "Descriptor",
-        "Type": "struct StatusDescriptor",
+        "Name": "Intensity",
+        "Type": "float",
         "Size": "0x4",
-        "Offset": "0x10"
+        "Offset": "0x0"
       }
     ]
   },
@@ -283,6 +293,12 @@
         "Offset": "0x10"
       },
       {
+        "Name": "pad0x4_05XFD[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
         "Name": "ResponseTemplates",
         "Type": "TArray<class StatusResponse*>",
         "Size": "0x10",
@@ -299,33 +315,40 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x17_X194J[0x17]",
+        "Type": "char",
+        "Size": "0x17",
+        "Offset": "0x39"
       }
     ]
   },
-  "ApplyStatusEvent": {
-    "ClassSize": "0x18",
+  "Status": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "StatusToApply",
-        "Type": "struct Status",
-        "Size": "0x18",
+        "Name": "Type",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "StatusEffectPersistenceKey": {
-    "ClassSize": "0x18",
-    "Attributes": [
+      },
       {
-        "Name": "AppliedStatuses",
-        "Type": "struct Status",
-        "Size": "0x18",
-        "Offset": "0x0"
+        "Name": "Descriptor",
+        "Type": "struct StatusDescriptor",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0xc_XPTX4[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x14"
       }
     ]
   },
   "DebugMenuStatusDefinition": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "Identifier",
@@ -336,25 +359,53 @@
       {
         "Name": "Status",
         "Type": "struct Status",
-        "Size": "0x18",
+        "Size": "0x20",
         "Offset": "0x8"
       }
     ]
   },
   "DelayedStatusEffect": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "StatusEffect",
         "Type": "struct Status",
-        "Size": "0x18",
+        "Size": "0x20",
         "Offset": "0x0"
       },
       {
         "Name": "InEffectTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x18"
+        "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_6TP71[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
+      }
+    ]
+  },
+  "StatusEffectPersistenceKey": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "AppliedStatuses",
+        "Type": "struct Status",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ApplyStatusEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "StatusToApply",
+        "Type": "struct Status",
+        "Size": "0x20",
+        "Offset": "0x0"
       }
     ]
   },

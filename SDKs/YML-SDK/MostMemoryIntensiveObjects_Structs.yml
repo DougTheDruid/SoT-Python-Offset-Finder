@@ -10,4 +10,8 @@ MMIRuntimePetInfo:
     Offset: '0x10'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_3Y54R[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x18'

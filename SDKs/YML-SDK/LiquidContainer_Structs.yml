@@ -6,6 +6,10 @@ LiquidTypeParams:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_1L2SH[0x3]
+    Offset: '0x1'
+    Size: '0x3'
+    Type: char
   - Name: FogColour
     Offset: '0x4'
     Size: '0xc'

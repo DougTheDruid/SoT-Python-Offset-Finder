@@ -1,10 +1,74 @@
 {
+  "OceanCrawlerAnimationServerData": {
+    "Super": "AnimationServerData",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x8_8VT1D[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "AnimInstanceType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "MaxSpawnAnimDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "MaxSpawnOnShipAnimDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "MaxSpawnBoardingAnimDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x4_MC6MC[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x44"
+      }
+    ]
+  },
+  "OceanCrawlerAnimationData": {
+    "Super": "AnimationData",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "OceanCrawlerAnimationDataStructure",
+        "Type": "struct OceanCrawlerAnimationDataStructure",
+        "Size": "0x90",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "OceanCrawlerAnimationInstance": {
     "Super": "AnimInstance",
     "FullSize": "0x720",
     "InheritedSize": "0x440",
     "ClassSize": "0x2e0",
     "Attributes": [
+      {
+        "Name": "pad0x18_NKMRJ[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x440"
+      },
       {
         "Name": "LoadedAnimations",
         "Type": "struct OceanCrawlerAnimationDataStructure",
@@ -22,6 +86,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x500"
+      },
+      {
+        "Name": "pad0x4_1PN5D[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x504"
       },
       {
         "Name": "AttackAnims",
@@ -48,10 +118,22 @@
         "Offset": "0x5c2"
       },
       {
+        "Name": "pad0x1_02H2V[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x5c3"
+      },
+      {
         "Name": "PropAttachmentSocket",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x5c4"
+      },
+      {
+        "Name": "pad0x4_6TWW1[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x5cc"
       },
       {
         "Name": "MontagePlayer",
@@ -64,52 +146,12 @@
         "Type": "struct HitReactionAnimationState",
         "Size": "0x28",
         "Offset": "0x6a8"
-      }
-    ]
-  },
-  "OceanCrawlerAnimationServerData": {
-    "Super": "AnimationServerData",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "AnimInstanceType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x30"
       },
       {
-        "Name": "MaxSpawnAnimDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "MaxSpawnOnShipAnimDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "MaxSpawnBoardingAnimDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "OceanCrawlerAnimationData": {
-    "Super": "AnimationData",
-    "FullSize": "0xb8",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "OceanCrawlerAnimationDataStructure",
-        "Type": "struct OceanCrawlerAnimationDataStructure",
-        "Size": "0x90",
-        "Offset": "0x28"
+        "Name": "pad0x50_9O6BV[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x6d0"
       }
     ]
   },

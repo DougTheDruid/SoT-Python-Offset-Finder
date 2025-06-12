@@ -35,18 +35,26 @@ CommodityDescWithRedeemId:
   ClassSize: '0x10'
 CommodityRedemptionTrackingModel:
   Attributes:
-  - Name: EntitlementDesc
+  - Name: pad0x2_1XRCH[0x2]
     Offset: '0x0'
     Size: '0x2'
-    Type: uint16
+    Type: char
   - Name: NPCName
     Offset: '0x2'
     Size: '0x1'
     Type: byte
-  - Name: TickWhenTracked
+  - Name: EntitlementOwnershipConfirmed
+    Offset: '0x3'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x4_UPN1P[0x4]
+    Offset: '0x4'
+    Size: '0x4'
+    Type: char
+  - Name: pad0x8_5YYWM[0x8]
     Offset: '0x8'
     Size: '0x8'
-    Type: int64
+    Type: char
   ClassSize: '0x10'
 CommoditySelectionType:
   Attributes:
@@ -57,6 +65,10 @@ CommoditySelectionType:
   ClassSize: '0x8'
 CommoditySourceMetaWrapper:
   Attributes:
+  - Name: pad0x18_ZMOUS[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: NPCIdentifier
     Offset: '0x18'
     Size: '0x8'
@@ -76,10 +88,14 @@ CommodityTrackingModel:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: TickWhenTracked
+  - Name: pad0x7_EQNGX[0x7]
+    Offset: '0x11'
+    Size: '0x7'
+    Type: char
+  - Name: pad0x8_89PYI[0x8]
     Offset: '0x18'
     Size: '0x8'
-    Type: int64
+    Type: char
   ClassSize: '0x20'
 CommodityTypeDataEntry:
   Attributes:
@@ -103,6 +119,13 @@ EntitlementToRedeemItems:
     Size: '0x10'
     Type: TArray<struct CommodityDescWithRedeemId>
   ClassSize: '0x18'
+EventCommodityCrateRedeemed:
+  Attributes:
+  - Name: pad0x18_KGQCR[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
+  ClassSize: '0x18'
 MerchantSovereignHandInNameInformation:
   Attributes:
   - Name: MerchantNPCName
@@ -124,9 +147,21 @@ RedeemCommodityTelemetryEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  ClassSize: '0x18'
+  - Name: pad0x7_MT3T2[0x7]
+    Offset: '0x11'
+    Size: '0x7'
+    Type: char
+  - Name: TimeInSecondsSinceFirstRedemptionAttempt
+    Offset: '0x18'
+    Size: '0x8'
+    Type: double
+  ClassSize: '0x20'
 TrackCommodityPurchaseOnServerRpc:
   Attributes:
+  - Name: pad0x18_FGDS9[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: CommodityDemandStorageObject
     Offset: '0x18'
     Size: '0x8'

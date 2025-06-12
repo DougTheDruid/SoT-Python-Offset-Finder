@@ -1,0 +1,230 @@
+{
+  "BP_PirateGenerator_LineUp_C": {
+    "Super": "PosablePirate",
+    "FullSize": "0x5f1",
+    "InheritedSize": "0x460",
+    "ClassSize": "0x191",
+    "Attributes": [
+      {
+        "Name": "UberGraphFrame",
+        "Type": "struct PointerToUberGraphFrame",
+        "Size": "0x8",
+        "Offset": "0x460"
+      },
+      {
+        "Name": "pad0x53028cd8_L12AW[0x53028cd8]",
+        "Type": "char",
+        "Size": "0x53028cd8",
+        "Offset": "0x468"
+      },
+      {
+        "Name": "Capsule",
+        "Type": "class CapsuleComponent*",
+        "Size": "0x8",
+        "Offset": "0x468"
+      },
+      {
+        "Name": "GhostParticlesOut",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x470"
+      },
+      {
+        "Name": "GhostParticlesIn",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x478"
+      },
+      {
+        "Name": "AnimNotifyWwiseEmitter",
+        "Type": "class AnimNotifyWwiseEmitterComponent*",
+        "Size": "0x8",
+        "Offset": "0x480"
+      },
+      {
+        "Name": "SkeletalProp",
+        "Type": "class SkeletalMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x488"
+      },
+      {
+        "Name": "StaticPropSecondary",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x490"
+      },
+      {
+        "Name": "SkeletalPropSecondary",
+        "Type": "class SkeletalMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x498"
+      },
+      {
+        "Name": "StaticProp",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x4a0"
+      },
+      {
+        "Name": "ForceShape",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x4a8"
+      },
+      {
+        "Name": "Animation",
+        "Type": "struct BP_LineUp_Animation",
+        "Size": "0xc8",
+        "Offset": "0x4b8"
+      },
+      {
+        "Name": "CharacterSelectAnimgraph",
+        "Type": "animblueprintgeneratedclass BP_Anim_CharacterSelect_C*",
+        "Size": "0x8",
+        "Offset": "0x580"
+      },
+      {
+        "Name": "ZoomTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x588"
+      },
+      {
+        "Name": "GhostTransitionOutTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x58c"
+      },
+      {
+        "Name": "GhostTransitionInTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x590"
+      },
+      {
+        "Name": "GhostTransitioning",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x594"
+      },
+      {
+        "Name": "pad0x3_HV7NS[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x595"
+      },
+      {
+        "Name": "PoseIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x598"
+      },
+      {
+        "Name": "pad0x4_N3SN6[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x59c"
+      },
+      {
+        "Name": "AnimationSwitch",
+        "Type": "class AnimationSwitchDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x5a0"
+      },
+      {
+        "Name": "AnimationAsset",
+        "Type": "class AnimationDataStoreAsset*",
+        "Size": "0x8",
+        "Offset": "0x5a8"
+      },
+      {
+        "Name": "Initialized",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x5b0"
+      },
+      {
+        "Name": "pad0x7_89XF8[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x5b1"
+      },
+      {
+        "Name": "IsHighlighted",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x5c8"
+      },
+      {
+        "Name": "IsInShipSelect",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x5c9"
+      },
+      {
+        "Name": "pad0x2_XU5XT[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x5ca"
+      },
+      {
+        "Name": "ShipSelectVariantTimer",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x5cc"
+      },
+      {
+        "Name": "ShipSelectVariantTimerMax",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x5d0"
+      },
+      {
+        "Name": "ShipSelectAnimCountMax",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x5d4"
+      },
+      {
+        "Name": "ShipSelectVariantAnimIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x5d8"
+      },
+      {
+        "Name": "IsPlayingShipSelectVariant",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x5dc"
+      },
+      {
+        "Name": "pad0x3_TFWPU[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5dd"
+      },
+      {
+        "Name": "ShipSelectAnimToPlay",
+        "Type": "class AnimSequence*",
+        "Size": "0x8",
+        "Offset": "0x5e0"
+      },
+      {
+        "Name": "ShipSelectPropAnimToPlay",
+        "Type": "class AnimSequence*",
+        "Size": "0x8",
+        "Offset": "0x5e8"
+      },
+      {
+        "Name": "ShipSelectAnimStarted",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x5f0"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by dougthedruid on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}

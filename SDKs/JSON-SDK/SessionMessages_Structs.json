@@ -1,39 +1,4 @@
 {
-  "SessionServiceLog": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "Category",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Data",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "InstanceId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "TimeSeconds",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Verbosity",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x30"
-      }
-    ]
-  },
   "SessionServicePong": {
     "ClassSize": "0x90",
     "Attributes": [
@@ -68,6 +33,12 @@
         "Offset": "0x40"
       },
       {
+        "Name": "pad0x7_TEPZV[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x41"
+      },
+      {
         "Name": "PlatformName",
         "Type": "struct FString",
         "Size": "0x10",
@@ -96,6 +67,86 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x88"
+      },
+      {
+        "Name": "pad0x7_Y8LZJ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x89"
+      }
+    ]
+  },
+  "SessionServiceLogSubscribe": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_WT18H[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SessionServiceLog": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "Category",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Data",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "InstanceId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "TimeSeconds",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Verbosity",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x7_60GCJ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x31"
+      }
+    ]
+  },
+  "SessionServiceLogUnsubscribe": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_28DJW[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SessionServicePing": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_78TV1[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },

@@ -2,21 +2,21 @@
 # https://github.com/DougTheDruid
 CompetitiveVoyageEventItem:
   Attributes:
-  - Name: VoyageItem
+  - Name: pad0x8_ZFUTY[0x8]
     Offset: '0x0'
     Size: '0x8'
-    Type: class Actor*
-  - Name: EventID
+    Type: char
+  - Name: EventId
     Offset: '0x8'
     Size: '0x10'
     Type: struct Guid
   ClassSize: '0x18'
 CompetitiveVoyageItemData:
   Attributes:
-  - Name: ItemInfo
+  - Name: pad0x8_4EDGJ[0x8]
     Offset: '0x0'
     Size: '0x8'
-    Type: class Actor*
+    Type: char
   - Name: FirstHoldingCrewId
     Offset: '0x8'
     Size: '0x10'
@@ -33,10 +33,14 @@ CompetitiveVoyageItemData:
     Offset: '0x38'
     Size: '0x4'
     Type: int
+  - Name: pad0xc_DVWO9[0xc]
+    Offset: '0x3c'
+    Size: '0xc'
+    Type: char
   ClassSize: '0x48'
 CompetitiveVoyagesCrewShipRespawnTelemetryEvent:
   Attributes:
-  - Name: EventID
+  - Name: EventId
     Offset: '0x0'
     Size: '0x10'
     Type: struct Guid
@@ -55,7 +59,7 @@ CompetitiveVoyagesCrewShipRespawnTelemetryEvent:
   ClassSize: '0x38'
 CompetitiveVoyagesEventCompletedTelemetryEvent:
   Attributes:
-  - Name: EventID
+  - Name: EventId
     Offset: '0x0'
     Size: '0x10'
     Type: struct Guid
@@ -78,14 +82,14 @@ CompetitiveVoyagesEventCompletedTelemetryEvent:
   ClassSize: '0x20'
 CompetitiveVoyagesEventCreatedTelemetryEvent:
   Attributes:
-  - Name: EventID
+  - Name: EventId
     Offset: '0x0'
     Size: '0x10'
     Type: struct Guid
   ClassSize: '0x10'
 CompetitiveVoyagesItemUsageTelemetryEvent:
   Attributes:
-  - Name: EventID
+  - Name: EventId
     Offset: '0x0'
     Size: '0x10'
     Type: struct Guid
@@ -108,6 +112,10 @@ CompetitiveVoyagesMigrationTelemetryEvent:
     Offset: '0x10'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_VIZZI[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x18'
 CompetitiveVoyagesRespawnConfig:
   Attributes:
@@ -123,6 +131,10 @@ CompetitiveVoyagesRespawnConfig:
     Offset: '0xa0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_O4UZR[0x3]
+    Offset: '0xa1'
+    Size: '0x3'
+    Type: char
   - Name: NumDebugGenerations
     Offset: '0xa4'
     Size: '0x4'
@@ -140,6 +152,13 @@ CompetitiveVoyagesRespawnConfig:
     Size: '0x50'
     Type: struct CompetitiveVoyagesRespawnParams
   ClassSize: '0x108'
+CompetitiveVoyagesRespawnDebugMapData:
+  Attributes:
+  - Name: pad0x88_IK3UN[0x88]
+    Offset: '0x0'
+    Size: '0x88'
+    Type: char
+  ClassSize: '0x88'
 CompetitiveVoyagesRespawnPOIData:
   Attributes:
   - Name: MinPreferredDistanceFromPOI
@@ -206,9 +225,16 @@ CompetitiveVoyagesRespawnParams:
     Size: '0x1c'
     Type: struct CompetitiveVoyagesRespawnPOIData
   ClassSize: '0x50'
+CompetitiveVoyagesRespawnSpawnScoreData:
+  Attributes:
+  - Name: pad0x14_80MEA[0x14]
+    Offset: '0x0'
+    Size: '0x14'
+    Type: char
+  ClassSize: '0x14'
 MigratingEventTelemetryData:
   Attributes:
-  - Name: EventID
+  - Name: EventId
     Offset: '0x0'
     Size: '0x10'
     Type: struct Guid
@@ -261,6 +287,20 @@ OnCompetitiveVoyageItemRemoved:
     Size: '0x10'
     Type: struct Guid
   ClassSize: '0x18'
+OnCompetitiveVoyageMainVoyageStarted:
+  Attributes:
+  - Name: pad0x1_ILXAH[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
+OnCompetitiveVoyageMainVoyageStopped:
+  Attributes:
+  - Name: pad0x1_ZJLLT[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
 OnCompetitiveVoyageOptOutVotePassed:
   Attributes:
   - Name: CrewId
@@ -268,6 +308,13 @@ OnCompetitiveVoyageOptOutVotePassed:
     Size: '0x10'
     Type: struct Guid
   ClassSize: '0x10'
+PhasedMarkerItem:
+  Attributes:
+  - Name: pad0x18_N9H0E[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
+  ClassSize: '0x18'
 ShipSpeedCurseModifyingValues:
   Attributes:
   - Name: SloopSpeedCurseModifier

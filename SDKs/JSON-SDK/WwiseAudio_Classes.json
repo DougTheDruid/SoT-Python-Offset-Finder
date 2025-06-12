@@ -1,4 +1,18 @@
 {
+  "WwiseSoundFrameManager": {
+    "Super": "Object",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_ZYHFX[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "WwiseEvent": {
     "Super": "Object",
     "FullSize": "0x50",
@@ -18,10 +32,10 @@
         "Offset": "0x30"
       },
       {
-        "Name": "WwiseId",
-        "Type": "uint32",
-        "Size": "0x4",
-        "Offset": "0x34"
+        "Name": "pad0x3_AEDN4[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x31"
       },
       {
         "Name": "DurationMin",
@@ -52,6 +66,204 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x45"
+      },
+      {
+        "Name": "pad0xa_AZ6O3[0xa]",
+        "Type": "char",
+        "Size": "0xa",
+        "Offset": "0x46"
+      }
+    ]
+  },
+  "WwiseCoreAssets": {
+    "Super": "DataAsset",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "PauseEventStart",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "PauseEventRelease",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "StopAllEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "WwiseMediaSoundComponentEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "NonShippingAudioRootAsset",
+        "Type": "class WwiseNonShippingAudioRootAsset*",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "WwiseIDsDatabase",
+        "Type": "class WwiseIDsDatabase*",
+        "Size": "0x8",
+        "Offset": "0x50"
+      }
+    ]
+  },
+  "AudioReporterSubSystem": {
+    "Super": "Object",
+    "FullSize": "0x78",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x50_FGD8F[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "WwiseDebugManager": {
+    "Super": "Object",
+    "FullSize": "0x88",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "pad0x60_GNFQO[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "WwiseNonShippingAudioAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "CodeName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "UAssetRelativePath",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "StreamRelativePath",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "WwiseEmitterManager": {
+    "Super": "Object",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_XJD2P[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "AnimNotifyWwiseEmitterComponentRetrievalInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WwiseBank": {
+    "Super": "Object",
+    "FullSize": "0x70",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "path",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "InitBank",
+        "Type": "class WwiseBank*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x28_3V1C3[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "WwiseEmitterInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MovieSceneAkAudioRTPCSection": {
+    "Super": "MovieSceneSection",
+    "FullSize": "0x128",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "pad0x8_NIHAT[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "Name",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "FloatCurve",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0xb0"
+      }
+    ]
+  },
+  "WwiseInputManager": {
+    "Super": "Object",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x28_2DUAG[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x28"
       }
     ]
   },
@@ -111,17 +323,23 @@
       }
     ]
   },
-  "MovieSceneAkAudioEventSection": {
-    "Super": "MovieSceneSection",
-    "FullSize": "0xa0",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x8",
+  "MergedMultiEmitterComponent": {
+    "Super": "WwiseEmitterComponent",
+    "FullSize": "0x310",
+    "InheritedSize": "0x300",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Event",
+        "Name": "EmitterPool",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x300"
+      },
+      {
+        "Name": "PlayEvent",
         "Type": "class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x98"
+        "Offset": "0x308"
       }
     ]
   },
@@ -142,98 +360,32 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x7_6LOJM[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x99"
       }
     ]
   },
-  "WwiseBank": {
-    "Super": "Object",
-    "FullSize": "0x70",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x48",
+  "MultiEmitterRootComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x2f0",
+    "InheritedSize": "0x2d0",
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "path",
-        "Type": "struct FString",
+        "Name": "MultiEmitterDataArray",
+        "Type": "TArray<struct MultiEmitterData>",
         "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x2d0"
       },
       {
-        "Name": "WwiseId",
-        "Type": "uint32",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "InitBank",
-        "Type": "class WwiseBank*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "WwiseNonShippingAudioAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "CodeName",
-        "Type": "struct FString",
+        "Name": "PlayingEmitters",
+        "Type": "TArray<struct WwiseEmitter>",
         "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "UAssetRelativePath",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "StreamRelativePath",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "MergedMultiEmitterComponent": {
-    "Super": "WwiseEmitterComponent",
-    "FullSize": "0x320",
-    "InheritedSize": "0x310",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "EmitterPool",
-        "Type": "class WwiseObjectPoolWrapper*",
-        "Size": "0x8",
-        "Offset": "0x310"
-      },
-      {
-        "Name": "PlayEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x318"
-      }
-    ]
-  },
-  "MovieSceneAkAudioRTPCSection": {
-    "Super": "MovieSceneSection",
-    "FullSize": "0x128",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "Name",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0xa0"
-      },
-      {
-        "Name": "FloatCurve",
-        "Type": "struct RichCurve",
-        "Size": "0x78",
-        "Offset": "0xb0"
+        "Offset": "0x2e0"
       }
     ]
   },
@@ -248,72 +400,77 @@
         "Type": "TArray<class WwiseNonShippingAudioAsset*>",
         "Size": "0x10",
         "Offset": "0x28"
-      }
-    ]
-  },
-  "WwiseCoreAssets": {
-    "Super": "DataAsset",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "PauseEventStart",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x28"
       },
       {
-        "Name": "PauseEventRelease",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "StopAllEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
+        "Name": "pad0x10_0A72K[0x10]",
+        "Type": "char",
+        "Size": "0x10",
         "Offset": "0x38"
-      },
-      {
-        "Name": "WwiseMediaSoundComponentEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "NonShippingAudioRootAsset",
-        "Type": "class WwiseNonShippingAudioRootAsset*",
-        "Size": "0x8",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "WwiseIDsDatabase",
-        "Type": "class WwiseIDsDatabase*",
-        "Size": "0x8",
-        "Offset": "0x50"
       }
     ]
   },
-  "MultiEmitterRootComponent": {
-    "Super": "SceneComponent",
-    "FullSize": "0x300",
-    "InheritedSize": "0x2e0",
-    "ClassSize": "0x20",
+  "WwiseInputManagerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WwiseMediaManager": {
+    "Super": "Object",
+    "FullSize": "0x78",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "MultiEmitterDataArray",
-        "Type": "TArray<struct MultiEmitterData>",
-        "Size": "0x10",
-        "Offset": "0x2e0"
-      },
-      {
-        "Name": "PlayingEmitters",
-        "Type": "TArray<struct WwiseEmitter>",
-        "Size": "0x10",
-        "Offset": "0x2f0"
+        "Name": "pad0x50_PGA9K[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x28"
       }
     ]
+  },
+  "WwisePoolManager": {
+    "Super": "Object",
+    "FullSize": "0x100",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xd8",
+    "Attributes": [
+      {
+        "Name": "pad0xd8_W3IO2[0xd8]",
+        "Type": "char",
+        "Size": "0xd8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "MovieSceneAkAudioEventSection": {
+    "Super": "MovieSceneSection",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Event",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "MovieSceneAkAudioEventTrack": {
+    "Super": "MovieSceneAkTrack",
+    "FullSize": "0xa0",
+    "InheritedSize": "0xa0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MovieSceneAkAudioRTPCTrack": {
+    "Super": "MovieSceneAkTrack",
+    "FullSize": "0xa0",
+    "InheritedSize": "0xa0",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "WwiseDDSEvent": {
     "Super": "WwiseEvent",

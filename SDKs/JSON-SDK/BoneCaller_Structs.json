@@ -1,24 +1,18 @@
 {
-  "EventOnBoneCallerExploded": {
-    "ClassSize": "0x28",
+  "EventOnBoneCallerAIKilled": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "RootInstigator",
+        "Name": "KilledCharacter",
         "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "HitActor",
+        "Name": "Killer",
         "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x8"
-      },
-      {
-        "Name": "BoneCallerSpawnId",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x20"
       }
     ]
   },
@@ -36,17 +30,29 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_C2BBE[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
       }
     ]
   },
-  "PlayerBoneCallerData": {
-    "ClassSize": "0x20",
+  "EventOnBoneCallerSpawned": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Spawner",
-        "Type": "class AIFixedWavesSpawner*",
+        "Name": "SpawnedCharacter",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "IslandWhereCharacterSpawned",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -63,6 +69,86 @@
         "Name": "DamageInstance",
         "Type": "struct DamageInstance",
         "Size": "0x30",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "BoneCallerUsageTelemetry": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_HS339[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "Region",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EventOnBoneCallerExploded": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "RootInstigator",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "HitActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x10_VM1ES[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "BoneCallerSpawnId",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "PlayerBoneCallerData": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_744E8[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "BoneCallerSpawnIdShipSizeOverride": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ShipSize",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BoneCallerSpawnIdOverride",
+        "Type": "class UClass*",
+        "Size": "0x8",
         "Offset": "0x8"
       }
     ]
@@ -93,23 +179,6 @@
         "Type": "TArray<struct AttitudeOverrideEntry>",
         "Size": "0x10",
         "Offset": "0x18"
-      }
-    ]
-  },
-  "BoneCallerUsageTelemetry": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Region",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
       }
     ]
   },

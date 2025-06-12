@@ -19,8 +19,19 @@ ChestEntitlementTrinketItem:
     Size: '0x10'
     Type: struct FString
   ClassSize: '0x28'
+EventTrinketSetReady:
+  Attributes:
+  - Name: pad0x10_8Z2C8[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
+  ClassSize: '0x10'
 RemoveInteractingPlayerFromTrinketMountpointRpc:
   Attributes:
+  - Name: pad0x18_FQDZ2[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: TrinketMountpointManager
     Offset: '0x18'
     Size: '0x14'
@@ -30,6 +41,13 @@ RemoveInteractingPlayerFromTrinketMountpointRpc:
     Size: '0x4'
     Type: int
   ClassSize: '0x30'
+RequestTrinketChestItemInfoEvent:
+  Attributes:
+  - Name: pad0x1_Y6HYF[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
 RequestTrinketEntitlementsUIEvent:
   Attributes:
   - Name: TrinketCategory
@@ -61,6 +79,10 @@ TrinketLoadout:
     Offset: '0x10'
     Size: '0x10'
     Type: TArray<struct UniqueNetIdRepl>
+  - Name: pad0x28_LZ5N8[0x28]
+    Offset: '0x20'
+    Size: '0x28'
+    Type: char
   ClassSize: '0x48'
 TrinketLoadoutEntry:
   Attributes:
@@ -90,8 +112,19 @@ TrinketLoadoutModelEntry:
     Offset: '0x8'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_Z5YT5[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   - Name: UserId
     Offset: '0x10'
     Size: '0x10'
     Type: struct FString
   ClassSize: '0x20'
+TrinketLoadoutUpdatedEvent:
+  Attributes:
+  - Name: pad0x10_C9E2R[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
+  ClassSize: '0x10'

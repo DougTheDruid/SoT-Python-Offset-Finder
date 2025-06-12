@@ -1,4 +1,15 @@
 {
+  "TaleQuestVariableMapMarkType": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_0ZSF8[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "ChecklistActionProgressTracker": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -6,6 +17,23 @@
         "Name": "ActionData",
         "Type": "class ChecklistActionData*",
         "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x8_VG9XU[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "TaleQuestVariableTreasureMapItemDescType": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_FUQZC[0x30]",
+        "Type": "char",
+        "Size": "0x30",
         "Offset": "0x0"
       }
     ]
@@ -18,6 +46,12 @@
         "Type": "TArray<struct ChecklistActionProgressTracker>",
         "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x40_T7JR9[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x10"
       }
     ]
   },

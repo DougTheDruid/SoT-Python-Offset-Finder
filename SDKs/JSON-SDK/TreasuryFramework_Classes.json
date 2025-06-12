@@ -1,263 +1,15 @@
 {
-  "SunkenKingdomShrineEventRoom": {
-    "Super": "EventRoom",
-    "FullSize": "0x5b0",
-    "InheritedSize": "0x500",
-    "ClassSize": "0xb0",
+  "SunkenKingdomTreasuryDeepSeaRegion": {
+    "Super": "DeepSeaRegion",
+    "FullSize": "0x418",
+    "InheritedSize": "0x410",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "EntranceActor",
-        "Type": "class Actor*",
+        "Name": "pad0x8_0DAKF[0x8]",
+        "Type": "char",
         "Size": "0x8",
-        "Offset": "0x510"
-      },
-      {
-        "Name": "GameEventOnDemandAvailabilityHandler",
-        "Type": "class GameEventOnDemandAvailabilityHandler*",
-        "Size": "0x8",
-        "Offset": "0x518"
-      },
-      {
-        "Name": "AvailabilityParamsAssetFileLocation",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x520"
-      },
-      {
-        "Name": "PuzzleResetComponent",
-        "Type": "class ObjectProximityResetComponent*",
-        "Size": "0x8",
-        "Offset": "0x530"
-      },
-      {
-        "Name": "ItemSpawnSelectorComponent",
-        "Type": "class GameEventItemSpawnSelectorComponent*",
-        "Size": "0x8",
-        "Offset": "0x538"
-      }
-    ]
-  },
-  "TreasuryRoom": {
-    "Super": "Actor",
-    "FullSize": "0x610",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x248",
-    "Attributes": [
-      {
-        "Name": "RoomAreaComponent",
-        "Type": "class BoxComponent*",
-        "Size": "0x8",
-        "Offset": "0x3e8"
-      },
-      {
-        "Name": "TreasuryInactiveDurationMinSeconds",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3f0"
-      },
-      {
-        "Name": "TreasuryInactiveDurationMaxSeconds",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3f4"
-      },
-      {
-        "Name": "RoomFailureDurationSeconds",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "WaveDelaySeconds",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3fc"
-      },
-      {
-        "Name": "EncounterDelaySeconds",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x400"
-      },
-      {
-        "Name": "VaultDoorAnimDurationSeconds",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x404"
-      },
-      {
-        "Name": "VaultDoorOpenDurationSeconds",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x408"
-      },
-      {
-        "Name": "MinWavesInEncounter",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x40c"
-      },
-      {
-        "Name": "MaxWavesInEncounter",
-        "Type": "int",
-        "Size": "0x4",
         "Offset": "0x410"
-      },
-      {
-        "Name": "MaxEncounters",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x414"
-      },
-      {
-        "Name": "WaveEncounters",
-        "Type": "TArray<struct TreasuryWaveEncounter>",
-        "Size": "0x10",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "OnTreasuryRoomCompleteEmergentBannerText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "SunkenTreasuryAvailabilityParamsAssetFileLocation",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x460"
-      },
-      {
-        "Name": "FloodMechanismActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x470"
-      },
-      {
-        "Name": "FloodTriggerActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x478"
-      },
-      {
-        "Name": "DrainMechanismActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x480"
-      },
-      {
-        "Name": "DrainTriggerActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x488"
-      },
-      {
-        "Name": "VaultMechanismActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x490"
-      },
-      {
-        "Name": "VaultTriggerActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x498"
-      },
-      {
-        "Name": "VaultLootSpawner",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x4a0"
-      },
-      {
-        "Name": "VaultLootSpawnLocationActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x4a8"
-      },
-      {
-        "Name": "EntranceSirenWindowActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x4b0"
-      },
-      {
-        "Name": "Shimmer",
-        "Type": "assetobject",
-        "Size": "0x20",
-        "Offset": "0x4b8"
-      },
-      {
-        "Name": "GameEventOnDemandAvailabilityHandler",
-        "Type": "class GameEventOnDemandAvailabilityHandler*",
-        "Size": "0x8",
-        "Offset": "0x4d8"
-      },
-      {
-        "Name": "OverlappingActors",
-        "Type": "TArray<class Actor*>",
-        "Size": "0x10",
-        "Offset": "0x4e0"
-      },
-      {
-        "Name": "CachedParticipantControllers",
-        "Type": "TArray<uintptr_t>",
-        "Size": "0x10",
-        "Offset": "0x4f0"
-      },
-      {
-        "Name": "VaultLootSpawnerActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x500"
-      },
-      {
-        "Name": "VaultOpenStat",
-        "Type": "struct PlayerStat",
-        "Size": "0x4",
-        "Offset": "0x508"
-      },
-      {
-        "Name": "FloodMechanismComponent",
-        "Type": "class MechanismActionComponent*",
-        "Size": "0x8",
-        "Offset": "0x510"
-      },
-      {
-        "Name": "DrainMechanismComponent",
-        "Type": "class MechanismActionComponent*",
-        "Size": "0x8",
-        "Offset": "0x518"
-      },
-      {
-        "Name": "VaultMechanismComponent",
-        "Type": "class MechanismActionComponent*",
-        "Size": "0x8",
-        "Offset": "0x520"
-      },
-      {
-        "Name": "FloodTriggerComponent",
-        "Type": "interface",
-        "Size": "0x10",
-        "Offset": "0x528"
-      },
-      {
-        "Name": "DrainTriggerComponent",
-        "Type": "interface",
-        "Size": "0x10",
-        "Offset": "0x538"
-      },
-      {
-        "Name": "VaultTriggerComponent",
-        "Type": "interface",
-        "Size": "0x10",
-        "Offset": "0x548"
-      },
-      {
-        "Name": "EventDispatcher",
-        "Type": "struct ObjectMessagingDispatcher",
-        "Size": "0xa0",
-        "Offset": "0x558"
       }
     ]
   },
@@ -290,6 +42,316 @@
         "Type": "TArray<class AIProgressiveWavesSpawner*>",
         "Size": "0x10",
         "Offset": "0x58"
+      }
+    ]
+  },
+  "SunkenKingdomShrineDeepSeaRegion": {
+    "Super": "DeepSeaRegion",
+    "FullSize": "0x418",
+    "InheritedSize": "0x410",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_JQ661[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x410"
+      }
+    ]
+  },
+  "SunkenKingdomShrineFinalRewardSpawnComponent": {
+    "Super": "ItemSpawnComponent",
+    "FullSize": "0x4a0",
+    "InheritedSize": "0x480",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_UQ4HP[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x480"
+      }
+    ]
+  },
+  "ShimmerActor": {
+    "Super": "Actor",
+    "FullSize": "0x448",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0xa8",
+    "Attributes": [
+      {
+        "Name": "pad0xa8_7WZ8S[0xa8]",
+        "Type": "char",
+        "Size": "0xa8",
+        "Offset": "0x3a0"
+      }
+    ]
+  },
+  "SunkenKingdomShrineEventRoom": {
+    "Super": "EventRoom",
+    "FullSize": "0x588",
+    "InheritedSize": "0x4d8",
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "pad0x10_LUOQ5[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x4d8"
+      },
+      {
+        "Name": "EntranceActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x4e8"
+      },
+      {
+        "Name": "GameEventOnDemandAvailabilityHandler",
+        "Type": "class GameEventOnDemandAvailabilityHandler*",
+        "Size": "0x8",
+        "Offset": "0x4f0"
+      },
+      {
+        "Name": "AvailabilityParamsAssetFileLocation",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x4f8"
+      },
+      {
+        "Name": "PuzzleResetComponent",
+        "Type": "class ObjectProximityResetComponent*",
+        "Size": "0x8",
+        "Offset": "0x508"
+      },
+      {
+        "Name": "ItemSpawnSelectorComponent",
+        "Type": "class GameEventItemSpawnSelectorComponent*",
+        "Size": "0x8",
+        "Offset": "0x510"
+      },
+      {
+        "Name": "pad0x70_D1HPW[0x70]",
+        "Type": "char",
+        "Size": "0x70",
+        "Offset": "0x518"
+      }
+    ]
+  },
+  "TreasuryRoom": {
+    "Super": "Actor",
+    "FullSize": "0x5e8",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x248",
+    "Attributes": [
+      {
+        "Name": "pad0x20_IBJR8[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "RoomAreaComponent",
+        "Type": "class BoxComponent*",
+        "Size": "0x8",
+        "Offset": "0x3c0"
+      },
+      {
+        "Name": "TreasuryInactiveDurationMinSeconds",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "TreasuryInactiveDurationMaxSeconds",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3cc"
+      },
+      {
+        "Name": "RoomFailureDurationSeconds",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "WaveDelaySeconds",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3d4"
+      },
+      {
+        "Name": "EncounterDelaySeconds",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "VaultDoorAnimDurationSeconds",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3dc"
+      },
+      {
+        "Name": "VaultDoorOpenDurationSeconds",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "MinWavesInEncounter",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x3e4"
+      },
+      {
+        "Name": "MaxWavesInEncounter",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "MaxEncounters",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x3ec"
+      },
+      {
+        "Name": "WaveEncounters",
+        "Type": "TArray<struct TreasuryWaveEncounter>",
+        "Size": "0x10",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "OnTreasuryRoomCompleteEmergentBannerText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "SunkenTreasuryAvailabilityParamsAssetFileLocation",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x438"
+      },
+      {
+        "Name": "FloodMechanismActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x448"
+      },
+      {
+        "Name": "FloodTriggerActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x450"
+      },
+      {
+        "Name": "DrainMechanismActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x458"
+      },
+      {
+        "Name": "DrainTriggerActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x460"
+      },
+      {
+        "Name": "VaultMechanismActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x468"
+      },
+      {
+        "Name": "VaultTriggerActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x470"
+      },
+      {
+        "Name": "VaultLootSpawner",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x478"
+      },
+      {
+        "Name": "VaultLootSpawnLocationActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x480"
+      },
+      {
+        "Name": "EntranceSirenWindowActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x488"
+      },
+      {
+        "Name": "GameEventOnDemandAvailabilityHandler",
+        "Type": "class GameEventOnDemandAvailabilityHandler*",
+        "Size": "0x8",
+        "Offset": "0x4b0"
+      },
+      {
+        "Name": "OverlappingActors",
+        "Type": "TArray<class Actor*>",
+        "Size": "0x10",
+        "Offset": "0x4b8"
+      },
+      {
+        "Name": "CachedParticipantControllers",
+        "Type": "TArray<uintptr_t>",
+        "Size": "0x10",
+        "Offset": "0x4c8"
+      },
+      {
+        "Name": "VaultLootSpawnerActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x4d8"
+      },
+      {
+        "Name": "VaultOpenStat",
+        "Type": "struct PlayerStat",
+        "Size": "0x4",
+        "Offset": "0x4e0"
+      },
+      {
+        "Name": "pad0x4_O0RBC[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4e4"
+      },
+      {
+        "Name": "FloodMechanismComponent",
+        "Type": "class MechanismActionComponent*",
+        "Size": "0x8",
+        "Offset": "0x4e8"
+      },
+      {
+        "Name": "DrainMechanismComponent",
+        "Type": "class MechanismActionComponent*",
+        "Size": "0x8",
+        "Offset": "0x4f0"
+      },
+      {
+        "Name": "VaultMechanismComponent",
+        "Type": "class MechanismActionComponent*",
+        "Size": "0x8",
+        "Offset": "0x4f8"
+      },
+      {
+        "Name": "EventDispatcher",
+        "Type": "struct ObjectMessagingDispatcher",
+        "Size": "0xa0",
+        "Offset": "0x530"
+      },
+      {
+        "Name": "pad0x18_J2IVK[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x5d0"
       }
     ]
   },

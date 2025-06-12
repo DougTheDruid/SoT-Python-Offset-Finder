@@ -40,6 +40,10 @@ ServiceHttpSettings:
     Offset: '0x39'
     Size: '0x1'
     Type: byte
+  - Name: pad0x6_JXN0L[0x6]
+    Offset: '0x3a'
+    Size: '0x6'
+    Type: char
   - Name: SubStringToFindInUrlForXBLiveTokenRequest
     Offset: '0x40'
     Size: '0x10'

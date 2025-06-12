@@ -6,27 +6,85 @@
 #include "Time_Structs.h"
 
 
-// Size 0x130 (Full Size[0x4f8] - InheritedSize[0x3c8]
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TimeInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class LocationProviderInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TimeBlueprintLibrary: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TimeFormatterInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DebugTimeInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x130 (Full Size[0x4d0] - InheritedSize[0x3a0]
 class TimeService: public Actor
 {
 public:
-	struct Timespan                                              GameWorldTimeOffset;                               // 0x400(0x8)
-	uint32                                                       TimeScalar;                                        // 0x40c(0x4)
-	uint32                                                       NumberOfDaysInEachGameMonth;                       // 0x410(0x4)
-	double                                                       ServiceTimeQueryRapidFrequencyOffsetMax;           // 0x418(0x8)
-	float                                                        ServiceTimeQueryRapidFrequencyInSeconds;           // 0x420(0x4)
-	float                                                        ServiceTimeQueryFrequencyInSeconds;                // 0x424(0x4)
-	float                                                        ClientTimeUpdateFrequencyInSeconds;                // 0x428(0x4)
-	float                                                        SunriseTimeHours;                                  // 0x42c(0x4)
-	float                                                        SunsetTimeHours;                                   // 0x430(0x4)
-	float                                                        LocalTimeUpdateAdjustMaxTimeDelta;                 // 0x434(0x4)
-	float                                                        MinLocalTimeUpdateAdjustPercentageToSlowDown;      // 0x438(0x4)
-	float                                                        MaxLocalTimeUpdateAdjustPercentageToSlowDown;      // 0x43c(0x4)
-	float                                                        MinLocalTimeUpdateAdjustPercentageToSpeedUp;       // 0x440(0x4)
-	float                                                        MaxLocalTimeUpdateAdjustPercentageToSpeedUp;       // 0x444(0x4)
-	float                                                        MaxTimeJumpToCatchUpInSeconds;                     // 0x448(0x4)
-	uint32                                                       MaxNumReplicatedTimeEntriesToAverage;              // 0x44c(0x4)
-	struct ReplicatedAuthoritativeTime                           ReplicatedServerTime;                              // 0x498(0x10)
+	char                                                         pad0x38_5PTAF[0x38];                               // 0x3a0(0x38)
+	struct Timespan                                              GameWorldTimeOffset;                               // 0x3d8(0x8)
+	char                                                         pad0x4_ITT2O[0x4];                                 // 0x3e0(0x4)
+	double                                                       ServiceTimeQueryRapidFrequencyOffsetMax;           // 0x3f0(0x8)
+	float                                                        ServiceTimeQueryRapidFrequencyInSeconds;           // 0x3f8(0x4)
+	float                                                        ServiceTimeQueryFrequencyInSeconds;                // 0x3fc(0x4)
+	float                                                        ClientTimeUpdateFrequencyInSeconds;                // 0x400(0x4)
+	float                                                        SunriseTimeHours;                                  // 0x404(0x4)
+	float                                                        SunsetTimeHours;                                   // 0x408(0x4)
+	float                                                        LocalTimeUpdateAdjustMaxTimeDelta;                 // 0x40c(0x4)
+	float                                                        MinLocalTimeUpdateAdjustPercentageToSlowDown;      // 0x410(0x4)
+	float                                                        MaxLocalTimeUpdateAdjustPercentageToSlowDown;      // 0x414(0x4)
+	float                                                        MinLocalTimeUpdateAdjustPercentageToSpeedUp;       // 0x418(0x4)
+	float                                                        MaxLocalTimeUpdateAdjustPercentageToSpeedUp;       // 0x41c(0x4)
+	float                                                        MaxTimeJumpToCatchUpInSeconds;                     // 0x420(0x4)
+	struct ReplicatedAuthoritativeTime                           ReplicatedServerTime;                              // 0x470(0x10)
+	char                                                         pad0x50_EYJJF[0x50];                               // 0x480(0x50)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CustomizableTimeInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x4d8] - InheritedSize[0x4d0]
+class DebugTimeService: public TimeService
+{
+public:
+	char                                                         pad0x8_9N5E1[0x8];                                 // 0x4d0(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x4e0] - InheritedSize[0x4d8]
+class CustomizableTimeService: public DebugTimeService
+{
+public:
+	char                                                         pad0x8_X6VAA[0x8];                                 // 0x4d8(0x8)
 };
 
 

@@ -6,15 +6,6 @@
 #include "EnemyAIOnShipFramework_Structs.h"
 
 
-// Size 0xa8 (Full Size[0x470] - InheritedSize[0x3c8]
-class EnemyAIOnShipService: public Actor
-{
-public:
-	class EnemyAIOnShipServiceDataAsset*                         Params;                                            // 0x3e8(0x8)
-	TArray<struct EnemyAIOnShipActiveEncounters>                 ReplicatedEncounters;                              // 0x3f0(0x10)
-};
-
-
 // Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
 class EnemyAIOnShipEncounterDesc: public DataAsset
 {
@@ -24,6 +15,14 @@ public:
 	class AIFixedWavesSpawner*                                   SpawnerCrewSize3;                                  // 0x38(0x8)
 	class AIFixedWavesSpawner*                                   SpawnerCrewSize4;                                  // 0x40(0x8)
 	float                                                        MigrationPreventionRadius;                         // 0x48(0x4)
+	char                                                         pad0x4_1C9D4[0x4];                                 // 0x4c(0x4)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class EnemyAIOnShipServiceInterface: public Interface
+{
+public:
 };
 
 
@@ -32,6 +31,17 @@ class EnemyAIOnShipServiceDataAsset: public DataAsset
 {
 public:
 	class EnemyAIOnShipEncounterDesc*                            OceanCrawlersOnShipEncounterParams;                // 0x28(0x8)
+};
+
+
+// Size 0xa8 (Full Size[0x448] - InheritedSize[0x3a0]
+class EnemyAIOnShipService: public Actor
+{
+public:
+	char                                                         pad0x20_WVSP7[0x20];                               // 0x3a0(0x20)
+	class EnemyAIOnShipServiceDataAsset*                         Params;                                            // 0x3c0(0x8)
+	TArray<struct EnemyAIOnShipActiveEncounters>                 ReplicatedEncounters;                              // 0x3c8(0x10)
+	char                                                         pad0x70_2QG5B[0x70];                               // 0x3d8(0x70)
 };
 
 

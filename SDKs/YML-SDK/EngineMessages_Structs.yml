@@ -44,6 +44,13 @@ EngineServiceNotification:
     Size: '0x8'
     Type: double
   ClassSize: '0x18'
+EngineServicePing:
+  Attributes:
+  - Name: pad0x1_3ISXN[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
 EngineServicePong:
   Attributes:
   - Name: CurrentLevel
@@ -58,6 +65,10 @@ EngineServicePong:
     Offset: '0x14'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_L83XS[0x3]
+    Offset: '0x15'
+    Size: '0x3'
+    Type: char
   - Name: InstanceId
     Offset: '0x18'
     Size: '0x10'
@@ -74,6 +85,10 @@ EngineServicePong:
     Offset: '0x48'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_92UKB[0x4]
+    Offset: '0x4c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x50'
 EngineServiceTerminate:
   Attributes:

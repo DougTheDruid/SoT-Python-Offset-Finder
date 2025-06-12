@@ -19,6 +19,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x70"
+      },
+      {
+        "Name": "pad0x4_RGLFB[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x74"
       }
     ]
   },
@@ -42,6 +48,17 @@
         "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x20"
+      }
+    ]
+  },
+  "SirenPuzzleCompleteEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_ZS02B[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },

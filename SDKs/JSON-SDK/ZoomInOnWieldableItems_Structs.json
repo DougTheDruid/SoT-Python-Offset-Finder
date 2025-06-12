@@ -1,36 +1,48 @@
 {
   "ZoomedInOnWieldableItemActionStateConstructionInfo": {
-    "ClassSize": "0x58",
+    "ClassSize": "0x60",
     "Attributes": [
       {
+        "Name": "pad0x48_Y8H2L[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x0"
+      },
+      {
         "Name": "ZoomedInFov",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "FreelookPitch",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "FreelookYaw",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x48"
       },
       {
-        "Name": "FreelookOutInterpolationRate",
+        "Name": "FreelookPitch",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4c"
       },
       {
-        "Name": "LookSensitivityScaler",
+        "Name": "FreelookYaw",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x50"
+      },
+      {
+        "Name": "FreelookOutInterpolationRate",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x54"
+      },
+      {
+        "Name": "LookSensitivityScaler",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "pad0x4_KGYEI[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x5c"
       }
     ]
   },

@@ -6,11 +6,18 @@
 #include "CustomMysteriousNotes_Structs.h"
 
 
-// Size 0x58 (Full Size[0x420] - InheritedSize[0x3c8]
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CustomMysteriousNotesInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x58 (Full Size[0x3f8] - InheritedSize[0x3a0]
 class CustomMysteriousNotesService: public Actor
 {
 public:
-	map                                                          CustomMysteriousNotes;                             // 0x3d0(0x50)
+	char                                                         pad0x58_7EW5C[0x58];                               // 0x3a0(0x58)
 };
 
 

@@ -7,31 +7,132 @@ ActionStateChangeRequestId:
     Size: '0x1'
     Type: byte
   ClassSize: '0x1'
-ActionStateConstructionInfo:
+ActionStateChangeTelemetryEvent:
+  Attributes:
+  - Name: NewClientState
+    Offset: '0x0'
+    Size: '0x30'
+    Type: struct ActionStateChangeTelemetryEvent_SerialisedActionStateInfoData
+  - Name: NewServerState
+    Offset: '0x30'
+    Size: '0x30'
+    Type: struct ActionStateChangeTelemetryEvent_SerialisedActionStateInfoData
+  - Name: CurrentTrackStateId
+    Offset: '0x60'
+    Size: '0x10'
+    Type: struct FString
+  - Name: TimeInCurrentState
+    Offset: '0x70'
+    Size: '0x4'
+    Type: float
+  - Name: IsTrackCurrentlyChangingState
+    Offset: '0x74'
+    Size: '0x1'
+    Type: bool
+  - Name: RequestedByClient
+    Offset: '0x75'
+    Size: '0x1'
+    Type: bool
+  - Name: Predicted
+    Offset: '0x76'
+    Size: '0x1'
+    Type: bool
+  - Name: TransitionResult
+    Offset: '0x77'
+    Size: '0x1'
+    Type: byte
+  ClassSize: '0x78'
+ActionStateChangeTelemetryEvent_ConstructionInfoData:
   Attributes:
   - Name: Id
     Offset: '0x0'
     Size: '0x8'
-    Type: class UClass*
-  - Name: PreviousStateToTransitionBackToId
+    Type: struct FName
+  - Name: Type
     Offset: '0x8'
     Size: '0x8'
-    Type: class UClass*
-  - Name: ShouldTransitionBackToPreviousState
+    Type: struct FName
+  - Name: PreviousStateToTransitionBackToId
     Offset: '0x10'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ShouldTransitionBackToPreviousState
+    Offset: '0x18'
     Size: '0x1'
     Type: bool
   - Name: IsTransitionState
-    Offset: '0x11'
+    Offset: '0x19'
     Size: '0x1'
     Type: bool
-  - Name: Type
+  - Name: pad0x2_76DEP[0x2]
+    Offset: '0x1a'
+    Size: '0x2'
+    Type: char
+  ClassSize: '0x1c'
+ActionStateChangeTelemetryEvent_SerialisedActionStateInfoData:
+  Attributes:
+  - Name: ConstructionInfo
+    Offset: '0x0'
+    Size: '0x1c'
+    Type: struct ActionStateChangeTelemetryEvent_ConstructionInfoData
+  - Name: ActionStateIdType
+    Offset: '0x1c'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ContentsType
+    Offset: '0x24'
+    Size: '0x8'
+    Type: struct FName
+  - Name: TrackId
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x30'
+ActionStateConstructionInfo:
+  Attributes:
+  - Name: pad0x8_QBPP6[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
+  - Name: Id
+    Offset: '0x8'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: PreviousStateToTransitionBackToId
+    Offset: '0x10'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: ShouldTransitionBackToPreviousState
     Offset: '0x18'
+    Size: '0x1'
+    Type: bool
+  - Name: IsTransitionState
+    Offset: '0x19'
+    Size: '0x1'
+    Type: bool
+  - Name: OverridePreviousStateTransition
+    Offset: '0x1a'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x5_WFGCJ[0x5]
+    Offset: '0x1b'
+    Size: '0x5'
+    Type: char
+  - Name: Type
+    Offset: '0x20'
     Size: '0x8'
     Type: class ScriptStruct*
-  ClassSize: '0x38'
+  - Name: pad0x18_POTUT[0x18]
+    Offset: '0x28'
+    Size: '0x18'
+    Type: char
+  ClassSize: '0x40'
 ActionStateMessage:
   Attributes:
+  - Name: pad0x8_E3XDV[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: Type
     Offset: '0x8'
     Size: '0x8'
@@ -58,9 +159,24 @@ ActionStatePriorityRelationship:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_5TYXK[0x7]
+    Offset: '0x9'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x10'
+ActionStatePriorityTable:
+  Attributes:
+  - Name: pad0xa0_7XBKB[0xa0]
+    Offset: '0x0'
+    Size: '0xa0'
+    Type: char
+  ClassSize: '0xa0'
 ActionStateSerialisableData:
   Attributes:
+  - Name: pad0x8_QH78I[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
   - Name: Id
     Offset: '0x8'
     Size: '0x8'
@@ -69,20 +185,49 @@ ActionStateSerialisableData:
     Offset: '0x10'
     Size: '0x8'
     Type: class ScriptStruct*
+  - Name: pad0x18_XUPGJ[0x18]
+    Offset: '0x18'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x30'
 ActorActionStateConstructionInfo:
   Attributes:
-  - Name: ActorOwner
-    Offset: '0x38'
-    Size: '0x8'
-    Type: class Actor*
-  ClassSize: '0x40'
+  - Name: pad0x48_0IFWS[0x48]
+    Offset: '0x0'
+    Size: '0x48'
+    Type: char
+  ClassSize: '0x48'
+EventFirstPersonAnimaticActionStateEndedClient:
+  Attributes:
+  - Name: pad0x1_ECGD4[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
+EventWaitingToSpawnActionStateEndedClient:
+  Attributes:
+  - Name: pad0x1_UV8RW[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
+EventWaitingToSpawnActionStateStartedClient:
+  Attributes:
+  - Name: pad0x1_64PR3[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
 InnerTestStruct:
   Attributes:
   - Name: BoolProp
     Offset: '0x0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_ON7Z3[0x7]
+    Offset: '0x1'
+    Size: '0x7'
+    Type: char
   - Name: StringProp
     Offset: '0x8'
     Size: '0x10'
@@ -95,79 +240,182 @@ InnerWithObjTestStruct:
     Size: '0x8'
     Type: class Object*
   ClassSize: '0x8'
+NullActionStateConstructionInfo:
+  Attributes:
+  - Name: pad0x48_6RYRS[0x48]
+    Offset: '0x0'
+    Size: '0x48'
+    Type: char
+  ClassSize: '0x48'
+PendingStateTransitionsTelemetryEvent:
+  Attributes:
+  - Name: NumPendingTransitions
+    Offset: '0x0'
+    Size: '0x4'
+    Type: int
+  - Name: MaxPendingTransitions
+    Offset: '0x4'
+    Size: '0x4'
+    Type: int
+  - Name: PendingTransitions
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<String>
+  - Name: RequestedTransition
+    Offset: '0x18'
+    Size: '0x10'
+    Type: struct FString
+  ClassSize: '0x28'
 ResetStateMachineRpc:
   Attributes:
   - Name: LatestEpochIds
     Offset: '0x0'
     Size: '0x1'
     Type: struct ActionStateChangeRequestId
+  - Name: pad0x4_DF4BM[0x4]
+    Offset: '0x1'
+    Size: '0x4'
+    Type: char
   - Name: LatestRequestIds
     Offset: '0x5'
     Size: '0x1'
     Type: struct ActionStateChangeRequestId
+  - Name: pad0xa_C06SB[0xa]
+    Offset: '0x6'
+    Size: '0xa'
+    Type: char
   - Name: PerTrackConstructionInfoStore
     Offset: '0x10'
     Size: '0x140'
     Type: struct SerialisedConstructionInfoStore
   ClassSize: '0x150'
+SerialisedActionStateInfo:
+  Attributes:
+  - Name: pad0x40_MIOD9[0x40]
+    Offset: '0x0'
+    Size: '0x40'
+    Type: char
+  ClassSize: '0x40'
+SerialisedActionStateMessage:
+  Attributes:
+  - Name: pad0x18_UK07A[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
+  ClassSize: '0x18'
 SerialisedConstructionInfoStore:
   Attributes:
   - Name: SerialisedConstructionInfo
     Offset: '0x0'
     Size: '0x40'
     Type: struct SerialisedActionStateInfo
+  - Name: pad0x100_8EAFF[0x100]
+    Offset: '0x40'
+    Size: '0x100'
+    Type: char
   ClassSize: '0x140'
 TestActionStateConstructionInfo:
   Attributes:
+  - Name: pad0x40_TC0RR[0x40]
+    Offset: '0x0'
+    Size: '0x40'
+    Type: char
   - Name: IntProp
-    Offset: '0x38'
+    Offset: '0x40'
     Size: '0x4'
     Type: int
-  ClassSize: '0x40'
+  - Name: pad0x4_BJYMK[0x4]
+    Offset: '0x44'
+    Size: '0x4'
+    Type: char
+  ClassSize: '0x48'
 TestActionStateConstructionInfoWithInner:
   Attributes:
+  - Name: pad0x40_XENGG[0x40]
+    Offset: '0x0'
+    Size: '0x40'
+    Type: char
   - Name: FloatProp
-    Offset: '0x38'
+    Offset: '0x40'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_MZCNX[0x4]
+    Offset: '0x44'
+    Size: '0x4'
+    Type: char
   - Name: InnerStruct
-    Offset: '0x40'
+    Offset: '0x48'
     Size: '0x18'
     Type: struct InnerTestStruct
-  ClassSize: '0x58'
+  ClassSize: '0x60'
 TestActionStateConstructionInfoWithObjPointers:
   Attributes:
+  - Name: pad0x40_GCRSH[0x40]
+    Offset: '0x0'
+    Size: '0x40'
+    Type: char
   - Name: ObjPointer
-    Offset: '0x38'
+    Offset: '0x40'
     Size: '0x8'
     Type: class Object*
   - Name: Inner
-    Offset: '0x40'
+    Offset: '0x48'
     Size: '0x8'
     Type: struct InnerWithObjTestStruct
   - Name: Array
-    Offset: '0x48'
+    Offset: '0x50'
     Size: '0x10'
     Type: TArray<class Object*>
-  ClassSize: '0x58'
+  ClassSize: '0x60'
 TestActionStateMessage:
   Attributes:
+  - Name: pad0x10_QQIY0[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   - Name: TestProperty
     Offset: '0x10'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_2LZ89[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x18'
+TestActionStateMessage2:
+  Attributes:
+  - Name: pad0x10_ZTWZH[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
+  ClassSize: '0x10'
 TestActionStateSerialisableData:
   Attributes:
+  - Name: pad0x30_WGIJP[0x30]
+    Offset: '0x0'
+    Size: '0x30'
+    Type: char
   - Name: IntProp
     Offset: '0x30'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_B7LKG[0x4]
+    Offset: '0x34'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x38'
 TestActorActionStateConstructionInfo:
   Attributes:
+  - Name: pad0x48_CBGMS[0x48]
+    Offset: '0x0'
+    Size: '0x48'
+    Type: char
   - Name: IntProp
-    Offset: '0x40'
+    Offset: '0x48'
     Size: '0x4'
     Type: int
-  ClassSize: '0x48'
+  - Name: pad0x4_1G5EA[0x4]
+    Offset: '0x4c'
+    Size: '0x4'
+    Type: char
+  ClassSize: '0x50'

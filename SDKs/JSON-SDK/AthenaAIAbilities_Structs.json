@@ -13,6 +13,12 @@
         "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_KYL5C[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
       }
     ]
   },
@@ -30,6 +36,12 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_QUWXC[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
       }
     ]
   },

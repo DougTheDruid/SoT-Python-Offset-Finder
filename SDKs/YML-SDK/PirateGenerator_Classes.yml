@@ -6,6 +6,10 @@ AnimationSwitchDataAsset:
     Offset: '0x28'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_RC7Z3[0x4]
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: char
   - Name: Entries
     Offset: '0x30'
     Size: '0x10'
@@ -14,12 +18,22 @@ AnimationSwitchDataAsset:
   FullSize: '0x40'
   InheritedSize: '0x28'
   Super: DataAsset
+CharacterMeshBakeFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
 CharacterMeshBakeSpecification:
   Attributes:
   - Name: StripTopLOD
     Offset: '0x28'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_DUQ80[0x7]
+    Offset: '0x29'
+    Size: '0x7'
+    Type: char
   - Name: CharacterMesh
     Offset: '0x30'
     Size: '0x8'
@@ -56,6 +70,12 @@ CharacterMeshBakeSpecification:
   FullSize: '0x98'
   InheritedSize: '0x28'
   Super: Object
+CharacterMeshBakeTestFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
 ColorTexture:
   Attributes:
   - Name: Color
@@ -80,6 +100,12 @@ ColorTextureSwitchBySeed:
   FullSize: '0x240'
   InheritedSize: '0x228'
   Super: TextureSwitch
+FileAccessFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
 MaterialReferencesDataAsset:
   Attributes:
   - Name: MaterialReferences
@@ -90,6 +116,18 @@ MaterialReferencesDataAsset:
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: DataAsset
+PirateBodyShapeFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+PirateGeneratorFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
 PirateGeneratorMaterials:
   Attributes:
   - Name: Materials
@@ -170,16 +208,44 @@ PirateGeneratorSettings:
     Offset: '0x130'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_ZRJ34[0x4]
+    Offset: '0x134'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x100'
   FullSize: '0x138'
   InheritedSize: '0x38'
   Super: DeveloperSettings
+PreparePirateMeshBakeTestFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+SkeletonsDataAsset:
+  Attributes:
+  - Name: pad0x50_7MA1J[0x50]
+    Offset: '0x28'
+    Size: '0x50'
+    Type: char
+  ClassSize: '0x50'
+  FullSize: '0x78'
+  InheritedSize: '0x28'
+  Super: DataAsset
 TextureSwitch:
   Attributes:
+  - Name: pad0x80_C2YEL[0x80]
+    Offset: '0x148'
+    Size: '0x80'
+    Type: char
   - Name: bDuplicated
     Offset: '0x1c8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_PLMRX[0x7]
+    Offset: '0x1c9'
+    Size: '0x7'
+    Type: char
   - Name: DefaultParameters
     Offset: '0x1d0'
     Size: '0x58'
@@ -246,6 +312,10 @@ TextureSwitchBySeed:
     Offset: '0x234'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x4_L5FKQ[0x4]
+    Offset: '0x23c'
+    Size: '0x4'
+    Type: char
   - Name: FallbackTexture
     Offset: '0x240'
     Size: '0x10'
@@ -260,6 +330,10 @@ TextureSwitchBySeed:
   Super: TextureSwitch
 WardrobeDataAsset:
   Attributes:
+  - Name: pad0xa0_77GPU[0xa0]
+    Offset: '0x28'
+    Size: '0xa0'
+    Type: char
   - Name: AssetMap
     Offset: '0xc8'
     Size: '0x10'
@@ -268,6 +342,18 @@ WardrobeDataAsset:
   FullSize: '0xd8'
   InheritedSize: '0x28'
   Super: DataAsset
+WardrobeExcludeDataAsset:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: DataAsset
+WardrobeFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
 WardrobeOutfitDataAsset:
   Attributes:
   - Name: FemaleWardrobeItems

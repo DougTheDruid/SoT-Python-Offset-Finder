@@ -14,6 +14,10 @@ ClueSite:
     Offset: '0x10'
     Size: '0xc'
     Type: struct Vector
+  - Name: pad0x4_04WL1[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x20'
 ClueSiteLootHistory:
   Attributes:
@@ -32,6 +36,10 @@ ClueSiteLootRestriction:
     Offset: '0x8'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_MNJBG[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x10'
 ClueSiteTypeSupportedDescribedByEntry:
   Attributes:
@@ -65,6 +73,10 @@ EventClueObtained:
     Offset: '0x8'
     Size: '0x8'
     Type: class UClass*
+  - Name: pad0x10_J0GQ6[0x10]
+    Offset: '0x10'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x20'
 LandClueCreationChoice:
   Attributes:
@@ -107,6 +119,27 @@ LootToRangeDist:
     Size: '0x8'
     Type: class WeightedTreasureChestDescAsset*
   ClassSize: '0x28'
+QuestVariableClueDescriptor:
+  Attributes:
+  - Name: pad0x30_5X36E[0x30]
+    Offset: '0x0'
+    Size: '0x30'
+    Type: char
+  ClassSize: '0x30'
+QuestVariableClueSite:
+  Attributes:
+  - Name: pad0x30_GZWLW[0x30]
+    Offset: '0x0'
+    Size: '0x30'
+    Type: char
+  ClassSize: '0x30'
+QuestVariableClueSiteArray:
+  Attributes:
+  - Name: pad0x30_VYU9B[0x30]
+    Offset: '0x0'
+    Size: '0x30'
+    Type: char
+  ClassSize: '0x30'
 RestrictedClueType:
   Attributes:
   - Name: Type
@@ -117,6 +150,10 @@ RestrictedClueType:
     Offset: '0x8'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_U4FGX[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x10'
 SeaClueCreationChoice:
   Attributes:
@@ -128,6 +165,10 @@ SeaClueCreationChoice:
     Offset: '0x8'
     Size: '0x8'
     Type: class SeaClueCreator*
+  - Name: pad0x10_LCG4J[0x10]
+    Offset: '0x10'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x20'
 WeightedClueDescriptor:
   Attributes:
@@ -153,12 +194,16 @@ WeightedClueDestinationDescriptor:
   ClassSize: '0x18'
 WeightedDebris:
   Attributes:
-  - Name: DebrisClass
+  - Name: pad0x20_HCDFE[0x20]
     Offset: '0x0'
     Size: '0x20'
-    Type: assetclass
+    Type: char
   - Name: Weight
     Offset: '0x20'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_2A2GJ[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x28'

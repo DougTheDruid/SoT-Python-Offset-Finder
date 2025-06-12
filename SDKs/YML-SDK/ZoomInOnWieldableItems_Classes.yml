@@ -2,31 +2,45 @@
 # https://github.com/DougTheDruid
 ZoomInOnWieldableItemComponent:
   Attributes:
+  - Name: pad0x8_QM0TY[0x8]
+    Offset: '0xb8'
+    Size: '0x8'
+    Type: char
   - Name: FeatureName
-    Offset: '0xd0'
+    Offset: '0xc0'
     Size: '0x8'
     Type: struct FName
   - Name: ZoomedInFov
-    Offset: '0xd8'
+    Offset: '0xc8'
     Size: '0x4'
     Type: float
   - Name: FreelookPitch
-    Offset: '0xdc'
+    Offset: '0xcc'
     Size: '0x4'
     Type: float
   - Name: FreelookYaw
-    Offset: '0xe0'
+    Offset: '0xd0'
     Size: '0x4'
     Type: float
   - Name: FreelookOutInterpolationRate
-    Offset: '0xe4'
+    Offset: '0xd4'
     Size: '0x4'
     Type: float
   - Name: LookSensitivityScaler
-    Offset: '0xe8'
+    Offset: '0xd8'
     Size: '0x4'
     Type: float
+  - Name: pad0x3c_DIHSA[0x3c]
+    Offset: '0xdc'
+    Size: '0x3c'
+    Type: char
   ClassSize: '0x60'
-  FullSize: '0x128'
-  InheritedSize: '0xc8'
+  FullSize: '0x118'
+  InheritedSize: '0xb8'
   Super: ActorComponent
+ZoomedInOnWieldableItemActionStateId:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: ActionStateId

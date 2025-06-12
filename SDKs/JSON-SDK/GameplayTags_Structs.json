@@ -1,4 +1,15 @@
 {
+  "GameplayTagNode": {
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "pad0x78_BW1ZJ[0x78]",
+        "Type": "char",
+        "Size": "0x78",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "GameplayTag": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -37,6 +48,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x4_NNG16[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
         "Name": "TagDictionary",
         "Type": "TArray<struct GameplayTag>",
         "Size": "0x10",
@@ -65,6 +82,12 @@
   "GameplayTagContainer": {
     "ClassSize": "0x28",
     "Attributes": [
+      {
+        "Name": "pad0x8_2WKCW[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
       {
         "Name": "GameplayTags",
         "Type": "TArray<struct GameplayTag>",

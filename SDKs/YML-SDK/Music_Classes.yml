@@ -3,104 +3,152 @@
 AISpawnerMusicZoneComponent:
   Attributes:
   - Name: BattleWonEvent
-    Offset: '0x3c8'
+    Offset: '0x3b8'
     Size: '0x8'
     Type: class WwiseEvent*
   - Name: AISpawner
-    Offset: '0x3d0'
+    Offset: '0x3c0'
     Size: '0x8'
     Type: class AISpawner*
   - Name: SpawnerPawns
-    Offset: '0x3d8'
+    Offset: '0x3c8'
     Size: '0x10'
     Type: TArray<class Pawn*>
   - Name: SpawnerState
-    Offset: '0x3e8'
+    Offset: '0x3d8'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_FNH22[0x7]
+    Offset: '0x3d9'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x20'
-  FullSize: '0x3f0'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3e0'
+  InheritedSize: '0x3c0'
   Super: MusicZoneComponent
+EmitterManipulatorInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 MusicZoneComponent:
   Attributes:
+  - Name: pad0x8_HAANG[0x8]
+    Offset: '0x2d0'
+    Size: '0x8'
+    Type: char
   - Name: InnerRadius
-    Offset: '0x2e8'
+    Offset: '0x2d8'
     Size: '0x4'
     Type: float
   - Name: OuterRadius
-    Offset: '0x2ec'
+    Offset: '0x2dc'
     Size: '0x4'
     Type: float
   - Name: LocationRTPC
-    Offset: '0x2f0'
+    Offset: '0x2e0'
     Size: '0x8'
     Type: struct FName
   - Name: PlaybackPositionRTPC
-    Offset: '0x2f8'
+    Offset: '0x2e8'
     Size: '0x8'
     Type: struct FName
   - Name: LocalRTPC
-    Offset: '0x300'
+    Offset: '0x2f0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_OJFS5[0x7]
+    Offset: '0x2f1'
+    Size: '0x7'
+    Type: char
   - Name: PlayEvent
-    Offset: '0x308'
+    Offset: '0x2f8'
     Size: '0x8'
     Type: class WwiseEvent*
   - Name: StopEvent
-    Offset: '0x310'
+    Offset: '0x300'
     Size: '0x8'
     Type: class WwiseEvent*
   - Name: OneShotEvents
-    Offset: '0x318'
+    Offset: '0x308'
     Size: '0x10'
     Type: TArray<class WwiseEvent*>
   - Name: EmitterPool
-    Offset: '0x328'
+    Offset: '0x318'
     Size: '0x8'
     Type: class WwiseObjectPoolWrapper*
   - Name: DisableAfterPlayThrough
-    Offset: '0x330'
+    Offset: '0x320'
     Size: '0x1'
     Type: bool
   - Name: ActivateOnBeginPlay
-    Offset: '0x331'
+    Offset: '0x321'
     Size: '0x1'
     Type: bool
-  - Name: OnMusicZoneStarted
-    Offset: '0x338'
-    Size: '0x10'
-    Type: multicastinlinedelegate
+  - Name: pad0x6_CTYN2[0x6]
+    Offset: '0x322'
+    Size: '0x6'
+    Type: char
   - Name: EmitterRemoteValues
-    Offset: '0x370'
+    Offset: '0x360'
     Size: '0x20'
     Type: struct MusicZoneRemoteValues
+  - Name: pad0x40_T84JK[0x40]
+    Offset: '0x380'
+    Size: '0x40'
+    Type: char
   ClassSize: '0xf0'
-  FullSize: '0x3d0'
-  InheritedSize: '0x2e0'
+  FullSize: '0x3c0'
+  InheritedSize: '0x2d0'
   Super: SceneComponent
+MusicZoneInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: EmitterManipulatorInterface
+MusicZoneService:
+  Attributes:
+  - Name: pad0xc8_0QVQF[0xc8]
+    Offset: '0x3a0'
+    Size: '0xc8'
+    Type: char
+  ClassSize: '0xc8'
+  FullSize: '0x468'
+  InheritedSize: '0x3a0'
+  Super: Actor
+MusicZoneServiceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 NetMusicZoneActor:
   Attributes:
   - Name: MusicZone
-    Offset: '0x3c8'
+    Offset: '0x3a0'
     Size: '0x8'
     Type: class MusicZoneComponent*
   ClassSize: '0x8'
-  FullSize: '0x3d0'
-  InheritedSize: '0x3c8'
+  FullSize: '0x3a8'
+  InheritedSize: '0x3a0'
   Super: Actor
 SynchedMusicZoneComponent:
   Attributes:
   - Name: StartDelayTime
-    Offset: '0x3c8'
+    Offset: '0x3b8'
     Size: '0x4'
     Type: float
   - Name: PlayFromStartTimeMS
-    Offset: '0x3cc'
+    Offset: '0x3bc'
     Size: '0x4'
     Type: int
+  - Name: pad0x30_74TGV[0x30]
+    Offset: '0x3c0'
+    Size: '0x30'
+    Type: char
   ClassSize: '0x30'
-  FullSize: '0x400'
-  InheritedSize: '0x3d0'
+  FullSize: '0x3f0'
+  InheritedSize: '0x3c0'
   Super: MusicZoneComponent

@@ -1,111 +1,181 @@
 {
+  "TimeInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "LocationProviderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TimeBlueprintLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TimeFormatterInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DebugTimeInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "TimeService": {
     "Super": "Actor",
-    "FullSize": "0x4f8",
-    "InheritedSize": "0x3c8",
+    "FullSize": "0x4d0",
+    "InheritedSize": "0x3a0",
     "ClassSize": "0x130",
     "Attributes": [
+      {
+        "Name": "pad0x38_5PTAF[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x3a0"
+      },
       {
         "Name": "GameWorldTimeOffset",
         "Type": "struct Timespan",
         "Size": "0x8",
-        "Offset": "0x400"
+        "Offset": "0x3d8"
       },
       {
-        "Name": "TimeScalar",
-        "Type": "uint32",
+        "Name": "pad0x4_ITT2O[0x4]",
+        "Type": "char",
         "Size": "0x4",
-        "Offset": "0x40c"
-      },
-      {
-        "Name": "NumberOfDaysInEachGameMonth",
-        "Type": "uint32",
-        "Size": "0x4",
-        "Offset": "0x410"
+        "Offset": "0x3e0"
       },
       {
         "Name": "ServiceTimeQueryRapidFrequencyOffsetMax",
         "Type": "double",
         "Size": "0x8",
-        "Offset": "0x418"
+        "Offset": "0x3f0"
       },
       {
         "Name": "ServiceTimeQueryRapidFrequencyInSeconds",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x420"
+        "Offset": "0x3f8"
       },
       {
         "Name": "ServiceTimeQueryFrequencyInSeconds",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x424"
+        "Offset": "0x3fc"
       },
       {
         "Name": "ClientTimeUpdateFrequencyInSeconds",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x428"
+        "Offset": "0x400"
       },
       {
         "Name": "SunriseTimeHours",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x42c"
+        "Offset": "0x404"
       },
       {
         "Name": "SunsetTimeHours",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x430"
+        "Offset": "0x408"
       },
       {
         "Name": "LocalTimeUpdateAdjustMaxTimeDelta",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x434"
+        "Offset": "0x40c"
       },
       {
         "Name": "MinLocalTimeUpdateAdjustPercentageToSlowDown",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x438"
+        "Offset": "0x410"
       },
       {
         "Name": "MaxLocalTimeUpdateAdjustPercentageToSlowDown",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x43c"
+        "Offset": "0x414"
       },
       {
         "Name": "MinLocalTimeUpdateAdjustPercentageToSpeedUp",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x440"
+        "Offset": "0x418"
       },
       {
         "Name": "MaxLocalTimeUpdateAdjustPercentageToSpeedUp",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x444"
+        "Offset": "0x41c"
       },
       {
         "Name": "MaxTimeJumpToCatchUpInSeconds",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x448"
-      },
-      {
-        "Name": "MaxNumReplicatedTimeEntriesToAverage",
-        "Type": "uint32",
-        "Size": "0x4",
-        "Offset": "0x44c"
+        "Offset": "0x420"
       },
       {
         "Name": "ReplicatedServerTime",
         "Type": "struct ReplicatedAuthoritativeTime",
         "Size": "0x10",
-        "Offset": "0x498"
+        "Offset": "0x470"
+      },
+      {
+        "Name": "pad0x50_EYJJF[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x480"
+      }
+    ]
+  },
+  "CustomizableTimeInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DebugTimeService": {
+    "Super": "TimeService",
+    "FullSize": "0x4d8",
+    "InheritedSize": "0x4d0",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_9N5E1[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x4d0"
+      }
+    ]
+  },
+  "CustomizableTimeService": {
+    "Super": "DebugTimeService",
+    "FullSize": "0x4e0",
+    "InheritedSize": "0x4d8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_X6VAA[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x4d8"
       }
     ]
   },

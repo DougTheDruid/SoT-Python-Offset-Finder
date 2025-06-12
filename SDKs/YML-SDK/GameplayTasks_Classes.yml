@@ -6,34 +6,48 @@ GameplayTask:
     Offset: '0x28'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x28_5N5O9[0x28]
+    Offset: '0x30'
+    Size: '0x28'
+    Type: char
   ClassSize: '0x30'
   FullSize: '0x58'
   InheritedSize: '0x28'
   Super: Object
+GameplayTaskOwnerInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 GameplayTaskResource:
   Attributes:
   - Name: ManualResourceID
     Offset: '0x28'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_1ISBW[0x4]
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: char
   - Name: bManuallySetID
     Offset: '0x30'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_F1LWF[0x7]
+    Offset: '0x31'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x10'
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: Object
 GameplayTask_SpawnActor:
   Attributes:
-  - Name: Success
+  - Name: pad0x38_8QKB1[0x38]
     Offset: '0x58'
-    Size: '0x10'
-    Type: multicastinlinedelegate
-  - Name: DidNotSpawn
-    Offset: '0x68'
-    Size: '0x10'
-    Type: multicastinlinedelegate
+    Size: '0x38'
+    Type: char
   - Name: ClassToSpawn
     Offset: '0x90'
     Size: '0x8'
@@ -44,29 +58,37 @@ GameplayTask_SpawnActor:
   Super: GameplayTask
 GameplayTask_WaitDelay:
   Attributes:
-  - Name: OnFinish
+  - Name: pad0x18_FB705[0x18]
     Offset: '0x58'
-    Size: '0x10'
-    Type: multicastinlinedelegate
+    Size: '0x18'
+    Type: char
   ClassSize: '0x18'
   FullSize: '0x70'
   InheritedSize: '0x58'
   Super: GameplayTask
 GameplayTasksComponent:
   Attributes:
+  - Name: pad0x8_18B7M[0x8]
+    Offset: '0xb8'
+    Size: '0x8'
+    Type: char
   - Name: SimulatedTasks
-    Offset: '0xd0'
+    Offset: '0xc0'
     Size: '0x10'
     Type: TArray<class GameplayTask*>
   - Name: TaskPriorityQueue
-    Offset: '0xe0'
+    Offset: '0xd0'
     Size: '0x10'
     Type: TArray<class GameplayTask*>
-  - Name: OnClaimedResourcesChange
-    Offset: '0x118'
+  - Name: pad0x28_L730F[0x28]
+    Offset: '0xe0'
+    Size: '0x28'
+    Type: char
+  - Name: pad0x10_KRASM[0x10]
+    Offset: '0x108'
     Size: '0x10'
-    Type: multicastinlinedelegate
+    Type: char
   ClassSize: '0x60'
-  FullSize: '0x128'
-  InheritedSize: '0xc8'
+  FullSize: '0x118'
+  InheritedSize: '0xb8'
   Super: ActorComponent

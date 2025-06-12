@@ -12,6 +12,12 @@
         "Offset": "0x28"
       },
       {
+        "Name": "pad0x4_RL4ZC[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x5c"
+      },
+      {
         "Name": "ChildNodes",
         "Type": "TArray<class WidgetReflectorNodeBase*>",
         "Size": "0x10",
@@ -74,6 +80,12 @@
         "Offset": "0x144"
       },
       {
+        "Name": "pad0x4_J41JK[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14c"
+      },
+      {
         "Name": "CachedWidgetForegroundColor",
         "Type": "struct SlateColor",
         "Size": "0x30",
@@ -90,6 +102,26 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x190"
+      },
+      {
+        "Name": "pad0x7_A4OG1[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x191"
+      }
+    ]
+  },
+  "LiveWidgetReflectorNode": {
+    "Super": "WidgetReflectorNodeBase",
+    "FullSize": "0x98",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_6V9Q5[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x80"
       }
     ]
   },

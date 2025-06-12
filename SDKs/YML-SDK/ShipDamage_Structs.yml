@@ -21,6 +21,10 @@ DamageZoneDamageLevelChanged:
     Offset: '0x8'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_JVNYJ[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x10'
 DistanceAndLevelOfDamage:
   Attributes:
@@ -36,6 +40,10 @@ DistanceAndLevelOfDamage:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_XNY7E[0x3]
+    Offset: '0x9'
+    Size: '0x3'
+    Type: char
   - Name: DamageLimit
     Offset: '0xc'
     Size: '0x4'
@@ -44,6 +52,10 @@ DistanceAndLevelOfDamage:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_V35T1[0x3]
+    Offset: '0x11'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x14'
 EventRestoreShip:
   Attributes:
@@ -66,6 +78,10 @@ EventShipDamageApplied:
     Offset: '0x10'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_3TW5W[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   - Name: ImpactDamageEvent
     Offset: '0x18'
     Size: '0x58'
@@ -96,6 +112,10 @@ HullDamageHit:
     Offset: '0x18'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_F3X69[0x3]
+    Offset: '0x19'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x1c'
 HullDamagePersistenceModel:
   Attributes:
@@ -122,11 +142,22 @@ HullDamageZoneInfo:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_NKUP6[0x7]
+    Offset: '0x19'
+    Size: '0x7'
+    Type: char
   - Name: ExternalHitList
     Offset: '0x20'
     Size: '0x10'
     Type: TArray<struct HullDamageHit>
   ClassSize: '0x30'
+InternalDamageGroup:
+  Attributes:
+  - Name: DamageObjects
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<class Object*>
+  ClassSize: '0x10'
 LevelOfDamageProperties:
   Attributes:
   - Name: LeakAmount
@@ -149,6 +180,10 @@ LevelOfDamageProperties:
     Offset: '0x10'
     Size: '0x8'
     Type: class MaterialInterface*
+  - Name: SpearedHoleDecalMaterial
+    Offset: '0x18'
+    Size: '0x8'
+    Type: class MaterialInterface*
   - Name: HoleDecalComponentTransform
     Offset: '0x20'
     Size: '0x30'
@@ -165,6 +200,10 @@ LevelOfDamageProperties:
     Offset: '0x60'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_MNEHN[0x4]
+    Offset: '0x64'
+    Size: '0x4'
+    Type: char
   - Name: ParticleSystem_WaterLeakAboveWater
     Offset: '0x68'
     Size: '0x8'
@@ -188,6 +227,10 @@ LevelOfDamageProperties:
   ClassSize: '0x90'
 SendShipRestoredRpc:
   Attributes:
+  - Name: pad0x18_9SQ13[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: CrewId
     Offset: '0x18'
     Size: '0x10'
@@ -202,10 +245,10 @@ ShipDamageParams:
   ClassSize: '0x10'
 ShipPartLevelsOfDamage:
   Attributes:
-  - Name: ActorClass
+  - Name: pad0x20_08BO1[0x20]
     Offset: '0x0'
     Size: '0x20'
-    Type: assetclass
+    Type: char
   - Name: DamagePerDistance
     Offset: '0x20'
     Size: '0x10'
@@ -214,4 +257,15 @@ ShipPartLevelsOfDamage:
     Offset: '0x30'
     Size: '0xc'
     Type: struct FeatureFlag
+  - Name: pad0x4_X90EE[0x4]
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x40'
+ShipRestoredNetworkEvent:
+  Attributes:
+  - Name: pad0x18_1P2QJ[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
+  ClassSize: '0x18'

@@ -1,305 +1,22 @@
 {
-  "JupiterSessionJoinThroughServiceRequestModel": {
-    "ClassSize": "0x20",
+  "ServerMatchmakingConfigChangedEvent": {
+    "ClassSize": "0x4",
     "Attributes": [
       {
-        "Name": "OwningUserId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SessionTemplateName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "CrewSessionBaseTelemetryEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SessionHostChangedEvent": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "CrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CrewSessionMatchmakingFollowedTelemetryEvent": {
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "NewCrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "ResultCode",
-        "Type": "int",
+        "Name": "pad0x4_37WGY[0x4]",
+        "Type": "char",
         "Size": "0x4",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "Message",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x68"
-      }
-    ]
-  },
-  "CrewSessionOperationFailedTelemetryEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "ErrorMessage",
-        "Type": "struct FString",
-        "Size": "0x10",
         "Offset": "0x0"
-      },
-      {
-        "Name": "OperationTypeCode",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "WasCancelled",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x14"
       }
     ]
   },
-  "CrewSessionMemberTelemetry": {
-    "ClassSize": "0x28",
+  "SessionLostEvent": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "UserId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "StatusString",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "IsSessionHost",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "CrewSessionTemplate": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "MatchmakingHopper",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "ShipSize",
-        "Type": "class UClass*",
+        "Name": "pad0x8_MG708[0x8]",
+        "Type": "char",
         "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "MaxMatchmakingPlayers",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "SessionHostDeviceChangedEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "CrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NewHostDevice",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "SessionTemplate": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "TemplateName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SessionType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "MaxPlayers",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x14"
-      }
-    ]
-  },
-  "CrewSessionKeepAliveFailedTelemetryEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "CrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "UserStatus",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "ErrorCode",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "KeepAliveCounter",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x24"
-      }
-    ]
-  },
-  "CrewSessionMatchmakingStartedTelemetryEvent": {
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "CrewMatchmakingAttemptId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "SessionType",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "MatchmakingHopper",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "MatchmakingType",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "CrewSegmentValues",
-        "Type": "TArray<int>",
-        "Size": "0x10",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "CurrentCrewCount",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "EstimatedWaitTime",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x64"
-      },
-      {
-        "Name": "MaxWaitTime",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x68"
-      }
-    ]
-  },
-  "CrewSessionQoSMeasurementTelemetry": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Location",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AvgLatency",
-        "Type": "uint32",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "NumReceivedPings",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "NumFailedPings",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "ResolveResult",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x1c"
-      },
-      {
-        "Name": "LocationWasConsidered",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1d"
-      }
-    ]
-  },
-  "SessionInfoUpdateAvailableEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
         "Offset": "0x0"
       }
     ]
@@ -307,6 +24,12 @@
   "CrewSessionMatchmakingEndedTelemetryEvent": {
     "ClassSize": "0x98",
     "Attributes": [
+      {
+        "Name": "pad0x10_YXGGM[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
       {
         "Name": "NewCrewId",
         "Type": "struct Guid",
@@ -369,26 +92,507 @@
       }
     ]
   },
-  "CrewSessionJoinedTelemetryEvent": {
-    "ClassSize": "0x70",
+  "ServerMatchmakingPlayerServerAssignmentEvent": {
+    "ClassSize": "0xb8",
     "Attributes": [
       {
-        "Name": "JoinMethod",
-        "Type": "struct FString",
+        "Name": "pad0xb8_FH130[0xb8]",
+        "Type": "char",
+        "Size": "0xb8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "OnlineSessionMemberLostEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x28_0S7HU[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CrewSessionMatchmakingFollowedTelemetryEvent": {
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "pad0x50_KZKLI[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NewCrewId",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x50"
       },
       {
-        "Name": "QoSTelemetry",
-        "Type": "TArray<struct CrewSessionQoSMeasurementTelemetry>",
-        "Size": "0x10",
+        "Name": "ResultCode",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x4_NQ27Q[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x64"
+      },
+      {
+        "Name": "Message",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x68"
+      }
+    ]
+  },
+  "JupiterSessionJoinThroughServiceRequestModel": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "OwningUserId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SessionTemplateName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CrewSessionBaseTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ServerMatchmakingRequestEvent": {
+    "ClassSize": "0xa8",
+    "Attributes": [
+      {
+        "Name": "pad0xa8_SIT58[0xa8]",
+        "Type": "char",
+        "Size": "0xa8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SkadiSessionJoinThroughServiceRequestModel": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "OwningUserId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SessionTemplateName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "SessionHostChangedEvent": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x40_4KGJG[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CrewSessionLeaveTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_UEPCS[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ServerMatchmakingCrewLeftEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_9ZUY5[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ServerMatchmakingPlayerCrewAssignmentEvent": {
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "pad0x90_8A39Z[0x90]",
+        "Type": "char",
+        "Size": "0x90",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ServerMatchmakingRefusedEvent": {
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "pad0x88_D3R1Z[0x88]",
+        "Type": "char",
+        "Size": "0x88",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CrewSessionOperationFailedTelemetryEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ErrorMessage",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "OperationTypeCode",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "WasCancelled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "pad0x3_92DOY[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x15"
+      }
+    ]
+  },
+  "SessionDetailsChangedEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_KO8DF[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "PlayModeVariantSetFromAllocationSessionCookie": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_V5E0Z[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CrewSessionKeepAliveFailedTelemetryEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "UserStatus",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ErrorCode",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "KeepAliveCounter",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x24"
+      }
+    ]
+  },
+  "SessionHostDeviceChangedEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NewHostDevice",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CrewSessionQoSMeasurementTelemetry": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Location",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NumReceivedPings",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "NumFailedPings",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "ResolveResult",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "LocationWasConsidered",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1d"
+      },
+      {
+        "Name": "pad0x2_DDAQT[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x1e"
+      }
+    ]
+  },
+  "SessionTemplate": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "TemplateName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SessionType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x3_45BUE[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "MaxPlayers",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "CrewSessionTemplate": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "pad0x18_UU6PJ[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MatchmakingHopper",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "ShipSize",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "MaxMatchmakingPlayers",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x4_V54RD[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
+      }
+    ]
+  },
+  "ServerMatchmakingResultEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x28_PUNU7[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CrewSessionMemberTelemetry": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "UserId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "StatusString",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "IsSessionHost",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x7_7NEY7[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x21"
+      }
+    ]
+  },
+  "SessionInfoUpdateAvailableEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CrewSessionMatchmakingStartedTelemetryEvent": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "pad0x10_L9YFA[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CrewMatchmakingAttemptId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "SessionType",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "MatchmakingHopper",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "MatchmakingType",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "CrewSegmentValues",
+        "Type": "TArray<int>",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "CurrentCrewCount",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "EstimatedWaitTime",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x64"
+      },
+      {
+        "Name": "MaxWaitTime",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "pad0x4_CJN8F[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x6c"
       }
     ]
   },
   "CrewSessionCreatedTelemetryEvent": {
     "ClassSize": "0x60",
     "Attributes": [
+      {
+        "Name": "pad0x50_K6VS5[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
+      },
       {
         "Name": "QoSTelemetry",
         "Type": "TArray<struct CrewSessionQoSMeasurementTelemetry>",
@@ -426,9 +630,38 @@
       }
     ]
   },
+  "CrewSessionJoinedTelemetryEvent": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "pad0x50_0WBC4[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "JoinMethod",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "QoSTelemetry",
+        "Type": "TArray<struct CrewSessionQoSMeasurementTelemetry>",
+        "Size": "0x10",
+        "Offset": "0x60"
+      }
+    ]
+  },
   "CrewSessionBaseSessionTelemetryEvent": {
     "ClassSize": "0x50",
     "Attributes": [
+      {
+        "Name": "pad0x10_CD8BV[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
       {
         "Name": "Session",
         "Type": "struct CrewSessionTelemetry",

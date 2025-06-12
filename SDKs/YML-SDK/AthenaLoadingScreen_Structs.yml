@@ -14,6 +14,27 @@ EventAthenaLoadingScreenBlockUntilUIIntialisedClear:
     Size: '0x10'
     Type: struct FString
   ClassSize: '0x10'
+EventAthenaLoadingScreenClose:
+  Attributes:
+  - Name: pad0x1_KR076[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
+EventAthenaLoadingScreenOpen:
+  Attributes:
+  - Name: pad0x1_TXOB5[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
+EventAthenaLoadingScreenStateRequest:
+  Attributes:
+  - Name: pad0x1_JV9FS[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
 EventAthenaLoadingScreenStateResponse:
   Attributes:
   - Name: IsVisible
@@ -55,6 +76,10 @@ SlateLoadingScreenAdvancedTipDescription:
     Offset: '0xb8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_461YI[0x4]
+    Offset: '0xbc'
+    Size: '0x4'
+    Type: char
   ClassSize: '0xc0'
 SlateLoadingScreenAdvancedTipsParams:
   Attributes:

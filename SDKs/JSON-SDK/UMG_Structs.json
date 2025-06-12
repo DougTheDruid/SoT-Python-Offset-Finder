@@ -1,47 +1,60 @@
 {
-  "WidgetTransform": {
-    "ClassSize": "0x1c",
+  "MovieScene2DTransformSectionTemplate": {
+    "ClassSize": "0x380",
     "Attributes": [
       {
-        "Name": "Translation",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
+        "Name": "pad0x18_VXAE8[0x18]",
+        "Type": "char",
+        "Size": "0x18",
         "Offset": "0x0"
+      },
+      {
+        "Name": "PropertyData",
+        "Type": "struct MovieScenePropertySectionData",
+        "Size": "0x20",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Translation",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x78_OJYYY[0x78]",
+        "Type": "char",
+        "Size": "0x78",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "Rotation",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x128"
       },
       {
         "Name": "Scale",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x8"
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x1a0"
+      },
+      {
+        "Name": "pad0x78_4CDE9[0x78]",
+        "Type": "char",
+        "Size": "0x78",
+        "Offset": "0x218"
       },
       {
         "Name": "Shear",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x10"
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x290"
       },
       {
-        "Name": "Angle",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "WidgetNavigationData": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "Rule",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "WidgetToFocus",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x4"
+        "Name": "pad0x78_LDHPZ[0x78]",
+        "Type": "char",
+        "Size": "0x78",
+        "Offset": "0x308"
       }
     ]
   },
@@ -59,23 +72,53 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x3_UFMEA[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5"
       }
     ]
   },
-  "NamedSlotBinding": {
-    "ClassSize": "0x10",
+  "MovieSceneMarginSectionTemplate": {
+    "ClassSize": "0x218",
     "Attributes": [
       {
-        "Name": "Name",
-        "Type": "struct FName",
-        "Size": "0x8",
+        "Name": "pad0x18_R81CS[0x18]",
+        "Type": "char",
+        "Size": "0x18",
         "Offset": "0x0"
       },
       {
-        "Name": "Content",
-        "Type": "class Widget*",
-        "Size": "0x8",
-        "Offset": "0x8"
+        "Name": "PropertyData",
+        "Type": "struct MovieScenePropertySectionData",
+        "Size": "0x20",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "TopCurve",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "LeftCurve",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "RightCurve",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "BottomCurve",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x1a0"
       }
     ]
   },
@@ -105,6 +148,12 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x3_U25D1[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x21"
       }
     ]
   },
@@ -135,45 +184,16 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
+        "Name": "pad0x48_258V9[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x0"
+      },
+      {
         "Name": "BrushPropertyNamePath",
         "Type": "TArray<struct Name>",
         "Size": "0x10",
         "Offset": "0x48"
-      }
-    ]
-  },
-  "MovieScene2DTransformSectionTemplate": {
-    "ClassSize": "0x380",
-    "Attributes": [
-      {
-        "Name": "PropertyData",
-        "Type": "struct MovieScenePropertySectionData",
-        "Size": "0x20",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "Translation",
-        "Type": "struct RichCurve",
-        "Size": "0x78",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "Rotation",
-        "Type": "struct RichCurve",
-        "Size": "0x78",
-        "Offset": "0x128"
-      },
-      {
-        "Name": "Scale",
-        "Type": "struct RichCurve",
-        "Size": "0x78",
-        "Offset": "0x1a0"
-      },
-      {
-        "Name": "Shear",
-        "Type": "struct RichCurve",
-        "Size": "0x78",
-        "Offset": "0x290"
       }
     ]
   },
@@ -193,6 +213,12 @@
         "Offset": "0x8"
       },
       {
+        "Name": "pad0x4_WBBYX[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
         "Name": "Struct",
         "Type": "class Struct*",
         "Size": "0x8",
@@ -206,38 +232,100 @@
       }
     ]
   },
-  "MovieSceneMarginSectionTemplate": {
-    "ClassSize": "0x218",
+  "WidgetNavigationData": {
+    "ClassSize": "0x14",
     "Attributes": [
       {
-        "Name": "PropertyData",
-        "Type": "struct MovieScenePropertySectionData",
-        "Size": "0x20",
+        "Name": "Rule",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_FQ6U1[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "WidgetToFocus",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x8_STBF8[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "EventReply": {
+    "ClassSize": "0xe8",
+    "Attributes": [
+      {
+        "Name": "pad0xe8_YAVGL[0xe8]",
+        "Type": "char",
+        "Size": "0xe8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "NamedSlotBinding": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Name",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Content",
+        "Type": "class Widget*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "PaintContext": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_HYZ8K[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "WidgetTransform": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Name": "Translation",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Scale",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Shear",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Angle",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x18"
-      },
-      {
-        "Name": "TopCurve",
-        "Type": "struct RichCurve",
-        "Size": "0x78",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "LeftCurve",
-        "Type": "struct RichCurve",
-        "Size": "0x78",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "RightCurve",
-        "Type": "struct RichCurve",
-        "Size": "0x78",
-        "Offset": "0x128"
-      },
-      {
-        "Name": "BottomCurve",
-        "Type": "struct RichCurve",
-        "Size": "0x78",
-        "Offset": "0x1a0"
       }
     ]
   },
@@ -284,6 +372,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x7_468F2[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x31"
       }
     ]
   },

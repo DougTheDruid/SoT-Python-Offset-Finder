@@ -21,6 +21,10 @@ StaticMeshComponentAudioAssociation:
     Offset: '0x38'
     Size: '0xc'
     Type: struct Vector
+  - Name: pad0x24_KYGQL[0x24]
+    Offset: '0x44'
+    Size: '0x24'
+    Type: char
   ClassSize: '0x68'
 StaticMeshWwiseEmitterData:
   Attributes:
@@ -32,6 +36,10 @@ StaticMeshWwiseEmitterData:
     Offset: '0x8'
     Size: '0xc'
     Type: struct Vector
+  - Name: pad0x4_0JMNK[0x4]
+    Offset: '0x14'
+    Size: '0x4'
+    Type: char
   - Name: StartEvents
     Offset: '0x18'
     Size: '0x10'
@@ -63,6 +71,13 @@ WWiseEmitterCreationSwitchSetting:
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x10'
+WwiseEmitter:
+  Attributes:
+  - Name: pad0x20_A71UP[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
 WwiseEmitterCreationParams:
   Attributes:
   - Name: Event

@@ -1,57 +1,76 @@
 {
+  "KnockbackInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "KnockbackColliderComponent": {
     "Super": "BoxComponent",
-    "FullSize": "0x680",
-    "InheritedSize": "0x600",
+    "FullSize": "0x670",
+    "InheritedSize": "0x5f0",
     "ClassSize": "0x80",
     "Attributes": [
       {
         "Name": "SolidCollisionProfile",
         "Type": "struct CollisionProfileName",
         "Size": "0x8",
-        "Offset": "0x5f8"
+        "Offset": "0x5e8"
       },
       {
         "Name": "KnockbackTraceProfile",
         "Type": "struct CollisionProfileName",
         "Size": "0x8",
-        "Offset": "0x600"
+        "Offset": "0x5f0"
       },
       {
         "Name": "KnockbackType",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x608"
+        "Offset": "0x5f8"
+      },
+      {
+        "Name": "pad0x3_3WQPL[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5f9"
       },
       {
         "Name": "KnockbackParams",
         "Type": "struct KnockBackInfo",
         "Size": "0x54",
-        "Offset": "0x60c"
-      },
-      {
-        "Name": "ActorToTarget",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x660"
+        "Offset": "0x5fc"
       },
       {
         "Name": "KnockbackDamageType",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x668"
+        "Offset": "0x658"
       },
       {
         "Name": "KnockbackInterval",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x670"
+        "Offset": "0x660"
+      },
+      {
+        "Name": "pad0x4_7AGN5[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x664"
       },
       {
         "Name": "SolidState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x678"
+        "Offset": "0x668"
+      },
+      {
+        "Name": "pad0x7_UWELU[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x669"
       }
     ]
   },

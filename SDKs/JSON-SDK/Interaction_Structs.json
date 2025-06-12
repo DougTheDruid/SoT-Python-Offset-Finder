@@ -20,6 +20,12 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
+        "Name": "pad0x8_FGZYR[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
         "Name": "PlayerPayloadSelector",
         "Type": "struct ConditionContextPayloadSelectorInstance",
         "Size": "0x20",
@@ -30,6 +36,100 @@
         "Type": "struct ConditionContextPayloadSelectorInstance",
         "Size": "0x20",
         "Offset": "0x28"
+      }
+    ]
+  },
+  "InteractLoadableValidityCheckFailedTelemetryEvent": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "LoadableObject",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "InteractableObject",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "LoadablePosition",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "DistancePlayerToLoadable",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "IsLoadableValid",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "IsInteractableValid",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x31"
+      },
+      {
+        "Name": "pad0x6_SE1E6[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x32"
+      }
+    ]
+  },
+  "InteractionDistanceCheckFailedTelemetryEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Distance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_42KDJ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "DistanceRating",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "DistanceThreshold_Used",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "DistanceThreshold_Config",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "DistanceThreshold_Settings",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_URFFF[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
       }
     ]
   },
@@ -47,6 +147,23 @@
         "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "InteractionEdTelemetryEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "InteractorPosition",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TargetPosition",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0xc"
       }
     ]
   },

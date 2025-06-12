@@ -14,47 +14,52 @@ public:
 };
 
 
-// Size 0x80 (Full Size[0x4e0] - InheritedSize[0x460]
+// Size 0x80 (Full Size[0x4b8] - InheritedSize[0x438]
 class OneShotRewardableObjectBase: public InteractableObject
 {
 public:
-	class InteractableComponent*                                 InteractableComponent;                             // 0x460(0x8)
-	class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x468(0x8)
-	struct RewardId                                              Reward;                                            // 0x470(0x8)
-	class UClass*                                                RewardEntitlement;                                 // 0x478(0x8)
-	float                                                        InteractionHoldTime;                               // 0x480(0x4)
-	float                                                        InteractionRadius;                                 // 0x484(0x4)
-	struct FText                                                 DisplayName;                                       // 0x488(0x38)
+	class InteractableComponent*                                 InteractableComponent;                             // 0x438(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x440(0x8)
+	struct RewardId                                              Reward;                                            // 0x448(0x8)
+	class UClass*                                                RewardEntitlement;                                 // 0x450(0x8)
+	float                                                        InteractionHoldTime;                               // 0x458(0x4)
+	float                                                        InteractionRadius;                                 // 0x45c(0x4)
+	struct FText                                                 DisplayName;                                       // 0x460(0x38)
+	char                                                         pad0x20_7F1KB[0x20];                               // 0x498(0x20)
 };
 
 
-// Size 0x20 (Full Size[0x168] - InheritedSize[0x148]
+// Size 0x20 (Full Size[0x158] - InheritedSize[0x138]
 class PopUpNotificationOnItemWieldedComponent: public OnItemWieldedComponent
 {
 public:
-	class PopUpMessageDesc*                                      PopUpDesc;                                         // 0x148(0x8)
+	class PopUpMessageDesc*                                      PopUpDesc;                                         // 0x138(0x8)
+	char                                                         pad0x18_TDHNS[0x18];                               // 0x140(0x18)
 };
 
 
-// Size 0xe0 (Full Size[0x1a8] - InheritedSize[0xc8]
+// Size 0xe0 (Full Size[0x198] - InheritedSize[0xb8]
 class AbandonedNoteWeightedTextSourceComponent: public ActorComponent
 {
 public:
-	assetobject                                                  WeightedText;                                      // 0xe8(0x20)
-	struct FText                                                 ClueText;                                          // 0x108(0x38)
-	struct FText                                                 TitleText;                                         // 0x140(0x38)
+	char                                                         pad0x40_JGOKD[0x40];                               // 0xb8(0x40)
+	struct FText                                                 ClueText;                                          // 0xf8(0x38)
+	struct FText                                                 TitleText;                                         // 0x130(0x38)
+	char                                                         pad0x30_ABDOM[0x30];                               // 0x168(0x30)
 };
 
 
-// Size 0xf0 (Full Size[0x4b8] - InheritedSize[0x3c8]
+// Size 0xf0 (Full Size[0x490] - InheritedSize[0x3a0]
 class SirenPuzzleContext: public Actor
 {
 public:
-	class SceneComponent*                                        Root;                                              // 0x3d0(0x8)
-	TArray<struct SirenPuzzleLockState>                          PuzzleLocks;                                       // 0x3d8(0x10)
-	TArray<struct LandmarkReactionKeyFrame>                      UnlockCompleteReactions;                           // 0x3e8(0x10)
-	TArray<struct LandmarkReactionKeyFrame>                      ResetLocksReactions;                               // 0x3f8(0x10)
-	TArray<char>                                                 LockStates;                                        // 0x408(0x10)
+	char                                                         pad0x8_8LO29[0x8];                                 // 0x3a0(0x8)
+	class SceneComponent*                                        Root;                                              // 0x3a8(0x8)
+	TArray<struct SirenPuzzleLockState>                          PuzzleLocks;                                       // 0x3b0(0x10)
+	TArray<struct LandmarkReactionKeyFrame>                      UnlockCompleteReactions;                           // 0x3c0(0x10)
+	TArray<struct LandmarkReactionKeyFrame>                      ResetLocksReactions;                               // 0x3d0(0x10)
+	TArray<char>                                                 LockStates;                                        // 0x3e0(0x10)
+	char                                                         pad0xa0_Q4NLK[0xa0];                               // 0x3f0(0xa0)
 };
 
 

@@ -7,6 +7,34 @@
         "Type": "class TaleStruct*",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x8_X979W[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "ClientCommandQueue": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_EKBPT[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ClientCommandBase": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_THFLS[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
       }
     ]
   },

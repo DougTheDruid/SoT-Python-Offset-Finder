@@ -1,18 +1,24 @@
 {
-  "WindZoneTurbulence": {
-    "ClassSize": "0x8",
+  "WindTurbulenceParameters": {
+    "ClassSize": "0x70",
     "Attributes": [
       {
-        "Name": "Base",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "GustPower",
+        "Type": "struct FloatRange",
+        "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "Current",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
+        "Name": "GustTime",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "CalmTime",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x40"
       }
     ]
   },
@@ -30,6 +36,12 @@
         "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x28_X6VST[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x10"
       }
     ]
   },
@@ -92,6 +104,17 @@
       }
     ]
   },
+  "WindMagnitudeChanged": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_K4OT7[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "WindZoneParams": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -118,29 +141,40 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0xc"
+      },
+      {
+        "Name": "pad0x3_2836K[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xd"
       }
     ]
   },
-  "WindTurbulenceParameters": {
-    "ClassSize": "0x70",
+  "WindDirectionChanged": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "GustPower",
-        "Type": "struct FloatRange",
-        "Size": "0x10",
+        "Name": "pad0x1_1FAKN[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "WindZoneTurbulence": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Base",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "GustTime",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "CalmTime",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x40"
+        "Name": "Current",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
       }
     ]
   },

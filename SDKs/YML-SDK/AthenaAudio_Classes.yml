@@ -12,14 +12,14 @@ AthenaAudioConfig:
     Type: class WwiseObjectPoolWrapper*
   - Name: GameStateSettings
     Offset: '0x68'
-    Size: '0x20'
+    Size: '0x30'
     Type: struct AthenaAudioGameStateSettings
   - Name: BootflowEvents
-    Offset: '0x88'
+    Offset: '0x98'
     Size: '0x80'
     Type: struct AthenaAudioBootflowEvents
-  ClassSize: '0xb0'
-  FullSize: '0x108'
+  ClassSize: '0xc0'
+  FullSize: '0x118'
   InheritedSize: '0x58'
   Super: WwiseCoreAssets
 AthenaAudioModuleSettings:
@@ -35,82 +35,134 @@ AthenaAudioModuleSettings:
 AudioPortalComponent:
   Attributes:
   - Name: PortalTriggerDistance
-    Offset: '0x2e0'
+    Offset: '0x2d0'
     Size: '0x4'
     Type: float
   - Name: InsideRtpcUpdateDistance
-    Offset: '0x2e4'
+    Offset: '0x2d4'
     Size: '0x4'
     Type: float
   - Name: OutsideRtpcUpdateDistance
-    Offset: '0x2e8'
+    Offset: '0x2d8'
     Size: '0x4'
     Type: float
   - Name: TrackAttachmentToActor
-    Offset: '0x2ec'
+    Offset: '0x2dc'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_STYEO[0x3]
+    Offset: '0x2dd'
+    Size: '0x3'
+    Type: char
   - Name: AudioInsideSpace
-    Offset: '0x2f0'
+    Offset: '0x2e0'
     Size: '0x8'
     Type: class AudioSpaceDataAsset*
   - Name: AudioOutsideSpace
-    Offset: '0x2f8'
+    Offset: '0x2e8'
     Size: '0x8'
     Type: class AudioSpaceDataAsset*
   - Name: ActiveAudioInsideSpace
-    Offset: '0x300'
+    Offset: '0x2f0'
     Size: '0x8'
     Type: class AudioSpaceDataAsset*
   - Name: ActiveAudioOutsideSpace
-    Offset: '0x308'
+    Offset: '0x2f8'
     Size: '0x8'
     Type: class AudioSpaceDataAsset*
   - Name: CollectionAsset
-    Offset: '0x310'
+    Offset: '0x300'
     Size: '0x8'
     Type: class StoryDrivenAudioPortalDataAsset*
+  - Name: pad0x28_HJZSR[0x28]
+    Offset: '0x308'
+    Size: '0x28'
+    Type: char
   ClassSize: '0x60'
-  FullSize: '0x340'
-  InheritedSize: '0x2e0'
+  FullSize: '0x330'
+  InheritedSize: '0x2d0'
   Super: SceneComponent
+AudioPortalInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+AudioPortalService:
+  Attributes:
+  - Name: pad0xb0_L1LNO[0xb0]
+    Offset: '0x28'
+    Size: '0xb0'
+    Type: char
+  ClassSize: '0xb0'
+  FullSize: '0xd8'
+  InheritedSize: '0x28'
+  Super: Object
 AudioSpaceComponent:
   Attributes:
   - Name: AudioSpace
-    Offset: '0x630'
+    Offset: '0x620'
     Size: '0x8'
     Type: class AudioSpaceDataAsset*
   - Name: ActiveAudioSpace
-    Offset: '0x638'
+    Offset: '0x628'
     Size: '0x8'
     Type: class AudioSpaceDataAsset*
   - Name: CollectionAsset
-    Offset: '0x640'
+    Offset: '0x630'
     Size: '0x8'
     Type: class StoryDrivenAudioPortalDataAsset*
+  - Name: pad0x18_H4NW5[0x18]
+    Offset: '0x638'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x30'
-  FullSize: '0x660'
-  InheritedSize: '0x630'
+  FullSize: '0x650'
+  InheritedSize: '0x620'
   Super: StaticMeshComponent
 AudioSpaceTrackerComponent:
   Attributes:
   - Name: CurrentSpaces
-    Offset: '0xc8'
+    Offset: '0xb8'
     Size: '0x10'
     Type: TArray<class AudioSpaceComponent*>
   ClassSize: '0x10'
-  FullSize: '0xd8'
-  InheritedSize: '0xc8'
+  FullSize: '0xc8'
+  InheritedSize: '0xb8'
   Super: ActorComponent
+ImmerseGameService:
+  Attributes:
+  - Name: pad0x28_O9AG8[0x28]
+    Offset: '0x28'
+    Size: '0x28'
+    Type: char
+  - Name: DebugImmerseQRCodeTexture
+    Offset: '0x50'
+    Size: '0x8'
+    Type: class Texture2D*
+  ClassSize: '0x30'
+  FullSize: '0x58'
+  InheritedSize: '0x28'
+  Super: Object
+ImmerseGameServiceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 MultiEmitter:
   Attributes:
   - Name: MultiEmitterRootComponent
-    Offset: '0x3c8'
+    Offset: '0x3a0'
     Size: '0x8'
     Type: class MultiEmitterRootComponent*
+  - Name: pad0x8_N2EA5[0x8]
+    Offset: '0x3a8'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x10'
-  FullSize: '0x3d8'
-  InheritedSize: '0x3c8'
+  FullSize: '0x3b0'
+  InheritedSize: '0x3a0'
   Super: Actor
 StoryDrivenAudioPortalDataAsset:
   Attributes:
@@ -118,6 +170,10 @@ StoryDrivenAudioPortalDataAsset:
     Offset: '0x28'
     Size: '0xc'
     Type: struct FeatureFlag
+  - Name: pad0x4_TH016[0x4]
+    Offset: '0x34'
+    Size: '0x4'
+    Type: char
   - Name: StoryResponses
     Offset: '0x38'
     Size: '0x10'
@@ -133,34 +189,42 @@ StoryDrivenAudioPortalDataAsset:
 WwiseEventsTriggerRegionComponent:
   Attributes:
   - Name: TriggerRegionPool
-    Offset: '0x2e0'
+    Offset: '0x2d0'
     Size: '0x8'
     Type: class WwiseObjectPoolWrapper*
   - Name: TriggerRegionPlayEvents
-    Offset: '0x2e8'
+    Offset: '0x2d8'
     Size: '0x10'
     Type: TArray<class WwiseEvent*>
   - Name: TriggerRegionStopEvents
-    Offset: '0x2f8'
+    Offset: '0x2e8'
     Size: '0x10'
     Type: TArray<class WwiseEvent*>
   - Name: TriggerEnterRadiusInCms
-    Offset: '0x308'
+    Offset: '0x2f8'
     Size: '0x4'
     Type: float
   - Name: TriggerExitRadiusInCms
-    Offset: '0x30c'
+    Offset: '0x2fc'
     Size: '0x4'
     Type: float
   - Name: EmitterOffset
-    Offset: '0x310'
+    Offset: '0x300'
     Size: '0xc'
     Type: struct Vector
+  - Name: pad0x14_I8TUN[0x14]
+    Offset: '0x30c'
+    Size: '0x14'
+    Type: char
   - Name: LocalPlayer
-    Offset: '0x330'
+    Offset: '0x320'
     Size: '0x8'
     Type: class Character*
+  - Name: pad0x38_IJN4O[0x38]
+    Offset: '0x328'
+    Size: '0x38'
+    Type: char
   ClassSize: '0x90'
-  FullSize: '0x370'
-  InheritedSize: '0x2e0'
+  FullSize: '0x360'
+  InheritedSize: '0x2d0'
   Super: SceneComponent

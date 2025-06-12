@@ -2,27 +2,49 @@
 # https://github.com/DougTheDruid
 ItemQualityComponent:
   Attributes:
+  - Name: pad0x8_ZD8IB[0x8]
+    Offset: '0xb8'
+    Size: '0x8'
+    Type: char
   - Name: ItemQualityLevel
-    Offset: '0xd0'
+    Offset: '0xc0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_ATWRQ[0x7]
+    Offset: '0xc1'
+    Size: '0x7'
+    Type: char
   - Name: CompanySpecificItemQualityLevels
-    Offset: '0xd8'
+    Offset: '0xc8'
     Size: '0x10'
     Type: TArray<struct PerComanyItemQualityEntry>
   - Name: CompanySpecificComplexItemQualityLevels
-    Offset: '0xe8'
+    Offset: '0xd8'
     Size: '0x10'
     Type: TArray<struct PerComanyComplexItemQualityEntry>
   - Name: CompanySpecificComplexItemQualityLevelsHandin
-    Offset: '0xf8'
+    Offset: '0xe8'
     Size: '0x10'
     Type: TArray<struct PerComanyComplexItemQualityEntry>
+  - Name: CompanySpecificComplexItemQualityOverrideList
+    Offset: '0xf8'
+    Size: '0x10'
+    Type: TArray<struct CompanySpecificComplexItemQualityOverrides>
   - Name: GuildSettings
     Offset: '0x108'
     Size: '0x8'
     Type: class GuildSettings*
-  ClassSize: '0x48'
-  FullSize: '0x110'
-  InheritedSize: '0xc8'
+  - Name: pad0x8_3NW2C[0x8]
+    Offset: '0x110'
+    Size: '0x8'
+    Type: char
+  ClassSize: '0x60'
+  FullSize: '0x118'
+  InheritedSize: '0xb8'
   Super: ActorComponent
+ItemQualityInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

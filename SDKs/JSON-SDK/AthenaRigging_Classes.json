@@ -1,111 +1,78 @@
 {
   "RiggingSystem": {
     "Super": "Actor",
-    "FullSize": "0x518",
-    "InheritedSize": "0x3c8",
+    "FullSize": "0x4f0",
+    "InheritedSize": "0x3a0",
     "ClassSize": "0x150",
     "Attributes": [
+      {
+        "Name": "pad0x8_JPJ0B[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3a0"
+      },
       {
         "Name": "Root",
         "Type": "class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x3a8"
       },
       {
         "Name": "InstancedRopes",
         "Type": "class InstancedRopeComponent*",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x3b0"
       },
       {
         "Name": "Lines",
         "Type": "TArray<struct RiggingSystemLine>",
         "Size": "0x10",
-        "Offset": "0x3e0"
+        "Offset": "0x3b8"
       },
       {
         "Name": "Ropes",
         "Type": "TArray<struct InstancedRopeParams>",
         "Size": "0x10",
-        "Offset": "0x3f0"
+        "Offset": "0x3c8"
       },
       {
         "Name": "PulleyInstances",
         "Type": "TArray<class MobileInstancedStaticMeshComponent*>",
         "Size": "0x10",
-        "Offset": "0x400"
+        "Offset": "0x3d8"
       },
       {
         "Name": "Pulleys",
         "Type": "struct RiggingSystemPulleyData",
         "Size": "0x60",
-        "Offset": "0x410"
+        "Offset": "0x3e8"
       },
       {
         "Name": "Sockets",
         "Type": "TArray<struct SocketId>",
         "Size": "0x10",
-        "Offset": "0x470"
+        "Offset": "0x448"
       },
       {
         "Name": "InitialMainRopeLengths",
         "Type": "TArray<float>",
         "Size": "0x10",
-        "Offset": "0x480"
+        "Offset": "0x458"
+      },
+      {
+        "Name": "pad0x88_84DFP[0x88]",
+        "Type": "char",
+        "Size": "0x88",
+        "Offset": "0x468"
       }
     ]
   },
-  "RiggingSystemComponent": {
-    "Super": "SceneComponent",
-    "FullSize": "0x320",
-    "InheritedSize": "0x2e0",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "RopeStyle",
-        "Type": "struct RopeStyleParams",
-        "Size": "0x20",
-        "Offset": "0x2e0"
-      },
-      {
-        "Name": "LineGroups",
-        "Type": "TArray<struct RiggingSystemLineGroup>",
-        "Size": "0x10",
-        "Offset": "0x300"
-      },
-      {
-        "Name": "Impl",
-        "Type": "class RiggingSystem*",
-        "Size": "0x8",
-        "Offset": "0x310"
-      }
-    ]
-  },
-  "InstancedRopeComponent": {
-    "Super": "PrimitiveComponent",
-    "FullSize": "0x690",
-    "InheritedSize": "0x5d0",
-    "ClassSize": "0xc0",
-    "Attributes": [
-      {
-        "Name": "StaticMesh",
-        "Type": "class StaticMesh*",
-        "Size": "0x8",
-        "Offset": "0x5c8"
-      },
-      {
-        "Name": "Ropes",
-        "Type": "TArray<struct InstancedRopeParams>",
-        "Size": "0x10",
-        "Offset": "0x5d0"
-      },
-      {
-        "Name": "ShadowLOD",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x5e0"
-      }
-    ]
+  "RopeInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "MaterialExpressionRopeParameter": {
     "Super": "MaterialExpression",
@@ -118,8 +85,85 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x70"
+      },
+      {
+        "Name": "pad0x7_XLN5H[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x71"
       }
     ]
+  },
+  "RiggingSystemComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x310",
+    "InheritedSize": "0x2d0",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "RopeStyle",
+        "Type": "struct RopeStyleParams",
+        "Size": "0x20",
+        "Offset": "0x2d0"
+      },
+      {
+        "Name": "LineGroups",
+        "Type": "TArray<struct RiggingSystemLineGroup>",
+        "Size": "0x10",
+        "Offset": "0x2f0"
+      },
+      {
+        "Name": "Impl",
+        "Type": "class RiggingSystem*",
+        "Size": "0x8",
+        "Offset": "0x300"
+      },
+      {
+        "Name": "pad0x8_XCS6D[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x308"
+      }
+    ]
+  },
+  "InstancedRopeComponent": {
+    "Super": "PrimitiveComponent",
+    "FullSize": "0x680",
+    "InheritedSize": "0x5c0",
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "StaticMesh",
+        "Type": "class StaticMesh*",
+        "Size": "0x8",
+        "Offset": "0x5b8"
+      },
+      {
+        "Name": "Ropes",
+        "Type": "TArray<struct InstancedRopeParams>",
+        "Size": "0x10",
+        "Offset": "0x5c0"
+      },
+      {
+        "Name": "ShadowLOD",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x5d0"
+      },
+      {
+        "Name": "pad0xac_LP1G9[0xac]",
+        "Type": "char",
+        "Size": "0xac",
+        "Offset": "0x5d4"
+      }
+    ]
+  },
+  "RopeCatenaryRenderComponent": {
+    "Super": "CordRenderComponent",
+    "FullSize": "0x660",
+    "InheritedSize": "0x660",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

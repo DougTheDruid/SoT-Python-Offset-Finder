@@ -26,6 +26,10 @@ GameplayDebuggerSettings:
     Offset: '0x7c'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_X1O1R[0x3]
+    Offset: '0x7d'
+    Size: '0x3'
+    Type: char
   - Name: ActiveEQSIndex
     Offset: '0x80'
     Size: '0x4'
@@ -54,6 +58,10 @@ GameplayDebuggerSettings:
     Offset: '0x89'
     Size: '0x1'
     Type: bool
+  - Name: pad0x1e_VPYE9[0x1e]
+    Offset: '0x8a'
+    Size: '0x1e'
+    Type: char
   ClassSize: '0x80'
   FullSize: '0xa8'
   InheritedSize: '0x28'
@@ -61,332 +69,382 @@ GameplayDebuggerSettings:
 GameplayDebuggingComponent:
   Attributes:
   - Name: DebugComponentClassName
-    Offset: '0x5d0'
+    Offset: '0x5c0'
     Size: '0x10'
     Type: struct FString
   - Name: ShowExtendedInformatiomCounter
-    Offset: '0x5e0'
+    Offset: '0x5d0'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_ZGBKZ[0x4]
+    Offset: '0x5d4'
+    Size: '0x4'
+    Type: char
   - Name: ReplicateViewDataCounters
-    Offset: '0x5e8'
+    Offset: '0x5d8'
     Size: '0x10'
     Type: TArray<int>
   - Name: ControllerName
-    Offset: '0x5f8'
+    Offset: '0x5e8'
     Size: '0x10'
     Type: struct FString
   - Name: PawnName
-    Offset: '0x608'
+    Offset: '0x5f8'
     Size: '0x10'
     Type: struct FString
   - Name: PawnClass
-    Offset: '0x618'
+    Offset: '0x608'
     Size: '0x10'
     Type: struct FString
   - Name: DebugIcon
-    Offset: '0x628'
+    Offset: '0x618'
     Size: '0x10'
     Type: struct FString
   - Name: MovementBaseInfo
-    Offset: '0x638'
+    Offset: '0x628'
     Size: '0x10'
     Type: struct FString
   - Name: MovementModeInfo
-    Offset: '0x648'
+    Offset: '0x638'
     Size: '0x10'
     Type: struct FString
   - Name: PathFollowingInfo
-    Offset: '0x658'
+    Offset: '0x648'
     Size: '0x10'
     Type: struct FString
   - Name: CurrentAITask
-    Offset: '0x668'
+    Offset: '0x658'
     Size: '0x10'
     Type: struct FString
   - Name: CurrentAIState
-    Offset: '0x678'
+    Offset: '0x668'
     Size: '0x10'
     Type: struct FString
   - Name: CurrentAIAssets
-    Offset: '0x688'
+    Offset: '0x678'
     Size: '0x10'
     Type: struct FString
   - Name: GameplayTasksState
-    Offset: '0x698'
+    Offset: '0x688'
     Size: '0x10'
     Type: struct FString
   - Name: NavDataInfo
-    Offset: '0x6a8'
+    Offset: '0x698'
     Size: '0x10'
     Type: struct FString
   - Name: AbilityInfo
-    Offset: '0x6b8'
+    Offset: '0x6a8'
     Size: '0x10'
     Type: struct FString
   - Name: MontageInfo
-    Offset: '0x6c8'
+    Offset: '0x6b8'
     Size: '0x10'
     Type: struct FString
   - Name: BrainComponentName
-    Offset: '0x6d8'
+    Offset: '0x6c8'
     Size: '0x10'
     Type: struct FString
   - Name: BrainComponentString
-    Offset: '0x6e8'
+    Offset: '0x6d8'
     Size: '0x10'
     Type: struct FString
   - Name: BlackboardRepData
-    Offset: '0x6f8'
+    Offset: '0x6e8'
     Size: '0x10'
     Type: TArray<char>
+  - Name: pad0x10_OTZF7[0x10]
+    Offset: '0x6f8'
+    Size: '0x10'
+    Type: char
   - Name: PathPoints
-    Offset: '0x718'
+    Offset: '0x708'
     Size: '0x10'
     Type: TArray<struct Vector>
   - Name: PathCorridorData
-    Offset: '0x728'
+    Offset: '0x718'
     Size: '0x10'
     Type: TArray<char>
+  - Name: pad0x10_65OP3[0x10]
+    Offset: '0x728'
+    Size: '0x10'
+    Type: char
   - Name: NavmeshRepData
-    Offset: '0x748'
+    Offset: '0x738'
     Size: '0x10'
     Type: TArray<char>
   - Name: EQSRepData
-    Offset: '0x758'
+    Offset: '0x748'
     Size: '0x10'
     Type: TArray<char>
   - Name: SensingComponentLocation
-    Offset: '0x768'
+    Offset: '0x758'
     Size: '0xc'
     Type: struct Vector
   - Name: NextPathPointIndex
-    Offset: '0x774'
+    Offset: '0x764'
     Size: '0x4'
     Type: int
   - Name: bIsUsingPathFollowing
-    Offset: '0x778'
+    Offset: '0x768'
     Size: '0x1'
     Type: bool
   - Name: bIsUsingCharacter
-    Offset: '0x778'
+    Offset: '0x768'
     Size: '0x1'
     Type: bool
   - Name: bIsUsingBehaviorTree
-    Offset: '0x778'
+    Offset: '0x768'
     Size: '0x1'
     Type: bool
   - Name: bIsUsingAbilities
-    Offset: '0x778'
+    Offset: '0x768'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_ELPUH[0x7]
+    Offset: '0x769'
+    Size: '0x7'
+    Type: char
   - Name: TargetActor
-    Offset: '0x780'
+    Offset: '0x770'
     Size: '0x8'
     Type: class Actor*
+  - Name: pad0x78_XX2NW[0x78]
+    Offset: '0x778'
+    Size: '0x78'
+    Type: char
   ClassSize: '0x230'
-  FullSize: '0x800'
-  InheritedSize: '0x5d0'
+  FullSize: '0x7f0'
+  InheritedSize: '0x5c0'
   Super: PrimitiveComponent
 GameplayDebuggingControllerComponent:
   Attributes:
   - Name: OnDebugAIHUD
-    Offset: '0xc8'
+    Offset: '0xb8'
     Size: '0x8'
     Type: class GameplayDebuggingHUDComponent*
   - Name: DebugAITargetActor
-    Offset: '0xd0'
+    Offset: '0xc0'
     Size: '0x8'
     Type: class Actor*
   - Name: AIDebugViewInputComponent
-    Offset: '0xd8'
+    Offset: '0xc8'
     Size: '0x8'
     Type: class InputComponent*
   - Name: DebugCameraInputComponent
-    Offset: '0xe0'
+    Offset: '0xd0'
     Size: '0x8'
     Type: class InputComponent*
+  - Name: pad0x28_7ZRUE[0x28]
+    Offset: '0xd8'
+    Size: '0x28'
+    Type: char
   - Name: ActivationKey
-    Offset: '0x110'
+    Offset: '0x100'
     Size: '0x28'
     Type: struct InputChord
   - Name: CategoryZeroBind
-    Offset: '0x138'
+    Offset: '0x128'
     Size: '0x28'
     Type: struct InputChord
   - Name: CategoryOneBind
-    Offset: '0x160'
+    Offset: '0x150'
     Size: '0x28'
     Type: struct InputChord
   - Name: CategoryTwoBind
-    Offset: '0x188'
+    Offset: '0x178'
     Size: '0x28'
     Type: struct InputChord
   - Name: CategoryThreeBind
-    Offset: '0x1b0'
+    Offset: '0x1a0'
     Size: '0x28'
     Type: struct InputChord
   - Name: CategoryFourBind
-    Offset: '0x1d8'
+    Offset: '0x1c8'
     Size: '0x28'
     Type: struct InputChord
   - Name: CategoryFiveBind
-    Offset: '0x200'
+    Offset: '0x1f0'
     Size: '0x28'
     Type: struct InputChord
   - Name: CategorySixBind
-    Offset: '0x228'
+    Offset: '0x218'
     Size: '0x28'
     Type: struct InputChord
   - Name: CategorySevenBind
-    Offset: '0x250'
+    Offset: '0x240'
     Size: '0x28'
     Type: struct InputChord
   - Name: CategoryEightBind
-    Offset: '0x278'
+    Offset: '0x268'
     Size: '0x28'
     Type: struct InputChord
   - Name: CategoryNineBind
-    Offset: '0x2a0'
+    Offset: '0x290'
     Size: '0x28'
     Type: struct InputChord
   - Name: CycleDetailsViewBind
-    Offset: '0x2c8'
+    Offset: '0x2b8'
     Size: '0x28'
     Type: struct InputChord
   - Name: DebugCameraBind
-    Offset: '0x2f0'
+    Offset: '0x2e0'
     Size: '0x28'
     Type: struct InputChord
   - Name: OnScreenDebugMessagesBind
-    Offset: '0x318'
+    Offset: '0x308'
     Size: '0x28'
     Type: struct InputChord
   - Name: GameHUDBind
-    Offset: '0x340'
+    Offset: '0x330'
     Size: '0x28'
     Type: struct InputChord
   ClassSize: '0x2a0'
-  FullSize: '0x368'
-  InheritedSize: '0xc8'
+  FullSize: '0x358'
+  InheritedSize: '0xb8'
   Super: ActorComponent
 GameplayDebuggingHUDComponent:
   Attributes:
   - Name: MenuStartX
-    Offset: '0x3c8'
+    Offset: '0x3a0'
     Size: '0x4'
     Type: float
   - Name: MenuStartY
-    Offset: '0x3cc'
+    Offset: '0x3a4'
     Size: '0x4'
     Type: float
   - Name: DebugInfoStartX
-    Offset: '0x3d0'
+    Offset: '0x3a8'
     Size: '0x4'
     Type: float
   - Name: DebugInfoStartY
-    Offset: '0x3d4'
+    Offset: '0x3ac'
     Size: '0x4'
     Type: float
   - Name: Canvas
-    Offset: '0x3d8'
+    Offset: '0x3b0'
     Size: '0x8'
     Type: class Canvas*
   - Name: PlayerOwner
-    Offset: '0x3e0'
+    Offset: '0x3b8'
     Size: '0x8'
     Type: class PlayerController*
+  - Name: pad0xd0_QVAXO[0xd0]
+    Offset: '0x3c0'
+    Size: '0xd0'
+    Type: char
   ClassSize: '0xf0'
-  FullSize: '0x4b8'
-  InheritedSize: '0x3c8'
+  FullSize: '0x490'
+  InheritedSize: '0x3a0'
   Super: Actor
 GameplayDebuggingReplicator:
   Attributes:
   - Name: DebugComponentClassName
-    Offset: '0x3c8'
+    Offset: '0x3a0'
     Size: '0x10'
     Type: struct FString
   - Name: DebugComponentHUDClassName
-    Offset: '0x3d8'
+    Offset: '0x3b0'
     Size: '0x10'
     Type: struct FString
   - Name: DebugComponentControllerClassName
-    Offset: '0x3e8'
+    Offset: '0x3c0'
     Size: '0x10'
     Type: struct FString
   - Name: MaxEQSQueries
-    Offset: '0x3f8'
+    Offset: '0x3d0'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_WH5XP[0x4]
+    Offset: '0x3d4'
+    Size: '0x4'
+    Type: char
   - Name: DebugComponent
-    Offset: '0x400'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: class GameplayDebuggingComponent*
   - Name: LocalPlayerOwner
-    Offset: '0x408'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: class PlayerController*
   - Name: LastSelectedActorToDebug
-    Offset: '0x410'
+    Offset: '0x3e8'
     Size: '0x8'
     Type: class Actor*
   - Name: bIsGlobalInWorld
-    Offset: '0x418'
+    Offset: '0x3f0'
     Size: '0x1'
     Type: bool
   - Name: bAutoActivate
-    Offset: '0x419'
+    Offset: '0x3f1'
     Size: '0x1'
     Type: bool
   - Name: OverHead
-    Offset: '0x41a'
+    Offset: '0x3f2'
     Size: '0x1'
     Type: bool
   - Name: Basic
-    Offset: '0x41b'
+    Offset: '0x3f3'
     Size: '0x1'
     Type: bool
   - Name: BehaviorTree
-    Offset: '0x41c'
+    Offset: '0x3f4'
     Size: '0x1'
     Type: bool
   - Name: EQS
-    Offset: '0x41d'
+    Offset: '0x3f5'
     Size: '0x1'
     Type: bool
   - Name: EnableEQSOnHUD
-    Offset: '0x41e'
+    Offset: '0x3f6'
     Size: '0x1'
     Type: bool
+  - Name: pad0x1_5XEG5[0x1]
+    Offset: '0x3f7'
+    Size: '0x1'
+    Type: char
   - Name: ActiveEQSIndex
-    Offset: '0x420'
+    Offset: '0x3f8'
     Size: '0x4'
     Type: int
   - Name: Perception
-    Offset: '0x424'
+    Offset: '0x3fc'
     Size: '0x1'
     Type: bool
   - Name: GameView1
-    Offset: '0x425'
+    Offset: '0x3fd'
     Size: '0x1'
     Type: bool
   - Name: GameView2
-    Offset: '0x426'
+    Offset: '0x3fe'
     Size: '0x1'
     Type: bool
   - Name: GameView3
-    Offset: '0x427'
+    Offset: '0x3ff'
     Size: '0x1'
     Type: bool
   - Name: GameView4
-    Offset: '0x428'
+    Offset: '0x400'
     Size: '0x1'
     Type: bool
   - Name: GameView5
-    Offset: '0x429'
+    Offset: '0x401'
     Size: '0x1'
     Type: bool
+  - Name: pad0x4e_E5N34[0x4e]
+    Offset: '0x402'
+    Size: '0x4e'
+    Type: char
   ClassSize: '0xb0'
-  FullSize: '0x478'
-  InheritedSize: '0x3c8'
+  FullSize: '0x450'
+  InheritedSize: '0x3a0'
   Super: Actor
+GaneplayDebuggerProxyHUD:
+  Attributes:
+  - Name: pad0x30_RW41B[0x30]
+    Offset: '0x498'
+    Size: '0x30'
+    Type: char
+  ClassSize: '0x30'
+  FullSize: '0x4c8'
+  InheritedSize: '0x498'
+  Super: HUD

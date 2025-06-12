@@ -3,196 +3,238 @@
 FireballCannonActivationLever:
   Attributes:
   - Name: LeverActivatedSfx
-    Offset: '0x3f8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: class WwiseEvent*
   - Name: LeverAwaitingActivationSfx
-    Offset: '0x400'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: class WwiseEvent*
   - Name: StartLeverRechargingSfx
-    Offset: '0x408'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: class WwiseEvent*
   - Name: StopLeverRechargingSfx
-    Offset: '0x410'
+    Offset: '0x3e8'
     Size: '0x8'
     Type: class WwiseEvent*
   - Name: LeverEmitterPool
-    Offset: '0x418'
+    Offset: '0x3f0'
     Size: '0x8'
     Type: class WwiseObjectPoolWrapper*
   - Name: Root
-    Offset: '0x420'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: class SceneComponent*
   - Name: Pivot
-    Offset: '0x428'
+    Offset: '0x400'
     Size: '0x8'
     Type: class SceneComponent*
   - Name: CanActivateDisplayText
-    Offset: '0x430'
+    Offset: '0x408'
     Size: '0x38'
     Type: struct FText
   - Name: CannotActivateDisplayText
-    Offset: '0x468'
+    Offset: '0x440'
     Size: '0x38'
     Type: struct FText
   - Name: NotificationStartInputID
-    Offset: '0x4a0'
+    Offset: '0x478'
     Size: '0x8'
     Type: class UClass*
   - Name: NotificationReleaseInputID
-    Offset: '0x4a8'
+    Offset: '0x480'
     Size: '0x8'
     Type: class UClass*
   - Name: DisplayPriority
-    Offset: '0x4b0'
+    Offset: '0x488'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_X6FM6[0x3]
+    Offset: '0x489'
+    Size: '0x3'
+    Type: char
   - Name: HoldTime
-    Offset: '0x4b4'
+    Offset: '0x48c'
     Size: '0x4'
     Type: float
   - Name: Curve
-    Offset: '0x4b8'
+    Offset: '0x490'
     Size: '0x80'
     Type: struct RuntimeFloatCurve
   - Name: LeverStartingTransform
-    Offset: '0x540'
+    Offset: '0x510'
     Size: '0x30'
     Type: struct Transform
   - Name: LeverEndingTransform
-    Offset: '0x570'
+    Offset: '0x540'
     Size: '0x30'
     Type: struct Transform
   - Name: LeverActivationState
-    Offset: '0x5a0'
+    Offset: '0x570'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_MXP43[0x3]
+    Offset: '0x571'
+    Size: '0x3'
+    Type: char
   - Name: ReplicatedAnimationTime
-    Offset: '0x5a4'
+    Offset: '0x574'
     Size: '0x4'
     Type: float
+  - Name: pad0x20_YVRW0[0x20]
+    Offset: '0x578'
+    Size: '0x20'
+    Type: char
   - Name: LeverCooldownRtpcName
-    Offset: '0x5c8'
+    Offset: '0x598'
     Size: '0x8'
     Type: struct FName
-  ClassSize: '0x208'
-  FullSize: '0x600'
-  InheritedSize: '0x3f8'
+  - Name: pad0x30_7ZHM2[0x30]
+    Offset: '0x5a0'
+    Size: '0x30'
+    Type: char
+  ClassSize: '0x200'
+  FullSize: '0x5d0'
+  InheritedSize: '0x3d0'
   Super: InteractableBase
 FireballCannonComponent:
   Attributes:
+  - Name: pad0x8_BGTPV[0x8]
+    Offset: '0xb8'
+    Size: '0x8'
+    Type: char
   - Name: FireballCannonProjectileFirePoints
-    Offset: '0xd0'
+    Offset: '0xc0'
     Size: '0x10'
     Type: TArray<struct FireballCannonProjectileFirePoint>
   - Name: FireballCannonMaterialParameters
-    Offset: '0xe0'
+    Offset: '0xd0'
     Size: '0x10'
     Type: TArray<struct FireballCannonDynamicMaterialParameters>
   - Name: LaunchableProjectileClass
-    Offset: '0xf0'
+    Offset: '0xe0'
     Size: '0x8'
     Type: class UClass*
   - Name: ProjectileLaunchVelocity
-    Offset: '0xf8'
+    Offset: '0xe8'
     Size: '0x4'
     Type: float
   - Name: FireballCannonStartUpTime
-    Offset: '0xfc'
+    Offset: '0xec'
     Size: '0x4'
     Type: float
   - Name: FireballCannonCooldownTime
-    Offset: '0x100'
+    Offset: '0xf0'
     Size: '0x4'
     Type: float
   - Name: InheritOwnerForwardVelocityScalar
-    Offset: '0x104'
+    Offset: '0xf4'
     Size: '0x4'
     Type: float
   - Name: FireballCannonCooldownMaterialDelay
-    Offset: '0x108'
+    Offset: '0xf8'
     Size: '0x4'
     Type: float
   - Name: FireballCannonReadyToFireMaterialDelay
-    Offset: '0x10c'
+    Offset: '0xfc'
     Size: '0x4'
     Type: float
   - Name: ActiveProjectiles
-    Offset: '0x110'
+    Offset: '0x100'
     Size: '0x10'
     Type: TArray<uintptr_t>
   - Name: FireballCannonFiringState
-    Offset: '0x120'
+    Offset: '0x110'
     Size: '0x1'
     Type: byte
-  - Name: ActorsInsideFlame
-    Offset: '0x128'
-    Size: '0x50'
-    Type: map
+  - Name: pad0x7_JHPSF[0x7]
+    Offset: '0x111'
+    Size: '0x7'
+    Type: char
   - Name: FireRadiusCollisionChannel
-    Offset: '0x178'
+    Offset: '0x168'
     Size: '0x1'
     Type: byte
   - Name: FireRadiusCollisionResponse
-    Offset: '0x179'
+    Offset: '0x169'
     Size: '0x20'
     Type: struct CollisionResponseContainer
+  - Name: pad0x7_AZ01E[0x7]
+    Offset: '0x189'
+    Size: '0x7'
+    Type: char
   - Name: FlamethrowerFirePropagationIgnitionParams
-    Offset: '0x1a0'
+    Offset: '0x190'
     Size: '0x8'
     Type: class FireGridCellSelectionParamsDataAsset*
   - Name: FlamethrowerCollisionStatusEffect
-    Offset: '0x1a8'
-    Size: '0x18'
+    Offset: '0x198'
+    Size: '0x20'
     Type: struct Status
   - Name: UseScalingFlameCollisionRadius
-    Offset: '0x1c0'
+    Offset: '0x1b8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_X86SG[0x3]
+    Offset: '0x1b9'
+    Size: '0x3'
+    Type: char
   - Name: FlameCollisionRadius
-    Offset: '0x1c4'
+    Offset: '0x1bc'
     Size: '0x4'
     Type: float
   - Name: DynamicFlameCollisionRadiusCurve
-    Offset: '0x1c8'
+    Offset: '0x1c0'
     Size: '0x80'
     Type: struct RuntimeFloatCurve
   - Name: TimeUntilApplyStatusEffect
-    Offset: '0x248'
+    Offset: '0x240'
     Size: '0x4'
     Type: float
   - Name: TimeUntilIgniteFirePropagation
-    Offset: '0x24c'
+    Offset: '0x244'
     Size: '0x4'
     Type: float
   - Name: TimeToConsiderActorOutsideFlame
-    Offset: '0x250'
+    Offset: '0x248'
     Size: '0x4'
     Type: float
   - Name: FlamethrowerCollisionDamageAmount
-    Offset: '0x254'
+    Offset: '0x24c'
     Size: '0x4'
     Type: float
   - Name: DamagePerSecondInsideFlame
-    Offset: '0x258'
+    Offset: '0x250'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_R00H9[0x4]
+    Offset: '0x254'
+    Size: '0x4'
+    Type: char
   - Name: DamagerTypeClass
-    Offset: '0x260'
+    Offset: '0x258'
     Size: '0x8'
     Type: class UClass*
   - Name: HealthChangedReason
-    Offset: '0x268'
+    Offset: '0x260'
     Size: '0x1'
     Type: byte
-  - Name: OnFiringStateChangedDelegate
-    Offset: '0x270'
-    Size: '0x10'
-    Type: multicastinlinedelegate
-  ClassSize: '0x220'
-  FullSize: '0x2e8'
-  InheritedSize: '0xc8'
+  - Name: pad0x7_OF1V1[0x7]
+    Offset: '0x261'
+    Size: '0x7'
+    Type: char
+  - Name: pad0x78_QK814[0x78]
+    Offset: '0x268'
+    Size: '0x78'
+    Type: char
+  ClassSize: '0x228'
+  FullSize: '0x2e0'
+  InheritedSize: '0xb8'
   Super: ActorComponent
+FireballCannonInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

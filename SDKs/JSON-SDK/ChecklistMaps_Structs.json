@@ -1,4 +1,33 @@
 {
+  "ChecklistItem": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "Description",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NumRequiredActionCompletions",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x4_KQXI3[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "ActionData",
+        "Type": "TArray<class ChecklistActionData*>",
+        "Size": "0x10",
+        "Offset": "0x40"
+      }
+    ]
+  },
   "ChecklistBootyDeliveredEvent": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -13,6 +42,29 @@
         "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "ChecklistMapItemData": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "Description",
+        "Type": "struct TreasureMapTextDesc",
+        "Size": "0x48",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "IsComplete",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x7_563QO[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x49"
       }
     ]
   },
@@ -43,6 +95,12 @@
         "Offset": "0x10"
       },
       {
+        "Name": "pad0x7_FTQ8K[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      },
+      {
         "Name": "ActionDescryption",
         "Type": "struct FString",
         "Size": "0x10",
@@ -50,43 +108,14 @@
       }
     ]
   },
-  "ChecklistMapItemData": {
-    "ClassSize": "0x50",
+  "CompleteEntireChecklistEvent": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "Description",
-        "Type": "struct TreasureMapTextDesc",
-        "Size": "0x48",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "IsComplete",
-        "Type": "bool",
+        "Name": "pad0x1_JU887[0x1]",
+        "Type": "char",
         "Size": "0x1",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "ChecklistItem": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "Description",
-        "Type": "struct FText",
-        "Size": "0x38",
         "Offset": "0x0"
-      },
-      {
-        "Name": "NumRequiredActionCompletions",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "ActionData",
-        "Type": "TArray<class ChecklistActionData*>",
-        "Size": "0x10",
-        "Offset": "0x40"
       }
     ]
   },

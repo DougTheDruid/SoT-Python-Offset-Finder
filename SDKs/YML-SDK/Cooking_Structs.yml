@@ -10,6 +10,10 @@ CookEndTelemetryEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_2DENQ[0x3]
+    Offset: '0x11'
+    Size: '0x3'
+    Type: char
   - Name: Location
     Offset: '0x14'
     Size: '0xc'
@@ -29,6 +33,10 @@ CookStartTelemetryEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_MVOV6[0x3]
+    Offset: '0x11'
+    Size: '0x3'
+    Type: char
   - Name: Location
     Offset: '0x14'
     Size: '0xc'
@@ -48,6 +56,10 @@ CookableComponentSmokeFeedbackTimingEntry:
     Offset: '0x4'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_M62SN[0x3]
+    Offset: '0x5'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x8'
 CookerSmokeFeedbackEntry:
   Attributes:
@@ -55,6 +67,10 @@ CookerSmokeFeedbackEntry:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_RMPCL[0x7]
+    Offset: '0x1'
+    Size: '0x7'
+    Type: char
   - Name: SmokeVFX
     Offset: '0x8'
     Size: '0x8'
@@ -70,6 +86,10 @@ CookingClientRepresentation:
     Offset: '0x1'
     Size: '0x1'
     Type: bool
+  - Name: pad0x6_P2KTU[0x6]
+    Offset: '0x2'
+    Size: '0x6'
+    Type: char
   - Name: CurrentlyCookingItem
     Offset: '0x8'
     Size: '0x8'
@@ -86,6 +106,10 @@ CookingClientRepresentation:
     Offset: '0x50'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_4URUA[0x3]
+    Offset: '0x51'
+    Size: '0x3'
+    Type: char
   - Name: VisibleCookedExtent
     Offset: '0x54'
     Size: '0x4'
@@ -98,7 +122,51 @@ CookingClientRepresentation:
     Offset: '0x5c'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x4_53N44[0x4]
+    Offset: '0x64'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x68'
+CookingInfo:
+  Attributes:
+  - Name: pad0xc_QLPI7[0xc]
+    Offset: '0x0'
+    Size: '0xc'
+    Type: char
+  ClassSize: '0xc'
+EventActorStoppedCooking:
+  Attributes:
+  - Name: FoodType
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct FString
+  - Name: InitialCookingState
+    Offset: '0x10'
+    Size: '0x1'
+    Type: byte
+  - Name: EndCookingState
+    Offset: '0x11'
+    Size: '0x1'
+    Type: byte
+  - Name: pad0x6_NGL2U[0x6]
+    Offset: '0x12'
+    Size: '0x6'
+    Type: char
+  ClassSize: '0x18'
+OnItemStartedCooking:
+  Attributes:
+  - Name: pad0x10_6BSZX[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
+  ClassSize: '0x10'
+OnItemStoppedCooking:
+  Attributes:
+  - Name: pad0x1_ID3X6[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
 OnPlacedItemInCookingPot:
   Attributes:
   - Name: Interactor

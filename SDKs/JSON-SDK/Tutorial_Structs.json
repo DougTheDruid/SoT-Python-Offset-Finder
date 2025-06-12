@@ -3,8 +3,8 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "PromptActorClass",
-        "Type": "assetclass",
+        "Name": "pad0x20_6B1OB[0x20]",
+        "Type": "char",
         "Size": "0x20",
         "Offset": "0x0"
       },
@@ -28,6 +28,63 @@
       }
     ]
   },
+  "TutorialShowTutorialLegendaryTavernStrangerEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_TAJQ2[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "HasTutorialStarterBegunCondition": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x28_CUYPY[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TutorialStarterType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x7_8Q0AZ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x29"
+      }
+    ]
+  },
+  "BeachNPCSpawnFlowNetworkEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x18_UGHQI[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "HasTaleCheckpointVoyage",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x7_TFBJA[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x19"
+      }
+    ]
+  },
   "IntroductionToSOTIntroAnimatic": {
     "ClassSize": "0x38",
     "Attributes": [
@@ -42,39 +99,12 @@
         "Type": "struct FirstPersonAnimaticSettings",
         "Size": "0x2c",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "BeachNPCSpawnFlowNetworkEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
+      },
       {
-        "Name": "HasTaleCheckpointVoyage",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "HasTutorialStarterBegunCondition": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "TutorialStarterType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "EventTutorialTypeDecided": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "TutorialType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
+        "Name": "pad0x4_IAQ8S[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
       }
     ]
   },
@@ -104,6 +134,23 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x21"
+      },
+      {
+        "Name": "pad0x6_4B7GO[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x22"
+      }
+    ]
+  },
+  "EventTutorialTypeDecided": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "TutorialType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },

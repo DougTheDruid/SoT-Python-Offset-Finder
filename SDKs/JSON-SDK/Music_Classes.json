@@ -1,153 +1,218 @@
 {
+  "MusicZoneServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MusicZoneService": {
+    "Super": "Actor",
+    "FullSize": "0x468",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0xc8",
+    "Attributes": [
+      {
+        "Name": "pad0xc8_0QVQF[0xc8]",
+        "Type": "char",
+        "Size": "0xc8",
+        "Offset": "0x3a0"
+      }
+    ]
+  },
+  "EmitterManipulatorInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "NetMusicZoneActor": {
     "Super": "Actor",
-    "FullSize": "0x3d0",
-    "InheritedSize": "0x3c8",
+    "FullSize": "0x3a8",
+    "InheritedSize": "0x3a0",
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "MusicZone",
         "Type": "class MusicZoneComponent*",
         "Size": "0x8",
-        "Offset": "0x3c8"
+        "Offset": "0x3a0"
       }
     ]
   },
   "MusicZoneComponent": {
     "Super": "SceneComponent",
-    "FullSize": "0x3d0",
-    "InheritedSize": "0x2e0",
+    "FullSize": "0x3c0",
+    "InheritedSize": "0x2d0",
     "ClassSize": "0xf0",
     "Attributes": [
+      {
+        "Name": "pad0x8_HAANG[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x2d0"
+      },
       {
         "Name": "InnerRadius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2e8"
+        "Offset": "0x2d8"
       },
       {
         "Name": "OuterRadius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2ec"
+        "Offset": "0x2dc"
       },
       {
         "Name": "LocationRTPC",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x2f0"
+        "Offset": "0x2e0"
       },
       {
         "Name": "PlaybackPositionRTPC",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x2f8"
+        "Offset": "0x2e8"
       },
       {
         "Name": "LocalRTPC",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x300"
+        "Offset": "0x2f0"
+      },
+      {
+        "Name": "pad0x7_OJFS5[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x2f1"
       },
       {
         "Name": "PlayEvent",
         "Type": "class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x308"
+        "Offset": "0x2f8"
       },
       {
         "Name": "StopEvent",
         "Type": "class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x310"
+        "Offset": "0x300"
       },
       {
         "Name": "OneShotEvents",
         "Type": "TArray<class WwiseEvent*>",
         "Size": "0x10",
-        "Offset": "0x318"
+        "Offset": "0x308"
       },
       {
         "Name": "EmitterPool",
         "Type": "class WwiseObjectPoolWrapper*",
         "Size": "0x8",
-        "Offset": "0x328"
+        "Offset": "0x318"
       },
       {
         "Name": "DisableAfterPlayThrough",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x330"
+        "Offset": "0x320"
       },
       {
         "Name": "ActivateOnBeginPlay",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x331"
+        "Offset": "0x321"
       },
       {
-        "Name": "OnMusicZoneStarted",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
-        "Offset": "0x338"
+        "Name": "pad0x6_CTYN2[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x322"
       },
       {
         "Name": "EmitterRemoteValues",
         "Type": "struct MusicZoneRemoteValues",
         "Size": "0x20",
-        "Offset": "0x370"
+        "Offset": "0x360"
+      },
+      {
+        "Name": "pad0x40_T84JK[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x380"
       }
     ]
   },
-  "SynchedMusicZoneComponent": {
-    "Super": "MusicZoneComponent",
-    "FullSize": "0x400",
-    "InheritedSize": "0x3d0",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "StartDelayTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3c8"
-      },
-      {
-        "Name": "PlayFromStartTimeMS",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x3cc"
-      }
-    ]
+  "MusicZoneInterface": {
+    "Super": "EmitterManipulatorInterface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "AISpawnerMusicZoneComponent": {
     "Super": "MusicZoneComponent",
-    "FullSize": "0x3f0",
-    "InheritedSize": "0x3d0",
+    "FullSize": "0x3e0",
+    "InheritedSize": "0x3c0",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "BattleWonEvent",
         "Type": "class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x3c8"
+        "Offset": "0x3b8"
       },
       {
         "Name": "AISpawner",
         "Type": "class AISpawner*",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x3c0"
       },
       {
         "Name": "SpawnerPawns",
         "Type": "TArray<class Pawn*>",
         "Size": "0x10",
-        "Offset": "0x3d8"
+        "Offset": "0x3c8"
       },
       {
         "Name": "SpawnerState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x3e8"
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "pad0x7_FNH22[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x3d9"
+      }
+    ]
+  },
+  "SynchedMusicZoneComponent": {
+    "Super": "MusicZoneComponent",
+    "FullSize": "0x3f0",
+    "InheritedSize": "0x3c0",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "StartDelayTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3b8"
+      },
+      {
+        "Name": "PlayFromStartTimeMS",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x3bc"
+      },
+      {
+        "Name": "pad0x30_74TGV[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x3c0"
       }
     ]
   },

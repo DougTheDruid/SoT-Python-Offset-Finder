@@ -1,15 +1,4 @@
 {
-  "ReplicatedDateTime": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Ticks",
-        "Type": "int64",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "EventSetDateTime": {
     "ClassSize": "0x14",
     "Attributes": [
@@ -49,8 +38,8 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "Ticks",
-        "Type": "int64",
+        "Name": "pad0x8_CM2LE[0x8]",
+        "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"
       }
@@ -62,6 +51,28 @@
       {
         "Name": "DateTimeRepresentation",
         "Type": "struct DateTime",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventTimeServiceMigrated": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_4KG8T[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ReplicatedDateTime": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_RJ301[0x8]",
+        "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"
       }

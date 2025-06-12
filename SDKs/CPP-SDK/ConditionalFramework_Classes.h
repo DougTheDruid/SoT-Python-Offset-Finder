@@ -6,11 +6,19 @@
 #include "ConditionalFramework_Structs.h"
 
 
-// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ActorSpecifierInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
 class ActorSpecifierComponent: public ActorComponent
 {
 public:
-	class Actor*                                                 SpecifiedActor;                                    // 0xd0(0x8)
+	char                                                         pad0x8_821GZ[0x8];                                 // 0xb8(0x8)
+	class Actor*                                                 SpecifiedActor;                                    // 0xc0(0x8)
 };
 
 

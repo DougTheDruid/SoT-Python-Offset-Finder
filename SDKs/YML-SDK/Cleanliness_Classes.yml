@@ -2,23 +2,43 @@
 # https://github.com/DougTheDruid
 CleanlinessComponent:
   Attributes:
+  - Name: pad0x10_7YBML[0x10]
+    Offset: '0xb8'
+    Size: '0x10'
+    Type: char
   - Name: DirtinessStrengthToMaterialStrength
-    Offset: '0xd8'
+    Offset: '0xc8'
     Size: '0x8'
     Type: class CurveFloat*
   - Name: CleanlinessInfo
-    Offset: '0xe0'
+    Offset: '0xd0'
     Size: '0xc'
     Type: struct CleanlinessInfo
   - Name: DirtinessDecayRatePerSecond
-    Offset: '0xec'
+    Offset: '0xdc'
     Size: '0x4'
     Type: float
   - Name: QuickCleanDirtynessDecayRatePerSecond
-    Offset: '0xf0'
+    Offset: '0xe0'
     Size: '0x4'
     Type: float
+  - Name: pad0x54_F5XW6[0x54]
+    Offset: '0xe4'
+    Size: '0x54'
+    Type: char
   ClassSize: '0x80'
-  FullSize: '0x148'
-  InheritedSize: '0xc8'
+  FullSize: '0x138'
+  InheritedSize: '0xb8'
   Super: ActorComponent
+CleanlinessInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+CleanlinessTransferInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

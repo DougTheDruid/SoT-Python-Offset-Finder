@@ -17,22 +17,32 @@ ActorSequence:
 ActorSequenceComponent:
   Attributes:
   - Name: PlaybackSettings
-    Offset: '0xc8'
+    Offset: '0xb8'
     Size: '0x28'
     Type: struct MovieSceneSequencePlaybackSettings
   - Name: Sequence
-    Offset: '0xf0'
+    Offset: '0xe0'
     Size: '0x8'
     Type: class ActorSequence*
   - Name: SequencePlayer
-    Offset: '0xf8'
+    Offset: '0xe8'
     Size: '0x8'
     Type: class ActorSequencePlayer*
   - Name: bAutoPlay
-    Offset: '0x100'
+    Offset: '0xf0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_D55OR[0x7]
+    Offset: '0xf1'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x40'
-  FullSize: '0x108'
-  InheritedSize: '0xc8'
+  FullSize: '0xf8'
+  InheritedSize: '0xb8'
   Super: ActorComponent
+ActorSequencePlayer:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x608'
+  InheritedSize: '0x608'
+  Super: MovieSceneSequencePlayer

@@ -1,17 +1,285 @@
 {
-  "EmotePropRandomObjectData": {
-    "Super": "EmotePropData",
+  "EmoteInteractionObjectsProviderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BreakWalkableDisguiseConditionalStatsTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmoteCard": {
+    "Super": "Actor",
+    "FullSize": "0x4f0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x150",
+    "Attributes": [
+      {
+        "Name": "pad0x8_PRJXR[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "DynamicCardSelectionMaterialInstance",
+        "Type": "class MaterialInstanceDynamic*",
+        "Size": "0x8",
+        "Offset": "0x3a8"
+      },
+      {
+        "Name": "MeshComponent",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3b0"
+      },
+      {
+        "Name": "RandomCardParameterName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x3b8"
+      },
+      {
+        "Name": "RandomCardParameterRange",
+        "Type": "struct Int32Range",
+        "Size": "0x10",
+        "Offset": "0x3c0"
+      },
+      {
+        "Name": "pad0x120_EFOOO[0x120]",
+        "Type": "char",
+        "Size": "0x120",
+        "Offset": "0x3d0"
+      }
+    ]
+  },
+  "DisguiseHandlerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x170",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0xb8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_K981P[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "DisguiseTypesDataAsset",
+        "Type": "class DisguiseTypesDataAsset*",
+        "Size": "0x8",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "BarrelDisguiseInvisibilityCurve",
+        "Type": "class CurveFloat*",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "BarrelDisguiseItemSpawnClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "ChestDisguiseInvisibilityCurve",
+        "Type": "class CurveFloat*",
+        "Size": "0x8",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "ChestDisguiseItemSpawnClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "DisguiseInvisibilityCurve",
+        "Type": "class CurveFloat*",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "DisguiseTypeData",
+        "Type": "struct DisguiseTypeData",
+        "Size": "0x3",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "pad0x1_W035N[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0xf3"
+      },
+      {
+        "Name": "CurrentInvisibilityValue",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xf4"
+      },
+      {
+        "Name": "pad0x18_DZQPR[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0xf8"
+      },
+      {
+        "Name": "DisguiseMMCMeshInitializer",
+        "Type": "class MemoryConstrainedMeshInitializer*",
+        "Size": "0x8",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "IsPiratePreviewActor",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x118"
+      },
+      {
+        "Name": "pad0x57_8KOSC[0x57]",
+        "Type": "char",
+        "Size": "0x57",
+        "Offset": "0x119"
+      }
+    ]
+  },
+  "WalkableEmoteDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ProjectileCapsuleZModifierWhenInBarrelDisguise",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ProjectileCapsuleZModifierWhenInChestDisguise",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      }
+    ]
+  },
+  "EmoteDice": {
+    "Super": "Actor",
+    "FullSize": "0x4d0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x130",
+    "Attributes": [
+      {
+        "Name": "pad0x130_VKI9N[0x130]",
+        "Type": "char",
+        "Size": "0x130",
+        "Offset": "0x3a0"
+      }
+    ]
+  },
+  "BrokenOutOfWalkableDisguiseConditionalStatsTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmoteZoomOutAnalogInputId": {
+    "Super": "AnalogInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WalkableEmoteDistanceConditionalStatsTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmoteRandomFromListAsset": {
+    "Super": "DataAsset",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "PossibleObjects",
-        "Type": "TArray<struct EmotePropRandomObjectInfo>",
+        "Name": "EmoteDataList",
+        "Type": "TArray<struct EmoteData>",
         "Size": "0x10",
         "Offset": "0x28"
       }
     ]
+  },
+  "IsTargetInDisguiseStatCondition": {
+    "Super": "TargetedStatCondition",
+    "FullSize": "0x40",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "TargetDisguiseTypes",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "EmoteCameraInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmoteZoomInAnalogInputId": {
+    "Super": "AnalogInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmotePropData": {
+    "Super": "DataAsset",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmoteCoin": {
+    "Super": "Actor",
+    "FullSize": "0x4c8",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x128",
+    "Attributes": [
+      {
+        "Name": "pad0x128_87GH7[0x128]",
+        "Type": "char",
+        "Size": "0x128",
+        "Offset": "0x3a0"
+      }
+    ]
+  },
+  "DisguiseHandlerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WalkableEmotesInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "EmoteIdListingAsset": {
     "Super": "DataAsset",
@@ -29,21 +297,33 @@
   },
   "EmoteRandomObject": {
     "Super": "Actor",
-    "FullSize": "0x508",
-    "InheritedSize": "0x3c8",
+    "FullSize": "0x4e0",
+    "InheritedSize": "0x3a0",
     "ClassSize": "0x140",
     "Attributes": [
+      {
+        "Name": "pad0x8_PYA94[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3a0"
+      },
       {
         "Name": "MeshComponent",
         "Type": "class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x3a8"
       },
       {
         "Name": "DynamicMaterialInstance",
         "Type": "class MaterialInstanceDynamic*",
         "Size": "0x8",
-        "Offset": "0x3d8"
+        "Offset": "0x3b0"
+      },
+      {
+        "Name": "pad0x128_6VJ8B[0x128]",
+        "Type": "char",
+        "Size": "0x128",
+        "Offset": "0x3b8"
       }
     ]
   },
@@ -58,40 +338,21 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x4_E0Z1U[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
       }
     ]
   },
-  "EmoteCard": {
-    "Super": "Actor",
-    "FullSize": "0x518",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x150",
-    "Attributes": [
-      {
-        "Name": "DynamicCardSelectionMaterialInstance",
-        "Type": "class MaterialInstanceDynamic*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "MeshComponent",
-        "Type": "class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d8"
-      },
-      {
-        "Name": "RandomCardParameterName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x3e0"
-      },
-      {
-        "Name": "RandomCardParameterRange",
-        "Type": "struct Int32Range",
-        "Size": "0x10",
-        "Offset": "0x3e8"
-      }
-    ]
+  "EmoteZoomMouseAnalogInputId": {
+    "Super": "AnalogInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "EmotePropDiceData": {
     "Super": "EmotePropData",
@@ -106,6 +367,12 @@
         "Offset": "0x28"
       },
       {
+        "Name": "pad0x3_LW7AY[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x29"
+      },
+      {
         "Name": "Outcome",
         "Type": "int",
         "Size": "0x4",
@@ -113,15 +380,15 @@
       }
     ]
   },
-  "EmoteRandomFromListAsset": {
-    "Super": "DataAsset",
+  "EmotePropRandomObjectData": {
+    "Super": "EmotePropData",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "EmoteDataList",
-        "Type": "TArray<struct EmoteData>",
+        "Name": "PossibleObjects",
+        "Type": "TArray<struct EmotePropRandomObjectInfo>",
         "Size": "0x10",
         "Offset": "0x28"
       }

@@ -2,18 +2,36 @@
 # https://github.com/DougTheDruid
 CustomMap:
   Attributes:
+  - Name: pad0x8_J6ATN[0x8]
+    Offset: '0x8c0'
+    Size: '0x8'
+    Type: char
   - Name: Font
-    Offset: '0x8a8'
+    Offset: '0x8c8'
     Size: '0x8'
     Type: class Font*
   - Name: DisplayItems
-    Offset: '0x8b0'
+    Offset: '0x8d0'
     Size: '0x10'
     Type: TArray<class CustomMapDisplayObjectBase*>
-  ClassSize: '0x30'
-  FullSize: '0x8d0'
-  InheritedSize: '0x8a0'
+  - Name: LineSpacing
+    Offset: '0x8e0'
+    Size: '0x4'
+    Type: float
+  - Name: pad0x1c_0H772[0x1c]
+    Offset: '0x8e4'
+    Size: '0x1c'
+    Type: char
+  ClassSize: '0x40'
+  FullSize: '0x900'
+  InheritedSize: '0x8c0'
   Super: RenderToTextureMapBase
+CustomMapCollectionInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 CustomMapData:
   Attributes:
   - Name: CustomMapItemDescClass
@@ -34,95 +52,255 @@ CustomMapData:
   Super: DataAsset
 CustomMapDataTypeBase:
   Attributes:
-  - Name: Guid
+  - Name: Visible
     Offset: '0x28'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x3_0RWNN[0x3]
+    Offset: '0x29'
+    Size: '0x3'
+    Type: char
+  - Name: Guid
+    Offset: '0x2c'
     Size: '0x10'
     Type: struct Guid
-  ClassSize: '0x10'
-  FullSize: '0x38'
+  - Name: pad0x4_U03PK[0x4]
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: char
+  ClassSize: '0x18'
+  FullSize: '0x40'
   InheritedSize: '0x28'
   Super: Object
+CustomMapDataTypeImage:
+  Attributes:
+  - Name: pad0x20_F0VPG[0x20]
+    Offset: '0x50'
+    Size: '0x20'
+    Type: char
+  - Name: Width
+    Offset: '0x70'
+    Size: '0x4'
+    Type: float
+  - Name: Height
+    Offset: '0x74'
+    Size: '0x4'
+    Type: float
+  - Name: FlipX
+    Offset: '0x78'
+    Size: '0x1'
+    Type: bool
+  - Name: ScaleHeightOnMultipleLines
+    Offset: '0x79'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x2_3X6K3[0x2]
+    Offset: '0x7a'
+    Size: '0x2'
+    Type: char
+  - Name: ImageColour
+    Offset: '0x7c'
+    Size: '0x10'
+    Type: struct LinearColor
+  - Name: ImageBlendMode
+    Offset: '0x8c'
+    Size: '0x1'
+    Type: byte
+  - Name: pad0x3_5HQVY[0x3]
+    Offset: '0x8d'
+    Size: '0x3'
+    Type: char
+  ClassSize: '0x40'
+  FullSize: '0x90'
+  InheritedSize: '0x50'
+  Super: CustomMapDataTypePositional
 CustomMapDataTypePositional:
   Attributes:
   - Name: Position
-    Offset: '0x38'
+    Offset: '0x40'
     Size: '0x8'
     Type: struct Vector2D
   - Name: Orientation
-    Offset: '0x40'
+    Offset: '0x48'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_OFYM1[0x4]
+    Offset: '0x4c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x10'
-  FullSize: '0x48'
-  InheritedSize: '0x38'
+  FullSize: '0x50'
+  InheritedSize: '0x40'
   Super: CustomMapDataTypeBase
 CustomMapDataTypeText:
   Attributes:
   - Name: Text
-    Offset: '0x48'
+    Offset: '0x50'
     Size: '0x38'
     Type: struct FText
-  - Name: FontScale
-    Offset: '0x80'
-    Size: '0x4'
-    Type: float
-  - Name: StrikeThrough
-    Offset: '0x84'
-    Size: '0x1'
-    Type: bool
-  - Name: StrikethroughThickness
+  - Name: MaxTextWidth
     Offset: '0x88'
     Size: '0x4'
     Type: float
-  ClassSize: '0x48'
-  FullSize: '0x90'
-  InheritedSize: '0x48'
+  - Name: FontScale
+    Offset: '0x8c'
+    Size: '0x4'
+    Type: float
+  - Name: StrikeThrough
+    Offset: '0x90'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x3_HU6LX[0x3]
+    Offset: '0x91'
+    Size: '0x3'
+    Type: char
+  - Name: StrikethroughThickness
+    Offset: '0x94'
+    Size: '0x4'
+    Type: float
+  - Name: TextColour
+    Offset: '0x98'
+    Size: '0x10'
+    Type: struct LinearColor
+  ClassSize: '0x58'
+  FullSize: '0xa8'
+  InheritedSize: '0x50'
   Super: CustomMapDataTypePositional
 CustomMapDisplayObjectBase:
   Attributes:
-  - Name: Guid
+  - Name: Visible
     Offset: '0x28'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x3_HQI66[0x3]
+    Offset: '0x29'
+    Size: '0x3'
+    Type: char
+  - Name: Guid
+    Offset: '0x2c'
     Size: '0x10'
     Type: struct Guid
-  ClassSize: '0x10'
-  FullSize: '0x38'
+  - Name: pad0x4_0GS25[0x4]
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: char
+  ClassSize: '0x18'
+  FullSize: '0x40'
   InheritedSize: '0x28'
   Super: Object
+CustomMapDisplayObjectImage:
+  Attributes:
+  - Name: WeakImage
+    Offset: '0x50'
+    Size: '0x10'
+    Type: struct StringAssetReference
+  - Name: Width
+    Offset: '0x60'
+    Size: '0x4'
+    Type: float
+  - Name: Height
+    Offset: '0x64'
+    Size: '0x4'
+    Type: float
+  - Name: FlipX
+    Offset: '0x68'
+    Size: '0x1'
+    Type: bool
+  - Name: ScaleHeightOnMultipleLines
+    Offset: '0x69'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x2_Q6R7O[0x2]
+    Offset: '0x6a'
+    Size: '0x2'
+    Type: char
+  - Name: ImageColour
+    Offset: '0x6c'
+    Size: '0x10'
+    Type: struct LinearColor
+  - Name: ImageBlendMode
+    Offset: '0x7c'
+    Size: '0x1'
+    Type: byte
+  - Name: pad0x3_YNN9I[0x3]
+    Offset: '0x7d'
+    Size: '0x3'
+    Type: char
+  - Name: TreasureMapWidgetTexture
+    Offset: '0x80'
+    Size: '0x30'
+    Type: struct TreasureMapWidgetTexture
+  - Name: CurrentlySetImage
+    Offset: '0xb0'
+    Size: '0x8'
+    Type: class Texture*
+  - Name: pad0x18_JTNDE[0x18]
+    Offset: '0xb8'
+    Size: '0x18'
+    Type: char
+  ClassSize: '0x80'
+  FullSize: '0xd0'
+  InheritedSize: '0x50'
+  Super: CustomMapDisplayObjectPositional
 CustomMapDisplayObjectPositional:
   Attributes:
   - Name: Position
-    Offset: '0x38'
+    Offset: '0x40'
     Size: '0x8'
     Type: struct Vector2D
   - Name: Orientation
-    Offset: '0x40'
+    Offset: '0x48'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_2DX57[0x4]
+    Offset: '0x4c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x10'
-  FullSize: '0x48'
-  InheritedSize: '0x38'
+  FullSize: '0x50'
+  InheritedSize: '0x40'
   Super: CustomMapDisplayObjectBase
 CustomMapDisplayObjectText:
   Attributes:
   - Name: Text
-    Offset: '0x48'
+    Offset: '0x50'
     Size: '0x38'
     Type: struct FText
-  - Name: FontScale
-    Offset: '0x80'
-    Size: '0x4'
-    Type: float
-  - Name: StrikeThrough
-    Offset: '0x84'
-    Size: '0x1'
-    Type: bool
-  - Name: StrikethroughThickness
+  - Name: MaxTextWidth
     Offset: '0x88'
     Size: '0x4'
     Type: float
-  ClassSize: '0x90'
-  FullSize: '0xd8'
-  InheritedSize: '0x48'
+  - Name: FontScale
+    Offset: '0x8c'
+    Size: '0x4'
+    Type: float
+  - Name: StrikeThrough
+    Offset: '0x90'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x3_CF6ZV[0x3]
+    Offset: '0x91'
+    Size: '0x3'
+    Type: char
+  - Name: StrikethroughThickness
+    Offset: '0x94'
+    Size: '0x4'
+    Type: float
+  - Name: TextColour
+    Offset: '0x98'
+    Size: '0x10'
+    Type: struct LinearColor
+  - Name: TextArguments
+    Offset: '0xa8'
+    Size: '0x10'
+    Type: TArray<struct TreasureMapTextEntry>
+  - Name: pad0x50_3G9OX[0x50]
+    Offset: '0xb8'
+    Size: '0x50'
+    Type: char
+  ClassSize: '0xb8'
+  FullSize: '0x108'
+  InheritedSize: '0x50'
   Super: CustomMapDisplayObjectPositional
 CustomMapSettings:
   Attributes:

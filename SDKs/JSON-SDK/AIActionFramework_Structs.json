@@ -1,10 +1,21 @@
 {
+  "ActivityActionSpotContainer": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_PQ8MQ[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "RegionActionSpotContainer": {
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "RegisteredActionSpotsByActivity",
-        "Type": "map",
+        "Name": "pad0x50_YEIEJ[0x50]",
+        "Type": "char",
         "Size": "0x50",
         "Offset": "0x0"
       }

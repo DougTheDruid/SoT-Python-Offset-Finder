@@ -32,7 +32,7 @@ EventEntityIdsSwitch:
   ClassSize: '0x28'
 EventOverMemoryThreshold:
   Attributes:
-  - Name: EventID
+  - Name: EventId
     Offset: '0x0'
     Size: '0x10'
     Type: struct FString
@@ -44,10 +44,14 @@ EventOverMemoryThreshold:
     Offset: '0x18'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_O36ZV[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x20'
 GameServerWebSocketEntityEvent:
   Attributes:
-  - Name: EventID
+  - Name: EventId
     Offset: '0x0'
     Size: '0x10'
     Type: struct FString

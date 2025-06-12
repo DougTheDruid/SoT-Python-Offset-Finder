@@ -2,13 +2,39 @@
 # https://github.com/DougTheDruid
 AIShipDamagedCustomServerEvent:
   Attributes:
+  - Name: pad0x20_SHWBV[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: AIShipWaterLevel
     Offset: '0x20'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_F7FZG[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x28'
+AIShipDespawnCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_5BF4A[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
+AIShipSpawnCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_IZ0QF[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
 AISpawnCustomServerEvent:
   Attributes:
+  - Name: pad0x20_ERFKS[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: AIType
     Offset: '0x20'
     Size: '0x10'
@@ -16,13 +42,25 @@ AISpawnCustomServerEvent:
   ClassSize: '0x30'
 ActorSpawnCustomServerEvent:
   Attributes:
+  - Name: pad0x18_CKB8Y[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: EntityNetId
     Offset: '0x18'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_1LG68[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x20'
 CookEndCustomServerEvent:
   Attributes:
+  - Name: pad0x20_SMTRW[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: FoodType
     Offset: '0x20'
     Size: '0x10'
@@ -34,6 +72,10 @@ CookEndCustomServerEvent:
   ClassSize: '0x40'
 CookStartCustomServerEvent:
   Attributes:
+  - Name: pad0x20_5OD7A[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: FoodType
     Offset: '0x20'
     Size: '0x10'
@@ -41,6 +83,10 @@ CookStartCustomServerEvent:
   ClassSize: '0x30'
 CrewPlayerLeftCustomServerEvent:
   Attributes:
+  - Name: pad0x18_BGH8Q[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: CrewId
     Offset: '0x18'
     Size: '0x10'
@@ -49,9 +95,17 @@ CrewPlayerLeftCustomServerEvent:
     Offset: '0x28'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_LI3EU[0x4]
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x30'
 CrewSessionLeaveCustomServerEvent:
   Attributes:
+  - Name: pad0x18_69QUH[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: CrewId
     Offset: '0x18'
     Size: '0x10'
@@ -59,7 +113,11 @@ CrewSessionLeaveCustomServerEvent:
   ClassSize: '0x28'
 CustomServerEvent:
   Attributes:
-  - Name: EventID
+  - Name: pad0x8_UF9I0[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
+  - Name: EventId
     Offset: '0x8'
     Size: '0x8'
     Type: struct FName
@@ -70,34 +128,80 @@ CustomServerEvent:
   ClassSize: '0x18'
 CustomTriggerOverlapBeginCustomServerEvent:
   Attributes:
+  - Name: pad0x20_J204M[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: OtherNetId
     Offset: '0x20'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_94JHY[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x28'
 CustomTriggerOverlapEndCustomServerEvent:
   Attributes:
+  - Name: pad0x20_LUZJF[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: OtherNetId
     Offset: '0x20'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_FL6NN[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x28'
 EntityCustomServerEvent:
   Attributes:
+  - Name: pad0x18_MAIDC[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: EntityNetId
     Offset: '0x18'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_MBVIU[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
+  ClassSize: '0x20'
+FortKeyUsedCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_W58FN[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x20'
 FortWaveCompletedCustomServerEvent:
   Attributes:
+  - Name: pad0x18_INLGF[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: InCrewId
     Offset: '0x18'
     Size: '0x10'
     Type: struct FString
   ClassSize: '0x28'
+GlobalCustomServerEvent:
+  Attributes:
+  - Name: pad0x18_IM8J8[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
+  ClassSize: '0x18'
 HoleFixedForShipCustomServerEvent:
   Attributes:
+  - Name: pad0x20_D5HUD[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: RepairPercentage
     Offset: '0x20'
     Size: '0x4'
@@ -110,13 +214,25 @@ HoleFixedForShipCustomServerEvent:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_J35P2[0x7]
+    Offset: '0x29'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x30'
 ItemSpawnCustomServerEvent:
   Attributes:
+  - Name: pad0x18_H8MG4[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: EntityNetId
     Offset: '0x18'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_RT10H[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   - Name: ItemType
     Offset: '0x20'
     Size: '0x10'
@@ -124,13 +240,25 @@ ItemSpawnCustomServerEvent:
   ClassSize: '0x30'
 KrakenDespawnCustomServerEvent:
   Attributes:
+  - Name: pad0x20_30601[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: Reason
     Offset: '0x20'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_U8N6I[0x7]
+    Offset: '0x21'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x28'
 KrakenSpawnCustomServerEvent:
   Attributes:
+  - Name: pad0x18_JC9HM[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: SpawnLocation
     Offset: '0x18'
     Size: '0xc'
@@ -151,16 +279,39 @@ KrakenSpawnCustomServerEvent:
     Offset: '0x30'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_2QVU7[0x4]
+    Offset: '0x34'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x38'
+KrakenTentacleDestroyedCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_RZNJZ[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
 MeleeWeaponAttackCustomServerEvent:
   Attributes:
+  - Name: pad0x20_WLW7F[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: Type
     Offset: '0x20'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_622AD[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x28'
 MermaidSpawnedCustomServerEvent:
   Attributes:
+  - Name: pad0x18_9EVDX[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: Position
     Offset: '0x18'
     Size: '0xc'
@@ -170,8 +321,19 @@ MermaidSpawnedCustomServerEvent:
     Size: '0x4'
     Type: int
   ClassSize: '0x28'
+MermaidUsedCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_YPZAR[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
 OnCannonBallHitShipCustomServerEvent:
   Attributes:
+  - Name: pad0x20_ZQKYD[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: CannonBallType
     Offset: '0x20'
     Size: '0x10'
@@ -180,30 +342,69 @@ OnCannonBallHitShipCustomServerEvent:
     Offset: '0x30'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_FZUUH[0x4]
+    Offset: '0x34'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x38'
+OnCannonballLoadedOnCannonCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_QM4ER[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
 OnEnemyDeathCustomServerEvent:
   Attributes:
+  - Name: pad0x20_J47AK[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: KillerPlayerID
     Offset: '0x20'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_44LG8[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x28'
 OnHarpoonShotHitCustomServerEvent:
   Attributes:
+  - Name: pad0x20_BH03Q[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: ActorTetheredTo
     Offset: '0x20'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_1Z5UO[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x28'
 OnHarpoonShotShotCustomServerEvent:
   Attributes:
+  - Name: pad0x20_TD73Y[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: HarpoonId
     Offset: '0x20'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_XL905[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x28'
 OnItemPlacedInChestCustomServerEvent:
   Attributes:
+  - Name: pad0x20_69AMJ[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: ChestId
     Offset: '0x20'
     Size: '0x4'
@@ -213,33 +414,96 @@ OnItemPlacedInChestCustomServerEvent:
     Size: '0x4'
     Type: int
   ClassSize: '0x28'
+OnPlayerAteCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_BDDBZ[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
 OnPlayerDigCustomServerEvent:
   Attributes:
+  - Name: pad0x20_GHEWB[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: Location
     Offset: '0x20'
     Size: '0xc'
     Type: struct Vector
+  - Name: pad0x4_9RJ9B[0x4]
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x30'
+OnPlayerFiredFromCannonCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_I0GC8[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
+OnPlayerInsideCannonCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_ICIWK[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
+OnPlayerJoinsMapTableCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_R9I3J[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
 OnPlayerStartsNPCInteractionCustomServerEvent:
   Attributes:
+  - Name: pad0x20_4F6LZ[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: NPCName
     Offset: '0x20'
     Size: '0x10'
     Type: struct FString
   ClassSize: '0x30'
+OnQuestAcceptedCustomServerEvent:
+  Attributes:
+  - Name: pad0x18_CSHBI[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
+  ClassSize: '0x18'
 OnQuestStartedCustomServerEvent:
   Attributes:
+  - Name: pad0x18_JP84A[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: QuestType
     Offset: '0x18'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_E2CJ5[0x3]
+    Offset: '0x19'
+    Size: '0x3'
+    Type: char
   - Name: CrewId
     Offset: '0x1c'
     Size: '0x10'
     Type: struct Guid
+  - Name: pad0x4_LOADZ[0x4]
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x30'
 OnRelaodAmmoCustomServerEvent:
   Attributes:
+  - Name: pad0x20_E7DU1[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: AvailableAmmoToAdd
     Offset: '0x20'
     Size: '0x4'
@@ -251,6 +515,10 @@ OnRelaodAmmoCustomServerEvent:
   ClassSize: '0x28'
 OnVoyageAcceptedCustomServerEvent:
   Attributes:
+  - Name: pad0x18_H4E6Y[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: CompanyDisplayName
     Offset: '0x18'
     Size: '0x10'
@@ -259,6 +527,10 @@ OnVoyageAcceptedCustomServerEvent:
     Offset: '0x28'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_ZTBR8[0x4]
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: char
   - Name: Title
     Offset: '0x30'
     Size: '0x10'
@@ -266,6 +538,10 @@ OnVoyageAcceptedCustomServerEvent:
   ClassSize: '0x40'
 OnVoyageCancelledCustomServerEvent:
   Attributes:
+  - Name: pad0x18_83X1S[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: AssociatedCrew
     Offset: '0x18'
     Size: '0x10'
@@ -273,6 +549,10 @@ OnVoyageCancelledCustomServerEvent:
   ClassSize: '0x28'
 OnVoyageStartedCustomServerEvent:
   Attributes:
+  - Name: pad0x18_Q954E[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: CompanyDisplayName
     Offset: '0x18'
     Size: '0x10'
@@ -281,6 +561,10 @@ OnVoyageStartedCustomServerEvent:
     Offset: '0x28'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_NOE9B[0x4]
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: char
   - Name: Title
     Offset: '0x30'
     Size: '0x10'
@@ -292,13 +576,25 @@ OnVoyageStartedCustomServerEvent:
   ClassSize: '0x50'
 PlayerActionCannonCustomServerEvent:
   Attributes:
+  - Name: pad0x20_FVB2A[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: ShipId
     Offset: '0x20'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_DP5I0[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x28'
 PlayerActionCustomServerEvent:
   Attributes:
+  - Name: pad0x20_L14MP[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: Action
     Offset: '0x20'
     Size: '0x10'
@@ -306,13 +602,32 @@ PlayerActionCustomServerEvent:
   ClassSize: '0x30'
 PlayerBucketEmptyCustomServerEvent:
   Attributes:
+  - Name: pad0x20_MS8QX[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: AtWielder
     Offset: '0x20'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_IVGE8[0x7]
+    Offset: '0x21'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x28'
+PlayerBucketScoopCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_B64DF[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
 PlayerCapstanUsageEndCustomServerEvent:
   Attributes:
+  - Name: pad0x20_F4N96[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: ShipId
     Offset: '0x20'
     Size: '0x4'
@@ -324,20 +639,47 @@ PlayerCapstanUsageEndCustomServerEvent:
   ClassSize: '0x28'
 PlayerCapstanUsageStartCustomServerEvent:
   Attributes:
+  - Name: pad0x20_TB9KF[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: ShipId
     Offset: '0x20'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_6BO6R[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x28'
+PlayerChangedLoadoutCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_ECUK7[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
 PlayerChangedShipLoadoutCustomServerEvent:
   Attributes:
+  - Name: pad0x20_UUCWQ[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: ShipId
     Offset: '0x20'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_GXJ2P[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x28'
 PlayerCharacterEnteredShipCustomServerEvent:
   Attributes:
+  - Name: pad0x20_T9I09[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: UserId
     Offset: '0x20'
     Size: '0x4'
@@ -349,13 +691,25 @@ PlayerCharacterEnteredShipCustomServerEvent:
   ClassSize: '0x28'
 PlayerDeathCustomServerEvent:
   Attributes:
+  - Name: pad0x20_5HWKX[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: KillerID
     Offset: '0x20'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_1CO4F[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x28'
 PlayerEmoteEndCustomServerEvent:
   Attributes:
+  - Name: pad0x20_F80W1[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: Emote
     Offset: '0x20'
     Size: '0x10'
@@ -363,6 +717,10 @@ PlayerEmoteEndCustomServerEvent:
   ClassSize: '0x30'
 PlayerEmoteStartCustomServerEvent:
   Attributes:
+  - Name: pad0x20_WCWQW[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: Emote
     Offset: '0x20'
     Size: '0x10'
@@ -370,27 +728,142 @@ PlayerEmoteStartCustomServerEvent:
   ClassSize: '0x30'
 PlayerEncounterEndCustomServerEvent:
   Attributes:
+  - Name: pad0x20_61YNO[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: EncounterType
     Offset: '0x20'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_NHXOM[0x7]
+    Offset: '0x21'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x28'
 PlayerEncounterStartCustomServerEvent:
   Attributes:
+  - Name: pad0x20_OO4ZG[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: EncounterType
     Offset: '0x20'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_KERUB[0x7]
+    Offset: '0x21'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x28'
+PlayerGameFishingStartedCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_ZIML4[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
+PlayerHealthChangeCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_VTSJY[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
+PlayerHeartbeatCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_EXLIK[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
+PlayerInReviveableStateCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_FFZ5W[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
+PlayerItemAddToContainerCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_AZXWA[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
+PlayerItemEquipCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_4CGXG[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
 PlayerItemRetrievalFromContainerCustomServerEvent:
   Attributes:
+  - Name: pad0x20_5PVUF[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: RetrievedItemName
     Offset: '0x20'
     Size: '0x10'
     Type: struct FString
   ClassSize: '0x30'
+PlayerItemUsageEndCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_8CT37[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
+PlayerItemUsageStartCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_AGT7Q[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
+PlayerKillAICustomServerEvent:
+  Attributes:
+  - Name: pad0x20_03BLJ[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
+PlayerLeftGhostShipCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_42906[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
+PlayerLookingAtMapCustomServerEvent:
+  Attributes:
+  - Name: pad0x18_Q54M5[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
+  ClassSize: '0x18'
+PlayerRadialChatCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_C3ABA[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
+PlayerRevivalCustomServerEvent:
+  Attributes:
+  - Name: pad0x28_JMTQ7[0x28]
+    Offset: '0x0'
+    Size: '0x28'
+    Type: char
+  ClassSize: '0x28'
 PlayerSetFootLocationCustomServerEvent:
   Attributes:
+  - Name: pad0x20_D9NC6[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: IslandName
     Offset: '0x20'
     Size: '0x10'
@@ -398,6 +871,10 @@ PlayerSetFootLocationCustomServerEvent:
   ClassSize: '0x30'
 PlayerSpawnCustomServerEvent:
   Attributes:
+  - Name: pad0x20_1K5MW[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: PlayerStateId
     Offset: '0x20'
     Size: '0x4'
@@ -406,9 +883,17 @@ PlayerSpawnCustomServerEvent:
     Offset: '0x24'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_E7UUG[0x3]
+    Offset: '0x25'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x28'
 PlayerStatusEffectActivatedCustomServerEvent:
   Attributes:
+  - Name: pad0x20_QNFW1[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: Effect
     Offset: '0x20'
     Size: '0x10'
@@ -416,6 +901,10 @@ PlayerStatusEffectActivatedCustomServerEvent:
   ClassSize: '0x30'
 PlayerStatusEffectDeactivatedCustomServerEvent:
   Attributes:
+  - Name: pad0x20_2DBH7[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: Effect
     Offset: '0x20'
     Size: '0x10'
@@ -423,6 +912,10 @@ PlayerStatusEffectDeactivatedCustomServerEvent:
   ClassSize: '0x30'
 ProjectileHitCustomServerEvent:
   Attributes:
+  - Name: pad0x20_CT2XZ[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: ProjectileType
     Offset: '0x20'
     Size: '0x10'
@@ -431,16 +924,46 @@ ProjectileHitCustomServerEvent:
     Offset: '0x30'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_SIM2D[0x4]
+    Offset: '0x34'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x38'
+ProjectileWeaponFiredCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_I8K7O[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
 ShipDamagedCustomServerEvent:
   Attributes:
+  - Name: pad0x20_M2C0O[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: Damage
     Offset: '0x20'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_K9W1Y[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x28'
+ShipDestroyedCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_F43A3[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
 ShipMastCollapseStateCustomServerEvent:
   Attributes:
+  - Name: pad0x20_RM0TH[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: ShipId
     Offset: '0x20'
     Size: '0x4'
@@ -450,8 +973,19 @@ ShipMastCollapseStateCustomServerEvent:
     Size: '0x4'
     Type: int
   ClassSize: '0x28'
+ShipOnFireEndCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_EC00X[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
 ShipRepairCustomServerEvent:
   Attributes:
+  - Name: pad0x20_UY2XT[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: UserId
     Offset: '0x20'
     Size: '0x4'
@@ -461,8 +995,19 @@ ShipRepairCustomServerEvent:
     Size: '0x4'
     Type: int
   ClassSize: '0x28'
+ShipSinkingCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_BD7FQ[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
 ShipSpawnedCustomServerEvent:
   Attributes:
+  - Name: pad0x20_CSGU6[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: ShipType
     Offset: '0x20'
     Size: '0x10'
@@ -470,13 +1015,25 @@ ShipSpawnedCustomServerEvent:
   ClassSize: '0x30'
 TinySharkDespawnCustomServerEvent:
   Attributes:
+  - Name: pad0x20_LHRAK[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: Reason
     Offset: '0x20'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_Z543G[0x7]
+    Offset: '0x21'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x28'
 TinySharkSpawnCustomServerEvent:
   Attributes:
+  - Name: pad0x18_MVC03[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: TinySharkId
     Offset: '0x18'
     Size: '0x4'
@@ -489,9 +1046,17 @@ TinySharkSpawnCustomServerEvent:
     Offset: '0x28'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_UCC2C[0x4]
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x30'
 TreasureDroppedCustomServerEvent:
   Attributes:
+  - Name: pad0x20_751A6[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: TreasureType
     Offset: '0x20'
     Size: '0x10'
@@ -500,16 +1065,35 @@ TreasureDroppedCustomServerEvent:
     Offset: '0x30'
     Size: '0xc'
     Type: struct Vector
+  - Name: pad0x4_15OTC[0x4]
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x40'
 TreasureFoundCustomServerEvent:
   Attributes:
+  - Name: pad0x20_TJKAZ[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: TreasureType
     Offset: '0x20'
     Size: '0x10'
     Type: struct FString
   ClassSize: '0x30'
+TreasurePickedUpCustomServerEvent:
+  Attributes:
+  - Name: pad0x20_J9O78[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
 TreasureSoldCustomServerEvent:
   Attributes:
+  - Name: pad0x20_L137M[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: CrewId
     Offset: '0x20'
     Size: '0x10'
@@ -527,17 +1111,40 @@ TreasureSoldCustomServerEvent:
     Size: '0x10'
     Type: struct FString
   ClassSize: '0x60'
+TreasureSpawnedCustomServerEvent:
+  Attributes:
+  - Name: pad0x18_3P6EE[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
+  ClassSize: '0x18'
 WatercraftDespawnCustomServerEvent:
   Attributes:
+  - Name: pad0x18_93Z97[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: WatercraftId
     Offset: '0x18'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_CE3WA[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x20'
 WatercraftSpawnCustomServerEvent:
   Attributes:
+  - Name: pad0x18_7LI8K[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: EntityNetId
     Offset: '0x18'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_ARM98[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x20'

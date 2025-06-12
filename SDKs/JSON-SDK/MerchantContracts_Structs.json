@@ -55,6 +55,12 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x4_FRNRN[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
         "Name": "ItemDesc",
         "Type": "struct MerchantContractItemDesc",
         "Size": "0x28",
@@ -77,6 +83,35 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x4_RPRSV[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      }
+    ]
+  },
+  "MerchantContract": {
+    "ClassSize": "0xc8",
+    "Attributes": [
+      {
+        "Name": "pad0x20_6ZCZP[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DeliveryRequests",
+        "Type": "TArray<struct MerchantContractDeliveryRequest>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x98_XBNXT[0x98]",
+        "Type": "char",
+        "Size": "0x98",
+        "Offset": "0x30"
       }
     ]
   },
@@ -97,17 +132,6 @@
       },
       {
         "Name": "Requests",
-        "Type": "TArray<struct MerchantContractDeliveryRequest>",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "MerchantContract": {
-    "ClassSize": "0xc0",
-    "Attributes": [
-      {
-        "Name": "DeliveryRequests",
         "Type": "TArray<struct MerchantContractDeliveryRequest>",
         "Size": "0x10",
         "Offset": "0x18"

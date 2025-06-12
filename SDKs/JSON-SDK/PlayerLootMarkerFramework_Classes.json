@@ -16,32 +16,69 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x4_6Q6J7[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
       }
     ]
   },
+  "PlayerLootMarkerServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "PlayerLootMarkerService": {
     "Super": "Actor",
-    "FullSize": "0x540",
-    "InheritedSize": "0x3c8",
+    "FullSize": "0x518",
+    "InheritedSize": "0x3a0",
     "ClassSize": "0x178",
     "Attributes": [
+      {
+        "Name": "pad0x8_AQO03[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3a0"
+      },
       {
         "Name": "Params",
         "Type": "class PlayerLootMarkerServiceParams*",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x3a8"
+      },
+      {
+        "Name": "pad0x20_42IIA[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x3b0"
       },
       {
         "Name": "ShortRangeMarkers",
         "Type": "TArray<uintptr_t>",
         "Size": "0x10",
-        "Offset": "0x3f8"
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "pad0x118_0HQUX[0x118]",
+        "Type": "char",
+        "Size": "0x118",
+        "Offset": "0x3e0"
       },
       {
         "Name": "BatchData",
         "Type": "TArray<struct PlayerLootMarkerWorldEdgeBatchData>",
         "Size": "0x10",
-        "Offset": "0x520"
+        "Offset": "0x4f8"
+      },
+      {
+        "Name": "pad0x10_FW1DN[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x508"
       }
     ]
   },

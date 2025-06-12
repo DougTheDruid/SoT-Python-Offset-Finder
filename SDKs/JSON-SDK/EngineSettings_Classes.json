@@ -1,4 +1,129 @@
 {
+  "GameNetworkManagerSettings": {
+    "Super": "Object",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "MinDynamicBandwidth",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "MaxDynamicBandwidth",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "TotalNetBandwidth",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "BadPingThreshold",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "bIsStandbyCheckingEnabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x3_JNHUW[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x39"
+      },
+      {
+        "Name": "StandbyRxCheatTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "StandbyTxCheatTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "PercentMissingForRxStandby",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "PercentMissingForTxStandby",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "PercentForBadPing",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      },
+      {
+        "Name": "JoinInProgressStandbyWaitTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "pad0x4_LBKOE[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x54"
+      }
+    ]
+  },
+  "GameSessionSettings": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MaxSpectators",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "MaxPlayers",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "bRequiresPushToTalk",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x7_67NWL[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x31"
+      }
+    ]
+  },
+  "GeneralEngineSettings": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "ConsoleSettings": {
     "Super": "Object",
     "FullSize": "0x50",
@@ -10,6 +135,12 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_K6JST[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
       },
       {
         "Name": "ManualAutoCompleteList",
@@ -68,6 +199,12 @@
         "Offset": "0x5a"
       },
       {
+        "Name": "pad0x5_O58U4[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0x5b"
+      },
+      {
         "Name": "GameInstanceClass",
         "Type": "struct StringClassReference",
         "Size": "0x10",
@@ -96,126 +233,6 @@
         "Type": "struct StringClassReference",
         "Size": "0x10",
         "Offset": "0xa0"
-      }
-    ]
-  },
-  "GameSessionSettings": {
-    "Super": "Object",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MaxSpectators",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "MaxPlayers",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "bRequiresPushToTalk",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "GameNetworkManagerSettings": {
-    "Super": "Object",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "MinDynamicBandwidth",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "MaxDynamicBandwidth",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "TotalNetBandwidth",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "BadPingThreshold",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "bIsStandbyCheckingEnabled",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "StandbyRxCheatTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "StandbyTxCheatTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "PercentMissingForRxStandby",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "PercentMissingForTxStandby",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "PercentForBadPing",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4c"
-      },
-      {
-        "Name": "JoinInProgressStandbyWaitTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x50"
-      }
-    ]
-  },
-  "HudSettings": {
-    "Super": "Object",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "bShowHUD",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "DebugDisplay",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x30"
       }
     ]
   },
@@ -296,6 +313,32 @@
         "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0xd8"
+      }
+    ]
+  },
+  "HudSettings": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "bShowHUD",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x7_IBYJZ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x29"
+      },
+      {
+        "Name": "DebugDisplay",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x30"
       }
     ]
   },

@@ -1,15 +1,56 @@
 {
+  "LinkEndpointIdUtilities": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "LinkEndpointInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EndPlayHandler": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_C2G32[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "LinkerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "LinkerComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x1a0",
-    "InheritedSize": "0xc8",
+    "FullSize": "0x190",
+    "InheritedSize": "0xb8",
     "ClassSize": "0xd8",
     "Attributes": [
+      {
+        "Name": "pad0xc8_S4QTM[0xc8]",
+        "Type": "char",
+        "Size": "0xc8",
+        "Offset": "0xb8"
+      },
       {
         "Name": "EndPlayHandlers",
         "Type": "TArray<class EndPlayHandler*>",
         "Size": "0x10",
-        "Offset": "0x190"
+        "Offset": "0x180"
       }
     ]
   },

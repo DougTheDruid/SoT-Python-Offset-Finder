@@ -11,19 +11,25 @@
     ]
   },
   "StatusAudioChangedEvent": {
-    "ClassSize": "0x20",
+    "ClassSize": "0x28",
     "Attributes": [
       {
         "Name": "StatusApplied",
         "Type": "struct Status",
-        "Size": "0x18",
+        "Size": "0x20",
         "Offset": "0x0"
       },
       {
         "Name": "IsActive",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x18"
+        "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x7_HEMMN[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x21"
       }
     ]
   },

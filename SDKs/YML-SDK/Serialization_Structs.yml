@@ -14,10 +14,18 @@ StructSerializerArrayTestStruct:
     Offset: '0x14'
     Size: '0x4'
     Type: int
+  - Name: pad0x8_QGYF2[0x8]
+    Offset: '0x18'
+    Size: '0x8'
+    Type: char
   - Name: StaticFloatArray
     Offset: '0x20'
     Size: '0x4'
     Type: float
+  - Name: pad0xc_JIFKA[0xc]
+    Offset: '0x24'
+    Size: '0xc'
+    Type: char
   - Name: VectorArray
     Offset: '0x30'
     Size: '0x10'
@@ -33,10 +41,14 @@ StructSerializerBooleanTestStruct:
     Offset: '0x1'
     Size: '0x1'
     Type: bool
-  - Name: Bitfield
+  - Name: pad0x2_VPRDR[0x2]
+    Offset: '0x2'
+    Size: '0x2'
+    Type: char
+  - Name: pad0x4_7FXJF[0x4]
     Offset: '0x4'
     Size: '0x4'
-    Type: uint32
+    Type: char
   ClassSize: '0x8'
 StructSerializerBuiltinTestStruct:
   Attributes:
@@ -63,42 +75,30 @@ StructSerializerBuiltinTestStruct:
   ClassSize: '0x40'
 StructSerializerNumericTestStruct:
   Attributes:
-  - Name: Int8
+  - Name: pad0x4_UMEKC[0x4]
     Offset: '0x0'
-    Size: '0x1'
-    Type: int8
-  - Name: Int16
-    Offset: '0x2'
-    Size: '0x2'
-    Type: int16
+    Size: '0x4'
+    Type: char
   - Name: Int32
     Offset: '0x4'
     Size: '0x4'
     Type: int
-  - Name: Int64
-    Offset: '0x8'
-    Size: '0x8'
-    Type: int64
   - Name: UInt8
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: UInt16
-    Offset: '0x12'
-    Size: '0x2'
-    Type: uint16
-  - Name: UInt32
-    Offset: '0x14'
-    Size: '0x4'
-    Type: uint32
-  - Name: UInt64
-    Offset: '0x18'
-    Size: '0x8'
-    Type: uint64
+  - Name: pad0x1_X6EW1[0x1]
+    Offset: '0x11'
+    Size: '0x1'
+    Type: char
   - Name: Float
     Offset: '0x20'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_REHVR[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   - Name: Double
     Offset: '0x28'
     Size: '0x8'

@@ -2,14 +2,24 @@
 # https://github.com/DougTheDruid
 AIHomeComponent:
   Attributes:
+  - Name: pad0x8_LJCWN[0x8]
+    Offset: '0xb8'
+    Size: '0x8'
+    Type: char
   - Name: HomeActor
-    Offset: '0xd0'
+    Offset: '0xc0'
     Size: '0x8'
     Type: class Actor*
   ClassSize: '0x10'
-  FullSize: '0xd8'
-  InheritedSize: '0xc8'
+  FullSize: '0xc8'
+  InheritedSize: '0xb8'
   Super: ActorComponent
+AlwaysEvaluatesTrueAIGoal:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x40'
+  InheritedSize: '0x40'
+  Super: AIGoal
 BTService_SetBestActionSpotNearTarget:
   Attributes:
   - Name: TargetKey
@@ -24,6 +34,10 @@ BTService_SetBestActionSpotNearTarget:
     Offset: '0xc0'
     Size: '0x34'
     Type: struct BestActionSpotSelectionCriteria
+  - Name: pad0x1c_AYLSE[0x1c]
+    Offset: '0xf4'
+    Size: '0x1c'
+    Type: char
   ClassSize: '0xa0'
   FullSize: '0x110'
   InheritedSize: '0x70'
@@ -38,10 +52,10 @@ WhileActionSpotAvailableForPatrolAIGoal:
     Offset: '0x44'
     Size: '0x4'
     Type: float
-  - Name: TargetActionSpotInterface
+  - Name: pad0x30_10PSB[0x30]
     Offset: '0x48'
-    Size: '0x10'
-    Type: interface
+    Size: '0x30'
+    Type: char
   ClassSize: '0x38'
   FullSize: '0x78'
   InheritedSize: '0x40'
@@ -74,12 +88,22 @@ WhileCanBeInteractedWithAndPlayerIsNearbyAIGoal:
     Offset: '0x68'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_YM4OB[0x7]
+    Offset: '0x69'
+    Size: '0x7'
+    Type: char
   - Name: TargetPlayerPawn
     Offset: '0x70'
     Size: '0x8'
     Type: class Pawn*
   ClassSize: '0x38'
   FullSize: '0x78'
+  InheritedSize: '0x40'
+  Super: AIGoal
+WhileHomeSetAIGoal:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x40'
   InheritedSize: '0x40'
   Super: AIGoal
 WhilePlayerWithinAreaAIGoal:
@@ -100,6 +124,10 @@ WhilePlayerWithinAreaAIGoal:
     Offset: '0x68'
     Size: '0x8'
     Type: class Pawn*
+  - Name: pad0x80_AI9JM[0x80]
+    Offset: '0x70'
+    Size: '0x80'
+    Type: char
   ClassSize: '0xb0'
   FullSize: '0xf0'
   InheritedSize: '0x40'

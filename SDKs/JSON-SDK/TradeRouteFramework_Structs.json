@@ -1,4 +1,15 @@
 {
+  "QuestVariableTradeRouteData": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_KY1RC[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "TradeRouteMapping": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -9,10 +20,22 @@
         "Offset": "0x0"
       },
       {
+        "Name": "pad0x3_K0FHL[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
         "Name": "StartIsland",
         "Type": "struct IslandSelectionType",
         "Size": "0x8",
         "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x4_R0H4P[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
       },
       {
         "Name": "DifficultyBand",
@@ -25,6 +48,17 @@
         "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x18"
+      }
+    ]
+  },
+  "TradeRouteMappingFilterQuestVariable": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_BYJLH[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
       }
     ]
   },

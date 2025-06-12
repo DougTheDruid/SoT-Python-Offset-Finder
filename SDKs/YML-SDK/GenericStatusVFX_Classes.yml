@@ -2,46 +2,62 @@
 # https://github.com/DougTheDruid
 GenericStatusVFXComponent:
   Attributes:
+  - Name: pad0x8_QZJ9V[0x8]
+    Offset: '0xb8'
+    Size: '0x8'
+    Type: char
   - Name: VFXComponent
-    Offset: '0xd0'
+    Offset: '0xc0'
     Size: '0x8'
     Type: class ParticleSystemComponent*
   - Name: CachedWorld
-    Offset: '0xd8'
+    Offset: '0xc8'
     Size: '0x8'
     Type: class World*
+  - Name: pad0x20_46X9G[0x20]
+    Offset: '0xd0'
+    Size: '0x20'
+    Type: char
   - Name: VFXDataAsset
-    Offset: '0x100'
+    Offset: '0xf0'
     Size: '0x8'
     Type: class GenericStatusVFXDataAsset*
+  - Name: pad0x18_JMON0[0x18]
+    Offset: '0xf8'
+    Size: '0x18'
+    Type: char
   - Name: ContainsVFXSource
-    Offset: '0x120'
+    Offset: '0x110'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_2WRBT[0x7]
+    Offset: '0x111'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x60'
-  FullSize: '0x128'
-  InheritedSize: '0xc8'
+  FullSize: '0x118'
+  InheritedSize: '0xb8'
   Super: ActorComponent
 GenericStatusVFXDataAsset:
   Attributes:
   - Name: VFXStatus
     Offset: '0x28'
-    Size: '0x18'
+    Size: '0x20'
     Type: struct Status
   - Name: VFXSystem
-    Offset: '0x40'
+    Offset: '0x48'
     Size: '0x8'
     Type: class ParticleSystem*
   - Name: VFXFalloffDuration
-    Offset: '0x48'
+    Offset: '0x50'
     Size: '0x4'
     Type: float
   - Name: VFXFalloffMultiplier
-    Offset: '0x4c'
+    Offset: '0x54'
     Size: '0x4'
     Type: float
   - Name: VfxSocketName
-    Offset: '0x50'
+    Offset: '0x58'
     Size: '0x8'
     Type: struct FName
   - Name: SocketRelativeOffset
@@ -52,13 +68,19 @@ GenericStatusVFXDataAsset:
   FullSize: '0x90'
   InheritedSize: '0x28'
   Super: DataAsset
+GenericStatusVFXInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 GenericStatusVFXResponse:
   Attributes:
   - Name: VFXDataAsset
-    Offset: '0x30'
+    Offset: '0x38'
     Size: '0x8'
     Type: class GenericStatusVFXDataAsset*
   ClassSize: '0x8'
-  FullSize: '0x38'
-  InheritedSize: '0x30'
+  FullSize: '0x40'
+  InheritedSize: '0x38'
   Super: StatusResponse

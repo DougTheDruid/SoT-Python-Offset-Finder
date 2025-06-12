@@ -2,11 +2,33 @@
 # https://github.com/DougTheDruid
 DebugTeleportationDestinationService:
   Attributes:
+  - Name: pad0x18_3462L[0x18]
+    Offset: '0x3a0'
+    Size: '0x18'
+    Type: char
   - Name: DebugTeleportationRegistry
-    Offset: '0x3e0'
+    Offset: '0x3b8'
     Size: '0x10'
     Type: TArray<struct DebugTeleportDestinationEntry>
   ClassSize: '0x28'
-  FullSize: '0x3f0'
-  InheritedSize: '0x3c8'
+  FullSize: '0x3c8'
+  InheritedSize: '0x3a0'
   Super: Actor
+DebugTeleportationLookupInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+DebugTeleportationPresentationInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+DebugTeleportationRegistrationInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

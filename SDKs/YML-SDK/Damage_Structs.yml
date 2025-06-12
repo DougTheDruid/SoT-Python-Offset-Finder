@@ -2,6 +2,10 @@
 # https://github.com/DougTheDruid
 TriggerPlayerControllerHitNotificationNetworkEvent:
   Attributes:
+  - Name: pad0x18_KS1SW[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: IsKillingHit
     Offset: '0x18'
     Size: '0x1'
@@ -10,8 +14,16 @@ TriggerPlayerControllerHitNotificationNetworkEvent:
     Offset: '0x19'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2_C7MRA[0x2]
+    Offset: '0x1a'
+    Size: '0x2'
+    Type: char
   - Name: OptionalClientAttackId
     Offset: '0x1c'
     Size: '0x10'
     Type: struct Guid
+  - Name: pad0x4_6VC49[0x4]
+    Offset: '0x2c'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x30'

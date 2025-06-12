@@ -9,10 +9,18 @@ ActivateKillStreakEvent:
   ClassSize: '0x1'
 ActivateKillStreakNetworkEvent:
   Attributes:
+  - Name: pad0x18_MTDP6[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: FactionId
     Offset: '0x18'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_XPMNE[0x7]
+    Offset: '0x19'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x20'
 CinematicFactionEvent:
   Attributes:
@@ -25,6 +33,27 @@ CinematicFactionEvent:
     Size: '0x80'
     Type: struct CinematicQuestEvent
   ClassSize: '0x88'
+DeactivateKillStreakEvent:
+  Attributes:
+  - Name: pad0x1_GGKHJ[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
+DeactivateKillStreakNetworkEvent:
+  Attributes:
+  - Name: pad0x18_TYSF9[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
+  ClassSize: '0x18'
+EventLocalPlayerApproachedHourglass:
+  Attributes:
+  - Name: pad0x1_GXOD8[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
 FactionBlockedTaleVoteAdded:
   Attributes:
   - Name: Voter
@@ -68,6 +97,10 @@ FactionDisplayInfo:
   ClassSize: '0xa0'
 FactionPopupEvent:
   Attributes:
+  - Name: pad0x18_98ZPE[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: PopUpDesc
     Offset: '0x18'
     Size: '0x8'
@@ -79,13 +112,25 @@ FactionRequest:
     Offset: '0x0'
     Size: '0x8'
     Type: class UClass*
+  - Name: pad0x18_5MIDI[0x18]
+    Offset: '0x8'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x20'
 FactionShipSunkNetworkEvent:
   Attributes:
+  - Name: pad0x18_LIVGO[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
   - Name: OpponentFaction
     Offset: '0x18'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_QXP5J[0x3]
+    Offset: '0x19'
+    Size: '0x3'
+    Type: char
   - Name: OpponentCrewId
     Offset: '0x1c'
     Size: '0x10'
@@ -110,6 +155,10 @@ FactionShipSunkNetworkEvent:
     Offset: '0x3c'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_XRZYG[0x3]
+    Offset: '0x3d'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x40'
 FactionShipSunkUIEvent:
   Attributes:
@@ -117,6 +166,10 @@ FactionShipSunkUIEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_CLBNJ[0x7]
+    Offset: '0x1'
+    Size: '0x7'
+    Type: char
   - Name: ShipName
     Offset: '0x8'
     Size: '0x10'
@@ -140,6 +193,10 @@ FactionStreakData:
     Offset: '0x8'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_LIJ4O[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x10'
 FactionVoteAdded:
   Attributes:
@@ -155,7 +212,18 @@ FactionVoteAdded:
     Offset: '0x18'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_M6E1L[0x7]
+    Offset: '0x19'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x20'
+KillStreakHideEvent:
+  Attributes:
+  - Name: pad0x1_XK0GK[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
 KillStreakRibbonEvent:
   Attributes:
   - Name: HourGlassPreValue
@@ -171,16 +239,31 @@ KillStreakRibbonEvent:
     Size: '0x4'
     Type: int
   ClassSize: '0xc'
+KillStreakShowEvent:
+  Attributes:
+  - Name: pad0x1_K13SX[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
 LootLevelReward:
   Attributes:
   - Name: LootLevel
     Offset: '0x0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_FLUYM[0x3]
+    Offset: '0x1'
+    Size: '0x3'
+    Type: char
   - Name: RewardId
     Offset: '0x4'
     Size: '0x8'
     Type: struct RewardId
+  - Name: pad0x4_IBMHN[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   - Name: LootLevelPopUpMessageDesc
     Offset: '0x10'
     Size: '0x10'
@@ -189,6 +272,10 @@ LootLevelReward:
     Offset: '0x20'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_BSY4U[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x28'
 StreakCompanyMaterials:
   Attributes:
@@ -222,6 +309,10 @@ StreakMaterial:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_CK9ZF[0x7]
+    Offset: '0x9'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x10'
 StreakMaterialValue:
   Attributes:
@@ -244,6 +335,10 @@ StreakMesh:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_KEWB2[0x7]
+    Offset: '0x9'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x10'
 UpdateKillStreakEvent:
   Attributes:

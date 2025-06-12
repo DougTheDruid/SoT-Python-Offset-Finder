@@ -6,14 +6,14 @@ ActorLocationPair:
     Offset: '0x0'
     Size: '0x10'
     Type: struct StringAssetReference
-  - Name: ActorToSpawn
-    Offset: '0x10'
-    Size: '0x20'
-    Type: assetclass
   - Name: AttachToWorld
     Offset: '0x30'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_EGWWU[0x7]
+    Offset: '0x31'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x38'
 DuplicateStoriesReceivedTelemetryEvent:
   Attributes:
@@ -33,12 +33,34 @@ InstancedLayerLocation:
     Size: '0x8'
     Type: class LayerActorsDataAsset*
   ClassSize: '0x18'
+IsAllStoryActiveCondition:
+  Attributes:
+  - Name: pad0x48_NPX7V[0x48]
+    Offset: '0x0'
+    Size: '0x48'
+    Type: char
+  ClassSize: '0x48'
+IsAnyStoryActiveCondition:
+  Attributes:
+  - Name: pad0x48_A8JHC[0x48]
+    Offset: '0x0'
+    Size: '0x48'
+    Type: char
+  ClassSize: '0x48'
 IsStoryActiveConditionBase:
   Attributes:
+  - Name: pad0x28_SL8VI[0x28]
+    Offset: '0x0'
+    Size: '0x28'
+    Type: char
   - Name: StoryFlags
     Offset: '0x28'
     Size: '0x10'
     Type: TArray<struct StoryFlag>
+  - Name: pad0x10_IBVGX[0x10]
+    Offset: '0x38'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x48'
 LightingZoneStoryRelatedSettings:
   Attributes:
@@ -72,14 +94,14 @@ NamedPointsGroupActorLocation:
     Offset: '0x0'
     Size: '0x8'
     Type: struct FName
-  - Name: ActorToSpawn
-    Offset: '0x8'
-    Size: '0x20'
-    Type: assetclass
   - Name: AttachToWorld
     Offset: '0x28'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_ARKBV[0x7]
+    Offset: '0x29'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x30'
 StoriesChangedTelemetryEvent:
   Attributes:
@@ -99,6 +121,10 @@ StoriesChangedTelemetryEvent:
     Offset: '0x21'
     Size: '0x1'
     Type: bool
+  - Name: pad0x6_B92YN[0x6]
+    Offset: '0x22'
+    Size: '0x6'
+    Type: char
   ClassSize: '0x28'
 StoriesRefreshRequestedTelemetryEvent:
   Attributes:
@@ -117,6 +143,10 @@ StoryClaimableResourcesList:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_S5U7V[0x7]
+    Offset: '0x9'
+    Size: '0x7'
+    Type: char
   - Name: ClaimableResources
     Offset: '0x10'
     Size: '0x10'
@@ -146,6 +176,10 @@ StoryFlagContainer:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_CIVSX[0x7]
+    Offset: '0x11'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x18'
 StoryInfo:
   Attributes:
@@ -153,14 +187,10 @@ StoryInfo:
     Offset: '0x0'
     Size: '0x8'
     Type: struct FName
-  - Name: StartTimeTicks
+  - Name: pad0x10_4T3A3[0x10]
     Offset: '0x8'
-    Size: '0x8'
-    Type: int64
-  - Name: EndTimeTicks
-    Offset: '0x10'
-    Size: '0x8'
-    Type: int64
+    Size: '0x10'
+    Type: char
   ClassSize: '0x18'
 StoryNameInfo:
   Attributes:

@@ -10,18 +10,24 @@
 class GameEventsOnDemandAvailabilityService: public Object
 {
 public:
+	char                                                         pad0xd0_QKD0D[0xd0];                               // 0x28(0xd0)
 	class World*                                                 World;                                             // 0xf8(0x8)
+	char                                                         pad0x18_TMYSK[0x18];                               // 0x100(0x18)
 };
 
 
-// Size 0x140 (Full Size[0x508] - InheritedSize[0x3c8]
+// Size 0x140 (Full Size[0x4e0] - InheritedSize[0x3a0]
 class GameEventsOnDemandLoserTunnelService: public Actor
 {
 public:
-	class World*                                                 World;                                             // 0x3d0(0x8)
-	class VoyageDescDataAsset*                                   LoserTunnelVoyageDescDataAsset;                    // 0x430(0x8)
-	TArray<struct GameEventsOnDemandLoserTunnelCrewData>         TrackedCrews;                                      // 0x488(0x10)
-	struct FName                                                 TemporaryBannerTag;                                // 0x498(0x8)
+	char                                                         pad0x8_KPTAH[0x8];                                 // 0x3a0(0x8)
+	class World*                                                 World;                                             // 0x3a8(0x8)
+	char                                                         pad0x58_FPB4S[0x58];                               // 0x3b0(0x58)
+	class VoyageDescDataAsset*                                   LoserTunnelVoyageDescDataAsset;                    // 0x408(0x8)
+	char                                                         pad0x50_XECUY[0x50];                               // 0x410(0x50)
+	TArray<struct GameEventsOnDemandLoserTunnelCrewData>         TrackedCrews;                                      // 0x460(0x10)
+	struct FName                                                 TemporaryBannerTag;                                // 0x470(0x8)
+	char                                                         pad0x68_FX605[0x68];                               // 0x478(0x68)
 };
 
 

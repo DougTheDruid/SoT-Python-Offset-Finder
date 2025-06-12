@@ -1,12 +1,68 @@
 {
+  "ObjectMessagingObjectScoper": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x50_FWRK2[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "ObjectMessagingHandle": {
     "ClassSize": "0x58",
     "Attributes": [
+      {
+        "Name": "pad0x8_J4VRY[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
       {
         "Name": "EventType",
         "Type": "class Struct*",
         "Size": "0x8",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x48_3DYRE[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EventObjectMessagingDispatcherBeingDestroyed": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_B5F0U[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ObjectMessagingDispatcherHandle": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_9BM1H[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ObjectMessagingDispatcher": {
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Name": "pad0xa0_EOJJ3[0xa0]",
+        "Type": "char",
+        "Size": "0xa0",
+        "Offset": "0x0"
       }
     ]
   },

@@ -29,18 +29,48 @@ BoneCallerPawnKillTelemetry:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_C2BBE[0x7]
+    Offset: '0x11'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x18'
+BoneCallerSpawnIdShipSizeOverride:
+  Attributes:
+  - Name: ShipSize
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: BoneCallerSpawnIdOverride
+    Offset: '0x8'
+    Size: '0x8'
+    Type: class UClass*
+  ClassSize: '0x10'
 BoneCallerUsageTelemetry:
   Attributes:
   - Name: Location
     Offset: '0x0'
     Size: '0xc'
     Type: struct Vector
+  - Name: pad0x4_HS339[0x4]
+    Offset: '0xc'
+    Size: '0x4'
+    Type: char
   - Name: Region
     Offset: '0x10'
     Size: '0x10'
     Type: struct FString
   ClassSize: '0x20'
+EventOnBoneCallerAIKilled:
+  Attributes:
+  - Name: KilledCharacter
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class Actor*
+  - Name: Killer
+    Offset: '0x8'
+    Size: '0x8'
+    Type: class Actor*
+  ClassSize: '0x10'
 EventOnBoneCallerDidKillEvent:
   Attributes:
   - Name: KilledCharacter
@@ -62,15 +92,30 @@ EventOnBoneCallerExploded:
     Offset: '0x8'
     Size: '0x8'
     Type: class Actor*
+  - Name: pad0x10_VM1ES[0x10]
+    Offset: '0x10'
+    Size: '0x10'
+    Type: char
   - Name: BoneCallerSpawnId
     Offset: '0x20'
     Size: '0x8'
     Type: class Object*
   ClassSize: '0x28'
-PlayerBoneCallerData:
+EventOnBoneCallerSpawned:
   Attributes:
-  - Name: Spawner
+  - Name: SpawnedCharacter
     Offset: '0x0'
     Size: '0x8'
-    Type: class AIFixedWavesSpawner*
+    Type: class Actor*
+  - Name: IslandWhereCharacterSpawned
+    Offset: '0x8'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x10'
+PlayerBoneCallerData:
+  Attributes:
+  - Name: pad0x20_744E8[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   ClassSize: '0x20'

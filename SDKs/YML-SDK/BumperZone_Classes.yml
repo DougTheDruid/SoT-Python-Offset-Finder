@@ -3,42 +3,58 @@
 ShipBumperZone:
   Attributes:
   - Name: UseInverseRightVector
-    Offset: '0x3c8'
+    Offset: '0x3a0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2f_4HQLF[0x2f]
+    Offset: '0x3a1'
+    Size: '0x2f'
+    Type: char
   - Name: BumperZoneComponent
-    Offset: '0x3f8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: class BoxComponent*
   - Name: DistanceRadiusComponent
-    Offset: '0x400'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: class SphereComponent*
   - Name: ApplyAngularImpulse
-    Offset: '0x408'
+    Offset: '0x3e0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_261V2[0x3]
+    Offset: '0x3e1'
+    Size: '0x3'
+    Type: char
   - Name: AngularImpulse
-    Offset: '0x40c'
+    Offset: '0x3e4'
     Size: '0x4'
     Type: float
   - Name: OverrideWheelControl
-    Offset: '0x410'
+    Offset: '0x3e8'
     Size: '0x1'
     Type: bool
   - Name: ApplyWheelTurbulence
-    Offset: '0x411'
+    Offset: '0x3e9'
     Size: '0x1'
     Type: bool
+  - Name: pad0x2_5GZWK[0x2]
+    Offset: '0x3ea'
+    Size: '0x2'
+    Type: char
   - Name: MinWheelTurbulence
-    Offset: '0x414'
+    Offset: '0x3ec'
     Size: '0x4'
     Type: float
   - Name: MaxWheelTurbulence
-    Offset: '0x418'
+    Offset: '0x3f0'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_GYVSQ[0x4]
+    Offset: '0x3f4'
+    Size: '0x4'
+    Type: char
   ClassSize: '0x58'
-  FullSize: '0x420'
-  InheritedSize: '0x3c8'
+  FullSize: '0x3f8'
+  InheritedSize: '0x3a0'
   Super: Actor

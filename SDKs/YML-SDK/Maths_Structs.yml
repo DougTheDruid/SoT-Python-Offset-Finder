@@ -25,7 +25,18 @@ FixedStepInterpCurveVector2D:
     Offset: '0x14'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_SMF2M[0x3]
+    Offset: '0x15'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x18'
+GrabBag:
+  Attributes:
+  - Name: pad0x20_VKPDV[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x20'
 InertialSmoothedFloat:
   Attributes:
   - Name: AccelerationMagnitude
@@ -70,6 +81,10 @@ Pendulum:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_T8YWO[0x3]
+    Offset: '0x9'
+    Size: '0x3'
+    Type: char
   - Name: RPM
     Offset: '0xc'
     Size: '0x4'
@@ -94,6 +109,10 @@ Pendulum:
     Offset: '0x20'
     Size: '0x4'
     Type: float
+  - Name: pad0xc_DRKCP[0xc]
+    Offset: '0x24'
+    Size: '0xc'
+    Type: char
   - Name: InterpolationAsTransform
     Offset: '0x30'
     Size: '0x30'
@@ -128,17 +147,24 @@ SpatialOffset:
     Offset: '0x4'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_FIPZP[0x3]
+    Offset: '0x5'
+    Size: '0x3'
+    Type: char
   ClassSize: '0x8'
+TimedBuffer:
+  Attributes:
+  - Name: pad0x18_BZ1C3[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
+  ClassSize: '0x18'
 WeightedProbabilityRange:
   Attributes:
-  - Name: Min
-    Offset: '0x8'
-    Size: '0x4'
-    Type: uint32
-  - Name: Max
-    Offset: '0xc'
-    Size: '0x4'
-    Type: uint32
+  - Name: pad0x10_XKKDZ[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
   - Name: Weights
     Offset: '0x10'
     Size: '0x10'
@@ -146,6 +172,10 @@ WeightedProbabilityRange:
   ClassSize: '0x20'
 WeightedProbabilityRangeOfRanges:
   Attributes:
+  - Name: pad0x20_9DTRB[0x20]
+    Offset: '0x0'
+    Size: '0x20'
+    Type: char
   - Name: SubRanges
     Offset: '0x20'
     Size: '0x10'

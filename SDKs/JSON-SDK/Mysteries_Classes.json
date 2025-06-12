@@ -15,129 +15,159 @@
   },
   "OneShotRewardableObjectBase": {
     "Super": "InteractableObject",
-    "FullSize": "0x4e0",
-    "InheritedSize": "0x460",
+    "FullSize": "0x4b8",
+    "InheritedSize": "0x438",
     "ClassSize": "0x80",
     "Attributes": [
       {
         "Name": "InteractableComponent",
         "Type": "class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x460"
+        "Offset": "0x438"
       },
       {
         "Name": "StaticMeshComponent",
         "Type": "class StaticMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x468"
+        "Offset": "0x440"
       },
       {
         "Name": "Reward",
         "Type": "struct RewardId",
         "Size": "0x8",
-        "Offset": "0x470"
+        "Offset": "0x448"
       },
       {
         "Name": "RewardEntitlement",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x478"
+        "Offset": "0x450"
       },
       {
         "Name": "InteractionHoldTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x480"
+        "Offset": "0x458"
       },
       {
         "Name": "InteractionRadius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x484"
+        "Offset": "0x45c"
       },
       {
         "Name": "DisplayName",
         "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x488"
+        "Offset": "0x460"
+      },
+      {
+        "Name": "pad0x20_7F1KB[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x498"
       }
     ]
   },
   "PopUpNotificationOnItemWieldedComponent": {
     "Super": "OnItemWieldedComponent",
-    "FullSize": "0x168",
-    "InheritedSize": "0x148",
+    "FullSize": "0x158",
+    "InheritedSize": "0x138",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "PopUpDesc",
         "Type": "class PopUpMessageDesc*",
         "Size": "0x8",
-        "Offset": "0x148"
+        "Offset": "0x138"
+      },
+      {
+        "Name": "pad0x18_TDHNS[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x140"
       }
     ]
   },
   "AbandonedNoteWeightedTextSourceComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x1a8",
-    "InheritedSize": "0xc8",
+    "FullSize": "0x198",
+    "InheritedSize": "0xb8",
     "ClassSize": "0xe0",
     "Attributes": [
       {
-        "Name": "WeightedText",
-        "Type": "assetobject",
-        "Size": "0x20",
-        "Offset": "0xe8"
+        "Name": "pad0x40_JGOKD[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0xb8"
       },
       {
         "Name": "ClueText",
         "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x108"
+        "Offset": "0xf8"
       },
       {
         "Name": "TitleText",
         "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x140"
+        "Offset": "0x130"
+      },
+      {
+        "Name": "pad0x30_ABDOM[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x168"
       }
     ]
   },
   "SirenPuzzleContext": {
     "Super": "Actor",
-    "FullSize": "0x4b8",
-    "InheritedSize": "0x3c8",
+    "FullSize": "0x490",
+    "InheritedSize": "0x3a0",
     "ClassSize": "0xf0",
     "Attributes": [
+      {
+        "Name": "pad0x8_8LO29[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3a0"
+      },
       {
         "Name": "Root",
         "Type": "class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x3d0"
+        "Offset": "0x3a8"
       },
       {
         "Name": "PuzzleLocks",
         "Type": "TArray<struct SirenPuzzleLockState>",
         "Size": "0x10",
-        "Offset": "0x3d8"
+        "Offset": "0x3b0"
       },
       {
         "Name": "UnlockCompleteReactions",
         "Type": "TArray<struct LandmarkReactionKeyFrame>",
         "Size": "0x10",
-        "Offset": "0x3e8"
+        "Offset": "0x3c0"
       },
       {
         "Name": "ResetLocksReactions",
         "Type": "TArray<struct LandmarkReactionKeyFrame>",
         "Size": "0x10",
-        "Offset": "0x3f8"
+        "Offset": "0x3d0"
       },
       {
         "Name": "LockStates",
         "Type": "TArray<char>",
         "Size": "0x10",
-        "Offset": "0x408"
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "pad0xa0_Q4NLK[0xa0]",
+        "Type": "char",
+        "Size": "0xa0",
+        "Offset": "0x3f0"
       }
     ]
   },

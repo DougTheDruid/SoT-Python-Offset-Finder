@@ -6,6 +6,10 @@ EventAffectedByExplosion:
     Offset: '0x0'
     Size: '0x8'
     Type: class UClass*
+  - Name: pad0x10_XPKXC[0x10]
+    Offset: '0x8'
+    Size: '0x10'
+    Type: char
   ClassSize: '0x18'
 EventExplosionIgnitedActor:
   Attributes:
@@ -21,14 +25,29 @@ EventExplosionOverlap:
     Size: '0x8'
     Type: class UClass*
   ClassSize: '0x8'
+EventInstigatedExplosionDamagedActors:
+  Attributes:
+  - Name: DamagedActors
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<class Actor*>
+  ClassSize: '0x10'
 EventOnExploded:
   Attributes:
   - Name: RootInstigator
     Offset: '0x0'
     Size: '0x8'
     Type: class Actor*
+  - Name: pad0x10_66V36[0x10]
+    Offset: '0x8'
+    Size: '0x10'
+    Type: char
   - Name: ImpactProjectileId
     Offset: '0x18'
     Size: '0x8'
     Type: class Object*
-  ClassSize: '0x20'
+  - Name: DirectHitActor
+    Offset: '0x20'
+    Size: '0x8'
+    Type: class Actor*
+  ClassSize: '0x28'

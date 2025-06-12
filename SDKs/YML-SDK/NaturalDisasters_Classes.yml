@@ -3,52 +3,64 @@
 AshenLordAshCloud:
   Attributes:
   - Name: CloudMesh
-    Offset: '0x3c8'
+    Offset: '0x3a0'
     Size: '0x8'
     Type: class StaticMeshComponent*
   - Name: SetupData
-    Offset: '0x3d0'
+    Offset: '0x3a8'
     Size: '0x8'
     Type: class AshenLordAshCloudSetupDataAsset*
   - Name: InnerRangeStartOffset
-    Offset: '0x3d8'
+    Offset: '0x3b0'
     Size: '0x4'
     Type: float
   - Name: OuterRangeStart
-    Offset: '0x3dc'
+    Offset: '0x3b4'
     Size: '0x4'
     Type: float
   - Name: NormalisedEngulfedRTPC
-    Offset: '0x3e0'
+    Offset: '0x3b8'
     Size: '0x8'
     Type: struct FName
   - Name: RTPCSecondsBetweenUpdates
-    Offset: '0x3e8'
+    Offset: '0x3c0'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_90F6D[0x4]
+    Offset: '0x3c4'
+    Size: '0x4'
+    Type: char
   - Name: LifeTime
-    Offset: '0x3f0'
+    Offset: '0x3c8'
     Size: '0x4'
     Type: float
   - Name: StartTime
-    Offset: '0x3f4'
+    Offset: '0x3cc'
     Size: '0x4'
     Type: float
   - Name: TimeOffset
-    Offset: '0x3f8'
+    Offset: '0x3d0'
     Size: '0x4'
     Type: float
   - Name: CloudState
-    Offset: '0x3fc'
+    Offset: '0x3d4'
     Size: '0x1'
     Type: byte
+  - Name: pad0x37_YAPVX[0x37]
+    Offset: '0x3d5'
+    Size: '0x37'
+    Type: char
   - Name: MaxRadiusMultiplier
-    Offset: '0x434'
+    Offset: '0x40c'
     Size: '0x4'
     Type: float
+  - Name: pad0x18_DPU5U[0x18]
+    Offset: '0x410'
+    Size: '0x18'
+    Type: char
   ClassSize: '0x88'
-  FullSize: '0x450'
-  InheritedSize: '0x3c8'
+  FullSize: '0x428'
+  InheritedSize: '0x3a0'
   Super: Actor
 AshenLordAshCloudSetupDataAsset:
   Attributes:
@@ -60,6 +72,10 @@ AshenLordAshCloudSetupDataAsset:
     Offset: '0x58'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_YRDG6[0x4]
+    Offset: '0x5c'
+    Size: '0x4'
+    Type: char
   - Name: AshCloudLifetime
     Offset: '0x60'
     Size: '0x30'
@@ -79,12 +95,16 @@ AshenLordAshCloudSetupDataAsset:
 AshenLordVolcano:
   Attributes:
   - Name: VolcanoSetupData
-    Offset: '0x3c8'
+    Offset: '0x3a0'
     Size: '0x8'
     Type: class AshenLordVolcanoSetupDataAsset*
+  - Name: pad0x68_OCITB[0x68]
+    Offset: '0x3a8'
+    Size: '0x68'
+    Type: char
   ClassSize: '0x70'
-  FullSize: '0x438'
-  InheritedSize: '0x3c8'
+  FullSize: '0x410'
+  InheritedSize: '0x3a0'
   Super: Actor
 AshenLordVolcanoSetupDataAsset:
   Attributes:
@@ -139,116 +159,140 @@ AshenLordVolcanoSetupDataAsset:
 AshenLordWorldEndCloud:
   Attributes:
   - Name: SelfDestructDelayOnComplete
-    Offset: '0x3c8'
+    Offset: '0x3a0'
     Size: '0x4'
     Type: float
   - Name: CloudState
-    Offset: '0x3cc'
+    Offset: '0x3a4'
     Size: '0x1'
     Type: byte
+  - Name: pad0x3_G1LVY[0x3]
+    Offset: '0x3a5'
+    Size: '0x3'
+    Type: char
   - Name: CurrentCloudAnimation
-    Offset: '0x3d0'
+    Offset: '0x3a8'
     Size: '0x8'
     Type: struct AshenLordWorldEndCloudAnimation
+  - Name: pad0x8_YHJL7[0x8]
+    Offset: '0x3b0'
+    Size: '0x8'
+    Type: char
   ClassSize: '0x18'
-  FullSize: '0x3e0'
-  InheritedSize: '0x3c8'
+  FullSize: '0x3b8'
+  InheritedSize: '0x3a0'
   Super: Actor
 DisableGeyserMechanismAction:
   Attributes:
   - Name: MechanismActionComponent
-    Offset: '0x3c8'
+    Offset: '0x3a0'
     Size: '0x8'
     Type: class MechanismActionComponent*
   - Name: GeysersToDisable
-    Offset: '0x3d0'
+    Offset: '0x3a8'
     Size: '0x10'
     Type: TArray<class Geyser*>
   ClassSize: '0x18'
-  FullSize: '0x3e0'
-  InheritedSize: '0x3c8'
+  FullSize: '0x3b8'
+  InheritedSize: '0x3a0'
   Super: Actor
 Earthquake:
   Attributes:
+  - Name: pad0x10_AVH8W[0x10]
+    Offset: '0x3a0'
+    Size: '0x10'
+    Type: char
   - Name: EarthquakeSetupData
-    Offset: '0x3d8'
+    Offset: '0x3b0'
     Size: '0x8'
     Type: class EarthquakeSetupDataAsset*
   - Name: EarthquakeSetupDataOverride
-    Offset: '0x3e0'
+    Offset: '0x3b8'
     Size: '0x8'
     Type: class EarthquakeSetupDataAsset*
   - Name: SelectedEarthquakeDataForNextQuake
-    Offset: '0x3e8'
+    Offset: '0x3c0'
     Size: '0x8'
     Type: class EarthquakeSetupDataAsset*
   - Name: StoryCustomisationData
-    Offset: '0x3f0'
+    Offset: '0x3c8'
     Size: '0x10'
     Type: TArray<struct EarthquakeStoryCustomisationData>
   - Name: AssociatedVolcano
-    Offset: '0x400'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: class Volcano*
   - Name: AssociatedGeyserManager
-    Offset: '0x408'
+    Offset: '0x3e0'
     Size: '0x8'
     Type: class GeyserManager*
   - Name: EarthquakeEffectInnerRadiusOffsetInMetres
-    Offset: '0x410'
+    Offset: '0x3e8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_II8R7[0x4]
+    Offset: '0x3ec'
+    Size: '0x4'
+    Type: char
   - Name: AudioPool
-    Offset: '0x418'
+    Offset: '0x3f0'
     Size: '0x8'
     Type: class WwiseObjectPoolWrapper*
   - Name: PlayEarthquakeLarge
-    Offset: '0x420'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: class WwiseEvent*
   - Name: StopEarthquakeLarge
-    Offset: '0x428'
+    Offset: '0x400'
     Size: '0x8'
     Type: class WwiseEvent*
   - Name: PlayEarthquakeSmall
-    Offset: '0x430'
+    Offset: '0x408'
     Size: '0x8'
     Type: class WwiseEvent*
   - Name: StopEarthquakeSmall
-    Offset: '0x438'
+    Offset: '0x410'
     Size: '0x8'
     Type: class WwiseEvent*
   - Name: EarthquakeRtpcName
-    Offset: '0x440'
+    Offset: '0x418'
     Size: '0x8'
     Type: struct FName
   - Name: EarthquakeRtpcMin
-    Offset: '0x448'
+    Offset: '0x420'
     Size: '0x4'
     Type: float
   - Name: EarthquakeRtpcMax
-    Offset: '0x44c'
+    Offset: '0x424'
     Size: '0x4'
     Type: float
   - Name: EarthquakeSizeToUseLargeAttenuation
-    Offset: '0x450'
+    Offset: '0x428'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_63QLO[0x4]
+    Offset: '0x42c'
+    Size: '0x4'
+    Type: char
   - Name: HitDetectionVolume
-    Offset: '0x458'
+    Offset: '0x430'
     Size: '0x8'
     Type: class CapsuleComponent*
   - Name: WindZone
-    Offset: '0x460'
+    Offset: '0x438'
     Size: '0x8'
     Type: class WindZoneComponent*
   - Name: EarthquakeState
-    Offset: '0x468'
+    Offset: '0x440'
     Size: '0x1'
     Type: byte
+  - Name: pad0x14f_G1I2G[0x14f]
+    Offset: '0x441'
+    Size: '0x14f'
+    Type: char
   ClassSize: '0x1f0'
-  FullSize: '0x5b8'
-  InheritedSize: '0x3c8'
+  FullSize: '0x590'
+  InheritedSize: '0x3a0'
   Super: Actor
 EarthquakeSetupDataAsset:
   Attributes:
@@ -256,6 +300,10 @@ EarthquakeSetupDataAsset:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_ZM104[0x7]
+    Offset: '0x29'
+    Size: '0x7'
+    Type: char
   - Name: WarmUpDuration
     Offset: '0x30'
     Size: '0x30'
@@ -280,6 +328,10 @@ EarthquakeSetupDataAsset:
     Offset: '0xf4'
     Size: '0x10'
     Type: struct FloatRange
+  - Name: pad0x4_1C5LR[0x4]
+    Offset: '0x104'
+    Size: '0x4'
+    Type: char
   - Name: WarmupPlayerFeedback
     Offset: '0x108'
     Size: '0x80'
@@ -304,6 +356,10 @@ EarthquakeSetupDataAsset:
     Offset: '0x24c'
     Size: '0x10'
     Type: struct FloatRange
+  - Name: pad0x4_F3JG5[0x4]
+    Offset: '0x25c'
+    Size: '0x4'
+    Type: char
   - Name: ForceToApplyToShip
     Offset: '0x260'
     Size: '0x30'
@@ -358,103 +414,137 @@ EarthquakeSetupDataAsset:
   Super: DataAsset
 Geyser:
   Attributes:
+  - Name: pad0x10_0D9RU[0x10]
+    Offset: '0x3a0'
+    Size: '0x10'
+    Type: char
   - Name: SetupData
-    Offset: '0x3d8'
+    Offset: '0x3b0'
     Size: '0x8'
     Type: class GeyserSetupDataAsset*
   - Name: GeyserSetupDataOverride
-    Offset: '0x3e0'
+    Offset: '0x3b8'
     Size: '0x8'
     Type: class GeyserSetupDataAsset*
   - Name: SelectedGeyserForNextActivation
-    Offset: '0x3e8'
+    Offset: '0x3c0'
     Size: '0x8'
     Type: class GeyserSetupDataAsset*
   - Name: StoryCustomisationData
-    Offset: '0x3f0'
+    Offset: '0x3c8'
     Size: '0x10'
     Type: TArray<struct GeyserStoryCustomisationData>
+  - Name: pad0x18_2GC14[0x18]
+    Offset: '0x3d8'
+    Size: '0x18'
+    Type: char
   - Name: GeyserState
-    Offset: '0x418'
+    Offset: '0x3f0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_T31A9[0x7]
+    Offset: '0x3f1'
+    Size: '0x7'
+    Type: char
   - Name: GeyserBuildUpPool
-    Offset: '0x420'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: class WwiseObjectPoolWrapper*
   - Name: GeyserBlowPool
-    Offset: '0x428'
+    Offset: '0x400'
     Size: '0x8'
     Type: class WwiseObjectPoolWrapper*
   - Name: StartActiveAudioLoopEvent
-    Offset: '0x430'
+    Offset: '0x408'
     Size: '0x8'
     Type: class WwiseEvent*
   - Name: StopActiveAudioLoopEvent
-    Offset: '0x438'
+    Offset: '0x410'
     Size: '0x8'
     Type: class WwiseEvent*
   - Name: PlayEruptingAudioEvent
-    Offset: '0x440'
+    Offset: '0x418'
     Size: '0x8'
     Type: class WwiseEvent*
   - Name: ExplosionComponent
-    Offset: '0x448'
+    Offset: '0x420'
     Size: '0x8'
     Type: class ExplosionComponent*
   - Name: ActiveParticlesComponent
-    Offset: '0x450'
+    Offset: '0x428'
     Size: '0x8'
     Type: class ParticleSystemComponent*
   - Name: EruptingParticlesComponent
-    Offset: '0x458'
+    Offset: '0x430'
     Size: '0x8'
     Type: class ParticleSystemComponent*
   - Name: HitTestTraceChannel
-    Offset: '0x460'
+    Offset: '0x438'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_GOPYZ[0x7]
+    Offset: '0x439'
+    Size: '0x7'
+    Type: char
   - Name: GeyserHoleClass
-    Offset: '0x468'
+    Offset: '0x440'
     Size: '0x8'
     Type: class UClass*
   - Name: GeyserHole
-    Offset: '0x470'
+    Offset: '0x448'
     Size: '0x8'
     Type: class Hole*
+  - Name: pad0x40_E90RJ[0x40]
+    Offset: '0x450'
+    Size: '0x40'
+    Type: char
   ClassSize: '0xf0'
-  FullSize: '0x4b8'
-  InheritedSize: '0x3c8'
+  FullSize: '0x490'
+  InheritedSize: '0x3a0'
   Super: Actor
+GeyserItemSpawnComponent:
+  Attributes:
+  - Name: pad0x10_0EFBI[0x10]
+    Offset: '0x480'
+    Size: '0x10'
+    Type: char
+  ClassSize: '0x10'
+  FullSize: '0x490'
+  InheritedSize: '0x480'
+  Super: ItemSpawnComponent
 GeyserManager:
   Attributes:
   - Name: GeyserManagerSetupData
-    Offset: '0x3c8'
+    Offset: '0x3a0'
     Size: '0x8'
     Type: class GeyserManagerSetupDataAsset*
   - Name: GeyserManagerSetupDataOverride
-    Offset: '0x3d0'
+    Offset: '0x3a8'
     Size: '0x8'
     Type: class GeyserManagerSetupDataAsset*
   - Name: SelectedGeyserManagerForNextActivation
-    Offset: '0x3d8'
+    Offset: '0x3b0'
     Size: '0x8'
     Type: class GeyserManagerSetupDataAsset*
   - Name: StoryCustomisationData
-    Offset: '0x3e0'
+    Offset: '0x3b8'
     Size: '0x10'
     Type: TArray<struct GeyserManagerStoryCustomisationData>
   - Name: Root
-    Offset: '0x3f0'
+    Offset: '0x3c8'
     Size: '0x8'
     Type: class SceneComponent*
   - Name: State
-    Offset: '0x3f8'
+    Offset: '0x3d0'
     Size: '0x1'
     Type: byte
+  - Name: pad0x4f_LL7Y1[0x4f]
+    Offset: '0x3d1'
+    Size: '0x4f'
+    Type: char
   ClassSize: '0x80'
-  FullSize: '0x448'
-  InheritedSize: '0x3c8'
+  FullSize: '0x420'
+  InheritedSize: '0x3a0'
   Super: Actor
 GeyserManagerSetupDataAsset:
   Attributes:
@@ -462,6 +552,10 @@ GeyserManagerSetupDataAsset:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_J0O18[0x7]
+    Offset: '0x29'
+    Size: '0x7'
+    Type: char
   - Name: DormantDuration
     Offset: '0x30'
     Size: '0x30'
@@ -486,6 +580,10 @@ GeyserManagerSetupDataAsset:
     Offset: '0xc2'
     Size: '0x1'
     Type: bool
+  - Name: pad0x1_K09CV[0x1]
+    Offset: '0xc3'
+    Size: '0x1'
+    Type: char
   - Name: MinDistanceFromPlayerInMetres
     Offset: '0xc4'
     Size: '0x4'
@@ -494,6 +592,10 @@ GeyserManagerSetupDataAsset:
     Offset: '0xc8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_Q17PV[0x4]
+    Offset: '0xcc'
+    Size: '0x4'
+    Type: char
   - Name: GeyserToSpawn
     Offset: '0xd0'
     Size: '0x8'
@@ -540,6 +642,10 @@ GeyserSetupDataAsset:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_SPKRU[0x7]
+    Offset: '0x29'
+    Size: '0x7'
+    Type: char
   - Name: DormantDuration
     Offset: '0x30'
     Size: '0x30'
@@ -560,6 +666,10 @@ GeyserSetupDataAsset:
     Offset: '0xe0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x3_V0UE9[0x3]
+    Offset: '0xe1'
+    Size: '0x3'
+    Type: char
   - Name: DestroyAfterDeactivationDelay
     Offset: '0xe4'
     Size: '0x4'
@@ -568,101 +678,129 @@ GeyserSetupDataAsset:
   FullSize: '0xe8'
   InheritedSize: '0x28'
   Super: DataAsset
+LavaStatus:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x30'
+  InheritedSize: '0x30'
+  Super: StatusBase
 LavaZone:
   Attributes:
   - Name: TimeBetweenActivations
-    Offset: '0x3c8'
+    Offset: '0x3a0'
     Size: '0x30'
     Type: struct WeightedProbabilityRangeOfRanges
   - Name: ActiveDuration
-    Offset: '0x3f8'
+    Offset: '0x3d0'
     Size: '0x30'
     Type: struct WeightedProbabilityRangeOfRanges
   - Name: StoryFlag
-    Offset: '0x428'
+    Offset: '0x400'
     Size: '0x8'
     Type: struct StoryFlag
   - Name: LavaMaterial
-    Offset: '0x430'
+    Offset: '0x408'
     Size: '0x8'
     Type: class PhysicalMaterial*
   - Name: ActorsInZone
-    Offset: '0x438'
+    Offset: '0x410'
     Size: '0x10'
     Type: TArray<class Actor*>
   - Name: Active
-    Offset: '0x448'
+    Offset: '0x420'
     Size: '0x1'
     Type: bool
   - Name: InitializeFromGlobalState
-    Offset: '0x449'
+    Offset: '0x421'
     Size: '0x1'
     Type: bool
   - Name: SelfActivating
-    Offset: '0x44a'
+    Offset: '0x422'
     Size: '0x1'
     Type: bool
-  - Name: MaterialZone
-    Offset: '0x450'
-    Size: '0x10'
-    Type: interface
-  - Name: LocalPlayerDispatcher
-    Offset: '0x460'
-    Size: '0x10'
-    Type: interface
+  - Name: pad0x5_XX6C3[0x5]
+    Offset: '0x423'
+    Size: '0x5'
+    Type: char
+  - Name: pad0x20_W0RFZ[0x20]
+    Offset: '0x428'
+    Size: '0x20'
+    Type: char
   ClassSize: '0xa8'
-  FullSize: '0x470'
-  InheritedSize: '0x3c8'
+  FullSize: '0x448'
+  InheritedSize: '0x3a0'
   Super: Actor
 MechanismGeyser:
   Attributes:
   - Name: GeyserStateWhenMechanismIsInactive
-    Offset: '0x4b8'
+    Offset: '0x490'
     Size: '0x1'
     Type: byte
+  - Name: pad0x7_K37KS[0x7]
+    Offset: '0x491'
+    Size: '0x7'
+    Type: char
   - Name: MechanismActionComponent
-    Offset: '0x4c0'
+    Offset: '0x498'
     Size: '0x8'
     Type: class MechanismActionComponent*
   ClassSize: '0x10'
-  FullSize: '0x4c8'
-  InheritedSize: '0x4b8'
+  FullSize: '0x4a0'
+  InheritedSize: '0x490'
   Super: Geyser
+NaturalDisasterRegistryInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 SeatStat_IslandVolcanoActive:
   Attributes:
   - Name: VolcanoIslandName
     Offset: '0x48'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x70_22FO1[0x70]
+    Offset: '0x50'
+    Size: '0x70'
+    Type: char
   ClassSize: '0x78'
   FullSize: '0xc0'
   InheritedSize: '0x48'
   Super: SeatStat
 SuperheatedWater:
   Attributes:
+  - Name: pad0x10_3RCNJ[0x10]
+    Offset: '0x440'
+    Size: '0x10'
+    Type: char
   - Name: SetupData
-    Offset: '0x478'
+    Offset: '0x450'
     Size: '0x8'
     Type: class SuperheatedWaterSetupDataAsset*
   - Name: HitDetectionVolume
-    Offset: '0x480'
+    Offset: '0x458'
     Size: '0x8'
     Type: class CapsuleComponent*
   - Name: FakeUnderwaterLocationsMinDistanceInMetres
-    Offset: '0x488'
+    Offset: '0x460'
     Size: '0x4'
     Type: float
   - Name: FakeUnderwaterLocationsDistanceBetweenPointsInMetres
-    Offset: '0x48c'
+    Offset: '0x464'
     Size: '0x4'
     Type: float
   - Name: PlayersInZone
-    Offset: '0x490'
+    Offset: '0x468'
     Size: '0x10'
     Type: TArray<uintptr_t>
+  - Name: pad0xd0_VAMER[0xd0]
+    Offset: '0x478'
+    Size: '0xd0'
+    Type: char
   ClassSize: '0x108'
-  FullSize: '0x570'
-  InheritedSize: '0x468'
+  FullSize: '0x548'
+  InheritedSize: '0x440'
   Super: Murk
 SuperheatedWaterSetupDataAsset:
   Attributes:
@@ -682,6 +820,10 @@ SuperheatedWaterSetupDataAsset:
     Offset: '0x60'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_MUGJX[0x4]
+    Offset: '0x64'
+    Size: '0x4'
+    Type: char
   - Name: LargeSurfaceEffects
     Offset: '0x68'
     Size: '0x10'
@@ -720,124 +862,166 @@ SuperheatedWaterSetupDataAsset:
   Super: DataAsset
 Volcano:
   Attributes:
+  - Name: pad0x18_QA8CQ[0x18]
+    Offset: '0x3a0'
+    Size: '0x18'
+    Type: char
   - Name: VolcanoSetupDataOverride
-    Offset: '0x3e0'
+    Offset: '0x3b8'
     Size: '0x8'
     Type: class VolcanoSetupDataAsset*
   - Name: SelectedVolcanoDataForNextEruption
-    Offset: '0x3e8'
+    Offset: '0x3c0'
     Size: '0x8'
     Type: class VolcanoSetupDataAsset*
   - Name: StoryCustomisationData
-    Offset: '0x3f0'
+    Offset: '0x3c8'
     Size: '0x10'
     Type: TArray<struct VolcanoStoryCustomisationData>
   - Name: HitDetectionVolume
-    Offset: '0x400'
+    Offset: '0x3d8'
     Size: '0x8'
     Type: class CapsuleComponent*
   - Name: UseDormantDuration
-    Offset: '0x408'
+    Offset: '0x3e0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_AIVC5[0x7]
+    Offset: '0x3e1'
+    Size: '0x7'
+    Type: char
   - Name: VolcanoSetupData
-    Offset: '0x410'
+    Offset: '0x3e8'
     Size: '0x8'
     Type: class VolcanoSetupDataAsset*
   - Name: AssociatedSuperheatedWater
-    Offset: '0x418'
+    Offset: '0x3f0'
     Size: '0x8'
     Type: class Murk*
   - Name: AssociatedLavaZone
-    Offset: '0x420'
+    Offset: '0x3f8'
     Size: '0x8'
     Type: class LavaZone*
   - Name: InnerTargetRadiusInMetres
-    Offset: '0x428'
+    Offset: '0x400'
     Size: '0x4'
     Type: float
   - Name: OuterTargetRadiusInMetres
-    Offset: '0x42c'
+    Offset: '0x404'
     Size: '0x4'
     Type: float
   - Name: NearbyPlayerRangeToFireProjectilesInMetres
-    Offset: '0x430'
+    Offset: '0x408'
     Size: '0x4'
     Type: float
   - Name: RandomShipPositionScale
-    Offset: '0x434'
+    Offset: '0x40c'
     Size: '0x4'
     Type: float
   - Name: WarmingUpEmitter
-    Offset: '0x438'
+    Offset: '0x410'
     Size: '0x8'
     Type: class ParticleSystemComponent*
   - Name: EruptingEmitter
-    Offset: '0x440'
+    Offset: '0x418'
     Size: '0x8'
     Type: class ParticleSystemComponent*
   - Name: BlendedLightingZoneComponent
-    Offset: '0x448'
+    Offset: '0x420'
     Size: '0x8'
     Type: class BlendedLightingZoneComponent*
   - Name: BlendedAtmosphericPressureZoneComponent
-    Offset: '0x450'
+    Offset: '0x428'
     Size: '0x8'
     Type: class BlendedAtmosphericPressureZoneComponent*
   - Name: BlendedPostProcessingRainZoneComponent
-    Offset: '0x458'
+    Offset: '0x430'
     Size: '0x8'
     Type: class BlendedPostProcessingRainZoneComponent*
   - Name: ProjectileLaunchOffset
-    Offset: '0x460'
+    Offset: '0x438'
     Size: '0xc'
     Type: struct Vector
+  - Name: pad0x4_OUML3[0x4]
+    Offset: '0x444'
+    Size: '0x4'
+    Type: char
   - Name: AudioPool
-    Offset: '0x470'
+    Offset: '0x448'
     Size: '0x8'
     Type: class WwiseObjectPoolWrapper*
   - Name: WarmupAudioPlayEvent
-    Offset: '0x478'
+    Offset: '0x450'
     Size: '0x8'
     Type: class WwiseEvent*
   - Name: WarmupAudioStopEvent
-    Offset: '0x480'
+    Offset: '0x458'
     Size: '0x8'
     Type: class WwiseEvent*
   - Name: EruptingAudioPlayEvent
-    Offset: '0x488'
+    Offset: '0x460'
     Size: '0x8'
     Type: class WwiseEvent*
   - Name: EruptingAudioStopEvent
-    Offset: '0x490'
+    Offset: '0x468'
     Size: '0x8'
     Type: class WwiseEvent*
   - Name: InstantKillZone
-    Offset: '0x498'
+    Offset: '0x470'
     Size: '0x8'
     Type: class CapsuleComponent*
   - Name: InstantKillZoneTestInterval
-    Offset: '0x4a0'
+    Offset: '0x478'
     Size: '0x4'
     Type: float
   - Name: StateData
-    Offset: '0x4a4'
+    Offset: '0x47c'
     Size: '0xc'
     Type: struct VolcanoStateData
   - Name: AssociatedIslandName
-    Offset: '0x4b0'
+    Offset: '0x488'
     Size: '0x8'
     Type: struct FName
+  - Name: pad0x138_ZMVLX[0x138]
+    Offset: '0x490'
+    Size: '0x138'
+    Type: char
   ClassSize: '0x228'
-  FullSize: '0x5f0'
-  InheritedSize: '0x3c8'
+  FullSize: '0x5c8'
+  InheritedSize: '0x3a0'
   Super: Actor
+VolcanoInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+VolcanoService:
+  Attributes:
+  - Name: pad0x58_XLC7E[0x58]
+    Offset: '0x28'
+    Size: '0x58'
+    Type: char
+  ClassSize: '0x58'
+  FullSize: '0x80'
+  InheritedSize: '0x28'
+  Super: Object
+VolcanoServiceInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
 VolcanoSetupDataAsset:
   Attributes:
   - Name: IsEnabled
     Offset: '0x28'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_IAXMG[0x7]
+    Offset: '0x29'
+    Size: '0x7'
+    Type: char
   - Name: WarmUpDuration
     Offset: '0x30'
     Size: '0x30'
@@ -854,6 +1038,10 @@ VolcanoSetupDataAsset:
     Offset: '0xc0'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_2HYM1[0x4]
+    Offset: '0xc4'
+    Size: '0x4'
+    Type: char
   - Name: GroundAndWaterStayHotDurationAfterVolcanoFinishesDuration
     Offset: '0xc8'
     Size: '0x30'
@@ -878,6 +1066,10 @@ VolcanoSetupDataAsset:
     Offset: '0x160'
     Size: '0x4'
     Type: int
+  - Name: pad0x4_CX8YH[0x4]
+    Offset: '0x164'
+    Size: '0x4'
+    Type: char
   - Name: ChanceToTargetPlayers
     Offset: '0x168'
     Size: '0x58'
@@ -946,6 +1138,10 @@ VolcanoSetupDataAsset:
     Offset: '0x3b8'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_IFGTS[0x4]
+    Offset: '0x3bc'
+    Size: '0x4'
+    Type: char
   - Name: LocalMiniProjectilesSpawnAngleRange
     Offset: '0x3c0'
     Size: '0x30'
@@ -966,6 +1162,10 @@ VolcanoSetupDataAsset:
     Offset: '0x428'
     Size: '0x4'
     Type: float
+  - Name: pad0x4_458IN[0x4]
+    Offset: '0x42c'
+    Size: '0x4'
+    Type: char
   - Name: LocalEmbers
     Offset: '0x430'
     Size: '0x10'

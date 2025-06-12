@@ -1,5 +1,5 @@
 {
-  "VideoPlaybackStopEvent": {
+  "VideoPlaybackStartEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
@@ -10,7 +10,24 @@
       }
     ]
   },
-  "VideoPlaybackStartEvent": {
+  "VideoPlaybackLoadEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "MediaTextureName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "VideoUri",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "VideoPlaybackStopEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
@@ -35,6 +52,35 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_9RVZF[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      }
+    ]
+  },
+  "VideoSubtitleEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "MediaTextureName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SubtitleString",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "SubtitleDuration",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x20"
       }
     ]
   },
@@ -66,34 +112,10 @@
         "Offset": "0x20"
       },
       {
-        "Name": "TimestampWhenEnded",
-        "Type": "uint32",
-        "Size": "0x4",
+        "Name": "pad0x18_3KCFZ[0x18]",
+        "Type": "char",
+        "Size": "0x18",
         "Offset": "0x28"
-      },
-      {
-        "Name": "TotalMediaLength",
-        "Type": "uint32",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "LowestBitrate",
-        "Type": "uint32",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "MedianBitrate",
-        "Type": "uint32",
-        "Size": "0x4",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "HighestBitrate",
-        "Type": "uint32",
-        "Size": "0x4",
-        "Offset": "0x38"
       }
     ]
   },
@@ -105,46 +127,6 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "VideoSubtitleEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "MediaTextureName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SubtitleString",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "SubtitleDuration",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "VideoPlaybackLoadEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "MediaTextureName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "VideoUri",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
       }
     ]
   },

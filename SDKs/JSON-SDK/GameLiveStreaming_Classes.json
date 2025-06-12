@@ -1,4 +1,11 @@
 {
+  "GameLiveStreamingFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "QueryLiveStreamsCallbackProxy": {
     "Super": "OnlineBlueprintCallProxyBase",
     "FullSize": "0x48",
@@ -6,9 +13,9 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "OnQueriedLiveStreams",
-        "Type": "multicastinlinedelegate",
-        "Size": "0x10",
+        "Name": "pad0x20_B4O62[0x20]",
+        "Type": "char",
+        "Size": "0x20",
         "Offset": "0x28"
       }
     ]

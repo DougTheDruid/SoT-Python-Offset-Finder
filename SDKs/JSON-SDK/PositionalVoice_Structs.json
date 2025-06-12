@@ -3,7 +3,7 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "GamerTag",
+        "Name": "Gamertag",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
@@ -13,6 +13,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_2OKS6[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
       },
       {
         "Name": "Xuid",
@@ -25,6 +31,12 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x7_EQR5P[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x29"
       }
     ]
   },

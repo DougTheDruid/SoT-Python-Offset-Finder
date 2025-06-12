@@ -16,6 +16,10 @@ NudgeInterpolationParamsDataAsset:
   Super: DataAsset
 NudgePolicy:
   Attributes:
+  - Name: pad0x90_DZFI3[0x90]
+    Offset: '0x28'
+    Size: '0x90'
+    Type: char
   - Name: OwningActor
     Offset: '0xb8'
     Size: '0x8'
@@ -28,3 +32,15 @@ NudgePolicy:
   FullSize: '0xc8'
   InheritedSize: '0x28'
   Super: Object
+NudgePolicyInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+NudgeableInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface

@@ -1,147 +1,207 @@
 {
   "SafeZoneComponent": {
     "Super": "CapsuleComponent",
-    "FullSize": "0x740",
-    "InheritedSize": "0x5f0",
+    "FullSize": "0x730",
+    "InheritedSize": "0x5e0",
     "ClassSize": "0x150",
     "Attributes": [
       {
-        "Name": "OnSafeZoneIsEmptyDelegate",
-        "Type": "multicastinlinedelegate",
+        "Name": "pad0x10_Q4389[0x10]",
+        "Type": "char",
         "Size": "0x10",
-        "Offset": "0x5f0"
+        "Offset": "0x5e0"
       },
       {
         "Name": "ExclusionRadius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x600"
+        "Offset": "0x5f0"
+      },
+      {
+        "Name": "pad0x4_5PG4N[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x5f4"
       },
       {
         "Name": "ExclusionHeight",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x608"
+        "Offset": "0x5f8"
       },
       {
         "Name": "SafeZoneEmptyCollisionProfile",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x60c"
+        "Offset": "0x5fc"
       },
       {
         "Name": "AutoActivateSafeZone",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x614"
+        "Offset": "0x604"
       },
       {
         "Name": "DeactivateSafeZoneAfterExclusionRadiusIsEmpty",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x615"
+        "Offset": "0x605"
       },
       {
         "Name": "UsePlayerTeleport",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x616"
+        "Offset": "0x606"
+      },
+      {
+        "Name": "pad0x1_8Y1FV[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x607"
       },
       {
         "Name": "PlayerTeleportRadius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x618"
+        "Offset": "0x608"
+      },
+      {
+        "Name": "pad0x4_GTOG9[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x60c"
       },
       {
         "Name": "UseRepelForce",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x620"
+        "Offset": "0x610"
+      },
+      {
+        "Name": "pad0x3_ZD9YZ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x611"
       },
       {
         "Name": "RepelForceRadius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x624"
+        "Offset": "0x614"
+      },
+      {
+        "Name": "pad0x4_U2G9W[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x618"
       },
       {
         "Name": "RepelForceExtents",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x62c"
+        "Offset": "0x61c"
       },
       {
         "Name": "RepelForceMin",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x630"
+        "Offset": "0x620"
       },
       {
         "Name": "RepelForceMax",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x634"
+        "Offset": "0x624"
       },
       {
         "Name": "ApplyRepelForceAtCentreOfMass",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x638"
+        "Offset": "0x628"
+      },
+      {
+        "Name": "pad0x7_EUWBC[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x629"
       },
       {
         "Name": "RepelForceGradientCurve",
         "Type": "struct RuntimeFloatCurve",
         "Size": "0x80",
-        "Offset": "0x640"
+        "Offset": "0x630"
       },
       {
         "Name": "UseAngularImpulse",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x6c0"
+        "Offset": "0x6b0"
+      },
+      {
+        "Name": "pad0x3_6WAFO[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x6b1"
       },
       {
         "Name": "AngularImpulseRadius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x6c4"
+        "Offset": "0x6b4"
+      },
+      {
+        "Name": "pad0x4_ZPA6N[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x6b8"
       },
       {
         "Name": "AngularImpulseForce",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x6cc"
+        "Offset": "0x6bc"
       },
       {
         "Name": "TargetDeflectionAngle",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x6d0"
+        "Offset": "0x6c0"
       },
       {
         "Name": "IsSafeZoneEmpty",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x6d4"
+        "Offset": "0x6c4"
       },
       {
         "Name": "StopAISpawning",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x6d5"
+        "Offset": "0x6c5"
+      },
+      {
+        "Name": "pad0x2_FO493[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x6c6"
       },
       {
         "Name": "CurrentCollisionProfile",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x6d8"
+        "Offset": "0x6c8"
       },
       {
         "Name": "SafeZoneState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x6e0"
+        "Offset": "0x6d0"
+      },
+      {
+        "Name": "pad0x5f_1TZGR[0x5f]",
+        "Type": "char",
+        "Size": "0x5f",
+        "Offset": "0x6d1"
       }
     ]
   },

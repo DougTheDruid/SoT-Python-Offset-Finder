@@ -2,11 +2,31 @@
 # https://github.com/DougTheDruid
 SeasonProgressionExclusionComponent:
   Attributes:
+  - Name: pad0x8_9LC4A[0x8]
+    Offset: '0xb8'
+    Size: '0x8'
+    Type: char
   - Name: ShouldBeExcludedFromSeasonProgessionValue
-    Offset: '0xd0'
+    Offset: '0xc0'
     Size: '0x1'
     Type: bool
+  - Name: pad0x7_15B44[0x7]
+    Offset: '0xc1'
+    Size: '0x7'
+    Type: char
   ClassSize: '0x10'
-  FullSize: '0xd8'
-  InheritedSize: '0xc8'
+  FullSize: '0xc8'
+  InheritedSize: '0xb8'
   Super: ActorComponent
+SeasonProgressionExclusionInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+SeasonSettings:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: DeveloperSettings

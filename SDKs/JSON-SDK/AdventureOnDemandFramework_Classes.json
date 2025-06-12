@@ -1,131 +1,15 @@
 {
-  "AdventureOnDemandForceIslandBannerStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0xa0",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x8",
+  "AdventureOnDemandArrivalTunnelDependencies": {
+    "Super": "ArrivalTunnelDependencies",
+    "FullSize": "0xf8",
+    "InheritedSize": "0xd8",
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "StepDesc",
-        "Type": "class AdventureOnDemandForceIslandBannerStepDesc*",
-        "Size": "0x8",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "AdventureOnDemandArrivalTunnelWorkerBase": {
-    "Super": "Object",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "WorldPtr",
-        "Type": "class World*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "AdventureOnDemandGetIsDivingToTunnelStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xb0",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "IsCrewDivingToTunnel",
-        "Type": "struct QuestVariableBool",
-        "Size": "0x30",
-        "Offset": "0x80"
-      }
-    ]
-  },
-  "AdventureOnDemandServiceParams": {
-    "Super": "DataAsset",
-    "FullSize": "0x70",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "DiveToTunnelVoyageDesc",
-        "Type": "class VoyageDescDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "VoyageTunnelDesc",
-        "Type": "class TunnelDesc*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "LeaveTunnelVoyageDesc",
-        "Type": "class VoyageDescDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "ExtraSpawnDistanceFromIsland",
-        "Type": "TArray<struct ExtraSpawnDistanceFromIsland>",
-        "Size": "0x10",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "WorldEventsCooldown",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "GameEventsOnDemandBannerDataAsset",
-        "Type": "class GameEventsOnDemandBannerDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "GameEventsOnDemandStatDataAsset",
-        "Type": "class GameEventsOnDemandStatDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "HuntersCallCompany",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x68"
-      }
-    ]
-  },
-  "AdventureOnDemandArrivalTunnelOfTheDamned": {
-    "Super": "ClientDestinationPreLoadingArrivalTunnelOfTheDamned",
-    "FullSize": "0x700",
-    "InheritedSize": "0x6b0",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "AdventureOnDemandArrivalTunnelDesc",
-        "Type": "class AdventureOnDemandArrivalTunnelDesc*",
-        "Size": "0x8",
-        "Offset": "0x6d0"
-      },
-      {
-        "Name": "ArrivalLocationWorker",
-        "Type": "class AdventureOnDemandArrivalTunnelWorkerBase*",
-        "Size": "0x8",
-        "Offset": "0x6d8"
-      },
-      {
-        "Name": "AdventureOnDemandServiceWeakPtr",
-        "Type": "interface",
-        "Size": "0x10",
-        "Offset": "0x6e0"
-      },
-      {
-        "Name": "GameEventSchedulerServiceWeakPtr",
-        "Type": "interface",
-        "Size": "0x10",
-        "Offset": "0x6f0"
+        "Name": "pad0x20_SZO2S[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0xd8"
       }
     ]
   },
@@ -143,113 +27,93 @@
       }
     ]
   },
-  "AdventureOnDemandTallTaleCategoryDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x100",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xd8",
-    "Attributes": [
-      {
-        "Name": "TaleId",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "TaleCategory",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "DiscoverTileCategory",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "DisplayName",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "Description",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "BackgroundImageUrl",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "IconImageUrl",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "LockedDescriptions",
-        "Type": "TArray<struct Text>",
-        "Size": "0x10",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "Prerequisites",
-        "Type": "TArray<class InteractionPrerequisiteBase*>",
-        "Size": "0x10",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "TallTales",
-        "Type": "TArray<struct AdventureOnDemandTallTaleProposalGroup>",
-        "Size": "0x10",
-        "Offset": "0xf0"
-      }
-    ]
-  },
-  "AdventureOnDemandSuppressIslandBannerStepDesc": {
+  "AdventureOnDemandAreCrewNearQuestTargetStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0x88",
+    "FullSize": "0xb0",
     "InheritedSize": "0x80",
-    "ClassSize": "0x8",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "BannerSuppressionFlags",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "AreCrewNearQuestTarget",
+        "Type": "struct QuestVariableBool",
+        "Size": "0x30",
         "Offset": "0x80"
       }
     ]
   },
-  "AdventureOnDemandVoyageSelectionDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x50",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x28",
+  "AdventureOnDemandSetDirectionToApproachTargetFromStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x110",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x90",
     "Attributes": [
       {
-        "Name": "DiscoveryPageMysteryEntries",
-        "Type": "class AdventureOnDemandDiscoveryPageMysteryDataAsset*",
-        "Size": "0x8",
+        "Name": "DirectionToApproachTargetFrom",
+        "Type": "struct QuestVariableVector",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "PointOfInterestToGetDirectionToTargetFrom",
+        "Type": "struct QuestVariableVector",
+        "Size": "0x30",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "ActorToGetDirectionToTargetFrom",
+        "Type": "struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0xe0"
+      }
+    ]
+  },
+  "AdventureOnDemandYieldQuestResumeOnConditionsTaleStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_EMDAY[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "AdventureOnDemandDiscoveryPageMysteryDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Prerequisites",
+        "Type": "TArray<class InteractionPrerequisiteBase*>",
+        "Size": "0x10",
         "Offset": "0x28"
       },
       {
-        "Name": "CompanyEntries",
-        "Type": "TArray<class AdventureOnDemandVoyageSelectionCompanyDataAsset*>",
+        "Name": "MysteryProposals",
+        "Type": "TArray<struct AdventureOnDemandVoyageDiscoveryPageMysteryProposal>",
         "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "TallTales",
-        "Type": "TArray<class AdventureOnDemandTallTaleCategoryDataAsset*>",
-        "Size": "0x10",
-        "Offset": "0x40"
+        "Offset": "0x38"
       }
     ]
+  },
+  "AdventureOnDemandSetTunnelDescStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AdventureOnDemandGetIsDivingToTunnelStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "AdventureOnDemandGetTunnelDescStepDesc": {
     "Super": "TaleQuestStepDesc",
@@ -291,53 +155,59 @@
       }
     ]
   },
-  "TradingCompanyPopUpBackgroundCollectionDataAsset": {
+  "AdventureOnDemandVoyageSelectionDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x38",
+    "FullSize": "0x50",
     "InheritedSize": "0x28",
-    "ClassSize": "0x10",
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "Entries",
-        "Type": "TArray<struct TradingCompanyPopUpBackgroundEntry>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "AdventureOnDemandDiscoveryPageMysteryDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Prerequisites",
-        "Type": "TArray<class InteractionPrerequisiteBase*>",
-        "Size": "0x10",
+        "Name": "DiscoveryPageMysteryEntries",
+        "Type": "class AdventureOnDemandDiscoveryPageMysteryDataAsset*",
+        "Size": "0x8",
         "Offset": "0x28"
       },
       {
-        "Name": "MysteryProposals",
-        "Type": "TArray<struct AdventureOnDemandVoyageDiscoveryPageMysteryProposal>",
+        "Name": "CompanyEntries",
+        "Type": "TArray<class AdventureOnDemandVoyageSelectionCompanyDataAsset*>",
         "Size": "0x10",
-        "Offset": "0x38"
+        "Offset": "0x30"
+      },
+      {
+        "Name": "TallTales",
+        "Type": "TArray<class AdventureOnDemandTallTaleCategoryDataAsset*>",
+        "Size": "0x10",
+        "Offset": "0x40"
       }
     ]
   },
-  "AdventureOnDemandSuppressIslandBannerStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0xa0",
-    "InheritedSize": "0x98",
+  "AdventureOnDemandSetTunnelDescStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x88",
+    "InheritedSize": "0x80",
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "StepDesc",
-        "Type": "class AdventureOnDemandSuppressIslandBannerStepDesc*",
+        "Name": "TunnelDesc",
+        "Type": "class TunnelDesc*",
         "Size": "0x8",
-        "Offset": "0x98"
+        "Offset": "0x80"
       }
     ]
+  },
+  "AdventureOnDemandTaleFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x180",
+    "InheritedSize": "0x180",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AdventureOnDemandSetHintPopUpStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "AdventureOnDemandSetTargetLocationStepDesc": {
     "Super": "TaleQuestStepDesc",
@@ -377,99 +247,17 @@
       }
     ]
   },
-  "AdventureOnDemandDepartureTunnelDependencies": {
-    "Super": "DepartureTunnelDependencies",
-    "FullSize": "0x148",
-    "InheritedSize": "0x138",
+  "TradingCompanyPopUpBackgroundCollectionDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "AdventureOnDemandService",
-        "Type": "interface",
+        "Name": "Entries",
+        "Type": "TArray<struct TradingCompanyPopUpBackgroundEntry>",
         "Size": "0x10",
-        "Offset": "0x138"
-      }
-    ]
-  },
-  "AdventureOnDemandArrivalTunnelDesc": {
-    "Super": "ClientDestinationPreLoadingArrivalTunnelDesc",
-    "FullSize": "0xc8",
-    "InheritedSize": "0xa0",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "ResurfaceLocationOffset",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0xa0"
-      },
-      {
-        "Name": "DefaultArrivalLocationWorkerClass",
-        "Type": "class AdventureOnDemandArrivalTunnelWorkerBase*",
-        "Size": "0x8",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "ResurfaceLocationEQ",
-        "Type": "class EnvQuery*",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "ShouldExcludeCrewFromBeingTargetedForGameEvents",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "ExclusionTimerFromBeingTargetedForGameEvents",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc4"
-      }
-    ]
-  },
-  "AdventureOnDemandVoyageSelectionCompanyDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x70",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "CompanyName",
-        "Type": "struct FName",
-        "Size": "0x8",
         "Offset": "0x28"
-      },
-      {
-        "Name": "Company",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "DiscoverTileCategory",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "Feature",
-        "Type": "struct FeatureFlag",
-        "Size": "0xc",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "Prerequisites",
-        "Type": "TArray<class InteractionPrerequisiteBase*>",
-        "Size": "0x10",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "VoyageGroups",
-        "Type": "TArray<struct AdventureOnDemandVoyageSelectionVoyageProposalGroup>",
-        "Size": "0x10",
-        "Offset": "0x60"
       }
     ]
   },
@@ -511,48 +299,6 @@
       }
     ]
   },
-  "AdventureOnDemandSetTunnelDescStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x88",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "TunnelDesc",
-        "Type": "class TunnelDesc*",
-        "Size": "0x8",
-        "Offset": "0x80"
-      }
-    ]
-  },
-  "AdventureOnDemandForceIslandBannerStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x88",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "MuteBannerAudio",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x80"
-      }
-    ]
-  },
-  "FriendsInCrewPrerequisite": {
-    "Super": "InteractionPrerequisiteBase",
-    "FullSize": "0xd0",
-    "InheritedSize": "0x90",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "MinimumFriendsInCrew",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x90"
-      }
-    ]
-  },
   "GameEventsOnDemandStatDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
@@ -567,11 +313,151 @@
       }
     ]
   },
+  "AdventureOnDemandAreCrewNearQuestTargetStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AdventureOnDemandSuppressIslandBannerStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x88",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "BannerSuppressionFlags",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x7_C1UTZ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x81"
+      }
+    ]
+  },
+  "AdventureOnDemandArrivalTunnelDesc": {
+    "Super": "ClientDestinationPreLoadingArrivalTunnelDesc",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xa0",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "ResurfaceLocationOffset",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "pad0x4_UN725[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xac"
+      },
+      {
+        "Name": "DefaultArrivalLocationWorkerClass",
+        "Type": "class AdventureOnDemandArrivalTunnelWorkerBase*",
+        "Size": "0x8",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "ResurfaceLocationEQ",
+        "Type": "class EnvQuery*",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "ShouldExcludeCrewFromBeingTargetedForGameEvents",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "pad0x3_2X8FC[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xc1"
+      },
+      {
+        "Name": "ExclusionTimerFromBeingTargetedForGameEvents",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc4"
+      }
+    ]
+  },
+  "AdventureOnDemandSetDirectionToApproachTargetFromStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AdventureOnDemandGetIsDivingToTunnelStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "IsCrewDivingToTunnel",
+        "Type": "struct QuestVariableBool",
+        "Size": "0x30",
+        "Offset": "0x80"
+      }
+    ]
+  },
+  "AdventureOnDemandArrivalTunnelWorkerBase": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "WorldPtr",
+        "Type": "class World*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "WantsToDivePrerequisite": {
+    "Super": "InteractionPrerequisiteBase",
+    "FullSize": "0x90",
+    "InheritedSize": "0x90",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AdventureOnDemandDisplayHintPopUpStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AdventureOnDemandSuppressIslandBannerStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "StepDesc",
+        "Type": "class AdventureOnDemandSuppressIslandBannerStepDesc*",
+        "Size": "0x8",
+        "Offset": "0x98"
+      }
+    ]
+  },
   "QuestTableAdventureOnDemandParams": {
     "Super": "DataAsset",
-    "FullSize": "0x2e8",
+    "FullSize": "0x320",
     "InheritedSize": "0x28",
-    "ClassSize": "0x2c0",
+    "ClassSize": "0x2f8",
     "Attributes": [
       {
         "Name": "LootFilter",
@@ -634,54 +520,62 @@
         "Offset": "0x288"
       },
       {
+        "Name": "DiveToQuestText_BlockedDueToSailOnly",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x2c0"
+      },
+      {
         "Name": "DiscoverTabData",
         "Type": "class QuestTableDiscoverTabData*",
         "Size": "0x8",
-        "Offset": "0x2c0"
+        "Offset": "0x2f8"
       },
       {
         "Name": "InfoDiscoverTileCategory",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x2c8"
+        "Offset": "0x300"
       },
       {
         "Name": "LimitedInfoDiscoverTileCategory",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x2d0"
+        "Offset": "0x308"
       },
       {
         "Name": "BakedQuestDiscoverTiles",
         "Type": "TArray<struct QuestTableBakedQuestDiscoverTile>",
         "Size": "0x10",
-        "Offset": "0x2d8"
+        "Offset": "0x310"
       }
     ]
   },
-  "AdventureOnDemandSetDirectionToApproachTargetFromStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x110",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x90",
+  "AdventureOnDemandGetTunnelDescStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AdventureOnDemandServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AdventureOnDemandForceIslandBannerStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "DirectionToApproachTargetFrom",
-        "Type": "struct QuestVariableVector",
-        "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "PointOfInterestToGetDirectionToTargetFrom",
-        "Type": "struct QuestVariableVector",
-        "Size": "0x30",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "ActorToGetDirectionToTargetFrom",
-        "Type": "struct QuestVariableActor",
-        "Size": "0x30",
-        "Offset": "0xe0"
+        "Name": "StepDesc",
+        "Type": "class AdventureOnDemandForceIslandBannerStepDesc*",
+        "Size": "0x8",
+        "Offset": "0x98"
       }
     ]
   },
@@ -696,88 +590,346 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x80"
-      }
-    ]
-  },
-  "AdventureOnDemandAreCrewNearQuestTargetStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xb0",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "AreCrewNearQuestTarget",
-        "Type": "struct QuestVariableBool",
-        "Size": "0x30",
-        "Offset": "0x80"
-      }
-    ]
-  },
-  "AdventureOnDemandArrivalTunnelDependencies": {
-    "Super": "ArrivalTunnelDependencies",
-    "FullSize": "0xf8",
-    "InheritedSize": "0xd8",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "AdventureOnDemandService",
-        "Type": "interface",
-        "Size": "0x10",
-        "Offset": "0xd8"
       },
       {
-        "Name": "GameEventSchedulerService",
-        "Type": "interface",
+        "Name": "pad0x7_MVMZH[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x81"
+      }
+    ]
+  },
+  "AdventureOnDemandTallTaleCategoryDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x100",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xd8",
+    "Attributes": [
+      {
+        "Name": "TaleId",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "TaleCategory",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x7_S996E[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x31"
+      },
+      {
+        "Name": "DiscoverTileCategory",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "DisplayName",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "Description",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "BackgroundImageUrl",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
-        "Offset": "0xe8"
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "IconImageUrl",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "LockedDescriptions",
+        "Type": "TArray<struct Text>",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "Prerequisites",
+        "Type": "TArray<class InteractionPrerequisiteBase*>",
+        "Size": "0x10",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "TallTales",
+        "Type": "TArray<struct AdventureOnDemandTallTaleProposalGroup>",
+        "Size": "0x10",
+        "Offset": "0xf0"
+      }
+    ]
+  },
+  "AdventureOnDemandDisplayHintPopUpStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x80",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AdventureOnDemandForceIslandBannerStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x88",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "MuteBannerAudio",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x7_UMO68[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x81"
       }
     ]
   },
   "AdventureOnDemandDepartureTunnelOfTheDamned": {
     "Super": "DepartureTunnelOfTheDamned",
-    "FullSize": "0x8f0",
-    "InheritedSize": "0x8b0",
+    "FullSize": "0x8c0",
+    "InheritedSize": "0x880",
     "ClassSize": "0x40",
     "Attributes": [
       {
         "Name": "AdventureOnDemandDepartureTunnelDesc",
         "Type": "class AdventureOnDemandDepartureTunnelDesc*",
         "Size": "0x8",
-        "Offset": "0x8b0"
+        "Offset": "0x880"
       },
       {
-        "Name": "AdventureOnDemandService",
-        "Type": "interface",
-        "Size": "0x10",
-        "Offset": "0x8b8"
+        "Name": "pad0x38_FIRTY[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x888"
       }
     ]
   },
+  "AdventureOnDemandSetTargetLocationStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AdventureOnDemandVoyageSelectionCompanyDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x70",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "CompanyName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Company",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "DiscoverTileCategory",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "Feature",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x4_IH32A[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      },
+      {
+        "Name": "Prerequisites",
+        "Type": "TArray<class InteractionPrerequisiteBase*>",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "VoyageGroups",
+        "Type": "TArray<struct AdventureOnDemandVoyageSelectionVoyageProposalGroup>",
+        "Size": "0x10",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "AdventureOnDemandArrivalTunnelOfTheDamned": {
+    "Super": "ClientDestinationPreLoadingArrivalTunnelOfTheDamned",
+    "FullSize": "0x6d0",
+    "InheritedSize": "0x680",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x20_HNT28[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x680"
+      },
+      {
+        "Name": "AdventureOnDemandArrivalTunnelDesc",
+        "Type": "class AdventureOnDemandArrivalTunnelDesc*",
+        "Size": "0x8",
+        "Offset": "0x6a0"
+      },
+      {
+        "Name": "ArrivalLocationWorker",
+        "Type": "class AdventureOnDemandArrivalTunnelWorkerBase*",
+        "Size": "0x8",
+        "Offset": "0x6a8"
+      },
+      {
+        "Name": "pad0x20_XLSWK[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x6b0"
+      }
+    ]
+  },
+  "AdventureOnDemandServiceParams": {
+    "Super": "DataAsset",
+    "FullSize": "0x70",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "DiveToTunnelVoyageDesc",
+        "Type": "class VoyageDescDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "VoyageTunnelDesc",
+        "Type": "class TunnelDesc*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "LeaveTunnelVoyageDesc",
+        "Type": "class VoyageDescDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "ExtraSpawnDistanceFromIsland",
+        "Type": "TArray<struct ExtraSpawnDistanceFromIsland>",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "WorldEventsCooldown",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "pad0x4_97WWV[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x54"
+      },
+      {
+        "Name": "GameEventsOnDemandBannerDataAsset",
+        "Type": "class GameEventsOnDemandBannerDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "GameEventsOnDemandStatDataAsset",
+        "Type": "class GameEventsOnDemandStatDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "HuntersCallCompany",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x68"
+      }
+    ]
+  },
+  "AdventureOnDemandDepartureTunnelDependencies": {
+    "Super": "DepartureTunnelDependencies",
+    "FullSize": "0x148",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_J43WJ[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x138"
+      }
+    ]
+  },
+  "FriendsInCrewPrerequisite": {
+    "Super": "InteractionPrerequisiteBase",
+    "FullSize": "0xd0",
+    "InheritedSize": "0x90",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "MinimumFriendsInCrew",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "pad0x3f_LS6BJ[0x3f]",
+        "Type": "char",
+        "Size": "0x3f",
+        "Offset": "0x91"
+      }
+    ]
+  },
+  "GameEventOnDemandDepartureTunnelDependencies": {
+    "Super": "AdventureOnDemandDepartureTunnelDependencies",
+    "FullSize": "0x148",
+    "InheritedSize": "0x148",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "VoyageOnDemandDepartureTunnelDesc": {
+    "Super": "AdventureOnDemandDepartureTunnelDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x130",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "VoyageOnDemandDepartureTunnelOfTheDamned": {
     "Super": "AdventureOnDemandDepartureTunnelOfTheDamned",
-    "FullSize": "0x8f0",
-    "InheritedSize": "0x8f0",
+    "FullSize": "0x8c0",
+    "InheritedSize": "0x8c0",
     "ClassSize": "0x0",
     "Attributes": [
       {
         "Name": "VoyageOnDemandDepartureTunnelDesc",
         "Type": "class VoyageOnDemandDepartureTunnelDesc*",
         "Size": "0x8",
-        "Offset": "0x8e8"
-      }
-    ]
-  },
-  "GameEventOnDemandDepartureTunnelOfTheDamned": {
-    "Super": "AdventureOnDemandDepartureTunnelOfTheDamned",
-    "FullSize": "0x8f0",
-    "InheritedSize": "0x8f0",
-    "ClassSize": "0x0",
-    "Attributes": [
-      {
-        "Name": "GameEventOnDemandDepartureTunnelDesc",
-        "Type": "class GameEventOnDemandDepartureTunnelDesc*",
-        "Size": "0x8",
-        "Offset": "0x8e8"
+        "Offset": "0x8b8"
       }
     ]
   },
@@ -788,10 +940,38 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "GameEventType",
-        "Type": "assetclass",
+        "Name": "pad0x20_QUA7V[0x20]",
+        "Type": "char",
         "Size": "0x20",
         "Offset": "0x130"
+      }
+    ]
+  },
+  "VoyageOnDemandArrivalTunnelWorker": {
+    "Super": "AdventureOnDemandArrivalTunnelWorkerBase",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "VoyageOnDemandDepartureTunnelDependencies": {
+    "Super": "AdventureOnDemandDepartureTunnelDependencies",
+    "FullSize": "0x148",
+    "InheritedSize": "0x148",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GameEventOnDemandDepartureTunnelOfTheDamned": {
+    "Super": "AdventureOnDemandDepartureTunnelOfTheDamned",
+    "FullSize": "0x8c0",
+    "InheritedSize": "0x8c0",
+    "ClassSize": "0x0",
+    "Attributes": [
+      {
+        "Name": "GameEventOnDemandDepartureTunnelDesc",
+        "Type": "class GameEventOnDemandDepartureTunnelDesc*",
+        "Size": "0x8",
+        "Offset": "0x8b8"
       }
     ]
   },
