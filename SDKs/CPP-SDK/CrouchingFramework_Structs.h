@@ -20,15 +20,31 @@ public:
 	struct FString                                               NearestIsland;                                     // 0x18(0x10)
 	struct Guid                                                  CrouchingId;                                       // 0x28(0x10)
 	bool                                                         IsCrouching;                                       // 0x38(0x1)
-	char                                                         pad0x7_OS2IV[0x7];                                 // 0x39(0x7)
+	char                                                         pad0x7_Q0NVG[0x7];                                 // 0x39(0x7)
 };
 
 
-// Size 0x8
-struct OnStartCrouchAudioEvent
+// Size 0x1
+struct OnEndCrouchEvent
 {
 public:
-	class WwiseEvent*                                            CrouchStart;                                       // 0x0(0x8)
+	char                                                         pad0x1_SW1JV[0x1];                                 // 0x0(0x1)
+};
+
+
+// Size 0x1
+struct OnStartCrouchEvent
+{
+public:
+	char                                                         pad0x1_PLE0C[0x1];                                 // 0x0(0x1)
+};
+
+
+// Size 0x48
+struct CrouchActionStateConstructionInfo
+{
+public:
+	char                                                         pad0x48_VRZ98[0x48];                               // 0x0(0x48)
 };
 
 
@@ -40,22 +56,6 @@ public:
 };
 
 
-// Size 0x1
-struct OnStartCrouchEvent
-{
-public:
-	char                                                         pad0x1_6APWG[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct OnEndCrouchEvent
-{
-public:
-	char                                                         pad0x1_VCRGN[0x1];                                 // 0x0(0x1)
-};
-
-
 // Size 0x10
 struct CrouchTransitionTelemetry
 {
@@ -64,11 +64,11 @@ public:
 };
 
 
-// Size 0x48
-struct CrouchActionStateConstructionInfo
+// Size 0x8
+struct OnStartCrouchAudioEvent
 {
 public:
-	char                                                         pad0x48_GP5AC[0x48];                               // 0x0(0x48)
+	class WwiseEvent*                                            CrouchStart;                                       // 0x0(0x8)
 };
 
 

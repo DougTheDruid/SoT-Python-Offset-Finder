@@ -6,26 +6,6 @@
 #include "EngineSettings_Structs.h"
 
 
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class GameNetworkManagerSettings: public Object
-{
-public:
-	int                                                          MinDynamicBandwidth;                               // 0x28(0x4)
-	int                                                          MaxDynamicBandwidth;                               // 0x2c(0x4)
-	int                                                          TotalNetBandwidth;                                 // 0x30(0x4)
-	int                                                          BadPingThreshold;                                  // 0x34(0x4)
-	bool                                                         bIsStandbyCheckingEnabled;                         // 0x38(0x1)
-	char                                                         pad0x3_JNHUW[0x3];                                 // 0x39(0x3)
-	float                                                        StandbyRxCheatTime;                                // 0x3c(0x4)
-	float                                                        StandbyTxCheatTime;                                // 0x40(0x4)
-	float                                                        PercentMissingForRxStandby;                        // 0x44(0x4)
-	float                                                        PercentMissingForTxStandby;                        // 0x48(0x4)
-	float                                                        PercentForBadPing;                                 // 0x4c(0x4)
-	float                                                        JoinInProgressStandbyWaitTime;                     // 0x50(0x4)
-	char                                                         pad0x4_LBKOE[0x4];                                 // 0x54(0x4)
-};
-
-
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class GameSessionSettings: public Object
 {
@@ -33,7 +13,7 @@ public:
 	int                                                          MaxSpectators;                                     // 0x28(0x4)
 	int                                                          MaxPlayers;                                        // 0x2c(0x4)
 	bool                                                         bRequiresPushToTalk;                               // 0x30(0x1)
-	char                                                         pad0x7_67NWL[0x7];                                 // 0x31(0x7)
+	char                                                         pad0x7_R7THJ[0x7];                                 // 0x31(0x7)
 };
 
 
@@ -41,36 +21,6 @@ public:
 class GeneralEngineSettings: public Object
 {
 public:
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class ConsoleSettings: public Object
-{
-public:
-	int                                                          MaxScrollbackSize;                                 // 0x28(0x4)
-	char                                                         pad0x4_K6JST[0x4];                                 // 0x2c(0x4)
-	TArray<struct AutoCompleteCommand>                           ManualAutoCompleteList;                            // 0x30(0x10)
-	TArray<String>                                               AutoCompleteMapPaths;                              // 0x40(0x10)
-};
-
-
-// Size 0x88 (Full Size[0xb0] - InheritedSize[0x28]
-class GameMapsSettings: public Object
-{
-public:
-	struct FString                                               EditorStartupMap;                                  // 0x28(0x10)
-	struct FString                                               LocalMapOptions;                                   // 0x38(0x10)
-	struct FString                                               TransitionMap;                                     // 0x48(0x10)
-	bool                                                         bUseSplitscreen;                                   // 0x58(0x1)
-	char                                                         TwoPlayerSplitscreenLayout;                        // 0x59(0x1)
-	char                                                         ThreePlayerSplitscreenLayout;                      // 0x5a(0x1)
-	char                                                         pad0x5_O58U4[0x5];                                 // 0x5b(0x5)
-	struct StringClassReference                                  GameInstanceClass;                                 // 0x60(0x10)
-	struct FString                                               GameDefaultMap;                                    // 0x70(0x10)
-	struct FString                                               ServerDefaultMap;                                  // 0x80(0x10)
-	struct StringClassReference                                  GlobalDefaultGameMode;                             // 0x90(0x10)
-	struct StringClassReference                                  GlobalDefaultServerGameMode;                       // 0xa0(0x10)
 };
 
 
@@ -93,12 +43,62 @@ public:
 };
 
 
+// Size 0x88 (Full Size[0xb0] - InheritedSize[0x28]
+class GameMapsSettings: public Object
+{
+public:
+	struct FString                                               EditorStartupMap;                                  // 0x28(0x10)
+	struct FString                                               LocalMapOptions;                                   // 0x38(0x10)
+	struct FString                                               TransitionMap;                                     // 0x48(0x10)
+	bool                                                         bUseSplitscreen;                                   // 0x58(0x1)
+	char                                                         TwoPlayerSplitscreenLayout;                        // 0x59(0x1)
+	char                                                         ThreePlayerSplitscreenLayout;                      // 0x5a(0x1)
+	char                                                         pad0x5_2JWBF[0x5];                                 // 0x5b(0x5)
+	struct StringClassReference                                  GameInstanceClass;                                 // 0x60(0x10)
+	struct FString                                               GameDefaultMap;                                    // 0x70(0x10)
+	struct FString                                               ServerDefaultMap;                                  // 0x80(0x10)
+	struct StringClassReference                                  GlobalDefaultGameMode;                             // 0x90(0x10)
+	struct StringClassReference                                  GlobalDefaultServerGameMode;                       // 0xa0(0x10)
+};
+
+
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class GameNetworkManagerSettings: public Object
+{
+public:
+	int                                                          MinDynamicBandwidth;                               // 0x28(0x4)
+	int                                                          MaxDynamicBandwidth;                               // 0x2c(0x4)
+	int                                                          TotalNetBandwidth;                                 // 0x30(0x4)
+	int                                                          BadPingThreshold;                                  // 0x34(0x4)
+	bool                                                         bIsStandbyCheckingEnabled;                         // 0x38(0x1)
+	char                                                         pad0x3_AUQF4[0x3];                                 // 0x39(0x3)
+	float                                                        StandbyRxCheatTime;                                // 0x3c(0x4)
+	float                                                        StandbyTxCheatTime;                                // 0x40(0x4)
+	float                                                        PercentMissingForRxStandby;                        // 0x44(0x4)
+	float                                                        PercentMissingForTxStandby;                        // 0x48(0x4)
+	float                                                        PercentForBadPing;                                 // 0x4c(0x4)
+	float                                                        JoinInProgressStandbyWaitTime;                     // 0x50(0x4)
+	char                                                         pad0x4_CN70I[0x4];                                 // 0x54(0x4)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class ConsoleSettings: public Object
+{
+public:
+	int                                                          MaxScrollbackSize;                                 // 0x28(0x4)
+	char                                                         pad0x4_GC2GD[0x4];                                 // 0x2c(0x4)
+	TArray<struct AutoCompleteCommand>                           ManualAutoCompleteList;                            // 0x30(0x10)
+	TArray<String>                                               AutoCompleteMapPaths;                              // 0x40(0x10)
+};
+
+
 // Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
 class HudSettings: public Object
 {
 public:
 	bool                                                         bShowHUD;                                          // 0x28(0x1)
-	char                                                         pad0x7_IBYJZ[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_0U75F[0x7];                                 // 0x29(0x7)
 	TArray<struct Name>                                          DebugDisplay;                                      // 0x30(0x10)
 };
 

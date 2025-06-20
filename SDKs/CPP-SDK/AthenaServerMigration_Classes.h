@@ -6,6 +6,15 @@
 #include "AthenaServerMigration_Structs.h"
 
 
+// Size 0x20 (Full Size[0xd8] - InheritedSize[0xb8]
+class RegisterServerMigrationPointOfInterestComponent: public ActorComponent
+{
+public:
+	float                                                        MigrationRadius;                                   // 0xb8(0x4)
+	char                                                         pad0x1c_EU1G8[0x1c];                               // 0xbc(0x1c)
+};
+
+
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class MigrationProgressInterface: public Interface
 {
@@ -13,17 +22,8 @@ public:
 };
 
 
-// Size 0x20 (Full Size[0xd8] - InheritedSize[0xb8]
-class RegisterServerMigrationPointOfInterestComponent: public ActorComponent
-{
-public:
-	float                                                        MigrationRadius;                                   // 0xb8(0x4)
-	char                                                         pad0x1c_I4S8S[0x1c];                               // 0xbc(0x1c)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class MigrationServiceInterface: public Interface
+class ServerMigrationGatherableActorInterface: public Interface
 {
 public:
 };
@@ -37,7 +37,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ServerMigrationGatherableActorInterface: public Interface
+class MigrationServiceInterface: public Interface
 {
 public:
 };

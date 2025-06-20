@@ -1,4 +1,32 @@
 {
+  "LevelOfDamagePropertiesDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "LevelOfDamageProperties",
+        "Type": "TArray<struct LevelOfDamageProperties>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "HullDamageProviderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DamageZoneInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "GenericShipDamageablePart": {
     "Super": "Actor",
     "FullSize": "0x3c8",
@@ -6,7 +34,7 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x8_G1Q05[0x8]",
+        "Name": "pad0x8_SA3KQ[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3a0"
@@ -18,19 +46,12 @@
         "Offset": "0x3a8"
       },
       {
-        "Name": "pad0x18_0ATQP[0x18]",
+        "Name": "pad0x18_MBAKN[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x3b0"
       }
     ]
-  },
-  "HullDamageProviderInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "StrainDamagerType": {
     "Super": "DamagerType",
@@ -53,19 +74,12 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "LevelOfDamagePropertiesDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
+  "HullDamageInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
     "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "LevelOfDamageProperties",
-        "Type": "TArray<struct LevelOfDamageProperties>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "DamageablePartsInterface": {
     "Super": "Interface",
@@ -74,34 +88,8 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ShipRestorationSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x48",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MaxDistanceSquared",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x4_J56RT[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "pad0x8_R4VHC[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "DamageZoneInterface": {
-    "Super": "Interface",
+  "ShipDamagerType": {
+    "Super": "DamagerType",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
@@ -120,28 +108,40 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x4_UAJ7G[0x4]",
+        "Name": "pad0x4_1Y0MP[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xbc"
       }
     ]
   },
-  "HullDamageInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "ShipRestorationSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MaxDistanceSquared",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x4_1B0W9[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "pad0x8_1MVE5[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x40"
+      }
+    ]
   },
   "LandscapeDamagerType": {
-    "Super": "DamagerType",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ShipDamagerType": {
     "Super": "DamagerType",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

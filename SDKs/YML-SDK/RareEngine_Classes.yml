@@ -12,7 +12,7 @@ AssetReferencer:
   Super: DataAsset
 AudioHardwareDeviceService:
   Attributes:
-  - Name: pad0x18_EW7W0[0x18]
+  - Name: pad0x18_QVNDX[0x18]
     Offset: '0x28'
     Size: '0x18'
     Type: char
@@ -38,7 +38,7 @@ MemoryUsageVisualiserSettings:
   Super: Object
 RareGameEngine:
   Attributes:
-  - Name: pad0x58_PKJR3[0x58]
+  - Name: pad0x58_YPWJQ[0x58]
     Offset: '0xa48'
     Size: '0x58'
     Type: char
@@ -54,7 +54,7 @@ RareHUD:
   Super: HUD
 StallDetector:
   Attributes:
-  - Name: pad0x28_MFS3U[0x28]
+  - Name: pad0x28_BEXF8[0x28]
     Offset: '0x28'
     Size: '0x28'
     Type: char

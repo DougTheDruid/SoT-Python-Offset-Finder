@@ -6,10 +6,11 @@
 #include "MostMemoryIntensiveObjectsFramework_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class MMICategoryDebugCommandSource: public Object
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class MostMemoryIntensiveObjectsDataAsset: public DataAsset
 {
 public:
+	TArray<struct MMICategoryData>                               MostMemoryIntensiveObjects;                        // 0x28(0x10)
 };
 
 
@@ -23,11 +24,10 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class MostMemoryIntensiveObjectsDataAsset: public DataAsset
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class MMICategoryDebugCommandSource: public Object
 {
 public:
-	TArray<struct MMICategoryData>                               MostMemoryIntensiveObjects;                        // 0x28(0x10)
 };
 
 

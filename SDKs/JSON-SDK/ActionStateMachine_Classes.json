@@ -1,13 +1,20 @@
 {
-  "ActionStateInitialStateCreatorDefinition": {
+  "ActionStateCreatorDefinition": {
+    "Super": "Actor",
+    "FullSize": "0x3a0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ActionStateId": {
     "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ActionStateMachineComponentTestFunctions": {
-    "Super": "BlueprintFunctionLibrary",
+  "ActionStateMachineInterface": {
+    "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
@@ -45,41 +52,8 @@
       }
     ]
   },
-  "ActionStateId": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ActionStateMachineComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x898",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x7e0",
-    "Attributes": [
-      {
-        "Name": "pad0x7c8_VEDQD[0x7c8]",
-        "Type": "char",
-        "Size": "0x7c8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "OnScreenLoggingEnabled",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x880"
-      },
-      {
-        "Name": "pad0x17_IYRWJ[0x17]",
-        "Type": "char",
-        "Size": "0x17",
-        "Offset": "0x881"
-      }
-    ]
-  },
-  "ActionStateMachineInterface": {
-    "Super": "Interface",
+  "ActionStatePriorityTableUtility": {
+    "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
@@ -98,12 +72,45 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_XAURC[0x7]",
+        "Name": "pad0x7_H59JL[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x29"
       }
     ]
+  },
+  "ActionStateMachineComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x898",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x7e0",
+    "Attributes": [
+      {
+        "Name": "pad0x7c8_0TP8U[0x7c8]",
+        "Type": "char",
+        "Size": "0x7c8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "OnScreenLoggingEnabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x880"
+      },
+      {
+        "Name": "pad0x17_M5QHR[0x17]",
+        "Type": "char",
+        "Size": "0x17",
+        "Offset": "0x881"
+      }
+    ]
+  },
+  "SerialisedActionStateConstructionInfoTestFunctions": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "ActionStatePriorityTableData": {
     "Super": "DataAsset",
@@ -125,63 +132,28 @@
       }
     ]
   },
-  "SerialisedActionStateConstructionInfoTestFunctions": {
+  "ActionStateInitialStateCreatorDefinition": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ActionStateMachineComponentTestFunctions": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ActionStatePriorityTableUtility": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ActionStateCreatorDefinition": {
-    "Super": "Actor",
-    "FullSize": "0x3a0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TestActionStateId3": {
+  "CustomClientValidityActionStateId": {
     "Super": "ActionStateId",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "TestActionStateCreatorDefinition": {
-    "Super": "ActionStateCreatorDefinition",
-    "FullSize": "0x3b8",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_PAV94[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x3a0"
-      }
-    ]
   },
   "TestActionStateId2": {
-    "Super": "ActionStateId",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "NullActionStateId": {
-    "Super": "ActionStateId",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "CustomClientValidityActionState2Id": {
     "Super": "ActionStateId",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -195,6 +167,41 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "NullActionStateId": {
+    "Super": "ActionStateId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TestActionStateCreatorDefinition": {
+    "Super": "ActionStateCreatorDefinition",
+    "FullSize": "0x3b8",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_LJHOJ[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x3a0"
+      }
+    ]
+  },
+  "TestActionStateId3": {
+    "Super": "ActionStateId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CustomClientValidityActionState2Id": {
+    "Super": "ActionStateId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "SelfInitialisingActionStateMachineComponent": {
     "Super": "ActionStateMachineComponent",
     "FullSize": "0x8e0",
@@ -202,7 +209,7 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x8_ISU81[0x8]",
+        "Name": "pad0x8_ER03W[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x898"
@@ -226,19 +233,12 @@
         "Offset": "0x8b0"
       },
       {
-        "Name": "pad0x28_8BTP7[0x28]",
+        "Name": "pad0x28_LCMG7[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x8b8"
       }
     ]
-  },
-  "CustomClientValidityActionStateId": {
-    "Super": "ActionStateId",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "TestDerivedActionStateId": {
     "Super": "TestActionStateId",

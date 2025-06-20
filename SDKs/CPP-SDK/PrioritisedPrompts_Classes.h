@@ -7,6 +7,13 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class PrioritisedPromptsManagerInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class PromptsLocalServiceInterface: public Interface
 {
 public:
@@ -17,25 +24,16 @@ public:
 class PromptsLocalService: public Object
 {
 public:
-	char                                                         pad0x70_FSKC6[0x70];                               // 0x28(0x70)
+	char                                                         pad0x70_FO1XG[0x70];                               // 0x28(0x70)
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class PrioritisedPromptsManagerInterface: public Interface
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class GetPromptsLocalService: public BlueprintAsyncActionBase
 {
 public:
-};
-
-
-// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
-class PrioritisedPromptsManager: public Object
-{
-public:
-	char                                                         pad0x8_0LDUX[0x8];                                 // 0x28(0x8)
-	TArray<struct PrioritisedPromptWithHandle>                   AllPrompts;                                        // 0x30(0x10)
-	class PlayerController*                                      PlayerController;                                  // 0x40(0x8)
-	char                                                         pad0x30_ULXYR[0x30];                               // 0x48(0x30)
+	char                                                         pad0x10_IHZE8[0x10];                               // 0x28(0x10)
+	class Object*                                                WorldContextObject;                                // 0x38(0x8)
 };
 
 
@@ -44,10 +42,21 @@ class BasePromptCoordinator: public Object
 {
 public:
 	class AthenaPlayerController*                                PlayerController;                                  // 0x28(0x8)
-	char                                                         pad0x10_4L2KL[0x10];                               // 0x30(0x10)
+	char                                                         pad0x10_3Q26N[0x10];                               // 0x30(0x10)
 	class PrioritisedPromptsManager*                             PrioritisedPromptsManager;                         // 0x40(0x8)
 	class Character*                                             CharacterWithRegisteredEvents;                     // 0x48(0x8)
-	char                                                         pad0xc8_5ERBI[0xc8];                               // 0x50(0xc8)
+	char                                                         pad0xc8_AH5UB[0xc8];                               // 0x50(0xc8)
+};
+
+
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
+class PrioritisedPromptsManager: public Object
+{
+public:
+	char                                                         pad0x8_YADP8[0x8];                                 // 0x28(0x8)
+	TArray<struct PrioritisedPromptWithHandle>                   AllPrompts;                                        // 0x30(0x10)
+	class PlayerController*                                      PlayerController;                                  // 0x40(0x8)
+	char                                                         pad0x30_ZNKNR[0x30];                               // 0x48(0x30)
 };
 
 
@@ -56,15 +65,6 @@ class PromptCounterAccessKey: public Object
 {
 public:
 	struct FString                                               Key;                                               // 0x28(0x10)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class GetPromptsLocalService: public BlueprintAsyncActionBase
-{
-public:
-	char                                                         pad0x10_QYLZG[0x10];                               // 0x28(0x10)
-	class Object*                                                WorldContextObject;                                // 0x38(0x8)
 };
 
 

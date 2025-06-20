@@ -1,9 +1,31 @@
 {
+  "TreasuryWaveTracker": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Name": "pad0x1c_PCF82[0x1c]",
+        "Type": "char",
+        "Size": "0x1c",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventTreasuryRoomActive": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_I0WI0[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "EventTreasuryRoomFlooded": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x8_OZ73Z[0x8]",
+        "Name": "pad0x8_0IQYJ[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"
@@ -13,28 +35,6 @@
         "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "TreasuryWaveTracker": {
-    "ClassSize": "0x1c",
-    "Attributes": [
-      {
-        "Name": "pad0x1c_S1XX6[0x1c]",
-        "Type": "char",
-        "Size": "0x1c",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventTreasuryRoomInactive": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_947SI[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
       }
     ]
   },
@@ -48,7 +48,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_BV1Y1[0x7]",
+        "Name": "pad0x7_U86JW[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -102,18 +102,18 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_1XAER[0x7]",
+        "Name": "pad0x7_BKLTX[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
       }
     ]
   },
-  "EventTreasuryRoomActive": {
+  "EventTreasuryRoomInactive": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_FB6WQ[0x1]",
+        "Name": "pad0x1_FESVS[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"

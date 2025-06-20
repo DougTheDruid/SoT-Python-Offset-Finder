@@ -1,15 +1,4 @@
 {
-  "StaticMeshActorList": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Actors",
-        "Type": "TArray<class StaticMeshActor*>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "MemoryVisualiserStat": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -32,7 +21,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_M9820[0x4]",
+        "Name": "pad0x4_5WI98[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
@@ -169,6 +158,17 @@
       }
     ]
   },
+  "StaticMeshActorList": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Actors",
+        "Type": "TArray<class StaticMeshActor*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "MemoryVisualiserClass": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -185,7 +185,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_6VJIN[0x7]",
+        "Name": "pad0x7_80CVD[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
@@ -203,7 +203,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_9R146[0x4]",
+        "Name": "pad0x4_186PS[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x24"
@@ -238,7 +238,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x3_MTMIV[0x3]",
+        "Name": "pad0x3_POCZ3[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x31"
@@ -292,7 +292,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x4_66WYK[0x4]",
+        "Name": "pad0x4_A4N4F[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x54"

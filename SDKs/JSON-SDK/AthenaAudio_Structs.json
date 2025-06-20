@@ -1,45 +1,4 @@
 {
-  "AthenaAudioGameStateSettings": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "AudioGameStateGroupName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AudioGameStateFrontend",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "AudioGameStateLoading",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "AudioGameStateIngame",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "EngageAnimationStateGroupName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "EngageAnimationStateEngageName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "StoryDrivenAudioPortalSetting": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -130,6 +89,47 @@
         "Type": "TArray<class WwiseEvent*>",
         "Size": "0x10",
         "Offset": "0x70"
+      }
+    ]
+  },
+  "AthenaAudioGameStateSettings": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "AudioGameStateGroupName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AudioGameStateFrontend",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "AudioGameStateLoading",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "AudioGameStateIngame",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "EngageAnimationStateGroupName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "EngageAnimationStateEngageName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x28"
       }
     ]
   },

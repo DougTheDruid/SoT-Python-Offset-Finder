@@ -1,4 +1,21 @@
 {
+  "FlameData": {
+    "ClassSize": "0x2",
+    "Attributes": [
+      {
+        "Name": "FlameOfFateType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SkipChangeAnimation",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1"
+      }
+    ]
+  },
   "PlayerTookFlameOfFateEvent": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -21,39 +38,10 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_1106U[0x7]",
+        "Name": "pad0x7_Z8UHK[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
-      }
-    ]
-  },
-  "SetShipFlameOfFateEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "FlameOfFateType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x7_Q69K3[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "Source",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Ship",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x10"
       }
     ]
   },
@@ -67,10 +55,33 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x8_XC9BV[0x8]",
+        "Name": "pad0x8_7NI8C[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "SetFlameOfFateEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "FlameOfFateType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_V84EK[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "Source",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -96,15 +107,15 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_4ZPJB[0x7]",
+        "Name": "pad0x7_Z4PDC[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
       }
     ]
   },
-  "FlameData": {
-    "ClassSize": "0x2",
+  "SetShipFlameOfFateEvent": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "FlameOfFateType",
@@ -113,24 +124,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "SkipChangeAnimation",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1"
-      }
-    ]
-  },
-  "SetFlameOfFateEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "FlameOfFateType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x7_U88AU[0x7]",
+        "Name": "pad0x7_33AKY[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -140,6 +134,12 @@
         "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x8"
+      },
+      {
+        "Name": "Ship",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x10"
       }
     ]
   },

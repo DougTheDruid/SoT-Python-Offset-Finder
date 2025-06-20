@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 JsonObjectWrapper:
   Attributes:
-  - Name: pad0x18_ZYZOJ[0x18]
+  - Name: pad0x18_RZFES[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -27,14 +27,14 @@ TestFloatObject:
   ClassSize: '0x8'
 TestInt32MapSerializationObject:
   Attributes:
-  - Name: pad0x50_6DETQ[0x50]
+  - Name: pad0x50_ZI76F[0x50]
     Offset: '0x0'
     Size: '0x50'
     Type: char
   ClassSize: '0x50'
 TestInvalidStringMapSerializationObject:
   Attributes:
-  - Name: pad0x50_Y1ROU[0x50]
+  - Name: pad0x50_HJTWL[0x50]
     Offset: '0x0'
     Size: '0x50'
     Type: char
@@ -48,7 +48,7 @@ TestMessageDateTime:
   ClassSize: '0x8'
 TestMessageInt64:
   Attributes:
-  - Name: pad0x8_YOJAA[0x8]
+  - Name: pad0x8_RF52M[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -62,7 +62,7 @@ TestMessageTimespan:
   ClassSize: '0x8'
 TestMessageUInt64:
   Attributes:
-  - Name: pad0x8_I9N52[0x8]
+  - Name: pad0x8_6VBAJ[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -80,7 +80,7 @@ TestSerializationObject:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_FN6R2[0x3]
+  - Name: pad0x3_BDB76[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -99,7 +99,7 @@ TestSerializationObject:
   ClassSize: '0x28'
 TestStringMapSerializationObject:
   Attributes:
-  - Name: pad0x50_NYJ7N[0x50]
+  - Name: pad0x50_O9BLV[0x50]
     Offset: '0x0'
     Size: '0x50'
     Type: char
@@ -117,7 +117,7 @@ TestTextObject:
   ClassSize: '0x70'
 TestUStructMapSerializationObject:
   Attributes:
-  - Name: pad0x50_BXLAW[0x50]
+  - Name: pad0x50_TP373[0x50]
     Offset: '0x0'
     Size: '0x50'
     Type: char

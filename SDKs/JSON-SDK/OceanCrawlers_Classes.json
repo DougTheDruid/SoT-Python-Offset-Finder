@@ -1,36 +1,4 @@
 {
-  "OceanCrawlerAudioBroadcaster": {
-    "Super": "ActorComponent",
-    "FullSize": "0x1e8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x130",
-    "Attributes": [
-      {
-        "Name": "pad0x20_8KKCM[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "CachedOwner",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0xd8"
-      },
-      {
-        "Name": "pad0x100_9MRUW[0x100]",
-        "Type": "char",
-        "Size": "0x100",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "LoadedAudioDataAsset",
-        "Type": "class OceanCrawlerAudioParamsDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x1e0"
-      }
-    ]
-  },
   "OceanCrawlerAudioParamsDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0xa0",
@@ -88,10 +56,42 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x7_B2MIE[0x7]",
+        "Name": "pad0x7_71B1S[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x61"
+      }
+    ]
+  },
+  "OceanCrawlerAudioBroadcaster": {
+    "Super": "ActorComponent",
+    "FullSize": "0x1e8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x130",
+    "Attributes": [
+      {
+        "Name": "pad0x20_9WLDL[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "CachedOwner",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "pad0x100_6WML4[0x100]",
+        "Type": "char",
+        "Size": "0x100",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "LoadedAudioDataAsset",
+        "Type": "class OceanCrawlerAudioParamsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x1e0"
       }
     ]
   },

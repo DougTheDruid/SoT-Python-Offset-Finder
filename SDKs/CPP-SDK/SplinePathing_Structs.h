@@ -4,10 +4,10 @@
 // https://github.com/DougTheDruid
 
 // Size 0x1
-struct FixedSplinePathingActorMovementStartedEvent
+struct FixedSplinePathingActorMovementEndedEvent
 {
 public:
-	char                                                         pad0x1_TIQTZ[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_0HUJA[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -20,10 +20,10 @@ public:
 
 
 // Size 0x1
-struct FixedSplinePathingActorMovementEndedEvent
+struct FixedSplinePathingActorMovementStartedEvent
 {
 public:
-	char                                                         pad0x1_FGYM7[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_HPDYO[0x1];                                 // 0x0(0x1)
 };
 
 

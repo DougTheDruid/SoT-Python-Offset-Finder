@@ -28,22 +28,12 @@ struct MerchantContractDeliveryRequest
 {
 public:
 	int                                                          Id;                                                // 0x0(0x4)
-	char                                                         pad0x4_FRNRN[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_AL0RT[0x4];                                 // 0x4(0x4)
 	struct MerchantContractItemDesc                              ItemDesc;                                          // 0x8(0x28)
 	int                                                          NumToAllocate;                                     // 0x30(0x4)
 	int                                                          NumToCollect;                                      // 0x34(0x4)
 	int                                                          NumToDeliver;                                      // 0x38(0x4)
-	char                                                         pad0x4_RPRSV[0x4];                                 // 0x3c(0x4)
-};
-
-
-// Size 0xc8
-struct MerchantContract
-{
-public:
-	char                                                         pad0x20_6ZCZP[0x20];                               // 0x0(0x20)
-	TArray<struct MerchantContractDeliveryRequest>               DeliveryRequests;                                  // 0x20(0x10)
-	char                                                         pad0x98_XBNXT[0x98];                               // 0x30(0x98)
+	char                                                         pad0x4_OUH29[0x4];                                 // 0x3c(0x4)
 };
 
 
@@ -54,6 +44,16 @@ public:
 	struct Guid                                                  Id;                                                // 0x0(0x10)
 	struct FName                                                 IslandName;                                        // 0x10(0x8)
 	TArray<struct MerchantContractDeliveryRequest>               Requests;                                          // 0x18(0x10)
+};
+
+
+// Size 0xc8
+struct MerchantContract
+{
+public:
+	char                                                         pad0x20_57G1Q[0x20];                               // 0x0(0x20)
+	TArray<struct MerchantContractDeliveryRequest>               DeliveryRequests;                                  // 0x20(0x10)
+	char                                                         pad0x98_ZKL1H[0x98];                               // 0x30(0x98)
 };
 
 

@@ -1,59 +1,106 @@
 {
-  "TaleQuestGenerateClueSiteAtSeaLocationStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0xf8",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x60",
+  "SeaClueCreator": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x60_42JDK[0x60]",
+        "Name": "pad0x8_47TM9[0x8]",
         "Type": "char",
-        "Size": "0x60",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "ClueFactoryConfig": {
+    "Super": "DataAsset",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "LandClueCreators",
+        "Type": "TArray<class LandClueCreator*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "SeaClueCreators",
+        "Type": "TArray<class SeaClueCreator*>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "ChoiceStrategy",
+        "Type": "class ClueChoiceSelectionStrategy*",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "RestrictedClueTypes",
+        "Type": "TArray<struct RestrictedClueType>",
+        "Size": "0x10",
+        "Offset": "0x50"
+      }
+    ]
+  },
+  "TaleQuestSpawnDebrisAtClueSiteStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x140",
+    "InheritedSize": "0x98",
+    "ClassSize": "0xa8",
+    "Attributes": [
+      {
+        "Name": "pad0xa8_YHJNZ[0xa8]",
+        "Type": "char",
+        "Size": "0xa8",
         "Offset": "0x98"
       }
     ]
   },
-  "TaleQuestSelectClueSiteForLootStepDesc": {
+  "TaleQuestStoreClueOnActorStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestSpawnLootItemInClueSiteStepDesc": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0xf8",
+    "FullSize": "0x118",
     "InheritedSize": "0x80",
-    "ClassSize": "0x78",
+    "ClassSize": "0x98",
     "Attributes": [
       {
-        "Name": "SelectionStrategy",
-        "Type": "class TaleQuestArrayEntrySelectionStrategy*",
-        "Size": "0x8",
+        "Name": "LootItem",
+        "Type": "struct QuestVariableClass",
+        "Size": "0x30",
         "Offset": "0x80"
       },
       {
-        "Name": "ClueSiteLootRestrictions",
-        "Type": "class ClueSiteLootRestrictionsDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "LootType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "pad0x7_1CVAD[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x91"
-      },
-      {
-        "Name": "OutputClueSite",
+        "Name": "ClueSite",
         "Type": "struct QuestVariableClueSite",
         "Size": "0x30",
-        "Offset": "0x98"
+        "Offset": "0xb0"
       },
       {
-        "Name": "MaxedAllClueSites",
-        "Type": "struct QuestVariableBool",
+        "Name": "SpawnedLootItem",
+        "Type": "struct QuestVariableItemInfo",
         "Size": "0x30",
-        "Offset": "0xc8"
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "Tracked",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "pad0x7_USZD1[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x111"
       }
     ]
   },
@@ -63,107 +110,6 @@
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "TaleQuestClueSiteServiceDesc": {
-    "Super": "TaleQuestServiceDesc",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "WeightedDebrisDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Debris",
-        "Type": "TArray<struct WeightedDebris>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "TaleQuestSelectClueSiteForLootStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x100",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x68",
-    "Attributes": [
-      {
-        "Name": "StepDesc",
-        "Type": "class TaleQuestSelectClueSiteForLootStepDesc*",
-        "Size": "0x8",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "pad0x60_2TB8C[0x60]",
-        "Type": "char",
-        "Size": "0x60",
-        "Offset": "0xa0"
-      }
-    ]
-  },
-  "NPCLootSpawnComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x8_SVLPE[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "LootItemSpawnRelativeLocations",
-        "Type": "TArray<struct Vector>",
-        "Size": "0x10",
-        "Offset": "0xc0"
-      }
-    ]
-  },
-  "TaleQuestChooseLandOrSeaStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x198",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x100",
-    "Attributes": [
-      {
-        "Name": "pad0x18_3IFHE[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "SeaClueSiteTypes",
-        "Type": "class SeaClueSiteTypesDataAsset*",
-        "Size": "0x8",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "pad0xe0_3JCV2[0xe0]",
-        "Type": "char",
-        "Size": "0xe0",
-        "Offset": "0xb8"
-      }
-    ]
-  },
-  "TaleQuestGenerateDebrisTypeForVoyageRankStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0xf8",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "pad0x60_4OV78[0x60]",
-        "Type": "char",
-        "Size": "0x60",
-        "Offset": "0x98"
-      }
-    ]
   },
   "EnvQueryTest_SeaClueSpawnLocation": {
     "Super": "EnvQueryTest",
@@ -208,83 +154,330 @@
         "Offset": "0x188"
       },
       {
-        "Name": "pad0x8_XBOXD[0x8]",
+        "Name": "pad0x8_37O4M[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x190"
       }
     ]
   },
-  "SeaClueSiteTypesDataAsset": {
-    "Super": "DataAsset",
+  "ClueFactory": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Config",
+        "Type": "class ClueFactoryConfig*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "TaleQuestGenerateClueSiteOnIslandStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xe8",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Name": "IslandName",
+        "Type": "struct QuestVariableName",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "ClueSite",
+        "Type": "struct QuestVariableClueSite",
+        "Size": "0x30",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "ClueGenerationConfiguration",
+        "Type": "class ClueFactoryConfig*",
+        "Size": "0x8",
+        "Offset": "0xe0"
+      }
+    ]
+  },
+  "TaleQuestGenerateClueSiteAtSeaLocationStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xf8",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "pad0x60_5874I[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "TaleQuestIsClueOfTypeStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xe8",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Name": "ClueSiteTypeToMatch",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "ClueSite",
+        "Type": "struct QuestVariableClueSite",
+        "Size": "0x30",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "IsMatchingType",
+        "Type": "struct QuestVariableBool",
+        "Size": "0x30",
+        "Offset": "0xb8"
+      }
+    ]
+  },
+  "TaleQuestChooseLandOrSeaStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x198",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x100",
+    "Attributes": [
+      {
+        "Name": "pad0x18_A0D8J[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "SeaClueSiteTypes",
+        "Type": "class SeaClueSiteTypesDataAsset*",
+        "Size": "0x8",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "pad0xe0_YWYDW[0xe0]",
+        "Type": "char",
+        "Size": "0xe0",
+        "Offset": "0xb8"
+      }
+    ]
+  },
+  "TaleQuestChooseLandOrSeaStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x160",
+    "InheritedSize": "0x80",
+    "ClassSize": "0xe0",
+    "Attributes": [
+      {
+        "Name": "SeaClueSiteTypes",
+        "Type": "class SeaClueSiteTypesDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "ProjectionAngleInDegrees",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "MinProjectionProportion",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8c"
+      },
+      {
+        "Name": "MaxProjectionProportion",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "LandClueChanceWhenPreviousClueWasSea",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x94"
+      },
+      {
+        "Name": "LandClueChanceWhenPreviousClueWasLand",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x4_UQK06[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x9c"
+      },
+      {
+        "Name": "ProjectionPoint",
+        "Type": "struct QuestVariableVector",
+        "Size": "0x30",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "TradeRouteData",
+        "Type": "struct QuestVariableTradeRouteData",
+        "Size": "0x30",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "IsSeaLocation",
+        "Type": "struct QuestVariableBool",
+        "Size": "0x30",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "ValidIslandNames",
+        "Type": "struct QuestVariableNameArray",
+        "Size": "0x30",
+        "Offset": "0x130"
+      }
+    ]
+  },
+  "ClueSiteData": {
+    "Super": "Object",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "ClueSiteTypes",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
+        "Name": "DebrisTrackingType",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0xf_ZKUXE[0xf]",
+        "Type": "char",
+        "Size": "0xf",
+        "Offset": "0x29"
       }
     ]
   },
-  "TaleQuestStoreClueOnActorStep": {
+  "TaleQuestSelectClueSiteForLootStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xf8",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "SelectionStrategy",
+        "Type": "class TaleQuestArrayEntrySelectionStrategy*",
+        "Size": "0x8",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "ClueSiteLootRestrictions",
+        "Type": "class ClueSiteLootRestrictionsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "LootType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "pad0x7_2ST55[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x91"
+      },
+      {
+        "Name": "OutputClueSite",
+        "Type": "struct QuestVariableClueSite",
+        "Size": "0x30",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "MaxedAllClueSites",
+        "Type": "struct QuestVariableBool",
+        "Size": "0x30",
+        "Offset": "0xc8"
+      }
+    ]
+  },
+  "TaleQuestSpawnLootItemInClueSiteStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x98",
     "InheritedSize": "0x98",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "TaleQuestClueSiteService": {
-    "Super": "TaleQuestService",
-    "FullSize": "0xd8",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x78",
+  "ClueDescriptorContainerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ClueDestinationDescriptor": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "Desc",
-        "Type": "class TaleQuestClueSiteServiceDesc*",
-        "Size": "0x8",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "ClueSites",
-        "Type": "TArray<struct ClueSite>",
-        "Size": "0x10",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "DebugClueSiteIds",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0xc8"
+        "Name": "pad0x18_P9XTY[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x28"
       }
     ]
   },
-  "ClueConnectionConfig": {
-    "Super": "DataAsset",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
+  "NPCLootSpawnComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "CluesThatCanDescribeSites",
-        "Type": "TArray<struct ClueSiteTypeSupportedDescribedByEntry>",
-        "Size": "0x10",
-        "Offset": "0x28"
+        "Name": "pad0x8_EBT1D[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
       },
       {
-        "Name": "ClueGenerators",
-        "Type": "TArray<class ClueDescriptorGenerator*>",
+        "Name": "LootItemSpawnRelativeLocations",
+        "Type": "TArray<struct Vector>",
         "Size": "0x10",
-        "Offset": "0x38"
-      },
+        "Offset": "0xc0"
+      }
+    ]
+  },
+  "TaleQuestGenerateClueSiteOnIslandStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xf8",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x60",
+    "Attributes": [
       {
-        "Name": "DestinationGenerators",
-        "Type": "TArray<class ClueDestinationGenerator*>",
-        "Size": "0x10",
-        "Offset": "0x48"
+        "Name": "pad0x60_UYUIF[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "TaleQuestGenerateDebrisTypeForVoyageRankStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xf8",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "pad0x60_R4WLS[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x98"
       }
     ]
   },
@@ -295,38 +488,19 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x60_D1KJS[0x60]",
+        "Name": "pad0x60_T8JBX[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0x98"
       }
     ]
   },
-  "TaleQuestGenerateLootDescForVoyageRankStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xe8",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x68",
-    "Attributes": [
-      {
-        "Name": "VoyageRank",
-        "Type": "struct QuestVariableInt",
-        "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "LootDescArray",
-        "Type": "struct QuestVariableItemDescTypeArray",
-        "Size": "0x30",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "LootForRankDescAsset",
-        "Type": "class LootForVoyageRankDescAsset*",
-        "Size": "0x8",
-        "Offset": "0xe0"
-      }
-    ]
+  "ClueDescriptor": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "ClueConnectionBlueprintFunctionLibrary": {
     "Super": "BlueprintFunctionLibrary",
@@ -335,17 +509,121 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ClueSiteLootRestrictionsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
+  "ClueChoiceSelectionStrategy": {
+    "Super": "Object",
+    "FullSize": "0x28",
     "InheritedSize": "0x28",
-    "ClassSize": "0x10",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ClueDestinationGenerator": {
+    "Super": "Object",
+    "FullSize": "0x90",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x68",
     "Attributes": [
       {
-        "Name": "ClueSiteLootRestrictions",
-        "Type": "TArray<struct ClueSiteLootRestriction>",
-        "Size": "0x10",
+        "Name": "RequiredClueSiteDataType",
+        "Type": "class UClass*",
+        "Size": "0x8",
         "Offset": "0x28"
+      },
+      {
+        "Name": "WeightedSupportedDescriptorTypes",
+        "Type": "TArray<struct WeightedClueDestinationDescriptor>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x50_QWC6U[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "TaleQuestGenerateClueSiteAtSeaLocationStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xe8",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Name": "ApproximateLocation",
+        "Type": "struct QuestVariableVector",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "ClueSite",
+        "Type": "struct QuestVariableClueSite",
+        "Size": "0x30",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "ClueFactoryConfiguration",
+        "Type": "class ClueFactoryConfig*",
+        "Size": "0x8",
+        "Offset": "0xe0"
+      }
+    ]
+  },
+  "NPCLootSpawnInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestUpdateBuoyancyAutoSinkSettingForItemStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "Item",
+        "Type": "struct QuestVariableItemInfo",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "EnableAutoSink",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "pad0x7_R4HP6[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xb1"
+      }
+    ]
+  },
+  "TaleQuestStoreClueOnActorStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x110",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "ClueDescriptor",
+        "Type": "struct QuestVariableClueDescriptor",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "Actor",
+        "Type": "struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "ClueActor",
+        "Type": "struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0xe0"
       }
     ]
   },
@@ -382,56 +660,139 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_ZWVJE[0x8]",
+        "Name": "pad0x8_3QAWE[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
       }
     ]
   },
-  "ClueSiteData": {
-    "Super": "Object",
+  "TaleQuestSelectClueSiteForLootStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x100",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Name": "StepDesc",
+        "Type": "class TaleQuestSelectClueSiteForLootStepDesc*",
+        "Size": "0x8",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x60_QX7NB[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0xa0"
+      }
+    ]
+  },
+  "TaleQuestClueSiteServiceDesc": {
+    "Super": "TaleQuestServiceDesc",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "LootForVoyageRankDescAsset": {
+    "Super": "DataAsset",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "DebrisTrackingType",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "RankBasedLootDistribution",
+        "Type": "TArray<struct LootToRangeDist>",
+        "Size": "0x10",
         "Offset": "0x28"
-      },
-      {
-        "Name": "pad0xf_1D89K[0xf]",
-        "Type": "char",
-        "Size": "0xf",
-        "Offset": "0x29"
       }
     ]
   },
-  "ClueDestinationGenerator": {
-    "Super": "Object",
-    "FullSize": "0x90",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x68",
+  "TaleQuestGenerateCluePointingToSiteStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x158",
+    "InheritedSize": "0x98",
+    "ClassSize": "0xc0",
     "Attributes": [
       {
-        "Name": "RequiredClueSiteDataType",
+        "Name": "pad0xc0_13C0O[0xc0]",
+        "Type": "char",
+        "Size": "0xc0",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "ClueConnectionConfig": {
+    "Super": "DataAsset",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "CluesThatCanDescribeSites",
+        "Type": "TArray<struct ClueSiteTypeSupportedDescribedByEntry>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ClueGenerators",
+        "Type": "TArray<class ClueDescriptorGenerator*>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "DestinationGenerators",
+        "Type": "TArray<class ClueDestinationGenerator*>",
+        "Size": "0x10",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "ClueSiteLootRestrictionsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ClueSiteLootRestrictions",
+        "Type": "TArray<struct ClueSiteLootRestriction>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "ClueDescriptorGenerator": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "DescriptorType",
         "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
-        "Name": "WeightedSupportedDescriptorTypes",
-        "Type": "TArray<struct WeightedClueDestinationDescriptor>",
+        "Name": "SupportedDestinationTypes",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x30"
-      },
+      }
+    ]
+  },
+  "TaleQuestUpdateBuoyancyAutoSinkSettingForItemStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xd0",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x38",
+    "Attributes": [
       {
-        "Name": "pad0x50_GXUOM[0x50]",
+        "Name": "pad0x38_X201W[0x38]",
         "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x40"
+        "Size": "0x38",
+        "Offset": "0x98"
       }
     ]
   },
@@ -441,105 +802,6 @@
     "InheritedSize": "0x98",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "TaleQuestStoreClueOnActorStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x110",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "ClueDescriptor",
-        "Type": "struct QuestVariableClueDescriptor",
-        "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "Actor",
-        "Type": "struct QuestVariableActor",
-        "Size": "0x30",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "ClueActor",
-        "Type": "struct QuestVariableActor",
-        "Size": "0x30",
-        "Offset": "0xe0"
-      }
-    ]
-  },
-  "DebrisForVoyageRankDescAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "RankBasedDebrisDistribution",
-        "Type": "TArray<struct DebrisToRangeDist>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "ClueDescriptor": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TaleQuestUpdateBuoyancyAutoSinkSettingForItemStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xb8",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "Item",
-        "Type": "struct QuestVariableItemInfo",
-        "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "EnableAutoSink",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "pad0x7_T2M0M[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0xb1"
-      }
-    ]
-  },
-  "TaleQuestGenerateClueSiteAtSeaLocationStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xe8",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x68",
-    "Attributes": [
-      {
-        "Name": "ApproximateLocation",
-        "Type": "struct QuestVariableVector",
-        "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "ClueSite",
-        "Type": "struct QuestVariableClueSite",
-        "Size": "0x30",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "ClueFactoryConfiguration",
-        "Type": "class ClueFactoryConfig*",
-        "Size": "0x8",
-        "Offset": "0xe0"
-      }
-    ]
   },
   "TaleQuestSpawnDebrisAtClueSiteStepDesc": {
     "Super": "TaleQuestStepDesc",
@@ -567,77 +829,50 @@
       }
     ]
   },
-  "TaleQuestGenerateCluePointingToSiteStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x158",
-    "InheritedSize": "0x98",
-    "ClassSize": "0xc0",
+  "ClueLifetimeBlueprintFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestGenerateLootDescForVoyageRankStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xe8",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x68",
     "Attributes": [
       {
-        "Name": "pad0xc0_6MDNC[0xc0]",
-        "Type": "char",
-        "Size": "0xc0",
-        "Offset": "0x98"
+        "Name": "VoyageRank",
+        "Type": "struct QuestVariableInt",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "LootDescArray",
+        "Type": "struct QuestVariableItemDescTypeArray",
+        "Size": "0x30",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "LootForRankDescAsset",
+        "Type": "class LootForVoyageRankDescAsset*",
+        "Size": "0x8",
+        "Offset": "0xe0"
       }
     ]
   },
-  "TaleQuestUpdateBuoyancyAutoSinkSettingForItemStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0xd0",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "pad0x38_18DN2[0x38]",
-        "Type": "char",
-        "Size": "0x38",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "LootForVoyageRankDescAsset": {
+  "SeaClueSiteTypesDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "RankBasedLootDistribution",
-        "Type": "TArray<struct LootToRangeDist>",
+        "Name": "ClueSiteTypes",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x28"
-      }
-    ]
-  },
-  "ClueDescriptorContainerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x8_CBWKE[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "CurrentClue",
-        "Type": "class ClueDescriptor*",
-        "Size": "0x8",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "HasClueBeenGiven",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "pad0x7_JK430[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0xc9"
       }
     ]
   },
@@ -685,324 +920,89 @@
       }
     ]
   },
-  "SeaClueCreator": {
-    "Super": "Object",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_3ZGM2[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "TaleQuestSpawnLootItemInClueSiteStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x98",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ClueDescriptorContainerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ClueChoiceSelectionStrategy": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TaleQuestChooseLandOrSeaStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x160",
-    "InheritedSize": "0x80",
-    "ClassSize": "0xe0",
-    "Attributes": [
-      {
-        "Name": "SeaClueSiteTypes",
-        "Type": "class SeaClueSiteTypesDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "ProjectionAngleInDegrees",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "MinProjectionProportion",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8c"
-      },
-      {
-        "Name": "MaxProjectionProportion",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "LandClueChanceWhenPreviousClueWasSea",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x94"
-      },
-      {
-        "Name": "LandClueChanceWhenPreviousClueWasLand",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "pad0x4_GIH83[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x9c"
-      },
-      {
-        "Name": "ProjectionPoint",
-        "Type": "struct QuestVariableVector",
-        "Size": "0x30",
-        "Offset": "0xa0"
-      },
-      {
-        "Name": "TradeRouteData",
-        "Type": "struct QuestVariableTradeRouteData",
-        "Size": "0x30",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "IsSeaLocation",
-        "Type": "struct QuestVariableBool",
-        "Size": "0x30",
-        "Offset": "0x100"
-      },
-      {
-        "Name": "ValidIslandNames",
-        "Type": "struct QuestVariableNameArray",
-        "Size": "0x30",
-        "Offset": "0x130"
-      }
-    ]
-  },
-  "ClueDescriptorGenerator": {
-    "Super": "Object",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "DescriptorType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "SupportedDestinationTypes",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "NPCLootSpawnInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ClueDestinationDescriptor": {
-    "Super": "Object",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_IYH1R[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "TaleQuestGenerateClueSiteOnIslandStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xe8",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x68",
-    "Attributes": [
-      {
-        "Name": "IslandName",
-        "Type": "struct QuestVariableName",
-        "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "ClueSite",
-        "Type": "struct QuestVariableClueSite",
-        "Size": "0x30",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "ClueGenerationConfiguration",
-        "Type": "class ClueFactoryConfig*",
-        "Size": "0x8",
-        "Offset": "0xe0"
-      }
-    ]
-  },
-  "TaleQuestIsClueOfTypeStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xe8",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x68",
-    "Attributes": [
-      {
-        "Name": "ClueSiteTypeToMatch",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "ClueSite",
-        "Type": "struct QuestVariableClueSite",
-        "Size": "0x30",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "IsMatchingType",
-        "Type": "struct QuestVariableBool",
-        "Size": "0x30",
-        "Offset": "0xb8"
-      }
-    ]
-  },
-  "ClueFactoryConfig": {
+  "WeightedDebrisDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x60",
+    "FullSize": "0x38",
     "InheritedSize": "0x28",
-    "ClassSize": "0x38",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "LandClueCreators",
-        "Type": "TArray<class LandClueCreator*>",
+        "Name": "Debris",
+        "Type": "TArray<struct WeightedDebris>",
         "Size": "0x10",
         "Offset": "0x28"
-      },
-      {
-        "Name": "SeaClueCreators",
-        "Type": "TArray<class SeaClueCreator*>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "ChoiceStrategy",
-        "Type": "class ClueChoiceSelectionStrategy*",
-        "Size": "0x8",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "RestrictedClueTypes",
-        "Type": "TArray<struct RestrictedClueType>",
-        "Size": "0x10",
-        "Offset": "0x50"
       }
     ]
   },
-  "TaleQuestGenerateClueSiteOnIslandStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0xf8",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x60",
+  "ClueDescriptorContainerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x60_76CV3[0x60]",
+        "Name": "pad0x8_Y7ZJ9[0x8]",
         "Type": "char",
-        "Size": "0x60",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "TaleQuestSpawnLootItemInClueSiteStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x118",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x98",
-    "Attributes": [
-      {
-        "Name": "LootItem",
-        "Type": "struct QuestVariableClass",
-        "Size": "0x30",
-        "Offset": "0x80"
+        "Size": "0x8",
+        "Offset": "0xb8"
       },
       {
-        "Name": "ClueSite",
-        "Type": "struct QuestVariableClueSite",
-        "Size": "0x30",
-        "Offset": "0xb0"
+        "Name": "CurrentClue",
+        "Type": "class ClueDescriptor*",
+        "Size": "0x8",
+        "Offset": "0xc0"
       },
       {
-        "Name": "SpawnedLootItem",
-        "Type": "struct QuestVariableItemInfo",
-        "Size": "0x30",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "Tracked",
+        "Name": "HasClueBeenGiven",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x110"
+        "Offset": "0xc8"
       },
       {
-        "Name": "pad0x7_W8CKD[0x7]",
+        "Name": "pad0x7_Z1WDR[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0x111"
+        "Offset": "0xc9"
       }
     ]
   },
-  "ClueFactory": {
-    "Super": "Object",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
+  "TaleQuestClueSiteService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0xd8",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x78",
     "Attributes": [
       {
-        "Name": "Config",
-        "Type": "class ClueFactoryConfig*",
+        "Name": "Desc",
+        "Type": "class TaleQuestClueSiteServiceDesc*",
         "Size": "0x8",
-        "Offset": "0x28"
+        "Offset": "0x60"
+      },
+      {
+        "Name": "ClueSites",
+        "Type": "TArray<struct ClueSite>",
+        "Size": "0x10",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "DebugClueSiteIds",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0xc8"
       }
     ]
   },
-  "ClueLifetimeBlueprintFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
+  "DebrisForVoyageRankDescAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
     "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TaleQuestSpawnDebrisAtClueSiteStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x140",
-    "InheritedSize": "0x98",
-    "ClassSize": "0xa8",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0xa8_0BEW5[0xa8]",
-        "Type": "char",
-        "Size": "0xa8",
-        "Offset": "0x98"
+        "Name": "RankBasedDebrisDistribution",
+        "Type": "TArray<struct DebrisToRangeDist>",
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },
@@ -1026,7 +1026,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_00ZXN[0x4]",
+        "Name": "pad0x4_X1OB8[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"

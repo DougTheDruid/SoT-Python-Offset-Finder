@@ -4,13 +4,6 @@
 // https://github.com/DougTheDruid
 
 // Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class ClampedFreelookXAnalogInputId: public AnalogInputId
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
 class ClampedFreelookMouseYInputId: public AnalogInputId
 {
 public:
@@ -28,7 +21,7 @@ public:
 class AutoMoveInputComponent: public InputComponent
 {
 public:
-	char                                                         pad0x20_EL62X[0x20];                               // 0x140(0x20)
+	char                                                         pad0x20_NP45X[0x20];                               // 0x140(0x20)
 };
 
 
@@ -39,11 +32,10 @@ public:
 };
 
 
-// Size 0x70 (Full Size[0x1d0] - InheritedSize[0x160]
-class MovementInterferenceComponent: public AutoMoveInputComponent
+// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
+class ClampedFreelookXAnalogInputId: public AnalogInputId
 {
 public:
-	char                                                         pad0x70_7QN0Q[0x70];                               // 0x160(0x70)
 };
 
 
@@ -51,15 +43,15 @@ public:
 class AthenaCharacterBaseInputComponent: public AutoMoveInputComponent
 {
 public:
-	char                                                         pad0x128_W4GIU[0x128];                             // 0x160(0x128)
+	char                                                         pad0x128_7XFE1[0x128];                             // 0x160(0x128)
 };
 
 
-// Size 0x8 (Full Size[0x290] - InheritedSize[0x288]
-class AthenaCharacterBaseInputComponentWithInterference: public AthenaCharacterBaseInputComponent
+// Size 0x70 (Full Size[0x1d0] - InheritedSize[0x160]
+class MovementInterferenceComponent: public AutoMoveInputComponent
 {
 public:
-	char                                                         pad0x8_J9QPW[0x8];                                 // 0x288(0x8)
+	char                                                         pad0x70_7VTIU[0x70];                               // 0x160(0x70)
 };
 
 
@@ -68,6 +60,14 @@ class LookingAtWieldableInputComponent: public AthenaCharacterBaseInputComponent
 {
 public:
 	class Actor*                                                 TargetWieldable;                                   // 0x288(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x290] - InheritedSize[0x288]
+class AthenaCharacterBaseInputComponentWithInterference: public AthenaCharacterBaseInputComponent
+{
+public:
+	char                                                         pad0x8_GZP5O[0x8];                                 // 0x288(0x8)
 };
 
 

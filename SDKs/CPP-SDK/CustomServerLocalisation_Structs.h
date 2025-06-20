@@ -12,20 +12,20 @@ public:
 };
 
 
-// Size 0x50
-struct CustomServerLocalisationModel
-{
-public:
-	char                                                         pad0x50_XTU56[0x50];                               // 0x0(0x50)
-};
-
-
 // Size 0x20
 struct CustomServerClientData
 {
 public:
 	struct FString                                               Key;                                               // 0x0(0x10)
-	char                                                         pad0x10_54NPB[0x10];                               // 0x10(0x10)
+	char                                                         pad0x10_TYLDJ[0x10];                               // 0x10(0x10)
+};
+
+
+// Size 0x50
+struct CustomServerLocalisationModel
+{
+public:
+	char                                                         pad0x50_RIDPD[0x50];                               // 0x0(0x50)
 };
 
 

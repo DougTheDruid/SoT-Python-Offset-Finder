@@ -29,7 +29,7 @@ public:
 struct GlobalDigSpotPopupEvent
 {
 public:
-	char                                                         pad0x18_1PWXC[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_924G7[0x18];                               // 0x0(0x18)
 	class PopUpMessageDesc*                                      PopUpDesc;                                         // 0x18(0x8)
 };
 

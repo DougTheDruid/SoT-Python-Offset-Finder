@@ -1,33 +1,4 @@
 {
-  "SpawnAICustomSetupTaskData": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "MaxAI",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x4_3IK07[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "Region",
-        "Type": "class TaleAIRegionBase*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Body",
-        "Type": "class TaleQuestStepDesc*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "SpawnAICustomPreSpawnTaskData": {
     "ClassSize": "0x78",
     "Attributes": [
@@ -56,7 +27,7 @@
         "Offset": "0x1c"
       },
       {
-        "Name": "pad0x3_ZR2VQ[0x3]",
+        "Name": "pad0x3_QHSPL[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1d"
@@ -105,47 +76,6 @@
       }
     ]
   },
-  "SpawnAICustomOnDespawnTaskData": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Despawn_Index",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x4_J0P8E[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "Despawn_Pawn",
-        "Type": "class Pawn*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Despawn_Reason",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x7_K891H[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x11"
-      },
-      {
-        "Name": "Body",
-        "Type": "class TaleQuestStepDesc*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      }
-    ]
-  },
   "SpawnAICustomOnSpawnTaskData": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -156,7 +86,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_DDLT1[0x4]",
+        "Name": "pad0x4_5Y22F[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -185,7 +115,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_LZ8NX[0x4]",
+        "Name": "pad0x4_WPNL2[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -198,6 +128,35 @@
       }
     ]
   },
+  "SpawnAICustomSetupTaskData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "MaxAI",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_1WUHM[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "Region",
+        "Type": "class TaleAIRegionBase*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Body",
+        "Type": "class TaleQuestStepDesc*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "SpawnActorCustomOnCompleteWaveTaskData": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -206,6 +165,47 @@
         "Type": "class TaleQuestStepDesc*",
         "Size": "0x8",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "SpawnAICustomOnDespawnTaskData": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Despawn_Index",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_Q16P6[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "Despawn_Pawn",
+        "Type": "class Pawn*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Despawn_Reason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_FUNSA[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "Body",
+        "Type": "class TaleQuestStepDesc*",
+        "Size": "0x8",
+        "Offset": "0x18"
       }
     ]
   },

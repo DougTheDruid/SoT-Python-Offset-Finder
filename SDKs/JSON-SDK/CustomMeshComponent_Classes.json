@@ -1,15 +1,15 @@
 {
   "CustomMeshComponent": {
     "Super": "MeshComponent",
-    "FullSize": "0x5e0",
-    "InheritedSize": "0x5d0",
+    "FullSize": "0x5c0",
+    "InheritedSize": "0x5b0",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_A6B7T[0x10]",
+        "Name": "pad0x10_QQ86R[0x10]",
         "Type": "char",
         "Size": "0x10",
-        "Offset": "0x5d0"
+        "Offset": "0x5b0"
       }
     ]
   },

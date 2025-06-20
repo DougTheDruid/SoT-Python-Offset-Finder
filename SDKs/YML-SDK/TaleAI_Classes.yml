@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 TaleAICustomRegion:
   Attributes:
-  - Name: pad0x18_ZJIXP[0x18]
+  - Name: pad0x18_T7KZI[0x18]
     Offset: '0x70'
     Size: '0x18'
     Type: char
@@ -12,7 +12,7 @@ TaleAICustomRegion:
   Super: TaleAIRegionBase
 TaleAIRegionBase:
   Attributes:
-  - Name: pad0x8_LTFUS[0x8]
+  - Name: pad0x8_MUE5A[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
@@ -20,7 +20,7 @@ TaleAIRegionBase:
     Offset: '0x30'
     Size: '0x8'
     Type: class AIProximityPlayerTracker*
-  - Name: pad0x38_VHVQQ[0x38]
+  - Name: pad0x38_HUHSD[0x38]
     Offset: '0x38'
     Size: '0x38'
     Type: char
@@ -86,7 +86,7 @@ TaleQuestAISpawner:
   Super: Object
 TaleQuestSpawnAICustomOnDespawnFrame:
   Attributes:
-  - Name: pad0x8_QPKK2[0x8]
+  - Name: pad0x8_YKOI8[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
@@ -100,7 +100,7 @@ TaleQuestSpawnAICustomOnDespawnFrame:
   Super: Object
 TaleQuestSpawnAICustomOnDespawnTask:
   Attributes:
-  - Name: pad0x10_MDUOP[0x10]
+  - Name: pad0x10_PNDG2[0x10]
     Offset: '0x78'
     Size: '0x10'
     Type: char
@@ -114,7 +114,7 @@ TaleQuestSpawnAICustomOnDespawnTask:
   Super: TaleQuestSpawnAICustomTaskBase
 TaleQuestSpawnAICustomOnSpawnFrame:
   Attributes:
-  - Name: pad0x8_5G2E1[0x8]
+  - Name: pad0x8_QN0CN[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
@@ -128,7 +128,7 @@ TaleQuestSpawnAICustomOnSpawnFrame:
   Super: Object
 TaleQuestSpawnAICustomOnSpawnTask:
   Attributes:
-  - Name: pad0x10_BEE4B[0x10]
+  - Name: pad0x10_OG21Z[0x10]
     Offset: '0x78'
     Size: '0x10'
     Type: char
@@ -136,7 +136,7 @@ TaleQuestSpawnAICustomOnSpawnTask:
     Offset: '0x88'
     Size: '0x18'
     Type: struct SpawnAICustomOnSpawnTaskData
-  - Name: pad0x80_HG1YF[0x80]
+  - Name: pad0x80_C23EL[0x80]
     Offset: '0xa0'
     Size: '0x80'
     Type: char
@@ -146,7 +146,7 @@ TaleQuestSpawnAICustomOnSpawnTask:
   Super: TaleQuestSpawnAICustomTaskBase
 TaleQuestSpawnAICustomPreSpawnTask:
   Attributes:
-  - Name: pad0x18_WOGR1[0x18]
+  - Name: pad0x18_L7RAM[0x18]
     Offset: '0x78'
     Size: '0x18'
     Type: char
@@ -154,7 +154,7 @@ TaleQuestSpawnAICustomPreSpawnTask:
     Offset: '0x90'
     Size: '0x78'
     Type: struct SpawnAICustomPreSpawnTaskData
-  - Name: pad0x8_P4DI7[0x8]
+  - Name: pad0x8_478E8[0x8]
     Offset: '0x108'
     Size: '0x8'
     Type: char
@@ -164,7 +164,7 @@ TaleQuestSpawnAICustomPreSpawnTask:
   Super: TaleQuestSpawnAICustomTaskBase
 TaleQuestSpawnAICustomRootStep:
   Attributes:
-  - Name: pad0x10_MK0OC[0x10]
+  - Name: pad0x10_X0CUA[0x10]
     Offset: '0x98'
     Size: '0x10'
     Type: char
@@ -176,7 +176,7 @@ TaleQuestSpawnAICustomRootStep:
     Offset: '0xb8'
     Size: '0x10'
     Type: TArray<class TaleQuestSpawnAICustomTaskBase*>
-  - Name: pad0x10_8UCST[0x10]
+  - Name: pad0x10_18UH7[0x10]
     Offset: '0xc8'
     Size: '0x10'
     Type: char
@@ -184,7 +184,7 @@ TaleQuestSpawnAICustomRootStep:
     Offset: '0xd8'
     Size: '0x8'
     Type: class TaleAIRegionBase*
-  - Name: pad0xa8_IBAXT[0xa8]
+  - Name: pad0xa8_QP5SF[0xa8]
     Offset: '0xe0'
     Size: '0xa8'
     Type: char
@@ -194,7 +194,7 @@ TaleQuestSpawnAICustomRootStep:
   Super: TaleQuestStep
 TaleQuestSpawnAICustomRootStepDesc:
   Attributes:
-  - Name: pad0x8_NY4O3[0x8]
+  - Name: pad0x8_VYRPK[0x8]
     Offset: '0x80'
     Size: '0x8'
     Type: char
@@ -232,7 +232,7 @@ TaleQuestSpawnAICustomSetupTask:
     Offset: '0x78'
     Size: '0x18'
     Type: struct SpawnAICustomSetupTaskData
-  - Name: pad0x10_MG7A0[0x10]
+  - Name: pad0x10_6B5WE[0x10]
     Offset: '0x90'
     Size: '0x10'
     Type: char
@@ -246,7 +246,7 @@ TaleQuestSpawnAICustomSpawnerOnCompleteWaveTask:
     Offset: '0x78'
     Size: '0x8'
     Type: struct SpawnActorCustomOnCompleteWaveTaskData
-  - Name: pad0x10_OE8VG[0x10]
+  - Name: pad0x10_6GF81[0x10]
     Offset: '0x80'
     Size: '0x10'
     Type: char
@@ -260,7 +260,7 @@ TaleQuestSpawnAICustomSpawnerOnTriggerWaveTask:
     Offset: '0x78'
     Size: '0x10'
     Type: struct SpawnActorCustomOnTriggerWaveTaskData
-  - Name: pad0x10_0482N[0x10]
+  - Name: pad0x10_XS3DJ[0x10]
     Offset: '0x88'
     Size: '0x10'
     Type: char
@@ -270,7 +270,7 @@ TaleQuestSpawnAICustomSpawnerOnTriggerWaveTask:
   Super: TaleQuestSpawnAICustomTaskBase
 TaleQuestSpawnAICustomStep:
   Attributes:
-  - Name: pad0xb0_JEFT0[0xb0]
+  - Name: pad0xb0_Q8DS6[0xb0]
     Offset: '0x98'
     Size: '0xb0'
     Type: char
@@ -280,7 +280,7 @@ TaleQuestSpawnAICustomStep:
   Super: TaleQuestStep
 TaleQuestSpawnAICustomStepDesc:
   Attributes:
-  - Name: pad0x8_1IP81[0x8]
+  - Name: pad0x8_AO6XY[0x8]
     Offset: '0x80'
     Size: '0x8'
     Type: char
@@ -306,7 +306,7 @@ TaleQuestSpawnAICustomStepDesc:
   Super: TaleQuestStepDesc
 TaleQuestSpawnAICustomTaskBase:
   Attributes:
-  - Name: pad0x8_40TZF[0x8]
+  - Name: pad0x8_FEJ22[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
@@ -314,7 +314,7 @@ TaleQuestSpawnAICustomTaskBase:
     Offset: '0x30'
     Size: '0x8'
     Type: class TaleQuestSpawnAICustomRootStep*
-  - Name: pad0x40_JZD0R[0x40]
+  - Name: pad0x40_CJX8B[0x40]
     Offset: '0x38'
     Size: '0x40'
     Type: char

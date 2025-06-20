@@ -12,12 +12,6 @@
         "Offset": "0x3a0"
       },
       {
-        "Name": "pad0x2ad7d7f8_2JHPU[0x2ad7d7f8]",
-        "Type": "char",
-        "Size": "0x2ad7d7f8",
-        "Offset": "0x3a8"
-      },
-      {
         "Name": "DefaultSceneRoot",
         "Type": "class SceneComponent*",
         "Size": "0x8",
@@ -60,7 +54,7 @@
         "Offset": "0x3f0"
       },
       {
-        "Name": "pad0x7_SHKQ9[0x7]",
+        "Name": "pad0x7_CXM69[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x3f1"
@@ -90,13 +84,13 @@
         "Offset": "0x410"
       },
       {
-        "Name": "pad0x4_K38VR[0x4]",
+        "Name": "pad0x4_TSGTF[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x414"
       },
       {
-        "Name": "pad0x10_9VV0A[0x10]",
+        "Name": "pad0x10_J6ISO[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x418"

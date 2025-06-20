@@ -6,6 +6,91 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "BoarsAndBoarWallowRandomiserService": {
+    "Super": "Actor",
+    "FullSize": "0x450",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "pad0x8_5L7NS[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "BoarsAndBoarWallowIslandsMap",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x3a8"
+      },
+      {
+        "Name": "pad0x98_SVH8J[0x98]",
+        "Type": "char",
+        "Size": "0x98",
+        "Offset": "0x3b8"
+      }
+    ]
+  },
+  "BoarWallow": {
+    "Super": "Actor",
+    "FullSize": "0x450",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "pad0x18_ABTGA[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "NumberOfBoarsInHideout",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x3b8"
+      },
+      {
+        "Name": "MaxNumberOfBoarsInHideout",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x3bc"
+      },
+      {
+        "Name": "pad0x80_EKCDS[0x80]",
+        "Type": "char",
+        "Size": "0x80",
+        "Offset": "0x3c0"
+      },
+      {
+        "Name": "FaunasSubscribedWithThisHideout",
+        "Type": "TArray<class Pawn*>",
+        "Size": "0x10",
+        "Offset": "0x440"
+      }
+    ]
+  },
+  "BoarsAndBoarWallowRandomiserInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BoarWallowServiceParams": {
+    "Super": "DataAsset",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "BoarWallowAssetTemplate",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "FaunaBoarWallowFinder": {
     "Super": "ActorComponent",
     "FullSize": "0xc8",
@@ -25,88 +110,10 @@
         "Offset": "0xc0"
       },
       {
-        "Name": "pad0x7_HOTHR[0x7]",
+        "Name": "pad0x7_YS22W[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xc1"
-      }
-    ]
-  },
-  "BoarWallow": {
-    "Super": "Actor",
-    "FullSize": "0x450",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0xb0",
-    "Attributes": [
-      {
-        "Name": "pad0x18_OQUD6[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "NumberOfBoarsInHideout",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x3b8"
-      },
-      {
-        "Name": "MaxNumberOfBoarsInHideout",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x3bc"
-      },
-      {
-        "Name": "pad0x80_70JB6[0x80]",
-        "Type": "char",
-        "Size": "0x80",
-        "Offset": "0x3c0"
-      },
-      {
-        "Name": "FaunasSubscribedWithThisHideout",
-        "Type": "TArray<class Pawn*>",
-        "Size": "0x10",
-        "Offset": "0x440"
-      }
-    ]
-  },
-  "BoarWallowServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BoarsAndBoarWallowRandomiserInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BoarsAndBoarWallowRandomiserService": {
-    "Super": "Actor",
-    "FullSize": "0x450",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0xb0",
-    "Attributes": [
-      {
-        "Name": "pad0x8_64RP9[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "BoarsAndBoarWallowIslandsMap",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x3a8"
-      },
-      {
-        "Name": "pad0x98_ZL4YW[0x98]",
-        "Type": "char",
-        "Size": "0x98",
-        "Offset": "0x3b8"
       }
     ]
   },
@@ -117,7 +124,7 @@
     "ClassSize": "0x420",
     "Attributes": [
       {
-        "Name": "pad0xd0_293EI[0xd0]",
+        "Name": "pad0xd0_7FO1G[0xd0]",
         "Type": "char",
         "Size": "0xd0",
         "Offset": "0x3a0"
@@ -135,26 +142,19 @@
         "Offset": "0x478"
       },
       {
-        "Name": "pad0x338_I7TU7[0x338]",
+        "Name": "pad0x338_4TW4L[0x338]",
         "Type": "char",
         "Size": "0x338",
         "Offset": "0x488"
       }
     ]
   },
-  "BoarWallowServiceParams": {
-    "Super": "DataAsset",
-    "FullSize": "0x30",
+  "BoarWallowServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
     "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "BoarWallowAssetTemplate",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

@@ -6,6 +6,14 @@
 #include "AthenaAudio_Structs.h"
 
 
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
+class AthenaAudioModuleSettings: public DeveloperSettings
+{
+public:
+	struct StringAssetReference                                  AudioConfigAsset;                                  // 0x38(0x10)
+};
+
+
 // Size 0xc0 (Full Size[0x118] - InheritedSize[0x58]
 class AthenaAudioConfig: public WwiseCoreAssets
 {
@@ -17,84 +25,18 @@ public:
 };
 
 
-// Size 0x60 (Full Size[0x330] - InheritedSize[0x2d0]
-class AudioPortalComponent: public SceneComponent
-{
-public:
-	float                                                        PortalTriggerDistance;                             // 0x2d0(0x4)
-	float                                                        InsideRtpcUpdateDistance;                          // 0x2d4(0x4)
-	float                                                        OutsideRtpcUpdateDistance;                         // 0x2d8(0x4)
-	bool                                                         TrackAttachmentToActor;                            // 0x2dc(0x1)
-	char                                                         pad0x3_STYEO[0x3];                                 // 0x2dd(0x3)
-	class AudioSpaceDataAsset*                                   AudioInsideSpace;                                  // 0x2e0(0x8)
-	class AudioSpaceDataAsset*                                   AudioOutsideSpace;                                 // 0x2e8(0x8)
-	class AudioSpaceDataAsset*                                   ActiveAudioInsideSpace;                            // 0x2f0(0x8)
-	class AudioSpaceDataAsset*                                   ActiveAudioOutsideSpace;                           // 0x2f8(0x8)
-	class StoryDrivenAudioPortalDataAsset*                       CollectionAsset;                                   // 0x300(0x8)
-	char                                                         pad0x28_HJZSR[0x28];                               // 0x308(0x28)
-};
-
-
-// Size 0x30 (Full Size[0x650] - InheritedSize[0x620]
-class AudioSpaceComponent: public StaticMeshComponent
-{
-public:
-	class AudioSpaceDataAsset*                                   AudioSpace;                                        // 0x620(0x8)
-	class AudioSpaceDataAsset*                                   ActiveAudioSpace;                                  // 0x628(0x8)
-	class StoryDrivenAudioPortalDataAsset*                       CollectionAsset;                                   // 0x630(0x8)
-	char                                                         pad0x18_H4NW5[0x18];                               // 0x638(0x18)
-};
-
-
-// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
-class AudioSpaceTrackerComponent: public ActorComponent
-{
-public:
-	TArray<class AudioSpaceComponent*>                           CurrentSpaces;                                     // 0xb8(0x10)
-};
-
-
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class ImmerseGameService: public Object
-{
-public:
-	char                                                         pad0x28_O9AG8[0x28];                               // 0x28(0x28)
-	class Texture2D*                                             DebugImmerseQRCodeTexture;                         // 0x50(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class AthenaAudioModuleSettings: public DeveloperSettings
-{
-public:
-	struct StringAssetReference                                  AudioConfigAsset;                                  // 0x38(0x10)
-};
-
-
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class StoryDrivenAudioPortalDataAsset: public DataAsset
-{
-public:
-	struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
-	char                                                         pad0x4_TH016[0x4];                                 // 0x34(0x4)
-	TArray<struct StoryDrivenAudioPortalSetting>                 StoryResponses;                                    // 0x38(0x10)
-	TArray<class StoryDrivenAudioPortalDataAsset*>               AssetsList;                                        // 0x48(0x10)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ImmerseGameServiceInterface: public Interface
+class AudioPortalInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x10 (Full Size[0x3b0] - InheritedSize[0x3a0]
-class MultiEmitter: public Actor
+// Size 0xb0 (Full Size[0xd8] - InheritedSize[0x28]
+class AudioPortalService: public Object
 {
 public:
-	class MultiEmitterRootComponent*                             MultiEmitterRootComponent;                         // 0x3a0(0x8)
-	char                                                         pad0x8_N2EA5[0x8];                                 // 0x3a8(0x8)
+	char                                                         pad0xb0_6KORR[0xb0];                               // 0x28(0xb0)
 };
 
 
@@ -108,24 +50,82 @@ public:
 	float                                                        TriggerEnterRadiusInCms;                           // 0x2f8(0x4)
 	float                                                        TriggerExitRadiusInCms;                            // 0x2fc(0x4)
 	struct Vector                                                EmitterOffset;                                     // 0x300(0xc)
-	char                                                         pad0x14_I8TUN[0x14];                               // 0x30c(0x14)
+	char                                                         pad0x14_KSM2T[0x14];                               // 0x30c(0x14)
 	class Character*                                             LocalPlayer;                                       // 0x320(0x8)
-	char                                                         pad0x38_IJN4O[0x38];                               // 0x328(0x38)
+	char                                                         pad0x38_UVIQ2[0x38];                               // 0x328(0x38)
 };
 
 
-// Size 0xb0 (Full Size[0xd8] - InheritedSize[0x28]
-class AudioPortalService: public Object
+// Size 0x60 (Full Size[0x330] - InheritedSize[0x2d0]
+class AudioPortalComponent: public SceneComponent
 {
 public:
-	char                                                         pad0xb0_L1LNO[0xb0];                               // 0x28(0xb0)
+	float                                                        PortalTriggerDistance;                             // 0x2d0(0x4)
+	float                                                        InsideRtpcUpdateDistance;                          // 0x2d4(0x4)
+	float                                                        OutsideRtpcUpdateDistance;                         // 0x2d8(0x4)
+	bool                                                         TrackAttachmentToActor;                            // 0x2dc(0x1)
+	char                                                         pad0x3_C2CPX[0x3];                                 // 0x2dd(0x3)
+	class AudioSpaceDataAsset*                                   AudioInsideSpace;                                  // 0x2e0(0x8)
+	class AudioSpaceDataAsset*                                   AudioOutsideSpace;                                 // 0x2e8(0x8)
+	class AudioSpaceDataAsset*                                   ActiveAudioInsideSpace;                            // 0x2f0(0x8)
+	class AudioSpaceDataAsset*                                   ActiveAudioOutsideSpace;                           // 0x2f8(0x8)
+	class StoryDrivenAudioPortalDataAsset*                       CollectionAsset;                                   // 0x300(0x8)
+	char                                                         pad0x28_WPIRK[0x28];                               // 0x308(0x28)
+};
+
+
+// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
+class AudioSpaceTrackerComponent: public ActorComponent
+{
+public:
+	TArray<class AudioSpaceComponent*>                           CurrentSpaces;                                     // 0xb8(0x10)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AudioPortalInterface: public Interface
+class ImmerseGameServiceInterface: public Interface
 {
 public:
+};
+
+
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class ImmerseGameService: public Object
+{
+public:
+	char                                                         pad0x28_G5C77[0x28];                               // 0x28(0x28)
+	class Texture2D*                                             DebugImmerseQRCodeTexture;                         // 0x50(0x8)
+};
+
+
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class StoryDrivenAudioPortalDataAsset: public DataAsset
+{
+public:
+	struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
+	char                                                         pad0x4_B30BR[0x4];                                 // 0x34(0x4)
+	TArray<struct StoryDrivenAudioPortalSetting>                 StoryResponses;                                    // 0x38(0x10)
+	TArray<class StoryDrivenAudioPortalDataAsset*>               AssetsList;                                        // 0x48(0x10)
+};
+
+
+// Size 0x30 (Full Size[0x630] - InheritedSize[0x600]
+class AudioSpaceComponent: public StaticMeshComponent
+{
+public:
+	class AudioSpaceDataAsset*                                   AudioSpace;                                        // 0x600(0x8)
+	class AudioSpaceDataAsset*                                   ActiveAudioSpace;                                  // 0x608(0x8)
+	class StoryDrivenAudioPortalDataAsset*                       CollectionAsset;                                   // 0x610(0x8)
+	char                                                         pad0x18_XSV75[0x18];                               // 0x618(0x18)
+};
+
+
+// Size 0x10 (Full Size[0x3b0] - InheritedSize[0x3a0]
+class MultiEmitter: public Actor
+{
+public:
+	class MultiEmitterRootComponent*                             MultiEmitterRootComponent;                         // 0x3a0(0x8)
+	char                                                         pad0x8_0SFG9[0x8];                                 // 0x3a8(0x8)
 };
 
 

@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 ArrayProperty:
   Attributes:
-  - Name: pad0x8_WFUVW[0x8]
+  - Name: pad0x8_YA334[0x8]
     Offset: '0x70'
     Size: '0x8'
     Type: char
@@ -12,7 +12,7 @@ ArrayProperty:
   Super: Property
 AssetClassProperty:
   Attributes:
-  - Name: pad0x8_0HQW8[0x8]
+  - Name: pad0x8_YQ1LD[0x8]
     Offset: '0x78'
     Size: '0x8'
     Type: char
@@ -28,7 +28,7 @@ AssetObjectProperty:
   Super: ObjectPropertyBase
 BoolProperty:
   Attributes:
-  - Name: pad0x8_GZ0P5[0x8]
+  - Name: pad0x8_SXAVY[0x8]
     Offset: '0x70'
     Size: '0x8'
     Type: char
@@ -38,7 +38,7 @@ BoolProperty:
   Super: Property
 ByteProperty:
   Attributes:
-  - Name: pad0x8_MFZ48[0x8]
+  - Name: pad0x8_ZQFCR[0x8]
     Offset: '0x70'
     Size: '0x8'
     Type: char
@@ -48,7 +48,7 @@ ByteProperty:
   Super: NumericProperty
 ClassProperty:
   Attributes:
-  - Name: pad0x8_XP2IT[0x8]
+  - Name: pad0x8_U5QLD[0x8]
     Offset: '0x78'
     Size: '0x8'
     Type: char
@@ -70,7 +70,7 @@ DelegateFunction:
   Super: Function
 DelegateProperty:
   Attributes:
-  - Name: pad0x8_IYYOJ[0x8]
+  - Name: pad0x8_F1X5H[0x8]
     Offset: '0x70'
     Size: '0x8'
     Type: char
@@ -86,7 +86,7 @@ DoubleProperty:
   Super: NumericProperty
 Enum:
   Attributes:
-  - Name: pad0x28_I9DR1[0x28]
+  - Name: pad0x28_81XWB[0x28]
     Offset: '0x30'
     Size: '0x28'
     Type: char
@@ -102,7 +102,7 @@ FloatProperty:
   Super: NumericProperty
 GCObjectReferencer:
   Attributes:
-  - Name: pad0x38_Q1IMU[0x38]
+  - Name: pad0x38_FN15N[0x38]
     Offset: '0x28'
     Size: '0x38'
     Type: char
@@ -142,7 +142,7 @@ Interface:
   Super: Object
 InterfaceProperty:
   Attributes:
-  - Name: pad0x8_AVZT5[0x8]
+  - Name: pad0x8_2BPHZ[0x8]
     Offset: '0x70'
     Size: '0x8'
     Type: char
@@ -158,7 +158,7 @@ LazyObjectProperty:
   Super: ObjectPropertyBase
 LinkerPlaceholderClass:
   Attributes:
-  - Name: pad0x150_ITIDY[0x150]
+  - Name: pad0x150_DPUJ9[0x150]
     Offset: '0x1c0'
     Size: '0x150'
     Type: char
@@ -168,7 +168,7 @@ LinkerPlaceholderClass:
   Super: Class
 LinkerPlaceholderExportObject:
   Attributes:
-  - Name: pad0x60_6JIF6[0x60]
+  - Name: pad0x60_SGL7M[0x60]
     Offset: '0x28'
     Size: '0x60'
     Type: char
@@ -178,7 +178,7 @@ LinkerPlaceholderExportObject:
   Super: Object
 LinkerPlaceholderFunction:
   Attributes:
-  - Name: pad0x150_QQJVP[0x150]
+  - Name: pad0x150_OFBNW[0x150]
     Offset: '0xb8'
     Size: '0x150'
     Type: char
@@ -188,7 +188,7 @@ LinkerPlaceholderFunction:
   Super: Function
 MapProperty:
   Attributes:
-  - Name: pad0x38_4293S[0x38]
+  - Name: pad0x38_PDAUX[0x38]
     Offset: '0x70'
     Size: '0x38'
     Type: char
@@ -198,7 +198,7 @@ MapProperty:
   Super: Property
 MetaData:
   Attributes:
-  - Name: pad0x50_3ENKB[0x50]
+  - Name: pad0x50_HLN4O[0x50]
     Offset: '0x28'
     Size: '0x50'
     Type: char
@@ -208,7 +208,7 @@ MetaData:
   Super: Object
 MulticastDelegateProperty:
   Attributes:
-  - Name: pad0x8_CEQ8C[0x8]
+  - Name: pad0x8_I3V0T[0x8]
     Offset: '0x70'
     Size: '0x8'
     Type: char
@@ -242,7 +242,7 @@ ObjectProperty:
   Super: ObjectPropertyBase
 ObjectPropertyBase:
   Attributes:
-  - Name: pad0x8_EXQXD[0x8]
+  - Name: pad0x8_U4AFQ[0x8]
     Offset: '0x70'
     Size: '0x8'
     Type: char
@@ -252,7 +252,7 @@ ObjectPropertyBase:
   Super: Property
 ObjectRedirector:
   Attributes:
-  - Name: pad0x8_832QZ[0x8]
+  - Name: pad0x8_SNEHA[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
@@ -262,7 +262,7 @@ ObjectRedirector:
   Super: Object
 Package:
   Attributes:
-  - Name: pad0x58_VB7NH[0x58]
+  - Name: pad0x58_A12VZ[0x58]
     Offset: '0x28'
     Size: '0x58'
     Type: char
@@ -272,7 +272,7 @@ Package:
   Super: Object
 PackageMap:
   Attributes:
-  - Name: pad0x28_QBDH0[0x28]
+  - Name: pad0x28_S3AUX[0x28]
     Offset: '0x28'
     Size: '0x28'
     Type: char
@@ -282,7 +282,7 @@ PackageMap:
   Super: Object
 ScriptStruct:
   Attributes:
-  - Name: pad0x10_OIDDW[0x10]
+  - Name: pad0x10_FXWLY[0x10]
     Offset: '0x88'
     Size: '0x10'
     Type: char
@@ -292,7 +292,7 @@ ScriptStruct:
   Super: Struct
 SparseDelegateFunction:
   Attributes:
-  - Name: pad0x10_X1E1D[0x10]
+  - Name: pad0x10_UV8YU[0x10]
     Offset: '0xb8'
     Size: '0x10'
     Type: char
@@ -308,7 +308,7 @@ StrProperty:
   Super: Property
 StructProperty:
   Attributes:
-  - Name: pad0x8_FCSQQ[0x8]
+  - Name: pad0x8_GSSFV[0x8]
     Offset: '0x70'
     Size: '0x8'
     Type: char
@@ -318,7 +318,7 @@ StructProperty:
   Super: Property
 TextBuffer:
   Attributes:
-  - Name: pad0x28_KKT2C[0x28]
+  - Name: pad0x28_JLG20[0x28]
     Offset: '0x28'
     Size: '0x28'
     Type: char

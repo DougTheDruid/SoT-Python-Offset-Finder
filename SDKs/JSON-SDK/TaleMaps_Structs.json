@@ -1,15 +1,4 @@
 {
-  "TaleQuestVariableMapMarkType": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_0ZSF8[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "ChecklistActionProgressTracker": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -20,7 +9,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x8_VG9XU[0x8]",
+        "Name": "pad0x8_3YS8L[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x8"
@@ -31,7 +20,18 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x30_FUQZC[0x30]",
+        "Name": "pad0x30_DO9DM[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TaleQuestVariableMapMarkType": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_HCIQV[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x0"
@@ -48,7 +48,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x40_T7JR9[0x40]",
+        "Name": "pad0x40_ABWED[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x10"

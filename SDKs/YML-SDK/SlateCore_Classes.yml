@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 FontBulkData:
   Attributes:
-  - Name: pad0x98_Q9CEM[0x98]
+  - Name: pad0x98_TJK86[0x98]
     Offset: '0x28'
     Size: '0x98'
     Type: char
@@ -34,7 +34,7 @@ SlateWidgetStyleAsset:
   Super: Object
 SlateWidgetStyleContainerBase:
   Attributes:
-  - Name: pad0x8_M7MBE[0x8]
+  - Name: pad0x8_HRNXV[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char

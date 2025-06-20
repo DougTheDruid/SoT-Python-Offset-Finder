@@ -1,27 +1,4 @@
 {
-  "EmissaryLevelIncreaseOverrideData": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "EnableEmissaryLevelIncreaseOverride",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x3_157TM[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "CustomEmissaryLevelIncrease",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
   "PerComanyItemQualityEntry": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -38,10 +15,33 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_91PM7[0x7]",
+        "Name": "pad0x7_1AK6Z[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
+      }
+    ]
+  },
+  "EmissaryLevelIncreaseOverrideData": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "EnableEmissaryLevelIncreaseOverride",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_83EH4[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "CustomEmissaryLevelIncrease",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
       }
     ]
   },
@@ -85,7 +85,7 @@
         "Offset": "0x5"
       },
       {
-        "Name": "pad0x2_G1K1X[0x2]",
+        "Name": "pad0x2_1I1PQ[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x6"

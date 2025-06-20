@@ -3,7 +3,7 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x40_XBN95[0x40]",
+        "Name": "pad0x40_6NV6J[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x0"
@@ -26,7 +26,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_8E9YX[0x4]",
+        "Name": "pad0x4_45YRL[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x74"
@@ -43,26 +43,9 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x8_RF4P5[0x8]",
+        "Name": "pad0x8_GE4K0[0x8]",
         "Type": "char",
         "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "ClueDestinationToTextIndex": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "DestinationType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x20_ZOVTC[0x20]",
-        "Type": "char",
-        "Size": "0x20",
         "Offset": "0x8"
       }
     ]
@@ -84,6 +67,23 @@
       }
     ]
   },
+  "ClueDestinationToTextIndex": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "DestinationType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x20_QVH40[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "MapRadialIconData": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -100,7 +100,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_JF5NJ[0x4]",
+        "Name": "pad0x4_OJZGK[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"

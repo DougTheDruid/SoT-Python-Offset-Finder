@@ -1,18 +1,12 @@
 {
-  "TestFloatObject": {
+  "TestMessageDateTime": {
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "TestFloat1",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "DateTime",
+        "Type": "struct DateTime",
+        "Size": "0x8",
         "Offset": "0x0"
-      },
-      {
-        "Name": "TestFloat2",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
       }
     ]
   },
@@ -20,7 +14,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_I9N52[0x8]",
+        "Name": "pad0x8_6VBAJ[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"
@@ -38,33 +32,22 @@
       }
     ]
   },
-  "TestMessageDateTime": {
+  "TestMessageInt64": {
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "DateTime",
-        "Type": "struct DateTime",
+        "Name": "pad0x8_RF52M[0x8]",
+        "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"
       }
     ]
   },
-  "TestEnumObject": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "TestEnum",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TestStringMapSerializationObject": {
+  "TestUStructMapSerializationObject": {
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x50_NYJ7N[0x50]",
+        "Name": "pad0x50_TP373[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x0"
@@ -88,33 +71,39 @@
       }
     ]
   },
-  "TestUStructMapSerializationObject": {
+  "TestStringMapSerializationObject": {
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x50_BXLAW[0x50]",
+        "Name": "pad0x50_O9BLV[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x0"
       }
     ]
   },
-  "TestMessageInt64": {
+  "TestFloatObject": {
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_YOJAA[0x8]",
-        "Type": "char",
-        "Size": "0x8",
+        "Name": "TestFloat1",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x0"
+      },
+      {
+        "Name": "TestFloat2",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
       }
     ]
   },
-  "TestInt32MapSerializationObject": {
+  "TestInvalidStringMapSerializationObject": {
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x50_6DETQ[0x50]",
+        "Name": "pad0x50_HJTWL[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x0"
@@ -125,18 +114,18 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x18_ZYZOJ[0x18]",
+        "Name": "pad0x18_RZFES[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"
       }
     ]
   },
-  "TestInvalidStringMapSerializationObject": {
+  "TestInt32MapSerializationObject": {
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x50_Y1ROU[0x50]",
+        "Name": "pad0x50_ZI76F[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x0"
@@ -153,7 +142,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_FN6R2[0x3]",
+        "Name": "pad0x3_BDB76[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -175,6 +164,17 @@
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x18"
+      }
+    ]
+  },
+  "TestEnumObject": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "TestEnum",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },

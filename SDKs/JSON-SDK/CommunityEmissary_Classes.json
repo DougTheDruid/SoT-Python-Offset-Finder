@@ -1,33 +1,33 @@
 {
   "CommunityEmissaryFlagComponent": {
     "Super": "StaticMeshComponent",
-    "FullSize": "0x650",
-    "InheritedSize": "0x620",
+    "FullSize": "0x630",
+    "InheritedSize": "0x600",
     "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "CommunityEmissaryDataAsset",
         "Type": "class CommunityEmissaryFlagData*",
         "Size": "0x8",
-        "Offset": "0x620"
+        "Offset": "0x600"
       },
       {
-        "Name": "pad0x18_WHVMY[0x18]",
+        "Name": "pad0x18_HV5UK[0x18]",
         "Type": "char",
         "Size": "0x18",
-        "Offset": "0x628"
+        "Offset": "0x608"
       },
       {
         "Name": "ActiveFlagDataIndex",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x640"
+        "Offset": "0x620"
       },
       {
-        "Name": "pad0xc_M7WH9[0xc]",
+        "Name": "pad0xc_TDGIJ[0xc]",
         "Type": "char",
         "Size": "0xc",
-        "Offset": "0x644"
+        "Offset": "0x624"
       }
     ]
   },

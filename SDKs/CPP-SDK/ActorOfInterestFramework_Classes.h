@@ -6,19 +6,28 @@
 #include "ActorOfInterestFramework_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ActorOfInterestId: public Object
-{
-public:
-};
-
-
 // Size 0x20 (Full Size[0xd8] - InheritedSize[0xb8]
 class ActorOfInterestComponent: public ActorComponent
 {
 public:
 	class UClass*                                                ActorOfInterestId;                                 // 0xb8(0x8)
-	char                                                         pad0x18_C8OWF[0x18];                               // 0xc0(0x18)
+	char                                                         pad0x18_T31RB[0x18];                               // 0xc0(0x18)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ActorOfInterestBlueprintFunctionLibrary: public Object
+{
+public:
+};
+
+
+// Size 0x100 (Full Size[0x4a0] - InheritedSize[0x3a0]
+class ActorOfInterestService: public Actor
+{
+public:
+	char                                                         pad0x60_1OL74[0x60];                               // 0x3a0(0x60)
+	struct ObjectMessagingDispatcher                             EventDispatcher;                                   // 0x400(0xa0)
 };
 
 
@@ -29,17 +38,8 @@ public:
 };
 
 
-// Size 0x100 (Full Size[0x4a0] - InheritedSize[0x3a0]
-class ActorOfInterestService: public Actor
-{
-public:
-	char                                                         pad0x60_5O5YJ[0x60];                               // 0x3a0(0x60)
-	struct ObjectMessagingDispatcher                             EventDispatcher;                                   // 0x400(0xa0)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ActorOfInterestBlueprintFunctionLibrary: public Object
+class ActorOfInterestId: public Object
 {
 public:
 };

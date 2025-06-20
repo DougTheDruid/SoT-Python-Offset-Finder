@@ -19,7 +19,23 @@ public:
 struct ReplicatedTimespan
 {
 public:
-	char                                                         pad0x8_CM2LE[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_W1TWK[0x8];                                 // 0x0(0x8)
+};
+
+
+// Size 0x8
+struct ReplicatedDateTime
+{
+public:
+	char                                                         pad0x8_KTNXG[0x8];                                 // 0x0(0x8)
+};
+
+
+// Size 0x1
+struct EventTimeServiceMigrated
+{
+public:
+	char                                                         pad0x1_LFIXE[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -31,19 +47,12 @@ public:
 };
 
 
-// Size 0x1
-struct EventTimeServiceMigrated
+// Size 0x10
+struct ReplicatedAuthoritativeTime
 {
 public:
-	char                                                         pad0x1_4KG8T[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x8
-struct ReplicatedDateTime
-{
-public:
-	char                                                         pad0x8_RJ301[0x8];                                 // 0x0(0x8)
+	struct ReplicatedDateTime                                    WorldTime;                                         // 0x0(0x8)
+	struct ReplicatedDateTime                                    SyncTime;                                          // 0x8(0x8)
 };
 
 
@@ -53,15 +62,6 @@ struct GameTimeRange
 public:
 	struct GameTime                                              Start;                                             // 0x0(0x8)
 	struct GameTime                                              End;                                               // 0x8(0x8)
-};
-
-
-// Size 0x10
-struct ReplicatedAuthoritativeTime
-{
-public:
-	struct ReplicatedDateTime                                    WorldTime;                                         // 0x0(0x8)
-	struct ReplicatedDateTime                                    SyncTime;                                          // 0x8(0x8)
 };
 
 

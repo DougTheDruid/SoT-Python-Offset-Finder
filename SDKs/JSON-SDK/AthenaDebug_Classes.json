@@ -13,6 +13,52 @@
       }
     ]
   },
+  "TickableDebugDrawingServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Videprinter": {
+    "Super": "Actor",
+    "FullSize": "0x3c8",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "OutputRingBuffer",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "AddAt",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x3b0"
+      },
+      {
+        "Name": "Id",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x3b4"
+      },
+      {
+        "Name": "pad0xc_39DFZ[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x3bc"
+      }
+    ]
+  },
+  "DrawDebugServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "DrawDebugService": {
     "Super": "Actor",
     "FullSize": "0x4d8",
@@ -20,7 +66,7 @@
     "ClassSize": "0x138",
     "Attributes": [
       {
-        "Name": "pad0x8_6V39T[0x8]",
+        "Name": "pad0x8_VYPLH[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3a0"
@@ -86,83 +132,10 @@
         "Offset": "0x438"
       },
       {
-        "Name": "pad0x9f_FE9DD[0x9f]",
+        "Name": "pad0x9f_XWKIP[0x9f]",
         "Type": "char",
         "Size": "0x9f",
         "Offset": "0x439"
-      }
-    ]
-  },
-  "TickableDebugDrawingServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "VideprinterServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "DrawDebugServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Videprinter": {
-    "Super": "Actor",
-    "FullSize": "0x3c8",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "OutputRingBuffer",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "AddAt",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x3b0"
-      },
-      {
-        "Name": "Id",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x3b4"
-      },
-      {
-        "Name": "pad0xc_R7WDQ[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x3bc"
-      }
-    ]
-  },
-  "VideprinterService": {
-    "Super": "Object",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x8_XPEK2[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Videprinters",
-        "Type": "TArray<class Videprinter*>",
-        "Size": "0x10",
-        "Offset": "0x30"
       }
     ]
   },
@@ -173,10 +146,37 @@
     "ClassSize": "0x80",
     "Attributes": [
       {
-        "Name": "pad0x80_HRI2F[0x80]",
+        "Name": "pad0x80_05OYU[0x80]",
         "Type": "char",
         "Size": "0x80",
         "Offset": "0xb8"
+      }
+    ]
+  },
+  "VideprinterServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "VideprinterService": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x8_EKKA0[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Videprinters",
+        "Type": "TArray<class Videprinter*>",
+        "Size": "0x10",
+        "Offset": "0x30"
       }
     ]
   },

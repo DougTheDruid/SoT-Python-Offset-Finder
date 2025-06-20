@@ -1,4 +1,18 @@
 {
+  "CordRenderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TetherInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "TetherCustomisationComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x118",
@@ -6,7 +20,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x8_U9PEI[0x8]",
+        "Name": "pad0x8_8IPEI[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -18,7 +32,7 @@
         "Offset": "0xc0"
       },
       {
-        "Name": "pad0x48_EF3UQ[0x48]",
+        "Name": "pad0x48_2QG7W[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0xc8"
@@ -42,84 +56,10 @@
         "Offset": "0x115"
       },
       {
-        "Name": "pad0x2_1K3HS[0x2]",
+        "Name": "pad0x2_Y9VEP[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x116"
-      }
-    ]
-  },
-  "CordRenderInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TetherConstraintInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "CordRenderComponent": {
-    "Super": "StaticMeshComponent",
-    "FullSize": "0x660",
-    "InheritedSize": "0x620",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "pad0x8_IJJZG[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x620"
-      },
-      {
-        "Name": "CordMaterials",
-        "Type": "TArray<class MaterialInstanceDynamic*>",
-        "Size": "0x10",
-        "Offset": "0x628"
-      },
-      {
-        "Name": "ThicknessCm",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x638"
-      },
-      {
-        "Name": "pad0x24_P6API[0x24]",
-        "Type": "char",
-        "Size": "0x24",
-        "Offset": "0x63c"
-      }
-    ]
-  },
-  "ShouldTetherInWorldSpaceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TetherInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TetherInWorldSpaceComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xc0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_F13Y6[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb8"
       }
     ]
   },
@@ -130,7 +70,7 @@
     "ClassSize": "0x140",
     "Attributes": [
       {
-        "Name": "pad0xf8_ENBCT[0xf8]",
+        "Name": "pad0xf8_JTNNX[0xf8]",
         "Type": "char",
         "Size": "0xf8",
         "Offset": "0x3a0"
@@ -184,7 +124,7 @@
         "Offset": "0x4cc"
       },
       {
-        "Name": "pad0x8_IA4E1[0x8]",
+        "Name": "pad0x8_9RJ3C[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x4d0"
@@ -220,10 +160,31 @@
         "Offset": "0x4dc"
       },
       {
-        "Name": "pad0x3_7QZ07[0x3]",
+        "Name": "pad0x3_FTCSP[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x4dd"
+      }
+    ]
+  },
+  "TetherQueriableInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TetherInWorldSpaceComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xc0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_Z11XB[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
       }
     ]
   },
@@ -234,7 +195,7 @@
     "ClassSize": "0x88",
     "Attributes": [
       {
-        "Name": "pad0x70_QK8F3[0x70]",
+        "Name": "pad0x70_UODS2[0x70]",
         "Type": "char",
         "Size": "0x70",
         "Offset": "0xb8"
@@ -282,14 +243,53 @@
         "Offset": "0x13a"
       },
       {
-        "Name": "pad0x5_IDLRV[0x5]",
+        "Name": "pad0x5_OAP47[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x13b"
       }
     ]
   },
-  "TetherQueriableInterface": {
+  "CordRenderComponent": {
+    "Super": "StaticMeshComponent",
+    "FullSize": "0x640",
+    "InheritedSize": "0x600",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "pad0x8_3VK8E[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x600"
+      },
+      {
+        "Name": "CordMaterials",
+        "Type": "TArray<class MaterialInstanceDynamic*>",
+        "Size": "0x10",
+        "Offset": "0x608"
+      },
+      {
+        "Name": "ThicknessCm",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x618"
+      },
+      {
+        "Name": "pad0x24_U98AC[0x24]",
+        "Type": "char",
+        "Size": "0x24",
+        "Offset": "0x61c"
+      }
+    ]
+  },
+  "TetherConstraintInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ShouldTetherInWorldSpaceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -298,39 +298,39 @@
   },
   "DynamicCordRenderComponent": {
     "Super": "CordRenderComponent",
-    "FullSize": "0x6c0",
-    "InheritedSize": "0x660",
+    "FullSize": "0x6a0",
+    "InheritedSize": "0x640",
     "ClassSize": "0x60",
     "Attributes": [
       {
         "Name": "BoundsPadding",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x658"
+        "Offset": "0x638"
       },
       {
-        "Name": "pad0x4_HLUMA[0x4]",
+        "Name": "pad0x4_2EO5X[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x65c"
+        "Offset": "0x63c"
       },
       {
         "Name": "EndPointA",
         "Type": "class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x660"
+        "Offset": "0x640"
       },
       {
         "Name": "EndPointB",
         "Type": "class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x668"
+        "Offset": "0x648"
       },
       {
-        "Name": "pad0x50_HO2QZ[0x50]",
+        "Name": "pad0x50_70EVH[0x50]",
         "Type": "char",
         "Size": "0x50",
-        "Offset": "0x670"
+        "Offset": "0x650"
       }
     ]
   },
@@ -343,39 +343,39 @@
   },
   "HarpoonRenderComponent": {
     "Super": "CordRenderComponent",
-    "FullSize": "0x680",
-    "InheritedSize": "0x660",
+    "FullSize": "0x660",
+    "InheritedSize": "0x640",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "HarpoonMaterials",
         "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
-        "Offset": "0x658"
+        "Offset": "0x638"
       },
       {
         "Name": "LaunchAnimationDurationSecs",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x668"
+        "Offset": "0x648"
       },
       {
         "Name": "HitAnimationDurationSecs",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x66c"
+        "Offset": "0x64c"
       },
       {
         "Name": "QuickRetractAnimationSpeed",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x670"
+        "Offset": "0x650"
       },
       {
-        "Name": "pad0xc_IBZ2O[0xc]",
+        "Name": "pad0xc_N7QFW[0xc]",
         "Type": "char",
         "Size": "0xc",
-        "Offset": "0x674"
+        "Offset": "0x654"
       }
     ]
   },

@@ -1,9 +1,9 @@
 {
-  "FixedSplinePathingActorMovementStartedEvent": {
+  "FixedSplinePathingActorMovementEndedEvent": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_TIQTZ[0x1]",
+        "Name": "pad0x1_0HUJA[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
@@ -21,11 +21,11 @@
       }
     ]
   },
-  "FixedSplinePathingActorMovementEndedEvent": {
+  "FixedSplinePathingActorMovementStartedEvent": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_FGYM7[0x1]",
+        "Name": "pad0x1_HPDYO[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"

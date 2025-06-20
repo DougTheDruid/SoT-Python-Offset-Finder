@@ -8,69 +8,69 @@
   },
   "KnockbackColliderComponent": {
     "Super": "BoxComponent",
-    "FullSize": "0x670",
-    "InheritedSize": "0x5f0",
+    "FullSize": "0x650",
+    "InheritedSize": "0x5d0",
     "ClassSize": "0x80",
     "Attributes": [
       {
         "Name": "SolidCollisionProfile",
         "Type": "struct CollisionProfileName",
         "Size": "0x8",
-        "Offset": "0x5e8"
+        "Offset": "0x5c8"
       },
       {
         "Name": "KnockbackTraceProfile",
         "Type": "struct CollisionProfileName",
         "Size": "0x8",
-        "Offset": "0x5f0"
+        "Offset": "0x5d0"
       },
       {
         "Name": "KnockbackType",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x5f8"
+        "Offset": "0x5d8"
       },
       {
-        "Name": "pad0x3_3WQPL[0x3]",
+        "Name": "pad0x3_8MXC5[0x3]",
         "Type": "char",
         "Size": "0x3",
-        "Offset": "0x5f9"
+        "Offset": "0x5d9"
       },
       {
         "Name": "KnockbackParams",
         "Type": "struct KnockBackInfo",
         "Size": "0x54",
-        "Offset": "0x5fc"
+        "Offset": "0x5dc"
       },
       {
         "Name": "KnockbackDamageType",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x658"
+        "Offset": "0x638"
       },
       {
         "Name": "KnockbackInterval",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x660"
+        "Offset": "0x640"
       },
       {
-        "Name": "pad0x4_7AGN5[0x4]",
+        "Name": "pad0x4_G56LT[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x664"
+        "Offset": "0x644"
       },
       {
         "Name": "SolidState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x668"
+        "Offset": "0x648"
       },
       {
-        "Name": "pad0x7_UWELU[0x7]",
+        "Name": "pad0x7_VSIKN[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0x669"
+        "Offset": "0x649"
       }
     ]
   },

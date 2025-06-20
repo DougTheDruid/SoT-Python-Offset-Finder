@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AIAreaOfOperationComponent:
   Attributes:
-  - Name: pad0x8_GTX2D[0x8]
+  - Name: pad0x8_HZSFC[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -10,7 +10,7 @@ AIAreaOfOperationComponent:
     Offset: '0xc0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_PLRAZ[0x3]
+  - Name: pad0x3_4YC28[0x3]
     Offset: '0xc1'
     Size: '0x3'
     Type: char
@@ -38,7 +38,7 @@ AIGoal:
     Offset: '0x30'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x8_1XRT0[0x8]
+  - Name: pad0x8_0KN5U[0x8]
     Offset: '0x38'
     Size: '0x8'
     Type: char
@@ -58,7 +58,7 @@ AIGoalAssetList:
   Super: DataAsset
 AIGoalProcessorComponent:
   Attributes:
-  - Name: pad0x8_P1AQK[0x8]
+  - Name: pad0x8_F3T6Z[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -78,7 +78,7 @@ AIGoalProcessorComponent:
     Offset: '0xe0'
     Size: '0x10'
     Type: TArray<class AIGoalAssetList*>
-  - Name: pad0x28_SN8EA[0x28]
+  - Name: pad0x28_YSG4O[0x28]
     Offset: '0xf0'
     Size: '0x28'
     Type: char

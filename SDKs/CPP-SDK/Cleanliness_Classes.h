@@ -17,12 +17,12 @@ public:
 class CleanlinessComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x10_7YBML[0x10];                               // 0xb8(0x10)
+	char                                                         pad0x10_4L6TH[0x10];                               // 0xb8(0x10)
 	class CurveFloat*                                            DirtinessStrengthToMaterialStrength;               // 0xc8(0x8)
 	struct CleanlinessInfo                                       CleanlinessInfo;                                   // 0xd0(0xc)
 	float                                                        DirtinessDecayRatePerSecond;                       // 0xdc(0x4)
 	float                                                        QuickCleanDirtynessDecayRatePerSecond;             // 0xe0(0x4)
-	char                                                         pad0x54_F5XW6[0x54];                               // 0xe4(0x54)
+	char                                                         pad0x54_D1I7O[0x54];                               // 0xe4(0x54)
 };
 
 

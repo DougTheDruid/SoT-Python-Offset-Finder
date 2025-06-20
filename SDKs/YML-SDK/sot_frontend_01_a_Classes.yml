@@ -6,10 +6,6 @@ sot_frontend_01_a_C:
     Offset: '0x3a8'
     Size: '0x8'
     Type: struct PointerToUberGraphFrame
-  - Name: pad0x2ad7d550_JQ2O4[0x2ad7d550]
-    Offset: '0x3b0'
-    Size: '0x2ad7d550'
-    Type: char
   - Name: PirateUI
     Offset: '0x3b0'
     Size: '0x8'
@@ -26,7 +22,7 @@ sot_frontend_01_a_C:
     Offset: '0x3ba'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_FVI4Z[0x1]
+  - Name: pad0x1_3J1WJ[0x1]
     Offset: '0x3bb'
     Size: '0x1'
     Type: char
@@ -46,7 +42,7 @@ sot_frontend_01_a_C:
     Offset: '0x3c5'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_Y1T09[0x2]
+  - Name: pad0x2_2CVSE[0x2]
     Offset: '0x3c6'
     Size: '0x2'
     Type: char
@@ -54,7 +50,7 @@ sot_frontend_01_a_C:
     Offset: '0x3c8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_7HPLB[0x4]
+  - Name: pad0x4_WV36Y[0x4]
     Offset: '0x3cc'
     Size: '0x4'
     Type: char
@@ -74,7 +70,7 @@ sot_frontend_01_a_C:
     Offset: '0x3e5'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_XDR43[0x2]
+  - Name: pad0x2_S8AC3[0x2]
     Offset: '0x3e6'
     Size: '0x2'
     Type: char

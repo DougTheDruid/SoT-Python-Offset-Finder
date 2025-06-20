@@ -1,53 +1,4 @@
 {
-  "TestablePlayerController": {
-    "Super": "PlayerController",
-    "FullSize": "0x748",
-    "InheritedSize": "0x748",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "OtherTestUObject": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ActorThatLogsErrorWhenTicked": {
-    "Super": "Actor",
-    "FullSize": "0x3a0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RunUnitTestsCommandlet": {
-    "Super": "Commandlet",
-    "FullSize": "0x80",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TestSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x38",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "DummyReplicatedActor": {
-    "Super": "Actor",
-    "FullSize": "0x3a0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TestAbstractActor": {
-    "Super": "Actor",
-    "FullSize": "0x3a0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "AssetAuditSettings": {
     "Super": "DeveloperSettings",
     "FullSize": "0x78",
@@ -80,10 +31,87 @@
       }
     ]
   },
+  "MapFixtureTestGameMode": {
+    "Super": "GameMode",
+    "FullSize": "0x498",
+    "InheritedSize": "0x498",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DummyReplicatedActor": {
+    "Super": "Actor",
+    "FullSize": "0x3a0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TestUObject": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TestablePlayerController": {
+    "Super": "PlayerController",
+    "FullSize": "0x748",
+    "InheritedSize": "0x748",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AggregateAssetAudit": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "OtherTestUObject": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RunUnitTestsCommandlet": {
+    "Super": "Commandlet",
+    "FullSize": "0x80",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "AutomationBlueprintFunctionLibrary": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ActorThatLogsErrorWhenTicked": {
+    "Super": "Actor",
+    "FullSize": "0x3a0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ObjectWithSettableWorld": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "World",
+        "Type": "class World*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "TestAbstractActor": {
+    "Super": "Actor",
+    "FullSize": "0x3a0",
+    "InheritedSize": "0x3a0",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -94,7 +122,7 @@
     "ClassSize": "0xc0",
     "Attributes": [
       {
-        "Name": "pad0x8_HUSJX[0x8]",
+        "Name": "pad0x8_M01AV[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3a8"
@@ -136,7 +164,7 @@
         "Offset": "0x3b5"
       },
       {
-        "Name": "pad0x2_O73U1[0x2]",
+        "Name": "pad0x2_27V1M[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x3b6"
@@ -160,7 +188,7 @@
         "Offset": "0x3c9"
       },
       {
-        "Name": "pad0x2_ZZOK1[0x2]",
+        "Name": "pad0x2_NYAS6[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x3ca"
@@ -178,7 +206,7 @@
         "Offset": "0x3d0"
       },
       {
-        "Name": "pad0x4_85H19[0x4]",
+        "Name": "pad0x4_DTGTZ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3d4"
@@ -220,15 +248,43 @@
         "Offset": "0x428"
       },
       {
-        "Name": "pad0x3c_2JOSE[0x3c]",
+        "Name": "pad0x3c_ZMOUE[0x3c]",
         "Type": "char",
         "Size": "0x3c",
         "Offset": "0x42c"
       }
     ]
   },
-  "TestUObject": {
+  "BPNamedObjectMock": {
     "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TestSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TestablePlayerControllerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_TI8J3[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0xb8"
+      }
+    ]
+  },
+  "TestablePlayerControllerInterface": {
+    "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
@@ -241,68 +297,12 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "pad0x38_ZOT0H[0x38]",
+        "Name": "pad0x38_9JS1C[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x28"
       }
     ]
-  },
-  "TestablePlayerControllerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ObjectWithSettableWorld": {
-    "Super": "Object",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "World",
-        "Type": "class World*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "AggregateAssetAudit": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MapFixtureTestGameMode": {
-    "Super": "GameMode",
-    "FullSize": "0x498",
-    "InheritedSize": "0x498",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TestablePlayerControllerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_CJ7EM[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0xb8"
-      }
-    ]
-  },
-  "BPNamedObjectMock": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "TextureAuditorSettings": {
     "Super": "TestSettings",

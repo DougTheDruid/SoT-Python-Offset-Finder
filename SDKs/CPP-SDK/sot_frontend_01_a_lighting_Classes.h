@@ -8,7 +8,6 @@ class sot_frontend_01_a_lighting_C: public LevelScriptActor
 {
 public:
 	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3a8(0x8)
-	char                                                         pad0x2d703e60_WONMW[0x2d703e60];                   // 0x3b0(0x2d703e60)
 	class MatineeActor*                                          LightingController_UniqueObjectNameForCooking_441630218_RefProperty; // 0x3b0(0x8)
 };
 

@@ -6,6 +6,13 @@
 #include "SeasonProgressionUI_Structs.h"
 
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class SeasonProgressionUIServiceInterface: public Interface
+{
+public:
+};
+
+
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class SeasonPopupListAsset: public DataAsset
 {
@@ -18,16 +25,20 @@ public:
 class SeasonProgressionUIService: public Actor
 {
 public:
-	char                                                         pad0x30_7EK9U[0x30];                               // 0x3a0(0x30)
+	char                                                         pad0x30_AGG3B[0x30];                               // 0x3a0(0x30)
 	class SeasonPopupListAsset*                                  SeasonPopupListAsset;                              // 0x3d0(0x8)
-	char                                                         pad0x1c0_3AXQH[0x1c0];                             // 0x3d8(0x1c0)
+	char                                                         pad0x1c0_SQUZ2[0x1c0];                             // 0x3d8(0x1c0)
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SeasonProgressionUIServiceInterface: public Interface
+// Size 0x138 (Full Size[0x1f0] - InheritedSize[0xb8]
+class SeasonProgressionUIComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x20_CFG9R[0x20];                               // 0xb8(0x20)
+	TArray<struct EnableMoreButtonEvent>                         DetailsNavigationDesc;                             // 0xd8(0x10)
+	struct SeasonProgressionUITelemetryFragment                  NextReceivedEventsTelemetryData;                   // 0xe8(0x18)
+	char                                                         pad0xf0_2GRQV[0xf0];                               // 0x100(0xf0)
 };
 
 
@@ -38,29 +49,11 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SeasonProgressionUITelemetryInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class SeasonProgressionUISettings: public Object
 {
 public:
 	struct StringAssetReference                                  SeasonPopupListAsset;                              // 0x28(0x10)
-};
-
-
-// Size 0x138 (Full Size[0x1f0] - InheritedSize[0xb8]
-class SeasonProgressionUIComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x20_P43KZ[0x20];                               // 0xb8(0x20)
-	TArray<struct EnableMoreButtonEvent>                         DetailsNavigationDesc;                             // 0xd8(0x10)
-	struct SeasonProgressionUITelemetryFragment                  NextReceivedEventsTelemetryData;                   // 0xe8(0x18)
-	char                                                         pad0xf0_R4TVH[0xf0];                               // 0x100(0xf0)
 };
 
 
@@ -86,6 +79,13 @@ public:
 	struct FString                                               DefaultChatEventName;                              // 0x270(0x10)
 	struct FString                                               DefaultChatSwitchName;                             // 0x280(0x10)
 	struct FString                                               DefaultChatSwitchValue;                            // 0x290(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class SeasonProgressionUITelemetryInterface: public Interface
+{
+public:
 };
 
 

@@ -8,7 +8,7 @@ struct RegionAssetsList
 {
 public:
 	char                                                         Region;                                            // 0x0(0x1)
-	char                                                         pad0x7_D08JT[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_5GVDO[0x7];                                 // 0x1(0x7)
 	TArray<struct StringAssetReference>                          CachedAssetsForRegion;                             // 0x8(0x10)
 };
 

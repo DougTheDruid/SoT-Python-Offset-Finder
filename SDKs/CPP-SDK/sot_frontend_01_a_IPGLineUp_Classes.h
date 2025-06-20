@@ -8,7 +8,7 @@ class sot_frontend_01_a_IPGLineUp_C: public LevelScriptActor
 {
 public:
 	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3a8(0x8)
-	char                                                         pad0x2b8d7690_PRBKZ[0x2b8d7690];                   // 0x3b0(0x2b8d7690)
+	char                                                         pad0x29174fd0_L4LJM[0x29174fd0];                   // 0x3b0(0x29174fd0)
 	class SkeletalMeshActor*                                     shipSelect_CharMarker_ExecuteUbergraph_sot_frontend_01_a_IPGLineUp_RefProperty; // 0x3b0(0x8)
 };
 

@@ -17,7 +17,7 @@ struct StatusAudioChangedEvent
 public:
 	struct Status                                                StatusApplied;                                     // 0x0(0x20)
 	bool                                                         IsActive;                                          // 0x20(0x1)
-	char                                                         pad0x7_HEMMN[0x7];                                 // 0x21(0x7)
+	char                                                         pad0x7_UJ1NY[0x7];                                 // 0x21(0x7)
 };
 
 

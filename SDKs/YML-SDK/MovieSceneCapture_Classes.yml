@@ -22,7 +22,7 @@ CompositionGraphCaptureSettings:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_TR8HI[0x3]
+  - Name: pad0x3_58S3J[0x3]
     Offset: '0x39'
     Size: '0x3'
     Type: char
@@ -34,7 +34,7 @@ CompositionGraphCaptureSettings:
     Offset: '0x40'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_H0L8U[0x7]
+  - Name: pad0x7_47GTX[0x7]
     Offset: '0x41'
     Size: '0x7'
     Type: char
@@ -48,7 +48,7 @@ CompositionGraphCaptureSettings:
   Super: MovieSceneCaptureProtocolSettings
 FrameGrabberProtocolSettings:
   Attributes:
-  - Name: pad0x8_A7YWJ[0x8]
+  - Name: pad0x8_GYA18[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
@@ -62,7 +62,7 @@ ImageCaptureSettings:
     Offset: '0x30'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_ZUZAJ[0x4]
+  - Name: pad0x4_7YCTT[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
@@ -76,7 +76,7 @@ LevelCapture:
     Offset: '0x1e0'
     Size: '0x1'
     Type: bool
-  - Name: pad0xb_0X7V3[0xb]
+  - Name: pad0xb_18WN8[0xb]
     Offset: '0x1e1'
     Size: '0xb'
     Type: char
@@ -84,7 +84,7 @@ LevelCapture:
     Offset: '0x1ec'
     Size: '0x10'
     Type: struct Guid
-  - Name: pad0x4_FDKIJ[0x4]
+  - Name: pad0x4_YC9KO[0x4]
     Offset: '0x1fc'
     Size: '0x4'
     Type: char
@@ -94,7 +94,7 @@ LevelCapture:
   Super: MovieSceneCapture
 MovieSceneCapture:
   Attributes:
-  - Name: pad0x10_G7CZU[0x10]
+  - Name: pad0x10_0IPA2[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char
@@ -118,7 +118,7 @@ MovieSceneCapture:
     Offset: '0x99'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_8B9XF[0x6]
+  - Name: pad0x6_4QBX9[0x6]
     Offset: '0x9a'
     Size: '0x6'
     Type: char
@@ -130,7 +130,7 @@ MovieSceneCapture:
     Offset: '0xb0'
     Size: '0x10'
     Type: struct FString
-  - Name: pad0x120_5Y3A4[0x120]
+  - Name: pad0x120_24LSB[0x120]
     Offset: '0xc0'
     Size: '0x120'
     Type: char
@@ -162,7 +162,7 @@ VideoCaptureSettings:
     Offset: '0x30'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_APZOD[0x3]
+  - Name: pad0x3_BL68I[0x3]
     Offset: '0x31'
     Size: '0x3'
     Type: char

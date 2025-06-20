@@ -10,6 +10,17 @@
       }
     ]
   },
+  "CaptureResolution": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_NNJCH[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "CompositionGraphCapturePasses": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -17,17 +28,6 @@
         "Name": "Value",
         "Type": "TArray<String>",
         "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CaptureResolution": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_LDOGF[0x8]",
-        "Type": "char",
-        "Size": "0x8",
         "Offset": "0x0"
       }
     ]
@@ -48,7 +48,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_QOUT6[0x7]",
+        "Name": "pad0x7_SS0AQ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
@@ -78,7 +78,7 @@
         "Offset": "0x31"
       },
       {
-        "Name": "pad0x2_TLQHH[0x2]",
+        "Name": "pad0x2_WTGM4[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x32"
@@ -96,7 +96,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x3_39GA5[0x3]",
+        "Name": "pad0x3_0J0CL[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x39"
@@ -156,7 +156,7 @@
         "Offset": "0x4e"
       },
       {
-        "Name": "pad0x1_WE962[0x1]",
+        "Name": "pad0x1_RDKRR[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x4f"

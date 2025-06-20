@@ -1,38 +1,4 @@
 {
-  "DeployableDeployedTelemetryEvent": {
-    "ClassSize": "0x1c",
-    "Attributes": [
-      {
-        "Name": "DeployableID",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "UndeployableDeployedTelemetryEvent": {
-    "ClassSize": "0x1c",
-    "Attributes": [
-      {
-        "Name": "DeployableID",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "UndeployActionRuleVerbiage": {
     "ClassSize": "0xa8",
     "Attributes": [
@@ -56,8 +22,8 @@
       }
     ]
   },
-  "FailedDeploymentTelemetryEvent": {
-    "ClassSize": "0x20",
+  "DeployableDeployedTelemetryEvent": {
+    "ClassSize": "0x1c",
     "Attributes": [
       {
         "Name": "DeployableID",
@@ -69,7 +35,7 @@
         "Name": "Location",
         "Type": "struct Vector",
         "Size": "0xc",
-        "Offset": "0x14"
+        "Offset": "0x10"
       }
     ]
   },
@@ -141,6 +107,40 @@
         "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x230"
+      }
+    ]
+  },
+  "FailedDeploymentTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "DeployableID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "UndeployableDeployedTelemetryEvent": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Name": "DeployableID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x10"
       }
     ]
   },

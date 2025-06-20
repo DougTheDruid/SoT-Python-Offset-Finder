@@ -2,139 +2,139 @@
 # https://github.com/DougTheDruid
 SafeZoneComponent:
   Attributes:
-  - Name: pad0x10_Q4389[0x10]
-    Offset: '0x5e0'
+  - Name: pad0x10_EAZT4[0x10]
+    Offset: '0x5c0'
     Size: '0x10'
     Type: char
   - Name: ExclusionRadius
-    Offset: '0x5f0'
+    Offset: '0x5d0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_5PG4N[0x4]
-    Offset: '0x5f4'
+  - Name: pad0x4_021X9[0x4]
+    Offset: '0x5d4'
     Size: '0x4'
     Type: char
   - Name: ExclusionHeight
-    Offset: '0x5f8'
+    Offset: '0x5d8'
     Size: '0x4'
     Type: float
   - Name: SafeZoneEmptyCollisionProfile
-    Offset: '0x5fc'
+    Offset: '0x5dc'
     Size: '0x8'
     Type: struct FName
   - Name: AutoActivateSafeZone
-    Offset: '0x604'
+    Offset: '0x5e4'
     Size: '0x1'
     Type: bool
   - Name: DeactivateSafeZoneAfterExclusionRadiusIsEmpty
-    Offset: '0x605'
+    Offset: '0x5e5'
     Size: '0x1'
     Type: bool
   - Name: UsePlayerTeleport
-    Offset: '0x606'
+    Offset: '0x5e6'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_8Y1FV[0x1]
-    Offset: '0x607'
+  - Name: pad0x1_Y08Q6[0x1]
+    Offset: '0x5e7'
     Size: '0x1'
     Type: char
   - Name: PlayerTeleportRadius
-    Offset: '0x608'
+    Offset: '0x5e8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_GTOG9[0x4]
-    Offset: '0x60c'
+  - Name: pad0x4_7H9GJ[0x4]
+    Offset: '0x5ec'
     Size: '0x4'
     Type: char
   - Name: UseRepelForce
-    Offset: '0x610'
+    Offset: '0x5f0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_ZD9YZ[0x3]
-    Offset: '0x611'
+  - Name: pad0x3_BVVVG[0x3]
+    Offset: '0x5f1'
     Size: '0x3'
     Type: char
   - Name: RepelForceRadius
-    Offset: '0x614'
+    Offset: '0x5f4'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_U2G9W[0x4]
-    Offset: '0x618'
+  - Name: pad0x4_FNAVJ[0x4]
+    Offset: '0x5f8'
     Size: '0x4'
     Type: char
   - Name: RepelForceExtents
-    Offset: '0x61c'
+    Offset: '0x5fc'
     Size: '0x4'
     Type: float
   - Name: RepelForceMin
-    Offset: '0x620'
+    Offset: '0x600'
     Size: '0x4'
     Type: float
   - Name: RepelForceMax
-    Offset: '0x624'
+    Offset: '0x604'
     Size: '0x4'
     Type: float
   - Name: ApplyRepelForceAtCentreOfMass
-    Offset: '0x628'
+    Offset: '0x608'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_EUWBC[0x7]
-    Offset: '0x629'
+  - Name: pad0x7_54575[0x7]
+    Offset: '0x609'
     Size: '0x7'
     Type: char
   - Name: RepelForceGradientCurve
-    Offset: '0x630'
+    Offset: '0x610'
     Size: '0x80'
     Type: struct RuntimeFloatCurve
   - Name: UseAngularImpulse
-    Offset: '0x6b0'
+    Offset: '0x690'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_6WAFO[0x3]
-    Offset: '0x6b1'
+  - Name: pad0x3_ULYSM[0x3]
+    Offset: '0x691'
     Size: '0x3'
     Type: char
   - Name: AngularImpulseRadius
-    Offset: '0x6b4'
+    Offset: '0x694'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_ZPA6N[0x4]
-    Offset: '0x6b8'
+  - Name: pad0x4_DCZFZ[0x4]
+    Offset: '0x698'
     Size: '0x4'
     Type: char
   - Name: AngularImpulseForce
-    Offset: '0x6bc'
+    Offset: '0x69c'
     Size: '0x4'
     Type: float
   - Name: TargetDeflectionAngle
-    Offset: '0x6c0'
+    Offset: '0x6a0'
     Size: '0x4'
     Type: float
   - Name: IsSafeZoneEmpty
-    Offset: '0x6c4'
+    Offset: '0x6a4'
     Size: '0x1'
     Type: bool
   - Name: StopAISpawning
-    Offset: '0x6c5'
+    Offset: '0x6a5'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_FO493[0x2]
-    Offset: '0x6c6'
+  - Name: pad0x2_HODUM[0x2]
+    Offset: '0x6a6'
     Size: '0x2'
     Type: char
   - Name: CurrentCollisionProfile
-    Offset: '0x6c8'
+    Offset: '0x6a8'
     Size: '0x8'
     Type: struct FName
   - Name: SafeZoneState
-    Offset: '0x6d0'
+    Offset: '0x6b0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x5f_1TZGR[0x5f]
-    Offset: '0x6d1'
+  - Name: pad0x5f_7B2LP[0x5f]
+    Offset: '0x6b1'
     Size: '0x5f'
     Type: char
   ClassSize: '0x150'
-  FullSize: '0x730'
-  InheritedSize: '0x5e0'
+  FullSize: '0x710'
+  InheritedSize: '0x5c0'
   Super: CapsuleComponent

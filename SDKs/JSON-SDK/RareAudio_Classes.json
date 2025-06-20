@@ -1,4 +1,18 @@
 {
+  "RareAudioHardwareDeviceService": {
+    "Super": "AudioHardwareDeviceService",
+    "FullSize": "0x50",
+    "InheritedSize": "0x40",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_PQQRX[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x40"
+      }
+    ]
+  },
   "TritonService": {
     "Super": "Object",
     "FullSize": "0x150",
@@ -6,7 +20,7 @@
     "ClassSize": "0x128",
     "Attributes": [
       {
-        "Name": "pad0x10_A9ZQY[0x10]",
+        "Name": "pad0x10_Z1E19[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"
@@ -18,7 +32,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0xa8_JBC7Y[0xa8]",
+        "Name": "pad0xa8_YXUI9[0xa8]",
         "Type": "char",
         "Size": "0xa8",
         "Offset": "0x48"
@@ -30,33 +44,12 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x58_3LPTB[0x58]",
+        "Name": "pad0x58_6YSF7[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0xf8"
       }
     ]
-  },
-  "RareAudioHardwareDeviceService": {
-    "Super": "AudioHardwareDeviceService",
-    "FullSize": "0x50",
-    "InheritedSize": "0x40",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_B8BIH[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "WwiseEmitterComponentBlueprintLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "WwiseEmitterBlueprintLibrary": {
     "Super": "BlueprintFunctionLibrary",
@@ -64,32 +57,6 @@
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "AnimNotifyState_WwiseSound": {
-    "Super": "AnimNotifyState",
-    "FullSize": "0x90",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "WwiseEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "WwiseEventEnd",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x50_QUD0M[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x40"
-      }
-    ]
   },
   "AnimNotify_WwiseSound": {
     "Super": "AnimNotify",
@@ -110,7 +77,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x3_L1CT0[0x3]",
+        "Name": "pad0x3_6U9O3[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x41"
@@ -128,7 +95,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x7_RNUDN[0x7]",
+        "Name": "pad0x7_3XT5R[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x51"
@@ -140,10 +107,24 @@
         "Offset": "0x58"
       },
       {
-        "Name": "pad0x20_II66R[0x20]",
+        "Name": "pad0x20_VTVAT[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x60"
+      }
+    ]
+  },
+  "StaticMeshAudioDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MeshToAudioAssociations",
+        "Type": "TArray<struct StaticMeshAudioAssociation>",
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },
@@ -166,10 +147,90 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x2c_QLGMW[0x2c]",
+        "Name": "pad0x2c_WE6NU[0x2c]",
         "Type": "char",
         "Size": "0x2c",
         "Offset": "0x3c"
+      }
+    ]
+  },
+  "AnimNotifyState_WwiseSound": {
+    "Super": "AnimNotifyState",
+    "FullSize": "0x90",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "WwiseEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "WwiseEventEnd",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x50_M6USU[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "WwiseEmitterComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x300",
+    "InheritedSize": "0x2d0",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x8_XK0GA[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x2d0"
+      },
+      {
+        "Name": "Emitter",
+        "Type": "struct WwiseEmitter",
+        "Size": "0x20",
+        "Offset": "0x2d8"
+      },
+      {
+        "Name": "WwiseObjectPoolWrapper",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x2f8"
+      }
+    ]
+  },
+  "AudioIslandStaticMeshAssociatorBase": {
+    "Super": "Actor",
+    "FullSize": "0x3a0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WwiseEmitterComponentBlueprintLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "StaticMeshAudioEmittersComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x2e0",
+    "InheritedSize": "0x2d0",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "InstanceAssociations",
+        "Type": "TArray<struct StaticMeshComponentAudioAssociation>",
+        "Size": "0x10",
+        "Offset": "0x2d0"
       }
     ]
   },
@@ -199,41 +260,6 @@
       }
     ]
   },
-  "StaticMeshAudioEmittersComponent": {
-    "Super": "SceneComponent",
-    "FullSize": "0x2e0",
-    "InheritedSize": "0x2d0",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "InstanceAssociations",
-        "Type": "TArray<struct StaticMeshComponentAudioAssociation>",
-        "Size": "0x10",
-        "Offset": "0x2d0"
-      }
-    ]
-  },
-  "AudioIslandStaticMeshAssociatorBase": {
-    "Super": "Actor",
-    "FullSize": "0x3a0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "StaticMeshAudioDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MeshToAudioAssociations",
-        "Type": "TArray<struct StaticMeshAudioAssociation>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "TritonComponent": {
     "Super": "SceneComponent",
     "FullSize": "0x2e0",
@@ -253,7 +279,7 @@
         "Offset": "0x2d8"
       },
       {
-        "Name": "pad0x4_6B1FL[0x4]",
+        "Name": "pad0x4_PUBIE[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2dc"
@@ -291,10 +317,16 @@
         "Offset": "0x35"
       },
       {
-        "Name": "pad0x2_Y8O2L[0x2]",
-        "Type": "char",
-        "Size": "0x2",
+        "Name": "ExcludeSilentProxiesFromPriority",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x36"
+      },
+      {
+        "Name": "pad0x1_BV45E[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x37"
       },
       {
         "Name": "PoolDensityParams",
@@ -303,38 +335,19 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x18_7B9B0[0x18]",
+        "Name": "pad0x18_SVRUT[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x60"
       }
     ]
   },
-  "WwiseEmitterComponent": {
-    "Super": "SceneComponent",
+  "AnimNotifyWwiseEmitterComponent": {
+    "Super": "WwiseEmitterComponent",
     "FullSize": "0x300",
-    "InheritedSize": "0x2d0",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x8_CZYMY[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x2d0"
-      },
-      {
-        "Name": "Emitter",
-        "Type": "struct WwiseEmitter",
-        "Size": "0x20",
-        "Offset": "0x2d8"
-      },
-      {
-        "Name": "WwiseObjectPoolWrapper",
-        "Type": "class WwiseObjectPoolWrapper*",
-        "Size": "0x8",
-        "Offset": "0x2f8"
-      }
-    ]
+    "InheritedSize": "0x300",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "AnimNotify_WwiseSoundMeshSwitch": {
     "Super": "AnimNotify_WwiseSound",
@@ -355,13 +368,6 @@
         "Offset": "0x88"
       }
     ]
-  },
-  "AnimNotifyWwiseEmitterComponent": {
-    "Super": "WwiseEmitterComponent",
-    "FullSize": "0x300",
-    "InheritedSize": "0x300",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

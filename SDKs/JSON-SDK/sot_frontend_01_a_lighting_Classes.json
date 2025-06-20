@@ -12,12 +12,6 @@
         "Offset": "0x3a8"
       },
       {
-        "Name": "pad0x2d703e60_WONMW[0x2d703e60]",
-        "Type": "char",
-        "Size": "0x2d703e60",
-        "Offset": "0x3b0"
-      },
-      {
         "Name": "LightingController_UniqueObjectNameForCooking_441630218_RefProperty",
         "Type": "class MatineeActor*",
         "Size": "0x8",

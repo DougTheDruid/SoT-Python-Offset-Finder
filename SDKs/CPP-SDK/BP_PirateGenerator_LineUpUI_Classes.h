@@ -8,7 +8,6 @@ class BP_PirateGenerator_LineUpUI_C: public Actor
 {
 public:
 	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3a0(0x8)
-	char                                                         pad0x2ad7d7f8_2JHPU[0x2ad7d7f8];                   // 0x3a8(0x2ad7d7f8)
 	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3a8(0x8)
 	TArray<class BP_PirateGenerator_LineUp_C*>                   Pirates;                                           // 0x3b0(0x10)
 	TArray<struct CarouselPirateDesc>                            CarouselPirateDescs;                               // 0x3c0(0x10)
@@ -16,13 +15,13 @@ public:
 	struct RadialCoordinate                                      MinBodyShape;                                      // 0x3e0(0x8)
 	struct RadialCoordinate                                      MaxBodyShape;                                      // 0x3e8(0x8)
 	bool                                                         UseIPG;                                            // 0x3f0(0x1)
-	char                                                         pad0x7_SHKQ9[0x7];                                 // 0x3f1(0x7)
+	char                                                         pad0x7_CXM69[0x7];                                 // 0x3f1(0x7)
 	class AnimationDataStoreAsset*                               AnimationAsset;                                    // 0x3f8(0x8)
 	class UClass*                                                DefaultAnimationSet;                               // 0x400(0x8)
 	class CarouselPirateGeneratorParamsAsset*                    PirateGeneratorParams;                             // 0x408(0x8)
 	int                                                          NumberOfPiratesCurrentlyGenerating;                // 0x410(0x4)
-	char                                                         pad0x4_K38VR[0x4];                                 // 0x414(0x4)
-	char                                                         pad0x10_9VV0A[0x10];                               // 0x418(0x10)
+	char                                                         pad0x4_TSGTF[0x4];                                 // 0x414(0x4)
+	char                                                         pad0x10_J6ISO[0x10];                               // 0x418(0x10)
 };
 
 

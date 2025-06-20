@@ -4,11 +4,18 @@
 // https://github.com/DougTheDruid
 
 // Size 0x10
-struct MusicZoneEmitterSwitch
+struct MusicZoneSpawnedEvent
 {
 public:
-	struct FName                                                 SwitchGroup;                                       // 0x0(0x8)
-	struct FName                                                 Value;                                             // 0x8(0x8)
+	char                                                         pad0x10_JMF51[0x10];                               // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct MusicZoneDestroyedEvent
+{
+public:
+	char                                                         pad0x10_CQT1T[0x10];                               // 0x0(0x10)
 };
 
 
@@ -22,18 +29,11 @@ public:
 
 
 // Size 0x10
-struct MusicZoneSpawnedEvent
+struct MusicZoneEmitterSwitch
 {
 public:
-	char                                                         pad0x10_550FY[0x10];                               // 0x0(0x10)
-};
-
-
-// Size 0x10
-struct MusicZoneDestroyedEvent
-{
-public:
-	char                                                         pad0x10_L1OYH[0x10];                               // 0x0(0x10)
+	struct FName                                                 SwitchGroup;                                       // 0x0(0x8)
+	struct FName                                                 Value;                                             // 0x8(0x8)
 };
 
 

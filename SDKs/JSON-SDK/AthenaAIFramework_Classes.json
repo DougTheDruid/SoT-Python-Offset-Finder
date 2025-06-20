@@ -1,12 +1,12 @@
 {
-  "HelpfulAIItemInteractionsInterface": {
+  "AINameplateInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "AINameplateInterface": {
+  "HelpfulAIItemInteractionsInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

@@ -1,42 +1,9 @@
 {
-  "RotatingCompassRotationCurveCompletedEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_QPCOQ[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "RotatingCompassSplinePathCompletedEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_HISDN[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CompassTargetSet": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "TargetLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "RotatingCompassAudioParams": {
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x20_T8ZPV[0x20]",
+        "Name": "pad0x20_8BYOS[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x0"
@@ -70,6 +37,39 @@
         "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x40"
+      }
+    ]
+  },
+  "CompassTargetSet": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "TargetLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "RotatingCompassRotationCurveCompletedEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_YCA8R[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "RotatingCompassSplinePathCompletedEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_8ANXS[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },

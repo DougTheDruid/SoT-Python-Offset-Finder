@@ -18,7 +18,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x7_RSDXI[0x7]",
+        "Name": "pad0x7_1HTTC[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x89"
@@ -46,7 +46,7 @@
     "ClassSize": "0xb0",
     "Attributes": [
       {
-        "Name": "pad0x90_EU994[0x90]",
+        "Name": "pad0x90_0TQQ1[0x90]",
         "Type": "char",
         "Size": "0x90",
         "Offset": "0x28"

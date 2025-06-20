@@ -1,4 +1,96 @@
 {
+  "FactionServicePopUpData": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Faction",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PopUpMessageDesc",
+        "Type": "class DataAsset*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "FactionStreakLevelData": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "StreakLevel",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "StreakCountThreshold",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "FactionLeftTelemetryEvent": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Name": "FactionSessionId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AlignedFactionName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "LeftReason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x3_ZA9ES[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x19"
+      }
+    ]
+  },
+  "FactionWaitTimesData": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Faction",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SessionType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "pad0x6_28NH8[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x2"
+      },
+      {
+        "Name": "pad0x8_V839L[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "CrewFactionEntryData": {
     "ClassSize": "0x68",
     "Attributes": [
@@ -27,7 +119,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_NDCJM[0x4]",
+        "Name": "pad0x4_6KR94[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
@@ -45,7 +137,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x7_Y0AJ5[0x7]",
+        "Name": "pad0x7_8Z3J8[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x39"
@@ -63,7 +155,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x4_O7ZXW[0x4]",
+        "Name": "pad0x4_Z663C[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x54"
@@ -76,49 +168,37 @@
       }
     ]
   },
-  "FactionServicePopUpData": {
-    "ClassSize": "0x10",
+  "CrewsSunkShipEvent": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "Faction",
-        "Type": "class UClass*",
-        "Size": "0x8",
+        "Name": "AttackingCrewIds",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "PopUpMessageDesc",
-        "Type": "class DataAsset*",
-        "Size": "0x8",
-        "Offset": "0x8"
+        "Name": "SunkShipCrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
-  "FactionLeftTelemetryEvent": {
-    "ClassSize": "0x1c",
+  "CrewJoinedFaction": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "FactionSessionId",
+        "Name": "JoiningCrewId",
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "AlignedFactionName",
-        "Type": "struct FName",
+        "Name": "FactionJoined",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x10"
-      },
-      {
-        "Name": "LeftReason",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x3_87SKO[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x19"
       }
     ]
   },
@@ -144,143 +224,27 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x7_VQQCS[0x7]",
+        "Name": "pad0x7_QVL0X[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x19"
       }
     ]
   },
-  "CrewLeavingFaction": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "LeavingCrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "FactionToLeave",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "FactionLeftReason",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x7_9H1CL[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x19"
-      }
-    ]
-  },
-  "FactionStreakLevelData": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "StreakLevel",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "StreakCountThreshold",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "FactionJoinedTelemetryEvent": {
+  "CrewJoinedFactionSuccess": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "FactionSessionId",
+        "Name": "JoiningCrewId",
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "AlignedFactionName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "CrewsSunkShipEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "AttackingCrewIds",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SunkShipCrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "CrewFactionEntry": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "CrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Faction",
+        "Name": "FactionJoined",
         "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x10"
-      },
-      {
-        "Name": "EnemyFactionShipRangeState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x3_V50B5[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x19"
-      },
-      {
-        "Name": "CurrentLootValue",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x1c"
-      },
-      {
-        "Name": "SandsOfFate",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "Streak",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x24"
-      },
-      {
-        "Name": "LeaveFactionCooldownTimeStamp",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x28"
       }
     ]
   },
@@ -298,23 +262,6 @@
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x10"
-      }
-    ]
-  },
-  "CompanyFactionAlignment": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Company",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Faction",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x8"
       }
     ]
   },
@@ -353,46 +300,6 @@
       }
     ]
   },
-  "FactionWaitTimesData": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Faction",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SessionType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "pad0x6_B158Q[0x6]",
-        "Type": "char",
-        "Size": "0x6",
-        "Offset": "0x2"
-      },
-      {
-        "Name": "pad0x8_C0GSL[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "ShipDestroyedByBattleBoundsEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "SunkShipCrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "FactionCrewAttackedPreviouslySunkCrewTelemetryEvent": {
     "ClassSize": "0x38",
     "Attributes": [
@@ -422,6 +329,52 @@
       }
     ]
   },
+  "CrewLeavingFaction": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "LeavingCrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "FactionToLeave",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "FactionLeftReason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x7_X3YNP[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x19"
+      }
+    ]
+  },
+  "CrewStreakLevelIncreased": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "StreakLevel",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "SandsOfFateData": {
     "ClassSize": "0xc",
     "Attributes": [
@@ -445,25 +398,36 @@
       }
     ]
   },
-  "CrewJoinedFaction": {
-    "ClassSize": "0x18",
+  "ShipDestroyedByBattleBoundsEvent": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "JoiningCrewId",
+        "Name": "SunkShipCrewId",
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
-      },
-      {
-        "Name": "FactionJoined",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x10"
       }
     ]
   },
-  "CrewStreakLevelIncreased": {
-    "ClassSize": "0x14",
+  "CompanyFactionAlignment": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Company",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Faction",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "CrewFactionEntry": {
+    "ClassSize": "0x30",
     "Attributes": [
       {
         "Name": "CrewId",
@@ -472,9 +436,62 @@
         "Offset": "0x0"
       },
       {
-        "Name": "StreakLevel",
+        "Name": "Faction",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "EnemyFactionShipRangeState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x3_WEMKV[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x19"
+      },
+      {
+        "Name": "CurrentLootValue",
         "Type": "int",
         "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "SandsOfFate",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "Streak",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "LeaveFactionCooldownTimeStamp",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "FactionJoinedTelemetryEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "FactionSessionId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AlignedFactionName",
+        "Type": "struct FName",
+        "Size": "0x8",
         "Offset": "0x10"
       }
     ]
@@ -490,23 +507,6 @@
       },
       {
         "Name": "Faction",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "CrewJoinedFactionSuccess": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "JoiningCrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "FactionJoined",
         "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x10"

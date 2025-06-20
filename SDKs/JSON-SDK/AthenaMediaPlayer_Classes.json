@@ -6,7 +6,7 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x8_KOG9U[0x8]",
+        "Name": "pad0x8_I77WJ[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x170"
@@ -24,7 +24,7 @@
         "Offset": "0x180"
       },
       {
-        "Name": "pad0x8_E0XQ1[0x8]",
+        "Name": "pad0x8_3E02Z[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x188"

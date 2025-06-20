@@ -1,4 +1,21 @@
 {
+  "OverheatingHandOverData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Contributors",
+        "Type": "TArray<uintptr_t>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x8_JUX1N[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "OverheatingReplicatedData": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -15,27 +32,10 @@
         "Offset": "0x4"
       },
       {
-        "Name": "pad0x3_TMO05[0x3]",
+        "Name": "pad0x3_EXKLA[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x5"
-      }
-    ]
-  },
-  "OverheatingHandOverData": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Contributors",
-        "Type": "TArray<uintptr_t>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x8_JZ594[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x10"
       }
     ]
   },

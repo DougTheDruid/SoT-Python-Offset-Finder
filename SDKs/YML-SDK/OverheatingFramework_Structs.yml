@@ -6,7 +6,7 @@ OverheatingHandOverData:
     Offset: '0x0'
     Size: '0x10'
     Type: TArray<uintptr_t>
-  - Name: pad0x8_JZ594[0x8]
+  - Name: pad0x8_JUX1N[0x8]
     Offset: '0x10'
     Size: '0x8'
     Type: char
@@ -21,7 +21,7 @@ OverheatingReplicatedData:
     Offset: '0x4'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_TMO05[0x3]
+  - Name: pad0x3_EXKLA[0x3]
     Offset: '0x5'
     Size: '0x3'
     Type: char

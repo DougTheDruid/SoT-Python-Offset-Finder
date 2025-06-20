@@ -54,7 +54,7 @@ LightPropagationVolumeSettings:
     Offset: '0x1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_BIQ9V[0x2]
+  - Name: pad0x2_OEHZQ[0x2]
     Offset: '0x2'
     Size: '0x2'
     Type: char
@@ -110,7 +110,7 @@ LightPropagationVolumeSettings:
     Offset: '0x34'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_DXRN5[0x8]
+  - Name: pad0x8_DLYT9[0x8]
     Offset: '0x38'
     Size: '0x8'
     Type: char

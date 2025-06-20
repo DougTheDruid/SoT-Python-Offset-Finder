@@ -7,14 +7,14 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class HelpfulAIItemInteractionsInterface: public Interface
+class AINameplateInterface: public Interface
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AINameplateInterface: public Interface
+class HelpfulAIItemInteractionsInterface: public Interface
 {
 public:
 };

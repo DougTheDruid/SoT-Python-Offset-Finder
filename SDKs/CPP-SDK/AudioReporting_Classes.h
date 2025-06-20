@@ -6,24 +6,28 @@
 #include "AudioReporting_Structs.h"
 
 
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class AudioReportingSettings: public DataAsset
-{
-public:
-	int                                                          MaxReactionCount;                                  // 0x28(0x4)
-	float                                                        AudioVeryCloseThresholdDistance;                   // 0x2c(0x4)
-	float                                                        AttenuationFilterScaler;                           // 0x30(0x4)
-	char                                                         pad0x4_Q6ZSV[0x4];                                 // 0x34(0x4)
-	TArray<class EventReactionsDataAsset*>                       EventReactionDataAssets;                           // 0x38(0x10)
-};
-
-
 // Size 0x178 (Full Size[0x230] - InheritedSize[0xb8]
 class AudioReportingComponent: public ActorComponent
 {
 public:
 	class PlayerController*                                      CachedOwningController;                            // 0xb8(0x8)
-	char                                                         pad0x170_B5LC1[0x170];                             // 0xc0(0x170)
+	char                                                         pad0x170_YDHMQ[0x170];                             // 0xc0(0x170)
+};
+
+
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
+class AudioReportingConfig: public DeveloperSettings
+{
+public:
+	struct StringAssetReference                                  AudioReportingSettings;                            // 0x38(0x10)
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class AudioReportReaction: public Object
+{
+public:
+	char                                                         pad0x8_BNMP6[0x8];                                 // 0x28(0x8)
 };
 
 
@@ -34,19 +38,15 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class AudioReportReaction: public Object
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class AudioReportingSettings: public DataAsset
 {
 public:
-	char                                                         pad0x8_A2SGK[0x8];                                 // 0x28(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class AudioReportingConfig: public DeveloperSettings
-{
-public:
-	struct StringAssetReference                                  AudioReportingSettings;                            // 0x38(0x10)
+	int                                                          MaxReactionCount;                                  // 0x28(0x4)
+	float                                                        AudioVeryCloseThresholdDistance;                   // 0x2c(0x4)
+	float                                                        AttenuationFilterScaler;                           // 0x30(0x4)
+	char                                                         pad0x4_G701K[0x4];                                 // 0x34(0x4)
+	TArray<class EventReactionsDataAsset*>                       EventReactionDataAssets;                           // 0x38(0x10)
 };
 
 

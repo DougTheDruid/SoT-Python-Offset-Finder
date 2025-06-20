@@ -13,20 +13,20 @@ public:
 };
 
 
-// Size 0x10
-struct WorldEdgeItemServiceBatchCompletedEvent
-{
-public:
-	struct Guid                                                  BatchId;                                           // 0x0(0x10)
-};
-
-
 // Size 0x18
 struct WorldEdgeItemDroppedInRedSeaTelemetryEvent
 {
 public:
 	struct Vector                                                DropLocation;                                      // 0x0(0xc)
 	struct Vector                                                TeleportLocation;                                  // 0xc(0xc)
+};
+
+
+// Size 0x10
+struct WorldEdgeItemServiceBatchCompletedEvent
+{
+public:
+	struct Guid                                                  BatchId;                                           // 0x0(0x10)
 };
 
 

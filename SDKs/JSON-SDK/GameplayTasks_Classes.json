@@ -1,4 +1,11 @@
 {
+  "GameplayTaskOwnerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "GameplayTask": {
     "Super": "Object",
     "FullSize": "0x58",
@@ -12,19 +19,12 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x28_5N5O9[0x28]",
+        "Name": "pad0x28_TXBEQ[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x30"
       }
     ]
-  },
-  "GameplayTaskOwnerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "GameplayTasksComponent": {
     "Super": "ActorComponent",
@@ -33,7 +33,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x8_18B7M[0x8]",
+        "Name": "pad0x8_HJEAO[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -51,13 +51,13 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x28_L730F[0x28]",
+        "Name": "pad0x28_4VG4W[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0xe0"
       },
       {
-        "Name": "pad0x10_KRASM[0x10]",
+        "Name": "pad0x10_SI2GP[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x108"
@@ -77,7 +77,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_1ISBW[0x4]",
+        "Name": "pad0x4_FQHIV[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
@@ -89,30 +89,10 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x7_F1LWF[0x7]",
+        "Name": "pad0x7_DKIJ3[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x31"
-      }
-    ]
-  },
-  "GameplayTask_SpawnActor": {
-    "Super": "GameplayTask",
-    "FullSize": "0x98",
-    "InheritedSize": "0x58",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "pad0x38_8QKB1[0x38]",
-        "Type": "char",
-        "Size": "0x38",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "ClassToSpawn",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x90"
       }
     ]
   },
@@ -123,10 +103,30 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x18_FB705[0x18]",
+        "Name": "pad0x18_8BVOK[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x58"
+      }
+    ]
+  },
+  "GameplayTask_SpawnActor": {
+    "Super": "GameplayTask",
+    "FullSize": "0x98",
+    "InheritedSize": "0x58",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "pad0x38_0771T[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "ClassToSpawn",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x90"
       }
     ]
   },

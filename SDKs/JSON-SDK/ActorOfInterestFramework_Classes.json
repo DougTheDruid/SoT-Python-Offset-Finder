@@ -1,11 +1,4 @@
 {
-  "ActorOfInterestId": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "ActorOfInterestComponent": {
     "Super": "ActorComponent",
     "FullSize": "0xd8",
@@ -19,15 +12,15 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x18_C8OWF[0x18]",
+        "Name": "pad0x18_T31RB[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0xc0"
       }
     ]
   },
-  "ActorOfInterestServiceInterface": {
-    "Super": "Interface",
+  "ActorOfInterestBlueprintFunctionLibrary": {
+    "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
@@ -40,7 +33,7 @@
     "ClassSize": "0x100",
     "Attributes": [
       {
-        "Name": "pad0x60_5O5YJ[0x60]",
+        "Name": "pad0x60_1OL74[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0x3a0"
@@ -53,7 +46,14 @@
       }
     ]
   },
-  "ActorOfInterestBlueprintFunctionLibrary": {
+  "ActorOfInterestServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ActorOfInterestId": {
     "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

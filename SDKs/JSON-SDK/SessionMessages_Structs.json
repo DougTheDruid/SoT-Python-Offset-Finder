@@ -1,4 +1,26 @@
 {
+  "SessionServiceLogUnsubscribe": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_55PAH[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SessionServiceLogSubscribe": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_LCR6Z[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "SessionServicePong": {
     "ClassSize": "0x90",
     "Attributes": [
@@ -33,7 +55,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_TEPZV[0x7]",
+        "Name": "pad0x7_VI0VT[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
@@ -69,21 +91,10 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x7_Y8LZJ[0x7]",
+        "Name": "pad0x7_Y5FCY[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x89"
-      }
-    ]
-  },
-  "SessionServiceLogSubscribe": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_WT18H[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
       }
     ]
   },
@@ -121,21 +132,10 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x7_60GCJ[0x7]",
+        "Name": "pad0x7_65A20[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x31"
-      }
-    ]
-  },
-  "SessionServiceLogUnsubscribe": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_28DJW[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
       }
     ]
   },
@@ -143,7 +143,7 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_78TV1[0x1]",
+        "Name": "pad0x1_DPATT[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"

@@ -16,7 +16,7 @@ DisplayInvasionBannersStepDesc:
     Offset: '0xb8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_N25TB[0x7]
+  - Name: pad0x7_2RUVP[0x7]
     Offset: '0xb9'
     Size: '0x7'
     Type: char
@@ -128,7 +128,7 @@ InvasionBattleBounds:
     Offset: '0x3bc'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_UY33S[0x8]
+  - Name: pad0x8_VQVY4[0x8]
     Offset: '0x3c0'
     Size: '0x8'
     Type: char
@@ -140,11 +140,11 @@ InvasionBattleBounds:
     Offset: '0x3d0'
     Size: '0x10'
     Type: TArray<class Actor*>
-  - Name: pad0x8_ICA81[0x8]
+  - Name: pad0x8_ZGFWR[0x8]
     Offset: '0x3e0'
     Size: '0x8'
     Type: char
-  - Name: pad0x50_0YWTM[0x50]
+  - Name: pad0x50_389LU[0x50]
     Offset: '0x3e8'
     Size: '0x50'
     Type: char
@@ -182,7 +182,7 @@ InvasionLocationsDataAssetGetterInterface:
   Super: Interface
 InvasionService:
   Attributes:
-  - Name: pad0x40_35B28[0x40]
+  - Name: pad0x40_0F2SH[0x40]
     Offset: '0x3a0'
     Size: '0x40'
     Type: char
@@ -198,7 +198,7 @@ InvasionService:
     Offset: '0x3f0'
     Size: '0x8'
     Type: class InvasionLocationsDataAsset*
-  - Name: pad0x130_1YHKB[0x130]
+  - Name: pad0x130_Y6PKJ[0x130]
     Offset: '0x3f8'
     Size: '0x130'
     Type: char
@@ -226,7 +226,7 @@ InvasionService:
     Offset: '0x578'
     Size: '0x10'
     Type: TArray<class InvasionBattleBounds*>
-  - Name: pad0x80_VWNM9[0x80]
+  - Name: pad0x80_S13CK[0x80]
     Offset: '0x588'
     Size: '0x80'
     Type: char
@@ -252,7 +252,7 @@ InvasionServiceDataAsset:
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_9PJUJ[0x4]
+  - Name: pad0x4_VD3G9[0x4]
     Offset: '0x44'
     Size: '0x4'
     Type: char
@@ -328,7 +328,7 @@ InvasionServiceDataAsset:
     Offset: '0xa8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_87PDF[0x4]
+  - Name: pad0x4_0DGNV[0x4]
     Offset: '0xac'
     Size: '0x4'
     Type: char
@@ -354,7 +354,7 @@ InvasionSettings:
   Super: DeveloperSettings
 SetInvasionMusicStateForCrewStep:
   Attributes:
-  - Name: pad0x8_KKIVM[0x8]
+  - Name: pad0x8_85E07[0x8]
     Offset: '0x98'
     Size: '0x8'
     Type: char
@@ -368,7 +368,7 @@ SetInvasionMusicStateForCrewStepDesc:
     Offset: '0x80'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_N5A28[0x7]
+  - Name: pad0x7_0Q7BY[0x7]
     Offset: '0x81'
     Size: '0x7'
     Type: char
@@ -402,7 +402,7 @@ TaleQuestInvasionMatchmakingService:
     Offset: '0x60'
     Size: '0x8'
     Type: class TaleQuestInvasionMatchmakingServiceDesc*
-  - Name: pad0x1c0_OPGEZ[0x1c0]
+  - Name: pad0x1c0_1DW5T[0x1c0]
     Offset: '0x68'
     Size: '0x1c0'
     Type: char
@@ -446,7 +446,7 @@ TaleQuestInvasionService:
     Offset: '0x60'
     Size: '0x8'
     Type: class TaleQuestInvasionServiceDesc*
-  - Name: pad0x1a0_JAKCT[0x1a0]
+  - Name: pad0x1a0_026CD[0x1a0]
     Offset: '0x68'
     Size: '0x1a0'
     Type: char
@@ -478,7 +478,7 @@ TaleQuestInvasionServiceDesc:
   Super: TaleQuestServiceDesc
 WaitForShipToBeDefeatedStep:
   Attributes:
-  - Name: pad0x18_JSMN6[0x18]
+  - Name: pad0x18_G2NEJ[0x18]
     Offset: '0x98'
     Size: '0x18'
     Type: char
@@ -516,7 +516,7 @@ WaitForShipToBeDefeatedStepDesc:
     Offset: '0x1a0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_OP77Y[0x4]
+  - Name: pad0x4_SZ322[0x4]
     Offset: '0x1a4'
     Size: '0x4'
     Type: char

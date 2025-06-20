@@ -1,5 +1,5 @@
 {
-  "VideoPlaybackStartEvent": {
+  "VideoPlaybackPauseEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
@@ -24,63 +24,6 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
-      }
-    ]
-  },
-  "VideoPlaybackStopEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MediaTextureName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "VideoPlaybackStateEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "MediaTextureName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "State",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x7_9RVZF[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x11"
-      }
-    ]
-  },
-  "VideoSubtitleEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "MediaTextureName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SubtitleString",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "SubtitleDuration",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x20"
       }
     ]
   },
@@ -112,14 +55,71 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x18_3KCFZ[0x18]",
+        "Name": "pad0x18_EFNM8[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x28"
       }
     ]
   },
-  "VideoPlaybackPauseEvent": {
+  "VideoPlaybackStateEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "MediaTextureName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "State",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_GDCQZ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      }
+    ]
+  },
+  "VideoPlaybackStartEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MediaTextureName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "VideoSubtitleEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "MediaTextureName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SubtitleString",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "SubtitleDuration",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "VideoPlaybackStopEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {

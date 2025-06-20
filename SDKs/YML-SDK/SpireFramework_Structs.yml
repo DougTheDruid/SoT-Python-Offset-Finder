@@ -14,7 +14,7 @@ ServerSpireInfo:
     Offset: '0x10'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x50_IPYQV[0x50]
+  - Name: pad0x50_HIH1O[0x50]
     Offset: '0x18'
     Size: '0x50'
     Type: char
@@ -44,7 +44,7 @@ SpireInfo:
     Offset: '0x5'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_78Z37[0x2]
+  - Name: pad0x2_AOUBA[0x2]
     Offset: '0x6'
     Size: '0x2'
     Type: char

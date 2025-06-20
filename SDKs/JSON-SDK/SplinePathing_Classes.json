@@ -1,4 +1,54 @@
 {
+  "FixedSplinePathingActor": {
+    "Super": "Actor",
+    "FullSize": "0x3f0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "Root",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "FakedBuoyancyComponent",
+        "Type": "class FakedBuoyancyComponent*",
+        "Size": "0x8",
+        "Offset": "0x3a8"
+      },
+      {
+        "Name": "Speed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3b0"
+      },
+      {
+        "Name": "pad0x4_DWOH8[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3b4"
+      },
+      {
+        "Name": "FollowingSpline",
+        "Type": "class SplineComponent*",
+        "Size": "0x8",
+        "Offset": "0x3b8"
+      },
+      {
+        "Name": "CanTick",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3c0"
+      },
+      {
+        "Name": "pad0x2f_NA27I[0x2f]",
+        "Type": "char",
+        "Size": "0x2f",
+        "Offset": "0x3c1"
+      }
+    ]
+  },
   "SplinePathingActor": {
     "Super": "Actor",
     "FullSize": "0x488",
@@ -6,7 +56,7 @@
     "ClassSize": "0xe8",
     "Attributes": [
       {
-        "Name": "pad0x8_LBB18[0x8]",
+        "Name": "pad0x8_PYLQM[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3a0"
@@ -18,7 +68,7 @@
         "Offset": "0x3a8"
       },
       {
-        "Name": "pad0x10_7Y7W1[0x10]",
+        "Name": "pad0x10_W6LTF[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x448"
@@ -60,60 +110,10 @@
         "Offset": "0x474"
       },
       {
-        "Name": "pad0x10_OPKK1[0x10]",
+        "Name": "pad0x10_88OVR[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x478"
-      }
-    ]
-  },
-  "FixedSplinePathingActor": {
-    "Super": "Actor",
-    "FullSize": "0x3f0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "Root",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "FakedBuoyancyComponent",
-        "Type": "class FakedBuoyancyComponent*",
-        "Size": "0x8",
-        "Offset": "0x3a8"
-      },
-      {
-        "Name": "Speed",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3b0"
-      },
-      {
-        "Name": "pad0x4_DS4DG[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3b4"
-      },
-      {
-        "Name": "FollowingSpline",
-        "Type": "class SplineComponent*",
-        "Size": "0x8",
-        "Offset": "0x3b8"
-      },
-      {
-        "Name": "CanTick",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3c0"
-      },
-      {
-        "Name": "pad0x2f_HZXFC[0x2f]",
-        "Type": "char",
-        "Size": "0x2f",
-        "Offset": "0x3c1"
       }
     ]
   },

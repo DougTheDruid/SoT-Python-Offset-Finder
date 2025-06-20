@@ -6,18 +6,18 @@
 #include "AsyncLoadingMonitoring_Structs.h"
 
 
-// Size 0xb8 (Full Size[0xe0] - InheritedSize[0x28]
-class AsyncLoadingMonitoringService: public Object
-{
-public:
-	char                                                         pad0xb8_X0XEZ[0xb8];                               // 0x28(0xb8)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AsyncLoadingMonitoringServiceInterface: public Interface
 {
 public:
+};
+
+
+// Size 0xb8 (Full Size[0xe0] - InheritedSize[0x28]
+class AsyncLoadingMonitoringService: public Object
+{
+public:
+	char                                                         pad0xb8_YGHY4[0xb8];                               // 0x28(0xb8)
 };
 
 

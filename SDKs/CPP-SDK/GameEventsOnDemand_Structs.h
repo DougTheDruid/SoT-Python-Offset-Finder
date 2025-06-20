@@ -18,7 +18,7 @@ public:
 	struct FString                                               EventName;                                         // 0x0(0x10)
 	char                                                         EventCategory;                                     // 0x10(0x1)
 	char                                                         AvailabilityState;                                 // 0x11(0x1)
-	char                                                         pad0x6_OMNR4[0x6];                                 // 0x12(0x6)
+	char                                                         pad0x6_QG56H[0x6];                                 // 0x12(0x6)
 };
 
 
@@ -28,7 +28,7 @@ struct GameEventsOnDemandLoserTunnelCrewData
 public:
 	struct Guid                                                  CrewId;                                            // 0x0(0x10)
 	class UClass*                                                GameEventType;                                     // 0x10(0x8)
-	char                                                         pad0x8_FFTWP[0x8];                                 // 0x18(0x8)
+	char                                                         pad0x8_063QP[0x8];                                 // 0x18(0x8)
 };
 
 

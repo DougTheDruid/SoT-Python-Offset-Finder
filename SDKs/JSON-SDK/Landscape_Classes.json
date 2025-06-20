@@ -1,229 +1,4 @@
 {
-  "LandscapeSplinesComponent": {
-    "Super": "PrimitiveComponent",
-    "FullSize": "0x5f0",
-    "InheritedSize": "0x5c0",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "ControlPoints",
-        "Type": "TArray<class LandscapeSplineControlPoint*>",
-        "Size": "0x10",
-        "Offset": "0x5b8"
-      },
-      {
-        "Name": "Segments",
-        "Type": "TArray<class LandscapeSplineSegment*>",
-        "Size": "0x10",
-        "Offset": "0x5c8"
-      },
-      {
-        "Name": "CookedForeignMeshComponents",
-        "Type": "TArray<class MeshComponent*>",
-        "Size": "0x10",
-        "Offset": "0x5d8"
-      },
-      {
-        "Name": "pad0x8_RYQR9[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x5e8"
-      }
-    ]
-  },
-  "LandscapeInfo": {
-    "Super": "Object",
-    "FullSize": "0x210",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x1e8",
-    "Attributes": [
-      {
-        "Name": "pad0x1c_RQLXL[0x1c]",
-        "Type": "char",
-        "Size": "0x1c",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "LandscapeGuid",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "ComponentSizeQuads",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x54"
-      },
-      {
-        "Name": "SubsectionSizeQuads",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "ComponentNumSubsections",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x5c"
-      },
-      {
-        "Name": "DrawScale",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "pad0x1a4_19WE9[0x1a4]",
-        "Type": "char",
-        "Size": "0x1a4",
-        "Offset": "0x6c"
-      }
-    ]
-  },
-  "LandscapeSplineSegment": {
-    "Super": "Object",
-    "FullSize": "0xb0",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x88",
-    "Attributes": [
-      {
-        "Name": "Connections",
-        "Type": "struct LandscapeSplineSegmentConnection",
-        "Size": "0x18",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x18_ZJD2X[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "SplineInfo",
-        "Type": "struct InterpCurveVector",
-        "Size": "0x18",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "Points",
-        "Type": "TArray<struct LandscapeSplineInterpPoint>",
-        "Size": "0x10",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "Bounds",
-        "Type": "struct Box",
-        "Size": "0x1c",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "pad0x4_0YTKS[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x9c"
-      },
-      {
-        "Name": "LocalMeshComponents",
-        "Type": "TArray<class SplineMeshComponent*>",
-        "Size": "0x10",
-        "Offset": "0xa0"
-      }
-    ]
-  },
-  "LandscapeLayerInfoObject": {
-    "Super": "Object",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "LayerName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "PhysMaterial",
-        "Type": "class PhysicalMaterial*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "Hardness",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x4_SQ8WL[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      }
-    ]
-  },
-  "LandscapeGizmoRenderComponent": {
-    "Super": "PrimitiveComponent",
-    "FullSize": "0x5c0",
-    "InheritedSize": "0x5c0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "LandscapeMeshProxyComponent": {
-    "Super": "StaticMeshComponent",
-    "FullSize": "0x650",
-    "InheritedSize": "0x620",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "LandscapeGuid",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x620"
-      },
-      {
-        "Name": "ProxyComponentBases",
-        "Type": "TArray<struct IntPoint>",
-        "Size": "0x10",
-        "Offset": "0x630"
-      },
-      {
-        "Name": "pad0x10_0OOIU[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x640"
-      }
-    ]
-  },
-  "LandscapeInfoMap": {
-    "Super": "Object",
-    "FullSize": "0x78",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x50_9UJLZ[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "MaterialExpressionLandscapeVisibilityMask": {
-    "Super": "MaterialExpression",
-    "FullSize": "0x80",
-    "InheritedSize": "0x70",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ExpressionGUID",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x70"
-      }
-    ]
-  },
   "LandscapeGrassType": {
     "Super": "Object",
     "FullSize": "0x58",
@@ -279,130 +54,42 @@
         "Offset": "0x51"
       },
       {
-        "Name": "pad0x6_MMGK2[0x6]",
+        "Name": "pad0x6_Z5K9B[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x52"
       }
     ]
   },
-  "LandscapeMaterialInstanceConstant": {
-    "Super": "MaterialInstanceConstant",
-    "FullSize": "0x1c8",
-    "InheritedSize": "0x1b8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "bIsLayerThumbnail",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1b8"
-      },
-      {
-        "Name": "pad0x3_U4060[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1b9"
-      },
-      {
-        "Name": "DataWeightmapIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x1bc"
-      },
-      {
-        "Name": "DataWeightmapSize",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x1c0"
-      },
-      {
-        "Name": "pad0x4_DM3BB[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x1c4"
-      }
-    ]
-  },
-  "LandscapeHeightfieldCollisionComponent": {
+  "LandscapeSplinesComponent": {
     "Super": "PrimitiveComponent",
-    "FullSize": "0x690",
-    "InheritedSize": "0x5c0",
-    "ClassSize": "0xd0",
+    "FullSize": "0x5d0",
+    "InheritedSize": "0x5a0",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "ComponentLayerInfos",
-        "Type": "TArray<class LandscapeLayerInfoObject*>",
+        "Name": "ControlPoints",
+        "Type": "TArray<class LandscapeSplineControlPoint*>",
+        "Size": "0x10",
+        "Offset": "0x598"
+      },
+      {
+        "Name": "Segments",
+        "Type": "TArray<class LandscapeSplineSegment*>",
+        "Size": "0x10",
+        "Offset": "0x5a8"
+      },
+      {
+        "Name": "CookedForeignMeshComponents",
+        "Type": "TArray<class MeshComponent*>",
         "Size": "0x10",
         "Offset": "0x5b8"
       },
       {
-        "Name": "SectionBaseX",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x5c8"
-      },
-      {
-        "Name": "SectionBaseY",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x5cc"
-      },
-      {
-        "Name": "CollisionSizeQuads",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x5d0"
-      },
-      {
-        "Name": "CollisionScale",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x5d4"
-      },
-      {
-        "Name": "CollisionQuadFlags",
-        "Type": "TArray<char>",
-        "Size": "0x10",
-        "Offset": "0x5d8"
-      },
-      {
-        "Name": "HeightfieldGuid",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x5e8"
-      },
-      {
-        "Name": "CachedLocalBox",
-        "Type": "struct Box",
-        "Size": "0x1c",
-        "Offset": "0x5f8"
-      },
-      {
-        "Name": "CookedPhysicalMaterials",
-        "Type": "TArray<class PhysicalMaterial*>",
-        "Size": "0x10",
-        "Offset": "0x640"
-      },
-      {
-        "Name": "pad0x40_17S50[0x40]",
+        "Name": "pad0x8_1J25B[0x8]",
         "Type": "char",
-        "Size": "0x40",
-        "Offset": "0x650"
-      }
-    ]
-  },
-  "MaterialExpressionLandscapeGrassOutput": {
-    "Super": "MaterialExpressionCustomOutput",
-    "FullSize": "0x80",
-    "InheritedSize": "0x70",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "GrassTypes",
-        "Type": "TArray<struct GrassInput>",
-        "Size": "0x10",
-        "Offset": "0x70"
+        "Size": "0x8",
+        "Offset": "0x5c8"
       }
     ]
   },
@@ -443,7 +130,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_K4E96[0x4]",
+        "Name": "pad0x4_CYK61[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
@@ -467,7 +154,7 @@
         "Offset": "0x70"
       },
       {
-        "Name": "pad0x4_JQJHN[0x4]",
+        "Name": "pad0x4_SOEXQ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x8c"
@@ -480,256 +167,87 @@
       }
     ]
   },
-  "LandscapeComponent": {
-    "Super": "PrimitiveComponent",
-    "FullSize": "0x720",
-    "InheritedSize": "0x5c0",
-    "ClassSize": "0x160",
+  "MaterialExpressionLandscapeGrassOutput": {
+    "Super": "MaterialExpressionCustomOutput",
+    "FullSize": "0x80",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "SectionBaseX",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x5b8"
-      },
-      {
-        "Name": "SectionBaseY",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x5bc"
-      },
-      {
-        "Name": "ComponentSizeQuads",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x5c0"
-      },
-      {
-        "Name": "SubsectionSizeQuads",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x5c4"
-      },
-      {
-        "Name": "NumSubsections",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x5c8"
-      },
-      {
-        "Name": "pad0x4_DAWQZ[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x5cc"
-      },
-      {
-        "Name": "OverrideMaterial",
-        "Type": "class MaterialInterface*",
-        "Size": "0x8",
-        "Offset": "0x5d0"
-      },
-      {
-        "Name": "OverrideHoleMaterial",
-        "Type": "class MaterialInterface*",
-        "Size": "0x8",
-        "Offset": "0x5d8"
-      },
-      {
-        "Name": "MaterialInstance",
-        "Type": "class MaterialInstanceConstant*",
-        "Size": "0x8",
-        "Offset": "0x5e0"
-      },
-      {
-        "Name": "WeightmapLayerAllocations",
-        "Type": "TArray<struct WeightmapLayerAllocationInfo>",
+        "Name": "GrassTypes",
+        "Type": "TArray<struct GrassInput>",
         "Size": "0x10",
-        "Offset": "0x5e8"
-      },
-      {
-        "Name": "WeightmapTextures",
-        "Type": "TArray<class Texture2D*>",
-        "Size": "0x10",
-        "Offset": "0x5f8"
-      },
-      {
-        "Name": "XYOffsetmapTexture",
-        "Type": "class Texture2D*",
-        "Size": "0x8",
-        "Offset": "0x608"
-      },
-      {
-        "Name": "WeightmapScaleBias",
-        "Type": "struct Vector4",
-        "Size": "0x10",
-        "Offset": "0x610"
-      },
-      {
-        "Name": "WeightmapSubsectionOffset",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x620"
-      },
-      {
-        "Name": "pad0xc_UAXTY[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x624"
-      },
-      {
-        "Name": "HeightmapScaleBias",
-        "Type": "struct Vector4",
-        "Size": "0x10",
-        "Offset": "0x630"
-      },
-      {
-        "Name": "HeightmapTexture",
-        "Type": "class Texture2D*",
-        "Size": "0x8",
-        "Offset": "0x640"
-      },
-      {
-        "Name": "CachedLocalBox",
-        "Type": "struct Box",
-        "Size": "0x1c",
-        "Offset": "0x648"
-      },
-      {
-        "Name": "IrrelevantLights",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x680"
-      },
-      {
-        "Name": "pad0x10_GYYE6[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x690"
-      },
-      {
-        "Name": "CollisionMipLevel",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x6a0"
-      },
-      {
-        "Name": "StaticLightingResolution",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x6a4"
-      },
-      {
-        "Name": "ForcedLOD",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x6a8"
-      },
-      {
-        "Name": "LODBias",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x6ac"
-      },
-      {
-        "Name": "StateId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x6b0"
-      },
-      {
-        "Name": "BakedTextureMaterialGuid",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x6c0"
-      },
-      {
-        "Name": "GIBakedBaseColorTexture",
-        "Type": "class Texture2D*",
-        "Size": "0x8",
-        "Offset": "0x6d0"
-      },
-      {
-        "Name": "MobileBlendableLayerMask",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x6d8"
-      },
-      {
-        "Name": "pad0x7_5QU3I[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x6d9"
-      },
-      {
-        "Name": "MobileMaterialInterface",
-        "Type": "class MaterialInterface*",
-        "Size": "0x8",
-        "Offset": "0x6e0"
-      },
-      {
-        "Name": "MobileWeightNormalmapTexture",
-        "Type": "class Texture2D*",
-        "Size": "0x8",
-        "Offset": "0x6e8"
-      },
-      {
-        "Name": "pad0x30_R1LY6[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x6f0"
+        "Offset": "0x70"
       }
     ]
   },
-  "ControlPointMeshComponent": {
-    "Super": "StaticMeshComponent",
-    "FullSize": "0x620",
-    "InheritedSize": "0x620",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "MaterialExpressionLandscapeLayerSwitch": {
+    "Super": "MaterialExpression",
+    "FullSize": "0x100",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "LayerUsed",
+        "Type": "struct ExpressionInput",
+        "Size": "0x38",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "LayerNotUsed",
+        "Type": "struct ExpressionInput",
+        "Size": "0x38",
+        "Offset": "0xa8"
+      },
+      {
+        "Name": "ParameterName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "PreviewUsed",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "pad0x3_RNQTA[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xe9"
+      },
+      {
+        "Name": "ExpressionGUID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0xec"
+      },
+      {
+        "Name": "pad0x4_QEIW7[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xfc"
+      }
+    ]
   },
-  "MaterialExpressionLandscapeLayerSample": {
+  "MaterialExpressionLandscapeLayerBlend": {
     "Super": "MaterialExpression",
     "FullSize": "0x90",
     "InheritedSize": "0x70",
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "ParameterName",
-        "Type": "struct FName",
-        "Size": "0x8",
+        "Name": "Layers",
+        "Type": "TArray<struct LayerBlendInput>",
+        "Size": "0x10",
         "Offset": "0x70"
-      },
-      {
-        "Name": "PreviewWeight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x78"
       },
       {
         "Name": "ExpressionGUID",
         "Type": "struct Guid",
         "Size": "0x10",
-        "Offset": "0x7c"
-      },
-      {
-        "Name": "pad0x4_LQSKR[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x8c"
-      }
-    ]
-  },
-  "LandscapeMeshProxyActor": {
-    "Super": "Actor",
-    "FullSize": "0x3a8",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "LandscapeMeshProxyComponent",
-        "Type": "class LandscapeMeshProxyComponent*",
-        "Size": "0x8",
-        "Offset": "0x3a0"
+        "Offset": "0x80"
       }
     ]
   },
@@ -740,7 +258,7 @@
     "ClassSize": "0x390",
     "Attributes": [
       {
-        "Name": "pad0x8_B3D2G[0x8]",
+        "Name": "pad0x8_3C1O4[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3a0"
@@ -788,7 +306,7 @@
         "Offset": "0x3d8"
       },
       {
-        "Name": "pad0x4_SPQTW[0x4]",
+        "Name": "pad0x4_CUNS7[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3dc"
@@ -812,7 +330,7 @@
         "Offset": "0x3f0"
       },
       {
-        "Name": "pad0x4_0W7BG[0x4]",
+        "Name": "pad0x4_1UTS1[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3f4"
@@ -836,7 +354,7 @@
         "Offset": "0x418"
       },
       {
-        "Name": "pad0x78_NP0UA[0x78]",
+        "Name": "pad0x78_LS2GD[0x78]",
         "Type": "char",
         "Size": "0x78",
         "Offset": "0x428"
@@ -884,7 +402,7 @@
         "Offset": "0x4c0"
       },
       {
-        "Name": "pad0x3_SIXL9[0x3]",
+        "Name": "pad0x3_NNWCN[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x4c1"
@@ -962,7 +480,7 @@
         "Offset": "0x67c"
       },
       {
-        "Name": "pad0x3_ADA3Q[0x3]",
+        "Name": "pad0x3_NWUE6[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x67d"
@@ -980,60 +498,249 @@
         "Offset": "0x681"
       },
       {
-        "Name": "pad0xae_GCKXX[0xae]",
+        "Name": "pad0xae_KVDA1[0xae]",
         "Type": "char",
         "Size": "0xae",
         "Offset": "0x682"
       }
     ]
   },
-  "MaterialExpressionLandscapeLayerSwitch": {
+  "MaterialExpressionLandscapeLayerSample": {
     "Super": "MaterialExpression",
-    "FullSize": "0x100",
+    "FullSize": "0x90",
     "InheritedSize": "0x70",
-    "ClassSize": "0x90",
+    "ClassSize": "0x20",
     "Attributes": [
-      {
-        "Name": "LayerUsed",
-        "Type": "struct ExpressionInput",
-        "Size": "0x38",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "LayerNotUsed",
-        "Type": "struct ExpressionInput",
-        "Size": "0x38",
-        "Offset": "0xa8"
-      },
       {
         "Name": "ParameterName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0xe0"
+        "Offset": "0x70"
       },
       {
-        "Name": "PreviewUsed",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "pad0x3_MKPDN[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0xe9"
+        "Name": "PreviewWeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x78"
       },
       {
         "Name": "ExpressionGUID",
         "Type": "struct Guid",
         "Size": "0x10",
-        "Offset": "0xec"
+        "Offset": "0x7c"
       },
       {
-        "Name": "pad0x4_5BYOM[0x4]",
+        "Name": "pad0x4_4AWKC[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0xfc"
+        "Offset": "0x8c"
+      }
+    ]
+  },
+  "MaterialExpressionLandscapeLayerCoords": {
+    "Super": "MaterialExpression",
+    "FullSize": "0x88",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "MappingType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "CustomUVType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x71"
+      },
+      {
+        "Name": "pad0x2_7ULS5[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x72"
+      },
+      {
+        "Name": "MappingScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x74"
+      },
+      {
+        "Name": "MappingRotation",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "MappingPanU",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x7c"
+      },
+      {
+        "Name": "MappingPanV",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x4_C41LJ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x84"
+      }
+    ]
+  },
+  "LandscapeMeshProxyComponent": {
+    "Super": "StaticMeshComponent",
+    "FullSize": "0x630",
+    "InheritedSize": "0x600",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "LandscapeGuid",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x600"
+      },
+      {
+        "Name": "ProxyComponentBases",
+        "Type": "TArray<struct IntPoint>",
+        "Size": "0x10",
+        "Offset": "0x610"
+      },
+      {
+        "Name": "pad0x10_TZ9R1[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x620"
+      }
+    ]
+  },
+  "LandscapeGizmoActor": {
+    "Super": "Actor",
+    "FullSize": "0x3a0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "LandscapeSplineSegment": {
+    "Super": "Object",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "Connections",
+        "Type": "struct LandscapeSplineSegmentConnection",
+        "Size": "0x18",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x18_046RM[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "SplineInfo",
+        "Type": "struct InterpCurveVector",
+        "Size": "0x18",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "Points",
+        "Type": "TArray<struct LandscapeSplineInterpPoint>",
+        "Size": "0x10",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "Bounds",
+        "Type": "struct Box",
+        "Size": "0x1c",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x4_TS2AL[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x9c"
+      },
+      {
+        "Name": "LocalMeshComponents",
+        "Type": "TArray<class SplineMeshComponent*>",
+        "Size": "0x10",
+        "Offset": "0xa0"
+      }
+    ]
+  },
+  "LandscapeHeightfieldCollisionComponent": {
+    "Super": "PrimitiveComponent",
+    "FullSize": "0x670",
+    "InheritedSize": "0x5a0",
+    "ClassSize": "0xd0",
+    "Attributes": [
+      {
+        "Name": "ComponentLayerInfos",
+        "Type": "TArray<class LandscapeLayerInfoObject*>",
+        "Size": "0x10",
+        "Offset": "0x598"
+      },
+      {
+        "Name": "SectionBaseX",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x5a8"
+      },
+      {
+        "Name": "SectionBaseY",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x5ac"
+      },
+      {
+        "Name": "CollisionSizeQuads",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x5b0"
+      },
+      {
+        "Name": "CollisionScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x5b4"
+      },
+      {
+        "Name": "CollisionQuadFlags",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x5b8"
+      },
+      {
+        "Name": "HeightfieldGuid",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x5c8"
+      },
+      {
+        "Name": "CachedLocalBox",
+        "Type": "struct Box",
+        "Size": "0x1c",
+        "Offset": "0x5d8"
+      },
+      {
+        "Name": "CookedPhysicalMaterials",
+        "Type": "TArray<class PhysicalMaterial*>",
+        "Size": "0x10",
+        "Offset": "0x620"
+      },
+      {
+        "Name": "pad0x40_YYJH5[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x630"
       }
     ]
   },
@@ -1081,99 +788,378 @@
       }
     ]
   },
-  "MaterialExpressionLandscapeLayerBlend": {
-    "Super": "MaterialExpression",
-    "FullSize": "0x90",
-    "InheritedSize": "0x70",
-    "ClassSize": "0x20",
+  "LandscapeGizmoRenderComponent": {
+    "Super": "PrimitiveComponent",
+    "FullSize": "0x5a0",
+    "InheritedSize": "0x5a0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "LandscapeMaterialInstanceConstant": {
+    "Super": "MaterialInstanceConstant",
+    "FullSize": "0x1c8",
+    "InheritedSize": "0x1b8",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Layers",
-        "Type": "TArray<struct LayerBlendInput>",
-        "Size": "0x10",
-        "Offset": "0x70"
+        "Name": "bIsLayerThumbnail",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1b8"
       },
+      {
+        "Name": "pad0x3_JPYIT[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1b9"
+      },
+      {
+        "Name": "DataWeightmapIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x1bc"
+      },
+      {
+        "Name": "DataWeightmapSize",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x1c0"
+      },
+      {
+        "Name": "pad0x4_SHRA2[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c4"
+      }
+    ]
+  },
+  "MaterialExpressionLandscapeVisibilityMask": {
+    "Super": "MaterialExpression",
+    "FullSize": "0x80",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x10",
+    "Attributes": [
       {
         "Name": "ExpressionGUID",
         "Type": "struct Guid",
         "Size": "0x10",
-        "Offset": "0x80"
-      }
-    ]
-  },
-  "LandscapeGizmoActor": {
-    "Super": "Actor",
-    "FullSize": "0x3a0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MaterialExpressionLandscapeLayerCoords": {
-    "Super": "MaterialExpression",
-    "FullSize": "0x88",
-    "InheritedSize": "0x70",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "MappingType",
-        "Type": "byte",
-        "Size": "0x1",
         "Offset": "0x70"
-      },
-      {
-        "Name": "CustomUVType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x71"
-      },
-      {
-        "Name": "pad0x2_66DIS[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x72"
-      },
-      {
-        "Name": "MappingScale",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x74"
-      },
-      {
-        "Name": "MappingRotation",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "MappingPanU",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x7c"
-      },
-      {
-        "Name": "MappingPanV",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "pad0x4_5QQ8T[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x84"
       }
     ]
   },
-  "LandscapeGizmoActiveActor": {
-    "Super": "LandscapeGizmoActor",
-    "FullSize": "0x3f0",
-    "InheritedSize": "0x3a0",
+  "LandscapeInfoMap": {
+    "Super": "Object",
+    "FullSize": "0x78",
+    "InheritedSize": "0x28",
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x50_FMRX0[0x50]",
+        "Name": "pad0x50_2H8KF[0x50]",
         "Type": "char",
         "Size": "0x50",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "LandscapeInfo": {
+    "Super": "Object",
+    "FullSize": "0x210",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x1e8",
+    "Attributes": [
+      {
+        "Name": "pad0x1c_JWDNV[0x1c]",
+        "Type": "char",
+        "Size": "0x1c",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "LandscapeGuid",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "ComponentSizeQuads",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x54"
+      },
+      {
+        "Name": "SubsectionSizeQuads",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "ComponentNumSubsections",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x5c"
+      },
+      {
+        "Name": "DrawScale",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x1a4_KLSD7[0x1a4]",
+        "Type": "char",
+        "Size": "0x1a4",
+        "Offset": "0x6c"
+      }
+    ]
+  },
+  "LandscapeComponent": {
+    "Super": "PrimitiveComponent",
+    "FullSize": "0x700",
+    "InheritedSize": "0x5a0",
+    "ClassSize": "0x160",
+    "Attributes": [
+      {
+        "Name": "SectionBaseX",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x598"
+      },
+      {
+        "Name": "SectionBaseY",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x59c"
+      },
+      {
+        "Name": "ComponentSizeQuads",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x5a0"
+      },
+      {
+        "Name": "SubsectionSizeQuads",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x5a4"
+      },
+      {
+        "Name": "NumSubsections",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x5a8"
+      },
+      {
+        "Name": "pad0x4_JULFM[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x5ac"
+      },
+      {
+        "Name": "OverrideMaterial",
+        "Type": "class MaterialInterface*",
+        "Size": "0x8",
+        "Offset": "0x5b0"
+      },
+      {
+        "Name": "OverrideHoleMaterial",
+        "Type": "class MaterialInterface*",
+        "Size": "0x8",
+        "Offset": "0x5b8"
+      },
+      {
+        "Name": "MaterialInstance",
+        "Type": "class MaterialInstanceConstant*",
+        "Size": "0x8",
+        "Offset": "0x5c0"
+      },
+      {
+        "Name": "WeightmapLayerAllocations",
+        "Type": "TArray<struct WeightmapLayerAllocationInfo>",
+        "Size": "0x10",
+        "Offset": "0x5c8"
+      },
+      {
+        "Name": "WeightmapTextures",
+        "Type": "TArray<class Texture2D*>",
+        "Size": "0x10",
+        "Offset": "0x5d8"
+      },
+      {
+        "Name": "XYOffsetmapTexture",
+        "Type": "class Texture2D*",
+        "Size": "0x8",
+        "Offset": "0x5e8"
+      },
+      {
+        "Name": "WeightmapScaleBias",
+        "Type": "struct Vector4",
+        "Size": "0x10",
+        "Offset": "0x5f0"
+      },
+      {
+        "Name": "WeightmapSubsectionOffset",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x600"
+      },
+      {
+        "Name": "pad0xc_KL9ND[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x604"
+      },
+      {
+        "Name": "HeightmapScaleBias",
+        "Type": "struct Vector4",
+        "Size": "0x10",
+        "Offset": "0x610"
+      },
+      {
+        "Name": "HeightmapTexture",
+        "Type": "class Texture2D*",
+        "Size": "0x8",
+        "Offset": "0x620"
+      },
+      {
+        "Name": "CachedLocalBox",
+        "Type": "struct Box",
+        "Size": "0x1c",
+        "Offset": "0x628"
+      },
+      {
+        "Name": "IrrelevantLights",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x660"
+      },
+      {
+        "Name": "pad0x10_BGAO7[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x670"
+      },
+      {
+        "Name": "CollisionMipLevel",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x680"
+      },
+      {
+        "Name": "StaticLightingResolution",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x684"
+      },
+      {
+        "Name": "ForcedLOD",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x688"
+      },
+      {
+        "Name": "LODBias",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x68c"
+      },
+      {
+        "Name": "StateId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x690"
+      },
+      {
+        "Name": "BakedTextureMaterialGuid",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x6a0"
+      },
+      {
+        "Name": "GIBakedBaseColorTexture",
+        "Type": "class Texture2D*",
+        "Size": "0x8",
+        "Offset": "0x6b0"
+      },
+      {
+        "Name": "MobileBlendableLayerMask",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x6b8"
+      },
+      {
+        "Name": "pad0x7_YBK7T[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x6b9"
+      },
+      {
+        "Name": "MobileMaterialInterface",
+        "Type": "class MaterialInterface*",
+        "Size": "0x8",
+        "Offset": "0x6c0"
+      },
+      {
+        "Name": "MobileWeightNormalmapTexture",
+        "Type": "class Texture2D*",
+        "Size": "0x8",
+        "Offset": "0x6c8"
+      },
+      {
+        "Name": "pad0x30_NGJTK[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x6d0"
+      }
+    ]
+  },
+  "LandscapeLayerInfoObject": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "LayerName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "PhysMaterial",
+        "Type": "class PhysicalMaterial*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "Hardness",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x4_XU40T[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      }
+    ]
+  },
+  "ControlPointMeshComponent": {
+    "Super": "StaticMeshComponent",
+    "FullSize": "0x600",
+    "InheritedSize": "0x600",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "LandscapeMeshProxyActor": {
+    "Super": "Actor",
+    "FullSize": "0x3a8",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "LandscapeMeshProxyComponent",
+        "Type": "class LandscapeMeshProxyComponent*",
+        "Size": "0x8",
         "Offset": "0x3a0"
       }
     ]
@@ -1185,23 +1171,37 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "LandscapeGizmoActiveActor": {
+    "Super": "LandscapeGizmoActor",
+    "FullSize": "0x3f0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x50_5J4IW[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x3a0"
+      }
+    ]
+  },
   "LandscapeMeshCollisionComponent": {
     "Super": "LandscapeHeightfieldCollisionComponent",
-    "FullSize": "0x6b0",
-    "InheritedSize": "0x690",
+    "FullSize": "0x690",
+    "InheritedSize": "0x670",
     "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "MeshGuid",
         "Type": "struct Guid",
         "Size": "0x10",
-        "Offset": "0x690"
+        "Offset": "0x670"
       },
       {
-        "Name": "pad0x10_RD9UI[0x10]",
+        "Name": "pad0x10_OA7TN[0x10]",
         "Type": "char",
         "Size": "0x10",
-        "Offset": "0x6a0"
+        "Offset": "0x680"
       }
     ]
   },

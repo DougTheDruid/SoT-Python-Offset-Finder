@@ -1,18 +1,4 @@
 {
-  "SunkenKingdomTreasuryDeepSeaRegion": {
-    "Super": "DeepSeaRegion",
-    "FullSize": "0x418",
-    "InheritedSize": "0x410",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_0DAKF[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x410"
-      }
-    ]
-  },
   "TreasuryWaveDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x68",
@@ -45,45 +31,17 @@
       }
     ]
   },
-  "SunkenKingdomShrineDeepSeaRegion": {
+  "SunkenKingdomTreasuryDeepSeaRegion": {
     "Super": "DeepSeaRegion",
     "FullSize": "0x418",
     "InheritedSize": "0x410",
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_JQ661[0x8]",
+        "Name": "pad0x8_5G2NW[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x410"
-      }
-    ]
-  },
-  "SunkenKingdomShrineFinalRewardSpawnComponent": {
-    "Super": "ItemSpawnComponent",
-    "FullSize": "0x4a0",
-    "InheritedSize": "0x480",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_UQ4HP[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x480"
-      }
-    ]
-  },
-  "ShimmerActor": {
-    "Super": "Actor",
-    "FullSize": "0x448",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0xa8",
-    "Attributes": [
-      {
-        "Name": "pad0xa8_7WZ8S[0xa8]",
-        "Type": "char",
-        "Size": "0xa8",
-        "Offset": "0x3a0"
       }
     ]
   },
@@ -94,7 +52,7 @@
     "ClassSize": "0xb0",
     "Attributes": [
       {
-        "Name": "pad0x10_LUOQ5[0x10]",
+        "Name": "pad0x10_6CBK4[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x4d8"
@@ -130,10 +88,38 @@
         "Offset": "0x510"
       },
       {
-        "Name": "pad0x70_D1HPW[0x70]",
+        "Name": "pad0x70_NAVXR[0x70]",
         "Type": "char",
         "Size": "0x70",
         "Offset": "0x518"
+      }
+    ]
+  },
+  "ShimmerActor": {
+    "Super": "Actor",
+    "FullSize": "0x448",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0xa8",
+    "Attributes": [
+      {
+        "Name": "pad0xa8_DQWW5[0xa8]",
+        "Type": "char",
+        "Size": "0xa8",
+        "Offset": "0x3a0"
+      }
+    ]
+  },
+  "SunkenKingdomShrineFinalRewardSpawnComponent": {
+    "Super": "ItemSpawnComponent",
+    "FullSize": "0x4a0",
+    "InheritedSize": "0x480",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_MBXH3[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x480"
       }
     ]
   },
@@ -144,7 +130,7 @@
     "ClassSize": "0x248",
     "Attributes": [
       {
-        "Name": "pad0x20_IBJR8[0x20]",
+        "Name": "pad0x20_LZ7V4[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x3a0"
@@ -318,7 +304,7 @@
         "Offset": "0x4e0"
       },
       {
-        "Name": "pad0x4_O0RBC[0x4]",
+        "Name": "pad0x4_H50BR[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4e4"
@@ -348,10 +334,24 @@
         "Offset": "0x530"
       },
       {
-        "Name": "pad0x18_J2IVK[0x18]",
+        "Name": "pad0x18_9950T[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x5d0"
+      }
+    ]
+  },
+  "SunkenKingdomShrineDeepSeaRegion": {
+    "Super": "DeepSeaRegion",
+    "FullSize": "0x418",
+    "InheritedSize": "0x410",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_H00UX[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x410"
       }
     ]
   },

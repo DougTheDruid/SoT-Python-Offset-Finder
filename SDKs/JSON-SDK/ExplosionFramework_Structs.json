@@ -1,50 +1,10 @@
 {
-  "EventOnExploded": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "RootInstigator",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x10_66V36[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "ImpactProjectileId",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "DirectHitActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x20"
-      }
-    ]
-  },
   "EventExplosionOverlap": {
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "DamagerType",
         "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventExplosionIgnitedActor": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "IgnitedActor",
-        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       }
@@ -61,6 +21,17 @@
       }
     ]
   },
+  "EventExplosionIgnitedActor": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "IgnitedActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "EventAffectedByExplosion": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -71,10 +42,39 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x10_XPKXC[0x10]",
+        "Name": "pad0x10_JF2AW[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "EventOnExploded": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "RootInstigator",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x10_QEJCG[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ImpactProjectileId",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "DirectHitActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x20"
       }
     ]
   },

@@ -6,8 +6,52 @@
 #include "SandboxPerformanceConstraintFramework_Structs.h"
 
 
+// Size 0x18 (Full Size[0x3b8] - InheritedSize[0x3a0]
+class SandboxPerformanceConstraintAIMemoryCaptureHelper: public Actor
+{
+public:
+	char                                                         pad0x10_PHVN1[0x10];                               // 0x3a0(0x10)
+	int                                                          AIFormToProcess;                                   // 0x3b0(0x4)
+	int                                                          CommandToProcess;                                  // 0x3b4(0x4)
+};
+
+
+// Size 0x140 (Full Size[0x168] - InheritedSize[0x28]
+class SandboxPerformanceConstraintService: public Object
+{
+public:
+	char                                                         pad0xb0_XPWIO[0xb0];                               // 0x28(0xb0)
+	TArray<struct SandboxPerformanceConstraintActivityContainer> ActivitiesByPriority;                              // 0xd8(0x10)
+	TArray<struct SandboxPerformanceConstraintActivityScore>     ActivitiesScores;                                  // 0xe8(0x10)
+	class SandboxPerformanceConstraintServiceAsset*              ServiceAsset;                                      // 0xf8(0x8)
+	char                                                         pad0x68_56QZR[0x68];                               // 0x100(0x68)
+};
+
+
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
+class SandboxPerformanceConstraintActivityResourceAsset: public DataAsset
+{
+public:
+	TArray<struct SandboxPerformanceConstraintActivityInstanceCount> ActivityDependencies;                              // 0x28(0x10)
+	class UClass*                                                ActivityType;                                      // 0x38(0x8)
+	struct SandboxPerformanceConstraintResourceContainer         ResourceUsage;                                     // 0x40(0x20)
+	char                                                         Priority;                                          // 0x60(0x1)
+	char                                                         pad0x3_VSNB5[0x3];                                 // 0x61(0x3)
+	float                                                        Range;                                             // 0x64(0x4)
+	bool                                                         IsAlwaysRelevant;                                  // 0x68(0x1)
+	char                                                         pad0x7_6ZDJT[0x7];                                 // 0x69(0x7)
+};
+
+
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SandboxPerformanceConstraintTelemetryInterface: public Interface
+class SandboxPerformanceConstraintActivityType: public Object
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class SandboxPerformanceConstraintConsumerInterface: public Interface
 {
 public:
 };
@@ -26,39 +70,12 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SandboxPerformanceConstraintSharedResourceType: public Object
+// Size 0x30 (Full Size[0x68] - InheritedSize[0x38]
+class SandboxPerformanceConstraintSettings: public DeveloperSettings
 {
 public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SandboxPerformanceConstraintConsumerInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
-class SandboxPerformanceConstraintActivityResourceAsset: public DataAsset
-{
-public:
-	TArray<struct SandboxPerformanceConstraintActivityInstanceCount> ActivityDependencies;                              // 0x28(0x10)
-	class UClass*                                                ActivityType;                                      // 0x38(0x8)
-	struct SandboxPerformanceConstraintResourceContainer         ResourceUsage;                                     // 0x40(0x20)
-	char                                                         Priority;                                          // 0x60(0x1)
-	char                                                         pad0x3_1HY0Y[0x3];                                 // 0x61(0x3)
-	float                                                        Range;                                             // 0x64(0x4)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class SandboxPerformanceConstraintSharedResourceAsset: public DataAsset
-{
-public:
-	class UClass*                                                SharedResourceType;                                // 0x28(0x8)
-	struct SandboxPerformanceConstraintSharedResourceContainer   SharedResourceUsage;                               // 0x30(0x10)
+	struct StringAssetReference                                  SandboxPerformanceConstraintServiceAsset;          // 0x38(0x10)
+	char                                                         pad0x20_HJ8Q0[0x20];                               // 0x48(0x20)
 };
 
 
@@ -70,29 +87,25 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SandboxPerformanceConstraintActivityType: public Object
+class SandboxPerformanceConstraintTelemetryInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class SandboxPerformanceConstraintSettings: public DeveloperSettings
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class SandboxPerformanceConstraintSharedResourceType: public Object
 {
 public:
-	struct StringAssetReference                                  SandboxPerformanceConstraintServiceAsset;          // 0x38(0x10)
 };
 
 
-// Size 0x140 (Full Size[0x168] - InheritedSize[0x28]
-class SandboxPerformanceConstraintService: public Object
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class SandboxPerformanceConstraintSharedResourceAsset: public DataAsset
 {
 public:
-	char                                                         pad0xb0_C41NT[0xb0];                               // 0x28(0xb0)
-	TArray<struct SandboxPerformanceConstraintActivityContainer> ActivitiesByPriority;                              // 0xd8(0x10)
-	TArray<struct SandboxPerformanceConstraintActivityScore>     ActivitiesScores;                                  // 0xe8(0x10)
-	class SandboxPerformanceConstraintServiceAsset*              ServiceAsset;                                      // 0xf8(0x8)
-	char                                                         pad0x68_3VYPH[0x68];                               // 0x100(0x68)
+	class UClass*                                                SharedResourceType;                                // 0x28(0x8)
+	struct SandboxPerformanceConstraintSharedResourceContainer   SharedResourceUsage;                               // 0x30(0x10)
 };
 
 

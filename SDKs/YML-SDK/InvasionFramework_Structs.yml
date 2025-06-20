@@ -30,7 +30,7 @@ CrewStoppedInvasion:
   ClassSize: '0x10'
 InvasionBannerNetworkEvent:
   Attributes:
-  - Name: pad0x18_BAOD0[0x18]
+  - Name: pad0x18_H75RI[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -46,7 +46,7 @@ InvasionBannerNetworkEvent:
     Offset: '0x60'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_0ICDQ[0x3]
+  - Name: pad0x3_REN3B[0x3]
     Offset: '0x61'
     Size: '0x3'
     Type: char
@@ -58,7 +58,7 @@ InvasionBannerNetworkEvent:
     Offset: '0x6c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_P14R6[0x3]
+  - Name: pad0x3_E7EQV[0x3]
     Offset: '0x6d'
     Size: '0x3'
     Type: char
@@ -73,7 +73,7 @@ InvasionCrewData:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_9KNBO[0x3]
+  - Name: pad0x3_SWLD3[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -85,7 +85,7 @@ InvasionCrewData:
     Offset: '0x1c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_ZKX1M[0x3]
+  - Name: pad0x3_51JSL[0x3]
     Offset: '0x1d'
     Size: '0x3'
     Type: char
@@ -104,7 +104,7 @@ InvasionEndedTelemetryEvent:
     Offset: '0x30'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_OV6L3[0x4]
+  - Name: pad0x4_JHM0O[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
@@ -116,7 +116,7 @@ InvasionEndedTelemetryEvent:
     Offset: '0x48'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_II4PG[0x7]
+  - Name: pad0x7_O593O[0x7]
     Offset: '0x49'
     Size: '0x7'
     Type: char
@@ -131,7 +131,7 @@ InvasionParticipatingCrewData:
     Offset: '0x10'
     Size: '0x10'
     Type: TArray<class CrewVoyageParticipant*>
-  - Name: pad0x58_RTKTB[0x58]
+  - Name: pad0x58_ZUQEW[0x58]
     Offset: '0x20'
     Size: '0x58'
     Type: char
@@ -146,14 +146,14 @@ InvasionServiceMatchmakingCrewInfo:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_SUOMA[0x3]
+  - Name: pad0x3_56S1A[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
   ClassSize: '0x14'
 MatchesCreateMatchSuccessfulRpc:
   Attributes:
-  - Name: pad0x18_20CGX[0x18]
+  - Name: pad0x18_L9B0Y[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -164,7 +164,7 @@ MatchesCreateMatchSuccessfulRpc:
   ClassSize: '0x28'
 MatchesTriggerCreateMatchRpc:
   Attributes:
-  - Name: pad0x18_YI992[0x18]
+  - Name: pad0x18_KS2OC[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -176,7 +176,7 @@ MatchesTriggerCreateMatchRpc:
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_0Z9AA[0x4]
+  - Name: pad0x4_Z1ZWD[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -196,7 +196,7 @@ MatchesTriggerCreateMatchRpc:
     Offset: '0x51'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_DEFNL[0x6]
+  - Name: pad0x6_B8H3S[0x6]
     Offset: '0x52'
     Size: '0x6'
     Type: char
@@ -211,7 +211,7 @@ MatchesTriggerCreateMatchRpc:
   ClassSize: '0x78'
 MatchesTriggerEndMatchRpc:
   Attributes:
-  - Name: pad0x18_PH25X[0x18]
+  - Name: pad0x18_QK53G[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -230,7 +230,7 @@ MatchesTriggerEndMatchRpc:
   ClassSize: '0x48'
 MatchesTriggerPlayerJoinRpc:
   Attributes:
-  - Name: pad0x18_9N9BP[0x18]
+  - Name: pad0x18_MDZ2W[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -249,7 +249,7 @@ MatchesTriggerPlayerJoinRpc:
   ClassSize: '0x60'
 MatchesTriggerPlayerLeaveRpc:
   Attributes:
-  - Name: pad0x18_OX11H[0x18]
+  - Name: pad0x18_52SN0[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -264,7 +264,7 @@ MatchesTriggerPlayerLeaveRpc:
   ClassSize: '0x50'
 MatchesTriggerStartMatchRpc:
   Attributes:
-  - Name: pad0x18_Z8IP8[0x18]
+  - Name: pad0x18_DAFLF[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -275,7 +275,7 @@ MatchesTriggerStartMatchRpc:
   ClassSize: '0x28'
 MatchesTriggerUpdateMatchRpc:
   Attributes:
-  - Name: pad0x18_HLAIZ[0x18]
+  - Name: pad0x18_NS9Q9[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -298,7 +298,7 @@ PlayerData:
     Offset: '0x20'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_WO7AL[0x7]
+  - Name: pad0x7_Y1P0K[0x7]
     Offset: '0x21'
     Size: '0x7'
     Type: char

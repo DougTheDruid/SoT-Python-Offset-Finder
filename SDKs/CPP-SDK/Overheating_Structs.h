@@ -12,7 +12,7 @@ public:
 	float                                                        HeatUpByNumber;                                    // 0x20(0x4)
 	float                                                        CurrentOverheatingSum;                             // 0x24(0x4)
 	char                                                         HeatUpReason;                                      // 0x28(0x1)
-	char                                                         pad0x7_H7PRD[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_F8VNL[0x7];                                 // 0x29(0x7)
 };
 
 
@@ -21,7 +21,7 @@ struct OverheatingDamageTableEntry
 {
 public:
 	char                                                         Reason;                                            // 0x0(0x1)
-	char                                                         pad0x3_QKYZ1[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_WCJJW[0x3];                                 // 0x1(0x3)
 	float                                                        TimeToAdd;                                         // 0x4(0x4)
 };
 
@@ -35,7 +35,7 @@ public:
 	float                                                        CooldownByNumber;                                  // 0x20(0x4)
 	float                                                        CurrentOverheatingSum;                             // 0x24(0x4)
 	char                                                         CooldownReason;                                    // 0x28(0x1)
-	char                                                         pad0x7_LXNO1[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_P1MG0[0x7];                                 // 0x29(0x7)
 };
 
 

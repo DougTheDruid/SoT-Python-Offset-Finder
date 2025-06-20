@@ -6,7 +6,7 @@ CreateMysteriousNoteGameServerRequestModel:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_RLGS2[0x4]
+  - Name: pad0x4_VBI4T[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -26,7 +26,7 @@ CreateMysteriousNoteGameServerRequestModel:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_S9FQ9[0x7]
+  - Name: pad0x7_00LAI[0x7]
     Offset: '0x39'
     Size: '0x7'
     Type: char
@@ -37,7 +37,7 @@ CreateMysteriousNoteGameServerResponseModel:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_1RLWN[0x3]
+  - Name: pad0x3_CZIFL[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char

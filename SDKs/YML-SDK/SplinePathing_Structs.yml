@@ -2,14 +2,14 @@
 # https://github.com/DougTheDruid
 FixedSplinePathingActorMovementEndedEvent:
   Attributes:
-  - Name: pad0x1_FGYM7[0x1]
+  - Name: pad0x1_0HUJA[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 FixedSplinePathingActorMovementStartedEvent:
   Attributes:
-  - Name: pad0x1_TIQTZ[0x1]
+  - Name: pad0x1_HPDYO[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char

@@ -1,11 +1,4 @@
 {
-  "MigrationProgressInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "RegisterServerMigrationPointOfInterestComponent": {
     "Super": "ActorComponent",
     "FullSize": "0xd8",
@@ -19,14 +12,21 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x1c_I4S8S[0x1c]",
+        "Name": "pad0x1c_EU1G8[0x1c]",
         "Type": "char",
         "Size": "0x1c",
         "Offset": "0xbc"
       }
     ]
   },
-  "MigrationServiceInterface": {
+  "MigrationProgressInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ServerMigrationGatherableActorInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -40,7 +40,7 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ServerMigrationGatherableActorInterface": {
+  "MigrationServiceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

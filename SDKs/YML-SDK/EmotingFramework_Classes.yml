@@ -14,7 +14,7 @@ BrokenOutOfWalkableDisguiseConditionalStatsTrigger:
   Super: ConditionalStatsTriggerType
 DisguiseHandlerComponent:
   Attributes:
-  - Name: pad0x8_K981P[0x8]
+  - Name: pad0x8_4VSHX[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -46,7 +46,7 @@ DisguiseHandlerComponent:
     Offset: '0xf0'
     Size: '0x3'
     Type: struct DisguiseTypeData
-  - Name: pad0x1_W035N[0x1]
+  - Name: pad0x1_PGRA1[0x1]
     Offset: '0xf3'
     Size: '0x1'
     Type: char
@@ -54,7 +54,7 @@ DisguiseHandlerComponent:
     Offset: '0xf4'
     Size: '0x4'
     Type: float
-  - Name: pad0x18_DZQPR[0x18]
+  - Name: pad0x18_31O8W[0x18]
     Offset: '0xf8'
     Size: '0x18'
     Type: char
@@ -66,7 +66,7 @@ DisguiseHandlerComponent:
     Offset: '0x118'
     Size: '0x1'
     Type: bool
-  - Name: pad0x57_8KOSC[0x57]
+  - Name: pad0x57_TQLL4[0x57]
     Offset: '0x119'
     Size: '0x57'
     Type: char
@@ -88,7 +88,7 @@ EmoteCameraInterface:
   Super: Interface
 EmoteCard:
   Attributes:
-  - Name: pad0x8_PRJXR[0x8]
+  - Name: pad0x8_YTPJZ[0x8]
     Offset: '0x3a0'
     Size: '0x8'
     Type: char
@@ -108,7 +108,7 @@ EmoteCard:
     Offset: '0x3c0'
     Size: '0x10'
     Type: struct Int32Range
-  - Name: pad0x120_EFOOO[0x120]
+  - Name: pad0x120_DKDD7[0x120]
     Offset: '0x3d0'
     Size: '0x120'
     Type: char
@@ -118,7 +118,7 @@ EmoteCard:
   Super: Actor
 EmoteCoin:
   Attributes:
-  - Name: pad0x128_87GH7[0x128]
+  - Name: pad0x128_Z9N3W[0x128]
     Offset: '0x3a0'
     Size: '0x128'
     Type: char
@@ -128,7 +128,7 @@ EmoteCoin:
   Super: Actor
 EmoteDice:
   Attributes:
-  - Name: pad0x130_VKI9N[0x130]
+  - Name: pad0x130_PID3W[0x130]
     Offset: '0x3a0'
     Size: '0x130'
     Type: char
@@ -164,7 +164,7 @@ EmotePropDiceData:
     Offset: '0x28'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_LW7AY[0x3]
+  - Name: pad0x3_92N9L[0x3]
     Offset: '0x29'
     Size: '0x3'
     Type: char
@@ -198,7 +198,7 @@ EmoteRandomFromListAsset:
   Super: DataAsset
 EmoteRandomObject:
   Attributes:
-  - Name: pad0x8_PYA94[0x8]
+  - Name: pad0x8_PSODK[0x8]
     Offset: '0x3a0'
     Size: '0x8'
     Type: char
@@ -210,7 +210,7 @@ EmoteRandomObject:
     Offset: '0x3b0'
     Size: '0x8'
     Type: class MaterialInstanceDynamic*
-  - Name: pad0x128_6VJ8B[0x128]
+  - Name: pad0x128_Z4OBS[0x128]
     Offset: '0x3b8'
     Size: '0x128'
     Type: char
@@ -224,7 +224,7 @@ EmoteSettings:
     Offset: '0x38'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_E0Z1U[0x4]
+  - Name: pad0x4_OI5NF[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char

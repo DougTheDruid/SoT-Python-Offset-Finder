@@ -1,4 +1,11 @@
 {
+  "LevelSequenceSubtitlesInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "LevelSequenceBurnInOptions": {
     "Super": "Object",
     "FullSize": "0x48",
@@ -12,7 +19,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_MCIJI[0x7]",
+        "Name": "pad0x7_HSWTY[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x29"
@@ -31,26 +38,6 @@
       }
     ]
   },
-  "LevelSequencePlayer": {
-    "Super": "MovieSceneSequencePlayer",
-    "FullSize": "0x648",
-    "InheritedSize": "0x608",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "SpawnablesParent",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x608"
-      },
-      {
-        "Name": "pad0x38_S16MA[0x38]",
-        "Type": "char",
-        "Size": "0x38",
-        "Offset": "0x610"
-      }
-    ]
-  },
   "LevelSequenceBurnInInitSettings": {
     "Super": "Object",
     "FullSize": "0x28",
@@ -65,7 +52,7 @@
     "ClassSize": "0x80",
     "Attributes": [
       {
-        "Name": "pad0x8_G14CQ[0x8]",
+        "Name": "pad0x8_T811I[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3a0"
@@ -77,7 +64,7 @@
         "Offset": "0x3a8"
       },
       {
-        "Name": "pad0x7_0F42O[0x7]",
+        "Name": "pad0x7_DTRL9[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x3a9"
@@ -126,6 +113,46 @@
       }
     ]
   },
+  "LevelSequenceBurnIn": {
+    "Super": "UserWidget",
+    "FullSize": "0x2c8",
+    "InheritedSize": "0x230",
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Name": "FrameInformation",
+        "Type": "struct LevelSequencePlayerSnapshot",
+        "Size": "0x90",
+        "Offset": "0x230"
+      },
+      {
+        "Name": "LevelSequenceActor",
+        "Type": "class LevelSequenceActor*",
+        "Size": "0x8",
+        "Offset": "0x2c0"
+      }
+    ]
+  },
+  "LevelSequencePlayer": {
+    "Super": "MovieSceneSequencePlayer",
+    "FullSize": "0x648",
+    "InheritedSize": "0x608",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "SpawnablesParent",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x608"
+      },
+      {
+        "Name": "pad0x38_KI4LI[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x610"
+      }
+    ]
+  },
   "LevelSequence": {
     "Super": "MovieSceneSequence",
     "FullSize": "0x3a0",
@@ -145,37 +172,10 @@
         "Offset": "0x2b0"
       },
       {
-        "Name": "pad0x50_DW2BY[0x50]",
+        "Name": "pad0x50_F1PHG[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x350"
-      }
-    ]
-  },
-  "LevelSequenceSubtitlesInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "LevelSequenceBurnIn": {
-    "Super": "UserWidget",
-    "FullSize": "0x2c8",
-    "InheritedSize": "0x230",
-    "ClassSize": "0x98",
-    "Attributes": [
-      {
-        "Name": "FrameInformation",
-        "Type": "struct LevelSequencePlayerSnapshot",
-        "Size": "0x90",
-        "Offset": "0x230"
-      },
-      {
-        "Name": "LevelSequenceActor",
-        "Type": "class LevelSequenceActor*",
-        "Size": "0x8",
-        "Offset": "0x2c0"
       }
     ]
   },

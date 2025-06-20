@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 OverheatingComponent:
   Attributes:
-  - Name: pad0x30_LNMHY[0x30]
+  - Name: pad0x30_2NXSM[0x30]
     Offset: '0xb8'
     Size: '0x30'
     Type: char
@@ -38,7 +38,7 @@ OverheatingComponent:
     Offset: '0x11c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x8b_XY2MW[0x8b]
+  - Name: pad0x8b_YK8UK[0x8b]
     Offset: '0x11d'
     Size: '0x8b'
     Type: char
@@ -88,26 +88,26 @@ OverheatingDataAsset:
     Offset: '0x4c'
     Size: '0x4'
     Type: float
-  - Name: HeatBuildingDuration
+  - Name: OverheatingToAddWhenSubmergedInSuperHeatedWater
     Offset: '0x50'
     Size: '0x4'
     Type: float
-  - Name: SteamingDuration
+  - Name: HeatBuildingDuration
     Offset: '0x54'
     Size: '0x4'
     Type: float
-  - Name: ExplosionDuration
+  - Name: SteamingDuration
     Offset: '0x58'
     Size: '0x4'
     Type: float
-  - Name: VfxEmitterLocation
+  - Name: ExplosionDuration
     Offset: '0x5c'
+    Size: '0x4'
+    Type: float
+  - Name: VfxEmitterLocation
+    Offset: '0x60'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_NIHZ1[0x4]
-    Offset: '0x64'
-    Size: '0x4'
-    Type: char
   - Name: HeatBuildingVfx
     Offset: '0x68'
     Size: '0x8'

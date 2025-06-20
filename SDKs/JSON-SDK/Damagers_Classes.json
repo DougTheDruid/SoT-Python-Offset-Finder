@@ -1,4 +1,138 @@
 {
+  "ShockwaveDamagerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x1c0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x108",
+    "Attributes": [
+      {
+        "Name": "pad0x8_JLQTS[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "ExpansionDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "EndRadiusInMetres",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc4"
+      },
+      {
+        "Name": "ApplyImpulseToShips",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "pad0x7_AEW8X[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xc9"
+      },
+      {
+        "Name": "ForceToApplyToShip",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "ApplyDamageToShips",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "pad0x7_CV3U0[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x101"
+      },
+      {
+        "Name": "ShipDamageLevels",
+        "Type": "TArray<struct ShockwaveDamagerShipDamage>",
+        "Size": "0x10",
+        "Offset": "0x108"
+      },
+      {
+        "Name": "DamagerType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Name": "ApplyImpulseToGhostShips",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x120"
+      },
+      {
+        "Name": "pad0x3_JNRBL[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x121"
+      },
+      {
+        "Name": "GhostShipImpulseDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x124"
+      },
+      {
+        "Name": "GhostShipImpulseMaxDeflectionAngle",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "DestroyHostileGhostShips",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x12c"
+      },
+      {
+        "Name": "pad0x3_ZA466[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x12d"
+      },
+      {
+        "Name": "NearbyEncounterDistanceInMetres",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x130"
+      },
+      {
+        "Name": "pad0x4_EHEXQ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x134"
+      },
+      {
+        "Name": "ProcessedShips",
+        "Type": "TArray<uintptr_t>",
+        "Size": "0x10",
+        "Offset": "0x158"
+      },
+      {
+        "Name": "ProcessedGhostShips",
+        "Type": "TArray<uintptr_t>",
+        "Size": "0x10",
+        "Offset": "0x168"
+      },
+      {
+        "Name": "pad0x48_6820O[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x178"
+      }
+    ]
+  },
   "ShipDamagerComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x210",
@@ -6,7 +140,7 @@
     "ClassSize": "0x158",
     "Attributes": [
       {
-        "Name": "pad0x8_UFON9[0x8]",
+        "Name": "pad0x8_FQ0H2[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -54,7 +188,7 @@
         "Offset": "0x144"
       },
       {
-        "Name": "pad0xcb_GQWFD[0xcb]",
+        "Name": "pad0xcb_W9V3R[0xcb]",
         "Type": "char",
         "Size": "0xcb",
         "Offset": "0x145"
@@ -92,7 +226,7 @@
         "Offset": "0xc4"
       },
       {
-        "Name": "pad0x8_A30FM[0x8]",
+        "Name": "pad0x8_MSNX8[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc8"
@@ -110,7 +244,7 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x3_30J1H[0x3]",
+        "Name": "pad0x3_SWJZS[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xd9"
@@ -122,7 +256,7 @@
         "Offset": "0xdc"
       },
       {
-        "Name": "pad0x28_M8WVE[0x28]",
+        "Name": "pad0x28_IQGKX[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0xe8"
@@ -135,140 +269,6 @@
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "ShockwaveDamagerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x1c0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x108",
-    "Attributes": [
-      {
-        "Name": "pad0x8_1W6Y4[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "ExpansionDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "EndRadiusInMetres",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc4"
-      },
-      {
-        "Name": "ApplyImpulseToShips",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "pad0x7_YJ1ZM[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0xc9"
-      },
-      {
-        "Name": "ForceToApplyToShip",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "ApplyDamageToShips",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x100"
-      },
-      {
-        "Name": "pad0x7_Q9W6X[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x101"
-      },
-      {
-        "Name": "ShipDamageLevels",
-        "Type": "TArray<struct ShockwaveDamagerShipDamage>",
-        "Size": "0x10",
-        "Offset": "0x108"
-      },
-      {
-        "Name": "DamagerType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x118"
-      },
-      {
-        "Name": "ApplyImpulseToGhostShips",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x120"
-      },
-      {
-        "Name": "pad0x3_M0IUM[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x121"
-      },
-      {
-        "Name": "GhostShipImpulseDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x124"
-      },
-      {
-        "Name": "GhostShipImpulseMaxDeflectionAngle",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x128"
-      },
-      {
-        "Name": "DestroyHostileGhostShips",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x12c"
-      },
-      {
-        "Name": "pad0x3_IOOO5[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x12d"
-      },
-      {
-        "Name": "NearbyEncounterDistanceInMetres",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x130"
-      },
-      {
-        "Name": "pad0x4_2SIKZ[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x134"
-      },
-      {
-        "Name": "ProcessedShips",
-        "Type": "TArray<uintptr_t>",
-        "Size": "0x10",
-        "Offset": "0x158"
-      },
-      {
-        "Name": "ProcessedGhostShips",
-        "Type": "TArray<uintptr_t>",
-        "Size": "0x10",
-        "Offset": "0x168"
-      },
-      {
-        "Name": "pad0x48_SHH5P[0x48]",
-        "Type": "char",
-        "Size": "0x48",
-        "Offset": "0x178"
-      }
-    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

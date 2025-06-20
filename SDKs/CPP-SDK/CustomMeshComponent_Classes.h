@@ -6,11 +6,11 @@
 #include "CustomMeshComponent_Structs.h"
 
 
-// Size 0x10 (Full Size[0x5e0] - InheritedSize[0x5d0]
+// Size 0x10 (Full Size[0x5c0] - InheritedSize[0x5b0]
 class CustomMeshComponent: public MeshComponent
 {
 public:
-	char                                                         pad0x10_A6B7T[0x10];                               // 0x5d0(0x10)
+	char                                                         pad0x10_QQ86R[0x10];                               // 0x5b0(0x10)
 };
 
 

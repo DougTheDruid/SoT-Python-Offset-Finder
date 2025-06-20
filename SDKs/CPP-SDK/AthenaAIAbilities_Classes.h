@@ -6,17 +6,66 @@
 #include "AthenaAIAbilities_Structs.h"
 
 
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class EelSlapStatus: public StatusBase
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class MeleeCollisionAwarenessInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class StatusResponseSporeCloud: public StatusResponse
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
+class AshenFireStatus: public StatusBase
 {
 public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AreaOfEffectHealAIAbilityType: public AthenaAIAbilityType
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ElectricShieldBuffInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x108 (Full Size[0x1c0] - InheritedSize[0xb8]
+class ElectricShieldBuffComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_H3SY0[0x8];                                 // 0xb8(0x8)
+	class ParticleSystem*                                        ShieldVFXAsset;                                    // 0xc0(0x8)
+	struct FName                                                 VfxSocketName;                                     // 0xc8(0x8)
+	class WwiseEvent*                                            StartAudioLoopEvent;                               // 0xd0(0x8)
+	class WwiseEvent*                                            StopAudioLoopEvent;                                // 0xd8(0x8)
+	class ParticleSystemComponent*                               ShieldEffectComponent;                             // 0xe0(0x8)
+	bool                                                         IsShieldActive;                                    // 0xe8(0x1)
+	char                                                         pad0xd7_0ML6S[0xd7];                               // 0xe9(0xd7)
+};
+
+
+// Size 0x8 (Full Size[0x80] - InheritedSize[0x78]
+class MeleeAIAbility: public AthenaAIAbility
+{
+public:
+	char                                                         pad0x8_R1DDT[0x8];                                 // 0x78(0x8)
+};
+
+
+// Size 0x20 (Full Size[0x100] - InheritedSize[0xe0]
+class BullRushAIAbilityParams: public MeleeChargeAIAbilityParams
+{
+public:
+	float                                                        StaticCollisionWarmup;                             // 0xe0(0x4)
+	char                                                         pad0x4_6EDCH[0x4];                                 // 0xe4(0x4)
+	TArray<class EnvQuery*>                                      ValidatorEQSystems;                                // 0xe8(0x10)
+	float                                                        TimeBetweenCanExecuteChecks;                       // 0xf8(0x4)
+	char                                                         pad0x4_OHK29[0x4];                                 // 0xfc(0x4)
 };
 
 
@@ -27,34 +76,18 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class CoralShieldStatus: public StatusBase
+// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
+class StatusResponseShowCoralShieldVFX: public StatusResponse
 {
 public:
 };
 
 
-// Size 0x28 (Full Size[0xa0] - InheritedSize[0x78]
-class AreaOfEffectHealAIAbility: public AthenaAIAbility
+// Size 0x38 (Full Size[0xf0] - InheritedSize[0xb8]
+class SporeExposureComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x10_LJ9R8[0x10];                               // 0x78(0x10)
-	class Actor*                                                 HealAreaOfEffectActor;                             // 0x88(0x8)
-	char                                                         pad0x10_JHAAI[0x10];                               // 0x90(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class ElectricShieldStatus: public StatusBase
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class EelSlapAIAbilityType: public AthenaAIAbilityType
-{
-public:
+	char                                                         pad0x38_4XSA8[0x38];                               // 0xb8(0x38)
 };
 
 
@@ -65,8 +98,23 @@ public:
 };
 
 
+// Size 0x20 (Full Size[0xe8] - InheritedSize[0xc8]
+class EelThrowAIAbilityParams: public AthenaAIAbilityParams
+{
+public:
+	struct WeightedProbabilityRange                              MinMaxNumberOfAttacksBeforeEnd;                    // 0xc8(0x20)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class EelSlapAIAbilityType: public AthenaAIAbilityType
+{
+public:
+};
+
+
 // Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class AshenFireStatus: public StatusBase
+class SporeExposureStatus: public StatusBase
 {
 public:
 };
@@ -80,23 +128,85 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ElectricShieldBuffInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ImpactMeleeAttackEelSlapId: public ImpactProjectileId
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class BullRushAIAbilityType: public AthenaAIAbilityType
 {
 public:
+};
+
+
+// Size 0x20 (Full Size[0xb8] - InheritedSize[0x98]
+class BullRushAIAbility: public MeleeChargeAIAbility
+{
+public:
+	class World*                                                 CachedWorld;                                       // 0x98(0x8)
+	char                                                         pad0x18_IHOD5[0x18];                               // 0xa0(0x18)
+};
+
+
+// Size 0x50 (Full Size[0x108] - InheritedSize[0xb8]
+class BurrowHealVFXComponent: public ActorComponent
+{
+public:
+	class ParticleSystem*                                        VFXAsset;                                          // 0xb8(0x8)
+	struct FName                                                 VfxSocketName;                                     // 0xc0(0x8)
+	float                                                        VFXDuration;                                       // 0xc8(0x4)
+	char                                                         pad0x4_A6RFW[0x4];                                 // 0xcc(0x4)
+	class ParticleSystemComponent*                               SpawnedVFXSystem;                                  // 0xd0(0x8)
+	bool                                                         IsVFXActive;                                       // 0xd8(0x1)
+	char                                                         pad0x2f_MTPKI[0x2f];                               // 0xd9(0x2f)
+};
+
+
+// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
+class StatusResponseSporeCloud: public StatusResponse
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class MeleeAIAbilityType: public AthenaAIAbilityType
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+class StatusResponseActivateElectricShield: public StatusResponse
+{
+public:
+	float                                                        Duration;                                          // 0x38(0x4)
+	char                                                         pad0x4_YWZ95[0x4];                                 // 0x3c(0x4)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class EelThrowAIAbilityType: public AthenaAIAbilityType
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
+class ElectricShieldStatus: public StatusBase
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x80] - InheritedSize[0x78]
+class EelThrowAIAbility: public AthenaAIAbility
+{
+public:
+	class BlackboardComponent*                                   CachedBlackboardComponent;                         // 0x78(0x8)
+};
+
+
+// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
+class MeleeAIAbilityParams: public AthenaAIAbilityParams
+{
+public:
+	TArray<struct MeleeAttackIdWeights>                          MeleeAttacks;                                      // 0xc8(0x10)
 };
 
 
@@ -112,129 +222,34 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
-class MeleeAIAbilityParams: public AthenaAIAbilityParams
-{
-public:
-	TArray<struct MeleeAttackIdWeights>                          MeleeAttacks;                                      // 0xc8(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x80] - InheritedSize[0x78]
-class MeleeAIAbility: public AthenaAIAbility
-{
-public:
-	char                                                         pad0x8_KWFI0[0x8];                                 // 0x78(0x8)
-};
-
-
-// Size 0x20 (Full Size[0x100] - InheritedSize[0xe0]
-class BullRushAIAbilityParams: public MeleeChargeAIAbilityParams
-{
-public:
-	float                                                        StaticCollisionWarmup;                             // 0xe0(0x4)
-	char                                                         pad0x4_W8A5Q[0x4];                                 // 0xe4(0x4)
-	TArray<class EnvQuery*>                                      ValidatorEQSystems;                                // 0xe8(0x10)
-	float                                                        TimeBetweenCanExecuteChecks;                       // 0xf8(0x4)
-	char                                                         pad0x4_S6SHK[0x4];                                 // 0xfc(0x4)
-};
-
-
-// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class StatusResponseActivateElectricShield: public StatusResponse
-{
-public:
-	float                                                        Duration;                                          // 0x38(0x4)
-	char                                                         pad0x4_9XH6H[0x4];                                 // 0x3c(0x4)
-};
-
-
-// Size 0x50 (Full Size[0x108] - InheritedSize[0xb8]
-class BurrowHealVFXComponent: public ActorComponent
-{
-public:
-	class ParticleSystem*                                        VFXAsset;                                          // 0xb8(0x8)
-	struct FName                                                 VfxSocketName;                                     // 0xc0(0x8)
-	float                                                        VFXDuration;                                       // 0xc8(0x4)
-	char                                                         pad0x4_W4NLI[0x4];                                 // 0xcc(0x4)
-	class ParticleSystemComponent*                               SpawnedVFXSystem;                                  // 0xd0(0x8)
-	bool                                                         IsVFXActive;                                       // 0xd8(0x1)
-	char                                                         pad0x2f_WH5GY[0x2f];                               // 0xd9(0x2f)
-};
-
-
-// Size 0x20 (Full Size[0xe8] - InheritedSize[0xc8]
-class EelThrowAIAbilityParams: public AthenaAIAbilityParams
-{
-public:
-	struct WeightedProbabilityRange                              MinMaxNumberOfAttacksBeforeEnd;                    // 0xc8(0x20)
-};
-
-
-// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class StatusResponseShowCoralShieldVFX: public StatusResponse
-{
-public:
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class MeleeCollisionAwarenessInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x38 (Full Size[0xf0] - InheritedSize[0xb8]
-class SporeExposureComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x38_2JSM0[0x38];                               // 0xb8(0x38)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AreaOfEffectHealAIAbilityType: public AthenaAIAbilityType
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class BurrowEruptDamagerType: public DamagerType
+class ImpactMeleeAttackEelSlapId: public ImpactProjectileId
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class SporeExposureStatus: public StatusBase
+class CoralShieldStatus: public StatusBase
 {
 public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class EelThrowAIAbilityType: public AthenaAIAbilityType
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
+class EelSlapStatus: public StatusBase
 {
 public:
 };
 
 
-// Size 0x8 (Full Size[0x80] - InheritedSize[0x78]
-class EelThrowAIAbility: public AthenaAIAbility
+// Size 0x28 (Full Size[0xa0] - InheritedSize[0x78]
+class AreaOfEffectHealAIAbility: public AthenaAIAbility
 {
 public:
-	class BlackboardComponent*                                   CachedBlackboardComponent;                         // 0x78(0x8)
-};
-
-
-// Size 0x20 (Full Size[0xb8] - InheritedSize[0x98]
-class BullRushAIAbility: public MeleeChargeAIAbility
-{
-public:
-	class World*                                                 CachedWorld;                                       // 0x98(0x8)
-	char                                                         pad0x18_RHROZ[0x18];                               // 0xa0(0x18)
+	char                                                         pad0x10_2M3E0[0x10];                               // 0x78(0x10)
+	class Actor*                                                 HealAreaOfEffectActor;                             // 0x88(0x8)
+	char                                                         pad0x10_2YVN6[0x10];                               // 0x90(0x10)
 };
 
 
@@ -245,30 +260,8 @@ public:
 };
 
 
-// Size 0x108 (Full Size[0x1c0] - InheritedSize[0xb8]
-class ElectricShieldBuffComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_0AE7Q[0x8];                                 // 0xb8(0x8)
-	class ParticleSystem*                                        ShieldVFXAsset;                                    // 0xc0(0x8)
-	struct FName                                                 VfxSocketName;                                     // 0xc8(0x8)
-	class WwiseEvent*                                            StartAudioLoopEvent;                               // 0xd0(0x8)
-	class WwiseEvent*                                            StopAudioLoopEvent;                                // 0xd8(0x8)
-	class ParticleSystemComponent*                               ShieldEffectComponent;                             // 0xe0(0x8)
-	bool                                                         IsShieldActive;                                    // 0xe8(0x1)
-	char                                                         pad0xd7_0RM5X[0xd7];                               // 0xe9(0xd7)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class MeleeAIAbilityType: public AthenaAIAbilityType
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class HeavyMeleeAttackId: public MeleeAttackId
+class BurrowEruptDamagerType: public DamagerType
 {
 public:
 };
@@ -289,7 +282,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ComboMeleeAttackId: public MeleeAttackId
+class HeavyMeleeAttackId: public MeleeAttackId
 {
 public:
 };
@@ -297,6 +290,13 @@ public:
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class LightMeleeAttackId: public MeleeAttackId
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ComboMeleeAttackId: public MeleeAttackId
 {
 public:
 };

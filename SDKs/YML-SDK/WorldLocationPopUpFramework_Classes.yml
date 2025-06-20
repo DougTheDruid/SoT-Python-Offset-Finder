@@ -12,7 +12,7 @@ TaleAllowWorldLocationPopUpStepDesc:
     Offset: '0x80'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_8EV1E[0x4]
+  - Name: pad0x4_U4NJL[0x4]
     Offset: '0x84'
     Size: '0x4'
     Type: char
@@ -36,7 +36,7 @@ TalePreventWorldLocationPopUpStepDesc:
     Offset: '0x80'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_2GV7J[0x3]
+  - Name: pad0x3_Z22BH[0x3]
     Offset: '0x81'
     Size: '0x3'
     Type: char
@@ -58,7 +58,7 @@ TaleWorldLocationPopUpService:
     Offset: '0x60'
     Size: '0x10'
     Type: TArray<struct TaleWorldLocationPopUpServiceEntry>
-  - Name: pad0x20_7QC8W[0x20]
+  - Name: pad0x20_O0BFQ[0x20]
     Offset: '0x70'
     Size: '0x20'
     Type: char
@@ -90,7 +90,7 @@ WorldLocationPopUpComponent:
     Offset: '0x2e4'
     Size: '0x1'
     Type: bool
-  - Name: pad0x63_SQ6SH[0x63]
+  - Name: pad0x63_8L956[0x63]
     Offset: '0x2e5'
     Size: '0x63'
     Type: char
@@ -98,7 +98,7 @@ WorldLocationPopUpComponent:
     Offset: '0x348'
     Size: '0x10'
     Type: TArray<struct Guid>
-  - Name: pad0x8_0TFNE[0x8]
+  - Name: pad0x8_AVG4D[0x8]
     Offset: '0x358'
     Size: '0x8'
     Type: char
@@ -130,7 +130,7 @@ WorldLocationPopUpDataAsset:
   Super: DataAsset
 WorldLocationVisitorComponent:
   Attributes:
-  - Name: pad0x8_GNIQ5[0x8]
+  - Name: pad0x8_VOX6L[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -138,7 +138,7 @@ WorldLocationVisitorComponent:
     Offset: '0xc0'
     Size: '0x4'
     Type: float
-  - Name: pad0x34_ZX3OO[0x34]
+  - Name: pad0x34_580TO[0x34]
     Offset: '0xc4'
     Size: '0x34'
     Type: char

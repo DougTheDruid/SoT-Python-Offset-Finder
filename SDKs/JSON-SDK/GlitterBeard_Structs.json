@@ -1,32 +1,43 @@
 {
-  "FinaleReplicationState": {
-    "ClassSize": "0x10",
+  "ChangeGlitterBeardVFXStateEvent": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "State",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "Index",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_ERAP2[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1"
+        "Name": "Target",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x4"
       },
       {
-        "Name": "TargetEnsemble",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
+        "Name": "pad0x3_F4XEY[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5"
       }
     ]
   },
-  "GlitterbeardSessionBeginTelemetryEvent": {
+  "GlitterbeardSessionEndTelemetryEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_ZDSL7[0x10]",
+        "Name": "pad0x10_5MYUF[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GlitterbeardPuzzleUnlockTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_UXD5R[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x0"
@@ -44,13 +55,13 @@
       }
     ]
   },
-  "GlitterbeardSessionEndTelemetryEvent": {
-    "ClassSize": "0x10",
+  "GlitterbeardPlayerPuzzleUnlockFailureTelemetryEvent": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x10_81294[0x10]",
+        "Name": "pad0x20_MN6US[0x20]",
         "Type": "char",
-        "Size": "0x10",
+        "Size": "0x20",
         "Offset": "0x0"
       }
     ]
@@ -66,58 +77,13 @@
       }
     ]
   },
-  "GlitterbeardPuzzleUnlockTelemetryEvent": {
+  "GlitterbeardSessionBeginTelemetryEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_U3EI7[0x10]",
+        "Name": "pad0x10_XKWS5[0x10]",
         "Type": "char",
         "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ChangeGlitterBeardVFXStateEvent": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Index",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Target",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "pad0x3_7MOMD[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x5"
-      }
-    ]
-  },
-  "GlitterbeardPuzzleCancelTelemetryEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_H213D[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "GlitterbeardPlayerPuzzleUnlockFailureTelemetryEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_ILLYH[0x20]",
-        "Type": "char",
-        "Size": "0x20",
         "Offset": "0x0"
       }
     ]
@@ -126,10 +92,44 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_P13J6[0x10]",
+        "Name": "pad0x10_R64ZX[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "GlitterbeardPuzzleCancelTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_MPBIW[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "FinaleReplicationState": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "State",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_GRVCF[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "TargetEnsemble",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },

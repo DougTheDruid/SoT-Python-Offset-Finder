@@ -1,27 +1,4 @@
 {
-  "AshenLordFireShroudParams": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "FireShroudZoneClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "FireShroudCollisionVolume",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x4_KYL5C[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x14"
-      }
-    ]
-  },
   "MeleeAttackIdWeights": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -38,10 +15,33 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_QUWXC[0x4]",
+        "Name": "pad0x4_OMD2X[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
+      }
+    ]
+  },
+  "AshenLordFireShroudParams": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "FireShroudZoneClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "FireShroudCollisionVolume",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_VEO5R[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
       }
     ]
   },

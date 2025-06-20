@@ -1,57 +1,4 @@
 {
-  "AIAreaOfOperationInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AIGoalProcessorInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AIHomeInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AIAreaOfOperationComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xc8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x8_GTX2D[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "UseAreaOfOperationOnSpawn",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "pad0x3_PLRAZ[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0xc1"
-      },
-      {
-        "Name": "InitialRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc4"
-      }
-    ]
-  },
   "AIGoal": {
     "Super": "Object",
     "FullSize": "0x40",
@@ -71,12 +18,51 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x8_1XRT0[0x8]",
+        "Name": "pad0x8_0KN5U[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x38"
       }
     ]
+  },
+  "AIAreaOfOperationComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x8_HZSFC[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "UseAreaOfOperationOnSpawn",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "pad0x3_4YC28[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xc1"
+      },
+      {
+        "Name": "InitialRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc4"
+      }
+    ]
+  },
+  "AIGoalProcessorInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "AIGoalProcessorComponent": {
     "Super": "ActorComponent",
@@ -85,7 +71,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x8_P1AQK[0x8]",
+        "Name": "pad0x8_F3T6Z[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -115,12 +101,19 @@
         "Offset": "0xe0"
       },
       {
-        "Name": "pad0x28_SN8EA[0x28]",
+        "Name": "pad0x28_YSG4O[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0xf0"
       }
     ]
+  },
+  "AIAreaOfOperationInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "AIGoalAssetList": {
     "Super": "DataAsset",
@@ -135,6 +128,13 @@
         "Offset": "0x28"
       }
     ]
+  },
+  "AIHomeInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "FirstActionableAIGoalProcessorComponent": {
     "Super": "AIGoalProcessorComponent",

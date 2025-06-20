@@ -3,24 +3,24 @@
 InstancedRopeComponent:
   Attributes:
   - Name: StaticMesh
-    Offset: '0x5b8'
+    Offset: '0x598'
     Size: '0x8'
     Type: class StaticMesh*
   - Name: Ropes
-    Offset: '0x5c0'
+    Offset: '0x5a0'
     Size: '0x10'
     Type: TArray<struct InstancedRopeParams>
   - Name: ShadowLOD
-    Offset: '0x5d0'
+    Offset: '0x5b0'
     Size: '0x4'
     Type: int
-  - Name: pad0xac_LP1G9[0xac]
-    Offset: '0x5d4'
+  - Name: pad0xac_C3RVN[0xac]
+    Offset: '0x5b4'
     Size: '0xac'
     Type: char
   ClassSize: '0xc0'
-  FullSize: '0x680'
-  InheritedSize: '0x5c0'
+  FullSize: '0x660'
+  InheritedSize: '0x5a0'
   Super: PrimitiveComponent
 MaterialExpressionRopeParameter:
   Attributes:
@@ -28,7 +28,7 @@ MaterialExpressionRopeParameter:
     Offset: '0x70'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_XLN5H[0x7]
+  - Name: pad0x7_OA336[0x7]
     Offset: '0x71'
     Size: '0x7'
     Type: char
@@ -38,7 +38,7 @@ MaterialExpressionRopeParameter:
   Super: MaterialExpression
 RiggingSystem:
   Attributes:
-  - Name: pad0x8_JPJ0B[0x8]
+  - Name: pad0x8_X6UX6[0x8]
     Offset: '0x3a0'
     Size: '0x8'
     Type: char
@@ -74,7 +74,7 @@ RiggingSystem:
     Offset: '0x458'
     Size: '0x10'
     Type: TArray<float>
-  - Name: pad0x88_84DFP[0x88]
+  - Name: pad0x88_146RY[0x88]
     Offset: '0x468'
     Size: '0x88'
     Type: char
@@ -96,7 +96,7 @@ RiggingSystemComponent:
     Offset: '0x300'
     Size: '0x8'
     Type: class RiggingSystem*
-  - Name: pad0x8_XCS6D[0x8]
+  - Name: pad0x8_B7W2E[0x8]
     Offset: '0x308'
     Size: '0x8'
     Type: char
@@ -107,8 +107,8 @@ RiggingSystemComponent:
 RopeCatenaryRenderComponent:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x660'
-  InheritedSize: '0x660'
+  FullSize: '0x640'
+  InheritedSize: '0x640'
   Super: CordRenderComponent
 RopeInterface:
   Attributes: []

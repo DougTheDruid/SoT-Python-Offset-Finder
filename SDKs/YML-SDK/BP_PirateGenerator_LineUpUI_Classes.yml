@@ -6,10 +6,6 @@ BP_PirateGenerator_LineUpUI_C:
     Offset: '0x3a0'
     Size: '0x8'
     Type: struct PointerToUberGraphFrame
-  - Name: pad0x2ad7d7f8_2JHPU[0x2ad7d7f8]
-    Offset: '0x3a8'
-    Size: '0x2ad7d7f8'
-    Type: char
   - Name: DefaultSceneRoot
     Offset: '0x3a8'
     Size: '0x8'
@@ -38,7 +34,7 @@ BP_PirateGenerator_LineUpUI_C:
     Offset: '0x3f0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_SHKQ9[0x7]
+  - Name: pad0x7_CXM69[0x7]
     Offset: '0x3f1'
     Size: '0x7'
     Type: char
@@ -58,11 +54,11 @@ BP_PirateGenerator_LineUpUI_C:
     Offset: '0x410'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_K38VR[0x4]
+  - Name: pad0x4_TSGTF[0x4]
     Offset: '0x414'
     Size: '0x4'
     Type: char
-  - Name: pad0x10_9VV0A[0x10]
+  - Name: pad0x10_J6ISO[0x10]
     Offset: '0x418'
     Size: '0x10'
     Type: char

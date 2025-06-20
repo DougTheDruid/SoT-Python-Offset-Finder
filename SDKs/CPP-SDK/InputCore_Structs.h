@@ -8,7 +8,7 @@ struct Key
 {
 public:
 	struct FName                                                 KeyName;                                           // 0x0(0x8)
-	char                                                         pad0x18_V8BFE[0x18];                               // 0x8(0x18)
+	char                                                         pad0x18_MCGUE[0x18];                               // 0x8(0x18)
 };
 
 

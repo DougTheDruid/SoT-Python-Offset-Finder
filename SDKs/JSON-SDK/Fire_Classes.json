@@ -1,11 +1,4 @@
 {
-  "StatusResponseExtinguish": {
-    "Super": "StatusResponse",
-    "FullSize": "0x38",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "FireStatus": {
     "Super": "StatusBase",
     "FullSize": "0x30",
@@ -13,59 +6,14 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "FlammableInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
+  "IgniteStatus": {
+    "Super": "StatusBase",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "FireExplosionDamagerType": {
-    "Super": "DamagerType",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ShipFireCellDataContainer": {
-    "Super": "Actor",
-    "FullSize": "0x408",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x68",
-    "Attributes": [
-      {
-        "Name": "pad0x8_KGYO4[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "Root",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x3a8"
-      },
-      {
-        "Name": "ReplicatedCellData",
-        "Type": "TArray<struct ReplicatedFireCellData>",
-        "Size": "0x10",
-        "Offset": "0x3b0"
-      },
-      {
-        "Name": "ReplicatedCellCharringData",
-        "Type": "struct ReplicatedFireCellCharringData",
-        "Size": "0x18",
-        "Offset": "0x3c0"
-      },
-      {
-        "Name": "pad0x30_Y7A2U[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x3d8"
-      }
-    ]
-  },
-  "FirePropagationInterface": {
+  "FirePropagationIgniteInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -139,7 +87,7 @@
         "Offset": "0x190"
       },
       {
-        "Name": "pad0x8_2CBQ4[0x8]",
+        "Name": "pad0x8_AERXO[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x1a0"
@@ -157,10 +105,136 @@
         "Offset": "0x1b8"
       },
       {
-        "Name": "pad0x50_CS1VB[0x50]",
+        "Name": "pad0x50_DK4N6[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x1c0"
+      }
+    ]
+  },
+  "FirePropagatorDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "FirePropagator",
+        "Type": "class FirePropagator*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "FireDamagerType": {
+    "Super": "DamagerType",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ShipFireCellDataInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "StatusResponseExtinguish": {
+    "Super": "StatusResponse",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ShipFireLightParamsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Params",
+        "Type": "struct ShipFireLightParams",
+        "Size": "0x14",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_0LU96[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      }
+    ]
+  },
+  "FlammableComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x18_UNG8A[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "OnFire",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0x7_BG9T7[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xd1"
+      }
+    ]
+  },
+  "StatusResponseIgnite": {
+    "Super": "StatusResponse",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ShipFireCellDataContainer": {
+    "Super": "Actor",
+    "FullSize": "0x408",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Name": "pad0x8_FPG5W[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "Root",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x3a8"
+      },
+      {
+        "Name": "ReplicatedCellData",
+        "Type": "TArray<struct ReplicatedFireCellData>",
+        "Size": "0x10",
+        "Offset": "0x3b0"
+      },
+      {
+        "Name": "ReplicatedCellCharringData",
+        "Type": "struct ReplicatedFireCellCharringData",
+        "Size": "0x18",
+        "Offset": "0x3c0"
+      },
+      {
+        "Name": "pad0x30_510JS[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x3d8"
       }
     ]
   },
@@ -185,7 +259,7 @@
     "ClassSize": "0x3d0",
     "Attributes": [
       {
-        "Name": "pad0x18_FTS8K[0x18]",
+        "Name": "pad0x18_XARMF[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0xb8"
@@ -221,7 +295,7 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x4_EUBM8[0x4]",
+        "Name": "pad0x4_WMYHT[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xfc"
@@ -245,7 +319,7 @@
         "Offset": "0x110"
       },
       {
-        "Name": "pad0x10_7F7DW[0x10]",
+        "Name": "pad0x10_JEYO4[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x120"
@@ -293,78 +367,39 @@
         "Offset": "0x3e0"
       },
       {
-        "Name": "pad0x68_ZXFU7[0x68]",
+        "Name": "pad0x68_T5QYU[0x68]",
         "Type": "char",
         "Size": "0x68",
         "Offset": "0x420"
       }
     ]
   },
-  "FireGridCellSelectionParamsDataAsset": {
+  "FireCellStateTimingParamsDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x38",
+    "FullSize": "0xc0",
     "InheritedSize": "0x28",
-    "ClassSize": "0x10",
+    "ClassSize": "0x98",
     "Attributes": [
       {
-        "Name": "FireGridCellSelectionParams",
-        "Type": "TArray<struct FireGridCellSelectionParams>",
-        "Size": "0x10",
+        "Name": "TimingParams",
+        "Type": "struct FireCellStateTimingParams",
+        "Size": "0x94",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_7VPU7[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xbc"
       }
     ]
   },
-  "BlownByWindStatus": {
-    "Super": "StatusBase",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "FireGridLocationInterface": {
-    "Super": "Interface",
+  "FireExplosionDamagerType": {
+    "Super": "DamagerType",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "OilSpill": {
-    "Super": "ItemProxy",
-    "FullSize": "0x778",
-    "InheritedSize": "0x748",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x8_4BZDX[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x748"
-      },
-      {
-        "Name": "BaseComponent",
-        "Type": "class BoxComponent*",
-        "Size": "0x8",
-        "Offset": "0x750"
-      },
-      {
-        "Name": "FlammableComponent",
-        "Type": "class ActorFlammableComponent*",
-        "Size": "0x8",
-        "Offset": "0x758"
-      },
-      {
-        "Name": "StatusEffectManagerComponent",
-        "Type": "class StatusEffectManagerComponent*",
-        "Size": "0x8",
-        "Offset": "0x760"
-      },
-      {
-        "Name": "pad0x10_BQ5IG[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x768"
-      }
-    ]
   },
   "FireGridAudioManager": {
     "Super": "Object",
@@ -391,159 +426,33 @@
         "Offset": "0x70"
       },
       {
-        "Name": "pad0x58_FVDPS[0x58]",
+        "Name": "pad0x58_1HRG8[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0x78"
       }
     ]
   },
-  "ExtinguishableInterface": {
+  "FireGridLocationInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ShipFireLightParamsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Params",
-        "Type": "struct ShipFireLightParams",
-        "Size": "0x14",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x4_KAUFA[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      }
-    ]
-  },
-  "IgniteStatus": {
+  "BlownByWindStatus": {
     "Super": "StatusBase",
     "FullSize": "0x30",
     "InheritedSize": "0x30",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "FirePropagatorDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "FirePropagator",
-        "Type": "class FirePropagator*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "FlammableComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x18_8MWTC[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "OnFire",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "pad0x7_2LOT5[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0xd1"
-      }
-    ]
-  },
-  "FireDamagerType": {
-    "Super": "DamagerType",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ShipFireCellDataInterface": {
+  "FlammableInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "FirePropagator": {
-    "Super": "Object",
-    "FullSize": "0x120",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xf8",
-    "Attributes": [
-      {
-        "Name": "pad0x90_GYQ1X[0x90]",
-        "Type": "char",
-        "Size": "0x90",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "CellStateTimingParams",
-        "Type": "class FireCellStateTimingParamsDataAsset*",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "pad0x4_DE94D[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "WaterHeightOffsetToFloodCells",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc4"
-      },
-      {
-        "Name": "pad0x58_FNHFV[0x58]",
-        "Type": "char",
-        "Size": "0x58",
-        "Offset": "0xc8"
-      }
-    ]
-  },
-  "FirePropagationIgniteInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "CookerIgnitionComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x130",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "CookerIgnitionParams",
-        "Type": "struct CookerIgnitionParams",
-        "Size": "0x78",
-        "Offset": "0xb8"
-      }
-    ]
   },
   "FireGridVFXParamsDataAsset": {
     "Super": "DataAsset",
@@ -559,32 +468,123 @@
       }
     ]
   },
-  "FireCellStateTimingParamsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0xc0",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x98",
+  "OilSpill": {
+    "Super": "ItemProxy",
+    "FullSize": "0x778",
+    "InheritedSize": "0x748",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "TimingParams",
-        "Type": "struct FireCellStateTimingParams",
-        "Size": "0x94",
-        "Offset": "0x28"
+        "Name": "pad0x8_YNNSZ[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x748"
       },
       {
-        "Name": "pad0x4_ZIXWT[0x4]",
+        "Name": "BaseComponent",
+        "Type": "class BoxComponent*",
+        "Size": "0x8",
+        "Offset": "0x750"
+      },
+      {
+        "Name": "FlammableComponent",
+        "Type": "class ActorFlammableComponent*",
+        "Size": "0x8",
+        "Offset": "0x758"
+      },
+      {
+        "Name": "StatusEffectManagerComponent",
+        "Type": "class StatusEffectManagerComponent*",
+        "Size": "0x8",
+        "Offset": "0x760"
+      },
+      {
+        "Name": "pad0x10_KIFUX[0x10]",
         "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xbc"
+        "Size": "0x10",
+        "Offset": "0x768"
       }
     ]
   },
-  "StatusResponseIgnite": {
-    "Super": "StatusResponse",
-    "FullSize": "0x38",
-    "InheritedSize": "0x38",
+  "FirePropagator": {
+    "Super": "Object",
+    "FullSize": "0x120",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xf8",
+    "Attributes": [
+      {
+        "Name": "pad0x90_WYVYR[0x90]",
+        "Type": "char",
+        "Size": "0x90",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "CellStateTimingParams",
+        "Type": "class FireCellStateTimingParamsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "pad0x4_X2UJ3[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "WaterHeightOffsetToFloodCells",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc4"
+      },
+      {
+        "Name": "pad0x58_GRUQV[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0xc8"
+      }
+    ]
+  },
+  "FirePropagationInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "ExtinguishableInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "FireGridCellSelectionParamsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "FireGridCellSelectionParams",
+        "Type": "TArray<struct FireGridCellSelectionParams>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "CookerIgnitionComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x130",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "CookerIgnitionParams",
+        "Type": "struct CookerIgnitionParams",
+        "Size": "0x78",
+        "Offset": "0xb8"
+      }
+    ]
   },
   "FlammableWieldableComponent": {
     "Super": "FlammableComponent",
@@ -599,6 +599,13 @@
         "Offset": "0xd8"
       }
     ]
+  },
+  "FireGridProxyInterface": {
+    "Super": "FireGridLocationInterface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "TimedFlammableComponent": {
     "Super": "FlammableComponent",
@@ -619,7 +626,7 @@
         "Offset": "0xd9"
       },
       {
-        "Name": "pad0x2_GDAN2[0x2]",
+        "Name": "pad0x2_2BGKF[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0xda"
@@ -631,13 +638,6 @@
         "Offset": "0xdc"
       }
     ]
-  },
-  "FireGridProxyInterface": {
-    "Super": "FireGridLocationInterface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "ActorFlammableComponent": {
     "Super": "FlammableComponent",
@@ -652,7 +652,7 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x10_W5X4E[0x10]",
+        "Name": "pad0x10_NYBOJ[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xe0"
@@ -700,7 +700,7 @@
         "Offset": "0x110"
       },
       {
-        "Name": "pad0x4_IQ3A0[0x4]",
+        "Name": "pad0x4_XILDB[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x114"
@@ -724,7 +724,7 @@
         "Offset": "0x158"
       },
       {
-        "Name": "pad0x97_W7CNK[0x97]",
+        "Name": "pad0x97_WMKDQ[0x97]",
         "Type": "char",
         "Size": "0x97",
         "Offset": "0x159"
@@ -744,7 +744,7 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x8_SCQHA[0x8]",
+        "Name": "pad0x8_1ALZR[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x1f8"
@@ -756,7 +756,7 @@
         "Offset": "0x200"
       },
       {
-        "Name": "pad0x14_E82IQ[0x14]",
+        "Name": "pad0x14_IIY5M[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0x20c"

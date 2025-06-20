@@ -1,4 +1,11 @@
 {
+  "ReservableContendedResourceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "ContendedResourceServiceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
@@ -21,13 +28,6 @@
     "Attributes": []
   },
   "WorldResourceRegistryInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ReservableContendedResourceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

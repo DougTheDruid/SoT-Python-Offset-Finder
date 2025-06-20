@@ -1,27 +1,4 @@
 {
-  "CommoditySourceMetaWrapper": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x18_ZMOUS[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NPCIdentifier",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "IslandIdentifier",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x20"
-      }
-    ]
-  },
   "ActiveCommodityDemands": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -55,7 +32,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_MT3T2[0x7]",
+        "Name": "pad0x7_M8R0W[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
@@ -65,17 +42,6 @@
         "Type": "double",
         "Size": "0x8",
         "Offset": "0x18"
-      }
-    ]
-  },
-  "CommoditySelectionType": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "CommodityType",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
       }
     ]
   },
@@ -113,11 +79,86 @@
       }
     ]
   },
+  "CommodityTrackingModel": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ItemOfferId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NPCName",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_N16GH[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "pad0x8_D8YIJ[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "CommodityRedemptionTrackingModel": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x2_ZDWRD[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NPCName",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x2"
+      },
+      {
+        "Name": "EntitlementOwnershipConfirmed",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3"
+      },
+      {
+        "Name": "pad0x4_L6KM2[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x8_DJNDB[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "CommoditySelectionType": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "CommodityType",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "TrackCommodityPurchaseOnServerRpc": {
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x18_FGDS9[0x18]",
+        "Name": "pad0x18_8A2V4[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"
@@ -148,67 +189,26 @@
       }
     ]
   },
-  "CommodityRedemptionTrackingModel": {
-    "ClassSize": "0x10",
+  "CommoditySourceMetaWrapper": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x2_1XRCH[0x2]",
+        "Name": "pad0x18_HIDYA[0x18]",
         "Type": "char",
-        "Size": "0x2",
+        "Size": "0x18",
         "Offset": "0x0"
       },
       {
-        "Name": "NPCName",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x2"
-      },
-      {
-        "Name": "EntitlementOwnershipConfirmed",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3"
-      },
-      {
-        "Name": "pad0x4_UPN1P[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "pad0x8_5YYWM[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "CommodityTrackingModel": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ItemOfferId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NPCName",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x7_EQNGX[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x11"
-      },
-      {
-        "Name": "pad0x8_89PYI[0x8]",
-        "Type": "char",
+        "Name": "NPCIdentifier",
+        "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x18"
+      },
+      {
+        "Name": "IslandIdentifier",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x20"
       }
     ]
   },
@@ -216,7 +216,7 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x18_KGQCR[0x18]",
+        "Name": "pad0x18_O3TUL[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"

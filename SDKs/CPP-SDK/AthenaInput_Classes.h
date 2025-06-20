@@ -7,15 +7,7 @@
 class AnalogInputId: public Object
 {
 public:
-	char                                                         pad0x10_MQR2M[0x10];                               // 0x28(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class NotificationInputId: public Object
-{
-public:
-	char                                                         pad0x10_YO45N[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_65INM[0x10];                               // 0x28(0x10)
 };
 
 
@@ -30,7 +22,15 @@ public:
 class NPCReceivesInputIndicatorComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_A1UEY[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_E39AC[0x8];                                 // 0xb8(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class NotificationInputId: public Object
+{
+public:
+	char                                                         pad0x10_W7YO8[0x10];                               // 0x28(0x10)
 };
 
 

@@ -4,13 +4,6 @@
 // https://github.com/DougTheDruid
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class HammerheadServiceInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class HammerheadHideoutInterface: public Interface
 {
 public:
@@ -21,7 +14,7 @@ public:
 class HammerheadSharkTreasureSite: public Actor
 {
 public:
-	char                                                         pad0x88_V5F8M[0x88];                               // 0x3a0(0x88)
+	char                                                         pad0x88_H9R67[0x88];                               // 0x3a0(0x88)
 };
 
 
@@ -29,9 +22,16 @@ public:
 class HammerheadService: public Actor
 {
 public:
-	char                                                         pad0x8_POP3U[0x8];                                 // 0x3a0(0x8)
+	char                                                         pad0x8_C4R7H[0x8];                                 // 0x3a0(0x8)
 	class DataAsset*                                             ServiceDataAssetParams;                            // 0x3a8(0x8)
-	char                                                         pad0xe0_KJ0BF[0xe0];                               // 0x3b0(0xe0)
+	char                                                         pad0xe0_SM1QZ[0xe0];                               // 0x3b0(0xe0)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class HammerheadServiceInterface: public Interface
+{
+public:
 };
 
 

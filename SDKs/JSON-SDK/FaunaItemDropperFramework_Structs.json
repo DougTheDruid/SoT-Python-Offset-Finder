@@ -1,4 +1,15 @@
 {
+  "FaunaItemDropperSpawnedItemTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "SpawnedItemName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "FaunaItemDropperHealingTelemetryEvent": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -26,19 +37,8 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_X30JI[0x10]",
+        "Name": "pad0x10_ZEO72[0x10]",
         "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "FaunaItemDropperSpawnedItemTelemetryEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "SpawnedItemName",
-        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       }

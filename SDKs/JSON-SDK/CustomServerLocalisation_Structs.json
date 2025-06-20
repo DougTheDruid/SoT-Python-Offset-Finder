@@ -16,17 +16,6 @@
       }
     ]
   },
-  "CustomServerLocalisationModel": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x50_XTU56[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "CustomServerClientData": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -37,10 +26,21 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x10_54NPB[0x10]",
+        "Name": "pad0x10_TYLDJ[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "CustomServerLocalisationModel": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x50_RIDPD[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
       }
     ]
   },

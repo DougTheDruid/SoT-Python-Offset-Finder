@@ -1,39 +1,4 @@
 {
-  "AncientTinySharkSpawnParams": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Feature",
-        "Type": "struct FeatureFlag",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x4_4JHHX[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "AncientTinySharkParams",
-        "Type": "class TinySharkParamsDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "WeightedSpawnChance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x4_242WH[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x1c"
-      }
-    ]
-  },
   "AncientTinySharkEventBanners": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -57,6 +22,23 @@
       }
     ]
   },
+  "AncientTinySharkEventCompletedTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "EventId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AncientTinySharkVariant",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "AncientTinySharkEventCreatedTelemetryEvent": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -74,20 +56,38 @@
       }
     ]
   },
-  "AncientTinySharkEventCompletedTelemetryEvent": {
+  "AncientTinySharkSpawnParams": {
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "EventId",
-        "Type": "struct Guid",
-        "Size": "0x10",
+        "Name": "Feature",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
         "Offset": "0x0"
       },
       {
-        "Name": "AncientTinySharkVariant",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Name": "pad0x4_PFIHZ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "AncientTinySharkParams",
+        "Type": "class TinySharkParamsDataAsset*",
+        "Size": "0x8",
         "Offset": "0x10"
+      },
+      {
+        "Name": "WeightedSpawnChance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x4_K77Q9[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
       }
     ]
   },

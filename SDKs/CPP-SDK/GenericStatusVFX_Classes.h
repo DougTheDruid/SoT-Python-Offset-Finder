@@ -6,21 +6,6 @@
 #include "GenericStatusVFX_Structs.h"
 
 
-// Size 0x60 (Full Size[0x118] - InheritedSize[0xb8]
-class GenericStatusVFXComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_QZJ9V[0x8];                                 // 0xb8(0x8)
-	class ParticleSystemComponent*                               VFXComponent;                                      // 0xc0(0x8)
-	class World*                                                 CachedWorld;                                       // 0xc8(0x8)
-	char                                                         pad0x20_46X9G[0x20];                               // 0xd0(0x20)
-	class GenericStatusVFXDataAsset*                             VFXDataAsset;                                      // 0xf0(0x8)
-	char                                                         pad0x18_JMON0[0x18];                               // 0xf8(0x18)
-	bool                                                         ContainsVFXSource;                                 // 0x110(0x1)
-	char                                                         pad0x7_2WRBT[0x7];                                 // 0x111(0x7)
-};
-
-
 // Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
 class GenericStatusVFXResponse: public StatusResponse
 {
@@ -46,6 +31,21 @@ public:
 	float                                                        VFXFalloffMultiplier;                              // 0x54(0x4)
 	struct FName                                                 VfxSocketName;                                     // 0x58(0x8)
 	struct Transform                                             SocketRelativeOffset;                              // 0x60(0x30)
+};
+
+
+// Size 0x60 (Full Size[0x118] - InheritedSize[0xb8]
+class GenericStatusVFXComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_LCEF1[0x8];                                 // 0xb8(0x8)
+	class ParticleSystemComponent*                               VFXComponent;                                      // 0xc0(0x8)
+	class World*                                                 CachedWorld;                                       // 0xc8(0x8)
+	char                                                         pad0x20_VV9GJ[0x20];                               // 0xd0(0x20)
+	class GenericStatusVFXDataAsset*                             VFXDataAsset;                                      // 0xf0(0x8)
+	char                                                         pad0x18_ODJPM[0x18];                               // 0xf8(0x18)
+	bool                                                         ContainsVFXSource;                                 // 0x110(0x1)
+	char                                                         pad0x7_3CU1H[0x7];                                 // 0x111(0x7)
 };
 
 

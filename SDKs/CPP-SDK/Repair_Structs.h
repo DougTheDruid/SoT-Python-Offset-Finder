@@ -8,47 +8,8 @@ struct RepairableAuthoritiveRepairState
 {
 public:
 	char                                                         RepairableState;                                   // 0x0(0x1)
-	char                                                         pad0x7_E25UP[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_EQDIF[0x7];                                 // 0x1(0x7)
 	TArray<uintptr_t>                                            RepairingList;                                     // 0x8(0x10)
-};
-
-
-// Size 0x10
-struct RepairableComponentRepairableStateChangedEvent
-{
-public:
-	class ActorComponent*                                        RepairableComponent;                               // 0x0(0x8)
-	char                                                         RepairableState;                                   // 0x8(0x1)
-	char                                                         pad0x7_5X5QV[0x7];                                 // 0x9(0x7)
-};
-
-
-// Size 0x1
-struct EventRepairableObjectDestroyed
-{
-public:
-	char                                                         pad0x1_AS97M[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x10
-struct DamageZoneRepairableStateChangedEvent
-{
-public:
-	class Actor*                                                 DamageZoneActor;                                   // 0x0(0x8)
-	char                                                         RepairableState;                                   // 0x8(0x1)
-	char                                                         pad0x7_QIE0B[0x7];                                 // 0x9(0x7)
-};
-
-
-// Size 0x78
-struct RepairObjectActionStateConstructionInfo
-{
-public:
-	char                                                         pad0x48_M0YSM[0x48];                               // 0x0(0x48)
-	struct NetSubObjectPtr                                       RepairableObject;                                  // 0x48(0x14)
-	struct NetActorPtr                                           WieldedItem;                                       // 0x5c(0x14)
-	class UClass*                                                InputID;                                           // 0x70(0x8)
 };
 
 
@@ -61,17 +22,56 @@ public:
 };
 
 
+// Size 0x1
+struct EventRepairableObjectDestroyed
+{
+public:
+	char                                                         pad0x1_Z3J8R[0x1];                                 // 0x0(0x1)
+};
+
+
+// Size 0x10
+struct RepairableComponentRepairableStateChangedEvent
+{
+public:
+	class ActorComponent*                                        RepairableComponent;                               // 0x0(0x8)
+	char                                                         RepairableState;                                   // 0x8(0x1)
+	char                                                         pad0x7_RW8R3[0x7];                                 // 0x9(0x7)
+};
+
+
+// Size 0x78
+struct RepairObjectActionStateConstructionInfo
+{
+public:
+	char                                                         pad0x48_DSMSP[0x48];                               // 0x0(0x48)
+	struct NetSubObjectPtr                                       RepairableObject;                                  // 0x48(0x14)
+	struct NetActorPtr                                           WieldedItem;                                       // 0x5c(0x14)
+	class UClass*                                                InputID;                                           // 0x70(0x8)
+};
+
+
 // Size 0x28
 struct EventRepairableObjectRepairEndedEvent
 {
 public:
 	class Object*                                                Repairable;                                        // 0x0(0x8)
 	struct Vector                                                Position;                                          // 0x8(0xc)
-	char                                                         pad0x4_7ZSHQ[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_SIAVI[0x4];                                 // 0x14(0x4)
 	class Actor*                                                 RepairerActor;                                     // 0x18(0x8)
 	float                                                        RepairPercentage;                                  // 0x20(0x4)
 	bool                                                         RepairCompleted;                                   // 0x24(0x1)
-	char                                                         pad0x3_2QD1R[0x3];                                 // 0x25(0x3)
+	char                                                         pad0x3_ZUMHJ[0x3];                                 // 0x25(0x3)
+};
+
+
+// Size 0x10
+struct DamageZoneRepairableStateChangedEvent
+{
+public:
+	class Actor*                                                 DamageZoneActor;                                   // 0x0(0x8)
+	char                                                         RepairableState;                                   // 0x8(0x1)
+	char                                                         pad0x7_NOHAW[0x7];                                 // 0x9(0x7)
 };
 
 

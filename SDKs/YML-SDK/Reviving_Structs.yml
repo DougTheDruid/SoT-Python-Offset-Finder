@@ -20,14 +20,14 @@ AISucessfullyRevivedEvent:
   ClassSize: '0x18'
 BeingRevivedStartedEvent:
   Attributes:
-  - Name: pad0x1_U037D[0x1]
+  - Name: pad0x1_E66H5[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 BeingRevivedStoppedEvent:
   Attributes:
-  - Name: pad0x1_3K7O1[0x1]
+  - Name: pad0x1_HZYLF[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -41,14 +41,14 @@ EventCharacterDiedDuringReviving:
   ClassSize: '0x8'
 EventCharacterFullyRevived:
   Attributes:
-  - Name: pad0x1_GTHUV[0x1]
+  - Name: pad0x1_ASOBD[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 EventRevivableRepresentationReturnedToBody:
   Attributes:
-  - Name: pad0x1_NRA21[0x1]
+  - Name: pad0x1_KNND8[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -62,21 +62,21 @@ EventRevivableRepresentationSpawnCompleted:
   ClassSize: '0x1'
 EventRevivableRepresentationSpawnStarted:
   Attributes:
-  - Name: pad0x1_KF8LF[0x1]
+  - Name: pad0x1_WJ6NS[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 EventRevivePlayerActionStateEntered:
   Attributes:
-  - Name: pad0x1_0TBVI[0x1]
+  - Name: pad0x1_RNKJZ[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 EventRevivePlayerActionStateLeft:
   Attributes:
-  - Name: pad0x1_PR514[0x1]
+  - Name: pad0x1_JKVKH[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -87,7 +87,7 @@ ModeSpecificReviveSettings:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_LE2OZ[0x3]
+  - Name: pad0x3_4L5H1[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -131,7 +131,7 @@ ModeSpecificReviveSettings:
     Offset: '0x28'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_10UF1[0x4]
+  - Name: pad0x4_F9OXX[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -142,11 +142,18 @@ ModeSpecificReviveSettings:
   ClassSize: '0x38'
 PlayerInReviveableStateTelemetryEvent:
   Attributes:
-  - Name: pad0x1_H3LLT[0x1]
+  - Name: pad0x1_TQJ5U[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
+PlayerRevivalFailTelemetryEvent:
+  Attributes:
+  - Name: FailReason
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct FString
+  ClassSize: '0x10'
 PlayerRevivalTelemetryEvent:
   Attributes:
   - Name: Success
@@ -154,16 +161,23 @@ PlayerRevivalTelemetryEvent:
     Size: '0x1'
     Type: bool
   ClassSize: '0x1'
+PlayerRevivalTransitionTelemetryEvent:
+  Attributes:
+  - Name: pad0x1_V5RRL[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
 PostReviveLocomotionActionStateConstructionInfo:
   Attributes:
-  - Name: pad0x48_VYOES[0x48]
+  - Name: pad0x48_CIU62[0x48]
     Offset: '0x0'
     Size: '0x48'
     Type: char
   ClassSize: '0x48'
 RevivableCharacterGhostlyBodyEvaporateStarted:
   Attributes:
-  - Name: pad0x1_ZTWAA[0x1]
+  - Name: pad0x1_76W0D[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -174,21 +188,21 @@ ReviveEffectsValues:
     Offset: '0x0'
     Size: '0x8'
     Type: class MaterialInstanceDynamic*
-  - Name: pad0x18_19ALV[0x18]
+  - Name: pad0x18_CIGP8[0x18]
     Offset: '0x8'
     Size: '0x18'
     Type: char
   ClassSize: '0x20'
 ReviveEndedEarlyEvent:
   Attributes:
-  - Name: pad0x1_BNL92[0x1]
+  - Name: pad0x1_X2IAH[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 RevivePlayerActionStateConstructionInfo:
   Attributes:
-  - Name: pad0x48_LJBH7[0x48]
+  - Name: pad0x48_2QV7P[0x48]
     Offset: '0x0'
     Size: '0x48'
     Type: char
@@ -207,7 +221,7 @@ RevivePlayerActionStateConstructionInfo:
   ClassSize: '0x78'
 ReviveableActionStateConstructionInfo:
   Attributes:
-  - Name: pad0x48_ELOEN[0x48]
+  - Name: pad0x48_8WCNH[0x48]
     Offset: '0x0'
     Size: '0x48'
     Type: char
@@ -227,21 +241,21 @@ ReviveableActionStateConstructionInfo:
     Offset: '0x81'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_3F984[0x6]
+  - Name: pad0x6_3WPZ9[0x6]
     Offset: '0x82'
     Size: '0x6'
     Type: char
   ClassSize: '0x88'
 ReviveableActionStateStarted:
   Attributes:
-  - Name: pad0x1_04AE7[0x1]
+  - Name: pad0x1_L4Z29[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 RevivedActionStateConstructionInfo:
   Attributes:
-  - Name: pad0x48_IO28S[0x48]
+  - Name: pad0x48_CO739[0x48]
     Offset: '0x0'
     Size: '0x48'
     Type: char
@@ -263,7 +277,7 @@ RevivedActionStateParams:
   ClassSize: '0x10'
 RevivingWindowEnd:
   Attributes:
-  - Name: pad0x1_DMDFX[0x1]
+  - Name: pad0x1_3F8OS[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -278,7 +292,7 @@ RevivingWindowStart:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_1VNR1[0x7]
+  - Name: pad0x7_YA2RP[0x7]
     Offset: '0x31'
     Size: '0x7'
     Type: char
@@ -289,7 +303,7 @@ RevivingWindowStart:
   ClassSize: '0x40'
 SuccessfulReviveEvent:
   Attributes:
-  - Name: pad0x1_4ZCYW[0x1]
+  - Name: pad0x1_GQD9W[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char

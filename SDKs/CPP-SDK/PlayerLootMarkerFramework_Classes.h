@@ -12,7 +12,7 @@ class PlayerLootMarkerServiceParams: public DataAsset
 public:
 	class ShortRangeMarkerDataAsset*                             MarkerDataAsset;                                   // 0x28(0x8)
 	float                                                        JettisonMaxMarkerDistance;                         // 0x30(0x4)
-	char                                                         pad0x4_6Q6J7[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_16MEJ[0x4];                                 // 0x34(0x4)
 };
 
 
@@ -27,13 +27,13 @@ public:
 class PlayerLootMarkerService: public Actor
 {
 public:
-	char                                                         pad0x8_AQO03[0x8];                                 // 0x3a0(0x8)
+	char                                                         pad0x8_QZFVI[0x8];                                 // 0x3a0(0x8)
 	class PlayerLootMarkerServiceParams*                         Params;                                            // 0x3a8(0x8)
-	char                                                         pad0x20_42IIA[0x20];                               // 0x3b0(0x20)
+	char                                                         pad0x20_XO7V3[0x20];                               // 0x3b0(0x20)
 	TArray<uintptr_t>                                            ShortRangeMarkers;                                 // 0x3d0(0x10)
-	char                                                         pad0x118_0HQUX[0x118];                             // 0x3e0(0x118)
+	char                                                         pad0x118_UXZKK[0x118];                             // 0x3e0(0x118)
 	TArray<struct PlayerLootMarkerWorldEdgeBatchData>            BatchData;                                         // 0x4f8(0x10)
-	char                                                         pad0x10_FW1DN[0x10];                               // 0x508(0x10)
+	char                                                         pad0x10_QRYL0[0x10];                               // 0x508(0x10)
 };
 
 

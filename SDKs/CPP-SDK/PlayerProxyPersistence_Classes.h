@@ -6,11 +6,10 @@
 #include "PlayerProxyPersistence_Structs.h"
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class PlayerPersistentProxyLimitsDataAsset: public DataAsset
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ProxyPersistenceId: public Object
 {
 public:
-	TArray<struct ProxyLimit>                                    ProxyLimits;                                       // 0x28(0x10)
 };
 
 
@@ -19,19 +18,20 @@ class PlayerProxyPersistenceComponent: public ActorComponent
 {
 public:
 	class PlayerPersistentProxyLimitsDataAsset*                  ProxyLimitsDataAsset;                              // 0xb8(0x8)
-	char                                                         pad0x60_VQGWH[0x60];                               // 0xc0(0x60)
+	char                                                         pad0x60_L217V[0x60];                               // 0xc0(0x60)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class PlayerPersistentProxyLimitsDataAsset: public DataAsset
+{
+public:
+	TArray<struct ProxyLimit>                                    ProxyLimits;                                       // 0x28(0x10)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class PlayerPersistentProxyInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ProxyPersistenceId: public Object
 {
 public:
 };

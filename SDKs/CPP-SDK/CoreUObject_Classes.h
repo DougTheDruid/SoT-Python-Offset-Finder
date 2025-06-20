@@ -145,33 +145,58 @@ static Class* FindClass(const std::string name) {
 #include "CoreUObject_Structs.h"
 
 
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class TextBuffer: public Object
-{
-public:
-	char                                                         pad0x28_KKT2C[0x28];                               // 0x28(0x28)
-};
-
-
-// Size 0x0 (Full Size[0x70] - InheritedSize[0x70]
-class NumericProperty: public Property
-{
-public:
-};
-
-
 // Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
-class ObjectPropertyBase: public Property
+class DelegateProperty: public Property
 {
 public:
-	char                                                         pad0x8_EXQXD[0x8];                                 // 0x70(0x8)
+	char                                                         pad0x8_F1X5H[0x8];                                 // 0x70(0x8)
 };
 
 
-// Size 0x0 (Full Size[0x0] - InheritedSize[0x0]
-class Default__Class
+// Size 0x150 (Full Size[0x208] - InheritedSize[0xb8]
+class LinkerPlaceholderFunction: public Function
 {
 public:
+	char                                                         pad0x150_OFBNW[0x150];                             // 0xb8(0x150)
+};
+
+
+// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
+class MapProperty: public Property
+{
+public:
+	char                                                         pad0x38_PDAUX[0x38];                               // 0x70(0x38)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class Interface: public Object
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
+class ScriptStruct: public Struct
+{
+public:
+	char                                                         pad0x10_FXWLY[0x10];                               // 0x88(0x10)
+};
+
+
+// Size 0x150 (Full Size[0x310] - InheritedSize[0x1c0]
+class LinkerPlaceholderClass: public Class
+{
+public:
+	char                                                         pad0x150_DPUJ9[0x150];                             // 0x1c0(0x150)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class PackageMap: public Object
+{
+public:
+	char                                                         pad0x28_S3AUX[0x28];                               // 0x28(0x28)
 };
 
 
@@ -183,64 +208,10 @@ public:
 
 
 // Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
-class InterfaceProperty: public Property
+class ObjectPropertyBase: public Property
 {
 public:
-	char                                                         pad0x8_AVZT5[0x8];                                 // 0x70(0x8)
-};
-
-
-// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
-class MetaData: public Object
-{
-public:
-	char                                                         pad0x50_3ENKB[0x50];                               // 0x28(0x50)
-};
-
-
-// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
-class LinkerPlaceholderExportObject: public Object
-{
-public:
-	char                                                         pad0x60_6JIF6[0x60];                               // 0x28(0x60)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class Interface: public Object
-{
-public:
-};
-
-
-// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
-class ArrayProperty: public Property
-{
-public:
-	char                                                         pad0x8_WFUVW[0x8];                                 // 0x70(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class ObjectRedirector: public Object
-{
-public:
-	char                                                         pad0x8_832QZ[0x8];                                 // 0x28(0x8)
-};
-
-
-// Size 0x0 (Full Size[0xb8] - InheritedSize[0xb8]
-class DelegateFunction: public Function
-{
-public:
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class PackageMap: public Object
-{
-public:
-	char                                                         pad0x28_QBDH0[0x28];                               // 0x28(0x28)
+	char                                                         pad0x8_U4AFQ[0x8];                                 // 0x70(0x8)
 };
 
 
@@ -248,47 +219,22 @@ public:
 class MulticastDelegateProperty: public Property
 {
 public:
-	char                                                         pad0x8_CEQ8C[0x8];                                 // 0x70(0x8)
-};
-
-
-// Size 0x150 (Full Size[0x208] - InheritedSize[0xb8]
-class LinkerPlaceholderFunction: public Function
-{
-public:
-	char                                                         pad0x150_QQJVP[0x150];                             // 0xb8(0x150)
-};
-
-
-// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
-class GCObjectReferencer: public Object
-{
-public:
-	char                                                         pad0x38_Q1IMU[0x38];                               // 0x28(0x38)
-};
-
-
-// Size 0x38 (Full Size[0xa8] - InheritedSize[0x70]
-class MapProperty: public Property
-{
-public:
-	char                                                         pad0x38_4293S[0x38];                               // 0x70(0x38)
+	char                                                         pad0x8_I3V0T[0x8];                                 // 0x70(0x8)
 };
 
 
 // Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
-class DelegateProperty: public Property
+class InterfaceProperty: public Property
 {
 public:
-	char                                                         pad0x8_IYYOJ[0x8];                                 // 0x70(0x8)
+	char                                                         pad0x8_2BPHZ[0x8];                                 // 0x70(0x8)
 };
 
 
-// Size 0x28 (Full Size[0x58] - InheritedSize[0x30]
-class Enum: public Field
+// Size 0x0 (Full Size[0x70] - InheritedSize[0x70]
+class NumericProperty: public Property
 {
 public:
-	char                                                         pad0x28_I9DR1[0x28];                               // 0x30(0x28)
 };
 
 
@@ -299,27 +245,11 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
-class StructProperty: public Property
-{
-public:
-	char                                                         pad0x8_FCSQQ[0x8];                                 // 0x70(0x8)
-};
-
-
 // Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
 class Package: public Object
 {
 public:
-	char                                                         pad0x58_VB7NH[0x58];                               // 0x28(0x58)
-};
-
-
-// Size 0x150 (Full Size[0x310] - InheritedSize[0x1c0]
-class LinkerPlaceholderClass: public Class
-{
-public:
-	char                                                         pad0x150_ITIDY[0x150];                             // 0x1c0(0x150)
+	char                                                         pad0x58_A12VZ[0x58];                               // 0x28(0x58)
 };
 
 
@@ -330,19 +260,118 @@ public:
 };
 
 
+// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
+class LinkerPlaceholderExportObject: public Object
+{
+public:
+	char                                                         pad0x60_SGL7M[0x60];                               // 0x28(0x60)
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class ObjectRedirector: public Object
+{
+public:
+	char                                                         pad0x8_SNEHA[0x8];                                 // 0x28(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
+class StructProperty: public Property
+{
+public:
+	char                                                         pad0x8_GSSFV[0x8];                                 // 0x70(0x8)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class TextBuffer: public Object
+{
+public:
+	char                                                         pad0x28_JLG20[0x28];                               // 0x28(0x28)
+};
+
+
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
+class MetaData: public Object
+{
+public:
+	char                                                         pad0x50_HLN4O[0x50];                               // 0x28(0x50)
+};
+
+
+// Size 0x0 (Full Size[0xb8] - InheritedSize[0xb8]
+class DelegateFunction: public Function
+{
+public:
+};
+
+
+// Size 0x28 (Full Size[0x58] - InheritedSize[0x30]
+class Enum: public Field
+{
+public:
+	char                                                         pad0x28_81XWB[0x28];                               // 0x30(0x28)
+};
+
+
+// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
+class ArrayProperty: public Property
+{
+public:
+	char                                                         pad0x8_YA334[0x8];                                 // 0x70(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x0] - InheritedSize[0x0]
+class Default__Class
+{
+public:
+};
+
+
 // Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
 class BoolProperty: public Property
 {
 public:
-	char                                                         pad0x8_GZ0P5[0x8];                                 // 0x70(0x8)
+	char                                                         pad0x8_SXAVY[0x8];                                 // 0x70(0x8)
 };
 
 
-// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
-class ScriptStruct: public Struct
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
+class GCObjectReferencer: public Object
 {
 public:
-	char                                                         pad0x10_OIDDW[0x10];                               // 0x88(0x10)
+	char                                                         pad0x38_FN15N[0x38];                               // 0x28(0x38)
+};
+
+
+// Size 0x0 (Full Size[0x78] - InheritedSize[0x78]
+class MulticastInlineDelegateProperty: public MulticastDelegateProperty
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x70] - InheritedSize[0x70]
+class IntProperty: public NumericProperty
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x78] - InheritedSize[0x78]
+class LazyObjectProperty: public ObjectPropertyBase
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
+class ByteProperty: public NumericProperty
+{
+public:
+	char                                                         pad0x8_ZQFCR[0x8];                                 // 0x70(0x8)
 };
 
 
@@ -354,7 +383,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x70] - InheritedSize[0x70]
-class DoubleProperty: public NumericProperty
+class UInt64Property: public NumericProperty
 {
 public:
 };
@@ -368,49 +397,14 @@ public:
 
 
 // Size 0x0 (Full Size[0x70] - InheritedSize[0x70]
-class Int64Property: public NumericProperty
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x78] - InheritedSize[0x78]
-class ObjectProperty: public ObjectPropertyBase
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x78] - InheritedSize[0x78]
-class WeakObjectProperty: public ObjectPropertyBase
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x70] - InheritedSize[0x70]
-class UInt64Property: public NumericProperty
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x70] - InheritedSize[0x70]
-class IntProperty: public NumericProperty
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x70] - InheritedSize[0x70]
-class FloatProperty: public NumericProperty
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x70] - InheritedSize[0x70]
 class UInt16Property: public NumericProperty
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x70] - InheritedSize[0x70]
+class Int8Property: public NumericProperty
 {
 public:
 };
@@ -424,14 +418,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x78] - InheritedSize[0x78]
-class LazyObjectProperty: public ObjectPropertyBase
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x70] - InheritedSize[0x70]
-class Int8Property: public NumericProperty
+class WeakObjectProperty: public ObjectPropertyBase
 {
 public:
 };
@@ -441,30 +428,35 @@ public:
 class SparseDelegateFunction: public DelegateFunction
 {
 public:
-	char                                                         pad0x10_X1E1D[0x10];                               // 0xb8(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
-class ByteProperty: public NumericProperty
-{
-public:
-	char                                                         pad0x8_MFZ48[0x8];                                 // 0x70(0x8)
+	char                                                         pad0x10_UV8YU[0x10];                               // 0xb8(0x10)
 };
 
 
 // Size 0x0 (Full Size[0x78] - InheritedSize[0x78]
-class MulticastInlineDelegateProperty: public MulticastDelegateProperty
+class ObjectProperty: public ObjectPropertyBase
 {
 public:
 };
 
 
-// Size 0x8 (Full Size[0x80] - InheritedSize[0x78]
-class AssetClassProperty: public AssetObjectProperty
+// Size 0x0 (Full Size[0x70] - InheritedSize[0x70]
+class FloatProperty: public NumericProperty
 {
 public:
-	char                                                         pad0x8_0HQW8[0x8];                                 // 0x78(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x70] - InheritedSize[0x70]
+class Int64Property: public NumericProperty
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x70] - InheritedSize[0x70]
+class DoubleProperty: public NumericProperty
+{
+public:
 };
 
 
@@ -472,7 +464,15 @@ public:
 class ClassProperty: public ObjectProperty
 {
 public:
-	char                                                         pad0x8_XP2IT[0x8];                                 // 0x78(0x8)
+	char                                                         pad0x8_U5QLD[0x8];                                 // 0x78(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x80] - InheritedSize[0x78]
+class AssetClassProperty: public AssetObjectProperty
+{
+public:
+	char                                                         pad0x8_YQ1LD[0x8];                                 // 0x78(0x8)
 };
 
 

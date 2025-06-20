@@ -6,38 +6,6 @@
 #include "TrinketFramework_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TrinketLoadoutControlInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class TrinketSfxDataAsset: public DataAsset
-{
-public:
-	class WwiseEvent*                                            MountSfx;                                          // 0x28(0x8)
-	class WwiseEvent*                                            RemoveSfx;                                         // 0x30(0x8)
-	class WwiseEvent*                                            NudgeSfx;                                          // 0x38(0x8)
-	class WwiseEvent*                                            StraightenSfx;                                     // 0x40(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TrinketSetControlInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TrinketLoadoutViewInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x0 (Full Size[0x88] - InheritedSize[0x88]
 class TrinketCategory: public CategoryBase
 {
@@ -49,7 +17,14 @@ public:
 class TrinketReplacementActor: public Actor
 {
 public:
-	char                                                         pad0x10_CJ2PG[0x10];                               // 0x3a0(0x10)
+	char                                                         pad0x10_96WTI[0x10];                               // 0x3a0(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TrinketLoadoutFinderPolicyBase: public Object
+{
+public:
 };
 
 
@@ -71,7 +46,32 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TrinketLoadoutFinderPolicyBase: public Object
+class TrinketLoadoutControlInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TrinketSetControlInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class TrinketSfxDataAsset: public DataAsset
+{
+public:
+	class WwiseEvent*                                            MountSfx;                                          // 0x28(0x8)
+	class WwiseEvent*                                            RemoveSfx;                                         // 0x30(0x8)
+	class WwiseEvent*                                            NudgeSfx;                                          // 0x38(0x8)
+	class WwiseEvent*                                            StraightenSfx;                                     // 0x40(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TrinketLoadoutViewInterface: public Interface
 {
 public:
 };
@@ -88,7 +88,7 @@ public:
 class SameActorTrinketLoadoutFinderPolicy: public TrinketLoadoutFinderPolicyBase
 {
 public:
-	char                                                         pad0x10_RJJHT[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_70CUB[0x10];                               // 0x28(0x10)
 };
 
 

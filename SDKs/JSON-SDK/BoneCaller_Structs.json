@@ -1,16 +1,27 @@
 {
-  "EventOnBoneCallerAIKilled": {
+  "PlayerBoneCallerData": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_CXH74[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventOnBoneCallerSpawned": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "KilledCharacter",
+        "Name": "SpawnedCharacter",
         "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "Killer",
-        "Type": "class Actor*",
+        "Name": "IslandWhereCharacterSpawned",
+        "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -32,44 +43,10 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_C2BBE[0x7]",
+        "Name": "pad0x7_860DS[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
-      }
-    ]
-  },
-  "EventOnBoneCallerSpawned": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "SpawnedCharacter",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "IslandWhereCharacterSpawned",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "EventOnBoneCallerDidKillEvent": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "KilledCharacter",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DamageInstance",
-        "Type": "struct DamageInstance",
-        "Size": "0x30",
-        "Offset": "0x8"
       }
     ]
   },
@@ -83,7 +60,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_HS339[0x4]",
+        "Name": "pad0x4_04QMA[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -112,7 +89,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x10_VM1ES[0x10]",
+        "Name": "pad0x10_WFTV1[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x10"
@@ -122,34 +99,6 @@
         "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x20"
-      }
-    ]
-  },
-  "PlayerBoneCallerData": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_744E8[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "BoneCallerSpawnIdShipSizeOverride": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ShipSize",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "BoneCallerSpawnIdOverride",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x8"
       }
     ]
   },
@@ -179,6 +128,57 @@
         "Type": "TArray<struct AttitudeOverrideEntry>",
         "Size": "0x10",
         "Offset": "0x18"
+      }
+    ]
+  },
+  "BoneCallerSpawnIdShipSizeOverride": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ShipSize",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BoneCallerSpawnIdOverride",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventOnBoneCallerAIKilled": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "KilledCharacter",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Killer",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventOnBoneCallerDidKillEvent": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "KilledCharacter",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DamageInstance",
+        "Type": "struct DamageInstance",
+        "Size": "0x30",
+        "Offset": "0x8"
       }
     ]
   },

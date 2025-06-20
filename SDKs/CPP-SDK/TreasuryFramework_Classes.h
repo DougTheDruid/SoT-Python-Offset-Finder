@@ -6,14 +6,6 @@
 #include "TreasuryFramework_Structs.h"
 
 
-// Size 0x8 (Full Size[0x418] - InheritedSize[0x410]
-class SunkenKingdomTreasuryDeepSeaRegion: public DeepSeaRegion
-{
-public:
-	char                                                         pad0x8_0DAKF[0x8];                                 // 0x410(0x8)
-};
-
-
 // Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
 class TreasuryWaveDataAsset: public DataAsset
 {
@@ -26,26 +18,10 @@ public:
 
 
 // Size 0x8 (Full Size[0x418] - InheritedSize[0x410]
-class SunkenKingdomShrineDeepSeaRegion: public DeepSeaRegion
+class SunkenKingdomTreasuryDeepSeaRegion: public DeepSeaRegion
 {
 public:
-	char                                                         pad0x8_JQ661[0x8];                                 // 0x410(0x8)
-};
-
-
-// Size 0x20 (Full Size[0x4a0] - InheritedSize[0x480]
-class SunkenKingdomShrineFinalRewardSpawnComponent: public ItemSpawnComponent
-{
-public:
-	char                                                         pad0x20_UQ4HP[0x20];                               // 0x480(0x20)
-};
-
-
-// Size 0xa8 (Full Size[0x448] - InheritedSize[0x3a0]
-class ShimmerActor: public Actor
-{
-public:
-	char                                                         pad0xa8_7WZ8S[0xa8];                               // 0x3a0(0xa8)
+	char                                                         pad0x8_5G2NW[0x8];                                 // 0x410(0x8)
 };
 
 
@@ -53,13 +29,29 @@ public:
 class SunkenKingdomShrineEventRoom: public EventRoom
 {
 public:
-	char                                                         pad0x10_LUOQ5[0x10];                               // 0x4d8(0x10)
+	char                                                         pad0x10_6CBK4[0x10];                               // 0x4d8(0x10)
 	class Actor*                                                 EntranceActor;                                     // 0x4e8(0x8)
 	class GameEventOnDemandAvailabilityHandler*                  GameEventOnDemandAvailabilityHandler;              // 0x4f0(0x8)
 	struct StringAssetReference                                  AvailabilityParamsAssetFileLocation;               // 0x4f8(0x10)
 	class ObjectProximityResetComponent*                         PuzzleResetComponent;                              // 0x508(0x8)
 	class GameEventItemSpawnSelectorComponent*                   ItemSpawnSelectorComponent;                        // 0x510(0x8)
-	char                                                         pad0x70_D1HPW[0x70];                               // 0x518(0x70)
+	char                                                         pad0x70_NAVXR[0x70];                               // 0x518(0x70)
+};
+
+
+// Size 0xa8 (Full Size[0x448] - InheritedSize[0x3a0]
+class ShimmerActor: public Actor
+{
+public:
+	char                                                         pad0xa8_DQWW5[0xa8];                               // 0x3a0(0xa8)
+};
+
+
+// Size 0x20 (Full Size[0x4a0] - InheritedSize[0x480]
+class SunkenKingdomShrineFinalRewardSpawnComponent: public ItemSpawnComponent
+{
+public:
+	char                                                         pad0x20_MBXH3[0x20];                               // 0x480(0x20)
 };
 
 
@@ -67,7 +59,7 @@ public:
 class TreasuryRoom: public Actor
 {
 public:
-	char                                                         pad0x20_IBJR8[0x20];                               // 0x3a0(0x20)
+	char                                                         pad0x20_LZ7V4[0x20];                               // 0x3a0(0x20)
 	class BoxComponent*                                          RoomAreaComponent;                                 // 0x3c0(0x8)
 	float                                                        TreasuryInactiveDurationMinSeconds;                // 0x3c8(0x4)
 	float                                                        TreasuryInactiveDurationMaxSeconds;                // 0x3cc(0x4)
@@ -96,12 +88,20 @@ public:
 	TArray<uintptr_t>                                            CachedParticipantControllers;                      // 0x4c8(0x10)
 	class Actor*                                                 VaultLootSpawnerActor;                             // 0x4d8(0x8)
 	struct PlayerStat                                            VaultOpenStat;                                     // 0x4e0(0x4)
-	char                                                         pad0x4_O0RBC[0x4];                                 // 0x4e4(0x4)
+	char                                                         pad0x4_H50BR[0x4];                                 // 0x4e4(0x4)
 	class MechanismActionComponent*                              FloodMechanismComponent;                           // 0x4e8(0x8)
 	class MechanismActionComponent*                              DrainMechanismComponent;                           // 0x4f0(0x8)
 	class MechanismActionComponent*                              VaultMechanismComponent;                           // 0x4f8(0x8)
 	struct ObjectMessagingDispatcher                             EventDispatcher;                                   // 0x530(0xa0)
-	char                                                         pad0x18_J2IVK[0x18];                               // 0x5d0(0x18)
+	char                                                         pad0x18_9950T[0x18];                               // 0x5d0(0x18)
+};
+
+
+// Size 0x8 (Full Size[0x418] - InheritedSize[0x410]
+class SunkenKingdomShrineDeepSeaRegion: public DeepSeaRegion
+{
+public:
+	char                                                         pad0x8_H00UX[0x8];                                 // 0x410(0x8)
 };
 
 

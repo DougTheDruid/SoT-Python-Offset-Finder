@@ -1,15 +1,4 @@
 {
-  "EventFaunaRammerComponentChargeAttack": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_WKUJS[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "FaunaRammedCharacterEvent": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -24,6 +13,17 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "EventFaunaRammerComponentChargeAttack": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_OVMUM[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
       }
     ]
   },

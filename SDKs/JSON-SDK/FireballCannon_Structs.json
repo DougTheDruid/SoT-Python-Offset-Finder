@@ -3,7 +3,75 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_VQ88F[0x1]",
+        "Name": "pad0x1_MRJ8G[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventShootFireballCannon": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_RVT0A[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "FireballCannonProjectileFirePoint": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Name": "FireFromLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "FireFromRotation",
+        "Type": "struct Rotator",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "FireDelay",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "EventFireballCannonFiringStateChanged": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "FireballCannonFiringState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_M8QYX[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "FireballCannonObject",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventFireballCannonHasStartedToCooldown": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_FB9F4[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
@@ -36,74 +104,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x10"
-      }
-    ]
-  },
-  "EventFireballCannonHasStartedToCooldown": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_S2NEB[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "FireballCannonProjectileFirePoint": {
-    "ClassSize": "0x1c",
-    "Attributes": [
-      {
-        "Name": "FireFromLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "FireFromRotation",
-        "Type": "struct Rotator",
-        "Size": "0xc",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "FireDelay",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "EventShootFireballCannon": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_2ZH6K[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventFireballCannonFiringStateChanged": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "FireballCannonFiringState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x7_Z7I4A[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "FireballCannonObject",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
       }
     ]
   },

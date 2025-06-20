@@ -1,28 +1,14 @@
 {
-  "ProgressWidgetStyle": {
+  "EditableTextWidgetStyle": {
     "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x1e8",
+    "FullSize": "0x258",
     "InheritedSize": "0x30",
-    "ClassSize": "0x1b8",
+    "ClassSize": "0x228",
     "Attributes": [
       {
-        "Name": "ProgressBarStyle",
-        "Type": "struct ProgressBarStyle",
-        "Size": "0x1b8",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "TextBlockWidgetStyle": {
-    "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x190",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x160",
-    "Attributes": [
-      {
-        "Name": "TextBlockStyle",
-        "Type": "struct TextBlockStyle",
-        "Size": "0x160",
+        "Name": "EditableTextStyle",
+        "Type": "struct EditableTextStyle",
+        "Size": "0x228",
         "Offset": "0x30"
       }
     ]
@@ -41,58 +27,16 @@
       }
     ]
   },
-  "ScrollBarWidgetStyle": {
+  "TextBlockWidgetStyle": {
     "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x548",
+    "FullSize": "0x190",
     "InheritedSize": "0x30",
-    "ClassSize": "0x518",
+    "ClassSize": "0x160",
     "Attributes": [
       {
-        "Name": "ScrollBarStyle",
-        "Type": "struct ScrollBarStyle",
-        "Size": "0x518",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "SpinBoxWidgetStyle": {
-    "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x348",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x318",
-    "Attributes": [
-      {
-        "Name": "SpinBoxStyle",
-        "Type": "struct SpinBoxStyle",
-        "Size": "0x318",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "EditableTextWidgetStyle": {
-    "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x258",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x228",
-    "Attributes": [
-      {
-        "Name": "EditableTextStyle",
-        "Type": "struct EditableTextStyle",
-        "Size": "0x228",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "ComboBoxWidgetStyle": {
-    "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x458",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x428",
-    "Attributes": [
-      {
-        "Name": "ComboBoxStyle",
-        "Type": "struct ComboBoxStyle",
-        "Size": "0x428",
+        "Name": "TextBlockStyle",
+        "Type": "struct TextBlockStyle",
+        "Size": "0x160",
         "Offset": "0x30"
       }
     ]
@@ -111,6 +55,34 @@
       }
     ]
   },
+  "ComboBoxWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x458",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x428",
+    "Attributes": [
+      {
+        "Name": "ComboBoxStyle",
+        "Type": "struct ComboBoxStyle",
+        "Size": "0x428",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "SpinBoxWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x348",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x318",
+    "Attributes": [
+      {
+        "Name": "SpinBoxStyle",
+        "Type": "struct SpinBoxStyle",
+        "Size": "0x318",
+        "Offset": "0x30"
+      }
+    ]
+  },
   "ButtonWidgetStyle": {
     "Super": "SlateWidgetStyleContainerBase",
     "FullSize": "0x2d8",
@@ -125,6 +97,20 @@
       }
     ]
   },
+  "ProgressWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x1e8",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x1b8",
+    "Attributes": [
+      {
+        "Name": "ProgressBarStyle",
+        "Type": "struct ProgressBarStyle",
+        "Size": "0x1b8",
+        "Offset": "0x30"
+      }
+    ]
+  },
   "ScrollBoxWidgetStyle": {
     "Super": "SlateWidgetStyleContainerBase",
     "FullSize": "0x278",
@@ -135,6 +121,20 @@
         "Name": "ScrollBoxStyle",
         "Type": "struct ScrollBoxStyle",
         "Size": "0x248",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "ScrollBarWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x548",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x518",
+    "Attributes": [
+      {
+        "Name": "ScrollBarStyle",
+        "Type": "struct ScrollBarStyle",
+        "Size": "0x518",
         "Offset": "0x30"
       }
     ]

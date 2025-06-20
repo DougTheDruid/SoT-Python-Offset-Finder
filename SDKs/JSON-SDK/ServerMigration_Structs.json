@@ -1,4 +1,32 @@
 {
+  "ClientSettings": {
+    "ClassSize": "0x2",
+    "Attributes": [
+      {
+        "Name": "FailToConnectToServer",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PauseMigrationBeforeOwnershipTransfer",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1"
+      }
+    ]
+  },
+  "ServerMigrationCustomMigrationSerialisationStruct": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "pad0x4_IADPT[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "ServerSettings": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -21,7 +49,7 @@
         "Offset": "0x2"
       },
       {
-        "Name": "pad0x1_F8ICR[0x1]",
+        "Name": "pad0x1_H8ZAG[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x3"
@@ -31,17 +59,6 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x4"
-      }
-    ]
-  },
-  "ServerMigrationCustomMigrationSerialisationStruct": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "pad0x4_Z8O35[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x0"
       }
     ]
   },
@@ -55,27 +72,10 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x8_SR7NK[0x8]",
+        "Name": "pad0x8_IN7S2[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x4"
-      }
-    ]
-  },
-  "ClientSettings": {
-    "ClassSize": "0x2",
-    "Attributes": [
-      {
-        "Name": "FailToConnectToServer",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PauseMigrationBeforeOwnershipTransfer",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1"
       }
     ]
   },

@@ -1,72 +1,4 @@
 {
-  "OverheatingComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x1a8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0xf0",
-    "Attributes": [
-      {
-        "Name": "pad0x30_LNMHY[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "VisualiserStaticMeshComponent",
-        "Type": "class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "ExplosionVfxEmitter",
-        "Type": "class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "HeatBuildingVfxEmitter",
-        "Type": "class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0xf8"
-      },
-      {
-        "Name": "CooldownInstigator",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x100"
-      },
-      {
-        "Name": "OverheatingDataAsset",
-        "Type": "class OverheatingDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x108"
-      },
-      {
-        "Name": "ReplicatedData",
-        "Type": "struct OverheatingReplicatedData",
-        "Size": "0x8",
-        "Offset": "0x110"
-      },
-      {
-        "Name": "OverheatingMaterialIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x118"
-      },
-      {
-        "Name": "IsWieldableOrProxy",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x11c"
-      },
-      {
-        "Name": "pad0x8b_XY2MW[0x8b]",
-        "Type": "char",
-        "Size": "0x8b",
-        "Offset": "0x11d"
-      }
-    ]
-  },
   "OverheatingDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0xc0",
@@ -134,34 +66,34 @@
         "Offset": "0x4c"
       },
       {
-        "Name": "HeatBuildingDuration",
+        "Name": "OverheatingToAddWhenSubmergedInSuperHeatedWater",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x50"
       },
       {
-        "Name": "SteamingDuration",
+        "Name": "HeatBuildingDuration",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x54"
       },
       {
-        "Name": "ExplosionDuration",
+        "Name": "SteamingDuration",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x58"
       },
       {
-        "Name": "VfxEmitterLocation",
-        "Type": "struct FName",
-        "Size": "0x8",
+        "Name": "ExplosionDuration",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x5c"
       },
       {
-        "Name": "pad0x4_NIHZ1[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x64"
+        "Name": "VfxEmitterLocation",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x60"
       },
       {
         "Name": "HeatBuildingVfx",
@@ -222,6 +154,74 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0xb8"
+      }
+    ]
+  },
+  "OverheatingComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x1a8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0xf0",
+    "Attributes": [
+      {
+        "Name": "pad0x30_2NXSM[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "VisualiserStaticMeshComponent",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "ExplosionVfxEmitter",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "HeatBuildingVfxEmitter",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0xf8"
+      },
+      {
+        "Name": "CooldownInstigator",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "OverheatingDataAsset",
+        "Type": "class OverheatingDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x108"
+      },
+      {
+        "Name": "ReplicatedData",
+        "Type": "struct OverheatingReplicatedData",
+        "Size": "0x8",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "OverheatingMaterialIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x118"
+      },
+      {
+        "Name": "IsWieldableOrProxy",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x11c"
+      },
+      {
+        "Name": "pad0x8b_YK8UK[0x8b]",
+        "Type": "char",
+        "Size": "0x8b",
+        "Offset": "0x11d"
       }
     ]
   },

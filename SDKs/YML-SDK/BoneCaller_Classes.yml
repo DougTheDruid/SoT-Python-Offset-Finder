@@ -16,7 +16,7 @@ BoneCallerCannonProjectile:
     Offset: '0x740'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x80_77XRA[0x80]
+  - Name: pad0x80_GO3GZ[0x80]
     Offset: '0x748'
     Size: '0x80'
     Type: char
@@ -26,7 +26,7 @@ BoneCallerCannonProjectile:
   Super: CannonProjectile
 BoneCallerOwnershipComponent:
   Attributes:
-  - Name: pad0x8_VZ5OE[0x8]
+  - Name: pad0x8_0HMUV[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -34,7 +34,7 @@ BoneCallerOwnershipComponent:
     Offset: '0xc0'
     Size: '0x10'
     Type: struct Guid
-  - Name: pad0x58_HVHM0[0x58]
+  - Name: pad0x58_ZT1MV[0x58]
     Offset: '0xd0'
     Size: '0x58'
     Type: char
@@ -44,7 +44,7 @@ BoneCallerOwnershipComponent:
   Super: ActorComponent
 BoneCallerService:
   Attributes:
-  - Name: pad0x318_U53VU[0x318]
+  - Name: pad0x318_SZAVV[0x318]
     Offset: '0x3a0'
     Size: '0x318'
     Type: char
@@ -52,7 +52,7 @@ BoneCallerService:
     Offset: '0x6b8'
     Size: '0x8'
     Type: class BoneCallerServiceParams*
-  - Name: pad0x70_DT1LK[0x70]
+  - Name: pad0x70_IRQ4X[0x70]
     Offset: '0x6c0'
     Size: '0x70'
     Type: char
@@ -80,7 +80,7 @@ BoneCallerServiceParams:
     Offset: '0x40'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_1VTF4[0x7]
+  - Name: pad0x7_4ZOVZ[0x7]
     Offset: '0x41'
     Size: '0x7'
     Type: char

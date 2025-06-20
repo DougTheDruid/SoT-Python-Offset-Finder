@@ -1,11 +1,4 @@
 {
-  "LocationType": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "LocationProviderService": {
     "Super": "Object",
     "FullSize": "0xa8",
@@ -13,12 +6,19 @@
     "ClassSize": "0x80",
     "Attributes": [
       {
-        "Name": "pad0x80_NOOS4[0x80]",
+        "Name": "pad0x80_U4E0V[0x80]",
         "Type": "char",
         "Size": "0x80",
         "Offset": "0x28"
       }
     ]
+  },
+  "LocationType": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "LocationProviderServiceInterface": {
     "Super": "Interface",

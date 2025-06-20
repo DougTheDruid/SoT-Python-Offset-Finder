@@ -44,20 +44,42 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x7_OS2IV[0x7]",
+        "Name": "pad0x7_Q0NVG[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x39"
       }
     ]
   },
-  "OnStartCrouchAudioEvent": {
-    "ClassSize": "0x8",
+  "OnEndCrouchEvent": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "CrouchStart",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
+        "Name": "pad0x1_SW1JV[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "OnStartCrouchEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_PLE0C[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CrouchActionStateConstructionInfo": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x48_VRZ98[0x48]",
+        "Type": "char",
+        "Size": "0x48",
         "Offset": "0x0"
       }
     ]
@@ -68,28 +90,6 @@
       {
         "Name": "IsCrouching",
         "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "OnStartCrouchEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_6APWG[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "OnEndCrouchEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_VCRGN[0x1]",
-        "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
       }
@@ -106,13 +106,13 @@
       }
     ]
   },
-  "CrouchActionStateConstructionInfo": {
-    "ClassSize": "0x48",
+  "OnStartCrouchAudioEvent": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x48_GP5AC[0x48]",
-        "Type": "char",
-        "Size": "0x48",
+        "Name": "CrouchStart",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
         "Offset": "0x0"
       }
     ]

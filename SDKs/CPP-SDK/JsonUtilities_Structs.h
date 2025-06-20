@@ -4,11 +4,10 @@
 // https://github.com/DougTheDruid
 
 // Size 0x8
-struct TestFloatObject
+struct TestMessageDateTime
 {
 public:
-	float                                                        TestFloat1;                                        // 0x0(0x4)
-	float                                                        TestFloat2;                                        // 0x4(0x4)
+	struct DateTime                                              DateTime;                                          // 0x0(0x8)
 };
 
 
@@ -16,7 +15,7 @@ public:
 struct TestMessageUInt64
 {
 public:
-	char                                                         pad0x8_I9N52[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_6VBAJ[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -29,26 +28,18 @@ public:
 
 
 // Size 0x8
-struct TestMessageDateTime
+struct TestMessageInt64
 {
 public:
-	struct DateTime                                              DateTime;                                          // 0x0(0x8)
-};
-
-
-// Size 0x1
-struct TestEnumObject
-{
-public:
-	char                                                         TestEnum;                                          // 0x0(0x1)
+	char                                                         pad0x8_RF52M[0x8];                                 // 0x0(0x8)
 };
 
 
 // Size 0x50
-struct TestStringMapSerializationObject
+struct TestUStructMapSerializationObject
 {
 public:
-	char                                                         pad0x50_NYJ7N[0x50];                               // 0x0(0x50)
+	char                                                         pad0x50_TP373[0x50];                               // 0x0(0x50)
 };
 
 
@@ -62,34 +53,19 @@ public:
 
 
 // Size 0x50
-struct TestUStructMapSerializationObject
+struct TestStringMapSerializationObject
 {
 public:
-	char                                                         pad0x50_BXLAW[0x50];                               // 0x0(0x50)
+	char                                                         pad0x50_O9BLV[0x50];                               // 0x0(0x50)
 };
 
 
 // Size 0x8
-struct TestMessageInt64
+struct TestFloatObject
 {
 public:
-	char                                                         pad0x8_YOJAA[0x8];                                 // 0x0(0x8)
-};
-
-
-// Size 0x50
-struct TestInt32MapSerializationObject
-{
-public:
-	char                                                         pad0x50_6DETQ[0x50];                               // 0x0(0x50)
-};
-
-
-// Size 0x18
-struct JsonObjectWrapper
-{
-public:
-	char                                                         pad0x18_ZYZOJ[0x18];                               // 0x0(0x18)
+	float                                                        TestFloat1;                                        // 0x0(0x4)
+	float                                                        TestFloat2;                                        // 0x4(0x4)
 };
 
 
@@ -97,7 +73,23 @@ public:
 struct TestInvalidStringMapSerializationObject
 {
 public:
-	char                                                         pad0x50_Y1ROU[0x50];                               // 0x0(0x50)
+	char                                                         pad0x50_HJTWL[0x50];                               // 0x0(0x50)
+};
+
+
+// Size 0x18
+struct JsonObjectWrapper
+{
+public:
+	char                                                         pad0x18_RZFES[0x18];                               // 0x0(0x18)
+};
+
+
+// Size 0x50
+struct TestInt32MapSerializationObject
+{
+public:
+	char                                                         pad0x50_ZI76F[0x50];                               // 0x0(0x50)
 };
 
 
@@ -106,10 +98,18 @@ struct TestSerializationObject
 {
 public:
 	bool                                                         TestBool;                                          // 0x0(0x1)
-	char                                                         pad0x3_FN6R2[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_BDB76[0x3];                                 // 0x1(0x3)
 	int                                                          TestInt;                                           // 0x4(0x4)
 	struct FString                                               TestString;                                        // 0x8(0x10)
 	struct Guid                                                  TestGuid;                                          // 0x18(0x10)
+};
+
+
+// Size 0x1
+struct TestEnumObject
+{
+public:
+	char                                                         TestEnum;                                          // 0x0(0x1)
 };
 
 

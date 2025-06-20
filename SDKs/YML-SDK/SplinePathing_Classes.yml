@@ -14,7 +14,7 @@ FixedSplinePathingActor:
     Offset: '0x3b0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_DS4DG[0x4]
+  - Name: pad0x4_DWOH8[0x4]
     Offset: '0x3b4'
     Size: '0x4'
     Type: char
@@ -26,7 +26,7 @@ FixedSplinePathingActor:
     Offset: '0x3c0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2f_HZXFC[0x2f]
+  - Name: pad0x2f_NA27I[0x2f]
     Offset: '0x3c1'
     Size: '0x2f'
     Type: char
@@ -36,7 +36,7 @@ FixedSplinePathingActor:
   Super: Actor
 SplinePathingActor:
   Attributes:
-  - Name: pad0x8_LBB18[0x8]
+  - Name: pad0x8_PYLQM[0x8]
     Offset: '0x3a0'
     Size: '0x8'
     Type: char
@@ -44,7 +44,7 @@ SplinePathingActor:
     Offset: '0x3a8'
     Size: '0xa0'
     Type: struct ObjectMessagingDispatcher
-  - Name: pad0x10_7Y7W1[0x10]
+  - Name: pad0x10_W6LTF[0x10]
     Offset: '0x448'
     Size: '0x10'
     Type: char
@@ -72,7 +72,7 @@ SplinePathingActor:
     Offset: '0x474'
     Size: '0x4'
     Type: int
-  - Name: pad0x10_OPKK1[0x10]
+  - Name: pad0x10_88OVR[0x10]
     Offset: '0x478'
     Size: '0x10'
     Type: char

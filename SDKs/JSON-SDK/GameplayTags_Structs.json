@@ -1,26 +1,4 @@
 {
-  "GameplayTagNode": {
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "pad0x78_BW1ZJ[0x78]",
-        "Type": "char",
-        "Size": "0x78",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "GameplayTag": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "TagName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "GameplayTagTableRow": {
     "ClassSize": "0x48",
     "Attributes": [
@@ -38,6 +16,28 @@
       }
     ]
   },
+  "GameplayTag": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "TagName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GameplayTagNode": {
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "pad0x78_X4U7R[0x78]",
+        "Type": "char",
+        "Size": "0x78",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "GameplayTagQuery": {
     "ClassSize": "0x48",
     "Attributes": [
@@ -48,7 +48,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_NNG16[0x4]",
+        "Name": "pad0x4_VGZ47[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -83,7 +83,7 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x8_2WKCW[0x8]",
+        "Name": "pad0x8_XZEAX[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"

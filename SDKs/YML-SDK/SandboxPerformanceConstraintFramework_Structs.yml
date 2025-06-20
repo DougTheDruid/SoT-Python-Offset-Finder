@@ -2,14 +2,14 @@
 # https://github.com/DougTheDruid
 SandboxPerformanceConstraintActivityActivationDeniedTelemetryEvent:
   Attributes:
-  - Name: pad0x30_DX0FW[0x30]
+  - Name: pad0x30_RUR5C[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 SandboxPerformanceConstraintActivityActivationTelemetryEvent:
   Attributes:
-  - Name: pad0x30_BNRW2[0x30]
+  - Name: pad0x30_GQZZ4[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
@@ -36,7 +36,7 @@ SandboxPerformanceConstraintActivityBaseTelemetryEvent:
     Offset: '0x20'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_V0TU6[0x4]
+  - Name: pad0x4_MDKKQ[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -47,7 +47,7 @@ SandboxPerformanceConstraintActivityConsumerData:
     Offset: '0x0'
     Size: '0x20'
     Type: struct SandboxPerformanceConstraintResourceContainer
-  - Name: pad0x10_L3KN3[0x10]
+  - Name: pad0x10_FX4AW[0x10]
     Offset: '0x20'
     Size: '0x10'
     Type: char
@@ -63,7 +63,7 @@ SandboxPerformanceConstraintActivityConsumerData:
     Offset: '0x48'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_GSDKE[0x4]
+  - Name: pad0x4_O22FR[0x4]
     Offset: '0x54'
     Size: '0x4'
     Type: char
@@ -88,7 +88,7 @@ SandboxPerformanceConstraintActivityData:
   ClassSize: '0x10'
 SandboxPerformanceConstraintActivityDeactivationTelemetryEvent:
   Attributes:
-  - Name: pad0x30_XXHZK[0x30]
+  - Name: pad0x30_MFG6K[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
@@ -115,7 +115,7 @@ SandboxPerformanceConstraintActivityInstanceCount:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_4A0I7[0x4]
+  - Name: pad0x4_DN5LX[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -141,7 +141,7 @@ SandboxPerformanceConstraintActivityScore:
     Offset: '0x18'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_TS13A[0x4]
+  - Name: pad0x4_YIS6N[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -156,7 +156,7 @@ SandboxPerformanceConstraintActivityTelemetryData:
     Offset: '0x10'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_4KG1J[0x4]
+  - Name: pad0x4_9AAVK[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -167,7 +167,7 @@ SandboxPerformanceConstraintActivityTelemetryData:
   ClassSize: '0x28'
 SandboxPerformanceConstraintActivityUpdateTelemetryEvent:
   Attributes:
-  - Name: pad0x30_2SG7S[0x30]
+  - Name: pad0x30_E9FVF[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
@@ -175,7 +175,7 @@ SandboxPerformanceConstraintActivityUpdateTelemetryEvent:
     Offset: '0x30'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_UHAKK[0x4]
+  - Name: pad0x4_14J30[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -205,7 +205,7 @@ SandboxPerformanceConstraintInstancedResourceContainer:
   ClassSize: '0x10'
 SandboxPerformanceConstraintNullConsumerTelemetryEvent:
   Attributes:
-  - Name: pad0x30_IQBP8[0x30]
+  - Name: pad0x30_0YB7Z[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
@@ -254,7 +254,7 @@ SandboxPerformanceConstraintSharedResourceTelemetryData:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_ZGQ3A[0x4]
+  - Name: pad0x4_2544L[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char

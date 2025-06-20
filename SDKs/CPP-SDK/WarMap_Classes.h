@@ -10,15 +10,27 @@
 class WarMapVoteInteractionActor: public Actor
 {
 public:
-	char                                                         pad0x10_TQV5H[0x10];                               // 0x3a0(0x10)
+	char                                                         pad0x10_16VGU[0x10];                               // 0x3a0(0x10)
 	float                                                        TooltipUIFadeDuration;                             // 0x3b0(0x4)
 	struct Vector2D                                              TooltipUIScreenSpaceOffsetRatio;                   // 0x3b4(0x8)
-	char                                                         pad0x4_Z0QT5[0x4];                                 // 0x3bc(0x4)
+	char                                                         pad0x4_SJFWO[0x4];                                 // 0x3bc(0x4)
 	class StaticMeshComponent*                                   InvasionActiveMesh;                                // 0x3c0(0x8)
 	class BoxedRpcDispatcherComponent*                           BoxedRpcDispatcherComponent;                       // 0x3c8(0x8)
 	TArray<struct FactionDisplayInfo>                            FactionInfos;                                      // 0x3d0(0x10)
 	TArray<struct FactionRequest>                                FactionInfoPtrs;                                   // 0x3e0(0x10)
-	char                                                         pad0x230_E7MAH[0x230];                             // 0x3f0(0x230)
+	char                                                         pad0x230_PIEM6[0x230];                             // 0x3f0(0x230)
+};
+
+
+// Size 0xa0 (Full Size[0x1e0] - InheritedSize[0x140]
+class WarMapInteractionComponent: public InteractableComponent
+{
+public:
+	char                                                         pad0x8_QEXC6[0x8];                                 // 0x140(0x8)
+	struct FText                                                 OpenMapInteractionText;                            // 0x148(0x38)
+	struct FText                                                 CannotOpenMapInteractionText;                      // 0x180(0x38)
+	class UClass*                                                OpenMapInputId;                                    // 0x1b8(0x8)
+	char                                                         pad0x20_XGZ2K[0x20];                               // 0x1c0(0x20)
 };
 
 
@@ -29,15 +41,7 @@ public:
 	class WarMapVoteConsumerBase*                                Consumer;                                          // 0x30(0x8)
 	class Actor*                                                 OwningActor;                                       // 0x38(0x8)
 	bool                                                         ShowWithHardMode;                                  // 0x40(0x1)
-	char                                                         pad0xef_XOEFL[0xef];                               // 0x41(0xef)
-};
-
-
-// Size 0x10 (Full Size[0x178] - InheritedSize[0x168]
-class WarMapInteractionVoteComponent: public InlineVotingInteractionComponent
-{
-public:
-	char                                                         pad0x10_01YMR[0x10];                               // 0x168(0x10)
+	char                                                         pad0xef_OCZZD[0xef];                               // 0x41(0xef)
 };
 
 
@@ -48,15 +52,11 @@ public:
 };
 
 
-// Size 0xa0 (Full Size[0x1e0] - InheritedSize[0x140]
-class WarMapInteractionComponent: public InteractableComponent
+// Size 0x10 (Full Size[0x178] - InheritedSize[0x168]
+class WarMapInteractionVoteComponent: public InlineVotingInteractionComponent
 {
 public:
-	char                                                         pad0x8_XAWX5[0x8];                                 // 0x140(0x8)
-	struct FText                                                 OpenMapInteractionText;                            // 0x148(0x38)
-	struct FText                                                 CannotOpenMapInteractionText;                      // 0x180(0x38)
-	class UClass*                                                OpenMapInputId;                                    // 0x1b8(0x8)
-	char                                                         pad0x20_4BMA5[0x20];                               // 0x1c0(0x20)
+	char                                                         pad0x10_V9FSG[0x10];                               // 0x168(0x10)
 };
 
 
@@ -67,36 +67,9 @@ public:
 	class WarMapVoteValidatorBase*                               Validator;                                         // 0x30(0x8)
 	class Actor*                                                 OwningActor;                                       // 0x38(0x8)
 	bool                                                         IsHardMode;                                        // 0x40(0x1)
-	char                                                         pad0x67_229AJ[0x67];                               // 0x41(0x67)
+	char                                                         pad0x67_GF8LP[0x67];                               // 0x41(0x67)
 	TArray<class PlayerState*>                                   Votes;                                             // 0xa8(0x10)
-	char                                                         pad0x58_KUM90[0x58];                               // 0xb8(0x58)
-};
-
-
-// Size 0x0 (Full Size[0x130] - InheritedSize[0x130]
-class StartWarMapVoyageVoteValidator: public WarMapVoteValidatorBase
-{
-public:
-};
-
-
-// Size 0x8 (Full Size[0x138] - InheritedSize[0x130]
-class StopWarMapVoyageVoteValidator: public WarMapVoteValidatorBase
-{
-public:
-	bool                                                         ShowWhenInHardModeMatchmaking;                     // 0x130(0x1)
-	char                                                         pad0x7_TZ5HB[0x7];                                 // 0x131(0x7)
-};
-
-
-// Size 0xe0 (Full Size[0x1f0] - InheritedSize[0x110]
-class StopWarMapVoyageVoteConsumer: public WarMapVoteConsumerBase
-{
-public:
-	struct FText                                                 WarMapVotingCastVote;                              // 0x110(0x38)
-	struct FText                                                 WarMapVotingCantVote;                              // 0x148(0x38)
-	struct FText                                                 WarMapVotingRemoveVote;                            // 0x180(0x38)
-	struct FText                                                 WarMapVotingCantRemoveVote;                        // 0x1b8(0x38)
+	char                                                         pad0x58_SRUIC[0x58];                               // 0xb8(0x58)
 };
 
 
@@ -113,6 +86,33 @@ public:
 	struct FText                                                 WarMapVotingCantVoteReasonCrewIsInPVEEncounter;    // 0x260(0x38)
 	struct FText                                                 WarMapVotingCantVoteReasonInTunnelOfTheDamned;     // 0x298(0x38)
 	struct FText                                                 WarMapVotingCantVoteReasonCrewIsActiveInCompetitiveVoyage; // 0x2d0(0x38)
+};
+
+
+// Size 0x0 (Full Size[0x130] - InheritedSize[0x130]
+class StartWarMapVoyageVoteValidator: public WarMapVoteValidatorBase
+{
+public:
+};
+
+
+// Size 0xe0 (Full Size[0x1f0] - InheritedSize[0x110]
+class StopWarMapVoyageVoteConsumer: public WarMapVoteConsumerBase
+{
+public:
+	struct FText                                                 WarMapVotingCastVote;                              // 0x110(0x38)
+	struct FText                                                 WarMapVotingCantVote;                              // 0x148(0x38)
+	struct FText                                                 WarMapVotingRemoveVote;                            // 0x180(0x38)
+	struct FText                                                 WarMapVotingCantRemoveVote;                        // 0x1b8(0x38)
+};
+
+
+// Size 0x8 (Full Size[0x138] - InheritedSize[0x130]
+class StopWarMapVoyageVoteValidator: public WarMapVoteValidatorBase
+{
+public:
+	bool                                                         ShowWhenInHardModeMatchmaking;                     // 0x130(0x1)
+	char                                                         pad0x7_0YCY2[0x7];                                 // 0x131(0x7)
 };
 
 

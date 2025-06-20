@@ -1,24 +1,51 @@
 {
-  "EventAppliedStatusToTargets": {
-    "ClassSize": "0x28",
+  "StatusDescriptor": {
+    "ClassSize": "0x4",
     "Attributes": [
       {
-        "Name": "StatusApplied",
-        "Type": "TArray<class Class*>",
+        "Name": "Intensity",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventStatusSuperSoakerEnded": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_5SBJN[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "StatusActivatedEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Id",
+        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "Targets",
-        "Type": "TArray<class Actor*>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "StatusSource",
-        "Type": "class Actor*",
+        "Name": "StatusName",
+        "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x20"
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "BuffedTargetData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_DZMGF[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
       }
     ]
   },
@@ -63,6 +90,57 @@
       }
     ]
   },
+  "StatusDeactivatedEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Id",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "StatusName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EventAppliedStatusToTargets": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "StatusApplied",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Targets",
+        "Type": "TArray<class Actor*>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "StatusSource",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "EventStatusScreenSpaceParticleEffectEnded": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ParticleSystem",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "EventStatusScreenEffectEnded": {
     "ClassSize": "0xc",
     "Attributes": [
@@ -80,6 +158,50 @@
       }
     ]
   },
+  "EventExitedSurfaceMaterialStatusZone": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_VJ3ER[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventEnteredSurfaceMaterialStatusZone": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_0UMBI[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventStatusScreenSpaceParticleEffectStarted": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ParticleSystem",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventStatusSuperSoakerStarted": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_GK38N[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "FeatureToggledStatusResponseList": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -94,68 +216,6 @@
         "Type": "TArray<class StatusResponseAsset*>",
         "Size": "0x10",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "StatusActivatedEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Id",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "StatusName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "EventStatusMaterialEffectEnded": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "MaterialParamName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CanShowMaterialParam",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "FadeOutAcceleration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "EventStatusSuperSoakerEnded": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_E0BED[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventStatusScreenSpaceParticleEffectStarted": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "ParticleSystem",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x0"
       }
     ]
   },
@@ -194,86 +254,49 @@
       }
     ]
   },
-  "EventStatusScreenSpaceParticleEffectEnded": {
-    "ClassSize": "0x8",
+  "EventStatusMaterialEffectEnded": {
+    "ClassSize": "0x14",
     "Attributes": [
       {
-        "Name": "ParticleSystem",
-        "Type": "class Object*",
+        "Name": "MaterialParamName",
+        "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventEnteredSurfaceMaterialStatusZone": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_SIBXV[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "BuffedTargetData": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_5J2FP[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventStatusSuperSoakerStarted": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_57EJP[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "StatusDeactivatedEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Id",
-        "Type": "struct Guid",
-        "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "StatusName",
+        "Name": "CanShowMaterialParam",
         "Type": "struct FName",
         "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "FadeOutAcceleration",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x10"
       }
     ]
   },
-  "EventExitedSurfaceMaterialStatusZone": {
-    "ClassSize": "0x1",
+  "Status": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x1_VWV0O[0x1]",
-        "Type": "char",
-        "Size": "0x1",
+        "Name": "Type",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "StatusDescriptor": {
-    "ClassSize": "0x4",
-    "Attributes": [
+      },
       {
-        "Name": "Intensity",
-        "Type": "float",
+        "Name": "Descriptor",
+        "Type": "struct StatusDescriptor",
         "Size": "0x4",
-        "Offset": "0x0"
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0xc_AVLZX[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x14"
       }
     ]
   },
@@ -293,7 +316,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_05XFD[0x4]",
+        "Name": "pad0x4_MW722[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
@@ -317,33 +340,10 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x17_X194J[0x17]",
+        "Name": "pad0x17_MK96C[0x17]",
         "Type": "char",
         "Size": "0x17",
         "Offset": "0x39"
-      }
-    ]
-  },
-  "Status": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Type",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Descriptor",
-        "Type": "struct StatusDescriptor",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0xc_XPTX4[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x14"
       }
     ]
   },
@@ -361,29 +361,6 @@
         "Type": "struct Status",
         "Size": "0x20",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "DelayedStatusEffect": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "StatusEffect",
-        "Type": "struct Status",
-        "Size": "0x20",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "InEffectTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "pad0x4_6TP71[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x24"
       }
     ]
   },
@@ -406,6 +383,29 @@
         "Type": "struct Status",
         "Size": "0x20",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "DelayedStatusEffect": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "StatusEffect",
+        "Type": "struct Status",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "InEffectTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_IL8KK[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
       }
     ]
   },

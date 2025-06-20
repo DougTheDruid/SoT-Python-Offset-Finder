@@ -1,4 +1,11 @@
 {
+  "GameServiceMapFunctions": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "ServiceProviderGameState": {
     "Super": "GameState",
     "FullSize": "0x508",
@@ -6,19 +13,12 @@
     "ClassSize": "0x120",
     "Attributes": [
       {
-        "Name": "pad0x120_LYD3W[0x120]",
+        "Name": "pad0x120_OUL28[0x120]",
         "Type": "char",
         "Size": "0x120",
         "Offset": "0x3e8"
       }
     ]
-  },
-  "GameServiceMapFunctions": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "GameServiceProviderInterface": {
     "Super": "Interface",
@@ -27,14 +27,14 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "GameServiceLifecycleInterface": {
+  "GameServiceTickInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "GameServiceTickInterface": {
+  "GameServiceLifecycleInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

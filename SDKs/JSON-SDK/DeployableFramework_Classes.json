@@ -1,30 +1,10 @@
 {
-  "HandoverAmmoInterface": {
+  "ConvertActorToItemInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "HandoverAmmoComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xc8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x8_3XVIB[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "LoadedAmmoClass",
-        "Type": "class ItemInfo*",
-        "Size": "0x8",
-        "Offset": "0xc0"
-      }
-    ]
   },
   "DestroyDeployableConditionalStatTrigger": {
     "Super": "ConditionalStatsTriggerType",
@@ -33,7 +13,7 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ConvertItemToActorInterface": {
+  "HandoverAmmoInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -47,7 +27,27 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ConvertActorToItemInterface": {
+  "HandoverAmmoComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x8_EECZI[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "LoadedAmmoClass",
+        "Type": "class ItemInfo*",
+        "Size": "0x8",
+        "Offset": "0xc0"
+      }
+    ]
+  },
+  "ConvertItemToActorInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

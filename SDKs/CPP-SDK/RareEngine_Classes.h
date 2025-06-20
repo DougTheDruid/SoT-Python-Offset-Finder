@@ -6,10 +6,11 @@
 #include "RareEngine_Structs.h"
 
 
-// Size 0x0 (Full Size[0x498] - InheritedSize[0x498]
-class RareHUD: public HUD
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class AssetReferencer: public DataAsset
 {
 public:
+	TArray<Class>                                                AssetsToReference;                                 // 0x28(0x10)
 };
 
 
@@ -17,15 +18,7 @@ public:
 class RareGameEngine: public GameEngine
 {
 public:
-	char                                                         pad0x58_PKJR3[0x58];                               // 0xa48(0x58)
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class StallDetector: public Object
-{
-public:
-	char                                                         pad0x28_MFS3U[0x28];                               // 0x28(0x28)
+	char                                                         pad0x58_YPWJQ[0x58];                               // 0xa48(0x58)
 };
 
 
@@ -36,11 +29,18 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class AudioHardwareDeviceService: public Object
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class StallDetector: public Object
 {
 public:
-	char                                                         pad0x18_EW7W0[0x18];                               // 0x28(0x18)
+	char                                                         pad0x28_BEXF8[0x28];                               // 0x28(0x28)
+};
+
+
+// Size 0x0 (Full Size[0x498] - InheritedSize[0x498]
+class RareHUD: public HUD
+{
+public:
 };
 
 
@@ -51,19 +51,19 @@ public:
 };
 
 
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class AudioHardwareDeviceService: public Object
+{
+public:
+	char                                                         pad0x18_QVNDX[0x18];                               // 0x28(0x18)
+};
+
+
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class MemoryUsageVisualiserSettings: public Object
 {
 public:
 	TArray<struct MemoryVisualiserCategory>                      VisualiserCategories;                              // 0x28(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class AssetReferencer: public DataAsset
-{
-public:
-	TArray<Class>                                                AssetsToReference;                                 // 0x28(0x10)
 };
 
 

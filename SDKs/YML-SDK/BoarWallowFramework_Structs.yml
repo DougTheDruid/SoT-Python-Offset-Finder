@@ -31,7 +31,7 @@ OnBoarKilled:
     Offset: '0x14'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_6YIFJ[0x3]
+  - Name: pad0x3_1TVR7[0x3]
     Offset: '0x15'
     Size: '0x3'
     Type: char
@@ -42,7 +42,7 @@ OnBoarSpawned:
     Offset: '0x0'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x1fc_NMN54[0x1fc]
+  - Name: pad0x1fc_Z9ZCR[0x1fc]
     Offset: '0xc'
     Size: '0x1fc'
     Type: char
@@ -79,7 +79,7 @@ OnBoarVoyageWallowSpawned:
     Offset: '0x8'
     Size: '0x10'
     Type: struct Guid
-  - Name: pad0x8_Z9B0N[0x8]
+  - Name: pad0x8_6C8H5[0x8]
     Offset: '0x18'
     Size: '0x8'
     Type: char
@@ -108,7 +108,7 @@ OnIncreasingNumberOfKilledBoarsOnIsland:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_1WTBG[0x3]
+  - Name: pad0x3_A5H5U[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -133,7 +133,7 @@ OnIncreasingTotalNumberOfSpawnedBoarsOnIsland:
     Offset: '0x0'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x1f8_HB61C[0x1f8]
+  - Name: pad0x1f8_T0YR8[0x1f8]
     Offset: '0x8'
     Size: '0x1f8'
     Type: char
@@ -154,7 +154,7 @@ OnLootHoleTreasureExhumed:
   ClassSize: '0xc'
 VoyageBoarWallowAndIslandName:
   Attributes:
-  - Name: pad0x10_VDODQ[0x10]
+  - Name: pad0x10_LJ7VA[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char

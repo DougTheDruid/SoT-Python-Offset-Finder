@@ -1,15 +1,4 @@
 {
-  "QuestVariableTradeRouteData": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_KY1RC[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "TradeRouteMapping": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -20,7 +9,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_K0FHL[0x3]",
+        "Name": "pad0x3_KFRY8[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -32,7 +21,7 @@
         "Offset": "0x4"
       },
       {
-        "Name": "pad0x4_R0H4P[0x4]",
+        "Name": "pad0x4_YWNCS[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -55,7 +44,18 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x30_BYJLH[0x30]",
+        "Name": "pad0x30_LCNJZ[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "QuestVariableTradeRouteData": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_IV30I[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x0"

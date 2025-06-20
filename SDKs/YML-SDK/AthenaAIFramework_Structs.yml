@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AIControllerParamsUpdatedEvent:
   Attributes:
-  - Name: pad0x8_PU2IS[0x8]
+  - Name: pad0x8_3SAP1[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char

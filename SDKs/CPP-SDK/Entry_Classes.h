@@ -8,7 +8,7 @@ class Entry_C: public LevelScriptActor
 {
 public:
 	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3a8(0x8)
-	char                                                         pad0x64527450_6137B[0x64527450];                   // 0x3b0(0x64527450)
+	char                                                         pad0x69e874b0_4J2L1[0x69e874b0];                   // 0x3b0(0x69e874b0)
 };
 
 

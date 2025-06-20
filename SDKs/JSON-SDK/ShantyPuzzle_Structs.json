@@ -1,12 +1,46 @@
 {
-  "ShantyPuzzleCompleteEvent": {
+  "ShantyPuzzlePlayerExitInteractionZoneEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Player",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ShantyPuzzlePlayerEnterInteractionZoneEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Player",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ShantyPuzzleSingleInteractionZoneUnlockEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "ParticipatingCrews",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
+        "Name": "Player",
+        "Type": "class Actor*",
+        "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "InteractionZoneIdx",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_V1NS1[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
       }
     ]
   },
@@ -26,10 +60,32 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_FDQUM[0x4]",
+        "Name": "pad0x4_CCV7I[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
+      }
+    ]
+  },
+  "ShantyPuzzleUnlockedCompleteEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_YNF0G[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ShantyPuzzleCompleteEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ParticipatingCrews",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },
@@ -55,7 +111,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_JOARP[0x3]",
+        "Name": "pad0x3_FZ3OT[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
@@ -68,69 +124,13 @@
       }
     ]
   },
-  "ShantyPuzzleSingleInteractionZoneUnlockEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Player",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "InteractionZoneIdx",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x4_CR1XC[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "ShantyPuzzleUnlockedCompleteEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_YL263[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ShantyPuzzlePlayerEnterInteractionZoneEvent": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Player",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "ShantyPuzzleUnlockCanceledEvent": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_TXV52[0x1]",
+        "Name": "pad0x1_OK5YI[0x1]",
         "Type": "char",
         "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ShantyPuzzlePlayerExitInteractionZoneEvent": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Player",
-        "Type": "class Actor*",
-        "Size": "0x8",
         "Offset": "0x0"
       }
     ]

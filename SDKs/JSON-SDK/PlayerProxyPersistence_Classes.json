@@ -1,17 +1,10 @@
 {
-  "PlayerPersistentProxyLimitsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
+  "ProxyPersistenceId": {
+    "Super": "Object",
+    "FullSize": "0x28",
     "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ProxyLimits",
-        "Type": "TArray<struct ProxyLimit>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "PlayerProxyPersistenceComponent": {
     "Super": "ActorComponent",
@@ -26,22 +19,29 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x60_VQGWH[0x60]",
+        "Name": "pad0x60_L217V[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0xc0"
       }
     ]
   },
+  "PlayerPersistentProxyLimitsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ProxyLimits",
+        "Type": "TArray<struct ProxyLimit>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "PlayerPersistentProxyInterface": {
     "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ProxyPersistenceId": {
-    "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",

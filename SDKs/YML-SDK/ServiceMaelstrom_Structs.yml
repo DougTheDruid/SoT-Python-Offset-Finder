@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 MaelstromEventBaseFragment:
   Attributes:
-  - Name: pad0x10_LR24V[0x10]
+  - Name: pad0x10_FJ1UC[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char

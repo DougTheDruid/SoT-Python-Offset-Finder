@@ -6,18 +6,28 @@
 #include "BarrelsOfPlenty_Structs.h"
 
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class BarrelsOfPlentySpawnManagerProviderInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x20 (Full Size[0x3c0] - InheritedSize[0x3a0]
+class BarrelsOfPlentyDebugSpawnLocation: public Actor
+{
+public:
+	TArray<struct BarrelsOfPlentyDebugLocationEntry>             Objects;                                           // 0x3a0(0x10)
+	struct Vector                                                SpawnCentre;                                       // 0x3b0(0xc)
+	float                                                        Radius;                                            // 0x3bc(0x4)
+};
+
+
 // Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
 class SpawnBarrelsOfPlentyStepDesc: public TaleQuestStepDesc
 {
 public:
 	struct QuestVariableVector                                   LocatorVar;                                        // 0x80(0x30)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class BarrelsOfPlentySpawnManagerProviderInterface: public Interface
-{
-public:
 };
 
 
@@ -33,18 +43,8 @@ class BarrelsOfPlentySpawnProxy: public Actor
 {
 public:
 	class Actor*                                                 Ship;                                              // 0x3a0(0x8)
-	char                                                         pad0x18_CTLGR[0x18];                               // 0x3a8(0x18)
+	char                                                         pad0x18_CMN83[0x18];                               // 0x3a8(0x18)
 	class SceneComponent*                                        SceneComponent;                                    // 0x3c0(0x8)
-};
-
-
-// Size 0x20 (Full Size[0x3c0] - InheritedSize[0x3a0]
-class BarrelsOfPlentyDebugSpawnLocation: public Actor
-{
-public:
-	TArray<struct BarrelsOfPlentyDebugLocationEntry>             Objects;                                           // 0x3a0(0x10)
-	struct Vector                                                SpawnCentre;                                       // 0x3b0(0xc)
-	float                                                        Radius;                                            // 0x3bc(0x4)
 };
 
 

@@ -1,761 +1,9 @@
 {
-  "AnimNode_Fabrik": {
-    "ClassSize": "0xd0",
-    "Attributes": [
-      {
-        "Name": "pad0x60_G3263[0x60]",
-        "Type": "char",
-        "Size": "0x60",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "EffectorTransform",
-        "Type": "struct Transform",
-        "Size": "0x30",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "EffectorTransformSpace",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "pad0x3_J6G4T[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x91"
-      },
-      {
-        "Name": "EffectorTransformBone",
-        "Type": "struct BoneReference",
-        "Size": "0xc",
-        "Offset": "0x94"
-      },
-      {
-        "Name": "EffectorRotationSource",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xa0"
-      },
-      {
-        "Name": "pad0x3_7BVFC[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0xa1"
-      },
-      {
-        "Name": "TipBone",
-        "Type": "struct BoneReference",
-        "Size": "0xc",
-        "Offset": "0xa4"
-      },
-      {
-        "Name": "RootBone",
-        "Type": "struct BoneReference",
-        "Size": "0xc",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "Precision",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xbc"
-      },
-      {
-        "Name": "MaxIterations",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "bEnableDebugDraw",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc4"
-      },
-      {
-        "Name": "pad0xb_P2FTB[0xb]",
-        "Type": "char",
-        "Size": "0xb",
-        "Offset": "0xc5"
-      }
-    ]
-  },
-  "AnimNode_CopyPoseFromMesh": {
-    "ClassSize": "0xc0",
-    "Attributes": [
-      {
-        "Name": "pad0x30_23N0A[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SourceMeshComponent",
-        "Type": "class SkeletalMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "bUseAttachedParent",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x87_1UD10[0x87]",
-        "Type": "char",
-        "Size": "0x87",
-        "Offset": "0x39"
-      }
-    ]
-  },
-  "AnimNode_BoneDrivenController": {
-    "ClassSize": "0xa0",
-    "Attributes": [
-      {
-        "Name": "pad0x58_58PXL[0x58]",
-        "Type": "char",
-        "Size": "0x58",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SourceBone",
-        "Type": "struct BoneReference",
-        "Size": "0xc",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "SourceComponent",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x64"
-      },
-      {
-        "Name": "pad0x3_G97B2[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x65"
-      },
-      {
-        "Name": "DrivingCurve",
-        "Type": "class CurveFloat*",
-        "Size": "0x8",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "Multiplier",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "bUseRange",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x74"
-      },
-      {
-        "Name": "pad0x3_3YYN7[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x75"
-      },
-      {
-        "Name": "RangeMin",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "RangeMax",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x7c"
-      },
-      {
-        "Name": "RemappedMin",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "RemappedMax",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x84"
-      },
-      {
-        "Name": "TargetBone",
-        "Type": "struct BoneReference",
-        "Size": "0xc",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "TargetComponent",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x94"
-      },
-      {
-        "Name": "pad0x3_U2M7J[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x95"
-      },
-      {
-        "Name": "bAffectTargetTranslationX",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "bAffectTargetTranslationY",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "bAffectTargetTranslationZ",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "bAffectTargetRotationX",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "bAffectTargetRotationY",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "bAffectTargetRotationZ",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "bAffectTargetScaleX",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "bAffectTargetScaleY",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "bAffectTargetScaleZ",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x99"
-      },
-      {
-        "Name": "pad0x2_GK8F4[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x9a"
-      },
-      {
-        "Name": "ModificationMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x9c"
-      },
-      {
-        "Name": "pad0x3_Z89WT[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x9d"
-      }
-    ]
-  },
-  "AnimNode_ObserveBone": {
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "pad0x58_7HJWV[0x58]",
-        "Type": "char",
-        "Size": "0x58",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "BoneToObserve",
-        "Type": "struct BoneReference",
-        "Size": "0xc",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "DisplaySpace",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x64"
-      },
-      {
-        "Name": "bRelativeToRefPose",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x65"
-      },
-      {
-        "Name": "pad0x2_BMEAH[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x66"
-      },
-      {
-        "Name": "Translation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "Rotation",
-        "Type": "struct Rotator",
-        "Size": "0xc",
-        "Offset": "0x74"
-      },
-      {
-        "Name": "Scale",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "pad0x4_PMVKS[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x8c"
-      }
-    ]
-  },
-  "AnimNode_TwoBoneIK": {
-    "ClassSize": "0xa0",
-    "Attributes": [
-      {
-        "Name": "pad0x58_AYCAM[0x58]",
-        "Type": "char",
-        "Size": "0x58",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "IKBone",
-        "Type": "struct BoneReference",
-        "Size": "0xc",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "EffectorLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x64"
-      },
-      {
-        "Name": "JointTargetLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "StretchLimits",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x7c"
-      },
-      {
-        "Name": "EffectorSpaceBoneName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x84"
-      },
-      {
-        "Name": "bTakeRotationFromEffectorSpace",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x8c"
-      },
-      {
-        "Name": "bMaintainEffectorRelRot",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x8c"
-      },
-      {
-        "Name": "bAllowStretching",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x8c"
-      },
-      {
-        "Name": "pad0x3_U9S0R[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x8d"
-      },
-      {
-        "Name": "EffectorLocationSpace",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "JointTargetLocationSpace",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x91"
-      },
-      {
-        "Name": "pad0x2_LODEO[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x92"
-      },
-      {
-        "Name": "JointTargetSpaceBoneName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x94"
-      },
-      {
-        "Name": "pad0x4_VQ3SZ[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x9c"
-      }
-    ]
-  },
-  "AnimNode_LookAt": {
-    "ClassSize": "0xc0",
-    "Attributes": [
-      {
-        "Name": "pad0x58_VW3F2[0x58]",
-        "Type": "char",
-        "Size": "0x58",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "BoneToModify",
-        "Type": "struct BoneReference",
-        "Size": "0xc",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "LookAtBone",
-        "Type": "struct BoneReference",
-        "Size": "0xc",
-        "Offset": "0x64"
-      },
-      {
-        "Name": "LookAtLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "LookAtAxis",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x7c"
-      },
-      {
-        "Name": "bUseLookUpAxis",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x7d"
-      },
-      {
-        "Name": "LookUpAxis",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x7e"
-      },
-      {
-        "Name": "pad0x1_WGKX5[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x7f"
-      },
-      {
-        "Name": "LookAtClamp",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "InterpolationType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x84"
-      },
-      {
-        "Name": "pad0x3_BPPED[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x85"
-      },
-      {
-        "Name": "InterpolationTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "InterpolationTriggerThreashold",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8c"
-      },
-      {
-        "Name": "bEnableDebug",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "pad0x2f_T40K5[0x2f]",
-        "Type": "char",
-        "Size": "0x2f",
-        "Offset": "0x91"
-      }
-    ]
-  },
-  "AnimNode_Trail": {
-    "ClassSize": "0xe0",
-    "Attributes": [
-      {
-        "Name": "pad0x58_RPXU7[0x58]",
-        "Type": "char",
-        "Size": "0x58",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TrailBone",
-        "Type": "struct BoneReference",
-        "Size": "0xc",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "ChainLength",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x64"
-      },
-      {
-        "Name": "ChainBoneAxis",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "bInvertChainBoneAxis",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x69"
-      },
-      {
-        "Name": "bLimitStretch",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x6a"
-      },
-      {
-        "Name": "pad0x1_3NEG8[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x6b"
-      },
-      {
-        "Name": "TrailRelaxation",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x6c"
-      },
-      {
-        "Name": "StretchLimit",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "FakeVelocity",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x74"
-      },
-      {
-        "Name": "bActorSpaceFakeVel",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "pad0x5f_CUW4U[0x5f]",
-        "Type": "char",
-        "Size": "0x5f",
-        "Offset": "0x81"
-      }
-    ]
-  },
-  "AnimNode_CopyBone": {
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "pad0x58_0590Y[0x58]",
-        "Type": "char",
-        "Size": "0x58",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SourceBone",
-        "Type": "struct BoneReference",
-        "Size": "0xc",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "TargetBone",
-        "Type": "struct BoneReference",
-        "Size": "0xc",
-        "Offset": "0x64"
-      },
-      {
-        "Name": "bCopyTranslation",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "bCopyRotation",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x71"
-      },
-      {
-        "Name": "bCopyScale",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x72"
-      },
-      {
-        "Name": "pad0x5_YMABU[0x5]",
-        "Type": "char",
-        "Size": "0x5",
-        "Offset": "0x73"
-      }
-    ]
-  },
-  "AnimNode_HandIKRetargeting": {
-    "ClassSize": "0xa0",
-    "Attributes": [
-      {
-        "Name": "pad0x58_99WEJ[0x58]",
-        "Type": "char",
-        "Size": "0x58",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "RightHandFK",
-        "Type": "struct BoneReference",
-        "Size": "0xc",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "LeftHandFK",
-        "Type": "struct BoneReference",
-        "Size": "0xc",
-        "Offset": "0x64"
-      },
-      {
-        "Name": "RightHandIK",
-        "Type": "struct BoneReference",
-        "Size": "0xc",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "LeftHandIK",
-        "Type": "struct BoneReference",
-        "Size": "0xc",
-        "Offset": "0x7c"
-      },
-      {
-        "Name": "IKBonesToMove",
-        "Type": "TArray<struct BoneReference>",
-        "Size": "0x10",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "HandFKWeight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "pad0x4_L412Z[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x9c"
-      }
-    ]
-  },
-  "AnimNode_RotationMultiplier": {
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "pad0x58_7525J[0x58]",
-        "Type": "char",
-        "Size": "0x58",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TargetBone",
-        "Type": "struct BoneReference",
-        "Size": "0xc",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "SourceBone",
-        "Type": "struct BoneReference",
-        "Size": "0xc",
-        "Offset": "0x64"
-      },
-      {
-        "Name": "Multiplier",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "RotationAxisToRefer",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x74"
-      },
-      {
-        "Name": "bIsAdditive",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x75"
-      },
-      {
-        "Name": "pad0x2_XOW65[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x76"
-      }
-    ]
-  },
   "AnimNode_ModifyBone": {
     "ClassSize": "0x90",
     "Attributes": [
       {
-        "Name": "pad0x58_FSS6N[0x58]",
+        "Name": "pad0x58_YDH2O[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0x0"
@@ -821,10 +69,271 @@
         "Offset": "0x8d"
       },
       {
-        "Name": "pad0x2_4D3GS[0x2]",
+        "Name": "pad0x2_B4SNY[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x8e"
+      }
+    ]
+  },
+  "AnimNode_CopyBone": {
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "pad0x58_LJ12I[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SourceBone",
+        "Type": "struct BoneReference",
+        "Size": "0xc",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "TargetBone",
+        "Type": "struct BoneReference",
+        "Size": "0xc",
+        "Offset": "0x64"
+      },
+      {
+        "Name": "bCopyTranslation",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "bCopyRotation",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x71"
+      },
+      {
+        "Name": "bCopyScale",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x72"
+      },
+      {
+        "Name": "pad0x5_NAZJA[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0x73"
+      }
+    ]
+  },
+  "AnimNode_RotationMultiplier": {
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "pad0x58_DZCWX[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TargetBone",
+        "Type": "struct BoneReference",
+        "Size": "0xc",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "SourceBone",
+        "Type": "struct BoneReference",
+        "Size": "0xc",
+        "Offset": "0x64"
+      },
+      {
+        "Name": "Multiplier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "RotationAxisToRefer",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x74"
+      },
+      {
+        "Name": "bIsAdditive",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x75"
+      },
+      {
+        "Name": "pad0x2_AQWUC[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x76"
+      }
+    ]
+  },
+  "AnimNode_BoneDrivenController": {
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Name": "pad0x58_4UQ4V[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SourceBone",
+        "Type": "struct BoneReference",
+        "Size": "0xc",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "SourceComponent",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x64"
+      },
+      {
+        "Name": "pad0x3_1WDEL[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x65"
+      },
+      {
+        "Name": "DrivingCurve",
+        "Type": "class CurveFloat*",
+        "Size": "0x8",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "Multiplier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "bUseRange",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x74"
+      },
+      {
+        "Name": "pad0x3_IHQUJ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x75"
+      },
+      {
+        "Name": "RangeMin",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "RangeMax",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x7c"
+      },
+      {
+        "Name": "RemappedMin",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "RemappedMax",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x84"
+      },
+      {
+        "Name": "TargetBone",
+        "Type": "struct BoneReference",
+        "Size": "0xc",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "TargetComponent",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x94"
+      },
+      {
+        "Name": "pad0x3_69FI7[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x95"
+      },
+      {
+        "Name": "bAffectTargetTranslationX",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "bAffectTargetTranslationY",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "bAffectTargetTranslationZ",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "bAffectTargetRotationX",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "bAffectTargetRotationY",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "bAffectTargetRotationZ",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "bAffectTargetScaleX",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "bAffectTargetScaleY",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "bAffectTargetScaleZ",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x99"
+      },
+      {
+        "Name": "pad0x2_6B5IB[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x9a"
+      },
+      {
+        "Name": "ModificationMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x9c"
+      },
+      {
+        "Name": "pad0x3_7H2B1[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x9d"
       }
     ]
   },
@@ -832,7 +341,7 @@
     "ClassSize": "0xa8",
     "Attributes": [
       {
-        "Name": "pad0x58_VDT7M[0x58]",
+        "Name": "pad0x58_8PBWX[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0x0"
@@ -850,7 +359,7 @@
         "Offset": "0x64"
       },
       {
-        "Name": "pad0x3_QIZQZ[0x3]",
+        "Name": "pad0x3_LSQ17[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x65"
@@ -922,10 +431,69 @@
         "Offset": "0x7e"
       },
       {
-        "Name": "pad0x29_QMDF0[0x29]",
+        "Name": "pad0x29_C3SA8[0x29]",
         "Type": "char",
         "Size": "0x29",
         "Offset": "0x7f"
+      }
+    ]
+  },
+  "AnimNode_ObserveBone": {
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "pad0x58_4HQ49[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BoneToObserve",
+        "Type": "struct BoneReference",
+        "Size": "0xc",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "DisplaySpace",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x64"
+      },
+      {
+        "Name": "bRelativeToRefPose",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x65"
+      },
+      {
+        "Name": "pad0x2_AV89Y[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x66"
+      },
+      {
+        "Name": "Translation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "Rotation",
+        "Type": "struct Rotator",
+        "Size": "0xc",
+        "Offset": "0x74"
+      },
+      {
+        "Name": "Scale",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x4_QK5ZP[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x8c"
       }
     ]
   },
@@ -933,7 +501,7 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "pad0x30_WLKC4[0x30]",
+        "Name": "pad0x30_PVOOQ[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x0"
@@ -957,10 +525,442 @@
         "Offset": "0x4c"
       },
       {
-        "Name": "pad0x4_6EES4[0x4]",
+        "Name": "pad0x4_0T1Y1[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x54"
+      }
+    ]
+  },
+  "AnimNode_HandIKRetargeting": {
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Name": "pad0x58_RXQ48[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RightHandFK",
+        "Type": "struct BoneReference",
+        "Size": "0xc",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "LeftHandFK",
+        "Type": "struct BoneReference",
+        "Size": "0xc",
+        "Offset": "0x64"
+      },
+      {
+        "Name": "RightHandIK",
+        "Type": "struct BoneReference",
+        "Size": "0xc",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "LeftHandIK",
+        "Type": "struct BoneReference",
+        "Size": "0xc",
+        "Offset": "0x7c"
+      },
+      {
+        "Name": "IKBonesToMove",
+        "Type": "TArray<struct BoneReference>",
+        "Size": "0x10",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "HandFKWeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x4_FI03Y[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x9c"
+      }
+    ]
+  },
+  "AnimNode_Trail": {
+    "ClassSize": "0xe0",
+    "Attributes": [
+      {
+        "Name": "pad0x58_N5VOA[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TrailBone",
+        "Type": "struct BoneReference",
+        "Size": "0xc",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "ChainLength",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x64"
+      },
+      {
+        "Name": "ChainBoneAxis",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "bInvertChainBoneAxis",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x69"
+      },
+      {
+        "Name": "bLimitStretch",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x6a"
+      },
+      {
+        "Name": "pad0x1_13NPK[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x6b"
+      },
+      {
+        "Name": "TrailRelaxation",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x6c"
+      },
+      {
+        "Name": "StretchLimit",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "FakeVelocity",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x74"
+      },
+      {
+        "Name": "bActorSpaceFakeVel",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x5f_B75P0[0x5f]",
+        "Type": "char",
+        "Size": "0x5f",
+        "Offset": "0x81"
+      }
+    ]
+  },
+  "AnimNode_CopyPoseFromMesh": {
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "pad0x30_155GE[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SourceMeshComponent",
+        "Type": "class SkeletalMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "bUseAttachedParent",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x87_F8GLF[0x87]",
+        "Type": "char",
+        "Size": "0x87",
+        "Offset": "0x39"
+      }
+    ]
+  },
+  "AnimNode_LookAt": {
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "pad0x58_7JZLF[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BoneToModify",
+        "Type": "struct BoneReference",
+        "Size": "0xc",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "LookAtBone",
+        "Type": "struct BoneReference",
+        "Size": "0xc",
+        "Offset": "0x64"
+      },
+      {
+        "Name": "LookAtLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "LookAtAxis",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x7c"
+      },
+      {
+        "Name": "bUseLookUpAxis",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x7d"
+      },
+      {
+        "Name": "LookUpAxis",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x7e"
+      },
+      {
+        "Name": "pad0x1_IQGUH[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x7f"
+      },
+      {
+        "Name": "LookAtClamp",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "InterpolationType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x84"
+      },
+      {
+        "Name": "pad0x3_2AMC1[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x85"
+      },
+      {
+        "Name": "InterpolationTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "InterpolationTriggerThreashold",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8c"
+      },
+      {
+        "Name": "bEnableDebug",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "pad0x2f_AKE1B[0x2f]",
+        "Type": "char",
+        "Size": "0x2f",
+        "Offset": "0x91"
+      }
+    ]
+  },
+  "AnimNode_Fabrik": {
+    "ClassSize": "0xd0",
+    "Attributes": [
+      {
+        "Name": "pad0x60_3GGAC[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "EffectorTransform",
+        "Type": "struct Transform",
+        "Size": "0x30",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "EffectorTransformSpace",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "pad0x3_EE7LV[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x91"
+      },
+      {
+        "Name": "EffectorTransformBone",
+        "Type": "struct BoneReference",
+        "Size": "0xc",
+        "Offset": "0x94"
+      },
+      {
+        "Name": "EffectorRotationSource",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "pad0x3_4O9BX[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xa1"
+      },
+      {
+        "Name": "TipBone",
+        "Type": "struct BoneReference",
+        "Size": "0xc",
+        "Offset": "0xa4"
+      },
+      {
+        "Name": "RootBone",
+        "Type": "struct BoneReference",
+        "Size": "0xc",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "Precision",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xbc"
+      },
+      {
+        "Name": "MaxIterations",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "bEnableDebugDraw",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc4"
+      },
+      {
+        "Name": "pad0xb_W2HDJ[0xb]",
+        "Type": "char",
+        "Size": "0xb",
+        "Offset": "0xc5"
+      }
+    ]
+  },
+  "AnimNode_TwoBoneIK": {
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Name": "pad0x58_P79SI[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "IKBone",
+        "Type": "struct BoneReference",
+        "Size": "0xc",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "EffectorLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x64"
+      },
+      {
+        "Name": "JointTargetLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "StretchLimits",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x7c"
+      },
+      {
+        "Name": "EffectorSpaceBoneName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x84"
+      },
+      {
+        "Name": "bTakeRotationFromEffectorSpace",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x8c"
+      },
+      {
+        "Name": "bMaintainEffectorRelRot",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x8c"
+      },
+      {
+        "Name": "bAllowStretching",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x8c"
+      },
+      {
+        "Name": "pad0x3_6GAGQ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x8d"
+      },
+      {
+        "Name": "EffectorLocationSpace",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "JointTargetLocationSpace",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x91"
+      },
+      {
+        "Name": "pad0x2_NYA6M[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x92"
+      },
+      {
+        "Name": "JointTargetSpaceBoneName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x94"
+      },
+      {
+        "Name": "pad0x4_SATCQ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x9c"
       }
     ]
   },

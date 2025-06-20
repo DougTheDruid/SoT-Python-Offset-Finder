@@ -6,24 +6,16 @@
 #include "GameEventsOnDemandFramework_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GameEventsOnDemandAvailabilityServiceInterface: public Interface
+// Size 0x158 (Full Size[0x180] - InheritedSize[0x28]
+class GameEventOnDemandAvailabilityHandler: public Object
 {
 public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GameEventsOnDemandInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GameEventsOnDemandLoserTunnelServiceInterface: public Interface
-{
-public:
+	class GameEventAvailabilityParamsDataAsset*                  AvailabilityParamsAsset;                           // 0x28(0x8)
+	class GameEventOnDemandAvailabilityStateTracker*             AvailabilityStateTracker;                          // 0x30(0x8)
+	class UClass*                                                GameEventType;                                     // 0x38(0x8)
+	char                                                         pad0x60_2ABDM[0x60];                               // 0x40(0x60)
+	char                                                         CompletedState;                                    // 0xa0(0x1)
+	char                                                         pad0xdf_XX18Y[0xdf];                               // 0xa1(0xdf)
 };
 
 
@@ -37,11 +29,11 @@ public:
 	int                                                          ProgressStateLimit;                                // 0x7c(0x4)
 	bool                                                         ShouldApplyShipTypeLimit;                          // 0x80(0x1)
 	bool                                                         ShouldManageEmergentCrewsOnDeactivate;             // 0x81(0x1)
-	char                                                         pad0x2_5SXDU[0x2];                                 // 0x82(0x2)
+	char                                                         pad0x2_PU4ZL[0x2];                                 // 0x82(0x2)
 	float                                                        EmergentCrewLeftRegionCooldown;                    // 0x84(0x4)
 	bool                                                         SendCrewToLoserTunnelOnShipSinking;                // 0x88(0x1)
 	bool                                                         ShouldCompletedBannersPlayAudio;                   // 0x89(0x1)
-	char                                                         pad0x2_01PEU[0x2];                                 // 0x8a(0x2)
+	char                                                         pad0x2_TYXFV[0x2];                                 // 0x8a(0x2)
 	float                                                        ActiveEventExclusionRadiusFromIslandDistanceRadiusModifier; // 0x8c(0x4)
 };
 
@@ -53,30 +45,17 @@ public:
 };
 
 
-// Size 0x90 (Full Size[0x128] - InheritedSize[0x98]
-class WaitForGameEventOnDemandToCompleteStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x90_XU6HW[0x90];                               // 0x98(0x90)
-};
-
-
-// Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
-class WaitForGameEventOnDemandToCompleteStepDesc: public TaleQuestStepDesc
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class GameEventsOnDemandAvailabilityServiceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x138 (Full Size[0x160] - InheritedSize[0x28]
-class GameEventOnDemandAvailabilityStateTracker: public Object
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class GameEventsOnDemandLoserTunnelServiceInterface: public Interface
 {
 public:
-	char                                                         pad0x88_HGVSA[0x88];                               // 0x28(0x88)
-	class UClass*                                                ShipTypeLimit;                                     // 0xb0(0x8)
-	TArray<struct Guid>                                          OnDemandParticipatingCrewIds;                      // 0xb8(0x10)
-	TArray<struct Guid>                                          EmergentlyParticipatingCrewIds;                    // 0xc8(0x10)
-	char                                                         pad0x88_C7GPP[0x88];                               // 0xd8(0x88)
 };
 
 
@@ -87,16 +66,37 @@ public:
 };
 
 
-// Size 0x158 (Full Size[0x180] - InheritedSize[0x28]
-class GameEventOnDemandAvailabilityHandler: public Object
+// Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
+class WaitForGameEventOnDemandToCompleteStepDesc: public TaleQuestStepDesc
 {
 public:
-	class GameEventAvailabilityParamsDataAsset*                  AvailabilityParamsAsset;                           // 0x28(0x8)
-	class GameEventOnDemandAvailabilityStateTracker*             AvailabilityStateTracker;                          // 0x30(0x8)
-	class UClass*                                                GameEventType;                                     // 0x38(0x8)
-	char                                                         pad0x60_SN95X[0x60];                               // 0x40(0x60)
-	char                                                         CompletedState;                                    // 0xa0(0x1)
-	char                                                         pad0xdf_85GZ1[0xdf];                               // 0xa1(0xdf)
+};
+
+
+// Size 0x90 (Full Size[0x128] - InheritedSize[0x98]
+class WaitForGameEventOnDemandToCompleteStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x90_OU9WK[0x90];                               // 0x98(0x90)
+};
+
+
+// Size 0x138 (Full Size[0x160] - InheritedSize[0x28]
+class GameEventOnDemandAvailabilityStateTracker: public Object
+{
+public:
+	char                                                         pad0x88_LIPC3[0x88];                               // 0x28(0x88)
+	class UClass*                                                ShipTypeLimit;                                     // 0xb0(0x8)
+	TArray<struct Guid>                                          OnDemandParticipatingCrewIds;                      // 0xb8(0x10)
+	TArray<struct Guid>                                          EmergentlyParticipatingCrewIds;                    // 0xc8(0x10)
+	char                                                         pad0x88_JY1B4[0x88];                               // 0xd8(0x88)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class GameEventsOnDemandInterface: public Interface
+{
+public:
 };
 
 

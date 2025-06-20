@@ -7,7 +7,7 @@
 struct ExistingNPCToPhasedNPC
 {
 public:
-	char                                                         pad0x40_XBN95[0x40];                               // 0x0(0x40)
+	char                                                         pad0x40_6NV6J[0x40];                               // 0x0(0x40)
 };
 
 
@@ -17,7 +17,7 @@ struct TextEntryWithLayout
 public:
 	struct FText                                                 TextEntry;                                         // 0x0(0x38)
 	struct TreasureMapWidgetText                                 TextLayout;                                        // 0x38(0x3c)
-	char                                                         pad0x4_8E9YX[0x4];                                 // 0x74(0x4)
+	char                                                         pad0x4_45YRL[0x4];                                 // 0x74(0x4)
 };
 
 
@@ -26,16 +26,7 @@ struct ClueDestinationChoice
 {
 public:
 	class ClueDestinationDescriptor*                             Destination;                                       // 0x0(0x8)
-	char                                                         pad0x8_RF4P5[0x8];                                 // 0x8(0x8)
-};
-
-
-// Size 0x28
-struct ClueDestinationToTextIndex
-{
-public:
-	class UClass*                                                DestinationType;                                   // 0x0(0x8)
-	char                                                         pad0x20_ZOVTC[0x20];                               // 0x8(0x20)
+	char                                                         pad0x8_GE4K0[0x8];                                 // 0x8(0x8)
 };
 
 
@@ -48,13 +39,22 @@ public:
 };
 
 
+// Size 0x28
+struct ClueDestinationToTextIndex
+{
+public:
+	class UClass*                                                DestinationType;                                   // 0x0(0x8)
+	char                                                         pad0x20_QVH40[0x20];                               // 0x8(0x20)
+};
+
+
 // Size 0x18
 struct MapRadialIconData
 {
 public:
 	struct StringAssetReference                                  AssetReference;                                    // 0x0(0x10)
 	float                                                        Rotation;                                          // 0x10(0x4)
-	char                                                         pad0x4_JF5NJ[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_OJZGK[0x4];                                 // 0x14(0x4)
 };
 
 

@@ -3,8 +3,8 @@
 ControlPointMeshComponent:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x620'
-  InheritedSize: '0x620'
+  FullSize: '0x600'
+  InheritedSize: '0x600'
   Super: StaticMeshComponent
 Landscape:
   Attributes: []
@@ -15,140 +15,140 @@ Landscape:
 LandscapeComponent:
   Attributes:
   - Name: SectionBaseX
-    Offset: '0x5b8'
+    Offset: '0x598'
     Size: '0x4'
     Type: int
   - Name: SectionBaseY
-    Offset: '0x5bc'
+    Offset: '0x59c'
     Size: '0x4'
     Type: int
   - Name: ComponentSizeQuads
-    Offset: '0x5c0'
+    Offset: '0x5a0'
     Size: '0x4'
     Type: int
   - Name: SubsectionSizeQuads
-    Offset: '0x5c4'
+    Offset: '0x5a4'
     Size: '0x4'
     Type: int
   - Name: NumSubsections
-    Offset: '0x5c8'
+    Offset: '0x5a8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_DAWQZ[0x4]
-    Offset: '0x5cc'
+  - Name: pad0x4_JULFM[0x4]
+    Offset: '0x5ac'
     Size: '0x4'
     Type: char
   - Name: OverrideMaterial
-    Offset: '0x5d0'
+    Offset: '0x5b0'
     Size: '0x8'
     Type: class MaterialInterface*
   - Name: OverrideHoleMaterial
-    Offset: '0x5d8'
+    Offset: '0x5b8'
     Size: '0x8'
     Type: class MaterialInterface*
   - Name: MaterialInstance
-    Offset: '0x5e0'
+    Offset: '0x5c0'
     Size: '0x8'
     Type: class MaterialInstanceConstant*
   - Name: WeightmapLayerAllocations
-    Offset: '0x5e8'
+    Offset: '0x5c8'
     Size: '0x10'
     Type: TArray<struct WeightmapLayerAllocationInfo>
   - Name: WeightmapTextures
-    Offset: '0x5f8'
+    Offset: '0x5d8'
     Size: '0x10'
     Type: TArray<class Texture2D*>
   - Name: XYOffsetmapTexture
-    Offset: '0x608'
+    Offset: '0x5e8'
     Size: '0x8'
     Type: class Texture2D*
   - Name: WeightmapScaleBias
-    Offset: '0x610'
+    Offset: '0x5f0'
     Size: '0x10'
     Type: struct Vector4
   - Name: WeightmapSubsectionOffset
-    Offset: '0x620'
+    Offset: '0x600'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_UAXTY[0xc]
-    Offset: '0x624'
+  - Name: pad0xc_KL9ND[0xc]
+    Offset: '0x604'
     Size: '0xc'
     Type: char
   - Name: HeightmapScaleBias
-    Offset: '0x630'
+    Offset: '0x610'
     Size: '0x10'
     Type: struct Vector4
   - Name: HeightmapTexture
-    Offset: '0x640'
+    Offset: '0x620'
     Size: '0x8'
     Type: class Texture2D*
   - Name: CachedLocalBox
-    Offset: '0x648'
+    Offset: '0x628'
     Size: '0x1c'
     Type: struct Box
   - Name: IrrelevantLights
-    Offset: '0x680'
+    Offset: '0x660'
     Size: '0x10'
     Type: TArray<struct Guid>
-  - Name: pad0x10_GYYE6[0x10]
-    Offset: '0x690'
+  - Name: pad0x10_BGAO7[0x10]
+    Offset: '0x670'
     Size: '0x10'
     Type: char
   - Name: CollisionMipLevel
-    Offset: '0x6a0'
+    Offset: '0x680'
     Size: '0x4'
     Type: int
   - Name: StaticLightingResolution
-    Offset: '0x6a4'
+    Offset: '0x684'
     Size: '0x4'
     Type: float
   - Name: ForcedLOD
-    Offset: '0x6a8'
+    Offset: '0x688'
     Size: '0x4'
     Type: int
   - Name: LODBias
-    Offset: '0x6ac'
+    Offset: '0x68c'
     Size: '0x4'
     Type: int
   - Name: StateId
-    Offset: '0x6b0'
+    Offset: '0x690'
     Size: '0x10'
     Type: struct Guid
   - Name: BakedTextureMaterialGuid
-    Offset: '0x6c0'
+    Offset: '0x6a0'
     Size: '0x10'
     Type: struct Guid
   - Name: GIBakedBaseColorTexture
-    Offset: '0x6d0'
+    Offset: '0x6b0'
     Size: '0x8'
     Type: class Texture2D*
   - Name: MobileBlendableLayerMask
-    Offset: '0x6d8'
+    Offset: '0x6b8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_5QU3I[0x7]
-    Offset: '0x6d9'
+  - Name: pad0x7_YBK7T[0x7]
+    Offset: '0x6b9'
     Size: '0x7'
     Type: char
   - Name: MobileMaterialInterface
-    Offset: '0x6e0'
+    Offset: '0x6c0'
     Size: '0x8'
     Type: class MaterialInterface*
   - Name: MobileWeightNormalmapTexture
-    Offset: '0x6e8'
+    Offset: '0x6c8'
     Size: '0x8'
     Type: class Texture2D*
-  - Name: pad0x30_R1LY6[0x30]
-    Offset: '0x6f0'
+  - Name: pad0x30_NGJTK[0x30]
+    Offset: '0x6d0'
     Size: '0x30'
     Type: char
   ClassSize: '0x160'
-  FullSize: '0x720'
-  InheritedSize: '0x5c0'
+  FullSize: '0x700'
+  InheritedSize: '0x5a0'
   Super: PrimitiveComponent
 LandscapeGizmoActiveActor:
   Attributes:
-  - Name: pad0x50_FMRX0[0x50]
+  - Name: pad0x50_5J4IW[0x50]
     Offset: '0x3a0'
     Size: '0x50'
     Type: char
@@ -165,8 +165,8 @@ LandscapeGizmoActor:
 LandscapeGizmoRenderComponent:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x5c0'
-  InheritedSize: '0x5c0'
+  FullSize: '0x5a0'
+  InheritedSize: '0x5a0'
   Super: PrimitiveComponent
 LandscapeGrassType:
   Attributes:
@@ -202,7 +202,7 @@ LandscapeGrassType:
     Offset: '0x51'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_MMGK2[0x6]
+  - Name: pad0x6_Z5K9B[0x6]
     Offset: '0x52'
     Size: '0x6'
     Type: char
@@ -213,52 +213,52 @@ LandscapeGrassType:
 LandscapeHeightfieldCollisionComponent:
   Attributes:
   - Name: ComponentLayerInfos
-    Offset: '0x5b8'
+    Offset: '0x598'
     Size: '0x10'
     Type: TArray<class LandscapeLayerInfoObject*>
   - Name: SectionBaseX
-    Offset: '0x5c8'
+    Offset: '0x5a8'
     Size: '0x4'
     Type: int
   - Name: SectionBaseY
-    Offset: '0x5cc'
+    Offset: '0x5ac'
     Size: '0x4'
     Type: int
   - Name: CollisionSizeQuads
-    Offset: '0x5d0'
+    Offset: '0x5b0'
     Size: '0x4'
     Type: int
   - Name: CollisionScale
-    Offset: '0x5d4'
+    Offset: '0x5b4'
     Size: '0x4'
     Type: float
   - Name: CollisionQuadFlags
-    Offset: '0x5d8'
+    Offset: '0x5b8'
     Size: '0x10'
     Type: TArray<char>
   - Name: HeightfieldGuid
-    Offset: '0x5e8'
+    Offset: '0x5c8'
     Size: '0x10'
     Type: struct Guid
   - Name: CachedLocalBox
-    Offset: '0x5f8'
+    Offset: '0x5d8'
     Size: '0x1c'
     Type: struct Box
   - Name: CookedPhysicalMaterials
-    Offset: '0x640'
+    Offset: '0x620'
     Size: '0x10'
     Type: TArray<class PhysicalMaterial*>
-  - Name: pad0x40_17S50[0x40]
-    Offset: '0x650'
+  - Name: pad0x40_YYJH5[0x40]
+    Offset: '0x630'
     Size: '0x40'
     Type: char
   ClassSize: '0xd0'
-  FullSize: '0x690'
-  InheritedSize: '0x5c0'
+  FullSize: '0x670'
+  InheritedSize: '0x5a0'
   Super: PrimitiveComponent
 LandscapeInfo:
   Attributes:
-  - Name: pad0x1c_RQLXL[0x1c]
+  - Name: pad0x1c_JWDNV[0x1c]
     Offset: '0x28'
     Size: '0x1c'
     Type: char
@@ -282,7 +282,7 @@ LandscapeInfo:
     Offset: '0x60'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x1a4_19WE9[0x1a4]
+  - Name: pad0x1a4_KLSD7[0x1a4]
     Offset: '0x6c'
     Size: '0x1a4'
     Type: char
@@ -292,7 +292,7 @@ LandscapeInfo:
   Super: Object
 LandscapeInfoMap:
   Attributes:
-  - Name: pad0x50_9UJLZ[0x50]
+  - Name: pad0x50_2H8KF[0x50]
     Offset: '0x28'
     Size: '0x50'
     Type: char
@@ -314,7 +314,7 @@ LandscapeLayerInfoObject:
     Offset: '0x38'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_SQ8WL[0x4]
+  - Name: pad0x4_XU40T[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -328,7 +328,7 @@ LandscapeMaterialInstanceConstant:
     Offset: '0x1b8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_U4060[0x3]
+  - Name: pad0x3_JPYIT[0x3]
     Offset: '0x1b9'
     Size: '0x3'
     Type: char
@@ -340,7 +340,7 @@ LandscapeMaterialInstanceConstant:
     Offset: '0x1c0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_DM3BB[0x4]
+  - Name: pad0x4_SHRA2[0x4]
     Offset: '0x1c4'
     Size: '0x4'
     Type: char
@@ -351,16 +351,16 @@ LandscapeMaterialInstanceConstant:
 LandscapeMeshCollisionComponent:
   Attributes:
   - Name: MeshGuid
-    Offset: '0x690'
+    Offset: '0x670'
     Size: '0x10'
     Type: struct Guid
-  - Name: pad0x10_RD9UI[0x10]
-    Offset: '0x6a0'
+  - Name: pad0x10_OA7TN[0x10]
+    Offset: '0x680'
     Size: '0x10'
     Type: char
   ClassSize: '0x20'
-  FullSize: '0x6b0'
-  InheritedSize: '0x690'
+  FullSize: '0x690'
+  InheritedSize: '0x670'
   Super: LandscapeHeightfieldCollisionComponent
 LandscapeMeshProxyActor:
   Attributes:
@@ -375,24 +375,24 @@ LandscapeMeshProxyActor:
 LandscapeMeshProxyComponent:
   Attributes:
   - Name: LandscapeGuid
-    Offset: '0x620'
+    Offset: '0x600'
     Size: '0x10'
     Type: struct Guid
   - Name: ProxyComponentBases
-    Offset: '0x630'
+    Offset: '0x610'
     Size: '0x10'
     Type: TArray<struct IntPoint>
-  - Name: pad0x10_0OOIU[0x10]
-    Offset: '0x640'
+  - Name: pad0x10_TZ9R1[0x10]
+    Offset: '0x620'
     Size: '0x10'
     Type: char
   ClassSize: '0x30'
-  FullSize: '0x650'
-  InheritedSize: '0x620'
+  FullSize: '0x630'
+  InheritedSize: '0x600'
   Super: StaticMeshComponent
 LandscapeProxy:
   Attributes:
-  - Name: pad0x8_B3D2G[0x8]
+  - Name: pad0x8_3C1O4[0x8]
     Offset: '0x3a0'
     Size: '0x8'
     Type: char
@@ -424,7 +424,7 @@ LandscapeProxy:
     Offset: '0x3d8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_SPQTW[0x4]
+  - Name: pad0x4_CUNS7[0x4]
     Offset: '0x3dc'
     Size: '0x4'
     Type: char
@@ -440,7 +440,7 @@ LandscapeProxy:
     Offset: '0x3f0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_0W7BG[0x4]
+  - Name: pad0x4_1UTS1[0x4]
     Offset: '0x3f4'
     Size: '0x4'
     Type: char
@@ -456,7 +456,7 @@ LandscapeProxy:
     Offset: '0x418'
     Size: '0x10'
     Type: TArray<class HierarchicalInstancedStaticMeshComponent*>
-  - Name: pad0x78_NP0UA[0x78]
+  - Name: pad0x78_LS2GD[0x78]
     Offset: '0x428'
     Size: '0x78'
     Type: char
@@ -488,7 +488,7 @@ LandscapeProxy:
     Offset: '0x4c0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_SIXL9[0x3]
+  - Name: pad0x3_NNWCN[0x3]
     Offset: '0x4c1'
     Size: '0x3'
     Type: char
@@ -540,7 +540,7 @@ LandscapeProxy:
     Offset: '0x67c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_ADA3Q[0x3]
+  - Name: pad0x3_NWUE6[0x3]
     Offset: '0x67d'
     Size: '0x3'
     Type: char
@@ -552,7 +552,7 @@ LandscapeProxy:
     Offset: '0x681'
     Size: '0x1'
     Type: byte
-  - Name: pad0xae_GCKXX[0xae]
+  - Name: pad0xae_KVDA1[0xae]
     Offset: '0x682'
     Size: '0xae'
     Type: char
@@ -582,7 +582,7 @@ LandscapeSplineControlPoint:
     Offset: '0x48'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_K4E96[0x4]
+  - Name: pad0x4_CYK61[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -598,7 +598,7 @@ LandscapeSplineControlPoint:
     Offset: '0x70'
     Size: '0x1c'
     Type: struct Box
-  - Name: pad0x4_JQJHN[0x4]
+  - Name: pad0x4_SOEXQ[0x4]
     Offset: '0x8c'
     Size: '0x4'
     Type: char
@@ -616,7 +616,7 @@ LandscapeSplineSegment:
     Offset: '0x28'
     Size: '0x18'
     Type: struct LandscapeSplineSegmentConnection
-  - Name: pad0x18_ZJD2X[0x18]
+  - Name: pad0x18_046RM[0x18]
     Offset: '0x40'
     Size: '0x18'
     Type: char
@@ -632,7 +632,7 @@ LandscapeSplineSegment:
     Offset: '0x80'
     Size: '0x1c'
     Type: struct Box
-  - Name: pad0x4_0YTKS[0x4]
+  - Name: pad0x4_TS2AL[0x4]
     Offset: '0x9c'
     Size: '0x4'
     Type: char
@@ -647,24 +647,24 @@ LandscapeSplineSegment:
 LandscapeSplinesComponent:
   Attributes:
   - Name: ControlPoints
-    Offset: '0x5b8'
+    Offset: '0x598'
     Size: '0x10'
     Type: TArray<class LandscapeSplineControlPoint*>
   - Name: Segments
-    Offset: '0x5c8'
+    Offset: '0x5a8'
     Size: '0x10'
     Type: TArray<class LandscapeSplineSegment*>
   - Name: CookedForeignMeshComponents
-    Offset: '0x5d8'
+    Offset: '0x5b8'
     Size: '0x10'
     Type: TArray<class MeshComponent*>
-  - Name: pad0x8_RYQR9[0x8]
-    Offset: '0x5e8'
+  - Name: pad0x8_1J25B[0x8]
+    Offset: '0x5c8'
     Size: '0x8'
     Type: char
   ClassSize: '0x30'
-  FullSize: '0x5f0'
-  InheritedSize: '0x5c0'
+  FullSize: '0x5d0'
+  InheritedSize: '0x5a0'
   Super: PrimitiveComponent
 MaterialExpressionLandscapeGrassOutput:
   Attributes:
@@ -700,7 +700,7 @@ MaterialExpressionLandscapeLayerCoords:
     Offset: '0x71'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_66DIS[0x2]
+  - Name: pad0x2_7ULS5[0x2]
     Offset: '0x72'
     Size: '0x2'
     Type: char
@@ -720,7 +720,7 @@ MaterialExpressionLandscapeLayerCoords:
     Offset: '0x80'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_5QQ8T[0x4]
+  - Name: pad0x4_C41LJ[0x4]
     Offset: '0x84'
     Size: '0x4'
     Type: char
@@ -742,7 +742,7 @@ MaterialExpressionLandscapeLayerSample:
     Offset: '0x7c'
     Size: '0x10'
     Type: struct Guid
-  - Name: pad0x4_LQSKR[0x4]
+  - Name: pad0x4_4AWKC[0x4]
     Offset: '0x8c'
     Size: '0x4'
     Type: char
@@ -768,7 +768,7 @@ MaterialExpressionLandscapeLayerSwitch:
     Offset: '0xe8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_MKPDN[0x3]
+  - Name: pad0x3_RNQTA[0x3]
     Offset: '0xe9'
     Size: '0x3'
     Type: char
@@ -776,7 +776,7 @@ MaterialExpressionLandscapeLayerSwitch:
     Offset: '0xec'
     Size: '0x10'
     Type: struct Guid
-  - Name: pad0x4_5BYOM[0x4]
+  - Name: pad0x4_QEIW7[0x4]
     Offset: '0xfc'
     Size: '0x4'
     Type: char

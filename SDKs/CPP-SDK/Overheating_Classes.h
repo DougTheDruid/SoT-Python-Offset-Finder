@@ -6,23 +6,6 @@
 #include "Overheating_Structs.h"
 
 
-// Size 0xf0 (Full Size[0x1a8] - InheritedSize[0xb8]
-class OverheatingComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x30_LNMHY[0x30];                               // 0xb8(0x30)
-	class StaticMeshComponent*                                   VisualiserStaticMeshComponent;                     // 0xe8(0x8)
-	class ParticleSystemComponent*                               ExplosionVfxEmitter;                               // 0xf0(0x8)
-	class ParticleSystemComponent*                               HeatBuildingVfxEmitter;                            // 0xf8(0x8)
-	class Actor*                                                 CooldownInstigator;                                // 0x100(0x8)
-	class OverheatingDataAsset*                                  OverheatingDataAsset;                              // 0x108(0x8)
-	struct OverheatingReplicatedData                             ReplicatedData;                                    // 0x110(0x8)
-	int                                                          OverheatingMaterialIndex;                          // 0x118(0x4)
-	bool                                                         IsWieldableOrProxy;                                // 0x11c(0x1)
-	char                                                         pad0x8b_XY2MW[0x8b];                               // 0x11d(0x8b)
-};
-
-
 // Size 0x98 (Full Size[0xc0] - InheritedSize[0x28]
 class OverheatingDataAsset: public DataAsset
 {
@@ -37,11 +20,11 @@ public:
 	float                                                        OverheatingToRemovePerWaterSplash;                 // 0x44(0x4)
 	float                                                        OverheatingToRemoveWhenExposedToRain;              // 0x48(0x4)
 	float                                                        OverheatingToRemoveWhenSubmergedInWater;           // 0x4c(0x4)
-	float                                                        HeatBuildingDuration;                              // 0x50(0x4)
-	float                                                        SteamingDuration;                                  // 0x54(0x4)
-	float                                                        ExplosionDuration;                                 // 0x58(0x4)
-	struct FName                                                 VfxEmitterLocation;                                // 0x5c(0x8)
-	char                                                         pad0x4_NIHZ1[0x4];                                 // 0x64(0x4)
+	float                                                        OverheatingToAddWhenSubmergedInSuperHeatedWater;   // 0x50(0x4)
+	float                                                        HeatBuildingDuration;                              // 0x54(0x4)
+	float                                                        SteamingDuration;                                  // 0x58(0x4)
+	float                                                        ExplosionDuration;                                 // 0x5c(0x4)
+	struct FName                                                 VfxEmitterLocation;                                // 0x60(0x8)
 	class Object*                                                HeatBuildingVfx;                                   // 0x68(0x8)
 	class Object*                                                ExplosionVfx;                                      // 0x70(0x8)
 	TArray<struct OverheatingDamageTableEntry>                   DamageTable;                                       // 0x78(0x10)
@@ -52,6 +35,23 @@ public:
 	class WwiseEvent*                                            ExtinguishSfx;                                     // 0xa8(0x8)
 	class WwiseObjectPoolWrapper*                                PoolWrapper;                                       // 0xb0(0x8)
 	struct FName                                                 OverheatingRtpcName;                               // 0xb8(0x8)
+};
+
+
+// Size 0xf0 (Full Size[0x1a8] - InheritedSize[0xb8]
+class OverheatingComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x30_2NXSM[0x30];                               // 0xb8(0x30)
+	class StaticMeshComponent*                                   VisualiserStaticMeshComponent;                     // 0xe8(0x8)
+	class ParticleSystemComponent*                               ExplosionVfxEmitter;                               // 0xf0(0x8)
+	class ParticleSystemComponent*                               HeatBuildingVfxEmitter;                            // 0xf8(0x8)
+	class Actor*                                                 CooldownInstigator;                                // 0x100(0x8)
+	class OverheatingDataAsset*                                  OverheatingDataAsset;                              // 0x108(0x8)
+	struct OverheatingReplicatedData                             ReplicatedData;                                    // 0x110(0x8)
+	int                                                          OverheatingMaterialIndex;                          // 0x118(0x4)
+	bool                                                         IsWieldableOrProxy;                                // 0x11c(0x1)
+	char                                                         pad0x8b_YK8UK[0x8b];                               // 0x11d(0x8b)
 };
 
 

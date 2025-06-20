@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 DebugMenu:
   Attributes:
-  - Name: pad0xb0_ETT6C[0xb0]
+  - Name: pad0xb0_KCJNC[0xb0]
     Offset: '0x3a0'
     Size: '0xb0'
     Type: char
@@ -12,7 +12,7 @@ DebugMenu:
   Super: Actor
 DebugMenuComponent:
   Attributes:
-  - Name: pad0x28_FGDDC[0x28]
+  - Name: pad0x28_XZ8PC[0x28]
     Offset: '0xb8'
     Size: '0x28'
     Type: char
@@ -20,7 +20,7 @@ DebugMenuComponent:
     Offset: '0xe0'
     Size: '0x8'
     Type: class DebugMenu*
-  - Name: pad0x20_Y4LSR[0x20]
+  - Name: pad0x20_N7PCG[0x20]
     Offset: '0xe8'
     Size: '0x20'
     Type: char
@@ -30,7 +30,7 @@ DebugMenuComponent:
   Super: ActorComponent
 DebugMenuComponentMock:
   Attributes:
-  - Name: pad0x8_9UHLT[0x8]
+  - Name: pad0x8_R091Y[0x8]
     Offset: '0x108'
     Size: '0x8'
     Type: char

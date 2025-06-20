@@ -1,18 +1,63 @@
 {
-  "StoryInfo": {
+  "DuplicateStoriesReceivedTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "DuplicateStoriesReceived",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "StoryNameInfo": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "Name",
+        "Name": "StoryName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x10_4T3A3[0x10]",
-        "Type": "char",
+        "Name": "StoryDesc",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "ActorLocationPair": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "SpawnLocation",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AttachToWorld",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x7_9GV5B[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x31"
+      }
+    ]
+  },
+  "IsAnyStoryActiveCondition": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x48_PDAMS[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x0"
       }
     ]
   },
@@ -36,6 +81,57 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x14"
+      }
+    ]
+  },
+  "StoryFlag": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "StoryName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "NamedPointsGroupActorLocation": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "NamedPointsGroup",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AttachToWorld",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x7_XL5VO[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x29"
+      }
+    ]
+  },
+  "StoryInfo": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Name",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x10_TSLFP[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x8"
       }
     ]
   },
@@ -68,31 +164,14 @@
       }
     ]
   },
-  "StoryFlag": {
-    "ClassSize": "0x8",
+  "IsAllStoryActiveCondition": {
+    "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "StoryName",
-        "Type": "struct FName",
-        "Size": "0x8",
+        "Name": "pad0x48_LC1OP[0x48]",
+        "Type": "char",
+        "Size": "0x48",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "StoryNameInfo": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "StoryName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "StoryDesc",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x8"
       }
     ]
   },
@@ -104,6 +183,23 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "InstancedLayerLocation": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ActorWithInstancedLayerComponent",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "LayerToSpawn",
+        "Type": "class LayerActorsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x10"
       }
     ]
   },
@@ -135,106 +231,27 @@
         "Offset": "0x21"
       },
       {
-        "Name": "pad0x6_B92YN[0x6]",
+        "Name": "pad0x6_UXZXI[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x22"
       }
     ]
   },
-  "DuplicateStoriesReceivedTelemetryEvent": {
-    "ClassSize": "0x10",
+  "StorySpawnedActorsChangeTelemetryEvent": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "DuplicateStoriesReceived",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "IsAnyStoryActiveCondition": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "pad0x48_A8JHC[0x48]",
-        "Type": "char",
-        "Size": "0x48",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ActorLocationPair": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "SpawnLocation",
-        "Type": "struct StringAssetReference",
+        "Name": "StorySpawnedActors",
+        "Type": "TArray<struct StorySpawnedActorsIndividualStoryInfo>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "AttachToWorld",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x7_EGWWU[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x31"
-      }
-    ]
-  },
-  "NamedPointsGroupActorLocation": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "NamedPointsGroup",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AttachToWorld",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x7_ARKBV[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x29"
-      }
-    ]
-  },
-  "InstancedLayerLocation": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "ActorWithInstancedLayerComponent",
-        "Type": "struct StringAssetReference",
+        "Name": "StoryDespawnedActors",
+        "Type": "TArray<struct StorySpawnedActorsIndividualStoryInfo>",
         "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "LayerToSpawn",
-        "Type": "class LayerActorsDataAsset*",
-        "Size": "0x8",
         "Offset": "0x10"
-      }
-    ]
-  },
-  "IsAllStoryActiveCondition": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "pad0x48_NPX7V[0x48]",
-        "Type": "char",
-        "Size": "0x48",
-        "Offset": "0x0"
       }
     ]
   },
@@ -246,6 +263,52 @@
         "Type": "TArray<struct StoryResourceStateChanged>",
         "Size": "0x10",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "IsStoryActiveConditionBase": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x28_GKCXT[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "StoryFlags",
+        "Type": "TArray<struct StoryFlag>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x10_73JJV[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "StoryFlagContainer": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "StoryFlags",
+        "Type": "TArray<struct StoryFlag>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AllStoriesRequired",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_GASYK[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
       }
     ]
   },
@@ -272,41 +335,18 @@
       }
     ]
   },
-  "StoryFlagContainer": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "StoryFlags",
-        "Type": "TArray<struct StoryFlag>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AllStoriesRequired",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x7_CIVSX[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x11"
-      }
-    ]
-  },
-  "StorySpawnedActorsChangeTelemetryEvent": {
+  "NamedPointsActorLocation": {
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "StorySpawnedActors",
-        "Type": "TArray<struct StorySpawnedActorsIndividualStoryInfo>",
+        "Name": "ActorWithNamedPointsComponent",
+        "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "StoryDespawnedActors",
-        "Type": "TArray<struct StorySpawnedActorsIndividualStoryInfo>",
+        "Name": "GroupLocations",
+        "Type": "TArray<struct NamedPointsGroupActorLocation>",
         "Size": "0x10",
         "Offset": "0x10"
       }
@@ -335,29 +375,6 @@
       }
     ]
   },
-  "IsStoryActiveConditionBase": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "pad0x28_SL8VI[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "StoryFlags",
-        "Type": "TArray<struct StoryFlag>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x10_IBVGX[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
   "StoryClaimableResourcesList": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -374,7 +391,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_S5U7V[0x7]",
+        "Name": "pad0x7_Q5M84[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
@@ -382,23 +399,6 @@
       {
         "Name": "ClaimableResources",
         "Type": "TArray<uintptr_t>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "NamedPointsActorLocation": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ActorWithNamedPointsComponent",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "GroupLocations",
-        "Type": "TArray<struct NamedPointsGroupActorLocation>",
         "Size": "0x10",
         "Offset": "0x10"
       }

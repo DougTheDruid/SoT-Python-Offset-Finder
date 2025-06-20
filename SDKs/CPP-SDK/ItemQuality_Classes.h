@@ -17,15 +17,15 @@ public:
 class ItemQualityComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_ZD8IB[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_9SFKB[0x8];                                 // 0xb8(0x8)
 	char                                                         ItemQualityLevel;                                  // 0xc0(0x1)
-	char                                                         pad0x7_ATWRQ[0x7];                                 // 0xc1(0x7)
+	char                                                         pad0x7_ORDDY[0x7];                                 // 0xc1(0x7)
 	TArray<struct PerComanyItemQualityEntry>                     CompanySpecificItemQualityLevels;                  // 0xc8(0x10)
 	TArray<struct PerComanyComplexItemQualityEntry>              CompanySpecificComplexItemQualityLevels;           // 0xd8(0x10)
 	TArray<struct PerComanyComplexItemQualityEntry>              CompanySpecificComplexItemQualityLevelsHandin;     // 0xe8(0x10)
 	TArray<struct CompanySpecificComplexItemQualityOverrides>    CompanySpecificComplexItemQualityOverrideList;     // 0xf8(0x10)
 	class GuildSettings*                                         GuildSettings;                                     // 0x108(0x8)
-	char                                                         pad0x8_3NW2C[0x8];                                 // 0x110(0x8)
+	char                                                         pad0x8_CF2HK[0x8];                                 // 0x110(0x8)
 };
 
 

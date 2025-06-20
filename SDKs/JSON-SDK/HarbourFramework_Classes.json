@@ -1,18 +1,4 @@
 {
-  "HarbourService": {
-    "Super": "Object",
-    "FullSize": "0x50",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x28_4LCCV[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "HarbourComponent": {
     "Super": "SceneComponent",
     "FullSize": "0x300",
@@ -20,7 +6,7 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x8_TQT25[0x8]",
+        "Name": "pad0x8_T3TZJ[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x2d0"
@@ -32,7 +18,7 @@
         "Offset": "0x2d8"
       },
       {
-        "Name": "pad0x24_ZN436[0x24]",
+        "Name": "pad0x24_PFX56[0x24]",
         "Type": "char",
         "Size": "0x24",
         "Offset": "0x2dc"
@@ -45,6 +31,20 @@
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "HarbourService": {
+    "Super": "Object",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x28_B54R5[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x28"
+      }
+    ]
   },
   "HarbourInterface": {
     "Super": "Interface",

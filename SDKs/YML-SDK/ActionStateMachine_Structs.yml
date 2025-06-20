@@ -64,7 +64,7 @@ ActionStateChangeTelemetryEvent_ConstructionInfoData:
     Offset: '0x19'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_76DEP[0x2]
+  - Name: pad0x2_040Z7[0x2]
     Offset: '0x1a'
     Size: '0x2'
     Type: char
@@ -90,7 +90,7 @@ ActionStateChangeTelemetryEvent_SerialisedActionStateInfoData:
   ClassSize: '0x30'
 ActionStateConstructionInfo:
   Attributes:
-  - Name: pad0x8_QBPP6[0x8]
+  - Name: pad0x8_MA5NG[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -114,7 +114,7 @@ ActionStateConstructionInfo:
     Offset: '0x1a'
     Size: '0x1'
     Type: bool
-  - Name: pad0x5_WFGCJ[0x5]
+  - Name: pad0x5_O2CT1[0x5]
     Offset: '0x1b'
     Size: '0x5'
     Type: char
@@ -122,14 +122,14 @@ ActionStateConstructionInfo:
     Offset: '0x20'
     Size: '0x8'
     Type: class ScriptStruct*
-  - Name: pad0x18_POTUT[0x18]
+  - Name: pad0x18_QJVU8[0x18]
     Offset: '0x28'
     Size: '0x18'
     Type: char
   ClassSize: '0x40'
 ActionStateMessage:
   Attributes:
-  - Name: pad0x8_E3XDV[0x8]
+  - Name: pad0x8_HSKEX[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -159,21 +159,21 @@ ActionStatePriorityRelationship:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_5TYXK[0x7]
+  - Name: pad0x7_7YTAR[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
   ClassSize: '0x10'
 ActionStatePriorityTable:
   Attributes:
-  - Name: pad0xa0_7XBKB[0xa0]
+  - Name: pad0xa0_OBYG0[0xa0]
     Offset: '0x0'
     Size: '0xa0'
     Type: char
   ClassSize: '0xa0'
 ActionStateSerialisableData:
   Attributes:
-  - Name: pad0x8_QH78I[0x8]
+  - Name: pad0x8_BPJTH[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -185,35 +185,35 @@ ActionStateSerialisableData:
     Offset: '0x10'
     Size: '0x8'
     Type: class ScriptStruct*
-  - Name: pad0x18_XUPGJ[0x18]
+  - Name: pad0x18_P99FZ[0x18]
     Offset: '0x18'
     Size: '0x18'
     Type: char
   ClassSize: '0x30'
 ActorActionStateConstructionInfo:
   Attributes:
-  - Name: pad0x48_0IFWS[0x48]
+  - Name: pad0x48_QC8SA[0x48]
     Offset: '0x0'
     Size: '0x48'
     Type: char
   ClassSize: '0x48'
 EventFirstPersonAnimaticActionStateEndedClient:
   Attributes:
-  - Name: pad0x1_ECGD4[0x1]
+  - Name: pad0x1_CTIK7[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 EventWaitingToSpawnActionStateEndedClient:
   Attributes:
-  - Name: pad0x1_UV8RW[0x1]
+  - Name: pad0x1_YN6X9[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 EventWaitingToSpawnActionStateStartedClient:
   Attributes:
-  - Name: pad0x1_64PR3[0x1]
+  - Name: pad0x1_K8CP4[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -224,7 +224,7 @@ InnerTestStruct:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_ON7Z3[0x7]
+  - Name: pad0x7_ALO52[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -242,7 +242,7 @@ InnerWithObjTestStruct:
   ClassSize: '0x8'
 NullActionStateConstructionInfo:
   Attributes:
-  - Name: pad0x48_6RYRS[0x48]
+  - Name: pad0x48_5YWIC[0x48]
     Offset: '0x0'
     Size: '0x48'
     Type: char
@@ -272,7 +272,7 @@ ResetStateMachineRpc:
     Offset: '0x0'
     Size: '0x1'
     Type: struct ActionStateChangeRequestId
-  - Name: pad0x4_DF4BM[0x4]
+  - Name: pad0x4_5FVHJ[0x4]
     Offset: '0x1'
     Size: '0x4'
     Type: char
@@ -280,7 +280,7 @@ ResetStateMachineRpc:
     Offset: '0x5'
     Size: '0x1'
     Type: struct ActionStateChangeRequestId
-  - Name: pad0xa_C06SB[0xa]
+  - Name: pad0xa_C1AQN[0xa]
     Offset: '0x6'
     Size: '0xa'
     Type: char
@@ -291,14 +291,14 @@ ResetStateMachineRpc:
   ClassSize: '0x150'
 SerialisedActionStateInfo:
   Attributes:
-  - Name: pad0x40_MIOD9[0x40]
+  - Name: pad0x40_N3KRT[0x40]
     Offset: '0x0'
     Size: '0x40'
     Type: char
   ClassSize: '0x40'
 SerialisedActionStateMessage:
   Attributes:
-  - Name: pad0x18_UK07A[0x18]
+  - Name: pad0x18_Y2MDS[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -309,14 +309,14 @@ SerialisedConstructionInfoStore:
     Offset: '0x0'
     Size: '0x40'
     Type: struct SerialisedActionStateInfo
-  - Name: pad0x100_8EAFF[0x100]
+  - Name: pad0x100_OKRTE[0x100]
     Offset: '0x40'
     Size: '0x100'
     Type: char
   ClassSize: '0x140'
 TestActionStateConstructionInfo:
   Attributes:
-  - Name: pad0x40_TC0RR[0x40]
+  - Name: pad0x40_EBM47[0x40]
     Offset: '0x0'
     Size: '0x40'
     Type: char
@@ -324,14 +324,14 @@ TestActionStateConstructionInfo:
     Offset: '0x40'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_BJYMK[0x4]
+  - Name: pad0x4_R1DTK[0x4]
     Offset: '0x44'
     Size: '0x4'
     Type: char
   ClassSize: '0x48'
 TestActionStateConstructionInfoWithInner:
   Attributes:
-  - Name: pad0x40_XENGG[0x40]
+  - Name: pad0x40_KLI4U[0x40]
     Offset: '0x0'
     Size: '0x40'
     Type: char
@@ -339,7 +339,7 @@ TestActionStateConstructionInfoWithInner:
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_MZCNX[0x4]
+  - Name: pad0x4_8HF0B[0x4]
     Offset: '0x44'
     Size: '0x4'
     Type: char
@@ -350,7 +350,7 @@ TestActionStateConstructionInfoWithInner:
   ClassSize: '0x60'
 TestActionStateConstructionInfoWithObjPointers:
   Attributes:
-  - Name: pad0x40_GCRSH[0x40]
+  - Name: pad0x40_QI2TW[0x40]
     Offset: '0x0'
     Size: '0x40'
     Type: char
@@ -369,7 +369,7 @@ TestActionStateConstructionInfoWithObjPointers:
   ClassSize: '0x60'
 TestActionStateMessage:
   Attributes:
-  - Name: pad0x10_QQIY0[0x10]
+  - Name: pad0x10_NEZP2[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
@@ -377,21 +377,21 @@ TestActionStateMessage:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_2LZ89[0x4]
+  - Name: pad0x4_NQLYU[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
   ClassSize: '0x18'
 TestActionStateMessage2:
   Attributes:
-  - Name: pad0x10_ZTWZH[0x10]
+  - Name: pad0x10_K7ISO[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
   ClassSize: '0x10'
 TestActionStateSerialisableData:
   Attributes:
-  - Name: pad0x30_WGIJP[0x30]
+  - Name: pad0x30_NN99R[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
@@ -399,14 +399,14 @@ TestActionStateSerialisableData:
     Offset: '0x30'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_B7LKG[0x4]
+  - Name: pad0x4_FLQBQ[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
   ClassSize: '0x38'
 TestActorActionStateConstructionInfo:
   Attributes:
-  - Name: pad0x48_CBGMS[0x48]
+  - Name: pad0x48_QEK12[0x48]
     Offset: '0x0'
     Size: '0x48'
     Type: char
@@ -414,7 +414,7 @@ TestActorActionStateConstructionInfo:
     Offset: '0x48'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_1G5EA[0x4]
+  - Name: pad0x4_A215U[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char

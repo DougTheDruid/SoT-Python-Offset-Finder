@@ -12,7 +12,16 @@ class ChecklistActionData: public Object
 public:
 	int                                                          NumRequiredActions;                                // 0x28(0x4)
 	char                                                         ActionType;                                        // 0x2c(0x1)
-	char                                                         pad0x3_0K2L0[0x3];                                 // 0x2d(0x3)
+	char                                                         pad0x3_LANJH[0x3];                                 // 0x2d(0x3)
+};
+
+
+// Size 0x88 (Full Size[0x140] - InheritedSize[0xb8]
+class ChecklistMapCompletionComponent: public ActorComponent
+{
+public:
+	class ChecklistActionData*                                   ActionData;                                        // 0xb8(0x8)
+	char                                                         pad0x80_PHY0F[0x80];                               // 0xc0(0x80)
 };
 
 
@@ -25,19 +34,10 @@ public:
 	class Font*                                                  Font;                                              // 0x860(0x8)
 	float                                                        FontScale;                                         // 0x868(0x4)
 	float                                                        FontLineSpacingScale;                              // 0x86c(0x4)
-	char                                                         pad0x8_CSJT0[0x8];                                 // 0x870(0x8)
+	char                                                         pad0x8_VTKF7[0x8];                                 // 0x870(0x8)
 	class ChecklistMapLayout*                                    ChecklistMapLayout;                                // 0x878(0x8)
 	struct ChecklistMapContents                                  Contents;                                          // 0x880(0xe8)
-	char                                                         pad0x48_D2KB8[0x48];                               // 0x968(0x48)
-};
-
-
-// Size 0x20 (Full Size[0x58] - InheritedSize[0x38]
-class ChecklistMapSettings: public DeveloperSettings
-{
-public:
-	struct StringAssetReference                                  ChecklistMapItemDescClass;                         // 0x38(0x10)
-	TArray<struct Name>                                          ChecklistEvents;                                   // 0x48(0x10)
+	char                                                         pad0x48_Z1JVS[0x48];                               // 0x968(0x48)
 };
 
 
@@ -56,12 +56,20 @@ public:
 };
 
 
-// Size 0x88 (Full Size[0x140] - InheritedSize[0xb8]
-class ChecklistMapCompletionComponent: public ActorComponent
+// Size 0x20 (Full Size[0x58] - InheritedSize[0x38]
+class ChecklistMapSettings: public DeveloperSettings
 {
 public:
-	class ChecklistActionData*                                   ActionData;                                        // 0xb8(0x8)
-	char                                                         pad0x80_6RXCW[0x80];                               // 0xc0(0x80)
+	struct StringAssetReference                                  ChecklistMapItemDescClass;                         // 0x38(0x10)
+	TArray<struct Name>                                          ChecklistEvents;                                   // 0x48(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
+class KillActorChecklistActionData: public ChecklistActionData
+{
+public:
+	TArray<class Class*>                                         TargetAIClasses;                                   // 0x30(0x10)
 };
 
 
@@ -74,11 +82,11 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
-class KillActorChecklistActionData: public ChecklistActionData
+// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
+class NamedChecklistEventActionData: public ChecklistActionData
 {
 public:
-	TArray<class Class*>                                         TargetAIClasses;                                   // 0x30(0x10)
+	struct FName                                                 Event;                                             // 0x30(0x8)
 };
 
 
@@ -87,14 +95,6 @@ class NPCInteractionChecklistActionData: public ChecklistActionData
 {
 public:
 	TArray<struct Guid>                                          TargetNPCIds;                                      // 0x30(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
-class NamedChecklistEventActionData: public ChecklistActionData
-{
-public:
-	struct FName                                                 Event;                                             // 0x30(0x8)
 };
 
 

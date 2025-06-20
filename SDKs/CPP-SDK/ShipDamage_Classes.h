@@ -6,13 +6,11 @@
 #include "ShipDamage_Structs.h"
 
 
-// Size 0x28 (Full Size[0x3c8] - InheritedSize[0x3a0]
-class GenericShipDamageablePart: public Actor
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class LevelOfDamagePropertiesDataAsset: public DataAsset
 {
 public:
-	char                                                         pad0x8_G1Q05[0x8];                                 // 0x3a0(0x8)
-	class ShipDamageableComponent*                               ShipDamageableComponent;                           // 0x3a8(0x8)
-	char                                                         pad0x18_0ATQP[0x18];                               // 0x3b0(0x18)
+	TArray<struct LevelOfDamageProperties>                       LevelOfDamageProperties;                           // 0x28(0x10)
 };
 
 
@@ -20,6 +18,23 @@ public:
 class HullDamageProviderInterface: public Interface
 {
 public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DamageZoneInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x28 (Full Size[0x3c8] - InheritedSize[0x3a0]
+class GenericShipDamageablePart: public Actor
+{
+public:
+	char                                                         pad0x8_SA3KQ[0x8];                                 // 0x3a0(0x8)
+	class ShipDamageableComponent*                               ShipDamageableComponent;                           // 0x3a8(0x8)
+	char                                                         pad0x18_MBAKN[0x18];                               // 0x3b0(0x18)
 };
 
 
@@ -44,11 +59,10 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class LevelOfDamagePropertiesDataAsset: public DataAsset
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class HullDamageInterface: public Interface
 {
 public:
-	TArray<struct LevelOfDamageProperties>                       LevelOfDamageProperties;                           // 0x28(0x10)
 };
 
 
@@ -59,18 +73,8 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class ShipRestorationSettings: public DeveloperSettings
-{
-public:
-	float                                                        MaxDistanceSquared;                                // 0x38(0x4)
-	char                                                         pad0x4_J56RT[0x4];                                 // 0x3c(0x4)
-	char                                                         pad0x8_R4VHC[0x8];                                 // 0x40(0x8)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DamageZoneInterface: public Interface
+class ShipDamagerType: public DamagerType
 {
 public:
 };
@@ -81,26 +85,22 @@ class ShipPartsDamageTrackerComponent: public ActorComponent
 {
 public:
 	int                                                          IsAnyShipPartDamaged;                              // 0xb8(0x4)
-	char                                                         pad0x4_UAJ7G[0x4];                                 // 0xbc(0x4)
+	char                                                         pad0x4_1Y0MP[0x4];                                 // 0xbc(0x4)
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class HullDamageInterface: public Interface
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
+class ShipRestorationSettings: public DeveloperSettings
 {
 public:
+	float                                                        MaxDistanceSquared;                                // 0x38(0x4)
+	char                                                         pad0x4_1B0W9[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x8_1MVE5[0x8];                                 // 0x40(0x8)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class LandscapeDamagerType: public DamagerType
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ShipDamagerType: public DamagerType
 {
 public:
 };

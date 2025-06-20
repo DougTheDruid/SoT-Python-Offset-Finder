@@ -14,32 +14,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WindZoneInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x90 (Full Size[0x360] - InheritedSize[0x2d0]
-class WindZoneComponent: public SceneComponent
-{
-public:
-	char                                                         pad0x8_321KP[0x8];                                 // 0x2d0(0x8)
-	struct WindTurbulenceParameters                              TurbulenceParams;                                  // 0x2d8(0x70)
-	struct WindZoneParams                                        WindZoneParams;                                    // 0x348(0x10)
-	char                                                         pad0x8_D2WQ0[0x8];                                 // 0x358(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class WindFunctions: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WindInterface: public Interface
 {
 public:
 };
@@ -56,14 +31,21 @@ public:
 class WindService: public Actor
 {
 public:
-	char                                                         pad0x10_ND2LI[0x10];                               // 0x3a0(0x10)
+	char                                                         pad0x10_L9EQ1[0x10];                               // 0x3a0(0x10)
 	class WindDirectionalSource*                                 GlobalWindSource;                                  // 0x3b0(0x8)
-	char                                                         pad0x10_NPNL9[0x10];                               // 0x3b8(0x10)
+	char                                                         pad0x10_HCK46[0x10];                               // 0x3b8(0x10)
 	float                                                        CurrentWindAngle;                                  // 0x3c8(0x4)
 	float                                                        CurrentWindMagnitude;                              // 0x3cc(0x4)
-	char                                                         pad0xe8_N3ANR[0xe8];                               // 0x3d0(0xe8)
+	char                                                         pad0xe8_G5YE1[0xe8];                               // 0x3d0(0xe8)
 	TArray<class Interface*>                                     WindZones;                                         // 0x4b8(0x10)
 	TArray<struct ExtraWind>                                     ExtraWind;                                         // 0x4c8(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class WindZoneInterface: public Interface
+{
+public:
 };
 
 
@@ -72,7 +54,25 @@ class WindSettings: public DeveloperSettings
 {
 public:
 	struct WindServiceParams                                     WindParams;                                        // 0x38(0x24)
-	char                                                         pad0x4_IB6FH[0x4];                                 // 0x5c(0x4)
+	char                                                         pad0x4_0UQH3[0x4];                                 // 0x5c(0x4)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class WindInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x90 (Full Size[0x360] - InheritedSize[0x2d0]
+class WindZoneComponent: public SceneComponent
+{
+public:
+	char                                                         pad0x8_4FCIR[0x8];                                 // 0x2d0(0x8)
+	struct WindTurbulenceParameters                              TurbulenceParams;                                  // 0x2d8(0x70)
+	struct WindZoneParams                                        WindZoneParams;                                    // 0x348(0x10)
+	char                                                         pad0x8_JA7FK[0x8];                                 // 0x358(0x8)
 };
 
 
@@ -80,7 +80,7 @@ public:
 class DebugWindService: public WindService
 {
 public:
-	char                                                         pad0x10_25ZT7[0x10];                               // 0x4d8(0x10)
+	char                                                         pad0x10_IVZAE[0x10];                               // 0x4d8(0x10)
 };
 
 

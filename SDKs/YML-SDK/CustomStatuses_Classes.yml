@@ -8,7 +8,7 @@ CustomStatusesInterface:
   Super: Interface
 CustomStatusesService:
   Attributes:
-  - Name: pad0x8_9FBOP[0x8]
+  - Name: pad0x8_TY40V[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char

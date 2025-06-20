@@ -10,14 +10,14 @@ DamageZoneRepairableStateChangedEvent:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_QIE0B[0x7]
+  - Name: pad0x7_NOHAW[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
   ClassSize: '0x10'
 EventRepairableObjectDestroyed:
   Attributes:
-  - Name: pad0x1_AS97M[0x1]
+  - Name: pad0x1_Z3J8R[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -32,7 +32,7 @@ EventRepairableObjectRepairEndedEvent:
     Offset: '0x8'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_7ZSHQ[0x4]
+  - Name: pad0x4_SIAVI[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -48,14 +48,14 @@ EventRepairableObjectRepairEndedEvent:
     Offset: '0x24'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_2QD1R[0x3]
+  - Name: pad0x3_ZUMHJ[0x3]
     Offset: '0x25'
     Size: '0x3'
     Type: char
   ClassSize: '0x28'
 RepairObjectActionStateConstructionInfo:
   Attributes:
-  - Name: pad0x48_M0YSM[0x48]
+  - Name: pad0x48_DSMSP[0x48]
     Offset: '0x0'
     Size: '0x48'
     Type: char
@@ -78,7 +78,7 @@ RepairableAuthoritiveRepairState:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_E25UP[0x7]
+  - Name: pad0x7_EQDIF[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -108,7 +108,7 @@ RepairableComponentRepairableStateChangedEvent:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_5X5QV[0x7]
+  - Name: pad0x7_RW8R3[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char

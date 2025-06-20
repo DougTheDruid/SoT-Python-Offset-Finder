@@ -8,7 +8,7 @@ EntityEnumerationInterface:
   Super: Interface
 EntityEnumerationService:
   Attributes:
-  - Name: pad0x20_OPAPL[0x20]
+  - Name: pad0x20_UBG78[0x20]
     Offset: '0x28'
     Size: '0x20'
     Type: char

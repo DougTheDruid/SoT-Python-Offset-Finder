@@ -3,24 +3,24 @@
 CommunityEmissaryFlagComponent:
   Attributes:
   - Name: CommunityEmissaryDataAsset
-    Offset: '0x620'
+    Offset: '0x600'
     Size: '0x8'
     Type: class CommunityEmissaryFlagData*
-  - Name: pad0x18_WHVMY[0x18]
-    Offset: '0x628'
+  - Name: pad0x18_HV5UK[0x18]
+    Offset: '0x608'
     Size: '0x18'
     Type: char
   - Name: ActiveFlagDataIndex
-    Offset: '0x640'
+    Offset: '0x620'
     Size: '0x4'
     Type: int
-  - Name: pad0xc_M7WH9[0xc]
-    Offset: '0x644'
+  - Name: pad0xc_TDGIJ[0xc]
+    Offset: '0x624'
     Size: '0xc'
     Type: char
   ClassSize: '0x30'
-  FullSize: '0x650'
-  InheritedSize: '0x620'
+  FullSize: '0x630'
+  InheritedSize: '0x600'
   Super: StaticMeshComponent
 CommunityEmissaryFlagData:
   Attributes:

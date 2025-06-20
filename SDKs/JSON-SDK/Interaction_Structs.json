@@ -1,41 +1,48 @@
 {
-  "EventInteractionBlockingStateChanged": {
-    "ClassSize": "0x2",
+  "InteractionDistanceCheckFailedTelemetryEvent": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "IsInteractionBlocked",
-        "Type": "bool",
-        "Size": "0x1",
+        "Name": "Distance",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "InteractionBlockReason",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x1"
-      }
-    ]
-  },
-  "IsNewInteractingPlayerCondition": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "pad0x8_FGZYR[0x8]",
+        "Name": "pad0x4_1N7WR[0x4]",
         "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
+        "Size": "0x4",
+        "Offset": "0x4"
       },
       {
-        "Name": "PlayerPayloadSelector",
-        "Type": "struct ConditionContextPayloadSelectorInstance",
-        "Size": "0x20",
+        "Name": "DistanceRating",
+        "Type": "struct FString",
+        "Size": "0x10",
         "Offset": "0x8"
       },
       {
-        "Name": "InteractablePayloadSelector",
-        "Type": "struct ConditionContextPayloadSelectorInstance",
-        "Size": "0x20",
-        "Offset": "0x28"
+        "Name": "DistanceThreshold_Used",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "DistanceThreshold_Config",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "DistanceThreshold_Settings",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_4NX9F[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
       }
     ]
   },
@@ -79,57 +86,10 @@
         "Offset": "0x31"
       },
       {
-        "Name": "pad0x6_SE1E6[0x6]",
+        "Name": "pad0x6_MW65E[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x32"
-      }
-    ]
-  },
-  "InteractionDistanceCheckFailedTelemetryEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "Distance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x4_42KDJ[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "DistanceRating",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "DistanceThreshold_Used",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "DistanceThreshold_Config",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x1c"
-      },
-      {
-        "Name": "DistanceThreshold_Settings",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "pad0x4_URFFF[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x24"
       }
     ]
   },
@@ -164,6 +124,46 @@
         "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xc"
+      }
+    ]
+  },
+  "EventInteractionBlockingStateChanged": {
+    "ClassSize": "0x2",
+    "Attributes": [
+      {
+        "Name": "IsInteractionBlocked",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "InteractionBlockReason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1"
+      }
+    ]
+  },
+  "IsNewInteractingPlayerCondition": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x8_SJ9UM[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PlayerPayloadSelector",
+        "Type": "struct ConditionContextPayloadSelectorInstance",
+        "Size": "0x20",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "InteractablePayloadSelector",
+        "Type": "struct ConditionContextPayloadSelectorInstance",
+        "Size": "0x20",
+        "Offset": "0x28"
       }
     ]
   },

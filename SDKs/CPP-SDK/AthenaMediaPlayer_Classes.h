@@ -7,10 +7,10 @@
 class AthenaMediaPlayer: public MediaPlayer
 {
 public:
-	char                                                         pad0x8_KOG9U[0x8];                                 // 0x170(0x8)
+	char                                                         pad0x8_I77WJ[0x8];                                 // 0x170(0x8)
 	class WwiseMediaSoundComponent*                              SoundComponent;                                    // 0x178(0x8)
 	class MediaSubtitleComponent*                                SubtitleComponent;                                 // 0x180(0x8)
-	char                                                         pad0x8_E0XQ1[0x8];                                 // 0x188(0x8)
+	char                                                         pad0x8_3E02Z[0x8];                                 // 0x188(0x8)
 };
 
 

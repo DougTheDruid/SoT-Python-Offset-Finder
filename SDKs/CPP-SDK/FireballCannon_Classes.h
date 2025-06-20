@@ -6,11 +6,18 @@
 #include "FireballCannon_Structs.h"
 
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class FireballCannonInterface: public Interface
+{
+public:
+};
+
+
 // Size 0x228 (Full Size[0x2e0] - InheritedSize[0xb8]
 class FireballCannonComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_BGTPV[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_VBZND[0x8];                                 // 0xb8(0x8)
 	TArray<struct FireballCannonProjectileFirePoint>             FireballCannonProjectileFirePoints;                // 0xc0(0x10)
 	TArray<struct FireballCannonDynamicMaterialParameters>       FireballCannonMaterialParameters;                  // 0xd0(0x10)
 	class UClass*                                                LaunchableProjectileClass;                         // 0xe0(0x8)
@@ -22,14 +29,14 @@ public:
 	float                                                        FireballCannonReadyToFireMaterialDelay;            // 0xfc(0x4)
 	TArray<uintptr_t>                                            ActiveProjectiles;                                 // 0x100(0x10)
 	char                                                         FireballCannonFiringState;                         // 0x110(0x1)
-	char                                                         pad0x7_JHPSF[0x7];                                 // 0x111(0x7)
+	char                                                         pad0x7_9FJQB[0x7];                                 // 0x111(0x7)
 	char                                                         FireRadiusCollisionChannel;                        // 0x168(0x1)
 	struct CollisionResponseContainer                            FireRadiusCollisionResponse;                       // 0x169(0x20)
-	char                                                         pad0x7_AZ01E[0x7];                                 // 0x189(0x7)
+	char                                                         pad0x7_I7XO7[0x7];                                 // 0x189(0x7)
 	class FireGridCellSelectionParamsDataAsset*                  FlamethrowerFirePropagationIgnitionParams;         // 0x190(0x8)
 	struct Status                                                FlamethrowerCollisionStatusEffect;                 // 0x198(0x20)
 	bool                                                         UseScalingFlameCollisionRadius;                    // 0x1b8(0x1)
-	char                                                         pad0x3_X86SG[0x3];                                 // 0x1b9(0x3)
+	char                                                         pad0x3_L4FM2[0x3];                                 // 0x1b9(0x3)
 	float                                                        FlameCollisionRadius;                              // 0x1bc(0x4)
 	struct RuntimeFloatCurve                                     DynamicFlameCollisionRadiusCurve;                  // 0x1c0(0x80)
 	float                                                        TimeUntilApplyStatusEffect;                        // 0x240(0x4)
@@ -37,11 +44,11 @@ public:
 	float                                                        TimeToConsiderActorOutsideFlame;                   // 0x248(0x4)
 	float                                                        FlamethrowerCollisionDamageAmount;                 // 0x24c(0x4)
 	float                                                        DamagePerSecondInsideFlame;                        // 0x250(0x4)
-	char                                                         pad0x4_R00H9[0x4];                                 // 0x254(0x4)
+	char                                                         pad0x4_UQP5N[0x4];                                 // 0x254(0x4)
 	class UClass*                                                DamagerTypeClass;                                  // 0x258(0x8)
 	char                                                         HealthChangedReason;                               // 0x260(0x1)
-	char                                                         pad0x7_OF1V1[0x7];                                 // 0x261(0x7)
-	char                                                         pad0x78_QK814[0x78];                               // 0x268(0x78)
+	char                                                         pad0x7_VVO5J[0x7];                                 // 0x261(0x7)
+	char                                                         pad0x78_F2CF8[0x78];                               // 0x268(0x78)
 };
 
 
@@ -61,24 +68,17 @@ public:
 	class UClass*                                                NotificationStartInputID;                          // 0x478(0x8)
 	class UClass*                                                NotificationReleaseInputID;                        // 0x480(0x8)
 	char                                                         DisplayPriority;                                   // 0x488(0x1)
-	char                                                         pad0x3_X6FM6[0x3];                                 // 0x489(0x3)
+	char                                                         pad0x3_8OJQM[0x3];                                 // 0x489(0x3)
 	float                                                        HoldTime;                                          // 0x48c(0x4)
 	struct RuntimeFloatCurve                                     Curve;                                             // 0x490(0x80)
 	struct Transform                                             LeverStartingTransform;                            // 0x510(0x30)
 	struct Transform                                             LeverEndingTransform;                              // 0x540(0x30)
 	char                                                         LeverActivationState;                              // 0x570(0x1)
-	char                                                         pad0x3_MXP43[0x3];                                 // 0x571(0x3)
+	char                                                         pad0x3_6D1JF[0x3];                                 // 0x571(0x3)
 	float                                                        ReplicatedAnimationTime;                           // 0x574(0x4)
-	char                                                         pad0x20_YVRW0[0x20];                               // 0x578(0x20)
+	char                                                         pad0x20_IQ5NG[0x20];                               // 0x578(0x20)
 	struct FName                                                 LeverCooldownRtpcName;                             // 0x598(0x8)
-	char                                                         pad0x30_7ZHM2[0x30];                               // 0x5a0(0x30)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class FireballCannonInterface: public Interface
-{
-public:
+	char                                                         pad0x30_3YSD7[0x30];                               // 0x5a0(0x30)
 };
 
 

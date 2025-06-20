@@ -1,4 +1,11 @@
 {
+  "ObjectMessagingInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "ObjectMessagingDispatcherComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x160",
@@ -6,7 +13,7 @@
     "ClassSize": "0xa8",
     "Attributes": [
       {
-        "Name": "pad0xa8_6U98J[0xa8]",
+        "Name": "pad0xa8_F26AV[0xa8]",
         "Type": "char",
         "Size": "0xa8",
         "Offset": "0xb8"
@@ -21,13 +28,6 @@
     "Attributes": []
   },
   "ObjectMessagingDispatcherInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ObjectMessagingInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

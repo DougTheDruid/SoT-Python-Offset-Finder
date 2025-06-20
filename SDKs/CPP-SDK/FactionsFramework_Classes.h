@@ -7,13 +7,6 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class FactionCurseInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class FactionServiceInterface: public Interface
 {
 public:
@@ -21,14 +14,21 @@ public:
 
 
 // Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class IsTargetWearingGhostCurseStatCondition: public TargetedStatCondition
+class IsTargetWearingSkeletonCurseStatCondition: public TargetedStatCondition
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class FactionCurseInterface: public Interface
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class IsTargetWearingSkeletonCurseStatCondition: public TargetedStatCondition
+class IsTargetWearingGhostCurseStatCondition: public TargetedStatCondition
 {
 public:
 };

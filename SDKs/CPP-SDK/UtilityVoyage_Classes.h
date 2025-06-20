@@ -12,7 +12,7 @@ class DispatchUtilityVoyageTaleStepDesc: public TaleQuestStepDesc
 public:
 	class VoyageDescDataAsset*                                   UtilityVoyageDesc;                                 // 0x80(0x8)
 	bool                                                         Migratable;                                        // 0x88(0x1)
-	char                                                         pad0x7_RSDXI[0x7];                                 // 0x89(0x7)
+	char                                                         pad0x7_1HTTC[0x7];                                 // 0x89(0x7)
 };
 
 
@@ -28,7 +28,7 @@ public:
 class UtilityVoyageService: public Object
 {
 public:
-	char                                                         pad0x90_EU994[0x90];                               // 0x28(0x90)
+	char                                                         pad0x90_0TQQ1[0x90];                               // 0x28(0x90)
 	TArray<class CrewVoyageParticipant*>                         Participants;                                      // 0xb8(0x10)
 	TArray<struct UtilityVoyageData>                             Voyages;                                           // 0xc8(0x10)
 };

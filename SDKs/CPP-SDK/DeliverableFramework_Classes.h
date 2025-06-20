@@ -6,50 +6,11 @@
 #include "DeliverableFramework_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DeliverableInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x18 (Full Size[0xd0] - InheritedSize[0xb8]
-class DeliverableComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x10_S8NFJ[0x10];                               // 0xb8(0x10)
-	class DeliverableRequirementsDataAsset*                      DeliveryRequirementsAsset;                         // 0xc8(0x8)
-};
-
-
-// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
-class DeliverableRedirectionComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_9JMXV[0x8];                                 // 0xb8(0x8)
-	class DeliverableRedirectionContextBase*                     Context;                                           // 0xc0(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DeliverableRedirectionInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
 class DeliverableRequirementBase: public Object
 {
 public:
-	char                                                         pad0x8_G3MTD[0x8];                                 // 0x28(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DeliverableRedirectionDestinationDescriptorBase: public Object
-{
-public:
+	char                                                         pad0x8_WI787[0x8];                                 // 0x28(0x8)
 };
 
 
@@ -58,6 +19,13 @@ class DeliverableRedirectionContextHandlerBase: public Object
 {
 public:
 	class DeliverableRedirectionDestinationDescriptorBase*       DestinationDescriptor;                             // 0x28(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DeliverableRedirectionDestinationDescriptorBase: public Object
+{
+public:
 };
 
 
@@ -71,6 +39,38 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DeliverableInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DeliverableRedirectionInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x18 (Full Size[0xd0] - InheritedSize[0xb8]
+class DeliverableComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x10_DNDRO[0x10];                               // 0xb8(0x10)
+	class DeliverableRequirementsDataAsset*                      DeliveryRequirementsAsset;                         // 0xc8(0x8)
+};
+
+
+// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
+class DeliverableRedirectionComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_C82OB[0x8];                                 // 0xb8(0x8)
+	class DeliverableRedirectionContextBase*                     Context;                                           // 0xc0(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class DeliverableTooltipCustomizerInterface: public Interface
 {
 public:
@@ -79,6 +79,13 @@ public:
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class DeliverableRedirectionContextBase: public Object
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DeliverableRedirectionNoContext: public DeliverableRedirectionContextBase
 {
 public:
 };
@@ -97,14 +104,7 @@ class DeliverableRedirectionCompositeContext: public DeliverableRedirectionConte
 {
 public:
 	TArray<class DeliverableRedirectionContextBase*>             Contexts;                                          // 0x28(0x10)
-	char                                                         pad0x18_D37V3[0x18];                               // 0x38(0x18)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DeliverableRedirectionNoContext: public DeliverableRedirectionContextBase
-{
-public:
+	char                                                         pad0x18_JY0E8[0x18];                               // 0x38(0x18)
 };
 
 
