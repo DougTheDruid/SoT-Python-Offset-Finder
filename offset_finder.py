@@ -65,7 +65,7 @@ if __name__ == '__main__':
 
     output = {
         "Actor.actorId": 36,  # The ID number associated with an actor type
-        "SceneComponent.ActorCoordinates": 0x12c,  # Currently located at SceneComponent.RelativeScale3D+0xC
+        "SceneComponent.ActorCoordinates": 0x11c,  # Currently located at SceneComponent.RelativeScale3D+0xC
         # SDK Generator is incapable of pulling this automatically, may need to fix if you have issues
 
         "Actor.rootComponent": get_offset(ENGINE, "Actor", "RootComponent"),
