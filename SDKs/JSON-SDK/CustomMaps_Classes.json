@@ -1,4 +1,36 @@
 {
+  "CustomMapDisplayObjectBase": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Visible",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x3_G67S5[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x29"
+      },
+      {
+        "Name": "Guid",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "pad0x4_5TLNE[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      }
+    ]
+  },
   "CustomMapDataTypeBase": {
     "Super": "Object",
     "FullSize": "0x40",
@@ -12,7 +44,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x3_E7SG7[0x3]",
+        "Name": "pad0x3_3UW13[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x29"
@@ -24,10 +56,48 @@
         "Offset": "0x2c"
       },
       {
-        "Name": "pad0x4_BS244[0x4]",
+        "Name": "pad0x4_8SAKL[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c"
+      }
+    ]
+  },
+  "CustomMap": {
+    "Super": "RenderToTextureMapBase",
+    "FullSize": "0x900",
+    "InheritedSize": "0x8c0",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "pad0x8_XW4T4[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x8c0"
+      },
+      {
+        "Name": "Font",
+        "Type": "class Font*",
+        "Size": "0x8",
+        "Offset": "0x8c8"
+      },
+      {
+        "Name": "DisplayItems",
+        "Type": "TArray<class CustomMapDisplayObjectBase*>",
+        "Size": "0x10",
+        "Offset": "0x8d0"
+      },
+      {
+        "Name": "LineSpacing",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8e0"
+      },
+      {
+        "Name": "pad0x1c_UJPE2[0x1c]",
+        "Type": "char",
+        "Size": "0x1c",
+        "Offset": "0x8e4"
       }
     ]
   },
@@ -71,76 +141,6 @@
       }
     ]
   },
-  "CustomMap": {
-    "Super": "RenderToTextureMapBase",
-    "FullSize": "0x900",
-    "InheritedSize": "0x8c0",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "pad0x8_4PDE7[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x8c0"
-      },
-      {
-        "Name": "Font",
-        "Type": "class Font*",
-        "Size": "0x8",
-        "Offset": "0x8c8"
-      },
-      {
-        "Name": "DisplayItems",
-        "Type": "TArray<class CustomMapDisplayObjectBase*>",
-        "Size": "0x10",
-        "Offset": "0x8d0"
-      },
-      {
-        "Name": "LineSpacing",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8e0"
-      },
-      {
-        "Name": "pad0x1c_PPOTR[0x1c]",
-        "Type": "char",
-        "Size": "0x1c",
-        "Offset": "0x8e4"
-      }
-    ]
-  },
-  "CustomMapDisplayObjectBase": {
-    "Super": "Object",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Visible",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x3_IIEUT[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x29"
-      },
-      {
-        "Name": "Guid",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "pad0x4_3E7N1[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      }
-    ]
-  },
   "CustomMapCollectionInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
@@ -167,7 +167,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_ZAVLN[0x4]",
+        "Name": "pad0x4_NH9HK[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
@@ -193,72 +193,10 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_M39R7[0x4]",
+        "Name": "pad0x4_QRYPS[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
-      }
-    ]
-  },
-  "CustomMapDataTypeImage": {
-    "Super": "CustomMapDataTypePositional",
-    "FullSize": "0x90",
-    "InheritedSize": "0x50",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "pad0x20_A8S2A[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "Width",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "Height",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x74"
-      },
-      {
-        "Name": "FlipX",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "ScaleHeightOnMultipleLines",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x79"
-      },
-      {
-        "Name": "pad0x2_N07FC[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x7a"
-      },
-      {
-        "Name": "ImageColour",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0x7c"
-      },
-      {
-        "Name": "ImageBlendMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8c"
-      },
-      {
-        "Name": "pad0x3_8C2IY[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x8d"
       }
     ]
   },
@@ -293,7 +231,7 @@
         "Offset": "0x90"
       },
       {
-        "Name": "pad0x3_U9NBA[0x3]",
+        "Name": "pad0x3_OINTL[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x91"
@@ -317,7 +255,7 @@
         "Offset": "0xa8"
       },
       {
-        "Name": "pad0x50_PJSLC[0x50]",
+        "Name": "pad0x50_97DXL[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0xb8"
@@ -355,7 +293,7 @@
         "Offset": "0x90"
       },
       {
-        "Name": "pad0x3_J08IR[0x3]",
+        "Name": "pad0x3_P8K6S[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x91"
@@ -371,6 +309,68 @@
         "Type": "struct LinearColor",
         "Size": "0x10",
         "Offset": "0x98"
+      }
+    ]
+  },
+  "CustomMapDataTypeImage": {
+    "Super": "CustomMapDataTypePositional",
+    "FullSize": "0x90",
+    "InheritedSize": "0x50",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "pad0x20_6HLVT[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "Width",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "Height",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x74"
+      },
+      {
+        "Name": "FlipX",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "ScaleHeightOnMultipleLines",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x79"
+      },
+      {
+        "Name": "pad0x2_MTMYQ[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x7a"
+      },
+      {
+        "Name": "ImageColour",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x7c"
+      },
+      {
+        "Name": "ImageBlendMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8c"
+      },
+      {
+        "Name": "pad0x3_U4V5E[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x8d"
       }
     ]
   },
@@ -411,7 +411,7 @@
         "Offset": "0x69"
       },
       {
-        "Name": "pad0x2_LE370[0x2]",
+        "Name": "pad0x2_1FO5J[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x6a"
@@ -429,7 +429,7 @@
         "Offset": "0x7c"
       },
       {
-        "Name": "pad0x3_ATVXT[0x3]",
+        "Name": "pad0x3_GQUGE[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x7d"
@@ -447,7 +447,7 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x18_HXT18[0x18]",
+        "Name": "pad0x18_WVYVF[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0xb8"

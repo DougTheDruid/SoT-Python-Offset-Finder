@@ -20,7 +20,7 @@ ActionStateInitialStateCreatorDefinition:
   Super: Object
 ActionStateMachineComponent:
   Attributes:
-  - Name: pad0x7c8_0TP8U[0x7c8]
+  - Name: pad0x7c8_X44SS[0x7c8]
     Offset: '0xb8'
     Size: '0x7c8'
     Type: char
@@ -28,7 +28,7 @@ ActionStateMachineComponent:
     Offset: '0x880'
     Size: '0x1'
     Type: bool
-  - Name: pad0x17_M5QHR[0x17]
+  - Name: pad0x17_OMO26[0x17]
     Offset: '0x881'
     Size: '0x17'
     Type: char
@@ -108,7 +108,7 @@ CustomClientValidityCheckCallback:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_H59JL[0x7]
+  - Name: pad0x7_FM16Q[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
@@ -124,7 +124,7 @@ NullActionStateId:
   Super: ActionStateId
 SelfInitialisingActionStateMachineComponent:
   Attributes:
-  - Name: pad0x8_ER03W[0x8]
+  - Name: pad0x8_63X2T[0x8]
     Offset: '0x898'
     Size: '0x8'
     Type: char
@@ -140,7 +140,7 @@ SelfInitialisingActionStateMachineComponent:
     Offset: '0x8b0'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x28_LCMG7[0x28]
+  - Name: pad0x28_77T8U[0x28]
     Offset: '0x8b8'
     Size: '0x28'
     Type: char
@@ -156,7 +156,7 @@ SerialisedActionStateConstructionInfoTestFunctions:
   Super: BlueprintFunctionLibrary
 TestActionStateCreatorDefinition:
   Attributes:
-  - Name: pad0x18_LJHOJ[0x18]
+  - Name: pad0x18_5UKWW[0x18]
     Offset: '0x3a0'
     Size: '0x18'
     Type: char

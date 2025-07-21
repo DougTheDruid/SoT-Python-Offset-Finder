@@ -7,9 +7,9 @@
 class WwiseMediaSoundComponent: public SceneComponent
 {
 public:
-	char                                                         pad0x88_27KDO[0x88];                               // 0x2d0(0x88)
+	char                                                         pad0x88_88VSE[0x88];                               // 0x2d0(0x88)
 	class WwiseEvent*                                            MediaSoundEvent;                                   // 0x358(0x8)
-	char                                                         pad0x50_JQGCN[0x50];                               // 0x360(0x50)
+	char                                                         pad0x50_69HIB[0x50];                               // 0x360(0x50)
 };
 
 
@@ -17,7 +17,7 @@ public:
 class MediaSubtitleComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x68_M5YLG[0x68];                               // 0xb8(0x68)
+	char                                                         pad0x68_0VB6E[0x68];                               // 0xb8(0x68)
 };
 
 

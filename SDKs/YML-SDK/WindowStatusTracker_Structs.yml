@@ -18,7 +18,7 @@ WindowStatusChangedTelemetryEvent:
     Offset: '0x12'
     Size: '0x1'
     Type: bool
-  - Name: pad0x5_IR9LO[0x5]
+  - Name: pad0x5_7JCBO[0x5]
     Offset: '0x13'
     Size: '0x5'
     Type: char

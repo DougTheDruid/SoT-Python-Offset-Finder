@@ -6,7 +6,7 @@ CreateActorInstanceOnExplodeComponent:
     Offset: '0xb8'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x68_6IQOT[0x68]
+  - Name: pad0x68_XL3J9[0x68]
     Offset: '0xc0'
     Size: '0x68'
     Type: char
@@ -60,7 +60,7 @@ StatusResponseExplodeAfterTime:
     Offset: '0x3c'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_03CDU[0x8]
+  - Name: pad0x8_7PPKD[0x8]
     Offset: '0x40'
     Size: '0x8'
     Type: char

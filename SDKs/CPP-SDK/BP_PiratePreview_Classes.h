@@ -8,7 +8,6 @@ class BP_PiratePreview_C: public PiratePreviewActor
 {
 public:
 	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x7f0(0x8)
-	char                                                         pad0xbc863a8_WTYS8[0xbc863a8];                     // 0x7f8(0xbc863a8)
 	class ArrowComponent*                                        Camera_BottleSpin;                                 // 0x7f8(0x8)
 	class ArrowComponent*                                        Camera_PushUpSide;                                 // 0x800(0x8)
 	class ArrowComponent*                                        Camera_PushUps;                                    // 0x808(0x8)
@@ -34,7 +33,7 @@ public:
 	class SkeletalMeshComponent*                                 PirateMesh;                                        // 0x8a8(0x8)
 	class CameraComponent*                                       Camera;                                            // 0x8b0(0x8)
 	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x8b8(0x8)
-	char                                                         pad0x30_5E9CB[0x30];                               // 0x8c0(0x30)
+	char                                                         pad0x30_217VV[0x30];                               // 0x8c0(0x30)
 };
 
 

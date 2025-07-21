@@ -48,7 +48,7 @@ InteractLoadableValidityCheckFailedTelemetryEvent:
     Offset: '0x31'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_MW65E[0x6]
+  - Name: pad0x6_PWDI7[0x6]
     Offset: '0x32'
     Size: '0x6'
     Type: char
@@ -59,7 +59,7 @@ InteractionDistanceCheckFailedTelemetryEvent:
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_1N7WR[0x4]
+  - Name: pad0x4_XI9MN[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -79,7 +79,7 @@ InteractionDistanceCheckFailedTelemetryEvent:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_4NX9F[0x4]
+  - Name: pad0x4_LKYYS[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char
@@ -97,7 +97,7 @@ InteractionEdTelemetryEvent:
   ClassSize: '0x18'
 IsNewInteractingPlayerCondition:
   Attributes:
-  - Name: pad0x8_SJ9UM[0x8]
+  - Name: pad0x8_55WU4[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char

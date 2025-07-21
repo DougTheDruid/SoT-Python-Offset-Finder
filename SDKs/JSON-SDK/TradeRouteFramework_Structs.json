@@ -9,7 +9,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_KFRY8[0x3]",
+        "Name": "pad0x3_9DXOC[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -21,7 +21,7 @@
         "Offset": "0x4"
       },
       {
-        "Name": "pad0x4_YWNCS[0x4]",
+        "Name": "pad0x4_BCW3D[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -40,22 +40,22 @@
       }
     ]
   },
-  "TradeRouteMappingFilterQuestVariable": {
+  "QuestVariableTradeRouteData": {
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x30_LCNJZ[0x30]",
+        "Name": "pad0x30_S8W3Z[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x0"
       }
     ]
   },
-  "QuestVariableTradeRouteData": {
+  "TradeRouteMappingFilterQuestVariable": {
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x30_IV30I[0x30]",
+        "Name": "pad0x30_3KY8S[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x0"

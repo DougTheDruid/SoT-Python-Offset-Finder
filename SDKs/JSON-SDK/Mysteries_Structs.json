@@ -1,33 +1,4 @@
 {
-  "AbandonedNoteWeightedTextEntry": {
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "Title",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Body",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "Weight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "pad0x4_P0XKC[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x74"
-      }
-    ]
-  },
   "SirenPuzzleLockState": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -51,11 +22,40 @@
       }
     ]
   },
+  "AbandonedNoteWeightedTextEntry": {
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "Title",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Body",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "Weight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "pad0x4_WC63M[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x74"
+      }
+    ]
+  },
   "SirenPuzzleCompleteEvent": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_N2XZJ[0x1]",
+        "Name": "pad0x1_S9YFW[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"

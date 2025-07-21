@@ -1,173 +1,4 @@
 {
-  "BTTask_RamTargetShip": {
-    "Super": "BTTask_BlackboardBase",
-    "FullSize": "0x168",
-    "InheritedSize": "0x88",
-    "ClassSize": "0xe0",
-    "Attributes": [
-      {
-        "Name": "pad0xe0_6JG9D[0xe0]",
-        "Type": "char",
-        "Size": "0xe0",
-        "Offset": "0x88"
-      }
-    ]
-  },
-  "BTTask_SailShipBesideTarget": {
-    "Super": "BTTask_BlackboardBase",
-    "FullSize": "0xd8",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x20_5MO6D[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "TrackingNoiseGenerator",
-        "Type": "struct TrackingNoiseGenerator",
-        "Size": "0x18",
-        "Offset": "0xa8"
-      },
-      {
-        "Name": "pad0x18_U7I69[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0xc0"
-      }
-    ]
-  },
-  "AIShipDebugFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ShipProxyPawn": {
-    "Super": "Pawn",
-    "FullSize": "0x450",
-    "InheritedSize": "0x418",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "Ship",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "SpawnTargetShip",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "pad0x28_5GVY1[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x428"
-      }
-    ]
-  },
-  "BTTask_AIShipSurface": {
-    "Super": "BTTask_BlackboardBase",
-    "FullSize": "0x98",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MaxSpeed",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "PreSurfaceDelay",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8c"
-      },
-      {
-        "Name": "pad0x8_XYHEM[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x90"
-      }
-    ]
-  },
-  "AIShipService": {
-    "Super": "Actor",
-    "FullSize": "0x7d0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x430",
-    "Attributes": [
-      {
-        "Name": "pad0x10_2VV0K[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "GameEventOnDemandAvailabilityHandler",
-        "Type": "class GameEventOnDemandAvailabilityHandler*",
-        "Size": "0x8",
-        "Offset": "0x3b0"
-      },
-      {
-        "Name": "pad0x18_K9N1H[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x3b8"
-      },
-      {
-        "Name": "Params",
-        "Type": "class AIShipServiceDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "pad0x3f8_8HR5G[0x3f8]",
-        "Type": "char",
-        "Size": "0x3f8",
-        "Offset": "0x3d8"
-      }
-    ]
-  },
-  "BTTask_SailShipForward": {
-    "Super": "BTTask_BlackboardBase",
-    "FullSize": "0x130",
-    "InheritedSize": "0x88",
-    "ClassSize": "0xa8",
-    "Attributes": [
-      {
-        "Name": "ShouldSailForwardKey",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "TimeToSailForwardKey",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "IsCaptainPresentKey",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
-        "Offset": "0xd8"
-      },
-      {
-        "Name": "pad0x30_1IAOV[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x100"
-      }
-    ]
-  },
   "AIShipBattlesDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x80",
@@ -194,6 +25,117 @@
       }
     ]
   },
+  "AIShipEncounterDesc": {
+    "Super": "DataAsset",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "Location",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Radius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "Moveable",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "ShowRevealBanner",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x35"
+      },
+      {
+        "Name": "ShowCompleteBanner",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x36"
+      },
+      {
+        "Name": "ShouldSpawnShipCloud",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x37"
+      },
+      {
+        "Name": "RequirePlayerShipInZoneToSpawnShips",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "EnableSecondsUntilEncounterEndsAfterLastCrewLeft",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x39"
+      },
+      {
+        "Name": "pad0x2_3Z9U1[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x3a"
+      },
+      {
+        "Name": "SecondsUntilEncounterEndsAfterLastCrewLeft",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "EnableMaximumEncounterDuration",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x3_5QY20[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x41"
+      },
+      {
+        "Name": "MaximumEncounterDuration",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "EncounterType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x7_P3EWJ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x49"
+      },
+      {
+        "Name": "Waves",
+        "Type": "TArray<struct AIShipEncounterWave>",
+        "Size": "0x10",
+        "Offset": "0x50"
+      }
+    ]
+  },
+  "DefeatAIShipEncounterConditionalStatTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "AIShipObstacleComponent": {
     "Super": "ActorComponent",
     "FullSize": "0xe0",
@@ -207,7 +149,7 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x3_LNA1L[0x3]",
+        "Name": "pad0x3_YGNJ7[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xb9"
@@ -219,30 +161,464 @@
         "Offset": "0xbc"
       },
       {
-        "Name": "pad0x20_F65KR[0x20]",
+        "Name": "pad0x20_GHXS7[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xc0"
       }
     ]
   },
-  "BTService_UpdateLocationWithActorLocation": {
-    "Super": "BTService",
-    "FullSize": "0xc0",
-    "InheritedSize": "0x70",
-    "ClassSize": "0x50",
+  "SandboxPerformanceConstraintActivity_AISmallShip": {
+    "Super": "SandboxPerformanceConstraintActivityType",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BTTask_SailShipForward": {
+    "Super": "BTTask_BlackboardBase",
+    "FullSize": "0x130",
+    "InheritedSize": "0x88",
+    "ClassSize": "0xa8",
     "Attributes": [
       {
-        "Name": "LocationKey",
+        "Name": "ShouldSailForwardKey",
         "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
-        "Offset": "0x70"
+        "Offset": "0x88"
       },
       {
-        "Name": "ActorKey",
+        "Name": "TimeToSailForwardKey",
         "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
-        "Offset": "0x98"
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "IsCaptainPresentKey",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "pad0x30_X2W6J[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x100"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintSharedResource_AIShipCloud": {
+    "Super": "SandboxPerformanceConstraintSharedResourceType",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ShipProxyPawn": {
+    "Super": "Pawn",
+    "FullSize": "0x450",
+    "InheritedSize": "0x418",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "Ship",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Name": "SpawnTargetShip",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Name": "pad0x28_EUHIS[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x428"
+      }
+    ]
+  },
+  "AIShipEncounterDynamicDesc": {
+    "Super": "Object",
+    "FullSize": "0x98",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "ShipPool",
+        "Type": "TArray<struct AIShipSizeDynamicContexts>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "FinalShip",
+        "Type": "class AIShipContextDescDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "DynamicBalancingDesc",
+        "Type": "struct AIShipEncounterDynamicBalancingDesc",
+        "Size": "0x58",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "BTTask_SailShipCircleTarget": {
+    "Super": "BTTask_BlackboardBase",
+    "FullSize": "0xc0",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "pad0x38_NF4RR[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x88"
+      }
+    ]
+  },
+  "AIShipService": {
+    "Super": "Actor",
+    "FullSize": "0x950",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x5b0",
+    "Attributes": [
+      {
+        "Name": "pad0x18_ZNAEB[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "GameEventOnDemandAvailabilityHandler",
+        "Type": "class GameEventOnDemandAvailabilityHandler*",
+        "Size": "0x8",
+        "Offset": "0x3b8"
+      },
+      {
+        "Name": "pad0x18_13XPY[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x3c0"
+      },
+      {
+        "Name": "Params",
+        "Type": "class AIShipServiceDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "pad0x570_20A3C[0x570]",
+        "Type": "char",
+        "Size": "0x570",
+        "Offset": "0x3e0"
+      }
+    ]
+  },
+  "AthenaAIShipControllerParamsDataAsset": {
+    "Super": "AthenaAIControllerParamsDataAsset",
+    "FullSize": "0x4b8",
+    "InheritedSize": "0x160",
+    "ClassSize": "0x358",
+    "Attributes": [
+      {
+        "Name": "TrackingMovementParams",
+        "Type": "struct ShipMovementParams",
+        "Size": "0x38",
+        "Offset": "0x160"
+      },
+      {
+        "Name": "TimesToSailBesideTarget",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x198"
+      },
+      {
+        "Name": "PerpendicularDistanceOffsets",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x1c8"
+      },
+      {
+        "Name": "TimesBeforeDistanceChange",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x1f8"
+      },
+      {
+        "Name": "MaxParallelDistanceOffset",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x228"
+      },
+      {
+        "Name": "AlignDistanceThreshold",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x22c"
+      },
+      {
+        "Name": "TimeToProjectIntoFutureForTracking",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x230"
+      },
+      {
+        "Name": "TargetSpeedThresholdToTrackShip",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x234"
+      },
+      {
+        "Name": "TrackingNoiseGenerator",
+        "Type": "struct TrackingNoiseGenerator",
+        "Size": "0x18",
+        "Offset": "0x238"
+      },
+      {
+        "Name": "WheelAngleMonitorDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x250"
+      },
+      {
+        "Name": "WheelAngleChangeThresholdToBreakTracking",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x254"
+      },
+      {
+        "Name": "SpeedMonitorDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x258"
+      },
+      {
+        "Name": "SpeedChangeThresholdToBreakTrackingInMPS",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x25c"
+      },
+      {
+        "Name": "TargetSpeedToConsiderAnchorLoweredInMPS",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x260"
+      },
+      {
+        "Name": "pad0x4_R4K9F[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x264"
+      },
+      {
+        "Name": "TrackingLatencyTimes",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x268"
+      },
+      {
+        "Name": "TrackingLatencyTimesWhenAnchorLowered",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x298"
+      },
+      {
+        "Name": "DistToTargetShipVSTrackingLatencyCurve",
+        "Type": "class CurveFloat*",
+        "Size": "0x8",
+        "Offset": "0x2c8"
+      },
+      {
+        "Name": "CirclingMovementParams",
+        "Type": "struct ShipMovementParams",
+        "Size": "0x38",
+        "Offset": "0x2d0"
+      },
+      {
+        "Name": "TargetSpeedThresholdInKnots",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x308"
+      },
+      {
+        "Name": "SecondsInFutureToProjectTargetLocation",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x30c"
+      },
+      {
+        "Name": "CircleRadiuses",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x310"
+      },
+      {
+        "Name": "CirclingSpeedsInDegreesPerSecond",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x340"
+      },
+      {
+        "Name": "TimesToCircleBeforeChangingRadius",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x370"
+      },
+      {
+        "Name": "MinDistanceFromTargetToStartRam",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "MaxDistanceFromTargetToStartRam",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3a4"
+      },
+      {
+        "Name": "MaxSpeedToRamTarget",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3a8"
+      },
+      {
+        "Name": "RammingMaxTurnSpeed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3ac"
+      },
+      {
+        "Name": "RammingTimeDampingScalar",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3b0"
+      },
+      {
+        "Name": "MinAngleToTargetToAttemptRam",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3b4"
+      },
+      {
+        "Name": "RammingLocationOffsets",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x3b8"
+      },
+      {
+        "Name": "SailingForwardMovementParams",
+        "Type": "struct ShipMovementParams",
+        "Size": "0x38",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "MinAllowedDistanceToObstacle",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x420"
+      },
+      {
+        "Name": "MaxPathAvoidanceDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x424"
+      },
+      {
+        "Name": "PassiveSailingMovementParams",
+        "Type": "struct ShipMovementParams",
+        "Size": "0x38",
+        "Offset": "0x428"
+      },
+      {
+        "Name": "ChanceToAnchor",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x460"
+      },
+      {
+        "Name": "pad0x4_GOZ8D[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x464"
+      },
+      {
+        "Name": "TimesToStayAnchored",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x468"
+      },
+      {
+        "Name": "NumIslandsToVisitBeforeReturning",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x498"
+      },
+      {
+        "Name": "DistanceFromIslandsToSailTo",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x49c"
+      },
+      {
+        "Name": "DistanceToTargetToDropAnchor",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4a0"
+      },
+      {
+        "Name": "pad0x4_S7J0V[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4a4"
+      },
+      {
+        "Name": "AggressionOverrideImpactIDs",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x4a8"
+      }
+    ]
+  },
+  "AIShipEncounterSpawnParamsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0xd8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "SpawnDepth",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Radius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "MinSafeSpawnDistanceFromOtherShips",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "TimeDelayBetweenWaves",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "RelativeSpawnLocationParams",
+        "Type": "struct RelativeSpawnLocationGeneratorParams",
+        "Size": "0xa0",
+        "Offset": "0x38"
       }
     ]
   },
@@ -259,12 +635,73 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x7_01HO2[0x7]",
+        "Name": "pad0x7_YOB4K[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x89"
       }
     ]
+  },
+  "AIShipObstacleServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AIShipTelemetryComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x100",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x48_WSKB6[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0xb8"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintActivity_AIShip": {
+    "Super": "SandboxPerformanceConstraintActivityType",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BTTask_AIShipSurface": {
+    "Super": "BTTask_BlackboardBase",
+    "FullSize": "0x98",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MaxSpeed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "PreSurfaceDelay",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8c"
+      },
+      {
+        "Name": "pad0x8_WYMXN[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x90"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintSharedResource_AISmallShip": {
+    "Super": "SandboxPerformanceConstraintSharedResourceType",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "AIShipServiceDataAsset": {
     "Super": "DataAsset",
@@ -303,7 +740,7 @@
         "Offset": "0x90"
       },
       {
-        "Name": "pad0x4_WU5CM[0x4]",
+        "Name": "pad0x4_BTEYQ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x94"
@@ -351,7 +788,7 @@
         "Offset": "0x218"
       },
       {
-        "Name": "pad0x4_ZLQ7Y[0x4]",
+        "Name": "pad0x4_0OQSY[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x21c"
@@ -369,7 +806,7 @@
         "Offset": "0x250"
       },
       {
-        "Name": "pad0x4_E40ZY[0x4]",
+        "Name": "pad0x4_TQRFI[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x254"
@@ -393,10 +830,24 @@
         "Offset": "0x270"
       },
       {
-        "Name": "pad0x4_EIRCE[0x4]",
+        "Name": "pad0x4_83KSV[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x274"
+      }
+    ]
+  },
+  "CursedSailsCampaignDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Battles",
+        "Type": "TArray<struct CursedSailsBattleParams>",
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },
@@ -406,6 +857,407 @@
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "BTService_UpdateIfShipShouldBreakTracking": {
+    "Super": "BTService",
+    "FullSize": "0x150",
+    "InheritedSize": "0x70",
+    "ClassSize": "0xe0",
+    "Attributes": [
+      {
+        "Name": "TargetActorKey",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "DisableTrackingKey",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "ShouldSailForwardKey",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "TimeToSailForwardKey",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "CaptainIsPresentKey",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "pad0x18_LJ04V[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x138"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintActivity_AIShipCloud": {
+    "Super": "SandboxPerformanceConstraintActivityType",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AIShipDebugFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BTTask_RamTargetShip": {
+    "Super": "BTTask_BlackboardBase",
+    "FullSize": "0x168",
+    "InheritedSize": "0x88",
+    "ClassSize": "0xe0",
+    "Attributes": [
+      {
+        "Name": "pad0xe0_YJDUU[0xe0]",
+        "Type": "char",
+        "Size": "0xe0",
+        "Offset": "0x88"
+      }
+    ]
+  },
+  "BTService_UpdateTargetLocationForPassiveShip": {
+    "Super": "BTService",
+    "FullSize": "0xd0",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "TargetLocationKey",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "AngleOffsetFromForwardDegreesWhenNoIslands",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "TargetLocationDistanceWhenNoIslands",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x9c"
+      },
+      {
+        "Name": "pad0x30_3ZKK4[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0xa0"
+      }
+    ]
+  },
+  "AIShipEncounterParamsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "EventType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "SpawnParams",
+        "Type": "class AIShipEncounterSpawnParamsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "ContextParams",
+        "Type": "class AIShipContextParamsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "DefaultContextDesc",
+        "Type": "class AIShipContextDescDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "ShipPawnClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "BuoyantObjectSpawnProfileAsset",
+        "Type": "class BuoyantObjectSpawnProfileDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "EventSignalAssetClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "EventSignalHeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "OuterRadiusMultiplier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x64"
+      },
+      {
+        "Name": "MigrationRadiusMultiplier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "InitialEncounterEntryDelay",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x6c"
+      },
+      {
+        "Name": "MinEngagedDistanceFromPlayers",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "pad0x4_XRM4E[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x74"
+      },
+      {
+        "Name": "MinEngagedDistanceFromPlayersRemoteConfigKey",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "EnableMusicWhenShipsHaveNoTarget",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "pad0x3_LTUPV[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x89"
+      },
+      {
+        "Name": "SecondsUntilEncounterEndsAfterLastCrewLeft",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8c"
+      },
+      {
+        "Name": "MaximumEncounterDuration",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "OnDemandAvailabilityRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x94"
+      },
+      {
+        "Name": "RegisterAsMigrationBlocker",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x7_YRMBJ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x99"
+      }
+    ]
+  },
+  "AIShipGameSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x60",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "AIShipServiceDataAssetFileLocation",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "AIShipServiceDataAssetFileLocationOverride",
+        "Type": "struct ToggleableAIShipsServiceDataAssetFileLocation",
+        "Size": "0x18",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "AIShipObstacleService": {
+    "Super": "Actor",
+    "FullSize": "0x428",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "pad0x88_IKUVB[0x88]",
+        "Type": "char",
+        "Size": "0x88",
+        "Offset": "0x3a0"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintSharedResource_AILargeShip": {
+    "Super": "SandboxPerformanceConstraintSharedResourceType",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AthenaAIShipController": {
+    "Super": "AthenaAIControllerBase",
+    "FullSize": "0x778",
+    "InheritedSize": "0x5f0",
+    "ClassSize": "0x188",
+    "Attributes": [
+      {
+        "Name": "ShouldRemoveSailDynamics",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x5f0"
+      },
+      {
+        "Name": "pad0x7_2TQWO[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x5f1"
+      },
+      {
+        "Name": "BTAsset",
+        "Type": "class BehaviorTree*",
+        "Size": "0x8",
+        "Offset": "0x5f8"
+      },
+      {
+        "Name": "pad0x28_C5QF3[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x600"
+      },
+      {
+        "Name": "ShipParamsDataAsset",
+        "Type": "class AthenaAIShipControllerParamsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x628"
+      },
+      {
+        "Name": "StatusEffectManagerComponent",
+        "Type": "class StatusEffectManagerComponent*",
+        "Size": "0x8",
+        "Offset": "0x630"
+      },
+      {
+        "Name": "AnchorDynamicsParams",
+        "Type": "struct StandardAnchorDynamicsParameters",
+        "Size": "0x28",
+        "Offset": "0x638"
+      },
+      {
+        "Name": "pad0x118_ZMZE9[0x118]",
+        "Type": "char",
+        "Size": "0x118",
+        "Offset": "0x660"
+      }
+    ]
+  },
+  "BTTask_SailShipToLocation": {
+    "Super": "BTTask_BlackboardBase",
+    "FullSize": "0xd0",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "TargetLocationKey",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "DistanceThresholdToConsiderTargetReached",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "pad0x1c_MMG8A[0x1c]",
+        "Type": "char",
+        "Size": "0x1c",
+        "Offset": "0xb4"
+      }
+    ]
+  },
+  "IsAIShipEncounterTypeStatCondition": {
+    "Super": "StatCondition",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "EncounterType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x7_EACWI[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x29"
+      }
+    ]
+  },
+  "BTService_UpdateLocationWithActorLocation": {
+    "Super": "BTService",
+    "FullSize": "0xc0",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "LocationKey",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "ActorKey",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x98"
+      }
+    ]
   },
   "AIShipContextParamsDataAsset": {
     "Super": "DataAsset",
@@ -432,7 +1284,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x3_TCX8B[0x3]",
+        "Name": "pad0x3_I6CHH[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x31"
@@ -570,846 +1422,10 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x7_OR4OX[0x7]",
+        "Name": "pad0x7_CEYD5[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x89"
-      }
-    ]
-  },
-  "AthenaAIShipController": {
-    "Super": "AthenaAIControllerBase",
-    "FullSize": "0x778",
-    "InheritedSize": "0x5f0",
-    "ClassSize": "0x188",
-    "Attributes": [
-      {
-        "Name": "ShouldRemoveSailDynamics",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x5f0"
-      },
-      {
-        "Name": "pad0x7_SGK11[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x5f1"
-      },
-      {
-        "Name": "BTAsset",
-        "Type": "class BehaviorTree*",
-        "Size": "0x8",
-        "Offset": "0x5f8"
-      },
-      {
-        "Name": "pad0x28_A1US1[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x600"
-      },
-      {
-        "Name": "ShipParamsDataAsset",
-        "Type": "class AthenaAIShipControllerParamsDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x628"
-      },
-      {
-        "Name": "StatusEffectManagerComponent",
-        "Type": "class StatusEffectManagerComponent*",
-        "Size": "0x8",
-        "Offset": "0x630"
-      },
-      {
-        "Name": "AnchorDynamicsParams",
-        "Type": "struct StandardAnchorDynamicsParameters",
-        "Size": "0x28",
-        "Offset": "0x638"
-      },
-      {
-        "Name": "pad0x118_FZ12G[0x118]",
-        "Type": "char",
-        "Size": "0x118",
-        "Offset": "0x660"
-      }
-    ]
-  },
-  "DefeatAIShipEncounterConditionalStatTrigger": {
-    "Super": "ConditionalStatsTriggerType",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AthenaAIShipControllerParamsDataAsset": {
-    "Super": "AthenaAIControllerParamsDataAsset",
-    "FullSize": "0x4b8",
-    "InheritedSize": "0x160",
-    "ClassSize": "0x358",
-    "Attributes": [
-      {
-        "Name": "TrackingMovementParams",
-        "Type": "struct ShipMovementParams",
-        "Size": "0x38",
-        "Offset": "0x160"
-      },
-      {
-        "Name": "TimesToSailBesideTarget",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x198"
-      },
-      {
-        "Name": "PerpendicularDistanceOffsets",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x1c8"
-      },
-      {
-        "Name": "TimesBeforeDistanceChange",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x1f8"
-      },
-      {
-        "Name": "MaxParallelDistanceOffset",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x228"
-      },
-      {
-        "Name": "AlignDistanceThreshold",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x22c"
-      },
-      {
-        "Name": "TimeToProjectIntoFutureForTracking",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x230"
-      },
-      {
-        "Name": "TargetSpeedThresholdToTrackShip",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x234"
-      },
-      {
-        "Name": "TrackingNoiseGenerator",
-        "Type": "struct TrackingNoiseGenerator",
-        "Size": "0x18",
-        "Offset": "0x238"
-      },
-      {
-        "Name": "WheelAngleMonitorDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x250"
-      },
-      {
-        "Name": "WheelAngleChangeThresholdToBreakTracking",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x254"
-      },
-      {
-        "Name": "SpeedMonitorDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x258"
-      },
-      {
-        "Name": "SpeedChangeThresholdToBreakTrackingInMPS",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x25c"
-      },
-      {
-        "Name": "TargetSpeedToConsiderAnchorLoweredInMPS",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x260"
-      },
-      {
-        "Name": "pad0x4_8VPGS[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x264"
-      },
-      {
-        "Name": "TrackingLatencyTimes",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x268"
-      },
-      {
-        "Name": "TrackingLatencyTimesWhenAnchorLowered",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x298"
-      },
-      {
-        "Name": "DistToTargetShipVSTrackingLatencyCurve",
-        "Type": "class CurveFloat*",
-        "Size": "0x8",
-        "Offset": "0x2c8"
-      },
-      {
-        "Name": "CirclingMovementParams",
-        "Type": "struct ShipMovementParams",
-        "Size": "0x38",
-        "Offset": "0x2d0"
-      },
-      {
-        "Name": "TargetSpeedThresholdInKnots",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x308"
-      },
-      {
-        "Name": "SecondsInFutureToProjectTargetLocation",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x30c"
-      },
-      {
-        "Name": "CircleRadiuses",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x310"
-      },
-      {
-        "Name": "CirclingSpeedsInDegreesPerSecond",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x340"
-      },
-      {
-        "Name": "TimesToCircleBeforeChangingRadius",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x370"
-      },
-      {
-        "Name": "MinDistanceFromTargetToStartRam",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "MaxDistanceFromTargetToStartRam",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3a4"
-      },
-      {
-        "Name": "MaxSpeedToRamTarget",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3a8"
-      },
-      {
-        "Name": "RammingMaxTurnSpeed",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3ac"
-      },
-      {
-        "Name": "RammingTimeDampingScalar",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3b0"
-      },
-      {
-        "Name": "MinAngleToTargetToAttemptRam",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3b4"
-      },
-      {
-        "Name": "RammingLocationOffsets",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x3b8"
-      },
-      {
-        "Name": "SailingForwardMovementParams",
-        "Type": "struct ShipMovementParams",
-        "Size": "0x38",
-        "Offset": "0x3e8"
-      },
-      {
-        "Name": "MinAllowedDistanceToObstacle",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x420"
-      },
-      {
-        "Name": "MaxPathAvoidanceDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x424"
-      },
-      {
-        "Name": "PassiveSailingMovementParams",
-        "Type": "struct ShipMovementParams",
-        "Size": "0x38",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "ChanceToAnchor",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x460"
-      },
-      {
-        "Name": "pad0x4_T33M4[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x464"
-      },
-      {
-        "Name": "TimesToStayAnchored",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x468"
-      },
-      {
-        "Name": "NumIslandsToVisitBeforeReturning",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x498"
-      },
-      {
-        "Name": "DistanceFromIslandsToSailTo",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x49c"
-      },
-      {
-        "Name": "DistanceToTargetToDropAnchor",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4a0"
-      },
-      {
-        "Name": "pad0x4_4Y5BB[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4a4"
-      },
-      {
-        "Name": "AggressionOverrideImpactIDs",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x4a8"
-      }
-    ]
-  },
-  "CursedSailsCampaignDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Battles",
-        "Type": "TArray<struct CursedSailsBattleParams>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "AIShipEncounterSpawnParamsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0xd8",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xb0",
-    "Attributes": [
-      {
-        "Name": "SpawnDepth",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Radius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "MinSafeSpawnDistanceFromOtherShips",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "TimeDelayBetweenWaves",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "RelativeSpawnLocationParams",
-        "Type": "struct RelativeSpawnLocationGeneratorParams",
-        "Size": "0xa0",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "AIShipEncounterParamsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0xa0",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "EventType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "SpawnParams",
-        "Type": "class AIShipEncounterSpawnParamsDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "ContextParams",
-        "Type": "class AIShipContextParamsDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "DefaultContextDesc",
-        "Type": "class AIShipContextDescDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "ShipPawnClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "BuoyantObjectSpawnProfileAsset",
-        "Type": "class BuoyantObjectSpawnProfileDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "EventSignalAssetClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "EventSignalHeight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "OuterRadiusMultiplier",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x64"
-      },
-      {
-        "Name": "MigrationRadiusMultiplier",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "InitialEncounterEntryDelay",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x6c"
-      },
-      {
-        "Name": "MinEngagedDistanceFromPlayers",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "pad0x4_2HZBI[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x74"
-      },
-      {
-        "Name": "MinEngagedDistanceFromPlayersRemoteConfigKey",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "EnableMusicWhenShipsHaveNoTarget",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "pad0x3_5ZXPL[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x89"
-      },
-      {
-        "Name": "SecondsUntilEncounterEndsAfterLastCrewLeft",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8c"
-      },
-      {
-        "Name": "MaximumEncounterDuration",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "OnDemandAvailabilityRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x94"
-      },
-      {
-        "Name": "RegisterAsMigrationBlocker",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "pad0x7_C8Q1Z[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x99"
-      }
-    ]
-  },
-  "BTTask_SailShipCircleTarget": {
-    "Super": "BTTask_BlackboardBase",
-    "FullSize": "0xc0",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "pad0x38_D9JAA[0x38]",
-        "Type": "char",
-        "Size": "0x38",
-        "Offset": "0x88"
-      }
-    ]
-  },
-  "BTTask_SailShipToLocation": {
-    "Super": "BTTask_BlackboardBase",
-    "FullSize": "0xd0",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "TargetLocationKey",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "DistanceThresholdToConsiderTargetReached",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "pad0x1c_VXWWN[0x1c]",
-        "Type": "char",
-        "Size": "0x1c",
-        "Offset": "0xb4"
-      }
-    ]
-  },
-  "BTService_UpdateIfShipShouldBreakTracking": {
-    "Super": "BTService",
-    "FullSize": "0x150",
-    "InheritedSize": "0x70",
-    "ClassSize": "0xe0",
-    "Attributes": [
-      {
-        "Name": "TargetActorKey",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "DisableTrackingKey",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "ShouldSailForwardKey",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "TimeToSailForwardKey",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "CaptainIsPresentKey",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
-        "Offset": "0x110"
-      },
-      {
-        "Name": "pad0x18_88IT7[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x138"
-      }
-    ]
-  },
-  "AIShipEncounterDynamicDesc": {
-    "Super": "Object",
-    "FullSize": "0x98",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "ShipPool",
-        "Type": "TArray<struct AIShipSizeDynamicContexts>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "FinalShip",
-        "Type": "class AIShipContextDescDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "DynamicBalancingDesc",
-        "Type": "struct AIShipEncounterDynamicBalancingDesc",
-        "Size": "0x58",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "IsAIShipEncounterTypeStatCondition": {
-    "Super": "StatCondition",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "EncounterType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x7_CAOBL[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x29"
-      }
-    ]
-  },
-  "AIShipGameSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x60",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "AIShipServiceDataAssetFileLocation",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "AIShipServiceDataAssetFileLocationOverride",
-        "Type": "struct ToggleableAIShipsServiceDataAssetFileLocation",
-        "Size": "0x18",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "AIShipObstacleService": {
-    "Super": "Actor",
-    "FullSize": "0x428",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x88",
-    "Attributes": [
-      {
-        "Name": "pad0x88_P66R0[0x88]",
-        "Type": "char",
-        "Size": "0x88",
-        "Offset": "0x3a0"
-      }
-    ]
-  },
-  "BTService_UpdateTargetLocationForPassiveShip": {
-    "Super": "BTService",
-    "FullSize": "0xd0",
-    "InheritedSize": "0x70",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "TargetLocationKey",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "AngleOffsetFromForwardDegreesWhenNoIslands",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "TargetLocationDistanceWhenNoIslands",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x9c"
-      },
-      {
-        "Name": "pad0x30_0D2N7[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0xa0"
-      }
-    ]
-  },
-  "AIShipTelemetryComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x100",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "pad0x48_06VIG[0x48]",
-        "Type": "char",
-        "Size": "0x48",
-        "Offset": "0xb8"
-      }
-    ]
-  },
-  "AIShipObstacleServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AIShipEncounterDesc": {
-    "Super": "DataAsset",
-    "FullSize": "0x60",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "Location",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Radius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "Moveable",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "ShowRevealBanner",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x35"
-      },
-      {
-        "Name": "ShowCompleteBanner",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x36"
-      },
-      {
-        "Name": "ShouldSpawnShipCloud",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x37"
-      },
-      {
-        "Name": "RequirePlayerShipInZoneToSpawnShips",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "EnableSecondsUntilEncounterEndsAfterLastCrewLeft",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x39"
-      },
-      {
-        "Name": "pad0x2_63LZK[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x3a"
-      },
-      {
-        "Name": "SecondsUntilEncounterEndsAfterLastCrewLeft",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "EnableMaximumEncounterDuration",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "pad0x3_41TQQ[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x41"
-      },
-      {
-        "Name": "MaximumEncounterDuration",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "EncounterType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "pad0x7_BRWY7[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x49"
-      },
-      {
-        "Name": "Waves",
-        "Type": "TArray<struct AIShipEncounterWave>",
-        "Size": "0x10",
-        "Offset": "0x50"
       }
     ]
   },
@@ -1432,7 +1448,7 @@
         "Offset": "0x29"
       },
       {
-        "Name": "pad0x6_0GDM0[0x6]",
+        "Name": "pad0x6_KRHQ5[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x2a"
@@ -1508,6 +1524,46 @@
         "Type": "TArray<struct AIShipBootyItem>",
         "Size": "0x10",
         "Offset": "0xd0"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintActivity_AILargeShip": {
+    "Super": "SandboxPerformanceConstraintActivityType",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SandboxPerformanceConstraintSharedResource_AIShip": {
+    "Super": "SandboxPerformanceConstraintSharedResourceType",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BTTask_SailShipBesideTarget": {
+    "Super": "BTTask_BlackboardBase",
+    "FullSize": "0xd8",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x20_9H2AH[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "TrackingNoiseGenerator",
+        "Type": "struct TrackingNoiseGenerator",
+        "Size": "0x18",
+        "Offset": "0xa8"
+      },
+      {
+        "Name": "pad0x18_SW2SN[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0xc0"
       }
     ]
   },

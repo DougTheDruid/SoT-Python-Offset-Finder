@@ -6,34 +6,10 @@
 #include "SlateCore_Structs.h"
 
 
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class SlateWidgetStyleAsset: public Object
-{
-public:
-	class SlateWidgetStyleContainerBase*                         CustomStyle;                                       // 0x28(0x8)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SlateTypes: public Object
+class FontProviderInterface: public Interface
 {
 public:
-};
-
-
-// Size 0x98 (Full Size[0xc0] - InheritedSize[0x28]
-class FontBulkData: public Object
-{
-public:
-	char                                                         pad0x98_TJK86[0x98];                               // 0x28(0x98)
-};
-
-
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class SlateWidgetStyleContainerBase: public Object
-{
-public:
-	char                                                         pad0x8_HRNXV[0x8];                                 // 0x28(0x8)
 };
 
 
@@ -45,9 +21,33 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class FontProviderInterface: public Interface
+class SlateTypes: public Object
 {
 public:
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class SlateWidgetStyleContainerBase: public Object
+{
+public:
+	char                                                         pad0x8_ABH35[0x8];                                 // 0x28(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class SlateWidgetStyleAsset: public Object
+{
+public:
+	class SlateWidgetStyleContainerBase*                         CustomStyle;                                       // 0x28(0x8)
+};
+
+
+// Size 0x98 (Full Size[0xc0] - InheritedSize[0x28]
+class FontBulkData: public Object
+{
+public:
+	char                                                         pad0x98_RT21Z[0x98];                               // 0x28(0x98)
 };
 
 

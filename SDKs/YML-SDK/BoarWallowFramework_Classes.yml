@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BoarWallow:
   Attributes:
-  - Name: pad0x18_ABTGA[0x18]
+  - Name: pad0x18_W9KRE[0x18]
     Offset: '0x3a0'
     Size: '0x18'
     Type: char
@@ -14,7 +14,7 @@ BoarWallow:
     Offset: '0x3bc'
     Size: '0x4'
     Type: int
-  - Name: pad0x80_EKCDS[0x80]
+  - Name: pad0x80_4AWXY[0x80]
     Offset: '0x3c0'
     Size: '0x80'
     Type: char
@@ -28,7 +28,7 @@ BoarWallow:
   Super: Actor
 BoarWallowService:
   Attributes:
-  - Name: pad0xd0_7FO1G[0xd0]
+  - Name: pad0xd0_VDS9Z[0xd0]
     Offset: '0x3a0'
     Size: '0xd0'
     Type: char
@@ -40,7 +40,7 @@ BoarWallowService:
     Offset: '0x478'
     Size: '0x10'
     Type: TArray<class Pawn*>
-  - Name: pad0x338_4TW4L[0x338]
+  - Name: pad0x338_SSSFD[0x338]
     Offset: '0x488'
     Size: '0x338'
     Type: char
@@ -72,7 +72,7 @@ BoarsAndBoarWallowRandomiserInterface:
   Super: Interface
 BoarsAndBoarWallowRandomiserService:
   Attributes:
-  - Name: pad0x8_5L7NS[0x8]
+  - Name: pad0x8_RURXJ[0x8]
     Offset: '0x3a0'
     Size: '0x8'
     Type: char
@@ -80,7 +80,7 @@ BoarsAndBoarWallowRandomiserService:
     Offset: '0x3a8'
     Size: '0x10'
     Type: TArray<struct Name>
-  - Name: pad0x98_SVH8J[0x98]
+  - Name: pad0x98_UQ8DI[0x98]
     Offset: '0x3b8'
     Size: '0x98'
     Type: char
@@ -98,7 +98,7 @@ FaunaBoarWallowFinder:
     Offset: '0xc0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_YS22W[0x7]
+  - Name: pad0x7_G1F3U[0x7]
     Offset: '0xc1'
     Size: '0x7'
     Type: char

@@ -1,12 +1,12 @@
 {
-  "HarpoonDropItemInterface": {
+  "PortableHarpoonQueriableInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "PortableHarpoonQueriableInterface": {
+  "HarpoonDropItemInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

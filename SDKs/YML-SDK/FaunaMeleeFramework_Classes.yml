@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 FaunaMeleeComponent:
   Attributes:
-  - Name: pad0x8_PCNXO[0x8]
+  - Name: pad0x8_SYZGQ[0x8]
     Offset: '0x2d0'
     Size: '0x8'
     Type: char
@@ -14,7 +14,7 @@ FaunaMeleeComponent:
     Offset: '0x308'
     Size: '0x54'
     Type: struct KnockBackInfo
-  - Name: pad0x4_DR75O[0x4]
+  - Name: pad0x4_97RKK[0x4]
     Offset: '0x35c'
     Size: '0x4'
     Type: char
@@ -30,7 +30,7 @@ FaunaMeleeComponent:
     Offset: '0x36c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_8DSJR[0x3]
+  - Name: pad0x3_ZSZ33[0x3]
     Offset: '0x36d'
     Size: '0x3'
     Type: char
@@ -42,7 +42,7 @@ FaunaMeleeComponent:
     Offset: '0x374'
     Size: '0x1'
     Type: bool
-  - Name: pad0xb_5AEFS[0xb]
+  - Name: pad0xb_CP287[0xb]
     Offset: '0x375'
     Size: '0xb'
     Type: char

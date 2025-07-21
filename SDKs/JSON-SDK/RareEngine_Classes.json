@@ -1,4 +1,25 @@
 {
+  "RareHUD": {
+    "Super": "HUD",
+    "FullSize": "0x498",
+    "InheritedSize": "0x498",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "StallDetector": {
+    "Super": "Object",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x28_H3APG[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "AssetReferencer": {
     "Super": "DataAsset",
     "FullSize": "0x38",
@@ -13,6 +34,20 @@
       }
     ]
   },
+  "AudioHardwareDeviceService": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_KT0RO[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "RareGameEngine": {
     "Super": "GameEngine",
     "FullSize": "0xaa0",
@@ -20,40 +55,12 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "pad0x58_YPWJQ[0x58]",
+        "Name": "pad0x58_86W3K[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0xa48"
       }
     ]
-  },
-  "StaticMeshActorBlueprintLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "StallDetector": {
-    "Super": "Object",
-    "FullSize": "0x50",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x28_BEXF8[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "RareHUD": {
-    "Super": "HUD",
-    "FullSize": "0x498",
-    "InheritedSize": "0x498",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "HitchDiagnosisBlueprintFunctionLibrary": {
     "Super": "BlueprintFunctionLibrary",
@@ -62,19 +69,12 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "AudioHardwareDeviceService": {
-    "Super": "Object",
-    "FullSize": "0x40",
+  "StaticMeshActorBlueprintLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
     "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_QVNDX[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x28"
-      }
-    ]
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "MemoryUsageVisualiserSettings": {
     "Super": "Object",

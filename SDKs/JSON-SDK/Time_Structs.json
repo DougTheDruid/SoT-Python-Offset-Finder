@@ -1,4 +1,37 @@
 {
+  "ReplicatedTimespan": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_RNB4S[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventTimeServiceMigrated": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_OVFHZ[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GameTime": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "DateTimeRepresentation",
+        "Type": "struct DateTime",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "EventSetDateTime": {
     "ClassSize": "0x14",
     "Attributes": [
@@ -34,64 +67,14 @@
       }
     ]
   },
-  "ReplicatedTimespan": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_W1TWK[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "ReplicatedDateTime": {
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_KTNXG[0x8]",
+        "Name": "pad0x8_APQZQ[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "EventTimeServiceMigrated": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_LFIXE[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "GameTime": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "DateTimeRepresentation",
-        "Type": "struct DateTime",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ReplicatedAuthoritativeTime": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "WorldTime",
-        "Type": "struct ReplicatedDateTime",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SyncTime",
-        "Type": "struct ReplicatedDateTime",
-        "Size": "0x8",
-        "Offset": "0x8"
       }
     ]
   },
@@ -107,6 +90,23 @@
       {
         "Name": "End",
         "Type": "struct GameTime",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "ReplicatedAuthoritativeTime": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "WorldTime",
+        "Type": "struct ReplicatedDateTime",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SyncTime",
+        "Type": "struct ReplicatedDateTime",
         "Size": "0x8",
         "Offset": "0x8"
       }

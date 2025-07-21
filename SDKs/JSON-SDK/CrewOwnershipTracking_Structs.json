@@ -1,4 +1,21 @@
 {
+  "CrewTrackedItemOwnershipSet": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Item",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "CrewTrackedItemOwnershipChanged": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -27,7 +44,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_B2LIA[0x7]",
+        "Name": "pad0x7_G12JX[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x29"
@@ -55,25 +72,8 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x10_GPF4T[0x10]",
+        "Name": "pad0x10_DFKBG[0x10]",
         "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "CrewTrackedItemOwnershipSet": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Item",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CrewId",
-        "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x8"
       }

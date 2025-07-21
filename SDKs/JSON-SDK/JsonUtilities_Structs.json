@@ -10,78 +10,6 @@
       }
     ]
   },
-  "TestMessageUInt64": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_6VBAJ[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TestMessageTimespan": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Timespan",
-        "Type": "struct Timespan",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TestMessageInt64": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_RF52M[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TestUStructMapSerializationObject": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x50_TP373[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TestTextObject": {
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "TestText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TestTextExport",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "TestStringMapSerializationObject": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x50_O9BLV[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "TestFloatObject": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -99,11 +27,55 @@
       }
     ]
   },
+  "TestMessageUInt64": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_KD2GP[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TestMessageInt64": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_J4KEO[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TestInt32MapSerializationObject": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x50_L263E[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TestMessageTimespan": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Timespan",
+        "Type": "struct Timespan",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "TestInvalidStringMapSerializationObject": {
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x50_HJTWL[0x50]",
+        "Name": "pad0x50_5X876[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x0"
@@ -114,20 +86,9 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x18_RZFES[0x18]",
+        "Name": "pad0x18_RT5FK[0x18]",
         "Type": "char",
         "Size": "0x18",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TestInt32MapSerializationObject": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x50_ZI76F[0x50]",
-        "Type": "char",
-        "Size": "0x50",
         "Offset": "0x0"
       }
     ]
@@ -142,7 +103,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_BDB76[0x3]",
+        "Name": "pad0x3_KD24Y[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -167,6 +128,28 @@
       }
     ]
   },
+  "TestUStructMapSerializationObject": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x50_6ZSF3[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TestStringMapSerializationObject": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x50_DJFMD[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "TestEnumObject": {
     "ClassSize": "0x1",
     "Attributes": [
@@ -175,6 +158,23 @@
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "TestTextObject": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "TestText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TestTextExport",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x38"
       }
     ]
   },

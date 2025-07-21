@@ -6,6 +6,24 @@
 #include "WorldEdgeItemFramework_Structs.h"
 
 
+// Size 0x260 (Full Size[0x600] - InheritedSize[0x3a0]
+class WorldEdgeItemService: public Actor
+{
+public:
+	char                                                         pad0x8_I7VCD[0x8];                                 // 0x3a0(0x8)
+	class WorldEdgeItemServiceParams*                            WorldEdgeItemParameters;                           // 0x3a8(0x8)
+	struct EnvQueryRequest                                       SpawnItemEQSRequest;                               // 0x3b0(0x170)
+	char                                                         pad0xe0_BD8J5[0xe0];                               // 0x520(0xe0)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class WorldEdgeItemServiceInterface: public Interface
+{
+public:
+};
+
+
 // Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
 class WorldEdgeItemServiceParams: public DataAsset
 {
@@ -15,24 +33,6 @@ public:
 	float                                                        TimeToSinkFor;                                     // 0x34(0x4)
 	float                                                        AdditionalMoveDistance;                            // 0x38(0x4)
 	int                                                          MaxBatchItemsPerSlice;                             // 0x3c(0x4)
-};
-
-
-// Size 0x260 (Full Size[0x600] - InheritedSize[0x3a0]
-class WorldEdgeItemService: public Actor
-{
-public:
-	char                                                         pad0x8_MV5M4[0x8];                                 // 0x3a0(0x8)
-	class WorldEdgeItemServiceParams*                            WorldEdgeItemParameters;                           // 0x3a8(0x8)
-	struct EnvQueryRequest                                       SpawnItemEQSRequest;                               // 0x3b0(0x170)
-	char                                                         pad0xe0_KQ4V8[0xe0];                               // 0x520(0xe0)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WorldEdgeItemServiceInterface: public Interface
-{
-public:
 };
 
 

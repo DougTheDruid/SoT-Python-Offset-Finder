@@ -12,12 +12,6 @@
         "Offset": "0x3a0"
       },
       {
-        "Name": "pad0x6d2678d8_U7OZE[0x6d2678d8]",
-        "Type": "char",
-        "Size": "0x6d2678d8",
-        "Offset": "0x3a8"
-      },
-      {
         "Name": "Triton",
         "Type": "class TritonComponent*",
         "Size": "0x8",

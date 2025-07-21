@@ -1,25 +1,12 @@
 {
-  "ActorOfInterestComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ActorOfInterestId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "pad0x18_T31RB[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0xc0"
-      }
-    ]
-  },
   "ActorOfInterestBlueprintFunctionLibrary": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ActorOfInterestId": {
     "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -33,7 +20,7 @@
     "ClassSize": "0x100",
     "Attributes": [
       {
-        "Name": "pad0x60_1OL74[0x60]",
+        "Name": "pad0x60_YOR4P[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0x3a0"
@@ -46,15 +33,28 @@
       }
     ]
   },
+  "ActorOfInterestComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ActorOfInterestId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "pad0x18_6OKKU[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0xc0"
+      }
+    ]
+  },
   "ActorOfInterestServiceInterface": {
     "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ActorOfInterestId": {
-    "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",

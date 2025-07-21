@@ -28,7 +28,7 @@ NamedInterfaces:
     Offset: '0x38'
     Size: '0x10'
     Type: TArray<struct NamedInterfaceDef>
-  - Name: pad0x18_FPTJF[0x18]
+  - Name: pad0x18_U297O[0x18]
     Offset: '0x48'
     Size: '0x18'
     Type: char

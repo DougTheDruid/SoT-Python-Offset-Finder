@@ -13,7 +13,7 @@ ItemAndReward:
   ClassSize: '0x10'
 MerchantContract:
   Attributes:
-  - Name: pad0x20_57G1Q[0x20]
+  - Name: pad0x20_E4AWM[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
@@ -21,7 +21,7 @@ MerchantContract:
     Offset: '0x20'
     Size: '0x10'
     Type: TArray<struct MerchantContractDeliveryRequest>
-  - Name: pad0x98_ZKL1H[0x98]
+  - Name: pad0x98_3IF4O[0x98]
     Offset: '0x30'
     Size: '0x98'
     Type: char
@@ -32,7 +32,7 @@ MerchantContractDeliveryRequest:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_AL0RT[0x4]
+  - Name: pad0x4_DLZZM[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -52,7 +52,7 @@ MerchantContractDeliveryRequest:
     Offset: '0x38'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_OUH29[0x4]
+  - Name: pad0x4_ZR1BG[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char

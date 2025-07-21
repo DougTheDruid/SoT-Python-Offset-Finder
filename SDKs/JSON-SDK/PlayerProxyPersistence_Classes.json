@@ -1,11 +1,4 @@
 {
-  "ProxyPersistenceId": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "PlayerProxyPersistenceComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x120",
@@ -19,7 +12,7 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x60_L217V[0x60]",
+        "Name": "pad0x60_VIBFT[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0xc0"
@@ -42,6 +35,13 @@
   },
   "PlayerPersistentProxyInterface": {
     "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ProxyPersistenceId": {
+    "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",

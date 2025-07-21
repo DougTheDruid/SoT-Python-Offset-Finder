@@ -38,20 +38,23 @@ public:
 };
 
 
-// Size 0xf0 (Full Size[0x1a8] - InheritedSize[0xb8]
+// Size 0x108 (Full Size[0x1c0] - InheritedSize[0xb8]
 class OverheatingComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x30_2NXSM[0x30];                               // 0xb8(0x30)
-	class StaticMeshComponent*                                   VisualiserStaticMeshComponent;                     // 0xe8(0x8)
-	class ParticleSystemComponent*                               ExplosionVfxEmitter;                               // 0xf0(0x8)
-	class ParticleSystemComponent*                               HeatBuildingVfxEmitter;                            // 0xf8(0x8)
-	class Actor*                                                 CooldownInstigator;                                // 0x100(0x8)
-	class OverheatingDataAsset*                                  OverheatingDataAsset;                              // 0x108(0x8)
-	struct OverheatingReplicatedData                             ReplicatedData;                                    // 0x110(0x8)
-	int                                                          OverheatingMaterialIndex;                          // 0x118(0x4)
-	bool                                                         IsWieldableOrProxy;                                // 0x11c(0x1)
-	char                                                         pad0x8b_YK8UK[0x8b];                               // 0x11d(0x8b)
+	char                                                         pad0x38_C4149[0x38];                               // 0xb8(0x38)
+	class StaticMeshComponent*                                   VisualiserStaticMeshComponent;                     // 0xf0(0x8)
+	class ParticleSystemComponent*                               ExplosionVfxEmitter;                               // 0xf8(0x8)
+	class ParticleSystemComponent*                               HeatBuildingVfxEmitter;                            // 0x100(0x8)
+	class Actor*                                                 CooldownInstigator;                                // 0x108(0x8)
+	class OverheatingDataAsset*                                  OverheatingDataAsset;                              // 0x110(0x8)
+	struct OverheatingReplicatedData                             ReplicatedData;                                    // 0x118(0x8)
+	int                                                          OverheatingMaterialIndex;                          // 0x120(0x4)
+	float                                                        OverheatingLerpDuration;                           // 0x124(0x4)
+	bool                                                         IsWieldableOrProxy;                                // 0x128(0x1)
+	char                                                         pad0x6f_S5OLR[0x6f];                               // 0x129(0x6f)
+	float                                                        HandoverTimeRemainingInLerp;                       // 0x198(0x4)
+	char                                                         pad0x24_MYU01[0x24];                               // 0x19c(0x24)
 };
 
 

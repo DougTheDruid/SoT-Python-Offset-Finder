@@ -1,60 +1,4 @@
 {
-  "GlobalDigSpotDefinitionList": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "DigSpotDefinitions",
-        "Type": "TArray<struct GlobalDigSpotDefinition>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "GlobalDigSpotSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x40",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "GlobalDigSpotServiceClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "GlobalDigSpotDebugCheatInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "GlobalDigSpotVoyageTriggerActor": {
-    "Super": "GlobalVoyageTriggerActor",
-    "FullSize": "0x408",
-    "InheritedSize": "0x3f0",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_VBDYX[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x3f0"
-      }
-    ]
-  },
-  "GlobalDigSpotServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "GlobalDigSpotService": {
     "Super": "Actor",
     "FullSize": "0x3d0",
@@ -62,7 +6,7 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x8_LSZ5B[0x8]",
+        "Name": "pad0x8_A2O0S[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3a0"
@@ -86,10 +30,24 @@
         "Offset": "0x3b8"
       },
       {
-        "Name": "pad0x10_OAIAE[0x10]",
+        "Name": "pad0x10_16CR2[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3c0"
+      }
+    ]
+  },
+  "GlobalDigSpotSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x40",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "GlobalDigSpotServiceClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
       }
     ]
   },
@@ -100,10 +58,52 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_G9TOQ[0x8]",
+        "Name": "pad0x8_94ZRU[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3a0"
+      }
+    ]
+  },
+  "GlobalDigSpotVoyageTriggerActor": {
+    "Super": "GlobalVoyageTriggerActor",
+    "FullSize": "0x408",
+    "InheritedSize": "0x3f0",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_3H7N9[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x3f0"
+      }
+    ]
+  },
+  "GlobalDigSpotServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GlobalDigSpotDebugCheatInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GlobalDigSpotDefinitionList": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "DigSpotDefinitions",
+        "Type": "TArray<struct GlobalDigSpotDefinition>",
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },

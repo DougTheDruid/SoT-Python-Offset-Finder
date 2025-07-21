@@ -1,470 +1,21 @@
 {
-  "BTTask_SetDebugPetStateDescriptor": {
-    "Super": "BTTaskNode",
-    "FullSize": "0x68",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "NewDescriptor",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "pad0x7_8RZLK[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x61"
-      }
-    ]
-  },
-  "PetsServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BTTask_RotatePetToFaceBBEntryWithTime": {
-    "Super": "BTTask_RotateToFaceBBEntry",
-    "FullSize": "0x98",
-    "InheritedSize": "0x90",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Delay",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "RotationTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x94"
-      }
-    ]
-  },
-  "PetIdleMovementInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PetHangoutSpotComponent": {
-    "Super": "SceneComponent",
-    "FullSize": "0x370",
-    "InheritedSize": "0x2d0",
-    "ClassSize": "0xa0",
-    "Attributes": [
-      {
-        "Name": "HangoutSpots",
-        "Type": "TArray<struct HangoutSpotPosition>",
-        "Size": "0x10",
-        "Offset": "0x2d0"
-      },
-      {
-        "Name": "HasLowerDeckFloodThreshold",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x2e0"
-      },
-      {
-        "Name": "pad0x3_GINE1[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x2e1"
-      },
-      {
-        "Name": "LowerDeckFloodThreshold",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2e4"
-      },
-      {
-        "Name": "HasMiddleDeckFloodThreshold",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x2e8"
-      },
-      {
-        "Name": "pad0x3_9Z0NF[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x2e9"
-      },
-      {
-        "Name": "MiddleDeckFloodThreshold",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2ec"
-      },
-      {
-        "Name": "PerchInteractableHeightOffset",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2f0"
-      },
-      {
-        "Name": "IsWorldHangout",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x2f4"
-      },
-      {
-        "Name": "pad0x23_2ON3U[0x23]",
-        "Type": "char",
-        "Size": "0x23",
-        "Offset": "0x2f5"
-      },
-      {
-        "Name": "PetPerchComponents",
-        "Type": "TArray<class PetPerchComponent*>",
-        "Size": "0x10",
-        "Offset": "0x318"
-      },
-      {
-        "Name": "pad0x10_JMEJD[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x328"
-      },
-      {
-        "Name": "IsTopDeckBlocked",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x338"
-      },
-      {
-        "Name": "IsOwnerSinking",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x339"
-      },
-      {
-        "Name": "pad0x1e_YAY7Y[0x1e]",
-        "Type": "char",
-        "Size": "0x1e",
-        "Offset": "0x33a"
-      },
-      {
-        "Name": "PetHangoutSpotsDataAsset",
-        "Type": "class PetHangoutSpotsDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x358"
-      },
-      {
-        "Name": "pad0x10_VZE8V[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x360"
-      }
-    ]
-  },
-  "PetSpawnOnShipInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PetItemInfo": {
-    "Super": "NonStorableItemInfo",
-    "FullSize": "0x588",
-    "InheritedSize": "0x508",
-    "ClassSize": "0x80",
-    "Attributes": [
-      {
-        "Name": "pad0x20_D5SU9[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x508"
-      },
-      {
-        "Name": "SpawnedForShip",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x528"
-      },
-      {
-        "Name": "DropTraceDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x530"
-      },
-      {
-        "Name": "PointSearchRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x534"
-      },
-      {
-        "Name": "DropChannel",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x538"
-      },
-      {
-        "Name": "pad0x7_HMFAA[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x539"
-      },
-      {
-        "Name": "PetOwner",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x540"
-      },
-      {
-        "Name": "PetCustomisation",
-        "Type": "struct PetCustomisation",
-        "Size": "0x28",
-        "Offset": "0x548"
-      },
-      {
-        "Name": "PetUGCNameComponent",
-        "Type": "class PetUGCNameComponent*",
-        "Size": "0x8",
-        "Offset": "0x570"
-      },
-      {
-        "Name": "pad0x10_0VJX5[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x578"
-      }
-    ]
-  },
-  "BTDecorator_IsOccupiedHangoutSpotStillAvailable": {
-    "Super": "BTDecorator_BaseConditional",
-    "FullSize": "0x68",
-    "InheritedSize": "0x68",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "WieldablePetHungerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x168",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0xb0",
-    "Attributes": [
-      {
-        "Name": "HungerData",
-        "Type": "class WieldablePetHungerDataAsset*",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "pad0x28_GE742[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "CachedOverlappingActors",
-        "Type": "TArray<struct OverlapResult>",
-        "Size": "0x10",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "ActiveFoodSources",
-        "Type": "TArray<struct WieldablePetFoodSourceEntry>",
-        "Size": "0x10",
-        "Offset": "0xf8"
-      },
-      {
-        "Name": "FoodSourcesToRemove",
-        "Type": "TArray<struct WieldablePetFoodSourceEntry>",
-        "Size": "0x10",
-        "Offset": "0x108"
-      },
-      {
-        "Name": "pad0x50_EQE5A[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x118"
-      }
-    ]
-  },
-  "BTTask_ChangeHangoutAnimation": {
+  "BTTask_AttachToHangout": {
     "Super": "BTTask_BlackboardBase",
-    "FullSize": "0x88",
+    "FullSize": "0x90",
     "InheritedSize": "0x88",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PetCustomisationOverrideMappingsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MappingEntries",
-        "Type": "TArray<struct PetCustomiationOverrideMappingEntry>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "PetUGCNameInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PetSpawnParamsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x68",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "PetClassID",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "TreeToRun",
-        "Type": "class BehaviorTree*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "SpawnQueryForLand",
-        "Type": "class EnvQuery*",
-        "Size": "0x8",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "SpawnQueryForShip",
-        "Type": "class EnvQuery*",
-        "Size": "0x8",
-        "Offset": "0x60"
-      }
-    ]
-  },
-  "WieldablePetComponentDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x70",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "FriendlyTimeUntilEscape",
-        "Type": "struct FloatRange",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "NormalTimeUntilEscape",
-        "Type": "struct FloatRange",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "SubmergedTimeUntilEscape",
-        "Type": "struct FloatRange",
-        "Size": "0x10",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "DamageToOwnerDropThreshold",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "pad0x4_FHL0D[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x5c"
-      },
-      {
-        "Name": "DropTimeouts",
-        "Type": "TArray<struct WieldablePetDropTimeout>",
-        "Size": "0x10",
-        "Offset": "0x60"
-      }
-    ]
-  },
-  "BTTask_PetWaitForAnimationRoamingState": {
-    "Super": "BTTaskNode",
-    "FullSize": "0x80",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "SuccessRoamingStates",
-        "Type": "TArray<char>",
-        "Size": "0x10",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "FailRoamingStates",
-        "Type": "TArray<char>",
-        "Size": "0x10",
-        "Offset": "0x70"
-      }
-    ]
-  },
-  "PetDesc": {
-    "Super": "ItemDesc",
-    "FullSize": "0x130",
-    "InheritedSize": "0x120",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "PetSpawnParams",
-        "Type": "class PetSpawnParamsDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x120"
-      },
-      {
-        "Name": "PreviewPetClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x128"
-      }
-    ]
-  },
-  "BTDecorator_IsPerchedInHangout": {
-    "Super": "BTDecorator_BaseConditional",
-    "FullSize": "0x68",
-    "InheritedSize": "0x68",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BTTask_ReactToOwner": {
-    "Super": "BTTaskNode",
-    "FullSize": "0x68",
-    "InheritedSize": "0x60",
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_AJUDC[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x60"
-      }
-    ]
-  },
-  "PetsServiceParamsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x60",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x38",
-    "Attributes": [
+        "Name": "TaskDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x88"
+      },
       {
-        "Name": "Params",
-        "Type": "struct PetsServiceParams",
-        "Size": "0x38",
-        "Offset": "0x28"
+        "Name": "pad0x4_ATLB3[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x8c"
       }
     ]
   },
@@ -494,290 +45,62 @@
       }
     ]
   },
-  "PetOwnerComponent": {
+  "PetUGCNameComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0xd8",
+    "FullSize": "0x158",
     "InheritedSize": "0xb8",
-    "ClassSize": "0x20",
+    "ClassSize": "0xa0",
     "Attributes": [
       {
-        "Name": "pad0x18_Q92K2[0x18]",
+        "Name": "pad0x8_017EH[0x8]",
         "Type": "char",
-        "Size": "0x18",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "PetInfo",
-        "Type": "class ItemInfo*",
-        "Size": "0x8",
-        "Offset": "0xd0"
-      }
-    ]
-  },
-  "WieldablePetComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x140",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x88",
-    "Attributes": [
-      {
-        "Name": "WieldablePetComponentData",
-        "Type": "class WieldablePetComponentDataAsset*",
         "Size": "0x8",
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x80_E6Q9E[0x80]",
-        "Type": "char",
-        "Size": "0x80",
+        "Name": "DefaultPetName",
+        "Type": "struct FString",
+        "Size": "0x10",
         "Offset": "0xc0"
+      },
+      {
+        "Name": "CustomisedPetName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0x78_BVAEV[0x78]",
+        "Type": "char",
+        "Size": "0x78",
+        "Offset": "0xe0"
       }
     ]
   },
-  "EnvQueryContext_AverageThreatPositionFromBlackboard": {
-    "Super": "EnvQueryContext_PositionFromBlackboard",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PetReactInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PetsService": {
-    "Super": "Object",
-    "FullSize": "0x330",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x308",
+  "PetDesc": {
+    "Super": "ItemDesc",
+    "FullSize": "0x130",
+    "InheritedSize": "0x120",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x60_M6R6X[0x60]",
-        "Type": "char",
-        "Size": "0x60",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Spawner",
-        "Type": "class AIPetsOnDemandSpawner*",
+        "Name": "PetSpawnParams",
+        "Type": "class PetSpawnParamsDataAsset*",
         "Size": "0x8",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "pad0x18_HPOIL[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "PetsServiceParams",
-        "Type": "struct PetsServiceParams",
-        "Size": "0x38",
-        "Offset": "0xa8"
-      },
-      {
-        "Name": "OwnersToRemove",
-        "Type": "TArray<class Actor*>",
-        "Size": "0x10",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "OwnersToRequestDespawn",
-        "Type": "TArray<class Actor*>",
-        "Size": "0x10",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "MovingPetsOnIslands",
-        "Type": "TArray<class Pawn*>",
-        "Size": "0x10",
-        "Offset": "0x100"
-      },
-      {
-        "Name": "MovingPetsOnShips",
-        "Type": "TArray<class Pawn*>",
-        "Size": "0x10",
-        "Offset": "0x110"
-      },
-      {
-        "Name": "ScratchArray",
-        "Type": "TArray<class Actor*>",
-        "Size": "0x10",
         "Offset": "0x120"
       },
       {
-        "Name": "pad0x1a8_J01G0[0x1a8]",
-        "Type": "char",
-        "Size": "0x1a8",
-        "Offset": "0x130"
-      },
-      {
-        "Name": "PetHangoutDataAsset",
-        "Type": "class PetHangoutSpotsDataAsset*",
+        "Name": "PreviewPetClass",
+        "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x2d8"
-      },
-      {
-        "Name": "pad0x50_2YKLG[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x2e0"
+        "Offset": "0x128"
       }
     ]
   },
-  "EnvQueryContext_SafePositionFromBlackboard": {
-    "Super": "EnvQueryContext_PositionFromBlackboard",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PetOwnerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PetListingDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Entries",
-        "Type": "TArray<struct PetListingTypeEntry>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "EnvQueryContext_PerceivedFoodSources": {
-    "Super": "EnvQueryContext",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PetFeedingDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x60",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "PetFeedingParams",
-        "Type": "struct PetFeedingParams",
-        "Size": "0x38",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "PetHangoutSpotsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "HangoutSpotParams",
-        "Type": "TArray<struct HangoutSpotParams>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "PetPartCustomisationInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BTTask_ReactToThreat": {
-    "Super": "BTTaskNode",
-    "FullSize": "0x70",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ReactAnimState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "ChangeAnimationAfterWaitTime",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x61"
-      },
-      {
-        "Name": "pad0x2_CAP2D[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x62"
-      },
-      {
-        "Name": "ReactAnimTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x64"
-      },
-      {
-        "Name": "AfterReactAnimState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "pad0x7_R70YS[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x69"
-      }
-    ]
-  },
-  "BTTask_SelectPetHangoutSpot": {
+  "BTTask_StopOccupyingHangoutSpot": {
     "Super": "BTTask_BlackboardBase",
-    "FullSize": "0x98",
+    "FullSize": "0x88",
     "InheritedSize": "0x88",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "NeedForceId",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "pad0x3_T8SOH[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x89"
-      },
-      {
-        "Name": "ForcedId",
-        "Type": "struct HangoutSpotId",
-        "Size": "0x8",
-        "Offset": "0x8c"
-      },
-      {
-        "Name": "pad0x4_5X6RE[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x94"
-      }
-    ]
-  },
-  "EnvQueryContext_FirstThreatPositionFromBlackboard": {
-    "Super": "EnvQueryContext_PositionFromBlackboard",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -788,164 +111,99 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "BTTask_GetTotalHangoutTime": {
-    "Super": "BTTask_BlackboardBase",
-    "FullSize": "0x88",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PetAIController": {
-    "Super": "AthenaAIController",
-    "FullSize": "0xa90",
-    "InheritedSize": "0x9a8",
-    "ClassSize": "0xe8",
+  "ReactStateMappingsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x20_96J5I[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x9a8"
-      },
-      {
-        "Name": "StrategyControllerMovementMods",
-        "Type": "TArray<struct AIStategyControllerMovementMod>",
-        "Size": "0x10",
-        "Offset": "0x9c8"
-      },
-      {
-        "Name": "DefaultControlRotationInterpSpeed",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x9d8"
-      },
-      {
-        "Name": "pad0x4_W0H7X[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x9dc"
-      },
-      {
-        "Name": "DefaultStrategy",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x9e0"
-      },
-      {
         "Name": "ReactMappings",
-        "Type": "class ReactStateMappingsDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x9e8"
-      },
-      {
-        "Name": "pad0x8_JA0X7[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x9f0"
-      },
-      {
-        "Name": "HangoutSpotSelectorComponent",
-        "Type": "class PetHangoutSpotSelectorComponent*",
-        "Size": "0x8",
-        "Offset": "0x9f8"
-      },
-      {
-        "Name": "ForcedHangoutSpotComponent",
-        "Type": "class PetHangoutSpotComponent*",
-        "Size": "0x8",
-        "Offset": "0xa00"
-      },
-      {
-        "Name": "DefaultBlackboardAsset",
-        "Type": "class BlackboardData*",
-        "Size": "0x8",
-        "Offset": "0xa08"
-      },
-      {
-        "Name": "DefaultTree",
-        "Type": "class BehaviorTree*",
-        "Size": "0x8",
-        "Offset": "0xa10"
-      },
-      {
-        "Name": "HangoutTree",
-        "Type": "class BehaviorTree*",
-        "Size": "0x8",
-        "Offset": "0xa18"
-      },
-      {
-        "Name": "IdleTree",
-        "Type": "class BehaviorTree*",
-        "Size": "0x8",
-        "Offset": "0xa20"
-      },
-      {
-        "Name": "MaximumReactRange",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xa28"
-      },
-      {
-        "Name": "pad0x4_R4QJ9[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xa2c"
-      },
-      {
-        "Name": "DangerComponent",
-        "Type": "class PetDangerComponent*",
-        "Size": "0x8",
-        "Offset": "0xa30"
-      },
-      {
-        "Name": "MinAgentHalfHeightPctOverride",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xa38"
-      },
-      {
-        "Name": "pad0x54_KB710[0x54]",
-        "Type": "char",
-        "Size": "0x54",
-        "Offset": "0xa3c"
+        "Type": "TArray<struct ReactStateMapping>",
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },
-  "PetHangoutSpotSelectorComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x2a8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x1f0",
+  "PetPerchComponent": {
+    "Super": "InteractableComponent",
+    "FullSize": "0x188",
+    "InheritedSize": "0x140",
+    "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "HangoutSpotPositionComponent",
-        "Type": "class PetHangoutSpotComponent*",
+        "Name": "pad0x18_7HZ5S[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x140"
+      },
+      {
+        "Name": "AllowedPetTypes",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x158"
+      },
+      {
+        "Name": "HangoutSpotIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x168"
+      },
+      {
+        "Name": "HangoutSpotName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x16c"
+      },
+      {
+        "Name": "InteractionPointLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x174"
+      },
+      {
+        "Name": "Enabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x180"
+      },
+      {
+        "Name": "BlocksPetEmoteReactions",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x181"
+      },
+      {
+        "Name": "IgnorePickupFromHangoutTooltipDisplayOffset",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x182"
+      },
+      {
+        "Name": "pad0x5_2UREV[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0x183"
+      }
+    ]
+  },
+  "PetDangerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x190",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0xd8",
+    "Attributes": [
+      {
+        "Name": "DangerDataAsset",
+        "Type": "class PetDangerDataAsset*",
         "Size": "0x8",
         "Offset": "0xb8"
       },
       {
-        "Name": "HangoutParamsDataAsset",
-        "Type": "class PetHangoutSpotsDataAsset*",
-        "Size": "0x8",
+        "Name": "pad0xd0_R042X[0xd0]",
+        "Type": "char",
+        "Size": "0xd0",
         "Offset": "0xc0"
-      },
-      {
-        "Name": "pad0x70_ZXVFM[0x70]",
-        "Type": "char",
-        "Size": "0x70",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "PetType_Cached",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "pad0x168_2JMSC[0x168]",
-        "Type": "char",
-        "Size": "0x168",
-        "Offset": "0x140"
       }
     ]
   },
@@ -981,104 +239,23 @@
       }
     ]
   },
-  "WieldablePetAnimNotifyWwiseEmitterComponent": {
-    "Super": "AnimNotifyWwiseEmitterComponent",
-    "FullSize": "0x310",
-    "InheritedSize": "0x300",
-    "ClassSize": "0x10",
+  "BTTask_RotatePetToFaceBBEntryWithTime": {
+    "Super": "BTTask_RotateToFaceBBEntry",
+    "FullSize": "0x98",
+    "InheritedSize": "0x90",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x10_JXFQA[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x300"
-      }
-    ]
-  },
-  "PetLifetimeInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PetsSettings": {
-    "Super": "Object",
-    "FullSize": "0x78",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "PetHangoutSpotsDataAsset",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x28"
+        "Name": "Delay",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x90"
       },
       {
-        "Name": "PetListingDataAsset",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "PetsServiceParamsDataAsset",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "PetSpawnDefinitionsDataAsset",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "ExcludedStatesForRoamingAssetGeneration",
-        "Type": "TArray<char>",
-        "Size": "0x10",
-        "Offset": "0x68"
-      }
-    ]
-  },
-  "BTDecorator_PetRoamingAnimationStateActive": {
-    "Super": "BTDecorator_BaseConditional",
-    "FullSize": "0x78",
-    "InheritedSize": "0x68",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MatchingStates",
-        "Type": "TArray<char>",
-        "Size": "0x10",
-        "Offset": "0x68"
-      }
-    ]
-  },
-  "CannonSquashComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_9ZV54[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0xb8"
-      }
-    ]
-  },
-  "ReactStateMappingsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ReactMappings",
-        "Type": "TArray<struct ReactStateMapping>",
-        "Size": "0x10",
-        "Offset": "0x28"
+        "Name": "RotationTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x94"
       }
     ]
   },
@@ -1095,102 +272,33 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x4_V66A0[0x4]",
+        "Name": "pad0x4_HCP0Y[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x8c"
       }
     ]
   },
-  "BTTask_AttachToHangout": {
-    "Super": "BTTask_BlackboardBase",
-    "FullSize": "0x90",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "TaskDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "pad0x4_P5MHH[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x8c"
-      }
-    ]
-  },
-  "WieldablePetHungerDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x58",
+  "PetLifetimeInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
     "InheritedSize": "0x28",
-    "ClassSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PetHangoutSpotsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "TimeToStartEating",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "HangoutSpotParams",
+        "Type": "TArray<struct HangoutSpotParams>",
+        "Size": "0x10",
         "Offset": "0x28"
-      },
-      {
-        "Name": "EdibleCheckRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "EatingAnimData",
-        "Type": "struct WieldablePetHungerAnimationData",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "FedAnimData",
-        "Type": "struct WieldablePetHungerAnimationData",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "SickAnimData",
-        "Type": "struct WieldablePetHungerAnimationData",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "RefuseAnimData",
-        "Type": "struct WieldablePetHungerAnimationData",
-        "Size": "0x8",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "CollisionChannel",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "pad0x7_7IQVO[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x51"
       }
     ]
-  },
-  "BTDecorator_IsForcingHangout": {
-    "Super": "BTDecorator_BaseConditional",
-    "FullSize": "0x68",
-    "InheritedSize": "0x68",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BTTask_StopOccupyingHangoutSpot": {
-    "Super": "BTTask_BlackboardBase",
-    "FullSize": "0x88",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "WieldablePet": {
     "Super": "SkeletalMeshWieldableItem",
@@ -1199,7 +307,7 @@
     "ClassSize": "0x150",
     "Attributes": [
       {
-        "Name": "pad0x38_M5GXQ[0x38]",
+        "Name": "pad0x38_D1JDY[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x7f0"
@@ -1211,7 +319,7 @@
         "Offset": "0x828"
       },
       {
-        "Name": "pad0x4_1E4WM[0x4]",
+        "Name": "pad0x4_ZR9Z6[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x82c"
@@ -1331,7 +439,7 @@
         "Offset": "0x8c0"
       },
       {
-        "Name": "pad0x6f_RW6V8[0x6f]",
+        "Name": "pad0x6f_96MWB[0x6f]",
         "Type": "char",
         "Size": "0x6f",
         "Offset": "0x8c1"
@@ -1349,67 +457,240 @@
         "Offset": "0x931"
       },
       {
-        "Name": "pad0xe_BB1WF[0xe]",
+        "Name": "pad0xe_AFPFD[0xe]",
         "Type": "char",
         "Size": "0xe",
         "Offset": "0x932"
       }
     ]
   },
-  "BTDecorator_PetFoodSourceAvailable": {
+  "PetSpawnOnShipInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PetOwnerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PetIdleMovementInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BTDecorator_IsOccupiedHangoutSpotStillAvailable": {
     "Super": "BTDecorator_BaseConditional",
     "FullSize": "0x68",
     "InheritedSize": "0x68",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "PetOwnerIdentityInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
+  "WieldablePetComponentDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x70",
     "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PetMemoryInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AIPetsOnDemandSpawner": {
-    "Super": "AISpawner",
-    "FullSize": "0x458",
-    "InheritedSize": "0x458",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PetDangerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x190",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0xd8",
+    "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "DangerDataAsset",
-        "Type": "class PetDangerDataAsset*",
+        "Name": "FriendlyTimeUntilEscape",
+        "Type": "struct FloatRange",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "NormalTimeUntilEscape",
+        "Type": "struct FloatRange",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "SubmergedTimeUntilEscape",
+        "Type": "struct FloatRange",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "DamageToOwnerDropThreshold",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "pad0x4_LS77B[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x5c"
+      },
+      {
+        "Name": "DropTimeouts",
+        "Type": "TArray<struct WieldablePetDropTimeout>",
+        "Size": "0x10",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "WieldablePetComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x140",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "WieldablePetComponentData",
+        "Type": "class WieldablePetComponentDataAsset*",
         "Size": "0x8",
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0xd0_F5KOQ[0xd0]",
+        "Name": "pad0x80_R4ZD7[0x80]",
         "Type": "char",
-        "Size": "0xd0",
+        "Size": "0x80",
         "Offset": "0xc0"
       }
     ]
   },
-  "ReactAIStrategyId": {
-    "Super": "AIStrategyId",
+  "PetCustomisationOverrideMappingsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MappingEntries",
+        "Type": "TArray<struct PetCustomiationOverrideMappingEntry>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "PetsService": {
+    "Super": "Object",
+    "FullSize": "0x330",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x308",
+    "Attributes": [
+      {
+        "Name": "pad0x60_VN7JP[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Spawner",
+        "Type": "class AIPetsOnDemandSpawner*",
+        "Size": "0x8",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "pad0x18_VLN0Y[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "PetsServiceParams",
+        "Type": "struct PetsServiceParams",
+        "Size": "0x38",
+        "Offset": "0xa8"
+      },
+      {
+        "Name": "OwnersToRemove",
+        "Type": "TArray<class Actor*>",
+        "Size": "0x10",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "OwnersToRequestDespawn",
+        "Type": "TArray<class Actor*>",
+        "Size": "0x10",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "MovingPetsOnIslands",
+        "Type": "TArray<class Pawn*>",
+        "Size": "0x10",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "MovingPetsOnShips",
+        "Type": "TArray<class Pawn*>",
+        "Size": "0x10",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "ScratchArray",
+        "Type": "TArray<class Actor*>",
+        "Size": "0x10",
+        "Offset": "0x120"
+      },
+      {
+        "Name": "pad0x1a8_4HIS3[0x1a8]",
+        "Type": "char",
+        "Size": "0x1a8",
+        "Offset": "0x130"
+      },
+      {
+        "Name": "PetHangoutDataAsset",
+        "Type": "class PetHangoutSpotsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x2d8"
+      },
+      {
+        "Name": "pad0x50_TPWIL[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x2e0"
+      }
+    ]
+  },
+  "BTTask_SelectFoodSource": {
+    "Super": "BTTask_BlackboardBase",
+    "FullSize": "0x88",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WieldablePetAnimNotifyWwiseEmitterComponent": {
+    "Super": "AnimNotifyWwiseEmitterComponent",
+    "FullSize": "0x310",
+    "InheritedSize": "0x300",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_1RVS5[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x300"
+      }
+    ]
+  },
+  "EnvQueryContext_CurrentHangoutSpot": {
+    "Super": "EnvQueryContext",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "PetListingDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Entries",
+        "Type": "TArray<struct PetListingTypeEntry>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
   },
   "BTTask_SelectWanderFlyStrategy": {
     "Super": "BTTask_BlackboardBase",
@@ -1449,125 +730,213 @@
       }
     ]
   },
-  "BTTask_EatFood": {
-    "Super": "BTTaskNode",
-    "FullSize": "0x68",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x8",
+  "PetsServiceParamsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "FeedingDataAsset",
-        "Type": "class PetFeedingDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x60"
+        "Name": "Params",
+        "Type": "struct PetsServiceParams",
+        "Size": "0x38",
+        "Offset": "0x28"
       }
     ]
   },
-  "PetMovementModifierSettingsInterface": {
+  "BTTask_SelectPetHangoutSpot": {
+    "Super": "BTTask_BlackboardBase",
+    "FullSize": "0x98",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "NeedForceId",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "pad0x3_703X4[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x89"
+      },
+      {
+        "Name": "ForcedId",
+        "Type": "struct HangoutSpotId",
+        "Size": "0x8",
+        "Offset": "0x8c"
+      },
+      {
+        "Name": "pad0x4_SHK6B[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x94"
+      }
+    ]
+  },
+  "PetsSettings": {
+    "Super": "Object",
+    "FullSize": "0x78",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "PetHangoutSpotsDataAsset",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "PetListingDataAsset",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "PetsServiceParamsDataAsset",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "PetSpawnDefinitionsDataAsset",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "ExcludedStatesForRoamingAssetGeneration",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x68"
+      }
+    ]
+  },
+  "HangoutSpotSelectionInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "PetPerchComponent": {
-    "Super": "InteractableComponent",
-    "FullSize": "0x188",
-    "InheritedSize": "0x140",
-    "ClassSize": "0x48",
+  "PetSpawnParamsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x68",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x18_ADPFX[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x140"
-      },
-      {
-        "Name": "AllowedPetTypes",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x158"
-      },
-      {
-        "Name": "HangoutSpotIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x168"
-      },
-      {
-        "Name": "HangoutSpotName",
-        "Type": "struct FName",
+        "Name": "PetClassID",
+        "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x16c"
+        "Offset": "0x28"
       },
       {
-        "Name": "InteractionPointLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x174"
+        "Name": "TreeToRun",
+        "Type": "class BehaviorTree*",
+        "Size": "0x8",
+        "Offset": "0x30"
       },
       {
-        "Name": "Enabled",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x180"
+        "Name": "SpawnQueryForLand",
+        "Type": "class EnvQuery*",
+        "Size": "0x8",
+        "Offset": "0x58"
       },
       {
-        "Name": "BlocksPetEmoteReactions",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x181"
-      },
-      {
-        "Name": "IgnorePickupFromHangoutTooltipDisplayOffset",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x182"
-      },
-      {
-        "Name": "pad0x5_4GCPA[0x5]",
-        "Type": "char",
-        "Size": "0x5",
-        "Offset": "0x183"
+        "Name": "SpawnQueryForShip",
+        "Type": "class EnvQuery*",
+        "Size": "0x8",
+        "Offset": "0x60"
       }
     ]
   },
-  "BTTask_SelectFoodSource": {
-    "Super": "BTTask_BlackboardBase",
-    "FullSize": "0x88",
-    "InheritedSize": "0x88",
+  "BTDecorator_PetFoodSourceAvailable": {
+    "Super": "BTDecorator_BaseConditional",
+    "FullSize": "0x68",
+    "InheritedSize": "0x68",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "PetUGCNameComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x158",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0xa0",
+  "BTDecorator_PetRoamingAnimationStateActive": {
+    "Super": "BTDecorator_BaseConditional",
+    "FullSize": "0x78",
+    "InheritedSize": "0x68",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x8_R9IPZ[0x8]",
-        "Type": "char",
+        "Name": "MatchingStates",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x68"
+      }
+    ]
+  },
+  "PetMemoryInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EnvQueryContext_FirstThreatPositionFromBlackboard": {
+    "Super": "EnvQueryContext_PositionFromBlackboard",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PetHangoutSpotSelectorComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x2a8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x1f0",
+    "Attributes": [
+      {
+        "Name": "HangoutSpotPositionComponent",
+        "Type": "class PetHangoutSpotComponent*",
         "Size": "0x8",
         "Offset": "0xb8"
       },
       {
-        "Name": "DefaultPetName",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Name": "HangoutParamsDataAsset",
+        "Type": "class PetHangoutSpotsDataAsset*",
+        "Size": "0x8",
         "Offset": "0xc0"
       },
       {
-        "Name": "CustomisedPetName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0xd0"
+        "Name": "pad0x70_OJDCM[0x70]",
+        "Type": "char",
+        "Size": "0x70",
+        "Offset": "0xc8"
       },
       {
-        "Name": "pad0x78_UCXXT[0x78]",
+        "Name": "PetType_Cached",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "pad0x168_ODFXL[0x168]",
         "Type": "char",
-        "Size": "0x78",
-        "Offset": "0xe0"
+        "Size": "0x168",
+        "Offset": "0x140"
+      }
+    ]
+  },
+  "CannonSquashComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_G404L[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0xb8"
       }
     ]
   },
@@ -1585,10 +954,136 @@
       }
     ]
   },
-  "EnvQueryContext_CurrentHangoutSpot": {
-    "Super": "EnvQueryContext",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
+  "BTTask_EatFood": {
+    "Super": "BTTaskNode",
+    "FullSize": "0x68",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "FeedingDataAsset",
+        "Type": "class PetFeedingDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "BTTask_ReactToThreat": {
+    "Super": "BTTaskNode",
+    "FullSize": "0x70",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ReactAnimState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "ChangeAnimationAfterWaitTime",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x61"
+      },
+      {
+        "Name": "pad0x2_6OAXL[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x62"
+      },
+      {
+        "Name": "ReactAnimTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x64"
+      },
+      {
+        "Name": "AfterReactAnimState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "pad0x7_G3P3E[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x69"
+      }
+    ]
+  },
+  "PetItemInfo": {
+    "Super": "NonStorableItemInfo",
+    "FullSize": "0x588",
+    "InheritedSize": "0x508",
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Name": "pad0x20_8ZOJJ[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x508"
+      },
+      {
+        "Name": "SpawnedForShip",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x528"
+      },
+      {
+        "Name": "DropTraceDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x530"
+      },
+      {
+        "Name": "PointSearchRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x534"
+      },
+      {
+        "Name": "DropChannel",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x538"
+      },
+      {
+        "Name": "pad0x7_MIQRZ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x539"
+      },
+      {
+        "Name": "PetOwner",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x540"
+      },
+      {
+        "Name": "PetCustomisation",
+        "Type": "struct PetCustomisation",
+        "Size": "0x28",
+        "Offset": "0x548"
+      },
+      {
+        "Name": "PetUGCNameComponent",
+        "Type": "class PetUGCNameComponent*",
+        "Size": "0x8",
+        "Offset": "0x570"
+      },
+      {
+        "Name": "pad0x10_RJQPR[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x578"
+      }
+    ]
+  },
+  "BTDecorator_IsPerchedInHangout": {
+    "Super": "BTDecorator_BaseConditional",
+    "FullSize": "0x68",
+    "InheritedSize": "0x68",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -1599,12 +1094,517 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "HangoutSpotSelectionInterface": {
+  "BTTask_ChangeHangoutAnimation": {
+    "Super": "BTTask_BlackboardBase",
+    "FullSize": "0x88",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EnvQueryContext_AverageThreatPositionFromBlackboard": {
+    "Super": "EnvQueryContext_PositionFromBlackboard",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EnvQueryContext_PerceivedFoodSources": {
+    "Super": "EnvQueryContext",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PetOwnerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x18_H3P0L[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "PetInfo",
+        "Type": "class ItemInfo*",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "PetPartCustomisationInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "BTDecorator_IsForcingHangout": {
+    "Super": "BTDecorator_BaseConditional",
+    "FullSize": "0x68",
+    "InheritedSize": "0x68",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PetUGCNameInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ReactAIStrategyId": {
+    "Super": "AIStrategyId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AIPetsOnDemandSpawner": {
+    "Super": "AISpawner",
+    "FullSize": "0x458",
+    "InheritedSize": "0x458",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PetReactInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BTTask_SetDebugPetStateDescriptor": {
+    "Super": "BTTaskNode",
+    "FullSize": "0x68",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "NewDescriptor",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x7_GSJC8[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x61"
+      }
+    ]
+  },
+  "PetHangoutSpotComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x370",
+    "InheritedSize": "0x2d0",
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Name": "HangoutSpots",
+        "Type": "TArray<struct HangoutSpotPosition>",
+        "Size": "0x10",
+        "Offset": "0x2d0"
+      },
+      {
+        "Name": "HasLowerDeckFloodThreshold",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x2e0"
+      },
+      {
+        "Name": "pad0x3_GQSI7[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x2e1"
+      },
+      {
+        "Name": "LowerDeckFloodThreshold",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2e4"
+      },
+      {
+        "Name": "HasMiddleDeckFloodThreshold",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x2e8"
+      },
+      {
+        "Name": "pad0x3_FB2OB[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x2e9"
+      },
+      {
+        "Name": "MiddleDeckFloodThreshold",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2ec"
+      },
+      {
+        "Name": "PerchInteractableHeightOffset",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2f0"
+      },
+      {
+        "Name": "IsWorldHangout",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x2f4"
+      },
+      {
+        "Name": "pad0x23_UWLOJ[0x23]",
+        "Type": "char",
+        "Size": "0x23",
+        "Offset": "0x2f5"
+      },
+      {
+        "Name": "PetPerchComponents",
+        "Type": "TArray<class PetPerchComponent*>",
+        "Size": "0x10",
+        "Offset": "0x318"
+      },
+      {
+        "Name": "pad0x10_406JD[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x328"
+      },
+      {
+        "Name": "IsTopDeckBlocked",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x338"
+      },
+      {
+        "Name": "IsOwnerSinking",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x339"
+      },
+      {
+        "Name": "pad0x1e_3CGB5[0x1e]",
+        "Type": "char",
+        "Size": "0x1e",
+        "Offset": "0x33a"
+      },
+      {
+        "Name": "PetHangoutSpotsDataAsset",
+        "Type": "class PetHangoutSpotsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x358"
+      },
+      {
+        "Name": "pad0x10_UR888[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x360"
+      }
+    ]
+  },
+  "PetMovementModifierSettingsInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PetAIController": {
+    "Super": "AthenaAIController",
+    "FullSize": "0xa90",
+    "InheritedSize": "0x9a8",
+    "ClassSize": "0xe8",
+    "Attributes": [
+      {
+        "Name": "pad0x20_V25JO[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x9a8"
+      },
+      {
+        "Name": "StrategyControllerMovementMods",
+        "Type": "TArray<struct AIStategyControllerMovementMod>",
+        "Size": "0x10",
+        "Offset": "0x9c8"
+      },
+      {
+        "Name": "DefaultControlRotationInterpSpeed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x9d8"
+      },
+      {
+        "Name": "pad0x4_6IZ8S[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x9dc"
+      },
+      {
+        "Name": "DefaultStrategy",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x9e0"
+      },
+      {
+        "Name": "ReactMappings",
+        "Type": "class ReactStateMappingsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x9e8"
+      },
+      {
+        "Name": "pad0x8_FTE0N[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x9f0"
+      },
+      {
+        "Name": "HangoutSpotSelectorComponent",
+        "Type": "class PetHangoutSpotSelectorComponent*",
+        "Size": "0x8",
+        "Offset": "0x9f8"
+      },
+      {
+        "Name": "ForcedHangoutSpotComponent",
+        "Type": "class PetHangoutSpotComponent*",
+        "Size": "0x8",
+        "Offset": "0xa00"
+      },
+      {
+        "Name": "DefaultBlackboardAsset",
+        "Type": "class BlackboardData*",
+        "Size": "0x8",
+        "Offset": "0xa08"
+      },
+      {
+        "Name": "DefaultTree",
+        "Type": "class BehaviorTree*",
+        "Size": "0x8",
+        "Offset": "0xa10"
+      },
+      {
+        "Name": "HangoutTree",
+        "Type": "class BehaviorTree*",
+        "Size": "0x8",
+        "Offset": "0xa18"
+      },
+      {
+        "Name": "IdleTree",
+        "Type": "class BehaviorTree*",
+        "Size": "0x8",
+        "Offset": "0xa20"
+      },
+      {
+        "Name": "MaximumReactRange",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xa28"
+      },
+      {
+        "Name": "pad0x4_C2ZQP[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xa2c"
+      },
+      {
+        "Name": "DangerComponent",
+        "Type": "class PetDangerComponent*",
+        "Size": "0x8",
+        "Offset": "0xa30"
+      },
+      {
+        "Name": "MinAgentHalfHeightPctOverride",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xa38"
+      },
+      {
+        "Name": "pad0x54_HLP6L[0x54]",
+        "Type": "char",
+        "Size": "0x54",
+        "Offset": "0xa3c"
+      }
+    ]
+  },
+  "WieldablePetHungerDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "TimeToStartEating",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "EdibleCheckRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "EatingAnimData",
+        "Type": "struct WieldablePetHungerAnimationData",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "FedAnimData",
+        "Type": "struct WieldablePetHungerAnimationData",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "SickAnimData",
+        "Type": "struct WieldablePetHungerAnimationData",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "RefuseAnimData",
+        "Type": "struct WieldablePetHungerAnimationData",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "CollisionChannel",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "pad0x7_OWS6S[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x51"
+      }
+    ]
+  },
+  "PetOwnerIdentityInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EnvQueryContext_SafePositionFromBlackboard": {
+    "Super": "EnvQueryContext_PositionFromBlackboard",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BTTask_PetWaitForAnimationRoamingState": {
+    "Super": "BTTaskNode",
+    "FullSize": "0x80",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "SuccessRoamingStates",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "FailRoamingStates",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x70"
+      }
+    ]
+  },
+  "PetsServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BTTask_ReactToOwner": {
+    "Super": "BTTaskNode",
+    "FullSize": "0x68",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_CR55M[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "BTTask_GetTotalHangoutTime": {
+    "Super": "BTTask_BlackboardBase",
+    "FullSize": "0x88",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WieldablePetHungerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x168",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "HungerData",
+        "Type": "class WieldablePetHungerDataAsset*",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "pad0x28_JZFV1[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "CachedOverlappingActors",
+        "Type": "TArray<struct OverlapResult>",
+        "Size": "0x10",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "ActiveFoodSources",
+        "Type": "TArray<struct WieldablePetFoodSourceEntry>",
+        "Size": "0x10",
+        "Offset": "0xf8"
+      },
+      {
+        "Name": "FoodSourcesToRemove",
+        "Type": "TArray<struct WieldablePetFoodSourceEntry>",
+        "Size": "0x10",
+        "Offset": "0x108"
+      },
+      {
+        "Name": "pad0x50_B7E0A[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x118"
+      }
+    ]
+  },
+  "PetFeedingDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "PetFeedingParams",
+        "Type": "struct PetFeedingParams",
+        "Size": "0x38",
+        "Offset": "0x28"
+      }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

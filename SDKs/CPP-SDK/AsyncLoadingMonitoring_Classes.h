@@ -17,7 +17,7 @@ public:
 class AsyncLoadingMonitoringService: public Object
 {
 public:
-	char                                                         pad0xb8_YGHY4[0xb8];                               // 0x28(0xb8)
+	char                                                         pad0xb8_58X4Y[0xb8];                               // 0x28(0xb8)
 };
 
 

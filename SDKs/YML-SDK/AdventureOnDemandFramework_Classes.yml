@@ -18,7 +18,7 @@ AdventureOnDemandAreCrewNearQuestTargetStepDesc:
   Super: TaleQuestStepDesc
 AdventureOnDemandArrivalTunnelDependencies:
   Attributes:
-  - Name: pad0x20_6KBMB[0x20]
+  - Name: pad0x20_T2N6H[0x20]
     Offset: '0xd8'
     Size: '0x20'
     Type: char
@@ -32,7 +32,7 @@ AdventureOnDemandArrivalTunnelDesc:
     Offset: '0xa0'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_W6V4S[0x4]
+  - Name: pad0x4_NWZAY[0x4]
     Offset: '0xac'
     Size: '0x4'
     Type: char
@@ -48,7 +48,7 @@ AdventureOnDemandArrivalTunnelDesc:
     Offset: '0xc0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_CX204[0x3]
+  - Name: pad0x3_GYMGA[0x3]
     Offset: '0xc1'
     Size: '0x3'
     Type: char
@@ -62,7 +62,7 @@ AdventureOnDemandArrivalTunnelDesc:
   Super: ClientDestinationPreLoadingArrivalTunnelDesc
 AdventureOnDemandArrivalTunnelOfTheDamned:
   Attributes:
-  - Name: pad0x20_E9SP0[0x20]
+  - Name: pad0x20_QGI24[0x20]
     Offset: '0x680'
     Size: '0x20'
     Type: char
@@ -74,7 +74,7 @@ AdventureOnDemandArrivalTunnelOfTheDamned:
     Offset: '0x6a8'
     Size: '0x8'
     Type: class AdventureOnDemandArrivalTunnelWorkerBase*
-  - Name: pad0x20_DTAAA[0x20]
+  - Name: pad0x20_64AYP[0x20]
     Offset: '0x6b0'
     Size: '0x20'
     Type: char
@@ -94,7 +94,7 @@ AdventureOnDemandArrivalTunnelWorkerBase:
   Super: Object
 AdventureOnDemandDepartureTunnelDependencies:
   Attributes:
-  - Name: pad0x10_ZHSV1[0x10]
+  - Name: pad0x10_OVP4J[0x10]
     Offset: '0x138'
     Size: '0x10'
     Type: char
@@ -126,7 +126,7 @@ AdventureOnDemandDepartureTunnelOfTheDamned:
     Offset: '0x880'
     Size: '0x8'
     Type: class AdventureOnDemandDepartureTunnelDesc*
-  - Name: pad0x38_RKVZR[0x38]
+  - Name: pad0x38_RU3L1[0x38]
     Offset: '0x888'
     Size: '0x38'
     Type: char
@@ -176,7 +176,7 @@ AdventureOnDemandForceIslandBannerStepDesc:
     Offset: '0x80'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_ZJE7D[0x7]
+  - Name: pad0x7_ZCFCJ[0x7]
     Offset: '0x81'
     Size: '0x7'
     Type: char
@@ -244,7 +244,7 @@ AdventureOnDemandServiceParams:
     Offset: '0x50'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_MTH3M[0x4]
+  - Name: pad0x4_M1V8I[0x4]
     Offset: '0x54'
     Size: '0x4'
     Type: char
@@ -300,7 +300,7 @@ AdventureOnDemandSetHintPopUpStepDesc:
     Offset: '0x80'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_869GX[0x7]
+  - Name: pad0x7_RZX8Q[0x7]
     Offset: '0x81'
     Size: '0x7'
     Type: char
@@ -372,7 +372,7 @@ AdventureOnDemandSuppressIslandBannerStepDesc:
     Offset: '0x80'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_LZSYW[0x7]
+  - Name: pad0x7_VCHGG[0x7]
     Offset: '0x81'
     Size: '0x7'
     Type: char
@@ -396,7 +396,7 @@ AdventureOnDemandTallTaleCategoryDataAsset:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_QEIWG[0x7]
+  - Name: pad0x7_HI5T1[0x7]
     Offset: '0x31'
     Size: '0x7'
     Type: char
@@ -454,7 +454,7 @@ AdventureOnDemandVoyageSelectionCompanyDataAsset:
     Offset: '0x40'
     Size: '0xc'
     Type: struct FeatureFlag
-  - Name: pad0x4_DVWC1[0x4]
+  - Name: pad0x4_4AIBG[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -500,7 +500,7 @@ AdventureOnDemandYieldQuestResumeOnConditionsStepDesc:
   Super: TaleQuestStepDesc
 AdventureOnDemandYieldQuestResumeOnConditionsTaleStep:
   Attributes:
-  - Name: pad0x18_EM3SO[0x18]
+  - Name: pad0x18_GABV0[0x18]
     Offset: '0x98'
     Size: '0x18'
     Type: char
@@ -514,7 +514,7 @@ FriendsInCrewPrerequisite:
     Offset: '0x90'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3f_C6CJA[0x3f]
+  - Name: pad0x3f_WI0W6[0x3f]
     Offset: '0x91'
     Size: '0x3f'
     Type: char
@@ -530,7 +530,7 @@ GameEventOnDemandDepartureTunnelDependencies:
   Super: AdventureOnDemandDepartureTunnelDependencies
 GameEventOnDemandDepartureTunnelDesc:
   Attributes:
-  - Name: pad0x20_MDSZH[0x20]
+  - Name: pad0x20_PFE4M[0x20]
     Offset: '0x130'
     Size: '0x20'
     Type: char

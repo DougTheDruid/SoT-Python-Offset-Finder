@@ -1,55 +1,4 @@
 {
-  "ExistingNPCToPhasedNPC": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "pad0x40_6NV6J[0x40]",
-        "Type": "char",
-        "Size": "0x40",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TextEntryWithLayout": {
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "TextEntry",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TextLayout",
-        "Type": "struct TreasureMapWidgetText",
-        "Size": "0x3c",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x4_45YRL[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x74"
-      }
-    ]
-  },
-  "ClueDestinationChoice": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Destination",
-        "Type": "class ClueDestinationDescriptor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x8_GE4K0[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "GenderSpecificTextPairings": {
     "ClassSize": "0x70",
     "Attributes": [
@@ -67,19 +16,30 @@
       }
     ]
   },
-  "ClueDestinationToTextIndex": {
-    "ClassSize": "0x28",
+  "ExistingNPCToPhasedNPC": {
+    "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "DestinationType",
-        "Type": "class UClass*",
+        "Name": "pad0x40_17RJI[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ClueDestinationChoice": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Destination",
+        "Type": "class ClueDestinationDescriptor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x20_QVH40[0x20]",
+        "Name": "pad0x8_XK1AY[0x8]",
         "Type": "char",
-        "Size": "0x20",
+        "Size": "0x8",
         "Offset": "0x8"
       }
     ]
@@ -100,10 +60,50 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_OJZGK[0x4]",
+        "Name": "pad0x4_5WMYB[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
+      }
+    ]
+  },
+  "TextEntryWithLayout": {
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "TextEntry",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TextLayout",
+        "Type": "struct TreasureMapWidgetText",
+        "Size": "0x3c",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x4_TZYW2[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x74"
+      }
+    ]
+  },
+  "ClueDestinationToTextIndex": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "DestinationType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x20_75D4E[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x8"
       }
     ]
   },

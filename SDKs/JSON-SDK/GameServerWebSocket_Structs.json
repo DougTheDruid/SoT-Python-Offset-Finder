@@ -1,4 +1,21 @@
 {
+  "GlobalEventSubscriptionGameServerRequestModel": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "EnableEvents",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DisableEvents",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "EventOverMemoryThreshold": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -21,27 +38,10 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_5LNJ8[0x4]",
+        "Name": "pad0x4_Z1YIS[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
-      }
-    ]
-  },
-  "GlobalEventSubscriptionGameServerRequestModel": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "EnableEvents",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DisableEvents",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x10"
       }
     ]
   },

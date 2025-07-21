@@ -12,7 +12,7 @@ class SwitchesActivatedInCorrectOrderPuzzleManagerPolicy: public PuzzleManagerPo
 public:
 	TArray<class Actor*>                                         Switches;                                          // 0xe0(0x10)
 	bool                                                         IsRandomSwitchOrder;                               // 0xf0(0x1)
-	char                                                         pad0x7_B5MBH[0x7];                                 // 0xf1(0x7)
+	char                                                         pad0x7_J7B7F[0x7];                                 // 0xf1(0x7)
 	TArray<struct SwitchesActivatedInCorrectOrderPresetParams>   Presets;                                           // 0xf8(0x10)
 };
 

@@ -1,5 +1,5 @@
 {
-  "NudgeableInterface": {
+  "NudgePolicyInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -33,7 +33,7 @@
     "ClassSize": "0xa0",
     "Attributes": [
       {
-        "Name": "pad0x90_YUAI7[0x90]",
+        "Name": "pad0x90_98JDA[0x90]",
         "Type": "char",
         "Size": "0x90",
         "Offset": "0x28"
@@ -52,7 +52,7 @@
       }
     ]
   },
-  "NudgePolicyInterface": {
+  "NudgeableInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

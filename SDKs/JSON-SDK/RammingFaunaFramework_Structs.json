@@ -20,7 +20,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_OVMUM[0x8]",
+        "Name": "pad0x8_XI8IO[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"

@@ -20,7 +20,7 @@ DartInterface:
   Super: Interface
 DartProxyService:
   Attributes:
-  - Name: pad0x18_K6M7M[0x18]
+  - Name: pad0x18_OANZX[0x18]
     Offset: '0x3a0'
     Size: '0x18'
     Type: char

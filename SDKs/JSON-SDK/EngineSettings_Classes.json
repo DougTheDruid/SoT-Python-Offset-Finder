@@ -1,4 +1,36 @@
 {
+  "ConsoleSettings": {
+    "Super": "Object",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "MaxScrollbackSize",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_VOGN5[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "ManualAutoCompleteList",
+        "Type": "TArray<struct AutoCompleteCommand>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "AutoCompleteMapPaths",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x40"
+      }
+    ]
+  },
   "GameSessionSettings": {
     "Super": "Object",
     "FullSize": "0x38",
@@ -24,7 +56,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x7_R7THJ[0x7]",
+        "Name": "pad0x7_XM7SI[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x31"
@@ -118,6 +150,32 @@
       }
     ]
   },
+  "HudSettings": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "bShowHUD",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x7_3F0BE[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x29"
+      },
+      {
+        "Name": "DebugDisplay",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
   "GameMapsSettings": {
     "Super": "Object",
     "FullSize": "0xb0",
@@ -161,7 +219,7 @@
         "Offset": "0x5a"
       },
       {
-        "Name": "pad0x5_2JWBF[0x5]",
+        "Name": "pad0x5_H45GV[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x5b"
@@ -235,7 +293,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x3_AUQF4[0x3]",
+        "Name": "pad0x3_USHBX[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x39"
@@ -277,68 +335,10 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x4_CN70I[0x4]",
+        "Name": "pad0x4_XFTC2[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x54"
-      }
-    ]
-  },
-  "ConsoleSettings": {
-    "Super": "Object",
-    "FullSize": "0x50",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "MaxScrollbackSize",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x4_GC2GD[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "ManualAutoCompleteList",
-        "Type": "TArray<struct AutoCompleteCommand>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "AutoCompleteMapPaths",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "HudSettings": {
-    "Super": "Object",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "bShowHUD",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x7_0U75F[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x29"
-      },
-      {
-        "Name": "DebugDisplay",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x30"
       }
     ]
   },

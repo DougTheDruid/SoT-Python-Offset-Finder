@@ -6,10 +6,6 @@ BP_CarouselCam_C:
     Offset: '0x3a0'
     Size: '0x8'
     Type: struct PointerToUberGraphFrame
-  - Name: pad0x6cfce1d8_JJZEL[0x6cfce1d8]
-    Offset: '0x3a8'
-    Size: '0x6cfce1d8'
-    Type: char
   - Name: lockedIcon07
     Offset: '0x3a8'
     Size: '0x8'
@@ -110,7 +106,7 @@ BP_CarouselCam_C:
     Offset: '0x468'
     Size: '0xc'
     Type: struct Rotator
-  - Name: pad0x4_UTEEP[0x4]
+  - Name: pad0x4_42HDN[0x4]
     Offset: '0x474'
     Size: '0x4'
     Type: char
@@ -150,7 +146,7 @@ BP_CarouselCam_C:
     Offset: '0x49c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_RHARW[0x3]
+  - Name: pad0x3_YX6L2[0x3]
     Offset: '0x49d'
     Size: '0x3'
     Type: char
@@ -210,7 +206,7 @@ BP_CarouselCam_C:
     Offset: '0x4e0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_HYD6Q[0x3]
+  - Name: pad0x3_8PT7T[0x3]
     Offset: '0x4e1'
     Size: '0x3'
     Type: char
@@ -254,7 +250,7 @@ BP_CarouselCam_C:
     Offset: '0x538'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_WN4KB[0x4]
+  - Name: pad0x4_O8THJ[0x4]
     Offset: '0x53c'
     Size: '0x4'
     Type: char
@@ -266,7 +262,7 @@ BP_CarouselCam_C:
     Offset: '0x548'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_AYAP2[0x7]
+  - Name: pad0x7_A0QL3[0x7]
     Offset: '0x549'
     Size: '0x7'
     Type: char

@@ -1,18 +1,4 @@
 {
-  "RetractableProviderInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RetractorInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "RetractorComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x118",
@@ -20,7 +6,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x48_9H4GV[0x48]",
+        "Name": "pad0x48_38J2L[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0xb8"
@@ -38,14 +24,28 @@
         "Offset": "0x108"
       },
       {
-        "Name": "pad0x8_EK3BD[0x8]",
+        "Name": "pad0x8_KY28Y[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x110"
       }
     ]
   },
+  "RetractorInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "RetractableInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RetractableProviderInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -59,7 +59,7 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x38_G2XXX[0x38]",
+        "Name": "pad0x38_L5QOW[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0xb8"
@@ -101,7 +101,7 @@
         "Offset": "0xfe"
       },
       {
-        "Name": "pad0x1_YEG01[0x1]",
+        "Name": "pad0x1_BCH9B[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0xff"
@@ -115,7 +115,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_ZY4P2[0x10]",
+        "Name": "pad0x10_H81F1[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x100"

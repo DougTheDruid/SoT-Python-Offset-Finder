@@ -6,13 +6,6 @@
 #include "EnemyAIOnShipFramework_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class EnemyAIOnShipServiceInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
 class EnemyAIOnShipEncounterDesc: public DataAsset
 {
@@ -22,7 +15,7 @@ public:
 	class AIFixedWavesSpawner*                                   SpawnerCrewSize3;                                  // 0x38(0x8)
 	class AIFixedWavesSpawner*                                   SpawnerCrewSize4;                                  // 0x40(0x8)
 	float                                                        MigrationPreventionRadius;                         // 0x48(0x4)
-	char                                                         pad0x4_CCNMY[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_H7YUZ[0x4];                                 // 0x4c(0x4)
 };
 
 
@@ -30,10 +23,17 @@ public:
 class EnemyAIOnShipService: public Actor
 {
 public:
-	char                                                         pad0x20_62UJQ[0x20];                               // 0x3a0(0x20)
+	char                                                         pad0x20_512DH[0x20];                               // 0x3a0(0x20)
 	class EnemyAIOnShipServiceDataAsset*                         Params;                                            // 0x3c0(0x8)
 	TArray<struct EnemyAIOnShipActiveEncounters>                 ReplicatedEncounters;                              // 0x3c8(0x10)
-	char                                                         pad0x70_POZTH[0x70];                               // 0x3d8(0x70)
+	char                                                         pad0x70_CGHCH[0x70];                               // 0x3d8(0x70)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class EnemyAIOnShipServiceInterface: public Interface
+{
+public:
 };
 
 

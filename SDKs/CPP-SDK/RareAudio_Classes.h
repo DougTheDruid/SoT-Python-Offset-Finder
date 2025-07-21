@@ -6,88 +6,20 @@
 #include "RareAudio_Structs.h"
 
 
-// Size 0x10 (Full Size[0x50] - InheritedSize[0x40]
-class RareAudioHardwareDeviceService: public AudioHardwareDeviceService
-{
-public:
-	char                                                         pad0x10_PQQRX[0x10];                               // 0x40(0x10)
-};
-
-
 // Size 0x128 (Full Size[0x150] - InheritedSize[0x28]
 class TritonService: public Object
 {
 public:
-	char                                                         pad0x10_Z1E19[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_IGNL9[0x10];                               // 0x28(0x10)
 	TArray<class TritonComponent*>                               RegisteredTritonComponents;                        // 0x38(0x10)
-	char                                                         pad0xa8_YXUI9[0xa8];                               // 0x48(0xa8)
+	char                                                         pad0xa8_OBG8I[0xa8];                               // 0x48(0xa8)
 	class TritonComponent*                                       CachedListenerInfo;                                // 0xf0(0x8)
-	char                                                         pad0x58_6YSF7[0x58];                               // 0xf8(0x58)
+	char                                                         pad0x58_2WUCV[0x58];                               // 0xf8(0x58)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class WwiseEmitterBlueprintLibrary: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
-// Size 0x48 (Full Size[0x80] - InheritedSize[0x38]
-class AnimNotify_WwiseSound: public AnimNotify
-{
-public:
-	class WwiseEvent*                                            WwiseEvent;                                        // 0x38(0x8)
-	bool                                                         OwnedByWorld;                                      // 0x40(0x1)
-	char                                                         pad0x3_6U9O3[0x3];                                 // 0x41(0x3)
-	struct Vector                                                OwnedByWorldEmitterOffset;                         // 0x44(0xc)
-	char                                                         PerspectiveRestriction;                            // 0x50(0x1)
-	char                                                         pad0x7_3XT5R[0x7];                                 // 0x51(0x7)
-	class WwiseObjectPoolWrapper*                                OwnedByWorldWisePoolToUse;                         // 0x58(0x8)
-	char                                                         pad0x20_VTVAT[0x20];                               // 0x60(0x20)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class StaticMeshAudioDataAsset: public DataAsset
-{
-public:
-	TArray<struct StaticMeshAudioAssociation>                    MeshToAudioAssociations;                           // 0x28(0x10)
-};
-
-
-// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
-class TritonAcousticMap: public Object
-{
-public:
-	struct FString                                               TritonMapFilename;                                 // 0x28(0x10)
-	float                                                        CustomCacheRatio;                                  // 0x38(0x4)
-	char                                                         pad0x2c_WE6NU[0x2c];                               // 0x3c(0x2c)
-};
-
-
-// Size 0x60 (Full Size[0x90] - InheritedSize[0x30]
-class AnimNotifyState_WwiseSound: public AnimNotifyState
-{
-public:
-	class WwiseEvent*                                            WwiseEvent;                                        // 0x30(0x8)
-	class WwiseEvent*                                            WwiseEventEnd;                                     // 0x38(0x8)
-	char                                                         pad0x50_M6USU[0x50];                               // 0x40(0x50)
-};
-
-
-// Size 0x30 (Full Size[0x300] - InheritedSize[0x2d0]
-class WwiseEmitterComponent: public SceneComponent
-{
-public:
-	char                                                         pad0x8_XK0GA[0x8];                                 // 0x2d0(0x8)
-	struct WwiseEmitter                                          Emitter;                                           // 0x2d8(0x20)
-	class WwiseObjectPoolWrapper*                                WwiseObjectPoolWrapper;                            // 0x2f8(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x3a0] - InheritedSize[0x3a0]
-class AudioIslandStaticMeshAssociatorBase: public Actor
 {
 public:
 };
@@ -100,11 +32,57 @@ public:
 };
 
 
+// Size 0x60 (Full Size[0x90] - InheritedSize[0x30]
+class AnimNotifyState_WwiseSound: public AnimNotifyState
+{
+public:
+	class WwiseEvent*                                            WwiseEvent;                                        // 0x30(0x8)
+	class WwiseEvent*                                            WwiseEventEnd;                                     // 0x38(0x8)
+	char                                                         pad0x50_78RWL[0x50];                               // 0x40(0x50)
+};
+
+
+// Size 0x10 (Full Size[0x2e0] - InheritedSize[0x2d0]
+class TritonComponent: public SceneComponent
+{
+public:
+	class TritonAcousticMap*                                     TritonMapAsset;                                    // 0x2d0(0x8)
+	float                                                        TritonEffectRadius;                                // 0x2d8(0x4)
+	char                                                         pad0x4_R66N4[0x4];                                 // 0x2dc(0x4)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class StaticMeshAudioDataAsset: public DataAsset
+{
+public:
+	TArray<struct StaticMeshAudioAssociation>                    MeshToAudioAssociations;                           // 0x28(0x10)
+};
+
+
+// Size 0x30 (Full Size[0x300] - InheritedSize[0x2d0]
+class WwiseEmitterComponent: public SceneComponent
+{
+public:
+	char                                                         pad0x8_CVHS0[0x8];                                 // 0x2d0(0x8)
+	struct WwiseEmitter                                          Emitter;                                           // 0x2d8(0x20)
+	class WwiseObjectPoolWrapper*                                WwiseObjectPoolWrapper;                            // 0x2f8(0x8)
+};
+
+
 // Size 0x10 (Full Size[0x2e0] - InheritedSize[0x2d0]
 class StaticMeshAudioEmittersComponent: public SceneComponent
 {
 public:
 	TArray<struct StaticMeshComponentAudioAssociation>           InstanceAssociations;                              // 0x2d0(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x50] - InheritedSize[0x40]
+class RareAudioHardwareDeviceService: public AudioHardwareDeviceService
+{
+public:
+	char                                                         pad0x10_RJS1P[0x10];                               // 0x40(0x10)
 };
 
 
@@ -118,13 +96,13 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x2e0] - InheritedSize[0x2d0]
-class TritonComponent: public SceneComponent
+// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
+class TritonAcousticMap: public Object
 {
 public:
-	class TritonAcousticMap*                                     TritonMapAsset;                                    // 0x2d0(0x8)
-	float                                                        TritonEffectRadius;                                // 0x2d8(0x4)
-	char                                                         pad0x4_PUBIE[0x4];                                 // 0x2dc(0x4)
+	struct FString                                               TritonMapFilename;                                 // 0x28(0x10)
+	float                                                        CustomCacheRatio;                                  // 0x38(0x4)
+	char                                                         pad0x2c_RRGE9[0x2c];                               // 0x3c(0x2c)
 };
 
 
@@ -137,16 +115,31 @@ public:
 	bool                                                         DisableOcclusion;                                  // 0x34(0x1)
 	bool                                                         DisableReverb;                                     // 0x35(0x1)
 	bool                                                         ExcludeSilentProxiesFromPriority;                  // 0x36(0x1)
-	char                                                         pad0x1_BV45E[0x1];                                 // 0x37(0x1)
+	char                                                         pad0x1_MJLEN[0x1];                                 // 0x37(0x1)
 	struct WwiseNativeEmitterPoolDensityParams                   PoolDensityParams;                                 // 0x38(0x28)
-	char                                                         pad0x18_SVRUT[0x18];                               // 0x60(0x18)
+	char                                                         pad0x18_VUDRM[0x18];                               // 0x60(0x18)
 };
 
 
-// Size 0x0 (Full Size[0x300] - InheritedSize[0x300]
-class AnimNotifyWwiseEmitterComponent: public WwiseEmitterComponent
+// Size 0x0 (Full Size[0x3a0] - InheritedSize[0x3a0]
+class AudioIslandStaticMeshAssociatorBase: public Actor
 {
 public:
+};
+
+
+// Size 0x48 (Full Size[0x80] - InheritedSize[0x38]
+class AnimNotify_WwiseSound: public AnimNotify
+{
+public:
+	class WwiseEvent*                                            WwiseEvent;                                        // 0x38(0x8)
+	bool                                                         OwnedByWorld;                                      // 0x40(0x1)
+	char                                                         pad0x3_HKU0A[0x3];                                 // 0x41(0x3)
+	struct Vector                                                OwnedByWorldEmitterOffset;                         // 0x44(0xc)
+	char                                                         PerspectiveRestriction;                            // 0x50(0x1)
+	char                                                         pad0x7_Z5GTK[0x7];                                 // 0x51(0x7)
+	class WwiseObjectPoolWrapper*                                OwnedByWorldWisePoolToUse;                         // 0x58(0x8)
+	char                                                         pad0x20_93GPY[0x20];                               // 0x60(0x20)
 };
 
 
@@ -156,6 +149,13 @@ class AnimNotify_WwiseSoundMeshSwitch: public AnimNotify_WwiseSound
 public:
 	struct FName                                                 SkeletalMeshSwitchGroup;                           // 0x80(0x8)
 	TArray<struct AnimNotify_SoundSwitch>                        MeshOverrides;                                     // 0x88(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x300] - InheritedSize[0x300]
+class AnimNotifyWwiseEmitterComponent: public WwiseEmitterComponent
+{
+public:
 };
 
 

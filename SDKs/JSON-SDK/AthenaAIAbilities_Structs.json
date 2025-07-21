@@ -15,7 +15,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_OMD2X[0x4]",
+        "Name": "pad0x4_7GS2S[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -38,7 +38,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_VEO5R[0x4]",
+        "Name": "pad0x4_Y4F1O[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"

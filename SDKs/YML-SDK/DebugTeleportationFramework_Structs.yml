@@ -18,7 +18,7 @@ DebugTeleportDestinationEntry:
     Offset: '0x2c'
     Size: '0x10'
     Type: struct Guid
-  - Name: pad0x4_ARGF1[0x4]
+  - Name: pad0x4_OI47J[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char

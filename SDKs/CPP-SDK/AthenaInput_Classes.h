@@ -7,7 +7,7 @@
 class AnalogInputId: public Object
 {
 public:
-	char                                                         pad0x10_65INM[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_BGRIO[0x10];                               // 0x28(0x10)
 };
 
 
@@ -22,7 +22,7 @@ public:
 class NPCReceivesInputIndicatorComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_E39AC[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_NR2OU[0x8];                                 // 0xb8(0x8)
 };
 
 
@@ -30,7 +30,7 @@ public:
 class NotificationInputId: public Object
 {
 public:
-	char                                                         pad0x10_W7YO8[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_J0ZX9[0x10];                               // 0x28(0x10)
 };
 
 

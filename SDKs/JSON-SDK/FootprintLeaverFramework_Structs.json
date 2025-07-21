@@ -1,21 +1,4 @@
 {
-  "FootprintLeaverComponentSpawnDecalTelemetryEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "DecalComponentName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ActorThatSpawnedItName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "BoarFootprintProperties": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -26,7 +9,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_Y85ZE[0x7]",
+        "Name": "pad0x7_T9PYS[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -44,10 +27,27 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_MSO87[0x4]",
+        "Name": "pad0x4_C6WPH[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
+      }
+    ]
+  },
+  "FootprintLeaverComponentSpawnDecalTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "DecalComponentName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ActorThatSpawnedItName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },

@@ -10,7 +10,7 @@ CookEndTelemetryEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_EE94C[0x3]
+  - Name: pad0x3_IZU9A[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -33,7 +33,7 @@ CookStartTelemetryEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_S50H7[0x3]
+  - Name: pad0x3_ZZJLL[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -56,7 +56,7 @@ CookableComponentSmokeFeedbackTimingEntry:
     Offset: '0x4'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_71NWW[0x3]
+  - Name: pad0x3_ZL9HR[0x3]
     Offset: '0x5'
     Size: '0x3'
     Type: char
@@ -67,7 +67,7 @@ CookerSmokeFeedbackEntry:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_LT533[0x7]
+  - Name: pad0x7_X2GWN[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -86,7 +86,7 @@ CookingClientRepresentation:
     Offset: '0x1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_IO2O3[0x6]
+  - Name: pad0x6_03E60[0x6]
     Offset: '0x2'
     Size: '0x6'
     Type: char
@@ -106,7 +106,7 @@ CookingClientRepresentation:
     Offset: '0x50'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_6C8MX[0x3]
+  - Name: pad0x3_NO3J3[0x3]
     Offset: '0x51'
     Size: '0x3'
     Type: char
@@ -122,14 +122,14 @@ CookingClientRepresentation:
     Offset: '0x5c'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_DT365[0x4]
+  - Name: pad0x4_AKKVJ[0x4]
     Offset: '0x64'
     Size: '0x4'
     Type: char
   ClassSize: '0x68'
 CookingInfo:
   Attributes:
-  - Name: pad0xc_2OXPF[0xc]
+  - Name: pad0xc_0Y14O[0xc]
     Offset: '0x0'
     Size: '0xc'
     Type: char
@@ -148,21 +148,21 @@ EventActorStoppedCooking:
     Offset: '0x11'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_44P37[0x6]
+  - Name: pad0x6_9IKEL[0x6]
     Offset: '0x12'
     Size: '0x6'
     Type: char
   ClassSize: '0x18'
 OnItemStartedCooking:
   Attributes:
-  - Name: pad0x10_JJG89[0x10]
+  - Name: pad0x10_F2DCV[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
   ClassSize: '0x10'
 OnItemStoppedCooking:
   Attributes:
-  - Name: pad0x1_0R40N[0x1]
+  - Name: pad0x1_FEXWK[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char

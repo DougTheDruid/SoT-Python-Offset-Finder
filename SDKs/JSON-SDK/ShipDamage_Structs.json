@@ -1,104 +1,12 @@
 {
-  "DistanceAndLevelOfDamage": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "DistanceLimit",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "LevelOfDamage",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "CannotDamageAboveLimit",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x3_M0R4B[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x9"
-      },
-      {
-        "Name": "DamageLimit",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "ShouldOnlyDamageOneHullDeckLevel",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x3_STRFE[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x11"
-      }
-    ]
-  },
-  "EventRestoreShip": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "OnlyRepaired",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SendShipRestoredRpc": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x18_1QZAE[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
-  },
   "ShipRestoredNetworkEvent": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x18_Q2CQZ[0x18]",
+        "Name": "pad0x18_WH0LJ[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "EventShipDamaged": {
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "Ship",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ImpactDamageEvent",
-        "Type": "struct ImpactDamageEvent",
-        "Size": "0x58",
-        "Offset": "0x8"
       }
     ]
   },
@@ -110,81 +18,6 @@
         "Type": "TArray<class Object*>",
         "Size": "0x10",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "EventShipDamageApplied": {
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "Ship",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DamagedShipPartIdentifier",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "NewDamageLevel",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x4_23QML[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "ImpactDamageEvent",
-        "Type": "struct ImpactDamageEvent",
-        "Size": "0x58",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "DamageZoneDamageLevelChanged": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "DamageZone",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DamageLevel",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x4_QOQMN[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "AppliedDamageToShipEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ShipType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Ship",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x8"
       }
     ]
   },
@@ -252,7 +85,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x4_MRHPN[0x4]",
+        "Name": "pad0x4_B87I9[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x64"
@@ -289,6 +122,29 @@
       }
     ]
   },
+  "DamageZoneDamageLevelChanged": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "DamageZone",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DamageLevel",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_WFNYM[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
   "HullDamageHit": {
     "ClassSize": "0x1c",
     "Attributes": [
@@ -311,10 +167,154 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x3_EQAAQ[0x3]",
+        "Name": "pad0x3_IUIYK[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x19"
+      }
+    ]
+  },
+  "SendShipRestoredRpc": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x18_VR0VM[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "DistanceAndLevelOfDamage": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "DistanceLimit",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "LevelOfDamage",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "CannotDamageAboveLimit",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x3_UFQDZ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x9"
+      },
+      {
+        "Name": "DamageLimit",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "ShouldOnlyDamageOneHullDeckLevel",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x3_GIB83[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
+      }
+    ]
+  },
+  "EventShipDamaged": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "Ship",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ImpactDamageEvent",
+        "Type": "struct ImpactDamageEvent",
+        "Size": "0x58",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventRestoreShip": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "OnlyRepaired",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AppliedDamageToShipEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ShipType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Ship",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventShipDamageApplied": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "Ship",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DamagedShipPartIdentifier",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "NewDamageLevel",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_UHCQ0[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "ImpactDamageEvent",
+        "Type": "struct ImpactDamageEvent",
+        "Size": "0x58",
+        "Offset": "0x18"
       }
     ]
   },
@@ -346,7 +346,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x7_Q6IIG[0x7]",
+        "Name": "pad0x7_8ELIO[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x19"
@@ -363,7 +363,7 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x20_JEKLU[0x20]",
+        "Name": "pad0x20_DFUU3[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x0"
@@ -381,7 +381,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_082SM[0x4]",
+        "Name": "pad0x4_IJQTU[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c"

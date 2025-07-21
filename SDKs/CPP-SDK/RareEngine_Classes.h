@@ -6,24 +6,8 @@
 #include "RareEngine_Structs.h"
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class AssetReferencer: public DataAsset
-{
-public:
-	TArray<Class>                                                AssetsToReference;                                 // 0x28(0x10)
-};
-
-
-// Size 0x58 (Full Size[0xaa0] - InheritedSize[0xa48]
-class RareGameEngine: public GameEngine
-{
-public:
-	char                                                         pad0x58_YPWJQ[0x58];                               // 0xa48(0x58)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class StaticMeshActorBlueprintLibrary: public BlueprintFunctionLibrary
+// Size 0x0 (Full Size[0x498] - InheritedSize[0x498]
+class RareHUD: public HUD
 {
 public:
 };
@@ -33,14 +17,31 @@ public:
 class StallDetector: public Object
 {
 public:
-	char                                                         pad0x28_BEXF8[0x28];                               // 0x28(0x28)
+	char                                                         pad0x28_H3APG[0x28];                               // 0x28(0x28)
 };
 
 
-// Size 0x0 (Full Size[0x498] - InheritedSize[0x498]
-class RareHUD: public HUD
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class AssetReferencer: public DataAsset
 {
 public:
+	TArray<Class>                                                AssetsToReference;                                 // 0x28(0x10)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class AudioHardwareDeviceService: public Object
+{
+public:
+	char                                                         pad0x18_KT0RO[0x18];                               // 0x28(0x18)
+};
+
+
+// Size 0x58 (Full Size[0xaa0] - InheritedSize[0xa48]
+class RareGameEngine: public GameEngine
+{
+public:
+	char                                                         pad0x58_86W3K[0x58];                               // 0xa48(0x58)
 };
 
 
@@ -51,11 +52,10 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class AudioHardwareDeviceService: public Object
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class StaticMeshActorBlueprintLibrary: public BlueprintFunctionLibrary
 {
 public:
-	char                                                         pad0x18_QVNDX[0x18];                               // 0x28(0x18)
 };
 
 

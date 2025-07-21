@@ -8,7 +8,6 @@ class BP_Tavern_B_AudioLayer_C: public Actor
 {
 public:
 	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3a0(0x8)
-	char                                                         pad0x6d2678d8_U7OZE[0x6d2678d8];                   // 0x3a8(0x6d2678d8)
 	class TritonComponent*                                       Triton;                                            // 0x3a8(0x8)
 	class WwiseEmitterComponent*                                 Fire;                                              // 0x3b0(0x8)
 	class AudioSpaceComponent*                                   Tavern_AudioSpace_EdgeSection;                     // 0x3b8(0x8)

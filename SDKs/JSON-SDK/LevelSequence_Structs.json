@@ -1,4 +1,27 @@
 {
+  "LevelSequenceObject": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "pad0x20_GEHLF[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ComponentName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x8_O41YP[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
   "LevelSequenceSnapshotSettings": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -9,7 +32,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_EGQRU[0x3]",
+        "Name": "pad0x3_XQZHY[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -22,13 +45,13 @@
       }
     ]
   },
-  "BoundActorProxy": {
-    "ClassSize": "0x1",
+  "LevelSequenceObjectReference": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x1_P2NPL[0x1]",
+        "Name": "pad0x20_YUKVK[0x20]",
         "Type": "char",
-        "Size": "0x1",
+        "Size": "0x20",
         "Offset": "0x0"
       }
     ]
@@ -37,33 +60,21 @@
     "ClassSize": "0xa0",
     "Attributes": [
       {
-        "Name": "pad0xa0_YMXR1[0xa0]",
+        "Name": "pad0xa0_QRJR2[0xa0]",
         "Type": "char",
         "Size": "0xa0",
         "Offset": "0x0"
       }
     ]
   },
-  "LevelSequenceObject": {
-    "ClassSize": "0x38",
+  "BoundActorProxy": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x20_C4OXZ[0x20]",
+        "Name": "pad0x1_BJEXP[0x1]",
         "Type": "char",
-        "Size": "0x20",
+        "Size": "0x1",
         "Offset": "0x0"
-      },
-      {
-        "Name": "ComponentName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "pad0x8_I4AF0[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x30"
       }
     ]
   },
@@ -71,20 +82,9 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x28_O4F9V[0x28]",
+        "Name": "pad0x28_VN6T3[0x28]",
         "Type": "char",
         "Size": "0x28",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "LevelSequenceObjectReference": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_CQ8V8[0x20]",
-        "Type": "char",
-        "Size": "0x20",
         "Offset": "0x0"
       }
     ]
@@ -105,7 +105,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_9OZ6Q[0x4]",
+        "Name": "pad0x4_FIOQI[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c"
@@ -123,7 +123,7 @@
         "Offset": "0x78"
       },
       {
-        "Name": "pad0x4_L71OP[0x4]",
+        "Name": "pad0x4_N4S31[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x7c"

@@ -1,19 +1,5 @@
 {
-  "DebugTimeInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "TimeFormatterInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TimeInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -34,6 +20,27 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "TimeBlueprintLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DebugTimeInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TimeInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "TimeService": {
     "Super": "Actor",
     "FullSize": "0x4d0",
@@ -41,7 +48,7 @@
     "ClassSize": "0x130",
     "Attributes": [
       {
-        "Name": "pad0x38_U8QI7[0x38]",
+        "Name": "pad0x38_TUNMJ[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x3a0"
@@ -53,7 +60,7 @@
         "Offset": "0x3d8"
       },
       {
-        "Name": "pad0x4_D4886[0x4]",
+        "Name": "pad0x4_2YAUT[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3e0"
@@ -137,19 +144,12 @@
         "Offset": "0x470"
       },
       {
-        "Name": "pad0x50_OPUEO[0x50]",
+        "Name": "pad0x50_1OLCA[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x480"
       }
     ]
-  },
-  "TimeBlueprintLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "DebugTimeService": {
     "Super": "TimeService",
@@ -158,7 +158,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_0JGWJ[0x8]",
+        "Name": "pad0x8_CR1AL[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x4d0"
@@ -172,7 +172,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_HSZMD[0x8]",
+        "Name": "pad0x8_3X3Y5[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x4d8"

@@ -11,18 +11,18 @@ class ShipBumperZone: public Actor
 {
 public:
 	bool                                                         UseInverseRightVector;                             // 0x3a0(0x1)
-	char                                                         pad0x2f_WNEJV[0x2f];                               // 0x3a1(0x2f)
+	char                                                         pad0x2f_3G9DN[0x2f];                               // 0x3a1(0x2f)
 	class BoxComponent*                                          BumperZoneComponent;                               // 0x3d0(0x8)
 	class SphereComponent*                                       DistanceRadiusComponent;                           // 0x3d8(0x8)
 	bool                                                         ApplyAngularImpulse;                               // 0x3e0(0x1)
-	char                                                         pad0x3_4EJFO[0x3];                                 // 0x3e1(0x3)
+	char                                                         pad0x3_VXID5[0x3];                                 // 0x3e1(0x3)
 	float                                                        AngularImpulse;                                    // 0x3e4(0x4)
 	bool                                                         OverrideWheelControl;                              // 0x3e8(0x1)
 	bool                                                         ApplyWheelTurbulence;                              // 0x3e9(0x1)
-	char                                                         pad0x2_E3V1Y[0x2];                                 // 0x3ea(0x2)
+	char                                                         pad0x2_G0RP5[0x2];                                 // 0x3ea(0x2)
 	float                                                        MinWheelTurbulence;                                // 0x3ec(0x4)
 	float                                                        MaxWheelTurbulence;                                // 0x3f0(0x4)
-	char                                                         pad0x4_EEF6S[0x4];                                 // 0x3f4(0x4)
+	char                                                         pad0x4_SNWLK[0x4];                                 // 0x3f4(0x4)
 };
 
 

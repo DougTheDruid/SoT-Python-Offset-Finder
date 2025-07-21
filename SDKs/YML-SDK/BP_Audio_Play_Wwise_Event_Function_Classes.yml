@@ -18,7 +18,7 @@ BP_Audio_Play_Wwise_Event_Function_C:
     Offset: '0x3c0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_9QWEF[0x4]
+  - Name: pad0x4_BYFJC[0x4]
     Offset: '0x3c4'
     Size: '0x4'
     Type: char

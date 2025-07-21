@@ -7,7 +7,7 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class NudgeableInterface: public Interface
+class NudgePolicyInterface: public Interface
 {
 public:
 };
@@ -26,14 +26,14 @@ public:
 class NudgePolicy: public Object
 {
 public:
-	char                                                         pad0x90_YUAI7[0x90];                               // 0x28(0x90)
+	char                                                         pad0x90_98JDA[0x90];                               // 0x28(0x90)
 	class Actor*                                                 OwningActor;                                       // 0xb8(0x8)
 	class SceneComponent*                                        OwnerComponent;                                    // 0xc0(0x8)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class NudgePolicyInterface: public Interface
+class NudgeableInterface: public Interface
 {
 public:
 };

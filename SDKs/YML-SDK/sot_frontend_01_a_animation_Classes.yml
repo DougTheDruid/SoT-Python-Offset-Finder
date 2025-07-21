@@ -6,10 +6,6 @@ sot_frontend_01_a_animation_C:
     Offset: '0x3a8'
     Size: '0x8'
     Type: struct PointerToUberGraphFrame
-  - Name: pad0x63da4150_BPB69[0x63da4150]
-    Offset: '0x3b0'
-    Size: '0x63da4150'
-    Type: char
   - Name: shipSelectUI_title_14_ExecuteUbergraph_sot_frontend_01_a_animation_RefProperty
     Offset: '0x3b0'
     Size: '0x8'

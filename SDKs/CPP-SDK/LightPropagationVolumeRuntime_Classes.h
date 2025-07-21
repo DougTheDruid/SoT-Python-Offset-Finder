@@ -10,10 +10,10 @@
 class LightPropagationVolumeBlendable: public Object
 {
 public:
-	char                                                         pad0x8_D2BL3[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_RNBXO[0x8];                                 // 0x28(0x8)
 	struct LightPropagationVolumeSettings                        Settings;                                          // 0x30(0x70)
 	float                                                        BlendWeight;                                       // 0xa0(0x4)
-	char                                                         pad0xc_3UHRO[0xc];                                 // 0xa4(0xc)
+	char                                                         pad0xc_4110K[0xc];                                 // 0xa4(0xc)
 };
 
 

@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 DartProxyNoiseEventItem:
   Attributes:
-  - Name: pad0x1c_2TC8V[0x1c]
+  - Name: pad0x1c_OIBTE[0x1c]
     Offset: '0x0'
     Size: '0x1c'
     Type: char

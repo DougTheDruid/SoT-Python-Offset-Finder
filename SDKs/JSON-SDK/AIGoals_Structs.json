@@ -1,33 +1,4 @@
 {
-  "HasAllActionContextTagsCondition": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "pad0x28_77ML1[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "RequiredContextTags",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "ExpectedValue",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x7_TDEVB[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x39"
-      }
-    ]
-  },
   "BestActionSpotSelectionCriteria": {
     "ClassSize": "0x34",
     "Attributes": [
@@ -38,7 +9,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_94D3B[0x3]",
+        "Name": "pad0x3_HBDP4[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -74,7 +45,7 @@
         "Offset": "0x14"
       },
       {
-        "Name": "pad0x3_U2U5O[0x3]",
+        "Name": "pad0x3_MRM7P[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x15"
@@ -92,7 +63,7 @@
         "Offset": "0x1c"
       },
       {
-        "Name": "pad0x3_QDI60[0x3]",
+        "Name": "pad0x3_6Q1T4[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1d"
@@ -116,7 +87,7 @@
         "Offset": "0x25"
       },
       {
-        "Name": "pad0x2_KSS3G[0x2]",
+        "Name": "pad0x2_9DPRI[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x26"
@@ -134,7 +105,7 @@
         "Offset": "0x2c"
       },
       {
-        "Name": "pad0x3_NIIHZ[0x3]",
+        "Name": "pad0x3_62X53[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x2d"
@@ -144,6 +115,35 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x30"
+      }
+    ]
+  },
+  "HasAllActionContextTagsCondition": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "pad0x28_PHN0V[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RequiredContextTags",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ExpectedValue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x7_QM7HI[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x39"
       }
     ]
   },

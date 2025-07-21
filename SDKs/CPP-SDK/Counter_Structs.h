@@ -9,7 +9,7 @@ struct CountHolder
 public:
 	class UClass*                                                Type;                                              // 0x0(0x8)
 	float                                                        CurrentCount;                                      // 0x8(0x4)
-	char                                                         pad0x1c_2L9E4[0x1c];                               // 0xc(0x1c)
+	char                                                         pad0x1c_KIFXE[0x1c];                               // 0xc(0x1c)
 };
 
 

@@ -12,19 +12,44 @@
         "Offset": "0x70"
       },
       {
-        "Name": "pad0x7_OA336[0x7]",
+        "Name": "pad0x7_1QVGL[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x71"
       }
     ]
   },
-  "RopeInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "InstancedRopeComponent": {
+    "Super": "PrimitiveComponent",
+    "FullSize": "0x660",
+    "InheritedSize": "0x5a0",
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "StaticMesh",
+        "Type": "class StaticMesh*",
+        "Size": "0x8",
+        "Offset": "0x598"
+      },
+      {
+        "Name": "Ropes",
+        "Type": "TArray<struct InstancedRopeParams>",
+        "Size": "0x10",
+        "Offset": "0x5a0"
+      },
+      {
+        "Name": "ShadowLOD",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x5b0"
+      },
+      {
+        "Name": "pad0xac_0YAA1[0xac]",
+        "Type": "char",
+        "Size": "0xac",
+        "Offset": "0x5b4"
+      }
+    ]
   },
   "RiggingSystemComponent": {
     "Super": "SceneComponent",
@@ -51,7 +76,7 @@
         "Offset": "0x300"
       },
       {
-        "Name": "pad0x8_B7W2E[0x8]",
+        "Name": "pad0x8_BHMWB[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x308"
@@ -65,7 +90,7 @@
     "ClassSize": "0x150",
     "Attributes": [
       {
-        "Name": "pad0x8_X6UX6[0x8]",
+        "Name": "pad0x8_1JBD4[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3a0"
@@ -119,44 +144,19 @@
         "Offset": "0x458"
       },
       {
-        "Name": "pad0x88_146RY[0x88]",
+        "Name": "pad0x88_PB0LG[0x88]",
         "Type": "char",
         "Size": "0x88",
         "Offset": "0x468"
       }
     ]
   },
-  "InstancedRopeComponent": {
-    "Super": "PrimitiveComponent",
-    "FullSize": "0x660",
-    "InheritedSize": "0x5a0",
-    "ClassSize": "0xc0",
-    "Attributes": [
-      {
-        "Name": "StaticMesh",
-        "Type": "class StaticMesh*",
-        "Size": "0x8",
-        "Offset": "0x598"
-      },
-      {
-        "Name": "Ropes",
-        "Type": "TArray<struct InstancedRopeParams>",
-        "Size": "0x10",
-        "Offset": "0x5a0"
-      },
-      {
-        "Name": "ShadowLOD",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x5b0"
-      },
-      {
-        "Name": "pad0xac_C3RVN[0xac]",
-        "Type": "char",
-        "Size": "0xac",
-        "Offset": "0x5b4"
-      }
-    ]
+  "RopeInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "RopeCatenaryRenderComponent": {
     "Super": "CordRenderComponent",

@@ -1,18 +1,4 @@
 {
-  "ShippingDebugActorSphereCollection": {
-    "Super": "Actor",
-    "FullSize": "0x3b0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "SphereList",
-        "Type": "TArray<struct SphereData>",
-        "Size": "0x10",
-        "Offset": "0x3a0"
-      }
-    ]
-  },
   "TickableDebugDrawingServiceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
@@ -45,7 +31,7 @@
         "Offset": "0x3b4"
       },
       {
-        "Name": "pad0xc_39DFZ[0xc]",
+        "Name": "pad0xc_HITJX[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x3bc"
@@ -59,6 +45,41 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "ShippingDebugActorSphereCollection": {
+    "Super": "Actor",
+    "FullSize": "0x3b0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "SphereList",
+        "Type": "TArray<struct SphereData>",
+        "Size": "0x10",
+        "Offset": "0x3a0"
+      }
+    ]
+  },
+  "HitchDebugComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x138",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Name": "pad0x80_L5WYY[0x80]",
+        "Type": "char",
+        "Size": "0x80",
+        "Offset": "0xb8"
+      }
+    ]
+  },
+  "VideprinterServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "DrawDebugService": {
     "Super": "Actor",
     "FullSize": "0x4d8",
@@ -66,7 +87,7 @@
     "ClassSize": "0x138",
     "Attributes": [
       {
-        "Name": "pad0x8_VYPLH[0x8]",
+        "Name": "pad0x8_PTNMJ[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3a0"
@@ -132,33 +153,12 @@
         "Offset": "0x438"
       },
       {
-        "Name": "pad0x9f_XWKIP[0x9f]",
+        "Name": "pad0x9f_AEUO0[0x9f]",
         "Type": "char",
         "Size": "0x9f",
         "Offset": "0x439"
       }
     ]
-  },
-  "HitchDebugComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x138",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x80",
-    "Attributes": [
-      {
-        "Name": "pad0x80_05OYU[0x80]",
-        "Type": "char",
-        "Size": "0x80",
-        "Offset": "0xb8"
-      }
-    ]
-  },
-  "VideprinterServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "VideprinterService": {
     "Super": "Object",
@@ -167,7 +167,7 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x8_EKKA0[0x8]",
+        "Name": "pad0x8_4MQJR[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"

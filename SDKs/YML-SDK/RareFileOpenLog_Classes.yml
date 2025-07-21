@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AggregateOpenOrderLogsCommandlet:
   Attributes:
-  - Name: pad0x8_Z2PVA[0x8]
+  - Name: pad0x8_682OB[0x8]
     Offset: '0x80'
     Size: '0x8'
     Type: char
@@ -12,7 +12,7 @@ AggregateOpenOrderLogsCommandlet:
   Super: Commandlet
 RareFileOpenFileHandler:
   Attributes:
-  - Name: pad0x48_K4SGD[0x48]
+  - Name: pad0x48_EWE6L[0x48]
     Offset: '0x1c0'
     Size: '0x48'
     Type: char
@@ -34,7 +34,7 @@ RareFileOpenLogSettings:
     Offset: '0x40'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_N76O0[0x7]
+  - Name: pad0x7_OZM6A[0x7]
     Offset: '0x41'
     Size: '0x7'
     Type: char
@@ -54,7 +54,7 @@ RareFileOpenLogSettings:
     Offset: '0x78'
     Size: '0x4'
     Type: int
-  - Name: pad0x14_1G0NR[0x14]
+  - Name: pad0x14_77I6V[0x14]
     Offset: '0x7c'
     Size: '0x14'
     Type: char

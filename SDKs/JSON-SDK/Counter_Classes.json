@@ -1,4 +1,64 @@
 {
+  "IsCountAmountMetStatCondition": {
+    "Super": "TargetedStatCondition",
+    "FullSize": "0x40",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CountAmount",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x4_RDZ4A[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "CountType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "CountHolderComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x8_O5OCO[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "CountHolders",
+        "Type": "TArray<struct CountHolder>",
+        "Size": "0x10",
+        "Offset": "0xc0"
+      }
+    ]
+  },
+  "CountPolicy": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CountHolderProviderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "CountType": {
     "Super": "Object",
     "FullSize": "0x30",
@@ -38,7 +98,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x4_TZXKQ[0x4]",
+        "Name": "pad0x4_IUWO4[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xcc"
@@ -48,66 +108,6 @@
         "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
         "Offset": "0xd0"
-      }
-    ]
-  },
-  "CountHolderProviderInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "CountPolicy": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "IsCountAmountMetStatCondition": {
-    "Super": "TargetedStatCondition",
-    "FullSize": "0x40",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CountAmount",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x4_DMKE6[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "CountType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "CountHolderComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x8_T102H[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "CountHolders",
-        "Type": "TArray<struct CountHolder>",
-        "Size": "0x10",
-        "Offset": "0xc0"
       }
     ]
   },

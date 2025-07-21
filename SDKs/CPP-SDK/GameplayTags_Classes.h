@@ -10,9 +10,9 @@
 class GameplayTagsManager: public Object
 {
 public:
-	char                                                         pad0x118_ANNQB[0x118];                             // 0x28(0x118)
+	char                                                         pad0x118_5PO1F[0x118];                             // 0x28(0x118)
 	TArray<class DataTable*>                                     GameplayTagTables;                                 // 0x140(0x10)
-	char                                                         pad0x20_QZ5JI[0x20];                               // 0x150(0x20)
+	char                                                         pad0x20_KUVFI[0x20];                               // 0x150(0x20)
 };
 
 
@@ -21,13 +21,6 @@ class GameplayTagsSettings: public Object
 {
 public:
 	TArray<String>                                               GameplayTags;                                      // 0x28(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class EditableGameplayTagQueryExpression: public Object
-{
-public:
 };
 
 
@@ -50,25 +43,16 @@ class EditableGameplayTagQuery: public Object
 {
 public:
 	struct FString                                               UserDescription;                                   // 0x28(0x10)
-	char                                                         pad0x10_VKM50[0x10];                               // 0x38(0x10)
+	char                                                         pad0x10_QHXA5[0x10];                               // 0x38(0x10)
 	class EditableGameplayTagQueryExpression*                    RootExpression;                                    // 0x48(0x8)
 	struct GameplayTagQuery                                      TagQueryExportText_Helper;                         // 0x50(0x48)
 };
 
 
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class EditableGameplayTagQueryExpression_AnyTagsMatch: public EditableGameplayTagQueryExpression
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class EditableGameplayTagQueryExpression: public Object
 {
 public:
-	struct GameplayTagContainer                                  Tags;                                              // 0x28(0x28)
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class EditableGameplayTagQueryExpression_NoTagsMatch: public EditableGameplayTagQueryExpression
-{
-public:
-	struct GameplayTagContainer                                  Tags;                                              // 0x28(0x28)
 };
 
 
@@ -89,6 +73,22 @@ public:
 
 
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class EditableGameplayTagQueryExpression_NoExprMatch: public EditableGameplayTagQueryExpression
+{
+public:
+	TArray<class EditableGameplayTagQueryExpression*>            Expressions;                                       // 0x28(0x10)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class EditableGameplayTagQueryExpression_NoTagsMatch: public EditableGameplayTagQueryExpression
+{
+public:
+	struct GameplayTagContainer                                  Tags;                                              // 0x28(0x28)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class EditableGameplayTagQueryExpression_AnyExprMatch: public EditableGameplayTagQueryExpression
 {
 public:
@@ -96,11 +96,11 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class EditableGameplayTagQueryExpression_NoExprMatch: public EditableGameplayTagQueryExpression
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class EditableGameplayTagQueryExpression_AnyTagsMatch: public EditableGameplayTagQueryExpression
 {
 public:
-	TArray<class EditableGameplayTagQueryExpression*>            Expressions;                                       // 0x28(0x10)
+	struct GameplayTagContainer                                  Tags;                                              // 0x28(0x28)
 };
 
 

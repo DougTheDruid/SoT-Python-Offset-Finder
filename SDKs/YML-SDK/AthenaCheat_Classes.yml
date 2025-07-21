@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AthenaCheatManager:
   Attributes:
-  - Name: pad0x18_2UNF3[0x18]
+  - Name: pad0x18_85R09[0x18]
     Offset: '0x78'
     Size: '0x18'
     Type: char
@@ -14,7 +14,7 @@ AthenaCheatManager:
     Offset: '0x98'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x28_5GSSE[0x28]
+  - Name: pad0x28_1ADE0[0x28]
     Offset: '0xa0'
     Size: '0x28'
     Type: char
@@ -34,11 +34,11 @@ AthenaCheatManager:
     Offset: '0xe8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4c_80TO8[0x4c]
+  - Name: pad0x54_OS1XS[0x54]
     Offset: '0xec'
-    Size: '0x4c'
+    Size: '0x54'
     Type: char
-  ClassSize: '0xc0'
-  FullSize: '0x138'
+  ClassSize: '0xc8'
+  FullSize: '0x140'
   InheritedSize: '0x78'
   Super: CheatManager

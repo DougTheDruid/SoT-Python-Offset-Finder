@@ -2,14 +2,14 @@
 # https://github.com/DougTheDruid
 ActorSpawnedAutomationEvent:
   Attributes:
-  - Name: pad0x8_VLGUC[0x8]
+  - Name: pad0x8_P82GF[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
   ClassSize: '0x8'
 BodyFramePair:
   Attributes:
-  - Name: pad0x10_DUZ1Q[0x10]
+  - Name: pad0x10_CZDA8[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
@@ -17,7 +17,7 @@ BodyFramePair:
     Offset: '0x10'
     Size: '0x8'
     Type: class TaleQuestIndexedFrame*
-  - Name: pad0x10_SLC8U[0x10]
+  - Name: pad0x10_CX3Z1[0x10]
     Offset: '0x18'
     Size: '0x10'
     Type: char
@@ -43,7 +43,7 @@ CriticalActorDelegateData:
     Offset: '0x8'
     Size: '0x38'
     Type: struct FText
-  - Name: pad0x8_ETJAB[0x8]
+  - Name: pad0x8_LEZVN[0x8]
     Offset: '0x40'
     Size: '0x8'
     Type: char
@@ -54,7 +54,7 @@ CriticalActorWrapper:
     Offset: '0x0'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x38_VVQQO[0x38]
+  - Name: pad0x38_DQGFF[0x38]
     Offset: '0x8'
     Size: '0x38'
     Type: char
@@ -104,7 +104,7 @@ CutsceneStartedTelemetryEvent:
     Offset: '0x24'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_9Y43Q[0x3]
+  - Name: pad0x3_5P8T6[0x3]
     Offset: '0x25'
     Size: '0x3'
     Type: char
@@ -119,7 +119,7 @@ CutsceneStartedTelemetryEvent:
   ClassSize: '0x48'
 DebugOnTalePhaseBranchAssignedForPlayerNetworkEvent:
   Attributes:
-  - Name: pad0x18_FNFSZ[0x18]
+  - Name: pad0x18_ZVI97[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -127,7 +127,7 @@ DebugOnTalePhaseBranchAssignedForPlayerNetworkEvent:
     Offset: '0x18'
     Size: '0xc'
     Type: struct PhaseBranchIndexPlayerAssignment
-  - Name: pad0x4_6OZ2G[0x4]
+  - Name: pad0x4_8614T[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char
@@ -138,14 +138,14 @@ DebugTalePhaseBranchAssignedForPlayerEvent:
     Offset: '0x0'
     Size: '0x10'
     Type: struct Guid
-  - Name: pad0x8_V3TPD[0x8]
+  - Name: pad0x8_1IXJV[0x8]
     Offset: '0x10'
     Size: '0x8'
     Type: char
   ClassSize: '0x18'
 EndOnScreenParticlesRpc:
   Attributes:
-  - Name: pad0x18_BEAYX[0x18]
+  - Name: pad0x18_2QGF4[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -163,7 +163,7 @@ EventModalInteractionStateChanged:
   ClassSize: '0x1'
 EventSpawnedTallTaleQuestItem:
   Attributes:
-  - Name: pad0x1_CNTJ1[0x1]
+  - Name: pad0x1_VM7UH[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -208,7 +208,7 @@ IslandTypeWeights:
   ClassSize: '0x14'
 JumpToMontageSectionCommand:
   Attributes:
-  - Name: pad0x18_J2PPP[0x18]
+  - Name: pad0x18_VAMOZ[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -230,7 +230,7 @@ MigrationActionPair:
   ClassSize: '0x10'
 MontageAnimationCommandBase:
   Attributes:
-  - Name: pad0x8_AOVMF[0x8]
+  - Name: pad0x8_Y9ACS[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -260,7 +260,7 @@ NameRedirectionTypeInfo:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_TIM8F[0x7]
+  - Name: pad0x7_YF55Z[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -271,14 +271,14 @@ NameRedirectionTypeInfo:
   ClassSize: '0x40'
 ParticpantToolGroup:
   Attributes:
-  - Name: pad0x20_KK6S2[0x20]
+  - Name: pad0x20_4L7QU[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
   ClassSize: '0x20'
 PhaseBranchIndexPlayerAssignment:
   Attributes:
-  - Name: pad0x8_MEFS0[0x8]
+  - Name: pad0x8_63HAE[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -297,7 +297,7 @@ PhasedActor:
     Offset: '0x8'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x10_U64JK[0x10]
+  - Name: pad0x10_FR51E[0x10]
     Offset: '0x10'
     Size: '0x10'
     Type: char
@@ -316,14 +316,14 @@ PhasedItem:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x17_8WOF2[0x17]
+  - Name: pad0x17_S6MPB[0x17]
     Offset: '0x11'
     Size: '0x17'
     Type: char
   ClassSize: '0x28'
 PlayMontageAnimationCommand:
   Attributes:
-  - Name: pad0x18_YQEMP[0x18]
+  - Name: pad0x18_Z5DVP[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -338,14 +338,14 @@ PlayMontageAnimationCommand:
   ClassSize: '0x20'
 PlaySequencerAutomationEvent:
   Attributes:
-  - Name: pad0x18_7GHIZ[0x18]
+  - Name: pad0x18_IRE1E[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
   ClassSize: '0x18'
 PredicatedBranchedTask:
   Attributes:
-  - Name: pad0x48_A6I15[0x48]
+  - Name: pad0x48_NSM6V[0x48]
     Offset: '0x0'
     Size: '0x48'
     Type: char
@@ -359,175 +359,175 @@ QueryableStateChangedEvent:
   ClassSize: '0x30'
 QuestVariableAISpawner:
   Attributes:
-  - Name: pad0x30_619WH[0x30]
+  - Name: pad0x30_4AHGN[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariableActorArray:
   Attributes:
-  - Name: pad0x30_0WGSJ[0x30]
+  - Name: pad0x30_3MJY3[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariableActorAssetType:
   Attributes:
-  - Name: pad0x30_UB6VZ[0x30]
+  - Name: pad0x30_E2F0P[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariableActorAssetTypeArray:
   Attributes:
-  - Name: pad0x30_Q04MR[0x30]
+  - Name: pad0x30_B28UD[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariableAny:
   Attributes:
-  - Name: pad0x30_JINAZ[0x30]
+  - Name: pad0x30_Q7PF6[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariableArray:
   Attributes:
-  - Name: pad0x30_8XUKS[0x30]
+  - Name: pad0x30_Q9P3H[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariableBountyTargetArray:
   Attributes:
-  - Name: pad0x30_JA0ZT[0x30]
+  - Name: pad0x30_UQ6EZ[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariableClassArray:
   Attributes:
-  - Name: pad0x30_1GTFX[0x30]
+  - Name: pad0x30_MM7CD[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariableCollection:
   Attributes:
-  - Name: pad0x30_CMPLN[0x30]
+  - Name: pad0x30_9CXBZ[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariableGameEvent:
   Attributes:
-  - Name: pad0x30_W82JU[0x30]
+  - Name: pad0x30_LQAG6[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariableGuidArray:
   Attributes:
-  - Name: pad0x30_DWXRT[0x30]
+  - Name: pad0x30_00VQR[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariableItemDescType:
   Attributes:
-  - Name: pad0x30_L6KJG[0x30]
+  - Name: pad0x30_D9KAF[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariableItemDescTypeArray:
   Attributes:
-  - Name: pad0x30_1SFDX[0x30]
+  - Name: pad0x30_VEJBO[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariableItemInfo:
   Attributes:
-  - Name: pad0x30_X6UE1[0x30]
+  - Name: pad0x30_LIS5B[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariableLinkEQSContext:
   Attributes:
-  - Name: pad0x30_5VINJ[0x30]
+  - Name: pad0x30_1I461[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariableMerchantItem:
   Attributes:
-  - Name: pad0x30_VZUJ4[0x30]
+  - Name: pad0x30_E8MJH[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariableMerchantItemArray:
   Attributes:
-  - Name: pad0x30_C6XPP[0x30]
+  - Name: pad0x30_FB3QR[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariableObjectArray:
   Attributes:
-  - Name: pad0x30_1SUF6[0x30]
+  - Name: pad0x30_ETHSK[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariablePageLayout:
   Attributes:
-  - Name: pad0x30_ZTSWO[0x30]
+  - Name: pad0x30_HXCA4[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariablePrioritisedPrompt:
   Attributes:
-  - Name: pad0x30_Z1FIF[0x30]
+  - Name: pad0x30_YBSKP[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariableRotator:
   Attributes:
-  - Name: pad0x30_9FWRN[0x30]
+  - Name: pad0x30_Y6378[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariableSetEQSTaleContextValue:
   Attributes:
-  - Name: pad0x30_GW337[0x30]
+  - Name: pad0x30_NQRCQ[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariableTaleResourceHandle:
   Attributes:
-  - Name: pad0x30_UBMPR[0x30]
+  - Name: pad0x30_UHW5C[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariableTexture:
   Attributes:
-  - Name: pad0x30_MUR1A[0x30]
+  - Name: pad0x30_BDUFP[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 SetDialogueInteractionEnabledClientCommand:
   Attributes:
-  - Name: pad0x8_66I7F[0x8]
+  - Name: pad0x8_H30OR[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -539,14 +539,14 @@ SetDialogueInteractionEnabledClientCommand:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_BILPF[0x7]
+  - Name: pad0x7_11RK0[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
   ClassSize: '0x18'
 SetDialogueInteractionPromptClientCommand:
   Attributes:
-  - Name: pad0x8_OD3ZE[0x8]
+  - Name: pad0x8_CXR1G[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -561,7 +561,7 @@ SetDialogueInteractionPromptClientCommand:
   ClassSize: '0x48'
 SetNextMontageSectionCommand:
   Attributes:
-  - Name: pad0x18_MWCRC[0x18]
+  - Name: pad0x18_U6L83[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -576,7 +576,7 @@ SetNextMontageSectionCommand:
   ClassSize: '0x28'
 SnapshottedActorData:
   Attributes:
-  - Name: pad0x10_5IS37[0x10]
+  - Name: pad0x10_TXYS7[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
@@ -592,7 +592,7 @@ SnapshottedActorData:
     Offset: '0x21'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_FMA5E[0x6]
+  - Name: pad0x6_H3GR9[0x6]
     Offset: '0x22'
     Size: '0x6'
     Type: char
@@ -603,7 +603,7 @@ SnapshottedActorData:
   ClassSize: '0x60'
 SplineFootprintPathTool:
   Attributes:
-  - Name: pad0x1_PK4N3[0x1]
+  - Name: pad0x1_FAINL[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -632,7 +632,7 @@ StepMerchantItemDesc:
   ClassSize: '0x40'
 StopMontageAnimationCommand:
   Attributes:
-  - Name: pad0x18_QVSMZ[0x18]
+  - Name: pad0x18_VP2BQ[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -640,7 +640,7 @@ StopMontageAnimationCommand:
     Offset: '0x18'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_R6ZVS[0x4]
+  - Name: pad0x4_NLND7[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -666,7 +666,7 @@ TaleQuestCargoRunContractItem:
     Offset: '0x0'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x10_Y5T2X[0x10]
+  - Name: pad0x10_ETY7K[0x10]
     Offset: '0x8'
     Size: '0x10'
     Type: char
@@ -699,7 +699,7 @@ TaleQuestDeliveryRequest:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_QRHEL[0x4]
+  - Name: pad0x4_OUWYP[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -718,7 +718,7 @@ TaleQuestDeliveryRequest:
   ClassSize: '0x38'
 TaleQuestDesc:
   Attributes:
-  - Name: pad0x28_K5QE6[0x28]
+  - Name: pad0x28_WKYV6[0x28]
     Offset: '0x0'
     Size: '0x28'
     Type: char
@@ -746,7 +746,7 @@ TaleQuestDesc:
     Offset: '0x79'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_TXDTL[0x6]
+  - Name: pad0x6_CJFKR[0x6]
     Offset: '0x7a'
     Size: '0x6'
     Type: char
@@ -764,14 +764,14 @@ TaleQuestFailedEvent:
   ClassSize: '0x20'
 TaleQuestForEachCrewTask:
   Attributes:
-  - Name: pad0x28_UDXRF[0x28]
+  - Name: pad0x28_NCCKY[0x28]
     Offset: '0x0'
     Size: '0x28'
     Type: char
   ClassSize: '0x28'
 TaleQuestPhaseClusterRootActor:
   Attributes:
-  - Name: pad0x30_T972U[0x30]
+  - Name: pad0x30_BYM71[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
@@ -782,7 +782,7 @@ TaleQuestPredicateBranchedTaskDesc:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_76ZMT[0x4]
+  - Name: pad0x4_VYHDP[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -793,7 +793,7 @@ TaleQuestPredicateBranchedTaskDesc:
   ClassSize: '0x10'
 TaleQuestQueryableStateCanAllDataBeReadCondition:
   Attributes:
-  - Name: pad0x28_XBUPU[0x28]
+  - Name: pad0x28_3UKM2[0x28]
     Offset: '0x0'
     Size: '0x28'
     Type: char
@@ -805,14 +805,14 @@ TaleQuestQueryableStateCanAllDataBeReadCondition:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_2BEGV[0x7]
+  - Name: pad0x7_RT07P[0x7]
     Offset: '0x39'
     Size: '0x7'
     Type: char
   ClassSize: '0x40'
 TaleQuestQueryableStateCanAnyDataBeReadCondition:
   Attributes:
-  - Name: pad0x28_2CUFU[0x28]
+  - Name: pad0x28_AP95J[0x28]
     Offset: '0x0'
     Size: '0x28'
     Type: char
@@ -824,7 +824,7 @@ TaleQuestQueryableStateCanAnyDataBeReadCondition:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_HDAJY[0x7]
+  - Name: pad0x7_27NAT[0x7]
     Offset: '0x39'
     Size: '0x7'
     Type: char
@@ -843,7 +843,7 @@ TaleQuestQueryableStateDataInfo:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_V1LHF[0x3]
+  - Name: pad0x3_2FC1H[0x3]
     Offset: '0x29'
     Size: '0x3'
     Type: char
@@ -865,7 +865,7 @@ TaleQuestQueryableStateDataInfoId:
   ClassSize: '0x20'
 TaleQuestQueryableStateReadAllValueBoolCondition:
   Attributes:
-  - Name: pad0x28_01GI1[0x28]
+  - Name: pad0x28_PF2LR[0x28]
     Offset: '0x0'
     Size: '0x28'
     Type: char
@@ -877,14 +877,14 @@ TaleQuestQueryableStateReadAllValueBoolCondition:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_GOTWA[0x7]
+  - Name: pad0x7_4G3F3[0x7]
     Offset: '0x39'
     Size: '0x7'
     Type: char
   ClassSize: '0x40'
 TaleQuestQueryableStateReadAnyValueBoolCondition:
   Attributes:
-  - Name: pad0x28_XUGKT[0x28]
+  - Name: pad0x28_X3CEZ[0x28]
     Offset: '0x0'
     Size: '0x28'
     Type: char
@@ -896,14 +896,14 @@ TaleQuestQueryableStateReadAnyValueBoolCondition:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_4EL6U[0x7]
+  - Name: pad0x7_4A1D6[0x7]
     Offset: '0x39'
     Size: '0x7'
     Type: char
   ClassSize: '0x40'
 TaleQuestQueryableStateReadValueIntCondition:
   Attributes:
-  - Name: pad0x28_JH4L9[0x28]
+  - Name: pad0x28_0ALFA[0x28]
     Offset: '0x0'
     Size: '0x28'
     Type: char
@@ -919,7 +919,7 @@ TaleQuestQueryableStateReadValueIntCondition:
     Offset: '0x34'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_47ZPM[0x3]
+  - Name: pad0x3_BLSLX[0x3]
     Offset: '0x35'
     Size: '0x3'
     Type: char
@@ -933,7 +933,7 @@ TaleQuestSelectorServiceSeedSetTelemetryEvent:
   ClassSize: '0x4'
 TaleQuestStopPermanentPromptEvent:
   Attributes:
-  - Name: pad0x1_5H8ZF[0x1]
+  - Name: pad0x1_B4ZPC[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -951,7 +951,7 @@ TaleQuestToggledDefinition:
   ClassSize: '0x10'
 ToggleModalInteractionNetworkEvent:
   Attributes:
-  - Name: pad0x18_MZBFG[0x18]
+  - Name: pad0x18_KX3RS[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -963,7 +963,7 @@ ToggleModalInteractionNetworkEvent:
     Offset: '0x2c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_9JWUI[0x3]
+  - Name: pad0x3_QZ02H[0x3]
     Offset: '0x2d'
     Size: '0x3'
     Type: char
@@ -974,14 +974,14 @@ TrackedActorData:
     Offset: '0x0'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x8_8ZFXH[0x8]
+  - Name: pad0x8_BKYIA[0x8]
     Offset: '0x8'
     Size: '0x8'
     Type: char
   ClassSize: '0x10'
 TriggerOnScreenParticlesRpc:
   Attributes:
-  - Name: pad0x18_TUA80[0x18]
+  - Name: pad0x18_Q8LQN[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char

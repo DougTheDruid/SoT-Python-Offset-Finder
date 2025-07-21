@@ -12,7 +12,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x14_T81ZJ[0x14]",
+        "Name": "pad0x14_30OZ7[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0xcc"
@@ -30,42 +30,10 @@
         "Offset": "0xe4"
       },
       {
-        "Name": "pad0x8_9PYHU[0x8]",
+        "Name": "pad0x8_B6U4V[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xe8"
-      }
-    ]
-  },
-  "NudgeFromStormPolicy": {
-    "Super": "NudgePolicy",
-    "FullSize": "0x158",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "ChanceOfNudge",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "pad0x4_4HM6M[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xcc"
-      },
-      {
-        "Name": "WeightedTimers",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "pad0x58_X58P4[0x58]",
-        "Type": "char",
-        "Size": "0x58",
-        "Offset": "0x100"
       }
     ]
   },
@@ -100,6 +68,38 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xcc"
+      }
+    ]
+  },
+  "NudgeFromStormPolicy": {
+    "Super": "NudgePolicy",
+    "FullSize": "0x158",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "ChanceOfNudge",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "pad0x4_E85EL[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xcc"
+      },
+      {
+        "Name": "WeightedTimers",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0x58_GJ3A2[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x100"
       }
     ]
   },

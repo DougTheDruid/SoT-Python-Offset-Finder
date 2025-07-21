@@ -8,7 +8,7 @@ struct GameServiceCoordinatorUnit
 {
 public:
 	class Object*                                                Service;                                           // 0x0(0x8)
-	char                                                         pad0x10_OEL4M[0x10];                               // 0x8(0x10)
+	char                                                         pad0x10_QX2VU[0x10];                               // 0x8(0x10)
 };
 
 
@@ -16,7 +16,7 @@ public:
 struct GameServiceMap
 {
 public:
-	char                                                         pad0x70_AP8FT[0x70];                               // 0x0(0x70)
+	char                                                         pad0x70_Y3NZ1[0x70];                               // 0x0(0x70)
 };
 
 
@@ -25,7 +25,7 @@ struct GameServiceCoordinator
 {
 public:
 	TArray<struct GameServiceCoordinatorUnit>                    Services;                                          // 0x0(0x10)
-	char                                                         pad0x10_017V9[0x10];                               // 0x10(0x10)
+	char                                                         pad0x10_W8QX3[0x10];                               // 0x10(0x10)
 };
 
 

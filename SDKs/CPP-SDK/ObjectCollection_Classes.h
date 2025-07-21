@@ -7,7 +7,7 @@
 class TestObjectForCollection: public Object
 {
 public:
-	char                                                         pad0x48_2XX45[0x48];                               // 0x28(0x48)
+	char                                                         pad0x48_NDRAC[0x48];                               // 0x28(0x48)
 };
 
 
@@ -22,7 +22,7 @@ public:
 class TestCollector: public Object
 {
 public:
-	char                                                         pad0x60_Z9FYY[0x60];                               // 0x28(0x60)
+	char                                                         pad0x60_89IJC[0x60];                               // 0x28(0x60)
 };
 
 

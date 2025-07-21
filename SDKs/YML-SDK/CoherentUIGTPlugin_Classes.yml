@@ -8,7 +8,7 @@ CoherentUIGTAssetReferencer:
   Super: Object
 CoherentUIGTBaseComponent:
   Attributes:
-  - Name: pad0xa8_KOX84[0xa8]
+  - Name: pad0xa8_I6JNU[0xa8]
     Offset: '0xb8'
     Size: '0xa8'
     Type: char
@@ -68,7 +68,7 @@ CoherentUIGTBaseComponent:
     Offset: '0x189'
     Size: '0x1'
     Type: bool
-  - Name: pad0x176_WF8UE[0x176]
+  - Name: pad0x176_I1524[0x176]
     Offset: '0x18a'
     Size: '0x176'
     Type: char
@@ -100,7 +100,7 @@ CoherentUIGTComponent:
     Offset: '0x318'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_54R5Y[0x3]
+  - Name: pad0x3_6NF4X[0x3]
     Offset: '0x319'
     Size: '0x3'
     Type: char
@@ -112,7 +112,7 @@ CoherentUIGTComponent:
     Offset: '0x320'
     Size: '0x1'
     Type: bool
-  - Name: pad0x17_EVYQF[0x17]
+  - Name: pad0x17_T3TQ1[0x17]
     Offset: '0x321'
     Size: '0x17'
     Type: char
@@ -132,7 +132,7 @@ CoherentUIGTGameHUD:
     Offset: '0x498'
     Size: '0x8'
     Type: class CoherentUIGTHUD*
-  - Name: pad0x90_8VR6Z[0x90]
+  - Name: pad0x90_JAU8S[0x90]
     Offset: '0x4a0'
     Size: '0x90'
     Type: char
@@ -154,7 +154,7 @@ CoherentUIGTHUD:
     Offset: '0x318'
     Size: '0x8'
     Type: class MaterialInstanceDynamic*
-  - Name: pad0x8_FIU4I[0x8]
+  - Name: pad0x8_VXYVB[0x8]
     Offset: '0x320'
     Size: '0x8'
     Type: char
@@ -164,7 +164,7 @@ CoherentUIGTHUD:
   Super: CoherentUIGTBaseComponent
 CoherentUIGTInputActor:
   Attributes:
-  - Name: pad0x60_V41R9[0x60]
+  - Name: pad0x60_5ZQJC[0x60]
     Offset: '0x3a0'
     Size: '0x60'
     Type: char
@@ -174,7 +174,7 @@ CoherentUIGTInputActor:
   Super: Actor
 CoherentUIGTJSEvent:
   Attributes:
-  - Name: pad0x80_QZYIK[0x80]
+  - Name: pad0x80_50CT8[0x80]
     Offset: '0x28'
     Size: '0x80'
     Type: char
@@ -192,7 +192,7 @@ CoherentUIGTJSPayload:
     Offset: '0x28'
     Size: '0x10'
     Type: struct FString
-  - Name: pad0x8_W2315[0x8]
+  - Name: pad0x8_RCG6M[0x8]
     Offset: '0x38'
     Size: '0x8'
     Type: char
@@ -210,7 +210,7 @@ CoherentUIGTLiveView:
     Offset: '0xc8'
     Size: '0x8'
     Type: class TextureRenderTarget2D*
-  - Name: pad0x18_HLEXS[0x18]
+  - Name: pad0x18_UJ7FP[0x18]
     Offset: '0xd0'
     Size: '0x18'
     Type: char
@@ -220,7 +220,7 @@ CoherentUIGTLiveView:
   Super: ActorComponent
 CoherentUIGTRenderToTextureLiveView:
   Attributes:
-  - Name: pad0x8_NNZ8L[0x8]
+  - Name: pad0x8_AVWWZ[0x8]
     Offset: '0xe8'
     Size: '0x8'
     Type: char
@@ -234,7 +234,7 @@ CoherentUIGTSettings:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_S6V23[0x3]
+  - Name: pad0x3_8LHYF[0x3]
     Offset: '0x29'
     Size: '0x3'
     Type: char
@@ -290,7 +290,7 @@ CoherentUIGTSettings:
     Offset: '0x3e'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_C8FJD[0x1]
+  - Name: pad0x1_NE04I[0x1]
     Offset: '0x3f'
     Size: '0x1'
     Type: char
@@ -310,7 +310,7 @@ CoherentUIGTSettings:
     Offset: '0x61'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_1EQC7[0x6]
+  - Name: pad0x6_83NN9[0x6]
     Offset: '0x62'
     Size: '0x6'
     Type: char
@@ -320,7 +320,7 @@ CoherentUIGTSettings:
   Super: Object
 CoherentUIGTSystem:
   Attributes:
-  - Name: pad0x50_G1YEW[0x50]
+  - Name: pad0x50_MJ3E7[0x50]
     Offset: '0x3a0'
     Size: '0x50'
     Type: char
@@ -330,7 +330,7 @@ CoherentUIGTSystem:
   Super: Actor
 CoherentUIGTWidget:
   Attributes:
-  - Name: pad0x20_FZ6RV[0x20]
+  - Name: pad0x20_IMR6Q[0x20]
     Offset: '0x138'
     Size: '0x20'
     Type: char
@@ -358,7 +358,7 @@ CoherentUIGTWidget:
     Offset: '0x1fc'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_OAJQV[0x3]
+  - Name: pad0x3_3O01I[0x3]
     Offset: '0x1fd'
     Size: '0x3'
     Type: char
@@ -394,7 +394,7 @@ CoherentUIGTWidget:
     Offset: '0x21c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1a3_J3Z66[0x1a3]
+  - Name: pad0x1a3_2E8XF[0x1a3]
     Offset: '0x21d'
     Size: '0x1a3'
     Type: char
@@ -410,7 +410,7 @@ CoherentUIGTWidget:
     Offset: '0x3d4'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_2EWYG[0x3]
+  - Name: pad0x3_3Y6GV[0x3]
     Offset: '0x3d5'
     Size: '0x3'
     Type: char

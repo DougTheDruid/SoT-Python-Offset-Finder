@@ -1,11 +1,4 @@
 {
-  "CrouchedDistanceConditionalStatsTrigger": {
-    "Super": "ConditionalStatsTriggerType",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "CrouchDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x80",
@@ -67,7 +60,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x4_YE2IG[0x4]",
+        "Name": "pad0x4_XR5XW[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x54"
@@ -116,17 +109,24 @@
       }
     ]
   },
-  "CrouchActionStateId": {
-    "Super": "ActionStateId",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "IsTargetCrouchingStatCondition": {
     "Super": "TargetedStatCondition",
     "FullSize": "0x30",
     "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CrouchedDistanceConditionalStatsTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CrouchActionStateId": {
+    "Super": "ActionStateId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },

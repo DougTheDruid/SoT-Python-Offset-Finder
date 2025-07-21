@@ -1,47 +1,21 @@
 {
-  "AthenaAudioModuleSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x48",
-    "InheritedSize": "0x38",
+  "MultiEmitter": {
+    "Super": "Actor",
+    "FullSize": "0x3b0",
+    "InheritedSize": "0x3a0",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "AudioConfigAsset",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "AthenaAudioConfig": {
-    "Super": "WwiseCoreAssets",
-    "FullSize": "0x118",
-    "InheritedSize": "0x58",
-    "ClassSize": "0xc0",
-    "Attributes": [
-      {
-        "Name": "ItemProxyPool",
-        "Type": "class WwiseObjectPoolWrapper*",
+        "Name": "MultiEmitterRootComponent",
+        "Type": "class MultiEmitterRootComponent*",
         "Size": "0x8",
-        "Offset": "0x58"
+        "Offset": "0x3a0"
       },
       {
-        "Name": "AnimNotifyPool",
-        "Type": "class WwiseObjectPoolWrapper*",
+        "Name": "pad0x8_Z3DJ5[0x8]",
+        "Type": "char",
         "Size": "0x8",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "GameStateSettings",
-        "Type": "struct AthenaAudioGameStateSettings",
-        "Size": "0x30",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "BootflowEvents",
-        "Type": "struct AthenaAudioBootflowEvents",
-        "Size": "0x80",
-        "Offset": "0x98"
+        "Offset": "0x3a8"
       }
     ]
   },
@@ -59,10 +33,156 @@
     "ClassSize": "0xb0",
     "Attributes": [
       {
-        "Name": "pad0xb0_6KORR[0xb0]",
+        "Name": "pad0xb0_78KT3[0xb0]",
         "Type": "char",
         "Size": "0xb0",
         "Offset": "0x28"
+      }
+    ]
+  },
+  "ImmerseGameService": {
+    "Super": "Object",
+    "FullSize": "0x98",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "pad0x60_V4JWU[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "DebugImmerseQRCodeTexture",
+        "Type": "class Texture2D*",
+        "Size": "0x8",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "pad0x8_HKEF3[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x90"
+      }
+    ]
+  },
+  "AudioPortalComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x330",
+    "InheritedSize": "0x2d0",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "PortalTriggerDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2d0"
+      },
+      {
+        "Name": "InsideRtpcUpdateDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2d4"
+      },
+      {
+        "Name": "OutsideRtpcUpdateDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2d8"
+      },
+      {
+        "Name": "TrackAttachmentToActor",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x2dc"
+      },
+      {
+        "Name": "pad0x3_EBXS2[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x2dd"
+      },
+      {
+        "Name": "AudioInsideSpace",
+        "Type": "class AudioSpaceDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x2e0"
+      },
+      {
+        "Name": "AudioOutsideSpace",
+        "Type": "class AudioSpaceDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x2e8"
+      },
+      {
+        "Name": "ActiveAudioInsideSpace",
+        "Type": "class AudioSpaceDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x2f0"
+      },
+      {
+        "Name": "ActiveAudioOutsideSpace",
+        "Type": "class AudioSpaceDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x2f8"
+      },
+      {
+        "Name": "CollectionAsset",
+        "Type": "class StoryDrivenAudioPortalDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x300"
+      },
+      {
+        "Name": "pad0x28_6GDCR[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x308"
+      }
+    ]
+  },
+  "AudioSpaceTrackerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CurrentSpaces",
+        "Type": "TArray<class AudioSpaceComponent*>",
+        "Size": "0x10",
+        "Offset": "0xb8"
+      }
+    ]
+  },
+  "StoryDrivenAudioPortalDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Feature",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_OXLE5[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "StoryResponses",
+        "Type": "TArray<struct StoryDrivenAudioPortalSetting>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "AssetsList",
+        "Type": "TArray<class StoryDrivenAudioPortalDataAsset*>",
+        "Size": "0x10",
+        "Offset": "0x48"
       }
     ]
   },
@@ -109,7 +229,7 @@
         "Offset": "0x300"
       },
       {
-        "Name": "pad0x14_KSM2T[0x14]",
+        "Name": "pad0x14_OBYCQ[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0x30c"
@@ -121,157 +241,10 @@
         "Offset": "0x320"
       },
       {
-        "Name": "pad0x38_UVIQ2[0x38]",
+        "Name": "pad0x38_UHI1X[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x328"
-      }
-    ]
-  },
-  "AudioPortalComponent": {
-    "Super": "SceneComponent",
-    "FullSize": "0x330",
-    "InheritedSize": "0x2d0",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "PortalTriggerDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2d0"
-      },
-      {
-        "Name": "InsideRtpcUpdateDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2d4"
-      },
-      {
-        "Name": "OutsideRtpcUpdateDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2d8"
-      },
-      {
-        "Name": "TrackAttachmentToActor",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x2dc"
-      },
-      {
-        "Name": "pad0x3_C2CPX[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x2dd"
-      },
-      {
-        "Name": "AudioInsideSpace",
-        "Type": "class AudioSpaceDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x2e0"
-      },
-      {
-        "Name": "AudioOutsideSpace",
-        "Type": "class AudioSpaceDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x2e8"
-      },
-      {
-        "Name": "ActiveAudioInsideSpace",
-        "Type": "class AudioSpaceDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x2f0"
-      },
-      {
-        "Name": "ActiveAudioOutsideSpace",
-        "Type": "class AudioSpaceDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x2f8"
-      },
-      {
-        "Name": "CollectionAsset",
-        "Type": "class StoryDrivenAudioPortalDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x300"
-      },
-      {
-        "Name": "pad0x28_WPIRK[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x308"
-      }
-    ]
-  },
-  "AudioSpaceTrackerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xc8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CurrentSpaces",
-        "Type": "TArray<class AudioSpaceComponent*>",
-        "Size": "0x10",
-        "Offset": "0xb8"
-      }
-    ]
-  },
-  "ImmerseGameServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ImmerseGameService": {
-    "Super": "Object",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x28_G5C77[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "DebugImmerseQRCodeTexture",
-        "Type": "class Texture2D*",
-        "Size": "0x8",
-        "Offset": "0x50"
-      }
-    ]
-  },
-  "StoryDrivenAudioPortalDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Feature",
-        "Type": "struct FeatureFlag",
-        "Size": "0xc",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x4_B30BR[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "StoryResponses",
-        "Type": "TArray<struct StoryDrivenAudioPortalSetting>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "AssetsList",
-        "Type": "TArray<class StoryDrivenAudioPortalDataAsset*>",
-        "Size": "0x10",
-        "Offset": "0x48"
       }
     ]
   },
@@ -300,32 +273,65 @@
         "Offset": "0x610"
       },
       {
-        "Name": "pad0x18_XSV75[0x18]",
+        "Name": "pad0x18_S97M9[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x618"
       }
     ]
   },
-  "MultiEmitter": {
-    "Super": "Actor",
-    "FullSize": "0x3b0",
-    "InheritedSize": "0x3a0",
+  "AthenaAudioConfig": {
+    "Super": "WwiseCoreAssets",
+    "FullSize": "0x118",
+    "InheritedSize": "0x58",
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "ItemProxyPool",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "AnimNotifyPool",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "GameStateSettings",
+        "Type": "struct AthenaAudioGameStateSettings",
+        "Size": "0x30",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "BootflowEvents",
+        "Type": "struct AthenaAudioBootflowEvents",
+        "Size": "0x80",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "AthenaAudioModuleSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "MultiEmitterRootComponent",
-        "Type": "class MultiEmitterRootComponent*",
-        "Size": "0x8",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "pad0x8_0SFG9[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x3a8"
+        "Name": "AudioConfigAsset",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x38"
       }
     ]
+  },
+  "ImmerseGameServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

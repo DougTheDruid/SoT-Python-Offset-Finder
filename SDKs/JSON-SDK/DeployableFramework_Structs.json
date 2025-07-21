@@ -1,15 +1,4 @@
 {
-  "EventDeployableAmmoHandoverComplete": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_TUYCZ[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "EventDeployableConversionChanged": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -24,6 +13,17 @@
         "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "EventDeployableAmmoHandoverComplete": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_A2K39[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },

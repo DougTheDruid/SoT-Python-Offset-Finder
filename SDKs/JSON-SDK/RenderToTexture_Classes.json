@@ -30,7 +30,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x50_IM2Q9[0x50]",
+        "Name": "pad0x50_ACHR2[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x58"

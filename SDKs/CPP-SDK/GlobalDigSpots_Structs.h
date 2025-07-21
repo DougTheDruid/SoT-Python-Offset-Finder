@@ -4,16 +4,6 @@
 // https://github.com/DougTheDruid
 
 // Size 0x30
-struct GlobalDigSpotStatusUpdateTelemetryEvent
-{
-public:
-	struct FString                                               DigSpotEventId;                                    // 0x0(0x10)
-	struct Guid                                                  VoyageID;                                          // 0x10(0x10)
-	struct FString                                               DigSpotStatus;                                     // 0x20(0x10)
-};
-
-
-// Size 0x30
 struct GlobalDigSpotDefinition
 {
 public:
@@ -29,8 +19,18 @@ public:
 struct GlobalDigSpotPopupEvent
 {
 public:
-	char                                                         pad0x18_924G7[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_591DY[0x18];                               // 0x0(0x18)
 	class PopUpMessageDesc*                                      PopUpDesc;                                         // 0x18(0x8)
+};
+
+
+// Size 0x30
+struct GlobalDigSpotStatusUpdateTelemetryEvent
+{
+public:
+	struct FString                                               DigSpotEventId;                                    // 0x0(0x10)
+	struct Guid                                                  VoyageID;                                          // 0x10(0x10)
+	struct FString                                               DigSpotStatus;                                     // 0x20(0x10)
 };
 
 

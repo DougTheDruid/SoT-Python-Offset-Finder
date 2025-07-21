@@ -6,11 +6,19 @@
 #include "ConditionalFramework_Structs.h"
 
 
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class ConditionRootAsset: public DataAsset
+{
+public:
+	struct ConditionInstance                                     ConditionRoot;                                     // 0x28(0x20)
+};
+
+
 // Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
 class ActorSpecifierComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_6S8MV[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_3YE0W[0x8];                                 // 0xb8(0x8)
 	class Actor*                                                 SpecifiedActor;                                    // 0xc0(0x8)
 };
 
@@ -19,14 +27,6 @@ public:
 class ActorSpecifierInterface: public Interface
 {
 public:
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class ConditionRootAsset: public DataAsset
-{
-public:
-	struct ConditionInstance                                     ConditionRoot;                                     // 0x28(0x20)
 };
 
 

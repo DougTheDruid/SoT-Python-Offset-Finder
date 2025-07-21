@@ -1,175 +1,4 @@
 {
-  "CompanyTutorialVoyageProgress": {
-    "Super": "Object",
-    "FullSize": "0xe0",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xb8",
-    "Attributes": [
-      {
-        "Name": "AssignedVoyageProposalDescClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "AssignedTaleRankDescClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0xa8_IST0R[0xa8]",
-        "Type": "char",
-        "Size": "0xa8",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "ContextualTutorialComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x130",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "ContextualTutorialClasses",
-        "Type": "TArray<struct ContextualTutorialPromptDesc>",
-        "Size": "0x10",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "SpawnedPromptActors",
-        "Type": "TArray<class Actor*>",
-        "Size": "0x10",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "pad0x58_4H15H[0x58]",
-        "Type": "char",
-        "Size": "0x58",
-        "Offset": "0xd8"
-      }
-    ]
-  },
-  "Tutorial2019Component": {
-    "Super": "ActorComponent",
-    "FullSize": "0xc0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "IsEnabledByServer",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "IsInTutorialTale",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xb9"
-      },
-      {
-        "Name": "pad0x6_GFUVD[0x6]",
-        "Type": "char",
-        "Size": "0x6",
-        "Offset": "0xba"
-      }
-    ]
-  },
-  "TutorialHelpersBlueprintLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TutorialStarter": {
-    "Super": "Object",
-    "FullSize": "0x60",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "AthenaPlayerController",
-        "Type": "class AthenaPlayerController*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "ShouldPlayIntroAnimatic",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "ShouldDisableAllIntroBehaviour",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x31"
-      },
-      {
-        "Name": "pad0x2_MUR38[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x32"
-      },
-      {
-        "Name": "IntroAnimationSettings",
-        "Type": "struct FirstPersonAnimaticSettings",
-        "Size": "0x2c",
-        "Offset": "0x34"
-      }
-    ]
-  },
-  "TutorialManagerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "CaptaincyTutorialDesc": {
-    "Super": "EntitlementDesc",
-    "FullSize": "0xc8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Tutorial2019FunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "OnboardingStatusInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "HasTutorialStarterBegunNPCDialogConditional": {
-    "Super": "NPCDialogConditional",
-    "FullSize": "0x38",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "TutorialStarterType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x7_KZWF9[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x31"
-      }
-    ]
-  },
   "TutorialManager": {
     "Super": "ActorComponent",
     "FullSize": "0x130",
@@ -177,7 +6,7 @@
     "ClassSize": "0x78",
     "Attributes": [
       {
-        "Name": "pad0x8_XCIEC[0x8]",
+        "Name": "pad0x8_XWI4O[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -285,12 +114,204 @@
         "Offset": "0x10f"
       },
       {
-        "Name": "pad0x20_YBAX6[0x20]",
+        "Name": "pad0x20_0ZAVA[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x110"
       }
     ]
+  },
+  "CaptaincyTutorialDesc": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TutorialManagerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CompanyTutorialVoyageProgress": {
+    "Super": "Object",
+    "FullSize": "0xe0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xb8",
+    "Attributes": [
+      {
+        "Name": "AssignedVoyageProposalDescClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "AssignedTaleRankDescClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0xa8_7L0EL[0xa8]",
+        "Type": "char",
+        "Size": "0xa8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "Tutorial2019FunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ContextualTutorialComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x130",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "ContextualTutorialClasses",
+        "Type": "TArray<struct ContextualTutorialPromptDesc>",
+        "Size": "0x10",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "SpawnedPromptActors",
+        "Type": "TArray<class Actor*>",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "pad0x58_5UKWE[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0xd8"
+      }
+    ]
+  },
+  "TutorialStarter": {
+    "Super": "Object",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "AthenaPlayerController",
+        "Type": "class AthenaPlayerController*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ShouldPlayIntroAnimatic",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "ShouldDisableAllIntroBehaviour",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x31"
+      },
+      {
+        "Name": "pad0x2_EBLIG[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x32"
+      },
+      {
+        "Name": "IntroAnimationSettings",
+        "Type": "struct FirstPersonAnimaticSettings",
+        "Size": "0x2c",
+        "Offset": "0x34"
+      }
+    ]
+  },
+  "Tutorial2019Component": {
+    "Super": "ActorComponent",
+    "FullSize": "0xc0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "IsEnabledByServer",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "IsInTutorialTale",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xb9"
+      },
+      {
+        "Name": "pad0x6_D6QNM[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0xba"
+      }
+    ]
+  },
+  "OnboardingStatusInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "HasTutorialStarterBegunNPCDialogConditional": {
+    "Super": "NPCDialogConditional",
+    "FullSize": "0x38",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "TutorialStarterType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x7_EN864[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x31"
+      }
+    ]
+  },
+  "TutorialHelpersBlueprintLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Tutorial2019ContextualDelegatingComponent": {
+    "Super": "Tutorial2019Component",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xc0",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ContextualTutorialComponent",
+        "Type": "class ContextualTutorialComponent*",
+        "Size": "0x8",
+        "Offset": "0xc0"
+      }
+    ]
+  },
+  "BeachNPCSpawnFlowStarter": {
+    "Super": "TutorialStarter",
+    "FullSize": "0x60",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "IntroductionToSOTFlowStarter": {
     "Super": "TutorialStarter",
@@ -311,7 +332,7 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x60_214MZ[0x60]",
+        "Name": "pad0x60_NMYZJ[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0x78"
@@ -356,7 +377,7 @@
         "Offset": "0x6a"
       },
       {
-        "Name": "pad0x5_NH320[0x5]",
+        "Name": "pad0x5_Y4TSE[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x6b"
@@ -374,7 +395,7 @@
         "Offset": "0x78"
       },
       {
-        "Name": "pad0x3_ZXOFQ[0x3]",
+        "Name": "pad0x3_OO1UK[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x79"
@@ -392,7 +413,7 @@
         "Offset": "0x84"
       },
       {
-        "Name": "pad0x3_KXE41[0x3]",
+        "Name": "pad0x3_WGP2T[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x85"
@@ -410,33 +431,12 @@
         "Offset": "0x90"
       },
       {
-        "Name": "pad0x64_SW0JJ[0x64]",
+        "Name": "pad0x64_8WVY8[0x64]",
         "Type": "char",
         "Size": "0x64",
         "Offset": "0x94"
       }
     ]
-  },
-  "Tutorial2019ContextualDelegatingComponent": {
-    "Super": "Tutorial2019Component",
-    "FullSize": "0xc8",
-    "InheritedSize": "0xc0",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "ContextualTutorialComponent",
-        "Type": "class ContextualTutorialComponent*",
-        "Size": "0x8",
-        "Offset": "0xc0"
-      }
-    ]
-  },
-  "BeachNPCSpawnFlowStarter": {
-    "Super": "TutorialStarter",
-    "FullSize": "0x60",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "CompanyOnboardingStarter": {
     "Super": "TutorialStarter",

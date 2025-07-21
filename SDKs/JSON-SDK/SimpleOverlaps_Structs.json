@@ -16,7 +16,7 @@
       }
     ]
   },
-  "SimpleOverlapEnd": {
+  "SimpleOverlapBegin": {
     "ClassSize": "0x10",
     "Attributes": [
       {
@@ -27,7 +27,7 @@
       }
     ]
   },
-  "SimpleOverlapBegin": {
+  "SimpleOverlapEnd": {
     "ClassSize": "0x10",
     "Attributes": [
       {

@@ -13,6 +13,135 @@
       }
     ]
   },
+  "DeployableInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ConvertActorToItemComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x268",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x1b0",
+    "Attributes": [
+      {
+        "Name": "pad0x10_0YT2O[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "ItemInfo",
+        "Type": "class ItemInfo*",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "DeploymentAnimation",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "UndeploymentAnimation",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "ProceedWithUndeploymentChecks",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "pad0x3_GYLPL[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xf1"
+      },
+      {
+        "Name": "AnimationDelay",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xf4"
+      },
+      {
+        "Name": "HoldTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xf8"
+      },
+      {
+        "Name": "ZSpawnOffset",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xfc"
+      },
+      {
+        "Name": "UndeployActionRuleVerbiage",
+        "Type": "struct UndeployActionRuleVerbiage",
+        "Size": "0xa8",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "pad0x18_73AZ0[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x1a8"
+      },
+      {
+        "Name": "TrackedActorType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1f0"
+      },
+      {
+        "Name": "DeploymentState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1f1"
+      },
+      {
+        "Name": "InteractionDeploymentState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1f2"
+      },
+      {
+        "Name": "pad0x5_PU90W[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0x1f3"
+      },
+      {
+        "Name": "PlayCollapseSfx",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x1f8"
+      },
+      {
+        "Name": "StopCollapseSfx",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x200"
+      },
+      {
+        "Name": "PoolWrapper",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x208"
+      },
+      {
+        "Name": "pad0x58_Q4HAZ[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x210"
+      }
+    ]
+  },
   "ConvertItemToActorComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x4d8",
@@ -20,7 +149,7 @@
     "ClassSize": "0x420",
     "Attributes": [
       {
-        "Name": "pad0x18_3C2GN[0x18]",
+        "Name": "pad0x18_XWZK5[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0xb8"
@@ -62,7 +191,7 @@
         "Offset": "0x122"
       },
       {
-        "Name": "pad0x5_R9D3B[0x5]",
+        "Name": "pad0x5_SZRPK[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x123"
@@ -86,7 +215,7 @@
         "Offset": "0x394"
       },
       {
-        "Name": "pad0x30_5YZIG[0x30]",
+        "Name": "pad0x30_AXAJ9[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x398"
@@ -98,7 +227,7 @@
         "Offset": "0x3c8"
       },
       {
-        "Name": "pad0x7_CJXFU[0x7]",
+        "Name": "pad0x7_3HIAG[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x3c9"
@@ -128,7 +257,7 @@
         "Offset": "0x3f1"
       },
       {
-        "Name": "pad0x1_RQFL0[0x1]",
+        "Name": "pad0x1_O3FOA[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x3f2"
@@ -158,7 +287,7 @@
         "Offset": "0x3f9"
       },
       {
-        "Name": "pad0x2_0272B[0x2]",
+        "Name": "pad0x2_SH63T[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x3fa"
@@ -170,7 +299,7 @@
         "Offset": "0x3fc"
       },
       {
-        "Name": "pad0x8_ZEB8Q[0x8]",
+        "Name": "pad0x8_HNTKH[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x400"
@@ -200,7 +329,7 @@
         "Offset": "0x411"
       },
       {
-        "Name": "pad0x6_PCDP1[0x6]",
+        "Name": "pad0x6_AQ3D3[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x412"
@@ -224,7 +353,7 @@
         "Offset": "0x428"
       },
       {
-        "Name": "pad0x28_XBFUL[0x28]",
+        "Name": "pad0x28_FQUMM[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x430"
@@ -236,139 +365,10 @@
         "Offset": "0x458"
       },
       {
-        "Name": "pad0x78_0IJFK[0x78]",
+        "Name": "pad0x78_4VHHE[0x78]",
         "Type": "char",
         "Size": "0x78",
         "Offset": "0x460"
-      }
-    ]
-  },
-  "DeployableInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ConvertActorToItemComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x268",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x1b0",
-    "Attributes": [
-      {
-        "Name": "pad0x10_122V7[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "ItemInfo",
-        "Type": "class ItemInfo*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "DeploymentAnimation",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "UndeploymentAnimation",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "ProceedWithUndeploymentChecks",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "pad0x3_UDETI[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0xf1"
-      },
-      {
-        "Name": "AnimationDelay",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xf4"
-      },
-      {
-        "Name": "HoldTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xf8"
-      },
-      {
-        "Name": "ZSpawnOffset",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xfc"
-      },
-      {
-        "Name": "UndeployActionRuleVerbiage",
-        "Type": "struct UndeployActionRuleVerbiage",
-        "Size": "0xa8",
-        "Offset": "0x100"
-      },
-      {
-        "Name": "pad0x18_9XOQ8[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x1a8"
-      },
-      {
-        "Name": "TrackedActorType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x1f0"
-      },
-      {
-        "Name": "DeploymentState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x1f1"
-      },
-      {
-        "Name": "InteractionDeploymentState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x1f2"
-      },
-      {
-        "Name": "pad0x5_NXCD8[0x5]",
-        "Type": "char",
-        "Size": "0x5",
-        "Offset": "0x1f3"
-      },
-      {
-        "Name": "PlayCollapseSfx",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x1f8"
-      },
-      {
-        "Name": "StopCollapseSfx",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x200"
-      },
-      {
-        "Name": "PoolWrapper",
-        "Type": "class WwiseObjectPoolWrapper*",
-        "Size": "0x8",
-        "Offset": "0x208"
-      },
-      {
-        "Name": "pad0x58_XUGZO[0x58]",
-        "Type": "char",
-        "Size": "0x58",
-        "Offset": "0x210"
       }
     ]
   },

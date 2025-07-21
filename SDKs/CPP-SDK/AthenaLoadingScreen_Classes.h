@@ -18,14 +18,14 @@ public:
 	float                                                        ViewportHeight;                                    // 0x30(0x4)
 	float                                                        FooterHeight;                                      // 0x34(0x4)
 	bool                                                         DrawSpinnerText;                                   // 0x38(0x1)
-	char                                                         pad0x7_3WW3Z[0x7];                                 // 0x39(0x7)
+	char                                                         pad0x7_E320R[0x7];                                 // 0x39(0x7)
 	struct StringAssetReference                                  PlaceholderSpinnerTexture;                         // 0x40(0x10)
 	struct LinearColor                                           BackgroundColour;                                  // 0x50(0x10)
 	struct SlateLoadingScreenImageParams                         PrimaryImage;                                      // 0x60(0x30)
 	TArray<struct SlateLoadingScreenImageParams>                 RandomisedPrimaryImages;                           // 0x90(0x10)
 	TArray<struct SlateLoadingScreenImageParams>                 CyclingImages;                                     // 0xa0(0x10)
 	int                                                          MaxNumImagesPerLoad;                               // 0xb0(0x4)
-	char                                                         pad0x4_3MP1N[0x4];                                 // 0xb4(0x4)
+	char                                                         pad0x4_O8M8O[0x4];                                 // 0xb4(0x4)
 	struct FText                                                 SpinnerText;                                       // 0xb8(0x38)
 	struct SlateColor                                            SpinnerTextColour;                                 // 0xf0(0x30)
 	struct SlateFontInfo                                         SpinnerTextFont;                                   // 0x120(0x40)
@@ -40,16 +40,16 @@ public:
 	int                                                          NumTipsPerImage;                                   // 0x1a4(0x4)
 	struct SlateFontInfo                                         LoadingTipFont;                                    // 0x1a8(0x40)
 	float                                                        LoadingTipFontLineHeightPercentage;                // 0x1e8(0x4)
-	char                                                         pad0x4_R1X0N[0x4];                                 // 0x1ec(0x4)
+	char                                                         pad0x4_Y3JBC[0x4];                                 // 0x1ec(0x4)
 	TArray<struct Text>                                          LoadingScreenTips;                                 // 0x1f0(0x10)
 	struct SlateColor                                            LoadingScreenTipColour;                            // 0x200(0x30)
 	bool                                                         AllowSyncronousAssetLoad;                          // 0x230(0x1)
-	char                                                         pad0x7_LYZYV[0x7];                                 // 0x231(0x7)
+	char                                                         pad0x7_MUD87[0x7];                                 // 0x231(0x7)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class LoadingUtilities: public BlueprintFunctionLibrary
+class AthenaLoadingScreenBlueprintFunctionLibrary: public BlueprintFunctionLibrary
 {
 public:
 };
@@ -66,7 +66,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AthenaLoadingScreenBlueprintFunctionLibrary: public BlueprintFunctionLibrary
+class LoadingUtilities: public BlueprintFunctionLibrary
 {
 public:
 };

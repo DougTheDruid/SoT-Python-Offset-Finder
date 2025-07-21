@@ -26,7 +26,7 @@ CookItemFromRawConditionalStatTrigger:
   Super: ConditionalStatsTriggerType
 CookableComponent:
   Attributes:
-  - Name: pad0x20_510CX[0x20]
+  - Name: pad0x20_U8IXF[0x20]
     Offset: '0xb8'
     Size: '0x20'
     Type: char
@@ -38,7 +38,7 @@ CookableComponent:
     Offset: '0xe0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_AKU1B[0x4]
+  - Name: pad0x4_UJT3I[0x4]
     Offset: '0xe4'
     Size: '0x4'
     Type: char
@@ -94,7 +94,7 @@ CookableInterface:
   Super: Interface
 CookerComponent:
   Attributes:
-  - Name: pad0x8_BE1LV[0x8]
+  - Name: pad0x8_E9OBD[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -130,7 +130,7 @@ CookerComponent:
     Offset: '0x104'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_9JI3F[0x3]
+  - Name: pad0x3_F4QTP[0x3]
     Offset: '0x105'
     Size: '0x3'
     Type: char
@@ -142,7 +142,7 @@ CookerComponent:
     Offset: '0x110'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_B4RXG[0x7]
+  - Name: pad0x7_DE9MN[0x7]
     Offset: '0x111'
     Size: '0x7'
     Type: char
@@ -170,7 +170,7 @@ CookerComponent:
     Offset: '0x199'
     Size: '0x1'
     Type: bool
-  - Name: pad0x9e_734SQ[0x9e]
+  - Name: pad0x9e_DFILX[0x9e]
     Offset: '0x19a'
     Size: '0x9e'
     Type: char
@@ -194,7 +194,7 @@ CookingComponentAudioParams:
     Offset: '0x30'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_HOC11[0x4]
+  - Name: pad0x4_9SP16[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -246,7 +246,7 @@ CookingComponentAudioParams:
     Offset: '0x98'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_MLBS8[0x4]
+  - Name: pad0x4_YGAFZ[0x4]
     Offset: '0x9c'
     Size: '0x4'
     Type: char
@@ -262,7 +262,7 @@ CookingDefaultsInterface:
   Super: Interface
 CookingPot:
   Attributes:
-  - Name: pad0x8_RE5XU[0x8]
+  - Name: pad0x8_JVTEH[0x8]
     Offset: '0x3d0'
     Size: '0x8'
     Type: char
@@ -282,7 +282,7 @@ CookingPot:
     Offset: '0x3f0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_5EN03[0x4]
+  - Name: pad0x4_OF2F3[0x4]
     Offset: '0x3f4'
     Size: '0x4'
     Type: char
@@ -306,7 +306,7 @@ CookingPot:
     Offset: '0x4d8'
     Size: '0x38'
     Type: struct FText
-  - Name: pad0xa0_W0JPL[0xa0]
+  - Name: pad0xa0_D3XEM[0xa0]
     Offset: '0x510'
     Size: '0xa0'
     Type: char
@@ -332,7 +332,7 @@ HasRequiredCookingStateStatCondition:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_BZ8T5[0x7]
+  - Name: pad0x7_I3TC8[0x7]
     Offset: '0x31'
     Size: '0x7'
     Type: char
@@ -348,7 +348,7 @@ MixableInterface:
   Super: Interface
 PottableComponent:
   Attributes:
-  - Name: pad0x8_D0PCP[0x8]
+  - Name: pad0x8_L3VVO[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -356,7 +356,7 @@ PottableComponent:
     Offset: '0xc0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_RHGAJ[0x7]
+  - Name: pad0x7_M613M[0x7]
     Offset: '0xc1'
     Size: '0x7'
     Type: char

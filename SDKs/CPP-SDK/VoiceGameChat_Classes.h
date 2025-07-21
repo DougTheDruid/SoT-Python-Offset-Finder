@@ -10,7 +10,7 @@
 class PlayfabPartyVoiceChannel: public VoiceChannel
 {
 public:
-	char                                                         pad0x18_Z6619[0x18];                               // 0x90(0x18)
+	char                                                         pad0x18_PRUHO[0x18];                               // 0x90(0x18)
 };
 
 

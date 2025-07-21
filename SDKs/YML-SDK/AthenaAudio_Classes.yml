@@ -50,7 +50,7 @@ AudioPortalComponent:
     Offset: '0x2dc'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_C2CPX[0x3]
+  - Name: pad0x3_EBXS2[0x3]
     Offset: '0x2dd'
     Size: '0x3'
     Type: char
@@ -74,7 +74,7 @@ AudioPortalComponent:
     Offset: '0x300'
     Size: '0x8'
     Type: class StoryDrivenAudioPortalDataAsset*
-  - Name: pad0x28_WPIRK[0x28]
+  - Name: pad0x28_6GDCR[0x28]
     Offset: '0x308'
     Size: '0x28'
     Type: char
@@ -90,7 +90,7 @@ AudioPortalInterface:
   Super: Interface
 AudioPortalService:
   Attributes:
-  - Name: pad0xb0_6KORR[0xb0]
+  - Name: pad0xb0_78KT3[0xb0]
     Offset: '0x28'
     Size: '0xb0'
     Type: char
@@ -112,7 +112,7 @@ AudioSpaceComponent:
     Offset: '0x610'
     Size: '0x8'
     Type: class StoryDrivenAudioPortalDataAsset*
-  - Name: pad0x18_XSV75[0x18]
+  - Name: pad0x18_S97M9[0x18]
     Offset: '0x618'
     Size: '0x18'
     Type: char
@@ -132,16 +132,20 @@ AudioSpaceTrackerComponent:
   Super: ActorComponent
 ImmerseGameService:
   Attributes:
-  - Name: pad0x28_G5C77[0x28]
+  - Name: pad0x60_V4JWU[0x60]
     Offset: '0x28'
-    Size: '0x28'
+    Size: '0x60'
     Type: char
   - Name: DebugImmerseQRCodeTexture
-    Offset: '0x50'
+    Offset: '0x88'
     Size: '0x8'
     Type: class Texture2D*
-  ClassSize: '0x30'
-  FullSize: '0x58'
+  - Name: pad0x8_HKEF3[0x8]
+    Offset: '0x90'
+    Size: '0x8'
+    Type: char
+  ClassSize: '0x70'
+  FullSize: '0x98'
   InheritedSize: '0x28'
   Super: Object
 ImmerseGameServiceInterface:
@@ -156,7 +160,7 @@ MultiEmitter:
     Offset: '0x3a0'
     Size: '0x8'
     Type: class MultiEmitterRootComponent*
-  - Name: pad0x8_0SFG9[0x8]
+  - Name: pad0x8_Z3DJ5[0x8]
     Offset: '0x3a8'
     Size: '0x8'
     Type: char
@@ -170,7 +174,7 @@ StoryDrivenAudioPortalDataAsset:
     Offset: '0x28'
     Size: '0xc'
     Type: struct FeatureFlag
-  - Name: pad0x4_B30BR[0x4]
+  - Name: pad0x4_OXLE5[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
@@ -212,7 +216,7 @@ WwiseEventsTriggerRegionComponent:
     Offset: '0x300'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x14_KSM2T[0x14]
+  - Name: pad0x14_OBYCQ[0x14]
     Offset: '0x30c'
     Size: '0x14'
     Type: char
@@ -220,7 +224,7 @@ WwiseEventsTriggerRegionComponent:
     Offset: '0x320'
     Size: '0x8'
     Type: class Character*
-  - Name: pad0x38_UVIQ2[0x38]
+  - Name: pad0x38_UHI1X[0x38]
     Offset: '0x328'
     Size: '0x38'
     Type: char

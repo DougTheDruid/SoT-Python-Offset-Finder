@@ -6,16 +6,6 @@
 #include "PlayerLootMarkerFramework_Structs.h"
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class PlayerLootMarkerServiceParams: public DataAsset
-{
-public:
-	class ShortRangeMarkerDataAsset*                             MarkerDataAsset;                                   // 0x28(0x8)
-	float                                                        JettisonMaxMarkerDistance;                         // 0x30(0x4)
-	char                                                         pad0x4_16MEJ[0x4];                                 // 0x34(0x4)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class PlayerLootMarkerServiceInterface: public Interface
 {
@@ -23,17 +13,27 @@ public:
 };
 
 
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class PlayerLootMarkerServiceParams: public DataAsset
+{
+public:
+	class ShortRangeMarkerDataAsset*                             MarkerDataAsset;                                   // 0x28(0x8)
+	float                                                        JettisonMaxMarkerDistance;                         // 0x30(0x4)
+	char                                                         pad0x4_VL0OT[0x4];                                 // 0x34(0x4)
+};
+
+
 // Size 0x178 (Full Size[0x518] - InheritedSize[0x3a0]
 class PlayerLootMarkerService: public Actor
 {
 public:
-	char                                                         pad0x8_QZFVI[0x8];                                 // 0x3a0(0x8)
+	char                                                         pad0x8_UHZOM[0x8];                                 // 0x3a0(0x8)
 	class PlayerLootMarkerServiceParams*                         Params;                                            // 0x3a8(0x8)
-	char                                                         pad0x20_XO7V3[0x20];                               // 0x3b0(0x20)
+	char                                                         pad0x20_G6PCZ[0x20];                               // 0x3b0(0x20)
 	TArray<uintptr_t>                                            ShortRangeMarkers;                                 // 0x3d0(0x10)
-	char                                                         pad0x118_UXZKK[0x118];                             // 0x3e0(0x118)
+	char                                                         pad0x118_825K8[0x118];                             // 0x3e0(0x118)
 	TArray<struct PlayerLootMarkerWorldEdgeBatchData>            BatchData;                                         // 0x4f8(0x10)
-	char                                                         pad0x10_QRYL0[0x10];                               // 0x508(0x10)
+	char                                                         pad0x10_TQZN7[0x10];                               // 0x508(0x10)
 };
 
 

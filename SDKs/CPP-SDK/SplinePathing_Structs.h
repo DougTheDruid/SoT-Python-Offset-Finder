@@ -7,7 +7,7 @@
 struct FixedSplinePathingActorMovementEndedEvent
 {
 public:
-	char                                                         pad0x1_0HUJA[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_61412[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -23,7 +23,7 @@ public:
 struct FixedSplinePathingActorMovementStartedEvent
 {
 public:
-	char                                                         pad0x1_HPDYO[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_UCFM7[0x1];                                 // 0x0(0x1)
 };
 
 

@@ -6,10 +6,13 @@
 #include "BarrelsOfPlenty_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class BarrelsOfPlentySpawnManagerProviderInterface: public Interface
+// Size 0x28 (Full Size[0x3c8] - InheritedSize[0x3a0]
+class BarrelsOfPlentySpawnProxy: public Actor
 {
 public:
+	class Actor*                                                 Ship;                                              // 0x3a0(0x8)
+	char                                                         pad0x18_E65VW[0x18];                               // 0x3a8(0x18)
+	class SceneComponent*                                        SceneComponent;                                    // 0x3c0(0x8)
 };
 
 
@@ -38,13 +41,10 @@ public:
 };
 
 
-// Size 0x28 (Full Size[0x3c8] - InheritedSize[0x3a0]
-class BarrelsOfPlentySpawnProxy: public Actor
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class BarrelsOfPlentySpawnManagerProviderInterface: public Interface
 {
 public:
-	class Actor*                                                 Ship;                                              // 0x3a0(0x8)
-	char                                                         pad0x18_CMN83[0x18];                               // 0x3a8(0x18)
-	class SceneComponent*                                        SceneComponent;                                    // 0x3c0(0x8)
 };
 
 

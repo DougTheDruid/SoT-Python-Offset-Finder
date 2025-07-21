@@ -2,48 +2,60 @@
 # https://github.com/DougTheDruid
 OverheatingComponent:
   Attributes:
-  - Name: pad0x30_2NXSM[0x30]
+  - Name: pad0x38_C4149[0x38]
     Offset: '0xb8'
-    Size: '0x30'
+    Size: '0x38'
     Type: char
   - Name: VisualiserStaticMeshComponent
-    Offset: '0xe8'
+    Offset: '0xf0'
     Size: '0x8'
     Type: class StaticMeshComponent*
   - Name: ExplosionVfxEmitter
-    Offset: '0xf0'
-    Size: '0x8'
-    Type: class ParticleSystemComponent*
-  - Name: HeatBuildingVfxEmitter
     Offset: '0xf8'
     Size: '0x8'
     Type: class ParticleSystemComponent*
-  - Name: CooldownInstigator
+  - Name: HeatBuildingVfxEmitter
     Offset: '0x100'
+    Size: '0x8'
+    Type: class ParticleSystemComponent*
+  - Name: CooldownInstigator
+    Offset: '0x108'
     Size: '0x8'
     Type: class Actor*
   - Name: OverheatingDataAsset
-    Offset: '0x108'
+    Offset: '0x110'
     Size: '0x8'
     Type: class OverheatingDataAsset*
   - Name: ReplicatedData
-    Offset: '0x110'
+    Offset: '0x118'
     Size: '0x8'
     Type: struct OverheatingReplicatedData
   - Name: OverheatingMaterialIndex
-    Offset: '0x118'
+    Offset: '0x120'
     Size: '0x4'
     Type: int
+  - Name: OverheatingLerpDuration
+    Offset: '0x124'
+    Size: '0x4'
+    Type: float
   - Name: IsWieldableOrProxy
-    Offset: '0x11c'
+    Offset: '0x128'
     Size: '0x1'
     Type: bool
-  - Name: pad0x8b_YK8UK[0x8b]
-    Offset: '0x11d'
-    Size: '0x8b'
+  - Name: pad0x6f_S5OLR[0x6f]
+    Offset: '0x129'
+    Size: '0x6f'
     Type: char
-  ClassSize: '0xf0'
-  FullSize: '0x1a8'
+  - Name: HandoverTimeRemainingInLerp
+    Offset: '0x198'
+    Size: '0x4'
+    Type: float
+  - Name: pad0x24_MYU01[0x24]
+    Offset: '0x19c'
+    Size: '0x24'
+    Type: char
+  ClassSize: '0x108'
+  FullSize: '0x1c0'
   InheritedSize: '0xb8'
   Super: ActorComponent
 OverheatingDataAsset:

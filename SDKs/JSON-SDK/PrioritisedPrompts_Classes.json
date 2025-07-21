@@ -1,52 +1,4 @@
 {
-  "PrioritisedPromptsManagerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PromptsLocalServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PromptsLocalService": {
-    "Super": "Object",
-    "FullSize": "0x98",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "pad0x70_FO1XG[0x70]",
-        "Type": "char",
-        "Size": "0x70",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "GetPromptsLocalService": {
-    "Super": "BlueprintAsyncActionBase",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x10_IHZE8[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "WorldContextObject",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      }
-    ]
-  },
   "BasePromptCoordinator": {
     "Super": "Object",
     "FullSize": "0x118",
@@ -60,7 +12,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x10_3Q26N[0x10]",
+        "Name": "pad0x10_2FHVU[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x30"
@@ -78,10 +30,58 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0xc8_AH5UB[0xc8]",
+        "Name": "pad0xc8_7OGRH[0xc8]",
         "Type": "char",
         "Size": "0xc8",
         "Offset": "0x50"
+      }
+    ]
+  },
+  "PrioritisedPromptsManagerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PromptsLocalService": {
+    "Super": "Object",
+    "FullSize": "0x98",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "pad0x70_YFJF2[0x70]",
+        "Type": "char",
+        "Size": "0x70",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "PromptsLocalServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GetPromptsLocalService": {
+    "Super": "BlueprintAsyncActionBase",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x10_EAPFD[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "WorldContextObject",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x38"
       }
     ]
   },
@@ -92,7 +92,7 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x8_YADP8[0x8]",
+        "Name": "pad0x8_76LPN[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
@@ -110,7 +110,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x30_ZNKNR[0x30]",
+        "Name": "pad0x30_1TQ9N[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x48"

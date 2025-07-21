@@ -6,9 +6,9 @@ sot_frontend_01_a_IPGLineUp_C:
     Offset: '0x3a8'
     Size: '0x8'
     Type: struct PointerToUberGraphFrame
-  - Name: pad0x29174fd0_L4LJM[0x29174fd0]
+  - Name: pad0x20300570_PQHHB[0x20300570]
     Offset: '0x3b0'
-    Size: '0x29174fd0'
+    Size: '0x20300570'
     Type: char
   - Name: shipSelect_CharMarker_ExecuteUbergraph_sot_frontend_01_a_IPGLineUp_RefProperty
     Offset: '0x3b0'

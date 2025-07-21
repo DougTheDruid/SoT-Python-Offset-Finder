@@ -13,22 +13,22 @@ public:
 };
 
 
+// Size 0x30 (Full Size[0x300] - InheritedSize[0x2d0]
+class InstancedLayerComponent: public SceneComponent
+{
+public:
+	char                                                         pad0x8_TGS8T[0x8];                                 // 0x2d0(0x8)
+	TArray<struct InstancedLayer>                                InstancedLayers;                                   // 0x2d8(0x10)
+	char                                                         pad0x18_7L1B7[0x18];                               // 0x2e8(0x18)
+};
+
+
 // Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
 class LayerActorsDataAsset: public DataAsset
 {
 public:
 	TArray<Class>                                                Actors;                                            // 0x28(0x10)
 	TArray<Class>                                                Items;                                             // 0x38(0x10)
-};
-
-
-// Size 0x30 (Full Size[0x300] - InheritedSize[0x2d0]
-class InstancedLayerComponent: public SceneComponent
-{
-public:
-	char                                                         pad0x8_QPVP8[0x8];                                 // 0x2d0(0x8)
-	TArray<struct InstancedLayer>                                InstancedLayers;                                   // 0x2d8(0x10)
-	char                                                         pad0x18_H00L6[0x18];                               // 0x2e8(0x18)
 };
 
 

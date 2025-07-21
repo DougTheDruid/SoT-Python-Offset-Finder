@@ -6,10 +6,6 @@ BP_ItemPreview_C:
     Offset: '0x580'
     Size: '0x8'
     Type: struct PointerToUberGraphFrame
-  - Name: pad0x66854438_BI685[0x66854438]
-    Offset: '0x588'
-    Size: '0x66854438'
-    Type: char
   - Name: Camera_Dog
     Offset: '0x588'
     Size: '0x8'
@@ -54,7 +50,7 @@ BP_ItemPreview_C:
     Offset: '0x5d8'
     Size: '0x8'
     Type: class SceneComponent*
-  - Name: pad0x30_ECSPJ[0x30]
+  - Name: pad0x30_K8LH5[0x30]
     Offset: '0x5e0'
     Size: '0x30'
     Type: char

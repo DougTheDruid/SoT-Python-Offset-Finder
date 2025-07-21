@@ -14,7 +14,7 @@ AnimNotify_PlayParticleEffect_C:
     Offset: '0x50'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_BFRDO[0x3]
+  - Name: pad0x3_CEQAE[0x3]
     Offset: '0x51'
     Size: '0x3'
     Type: char

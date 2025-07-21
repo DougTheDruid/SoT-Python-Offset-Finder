@@ -8,7 +8,7 @@ IsExcludedFromSeasonProgressionStatCondition:
   Super: TargetedStatCondition
 PlayerSeasonProgressionComponent:
   Attributes:
-  - Name: pad0xd0_C23W9[0xd0]
+  - Name: pad0xd0_G4NQZ[0xd0]
     Offset: '0xb8'
     Size: '0xd0'
     Type: char

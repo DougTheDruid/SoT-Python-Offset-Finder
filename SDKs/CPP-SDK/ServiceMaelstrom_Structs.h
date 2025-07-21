@@ -7,7 +7,7 @@
 struct MaelstromEventBaseFragment
 {
 public:
-	char                                                         pad0x10_FJ1UC[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_TBEIA[0x10];                               // 0x0(0x10)
 	struct FString                                               Name;                                              // 0x10(0x10)
 	struct FString                                               TimestampUtc;                                      // 0x20(0x10)
 };

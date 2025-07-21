@@ -2,28 +2,28 @@
 # https://github.com/DougTheDruid
 EventObjectMessagingDispatcherBeingDestroyed:
   Attributes:
-  - Name: pad0x8_ARV98[0x8]
+  - Name: pad0x8_26WXN[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
   ClassSize: '0x8'
 ObjectMessagingDispatcher:
   Attributes:
-  - Name: pad0xa0_7AETX[0xa0]
+  - Name: pad0xa0_LT29N[0xa0]
     Offset: '0x0'
     Size: '0xa0'
     Type: char
   ClassSize: '0xa0'
 ObjectMessagingDispatcherHandle:
   Attributes:
-  - Name: pad0x8_YYNFF[0x8]
+  - Name: pad0x8_96HT6[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
   ClassSize: '0x8'
 ObjectMessagingHandle:
   Attributes:
-  - Name: pad0x8_D0K4Y[0x8]
+  - Name: pad0x8_UINH0[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -31,14 +31,14 @@ ObjectMessagingHandle:
     Offset: '0x8'
     Size: '0x8'
     Type: class Struct*
-  - Name: pad0x48_390RM[0x48]
+  - Name: pad0x48_YZ6MA[0x48]
     Offset: '0x10'
     Size: '0x48'
     Type: char
   ClassSize: '0x58'
 ObjectMessagingObjectScoper:
   Attributes:
-  - Name: pad0x50_0UOV4[0x50]
+  - Name: pad0x50_ZK5B0[0x50]
     Offset: '0x0'
     Size: '0x50'
     Type: char

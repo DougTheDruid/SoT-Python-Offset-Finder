@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 SandboxPerformanceConstraintAIMemoryCaptureHelper:
   Attributes:
-  - Name: pad0x10_PHVN1[0x10]
+  - Name: pad0x10_XAZ7N[0x10]
     Offset: '0x3a0'
     Size: '0x10'
     Type: char
@@ -36,7 +36,7 @@ SandboxPerformanceConstraintActivityResourceAsset:
     Offset: '0x60'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_VSNB5[0x3]
+  - Name: pad0x3_NIEC5[0x3]
     Offset: '0x61'
     Size: '0x3'
     Type: char
@@ -48,7 +48,7 @@ SandboxPerformanceConstraintActivityResourceAsset:
     Offset: '0x68'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_6ZDJT[0x7]
+  - Name: pad0x7_ABE0K[0x7]
     Offset: '0x69'
     Size: '0x7'
     Type: char
@@ -70,28 +70,28 @@ SandboxPerformanceConstraintConsumerInterface:
   Super: Interface
 SandboxPerformanceConstraintService:
   Attributes:
-  - Name: pad0xb0_XPWIO[0xb0]
+  - Name: pad0xc0_3F7PD[0xc0]
     Offset: '0x28'
-    Size: '0xb0'
+    Size: '0xc0'
     Type: char
   - Name: ActivitiesByPriority
-    Offset: '0xd8'
+    Offset: '0xe8'
     Size: '0x10'
     Type: TArray<struct SandboxPerformanceConstraintActivityContainer>
   - Name: ActivitiesScores
-    Offset: '0xe8'
+    Offset: '0xf8'
     Size: '0x10'
     Type: TArray<struct SandboxPerformanceConstraintActivityScore>
   - Name: ServiceAsset
-    Offset: '0xf8'
+    Offset: '0x108'
     Size: '0x8'
     Type: class SandboxPerformanceConstraintServiceAsset*
-  - Name: pad0x68_56QZR[0x68]
-    Offset: '0x100'
+  - Name: pad0x68_BP2RJ[0x68]
+    Offset: '0x110'
     Size: '0x68'
     Type: char
-  ClassSize: '0x140'
-  FullSize: '0x168'
+  ClassSize: '0x150'
+  FullSize: '0x178'
   InheritedSize: '0x28'
   Super: Object
 SandboxPerformanceConstraintServiceAsset:
@@ -136,7 +136,7 @@ SandboxPerformanceConstraintSettings:
     Offset: '0x38'
     Size: '0x10'
     Type: struct StringAssetReference
-  - Name: pad0x20_HJ8Q0[0x20]
+  - Name: pad0x20_3AH2B[0x20]
     Offset: '0x48'
     Size: '0x20'
     Type: char

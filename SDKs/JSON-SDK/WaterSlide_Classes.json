@@ -1,10 +1,38 @@
 {
+  "WaterSlideInputComponent": {
+    "Super": "LookAtOffsetInputComponent",
+    "FullSize": "0x2a0",
+    "InheritedSize": "0x290",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_NGQTG[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x290"
+      }
+    ]
+  },
   "ZiplineActionStateId": {
     "Super": "ActionStateId",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "WaterSlideParamsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "WaterSlideParams",
+        "Type": "struct WaterSlideParams",
+        "Size": "0x28",
+        "Offset": "0x28"
+      }
+    ]
   },
   "RidePlayerComponent": {
     "Super": "DoubleIntentComponent",
@@ -13,7 +41,7 @@
     "ClassSize": "0x68",
     "Attributes": [
       {
-        "Name": "pad0x8_SK70V[0x8]",
+        "Name": "pad0x8_FMEGR[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xd0"
@@ -37,7 +65,7 @@
         "Offset": "0xe8"
       },
       {
-        "Name": "pad0x4_RZ6KJ[0x4]",
+        "Name": "pad0x4_72OFJ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xec"
@@ -73,7 +101,7 @@
         "Offset": "0x110"
       },
       {
-        "Name": "pad0x14_M60LT[0x14]",
+        "Name": "pad0x14_8KODB[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0x11c"
@@ -83,48 +111,6 @@
         "Type": "class Ride*",
         "Size": "0x8",
         "Offset": "0x130"
-      }
-    ]
-  },
-  "WaterSlideActionStateId": {
-    "Super": "ActionStateId",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ZiplineInputComponent": {
-    "Super": "LookAtOffsetInputComponent",
-    "FullSize": "0x298",
-    "InheritedSize": "0x290",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_898SE[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x290"
-      }
-    ]
-  },
-  "RidePlayerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "WaterSlideInputComponent": {
-    "Super": "LookAtOffsetInputComponent",
-    "FullSize": "0x2a0",
-    "InheritedSize": "0x290",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_ZF02J[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x290"
       }
     ]
   },
@@ -178,12 +164,31 @@
       }
     ]
   },
-  "ZiplineEditorComponent": {
-    "Super": "CameraComponent",
-    "FullSize": "0x840",
-    "InheritedSize": "0x840",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "Ride": {
+    "Super": "Actor",
+    "FullSize": "0x3b8",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x8_UOXE1[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "SplineComponent",
+        "Type": "class SplineComponent*",
+        "Size": "0x8",
+        "Offset": "0x3a8"
+      },
+      {
+        "Name": "Root",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x3b0"
+      }
+    ]
   },
   "ZiplineFXParams": {
     "Super": "DataAsset",
@@ -253,13 +258,6 @@
       }
     ]
   },
-  "RideTransitionActionStateId": {
-    "Super": "ActionStateId",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "WaterSlideVeeringAnalogInputId": {
     "Super": "AnalogInputId",
     "FullSize": "0x38",
@@ -267,43 +265,149 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "Ride": {
-    "Super": "Actor",
-    "FullSize": "0x3b8",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x18",
+  "RidePlayerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ZiplineEditorComponent": {
+    "Super": "CameraComponent",
+    "FullSize": "0x840",
+    "InheritedSize": "0x840",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ZiplineInputComponent": {
+    "Super": "LookAtOffsetInputComponent",
+    "FullSize": "0x298",
+    "InheritedSize": "0x290",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_BSN5X[0x8]",
+        "Name": "pad0x8_4OBLB[0x8]",
         "Type": "char",
         "Size": "0x8",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "SplineComponent",
-        "Type": "class SplineComponent*",
-        "Size": "0x8",
-        "Offset": "0x3a8"
-      },
-      {
-        "Name": "Root",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x3b0"
+        "Offset": "0x290"
       }
     ]
   },
-  "WaterSlideParamsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x50",
+  "RideTransitionActionStateId": {
+    "Super": "ActionStateId",
+    "FullSize": "0x28",
     "InheritedSize": "0x28",
-    "ClassSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WaterSlideActionStateId": {
+    "Super": "ActionStateId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Zipline": {
+    "Super": "Ride",
+    "FullSize": "0x748",
+    "InheritedSize": "0x3b8",
+    "ClassSize": "0x390",
     "Attributes": [
       {
-        "Name": "WaterSlideParams",
-        "Type": "struct WaterSlideParams",
-        "Size": "0x28",
-        "Offset": "0x28"
+        "Name": "ZiplineStartPointConfig",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x3b8"
+      },
+      {
+        "Name": "ShouldLaunchPlayer",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3b9"
+      },
+      {
+        "Name": "pad0x2_QPPHQ[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x3ba"
+      },
+      {
+        "Name": "LaunchForceMultiplier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3bc"
+      },
+      {
+        "Name": "ZiplineFeelParameters",
+        "Type": "struct ZiplineFeelParameters",
+        "Size": "0x310",
+        "Offset": "0x3c0"
+      },
+      {
+        "Name": "ZiplineFXParams",
+        "Type": "class ZiplineFXParams*",
+        "Size": "0x8",
+        "Offset": "0x6d0"
+      },
+      {
+        "Name": "AttachPointSize",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x6d8"
+      },
+      {
+        "Name": "ForwardsAttachDetachOffsets",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x6dc"
+      },
+      {
+        "Name": "BackwardsAttachDetachOffsets",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x6e4"
+      },
+      {
+        "Name": "pad0x2c_6PW1X[0x2c]",
+        "Type": "char",
+        "Size": "0x2c",
+        "Offset": "0x6ec"
+      },
+      {
+        "Name": "ZiplineGeometry",
+        "Type": "class StaticMesh*",
+        "Size": "0x8",
+        "Offset": "0x718"
+      },
+      {
+        "Name": "ZiplineTrolleyGeometry",
+        "Type": "class StaticMesh*",
+        "Size": "0x8",
+        "Offset": "0x720"
+      },
+      {
+        "Name": "ZiplineGeometryMaterialOverride",
+        "Type": "class MaterialInterface*",
+        "Size": "0x8",
+        "Offset": "0x728"
+      },
+      {
+        "Name": "ZiplineGeometryMaterialScalerParameterName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x730"
+      },
+      {
+        "Name": "PlayerAttachStat",
+        "Type": "struct PlayerStat",
+        "Size": "0x4",
+        "Offset": "0x738"
+      },
+      {
+        "Name": "pad0xc_DRL91[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x73c"
       }
     ]
   },
@@ -350,7 +454,7 @@
         "Offset": "0x3e0"
       },
       {
-        "Name": "pad0x3_JN8CH[0x3]",
+        "Name": "pad0x3_8PJJ0[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x3e1"
@@ -368,114 +472,10 @@
         "Offset": "0x3f0"
       },
       {
-        "Name": "pad0x8_IKOFM[0x8]",
+        "Name": "pad0x8_INUEY[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3f8"
-      }
-    ]
-  },
-  "Zipline": {
-    "Super": "Ride",
-    "FullSize": "0x748",
-    "InheritedSize": "0x3b8",
-    "ClassSize": "0x390",
-    "Attributes": [
-      {
-        "Name": "ZiplineStartPointConfig",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x3b8"
-      },
-      {
-        "Name": "ShouldLaunchPlayer",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3b9"
-      },
-      {
-        "Name": "pad0x2_FYKX2[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x3ba"
-      },
-      {
-        "Name": "LaunchForceMultiplier",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3bc"
-      },
-      {
-        "Name": "ZiplineFeelParameters",
-        "Type": "struct ZiplineFeelParameters",
-        "Size": "0x310",
-        "Offset": "0x3c0"
-      },
-      {
-        "Name": "ZiplineFXParams",
-        "Type": "class ZiplineFXParams*",
-        "Size": "0x8",
-        "Offset": "0x6d0"
-      },
-      {
-        "Name": "AttachPointSize",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x6d8"
-      },
-      {
-        "Name": "ForwardsAttachDetachOffsets",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x6dc"
-      },
-      {
-        "Name": "BackwardsAttachDetachOffsets",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x6e4"
-      },
-      {
-        "Name": "pad0x2c_BC0I9[0x2c]",
-        "Type": "char",
-        "Size": "0x2c",
-        "Offset": "0x6ec"
-      },
-      {
-        "Name": "ZiplineGeometry",
-        "Type": "class StaticMesh*",
-        "Size": "0x8",
-        "Offset": "0x718"
-      },
-      {
-        "Name": "ZiplineTrolleyGeometry",
-        "Type": "class StaticMesh*",
-        "Size": "0x8",
-        "Offset": "0x720"
-      },
-      {
-        "Name": "ZiplineGeometryMaterialOverride",
-        "Type": "class MaterialInterface*",
-        "Size": "0x8",
-        "Offset": "0x728"
-      },
-      {
-        "Name": "ZiplineGeometryMaterialScalerParameterName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x730"
-      },
-      {
-        "Name": "PlayerAttachStat",
-        "Type": "struct PlayerStat",
-        "Size": "0x4",
-        "Offset": "0x738"
-      },
-      {
-        "Name": "pad0xc_AGTGY[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x73c"
       }
     ]
   },

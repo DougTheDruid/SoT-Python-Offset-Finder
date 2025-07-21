@@ -7,11 +7,11 @@
 class AsymmetricObjectServerManager: public Actor
 {
 public:
-	char                                                         pad0x18_EGWYY[0x18];                               // 0x3a0(0x18)
+	char                                                         pad0x18_SBPHY[0x18];                               // 0x3a0(0x18)
 	class AsymmetricClientObject*                                SpawnedObject;                                     // 0x3b8(0x8)
 	class SceneComponent*                                        SceneComponent;                                    // 0x3c0(0x8)
 	struct StringAssetReference                                  AsymmetricObjectAsset;                             // 0x3c8(0x10)
-	char                                                         pad0x20_RCSIT[0x20];                               // 0x3d8(0x20)
+	char                                                         pad0x20_CMFDB[0x20];                               // 0x3d8(0x20)
 };
 
 
@@ -19,7 +19,7 @@ public:
 class AsymmetricClientObject: public Actor
 {
 public:
-	char                                                         pad0x18_H4VYY[0x18];                               // 0x3a0(0x18)
+	char                                                         pad0x18_6VEF7[0x18];                               // 0x3a0(0x18)
 	class BoxComponent*                                          BaseComponent;                                     // 0x3b8(0x8)
 	class StaticMeshMemoryConstraintComponent*                   ThirdPersonMesh;                                   // 0x3c0(0x8)
 	class WaterInteractionComponent*                             WaterInteractionComponent;                         // 0x3c8(0x8)

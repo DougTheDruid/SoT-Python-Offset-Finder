@@ -4,16 +4,6 @@
 // https://github.com/DougTheDruid
 
 // Size 0x18
-struct StoryDrivenAudioPortalSetting
-{
-public:
-	struct StoryFlag                                             Story;                                             // 0x0(0x8)
-	class AudioSpaceDataAsset*                                   AudioInsideSpace;                                  // 0x8(0x8)
-	class AudioSpaceDataAsset*                                   AudioOutsideSpace;                                 // 0x10(0x8)
-};
-
-
-// Size 0x18
 struct AnimNotify_SoundSwitch
 {
 public:
@@ -34,6 +24,16 @@ public:
 	TArray<class WwiseEvent*>                                    EventsToPlayOnLoadingEnd;                          // 0x50(0x10)
 	TArray<class WwiseEvent*>                                    EventsToPlayOnFrontEndOrLoadingStart;              // 0x60(0x10)
 	TArray<class WwiseEvent*>                                    EventsToPlayOnFrontEndOrLoadingEnd;                // 0x70(0x10)
+};
+
+
+// Size 0x18
+struct StoryDrivenAudioPortalSetting
+{
+public:
+	struct StoryFlag                                             Story;                                             // 0x0(0x8)
+	class AudioSpaceDataAsset*                                   AudioInsideSpace;                                  // 0x8(0x8)
+	class AudioSpaceDataAsset*                                   AudioOutsideSpace;                                 // 0x10(0x8)
 };
 
 

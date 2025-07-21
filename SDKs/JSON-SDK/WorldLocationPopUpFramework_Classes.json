@@ -1,8 +1,34 @@
 {
-  "WorldLocationVisitorInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
+  "WorldLocationVisitorComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "pad0x8_AVIMD[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "RevisitCooldown",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "pad0x34_D5E50[0x34]",
+        "Type": "char",
+        "Size": "0x34",
+        "Offset": "0xc4"
+      }
+    ]
+  },
+  "TalePreventWorldLocationPopUpStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -19,51 +45,12 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x20_O0BFQ[0x20]",
+        "Name": "pad0x20_BQMYR[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x70"
       }
     ]
-  },
-  "WorldLocationPopUpDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x80",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "Id",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "BannerIcon",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "DisplayText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "AudioOverride",
-        "Type": "class PopUpAudioDesc*",
-        "Size": "0x8",
-        "Offset": "0x78"
-      }
-    ]
-  },
-  "TaleWorldLocationPopUpServiceDesc": {
-    "Super": "TaleQuestServiceDesc",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "TaleAllowWorldLocationPopUpStepDesc": {
     "Super": "TaleQuestStepDesc",
@@ -78,7 +65,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x4_U4NJL[0x4]",
+        "Name": "pad0x4_X3ZJW[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x84"
@@ -91,10 +78,10 @@
       }
     ]
   },
-  "TalePreventWorldLocationPopUpStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x98",
-    "InheritedSize": "0x98",
+  "WorldLocationVisitorInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -129,7 +116,7 @@
         "Offset": "0x2e4"
       },
       {
-        "Name": "pad0x63_8L956[0x63]",
+        "Name": "pad0x63_HYALX[0x63]",
         "Type": "char",
         "Size": "0x63",
         "Offset": "0x2e5"
@@ -141,12 +128,19 @@
         "Offset": "0x348"
       },
       {
-        "Name": "pad0x8_AVG4D[0x8]",
+        "Name": "pad0x8_K6UFN[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x358"
       }
     ]
+  },
+  "TaleWorldLocationPopUpServiceDesc": {
+    "Super": "TaleQuestServiceDesc",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "TaleAllowWorldLocationPopUpStep": {
     "Super": "TaleQuestStep",
@@ -155,29 +149,35 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "WorldLocationVisitorComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xf8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x40",
+  "WorldLocationPopUpDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x80",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "pad0x8_VOX6L[0x8]",
-        "Type": "char",
+        "Name": "Id",
+        "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0xb8"
+        "Offset": "0x28"
       },
       {
-        "Name": "RevisitCooldown",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc0"
+        "Name": "BannerIcon",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x30"
       },
       {
-        "Name": "pad0x34_580TO[0x34]",
-        "Type": "char",
-        "Size": "0x34",
-        "Offset": "0xc4"
+        "Name": "DisplayText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "AudioOverride",
+        "Type": "class PopUpAudioDesc*",
+        "Size": "0x8",
+        "Offset": "0x78"
       }
     ]
   },
@@ -194,7 +194,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x3_Z22BH[0x3]",
+        "Name": "pad0x3_WQ7ZD[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x81"

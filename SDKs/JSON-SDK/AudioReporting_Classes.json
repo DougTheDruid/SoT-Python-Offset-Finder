@@ -12,47 +12,12 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x170_YDHMQ[0x170]",
+        "Name": "pad0x170_2G5JL[0x170]",
         "Type": "char",
         "Size": "0x170",
         "Offset": "0xc0"
       }
     ]
-  },
-  "AudioReportingConfig": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x48",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "AudioReportingSettings",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "AudioReportReaction": {
-    "Super": "Object",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_BNMP6[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "AudioReportingDebugMenuGenerator": {
-    "Super": "DebugMenuEntryGenerator",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "AudioReportingSettings": {
     "Super": "DataAsset",
@@ -79,7 +44,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_G701K[0x4]",
+        "Name": "pad0x4_GEDW3[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
@@ -92,6 +57,13 @@
       }
     ]
   },
+  "AudioReportingDebugMenuGenerator": {
+    "Super": "DebugMenuEntryGenerator",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "EventReactionsDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
@@ -102,6 +74,34 @@
         "Name": "Reactions",
         "Type": "TArray<struct EventReactionDesc>",
         "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "AudioReportingConfig": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AudioReportingSettings",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "AudioReportReaction": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_D53RL[0x8]",
+        "Type": "char",
+        "Size": "0x8",
         "Offset": "0x28"
       }
     ]

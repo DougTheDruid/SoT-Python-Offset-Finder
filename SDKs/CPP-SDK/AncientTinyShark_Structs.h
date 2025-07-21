@@ -36,10 +36,10 @@ struct AncientTinySharkSpawnParams
 {
 public:
 	struct FeatureFlag                                           Feature;                                           // 0x0(0xc)
-	char                                                         pad0x4_PFIHZ[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_62WGE[0x4];                                 // 0xc(0x4)
 	class TinySharkParamsDataAsset*                              AncientTinySharkParams;                            // 0x10(0x8)
 	float                                                        WeightedSpawnChance;                               // 0x18(0x4)
-	char                                                         pad0x4_K77Q9[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_ROVJG[0x4];                                 // 0x1c(0x4)
 };
 
 

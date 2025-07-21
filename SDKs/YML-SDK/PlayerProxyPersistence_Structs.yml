@@ -32,7 +32,7 @@ ProxyLimit:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_V631Y[0x4]
+  - Name: pad0x4_5CJ85[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char

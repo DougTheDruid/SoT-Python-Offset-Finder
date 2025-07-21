@@ -6,10 +6,11 @@
 #include "ServiceMessaging_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ServiceMessagingFunctions: public BlueprintFunctionLibrary
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class ServiceMessagingListenerTestObject: public Object
 {
 public:
+	char                                                         pad0x10_UJKZC[0x10];                               // 0x28(0x10)
 };
 
 
@@ -20,11 +21,10 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class ServiceMessagingListenerTestObject: public Object
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ServiceMessagingFunctions: public BlueprintFunctionLibrary
 {
 public:
-	char                                                         pad0x10_X21PS[0x10];                               // 0x28(0x10)
 };
 
 

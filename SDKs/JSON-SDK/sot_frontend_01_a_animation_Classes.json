@@ -12,12 +12,6 @@
         "Offset": "0x3a8"
       },
       {
-        "Name": "pad0x63da4150_BPB69[0x63da4150]",
-        "Type": "char",
-        "Size": "0x63da4150",
-        "Offset": "0x3b0"
-      },
-      {
         "Name": "shipSelectUI_title_14_ExecuteUbergraph_sot_frontend_01_a_animation_RefProperty",
         "Type": "class StaticMeshActor*",
         "Size": "0x8",

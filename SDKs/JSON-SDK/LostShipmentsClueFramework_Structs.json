@@ -1,9 +1,72 @@
 {
-  "WeightedClueDestinationDescriptor": {
+  "DebrisToRangeDist": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "NumberOfDebrisItemsToSpawn",
+        "Type": "struct WeightedProbabilityRange",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "WeightedDebrisTypeAsset",
+        "Type": "class WeightedDebrisDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "ClueSiteLootRestriction": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "SiteType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "LootMax",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_WN9BS[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "LandClueCreationChoice": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "DestinationType",
+        "Name": "ClueSiteType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "IslandIdentifier",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ClueCreator",
+        "Type": "class LandClueCreator*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "WeightedClueDescriptor": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Descriptor",
         "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
@@ -16,20 +79,37 @@
       }
     ]
   },
-  "LootToRangeDist": {
+  "QuestVariableClueSite": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_KTLZ9[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "WeightedDebris": {
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "NumberOfLootItemsToSpawn",
-        "Type": "struct WeightedProbabilityRange",
+        "Name": "pad0x20_UTDT6[0x20]",
+        "Type": "char",
         "Size": "0x20",
         "Offset": "0x0"
       },
       {
-        "Name": "WeightedLootDescAsset",
-        "Type": "class WeightedTreasureChestDescAsset*",
-        "Size": "0x8",
+        "Name": "Weight",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_RSHBW[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
       }
     ]
   },
@@ -56,26 +136,14 @@
       }
     ]
   },
-  "EventClueObtained": {
-    "ClassSize": "0x20",
+  "QuestVariableClueSiteArray": {
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "ObtainedClue",
-        "Type": "class ClueDescriptor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ObtainedSiteType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x10_CMT5J[0x10]",
+        "Name": "pad0x30_S2N74[0x30]",
         "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x10"
+        "Size": "0x30",
+        "Offset": "0x0"
       }
     ]
   },
@@ -101,135 +169,10 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_V2MCZ[0x4]",
+        "Name": "pad0x4_0Y3W4[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
-      }
-    ]
-  },
-  "DebrisToRangeDist": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "NumberOfDebrisItemsToSpawn",
-        "Type": "struct WeightedProbabilityRange",
-        "Size": "0x20",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "WeightedDebrisTypeAsset",
-        "Type": "class WeightedDebrisDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "QuestVariableClueSiteArray": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_25R8O[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "WeightedDebris": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x20_WWKQG[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Weight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "pad0x4_HY6CA[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x24"
-      }
-    ]
-  },
-  "WeightedClueDescriptor": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Descriptor",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DifficultyWeightings",
-        "Type": "TArray<float>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "ClueSiteLootRestriction": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "SiteType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "LootMax",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x4_1F5TQ[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "QuestVariableClueSite": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_MYX54[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SeaClueCreationChoice": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "SiteType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ClueCreator",
-        "Type": "class SeaClueCreator*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x10_TJFQE[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x10"
       }
     ]
   },
@@ -249,10 +192,73 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_YC8Z6[0x4]",
+        "Name": "pad0x4_EDSNG[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
+      }
+    ]
+  },
+  "SeaClueCreationChoice": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "SiteType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ClueCreator",
+        "Type": "class SeaClueCreator*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x10_O6AV8[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "WeightedClueDestinationDescriptor": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "DestinationType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DifficultyWeightings",
+        "Type": "TArray<float>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventClueObtained": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ObtainedClue",
+        "Type": "class ClueDescriptor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ObtainedSiteType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x10_FVV1Q[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
@@ -260,33 +266,27 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x30_Y5P75[0x30]",
+        "Name": "pad0x30_R3WN2[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x0"
       }
     ]
   },
-  "LandClueCreationChoice": {
-    "ClassSize": "0x18",
+  "LootToRangeDist": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "ClueSiteType",
-        "Type": "class UClass*",
-        "Size": "0x8",
+        "Name": "NumberOfLootItemsToSpawn",
+        "Type": "struct WeightedProbabilityRange",
+        "Size": "0x20",
         "Offset": "0x0"
       },
       {
-        "Name": "IslandIdentifier",
-        "Type": "struct FName",
+        "Name": "WeightedLootDescAsset",
+        "Type": "class WeightedTreasureChestDescAsset*",
         "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "ClueCreator",
-        "Type": "class LandClueCreator*",
-        "Size": "0x8",
-        "Offset": "0x10"
+        "Offset": "0x20"
       }
     ]
   },

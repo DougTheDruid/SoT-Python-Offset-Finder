@@ -6,14 +6,6 @@
 #include "NPCInteractResponse_Structs.h"
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class NPCInteractAnimResponseDataAsset: public DataAsset
-{
-public:
-	TArray<struct NPCInteractResponseStruct>                     NPCInteractResponseAnimData;                       // 0x28(0x10)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class InteractResponseType: public Object
 {
@@ -25,7 +17,14 @@ public:
 class NPCInteractResponseComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_7U3D4[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_O45Q0[0x8];                                 // 0xb8(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class NPCInteractResponseAnimationInstanceInterface: public Interface
+{
+public:
 };
 
 
@@ -36,15 +35,16 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class NPCInteractResponseInterface: public Interface
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class NPCInteractAnimResponseDataAsset: public DataAsset
 {
 public:
+	TArray<struct NPCInteractResponseStruct>                     NPCInteractResponseAnimData;                       // 0x28(0x10)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class NPCInteractResponseAnimationInstanceInterface: public Interface
+class NPCInteractResponseInterface: public Interface
 {
 public:
 };

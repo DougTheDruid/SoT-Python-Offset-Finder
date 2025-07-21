@@ -1,4 +1,25 @@
 {
+  "AthenaServerMigrationGameAuthorityProviderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MigrationServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MigrationProgressInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "RegisterServerMigrationPointOfInterestComponent": {
     "Super": "ActorComponent",
     "FullSize": "0xd8",
@@ -12,35 +33,14 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x1c_EU1G8[0x1c]",
+        "Name": "pad0x1c_RAMW1[0x1c]",
         "Type": "char",
         "Size": "0x1c",
         "Offset": "0xbc"
       }
     ]
   },
-  "MigrationProgressInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "ServerMigrationGatherableActorInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AthenaServerMigrationGameAuthorityProviderInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MigrationServiceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

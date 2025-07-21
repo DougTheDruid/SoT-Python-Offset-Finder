@@ -6,28 +6,28 @@
 #include "Cleanliness_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CleanlinessTransferInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x80 (Full Size[0x138] - InheritedSize[0xb8]
 class CleanlinessComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x10_4L6TH[0x10];                               // 0xb8(0x10)
+	char                                                         pad0x10_3G8VQ[0x10];                               // 0xb8(0x10)
 	class CurveFloat*                                            DirtinessStrengthToMaterialStrength;               // 0xc8(0x8)
 	struct CleanlinessInfo                                       CleanlinessInfo;                                   // 0xd0(0xc)
 	float                                                        DirtinessDecayRatePerSecond;                       // 0xdc(0x4)
 	float                                                        QuickCleanDirtynessDecayRatePerSecond;             // 0xe0(0x4)
-	char                                                         pad0x54_D1I7O[0x54];                               // 0xe4(0x54)
+	char                                                         pad0x54_253UB[0x54];                               // 0xe4(0x54)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class CleanlinessInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CleanlinessTransferInterface: public Interface
 {
 public:
 };

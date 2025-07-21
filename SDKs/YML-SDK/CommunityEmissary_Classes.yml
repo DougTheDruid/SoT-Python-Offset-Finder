@@ -6,7 +6,7 @@ CommunityEmissaryFlagComponent:
     Offset: '0x600'
     Size: '0x8'
     Type: class CommunityEmissaryFlagData*
-  - Name: pad0x18_HV5UK[0x18]
+  - Name: pad0x18_T9EIZ[0x18]
     Offset: '0x608'
     Size: '0x18'
     Type: char
@@ -14,7 +14,7 @@ CommunityEmissaryFlagComponent:
     Offset: '0x620'
     Size: '0x4'
     Type: int
-  - Name: pad0xc_TDGIJ[0xc]
+  - Name: pad0xc_6OE23[0xc]
     Offset: '0x624'
     Size: '0xc'
     Type: char

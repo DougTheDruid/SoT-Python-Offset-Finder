@@ -6,6 +6,10 @@ sot_frontend_01_a_audio_C:
     Offset: '0x3a8'
     Size: '0x8'
     Type: struct PointerToUberGraphFrame
+  - Name: pad0x412f85d0_UM57F[0x412f85d0]
+    Offset: '0x3b0'
+    Size: '0x412f85d0'
+    Type: char
   ClassSize: '0x8'
   FullSize: '0x3b0'
   InheritedSize: '0x3a8'

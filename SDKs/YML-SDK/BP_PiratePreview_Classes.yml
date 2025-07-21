@@ -6,10 +6,6 @@ BP_PiratePreview_C:
     Offset: '0x7f0'
     Size: '0x8'
     Type: struct PointerToUberGraphFrame
-  - Name: pad0xbc863a8_WTYS8[0xbc863a8]
-    Offset: '0x7f8'
-    Size: '0xbc863a8'
-    Type: char
   - Name: Camera_BottleSpin
     Offset: '0x7f8'
     Size: '0x8'
@@ -110,7 +106,7 @@ BP_PiratePreview_C:
     Offset: '0x8b8'
     Size: '0x8'
     Type: class SceneComponent*
-  - Name: pad0x30_5E9CB[0x30]
+  - Name: pad0x30_217VV[0x30]
     Offset: '0x8c0'
     Size: '0x30'
     Type: char

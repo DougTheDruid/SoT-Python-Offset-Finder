@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 DeliverableComponent:
   Attributes:
-  - Name: pad0x10_DNDRO[0x10]
+  - Name: pad0x10_F5HTF[0x10]
     Offset: '0xb8'
     Size: '0x10'
     Type: char
@@ -22,7 +22,7 @@ DeliverableInterface:
   Super: Interface
 DeliverableRedirectionComponent:
   Attributes:
-  - Name: pad0x8_C82OB[0x8]
+  - Name: pad0x8_683D7[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -40,7 +40,7 @@ DeliverableRedirectionCompositeContext:
     Offset: '0x28'
     Size: '0x10'
     Type: TArray<class DeliverableRedirectionContextBase*>
-  - Name: pad0x18_JY0E8[0x18]
+  - Name: pad0x18_PWO25[0x18]
     Offset: '0x38'
     Size: '0x18'
     Type: char
@@ -94,7 +94,7 @@ DeliverableRedirectionNoContext:
   Super: DeliverableRedirectionContextBase
 DeliverableRequirementBase:
   Attributes:
-  - Name: pad0x8_WI787[0x8]
+  - Name: pad0x8_8U9Y8[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char

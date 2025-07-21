@@ -13,16 +13,8 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0x3b8] - InheritedSize[0x3a0]
-class DartProxyService: public Actor
-{
-public:
-	char                                                         pad0x18_K6M7M[0x18];                               // 0x3a0(0x18)
-};
-
-
-// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class DartRadialPressedNotificationInputId: public NotificationInputId
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DartAttachedInterface: public Interface
 {
 public:
 };
@@ -30,13 +22,6 @@ public:
 
 // Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
 class AILuredIntoWaterConditionalStatsTrigger: public ConditionalStatsTriggerType
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class KilledByOwnTeamConditionalStatsTrigger: public ConditionalStatsTriggerType
 {
 public:
 };
@@ -50,14 +35,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class HitActorWithDartConditionalStatsTrigger: public ConditionalStatsTriggerType
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DartAttachedInterface: public Interface
+class KilledByOwnTeamConditionalStatsTrigger: public ConditionalStatsTriggerType
 {
 public:
 };
@@ -65,6 +43,28 @@ public:
 
 // Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
 class KilledWithPoisonDartConditionalStatsTrigger: public ConditionalStatsTriggerType
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
+class DartRadialPressedNotificationInputId: public NotificationInputId
+{
+public:
+};
+
+
+// Size 0x18 (Full Size[0x3b8] - InheritedSize[0x3a0]
+class DartProxyService: public Actor
+{
+public:
+	char                                                         pad0x18_OANZX[0x18];                               // 0x3a0(0x18)
+};
+
+
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
+class HitActorWithDartConditionalStatsTrigger: public ConditionalStatsTriggerType
 {
 public:
 };

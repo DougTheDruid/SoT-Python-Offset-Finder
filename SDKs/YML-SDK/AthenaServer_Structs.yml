@@ -6,7 +6,7 @@ IdleTimeTracker:
     Offset: '0x0'
     Size: '0x8'
     Type: struct Timespan
-  - Name: pad0x30_MYZ61[0x30]
+  - Name: pad0x30_56MYB[0x30]
     Offset: '0x8'
     Size: '0x30'
     Type: char

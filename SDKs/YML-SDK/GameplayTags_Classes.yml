@@ -12,7 +12,7 @@ EditableGameplayTagQuery:
     Offset: '0x28'
     Size: '0x10'
     Type: struct FString
-  - Name: pad0x10_VKM50[0x10]
+  - Name: pad0x10_QHXA5[0x10]
     Offset: '0x38'
     Size: '0x10'
     Type: char
@@ -102,7 +102,7 @@ GameplayTagAssetInterface:
   Super: Interface
 GameplayTagsManager:
   Attributes:
-  - Name: pad0x118_ANNQB[0x118]
+  - Name: pad0x118_5PO1F[0x118]
     Offset: '0x28'
     Size: '0x118'
     Type: char
@@ -110,7 +110,7 @@ GameplayTagsManager:
     Offset: '0x140'
     Size: '0x10'
     Type: TArray<class DataTable*>
-  - Name: pad0x20_QZ5JI[0x20]
+  - Name: pad0x20_KUVFI[0x20]
     Offset: '0x150'
     Size: '0x20'
     Type: char

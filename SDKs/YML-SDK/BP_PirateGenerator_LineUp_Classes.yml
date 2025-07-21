@@ -66,7 +66,7 @@ BP_PirateGenerator_LineUp_C:
     Offset: '0x594'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_KEI11[0x3]
+  - Name: pad0x3_0RC1Y[0x3]
     Offset: '0x595'
     Size: '0x3'
     Type: char
@@ -74,7 +74,7 @@ BP_PirateGenerator_LineUp_C:
     Offset: '0x598'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_80EMD[0x4]
+  - Name: pad0x4_ZQQ5H[0x4]
     Offset: '0x59c'
     Size: '0x4'
     Type: char
@@ -90,7 +90,7 @@ BP_PirateGenerator_LineUp_C:
     Offset: '0x5b0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_RSFMO[0x7]
+  - Name: pad0x7_Y2PED[0x7]
     Offset: '0x5b1'
     Size: '0x7'
     Type: char
@@ -102,7 +102,7 @@ BP_PirateGenerator_LineUp_C:
     Offset: '0x5c9'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_TMN6G[0x2]
+  - Name: pad0x2_72B9X[0x2]
     Offset: '0x5ca'
     Size: '0x2'
     Type: char
@@ -126,7 +126,7 @@ BP_PirateGenerator_LineUp_C:
     Offset: '0x5dc'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_T9PVO[0x3]
+  - Name: pad0x3_B2BT3[0x3]
     Offset: '0x5dd'
     Size: '0x3'
     Type: char

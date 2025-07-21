@@ -8,7 +8,7 @@ DebugWindInterface:
   Super: Interface
 DebugWindService:
   Attributes:
-  - Name: pad0x10_IVZAE[0x10]
+  - Name: pad0x10_DM1Z3[0x10]
     Offset: '0x4d8'
     Size: '0x10'
     Type: char
@@ -30,7 +30,7 @@ WindInterface:
   Super: Interface
 WindService:
   Attributes:
-  - Name: pad0x10_L9EQ1[0x10]
+  - Name: pad0x10_I1GYW[0x10]
     Offset: '0x3a0'
     Size: '0x10'
     Type: char
@@ -38,7 +38,7 @@ WindService:
     Offset: '0x3b0'
     Size: '0x8'
     Type: class WindDirectionalSource*
-  - Name: pad0x10_HCK46[0x10]
+  - Name: pad0x10_3QN6K[0x10]
     Offset: '0x3b8'
     Size: '0x10'
     Type: char
@@ -50,7 +50,7 @@ WindService:
     Offset: '0x3cc'
     Size: '0x4'
     Type: float
-  - Name: pad0xe8_G5YE1[0xe8]
+  - Name: pad0xe8_OBDLO[0xe8]
     Offset: '0x3d0'
     Size: '0xe8'
     Type: char
@@ -78,7 +78,7 @@ WindSettings:
     Offset: '0x38'
     Size: '0x24'
     Type: struct WindServiceParams
-  - Name: pad0x4_0UQH3[0x4]
+  - Name: pad0x4_8O0QD[0x4]
     Offset: '0x5c'
     Size: '0x4'
     Type: char
@@ -88,7 +88,7 @@ WindSettings:
   Super: DeveloperSettings
 WindZoneComponent:
   Attributes:
-  - Name: pad0x8_4FCIR[0x8]
+  - Name: pad0x8_QUO8H[0x8]
     Offset: '0x2d0'
     Size: '0x8'
     Type: char
@@ -100,7 +100,7 @@ WindZoneComponent:
     Offset: '0x348'
     Size: '0x10'
     Type: struct WindZoneParams
-  - Name: pad0x8_JA7FK[0x8]
+  - Name: pad0x8_KISPV[0x8]
     Offset: '0x358'
     Size: '0x8'
     Type: char

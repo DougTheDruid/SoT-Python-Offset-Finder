@@ -6,6 +6,18 @@
 #include "BoarWallowFramework_Structs.h"
 
 
+// Size 0xb0 (Full Size[0x450] - InheritedSize[0x3a0]
+class BoarWallow: public Actor
+{
+public:
+	char                                                         pad0x18_W9KRE[0x18];                               // 0x3a0(0x18)
+	int                                                          NumberOfBoarsInHideout;                            // 0x3b8(0x4)
+	int                                                          MaxNumberOfBoarsInHideout;                         // 0x3bc(0x4)
+	char                                                         pad0x80_4AWXY[0x80];                               // 0x3c0(0x80)
+	TArray<class Pawn*>                                          FaunasSubscribedWithThisHideout;                   // 0x440(0x10)
+};
+
+
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class IBoarHideoutInterface: public Interface
 {
@@ -13,25 +25,31 @@ public:
 };
 
 
-// Size 0xb0 (Full Size[0x450] - InheritedSize[0x3a0]
-class BoarsAndBoarWallowRandomiserService: public Actor
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class BoarWallowServiceInterface: public Interface
 {
 public:
-	char                                                         pad0x8_5L7NS[0x8];                                 // 0x3a0(0x8)
-	TArray<struct Name>                                          BoarsAndBoarWallowIslandsMap;                      // 0x3a8(0x10)
-	char                                                         pad0x98_SVH8J[0x98];                               // 0x3b8(0x98)
 };
 
 
-// Size 0xb0 (Full Size[0x450] - InheritedSize[0x3a0]
-class BoarWallow: public Actor
+// Size 0x420 (Full Size[0x7c0] - InheritedSize[0x3a0]
+class BoarWallowService: public Actor
 {
 public:
-	char                                                         pad0x18_ABTGA[0x18];                               // 0x3a0(0x18)
-	int                                                          NumberOfBoarsInHideout;                            // 0x3b8(0x4)
-	int                                                          MaxNumberOfBoarsInHideout;                         // 0x3bc(0x4)
-	char                                                         pad0x80_EKCDS[0x80];                               // 0x3c0(0x80)
-	TArray<class Pawn*>                                          FaunasSubscribedWithThisHideout;                   // 0x440(0x10)
+	char                                                         pad0xd0_VDS9Z[0xd0];                               // 0x3a0(0xd0)
+	class UClass*                                                BoarWallowAsset;                                   // 0x470(0x8)
+	TArray<class Pawn*>                                          FaunasSubscribedWithTheHideoutBeingDestroyed;      // 0x478(0x10)
+	char                                                         pad0x338_SSSFD[0x338];                             // 0x488(0x338)
+};
+
+
+// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
+class FaunaBoarWallowFinder: public ActorComponent
+{
+public:
+	class BoarWallow*                                            SelectedBoarWallow;                                // 0xb8(0x8)
+	bool                                                         IsFaunaBoarWallowFinderFeatureEnabled;             // 0xc0(0x1)
+	char                                                         pad0x7_G1F3U[0x7];                                 // 0xc1(0x7)
 };
 
 
@@ -42,39 +60,21 @@ public:
 };
 
 
+// Size 0xb0 (Full Size[0x450] - InheritedSize[0x3a0]
+class BoarsAndBoarWallowRandomiserService: public Actor
+{
+public:
+	char                                                         pad0x8_RURXJ[0x8];                                 // 0x3a0(0x8)
+	TArray<struct Name>                                          BoarsAndBoarWallowIslandsMap;                      // 0x3a8(0x10)
+	char                                                         pad0x98_UQ8DI[0x98];                               // 0x3b8(0x98)
+};
+
+
 // Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
 class BoarWallowServiceParams: public DataAsset
 {
 public:
 	class UClass*                                                BoarWallowAssetTemplate;                           // 0x28(0x8)
-};
-
-
-// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
-class FaunaBoarWallowFinder: public ActorComponent
-{
-public:
-	class BoarWallow*                                            SelectedBoarWallow;                                // 0xb8(0x8)
-	bool                                                         IsFaunaBoarWallowFinderFeatureEnabled;             // 0xc0(0x1)
-	char                                                         pad0x7_YS22W[0x7];                                 // 0xc1(0x7)
-};
-
-
-// Size 0x420 (Full Size[0x7c0] - InheritedSize[0x3a0]
-class BoarWallowService: public Actor
-{
-public:
-	char                                                         pad0xd0_7FO1G[0xd0];                               // 0x3a0(0xd0)
-	class UClass*                                                BoarWallowAsset;                                   // 0x470(0x8)
-	TArray<class Pawn*>                                          FaunasSubscribedWithTheHideoutBeingDestroyed;      // 0x478(0x10)
-	char                                                         pad0x338_4TW4L[0x338];                             // 0x488(0x338)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class BoarWallowServiceInterface: public Interface
-{
-public:
 };
 
 

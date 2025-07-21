@@ -6,28 +6,6 @@
 #include "TrinketFramework_Structs.h"
 
 
-// Size 0x0 (Full Size[0x88] - InheritedSize[0x88]
-class TrinketCategory: public CategoryBase
-{
-public:
-};
-
-
-// Size 0x10 (Full Size[0x3b0] - InheritedSize[0x3a0]
-class TrinketReplacementActor: public Actor
-{
-public:
-	char                                                         pad0x10_96WTI[0x10];                               // 0x3a0(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TrinketLoadoutFinderPolicyBase: public Object
-{
-public:
-};
-
-
 // Size 0x30 (Full Size[0xf8] - InheritedSize[0xc8]
 class TrinketDesc: public EntitlementDesc
 {
@@ -35,27 +13,6 @@ public:
 	struct StringClassReference                                  TrinketClass;                                      // 0xc8(0x10)
 	struct StringClassReference                                  PreviousItem;                                      // 0xd8(0x10)
 	struct StringClassReference                                  NextItem;                                          // 0xe8(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TrinketAudioInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TrinketLoadoutControlInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TrinketSetControlInterface: public Interface
-{
-public:
 };
 
 
@@ -71,7 +28,50 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TrinketLoadoutFinderPolicyBase: public Object
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TrinketLoadoutControlInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TrinketAudioInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0x3b0] - InheritedSize[0x3a0]
+class TrinketReplacementActor: public Actor
+{
+public:
+	char                                                         pad0x10_W2BZS[0x10];                               // 0x3a0(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class TrinketLoadoutViewInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TrinketSetControlInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x88] - InheritedSize[0x88]
+class TrinketCategory: public CategoryBase
 {
 public:
 };
@@ -88,7 +88,7 @@ public:
 class SameActorTrinketLoadoutFinderPolicy: public TrinketLoadoutFinderPolicyBase
 {
 public:
-	char                                                         pad0x10_70CUB[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_DZ3XM[0x10];                               // 0x28(0x10)
 };
 
 

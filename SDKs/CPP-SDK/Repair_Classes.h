@@ -6,6 +6,13 @@
 #include "Repair_Structs.h"
 
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ShipRepairInterface: public Interface
+{
+public:
+};
+
+
 // Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
 class RepairTypeId: public Object
 {
@@ -15,14 +22,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class RepairableInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ShipRepairInterface: public Interface
+class RepairingInterface: public Interface
 {
 public:
 };
@@ -36,7 +36,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class RepairingInterface: public Interface
+class RepairableInterface: public Interface
 {
 public:
 };

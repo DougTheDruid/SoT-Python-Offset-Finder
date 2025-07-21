@@ -21,7 +21,7 @@ public:
 	class ActorSequence*                                         Sequence;                                          // 0xe0(0x8)
 	class ActorSequencePlayer*                                   SequencePlayer;                                    // 0xe8(0x8)
 	bool                                                         bAutoPlay;                                         // 0xf0(0x1)
-	char                                                         pad0x7_6NUMK[0x7];                                 // 0xf1(0x7)
+	char                                                         pad0x7_T6OB6[0x7];                                 // 0xf1(0x7)
 };
 
 

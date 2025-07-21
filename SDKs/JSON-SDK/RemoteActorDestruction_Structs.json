@@ -1,15 +1,4 @@
 {
-  "DestroyAllExistingActorsByClassGameServerRequestModel": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ActorClassNames",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "DestroyActorGameServerRequestModel": {
     "ClassSize": "0x4",
     "Attributes": [
@@ -17,6 +6,17 @@
         "Name": "ActorNetID",
         "Type": "int",
         "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "DestroyAllExistingActorsByClassGameServerRequestModel": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ActorClassNames",
+        "Type": "TArray<String>",
+        "Size": "0x10",
         "Offset": "0x0"
       }
     ]

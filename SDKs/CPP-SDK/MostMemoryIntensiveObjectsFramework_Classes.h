@@ -6,6 +6,13 @@
 #include "MostMemoryIntensiveObjectsFramework_Structs.h"
 
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class MMICategoryDebugCommandSource: public Object
+{
+public:
+};
+
+
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class MostMemoryIntensiveObjectsDataAsset: public DataAsset
 {
@@ -21,13 +28,6 @@ public:
 	struct FString                                               MostMemoryIntensiveObjectsDataAssetPath;           // 0x38(0x10)
 	struct FString                                               MostMemoryIntensiveObjectsDataAssetName;           // 0x48(0x10)
 	TArray<Class>                                                MostMemoryIntensiveDebugCommandSources;            // 0x58(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class MMICategoryDebugCommandSource: public Object
-{
-public:
 };
 
 

@@ -6,45 +6,19 @@
 #include "LevelSequence_Structs.h"
 
 
+// Size 0x40 (Full Size[0x648] - InheritedSize[0x608]
+class LevelSequencePlayer: public MovieSceneSequencePlayer
+{
+public:
+	class Actor*                                                 SpawnablesParent;                                  // 0x608(0x8)
+	char                                                         pad0x38_4DRCB[0x38];                               // 0x610(0x38)
+};
+
+
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class LevelSequenceSubtitlesInterface: public Interface
 {
 public:
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class LevelSequenceBurnInOptions: public Object
-{
-public:
-	bool                                                         bUseBurnIn;                                        // 0x28(0x1)
-	char                                                         pad0x7_HSWTY[0x7];                                 // 0x29(0x7)
-	struct StringClassReference                                  BurnInClass;                                       // 0x30(0x10)
-	class LevelSequenceBurnInInitSettings*                       Settings;                                          // 0x40(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class LevelSequenceBurnInInitSettings: public Object
-{
-public:
-};
-
-
-// Size 0x80 (Full Size[0x420] - InheritedSize[0x3a0]
-class LevelSequenceActor: public Actor
-{
-public:
-	char                                                         pad0x8_T811I[0x8];                                 // 0x3a0(0x8)
-	bool                                                         bAutoPlay;                                         // 0x3a8(0x1)
-	char                                                         pad0x7_DTRL9[0x7];                                 // 0x3a9(0x7)
-	struct MovieSceneSequencePlaybackSettings                    PlaybackSettings;                                  // 0x3b0(0x28)
-	class LevelSequencePlayer*                                   SequencePlayer;                                    // 0x3d8(0x8)
-	struct StringAssetReference                                  LevelSequence;                                     // 0x3e0(0x10)
-	class LevelSequenceBurnInOptions*                            BurnInOptions;                                     // 0x3f0(0x8)
-	class MovieSceneBindingOverrides*                            BindingOverrides;                                  // 0x3f8(0x8)
-	class Actor*                                                 SpawnablesParent;                                  // 0x400(0x8)
-	class LevelSequenceBurnIn*                                   BurnInInstance;                                    // 0x418(0x8)
 };
 
 
@@ -57,12 +31,20 @@ public:
 };
 
 
-// Size 0x40 (Full Size[0x648] - InheritedSize[0x608]
-class LevelSequencePlayer: public MovieSceneSequencePlayer
+// Size 0x80 (Full Size[0x420] - InheritedSize[0x3a0]
+class LevelSequenceActor: public Actor
 {
 public:
-	class Actor*                                                 SpawnablesParent;                                  // 0x608(0x8)
-	char                                                         pad0x38_KI4LI[0x38];                               // 0x610(0x38)
+	char                                                         pad0x8_E5MXO[0x8];                                 // 0x3a0(0x8)
+	bool                                                         bAutoPlay;                                         // 0x3a8(0x1)
+	char                                                         pad0x7_STDK1[0x7];                                 // 0x3a9(0x7)
+	struct MovieSceneSequencePlaybackSettings                    PlaybackSettings;                                  // 0x3b0(0x28)
+	class LevelSequencePlayer*                                   SequencePlayer;                                    // 0x3d8(0x8)
+	struct StringAssetReference                                  LevelSequence;                                     // 0x3e0(0x10)
+	class LevelSequenceBurnInOptions*                            BurnInOptions;                                     // 0x3f0(0x8)
+	class MovieSceneBindingOverrides*                            BindingOverrides;                                  // 0x3f8(0x8)
+	class Actor*                                                 SpawnablesParent;                                  // 0x400(0x8)
+	class LevelSequenceBurnIn*                                   BurnInInstance;                                    // 0x418(0x8)
 };
 
 
@@ -72,7 +54,25 @@ class LevelSequence: public MovieSceneSequence
 public:
 	class MovieScene*                                            MovieScene;                                        // 0x2a8(0x8)
 	struct LevelSequenceObjectReferenceMap                       ObjectReferences;                                  // 0x2b0(0xa0)
-	char                                                         pad0x50_F1PHG[0x50];                               // 0x350(0x50)
+	char                                                         pad0x50_5O4DA[0x50];                               // 0x350(0x50)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class LevelSequenceBurnInInitSettings: public Object
+{
+public:
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class LevelSequenceBurnInOptions: public Object
+{
+public:
+	bool                                                         bUseBurnIn;                                        // 0x28(0x1)
+	char                                                         pad0x7_CUCRF[0x7];                                 // 0x29(0x7)
+	struct StringClassReference                                  BurnInClass;                                       // 0x30(0x10)
+	class LevelSequenceBurnInInitSettings*                       Settings;                                          // 0x40(0x8)
 };
 
 

@@ -1,24 +1,4 @@
 {
-  "PopUpNotificationOnItemWieldedComponent": {
-    "Super": "OnItemWieldedComponent",
-    "FullSize": "0x158",
-    "InheritedSize": "0x138",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "PopUpDesc",
-        "Type": "class PopUpMessageDesc*",
-        "Size": "0x8",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "pad0x18_ML16R[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x140"
-      }
-    ]
-  },
   "SirenPuzzleContext": {
     "Super": "Actor",
     "FullSize": "0x490",
@@ -26,7 +6,7 @@
     "ClassSize": "0xf0",
     "Attributes": [
       {
-        "Name": "pad0x8_INGL3[0x8]",
+        "Name": "pad0x8_9CO9S[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3a0"
@@ -62,56 +42,10 @@
         "Offset": "0x3e0"
       },
       {
-        "Name": "pad0xa0_GEM41[0xa0]",
+        "Name": "pad0xa0_F1CA7[0xa0]",
         "Type": "char",
         "Size": "0xa0",
         "Offset": "0x3f0"
-      }
-    ]
-  },
-  "AbandonedNoteWeightedTextSourceComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x198",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0xe0",
-    "Attributes": [
-      {
-        "Name": "pad0x40_OZO5Q[0x40]",
-        "Type": "char",
-        "Size": "0x40",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "ClueText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0xf8"
-      },
-      {
-        "Name": "TitleText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x130"
-      },
-      {
-        "Name": "pad0x30_MWNW7[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x168"
-      }
-    ]
-  },
-  "AbandonedNoteWeightedTextDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Entries",
-        "Type": "TArray<struct AbandonedNoteWeightedTextEntry>",
-        "Size": "0x10",
-        "Offset": "0x28"
       }
     ]
   },
@@ -164,10 +98,76 @@
         "Offset": "0x460"
       },
       {
-        "Name": "pad0x20_1YEHI[0x20]",
+        "Name": "pad0x20_KFK0X[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x498"
+      }
+    ]
+  },
+  "AbandonedNoteWeightedTextSourceComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x198",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0xe0",
+    "Attributes": [
+      {
+        "Name": "pad0x40_WKNVQ[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "ClueText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0xf8"
+      },
+      {
+        "Name": "TitleText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x130"
+      },
+      {
+        "Name": "pad0x30_34H3S[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x168"
+      }
+    ]
+  },
+  "PopUpNotificationOnItemWieldedComponent": {
+    "Super": "OnItemWieldedComponent",
+    "FullSize": "0x158",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "PopUpDesc",
+        "Type": "class PopUpMessageDesc*",
+        "Size": "0x8",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "pad0x18_RBSL9[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x140"
+      }
+    ]
+  },
+  "AbandonedNoteWeightedTextDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Entries",
+        "Type": "TArray<struct AbandonedNoteWeightedTextEntry>",
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },

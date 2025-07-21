@@ -10,7 +10,7 @@ TalkingIndicatorState:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_5QPHS[0x7]
+  - Name: pad0x7_CF3HA[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
@@ -22,7 +22,7 @@ TalkingIndicatorState:
     Offset: '0x28'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_DO2UJ[0x7]
+  - Name: pad0x7_LOLI2[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char

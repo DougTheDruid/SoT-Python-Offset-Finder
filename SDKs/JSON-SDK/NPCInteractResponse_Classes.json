@@ -1,18 +1,4 @@
 {
-  "NPCInteractAnimResponseDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "NPCInteractResponseAnimData",
-        "Type": "TArray<struct NPCInteractResponseStruct>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "InteractResponseType": {
     "Super": "Object",
     "FullSize": "0x28",
@@ -27,12 +13,19 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_7U3D4[0x8]",
+        "Name": "pad0x8_O45Q0[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
       }
     ]
+  },
+  "NPCInteractResponseAnimationInstanceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "NPCInteractResponseDialogInterface": {
     "Super": "Interface",
@@ -41,14 +34,21 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "NPCInteractResponseInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
+  "NPCInteractAnimResponseDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
     "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "NPCInteractResponseAnimData",
+        "Type": "TArray<struct NPCInteractResponseStruct>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
   },
-  "NPCInteractResponseAnimationInstanceInterface": {
+  "NPCInteractResponseInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

@@ -6,23 +6,23 @@
 #include "HoleFramework_Structs.h"
 
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class HoleServiceInterface: public Interface
+{
+public:
+};
+
+
 // Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
 class DigsiteObject: public Object
 {
 public:
-	char                                                         pad0x18_3B93C[0x18];                               // 0x28(0x18)
+	char                                                         pad0x18_ROUF7[0x18];                               // 0x28(0x18)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class HoleInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class HoleServiceInterface: public Interface
 {
 public:
 };

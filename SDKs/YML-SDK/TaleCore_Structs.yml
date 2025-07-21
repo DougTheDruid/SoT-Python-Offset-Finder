@@ -2,14 +2,14 @@
 # https://github.com/DougTheDruid
 ClientCommandBase:
   Attributes:
-  - Name: pad0x8_842HU[0x8]
+  - Name: pad0x8_NMGOU[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
   ClassSize: '0x8'
 ClientCommandQueue:
   Attributes:
-  - Name: pad0x18_S5JGX[0x18]
+  - Name: pad0x18_5XG6J[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -20,7 +20,7 @@ TaleStructInstance:
     Offset: '0x0'
     Size: '0x8'
     Type: class TaleStruct*
-  - Name: pad0x8_63WUV[0x8]
+  - Name: pad0x8_6GAXV[0x8]
     Offset: '0x8'
     Size: '0x8'
     Type: char

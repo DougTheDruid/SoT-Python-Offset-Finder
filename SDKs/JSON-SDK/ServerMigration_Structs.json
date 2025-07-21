@@ -1,4 +1,21 @@
 {
+  "ServerMigrationSerialisationDetailsTestsUStruct": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "FloatWithNoMarkup",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x8_X96J1[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x4"
+      }
+    ]
+  },
   "ClientSettings": {
     "ClassSize": "0x2",
     "Attributes": [
@@ -20,7 +37,7 @@
     "ClassSize": "0x4",
     "Attributes": [
       {
-        "Name": "pad0x4_IADPT[0x4]",
+        "Name": "pad0x4_JNSJI[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x0"
@@ -49,7 +66,7 @@
         "Offset": "0x2"
       },
       {
-        "Name": "pad0x1_H8ZAG[0x1]",
+        "Name": "pad0x1_BITSR[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x3"
@@ -58,23 +75,6 @@
         "Name": "RefuseIncomingClientConnections",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "ServerMigrationSerialisationDetailsTestsUStruct": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "FloatWithNoMarkup",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x8_IN7S2[0x8]",
-        "Type": "char",
-        "Size": "0x8",
         "Offset": "0x4"
       }
     ]

@@ -6,10 +6,6 @@ Entry_C:
     Offset: '0x3a8'
     Size: '0x8'
     Type: struct PointerToUberGraphFrame
-  - Name: pad0x69e874b0_4J2L1[0x69e874b0]
-    Offset: '0x3b0'
-    Size: '0x69e874b0'
-    Type: char
   ClassSize: '0x8'
   FullSize: '0x3b0'
   InheritedSize: '0x3a8'

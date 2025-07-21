@@ -6,18 +6,18 @@
 #include "GameService_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GameServiceMapFunctions: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
 // Size 0x120 (Full Size[0x508] - InheritedSize[0x3e8]
 class ServiceProviderGameState: public GameState
 {
 public:
-	char                                                         pad0x120_OUL28[0x120];                             // 0x3e8(0x120)
+	char                                                         pad0x120_YNI9F[0x120];                             // 0x3e8(0x120)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class GameServiceMapFunctions: public BlueprintFunctionLibrary
+{
+public:
 };
 
 

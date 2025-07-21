@@ -18,12 +18,12 @@ public:
 class SirenAnimationInstance: public AnimInstance
 {
 public:
-	char                                                         pad0x18_LGFFY[0x18];                               // 0x440(0x18)
+	char                                                         pad0x18_WG2YA[0x18];                               // 0x440(0x18)
 	struct FName                                                 PropAttachmentSocket;                              // 0x458(0x8)
 	struct SirenAnimationDataStructure                           SirenAnimationData;                                // 0x460(0x60)
 	struct AthenaAnimationWeapon                                 AttackAnimations;                                  // 0x4c0(0xb8)
 	float                                                        ForwardSpeed;                                      // 0x578(0x4)
-	char                                                         pad0xc_07XIJ[0xc];                                 // 0x57c(0xc)
+	char                                                         pad0xc_3IAR6[0xc];                                 // 0x57c(0xc)
 	float                                                        TiltDirectionAngleDegrees;                         // 0x588(0x4)
 	float                                                        TiltAngleAlpha;                                    // 0x58c(0x4)
 	float                                                        SpinAngleDegrees;                                  // 0x590(0x4)
@@ -32,18 +32,18 @@ public:
 	bool                                                         SwimmingLongways;                                  // 0x599(0x1)
 	bool                                                         UseAggressiveAnimations;                           // 0x59a(0x1)
 	bool                                                         UseAlternativeAggressiveAnimation;                 // 0x59b(0x1)
-	char                                                         pad0x4_7N0YR[0x4];                                 // 0x59c(0x4)
+	char                                                         pad0x4_MCVFJ[0x4];                                 // 0x59c(0x4)
 	TArray<class Class*>                                         StrategiesForAggressiveAnimations;                 // 0x5a0(0x10)
 	struct FloatRange                                            TimeBeforeAlternativeAggressiveAnimationToggleFlips; // 0x5b0(0x10)
-	char                                                         pad0x8_5UQ23[0x8];                                 // 0x5c0(0x8)
+	char                                                         pad0x8_348QB[0x8];                                 // 0x5c0(0x8)
 	bool                                                         AnimationsLoaded;                                  // 0x5c8(0x1)
-	char                                                         pad0x3_843XG[0x3];                                 // 0x5c9(0x3)
+	char                                                         pad0x3_M49T5[0x3];                                 // 0x5c9(0x3)
 	float                                                        AimUpAlpha;                                        // 0x5cc(0x4)
 	float                                                        AimDownAlpha;                                      // 0x5d0(0x4)
-	char                                                         pad0x4_FOL0Y[0x4];                                 // 0x5d4(0x4)
+	char                                                         pad0x4_VBS0A[0x4];                                 // 0x5d4(0x4)
 	struct CustomAnimationMontageStateMachine                    FullBodyStateMachine;                              // 0x5d8(0xd8)
 	struct HitReactionAnimationState                             HitReacts;                                         // 0x6b0(0x28)
-	char                                                         pad0x38_W66W6[0x38];                               // 0x6d8(0x38)
+	char                                                         pad0x38_250PS[0x38];                               // 0x6d8(0x38)
 };
 
 

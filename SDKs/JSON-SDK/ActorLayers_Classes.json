@@ -6,6 +6,32 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "InstancedLayerComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x300",
+    "InheritedSize": "0x2d0",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x8_TGS8T[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x2d0"
+      },
+      {
+        "Name": "InstancedLayers",
+        "Type": "TArray<struct InstancedLayer>",
+        "Size": "0x10",
+        "Offset": "0x2d8"
+      },
+      {
+        "Name": "pad0x18_7L1B7[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x2e8"
+      }
+    ]
+  },
   "LayerActorsDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x48",
@@ -23,32 +49,6 @@
         "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0x38"
-      }
-    ]
-  },
-  "InstancedLayerComponent": {
-    "Super": "SceneComponent",
-    "FullSize": "0x300",
-    "InheritedSize": "0x2d0",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x8_QPVP8[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x2d0"
-      },
-      {
-        "Name": "InstancedLayers",
-        "Type": "TArray<struct InstancedLayer>",
-        "Size": "0x10",
-        "Offset": "0x2d8"
-      },
-      {
-        "Name": "pad0x18_H00L6[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x2e8"
       }
     ]
   },

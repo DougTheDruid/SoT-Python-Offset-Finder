@@ -1,32 +1,4 @@
 {
-  "TrinketCategory": {
-    "Super": "CategoryBase",
-    "FullSize": "0x88",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TrinketReplacementActor": {
-    "Super": "Actor",
-    "FullSize": "0x3b0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_96WTI[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x3a0"
-      }
-    ]
-  },
-  "TrinketLoadoutFinderPolicyBase": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "TrinketDesc": {
     "Super": "EntitlementDesc",
     "FullSize": "0xf8",
@@ -52,27 +24,6 @@
         "Offset": "0xe8"
       }
     ]
-  },
-  "TrinketAudioInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TrinketLoadoutControlInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TrinketSetControlInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "TrinketSfxDataAsset": {
     "Super": "DataAsset",
@@ -106,10 +57,59 @@
       }
     ]
   },
+  "TrinketLoadoutFinderPolicyBase": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TrinketLoadoutControlInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TrinketAudioInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TrinketReplacementActor": {
+    "Super": "Actor",
+    "FullSize": "0x3b0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_W2BZS[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x3a0"
+      }
+    ]
+  },
   "TrinketLoadoutViewInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TrinketSetControlInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TrinketCategory": {
+    "Super": "CategoryBase",
+    "FullSize": "0x88",
+    "InheritedSize": "0x88",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -127,7 +127,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_70CUB[0x10]",
+        "Name": "pad0x10_DZ3XM[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"

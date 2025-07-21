@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 GameEventsOnDemandAvailabilityService:
   Attributes:
-  - Name: pad0xd0_0ORAI[0xd0]
+  - Name: pad0xd0_FL2DL[0xd0]
     Offset: '0x28'
     Size: '0xd0'
     Type: char
@@ -10,7 +10,7 @@ GameEventsOnDemandAvailabilityService:
     Offset: '0xf8'
     Size: '0x8'
     Type: class World*
-  - Name: pad0x18_BHMTS[0x18]
+  - Name: pad0x18_OIUYB[0x18]
     Offset: '0x100'
     Size: '0x18'
     Type: char
@@ -20,7 +20,7 @@ GameEventsOnDemandAvailabilityService:
   Super: Object
 GameEventsOnDemandLoserTunnelService:
   Attributes:
-  - Name: pad0x8_0B8B8[0x8]
+  - Name: pad0x8_9WH6Z[0x8]
     Offset: '0x3a0'
     Size: '0x8'
     Type: char
@@ -28,7 +28,7 @@ GameEventsOnDemandLoserTunnelService:
     Offset: '0x3a8'
     Size: '0x8'
     Type: class World*
-  - Name: pad0x58_GKAMF[0x58]
+  - Name: pad0x58_ZCFDV[0x58]
     Offset: '0x3b0'
     Size: '0x58'
     Type: char
@@ -36,7 +36,7 @@ GameEventsOnDemandLoserTunnelService:
     Offset: '0x408'
     Size: '0x8'
     Type: class VoyageDescDataAsset*
-  - Name: pad0x50_1DXV3[0x50]
+  - Name: pad0x50_MGDBE[0x50]
     Offset: '0x410'
     Size: '0x50'
     Type: char
@@ -48,7 +48,7 @@ GameEventsOnDemandLoserTunnelService:
     Offset: '0x470'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x68_D47F0[0x68]
+  - Name: pad0x68_Y1MMB[0x68]
     Offset: '0x478'
     Size: '0x68'
     Type: char

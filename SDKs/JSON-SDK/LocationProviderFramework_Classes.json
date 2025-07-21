@@ -1,17 +1,10 @@
 {
-  "LocationProviderService": {
-    "Super": "Object",
-    "FullSize": "0xa8",
+  "LocationProviderServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
     "InheritedSize": "0x28",
-    "ClassSize": "0x80",
-    "Attributes": [
-      {
-        "Name": "pad0x80_U4E0V[0x80]",
-        "Type": "char",
-        "Size": "0x80",
-        "Offset": "0x28"
-      }
-    ]
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "LocationType": {
     "Super": "Object",
@@ -20,12 +13,19 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "LocationProviderServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
+  "LocationProviderService": {
+    "Super": "Object",
+    "FullSize": "0xa8",
     "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Name": "pad0x80_TCIJ4[0x80]",
+        "Type": "char",
+        "Size": "0x80",
+        "Offset": "0x28"
+      }
+    ]
   },
   "KrakenLocationType": {
     "Super": "LocationType",

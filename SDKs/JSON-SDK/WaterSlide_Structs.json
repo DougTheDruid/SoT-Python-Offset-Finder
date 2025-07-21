@@ -1,111 +1,40 @@
 {
-  "WaterSlideActionStateConstructionInfo": {
-    "ClassSize": "0x50",
+  "OnPlayerSpeedOnWaterSlideChangedActionStateEvent": {
+    "ClassSize": "0xc",
     "Attributes": [
       {
-        "Name": "pad0x48_V9R2A[0x48]",
+        "Name": "pad0xc_6A9VW[0xc]",
         "Type": "char",
-        "Size": "0x48",
+        "Size": "0xc",
         "Offset": "0x0"
-      },
-      {
-        "Name": "SceneComponent",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x48"
       }
     ]
   },
-  "RideTransitionActionStateParams": {
-    "ClassSize": "0x14",
+  "OnPlayerChangedWaterSlideRouteActionStateEvent": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_MSUYC[0x10]",
+        "Name": "pad0x8_CO8SZ[0x8]",
         "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Duration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "OnEndZiplineActionStateEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "ZiplineEnd",
-        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "ZiplineEndLoop",
+        "Name": "WaterSlideChangeForkOneShot",
         "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x8"
-      },
-      {
-        "Name": "DetachFromZiplineAdditiveOneShot",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x10"
       }
     ]
   },
-  "RideTransitionTelemetryEvent": {
-    "ClassSize": "0x30",
+  "OnUpdateZiplineActionStateEvent": {
+    "ClassSize": "0x1c",
     "Attributes": [
       {
-        "Name": "RideObjectId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "RideStartLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "AttachAreaSize",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x1c"
-      },
-      {
-        "Name": "MaxDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "AllowedDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x24"
-      },
-      {
-        "Name": "CurrentDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "IsAllowed",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "pad0x3_IYNHY[0x3]",
+        "Name": "pad0x1c_MA6C0[0x1c]",
         "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x2d"
+        "Size": "0x1c",
+        "Offset": "0x0"
       }
     ]
   },
@@ -120,11 +49,68 @@
       }
     ]
   },
-  "ZiplineActionStateConstructionInfo": {
-    "ClassSize": "0x60",
+  "OnStartWaterSlideActionStateEvent": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x48_PF32S[0x48]",
+        "Name": "WaterSlideStart",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "WaterSlideVfxOverride",
+        "Type": "class ParticleSystem*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "OnExitedRideEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_EPBO0[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "WaterSlideActionStateParams": {
+    "ClassSize": "0x24",
+    "Attributes": [
+      {
+        "Name": "ForcedFieldOfView",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ForceStash",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x3_WYOHZ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5"
+      },
+      {
+        "Name": "LookAtOffsetParams",
+        "Type": "struct LookAtOffsetParams",
+        "Size": "0x1c",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "WaterSlideActionStateConstructionInfo": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x48_5Q52F[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0x0"
@@ -134,30 +120,6 @@
         "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x48"
-      },
-      {
-        "Name": "MovementDirection",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "InitialSwingDirection",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x51"
-      },
-      {
-        "Name": "pad0x6_E5HCN[0x6]",
-        "Type": "char",
-        "Size": "0x6",
-        "Offset": "0x52"
-      },
-      {
-        "Name": "ZiplineStartSmoothedTime",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x58"
       }
     ]
   },
@@ -207,7 +169,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_3W6RK[0x4]",
+        "Name": "pad0x4_12GK7[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
@@ -217,35 +179,6 @@
         "Type": "class ParticleSystem*",
         "Size": "0x8",
         "Offset": "0x20"
-      }
-    ]
-  },
-  "WaterSlideActionStateParams": {
-    "ClassSize": "0x24",
-    "Attributes": [
-      {
-        "Name": "ForcedFieldOfView",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ForceStash",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "pad0x3_RFX8M[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x5"
-      },
-      {
-        "Name": "LookAtOffsetParams",
-        "Type": "struct LookAtOffsetParams",
-        "Size": "0x1c",
-        "Offset": "0x8"
       }
     ]
   },
@@ -284,6 +217,204 @@
       }
     ]
   },
+  "ZiplineActionStateConstructionInfo": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "pad0x48_P9BR5[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SceneComponent",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "MovementDirection",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "InitialSwingDirection",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x51"
+      },
+      {
+        "Name": "pad0x6_3CZLL[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x52"
+      },
+      {
+        "Name": "ZiplineStartSmoothedTime",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x58"
+      }
+    ]
+  },
+  "RideTransitionTelemetryEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "RideObjectId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RideStartLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "AttachAreaSize",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "MaxDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "AllowedDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "CurrentDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "IsAllowed",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "pad0x3_HKKGY[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x2d"
+      }
+    ]
+  },
+  "RideTransitionActionStateConstructionInfo": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "pad0x48_8YNFA[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Ride",
+        "Type": "class Ride*",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "Direction",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "pad0x3_TLAG6[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x51"
+      },
+      {
+        "Name": "Offset",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x54"
+      },
+      {
+        "Name": "pad0x18_A2EOX[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x58"
+      }
+    ]
+  },
+  "OnEndWaterSlideActionStateEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x8_5BDDD[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "WaterSlideEnd",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "WaterSlideIsEndOneShot",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "OnEndZiplineActionStateEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ZiplineEnd",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ZiplineEndLoop",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "DetachFromZiplineAdditiveOneShot",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "RideTransitionActionStateParams": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "pad0x10_QYXKW[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Duration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "ZiplineFeelParameters": {
     "ClassSize": "0x310",
     "Attributes": [
@@ -318,7 +449,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_C0MGE[0x4]",
+        "Name": "pad0x4_D7EB6[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
@@ -352,137 +483,6 @@
         "Type": "struct Vector2D",
         "Size": "0x8",
         "Offset": "0x308"
-      }
-    ]
-  },
-  "OnStartWaterSlideActionStateEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "WaterSlideStart",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "WaterSlideVfxOverride",
-        "Type": "class ParticleSystem*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "RideTransitionActionStateConstructionInfo": {
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "pad0x48_E5049[0x48]",
-        "Type": "char",
-        "Size": "0x48",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Ride",
-        "Type": "class Ride*",
-        "Size": "0x8",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "Direction",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "pad0x3_6I7UV[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x51"
-      },
-      {
-        "Name": "Offset",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x54"
-      },
-      {
-        "Name": "pad0x18_56VYF[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x58"
-      }
-    ]
-  },
-  "OnUpdateZiplineActionStateEvent": {
-    "ClassSize": "0x1c",
-    "Attributes": [
-      {
-        "Name": "pad0x1c_WGB5Z[0x1c]",
-        "Type": "char",
-        "Size": "0x1c",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "OnExitedRideEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_U89U3[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "OnPlayerSpeedOnWaterSlideChangedActionStateEvent": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "pad0xc_IPPGM[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "OnPlayerChangedWaterSlideRouteActionStateEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x8_BJ0ZL[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "WaterSlideChangeForkOneShot",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "OnEndWaterSlideActionStateEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x8_ASFHN[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "WaterSlideEnd",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "WaterSlideIsEndOneShot",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x10"
       }
     ]
   },

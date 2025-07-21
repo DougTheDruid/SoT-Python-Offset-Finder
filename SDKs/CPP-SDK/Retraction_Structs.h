@@ -13,19 +13,19 @@ public:
 };
 
 
-// Size 0x8
-struct EventAttachedRetractableToItemProxy
-{
-public:
-	class Actor*                                                 Item;                                              // 0x0(0x8)
-};
-
-
 // Size 0xc
 struct EventItemProxyMovedFromSlot
 {
 public:
 	struct Vector                                                ItemLocation;                                      // 0x0(0xc)
+};
+
+
+// Size 0x8
+struct EventAttachedRetractableToItemProxy
+{
+public:
+	class Actor*                                                 Item;                                              // 0x0(0x8)
 };
 
 

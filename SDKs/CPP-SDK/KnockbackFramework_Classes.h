@@ -6,13 +6,6 @@
 #include "KnockbackFramework_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class KnockbackInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x80 (Full Size[0x650] - InheritedSize[0x5d0]
 class KnockbackColliderComponent: public BoxComponent
 {
@@ -20,13 +13,20 @@ public:
 	struct CollisionProfileName                                  SolidCollisionProfile;                             // 0x5c8(0x8)
 	struct CollisionProfileName                                  KnockbackTraceProfile;                             // 0x5d0(0x8)
 	char                                                         KnockbackType;                                     // 0x5d8(0x1)
-	char                                                         pad0x3_8MXC5[0x3];                                 // 0x5d9(0x3)
+	char                                                         pad0x3_L1Y7E[0x3];                                 // 0x5d9(0x3)
 	struct KnockBackInfo                                         KnockbackParams;                                   // 0x5dc(0x54)
 	class UClass*                                                KnockbackDamageType;                               // 0x638(0x8)
 	float                                                        KnockbackInterval;                                 // 0x640(0x4)
-	char                                                         pad0x4_G56LT[0x4];                                 // 0x644(0x4)
+	char                                                         pad0x4_Z885Q[0x4];                                 // 0x644(0x4)
 	char                                                         SolidState;                                        // 0x648(0x1)
-	char                                                         pad0x7_VSIKN[0x7];                                 // 0x649(0x7)
+	char                                                         pad0x7_74ZOJ[0x7];                                 // 0x649(0x7)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class KnockbackInterface: public Interface
+{
+public:
 };
 
 

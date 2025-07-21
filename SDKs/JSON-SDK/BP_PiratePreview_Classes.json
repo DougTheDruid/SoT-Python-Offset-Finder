@@ -12,12 +12,6 @@
         "Offset": "0x7f0"
       },
       {
-        "Name": "pad0xbc863a8_WTYS8[0xbc863a8]",
-        "Type": "char",
-        "Size": "0xbc863a8",
-        "Offset": "0x7f8"
-      },
-      {
         "Name": "Camera_BottleSpin",
         "Type": "class ArrowComponent*",
         "Size": "0x8",
@@ -168,7 +162,7 @@
         "Offset": "0x8b8"
       },
       {
-        "Name": "pad0x30_5E9CB[0x30]",
+        "Name": "pad0x30_217VV[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x8c0"

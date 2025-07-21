@@ -20,7 +20,7 @@ FileMediaSource:
     Offset: '0x98'
     Size: '0x1'
     Type: bool
-  - Name: pad0x17_948E4[0x17]
+  - Name: pad0x17_M27O5[0x17]
     Offset: '0x99'
     Size: '0x17'
     Type: char
@@ -50,7 +50,7 @@ MediaComponent:
   Super: ActorComponent
 MediaPlayer:
   Attributes:
-  - Name: pad0x80_J5R27[0x80]
+  - Name: pad0x80_70N11[0x80]
     Offset: '0x28'
     Size: '0x80'
     Type: char
@@ -74,7 +74,7 @@ MediaPlayer:
     Offset: '0xc1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_8C7HJ[0x2]
+  - Name: pad0x2_025IJ[0x2]
     Offset: '0xc2'
     Size: '0x2'
     Type: char
@@ -86,7 +86,7 @@ MediaPlayer:
     Offset: '0xc4'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_VKK5Z[0x3]
+  - Name: pad0x3_QAIRS[0x3]
     Offset: '0xc5'
     Size: '0x3'
     Type: char
@@ -98,7 +98,7 @@ MediaPlayer:
     Offset: '0xd0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_Q1TI3[0x4]
+  - Name: pad0x4_2PHDV[0x4]
     Offset: '0xd4'
     Size: '0x4'
     Type: char
@@ -118,7 +118,7 @@ MediaPlayer:
     Offset: '0xe8'
     Size: '0xc'
     Type: struct Rotator
-  - Name: pad0x64_XTMMB[0x64]
+  - Name: pad0x64_IEHV1[0x64]
     Offset: '0xf4'
     Size: '0x64'
     Type: char
@@ -126,7 +126,7 @@ MediaPlayer:
     Offset: '0x158'
     Size: '0x10'
     Type: struct Guid
-  - Name: pad0x8_JY8PU[0x8]
+  - Name: pad0x8_EXU2M[0x8]
     Offset: '0x168'
     Size: '0x8'
     Type: char
@@ -146,7 +146,7 @@ MediaPlaylist:
   Super: Object
 MediaSource:
   Attributes:
-  - Name: pad0x58_1PF4L[0x58]
+  - Name: pad0x58_XN2S6[0x58]
     Offset: '0x28'
     Size: '0x58'
     Type: char
@@ -168,7 +168,7 @@ MediaTexture:
     Offset: '0x142'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_IBA6X[0x1]
+  - Name: pad0x1_P4GGZ[0x1]
     Offset: '0x143'
     Size: '0x1'
     Type: char
@@ -200,7 +200,7 @@ MediaTexture:
     Offset: '0x15c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_54F04[0x3]
+  - Name: pad0x3_GDC73[0x3]
     Offset: '0x15d'
     Size: '0x3'
     Type: char
@@ -208,7 +208,7 @@ MediaTexture:
     Offset: '0x160'
     Size: '0x8'
     Type: class MediaPlayer*
-  - Name: pad0xc8_936C9[0xc8]
+  - Name: pad0xc8_EGOG2[0xc8]
     Offset: '0x168'
     Size: '0xc8'
     Type: char
@@ -222,7 +222,7 @@ MediaTimeStampInfo:
     Offset: '0x28'
     Size: '0x8'
     Type: struct Timespan
-  - Name: pad0x8_FWN0B[0x8]
+  - Name: pad0x8_S8FKA[0x8]
     Offset: '0x30'
     Size: '0x8'
     Type: char
@@ -270,7 +270,7 @@ TimeSynchronizableMediaSource:
     Offset: '0x88'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_CCTCM[0x3]
+  - Name: pad0x3_KBFKE[0x3]
     Offset: '0x89'
     Size: '0x3'
     Type: char

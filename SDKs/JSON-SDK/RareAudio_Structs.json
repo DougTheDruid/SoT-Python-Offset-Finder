@@ -1,15 +1,4 @@
 {
-  "WwiseEmitter": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_FLM9Y[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "WWiseEmitterCreationSwitchSetting": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -43,7 +32,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_L4UD5[0x4]",
+        "Name": "pad0x4_QUMYF[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
@@ -62,6 +51,17 @@
       }
     ]
   },
+  "WwiseEmitter": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_IEVZU[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "WWiseEmitterCreationRTPCSetting": {
     "ClassSize": "0xc",
     "Attributes": [
@@ -76,29 +76,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "StaticMeshComponentAudioAssociation": {
-    "ClassSize": "0x68",
-    "Attributes": [
-      {
-        "Name": "PlaybackData",
-        "Type": "struct StaticMeshWwiseEmitterData",
-        "Size": "0x38",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "EmitterPositionRelativeToComponentOrigin",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x24_48I6R[0x24]",
-        "Type": "char",
-        "Size": "0x24",
-        "Offset": "0x44"
       }
     ]
   },
@@ -139,6 +116,29 @@
         "Type": "TArray<struct WWiseEmitterCreationSwitchSetting>",
         "Size": "0x10",
         "Offset": "0x18"
+      }
+    ]
+  },
+  "StaticMeshComponentAudioAssociation": {
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Name": "PlaybackData",
+        "Type": "struct StaticMeshWwiseEmitterData",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "EmitterPositionRelativeToComponentOrigin",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x24_30R8X[0x24]",
+        "Type": "char",
+        "Size": "0x24",
+        "Offset": "0x44"
       }
     ]
   },

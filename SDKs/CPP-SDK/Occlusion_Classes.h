@@ -7,7 +7,7 @@
 class OcclusionService: public Object
 {
 public:
-	char                                                         pad0x68_K55OZ[0x68];                               // 0x28(0x68)
+	char                                                         pad0x68_XLFGB[0x68];                               // 0x28(0x68)
 };
 
 

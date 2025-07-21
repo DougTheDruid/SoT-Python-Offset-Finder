@@ -76,7 +76,7 @@ StopWarMapVoyageVoteValidator:
     Offset: '0x130'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_0YCY2[0x7]
+  - Name: pad0x7_YZ6AL[0x7]
     Offset: '0x131'
     Size: '0x7'
     Type: char
@@ -86,7 +86,7 @@ StopWarMapVoyageVoteValidator:
   Super: WarMapVoteValidatorBase
 WarMapInteractionComponent:
   Attributes:
-  - Name: pad0x8_QEXC6[0x8]
+  - Name: pad0x8_BE7BM[0x8]
     Offset: '0x140'
     Size: '0x8'
     Type: char
@@ -102,7 +102,7 @@ WarMapInteractionComponent:
     Offset: '0x1b8'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x20_XGZ2K[0x20]
+  - Name: pad0x20_VYCDT[0x20]
     Offset: '0x1c0'
     Size: '0x20'
     Type: char
@@ -112,7 +112,7 @@ WarMapInteractionComponent:
   Super: InteractableComponent
 WarMapInteractionVoteComponent:
   Attributes:
-  - Name: pad0x10_V9FSG[0x10]
+  - Name: pad0x10_87KLX[0x10]
     Offset: '0x168'
     Size: '0x10'
     Type: char
@@ -140,7 +140,7 @@ WarMapVoteConsumerBase:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x67_GF8LP[0x67]
+  - Name: pad0x67_56XIS[0x67]
     Offset: '0x41'
     Size: '0x67'
     Type: char
@@ -148,7 +148,7 @@ WarMapVoteConsumerBase:
     Offset: '0xa8'
     Size: '0x10'
     Type: TArray<class PlayerState*>
-  - Name: pad0x58_SRUIC[0x58]
+  - Name: pad0x58_CK7OS[0x58]
     Offset: '0xb8'
     Size: '0x58'
     Type: char
@@ -158,7 +158,7 @@ WarMapVoteConsumerBase:
   Super: VoteConsumerInlineBase
 WarMapVoteInteractionActor:
   Attributes:
-  - Name: pad0x10_16VGU[0x10]
+  - Name: pad0x10_VBFNA[0x10]
     Offset: '0x3a0'
     Size: '0x10'
     Type: char
@@ -170,7 +170,7 @@ WarMapVoteInteractionActor:
     Offset: '0x3b4'
     Size: '0x8'
     Type: struct Vector2D
-  - Name: pad0x4_SJFWO[0x4]
+  - Name: pad0x4_MTZB9[0x4]
     Offset: '0x3bc'
     Size: '0x4'
     Type: char
@@ -190,7 +190,7 @@ WarMapVoteInteractionActor:
     Offset: '0x3e0'
     Size: '0x10'
     Type: TArray<struct FactionRequest>
-  - Name: pad0x230_PIEM6[0x230]
+  - Name: pad0x230_K3O99[0x230]
     Offset: '0x3f0'
     Size: '0x230'
     Type: char
@@ -212,7 +212,7 @@ WarMapVoteValidatorBase:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0xef_OCZZD[0xef]
+  - Name: pad0xef_6TRU3[0xef]
     Offset: '0x41'
     Size: '0xef'
     Type: char

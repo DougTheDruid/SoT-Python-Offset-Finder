@@ -6,7 +6,7 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x48_2XX45[0x48]",
+        "Name": "pad0x48_NDRAC[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0x28"
@@ -27,7 +27,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x60_Z9FYY[0x60]",
+        "Name": "pad0x60_89IJC[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0x28"

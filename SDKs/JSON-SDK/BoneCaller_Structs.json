@@ -1,15 +1,4 @@
 {
-  "PlayerBoneCallerData": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_CXH74[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "EventOnBoneCallerSpawned": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -27,29 +16,6 @@
       }
     ]
   },
-  "BoneCallerPawnKillTelemetry": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "KilledPawnName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "WasSpawnedByBoneCaller",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x7_860DS[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x11"
-      }
-    ]
-  },
   "BoneCallerUsageTelemetry": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -60,7 +26,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_04QMA[0x4]",
+        "Name": "pad0x4_OPEHL[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -89,7 +55,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x10_WFTV1[0x10]",
+        "Name": "pad0x10_B7217[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x10"
@@ -99,6 +65,34 @@
         "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x20"
+      }
+    ]
+  },
+  "PlayerBoneCallerData": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_9EWYD[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventOnBoneCallerAIKilled": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "KilledCharacter",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Killer",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -131,40 +125,6 @@
       }
     ]
   },
-  "BoneCallerSpawnIdShipSizeOverride": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ShipSize",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "BoneCallerSpawnIdOverride",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "EventOnBoneCallerAIKilled": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "KilledCharacter",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Killer",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "EventOnBoneCallerDidKillEvent": {
     "ClassSize": "0x38",
     "Attributes": [
@@ -178,6 +138,46 @@
         "Name": "DamageInstance",
         "Type": "struct DamageInstance",
         "Size": "0x30",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "BoneCallerPawnKillTelemetry": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "KilledPawnName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "WasSpawnedByBoneCaller",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_NGBVE[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      }
+    ]
+  },
+  "BoneCallerSpawnIdShipSizeOverride": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ShipSize",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BoneCallerSpawnIdOverride",
+        "Type": "class UClass*",
+        "Size": "0x8",
         "Offset": "0x8"
       }
     ]

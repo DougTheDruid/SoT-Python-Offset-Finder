@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 MusicZoneDestroyedEvent:
   Attributes:
-  - Name: pad0x10_CQT1T[0x10]
+  - Name: pad0x10_KI73N[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
@@ -42,7 +42,7 @@ MusicZoneRemoteValues:
   ClassSize: '0x20'
 MusicZoneSpawnedEvent:
   Attributes:
-  - Name: pad0x10_JMF51[0x10]
+  - Name: pad0x10_F0IFO[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char

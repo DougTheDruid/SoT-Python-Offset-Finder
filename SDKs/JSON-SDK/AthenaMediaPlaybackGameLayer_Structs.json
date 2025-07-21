@@ -1,67 +1,4 @@
 {
-  "VideoPlaybackPauseEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MediaTextureName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "VideoPlaybackLoadEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "MediaTextureName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "VideoUri",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "MediaPlayedTelemetryEvent": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "MediaName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "LowestResolution",
-        "Type": "struct IntPoint",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "MedianResolution",
-        "Type": "struct IntPoint",
-        "Size": "0x8",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "HighestResolution",
-        "Type": "struct IntPoint",
-        "Size": "0x8",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "pad0x18_EFNM8[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "VideoPlaybackStateEvent": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -78,7 +15,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_GDCQZ[0x7]",
+        "Name": "pad0x7_LOHVV[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
@@ -86,6 +23,17 @@
     ]
   },
   "VideoPlaybackStartEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MediaTextureName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "VideoPlaybackPauseEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
@@ -119,6 +67,41 @@
       }
     ]
   },
+  "MediaPlayedTelemetryEvent": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "MediaName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "LowestResolution",
+        "Type": "struct IntPoint",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "MedianResolution",
+        "Type": "struct IntPoint",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "HighestResolution",
+        "Type": "struct IntPoint",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x18_6GYHN[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "VideoPlaybackStopEvent": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -127,6 +110,23 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "VideoPlaybackLoadEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "MediaTextureName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "VideoUri",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },

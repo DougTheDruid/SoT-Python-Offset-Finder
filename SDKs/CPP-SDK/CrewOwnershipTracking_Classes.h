@@ -6,22 +6,20 @@
 #include "CrewOwnershipTracking_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CustomCrewTrackingInterface: public Interface
+// Size 0xa8 (Full Size[0x160] - InheritedSize[0xb8]
+class CrewOwnershipTrackingComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x18_HAVMG[0x18];                               // 0xb8(0x18)
+	struct Guid                                                  SpawningCrewId;                                    // 0xd0(0x10)
+	struct Guid                                                  CurrentOwnedByCrewId;                              // 0xe0(0x10)
+	struct OwnerListEntry                                        PreviousOwnedByCrewIdList;                         // 0xf0(0x10)
+	char                                                         pad0x60_JLT1J[0x60];                               // 0x100(0x60)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class CrewOwnershipTrackingInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CrewOwnershipTrackingControlInterface: public Interface
 {
 public:
 };
@@ -34,15 +32,17 @@ public:
 };
 
 
-// Size 0xa8 (Full Size[0x160] - InheritedSize[0xb8]
-class CrewOwnershipTrackingComponent: public ActorComponent
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CustomCrewTrackingInterface: public Interface
 {
 public:
-	char                                                         pad0x18_7K5RF[0x18];                               // 0xb8(0x18)
-	struct Guid                                                  SpawningCrewId;                                    // 0xd0(0x10)
-	struct Guid                                                  CurrentOwnedByCrewId;                              // 0xe0(0x10)
-	struct OwnerListEntry                                        PreviousOwnedByCrewIdList;                         // 0xf0(0x10)
-	char                                                         pad0x60_V7X8T[0x60];                               // 0x100(0x60)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CrewOwnershipTrackingControlInterface: public Interface
+{
+public:
 };
 
 

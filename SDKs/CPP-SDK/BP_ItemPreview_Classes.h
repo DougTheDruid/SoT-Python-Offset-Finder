@@ -8,7 +8,6 @@ class BP_ItemPreview_C: public ItemPreviewActor
 {
 public:
 	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x580(0x8)
-	char                                                         pad0x66854438_BI685[0x66854438];                   // 0x588(0x66854438)
 	class ArrowComponent*                                        Camera_Dog;                                        // 0x588(0x8)
 	class ArrowComponent*                                        Camera_Far;                                        // 0x590(0x8)
 	class ArrowComponent*                                        Camera_Mid;                                        // 0x598(0x8)
@@ -20,7 +19,7 @@ public:
 	class SkeletalMeshComponent*                                 ItemMesh;                                          // 0x5c8(0x8)
 	class CameraComponent*                                       Camera;                                            // 0x5d0(0x8)
 	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x5d8(0x8)
-	char                                                         pad0x30_ECSPJ[0x30];                               // 0x5e0(0x30)
+	char                                                         pad0x30_K8LH5[0x30];                               // 0x5e0(0x30)
 };
 
 

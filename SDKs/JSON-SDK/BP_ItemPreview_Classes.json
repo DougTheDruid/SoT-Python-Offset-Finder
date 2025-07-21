@@ -12,12 +12,6 @@
         "Offset": "0x580"
       },
       {
-        "Name": "pad0x66854438_BI685[0x66854438]",
-        "Type": "char",
-        "Size": "0x66854438",
-        "Offset": "0x588"
-      },
-      {
         "Name": "Camera_Dog",
         "Type": "class ArrowComponent*",
         "Size": "0x8",
@@ -84,7 +78,7 @@
         "Offset": "0x5d8"
       },
       {
-        "Name": "pad0x30_ECSPJ[0x30]",
+        "Name": "pad0x30_K8LH5[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x5e0"

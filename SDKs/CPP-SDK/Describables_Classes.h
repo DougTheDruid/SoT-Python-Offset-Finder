@@ -7,12 +7,12 @@
 class DescribableComponent: public InteractableComponent
 {
 public:
-	char                                                         pad0x8_NFCW4[0x8];                                 // 0x140(0x8)
+	char                                                         pad0x8_KFTFI[0x8];                                 // 0x140(0x8)
 	bool                                                         TooltipActiveOnBeginPlay;                          // 0x148(0x1)
-	char                                                         pad0x7_C8K4R[0x7];                                 // 0x149(0x7)
+	char                                                         pad0x7_IC0Y9[0x7];                                 // 0x149(0x7)
 	struct FText                                                 DescribableTooltipText;                            // 0x150(0x38)
 	bool                                                         TooltipActive;                                     // 0x188(0x1)
-	char                                                         pad0x17_ZAJMZ[0x17];                               // 0x189(0x17)
+	char                                                         pad0x17_56BI8[0x17];                               // 0x189(0x17)
 };
 
 

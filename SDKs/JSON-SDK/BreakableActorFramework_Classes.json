@@ -6,7 +6,7 @@
     "ClassSize": "0x158",
     "Attributes": [
       {
-        "Name": "pad0x4_CC0EA[0x4]",
+        "Name": "pad0x4_7ZIUQ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xb8"
@@ -42,7 +42,7 @@
         "Offset": "0xdc"
       },
       {
-        "Name": "pad0x4_OEDT6[0x4]",
+        "Name": "pad0x4_NHX5G[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xe4"
@@ -66,7 +66,7 @@
         "Offset": "0x100"
       },
       {
-        "Name": "pad0x108_R7X1F[0x108]",
+        "Name": "pad0x108_B9SG4[0x108]",
         "Type": "char",
         "Size": "0x108",
         "Offset": "0x108"
@@ -80,7 +80,7 @@
     "ClassSize": "0x190",
     "Attributes": [
       {
-        "Name": "pad0x20_QLMYX[0x20]",
+        "Name": "pad0x20_CM19J[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x3a0"
@@ -92,7 +92,7 @@
         "Offset": "0x3c0"
       },
       {
-        "Name": "pad0x4_C8QBH[0x4]",
+        "Name": "pad0x4_FCDER[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c4"
@@ -134,10 +134,80 @@
         "Offset": "0x410"
       },
       {
-        "Name": "pad0x118_61B4H[0x118]",
+        "Name": "pad0x118_UHYIL[0x118]",
         "Type": "char",
         "Size": "0x118",
         "Offset": "0x418"
+      }
+    ]
+  },
+  "BreakableActorItemSpawnComponent": {
+    "Super": "ItemSpawnComponent",
+    "FullSize": "0x500",
+    "InheritedSize": "0x480",
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Name": "pad0x80_STQMX[0x80]",
+        "Type": "char",
+        "Size": "0x80",
+        "Offset": "0x480"
+      }
+    ]
+  },
+  "BreakableActorAudioComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x1b8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x100",
+    "Attributes": [
+      {
+        "Name": "UseParentEmitter",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "pad0x7_3R6T9[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xb9"
+      },
+      {
+        "Name": "AudioPool",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "PlayMusicEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "StopMusicEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "PlayDamagedEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "PlayDestroyedEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "pad0xd0_9SPFT[0xd0]",
+        "Type": "char",
+        "Size": "0xd0",
+        "Offset": "0xe8"
       }
     ]
   },
@@ -154,7 +224,7 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x4_NNLH3[0x4]",
+        "Name": "pad0x4_W6D2X[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xbc"
@@ -214,80 +284,10 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0xb8_723B9[0xb8]",
+        "Name": "pad0xb8_UU1TJ[0xb8]",
         "Type": "char",
         "Size": "0xb8",
         "Offset": "0xf8"
-      }
-    ]
-  },
-  "BreakableActorAudioComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x1b8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x100",
-    "Attributes": [
-      {
-        "Name": "UseParentEmitter",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "pad0x7_B38VH[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0xb9"
-      },
-      {
-        "Name": "AudioPool",
-        "Type": "class WwiseObjectPoolWrapper*",
-        "Size": "0x8",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "PlayMusicEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "StopMusicEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "PlayDamagedEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0xd8"
-      },
-      {
-        "Name": "PlayDestroyedEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "pad0xd0_0YG96[0xd0]",
-        "Type": "char",
-        "Size": "0xd0",
-        "Offset": "0xe8"
-      }
-    ]
-  },
-  "BreakableActorItemSpawnComponent": {
-    "Super": "ItemSpawnComponent",
-    "FullSize": "0x500",
-    "InheritedSize": "0x480",
-    "ClassSize": "0x80",
-    "Attributes": [
-      {
-        "Name": "pad0x80_ZIJA7[0x80]",
-        "Type": "char",
-        "Size": "0x80",
-        "Offset": "0x480"
       }
     ]
   },

@@ -6,10 +6,14 @@
 #include "GameplayTasks_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GameplayTaskOwnerInterface: public Interface
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class GameplayTaskResource: public Object
 {
 public:
+	int                                                          ManualResourceID;                                  // 0x28(0x4)
+	char                                                         pad0x4_TWM9U[0x4];                                 // 0x2c(0x4)
+	bool                                                         bManuallySetID;                                    // 0x30(0x1)
+	char                                                         pad0x7_VHRV0[0x7];                                 // 0x31(0x7)
 };
 
 
@@ -18,7 +22,7 @@ class GameplayTask: public Object
 {
 public:
 	struct FName                                                 InstanceName;                                      // 0x28(0x8)
-	char                                                         pad0x28_TXBEQ[0x28];                               // 0x30(0x28)
+	char                                                         pad0x28_T25QI[0x28];                               // 0x30(0x28)
 };
 
 
@@ -26,30 +30,18 @@ public:
 class GameplayTasksComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_HJEAO[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_FX6FO[0x8];                                 // 0xb8(0x8)
 	TArray<class GameplayTask*>                                  SimulatedTasks;                                    // 0xc0(0x10)
 	TArray<class GameplayTask*>                                  TaskPriorityQueue;                                 // 0xd0(0x10)
-	char                                                         pad0x28_4VG4W[0x28];                               // 0xe0(0x28)
-	char                                                         pad0x10_SI2GP[0x10];                               // 0x108(0x10)
+	char                                                         pad0x28_3S8JX[0x28];                               // 0xe0(0x28)
+	char                                                         pad0x10_DKK3A[0x10];                               // 0x108(0x10)
 };
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class GameplayTaskResource: public Object
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class GameplayTaskOwnerInterface: public Interface
 {
 public:
-	int                                                          ManualResourceID;                                  // 0x28(0x4)
-	char                                                         pad0x4_FQHIV[0x4];                                 // 0x2c(0x4)
-	bool                                                         bManuallySetID;                                    // 0x30(0x1)
-	char                                                         pad0x7_DKIJ3[0x7];                                 // 0x31(0x7)
-};
-
-
-// Size 0x18 (Full Size[0x70] - InheritedSize[0x58]
-class GameplayTask_WaitDelay: public GameplayTask
-{
-public:
-	char                                                         pad0x18_8BVOK[0x18];                               // 0x58(0x18)
 };
 
 
@@ -57,8 +49,16 @@ public:
 class GameplayTask_SpawnActor: public GameplayTask
 {
 public:
-	char                                                         pad0x38_0771T[0x38];                               // 0x58(0x38)
+	char                                                         pad0x38_7WL1B[0x38];                               // 0x58(0x38)
 	class UClass*                                                ClassToSpawn;                                      // 0x90(0x8)
+};
+
+
+// Size 0x18 (Full Size[0x70] - InheritedSize[0x58]
+class GameplayTask_WaitDelay: public GameplayTask
+{
+public:
+	char                                                         pad0x18_16Q0Y[0x18];                               // 0x58(0x18)
 };
 
 

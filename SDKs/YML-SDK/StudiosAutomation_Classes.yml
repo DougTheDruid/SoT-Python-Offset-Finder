@@ -42,7 +42,7 @@ AutomationBlueprintFunctionLibrary:
   Super: BlueprintFunctionLibrary
 AutomationLatentActionCallback:
   Attributes:
-  - Name: pad0x38_9JS1C[0x38]
+  - Name: pad0x38_KUILW[0x38]
     Offset: '0x28'
     Size: '0x38'
     Type: char
@@ -98,7 +98,7 @@ TestAbstractActor:
   Super: Actor
 TestLevelScriptActor:
   Attributes:
-  - Name: pad0x8_M01AV[0x8]
+  - Name: pad0x8_G1MSI[0x8]
     Offset: '0x3a8'
     Size: '0x8'
     Type: char
@@ -126,7 +126,7 @@ TestLevelScriptActor:
     Offset: '0x3b5'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_27V1M[0x2]
+  - Name: pad0x2_QC8XE[0x2]
     Offset: '0x3b6'
     Size: '0x2'
     Type: char
@@ -142,7 +142,7 @@ TestLevelScriptActor:
     Offset: '0x3c9'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_NYAS6[0x2]
+  - Name: pad0x2_993O9[0x2]
     Offset: '0x3ca'
     Size: '0x2'
     Type: char
@@ -154,7 +154,7 @@ TestLevelScriptActor:
     Offset: '0x3d0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_DTGTZ[0x4]
+  - Name: pad0x4_O49VG[0x4]
     Offset: '0x3d4'
     Size: '0x4'
     Type: char
@@ -182,7 +182,7 @@ TestLevelScriptActor:
     Offset: '0x428'
     Size: '0x4'
     Type: int
-  - Name: pad0x3c_ZMOUE[0x3c]
+  - Name: pad0x3c_TX9GH[0x3c]
     Offset: '0x42c'
     Size: '0x3c'
     Type: char
@@ -210,7 +210,7 @@ TestablePlayerController:
   Super: PlayerController
 TestablePlayerControllerComponent:
   Attributes:
-  - Name: pad0x20_TI8J3[0x20]
+  - Name: pad0x20_KZU5Q[0x20]
     Offset: '0xb8'
     Size: '0x20'
     Type: char

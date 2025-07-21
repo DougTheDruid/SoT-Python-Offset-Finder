@@ -1,8 +1,8 @@
 {
-  "SirenTeleportAIAbilityType": {
-    "Super": "AthenaAIAbilityType",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
+  "SirenEmeraldHealStatus": {
+    "Super": "StatusBase",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -13,66 +13,17 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_0ENNE[0x8]",
+        "Name": "pad0x8_D7P6U[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xaa8"
       }
     ]
   },
-  "DistantIdleAIAbilityParams": {
-    "Super": "AthenaAIAbilityParams",
-    "FullSize": "0xc8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "SirenSongAIAbilityParams": {
-    "Super": "AthenaAIAbilityParams",
-    "FullSize": "0xc8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "DistantIdleAIAbility": {
-    "Super": "AthenaAIAbility",
-    "FullSize": "0x78",
-    "InheritedSize": "0x78",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "SirenTeleportAIAbility": {
-    "Super": "TeleportAIAbility",
-    "FullSize": "0x80",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "SirenScratchRespiteStrategyId": {
-    "Super": "AIStrategyId",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "ScratchAIAbility": {
     "Super": "MeleeAIAbility",
     "FullSize": "0x80",
     "InheritedSize": "0x80",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "SirenEmeraldHealStatus": {
-    "Super": "StatusBase",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "SirenSapphireHealStatus": {
-    "Super": "StatusBase",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -83,15 +34,15 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "SirenTeleportAIAbilityParams": {
-    "Super": "TeleportAIAbilityParams",
-    "FullSize": "0xf0",
-    "InheritedSize": "0xf0",
+  "SirenCalmHealStrategyId": {
+    "Super": "AIStrategyId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ScratchAIAbilityType": {
-    "Super": "AthenaAIAbilityType",
+  "SirenScratchStrategyId": {
+    "Super": "AIStrategyId",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
@@ -104,8 +55,22 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "SirenCalmHealStrategyId": {
-    "Super": "AIStrategyId",
+  "SirenTeleportAIAbility": {
+    "Super": "TeleportAIAbility",
+    "FullSize": "0x80",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SirenTeleportAIAbilityParams": {
+    "Super": "TeleportAIAbilityParams",
+    "FullSize": "0xf0",
+    "InheritedSize": "0xf0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SirenSongAIAbilityType": {
+    "Super": "AthenaAIAbilityType",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
@@ -125,15 +90,15 @@
       }
     ]
   },
-  "SirenSongAIAbilityType": {
-    "Super": "AthenaAIAbilityType",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
+  "SirenSongAIAbilityParams": {
+    "Super": "AthenaAIAbilityParams",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xc8",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "SirenScratchStrategyId": {
-    "Super": "AIStrategyId",
+  "DistantIdleAIAbilityType": {
+    "Super": "AthenaAIAbilityType",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
@@ -146,10 +111,45 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "DistantIdleAIAbilityType": {
+  "ScratchAIAbilityType": {
     "Super": "AthenaAIAbilityType",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SirenTeleportAIAbilityType": {
+    "Super": "AthenaAIAbilityType",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SirenSapphireHealStatus": {
+    "Super": "StatusBase",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DistantIdleAIAbilityParams": {
+    "Super": "AthenaAIAbilityParams",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SirenScratchRespiteStrategyId": {
+    "Super": "AIStrategyId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DistantIdleAIAbility": {
+    "Super": "AthenaAIAbility",
+    "FullSize": "0x78",
+    "InheritedSize": "0x78",
     "ClassSize": "0x0",
     "Attributes": []
   },

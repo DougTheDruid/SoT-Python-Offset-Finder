@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 CheckRowboatLiveriesStatCondition:
   Attributes:
-  - Name: pad0x20_X7DLH[0x20]
+  - Name: pad0x20_LDZLI[0x20]
     Offset: '0x28'
     Size: '0x20'
     Type: char
@@ -12,7 +12,7 @@ CheckRowboatLiveriesStatCondition:
   Super: StatCondition
 CheckRowboatTypeStatCondition:
   Attributes:
-  - Name: pad0x20_SI91Q[0x20]
+  - Name: pad0x20_OG4PL[0x20]
     Offset: '0x28'
     Size: '0x20'
     Type: char
@@ -38,7 +38,7 @@ DataAssetRowboatLiveryPicker:
   Super: RowboatLiveryPicker
 FakeShip:
   Attributes:
-  - Name: pad0x8_HF16U[0x8]
+  - Name: pad0x8_QC3ZJ[0x8]
     Offset: '0x3a0'
     Size: '0x8'
     Type: char
@@ -46,7 +46,7 @@ FakeShip:
     Offset: '0x3a8'
     Size: '0x10'
     Type: TArray<class ItemProxy*>
-  - Name: pad0xf8_U2YWL[0xf8]
+  - Name: pad0xf8_V7BYE[0xf8]
     Offset: '0x3b8'
     Size: '0xf8'
     Type: char
@@ -56,7 +56,7 @@ FakeShip:
   Super: Actor
 FixedRowboatLiveryPicker:
   Attributes:
-  - Name: pad0x20_UB9NZ[0x20]
+  - Name: pad0x20_H7B4P[0x20]
     Offset: '0x28'
     Size: '0x20'
     Type: char
@@ -66,7 +66,7 @@ FixedRowboatLiveryPicker:
   Super: RowboatLiveryPicker
 ItemProxyWatercraftTrackerComponent:
   Attributes:
-  - Name: pad0x8_WSRYQ[0x8]
+  - Name: pad0x8_4TUR7[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -78,7 +78,7 @@ ItemProxyWatercraftTrackerComponent:
     Offset: '0xc8'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x80_VX7F9[0x80]
+  - Name: pad0x80_HU33L[0x80]
     Offset: '0xd0'
     Size: '0x80'
     Type: char
@@ -98,7 +98,7 @@ ItemProxyWatercraftTrackerComponentDataAsset:
   Super: DataAsset
 Rowboat:
   Attributes:
-  - Name: pad0x50_5M6L8[0x50]
+  - Name: pad0x50_VRMVJ[0x50]
     Offset: '0x708'
     Size: '0x50'
     Type: char
@@ -122,7 +122,7 @@ Rowboat:
     Offset: '0x778'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_K52H6[0x7]
+  - Name: pad0x7_SBXYG[0x7]
     Offset: '0x779'
     Size: '0x7'
     Type: char
@@ -158,7 +158,7 @@ Rowboat:
     Offset: '0x7bc'
     Size: '0x8'
     Type: struct CollisionProfileName
-  - Name: pad0x4_MK7PS[0x4]
+  - Name: pad0x4_NOWFF[0x4]
     Offset: '0x7c4'
     Size: '0x4'
     Type: char
@@ -234,7 +234,7 @@ Rowboat:
     Offset: '0x879'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_4P38Q[0x2]
+  - Name: pad0x2_7WOKJ[0x2]
     Offset: '0x87a'
     Size: '0x2'
     Type: char
@@ -250,7 +250,7 @@ Rowboat:
     Offset: '0x884'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_F3DSU[0x1]
+  - Name: pad0x1_4ZX0I[0x1]
     Offset: '0x885'
     Size: '0x1'
     Type: char
@@ -258,7 +258,7 @@ Rowboat:
     Offset: '0x886'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1_MCA5P[0x1]
+  - Name: pad0x1_AHWSH[0x1]
     Offset: '0x887'
     Size: '0x1'
     Type: char
@@ -278,7 +278,7 @@ Rowboat:
     Offset: '0x8a0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_6IZCE[0x3]
+  - Name: pad0x3_ICWCD[0x3]
     Offset: '0x8a1'
     Size: '0x3'
     Type: char
@@ -306,16 +306,24 @@ Rowboat:
     Offset: '0x8b8'
     Size: '0x4'
     Type: float
-  - Name: PremountCollisionProfileName
+  - Name: pad0x4_VLGZE[0x4]
     Offset: '0x8bc'
+    Size: '0x4'
+    Type: char
+  - Name: SubjectName
+    Offset: '0x8c0'
+    Size: '0x10'
+    Type: struct FString
+  - Name: PremountCollisionProfileName
+    Offset: '0x8d0'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x1dc_S2I3X[0x1dc]
-    Offset: '0x8c4'
-    Size: '0x1dc'
+  - Name: pad0x1d8_KWRV5[0x1d8]
+    Offset: '0x8d8'
+    Size: '0x1d8'
     Type: char
-  ClassSize: '0x398'
-  FullSize: '0xaa0'
+  ClassSize: '0x3a8'
+  FullSize: '0xab0'
   InheritedSize: '0x708'
   Super: Watercraft
 RowboatAudioComponent:
@@ -328,7 +336,7 @@ RowboatAudioComponent:
     Offset: '0x2d8'
     Size: '0x8'
     Type: class Rowboat*
-  - Name: pad0x1d0_THKDV[0x1d0]
+  - Name: pad0x1d0_QF1QS[0x1d0]
     Offset: '0x2e0'
     Size: '0x1d0'
     Type: char
@@ -358,7 +366,7 @@ RowboatAudioComponentParams:
     Offset: '0x48'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_WJQYB[0x4]
+  - Name: pad0x4_PIQLP[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -390,7 +398,7 @@ RowboatAudioComponentParams:
     Offset: '0x80'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_5LCQD[0x4]
+  - Name: pad0x4_0BV2C[0x4]
     Offset: '0x84'
     Size: '0x4'
     Type: char
@@ -402,7 +410,7 @@ RowboatAudioComponentParams:
     Offset: '0x90'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_HNLII[0x4]
+  - Name: pad0x4_Q0AZN[0x4]
     Offset: '0x94'
     Size: '0x4'
     Type: char
@@ -452,7 +460,7 @@ RowboatAudioComponentParams:
   Super: DataAsset
 RowboatCustomizationLoadoutComponent:
   Attributes:
-  - Name: pad0x28_5EFSL[0x28]
+  - Name: pad0x28_37ZRZ[0x28]
     Offset: '0xb8'
     Size: '0x28'
     Type: char
@@ -460,7 +468,7 @@ RowboatCustomizationLoadoutComponent:
     Offset: '0xe0'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x18_CD9J4[0x18]
+  - Name: pad0x18_ZGC0D[0x18]
     Offset: '0xe8'
     Size: '0x18'
     Type: char
@@ -634,7 +642,7 @@ RowingSeatAdaptiveTriggerComponent:
     Offset: '0xc0'
     Size: '0x3'
     Type: struct AdaptiveTriggerEffectMode_Feedback
-  - Name: pad0x5_HV3SA[0x5]
+  - Name: pad0x5_O0PCA[0x5]
     Offset: '0xc3'
     Size: '0x5'
     Type: char
@@ -644,7 +652,7 @@ RowingSeatAdaptiveTriggerComponent:
   Super: AdaptiveTriggerComponent
 ScrapeableComponent:
   Attributes:
-  - Name: pad0x8_75UC9[0x8]
+  - Name: pad0x8_BLNLF[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -652,7 +660,7 @@ ScrapeableComponent:
     Offset: '0xc0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_ZU0AH[0x4]
+  - Name: pad0x4_4EMO5[0x4]
     Offset: '0xc4'
     Size: '0x4'
     Type: char
@@ -702,7 +710,7 @@ StorageSeat:
     Offset: '0x680'
     Size: '0x8'
     Type: class StorageContainerComponent*
-  - Name: pad0x20_YHTKR[0x20]
+  - Name: pad0x20_JVZUP[0x20]
     Offset: '0x688'
     Size: '0x20'
     Type: char
@@ -754,7 +762,7 @@ TaleQuestWatercraftFunctionLibrary:
   Super: TaleQuestFunctionStepLibrary
 TaleQuestWatercraftService:
   Attributes:
-  - Name: pad0x28_C2XYX[0x28]
+  - Name: pad0x28_TDV1E[0x28]
     Offset: '0x60'
     Size: '0x28'
     Type: char
@@ -770,7 +778,7 @@ TaleQuestWatercraftServiceDesc:
   Super: TaleQuestServiceDesc
 Watercraft:
   Attributes:
-  - Name: pad0x38_78YSB[0x38]
+  - Name: pad0x38_0U1SA[0x38]
     Offset: '0x3a0'
     Size: '0x38'
     Type: char
@@ -782,7 +790,7 @@ Watercraft:
     Offset: '0x3e0'
     Size: '0xc'
     Type: struct WatercraftRolloverCorrector
-  - Name: pad0x4_RA6V0[0x4]
+  - Name: pad0x4_BJJD6[0x4]
     Offset: '0x3ec'
     Size: '0x4'
     Type: char
@@ -826,7 +834,7 @@ Watercraft:
     Offset: '0x4a0'
     Size: '0x1c'
     Type: struct RigidBodyErrorCorrection
-  - Name: pad0x3c_T9VWL[0x3c]
+  - Name: pad0x3c_O9AHY[0x3c]
     Offset: '0x4bc'
     Size: '0x3c'
     Type: char
@@ -862,11 +870,11 @@ Watercraft:
     Offset: '0x573'
     Size: '0x1'
     Type: bool
-  - Name: pad0x4_UO7WC[0x4]
+  - Name: pad0x4_3YI98[0x4]
     Offset: '0x574'
     Size: '0x4'
     Type: char
-  - Name: pad0x190_58BA5[0x190]
+  - Name: pad0x190_I3N4V[0x190]
     Offset: '0x578'
     Size: '0x190'
     Type: char
@@ -882,7 +890,7 @@ WatercraftBlueprintFunctionLibrary:
   Super: BlueprintFunctionLibrary
 WatercraftService:
   Attributes:
-  - Name: pad0x8_57IHT[0x8]
+  - Name: pad0x8_DB2YW[0x8]
     Offset: '0x3a0'
     Size: '0x8'
     Type: char
@@ -898,7 +906,7 @@ WatercraftServiceInterface:
   Super: Interface
 WatercraftSpawnData:
   Attributes:
-  - Name: pad0x20_HP4TV[0x20]
+  - Name: pad0x20_7XQPN[0x20]
     Offset: '0x88'
     Size: '0x20'
     Type: char
@@ -910,7 +918,7 @@ WatercraftSpawnData:
     Offset: '0xb0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_SIENP[0x4]
+  - Name: pad0x4_TTWRB[0x4]
     Offset: '0xb4'
     Size: '0x4'
     Type: char
@@ -920,7 +928,7 @@ WatercraftSpawnData:
   Super: ItemSpawnData
 WatercraftTrackerComponent:
   Attributes:
-  - Name: pad0x8_UAD41[0x8]
+  - Name: pad0x8_8A6NO[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char

@@ -1,34 +1,22 @@
 {
-  "EventPortableHarpoonProjectileClientStateChanged": {
-    "ClassSize": "0x3",
-    "Attributes": [
-      {
-        "Name": "PreviousProjectileState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ProjectileState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "IsPredicted",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x2"
-      }
-    ]
-  },
   "PortableHarpoonTelemetryTemporaryData": {
     "ClassSize": "0x14",
     "Attributes": [
       {
-        "Name": "pad0x14_TH321[0x14]",
+        "Name": "pad0x14_PX99T[0x14]",
         "Type": "char",
         "Size": "0x14",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventPortableHarpoonHarpoonedItem": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "HarpoonedItem",
+        "Type": "class Actor*",
+        "Size": "0x8",
         "Offset": "0x0"
       }
     ]
@@ -60,7 +48,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_81IF7[0x7]",
+        "Name": "pad0x7_VQ5R2[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
@@ -120,7 +108,7 @@
         "Offset": "0x4d"
       },
       {
-        "Name": "pad0x2_MZ6JD[0x2]",
+        "Name": "pad0x2_PNVTZ[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x4e"
@@ -156,7 +144,7 @@
         "Offset": "0x84"
       },
       {
-        "Name": "pad0x3_37TLK[0x3]",
+        "Name": "pad0x3_12Q6A[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x85"
@@ -186,21 +174,10 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x7_V65ER[0x7]",
+        "Name": "pad0x7_PC1FM[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xb9"
-      }
-    ]
-  },
-  "EventPortableHarpoonHarpoonedItem": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "HarpoonedItem",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
       }
     ]
   },
@@ -220,7 +197,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_8K6L5[0x7]",
+        "Name": "pad0x7_YN6RB[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
@@ -248,6 +225,29 @@
         "Type": "class PhysicalMaterial*",
         "Size": "0x8",
         "Offset": "0x30"
+      }
+    ]
+  },
+  "EventPortableHarpoonProjectileClientStateChanged": {
+    "ClassSize": "0x3",
+    "Attributes": [
+      {
+        "Name": "PreviousProjectileState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ProjectileState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "IsPredicted",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x2"
       }
     ]
   },

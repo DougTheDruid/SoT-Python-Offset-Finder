@@ -2,28 +2,28 @@
 # https://github.com/DougTheDruid
 ForeignControlPointData:
   Attributes:
-  - Name: pad0x1_R1WS8[0x1]
+  - Name: pad0x1_JLEDW[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 ForeignSplineSegmentData:
   Attributes:
-  - Name: pad0x1_KPEEB[0x1]
+  - Name: pad0x1_V9KBO[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 ForeignWorldSplineData:
   Attributes:
-  - Name: pad0x1_95927[0x1]
+  - Name: pad0x1_SVZ8G[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 GizmoSelectData:
   Attributes:
-  - Name: pad0x50_AWOLT[0x50]
+  - Name: pad0x50_M527L[0x50]
     Offset: '0x0'
     Size: '0x50'
     Type: char
@@ -57,7 +57,7 @@ GrassVariety:
     Offset: '0xc'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_I27FL[0x3]
+  - Name: pad0x3_74UTK[0x3]
     Offset: '0xd'
     Size: '0x3'
     Type: char
@@ -81,7 +81,7 @@ GrassVariety:
     Offset: '0x20'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_UNG3K[0x3]
+  - Name: pad0x3_3IFEY[0x3]
     Offset: '0x21'
     Size: '0x3'
     Type: char
@@ -100,14 +100,14 @@ GrassVariety:
   ClassSize: '0x30'
 LandscapeEditorLayerSettings:
   Attributes:
-  - Name: pad0x1_NIPS6[0x1]
+  - Name: pad0x1_EHH14[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 LandscapeImportLayerInfo:
   Attributes:
-  - Name: pad0x1_S7TZP[0x1]
+  - Name: pad0x1_K5TVV[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -140,7 +140,7 @@ LandscapeSplineConnection:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_XK6RH[0x7]
+  - Name: pad0x7_UK4LF[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
@@ -186,7 +186,7 @@ LandscapeSplineMeshEntry:
     Offset: '0x18'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_KBP6X[0x3]
+  - Name: pad0x3_HW1G5[0x3]
     Offset: '0x19'
     Size: '0x3'
     Type: char
@@ -198,7 +198,7 @@ LandscapeSplineMeshEntry:
     Offset: '0x24'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_98TB9[0x3]
+  - Name: pad0x3_1V714[0x3]
     Offset: '0x25'
     Size: '0x3'
     Type: char
@@ -218,7 +218,7 @@ LandscapeSplineMeshEntry:
     Offset: '0x36'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1_SUYGY[0x1]
+  - Name: pad0x1_GFBYW[0x1]
     Offset: '0x37'
     Size: '0x1'
     Type: char
@@ -237,7 +237,7 @@ LandscapeSplineSegmentConnection:
     Offset: '0xc'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_9UQS6[0x4]
+  - Name: pad0x4_9FL46[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -248,7 +248,7 @@ LandscapeWeightmapUsage:
     Offset: '0x0'
     Size: '0x8'
     Type: class LandscapeComponent*
-  - Name: pad0x18_EUOAO[0x18]
+  - Name: pad0x18_2W75V[0x18]
     Offset: '0x8'
     Size: '0x18'
     Type: char
@@ -263,7 +263,7 @@ LayerBlendInput:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_ZQ294[0x7]
+  - Name: pad0x7_17JSG[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
@@ -287,7 +287,7 @@ LayerBlendInput:
     Offset: '0x90'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_8Y43B[0x4]
+  - Name: pad0x4_3R9KY[0x4]
     Offset: '0x94'
     Size: '0x4'
     Type: char
@@ -310,7 +310,7 @@ WeightmapLayerAllocationInfo:
     Offset: '0xa'
     Size: '0x1'
     Type: byte
-  - Name: pad0x5_H2MOS[0x5]
+  - Name: pad0x5_Q1O9M[0x5]
     Offset: '0xb'
     Size: '0x5'
     Type: char

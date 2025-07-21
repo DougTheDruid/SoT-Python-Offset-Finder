@@ -6,6 +6,32 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "DebugMenuComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x108",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x28_TG5MA[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "DebugMenuInstance",
+        "Type": "class DebugMenu*",
+        "Size": "0x8",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "pad0x20_Y331V[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0xe8"
+      }
+    ]
+  },
   "DebugMenuDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x68",
@@ -38,32 +64,6 @@
       }
     ]
   },
-  "DebugMenuComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x108",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x28_XZ8PC[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "DebugMenuInstance",
-        "Type": "class DebugMenu*",
-        "Size": "0x8",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "pad0x20_N7PCG[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0xe8"
-      }
-    ]
-  },
   "DebugMenuTestFunctions": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
@@ -73,14 +73,14 @@
   },
   "DebugMenu": {
     "Super": "Actor",
-    "FullSize": "0x450",
+    "FullSize": "0x478",
     "InheritedSize": "0x3a0",
-    "ClassSize": "0xb0",
+    "ClassSize": "0xd8",
     "Attributes": [
       {
-        "Name": "pad0xb0_KCJNC[0xb0]",
+        "Name": "pad0xd8_1220T[0xd8]",
         "Type": "char",
-        "Size": "0xb0",
+        "Size": "0xd8",
         "Offset": "0x3a0"
       }
     ]
@@ -92,7 +92,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_R091Y[0x8]",
+        "Name": "pad0x8_6VZ72[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x108"

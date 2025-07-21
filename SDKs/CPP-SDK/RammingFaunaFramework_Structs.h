@@ -16,7 +16,7 @@ public:
 struct EventFaunaRammerComponentChargeAttack
 {
 public:
-	char                                                         pad0x8_OVMUM[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_XI8IO[0x8];                                 // 0x0(0x8)
 };
 
 

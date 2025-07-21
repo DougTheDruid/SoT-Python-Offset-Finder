@@ -6,11 +6,11 @@
 #include "RevivingAnimation_Structs.h"
 
 
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class ReviveGhostAnimationData: public AnimationData
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class ReviveGhostAnimationDataAsset: public DataAsset
 {
 public:
-	class ReviveGhostAnimationDataAsset*                         ReviveAnimationsDataAsset;                         // 0x28(0x8)
+	struct ReviveGhostAnimations                                 Animations;                                        // 0x28(0x28)
 };
 
 
@@ -18,20 +18,20 @@ public:
 class ReviveGhostAnimationInstance: public AnimInstance
 {
 public:
-	char                                                         pad0x8_VPESC[0x8];                                 // 0x440(0x8)
+	char                                                         pad0x8_1N8JU[0x8];                                 // 0x440(0x8)
 	struct ReviveGhostAnimations                                 ReviveAnimations;                                  // 0x448(0x28)
 	bool                                                         FullyInitialised;                                  // 0x470(0x1)
 	bool                                                         FullyRevived;                                      // 0x471(0x1)
 	bool                                                         FromSwimming;                                      // 0x472(0x1)
-	char                                                         pad0x1d_XL8VT[0x1d];                               // 0x473(0x1d)
+	char                                                         pad0x1d_WLMXX[0x1d];                               // 0x473(0x1d)
 };
 
 
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class ReviveGhostAnimationDataAsset: public DataAsset
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class ReviveGhostAnimationData: public AnimationData
 {
 public:
-	struct ReviveGhostAnimations                                 Animations;                                        // 0x28(0x28)
+	class ReviveGhostAnimationDataAsset*                         ReviveAnimationsDataAsset;                         // 0x28(0x8)
 };
 
 

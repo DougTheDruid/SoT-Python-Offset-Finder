@@ -1,5 +1,5 @@
 {
-  "PlayerPersistentProxySpawnedEvent": {
+  "PlayerPersistentProxyRemovedEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
@@ -32,14 +32,14 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_V631Y[0x4]",
+        "Name": "pad0x4_5CJ85[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
       }
     ]
   },
-  "PlayerPersistentProxyRemovedEvent": {
+  "PlayerPersistentProxySpawnedEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {

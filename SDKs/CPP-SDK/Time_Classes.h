@@ -7,21 +7,7 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DebugTimeInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class TimeFormatterInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TimeInterface: public Interface
 {
 public:
 };
@@ -41,13 +27,34 @@ public:
 };
 
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TimeBlueprintLibrary: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DebugTimeInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TimeInterface: public Interface
+{
+public:
+};
+
+
 // Size 0x130 (Full Size[0x4d0] - InheritedSize[0x3a0]
 class TimeService: public Actor
 {
 public:
-	char                                                         pad0x38_U8QI7[0x38];                               // 0x3a0(0x38)
+	char                                                         pad0x38_TUNMJ[0x38];                               // 0x3a0(0x38)
 	struct Timespan                                              GameWorldTimeOffset;                               // 0x3d8(0x8)
-	char                                                         pad0x4_D4886[0x4];                                 // 0x3e0(0x4)
+	char                                                         pad0x4_2YAUT[0x4];                                 // 0x3e0(0x4)
 	double                                                       ServiceTimeQueryRapidFrequencyOffsetMax;           // 0x3f0(0x8)
 	float                                                        ServiceTimeQueryRapidFrequencyInSeconds;           // 0x3f8(0x4)
 	float                                                        ServiceTimeQueryFrequencyInSeconds;                // 0x3fc(0x4)
@@ -61,14 +68,7 @@ public:
 	float                                                        MaxLocalTimeUpdateAdjustPercentageToSpeedUp;       // 0x41c(0x4)
 	float                                                        MaxTimeJumpToCatchUpInSeconds;                     // 0x420(0x4)
 	struct ReplicatedAuthoritativeTime                           ReplicatedServerTime;                              // 0x470(0x10)
-	char                                                         pad0x50_OPUEO[0x50];                               // 0x480(0x50)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TimeBlueprintLibrary: public BlueprintFunctionLibrary
-{
-public:
+	char                                                         pad0x50_1OLCA[0x50];                               // 0x480(0x50)
 };
 
 
@@ -76,7 +76,7 @@ public:
 class DebugTimeService: public TimeService
 {
 public:
-	char                                                         pad0x8_0JGWJ[0x8];                                 // 0x4d0(0x8)
+	char                                                         pad0x8_CR1AL[0x8];                                 // 0x4d0(0x8)
 };
 
 
@@ -84,7 +84,7 @@ public:
 class CustomizableTimeService: public DebugTimeService
 {
 public:
-	char                                                         pad0x8_HSZMD[0x8];                                 // 0x4d8(0x8)
+	char                                                         pad0x8_3X3Y5[0x8];                                 // 0x4d8(0x8)
 };
 
 

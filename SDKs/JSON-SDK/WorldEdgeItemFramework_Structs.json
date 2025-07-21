@@ -1,4 +1,15 @@
 {
+  "WorldEdgeItemServiceBatchCompletedEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "BatchId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "WorldEdgeItemBatchTelemetryEvent": {
     "ClassSize": "0x1c",
     "Attributes": [
@@ -36,17 +47,6 @@
         "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0xc"
-      }
-    ]
-  },
-  "WorldEdgeItemServiceBatchCompletedEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "BatchId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
       }
     ]
   },

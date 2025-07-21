@@ -30,7 +30,7 @@ BarrelsOfPlentySpawnProxy:
     Offset: '0x3a0'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x18_CMN83[0x18]
+  - Name: pad0x18_E65VW[0x18]
     Offset: '0x3a8'
     Size: '0x18'
     Type: char

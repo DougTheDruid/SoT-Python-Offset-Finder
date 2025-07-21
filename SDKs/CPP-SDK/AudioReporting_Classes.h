@@ -11,7 +11,34 @@ class AudioReportingComponent: public ActorComponent
 {
 public:
 	class PlayerController*                                      CachedOwningController;                            // 0xb8(0x8)
-	char                                                         pad0x170_YDHMQ[0x170];                             // 0xc0(0x170)
+	char                                                         pad0x170_2G5JL[0x170];                             // 0xc0(0x170)
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class AudioReportingSettings: public DataAsset
+{
+public:
+	int                                                          MaxReactionCount;                                  // 0x28(0x4)
+	float                                                        AudioVeryCloseThresholdDistance;                   // 0x2c(0x4)
+	float                                                        AttenuationFilterScaler;                           // 0x30(0x4)
+	char                                                         pad0x4_GEDW3[0x4];                                 // 0x34(0x4)
+	TArray<class EventReactionsDataAsset*>                       EventReactionDataAssets;                           // 0x38(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AudioReportingDebugMenuGenerator: public DebugMenuEntryGenerator
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class EventReactionsDataAsset: public DataAsset
+{
+public:
+	TArray<struct EventReactionDesc>                             Reactions;                                         // 0x28(0x10)
 };
 
 
@@ -27,34 +54,7 @@ public:
 class AudioReportReaction: public Object
 {
 public:
-	char                                                         pad0x8_BNMP6[0x8];                                 // 0x28(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AudioReportingDebugMenuGenerator: public DebugMenuEntryGenerator
-{
-public:
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class AudioReportingSettings: public DataAsset
-{
-public:
-	int                                                          MaxReactionCount;                                  // 0x28(0x4)
-	float                                                        AudioVeryCloseThresholdDistance;                   // 0x2c(0x4)
-	float                                                        AttenuationFilterScaler;                           // 0x30(0x4)
-	char                                                         pad0x4_G701K[0x4];                                 // 0x34(0x4)
-	TArray<class EventReactionsDataAsset*>                       EventReactionDataAssets;                           // 0x38(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class EventReactionsDataAsset: public DataAsset
-{
-public:
-	TArray<struct EventReactionDesc>                             Reactions;                                         // 0x28(0x10)
+	char                                                         pad0x8_D53RL[0x8];                                 // 0x28(0x8)
 };
 
 

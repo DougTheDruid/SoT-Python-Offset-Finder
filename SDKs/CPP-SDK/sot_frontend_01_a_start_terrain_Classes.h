@@ -8,9 +8,9 @@ class sot_frontend_01_a_start_terrain_C: public LevelScriptActor
 {
 public:
 	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3a8(0x8)
-	char                                                         pad0x6f66e250_0PT9G[0x6f66e250];                   // 0x3b0(0x6f66e250)
+	char                                                         pad0x6bcd9650_WTURW[0x6bcd9650];                   // 0x3b0(0x6bcd9650)
 	bool                                                         IsPlaying;                                         // 0x3b0(0x1)
-	char                                                         pad0x7_5DVIE[0x7];                                 // 0x3b1(0x7)
+	char                                                         pad0x7_S4PG8[0x7];                                 // 0x3b1(0x7)
 	class MatineeActor*                                          BakedOpenSeqCam_ExecuteUbergraph_sot_frontend_01_a_start_terrain_RefProperty; // 0x3b8(0x8)
 	blueprintgeneratedclass BP_Audio_Play_Wwise_Event_Function_C* BP_Audio_Play_Wwise_Event_Function_C_2_ExecuteUbergraph_sot_frontend_01_a_start_terrain_RefProperty; // 0x3c0(0x8)
 	class CameraActor*                                           IntroCam_ExecuteUbergraph_sot_frontend_01_a_start_terrain_RefProperty; // 0x3c8(0x8)

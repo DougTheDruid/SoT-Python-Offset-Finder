@@ -7,7 +7,7 @@
 class AggregateOpenOrderLogsCommandlet: public Commandlet
 {
 public:
-	char                                                         pad0x8_Z2PVA[0x8];                                 // 0x80(0x8)
+	char                                                         pad0x8_682OB[0x8];                                 // 0x80(0x8)
 };
 
 
@@ -18,12 +18,12 @@ public:
 	int                                                          DataSizeSaveIncrement;                             // 0x38(0x4)
 	float                                                        TimeSaveIncrement;                                 // 0x3c(0x4)
 	char                                                         DataSource;                                        // 0x40(0x1)
-	char                                                         pad0x7_N76O0[0x7];                                 // 0x41(0x7)
+	char                                                         pad0x7_OZM6A[0x7];                                 // 0x41(0x7)
 	TArray<String>                                               SandboxesToEnableByDefault;                        // 0x48(0x10)
 	struct FString                                               OpenOrderLogDirectory;                             // 0x58(0x10)
 	struct FString                                               OutputOrderLogDirectory;                           // 0x68(0x10)
 	int                                                          NumberOfLogsToAggregate;                           // 0x78(0x4)
-	char                                                         pad0x14_1G0NR[0x14];                               // 0x7c(0x14)
+	char                                                         pad0x14_77I6V[0x14];                               // 0x7c(0x14)
 };
 
 
@@ -31,7 +31,7 @@ public:
 class RareFileOpenFileHandler: public Class
 {
 public:
-	char                                                         pad0x48_K4SGD[0x48];                               // 0x1c0(0x48)
+	char                                                         pad0x48_EWE6L[0x48];                               // 0x1c0(0x48)
 };
 
 

@@ -6,7 +6,7 @@
     "ClassSize": "0x310",
     "Attributes": [
       {
-        "Name": "pad0x10_4XPQ8[0x10]",
+        "Name": "pad0x10_GMOX2[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3a0"
@@ -36,7 +36,7 @@
         "Offset": "0x3c8"
       },
       {
-        "Name": "pad0xa0_0ISHL[0xa0]",
+        "Name": "pad0xa0_W7EIB[0xa0]",
         "Type": "char",
         "Size": "0xa0",
         "Offset": "0x3d0"
@@ -72,7 +72,7 @@
         "Offset": "0x4b0"
       },
       {
-        "Name": "pad0x1f0_XLACA[0x1f0]",
+        "Name": "pad0x1f0_HH4E0[0x1f0]",
         "Type": "char",
         "Size": "0x1f0",
         "Offset": "0x4c0"
@@ -116,7 +116,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0xe0_U78IB[0xe0]",
+        "Name": "pad0xe0_TNQGM[0xe0]",
         "Type": "char",
         "Size": "0xe0",
         "Offset": "0x48"
@@ -128,7 +128,7 @@
         "Offset": "0x128"
       },
       {
-        "Name": "pad0x14_9VN4I[0x14]",
+        "Name": "pad0x14_AKU9G[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0x130"
@@ -140,10 +140,24 @@
         "Offset": "0x144"
       },
       {
-        "Name": "pad0x10_HPU27[0x10]",
+        "Name": "pad0x10_AGJQX[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x148"
+      }
+    ]
+  },
+  "AIShipBattleGameEventOnDemandArrivalTunnelWorker": {
+    "Super": "GameEventOnDemandArrivalTunnelWorkerBase",
+    "FullSize": "0x168",
+    "InheritedSize": "0x158",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_DQRFW[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x158"
       }
     ]
   },
@@ -160,7 +174,7 @@
         "Offset": "0x158"
       },
       {
-        "Name": "pad0x17_QCN88[0x17]",
+        "Name": "pad0x17_SL0E8[0x17]",
         "Type": "char",
         "Size": "0x17",
         "Offset": "0x159"
@@ -172,24 +186,10 @@
         "Offset": "0x170"
       },
       {
-        "Name": "pad0x14_N6741[0x14]",
+        "Name": "pad0x14_IC3DK[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0x174"
-      }
-    ]
-  },
-  "AIShipBattleGameEventOnDemandArrivalTunnelWorker": {
-    "Super": "GameEventOnDemandArrivalTunnelWorkerBase",
-    "FullSize": "0x168",
-    "InheritedSize": "0x158",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_6MJ7G[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x158"
       }
     ]
   },
@@ -200,9 +200,23 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x18_Z4YRV[0x18]",
+        "Name": "pad0x18_I1GTA[0x18]",
         "Type": "char",
         "Size": "0x18",
+        "Offset": "0x188"
+      }
+    ]
+  },
+  "AshenLordEventOnDemandArrivalTunnelWorker": {
+    "Super": "IslandBasedGameEventOnDemandArrivalTunnelWorker",
+    "FullSize": "0x198",
+    "InheritedSize": "0x188",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_X02N6[0x10]",
+        "Type": "char",
+        "Size": "0x10",
         "Offset": "0x188"
       }
     ]
@@ -214,7 +228,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_1URCL[0x10]",
+        "Name": "pad0x10_J5FWI[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x188"
@@ -228,21 +242,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_AJSH4[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x188"
-      }
-    ]
-  },
-  "AshenLordEventOnDemandArrivalTunnelWorker": {
-    "Super": "IslandBasedGameEventOnDemandArrivalTunnelWorker",
-    "FullSize": "0x198",
-    "InheritedSize": "0x188",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_HX9YX[0x10]",
+        "Name": "pad0x10_PLM3Z[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x188"
@@ -256,21 +256,14 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_Q03SF[0x10]",
+        "Name": "pad0x10_4WP5P[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x188"
       }
     ]
   },
-  "SunkenKingdomTreasuryGameEventOnDemandArrivalTunnelWorker": {
-    "Super": "ContendedResourceGameEventOnDemandArrivalTunnelWorker",
-    "FullSize": "0x1a0",
-    "InheritedSize": "0x1a0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "SeaFortGameEventOnDemandArrivalTunnelWorker": {
+  "SkellyCampGameEventOnDemandArrivalTunnelWorker": {
     "Super": "ContendedResourceGameEventOnDemandArrivalTunnelWorker",
     "FullSize": "0x1a0",
     "InheritedSize": "0x1a0",
@@ -284,7 +277,14 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "SkellyCampGameEventOnDemandArrivalTunnelWorker": {
+  "SunkenKingdomTreasuryGameEventOnDemandArrivalTunnelWorker": {
+    "Super": "ContendedResourceGameEventOnDemandArrivalTunnelWorker",
+    "FullSize": "0x1a0",
+    "InheritedSize": "0x1a0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SeaFortGameEventOnDemandArrivalTunnelWorker": {
     "Super": "ContendedResourceGameEventOnDemandArrivalTunnelWorker",
     "FullSize": "0x1a0",
     "InheritedSize": "0x1a0",

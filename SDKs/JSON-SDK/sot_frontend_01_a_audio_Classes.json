@@ -10,6 +10,12 @@
         "Type": "struct PointerToUberGraphFrame",
         "Size": "0x8",
         "Offset": "0x3a8"
+      },
+      {
+        "Name": "pad0x412f85d0_UM57F[0x412f85d0]",
+        "Type": "char",
+        "Size": "0x412f85d0",
+        "Offset": "0x3b0"
       }
     ]
   },

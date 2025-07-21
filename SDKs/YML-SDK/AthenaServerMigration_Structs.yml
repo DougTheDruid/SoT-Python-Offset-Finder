@@ -2,14 +2,14 @@
 # https://github.com/DougTheDruid
 AddedPendingIncomingGameEventOnDemandCrewEvent:
   Attributes:
-  - Name: pad0x48_KSD4D[0x48]
+  - Name: pad0x48_QU636[0x48]
     Offset: '0x0'
     Size: '0x48'
     Type: char
   ClassSize: '0x48'
 AddedPendingIncomingInvaderCrewEvent:
   Attributes:
-  - Name: pad0x48_8D2FI[0x48]
+  - Name: pad0x48_QSJI3[0x48]
     Offset: '0x0'
     Size: '0x48'
     Type: char
@@ -34,56 +34,56 @@ IncomingMigrationPreventionZone:
   ClassSize: '0xc'
 OutgoingServerMigrationAbortedEvent:
   Attributes:
-  - Name: pad0x20_CAUW4[0x20]
+  - Name: pad0x20_JB7HQ[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
   ClassSize: '0x20'
 OutgoingServerMigrationCompleteEvent:
   Attributes:
-  - Name: pad0x10_RGPWJ[0x10]
+  - Name: pad0x10_PAB8U[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
   ClassSize: '0x10'
 OutgoingServerMigrationCompletedEvent:
   Attributes:
-  - Name: pad0x20_3PJJT[0x20]
+  - Name: pad0x20_IA6JC[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
   ClassSize: '0x20'
 OutgoingServerMigrationStartedEvent:
   Attributes:
-  - Name: pad0x20_O1DDD[0x20]
+  - Name: pad0x20_LCAV8[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
   ClassSize: '0x20'
 PrepareForWorldSwitchRpc:
   Attributes:
-  - Name: pad0x18_H86ZS[0x18]
+  - Name: pad0x18_N8H96[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
   ClassSize: '0x18'
 ServerMigrationAbortEvent:
   Attributes:
-  - Name: pad0x10_VIQOK[0x10]
+  - Name: pad0x10_PNRBJ[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
   ClassSize: '0x10'
 ServerMigrationAboutToStartEvent:
   Attributes:
-  - Name: pad0x20_6E1D3[0x20]
+  - Name: pad0x20_M7757[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
   ClassSize: '0x20'
 ServerMigrationCompleteEvent:
   Attributes:
-  - Name: pad0x1_6IHK5[0x1]
+  - Name: pad0x1_Y7Y62[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -101,7 +101,7 @@ ServerMigrationInstanceEventBase:
   ClassSize: '0x20'
 ServerMigrationReadyToTransferActors:
   Attributes:
-  - Name: pad0x90_YQTFA[0x90]
+  - Name: pad0x90_SV4CW[0x90]
     Offset: '0x0'
     Size: '0x90'
     Type: char
@@ -157,14 +157,14 @@ ServerMigrationRequestEvent:
   ClassSize: '0x60'
 ServerMigrationSetupCompleteEvent:
   Attributes:
-  - Name: pad0x1_YL28C[0x1]
+  - Name: pad0x1_EOLAA[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 ServerMigrationSetupRequestEvent:
   Attributes:
-  - Name: pad0x1_M747L[0x1]
+  - Name: pad0x1_JZN6D[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char

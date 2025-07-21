@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 DeathSelfInteractionComponent:
   Attributes:
-  - Name: pad0x8_OJD0R[0x8]
+  - Name: pad0x8_DSJL3[0x8]
     Offset: '0x140'
     Size: '0x8'
     Type: char
@@ -10,7 +10,7 @@ DeathSelfInteractionComponent:
     Offset: '0x148'
     Size: '0x1'
     Type: bool
-  - Name: pad0x47_ZX7D4[0x47]
+  - Name: pad0x47_0AYWV[0x47]
     Offset: '0x149'
     Size: '0x47'
     Type: char
@@ -26,7 +26,7 @@ PostReviveLocomotionActionStateId:
   Super: ActionStateId
 RevivableAIComponent:
   Attributes:
-  - Name: pad0x18_12F7G[0x18]
+  - Name: pad0x18_80PUC[0x18]
     Offset: '0xb8'
     Size: '0x18'
     Type: char
@@ -38,7 +38,7 @@ RevivableAIComponent:
     Offset: '0xd1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_DQK7C[0x6]
+  - Name: pad0x6_I08HE[0x6]
     Offset: '0xd2'
     Size: '0x6'
     Type: char
@@ -54,57 +54,61 @@ RevivableAIComponent:
     Offset: '0x118'
     Size: '0x8'
     Type: class UClass*
-  - Name: ReviveState
+  - Name: EmoteIdToPlayAfterSuccessfulRevive
     Offset: '0x120'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: ReviveState
+    Offset: '0x128'
     Size: '0x1'
     Type: byte
   - Name: ReviveWindowIsOpen
-    Offset: '0x121'
+    Offset: '0x129'
     Size: '0x1'
     Type: bool
   - Name: OnlyCrewCanReviveFromTheStart
-    Offset: '0x122'
+    Offset: '0x12a'
     Size: '0x1'
     Type: bool
   - Name: OnlyCrewCanRevive
-    Offset: '0x123'
+    Offset: '0x12b'
     Size: '0x1'
     Type: bool
-  - Name: pad0x54_6PQ9Y[0x54]
-    Offset: '0x124'
+  - Name: pad0x54_FHM4U[0x54]
+    Offset: '0x12c'
     Size: '0x54'
     Type: char
   - Name: ReviveTime
-    Offset: '0x178'
+    Offset: '0x180'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_VBZDK[0x4]
-    Offset: '0x17c'
+  - Name: pad0x4_H505V[0x4]
+    Offset: '0x184'
     Size: '0x4'
     Type: char
   - Name: ReviveableRepresentationClass
-    Offset: '0x180'
+    Offset: '0x188'
     Size: '0x8'
     Type: class UClass*
   - Name: RevivableStatus
-    Offset: '0x188'
+    Offset: '0x190'
     Size: '0x20'
     Type: struct Status
   - Name: ReviveableRepresentationActor
-    Offset: '0x1a8'
+    Offset: '0x1b0'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x68_J9MLJ[0x68]
-    Offset: '0x1b0'
+  - Name: pad0x68_DEXTN[0x68]
+    Offset: '0x1b8'
     Size: '0x68'
     Type: char
-  ClassSize: '0x160'
-  FullSize: '0x218'
+  ClassSize: '0x168'
+  FullSize: '0x220'
   InheritedSize: '0xb8'
   Super: ActorComponent
 RevivableRepresentationActor:
   Attributes:
-  - Name: pad0xc8_LYG2A[0xc8]
+  - Name: pad0xc8_40MD5[0xc8]
     Offset: '0x3a0'
     Size: '0xc8'
     Type: char
@@ -124,7 +128,7 @@ ReviveAudioComponent:
     Offset: '0x300'
     Size: '0x8'
     Type: class ReviveEffectsDataAsset*
-  - Name: pad0x18_Q1UXQ[0x18]
+  - Name: pad0x18_LQUQV[0x18]
     Offset: '0x308'
     Size: '0x18'
     Type: char
@@ -134,7 +138,7 @@ ReviveAudioComponent:
   Super: WwiseEmitterComponent
 ReviveComponent:
   Attributes:
-  - Name: pad0x10_XKMLE[0x10]
+  - Name: pad0x10_Y7SLI[0x10]
     Offset: '0x140'
     Size: '0x10'
     Type: char
@@ -154,7 +158,7 @@ ReviveComponent:
     Offset: '0x161'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_7RCPS[0x6]
+  - Name: pad0x6_XUEFN[0x6]
     Offset: '0x162'
     Size: '0x6'
     Type: char
@@ -162,7 +166,7 @@ ReviveComponent:
     Offset: '0x168'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0xc_94564[0xc]
+  - Name: pad0xc_BLTXH[0xc]
     Offset: '0x170'
     Size: '0xc'
     Type: char
@@ -170,7 +174,7 @@ ReviveComponent:
     Offset: '0x17c'
     Size: '0x1'
     Type: bool
-  - Name: pad0xd3_CE6XM[0xd3]
+  - Name: pad0xd3_VK248[0xd3]
     Offset: '0x17d'
     Size: '0xd3'
     Type: char
@@ -178,7 +182,7 @@ ReviveComponent:
     Offset: '0x250'
     Size: '0x20'
     Type: struct Status
-  - Name: pad0x18_6U36O[0x18]
+  - Name: pad0x18_9E0N2[0x18]
     Offset: '0x270'
     Size: '0x18'
     Type: char
@@ -194,7 +198,7 @@ ReviveConditionalStatTrigger:
   Super: ConditionalStatsTriggerType
 ReviveDebugComponent:
   Attributes:
-  - Name: pad0x98_ESM9G[0x98]
+  - Name: pad0x98_0N3I0[0x98]
     Offset: '0xb8'
     Size: '0x98'
     Type: char
@@ -342,7 +346,7 @@ ReviveGhost:
     Offset: '0x4a8'
     Size: '0x8'
     Type: class ReviveAudioComponent*
-  - Name: pad0x8_9K6A1[0x8]
+  - Name: pad0x8_0MUAK[0x8]
     Offset: '0x4b0'
     Size: '0x8'
     Type: char
@@ -350,7 +354,7 @@ ReviveGhost:
     Offset: '0x4b8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_FCORN[0x7]
+  - Name: pad0x7_PSRB4[0x7]
     Offset: '0x4b9'
     Size: '0x7'
     Type: char
@@ -370,7 +374,7 @@ ReviveGhost:
     Offset: '0x4f0'
     Size: '0x38'
     Type: struct ModeSpecificReviveSettings
-  - Name: pad0x8c_Z6GQC[0x8c]
+  - Name: pad0x8c_P6XMJ[0x8c]
     Offset: '0x528'
     Size: '0x8c'
     Type: char
@@ -382,7 +386,7 @@ ReviveGhost:
     Offset: '0x5f0'
     Size: '0xc'
     Type: struct GhostPlayModeParameters
-  - Name: pad0x4_0PWU4[0x4]
+  - Name: pad0x4_5EBYK[0x4]
     Offset: '0x5fc'
     Size: '0x4'
     Type: char
@@ -416,7 +420,7 @@ ReviveSettings:
     Offset: '0x4c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_XJI5H[0x3]
+  - Name: pad0x3_6CHL1[0x3]
     Offset: '0x4d'
     Size: '0x3'
     Type: char
@@ -448,7 +452,7 @@ ReviveSettings:
     Offset: '0x80'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_LNYYB[0x4]
+  - Name: pad0x4_8KMDO[0x4]
     Offset: '0x84'
     Size: '0x4'
     Type: char
@@ -490,7 +494,7 @@ SFXRevivalRepresentationActor:
     Offset: '0x470'
     Size: '0x8'
     Type: class ReviveAudioComponent*
-  - Name: pad0x8_5XPGJ[0x8]
+  - Name: pad0x8_7MC8S[0x8]
     Offset: '0x478'
     Size: '0x8'
     Type: char

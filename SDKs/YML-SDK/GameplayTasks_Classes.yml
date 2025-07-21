@@ -6,7 +6,7 @@ GameplayTask:
     Offset: '0x28'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x28_TXBEQ[0x28]
+  - Name: pad0x28_T25QI[0x28]
     Offset: '0x30'
     Size: '0x28'
     Type: char
@@ -26,7 +26,7 @@ GameplayTaskResource:
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_FQHIV[0x4]
+  - Name: pad0x4_TWM9U[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -34,7 +34,7 @@ GameplayTaskResource:
     Offset: '0x30'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_DKIJ3[0x7]
+  - Name: pad0x7_VHRV0[0x7]
     Offset: '0x31'
     Size: '0x7'
     Type: char
@@ -44,7 +44,7 @@ GameplayTaskResource:
   Super: Object
 GameplayTask_SpawnActor:
   Attributes:
-  - Name: pad0x38_0771T[0x38]
+  - Name: pad0x38_7WL1B[0x38]
     Offset: '0x58'
     Size: '0x38'
     Type: char
@@ -58,7 +58,7 @@ GameplayTask_SpawnActor:
   Super: GameplayTask
 GameplayTask_WaitDelay:
   Attributes:
-  - Name: pad0x18_8BVOK[0x18]
+  - Name: pad0x18_16Q0Y[0x18]
     Offset: '0x58'
     Size: '0x18'
     Type: char
@@ -68,7 +68,7 @@ GameplayTask_WaitDelay:
   Super: GameplayTask
 GameplayTasksComponent:
   Attributes:
-  - Name: pad0x8_HJEAO[0x8]
+  - Name: pad0x8_FX6FO[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -80,11 +80,11 @@ GameplayTasksComponent:
     Offset: '0xd0'
     Size: '0x10'
     Type: TArray<class GameplayTask*>
-  - Name: pad0x28_4VG4W[0x28]
+  - Name: pad0x28_3S8JX[0x28]
     Offset: '0xe0'
     Size: '0x28'
     Type: char
-  - Name: pad0x10_SI2GP[0x10]
+  - Name: pad0x10_DKK3A[0x10]
     Offset: '0x108'
     Size: '0x10'
     Type: char

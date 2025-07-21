@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 FlamesOfFateService:
   Attributes:
-  - Name: pad0x18_V5R5C[0x18]
+  - Name: pad0x18_0T61U[0x18]
     Offset: '0x3a0'
     Size: '0x18'
     Type: char

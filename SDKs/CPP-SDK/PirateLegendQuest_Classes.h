@@ -10,17 +10,21 @@ public:
 };
 
 
-// Size 0x120 (Full Size[0x180] - InheritedSize[0x60]
-class VeilService: public TaleQuestService
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class GetVeilOfTheAncientsStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x20_3SP4D[0x20];                               // 0x60(0x20)
-	class World*                                                 World;                                             // 0x80(0x8)
-	class GameState*                                             GameState;                                         // 0x88(0x8)
-	char                                                         pad0x8_SAD7O[0x8];                                 // 0x90(0x8)
-	class VeilOfTheAncients*                                     TrackedVeil;                                       // 0x98(0x8)
-	class Ship*                                                  Ship;                                              // 0xa0(0x8)
-	char                                                         pad0xd8_TBX9A[0xd8];                               // 0xa8(0xd8)
+};
+
+
+// Size 0x18 (Full Size[0x3e8] - InheritedSize[0x3d0]
+class VeilOfTheAncients: public InteractableBase
+{
+public:
+	float                                                        NumberOfGems;                                      // 0x3d0(0x4)
+	char                                                         pad0x4_OLMXR[0x4];                                 // 0x3d4(0x4)
+	class LockComponent*                                         LockComponent;                                     // 0x3d8(0x8)
+	class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x3e0(0x8)
 };
 
 
@@ -32,21 +36,17 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0x3e8] - InheritedSize[0x3d0]
-class VeilOfTheAncients: public InteractableBase
+// Size 0x120 (Full Size[0x180] - InheritedSize[0x60]
+class VeilService: public TaleQuestService
 {
 public:
-	float                                                        NumberOfGems;                                      // 0x3d0(0x4)
-	char                                                         pad0x4_TNRXK[0x4];                                 // 0x3d4(0x4)
-	class LockComponent*                                         LockComponent;                                     // 0x3d8(0x8)
-	class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x3e0(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class GetVeilOfTheAncientsStep: public TaleQuestStep
-{
-public:
+	char                                                         pad0x20_RAF4A[0x20];                               // 0x60(0x20)
+	class World*                                                 World;                                             // 0x80(0x8)
+	class GameState*                                             GameState;                                         // 0x88(0x8)
+	char                                                         pad0x8_GJI2U[0x8];                                 // 0x90(0x8)
+	class VeilOfTheAncients*                                     TrackedVeil;                                       // 0x98(0x8)
+	class Ship*                                                  Ship;                                              // 0xa0(0x8)
+	char                                                         pad0xd8_K5M82[0xd8];                               // 0xa8(0xd8)
 };
 
 
