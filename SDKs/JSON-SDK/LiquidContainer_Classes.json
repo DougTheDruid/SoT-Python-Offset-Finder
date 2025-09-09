@@ -1,17 +1,31 @@
 {
-  "LiquidContainerService": {
-    "Super": "InteractableService",
-    "FullSize": "0x78",
-    "InheritedSize": "0x70",
-    "ClassSize": "0x8",
+  "LiquidLevelTransferComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x8_GXWOS[0x8]",
+        "Name": "pad0x10_TVBV8[0x10]",
         "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x70"
+        "Size": "0x10",
+        "Offset": "0xb8"
       }
     ]
+  },
+  "LiquidContainerServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "LiquidContainerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "LiquidContainerComponent": {
     "Super": "ActorComponent",
@@ -44,7 +58,7 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x4_EBT6G[0x4]",
+        "Name": "pad0x4_WMPBO[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xdc"
@@ -74,38 +88,24 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x18_V0TDL[0x18]",
+        "Name": "pad0x18_3US3L[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x100"
       }
     ]
   },
-  "LiquidContainerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "LiquidContainerServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "LiquidLevelTransferComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xc8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x10",
+  "LiquidContainerService": {
+    "Super": "InteractableService",
+    "FullSize": "0x78",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x10_6TXMN[0x10]",
+        "Name": "pad0x8_KHWDI[0x8]",
         "Type": "char",
-        "Size": "0x10",
-        "Offset": "0xb8"
+        "Size": "0x8",
+        "Offset": "0x70"
       }
     ]
   },

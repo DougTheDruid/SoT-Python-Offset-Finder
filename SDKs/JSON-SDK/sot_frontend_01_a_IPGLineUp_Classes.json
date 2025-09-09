@@ -12,12 +12,6 @@
         "Offset": "0x3a8"
       },
       {
-        "Name": "pad0x20300570_PQHHB[0x20300570]",
-        "Type": "char",
-        "Size": "0x20300570",
-        "Offset": "0x3b0"
-      },
-      {
         "Name": "shipSelect_CharMarker_ExecuteUbergraph_sot_frontend_01_a_IPGLineUp_RefProperty",
         "Type": "class SkeletalMeshActor*",
         "Size": "0x8",

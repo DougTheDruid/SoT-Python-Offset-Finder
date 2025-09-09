@@ -10,7 +10,7 @@ ActiveStatusEffect:
     Offset: '0x10'
     Size: '0x4'
     Type: struct StatusDescriptor
-  - Name: pad0x4_11M04[0x4]
+  - Name: pad0x4_3W7A5[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -26,7 +26,7 @@ ActiveStatusEffect:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x17_8Y6ZC[0x17]
+  - Name: pad0x17_W5FNH[0x17]
     Offset: '0x39'
     Size: '0x17'
     Type: char
@@ -40,7 +40,7 @@ ApplyStatusEvent:
   ClassSize: '0x20'
 BuffedTargetData:
   Attributes:
-  - Name: pad0x18_82K0R[0x18]
+  - Name: pad0x18_IGPA0[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -66,7 +66,7 @@ DelayedStatusEffect:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_EMGF7[0x4]
+  - Name: pad0x4_IR3EV[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char
@@ -88,14 +88,14 @@ EventAppliedStatusToTargets:
   ClassSize: '0x28'
 EventEnteredSurfaceMaterialStatusZone:
   Attributes:
-  - Name: pad0x10_EAI0I[0x10]
+  - Name: pad0x10_QSH00[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
   ClassSize: '0x10'
 EventExitedSurfaceMaterialStatusZone:
   Attributes:
-  - Name: pad0x1_QBXG9[0x1]
+  - Name: pad0x1_V4IH0[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -192,14 +192,14 @@ EventStatusScreenSpaceParticleEffectStarted:
   ClassSize: '0x8'
 EventStatusSuperSoakerEnded:
   Attributes:
-  - Name: pad0x1_GS0M1[0x1]
+  - Name: pad0x1_75YV3[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 EventStatusSuperSoakerStarted:
   Attributes:
-  - Name: pad0x1_4T2AE[0x1]
+  - Name: pad0x1_YLIDX[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -225,7 +225,7 @@ Status:
     Offset: '0x10'
     Size: '0x4'
     Type: struct StatusDescriptor
-  - Name: pad0xc_TYK77[0xc]
+  - Name: pad0xc_QI1UY[0xc]
     Offset: '0x14'
     Size: '0xc'
     Type: char

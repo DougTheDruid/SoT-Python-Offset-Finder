@@ -3,7 +3,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x48_NR4BR[0x48]",
+        "Name": "pad0x48_ZTHLM[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0x0"
@@ -33,14 +33,14 @@
         "Offset": "0x54"
       },
       {
-        "Name": "LookSensitivityScaler",
+        "Name": "MaxClampedFOV",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x58"
       },
       {
-        "Name": "pad0x4_JTT51[0x4]",
-        "Type": "char",
+        "Name": "LookSensitivityScaler",
+        "Type": "float",
         "Size": "0x4",
         "Offset": "0x5c"
       }

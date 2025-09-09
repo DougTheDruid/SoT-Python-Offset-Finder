@@ -12,31 +12,12 @@ public:
 };
 
 
-// Size 0xa8
-struct UndeployActionRuleVerbiage
-{
-public:
-	struct FText                                                 PlayerIsDockedVerbiage;                            // 0x0(0x38)
-	struct FText                                                 OverheatedVerbiage;                                // 0x38(0x38)
-	struct FText                                                 CanUndeployVerbiage;                               // 0x70(0x38)
-};
-
-
 // Size 0x20
 struct FailedDeploymentTelemetryEvent
 {
 public:
 	struct Guid                                                  DeployableID;                                      // 0x0(0x10)
 	struct Vector                                                Location;                                          // 0x14(0xc)
-};
-
-
-// Size 0x1c
-struct DeployableDeployedTelemetryEvent
-{
-public:
-	struct Guid                                                  DeployableID;                                      // 0x0(0x10)
-	struct Vector                                                Location;                                          // 0x10(0xc)
 };
 
 
@@ -55,6 +36,25 @@ public:
 	struct FText                                                 ProxyPlacementNotLevelVerbiage;                    // 0x1c0(0x38)
 	struct FText                                                 NoFloorUnderProxyForCharacterVerbiage;             // 0x1f8(0x38)
 	struct FText                                                 CanDeployVerbiage;                                 // 0x230(0x38)
+};
+
+
+// Size 0xa8
+struct UndeployActionRuleVerbiage
+{
+public:
+	struct FText                                                 PlayerIsDockedVerbiage;                            // 0x0(0x38)
+	struct FText                                                 OverheatedVerbiage;                                // 0x38(0x38)
+	struct FText                                                 CanUndeployVerbiage;                               // 0x70(0x38)
+};
+
+
+// Size 0x1c
+struct DeployableDeployedTelemetryEvent
+{
+public:
+	struct Guid                                                  DeployableID;                                      // 0x0(0x10)
+	struct Vector                                                Location;                                          // 0x10(0xc)
 };
 
 

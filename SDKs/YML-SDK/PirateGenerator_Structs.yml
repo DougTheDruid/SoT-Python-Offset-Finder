@@ -21,7 +21,7 @@ BlendedSubMeshSpecification:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_YZDC2[0x4]
+  - Name: pad0x4_ECWH2[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -125,7 +125,7 @@ ClothingPart:
     Offset: '0x19'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_EICXO[0x6]
+  - Name: pad0x6_K44VP[0x6]
     Offset: '0x1a'
     Size: '0x6'
     Type: char
@@ -144,7 +144,7 @@ ClothingSlot:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_SY1WE[0x7]
+  - Name: pad0x7_45HCH[0x7]
     Offset: '0x19'
     Size: '0x7'
     Type: char
@@ -223,7 +223,7 @@ IPGBlendRange:
     Offset: '0x10'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_XZ5NU[0x4]
+  - Name: pad0x4_5VP1I[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -261,7 +261,7 @@ IPGBlendingMethod:
     Offset: '0xc'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_BJLVF[0x3]
+  - Name: pad0x3_IFHQI[0x3]
     Offset: '0xd'
     Size: '0x3'
     Type: char
@@ -313,7 +313,7 @@ IPGData:
     Offset: '0x30'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_EOWZ7[0x4]
+  - Name: pad0x4_ZU0W2[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
@@ -369,7 +369,7 @@ IPGSetData:
     Offset: '0x9'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_ZOBR6[0x2]
+  - Name: pad0x2_NSUN0[0x2]
     Offset: '0xa'
     Size: '0x2'
     Type: char
@@ -392,7 +392,7 @@ IPGSetGroup:
     Offset: '0x4'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_2SBD3[0x3]
+  - Name: pad0x3_RKK9G[0x3]
     Offset: '0x5'
     Size: '0x3'
     Type: char
@@ -403,7 +403,7 @@ IPGSetsData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_FP5N6[0x4]
+  - Name: pad0x4_KXREV[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -430,7 +430,7 @@ IPGTestClass:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_JANLS[0x3]
+  - Name: pad0x3_ZAM8P[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -442,7 +442,7 @@ IPGTestClass:
     Offset: '0x20'
     Size: '0xc'
     Type: struct IPGTestSimpleType
-  - Name: pad0x4_EYE75[0x4]
+  - Name: pad0x4_E81JB[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -480,7 +480,7 @@ MaterialReferenceEntry:
     Offset: '0x1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_E2HSK[0x6]
+  - Name: pad0x6_4Z4XW[0x6]
     Offset: '0x2'
     Size: '0x6'
     Type: char
@@ -544,7 +544,7 @@ PirateDescription:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_9T37T[0x3]
+  - Name: pad0x3_CM9XF[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -560,7 +560,7 @@ PirateDescription:
     Offset: '0x9'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_7W4CB[0x2]
+  - Name: pad0x2_13VMK[0x2]
     Offset: '0xa'
     Size: '0x2'
     Type: char
@@ -568,7 +568,7 @@ PirateDescription:
     Offset: '0xc'
     Size: '0x8'
     Type: struct RadialCoordinate
-  - Name: pad0x4_HI5D1[0x4]
+  - Name: pad0x4_5NCSE[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -584,7 +584,7 @@ PirateDescription:
     Offset: '0x38'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_UKD5I[0x4]
+  - Name: pad0x4_EDLU3[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -655,7 +655,7 @@ TextureSwitchEthnicityEntry:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_WNY7W[0x7]
+  - Name: pad0x7_UWEP6[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -670,7 +670,7 @@ TextureSwitchGenderEntry:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_PD04B[0x7]
+  - Name: pad0x7_8LRLR[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -692,7 +692,7 @@ TextureSwitchItemEntry:
   ClassSize: '0x18'
 TextureSwitchParameters:
   Attributes:
-  - Name: pad0x8_R8OST[0x8]
+  - Name: pad0x8_87DNX[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -704,7 +704,7 @@ TextureSwitchParameters:
     Offset: '0x9'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_35ZSY[0x2]
+  - Name: pad0x2_P67BI[0x2]
     Offset: '0xa'
     Size: '0x2'
     Type: char
@@ -720,7 +720,7 @@ TextureSwitchParameters:
     Offset: '0x11'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_TKI8X[0x2]
+  - Name: pad0x2_9FV5V[0x2]
     Offset: '0x12'
     Size: '0x2'
     Type: char
@@ -728,7 +728,7 @@ TextureSwitchParameters:
     Offset: '0x14'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_ZQBB5[0x4]
+  - Name: pad0x4_IL30D[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -740,7 +740,7 @@ TextureSwitchParameters:
     Offset: '0x30'
     Size: '0x10'
     Type: TArray<struct Name>
-  - Name: pad0x18_9KSQG[0x18]
+  - Name: pad0x18_SH17R[0x18]
     Offset: '0x40'
     Size: '0x18'
     Type: char

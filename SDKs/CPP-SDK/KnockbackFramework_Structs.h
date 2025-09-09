@@ -7,7 +7,7 @@
 struct KnockbackableInfo
 {
 public:
-	char                                                         pad0x20_78X6X[0x20];                               // 0x0(0x20)
+	char                                                         pad0x20_VS41F[0x20];                               // 0x0(0x20)
 };
 
 

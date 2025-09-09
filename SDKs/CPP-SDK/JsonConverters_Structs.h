@@ -7,7 +7,7 @@
 struct FastJsonDocumentWrapper
 {
 public:
-	char                                                         pad0x60_WMU8F[0x60];                               // 0x0(0x60)
+	char                                                         pad0x60_G0FOB[0x60];                               // 0x0(0x60)
 };
 
 

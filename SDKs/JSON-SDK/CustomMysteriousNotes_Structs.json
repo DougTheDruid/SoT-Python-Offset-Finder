@@ -1,35 +1,18 @@
 {
-  "CreateMysteriousNoteGameServerResponseModel": {
+  "DestroyMysteriousNoteGameServerRequestModel": {
     "ClassSize": "0x14",
     "Attributes": [
       {
-        "Name": "Success",
-        "Type": "bool",
-        "Size": "0x1",
+        "Name": "PlayerNetGUID",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_OTKX9[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "NoteId",
+        "Name": "NoteGUID",
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x4"
-      }
-    ]
-  },
-  "CustomPlayerNoteList": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Notes",
-        "Type": "TArray<struct NotesRemoteServiceNoteDetailModel>",
-        "Size": "0x10",
-        "Offset": "0x0"
       }
     ]
   },
@@ -43,7 +26,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_HKLS0[0x4]",
+        "Name": "pad0x4_4ATZS[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -73,27 +56,44 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x7_DQPV4[0x7]",
+        "Name": "pad0x7_8MIWU[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x39"
       }
     ]
   },
-  "DestroyMysteriousNoteGameServerRequestModel": {
+  "CreateMysteriousNoteGameServerResponseModel": {
     "ClassSize": "0x14",
     "Attributes": [
       {
-        "Name": "PlayerNetGUID",
-        "Type": "int",
-        "Size": "0x4",
+        "Name": "Success",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x0"
       },
       {
-        "Name": "NoteGUID",
+        "Name": "pad0x3_4JT30[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "NoteId",
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x4"
+      }
+    ]
+  },
+  "CustomPlayerNoteList": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Notes",
+        "Type": "TArray<struct NotesRemoteServiceNoteDetailModel>",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },

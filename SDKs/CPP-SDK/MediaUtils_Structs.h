@@ -22,11 +22,11 @@ struct MediaPlayerOptions
 {
 public:
 	struct MediaPlayerTrackOptions                               Tracks;                                            // 0x0(0x1c)
-	char                                                         pad0x4_MBXYV[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_I8UDT[0x4];                                 // 0x1c(0x4)
 	struct Timespan                                              SeekTime;                                          // 0x20(0x8)
 	char                                                         PlayOnOpen;                                        // 0x28(0x1)
 	char                                                         Loop;                                              // 0x29(0x1)
-	char                                                         pad0x6_TCK19[0x6];                                 // 0x2a(0x6)
+	char                                                         pad0x6_W9REC[0x6];                                 // 0x2a(0x6)
 };
 
 

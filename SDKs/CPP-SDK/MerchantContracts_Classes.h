@@ -6,11 +6,18 @@
 #include "MerchantContracts_Structs.h"
 
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class MerchantContractsBlueprintLibrary: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
 // Size 0x18 (Full Size[0xd0] - InheritedSize[0xb8]
 class PlayerMerchantContractsComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_RE5NH[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_3UUBB[0x8];                                 // 0xb8(0x8)
 	TArray<struct PlayerMerchantContract>                        Contracts;                                         // 0xc0(0x10)
 };
 
@@ -29,27 +36,20 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class MerchantContractsServiceInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class MerchantContractsBlueprintLibrary: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
 // Size 0xb0 (Full Size[0xd8] - InheritedSize[0x28]
 class MerchantContractsService: public Object
 {
 public:
-	char                                                         pad0x8_YVAZJ[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_ELII1[0x8];                                 // 0x28(0x8)
 	TArray<struct MerchantContract>                              Contracts;                                         // 0x30(0x10)
-	char                                                         pad0x98_3BE5M[0x98];                               // 0x40(0x98)
+	char                                                         pad0x98_A4F2J[0x98];                               // 0x40(0x98)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class MerchantContractsServiceInterface: public Interface
+{
+public:
 };
 
 

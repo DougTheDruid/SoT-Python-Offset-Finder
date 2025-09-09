@@ -1,4 +1,77 @@
 {
+  "RegionalAssetCache": {
+    "Super": "Object",
+    "FullSize": "0xd8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "pad0x10_Z9PIP[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "CurrentListAsset",
+        "Type": "class RegionalAssetListDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x98_AE1TG[0x98]",
+        "Type": "char",
+        "Size": "0x98",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "RegionLookupInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "LevelAssetCachingService": {
+    "Super": "Object",
+    "FullSize": "0x70",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x18_09VSB[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "CurrentRegion",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x28_ZKVAF[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "RegionLookupSeaId": {
+    "Super": "Object",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_40MBU[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "RegionalAssetListSetupDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x78",
@@ -6,9 +79,23 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x50_KEL4U[0x50]",
+        "Name": "pad0x50_3750Q[0x50]",
         "Type": "char",
         "Size": "0x50",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "RegionalAssetListDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "RegionAssets",
+        "Type": "TArray<struct StringAssetReference>",
+        "Size": "0x10",
         "Offset": "0x28"
       }
     ]
@@ -27,43 +114,10 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x50_LK4WJ[0x50]",
+        "Name": "pad0x50_SZU9S[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x28"
-      }
-    ]
-  },
-  "RegionLookupInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "LevelAssetCachingService": {
-    "Super": "Object",
-    "FullSize": "0x70",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "pad0x18_5PUX8[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "CurrentRegion",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "pad0x28_9XE94[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x48"
       }
     ]
   },
@@ -74,7 +128,7 @@
     "ClassSize": "0x88",
     "Attributes": [
       {
-        "Name": "pad0x8_PULTA[0x8]",
+        "Name": "pad0x8_OPD0I[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
@@ -86,64 +140,10 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x58_U5K1O[0x58]",
+        "Name": "pad0x58_WH0OR[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0x58"
-      }
-    ]
-  },
-  "RegionalAssetListDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "RegionAssets",
-        "Type": "TArray<struct StringAssetReference>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "RegionLookupSeaId": {
-    "Super": "Object",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_8QKV1[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "RegionalAssetCache": {
-    "Super": "Object",
-    "FullSize": "0xd8",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xb0",
-    "Attributes": [
-      {
-        "Name": "pad0x10_K4YCD[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "CurrentListAsset",
-        "Type": "class RegionalAssetListDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x98_339JS[0x98]",
-        "Type": "char",
-        "Size": "0x98",
-        "Offset": "0x40"
       }
     ]
   },

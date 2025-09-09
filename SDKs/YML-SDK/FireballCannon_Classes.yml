@@ -50,7 +50,7 @@ FireballCannonActivationLever:
     Offset: '0x488'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_Y8Y7Z[0x3]
+  - Name: pad0x3_BWF7X[0x3]
     Offset: '0x489'
     Size: '0x3'
     Type: char
@@ -74,7 +74,7 @@ FireballCannonActivationLever:
     Offset: '0x570'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_OBT1U[0x3]
+  - Name: pad0x3_SOEJJ[0x3]
     Offset: '0x571'
     Size: '0x3'
     Type: char
@@ -82,7 +82,7 @@ FireballCannonActivationLever:
     Offset: '0x574'
     Size: '0x4'
     Type: float
-  - Name: pad0x20_A371K[0x20]
+  - Name: pad0x20_7WQ79[0x20]
     Offset: '0x578'
     Size: '0x20'
     Type: char
@@ -90,7 +90,7 @@ FireballCannonActivationLever:
     Offset: '0x598'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x30_C2I8Y[0x30]
+  - Name: pad0x30_RQ39E[0x30]
     Offset: '0x5a0'
     Size: '0x30'
     Type: char
@@ -100,7 +100,7 @@ FireballCannonActivationLever:
   Super: InteractableBase
 FireballCannonComponent:
   Attributes:
-  - Name: pad0x8_D1MLY[0x8]
+  - Name: pad0x8_3VGGF[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -148,7 +148,7 @@ FireballCannonComponent:
     Offset: '0x110'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_U0F2F[0x7]
+  - Name: pad0x7_N64BX[0x7]
     Offset: '0x111'
     Size: '0x7'
     Type: char
@@ -160,7 +160,7 @@ FireballCannonComponent:
     Offset: '0x169'
     Size: '0x20'
     Type: struct CollisionResponseContainer
-  - Name: pad0x7_YSEA2[0x7]
+  - Name: pad0x7_0O2AD[0x7]
     Offset: '0x189'
     Size: '0x7'
     Type: char
@@ -176,7 +176,7 @@ FireballCannonComponent:
     Offset: '0x1b8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_4VA6J[0x3]
+  - Name: pad0x3_5RBZS[0x3]
     Offset: '0x1b9'
     Size: '0x3'
     Type: char
@@ -208,7 +208,7 @@ FireballCannonComponent:
     Offset: '0x250'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_H7Z8X[0x4]
+  - Name: pad0x4_EVS1P[0x4]
     Offset: '0x254'
     Size: '0x4'
     Type: char
@@ -220,11 +220,11 @@ FireballCannonComponent:
     Offset: '0x260'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_2EEH9[0x7]
+  - Name: pad0x7_M5EVL[0x7]
     Offset: '0x261'
     Size: '0x7'
     Type: char
-  - Name: pad0x78_3VE5H[0x78]
+  - Name: pad0x78_IHDH8[0x78]
     Offset: '0x268'
     Size: '0x78'
     Type: char

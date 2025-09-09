@@ -6,14 +6,6 @@
 #include "ObjectMessaging_Structs.h"
 
 
-// Size 0xa8 (Full Size[0x160] - InheritedSize[0xb8]
-class ObjectMessagingDispatcherComponent: public ActorComponent
-{
-public:
-	char                                                         pad0xa8_4Q9V3[0xa8];                               // 0xb8(0xa8)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class ObjectMessagingFunctions: public BlueprintFunctionLibrary
 {
@@ -21,15 +13,23 @@ public:
 };
 
 
+// Size 0xa8 (Full Size[0x160] - InheritedSize[0xb8]
+class ObjectMessagingDispatcherComponent: public ActorComponent
+{
+public:
+	char                                                         pad0xa8_QS0C7[0xa8];                               // 0xb8(0xa8)
+};
+
+
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ObjectMessagingDispatcherInterface: public Interface
+class ObjectMessagingInterface: public Interface
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ObjectMessagingInterface: public Interface
+class ObjectMessagingDispatcherInterface: public Interface
 {
 public:
 };

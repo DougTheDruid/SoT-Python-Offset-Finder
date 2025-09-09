@@ -6,14 +6,25 @@
 #include "Retraction_Structs.h"
 
 
-// Size 0x60 (Full Size[0x118] - InheritedSize[0xb8]
-class RetractorComponent: public ActorComponent
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class RetractableInterface: public Interface
 {
 public:
-	char                                                         pad0x48_38J2L[0x48];                               // 0xb8(0x48)
-	class SceneComponent*                                        RetractDestinationComponent;                       // 0x100(0x8)
-	class SceneComponent*                                        RetractingComponent;                               // 0x108(0x8)
-	char                                                         pad0x8_KY28Y[0x8];                                 // 0x110(0x8)
+};
+
+
+// Size 0x48 (Full Size[0x100] - InheritedSize[0xb8]
+class RetractableComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x38_0WG6C[0x38];                               // 0xb8(0x38)
+	struct FName                                                 FeatureToggle;                                     // 0xf0(0x8)
+	struct RetractorOrientationAdjustmentFlags                   OrientationAdjustmentOnRetractFlags;               // 0xf8(0x3)
+	char                                                         RetractorBoxAxis;                                  // 0xfb(0x1)
+	bool                                                         ShouldAutoReleaseOnSuccessfulRetract;              // 0xfc(0x1)
+	bool                                                         MigrateAttachedWithRetractor;                      // 0xfd(0x1)
+	bool                                                         WasSimulatingPhysicsBeforeRetract;                 // 0xfe(0x1)
+	char                                                         pad0x1_OQN77[0x1];                                 // 0xff(0x1)
 };
 
 
@@ -24,10 +35,14 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class RetractableInterface: public Interface
+// Size 0x60 (Full Size[0x118] - InheritedSize[0xb8]
+class RetractorComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x48_SB6XR[0x48];                               // 0xb8(0x48)
+	class SceneComponent*                                        RetractDestinationComponent;                       // 0x100(0x8)
+	class SceneComponent*                                        RetractingComponent;                               // 0x108(0x8)
+	char                                                         pad0x8_W52X0[0x8];                                 // 0x110(0x8)
 };
 
 
@@ -38,26 +53,11 @@ public:
 };
 
 
-// Size 0x48 (Full Size[0x100] - InheritedSize[0xb8]
-class RetractableComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x38_L5QOW[0x38];                               // 0xb8(0x38)
-	struct FName                                                 FeatureToggle;                                     // 0xf0(0x8)
-	struct RetractorOrientationAdjustmentFlags                   OrientationAdjustmentOnRetractFlags;               // 0xf8(0x3)
-	char                                                         RetractorBoxAxis;                                  // 0xfb(0x1)
-	bool                                                         ShouldAutoReleaseOnSuccessfulRetract;              // 0xfc(0x1)
-	bool                                                         MigrateAttachedWithRetractor;                      // 0xfd(0x1)
-	bool                                                         WasSimulatingPhysicsBeforeRetract;                 // 0xfe(0x1)
-	char                                                         pad0x1_BCH9B[0x1];                                 // 0xff(0x1)
-};
-
-
 // Size 0x10 (Full Size[0x110] - InheritedSize[0x100]
 class RetractableFloatingBarrelComponent: public RetractableComponent
 {
 public:
-	char                                                         pad0x10_H81F1[0x10];                               // 0x100(0x10)
+	char                                                         pad0x10_JHMYB[0x10];                               // 0x100(0x10)
 };
 
 

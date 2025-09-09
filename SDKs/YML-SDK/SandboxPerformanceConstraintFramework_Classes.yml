@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 SandboxPerformanceConstraintAIMemoryCaptureHelper:
   Attributes:
-  - Name: pad0x10_XAZ7N[0x10]
+  - Name: pad0x10_CBO8X[0x10]
     Offset: '0x3a0'
     Size: '0x10'
     Type: char
-  - Name: AIFormToProcess
+  - Name: AISettingToProcess
     Offset: '0x3b0'
     Size: '0x4'
     Type: int
@@ -18,6 +18,20 @@ SandboxPerformanceConstraintAIMemoryCaptureHelper:
   FullSize: '0x3b8'
   InheritedSize: '0x3a0'
   Super: Actor
+SandboxPerformanceConstraintActivityGroupAsset:
+  Attributes:
+  - Name: SharedResources
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<class SandboxPerformanceConstraintSharedResourceAsset*>
+  - Name: Activities
+    Offset: '0x38'
+    Size: '0x10'
+    Type: TArray<class SandboxPerformanceConstraintActivityResourceAsset*>
+  ClassSize: '0x20'
+  FullSize: '0x48'
+  InheritedSize: '0x28'
+  Super: DataAsset
 SandboxPerformanceConstraintActivityResourceAsset:
   Attributes:
   - Name: ActivityDependencies
@@ -36,7 +50,7 @@ SandboxPerformanceConstraintActivityResourceAsset:
     Offset: '0x60'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_NIEC5[0x3]
+  - Name: pad0x3_W9AH9[0x3]
     Offset: '0x61'
     Size: '0x3'
     Type: char
@@ -48,7 +62,7 @@ SandboxPerformanceConstraintActivityResourceAsset:
     Offset: '0x68'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_ABE0K[0x7]
+  - Name: pad0x7_NVSN1[0x7]
     Offset: '0x69'
     Size: '0x7'
     Type: char
@@ -70,7 +84,7 @@ SandboxPerformanceConstraintConsumerInterface:
   Super: Interface
 SandboxPerformanceConstraintService:
   Attributes:
-  - Name: pad0xc0_3F7PD[0xc0]
+  - Name: pad0xc0_W39PN[0xc0]
     Offset: '0x28'
     Size: '0xc0'
     Type: char
@@ -86,7 +100,7 @@ SandboxPerformanceConstraintService:
     Offset: '0x108'
     Size: '0x8'
     Type: class SandboxPerformanceConstraintServiceAsset*
-  - Name: pad0x68_BP2RJ[0x68]
+  - Name: pad0x68_QUJYV[0x68]
     Offset: '0x110'
     Size: '0x68'
     Type: char
@@ -112,16 +126,12 @@ SandboxPerformanceConstraintServiceAsset:
     Offset: '0x34'
     Size: '0x4'
     Type: float
-  - Name: SharedResources
+  - Name: ActivityGroups
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<class SandboxPerformanceConstraintSharedResourceAsset*>
-  - Name: Activities
-    Offset: '0x48'
-    Size: '0x10'
-    Type: TArray<class SandboxPerformanceConstraintActivityResourceAsset*>
-  ClassSize: '0x30'
-  FullSize: '0x58'
+    Type: TArray<class SandboxPerformanceConstraintActivityGroupAsset*>
+  ClassSize: '0x20'
+  FullSize: '0x48'
   InheritedSize: '0x28'
   Super: DataAsset
 SandboxPerformanceConstraintServiceInterface:
@@ -136,7 +146,7 @@ SandboxPerformanceConstraintSettings:
     Offset: '0x38'
     Size: '0x10'
     Type: struct StringAssetReference
-  - Name: pad0x20_3AH2B[0x20]
+  - Name: pad0x20_HH8FF[0x20]
     Offset: '0x48'
     Size: '0x20'
     Type: char

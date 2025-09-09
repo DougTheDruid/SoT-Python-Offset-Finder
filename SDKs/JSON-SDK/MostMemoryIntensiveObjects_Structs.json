@@ -15,7 +15,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_IQO24[0x4]",
+        "Name": "pad0x4_24UER[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"

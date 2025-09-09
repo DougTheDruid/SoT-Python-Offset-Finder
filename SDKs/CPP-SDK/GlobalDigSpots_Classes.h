@@ -10,11 +10,19 @@
 class GlobalDigSpotService: public Actor
 {
 public:
-	char                                                         pad0x8_A2O0S[0x8];                                 // 0x3a0(0x8)
+	char                                                         pad0x8_ET6KB[0x8];                                 // 0x3a0(0x8)
 	class VoyageDescDataAsset*                                   DefaultVoyageDesc;                                 // 0x3a8(0x8)
 	class PopUpMessageDesc*                                      Notification;                                      // 0x3b0(0x8)
 	class GlobalDigSpotDefinitionList*                           DigSpotDefinitions;                                // 0x3b8(0x8)
-	char                                                         pad0x10_16CR2[0x10];                               // 0x3c0(0x10)
+	char                                                         pad0x10_RCY4D[0x10];                               // 0x3c0(0x10)
+};
+
+
+// Size 0x18 (Full Size[0x408] - InheritedSize[0x3f0]
+class GlobalDigSpotVoyageTriggerActor: public GlobalVoyageTriggerActor
+{
+public:
+	char                                                         pad0x18_EF8VE[0x18];                               // 0x3f0(0x18)
 };
 
 
@@ -30,27 +38,19 @@ public:
 class GlobalDigSpotDebugCheat: public Actor
 {
 public:
-	char                                                         pad0x8_94ZRU[0x8];                                 // 0x3a0(0x8)
-};
-
-
-// Size 0x18 (Full Size[0x408] - InheritedSize[0x3f0]
-class GlobalDigSpotVoyageTriggerActor: public GlobalVoyageTriggerActor
-{
-public:
-	char                                                         pad0x18_3H7N9[0x18];                               // 0x3f0(0x18)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GlobalDigSpotServiceInterface: public Interface
-{
-public:
+	char                                                         pad0x8_Y92P1[0x8];                                 // 0x3a0(0x8)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class GlobalDigSpotDebugCheatInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class GlobalDigSpotServiceInterface: public Interface
 {
 public:
 };

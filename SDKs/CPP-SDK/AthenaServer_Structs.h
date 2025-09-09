@@ -8,7 +8,7 @@ struct IdleTimeTracker
 {
 public:
 	struct Timespan                                              InactivityThreshold;                               // 0x0(0x8)
-	char                                                         pad0x30_56MYB[0x30];                               // 0x8(0x30)
+	char                                                         pad0x30_VZQY5[0x30];                               // 0x8(0x30)
 };
 
 

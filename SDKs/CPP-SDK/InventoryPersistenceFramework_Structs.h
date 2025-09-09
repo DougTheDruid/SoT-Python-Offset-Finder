@@ -11,20 +11,20 @@ public:
 };
 
 
-// Size 0x1
-struct EventPlayerPawnLeavingGame
-{
-public:
-	char                                                         pad0x1_61CDI[0x1];                                 // 0x0(0x1)
-};
-
-
 // Size 0x18
 struct PlayerItemCategorySnapshots
 {
 public:
 	class UClass*                                                ItemCategory;                                      // 0x0(0x8)
 	TArray<struct ItemSnapshot>                                  ItemSnapshots;                                     // 0x8(0x10)
+};
+
+
+// Size 0x1
+struct EventPlayerPawnLeavingGame
+{
+public:
+	char                                                         pad0x1_LIFQN[0x1];                                 // 0x0(0x1)
 };
 
 

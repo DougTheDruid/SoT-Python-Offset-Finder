@@ -1,4 +1,21 @@
 {
+  "ClueDestinationChoice": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Destination",
+        "Type": "class ClueDestinationDescriptor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x8_2WSO7[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "GenderSpecificTextPairings": {
     "ClassSize": "0x70",
     "Attributes": [
@@ -13,34 +30,6 @@
         "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0x38"
-      }
-    ]
-  },
-  "ExistingNPCToPhasedNPC": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "pad0x40_17RJI[0x40]",
-        "Type": "char",
-        "Size": "0x40",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ClueDestinationChoice": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Destination",
-        "Type": "class ClueDestinationDescriptor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x8_XK1AY[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x8"
       }
     ]
   },
@@ -60,10 +49,38 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_5WMYB[0x4]",
+        "Name": "pad0x4_R0J57[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
+      }
+    ]
+  },
+  "ClueDestinationToTextIndex": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "DestinationType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x20_ORA6E[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "ExistingNPCToPhasedNPC": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "pad0x40_B2A67[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x0"
       }
     ]
   },
@@ -83,27 +100,10 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_TZYW2[0x4]",
+        "Name": "pad0x4_K20KS[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x74"
-      }
-    ]
-  },
-  "ClueDestinationToTextIndex": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "DestinationType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x20_75D4E[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x8"
       }
     ]
   },

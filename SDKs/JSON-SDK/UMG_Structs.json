@@ -22,90 +22,8 @@
       }
     ]
   },
-  "MovieScene2DTransformSectionTemplate": {
-    "ClassSize": "0x380",
-    "Attributes": [
-      {
-        "Name": "pad0x18_8L284[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PropertyData",
-        "Type": "struct MovieScenePropertySectionData",
-        "Size": "0x20",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "Translation",
-        "Type": "struct RichCurve",
-        "Size": "0x78",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x78_U2O9H[0x78]",
-        "Type": "char",
-        "Size": "0x78",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "Rotation",
-        "Type": "struct RichCurve",
-        "Size": "0x78",
-        "Offset": "0x128"
-      },
-      {
-        "Name": "Scale",
-        "Type": "struct RichCurve",
-        "Size": "0x78",
-        "Offset": "0x1a0"
-      },
-      {
-        "Name": "pad0x78_MYMY7[0x78]",
-        "Type": "char",
-        "Size": "0x78",
-        "Offset": "0x218"
-      },
-      {
-        "Name": "Shear",
-        "Type": "struct RichCurve",
-        "Size": "0x78",
-        "Offset": "0x290"
-      },
-      {
-        "Name": "pad0x78_AH3N6[0x78]",
-        "Type": "char",
-        "Size": "0x78",
-        "Offset": "0x308"
-      }
-    ]
-  },
-  "SlateChildSize": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Value",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SizeRule",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "pad0x3_6B7PR[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x5"
-      }
-    ]
-  },
-  "PropertyPathSegment": {
-    "ClassSize": "0x20",
+  "NamedSlotBinding": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "Name",
@@ -114,28 +32,10 @@
         "Offset": "0x0"
       },
       {
-        "Name": "ArrayIndex",
-        "Type": "int",
-        "Size": "0x4",
+        "Name": "Content",
+        "Type": "class Widget*",
+        "Size": "0x8",
         "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x4_6FNOG[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "Struct",
-        "Type": "class Struct*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Field",
-        "Type": "class Field*",
-        "Size": "0x8",
-        "Offset": "0x18"
       }
     ]
   },
@@ -149,7 +49,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_UP9HR[0x3]",
+        "Name": "pad0x3_RRQUN[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -161,10 +61,21 @@
         "Offset": "0x4"
       },
       {
-        "Name": "pad0x8_TLI16[0x8]",
+        "Name": "pad0x8_8HM2O[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xc"
+      }
+    ]
+  },
+  "EventReply": {
+    "ClassSize": "0xe8",
+    "Attributes": [
+      {
+        "Name": "pad0xe8_3SKU2[0xe8]",
+        "Type": "char",
+        "Size": "0xe8",
+        "Offset": "0x0"
       }
     ]
   },
@@ -172,7 +83,7 @@
     "ClassSize": "0x218",
     "Attributes": [
       {
-        "Name": "pad0x18_SGAB0[0x18]",
+        "Name": "pad0x18_P6AOJ[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"
@@ -209,88 +120,26 @@
       }
     ]
   },
-  "WidgetTransform": {
-    "ClassSize": "0x1c",
+  "SlateChildSize": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "Translation",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Scale",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Shear",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Angle",
+        "Name": "Value",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "PaintContext": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_D4Z91[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "NamedSlotBinding": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Name",
-        "Type": "struct FName",
-        "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "Content",
-        "Type": "class Widget*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "EventReply": {
-    "ClassSize": "0xe8",
-    "Attributes": [
-      {
-        "Name": "pad0xe8_TA93O[0xe8]",
-        "Type": "char",
-        "Size": "0xe8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "MovieSceneWidgetMaterialSectionTemplate": {
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "pad0x48_2DXKB[0x48]",
-        "Type": "char",
-        "Size": "0x48",
-        "Offset": "0x0"
+        "Name": "SizeRule",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x4"
       },
       {
-        "Name": "BrushPropertyNamePath",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x48"
+        "Name": "pad0x3_LDW5P[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5"
       }
     ]
   },
@@ -322,10 +171,161 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x3_PJ2LY[0x3]",
+        "Name": "pad0x3_C0LM4[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x21"
+      }
+    ]
+  },
+  "MovieSceneWidgetMaterialSectionTemplate": {
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "pad0x48_E05DX[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BrushPropertyNamePath",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "MovieScene2DTransformSectionTemplate": {
+    "ClassSize": "0x380",
+    "Attributes": [
+      {
+        "Name": "pad0x18_20IIE[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PropertyData",
+        "Type": "struct MovieScenePropertySectionData",
+        "Size": "0x20",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Translation",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x78_YJNJ3[0x78]",
+        "Type": "char",
+        "Size": "0x78",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "Rotation",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "Scale",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x1a0"
+      },
+      {
+        "Name": "pad0x78_27BC0[0x78]",
+        "Type": "char",
+        "Size": "0x78",
+        "Offset": "0x218"
+      },
+      {
+        "Name": "Shear",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x290"
+      },
+      {
+        "Name": "pad0x78_EXD9A[0x78]",
+        "Type": "char",
+        "Size": "0x78",
+        "Offset": "0x308"
+      }
+    ]
+  },
+  "PaintContext": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_H8UGX[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "WidgetTransform": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Name": "Translation",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Scale",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Shear",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Angle",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "PropertyPathSegment": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Name",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ArrayIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_OEN91[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "Struct",
+        "Type": "class Struct*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Field",
+        "Type": "class Field*",
+        "Size": "0x8",
+        "Offset": "0x18"
       }
     ]
   },
@@ -374,7 +374,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x7_N0TCK[0x7]",
+        "Name": "pad0x7_AW5DC[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x31"

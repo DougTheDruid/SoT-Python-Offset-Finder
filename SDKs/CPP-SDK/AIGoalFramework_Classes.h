@@ -6,26 +6,16 @@
 #include "AIGoalFramework_Structs.h"
 
 
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class AIGoal: public Object
-{
-public:
-	class BehaviorTree*                                          BehaviorTree;                                      // 0x28(0x8)
-	class UClass*                                                WhileActiveActivityType;                           // 0x30(0x8)
-	char                                                         pad0x8_Z0VYL[0x8];                                 // 0x38(0x8)
-};
-
-
 // Size 0x60 (Full Size[0x118] - InheritedSize[0xb8]
 class AIGoalProcessorComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_B8299[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_0QV6A[0x8];                                 // 0xb8(0x8)
 	TArray<class AIGoal*>                                        Goals;                                             // 0xc0(0x10)
 	class AIGoalAssetList*                                       AIGoalAssetList;                                   // 0xd0(0x8)
 	class AIGoal*                                                ActiveGoal;                                        // 0xd8(0x8)
 	TArray<class AIGoalAssetList*>                               AdditionalGoalLists;                               // 0xe0(0x10)
-	char                                                         pad0x28_GC991[0x28];                               // 0xf0(0x28)
+	char                                                         pad0x28_EFHWJ[0x28];                               // 0xf0(0x28)
 };
 
 
@@ -40,10 +30,17 @@ public:
 class AIAreaOfOperationComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_8TRHX[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_NYGIH[0x8];                                 // 0xb8(0x8)
 	bool                                                         UseAreaOfOperationOnSpawn;                         // 0xc0(0x1)
-	char                                                         pad0x3_ZFTDK[0x3];                                 // 0xc1(0x3)
+	char                                                         pad0x3_2VC5N[0x3];                                 // 0xc1(0x3)
 	float                                                        InitialRadius;                                     // 0xc4(0x4)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AIAreaOfOperationInterface: public Interface
+{
+public:
 };
 
 
@@ -55,10 +52,13 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AIAreaOfOperationInterface: public Interface
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class AIGoal: public Object
 {
 public:
+	class BehaviorTree*                                          BehaviorTree;                                      // 0x28(0x8)
+	class UClass*                                                WhileActiveActivityType;                           // 0x30(0x8)
+	char                                                         pad0x8_2I6PA[0x8];                                 // 0x38(0x8)
 };
 
 

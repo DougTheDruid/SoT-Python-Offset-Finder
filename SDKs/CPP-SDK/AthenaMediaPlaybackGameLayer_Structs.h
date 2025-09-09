@@ -9,23 +9,7 @@ struct VideoPlaybackStateEvent
 public:
 	struct FString                                               MediaTextureName;                                  // 0x0(0x10)
 	char                                                         State;                                             // 0x10(0x1)
-	char                                                         pad0x7_LOHVV[0x7];                                 // 0x11(0x7)
-};
-
-
-// Size 0x10
-struct VideoPlaybackStartEvent
-{
-public:
-	struct FString                                               MediaTextureName;                                  // 0x0(0x10)
-};
-
-
-// Size 0x10
-struct VideoPlaybackPauseEvent
-{
-public:
-	struct FString                                               MediaTextureName;                                  // 0x0(0x10)
+	char                                                         pad0x7_7O0TZ[0x7];                                 // 0x11(0x7)
 };
 
 
@@ -39,6 +23,14 @@ public:
 };
 
 
+// Size 0x10
+struct VideoPlaybackStartEvent
+{
+public:
+	struct FString                                               MediaTextureName;                                  // 0x0(0x10)
+};
+
+
 // Size 0x40
 struct MediaPlayedTelemetryEvent
 {
@@ -47,7 +39,7 @@ public:
 	struct IntPoint                                              LowestResolution;                                  // 0x10(0x8)
 	struct IntPoint                                              MedianResolution;                                  // 0x18(0x8)
 	struct IntPoint                                              HighestResolution;                                 // 0x20(0x8)
-	char                                                         pad0x18_6GYHN[0x18];                               // 0x28(0x18)
+	char                                                         pad0x18_UCID0[0x18];                               // 0x28(0x18)
 };
 
 
@@ -65,6 +57,14 @@ struct VideoPlaybackLoadEvent
 public:
 	struct FString                                               MediaTextureName;                                  // 0x0(0x10)
 	struct FString                                               VideoUri;                                          // 0x10(0x10)
+};
+
+
+// Size 0x10
+struct VideoPlaybackPauseEvent
+{
+public:
+	struct FString                                               MediaTextureName;                                  // 0x0(0x10)
 };
 
 

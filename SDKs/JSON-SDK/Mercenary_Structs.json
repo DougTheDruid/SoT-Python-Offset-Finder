@@ -1,33 +1,4 @@
 {
-  "GiveItemToAITelemetryEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "BootyId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "BootyType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x7_5FT33[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x11"
-      },
-      {
-        "Name": "BootyName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
-  },
   "TakeItemFromAITelemetryEvent": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -44,7 +15,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_PY5J0[0x7]",
+        "Name": "pad0x7_BYYAH[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
@@ -82,6 +53,35 @@
         "Name": "Location",
         "Type": "struct Vector",
         "Size": "0xc",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "GiveItemToAITelemetryEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "BootyId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BootyType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_TMLMI[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "BootyName",
+        "Type": "struct FString",
+        "Size": "0x10",
         "Offset": "0x18"
       }
     ]

@@ -7,7 +7,7 @@
 struct TaleQuestVariableMapMarkType
 {
 public:
-	char                                                         pad0x30_DQ0OZ[0x30];                               // 0x0(0x30)
+	char                                                         pad0x30_D72RD[0x30];                               // 0x0(0x30)
 };
 
 
@@ -16,7 +16,7 @@ struct ChecklistActionProgressTracker
 {
 public:
 	class ChecklistActionData*                                   ActionData;                                        // 0x0(0x8)
-	char                                                         pad0x8_O9D02[0x8];                                 // 0x8(0x8)
+	char                                                         pad0x8_MPXUA[0x8];                                 // 0x8(0x8)
 };
 
 
@@ -24,7 +24,7 @@ public:
 struct TaleQuestVariableTreasureMapItemDescType
 {
 public:
-	char                                                         pad0x30_OACVB[0x30];                               // 0x0(0x30)
+	char                                                         pad0x30_6O7HQ[0x30];                               // 0x0(0x30)
 };
 
 
@@ -33,7 +33,7 @@ struct TaleQuestChecklistItem
 {
 public:
 	TArray<struct ChecklistActionProgressTracker>                ChecklistActions;                                  // 0x0(0x10)
-	char                                                         pad0x40_XI74W[0x40];                               // 0x10(0x40)
+	char                                                         pad0x40_A8DGI[0x40];                               // 0x10(0x40)
 };
 
 

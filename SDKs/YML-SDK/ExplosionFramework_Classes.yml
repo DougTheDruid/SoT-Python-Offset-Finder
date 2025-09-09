@@ -6,7 +6,7 @@ CreateActorInstanceOnExplodeComponent:
     Offset: '0xb8'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x68_XL3J9[0x68]
+  - Name: pad0x68_NRPPI[0x68]
     Offset: '0xc0'
     Size: '0x68'
     Type: char
@@ -15,6 +15,12 @@ CreateActorInstanceOnExplodeComponent:
   InheritedSize: '0xb8'
   Super: ActorComponent
 ExplosionConditionalStatsTrigger:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x30'
+  InheritedSize: '0x30'
+  Super: ConditionalStatsTriggerType
+ExplosionHitShipConditionalStatsTrigger:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x30'
@@ -33,6 +39,12 @@ ExplosionReceiverInterface:
   InheritedSize: '0x28'
   Super: Interface
 ExplosiveComponentInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+ExplosivesServiceInterface:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
@@ -60,7 +72,7 @@ StatusResponseExplodeAfterTime:
     Offset: '0x3c'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_7PPKD[0x8]
+  - Name: pad0x8_AGFW5[0x8]
     Offset: '0x40'
     Size: '0x8'
     Type: char

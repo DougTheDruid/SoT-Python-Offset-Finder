@@ -1,23 +1,10 @@
 {
-  "SandboxPerformanceConstraintSharedResourceAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x40",
+  "SandboxPerformanceConstraintSharedResourceType": {
+    "Super": "Object",
+    "FullSize": "0x28",
     "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "SharedResourceType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "SharedResourceUsage",
-        "Type": "struct SandboxPerformanceConstraintSharedResourceContainer",
-        "Size": "0x10",
-        "Offset": "0x30"
-      }
-    ]
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "SandboxPerformanceConstraintActivityResourceAsset": {
     "Super": "DataAsset",
@@ -50,7 +37,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x3_NIEC5[0x3]",
+        "Name": "pad0x3_W9AH9[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x61"
@@ -68,50 +55,65 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x7_ABE0K[0x7]",
+        "Name": "pad0x7_NVSN1[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x69"
       }
     ]
   },
-  "SandboxPerformanceConstraintService": {
-    "Super": "Object",
-    "FullSize": "0x178",
+  "SandboxPerformanceConstraintSharedResourceAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x40",
     "InheritedSize": "0x28",
-    "ClassSize": "0x150",
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0xc0_3F7PD[0xc0]",
-        "Type": "char",
-        "Size": "0xc0",
+        "Name": "SharedResourceType",
+        "Type": "class UClass*",
+        "Size": "0x8",
         "Offset": "0x28"
       },
       {
-        "Name": "ActivitiesByPriority",
-        "Type": "TArray<struct SandboxPerformanceConstraintActivityContainer>",
+        "Name": "SharedResourceUsage",
+        "Type": "struct SandboxPerformanceConstraintSharedResourceContainer",
         "Size": "0x10",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "ActivitiesScores",
-        "Type": "TArray<struct SandboxPerformanceConstraintActivityScore>",
-        "Size": "0x10",
-        "Offset": "0xf8"
-      },
-      {
-        "Name": "ServiceAsset",
-        "Type": "class SandboxPerformanceConstraintServiceAsset*",
-        "Size": "0x8",
-        "Offset": "0x108"
-      },
-      {
-        "Name": "pad0x68_BP2RJ[0x68]",
-        "Type": "char",
-        "Size": "0x68",
-        "Offset": "0x110"
+        "Offset": "0x30"
       }
     ]
+  },
+  "SandboxPerformanceConstraintAIMemoryCaptureHelper": {
+    "Super": "Actor",
+    "FullSize": "0x3b8",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x10_CBO8X[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "AISettingToProcess",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x3b0"
+      },
+      {
+        "Name": "CommandToProcess",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x3b4"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintConsumerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "SandboxPerformanceConstraintTelemetryInterface": {
     "Super": "Interface",
@@ -133,36 +135,10 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x20_3AH2B[0x20]",
+        "Name": "pad0x20_HH8FF[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x48"
-      }
-    ]
-  },
-  "SandboxPerformanceConstraintAIMemoryCaptureHelper": {
-    "Super": "Actor",
-    "FullSize": "0x3b8",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x10_XAZ7N[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "AIFormToProcess",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x3b0"
-      },
-      {
-        "Name": "CommandToProcess",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x3b4"
       }
     ]
   },
@@ -173,18 +149,11 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "SandboxPerformanceConstraintConsumerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "SandboxPerformanceConstraintServiceAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x58",
+    "FullSize": "0x48",
     "InheritedSize": "0x28",
-    "ClassSize": "0x30",
+    "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "ServerMemoryBudgetInMB",
@@ -211,16 +180,10 @@
         "Offset": "0x34"
       },
       {
-        "Name": "SharedResources",
-        "Type": "TArray<class SandboxPerformanceConstraintSharedResourceAsset*>",
+        "Name": "ActivityGroups",
+        "Type": "TArray<class SandboxPerformanceConstraintActivityGroupAsset*>",
         "Size": "0x10",
         "Offset": "0x38"
-      },
-      {
-        "Name": "Activities",
-        "Type": "TArray<class SandboxPerformanceConstraintActivityResourceAsset*>",
-        "Size": "0x10",
-        "Offset": "0x48"
       }
     ]
   },
@@ -231,12 +194,63 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "SandboxPerformanceConstraintSharedResourceType": {
-    "Super": "Object",
-    "FullSize": "0x28",
+  "SandboxPerformanceConstraintActivityGroupAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x48",
     "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "SharedResources",
+        "Type": "TArray<class SandboxPerformanceConstraintSharedResourceAsset*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Activities",
+        "Type": "TArray<class SandboxPerformanceConstraintActivityResourceAsset*>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintService": {
+    "Super": "Object",
+    "FullSize": "0x178",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x150",
+    "Attributes": [
+      {
+        "Name": "pad0xc0_W39PN[0xc0]",
+        "Type": "char",
+        "Size": "0xc0",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ActivitiesByPriority",
+        "Type": "TArray<struct SandboxPerformanceConstraintActivityContainer>",
+        "Size": "0x10",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "ActivitiesScores",
+        "Type": "TArray<struct SandboxPerformanceConstraintActivityScore>",
+        "Size": "0x10",
+        "Offset": "0xf8"
+      },
+      {
+        "Name": "ServiceAsset",
+        "Type": "class SandboxPerformanceConstraintServiceAsset*",
+        "Size": "0x8",
+        "Offset": "0x108"
+      },
+      {
+        "Name": "pad0x68_QUJYV[0x68]",
+        "Type": "char",
+        "Size": "0x68",
+        "Offset": "0x110"
+      }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

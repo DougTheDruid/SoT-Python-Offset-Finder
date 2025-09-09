@@ -1,32 +1,4 @@
 {
-  "NetMusicZoneActor": {
-    "Super": "Actor",
-    "FullSize": "0x3a8",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "MusicZone",
-        "Type": "class MusicZoneComponent*",
-        "Size": "0x8",
-        "Offset": "0x3a0"
-      }
-    ]
-  },
-  "MusicZoneService": {
-    "Super": "Actor",
-    "FullSize": "0x468",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0xc8",
-    "Attributes": [
-      {
-        "Name": "pad0xc8_FZ59C[0xc8]",
-        "Type": "char",
-        "Size": "0xc8",
-        "Offset": "0x3a0"
-      }
-    ]
-  },
   "MusicZoneComponent": {
     "Super": "SceneComponent",
     "FullSize": "0x3c0",
@@ -34,7 +6,7 @@
     "ClassSize": "0xf0",
     "Attributes": [
       {
-        "Name": "pad0x8_EWO4I[0x8]",
+        "Name": "pad0x8_ZMM6L[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x2d0"
@@ -70,7 +42,7 @@
         "Offset": "0x2f0"
       },
       {
-        "Name": "pad0x7_03QRN[0x7]",
+        "Name": "pad0x7_X5Q1C[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x2f1"
@@ -112,7 +84,7 @@
         "Offset": "0x321"
       },
       {
-        "Name": "pad0x6_P8K1K[0x6]",
+        "Name": "pad0x6_EQXSJ[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x322"
@@ -124,10 +96,24 @@
         "Offset": "0x360"
       },
       {
-        "Name": "pad0x40_6VC4I[0x40]",
+        "Name": "pad0x40_N7RTL[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x380"
+      }
+    ]
+  },
+  "MusicZoneService": {
+    "Super": "Actor",
+    "FullSize": "0x468",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0xc8",
+    "Attributes": [
+      {
+        "Name": "pad0xc8_0WL2L[0xc8]",
+        "Type": "char",
+        "Size": "0xc8",
+        "Offset": "0x3a0"
       }
     ]
   },
@@ -138,45 +124,26 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "NetMusicZoneActor": {
+    "Super": "Actor",
+    "FullSize": "0x3a8",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "MusicZone",
+        "Type": "class MusicZoneComponent*",
+        "Size": "0x8",
+        "Offset": "0x3a0"
+      }
+    ]
+  },
   "MusicZoneServiceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "MusicZoneInterface": {
-    "Super": "EmitterManipulatorInterface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "SynchedMusicZoneComponent": {
-    "Super": "MusicZoneComponent",
-    "FullSize": "0x3f0",
-    "InheritedSize": "0x3c0",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "StartDelayTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3b8"
-      },
-      {
-        "Name": "PlayFromStartTimeMS",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x3bc"
-      },
-      {
-        "Name": "pad0x30_JLX58[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x3c0"
-      }
-    ]
   },
   "AISpawnerMusicZoneComponent": {
     "Super": "MusicZoneComponent",
@@ -209,10 +176,43 @@
         "Offset": "0x3d8"
       },
       {
-        "Name": "pad0x7_7Q65A[0x7]",
+        "Name": "pad0x7_D36H6[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x3d9"
+      }
+    ]
+  },
+  "MusicZoneInterface": {
+    "Super": "EmitterManipulatorInterface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SynchedMusicZoneComponent": {
+    "Super": "MusicZoneComponent",
+    "FullSize": "0x3f0",
+    "InheritedSize": "0x3c0",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "StartDelayTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3b8"
+      },
+      {
+        "Name": "PlayFromStartTimeMS",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x3bc"
+      },
+      {
+        "Name": "pad0x30_1FMXD[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x3c0"
       }
     ]
   },

@@ -1,31 +1,4 @@
 {
-  "EmergentSkeletonRevivedStatTrigger": {
-    "Super": "ConditionalStatsTriggerType",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MercenaryItemInteractionDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "DenyItemDescClasslist",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "DenyItemCategoryClasslist",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
   "MercenaryServiceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
@@ -33,77 +6,12 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "MercenaryService": {
-    "Super": "Actor",
-    "FullSize": "0x3d0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x20_SL6OU[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "MercenaryCleanupDelayTimer",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3c0"
-      },
-      {
-        "Name": "pad0x4_NAZSS[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3c4"
-      },
-      {
-        "Name": "ServiceParams",
-        "Type": "class MercenaryServiceParams*",
-        "Size": "0x8",
-        "Offset": "0x3c8"
-      }
-    ]
-  },
-  "MercenaryCosmeticAssetsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "PreSpawnInAnimation",
-        "Type": "class AnimationAsset*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "PreSpawnInParticleSystem",
-        "Type": "class ParticleSystem*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "MercenaryServiceParams": {
-    "Super": "DataAsset",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "MercenaryCleanupDelayTimer",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x4_FIH2P[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      }
-    ]
+  "MercenarySpawnLocationsDataAsset": {
+    "Super": "IslandItemDataAsset",
+    "FullSize": "0x48",
+    "InheritedSize": "0x48",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "MercenaryItemInteractionsComponent": {
     "Super": "ActorComponent",
@@ -112,7 +20,7 @@
     "ClassSize": "0x208",
     "Attributes": [
       {
-        "Name": "pad0x28_X4LLL[0x28]",
+        "Name": "pad0x28_Q8TZ8[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0xb8"
@@ -130,7 +38,7 @@
         "Offset": "0xe1"
       },
       {
-        "Name": "pad0x6_QS5X3[0x6]",
+        "Name": "pad0x6_9RMN3[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0xe2"
@@ -142,7 +50,7 @@
         "Offset": "0x108"
       },
       {
-        "Name": "pad0x4_22S3F[0x4]",
+        "Name": "pad0x4_E1IWQ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x10c"
@@ -166,7 +74,7 @@
         "Offset": "0x180"
       },
       {
-        "Name": "pad0x4_G4MBH[0x4]",
+        "Name": "pad0x4_PCL62[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x184"
@@ -196,7 +104,7 @@
         "Offset": "0x200"
       },
       {
-        "Name": "pad0x30_EY7M9[0x30]",
+        "Name": "pad0x30_8U46Q[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x208"
@@ -220,7 +128,7 @@
         "Offset": "0x23a"
       },
       {
-        "Name": "pad0x1_4JP2L[0x1]",
+        "Name": "pad0x1_T51EW[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x23b"
@@ -250,7 +158,7 @@
         "Offset": "0x280"
       },
       {
-        "Name": "pad0x30_A03F0[0x30]",
+        "Name": "pad0x30_L3R86[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x288"
@@ -263,19 +171,77 @@
       }
     ]
   },
-  "MercenarySpawnLocationsDataAsset": {
-    "Super": "IslandItemDataAsset",
-    "FullSize": "0x48",
-    "InheritedSize": "0x48",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "MercenaryService": {
+    "Super": "Actor",
+    "FullSize": "0x3d0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x20_90VCP[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "MercenaryCleanupDelayTimer",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c0"
+      },
+      {
+        "Name": "pad0x4_5MXK2[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c4"
+      },
+      {
+        "Name": "ServiceParams",
+        "Type": "class MercenaryServiceParams*",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      }
+    ]
   },
-  "EmergentSkeletonHandedItemStatTrigger": {
-    "Super": "ConditionalStatsTriggerType",
+  "MercenaryItemInteractionDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "DenyItemDescClasslist",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "DenyItemCategoryClasslist",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "MercenaryServiceParams": {
+    "Super": "DataAsset",
     "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "MercenaryCleanupDelayTimer",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_90LEM[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      }
+    ]
   },
   "MercenaryFunctionalAssetsDataAsset": {
     "Super": "DataAsset",
@@ -303,6 +269,33 @@
       }
     ]
   },
+  "EmergentSkeletonHandedItemStatTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MercenaryCosmeticAssetsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "PreSpawnInAnimation",
+        "Type": "class AnimationAsset*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "PreSpawnInParticleSystem",
+        "Type": "class ParticleSystem*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
   "MercenaryBuriableActor": {
     "Super": "Actor",
     "FullSize": "0x570",
@@ -310,7 +303,7 @@
     "ClassSize": "0x1d0",
     "Attributes": [
       {
-        "Name": "pad0x10_2TTI8[0x10]",
+        "Name": "pad0x10_PX73R[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3a0"
@@ -376,18 +369,25 @@
         "Offset": "0x460"
       },
       {
-        "Name": "pad0x7_K4E2K[0x7]",
+        "Name": "pad0x7_1HB6Q[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x461"
       },
       {
-        "Name": "pad0x108_Y1HU1[0x108]",
+        "Name": "pad0x108_5I365[0x108]",
         "Type": "char",
         "Size": "0x108",
         "Offset": "0x468"
       }
     ]
+  },
+  "EmergentSkeletonRevivedStatTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

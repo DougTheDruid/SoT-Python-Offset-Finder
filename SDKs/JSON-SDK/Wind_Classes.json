@@ -1,4 +1,36 @@
 {
+  "WindZoneComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x360",
+    "InheritedSize": "0x2d0",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "pad0x8_5B1NY[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x2d0"
+      },
+      {
+        "Name": "TurbulenceParams",
+        "Type": "struct WindTurbulenceParameters",
+        "Size": "0x70",
+        "Offset": "0x2d8"
+      },
+      {
+        "Name": "WindZoneParams",
+        "Type": "struct WindZoneParams",
+        "Size": "0x10",
+        "Offset": "0x348"
+      },
+      {
+        "Name": "pad0x8_WL5FW[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x358"
+      }
+    ]
+  },
   "WindService": {
     "Super": "Actor",
     "FullSize": "0x4d8",
@@ -6,7 +38,7 @@
     "ClassSize": "0x138",
     "Attributes": [
       {
-        "Name": "pad0x10_I1GYW[0x10]",
+        "Name": "pad0x10_KNSJL[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3a0"
@@ -18,7 +50,7 @@
         "Offset": "0x3b0"
       },
       {
-        "Name": "pad0x10_3QN6K[0x10]",
+        "Name": "pad0x10_NKN2Q[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3b8"
@@ -36,7 +68,7 @@
         "Offset": "0x3cc"
       },
       {
-        "Name": "pad0xe8_OBDLO[0xe8]",
+        "Name": "pad0xe8_KB2GL[0xe8]",
         "Type": "char",
         "Size": "0xe8",
         "Offset": "0x3d0"
@@ -55,39 +87,28 @@
       }
     ]
   },
-  "WindZoneComponent": {
-    "Super": "SceneComponent",
-    "FullSize": "0x360",
-    "InheritedSize": "0x2d0",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "pad0x8_QUO8H[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x2d0"
-      },
-      {
-        "Name": "TurbulenceParams",
-        "Type": "struct WindTurbulenceParameters",
-        "Size": "0x70",
-        "Offset": "0x2d8"
-      },
-      {
-        "Name": "WindZoneParams",
-        "Type": "struct WindZoneParams",
-        "Size": "0x10",
-        "Offset": "0x348"
-      },
-      {
-        "Name": "pad0x8_KISPV[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x358"
-      }
-    ]
+  "WindFunctions": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WindServiceParamsFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "DebugWindInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WindInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -107,33 +128,12 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_8O0QD[0x4]",
+        "Name": "pad0x4_B0VQH[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x5c"
       }
     ]
-  },
-  "WindInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "WindFunctions": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "WindServiceParamsFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "WindZoneInterface": {
     "Super": "Interface",
@@ -149,7 +149,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_DM1Z3[0x10]",
+        "Name": "pad0x10_GZKVY[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x4d8"

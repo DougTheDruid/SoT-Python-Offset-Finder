@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AdaptiveTriggerComponent:
   Attributes:
-  - Name: pad0x8_1CBFP[0x8]
+  - Name: pad0x8_V6LHO[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -40,7 +40,7 @@ BoxCollisionExtentAdjustOverTimeComponent:
     Offset: '0xf8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_1A9JL[0x3]
+  - Name: pad0x3_8G0SR[0x3]
     Offset: '0xf9'
     Size: '0x3'
     Type: char
@@ -52,7 +52,7 @@ BoxCollisionExtentAdjustOverTimeComponent:
     Offset: '0x100'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_UE20W[0x3]
+  - Name: pad0x3_O68NP[0x3]
     Offset: '0x101'
     Size: '0x3'
     Type: char
@@ -64,7 +64,7 @@ BoxCollisionExtentAdjustOverTimeComponent:
     Offset: '0x108'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_HM850[0x3]
+  - Name: pad0x3_8SLA9[0x3]
     Offset: '0x109'
     Size: '0x3'
     Type: char
@@ -76,7 +76,7 @@ BoxCollisionExtentAdjustOverTimeComponent:
     Offset: '0x110'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_8NYUW[0x4]
+  - Name: pad0x4_USVI8[0x4]
     Offset: '0x11c'
     Size: '0x4'
     Type: char
@@ -90,7 +90,7 @@ BoxCollisionExtentAdjustOverTimeComponent:
   Super: PrimitiveCollisionExtentAdjustOverTimeComponent
 BoxedRpcDispatcherComponent:
   Attributes:
-  - Name: pad0x8_9OVLV[0x8]
+  - Name: pad0x8_HLUNM[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -118,7 +118,7 @@ DynamicColourPointLightComponent:
     Offset: '0x518'
     Size: '0x80'
     Type: struct RuntimeFloatCurve
-  - Name: pad0x38_KH3UP[0x38]
+  - Name: pad0x38_D33TL[0x38]
     Offset: '0x598'
     Size: '0x38'
     Type: char
@@ -152,7 +152,7 @@ HUDInterface:
   Super: Interface
 NestedWorldRootDataAsset:
   Attributes:
-  - Name: pad0x10_UI9B4[0x10]
+  - Name: pad0x10_FJ71E[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char
@@ -192,7 +192,7 @@ PrimitiveCollisionExtentAdjustOverTimeComponent:
     Offset: '0xb8'
     Size: '0x4'
     Type: float
-  - Name: pad0x2c_A334Q[0x2c]
+  - Name: pad0x2c_9G2JY[0x2c]
     Offset: '0xbc'
     Size: '0x2c'
     Type: char
@@ -200,7 +200,7 @@ PrimitiveCollisionExtentAdjustOverTimeComponent:
     Offset: '0xe8'
     Size: '0x8'
     Type: class World*
-  - Name: pad0x8_IUCJ3[0x8]
+  - Name: pad0x8_BE683[0x8]
     Offset: '0xf0'
     Size: '0x8'
     Type: char
@@ -236,7 +236,7 @@ RotateMeshToActorComponent:
     Offset: '0xcd'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_W7R07[0x2]
+  - Name: pad0x2_GUV2S[0x2]
     Offset: '0xce'
     Size: '0x2'
     Type: char
@@ -248,7 +248,7 @@ RotateMeshToActorComponent:
     Offset: '0xd4'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_364N7[0x3]
+  - Name: pad0x3_ULFTQ[0x3]
     Offset: '0xd5'
     Size: '0x3'
     Type: char
@@ -260,7 +260,7 @@ RotateMeshToActorComponent:
     Offset: '0xdc'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_5TEE7[0x8]
+  - Name: pad0x8_WG68E[0x8]
     Offset: '0xe0'
     Size: '0x8'
     Type: char
@@ -286,7 +286,7 @@ SkeletalMeshAggregateTickComponent:
     Offset: '0xb8'
     Size: '0x8'
     Type: class SkeletalMeshComponent*
-  - Name: pad0x28_A0KVJ[0x28]
+  - Name: pad0x28_JKACF[0x28]
     Offset: '0xc0'
     Size: '0x28'
     Type: char
@@ -300,7 +300,7 @@ SphereCollisionExtentAdjustOverTimeComponent:
     Offset: '0xf8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_4TJRM[0x3]
+  - Name: pad0x3_KWBBV[0x3]
     Offset: '0xf9'
     Size: '0x3'
     Type: char
@@ -312,7 +312,7 @@ SphereCollisionExtentAdjustOverTimeComponent:
     Offset: '0x100'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_53PY9[0x4]
+  - Name: pad0x4_0KIJ8[0x4]
     Offset: '0x104'
     Size: '0x4'
     Type: char
@@ -330,7 +330,7 @@ StringToAssetClassMap:
     Offset: '0x28'
     Size: '0x10'
     Type: TArray<struct StringAssetClassPair>
-  - Name: pad0x18_HIMBM[0x18]
+  - Name: pad0x18_QZJNT[0x18]
     Offset: '0x38'
     Size: '0x18'
     Type: char
@@ -358,7 +358,7 @@ UnderseaFogVolumeComponent:
     Offset: '0xc0'
     Size: '0x4'
     Type: float
-  - Name: pad0x34_ECKZB[0x34]
+  - Name: pad0x34_4BBWS[0x34]
     Offset: '0xc4'
     Size: '0x34'
     Type: char

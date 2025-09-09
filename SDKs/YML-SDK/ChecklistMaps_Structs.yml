@@ -28,7 +28,7 @@ ChecklistItem:
     Offset: '0x38'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_J25FX[0x4]
+  - Name: pad0x4_MTMPZ[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -47,7 +47,7 @@ ChecklistItemCompletedTelemetryEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_8ETHO[0x7]
+  - Name: pad0x7_YZY1D[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
@@ -85,14 +85,14 @@ ChecklistMapItemData:
     Offset: '0x48'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_39X21[0x7]
+  - Name: pad0x7_WOYVE[0x7]
     Offset: '0x49'
     Size: '0x7'
     Type: char
   ClassSize: '0x50'
 CompleteEntireChecklistEvent:
   Attributes:
-  - Name: pad0x1_X3HE5[0x1]
+  - Name: pad0x1_V19VS[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char

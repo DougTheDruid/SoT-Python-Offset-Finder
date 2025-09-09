@@ -24,35 +24,35 @@ EventExitedWatercraft:
   ClassSize: '0x10'
 EventOarStrokeEnded:
   Attributes:
-  - Name: pad0x1_Z9VVU[0x1]
+  - Name: pad0x1_6NZZG[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 EventRowboatDockStatusHasChanged:
   Attributes:
-  - Name: pad0x1_VLM18[0x1]
+  - Name: pad0x1_CTVIK[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 EventRowboatEnteredWater:
   Attributes:
-  - Name: pad0x1_YXIKG[0x1]
+  - Name: pad0x1_8TPO9[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 EventRowboatExitedWater:
   Attributes:
-  - Name: pad0x1_G0CX9[0x1]
+  - Name: pad0x1_HQPPV[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 EventRowboatLoaded:
   Attributes:
-  - Name: pad0x1_5I8CR[0x1]
+  - Name: pad0x1_BRDD6[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -63,7 +63,7 @@ Oar:
     Offset: '0x0'
     Size: '0x38'
     Type: struct OarParams
-  - Name: pad0x28_Q2QKW[0x28]
+  - Name: pad0x28_DU6KV[0x28]
     Offset: '0x38'
     Size: '0x28'
     Type: char
@@ -109,7 +109,7 @@ OarParams:
   ClassSize: '0x38'
 QuestVariableWatercraft:
   Attributes:
-  - Name: pad0x30_3CLO2[0x30]
+  - Name: pad0x30_Z8WBO[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
@@ -124,14 +124,14 @@ RowboatDamageEffectData:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_3HTQZ[0xc]
+  - Name: pad0xc_38UCX[0xc]
     Offset: '0xc'
     Size: '0xc'
     Type: char
   ClassSize: '0x18'
 RowboatLiveryByWeight:
   Attributes:
-  - Name: pad0x20_5LH89[0x20]
+  - Name: pad0x20_L8SA1[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
@@ -139,7 +139,7 @@ RowboatLiveryByWeight:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_RG0UT[0x4]
+  - Name: pad0x4_41TMW[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char
@@ -169,7 +169,7 @@ RowboatMountStateTelemetryEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_2TAPQ[0x3]
+  - Name: pad0x3_Z3LO1[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -223,7 +223,7 @@ ScrapeableDamageSpeedEntry:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_ZOJ4N[0x4]
+  - Name: pad0x4_2R0S5[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -242,11 +242,11 @@ WatercraftDespawnTelemetryEvent:
     Offset: '0x1c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_DOPSJ[0x3]
+  - Name: pad0x3_U9B73[0x3]
     Offset: '0x1d'
     Size: '0x3'
     Type: char
-  - Name: pad0x4_EOBLZ[0x4]
+  - Name: pad0x4_PJQ92[0x4]
     Offset: '0x20'
     Size: '0x4'
     Type: char
@@ -261,7 +261,7 @@ WatercraftRolloverCorrector:
     Offset: '0x4'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_RS630[0x4]
+  - Name: pad0x4_H4QL1[0x4]
     Offset: '0x8'
     Size: '0x4'
     Type: char
@@ -288,7 +288,7 @@ WatercraftSpawnTelemetryEvent:
     Offset: '0x3c'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x8_YOI72[0x8]
+  - Name: pad0x8_J80VE[0x8]
     Offset: '0x48'
     Size: '0x8'
     Type: char

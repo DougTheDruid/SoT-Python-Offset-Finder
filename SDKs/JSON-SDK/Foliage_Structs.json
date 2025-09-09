@@ -1,4 +1,50 @@
 {
+  "ConsoleCommands": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_N1VPB[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "FoliageTypeObject": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "FoliageTypeObject",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TypeInstance",
+        "Type": "class FoliageType_InstancedStaticMesh*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "bIsAsset",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_M6JEW[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "Type",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
   "ProceduralFoliageInstance": {
     "ClassSize": "0x60",
     "Attributes": [
@@ -9,7 +55,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_D3UOU[0x4]",
+        "Name": "pad0x4_W9U8M[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -39,7 +85,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_6IWGX[0x4]",
+        "Name": "pad0x4_MUOD2[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
@@ -51,56 +97,10 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x20_ZG68S[0x20]",
+        "Name": "pad0x20_Q2VQA[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x40"
-      }
-    ]
-  },
-  "FoliageTypeObject": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "FoliageTypeObject",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TypeInstance",
-        "Type": "class FoliageType_InstancedStaticMesh*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "bIsAsset",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x7_YJPVM[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x11"
-      },
-      {
-        "Name": "Type",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "ConsoleCommands": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_BX3ZM[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
       }
     ]
   },

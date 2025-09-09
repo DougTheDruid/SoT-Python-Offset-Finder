@@ -45,7 +45,7 @@ EmoteData:
     Offset: '0x81'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_L8RYH[0x2]
+  - Name: pad0x2_AVG2U[0x2]
     Offset: '0x82'
     Size: '0x2'
     Type: char
@@ -65,7 +65,7 @@ EmoteData:
     Offset: '0x91'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_DLA08[0x6]
+  - Name: pad0x6_H0BKU[0x6]
     Offset: '0x92'
     Size: '0x6'
     Type: char
@@ -77,7 +77,7 @@ EmoteData:
     Offset: '0xa0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_2A7FB[0x3]
+  - Name: pad0x3_QIK3Q[0x3]
     Offset: '0xa1'
     Size: '0x3'
     Type: char
@@ -133,7 +133,7 @@ EmoteInteractionTooltipInstance:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_HV72C[0x7]
+  - Name: pad0x7_6NWO3[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -149,7 +149,7 @@ EmoteInteractionTooltipInstance:
     Offset: '0x50'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_0D9UF[0x7]
+  - Name: pad0x7_13JAX[0x7]
     Offset: '0x51'
     Size: '0x7'
     Type: char
@@ -183,7 +183,7 @@ EmotePropRandomObjectResult:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_8T68R[0x7]
+  - Name: pad0x7_HGXCE[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
@@ -199,7 +199,7 @@ EmotePropRandomObjectResult:
     Offset: '0x48'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_4PL1K[0x4]
+  - Name: pad0x4_HZIKT[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -222,21 +222,21 @@ EmoteRandomObjectOutcomeTelemetryEvent:
     Offset: '0x50'
     Size: '0x4'
     Type: int
-  - Name: pad0xc_MSH8E[0xc]
+  - Name: pad0xc_OGNGB[0xc]
     Offset: '0x54'
     Size: '0xc'
     Type: char
   ClassSize: '0x60'
 EventDisableLookAtEmoteCamera:
   Attributes:
-  - Name: pad0x1_TOULF[0x1]
+  - Name: pad0x1_R75XG[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 EventDisguiseInteractedWith:
   Attributes:
-  - Name: pad0x8_D294A[0x8]
+  - Name: pad0x8_ARP1K[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -247,7 +247,7 @@ EventEmoteCompleted:
     Offset: '0x0'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_UOLDL[0x4]
+  - Name: pad0x4_W8FOG[0x4]
     Offset: '0x8'
     Size: '0x4'
     Type: char
@@ -262,14 +262,14 @@ EventEmoteEndRequested:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_443CH[0x3]
+  - Name: pad0x3_8N7TC[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
   ClassSize: '0xc'
 EventEmotePreviewStarted:
   Attributes:
-  - Name: pad0x1_BMN23[0x1]
+  - Name: pad0x1_42STK[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -288,7 +288,7 @@ EventEmoteRequested:
     Offset: '0xd0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_ZSFRP[0x7]
+  - Name: pad0x7_J6FS2[0x7]
     Offset: '0xd1'
     Size: '0x7'
     Type: char
@@ -309,14 +309,14 @@ EventEmoteSwapped:
   ClassSize: '0xc8'
 EventEnableLookAtEmoteCamera:
   Attributes:
-  - Name: pad0x8_4DRG6[0x8]
+  - Name: pad0x8_1HXHG[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
   ClassSize: '0x8'
 EventEndEmoteAnimation:
   Attributes:
-  - Name: pad0x1_399T5[0x1]
+  - Name: pad0x1_QE423[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -335,7 +335,7 @@ EventWalkableEmoteCompleted:
     Offset: '0xd'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_TEEQ0[0x2]
+  - Name: pad0x2_866PW[0x2]
     Offset: '0xe'
     Size: '0x2'
     Type: char
@@ -360,7 +360,7 @@ EventWalkableEmoteStarted:
   ClassSize: '0x128'
 WalkableEmoteData:
   Attributes:
-  - Name: pad0xc8_NC0DF[0xc8]
+  - Name: pad0xc8_KQ7ZR[0xc8]
     Offset: '0x0'
     Size: '0xc8'
     Type: char
@@ -372,7 +372,7 @@ WalkableEmoteData:
     Offset: '0xc9'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_M2B1X[0x2]
+  - Name: pad0x2_OOXP6[0x2]
     Offset: '0xca'
     Size: '0x2'
     Type: char
@@ -384,7 +384,7 @@ WalkableEmoteData:
     Offset: '0xd0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_PG28V[0x7]
+  - Name: pad0x7_E1OAD[0x7]
     Offset: '0xd1'
     Size: '0x7'
     Type: char
@@ -427,14 +427,14 @@ WalkableEmoteData:
   ClassSize: '0x128'
 WalkableEmoteDisguiseIdentifierSet:
   Attributes:
-  - Name: pad0x1_QNBVY[0x1]
+  - Name: pad0x1_Q8SNF[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 WalkableEmoteDisguiseTypeSet:
   Attributes:
-  - Name: pad0x4_U35I1[0x4]
+  - Name: pad0x4_DJV3E[0x4]
     Offset: '0x0'
     Size: '0x4'
     Type: char
@@ -459,7 +459,7 @@ WalkableEmoteMovementStopEvent:
   ClassSize: '0x10'
 WalkableEmotePlayerMovementEnabledEvent:
   Attributes:
-  - Name: pad0x1_UF5TO[0x1]
+  - Name: pad0x1_NWYSJ[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char

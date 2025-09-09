@@ -12,7 +12,7 @@ ActorOfInterestComponent:
     Offset: '0xb8'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x18_6OKKU[0x18]
+  - Name: pad0x18_VWRPB[0x18]
     Offset: '0xc0'
     Size: '0x18'
     Type: char
@@ -28,7 +28,7 @@ ActorOfInterestId:
   Super: Object
 ActorOfInterestService:
   Attributes:
-  - Name: pad0x60_YOR4P[0x60]
+  - Name: pad0x60_11TT1[0x60]
     Offset: '0x3a0'
     Size: '0x60'
     Type: char

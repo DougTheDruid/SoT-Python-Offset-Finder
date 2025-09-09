@@ -6,14 +6,15 @@
 #include "WorldEdgeItemFramework_Structs.h"
 
 
-// Size 0x260 (Full Size[0x600] - InheritedSize[0x3a0]
-class WorldEdgeItemService: public Actor
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class WorldEdgeItemServiceParams: public DataAsset
 {
 public:
-	char                                                         pad0x8_I7VCD[0x8];                                 // 0x3a0(0x8)
-	class WorldEdgeItemServiceParams*                            WorldEdgeItemParameters;                           // 0x3a8(0x8)
-	struct EnvQueryRequest                                       SpawnItemEQSRequest;                               // 0x3b0(0x170)
-	char                                                         pad0xe0_BD8J5[0xe0];                               // 0x520(0xe0)
+	class EnvQuery*                                              TeleportItemsEQSQuery;                             // 0x28(0x8)
+	float                                                        ThrottledItemSpawnRate;                            // 0x30(0x4)
+	float                                                        TimeToSinkFor;                                     // 0x34(0x4)
+	float                                                        AdditionalMoveDistance;                            // 0x38(0x4)
+	int                                                          MaxBatchItemsPerSlice;                             // 0x3c(0x4)
 };
 
 
@@ -24,15 +25,14 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class WorldEdgeItemServiceParams: public DataAsset
+// Size 0x260 (Full Size[0x600] - InheritedSize[0x3a0]
+class WorldEdgeItemService: public Actor
 {
 public:
-	class EnvQuery*                                              TeleportItemsEQSQuery;                             // 0x28(0x8)
-	float                                                        ThrottledItemSpawnRate;                            // 0x30(0x4)
-	float                                                        TimeToSinkFor;                                     // 0x34(0x4)
-	float                                                        AdditionalMoveDistance;                            // 0x38(0x4)
-	int                                                          MaxBatchItemsPerSlice;                             // 0x3c(0x4)
+	char                                                         pad0x8_0VC8K[0x8];                                 // 0x3a0(0x8)
+	class WorldEdgeItemServiceParams*                            WorldEdgeItemParameters;                           // 0x3a8(0x8)
+	struct EnvQueryRequest                                       SpawnItemEQSRequest;                               // 0x3b0(0x170)
+	char                                                         pad0xe0_QE7NT[0xe0];                               // 0x520(0xe0)
 };
 
 

@@ -1,5 +1,19 @@
 {
-  "TickableDebugDrawingServiceInterface": {
+  "HitchDebugComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x138",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Name": "pad0x80_11F5T[0x80]",
+        "Type": "char",
+        "Size": "0x80",
+        "Offset": "0xb8"
+      }
+    ]
+  },
+  "DrawDebugServiceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -31,14 +45,14 @@
         "Offset": "0x3b4"
       },
       {
-        "Name": "pad0xc_HITJX[0xc]",
+        "Name": "pad0xc_5B1JA[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x3bc"
       }
     ]
   },
-  "DrawDebugServiceInterface": {
+  "VideprinterServiceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -59,21 +73,7 @@
       }
     ]
   },
-  "HitchDebugComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x138",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x80",
-    "Attributes": [
-      {
-        "Name": "pad0x80_L5WYY[0x80]",
-        "Type": "char",
-        "Size": "0x80",
-        "Offset": "0xb8"
-      }
-    ]
-  },
-  "VideprinterServiceInterface": {
+  "TickableDebugDrawingServiceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -87,7 +87,7 @@
     "ClassSize": "0x138",
     "Attributes": [
       {
-        "Name": "pad0x8_PTNMJ[0x8]",
+        "Name": "pad0x8_60394[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3a0"
@@ -153,7 +153,7 @@
         "Offset": "0x438"
       },
       {
-        "Name": "pad0x9f_AEUO0[0x9f]",
+        "Name": "pad0x9f_JCDNO[0x9f]",
         "Type": "char",
         "Size": "0x9f",
         "Offset": "0x439"
@@ -167,7 +167,7 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x8_4MQJR[0x8]",
+        "Name": "pad0x8_Z7L4U[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"

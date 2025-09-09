@@ -1,4 +1,11 @@
 {
+  "DeployableInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "DeployableExclusionZone": {
     "Super": "Actor",
     "FullSize": "0x3a8",
@@ -13,21 +20,250 @@
       }
     ]
   },
-  "DeployableInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "ConvertItemToActorComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x4e0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x428",
+    "Attributes": [
+      {
+        "Name": "pad0x18_PXPXP[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "CreatedDeployable",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "ItemInfo",
+        "Type": "class ItemInfo*",
+        "Size": "0x8",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "DeployableDimensions",
+        "Type": "struct Box",
+        "Size": "0x1c",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "DeployableDimensionOffset",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x11c"
+      },
+      {
+        "Name": "ProceedWithPeriodicalPlacementChecks",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "ProceedWithIsWithinAcceptableAnglePlacementCheck",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x129"
+      },
+      {
+        "Name": "ProceedWithIsInteractorLevelWithProxyPlacementCheck",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x12a"
+      },
+      {
+        "Name": "pad0x5_0YMHI[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0x12b"
+      },
+      {
+        "Name": "DeployActionRuleVerbiage",
+        "Type": "struct DeployActionRuleVerbiage",
+        "Size": "0x268",
+        "Offset": "0x130"
+      },
+      {
+        "Name": "MaxPlacementAngle",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x398"
+      },
+      {
+        "Name": "HoldTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x39c"
+      },
+      {
+        "Name": "pad0x30_G29E7[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "IsInExclusionZone",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "pad0x7_7AMNU[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x3d1"
+      },
+      {
+        "Name": "ShipRegionWhiteList",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "CaptainsCabins",
+        "Type": "TArray<Class>",
+        "Size": "0x10",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "IsInCaptainsCabin",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "DroppedNearAnotherControllable",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3f9"
+      },
+      {
+        "Name": "pad0x1_ISZOF[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x3fa"
+      },
+      {
+        "Name": "CollisionChannel",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x3fb"
+      },
+      {
+        "Name": "TickInterval",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3fc"
+      },
+      {
+        "Name": "FailedDeployment",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "FuseMeshRequired",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x401"
+      },
+      {
+        "Name": "pad0x2_88ILG[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x402"
+      },
+      {
+        "Name": "FailedDeploymentDelay",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x404"
+      },
+      {
+        "Name": "pad0x8_0UOL7[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x408"
+      },
+      {
+        "Name": "InteractorLevelWithProxyMinDiff",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x410"
+      },
+      {
+        "Name": "InteractorLevelWithProxyMaxDiff",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x414"
+      },
+      {
+        "Name": "TrackedActorType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x418"
+      },
+      {
+        "Name": "InteractionDeploymentState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x419"
+      },
+      {
+        "Name": "pad0x6_KMXFS[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x41a"
+      },
+      {
+        "Name": "PlayDeploySfx",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x420"
+      },
+      {
+        "Name": "StopDeploySfx",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x428"
+      },
+      {
+        "Name": "PoolWrapper",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x430"
+      },
+      {
+        "Name": "pad0x28_RAVBU[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x438"
+      },
+      {
+        "Name": "FuseStaticMeshComponent",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x460"
+      },
+      {
+        "Name": "pad0x78_4R90Z[0x78]",
+        "Type": "char",
+        "Size": "0x78",
+        "Offset": "0x468"
+      }
+    ]
   },
   "ConvertActorToItemComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x268",
+    "FullSize": "0x270",
     "InheritedSize": "0xb8",
-    "ClassSize": "0x1b0",
+    "ClassSize": "0x1b8",
     "Attributes": [
       {
-        "Name": "pad0x10_0YT2O[0x10]",
+        "Name": "pad0x10_ZYDJG[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xb8"
@@ -57,7 +293,7 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x3_GYLPL[0x3]",
+        "Name": "pad0x3_QX4UW[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xf1"
@@ -87,7 +323,7 @@
         "Offset": "0x100"
       },
       {
-        "Name": "pad0x18_73AZ0[0x18]",
+        "Name": "pad0x18_7339I[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x1a8"
@@ -111,264 +347,40 @@
         "Offset": "0x1f2"
       },
       {
-        "Name": "pad0x5_PU90W[0x5]",
+        "Name": "pad0x5_JMR3E[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x1f3"
       },
       {
-        "Name": "PlayCollapseSfx",
-        "Type": "class WwiseEvent*",
+        "Name": "CreatedProxyActor",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x1f8"
       },
       {
-        "Name": "StopCollapseSfx",
+        "Name": "PlayCollapseSfx",
         "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x200"
       },
       {
-        "Name": "PoolWrapper",
-        "Type": "class WwiseObjectPoolWrapper*",
+        "Name": "StopCollapseSfx",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x208"
       },
       {
-        "Name": "pad0x58_Q4HAZ[0x58]",
-        "Type": "char",
-        "Size": "0x58",
-        "Offset": "0x210"
-      }
-    ]
-  },
-  "ConvertItemToActorComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x4d8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x420",
-    "Attributes": [
-      {
-        "Name": "pad0x18_XWZK5[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "ItemInfo",
-        "Type": "class ItemInfo*",
-        "Size": "0x8",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "DeployableDimensions",
-        "Type": "struct Box",
-        "Size": "0x1c",
-        "Offset": "0xf8"
-      },
-      {
-        "Name": "DeployableDimensionOffset",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x114"
-      },
-      {
-        "Name": "ProceedWithPeriodicalPlacementChecks",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x120"
-      },
-      {
-        "Name": "ProceedWithIsWithinAcceptableAnglePlacementCheck",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x121"
-      },
-      {
-        "Name": "ProceedWithIsInteractorLevelWithProxyPlacementCheck",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x122"
-      },
-      {
-        "Name": "pad0x5_SZRPK[0x5]",
-        "Type": "char",
-        "Size": "0x5",
-        "Offset": "0x123"
-      },
-      {
-        "Name": "DeployActionRuleVerbiage",
-        "Type": "struct DeployActionRuleVerbiage",
-        "Size": "0x268",
-        "Offset": "0x128"
-      },
-      {
-        "Name": "MaxPlacementAngle",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x390"
-      },
-      {
-        "Name": "HoldTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x394"
-      },
-      {
-        "Name": "pad0x30_AXAJ9[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x398"
-      },
-      {
-        "Name": "IsInExclusionZone",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3c8"
-      },
-      {
-        "Name": "pad0x7_3HIAG[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x3c9"
-      },
-      {
-        "Name": "ShipRegionWhiteList",
-        "Type": "TArray<char>",
-        "Size": "0x10",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "CaptainsCabins",
-        "Type": "TArray<Class>",
-        "Size": "0x10",
-        "Offset": "0x3e0"
-      },
-      {
-        "Name": "IsInCaptainsCabin",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3f0"
-      },
-      {
-        "Name": "DroppedNearAnotherControllable",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3f1"
-      },
-      {
-        "Name": "pad0x1_O3FOA[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x3f2"
-      },
-      {
-        "Name": "CollisionChannel",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x3f3"
-      },
-      {
-        "Name": "TickInterval",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3f4"
-      },
-      {
-        "Name": "FailedDeployment",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "FuseMeshRequired",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3f9"
-      },
-      {
-        "Name": "pad0x2_SH63T[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x3fa"
-      },
-      {
-        "Name": "FailedDeploymentDelay",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3fc"
-      },
-      {
-        "Name": "pad0x8_HNTKH[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x400"
-      },
-      {
-        "Name": "InteractorLevelWithProxyMinDiff",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x408"
-      },
-      {
-        "Name": "InteractorLevelWithProxyMaxDiff",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x40c"
-      },
-      {
-        "Name": "TrackedActorType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x410"
-      },
-      {
-        "Name": "InteractionDeploymentState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x411"
-      },
-      {
-        "Name": "pad0x6_AQ3D3[0x6]",
-        "Type": "char",
-        "Size": "0x6",
-        "Offset": "0x412"
-      },
-      {
-        "Name": "PlayDeploySfx",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "StopDeploySfx",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x420"
-      },
-      {
         "Name": "PoolWrapper",
         "Type": "class WwiseObjectPoolWrapper*",
         "Size": "0x8",
-        "Offset": "0x428"
+        "Offset": "0x210"
       },
       {
-        "Name": "pad0x28_FQUMM[0x28]",
+        "Name": "pad0x58_QS8Z4[0x58]",
         "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x430"
-      },
-      {
-        "Name": "FuseStaticMeshComponent",
-        "Type": "class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x458"
-      },
-      {
-        "Name": "pad0x78_4VHHE[0x78]",
-        "Type": "char",
-        "Size": "0x78",
-        "Offset": "0x460"
+        "Size": "0x58",
+        "Offset": "0x218"
       }
     ]
   },

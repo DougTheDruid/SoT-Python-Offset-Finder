@@ -6,23 +6,28 @@
 #include "AncientTinyShark_Structs.h"
 
 
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class AncientTinySharkEventServiceParams: public DataAsset
+{
+public:
+	TArray<struct AncientTinySharkSpawnParams>                   AncientTinySharkParams;                            // 0x28(0x10)
+	class EnvQuery*                                              AncientMegSpawnLocationEQSQuery;                   // 0x38(0x8)
+	bool                                                         AllowRepeatedVariants;                             // 0x40(0x1)
+	char                                                         pad0x7_QJYME[0x7];                                 // 0x41(0x7)
+	TArray<struct AncientTinySharkEventBanners>                  AncientTinySharkEventBanners;                      // 0x48(0x10)
+};
+
+
 // Size 0x218 (Full Size[0x5b8] - InheritedSize[0x3a0]
 class AncientTinySharkEventService: public Actor
 {
 public:
-	char                                                         pad0x58_S1KO4[0x58];                               // 0x3a0(0x58)
+	char                                                         pad0x58_WHAXT[0x58];                               // 0x3a0(0x58)
 	class AncientTinySharkEventServiceParams*                    AncientTinySharkServiceParams;                     // 0x3f8(0x8)
-	char                                                         pad0x8_9H9ZX[0x8];                                 // 0x400(0x8)
+	char                                                         pad0x8_PHWF8[0x8];                                 // 0x400(0x8)
 	class UClass*                                                LastDefeatedVariant;                               // 0x408(0x8)
 	TArray<struct AncientTinySharkSpawnParams>                   AncientTinySharkSpawnParamsList;                   // 0x410(0x10)
-	char                                                         pad0x198_GFRBS[0x198];                             // 0x420(0x198)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AncientTinySharkEventServiceInterface: public Interface
-{
-public:
+	char                                                         pad0x198_UFR7P[0x198];                             // 0x420(0x198)
 };
 
 
@@ -34,21 +39,16 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AncientTinySharkVariantInterface: public Interface
+class AncientTinySharkEventServiceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class AncientTinySharkEventServiceParams: public DataAsset
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AncientTinySharkVariantInterface: public Interface
 {
 public:
-	TArray<struct AncientTinySharkSpawnParams>                   AncientTinySharkParams;                            // 0x28(0x10)
-	class EnvQuery*                                              AncientMegSpawnLocationEQSQuery;                   // 0x38(0x8)
-	bool                                                         AllowRepeatedVariants;                             // 0x40(0x1)
-	char                                                         pad0x7_STE83[0x7];                                 // 0x41(0x7)
-	TArray<struct AncientTinySharkEventBanners>                  AncientTinySharkEventBanners;                      // 0x48(0x10)
 };
 
 

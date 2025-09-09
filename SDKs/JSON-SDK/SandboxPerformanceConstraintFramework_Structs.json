@@ -1,101 +1,9 @@
 {
-  "SandboxPerformanceConstraintActivityActivationDeniedTelemetryEvent": {
-    "ClassSize": "0x50",
+  "SandboxPerformanceConstraintNullConsumerTelemetryEvent": {
+    "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x30_T15QZ[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x4_5QQ9Q[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "Reason",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "SandboxPerformanceConstraintActivityInstanceCount": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ActivityType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NumInstances",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x4_K729M[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "SandboxPerformanceConstraintInstancedResourceContainer": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ServerMemoryUsageInMB",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ClientMemoryUsageInMB",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "ServerCPUUsageInMs",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "ClientCPUUsageInMs",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "SandboxPerformanceConstraintActivityActivationBudgetExceededTelemetryEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Reason",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SandboxPerformanceConstraintActivityDeactivationTelemetryEvent": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x30_PQKAH[0x30]",
+        "Name": "pad0x30_42HLH[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x0"
@@ -105,53 +13,6 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x30"
-      },
-      {
-        "Name": "StartTime",
-        "Type": "struct DateTime",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "EndTime",
-        "Type": "struct DateTime",
-        "Size": "0x8",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "SandboxPerformanceConstraintActivityUpdateTelemetryEvent": {
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "pad0x30_NFUAP[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NewLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x4_YDUEQ[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "UpdateTime",
-        "Type": "struct DateTime",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "ConstrainedDeactivationReason",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x48"
       }
     ]
   },
@@ -171,14 +32,14 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_QOXXH[0x4]",
+        "Name": "pad0x4_CAN9E[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
       }
     ]
   },
-  "SandboxPerformanceConstraintSharedResourceContainer": {
+  "SandboxPerformanceConstraintInstancedResourceContainer": {
     "ClassSize": "0x10",
     "Attributes": [
       {
@@ -218,39 +79,22 @@
       }
     ]
   },
-  "SandboxPerformanceConstraintActivityContainer": {
+  "SPCSetId": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Activities",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SandboxPerformanceConstraintNullConsumerTelemetryEvent": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "pad0x30_VVVBP[0x30]",
+        "Name": "pad0x10_Q1GXU[0x10]",
         "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Reason",
-        "Type": "struct FString",
         "Size": "0x10",
-        "Offset": "0x30"
+        "Offset": "0x0"
       }
     ]
   },
-  "SandboxPerformanceConstraintActivityDeactivationFailureTelemetryEvent": {
+  "SandboxPerformanceConstraintActivityDeactivationTelemetryEvent": {
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x30_7GW9P[0x30]",
+        "Name": "pad0x30_1PNJ0[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x0"
@@ -262,7 +106,42 @@
         "Offset": "0x30"
       },
       {
-        "Name": "DeactivationReason",
+        "Name": "StartTime",
+        "Type": "struct DateTime",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "EndTime",
+        "Type": "struct DateTime",
+        "Size": "0x8",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintActivityActivationDeniedTelemetryEvent": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x30_K8KR3[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x4_JXN3Z[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "Reason",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x40"
@@ -292,6 +171,63 @@
       }
     ]
   },
+  "SandboxPerformanceConstraintActivityContainer": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Activities",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SPCActivityId": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_76SF5[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintActivityUpdateTelemetryEvent": {
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "pad0x30_56VGX[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NewLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x4_FW3ZC[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "UpdateTime",
+        "Type": "struct DateTime",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "ConstrainedDeactivationReason",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x48"
+      }
+    ]
+  },
   "SandboxPerformanceConstraintActivityTelemetryData": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -308,7 +244,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_K0PEA[0x4]",
+        "Name": "pad0x4_6Y7SL[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
@@ -321,23 +257,98 @@
       }
     ]
   },
-  "SPCSetId": {
+  "SandboxPerformanceConstraintSharedResourceContainer": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_6OCUN[0x10]",
-        "Type": "char",
+        "Name": "ServerMemoryUsageInMB",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ClientMemoryUsageInMB",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "ServerCPUUsageInMs",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ClientCPUUsageInMs",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintActivityActivationBudgetExceededTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Reason",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       }
     ]
   },
-  "SPCActivityId": {
+  "SandboxPerformanceConstraintActivityInstanceCount": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_ESXDK[0x10]",
+        "Name": "ActivityType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NumInstances",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_5EV67[0x4]",
         "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintActivityDeactivationFailureTelemetryEvent": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x30_LDOXP[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Reason",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "DeactivationReason",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintActivityRequestContainer": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ActivityRequests",
+        "Type": "TArray<struct SPCActivityId>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -371,21 +382,68 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_C8SDM[0x4]",
+        "Name": "pad0x4_64Z1B[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
       }
     ]
   },
-  "SandboxPerformanceConstraintActivityRequestContainer": {
-    "ClassSize": "0x10",
+  "SandboxPerformanceConstraintActivityActivationTelemetryEvent": {
+    "ClassSize": "0x70",
     "Attributes": [
       {
-        "Name": "ActivityRequests",
-        "Type": "TArray<struct SPCActivityId>",
+        "Name": "pad0x30_ICMP3[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SharedResourceUsages",
+        "Type": "TArray<struct SandboxPerformanceConstraintSharedResourceContainer>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "InstancedResourceUsages",
+        "Type": "TArray<struct SandboxPerformanceConstraintInstancedResourceContainer>",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "pad0x4_N6KGB[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x5c"
+      },
+      {
+        "Name": "ConstrainedDeactivationReason",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintResourceContainer": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "SharedResourceTypes",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "InstancedResourceUsage",
+        "Type": "struct SandboxPerformanceConstraintInstancedResourceContainer",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
@@ -430,23 +488,6 @@
       }
     ]
   },
-  "SandboxPerformanceConstraintResourceContainer": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "SharedResourceTypes",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "InstancedResourceUsage",
-        "Type": "struct SandboxPerformanceConstraintInstancedResourceContainer",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "SandboxPerformanceConstraintActivitySet": {
     "ClassSize": "0x38",
     "Attributes": [
@@ -469,51 +510,10 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x10_Z7GXR[0x10]",
+        "Name": "pad0x10_7CI9E[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"
-      }
-    ]
-  },
-  "SandboxPerformanceConstraintActivityActivationTelemetryEvent": {
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "pad0x30_UK53O[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SharedResourceUsages",
-        "Type": "TArray<struct SandboxPerformanceConstraintSharedResourceContainer>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "InstancedResourceUsages",
-        "Type": "TArray<struct SandboxPerformanceConstraintInstancedResourceContainer>",
-        "Size": "0x10",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "pad0x4_JXGG6[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x5c"
-      },
-      {
-        "Name": "ConstrainedDeactivationReason",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x60"
       }
     ]
   },
@@ -544,7 +544,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x10_N043F[0x10]",
+        "Name": "pad0x10_5EMKB[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"
@@ -568,7 +568,7 @@
         "Offset": "0x58"
       },
       {
-        "Name": "pad0x4_RBW6N[0x4]",
+        "Name": "pad0x4_CY4ID[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x64"

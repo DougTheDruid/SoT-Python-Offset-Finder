@@ -15,32 +15,10 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_LOHVV[0x7]",
+        "Name": "pad0x7_7O0TZ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
-      }
-    ]
-  },
-  "VideoPlaybackStartEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MediaTextureName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "VideoPlaybackPauseEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MediaTextureName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
       }
     ]
   },
@@ -64,6 +42,17 @@
         "Type": "double",
         "Size": "0x8",
         "Offset": "0x20"
+      }
+    ]
+  },
+  "VideoPlaybackStartEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MediaTextureName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },
@@ -95,7 +84,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x18_6GYHN[0x18]",
+        "Name": "pad0x18_UCID0[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x28"
@@ -127,6 +116,17 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "VideoPlaybackPauseEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MediaTextureName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },

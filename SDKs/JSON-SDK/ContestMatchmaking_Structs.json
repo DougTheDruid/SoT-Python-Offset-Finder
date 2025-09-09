@@ -1,50 +1,4 @@
 {
-  "ContestMatchmakingFactionMapEntry": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "GameFaction",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MatchmakingFaction",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x7_I7IP3[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x9"
-      }
-    ]
-  },
-  "GameSubEventTypeModel": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "EventName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MaxCount",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x4_CNB9B[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x14"
-      }
-    ]
-  },
   "ExistingServerCrewModel": {
     "ClassSize": "0x58",
     "Attributes": [
@@ -67,7 +21,7 @@
         "Offset": "0x14"
       },
       {
-        "Name": "pad0x3_53O2W[0x3]",
+        "Name": "pad0x3_GGQEJ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x15"
@@ -79,7 +33,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_I5PF5[0x4]",
+        "Name": "pad0x4_TFOVP[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
@@ -110,8 +64,31 @@
       }
     ]
   },
+  "GameSubEventTypeModel": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "EventName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MaxCount",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_XTBGW[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
   "ServerCrewModel": {
-    "ClassSize": "0xd8",
+    "ClassSize": "0xe0",
     "Attributes": [
       {
         "Name": "CrewId",
@@ -144,7 +121,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_212WI[0x4]",
+        "Name": "pad0x4_ERB06[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
@@ -168,7 +145,7 @@
         "Offset": "0x70"
       },
       {
-        "Name": "pad0x3_XDBCC[0x3]",
+        "Name": "pad0x3_ZGTC7[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x71"
@@ -198,7 +175,7 @@
         "Offset": "0x8c"
       },
       {
-        "Name": "pad0x3_8I2IM[0x3]",
+        "Name": "pad0x3_RYTXA[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x8d"
@@ -232,6 +209,18 @@
         "Type": "TArray<struct UniqueNetIdRepl>",
         "Size": "0x10",
         "Offset": "0xc8"
+      },
+      {
+        "Name": "HasOptedOutOfCrossRegionMatchmaking",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "pad0x7_ZPBVR[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xd9"
       }
     ]
   },
@@ -249,6 +238,70 @@
         "Type": "struct Timespan",
         "Size": "0x8",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "GameMainEventTypeModel": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "EventName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ExcludedEvents",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ExcludedCrewIds",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "Status",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "ShipSizeLimit",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x31"
+      },
+      {
+        "Name": "pad0x6_RX5BS[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x32"
+      }
+    ]
+  },
+  "ServerQueueWaitTimeModel": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "QueueScopeId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AvgWaitTime",
+        "Type": "struct Timespan",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "MaxWaitTime",
+        "Type": "struct Timespan",
+        "Size": "0x8",
+        "Offset": "0x18"
       }
     ]
   },
@@ -293,78 +346,37 @@
       }
     ]
   },
-  "ServerQueueWaitTimeModel": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "QueueScopeId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AvgWaitTime",
-        "Type": "struct Timespan",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "MaxWaitTime",
-        "Type": "struct Timespan",
-        "Size": "0x8",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "GameMainEventTypeModel": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "EventName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ExcludedEvents",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "ExcludedCrewIds",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "Status",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "ShipSizeLimit",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x31"
-      },
-      {
-        "Name": "pad0x6_SW74I[0x6]",
-        "Type": "char",
-        "Size": "0x6",
-        "Offset": "0x32"
-      }
-    ]
-  },
   "OptionalPlayModeModel": {
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x50_G7UUP[0x50]",
+        "Name": "pad0x50_PMT3H[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "ContestMatchmakingFactionMapEntry": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "GameFaction",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MatchmakingFaction",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_HFWA6[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
       }
     ]
   },
@@ -382,70 +394,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "ServerContendedModel": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Positions",
-        "Type": "TArray<struct Vector2D>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Regions",
-        "Type": "TArray<struct ServerRegionModel>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Resources",
-        "Type": "TArray<int>",
-        "Size": "0x10",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "ServerCrewResponseModel": {
-    "ClassSize": "0x80",
-    "Attributes": [
-      {
-        "Name": "ResultCode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x7_GYLZW[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "Crews",
-        "Type": "TArray<struct ServerCrewModel>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "RetryAfter",
-        "Type": "struct Timespan",
-        "Size": "0x8",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "MigrationThreshold",
-        "Type": "struct Timespan",
-        "Size": "0x8",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "ExpireAfter",
-        "Type": "struct Timespan",
-        "Size": "0x8",
-        "Offset": "0x78"
       }
     ]
   },
@@ -513,7 +461,7 @@
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x3_99M87[0x3]",
+        "Name": "pad0x3_EATCF[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x99"
@@ -531,7 +479,7 @@
         "Offset": "0xac"
       },
       {
-        "Name": "pad0x4_HNIAX[0x4]",
+        "Name": "pad0x4_36448[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xbc"
@@ -552,6 +500,70 @@
         "Type": "TArray<struct GameSubEventTypeModel>",
         "Size": "0x10",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "ServerCrewResponseModel": {
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Name": "ResultCode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_RMHVL[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "Crews",
+        "Type": "TArray<struct ServerCrewModel>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "RetryAfter",
+        "Type": "struct Timespan",
+        "Size": "0x8",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "MigrationThreshold",
+        "Type": "struct Timespan",
+        "Size": "0x8",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "ExpireAfter",
+        "Type": "struct Timespan",
+        "Size": "0x8",
+        "Offset": "0x78"
+      }
+    ]
+  },
+  "ServerContendedModel": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Positions",
+        "Type": "TArray<struct Vector2D>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Regions",
+        "Type": "TArray<struct ServerRegionModel>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Resources",
+        "Type": "TArray<int>",
+        "Size": "0x10",
+        "Offset": "0x20"
       }
     ]
   },

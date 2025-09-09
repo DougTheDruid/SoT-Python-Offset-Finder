@@ -8,7 +8,7 @@ HasPlayerMysteriousNotesRadialContext:
   Super: RadialContextBase
 LookingAtMysteriousNoteInputComponent:
   Attributes:
-  - Name: pad0x30_AVDUM[0x30]
+  - Name: pad0x30_QN9MQ[0x30]
     Offset: '0x290'
     Size: '0x30'
     Type: char
@@ -64,7 +64,7 @@ MysteriousNotesCompletionEventsModelDataAsset:
   Super: DataAsset
 MysteriousNotesService:
   Attributes:
-  - Name: pad0x28_MHY6B[0x28]
+  - Name: pad0x28_5BUGQ[0x28]
     Offset: '0x3a0'
     Size: '0x28'
     Type: char
@@ -80,7 +80,7 @@ MysteriousNotesService:
     Offset: '0x3d8'
     Size: '0x8'
     Type: class MysteriousNotesCompletionEventsModelDataAsset*
-  - Name: pad0x58_0C0W8[0x58]
+  - Name: pad0x58_F7WUZ[0x58]
     Offset: '0x3e0'
     Size: '0x58'
     Type: char
@@ -96,7 +96,7 @@ MysteriousNotesServiceInterface:
   Super: Interface
 PlayerMysteriousNoteComponent:
   Attributes:
-  - Name: pad0x8_XEP6E[0x8]
+  - Name: pad0x8_NQQ6S[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -104,7 +104,7 @@ PlayerMysteriousNoteComponent:
     Offset: '0xc0'
     Size: '0x1'
     Type: bool
-  - Name: pad0xef_N9SWB[0xef]
+  - Name: pad0xef_XHPEZ[0xef]
     Offset: '0xc1'
     Size: '0xef'
     Type: char
@@ -116,7 +116,7 @@ PlayerMysteriousNoteComponent:
     Offset: '0x1c8'
     Size: '0x1'
     Type: bool
-  - Name: pad0xa7_JTUJX[0xa7]
+  - Name: pad0xa7_B00X3[0xa7]
     Offset: '0x1c9'
     Size: '0xa7'
     Type: char
@@ -132,7 +132,7 @@ PlayerMysteriousNoteInterface:
   Super: Interface
 WieldableMysteriousNote:
   Attributes:
-  - Name: pad0x10_MZKAD[0x10]
+  - Name: pad0x10_4ZBUW[0x10]
     Offset: '0x7f0'
     Size: '0x10'
     Type: char
@@ -152,7 +152,7 @@ WieldableMysteriousNote:
     Offset: '0x810'
     Size: '0x4'
     Type: float
-  - Name: pad0x5c_K8A25[0x5c]
+  - Name: pad0x5c_ED3V1[0x5c]
     Offset: '0x814'
     Size: '0x5c'
     Type: char
@@ -168,7 +168,7 @@ WieldableMysteriousNote:
     Offset: '0x880'
     Size: '0x8'
     Type: class InventoryItemComponent*
-  - Name: pad0x108_MDKSK[0x108]
+  - Name: pad0x108_VL52V[0x108]
     Offset: '0x888'
     Size: '0x108'
     Type: char

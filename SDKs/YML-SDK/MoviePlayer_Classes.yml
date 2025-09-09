@@ -10,7 +10,7 @@ MoviePlayerSettings:
     Offset: '0x29'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_TNGSI[0x6]
+  - Name: pad0x6_8OEKW[0x6]
     Offset: '0x2a'
     Size: '0x6'
     Type: char

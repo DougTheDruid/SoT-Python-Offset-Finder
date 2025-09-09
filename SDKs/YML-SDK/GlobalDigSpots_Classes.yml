@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 GlobalDigSpotDebugCheat:
   Attributes:
-  - Name: pad0x8_94ZRU[0x8]
+  - Name: pad0x8_Y92P1[0x8]
     Offset: '0x3a0'
     Size: '0x8'
     Type: char
@@ -28,7 +28,7 @@ GlobalDigSpotDefinitionList:
   Super: DataAsset
 GlobalDigSpotService:
   Attributes:
-  - Name: pad0x8_A2O0S[0x8]
+  - Name: pad0x8_ET6KB[0x8]
     Offset: '0x3a0'
     Size: '0x8'
     Type: char
@@ -44,7 +44,7 @@ GlobalDigSpotService:
     Offset: '0x3b8'
     Size: '0x8'
     Type: class GlobalDigSpotDefinitionList*
-  - Name: pad0x10_16CR2[0x10]
+  - Name: pad0x10_RCY4D[0x10]
     Offset: '0x3c0'
     Size: '0x10'
     Type: char
@@ -70,7 +70,7 @@ GlobalDigSpotSettings:
   Super: DeveloperSettings
 GlobalDigSpotVoyageTriggerActor:
   Attributes:
-  - Name: pad0x18_3H7N9[0x18]
+  - Name: pad0x18_EF8VE[0x18]
     Offset: '0x3f0'
     Size: '0x18'
     Type: char

@@ -7,6 +7,23 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class NudgeableInterface: public Interface
+{
+public:
+};
+
+
+// Size 0xa0 (Full Size[0xc8] - InheritedSize[0x28]
+class NudgePolicy: public Object
+{
+public:
+	char                                                         pad0x90_A9WBE[0x90];                               // 0x28(0x90)
+	class Actor*                                                 OwningActor;                                       // 0xb8(0x8)
+	class SceneComponent*                                        OwnerComponent;                                    // 0xc0(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class NudgePolicyInterface: public Interface
 {
 public:
@@ -19,23 +36,6 @@ class NudgeInterpolationParamsDataAsset: public DataAsset
 public:
 	struct NudgeInterpolationParams                              NudgeInterpParams;                                 // 0x28(0x20)
 	class ForceFeedbackEffect*                                   ControllerForceFeedbackEffect;                     // 0x48(0x8)
-};
-
-
-// Size 0xa0 (Full Size[0xc8] - InheritedSize[0x28]
-class NudgePolicy: public Object
-{
-public:
-	char                                                         pad0x90_98JDA[0x90];                               // 0x28(0x90)
-	class Actor*                                                 OwningActor;                                       // 0xb8(0x8)
-	class SceneComponent*                                        OwnerComponent;                                    // 0xc0(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class NudgeableInterface: public Interface
-{
-public:
 };
 
 

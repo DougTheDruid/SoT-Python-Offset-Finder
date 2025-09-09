@@ -17,7 +17,7 @@ struct CustomServerClientData
 {
 public:
 	struct FString                                               Key;                                               // 0x0(0x10)
-	char                                                         pad0x10_IIJUU[0x10];                               // 0x10(0x10)
+	char                                                         pad0x10_4O2MK[0x10];                               // 0x10(0x10)
 };
 
 
@@ -25,7 +25,7 @@ public:
 struct CustomServerLocalisationModel
 {
 public:
-	char                                                         pad0x50_KG3C9[0x50];                               // 0x0(0x50)
+	char                                                         pad0x50_QD9YU[0x50];                               // 0x0(0x50)
 };
 
 

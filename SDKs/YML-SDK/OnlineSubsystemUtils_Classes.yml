@@ -8,7 +8,7 @@ AchievementBlueprintLibrary:
   Super: BlueprintFunctionLibrary
 AchievementQueryCallbackProxy:
   Attributes:
-  - Name: pad0x38_F5U4W[0x38]
+  - Name: pad0x38_WVO0D[0x38]
     Offset: '0x28'
     Size: '0x38'
     Type: char
@@ -18,7 +18,7 @@ AchievementQueryCallbackProxy:
   Super: OnlineBlueprintCallProxyBase
 AchievementWriteCallbackProxy:
   Attributes:
-  - Name: pad0x58_QUMKV[0x58]
+  - Name: pad0x58_9WNWC[0x58]
     Offset: '0x28'
     Size: '0x58'
     Type: char
@@ -28,7 +28,7 @@ AchievementWriteCallbackProxy:
   Super: OnlineBlueprintCallProxyBase
 ConnectionCallbackProxy:
   Attributes:
-  - Name: pad0x40_BNLBO[0x40]
+  - Name: pad0x40_OCDB2[0x40]
     Offset: '0x28'
     Size: '0x40'
     Type: char
@@ -38,7 +38,7 @@ ConnectionCallbackProxy:
   Super: OnlineBlueprintCallProxyBase
 CreateSessionCallbackProxy:
   Attributes:
-  - Name: pad0x58_MOLBT[0x58]
+  - Name: pad0x58_SVI24[0x58]
     Offset: '0x28'
     Size: '0x58'
     Type: char
@@ -48,7 +48,7 @@ CreateSessionCallbackProxy:
   Super: OnlineBlueprintCallProxyBase
 DestroySessionCallbackProxy:
   Attributes:
-  - Name: pad0x40_N7YHD[0x40]
+  - Name: pad0x40_7J76B[0x40]
     Offset: '0x28'
     Size: '0x40'
     Type: char
@@ -58,7 +58,7 @@ DestroySessionCallbackProxy:
   Super: OnlineBlueprintCallProxyBase
 EndMatchCallbackProxy:
   Attributes:
-  - Name: pad0x50_Y1F0V[0x50]
+  - Name: pad0x50_FTVL9[0x50]
     Offset: '0x28'
     Size: '0x50'
     Type: char
@@ -68,7 +68,7 @@ EndMatchCallbackProxy:
   Super: OnlineBlueprintCallProxyBase
 EndTurnCallbackProxy:
   Attributes:
-  - Name: pad0x48_YL9ES[0x48]
+  - Name: pad0x48_DGSIF[0x48]
     Offset: '0x28'
     Size: '0x48'
     Type: char
@@ -78,7 +78,7 @@ EndTurnCallbackProxy:
   Super: OnlineBlueprintCallProxyBase
 FindSessionsCallbackProxy:
   Attributes:
-  - Name: pad0x60_7R0CQ[0x60]
+  - Name: pad0x60_QQEGF[0x60]
     Offset: '0x28'
     Size: '0x60'
     Type: char
@@ -88,7 +88,7 @@ FindSessionsCallbackProxy:
   Super: OnlineBlueprintCallProxyBase
 FindTurnBasedMatchCallbackProxy:
   Attributes:
-  - Name: pad0x60_KK0TD[0x60]
+  - Name: pad0x60_CWIHU[0x60]
     Offset: '0x28'
     Size: '0x60'
     Type: char
@@ -98,7 +98,7 @@ FindTurnBasedMatchCallbackProxy:
   Super: OnlineBlueprintCallProxyBase
 InAppPurchaseCallbackProxy:
   Attributes:
-  - Name: pad0x60_HQ9V4[0x60]
+  - Name: pad0x60_UA9PQ[0x60]
     Offset: '0x28'
     Size: '0x60'
     Type: char
@@ -108,7 +108,7 @@ InAppPurchaseCallbackProxy:
   Super: Object
 InAppPurchaseQueryCallbackProxy:
   Attributes:
-  - Name: pad0x70_YABC2[0x70]
+  - Name: pad0x70_LNYWX[0x70]
     Offset: '0x28'
     Size: '0x70'
     Type: char
@@ -118,7 +118,7 @@ InAppPurchaseQueryCallbackProxy:
   Super: Object
 InAppPurchaseRestoreCallbackProxy:
   Attributes:
-  - Name: pad0x70_1AIPE[0x70]
+  - Name: pad0x70_AX9QG[0x70]
     Offset: '0x28'
     Size: '0x70'
     Type: char
@@ -128,7 +128,7 @@ InAppPurchaseRestoreCallbackProxy:
   Super: Object
 IpConnection:
   Attributes:
-  - Name: pad0x50_6RLHD[0x50]
+  - Name: pad0x50_LJS53[0x50]
     Offset: '0x34690'
     Size: '0x50'
     Type: char
@@ -146,11 +146,11 @@ IpNetDriver:
     Offset: '0x4e0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_S7GPE[0x3]
+  - Name: pad0x3_E5R99[0x3]
     Offset: '0x4e1'
     Size: '0x3'
     Type: char
-  - Name: pad0x4c_J7M0I[0x4c]
+  - Name: pad0x4c_K6UAZ[0x4c]
     Offset: '0x4e4'
     Size: '0x4c'
     Type: char
@@ -160,7 +160,7 @@ IpNetDriver:
   Super: NetDriver
 JoinSessionCallbackProxy:
   Attributes:
-  - Name: pad0x130_ZMCRK[0x130]
+  - Name: pad0x130_AI6LS[0x130]
     Offset: '0x28'
     Size: '0x130'
     Type: char
@@ -176,7 +176,7 @@ LeaderboardBlueprintLibrary:
   Super: BlueprintFunctionLibrary
 LeaderboardFlushCallbackProxy:
   Attributes:
-  - Name: pad0x38_QUCTM[0x38]
+  - Name: pad0x38_XMDLY[0x38]
     Offset: '0x28'
     Size: '0x38'
     Type: char
@@ -186,7 +186,7 @@ LeaderboardFlushCallbackProxy:
   Super: Object
 LeaderboardQueryCallbackProxy:
   Attributes:
-  - Name: pad0x68_VD36J[0x68]
+  - Name: pad0x68_I91KM[0x68]
     Offset: '0x28'
     Size: '0x68'
     Type: char
@@ -196,7 +196,7 @@ LeaderboardQueryCallbackProxy:
   Super: Object
 LogoutCallbackProxy:
   Attributes:
-  - Name: pad0x38_5Q8VI[0x38]
+  - Name: pad0x38_61KGX[0x38]
     Offset: '0x28'
     Size: '0x38'
     Type: char
@@ -206,7 +206,7 @@ LogoutCallbackProxy:
   Super: BlueprintAsyncActionBase
 OnlineBeacon:
   Attributes:
-  - Name: pad0x8_ZC10H[0x8]
+  - Name: pad0x8_GMIQB[0x8]
     Offset: '0x3a0'
     Size: '0x8'
     Type: char
@@ -222,7 +222,7 @@ OnlineBeacon:
     Offset: '0x3b0'
     Size: '0x8'
     Type: class NetDriver*
-  - Name: pad0x10_JO7MU[0x10]
+  - Name: pad0x10_EOYRH[0x10]
     Offset: '0x3b8'
     Size: '0x10'
     Type: char
@@ -244,7 +244,7 @@ OnlineBeaconClient:
     Offset: '0x3d8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x17_KTPBE[0x17]
+  - Name: pad0x17_BJ5S4[0x17]
     Offset: '0x3d9'
     Size: '0x17'
     Type: char
@@ -258,7 +258,7 @@ OnlineBeaconHost:
     Offset: '0x3c8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_JJMXL[0x4]
+  - Name: pad0x4_JJNOF[0x4]
     Offset: '0x3cc'
     Size: '0x4'
     Type: char
@@ -266,7 +266,7 @@ OnlineBeaconHost:
     Offset: '0x3d0'
     Size: '0x10'
     Type: TArray<class OnlineBeaconClient*>
-  - Name: pad0xa0_P2HB0[0xa0]
+  - Name: pad0xa0_9DS28[0xa0]
     Offset: '0x3e0'
     Size: '0xa0'
     Type: char
@@ -300,7 +300,7 @@ OnlineBlueprintCallProxyBase:
   Super: Object
 OnlineSessionClient:
   Attributes:
-  - Name: pad0x148_AVU8Z[0x148]
+  - Name: pad0x148_641HD[0x148]
     Offset: '0x28'
     Size: '0x148'
     Type: char
@@ -312,7 +312,7 @@ OnlineSessionClient:
     Offset: '0x171'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_O0SEA[0x6]
+  - Name: pad0x6_F4016[0x6]
     Offset: '0x172'
     Size: '0x6'
     Type: char
@@ -322,7 +322,7 @@ OnlineSessionClient:
   Super: OnlineSession
 PartyBeaconClient:
   Attributes:
-  - Name: pad0x10_LAXR9[0x10]
+  - Name: pad0x10_X51AO[0x10]
     Offset: '0x3f0'
     Size: '0x10'
     Type: char
@@ -346,7 +346,7 @@ PartyBeaconClient:
     Offset: '0x442'
     Size: '0x1'
     Type: bool
-  - Name: pad0x5_RM264[0x5]
+  - Name: pad0x5_TJVE6[0x5]
     Offset: '0x443'
     Size: '0x5'
     Type: char
@@ -360,7 +360,7 @@ PartyBeaconHost:
     Offset: '0x3c8'
     Size: '0x8'
     Type: class PartyBeaconState*
-  - Name: pad0x28_UVDLA[0x28]
+  - Name: pad0x28_1GX17[0x28]
     Offset: '0x3d0'
     Size: '0x28'
     Type: char
@@ -410,7 +410,7 @@ PartyBeaconState:
     Offset: '0x48'
     Size: '0x10'
     Type: TArray<struct PartyReservation>
-  - Name: pad0x10_GACPD[0x10]
+  - Name: pad0x10_2RSGQ[0x10]
     Offset: '0x58'
     Size: '0x10'
     Type: char
@@ -420,7 +420,7 @@ PartyBeaconState:
   Super: Object
 QuitMatchCallbackProxy:
   Attributes:
-  - Name: pad0x48_UT10F[0x48]
+  - Name: pad0x48_S6XCU[0x48]
     Offset: '0x28'
     Size: '0x48'
     Type: char
@@ -430,7 +430,7 @@ QuitMatchCallbackProxy:
   Super: OnlineBlueprintCallProxyBase
 ShowLoginUICallbackProxy:
   Attributes:
-  - Name: pad0x30_TSSVR[0x30]
+  - Name: pad0x30_GA4V3[0x30]
     Offset: '0x28'
     Size: '0x30'
     Type: char

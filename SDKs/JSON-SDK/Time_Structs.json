@@ -1,32 +1,32 @@
 {
-  "ReplicatedTimespan": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_RNB4S[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "EventTimeServiceMigrated": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_OVFHZ[0x1]",
+        "Name": "pad0x1_JRHUT[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
       }
     ]
   },
-  "GameTime": {
+  "ReplicatedDateTime": {
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "DateTimeRepresentation",
-        "Type": "struct DateTime",
+        "Name": "pad0x8_ZLQSG[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ReplicatedTimespan": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_ZIMT8[0x8]",
+        "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"
       }
@@ -67,12 +67,12 @@
       }
     ]
   },
-  "ReplicatedDateTime": {
+  "GameTime": {
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_APQZQ[0x8]",
-        "Type": "char",
+        "Name": "DateTimeRepresentation",
+        "Type": "struct DateTime",
         "Size": "0x8",
         "Offset": "0x0"
       }

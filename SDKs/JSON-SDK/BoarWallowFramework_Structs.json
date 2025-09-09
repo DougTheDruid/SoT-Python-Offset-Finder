@@ -15,70 +15,20 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_NT9Z2[0x3]",
+        "Name": "pad0x3_3CWO5[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
       }
     ]
   },
-  "BoarWallowEmergentSpawnIslandSelectedTelemetryEvent": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "SelectedIsland",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "OnIncreasingNumberOfTotalLootItems": {
+  "OnAllBoarsOnIslandKilled": {
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "IslandName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "OnBoarVoyageCompleted": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "VoyageOwningCrewID",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "IslandName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "OnLootHoleSpawned": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "VoyageBoarWallowAndIslandName": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_N0WSQ[0x10]",
-        "Type": "char",
-        "Size": "0x10",
         "Offset": "0x0"
       }
     ]
@@ -93,20 +43,59 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x1f8_WH1PZ[0x1f8]",
+        "Name": "pad0x1f8_BBN5F[0x1f8]",
         "Type": "char",
         "Size": "0x1f8",
         "Offset": "0x8"
       }
     ]
   },
-  "OnIncreasingTotalDugUpLootItems": {
+  "OnIncreasingNumberOfTotalLootItems": {
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "IslandName",
         "Type": "struct FName",
         "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "BoarWallowEmergentSpawnIslandSelectedTelemetryEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "SelectedIsland",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "OnBoarSpawned": {
+    "ClassSize": "0x208",
+    "Attributes": [
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x1fc_WGFKF[0x1fc]",
+        "Type": "char",
+        "Size": "0x1fc",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "VoyageBoarWallowAndIslandName": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_D4LPK[0x10]",
+        "Type": "char",
+        "Size": "0x10",
         "Offset": "0x0"
       }
     ]
@@ -127,14 +116,14 @@
         "Offset": "0x14"
       },
       {
-        "Name": "pad0x3_4NVRI[0x3]",
+        "Name": "pad0x3_4ATL4[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x15"
       }
     ]
   },
-  "OnAllBoarsOnIslandKilled": {
+  "OnIncreasingTotalDugUpLootItems": {
     "ClassSize": "0x8",
     "Attributes": [
       {
@@ -145,54 +134,14 @@
       }
     ]
   },
-  "OnBoarSpawned": {
-    "ClassSize": "0x208",
+  "OnLootHoleTreasureExhumed": {
+    "ClassSize": "0xc",
     "Attributes": [
       {
         "Name": "Location",
         "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x1fc_V2ASK[0x1fc]",
-        "Type": "char",
-        "Size": "0x1fc",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "OnCrewReachingVoyageBoarIsland": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "VoyageOwningCrewID",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "OnBoarVoyageWallowSpawned": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "IslandName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "VoyageOwningCrewID",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x8_JLTCC[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x18"
       }
     ]
   },
@@ -218,6 +167,17 @@
       }
     ]
   },
+  "OnLootHoleSpawned": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "OnBoarVoyageStarted": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -235,13 +195,53 @@
       }
     ]
   },
-  "OnLootHoleTreasureExhumed": {
-    "ClassSize": "0xc",
+  "OnBoarVoyageWallowSpawned": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
+        "Name": "IslandName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "VoyageOwningCrewID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x8_WVR92[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "OnBoarVoyageCompleted": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "VoyageOwningCrewID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "IslandName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "OnCrewReachingVoyageBoarIsland": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "VoyageOwningCrewID",
+        "Type": "struct Guid",
+        "Size": "0x10",
         "Offset": "0x0"
       }
     ]

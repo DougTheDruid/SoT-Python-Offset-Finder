@@ -21,14 +21,14 @@ ChestEntitlementTrinketItem:
   ClassSize: '0x28'
 EventTrinketSetReady:
   Attributes:
-  - Name: pad0x10_FGVWI[0x10]
+  - Name: pad0x10_NPXTL[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
   ClassSize: '0x10'
 RemoveInteractingPlayerFromTrinketMountpointRpc:
   Attributes:
-  - Name: pad0x18_IBW8Y[0x18]
+  - Name: pad0x18_EPU9M[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -43,7 +43,7 @@ RemoveInteractingPlayerFromTrinketMountpointRpc:
   ClassSize: '0x30'
 RequestTrinketChestItemInfoEvent:
   Attributes:
-  - Name: pad0x1_70HTP[0x1]
+  - Name: pad0x1_08F45[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -79,7 +79,7 @@ TrinketLoadout:
     Offset: '0x10'
     Size: '0x10'
     Type: TArray<struct UniqueNetIdRepl>
-  - Name: pad0x28_P5ENK[0x28]
+  - Name: pad0x28_AH5A6[0x28]
     Offset: '0x20'
     Size: '0x28'
     Type: char
@@ -112,7 +112,7 @@ TrinketLoadoutModelEntry:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_8CFSS[0x4]
+  - Name: pad0x4_D0KV6[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -123,7 +123,7 @@ TrinketLoadoutModelEntry:
   ClassSize: '0x20'
 TrinketLoadoutUpdatedEvent:
   Attributes:
-  - Name: pad0x10_05WCC[0x10]
+  - Name: pad0x10_KENLQ[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char

@@ -7,7 +7,7 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GameEventsOnDemandInstanceInterface: public Interface
+class GameEventsOnDemandAvailabilityServiceInterface: public Interface
 {
 public:
 };
@@ -20,13 +20,6 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GameEventsOnDemandAvailabilityServiceInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
 class WaitForGameEventOnDemandToCompleteStepDesc: public TaleQuestStepDesc
 {
@@ -34,48 +27,8 @@ public:
 };
 
 
-// Size 0x158 (Full Size[0x180] - InheritedSize[0x28]
-class GameEventOnDemandAvailabilityHandler: public Object
-{
-public:
-	class GameEventAvailabilityParamsDataAsset*                  AvailabilityParamsAsset;                           // 0x28(0x8)
-	class GameEventOnDemandAvailabilityStateTracker*             AvailabilityStateTracker;                          // 0x30(0x8)
-	class UClass*                                                GameEventType;                                     // 0x38(0x8)
-	char                                                         pad0x60_9VFTH[0x60];                               // 0x40(0x60)
-	char                                                         CompletedState;                                    // 0xa0(0x1)
-	char                                                         pad0xdf_631J8[0xdf];                               // 0xa1(0xdf)
-};
-
-
 // Size 0x0 (Full Size[0x138] - InheritedSize[0x138]
 class GameEventOnDemandVoyageProposalDesc: public VoyageProposalDesc
-{
-public:
-};
-
-
-// Size 0x138 (Full Size[0x160] - InheritedSize[0x28]
-class GameEventOnDemandAvailabilityStateTracker: public Object
-{
-public:
-	char                                                         pad0x88_GPIBM[0x88];                               // 0x28(0x88)
-	class UClass*                                                ShipTypeLimit;                                     // 0xb0(0x8)
-	TArray<struct Guid>                                          OnDemandParticipatingCrewIds;                      // 0xb8(0x10)
-	TArray<struct Guid>                                          EmergentlyParticipatingCrewIds;                    // 0xc8(0x10)
-	char                                                         pad0x88_TV2EN[0x88];                               // 0xd8(0x88)
-};
-
-
-// Size 0x90 (Full Size[0x128] - InheritedSize[0x98]
-class WaitForGameEventOnDemandToCompleteStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x90_RABAS[0x90];                               // 0x98(0x90)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GameEventsOnDemandLoserTunnelServiceInterface: public Interface
 {
 public:
 };
@@ -91,12 +44,59 @@ public:
 	int                                                          ProgressStateLimit;                                // 0x7c(0x4)
 	bool                                                         ShouldApplyShipTypeLimit;                          // 0x80(0x1)
 	bool                                                         ShouldManageEmergentCrewsOnDeactivate;             // 0x81(0x1)
-	char                                                         pad0x2_LER08[0x2];                                 // 0x82(0x2)
+	char                                                         pad0x2_CK9WV[0x2];                                 // 0x82(0x2)
 	float                                                        EmergentCrewLeftRegionCooldown;                    // 0x84(0x4)
 	bool                                                         SendCrewToLoserTunnelOnShipSinking;                // 0x88(0x1)
 	bool                                                         ShouldCompletedBannersPlayAudio;                   // 0x89(0x1)
-	char                                                         pad0x2_9WFCF[0x2];                                 // 0x8a(0x2)
+	char                                                         pad0x2_PP928[0x2];                                 // 0x8a(0x2)
 	float                                                        ActiveEventExclusionRadiusFromIslandDistanceRadiusModifier; // 0x8c(0x4)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class GameEventsOnDemandLoserTunnelServiceInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x138 (Full Size[0x160] - InheritedSize[0x28]
+class GameEventOnDemandAvailabilityStateTracker: public Object
+{
+public:
+	char                                                         pad0x88_FLLX5[0x88];                               // 0x28(0x88)
+	class UClass*                                                ShipTypeLimit;                                     // 0xb0(0x8)
+	TArray<struct Guid>                                          OnDemandParticipatingCrewIds;                      // 0xb8(0x10)
+	TArray<struct Guid>                                          EmergentlyParticipatingCrewIds;                    // 0xc8(0x10)
+	char                                                         pad0x88_GDB96[0x88];                               // 0xd8(0x88)
+};
+
+
+// Size 0x90 (Full Size[0x128] - InheritedSize[0x98]
+class WaitForGameEventOnDemandToCompleteStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x90_HBZS2[0x90];                               // 0x98(0x90)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class GameEventsOnDemandInstanceInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x158 (Full Size[0x180] - InheritedSize[0x28]
+class GameEventOnDemandAvailabilityHandler: public Object
+{
+public:
+	class GameEventAvailabilityParamsDataAsset*                  AvailabilityParamsAsset;                           // 0x28(0x8)
+	class GameEventOnDemandAvailabilityStateTracker*             AvailabilityStateTracker;                          // 0x30(0x8)
+	class UClass*                                                GameEventType;                                     // 0x38(0x8)
+	char                                                         pad0x60_JASI9[0x60];                               // 0x40(0x60)
+	char                                                         CompletedState;                                    // 0xa0(0x1)
+	char                                                         pad0xdf_SW7SK[0xdf];                               // 0xa1(0xdf)
 };
 
 

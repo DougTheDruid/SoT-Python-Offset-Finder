@@ -11,19 +11,19 @@ public:
 };
 
 
-// Size 0x1
-struct EventAthenaLoadingScreenClose
+// Size 0x10
+struct EventAthenaLoadingScreenBlockUntilUIIntialisedClear
 {
 public:
-	char                                                         pad0x1_PAO2W[0x1];                                 // 0x0(0x1)
+	struct FString                                               Description;                                       // 0x0(0x10)
 };
 
 
 // Size 0x1
-struct EventAthenaLoadingScreenOpen
+struct EventAthenaLoadingScreenStateRequest
 {
 public:
-	char                                                         pad0x1_HT0CU[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_E6VSL[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -39,7 +39,23 @@ public:
 	struct SlateFontInfo                                         Font;                                              // 0x48(0x40)
 	struct SlateColor                                            Colour;                                            // 0x88(0x30)
 	float                                                        LineHeightPercentage;                              // 0xb8(0x4)
-	char                                                         pad0x4_CUHA7[0x4];                                 // 0xbc(0x4)
+	char                                                         pad0x4_182M2[0x4];                                 // 0xbc(0x4)
+};
+
+
+// Size 0x1
+struct EventAthenaLoadingScreenClose
+{
+public:
+	char                                                         pad0x1_5D8TA[0x1];                                 // 0x0(0x1)
+};
+
+
+// Size 0x1
+struct EventAthenaLoadingScreenOpen
+{
+public:
+	char                                                         pad0x1_IUVN9[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -48,22 +64,6 @@ struct EventAthenaLoadingScreenStateResponse
 {
 public:
 	bool                                                         IsVisible;                                         // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct EventAthenaLoadingScreenStateRequest
-{
-public:
-	char                                                         pad0x1_JKKCF[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x10
-struct EventAthenaLoadingScreenBlockUntilUIIntialisedClear
-{
-public:
-	struct FString                                               Description;                                       // 0x0(0x10)
 };
 
 

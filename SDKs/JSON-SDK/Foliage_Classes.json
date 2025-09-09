@@ -1,33 +1,65 @@
 {
-  "ProceduralFoliageTile": {
-    "Super": "Object",
-    "FullSize": "0x150",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x128",
+  "ProceduralFoliageVolume": {
+    "Super": "Volume",
+    "FullSize": "0x3e0",
+    "InheritedSize": "0x3d8",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "FoliageSpawner",
-        "Type": "class ProceduralFoliageSpawner*",
+        "Name": "ProceduralComponent",
+        "Type": "class ProceduralFoliageComponent*",
         "Size": "0x8",
+        "Offset": "0x3d8"
+      }
+    ]
+  },
+  "ProceduralFoliageSpawner": {
+    "Super": "Object",
+    "FullSize": "0x68",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "RandomSeed",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x28"
       },
       {
-        "Name": "pad0xa0_6IBVW[0xa0]",
-        "Type": "char",
-        "Size": "0xa0",
+        "Name": "TileSize",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "NumUniqueTiles",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x30"
       },
       {
-        "Name": "InstancesArray",
-        "Type": "TArray<struct ProceduralFoliageInstance>",
-        "Size": "0x10",
-        "Offset": "0xd0"
+        "Name": "pad0x4_ZQT9N[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
       },
       {
-        "Name": "pad0x70_DG3R7[0x70]",
+        "Name": "FoliageTypes",
+        "Type": "TArray<struct FoliageTypeObject>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "bNeedsSimulation",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x1f_4EKO8[0x1f]",
         "Type": "char",
-        "Size": "0x70",
-        "Offset": "0xe0"
+        "Size": "0x1f",
+        "Offset": "0x49"
       }
     ]
   },
@@ -122,10 +154,76 @@
         "Offset": "0x408"
       },
       {
-        "Name": "pad0x4_ZW4B1[0x4]",
+        "Name": "pad0x4_J8BYQ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x40c"
+      }
+    ]
+  },
+  "ProceduralFoliageComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "FoliageSpawner",
+        "Type": "class ProceduralFoliageSpawner*",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "TileOverlap",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "pad0x4_HYBH1[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc4"
+      },
+      {
+        "Name": "SpawningVolume",
+        "Type": "class Volume*",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "ProceduralGuid",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "FoliageInstancedStaticMeshComponent": {
+    "Super": "HierarchicalInstancedStaticMeshComponent",
+    "FullSize": "0x7a0",
+    "InheritedSize": "0x780",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_VSXIX[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x780"
+      }
+    ]
+  },
+  "ProceduralFoliageBlockingVolume": {
+    "Super": "Volume",
+    "FullSize": "0x3e0",
+    "InheritedSize": "0x3d8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "ProceduralFoliageVolume",
+        "Type": "class ProceduralFoliageVolume*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
       }
     ]
   },
@@ -143,7 +241,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_9G724[0x10]",
+        "Name": "pad0x10_GKMAU[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x600"
@@ -187,7 +285,7 @@
         "Offset": "0x44"
       },
       {
-        "Name": "pad0x3_JL7YS[0x3]",
+        "Name": "pad0x3_UVX3O[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x45"
@@ -217,7 +315,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x3_J40QS[0x3]",
+        "Name": "pad0x3_AH606[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x61"
@@ -235,7 +333,7 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x3_XOHRV[0x3]",
+        "Name": "pad0x3_PK15A[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x69"
@@ -253,7 +351,7 @@
         "Offset": "0x74"
       },
       {
-        "Name": "pad0x3_PKH57[0x3]",
+        "Name": "pad0x3_BGG8P[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x75"
@@ -271,7 +369,7 @@
         "Offset": "0x7c"
       },
       {
-        "Name": "pad0x3_5G87E[0x3]",
+        "Name": "pad0x3_VMNG0[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x7d"
@@ -295,7 +393,7 @@
         "Offset": "0x8c"
       },
       {
-        "Name": "pad0x4_7KWO3[0x4]",
+        "Name": "pad0x4_LPUQ2[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x94"
@@ -319,7 +417,7 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x3_JK08U[0x3]",
+        "Name": "pad0x3_UV8EL[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xb1"
@@ -355,7 +453,7 @@
         "Offset": "0xec"
       },
       {
-        "Name": "pad0x3_4NUPG[0x3]",
+        "Name": "pad0x3_ZS3N1[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xed"
@@ -421,7 +519,7 @@
         "Offset": "0xf9"
       },
       {
-        "Name": "pad0x2_ITKO9[0x2]",
+        "Name": "pad0x2_MWZCP[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0xfa"
@@ -439,7 +537,7 @@
         "Offset": "0x100"
       },
       {
-        "Name": "pad0x7_XNOCN[0x7]",
+        "Name": "pad0x7_LIN3I[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x101"
@@ -457,7 +555,7 @@
         "Offset": "0x288"
       },
       {
-        "Name": "pad0x7_B7C7T[0x7]",
+        "Name": "pad0x7_KE4VD[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x289"
@@ -469,7 +567,7 @@
         "Offset": "0x298"
       },
       {
-        "Name": "pad0x3_DAL29[0x3]",
+        "Name": "pad0x3_ZAK5Y[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x299"
@@ -541,7 +639,7 @@
         "Offset": "0x2c1"
       },
       {
-        "Name": "pad0x2_JD8VF[0x2]",
+        "Name": "pad0x2_HHGA7[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x2c2"
@@ -673,62 +771,42 @@
         "Offset": "0x35d"
       },
       {
-        "Name": "pad0x2_3F7CA[0x2]",
+        "Name": "pad0x2_SHZ8L[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x35e"
       }
     ]
   },
-  "ProceduralFoliageBlockingVolume": {
-    "Super": "Volume",
-    "FullSize": "0x3e0",
-    "InheritedSize": "0x3d8",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "ProceduralFoliageVolume",
-        "Type": "class ProceduralFoliageVolume*",
-        "Size": "0x8",
-        "Offset": "0x3d8"
-      }
-    ]
-  },
-  "ProceduralFoliageComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x28",
+  "ProceduralFoliageTile": {
+    "Super": "Object",
+    "FullSize": "0x150",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x128",
     "Attributes": [
       {
         "Name": "FoliageSpawner",
         "Type": "class ProceduralFoliageSpawner*",
         "Size": "0x8",
-        "Offset": "0xb8"
+        "Offset": "0x28"
       },
       {
-        "Name": "TileOverlap",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "pad0x4_LB1F2[0x4]",
+        "Name": "pad0xa0_R4ICS[0xa0]",
         "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xc4"
+        "Size": "0xa0",
+        "Offset": "0x30"
       },
       {
-        "Name": "SpawningVolume",
-        "Type": "class Volume*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "ProceduralGuid",
-        "Type": "struct Guid",
+        "Name": "InstancesArray",
+        "Type": "TArray<struct ProceduralFoliageInstance>",
         "Size": "0x10",
         "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0x70_Y7HNC[0x70]",
+        "Type": "char",
+        "Size": "0x70",
+        "Offset": "0xe0"
       }
     ]
   },
@@ -739,88 +817,10 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x50_06C21[0x50]",
+        "Name": "pad0x50_PPO7X[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x3a0"
-      }
-    ]
-  },
-  "ProceduralFoliageSpawner": {
-    "Super": "Object",
-    "FullSize": "0x68",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "RandomSeed",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "TileSize",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "NumUniqueTiles",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x4_0Q9B6[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "FoliageTypes",
-        "Type": "TArray<struct FoliageTypeObject>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "bNeedsSimulation",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "pad0x1f_8HGL6[0x1f]",
-        "Type": "char",
-        "Size": "0x1f",
-        "Offset": "0x49"
-      }
-    ]
-  },
-  "ProceduralFoliageVolume": {
-    "Super": "Volume",
-    "FullSize": "0x3e0",
-    "InheritedSize": "0x3d8",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "ProceduralComponent",
-        "Type": "class ProceduralFoliageComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d8"
-      }
-    ]
-  },
-  "FoliageInstancedStaticMeshComponent": {
-    "Super": "HierarchicalInstancedStaticMeshComponent",
-    "FullSize": "0x7a0",
-    "InheritedSize": "0x780",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_H5VXJ[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x780"
       }
     ]
   },

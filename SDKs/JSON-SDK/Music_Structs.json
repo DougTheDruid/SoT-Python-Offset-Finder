@@ -1,4 +1,21 @@
 {
+  "MusicZoneEmitterRTPC": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "RTPC",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Value",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "MusicZoneEmitterSwitch": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -16,42 +33,25 @@
       }
     ]
   },
-  "MusicZoneDestroyedEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_KI73N[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "MusicZoneSpawnedEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_F0IFO[0x10]",
+        "Name": "pad0x10_QATC0[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x0"
       }
     ]
   },
-  "MusicZoneEmitterRTPC": {
-    "ClassSize": "0xc",
+  "MusicZoneDestroyedEvent": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "RTPC",
-        "Type": "struct FName",
-        "Size": "0x8",
+        "Name": "pad0x10_WUV0L[0x10]",
+        "Type": "char",
+        "Size": "0x10",
         "Offset": "0x0"
-      },
-      {
-        "Name": "Value",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
       }
     ]
   },

@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 TriggerPlayerControllerHitNotificationNetworkEvent:
   Attributes:
-  - Name: pad0x18_6SLCN[0x18]
+  - Name: pad0x18_1FXW1[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -14,7 +14,7 @@ TriggerPlayerControllerHitNotificationNetworkEvent:
     Offset: '0x19'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_VJ5Z8[0x2]
+  - Name: pad0x2_JLL2E[0x2]
     Offset: '0x1a'
     Size: '0x2'
     Type: char
@@ -22,7 +22,7 @@ TriggerPlayerControllerHitNotificationNetworkEvent:
     Offset: '0x1c'
     Size: '0x10'
     Type: struct Guid
-  - Name: pad0x4_G3B3C[0x4]
+  - Name: pad0x4_HNT96[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char

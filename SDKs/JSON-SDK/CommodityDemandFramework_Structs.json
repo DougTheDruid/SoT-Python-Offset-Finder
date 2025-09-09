@@ -1,47 +1,18 @@
 {
-  "CommodityRedemptionTrackingModel": {
+  "CommodityTypeDataEntry": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x2_TCHK7[0x2]",
-        "Type": "char",
-        "Size": "0x2",
+        "Name": "CommodityType",
+        "Type": "struct FName",
+        "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "NPCName",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x2"
-      },
-      {
-        "Name": "EntitlementOwnershipConfirmed",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3"
-      },
-      {
-        "Name": "pad0x4_TH7B2[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "pad0x8_44BBD[0x8]",
-        "Type": "char",
+        "Name": "DisplayName",
+        "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "EventCommodityCrateRedeemed": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_61280[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
       }
     ]
   },
@@ -59,6 +30,75 @@
         "Type": "TArray<char>",
         "Size": "0x10",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "RedeemCommodityTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Commodity",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RedemptionSucceeded",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_9K3QM[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "TimeInSecondsSinceFirstRedemptionAttempt",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "CommodityTrackingModel": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ItemOfferId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NPCName",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_2AZK3[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "pad0x8_IXZ4C[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "CommoditySelectionType": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "CommodityType",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
       }
     ]
   },
@@ -83,7 +123,7 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x18_V03U3[0x18]",
+        "Name": "pad0x18_8RYAJ[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"
@@ -102,42 +142,48 @@
       }
     ]
   },
-  "CommodityTrackingModel": {
-    "ClassSize": "0x20",
+  "CommodityRedemptionTrackingModel": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "ItemOfferId",
-        "Type": "struct Guid",
-        "Size": "0x10",
+        "Name": "pad0x2_1Z3UT[0x2]",
+        "Type": "char",
+        "Size": "0x2",
         "Offset": "0x0"
       },
       {
         "Name": "NPCName",
         "Type": "byte",
         "Size": "0x1",
+        "Offset": "0x2"
+      },
+      {
+        "Name": "EntitlementOwnershipConfirmed",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3"
+      },
+      {
+        "Name": "pad0x4_KO2NT[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "CommodityOwner",
+        "Type": "struct UniqueNetIdRepl",
+        "Size": "0x18",
         "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x7_O2257[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x11"
-      },
-      {
-        "Name": "pad0x8_XGQLX[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x18"
       }
     ]
   },
-  "CommoditySelectionType": {
-    "ClassSize": "0x8",
+  "EventCommodityCrateRedeemed": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "CommodityType",
-        "Type": "struct FName",
-        "Size": "0x8",
+        "Name": "pad0x18_UOHI9[0x18]",
+        "Type": "char",
+        "Size": "0x18",
         "Offset": "0x0"
       }
     ]
@@ -146,7 +192,7 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x18_93CBX[0x18]",
+        "Name": "pad0x18_E3W54[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"
@@ -177,49 +223,20 @@
       }
     ]
   },
-  "CommodityTypeDataEntry": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CommodityType",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DisplayName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "RedeemCommodityTelemetryEvent": {
+  "ActiveNPCDemands": {
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "Commodity",
-        "Type": "struct FString",
+        "Name": "NPCIdHashes",
+        "Type": "TArray<int>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "RedemptionSucceeded",
-        "Type": "bool",
-        "Size": "0x1",
+        "Name": "NPCDemands",
+        "Type": "TArray<struct ActiveCommodityDemands>",
+        "Size": "0x10",
         "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x7_GSH1O[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x11"
-      },
-      {
-        "Name": "TimeInSecondsSinceFirstRedemptionAttempt",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x18"
       }
     ]
   },
@@ -237,23 +254,6 @@
         "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "ActiveNPCDemands": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "NPCIdHashes",
-        "Type": "TArray<int>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NPCDemands",
-        "Type": "TArray<struct ActiveCommodityDemands>",
-        "Size": "0x10",
-        "Offset": "0x10"
       }
     ]
   },

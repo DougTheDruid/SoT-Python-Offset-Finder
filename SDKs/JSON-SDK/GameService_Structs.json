@@ -1,4 +1,15 @@
 {
+  "GameServiceMap": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "pad0x70_F1BZP[0x70]",
+        "Type": "char",
+        "Size": "0x70",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "GameServiceCoordinatorUnit": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -9,21 +20,10 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x10_QX2VU[0x10]",
+        "Name": "pad0x10_OT0A4[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "GameServiceMap": {
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "pad0x70_Y3NZ1[0x70]",
-        "Type": "char",
-        "Size": "0x70",
-        "Offset": "0x0"
       }
     ]
   },
@@ -37,7 +37,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x10_W8QX3[0x10]",
+        "Name": "pad0x10_SV9AN[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x10"

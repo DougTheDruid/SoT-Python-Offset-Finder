@@ -7,14 +7,21 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DartInterface: public Interface
+class DartProxyServiceInterface: public Interface
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DartAttachedInterface: public Interface
+class DartInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
+class DartRadialPressedNotificationInputId: public NotificationInputId
 {
 public:
 };
@@ -28,9 +35,17 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DartProxyServiceInterface: public Interface
+class DartAttachedInterface: public Interface
 {
 public:
+};
+
+
+// Size 0x18 (Full Size[0x3b8] - InheritedSize[0x3a0]
+class DartProxyService: public Actor
+{
+public:
+	char                                                         pad0x18_ZSS29[0x18];                               // 0x3a0(0x18)
 };
 
 
@@ -45,21 +60,6 @@ public:
 class KilledWithPoisonDartConditionalStatsTrigger: public ConditionalStatsTriggerType
 {
 public:
-};
-
-
-// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class DartRadialPressedNotificationInputId: public NotificationInputId
-{
-public:
-};
-
-
-// Size 0x18 (Full Size[0x3b8] - InheritedSize[0x3a0]
-class DartProxyService: public Actor
-{
-public:
-	char                                                         pad0x18_OANZX[0x18];                               // 0x3a0(0x18)
 };
 
 

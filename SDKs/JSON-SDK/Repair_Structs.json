@@ -9,7 +9,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_M27G3[0x7]",
+        "Name": "pad0x7_VORGT[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -19,58 +19,6 @@
         "Type": "TArray<uintptr_t>",
         "Size": "0x10",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "RepairObjectActionStateConstructionInfo": {
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "pad0x48_6VXCF[0x48]",
-        "Type": "char",
-        "Size": "0x48",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "RepairableObject",
-        "Type": "struct NetSubObjectPtr",
-        "Size": "0x14",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "WieldedItem",
-        "Type": "struct NetActorPtr",
-        "Size": "0x14",
-        "Offset": "0x5c"
-      },
-      {
-        "Name": "InputID",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x70"
-      }
-    ]
-  },
-  "RepairableComponentRepairableStateChangedEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "RepairableComponent",
-        "Type": "class ActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "RepairableState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x7_O2H53[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x9"
       }
     ]
   },
@@ -90,7 +38,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_VFL41[0x4]",
+        "Name": "pad0x4_HPRNP[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
@@ -114,10 +62,33 @@
         "Offset": "0x24"
       },
       {
-        "Name": "pad0x3_5GG9K[0x3]",
+        "Name": "pad0x3_ORVO5[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x25"
+      }
+    ]
+  },
+  "RepairableComponentRepairableStateChangedEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "RepairableComponent",
+        "Type": "class ActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RepairableState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_U723C[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
       }
     ]
   },
@@ -125,7 +96,7 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_W27B6[0x1]",
+        "Name": "pad0x1_4ZMIZ[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
@@ -148,7 +119,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_1Q76W[0x7]",
+        "Name": "pad0x7_5HHE5[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
@@ -169,6 +140,35 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "RepairObjectActionStateConstructionInfo": {
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "pad0x48_Y7QQK[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RepairableObject",
+        "Type": "struct NetSubObjectPtr",
+        "Size": "0x14",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "WieldedItem",
+        "Type": "struct NetActorPtr",
+        "Size": "0x14",
+        "Offset": "0x5c"
+      },
+      {
+        "Name": "InputID",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x70"
       }
     ]
   },

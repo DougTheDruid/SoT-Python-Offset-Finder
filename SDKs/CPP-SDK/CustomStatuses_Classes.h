@@ -14,7 +14,7 @@ public:
 class CustomStatusesService: public Object
 {
 public:
-	char                                                         pad0x8_RU0AN[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_JZBK1[0x8];                                 // 0x28(0x8)
 	class World*                                                 World;                                             // 0x30(0x8)
 };
 

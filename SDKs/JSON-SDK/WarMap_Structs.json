@@ -1,18 +1,12 @@
 {
-  "EventWarMapStateChanged": {
-    "ClassSize": "0x10",
+  "EventLocalPlayerOpenedWarMap": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_72IL2[0x8]",
-        "Type": "char",
+        "Name": "Faction",
+        "Type": "class Company*",
         "Size": "0x8",
         "Offset": "0x0"
-      },
-      {
-        "Name": "WarMapProposalContainer",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x8"
       }
     ]
   },
@@ -20,7 +14,7 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_N7MF5[0x1]",
+        "Name": "pad0x1_RIP45[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
@@ -38,14 +32,20 @@
       }
     ]
   },
-  "EventLocalPlayerOpenedWarMap": {
-    "ClassSize": "0x8",
+  "EventWarMapStateChanged": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Faction",
-        "Type": "class Company*",
+        "Name": "pad0x8_CWCAU[0x8]",
+        "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "WarMapProposalContainer",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },

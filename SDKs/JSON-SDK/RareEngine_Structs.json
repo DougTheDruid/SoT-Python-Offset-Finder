@@ -1,53 +1,41 @@
 {
-  "StaticMeshComponentList": {
-    "ClassSize": "0x10",
+  "MemoryVisualiserStat": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "Components",
-        "Type": "TArray<class StaticMeshComponent*>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "MemoryVisualiserClass": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "ClassType",
-        "Type": "class UClass*",
+        "Name": "StatName",
+        "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
-      },
-      {
-        "Name": "MemoryGatheringMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x7_K7A0J[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x9"
       },
       {
         "Name": "DisplayName",
         "Type": "struct FString",
         "Size": "0x10",
-        "Offset": "0x10"
+        "Offset": "0x8"
       },
       {
         "Name": "MemoryUsageMB",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x20"
+        "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_0F8IC[0x4]",
+        "Name": "pad0x4_HYIAL[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x24"
+        "Offset": "0x1c"
+      }
+    ]
+  },
+  "StaticMeshActorList": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Actors",
+        "Type": "TArray<class StaticMeshActor*>",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },
@@ -170,43 +158,55 @@
       }
     ]
   },
-  "StaticMeshActorList": {
+  "StaticMeshComponentList": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Actors",
-        "Type": "TArray<class StaticMeshActor*>",
+        "Name": "Components",
+        "Type": "TArray<class StaticMeshComponent*>",
         "Size": "0x10",
         "Offset": "0x0"
       }
     ]
   },
-  "MemoryVisualiserStat": {
-    "ClassSize": "0x20",
+  "MemoryVisualiserClass": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "StatName",
-        "Type": "struct FName",
+        "Name": "ClassType",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "MemoryGatheringMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_KUHK6[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
       },
       {
         "Name": "DisplayName",
         "Type": "struct FString",
         "Size": "0x10",
-        "Offset": "0x8"
+        "Offset": "0x10"
       },
       {
         "Name": "MemoryUsageMB",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x18"
+        "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_B6D1L[0x4]",
+        "Name": "pad0x4_IUEC2[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x1c"
+        "Offset": "0x24"
       }
     ]
   },
@@ -238,7 +238,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x3_JYQO8[0x3]",
+        "Name": "pad0x3_P53CG[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x31"
@@ -292,7 +292,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x4_63MDY[0x4]",
+        "Name": "pad0x4_IL50C[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x54"

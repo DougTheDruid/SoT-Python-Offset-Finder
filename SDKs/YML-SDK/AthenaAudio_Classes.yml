@@ -50,7 +50,7 @@ AudioPortalComponent:
     Offset: '0x2dc'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_EBXS2[0x3]
+  - Name: pad0x3_E3T3G[0x3]
     Offset: '0x2dd'
     Size: '0x3'
     Type: char
@@ -74,7 +74,7 @@ AudioPortalComponent:
     Offset: '0x300'
     Size: '0x8'
     Type: class StoryDrivenAudioPortalDataAsset*
-  - Name: pad0x28_6GDCR[0x28]
+  - Name: pad0x28_EXTCK[0x28]
     Offset: '0x308'
     Size: '0x28'
     Type: char
@@ -90,7 +90,7 @@ AudioPortalInterface:
   Super: Interface
 AudioPortalService:
   Attributes:
-  - Name: pad0xb0_78KT3[0xb0]
+  - Name: pad0xb0_X090S[0xb0]
     Offset: '0x28'
     Size: '0xb0'
     Type: char
@@ -112,7 +112,7 @@ AudioSpaceComponent:
     Offset: '0x610'
     Size: '0x8'
     Type: class StoryDrivenAudioPortalDataAsset*
-  - Name: pad0x18_S97M9[0x18]
+  - Name: pad0x18_KHXZR[0x18]
     Offset: '0x618'
     Size: '0x18'
     Type: char
@@ -130,9 +130,23 @@ AudioSpaceTrackerComponent:
   FullSize: '0xc8'
   InheritedSize: '0xb8'
   Super: ActorComponent
+ImmerseCosmeticUnlockerComponent:
+  Attributes:
+  - Name: CosmeticUnlocked
+    Offset: '0xb8'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x1f_7RBT6[0x1f]
+    Offset: '0xb9'
+    Size: '0x1f'
+    Type: char
+  ClassSize: '0x20'
+  FullSize: '0xd8'
+  InheritedSize: '0xb8'
+  Super: ActorComponent
 ImmerseGameService:
   Attributes:
-  - Name: pad0x60_V4JWU[0x60]
+  - Name: pad0x60_TCNA5[0x60]
     Offset: '0x28'
     Size: '0x60'
     Type: char
@@ -140,12 +154,16 @@ ImmerseGameService:
     Offset: '0x88'
     Size: '0x8'
     Type: class Texture2D*
-  - Name: pad0x8_HKEF3[0x8]
+  - Name: LocalCosmeticUnlocker
     Offset: '0x90'
     Size: '0x8'
+    Type: class ImmerseCosmeticUnlockerComponent*
+  - Name: pad0x8_40V2J[0x8]
+    Offset: '0x98'
+    Size: '0x8'
     Type: char
-  ClassSize: '0x70'
-  FullSize: '0x98'
+  ClassSize: '0x78'
+  FullSize: '0xa0'
   InheritedSize: '0x28'
   Super: Object
 ImmerseGameServiceInterface:
@@ -160,7 +178,7 @@ MultiEmitter:
     Offset: '0x3a0'
     Size: '0x8'
     Type: class MultiEmitterRootComponent*
-  - Name: pad0x8_Z3DJ5[0x8]
+  - Name: pad0x8_D20Q7[0x8]
     Offset: '0x3a8'
     Size: '0x8'
     Type: char
@@ -174,7 +192,7 @@ StoryDrivenAudioPortalDataAsset:
     Offset: '0x28'
     Size: '0xc'
     Type: struct FeatureFlag
-  - Name: pad0x4_OXLE5[0x4]
+  - Name: pad0x4_8K1UR[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
@@ -216,7 +234,7 @@ WwiseEventsTriggerRegionComponent:
     Offset: '0x300'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x14_OBYCQ[0x14]
+  - Name: pad0x14_LAB0D[0x14]
     Offset: '0x30c'
     Size: '0x14'
     Type: char
@@ -224,7 +242,7 @@ WwiseEventsTriggerRegionComponent:
     Offset: '0x320'
     Size: '0x8'
     Type: class Character*
-  - Name: pad0x38_UHI1X[0x38]
+  - Name: pad0x38_4Z45S[0x38]
     Offset: '0x328'
     Size: '0x38'
     Type: char

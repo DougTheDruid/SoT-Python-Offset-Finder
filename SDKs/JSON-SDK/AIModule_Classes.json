@@ -1,102 +1,4 @@
 {
-  "BlackboardComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x200",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x148",
-    "Attributes": [
-      {
-        "Name": "BrainComp",
-        "Type": "class BrainComponent*",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "BlackboardAsset",
-        "Type": "class BlackboardData*",
-        "Size": "0x8",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "pad0x20_0X2G5[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "KeyInstances",
-        "Type": "TArray<class BlackboardKeyType*>",
-        "Size": "0x10",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "pad0x108_2VLL3[0x108]",
-        "Type": "char",
-        "Size": "0x108",
-        "Offset": "0xf8"
-      }
-    ]
-  },
-  "AISenseConfig": {
-    "Super": "Object",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "MaxAge",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "bStartsEnabled",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "pad0x3_Y2L4F[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x2d"
-      }
-    ]
-  },
-  "EnvQueryTypes": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "CrowdAgentInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "EnvQueryOption": {
-    "Super": "Object",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Generator",
-        "Type": "class EnvQueryGenerator*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Tests",
-        "Type": "TArray<class EnvQueryTest*>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      }
-    ]
-  },
   "BlackboardData": {
     "Super": "DataAsset",
     "FullSize": "0x48",
@@ -122,7 +24,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_Z59HU[0x7]",
+        "Name": "pad0x7_IZUQU[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
@@ -136,110 +38,19 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "GenericTeamAgentInterface": {
-    "Super": "Interface",
+  "EnvQueryDebugHelpers": {
+    "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "AIController": {
-    "Super": "Controller",
-    "FullSize": "0x490",
-    "InheritedSize": "0x400",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "pad0x28_VTZML[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x400"
-      },
-      {
-        "Name": "bLOSflag",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "bSkipExtraLOSChecks",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "bAllowStrafe",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "bWantsPlayerState",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "bDisableControlRotation",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "pad0x7_AJY3U[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x429"
-      },
-      {
-        "Name": "PathFollowingComponent",
-        "Type": "class PathFollowingComponent*",
-        "Size": "0x8",
-        "Offset": "0x430"
-      },
-      {
-        "Name": "BrainComponent",
-        "Type": "class BrainComponent*",
-        "Size": "0x8",
-        "Offset": "0x438"
-      },
-      {
-        "Name": "PerceptionComponent",
-        "Type": "class AIPerceptionComponent*",
-        "Size": "0x8",
-        "Offset": "0x440"
-      },
-      {
-        "Name": "ActionsComp",
-        "Type": "class PawnActionsComponent*",
-        "Size": "0x8",
-        "Offset": "0x448"
-      },
-      {
-        "Name": "Blackboard",
-        "Type": "class BlackboardComponent*",
-        "Size": "0x8",
-        "Offset": "0x450"
-      },
-      {
-        "Name": "CachedGameplayTasksComponent",
-        "Type": "class GameplayTasksComponent*",
-        "Size": "0x8",
-        "Offset": "0x458"
-      },
-      {
-        "Name": "pad0x10_QZOBV[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x460"
-      },
-      {
-        "Name": "pad0x20_O90YZ[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x470"
-      }
-    ]
+  "AIPerceptionListenerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "EQSRenderingComponent": {
     "Super": "PrimitiveComponent",
@@ -248,33 +59,58 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_WIY6L[0x10]",
+        "Name": "pad0x10_U4Q90[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x5a0"
       }
     ]
   },
-  "VisualLoggerExtension": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "BrainComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x118",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "pad0x8_JW0CQ[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "BlackboardComp",
+        "Type": "class BlackboardComponent*",
+        "Size": "0x8",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "AIOwner",
+        "Type": "class AIController*",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "pad0x48_965MS[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0xd0"
+      }
+    ]
   },
-  "CustomDataProviderObject": {
+  "EnvQuery": {
     "Super": "Object",
-    "FullSize": "0x28",
+    "FullSize": "0x38",
     "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "EnvQueryContext": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Options",
+        "Type": "TArray<class EnvQueryOption*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
   },
   "BehaviorTree": {
     "Super": "Object",
@@ -307,801 +143,10 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x8_UKBN8[0x8]",
+        "Name": "pad0x8_B4S4I[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x58"
-      }
-    ]
-  },
-  "EnvQueryInstanceBlueprintWrapper": {
-    "Super": "Object",
-    "FullSize": "0x70",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "pad0x8_I5KSZ[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "QueryID",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x1c_TFR77[0x1c]",
-        "Type": "char",
-        "Size": "0x1c",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "ItemType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "OptionIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "pad0x4_WW9Q2[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x5c"
-      },
-      {
-        "Name": "pad0x10_GGLRG[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x60"
-      }
-    ]
-  },
-  "PawnActionsComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xf0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "ControlledPawn",
-        "Type": "class Pawn*",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "ActionStacks",
-        "Type": "TArray<struct PawnActionStack>",
-        "Size": "0x10",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "ActionEvents",
-        "Type": "TArray<struct PawnActionEvent>",
-        "Size": "0x10",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "CurrentAction",
-        "Type": "class PawnAction*",
-        "Size": "0x8",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "pad0x8_W380L[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xe8"
-      }
-    ]
-  },
-  "AISenseEvent": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AIHotSpotManager": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AIBlueprintHelperLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AITask": {
-    "Super": "GameplayTask",
-    "FullSize": "0x60",
-    "InheritedSize": "0x58",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "OwnerController",
-        "Type": "class AIController*",
-        "Size": "0x8",
-        "Offset": "0x58"
-      }
-    ]
-  },
-  "BTFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BTNode": {
-    "Super": "Object",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x8_C1X0M[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "NodeName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "TreeAsset",
-        "Type": "class BehaviorTree*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "ParentNode",
-        "Type": "class BTCompositeNode*",
-        "Size": "0x8",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "pad0x8_27DGB[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x50"
-      }
-    ]
-  },
-  "AIPerceptionSystem": {
-    "Super": "Object",
-    "FullSize": "0x128",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x100",
-    "Attributes": [
-      {
-        "Name": "pad0x58_JAOKV[0x58]",
-        "Type": "char",
-        "Size": "0x58",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Senses",
-        "Type": "TArray<class AISense*>",
-        "Size": "0x10",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "PerceptionAgingRate",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "pad0x94_8R1TX[0x94]",
-        "Type": "char",
-        "Size": "0x94",
-        "Offset": "0x94"
-      }
-    ]
-  },
-  "AIDataProvider": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "EnvQueryItemType": {
-    "Super": "Object",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_5DYHH[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "AISense": {
-    "Super": "Object",
-    "FullSize": "0x88",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "DebugDrawColor",
-        "Type": "struct Color",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x4_70ZRH[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "DebugName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "DefaultExpirationAge",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "NotifyType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "pad0x3_HCX9M[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x45"
-      },
-      {
-        "Name": "bWantsNewPawnNotification",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "bAutoRegisterAllPawnsAsSources",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "pad0x7_TC33U[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x49"
-      },
-      {
-        "Name": "PerceptionSystemInstance",
-        "Type": "class AIPerceptionSystem*",
-        "Size": "0x8",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "pad0x30_XR5LF[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x58"
-      }
-    ]
-  },
-  "AISightTargetInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "EQSTestingPawn": {
-    "Super": "Character",
-    "FullSize": "0x610",
-    "InheritedSize": "0x5b0",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "QueryTemplate",
-        "Type": "class EnvQuery*",
-        "Size": "0x8",
-        "Offset": "0x5b0"
-      },
-      {
-        "Name": "QueryParams",
-        "Type": "TArray<struct EnvNamedValue>",
-        "Size": "0x10",
-        "Offset": "0x5b8"
-      },
-      {
-        "Name": "ContextToLinkWithThis",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x5c8"
-      },
-      {
-        "Name": "TimeLimitPerStep",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x5d0"
-      },
-      {
-        "Name": "StepToDebugDraw",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x5d4"
-      },
-      {
-        "Name": "HighlightMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x5d8"
-      },
-      {
-        "Name": "pad0x3_QGPX6[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x5d9"
-      },
-      {
-        "Name": "bDrawLabels",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x5dc"
-      },
-      {
-        "Name": "bDrawFailedItems",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x5dc"
-      },
-      {
-        "Name": "bReRunQueryOnlyOnFinishedMove",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x5dc"
-      },
-      {
-        "Name": "bShouldBeVisibleInGame",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x5dc"
-      },
-      {
-        "Name": "pad0x3_A1O9U[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x5dd"
-      },
-      {
-        "Name": "QueryingMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x5e0"
-      },
-      {
-        "Name": "pad0x2f_SN7RG[0x2f]",
-        "Type": "char",
-        "Size": "0x2f",
-        "Offset": "0x5e1"
-      }
-    ]
-  },
-  "PawnSensingComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x100",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "HearingThreshold",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "LOSHearingThreshold",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xbc"
-      },
-      {
-        "Name": "SightRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "SensingInterval",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc4"
-      },
-      {
-        "Name": "HearingMaxSoundAge",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "bEnableSensingUpdates",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xcc"
-      },
-      {
-        "Name": "bOnlySensePlayers",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xcc"
-      },
-      {
-        "Name": "bSeePawns",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xcc"
-      },
-      {
-        "Name": "bHearNoises",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xcc"
-      },
-      {
-        "Name": "pad0xb_KM7QK[0xb]",
-        "Type": "char",
-        "Size": "0xb",
-        "Offset": "0xcd"
-      },
-      {
-        "Name": "PeripheralVisionAngle",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xf8"
-      },
-      {
-        "Name": "PeripheralVisionCosine",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xfc"
-      }
-    ]
-  },
-  "PawnAction": {
-    "Super": "Object",
-    "FullSize": "0x90",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x68",
-    "Attributes": [
-      {
-        "Name": "ChildAction",
-        "Type": "class PawnAction*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "ParentAction",
-        "Type": "class PawnAction*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "OwnerComponent",
-        "Type": "class PawnActionsComponent*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "Instigator",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "BrainComp",
-        "Type": "class BrainComponent*",
-        "Size": "0x8",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "pad0x28_AG57M[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "bAllowNewSameClassInstance",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "bReplaceActiveSameClassInstance",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "bShouldPauseMovement",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "pad0x17_G5WPP[0x17]",
-        "Type": "char",
-        "Size": "0x17",
-        "Offset": "0x79"
-      }
-    ]
-  },
-  "AIPerceptionComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x1b8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x100",
-    "Attributes": [
-      {
-        "Name": "HearingRange",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "LoSHearingRange",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xbc"
-      },
-      {
-        "Name": "SightRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "LoseSightRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc4"
-      },
-      {
-        "Name": "PeripheralVisionAngle",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "pad0x4_5HNCR[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xcc"
-      },
-      {
-        "Name": "SensesConfig",
-        "Type": "TArray<class AISenseConfig*>",
-        "Size": "0x10",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "DominantSense",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "pad0x10_WZWYC[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "AIOwner",
-        "Type": "class AIController*",
-        "Size": "0x8",
-        "Offset": "0xf8"
-      },
-      {
-        "Name": "pad0x80_CYUJV[0x80]",
-        "Type": "char",
-        "Size": "0x80",
-        "Offset": "0x100"
-      },
-      {
-        "Name": "pad0x38_K8G4W[0x38]",
-        "Type": "char",
-        "Size": "0x38",
-        "Offset": "0x180"
-      }
-    ]
-  },
-  "AIAsyncTaskBlueprintProxy": {
-    "Super": "Object",
-    "FullSize": "0x60",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "pad0x38_7XJ7N[0x38]",
-        "Type": "char",
-        "Size": "0x38",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "EnvQueryDebugHelpers": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AISenseBlueprintListener": {
-    "Super": "UserDefinedStruct",
-    "FullSize": "0xa8",
-    "InheritedSize": "0xa8",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "EnvQueryNode": {
-    "Super": "Object",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "VerNum",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x4_UPP9N[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      }
-    ]
-  },
-  "AIResourceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BrainComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x118",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "pad0x8_VGRWE[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "BlackboardComp",
-        "Type": "class BlackboardComponent*",
-        "Size": "0x8",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "AIOwner",
-        "Type": "class AIController*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "pad0x48_FQBN8[0x48]",
-        "Type": "char",
-        "Size": "0x48",
-        "Offset": "0xd0"
-      }
-    ]
-  },
-  "EnvQueryManager": {
-    "Super": "Object",
-    "FullSize": "0x110",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xe8",
-    "Attributes": [
-      {
-        "Name": "pad0x70_37SQD[0x70]",
-        "Type": "char",
-        "Size": "0x70",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "InstanceCache",
-        "Type": "TArray<struct EnvQueryInstanceCache>",
-        "Size": "0x10",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "LocalContexts",
-        "Type": "TArray<class EnvQueryContext*>",
-        "Size": "0x10",
-        "Offset": "0xa8"
-      },
-      {
-        "Name": "pad0x58_0VHNT[0x58]",
-        "Type": "char",
-        "Size": "0x58",
-        "Offset": "0xb8"
-      }
-    ]
-  },
-  "PathFollowingComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x2a8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x1f0",
-    "Attributes": [
-      {
-        "Name": "pad0x58_T2RZ9[0x58]",
-        "Type": "char",
-        "Size": "0x58",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "MovementComp",
-        "Type": "class NavMovementComponent*",
-        "Size": "0x8",
-        "Offset": "0x110"
-      },
-      {
-        "Name": "pad0x8_9HF07[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x118"
-      },
-      {
-        "Name": "MyNavData",
-        "Type": "class NavigationData*",
-        "Size": "0x8",
-        "Offset": "0x120"
-      },
-      {
-        "Name": "pad0xbc_S9T4E[0xbc]",
-        "Type": "char",
-        "Size": "0xbc",
-        "Offset": "0x128"
-      },
-      {
-        "Name": "bUseVisibilityTestsSimplification",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1e4"
-      },
-      {
-        "Name": "pad0xc3_L4NGJ[0xc3]",
-        "Type": "char",
-        "Size": "0xc3",
-        "Offset": "0x1e5"
       }
     ]
   },
@@ -1184,10 +229,97 @@
         "Offset": "0x90"
       },
       {
-        "Name": "pad0x58_NEBUZ[0x58]",
+        "Name": "pad0x58_TT24N[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0x98"
+      }
+    ]
+  },
+  "VisualLoggerExtension": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PawnActionsComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "ControlledPawn",
+        "Type": "class Pawn*",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "ActionStacks",
+        "Type": "TArray<struct PawnActionStack>",
+        "Size": "0x10",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "ActionEvents",
+        "Type": "TArray<struct PawnActionEvent>",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "CurrentAction",
+        "Type": "class PawnAction*",
+        "Size": "0x8",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "pad0x8_WTSU0[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      }
+    ]
+  },
+  "EnvQueryItemType": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_NR71P[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "BehaviorTreeTypes": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AIResourceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AIAsyncTaskBlueprintProxy": {
+    "Super": "Object",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "pad0x38_KWJGX[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x28"
       }
     ]
   },
@@ -1198,10 +330,142 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_5CKDJ[0x8]",
+        "Name": "pad0x8_EP64J[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
+      }
+    ]
+  },
+  "BTFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PathFollowingComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x2a8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x1f0",
+    "Attributes": [
+      {
+        "Name": "pad0x58_6MX44[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "MovementComp",
+        "Type": "class NavMovementComponent*",
+        "Size": "0x8",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "pad0x8_UNE9Y[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Name": "MyNavData",
+        "Type": "class NavigationData*",
+        "Size": "0x8",
+        "Offset": "0x120"
+      },
+      {
+        "Name": "pad0xbc_7YOOD[0xbc]",
+        "Type": "char",
+        "Size": "0xbc",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "bUseVisibilityTestsSimplification",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1e4"
+      },
+      {
+        "Name": "pad0xc3_S3S5W[0xc3]",
+        "Type": "char",
+        "Size": "0xc3",
+        "Offset": "0x1e5"
+      }
+    ]
+  },
+  "AIHotSpotManager": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PawnAction": {
+    "Super": "Object",
+    "FullSize": "0x90",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Name": "ChildAction",
+        "Type": "class PawnAction*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ParentAction",
+        "Type": "class PawnAction*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "OwnerComponent",
+        "Type": "class PawnActionsComponent*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "Instigator",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "BrainComp",
+        "Type": "class BrainComponent*",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x28_QDC5X[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "bAllowNewSameClassInstance",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "bReplaceActiveSameClassInstance",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "bShouldPauseMovement",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "pad0x17_BAL8B[0x17]",
+        "Type": "char",
+        "Size": "0x17",
+        "Offset": "0x79"
       }
     ]
   },
@@ -1218,7 +482,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_W9JU4[0x4]",
+        "Name": "pad0x4_1LTC7[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
@@ -1234,67 +498,6 @@
         "Type": "TArray<class BehaviorTreeComponent*>",
         "Size": "0x10",
         "Offset": "0x40"
-      }
-    ]
-  },
-  "BehaviorTreeTypes": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AIResource_Logic": {
-    "Super": "GameplayTaskResource",
-    "FullSize": "0x38",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "EnvQuery": {
-    "Super": "Object",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Options",
-        "Type": "TArray<class EnvQueryOption*>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "AIPerceptionListenerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AIPerceptionStimuliSourceComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "bAutoRegisterAsSource",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "pad0x7_RCSZ2[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0xb9"
-      },
-      {
-        "Name": "RegisterAsSourceForSenses",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0xc0"
       }
     ]
   },
@@ -1365,10 +568,629 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x77_6ZGCU[0x77]",
+        "Name": "pad0x77_9336Q[0x77]",
         "Type": "char",
         "Size": "0x77",
         "Offset": "0x69"
+      }
+    ]
+  },
+  "AISenseConfig": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "MaxAge",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "bStartsEnabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "pad0x3_SW45K[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x2d"
+      }
+    ]
+  },
+  "EnvQueryInstanceBlueprintWrapper": {
+    "Super": "Object",
+    "FullSize": "0x70",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x8_G1SV3[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "QueryID",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x1c_PFD8U[0x1c]",
+        "Type": "char",
+        "Size": "0x1c",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "ItemType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "OptionIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "pad0x4_O7COE[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x5c"
+      },
+      {
+        "Name": "pad0x10_7O920[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "AISenseBlueprintListener": {
+    "Super": "UserDefinedStruct",
+    "FullSize": "0xa8",
+    "InheritedSize": "0xa8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AIPerceptionStimuliSourceComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "bAutoRegisterAsSource",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "pad0x7_NOMZ0[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xb9"
+      },
+      {
+        "Name": "RegisterAsSourceForSenses",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0xc0"
+      }
+    ]
+  },
+  "AIResource_Logic": {
+    "Super": "GameplayTaskResource",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AISense": {
+    "Super": "Object",
+    "FullSize": "0x88",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "DebugDrawColor",
+        "Type": "struct Color",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_0B43X[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "DebugName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "DefaultExpirationAge",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "NotifyType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "pad0x3_G2ZC2[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x45"
+      },
+      {
+        "Name": "bWantsNewPawnNotification",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "bAutoRegisterAllPawnsAsSources",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x7_W33FV[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x49"
+      },
+      {
+        "Name": "PerceptionSystemInstance",
+        "Type": "class AIPerceptionSystem*",
+        "Size": "0x8",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "pad0x30_P473Y[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x58"
+      }
+    ]
+  },
+  "AIController": {
+    "Super": "Controller",
+    "FullSize": "0x490",
+    "InheritedSize": "0x400",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "pad0x28_G1Y2G[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "bLOSflag",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x428"
+      },
+      {
+        "Name": "bSkipExtraLOSChecks",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x428"
+      },
+      {
+        "Name": "bAllowStrafe",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x428"
+      },
+      {
+        "Name": "bWantsPlayerState",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x428"
+      },
+      {
+        "Name": "bDisableControlRotation",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x428"
+      },
+      {
+        "Name": "pad0x7_H0S5D[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x429"
+      },
+      {
+        "Name": "PathFollowingComponent",
+        "Type": "class PathFollowingComponent*",
+        "Size": "0x8",
+        "Offset": "0x430"
+      },
+      {
+        "Name": "BrainComponent",
+        "Type": "class BrainComponent*",
+        "Size": "0x8",
+        "Offset": "0x438"
+      },
+      {
+        "Name": "PerceptionComponent",
+        "Type": "class AIPerceptionComponent*",
+        "Size": "0x8",
+        "Offset": "0x440"
+      },
+      {
+        "Name": "ActionsComp",
+        "Type": "class PawnActionsComponent*",
+        "Size": "0x8",
+        "Offset": "0x448"
+      },
+      {
+        "Name": "Blackboard",
+        "Type": "class BlackboardComponent*",
+        "Size": "0x8",
+        "Offset": "0x450"
+      },
+      {
+        "Name": "CachedGameplayTasksComponent",
+        "Type": "class GameplayTasksComponent*",
+        "Size": "0x8",
+        "Offset": "0x458"
+      },
+      {
+        "Name": "pad0x10_8QPNI[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x460"
+      },
+      {
+        "Name": "pad0x20_C1VC2[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x470"
+      }
+    ]
+  },
+  "EnvQueryTypes": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EnvQueryContext": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BlackboardComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x200",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x148",
+    "Attributes": [
+      {
+        "Name": "BrainComp",
+        "Type": "class BrainComponent*",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "BlackboardAsset",
+        "Type": "class BlackboardData*",
+        "Size": "0x8",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "pad0x20_QVDQF[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "KeyInstances",
+        "Type": "TArray<class BlackboardKeyType*>",
+        "Size": "0x10",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "pad0x108_PQ5D2[0x108]",
+        "Type": "char",
+        "Size": "0x108",
+        "Offset": "0xf8"
+      }
+    ]
+  },
+  "AIDataProvider": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EQSTestingPawn": {
+    "Super": "Character",
+    "FullSize": "0x610",
+    "InheritedSize": "0x5b0",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "QueryTemplate",
+        "Type": "class EnvQuery*",
+        "Size": "0x8",
+        "Offset": "0x5b0"
+      },
+      {
+        "Name": "QueryParams",
+        "Type": "TArray<struct EnvNamedValue>",
+        "Size": "0x10",
+        "Offset": "0x5b8"
+      },
+      {
+        "Name": "ContextToLinkWithThis",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x5c8"
+      },
+      {
+        "Name": "TimeLimitPerStep",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x5d0"
+      },
+      {
+        "Name": "StepToDebugDraw",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x5d4"
+      },
+      {
+        "Name": "HighlightMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x5d8"
+      },
+      {
+        "Name": "pad0x3_2KPZV[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5d9"
+      },
+      {
+        "Name": "bDrawLabels",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x5dc"
+      },
+      {
+        "Name": "bDrawFailedItems",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x5dc"
+      },
+      {
+        "Name": "bReRunQueryOnlyOnFinishedMove",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x5dc"
+      },
+      {
+        "Name": "bShouldBeVisibleInGame",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x5dc"
+      },
+      {
+        "Name": "pad0x3_D2FKR[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5dd"
+      },
+      {
+        "Name": "QueryingMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x5e0"
+      },
+      {
+        "Name": "pad0x2f_CPEAO[0x2f]",
+        "Type": "char",
+        "Size": "0x2f",
+        "Offset": "0x5e1"
+      }
+    ]
+  },
+  "PawnSensingComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x100",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "HearingThreshold",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "LOSHearingThreshold",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xbc"
+      },
+      {
+        "Name": "SightRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "SensingInterval",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc4"
+      },
+      {
+        "Name": "HearingMaxSoundAge",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "bEnableSensingUpdates",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xcc"
+      },
+      {
+        "Name": "bOnlySensePlayers",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xcc"
+      },
+      {
+        "Name": "bSeePawns",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xcc"
+      },
+      {
+        "Name": "bHearNoises",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xcc"
+      },
+      {
+        "Name": "pad0xb_BP4IM[0xb]",
+        "Type": "char",
+        "Size": "0xb",
+        "Offset": "0xcd"
+      },
+      {
+        "Name": "PeripheralVisionAngle",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xf8"
+      },
+      {
+        "Name": "PeripheralVisionCosine",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xfc"
+      }
+    ]
+  },
+  "AIPerceptionComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x1b8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x100",
+    "Attributes": [
+      {
+        "Name": "HearingRange",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "LoSHearingRange",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xbc"
+      },
+      {
+        "Name": "SightRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "LoseSightRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc4"
+      },
+      {
+        "Name": "PeripheralVisionAngle",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "pad0x4_IH7PI[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xcc"
+      },
+      {
+        "Name": "SensesConfig",
+        "Type": "TArray<class AISenseConfig*>",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "DominantSense",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "pad0x10_MFBG1[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "AIOwner",
+        "Type": "class AIController*",
+        "Size": "0x8",
+        "Offset": "0xf8"
+      },
+      {
+        "Name": "pad0x80_04CIV[0x80]",
+        "Type": "char",
+        "Size": "0x80",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "pad0x38_LBAG1[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x180"
+      }
+    ]
+  },
+  "EnvQueryOption": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Generator",
+        "Type": "class EnvQueryGenerator*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Tests",
+        "Type": "TArray<class EnvQueryTest*>",
+        "Size": "0x10",
+        "Offset": "0x30"
       }
     ]
   },
@@ -1379,12 +1201,991 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "AISightTargetInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GenericTeamAgentInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AITask": {
+    "Super": "GameplayTask",
+    "FullSize": "0x60",
+    "InheritedSize": "0x58",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "OwnerController",
+        "Type": "class AIController*",
+        "Size": "0x8",
+        "Offset": "0x58"
+      }
+    ]
+  },
+  "AISenseEvent": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EnvQueryManager": {
+    "Super": "Object",
+    "FullSize": "0x110",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xe8",
+    "Attributes": [
+      {
+        "Name": "pad0x70_RCHQR[0x70]",
+        "Type": "char",
+        "Size": "0x70",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "InstanceCache",
+        "Type": "TArray<struct EnvQueryInstanceCache>",
+        "Size": "0x10",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "LocalContexts",
+        "Type": "TArray<class EnvQueryContext*>",
+        "Size": "0x10",
+        "Offset": "0xa8"
+      },
+      {
+        "Name": "pad0x58_DBET8[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0xb8"
+      }
+    ]
+  },
+  "CustomDataProviderObject": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AIPerceptionSystem": {
+    "Super": "Object",
+    "FullSize": "0x128",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x100",
+    "Attributes": [
+      {
+        "Name": "pad0x58_BHV1W[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Senses",
+        "Type": "TArray<class AISense*>",
+        "Size": "0x10",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "PerceptionAgingRate",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "pad0x94_79JIP[0x94]",
+        "Type": "char",
+        "Size": "0x94",
+        "Offset": "0x94"
+      }
+    ]
+  },
+  "BTNode": {
+    "Super": "Object",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x8_VLLKE[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "NodeName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "TreeAsset",
+        "Type": "class BehaviorTree*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "ParentNode",
+        "Type": "class BTCompositeNode*",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x8_17IWQ[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x50"
+      }
+    ]
+  },
+  "AIBlueprintHelperLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EnvQueryNode": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "VerNum",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_5FXI0[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      }
+    ]
+  },
+  "CrowdAgentInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AISenseConfig_Blueprint": {
+    "Super": "AISenseConfig",
+    "FullSize": "0x38",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Implementation",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "EnvQueryTest": {
+    "Super": "EnvQueryNode",
+    "FullSize": "0x170",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x140",
+    "Attributes": [
+      {
+        "Name": "TestOrder",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "TestPurpose",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "MultipleContextFilterOp",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x35"
+      },
+      {
+        "Name": "MultipleContextScoreOp",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x36"
+      },
+      {
+        "Name": "FilterType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x37"
+      },
+      {
+        "Name": "BoolValue",
+        "Type": "struct AIDataProviderBoolValue",
+        "Size": "0x30",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "FloatValueMin",
+        "Type": "struct AIDataProviderFloatValue",
+        "Size": "0x30",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "FloatValueMax",
+        "Type": "struct AIDataProviderFloatValue",
+        "Size": "0x30",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x1_5JDKQ[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "ScoringEquation",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xc9"
+      },
+      {
+        "Name": "ClampMinType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xca"
+      },
+      {
+        "Name": "ClampMaxType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xcb"
+      },
+      {
+        "Name": "pad0x4_RU2NZ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xcc"
+      },
+      {
+        "Name": "ScoreClampMin",
+        "Type": "struct AIDataProviderFloatValue",
+        "Size": "0x30",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "ScoreClampMax",
+        "Type": "struct AIDataProviderFloatValue",
+        "Size": "0x30",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "ScoringFactor",
+        "Type": "struct AIDataProviderFloatValue",
+        "Size": "0x30",
+        "Offset": "0x130"
+      },
+      {
+        "Name": "pad0x8_UMGO7[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x160"
+      },
+      {
+        "Name": "bWorkOnFloatValues",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x168"
+      },
+      {
+        "Name": "pad0x7_65UI7[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x169"
+      }
+    ]
+  },
+  "AISense_Sight": {
+    "Super": "AISense",
+    "FullSize": "0x158",
+    "InheritedSize": "0x88",
+    "ClassSize": "0xd0",
+    "Attributes": [
+      {
+        "Name": "pad0xb0_YXG19[0xb0]",
+        "Type": "char",
+        "Size": "0xb0",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "MaxTracesPerTick",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "HighImportanceQueryDistanceThreshold",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x13c"
+      },
+      {
+        "Name": "pad0x4_V6YWG[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x140"
+      },
+      {
+        "Name": "HighImportanceQueryDistanceThresholdForStealthMode",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x144"
+      },
+      {
+        "Name": "pad0x4_VK8J0[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x148"
+      },
+      {
+        "Name": "MaxQueryImportance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14c"
+      },
+      {
+        "Name": "SightLimitQueryImportance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "pad0x4_JCFOZ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x154"
+      }
+    ]
+  },
+  "BlackboardKeyType_Int": {
+    "Super": "BlackboardKeyType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "BlackboardKeyType_Vector": {
     "Super": "BlackboardKeyType",
     "FullSize": "0x30",
     "InheritedSize": "0x30",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "DetourCrowdAIController": {
+    "Super": "AIController",
+    "FullSize": "0x490",
+    "InheritedSize": "0x490",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AISenseConfig_Hearing": {
+    "Super": "AISenseConfig",
+    "FullSize": "0x50",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Implementation",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "HearingRange",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "HearingRangeForCrouching",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "LoSHearingRange",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "bUseLoSHearing",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "pad0x3_PZN1U[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x45"
+      },
+      {
+        "Name": "DetectionByAffiliation",
+        "Type": "struct AISenseAffiliationFilter",
+        "Size": "0x4",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x4_MBQ4L[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      }
+    ]
+  },
+  "AISenseConfig_Touch": {
+    "Super": "AISenseConfig",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BlackboardKeyType_Rotator": {
+    "Super": "BlackboardKeyType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PawnAction_BlueprintBase": {
+    "Super": "PawnAction",
+    "FullSize": "0x90",
+    "InheritedSize": "0x90",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BTAuxiliaryNode": {
+    "Super": "BTNode",
+    "FullSize": "0x60",
+    "InheritedSize": "0x58",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_COU8S[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x58"
+      }
+    ]
+  },
+  "CrowdFollowingComponent": {
+    "Super": "PathFollowingComponent",
+    "FullSize": "0x2f8",
+    "InheritedSize": "0x2a8",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x8_7U8O3[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x2a8"
+      },
+      {
+        "Name": "CrowdAgentMoveDirection",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x2b0"
+      },
+      {
+        "Name": "pad0x4_MJILM[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2bc"
+      },
+      {
+        "Name": "CharacterMovement",
+        "Type": "class CharacterMovementComponent*",
+        "Size": "0x8",
+        "Offset": "0x2c0"
+      },
+      {
+        "Name": "AvoidanceGroup",
+        "Type": "struct NavAvoidanceMask",
+        "Size": "0x4",
+        "Offset": "0x2c8"
+      },
+      {
+        "Name": "GroupsToAvoid",
+        "Type": "struct NavAvoidanceMask",
+        "Size": "0x4",
+        "Offset": "0x2cc"
+      },
+      {
+        "Name": "GroupsToIgnore",
+        "Type": "struct NavAvoidanceMask",
+        "Size": "0x4",
+        "Offset": "0x2d0"
+      },
+      {
+        "Name": "pad0x24_5K5WY[0x24]",
+        "Type": "char",
+        "Size": "0x24",
+        "Offset": "0x2d4"
+      }
+    ]
+  },
+  "BlackboardKeyType_Bool": {
+    "Super": "BlackboardKeyType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AISense_Touch": {
+    "Super": "AISense",
+    "FullSize": "0x98",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "RegisteredEvents",
+        "Type": "TArray<struct AITouchEvent>",
+        "Size": "0x10",
+        "Offset": "0x88"
+      }
+    ]
+  },
+  "AISenseConfig_Team": {
+    "Super": "AISenseConfig",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AISense_Prediction": {
+    "Super": "AISense",
+    "FullSize": "0x98",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "RegisteredEvents",
+        "Type": "TArray<struct AIPredictionEvent>",
+        "Size": "0x10",
+        "Offset": "0x88"
+      }
+    ]
+  },
+  "BTCompositeNode": {
+    "Super": "BTNode",
+    "FullSize": "0x88",
+    "InheritedSize": "0x58",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Children",
+        "Type": "TArray<struct BTCompositeChild>",
+        "Size": "0x10",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "Services",
+        "Type": "TArray<class BTService*>",
+        "Size": "0x10",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "pad0x10_W0RH3[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x78"
+      }
+    ]
+  },
+  "EnvQueryContext_Querier": {
+    "Super": "EnvQueryContext",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BTTaskNode": {
+    "Super": "BTNode",
+    "FullSize": "0x60",
+    "InheritedSize": "0x58",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_4HLTS[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x58"
+      }
+    ]
+  },
+  "BlackboardKeyType_String": {
+    "Super": "BlackboardKeyType",
+    "FullSize": "0x40",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "StringValue",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "PawnAction_Sequence": {
+    "Super": "PawnAction",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x90",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "ActionSequence",
+        "Type": "TArray<class PawnAction*>",
+        "Size": "0x10",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "ChildFailureHandlingMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "pad0x7_B7I2X[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xa1"
+      },
+      {
+        "Name": "RecentActionCopy",
+        "Type": "class PawnAction*",
+        "Size": "0x8",
+        "Offset": "0xa8"
+      },
+      {
+        "Name": "pad0x8_WXVZ5[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb0"
+      }
+    ]
+  },
+  "EnvQueryGenerator": {
+    "Super": "EnvQueryNode",
+    "FullSize": "0x58",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "OptionName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "NonShippingOnly",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x3_3DYGX[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x41"
+      },
+      {
+        "Name": "Feature",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "ItemType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x50"
+      }
+    ]
+  },
+  "BehaviorTreeComponent": {
+    "Super": "BrainComponent",
+    "FullSize": "0x278",
+    "InheritedSize": "0x118",
+    "ClassSize": "0x160",
+    "Attributes": [
+      {
+        "Name": "pad0x20_PO2O8[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x118"
+      },
+      {
+        "Name": "NodeInstances",
+        "Type": "TArray<class BTNode*>",
+        "Size": "0x10",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "pad0x130_BGHDP[0x130]",
+        "Type": "char",
+        "Size": "0x130",
+        "Offset": "0x148"
+      }
+    ]
+  },
+  "BlackboardKeyType_Name": {
+    "Super": "BlackboardKeyType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BlackboardKeyType_Class": {
+    "Super": "BlackboardKeyType",
+    "FullSize": "0x38",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "BaseClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "EnvQueryItemType_VectorBase": {
+    "Super": "EnvQueryItemType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AISenseConfig_Sight": {
+    "Super": "AISenseConfig",
+    "FullSize": "0x60",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Implementation",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "SightRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "LoseSightRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "PeripheralVisionAngleDegrees",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "SightRadiusForCrouching",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "LoseSightRadiusForCrouching",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "PeripheralVisionAngleDegreesForCrouching",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      },
+      {
+        "Name": "DetectionByAffiliation",
+        "Type": "struct AISenseAffiliationFilter",
+        "Size": "0x4",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "AutoSuccessRangeFromLastSeenLocation",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x54"
+      },
+      {
+        "Name": "AutoSuccessRangeFromLastSeenLocationForCrouching",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "pad0x4_UNC3N[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x5c"
+      }
+    ]
+  },
+  "AITask_MoveTo": {
+    "Super": "AITask",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x20_MQT5B[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "MoveGoalLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "pad0xc_LL2C7[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x8c"
+      },
+      {
+        "Name": "MoveGoalActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "MoveAcceptanceRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "bShouldStopOnOverlap",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xa4"
+      },
+      {
+        "Name": "bShouldAcceptPartialPath",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xa5"
+      },
+      {
+        "Name": "bShouldUsePathfinding",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xa6"
+      },
+      {
+        "Name": "pad0x9_J4YWJ[0x9]",
+        "Type": "char",
+        "Size": "0x9",
+        "Offset": "0xa7"
+      }
+    ]
+  },
+  "AISense_Team": {
+    "Super": "AISense",
+    "FullSize": "0x98",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "RegisteredEvents",
+        "Type": "TArray<struct AITeamStimulusEvent>",
+        "Size": "0x10",
+        "Offset": "0x88"
+      }
+    ]
+  },
+  "AISense_Damage": {
+    "Super": "AISense",
+    "FullSize": "0x98",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "RegisteredEvents",
+        "Type": "TArray<struct AIDamageEvent>",
+        "Size": "0x10",
+        "Offset": "0x88"
+      }
+    ]
+  },
+  "EnvQueryContext_Item": {
+    "Super": "EnvQueryContext",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AIDataProvider_QueryParams": {
+    "Super": "AIDataProvider",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ParamName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "FloatValue",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "IntValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "BoolValue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x7_TLBES[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x39"
+      }
+    ]
   },
   "PawnAction_Move": {
     "Super": "PawnAction",
@@ -1459,391 +2260,10 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x2f_9JFR4[0x2f]",
+        "Name": "pad0x2f_UIYKF[0x2f]",
         "Type": "char",
         "Size": "0x2f",
         "Offset": "0xb1"
-      }
-    ]
-  },
-  "AISenseEvent_Hearing": {
-    "Super": "AISenseEvent",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Event",
-        "Type": "struct AINoiseEvent",
-        "Size": "0x30",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "BTAuxiliaryNode": {
-    "Super": "BTNode",
-    "FullSize": "0x60",
-    "InheritedSize": "0x58",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_NC2BQ[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x58"
-      }
-    ]
-  },
-  "AISense_Team": {
-    "Super": "AISense",
-    "FullSize": "0x98",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "RegisteredEvents",
-        "Type": "TArray<struct AITeamStimulusEvent>",
-        "Size": "0x10",
-        "Offset": "0x88"
-      }
-    ]
-  },
-  "DetourCrowdAIController": {
-    "Super": "AIController",
-    "FullSize": "0x490",
-    "InheritedSize": "0x490",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AISenseEvent_Damage": {
-    "Super": "AISenseEvent",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Event",
-        "Type": "struct AIDamageEvent",
-        "Size": "0x30",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "EnvQueryTest": {
-    "Super": "EnvQueryNode",
-    "FullSize": "0x170",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x140",
-    "Attributes": [
-      {
-        "Name": "TestOrder",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "TestPurpose",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "MultipleContextFilterOp",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x35"
-      },
-      {
-        "Name": "MultipleContextScoreOp",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x36"
-      },
-      {
-        "Name": "FilterType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x37"
-      },
-      {
-        "Name": "BoolValue",
-        "Type": "struct AIDataProviderBoolValue",
-        "Size": "0x30",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "FloatValueMin",
-        "Type": "struct AIDataProviderFloatValue",
-        "Size": "0x30",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "FloatValueMax",
-        "Type": "struct AIDataProviderFloatValue",
-        "Size": "0x30",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "pad0x1_6OLKO[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "ScoringEquation",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xc9"
-      },
-      {
-        "Name": "ClampMinType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xca"
-      },
-      {
-        "Name": "ClampMaxType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xcb"
-      },
-      {
-        "Name": "pad0x4_FNJLB[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xcc"
-      },
-      {
-        "Name": "ScoreClampMin",
-        "Type": "struct AIDataProviderFloatValue",
-        "Size": "0x30",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "ScoreClampMax",
-        "Type": "struct AIDataProviderFloatValue",
-        "Size": "0x30",
-        "Offset": "0x100"
-      },
-      {
-        "Name": "ScoringFactor",
-        "Type": "struct AIDataProviderFloatValue",
-        "Size": "0x30",
-        "Offset": "0x130"
-      },
-      {
-        "Name": "pad0x8_BR96J[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x160"
-      },
-      {
-        "Name": "bWorkOnFloatValues",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x168"
-      },
-      {
-        "Name": "pad0x7_C8PM6[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x169"
-      }
-    ]
-  },
-  "BTCompositeNode": {
-    "Super": "BTNode",
-    "FullSize": "0x88",
-    "InheritedSize": "0x58",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Children",
-        "Type": "TArray<struct BTCompositeChild>",
-        "Size": "0x10",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "Services",
-        "Type": "TArray<class BTService*>",
-        "Size": "0x10",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "pad0x10_FA0KW[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x78"
-      }
-    ]
-  },
-  "AISenseConfig_Blueprint": {
-    "Super": "AISenseConfig",
-    "FullSize": "0x38",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Implementation",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "AISense_Prediction": {
-    "Super": "AISense",
-    "FullSize": "0x98",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "RegisteredEvents",
-        "Type": "TArray<struct AIPredictionEvent>",
-        "Size": "0x10",
-        "Offset": "0x88"
-      }
-    ]
-  },
-  "BlackboardKeyType_Rotator": {
-    "Super": "BlackboardKeyType",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BehaviorTreeComponent": {
-    "Super": "BrainComponent",
-    "FullSize": "0x278",
-    "InheritedSize": "0x118",
-    "ClassSize": "0x160",
-    "Attributes": [
-      {
-        "Name": "pad0x20_GP8PE[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x118"
-      },
-      {
-        "Name": "NodeInstances",
-        "Type": "TArray<class BTNode*>",
-        "Size": "0x10",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "pad0x130_KS8AE[0x130]",
-        "Type": "char",
-        "Size": "0x130",
-        "Offset": "0x148"
-      }
-    ]
-  },
-  "AISenseConfig_Damage": {
-    "Super": "AISenseConfig",
-    "FullSize": "0x38",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Implementation",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "AISenseConfig_Sight": {
-    "Super": "AISenseConfig",
-    "FullSize": "0x60",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Implementation",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "SightRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "LoseSightRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "PeripheralVisionAngleDegrees",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "SightRadiusForCrouching",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "LoseSightRadiusForCrouching",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "PeripheralVisionAngleDegreesForCrouching",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4c"
-      },
-      {
-        "Name": "DetectionByAffiliation",
-        "Type": "struct AISenseAffiliationFilter",
-        "Size": "0x4",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "AutoSuccessRangeFromLastSeenLocation",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x54"
-      },
-      {
-        "Name": "AutoSuccessRangeFromLastSeenLocationForCrouching",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "pad0x4_XQI6J[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x5c"
-      }
-    ]
-  },
-  "EnvQueryContext_Querier": {
-    "Super": "EnvQueryContext",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BlackboardKeyType_Class": {
-    "Super": "BlackboardKeyType",
-    "FullSize": "0x38",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "BaseClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x30"
       }
     ]
   },
@@ -1867,19 +2287,106 @@
       }
     ]
   },
-  "EnvQueryContext_Item": {
+  "BlackboardKeyType_Object": {
+    "Super": "BlackboardKeyType",
+    "FullSize": "0x38",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "BaseClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "EnvQueryContext_BlueprintBase": {
     "Super": "EnvQueryContext",
-    "FullSize": "0x28",
+    "FullSize": "0x30",
     "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_P5QKN[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "PawnAction_Wait": {
+    "Super": "PawnAction",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x90",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "TimeToWait",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "pad0xc_CQDLL[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x94"
+      }
+    ]
+  },
+  "PawnAction_Repeat": {
+    "Super": "PawnAction",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x90",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ActionToRepeat",
+        "Type": "class PawnAction*",
+        "Size": "0x8",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "RecentActionCopy",
+        "Type": "class PawnAction*",
+        "Size": "0x8",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "ChildFailureHandlingMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "pad0xf_HB1PV[0xf]",
+        "Type": "char",
+        "Size": "0xf",
+        "Offset": "0xa1"
+      }
+    ]
+  },
+  "BlackboardKeyType_Float": {
+    "Super": "BlackboardKeyType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "PawnAction_BlueprintBase": {
-    "Super": "PawnAction",
-    "FullSize": "0x90",
-    "InheritedSize": "0x90",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "AISenseEvent_Damage": {
+    "Super": "AISenseEvent",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Event",
+        "Type": "struct AIDamageEvent",
+        "Size": "0x30",
+        "Offset": "0x28"
+      }
+    ]
   },
   "AIDataProvider_QueryParamFromCustomObjectProperty": {
     "Super": "AIDataProvider",
@@ -1912,280 +2419,82 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_QJF6A[0x7]",
+        "Name": "pad0x7_1G7JN[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
       }
     ]
   },
-  "BlackboardKeyType_Bool": {
-    "Super": "BlackboardKeyType",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "CrowdFollowingComponent": {
-    "Super": "PathFollowingComponent",
-    "FullSize": "0x2f8",
-    "InheritedSize": "0x2a8",
-    "ClassSize": "0x50",
+  "AISense_Hearing": {
+    "Super": "AISense",
+    "FullSize": "0x120",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x98",
     "Attributes": [
       {
-        "Name": "pad0x8_KQ1II[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x2a8"
-      },
-      {
-        "Name": "CrowdAgentMoveDirection",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x2b0"
-      },
-      {
-        "Name": "pad0x4_LL3T3[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x2bc"
-      },
-      {
-        "Name": "CharacterMovement",
-        "Type": "class CharacterMovementComponent*",
-        "Size": "0x8",
-        "Offset": "0x2c0"
-      },
-      {
-        "Name": "AvoidanceGroup",
-        "Type": "struct NavAvoidanceMask",
-        "Size": "0x4",
-        "Offset": "0x2c8"
-      },
-      {
-        "Name": "GroupsToAvoid",
-        "Type": "struct NavAvoidanceMask",
-        "Size": "0x4",
-        "Offset": "0x2cc"
-      },
-      {
-        "Name": "GroupsToIgnore",
-        "Type": "struct NavAvoidanceMask",
-        "Size": "0x4",
-        "Offset": "0x2d0"
-      },
-      {
-        "Name": "pad0x24_000K1[0x24]",
-        "Type": "char",
-        "Size": "0x24",
-        "Offset": "0x2d4"
-      }
-    ]
-  },
-  "PawnAction_Repeat": {
-    "Super": "PawnAction",
-    "FullSize": "0xb0",
-    "InheritedSize": "0x90",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ActionToRepeat",
-        "Type": "class PawnAction*",
-        "Size": "0x8",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "RecentActionCopy",
-        "Type": "class PawnAction*",
-        "Size": "0x8",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "ChildFailureHandlingMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xa0"
-      },
-      {
-        "Name": "pad0xf_BV2C4[0xf]",
-        "Type": "char",
-        "Size": "0xf",
-        "Offset": "0xa1"
-      }
-    ]
-  },
-  "PawnAction_Sequence": {
-    "Super": "PawnAction",
-    "FullSize": "0xb8",
-    "InheritedSize": "0x90",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "ActionSequence",
-        "Type": "TArray<class PawnAction*>",
-        "Size": "0x10",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "ChildFailureHandlingMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xa0"
-      },
-      {
-        "Name": "pad0x7_D1B3Y[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0xa1"
-      },
-      {
-        "Name": "RecentActionCopy",
-        "Type": "class PawnAction*",
-        "Size": "0x8",
-        "Offset": "0xa8"
-      },
-      {
-        "Name": "pad0x8_39YLA[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb0"
-      }
-    ]
-  },
-  "AIDataProvider_QueryParams": {
-    "Super": "AIDataProvider",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "ParamName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "FloatValue",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "IntValue",
+        "Name": "MaxNoisesPerTick",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "BoolValue",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x7_8AG80[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x39"
-      }
-    ]
-  },
-  "AISense_Touch": {
-    "Super": "AISense",
-    "FullSize": "0x98",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "RegisteredEvents",
-        "Type": "TArray<struct AITouchEvent>",
-        "Size": "0x10",
         "Offset": "0x88"
-      }
-    ]
-  },
-  "AITask_MoveTo": {
-    "Super": "AITask",
-    "FullSize": "0xb0",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x20_AWSTH[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x60"
       },
       {
-        "Name": "MoveGoalLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "pad0xc_VO91A[0xc]",
-        "Type": "char",
-        "Size": "0xc",
+        "Name": "MaxNoisesStored",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x8c"
       },
       {
-        "Name": "MoveGoalActor",
-        "Type": "class Actor*",
+        "Name": "pad0x8_K8EBH[0x8]",
+        "Type": "char",
         "Size": "0x8",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "NoiseEventsArrayA",
+        "Type": "TArray<struct AINoiseEvent>",
+        "Size": "0x10",
         "Offset": "0x98"
       },
       {
-        "Name": "MoveAcceptanceRadius",
+        "Name": "NoiseEventsArrayB",
+        "Type": "TArray<struct AINoiseEvent>",
+        "Size": "0x10",
+        "Offset": "0xa8"
+      },
+      {
+        "Name": "pad0x10_YXXBH[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "SpeedOfSoundSq",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xa0"
+        "Offset": "0xc8"
       },
       {
-        "Name": "bShouldStopOnOverlap",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xa4"
-      },
-      {
-        "Name": "bShouldAcceptPartialPath",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xa5"
-      },
-      {
-        "Name": "bShouldUsePathfinding",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xa6"
-      },
-      {
-        "Name": "pad0x9_YTF15[0x9]",
+        "Name": "pad0x54_KMFQI[0x54]",
         "Type": "char",
-        "Size": "0x9",
-        "Offset": "0xa7"
+        "Size": "0x54",
+        "Offset": "0xcc"
       }
     ]
   },
-  "BlackboardKeyType_Name": {
-    "Super": "BlackboardKeyType",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AISenseConfig_Team": {
+  "AISenseConfig_Damage": {
     "Super": "AISenseConfig",
-    "FullSize": "0x30",
+    "FullSize": "0x38",
     "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BlackboardKeyType_Float": {
-    "Super": "BlackboardKeyType",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Implementation",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
   },
   "BlackboardKeyType_Enum": {
     "Super": "BlackboardKeyType",
@@ -2212,150 +2521,26 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x7_SNR3J[0x7]",
+        "Name": "pad0x7_YRV4A[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x49"
       }
     ]
   },
-  "BTTaskNode": {
-    "Super": "BTNode",
-    "FullSize": "0x60",
-    "InheritedSize": "0x58",
-    "ClassSize": "0x8",
+  "AISenseEvent_Hearing": {
+    "Super": "AISenseEvent",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x8_PJKSE[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x58"
+        "Name": "Event",
+        "Type": "struct AINoiseEvent",
+        "Size": "0x30",
+        "Offset": "0x28"
       }
     ]
-  },
-  "AISense_Sight": {
-    "Super": "AISense",
-    "FullSize": "0x158",
-    "InheritedSize": "0x88",
-    "ClassSize": "0xd0",
-    "Attributes": [
-      {
-        "Name": "pad0xb0_2XAKL[0xb0]",
-        "Type": "char",
-        "Size": "0xb0",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "MaxTracesPerTick",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "HighImportanceQueryDistanceThreshold",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x13c"
-      },
-      {
-        "Name": "pad0x4_8GNSB[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x140"
-      },
-      {
-        "Name": "HighImportanceQueryDistanceThresholdForStealthMode",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x144"
-      },
-      {
-        "Name": "pad0x4_6XPHI[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x148"
-      },
-      {
-        "Name": "MaxQueryImportance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x14c"
-      },
-      {
-        "Name": "SightLimitQueryImportance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "pad0x4_W34DE[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x154"
-      }
-    ]
-  },
-  "BlackboardKeyType_Int": {
-    "Super": "BlackboardKeyType",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PawnAction_Wait": {
-    "Super": "PawnAction",
-    "FullSize": "0xa0",
-    "InheritedSize": "0x90",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "TimeToWait",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "pad0xc_TCG3E[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x94"
-      }
-    ]
-  },
-  "BlackboardKeyType_Object": {
-    "Super": "BlackboardKeyType",
-    "FullSize": "0x38",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "BaseClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "BlackboardKeyType_String": {
-    "Super": "BlackboardKeyType",
-    "FullSize": "0x40",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "StringValue",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "EnvQueryItemType_VectorBase": {
-    "Super": "EnvQueryItemType",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "AISense_Blueprint": {
     "Super": "AISense",
@@ -2383,325 +2568,8 @@
       }
     ]
   },
-  "AISense_Damage": {
-    "Super": "AISense",
-    "FullSize": "0x98",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "RegisteredEvents",
-        "Type": "TArray<struct AIDamageEvent>",
-        "Size": "0x10",
-        "Offset": "0x88"
-      }
-    ]
-  },
-  "AISense_Hearing": {
-    "Super": "AISense",
-    "FullSize": "0x120",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x98",
-    "Attributes": [
-      {
-        "Name": "MaxNoisesPerTick",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "MaxNoisesStored",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8c"
-      },
-      {
-        "Name": "pad0x8_M5IA1[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "NoiseEventsArrayA",
-        "Type": "TArray<struct AINoiseEvent>",
-        "Size": "0x10",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "NoiseEventsArrayB",
-        "Type": "TArray<struct AINoiseEvent>",
-        "Size": "0x10",
-        "Offset": "0xa8"
-      },
-      {
-        "Name": "pad0x10_4HVK1[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "SpeedOfSoundSq",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "pad0x54_YQRRO[0x54]",
-        "Type": "char",
-        "Size": "0x54",
-        "Offset": "0xcc"
-      }
-    ]
-  },
-  "AISenseConfig_Touch": {
-    "Super": "AISenseConfig",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "EnvQueryGenerator": {
-    "Super": "EnvQueryNode",
-    "FullSize": "0x58",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "OptionName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "NonShippingOnly",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "pad0x3_1PJ8H[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x41"
-      },
-      {
-        "Name": "Feature",
-        "Type": "struct FeatureFlag",
-        "Size": "0xc",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "ItemType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x50"
-      }
-    ]
-  },
-  "EnvQueryContext_BlueprintBase": {
-    "Super": "EnvQueryContext",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_I5G9U[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "AISenseConfig_Prediction": {
     "Super": "AISenseConfig",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AISenseConfig_Hearing": {
-    "Super": "AISenseConfig",
-    "FullSize": "0x50",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Implementation",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "HearingRange",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "HearingRangeForCrouching",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "LoSHearingRange",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "bUseLoSHearing",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "pad0x3_QUJI0[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x45"
-      },
-      {
-        "Name": "DetectionByAffiliation",
-        "Type": "struct AISenseAffiliationFilter",
-        "Size": "0x4",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "pad0x4_9Y0NW[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4c"
-      }
-    ]
-  },
-  "BTTask_SetTagCooldown": {
-    "Super": "BTTaskNode",
-    "FullSize": "0x70",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CooldownTag",
-        "Type": "struct GameplayTag",
-        "Size": "0x8",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "bAddToExistingDuration",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "pad0x3_ZRQWL[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x69"
-      },
-      {
-        "Name": "CoolDownDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x6c"
-      }
-    ]
-  },
-  "EnvQueryTest_Distance": {
-    "Super": "EnvQueryTest",
-    "FullSize": "0x180",
-    "InheritedSize": "0x170",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "TestMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x170"
-      },
-      {
-        "Name": "pad0x7_KKFC5[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x171"
-      },
-      {
-        "Name": "DistanceTo",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x178"
-      }
-    ]
-  },
-  "BTTask_PawnActionBase": {
-    "Super": "BTTaskNode",
-    "FullSize": "0x60",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "EnvQueryItemType_Point": {
-    "Super": "EnvQueryItemType_VectorBase",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BTDecorator": {
-    "Super": "BTAuxiliaryNode",
-    "FullSize": "0x68",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "bInverseCondition",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "pad0x3_JSZ6B[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x61"
-      },
-      {
-        "Name": "FlowAbortMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x64"
-      },
-      {
-        "Name": "pad0x3_ZD2OT[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x65"
-      }
-    ]
-  },
-  "BTTask_RunBehavior": {
-    "Super": "BTTaskNode",
-    "FullSize": "0x68",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "BehaviorAsset",
-        "Type": "class BehaviorTree*",
-        "Size": "0x8",
-        "Offset": "0x60"
-      }
-    ]
-  },
-  "EnvQueryTest_Random": {
-    "Super": "EnvQueryTest",
-    "FullSize": "0x170",
-    "InheritedSize": "0x170",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "EnvQueryItemType_ActorBase": {
-    "Super": "EnvQueryItemType_VectorBase",
     "FullSize": "0x30",
     "InheritedSize": "0x30",
     "ClassSize": "0x0",
@@ -2745,56 +2613,6 @@
       }
     ]
   },
-  "BTTask_PlayAnimation": {
-    "Super": "BTTaskNode",
-    "FullSize": "0x98",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "AnimationToPlay",
-        "Type": "class AnimationAsset*",
-        "Size": "0x8",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "bLooping",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "bNonBlocking",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "pad0x7_MTJXL[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x69"
-      },
-      {
-        "Name": "MyOwnerComp",
-        "Type": "class BehaviorTreeComponent*",
-        "Size": "0x8",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "CachedSkelMesh",
-        "Type": "class SkeletalMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "pad0x18_7ENMO[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x80"
-      }
-    ]
-  },
   "EnvQueryGenerator_Composite": {
     "Super": "EnvQueryGenerator",
     "FullSize": "0x70",
@@ -2814,10 +2632,122 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x7_06EME[0x7]",
+        "Name": "pad0x7_GCA8R[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x69"
+      }
+    ]
+  },
+  "EnvQueryItemType_ActorBase": {
+    "Super": "EnvQueryItemType_VectorBase",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BTComposite_Sequence": {
+    "Super": "BTCompositeNode",
+    "FullSize": "0x88",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BTTask_PlaySound": {
+    "Super": "BTTaskNode",
+    "FullSize": "0x68",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "SoundToPlay",
+        "Type": "class SoundCue*",
+        "Size": "0x8",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "EnvQueryGenerator_BlueprintBase": {
+    "Super": "EnvQueryGenerator",
+    "FullSize": "0xa8",
+    "InheritedSize": "0x58",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "GeneratorsActionDescription",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "Context",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "GeneratedItemType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x8_IJVVT[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xa0"
+      }
+    ]
+  },
+  "BTTask_RunBehaviorDynamic": {
+    "Super": "BTTaskNode",
+    "FullSize": "0x78",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "InjectionTag",
+        "Type": "struct GameplayTag",
+        "Size": "0x8",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "DefaultBehaviorAsset",
+        "Type": "class BehaviorTree*",
+        "Size": "0x8",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "BehaviorAsset",
+        "Type": "class BehaviorTree*",
+        "Size": "0x8",
+        "Offset": "0x70"
+      }
+    ]
+  },
+  "EnvQueryTest_Distance": {
+    "Super": "EnvQueryTest",
+    "FullSize": "0x180",
+    "InheritedSize": "0x170",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "TestMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x170"
+      },
+      {
+        "Name": "pad0x7_SRPME[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x171"
+      },
+      {
+        "Name": "DistanceTo",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x178"
       }
     ]
   },
@@ -2847,29 +2777,63 @@
       }
     ]
   },
-  "EnvQueryTest_GameplayTags": {
+  "EnvQueryTest_Random": {
     "Super": "EnvQueryTest",
-    "FullSize": "0x1a0",
+    "FullSize": "0x170",
     "InheritedSize": "0x170",
-    "ClassSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BTTask_SetTagCooldown": {
+    "Super": "BTTaskNode",
+    "FullSize": "0x70",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "TagsToMatch",
-        "Type": "byte",
+        "Name": "CooldownTag",
+        "Type": "struct GameplayTag",
+        "Size": "0x8",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "bAddToExistingDuration",
+        "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x170"
+        "Offset": "0x68"
       },
       {
-        "Name": "pad0x7_UTDGY[0x7]",
+        "Name": "pad0x3_VYU34[0x3]",
         "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x171"
+        "Size": "0x3",
+        "Offset": "0x69"
       },
       {
-        "Name": "GameplayTags",
-        "Type": "struct GameplayTagContainer",
+        "Name": "CoolDownDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x6c"
+      }
+    ]
+  },
+  "BTTask_PawnActionBase": {
+    "Super": "BTTaskNode",
+    "FullSize": "0x60",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BTTask_BlackboardBase": {
+    "Super": "BTTaskNode",
+    "FullSize": "0x88",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "BlackboardKey",
+        "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
-        "Offset": "0x178"
+        "Offset": "0x60"
       }
     ]
   },
@@ -2879,26 +2843,6 @@
     "InheritedSize": "0x30",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "BTComposite_SimpleParallel": {
-    "Super": "BTCompositeNode",
-    "FullSize": "0x90",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "FinishMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "pad0x7_U8H5N[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x89"
-      }
-    ]
   },
   "EnvQueryTest_Dot": {
     "Super": "EnvQueryTest",
@@ -2931,58 +2875,10 @@
         "Offset": "0x1b1"
       },
       {
-        "Name": "pad0x6_KPHJV[0x6]",
+        "Name": "pad0x6_HDOQG[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x1b2"
-      }
-    ]
-  },
-  "BTTask_PlaySound": {
-    "Super": "BTTaskNode",
-    "FullSize": "0x68",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "SoundToPlay",
-        "Type": "class SoundCue*",
-        "Size": "0x8",
-        "Offset": "0x60"
-      }
-    ]
-  },
-  "BTTask_MakeNoise": {
-    "Super": "BTTaskNode",
-    "FullSize": "0x68",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Loudnes",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "pad0x4_WMJLY[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x64"
-      }
-    ]
-  },
-  "EnvQueryGenerator_ProjectedPoints": {
-    "Super": "EnvQueryGenerator",
-    "FullSize": "0x98",
-    "InheritedSize": "0x58",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "ProjectionData",
-        "Type": "struct EnvTraceData",
-        "Size": "0x40",
-        "Offset": "0x58"
       }
     ]
   },
@@ -3017,89 +2913,98 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x7_8OGYV[0x7]",
+        "Name": "pad0x7_UKF0Z[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x69"
       }
     ]
   },
-  "BTTask_BlackboardBase": {
-    "Super": "BTTaskNode",
-    "FullSize": "0x88",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x28",
+  "EnvQueryTest_GameplayTags": {
+    "Super": "EnvQueryTest",
+    "FullSize": "0x1a0",
+    "InheritedSize": "0x170",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "BlackboardKey",
-        "Type": "struct BlackboardKeySelector",
+        "Name": "TagsToMatch",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x170"
+      },
+      {
+        "Name": "pad0x7_AWZBW[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x171"
+      },
+      {
+        "Name": "GameplayTags",
+        "Type": "struct GameplayTagContainer",
         "Size": "0x28",
-        "Offset": "0x60"
+        "Offset": "0x178"
       }
     ]
   },
-  "BTComposite_Sequence": {
+  "EnvQueryGenerator_ProjectedPoints": {
+    "Super": "EnvQueryGenerator",
+    "FullSize": "0x98",
+    "InheritedSize": "0x58",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "ProjectionData",
+        "Type": "struct EnvTraceData",
+        "Size": "0x40",
+        "Offset": "0x58"
+      }
+    ]
+  },
+  "EnvQueryItemType_Point": {
+    "Super": "EnvQueryItemType_VectorBase",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BTTask_MakeNoise": {
+    "Super": "BTTaskNode",
+    "FullSize": "0x68",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Loudnes",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x4_RKZ0D[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x64"
+      }
+    ]
+  },
+  "BTComposite_Selector": {
     "Super": "BTCompositeNode",
     "FullSize": "0x88",
     "InheritedSize": "0x88",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "BTTask_RunBehaviorDynamic": {
+  "BTTask_RunBehavior": {
     "Super": "BTTaskNode",
-    "FullSize": "0x78",
+    "FullSize": "0x68",
     "InheritedSize": "0x60",
-    "ClassSize": "0x18",
+    "ClassSize": "0x8",
     "Attributes": [
-      {
-        "Name": "InjectionTag",
-        "Type": "struct GameplayTag",
-        "Size": "0x8",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "DefaultBehaviorAsset",
-        "Type": "class BehaviorTree*",
-        "Size": "0x8",
-        "Offset": "0x68"
-      },
       {
         "Name": "BehaviorAsset",
         "Type": "class BehaviorTree*",
         "Size": "0x8",
-        "Offset": "0x70"
-      }
-    ]
-  },
-  "EnvQueryGenerator_BlueprintBase": {
-    "Super": "EnvQueryGenerator",
-    "FullSize": "0xa8",
-    "InheritedSize": "0x58",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "GeneratorsActionDescription",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "Context",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "GeneratedItemType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "pad0x8_WQPM4[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xa0"
+        "Offset": "0x60"
       }
     ]
   },
@@ -3116,7 +3021,7 @@
         "Offset": "0x170"
       },
       {
-        "Name": "pad0x7_1DSY1[0x7]",
+        "Name": "pad0x7_VJOYM[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x171"
@@ -3159,6 +3064,126 @@
       }
     ]
   },
+  "BTTask_BlueprintBase": {
+    "Super": "BTTaskNode",
+    "FullSize": "0x90",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "AIOwner",
+        "Type": "class AIController*",
+        "Size": "0x8",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "ActorOwner",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "pad0x18_YKQ3C[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "bShowPropertyDetails",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "pad0x7_58NY7[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x89"
+      }
+    ]
+  },
+  "BTDecorator": {
+    "Super": "BTAuxiliaryNode",
+    "FullSize": "0x68",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "bInverseCondition",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x3_69XQZ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x61"
+      },
+      {
+        "Name": "FlowAbortMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x64"
+      },
+      {
+        "Name": "pad0x3_SUEBA[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x65"
+      }
+    ]
+  },
+  "BTTask_PlayAnimation": {
+    "Super": "BTTaskNode",
+    "FullSize": "0x98",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "AnimationToPlay",
+        "Type": "class AnimationAsset*",
+        "Size": "0x8",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "bLooping",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "bNonBlocking",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "pad0x7_4PZP2[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x69"
+      },
+      {
+        "Name": "MyOwnerComp",
+        "Type": "class BehaviorTreeComponent*",
+        "Size": "0x8",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "CachedSkelMesh",
+        "Type": "class SkeletalMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "pad0x18_2QZJH[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x80"
+      }
+    ]
+  },
   "BTTask_Wait": {
     "Super": "BTTaskNode",
     "FullSize": "0x68",
@@ -3179,180 +3204,43 @@
       }
     ]
   },
-  "BTComposite_Selector": {
+  "BTComposite_SimpleParallel": {
     "Super": "BTCompositeNode",
-    "FullSize": "0x88",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BTTask_BlueprintBase": {
-    "Super": "BTTaskNode",
     "FullSize": "0x90",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x30",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "AIOwner",
-        "Type": "class AIController*",
-        "Size": "0x8",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "ActorOwner",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "pad0x18_JJO8W[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "bShowPropertyDetails",
-        "Type": "bool",
+        "Name": "FinishMode",
+        "Type": "byte",
         "Size": "0x1",
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x7_K9BT9[0x7]",
+        "Name": "pad0x7_CCIDN[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x89"
       }
     ]
   },
-  "BTTask_RunEQSQuery": {
-    "Super": "BTTask_BlackboardBase",
-    "FullSize": "0xa8",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "QueryTemplate",
-        "Type": "class EnvQuery*",
-        "Size": "0x8",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "QueryParams",
-        "Type": "TArray<struct EnvNamedValue>",
-        "Size": "0x10",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "RunMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xa0"
-      },
-      {
-        "Name": "pad0x7_L5UYV[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0xa1"
-      }
-    ]
-  },
-  "BTService_BlueprintBase": {
-    "Super": "BTService",
-    "FullSize": "0x98",
-    "InheritedSize": "0x70",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "AIOwner",
-        "Type": "class AIController*",
-        "Size": "0x8",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "ActorOwner",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "pad0x10_FEXWN[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "bShowPropertyDetails",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "bShowEventDetails",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "pad0x7_4RITQ[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x91"
-      }
-    ]
-  },
-  "BTDecorator_BlueprintBase": {
+  "BTDecorator_TimeLimit": {
     "Super": "BTDecorator",
-    "FullSize": "0xa0",
+    "FullSize": "0x70",
     "InheritedSize": "0x68",
-    "ClassSize": "0x38",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "AIOwner",
-        "Type": "class AIController*",
-        "Size": "0x8",
+        "Name": "TimeLimit",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x68"
       },
       {
-        "Name": "ActorOwner",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "ObservedKeyNames",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "pad0x10_B6QML[0x10]",
+        "Name": "pad0x4_FNWSW[0x4]",
         "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "bShowPropertyDetails",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "bCheckConditionOnlyBlackBoardChanges",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "bIsObservingBB",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "pad0x7_6JSNH[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x99"
+        "Size": "0x4",
+        "Offset": "0x6c"
       }
     ]
   },
@@ -3381,7 +3269,7 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x3_P691K[0x3]",
+        "Name": "pad0x3_OEU3V[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xb9"
@@ -3393,7 +3281,7 @@
         "Offset": "0xbc"
       },
       {
-        "Name": "pad0x3_VSK5H[0x3]",
+        "Name": "pad0x3_EZIDH[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xbd"
@@ -3403,6 +3291,346 @@
         "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0xc0"
+      }
+    ]
+  },
+  "BTTask_MoveTo": {
+    "Super": "BTTask_BlackboardBase",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "AcceptableRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "pad0x4_5FIHG[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x8c"
+      },
+      {
+        "Name": "FilterClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "bAllowStrafe",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "bAllowPartialPath",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "bStopOnOverlap",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x7_H2MDR[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x99"
+      }
+    ]
+  },
+  "BTDecorator_TagCooldown": {
+    "Super": "BTDecorator",
+    "FullSize": "0x78",
+    "InheritedSize": "0x68",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CooldownTag",
+        "Type": "struct GameplayTag",
+        "Size": "0x8",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "CoolDownDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "bAddToExistingDuration",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x74"
+      },
+      {
+        "Name": "bActivatesCooldown",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x75"
+      },
+      {
+        "Name": "pad0x2_2SUFD[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x76"
+      }
+    ]
+  },
+  "BTDecorator_BlackboardBase": {
+    "Super": "BTDecorator",
+    "FullSize": "0x90",
+    "InheritedSize": "0x68",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "BlackboardKey",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x68"
+      }
+    ]
+  },
+  "EnvQueryGenerator_OnCircle": {
+    "Super": "EnvQueryGenerator_ProjectedPoints",
+    "FullSize": "0x1a0",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x108",
+    "Attributes": [
+      {
+        "Name": "CircleRadius",
+        "Type": "struct AIDataProviderFloatValue",
+        "Size": "0x30",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "SpaceBetween",
+        "Type": "struct AIDataProviderFloatValue",
+        "Size": "0x30",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "ArcDirection",
+        "Type": "struct EnvDirection",
+        "Size": "0x20",
+        "Offset": "0xf8"
+      },
+      {
+        "Name": "ArcAngle",
+        "Type": "struct AIDataProviderFloatValue",
+        "Size": "0x30",
+        "Offset": "0x118"
+      },
+      {
+        "Name": "AngleRadians",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x148"
+      },
+      {
+        "Name": "pad0x4_3Z9VJ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14c"
+      },
+      {
+        "Name": "CircleCenter",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "TraceData",
+        "Type": "struct EnvTraceData",
+        "Size": "0x40",
+        "Offset": "0x158"
+      },
+      {
+        "Name": "bDefineArc",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x198"
+      },
+      {
+        "Name": "pad0x7_YER52[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x199"
+      }
+    ]
+  },
+  "BTTask_RotateToFaceBBEntry": {
+    "Super": "BTTask_BlackboardBase",
+    "FullSize": "0x90",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Precision",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "pad0x4_EPMRF[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x8c"
+      }
+    ]
+  },
+  "BTDecorator_ConeCheck": {
+    "Super": "BTDecorator",
+    "FullSize": "0xf0",
+    "InheritedSize": "0x68",
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "ConeHalfAngle",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "pad0x4_RCXK5[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x6c"
+      },
+      {
+        "Name": "ConeOrigin",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "ConeDirection",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "Observed",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "pad0x8_864PT[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      }
+    ]
+  },
+  "BTDecorator_KeepInCone": {
+    "Super": "BTDecorator",
+    "FullSize": "0xc8",
+    "InheritedSize": "0x68",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "ConeHalfAngle",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "pad0x4_W2YDZ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x6c"
+      },
+      {
+        "Name": "ConeOrigin",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "Observed",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "bUseSelfAsOrigin",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "bUseSelfAsObserved",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "pad0x7_UG1CS[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xc1"
+      }
+    ]
+  },
+  "BTDecorator_BlueprintBase": {
+    "Super": "BTDecorator",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x68",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "AIOwner",
+        "Type": "class AIController*",
+        "Size": "0x8",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "ActorOwner",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "ObservedKeyNames",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "pad0x10_8RVYH[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "bShowPropertyDetails",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "bCheckConditionOnlyBlackBoardChanges",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "bIsObservingBB",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x7_OEM1W[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x99"
       }
     ]
   },
@@ -3432,6 +3660,105 @@
       }
     ]
   },
+  "EnvQueryTest_PathfindingBatch": {
+    "Super": "EnvQueryTest_Pathfinding",
+    "FullSize": "0x278",
+    "InheritedSize": "0x248",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "ScanRangeMultiplier",
+        "Type": "struct AIDataProviderFloatValue",
+        "Size": "0x30",
+        "Offset": "0x248"
+      }
+    ]
+  },
+  "BTTask_WaitBlackboardTime": {
+    "Super": "BTTask_Wait",
+    "FullSize": "0x90",
+    "InheritedSize": "0x68",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "BlackboardKey",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x68"
+      }
+    ]
+  },
+  "BTDecorator_Loop": {
+    "Super": "BTDecorator",
+    "FullSize": "0x70",
+    "InheritedSize": "0x68",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "NumLoops",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "bInfiniteLoop",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x6c"
+      },
+      {
+        "Name": "pad0x3_0G685[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x6d"
+      }
+    ]
+  },
+  "BTDecorator_CheckGameplayTagsOnActor": {
+    "Super": "BTDecorator",
+    "FullSize": "0xd0",
+    "InheritedSize": "0x68",
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Name": "ActorToCheck",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "TagsToMatch",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "pad0x7_23DD8[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x91"
+      },
+      {
+        "Name": "GameplayTags",
+        "Type": "struct GameplayTagContainer",
+        "Size": "0x28",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "CachedDescription",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0xc0"
+      }
+    ]
+  },
+  "EnvQueryItemType_Actor": {
+    "Super": "EnvQueryItemType_ActorBase",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "BTDecorator_ReachedMoveGoal": {
     "Super": "BTDecorator",
     "FullSize": "0x68",
@@ -3439,17 +3766,47 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "BTService_BlackboardBase": {
+  "BTService_BlueprintBase": {
     "Super": "BTService",
     "FullSize": "0x98",
     "InheritedSize": "0x70",
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "BlackboardKey",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
+        "Name": "AIOwner",
+        "Type": "class AIController*",
+        "Size": "0x8",
         "Offset": "0x70"
+      },
+      {
+        "Name": "ActorOwner",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "pad0x10_BSDG7[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "bShowPropertyDetails",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "bShowEventDetails",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "pad0x7_U56S9[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x91"
       }
     ]
   },
@@ -3490,186 +3847,24 @@
         "Offset": "0x8c"
       },
       {
-        "Name": "pad0x3_BVHP5[0x3]",
+        "Name": "pad0x3_V1PEZ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x8d"
       }
     ]
   },
-  "BTDecorator_KeepInCone": {
-    "Super": "BTDecorator",
-    "FullSize": "0xc8",
-    "InheritedSize": "0x68",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "ConeHalfAngle",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "pad0x4_8VF7Z[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x6c"
-      },
-      {
-        "Name": "ConeOrigin",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "Observed",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "bUseSelfAsOrigin",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "bUseSelfAsObserved",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "pad0x7_XWOH3[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0xc1"
-      }
-    ]
-  },
-  "BTDecorator_Loop": {
-    "Super": "BTDecorator",
-    "FullSize": "0x70",
-    "InheritedSize": "0x68",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "NumLoops",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "bInfiniteLoop",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x6c"
-      },
-      {
-        "Name": "pad0x3_LSY3U[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x6d"
-      }
-    ]
-  },
-  "EnvQueryItemType_Actor": {
-    "Super": "EnvQueryItemType_ActorBase",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BTDecorator_TimeLimit": {
-    "Super": "BTDecorator",
-    "FullSize": "0x70",
-    "InheritedSize": "0x68",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "TimeLimit",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "pad0x4_0CEIO[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x6c"
-      }
-    ]
-  },
-  "BTDecorator_CompareBBEntries": {
-    "Super": "BTDecorator",
-    "FullSize": "0xc0",
-    "InheritedSize": "0x68",
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "Operator",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "pad0x7_LH6GZ[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x69"
-      },
-      {
-        "Name": "BlackboardKeyA",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "BlackboardKeyB",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "BTDecorator_ForceSuccess": {
-    "Super": "BTDecorator",
+  "BTTask_PushPawnAction": {
+    "Super": "BTTask_PawnActionBase",
     "FullSize": "0x68",
-    "InheritedSize": "0x68",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BTDecorator_Cooldown": {
-    "Super": "BTDecorator",
-    "FullSize": "0x70",
-    "InheritedSize": "0x68",
+    "InheritedSize": "0x60",
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "CoolDownTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "pad0x4_M3R2B[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x6c"
-      }
-    ]
-  },
-  "EnvQueryTest_PathfindingBatch": {
-    "Super": "EnvQueryTest_Pathfinding",
-    "FullSize": "0x278",
-    "InheritedSize": "0x248",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "ScanRangeMultiplier",
-        "Type": "struct AIDataProviderFloatValue",
-        "Size": "0x30",
-        "Offset": "0x248"
+        "Name": "Action",
+        "Type": "class PawnAction*",
+        "Size": "0x8",
+        "Offset": "0x60"
       }
     ]
   },
@@ -3698,7 +3893,7 @@
         "Offset": "0x74"
       },
       {
-        "Name": "pad0x3_SDRR4[0x3]",
+        "Name": "pad0x3_BCQ7F[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x75"
@@ -3754,7 +3949,7 @@
         "Offset": "0x1a8"
       },
       {
-        "Name": "pad0x7_BMYV2[0x7]",
+        "Name": "pad0x7_XJII4[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1a9"
@@ -3772,310 +3967,149 @@
         "Offset": "0x1b8"
       },
       {
-        "Name": "pad0x7_8GI0V[0x7]",
+        "Name": "pad0x7_94XGR[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1b9"
       }
     ]
   },
-  "BTTask_RotateToFaceBBEntry": {
-    "Super": "BTTask_BlackboardBase",
-    "FullSize": "0x90",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x8",
+  "BTService_BlackboardBase": {
+    "Super": "BTService",
+    "FullSize": "0x98",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "Precision",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "pad0x4_RGUEW[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x8c"
+        "Name": "BlackboardKey",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x70"
       }
     ]
   },
-  "BTDecorator_ConeCheck": {
+  "BTDecorator_Cooldown": {
     "Super": "BTDecorator",
-    "FullSize": "0xf0",
+    "FullSize": "0x70",
     "InheritedSize": "0x68",
-    "ClassSize": "0x88",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "ConeHalfAngle",
+        "Name": "CoolDownTime",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x4_SEYSV[0x4]",
+        "Name": "pad0x4_IL40K[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x6c"
-      },
-      {
-        "Name": "ConeOrigin",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "ConeDirection",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "Observed",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "pad0x8_1G96M[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xe8"
       }
     ]
   },
-  "BTDecorator_CheckGameplayTagsOnActor": {
-    "Super": "BTDecorator",
-    "FullSize": "0xd0",
-    "InheritedSize": "0x68",
-    "ClassSize": "0x68",
-    "Attributes": [
-      {
-        "Name": "ActorToCheck",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "TagsToMatch",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "pad0x7_4YI3N[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x91"
-      },
-      {
-        "Name": "GameplayTags",
-        "Type": "struct GameplayTagContainer",
-        "Size": "0x28",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "CachedDescription",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0xc0"
-      }
-    ]
-  },
-  "BTDecorator_TagCooldown": {
-    "Super": "BTDecorator",
-    "FullSize": "0x78",
-    "InheritedSize": "0x68",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CooldownTag",
-        "Type": "struct GameplayTag",
-        "Size": "0x8",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "CoolDownDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "bAddToExistingDuration",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x74"
-      },
-      {
-        "Name": "bActivatesCooldown",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x75"
-      },
-      {
-        "Name": "pad0x2_S69HT[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x76"
-      }
-    ]
-  },
-  "BTTask_MoveTo": {
+  "BTTask_RunEQSQuery": {
     "Super": "BTTask_BlackboardBase",
-    "FullSize": "0xa0",
+    "FullSize": "0xa8",
     "InheritedSize": "0x88",
-    "ClassSize": "0x18",
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "AcceptableRadius",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "QueryTemplate",
+        "Type": "class EnvQuery*",
+        "Size": "0x8",
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x4_IFZH7[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x8c"
-      },
-      {
-        "Name": "FilterClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
+        "Name": "QueryParams",
+        "Type": "TArray<struct EnvNamedValue>",
+        "Size": "0x10",
         "Offset": "0x90"
       },
       {
-        "Name": "bAllowStrafe",
-        "Type": "bool",
+        "Name": "RunMode",
+        "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x98"
+        "Offset": "0xa0"
       },
       {
-        "Name": "bAllowPartialPath",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "bStopOnOverlap",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "pad0x7_HQ7QP[0x7]",
+        "Name": "pad0x7_HBN1S[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0x99"
+        "Offset": "0xa1"
       }
     ]
   },
-  "BTTask_WaitBlackboardTime": {
-    "Super": "BTTask_Wait",
-    "FullSize": "0x90",
-    "InheritedSize": "0x68",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "BlackboardKey",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
-        "Offset": "0x68"
-      }
-    ]
-  },
-  "EnvQueryGenerator_OnCircle": {
-    "Super": "EnvQueryGenerator_ProjectedPoints",
-    "FullSize": "0x1a0",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x108",
-    "Attributes": [
-      {
-        "Name": "CircleRadius",
-        "Type": "struct AIDataProviderFloatValue",
-        "Size": "0x30",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "SpaceBetween",
-        "Type": "struct AIDataProviderFloatValue",
-        "Size": "0x30",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "ArcDirection",
-        "Type": "struct EnvDirection",
-        "Size": "0x20",
-        "Offset": "0xf8"
-      },
-      {
-        "Name": "ArcAngle",
-        "Type": "struct AIDataProviderFloatValue",
-        "Size": "0x30",
-        "Offset": "0x118"
-      },
-      {
-        "Name": "AngleRadians",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x148"
-      },
-      {
-        "Name": "pad0x4_9YNXX[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x14c"
-      },
-      {
-        "Name": "CircleCenter",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "TraceData",
-        "Type": "struct EnvTraceData",
-        "Size": "0x40",
-        "Offset": "0x158"
-      },
-      {
-        "Name": "bDefineArc",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x198"
-      },
-      {
-        "Name": "pad0x7_ZMURU[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x199"
-      }
-    ]
-  },
-  "BTDecorator_BlackboardBase": {
+  "BTDecorator_ForceSuccess": {
     "Super": "BTDecorator",
-    "FullSize": "0x90",
+    "FullSize": "0x68",
     "InheritedSize": "0x68",
-    "ClassSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BTDecorator_CompareBBEntries": {
+    "Super": "BTDecorator",
+    "FullSize": "0xc0",
+    "InheritedSize": "0x68",
+    "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "BlackboardKey",
+        "Name": "Operator",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "pad0x7_JZPJF[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x69"
+      },
+      {
+        "Name": "BlackboardKeyA",
         "Type": "struct BlackboardKeySelector",
         "Size": "0x28",
-        "Offset": "0x68"
+        "Offset": "0x70"
+      },
+      {
+        "Name": "BlackboardKeyB",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x98"
       }
     ]
   },
-  "BTTask_PushPawnAction": {
-    "Super": "BTTask_PawnActionBase",
-    "FullSize": "0x68",
-    "InheritedSize": "0x60",
+  "BTDecorator_IsBBEntryOfClass": {
+    "Super": "BTDecorator_BlackboardBase",
+    "FullSize": "0x98",
+    "InheritedSize": "0x90",
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "Action",
-        "Type": "class PawnAction*",
+        "Name": "TestClass",
+        "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x60"
+        "Offset": "0x90"
+      }
+    ]
+  },
+  "BTService_DefaultFocus": {
+    "Super": "BTService_BlackboardBase",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "FocusPriority",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x7_KFSHB[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x99"
       }
     ]
   },
@@ -4122,44 +4156,36 @@
         "Offset": "0xb9"
       },
       {
-        "Name": "pad0x6_Z6GKU[0x6]",
+        "Name": "pad0x6_9FOIU[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0xba"
       }
     ]
   },
-  "BTService_DefaultFocus": {
-    "Super": "BTService_BlackboardBase",
-    "FullSize": "0xa0",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "FocusPriority",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "pad0x7_VAESL[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x99"
-      }
-    ]
-  },
-  "BTDecorator_IsBBEntryOfClass": {
+  "BTDecorator_IsAtLocation": {
     "Super": "BTDecorator_BlackboardBase",
     "FullSize": "0x98",
     "InheritedSize": "0x90",
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "TestClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
+        "Name": "AcceptableRadius",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x90"
+      },
+      {
+        "Name": "bUseNavAgentGoalLocation",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x94"
+      },
+      {
+        "Name": "pad0x3_WHEAC[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x95"
       }
     ]
   },
@@ -4186,32 +4212,6 @@
         "Type": "struct AIDataProviderFloatValue",
         "Size": "0x30",
         "Offset": "0x138"
-      }
-    ]
-  },
-  "BTDecorator_IsAtLocation": {
-    "Super": "BTDecorator_BlackboardBase",
-    "FullSize": "0x98",
-    "InheritedSize": "0x90",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "AcceptableRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "bUseNavAgentGoalLocation",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x94"
-      },
-      {
-        "Name": "pad0x3_FJ6BT[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x95"
       }
     ]
   },

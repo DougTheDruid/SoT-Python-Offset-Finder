@@ -1,4 +1,27 @@
 {
+  "FireballCannonProjectileFirePoint": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Name": "FireFromLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "FireFromRotation",
+        "Type": "struct Rotator",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "FireDelay",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      }
+    ]
+  },
   "FireballCannonDynamicMaterialParameters": {
     "ClassSize": "0x14",
     "Attributes": [
@@ -28,6 +51,28 @@
       }
     ]
   },
+  "EventShootFireballCannon": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_XZY2T[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventFireballCannonHasStartedToCooldown": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_5RF0I[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "EventFireballCannonFiringStateChanged": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -38,7 +83,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_R13LT[0x7]",
+        "Name": "pad0x7_00KDI[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -51,56 +96,11 @@
       }
     ]
   },
-  "EventShootFireballCannon": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_OCJXJ[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "FireballCannonProjectileFirePoint": {
-    "ClassSize": "0x1c",
-    "Attributes": [
-      {
-        "Name": "FireFromLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "FireFromRotation",
-        "Type": "struct Rotator",
-        "Size": "0xc",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "FireDelay",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x18"
-      }
-    ]
-  },
   "EventFireballCannonIsReadyToFire": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_ZBJ7K[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventFireballCannonHasStartedToCooldown": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_9K28Y[0x1]",
+        "Name": "pad0x1_Y9SVN[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"

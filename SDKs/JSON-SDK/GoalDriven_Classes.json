@@ -1,4 +1,39 @@
 {
+  "GoalDrivenCharacterAnimInstance": {
+    "Super": "AnimInstance",
+    "FullSize": "0x440",
+    "InheritedSize": "0x440",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GoalDrivenCharacterAggregationComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xe8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_CMD05[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0xb8"
+      }
+    ]
+  },
+  "GoalDrivenCharacterDockingPolicyDefinition": {
+    "Super": "DockingPolicyDefinition",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GoalDrivenCharacterWithRotationOverrideDockingPolicyDefinition": {
+    "Super": "DockingPolicyDefinition",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "GoalDrivenCharacter": {
     "Super": "CharacterWithActionStateMachine",
     "FullSize": "0x5e0",
@@ -6,7 +41,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_YAMSH[0x10]",
+        "Name": "pad0x10_AORSZ[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x5d0"
@@ -20,7 +55,7 @@
     "ClassSize": "0x70",
     "Attributes": [
       {
-        "Name": "pad0x10_M63NO[0x10]",
+        "Name": "pad0x10_6PB85[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x580"
@@ -32,7 +67,7 @@
         "Offset": "0x590"
       },
       {
-        "Name": "pad0x3_OQF9N[0x3]",
+        "Name": "pad0x3_AL3FQ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x591"
@@ -56,7 +91,7 @@
         "Offset": "0x59c"
       },
       {
-        "Name": "pad0x3_KNM9P[0x3]",
+        "Name": "pad0x3_GUA1U[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x59d"
@@ -98,33 +133,12 @@
         "Offset": "0x5b4"
       },
       {
-        "Name": "pad0x38_SEORR[0x38]",
+        "Name": "pad0x38_GSF2X[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x5b8"
       }
     ]
-  },
-  "GoalDrivenCharacterAnimInstance": {
-    "Super": "AnimInstance",
-    "FullSize": "0x440",
-    "InheritedSize": "0x440",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "GoalDrivenCharacterWithRotationOverrideDockingPolicyDefinition": {
-    "Super": "DockingPolicyDefinition",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "GoalDrivenCharacterDockingPolicyDefinition": {
-    "Super": "DockingPolicyDefinition",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "GoalDrivenPathFollowingComponent": {
     "Super": "PathFollowingComponent",
@@ -145,24 +159,10 @@
         "Offset": "0x2ac"
       },
       {
-        "Name": "pad0x8_6BLEJ[0x8]",
+        "Name": "pad0x8_GG0E7[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x2b0"
-      }
-    ]
-  },
-  "GoalDrivenCharacterAggregationComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xe8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_6HOKK[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0xb8"
       }
     ]
   },
@@ -173,7 +173,7 @@
     "ClassSize": "0xd0",
     "Attributes": [
       {
-        "Name": "pad0xd0_7KPG3[0xd0]",
+        "Name": "pad0xd0_J3WYR[0xd0]",
         "Type": "char",
         "Size": "0xd0",
         "Offset": "0x490"

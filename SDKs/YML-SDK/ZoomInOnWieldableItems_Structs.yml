@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 ZoomedInOnWieldableItemActionStateConstructionInfo:
   Attributes:
-  - Name: pad0x48_NR4BR[0x48]
+  - Name: pad0x48_ZTHLM[0x48]
     Offset: '0x0'
     Size: '0x48'
     Type: char
@@ -22,12 +22,12 @@ ZoomedInOnWieldableItemActionStateConstructionInfo:
     Offset: '0x54'
     Size: '0x4'
     Type: float
-  - Name: LookSensitivityScaler
+  - Name: MaxClampedFOV
     Offset: '0x58'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_JTT51[0x4]
+  - Name: LookSensitivityScaler
     Offset: '0x5c'
     Size: '0x4'
-    Type: char
+    Type: float
   ClassSize: '0x60'

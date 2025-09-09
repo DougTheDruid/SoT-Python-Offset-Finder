@@ -1,4 +1,11 @@
 {
+  "DebugTeleportationLookupInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "DebugTeleportationDestinationService": {
     "Super": "Actor",
     "FullSize": "0x3c8",
@@ -6,7 +13,7 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x18_4JSWG[0x18]",
+        "Name": "pad0x18_KF0PU[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x3a0"
@@ -19,21 +26,14 @@
       }
     ]
   },
-  "DebugTeleportationPresentationInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "DebugTeleportationLookupInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "DebugTeleportationRegistrationInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DebugTeleportationPresentationInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

@@ -4,7 +4,7 @@
 // https://github.com/DougTheDruid
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ShortRangeMarkerInterface: public Interface
+class ShortRangeMarkerBlueprintFunctionLibrary: public BlueprintFunctionLibrary
 {
 public:
 };
@@ -14,11 +14,18 @@ public:
 class ShortRangeMarker: public Actor
 {
 public:
-	char                                                         pad0x10_VQ3YY[0x10];                               // 0x3a0(0x10)
+	char                                                         pad0x10_8MD0R[0x10];                               // 0x3a0(0x10)
 	TArray<class MaterialInstanceDynamic*>                       DynamicMaterials;                                  // 0x3b0(0x10)
 	float                                                        LifetimerTimer;                                    // 0x3c0(0x4)
 	float                                                        FadeTimer;                                         // 0x3c4(0x4)
 	TArray<uintptr_t>                                            CachedActors;                                      // 0x3e8(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ShortRangeMarkerInterface: public Interface
+{
+public:
 };
 
 
@@ -28,14 +35,7 @@ class ShortRangeMarkerDataAsset: public DataAsset
 public:
 	class ActorSpawnData*                                        RewardMarker;                                      // 0x28(0x8)
 	float                                                        RewardMarkerHeight;                                // 0x30(0x4)
-	char                                                         pad0x4_GVU9O[0x4];                                 // 0x34(0x4)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ShortRangeMarkerBlueprintFunctionLibrary: public BlueprintFunctionLibrary
-{
-public:
+	char                                                         pad0x4_HNS6Y[0x4];                                 // 0x34(0x4)
 };
 
 

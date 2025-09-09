@@ -14,56 +14,12 @@ public:
 	float                                                        DamagePerSecondAtCentre;                           // 0xbc(0x4)
 	float                                                        DamagePerSecondAtMaxRadius;                        // 0xc0(0x4)
 	float                                                        DamageRadius;                                      // 0xc4(0x4)
-	char                                                         pad0x8_CW4HA[0x8];                                 // 0xc8(0x8)
+	char                                                         pad0x8_FYT7X[0x8];                                 // 0xc8(0x8)
 	class UClass*                                                DamagerType;                                       // 0xd0(0x8)
 	char                                                         HealthChangedReason;                               // 0xd8(0x1)
-	char                                                         pad0x3_A6C2G[0x3];                                 // 0xd9(0x3)
+	char                                                         pad0x3_1A3HB[0x3];                                 // 0xd9(0x3)
 	struct Vector                                                LocalOffset;                                       // 0xdc(0xc)
-	char                                                         pad0x28_9GSJ6[0x28];                               // 0xe8(0x28)
-};
-
-
-// Size 0x108 (Full Size[0x1c0] - InheritedSize[0xb8]
-class ShockwaveDamagerComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_CAH8L[0x8];                                 // 0xb8(0x8)
-	float                                                        ExpansionDuration;                                 // 0xc0(0x4)
-	float                                                        EndRadiusInMetres;                                 // 0xc4(0x4)
-	bool                                                         ApplyImpulseToShips;                               // 0xc8(0x1)
-	char                                                         pad0x7_KDS2H[0x7];                                 // 0xc9(0x7)
-	struct WeightedProbabilityRangeOfRanges                      ForceToApplyToShip;                                // 0xd0(0x30)
-	bool                                                         ApplyDamageToShips;                                // 0x100(0x1)
-	char                                                         pad0x7_SLV9I[0x7];                                 // 0x101(0x7)
-	TArray<struct ShockwaveDamagerShipDamage>                    ShipDamageLevels;                                  // 0x108(0x10)
-	class UClass*                                                DamagerType;                                       // 0x118(0x8)
-	bool                                                         ApplyImpulseToGhostShips;                          // 0x120(0x1)
-	char                                                         pad0x3_7VPVH[0x3];                                 // 0x121(0x3)
-	float                                                        GhostShipImpulseDuration;                          // 0x124(0x4)
-	float                                                        GhostShipImpulseMaxDeflectionAngle;                // 0x128(0x4)
-	bool                                                         DestroyHostileGhostShips;                          // 0x12c(0x1)
-	char                                                         pad0x3_OBLO2[0x3];                                 // 0x12d(0x3)
-	float                                                        NearbyEncounterDistanceInMetres;                   // 0x130(0x4)
-	char                                                         pad0x4_WYRK1[0x4];                                 // 0x134(0x4)
-	TArray<uintptr_t>                                            ProcessedShips;                                    // 0x158(0x10)
-	TArray<uintptr_t>                                            ProcessedGhostShips;                               // 0x168(0x10)
-	char                                                         pad0x48_WR0HL[0x48];                               // 0x178(0x48)
-};
-
-
-// Size 0x158 (Full Size[0x210] - InheritedSize[0xb8]
-class ShipDamagerComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_I6Y4E[0x8];                                 // 0xb8(0x8)
-	class PrimitiveComponent*                                    Shape;                                             // 0xc0(0x8)
-	TArray<class Interface*>                                     ShipHulls;                                         // 0xc8(0x10)
-	TArray<class Interface*>                                     WatercraftHealthInterfaces;                        // 0xd8(0x10)
-	struct StrainDamage                                          ShipStrainDamage;                                  // 0xe8(0x28)
-	struct WeightedProbabilityRangeOfRanges                      TimeBetweenWatercraftDamage;                       // 0x110(0x30)
-	float                                                        WatercraftDamage;                                  // 0x140(0x4)
-	bool                                                         StartDamagingOnBeginPlay;                          // 0x144(0x1)
-	char                                                         pad0xcb_2GIVA[0xcb];                               // 0x145(0xcb)
+	char                                                         pad0x28_I53CG[0x28];                               // 0xe8(0x28)
 };
 
 
@@ -71,6 +27,50 @@ public:
 class ShockwaveDamagerInterface: public Interface
 {
 public:
+};
+
+
+// Size 0x158 (Full Size[0x210] - InheritedSize[0xb8]
+class ShipDamagerComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_TGJKP[0x8];                                 // 0xb8(0x8)
+	class PrimitiveComponent*                                    Shape;                                             // 0xc0(0x8)
+	TArray<class Interface*>                                     ShipHulls;                                         // 0xc8(0x10)
+	TArray<class Interface*>                                     WatercraftHealthInterfaces;                        // 0xd8(0x10)
+	struct StrainDamage                                          ShipStrainDamage;                                  // 0xe8(0x28)
+	struct WeightedProbabilityRangeOfRanges                      TimeBetweenWatercraftDamage;                       // 0x110(0x30)
+	float                                                        WatercraftDamage;                                  // 0x140(0x4)
+	bool                                                         StartDamagingOnBeginPlay;                          // 0x144(0x1)
+	char                                                         pad0xcb_9Y8HV[0xcb];                               // 0x145(0xcb)
+};
+
+
+// Size 0x108 (Full Size[0x1c0] - InheritedSize[0xb8]
+class ShockwaveDamagerComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_2RPSZ[0x8];                                 // 0xb8(0x8)
+	float                                                        ExpansionDuration;                                 // 0xc0(0x4)
+	float                                                        EndRadiusInMetres;                                 // 0xc4(0x4)
+	bool                                                         ApplyImpulseToShips;                               // 0xc8(0x1)
+	char                                                         pad0x7_4GM9W[0x7];                                 // 0xc9(0x7)
+	struct WeightedProbabilityRangeOfRanges                      ForceToApplyToShip;                                // 0xd0(0x30)
+	bool                                                         ApplyDamageToShips;                                // 0x100(0x1)
+	char                                                         pad0x7_8ER6N[0x7];                                 // 0x101(0x7)
+	TArray<struct ShockwaveDamagerShipDamage>                    ShipDamageLevels;                                  // 0x108(0x10)
+	class UClass*                                                DamagerType;                                       // 0x118(0x8)
+	bool                                                         ApplyImpulseToGhostShips;                          // 0x120(0x1)
+	char                                                         pad0x3_VVC10[0x3];                                 // 0x121(0x3)
+	float                                                        GhostShipImpulseDuration;                          // 0x124(0x4)
+	float                                                        GhostShipImpulseMaxDeflectionAngle;                // 0x128(0x4)
+	bool                                                         DestroyHostileGhostShips;                          // 0x12c(0x1)
+	char                                                         pad0x3_DLKKY[0x3];                                 // 0x12d(0x3)
+	float                                                        NearbyEncounterDistanceInMetres;                   // 0x130(0x4)
+	char                                                         pad0x4_HVKLE[0x4];                                 // 0x134(0x4)
+	TArray<uintptr_t>                                            ProcessedShips;                                    // 0x158(0x10)
+	TArray<uintptr_t>                                            ProcessedGhostShips;                               // 0x168(0x10)
+	char                                                         pad0x48_5VI7T[0x48];                               // 0x178(0x48)
 };
 
 

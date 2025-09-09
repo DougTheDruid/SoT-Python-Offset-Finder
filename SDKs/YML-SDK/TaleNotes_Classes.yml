@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 TaleNote:
   Attributes:
-  - Name: pad0x10_RV5KB[0x10]
+  - Name: pad0x10_Y1RMG[0x10]
     Offset: '0x7f0'
     Size: '0x10'
     Type: char
@@ -18,7 +18,7 @@ TaleNote:
     Offset: '0x808'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_C15CE[0x4]
+  - Name: pad0x4_42S4F[0x4]
     Offset: '0x80c'
     Size: '0x4'
     Type: char
@@ -78,9 +78,13 @@ TaleNote:
     Offset: '0x978'
     Size: '0x8'
     Type: class ZoomInOnWieldableItemComponent*
-  - Name: pad0xe0_NKP2R[0xe0]
+  - Name: ClampFieldOfView
     Offset: '0x980'
-    Size: '0xe0'
+    Size: '0x4'
+    Type: float
+  - Name: pad0xdc_XOE81[0xdc]
+    Offset: '0x984'
+    Size: '0xdc'
     Type: char
   ClassSize: '0x270'
   FullSize: '0xa60'

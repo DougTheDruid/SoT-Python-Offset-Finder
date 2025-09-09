@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 CrewSessionBaseSessionTelemetryEvent:
   Attributes:
-  - Name: pad0x10_JR0L6[0x10]
+  - Name: pad0x10_GFCVA[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
@@ -20,7 +20,7 @@ CrewSessionBaseTelemetryEvent:
   ClassSize: '0x10'
 CrewSessionCreatedTelemetryEvent:
   Attributes:
-  - Name: pad0x120_P3QT4[0x120]
+  - Name: pad0x120_8AJS9[0x120]
     Offset: '0x0'
     Size: '0x120'
     Type: char
@@ -31,7 +31,7 @@ CrewSessionCreatedTelemetryEvent:
   ClassSize: '0x130'
 CrewSessionJoinedTelemetryEvent:
   Attributes:
-  - Name: pad0x120_EWO73[0x120]
+  - Name: pad0x120_08T1M[0x120]
     Offset: '0x0'
     Size: '0x120'
     Type: char
@@ -65,14 +65,14 @@ CrewSessionKeepAliveFailedTelemetryEvent:
   ClassSize: '0x28'
 CrewSessionLeaveTelemetryEvent:
   Attributes:
-  - Name: pad0x10_DRCR8[0x10]
+  - Name: pad0x10_57B6D[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
   ClassSize: '0x10'
 CrewSessionMatchmakingEndedTelemetryEvent:
   Attributes:
-  - Name: pad0x10_135RQ[0x10]
+  - Name: pad0x10_9STR8[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
@@ -119,7 +119,7 @@ CrewSessionMatchmakingEndedTelemetryEvent:
   ClassSize: '0x98'
 CrewSessionMatchmakingFollowedTelemetryEvent:
   Attributes:
-  - Name: pad0x120_DJ6W0[0x120]
+  - Name: pad0x120_O1AVR[0x120]
     Offset: '0x0'
     Size: '0x120'
     Type: char
@@ -131,7 +131,7 @@ CrewSessionMatchmakingFollowedTelemetryEvent:
     Offset: '0x130'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_5OAM9[0x4]
+  - Name: pad0x4_02ECO[0x4]
     Offset: '0x134'
     Size: '0x4'
     Type: char
@@ -142,7 +142,7 @@ CrewSessionMatchmakingFollowedTelemetryEvent:
   ClassSize: '0x148'
 CrewSessionMatchmakingStartedTelemetryEvent:
   Attributes:
-  - Name: pad0x10_3U27N[0x10]
+  - Name: pad0x10_DPDK7[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
@@ -178,7 +178,7 @@ CrewSessionMatchmakingStartedTelemetryEvent:
     Offset: '0x68'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_JBCSU[0x4]
+  - Name: pad0x4_PIB7W[0x4]
     Offset: '0x6c'
     Size: '0x4'
     Type: char
@@ -197,7 +197,7 @@ CrewSessionMemberTelemetry:
     Offset: '0x20'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_VS0Z3[0x7]
+  - Name: pad0x7_AJCE4[0x7]
     Offset: '0x21'
     Size: '0x7'
     Type: char
@@ -216,7 +216,7 @@ CrewSessionOperationFailedTelemetryEvent:
     Offset: '0x14'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_WEI9D[0x3]
+  - Name: pad0x3_THUU3[0x3]
     Offset: '0x15'
     Size: '0x3'
     Type: char
@@ -243,7 +243,7 @@ CrewSessionQoSMeasurementTelemetry:
     Offset: '0x1d'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_P8Y03[0x2]
+  - Name: pad0x2_84WDB[0x2]
     Offset: '0x1e'
     Size: '0x2'
     Type: char
@@ -321,7 +321,7 @@ CrewSessionTelemetry:
   ClassSize: '0x110'
 CrewSessionTemplate:
   Attributes:
-  - Name: pad0x18_LZE6G[0x18]
+  - Name: pad0x18_C09J9[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -337,7 +337,7 @@ CrewSessionTemplate:
     Offset: '0x30'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_MTSZE[0x4]
+  - Name: pad0x4_3NZOI[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
@@ -355,70 +355,70 @@ JupiterSessionJoinThroughServiceRequestModel:
   ClassSize: '0x20'
 OnlineSessionMemberLostEvent:
   Attributes:
-  - Name: pad0x28_DFU5W[0x28]
+  - Name: pad0x28_T0CA8[0x28]
     Offset: '0x0'
     Size: '0x28'
     Type: char
   ClassSize: '0x28'
 PlayModeVariantSetFromAllocationSessionCookie:
   Attributes:
-  - Name: pad0x1_M98MN[0x1]
+  - Name: pad0x1_24L8O[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 ServerMatchmakingConfigChangedEvent:
   Attributes:
-  - Name: pad0x4_57N7T[0x4]
+  - Name: pad0x4_5DVWC[0x4]
     Offset: '0x0'
     Size: '0x4'
     Type: char
   ClassSize: '0x4'
 ServerMatchmakingCrewLeftEvent:
   Attributes:
-  - Name: pad0x10_VMSHA[0x10]
+  - Name: pad0x10_7V0TS[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
   ClassSize: '0x10'
 ServerMatchmakingPlayerCrewAssignmentEvent:
   Attributes:
-  - Name: pad0x90_7VPLY[0x90]
+  - Name: pad0x90_GHM4C[0x90]
     Offset: '0x0'
     Size: '0x90'
     Type: char
   ClassSize: '0x90'
 ServerMatchmakingPlayerServerAssignmentEvent:
   Attributes:
-  - Name: pad0xb8_HAWT2[0xb8]
+  - Name: pad0xb8_STICU[0xb8]
     Offset: '0x0'
     Size: '0xb8'
     Type: char
   ClassSize: '0xb8'
 ServerMatchmakingRefusedEvent:
   Attributes:
-  - Name: pad0x88_5G2GO[0x88]
+  - Name: pad0x88_JBP67[0x88]
     Offset: '0x0'
     Size: '0x88'
     Type: char
   ClassSize: '0x88'
 ServerMatchmakingRequestEvent:
   Attributes:
-  - Name: pad0xa8_TF2HA[0xa8]
+  - Name: pad0xa8_94N7H[0xa8]
     Offset: '0x0'
     Size: '0xa8'
     Type: char
   ClassSize: '0xa8'
 ServerMatchmakingResultEvent:
   Attributes:
-  - Name: pad0x28_82X50[0x28]
+  - Name: pad0x28_EXQVF[0x28]
     Offset: '0x0'
     Size: '0x28'
     Type: char
   ClassSize: '0x28'
 SessionDetailsChangedEvent:
   Attributes:
-  - Name: pad0x20_69U0X[0x20]
+  - Name: pad0x20_HVUAV[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
@@ -429,7 +429,7 @@ SessionHostChangedEvent:
     Offset: '0x0'
     Size: '0x10'
     Type: struct Guid
-  - Name: pad0x40_JMGO2[0x40]
+  - Name: pad0x40_VZ9WN[0x40]
     Offset: '0x10'
     Size: '0x40'
     Type: char
@@ -454,7 +454,7 @@ SessionInfoUpdateAvailableEvent:
   ClassSize: '0x10'
 SessionLostEvent:
   Attributes:
-  - Name: pad0x8_TH4IZ[0x8]
+  - Name: pad0x8_LBKNN[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -469,7 +469,7 @@ SessionTemplate:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_UVE8Y[0x3]
+  - Name: pad0x3_69GKB[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char

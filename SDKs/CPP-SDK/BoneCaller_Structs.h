@@ -12,13 +12,14 @@ public:
 };
 
 
-// Size 0x20
-struct BoneCallerUsageTelemetry
+// Size 0x28
+struct BoneCallerImpactIdToSpawner
 {
 public:
-	struct Vector                                                Location;                                          // 0x0(0xc)
-	char                                                         pad0x4_OPEHL[0x4];                                 // 0xc(0x4)
-	struct FString                                               Region;                                            // 0x10(0x10)
+	class UClass*                                                BoneCallerSpawnId;                                 // 0x0(0x8)
+	class AIFixedWavesSpawner*                                   ShipSpawner;                                       // 0x8(0x8)
+	class AIFixedWavesSpawner*                                   LandSpawner;                                       // 0x10(0x8)
+	TArray<struct AttitudeOverrideEntry>                         SpawnedPawnAttitudeOverrides;                      // 0x18(0x10)
 };
 
 
@@ -28,16 +29,37 @@ struct EventOnBoneCallerExploded
 public:
 	class Actor*                                                 RootInstigator;                                    // 0x0(0x8)
 	class Actor*                                                 HitActor;                                          // 0x8(0x8)
-	char                                                         pad0x10_B7217[0x10];                               // 0x10(0x10)
+	char                                                         pad0x10_2CQNT[0x10];                               // 0x10(0x10)
 	class Object*                                                BoneCallerSpawnId;                                 // 0x20(0x8)
 };
 
 
-// Size 0x20
-struct PlayerBoneCallerData
+// Size 0x18
+struct BoneCallerPawnKillTelemetry
 {
 public:
-	char                                                         pad0x20_9EWYD[0x20];                               // 0x0(0x20)
+	struct FString                                               KilledPawnName;                                    // 0x0(0x10)
+	bool                                                         WasSpawnedByBoneCaller;                            // 0x10(0x1)
+	char                                                         pad0x7_XO7VT[0x7];                                 // 0x11(0x7)
+};
+
+
+// Size 0x20
+struct BoneCallerUsageTelemetry
+{
+public:
+	struct Vector                                                Location;                                          // 0x0(0xc)
+	char                                                         pad0x4_CLTKL[0x4];                                 // 0xc(0x4)
+	struct FString                                               Region;                                            // 0x10(0x10)
+};
+
+
+// Size 0x10
+struct BoneCallerSpawnIdShipSizeOverride
+{
+public:
+	class UClass*                                                ShipSize;                                          // 0x0(0x8)
+	class UClass*                                                BoneCallerSpawnIdOverride;                         // 0x8(0x8)
 };
 
 
@@ -50,17 +72,6 @@ public:
 };
 
 
-// Size 0x28
-struct BoneCallerImpactIdToSpawner
-{
-public:
-	class UClass*                                                BoneCallerSpawnId;                                 // 0x0(0x8)
-	class AIFixedWavesSpawner*                                   ShipSpawner;                                       // 0x8(0x8)
-	class AIFixedWavesSpawner*                                   LandSpawner;                                       // 0x10(0x8)
-	TArray<struct AttitudeOverrideEntry>                         SpawnedPawnAttitudeOverrides;                      // 0x18(0x10)
-};
-
-
 // Size 0x38
 struct EventOnBoneCallerDidKillEvent
 {
@@ -70,22 +81,11 @@ public:
 };
 
 
-// Size 0x18
-struct BoneCallerPawnKillTelemetry
+// Size 0x20
+struct PlayerBoneCallerData
 {
 public:
-	struct FString                                               KilledPawnName;                                    // 0x0(0x10)
-	bool                                                         WasSpawnedByBoneCaller;                            // 0x10(0x1)
-	char                                                         pad0x7_NGBVE[0x7];                                 // 0x11(0x7)
-};
-
-
-// Size 0x10
-struct BoneCallerSpawnIdShipSizeOverride
-{
-public:
-	class UClass*                                                ShipSize;                                          // 0x0(0x8)
-	class UClass*                                                BoneCallerSpawnIdOverride;                         // 0x8(0x8)
+	char                                                         pad0x20_AHFPW[0x20];                               // 0x0(0x20)
 };
 
 

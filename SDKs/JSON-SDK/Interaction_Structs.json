@@ -1,4 +1,61 @@
 {
+  "InteractionEdTelemetryEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "InteractorPosition",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TargetPosition",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "IsNewInteractingPlayerCondition": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x8_4D5BG[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PlayerPayloadSelector",
+        "Type": "struct ConditionContextPayloadSelectorInstance",
+        "Size": "0x20",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "InteractablePayloadSelector",
+        "Type": "struct ConditionContextPayloadSelectorInstance",
+        "Size": "0x20",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "EventOptimalInteractionObjectChanged": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "PreviousFocusObject",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NewFocusObject",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "InteractLoadableValidityCheckFailedTelemetryEvent": {
     "ClassSize": "0x38",
     "Attributes": [
@@ -39,50 +96,27 @@
         "Offset": "0x31"
       },
       {
-        "Name": "pad0x6_PWDI7[0x6]",
+        "Name": "pad0x6_TVBZ6[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x32"
       }
     ]
   },
-  "IsNewInteractingPlayerCondition": {
-    "ClassSize": "0x48",
+  "EventInteractionBlockingStateChanged": {
+    "ClassSize": "0x2",
     "Attributes": [
       {
-        "Name": "pad0x8_55WU4[0x8]",
-        "Type": "char",
-        "Size": "0x8",
+        "Name": "IsInteractionBlocked",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x0"
       },
       {
-        "Name": "PlayerPayloadSelector",
-        "Type": "struct ConditionContextPayloadSelectorInstance",
-        "Size": "0x20",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "InteractablePayloadSelector",
-        "Type": "struct ConditionContextPayloadSelectorInstance",
-        "Size": "0x20",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "EventOptimalInteractionObjectChanged": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "PreviousFocusObject",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NewFocusObject",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
+        "Name": "InteractionBlockReason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1"
       }
     ]
   },
@@ -96,7 +130,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_XI9MN[0x4]",
+        "Name": "pad0x4_E2W9B[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -126,44 +160,10 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_LKYYS[0x4]",
+        "Name": "pad0x4_9JNON[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x24"
-      }
-    ]
-  },
-  "InteractionEdTelemetryEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "InteractorPosition",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TargetPosition",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "EventInteractionBlockingStateChanged": {
-    "ClassSize": "0x2",
-    "Attributes": [
-      {
-        "Name": "IsInteractionBlocked",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "InteractionBlockReason",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x1"
       }
     ]
   },

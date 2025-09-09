@@ -1,4 +1,30 @@
 {
+  "GameEventsOnDemandAvailabilityService": {
+    "Super": "Object",
+    "FullSize": "0x118",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xf0",
+    "Attributes": [
+      {
+        "Name": "pad0xd0_6K409[0xd0]",
+        "Type": "char",
+        "Size": "0xd0",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "World",
+        "Type": "class World*",
+        "Size": "0x8",
+        "Offset": "0xf8"
+      },
+      {
+        "Name": "pad0x18_S1UN6[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x100"
+      }
+    ]
+  },
   "GameEventsOnDemandLoserTunnelService": {
     "Super": "Actor",
     "FullSize": "0x4e0",
@@ -6,7 +32,7 @@
     "ClassSize": "0x140",
     "Attributes": [
       {
-        "Name": "pad0x8_9WH6Z[0x8]",
+        "Name": "pad0x8_D4JJ6[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3a0"
@@ -18,7 +44,7 @@
         "Offset": "0x3a8"
       },
       {
-        "Name": "pad0x58_ZCFDV[0x58]",
+        "Name": "pad0x58_4YSWO[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0x3b0"
@@ -30,7 +56,7 @@
         "Offset": "0x408"
       },
       {
-        "Name": "pad0x50_MGDBE[0x50]",
+        "Name": "pad0x50_1WUQT[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x410"
@@ -48,36 +74,10 @@
         "Offset": "0x470"
       },
       {
-        "Name": "pad0x68_Y1MMB[0x68]",
+        "Name": "pad0x68_QEHP6[0x68]",
         "Type": "char",
         "Size": "0x68",
         "Offset": "0x478"
-      }
-    ]
-  },
-  "GameEventsOnDemandAvailabilityService": {
-    "Super": "Object",
-    "FullSize": "0x118",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xf0",
-    "Attributes": [
-      {
-        "Name": "pad0xd0_FL2DL[0xd0]",
-        "Type": "char",
-        "Size": "0xd0",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "World",
-        "Type": "class World*",
-        "Size": "0x8",
-        "Offset": "0xf8"
-      },
-      {
-        "Name": "pad0x18_OIUYB[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x100"
       }
     ]
   },

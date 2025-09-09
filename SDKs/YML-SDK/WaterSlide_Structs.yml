@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 OnEndWaterSlideActionStateEvent:
   Attributes:
-  - Name: pad0x8_5BDDD[0x8]
+  - Name: pad0x8_Z7HVT[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -32,14 +32,14 @@ OnEndZiplineActionStateEvent:
   ClassSize: '0x18'
 OnExitedRideEvent:
   Attributes:
-  - Name: pad0x1_EPBO0[0x1]
+  - Name: pad0x1_9J8J6[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 OnPlayerChangedWaterSlideRouteActionStateEvent:
   Attributes:
-  - Name: pad0x8_CO8SZ[0x8]
+  - Name: pad0x8_M24I6[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -50,7 +50,7 @@ OnPlayerChangedWaterSlideRouteActionStateEvent:
   ClassSize: '0x10'
 OnPlayerSpeedOnWaterSlideChangedActionStateEvent:
   Attributes:
-  - Name: pad0xc_6A9VW[0xc]
+  - Name: pad0xc_GD7EC[0xc]
     Offset: '0x0'
     Size: '0xc'
     Type: char
@@ -91,14 +91,14 @@ OnStartZiplineActionStateEvent:
   ClassSize: '0x28'
 OnUpdateZiplineActionStateEvent:
   Attributes:
-  - Name: pad0x1c_MA6C0[0x1c]
+  - Name: pad0x1c_3P9JM[0x1c]
     Offset: '0x0'
     Size: '0x1c'
     Type: char
   ClassSize: '0x1c'
 RideTransitionActionStateConstructionInfo:
   Attributes:
-  - Name: pad0x48_8YNFA[0x48]
+  - Name: pad0x48_TJ4FM[0x48]
     Offset: '0x0'
     Size: '0x48'
     Type: char
@@ -110,7 +110,7 @@ RideTransitionActionStateConstructionInfo:
     Offset: '0x50'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_TLAG6[0x3]
+  - Name: pad0x3_RQTSH[0x3]
     Offset: '0x51'
     Size: '0x3'
     Type: char
@@ -118,22 +118,26 @@ RideTransitionActionStateConstructionInfo:
     Offset: '0x54'
     Size: '0x4'
     Type: float
-  - Name: pad0x18_A2EOX[0x18]
+  - Name: pad0x18_WSM8Y[0x18]
     Offset: '0x58'
     Size: '0x18'
     Type: char
   ClassSize: '0x70'
 RideTransitionActionStateParams:
   Attributes:
-  - Name: pad0x10_QYXKW[0x10]
+  - Name: pad0x20_Z3PI0[0x20]
     Offset: '0x0'
-    Size: '0x10'
+    Size: '0x20'
     Type: char
   - Name: Duration
-    Offset: '0x10'
+    Offset: '0x20'
     Size: '0x4'
     Type: float
-  ClassSize: '0x14'
+  - Name: pad0x4_WHE3G[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
+  ClassSize: '0x28'
 RideTransitionTelemetryEvent:
   Attributes:
   - Name: RideObjectId
@@ -164,14 +168,14 @@ RideTransitionTelemetryEvent:
     Offset: '0x2c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_HKKGY[0x3]
+  - Name: pad0x3_XVW97[0x3]
     Offset: '0x2d'
     Size: '0x3'
     Type: char
   ClassSize: '0x30'
 WaterSlideActionStateConstructionInfo:
   Attributes:
-  - Name: pad0x48_5Q52F[0x48]
+  - Name: pad0x48_45SJZ[0x48]
     Offset: '0x0'
     Size: '0x48'
     Type: char
@@ -186,19 +190,27 @@ WaterSlideActionStateParams:
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: ForceStash
+  - Name: pad0x4_ZI6Y5[0x4]
     Offset: '0x4'
+    Size: '0x4'
+    Type: char
+  - Name: ForcedFieldOfViewScalarMultiplierCurve
+    Offset: '0x8'
+    Size: '0x8'
+    Type: class CurveFloat*
+  - Name: ForceStash
+    Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_WYOHZ[0x3]
-    Offset: '0x5'
+  - Name: pad0x3_AHIEL[0x3]
+    Offset: '0x11'
     Size: '0x3'
     Type: char
   - Name: LookAtOffsetParams
-    Offset: '0x8'
+    Offset: '0x14'
     Size: '0x1c'
     Type: struct LookAtOffsetParams
-  ClassSize: '0x24'
+  ClassSize: '0x30'
 WaterSlideParams:
   Attributes:
   - Name: ForwardSpeed
@@ -229,7 +241,7 @@ WaterSlideParams:
     Offset: '0x18'
     Size: '0x4'
     Type: struct PlayerStat
-  - Name: pad0x4_12GK7[0x4]
+  - Name: pad0x4_4NW1D[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -244,10 +256,18 @@ ZipLineActionStateParams:
     Offset: '0x0'
     Size: '0x1c'
     Type: struct LookAtOffsetParams
-  ClassSize: '0x1c'
+  - Name: pad0x4_Y0DQS[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
+  - Name: FOVScalarMultiplierCurve
+    Offset: '0x20'
+    Size: '0x8'
+    Type: class CurveFloat*
+  ClassSize: '0x28'
 ZiplineActionStateConstructionInfo:
   Attributes:
-  - Name: pad0x48_P9BR5[0x48]
+  - Name: pad0x48_FW15A[0x48]
     Offset: '0x0'
     Size: '0x48'
     Type: char
@@ -263,7 +283,7 @@ ZiplineActionStateConstructionInfo:
     Offset: '0x51'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_3CZLL[0x6]
+  - Name: pad0x6_YVDL3[0x6]
     Offset: '0x52'
     Size: '0x6'
     Type: char
@@ -294,7 +314,7 @@ ZiplineFeelParameters:
     Offset: '0x10'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_D7EB6[0x4]
+  - Name: pad0x4_EA879[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char

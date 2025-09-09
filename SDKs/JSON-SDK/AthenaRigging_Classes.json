@@ -1,24 +1,4 @@
 {
-  "MaterialExpressionRopeParameter": {
-    "Super": "MaterialExpression",
-    "FullSize": "0x78",
-    "InheritedSize": "0x70",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "RopeParameterType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "pad0x7_1QVGL[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x71"
-      }
-    ]
-  },
   "InstancedRopeComponent": {
     "Super": "PrimitiveComponent",
     "FullSize": "0x660",
@@ -44,12 +24,19 @@
         "Offset": "0x5b0"
       },
       {
-        "Name": "pad0xac_0YAA1[0xac]",
+        "Name": "pad0xac_99MVS[0xac]",
         "Type": "char",
         "Size": "0xac",
         "Offset": "0x5b4"
       }
     ]
+  },
+  "RopeInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "RiggingSystemComponent": {
     "Super": "SceneComponent",
@@ -76,7 +63,7 @@
         "Offset": "0x300"
       },
       {
-        "Name": "pad0x8_BHMWB[0x8]",
+        "Name": "pad0x8_69NL0[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x308"
@@ -90,7 +77,7 @@
     "ClassSize": "0x150",
     "Attributes": [
       {
-        "Name": "pad0x8_1JBD4[0x8]",
+        "Name": "pad0x8_FUUSM[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3a0"
@@ -144,19 +131,32 @@
         "Offset": "0x458"
       },
       {
-        "Name": "pad0x88_PB0LG[0x88]",
+        "Name": "pad0x88_MP516[0x88]",
         "Type": "char",
         "Size": "0x88",
         "Offset": "0x468"
       }
     ]
   },
-  "RopeInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "MaterialExpressionRopeParameter": {
+    "Super": "MaterialExpression",
+    "FullSize": "0x78",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "RopeParameterType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "pad0x7_T0HFS[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x71"
+      }
+    ]
   },
   "RopeCatenaryRenderComponent": {
     "Super": "CordRenderComponent",

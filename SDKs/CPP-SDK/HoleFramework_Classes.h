@@ -7,6 +7,13 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class HoleInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class HoleServiceInterface: public Interface
 {
 public:
@@ -17,14 +24,7 @@ public:
 class DigsiteObject: public Object
 {
 public:
-	char                                                         pad0x18_ROUF7[0x18];                               // 0x28(0x18)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class HoleInterface: public Interface
-{
-public:
+	char                                                         pad0x18_2JIU9[0x18];                               // 0x28(0x18)
 };
 
 

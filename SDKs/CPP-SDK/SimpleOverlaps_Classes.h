@@ -10,14 +10,7 @@
 class SimpleOverlapComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_CO7GX[0x8];                                 // 0xb8(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SimpleOverlapCollectionKey: public Object
-{
-public:
+	char                                                         pad0x8_2E2MG[0x8];                                 // 0xb8(0x8)
 };
 
 
@@ -25,10 +18,17 @@ public:
 class SimpleOverlapZone: public Actor
 {
 public:
-	char                                                         pad0xc8_OA77Y[0xc8];                               // 0x3a0(0xc8)
+	char                                                         pad0xc8_XVWJX[0xc8];                               // 0x3a0(0xc8)
 	class BoxComponent*                                          CollisionMesh;                                     // 0x468(0x8)
 	bool                                                         StartActive;                                       // 0x470(0x1)
-	char                                                         pad0x7_GMTV4[0x7];                                 // 0x471(0x7)
+	char                                                         pad0x7_2G3HQ[0x7];                                 // 0x471(0x7)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class SimpleOverlapCollectionKey: public Object
+{
+public:
 };
 
 

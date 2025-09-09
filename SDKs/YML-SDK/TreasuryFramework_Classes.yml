@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 ShimmerActor:
   Attributes:
-  - Name: pad0xa8_28UFD[0xa8]
+  - Name: pad0xa8_P7BO6[0xa8]
     Offset: '0x3a0'
     Size: '0xa8'
     Type: char
@@ -12,7 +12,7 @@ ShimmerActor:
   Super: Actor
 SunkenKingdomShrineDeepSeaRegion:
   Attributes:
-  - Name: pad0x8_VYHZ3[0x8]
+  - Name: pad0x8_JE0N4[0x8]
     Offset: '0x410'
     Size: '0x8'
     Type: char
@@ -22,7 +22,7 @@ SunkenKingdomShrineDeepSeaRegion:
   Super: DeepSeaRegion
 SunkenKingdomShrineEventRoom:
   Attributes:
-  - Name: pad0x10_HOGOD[0x10]
+  - Name: pad0x10_GB5ZE[0x10]
     Offset: '0x4d8'
     Size: '0x10'
     Type: char
@@ -46,7 +46,7 @@ SunkenKingdomShrineEventRoom:
     Offset: '0x510'
     Size: '0x8'
     Type: class GameEventItemSpawnSelectorComponent*
-  - Name: pad0x70_XNTQE[0x70]
+  - Name: pad0x70_EZPXA[0x70]
     Offset: '0x518'
     Size: '0x70'
     Type: char
@@ -56,17 +56,17 @@ SunkenKingdomShrineEventRoom:
   Super: EventRoom
 SunkenKingdomShrineFinalRewardSpawnComponent:
   Attributes:
-  - Name: pad0x20_PEBT7[0x20]
-    Offset: '0x480'
+  - Name: pad0x20_3SANG[0x20]
+    Offset: '0x4b0'
     Size: '0x20'
     Type: char
   ClassSize: '0x20'
-  FullSize: '0x4a0'
-  InheritedSize: '0x480'
+  FullSize: '0x4d0'
+  InheritedSize: '0x4b0'
   Super: ItemSpawnComponent
 SunkenKingdomTreasuryDeepSeaRegion:
   Attributes:
-  - Name: pad0x8_0X7JP[0x8]
+  - Name: pad0x8_I06FL[0x8]
     Offset: '0x410'
     Size: '0x8'
     Type: char
@@ -76,7 +76,7 @@ SunkenKingdomTreasuryDeepSeaRegion:
   Super: DeepSeaRegion
 TreasuryRoom:
   Attributes:
-  - Name: pad0x20_W8GNG[0x20]
+  - Name: pad0x20_CY8J5[0x20]
     Offset: '0x3a0'
     Size: '0x20'
     Type: char
@@ -192,7 +192,7 @@ TreasuryRoom:
     Offset: '0x4e0'
     Size: '0x4'
     Type: struct PlayerStat
-  - Name: pad0x4_CSFSD[0x4]
+  - Name: pad0x4_WVSTO[0x4]
     Offset: '0x4e4'
     Size: '0x4'
     Type: char
@@ -212,7 +212,7 @@ TreasuryRoom:
     Offset: '0x530'
     Size: '0xa0'
     Type: struct ObjectMessagingDispatcher
-  - Name: pad0x18_M3QAW[0x18]
+  - Name: pad0x18_GT09B[0x18]
     Offset: '0x5d0'
     Size: '0x18'
     Type: char

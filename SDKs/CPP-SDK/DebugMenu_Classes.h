@@ -7,7 +7,7 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DebugMenuEntryGenerator: public Object
+class DebugMenuTestFunctions: public BlueprintFunctionLibrary
 {
 public:
 };
@@ -17,9 +17,24 @@ public:
 class DebugMenuComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x28_TG5MA[0x28];                               // 0xb8(0x28)
+	char                                                         pad0x28_GTCE3[0x28];                               // 0xb8(0x28)
 	class DebugMenu*                                             DebugMenuInstance;                                 // 0xe0(0x8)
-	char                                                         pad0x20_Y331V[0x20];                               // 0xe8(0x20)
+	char                                                         pad0x20_HT67R[0x20];                               // 0xe8(0x20)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DebugMenuEntryGenerator: public Object
+{
+public:
+};
+
+
+// Size 0xd8 (Full Size[0x478] - InheritedSize[0x3a0]
+class DebugMenu: public Actor
+{
+public:
+	char                                                         pad0xd8_NTH42[0xd8];                               // 0x3a0(0xd8)
 };
 
 
@@ -34,26 +49,11 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DebugMenuTestFunctions: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
-// Size 0xd8 (Full Size[0x478] - InheritedSize[0x3a0]
-class DebugMenu: public Actor
-{
-public:
-	char                                                         pad0xd8_1220T[0xd8];                               // 0x3a0(0xd8)
-};
-
-
 // Size 0x8 (Full Size[0x110] - InheritedSize[0x108]
 class DebugMenuComponentMock: public DebugMenuComponent
 {
 public:
-	char                                                         pad0x8_6VZ72[0x8];                                 // 0x108(0x8)
+	char                                                         pad0x8_G8HJV[0x8];                                 // 0x108(0x8)
 };
 
 

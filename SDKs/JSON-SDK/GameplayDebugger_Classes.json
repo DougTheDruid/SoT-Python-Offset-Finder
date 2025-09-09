@@ -1,432 +1,4 @@
 {
-  "GameplayDebuggerSettings": {
-    "Super": "Object",
-    "FullSize": "0xa8",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x80",
-    "Attributes": [
-      {
-        "Name": "CustomViewNames",
-        "Type": "struct GDTCustomViewNames",
-        "Size": "0x50",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "OverHead",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "Basic",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x79"
-      },
-      {
-        "Name": "BehaviorTree",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x7a"
-      },
-      {
-        "Name": "EQS",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x7b"
-      },
-      {
-        "Name": "EnableEQSOnHUD",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x7c"
-      },
-      {
-        "Name": "pad0x3_RNBAH[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x7d"
-      },
-      {
-        "Name": "ActiveEQSIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "Perception",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x84"
-      },
-      {
-        "Name": "GameView1",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x85"
-      },
-      {
-        "Name": "GameView2",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x86"
-      },
-      {
-        "Name": "GameView3",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x87"
-      },
-      {
-        "Name": "GameView4",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "GameView5",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x89"
-      },
-      {
-        "Name": "pad0x1e_XOE8Z[0x1e]",
-        "Type": "char",
-        "Size": "0x1e",
-        "Offset": "0x8a"
-      }
-    ]
-  },
-  "GameplayDebuggingReplicator": {
-    "Super": "Actor",
-    "FullSize": "0x450",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0xb0",
-    "Attributes": [
-      {
-        "Name": "DebugComponentClassName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "DebugComponentHUDClassName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x3b0"
-      },
-      {
-        "Name": "DebugComponentControllerClassName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x3c0"
-      },
-      {
-        "Name": "MaxEQSQueries",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "pad0x4_ZGE8Z[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3d4"
-      },
-      {
-        "Name": "DebugComponent",
-        "Type": "class GameplayDebuggingComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d8"
-      },
-      {
-        "Name": "LocalPlayerOwner",
-        "Type": "class PlayerController*",
-        "Size": "0x8",
-        "Offset": "0x3e0"
-      },
-      {
-        "Name": "LastSelectedActorToDebug",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x3e8"
-      },
-      {
-        "Name": "bIsGlobalInWorld",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3f0"
-      },
-      {
-        "Name": "bAutoActivate",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3f1"
-      },
-      {
-        "Name": "OverHead",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3f2"
-      },
-      {
-        "Name": "Basic",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3f3"
-      },
-      {
-        "Name": "BehaviorTree",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3f4"
-      },
-      {
-        "Name": "EQS",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3f5"
-      },
-      {
-        "Name": "EnableEQSOnHUD",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3f6"
-      },
-      {
-        "Name": "pad0x1_CAHSL[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x3f7"
-      },
-      {
-        "Name": "ActiveEQSIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "Perception",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3fc"
-      },
-      {
-        "Name": "GameView1",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3fd"
-      },
-      {
-        "Name": "GameView2",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3fe"
-      },
-      {
-        "Name": "GameView3",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3ff"
-      },
-      {
-        "Name": "GameView4",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x400"
-      },
-      {
-        "Name": "GameView5",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x401"
-      },
-      {
-        "Name": "pad0x4e_ZDZXC[0x4e]",
-        "Type": "char",
-        "Size": "0x4e",
-        "Offset": "0x402"
-      }
-    ]
-  },
-  "GameplayDebuggingControllerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x358",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x2a0",
-    "Attributes": [
-      {
-        "Name": "OnDebugAIHUD",
-        "Type": "class GameplayDebuggingHUDComponent*",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "DebugAITargetActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "AIDebugViewInputComponent",
-        "Type": "class InputComponent*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "DebugCameraInputComponent",
-        "Type": "class InputComponent*",
-        "Size": "0x8",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "pad0x28_6KNMX[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0xd8"
-      },
-      {
-        "Name": "ActivationKey",
-        "Type": "struct InputChord",
-        "Size": "0x28",
-        "Offset": "0x100"
-      },
-      {
-        "Name": "CategoryZeroBind",
-        "Type": "struct InputChord",
-        "Size": "0x28",
-        "Offset": "0x128"
-      },
-      {
-        "Name": "CategoryOneBind",
-        "Type": "struct InputChord",
-        "Size": "0x28",
-        "Offset": "0x150"
-      },
-      {
-        "Name": "CategoryTwoBind",
-        "Type": "struct InputChord",
-        "Size": "0x28",
-        "Offset": "0x178"
-      },
-      {
-        "Name": "CategoryThreeBind",
-        "Type": "struct InputChord",
-        "Size": "0x28",
-        "Offset": "0x1a0"
-      },
-      {
-        "Name": "CategoryFourBind",
-        "Type": "struct InputChord",
-        "Size": "0x28",
-        "Offset": "0x1c8"
-      },
-      {
-        "Name": "CategoryFiveBind",
-        "Type": "struct InputChord",
-        "Size": "0x28",
-        "Offset": "0x1f0"
-      },
-      {
-        "Name": "CategorySixBind",
-        "Type": "struct InputChord",
-        "Size": "0x28",
-        "Offset": "0x218"
-      },
-      {
-        "Name": "CategorySevenBind",
-        "Type": "struct InputChord",
-        "Size": "0x28",
-        "Offset": "0x240"
-      },
-      {
-        "Name": "CategoryEightBind",
-        "Type": "struct InputChord",
-        "Size": "0x28",
-        "Offset": "0x268"
-      },
-      {
-        "Name": "CategoryNineBind",
-        "Type": "struct InputChord",
-        "Size": "0x28",
-        "Offset": "0x290"
-      },
-      {
-        "Name": "CycleDetailsViewBind",
-        "Type": "struct InputChord",
-        "Size": "0x28",
-        "Offset": "0x2b8"
-      },
-      {
-        "Name": "DebugCameraBind",
-        "Type": "struct InputChord",
-        "Size": "0x28",
-        "Offset": "0x2e0"
-      },
-      {
-        "Name": "OnScreenDebugMessagesBind",
-        "Type": "struct InputChord",
-        "Size": "0x28",
-        "Offset": "0x308"
-      },
-      {
-        "Name": "GameHUDBind",
-        "Type": "struct InputChord",
-        "Size": "0x28",
-        "Offset": "0x330"
-      }
-    ]
-  },
-  "GameplayDebuggingHUDComponent": {
-    "Super": "Actor",
-    "FullSize": "0x490",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0xf0",
-    "Attributes": [
-      {
-        "Name": "MenuStartX",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "MenuStartY",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3a4"
-      },
-      {
-        "Name": "DebugInfoStartX",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3a8"
-      },
-      {
-        "Name": "DebugInfoStartY",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3ac"
-      },
-      {
-        "Name": "Canvas",
-        "Type": "class Canvas*",
-        "Size": "0x8",
-        "Offset": "0x3b0"
-      },
-      {
-        "Name": "PlayerOwner",
-        "Type": "class PlayerController*",
-        "Size": "0x8",
-        "Offset": "0x3b8"
-      },
-      {
-        "Name": "pad0xd0_K0Q24[0xd0]",
-        "Type": "char",
-        "Size": "0xd0",
-        "Offset": "0x3c0"
-      }
-    ]
-  },
   "GameplayDebuggingComponent": {
     "Super": "PrimitiveComponent",
     "FullSize": "0x7d0",
@@ -446,7 +18,7 @@
         "Offset": "0x5b0"
       },
       {
-        "Name": "pad0x4_6VJ9I[0x4]",
+        "Name": "pad0x4_W2SXP[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x5b4"
@@ -560,7 +132,7 @@
         "Offset": "0x6c8"
       },
       {
-        "Name": "pad0x10_I18C5[0x10]",
+        "Name": "pad0x10_383I3[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x6d8"
@@ -578,7 +150,7 @@
         "Offset": "0x6f8"
       },
       {
-        "Name": "pad0x10_10BFT[0x10]",
+        "Name": "pad0x10_QIVT4[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x708"
@@ -632,7 +204,7 @@
         "Offset": "0x748"
       },
       {
-        "Name": "pad0x7_OVI5Z[0x7]",
+        "Name": "pad0x7_EM89K[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x749"
@@ -644,10 +216,438 @@
         "Offset": "0x750"
       },
       {
-        "Name": "pad0x78_EOV5J[0x78]",
+        "Name": "pad0x78_LTM5F[0x78]",
         "Type": "char",
         "Size": "0x78",
         "Offset": "0x758"
+      }
+    ]
+  },
+  "GameplayDebuggingHUDComponent": {
+    "Super": "Actor",
+    "FullSize": "0x490",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0xf0",
+    "Attributes": [
+      {
+        "Name": "MenuStartX",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "MenuStartY",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3a4"
+      },
+      {
+        "Name": "DebugInfoStartX",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3a8"
+      },
+      {
+        "Name": "DebugInfoStartY",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3ac"
+      },
+      {
+        "Name": "Canvas",
+        "Type": "class Canvas*",
+        "Size": "0x8",
+        "Offset": "0x3b0"
+      },
+      {
+        "Name": "PlayerOwner",
+        "Type": "class PlayerController*",
+        "Size": "0x8",
+        "Offset": "0x3b8"
+      },
+      {
+        "Name": "pad0xd0_0W5Q6[0xd0]",
+        "Type": "char",
+        "Size": "0xd0",
+        "Offset": "0x3c0"
+      }
+    ]
+  },
+  "GameplayDebuggingControllerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x358",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x2a0",
+    "Attributes": [
+      {
+        "Name": "OnDebugAIHUD",
+        "Type": "class GameplayDebuggingHUDComponent*",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "DebugAITargetActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "AIDebugViewInputComponent",
+        "Type": "class InputComponent*",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "DebugCameraInputComponent",
+        "Type": "class InputComponent*",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0x28_BY3ER[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "ActivationKey",
+        "Type": "struct InputChord",
+        "Size": "0x28",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "CategoryZeroBind",
+        "Type": "struct InputChord",
+        "Size": "0x28",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "CategoryOneBind",
+        "Type": "struct InputChord",
+        "Size": "0x28",
+        "Offset": "0x150"
+      },
+      {
+        "Name": "CategoryTwoBind",
+        "Type": "struct InputChord",
+        "Size": "0x28",
+        "Offset": "0x178"
+      },
+      {
+        "Name": "CategoryThreeBind",
+        "Type": "struct InputChord",
+        "Size": "0x28",
+        "Offset": "0x1a0"
+      },
+      {
+        "Name": "CategoryFourBind",
+        "Type": "struct InputChord",
+        "Size": "0x28",
+        "Offset": "0x1c8"
+      },
+      {
+        "Name": "CategoryFiveBind",
+        "Type": "struct InputChord",
+        "Size": "0x28",
+        "Offset": "0x1f0"
+      },
+      {
+        "Name": "CategorySixBind",
+        "Type": "struct InputChord",
+        "Size": "0x28",
+        "Offset": "0x218"
+      },
+      {
+        "Name": "CategorySevenBind",
+        "Type": "struct InputChord",
+        "Size": "0x28",
+        "Offset": "0x240"
+      },
+      {
+        "Name": "CategoryEightBind",
+        "Type": "struct InputChord",
+        "Size": "0x28",
+        "Offset": "0x268"
+      },
+      {
+        "Name": "CategoryNineBind",
+        "Type": "struct InputChord",
+        "Size": "0x28",
+        "Offset": "0x290"
+      },
+      {
+        "Name": "CycleDetailsViewBind",
+        "Type": "struct InputChord",
+        "Size": "0x28",
+        "Offset": "0x2b8"
+      },
+      {
+        "Name": "DebugCameraBind",
+        "Type": "struct InputChord",
+        "Size": "0x28",
+        "Offset": "0x2e0"
+      },
+      {
+        "Name": "OnScreenDebugMessagesBind",
+        "Type": "struct InputChord",
+        "Size": "0x28",
+        "Offset": "0x308"
+      },
+      {
+        "Name": "GameHUDBind",
+        "Type": "struct InputChord",
+        "Size": "0x28",
+        "Offset": "0x330"
+      }
+    ]
+  },
+  "GameplayDebuggingReplicator": {
+    "Super": "Actor",
+    "FullSize": "0x450",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "DebugComponentClassName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "DebugComponentHUDClassName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x3b0"
+      },
+      {
+        "Name": "DebugComponentControllerClassName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x3c0"
+      },
+      {
+        "Name": "MaxEQSQueries",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "pad0x4_NLL5S[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3d4"
+      },
+      {
+        "Name": "DebugComponent",
+        "Type": "class GameplayDebuggingComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "LocalPlayerOwner",
+        "Type": "class PlayerController*",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "LastSelectedActorToDebug",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "bIsGlobalInWorld",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "bAutoActivate",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3f1"
+      },
+      {
+        "Name": "OverHead",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3f2"
+      },
+      {
+        "Name": "Basic",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3f3"
+      },
+      {
+        "Name": "BehaviorTree",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3f4"
+      },
+      {
+        "Name": "EQS",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3f5"
+      },
+      {
+        "Name": "EnableEQSOnHUD",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3f6"
+      },
+      {
+        "Name": "pad0x1_UVOCM[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x3f7"
+      },
+      {
+        "Name": "ActiveEQSIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "Perception",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3fc"
+      },
+      {
+        "Name": "GameView1",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3fd"
+      },
+      {
+        "Name": "GameView2",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3fe"
+      },
+      {
+        "Name": "GameView3",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3ff"
+      },
+      {
+        "Name": "GameView4",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "GameView5",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x401"
+      },
+      {
+        "Name": "pad0x4e_S5C6M[0x4e]",
+        "Type": "char",
+        "Size": "0x4e",
+        "Offset": "0x402"
+      }
+    ]
+  },
+  "GameplayDebuggerSettings": {
+    "Super": "Object",
+    "FullSize": "0xa8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Name": "CustomViewNames",
+        "Type": "struct GDTCustomViewNames",
+        "Size": "0x50",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "OverHead",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "Basic",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x79"
+      },
+      {
+        "Name": "BehaviorTree",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x7a"
+      },
+      {
+        "Name": "EQS",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x7b"
+      },
+      {
+        "Name": "EnableEQSOnHUD",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x7c"
+      },
+      {
+        "Name": "pad0x3_EO30D[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x7d"
+      },
+      {
+        "Name": "ActiveEQSIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "Perception",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x84"
+      },
+      {
+        "Name": "GameView1",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x85"
+      },
+      {
+        "Name": "GameView2",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x86"
+      },
+      {
+        "Name": "GameView3",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x87"
+      },
+      {
+        "Name": "GameView4",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "GameView5",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x89"
+      },
+      {
+        "Name": "pad0x1e_5FTNJ[0x1e]",
+        "Type": "char",
+        "Size": "0x1e",
+        "Offset": "0x8a"
       }
     ]
   },
@@ -658,7 +658,7 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x30_GJRXJ[0x30]",
+        "Name": "pad0x30_BNBEY[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x498"

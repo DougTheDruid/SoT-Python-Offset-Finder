@@ -1,42 +1,4 @@
 {
-  "AsymmetricObjectServerManager": {
-    "Super": "Actor",
-    "FullSize": "0x3f8",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "pad0x18_SBPHY[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "SpawnedObject",
-        "Type": "class AsymmetricClientObject*",
-        "Size": "0x8",
-        "Offset": "0x3b8"
-      },
-      {
-        "Name": "SceneComponent",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x3c0"
-      },
-      {
-        "Name": "AsymmetricObjectAsset",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x3c8"
-      },
-      {
-        "Name": "pad0x20_CMFDB[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x3d8"
-      }
-    ]
-  },
   "AsymmetricClientObject": {
     "Super": "Actor",
     "FullSize": "0x3f0",
@@ -44,7 +6,7 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x18_6VEF7[0x18]",
+        "Name": "pad0x18_WLH1B[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x3a0"
@@ -90,6 +52,44 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x3ec"
+      }
+    ]
+  },
+  "AsymmetricObjectServerManager": {
+    "Super": "Actor",
+    "FullSize": "0x3f8",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "pad0x18_3GNVJ[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "SpawnedObject",
+        "Type": "class AsymmetricClientObject*",
+        "Size": "0x8",
+        "Offset": "0x3b8"
+      },
+      {
+        "Name": "SceneComponent",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x3c0"
+      },
+      {
+        "Name": "AsymmetricObjectAsset",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "pad0x20_7NF0I[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x3d8"
       }
     ]
   },

@@ -1,25 +1,4 @@
 {
-  "AutoMoveInputComponent": {
-    "Super": "InputComponent",
-    "FullSize": "0x160",
-    "InheritedSize": "0x140",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_WTVYB[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x140"
-      }
-    ]
-  },
-  "ClampedFreelookXAnalogInputId": {
-    "Super": "AnalogInputId",
-    "FullSize": "0x38",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "ClampedFreelookYAnalogInputId": {
     "Super": "AnalogInputId",
     "FullSize": "0x38",
@@ -27,7 +6,7 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ClampedFreelookMouseYInputId": {
+  "ClampedFreelookXAnalogInputId": {
     "Super": "AnalogInputId",
     "FullSize": "0x38",
     "InheritedSize": "0x38",
@@ -41,19 +20,26 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "AthenaCharacterBaseInputComponent": {
-    "Super": "AutoMoveInputComponent",
-    "FullSize": "0x288",
-    "InheritedSize": "0x160",
-    "ClassSize": "0x128",
+  "AutoMoveInputComponent": {
+    "Super": "InputComponent",
+    "FullSize": "0x160",
+    "InheritedSize": "0x140",
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x128_W9BAH[0x128]",
+        "Name": "pad0x20_SH536[0x20]",
         "Type": "char",
-        "Size": "0x128",
-        "Offset": "0x160"
+        "Size": "0x20",
+        "Offset": "0x140"
       }
     ]
+  },
+  "ClampedFreelookMouseYInputId": {
+    "Super": "AnalogInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "MovementInterferenceComponent": {
     "Super": "AutoMoveInputComponent",
@@ -62,9 +48,23 @@
     "ClassSize": "0x70",
     "Attributes": [
       {
-        "Name": "pad0x70_11E7Q[0x70]",
+        "Name": "pad0x70_D2NEN[0x70]",
         "Type": "char",
         "Size": "0x70",
+        "Offset": "0x160"
+      }
+    ]
+  },
+  "AthenaCharacterBaseInputComponent": {
+    "Super": "AutoMoveInputComponent",
+    "FullSize": "0x288",
+    "InheritedSize": "0x160",
+    "ClassSize": "0x128",
+    "Attributes": [
+      {
+        "Name": "pad0x128_FWDNF[0x128]",
+        "Type": "char",
+        "Size": "0x128",
         "Offset": "0x160"
       }
     ]
@@ -76,7 +76,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_PSCXE[0x8]",
+        "Name": "pad0x8_3AFKU[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x288"

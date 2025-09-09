@@ -6,106 +6,19 @@
 #include "Fire_Structs.h"
 
 
-// Size 0xf8 (Full Size[0x120] - InheritedSize[0x28]
-class FirePropagator: public Object
-{
-public:
-	char                                                         pad0x90_SEHYF[0x90];                               // 0x28(0x90)
-	class FireCellStateTimingParamsDataAsset*                    CellStateTimingParams;                             // 0xb8(0x8)
-	char                                                         pad0x4_OLEUJ[0x4];                                 // 0xc0(0x4)
-	float                                                        WaterHeightOffsetToFloodCells;                     // 0xc4(0x4)
-	char                                                         pad0x58_RSUVG[0x58];                               // 0xc8(0x58)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class FireDamagerType: public DamagerType
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class FireGridLocationInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x3d0 (Full Size[0x488] - InheritedSize[0xb8]
-class ShipFirePropagationComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x18_ONDV3[0x18];                               // 0xb8(0x18)
-	struct FName                                                 FeatureToggleName;                                 // 0xd0(0x8)
-	class UClass*                                                ShipSize;                                          // 0xd8(0x8)
-	float                                                        CellSize;                                          // 0xe0(0x4)
-	struct IntVector                                             GridDimensions;                                    // 0xe4(0xc)
-	struct Vector                                                GridOffset;                                        // 0xf0(0xc)
-	char                                                         pad0x4_4AAFV[0x4];                                 // 0xfc(0x4)
-	class FirePropagator*                                        Propagator;                                        // 0x100(0x8)
-	class ShipFireDamageParamsDataAsset*                         FireDamageDataAsset;                               // 0x108(0x8)
-	TArray<struct FireCellDesc>                                  FireCellDescs;                                     // 0x110(0x10)
-	char                                                         pad0x10_V004Z[0x10];                               // 0x120(0x10)
-	struct Status                                                BurnStatus;                                        // 0x130(0x20)
-	class FireGridVFXManager*                                    VFXManager;                                        // 0x150(0x8)
-	struct FireGridVfxSpawnSettings                              VfxSpawnSettings;                                  // 0x158(0x58)
-	struct ShipFireLightManager                                  FireLightManager;                                  // 0x1b0(0x150)
-	struct FireGridCharringManager                               FireCharringManager;                               // 0x300(0xd8)
-	class FireGridAudioManager*                                  FireAudioManager;                                  // 0x3d8(0x8)
-	struct FireCellAudioParams                                   FireAudioParams;                                   // 0x3e0(0x40)
-	char                                                         pad0x68_7AHVI[0x68];                               // 0x420(0x68)
-};
-
-
 // Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class IgniteStatus: public StatusBase
+class FireStatus: public StatusBase
 {
 public:
 };
 
 
-// Size 0x20 (Full Size[0xd8] - InheritedSize[0xb8]
-class FlammableComponent: public ActorComponent
+// Size 0x98 (Full Size[0xc0] - InheritedSize[0x28]
+class FireCellStateTimingParamsDataAsset: public DataAsset
 {
 public:
-	char                                                         pad0x18_TU423[0x18];                               // 0xb8(0x18)
-	bool                                                         OnFire;                                            // 0xd0(0x1)
-	char                                                         pad0x7_L4FFZ[0x7];                                 // 0xd1(0x7)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class FirePropagationInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ExtinguishableInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x30 (Full Size[0x780] - InheritedSize[0x750]
-class OilSpill: public ItemProxy
-{
-public:
-	char                                                         pad0x8_LN91D[0x8];                                 // 0x750(0x8)
-	class BoxComponent*                                          BaseComponent;                                     // 0x758(0x8)
-	class ActorFlammableComponent*                               FlammableComponent;                                // 0x760(0x8)
-	class StatusEffectManagerComponent*                          StatusEffectManagerComponent;                      // 0x768(0x8)
-	char                                                         pad0x10_E94H5[0x10];                               // 0x770(0x10)
-};
-
-
-// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
-class FireGridVFXParamsDataAsset: public DataAsset
-{
-public:
-	struct FireGridVFXParams                                     Params;                                            // 0x28(0x40)
+	struct FireCellStateTimingParams                             TimingParams;                                      // 0x28(0x94)
+	char                                                         pad0x4_5MZNH[0x4];                                 // 0xbc(0x4)
 };
 
 
@@ -117,10 +30,37 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class FlammableInterface: public Interface
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class FireGridCellSelectionParamsDataAsset: public DataAsset
 {
 public:
+	TArray<struct FireGridCellSelectionParams>                   FireGridCellSelectionParams;                       // 0x28(0x10)
+};
+
+
+// Size 0x3d0 (Full Size[0x488] - InheritedSize[0xb8]
+class ShipFirePropagationComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x18_V2LXH[0x18];                               // 0xb8(0x18)
+	struct FName                                                 FeatureToggleName;                                 // 0xd0(0x8)
+	class UClass*                                                ShipSize;                                          // 0xd8(0x8)
+	float                                                        CellSize;                                          // 0xe0(0x4)
+	struct IntVector                                             GridDimensions;                                    // 0xe4(0xc)
+	struct Vector                                                GridOffset;                                        // 0xf0(0xc)
+	char                                                         pad0x4_L2MT8[0x4];                                 // 0xfc(0x4)
+	class FirePropagator*                                        Propagator;                                        // 0x100(0x8)
+	class ShipFireDamageParamsDataAsset*                         FireDamageDataAsset;                               // 0x108(0x8)
+	TArray<struct FireCellDesc>                                  FireCellDescs;                                     // 0x110(0x10)
+	char                                                         pad0x10_JCSG0[0x10];                               // 0x120(0x10)
+	struct Status                                                BurnStatus;                                        // 0x130(0x20)
+	class FireGridVFXManager*                                    VFXManager;                                        // 0x150(0x8)
+	struct FireGridVfxSpawnSettings                              VfxSpawnSettings;                                  // 0x158(0x58)
+	struct ShipFireLightManager                                  FireLightManager;                                  // 0x1b0(0x150)
+	struct FireGridCharringManager                               FireCharringManager;                               // 0x300(0xd8)
+	class FireGridAudioManager*                                  FireAudioManager;                                  // 0x3d8(0x8)
+	struct FireCellAudioParams                                   FireAudioParams;                                   // 0x3e0(0x40)
+	char                                                         pad0x68_RHYP6[0x68];                               // 0x420(0x68)
 };
 
 
@@ -140,87 +80,9 @@ public:
 
 
 // Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class FireStatus: public StatusBase
+class IgniteStatus: public StatusBase
 {
 public:
-};
-
-
-// Size 0xa8 (Full Size[0xd0] - InheritedSize[0x28]
-class FireGridAudioManager: public Object
-{
-public:
-	struct FireCellAudioParams                                   FireAudioParams;                                   // 0x28(0x40)
-	class Actor*                                                 OwningActor;                                       // 0x68(0x8)
-	class FirePropagator*                                        FirePropagator;                                    // 0x70(0x8)
-	char                                                         pad0x58_WZA92[0x58];                               // 0x78(0x58)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class FirePropagationIgniteInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class FireGridCellSelectionParamsDataAsset: public DataAsset
-{
-public:
-	TArray<struct FireGridCellSelectionParams>                   FireGridCellSelectionParams;                       // 0x28(0x10)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class ShipFireLightParamsDataAsset: public DataAsset
-{
-public:
-	struct ShipFireLightParams                                   Params;                                            // 0x28(0x14)
-	char                                                         pad0x4_5W0IQ[0x4];                                 // 0x3c(0x4)
-};
-
-
-// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class StatusResponseExtinguish: public StatusResponse
-{
-public:
-};
-
-
-// Size 0x98 (Full Size[0xc0] - InheritedSize[0x28]
-class FireCellStateTimingParamsDataAsset: public DataAsset
-{
-public:
-	struct FireCellStateTimingParams                             TimingParams;                                      // 0x28(0x94)
-	char                                                         pad0x4_CNROU[0x4];                                 // 0xbc(0x4)
-};
-
-
-// Size 0x78 (Full Size[0x130] - InheritedSize[0xb8]
-class CookerIgnitionComponent: public ActorComponent
-{
-public:
-	struct CookerIgnitionParams                                  CookerIgnitionParams;                              // 0xb8(0x78)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class FireExplosionDamagerType: public DamagerType
-{
-public:
-};
-
-
-// Size 0x68 (Full Size[0x408] - InheritedSize[0x3a0]
-class ShipFireCellDataContainer: public Actor
-{
-public:
-	char                                                         pad0x8_ZGNET[0x8];                                 // 0x3a0(0x8)
-	class SceneComponent*                                        Root;                                              // 0x3a8(0x8)
-	TArray<struct ReplicatedFireCellData>                        ReplicatedCellData;                                // 0x3b0(0x10)
-	struct ReplicatedFireCellCharringData                        ReplicatedCellCharringData;                        // 0x3c0(0x18)
-	char                                                         pad0x30_DNDIS[0x30];                               // 0x3d8(0x30)
 };
 
 
@@ -231,8 +93,15 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class StatusResponseIgnite: public StatusResponse
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class FireGridLocationInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class FlammableInterface: public Interface
 {
 public:
 };
@@ -252,40 +121,141 @@ public:
 	TArray<struct FireParticleSpawnData>                         ParticleSpawnLODSettings;                          // 0x170(0x10)
 	TArray<struct FireGridLowDetailRelativeSpawnDesc>            ExteriorSmokeVFXSpawnDescs;                        // 0x180(0x10)
 	TArray<struct FireDefaultVFXSpawnData>                       VFXToSpawn;                                        // 0x190(0x10)
-	char                                                         pad0x8_RCLR9[0x8];                                 // 0x1a0(0x8)
+	char                                                         pad0x8_2YF1K[0x8];                                 // 0x1a0(0x8)
 	TArray<struct FireParticleSpawnList>                         InterleavedSpawnLists;                             // 0x1a8(0x10)
 	class FirePropagator*                                        Propagator;                                        // 0x1b8(0x8)
-	char                                                         pad0x50_LAWFC[0x50];                               // 0x1c0(0x50)
+	char                                                         pad0x50_510XR[0x50];                               // 0x1c0(0x50)
 };
 
 
-// Size 0x20 (Full Size[0xf8] - InheritedSize[0xd8]
-class FlammableWieldableComponent: public FlammableComponent
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class FirePropagationInterface: public Interface
 {
 public:
-	struct Status                                                IgnitedStatus;                                     // 0xd8(0x20)
 };
 
 
-// Size 0x120 (Full Size[0x1f8] - InheritedSize[0xd8]
-class ActorFlammableComponent: public FlammableComponent
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class ShipFireLightParamsDataAsset: public DataAsset
 {
 public:
-	class ParticleSystemComponent*                               FireVFXComponent;                                  // 0xd8(0x8)
-	char                                                         pad0x10_1ETNO[0x10];                               // 0xe0(0x10)
-	class ParticleSystem*                                        FireVFX;                                           // 0xf0(0x8)
-	class ParticleSystem*                                        SteamVFX;                                          // 0xf8(0x8)
-	float                                                        FireVFXIntensity;                                  // 0x100(0x4)
-	float                                                        FireDurationMultiplier;                            // 0x104(0x4)
-	float                                                        FireDuration;                                      // 0x108(0x4)
-	float                                                        PropagationInterval;                               // 0x10c(0x4)
-	float                                                        OilSpillRadius;                                    // 0x110(0x4)
-	char                                                         pad0x4_GXPF6[0x4];                                 // 0x114(0x4)
-	struct Status                                                FireStatus;                                        // 0x118(0x20)
-	struct Status                                                BurnStatus;                                        // 0x138(0x20)
-	bool                                                         ShouldPropagateToShip;                             // 0x158(0x1)
-	char                                                         pad0x97_NCFXM[0x97];                               // 0x159(0x97)
-	class World*                                                 CachedWorld;                                       // 0x1f0(0x8)
+	struct ShipFireLightParams                                   Params;                                            // 0x28(0x14)
+	char                                                         pad0x4_1ON7P[0x4];                                 // 0x3c(0x4)
+};
+
+
+// Size 0x20 (Full Size[0xd8] - InheritedSize[0xb8]
+class FlammableComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x18_T9XXS[0x18];                               // 0xb8(0x18)
+	bool                                                         OnFire;                                            // 0xd0(0x1)
+	char                                                         pad0x7_8GYT4[0x7];                                 // 0xd1(0x7)
+};
+
+
+// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
+class StatusResponseIgnite: public StatusResponse
+{
+public:
+};
+
+
+// Size 0x78 (Full Size[0x130] - InheritedSize[0xb8]
+class CookerIgnitionComponent: public ActorComponent
+{
+public:
+	struct CookerIgnitionParams                                  CookerIgnitionParams;                              // 0xb8(0x78)
+};
+
+
+// Size 0x68 (Full Size[0x408] - InheritedSize[0x3a0]
+class ShipFireCellDataContainer: public Actor
+{
+public:
+	char                                                         pad0x8_BK0AH[0x8];                                 // 0x3a0(0x8)
+	class SceneComponent*                                        Root;                                              // 0x3a8(0x8)
+	TArray<struct ReplicatedFireCellData>                        ReplicatedCellData;                                // 0x3b0(0x10)
+	struct ReplicatedFireCellCharringData                        ReplicatedCellCharringData;                        // 0x3c0(0x18)
+	char                                                         pad0x30_K87S9[0x30];                               // 0x3d8(0x30)
+};
+
+
+// Size 0x30 (Full Size[0x780] - InheritedSize[0x750]
+class OilSpill: public ItemProxy
+{
+public:
+	char                                                         pad0x8_DCW33[0x8];                                 // 0x750(0x8)
+	class BoxComponent*                                          BaseComponent;                                     // 0x758(0x8)
+	class ActorFlammableComponent*                               FlammableComponent;                                // 0x760(0x8)
+	class StatusEffectManagerComponent*                          StatusEffectManagerComponent;                      // 0x768(0x8)
+	char                                                         pad0x10_KBZK4[0x10];                               // 0x770(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
+class StatusResponseExtinguish: public StatusResponse
+{
+public:
+};
+
+
+// Size 0xf8 (Full Size[0x120] - InheritedSize[0x28]
+class FirePropagator: public Object
+{
+public:
+	char                                                         pad0x90_E2CV2[0x90];                               // 0x28(0x90)
+	class FireCellStateTimingParamsDataAsset*                    CellStateTimingParams;                             // 0xb8(0x8)
+	char                                                         pad0x4_XOMOJ[0x4];                                 // 0xc0(0x4)
+	float                                                        WaterHeightOffsetToFloodCells;                     // 0xc4(0x4)
+	char                                                         pad0x58_TTQVD[0x58];                               // 0xc8(0x58)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class FirePropagationIgniteInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
+class FireGridVFXParamsDataAsset: public DataAsset
+{
+public:
+	struct FireGridVFXParams                                     Params;                                            // 0x28(0x40)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class FireExplosionDamagerType: public DamagerType
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ExtinguishableInterface: public Interface
+{
+public:
+};
+
+
+// Size 0xa8 (Full Size[0xd0] - InheritedSize[0x28]
+class FireGridAudioManager: public Object
+{
+public:
+	struct FireCellAudioParams                                   FireAudioParams;                                   // 0x28(0x40)
+	class Actor*                                                 OwningActor;                                       // 0x68(0x8)
+	class FirePropagator*                                        FirePropagator;                                    // 0x70(0x8)
+	char                                                         pad0x58_3Z77G[0x58];                               // 0x78(0x58)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class FireDamagerType: public DamagerType
+{
+public:
 };
 
 
@@ -302,8 +272,38 @@ class TimedFlammableComponent: public FlammableComponent
 public:
 	bool                                                         UseExtinguishTimer;                                // 0xd8(0x1)
 	bool                                                         AllowFireToBeReplenishedBeforeExtinguishTimerExpired; // 0xd9(0x1)
-	char                                                         pad0x2_EQ836[0x2];                                 // 0xda(0x2)
+	char                                                         pad0x2_ZXT96[0x2];                                 // 0xda(0x2)
 	float                                                        TimeInSecondsUntilFireExtinguished;                // 0xdc(0x4)
+};
+
+
+// Size 0x20 (Full Size[0xf8] - InheritedSize[0xd8]
+class FlammableWieldableComponent: public FlammableComponent
+{
+public:
+	struct Status                                                IgnitedStatus;                                     // 0xd8(0x20)
+};
+
+
+// Size 0x120 (Full Size[0x1f8] - InheritedSize[0xd8]
+class ActorFlammableComponent: public FlammableComponent
+{
+public:
+	class ParticleSystemComponent*                               FireVFXComponent;                                  // 0xd8(0x8)
+	char                                                         pad0x10_JK5YM[0x10];                               // 0xe0(0x10)
+	class ParticleSystem*                                        FireVFX;                                           // 0xf0(0x8)
+	class ParticleSystem*                                        SteamVFX;                                          // 0xf8(0x8)
+	float                                                        FireVFXIntensity;                                  // 0x100(0x4)
+	float                                                        FireDurationMultiplier;                            // 0x104(0x4)
+	float                                                        FireDuration;                                      // 0x108(0x4)
+	float                                                        PropagationInterval;                               // 0x10c(0x4)
+	float                                                        OilSpillRadius;                                    // 0x110(0x4)
+	char                                                         pad0x4_JWPCY[0x4];                                 // 0x114(0x4)
+	struct Status                                                FireStatus;                                        // 0x118(0x20)
+	struct Status                                                BurnStatus;                                        // 0x138(0x20)
+	bool                                                         ShouldPropagateToShip;                             // 0x158(0x1)
+	char                                                         pad0x97_D0BUW[0x97];                               // 0x159(0x97)
+	class World*                                                 CachedWorld;                                       // 0x1f0(0x8)
 };
 
 
@@ -311,9 +311,9 @@ public:
 class MastFlammableComponent: public ActorFlammableComponent
 {
 public:
-	char                                                         pad0x8_HEJTM[0x8];                                 // 0x1f8(0x8)
+	char                                                         pad0x8_ZECL9[0x8];                                 // 0x1f8(0x8)
 	struct Vector                                                FireGridLocation;                                  // 0x200(0xc)
-	char                                                         pad0x14_LB9MV[0x14];                               // 0x20c(0x14)
+	char                                                         pad0x14_M805W[0x14];                               // 0x20c(0x14)
 };
 
 

@@ -1,4 +1,15 @@
 {
+  "ServiceMessagingTestMessage": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "Data",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "TestStructWithNetId": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -28,17 +39,6 @@
         "Name": "RoutingKey",
         "Type": "struct FString",
         "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ServiceMessagingTestMessage": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "Data",
-        "Type": "int",
-        "Size": "0x4",
         "Offset": "0x0"
       }
     ]

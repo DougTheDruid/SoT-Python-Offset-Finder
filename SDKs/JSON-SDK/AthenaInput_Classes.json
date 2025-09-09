@@ -1,4 +1,18 @@
 {
+  "NotificationInputId": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_FQTUJ[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "AnalogInputId": {
     "Super": "Object",
     "FullSize": "0x38",
@@ -6,10 +20,24 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_BGRIO[0x10]",
+        "Name": "pad0x10_6MX1I[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"
+      }
+    ]
+  },
+  "NPCReceivesInputIndicatorComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xc0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_BFR9U[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
       }
     ]
   },
@@ -19,34 +47,6 @@
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "NPCReceivesInputIndicatorComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xc0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_NR2OU[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      }
-    ]
-  },
-  "NotificationInputId": {
-    "Super": "Object",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_J0ZX9[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
   },
   "OpenEscapeMenuNotificationInputId": {
     "Super": "NotificationInputId",

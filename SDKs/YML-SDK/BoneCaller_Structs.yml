@@ -29,7 +29,7 @@ BoneCallerPawnKillTelemetry:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_NGBVE[0x7]
+  - Name: pad0x7_XO7VT[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
@@ -51,7 +51,7 @@ BoneCallerUsageTelemetry:
     Offset: '0x0'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_OPEHL[0x4]
+  - Name: pad0x4_CLTKL[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -92,7 +92,7 @@ EventOnBoneCallerExploded:
     Offset: '0x8'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x10_B7217[0x10]
+  - Name: pad0x10_2CQNT[0x10]
     Offset: '0x10'
     Size: '0x10'
     Type: char
@@ -114,7 +114,7 @@ EventOnBoneCallerSpawned:
   ClassSize: '0x10'
 PlayerBoneCallerData:
   Attributes:
-  - Name: pad0x20_9EWYD[0x20]
+  - Name: pad0x20_AHFPW[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char

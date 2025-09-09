@@ -14,7 +14,7 @@ ClueSite:
     Offset: '0x10'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_0Y3W4[0x4]
+  - Name: pad0x4_JFHNQ[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -36,7 +36,7 @@ ClueSiteLootRestriction:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_WN9BS[0x4]
+  - Name: pad0x4_EHP9R[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -73,7 +73,7 @@ EventClueObtained:
     Offset: '0x8'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x10_FVV1Q[0x10]
+  - Name: pad0x10_SWO2E[0x10]
     Offset: '0x10'
     Size: '0x10'
     Type: char
@@ -121,21 +121,21 @@ LootToRangeDist:
   ClassSize: '0x28'
 QuestVariableClueDescriptor:
   Attributes:
-  - Name: pad0x30_R3WN2[0x30]
+  - Name: pad0x30_RF8GD[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariableClueSite:
   Attributes:
-  - Name: pad0x30_KTLZ9[0x30]
+  - Name: pad0x30_RW4AK[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
   ClassSize: '0x30'
 QuestVariableClueSiteArray:
   Attributes:
-  - Name: pad0x30_S2N74[0x30]
+  - Name: pad0x30_4RNH3[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
@@ -150,7 +150,7 @@ RestrictedClueType:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_EDSNG[0x4]
+  - Name: pad0x4_990UL[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -165,7 +165,7 @@ SeaClueCreationChoice:
     Offset: '0x8'
     Size: '0x8'
     Type: class SeaClueCreator*
-  - Name: pad0x10_O6AV8[0x10]
+  - Name: pad0x10_FHNZC[0x10]
     Offset: '0x10'
     Size: '0x10'
     Type: char
@@ -194,7 +194,7 @@ WeightedClueDestinationDescriptor:
   ClassSize: '0x18'
 WeightedDebris:
   Attributes:
-  - Name: pad0x20_UTDT6[0x20]
+  - Name: pad0x20_AJWOJ[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
@@ -202,7 +202,7 @@ WeightedDebris:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_RSHBW[0x4]
+  - Name: pad0x4_POE6U[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char

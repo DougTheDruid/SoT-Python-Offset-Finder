@@ -6,7 +6,7 @@ EventAffectedByExplosion:
     Offset: '0x0'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x10_2SYJA[0x10]
+  - Name: pad0x10_PRGJ9[0x10]
     Offset: '0x8'
     Size: '0x10'
     Type: char
@@ -38,7 +38,7 @@ EventOnExploded:
     Offset: '0x0'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x10_KBKT2[0x10]
+  - Name: pad0x10_MVV1B[0x10]
     Offset: '0x8'
     Size: '0x10'
     Type: char

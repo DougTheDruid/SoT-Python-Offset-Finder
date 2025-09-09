@@ -2,14 +2,14 @@
 # https://github.com/DougTheDruid
 BoundActorProxy:
   Attributes:
-  - Name: pad0x1_BJEXP[0x1]
+  - Name: pad0x1_NXUEQ[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 LevelSequenceObject:
   Attributes:
-  - Name: pad0x20_GEHLF[0x20]
+  - Name: pad0x20_LM4BV[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
@@ -17,28 +17,28 @@ LevelSequenceObject:
     Offset: '0x20'
     Size: '0x10'
     Type: struct FString
-  - Name: pad0x8_O41YP[0x8]
+  - Name: pad0x8_HF6UM[0x8]
     Offset: '0x30'
     Size: '0x8'
     Type: char
   ClassSize: '0x38'
 LevelSequenceObjectReference:
   Attributes:
-  - Name: pad0x20_YUKVK[0x20]
+  - Name: pad0x20_6HPK3[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
   ClassSize: '0x20'
 LevelSequenceObjectReferenceMap:
   Attributes:
-  - Name: pad0xa0_QRJR2[0xa0]
+  - Name: pad0xa0_JPSOU[0xa0]
     Offset: '0x0'
     Size: '0xa0'
     Type: char
   ClassSize: '0xa0'
 LevelSequencePlaybackSettings:
   Attributes:
-  - Name: pad0x28_VN6T3[0x28]
+  - Name: pad0x28_S40WW[0x28]
     Offset: '0x0'
     Size: '0x28'
     Type: char
@@ -53,7 +53,7 @@ LevelSequencePlayerSnapshot:
     Offset: '0x38'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_FIOQI[0x4]
+  - Name: pad0x4_X7285[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -65,7 +65,7 @@ LevelSequencePlayerSnapshot:
     Offset: '0x78'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_N4S31[0x4]
+  - Name: pad0x4_OEVEF[0x4]
     Offset: '0x7c'
     Size: '0x4'
     Type: char
@@ -84,7 +84,7 @@ LevelSequenceSnapshotSettings:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_XQZHY[0x3]
+  - Name: pad0x3_I1G2G[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char

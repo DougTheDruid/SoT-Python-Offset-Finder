@@ -6,28 +6,14 @@
 #include "SeasonProgressionUI_Structs.h"
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class SeasonProgressionUISettings: public Object
+// Size 0x138 (Full Size[0x1f0] - InheritedSize[0xb8]
+class SeasonProgressionUIComponent: public ActorComponent
 {
 public:
-	struct StringAssetReference                                  SeasonPopupListAsset;                              // 0x28(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SeasonProgressionUIServiceInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x1f8 (Full Size[0x598] - InheritedSize[0x3a0]
-class SeasonProgressionUIService: public Actor
-{
-public:
-	char                                                         pad0x30_JA17B[0x30];                               // 0x3a0(0x30)
-	class SeasonPopupListAsset*                                  SeasonPopupListAsset;                              // 0x3d0(0x8)
-	char                                                         pad0x1c0_QMVRG[0x1c0];                             // 0x3d8(0x1c0)
+	char                                                         pad0x20_62GOK[0x20];                               // 0xb8(0x20)
+	TArray<struct EnableMoreButtonEvent>                         DetailsNavigationDesc;                             // 0xd8(0x10)
+	struct SeasonProgressionUITelemetryFragment                  NextReceivedEventsTelemetryData;                   // 0xe8(0x18)
+	char                                                         pad0xf0_0ZDKS[0xf0];                               // 0x100(0xf0)
 };
 
 
@@ -56,18 +42,35 @@ public:
 };
 
 
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class SeasonProgressionUISettings: public Object
+{
+public:
+	struct StringAssetReference                                  SeasonPopupListAsset;                              // 0x28(0x10)
+};
+
+
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SeasonProgressionUIInterface: public Interface
+class SeasonProgressionUIServiceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class SeasonPopupListAsset: public DataAsset
+// Size 0x1f8 (Full Size[0x598] - InheritedSize[0x3a0]
+class SeasonProgressionUIService: public Actor
 {
 public:
-	TArray<class SeasonPopupAsset*>                              SeasonPopups;                                      // 0x28(0x10)
+	char                                                         pad0x30_MKPCO[0x30];                               // 0x3a0(0x30)
+	class SeasonPopupListAsset*                                  SeasonPopupListAsset;                              // 0x3d0(0x8)
+	char                                                         pad0x1c0_O9AK1[0x1c0];                             // 0x3d8(0x1c0)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class SeasonProgressionUIInterface: public Interface
+{
+public:
 };
 
 
@@ -78,14 +81,11 @@ public:
 };
 
 
-// Size 0x138 (Full Size[0x1f0] - InheritedSize[0xb8]
-class SeasonProgressionUIComponent: public ActorComponent
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class SeasonPopupListAsset: public DataAsset
 {
 public:
-	char                                                         pad0x20_JGWMU[0x20];                               // 0xb8(0x20)
-	TArray<struct EnableMoreButtonEvent>                         DetailsNavigationDesc;                             // 0xd8(0x10)
-	struct SeasonProgressionUITelemetryFragment                  NextReceivedEventsTelemetryData;                   // 0xe8(0x18)
-	char                                                         pad0xf0_VWRVJ[0xf0];                               // 0x100(0xf0)
+	TArray<class SeasonPopupAsset*>                              SeasonPopups;                                      // 0x28(0x10)
 };
 
 

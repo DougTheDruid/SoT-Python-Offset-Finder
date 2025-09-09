@@ -6,15 +6,80 @@
 #include "StudiosAutomation_Structs.h"
 
 
-// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class TestSettings: public DeveloperSettings
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class OtherTestUObject: public Object
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x3a0] - InheritedSize[0x3a0]
+class ActorThatLogsErrorWhenTicked: public Actor
+{
+public:
+};
+
+
+// Size 0x20 (Full Size[0xd8] - InheritedSize[0xb8]
+class TestablePlayerControllerComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x20_W8M49[0x20];                               // 0xb8(0x20)
+};
+
+
+// Size 0x0 (Full Size[0x3a0] - InheritedSize[0x3a0]
+class TestAbstractActor: public Actor
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class OtherTestUObject: public Object
+class TestUObject: public Object
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AutomationBlueprintFunctionLibrary: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
+// Size 0xc0 (Full Size[0x468] - InheritedSize[0x3a8]
+class TestLevelScriptActor: public LevelScriptActor
+{
+public:
+	char                                                         pad0x8_UZZK1[0x8];                                 // 0x3a8(0x8)
+	char                                                         Category;                                          // 0x3b0(0x1)
+	char                                                         Area;                                              // 0x3b1(0x1)
+	bool                                                         VisualTest;                                        // 0x3b2(0x1)
+	bool                                                         RunInEditor;                                       // 0x3b3(0x1)
+	bool                                                         RunOnServer;                                       // 0x3b4(0x1)
+	bool                                                         RequiresServices;                                  // 0x3b5(0x1)
+	char                                                         pad0x2_935F8[0x2];                                 // 0x3b6(0x2)
+	TArray<struct TestLevelMetadataEntry>                        AdditionalMetadata;                                // 0x3b8(0x10)
+	char                                                         CaptureType;                                       // 0x3c8(0x1)
+	char                                                         PlayModeOverride;                                  // 0x3c9(0x1)
+	char                                                         pad0x2_A8EJN[0x2];                                 // 0x3ca(0x2)
+	float                                                        TestTimeout;                                       // 0x3cc(0x4)
+	float                                                        TestPausedTimeout;                                 // 0x3d0(0x4)
+	char                                                         pad0x4_R5LQ6[0x4];                                 // 0x3d4(0x4)
+	TArray<String>                                               VerboseLogCategories;                              // 0x3d8(0x10)
+	TArray<int>                                                  ClientsRunning;                                    // 0x3e8(0x10)
+	TArray<int>                                                  ClientIds;                                         // 0x3f8(0x10)
+	TArray<struct ClientPawnDetails>                             ClientPawns;                                       // 0x408(0x10)
+	TArray<class Actor*>                                         SpawnedActors;                                     // 0x418(0x10)
+	int                                                          NextSpawnedActorIndex;                             // 0x428(0x4)
+	char                                                         pad0x3c_CNBQR[0x3c];                               // 0x42c(0x3c)
+};
+
+
+// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
+class TestSettings: public DeveloperSettings
 {
 public:
 };
@@ -24,7 +89,19 @@ public:
 class AutomationLatentActionCallback: public Object
 {
 public:
-	char                                                         pad0x38_KUILW[0x38];                               // 0x28(0x38)
+	char                                                         pad0x38_OJEMC[0x38];                               // 0x28(0x38)
+};
+
+
+// Size 0x50 (Full Size[0x88] - InheritedSize[0x38]
+class AssetAuditSettings: public DeveloperSettings
+{
+public:
+	TArray<String>                                               PathsToAuditOnSave;                                // 0x38(0x10)
+	TArray<Class>                                                TypesToIgnoreInFeatureToggleAudits;                // 0x48(0x10)
+	TArray<String>                                               AssetAuditorsLoadExceptionList;                    // 0x58(0x10)
+	TArray<Class>                                                ClassShouldAuditReferencers;                       // 0x68(0x10)
+	TArray<Class>                                                IgnoreReferencersOfClasses;                        // 0x78(0x10)
 };
 
 
@@ -35,25 +112,6 @@ public:
 };
 
 
-// Size 0x20 (Full Size[0xd8] - InheritedSize[0xb8]
-class TestablePlayerControllerComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x20_KZU5Q[0x20];                               // 0xb8(0x20)
-};
-
-
-// Size 0x40 (Full Size[0x78] - InheritedSize[0x38]
-class AssetAuditSettings: public DeveloperSettings
-{
-public:
-	TArray<String>                                               PathsToAuditOnSave;                                // 0x38(0x10)
-	TArray<Class>                                                TypesToIgnoreInFeatureToggleAudits;                // 0x48(0x10)
-	TArray<String>                                               AssetAuditorsLoadExceptionList;                    // 0x58(0x10)
-	TArray<Class>                                                IgnoreReferencersForClasses;                       // 0x68(0x10)
-};
-
-
 // Size 0x0 (Full Size[0x3a0] - InheritedSize[0x3a0]
 class DummyReplicatedActor: public Actor
 {
@@ -61,8 +119,30 @@ public:
 };
 
 
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class ObjectWithSettableWorld: public Object
+{
+public:
+	class World*                                                 World;                                             // 0x28(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x748] - InheritedSize[0x748]
+class TestablePlayerController: public PlayerController
+{
+public:
+};
+
+
 // Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
 class RunUnitTestsCommandlet: public Commandlet
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x498] - InheritedSize[0x498]
+class MapFixtureTestGameMode: public GameMode
 {
 public:
 };
@@ -77,85 +157,6 @@ public:
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class BPNamedObjectMock: public Object
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x3a0] - InheritedSize[0x3a0]
-class TestAbstractActor: public Actor
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x3a0] - InheritedSize[0x3a0]
-class ActorThatLogsErrorWhenTicked: public Actor
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TestUObject: public Object
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x748] - InheritedSize[0x748]
-class TestablePlayerController: public PlayerController
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x498] - InheritedSize[0x498]
-class MapFixtureTestGameMode: public GameMode
-{
-public:
-};
-
-
-// Size 0xc0 (Full Size[0x468] - InheritedSize[0x3a8]
-class TestLevelScriptActor: public LevelScriptActor
-{
-public:
-	char                                                         pad0x8_G1MSI[0x8];                                 // 0x3a8(0x8)
-	char                                                         Category;                                          // 0x3b0(0x1)
-	char                                                         Area;                                              // 0x3b1(0x1)
-	bool                                                         VisualTest;                                        // 0x3b2(0x1)
-	bool                                                         RunInEditor;                                       // 0x3b3(0x1)
-	bool                                                         RunOnServer;                                       // 0x3b4(0x1)
-	bool                                                         RequiresServices;                                  // 0x3b5(0x1)
-	char                                                         pad0x2_QC8XE[0x2];                                 // 0x3b6(0x2)
-	TArray<struct TestLevelMetadataEntry>                        AdditionalMetadata;                                // 0x3b8(0x10)
-	char                                                         CaptureType;                                       // 0x3c8(0x1)
-	char                                                         PlayModeOverride;                                  // 0x3c9(0x1)
-	char                                                         pad0x2_993O9[0x2];                                 // 0x3ca(0x2)
-	float                                                        TestTimeout;                                       // 0x3cc(0x4)
-	float                                                        TestPausedTimeout;                                 // 0x3d0(0x4)
-	char                                                         pad0x4_O49VG[0x4];                                 // 0x3d4(0x4)
-	TArray<String>                                               VerboseLogCategories;                              // 0x3d8(0x10)
-	TArray<int>                                                  ClientsRunning;                                    // 0x3e8(0x10)
-	TArray<int>                                                  ClientIds;                                         // 0x3f8(0x10)
-	TArray<struct ClientPawnDetails>                             ClientPawns;                                       // 0x408(0x10)
-	TArray<class Actor*>                                         SpawnedActors;                                     // 0x418(0x10)
-	int                                                          NextSpawnedActorIndex;                             // 0x428(0x4)
-	char                                                         pad0x3c_TX9GH[0x3c];                               // 0x42c(0x3c)
-};
-
-
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class ObjectWithSettableWorld: public Object
-{
-public:
-	class World*                                                 World;                                             // 0x28(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AutomationBlueprintFunctionLibrary: public BlueprintFunctionLibrary
 {
 public:
 };

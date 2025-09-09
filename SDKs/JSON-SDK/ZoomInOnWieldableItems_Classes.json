@@ -8,12 +8,12 @@
   },
   "ZoomInOnWieldableItemComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x118",
+    "FullSize": "0x120",
     "InheritedSize": "0xb8",
-    "ClassSize": "0x60",
+    "ClassSize": "0x68",
     "Attributes": [
       {
-        "Name": "pad0x8_VYSRF[0x8]",
+        "Name": "pad0x8_INLQ6[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -55,10 +55,16 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x3c_QDH3U[0x3c]",
-        "Type": "char",
-        "Size": "0x3c",
+        "Name": "MaxClampedFOV",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0xdc"
+      },
+      {
+        "Name": "pad0x40_V0P92[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0xe0"
       }
     ]
   },

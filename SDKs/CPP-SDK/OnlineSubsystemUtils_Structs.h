@@ -10,7 +10,7 @@ public:
 	struct UniqueNetIdRepl                                       UniqueId;                                          // 0x0(0x18)
 	struct FString                                               ValidationStr;                                     // 0x18(0x10)
 	float                                                        ElapsedTime;                                       // 0x28(0x4)
-	char                                                         pad0x4_1FWFV[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_JM625[0x4];                                 // 0x2c(0x4)
 };
 
 
@@ -18,7 +18,7 @@ public:
 struct BlueprintSessionResult
 {
 public:
-	char                                                         pad0xf0_HWJRV[0xf0];                               // 0x0(0xf0)
+	char                                                         pad0xf0_UXVE9[0xf0];                               // 0x0(0xf0)
 };
 
 
@@ -27,7 +27,7 @@ struct PartyReservation
 {
 public:
 	int                                                          TeamNum;                                           // 0x0(0x4)
-	char                                                         pad0x4_8RHND[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_MLE33[0x4];                                 // 0x4(0x4)
 	struct UniqueNetIdRepl                                       PartyLeader;                                       // 0x8(0x18)
 	TArray<struct PlayerReservation>                             PartyMembers;                                      // 0x20(0x10)
 };

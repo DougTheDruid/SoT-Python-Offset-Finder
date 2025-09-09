@@ -1,4 +1,15 @@
 {
+  "EventTreasuryRoomActive": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_5OEHU[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "TreasuryWaveEncounter": {
     "ClassSize": "0x48",
     "Attributes": [
@@ -9,7 +20,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_XO6RH[0x7]",
+        "Name": "pad0x7_OFY8R[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -63,27 +74,10 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_YFU7M[0x7]",
+        "Name": "pad0x7_QSAUC[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
-      }
-    ]
-  },
-  "EventTreasuryRoomFlooded": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x8_8402N[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Treasury",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x8"
       }
     ]
   },
@@ -91,7 +85,7 @@
     "ClassSize": "0x1c",
     "Attributes": [
       {
-        "Name": "pad0x1c_ZTHRJ[0x1c]",
+        "Name": "pad0x1c_0A82M[0x1c]",
         "Type": "char",
         "Size": "0x1c",
         "Offset": "0x0"
@@ -102,21 +96,27 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_4BZJV[0x1]",
+        "Name": "pad0x1_YHO7H[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
       }
     ]
   },
-  "EventTreasuryRoomActive": {
-    "ClassSize": "0x1",
+  "EventTreasuryRoomFlooded": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x1_JI1N2[0x1]",
+        "Name": "pad0x8_M01ME[0x8]",
         "Type": "char",
-        "Size": "0x1",
+        "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "Treasury",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },

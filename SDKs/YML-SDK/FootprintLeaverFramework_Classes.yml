@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 FootprintLeaverComponent:
   Attributes:
-  - Name: pad0x30_305SM[0x30]
+  - Name: pad0x30_X0VLP[0x30]
     Offset: '0x2d0'
     Size: '0x30'
     Type: char
@@ -14,7 +14,7 @@ FootprintLeaverComponent:
     Offset: '0x310'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_FF06W[0x4]
+  - Name: pad0x4_498HK[0x4]
     Offset: '0x314'
     Size: '0x4'
     Type: char
@@ -50,7 +50,7 @@ FootprintLeaverComponent:
     Offset: '0x358'
     Size: '0x4'
     Type: float
-  - Name: pad0x10_EUL99[0x10]
+  - Name: pad0x10_9JDFT[0x10]
     Offset: '0x35c'
     Size: '0x10'
     Type: char
@@ -78,7 +78,7 @@ FootprintLeaverComponent:
     Offset: '0x380'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x1_J4AF3[0x1]
+  - Name: pad0x1_AYJG3[0x1]
     Offset: '0x388'
     Size: '0x1'
     Type: char
@@ -90,7 +90,7 @@ FootprintLeaverComponent:
     Offset: '0x38a'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_O5JJT[0x1]
+  - Name: pad0x1_YL028[0x1]
     Offset: '0x38b'
     Size: '0x1'
     Type: char
@@ -118,7 +118,7 @@ FootprintLeaverComponent:
     Offset: '0x3b0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_JTABC[0x4]
+  - Name: pad0x4_EWBX5[0x4]
     Offset: '0x3b4'
     Size: '0x4'
     Type: char
@@ -126,7 +126,7 @@ FootprintLeaverComponent:
     Offset: '0x3b8'
     Size: '0x8'
     Type: class MaterialInstanceDynamic*
-  - Name: pad0x20_9SD45[0x20]
+  - Name: pad0x20_4MW1T[0x20]
     Offset: '0x3c0'
     Size: '0x20'
     Type: char

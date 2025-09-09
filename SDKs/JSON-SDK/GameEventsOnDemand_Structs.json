@@ -1,4 +1,33 @@
 {
+  "GameEventAvailabilityTelemetryData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "EventName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "EventCategory",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "AvailabilityState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "pad0x6_232TB[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x12"
+      }
+    ]
+  },
   "AdvertiseGameEventOnDemandAvailabilityTelemetryEvent": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -26,39 +55,10 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x8_ML50W[0x8]",
+        "Name": "pad0x8_K0A4V[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x18"
-      }
-    ]
-  },
-  "GameEventAvailabilityTelemetryData": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "EventName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "EventCategory",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "AvailabilityState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x11"
-      },
-      {
-        "Name": "pad0x6_SMCPN[0x6]",
-        "Type": "char",
-        "Size": "0x6",
-        "Offset": "0x12"
       }
     ]
   },

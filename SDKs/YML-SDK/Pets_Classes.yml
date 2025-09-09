@@ -56,7 +56,7 @@ BTTask_AttachToHangout:
     Offset: '0x88'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_ATLB3[0x4]
+  - Name: pad0x4_XBEXG[0x4]
     Offset: '0x8c'
     Size: '0x4'
     Type: char
@@ -76,7 +76,7 @@ BTTask_DetachFromHangout:
     Offset: '0x88'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_HCP0Y[0x4]
+  - Name: pad0x4_Z0S8G[0x4]
     Offset: '0x8c'
     Size: '0x4'
     Type: char
@@ -122,7 +122,7 @@ BTTask_PetWaitForAnimationRoamingState:
   Super: BTTaskNode
 BTTask_ReactToOwner:
   Attributes:
-  - Name: pad0x8_CR55M[0x8]
+  - Name: pad0x8_10DH8[0x8]
     Offset: '0x60'
     Size: '0x8'
     Type: char
@@ -140,7 +140,7 @@ BTTask_ReactToThreat:
     Offset: '0x61'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_6OAXL[0x2]
+  - Name: pad0x2_ELDXS[0x2]
     Offset: '0x62'
     Size: '0x2'
     Type: char
@@ -152,7 +152,7 @@ BTTask_ReactToThreat:
     Offset: '0x68'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_G3P3E[0x7]
+  - Name: pad0x7_D2IST[0x7]
     Offset: '0x69'
     Size: '0x7'
     Type: char
@@ -186,7 +186,7 @@ BTTask_SelectPetHangoutSpot:
     Offset: '0x88'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_703X4[0x3]
+  - Name: pad0x3_8TWDH[0x3]
     Offset: '0x89'
     Size: '0x3'
     Type: char
@@ -194,7 +194,7 @@ BTTask_SelectPetHangoutSpot:
     Offset: '0x8c'
     Size: '0x8'
     Type: struct HangoutSpotId
-  - Name: pad0x4_SHK6B[0x4]
+  - Name: pad0x4_G0HRA[0x4]
     Offset: '0x94'
     Size: '0x4'
     Type: char
@@ -234,7 +234,7 @@ BTTask_SetDebugPetStateDescriptor:
     Offset: '0x60'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_GSJC8[0x7]
+  - Name: pad0x7_O00YH[0x7]
     Offset: '0x61'
     Size: '0x7'
     Type: char
@@ -250,7 +250,7 @@ BTTask_StopOccupyingHangoutSpot:
   Super: BTTask_BlackboardBase
 CannonSquashComponent:
   Attributes:
-  - Name: pad0x18_G404L[0x18]
+  - Name: pad0x18_7JONO[0x18]
     Offset: '0xb8'
     Size: '0x18'
     Type: char
@@ -296,7 +296,7 @@ HangoutSpotSelectionInterface:
   Super: Interface
 PetAIController:
   Attributes:
-  - Name: pad0x20_V25JO[0x20]
+  - Name: pad0x20_8TYCV[0x20]
     Offset: '0x9a8'
     Size: '0x20'
     Type: char
@@ -308,7 +308,7 @@ PetAIController:
     Offset: '0x9d8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_6IZ8S[0x4]
+  - Name: pad0x4_A1VQ7[0x4]
     Offset: '0x9dc'
     Size: '0x4'
     Type: char
@@ -320,7 +320,7 @@ PetAIController:
     Offset: '0x9e8'
     Size: '0x8'
     Type: class ReactStateMappingsDataAsset*
-  - Name: pad0x8_FTE0N[0x8]
+  - Name: pad0x8_LQ9NN[0x8]
     Offset: '0x9f0'
     Size: '0x8'
     Type: char
@@ -352,7 +352,7 @@ PetAIController:
     Offset: '0xa28'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_C2ZQP[0x4]
+  - Name: pad0x4_8BXTT[0x4]
     Offset: '0xa2c'
     Size: '0x4'
     Type: char
@@ -364,7 +364,7 @@ PetAIController:
     Offset: '0xa38'
     Size: '0x4'
     Type: float
-  - Name: pad0x54_HLP6L[0x54]
+  - Name: pad0x54_ZUTLR[0x54]
     Offset: '0xa3c'
     Size: '0x54'
     Type: char
@@ -406,7 +406,7 @@ PetDangerComponent:
     Offset: '0xb8'
     Size: '0x8'
     Type: class PetDangerDataAsset*
-  - Name: pad0xd0_R042X[0xd0]
+  - Name: pad0xd0_AOGPP[0xd0]
     Offset: '0xc0'
     Size: '0xd0'
     Type: char
@@ -476,7 +476,7 @@ PetHangoutSpotComponent:
     Offset: '0x2e0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_GQSI7[0x3]
+  - Name: pad0x3_N30K1[0x3]
     Offset: '0x2e1'
     Size: '0x3'
     Type: char
@@ -488,7 +488,7 @@ PetHangoutSpotComponent:
     Offset: '0x2e8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_FB2OB[0x3]
+  - Name: pad0x3_LLSL4[0x3]
     Offset: '0x2e9'
     Size: '0x3'
     Type: char
@@ -504,7 +504,7 @@ PetHangoutSpotComponent:
     Offset: '0x2f4'
     Size: '0x1'
     Type: bool
-  - Name: pad0x23_UWLOJ[0x23]
+  - Name: pad0x23_ST336[0x23]
     Offset: '0x2f5'
     Size: '0x23'
     Type: char
@@ -512,7 +512,7 @@ PetHangoutSpotComponent:
     Offset: '0x318'
     Size: '0x10'
     Type: TArray<class PetPerchComponent*>
-  - Name: pad0x10_406JD[0x10]
+  - Name: pad0x10_4D0NY[0x10]
     Offset: '0x328'
     Size: '0x10'
     Type: char
@@ -524,7 +524,7 @@ PetHangoutSpotComponent:
     Offset: '0x339'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1e_3CGB5[0x1e]
+  - Name: pad0x1e_QTQ1Q[0x1e]
     Offset: '0x33a'
     Size: '0x1e'
     Type: char
@@ -532,7 +532,7 @@ PetHangoutSpotComponent:
     Offset: '0x358'
     Size: '0x8'
     Type: class PetHangoutSpotsDataAsset*
-  - Name: pad0x10_UR888[0x10]
+  - Name: pad0x10_SMTZZ[0x10]
     Offset: '0x360'
     Size: '0x10'
     Type: char
@@ -550,7 +550,7 @@ PetHangoutSpotSelectorComponent:
     Offset: '0xc0'
     Size: '0x8'
     Type: class PetHangoutSpotsDataAsset*
-  - Name: pad0x70_OJDCM[0x70]
+  - Name: pad0x70_FKNHM[0x70]
     Offset: '0xc8'
     Size: '0x70'
     Type: char
@@ -558,7 +558,7 @@ PetHangoutSpotSelectorComponent:
     Offset: '0x138'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x168_ODFXL[0x168]
+  - Name: pad0x168_E767I[0x168]
     Offset: '0x140'
     Size: '0x168'
     Type: char
@@ -584,7 +584,7 @@ PetIdleMovementInterface:
   Super: Interface
 PetItemInfo:
   Attributes:
-  - Name: pad0x20_8ZOJJ[0x20]
+  - Name: pad0x20_92O7H[0x20]
     Offset: '0x508'
     Size: '0x20'
     Type: char
@@ -604,7 +604,7 @@ PetItemInfo:
     Offset: '0x538'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_MIQRZ[0x7]
+  - Name: pad0x7_TI2PA[0x7]
     Offset: '0x539'
     Size: '0x7'
     Type: char
@@ -620,7 +620,7 @@ PetItemInfo:
     Offset: '0x570'
     Size: '0x8'
     Type: class PetUGCNameComponent*
-  - Name: pad0x10_RJQPR[0x10]
+  - Name: pad0x10_AHYL1[0x10]
     Offset: '0x578'
     Size: '0x10'
     Type: char
@@ -658,7 +658,7 @@ PetMovementModifierSettingsInterface:
   Super: Interface
 PetOwnerComponent:
   Attributes:
-  - Name: pad0x18_H3P0L[0x18]
+  - Name: pad0x18_H4FNI[0x18]
     Offset: '0xb8'
     Size: '0x18'
     Type: char
@@ -690,7 +690,7 @@ PetPartCustomisationInterface:
   Super: Interface
 PetPerchComponent:
   Attributes:
-  - Name: pad0x18_7HZ5S[0x18]
+  - Name: pad0x18_FBO0L[0x18]
     Offset: '0x140'
     Size: '0x18'
     Type: char
@@ -722,7 +722,7 @@ PetPerchComponent:
     Offset: '0x182'
     Size: '0x1'
     Type: bool
-  - Name: pad0x5_2UREV[0x5]
+  - Name: pad0x5_OZSQO[0x5]
     Offset: '0x183'
     Size: '0x5'
     Type: char
@@ -766,7 +766,7 @@ PetSpawnParamsDataAsset:
   Super: DataAsset
 PetUGCNameComponent:
   Attributes:
-  - Name: pad0x8_017EH[0x8]
+  - Name: pad0x8_VGC28[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -778,7 +778,7 @@ PetUGCNameComponent:
     Offset: '0xd0'
     Size: '0x10'
     Type: struct FString
-  - Name: pad0x78_BVAEV[0x78]
+  - Name: pad0x78_LLP7L[0x78]
     Offset: '0xe0'
     Size: '0x78'
     Type: char
@@ -794,7 +794,7 @@ PetUGCNameInterface:
   Super: Interface
 PetsService:
   Attributes:
-  - Name: pad0x60_VN7JP[0x60]
+  - Name: pad0x60_OCJCE[0x60]
     Offset: '0x28'
     Size: '0x60'
     Type: char
@@ -802,7 +802,7 @@ PetsService:
     Offset: '0x88'
     Size: '0x8'
     Type: class AIPetsOnDemandSpawner*
-  - Name: pad0x18_VLN0Y[0x18]
+  - Name: pad0x18_L3UUO[0x18]
     Offset: '0x90'
     Size: '0x18'
     Type: char
@@ -830,7 +830,7 @@ PetsService:
     Offset: '0x120'
     Size: '0x10'
     Type: TArray<class Actor*>
-  - Name: pad0x1a8_4HIS3[0x1a8]
+  - Name: pad0x1a8_BKJPA[0x1a8]
     Offset: '0x130'
     Size: '0x1a8'
     Type: char
@@ -838,7 +838,7 @@ PetsService:
     Offset: '0x2d8'
     Size: '0x8'
     Type: class PetHangoutSpotsDataAsset*
-  - Name: pad0x50_TPWIL[0x50]
+  - Name: pad0x50_ZPZGI[0x50]
     Offset: '0x2e0'
     Size: '0x50'
     Type: char
@@ -906,7 +906,7 @@ ReactStateMappingsDataAsset:
   Super: DataAsset
 WieldablePet:
   Attributes:
-  - Name: pad0x38_D1JDY[0x38]
+  - Name: pad0x38_K31DM[0x38]
     Offset: '0x7f0'
     Size: '0x38'
     Type: char
@@ -914,7 +914,7 @@ WieldablePet:
     Offset: '0x828'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_ZR9Z6[0x4]
+  - Name: pad0x4_YOOKC[0x4]
     Offset: '0x82c'
     Size: '0x4'
     Type: char
@@ -994,7 +994,7 @@ WieldablePet:
     Offset: '0x8c0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6f_96MWB[0x6f]
+  - Name: pad0x6f_X460D[0x6f]
     Offset: '0x8c1'
     Size: '0x6f'
     Type: char
@@ -1006,7 +1006,7 @@ WieldablePet:
     Offset: '0x931'
     Size: '0x1'
     Type: byte
-  - Name: pad0xe_AFPFD[0xe]
+  - Name: pad0xe_62SLD[0xe]
     Offset: '0x932'
     Size: '0xe'
     Type: char
@@ -1016,7 +1016,7 @@ WieldablePet:
   Super: SkeletalMeshWieldableItem
 WieldablePetAnimNotifyWwiseEmitterComponent:
   Attributes:
-  - Name: pad0x10_1RVS5[0x10]
+  - Name: pad0x10_IGYJ7[0x10]
     Offset: '0x300'
     Size: '0x10'
     Type: char
@@ -1030,7 +1030,7 @@ WieldablePetComponent:
     Offset: '0xb8'
     Size: '0x8'
     Type: class WieldablePetComponentDataAsset*
-  - Name: pad0x80_R4ZD7[0x80]
+  - Name: pad0x80_8ZS15[0x80]
     Offset: '0xc0'
     Size: '0x80'
     Type: char
@@ -1056,7 +1056,7 @@ WieldablePetComponentDataAsset:
     Offset: '0x58'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_LS77B[0x4]
+  - Name: pad0x4_3BCIW[0x4]
     Offset: '0x5c'
     Size: '0x4'
     Type: char
@@ -1074,7 +1074,7 @@ WieldablePetHungerComponent:
     Offset: '0xb8'
     Size: '0x8'
     Type: class WieldablePetHungerDataAsset*
-  - Name: pad0x28_JZFV1[0x28]
+  - Name: pad0x28_23TTD[0x28]
     Offset: '0xc0'
     Size: '0x28'
     Type: char
@@ -1090,7 +1090,7 @@ WieldablePetHungerComponent:
     Offset: '0x108'
     Size: '0x10'
     Type: TArray<struct WieldablePetFoodSourceEntry>
-  - Name: pad0x50_B7E0A[0x50]
+  - Name: pad0x50_25THD[0x50]
     Offset: '0x118'
     Size: '0x50'
     Type: char
@@ -1128,7 +1128,7 @@ WieldablePetHungerDataAsset:
     Offset: '0x50'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_OWS6S[0x7]
+  - Name: pad0x7_SNR4I[0x7]
     Offset: '0x51'
     Size: '0x7'
     Type: char

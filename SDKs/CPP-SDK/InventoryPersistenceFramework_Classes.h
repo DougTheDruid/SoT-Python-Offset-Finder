@@ -10,9 +10,9 @@
 class InventoryPersistenceService: public Actor
 {
 public:
-	char                                                         pad0x158_JUGHL[0x158];                             // 0x3a0(0x158)
+	char                                                         pad0x158_HO1MQ[0x158];                             // 0x3a0(0x158)
 	TArray<struct InventoryPersistencePlayerData>                PlayerItemData;                                    // 0x4f8(0x10)
-	char                                                         pad0x18_5HY8V[0x18];                               // 0x508(0x18)
+	char                                                         pad0x18_MM1JB[0x18];                               // 0x508(0x18)
 };
 
 

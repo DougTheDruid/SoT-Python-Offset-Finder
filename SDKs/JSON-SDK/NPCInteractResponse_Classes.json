@@ -1,39 +1,4 @@
 {
-  "InteractResponseType": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "NPCInteractResponseComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xc0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_O45Q0[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      }
-    ]
-  },
-  "NPCInteractResponseAnimationInstanceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "NPCInteractResponseDialogInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "NPCInteractAnimResponseDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
@@ -55,8 +20,36 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "NegativeInteractResponseType": {
-    "Super": "InteractResponseType",
+  "NPCInteractResponseComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xc0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_EBMK2[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      }
+    ]
+  },
+  "NPCInteractResponseDialogInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "InteractResponseType": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "NPCInteractResponseAnimationInstanceInterface": {
+    "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
@@ -70,6 +63,13 @@
     "Attributes": []
   },
   "PositiveInteractResponseType": {
+    "Super": "InteractResponseType",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "NegativeInteractResponseType": {
     "Super": "InteractResponseType",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

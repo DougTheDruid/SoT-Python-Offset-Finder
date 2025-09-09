@@ -1,70 +1,4 @@
 {
-  "BasePromptCoordinator": {
-    "Super": "Object",
-    "FullSize": "0x118",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xf0",
-    "Attributes": [
-      {
-        "Name": "PlayerController",
-        "Type": "class AthenaPlayerController*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x10_2FHVU[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "PrioritisedPromptsManager",
-        "Type": "class PrioritisedPromptsManager*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "CharacterWithRegisteredEvents",
-        "Type": "class Character*",
-        "Size": "0x8",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "pad0xc8_7OGRH[0xc8]",
-        "Type": "char",
-        "Size": "0xc8",
-        "Offset": "0x50"
-      }
-    ]
-  },
-  "PrioritisedPromptsManagerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PromptsLocalService": {
-    "Super": "Object",
-    "FullSize": "0x98",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "pad0x70_YFJF2[0x70]",
-        "Type": "char",
-        "Size": "0x70",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "PromptsLocalServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "GetPromptsLocalService": {
     "Super": "BlueprintAsyncActionBase",
     "FullSize": "0x40",
@@ -72,7 +6,7 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x10_EAPFD[0x10]",
+        "Name": "pad0x10_8E416[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"
@@ -92,7 +26,7 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x8_76LPN[0x8]",
+        "Name": "pad0x8_X7L4P[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
@@ -110,12 +44,78 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x30_1TQ9N[0x30]",
+        "Name": "pad0x30_ZA4VX[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x48"
       }
     ]
+  },
+  "BasePromptCoordinator": {
+    "Super": "Object",
+    "FullSize": "0x118",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xf0",
+    "Attributes": [
+      {
+        "Name": "PlayerController",
+        "Type": "class AthenaPlayerController*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x10_C60P0[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "PrioritisedPromptsManager",
+        "Type": "class PrioritisedPromptsManager*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "CharacterWithRegisteredEvents",
+        "Type": "class Character*",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "pad0xc8_TSDR6[0xc8]",
+        "Type": "char",
+        "Size": "0xc8",
+        "Offset": "0x50"
+      }
+    ]
+  },
+  "PromptsLocalService": {
+    "Super": "Object",
+    "FullSize": "0x98",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "pad0x70_B3B99[0x70]",
+        "Type": "char",
+        "Size": "0x70",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "PromptsLocalServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PrioritisedPromptsManagerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "PromptCounterAccessKey": {
     "Super": "Object",

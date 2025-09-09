@@ -1,67 +1,4 @@
 {
-  "RopeCatenaryDynamicsParams": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "CatenaryToTautLengthRatioToConsiderCatenary",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ReactsToWind",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "pad0x3_A2PIS[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x5"
-      }
-    ]
-  },
-  "PulleyVisualParams": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Mesh",
-        "Type": "class StaticMesh*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Scale",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Radius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "RopeCatenarySlopeBlendParams": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "MinSlopeForTautBlend",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MaxSlopeForTautBlend",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
   "RiggingSystemPulleyData": {
     "ClassSize": "0x60",
     "Attributes": [
@@ -103,31 +40,25 @@
       }
     ]
   },
-  "RopeVisualParams": {
-    "ClassSize": "0xc",
+  "RopeCatenarySlopeBlendParams": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "Thickness",
+        "Name": "MinSlopeForTautBlend",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "UVScale",
+        "Name": "MaxSlopeForTautBlend",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4"
-      },
-      {
-        "Name": "Roughness",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
       }
     ]
   },
-  "RopeStyleParams": {
-    "ClassSize": "0x20",
+  "PulleyVisualParams": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "Mesh",
@@ -136,45 +67,16 @@
         "Offset": "0x0"
       },
       {
-        "Name": "DiffuseTexture",
-        "Type": "class Texture2D*",
-        "Size": "0x8",
+        "Name": "Scale",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x8"
       },
       {
-        "Name": "NormalTexture",
-        "Type": "class Texture2D*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "ShadowLOD",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x4_1SHJP[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x1c"
-      }
-    ]
-  },
-  "RopeCatenaryLengthPair": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Taut",
+        "Name": "Radius",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Catenary",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
+        "Offset": "0xc"
       }
     ]
   },
@@ -199,7 +101,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_J7LK0[0x10]",
+        "Name": "pad0x10_NMIXJ[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x0"
@@ -232,6 +134,104 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xc"
+      }
+    ]
+  },
+  "RopeStyleParams": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Mesh",
+        "Type": "class StaticMesh*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DiffuseTexture",
+        "Type": "class Texture2D*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "NormalTexture",
+        "Type": "class Texture2D*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ShadowLOD",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x4_RPRJM[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      }
+    ]
+  },
+  "RopeVisualParams": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "Thickness",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "UVScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "Roughness",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "RopeCatenaryDynamicsParams": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "CatenaryToTautLengthRatioToConsiderCatenary",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ReactsToWind",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x3_IN3I6[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5"
+      }
+    ]
+  },
+  "RopeCatenaryLengthPair": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Taut",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Catenary",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
       }
     ]
   },
@@ -356,7 +356,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_G7F1D[0x4]",
+        "Name": "pad0x4_SB2EF[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x24"
@@ -374,7 +374,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_CQIDH[0x4]",
+        "Name": "pad0x4_IQ2GB[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
@@ -415,7 +415,7 @@
         "Offset": "0x5c"
       },
       {
-        "Name": "pad0x4_DFQE4[0x4]",
+        "Name": "pad0x4_WG49R[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x74"

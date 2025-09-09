@@ -6,28 +6,28 @@
 #include "GameEventsOnDemand_Structs.h"
 
 
-// Size 0x140 (Full Size[0x4e0] - InheritedSize[0x3a0]
-class GameEventsOnDemandLoserTunnelService: public Actor
-{
-public:
-	char                                                         pad0x8_9WH6Z[0x8];                                 // 0x3a0(0x8)
-	class World*                                                 World;                                             // 0x3a8(0x8)
-	char                                                         pad0x58_ZCFDV[0x58];                               // 0x3b0(0x58)
-	class VoyageDescDataAsset*                                   LoserTunnelVoyageDescDataAsset;                    // 0x408(0x8)
-	char                                                         pad0x50_MGDBE[0x50];                               // 0x410(0x50)
-	TArray<struct GameEventsOnDemandLoserTunnelCrewData>         TrackedCrews;                                      // 0x460(0x10)
-	struct FName                                                 TemporaryBannerTag;                                // 0x470(0x8)
-	char                                                         pad0x68_Y1MMB[0x68];                               // 0x478(0x68)
-};
-
-
 // Size 0xf0 (Full Size[0x118] - InheritedSize[0x28]
 class GameEventsOnDemandAvailabilityService: public Object
 {
 public:
-	char                                                         pad0xd0_FL2DL[0xd0];                               // 0x28(0xd0)
+	char                                                         pad0xd0_6K409[0xd0];                               // 0x28(0xd0)
 	class World*                                                 World;                                             // 0xf8(0x8)
-	char                                                         pad0x18_OIUYB[0x18];                               // 0x100(0x18)
+	char                                                         pad0x18_S1UN6[0x18];                               // 0x100(0x18)
+};
+
+
+// Size 0x140 (Full Size[0x4e0] - InheritedSize[0x3a0]
+class GameEventsOnDemandLoserTunnelService: public Actor
+{
+public:
+	char                                                         pad0x8_D4JJ6[0x8];                                 // 0x3a0(0x8)
+	class World*                                                 World;                                             // 0x3a8(0x8)
+	char                                                         pad0x58_4YSWO[0x58];                               // 0x3b0(0x58)
+	class VoyageDescDataAsset*                                   LoserTunnelVoyageDescDataAsset;                    // 0x408(0x8)
+	char                                                         pad0x50_1WUQT[0x50];                               // 0x410(0x50)
+	TArray<struct GameEventsOnDemandLoserTunnelCrewData>         TrackedCrews;                                      // 0x460(0x10)
+	struct FName                                                 TemporaryBannerTag;                                // 0x470(0x8)
+	char                                                         pad0x68_QEHP6[0x68];                               // 0x478(0x68)
 };
 
 

@@ -39,7 +39,7 @@
         "Offset": "0x32"
       },
       {
-        "Name": "pad0x5_I8O8Y[0x5]",
+        "Name": "pad0x5_HM0EU[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x33"
@@ -57,23 +57,6 @@
       },
       {
         "Name": "Command",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "DebugMenuOptionExecutedEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "DebugMenuItemName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ConsoleCommand",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
@@ -114,7 +97,7 @@
         "Offset": "0x34"
       },
       {
-        "Name": "pad0xb_RE56H[0xb]",
+        "Name": "pad0xb_ACR7Y[0xb]",
         "Type": "char",
         "Size": "0xb",
         "Offset": "0x35"
@@ -125,7 +108,7 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_NRR84[0x1]",
+        "Name": "pad0x1_NQOOJ[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
@@ -178,7 +161,7 @@
         "Offset": "0x15"
       },
       {
-        "Name": "pad0x2_1KLJU[0x2]",
+        "Name": "pad0x2_UKNQE[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x16"
@@ -188,6 +171,23 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x18"
+      }
+    ]
+  },
+  "DebugMenuOptionExecutedEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "DebugMenuItemName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ConsoleCommand",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },

@@ -6,6 +6,14 @@
 #include "RareEngine_Structs.h"
 
 
+// Size 0x58 (Full Size[0xaa0] - InheritedSize[0xa48]
+class RareGameEngine: public GameEngine
+{
+public:
+	char                                                         pad0x58_QJCH0[0x58];                               // 0xa48(0x58)
+};
+
+
 // Size 0x0 (Full Size[0x498] - InheritedSize[0x498]
 class RareHUD: public HUD
 {
@@ -17,7 +25,15 @@ public:
 class StallDetector: public Object
 {
 public:
-	char                                                         pad0x28_H3APG[0x28];                               // 0x28(0x28)
+	char                                                         pad0x28_7QKAQ[0x28];                               // 0x28(0x28)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class AudioHardwareDeviceService: public Object
+{
+public:
+	char                                                         pad0x18_TEXEI[0x18];                               // 0x28(0x18)
 };
 
 
@@ -26,29 +42,6 @@ class AssetReferencer: public DataAsset
 {
 public:
 	TArray<Class>                                                AssetsToReference;                                 // 0x28(0x10)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class AudioHardwareDeviceService: public Object
-{
-public:
-	char                                                         pad0x18_KT0RO[0x18];                               // 0x28(0x18)
-};
-
-
-// Size 0x58 (Full Size[0xaa0] - InheritedSize[0xa48]
-class RareGameEngine: public GameEngine
-{
-public:
-	char                                                         pad0x58_86W3K[0x58];                               // 0xa48(0x58)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class HitchDiagnosisBlueprintFunctionLibrary: public BlueprintFunctionLibrary
-{
-public:
 };
 
 
@@ -64,6 +57,13 @@ class MemoryUsageVisualiserSettings: public Object
 {
 public:
 	TArray<struct MemoryVisualiserCategory>                      VisualiserCategories;                              // 0x28(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class HitchDiagnosisBlueprintFunctionLibrary: public BlueprintFunctionLibrary
+{
+public:
 };
 
 

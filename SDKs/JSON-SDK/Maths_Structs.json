@@ -1,78 +1,86 @@
 {
-  "Pendulum": {
-    "ClassSize": "0x60",
+  "WeightedProbabilityRangeOfRangesFloatPair": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "Increment",
+        "Name": "Min",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "IncrementDirectionMultiplier",
+        "Name": "Max",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4"
+      }
+    ]
+  },
+  "GrabBag": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_2H92W[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SpatialOffset": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "OffsetValue",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
       },
       {
-        "Name": "IsSwinging",
-        "Type": "bool",
+        "Name": "OffsetMethod",
+        "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x8"
+        "Offset": "0x4"
       },
       {
-        "Name": "pad0x3_L0DPY[0x3]",
+        "Name": "pad0x3_UTM92[0x3]",
         "Type": "char",
         "Size": "0x3",
-        "Offset": "0x9"
-      },
+        "Offset": "0x5"
+      }
+    ]
+  },
+  "WeightedProbabilityRange": {
+    "ClassSize": "0x20",
+    "Attributes": [
       {
-        "Name": "RPM",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "MinAngleDegrees",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "MaxAngleDegrees",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "Length",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "CurrentSwingProgress",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x1c"
-      },
-      {
-        "Name": "CurrentRotationAngleDegrees",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "pad0xc_MNGJO[0xc]",
+        "Name": "pad0x10_DIZB3[0x10]",
         "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x24"
+        "Size": "0x10",
+        "Offset": "0x0"
       },
       {
-        "Name": "InterpolationAsTransform",
-        "Type": "struct Transform",
-        "Size": "0x30",
-        "Offset": "0x30"
+        "Name": "Weights",
+        "Type": "TArray<float>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "OrientedPoint": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Rotation",
+        "Type": "struct Rotator",
+        "Size": "0xc",
+        "Offset": "0xc"
       }
     ]
   },
@@ -151,116 +159,91 @@
       }
     ]
   },
-  "SpatialOffset": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "OffsetValue",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "OffsetMethod",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "pad0x3_JX333[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x5"
-      }
-    ]
-  },
-  "OrientedPoint": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Rotation",
-        "Type": "struct Rotator",
-        "Size": "0xc",
-        "Offset": "0xc"
-      }
-    ]
-  },
   "TimedBuffer": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x18_HMVD2[0x18]",
+        "Name": "pad0x18_YYKUS[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"
       }
     ]
   },
-  "GrabBag": {
-    "ClassSize": "0x20",
+  "Pendulum": {
+    "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x20_BXC1S[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "WeightedProbabilityRange": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x10_688L1[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Weights",
-        "Type": "TArray<float>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "WeightedProbabilityRangeOfRangesFloatPair": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Min",
+        "Name": "Increment",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "Max",
+        "Name": "IncrementDirectionMultiplier",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x4"
-      }
-    ]
-  },
-  "WeightedProbabilityRangeOfRanges": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x20_4BFSL[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x0"
       },
       {
-        "Name": "SubRanges",
-        "Type": "TArray<struct WeightedProbabilityRangeOfRangesFloatPair>",
-        "Size": "0x10",
+        "Name": "IsSwinging",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x3_0OW2W[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x9"
+      },
+      {
+        "Name": "RPM",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "MinAngleDegrees",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "MaxAngleDegrees",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "Length",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "CurrentSwingProgress",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "CurrentRotationAngleDegrees",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x20"
+      },
+      {
+        "Name": "pad0xc_9A0F3[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "InterpolationAsTransform",
+        "Type": "struct Transform",
+        "Size": "0x30",
+        "Offset": "0x30"
       }
     ]
   },
@@ -286,10 +269,27 @@
         "Offset": "0x14"
       },
       {
-        "Name": "pad0x3_OEI9R[0x3]",
+        "Name": "pad0x3_NKCXY[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x15"
+      }
+    ]
+  },
+  "WeightedProbabilityRangeOfRanges": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x20_UP1Y0[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SubRanges",
+        "Type": "TArray<struct WeightedProbabilityRangeOfRangesFloatPair>",
+        "Size": "0x10",
+        "Offset": "0x20"
       }
     ]
   },

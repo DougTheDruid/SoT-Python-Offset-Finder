@@ -7,16 +7,27 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DeliverableRedirectionInterface: public Interface
+class DeliverableInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DeliverableInterface: public Interface
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class DeliverableRequirementsDataAsset: public DataAsset
 {
 public:
+	TArray<class DeliverableRequirementBase*>                    Requirements;                                      // 0x28(0x10)
+	struct DeliverableRequirementFeatureOverride                 FeatureOverrideRequirements;                       // 0x38(0x18)
+};
+
+
+// Size 0x18 (Full Size[0xd0] - InheritedSize[0xb8]
+class DeliverableComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x10_GUSK7[0x10];                               // 0xb8(0x10)
+	class DeliverableRequirementsDataAsset*                      DeliveryRequirementsAsset;                         // 0xc8(0x8)
 };
 
 
@@ -42,21 +53,10 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0xd0] - InheritedSize[0xb8]
-class DeliverableComponent: public ActorComponent
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DeliverableRedirectionInterface: public Interface
 {
 public:
-	char                                                         pad0x10_F5HTF[0x10];                               // 0xb8(0x10)
-	class DeliverableRequirementsDataAsset*                      DeliveryRequirementsAsset;                         // 0xc8(0x8)
-};
-
-
-// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
-class DeliverableRedirectionComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_683D7[0x8];                                 // 0xb8(0x8)
-	class DeliverableRedirectionContextBase*                     Context;                                           // 0xc0(0x8)
 };
 
 
@@ -64,7 +64,16 @@ public:
 class DeliverableRequirementBase: public Object
 {
 public:
-	char                                                         pad0x8_8U9Y8[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_5AU75[0x8];                                 // 0x28(0x8)
+};
+
+
+// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
+class DeliverableRedirectionComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_ZD6XU[0x8];                                 // 0xb8(0x8)
+	class DeliverableRedirectionContextBase*                     Context;                                           // 0xc0(0x8)
 };
 
 
@@ -75,28 +84,10 @@ public:
 };
 
 
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class DeliverableRequirementsDataAsset: public DataAsset
-{
-public:
-	TArray<class DeliverableRequirementBase*>                    Requirements;                                      // 0x28(0x10)
-	struct DeliverableRequirementFeatureOverride                 FeatureOverrideRequirements;                       // 0x38(0x18)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class DeliverableRedirectionNoContext: public DeliverableRedirectionContextBase
 {
 public:
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class DeliverableRedirectionCompositeContext: public DeliverableRedirectionContextBase
-{
-public:
-	TArray<class DeliverableRedirectionContextBase*>             Contexts;                                          // 0x28(0x10)
-	char                                                         pad0x18_PWO25[0x18];                               // 0x38(0x18)
 };
 
 
@@ -105,6 +96,15 @@ class DeliverableRedirectionLiteralDestinationDescriptor: public DeliverableRedi
 {
 public:
 	struct FText                                                 Destination;                                       // 0x28(0x38)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class DeliverableRedirectionCompositeContext: public DeliverableRedirectionContextBase
+{
+public:
+	TArray<class DeliverableRedirectionContextBase*>             Contexts;                                          // 0x28(0x10)
+	char                                                         pad0x18_ZDD43[0x18];                               // 0x38(0x18)
 };
 
 

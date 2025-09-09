@@ -6,6 +6,17 @@
 #include "EnemyAIOnShipFramework_Structs.h"
 
 
+// Size 0xa8 (Full Size[0x448] - InheritedSize[0x3a0]
+class EnemyAIOnShipService: public Actor
+{
+public:
+	char                                                         pad0x20_B3WLU[0x20];                               // 0x3a0(0x20)
+	class EnemyAIOnShipServiceDataAsset*                         Params;                                            // 0x3c0(0x8)
+	TArray<struct EnemyAIOnShipActiveEncounters>                 ReplicatedEncounters;                              // 0x3c8(0x10)
+	char                                                         pad0x70_LSBN3[0x70];                               // 0x3d8(0x70)
+};
+
+
 // Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
 class EnemyAIOnShipEncounterDesc: public DataAsset
 {
@@ -15,25 +26,7 @@ public:
 	class AIFixedWavesSpawner*                                   SpawnerCrewSize3;                                  // 0x38(0x8)
 	class AIFixedWavesSpawner*                                   SpawnerCrewSize4;                                  // 0x40(0x8)
 	float                                                        MigrationPreventionRadius;                         // 0x48(0x4)
-	char                                                         pad0x4_H7YUZ[0x4];                                 // 0x4c(0x4)
-};
-
-
-// Size 0xa8 (Full Size[0x448] - InheritedSize[0x3a0]
-class EnemyAIOnShipService: public Actor
-{
-public:
-	char                                                         pad0x20_512DH[0x20];                               // 0x3a0(0x20)
-	class EnemyAIOnShipServiceDataAsset*                         Params;                                            // 0x3c0(0x8)
-	TArray<struct EnemyAIOnShipActiveEncounters>                 ReplicatedEncounters;                              // 0x3c8(0x10)
-	char                                                         pad0x70_CGHCH[0x70];                               // 0x3d8(0x70)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class EnemyAIOnShipServiceInterface: public Interface
-{
-public:
+	char                                                         pad0x4_FQZ5O[0x4];                                 // 0x4c(0x4)
 };
 
 
@@ -42,6 +35,13 @@ class EnemyAIOnShipServiceDataAsset: public DataAsset
 {
 public:
 	class EnemyAIOnShipEncounterDesc*                            OceanCrawlersOnShipEncounterParams;                // 0x28(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class EnemyAIOnShipServiceInterface: public Interface
+{
+public:
 };
 
 

@@ -22,17 +22,17 @@ public:
 	class UClass*                                                NotificationStartInputID;                          // 0x478(0x8)
 	class UClass*                                                NotificationReleaseInputID;                        // 0x480(0x8)
 	char                                                         DisplayPriority;                                   // 0x488(0x1)
-	char                                                         pad0x3_Y8Y7Z[0x3];                                 // 0x489(0x3)
+	char                                                         pad0x3_BWF7X[0x3];                                 // 0x489(0x3)
 	float                                                        HoldTime;                                          // 0x48c(0x4)
 	struct RuntimeFloatCurve                                     Curve;                                             // 0x490(0x80)
 	struct Transform                                             LeverStartingTransform;                            // 0x510(0x30)
 	struct Transform                                             LeverEndingTransform;                              // 0x540(0x30)
 	char                                                         LeverActivationState;                              // 0x570(0x1)
-	char                                                         pad0x3_OBT1U[0x3];                                 // 0x571(0x3)
+	char                                                         pad0x3_SOEJJ[0x3];                                 // 0x571(0x3)
 	float                                                        ReplicatedAnimationTime;                           // 0x574(0x4)
-	char                                                         pad0x20_A371K[0x20];                               // 0x578(0x20)
+	char                                                         pad0x20_7WQ79[0x20];                               // 0x578(0x20)
 	struct FName                                                 LeverCooldownRtpcName;                             // 0x598(0x8)
-	char                                                         pad0x30_C2I8Y[0x30];                               // 0x5a0(0x30)
+	char                                                         pad0x30_RQ39E[0x30];                               // 0x5a0(0x30)
 };
 
 
@@ -40,7 +40,7 @@ public:
 class FireballCannonComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_D1MLY[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_3VGGF[0x8];                                 // 0xb8(0x8)
 	TArray<struct FireballCannonProjectileFirePoint>             FireballCannonProjectileFirePoints;                // 0xc0(0x10)
 	TArray<struct FireballCannonDynamicMaterialParameters>       FireballCannonMaterialParameters;                  // 0xd0(0x10)
 	class UClass*                                                LaunchableProjectileClass;                         // 0xe0(0x8)
@@ -52,14 +52,14 @@ public:
 	float                                                        FireballCannonReadyToFireMaterialDelay;            // 0xfc(0x4)
 	TArray<uintptr_t>                                            ActiveProjectiles;                                 // 0x100(0x10)
 	char                                                         FireballCannonFiringState;                         // 0x110(0x1)
-	char                                                         pad0x7_U0F2F[0x7];                                 // 0x111(0x7)
+	char                                                         pad0x7_N64BX[0x7];                                 // 0x111(0x7)
 	char                                                         FireRadiusCollisionChannel;                        // 0x168(0x1)
 	struct CollisionResponseContainer                            FireRadiusCollisionResponse;                       // 0x169(0x20)
-	char                                                         pad0x7_YSEA2[0x7];                                 // 0x189(0x7)
+	char                                                         pad0x7_0O2AD[0x7];                                 // 0x189(0x7)
 	class FireGridCellSelectionParamsDataAsset*                  FlamethrowerFirePropagationIgnitionParams;         // 0x190(0x8)
 	struct Status                                                FlamethrowerCollisionStatusEffect;                 // 0x198(0x20)
 	bool                                                         UseScalingFlameCollisionRadius;                    // 0x1b8(0x1)
-	char                                                         pad0x3_4VA6J[0x3];                                 // 0x1b9(0x3)
+	char                                                         pad0x3_5RBZS[0x3];                                 // 0x1b9(0x3)
 	float                                                        FlameCollisionRadius;                              // 0x1bc(0x4)
 	struct RuntimeFloatCurve                                     DynamicFlameCollisionRadiusCurve;                  // 0x1c0(0x80)
 	float                                                        TimeUntilApplyStatusEffect;                        // 0x240(0x4)
@@ -67,11 +67,11 @@ public:
 	float                                                        TimeToConsiderActorOutsideFlame;                   // 0x248(0x4)
 	float                                                        FlamethrowerCollisionDamageAmount;                 // 0x24c(0x4)
 	float                                                        DamagePerSecondInsideFlame;                        // 0x250(0x4)
-	char                                                         pad0x4_H7Z8X[0x4];                                 // 0x254(0x4)
+	char                                                         pad0x4_EVS1P[0x4];                                 // 0x254(0x4)
 	class UClass*                                                DamagerTypeClass;                                  // 0x258(0x8)
 	char                                                         HealthChangedReason;                               // 0x260(0x1)
-	char                                                         pad0x7_2EEH9[0x7];                                 // 0x261(0x7)
-	char                                                         pad0x78_3VE5H[0x78];                               // 0x268(0x78)
+	char                                                         pad0x7_M5EVL[0x7];                                 // 0x261(0x7)
+	char                                                         pad0x78_IHDH8[0x78];                               // 0x268(0x78)
 };
 
 

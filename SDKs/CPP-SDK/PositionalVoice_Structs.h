@@ -9,10 +9,10 @@ struct TalkingIndicatorState
 public:
 	struct FString                                               Gamertag;                                          // 0x0(0x10)
 	char                                                         TalkingStatus;                                     // 0x10(0x1)
-	char                                                         pad0x7_CF3HA[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_RPH9S[0x7];                                 // 0x11(0x7)
 	struct FString                                               Xuid;                                              // 0x18(0x10)
 	char                                                         Attitude;                                          // 0x28(0x1)
-	char                                                         pad0x7_LOLI2[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_3CHWI[0x7];                                 // 0x29(0x7)
 };
 
 

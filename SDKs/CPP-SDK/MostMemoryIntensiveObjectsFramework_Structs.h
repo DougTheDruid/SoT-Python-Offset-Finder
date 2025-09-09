@@ -8,7 +8,7 @@ struct MMIItemData
 {
 public:
 	int                                                          ExclusiveMemorySize;                               // 0x0(0x4)
-	char                                                         pad0x4_NYHV9[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_XX0IY[0x4];                                 // 0x4(0x4)
 	struct FString                                               ItemData;                                          // 0x8(0x10)
 };
 

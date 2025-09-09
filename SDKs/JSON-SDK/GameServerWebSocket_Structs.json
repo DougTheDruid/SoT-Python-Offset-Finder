@@ -16,35 +16,6 @@
       }
     ]
   },
-  "EventOverMemoryThreshold": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "EventId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ServerTimeUTC",
-        "Type": "struct DateTime",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "MemoryUsedPercentage",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x4_Z1YIS[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x1c"
-      }
-    ]
-  },
   "GameServerWebSocketEntityEvent": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -88,6 +59,35 @@
         "Type": "TArray<int>",
         "Size": "0x10",
         "Offset": "0x18"
+      }
+    ]
+  },
+  "EventOverMemoryThreshold": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "EventId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ServerTimeUTC",
+        "Type": "struct DateTime",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "MemoryUsedPercentage",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x4_4FMUU[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
       }
     ]
   },

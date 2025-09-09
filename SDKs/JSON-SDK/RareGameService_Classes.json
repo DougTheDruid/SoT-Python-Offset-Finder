@@ -1,11 +1,4 @@
 {
-  "RareGameServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "RareGameServiceManagerComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x120",
@@ -13,7 +6,7 @@
     "ClassSize": "0x68",
     "Attributes": [
       {
-        "Name": "pad0x8_BUILN[0x8]",
+        "Name": "pad0x8_OZX4H[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -25,7 +18,7 @@
         "Offset": "0xc0"
       },
       {
-        "Name": "pad0x40_0Z1SD[0x40]",
+        "Name": "pad0x40_ZV823[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0xd0"
@@ -39,6 +32,13 @@
     ]
   },
   "RareGameServiceProviderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RareGameServiceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

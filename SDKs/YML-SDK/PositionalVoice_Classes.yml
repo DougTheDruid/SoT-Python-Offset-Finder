@@ -8,7 +8,7 @@ VoiceChatEmitterInterface:
   Super: Interface
 VoiceChatRenderer:
   Attributes:
-  - Name: pad0x10_NGQEV[0x10]
+  - Name: pad0x10_7I5ZV[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char
@@ -36,7 +36,7 @@ VoiceChatRenderer:
     Offset: '0x58'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_ZYNPA[0x4]
+  - Name: pad0x4_VWBJ4[0x4]
     Offset: '0x5c'
     Size: '0x4'
     Type: char
@@ -48,7 +48,7 @@ VoiceChatRenderer:
     Offset: '0x70'
     Size: '0x8'
     Type: class RareAudioHardwareDeviceService*
-  - Name: pad0x148_IL327[0x148]
+  - Name: pad0x148_6NES9[0x148]
     Offset: '0x78'
     Size: '0x148'
     Type: char

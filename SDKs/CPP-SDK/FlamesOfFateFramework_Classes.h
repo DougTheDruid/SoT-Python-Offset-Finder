@@ -10,7 +10,7 @@
 class FlamesOfFateService: public Actor
 {
 public:
-	char                                                         pad0x18_0T61U[0x18];                               // 0x3a0(0x18)
+	char                                                         pad0x18_G1RYR[0x18];                               // 0x3a0(0x18)
 };
 
 

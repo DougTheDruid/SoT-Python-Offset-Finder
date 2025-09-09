@@ -18,37 +18,30 @@
         "Offset": "0x2c"
       },
       {
-        "Name": "pad0x3_0CI1A[0x3]",
+        "Name": "pad0x3_BOHMG[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x2d"
       }
     ]
   },
-  "ChecklistMapCollectionInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ChecklistMapCompletionComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x140",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x88",
+  "ChecklistMapSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x58",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "ActionData",
-        "Type": "class ChecklistActionData*",
-        "Size": "0x8",
-        "Offset": "0xb8"
+        "Name": "ChecklistMapItemDescClass",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x38"
       },
       {
-        "Name": "pad0x80_D29IW[0x80]",
-        "Type": "char",
-        "Size": "0x80",
-        "Offset": "0xc0"
+        "Name": "ChecklistEvents",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x48"
       }
     ]
   },
@@ -89,7 +82,7 @@
         "Offset": "0x86c"
       },
       {
-        "Name": "pad0x8_MRJXA[0x8]",
+        "Name": "pad0x8_2FURD[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x870"
@@ -107,32 +100,39 @@
         "Offset": "0x880"
       },
       {
-        "Name": "pad0x48_RT81Q[0x48]",
+        "Name": "pad0x48_6QMBR[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0x968"
       }
     ]
   },
-  "ChecklistMapSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x58",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x20",
+  "ChecklistMapCompletionComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x140",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x88",
     "Attributes": [
       {
-        "Name": "ChecklistMapItemDescClass",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x38"
+        "Name": "ActionData",
+        "Type": "class ChecklistActionData*",
+        "Size": "0x8",
+        "Offset": "0xb8"
       },
       {
-        "Name": "ChecklistEvents",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x48"
+        "Name": "pad0x80_QLL4B[0x80]",
+        "Type": "char",
+        "Size": "0x80",
+        "Offset": "0xc0"
       }
     ]
+  },
+  "ChecklistMapCollectionInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "ChecklistItemsDataAsset": {
     "Super": "DataAsset",
@@ -148,23 +148,17 @@
       }
     ]
   },
-  "DeliverBootyChecklistActionData": {
+  "KillActorChecklistActionData": {
     "Super": "ChecklistActionData",
-    "FullSize": "0x50",
+    "FullSize": "0x40",
     "InheritedSize": "0x30",
-    "ClassSize": "0x20",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "TargetBootyTypes",
-        "Type": "TArray<Class>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "TargetCompanies",
+        "Name": "TargetAIClasses",
         "Type": "TArray<class Class*>",
         "Size": "0x10",
-        "Offset": "0x40"
+        "Offset": "0x30"
       }
     ]
   },
@@ -196,17 +190,23 @@
       }
     ]
   },
-  "KillActorChecklistActionData": {
+  "DeliverBootyChecklistActionData": {
     "Super": "ChecklistActionData",
-    "FullSize": "0x40",
+    "FullSize": "0x50",
     "InheritedSize": "0x30",
-    "ClassSize": "0x10",
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "TargetAIClasses",
-        "Type": "TArray<class Class*>",
+        "Name": "TargetBootyTypes",
+        "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0x30"
+      },
+      {
+        "Name": "TargetCompanies",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x40"
       }
     ]
   },

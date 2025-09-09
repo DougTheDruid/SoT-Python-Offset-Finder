@@ -7,23 +7,7 @@
 struct OnEndCrouchEvent
 {
 public:
-	char                                                         pad0x1_E8V3W[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct OnStartCrouchEvent
-{
-public:
-	char                                                         pad0x1_O5KFY[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x48
-struct CrouchActionStateConstructionInfo
-{
-public:
-	char                                                         pad0x48_88KPI[0x48];                               // 0x0(0x48)
+	char                                                         pad0x1_RWEIS[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -35,11 +19,11 @@ public:
 };
 
 
-// Size 0x10
-struct CrouchTransitionTelemetry
+// Size 0x8
+struct OnStartCrouchAudioEvent
 {
 public:
-	struct FString                                               FailReason;                                        // 0x0(0x10)
+	class WwiseEvent*                                            CrouchStart;                                       // 0x0(0x8)
 };
 
 
@@ -52,15 +36,7 @@ public:
 	struct FString                                               NearestIsland;                                     // 0x18(0x10)
 	struct Guid                                                  CrouchingId;                                       // 0x28(0x10)
 	bool                                                         IsCrouching;                                       // 0x38(0x1)
-	char                                                         pad0x7_I5VL7[0x7];                                 // 0x39(0x7)
-};
-
-
-// Size 0x8
-struct OnStartCrouchAudioEvent
-{
-public:
-	class WwiseEvent*                                            CrouchStart;                                       // 0x0(0x8)
+	char                                                         pad0x7_O2SQH[0x7];                                 // 0x39(0x7)
 };
 
 
@@ -69,6 +45,30 @@ struct OnEndCrouchAudioEvent
 {
 public:
 	class WwiseEvent*                                            CrouchEnd;                                         // 0x0(0x8)
+};
+
+
+// Size 0x48
+struct CrouchActionStateConstructionInfo
+{
+public:
+	char                                                         pad0x48_FWIVD[0x48];                               // 0x0(0x48)
+};
+
+
+// Size 0x10
+struct CrouchTransitionTelemetry
+{
+public:
+	struct FString                                               FailReason;                                        // 0x0(0x10)
+};
+
+
+// Size 0x1
+struct OnStartCrouchEvent
+{
+public:
+	char                                                         pad0x1_BVEU6[0x1];                                 // 0x0(0x1)
 };
 
 

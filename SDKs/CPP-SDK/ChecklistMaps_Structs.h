@@ -4,12 +4,39 @@
 // https://github.com/DougTheDruid
 
 // Size 0x50
+struct ChecklistItem
+{
+public:
+	struct FText                                                 Description;                                       // 0x0(0x38)
+	int                                                          NumRequiredActionCompletions;                      // 0x38(0x4)
+	char                                                         pad0x4_MTMPZ[0x4];                                 // 0x3c(0x4)
+	TArray<class ChecklistActionData*>                           ActionData;                                        // 0x40(0x10)
+};
+
+
+// Size 0x8
+struct ChecklistCompletionEvent
+{
+public:
+	class ChecklistActionData*                                   ActionData;                                        // 0x0(0x8)
+};
+
+
+// Size 0x1
+struct CompleteEntireChecklistEvent
+{
+public:
+	char                                                         pad0x1_V19VS[0x1];                                 // 0x0(0x1)
+};
+
+
+// Size 0x50
 struct ChecklistMapItemData
 {
 public:
 	struct TreasureMapTextDesc                                   Description;                                       // 0x0(0x48)
 	bool                                                         IsComplete;                                        // 0x48(0x1)
-	char                                                         pad0x7_39X21[0x7];                                 // 0x49(0x7)
+	char                                                         pad0x7_WOYVE[0x7];                                 // 0x49(0x7)
 };
 
 
@@ -22,41 +49,14 @@ public:
 };
 
 
-// Size 0x1
-struct CompleteEntireChecklistEvent
-{
-public:
-	char                                                         pad0x1_X3HE5[0x1];                                 // 0x0(0x1)
-};
-
-
 // Size 0x28
 struct ChecklistItemCompletedTelemetryEvent
 {
 public:
 	struct Guid                                                  ChecklistMapId;                                    // 0x0(0x10)
 	char                                                         ReceivedActionType;                                // 0x10(0x1)
-	char                                                         pad0x7_8ETHO[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_YZY1D[0x7];                                 // 0x11(0x7)
 	struct FString                                               ActionDescryption;                                 // 0x18(0x10)
-};
-
-
-// Size 0x8
-struct ChecklistCompletionEvent
-{
-public:
-	class ChecklistActionData*                                   ActionData;                                        // 0x0(0x8)
-};
-
-
-// Size 0x50
-struct ChecklistItem
-{
-public:
-	struct FText                                                 Description;                                       // 0x0(0x38)
-	int                                                          NumRequiredActionCompletions;                      // 0x38(0x4)
-	char                                                         pad0x4_J25FX[0x4];                                 // 0x3c(0x4)
-	TArray<class ChecklistActionData*>                           ActionData;                                        // 0x40(0x10)
 };
 
 

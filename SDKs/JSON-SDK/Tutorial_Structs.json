@@ -1,124 +1,4 @@
 {
-  "BeachNPCSpawnFlowNetworkEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x18_1NZF3[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "HasTaleCheckpointVoyage",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x7_5PITC[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x19"
-      }
-    ]
-  },
-  "HasTutorialStarterBegunCondition": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x28_MOW18[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TutorialStarterType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x7_P86S7[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x29"
-      }
-    ]
-  },
-  "ContextualTutorialPromptDesc": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "pad0x20_1FVA7[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AccessKey",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "Feature",
-        "Type": "struct FeatureFlag",
-        "Size": "0xc",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "MustBeUnderCount",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x34"
-      }
-    ]
-  },
-  "IntroductionToSOTIntroAnimatic": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "ShipSize",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "IntroAnimationSettings",
-        "Type": "struct FirstPersonAnimaticSettings",
-        "Size": "0x2c",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x4_2BP6H[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x34"
-      }
-    ]
-  },
-  "TutorialShowTutorialLegendaryTavernStrangerEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_2L0KW[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventTutorialTypeDecided": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "TutorialType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "TutorialStepEndedTelemetryEvent": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -147,10 +27,130 @@
         "Offset": "0x21"
       },
       {
-        "Name": "pad0x6_QIKV8[0x6]",
+        "Name": "pad0x6_KC4H1[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x22"
+      }
+    ]
+  },
+  "BeachNPCSpawnFlowNetworkEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x18_CZM76[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "HasTaleCheckpointVoyage",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x7_BPGB6[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x19"
+      }
+    ]
+  },
+  "EventTutorialTypeDecided": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "TutorialType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "HasTutorialStarterBegunCondition": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x28_MPNPR[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TutorialStarterType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x7_QW8L2[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x29"
+      }
+    ]
+  },
+  "ContextualTutorialPromptDesc": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "pad0x20_DG6ET[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AccessKey",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "Feature",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "MustBeUnderCount",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x34"
+      }
+    ]
+  },
+  "TutorialShowTutorialLegendaryTavernStrangerEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_XTOXM[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "IntroductionToSOTIntroAnimatic": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "ShipSize",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "IntroAnimationSettings",
+        "Type": "struct FirstPersonAnimaticSettings",
+        "Size": "0x2c",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_IC4PD[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
       }
     ]
   },

@@ -43,7 +43,7 @@ AncientTinySharkSpawnParams:
     Offset: '0x0'
     Size: '0xc'
     Type: struct FeatureFlag
-  - Name: pad0x4_62WGE[0x4]
+  - Name: pad0x4_EDMVP[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -55,7 +55,7 @@ AncientTinySharkSpawnParams:
     Offset: '0x18'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_ROVJG[0x4]
+  - Name: pad0x4_N3IS0[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char

@@ -13,6 +13,14 @@ public:
 };
 
 
+// Size 0x1
+struct SirenPuzzleCompleteEvent
+{
+public:
+	char                                                         pad0x1_IFV35[0x1];                                 // 0x0(0x1)
+};
+
+
 // Size 0x78
 struct AbandonedNoteWeightedTextEntry
 {
@@ -20,15 +28,7 @@ public:
 	struct FText                                                 Title;                                             // 0x0(0x38)
 	struct FText                                                 Body;                                              // 0x38(0x38)
 	float                                                        Weight;                                            // 0x70(0x4)
-	char                                                         pad0x4_WC63M[0x4];                                 // 0x74(0x4)
-};
-
-
-// Size 0x1
-struct SirenPuzzleCompleteEvent
-{
-public:
-	char                                                         pad0x1_S9YFW[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x4_RS4FX[0x4];                                 // 0x74(0x4)
 };
 
 

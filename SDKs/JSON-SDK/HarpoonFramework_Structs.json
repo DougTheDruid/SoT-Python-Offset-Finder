@@ -1,15 +1,4 @@
 {
-  "PortableHarpoonTelemetryTemporaryData": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "pad0x14_PX99T[0x14]",
-        "Type": "char",
-        "Size": "0x14",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "EventPortableHarpoonHarpoonedItem": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -18,6 +7,76 @@
         "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "EventPortableHarpoonProjectileClientStateChanged": {
+    "ClassSize": "0x3",
+    "Attributes": [
+      {
+        "Name": "PreviousProjectileState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ProjectileState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "IsPredicted",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x2"
+      }
+    ]
+  },
+  "EventPortableHarpoonProjectileImpact": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "HitActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "LocationIsRelative",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_QCWKM[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
+      },
+      {
+        "Name": "RelativeComponent",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "HitLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "HitNormal",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "HitMaterial",
+        "Type": "class PhysicalMaterial*",
+        "Size": "0x8",
+        "Offset": "0x30"
       }
     ]
   },
@@ -48,7 +107,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_VQ5R2[0x7]",
+        "Name": "pad0x7_L53R1[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
@@ -108,7 +167,7 @@
         "Offset": "0x4d"
       },
       {
-        "Name": "pad0x2_PNVTZ[0x2]",
+        "Name": "pad0x2_KCE7E[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x4e"
@@ -144,7 +203,7 @@
         "Offset": "0x84"
       },
       {
-        "Name": "pad0x3_12Q6A[0x3]",
+        "Name": "pad0x3_YK8X6[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x85"
@@ -174,80 +233,21 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x7_PC1FM[0x7]",
+        "Name": "pad0x7_7NKE5[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xb9"
       }
     ]
   },
-  "EventPortableHarpoonProjectileImpact": {
-    "ClassSize": "0x38",
+  "PortableHarpoonTelemetryTemporaryData": {
+    "ClassSize": "0x14",
     "Attributes": [
       {
-        "Name": "HitActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "LocationIsRelative",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x7_YN6RB[0x7]",
+        "Name": "pad0x14_ZQX0T[0x14]",
         "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x9"
-      },
-      {
-        "Name": "RelativeComponent",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "HitLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "HitNormal",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x24"
-      },
-      {
-        "Name": "HitMaterial",
-        "Type": "class PhysicalMaterial*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "EventPortableHarpoonProjectileClientStateChanged": {
-    "ClassSize": "0x3",
-    "Attributes": [
-      {
-        "Name": "PreviousProjectileState",
-        "Type": "byte",
-        "Size": "0x1",
+        "Size": "0x14",
         "Offset": "0x0"
-      },
-      {
-        "Name": "ProjectileState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "IsPredicted",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x2"
       }
     ]
   },

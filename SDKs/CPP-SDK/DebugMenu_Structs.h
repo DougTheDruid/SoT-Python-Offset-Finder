@@ -13,7 +13,7 @@ public:
 	bool                                                         CloseMenuWhenExecuted;                             // 0x30(0x1)
 	bool                                                         AvailableInShippingBuilds;                         // 0x31(0x1)
 	bool                                                         AddToCommonlyUsedMenu;                             // 0x32(0x1)
-	char                                                         pad0x5_I8O8Y[0x5];                                 // 0x33(0x5)
+	char                                                         pad0x5_HM0EU[0x5];                                 // 0x33(0x5)
 };
 
 
@@ -26,15 +26,6 @@ public:
 };
 
 
-// Size 0x20
-struct DebugMenuOptionExecutedEvent
-{
-public:
-	struct FString                                               DebugMenuItemName;                                 // 0x0(0x10)
-	struct FString                                               ConsoleCommand;                                    // 0x10(0x10)
-};
-
-
 // Size 0x40
 struct DebugMenuButtonShortcut
 {
@@ -44,7 +35,7 @@ public:
 	TArray<struct Key>                                           Buttons;                                           // 0x20(0x10)
 	float                                                        RequiredHoldTime;                                  // 0x30(0x4)
 	bool                                                         AvailableInShippingBuilds;                         // 0x34(0x1)
-	char                                                         pad0xb_RE56H[0xb];                                 // 0x35(0xb)
+	char                                                         pad0xb_ACR7Y[0xb];                                 // 0x35(0xb)
 };
 
 
@@ -52,7 +43,7 @@ public:
 struct DebugErrorHappeningEvent
 {
 public:
-	char                                                         pad0x1_NRR84[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_NQOOJ[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -67,8 +58,17 @@ public:
 	int                                                          NumOnPage;                                         // 0x10(0x4)
 	bool                                                         HasNext;                                           // 0x14(0x1)
 	bool                                                         HasPrevious;                                       // 0x15(0x1)
-	char                                                         pad0x2_1KLJU[0x2];                                 // 0x16(0x2)
+	char                                                         pad0x2_UKNQE[0x2];                                 // 0x16(0x2)
 	int                                                          TotalEntries;                                      // 0x18(0x4)
+};
+
+
+// Size 0x20
+struct DebugMenuOptionExecutedEvent
+{
+public:
+	struct FString                                               DebugMenuItemName;                                 // 0x0(0x10)
+	struct FString                                               ConsoleCommand;                                    // 0x10(0x10)
 };
 
 

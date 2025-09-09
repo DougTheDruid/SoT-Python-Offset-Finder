@@ -10,17 +10,6 @@
       }
     ]
   },
-  "EventPlayerPawnLeavingGame": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_61CDI[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "PlayerItemCategorySnapshots": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -35,6 +24,17 @@
         "Type": "TArray<struct ItemSnapshot>",
         "Size": "0x10",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "EventPlayerPawnLeavingGame": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_LIFQN[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },

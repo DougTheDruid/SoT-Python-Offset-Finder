@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 MigrationControlChannel:
   Attributes:
-  - Name: pad0x48_ONUJW[0x48]
+  - Name: pad0x48_XCDNU[0x48]
     Offset: '0x68'
     Size: '0x48'
     Type: char
@@ -82,7 +82,7 @@ ServerMigrationSerialisationDetailsTestsActorWithNetActorPtr:
     Offset: '0x3a0'
     Size: '0x14'
     Type: struct NetActorPtr
-  - Name: pad0x4_TRE0Q[0x4]
+  - Name: pad0x4_0EPTN[0x4]
     Offset: '0x3b4'
     Size: '0x4'
     Type: char
@@ -146,7 +146,7 @@ ServerMigrationSerialisationDetailsTestsMigratableDefaultComponentActor:
   Super: Actor
 ServerMigrationSerialisationDetailsTestsMigrationActorCallsOrderingTestActor:
   Attributes:
-  - Name: pad0x8_7JIOD[0x8]
+  - Name: pad0x8_UA1CX[0x8]
     Offset: '0x3a0'
     Size: '0x8'
     Type: char
@@ -176,7 +176,7 @@ ServerMigrationSerialisationDetailsTestsMigrationCustomSerialiseActor:
     Offset: '0x3a0'
     Size: '0x4'
     Type: struct ServerMigrationCustomMigrationSerialisationStruct
-  - Name: pad0x4_RX9CS[0x4]
+  - Name: pad0x4_V8D2B[0x4]
     Offset: '0x3a4'
     Size: '0x4'
     Type: char
@@ -206,7 +206,7 @@ ServerMigrationSerialisationDetailsTestsMigrationReferenceActor:
     Offset: '0x3a0'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x8_4W2PS[0x8]
+  - Name: pad0x8_6DVR9[0x8]
     Offset: '0x3a8'
     Size: '0x8'
     Type: char
@@ -224,7 +224,7 @@ ServerMigrationSerialisationDetailsTestsPropertyMarkup:
     Offset: '0x2c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_DKZ0X[0x3]
+  - Name: pad0x3_13PE9[0x3]
     Offset: '0x2d'
     Size: '0x3'
     Type: char
@@ -236,7 +236,7 @@ ServerMigrationSerialisationDetailsTestsPropertyMarkup:
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_1KC1J[0x4]
+  - Name: pad0x4_MN3W3[0x4]
     Offset: '0x44'
     Size: '0x4'
     Type: char
@@ -260,7 +260,7 @@ ServerMigrationSerialisationDetailsTestsUStructProperty:
     Offset: '0x28'
     Size: '0xc'
     Type: struct ServerMigrationSerialisationDetailsTestsUStruct
-  - Name: pad0x4_02L4G[0x4]
+  - Name: pad0x4_D5SBJ[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
@@ -274,7 +274,7 @@ ServerMigrationSettings:
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_0B6ET[0x4]
+  - Name: pad0x4_Y7V3C[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -294,7 +294,7 @@ ServerMigrationSettings:
     Offset: '0x48'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_I9D5O[0x4]
+  - Name: pad0x4_4ARMP[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -306,20 +306,28 @@ ServerMigrationSettings:
     Offset: '0x60'
     Size: '0x4'
     Type: float
-  - Name: WaitForClientActorRemappingTimeoutLength
+  - Name: MigrationTimeoutSeconds
     Offset: '0x64'
     Size: '0x4'
     Type: float
-  - Name: WaitForTransferOwnershipAcknowledgementTimeoutLength
+  - Name: WaitForClientActorRemappingTimeoutLength
     Offset: '0x68'
     Size: '0x4'
     Type: float
-  - Name: DeserialisationTimeSliceLength
+  - Name: WaitForTransferOwnershipAcknowledgementTimeoutLength
     Offset: '0x6c'
     Size: '0x4'
     Type: float
-  ClassSize: '0x48'
-  FullSize: '0x70'
+  - Name: DeserialisationTimeSliceLength
+    Offset: '0x70'
+    Size: '0x4'
+    Type: float
+  - Name: pad0x4_MXF1N[0x4]
+    Offset: '0x74'
+    Size: '0x4'
+    Type: char
+  ClassSize: '0x50'
+  FullSize: '0x78'
   InheritedSize: '0x28'
   Super: Object
 TestActorWithUObjectProperty:

@@ -13,6 +13,15 @@ public:
 };
 
 
+// Size 0x28 (Full Size[0x2d0] - InheritedSize[0x2a8]
+class ActorSequence: public MovieSceneSequence
+{
+public:
+	class MovieScene*                                            MovieScene;                                        // 0x2a8(0x8)
+	struct ActorSequenceObjectReferenceMap                       ObjectReferences;                                  // 0x2b0(0x20)
+};
+
+
 // Size 0x40 (Full Size[0xf8] - InheritedSize[0xb8]
 class ActorSequenceComponent: public ActorComponent
 {
@@ -21,16 +30,7 @@ public:
 	class ActorSequence*                                         Sequence;                                          // 0xe0(0x8)
 	class ActorSequencePlayer*                                   SequencePlayer;                                    // 0xe8(0x8)
 	bool                                                         bAutoPlay;                                         // 0xf0(0x1)
-	char                                                         pad0x7_T6OB6[0x7];                                 // 0xf1(0x7)
-};
-
-
-// Size 0x28 (Full Size[0x2d0] - InheritedSize[0x2a8]
-class ActorSequence: public MovieSceneSequence
-{
-public:
-	class MovieScene*                                            MovieScene;                                        // 0x2a8(0x8)
-	struct ActorSequenceObjectReferenceMap                       ObjectReferences;                                  // 0x2b0(0x20)
+	char                                                         pad0x7_04DQO[0x7];                                 // 0xf1(0x7)
 };
 
 

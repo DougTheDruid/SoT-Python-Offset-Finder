@@ -16,6 +16,29 @@
       }
     ]
   },
+  "StoryDrivenAudioPortalSetting": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Story",
+        "Type": "struct StoryFlag",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AudioInsideSpace",
+        "Type": "class AudioSpaceDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "AudioOutsideSpace",
+        "Type": "class AudioSpaceDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "AthenaAudioBootflowEvents": {
     "ClassSize": "0x80",
     "Attributes": [
@@ -66,29 +89,6 @@
         "Type": "TArray<class WwiseEvent*>",
         "Size": "0x10",
         "Offset": "0x70"
-      }
-    ]
-  },
-  "StoryDrivenAudioPortalSetting": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Story",
-        "Type": "struct StoryFlag",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AudioInsideSpace",
-        "Type": "class AudioSpaceDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "AudioOutsideSpace",
-        "Type": "class AudioSpaceDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x10"
       }
     ]
   },

@@ -1,4 +1,15 @@
 {
+  "ServerMigrationCustomMigrationSerialisationStruct": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "pad0x4_1BNK1[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "ServerMigrationSerialisationDetailsTestsUStruct": {
     "ClassSize": "0xc",
     "Attributes": [
@@ -9,7 +20,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x8_X96J1[0x8]",
+        "Name": "pad0x8_6OF3Z[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x4"
@@ -30,17 +41,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x1"
-      }
-    ]
-  },
-  "ServerMigrationCustomMigrationSerialisationStruct": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "pad0x4_JNSJI[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x0"
       }
     ]
   },
@@ -66,7 +66,7 @@
         "Offset": "0x2"
       },
       {
-        "Name": "pad0x1_BITSR[0x1]",
+        "Name": "pad0x1_H1BJ4[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x3"

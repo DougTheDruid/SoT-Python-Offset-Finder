@@ -1,4 +1,15 @@
 {
+  "StatusVFXChangedEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "HasSource",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "StatusAudioChangedEvent": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -15,21 +26,10 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x7_FL2CP[0x7]",
+        "Name": "pad0x7_I3LF7[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x21"
-      }
-    ]
-  },
-  "StatusVFXChangedEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "HasSource",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
       }
     ]
   },

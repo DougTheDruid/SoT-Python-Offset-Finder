@@ -13,31 +13,6 @@ public:
 
 
 // Size 0x18
-struct WwiseEventParam
-{
-public:
-	char                                                         pad0x8_SKHW3[0x8];                                 // 0x0(0x8)
-	struct FName                                                 SourcePath;                                        // 0x8(0x8)
-	struct FName                                                 SourceObj;                                         // 0x10(0x8)
-};
-
-
-// Size 0x28
-struct ReverbPresetControllerSettings
-{
-public:
-	char                                                         pad0xc_08TVH[0xc];                                 // 0x0(0xc)
-	float                                                        HorizontalConeSegmentElevationAngle;               // 0xc(0x4)
-	float                                                        UpwardsConeAngle;                                  // 0x10(0x4)
-	float                                                        TraceVectorLength;                                 // 0x14(0x4)
-	float                                                        TimeToDiscardSample;                               // 0x18(0x4)
-	float                                                        DistanceToDiscardSample;                           // 0x1c(0x4)
-	float                                                        BiasTowardsVerticalSegment;                        // 0x20(0x4)
-	char                                                         pad0x4_V5Q96[0x4];                                 // 0x24(0x4)
-};
-
-
-// Size 0x18
 struct WwiseNetworkRelationship
 {
 public:
@@ -47,13 +22,47 @@ public:
 };
 
 
+// Size 0x18
+struct WwiseEventParam
+{
+public:
+	char                                                         pad0x8_ZPETS[0x8];                                 // 0x0(0x8)
+	struct FName                                                 SourcePath;                                        // 0x8(0x8)
+	struct FName                                                 SourceObj;                                         // 0x10(0x8)
+};
+
+
 // Size 0x8
 struct WwiseIOPriorityMappingConfig
 {
 public:
 	int                                                          WwisePriority;                                     // 0x0(0x4)
 	char                                                         AsyncIOPriority;                                   // 0x4(0x1)
-	char                                                         pad0x3_DK6YE[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_MXBQ7[0x3];                                 // 0x5(0x3)
+};
+
+
+// Size 0x28
+struct ReverbPresetControllerSettings
+{
+public:
+	char                                                         pad0xc_8FK6O[0xc];                                 // 0x0(0xc)
+	float                                                        HorizontalConeSegmentElevationAngle;               // 0xc(0x4)
+	float                                                        UpwardsConeAngle;                                  // 0x10(0x4)
+	float                                                        TraceVectorLength;                                 // 0x14(0x4)
+	float                                                        TimeToDiscardSample;                               // 0x18(0x4)
+	float                                                        DistanceToDiscardSample;                           // 0x1c(0x4)
+	float                                                        BiasTowardsVerticalSegment;                        // 0x20(0x4)
+	char                                                         pad0x4_NYDCD[0x4];                                 // 0x24(0x4)
+};
+
+
+// Size 0x20
+struct WwisePlatformMappings
+{
+public:
+	struct FString                                               DefaultWwisePlatform;                              // 0x0(0x10)
+	TArray<struct WwisePlatformMapping>                          Mappings;                                          // 0x10(0x10)
 };
 
 
@@ -68,19 +77,10 @@ public:
 	struct FName                                                 MaterialThicknessRTPCName;                         // 0x20(0x8)
 	struct FName                                                 MaterialReflectivityRTPCName;                      // 0x28(0x8)
 	char                                                         EnvironmentTraceChannel;                           // 0x30(0x1)
-	char                                                         pad0x3_K5190[0x3];                                 // 0x31(0x3)
+	char                                                         pad0x3_RP9IN[0x3];                                 // 0x31(0x3)
 	float                                                        MinSpaceSizeWindowForEarlyReflections;             // 0x34(0x4)
 	float                                                        MaxSpaceSizeWindowforEarlyReflections;             // 0x38(0x4)
 	struct ReverbPresetControllerSettings                        SamplingSettings;                                  // 0x3c(0x28)
-};
-
-
-// Size 0x20
-struct WwisePlatformMappings
-{
-public:
-	struct FString                                               DefaultWwisePlatform;                              // 0x0(0x10)
-	TArray<struct WwisePlatformMapping>                          Mappings;                                          // 0x10(0x10)
 };
 
 

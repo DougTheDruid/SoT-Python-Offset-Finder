@@ -9,75 +9,7 @@ struct OnIncreasingNumberOfKilledBoarsOnIsland
 public:
 	struct FName                                                 IslandName;                                        // 0x0(0x8)
 	bool                                                         IsAlphaKilled;                                     // 0x10(0x1)
-	char                                                         pad0x3_NT9Z2[0x3];                                 // 0x11(0x3)
-};
-
-
-// Size 0x8
-struct BoarWallowEmergentSpawnIslandSelectedTelemetryEvent
-{
-public:
-	struct FName                                                 SelectedIsland;                                    // 0x0(0x8)
-};
-
-
-// Size 0x8
-struct OnIncreasingNumberOfTotalLootItems
-{
-public:
-	struct FName                                                 IslandName;                                        // 0x0(0x8)
-};
-
-
-// Size 0x18
-struct OnBoarVoyageCompleted
-{
-public:
-	struct Guid                                                  VoyageOwningCrewID;                                // 0x0(0x10)
-	struct FName                                                 IslandName;                                        // 0x10(0x8)
-};
-
-
-// Size 0xc
-struct OnLootHoleSpawned
-{
-public:
-	struct Vector                                                Location;                                          // 0x0(0xc)
-};
-
-
-// Size 0x10
-struct VoyageBoarWallowAndIslandName
-{
-public:
-	char                                                         pad0x10_N0WSQ[0x10];                               // 0x0(0x10)
-};
-
-
-// Size 0x200
-struct OnIncreasingTotalNumberOfSpawnedBoarsOnIsland
-{
-public:
-	struct FName                                                 IslandName;                                        // 0x0(0x8)
-	char                                                         pad0x1f8_WH1PZ[0x1f8];                             // 0x8(0x1f8)
-};
-
-
-// Size 0x8
-struct OnIncreasingTotalDugUpLootItems
-{
-public:
-	struct FName                                                 IslandName;                                        // 0x0(0x8)
-};
-
-
-// Size 0x18
-struct OnBoarKilled
-{
-public:
-	struct Vector                                                Location;                                          // 0x0(0xc)
-	bool                                                         IsAlphaKilled;                                     // 0x14(0x1)
-	char                                                         pad0x3_4NVRI[0x3];                                 // 0x15(0x3)
+	char                                                         pad0x3_3CWO5[0x3];                                 // 0x11(0x3)
 };
 
 
@@ -89,30 +21,71 @@ public:
 };
 
 
+// Size 0x200
+struct OnIncreasingTotalNumberOfSpawnedBoarsOnIsland
+{
+public:
+	struct FName                                                 IslandName;                                        // 0x0(0x8)
+	char                                                         pad0x1f8_BBN5F[0x1f8];                             // 0x8(0x1f8)
+};
+
+
+// Size 0x8
+struct OnIncreasingNumberOfTotalLootItems
+{
+public:
+	struct FName                                                 IslandName;                                        // 0x0(0x8)
+};
+
+
+// Size 0x8
+struct BoarWallowEmergentSpawnIslandSelectedTelemetryEvent
+{
+public:
+	struct FName                                                 SelectedIsland;                                    // 0x0(0x8)
+};
+
+
 // Size 0x208
 struct OnBoarSpawned
 {
 public:
 	struct Vector                                                Location;                                          // 0x0(0xc)
-	char                                                         pad0x1fc_V2ASK[0x1fc];                             // 0xc(0x1fc)
+	char                                                         pad0x1fc_WGFKF[0x1fc];                             // 0xc(0x1fc)
 };
 
 
 // Size 0x10
-struct OnCrewReachingVoyageBoarIsland
+struct VoyageBoarWallowAndIslandName
 {
 public:
-	struct Guid                                                  VoyageOwningCrewID;                                // 0x0(0x10)
+	char                                                         pad0x10_D4LPK[0x10];                               // 0x0(0x10)
 };
 
 
-// Size 0x20
-struct OnBoarVoyageWallowSpawned
+// Size 0x18
+struct OnBoarKilled
+{
+public:
+	struct Vector                                                Location;                                          // 0x0(0xc)
+	bool                                                         IsAlphaKilled;                                     // 0x14(0x1)
+	char                                                         pad0x3_4ATL4[0x3];                                 // 0x15(0x3)
+};
+
+
+// Size 0x8
+struct OnIncreasingTotalDugUpLootItems
 {
 public:
 	struct FName                                                 IslandName;                                        // 0x0(0x8)
-	struct Guid                                                  VoyageOwningCrewID;                                // 0x8(0x10)
-	char                                                         pad0x8_JLTCC[0x8];                                 // 0x18(0x8)
+};
+
+
+// Size 0xc
+struct OnLootHoleTreasureExhumed
+{
+public:
+	struct Vector                                                Location;                                          // 0x0(0xc)
 };
 
 
@@ -132,6 +105,14 @@ public:
 };
 
 
+// Size 0xc
+struct OnLootHoleSpawned
+{
+public:
+	struct Vector                                                Location;                                          // 0x0(0xc)
+};
+
+
 // Size 0x18
 struct OnBoarVoyageStarted
 {
@@ -141,11 +122,30 @@ public:
 };
 
 
-// Size 0xc
-struct OnLootHoleTreasureExhumed
+// Size 0x20
+struct OnBoarVoyageWallowSpawned
 {
 public:
-	struct Vector                                                Location;                                          // 0x0(0xc)
+	struct FName                                                 IslandName;                                        // 0x0(0x8)
+	struct Guid                                                  VoyageOwningCrewID;                                // 0x8(0x10)
+	char                                                         pad0x8_WVR92[0x8];                                 // 0x18(0x8)
+};
+
+
+// Size 0x18
+struct OnBoarVoyageCompleted
+{
+public:
+	struct Guid                                                  VoyageOwningCrewID;                                // 0x0(0x10)
+	struct FName                                                 IslandName;                                        // 0x10(0x8)
+};
+
+
+// Size 0x10
+struct OnCrewReachingVoyageBoarIsland
+{
+public:
+	struct Guid                                                  VoyageOwningCrewID;                                // 0x0(0x10)
 };
 
 

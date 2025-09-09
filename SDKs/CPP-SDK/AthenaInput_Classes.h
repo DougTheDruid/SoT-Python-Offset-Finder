@@ -4,17 +4,18 @@
 // https://github.com/DougTheDruid
 
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class AnalogInputId: public Object
+class NotificationInputId: public Object
 {
 public:
-	char                                                         pad0x10_BGRIO[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_FQTUJ[0x10];                               // 0x28(0x10)
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ReceivesInputInterface: public Interface
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class AnalogInputId: public Object
 {
 public:
+	char                                                         pad0x10_6MX1I[0x10];                               // 0x28(0x10)
 };
 
 
@@ -22,15 +23,14 @@ public:
 class NPCReceivesInputIndicatorComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_NR2OU[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_BFR9U[0x8];                                 // 0xb8(0x8)
 };
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class NotificationInputId: public Object
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ReceivesInputInterface: public Interface
 {
 public:
-	char                                                         pad0x10_J0ZX9[0x10];                               // 0x28(0x10)
 };
 
 

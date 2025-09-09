@@ -2,12 +2,12 @@
 # https://github.com/DougTheDruid
 SmugglersRunService:
   Attributes:
-  - Name: pad0x58_49C95[0x58]
+  - Name: pad0x288_1SY4N[0x288]
     Offset: '0x3a0'
-    Size: '0x58'
+    Size: '0x288'
     Type: char
-  ClassSize: '0x58'
-  FullSize: '0x3f8'
+  ClassSize: '0x288'
+  FullSize: '0x628'
   InheritedSize: '0x3a0'
   Super: Actor
 SmugglersRunServiceInterface:

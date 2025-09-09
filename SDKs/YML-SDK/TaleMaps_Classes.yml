@@ -22,7 +22,7 @@ AddMarkToTornMapAtLocationStepDesc:
   Super: AddMarkToTornMapStepDescBase
 AddMarkToTornMapStep:
   Attributes:
-  - Name: pad0x20_X28LB[0x20]
+  - Name: pad0x20_0GU6J[0x20]
     Offset: '0x98'
     Size: '0x20'
     Type: char
@@ -50,7 +50,7 @@ AddMarkToTornMapStepDescBase:
   Super: TaleQuestStepDesc
 GetNumberOfCollectedTornMapPiecesStep:
   Attributes:
-  - Name: pad0x40_JU96B[0x40]
+  - Name: pad0x40_P4H5M[0x40]
     Offset: '0x98'
     Size: '0x40'
     Type: char
@@ -82,7 +82,7 @@ RegionIslandFilteredSelectionStrategy:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_GGBP9[0x3]
+  - Name: pad0x3_XF532[0x3]
     Offset: '0x39'
     Size: '0x3'
     Type: char
@@ -116,7 +116,7 @@ RegionIslandWayfinderSelectionStrategy:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_ZKCYS[0x3]
+  - Name: pad0x3_WL5WJ[0x3]
     Offset: '0x39'
     Size: '0x3'
     Type: char
@@ -142,7 +142,7 @@ SelectIslandsFromRegionStep:
     Offset: '0xa0'
     Size: '0x8'
     Type: class RegionIslandSelectionStrategyBase*
-  - Name: pad0x50_S6OVQ[0x50]
+  - Name: pad0x50_4HS7M[0x50]
     Offset: '0xa8'
     Size: '0x50'
     Type: char
@@ -198,7 +198,7 @@ SelectWayfinderIslandsFromRegionStep:
     Offset: '0xa8'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x80_SOSFJ[0x80]
+  - Name: pad0x80_C2FZ7[0x80]
     Offset: '0xb0'
     Size: '0x80'
     Type: char
@@ -250,7 +250,7 @@ SelectWayfinderIslandsFromRegionStepDesc:
   Super: TaleQuestStepDesc
 TaleQuestAddLocationMapStep:
   Attributes:
-  - Name: pad0xc0_80PMV[0xc0]
+  - Name: pad0xc0_P4PA2[0xc0]
     Offset: '0x98'
     Size: '0xc0'
     Type: char
@@ -286,7 +286,7 @@ TaleQuestAddLocationMapStepDesc:
   Super: TaleQuestMapStepDescBase
 TaleQuestAddTornMapStep:
   Attributes:
-  - Name: pad0xd8_VN2PC[0xd8]
+  - Name: pad0xd8_IMGU1[0xd8]
     Offset: '0x98'
     Size: '0xd8'
     Type: char
@@ -318,7 +318,7 @@ TaleQuestAddTornMapStepDesc:
   Super: TaleQuestMapStepDescBase
 TaleQuestAddTradeRouteMapStep:
   Attributes:
-  - Name: pad0x90_IW43C[0x90]
+  - Name: pad0x90_WPUY6[0x90]
     Offset: '0x98'
     Size: '0x90'
     Type: char
@@ -354,7 +354,7 @@ TaleQuestCustomMapFunctionLibrary:
     Offset: '0x180'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1f_HYF51[0x1f]
+  - Name: pad0x1f_RZ5J5[0x1f]
     Offset: '0x181'
     Size: '0x1f'
     Type: char
@@ -364,7 +364,7 @@ TaleQuestCustomMapFunctionLibrary:
   Super: TaleQuestFunctionStepLibrary
 TaleQuestLocationMapChestFoundStep:
   Attributes:
-  - Name: pad0x8_GI6LT[0x8]
+  - Name: pad0x8_YSEON[0x8]
     Offset: '0x98'
     Size: '0x8'
     Type: char
@@ -412,7 +412,7 @@ TaleQuestTriggerNamedChecklistEventStepDesc:
   Super: TaleQuestStepDesc
 TaleQuestWaitForChecklistMapCompletionStep:
   Attributes:
-  - Name: pad0x8_S7K2A[0x8]
+  - Name: pad0x8_RZFME[0x8]
     Offset: '0x98'
     Size: '0x8'
     Type: char

@@ -1,132 +1,12 @@
 {
-  "ClientPawnDetails": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Pawns",
-        "Type": "TArray<class Pawn*>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CollectionAnimSequenceLimits": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "MaxMemory",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "CollectionSkeleMeshLimits": {
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_FAMIB[0x8]",
+        "Name": "pad0x8_FB2A7[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "AssetAuditConstantEntry": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Name",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Value",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x4_KPT19[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x14"
-      }
-    ]
-  },
-  "TestLevelMetadataEntry": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Property",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Value",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "TextureAuditorProperties": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "RequiredMipsSetting",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x7_VWVOS[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "AllowedTextureFormats",
-        "Type": "TArray<char>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x8_BUR4P[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "FolderTotals": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "EnforceCollectionMembership",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x7_ITR2H[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "CollectionsAllowedForFolder",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "AssetTypesToTest",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x18"
       }
     ]
   },
@@ -144,29 +24,6 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x4"
-      }
-    ]
-  },
-  "SubstringAuditQueryData": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "QueryStringArray",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SearchSetSize",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "MemoryLimitForSet",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x14"
       }
     ]
   },
@@ -203,10 +60,176 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_CNW0P[0x8]",
+        "Name": "pad0x8_VVZGA[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "AssetAuditConstantEntry": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Name",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Value",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_A2GMU[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "TextureAuditorProperties": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "RequiredMipsSetting",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_HUXVH[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "AllowedTextureFormats",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x8_JYJIP[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "FolderTotals": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "EnforceCollectionMembership",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_W7JIE[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "CollectionsAllowedForFolder",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "AssetTypesToTest",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "TestLevelMetadataEntry": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Property",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Value",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CollectionAnimSequenceLimits": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "MaxMemory",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SubstringAuditQueryData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "QueryStringArray",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SearchSetSize",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "MemoryLimitForSet",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "ClientPawnDetails": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Pawns",
+        "Type": "TArray<class Pawn*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TextureAuditorGroupProperties": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "TextureGroup",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_LJEFU[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "Properties",
+        "Type": "struct TextureAuditorProperties",
+        "Size": "0x20",
+        "Offset": "0x8"
       }
     ]
   },
@@ -255,7 +278,7 @@
         "Offset": "0xa"
       },
       {
-        "Name": "pad0x1_MT2F7[0x1]",
+        "Name": "pad0x1_0PST1[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0xb"
@@ -297,33 +320,10 @@
         "Offset": "0x31"
       },
       {
-        "Name": "pad0x2_UD6YA[0x2]",
+        "Name": "pad0x2_9QLQY[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x32"
-      }
-    ]
-  },
-  "TextureAuditorGroupProperties": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "TextureGroup",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x7_KZMQ0[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "Properties",
-        "Type": "struct TextureAuditorProperties",
-        "Size": "0x20",
-        "Offset": "0x8"
       }
     ]
   },

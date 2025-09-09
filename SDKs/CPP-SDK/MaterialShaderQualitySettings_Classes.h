@@ -6,20 +6,20 @@
 #include "MaterialShaderQualitySettings_Structs.h"
 
 
-// Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
-class MaterialShaderQualitySettings: public Object
-{
-public:
-	char                                                         pad0x58_3N29Q[0x58];                               // 0x28(0x58)
-};
-
-
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class ShaderPlatformQualitySettings: public Object
 {
 public:
 	struct MaterialQualityOverrides                              QualityOverrides;                                  // 0x28(0x4)
-	char                                                         pad0xc_1HF0R[0xc];                                 // 0x2c(0xc)
+	char                                                         pad0xc_VYF8B[0xc];                                 // 0x2c(0xc)
+};
+
+
+// Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
+class MaterialShaderQualitySettings: public Object
+{
+public:
+	char                                                         pad0x58_6A0WI[0x58];                               // 0x28(0x58)
 };
 
 

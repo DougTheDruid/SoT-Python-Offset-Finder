@@ -1,71 +1,4 @@
 {
-  "GlitterBeardVFXTransitionCompletedEvent": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "Index",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "FinaleReplicationState": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "State",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x7_77TNR[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "TargetEnsemble",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "GlitterbeardPuzzleCancelTelemetryEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_4DGDZ[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "GlitterbeardPlayerPuzzleUnlockFailureTelemetryEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_19QI9[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "GlitterbeardPlayerPuzzleUnlockSuccessTelemetryEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_02CHV[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "ChangeGlitterBeardVFXStateEvent": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -82,21 +15,10 @@
         "Offset": "0x4"
       },
       {
-        "Name": "pad0x3_Q4M2V[0x3]",
+        "Name": "pad0x3_FBE8C[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x5"
-      }
-    ]
-  },
-  "GlitterbeardSessionEndTelemetryEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_AQLZO[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
       }
     ]
   },
@@ -111,14 +33,37 @@
       }
     ]
   },
-  "GlitterbeardPuzzleUnlockTelemetryEvent": {
+  "GlitterbeardSessionEndTelemetryEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_868B8[0x10]",
+        "Name": "pad0x10_YBQLQ[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "FinaleReplicationState": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "State",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_UDTXY[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "TargetEnsemble",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -126,9 +71,64 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_KVRFK[0x10]",
+        "Name": "pad0x10_HJWCP[0x10]",
         "Type": "char",
         "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GlitterbeardPlayerPuzzleUnlockSuccessTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_62DHT[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GlitterbeardPuzzleUnlockTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_BB12K[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GlitterbeardPlayerPuzzleUnlockFailureTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_TVOZY[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GlitterbeardPuzzleCancelTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_9RMDH[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GlitterBeardVFXTransitionCompletedEvent": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "Index",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x0"
       }
     ]

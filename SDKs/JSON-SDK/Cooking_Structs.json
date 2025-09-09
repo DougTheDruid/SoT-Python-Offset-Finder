@@ -1,77 +1,4 @@
 {
-  "OnPlacedItemInCookingPot": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Interactor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ItemToCook",
-        "Type": "class ItemInfo*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "CookerSmokeFeedbackEntry": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "FeedbackLevel",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x7_X2GWN[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "SmokeVFX",
-        "Type": "class ParticleSystem*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "OnItemStartedCooking": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_F2DCV[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "OnItemStoppedCooking": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_FEXWK[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CookingInfo": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "pad0xc_0Y14O[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "CookingClientRepresentation": {
     "ClassSize": "0x68",
     "Attributes": [
@@ -88,7 +15,7 @@
         "Offset": "0x1"
       },
       {
-        "Name": "pad0x6_03E60[0x6]",
+        "Name": "pad0x6_YGQMM[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x2"
@@ -118,7 +45,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x3_NO3J3[0x3]",
+        "Name": "pad0x3_VACAP[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x51"
@@ -142,39 +69,44 @@
         "Offset": "0x5c"
       },
       {
-        "Name": "pad0x4_AKKVJ[0x4]",
+        "Name": "pad0x4_KLD9G[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x64"
       }
     ]
   },
-  "EventActorStoppedCooking": {
-    "ClassSize": "0x18",
+  "OnItemStoppedCooking": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "FoodType",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Name": "pad0x1_VUELH[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CookerSmokeFeedbackEntry": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "FeedbackLevel",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x0"
       },
       {
-        "Name": "InitialCookingState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "EndCookingState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x11"
-      },
-      {
-        "Name": "pad0x6_9IKEL[0x6]",
+        "Name": "pad0x7_FOVYY[0x7]",
         "Type": "char",
-        "Size": "0x6",
-        "Offset": "0x12"
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "SmokeVFX",
+        "Type": "class ParticleSystem*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -194,7 +126,53 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_IZU9A[0x3]",
+        "Name": "pad0x3_PKQF1[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "CookId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "CookingInfo": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "pad0xc_F9FV5[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CookStartTelemetryEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "ItemName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CookState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x3_WL7CS[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
@@ -224,38 +202,60 @@
       }
     ]
   },
-  "CookStartTelemetryEvent": {
-    "ClassSize": "0x30",
+  "OnPlacedItemInCookingPot": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "ItemName",
+        "Name": "Interactor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ItemToCook",
+        "Type": "class ItemInfo*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "OnItemStartedCooking": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_1HNS2[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventActorStoppedCooking": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "FoodType",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "CookState",
+        "Name": "InitialCookingState",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_ZZJLL[0x3]",
-        "Type": "char",
-        "Size": "0x3",
+        "Name": "EndCookingState",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x11"
       },
       {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "CookId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x20"
+        "Name": "pad0x6_ZYSWN[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x12"
       }
     ]
   },
@@ -275,7 +275,7 @@
         "Offset": "0x4"
       },
       {
-        "Name": "pad0x3_ZL9HR[0x3]",
+        "Name": "pad0x3_DMH56[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x5"

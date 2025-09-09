@@ -7,11 +7,11 @@
 class TaleNote: public SkeletalMeshWieldableItem
 {
 public:
-	char                                                         pad0x10_RV5KB[0x10];                               // 0x7f0(0x10)
+	char                                                         pad0x10_Y1RMG[0x10];                               // 0x7f0(0x10)
 	int                                                          CanvasWidth;                                       // 0x800(0x4)
 	int                                                          CanvasHeight;                                      // 0x804(0x4)
 	float                                                        FontScale;                                         // 0x808(0x4)
-	char                                                         pad0x4_C15CE[0x4];                                 // 0x80c(0x4)
+	char                                                         pad0x4_42S4F[0x4];                                 // 0x80c(0x4)
 	class Font*                                                  Font;                                              // 0x810(0x8)
 	struct TreasureMapWidgetStreamedTexture                      Image;                                             // 0x818(0x38)
 	struct TreasureMapWidgetText                                 TitleWidgetText;                                   // 0x850(0x3c)
@@ -26,7 +26,8 @@ public:
 	class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x968(0x8)
 	class InventoryItemComponent*                                InventoryItemComponent;                            // 0x970(0x8)
 	class ZoomInOnWieldableItemComponent*                        ZoomInOnWieldableComponent;                        // 0x978(0x8)
-	char                                                         pad0xe0_NKP2R[0xe0];                               // 0x980(0xe0)
+	float                                                        ClampFieldOfView;                                  // 0x980(0x4)
+	char                                                         pad0xdc_XOE81[0xdc];                               // 0x984(0xdc)
 };
 
 

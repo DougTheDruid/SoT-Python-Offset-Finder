@@ -1,11 +1,4 @@
 {
-  "ShantyPuzzleInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "ShantyPuzzleInteractionZoneComponent": {
     "Super": "SphereComponent",
     "FullSize": "0x5e0",
@@ -13,7 +6,7 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x20_LL36V[0x20]",
+        "Name": "pad0x20_LNIVS[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x5c0"
@@ -33,7 +26,7 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x4_2QEN8[0x4]",
+        "Name": "pad0x4_D2IVY[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xbc"
@@ -64,6 +57,13 @@
       }
     ]
   },
+  "ShantyPuzzleInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "ShantyPuzzleComponent": {
     "Super": "SceneComponent",
     "FullSize": "0x3e0",
@@ -71,7 +71,7 @@
     "ClassSize": "0x110",
     "Attributes": [
       {
-        "Name": "pad0x8_PHLM6[0x8]",
+        "Name": "pad0x8_JT15P[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x2d0"
@@ -101,7 +101,7 @@
         "Offset": "0x2f1"
       },
       {
-        "Name": "pad0x6_97QD1[0x6]",
+        "Name": "pad0x6_04EKB[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x2f2"
@@ -125,7 +125,7 @@
         "Offset": "0x318"
       },
       {
-        "Name": "pad0xc0_Z9TH2[0xc0]",
+        "Name": "pad0xc0_YAMSI[0xc0]",
         "Type": "char",
         "Size": "0xc0",
         "Offset": "0x320"

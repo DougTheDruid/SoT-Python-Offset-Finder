@@ -39,7 +39,7 @@ EventPortableHarpoonProjectileImpact:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_YN6RB[0x7]
+  - Name: pad0x7_QCWKM[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
@@ -70,7 +70,7 @@ PortableHarpoonTelemetryEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_VQ5R2[0x7]
+  - Name: pad0x7_L53R1[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
@@ -110,7 +110,7 @@ PortableHarpoonTelemetryEvent:
     Offset: '0x4d'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_PNVTZ[0x2]
+  - Name: pad0x2_KCE7E[0x2]
     Offset: '0x4e'
     Size: '0x2'
     Type: char
@@ -134,7 +134,7 @@ PortableHarpoonTelemetryEvent:
     Offset: '0x84'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_12Q6A[0x3]
+  - Name: pad0x3_YK8X6[0x3]
     Offset: '0x85'
     Size: '0x3'
     Type: char
@@ -154,14 +154,14 @@ PortableHarpoonTelemetryEvent:
     Offset: '0xb8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_PC1FM[0x7]
+  - Name: pad0x7_7NKE5[0x7]
     Offset: '0xb9'
     Size: '0x7'
     Type: char
   ClassSize: '0xc0'
 PortableHarpoonTelemetryTemporaryData:
   Attributes:
-  - Name: pad0x14_PX99T[0x14]
+  - Name: pad0x14_ZQX0T[0x14]
     Offset: '0x0'
     Size: '0x14'
     Type: char

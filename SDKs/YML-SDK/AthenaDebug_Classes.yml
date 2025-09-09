@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 DrawDebugService:
   Attributes:
-  - Name: pad0x8_PTNMJ[0x8]
+  - Name: pad0x8_60394[0x8]
     Offset: '0x3a0'
     Size: '0x8'
     Type: char
@@ -46,7 +46,7 @@ DrawDebugService:
     Offset: '0x438'
     Size: '0x1'
     Type: bool
-  - Name: pad0x9f_AEUO0[0x9f]
+  - Name: pad0x9f_JCDNO[0x9f]
     Offset: '0x439'
     Size: '0x9f'
     Type: char
@@ -62,7 +62,7 @@ DrawDebugServiceInterface:
   Super: Interface
 HitchDebugComponent:
   Attributes:
-  - Name: pad0x80_L5WYY[0x80]
+  - Name: pad0x80_11F5T[0x80]
     Offset: '0xb8'
     Size: '0x80'
     Type: char
@@ -100,7 +100,7 @@ Videprinter:
     Offset: '0x3b4'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0xc_HITJX[0xc]
+  - Name: pad0xc_5B1JA[0xc]
     Offset: '0x3bc'
     Size: '0xc'
     Type: char
@@ -110,7 +110,7 @@ Videprinter:
   Super: Actor
 VideprinterService:
   Attributes:
-  - Name: pad0x8_4MQJR[0x8]
+  - Name: pad0x8_Z7L4U[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char

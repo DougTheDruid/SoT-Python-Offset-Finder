@@ -1,4 +1,44 @@
 {
+  "StatusResponseApplyOneShotStatus": {
+    "Super": "StatusResponse",
+    "FullSize": "0x58",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "StatusToApply",
+        "Type": "struct Status",
+        "Size": "0x20",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "StatusResponseApplyPersistentStatus": {
+    "Super": "StatusResponse",
+    "FullSize": "0x60",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "StatusToApply",
+        "Type": "struct Status",
+        "Size": "0x20",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "DurationMultiplier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "pad0x4_740XA[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x5c"
+      }
+    ]
+  },
   "StatusResponseReportNoiseEvent": {
     "Super": "StatusResponse",
     "FullSize": "0x78",
@@ -36,7 +76,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x3_8UOU4[0x3]",
+        "Name": "pad0x3_DXTVT[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x51"
@@ -48,24 +88,10 @@
         "Offset": "0x54"
       },
       {
-        "Name": "pad0x20_KPACI[0x20]",
+        "Name": "pad0x20_OUVDB[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x58"
-      }
-    ]
-  },
-  "StatusResponseApplyOneShotStatus": {
-    "Super": "StatusResponse",
-    "FullSize": "0x58",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "StatusToApply",
-        "Type": "struct Status",
-        "Size": "0x20",
-        "Offset": "0x38"
       }
     ]
   },
@@ -82,7 +108,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_SRD3E[0x4]",
+        "Name": "pad0x4_IJHGZ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c"
@@ -90,6 +116,20 @@
     ]
   },
   "StatusResponseSuspendStatus": {
+    "Super": "StatusResponse",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Status",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "StatusResponseCancelStatus": {
     "Super": "StatusResponse",
     "FullSize": "0x48",
     "InheritedSize": "0x38",
@@ -121,46 +161,6 @@
         "Type": "TArray<struct ScalarParamInfo>",
         "Size": "0x10",
         "Offset": "0x38"
-      }
-    ]
-  },
-  "StatusResponseCancelStatus": {
-    "Super": "StatusResponse",
-    "FullSize": "0x48",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Status",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "StatusResponseApplyPersistentStatus": {
-    "Super": "StatusResponse",
-    "FullSize": "0x60",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "StatusToApply",
-        "Type": "struct Status",
-        "Size": "0x20",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "DurationMultiplier",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "pad0x4_P7JUT[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x5c"
       }
     ]
   },

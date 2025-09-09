@@ -24,8 +24,15 @@ public:
 class ActorOfInterestService: public Actor
 {
 public:
-	char                                                         pad0x60_YOR4P[0x60];                               // 0x3a0(0x60)
+	char                                                         pad0x60_11TT1[0x60];                               // 0x3a0(0x60)
 	struct ObjectMessagingDispatcher                             EventDispatcher;                                   // 0x400(0xa0)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ActorOfInterestServiceInterface: public Interface
+{
+public:
 };
 
 
@@ -34,14 +41,7 @@ class ActorOfInterestComponent: public ActorComponent
 {
 public:
 	class UClass*                                                ActorOfInterestId;                                 // 0xb8(0x8)
-	char                                                         pad0x18_6OKKU[0x18];                               // 0xc0(0x18)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ActorOfInterestServiceInterface: public Interface
-{
-public:
+	char                                                         pad0x18_VWRPB[0x18];                               // 0xc0(0x18)
 };
 
 

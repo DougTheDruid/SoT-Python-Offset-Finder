@@ -1,4 +1,219 @@
 {
+  "CoherentUIGTAssetReferencer": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CoherentUIGTSettings": {
+    "Super": "Object",
+    "FullSize": "0x68",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "EnableLiveReload",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x3_NEVMR[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x29"
+      },
+      {
+        "Name": "InspectorPort",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "WebdriverPort",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "EnableWebSecurity",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "EnableLocalization",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x35"
+      },
+      {
+        "Name": "RunAsynchronous",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x36"
+      },
+      {
+        "Name": "bRecursivelyBindUStructs",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x37"
+      },
+      {
+        "Name": "LoadSystemFonts",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "AllowPerformanceWarningsInEditor",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x39"
+      },
+      {
+        "Name": "ShowWarningsOnScreen",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3a"
+      },
+      {
+        "Name": "LogSeverity",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x3b"
+      },
+      {
+        "Name": "bPaintToBackBuffer",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "bRespectTitleSafeZone",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3d"
+      },
+      {
+        "Name": "bRespectLetterboxing",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3e"
+      },
+      {
+        "Name": "pad0x1_3UF17[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x3f"
+      },
+      {
+        "Name": "HUDMaterialName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "CoUIResourcesRoot",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "TickWhileGameIsPaused",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "MSAA",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x61"
+      },
+      {
+        "Name": "pad0x6_JVB0I[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x62"
+      }
+    ]
+  },
+  "CoherentUIGTSystem": {
+    "Super": "Actor",
+    "FullSize": "0x3f0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x50_TDLZU[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x3a0"
+      }
+    ]
+  },
+  "CoherentUIGTJSEvent": {
+    "Super": "Object",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "pad0x80_2RCQ7[0x80]",
+        "Type": "char",
+        "Size": "0x80",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "StructTypes",
+        "Type": "TArray<class Struct*>",
+        "Size": "0x10",
+        "Offset": "0xa8"
+      }
+    ]
+  },
+  "CoherentUIGTGameHUD": {
+    "Super": "HUD",
+    "FullSize": "0x530",
+    "InheritedSize": "0x498",
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Name": "CoherentUIGTHUD",
+        "Type": "class CoherentUIGTHUD*",
+        "Size": "0x8",
+        "Offset": "0x498"
+      },
+      {
+        "Name": "pad0x90_N9GC1[0x90]",
+        "Type": "char",
+        "Size": "0x90",
+        "Offset": "0x4a0"
+      }
+    ]
+  },
+  "CoherentUIGTJSPayload": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "EventName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x8_HQLKT[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
   "CoherentUIGTBaseComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x300",
@@ -6,7 +221,7 @@
     "ClassSize": "0x248",
     "Attributes": [
       {
-        "Name": "pad0xa8_I6JNU[0xa8]",
+        "Name": "pad0xa8_VKZBB[0xa8]",
         "Type": "char",
         "Size": "0xa8",
         "Offset": "0xb8"
@@ -96,225 +311,10 @@
         "Offset": "0x189"
       },
       {
-        "Name": "pad0x176_I1524[0x176]",
+        "Name": "pad0x176_B0ABU[0x176]",
         "Type": "char",
         "Size": "0x176",
         "Offset": "0x18a"
-      }
-    ]
-  },
-  "CoherentUIGTAssetReferencer": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "CoherentUIGTGameHUD": {
-    "Super": "HUD",
-    "FullSize": "0x530",
-    "InheritedSize": "0x498",
-    "ClassSize": "0x98",
-    "Attributes": [
-      {
-        "Name": "CoherentUIGTHUD",
-        "Type": "class CoherentUIGTHUD*",
-        "Size": "0x8",
-        "Offset": "0x498"
-      },
-      {
-        "Name": "pad0x90_JAU8S[0x90]",
-        "Type": "char",
-        "Size": "0x90",
-        "Offset": "0x4a0"
-      }
-    ]
-  },
-  "CoherentUIGTInputActor": {
-    "Super": "Actor",
-    "FullSize": "0x400",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "pad0x60_5ZQJC[0x60]",
-        "Type": "char",
-        "Size": "0x60",
-        "Offset": "0x3a0"
-      }
-    ]
-  },
-  "CoherentUIGTJSPayload": {
-    "Super": "Object",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "EventName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x8_RCG6M[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "CoherentUIGTJSEvent": {
-    "Super": "Object",
-    "FullSize": "0xb8",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "pad0x80_50CT8[0x80]",
-        "Type": "char",
-        "Size": "0x80",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "StructTypes",
-        "Type": "TArray<class Struct*>",
-        "Size": "0x10",
-        "Offset": "0xa8"
-      }
-    ]
-  },
-  "CoherentUIGTSettings": {
-    "Super": "Object",
-    "FullSize": "0x68",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "EnableLiveReload",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x3_8LHYF[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x29"
-      },
-      {
-        "Name": "InspectorPort",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "WebdriverPort",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "EnableWebSecurity",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "EnableLocalization",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x35"
-      },
-      {
-        "Name": "RunAsynchronous",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x36"
-      },
-      {
-        "Name": "bRecursivelyBindUStructs",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x37"
-      },
-      {
-        "Name": "LoadSystemFonts",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "AllowPerformanceWarningsInEditor",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x39"
-      },
-      {
-        "Name": "ShowWarningsOnScreen",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3a"
-      },
-      {
-        "Name": "LogSeverity",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x3b"
-      },
-      {
-        "Name": "bPaintToBackBuffer",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "bRespectTitleSafeZone",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3d"
-      },
-      {
-        "Name": "bRespectLetterboxing",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3e"
-      },
-      {
-        "Name": "pad0x1_NE04I[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x3f"
-      },
-      {
-        "Name": "HUDMaterialName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "CoUIResourcesRoot",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "TickWhileGameIsPaused",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "MSAA",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x61"
-      },
-      {
-        "Name": "pad0x6_83NN9[0x6]",
-        "Type": "char",
-        "Size": "0x6",
-        "Offset": "0x62"
       }
     ]
   },
@@ -325,7 +325,7 @@
     "ClassSize": "0x2a0",
     "Attributes": [
       {
-        "Name": "pad0x20_IMR6Q[0x20]",
+        "Name": "pad0x20_MIGCY[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x138"
@@ -367,7 +367,7 @@
         "Offset": "0x1fc"
       },
       {
-        "Name": "pad0x3_3O01I[0x3]",
+        "Name": "pad0x3_C2GO5[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1fd"
@@ -421,7 +421,7 @@
         "Offset": "0x21c"
       },
       {
-        "Name": "pad0x1a3_2E8XF[0x1a3]",
+        "Name": "pad0x1a3_553OM[0x1a3]",
         "Type": "char",
         "Size": "0x1a3",
         "Offset": "0x21d"
@@ -445,40 +445,26 @@
         "Offset": "0x3d4"
       },
       {
-        "Name": "pad0x3_3Y6GV[0x3]",
+        "Name": "pad0x3_UYWJI[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x3d5"
       }
     ]
   },
-  "CoherentUIGTEventHelpers": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "CoherentUIGTSystem": {
+  "CoherentUIGTInputActor": {
     "Super": "Actor",
-    "FullSize": "0x3f0",
+    "FullSize": "0x400",
     "InheritedSize": "0x3a0",
-    "ClassSize": "0x50",
+    "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x50_MJ3E7[0x50]",
+        "Name": "pad0x60_5C3XD[0x60]",
         "Type": "char",
-        "Size": "0x50",
+        "Size": "0x60",
         "Offset": "0x3a0"
       }
     ]
-  },
-  "CoherentUIGTBlueprintFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "CoherentUIGTLiveView": {
     "Super": "ActorComponent",
@@ -499,12 +485,26 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x18_UJ7FP[0x18]",
+        "Name": "pad0x18_GR5YN[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0xd0"
       }
     ]
+  },
+  "CoherentUIGTBlueprintFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CoherentUIGTEventHelpers": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "CoherentUIGTComponent": {
     "Super": "CoherentUIGTBaseComponent",
@@ -537,7 +537,7 @@
         "Offset": "0x318"
       },
       {
-        "Name": "pad0x3_6NF4X[0x3]",
+        "Name": "pad0x3_8WIRK[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x319"
@@ -555,24 +555,10 @@
         "Offset": "0x320"
       },
       {
-        "Name": "pad0x17_T3TQ1[0x17]",
+        "Name": "pad0x17_EIPMV[0x17]",
         "Type": "char",
         "Size": "0x17",
         "Offset": "0x321"
-      }
-    ]
-  },
-  "CoherentUIGTRenderToTextureLiveView": {
-    "Super": "CoherentUIGTLiveView",
-    "FullSize": "0xf0",
-    "InheritedSize": "0xe8",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_AVWWZ[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xe8"
       }
     ]
   },
@@ -601,10 +587,24 @@
         "Offset": "0x318"
       },
       {
-        "Name": "pad0x8_VXYVB[0x8]",
+        "Name": "pad0x8_LOZ03[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x320"
+      }
+    ]
+  },
+  "CoherentUIGTRenderToTextureLiveView": {
+    "Super": "CoherentUIGTLiveView",
+    "FullSize": "0xf0",
+    "InheritedSize": "0xe8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_LP47M[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xe8"
       }
     ]
   },

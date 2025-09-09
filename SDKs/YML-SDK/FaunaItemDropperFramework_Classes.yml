@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 FaunaItemDropperComponent:
   Attributes:
-  - Name: pad0x140_UGFZ2[0x140]
+  - Name: pad0x140_0V97X[0x140]
     Offset: '0xb8'
     Size: '0x140'
     Type: char
@@ -26,7 +26,7 @@ FaunaItemDropperComponent:
     Offset: '0x210'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_H1HB5[0x4]
+  - Name: pad0x4_9T5Y3[0x4]
     Offset: '0x214'
     Size: '0x4'
     Type: char
@@ -34,7 +34,7 @@ FaunaItemDropperComponent:
     Offset: '0x218'
     Size: '0x10'
     Type: TArray<struct FaunaItemProxyStruct>
-  - Name: pad0x18_52J0I[0x18]
+  - Name: pad0x18_JBSHI[0x18]
     Offset: '0x228'
     Size: '0x18'
     Type: char
@@ -58,7 +58,7 @@ FaunaItemDropperComponent:
     Offset: '0x25c'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x70_UFPO0[0x70]
+  - Name: pad0x70_45JUE[0x70]
     Offset: '0x268'
     Size: '0x70'
     Type: char

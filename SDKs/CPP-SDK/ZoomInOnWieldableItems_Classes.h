@@ -13,18 +13,19 @@ public:
 };
 
 
-// Size 0x60 (Full Size[0x118] - InheritedSize[0xb8]
+// Size 0x68 (Full Size[0x120] - InheritedSize[0xb8]
 class ZoomInOnWieldableItemComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_VYSRF[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_INLQ6[0x8];                                 // 0xb8(0x8)
 	struct FName                                                 FeatureName;                                       // 0xc0(0x8)
 	float                                                        ZoomedInFov;                                       // 0xc8(0x4)
 	float                                                        FreelookPitch;                                     // 0xcc(0x4)
 	float                                                        FreelookYaw;                                       // 0xd0(0x4)
 	float                                                        FreelookOutInterpolationRate;                      // 0xd4(0x4)
 	float                                                        LookSensitivityScaler;                             // 0xd8(0x4)
-	char                                                         pad0x3c_QDH3U[0x3c];                               // 0xdc(0x3c)
+	float                                                        MaxClampedFOV;                                     // 0xdc(0x4)
+	char                                                         pad0x40_V0P92[0x40];                               // 0xe0(0x40)
 };
 
 

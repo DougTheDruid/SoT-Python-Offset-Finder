@@ -6,8 +6,8 @@
 #include "CompetitiveVoyages_Structs.h"
 
 
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class SonicStatus: public StatusBase
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class SetCrewOptInNPCDataStep: public TaleQuestStep
 {
 public:
 };
@@ -17,38 +17,42 @@ public:
 class CompetitiveVoyageVoteConsumerBase: public VoteConsumerInlineBase
 {
 public:
-	char                                                         pad0x10_6W08A[0x10];                               // 0x30(0x10)
+	char                                                         pad0x10_YBNXA[0x10];                               // 0x30(0x10)
 	class CompetitiveVoyageVoteValidatorBase*                    Validator;                                         // 0x40(0x8)
-	char                                                         pad0x48_404UN[0x48];                               // 0x48(0x48)
+	char                                                         pad0x48_APD0Q[0x48];                               // 0x48(0x48)
 	class Actor*                                                 OwningActor;                                       // 0x90(0x8)
 	class ActorComponent*                                        OwningComponent;                                   // 0x98(0x8)
 	TArray<struct CrewMemberVotes>                               Votes;                                             // 0xa0(0x10)
-	char                                                         pad0x18_R8R6P[0x18];                               // 0xb0(0x18)
+	char                                                         pad0x18_SR6GG[0x18];                               // 0xb0(0x18)
 };
 
 
-// Size 0x210 (Full Size[0x5b0] - InheritedSize[0x3a0]
-class HeistVault: public Actor
+// Size 0x88 (Full Size[0xb8] - InheritedSize[0x30]
+class CompetitiveVoyageVoteValidatorBase: public VoteValidatorInlineBase
 {
 public:
-	char                                                         pad0x10_SU4KT[0x10];                               // 0x3a0(0x10)
-	bool                                                         DespawnTreasureOnResetVault;                       // 0x3b0(0x1)
-	char                                                         pad0x3_AIPEQ[0x3];                                 // 0x3b1(0x3)
-	float                                                        VaultTimeoutTime;                                  // 0x3b4(0x4)
-	float                                                        VaultTimeoutWarningTime;                           // 0x3b8(0x4)
-	char                                                         pad0x4_KX9HT[0x4];                                 // 0x3bc(0x4)
-	class Actor*                                                 PanicVolumeActor;                                  // 0x3c0(0x8)
-	char                                                         pad0x118_9TZ17[0x118];                             // 0x3c8(0x118)
-	TArray<uintptr_t>                                            Doors;                                             // 0x580(0x10)
-	char                                                         pad0x10_04DT0[0x10];                               // 0x590(0x10)
-	TArray<class InstantaneousPanicTeleportVolume*>              VaultTeleportVolumes;                              // 0x5a0(0x10)
+	TArray<class Class*>                                         TargetCompanies;                                   // 0x30(0x10)
+	float                                                        EdgeOfWorldWarningWeightForFactionLock;            // 0x40(0x4)
+	char                                                         pad0x5c_SPHME[0x5c];                               // 0x44(0x5c)
+	class CompetitiveVoyageVoteConsumerBase*                     Consumer;                                          // 0xa0(0x8)
+	int                                                          CurrentCompany;                                    // 0xa8(0x4)
+	char                                                         pad0x4_WUG6I[0x4];                                 // 0xac(0x4)
+	class Actor*                                                 OwningActor;                                       // 0xb0(0x8)
 };
 
 
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class SetCrewOptInNPCDataStep: public TaleQuestStep
+// Size 0x520 (Full Size[0x8c0] - InheritedSize[0x3a0]
+class CompetitiveVoyagesService: public Actor
 {
 public:
+	char                                                         pad0x120_58JMQ[0x120];                             // 0x3a0(0x120)
+	TArray<struct Guid>                                          MainVoyageCrews;                                   // 0x4c0(0x10)
+	char                                                         pad0x10_DIYPQ[0x10];                               // 0x4d0(0x10)
+	class CompetitiveVoyagesServiceParams*                       ServiceParams;                                     // 0x4e0(0x8)
+	TArray<class CompetitiveVoyagesServiceParams*>               TypedServiceParams;                                // 0x4e8(0x10)
+	char                                                         pad0x2b0_ITUUW[0x2b0];                             // 0x4f8(0x2b0)
+	TArray<struct CompetitiveVoyageEventItem>                    VoyageEventItems;                                  // 0x7a8(0x10)
+	char                                                         pad0x108_D8M5D[0x108];                             // 0x7b8(0x108)
 };
 
 
@@ -56,44 +60,12 @@ public:
 class CompetitiveVoyageItemRelocationVolume: public Actor
 {
 public:
-	char                                                         pad0x8_8H118[0x8];                                 // 0x3a0(0x8)
+	char                                                         pad0x8_LTXIB[0x8];                                 // 0x3a0(0x8)
 	class SceneComponent*                                        SceneComponentRoot;                                // 0x3a8(0x8)
 	class BoxComponent*                                          TriggerVolume;                                     // 0x3b0(0x8)
 	TArray<struct Vector>                                        RelocationPositions;                               // 0x3b8(0x10)
 	bool                                                         RelocatesIntoWater;                                // 0x3c8(0x1)
-	char                                                         pad0x25f_FOGYV[0x25f];                             // 0x3c9(0x25f)
-};
-
-
-// Size 0x58 (Full Size[0xf0] - InheritedSize[0x98]
-class WaitForCompVoyageOptInStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x58_9TZS9[0x58];                               // 0x98(0x58)
-};
-
-
-// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
-class WaitForCompVoyageOptInStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableGuid                                     NPCOnShipManager;                                  // 0x80(0x30)
-	struct QuestVariableActor                                    NPCActor;                                          // 0xb0(0x30)
-};
-
-
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class SetCrewOptInNPCDataStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableActor                                    Actor;                                             // 0x80(0x30)
-};
-
-
-// Size 0x0 (Full Size[0x360] - InheritedSize[0x360]
-class CompetitiveVoyageLockComponent: public LockComponent
-{
-public:
+	char                                                         pad0x25f_VOT66[0x25f];                             // 0x3c9(0x25f)
 };
 
 
@@ -104,61 +76,25 @@ public:
 };
 
 
-// Size 0x88 (Full Size[0xb8] - InheritedSize[0x30]
-class CompetitiveVoyageVoteValidatorBase: public VoteValidatorInlineBase
+// Size 0x0 (Full Size[0x360] - InheritedSize[0x360]
+class CompetitiveVoyageLockComponent: public LockComponent
 {
 public:
-	TArray<class Class*>                                         TargetCompanies;                                   // 0x30(0x10)
-	float                                                        EdgeOfWorldWarningWeightForFactionLock;            // 0x40(0x4)
-	char                                                         pad0x5c_E4W1I[0x5c];                               // 0x44(0x5c)
-	class CompetitiveVoyageVoteConsumerBase*                     Consumer;                                          // 0xa0(0x8)
-	int                                                          CurrentCompany;                                    // 0xa8(0x4)
-	char                                                         pad0x4_VIDO7[0x4];                                 // 0xac(0x4)
-	class Actor*                                                 OwningActor;                                       // 0xb0(0x8)
 };
 
 
-// Size 0x158 (Full Size[0x180] - InheritedSize[0x28]
-class CompetitiveVoyagesServiceParams: public DataAsset
+// Size 0x58 (Full Size[0xf0] - InheritedSize[0x98]
+class WaitForCompVoyageOptInStep: public TaleQuestStep
 {
 public:
-	class UClass*                                                GameEventType;                                     // 0x28(0x8)
-	struct FeatureFlag                                           Feature;                                           // 0x30(0xc)
-	char                                                         pad0x4_LXCMQ[0x4];                                 // 0x3c(0x4)
-	class VoyageDescDataAsset*                                   OptInVoyageDesc;                                   // 0x40(0x8)
-	class VoyageDescDataAsset*                                   MainVoyageDesc;                                    // 0x48(0x8)
-	class NPCOnShipDataAsset*                                    OptOutNoteDataAsset;                               // 0x50(0x8)
-	float                                                        MaxDistanceToItemsForReducedRespawnSq;             // 0x58(0x4)
-	float                                                        MaxDistanceToIslandsForReducedRespawnSq;           // 0x5c(0x4)
-	struct CompetitiveVoyagesRespawnConfig                       RespawnConfig;                                     // 0x60(0x108)
-	struct ShipSpeedCurseModifyingValues                         ShipSpeedCurseModifyingValues;                     // 0x168(0xc)
-	float                                                        OptOutDelay;                                       // 0x174(0x4)
-	struct PlayerStat                                            SinkShipWithVoyageItemAchievementStat;             // 0x178(0x4)
-	char                                                         pad0x4_0YVIP[0x4];                                 // 0x17c(0x4)
+	char                                                         pad0x58_HGX5E[0x58];                               // 0x98(0x58)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SkullOfSirenSongDamagerType: public DamagerType
+class CompetitiveVoyagesServiceInterface: public Interface
 {
 public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestCompetitiveVoyagesFunctionStepLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x1f8 (Full Size[0x258] - InheritedSize[0x60]
-class TaleQuestCompetitiveVoyagesService: public TaleQuestService
-{
-public:
-	char                                                         pad0x88_9HOKH[0x88];                               // 0x60(0x88)
-	TArray<struct PhasedMarkerItem>                              PhasedMarkerItems;                                 // 0xe8(0x10)
-	char                                                         pad0x160_JSX0L[0x160];                             // 0xf8(0x160)
 };
 
 
@@ -176,25 +112,92 @@ public:
 };
 
 
+// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
+class WaitForCompVoyageOptInStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableGuid                                     NPCOnShipManager;                                  // 0x80(0x30)
+	struct QuestVariableActor                                    NPCActor;                                          // 0xb0(0x30)
+};
+
+
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CompetitiveVoyagesServiceInterface: public Interface
+class SkullOfSirenSongDamagerType: public DamagerType
 {
 public:
 };
 
 
-// Size 0x520 (Full Size[0x8c0] - InheritedSize[0x3a0]
-class CompetitiveVoyagesService: public Actor
+// Size 0x380 (Full Size[0x720] - InheritedSize[0x3a0]
+class HeistVault: public Actor
 {
 public:
-	char                                                         pad0x120_LQDVG[0x120];                             // 0x3a0(0x120)
-	TArray<struct Guid>                                          MainVoyageCrews;                                   // 0x4c0(0x10)
-	char                                                         pad0x10_HOVJH[0x10];                               // 0x4d0(0x10)
-	class CompetitiveVoyagesServiceParams*                       ServiceParams;                                     // 0x4e0(0x8)
-	TArray<class CompetitiveVoyagesServiceParams*>               TypedServiceParams;                                // 0x4e8(0x10)
-	char                                                         pad0x2b0_M8UWB[0x2b0];                             // 0x4f8(0x2b0)
-	TArray<struct CompetitiveVoyageEventItem>                    VoyageEventItems;                                  // 0x7a8(0x10)
-	char                                                         pad0x108_MXSVO[0x108];                             // 0x7b8(0x108)
+	char                                                         pad0x18_LNNAO[0x18];                               // 0x3a0(0x18)
+	bool                                                         DespawnTreasureOnResetVault;                       // 0x3b8(0x1)
+	bool                                                         ResetVaultOnMigration;                             // 0x3b9(0x1)
+	char                                                         pad0x2_DDOSH[0x2];                                 // 0x3ba(0x2)
+	float                                                        VaultTimeoutTime;                                  // 0x3bc(0x4)
+	float                                                        VaultTimeoutWarningTime;                           // 0x3c0(0x4)
+	char                                                         pad0x4_JYTGE[0x4];                                 // 0x3c4(0x4)
+	class Actor*                                                 PanicVolumeActor;                                  // 0x3c8(0x8)
+	char                                                         pad0x1d0_2E6GX[0x1d0];                             // 0x3d0(0x1d0)
+	TArray<uintptr_t>                                            TreasureItemProxies;                               // 0x690(0x10)
+	char                                                         pad0x50_2MFT1[0x50];                               // 0x6a0(0x50)
+	TArray<uintptr_t>                                            Doors;                                             // 0x6f0(0x10)
+	TArray<uintptr_t>                                            MechanismDoors;                                    // 0x700(0x10)
+	TArray<class InstantaneousPanicTeleportVolume*>              VaultTeleportVolumes;                              // 0x710(0x10)
+};
+
+
+// Size 0x1f8 (Full Size[0x258] - InheritedSize[0x60]
+class TaleQuestCompetitiveVoyagesService: public TaleQuestService
+{
+public:
+	char                                                         pad0x88_3GPSY[0x88];                               // 0x60(0x88)
+	TArray<struct PhasedMarkerItem>                              PhasedMarkerItems;                                 // 0xe8(0x10)
+	char                                                         pad0x160_JJHMT[0x160];                             // 0xf8(0x160)
+};
+
+
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
+class SonicStatus: public StatusBase
+{
+public:
+};
+
+
+// Size 0x158 (Full Size[0x180] - InheritedSize[0x28]
+class CompetitiveVoyagesServiceParams: public DataAsset
+{
+public:
+	class UClass*                                                GameEventType;                                     // 0x28(0x8)
+	struct FeatureFlag                                           Feature;                                           // 0x30(0xc)
+	char                                                         pad0x4_ST6AZ[0x4];                                 // 0x3c(0x4)
+	class VoyageDescDataAsset*                                   OptInVoyageDesc;                                   // 0x40(0x8)
+	class VoyageDescDataAsset*                                   MainVoyageDesc;                                    // 0x48(0x8)
+	class NPCOnShipDataAsset*                                    OptOutNoteDataAsset;                               // 0x50(0x8)
+	float                                                        MaxDistanceToItemsForReducedRespawnSq;             // 0x58(0x4)
+	float                                                        MaxDistanceToIslandsForReducedRespawnSq;           // 0x5c(0x4)
+	struct CompetitiveVoyagesRespawnConfig                       RespawnConfig;                                     // 0x60(0x108)
+	struct ShipSpeedCurseModifyingValues                         ShipSpeedCurseModifyingValues;                     // 0x168(0xc)
+	float                                                        OptOutDelay;                                       // 0x174(0x4)
+	struct PlayerStat                                            SinkShipWithVoyageItemAchievementStat;             // 0x178(0x4)
+	char                                                         pad0x4_JP0EG[0x4];                                 // 0x17c(0x4)
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestCompetitiveVoyagesFunctionStepLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class SetCrewOptInNPCDataStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableActor                                    Actor;                                             // 0x80(0x30)
 };
 
 
@@ -203,7 +206,7 @@ class StopCompetitiveVoyageVoteValidator: public CompetitiveVoyageVoteValidatorB
 {
 public:
 	bool                                                         IsOptInNote;                                       // 0xb8(0x1)
-	char                                                         pad0x7_6UV9Y[0x7];                                 // 0xb9(0x7)
+	char                                                         pad0x7_KR06R[0x7];                                 // 0xb9(0x7)
 };
 
 

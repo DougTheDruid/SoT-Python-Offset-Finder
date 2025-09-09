@@ -8,23 +8,23 @@ struct BestActionSpotSelectionCriteria
 {
 public:
 	bool                                                         PreferActionSpotsRelativeToTargetForwardFacingDirection; // 0x0(0x1)
-	char                                                         pad0x3_HBDP4[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_JUZEA[0x3];                                 // 0x1(0x3)
 	float                                                        ForwardFacingPreferenceMinAngleInDegrees;          // 0x4(0x4)
 	float                                                        ForwardFacingPreferenceMaxAngleInDegrees;          // 0x8(0x4)
 	float                                                        ForwardFacingPreferenceMinDistance;                // 0xc(0x4)
 	float                                                        ForwardFacingPreferenceMaxDistance;                // 0x10(0x4)
 	bool                                                         PreferStayingAtCurrentSpotOverMovingToNewSpot;     // 0x14(0x1)
-	char                                                         pad0x3_MRM7P[0x3];                                 // 0x15(0x3)
+	char                                                         pad0x3_YEQN7[0x3];                                 // 0x15(0x3)
 	float                                                        StayingPreferenceDistance;                         // 0x18(0x4)
 	bool                                                         PreferActionSpotsCloserToSelf;                     // 0x1c(0x1)
-	char                                                         pad0x3_6Q1T4[0x3];                                 // 0x1d(0x3)
+	char                                                         pad0x3_CP2T3[0x3];                                 // 0x1d(0x3)
 	float                                                        MaximumDistanceAllowedFromTarget;                  // 0x20(0x4)
 	bool                                                         ShouldAlwaysRefreshWhileOwnerMoving;               // 0x24(0x1)
 	bool                                                         ShouldRefreshAfterTargetMovesBeyondThreshold;      // 0x25(0x1)
-	char                                                         pad0x2_9DPRI[0x2];                                 // 0x26(0x2)
+	char                                                         pad0x2_2M0AA[0x2];                                 // 0x26(0x2)
 	float                                                        TargetMovementRefreshThresholdDistance;            // 0x28(0x4)
 	bool                                                         ShouldRefreshAfterStayingForTooLong;               // 0x2c(0x1)
-	char                                                         pad0x3_62X53[0x3];                                 // 0x2d(0x3)
+	char                                                         pad0x3_F13I7[0x3];                                 // 0x2d(0x3)
 	float                                                        RefreshTimeInSeconds;                              // 0x30(0x4)
 };
 
@@ -33,10 +33,10 @@ public:
 struct HasAllActionContextTagsCondition
 {
 public:
-	char                                                         pad0x28_PHN0V[0x28];                               // 0x0(0x28)
+	char                                                         pad0x28_1MHUP[0x28];                               // 0x0(0x28)
 	TArray<class Class*>                                         RequiredContextTags;                               // 0x28(0x10)
 	bool                                                         ExpectedValue;                                     // 0x38(0x1)
-	char                                                         pad0x7_QM7HI[0x7];                                 // 0x39(0x7)
+	char                                                         pad0x7_ILPLM[0x7];                                 // 0x39(0x7)
 };
 
 

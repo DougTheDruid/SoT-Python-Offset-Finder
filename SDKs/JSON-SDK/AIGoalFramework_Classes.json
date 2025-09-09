@@ -1,30 +1,4 @@
 {
-  "AIGoal": {
-    "Super": "Object",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "BehaviorTree",
-        "Type": "class BehaviorTree*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "WhileActiveActivityType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x8_Z0VYL[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x38"
-      }
-    ]
-  },
   "AIGoalProcessorComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x118",
@@ -32,7 +6,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x8_B8299[0x8]",
+        "Name": "pad0x8_0QV6A[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -62,7 +36,7 @@
         "Offset": "0xe0"
       },
       {
-        "Name": "pad0x28_GC991[0x28]",
+        "Name": "pad0x28_EFHWJ[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0xf0"
@@ -83,7 +57,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x8_8TRHX[0x8]",
+        "Name": "pad0x8_NYGIH[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -95,7 +69,7 @@
         "Offset": "0xc0"
       },
       {
-        "Name": "pad0x3_ZFTDK[0x3]",
+        "Name": "pad0x3_2VC5N[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xc1"
@@ -107,6 +81,13 @@
         "Offset": "0xc4"
       }
     ]
+  },
+  "AIAreaOfOperationInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "AIGoalAssetList": {
     "Super": "DataAsset",
@@ -122,12 +103,31 @@
       }
     ]
   },
-  "AIAreaOfOperationInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
+  "AIGoal": {
+    "Super": "Object",
+    "FullSize": "0x40",
     "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "BehaviorTree",
+        "Type": "class BehaviorTree*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "WhileActiveActivityType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x8_2I6PA[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
   },
   "AIGoalProcessorInterface": {
     "Super": "Interface",

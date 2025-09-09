@@ -1,4 +1,88 @@
 {
+  "AthenaFFTWater": {
+    "Super": "FFTWater",
+    "FullSize": "0x430",
+    "InheritedSize": "0x3e8",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x48_I2AZ2[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x3e8"
+      }
+    ]
+  },
+  "WaterEmissionVolumeInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AthenaWaterEmissionVolume": {
+    "Super": "WaterEmissionVolume",
+    "FullSize": "0x3b0",
+    "InheritedSize": "0x3a8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_UX4BJ[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3a8"
+      }
+    ]
+  },
+  "WaterProperties": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "WaterInfo",
+        "Type": "TArray<struct WaterInformation>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "WaterEmissionVolumeService": {
+    "Super": "Object",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_BC9OK[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "FFTWaterInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ShipWaterId": {
+    "Super": "WaterId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WaterPlaneInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "WaterPlaneRetrievalProviderInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
@@ -6,8 +90,15 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "SeaWaterId": {
-    "Super": "WaterId",
+  "WaterExclusionSurfaceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WaterVolumeInterface": {
+    "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
@@ -20,35 +111,49 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_ENY8E[0x10]",
+        "Name": "pad0x10_7U4KE[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x5b0"
       }
     ]
   },
-  "WaterPlaneExclusionComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x18",
+  "WaterBuoyancySampleMovementFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WaterSplashProbeFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "FFTWaterService": {
+    "Super": "Actor",
+    "FullSize": "0x420",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x80",
     "Attributes": [
       {
-        "Name": "pad0x8_OUIQS[0x8]",
+        "Name": "pad0x78_WDP7K[0x78]",
         "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb8"
+        "Size": "0x78",
+        "Offset": "0x3a0"
       },
       {
-        "Name": "UseSpecificComponentForOverlaps",
-        "Type": "struct ActorComponentSelector",
-        "Size": "0x10",
-        "Offset": "0xc0"
+        "Name": "ReplicatedServerCreationTime",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x418"
       }
     ]
   },
-  "UndergroundSeaWaterId": {
-    "Super": "WaterId",
+  "WaterInterface": {
+    "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
@@ -73,7 +178,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x4_3A3MM[0x4]",
+        "Name": "pad0x4_VUNB2[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xd4"
@@ -121,7 +226,7 @@
         "Offset": "0xf8"
       },
       {
-        "Name": "pad0x7_QFQ6Q[0x7]",
+        "Name": "pad0x7_NV3UO[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xf9"
@@ -139,7 +244,7 @@
         "Offset": "0x108"
       },
       {
-        "Name": "pad0x4_CVRL6[0x4]",
+        "Name": "pad0x4_4W1MN[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x114"
@@ -157,49 +262,35 @@
         "Offset": "0x120"
       },
       {
-        "Name": "pad0x18_GRAQN[0x18]",
+        "Name": "pad0x18_O2JHC[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x130"
       }
     ]
   },
-  "WaterProperties": {
+  "MockWaterInterface": {
     "Super": "Object",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "WaterInfo",
-        "Type": "TArray<struct WaterInformation>",
+        "Name": "pad0x10_OKH65[0x10]",
+        "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"
       }
     ]
   },
-  "AthenaWaterEmissionVolume": {
-    "Super": "WaterEmissionVolume",
-    "FullSize": "0x3b0",
-    "InheritedSize": "0x3a8",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_KNPN6[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x3a8"
-      }
-    ]
-  },
-  "WaterSplashProbeFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
+  "NoSwimWaterId": {
+    "Super": "WaterId",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ShipWaterId": {
+  "SeaWaterId": {
     "Super": "WaterId",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -213,7 +304,7 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x14_2TCDJ[0x14]",
+        "Name": "pad0x14_H34TT[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0x5d0"
@@ -225,12 +316,26 @@
         "Offset": "0x5e4"
       },
       {
-        "Name": "pad0x8_2MPYW[0x8]",
+        "Name": "pad0x8_QKJ8B[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x5e8"
       }
     ]
+  },
+  "UndergroundSeaWaterId": {
+    "Super": "WaterId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WaterPlaneExclusionInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "SplashProbeVFXComponent": {
     "Super": "ActorComponent",
@@ -239,7 +344,7 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "pad0x28_U3PZ1[0x28]",
+        "Name": "pad0x28_F0DI5[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0xb8"
@@ -275,89 +380,12 @@
         "Offset": "0x108"
       },
       {
-        "Name": "pad0x7_HMBEO[0x7]",
+        "Name": "pad0x7_IV49J[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x109"
       }
     ]
-  },
-  "MockWaterInterface": {
-    "Super": "Object",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_6WHO6[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "WaterBuoyancyFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "WaterInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AthenaFFTWater": {
-    "Super": "FFTWater",
-    "FullSize": "0x430",
-    "InheritedSize": "0x3e8",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "pad0x48_CY7PE[0x48]",
-        "Type": "char",
-        "Size": "0x48",
-        "Offset": "0x3e8"
-      }
-    ]
-  },
-  "FFTWaterInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "WaterEmissionVolumeInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "WaterPlaneExclusionInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "WaterVolumeInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "WaterExclusionSurfaceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "SplashProbeDataAsset": {
     "Super": "DataAsset",
@@ -373,60 +401,32 @@
       }
     ]
   },
-  "FFTWaterService": {
-    "Super": "Actor",
-    "FullSize": "0x420",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x80",
-    "Attributes": [
-      {
-        "Name": "pad0x78_8AASV[0x78]",
-        "Type": "char",
-        "Size": "0x78",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "ReplicatedServerCreationTime",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x418"
-      }
-    ]
-  },
-  "WaterEmissionVolumeService": {
-    "Super": "Object",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_CYOKT[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "WaterBuoyancySampleMovementFunctionLibrary": {
+  "WaterBuoyancyFunctionLibrary": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "WaterPlaneInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "NoSwimWaterId": {
-    "Super": "WaterId",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "WaterPlaneExclusionComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x8_TJDFZ[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "UseSpecificComponentForOverlaps",
+        "Type": "struct ActorComponentSelector",
+        "Size": "0x10",
+        "Offset": "0xc0"
+      }
+    ]
   },
   "MockWaterServiceWithValidWaterPlane": {
     "Super": "MockWaterInterface",

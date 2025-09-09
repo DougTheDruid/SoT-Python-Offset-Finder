@@ -10,7 +10,7 @@ CountHolder:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0x1c_KIFXE[0x1c]
+  - Name: pad0x1c_ADAZ9[0x1c]
     Offset: '0xc'
     Size: '0x1c'
     Type: char

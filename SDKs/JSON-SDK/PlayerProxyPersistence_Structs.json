@@ -1,21 +1,4 @@
 {
-  "PlayerPersistentProxyRemovedEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ProxyId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ProxyActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "ProxyLimit": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -32,7 +15,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_5CJ85[0x4]",
+        "Name": "pad0x4_0P8DD[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -40,6 +23,23 @@
     ]
   },
   "PlayerPersistentProxySpawnedEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ProxyId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ProxyActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "PlayerPersistentProxyRemovedEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {

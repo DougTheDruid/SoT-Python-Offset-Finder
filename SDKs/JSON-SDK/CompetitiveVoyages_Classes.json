@@ -1,8 +1,8 @@
 {
-  "SonicStatus": {
-    "Super": "StatusBase",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
+  "SetCrewOptInNPCDataStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -13,7 +13,7 @@
     "ClassSize": "0x98",
     "Attributes": [
       {
-        "Name": "pad0x10_6W08A[0x10]",
+        "Name": "pad0x10_YBNXA[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x30"
@@ -25,7 +25,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x48_404UN[0x48]",
+        "Name": "pad0x48_APD0Q[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0x48"
@@ -49,93 +49,118 @@
         "Offset": "0xa0"
       },
       {
-        "Name": "pad0x18_R8R6P[0x18]",
+        "Name": "pad0x18_SR6GG[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0xb0"
       }
     ]
   },
-  "HeistVault": {
-    "Super": "Actor",
-    "FullSize": "0x5b0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x210",
+  "CompetitiveVoyageVoteValidatorBase": {
+    "Super": "VoteValidatorInlineBase",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x88",
     "Attributes": [
       {
-        "Name": "pad0x10_SU4KT[0x10]",
-        "Type": "char",
+        "Name": "TargetCompanies",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
-        "Offset": "0x3a0"
+        "Offset": "0x30"
       },
       {
-        "Name": "DespawnTreasureOnResetVault",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3b0"
-      },
-      {
-        "Name": "pad0x3_AIPEQ[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x3b1"
-      },
-      {
-        "Name": "VaultTimeoutTime",
+        "Name": "EdgeOfWorldWarningWeightForFactionLock",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3b4"
+        "Offset": "0x40"
       },
       {
-        "Name": "VaultTimeoutWarningTime",
-        "Type": "float",
+        "Name": "pad0x5c_SPHME[0x5c]",
+        "Type": "char",
+        "Size": "0x5c",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "Consumer",
+        "Type": "class CompetitiveVoyageVoteConsumerBase*",
+        "Size": "0x8",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "CurrentCompany",
+        "Type": "int",
         "Size": "0x4",
-        "Offset": "0x3b8"
+        "Offset": "0xa8"
       },
       {
-        "Name": "pad0x4_KX9HT[0x4]",
+        "Name": "pad0x4_WUG6I[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x3bc"
+        "Offset": "0xac"
       },
       {
-        "Name": "PanicVolumeActor",
+        "Name": "OwningActor",
         "Type": "class Actor*",
         "Size": "0x8",
-        "Offset": "0x3c0"
-      },
-      {
-        "Name": "pad0x118_9TZ17[0x118]",
-        "Type": "char",
-        "Size": "0x118",
-        "Offset": "0x3c8"
-      },
-      {
-        "Name": "Doors",
-        "Type": "TArray<uintptr_t>",
-        "Size": "0x10",
-        "Offset": "0x580"
-      },
-      {
-        "Name": "pad0x10_04DT0[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x590"
-      },
-      {
-        "Name": "VaultTeleportVolumes",
-        "Type": "TArray<class InstantaneousPanicTeleportVolume*>",
-        "Size": "0x10",
-        "Offset": "0x5a0"
+        "Offset": "0xb0"
       }
     ]
   },
-  "SetCrewOptInNPCDataStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x98",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "CompetitiveVoyagesService": {
+    "Super": "Actor",
+    "FullSize": "0x8c0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x520",
+    "Attributes": [
+      {
+        "Name": "pad0x120_58JMQ[0x120]",
+        "Type": "char",
+        "Size": "0x120",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "MainVoyageCrews",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x4c0"
+      },
+      {
+        "Name": "pad0x10_DIYPQ[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x4d0"
+      },
+      {
+        "Name": "ServiceParams",
+        "Type": "class CompetitiveVoyagesServiceParams*",
+        "Size": "0x8",
+        "Offset": "0x4e0"
+      },
+      {
+        "Name": "TypedServiceParams",
+        "Type": "TArray<class CompetitiveVoyagesServiceParams*>",
+        "Size": "0x10",
+        "Offset": "0x4e8"
+      },
+      {
+        "Name": "pad0x2b0_ITUUW[0x2b0]",
+        "Type": "char",
+        "Size": "0x2b0",
+        "Offset": "0x4f8"
+      },
+      {
+        "Name": "VoyageEventItems",
+        "Type": "TArray<struct CompetitiveVoyageEventItem>",
+        "Size": "0x10",
+        "Offset": "0x7a8"
+      },
+      {
+        "Name": "pad0x108_D8M5D[0x108]",
+        "Type": "char",
+        "Size": "0x108",
+        "Offset": "0x7b8"
+      }
+    ]
   },
   "CompetitiveVoyageItemRelocationVolume": {
     "Super": "Actor",
@@ -144,7 +169,7 @@
     "ClassSize": "0x288",
     "Attributes": [
       {
-        "Name": "pad0x8_8H118[0x8]",
+        "Name": "pad0x8_LTXIB[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3a0"
@@ -174,12 +199,26 @@
         "Offset": "0x3c8"
       },
       {
-        "Name": "pad0x25f_FOGYV[0x25f]",
+        "Name": "pad0x25f_VOT66[0x25f]",
         "Type": "char",
         "Size": "0x25f",
         "Offset": "0x3c9"
       }
     ]
+  },
+  "TaleQuestCompetitiveVoyagesServiceDesc": {
+    "Super": "TaleQuestServiceDesc",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CompetitiveVoyageLockComponent": {
+    "Super": "LockComponent",
+    "FullSize": "0x360",
+    "InheritedSize": "0x360",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "WaitForCompVoyageOptInStep": {
     "Super": "TaleQuestStep",
@@ -188,12 +227,33 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "pad0x58_9TZS9[0x58]",
+        "Name": "pad0x58_HGX5E[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0x98"
       }
     ]
+  },
+  "CompetitiveVoyagesServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DiscombobulatedStatus": {
+    "Super": "StatusBase",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MigrationDuplicatedActor": {
+    "Super": "Actor",
+    "FullSize": "0x3a0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "WaitForCompVoyageOptInStepDesc": {
     "Super": "TaleQuestStepDesc",
@@ -215,83 +275,137 @@
       }
     ]
   },
-  "SetCrewOptInNPCDataStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xb0",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Actor",
-        "Type": "struct QuestVariableActor",
-        "Size": "0x30",
-        "Offset": "0x80"
-      }
-    ]
-  },
-  "CompetitiveVoyageLockComponent": {
-    "Super": "LockComponent",
-    "FullSize": "0x360",
-    "InheritedSize": "0x360",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TaleQuestCompetitiveVoyagesServiceDesc": {
-    "Super": "TaleQuestServiceDesc",
+  "SkullOfSirenSongDamagerType": {
+    "Super": "DamagerType",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "CompetitiveVoyageVoteValidatorBase": {
-    "Super": "VoteValidatorInlineBase",
-    "FullSize": "0xb8",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x88",
+  "HeistVault": {
+    "Super": "Actor",
+    "FullSize": "0x720",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x380",
     "Attributes": [
       {
-        "Name": "TargetCompanies",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x30"
+        "Name": "pad0x18_LNNAO[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x3a0"
       },
       {
-        "Name": "EdgeOfWorldWarningWeightForFactionLock",
+        "Name": "DespawnTreasureOnResetVault",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3b8"
+      },
+      {
+        "Name": "ResetVaultOnMigration",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3b9"
+      },
+      {
+        "Name": "pad0x2_DDOSH[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x3ba"
+      },
+      {
+        "Name": "VaultTimeoutTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x40"
+        "Offset": "0x3bc"
       },
       {
-        "Name": "pad0x5c_E4W1I[0x5c]",
-        "Type": "char",
-        "Size": "0x5c",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "Consumer",
-        "Type": "class CompetitiveVoyageVoteConsumerBase*",
-        "Size": "0x8",
-        "Offset": "0xa0"
-      },
-      {
-        "Name": "CurrentCompany",
-        "Type": "int",
+        "Name": "VaultTimeoutWarningTime",
+        "Type": "float",
         "Size": "0x4",
-        "Offset": "0xa8"
+        "Offset": "0x3c0"
       },
       {
-        "Name": "pad0x4_VIDO7[0x4]",
+        "Name": "pad0x4_JYTGE[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0xac"
+        "Offset": "0x3c4"
       },
       {
-        "Name": "OwningActor",
+        "Name": "PanicVolumeActor",
         "Type": "class Actor*",
         "Size": "0x8",
-        "Offset": "0xb0"
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "pad0x1d0_2E6GX[0x1d0]",
+        "Type": "char",
+        "Size": "0x1d0",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "TreasureItemProxies",
+        "Type": "TArray<uintptr_t>",
+        "Size": "0x10",
+        "Offset": "0x690"
+      },
+      {
+        "Name": "pad0x50_2MFT1[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x6a0"
+      },
+      {
+        "Name": "Doors",
+        "Type": "TArray<uintptr_t>",
+        "Size": "0x10",
+        "Offset": "0x6f0"
+      },
+      {
+        "Name": "MechanismDoors",
+        "Type": "TArray<uintptr_t>",
+        "Size": "0x10",
+        "Offset": "0x700"
+      },
+      {
+        "Name": "VaultTeleportVolumes",
+        "Type": "TArray<class InstantaneousPanicTeleportVolume*>",
+        "Size": "0x10",
+        "Offset": "0x710"
       }
     ]
+  },
+  "TaleQuestCompetitiveVoyagesService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0x258",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x1f8",
+    "Attributes": [
+      {
+        "Name": "pad0x88_3GPSY[0x88]",
+        "Type": "char",
+        "Size": "0x88",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "PhasedMarkerItems",
+        "Type": "TArray<struct PhasedMarkerItem>",
+        "Size": "0x10",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "pad0x160_JJHMT[0x160]",
+        "Type": "char",
+        "Size": "0x160",
+        "Offset": "0xf8"
+      }
+    ]
+  },
+  "SonicStatus": {
+    "Super": "StatusBase",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "CompetitiveVoyagesServiceParams": {
     "Super": "DataAsset",
@@ -312,7 +426,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_LXCMQ[0x4]",
+        "Name": "pad0x4_ST6AZ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c"
@@ -372,19 +486,12 @@
         "Offset": "0x178"
       },
       {
-        "Name": "pad0x4_0YVIP[0x4]",
+        "Name": "pad0x4_JP0EG[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x17c"
       }
     ]
-  },
-  "SkullOfSirenSongDamagerType": {
-    "Super": "DamagerType",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "TaleQuestCompetitiveVoyagesFunctionStepLibrary": {
     "Super": "TaleQuestFunctionStepLibrary",
@@ -393,106 +500,17 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "TaleQuestCompetitiveVoyagesService": {
-    "Super": "TaleQuestService",
-    "FullSize": "0x258",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x1f8",
+  "SetCrewOptInNPCDataStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x88_9HOKH[0x88]",
-        "Type": "char",
-        "Size": "0x88",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "PhasedMarkerItems",
-        "Type": "TArray<struct PhasedMarkerItem>",
-        "Size": "0x10",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "pad0x160_JSX0L[0x160]",
-        "Type": "char",
-        "Size": "0x160",
-        "Offset": "0xf8"
-      }
-    ]
-  },
-  "DiscombobulatedStatus": {
-    "Super": "StatusBase",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MigrationDuplicatedActor": {
-    "Super": "Actor",
-    "FullSize": "0x3a0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "CompetitiveVoyagesServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "CompetitiveVoyagesService": {
-    "Super": "Actor",
-    "FullSize": "0x8c0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x520",
-    "Attributes": [
-      {
-        "Name": "pad0x120_LQDVG[0x120]",
-        "Type": "char",
-        "Size": "0x120",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "MainVoyageCrews",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x4c0"
-      },
-      {
-        "Name": "pad0x10_HOVJH[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x4d0"
-      },
-      {
-        "Name": "ServiceParams",
-        "Type": "class CompetitiveVoyagesServiceParams*",
-        "Size": "0x8",
-        "Offset": "0x4e0"
-      },
-      {
-        "Name": "TypedServiceParams",
-        "Type": "TArray<class CompetitiveVoyagesServiceParams*>",
-        "Size": "0x10",
-        "Offset": "0x4e8"
-      },
-      {
-        "Name": "pad0x2b0_M8UWB[0x2b0]",
-        "Type": "char",
-        "Size": "0x2b0",
-        "Offset": "0x4f8"
-      },
-      {
-        "Name": "VoyageEventItems",
-        "Type": "TArray<struct CompetitiveVoyageEventItem>",
-        "Size": "0x10",
-        "Offset": "0x7a8"
-      },
-      {
-        "Name": "pad0x108_MXSVO[0x108]",
-        "Type": "char",
-        "Size": "0x108",
-        "Offset": "0x7b8"
+        "Name": "Actor",
+        "Type": "struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0x80"
       }
     ]
   },
@@ -509,7 +527,7 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x7_6UV9Y[0x7]",
+        "Name": "pad0x7_KR06R[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xb9"

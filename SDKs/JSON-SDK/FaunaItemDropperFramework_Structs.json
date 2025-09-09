@@ -1,4 +1,26 @@
 {
+  "FaunaItemDropperSpawnedItemTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "SpawnedItemName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "FaunaItemProxyStruct": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_L1KQ8[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "FaunaItemDropperHealingTelemetryEvent": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -19,28 +41,6 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x14"
-      }
-    ]
-  },
-  "FaunaItemProxyStruct": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_IGNO0[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "FaunaItemDropperSpawnedItemTelemetryEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "SpawnedItemName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
       }
     ]
   },

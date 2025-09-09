@@ -6,11 +6,26 @@
 #include "Music_Structs.h"
 
 
-// Size 0x8 (Full Size[0x3a8] - InheritedSize[0x3a0]
-class NetMusicZoneActor: public Actor
+// Size 0xf0 (Full Size[0x3c0] - InheritedSize[0x2d0]
+class MusicZoneComponent: public SceneComponent
 {
 public:
-	class MusicZoneComponent*                                    MusicZone;                                         // 0x3a0(0x8)
+	char                                                         pad0x8_ZMM6L[0x8];                                 // 0x2d0(0x8)
+	float                                                        InnerRadius;                                       // 0x2d8(0x4)
+	float                                                        OuterRadius;                                       // 0x2dc(0x4)
+	struct FName                                                 LocationRTPC;                                      // 0x2e0(0x8)
+	struct FName                                                 PlaybackPositionRTPC;                              // 0x2e8(0x8)
+	bool                                                         LocalRTPC;                                         // 0x2f0(0x1)
+	char                                                         pad0x7_X5Q1C[0x7];                                 // 0x2f1(0x7)
+	class WwiseEvent*                                            PlayEvent;                                         // 0x2f8(0x8)
+	class WwiseEvent*                                            StopEvent;                                         // 0x300(0x8)
+	TArray<class WwiseEvent*>                                    OneShotEvents;                                     // 0x308(0x10)
+	class WwiseObjectPoolWrapper*                                EmitterPool;                                       // 0x318(0x8)
+	bool                                                         DisableAfterPlayThrough;                           // 0x320(0x1)
+	bool                                                         ActivateOnBeginPlay;                               // 0x321(0x1)
+	char                                                         pad0x6_EQXSJ[0x6];                                 // 0x322(0x6)
+	struct MusicZoneRemoteValues                                 EmitterRemoteValues;                               // 0x360(0x20)
+	char                                                         pad0x40_N7RTL[0x40];                               // 0x380(0x40)
 };
 
 
@@ -18,30 +33,7 @@ public:
 class MusicZoneService: public Actor
 {
 public:
-	char                                                         pad0xc8_FZ59C[0xc8];                               // 0x3a0(0xc8)
-};
-
-
-// Size 0xf0 (Full Size[0x3c0] - InheritedSize[0x2d0]
-class MusicZoneComponent: public SceneComponent
-{
-public:
-	char                                                         pad0x8_EWO4I[0x8];                                 // 0x2d0(0x8)
-	float                                                        InnerRadius;                                       // 0x2d8(0x4)
-	float                                                        OuterRadius;                                       // 0x2dc(0x4)
-	struct FName                                                 LocationRTPC;                                      // 0x2e0(0x8)
-	struct FName                                                 PlaybackPositionRTPC;                              // 0x2e8(0x8)
-	bool                                                         LocalRTPC;                                         // 0x2f0(0x1)
-	char                                                         pad0x7_03QRN[0x7];                                 // 0x2f1(0x7)
-	class WwiseEvent*                                            PlayEvent;                                         // 0x2f8(0x8)
-	class WwiseEvent*                                            StopEvent;                                         // 0x300(0x8)
-	TArray<class WwiseEvent*>                                    OneShotEvents;                                     // 0x308(0x10)
-	class WwiseObjectPoolWrapper*                                EmitterPool;                                       // 0x318(0x8)
-	bool                                                         DisableAfterPlayThrough;                           // 0x320(0x1)
-	bool                                                         ActivateOnBeginPlay;                               // 0x321(0x1)
-	char                                                         pad0x6_P8K1K[0x6];                                 // 0x322(0x6)
-	struct MusicZoneRemoteValues                                 EmitterRemoteValues;                               // 0x360(0x20)
-	char                                                         pad0x40_6VC4I[0x40];                               // 0x380(0x40)
+	char                                                         pad0xc8_0WL2L[0xc8];                               // 0x3a0(0xc8)
 };
 
 
@@ -52,10 +44,30 @@ public:
 };
 
 
+// Size 0x8 (Full Size[0x3a8] - InheritedSize[0x3a0]
+class NetMusicZoneActor: public Actor
+{
+public:
+	class MusicZoneComponent*                                    MusicZone;                                         // 0x3a0(0x8)
+};
+
+
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class MusicZoneServiceInterface: public Interface
 {
 public:
+};
+
+
+// Size 0x20 (Full Size[0x3e0] - InheritedSize[0x3c0]
+class AISpawnerMusicZoneComponent: public MusicZoneComponent
+{
+public:
+	class WwiseEvent*                                            BattleWonEvent;                                    // 0x3b8(0x8)
+	class AISpawner*                                             AISpawner;                                         // 0x3c0(0x8)
+	TArray<class Pawn*>                                          SpawnerPawns;                                      // 0x3c8(0x10)
+	char                                                         SpawnerState;                                      // 0x3d8(0x1)
+	char                                                         pad0x7_D36H6[0x7];                                 // 0x3d9(0x7)
 };
 
 
@@ -72,19 +84,7 @@ class SynchedMusicZoneComponent: public MusicZoneComponent
 public:
 	float                                                        StartDelayTime;                                    // 0x3b8(0x4)
 	int                                                          PlayFromStartTimeMS;                               // 0x3bc(0x4)
-	char                                                         pad0x30_JLX58[0x30];                               // 0x3c0(0x30)
-};
-
-
-// Size 0x20 (Full Size[0x3e0] - InheritedSize[0x3c0]
-class AISpawnerMusicZoneComponent: public MusicZoneComponent
-{
-public:
-	class WwiseEvent*                                            BattleWonEvent;                                    // 0x3b8(0x8)
-	class AISpawner*                                             AISpawner;                                         // 0x3c0(0x8)
-	TArray<class Pawn*>                                          SpawnerPawns;                                      // 0x3c8(0x10)
-	char                                                         SpawnerState;                                      // 0x3d8(0x1)
-	char                                                         pad0x7_7Q65A[0x7];                                 // 0x3d9(0x7)
+	char                                                         pad0x30_1FMXD[0x30];                               // 0x3c0(0x30)
 };
 
 

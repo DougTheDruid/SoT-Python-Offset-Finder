@@ -12,7 +12,7 @@ class RegionAssetCacheActor: public Actor
 public:
 	TArray<struct RegionAssetsList>                              RegionData;                                        // 0x3a0(0x10)
 	TArray<class Object*>                                        LoadedAssets;                                      // 0x3b0(0x10)
-	char                                                         pad0x20_QCC51[0x20];                               // 0x3c0(0x20)
+	char                                                         pad0x20_P3H84[0x20];                               // 0x3c0(0x20)
 };
 
 
@@ -20,7 +20,7 @@ public:
 class NetworkRegionService: public Object
 {
 public:
-	char                                                         pad0x90_LOKIY[0x90];                               // 0x28(0x90)
+	char                                                         pad0x90_TSWHP[0x90];                               // 0x28(0x90)
 	TArray<class PlayerController*>                              PlayersThatNeedToBeTicked;                         // 0xb8(0x10)
 };
 

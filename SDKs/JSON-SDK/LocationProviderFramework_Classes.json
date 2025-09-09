@@ -1,13 +1,13 @@
 {
-  "LocationProviderServiceInterface": {
-    "Super": "Interface",
+  "LocationType": {
+    "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "LocationType": {
-    "Super": "Object",
+  "LocationProviderServiceInterface": {
+    "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
@@ -20,7 +20,7 @@
     "ClassSize": "0x80",
     "Attributes": [
       {
-        "Name": "pad0x80_TCIJ4[0x80]",
+        "Name": "pad0x80_FMQ7Y[0x80]",
         "Type": "char",
         "Size": "0x80",
         "Offset": "0x28"

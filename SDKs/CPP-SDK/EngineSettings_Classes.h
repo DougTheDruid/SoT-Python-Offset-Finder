@@ -6,35 +6,6 @@
 #include "EngineSettings_Structs.h"
 
 
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class ConsoleSettings: public Object
-{
-public:
-	int                                                          MaxScrollbackSize;                                 // 0x28(0x4)
-	char                                                         pad0x4_VOGN5[0x4];                                 // 0x2c(0x4)
-	TArray<struct AutoCompleteCommand>                           ManualAutoCompleteList;                            // 0x30(0x10)
-	TArray<String>                                               AutoCompleteMapPaths;                              // 0x40(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class GameSessionSettings: public Object
-{
-public:
-	int                                                          MaxSpectators;                                     // 0x28(0x4)
-	int                                                          MaxPlayers;                                        // 0x2c(0x4)
-	bool                                                         bRequiresPushToTalk;                               // 0x30(0x1)
-	char                                                         pad0x7_XM7SI[0x7];                                 // 0x31(0x7)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GeneralEngineSettings: public Object
-{
-public:
-};
-
-
 // Size 0xe8 (Full Size[0x110] - InheritedSize[0x28]
 class GeneralProjectSettings: public Object
 {
@@ -54,13 +25,21 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class HudSettings: public Object
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class GeneralEngineSettings: public Object
 {
 public:
-	bool                                                         bShowHUD;                                          // 0x28(0x1)
-	char                                                         pad0x7_3F0BE[0x7];                                 // 0x29(0x7)
-	TArray<struct Name>                                          DebugDisplay;                                      // 0x30(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class GameSessionSettings: public Object
+{
+public:
+	int                                                          MaxSpectators;                                     // 0x28(0x4)
+	int                                                          MaxPlayers;                                        // 0x2c(0x4)
+	bool                                                         bRequiresPushToTalk;                               // 0x30(0x1)
+	char                                                         pad0x7_BNGRA[0x7];                                 // 0x31(0x7)
 };
 
 
@@ -74,7 +53,7 @@ public:
 	bool                                                         bUseSplitscreen;                                   // 0x58(0x1)
 	char                                                         TwoPlayerSplitscreenLayout;                        // 0x59(0x1)
 	char                                                         ThreePlayerSplitscreenLayout;                      // 0x5a(0x1)
-	char                                                         pad0x5_H45GV[0x5];                                 // 0x5b(0x5)
+	char                                                         pad0x5_4XZKL[0x5];                                 // 0x5b(0x5)
 	struct StringClassReference                                  GameInstanceClass;                                 // 0x60(0x10)
 	struct FString                                               GameDefaultMap;                                    // 0x70(0x10)
 	struct FString                                               ServerDefaultMap;                                  // 0x80(0x10)
@@ -92,14 +71,35 @@ public:
 	int                                                          TotalNetBandwidth;                                 // 0x30(0x4)
 	int                                                          BadPingThreshold;                                  // 0x34(0x4)
 	bool                                                         bIsStandbyCheckingEnabled;                         // 0x38(0x1)
-	char                                                         pad0x3_USHBX[0x3];                                 // 0x39(0x3)
+	char                                                         pad0x3_LQ6G5[0x3];                                 // 0x39(0x3)
 	float                                                        StandbyRxCheatTime;                                // 0x3c(0x4)
 	float                                                        StandbyTxCheatTime;                                // 0x40(0x4)
 	float                                                        PercentMissingForRxStandby;                        // 0x44(0x4)
 	float                                                        PercentMissingForTxStandby;                        // 0x48(0x4)
 	float                                                        PercentForBadPing;                                 // 0x4c(0x4)
 	float                                                        JoinInProgressStandbyWaitTime;                     // 0x50(0x4)
-	char                                                         pad0x4_XFTC2[0x4];                                 // 0x54(0x4)
+	char                                                         pad0x4_22OBD[0x4];                                 // 0x54(0x4)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class ConsoleSettings: public Object
+{
+public:
+	int                                                          MaxScrollbackSize;                                 // 0x28(0x4)
+	char                                                         pad0x4_2P6RA[0x4];                                 // 0x2c(0x4)
+	TArray<struct AutoCompleteCommand>                           ManualAutoCompleteList;                            // 0x30(0x10)
+	TArray<String>                                               AutoCompleteMapPaths;                              // 0x40(0x10)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class HudSettings: public Object
+{
+public:
+	bool                                                         bShowHUD;                                          // 0x28(0x1)
+	char                                                         pad0x7_EIYEI[0x7];                                 // 0x29(0x7)
+	TArray<struct Name>                                          DebugDisplay;                                      // 0x30(0x10)
 };
 
 

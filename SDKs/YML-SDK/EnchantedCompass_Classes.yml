@@ -14,7 +14,7 @@ EnchantedCompassProximityAnnouncementComponent:
     Offset: '0xc8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_9KCB9[0x4]
+  - Name: pad0x4_JMORP[0x4]
     Offset: '0xcc'
     Size: '0x4'
     Type: char
@@ -22,7 +22,7 @@ EnchantedCompassProximityAnnouncementComponent:
     Offset: '0x110'
     Size: '0x1'
     Type: bool
-  - Name: pad0xef_R106L[0xef]
+  - Name: pad0xef_EHPZR[0xef]
     Offset: '0x111'
     Size: '0xef'
     Type: char
@@ -48,7 +48,7 @@ MultiTargetEnchantedCompass:
     Offset: '0x910'
     Size: '0x8'
     Type: class EnchantedCompassProximityAnnouncementComponent*
-  - Name: pad0x8_2JDQC[0x8]
+  - Name: pad0x8_R0UA6[0x8]
     Offset: '0x918'
     Size: '0x8'
     Type: char
@@ -88,7 +88,7 @@ RotatingCompass:
     Offset: '0xa00'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_L7I8D[0x3]
+  - Name: pad0x3_IXO6G[0x3]
     Offset: '0xa01'
     Size: '0x3'
     Type: char
@@ -100,7 +100,7 @@ RotatingCompass:
     Offset: '0xa08'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_XD1VI[0x4]
+  - Name: pad0x4_5XMFZ[0x4]
     Offset: '0xa0c'
     Size: '0x4'
     Type: char
@@ -112,7 +112,7 @@ RotatingCompass:
     Offset: '0xa58'
     Size: '0x4'
     Type: float
-  - Name: pad0x14_A35CL[0x14]
+  - Name: pad0x14_RUNU6[0x14]
     Offset: '0xa5c'
     Size: '0x14'
     Type: char
@@ -122,7 +122,7 @@ RotatingCompass:
   Super: EnchantedCompass
 RotatingCompassSpinComponent:
   Attributes:
-  - Name: pad0x8_JHQAA[0x8]
+  - Name: pad0x8_096XH[0x8]
     Offset: '0x1d8'
     Size: '0x8'
     Type: char
@@ -156,7 +156,7 @@ TaleQuestMultiTargetCompassAddTrackedLocationStepDesc:
   Super: TaleQuestStepDesc
 TaleQuestMultiTargetCompassRemoveTrackedLocationStep:
   Attributes:
-  - Name: pad0x10_G6T59[0x10]
+  - Name: pad0x10_M9JX9[0x10]
     Offset: '0x98'
     Size: '0x10'
     Type: char
@@ -176,7 +176,7 @@ TaleQuestMultiTargetCompassRemoveTrackedLocationStepDesc:
   Super: TaleQuestStepDesc
 TaleQuestMultiTargetCompassService:
   Attributes:
-  - Name: pad0x20_O4T4T[0x20]
+  - Name: pad0x20_F84HA[0x20]
     Offset: '0x170'
     Size: '0x20'
     Type: char
@@ -202,7 +202,7 @@ TaleQuestRotatingCompassFunctionLibrary:
   Super: TaleQuestFunctionStepLibrary
 TaleQuestRotatingCompassService:
   Attributes:
-  - Name: pad0x18_8NMDZ[0x18]
+  - Name: pad0x18_5T0S9[0x18]
     Offset: '0x60'
     Size: '0x18'
     Type: char
@@ -214,7 +214,7 @@ TaleQuestRotatingCompassService:
     Offset: '0x80'
     Size: '0x8'
     Type: class RotatingCompass*
-  - Name: pad0x98_2KW4C[0x98]
+  - Name: pad0x98_9RKFY[0x98]
     Offset: '0x88'
     Size: '0x98'
     Type: char
@@ -230,7 +230,7 @@ TaleQuestRotatingCompassServiceDesc:
   Super: TaleQuestServiceDesc
 TaleQuestRotatingCompassSplinePathSetupAndWaitForCompletionStep:
   Attributes:
-  - Name: pad0x8_7JXY0[0x8]
+  - Name: pad0x8_BZ632[0x8]
     Offset: '0x98'
     Size: '0x8'
     Type: char
@@ -254,7 +254,7 @@ TaleQuestSetCompassTargetBaseStepDesc:
     Offset: '0x80'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_HC1KG[0x7]
+  - Name: pad0x7_TDVBY[0x7]
     Offset: '0x81'
     Size: '0x7'
     Type: char
@@ -284,7 +284,7 @@ TaleQuestSetCompassTargetToPointStepDesc:
   Super: TaleQuestSetCompassTargetBaseStepDesc
 TaleQuestSetCompassTargetToTargetStep:
   Attributes:
-  - Name: pad0x60_DZNBV[0x60]
+  - Name: pad0x60_YURPZ[0x60]
     Offset: '0x98'
     Size: '0x60'
     Type: char

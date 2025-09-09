@@ -1,46 +1,34 @@
 {
-  "ShantyPuzzleInteractionZoneDefinition": {
-    "ClassSize": "0x18",
+  "ShantyPuzzleSingleInteractionZoneStopInteractingEvent": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
+        "Name": "Player",
+        "Type": "class Actor*",
+        "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "Radius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "RequiredMusicalInstrumentType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x3_PSZ6T[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x11"
-      },
-      {
-        "Name": "RequiredNumInteractors",
+        "Name": "InteractionZoneIdx",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x14"
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_47YXO[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
       }
     ]
   },
-  "ShantyPuzzleUnlockCanceledEvent": {
-    "ClassSize": "0x1",
+  "ShantyPuzzlePlayerExitInteractionZoneEvent": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x1_OC0PD[0x1]",
-        "Type": "char",
-        "Size": "0x1",
+        "Name": "Player",
+        "Type": "class Actor*",
+        "Size": "0x8",
         "Offset": "0x0"
       }
     ]
@@ -49,7 +37,7 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_8BKDD[0x1]",
+        "Name": "pad0x1_CKPE1[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
@@ -83,43 +71,55 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_PXHSI[0x4]",
+        "Name": "pad0x4_I1M5G[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
       }
     ]
   },
-  "ShantyPuzzleSingleInteractionZoneStopInteractingEvent": {
-    "ClassSize": "0x10",
+  "ShantyPuzzleInteractionZoneDefinition": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "Player",
-        "Type": "class Actor*",
-        "Size": "0x8",
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
         "Offset": "0x0"
       },
       {
-        "Name": "InteractionZoneIdx",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x4_8YT4S[0x4]",
-        "Type": "char",
+        "Name": "Radius",
+        "Type": "float",
         "Size": "0x4",
         "Offset": "0xc"
+      },
+      {
+        "Name": "RequiredMusicalInstrumentType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x3_P1FWD[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "RequiredNumInteractors",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
       }
     ]
   },
-  "ShantyPuzzlePlayerExitInteractionZoneEvent": {
-    "ClassSize": "0x8",
+  "ShantyPuzzleUnlockCanceledEvent": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "Player",
-        "Type": "class Actor*",
-        "Size": "0x8",
+        "Name": "pad0x1_ZO25R[0x1]",
+        "Type": "char",
+        "Size": "0x1",
         "Offset": "0x0"
       }
     ]

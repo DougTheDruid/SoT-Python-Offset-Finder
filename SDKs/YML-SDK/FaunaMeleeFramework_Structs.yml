@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 EventFaunaMeleeComponentAttack:
   Attributes:
-  - Name: pad0x8_FK7N4[0x8]
+  - Name: pad0x8_VI62U[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char

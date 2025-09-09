@@ -1,37 +1,4 @@
 {
-  "PromptsServiceSetupEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_QMNB2[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "PrioritisedPromptHandle": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Id",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "PromptsCounterIncrementEvent": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "AccessKey",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "PlayerPromptTelemetryEvent": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -49,6 +16,39 @@
       }
     ]
   },
+  "PromptsServiceSetupEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_IGE9C[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "PromptsCounterIncrementEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "AccessKey",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "PrioritisedPromptHandle": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Id",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "PrioritisedPrompt": {
     "ClassSize": "0x60",
     "Attributes": [
@@ -59,7 +59,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_DI7E2[0x7]",
+        "Name": "pad0x7_JHUA0[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -95,7 +95,7 @@
         "Offset": "0x59"
       },
       {
-        "Name": "pad0x6_X6HW1[0x6]",
+        "Name": "pad0x6_YZ9D1[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x5a"
@@ -119,11 +119,34 @@
       }
     ]
   },
+  "PromptEvaluation": {
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "PromptType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_NK1V4[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "Prompt",
+        "Type": "struct PrioritisedPromptWithHandle",
+        "Size": "0x70",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "PermanentPromptNetworkEvent": {
     "ClassSize": "0x90",
     "Attributes": [
       {
-        "Name": "pad0x18_F2JCY[0x18]",
+        "Name": "pad0x18_YBLOJ[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"
@@ -141,33 +164,10 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x7_3877B[0x7]",
+        "Name": "pad0x7_MOJ4Y[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x89"
-      }
-    ]
-  },
-  "PromptEvaluation": {
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "PromptType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x7_LG6BE[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "Prompt",
-        "Type": "struct PrioritisedPromptWithHandle",
-        "Size": "0x70",
-        "Offset": "0x8"
       }
     ]
   },
