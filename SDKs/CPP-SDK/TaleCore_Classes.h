@@ -6,20 +6,20 @@
 #include "TaleCore_Structs.h"
 
 
-// Size 0x18 (Full Size[0x3b8] - InheritedSize[0x3a0]
-class ClientCommandHandler: public Actor
-{
-public:
-	struct ClientCommandQueue                                    CommandQueue;                                      // 0x3a0(0x18)
-};
-
-
 // Size 0x30 (Full Size[0xb8] - InheritedSize[0x88]
 class TaleStruct: public Struct
 {
 public:
 	struct Guid                                                  StructId;                                          // 0x88(0x10)
-	char                                                         pad0x20_5Y3GG[0x20];                               // 0x98(0x20)
+	char                                                         pad0x20_BKS9U[0x20];                               // 0x98(0x20)
+};
+
+
+// Size 0x18 (Full Size[0x3b8] - InheritedSize[0x3a0]
+class ClientCommandHandler: public Actor
+{
+public:
+	struct ClientCommandQueue                                    CommandQueue;                                      // 0x3a0(0x18)
 };
 
 

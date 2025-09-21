@@ -22,28 +22,28 @@ SessionServiceLog:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_D8ZPV[0x7]
+  - Name: pad0x7_XQ5UU[0x7]
     Offset: '0x31'
     Size: '0x7'
     Type: char
   ClassSize: '0x38'
 SessionServiceLogSubscribe:
   Attributes:
-  - Name: pad0x1_VF0IB[0x1]
+  - Name: pad0x1_4HEIM[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 SessionServiceLogUnsubscribe:
   Attributes:
-  - Name: pad0x1_5TBQ0[0x1]
+  - Name: pad0x1_XM73O[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 SessionServicePing:
   Attributes:
-  - Name: pad0x1_AJNVL[0x1]
+  - Name: pad0x1_D8UEZ[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -70,7 +70,7 @@ SessionServicePong:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_SIB84[0x7]
+  - Name: pad0x7_C1GFW[0x7]
     Offset: '0x41'
     Size: '0x7'
     Type: char
@@ -94,7 +94,7 @@ SessionServicePong:
     Offset: '0x88'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_V9LA0[0x7]
+  - Name: pad0x7_U14S9[0x7]
     Offset: '0x89'
     Size: '0x7'
     Type: char

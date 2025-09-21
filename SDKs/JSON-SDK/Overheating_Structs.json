@@ -1,45 +1,4 @@
 {
-  "CooldownOverheatingTelemetryEvent": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "CooldownInstigatorActorName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "BootyId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "CooldownByNumber",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "CurrentOverheatingSum",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x24"
-      },
-      {
-        "Name": "CooldownReason",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x7_TYRR1[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x29"
-      }
-    ]
-  },
   "HeatUpOverheatingTelemetryEvent": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -74,7 +33,48 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_FDK8N[0x7]",
+        "Name": "pad0x7_YQ7JK[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x29"
+      }
+    ]
+  },
+  "CooldownOverheatingTelemetryEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "CooldownInstigatorActorName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BootyId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "CooldownByNumber",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "CurrentOverheatingSum",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "CooldownReason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x7_4P9DH[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x29"
@@ -91,7 +91,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_JWQE3[0x3]",
+        "Name": "pad0x3_OGOFU[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"

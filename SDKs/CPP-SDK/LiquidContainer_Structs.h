@@ -8,7 +8,7 @@ struct LiquidTypeParams
 {
 public:
 	char                                                         LiquidType;                                        // 0x0(0x1)
-	char                                                         pad0x3_O9853[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_ATA9B[0x3];                                 // 0x1(0x3)
 	struct Vector                                                FogColour;                                         // 0x4(0xc)
 	struct Vector                                                LiquidColour;                                      // 0x10(0xc)
 	struct Vector                                                ScumColour;                                        // 0x1c(0xc)

@@ -1,50 +1,4 @@
 {
-  "ServerSpireInfo": {
-    "ClassSize": "0x68",
-    "Attributes": [
-      {
-        "Name": "LevelId",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "SpireActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x50_2F7QV[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "SpireEntry": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "IslandName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xc"
-      }
-    ]
-  },
   "SpireInfo": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -67,10 +21,56 @@
         "Offset": "0x5"
       },
       {
-        "Name": "pad0x2_53O72[0x2]",
+        "Name": "pad0x2_PYCCM[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x6"
+      }
+    ]
+  },
+  "SpireEntry": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "IslandName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "ServerSpireInfo": {
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Name": "LevelId",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "SpireActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x50_84PH8[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x18"
       }
     ]
   },

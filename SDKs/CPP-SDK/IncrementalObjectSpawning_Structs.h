@@ -13,17 +13,8 @@ public:
 	double                                                       StdDevTimeSpentMs;                                 // 0x18(0x8)
 	float                                                        StdDevChildActorComponentsProcessed;               // 0x2c(0x4)
 	int                                                          TotalFrames;                                       // 0x30(0x4)
-	char                                                         pad0x4_KNGJ6[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_MKARV[0x4];                                 // 0x34(0x4)
 	double                                                       TotalTimeMs;                                       // 0x38(0x8)
-};
-
-
-// Size 0x20
-struct IncrementalActorBuilderCanceledTelemetryEvent
-{
-public:
-	struct Guid                                                  BuildId;                                           // 0x0(0x10)
-	struct FString                                               ActorClassName;                                    // 0x10(0x10)
 };
 
 
@@ -32,7 +23,7 @@ struct PerObjectIncrementalActorBuildStepStats
 {
 public:
 	int                                                          NumChildActorComponents;                           // 0x0(0x4)
-	char                                                         pad0x4_ZY9LC[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_8YQHM[0x4];                                 // 0x4(0x4)
 	struct FString                                               SlowestChildActorComponentName;                    // 0x8(0x10)
 	double                                                       MinTimeSpentMs;                                    // 0x18(0x8)
 	double                                                       MaxTimeSpentMs;                                    // 0x20(0x8)
@@ -53,6 +44,15 @@ public:
 
 // Size 0x20
 struct IncrementalActorBuilderStartedTelemetryEvent
+{
+public:
+	struct Guid                                                  BuildId;                                           // 0x0(0x10)
+	struct FString                                               ActorClassName;                                    // 0x10(0x10)
+};
+
+
+// Size 0x20
+struct IncrementalActorBuilderCanceledTelemetryEvent
 {
 public:
 	struct Guid                                                  BuildId;                                           // 0x0(0x10)

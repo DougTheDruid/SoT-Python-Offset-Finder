@@ -6,25 +6,11 @@
 #include "OceanCrawlersAnimation_Structs.h"
 
 
-// Size 0x2e0 (Full Size[0x720] - InheritedSize[0x440]
-class OceanCrawlerAnimationInstance: public AnimInstance
+// Size 0x90 (Full Size[0xb8] - InheritedSize[0x28]
+class OceanCrawlerAnimationData: public AnimationData
 {
 public:
-	char                                                         pad0x18_WKWJW[0x18];                               // 0x440(0x18)
-	struct OceanCrawlerAnimationDataStructure                    LoadedAnimations;                                  // 0x458(0x90)
-	struct ActorVelocityData                                     MovementData;                                      // 0x4e8(0x18)
-	float                                                        CurrentDirection;                                  // 0x500(0x4)
-	char                                                         pad0x4_IR96F[0x4];                                 // 0x504(0x4)
-	struct AthenaAnimationWeapon                                 AttackAnims;                                       // 0x508(0xb8)
-	bool                                                         UseDefaultAnimations;                              // 0x5c0(0x1)
-	bool                                                         AnimationsLoaded;                                  // 0x5c1(0x1)
-	bool                                                         SporeBreathActive;                                 // 0x5c2(0x1)
-	char                                                         pad0x1_TC5E9[0x1];                                 // 0x5c3(0x1)
-	struct FName                                                 PropAttachmentSocket;                              // 0x5c4(0x8)
-	char                                                         pad0x4_ZB5MF[0x4];                                 // 0x5cc(0x4)
-	struct CustomAnimationMontageStateMachine                    MontagePlayer;                                     // 0x5d0(0xd8)
-	struct HitReactionAnimationState                             HitReacts;                                         // 0x6a8(0x28)
-	char                                                         pad0x50_8JN8R[0x50];                               // 0x6d0(0x50)
+	struct OceanCrawlerAnimationDataStructure                    OceanCrawlerAnimationDataStructure;                // 0x28(0x90)
 };
 
 
@@ -32,20 +18,34 @@ public:
 class OceanCrawlerAnimationServerData: public AnimationServerData
 {
 public:
-	char                                                         pad0x8_P9IB9[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_UG59P[0x8];                                 // 0x28(0x8)
 	class UClass*                                                AnimInstanceType;                                  // 0x30(0x8)
 	float                                                        MaxSpawnAnimDuration;                              // 0x38(0x4)
 	float                                                        MaxSpawnOnShipAnimDuration;                        // 0x3c(0x4)
 	float                                                        MaxSpawnBoardingAnimDuration;                      // 0x40(0x4)
-	char                                                         pad0x4_SACEX[0x4];                                 // 0x44(0x4)
+	char                                                         pad0x4_SEZ5H[0x4];                                 // 0x44(0x4)
 };
 
 
-// Size 0x90 (Full Size[0xb8] - InheritedSize[0x28]
-class OceanCrawlerAnimationData: public AnimationData
+// Size 0x2e0 (Full Size[0x720] - InheritedSize[0x440]
+class OceanCrawlerAnimationInstance: public AnimInstance
 {
 public:
-	struct OceanCrawlerAnimationDataStructure                    OceanCrawlerAnimationDataStructure;                // 0x28(0x90)
+	char                                                         pad0x18_P5BSB[0x18];                               // 0x440(0x18)
+	struct OceanCrawlerAnimationDataStructure                    LoadedAnimations;                                  // 0x458(0x90)
+	struct ActorVelocityData                                     MovementData;                                      // 0x4e8(0x18)
+	float                                                        CurrentDirection;                                  // 0x500(0x4)
+	char                                                         pad0x4_R64L8[0x4];                                 // 0x504(0x4)
+	struct AthenaAnimationWeapon                                 AttackAnims;                                       // 0x508(0xb8)
+	bool                                                         UseDefaultAnimations;                              // 0x5c0(0x1)
+	bool                                                         AnimationsLoaded;                                  // 0x5c1(0x1)
+	bool                                                         SporeBreathActive;                                 // 0x5c2(0x1)
+	char                                                         pad0x1_R0KD3[0x1];                                 // 0x5c3(0x1)
+	struct FName                                                 PropAttachmentSocket;                              // 0x5c4(0x8)
+	char                                                         pad0x4_VCYRT[0x4];                                 // 0x5cc(0x4)
+	struct CustomAnimationMontageStateMachine                    MontagePlayer;                                     // 0x5d0(0xd8)
+	struct HitReactionAnimationState                             HitReacts;                                         // 0x6a8(0x28)
+	char                                                         pad0x50_M07N0[0x50];                               // 0x6d0(0x50)
 };
 
 

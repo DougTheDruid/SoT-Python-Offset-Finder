@@ -16,26 +16,44 @@
       }
     ]
   },
-  "WeightedProjectileMeshAnimationData": {
-    "ClassSize": "0x178",
+  "WeightedFireworkVFXData": {
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "AnimationCurve",
-        "Type": "struct RuntimeVectorCurve",
-        "Size": "0x170",
+        "Name": "VFX",
+        "Type": "class Object*",
+        "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "Sfx",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "SecondarySFX",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x10"
       },
       {
         "Name": "Weight",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x170"
+        "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_9LLMO[0x4]",
+        "Name": "AmbientLightColour",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "pad0x4_UXO3X[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x174"
+        "Offset": "0x2c"
       }
     ]
   },
@@ -43,7 +61,7 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x8_EUM2A[0x8]",
+        "Name": "pad0x8_3QA2B[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"
@@ -67,10 +85,33 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x20_296Z8[0x20]",
+        "Name": "pad0x20_RW0PI[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x20"
+      }
+    ]
+  },
+  "WeightedProjectileMeshAnimationData": {
+    "ClassSize": "0x178",
+    "Attributes": [
+      {
+        "Name": "AnimationCurve",
+        "Type": "struct RuntimeVectorCurve",
+        "Size": "0x170",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Weight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x170"
+      },
+      {
+        "Name": "pad0x4_CD4OO[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x174"
       }
     ]
   },
@@ -109,52 +150,11 @@
       }
     ]
   },
-  "WeightedFireworkVFXData": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "VFX",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Sfx",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "SecondarySFX",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Weight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "AmbientLightColour",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0x1c"
-      },
-      {
-        "Name": "pad0x4_L21IN[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      }
-    ]
-  },
   "GeneratedFireworkData": {
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "pad0xc_V5UT7[0xc]",
+        "Name": "pad0xc_SFO3K[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x0"
@@ -166,7 +166,7 @@
         "Offset": "0xc"
       },
       {
-        "Name": "pad0x8_PY0CK[0x8]",
+        "Name": "pad0x8_XLBK0[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x20"
@@ -190,7 +190,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x8_WLQEV[0x8]",
+        "Name": "pad0x8_89L0C[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x48"

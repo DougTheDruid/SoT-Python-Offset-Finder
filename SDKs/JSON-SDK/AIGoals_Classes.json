@@ -1,50 +1,4 @@
 {
-  "BTService_SetBestActionSpotNearTarget": {
-    "Super": "BTService",
-    "FullSize": "0x110",
-    "InheritedSize": "0x70",
-    "ClassSize": "0xa0",
-    "Attributes": [
-      {
-        "Name": "TargetKey",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "BestActionSpotKey",
-        "Type": "struct BlackboardKeySelector",
-        "Size": "0x28",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "BestActionSpotSelectionCriteria",
-        "Type": "struct BestActionSpotSelectionCriteria",
-        "Size": "0x34",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "pad0x1c_VQBOK[0x1c]",
-        "Type": "char",
-        "Size": "0x1c",
-        "Offset": "0xf4"
-      }
-    ]
-  },
-  "WhileBlackboardKeySetAIGoal": {
-    "Super": "AIGoal",
-    "FullSize": "0x48",
-    "InheritedSize": "0x40",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "BlackboardKey",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x40"
-      }
-    ]
-  },
   "AlwaysEvaluatesTrueAIGoal": {
     "Super": "AIGoal",
     "FullSize": "0x40",
@@ -71,68 +25,24 @@
         "Offset": "0x44"
       },
       {
-        "Name": "pad0x30_54RFE[0x30]",
+        "Name": "pad0x30_W1VHT[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x48"
       }
     ]
   },
-  "AIHomeComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xc8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x8_ZDZ1F[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "HomeActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0xc0"
-      }
-    ]
-  },
-  "WhilePlayerWithinAreaAIGoal": {
+  "WhileBlackboardKeySetAIGoal": {
     "Super": "AIGoal",
-    "FullSize": "0xf0",
+    "FullSize": "0x48",
     "InheritedSize": "0x40",
-    "ClassSize": "0xb0",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "EnterAreaTriggerDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "ExitAreaTriggerDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "MovementModeFilter",
-        "Type": "struct AIGoalMovementModeFilter",
-        "Size": "0x20",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "TargetPlayerPawn",
-        "Type": "class Pawn*",
+        "Name": "BlackboardKey",
+        "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "pad0x80_BE2KM[0x80]",
-        "Type": "char",
-        "Size": "0x80",
-        "Offset": "0x70"
+        "Offset": "0x40"
       }
     ]
   },
@@ -167,7 +77,7 @@
         "Offset": "0x68"
       },
       {
-        "Name": "pad0x7_0DU3Y[0x7]",
+        "Name": "pad0x7_E67WB[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x69"
@@ -186,6 +96,96 @@
     "InheritedSize": "0x40",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "WhilePlayerWithinAreaAIGoal": {
+    "Super": "AIGoal",
+    "FullSize": "0xf0",
+    "InheritedSize": "0x40",
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "EnterAreaTriggerDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "ExitAreaTriggerDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "MovementModeFilter",
+        "Type": "struct AIGoalMovementModeFilter",
+        "Size": "0x20",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "TargetPlayerPawn",
+        "Type": "class Pawn*",
+        "Size": "0x8",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "pad0x80_FWLHY[0x80]",
+        "Type": "char",
+        "Size": "0x80",
+        "Offset": "0x70"
+      }
+    ]
+  },
+  "BTService_SetBestActionSpotNearTarget": {
+    "Super": "BTService",
+    "FullSize": "0x110",
+    "InheritedSize": "0x70",
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Name": "TargetKey",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "BestActionSpotKey",
+        "Type": "struct BlackboardKeySelector",
+        "Size": "0x28",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "BestActionSpotSelectionCriteria",
+        "Type": "struct BestActionSpotSelectionCriteria",
+        "Size": "0x34",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "pad0x1c_SP504[0x1c]",
+        "Type": "char",
+        "Size": "0x1c",
+        "Offset": "0xf4"
+      }
+    ]
+  },
+  "AIHomeComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x8_WSTDD[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "HomeActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0xc0"
+      }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

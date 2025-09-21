@@ -6,18 +6,18 @@
 #include "ContestMatchmaking_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ContestMatchmakingProviderInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class ContestMatchmakingFactionMapping: public Object
 {
 public:
 	TArray<struct ContestMatchmakingFactionMapEntry>             Factions;                                          // 0x28(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ContestMatchmakingProviderInterface: public Interface
+{
+public:
 };
 
 

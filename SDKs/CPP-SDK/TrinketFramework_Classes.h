@@ -7,28 +7,14 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TrinketSetControlInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class TrinketLoadoutFinderPolicyBase: public Object
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TrinketAudioInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x88] - InheritedSize[0x88]
-class TrinketCategory: public CategoryBase
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TrinketLoadoutControlInterface: public Interface
 {
 public:
 };
@@ -44,6 +30,20 @@ public:
 };
 
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TrinketAudioInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TrinketLoadoutControlInterface: public Interface
+{
+public:
+};
+
+
 // Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
 class TrinketSfxDataAsset: public DataAsset
 {
@@ -56,7 +56,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TrinketSetControlInterface: public Interface
+class TrinketLoadoutViewInterface: public Interface
 {
 public:
 };
@@ -66,19 +66,12 @@ public:
 class TrinketReplacementActor: public Actor
 {
 public:
-	char                                                         pad0x10_59WK2[0x10];                               // 0x3a0(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TrinketLoadoutViewInterface: public Interface
-{
-public:
+	char                                                         pad0x10_JZGLX[0x10];                               // 0x3a0(0x10)
 };
 
 
 // Size 0x0 (Full Size[0x88] - InheritedSize[0x88]
-class InvalidTrinketCategory: public TrinketCategory
+class TrinketCategory: public CategoryBase
 {
 public:
 };
@@ -88,7 +81,14 @@ public:
 class SameActorTrinketLoadoutFinderPolicy: public TrinketLoadoutFinderPolicyBase
 {
 public:
-	char                                                         pad0x10_1HWWY[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_MQH3Z[0x10];                               // 0x28(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x88] - InheritedSize[0x88]
+class InvalidTrinketCategory: public TrinketCategory
+{
+public:
 };
 
 

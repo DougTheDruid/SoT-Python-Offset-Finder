@@ -10,7 +10,7 @@
 class CustomMeshComponent: public MeshComponent
 {
 public:
-	char                                                         pad0x10_RJIOD[0x10];                               // 0x5b0(0x10)
+	char                                                         pad0x10_F7GBT[0x10];                               // 0x5b0(0x10)
 };
 
 

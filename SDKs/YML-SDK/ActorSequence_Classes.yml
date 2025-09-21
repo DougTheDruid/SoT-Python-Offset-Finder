@@ -32,7 +32,7 @@ ActorSequenceComponent:
     Offset: '0xf0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_04DQO[0x7]
+  - Name: pad0x7_POI0T[0x7]
     Offset: '0xf1'
     Size: '0x7'
     Type: char

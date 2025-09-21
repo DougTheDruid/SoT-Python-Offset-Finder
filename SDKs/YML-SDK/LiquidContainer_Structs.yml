@@ -6,7 +6,7 @@ LiquidTypeParams:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_O9853[0x3]
+  - Name: pad0x3_ATA9B[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char

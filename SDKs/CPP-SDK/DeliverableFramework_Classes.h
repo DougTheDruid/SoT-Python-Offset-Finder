@@ -7,7 +7,54 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DeliverableRedirectionInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
+class DeliverableRedirectionComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_26TZ8[0x8];                                 // 0xb8(0x8)
+	class DeliverableRedirectionContextBase*                     Context;                                           // 0xc0(0x8)
+};
+
+
+// Size 0x18 (Full Size[0xd0] - InheritedSize[0xb8]
+class DeliverableComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x10_W5JJY[0x10];                               // 0xb8(0x10)
+	class DeliverableRequirementsDataAsset*                      DeliveryRequirementsAsset;                         // 0xc8(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class DeliverableRedirectionContextHandlerBase: public Object
+{
+public:
+	class DeliverableRedirectionDestinationDescriptorBase*       DestinationDescriptor;                             // 0x28(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class DeliverableInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DeliverableRedirectionDestinationDescriptorBase: public Object
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DeliverableTooltipCustomizerInterface: public Interface
 {
 public:
 };
@@ -22,58 +69,11 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0xd0] - InheritedSize[0xb8]
-class DeliverableComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x10_GUSK7[0x10];                               // 0xb8(0x10)
-	class DeliverableRequirementsDataAsset*                      DeliveryRequirementsAsset;                         // 0xc8(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DeliverableRedirectionDestinationDescriptorBase: public Object
-{
-public:
-};
-
-
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class DeliverableRedirectionContextHandlerBase: public Object
-{
-public:
-	class DeliverableRedirectionDestinationDescriptorBase*       DestinationDescriptor;                             // 0x28(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DeliverableTooltipCustomizerInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DeliverableRedirectionInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
 class DeliverableRequirementBase: public Object
 {
 public:
-	char                                                         pad0x8_5AU75[0x8];                                 // 0x28(0x8)
-};
-
-
-// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
-class DeliverableRedirectionComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_ZD6XU[0x8];                                 // 0xb8(0x8)
-	class DeliverableRedirectionContextBase*                     Context;                                           // 0xc0(0x8)
+	char                                                         pad0x8_S0UYS[0x8];                                 // 0x28(0x8)
 };
 
 
@@ -91,20 +91,20 @@ public:
 };
 
 
-// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
-class DeliverableRedirectionLiteralDestinationDescriptor: public DeliverableRedirectionDestinationDescriptorBase
-{
-public:
-	struct FText                                                 Destination;                                       // 0x28(0x38)
-};
-
-
 // Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
 class DeliverableRedirectionCompositeContext: public DeliverableRedirectionContextBase
 {
 public:
 	TArray<class DeliverableRedirectionContextBase*>             Contexts;                                          // 0x28(0x10)
-	char                                                         pad0x18_ZDD43[0x18];                               // 0x38(0x18)
+	char                                                         pad0x18_R0SNE[0x18];                               // 0x38(0x18)
+};
+
+
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
+class DeliverableRedirectionLiteralDestinationDescriptor: public DeliverableRedirectionDestinationDescriptorBase
+{
+public:
+	struct FText                                                 Destination;                                       // 0x28(0x38)
 };
 
 

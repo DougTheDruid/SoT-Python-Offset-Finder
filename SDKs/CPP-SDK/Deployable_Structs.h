@@ -4,20 +4,11 @@
 // https://github.com/DougTheDruid
 
 // Size 0x1c
-struct UndeployableDeployedTelemetryEvent
+struct DeployableDeployedTelemetryEvent
 {
 public:
 	struct Guid                                                  DeployableID;                                      // 0x0(0x10)
 	struct Vector                                                Location;                                          // 0x10(0xc)
-};
-
-
-// Size 0x20
-struct FailedDeploymentTelemetryEvent
-{
-public:
-	struct Guid                                                  DeployableID;                                      // 0x0(0x10)
-	struct Vector                                                Location;                                          // 0x14(0xc)
 };
 
 
@@ -50,11 +41,20 @@ public:
 
 
 // Size 0x1c
-struct DeployableDeployedTelemetryEvent
+struct UndeployableDeployedTelemetryEvent
 {
 public:
 	struct Guid                                                  DeployableID;                                      // 0x0(0x10)
 	struct Vector                                                Location;                                          // 0x10(0xc)
+};
+
+
+// Size 0x20
+struct FailedDeploymentTelemetryEvent
+{
+public:
+	struct Guid                                                  DeployableID;                                      // 0x0(0x10)
+	struct Vector                                                Location;                                          // 0x14(0xc)
 };
 
 

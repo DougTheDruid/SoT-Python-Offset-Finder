@@ -13,14 +13,14 @@ public:
 };
 
 
-// Size 0x140 (Full Size[0x4e0] - InheritedSize[0x3a0]
+// Size 0x148 (Full Size[0x4e8] - InheritedSize[0x3a0]
 class NavalBattleService: public Actor
 {
 public:
-	char                                                         pad0x8_C2SK5[0x8];                                 // 0x3a0(0x8)
+	char                                                         pad0x8_MN5YC[0x8];                                 // 0x3a0(0x8)
 	float                                                        BattleRange;                                       // 0x3a8(0x4)
 	float                                                        BattleTime;                                        // 0x3ac(0x4)
-	char                                                         pad0x130_G8XKH[0x130];                             // 0x3b0(0x130)
+	char                                                         pad0x138_9U2UY[0x138];                             // 0x3b0(0x138)
 };
 
 

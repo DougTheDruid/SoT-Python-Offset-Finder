@@ -10,23 +10,6 @@
       }
     ]
   },
-  "EngineServiceAuthDeny": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "UserName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "UserToDeny",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "EngineServicePong": {
     "ClassSize": "0x50",
     "Attributes": [
@@ -49,7 +32,7 @@
         "Offset": "0x14"
       },
       {
-        "Name": "pad0x3_BZGXN[0x3]",
+        "Name": "pad0x3_2226I[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x15"
@@ -79,21 +62,44 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_TG4QK[0x4]",
+        "Name": "pad0x4_M5EL6[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
       }
     ]
   },
-  "EngineServicePing": {
-    "ClassSize": "0x1",
+  "EngineServiceExecuteCommand": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x1_V5KOC[0x1]",
-        "Type": "char",
-        "Size": "0x1",
+        "Name": "Command",
+        "Type": "struct FString",
+        "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "UserName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EngineServiceAuthDeny": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "UserName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "UserToDeny",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
@@ -114,6 +120,17 @@
       }
     ]
   },
+  "EngineServicePing": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_U0OUB[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "EngineServiceNotification": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -127,23 +144,6 @@
         "Name": "TimeSeconds",
         "Type": "double",
         "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "EngineServiceExecuteCommand": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Command",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "UserName",
-        "Type": "struct FString",
-        "Size": "0x10",
         "Offset": "0x10"
       }
     ]

@@ -4,39 +4,10 @@
 // https://github.com/DougTheDruid
 
 // Size 0x1
-struct OnEndCrouchEvent
-{
-public:
-	char                                                         pad0x1_RWEIS[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x1
 struct CrouchToastEvent
 {
 public:
 	bool                                                         IsCrouching;                                       // 0x0(0x1)
-};
-
-
-// Size 0x8
-struct OnStartCrouchAudioEvent
-{
-public:
-	class WwiseEvent*                                            CrouchStart;                                       // 0x0(0x8)
-};
-
-
-// Size 0x40
-struct CrouchTelemetry
-{
-public:
-	double                                                       TimeSpentCrouching;                                // 0x0(0x8)
-	struct FString                                               ShipName;                                          // 0x8(0x10)
-	struct FString                                               NearestIsland;                                     // 0x18(0x10)
-	struct Guid                                                  CrouchingId;                                       // 0x28(0x10)
-	bool                                                         IsCrouching;                                       // 0x38(0x1)
-	char                                                         pad0x7_O2SQH[0x7];                                 // 0x39(0x7)
 };
 
 
@@ -52,7 +23,31 @@ public:
 struct CrouchActionStateConstructionInfo
 {
 public:
-	char                                                         pad0x48_FWIVD[0x48];                               // 0x0(0x48)
+	char                                                         pad0x48_94AK6[0x48];                               // 0x0(0x48)
+};
+
+
+// Size 0x1
+struct OnEndCrouchEvent
+{
+public:
+	char                                                         pad0x1_ZF6Y2[0x1];                                 // 0x0(0x1)
+};
+
+
+// Size 0x1
+struct OnStartCrouchEvent
+{
+public:
+	char                                                         pad0x1_AFMQQ[0x1];                                 // 0x0(0x1)
+};
+
+
+// Size 0x8
+struct OnStartCrouchAudioEvent
+{
+public:
+	class WwiseEvent*                                            CrouchStart;                                       // 0x0(0x8)
 };
 
 
@@ -64,11 +59,16 @@ public:
 };
 
 
-// Size 0x1
-struct OnStartCrouchEvent
+// Size 0x40
+struct CrouchTelemetry
 {
 public:
-	char                                                         pad0x1_BVEU6[0x1];                                 // 0x0(0x1)
+	double                                                       TimeSpentCrouching;                                // 0x0(0x8)
+	struct FString                                               ShipName;                                          // 0x8(0x10)
+	struct FString                                               NearestIsland;                                     // 0x18(0x10)
+	struct Guid                                                  CrouchingId;                                       // 0x28(0x10)
+	bool                                                         IsCrouching;                                       // 0x38(0x1)
+	char                                                         pad0x7_O3BND[0x7];                                 // 0x39(0x7)
 };
 
 

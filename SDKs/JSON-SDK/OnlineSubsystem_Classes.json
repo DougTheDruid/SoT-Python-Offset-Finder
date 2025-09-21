@@ -1,37 +1,4 @@
 {
-  "NamedInterfaces": {
-    "Super": "Object",
-    "FullSize": "0x60",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "NamedInterfaces",
-        "Type": "TArray<struct NamedInterface>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "NamedInterfaceDefs",
-        "Type": "TArray<struct NamedInterfaceDef>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x18_4SFAV[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "TurnBasedMatchInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "DefaultOnlineEnvironmentSettings": {
     "Super": "Object",
     "FullSize": "0x60",
@@ -55,6 +22,39 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x50"
+      }
+    ]
+  },
+  "TurnBasedMatchInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "NamedInterfaces": {
+    "Super": "Object",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "NamedInterfaces",
+        "Type": "TArray<struct NamedInterface>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "NamedInterfaceDefs",
+        "Type": "TArray<struct NamedInterfaceDef>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x18_KAPSN[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x48"
       }
     ]
   },

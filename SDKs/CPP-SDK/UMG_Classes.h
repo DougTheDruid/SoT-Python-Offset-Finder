@@ -6,26 +6,44 @@
 #include "UMG_Structs.h"
 
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class Visual: public Object
+{
+public:
+};
+
+
+// Size 0x38 (Full Size[0x260] - InheritedSize[0x228]
+class WidgetBlueprintGeneratedClass: public BlueprintGeneratedClass
+{
+public:
+	class WidgetTree*                                            WidgetTree;                                        // 0x228(0x8)
+	TArray<struct DelegateRuntimeBinding>                        Bindings;                                          // 0x230(0x10)
+	TArray<class WidgetAnimation*>                               Animations;                                        // 0x240(0x10)
+	TArray<struct Name>                                          NamedSlots;                                        // 0x250(0x10)
+};
+
+
 // Size 0xf0 (Full Size[0x690] - InheritedSize[0x5a0]
 class WidgetComponent: public PrimitiveComponent
 {
 public:
 	char                                                         Space;                                             // 0x598(0x1)
-	char                                                         pad0x7_EWXFJ[0x7];                                 // 0x599(0x7)
+	char                                                         pad0x7_TIWML[0x7];                                 // 0x599(0x7)
 	class UClass*                                                WidgetClass;                                       // 0x5a0(0x8)
 	struct IntPoint                                              DrawSize;                                          // 0x5a8(0x8)
 	struct Vector2D                                              Pivot;                                             // 0x5b0(0x8)
 	float                                                        MaxInteractionDistance;                            // 0x5b8(0x4)
-	char                                                         pad0x4_9WBGJ[0x4];                                 // 0x5bc(0x4)
+	char                                                         pad0x4_L5U2F[0x4];                                 // 0x5bc(0x4)
 	class LocalPlayer*                                           OwnerPlayer;                                       // 0x5c0(0x8)
 	struct LinearColor                                           BackgroundColor;                                   // 0x5c8(0x10)
 	char                                                         BlendMode;                                         // 0x5d8(0x1)
 	bool                                                         bIsOpaque;                                         // 0x5d9(0x1)
 	bool                                                         bIsTwoSided;                                       // 0x5da(0x1)
-	char                                                         pad0x1_P57M5[0x1];                                 // 0x5db(0x1)
+	char                                                         pad0x1_ID97X[0x1];                                 // 0x5db(0x1)
 	float                                                        ParabolaDistortion;                                // 0x5dc(0x4)
 	bool                                                         TickWhenOffscreen;                                 // 0x5e0(0x1)
-	char                                                         pad0x7_51LUE[0x7];                                 // 0x5e1(0x7)
+	char                                                         pad0x7_CE0R8[0x7];                                 // 0x5e1(0x7)
 	class UserWidget*                                            Widget;                                            // 0x5e8(0x8)
 	class BodySetup*                                             BodySetup;                                         // 0x5f0(0x8)
 	class MaterialInterface*                                     TranslucentMaterial;                               // 0x5f8(0x8)
@@ -38,45 +56,7 @@ public:
 	class MaterialInstanceDynamic*                               MaterialInstance;                                  // 0x630(0x8)
 	bool                                                         bUseLegacyRotation;                                // 0x638(0x1)
 	bool                                                         bAddedToScreen;                                    // 0x639(0x1)
-	char                                                         pad0x56_1UM6K[0x56];                               // 0x63a(0x56)
-};
-
-
-// Size 0x1e8 (Full Size[0x280] - InheritedSize[0x98]
-class MovieSceneMarginSection: public MovieSceneSection
-{
-public:
-	char                                                         pad0x8_YYNRK[0x8];                                 // 0x98(0x8)
-	struct RichCurve                                             TopCurve;                                          // 0xa0(0x78)
-	struct RichCurve                                             LeftCurve;                                         // 0x118(0x78)
-	struct RichCurve                                             RightCurve;                                        // 0x190(0x78)
-	struct RichCurve                                             BottomCurve;                                       // 0x208(0x78)
-};
-
-
-// Size 0x5a0 (Full Size[0x5c8] - InheritedSize[0x28]
-class UMGSequencePlayer: public Object
-{
-public:
-	char                                                         pad0x368_V60AE[0x368];                             // 0x28(0x368)
-	class WidgetAnimation*                                       Animation;                                         // 0x390(0x8)
-	char                                                         pad0x230_PIIEN[0x230];                             // 0x398(0x230)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SlateBlueprintLibrary: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
-// Size 0x18 (Full Size[0xb0] - InheritedSize[0x98]
-class MovieSceneWidgetMaterialTrack: public MovieSceneMaterialTrack
-{
-public:
-	TArray<struct Name>                                          BrushPropertyNamePath;                             // 0x98(0x10)
-	struct FName                                                 TrackName;                                         // 0xa8(0x8)
+	char                                                         pad0x56_TFUCH[0x56];                               // 0x63a(0x56)
 };
 
 
@@ -87,20 +67,15 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class NamedSlotInterface: public Interface
+// Size 0x1e8 (Full Size[0x280] - InheritedSize[0x98]
+class MovieSceneMarginSection: public MovieSceneSection
 {
 public:
-};
-
-
-// Size 0x38 (Full Size[0x2e0] - InheritedSize[0x2a8]
-class WidgetAnimation: public MovieSceneSequence
-{
-public:
-	char                                                         pad0x20_F6AWF[0x20];                               // 0x2a8(0x20)
-	class MovieScene*                                            MovieScene;                                        // 0x2c8(0x8)
-	TArray<struct WidgetAnimationBinding>                        AnimationBindings;                                 // 0x2d0(0x10)
+	char                                                         pad0x8_9I8QQ[0x8];                                 // 0x98(0x8)
+	struct RichCurve                                             TopCurve;                                          // 0xa0(0x78)
+	struct RichCurve                                             LeftCurve;                                         // 0x118(0x78)
+	struct RichCurve                                             RightCurve;                                        // 0x190(0x78)
+	struct RichCurve                                             BottomCurve;                                       // 0x208(0x78)
 };
 
 
@@ -108,14 +83,63 @@ public:
 class MovieScene2DTransformSection: public MovieSceneSection
 {
 public:
-	char                                                         pad0x8_OTW04[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x8_Z8F2R[0x8];                                 // 0x98(0x8)
 	struct RichCurve                                             Translation;                                       // 0xa0(0x78)
-	char                                                         pad0x78_C22C3[0x78];                               // 0x118(0x78)
+	char                                                         pad0x78_83KAR[0x78];                               // 0x118(0x78)
 	struct RichCurve                                             Rotation;                                          // 0x190(0x78)
 	struct RichCurve                                             Scale;                                             // 0x208(0x78)
-	char                                                         pad0x78_OBKJ8[0x78];                               // 0x280(0x78)
+	char                                                         pad0x78_5O19R[0x78];                               // 0x280(0x78)
 	struct RichCurve                                             Shear;                                             // 0x2f8(0x78)
-	char                                                         pad0x78_9IWIG[0x78];                               // 0x370(0x78)
+	char                                                         pad0x78_0WTLK[0x78];                               // 0x370(0x78)
+};
+
+
+// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
+class DragDropOperation: public Object
+{
+public:
+	struct FString                                               Tag;                                               // 0x28(0x10)
+	class Object*                                                payload;                                           // 0x38(0x8)
+	class Widget*                                                DefaultDragVisual;                                 // 0x40(0x8)
+	char                                                         Pivot;                                             // 0x48(0x1)
+	char                                                         pad0x3_S0PQ6[0x3];                                 // 0x49(0x3)
+	struct Vector2D                                              Offset;                                            // 0x4c(0x8)
+	char                                                         pad0x4_3ORK2[0x4];                                 // 0x54(0x4)
+	char                                                         pad0x30_KWO71[0x30];                               // 0x58(0x30)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class WidgetTree: public Object
+{
+public:
+	class Widget*                                                RootWidget;                                        // 0x28(0x8)
+	TArray<class Widget*>                                        AllWidgets;                                        // 0x30(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class NamedSlotInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class AsyncTaskDownloadImage: public BlueprintAsyncActionBase
+{
+public:
+	char                                                         pad0x20_49WND[0x20];                               // 0x28(0x20)
+};
+
+
+// Size 0x38 (Full Size[0x2e0] - InheritedSize[0x2a8]
+class WidgetAnimation: public MovieSceneSequence
+{
+public:
+	char                                                         pad0x20_XBMFP[0x20];                               // 0x2a8(0x20)
+	class MovieScene*                                            MovieScene;                                        // 0x2c8(0x8)
+	TArray<struct WidgetAnimationBinding>                        AnimationBindings;                                 // 0x2d0(0x10)
 };
 
 
@@ -132,31 +156,6 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WidgetLayoutLibrary: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class AsyncTaskDownloadImage: public BlueprintAsyncActionBase
-{
-public:
-	char                                                         pad0x20_A6A8Q[0x20];                               // 0x28(0x20)
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class PropertyBinding: public Object
-{
-public:
-	char                                                         pad0x8_T17VR[0x8];                                 // 0x28(0x8)
-	struct DynamicPropertyPath                                   SourcePath;                                        // 0x30(0x10)
-	struct FName                                                 DestinationProperty;                               // 0x40(0x8)
-};
-
-
 // Size 0x0 (Full Size[0xb0] - InheritedSize[0xb0]
 class MovieScene2DTransformTrack: public MovieScenePropertyTrack
 {
@@ -164,8 +163,8 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0xb0] - InheritedSize[0xb0]
-class MovieSceneMarginTrack: public MovieScenePropertyTrack
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class SlateBlueprintLibrary: public BlueprintFunctionLibrary
 {
 public:
 };
@@ -176,58 +175,51 @@ class RichTextBlockDecorator: public Object
 {
 public:
 	bool                                                         bReveal;                                           // 0x28(0x1)
-	char                                                         pad0x3_B0E5E[0x3];                                 // 0x29(0x3)
+	char                                                         pad0x3_0QSS1[0x3];                                 // 0x29(0x3)
 	int                                                          RevealedIndex;                                     // 0x2c(0x4)
 };
 
 
-// Size 0x38 (Full Size[0x260] - InheritedSize[0x228]
-class WidgetBlueprintGeneratedClass: public BlueprintGeneratedClass
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class PropertyBinding: public Object
 {
 public:
-	class WidgetTree*                                            WidgetTree;                                        // 0x228(0x8)
-	TArray<struct DelegateRuntimeBinding>                        Bindings;                                          // 0x230(0x10)
-	TArray<class WidgetAnimation*>                               Animations;                                        // 0x240(0x10)
-	TArray<struct Name>                                          NamedSlots;                                        // 0x250(0x10)
+	char                                                         pad0x8_RGH0B[0x8];                                 // 0x28(0x8)
+	struct DynamicPropertyPath                                   SourcePath;                                        // 0x30(0x10)
+	struct FName                                                 DestinationProperty;                               // 0x40(0x8)
+};
+
+
+// Size 0x0 (Full Size[0xb0] - InheritedSize[0xb0]
+class MovieSceneMarginTrack: public MovieScenePropertyTrack
+{
+public:
+};
+
+
+// Size 0x18 (Full Size[0xb0] - InheritedSize[0x98]
+class MovieSceneWidgetMaterialTrack: public MovieSceneMaterialTrack
+{
+public:
+	TArray<struct Name>                                          BrushPropertyNamePath;                             // 0x98(0x10)
+	struct FName                                                 TrackName;                                         // 0xa8(0x8)
+};
+
+
+// Size 0x5a0 (Full Size[0x5c8] - InheritedSize[0x28]
+class UMGSequencePlayer: public Object
+{
+public:
+	char                                                         pad0x368_C3QQL[0x368];                             // 0x28(0x368)
+	class WidgetAnimation*                                       Animation;                                         // 0x390(0x8)
+	char                                                         pad0x230_4UVES[0x230];                             // 0x398(0x230)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class Visual: public Object
+class WidgetLayoutLibrary: public BlueprintFunctionLibrary
 {
 public:
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class WidgetTree: public Object
-{
-public:
-	class Widget*                                                RootWidget;                                        // 0x28(0x8)
-	TArray<class Widget*>                                        AllWidgets;                                        // 0x30(0x10)
-};
-
-
-// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
-class DragDropOperation: public Object
-{
-public:
-	struct FString                                               Tag;                                               // 0x28(0x10)
-	class Object*                                                payload;                                           // 0x38(0x8)
-	class Widget*                                                DefaultDragVisual;                                 // 0x40(0x8)
-	char                                                         Pivot;                                             // 0x48(0x1)
-	char                                                         pad0x3_S08SS[0x3];                                 // 0x49(0x3)
-	struct Vector2D                                              Offset;                                            // 0x4c(0x8)
-	char                                                         pad0x4_N501J[0x4];                                 // 0x54(0x4)
-	char                                                         pad0x30_LSZXQ[0x30];                               // 0x58(0x30)
-};
-
-
-// Size 0x8 (Full Size[0x50] - InheritedSize[0x48]
-class BrushBinding: public PropertyBinding
-{
-public:
-	char                                                         pad0x8_QH50B[0x8];                                 // 0x48(0x8)
 };
 
 
@@ -245,21 +237,6 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x50] - InheritedSize[0x48]
-class TextBinding: public PropertyBinding
-{
-public:
-	char                                                         pad0x8_6W8IN[0x8];                                 // 0x48(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x48] - InheritedSize[0x48]
-class BoolBinding: public PropertyBinding
-{
-public:
-};
-
-
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class PanelSlot: public Visual
 {
@@ -269,8 +246,74 @@ public:
 };
 
 
+// Size 0x8 (Full Size[0x50] - InheritedSize[0x48]
+class BrushBinding: public PropertyBinding
+{
+public:
+	char                                                         pad0x8_6E8J3[0x8];                                 // 0x48(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x50] - InheritedSize[0x48]
+class CheckedStateBinding: public PropertyBinding
+{
+public:
+	char                                                         pad0x8_5PQTI[0x8];                                 // 0x48(0x8)
+};
+
+
 // Size 0x0 (Full Size[0x48] - InheritedSize[0x48]
 class MouseCursorBinding: public PropertyBinding
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x50] - InheritedSize[0x48]
+class TextBinding: public PropertyBinding
+{
+public:
+	char                                                         pad0x8_WR9P5[0x8];                                 // 0x48(0x8)
+};
+
+
+// Size 0x110 (Full Size[0x138] - InheritedSize[0x28]
+class Widget: public Visual
+{
+public:
+	bool                                                         bIsVariable;                                       // 0x28(0x1)
+	bool                                                         bCreatedByConstructionScript;                      // 0x29(0x1)
+	char                                                         pad0x6_FUTH7[0x6];                                 // 0x2a(0x6)
+	class PanelSlot*                                             Slot;                                              // 0x30(0x8)
+	bool                                                         bIsEnabled;                                        // 0x38(0x1)
+	char                                                         pad0x3_N0R9W[0x3];                                 // 0x39(0x3)
+	struct FText                                                 ToolTipText;                                       // 0x50(0x38)
+	class Widget*                                                ToolTipWidget;                                     // 0x98(0x8)
+	char                                                         Visiblity;                                         // 0xb0(0x1)
+	char                                                         Visibility;                                        // 0xb1(0x1)
+	char                                                         pad0x2_6JPK6[0x2];                                 // 0xb2(0x2)
+	bool                                                         bOverride_Cursor;                                  // 0xc4(0x1)
+	char                                                         pad0x3_MUKQU[0x3];                                 // 0xc5(0x3)
+	char                                                         Cursor;                                            // 0xc8(0x1)
+	bool                                                         bIsVolatile;                                       // 0xc9(0x1)
+	char                                                         pad0x2_ZXL67[0x2];                                 // 0xca(0x2)
+	struct WidgetTransform                                       RenderTransform;                                   // 0xcc(0x1c)
+	struct Vector2D                                              RenderTransformPivot;                              // 0xe8(0x8)
+	class WidgetNavigation*                                      Navigation;                                        // 0xf0(0x8)
+	char                                                         pad0x30_35Z73[0x30];                               // 0xf8(0x30)
+	TArray<class PropertyBinding*>                               NativeBindings;                                    // 0x128(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x48] - InheritedSize[0x48]
+class Int32Binding: public PropertyBinding
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x48] - InheritedSize[0x48]
+class BoolBinding: public PropertyBinding
 {
 public:
 };
@@ -284,73 +327,10 @@ public:
 
 
 // Size 0x8 (Full Size[0x50] - InheritedSize[0x48]
-class CheckedStateBinding: public PropertyBinding
-{
-public:
-	char                                                         pad0x8_TVQ5N[0x8];                                 // 0x48(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x48] - InheritedSize[0x48]
-class Int32Binding: public PropertyBinding
-{
-public:
-};
-
-
-// Size 0x8 (Full Size[0x50] - InheritedSize[0x48]
 class ColorBinding: public PropertyBinding
 {
 public:
-	char                                                         pad0x8_2DYUS[0x8];                                 // 0x48(0x8)
-};
-
-
-// Size 0x110 (Full Size[0x138] - InheritedSize[0x28]
-class Widget: public Visual
-{
-public:
-	bool                                                         bIsVariable;                                       // 0x28(0x1)
-	bool                                                         bCreatedByConstructionScript;                      // 0x29(0x1)
-	char                                                         pad0x6_CKXEL[0x6];                                 // 0x2a(0x6)
-	class PanelSlot*                                             Slot;                                              // 0x30(0x8)
-	bool                                                         bIsEnabled;                                        // 0x38(0x1)
-	char                                                         pad0x3_ZT49R[0x3];                                 // 0x39(0x3)
-	struct FText                                                 ToolTipText;                                       // 0x50(0x38)
-	class Widget*                                                ToolTipWidget;                                     // 0x98(0x8)
-	char                                                         Visiblity;                                         // 0xb0(0x1)
-	char                                                         Visibility;                                        // 0xb1(0x1)
-	char                                                         pad0x2_Q7K2H[0x2];                                 // 0xb2(0x2)
-	bool                                                         bOverride_Cursor;                                  // 0xc4(0x1)
-	char                                                         pad0x3_D0VW0[0x3];                                 // 0xc5(0x3)
-	char                                                         Cursor;                                            // 0xc8(0x1)
-	bool                                                         bIsVolatile;                                       // 0xc9(0x1)
-	char                                                         pad0x2_SLIF5[0x2];                                 // 0xca(0x2)
-	struct WidgetTransform                                       RenderTransform;                                   // 0xcc(0x1c)
-	struct Vector2D                                              RenderTransformPivot;                              // 0xe8(0x8)
-	class WidgetNavigation*                                      Navigation;                                        // 0xf0(0x8)
-	char                                                         pad0x30_RWUV9[0x30];                               // 0xf8(0x30)
-	TArray<class PropertyBinding*>                               NativeBindings;                                    // 0x128(0x10)
-};
-
-
-// Size 0x30 (Full Size[0x68] - InheritedSize[0x38]
-class ScaleBoxSlot: public PanelSlot
-{
-public:
-	struct Margin                                                Padding;                                           // 0x38(0x10)
-	char                                                         HorizontalAlignment;                               // 0x48(0x1)
-	char                                                         VerticalAlignment;                                 // 0x49(0x1)
-	char                                                         pad0x1e_13ZC6[0x1e];                               // 0x4a(0x1e)
-};
-
-
-// Size 0x18 (Full Size[0x150] - InheritedSize[0x138]
-class PanelWidget: public Widget
-{
-public:
-	TArray<class PanelSlot*>                                     Slots;                                             // 0x138(0x10)
-	char                                                         pad0x8_QBG9E[0x8];                                 // 0x148(0x8)
+	char                                                         pad0x8_ZG556[0x8];                                 // 0x48(0x8)
 };
 
 
@@ -364,72 +344,71 @@ public:
 	class SlateWidgetStyleAsset*                                 Style;                                             // 0xb30(0x8)
 	char                                                         Justification;                                     // 0xb38(0x1)
 	bool                                                         bAutoWrapText;                                     // 0xb39(0x1)
-	char                                                         pad0x2_TUHHT[0x2];                                 // 0xb3a(0x2)
+	char                                                         pad0x2_V690E[0x2];                                 // 0xb3a(0x2)
 	float                                                        WrapTextAt;                                        // 0xb3c(0x4)
 	struct SlateFontInfo                                         Font;                                              // 0xb40(0x40)
 	struct LinearColor                                           ForegroundColor;                                   // 0xb80(0x10)
 	struct LinearColor                                           BackgroundColor;                                   // 0xb90(0x10)
 	struct LinearColor                                           ReadOnlyForegroundColor;                           // 0xba0(0x10)
-	char                                                         pad0x38_0S20V[0x38];                               // 0xbb0(0x38)
+	char                                                         pad0x38_FBIB2[0x38];                               // 0xbb0(0x38)
+};
+
+
+// Size 0x18 (Full Size[0x50] - InheritedSize[0x38]
+class UniformGridSlot: public PanelSlot
+{
+public:
+	char                                                         HorizontalAlignment;                               // 0x38(0x1)
+	char                                                         VerticalAlignment;                                 // 0x39(0x1)
+	char                                                         pad0x2_VV3GN[0x2];                                 // 0x3a(0x2)
+	int                                                          Row;                                               // 0x3c(0x4)
+	int                                                          Column;                                            // 0x40(0x4)
+	char                                                         pad0xc_SEDER[0xc];                                 // 0x44(0xc)
+};
+
+
+// Size 0x30 (Full Size[0x68] - InheritedSize[0x38]
+class ButtonSlot: public PanelSlot
+{
+public:
+	struct Margin                                                Padding;                                           // 0x38(0x10)
+	char                                                         HorizontalAlignment;                               // 0x48(0x1)
+	char                                                         VerticalAlignment;                                 // 0x49(0x1)
+	char                                                         pad0x1e_RZGCF[0x1e];                               // 0x4a(0x1e)
 };
 
 
 // Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
-class VerticalBoxSlot: public PanelSlot
+class HorizontalBoxSlot: public PanelSlot
 {
 public:
 	struct Margin                                                Padding;                                           // 0x38(0x10)
 	struct SlateChildSize                                        Size;                                              // 0x48(0x8)
 	char                                                         HorizontalAlignment;                               // 0x50(0x1)
 	char                                                         VerticalAlignment;                                 // 0x51(0x1)
-	char                                                         pad0xe_KGLQL[0xe];                                 // 0x52(0xe)
+	char                                                         pad0xe_02WM0[0xe];                                 // 0x52(0xe)
 };
 
 
-// Size 0x4e8 (Full Size[0x620] - InheritedSize[0x138]
-class ComboBoxString: public Widget
+// Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
+class WrapBoxSlot: public PanelSlot
 {
 public:
-	TArray<String>                                               DefaultOptions;                                    // 0x138(0x10)
-	struct FString                                               SelectedOption;                                    // 0x148(0x10)
-	struct ComboBoxStyle                                         WidgetStyle;                                       // 0x158(0x428)
-	struct Margin                                                ContentPadding;                                    // 0x580(0x10)
-	float                                                        MaxListHeight;                                     // 0x590(0x4)
-	bool                                                         HasDownArrow;                                      // 0x594(0x1)
-	char                                                         pad0x3_8PO1H[0x3];                                 // 0x595(0x3)
-	char                                                         pad0x88_W5VAE[0x88];                               // 0x598(0x88)
+	struct Margin                                                Padding;                                           // 0x38(0x10)
+	bool                                                         bFillEmptySpace;                                   // 0x48(0x1)
+	char                                                         pad0x3_I73UR[0x3];                                 // 0x49(0x3)
+	float                                                        FillSpanWhenLessThan;                              // 0x4c(0x4)
+	char                                                         HorizontalAlignment;                               // 0x50(0x1)
+	char                                                         VerticalAlignment;                                 // 0x51(0x1)
+	char                                                         pad0xe_3ZQLW[0xe];                                 // 0x52(0xe)
 };
 
 
-// Size 0x2d0 (Full Size[0x408] - InheritedSize[0x138]
-class Slider: public Widget
+// Size 0x18 (Full Size[0x150] - InheritedSize[0x138]
+class NativeWidgetHost: public Widget
 {
 public:
-	float                                                        Value;                                             // 0x138(0x4)
-	struct SliderStyle                                           WidgetStyle;                                       // 0x150(0x248)
-	char                                                         Orientation;                                       // 0x398(0x1)
-	char                                                         pad0x3_Y3LQP[0x3];                                 // 0x399(0x3)
-	struct LinearColor                                           SliderBarColor;                                    // 0x39c(0x10)
-	struct LinearColor                                           SliderHandleColor;                                 // 0x3ac(0x10)
-	bool                                                         IndentHandle;                                      // 0x3bc(0x1)
-	bool                                                         Locked;                                            // 0x3bd(0x1)
-	char                                                         pad0x2_NISQO[0x2];                                 // 0x3be(0x2)
-	char                                                         pad0x48_NUR8H[0x48];                               // 0x3c0(0x48)
-};
-
-
-// Size 0xb8 (Full Size[0x1f0] - InheritedSize[0x138]
-class Throbber: public Widget
-{
-public:
-	int                                                          NumberOfPieces;                                    // 0x138(0x4)
-	bool                                                         bAnimateHorizontally;                              // 0x13c(0x1)
-	bool                                                         bAnimateVertically;                                // 0x13d(0x1)
-	bool                                                         bAnimateOpacity;                                   // 0x13e(0x1)
-	char                                                         pad0x1_YX8BY[0x1];                                 // 0x13f(0x1)
-	class SlateBrushAsset*                                       PieceImage;                                        // 0x140(0x8)
-	struct SlateBrush                                            Image;                                             // 0x148(0x90)
-	char                                                         pad0x18_ZSDAO[0x18];                               // 0x1d8(0x18)
+	char                                                         pad0x18_M9OY6[0x18];                               // 0x138(0x18)
 };
 
 
@@ -440,58 +419,9 @@ public:
 	bool                                                         bIsTitleSafe;                                      // 0x38(0x1)
 	char                                                         HAlign;                                            // 0x39(0x1)
 	char                                                         VAlign;                                            // 0x3a(0x1)
-	char                                                         pad0x1_ULIGZ[0x1];                                 // 0x3b(0x1)
+	char                                                         pad0x1_P50CP[0x1];                                 // 0x3b(0x1)
 	struct Margin                                                Padding;                                           // 0x3c(0x10)
-	char                                                         pad0x4_8CDXL[0x4];                                 // 0x4c(0x4)
-};
-
-
-// Size 0xf0 (Full Size[0x228] - InheritedSize[0x138]
-class Image: public Widget
-{
-public:
-	class SlateBrushAsset*                                       Image;                                             // 0x138(0x8)
-	struct SlateBrush                                            Brush;                                             // 0x140(0x90)
-	struct LinearColor                                           ColorAndOpacity;                                   // 0x1e0(0x10)
-	char                                                         pad0x38_W0CUI[0x38];                               // 0x1f0(0x38)
-};
-
-
-// Size 0x20 (Full Size[0x58] - InheritedSize[0x38]
-class OverlaySlot: public PanelSlot
-{
-public:
-	struct Margin                                                Padding;                                           // 0x38(0x10)
-	char                                                         HorizontalAlignment;                               // 0x48(0x1)
-	char                                                         VerticalAlignment;                                 // 0x49(0x1)
-	char                                                         pad0xe_WBFR0[0xe];                                 // 0x4a(0xe)
-};
-
-
-// Size 0x18 (Full Size[0x50] - InheritedSize[0x38]
-class UniformGridSlot: public PanelSlot
-{
-public:
-	char                                                         HorizontalAlignment;                               // 0x38(0x1)
-	char                                                         VerticalAlignment;                                 // 0x39(0x1)
-	char                                                         pad0x2_JU1UK[0x2];                                 // 0x3a(0x2)
-	int                                                          Row;                                               // 0x3c(0x4)
-	int                                                          Column;                                            // 0x40(0x4)
-	char                                                         pad0xc_D6CVQ[0xc];                                 // 0x44(0xc)
-};
-
-
-// Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
-class WrapBoxSlot: public PanelSlot
-{
-public:
-	struct Margin                                                Padding;                                           // 0x38(0x10)
-	bool                                                         bFillEmptySpace;                                   // 0x48(0x1)
-	char                                                         pad0x3_8L8CC[0x3];                                 // 0x49(0x3)
-	float                                                        FillSpanWhenLessThan;                              // 0x4c(0x4)
-	char                                                         HorizontalAlignment;                               // 0x50(0x1)
-	char                                                         VerticalAlignment;                                 // 0x51(0x1)
-	char                                                         pad0xe_M96LE[0xe];                                 // 0x52(0xe)
+	char                                                         pad0x4_LC1XC[0x4];                                 // 0x4c(0x4)
 };
 
 
@@ -510,15 +440,250 @@ public:
 	struct SlateColor                                            ColorAndOpacity;                                   // 0x450(0x30)
 	bool                                                         IsReadOnly;                                        // 0x480(0x1)
 	bool                                                         IsPassword;                                        // 0x481(0x1)
-	char                                                         pad0x2_A0WVW[0x2];                                 // 0x482(0x2)
+	char                                                         pad0x2_LBDIE[0x2];                                 // 0x482(0x2)
 	float                                                        MinimumDesiredWidth;                               // 0x484(0x4)
 	bool                                                         IsCaretMovedWhenGainFocus;                         // 0x488(0x1)
 	bool                                                         SelectAllTextWhenFocused;                          // 0x489(0x1)
 	bool                                                         RevertTextOnEscape;                                // 0x48a(0x1)
 	bool                                                         ClearKeyboardFocusOnCommit;                        // 0x48b(0x1)
 	bool                                                         SelectAllTextOnCommit;                             // 0x48c(0x1)
-	char                                                         pad0x3_BX5A4[0x3];                                 // 0x48d(0x3)
-	char                                                         pad0x38_ETSTP[0x38];                               // 0x490(0x38)
+	char                                                         pad0x3_I7J3O[0x3];                                 // 0x48d(0x3)
+	char                                                         pad0x38_0Z25G[0x38];                               // 0x490(0x38)
+};
+
+
+// Size 0x428 (Full Size[0x560] - InheritedSize[0x138]
+class SpinBox: public Widget
+{
+public:
+	float                                                        Value;                                             // 0x138(0x4)
+	struct SpinBoxStyle                                          WidgetStyle;                                       // 0x150(0x318)
+	class SlateWidgetStyleAsset*                                 Style;                                             // 0x468(0x8)
+	float                                                        Delta;                                             // 0x470(0x4)
+	float                                                        SliderExponent;                                    // 0x474(0x4)
+	struct SlateFontInfo                                         Font;                                              // 0x478(0x40)
+	float                                                        MinDesiredWidth;                                   // 0x4b8(0x4)
+	bool                                                         ClearKeyboardFocusOnCommit;                        // 0x4bc(0x1)
+	bool                                                         SelectAllTextOnCommit;                             // 0x4bd(0x1)
+	char                                                         pad0x2_OBWPS[0x2];                                 // 0x4be(0x2)
+	struct SlateColor                                            ForegroundColor;                                   // 0x4c0(0x30)
+	bool                                                         bOverride_MinValue;                                // 0x530(0x1)
+	bool                                                         bOverride_MaxValue;                                // 0x530(0x1)
+	bool                                                         bOverride_MinSliderValue;                          // 0x530(0x1)
+	bool                                                         bOverride_MaxSliderValue;                          // 0x530(0x1)
+	char                                                         pad0x3_1FJTZ[0x3];                                 // 0x531(0x3)
+	float                                                        MinValue;                                          // 0x534(0x4)
+	float                                                        MaxValue;                                          // 0x538(0x4)
+	float                                                        MinSliderValue;                                    // 0x53c(0x4)
+	float                                                        MaxSliderValue;                                    // 0x540(0x4)
+	char                                                         pad0x1c_YBGQ6[0x1c];                               // 0x544(0x1c)
+};
+
+
+// Size 0x0 (Full Size[0x138] - InheritedSize[0x138]
+class TableViewBase: public Widget
+{
+public:
+};
+
+
+// Size 0x130 (Full Size[0x268] - InheritedSize[0x138]
+class TextBlock: public Widget
+{
+public:
+	class SlateWidgetStyleAsset*                                 Style;                                             // 0x138(0x8)
+	struct FText                                                 Text;                                              // 0x140(0x38)
+	struct SlateColor                                            ColorAndOpacity;                                   // 0x188(0x30)
+	struct SlateFontInfo                                         Font;                                              // 0x1c8(0x40)
+	struct Vector2D                                              ShadowOffset;                                      // 0x208(0x8)
+	struct LinearColor                                           ShadowColorAndOpacity;                             // 0x210(0x10)
+	char                                                         Justification;                                     // 0x230(0x1)
+	bool                                                         AutoWrapText;                                      // 0x231(0x1)
+	char                                                         pad0x2_JSXX9[0x2];                                 // 0x232(0x2)
+	float                                                        WrapTextAt;                                        // 0x234(0x4)
+	float                                                        MinDesiredWidth;                                   // 0x238(0x4)
+	struct Margin                                                Margin;                                            // 0x23c(0x10)
+	float                                                        LineHeightPercentage;                              // 0x24c(0x4)
+	char                                                         pad0x18_M9XIL[0x18];                               // 0x250(0x18)
+};
+
+
+// Size 0x30 (Full Size[0x68] - InheritedSize[0x38]
+class BorderSlot: public PanelSlot
+{
+public:
+	struct Margin                                                Padding;                                           // 0x38(0x10)
+	char                                                         HorizontalAlignment;                               // 0x48(0x1)
+	char                                                         VerticalAlignment;                                 // 0x49(0x1)
+	char                                                         pad0x1e_U6ODD[0x1e];                               // 0x4a(0x1e)
+};
+
+
+// Size 0xb8 (Full Size[0x1f0] - InheritedSize[0x138]
+class Throbber: public Widget
+{
+public:
+	int                                                          NumberOfPieces;                                    // 0x138(0x4)
+	bool                                                         bAnimateHorizontally;                              // 0x13c(0x1)
+	bool                                                         bAnimateVertically;                                // 0x13d(0x1)
+	bool                                                         bAnimateOpacity;                                   // 0x13e(0x1)
+	char                                                         pad0x1_O78NF[0x1];                                 // 0x13f(0x1)
+	class SlateBrushAsset*                                       PieceImage;                                        // 0x140(0x8)
+	struct SlateBrush                                            Image;                                             // 0x148(0x90)
+	char                                                         pad0x18_OHF8B[0x18];                               // 0x1d8(0x18)
+};
+
+
+// Size 0x2d0 (Full Size[0x408] - InheritedSize[0x138]
+class Slider: public Widget
+{
+public:
+	float                                                        Value;                                             // 0x138(0x4)
+	struct SliderStyle                                           WidgetStyle;                                       // 0x150(0x248)
+	char                                                         Orientation;                                       // 0x398(0x1)
+	char                                                         pad0x3_ZS24F[0x3];                                 // 0x399(0x3)
+	struct LinearColor                                           SliderBarColor;                                    // 0x39c(0x10)
+	struct LinearColor                                           SliderHandleColor;                                 // 0x3ac(0x10)
+	bool                                                         IndentHandle;                                      // 0x3bc(0x1)
+	bool                                                         Locked;                                            // 0x3bd(0x1)
+	char                                                         pad0x2_SU0BB[0x2];                                 // 0x3be(0x2)
+	char                                                         pad0x48_A1L4F[0x48];                               // 0x3c0(0x48)
+};
+
+
+// Size 0x20 (Full Size[0x58] - InheritedSize[0x38]
+class ScrollBoxSlot: public PanelSlot
+{
+public:
+	struct Margin                                                Padding;                                           // 0x38(0x10)
+	char                                                         HorizontalAlignment;                               // 0x48(0x1)
+	char                                                         pad0xf_5LG6H[0xf];                                 // 0x49(0xf)
+};
+
+
+// Size 0x240 (Full Size[0x378] - InheritedSize[0x138]
+class RichTextBlock: public Widget
+{
+public:
+	struct FText                                                 Text;                                              // 0x138(0x38)
+	struct SlateFontInfo                                         Font;                                              // 0x180(0x40)
+	struct LinearColor                                           Color;                                             // 0x1c0(0x10)
+	char                                                         Justification;                                     // 0x1d0(0x1)
+	bool                                                         AutoWrapText;                                      // 0x1d1(0x1)
+	char                                                         pad0x2_XM0W2[0x2];                                 // 0x1d2(0x2)
+	float                                                        WrapTextAt;                                        // 0x1d4(0x4)
+	struct Margin                                                Margin;                                            // 0x1d8(0x10)
+	float                                                        LineHeightPercentage;                              // 0x1e8(0x4)
+	char                                                         pad0x4_5TADV[0x4];                                 // 0x1ec(0x4)
+	TArray<class RichTextBlockDecorator*>                        Decorators;                                        // 0x1f0(0x10)
+	char                                                         pad0x178_1HPB5[0x178];                             // 0x200(0x178)
+};
+
+
+// Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
+class GridSlot: public PanelSlot
+{
+public:
+	char                                                         HorizontalAlignment;                               // 0x38(0x1)
+	char                                                         VerticalAlignment;                                 // 0x39(0x1)
+	char                                                         pad0x2_5CUWO[0x2];                                 // 0x3a(0x2)
+	int                                                          Row;                                               // 0x3c(0x4)
+	int                                                          RowSpan;                                           // 0x40(0x4)
+	int                                                          Column;                                            // 0x44(0x4)
+	int                                                          ColumnSpan;                                        // 0x48(0x4)
+	int                                                          Layer;                                             // 0x4c(0x4)
+	struct Vector2D                                              Nudge;                                             // 0x50(0x8)
+	char                                                         pad0x8_HH89D[0x8];                                 // 0x58(0x8)
+};
+
+
+// Size 0x30 (Full Size[0x68] - InheritedSize[0x38]
+class SizeBoxSlot: public PanelSlot
+{
+public:
+	struct Margin                                                Padding;                                           // 0x38(0x10)
+	char                                                         HorizontalAlignment;                               // 0x48(0x1)
+	char                                                         VerticalAlignment;                                 // 0x49(0x1)
+	char                                                         pad0x1e_CD62K[0x1e];                               // 0x4a(0x1e)
+};
+
+
+// Size 0x18 (Full Size[0x150] - InheritedSize[0x138]
+class PanelWidget: public Widget
+{
+public:
+	TArray<class PanelSlot*>                                     Slots;                                             // 0x138(0x10)
+	char                                                         pad0x8_3IBII[0x8];                                 // 0x148(0x8)
+};
+
+
+// Size 0x20 (Full Size[0x158] - InheritedSize[0x138]
+class Spacer: public Widget
+{
+public:
+	struct Vector2D                                              Size;                                              // 0x138(0x8)
+	char                                                         pad0x18_WTHH7[0x18];                               // 0x140(0x18)
+};
+
+
+// Size 0x38 (Full Size[0x70] - InheritedSize[0x38]
+class CanvasPanelSlot: public PanelSlot
+{
+public:
+	struct AnchorData                                            LayoutData;                                        // 0x38(0x28)
+	bool                                                         bAutoSize;                                         // 0x60(0x1)
+	char                                                         pad0x3_MJ9BO[0x3];                                 // 0x61(0x3)
+	int                                                          ZOrder;                                            // 0x64(0x4)
+	char                                                         pad0x8_2AQX7[0x8];                                 // 0x68(0x8)
+};
+
+
+// Size 0x30 (Full Size[0x68] - InheritedSize[0x38]
+class ScaleBoxSlot: public PanelSlot
+{
+public:
+	struct Margin                                                Padding;                                           // 0x38(0x10)
+	char                                                         HorizontalAlignment;                               // 0x48(0x1)
+	char                                                         VerticalAlignment;                                 // 0x49(0x1)
+	char                                                         pad0x1e_ZF9YX[0x1e];                               // 0x4a(0x1e)
+};
+
+
+// Size 0x20 (Full Size[0x58] - InheritedSize[0x38]
+class WidgetSwitcherSlot: public PanelSlot
+{
+public:
+	struct Margin                                                Padding;                                           // 0x38(0x10)
+	char                                                         HorizontalAlignment;                               // 0x48(0x1)
+	char                                                         VerticalAlignment;                                 // 0x49(0x1)
+	char                                                         pad0xe_PEUBY[0xe];                                 // 0x4a(0xe)
+};
+
+
+// Size 0x58 (Full Size[0x190] - InheritedSize[0x138]
+class ExpandableArea: public Widget
+{
+public:
+	char                                                         pad0x8_WE2VM[0x8];                                 // 0x138(0x8)
+	bool                                                         bIsExpanded;                                       // 0x140(0x1)
+	char                                                         pad0x3_3ZPBR[0x3];                                 // 0x141(0x3)
+	float                                                        MaxHeight;                                         // 0x144(0x4)
+	struct Margin                                                AreaPadding;                                       // 0x148(0x10)
+	class Widget*                                                HeaderContent;                                     // 0x168(0x8)
+	class Widget*                                                BodyContent;                                       // 0x170(0x8)
+	char                                                         pad0x18_327OC[0x18];                               // 0x178(0x18)
+};
+
+
+// Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
+class VerticalBoxSlot: public PanelSlot
+{
+public:
+	struct Margin                                                Padding;                                           // 0x38(0x10)
+	struct SlateChildSize                                        Size;                                              // 0x48(0x8)
+	char                                                         HorizontalAlignment;                               // 0x50(0x1)
+	char                                                         VerticalAlignment;                                 // 0x51(0x1)
+	char                                                         pad0xe_X3N19[0xe];                                 // 0x52(0xe)
 };
 
 
@@ -536,7 +701,7 @@ public:
 	struct LinearColor                                           ReadOnlyForegroundColor;                           // 0xa90(0x10)
 	bool                                                         IsReadOnly;                                        // 0xaa0(0x1)
 	bool                                                         IsPassword;                                        // 0xaa1(0x1)
-	char                                                         pad0x2_85BEC[0x2];                                 // 0xaa2(0x2)
+	char                                                         pad0x2_HM9SO[0x2];                                 // 0xaa2(0x2)
 	float                                                        MinimumDesiredWidth;                               // 0xaa4(0x4)
 	struct Margin                                                Padding;                                           // 0xaa8(0x10)
 	bool                                                         IsCaretMovedWhenGainFocus;                         // 0xab8(0x1)
@@ -544,8 +709,75 @@ public:
 	bool                                                         RevertTextOnEscape;                                // 0xaba(0x1)
 	bool                                                         ClearKeyboardFocusOnCommit;                        // 0xabb(0x1)
 	bool                                                         SelectAllTextOnCommit;                             // 0xabc(0x1)
-	char                                                         pad0x3_7Y3A6[0x3];                                 // 0xabd(0x3)
-	char                                                         pad0x38_320FL[0x38];                               // 0xac0(0x38)
+	char                                                         pad0x3_L70OZ[0x3];                                 // 0xabd(0x3)
+	char                                                         pad0x38_V5VAI[0x38];                               // 0xac0(0x38)
+};
+
+
+// Size 0xf8 (Full Size[0x230] - InheritedSize[0x138]
+class UserWidget: public Widget
+{
+public:
+	char                                                         pad0x8_ZMS4X[0x8];                                 // 0x138(0x8)
+	struct LinearColor                                           ColorAndOpacity;                                   // 0x140(0x10)
+	struct SlateColor                                            ForegroundColor;                                   // 0x160(0x30)
+	bool                                                         bSupportsKeyboardFocus;                            // 0x1a0(0x1)
+	char                                                         pad0x7_L94ET[0x7];                                 // 0x1a1(0x7)
+	class WidgetTree*                                            WidgetTree;                                        // 0x1a8(0x8)
+	TArray<class UMGSequencePlayer*>                             ActiveSequencePlayers;                             // 0x1b0(0x10)
+	TArray<class UMGSequencePlayer*>                             StoppedSequencePlayers;                            // 0x1c0(0x10)
+	TArray<struct NamedSlotBinding>                              NamedSlotBindings;                                 // 0x1d0(0x10)
+	char                                                         pad0x50_0HXF6[0x50];                               // 0x1e0(0x50)
+};
+
+
+// Size 0x4e8 (Full Size[0x620] - InheritedSize[0x138]
+class ComboBoxString: public Widget
+{
+public:
+	TArray<String>                                               DefaultOptions;                                    // 0x138(0x10)
+	struct FString                                               SelectedOption;                                    // 0x148(0x10)
+	struct ComboBoxStyle                                         WidgetStyle;                                       // 0x158(0x428)
+	struct Margin                                                ContentPadding;                                    // 0x580(0x10)
+	float                                                        MaxListHeight;                                     // 0x590(0x4)
+	bool                                                         HasDownArrow;                                      // 0x594(0x1)
+	char                                                         pad0x3_V6ATM[0x3];                                 // 0x595(0x3)
+	char                                                         pad0x88_YO9JB[0x88];                               // 0x598(0x88)
+};
+
+
+// Size 0x38 (Full Size[0x170] - InheritedSize[0x138]
+class ComboBox: public Widget
+{
+public:
+	TArray<class Object*>                                        Items;                                             // 0x138(0x10)
+	char                                                         pad0x28_KEGPF[0x28];                               // 0x148(0x28)
+};
+
+
+// Size 0x20 (Full Size[0x58] - InheritedSize[0x38]
+class OverlaySlot: public PanelSlot
+{
+public:
+	struct Margin                                                Padding;                                           // 0x38(0x10)
+	char                                                         HorizontalAlignment;                               // 0x48(0x1)
+	char                                                         VerticalAlignment;                                 // 0x49(0x1)
+	char                                                         pad0xe_834NN[0xe];                                 // 0x4a(0xe)
+};
+
+
+// Size 0x218 (Full Size[0x350] - InheritedSize[0x138]
+class MultiLineEditableText: public Widget
+{
+public:
+	struct FText                                                 Text;                                              // 0x138(0x38)
+	struct TextBlockStyle                                        WidgetStyle;                                       // 0x170(0x160)
+	char                                                         Justification;                                     // 0x2d0(0x1)
+	bool                                                         bAutoWrapText;                                     // 0x2d1(0x1)
+	char                                                         pad0x2_WG240[0x2];                                 // 0x2d2(0x2)
+	float                                                        WrapTextAt;                                        // 0x2d4(0x4)
+	struct SlateFontInfo                                         Font;                                              // 0x2d8(0x40)
+	char                                                         pad0x38_4OIJ1[0x38];                               // 0x318(0x38)
 };
 
 
@@ -561,16 +793,9 @@ public:
 	float                                                        Percent;                                           // 0x310(0x4)
 	char                                                         BarFillType;                                       // 0x314(0x1)
 	bool                                                         bIsMarquee;                                        // 0x315(0x1)
-	char                                                         pad0x2_CVI3W[0x2];                                 // 0x316(0x2)
+	char                                                         pad0x2_Y5FA7[0x2];                                 // 0x316(0x2)
 	struct LinearColor                                           FillColorAndOpacity;                               // 0x328(0x10)
-	char                                                         pad0x28_HN9KE[0x28];                               // 0x338(0x28)
-};
-
-
-// Size 0x0 (Full Size[0x138] - InheritedSize[0x138]
-class TableViewBase: public Widget
-{
-public:
+	char                                                         pad0x28_O40SO[0x28];                               // 0x338(0x28)
 };
 
 
@@ -581,188 +806,21 @@ public:
 	int                                                          NumberOfPieces;                                    // 0x138(0x4)
 	float                                                        Period;                                            // 0x13c(0x4)
 	float                                                        Radius;                                            // 0x140(0x4)
-	char                                                         pad0x4_2C8YR[0x4];                                 // 0x144(0x4)
+	char                                                         pad0x4_163TW[0x4];                                 // 0x144(0x4)
 	class SlateBrushAsset*                                       PieceImage;                                        // 0x148(0x8)
 	struct SlateBrush                                            Image;                                             // 0x150(0x90)
-	char                                                         pad0x18_UUU3C[0x18];                               // 0x1e0(0x18)
+	char                                                         pad0x18_ZK67E[0x18];                               // 0x1e0(0x18)
 };
 
 
-// Size 0x18 (Full Size[0x150] - InheritedSize[0x138]
-class NativeWidgetHost: public Widget
+// Size 0xf0 (Full Size[0x228] - InheritedSize[0x138]
+class Image: public Widget
 {
 public:
-	char                                                         pad0x18_KFTU3[0x18];                               // 0x138(0x18)
-};
-
-
-// Size 0x38 (Full Size[0x70] - InheritedSize[0x38]
-class CanvasPanelSlot: public PanelSlot
-{
-public:
-	struct AnchorData                                            LayoutData;                                        // 0x38(0x28)
-	bool                                                         bAutoSize;                                         // 0x60(0x1)
-	char                                                         pad0x3_8YNBH[0x3];                                 // 0x61(0x3)
-	int                                                          ZOrder;                                            // 0x64(0x4)
-	char                                                         pad0x8_LUUZO[0x8];                                 // 0x68(0x8)
-};
-
-
-// Size 0x20 (Full Size[0x158] - InheritedSize[0x138]
-class Spacer: public Widget
-{
-public:
-	struct Vector2D                                              Size;                                              // 0x138(0x8)
-	char                                                         pad0x18_1BEG0[0x18];                               // 0x140(0x18)
-};
-
-
-// Size 0x38 (Full Size[0x170] - InheritedSize[0x138]
-class ComboBox: public Widget
-{
-public:
-	TArray<class Object*>                                        Items;                                             // 0x138(0x10)
-	char                                                         pad0x28_Q64TY[0x28];                               // 0x148(0x28)
-};
-
-
-// Size 0x30 (Full Size[0x68] - InheritedSize[0x38]
-class SizeBoxSlot: public PanelSlot
-{
-public:
-	struct Margin                                                Padding;                                           // 0x38(0x10)
-	char                                                         HorizontalAlignment;                               // 0x48(0x1)
-	char                                                         VerticalAlignment;                                 // 0x49(0x1)
-	char                                                         pad0x1e_O669A[0x1e];                               // 0x4a(0x1e)
-};
-
-
-// Size 0x30 (Full Size[0x68] - InheritedSize[0x38]
-class ButtonSlot: public PanelSlot
-{
-public:
-	struct Margin                                                Padding;                                           // 0x38(0x10)
-	char                                                         HorizontalAlignment;                               // 0x48(0x1)
-	char                                                         VerticalAlignment;                                 // 0x49(0x1)
-	char                                                         pad0x1e_0W8I1[0x1e];                               // 0x4a(0x1e)
-};
-
-
-// Size 0x20 (Full Size[0x58] - InheritedSize[0x38]
-class WidgetSwitcherSlot: public PanelSlot
-{
-public:
-	struct Margin                                                Padding;                                           // 0x38(0x10)
-	char                                                         HorizontalAlignment;                               // 0x48(0x1)
-	char                                                         VerticalAlignment;                                 // 0x49(0x1)
-	char                                                         pad0xe_A8GF2[0xe];                                 // 0x4a(0xe)
-};
-
-
-// Size 0x218 (Full Size[0x350] - InheritedSize[0x138]
-class MultiLineEditableText: public Widget
-{
-public:
-	struct FText                                                 Text;                                              // 0x138(0x38)
-	struct TextBlockStyle                                        WidgetStyle;                                       // 0x170(0x160)
-	char                                                         Justification;                                     // 0x2d0(0x1)
-	bool                                                         bAutoWrapText;                                     // 0x2d1(0x1)
-	char                                                         pad0x2_V3R0A[0x2];                                 // 0x2d2(0x2)
-	float                                                        WrapTextAt;                                        // 0x2d4(0x4)
-	struct SlateFontInfo                                         Font;                                              // 0x2d8(0x40)
-	char                                                         pad0x38_LEFMJ[0x38];                               // 0x318(0x38)
-};
-
-
-// Size 0x240 (Full Size[0x378] - InheritedSize[0x138]
-class RichTextBlock: public Widget
-{
-public:
-	struct FText                                                 Text;                                              // 0x138(0x38)
-	struct SlateFontInfo                                         Font;                                              // 0x180(0x40)
-	struct LinearColor                                           Color;                                             // 0x1c0(0x10)
-	char                                                         Justification;                                     // 0x1d0(0x1)
-	bool                                                         AutoWrapText;                                      // 0x1d1(0x1)
-	char                                                         pad0x2_R6RO9[0x2];                                 // 0x1d2(0x2)
-	float                                                        WrapTextAt;                                        // 0x1d4(0x4)
-	struct Margin                                                Margin;                                            // 0x1d8(0x10)
-	float                                                        LineHeightPercentage;                              // 0x1e8(0x4)
-	char                                                         pad0x4_GO6S0[0x4];                                 // 0x1ec(0x4)
-	TArray<class RichTextBlockDecorator*>                        Decorators;                                        // 0x1f0(0x10)
-	char                                                         pad0x178_UP2CT[0x178];                             // 0x200(0x178)
-};
-
-
-// Size 0x428 (Full Size[0x560] - InheritedSize[0x138]
-class SpinBox: public Widget
-{
-public:
-	float                                                        Value;                                             // 0x138(0x4)
-	struct SpinBoxStyle                                          WidgetStyle;                                       // 0x150(0x318)
-	class SlateWidgetStyleAsset*                                 Style;                                             // 0x468(0x8)
-	float                                                        Delta;                                             // 0x470(0x4)
-	float                                                        SliderExponent;                                    // 0x474(0x4)
-	struct SlateFontInfo                                         Font;                                              // 0x478(0x40)
-	float                                                        MinDesiredWidth;                                   // 0x4b8(0x4)
-	bool                                                         ClearKeyboardFocusOnCommit;                        // 0x4bc(0x1)
-	bool                                                         SelectAllTextOnCommit;                             // 0x4bd(0x1)
-	char                                                         pad0x2_BAH4R[0x2];                                 // 0x4be(0x2)
-	struct SlateColor                                            ForegroundColor;                                   // 0x4c0(0x30)
-	bool                                                         bOverride_MinValue;                                // 0x530(0x1)
-	bool                                                         bOverride_MaxValue;                                // 0x530(0x1)
-	bool                                                         bOverride_MinSliderValue;                          // 0x530(0x1)
-	bool                                                         bOverride_MaxSliderValue;                          // 0x530(0x1)
-	char                                                         pad0x3_8KBLK[0x3];                                 // 0x531(0x3)
-	float                                                        MinValue;                                          // 0x534(0x4)
-	float                                                        MaxValue;                                          // 0x538(0x4)
-	float                                                        MinSliderValue;                                    // 0x53c(0x4)
-	float                                                        MaxSliderValue;                                    // 0x540(0x4)
-	char                                                         pad0x1c_V32TM[0x1c];                               // 0x544(0x1c)
-};
-
-
-// Size 0xf8 (Full Size[0x230] - InheritedSize[0x138]
-class UserWidget: public Widget
-{
-public:
-	char                                                         pad0x8_DW1B3[0x8];                                 // 0x138(0x8)
-	struct LinearColor                                           ColorAndOpacity;                                   // 0x140(0x10)
-	struct SlateColor                                            ForegroundColor;                                   // 0x160(0x30)
-	bool                                                         bSupportsKeyboardFocus;                            // 0x1a0(0x1)
-	char                                                         pad0x7_3L9LC[0x7];                                 // 0x1a1(0x7)
-	class WidgetTree*                                            WidgetTree;                                        // 0x1a8(0x8)
-	TArray<class UMGSequencePlayer*>                             ActiveSequencePlayers;                             // 0x1b0(0x10)
-	TArray<class UMGSequencePlayer*>                             StoppedSequencePlayers;                            // 0x1c0(0x10)
-	TArray<struct NamedSlotBinding>                              NamedSlotBindings;                                 // 0x1d0(0x10)
-	char                                                         pad0x50_4Z7JO[0x50];                               // 0x1e0(0x50)
-};
-
-
-// Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
-class GridSlot: public PanelSlot
-{
-public:
-	char                                                         HorizontalAlignment;                               // 0x38(0x1)
-	char                                                         VerticalAlignment;                                 // 0x39(0x1)
-	char                                                         pad0x2_76ZRG[0x2];                                 // 0x3a(0x2)
-	int                                                          Row;                                               // 0x3c(0x4)
-	int                                                          RowSpan;                                           // 0x40(0x4)
-	int                                                          Column;                                            // 0x44(0x4)
-	int                                                          ColumnSpan;                                        // 0x48(0x4)
-	int                                                          Layer;                                             // 0x4c(0x4)
-	struct Vector2D                                              Nudge;                                             // 0x50(0x8)
-	char                                                         pad0x8_YUTVC[0x8];                                 // 0x58(0x8)
-};
-
-
-// Size 0x30 (Full Size[0x68] - InheritedSize[0x38]
-class BorderSlot: public PanelSlot
-{
-public:
-	struct Margin                                                Padding;                                           // 0x38(0x10)
-	char                                                         HorizontalAlignment;                               // 0x48(0x1)
-	char                                                         VerticalAlignment;                                 // 0x49(0x1)
-	char                                                         pad0x1e_VE3CQ[0x1e];                               // 0x4a(0x1e)
+	class SlateBrushAsset*                                       Image;                                             // 0x138(0x8)
+	struct SlateBrush                                            Brush;                                             // 0x140(0x90)
+	struct LinearColor                                           ColorAndOpacity;                                   // 0x1e0(0x10)
+	char                                                         pad0x38_0B08T[0x38];                               // 0x1f0(0x38)
 };
 
 
@@ -774,97 +832,17 @@ public:
 	class SlateWidgetStyleAsset*                                 Style;                                             // 0x650(0x8)
 	bool                                                         bAlwaysShowScrollbar;                              // 0x658(0x1)
 	char                                                         Orientation;                                       // 0x659(0x1)
-	char                                                         pad0x2_7GGS4[0x2];                                 // 0x65a(0x2)
+	char                                                         pad0x2_82PJR[0x2];                                 // 0x65a(0x2)
 	struct Vector2D                                              Thickness;                                         // 0x65c(0x8)
-	char                                                         pad0x1c_0F1S1[0x1c];                               // 0x664(0x1c)
-};
-
-
-// Size 0x130 (Full Size[0x268] - InheritedSize[0x138]
-class TextBlock: public Widget
-{
-public:
-	class SlateWidgetStyleAsset*                                 Style;                                             // 0x138(0x8)
-	struct FText                                                 Text;                                              // 0x140(0x38)
-	struct SlateColor                                            ColorAndOpacity;                                   // 0x188(0x30)
-	struct SlateFontInfo                                         Font;                                              // 0x1c8(0x40)
-	struct Vector2D                                              ShadowOffset;                                      // 0x208(0x8)
-	struct LinearColor                                           ShadowColorAndOpacity;                             // 0x210(0x10)
-	char                                                         Justification;                                     // 0x230(0x1)
-	bool                                                         AutoWrapText;                                      // 0x231(0x1)
-	char                                                         pad0x2_I9WG6[0x2];                                 // 0x232(0x2)
-	float                                                        WrapTextAt;                                        // 0x234(0x4)
-	float                                                        MinDesiredWidth;                                   // 0x238(0x4)
-	struct Margin                                                Margin;                                            // 0x23c(0x10)
-	float                                                        LineHeightPercentage;                              // 0x24c(0x4)
-	char                                                         pad0x18_HF8A7[0x18];                               // 0x250(0x18)
-};
-
-
-// Size 0x58 (Full Size[0x190] - InheritedSize[0x138]
-class ExpandableArea: public Widget
-{
-public:
-	char                                                         pad0x8_433JV[0x8];                                 // 0x138(0x8)
-	bool                                                         bIsExpanded;                                       // 0x140(0x1)
-	char                                                         pad0x3_UBY8P[0x3];                                 // 0x141(0x3)
-	float                                                        MaxHeight;                                         // 0x144(0x4)
-	struct Margin                                                AreaPadding;                                       // 0x148(0x10)
-	class Widget*                                                HeaderContent;                                     // 0x168(0x8)
-	class Widget*                                                BodyContent;                                       // 0x170(0x8)
-	char                                                         pad0x18_7WL01[0x18];                               // 0x178(0x18)
-};
-
-
-// Size 0x20 (Full Size[0x58] - InheritedSize[0x38]
-class ScrollBoxSlot: public PanelSlot
-{
-public:
-	struct Margin                                                Padding;                                           // 0x38(0x10)
-	char                                                         HorizontalAlignment;                               // 0x48(0x1)
-	char                                                         pad0xf_X4WZN[0xf];                                 // 0x49(0xf)
-};
-
-
-// Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
-class HorizontalBoxSlot: public PanelSlot
-{
-public:
-	struct Margin                                                Padding;                                           // 0x38(0x10)
-	struct SlateChildSize                                        Size;                                              // 0x48(0x8)
-	char                                                         HorizontalAlignment;                               // 0x50(0x1)
-	char                                                         VerticalAlignment;                                 // 0x51(0x1)
-	char                                                         pad0xe_UH06X[0xe];                                 // 0x52(0xe)
+	char                                                         pad0x1c_T1Q1G[0x1c];                               // 0x664(0x1c)
 };
 
 
 // Size 0x18 (Full Size[0x168] - InheritedSize[0x150]
-class Overlay: public PanelWidget
+class CanvasPanel: public PanelWidget
 {
 public:
-	char                                                         pad0x18_EI8A0[0x18];                               // 0x150(0x18)
-};
-
-
-// Size 0x20 (Full Size[0x170] - InheritedSize[0x150]
-class WidgetSwitcher: public PanelWidget
-{
-public:
-	int                                                          ActiveWidgetIndex;                                 // 0x150(0x4)
-	char                                                         pad0x1c_UOTGB[0x1c];                               // 0x154(0x1c)
-};
-
-
-// Size 0x48 (Full Size[0x180] - InheritedSize[0x138]
-class TileView: public TableViewBase
-{
-public:
-	float                                                        ItemWidth;                                         // 0x138(0x4)
-	float                                                        ItemHeight;                                        // 0x13c(0x4)
-	TArray<class Object*>                                        Items;                                             // 0x140(0x10)
-	char                                                         SelectionMode;                                     // 0x150(0x1)
-	char                                                         pad0x3_DC0Y8[0x3];                                 // 0x151(0x3)
-	char                                                         pad0x2c_5N11B[0x2c];                               // 0x154(0x2c)
+	char                                                         pad0x18_EL97V[0x18];                               // 0x150(0x18)
 };
 
 
@@ -873,7 +851,26 @@ class WrapBox: public PanelWidget
 {
 public:
 	struct Vector2D                                              InnerSlotPadding;                                  // 0x150(0x8)
-	char                                                         pad0x18_COE33[0x18];                               // 0x158(0x18)
+	char                                                         pad0x18_0TYIS[0x18];                               // 0x158(0x18)
+};
+
+
+// Size 0x30 (Full Size[0x180] - InheritedSize[0x150]
+class UniformGridPanel: public PanelWidget
+{
+public:
+	struct Margin                                                SlotPadding;                                       // 0x150(0x10)
+	float                                                        MinDesiredSlotWidth;                               // 0x160(0x4)
+	float                                                        MinDesiredSlotHeight;                              // 0x164(0x4)
+	char                                                         pad0x18_48V32[0x18];                               // 0x168(0x18)
+};
+
+
+// Size 0x18 (Full Size[0x168] - InheritedSize[0x150]
+class VerticalBox: public PanelWidget
+{
+public:
+	char                                                         pad0x18_NS78P[0x18];                               // 0x150(0x18)
 };
 
 
@@ -882,11 +879,45 @@ class ListView: public TableViewBase
 {
 public:
 	float                                                        ItemHeight;                                        // 0x138(0x4)
-	char                                                         pad0x4_R8L7T[0x4];                                 // 0x13c(0x4)
+	char                                                         pad0x4_P1E74[0x4];                                 // 0x13c(0x4)
 	TArray<class Object*>                                        Items;                                             // 0x140(0x10)
 	char                                                         SelectionMode;                                     // 0x150(0x1)
-	char                                                         pad0x3_SJ1UB[0x3];                                 // 0x151(0x3)
-	char                                                         pad0x2c_R09JC[0x2c];                               // 0x154(0x2c)
+	char                                                         pad0x3_SGJ3W[0x3];                                 // 0x151(0x3)
+	char                                                         pad0x2c_AVBRK[0x2c];                               // 0x154(0x2c)
+};
+
+
+// Size 0x0 (Full Size[0x150] - InheritedSize[0x150]
+class ContentWidget: public PanelWidget
+{
+public:
+};
+
+
+// Size 0x38 (Full Size[0x188] - InheritedSize[0x150]
+class GridPanel: public PanelWidget
+{
+public:
+	TArray<float>                                                ColumnFill;                                        // 0x150(0x10)
+	TArray<float>                                                RowFill;                                           // 0x160(0x10)
+	char                                                         pad0x18_HJGJS[0x18];                               // 0x170(0x18)
+};
+
+
+// Size 0x18 (Full Size[0x168] - InheritedSize[0x150]
+class Overlay: public PanelWidget
+{
+public:
+	char                                                         pad0x18_XMIPY[0x18];                               // 0x150(0x18)
+};
+
+
+// Size 0x20 (Full Size[0x170] - InheritedSize[0x150]
+class WidgetSwitcher: public PanelWidget
+{
+public:
+	int                                                          ActiveWidgetIndex;                                 // 0x150(0x4)
+	char                                                         pad0x1c_O2MCI[0x1c];                               // 0x154(0x1c)
 };
 
 
@@ -901,54 +932,10 @@ public:
 	char                                                         Orientation;                                       // 0x8c0(0x1)
 	char                                                         ScrollBarVisibility;                               // 0x8c1(0x1)
 	char                                                         ConsumeMouseWheel;                                 // 0x8c2(0x1)
-	char                                                         pad0x1_OMRPI[0x1];                                 // 0x8c3(0x1)
+	char                                                         pad0x1_949DG[0x1];                                 // 0x8c3(0x1)
 	struct Vector2D                                              ScrollbarThickness;                                // 0x8c4(0x8)
 	bool                                                         AlwaysShowScrollbar;                               // 0x8cc(0x1)
-	char                                                         pad0x23_5M6X8[0x23];                               // 0x8cd(0x23)
-};
-
-
-// Size 0x30 (Full Size[0x180] - InheritedSize[0x150]
-class UniformGridPanel: public PanelWidget
-{
-public:
-	struct Margin                                                SlotPadding;                                       // 0x150(0x10)
-	float                                                        MinDesiredSlotWidth;                               // 0x160(0x4)
-	float                                                        MinDesiredSlotHeight;                              // 0x164(0x4)
-	char                                                         pad0x18_A9KSN[0x18];                               // 0x168(0x18)
-};
-
-
-// Size 0x0 (Full Size[0x150] - InheritedSize[0x150]
-class ContentWidget: public PanelWidget
-{
-public:
-};
-
-
-// Size 0x18 (Full Size[0x168] - InheritedSize[0x150]
-class CanvasPanel: public PanelWidget
-{
-public:
-	char                                                         pad0x18_X649H[0x18];                               // 0x150(0x18)
-};
-
-
-// Size 0x38 (Full Size[0x188] - InheritedSize[0x150]
-class GridPanel: public PanelWidget
-{
-public:
-	TArray<float>                                                ColumnFill;                                        // 0x150(0x10)
-	TArray<float>                                                RowFill;                                           // 0x160(0x10)
-	char                                                         pad0x18_F1TYS[0x18];                               // 0x170(0x18)
-};
-
-
-// Size 0x18 (Full Size[0x168] - InheritedSize[0x150]
-class VerticalBox: public PanelWidget
-{
-public:
-	char                                                         pad0x18_MNCEM[0x18];                               // 0x150(0x18)
+	char                                                         pad0x23_NAQ0E[0x23];                               // 0x8cd(0x23)
 };
 
 
@@ -956,7 +943,52 @@ public:
 class HorizontalBox: public PanelWidget
 {
 public:
-	char                                                         pad0x18_CEJT8[0x18];                               // 0x150(0x18)
+	char                                                         pad0x18_TL9Q2[0x18];                               // 0x150(0x18)
+};
+
+
+// Size 0x48 (Full Size[0x180] - InheritedSize[0x138]
+class TileView: public TableViewBase
+{
+public:
+	float                                                        ItemWidth;                                         // 0x138(0x4)
+	float                                                        ItemHeight;                                        // 0x13c(0x4)
+	TArray<class Object*>                                        Items;                                             // 0x140(0x10)
+	char                                                         SelectionMode;                                     // 0x150(0x1)
+	char                                                         pad0x3_EAHML[0x3];                                 // 0x151(0x3)
+	char                                                         pad0x2c_75XK5[0x2c];                               // 0x154(0x2c)
+};
+
+
+// Size 0x38 (Full Size[0x188] - InheritedSize[0x150]
+class SizeBox: public ContentWidget
+{
+public:
+	bool                                                         bOverride_WidthOverride;                           // 0x150(0x1)
+	bool                                                         bOverride_HeightOverride;                          // 0x150(0x1)
+	bool                                                         bOverride_MinDesiredWidth;                         // 0x150(0x1)
+	bool                                                         bOverride_MinDesiredHeight;                        // 0x150(0x1)
+	bool                                                         bOverride_MaxDesiredWidth;                         // 0x150(0x1)
+	bool                                                         bOverride_MaxDesiredHeight;                        // 0x150(0x1)
+	char                                                         pad0x3_80I52[0x3];                                 // 0x151(0x3)
+	float                                                        WidthOverride;                                     // 0x154(0x4)
+	float                                                        HeightOverride;                                    // 0x158(0x4)
+	float                                                        MinDesiredWidth;                                   // 0x15c(0x4)
+	float                                                        MinDesiredHeight;                                  // 0x160(0x4)
+	float                                                        MaxDesiredWidth;                                   // 0x164(0x4)
+	float                                                        MaxDesiredHeight;                                  // 0x168(0x4)
+	char                                                         pad0x1c_61VLW[0x1c];                               // 0x16c(0x1c)
+};
+
+
+// Size 0x48 (Full Size[0x198] - InheritedSize[0x150]
+class MenuAnchor: public ContentWidget
+{
+public:
+	class UClass*                                                MenuClass;                                         // 0x150(0x8)
+	char                                                         Placement;                                         // 0x168(0x1)
+	char                                                         pad0x7_TSWKG[0x7];                                 // 0x169(0x7)
+	char                                                         pad0x28_WJYL4[0x28];                               // 0x170(0x28)
 };
 
 
@@ -968,12 +1000,50 @@ public:
 	struct Margin                                                Padding;                                           // 0x170(0x10)
 	char                                                         HorizontalAlignment;                               // 0x180(0x1)
 	char                                                         VerticalAlignment;                                 // 0x181(0x1)
-	char                                                         pad0x6_OC3XJ[0x6];                                 // 0x182(0x6)
+	char                                                         pad0x6_6RA5X[0x6];                                 // 0x182(0x6)
 	struct SlateBrush                                            Background;                                        // 0x188(0x90)
 	struct LinearColor                                           BrushColor;                                        // 0x228(0x10)
 	bool                                                         bShowEffectWhenDisabled;                           // 0x248(0x1)
-	char                                                         pad0x3_M8D01[0x3];                                 // 0x249(0x3)
+	char                                                         pad0x3_95D4K[0x3];                                 // 0x249(0x3)
 	class SlateBrushAsset*                                       Brush;                                             // 0x2a8(0x8)
+};
+
+
+// Size 0x20 (Full Size[0x170] - InheritedSize[0x150]
+class ScaleBox: public ContentWidget
+{
+public:
+	char                                                         StretchDirection;                                  // 0x150(0x1)
+	char                                                         Stretch;                                           // 0x151(0x1)
+	char                                                         pad0x2_IIWOS[0x2];                                 // 0x152(0x2)
+	float                                                        UserSpecifiedScale;                                // 0x154(0x4)
+	char                                                         pad0x18_JWH03[0x18];                               // 0x158(0x18)
+};
+
+
+// Size 0x6c8 (Full Size[0x818] - InheritedSize[0x150]
+class CheckBox: public ContentWidget
+{
+public:
+	char                                                         CheckedState;                                      // 0x150(0x1)
+	char                                                         pad0x3_YIH3K[0x3];                                 // 0x151(0x3)
+	struct CheckBoxStyle                                         WidgetStyle;                                       // 0x168(0x5f0)
+	class SlateWidgetStyleAsset*                                 Style;                                             // 0x758(0x8)
+	class SlateBrushAsset*                                       UncheckedImage;                                    // 0x760(0x8)
+	class SlateBrushAsset*                                       UncheckedHoveredImage;                             // 0x768(0x8)
+	class SlateBrushAsset*                                       UncheckedPressedImage;                             // 0x770(0x8)
+	class SlateBrushAsset*                                       CheckedImage;                                      // 0x778(0x8)
+	class SlateBrushAsset*                                       CheckedHoveredImage;                               // 0x780(0x8)
+	class SlateBrushAsset*                                       CheckedPressedImage;                               // 0x788(0x8)
+	class SlateBrushAsset*                                       UndeterminedImage;                                 // 0x790(0x8)
+	class SlateBrushAsset*                                       UndeterminedHoveredImage;                          // 0x798(0x8)
+	class SlateBrushAsset*                                       UndeterminedPressedImage;                          // 0x7a0(0x8)
+	char                                                         HorizontalAlignment;                               // 0x7a8(0x1)
+	char                                                         pad0x3_A5E6T[0x3];                                 // 0x7a9(0x3)
+	struct Margin                                                Padding;                                           // 0x7ac(0x10)
+	char                                                         pad0x4_H3E30[0x4];                                 // 0x7bc(0x4)
+	struct SlateColor                                            BorderBackgroundColor;                             // 0x7c0(0x30)
+	char                                                         pad0x28_PT0E4[0x28];                               // 0x7f0(0x28)
 };
 
 
@@ -988,29 +1058,8 @@ public:
 	char                                                         ClickMethod;                                       // 0x420(0x1)
 	char                                                         TouchMethod;                                       // 0x421(0x1)
 	bool                                                         IsFocusable;                                       // 0x422(0x1)
-	char                                                         pad0x5_EXLYY[0x5];                                 // 0x423(0x5)
-	char                                                         pad0x48_116CB[0x48];                               // 0x428(0x48)
-};
-
-
-// Size 0x38 (Full Size[0x188] - InheritedSize[0x150]
-class SizeBox: public ContentWidget
-{
-public:
-	bool                                                         bOverride_WidthOverride;                           // 0x150(0x1)
-	bool                                                         bOverride_HeightOverride;                          // 0x150(0x1)
-	bool                                                         bOverride_MinDesiredWidth;                         // 0x150(0x1)
-	bool                                                         bOverride_MinDesiredHeight;                        // 0x150(0x1)
-	bool                                                         bOverride_MaxDesiredWidth;                         // 0x150(0x1)
-	bool                                                         bOverride_MaxDesiredHeight;                        // 0x150(0x1)
-	char                                                         pad0x3_JXPC2[0x3];                                 // 0x151(0x3)
-	float                                                        WidthOverride;                                     // 0x154(0x4)
-	float                                                        HeightOverride;                                    // 0x158(0x4)
-	float                                                        MinDesiredWidth;                                   // 0x15c(0x4)
-	float                                                        MinDesiredHeight;                                  // 0x160(0x4)
-	float                                                        MaxDesiredWidth;                                   // 0x164(0x4)
-	float                                                        MaxDesiredHeight;                                  // 0x168(0x4)
-	char                                                         pad0x1c_8UNDX[0x1c];                               // 0x16c(0x1c)
+	char                                                         pad0x5_QUS7P[0x5];                                 // 0x423(0x5)
+	char                                                         pad0x48_PMNLQ[0x48];                               // 0x428(0x48)
 };
 
 
@@ -1018,73 +1067,7 @@ public:
 class SafeZone: public ContentWidget
 {
 public:
-	char                                                         pad0x18_5KRCE[0x18];                               // 0x150(0x18)
-};
-
-
-// Size 0x20 (Full Size[0x170] - InheritedSize[0x150]
-class InvalidationBox: public ContentWidget
-{
-public:
-	bool                                                         CacheRelativeTransforms;                           // 0x150(0x1)
-	char                                                         pad0x1f_L5U5M[0x1f];                               // 0x151(0x1f)
-};
-
-
-// Size 0x48 (Full Size[0x198] - InheritedSize[0x150]
-class MenuAnchor: public ContentWidget
-{
-public:
-	class UClass*                                                MenuClass;                                         // 0x150(0x8)
-	char                                                         Placement;                                         // 0x168(0x1)
-	char                                                         pad0x7_YFKHY[0x7];                                 // 0x169(0x7)
-	char                                                         pad0x28_19668[0x28];                               // 0x170(0x28)
-};
-
-
-// Size 0x20 (Full Size[0x170] - InheritedSize[0x150]
-class ScaleBox: public ContentWidget
-{
-public:
-	char                                                         StretchDirection;                                  // 0x150(0x1)
-	char                                                         Stretch;                                           // 0x151(0x1)
-	char                                                         pad0x2_QXAC1[0x2];                                 // 0x152(0x2)
-	float                                                        UserSpecifiedScale;                                // 0x154(0x4)
-	char                                                         pad0x18_2FAV1[0x18];                               // 0x158(0x18)
-};
-
-
-// Size 0x6c8 (Full Size[0x818] - InheritedSize[0x150]
-class CheckBox: public ContentWidget
-{
-public:
-	char                                                         CheckedState;                                      // 0x150(0x1)
-	char                                                         pad0x3_8HYIJ[0x3];                                 // 0x151(0x3)
-	struct CheckBoxStyle                                         WidgetStyle;                                       // 0x168(0x5f0)
-	class SlateWidgetStyleAsset*                                 Style;                                             // 0x758(0x8)
-	class SlateBrushAsset*                                       UncheckedImage;                                    // 0x760(0x8)
-	class SlateBrushAsset*                                       UncheckedHoveredImage;                             // 0x768(0x8)
-	class SlateBrushAsset*                                       UncheckedPressedImage;                             // 0x770(0x8)
-	class SlateBrushAsset*                                       CheckedImage;                                      // 0x778(0x8)
-	class SlateBrushAsset*                                       CheckedHoveredImage;                               // 0x780(0x8)
-	class SlateBrushAsset*                                       CheckedPressedImage;                               // 0x788(0x8)
-	class SlateBrushAsset*                                       UndeterminedImage;                                 // 0x790(0x8)
-	class SlateBrushAsset*                                       UndeterminedHoveredImage;                          // 0x798(0x8)
-	class SlateBrushAsset*                                       UndeterminedPressedImage;                          // 0x7a0(0x8)
-	char                                                         HorizontalAlignment;                               // 0x7a8(0x1)
-	char                                                         pad0x3_DFV8W[0x3];                                 // 0x7a9(0x3)
-	struct Margin                                                Padding;                                           // 0x7ac(0x10)
-	char                                                         pad0x4_ATMMT[0x4];                                 // 0x7bc(0x4)
-	struct SlateColor                                            BorderBackgroundColor;                             // 0x7c0(0x30)
-	char                                                         pad0x28_OFZX7[0x28];                               // 0x7f0(0x28)
-};
-
-
-// Size 0x18 (Full Size[0x168] - InheritedSize[0x150]
-class NamedSlot: public ContentWidget
-{
-public:
-	char                                                         pad0x18_ZG4IT[0x18];                               // 0x150(0x18)
+	char                                                         pad0x18_HIWVP[0x18];                               // 0x150(0x18)
 };
 
 
@@ -1093,7 +1076,24 @@ class Viewport: public ContentWidget
 {
 public:
 	struct LinearColor                                           BackgroundColor;                                   // 0x150(0x10)
-	char                                                         pad0x30_OZM7I[0x30];                               // 0x160(0x30)
+	char                                                         pad0x30_CZMJY[0x30];                               // 0x160(0x30)
+};
+
+
+// Size 0x20 (Full Size[0x170] - InheritedSize[0x150]
+class InvalidationBox: public ContentWidget
+{
+public:
+	bool                                                         CacheRelativeTransforms;                           // 0x150(0x1)
+	char                                                         pad0x1f_O990P[0x1f];                               // 0x151(0x1f)
+};
+
+
+// Size 0x18 (Full Size[0x168] - InheritedSize[0x150]
+class NamedSlot: public ContentWidget
+{
+public:
+	char                                                         pad0x18_G5SDN[0x18];                               // 0x150(0x18)
 };
 
 

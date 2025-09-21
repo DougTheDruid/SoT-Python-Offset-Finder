@@ -10,9 +10,9 @@
 class TimeService: public Actor
 {
 public:
-	char                                                         pad0x38_5VLI3[0x38];                               // 0x3a0(0x38)
+	char                                                         pad0x38_NP152[0x38];                               // 0x3a0(0x38)
 	struct Timespan                                              GameWorldTimeOffset;                               // 0x3d8(0x8)
-	char                                                         pad0x4_0LA1B[0x4];                                 // 0x3e0(0x4)
+	char                                                         pad0x4_PRM5L[0x4];                                 // 0x3e0(0x4)
 	double                                                       ServiceTimeQueryRapidFrequencyOffsetMax;           // 0x3f0(0x8)
 	float                                                        ServiceTimeQueryRapidFrequencyInSeconds;           // 0x3f8(0x4)
 	float                                                        ServiceTimeQueryFrequencyInSeconds;                // 0x3fc(0x4)
@@ -26,21 +26,7 @@ public:
 	float                                                        MaxLocalTimeUpdateAdjustPercentageToSpeedUp;       // 0x41c(0x4)
 	float                                                        MaxTimeJumpToCatchUpInSeconds;                     // 0x420(0x4)
 	struct ReplicatedAuthoritativeTime                           ReplicatedServerTime;                              // 0x470(0x10)
-	char                                                         pad0x50_R8HDK[0x50];                               // 0x480(0x50)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DebugTimeInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CustomizableTimeInterface: public Interface
-{
-public:
+	char                                                         pad0x50_EN37N[0x50];                               // 0x480(0x50)
 };
 
 
@@ -52,7 +38,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TimeBlueprintLibrary: public BlueprintFunctionLibrary
+class CustomizableTimeInterface: public Interface
 {
 public:
 };
@@ -72,11 +58,25 @@ public:
 };
 
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DebugTimeInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TimeBlueprintLibrary: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
 // Size 0x8 (Full Size[0x4d8] - InheritedSize[0x4d0]
 class DebugTimeService: public TimeService
 {
 public:
-	char                                                         pad0x8_C2U00[0x8];                                 // 0x4d0(0x8)
+	char                                                         pad0x8_T8THW[0x8];                                 // 0x4d0(0x8)
 };
 
 
@@ -84,7 +84,7 @@ public:
 class CustomizableTimeService: public DebugTimeService
 {
 public:
-	char                                                         pad0x8_JKZHU[0x8];                                 // 0x4d8(0x8)
+	char                                                         pad0x8_0ENP1[0x8];                                 // 0x4d8(0x8)
 };
 
 

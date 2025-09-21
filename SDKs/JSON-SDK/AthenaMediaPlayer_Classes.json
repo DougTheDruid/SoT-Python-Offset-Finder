@@ -6,7 +6,7 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x8_BDFMT[0x8]",
+        "Name": "pad0x8_IKKKG[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x170"
@@ -24,7 +24,7 @@
         "Offset": "0x180"
       },
       {
-        "Name": "pad0x8_E82RN[0x8]",
+        "Name": "pad0x8_EM2UN[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x188"

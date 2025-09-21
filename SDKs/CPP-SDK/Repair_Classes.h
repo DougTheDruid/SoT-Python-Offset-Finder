@@ -6,11 +6,17 @@
 #include "Repair_Structs.h"
 
 
-// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
-class RepairTypeId: public Object
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class RepairableInterface: public Interface
 {
 public:
-	struct FText                                                 DisplayName;                                       // 0x28(0x38)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class RepairObjectActionStateId: public ActionStateId
+{
+public:
 };
 
 
@@ -28,17 +34,11 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class RepairableInterface: public Interface
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
+class RepairTypeId: public Object
 {
 public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class RepairObjectActionStateId: public ActionStateId
-{
-public:
+	struct FText                                                 DisplayName;                                       // 0x28(0x38)
 };
 
 

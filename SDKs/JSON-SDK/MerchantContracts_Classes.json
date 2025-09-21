@@ -1,11 +1,4 @@
 {
-  "MerchantContractsBlueprintLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "PlayerMerchantContractsComponent": {
     "Super": "ActorComponent",
     "FullSize": "0xd0",
@@ -13,7 +6,7 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x8_3UUBB[0x8]",
+        "Name": "pad0x8_N2F1V[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -26,15 +19,8 @@
       }
     ]
   },
-  "PlayerMerchantContractsInterface": {
+  "MerchantContractsServiceInterface": {
     "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "DoesWieldedItemSatisfyMerchantContractStatCondition": {
-    "Super": "StatCondition",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
@@ -47,7 +33,7 @@
     "ClassSize": "0xb0",
     "Attributes": [
       {
-        "Name": "pad0x8_ELII1[0x8]",
+        "Name": "pad0x8_BXR8R[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
@@ -59,15 +45,29 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x98_A4F2J[0x98]",
+        "Name": "pad0x98_C1ZIM[0x98]",
         "Type": "char",
         "Size": "0x98",
         "Offset": "0x40"
       }
     ]
   },
-  "MerchantContractsServiceInterface": {
+  "PlayerMerchantContractsInterface": {
     "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MerchantContractsBlueprintLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DoesWieldedItemSatisfyMerchantContractStatCondition": {
+    "Super": "StatCondition",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",

@@ -1,10 +1,71 @@
 {
+  "DockableRotationOverrideInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AIActionActivity": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AIActionRole": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AIActionSpotServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "AIActionContextTag": {
     "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "AIActionInstigatorInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DockableRotationOverrideComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x8_4ZUA6[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "KeepOwnerRotationWhileDocked",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "pad0x7_SA57I[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xc1"
+      }
+    ]
   },
   "AIActionInstigatorComponent": {
     "Super": "ActorComponent",
@@ -13,7 +74,7 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x8_O8B4P[0x8]",
+        "Name": "pad0x8_YBFW3[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -38,42 +99,7 @@
       }
     ]
   },
-  "AIActionSpotServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AIActionSpotService": {
-    "Super": "Object",
-    "FullSize": "0x90",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x68",
-    "Attributes": [
-      {
-        "Name": "pad0x68_5UONR[0x68]",
-        "Type": "char",
-        "Size": "0x68",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "AIActionRole": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AIActionInstigatorInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "DockableRotationOverrideInterface": {
+  "AIActionSpotInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -87,7 +113,7 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "pad0x8_QBR2O[0x8]",
+        "Name": "pad0x8_GZKF5[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -117,48 +143,29 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x18_E6Z4I[0x18]",
+        "Name": "pad0x18_FRM5I[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0xf8"
       }
     ]
   },
-  "AIActionSpotInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
+  "AIActionSpotService": {
+    "Super": "Object",
+    "FullSize": "0x90",
     "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "DockableRotationOverrideComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xc8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x10",
+    "ClassSize": "0x68",
     "Attributes": [
       {
-        "Name": "pad0x8_RX7LC[0x8]",
+        "Name": "pad0x68_FEFK1[0x68]",
         "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "KeepOwnerRotationWhileDocked",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "pad0x7_6MQZ5[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0xc1"
+        "Size": "0x68",
+        "Offset": "0x28"
       }
     ]
   },
-  "AIActionActivity": {
-    "Super": "Object",
+  "AIActionActivity_Follow": {
+    "Super": "AIActionActivity",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
@@ -172,13 +179,6 @@
     "Attributes": []
   },
   "AIActionActivity_Quest": {
-    "Super": "AIActionActivity",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AIActionActivity_Follow": {
     "Super": "AIActionActivity",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

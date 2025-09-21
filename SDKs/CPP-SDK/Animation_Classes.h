@@ -6,146 +6,73 @@
 #include "Animation_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class EmotePropDataInterface: public Interface
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class CosmeticItemAnimationSetDataAsset: public DataAsset
 {
 public:
+	struct CosmeticItemAnimationSetLoopData                      LoopData;                                          // 0x28(0x20)
+	TArray<class AnimSequenceBase*>                              OneShotSequences;                                  // 0x48(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class AnimationDataStoreAsset: public DataAsset
+{
+public:
+	TArray<struct AnimationDataStoreAssetEntry>                  AssetRefs;                                         // 0x28(0x10)
+};
+
+
+// Size 0xc0 (Full Size[0x500] - InheritedSize[0x440]
+class CosmeticItemAnimationInstance: public AnimInstance
+{
+public:
+	char                                                         pad0x8_EUNN8[0x8];                                 // 0x440(0x8)
+	class CosmeticItemAnimationSetDataAsset*                     AnimationDataSet;                                  // 0x448(0x8)
+	class AnimMontage*                                           ActiveMontage;                                     // 0x450(0x8)
+	char                                                         pad0xa8_CUCWC[0xa8];                               // 0x458(0xa8)
+};
+
+
+// Size 0x18 (Full Size[0x50] - InheritedSize[0x38]
+class AnimNotify_PlayAnimationForCosmetic: public AnimNotify
+{
+public:
+	char                                                         CosmeticLocation;                                  // 0x38(0x1)
+	char                                                         pad0x7_76CMD[0x7];                                 // 0x39(0x7)
+	class AnimSequenceBase*                                      CosmeticItemAnimation;                             // 0x40(0x8)
+	bool                                                         Looping;                                           // 0x48(0x1)
+	char                                                         pad0x7_Q8H4N[0x7];                                 // 0x49(0x7)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class NetworkSyncedAnimationInstanceInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x20 (Full Size[0x58] - InheritedSize[0x38]
-class AnimNotify_SpawnCosmeticItem: public AnimNotify
-{
-public:
-	class UClass*                                                ItemSpawnClass;                                    // 0x38(0x8)
-	char                                                         SpawnLocation;                                     // 0x40(0x1)
-	char                                                         pad0x7_745W9[0x7];                                 // 0x41(0x7)
-	class CosmeticItemAnimationSetDataAsset*                     CosmeticItemAnimationDataSet;                      // 0x48(0x8)
-	bool                                                         SpawnHidden;                                       // 0x50(0x1)
-	bool                                                         SpawnForRole;                                      // 0x51(0x1)
-	char                                                         SpawnRole;                                         // 0x52(0x1)
-	char                                                         pad0x5_EHW2M[0x5];                                 // 0x53(0x5)
-};
-
-
-// Size 0xc8 (Full Size[0x180] - InheritedSize[0xb8]
-class AnimationDataStoreComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_GM3G5[0x8];                                 // 0xb8(0x8)
-	class AnimationDataStoreWeakReferenceAsset*                  AnimationDataStoreWeakReferences;                  // 0xc0(0x8)
-	char                                                         pad0xb8_VBDOU[0xb8];                               // 0xc8(0xb8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AnimationServerData: public Object
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AnimationStateId: public Object
+class DockingAnimationInterface: public Interface
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AnimationDataConsumerInterface: public Interface
+class AnimationLookAtInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class WaitForAnimationStateExitProxy: public Object
+// Size 0x220 (Full Size[0x660] - InheritedSize[0x440]
+class CharacterAnimationInstance: public AnimInstance
 {
 public:
-	char                                                         pad0x20_VD711[0x20];                               // 0x28(0x20)
-};
-
-
-// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class AnimationEditorSettings: public DeveloperSettings
-{
-public:
-	struct StringAssetReference                                  CustomAnimationMontageIdListings;                  // 0x38(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class SyncGroupAnimMetaData: public AnimMetaData
-{
-public:
-	struct FName                                                 SyncGroup;                                         // 0x28(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AnimationDataFunctionLib: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CustomAnimationInstanceInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x80 (Full Size[0x138] - InheritedSize[0xb8]
-class CustomAnimationMontageComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_D2HF9[0x8];                                 // 0xb8(0x8)
-	struct CustomAnimationMontageComponentReplicatedData         ReplicatedData;                                    // 0xc0(0xc)
-	char                                                         pad0x6c_A1DJE[0x6c];                               // 0xcc(0x6c)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AnimationDataOverriderInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CosmeticItemAnimationDataConsumerInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DockableInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AIAnimationInstanceInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CustomAnimationMontageInterface: public Interface
-{
-public:
+	char                                                         pad0x10_BT8T7[0x10];                               // 0x440(0x10)
+	struct CharacterAnimationIKUpdateParams                      IKLeftHandUpdateParams;                            // 0x450(0x40)
+	struct CharacterAnimationIKUpdateParams                      IKRightHandUpdateParams;                           // 0x490(0x40)
+	struct FName                                                 RightHandIKSocketName;                             // 0x4d0(0x8)
+	struct FName                                                 LeftHandIKSocketName;                              // 0x4d8(0x8)
+	struct LimbIK                                                RightHandIK;                                       // 0x4e0(0x60)
+	struct LimbIK                                                LeftHandIK;                                        // 0x540(0x60)
+	struct LimbIK                                                RightFootIK;                                       // 0x5a0(0x60)
+	struct LimbIK                                                LeftFootIK;                                        // 0x600(0x60)
 };
 
 
@@ -159,104 +86,34 @@ public:
 	float                                                        ReplicatedAnimationProgression;                    // 0xc4(0x4)
 	int                                                          ReplicatedPlayingAnimationIndex;                   // 0xc8(0x4)
 	float                                                        ReplicatedPlayRate;                                // 0xcc(0x4)
-	char                                                         pad0x8_NWQ7F[0x8];                                 // 0xd0(0x8)
+	char                                                         pad0x8_WH2AN[0x8];                                 // 0xd0(0x8)
 	class AnimInstance*                                          AnimInstance;                                      // 0xd8(0x8)
-	char                                                         pad0x20_4OTXR[0x20];                               // 0xe0(0x20)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class LoadableAnimationsInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class AnimationDataStoreAsset: public DataAsset
-{
-public:
-	TArray<struct AnimationDataStoreAssetEntry>                  AssetRefs;                                         // 0x28(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class AnimNotifyCondition_FeatureConfigValidation: public AnimNotifyCondition
-{
-public:
-	struct FName                                                 Feature;                                           // 0x28(0x8)
-	bool                                                         TriggerWhenDisabled;                               // 0x30(0x1)
-	char                                                         pad0x7_XY5W1[0x7];                                 // 0x31(0x7)
+	char                                                         pad0x20_IYPHO[0x20];                               // 0xe0(0x20)
 };
 
 
 // Size 0x18 (Full Size[0x50] - InheritedSize[0x38]
-class AnimNotify_PlayAnimationForCosmetic: public AnimNotify
+class AnimNotify_ToggleIK: public AnimNotify
 {
 public:
-	char                                                         CosmeticLocation;                                  // 0x38(0x1)
-	char                                                         pad0x7_HBQB8[0x7];                                 // 0x39(0x7)
-	class AnimSequenceBase*                                      CosmeticItemAnimation;                             // 0x40(0x8)
-	bool                                                         Looping;                                           // 0x48(0x1)
-	char                                                         pad0x7_B8T31[0x7];                                 // 0x49(0x7)
+	TArray<char>                                                 IKLimbsToAdjust;                                   // 0x38(0x10)
+	bool                                                         Enabled;                                           // 0x48(0x1)
+	char                                                         pad0x7_QH5NQ[0x7];                                 // 0x49(0x7)
 };
 
 
-// Size 0xf8 (Full Size[0x120] - InheritedSize[0x28]
-class WeightedAnimSequenceLoadOnDemand: public Object
+// Size 0x80 (Full Size[0x138] - InheritedSize[0xb8]
+class CustomAnimationMontageComponent: public ActorComponent
 {
 public:
-	class AnimSequence*                                          FallBackAnimation;                                 // 0x28(0x8)
-	TArray<struct WeightedAnimationData>                         WeightedAnimationList;                             // 0x30(0x10)
-	char                                                         pad0xe0_UR082[0xe0];                               // 0x40(0xe0)
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class WaitForAnimationStateEntryProxy: public Object
-{
-public:
-	char                                                         pad0x28_BDARN[0x28];                               // 0x28(0x28)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class AnimationDataStoreWeakReferenceAsset: public DataAsset
-{
-public:
-	TArray<struct AnimationDataStoreAssetWeakReferenceEntry>     AssetWeakRefs;                                     // 0x28(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class AnimNotify_DestroyCosmeticItem: public AnimNotify
-{
-public:
-	char                                                         DestroyLocation;                                   // 0x38(0x1)
-	char                                                         pad0x7_I79Q2[0x7];                                 // 0x39(0x7)
-};
-
-
-// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class AnimNotify_ReattachCosmeticItem: public AnimNotify
-{
-public:
-	char                                                         CurrentLocation;                                   // 0x38(0x1)
-	char                                                         NewLocation;                                       // 0x39(0x1)
-	char                                                         pad0x6_O25D1[0x6];                                 // 0x3a(0x6)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class CustomAnimationMontageDefinitionListingDataAsset: public DataAsset
-{
-public:
-	TArray<struct CustomAnimationMontageDefinitionEntry>         Entries;                                           // 0x28(0x10)
+	char                                                         pad0x8_5FKB1[0x8];                                 // 0xb8(0x8)
+	struct CustomAnimationMontageComponentReplicatedData         ReplicatedData;                                    // 0xc0(0xc)
+	char                                                         pad0x6c_QSR58[0x6c];                               // 0xcc(0x6c)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DockingAnimationInterface: public Interface
+class AnimationData: public Object
 {
 public:
 };
@@ -270,26 +127,285 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class AnimNotify_SetLookAtEnabled: public AnimNotify
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ServerAnimationDataStoreInterface: public Interface
 {
 public:
-	bool                                                         Enabled;                                           // 0x38(0x1)
-	char                                                         pad0x7_KR1A1[0x7];                                 // 0x39(0x7)
 };
 
 
-// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
-class CustomAnimationMontageDefinitionDataAsset: public DataAsset
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class CustomAnimationMontageIdListingDataAsset: public DataAsset
 {
 public:
-	struct FName                                                 MontageId;                                         // 0x28(0x8)
-	char                                                         MontageType;                                       // 0x30(0x1)
-	char                                                         pad0x7_H1PW2[0x7];                                 // 0x31(0x7)
-	class AnimMontage*                                           MontageData;                                       // 0x38(0x8)
-	struct CustomAnimationMontageStagedLoopingData               LoopingData;                                       // 0x40(0x28)
-	bool                                                         Interrupts;                                        // 0x68(0x1)
-	char                                                         pad0x7_S7TVC[0x7];                                 // 0x69(0x7)
+	TArray<struct Name>                                          MontageIds;                                        // 0x28(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CharacterIKInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CustomAnimationInstanceInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+class AnimNotify_SetCosmeticItemVisibility: public AnimNotify
+{
+public:
+	char                                                         ItemLocation;                                      // 0x38(0x1)
+	bool                                                         Visible;                                           // 0x39(0x1)
+	bool                                                         RenderShadow;                                      // 0x3a(0x1)
+	bool                                                         RenderShadowWhenHidden;                            // 0x3b(0x1)
+	bool                                                         UpdateForRole;                                     // 0x3c(0x1)
+	char                                                         UpdateRole;                                        // 0x3d(0x1)
+	char                                                         pad0x2_BQZ0B[0x2];                                 // 0x3e(0x2)
+};
+
+
+// Size 0x68 (Full Size[0x98] - InheritedSize[0x30]
+class AnimNotifyState_ToggleIK: public AnimNotifyState
+{
+public:
+	TArray<char>                                                 IKLimbsToAdjust;                                   // 0x30(0x10)
+	bool                                                         Enabled;                                           // 0x40(0x1)
+	char                                                         pad0x57_W8DRU[0x57];                               // 0x41(0x57)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class NetworkSyncedAnimationInstanceInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class DisguiseTypesDataAsset: public DataAsset
+{
+public:
+	TArray<struct DisguiseProxyData>                             DisguiseData;                                      // 0x28(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
+class AnimNotify_SpawnDisguiseEnd: public AnimNotify
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
+class AnimNotifyState_SetMeshInvisibleForDuration: public AnimNotifyState
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CustomAnimationMontageInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class WaitForAnimationStateExitProxy: public Object
+{
+public:
+	char                                                         pad0x20_8HL84[0x20];                               // 0x28(0x20)
+};
+
+
+// Size 0x68 (Full Size[0x120] - InheritedSize[0xb8]
+class CosmeticItemAnimationComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x58_Z5MF6[0x58];                               // 0xb8(0x58)
+	class CosmeticItemAnimationDataAsset*                        DataAsset;                                         // 0x110(0x8)
+	char                                                         pad0x8_KD8MI[0x8];                                 // 0x118(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class LoadableAnimationsInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+class AnimNotify_ReattachCosmeticItem: public AnimNotify
+{
+public:
+	char                                                         CurrentLocation;                                   // 0x38(0x1)
+	char                                                         NewLocation;                                       // 0x39(0x1)
+	char                                                         pad0x6_O5HGG[0x6];                                 // 0x3a(0x6)
+};
+
+
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+class AnimNotify_DestroyCosmeticItem: public AnimNotify
+{
+public:
+	char                                                         DestroyLocation;                                   // 0x38(0x1)
+	char                                                         pad0x7_A1RVZ[0x7];                                 // 0x39(0x7)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AnimationStateId: public Object
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class RemoteAnimPlayableInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class WeightedAnimationLoadOnDemandDataAsset: public DataAsset
+{
+public:
+	TArray<struct WeightedAnimationData>                         WeightedAnimationList;                             // 0x28(0x10)
+	class AnimSequence*                                          FallBackAnimation;                                 // 0x38(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x9a0] - InheritedSize[0x9a0]
+class ClientSkeletalMeshComponent: public SkeletalMeshComponent
+{
+public:
+};
+
+
+// Size 0x508 (Full Size[0x5c0] - InheritedSize[0xb8]
+class TransformBlendCurveComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_RT7E8[0x8];                                 // 0xb8(0x8)
+	struct TransformBlendCurve                                   Curve;                                             // 0xc0(0x500)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class CustomAnimationMontageDefinitionListingDataAsset: public DataAsset
+{
+public:
+	TArray<struct CustomAnimationMontageDefinitionEntry>         Entries;                                           // 0x28(0x10)
+};
+
+
+// Size 0xb0 (Full Size[0x450] - InheritedSize[0x3a0]
+class CosmeticItemActor: public Actor
+{
+public:
+	char                                                         pad0x8_SZWVK[0x8];                                 // 0x3a0(0x8)
+	class SkeletalMeshComponent*                                 MeshComponent;                                     // 0x3a8(0x8)
+	char                                                         pad0xa0_M39QM[0xa0];                               // 0x3b0(0xa0)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class EmotePropDataInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
+class CosmeticItemAnimationDataAsset: public DataAsset
+{
+public:
+	struct FName                                                 WieldSockets;                                      // 0x28(0x8)
+	char                                                         pad0x30_AQGM6[0x30];                               // 0x30(0x30)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AnimationServerData: public Object
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class AnimationDataStoreWeakReferenceAsset: public DataAsset
+{
+public:
+	TArray<struct AnimationDataStoreAssetWeakReferenceEntry>     AssetWeakRefs;                                     // 0x28(0x10)
+};
+
+
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+class AnimNotify_SwitchCosmeticItemAttachment: public AnimNotify
+{
+public:
+	char                                                         PreviousLocation;                                  // 0x38(0x1)
+	char                                                         NewLocation;                                       // 0x39(0x1)
+	char                                                         pad0x6_JYHZD[0x6];                                 // 0x3a(0x6)
+};
+
+
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
+class AnimationDataStore: public Object
+{
+public:
+	char                                                         pad0x18_HQSD1[0x18];                               // 0x28(0x18)
+	TArray<struct AnimationDataStoreEntry>                       Data;                                              // 0x40(0x10)
+	TArray<struct AnimationDataStoreLoadingEntry>                LoadingData;                                       // 0x50(0x10)
+};
+
+
+// Size 0x18 (Full Size[0x50] - InheritedSize[0x38]
+class AnimNotify_DetachAndMaintainWorldPosition: public AnimNotify
+{
+public:
+	char                                                         CurrentLocation;                                   // 0x38(0x1)
+	char                                                         pad0x3_23E1I[0x3];                                 // 0x39(0x3)
+	struct Vector                                                PreviewLocationOffset;                             // 0x3c(0xc)
+	float                                                        PreviewScaleMultiplier;                            // 0x48(0x4)
+	char                                                         pad0x4_V1582[0x4];                                 // 0x4c(0x4)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class LimbIKFunctionLibrary: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AIAnimationInstanceInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+class AnimNotify_SpawnDisguiseStart: public AnimNotify
+{
+public:
+	class CurveFloat*                                            InvisibilityCurve;                                 // 0x38(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
+class AnimNotifyState_SetLookAtDisabledForDuration: public AnimNotifyState
+{
+public:
 };
 
 
@@ -299,13 +415,241 @@ class AnimNotifyState_SpawnCosmeticItem: public AnimNotifyState
 public:
 	class UClass*                                                CosmeticItemToSpawn;                               // 0x30(0x8)
 	char                                                         SpawnLocation;                                     // 0x38(0x1)
-	char                                                         pad0x7_XO223[0x7];                                 // 0x39(0x7)
+	char                                                         pad0x7_DY6WE[0x7];                                 // 0x39(0x7)
 	class CosmeticItemAnimationSetDataAsset*                     CosmeticItemAnimationDataSet;                      // 0x40(0x8)
 	bool                                                         SpawnHidden;                                       // 0x48(0x1)
 	bool                                                         DestroyOnEnd;                                      // 0x49(0x1)
 	bool                                                         OverrideDestroyLocation;                           // 0x4a(0x1)
 	char                                                         DestroyLocation;                                   // 0x4b(0x1)
-	char                                                         pad0x4_TVSF4[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_L6UOE[0x4];                                 // 0x4c(0x4)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TurningFunctionLib: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
+// Size 0xc8 (Full Size[0x180] - InheritedSize[0xb8]
+class AnimationDataStoreComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_3I53H[0x8];                                 // 0xb8(0x8)
+	class AnimationDataStoreWeakReferenceAsset*                  AnimationDataStoreWeakReferences;                  // 0xc0(0x8)
+	char                                                         pad0xb8_JF5GW[0xb8];                               // 0xc8(0xb8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AnimationDataStoreId: public Object
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class LocomotionFunctionLib: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
+class AnimNotify_SetDisguiseParamValue: public AnimNotify
+{
+public:
+	struct FName                                                 ParameterName;                                     // 0x38(0x8)
+	float                                                        ParameterValue;                                    // 0x40(0x4)
+	char                                                         pad0x4_CQ7GI[0x4];                                 // 0x44(0x4)
+};
+
+
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+class AnimNotify_PlayMontage: public AnimNotify
+{
+public:
+	class AnimMontage*                                           MontageToPlay;                                     // 0x38(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CustomAnimationInstanceProviderInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class AnimNotifyCondition_FeatureConfigValidation: public AnimNotifyCondition
+{
+public:
+	struct FName                                                 Feature;                                           // 0x28(0x8)
+	bool                                                         TriggerWhenDisabled;                               // 0x30(0x1)
+	char                                                         pad0x7_YGHRW[0x7];                                 // 0x31(0x7)
+};
+
+
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+class AnimNotify_SetLookAtEnabled: public AnimNotify
+{
+public:
+	bool                                                         Enabled;                                           // 0x38(0x1)
+	char                                                         pad0x7_2OR0N[0x7];                                 // 0x39(0x7)
+};
+
+
+// Size 0x68 (Full Size[0x90] - InheritedSize[0x28]
+class DisguiseMMCData: public Object
+{
+public:
+	char                                                         pad0x8_TJTU5[0x8];                                 // 0x28(0x8)
+	struct StringAssetReference                                  StaticMesh;                                        // 0x30(0x10)
+	struct StringAssetReference                                  SkeletalMesh;                                      // 0x40(0x10)
+	int                                                          ResourceSize;                                      // 0x50(0x4)
+	char                                                         pad0x4_5ZRYZ[0x4];                                 // 0x54(0x4)
+	TArray<class MaterialInterface*>                             OverrideMaterials;                                 // 0x58(0x10)
+	class UClass*                                                FallbackCategory;                                  // 0x68(0x8)
+	TArray<struct StringAssetReference>                          FallbackMaterials;                                 // 0x70(0x10)
+	class UClass*                                                BudgetToCountAgainst;                              // 0x80(0x8)
+	char                                                         pad0x8_LH25S[0x8];                                 // 0x88(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AnimationDataFunctionLib: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
+// Size 0xf8 (Full Size[0x120] - InheritedSize[0x28]
+class WeightedAnimSequenceLoadOnDemand: public Object
+{
+public:
+	class AnimSequence*                                          FallBackAnimation;                                 // 0x28(0x8)
+	TArray<struct WeightedAnimationData>                         WeightedAnimationList;                             // 0x30(0x10)
+	char                                                         pad0xe0_TXGLO[0xe0];                               // 0x40(0xe0)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CosmeticItemAnimationInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class SyncGroupAnimMetaData: public AnimMetaData
+{
+public:
+	struct FName                                                 SyncGroup;                                         // 0x28(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CustomAnimationHandlerInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AnimationDataStoreLoaderInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class IndexedPlayableMontagesInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
+class CustomAnimationMontageDefinitionDataAsset: public DataAsset
+{
+public:
+	struct FName                                                 MontageId;                                         // 0x28(0x8)
+	char                                                         MontageType;                                       // 0x30(0x1)
+	char                                                         pad0x7_FBPTJ[0x7];                                 // 0x31(0x7)
+	class AnimMontage*                                           MontageData;                                       // 0x38(0x8)
+	struct CustomAnimationMontageStagedLoopingData               LoopingData;                                       // 0x40(0x28)
+	bool                                                         Interrupts;                                        // 0x68(0x1)
+	char                                                         pad0x7_FXKH9[0x7];                                 // 0x69(0x7)
+};
+
+
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
+class AnimationEditorSettings: public DeveloperSettings
+{
+public:
+	struct StringAssetReference                                  CustomAnimationMontageIdListings;                  // 0x38(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
+class AnimNotify_DestroyAllCosmeticItems: public AnimNotify
+{
+public:
+};
+
+
+// Size 0x28 (Full Size[0x58] - InheritedSize[0x30]
+class AnimNotifyState_PropagateCurveValuesToMaterials: public AnimNotifyState
+{
+public:
+	TArray<struct CurveUpdateValues>                             CurveValues;                                       // 0x30(0x10)
+	bool                                                         DoNotPropagteCurveValues;                          // 0x40(0x1)
+	char                                                         pad0x17_HFPJ8[0x17];                               // 0x41(0x17)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DockableInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AthenaAnimationControllableSocketsInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class WaitForAnimationStateEntryProxy: public Object
+{
+public:
+	char                                                         pad0x28_OLEUY[0x28];                               // 0x28(0x28)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AnimationDataOverriderInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
+class AnimNotifyState_HideMeshByBoneForDuration: public AnimNotifyState
+{
+public:
+	struct FName                                                 BoneName;                                          // 0x30(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CosmeticItemAnimationDataConsumerInterface: public Interface
+{
+public:
 };
 
 
@@ -323,312 +667,25 @@ public:
 };
 
 
-// Size 0x68 (Full Size[0x90] - InheritedSize[0x28]
-class DisguiseMMCData: public Object
-{
-public:
-	char                                                         pad0x8_PX649[0x8];                                 // 0x28(0x8)
-	struct StringAssetReference                                  StaticMesh;                                        // 0x30(0x10)
-	struct StringAssetReference                                  SkeletalMesh;                                      // 0x40(0x10)
-	int                                                          ResourceSize;                                      // 0x50(0x4)
-	char                                                         pad0x4_YKQZJ[0x4];                                 // 0x54(0x4)
-	TArray<class MaterialInterface*>                             OverrideMaterials;                                 // 0x58(0x10)
-	class UClass*                                                FallbackCategory;                                  // 0x68(0x8)
-	TArray<struct StringAssetReference>                          FallbackMaterials;                                 // 0x70(0x10)
-	class UClass*                                                BudgetToCountAgainst;                              // 0x80(0x8)
-	char                                                         pad0x8_4X4T4[0x8];                                 // 0x88(0x8)
-};
-
-
-// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
-class AnimationDataStore: public Object
-{
-public:
-	char                                                         pad0x18_PDD7S[0x18];                               // 0x28(0x18)
-	TArray<struct AnimationDataStoreEntry>                       Data;                                              // 0x40(0x10)
-	TArray<struct AnimationDataStoreLoadingEntry>                LoadingData;                                       // 0x50(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class DisguiseTypesDataAsset: public DataAsset
-{
-public:
-	TArray<struct DisguiseProxyData>                             DisguiseData;                                      // 0x28(0x10)
-};
-
-
-// Size 0x68 (Full Size[0x98] - InheritedSize[0x30]
-class AnimNotifyState_ToggleIK: public AnimNotifyState
-{
-public:
-	TArray<char>                                                 IKLimbsToAdjust;                                   // 0x30(0x10)
-	bool                                                         Enabled;                                           // 0x40(0x1)
-	char                                                         pad0x57_VRRGE[0x57];                               // 0x41(0x57)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AnimationDataStoreId: public Object
+class AnimationDataConsumerInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class RemoteAnimPlayableInterface: public Interface
+// Size 0x20 (Full Size[0x58] - InheritedSize[0x38]
+class AnimNotify_SpawnCosmeticItem: public AnimNotify
 {
 public:
-};
-
-
-// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class AnimNotify_PlayMontage: public AnimNotify
-{
-public:
-	class AnimMontage*                                           MontageToPlay;                                     // 0x38(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class AnimNotify_SetCosmeticItemVisibility: public AnimNotify
-{
-public:
-	char                                                         ItemLocation;                                      // 0x38(0x1)
-	bool                                                         Visible;                                           // 0x39(0x1)
-	bool                                                         RenderShadow;                                      // 0x3a(0x1)
-	bool                                                         RenderShadowWhenHidden;                            // 0x3b(0x1)
-	bool                                                         UpdateForRole;                                     // 0x3c(0x1)
-	char                                                         UpdateRole;                                        // 0x3d(0x1)
-	char                                                         pad0x2_5BCTM[0x2];                                 // 0x3e(0x2)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class WeightedAnimationLoadOnDemandDataAsset: public DataAsset
-{
-public:
-	TArray<struct WeightedAnimationData>                         WeightedAnimationList;                             // 0x28(0x10)
-	class AnimSequence*                                          FallBackAnimation;                                 // 0x38(0x8)
-};
-
-
-// Size 0x220 (Full Size[0x660] - InheritedSize[0x440]
-class CharacterAnimationInstance: public AnimInstance
-{
-public:
-	char                                                         pad0x10_QSULW[0x10];                               // 0x440(0x10)
-	struct CharacterAnimationIKUpdateParams                      IKLeftHandUpdateParams;                            // 0x450(0x40)
-	struct CharacterAnimationIKUpdateParams                      IKRightHandUpdateParams;                           // 0x490(0x40)
-	struct FName                                                 RightHandIKSocketName;                             // 0x4d0(0x8)
-	struct FName                                                 LeftHandIKSocketName;                              // 0x4d8(0x8)
-	struct LimbIK                                                RightHandIK;                                       // 0x4e0(0x60)
-	struct LimbIK                                                LeftHandIK;                                        // 0x540(0x60)
-	struct LimbIK                                                RightFootIK;                                       // 0x5a0(0x60)
-	struct LimbIK                                                LeftFootIK;                                        // 0x600(0x60)
-};
-
-
-// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class AnimNotify_SpawnDisguiseEnd: public AnimNotify
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CustomAnimationInstanceProviderInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AnimationLookAtInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
-class AnimNotifyState_HideMeshByBoneForDuration: public AnimNotifyState
-{
-public:
-	struct FName                                                 BoneName;                                          // 0x30(0x8)
-};
-
-
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class CosmeticItemAnimationSetDataAsset: public DataAsset
-{
-public:
-	struct CosmeticItemAnimationSetLoopData                      LoopData;                                          // 0x28(0x20)
-	TArray<class AnimSequenceBase*>                              OneShotSequences;                                  // 0x48(0x10)
-};
-
-
-// Size 0x18 (Full Size[0x50] - InheritedSize[0x38]
-class AnimNotify_ToggleIK: public AnimNotify
-{
-public:
-	TArray<char>                                                 IKLimbsToAdjust;                                   // 0x38(0x10)
-	bool                                                         Enabled;                                           // 0x48(0x1)
-	char                                                         pad0x7_CCFYX[0x7];                                 // 0x49(0x7)
-};
-
-
-// Size 0xc0 (Full Size[0x500] - InheritedSize[0x440]
-class CosmeticItemAnimationInstance: public AnimInstance
-{
-public:
-	char                                                         pad0x8_AYK29[0x8];                                 // 0x440(0x8)
-	class CosmeticItemAnimationSetDataAsset*                     AnimationDataSet;                                  // 0x448(0x8)
-	class AnimMontage*                                           ActiveMontage;                                     // 0x450(0x8)
-	char                                                         pad0xa8_4NQJT[0xa8];                               // 0x458(0xa8)
-};
-
-
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class AnimNotifyState_SetLookAtDisabledForDuration: public AnimNotifyState
-{
-public:
-};
-
-
-// Size 0x68 (Full Size[0x120] - InheritedSize[0xb8]
-class CosmeticItemAnimationComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x58_6ID8J[0x58];                               // 0xb8(0x58)
-	class CosmeticItemAnimationDataAsset*                        DataAsset;                                         // 0x110(0x8)
-	char                                                         pad0x8_X26IB[0x8];                                 // 0x118(0x8)
-};
-
-
-// Size 0x28 (Full Size[0x58] - InheritedSize[0x30]
-class AnimNotifyState_PropagateCurveValuesToMaterials: public AnimNotifyState
-{
-public:
-	TArray<struct CurveUpdateValues>                             CurveValues;                                       // 0x30(0x10)
-	bool                                                         DoNotPropagteCurveValues;                          // 0x40(0x1)
-	char                                                         pad0x17_I81VY[0x17];                               // 0x41(0x17)
-};
-
-
-// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
-class CosmeticItemAnimationDataAsset: public DataAsset
-{
-public:
-	struct FName                                                 WieldSockets;                                      // 0x28(0x8)
-	char                                                         pad0x30_UV593[0x30];                               // 0x30(0x30)
-};
-
-
-// Size 0x18 (Full Size[0x50] - InheritedSize[0x38]
-class AnimNotify_DetachAndMaintainWorldPosition: public AnimNotify
-{
-public:
-	char                                                         CurrentLocation;                                   // 0x38(0x1)
-	char                                                         pad0x3_6PW4B[0x3];                                 // 0x39(0x3)
-	struct Vector                                                PreviewLocationOffset;                             // 0x3c(0xc)
-	float                                                        PreviewScaleMultiplier;                            // 0x48(0x4)
-	char                                                         pad0x4_RV07G[0x4];                                 // 0x4c(0x4)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AnimationDataStoreLoaderInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class AnimNotify_SetDisguiseParamValue: public AnimNotify
-{
-public:
-	struct FName                                                 ParameterName;                                     // 0x38(0x8)
-	float                                                        ParameterValue;                                    // 0x40(0x4)
-	char                                                         pad0x4_HT5RV[0x4];                                 // 0x44(0x4)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AthenaAnimationControllableSocketsInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x9a0] - InheritedSize[0x9a0]
-class ClientSkeletalMeshComponent: public SkeletalMeshComponent
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TurningFunctionLib: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
-// Size 0xb0 (Full Size[0x450] - InheritedSize[0x3a0]
-class CosmeticItemActor: public Actor
-{
-public:
-	char                                                         pad0x8_G9LOD[0x8];                                 // 0x3a0(0x8)
-	class SkeletalMeshComponent*                                 MeshComponent;                                     // 0x3a8(0x8)
-	char                                                         pad0xa0_7BPGR[0xa0];                               // 0x3b0(0xa0)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AnimationData: public Object
-{
-public:
-};
-
-
-// Size 0x508 (Full Size[0x5c0] - InheritedSize[0xb8]
-class TransformBlendCurveComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_6EYL9[0x8];                                 // 0xb8(0x8)
-	struct TransformBlendCurve                                   Curve;                                             // 0xc0(0x500)
-};
-
-
-// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class AnimNotify_SwitchCosmeticItemAttachment: public AnimNotify
-{
-public:
-	char                                                         PreviousLocation;                                  // 0x38(0x1)
-	char                                                         NewLocation;                                       // 0x39(0x1)
-	char                                                         pad0x6_XPPVD[0x6];                                 // 0x3a(0x6)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CharacterIKInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class CustomAnimationMontageIdListingDataAsset: public DataAsset
-{
-public:
-	TArray<struct Name>                                          MontageIds;                                        // 0x28(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ServerAnimationDataStoreInterface: public Interface
-{
-public:
+	class UClass*                                                ItemSpawnClass;                                    // 0x38(0x8)
+	char                                                         SpawnLocation;                                     // 0x40(0x1)
+	char                                                         pad0x7_NK8JQ[0x7];                                 // 0x41(0x7)
+	class CosmeticItemAnimationSetDataAsset*                     CosmeticItemAnimationDataSet;                      // 0x48(0x8)
+	bool                                                         SpawnHidden;                                       // 0x50(0x1)
+	bool                                                         SpawnForRole;                                      // 0x51(0x1)
+	char                                                         SpawnRole;                                         // 0x52(0x1)
+	char                                                         pad0x5_PQIE8[0x5];                                 // 0x53(0x5)
 };
 
 
@@ -639,69 +696,19 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CosmeticItemAnimationInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class IndexedPlayableMontagesInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class AnimNotify_SpawnDisguiseStart: public AnimNotify
-{
-public:
-	class CurveFloat*                                            InvisibilityCurve;                                 // 0x38(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class AnimNotify_DestroyAllCosmeticItems: public AnimNotify
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CustomAnimationHandlerInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class LimbIKFunctionLibrary: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class LocomotionFunctionLib: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class AnimNotifyState_SetMeshInvisibleForDuration: public AnimNotifyState
-{
-public:
-};
-
-
 // Size 0x8 (Full Size[0x58] - InheritedSize[0x50]
 class AnimNotifyState_SpawnDisguise: public AnimNotifyState_SpawnCosmeticItem
 {
 public:
 	bool                                                         IncludeScaleWhenAttaching;                         // 0x50(0x1)
-	char                                                         pad0x7_GNZVO[0x7];                                 // 0x51(0x7)
+	char                                                         pad0x7_229N4[0x7];                                 // 0x51(0x7)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AnimationDataStoreOverrideId: public AnimationDataStoreId
+{
+public:
 };
 
 
@@ -710,14 +717,7 @@ class PreviewCharacterAnimationInstance: public CharacterAnimationInstance
 {
 public:
 	class AnimMontage*                                           ActiveMontage;                                     // 0x660(0x8)
-	char                                                         pad0x88_WULHO[0x88];                               // 0x668(0x88)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AnimationDataStoreOverrideId: public AnimationDataStoreId
-{
-public:
+	char                                                         pad0x88_PUE6X[0x88];                               // 0x668(0x88)
 };
 
 

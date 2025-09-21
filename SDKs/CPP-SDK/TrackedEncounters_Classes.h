@@ -7,63 +7,74 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class SPC_Activity_TrackedEncounters: public SandboxPerformanceConstraintActivityType
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class TrackedEncountersEventServiceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
-class TrackedEncounter: public Object
-{
-public:
-	class AIFixedWavesSpawner*                                   Spawner;                                           // 0x28(0x8)
-	class AIProximityPlayerTracker*                              ProximityPlayerTracker;                            // 0x30(0x8)
-	char                                                         pad0x30_WSUCC[0x30];                               // 0x38(0x30)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SandboxPerformanceConstraintSharedResource_TrackedEncounters: public SandboxPerformanceConstraintSharedResourceType
-{
-public:
-};
-
-
-// Size 0x198 (Full Size[0x538] - InheritedSize[0x3a0]
+// Size 0x190 (Full Size[0x530] - InheritedSize[0x3a0]
 class TrackedEncountersEventService: public Actor
 {
 public:
-	char                                                         pad0x10_J0NFX[0x10];                               // 0x3a0(0x10)
+	char                                                         pad0x10_1IF7B[0x10];                               // 0x3a0(0x10)
 	class TrackedEncountersEventServiceParams*                   TrackedEncounterServiceParams;                     // 0x3b0(0x8)
-	char                                                         pad0xb8_F5WN9[0xb8];                               // 0x3b8(0xb8)
-	struct TrackedEncounterEvent                                 ActiveTrackedEncounterEvent;                       // 0x470(0x38)
-	char                                                         pad0x90_OSK8U[0x90];                               // 0x4a8(0x90)
-};
-
-
-// Size 0x8 (Full Size[0x50] - InheritedSize[0x48]
-class TrackedEncounterParams: public GameEventParams
-{
-public:
-	class AIFixedWavesSpawner*                                   Spawner;                                           // 0x48(0x8)
+	char                                                         pad0x178_WIFGZ[0x178];                             // 0x3b8(0x178)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SandboxPerformanceConstraintActivity_TrackedEncounters: public SandboxPerformanceConstraintActivityType
+class SPC_SharedResource_TrackedEncounters: public SandboxPerformanceConstraintSharedResourceType
 {
 public:
 };
 
 
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+// Size 0x108 (Full Size[0x4a8] - InheritedSize[0x3a0]
+class TrackedEncounter: public Actor
+{
+public:
+	class TrackedEncounterParams*                                Params;                                            // 0x3a0(0x8)
+	class AIFixedWavesSpawner*                                   Spawner;                                           // 0x3a8(0x8)
+	class AIProximityPlayerTracker*                              ProximityPlayerTracker;                            // 0x3b0(0x8)
+	class AIItemSpawnComponent*                                  LootItemSpawnComponent;                            // 0x3b8(0x8)
+	class UClass*                                                AIClassToTriggerLoot;                              // 0x3c0(0x8)
+	class AIDioramaController*                                   AIDioramaController;                               // 0x3c8(0x8)
+	char                                                         pad0xd8_D58AV[0xd8];                               // 0x3d0(0xd8)
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
 class TrackedEncountersEventServiceParams: public DataAsset
 {
 public:
 	class UClass*                                                TrackedEncounterClassId;                           // 0x28(0x8)
 	class EnvQuery*                                              EncounterSpawnLocationEQSQuery;                    // 0x30(0x8)
 	class TrackedEncounterParams*                                TrackedEncounterParams;                            // 0x38(0x8)
+	char                                                         MaxNumberOfEvents;                                 // 0x40(0x1)
+	char                                                         pad0x7_JAOGQ[0x7];                                 // 0x41(0x7)
+};
+
+
+// Size 0x58 (Full Size[0xa0] - InheritedSize[0x48]
+class TrackedEncounterParams: public GameEventParams
+{
+public:
+	class AIFixedWavesSpawner*                                   Spawner;                                           // 0x48(0x8)
+	class UClass*                                                LootAIClassIdSpawnCriteria;                        // 0x50(0x8)
+	class LootSpawnParamsDataAsset*                              LootDataAsset;                                     // 0x58(0x8)
+	float                                                        EventSignalHeightOffset;                           // 0x80(0x4)
+	char                                                         pad0x4_EHWCH[0x4];                                 // 0x84(0x4)
+	class AIDioramaDesc*                                         DioramaDesc;                                       // 0x88(0x8)
+	class UClass*                                                DioramaCategory;                                   // 0x90(0x8)
+	class SceneDialogueData*                                     DioramaDialogue;                                   // 0x98(0x8)
 };
 
 

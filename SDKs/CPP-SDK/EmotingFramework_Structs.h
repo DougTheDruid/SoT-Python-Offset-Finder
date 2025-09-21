@@ -4,10 +4,57 @@
 // https://github.com/DougTheDruid
 
 // Size 0x8
-struct EventEnableLookAtEmoteCamera
+struct EmoteId
 {
 public:
-	char                                                         pad0x8_1HXHG[0x8];                                 // 0x0(0x8)
+	struct FName                                                 EmoteId;                                           // 0x0(0x8)
+};
+
+
+// Size 0x1
+struct EventEmotePreviewStarted
+{
+public:
+	char                                                         pad0x1_JGUS0[0x1];                                 // 0x0(0x1)
+};
+
+
+// Size 0x50
+struct EmotePropRandomObjectResult
+{
+public:
+	class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
+	bool                                                         HasTransformValue;                                 // 0x8(0x1)
+	char                                                         pad0x7_E29SC[0x7];                                 // 0x9(0x7)
+	struct Transform                                             Transform;                                         // 0x10(0x30)
+	struct FName                                                 TextureParameterName;                              // 0x40(0x8)
+	int                                                          TextureParameterValue;                             // 0x48(0x4)
+	char                                                         pad0x4_H72SD[0x4];                                 // 0x4c(0x4)
+};
+
+
+// Size 0x8
+struct EventDisguiseInteractedWith
+{
+public:
+	char                                                         pad0x8_HN285[0x8];                                 // 0x0(0x8)
+};
+
+
+// Size 0xc
+struct EventEmoteCompleted
+{
+public:
+	struct FName                                                 EmoteName;                                         // 0x0(0x8)
+	char                                                         pad0x4_W5G78[0x4];                                 // 0x8(0x4)
+};
+
+
+// Size 0x8
+struct WalkableEmoteMovementStartEvent
+{
+public:
+	class WwiseEvent*                                            Event;                                             // 0x0(0x8)
 };
 
 
@@ -15,7 +62,7 @@ public:
 struct WalkableEmoteDisguiseTypeSet
 {
 public:
-	char                                                         pad0x4_DJV3E[0x4];                                 // 0x0(0x4)
+	char                                                         pad0x4_3NQ6I[0x4];                                 // 0x0(0x4)
 };
 
 
@@ -23,25 +70,62 @@ public:
 struct WalkableEmotePlayerMovementEnabledEvent
 {
 public:
-	char                                                         pad0x1_NWYSJ[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_ZFI5L[0x1];                                 // 0x0(0x1)
 };
 
 
 // Size 0x1
-struct WalkableEmoteDisguiseIdentifierSet
+struct EventDisableLookAtEmoteCamera
 {
 public:
-	char                                                         pad0x1_Q8SNF[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_EHUEO[0x1];                                 // 0x0(0x1)
 };
 
 
-// Size 0x14
-struct EmoteDiceOutcomeTelemetryEvent
+// Size 0x1
+struct EventEndEmoteAnimation
 {
 public:
-	int                                                          MaxLimit;                                          // 0x0(0x4)
-	int                                                          RollNumber;                                        // 0x4(0x4)
-	struct Vector                                                OrientationUsed;                                   // 0x8(0xc)
+	char                                                         pad0x1_72CU4[0x1];                                 // 0x0(0x1)
+};
+
+
+// Size 0xc
+struct EventEmoteEndRequested
+{
+public:
+	struct FName                                                 EmoteIdentifier;                                   // 0x0(0x8)
+	bool                                                         EndForcedEmote;                                    // 0x8(0x1)
+	char                                                         pad0x3_0S971[0x3];                                 // 0x9(0x3)
+};
+
+
+// Size 0x10
+struct WalkableEmoteMovementStopEvent
+{
+public:
+	class WwiseEvent*                                            StopMovementEvent;                                 // 0x0(0x8)
+	class WwiseEvent*                                            PutDownEvent;                                      // 0x8(0x8)
+};
+
+
+// Size 0x60
+struct EmoteRandomObjectOutcomeTelemetryEvent
+{
+public:
+	struct FString                                               MeshName;                                          // 0x0(0x10)
+	struct Transform                                             Transform;                                         // 0x10(0x30)
+	struct FString                                               TextureParameterName;                              // 0x40(0x10)
+	int                                                          TextureParameterValue;                             // 0x50(0x4)
+	char                                                         pad0xc_NYXY0[0xc];                                 // 0x54(0xc)
+};
+
+
+// Size 0x1
+struct WalkableEmoteToastEvent
+{
+public:
+	bool                                                         IsInWalkableEmote;                                 // 0x0(0x1)
 };
 
 
@@ -56,69 +140,11 @@ public:
 };
 
 
-// Size 0xc
-struct EventEmoteCompleted
+// Size 0x8
+struct EventEnableLookAtEmoteCamera
 {
 public:
-	struct FName                                                 EmoteName;                                         // 0x0(0x8)
-	char                                                         pad0x4_W8FOG[0x4];                                 // 0x8(0x4)
-};
-
-
-// Size 0xc
-struct EventEmoteEndRequested
-{
-public:
-	struct FName                                                 EmoteIdentifier;                                   // 0x0(0x8)
-	bool                                                         EndForcedEmote;                                    // 0x8(0x1)
-	char                                                         pad0x3_8N7TC[0x3];                                 // 0x9(0x3)
-};
-
-
-// Size 0x14
-struct EventWalkableEmoteCompleted
-{
-public:
-	struct FName                                                 WalkableEmoteName;                                 // 0x0(0x8)
-	char                                                         WalkableEmoteType;                                 // 0xc(0x1)
-	char                                                         DisguiseIdentifier;                                // 0xd(0x1)
-	char                                                         pad0x2_866PW[0x2];                                 // 0xe(0x2)
-	float                                                        DistanceTravelled;                                 // 0x10(0x4)
-};
-
-
-// Size 0x50
-struct EmotePropRandomObjectResult
-{
-public:
-	class StaticMesh*                                            Mesh;                                              // 0x0(0x8)
-	bool                                                         HasTransformValue;                                 // 0x8(0x1)
-	char                                                         pad0x7_HGXCE[0x7];                                 // 0x9(0x7)
-	struct Transform                                             Transform;                                         // 0x10(0x30)
-	struct FName                                                 TextureParameterName;                              // 0x40(0x8)
-	int                                                          TextureParameterValue;                             // 0x48(0x4)
-	char                                                         pad0x4_HZIKT[0x4];                                 // 0x4c(0x4)
-};
-
-
-// Size 0x60
-struct EmoteRandomObjectOutcomeTelemetryEvent
-{
-public:
-	struct FString                                               MeshName;                                          // 0x0(0x10)
-	struct Transform                                             Transform;                                         // 0x10(0x30)
-	struct FString                                               TextureParameterName;                              // 0x40(0x10)
-	int                                                          TextureParameterValue;                             // 0x50(0x4)
-	char                                                         pad0xc_OGNGB[0xc];                                 // 0x54(0xc)
-};
-
-
-// Size 0x10
-struct WalkableEmoteMovementStopEvent
-{
-public:
-	class WwiseEvent*                                            StopMovementEvent;                                 // 0x0(0x8)
-	class WwiseEvent*                                            PutDownEvent;                                      // 0x8(0x8)
+	char                                                         pad0x8_3YEJ5[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -127,59 +153,19 @@ struct EmoteInteractionTooltipInstance
 {
 public:
 	char                                                         InteractionTooltipType;                            // 0x0(0x1)
-	char                                                         pad0x7_6NWO3[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_KWKF3[0x7];                                 // 0x1(0x7)
 	struct FText                                                 DisplayString;                                     // 0x8(0x38)
 	TArray<struct Text>                                          DisplayStringArgs;                                 // 0x40(0x10)
 	bool                                                         IsProgressBar;                                     // 0x50(0x1)
-	char                                                         pad0x7_13JAX[0x7];                                 // 0x51(0x7)
+	char                                                         pad0x7_11APW[0x7];                                 // 0x51(0x7)
 };
 
 
 // Size 0x1
-struct EventEndEmoteAnimation
+struct WalkableEmoteDisguiseIdentifierSet
 {
 public:
-	char                                                         pad0x1_QE423[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x8
-struct EmoteId
-{
-public:
-	struct FName                                                 EmoteId;                                           // 0x0(0x8)
-};
-
-
-// Size 0x1
-struct EventEmotePreviewStarted
-{
-public:
-	char                                                         pad0x1_42STK[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x8
-struct EventDisguiseInteractedWith
-{
-public:
-	char                                                         pad0x8_ARP1K[0x8];                                 // 0x0(0x8)
-};
-
-
-// Size 0x1
-struct EventDisableLookAtEmoteCamera
-{
-public:
-	char                                                         pad0x1_R75XG[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x8
-struct WalkableEmoteMovementStartEvent
-{
-public:
-	class WwiseEvent*                                            Event;                                             // 0x0(0x8)
+	char                                                         pad0x1_6PZO1[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -193,11 +179,34 @@ public:
 };
 
 
-// Size 0x1
-struct WalkableEmoteToastEvent
+// Size 0x14
+struct EventWalkableEmoteCompleted
 {
 public:
-	bool                                                         IsInWalkableEmote;                                 // 0x0(0x1)
+	struct FName                                                 WalkableEmoteName;                                 // 0x0(0x8)
+	char                                                         WalkableEmoteType;                                 // 0xc(0x1)
+	char                                                         DisguiseIdentifier;                                // 0xd(0x1)
+	char                                                         pad0x2_OGEVX[0x2];                                 // 0xe(0x2)
+	float                                                        DistanceTravelled;                                 // 0x10(0x4)
+};
+
+
+// Size 0x14
+struct EmoteDiceOutcomeTelemetryEvent
+{
+public:
+	int                                                          MaxLimit;                                          // 0x0(0x4)
+	int                                                          RollNumber;                                        // 0x4(0x4)
+	struct Vector                                                OrientationUsed;                                   // 0x8(0xc)
+};
+
+
+// Size 0xb0
+struct EmoteInteractionTooltipData
+{
+public:
+	struct EmoteInteractionTooltipInstance                       Tooltip;                                           // 0x0(0x58)
+	struct EmoteInteractionTooltipInstance                       GreyedOut;                                         // 0x58(0x58)
 };
 
 
@@ -212,27 +221,18 @@ public:
 	float                                                        VerticalOffsetFactorWhenZoomed;                    // 0x7c(0x4)
 	bool                                                         HideNameplate;                                     // 0x80(0x1)
 	bool                                                         ShouldHideNameplateAlsoHideFromAI;                 // 0x81(0x1)
-	char                                                         pad0x2_AVG2U[0x2];                                 // 0x82(0x2)
+	char                                                         pad0x2_CXGSQ[0x2];                                 // 0x82(0x2)
 	float                                                        DurationUntilPlayerHiddenFromAI;                   // 0x84(0x4)
 	class EmotePropData*                                         EmotePropDataAsset;                                // 0x88(0x8)
 	bool                                                         CanPlayInSuccession;                               // 0x90(0x1)
 	bool                                                         ShowDescriptionInTextChat;                         // 0x91(0x1)
-	char                                                         pad0x6_H0BKU[0x6];                                 // 0x92(0x6)
+	char                                                         pad0x6_2FUTK[0x6];                                 // 0x92(0x6)
 	class AthenaSpringArmComponentParams*                        CustomSpringArmParamsAsset;                        // 0x98(0x8)
 	bool                                                         OverrideInteractableBoxData;                       // 0xa0(0x1)
-	char                                                         pad0x3_QIK3Q[0x3];                                 // 0xa1(0x3)
+	char                                                         pad0x3_JSYW5[0x3];                                 // 0xa1(0x3)
 	struct Vector                                                BoxExtent;                                         // 0xa4(0xc)
 	struct Vector                                                BoxOrigin;                                         // 0xb0(0xc)
 	struct Rotator                                               BoxRotation;                                       // 0xbc(0xc)
-};
-
-
-// Size 0xb0
-struct EmoteInteractionTooltipData
-{
-public:
-	struct EmoteInteractionTooltipInstance                       Tooltip;                                           // 0x0(0x58)
-	struct EmoteInteractionTooltipInstance                       GreyedOut;                                         // 0x58(0x58)
 };
 
 
@@ -244,17 +244,36 @@ public:
 };
 
 
+// Size 0xd8
+struct EventEmoteRequested
+{
+public:
+	struct EmoteData                                             EmoteData;                                         // 0x0(0xc8)
+	struct FName                                                 ForcedEmoteIdentifier;                             // 0xc8(0x8)
+	bool                                                         ForcedEmote;                                       // 0xd0(0x1)
+	char                                                         pad0x7_HBSPZ[0x7];                                 // 0xd1(0x7)
+};
+
+
+// Size 0xc8
+struct EventEmoteSwapped
+{
+public:
+	struct EmoteData                                             EmoteData;                                         // 0x0(0xc8)
+};
+
+
 // Size 0x128
 struct WalkableEmoteData
 {
 public:
-	char                                                         pad0xc8_KQ7ZR[0xc8];                               // 0x0(0xc8)
+	char                                                         pad0xc8_N6CJ1[0xc8];                               // 0x0(0xc8)
 	char                                                         WalkableEmoteType;                                 // 0xc8(0x1)
 	char                                                         DisguiseIdentifier;                                // 0xc9(0x1)
-	char                                                         pad0x2_OOXP6[0x2];                                 // 0xca(0x2)
+	char                                                         pad0x2_CMT20[0x2];                                 // 0xca(0x2)
 	float                                                        TimeBeforeMovementEnabled;                         // 0xcc(0x4)
 	bool                                                         ShouldCollideWithPlayers;                          // 0xd0(0x1)
-	char                                                         pad0x7_E1OAD[0x7];                                 // 0xd1(0x7)
+	char                                                         pad0x7_X1Q48[0x7];                                 // 0xd1(0x7)
 	TArray<struct EmoteInteractionTooltipData>                   EmotePrimaryInteractionTooltipData;                // 0xd8(0x10)
 	TArray<struct EmoteInteractionTooltipData>                   EmoteSecondaryInteractionTooltipData;              // 0xe8(0x10)
 	struct Vector                                                InteractionPromptOffset;                           // 0xf8(0xc)
@@ -264,25 +283,6 @@ public:
 	class WwiseEvent*                                            MovementStartEvent;                                // 0x110(0x8)
 	class WwiseEvent*                                            MovementStopEvent;                                 // 0x118(0x8)
 	class WwiseEvent*                                            MovementPutDownEvent;                              // 0x120(0x8)
-};
-
-
-// Size 0xd8
-struct EventEmoteRequested
-{
-public:
-	struct EmoteData                                             EmoteData;                                         // 0x0(0xc8)
-	struct FName                                                 ForcedEmoteIdentifier;                             // 0xc8(0x8)
-	bool                                                         ForcedEmote;                                       // 0xd0(0x1)
-	char                                                         pad0x7_J6FS2[0x7];                                 // 0xd1(0x7)
-};
-
-
-// Size 0xc8
-struct EventEmoteSwapped
-{
-public:
-	struct EmoteData                                             EmoteData;                                         // 0x0(0xc8)
 };
 
 

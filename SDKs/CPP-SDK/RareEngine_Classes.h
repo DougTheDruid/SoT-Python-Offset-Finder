@@ -6,11 +6,18 @@
 #include "RareEngine_Structs.h"
 
 
-// Size 0x58 (Full Size[0xaa0] - InheritedSize[0xa48]
+// Size 0x58 (Full Size[0xab8] - InheritedSize[0xa60]
 class RareGameEngine: public GameEngine
 {
 public:
-	char                                                         pad0x58_QJCH0[0x58];                               // 0xa48(0x58)
+	char                                                         pad0x58_13ICJ[0x58];                               // 0xa60(0x58)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class HitchDiagnosisBlueprintFunctionLibrary: public BlueprintFunctionLibrary
+{
+public:
 };
 
 
@@ -18,22 +25,6 @@ public:
 class RareHUD: public HUD
 {
 public:
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class StallDetector: public Object
-{
-public:
-	char                                                         pad0x28_7QKAQ[0x28];                               // 0x28(0x28)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class AudioHardwareDeviceService: public Object
-{
-public:
-	char                                                         pad0x18_TEXEI[0x18];                               // 0x28(0x18)
 };
 
 
@@ -52,18 +43,27 @@ public:
 };
 
 
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class AudioHardwareDeviceService: public Object
+{
+public:
+	char                                                         pad0x18_JEICO[0x18];                               // 0x28(0x18)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class StallDetector: public Object
+{
+public:
+	char                                                         pad0x28_2OAVF[0x28];                               // 0x28(0x28)
+};
+
+
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class MemoryUsageVisualiserSettings: public Object
 {
 public:
 	TArray<struct MemoryVisualiserCategory>                      VisualiserCategories;                              // 0x28(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class HitchDiagnosisBlueprintFunctionLibrary: public BlueprintFunctionLibrary
-{
-public:
 };
 
 

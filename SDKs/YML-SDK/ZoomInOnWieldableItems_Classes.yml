@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 ZoomInOnWieldableItemComponent:
   Attributes:
-  - Name: pad0x8_INLQ6[0x8]
+  - Name: pad0x8_FMVN9[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -34,7 +34,7 @@ ZoomInOnWieldableItemComponent:
     Offset: '0xdc'
     Size: '0x4'
     Type: float
-  - Name: pad0x40_V0P92[0x40]
+  - Name: pad0x40_190OH[0x40]
     Offset: '0xe0'
     Size: '0x40'
     Type: char

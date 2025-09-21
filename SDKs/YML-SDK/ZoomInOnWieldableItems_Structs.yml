@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 ZoomedInOnWieldableItemActionStateConstructionInfo:
   Attributes:
-  - Name: pad0x48_ZTHLM[0x48]
+  - Name: pad0x48_YGOYG[0x48]
     Offset: '0x0'
     Size: '0x48'
     Type: char

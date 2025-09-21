@@ -6,229 +6,12 @@
 #include "NaturalDisasters_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class VolcanoInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x70 (Full Size[0x410] - InheritedSize[0x3a0]
 class AshenLordVolcano: public Actor
 {
 public:
 	class AshenLordVolcanoSetupDataAsset*                        VolcanoSetupData;                                  // 0x3a0(0x8)
-	char                                                         pad0x68_HZA6K[0x68];                               // 0x3a8(0x68)
-};
-
-
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class LavaStatus: public StatusBase
-{
-public:
-};
-
-
-// Size 0x1f0 (Full Size[0x590] - InheritedSize[0x3a0]
-class Earthquake: public Actor
-{
-public:
-	char                                                         pad0x10_4QU9U[0x10];                               // 0x3a0(0x10)
-	class EarthquakeSetupDataAsset*                              EarthquakeSetupData;                               // 0x3b0(0x8)
-	class EarthquakeSetupDataAsset*                              EarthquakeSetupDataOverride;                       // 0x3b8(0x8)
-	class EarthquakeSetupDataAsset*                              SelectedEarthquakeDataForNextQuake;                // 0x3c0(0x8)
-	TArray<struct EarthquakeStoryCustomisationData>              StoryCustomisationData;                            // 0x3c8(0x10)
-	class Volcano*                                               AssociatedVolcano;                                 // 0x3d8(0x8)
-	class GeyserManager*                                         AssociatedGeyserManager;                           // 0x3e0(0x8)
-	float                                                        EarthquakeEffectInnerRadiusOffsetInMetres;         // 0x3e8(0x4)
-	char                                                         pad0x4_LAX7W[0x4];                                 // 0x3ec(0x4)
-	class WwiseObjectPoolWrapper*                                AudioPool;                                         // 0x3f0(0x8)
-	class WwiseEvent*                                            PlayEarthquakeLarge;                               // 0x3f8(0x8)
-	class WwiseEvent*                                            StopEarthquakeLarge;                               // 0x400(0x8)
-	class WwiseEvent*                                            PlayEarthquakeSmall;                               // 0x408(0x8)
-	class WwiseEvent*                                            StopEarthquakeSmall;                               // 0x410(0x8)
-	struct FName                                                 EarthquakeRtpcName;                                // 0x418(0x8)
-	float                                                        EarthquakeRtpcMin;                                 // 0x420(0x4)
-	float                                                        EarthquakeRtpcMax;                                 // 0x424(0x4)
-	float                                                        EarthquakeSizeToUseLargeAttenuation;               // 0x428(0x4)
-	char                                                         pad0x4_1FGN2[0x4];                                 // 0x42c(0x4)
-	class CapsuleComponent*                                      HitDetectionVolume;                                // 0x430(0x8)
-	class WindZoneComponent*                                     WindZone;                                          // 0x438(0x8)
-	char                                                         EarthquakeState;                                   // 0x440(0x1)
-	char                                                         pad0x14f_HQDIB[0x14f];                             // 0x441(0x14f)
-};
-
-
-// Size 0x18 (Full Size[0x3b8] - InheritedSize[0x3a0]
-class DisableGeyserMechanismAction: public Actor
-{
-public:
-	class MechanismActionComponent*                              MechanismActionComponent;                          // 0x3a0(0x8)
-	TArray<class Geyser*>                                        GeysersToDisable;                                  // 0x3a8(0x10)
-};
-
-
-// Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
-class VolcanoService: public Object
-{
-public:
-	char                                                         pad0x58_7YAPR[0x58];                               // 0x28(0x58)
-};
-
-
-// Size 0x80 (Full Size[0x420] - InheritedSize[0x3a0]
-class GeyserManager: public Actor
-{
-public:
-	class GeyserManagerSetupDataAsset*                           GeyserManagerSetupData;                            // 0x3a0(0x8)
-	class GeyserManagerSetupDataAsset*                           GeyserManagerSetupDataOverride;                    // 0x3a8(0x8)
-	class GeyserManagerSetupDataAsset*                           SelectedGeyserManagerForNextActivation;            // 0x3b0(0x8)
-	TArray<struct GeyserManagerStoryCustomisationData>           StoryCustomisationData;                            // 0x3b8(0x10)
-	class SceneComponent*                                        Root;                                              // 0x3c8(0x8)
-	char                                                         State;                                             // 0x3d0(0x1)
-	char                                                         pad0x4f_OT575[0x4f];                               // 0x3d1(0x4f)
-};
-
-
-// Size 0x228 (Full Size[0x5c8] - InheritedSize[0x3a0]
-class Volcano: public Actor
-{
-public:
-	char                                                         pad0x18_3ZZUY[0x18];                               // 0x3a0(0x18)
-	class VolcanoSetupDataAsset*                                 VolcanoSetupDataOverride;                          // 0x3b8(0x8)
-	class VolcanoSetupDataAsset*                                 SelectedVolcanoDataForNextEruption;                // 0x3c0(0x8)
-	TArray<struct VolcanoStoryCustomisationData>                 StoryCustomisationData;                            // 0x3c8(0x10)
-	class CapsuleComponent*                                      HitDetectionVolume;                                // 0x3d8(0x8)
-	bool                                                         UseDormantDuration;                                // 0x3e0(0x1)
-	char                                                         pad0x7_7C72B[0x7];                                 // 0x3e1(0x7)
-	class VolcanoSetupDataAsset*                                 VolcanoSetupData;                                  // 0x3e8(0x8)
-	class Murk*                                                  AssociatedSuperheatedWater;                        // 0x3f0(0x8)
-	class LavaZone*                                              AssociatedLavaZone;                                // 0x3f8(0x8)
-	float                                                        InnerTargetRadiusInMetres;                         // 0x400(0x4)
-	float                                                        OuterTargetRadiusInMetres;                         // 0x404(0x4)
-	float                                                        NearbyPlayerRangeToFireProjectilesInMetres;        // 0x408(0x4)
-	float                                                        RandomShipPositionScale;                           // 0x40c(0x4)
-	class ParticleSystemComponent*                               WarmingUpEmitter;                                  // 0x410(0x8)
-	class ParticleSystemComponent*                               EruptingEmitter;                                   // 0x418(0x8)
-	class BlendedLightingZoneComponent*                          BlendedLightingZoneComponent;                      // 0x420(0x8)
-	class BlendedAtmosphericPressureZoneComponent*               BlendedAtmosphericPressureZoneComponent;           // 0x428(0x8)
-	class BlendedPostProcessingRainZoneComponent*                BlendedPostProcessingRainZoneComponent;            // 0x430(0x8)
-	struct Vector                                                ProjectileLaunchOffset;                            // 0x438(0xc)
-	char                                                         pad0x4_Y7K7U[0x4];                                 // 0x444(0x4)
-	class WwiseObjectPoolWrapper*                                AudioPool;                                         // 0x448(0x8)
-	class WwiseEvent*                                            WarmupAudioPlayEvent;                              // 0x450(0x8)
-	class WwiseEvent*                                            WarmupAudioStopEvent;                              // 0x458(0x8)
-	class WwiseEvent*                                            EruptingAudioPlayEvent;                            // 0x460(0x8)
-	class WwiseEvent*                                            EruptingAudioStopEvent;                            // 0x468(0x8)
-	class CapsuleComponent*                                      InstantKillZone;                                   // 0x470(0x8)
-	float                                                        InstantKillZoneTestInterval;                       // 0x478(0x4)
-	struct VolcanoStateData                                      StateData;                                         // 0x47c(0xc)
-	struct FName                                                 AssociatedIslandName;                              // 0x488(0x8)
-	char                                                         pad0x138_5OZBO[0x138];                             // 0x490(0x138)
-};
-
-
-// Size 0x420 (Full Size[0x448] - InheritedSize[0x28]
-class VolcanoSetupDataAsset: public DataAsset
-{
-public:
-	bool                                                         IsEnabled;                                         // 0x28(0x1)
-	char                                                         pad0x7_472WP[0x7];                                 // 0x29(0x7)
-	struct WeightedProbabilityRangeOfRanges                      WarmUpDuration;                                    // 0x30(0x30)
-	struct WeightedProbabilityRangeOfRanges                      EruptionDuration;                                  // 0x60(0x30)
-	struct WeightedProbabilityRangeOfRanges                      DormantDuration;                                   // 0x90(0x30)
-	float                                                        MinimumDurationForTheEffects;                      // 0xc0(0x4)
-	char                                                         pad0x4_HVAPA[0x4];                                 // 0xc4(0x4)
-	struct WeightedProbabilityRangeOfRanges                      GroundAndWaterStayHotDurationAfterVolcanoFinishesDuration; // 0xc8(0x30)
-	struct WeightedProbabilityRangeOfRanges                      ProjectileTriggerFrequency;                        // 0xf8(0x30)
-	struct WeightedProbabilityRangeOfRanges                      PercentageOfMaxTargetingRange;                     // 0x128(0x30)
-	int                                                          MinNumProjectilesToTrigger;                        // 0x158(0x4)
-	int                                                          MaxNumProjectilesToTrigger;                        // 0x15c(0x4)
-	int                                                          ExtraProjectilePoolNumProjectiles;                 // 0x160(0x4)
-	char                                                         pad0x4_SUAWA[0x4];                                 // 0x164(0x4)
-	struct VolcanoTargetChances                                  ChanceToTargetPlayers;                             // 0x168(0x58)
-	struct VolcanoTargetChances                                  ChanceToTargetShips;                               // 0x1c0(0x58)
-	struct VolcanoTargetChances                                  ChanceToTargetWatercraft;                          // 0x218(0x58)
-	struct WeightedProbabilityRangeOfRanges                      PlayerNearMissDistanceInMetres;                    // 0x270(0x30)
-	float                                                        InnerShipNearMissRadiusInMetres;                   // 0x2a0(0x4)
-	float                                                        OuterShipNearMissRadiusInMetres;                   // 0x2a4(0x4)
-	float                                                        InnerWatercraftNearMissRadiusInMetres;             // 0x2a8(0x4)
-	float                                                        OuterWatercraftNearMissRadiusInMetres;             // 0x2ac(0x4)
-	TArray<struct WeightedVolcanoProjectile>                     Projectiles;                                       // 0x2b0(0x10)
-	TArray<struct LandmarkReactionEventPlayForceFeedbackEntry>   ForceFeedbackIgnitionEffect;                       // 0x2c0(0x10)
-	class UClass*                                                LocalMiniProjectilesClass;                         // 0x2d0(0x8)
-	struct WeightedProbabilityRangeOfRanges                      LocalMiniProjectilesSpawnHeightAbovePlayerInMetres; // 0x2d8(0x30)
-	struct WeightedProbabilityRangeOfRanges                      LocalMiniProjectilesSpawnDistanceFromPlayerInMetres; // 0x308(0x30)
-	struct WeightedProbabilityRangeOfRanges                      LocalMiniProjectilesTimeBetweenSpawns;             // 0x338(0x30)
-	struct WeightedProbabilityRange                              NumLocalMiniProjectilesToTrigger;                  // 0x368(0x20)
-	struct WeightedProbabilityRangeOfRanges                      LocalMiniProjectilesSpeed;                         // 0x388(0x30)
-	float                                                        LocalMiniProjectilesGravityScale;                  // 0x3b8(0x4)
-	char                                                         pad0x4_42R22[0x4];                                 // 0x3bc(0x4)
-	struct WeightedProbabilityRangeOfRanges                      LocalMiniProjectilesSpawnAngleRange;               // 0x3c0(0x30)
-	struct WeightedProbabilityRangeOfRanges                      LocalMiniProjectilesSpawnStartPositionOffsetInMetres; // 0x3f0(0x30)
-	float                                                        LocalMiniProjectilesSpawnDistanceSpeedScalar;      // 0x420(0x4)
-	float                                                        LocalMiniProjectilesSpawnDistanceMaxPlayerSpeed;   // 0x424(0x4)
-	float                                                        TimeBetweenLocalEmbers;                            // 0x428(0x4)
-	char                                                         pad0x4_RRCQI[0x4];                                 // 0x42c(0x4)
-	TArray<struct VolcanoSetupDataEmbersEntry>                   LocalEmbers;                                       // 0x430(0x10)
-	float                                                        EmbersSpawnOffsetInMetres;                         // 0x440(0x4)
-	float                                                        ServerMigrationDistanceAsMultipleOfOuterTargetRadius; // 0x444(0x4)
-};
-
-
-// Size 0x88 (Full Size[0x428] - InheritedSize[0x3a0]
-class AshenLordAshCloud: public Actor
-{
-public:
-	class StaticMeshComponent*                                   CloudMesh;                                         // 0x3a0(0x8)
-	class AshenLordAshCloudSetupDataAsset*                       SetupData;                                         // 0x3a8(0x8)
-	float                                                        InnerRangeStartOffset;                             // 0x3b0(0x4)
-	float                                                        OuterRangeStart;                                   // 0x3b4(0x4)
-	struct FName                                                 NormalisedEngulfedRTPC;                            // 0x3b8(0x8)
-	float                                                        RTPCSecondsBetweenUpdates;                         // 0x3c0(0x4)
-	char                                                         pad0x4_YBAPE[0x4];                                 // 0x3c4(0x4)
-	float                                                        LifeTime;                                          // 0x3c8(0x4)
-	float                                                        StartTime;                                         // 0x3cc(0x4)
-	float                                                        TimeOffset;                                        // 0x3d0(0x4)
-	char                                                         CloudState;                                        // 0x3d4(0x1)
-	char                                                         pad0x37_THVP1[0x37];                               // 0x3d5(0x37)
-	float                                                        MaxRadiusMultiplier;                               // 0x40c(0x4)
-	char                                                         pad0x18_8WZU3[0x18];                               // 0x410(0x18)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GeyserExclusionVolumeInterface: public Interface
-{
-public:
-};
-
-
-// Size 0xf0 (Full Size[0x490] - InheritedSize[0x3a0]
-class Geyser: public Actor
-{
-public:
-	char                                                         pad0x10_2BLMU[0x10];                               // 0x3a0(0x10)
-	class GeyserSetupDataAsset*                                  SetupData;                                         // 0x3b0(0x8)
-	class GeyserSetupDataAsset*                                  GeyserSetupDataOverride;                           // 0x3b8(0x8)
-	class GeyserSetupDataAsset*                                  SelectedGeyserForNextActivation;                   // 0x3c0(0x8)
-	TArray<struct GeyserStoryCustomisationData>                  StoryCustomisationData;                            // 0x3c8(0x10)
-	char                                                         pad0x18_7QS94[0x18];                               // 0x3d8(0x18)
-	char                                                         GeyserState;                                       // 0x3f0(0x1)
-	char                                                         pad0x7_781TF[0x7];                                 // 0x3f1(0x7)
-	class WwiseObjectPoolWrapper*                                GeyserBuildUpPool;                                 // 0x3f8(0x8)
-	class WwiseObjectPoolWrapper*                                GeyserBlowPool;                                    // 0x400(0x8)
-	class WwiseEvent*                                            StartActiveAudioLoopEvent;                         // 0x408(0x8)
-	class WwiseEvent*                                            StopActiveAudioLoopEvent;                          // 0x410(0x8)
-	class WwiseEvent*                                            PlayEruptingAudioEvent;                            // 0x418(0x8)
-	class ExplosionComponent*                                    ExplosionComponent;                                // 0x420(0x8)
-	class ParticleSystemComponent*                               ActiveParticlesComponent;                          // 0x428(0x8)
-	class ParticleSystemComponent*                               EruptingParticlesComponent;                        // 0x430(0x8)
-	char                                                         HitTestTraceChannel;                               // 0x438(0x1)
-	char                                                         pad0x7_7QLVL[0x7];                                 // 0x439(0x7)
-	class UClass*                                                GeyserHoleClass;                                   // 0x440(0x8)
-	class Hole*                                                  GeyserHole;                                        // 0x448(0x8)
-	char                                                         pad0x40_FTYWP[0x40];                               // 0x450(0x40)
+	char                                                         pad0x68_RITYM[0x68];                               // 0x3a8(0x68)
 };
 
 
@@ -238,10 +21,19 @@ class AshenLordAshCloudSetupDataAsset: public DataAsset
 public:
 	struct WeightedProbabilityRangeOfRanges                      AshCloudRadiusInMetres;                            // 0x28(0x30)
 	float                                                        AshCloudHeightCoefficient;                         // 0x58(0x4)
-	char                                                         pad0x4_JSJ2P[0x4];                                 // 0x5c(0x4)
+	char                                                         pad0x4_CROJD[0x4];                                 // 0x5c(0x4)
 	struct WeightedProbabilityRangeOfRanges                      AshCloudLifetime;                                  // 0x60(0x30)
 	class CurveFloat*                                            ScaleUpSpeedCurve;                                 // 0x90(0x8)
 	class CurveFloat*                                            DissipationCurve;                                  // 0x98(0x8)
+};
+
+
+// Size 0x18 (Full Size[0x3b8] - InheritedSize[0x3a0]
+class DisableGeyserMechanismAction: public Actor
+{
+public:
+	class MechanismActionComponent*                              MechanismActionComponent;                          // 0x3a0(0x8)
+	TArray<class Geyser*>                                        GeysersToDisable;                                  // 0x3a8(0x10)
 };
 
 
@@ -257,17 +49,17 @@ class GeyserManagerSetupDataAsset: public DataAsset
 {
 public:
 	bool                                                         IsEnabled;                                         // 0x28(0x1)
-	char                                                         pad0x7_QAI0W[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_YUQMB[0x7];                                 // 0x29(0x7)
 	struct WeightedProbabilityRangeOfRanges                      DormantDuration;                                   // 0x30(0x30)
 	struct WeightedProbabilityRangeOfRanges                      ActiveDuration;                                    // 0x60(0x30)
 	struct WeightedProbabilityRangeOfRanges                      DelayBetweenGeyserGroupsDuringGeyserEvent;         // 0x90(0x30)
 	bool                                                         StartInactive;                                     // 0xc0(0x1)
 	bool                                                         NoRestartAfterGeyserSpurtComplete;                 // 0xc1(0x1)
 	bool                                                         UseUniqueLocationsForEachGeyser;                   // 0xc2(0x1)
-	char                                                         pad0x1_C1864[0x1];                                 // 0xc3(0x1)
+	char                                                         pad0x1_CNV0W[0x1];                                 // 0xc3(0x1)
 	float                                                        MinDistanceFromPlayerInMetres;                     // 0xc4(0x4)
 	float                                                        MinGeyserSequenceSpacing;                          // 0xc8(0x4)
-	char                                                         pad0x4_UAPK5[0x4];                                 // 0xcc(0x4)
+	char                                                         pad0x4_5MTR0[0x4];                                 // 0xcc(0x4)
 	class UClass*                                                GeyserToSpawn;                                     // 0xd0(0x8)
 	struct WeightedProbabilityRange                              NumGeyserGroupsToSpawn;                            // 0xd8(0x20)
 	struct WeightedProbabilityRange                              NumGeysersToSpawnPerGroup;                         // 0xf8(0x20)
@@ -277,6 +69,92 @@ public:
 	struct WeightedProbabilityRangeOfRanges                      DelayBetweenEachGeyserSpawningInAGroup;            // 0x188(0x30)
 	float                                                        MaximumDensityRadiusInMetres;                      // 0x1b8(0x4)
 	int                                                          MaximumDensityMaxNumGeysersWithinRadius;           // 0x1bc(0x4)
+};
+
+
+// Size 0x108 (Full Size[0x548] - InheritedSize[0x440]
+class SuperheatedWater: public Murk
+{
+public:
+	char                                                         pad0x10_SM66V[0x10];                               // 0x440(0x10)
+	class SuperheatedWaterSetupDataAsset*                        SetupData;                                         // 0x450(0x8)
+	class CapsuleComponent*                                      HitDetectionVolume;                                // 0x458(0x8)
+	float                                                        FakeUnderwaterLocationsMinDistanceInMetres;        // 0x460(0x4)
+	float                                                        FakeUnderwaterLocationsDistanceBetweenPointsInMetres; // 0x464(0x4)
+	TArray<uintptr_t>                                            PlayersInZone;                                     // 0x468(0x10)
+	char                                                         pad0xd0_YYPBJ[0xd0];                               // 0x478(0xd0)
+};
+
+
+// Size 0x80 (Full Size[0x420] - InheritedSize[0x3a0]
+class GeyserManager: public Actor
+{
+public:
+	class GeyserManagerSetupDataAsset*                           GeyserManagerSetupData;                            // 0x3a0(0x8)
+	class GeyserManagerSetupDataAsset*                           GeyserManagerSetupDataOverride;                    // 0x3a8(0x8)
+	class GeyserManagerSetupDataAsset*                           SelectedGeyserManagerForNextActivation;            // 0x3b0(0x8)
+	TArray<struct GeyserManagerStoryCustomisationData>           StoryCustomisationData;                            // 0x3b8(0x10)
+	class SceneComponent*                                        Root;                                              // 0x3c8(0x8)
+	char                                                         State;                                             // 0x3d0(0x1)
+	char                                                         pad0x4f_CRV9J[0x4f];                               // 0x3d1(0x4f)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class NaturalDisasterRegistryInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x78 (Full Size[0xc0] - InheritedSize[0x48]
+class SeatStat_IslandVolcanoActive: public SeatStat
+{
+public:
+	struct FName                                                 VolcanoIslandName;                                 // 0x48(0x8)
+	char                                                         pad0x70_JZTJA[0x70];                               // 0x50(0x70)
+};
+
+
+// Size 0x1f0 (Full Size[0x590] - InheritedSize[0x3a0]
+class Earthquake: public Actor
+{
+public:
+	char                                                         pad0x10_HNBLO[0x10];                               // 0x3a0(0x10)
+	class EarthquakeSetupDataAsset*                              EarthquakeSetupData;                               // 0x3b0(0x8)
+	class EarthquakeSetupDataAsset*                              EarthquakeSetupDataOverride;                       // 0x3b8(0x8)
+	class EarthquakeSetupDataAsset*                              SelectedEarthquakeDataForNextQuake;                // 0x3c0(0x8)
+	TArray<struct EarthquakeStoryCustomisationData>              StoryCustomisationData;                            // 0x3c8(0x10)
+	class Volcano*                                               AssociatedVolcano;                                 // 0x3d8(0x8)
+	class GeyserManager*                                         AssociatedGeyserManager;                           // 0x3e0(0x8)
+	float                                                        EarthquakeEffectInnerRadiusOffsetInMetres;         // 0x3e8(0x4)
+	char                                                         pad0x4_9F2GS[0x4];                                 // 0x3ec(0x4)
+	class WwiseObjectPoolWrapper*                                AudioPool;                                         // 0x3f0(0x8)
+	class WwiseEvent*                                            PlayEarthquakeLarge;                               // 0x3f8(0x8)
+	class WwiseEvent*                                            StopEarthquakeLarge;                               // 0x400(0x8)
+	class WwiseEvent*                                            PlayEarthquakeSmall;                               // 0x408(0x8)
+	class WwiseEvent*                                            StopEarthquakeSmall;                               // 0x410(0x8)
+	struct FName                                                 EarthquakeRtpcName;                                // 0x418(0x8)
+	float                                                        EarthquakeRtpcMin;                                 // 0x420(0x4)
+	float                                                        EarthquakeRtpcMax;                                 // 0x424(0x4)
+	float                                                        EarthquakeSizeToUseLargeAttenuation;               // 0x428(0x4)
+	char                                                         pad0x4_0GWV3[0x4];                                 // 0x42c(0x4)
+	class CapsuleComponent*                                      HitDetectionVolume;                                // 0x430(0x8)
+	class WindZoneComponent*                                     WindZone;                                          // 0x438(0x8)
+	char                                                         EarthquakeState;                                   // 0x440(0x1)
+	char                                                         pad0x14f_MYYG5[0x14f];                             // 0x441(0x14f)
+};
+
+
+// Size 0x18 (Full Size[0x3b8] - InheritedSize[0x3a0]
+class AshenLordWorldEndCloud: public Actor
+{
+public:
+	float                                                        SelfDestructDelayOnComplete;                       // 0x3a0(0x4)
+	char                                                         CloudState;                                        // 0x3a4(0x1)
+	char                                                         pad0x3_OQK9F[0x3];                                 // 0x3a5(0x3)
+	struct AshenLordWorldEndCloudAnimation                       CurrentCloudAnimation;                             // 0x3a8(0x8)
+	char                                                         pad0x8_B25JM[0x8];                                 // 0x3b0(0x8)
 };
 
 
@@ -298,10 +176,73 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class NaturalDisasterRegistryInterface: public Interface
+// Size 0xc0 (Full Size[0xe8] - InheritedSize[0x28]
+class GeyserSetupDataAsset: public DataAsset
 {
 public:
+	bool                                                         IsEnabled;                                         // 0x28(0x1)
+	char                                                         pad0x7_O6DOM[0x7];                                 // 0x29(0x7)
+	struct WeightedProbabilityRangeOfRanges                      DormantDuration;                                   // 0x30(0x30)
+	struct WeightedProbabilityRangeOfRanges                      InitialWarningDuration;                            // 0x60(0x30)
+	struct WeightedProbabilityRange                              NumSpurtsPerActivation;                            // 0x90(0x20)
+	struct WeightedProbabilityRangeOfRanges                      TimeBetweenSpurts;                                 // 0xb0(0x30)
+	bool                                                         ShouldDestroyOnDeactivation;                       // 0xe0(0x1)
+	char                                                         pad0x3_LOS7I[0x3];                                 // 0xe1(0x3)
+	float                                                        DestroyAfterDeactivationDelay;                     // 0xe4(0x4)
+};
+
+
+// Size 0x88 (Full Size[0x428] - InheritedSize[0x3a0]
+class AshenLordAshCloud: public Actor
+{
+public:
+	class StaticMeshComponent*                                   CloudMesh;                                         // 0x3a0(0x8)
+	class AshenLordAshCloudSetupDataAsset*                       SetupData;                                         // 0x3a8(0x8)
+	float                                                        InnerRangeStartOffset;                             // 0x3b0(0x4)
+	float                                                        OuterRangeStart;                                   // 0x3b4(0x4)
+	struct FName                                                 NormalisedEngulfedRTPC;                            // 0x3b8(0x8)
+	float                                                        RTPCSecondsBetweenUpdates;                         // 0x3c0(0x4)
+	char                                                         pad0x4_OZBIY[0x4];                                 // 0x3c4(0x4)
+	float                                                        LifeTime;                                          // 0x3c8(0x4)
+	float                                                        StartTime;                                         // 0x3cc(0x4)
+	float                                                        TimeOffset;                                        // 0x3d0(0x4)
+	char                                                         CloudState;                                        // 0x3d4(0x1)
+	char                                                         pad0x37_2YLT2[0x37];                               // 0x3d5(0x37)
+	float                                                        MaxRadiusMultiplier;                               // 0x40c(0x4)
+	char                                                         pad0x18_X48L5[0x18];                               // 0x410(0x18)
+};
+
+
+// Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
+class VolcanoService: public Object
+{
+public:
+	char                                                         pad0x58_FUAL0[0x58];                               // 0x28(0x58)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class VolcanoInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
+class GeyserExclusionVolumeComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_O6YGL[0x8];                                 // 0xb8(0x8)
+	float                                                        Radius;                                            // 0xc0(0x4)
+	char                                                         pad0x4_K7ACV[0x4];                                 // 0xc4(0x4)
+};
+
+
+// Size 0x10 (Full Size[0x4c0] - InheritedSize[0x4b0]
+class GeyserItemSpawnComponent: public ItemSpawnComponent
+{
+public:
+	char                                                         pad0x10_J95SF[0x10];                               // 0x4b0(0x10)
 };
 
 
@@ -310,21 +251,21 @@ class EarthquakeSetupDataAsset: public DataAsset
 {
 public:
 	bool                                                         IsEnabled;                                         // 0x28(0x1)
-	char                                                         pad0x7_YLSK8[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_RIE8X[0x7];                                 // 0x29(0x7)
 	struct WeightedProbabilityRangeOfRanges                      WarmUpDuration;                                    // 0x30(0x30)
 	struct WeightedProbabilityRangeOfRanges                      EarthquakeDuration;                                // 0x60(0x30)
 	struct WeightedProbabilityRangeOfRanges                      CoolDownDuration;                                  // 0x90(0x30)
 	struct WeightedProbabilityRangeOfRanges                      DormantDuration;                                   // 0xc0(0x30)
 	float                                                        ChanceOfTriggeringAVolcano;                        // 0xf0(0x4)
 	struct FloatRange                                            PercentageThroughEarthquakeToStartVolcano;         // 0xf4(0x10)
-	char                                                         pad0x4_WBW6U[0x4];                                 // 0x104(0x4)
+	char                                                         pad0x4_2LGQK[0x4];                                 // 0x104(0x4)
 	struct PlayerFeedback                                        WarmupPlayerFeedback;                              // 0x108(0x80)
 	struct PlayerFeedback                                        ActivePlayerFeedback;                              // 0x188(0x80)
 	struct WeightedProbabilityRangeOfRanges                      StaggerStrengthDuration;                           // 0x208(0x30)
 	float                                                        StaggerStrengthModifierWhenOnAShip;                // 0x238(0x4)
 	struct FloatRange                                            PercentageThroughCameraShakeToStartNextOne;        // 0x23c(0x10)
 	struct FloatRange                                            TimeToShipPush;                                    // 0x24c(0x10)
-	char                                                         pad0x4_50W01[0x4];                                 // 0x25c(0x4)
+	char                                                         pad0x4_4Z61D[0x4];                                 // 0x25c(0x4)
 	struct WeightedProbabilityRangeOfRanges                      ForceToApplyToShip;                                // 0x260(0x30)
 	float                                                        MaximumShipSpeedToBePushed;                        // 0x290(0x4)
 	float                                                        ChanceEarthquakeTriggersGeysers;                   // 0x294(0x4)
@@ -340,53 +281,151 @@ public:
 };
 
 
-// Size 0x108 (Full Size[0x548] - InheritedSize[0x440]
-class SuperheatedWater: public Murk
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
+class LavaStatus: public StatusBase
 {
 public:
-	char                                                         pad0x10_UG9WB[0x10];                               // 0x440(0x10)
-	class SuperheatedWaterSetupDataAsset*                        SetupData;                                         // 0x450(0x8)
-	class CapsuleComponent*                                      HitDetectionVolume;                                // 0x458(0x8)
-	float                                                        FakeUnderwaterLocationsMinDistanceInMetres;        // 0x460(0x4)
-	float                                                        FakeUnderwaterLocationsDistanceBetweenPointsInMetres; // 0x464(0x4)
-	TArray<uintptr_t>                                            PlayersInZone;                                     // 0x468(0x10)
-	char                                                         pad0xd0_AUVK1[0xd0];                               // 0x478(0xd0)
 };
 
 
-// Size 0x10 (Full Size[0x4c0] - InheritedSize[0x4b0]
-class GeyserItemSpawnComponent: public ItemSpawnComponent
+// Size 0x420 (Full Size[0x448] - InheritedSize[0x28]
+class VolcanoSetupDataAsset: public DataAsset
 {
 public:
-	char                                                         pad0x10_Q0FLX[0x10];                               // 0x4b0(0x10)
+	bool                                                         IsEnabled;                                         // 0x28(0x1)
+	char                                                         pad0x7_ZKS89[0x7];                                 // 0x29(0x7)
+	struct WeightedProbabilityRangeOfRanges                      WarmUpDuration;                                    // 0x30(0x30)
+	struct WeightedProbabilityRangeOfRanges                      EruptionDuration;                                  // 0x60(0x30)
+	struct WeightedProbabilityRangeOfRanges                      DormantDuration;                                   // 0x90(0x30)
+	float                                                        MinimumDurationForTheEffects;                      // 0xc0(0x4)
+	char                                                         pad0x4_9YJ04[0x4];                                 // 0xc4(0x4)
+	struct WeightedProbabilityRangeOfRanges                      GroundAndWaterStayHotDurationAfterVolcanoFinishesDuration; // 0xc8(0x30)
+	struct WeightedProbabilityRangeOfRanges                      ProjectileTriggerFrequency;                        // 0xf8(0x30)
+	struct WeightedProbabilityRangeOfRanges                      PercentageOfMaxTargetingRange;                     // 0x128(0x30)
+	int                                                          MinNumProjectilesToTrigger;                        // 0x158(0x4)
+	int                                                          MaxNumProjectilesToTrigger;                        // 0x15c(0x4)
+	int                                                          ExtraProjectilePoolNumProjectiles;                 // 0x160(0x4)
+	char                                                         pad0x4_GZIHT[0x4];                                 // 0x164(0x4)
+	struct VolcanoTargetChances                                  ChanceToTargetPlayers;                             // 0x168(0x58)
+	struct VolcanoTargetChances                                  ChanceToTargetShips;                               // 0x1c0(0x58)
+	struct VolcanoTargetChances                                  ChanceToTargetWatercraft;                          // 0x218(0x58)
+	struct WeightedProbabilityRangeOfRanges                      PlayerNearMissDistanceInMetres;                    // 0x270(0x30)
+	float                                                        InnerShipNearMissRadiusInMetres;                   // 0x2a0(0x4)
+	float                                                        OuterShipNearMissRadiusInMetres;                   // 0x2a4(0x4)
+	float                                                        InnerWatercraftNearMissRadiusInMetres;             // 0x2a8(0x4)
+	float                                                        OuterWatercraftNearMissRadiusInMetres;             // 0x2ac(0x4)
+	TArray<struct WeightedVolcanoProjectile>                     Projectiles;                                       // 0x2b0(0x10)
+	TArray<struct LandmarkReactionEventPlayForceFeedbackEntry>   ForceFeedbackIgnitionEffect;                       // 0x2c0(0x10)
+	class UClass*                                                LocalMiniProjectilesClass;                         // 0x2d0(0x8)
+	struct WeightedProbabilityRangeOfRanges                      LocalMiniProjectilesSpawnHeightAbovePlayerInMetres; // 0x2d8(0x30)
+	struct WeightedProbabilityRangeOfRanges                      LocalMiniProjectilesSpawnDistanceFromPlayerInMetres; // 0x308(0x30)
+	struct WeightedProbabilityRangeOfRanges                      LocalMiniProjectilesTimeBetweenSpawns;             // 0x338(0x30)
+	struct WeightedProbabilityRange                              NumLocalMiniProjectilesToTrigger;                  // 0x368(0x20)
+	struct WeightedProbabilityRangeOfRanges                      LocalMiniProjectilesSpeed;                         // 0x388(0x30)
+	float                                                        LocalMiniProjectilesGravityScale;                  // 0x3b8(0x4)
+	char                                                         pad0x4_12V5O[0x4];                                 // 0x3bc(0x4)
+	struct WeightedProbabilityRangeOfRanges                      LocalMiniProjectilesSpawnAngleRange;               // 0x3c0(0x30)
+	struct WeightedProbabilityRangeOfRanges                      LocalMiniProjectilesSpawnStartPositionOffsetInMetres; // 0x3f0(0x30)
+	float                                                        LocalMiniProjectilesSpawnDistanceSpeedScalar;      // 0x420(0x4)
+	float                                                        LocalMiniProjectilesSpawnDistanceMaxPlayerSpeed;   // 0x424(0x4)
+	float                                                        TimeBetweenLocalEmbers;                            // 0x428(0x4)
+	char                                                         pad0x4_O2AXS[0x4];                                 // 0x42c(0x4)
+	TArray<struct VolcanoSetupDataEmbersEntry>                   LocalEmbers;                                       // 0x430(0x10)
+	float                                                        EmbersSpawnOffsetInMetres;                         // 0x440(0x4)
+	float                                                        ServerMigrationDistanceAsMultipleOfOuterTargetRadius; // 0x444(0x4)
 };
 
 
-// Size 0x18 (Full Size[0x3b8] - InheritedSize[0x3a0]
-class AshenLordWorldEndCloud: public Actor
+// Size 0x228 (Full Size[0x5c8] - InheritedSize[0x3a0]
+class Volcano: public Actor
 {
 public:
-	float                                                        SelfDestructDelayOnComplete;                       // 0x3a0(0x4)
-	char                                                         CloudState;                                        // 0x3a4(0x1)
-	char                                                         pad0x3_FFQT6[0x3];                                 // 0x3a5(0x3)
-	struct AshenLordWorldEndCloudAnimation                       CurrentCloudAnimation;                             // 0x3a8(0x8)
-	char                                                         pad0x8_RRL5J[0x8];                                 // 0x3b0(0x8)
+	char                                                         pad0x18_MOSZG[0x18];                               // 0x3a0(0x18)
+	class VolcanoSetupDataAsset*                                 VolcanoSetupDataOverride;                          // 0x3b8(0x8)
+	class VolcanoSetupDataAsset*                                 SelectedVolcanoDataForNextEruption;                // 0x3c0(0x8)
+	TArray<struct VolcanoStoryCustomisationData>                 StoryCustomisationData;                            // 0x3c8(0x10)
+	class CapsuleComponent*                                      HitDetectionVolume;                                // 0x3d8(0x8)
+	bool                                                         UseDormantDuration;                                // 0x3e0(0x1)
+	char                                                         pad0x7_Y481L[0x7];                                 // 0x3e1(0x7)
+	class VolcanoSetupDataAsset*                                 VolcanoSetupData;                                  // 0x3e8(0x8)
+	class Murk*                                                  AssociatedSuperheatedWater;                        // 0x3f0(0x8)
+	class LavaZone*                                              AssociatedLavaZone;                                // 0x3f8(0x8)
+	float                                                        InnerTargetRadiusInMetres;                         // 0x400(0x4)
+	float                                                        OuterTargetRadiusInMetres;                         // 0x404(0x4)
+	float                                                        NearbyPlayerRangeToFireProjectilesInMetres;        // 0x408(0x4)
+	float                                                        RandomShipPositionScale;                           // 0x40c(0x4)
+	class ParticleSystemComponent*                               WarmingUpEmitter;                                  // 0x410(0x8)
+	class ParticleSystemComponent*                               EruptingEmitter;                                   // 0x418(0x8)
+	class BlendedLightingZoneComponent*                          BlendedLightingZoneComponent;                      // 0x420(0x8)
+	class BlendedAtmosphericPressureZoneComponent*               BlendedAtmosphericPressureZoneComponent;           // 0x428(0x8)
+	class BlendedPostProcessingRainZoneComponent*                BlendedPostProcessingRainZoneComponent;            // 0x430(0x8)
+	struct Vector                                                ProjectileLaunchOffset;                            // 0x438(0xc)
+	char                                                         pad0x4_LFMBJ[0x4];                                 // 0x444(0x4)
+	class WwiseObjectPoolWrapper*                                AudioPool;                                         // 0x448(0x8)
+	class WwiseEvent*                                            WarmupAudioPlayEvent;                              // 0x450(0x8)
+	class WwiseEvent*                                            WarmupAudioStopEvent;                              // 0x458(0x8)
+	class WwiseEvent*                                            EruptingAudioPlayEvent;                            // 0x460(0x8)
+	class WwiseEvent*                                            EruptingAudioStopEvent;                            // 0x468(0x8)
+	class CapsuleComponent*                                      InstantKillZone;                                   // 0x470(0x8)
+	float                                                        InstantKillZoneTestInterval;                       // 0x478(0x4)
+	struct VolcanoStateData                                      StateData;                                         // 0x47c(0xc)
+	struct FName                                                 AssociatedIslandName;                              // 0x488(0x8)
+	char                                                         pad0x138_SRZ6H[0x138];                             // 0x490(0x138)
 };
 
 
 // Size 0xc0 (Full Size[0xe8] - InheritedSize[0x28]
-class GeyserSetupDataAsset: public DataAsset
+class SuperheatedWaterSetupDataAsset: public DataAsset
 {
 public:
-	bool                                                         IsEnabled;                                         // 0x28(0x1)
-	char                                                         pad0x7_9E4ZY[0x7];                                 // 0x29(0x7)
-	struct WeightedProbabilityRangeOfRanges                      DormantDuration;                                   // 0x30(0x30)
-	struct WeightedProbabilityRangeOfRanges                      InitialWarningDuration;                            // 0x60(0x30)
-	struct WeightedProbabilityRange                              NumSpurtsPerActivation;                            // 0x90(0x20)
-	struct WeightedProbabilityRangeOfRanges                      TimeBetweenSpurts;                                 // 0xb0(0x30)
-	bool                                                         ShouldDestroyOnDeactivation;                       // 0xe0(0x1)
-	char                                                         pad0x3_XZUBI[0x3];                                 // 0xe1(0x3)
-	float                                                        DestroyAfterDeactivationDelay;                     // 0xe4(0x4)
+	float                                                        TimeBetweenHealthReduction;                        // 0x28(0x4)
+	float                                                        MinimumWaterDepthToCauseDamage;                    // 0x2c(0x4)
+	struct WeightedProbabilityRangeOfRanges                      TimeBetweenLargeSurfaceEffects;                    // 0x30(0x30)
+	float                                                        LargeSurfaceEffectMinimumDistanceInMetres;         // 0x60(0x4)
+	char                                                         pad0x4_EKLZU[0x4];                                 // 0x64(0x4)
+	struct RandomParticleSystemPicker                            LargeSurfaceEffects;                               // 0x68(0x10)
+	float                                                        EffectSpawnHeight;                                 // 0x78(0x4)
+	float                                                        MurkStrengthToStartEffects;                        // 0x7c(0x4)
+	struct WeightedProbabilityRangeOfRanges                      TimeBetweenSmallSurfaceEffects;                    // 0x80(0x30)
+	struct WeightedProbabilityRange                              NumSmallSurfaceEffects;                            // 0xb0(0x20)
+	struct DistanceThrottledRandomParticleSystemPicker           SmallSurfaceEffects;                               // 0xd0(0x10)
+	float                                                        SmallSurfaceEffectNearbyPlayerRadiusInMetres;      // 0xe0(0x4)
+	float                                                        SmallSurfaceEffectOffsetRadiusInMetres;            // 0xe4(0x4)
+};
+
+
+// Size 0xf0 (Full Size[0x490] - InheritedSize[0x3a0]
+class Geyser: public Actor
+{
+public:
+	char                                                         pad0x10_J9EA2[0x10];                               // 0x3a0(0x10)
+	class GeyserSetupDataAsset*                                  SetupData;                                         // 0x3b0(0x8)
+	class GeyserSetupDataAsset*                                  GeyserSetupDataOverride;                           // 0x3b8(0x8)
+	class GeyserSetupDataAsset*                                  SelectedGeyserForNextActivation;                   // 0x3c0(0x8)
+	TArray<struct GeyserStoryCustomisationData>                  StoryCustomisationData;                            // 0x3c8(0x10)
+	char                                                         pad0x18_3F5ZX[0x18];                               // 0x3d8(0x18)
+	char                                                         GeyserState;                                       // 0x3f0(0x1)
+	char                                                         pad0x7_JCQV5[0x7];                                 // 0x3f1(0x7)
+	class WwiseObjectPoolWrapper*                                GeyserBuildUpPool;                                 // 0x3f8(0x8)
+	class WwiseObjectPoolWrapper*                                GeyserBlowPool;                                    // 0x400(0x8)
+	class WwiseEvent*                                            StartActiveAudioLoopEvent;                         // 0x408(0x8)
+	class WwiseEvent*                                            StopActiveAudioLoopEvent;                          // 0x410(0x8)
+	class WwiseEvent*                                            PlayEruptingAudioEvent;                            // 0x418(0x8)
+	class ExplosionComponent*                                    ExplosionComponent;                                // 0x420(0x8)
+	class ParticleSystemComponent*                               ActiveParticlesComponent;                          // 0x428(0x8)
+	class ParticleSystemComponent*                               EruptingParticlesComponent;                        // 0x430(0x8)
+	char                                                         HitTestTraceChannel;                               // 0x438(0x1)
+	char                                                         pad0x7_VO4KG[0x7];                                 // 0x439(0x7)
+	class UClass*                                                GeyserHoleClass;                                   // 0x440(0x8)
+	class Hole*                                                  GeyserHole;                                        // 0x448(0x8)
+	char                                                         pad0x40_VPNSA[0x40];                               // 0x450(0x40)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class GeyserExclusionVolumeInterface: public Interface
+{
+public:
 };
 
 
@@ -402,47 +441,8 @@ public:
 	bool                                                         Active;                                            // 0x420(0x1)
 	bool                                                         InitializeFromGlobalState;                         // 0x421(0x1)
 	bool                                                         SelfActivating;                                    // 0x422(0x1)
-	char                                                         pad0x5_0X5CI[0x5];                                 // 0x423(0x5)
-	char                                                         pad0x20_QZ9FG[0x20];                               // 0x428(0x20)
-};
-
-
-// Size 0x78 (Full Size[0xc0] - InheritedSize[0x48]
-class SeatStat_IslandVolcanoActive: public SeatStat
-{
-public:
-	struct FName                                                 VolcanoIslandName;                                 // 0x48(0x8)
-	char                                                         pad0x70_YGGKK[0x70];                               // 0x50(0x70)
-};
-
-
-// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
-class GeyserExclusionVolumeComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_7RLG3[0x8];                                 // 0xb8(0x8)
-	float                                                        Radius;                                            // 0xc0(0x4)
-	char                                                         pad0x4_1MOCK[0x4];                                 // 0xc4(0x4)
-};
-
-
-// Size 0xc0 (Full Size[0xe8] - InheritedSize[0x28]
-class SuperheatedWaterSetupDataAsset: public DataAsset
-{
-public:
-	float                                                        TimeBetweenHealthReduction;                        // 0x28(0x4)
-	float                                                        MinimumWaterDepthToCauseDamage;                    // 0x2c(0x4)
-	struct WeightedProbabilityRangeOfRanges                      TimeBetweenLargeSurfaceEffects;                    // 0x30(0x30)
-	float                                                        LargeSurfaceEffectMinimumDistanceInMetres;         // 0x60(0x4)
-	char                                                         pad0x4_PTA04[0x4];                                 // 0x64(0x4)
-	struct RandomParticleSystemPicker                            LargeSurfaceEffects;                               // 0x68(0x10)
-	float                                                        EffectSpawnHeight;                                 // 0x78(0x4)
-	float                                                        MurkStrengthToStartEffects;                        // 0x7c(0x4)
-	struct WeightedProbabilityRangeOfRanges                      TimeBetweenSmallSurfaceEffects;                    // 0x80(0x30)
-	struct WeightedProbabilityRange                              NumSmallSurfaceEffects;                            // 0xb0(0x20)
-	struct DistanceThrottledRandomParticleSystemPicker           SmallSurfaceEffects;                               // 0xd0(0x10)
-	float                                                        SmallSurfaceEffectNearbyPlayerRadiusInMetres;      // 0xe0(0x4)
-	float                                                        SmallSurfaceEffectOffsetRadiusInMetres;            // 0xe4(0x4)
+	char                                                         pad0x5_CX9E0[0x5];                                 // 0x423(0x5)
+	char                                                         pad0x20_FBDLU[0x20];                               // 0x428(0x20)
 };
 
 
@@ -451,7 +451,7 @@ class MechanismGeyser: public Geyser
 {
 public:
 	char                                                         GeyserStateWhenMechanismIsInactive;                // 0x490(0x1)
-	char                                                         pad0x7_L9U4P[0x7];                                 // 0x491(0x7)
+	char                                                         pad0x7_VX9LT[0x7];                                 // 0x491(0x7)
 	class MechanismActionComponent*                              MechanismActionComponent;                          // 0x498(0x8)
 };
 

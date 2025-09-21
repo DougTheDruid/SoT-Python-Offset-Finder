@@ -6,7 +6,7 @@
     "ClassSize": "0x270",
     "Attributes": [
       {
-        "Name": "pad0x10_Y1RMG[0x10]",
+        "Name": "pad0x10_QI5O8[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x7f0"
@@ -30,7 +30,7 @@
         "Offset": "0x808"
       },
       {
-        "Name": "pad0x4_42S4F[0x4]",
+        "Name": "pad0x4_UOHLZ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x80c"
@@ -120,16 +120,10 @@
         "Offset": "0x978"
       },
       {
-        "Name": "ClampFieldOfView",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x980"
-      },
-      {
-        "Name": "pad0xdc_XOE81[0xdc]",
+        "Name": "pad0xe0_L7QD7[0xe0]",
         "Type": "char",
-        "Size": "0xdc",
-        "Offset": "0x984"
+        "Size": "0xe0",
+        "Offset": "0x980"
       }
     ]
   },

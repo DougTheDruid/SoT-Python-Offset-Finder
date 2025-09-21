@@ -9,7 +9,7 @@ ActivateKillStreakEvent:
   ClassSize: '0x1'
 ActivateKillStreakNetworkEvent:
   Attributes:
-  - Name: pad0x18_FQL06[0x18]
+  - Name: pad0x18_MRKB2[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -17,7 +17,7 @@ ActivateKillStreakNetworkEvent:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_OEHRA[0x7]
+  - Name: pad0x7_GNA9C[0x7]
     Offset: '0x19'
     Size: '0x7'
     Type: char
@@ -35,21 +35,21 @@ CinematicFactionEvent:
   ClassSize: '0x88'
 DeactivateKillStreakEvent:
   Attributes:
-  - Name: pad0x1_LEMCD[0x1]
+  - Name: pad0x1_IFB7H[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 DeactivateKillStreakNetworkEvent:
   Attributes:
-  - Name: pad0x18_2BX7E[0x18]
+  - Name: pad0x18_IP6EY[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
   ClassSize: '0x18'
 EventLocalPlayerApproachedHourglass:
   Attributes:
-  - Name: pad0x1_6YJPD[0x1]
+  - Name: pad0x1_Y0AF5[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -97,7 +97,7 @@ FactionDisplayInfo:
   ClassSize: '0xa0'
 FactionPopupEvent:
   Attributes:
-  - Name: pad0x18_A3ODQ[0x18]
+  - Name: pad0x18_EXIPH[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -112,14 +112,14 @@ FactionRequest:
     Offset: '0x0'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x18_WCMCL[0x18]
+  - Name: pad0x18_GAVT9[0x18]
     Offset: '0x8'
     Size: '0x18'
     Type: char
   ClassSize: '0x20'
 FactionShipSunkNetworkEvent:
   Attributes:
-  - Name: pad0x18_TBS8Q[0x18]
+  - Name: pad0x18_HD2A0[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -127,7 +127,7 @@ FactionShipSunkNetworkEvent:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_5WBPC[0x3]
+  - Name: pad0x3_NL4OG[0x3]
     Offset: '0x19'
     Size: '0x3'
     Type: char
@@ -155,7 +155,7 @@ FactionShipSunkNetworkEvent:
     Offset: '0x3c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_W25VL[0x3]
+  - Name: pad0x3_AR084[0x3]
     Offset: '0x3d'
     Size: '0x3'
     Type: char
@@ -166,7 +166,7 @@ FactionShipSunkUIEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_XMYQ8[0x7]
+  - Name: pad0x7_Q5NIF[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -193,7 +193,7 @@ FactionStreakData:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_74Z7V[0x4]
+  - Name: pad0x4_94XPT[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -212,14 +212,14 @@ FactionVoteAdded:
     Offset: '0x18'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_HRABZ[0x7]
+  - Name: pad0x7_Z6QF5[0x7]
     Offset: '0x19'
     Size: '0x7'
     Type: char
   ClassSize: '0x20'
 KillStreakHideEvent:
   Attributes:
-  - Name: pad0x1_6UVI8[0x1]
+  - Name: pad0x1_X4YUZ[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -241,7 +241,7 @@ KillStreakRibbonEvent:
   ClassSize: '0xc'
 KillStreakShowEvent:
   Attributes:
-  - Name: pad0x1_HRFMS[0x1]
+  - Name: pad0x1_OIJ9G[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -252,7 +252,7 @@ LootLevelReward:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_IZF7M[0x3]
+  - Name: pad0x3_6LQWF[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -260,7 +260,7 @@ LootLevelReward:
     Offset: '0x4'
     Size: '0x8'
     Type: struct RewardId
-  - Name: pad0x4_TV2JY[0x4]
+  - Name: pad0x4_MD1Z9[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -272,7 +272,7 @@ LootLevelReward:
     Offset: '0x20'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_1YTQS[0x4]
+  - Name: pad0x4_63G7Z[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char
@@ -309,7 +309,7 @@ StreakMaterial:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_KG107[0x7]
+  - Name: pad0x7_GJI4V[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
@@ -335,7 +335,7 @@ StreakMesh:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_JMY7R[0x7]
+  - Name: pad0x7_W9VGN[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char

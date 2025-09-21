@@ -7,13 +7,24 @@
 struct StructSerializerNumericTestStruct
 {
 public:
-	char                                                         pad0x4_WUUSS[0x4];                                 // 0x0(0x4)
+	char                                                         pad0x4_DQX0W[0x4];                                 // 0x0(0x4)
 	int                                                          Int32;                                             // 0x4(0x4)
 	char                                                         UInt8;                                             // 0x10(0x1)
-	char                                                         pad0x1_M27V0[0x1];                                 // 0x11(0x1)
+	char                                                         pad0x1_5ZT7U[0x1];                                 // 0x11(0x1)
 	float                                                        Float;                                             // 0x20(0x4)
-	char                                                         pad0x4_Z29O4[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_ZB4S6[0x4];                                 // 0x24(0x4)
 	double                                                       Double;                                            // 0x28(0x8)
+};
+
+
+// Size 0x8
+struct StructSerializerBooleanTestStruct
+{
+public:
+	bool                                                         BoolFalse;                                         // 0x0(0x1)
+	bool                                                         BoolTrue;                                          // 0x1(0x1)
+	char                                                         pad0x2_SH1MT[0x2];                                 // 0x2(0x2)
+	char                                                         pad0x4_B84CY[0x4];                                 // 0x4(0x4)
 };
 
 
@@ -29,15 +40,6 @@ public:
 };
 
 
-// Size 0x10
-struct StructSerializerObjectTestStruct
-{
-public:
-	class UClass*                                                Class;                                             // 0x0(0x8)
-	class Object*                                                ObjectPtr;                                         // 0x8(0x8)
-};
-
-
 // Size 0x40
 struct StructSerializerArrayTestStruct
 {
@@ -45,21 +47,19 @@ public:
 	TArray<int>                                                  Int32Array;                                        // 0x0(0x10)
 	int                                                          StaticSingleElement;                               // 0x10(0x4)
 	int                                                          StaticInt32Array;                                  // 0x14(0x4)
-	char                                                         pad0x8_NKGQ5[0x8];                                 // 0x18(0x8)
+	char                                                         pad0x8_XOGVJ[0x8];                                 // 0x18(0x8)
 	float                                                        StaticFloatArray;                                  // 0x20(0x4)
-	char                                                         pad0xc_B3N4M[0xc];                                 // 0x24(0xc)
+	char                                                         pad0xc_RYMKU[0xc];                                 // 0x24(0xc)
 	TArray<struct Vector>                                        VectorArray;                                       // 0x30(0x10)
 };
 
 
-// Size 0x8
-struct StructSerializerBooleanTestStruct
+// Size 0x10
+struct StructSerializerObjectTestStruct
 {
 public:
-	bool                                                         BoolFalse;                                         // 0x0(0x1)
-	bool                                                         BoolTrue;                                          // 0x1(0x1)
-	char                                                         pad0x2_9XVVR[0x2];                                 // 0x2(0x2)
-	char                                                         pad0x4_V1BK9[0x4];                                 // 0x4(0x4)
+	class UClass*                                                Class;                                             // 0x0(0x8)
+	class Object*                                                ObjectPtr;                                         // 0x8(0x8)
 };
 
 

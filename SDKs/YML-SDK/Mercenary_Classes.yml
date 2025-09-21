@@ -14,7 +14,7 @@ EmergentSkeletonRevivedStatTrigger:
   Super: ConditionalStatsTriggerType
 MercenaryBuriableActor:
   Attributes:
-  - Name: pad0x10_PX73R[0x10]
+  - Name: pad0x10_8N18F[0x10]
     Offset: '0x3a0'
     Size: '0x10'
     Type: char
@@ -58,11 +58,11 @@ MercenaryBuriableActor:
     Offset: '0x460'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_1HB6Q[0x7]
+  - Name: pad0x7_W29GB[0x7]
     Offset: '0x461'
     Size: '0x7'
     Type: char
-  - Name: pad0x108_5I365[0x108]
+  - Name: pad0x108_4X17P[0x108]
     Offset: '0x468'
     Size: '0x108'
     Type: char
@@ -118,7 +118,7 @@ MercenaryItemInteractionDataAsset:
   Super: DataAsset
 MercenaryItemInteractionsComponent:
   Attributes:
-  - Name: pad0x28_Q8TZ8[0x28]
+  - Name: pad0x28_NZZXV[0x28]
     Offset: '0xb8'
     Size: '0x28'
     Type: char
@@ -130,7 +130,7 @@ MercenaryItemInteractionsComponent:
     Offset: '0xe1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_9RMN3[0x6]
+  - Name: pad0x6_O05F7[0x6]
     Offset: '0xe2'
     Size: '0x6'
     Type: char
@@ -138,7 +138,7 @@ MercenaryItemInteractionsComponent:
     Offset: '0x108'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_E1IWQ[0x4]
+  - Name: pad0x4_1X59F[0x4]
     Offset: '0x10c'
     Size: '0x4'
     Type: char
@@ -154,7 +154,7 @@ MercenaryItemInteractionsComponent:
     Offset: '0x180'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_PCL62[0x4]
+  - Name: pad0x4_21E1L[0x4]
     Offset: '0x184'
     Size: '0x4'
     Type: char
@@ -174,7 +174,7 @@ MercenaryItemInteractionsComponent:
     Offset: '0x200'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x30_8U46Q[0x30]
+  - Name: pad0x30_T9KCJ[0x30]
     Offset: '0x208'
     Size: '0x30'
     Type: char
@@ -190,7 +190,7 @@ MercenaryItemInteractionsComponent:
     Offset: '0x23a'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_T51EW[0x1]
+  - Name: pad0x1_MFL2P[0x1]
     Offset: '0x23b'
     Size: '0x1'
     Type: char
@@ -210,7 +210,7 @@ MercenaryItemInteractionsComponent:
     Offset: '0x280'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x30_L3R86[0x30]
+  - Name: pad0x30_ZUC08[0x30]
     Offset: '0x288'
     Size: '0x30'
     Type: char
@@ -224,7 +224,7 @@ MercenaryItemInteractionsComponent:
   Super: ActorComponent
 MercenaryService:
   Attributes:
-  - Name: pad0x20_90VCP[0x20]
+  - Name: pad0x20_FS1LO[0x20]
     Offset: '0x3a0'
     Size: '0x20'
     Type: char
@@ -232,7 +232,7 @@ MercenaryService:
     Offset: '0x3c0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_5MXK2[0x4]
+  - Name: pad0x4_V74DO[0x4]
     Offset: '0x3c4'
     Size: '0x4'
     Type: char
@@ -256,7 +256,7 @@ MercenaryServiceParams:
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_90LEM[0x4]
+  - Name: pad0x4_EKPQ6[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char

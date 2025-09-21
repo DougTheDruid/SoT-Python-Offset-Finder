@@ -4,7 +4,7 @@
 // https://github.com/DougTheDruid
 
 // Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class ClampedFreelookYAnalogInputId: public AnalogInputId
+class ClampedFreelookMouseXInputId: public AnalogInputId
 {
 public:
 };
@@ -18,7 +18,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class ClampedFreelookMouseXInputId: public AnalogInputId
+class ClampedFreelookYAnalogInputId: public AnalogInputId
 {
 public:
 };
@@ -28,7 +28,7 @@ public:
 class AutoMoveInputComponent: public InputComponent
 {
 public:
-	char                                                         pad0x20_SH536[0x20];                               // 0x140(0x20)
+	char                                                         pad0x20_Z74DP[0x20];                               // 0x140(0x20)
 };
 
 
@@ -43,7 +43,7 @@ public:
 class MovementInterferenceComponent: public AutoMoveInputComponent
 {
 public:
-	char                                                         pad0x70_D2NEN[0x70];                               // 0x160(0x70)
+	char                                                         pad0x70_RJLQB[0x70];                               // 0x160(0x70)
 };
 
 
@@ -51,15 +51,7 @@ public:
 class AthenaCharacterBaseInputComponent: public AutoMoveInputComponent
 {
 public:
-	char                                                         pad0x128_FWDNF[0x128];                             // 0x160(0x128)
-};
-
-
-// Size 0x8 (Full Size[0x290] - InheritedSize[0x288]
-class AthenaCharacterBaseInputComponentWithInterference: public AthenaCharacterBaseInputComponent
-{
-public:
-	char                                                         pad0x8_3AFKU[0x8];                                 // 0x288(0x8)
+	char                                                         pad0x128_8WNX5[0x128];                             // 0x160(0x128)
 };
 
 
@@ -68,6 +60,14 @@ class LookingAtWieldableInputComponent: public AthenaCharacterBaseInputComponent
 {
 public:
 	class Actor*                                                 TargetWieldable;                                   // 0x288(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x290] - InheritedSize[0x288]
+class AthenaCharacterBaseInputComponentWithInterference: public AthenaCharacterBaseInputComponent
+{
+public:
+	char                                                         pad0x8_QCD8L[0x8];                                 // 0x288(0x8)
 };
 
 

@@ -22,7 +22,7 @@ CooldownOverheatingTelemetryEvent:
     Offset: '0x28'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_TYRR1[0x7]
+  - Name: pad0x7_4P9DH[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
@@ -49,7 +49,7 @@ HeatUpOverheatingTelemetryEvent:
     Offset: '0x28'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_FDK8N[0x7]
+  - Name: pad0x7_YQ7JK[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
@@ -60,7 +60,7 @@ OverheatingDamageTableEntry:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_JWQE3[0x3]
+  - Name: pad0x3_OGOFU[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char

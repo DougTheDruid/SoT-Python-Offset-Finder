@@ -23,9 +23,9 @@ public:
 class OceanCrawlerAudioBroadcaster: public ActorComponent
 {
 public:
-	char                                                         pad0x20_IMPEH[0x20];                               // 0xb8(0x20)
+	char                                                         pad0x20_TTYF8[0x20];                               // 0xb8(0x20)
 	class Actor*                                                 CachedOwner;                                       // 0xd8(0x8)
-	char                                                         pad0x100_QV3SQ[0x100];                             // 0xe0(0x100)
+	char                                                         pad0x100_68BX8[0x100];                             // 0xe0(0x100)
 	class OceanCrawlerAudioParamsDataAsset*                      LoadedAudioDataAsset;                              // 0x1e0(0x8)
 };
 
@@ -35,7 +35,7 @@ class BTTask_BroadcastOceanCrawlerAbilityAudioEvent: public BTTaskNode
 {
 public:
 	char                                                         OceanCrawlerAudioKeyToBroadcast;                   // 0x60(0x1)
-	char                                                         pad0x7_DSH45[0x7];                                 // 0x61(0x7)
+	char                                                         pad0x7_OC5YI[0x7];                                 // 0x61(0x7)
 };
 
 

@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AnalogInputId:
   Attributes:
-  - Name: pad0x10_6MX1I[0x10]
+  - Name: pad0x10_QD46W[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char
@@ -12,7 +12,7 @@ AnalogInputId:
   Super: Object
 NPCReceivesInputIndicatorComponent:
   Attributes:
-  - Name: pad0x8_BFR9U[0x8]
+  - Name: pad0x8_TU464[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -22,7 +22,7 @@ NPCReceivesInputIndicatorComponent:
   Super: ActorComponent
 NotificationInputId:
   Attributes:
-  - Name: pad0x10_FQTUJ[0x10]
+  - Name: pad0x10_LWOCI[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char

@@ -10,22 +10,11 @@
       }
     ]
   },
-  "EventAthenaLoadingScreenBlockUntilUIIntialisedClear": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Description",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "EventAthenaLoadingScreenStateRequest": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_E6VSL[0x1]",
+        "Name": "pad0x1_OISTU[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
@@ -84,32 +73,10 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x4_182M2[0x4]",
+        "Name": "pad0x4_SQMGA[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xbc"
-      }
-    ]
-  },
-  "EventAthenaLoadingScreenClose": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_5D8TA[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventAthenaLoadingScreenOpen": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_IUVN9[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
       }
     ]
   },
@@ -119,6 +86,39 @@
       {
         "Name": "IsVisible",
         "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventAthenaLoadingScreenBlockUntilUIIntialisedClear": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Description",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventAthenaLoadingScreenOpen": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_POL82[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventAthenaLoadingScreenClose": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_WF3M0[0x1]",
+        "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
       }

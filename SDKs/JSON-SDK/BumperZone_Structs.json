@@ -1,4 +1,15 @@
 {
+  "CachedShip": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_SICAO[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "BumperZoneData": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -9,21 +20,10 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x20_74FWY[0x20]",
+        "Name": "pad0x20_EDH0E[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "CachedShip": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_GESPL[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
       }
     ]
   },

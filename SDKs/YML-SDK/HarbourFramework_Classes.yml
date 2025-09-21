@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 HarbourComponent:
   Attributes:
-  - Name: pad0x8_QG287[0x8]
+  - Name: pad0x8_WG5NU[0x8]
     Offset: '0x2d0'
     Size: '0x8'
     Type: char
@@ -10,7 +10,7 @@ HarbourComponent:
     Offset: '0x2d8'
     Size: '0x4'
     Type: float
-  - Name: pad0x24_5TR9B[0x24]
+  - Name: pad0x24_T6B5K[0x24]
     Offset: '0x2dc'
     Size: '0x24'
     Type: char
@@ -26,7 +26,7 @@ HarbourInterface:
   Super: Interface
 HarbourService:
   Attributes:
-  - Name: pad0x28_WM67U[0x28]
+  - Name: pad0x28_ZEQ8G[0x28]
     Offset: '0x28'
     Size: '0x28'
     Type: char

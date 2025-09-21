@@ -1,59 +1,15 @@
 {
-  "TaleQuestGetProjectionPointOnTradeRouteStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x118",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x98",
+  "TradeRoutesDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "ProjectionProportion",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "pad0x4_P60S5[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x84"
-      },
-      {
-        "Name": "SourcePoint",
-        "Type": "struct QuestVariableVector",
-        "Size": "0x30",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "TradeRouteData",
-        "Type": "struct QuestVariableTradeRouteData",
-        "Size": "0x30",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "ProjectedPoint",
-        "Type": "struct QuestVariableVector",
-        "Size": "0x30",
-        "Offset": "0xe8"
-      }
-    ]
-  },
-  "TaleQuestSelectTradeRouteStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0xb8",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Desc",
-        "Type": "class TaleQuestSelectTradeRouteStepDesc*",
-        "Size": "0x8",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "pad0x18_FC6ME[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0xa0"
+        "Name": "TradeRouteMappings",
+        "Type": "TArray<struct TradeRouteMapping>",
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },
@@ -88,7 +44,7 @@
         "Offset": "0x3c"
       },
       {
-        "Name": "pad0x3_UTX2S[0x3]",
+        "Name": "pad0x3_FVL5X[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x3d"
@@ -98,34 +54,6 @@
         "Type": "struct TradeRouteMapData",
         "Size": "0x80",
         "Offset": "0x40"
-      }
-    ]
-  },
-  "TaleQuestGetProjectionPointOnTradeRouteStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x130",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x98",
-    "Attributes": [
-      {
-        "Name": "pad0x98_3G31I[0x98]",
-        "Type": "char",
-        "Size": "0x98",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "TradeRoutesDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "TradeRouteMappings",
-        "Type": "TArray<struct TradeRouteMapping>",
-        "Size": "0x10",
-        "Offset": "0x28"
       }
     ]
   },
@@ -142,19 +70,84 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_IHBNQ[0x4]",
+        "Name": "pad0x4_GQ7YS[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
       }
     ]
   },
-  "WorldTradeRouteInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "TaleQuestSelectTradeRouteStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Desc",
+        "Type": "class TaleQuestSelectTradeRouteStepDesc*",
+        "Size": "0x8",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x18_1WE93[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0xa0"
+      }
+    ]
+  },
+  "TaleQuestGetProjectionPointOnTradeRouteStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x118",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Name": "ProjectionProportion",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x4_IENMC[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x84"
+      },
+      {
+        "Name": "SourcePoint",
+        "Type": "struct QuestVariableVector",
+        "Size": "0x30",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "TradeRouteData",
+        "Type": "struct QuestVariableTradeRouteData",
+        "Size": "0x30",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "ProjectedPoint",
+        "Type": "struct QuestVariableVector",
+        "Size": "0x30",
+        "Offset": "0xe8"
+      }
+    ]
+  },
+  "TaleQuestGetProjectionPointOnTradeRouteStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x130",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Name": "pad0x98_I07W6[0x98]",
+        "Type": "char",
+        "Size": "0x98",
+        "Offset": "0x98"
+      }
+    ]
   },
   "TaleQuestSelectTradeRouteStepDesc": {
     "Super": "TaleQuestStepDesc",
@@ -175,7 +168,7 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x4_SVG4L[0x4]",
+        "Name": "pad0x4_Q7NOJ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xb4"
@@ -205,6 +198,13 @@
         "Offset": "0x148"
       }
     ]
+  },
+  "WorldTradeRouteInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

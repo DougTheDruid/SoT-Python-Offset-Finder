@@ -1,4 +1,11 @@
 {
+  "HandoverAmmoInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "HandoverAmmoComponent": {
     "Super": "ActorComponent",
     "FullSize": "0xc8",
@@ -6,7 +13,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x8_6NZIE[0x8]",
+        "Name": "pad0x8_20ZO0[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -19,28 +26,7 @@
       }
     ]
   },
-  "DestroyDeployableConditionalStatTrigger": {
-    "Super": "ConditionalStatsTriggerType",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "HandoverAmmoInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "ConvertActorToItemInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ConvertItemToActorInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -49,6 +35,20 @@
   },
   "IsDestroyedDeployableOnEnemyShipStatCondition": {
     "Super": "StatCondition",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DestroyDeployableConditionalStatTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ConvertItemToActorInterface": {
+    "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",

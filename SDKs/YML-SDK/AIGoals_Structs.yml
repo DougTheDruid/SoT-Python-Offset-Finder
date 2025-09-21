@@ -6,7 +6,7 @@ BestActionSpotSelectionCriteria:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_JUZEA[0x3]
+  - Name: pad0x3_XU5DG[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -30,7 +30,7 @@ BestActionSpotSelectionCriteria:
     Offset: '0x14'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_YEQN7[0x3]
+  - Name: pad0x3_HTENM[0x3]
     Offset: '0x15'
     Size: '0x3'
     Type: char
@@ -42,7 +42,7 @@ BestActionSpotSelectionCriteria:
     Offset: '0x1c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_CP2T3[0x3]
+  - Name: pad0x3_D0RFK[0x3]
     Offset: '0x1d'
     Size: '0x3'
     Type: char
@@ -58,7 +58,7 @@ BestActionSpotSelectionCriteria:
     Offset: '0x25'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_2M0AA[0x2]
+  - Name: pad0x2_KRB7F[0x2]
     Offset: '0x26'
     Size: '0x2'
     Type: char
@@ -70,7 +70,7 @@ BestActionSpotSelectionCriteria:
     Offset: '0x2c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_F13I7[0x3]
+  - Name: pad0x3_JNYOT[0x3]
     Offset: '0x2d'
     Size: '0x3'
     Type: char
@@ -81,7 +81,7 @@ BestActionSpotSelectionCriteria:
   ClassSize: '0x34'
 HasAllActionContextTagsCondition:
   Attributes:
-  - Name: pad0x28_1MHUP[0x28]
+  - Name: pad0x28_L5608[0x28]
     Offset: '0x0'
     Size: '0x28'
     Type: char
@@ -93,7 +93,7 @@ HasAllActionContextTagsCondition:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_ILPLM[0x7]
+  - Name: pad0x7_WC43N[0x7]
     Offset: '0x39'
     Size: '0x7'
     Type: char

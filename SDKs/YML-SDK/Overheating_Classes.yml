@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 OverheatingComponent:
   Attributes:
-  - Name: pad0x38_SUELM[0x38]
+  - Name: pad0x38_RRKEI[0x38]
     Offset: '0xb8'
     Size: '0x38'
     Type: char
@@ -42,7 +42,7 @@ OverheatingComponent:
     Offset: '0x128'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6f_SOCIX[0x6f]
+  - Name: pad0x6f_H01HY[0x6f]
     Offset: '0x129'
     Size: '0x6f'
     Type: char
@@ -50,7 +50,7 @@ OverheatingComponent:
     Offset: '0x198'
     Size: '0x4'
     Type: float
-  - Name: pad0x24_LAJQA[0x24]
+  - Name: pad0x24_6QXJO[0x24]
     Offset: '0x19c'
     Size: '0x24'
     Type: char

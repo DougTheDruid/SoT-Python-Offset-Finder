@@ -1,43 +1,9 @@
 {
-  "WWiseEmitterCreationSwitchSetting": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "SwitchGroup",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SwitchValue",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "WWiseEmitterCreationRTPCSetting": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "RTPCName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "RTPCValue",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "WwiseEmitter": {
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x20_HJ6NQ[0x20]",
+        "Name": "pad0x20_ZDZGQ[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x0"
@@ -60,7 +26,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_PBH1T[0x4]",
+        "Name": "pad0x4_5B8WB[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
@@ -79,26 +45,37 @@
       }
     ]
   },
-  "WwiseEmitterCreationParams": {
-    "ClassSize": "0x28",
+  "WWiseEmitterCreationRTPCSetting": {
+    "ClassSize": "0xc",
     "Attributes": [
       {
-        "Name": "Event",
-        "Type": "class WwiseEvent*",
+        "Name": "RTPCName",
+        "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "RTPCs",
-        "Type": "TArray<struct WWiseEmitterCreationRTPCSetting>",
-        "Size": "0x10",
+        "Name": "RTPCValue",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "WWiseEmitterCreationSwitchSetting": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "SwitchGroup",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
       },
       {
-        "Name": "Switches",
-        "Type": "TArray<struct WWiseEmitterCreationSwitchSetting>",
-        "Size": "0x10",
-        "Offset": "0x18"
+        "Name": "SwitchValue",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -135,10 +112,33 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x24_STCCA[0x24]",
+        "Name": "pad0x24_67BOC[0x24]",
         "Type": "char",
         "Size": "0x24",
         "Offset": "0x44"
+      }
+    ]
+  },
+  "WwiseEmitterCreationParams": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Event",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RTPCs",
+        "Type": "TArray<struct WWiseEmitterCreationRTPCSetting>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Switches",
+        "Type": "TArray<struct WWiseEmitterCreationSwitchSetting>",
+        "Size": "0x10",
+        "Offset": "0x18"
       }
     ]
   },

@@ -4,19 +4,6 @@
 // https://github.com/DougTheDruid
 
 // Size 0x30
-struct CooldownOverheatingTelemetryEvent
-{
-public:
-	struct FString                                               CooldownInstigatorActorName;                       // 0x0(0x10)
-	struct Guid                                                  BootyId;                                           // 0x10(0x10)
-	float                                                        CooldownByNumber;                                  // 0x20(0x4)
-	float                                                        CurrentOverheatingSum;                             // 0x24(0x4)
-	char                                                         CooldownReason;                                    // 0x28(0x1)
-	char                                                         pad0x7_TYRR1[0x7];                                 // 0x29(0x7)
-};
-
-
-// Size 0x30
 struct HeatUpOverheatingTelemetryEvent
 {
 public:
@@ -25,7 +12,20 @@ public:
 	float                                                        HeatUpByNumber;                                    // 0x20(0x4)
 	float                                                        CurrentOverheatingSum;                             // 0x24(0x4)
 	char                                                         HeatUpReason;                                      // 0x28(0x1)
-	char                                                         pad0x7_FDK8N[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_YQ7JK[0x7];                                 // 0x29(0x7)
+};
+
+
+// Size 0x30
+struct CooldownOverheatingTelemetryEvent
+{
+public:
+	struct FString                                               CooldownInstigatorActorName;                       // 0x0(0x10)
+	struct Guid                                                  BootyId;                                           // 0x10(0x10)
+	float                                                        CooldownByNumber;                                  // 0x20(0x4)
+	float                                                        CurrentOverheatingSum;                             // 0x24(0x4)
+	char                                                         CooldownReason;                                    // 0x28(0x1)
+	char                                                         pad0x7_4P9DH[0x7];                                 // 0x29(0x7)
 };
 
 
@@ -34,7 +34,7 @@ struct OverheatingDamageTableEntry
 {
 public:
 	char                                                         Reason;                                            // 0x0(0x1)
-	char                                                         pad0x3_JWQE3[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_OGOFU[0x3];                                 // 0x1(0x3)
 	float                                                        TimeToAdd;                                         // 0x4(0x4)
 };
 

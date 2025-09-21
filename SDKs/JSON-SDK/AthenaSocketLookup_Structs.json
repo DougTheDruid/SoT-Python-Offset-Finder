@@ -1,4 +1,15 @@
 {
+  "SocketLookupCache": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x50_YWEIA[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "SocketPathNode": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -6,17 +17,6 @@
         "Name": "Name",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SocketLookupCache": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x50_FQZ71[0x50]",
-        "Type": "char",
-        "Size": "0x50",
         "Offset": "0x0"
       }
     ]
@@ -31,7 +31,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x8_KO3XM[0x8]",
+        "Name": "pad0x8_0P84Q[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x10"

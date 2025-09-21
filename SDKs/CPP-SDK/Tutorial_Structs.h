@@ -11,54 +11,7 @@ public:
 	struct FString                                               StepName;                                          // 0x10(0x10)
 	bool                                                         StepCompleted;                                     // 0x20(0x1)
 	bool                                                         IsFinalStep;                                       // 0x21(0x1)
-	char                                                         pad0x6_KC4H1[0x6];                                 // 0x22(0x6)
-};
-
-
-// Size 0x20
-struct BeachNPCSpawnFlowNetworkEvent
-{
-public:
-	char                                                         pad0x18_CZM76[0x18];                               // 0x0(0x18)
-	bool                                                         HasTaleCheckpointVoyage;                           // 0x18(0x1)
-	char                                                         pad0x7_BPGB6[0x7];                                 // 0x19(0x7)
-};
-
-
-// Size 0x1
-struct EventTutorialTypeDecided
-{
-public:
-	char                                                         TutorialType;                                      // 0x0(0x1)
-};
-
-
-// Size 0x30
-struct HasTutorialStarterBegunCondition
-{
-public:
-	char                                                         pad0x28_MPNPR[0x28];                               // 0x0(0x28)
-	char                                                         TutorialStarterType;                               // 0x28(0x1)
-	char                                                         pad0x7_QW8L2[0x7];                                 // 0x29(0x7)
-};
-
-
-// Size 0x38
-struct ContextualTutorialPromptDesc
-{
-public:
-	char                                                         pad0x20_DG6ET[0x20];                               // 0x0(0x20)
-	class UClass*                                                AccessKey;                                         // 0x20(0x8)
-	struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
-	int                                                          MustBeUnderCount;                                  // 0x34(0x4)
-};
-
-
-// Size 0x1
-struct TutorialShowTutorialLegendaryTavernStrangerEvent
-{
-public:
-	char                                                         pad0x1_XTOXM[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x6_BXDBP[0x6];                                 // 0x22(0x6)
 };
 
 
@@ -68,7 +21,54 @@ struct IntroductionToSOTIntroAnimatic
 public:
 	class UClass*                                                ShipSize;                                          // 0x0(0x8)
 	struct FirstPersonAnimaticSettings                           IntroAnimationSettings;                            // 0x8(0x2c)
-	char                                                         pad0x4_IC4PD[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_MZTZH[0x4];                                 // 0x34(0x4)
+};
+
+
+// Size 0x20
+struct BeachNPCSpawnFlowNetworkEvent
+{
+public:
+	char                                                         pad0x18_U9Q53[0x18];                               // 0x0(0x18)
+	bool                                                         HasTaleCheckpointVoyage;                           // 0x18(0x1)
+	char                                                         pad0x7_ZDL78[0x7];                                 // 0x19(0x7)
+};
+
+
+// Size 0x1
+struct TutorialShowTutorialLegendaryTavernStrangerEvent
+{
+public:
+	char                                                         pad0x1_QBIAJ[0x1];                                 // 0x0(0x1)
+};
+
+
+// Size 0x38
+struct ContextualTutorialPromptDesc
+{
+public:
+	char                                                         pad0x20_YHMTF[0x20];                               // 0x0(0x20)
+	class UClass*                                                AccessKey;                                         // 0x20(0x8)
+	struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
+	int                                                          MustBeUnderCount;                                  // 0x34(0x4)
+};
+
+
+// Size 0x30
+struct HasTutorialStarterBegunCondition
+{
+public:
+	char                                                         pad0x28_LSCVK[0x28];                               // 0x0(0x28)
+	char                                                         TutorialStarterType;                               // 0x28(0x1)
+	char                                                         pad0x7_BSSEX[0x7];                                 // 0x29(0x7)
+};
+
+
+// Size 0x1
+struct EventTutorialTypeDecided
+{
+public:
+	char                                                         TutorialType;                                      // 0x0(0x1)
 };
 
 

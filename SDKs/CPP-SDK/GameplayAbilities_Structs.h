@@ -4,19 +4,14 @@
 // https://github.com/DougTheDruid
 
 // Size 0x18
-struct GameplayTargetDataFilterHandle
+struct PredictionKey
 {
 public:
-	char                                                         pad0x18_US0Q8[0x18];                               // 0x0(0x18)
-};
-
-
-// Size 0x88
-struct GameplayAbilityTargetData_SingleTargetHit
-{
-public:
-	char                                                         pad0x8_6F1EQ[0x8];                                 // 0x0(0x8)
-	struct HitResult                                             HitResult;                                         // 0x8(0x80)
+	char                                                         pad0x8_J5AEP[0x8];                                 // 0x0(0x8)
+	class PackageMap*                                            PredictiveConnection;                              // 0x8(0x8)
+	bool                                                         bIsStale;                                          // 0x10(0x1)
+	bool                                                         bIsServerInitiated;                                // 0x11(0x1)
+	char                                                         pad0x6_H89GP[0x6];                                 // 0x12(0x6)
 };
 
 
@@ -25,8 +20,57 @@ struct GameplayAbilityBindInfo
 {
 public:
 	char                                                         Command;                                           // 0x0(0x1)
-	char                                                         pad0x7_INR81[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_0HS61[0x7];                                 // 0x1(0x7)
 	class UClass*                                                GameplayAbilityClass;                              // 0x8(0x8)
+};
+
+
+// Size 0x20
+struct GameplayEffectSpecHandle
+{
+public:
+	char                                                         pad0x20_3SHQG[0x20];                               // 0x0(0x20)
+};
+
+
+// Size 0x20
+struct ScalableFloat
+{
+public:
+	float                                                        Value;                                             // 0x0(0x4)
+	char                                                         pad0x4_S7XIC[0x4];                                 // 0x4(0x4)
+	struct CurveTableRowHandle                                   Curve;                                             // 0x8(0x10)
+	char                                                         pad0x8_TBVYR[0x8];                                 // 0x18(0x8)
+};
+
+
+// Size 0xc
+struct WorldReticleParameters
+{
+public:
+	struct Vector                                                AOEScale;                                          // 0x0(0xc)
+};
+
+
+// Size 0x8
+struct GameplayAbilityTargetData
+{
+public:
+	char                                                         pad0x8_WNSB9[0x8];                                 // 0x0(0x8)
+};
+
+
+// Size 0x28
+struct GameplayTargetDataFilter
+{
+public:
+	char                                                         pad0x8_NGX15[0x8];                                 // 0x0(0x8)
+	class Actor*                                                 SelfActor;                                         // 0x8(0x8)
+	char                                                         SelfFilter;                                        // 0x10(0x1)
+	char                                                         pad0x7_B9PTW[0x7];                                 // 0x11(0x7)
+	class UClass*                                                RequiredActorClass;                                // 0x18(0x8)
+	bool                                                         bReverseFilter;                                    // 0x20(0x1)
+	char                                                         pad0x7_ZIU6C[0x7];                                 // 0x21(0x7)
 };
 
 
@@ -40,19 +84,22 @@ public:
 };
 
 
-// Size 0x88
-struct GameplayEffectCustomExecutionParameters
+// Size 0x28
+struct GameplayCueNotifyData
 {
 public:
-	char                                                         pad0x88_376A2[0x88];                               // 0x0(0x88)
+	struct GameplayTag                                           GameplayCueTag;                                    // 0x0(0x8)
+	struct StringAssetReference                                  GameplayCueNotifyObj;                              // 0x8(0x10)
+	class UClass*                                                LoadedGameplayCueClass;                            // 0x18(0x8)
+	char                                                         pad0x8_Q9QXD[0x8];                                 // 0x20(0x8)
 };
 
 
-// Size 0x4
-struct GameplayAbilitySpecHandle
+// Size 0x8
+struct SetByCallerFloat
 {
 public:
-	int                                                          Handle;                                            // 0x0(0x4)
+	struct FName                                                 DataName;                                          // 0x0(0x8)
 };
 
 
@@ -60,15 +107,17 @@ public:
 struct ActiveGameplayEffectQuery
 {
 public:
-	char                                                         pad0x50_7ABW2[0x50];                               // 0x0(0x50)
+	char                                                         pad0x50_HKTB3[0x50];                               // 0x0(0x50)
 };
 
 
-// Size 0x4
-struct ActiveGameplayEffectHandle
+// Size 0xc
+struct AbilityTriggerData
 {
 public:
-	int                                                          Handle;                                            // 0x0(0x4)
+	struct GameplayTag                                           TriggerTag;                                        // 0x0(0x8)
+	char                                                         TriggerSource;                                     // 0x8(0x1)
+	char                                                         pad0x3_79BPE[0x3];                                 // 0x9(0x3)
 };
 
 
@@ -81,26 +130,52 @@ public:
 };
 
 
-// Size 0x8
-struct GameplayAbilityTargetData
+// Size 0x10
+struct GameplayAbilityTargetDataHandle
 {
 public:
-	char                                                         pad0x8_TLZCN[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x10_1TLNA[0x10];                               // 0x0(0x10)
 };
 
 
-// Size 0x70
-struct GameplayAbilityTargetingLocationInfo
+// Size 0x88
+struct GameplayEffectCustomExecutionParameters
 {
 public:
-	char                                                         pad0x10_0PSI0[0x10];                               // 0x0(0x10)
-	char                                                         LocationType;                                      // 0x10(0x1)
-	char                                                         pad0xf_13L3Z[0xf];                                 // 0x11(0xf)
-	struct Transform                                             LiteralTransform;                                  // 0x20(0x30)
-	class Actor*                                                 SourceActor;                                       // 0x50(0x8)
-	class MeshComponent*                                         SourceComponent;                                   // 0x58(0x8)
-	class GameplayAbility*                                       SourceAbility;                                     // 0x60(0x8)
-	struct FName                                                 SourceSocketName;                                  // 0x68(0x8)
+	char                                                         pad0x88_DTF6R[0x88];                               // 0x0(0x88)
+};
+
+
+// Size 0x88
+struct GameplayAbilityTargetData_SingleTargetHit
+{
+public:
+	char                                                         pad0x8_E0QJY[0x8];                                 // 0x0(0x8)
+	struct HitResult                                             HitResult;                                         // 0x8(0x80)
+};
+
+
+// Size 0x18
+struct GameplayTargetDataFilterHandle
+{
+public:
+	char                                                         pad0x18_ATPET[0x18];                               // 0x0(0x18)
+};
+
+
+// Size 0x4
+struct ModifierSpec
+{
+public:
+	float                                                        EvaluatedMagnitude;                                // 0x0(0x4)
+};
+
+
+// Size 0x8
+struct GameplayAttribute
+{
+public:
+	class Property*                                              Attribute;                                         // 0x0(0x8)
 };
 
 
@@ -108,44 +183,7 @@ public:
 struct GlobalCurveDataOverride
 {
 public:
-	char                                                         pad0x10_JKGWC[0x10];                               // 0x0(0x10)
-};
-
-
-// Size 0x60
-struct GameplayEffectContext
-{
-public:
-	char                                                         pad0x28_GQVGU[0x28];                               // 0x0(0x28)
-	TArray<uintptr_t>                                            Actors;                                            // 0x28(0x10)
-	char                                                         pad0x18_AV3WF[0x18];                               // 0x38(0x18)
-	struct Vector                                                WorldOrigin;                                       // 0x50(0xc)
-	bool                                                         bHasWorldOrigin;                                   // 0x5c(0x1)
-	char                                                         pad0x3_C6YJ5[0x3];                                 // 0x5d(0x3)
-};
-
-
-// Size 0x28
-struct AttributeMetaData
-{
-public:
-	float                                                        BaseValue;                                         // 0x0(0x4)
-	float                                                        MinValue;                                          // 0x4(0x4)
-	float                                                        MaxValue;                                          // 0x8(0x4)
-	char                                                         pad0x4_8UEMS[0x4];                                 // 0xc(0x4)
-	struct FString                                               DerivedAttributeInfo;                              // 0x10(0x10)
-	bool                                                         bCanStack;                                         // 0x20(0x1)
-	char                                                         pad0x7_MBTTL[0x7];                                 // 0x21(0x7)
-};
-
-
-// Size 0xc
-struct AbilityTriggerData
-{
-public:
-	struct GameplayTag                                           TriggerTag;                                        // 0x0(0x8)
-	char                                                         TriggerSource;                                     // 0x8(0x1)
-	char                                                         pad0x3_AKKPR[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x10_U8MY4[0x10];                               // 0x0(0x10)
 };
 
 
@@ -153,55 +191,7 @@ public:
 struct GameplayAbilityActorInfo
 {
 public:
-	char                                                         pad0x38_AHR0I[0x38];                               // 0x0(0x38)
-};
-
-
-// Size 0x10
-struct GameplayTagReponsePair
-{
-public:
-	struct GameplayTag                                           Tag;                                               // 0x0(0x8)
-	class UClass*                                                ResponseGameplayEffect;                            // 0x8(0x8)
-};
-
-
-// Size 0xa8
-struct TagContainerAggregator
-{
-public:
-	struct GameplayTagContainer                                  CapturedActorTags;                                 // 0x0(0x28)
-	struct GameplayTagContainer                                  CapturedSpecTags;                                  // 0x28(0x28)
-	struct GameplayTagContainer                                  ScopedTags;                                        // 0x50(0x28)
-	char                                                         pad0x30_QD225[0x30];                               // 0x78(0x30)
-};
-
-
-// Size 0x20
-struct GameplayEffectSpecHandle
-{
-public:
-	char                                                         pad0x20_5YYEO[0x20];                               // 0x0(0x20)
-};
-
-
-// Size 0x20
-struct GameplayEffectContextHandle
-{
-public:
-	char                                                         pad0x20_3H7VA[0x20];                               // 0x0(0x20)
-};
-
-
-// Size 0x18
-struct PredictionKey
-{
-public:
-	char                                                         pad0x8_BAIPH[0x8];                                 // 0x0(0x8)
-	class PackageMap*                                            PredictiveConnection;                              // 0x8(0x8)
-	bool                                                         bIsStale;                                          // 0x10(0x1)
-	bool                                                         bIsServerInitiated;                                // 0x11(0x1)
-	char                                                         pad0x6_4OOQU[0x6];                                 // 0x12(0x6)
+	char                                                         pad0x38_08FC1[0x38];                               // 0x0(0x38)
 };
 
 
@@ -214,79 +204,89 @@ public:
 };
 
 
-// Size 0x8
-struct GameplayAttribute
+// Size 0x4
+struct ActiveGameplayEffectHandle
 {
 public:
-	class Property*                                              Attribute;                                         // 0x0(0x8)
-};
-
-
-// Size 0x28
-struct GameplayTargetDataFilter
-{
-public:
-	char                                                         pad0x8_QWZDG[0x8];                                 // 0x0(0x8)
-	class Actor*                                                 SelfActor;                                         // 0x8(0x8)
-	char                                                         SelfFilter;                                        // 0x10(0x1)
-	char                                                         pad0x7_HC9OD[0x7];                                 // 0x11(0x7)
-	class UClass*                                                RequiredActorClass;                                // 0x18(0x8)
-	bool                                                         bReverseFilter;                                    // 0x20(0x1)
-	char                                                         pad0x7_Z9Q4C[0x7];                                 // 0x21(0x7)
+	int                                                          Handle;                                            // 0x0(0x4)
 };
 
 
 // Size 0x10
-struct GameplayAbilityTargetDataHandle
+struct GameplayTagReponsePair
 {
 public:
-	char                                                         pad0x10_O44F2[0x10];                               // 0x0(0x10)
-};
-
-
-// Size 0x4
-struct ModifierSpec
-{
-public:
-	float                                                        EvaluatedMagnitude;                                // 0x0(0x4)
-};
-
-
-// Size 0xc
-struct WorldReticleParameters
-{
-public:
-	struct Vector                                                AOEScale;                                          // 0x0(0xc)
-};
-
-
-// Size 0x8
-struct SetByCallerFloat
-{
-public:
-	struct FName                                                 DataName;                                          // 0x0(0x8)
-};
-
-
-// Size 0x28
-struct GameplayCueNotifyData
-{
-public:
-	struct GameplayTag                                           GameplayCueTag;                                    // 0x0(0x8)
-	struct StringAssetReference                                  GameplayCueNotifyObj;                              // 0x8(0x10)
-	class UClass*                                                LoadedGameplayCueClass;                            // 0x18(0x8)
-	char                                                         pad0x8_Z9GMB[0x8];                                 // 0x20(0x8)
+	struct GameplayTag                                           Tag;                                               // 0x0(0x8)
+	class UClass*                                                ResponseGameplayEffect;                            // 0x8(0x8)
 };
 
 
 // Size 0x20
-struct ScalableFloat
+struct GameplayEffectContextHandle
 {
 public:
-	float                                                        Value;                                             // 0x0(0x4)
-	char                                                         pad0x4_DLBW0[0x4];                                 // 0x4(0x4)
-	struct CurveTableRowHandle                                   Curve;                                             // 0x8(0x10)
-	char                                                         pad0x8_GSQBG[0x8];                                 // 0x18(0x8)
+	char                                                         pad0x20_13V23[0x20];                               // 0x0(0x20)
+};
+
+
+// Size 0x70
+struct GameplayAbilityTargetingLocationInfo
+{
+public:
+	char                                                         pad0x10_C7PGP[0x10];                               // 0x0(0x10)
+	char                                                         LocationType;                                      // 0x10(0x1)
+	char                                                         pad0xf_WJIBR[0xf];                                 // 0x11(0xf)
+	struct Transform                                             LiteralTransform;                                  // 0x20(0x30)
+	class Actor*                                                 SourceActor;                                       // 0x50(0x8)
+	class MeshComponent*                                         SourceComponent;                                   // 0x58(0x8)
+	class GameplayAbility*                                       SourceAbility;                                     // 0x60(0x8)
+	struct FName                                                 SourceSocketName;                                  // 0x68(0x8)
+};
+
+
+// Size 0x60
+struct GameplayEffectContext
+{
+public:
+	char                                                         pad0x28_WEBUN[0x28];                               // 0x0(0x28)
+	TArray<uintptr_t>                                            Actors;                                            // 0x28(0x10)
+	char                                                         pad0x18_DTM6C[0x18];                               // 0x38(0x18)
+	struct Vector                                                WorldOrigin;                                       // 0x50(0xc)
+	bool                                                         bHasWorldOrigin;                                   // 0x5c(0x1)
+	char                                                         pad0x3_5I445[0x3];                                 // 0x5d(0x3)
+};
+
+
+// Size 0x28
+struct AttributeMetaData
+{
+public:
+	float                                                        BaseValue;                                         // 0x0(0x4)
+	float                                                        MinValue;                                          // 0x4(0x4)
+	float                                                        MaxValue;                                          // 0x8(0x4)
+	char                                                         pad0x4_OLOGU[0x4];                                 // 0xc(0x4)
+	struct FString                                               DerivedAttributeInfo;                              // 0x10(0x10)
+	bool                                                         bCanStack;                                         // 0x20(0x1)
+	char                                                         pad0x7_4RZVI[0x7];                                 // 0x21(0x7)
+};
+
+
+// Size 0xa8
+struct TagContainerAggregator
+{
+public:
+	struct GameplayTagContainer                                  CapturedActorTags;                                 // 0x0(0x28)
+	struct GameplayTagContainer                                  CapturedSpecTags;                                  // 0x28(0x28)
+	struct GameplayTagContainer                                  ScopedTags;                                        // 0x50(0x28)
+	char                                                         pad0x30_DGRYZ[0x30];                               // 0x78(0x30)
+};
+
+
+// Size 0x4
+struct GameplayAbilitySpecHandle
+{
+public:
+	int                                                          Handle;                                            // 0x0(0x4)
 };
 
 
@@ -296,110 +296,7 @@ struct GameplayEffectModifiedAttribute
 public:
 	struct GameplayAttribute                                     Attribute;                                         // 0x0(0x8)
 	float                                                        TotalMagnitude;                                    // 0x8(0x4)
-	char                                                         pad0x4_C2CA4[0x4];                                 // 0xc(0x4)
-};
-
-
-// Size 0x10
-struct GameplayEffectAttributeCaptureDefinition
-{
-public:
-	struct GameplayAttribute                                     AttributeToCapture;                                // 0x0(0x8)
-	char                                                         AttributeSource;                                   // 0x8(0x1)
-	bool                                                         bSnapshot;                                         // 0x9(0x1)
-	char                                                         pad0x6_6K5J6[0x6];                                 // 0xa(0x6)
-};
-
-
-// Size 0x68
-struct CustomCalculationBasedFloat
-{
-public:
-	class UClass*                                                CalculationClassMagnitude;                         // 0x0(0x8)
-	struct ScalableFloat                                         Coefficient;                                       // 0x8(0x20)
-	struct ScalableFloat                                         PreMultiplyAdditiveValue;                          // 0x28(0x20)
-	struct ScalableFloat                                         PostMultiplyAdditiveValue;                         // 0x48(0x20)
-};
-
-
-// Size 0xa0
-struct GameplayEventData
-{
-public:
-	struct GameplayTag                                           EventTag;                                          // 0x0(0x8)
-	class Actor*                                                 Instigator;                                        // 0x8(0x8)
-	class Actor*                                                 Target;                                            // 0x10(0x8)
-	class Object*                                                OptionalObject;                                    // 0x18(0x8)
-	class Object*                                                OptionalObject2;                                   // 0x20(0x8)
-	struct GameplayEffectContextHandle                           ContextHandle;                                     // 0x28(0x20)
-	struct GameplayTagContainer                                  InstigatorTags;                                    // 0x48(0x28)
-	struct GameplayTagContainer                                  TargetTags;                                        // 0x70(0x28)
-	float                                                        EventMagnitude;                                    // 0x98(0x4)
-	char                                                         pad0x4_CFWR4[0x4];                                 // 0x9c(0x4)
-};
-
-
-// Size 0xd0
-struct GameplayEffectQuery
-{
-public:
-	char                                                         pad0x18_AJO0T[0x18];                               // 0x0(0x18)
-	struct GameplayTagQuery                                      OwningTagQuery;                                    // 0x18(0x48)
-	struct GameplayTagQuery                                      EffectTagQuery;                                    // 0x60(0x48)
-	struct GameplayAttribute                                     ModifyingAttribute;                                // 0xa8(0x8)
-	class Object*                                                EffectSource;                                      // 0xb0(0x8)
-	class GameplayEffect*                                        EffectDefinition;                                  // 0xb8(0x8)
-	char                                                         pad0x10_W1OT7[0x10];                               // 0xc0(0x10)
-};
-
-
-// Size 0x28
-struct GameplayAbilitySpecDef
-{
-public:
-	class UClass*                                                Ability;                                           // 0x0(0x8)
-	int                                                          Level;                                             // 0x8(0x4)
-	int                                                          InputID;                                           // 0xc(0x4)
-	char                                                         RemovalPolicy;                                     // 0x10(0x1)
-	char                                                         pad0x7_US62U[0x7];                                 // 0x11(0x7)
-	class Object*                                                SourceObject;                                      // 0x18(0x8)
-	struct GameplayAbilitySpecHandle                             AssignedHandle;                                    // 0x20(0x4)
-	char                                                         pad0x4_3RI9B[0x4];                                 // 0x24(0x4)
-};
-
-
-// Size 0x20
-struct GameplayTagResponseTableEntry
-{
-public:
-	struct GameplayTagReponsePair                                Positive;                                          // 0x0(0x10)
-	struct GameplayTagReponsePair                                Negative;                                          // 0x10(0x10)
-};
-
-
-// Size 0x30
-struct GameplayAbilityLocalAnimMontage
-{
-public:
-	class AnimMontage*                                           AnimMontage;                                       // 0x0(0x8)
-	bool                                                         PlayBit;                                           // 0x8(0x1)
-	char                                                         pad0x7_XKM77[0x7];                                 // 0x9(0x7)
-	struct PredictionKey                                         PredictionKey;                                     // 0x10(0x18)
-	class GameplayAbility*                                       AnimatingAbility;                                  // 0x28(0x8)
-};
-
-
-// Size 0x88
-struct GameplayCueParameters
-{
-public:
-	float                                                        NormalizedMagnitude;                               // 0x0(0x4)
-	float                                                        RawMagnitude;                                      // 0x4(0x4)
-	struct GameplayEffectContextHandle                           EffectContext;                                     // 0x8(0x20)
-	struct FName                                                 MatchedTagName;                                    // 0x28(0x8)
-	struct GameplayTag                                           OriginalTag;                                       // 0x30(0x8)
-	struct GameplayTagContainer                                  AggregatedSourceTags;                              // 0x38(0x28)
-	struct GameplayTagContainer                                  AggregatedTargetTags;                              // 0x60(0x28)
+	char                                                         pad0x4_XO9D9[0x4];                                 // 0xc(0x4)
 };
 
 
@@ -409,21 +306,11 @@ struct GameplayModifierEvaluatedData
 public:
 	struct GameplayAttribute                                     Attribute;                                         // 0x0(0x8)
 	char                                                         ModifierOp;                                        // 0x8(0x1)
-	char                                                         pad0x3_11X3P[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_4OQAZ[0x3];                                 // 0x9(0x3)
 	float                                                        Magnitude;                                         // 0xc(0x4)
 	struct ActiveGameplayEffectHandle                            Handle;                                            // 0x10(0x4)
 	bool                                                         IsValid;                                           // 0x14(0x1)
-	char                                                         pad0x3_CYXEC[0x3];                                 // 0x15(0x3)
-};
-
-
-// Size 0xf0
-struct GameplayAbilityTargetData_LocationInfo
-{
-public:
-	char                                                         pad0x10_7UO6Q[0x10];                               // 0x0(0x10)
-	struct GameplayAbilityTargetingLocationInfo                  SourceLocation;                                    // 0x10(0x70)
-	struct GameplayAbilityTargetingLocationInfo                  TargetLocation;                                    // 0x80(0x70)
+	char                                                         pad0x3_JY5L5[0x3];                                 // 0x15(0x3)
 };
 
 
@@ -433,6 +320,20 @@ struct GameplayAbilitySpecHandleAndPredictionKey
 public:
 	struct GameplayAbilitySpecHandle                             AbilityHandle;                                     // 0x0(0x4)
 	int                                                          PredictionKeyAtCreation;                           // 0x4(0x4)
+};
+
+
+// Size 0xd0
+struct GameplayEffectQuery
+{
+public:
+	char                                                         pad0x18_WOM5T[0x18];                               // 0x0(0x18)
+	struct GameplayTagQuery                                      OwningTagQuery;                                    // 0x18(0x48)
+	struct GameplayTagQuery                                      EffectTagQuery;                                    // 0x60(0x48)
+	struct GameplayAttribute                                     ModifyingAttribute;                                // 0xa8(0x8)
+	class Object*                                                EffectSource;                                      // 0xb0(0x8)
+	class GameplayEffect*                                        EffectDefinition;                                  // 0xb8(0x8)
+	char                                                         pad0x10_68B1V[0x10];                               // 0xc0(0x10)
 };
 
 
@@ -451,11 +352,22 @@ public:
 struct ActiveGameplayCue
 {
 public:
-	char                                                         pad0x8_E9WAL[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_8WWNP[0x8];                                 // 0x0(0x8)
 	struct GameplayTag                                           GameplayCueTag;                                    // 0x8(0x8)
 	struct PredictionKey                                         PredictionKey;                                     // 0x10(0x18)
 	bool                                                         bPredictivelyRemoved;                              // 0x28(0x1)
-	char                                                         pad0x7_3TS3U[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_EKMRK[0x7];                                 // 0x29(0x7)
+};
+
+
+// Size 0x20
+struct GameplayAbilityActivationInfo
+{
+public:
+	char                                                         ActivationMode;                                    // 0x0(0x1)
+	bool                                                         bCanBeEndedByOtherInstance;                        // 0x1(0x1)
+	char                                                         pad0x6_FZIH9[0x6];                                 // 0x2(0x6)
+	struct PredictionKey                                         PredictionKeyWhenActivated;                        // 0x8(0x18)
 };
 
 
@@ -470,19 +382,20 @@ public:
 	char                                                         NextSectionID;                                     // 0x14(0x1)
 	bool                                                         IsStopped;                                         // 0x15(0x1)
 	bool                                                         ForcePlayBit;                                      // 0x15(0x1)
-	char                                                         pad0x2_KK294[0x2];                                 // 0x16(0x2)
+	char                                                         pad0x2_N6KUZ[0x2];                                 // 0x16(0x2)
 	struct PredictionKey                                         PredictionKey;                                     // 0x18(0x18)
 };
 
 
-// Size 0x20
-struct GameplayAbilityActivationInfo
+// Size 0x30
+struct GameplayAbilityLocalAnimMontage
 {
 public:
-	char                                                         ActivationMode;                                    // 0x0(0x1)
-	bool                                                         bCanBeEndedByOtherInstance;                        // 0x1(0x1)
-	char                                                         pad0x6_N5Y1Q[0x6];                                 // 0x2(0x6)
-	struct PredictionKey                                         PredictionKeyWhenActivated;                        // 0x8(0x18)
+	class AnimMontage*                                           AnimMontage;                                       // 0x0(0x8)
+	bool                                                         PlayBit;                                           // 0x8(0x1)
+	char                                                         pad0x7_5MI64[0x7];                                 // 0x9(0x7)
+	struct PredictionKey                                         PredictionKey;                                     // 0x10(0x18)
+	class GameplayAbility*                                       AnimatingAbility;                                  // 0x28(0x8)
 };
 
 
@@ -490,68 +403,108 @@ public:
 struct GameplayAbilityTargetData_ActorArray
 {
 public:
-	char                                                         pad0x10_QLNO0[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_HZYYZ[0x10];                               // 0x0(0x10)
 	struct GameplayAbilityTargetingLocationInfo                  SourceLocation;                                    // 0x10(0x70)
 	TArray<uintptr_t>                                            TargetActorArray;                                  // 0x80(0x10)
 };
 
 
-// Size 0xd8
-struct AttributeBasedFloat
+// Size 0x20
+struct GameplayTagResponseTableEntry
 {
 public:
-	struct ScalableFloat                                         Coefficient;                                       // 0x0(0x20)
-	struct ScalableFloat                                         PreMultiplyAdditiveValue;                          // 0x20(0x20)
-	struct ScalableFloat                                         PostMultiplyAdditiveValue;                         // 0x40(0x20)
-	struct GameplayEffectAttributeCaptureDefinition              BackingAttribute;                                  // 0x60(0x10)
-	struct CurveTableRowHandle                                   AttributeCurve;                                    // 0x70(0x10)
-	char                                                         AttributeCalculationType;                          // 0x80(0x1)
-	char                                                         pad0x7_59G6B[0x7];                                 // 0x81(0x7)
-	struct GameplayTagContainer                                  SourceTagFilter;                                   // 0x88(0x28)
-	struct GameplayTagContainer                                  TargetTagFilter;                                   // 0xb0(0x28)
+	struct GameplayTagReponsePair                                Positive;                                          // 0x0(0x10)
+	struct GameplayTagReponsePair                                Negative;                                          // 0x10(0x10)
+};
+
+
+// Size 0xa0
+struct GameplayEventData
+{
+public:
+	struct GameplayTag                                           EventTag;                                          // 0x0(0x8)
+	class Actor*                                                 Instigator;                                        // 0x8(0x8)
+	class Actor*                                                 Target;                                            // 0x10(0x8)
+	class Object*                                                OptionalObject;                                    // 0x18(0x8)
+	class Object*                                                OptionalObject2;                                   // 0x20(0x8)
+	struct GameplayEffectContextHandle                           ContextHandle;                                     // 0x28(0x20)
+	struct GameplayTagContainer                                  InstigatorTags;                                    // 0x48(0x28)
+	struct GameplayTagContainer                                  TargetTags;                                        // 0x70(0x28)
+	float                                                        EventMagnitude;                                    // 0x98(0x4)
+	char                                                         pad0x4_T2ZDY[0x4];                                 // 0x9c(0x4)
+};
+
+
+// Size 0x10
+struct GameplayEffectAttributeCaptureDefinition
+{
+public:
+	struct GameplayAttribute                                     AttributeToCapture;                                // 0x0(0x8)
+	char                                                         AttributeSource;                                   // 0x8(0x1)
+	bool                                                         bSnapshot;                                         // 0x9(0x1)
+	char                                                         pad0x6_FGT2I[0x6];                                 // 0xa(0x6)
+};
+
+
+// Size 0xf0
+struct GameplayAbilityTargetData_LocationInfo
+{
+public:
+	char                                                         pad0x10_A24ZW[0x10];                               // 0x0(0x10)
+	struct GameplayAbilityTargetingLocationInfo                  SourceLocation;                                    // 0x10(0x70)
+	struct GameplayAbilityTargetingLocationInfo                  TargetLocation;                                    // 0x80(0x70)
+};
+
+
+// Size 0x88
+struct GameplayCueParameters
+{
+public:
+	float                                                        NormalizedMagnitude;                               // 0x0(0x4)
+	float                                                        RawMagnitude;                                      // 0x4(0x4)
+	struct GameplayEffectContextHandle                           EffectContext;                                     // 0x8(0x20)
+	struct FName                                                 MatchedTagName;                                    // 0x28(0x8)
+	struct GameplayTag                                           OriginalTag;                                       // 0x30(0x8)
+	struct GameplayTagContainer                                  AggregatedSourceTags;                              // 0x38(0x28)
+	struct GameplayTagContainer                                  AggregatedTargetTags;                              // 0x60(0x28)
+};
+
+
+// Size 0x68
+struct CustomCalculationBasedFloat
+{
+public:
+	class UClass*                                                CalculationClassMagnitude;                         // 0x0(0x8)
+	struct ScalableFloat                                         Coefficient;                                       // 0x8(0x20)
+	struct ScalableFloat                                         PreMultiplyAdditiveValue;                          // 0x28(0x20)
+	struct ScalableFloat                                         PostMultiplyAdditiveValue;                         // 0x48(0x20)
 };
 
 
 // Size 0x28
-struct GameplayEffectAttributeCaptureSpec
+struct GameplayAbilitySpecDef
 {
 public:
-	struct GameplayEffectAttributeCaptureDefinition              BackingDefinition;                                 // 0x0(0x10)
-	char                                                         pad0x18_N1L8U[0x18];                               // 0x10(0x18)
+	class UClass*                                                Ability;                                           // 0x0(0x8)
+	int                                                          Level;                                             // 0x8(0x4)
+	int                                                          InputID;                                           // 0xc(0x4)
+	char                                                         RemovalPolicy;                                     // 0x10(0x1)
+	char                                                         pad0x7_MQOYC[0x7];                                 // 0x11(0x7)
+	class Object*                                                SourceObject;                                      // 0x18(0x8)
+	struct GameplayAbilitySpecHandle                             AssignedHandle;                                    // 0x20(0x4)
+	char                                                         pad0x4_58OA4[0x4];                                 // 0x24(0x4)
 };
 
 
-// Size 0x78
-struct GameplayAbilitySpec
+// Size 0x18
+struct GameplayEffectCustomExecutionOutput
 {
 public:
-	char                                                         pad0x8_KZLET[0x8];                                 // 0x0(0x8)
-	struct GameplayAbilitySpecHandle                             Handle;                                            // 0x8(0x4)
-	char                                                         pad0x4_65KJU[0x4];                                 // 0xc(0x4)
-	class GameplayAbility*                                       Ability;                                           // 0x10(0x8)
-	int                                                          Level;                                             // 0x18(0x4)
-	int                                                          InputID;                                           // 0x1c(0x4)
-	class Object*                                                SourceObject;                                      // 0x20(0x8)
-	bool                                                         InputPressed;                                      // 0x28(0x1)
-	char                                                         ActiveCount;                                       // 0x29(0x1)
-	bool                                                         RemoveAfterActivation;                             // 0x2a(0x1)
-	char                                                         pad0x5_GIHVI[0x5];                                 // 0x2b(0x5)
-	struct GameplayAbilityActivationInfo                         ActivationInfo;                                    // 0x30(0x20)
-	TArray<class GameplayAbility*>                               NonReplicatedInstances;                            // 0x50(0x10)
-	TArray<class GameplayAbility*>                               ReplicatedInstances;                               // 0x60(0x10)
-	struct ActiveGameplayEffectHandle                            GameplayEffectHandle;                              // 0x70(0x4)
-	bool                                                         PendingRemove;                                     // 0x74(0x1)
-	char                                                         pad0x3_MPHT4[0x3];                                 // 0x75(0x3)
-};
-
-
-// Size 0xc0
-struct ActiveGameplayCueContainer
-{
-public:
-	char                                                         pad0xa8_08CYE[0xa8];                               // 0x0(0xa8)
-	TArray<struct ActiveGameplayCue>                             GameplayCues;                                      // 0xa8(0x10)
-	class AbilitySystemComponent*                                Owner;                                             // 0xb8(0x8)
+	TArray<struct GameplayModifierEvaluatedData>                 OutputModifiers;                                   // 0x0(0x10)
+	bool                                                         bTriggerConditionalGameplayEffects;                // 0x10(0x1)
+	bool                                                         bHandledStackCountManually;                        // 0x10(0x1)
+	bool                                                         bHandledGameplayCuesManually;                      // 0x10(0x1)
+	char                                                         pad0x7_RM123[0x7];                                 // 0x11(0x7)
 };
 
 
@@ -565,32 +518,66 @@ public:
 	struct GameplayTagContainer                                  AggregatedSourceTags;                              // 0x38(0x28)
 	struct GameplayTagContainer                                  AggregatedTargetTags;                              // 0x60(0x28)
 	float                                                        Level;                                             // 0x88(0x4)
-	char                                                         pad0x4_S0268[0x4];                                 // 0x8c(0x4)
+	char                                                         pad0x4_E3WA4[0x4];                                 // 0x8c(0x4)
 };
 
 
-// Size 0x18
-struct GameplayEffectCustomExecutionOutput
+// Size 0xd8
+struct AttributeBasedFloat
 {
 public:
-	TArray<struct GameplayModifierEvaluatedData>                 OutputModifiers;                                   // 0x0(0x10)
-	bool                                                         bTriggerConditionalGameplayEffects;                // 0x10(0x1)
-	bool                                                         bHandledStackCountManually;                        // 0x10(0x1)
-	bool                                                         bHandledGameplayCuesManually;                      // 0x10(0x1)
-	char                                                         pad0x7_PVMQR[0x7];                                 // 0x11(0x7)
+	struct ScalableFloat                                         Coefficient;                                       // 0x0(0x20)
+	struct ScalableFloat                                         PreMultiplyAdditiveValue;                          // 0x20(0x20)
+	struct ScalableFloat                                         PostMultiplyAdditiveValue;                         // 0x40(0x20)
+	struct GameplayEffectAttributeCaptureDefinition              BackingAttribute;                                  // 0x60(0x10)
+	struct CurveTableRowHandle                                   AttributeCurve;                                    // 0x70(0x10)
+	char                                                         AttributeCalculationType;                          // 0x80(0x1)
+	char                                                         pad0x7_6X69H[0x7];                                 // 0x81(0x7)
+	struct GameplayTagContainer                                  SourceTagFilter;                                   // 0x88(0x28)
+	struct GameplayTagContainer                                  TargetTagFilter;                                   // 0xb0(0x28)
 };
 
 
-// Size 0x170
-struct GameplayEffectModifierMagnitude
+// Size 0x28
+struct GameplayEffectAttributeCaptureSpec
 {
 public:
-	char                                                         MagnitudeCalculationType;                          // 0x0(0x1)
-	char                                                         pad0x7_A5HIU[0x7];                                 // 0x1(0x7)
-	struct ScalableFloat                                         ScalableFloatMagnitude;                            // 0x8(0x20)
-	struct AttributeBasedFloat                                   AttributeBasedMagnitude;                           // 0x28(0xd8)
-	struct CustomCalculationBasedFloat                           CustomMagnitude;                                   // 0x100(0x68)
-	struct SetByCallerFloat                                      SetByCallerMagnitude;                              // 0x168(0x8)
+	struct GameplayEffectAttributeCaptureDefinition              BackingDefinition;                                 // 0x0(0x10)
+	char                                                         pad0x18_WC0TP[0x18];                               // 0x10(0x18)
+};
+
+
+// Size 0x78
+struct GameplayAbilitySpec
+{
+public:
+	char                                                         pad0x8_NTP38[0x8];                                 // 0x0(0x8)
+	struct GameplayAbilitySpecHandle                             Handle;                                            // 0x8(0x4)
+	char                                                         pad0x4_N4JVN[0x4];                                 // 0xc(0x4)
+	class GameplayAbility*                                       Ability;                                           // 0x10(0x8)
+	int                                                          Level;                                             // 0x18(0x4)
+	int                                                          InputID;                                           // 0x1c(0x4)
+	class Object*                                                SourceObject;                                      // 0x20(0x8)
+	bool                                                         InputPressed;                                      // 0x28(0x1)
+	char                                                         ActiveCount;                                       // 0x29(0x1)
+	bool                                                         RemoveAfterActivation;                             // 0x2a(0x1)
+	char                                                         pad0x5_WBKH3[0x5];                                 // 0x2b(0x5)
+	struct GameplayAbilityActivationInfo                         ActivationInfo;                                    // 0x30(0x20)
+	TArray<class GameplayAbility*>                               NonReplicatedInstances;                            // 0x50(0x10)
+	TArray<class GameplayAbility*>                               ReplicatedInstances;                               // 0x60(0x10)
+	struct ActiveGameplayEffectHandle                            GameplayEffectHandle;                              // 0x70(0x4)
+	bool                                                         PendingRemove;                                     // 0x74(0x1)
+	char                                                         pad0x3_RMRML[0x3];                                 // 0x75(0x3)
+};
+
+
+// Size 0xc0
+struct ActiveGameplayCueContainer
+{
+public:
+	char                                                         pad0xa8_TCSPV[0xa8];                               // 0x0(0xa8)
+	TArray<struct ActiveGameplayCue>                             GameplayCues;                                      // 0xa8(0x10)
+	class AbilitySystemComponent*                                Owner;                                             // 0xb8(0x8)
 };
 
 
@@ -601,10 +588,33 @@ public:
 	struct GameplayTag                                           GameplayCueTag;                                    // 0x0(0x8)
 	struct PredictionKey                                         PredictionKey;                                     // 0x8(0x18)
 	char                                                         PayloadType;                                       // 0x20(0x1)
-	char                                                         pad0x7_BWJ82[0x7];                                 // 0x21(0x7)
+	char                                                         pad0x7_FX4FF[0x7];                                 // 0x21(0x7)
 	class AbilitySystemComponent*                                OwningComponent;                                   // 0x28(0x8)
 	struct GameplayEffectSpecForRPC                              FromSpec;                                          // 0x30(0x90)
 	struct GameplayCueParameters                                 CueParameters;                                     // 0xc0(0x88)
+};
+
+
+// Size 0x170
+struct GameplayEffectModifierMagnitude
+{
+public:
+	char                                                         MagnitudeCalculationType;                          // 0x0(0x1)
+	char                                                         pad0x7_GXAW1[0x7];                                 // 0x1(0x7)
+	struct ScalableFloat                                         ScalableFloatMagnitude;                            // 0x8(0x20)
+	struct AttributeBasedFloat                                   AttributeBasedMagnitude;                           // 0x28(0xd8)
+	struct CustomCalculationBasedFloat                           CustomMagnitude;                                   // 0x100(0x68)
+	struct SetByCallerFloat                                      SetByCallerMagnitude;                              // 0x168(0x8)
+};
+
+
+// Size 0xc0
+struct GameplayAbilitySpecContainer
+{
+public:
+	char                                                         pad0xa8_CLJEH[0xa8];                               // 0x0(0xa8)
+	TArray<struct GameplayAbilitySpec>                           Items;                                             // 0xa8(0x10)
+	char                                                         pad0x8_KKTTG[0x8];                                 // 0xb8(0x8)
 };
 
 
@@ -615,17 +625,37 @@ public:
 	TArray<struct GameplayEffectAttributeCaptureSpec>            SourceAttributes;                                  // 0x0(0x10)
 	TArray<struct GameplayEffectAttributeCaptureSpec>            TargetAttributes;                                  // 0x10(0x10)
 	bool                                                         bHasNonSnapshottedAttributes;                      // 0x20(0x1)
-	char                                                         pad0x7_3B5UR[0x7];                                 // 0x21(0x7)
+	char                                                         pad0x7_28ERA[0x7];                                 // 0x21(0x7)
 };
 
 
-// Size 0xc0
-struct GameplayAbilitySpecContainer
+// Size 0x2a0
+struct GameplayEffectSpec
 {
 public:
-	char                                                         pad0xa8_LCI2G[0xa8];                               // 0x0(0xa8)
-	TArray<struct GameplayAbilitySpec>                           Items;                                             // 0xa8(0x10)
-	char                                                         pad0x8_I8GJ4[0x8];                                 // 0xb8(0x8)
+	class GameplayEffect*                                        Def;                                               // 0x0(0x8)
+	TArray<struct GameplayEffectModifiedAttribute>               ModifiedAttributes;                                // 0x8(0x10)
+	struct GameplayEffectAttributeCaptureSpecContainer           CapturedRelevantAttributes;                        // 0x18(0x28)
+	char                                                         pad0x10_KJ831[0x10];                               // 0x40(0x10)
+	float                                                        Duration;                                          // 0x50(0x4)
+	float                                                        Period;                                            // 0x54(0x4)
+	float                                                        ChanceToApplyToTarget;                             // 0x58(0x4)
+	char                                                         pad0x4_NNZWE[0x4];                                 // 0x5c(0x4)
+	struct TagContainerAggregator                                CapturedSourceTags;                                // 0x60(0xa8)
+	struct TagContainerAggregator                                CapturedTargetTags;                                // 0x108(0xa8)
+	struct GameplayTagContainer                                  DynamicGrantedTags;                                // 0x1b0(0x28)
+	struct GameplayTagContainer                                  DynamicAssetTags;                                  // 0x1d8(0x28)
+	TArray<struct ModifierSpec>                                  Modifiers;                                         // 0x200(0x10)
+	int                                                          StackCount;                                        // 0x210(0x4)
+	bool                                                         bCompletedSourceAttributeCapture;                  // 0x214(0x1)
+	bool                                                         bCompletedTargetAttributeCapture;                  // 0x214(0x1)
+	bool                                                         bDurationLocked;                                   // 0x214(0x1)
+	char                                                         pad0x3_5K5N9[0x3];                                 // 0x215(0x3)
+	TArray<struct GameplayAbilitySpecDef>                        GrantedAbilitySpecs;                               // 0x218(0x10)
+	char                                                         pad0x50_3ATCJ[0x50];                               // 0x228(0x50)
+	struct GameplayEffectContextHandle                           EffectContext;                                     // 0x278(0x20)
+	float                                                        Level;                                             // 0x298(0x4)
+	char                                                         pad0x4_W3W90[0x4];                                 // 0x29c(0x4)
 };
 
 
@@ -635,7 +665,7 @@ struct GameplayModifierInfo
 public:
 	struct GameplayAttribute                                     Attribute;                                         // 0x0(0x8)
 	char                                                         ModifierOp;                                        // 0x8(0x1)
-	char                                                         pad0x7_RCOC0[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_F0N2I[0x7];                                 // 0x9(0x7)
 	struct ScalableFloat                                         Magnitude;                                         // 0x10(0x20)
 	struct GameplayEffectModifierMagnitude                       ModifierMagnitude;                                 // 0x30(0x170)
 	struct GameplayTagRequirements                               SourceTags;                                        // 0x1a0(0x50)
@@ -649,55 +679,10 @@ struct GameplayEffectExecutionScopedModifierInfo
 public:
 	struct GameplayEffectAttributeCaptureDefinition              CapturedAttribute;                                 // 0x0(0x10)
 	char                                                         ModifierOp;                                        // 0x10(0x1)
-	char                                                         pad0x7_6AT03[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_9A1EE[0x7];                                 // 0x11(0x7)
 	struct GameplayEffectModifierMagnitude                       ModifierMagnitude;                                 // 0x18(0x170)
 	struct GameplayTagRequirements                               SourceTags;                                        // 0x188(0x50)
 	struct GameplayTagRequirements                               TargetTags;                                        // 0x1d8(0x50)
-};
-
-
-// Size 0x2a0
-struct GameplayEffectSpec
-{
-public:
-	class GameplayEffect*                                        Def;                                               // 0x0(0x8)
-	TArray<struct GameplayEffectModifiedAttribute>               ModifiedAttributes;                                // 0x8(0x10)
-	struct GameplayEffectAttributeCaptureSpecContainer           CapturedRelevantAttributes;                        // 0x18(0x28)
-	char                                                         pad0x10_YIBQC[0x10];                               // 0x40(0x10)
-	float                                                        Duration;                                          // 0x50(0x4)
-	float                                                        Period;                                            // 0x54(0x4)
-	float                                                        ChanceToApplyToTarget;                             // 0x58(0x4)
-	char                                                         pad0x4_550OE[0x4];                                 // 0x5c(0x4)
-	struct TagContainerAggregator                                CapturedSourceTags;                                // 0x60(0xa8)
-	struct TagContainerAggregator                                CapturedTargetTags;                                // 0x108(0xa8)
-	struct GameplayTagContainer                                  DynamicGrantedTags;                                // 0x1b0(0x28)
-	struct GameplayTagContainer                                  DynamicAssetTags;                                  // 0x1d8(0x28)
-	TArray<struct ModifierSpec>                                  Modifiers;                                         // 0x200(0x10)
-	int                                                          StackCount;                                        // 0x210(0x4)
-	bool                                                         bCompletedSourceAttributeCapture;                  // 0x214(0x1)
-	bool                                                         bCompletedTargetAttributeCapture;                  // 0x214(0x1)
-	bool                                                         bDurationLocked;                                   // 0x214(0x1)
-	char                                                         pad0x3_4JD6Y[0x3];                                 // 0x215(0x3)
-	TArray<struct GameplayAbilitySpecDef>                        GrantedAbilitySpecs;                               // 0x218(0x10)
-	char                                                         pad0x50_CE60L[0x50];                               // 0x228(0x50)
-	struct GameplayEffectContextHandle                           EffectContext;                                     // 0x278(0x20)
-	float                                                        Level;                                             // 0x298(0x4)
-	char                                                         pad0x4_5E25N[0x4];                                 // 0x29c(0x4)
-};
-
-
-// Size 0x300
-struct ActiveGameplayEffect
-{
-public:
-	char                                                         pad0x10_01R8U[0x10];                               // 0x0(0x10)
-	struct GameplayEffectSpec                                    Spec;                                              // 0x10(0x2a0)
-	struct PredictionKey                                         PredictionKey;                                     // 0x2b0(0x18)
-	float                                                        StartServerWorldTime;                              // 0x2c8(0x4)
-	float                                                        CachedStartServerWorldTime;                        // 0x2cc(0x4)
-	float                                                        StartWorldTime;                                    // 0x2d0(0x4)
-	bool                                                         bIsInhibited;                                      // 0x2d4(0x1)
-	char                                                         pad0x2b_3I4W2[0x2b];                               // 0x2d5(0x2b)
 };
 
 
@@ -712,13 +697,28 @@ public:
 };
 
 
+// Size 0x300
+struct ActiveGameplayEffect
+{
+public:
+	char                                                         pad0x10_562I4[0x10];                               // 0x0(0x10)
+	struct GameplayEffectSpec                                    Spec;                                              // 0x10(0x2a0)
+	struct PredictionKey                                         PredictionKey;                                     // 0x2b0(0x18)
+	float                                                        StartServerWorldTime;                              // 0x2c8(0x4)
+	float                                                        CachedStartServerWorldTime;                        // 0x2cc(0x4)
+	float                                                        StartWorldTime;                                    // 0x2d0(0x4)
+	bool                                                         bIsInhibited;                                      // 0x2d4(0x1)
+	char                                                         pad0x2b_YTTJL[0x2b];                               // 0x2d5(0x2b)
+};
+
+
 // Size 0x368
 struct ActiveGameplayEffectsContainer
 {
 public:
-	char                                                         pad0xc8_ZR785[0xc8];                               // 0x0(0xc8)
+	char                                                         pad0xc8_VFTTC[0xc8];                               // 0x0(0xc8)
 	TArray<struct ActiveGameplayEffect>                          GameplayEffects_Internal;                          // 0xc8(0x10)
-	char                                                         pad0x290_8GCXW[0x290];                             // 0xd8(0x290)
+	char                                                         pad0x290_8KTZG[0x290];                             // 0xd8(0x290)
 };
 
 

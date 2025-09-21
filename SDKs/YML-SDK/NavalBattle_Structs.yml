@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 NavalBattleShipData:
   Attributes:
-  - Name: pad0x2c_PTE38[0x2c]
+  - Name: pad0x2c_MA1VW[0x2c]
     Offset: '0x0'
     Size: '0x2c'
     Type: char

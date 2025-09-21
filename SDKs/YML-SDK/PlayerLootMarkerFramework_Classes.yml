@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 PlayerLootMarkerService:
   Attributes:
-  - Name: pad0x8_6DKL3[0x8]
+  - Name: pad0x8_PK04P[0x8]
     Offset: '0x3a0'
     Size: '0x8'
     Type: char
@@ -10,7 +10,7 @@ PlayerLootMarkerService:
     Offset: '0x3a8'
     Size: '0x8'
     Type: class PlayerLootMarkerServiceParams*
-  - Name: pad0x20_KZJOO[0x20]
+  - Name: pad0x20_SKZHL[0x20]
     Offset: '0x3b0'
     Size: '0x20'
     Type: char
@@ -18,7 +18,7 @@ PlayerLootMarkerService:
     Offset: '0x3d0'
     Size: '0x10'
     Type: TArray<uintptr_t>
-  - Name: pad0x118_0TQYB[0x118]
+  - Name: pad0x118_1GC6L[0x118]
     Offset: '0x3e0'
     Size: '0x118'
     Type: char
@@ -26,7 +26,7 @@ PlayerLootMarkerService:
     Offset: '0x4f8'
     Size: '0x10'
     Type: TArray<struct PlayerLootMarkerWorldEdgeBatchData>
-  - Name: pad0x10_7NQD7[0x10]
+  - Name: pad0x10_0D8ZN[0x10]
     Offset: '0x508'
     Size: '0x10'
     Type: char
@@ -50,7 +50,7 @@ PlayerLootMarkerServiceParams:
     Offset: '0x30'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_7W8DK[0x4]
+  - Name: pad0x4_F58DI[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char

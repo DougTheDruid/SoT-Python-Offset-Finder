@@ -1,62 +1,15 @@
 {
-  "DebugMenuDataAssetEntry": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "MenuPath",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DisplayName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "ConsoleCommand",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "CloseMenuWhenExecuted",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "AvailableInShippingBuilds",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x31"
-      },
-      {
-        "Name": "AddToCommonlyUsedMenu",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x32"
-      },
-      {
-        "Name": "pad0x5_HM0EU[0x5]",
-        "Type": "char",
-        "Size": "0x5",
-        "Offset": "0x33"
-      }
-    ]
-  },
-  "DebugMenuUserItem": {
+  "DebugMenuOptionExecutedEvent": {
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "path",
+        "Name": "DebugMenuItemName",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "Command",
+        "Name": "ConsoleCommand",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
@@ -97,7 +50,7 @@
         "Offset": "0x34"
       },
       {
-        "Name": "pad0xb_ACR7Y[0xb]",
+        "Name": "pad0xb_MPDB8[0xb]",
         "Type": "char",
         "Size": "0xb",
         "Offset": "0x35"
@@ -108,10 +61,74 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_NQOOJ[0x1]",
+        "Name": "pad0x1_8CK9W[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "DebugMenuUserItem": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "path",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Command",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "DebugMenuDataAssetEntry": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "MenuPath",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DisplayName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ConsoleCommand",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "CloseMenuWhenExecuted",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "AvailableInShippingBuilds",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x31"
+      },
+      {
+        "Name": "AddToCommonlyUsedMenu",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x32"
+      },
+      {
+        "Name": "pad0x5_FHQDE[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0x33"
       }
     ]
   },
@@ -161,7 +178,7 @@
         "Offset": "0x15"
       },
       {
-        "Name": "pad0x2_UKNQE[0x2]",
+        "Name": "pad0x2_O1OLL[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x16"
@@ -171,23 +188,6 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x18"
-      }
-    ]
-  },
-  "DebugMenuOptionExecutedEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "DebugMenuItemName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ConsoleCommand",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
       }
     ]
   },

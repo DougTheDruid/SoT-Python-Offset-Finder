@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 FoliageInstancedStaticMeshComponent:
   Attributes:
-  - Name: pad0x20_VSXIX[0x20]
+  - Name: pad0x20_51TR7[0x20]
     Offset: '0x780'
     Size: '0x20'
     Type: char
@@ -38,7 +38,7 @@ FoliageType:
     Offset: '0x44'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_UVX3O[0x3]
+  - Name: pad0x3_XPA8F[0x3]
     Offset: '0x45'
     Size: '0x3'
     Type: char
@@ -58,7 +58,7 @@ FoliageType:
     Offset: '0x60'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_AH606[0x3]
+  - Name: pad0x3_HC6CU[0x3]
     Offset: '0x61'
     Size: '0x3'
     Type: char
@@ -70,7 +70,7 @@ FoliageType:
     Offset: '0x68'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_PK15A[0x3]
+  - Name: pad0x3_ALQ0D[0x3]
     Offset: '0x69'
     Size: '0x3'
     Type: char
@@ -82,7 +82,7 @@ FoliageType:
     Offset: '0x74'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_BGG8P[0x3]
+  - Name: pad0x3_22SVL[0x3]
     Offset: '0x75'
     Size: '0x3'
     Type: char
@@ -94,7 +94,7 @@ FoliageType:
     Offset: '0x7c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_VMNG0[0x3]
+  - Name: pad0x3_U7JS7[0x3]
     Offset: '0x7d'
     Size: '0x3'
     Type: char
@@ -110,7 +110,7 @@ FoliageType:
     Offset: '0x8c'
     Size: '0x8'
     Type: struct FloatInterval
-  - Name: pad0x4_LPUQ2[0x4]
+  - Name: pad0x4_92A7H[0x4]
     Offset: '0x94'
     Size: '0x4'
     Type: char
@@ -126,7 +126,7 @@ FoliageType:
     Offset: '0xb0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_UV8EL[0x3]
+  - Name: pad0x3_R0OSJ[0x3]
     Offset: '0xb1'
     Size: '0x3'
     Type: char
@@ -150,7 +150,7 @@ FoliageType:
     Offset: '0xec'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_ZS3N1[0x3]
+  - Name: pad0x3_F61EM[0x3]
     Offset: '0xed'
     Size: '0x3'
     Type: char
@@ -194,7 +194,7 @@ FoliageType:
     Offset: '0xf9'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_MWZCP[0x2]
+  - Name: pad0x2_MG94R[0x2]
     Offset: '0xfa'
     Size: '0x2'
     Type: char
@@ -206,7 +206,7 @@ FoliageType:
     Offset: '0x100'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_LIN3I[0x7]
+  - Name: pad0x7_S3YYO[0x7]
     Offset: '0x101'
     Size: '0x7'
     Type: char
@@ -218,7 +218,7 @@ FoliageType:
     Offset: '0x288'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_KE4VD[0x7]
+  - Name: pad0x7_KOD1H[0x7]
     Offset: '0x289'
     Size: '0x7'
     Type: char
@@ -226,7 +226,7 @@ FoliageType:
     Offset: '0x298'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_ZAK5Y[0x3]
+  - Name: pad0x3_J03A5[0x3]
     Offset: '0x299'
     Size: '0x3'
     Type: char
@@ -274,7 +274,7 @@ FoliageType:
     Offset: '0x2c1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_HHGA7[0x2]
+  - Name: pad0x2_LV2RT[0x2]
     Offset: '0x2c2'
     Size: '0x2'
     Type: char
@@ -362,7 +362,7 @@ FoliageType:
     Offset: '0x35d'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_SHZ8L[0x2]
+  - Name: pad0x2_UYV96[0x2]
     Offset: '0x35e'
     Size: '0x2'
     Type: char
@@ -390,7 +390,7 @@ FoliageType_InstancedStaticMesh:
   Super: FoliageType
 InstancedFoliageActor:
   Attributes:
-  - Name: pad0x50_PPO7X[0x50]
+  - Name: pad0x50_KN643[0x50]
     Offset: '0x3a0'
     Size: '0x50'
     Type: char
@@ -456,7 +456,7 @@ InteractiveFoliageActor:
     Offset: '0x408'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_J8BYQ[0x4]
+  - Name: pad0x4_VTF6F[0x4]
     Offset: '0x40c'
     Size: '0x4'
     Type: char
@@ -466,7 +466,7 @@ InteractiveFoliageActor:
   Super: StaticMeshActor
 InteractiveFoliageComponent:
   Attributes:
-  - Name: pad0x10_GKMAU[0x10]
+  - Name: pad0x10_QNON8[0x10]
     Offset: '0x600'
     Size: '0x10'
     Type: char
@@ -494,7 +494,7 @@ ProceduralFoliageComponent:
     Offset: '0xc0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_HYBH1[0x4]
+  - Name: pad0x4_OMUT4[0x4]
     Offset: '0xc4'
     Size: '0x4'
     Type: char
@@ -524,7 +524,7 @@ ProceduralFoliageSpawner:
     Offset: '0x30'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_ZQT9N[0x4]
+  - Name: pad0x4_1UDJ6[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
@@ -536,7 +536,7 @@ ProceduralFoliageSpawner:
     Offset: '0x48'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1f_4EKO8[0x1f]
+  - Name: pad0x1f_P9DCL[0x1f]
     Offset: '0x49'
     Size: '0x1f'
     Type: char
@@ -550,7 +550,7 @@ ProceduralFoliageTile:
     Offset: '0x28'
     Size: '0x8'
     Type: class ProceduralFoliageSpawner*
-  - Name: pad0xa0_R4ICS[0xa0]
+  - Name: pad0xa0_8W11G[0xa0]
     Offset: '0x30'
     Size: '0xa0'
     Type: char
@@ -558,7 +558,7 @@ ProceduralFoliageTile:
     Offset: '0xd0'
     Size: '0x10'
     Type: TArray<struct ProceduralFoliageInstance>
-  - Name: pad0x70_Y7HNC[0x70]
+  - Name: pad0x70_3OGW2[0x70]
     Offset: '0xe0'
     Size: '0x70'
     Type: char

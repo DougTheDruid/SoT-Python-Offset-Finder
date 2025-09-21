@@ -6,11 +6,17 @@
 #include "NPCInteractResponse_Structs.h"
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class NPCInteractAnimResponseDataAsset: public DataAsset
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class NPCInteractResponseDialogInterface: public Interface
 {
 public:
-	TArray<struct NPCInteractResponseStruct>                     NPCInteractResponseAnimData;                       // 0x28(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class NPCInteractResponseAnimationInstanceInterface: public Interface
+{
+public:
 };
 
 
@@ -25,14 +31,7 @@ public:
 class NPCInteractResponseComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_EBMK2[0x8];                                 // 0xb8(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class NPCInteractResponseDialogInterface: public Interface
-{
-public:
+	char                                                         pad0x8_LJ3NY[0x8];                                 // 0xb8(0x8)
 };
 
 
@@ -43,10 +42,11 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class NPCInteractResponseAnimationInstanceInterface: public Interface
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class NPCInteractAnimResponseDataAsset: public DataAsset
 {
 public:
+	TArray<struct NPCInteractResponseStruct>                     NPCInteractResponseAnimData;                       // 0x28(0x10)
 };
 
 
@@ -58,14 +58,14 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class PositiveInteractResponseType: public InteractResponseType
+class NegativeInteractResponseType: public InteractResponseType
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class NegativeInteractResponseType: public InteractResponseType
+class PositiveInteractResponseType: public InteractResponseType
 {
 public:
 };

@@ -39,7 +39,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_KNGJ6[0x4]",
+        "Name": "pad0x4_MKARV[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
@@ -49,23 +49,6 @@
         "Type": "double",
         "Size": "0x8",
         "Offset": "0x38"
-      }
-    ]
-  },
-  "IncrementalActorBuilderCanceledTelemetryEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "BuildId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ActorClassName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
       }
     ]
   },
@@ -79,7 +62,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_ZY9LC[0x4]",
+        "Name": "pad0x4_8YQHM[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -140,6 +123,23 @@
     ]
   },
   "IncrementalActorBuilderStartedTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "BuildId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ActorClassName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "IncrementalActorBuilderCanceledTelemetryEvent": {
     "ClassSize": "0x20",
     "Attributes": [
       {

@@ -17,20 +17,20 @@ public:
 class DebugTeleportationDestinationService: public Actor
 {
 public:
-	char                                                         pad0x18_KF0PU[0x18];                               // 0x3a0(0x18)
+	char                                                         pad0x18_AS6LG[0x18];                               // 0x3a0(0x18)
 	TArray<struct DebugTeleportDestinationEntry>                 DebugTeleportationRegistry;                        // 0x3b8(0x10)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DebugTeleportationRegistrationInterface: public Interface
+class DebugTeleportationPresentationInterface: public Interface
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DebugTeleportationPresentationInterface: public Interface
+class DebugTeleportationRegistrationInterface: public Interface
 {
 public:
 };

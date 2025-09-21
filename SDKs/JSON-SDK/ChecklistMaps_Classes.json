@@ -1,4 +1,45 @@
 {
+  "ChecklistMapCollectionInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ChecklistItemsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ChecklistItems",
+        "Type": "TArray<struct ChecklistItem>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "ChecklistMapCompletionComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x140",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "ActionData",
+        "Type": "class ChecklistActionData*",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "pad0x80_IJKYM[0x80]",
+        "Type": "char",
+        "Size": "0x80",
+        "Offset": "0xc0"
+      }
+    ]
+  },
   "ChecklistActionData": {
     "Super": "Object",
     "FullSize": "0x30",
@@ -18,7 +59,7 @@
         "Offset": "0x2c"
       },
       {
-        "Name": "pad0x3_BOHMG[0x3]",
+        "Name": "pad0x3_Q8AAO[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x2d"
@@ -82,7 +123,7 @@
         "Offset": "0x86c"
       },
       {
-        "Name": "pad0x8_2FURD[0x8]",
+        "Name": "pad0x8_U73RK[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x870"
@@ -100,51 +141,10 @@
         "Offset": "0x880"
       },
       {
-        "Name": "pad0x48_6QMBR[0x48]",
+        "Name": "pad0x48_OZPMX[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0x968"
-      }
-    ]
-  },
-  "ChecklistMapCompletionComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x140",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x88",
-    "Attributes": [
-      {
-        "Name": "ActionData",
-        "Type": "class ChecklistActionData*",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "pad0x80_QLL4B[0x80]",
-        "Type": "char",
-        "Size": "0x80",
-        "Offset": "0xc0"
-      }
-    ]
-  },
-  "ChecklistMapCollectionInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ChecklistItemsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ChecklistItems",
-        "Type": "TArray<struct ChecklistItem>",
-        "Size": "0x10",
-        "Offset": "0x28"
       }
     ]
   },
@@ -159,6 +159,26 @@
         "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x30"
+      }
+    ]
+  },
+  "DeliverBootyChecklistActionData": {
+    "Super": "ChecklistActionData",
+    "FullSize": "0x50",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "TargetBootyTypes",
+        "Type": "TArray<Class>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "TargetCompanies",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x40"
       }
     ]
   },
@@ -187,26 +207,6 @@
         "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x30"
-      }
-    ]
-  },
-  "DeliverBootyChecklistActionData": {
-    "Super": "ChecklistActionData",
-    "FullSize": "0x50",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "TargetBootyTypes",
-        "Type": "TArray<Class>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "TargetCompanies",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x40"
       }
     ]
   },

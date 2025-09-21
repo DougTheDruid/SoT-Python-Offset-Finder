@@ -10,7 +10,7 @@
 class ReproMarkerService: public Actor
 {
 public:
-	char                                                         pad0x8_F1Z17[0x8];                                 // 0x3a0(0x8)
+	char                                                         pad0x8_JJJQ3[0x8];                                 // 0x3a0(0x8)
 };
 
 

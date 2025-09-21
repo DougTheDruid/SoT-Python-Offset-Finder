@@ -7,20 +7,23 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AIActionContextTag: public Object
+class DockableRotationOverrideInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x28 (Full Size[0xe0] - InheritedSize[0xb8]
-class AIActionInstigatorComponent: public ActorComponent
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AIActionActivity: public Object
 {
 public:
-	char                                                         pad0x8_O8B4P[0x8];                                 // 0xb8(0x8)
-	TArray<class Class*>                                         CurrentRoles;                                      // 0xc0(0x10)
-	class UClass*                                                InitialActivity;                                   // 0xd0(0x8)
-	class UClass*                                                CurrentActivity;                                   // 0xd8(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AIActionRole: public Object
+{
+public:
 };
 
 
@@ -31,16 +34,8 @@ public:
 };
 
 
-// Size 0x68 (Full Size[0x90] - InheritedSize[0x28]
-class AIActionSpotService: public Object
-{
-public:
-	char                                                         pad0x68_5UONR[0x68];                               // 0x28(0x68)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AIActionRole: public Object
+class AIActionContextTag: public Object
 {
 public:
 };
@@ -53,23 +48,24 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DockableRotationOverrideInterface: public Interface
+// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
+class DockableRotationOverrideComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x8_4ZUA6[0x8];                                 // 0xb8(0x8)
+	bool                                                         KeepOwnerRotationWhileDocked;                      // 0xc0(0x1)
+	char                                                         pad0x7_SA57I[0x7];                                 // 0xc1(0x7)
 };
 
 
-// Size 0x58 (Full Size[0x110] - InheritedSize[0xb8]
-class AIActionSpotComponent: public ActorComponent
+// Size 0x28 (Full Size[0xe0] - InheritedSize[0xb8]
+class AIActionInstigatorComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_QBR2O[0x8];                                 // 0xb8(0x8)
-	TArray<class Class*>                                         SupportedRoles;                                    // 0xc0(0x10)
-	TArray<class Class*>                                         SupportedActivities;                               // 0xd0(0x10)
-	TArray<class Class*>                                         ContextTags;                                       // 0xe0(0x10)
-	class UClass*                                                CustomAnimInstance;                                // 0xf0(0x8)
-	char                                                         pad0x18_E6Z4I[0x18];                               // 0xf8(0x18)
+	char                                                         pad0x8_YBFW3[0x8];                                 // 0xb8(0x8)
+	TArray<class Class*>                                         CurrentRoles;                                      // 0xc0(0x10)
+	class UClass*                                                InitialActivity;                                   // 0xd0(0x8)
+	class UClass*                                                CurrentActivity;                                   // 0xd8(0x8)
 };
 
 
@@ -80,18 +76,29 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
-class DockableRotationOverrideComponent: public ActorComponent
+// Size 0x58 (Full Size[0x110] - InheritedSize[0xb8]
+class AIActionSpotComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_RX7LC[0x8];                                 // 0xb8(0x8)
-	bool                                                         KeepOwnerRotationWhileDocked;                      // 0xc0(0x1)
-	char                                                         pad0x7_6MQZ5[0x7];                                 // 0xc1(0x7)
+	char                                                         pad0x8_GZKF5[0x8];                                 // 0xb8(0x8)
+	TArray<class Class*>                                         SupportedRoles;                                    // 0xc0(0x10)
+	TArray<class Class*>                                         SupportedActivities;                               // 0xd0(0x10)
+	TArray<class Class*>                                         ContextTags;                                       // 0xe0(0x10)
+	class UClass*                                                CustomAnimInstance;                                // 0xf0(0x8)
+	char                                                         pad0x18_FRM5I[0x18];                               // 0xf8(0x18)
+};
+
+
+// Size 0x68 (Full Size[0x90] - InheritedSize[0x28]
+class AIActionSpotService: public Object
+{
+public:
+	char                                                         pad0x68_FEFK1[0x68];                               // 0x28(0x68)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AIActionActivity: public Object
+class AIActionActivity_Follow: public AIActionActivity
 {
 public:
 };
@@ -106,13 +113,6 @@ public:
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIActionActivity_Quest: public AIActionActivity
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AIActionActivity_Follow: public AIActionActivity
 {
 public:
 };

@@ -1,11 +1,4 @@
 {
-  "DebugMenuTestFunctions": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "DebugMenuComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x108",
@@ -13,7 +6,7 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x28_GTCE3[0x28]",
+        "Name": "pad0x28_3SEVT[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0xb8"
@@ -25,31 +18,10 @@
         "Offset": "0xe0"
       },
       {
-        "Name": "pad0x20_HT67R[0x20]",
+        "Name": "pad0x20_CPEB1[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xe8"
-      }
-    ]
-  },
-  "DebugMenuEntryGenerator": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "DebugMenu": {
-    "Super": "Actor",
-    "FullSize": "0x478",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0xd8",
-    "Attributes": [
-      {
-        "Name": "pad0xd8_NTH42[0xd8]",
-        "Type": "char",
-        "Size": "0xd8",
-        "Offset": "0x3a0"
       }
     ]
   },
@@ -85,6 +57,34 @@
       }
     ]
   },
+  "DebugMenuEntryGenerator": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DebugMenuTestFunctions": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DebugMenu": {
+    "Super": "Actor",
+    "FullSize": "0x478",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0xd8",
+    "Attributes": [
+      {
+        "Name": "pad0xd8_5LQYG[0xd8]",
+        "Type": "char",
+        "Size": "0xd8",
+        "Offset": "0x3a0"
+      }
+    ]
+  },
   "DebugMenuComponentMock": {
     "Super": "DebugMenuComponent",
     "FullSize": "0x110",
@@ -92,7 +92,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_G8HJV[0x8]",
+        "Name": "pad0x8_GD5XZ[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x108"

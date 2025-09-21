@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AnimSequencerInstance:
   Attributes:
-  - Name: pad0x1a0_DW65P[0x1a0]
+  - Name: pad0x1a0_6TCWJ[0x1a0]
     Offset: '0x440'
     Size: '0x1a0'
     Type: char

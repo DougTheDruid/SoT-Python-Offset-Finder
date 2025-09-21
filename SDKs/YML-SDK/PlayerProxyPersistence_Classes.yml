@@ -22,7 +22,7 @@ PlayerProxyPersistenceComponent:
     Offset: '0xb8'
     Size: '0x8'
     Type: class PlayerPersistentProxyLimitsDataAsset*
-  - Name: pad0x60_2J4Y8[0x60]
+  - Name: pad0x60_6GWGS[0x60]
     Offset: '0xc0'
     Size: '0x60'
     Type: char

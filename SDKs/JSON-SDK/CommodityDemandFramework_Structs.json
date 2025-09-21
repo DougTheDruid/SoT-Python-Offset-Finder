@@ -1,38 +1,4 @@
 {
-  "CommodityTypeDataEntry": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CommodityType",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DisplayName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "ActiveCommodityDemands": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "CommodityIdHashes",
-        "Type": "TArray<int>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CommodityDemands",
-        "Type": "TArray<char>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "RedeemCommodityTelemetryEvent": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -49,7 +15,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_9K3QM[0x7]",
+        "Name": "pad0x7_I8Y4N[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
@@ -57,35 +23,6 @@
       {
         "Name": "TimeInSecondsSinceFirstRedemptionAttempt",
         "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "CommodityTrackingModel": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ItemOfferId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NPCName",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x7_2AZK3[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x11"
-      },
-      {
-        "Name": "pad0x8_IXZ4C[0x8]",
-        "Type": "char",
         "Size": "0x8",
         "Offset": "0x18"
       }
@@ -119,11 +56,28 @@
       }
     ]
   },
+  "CommodityTypeDataEntry": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CommodityType",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DisplayName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "CommoditySourceMetaWrapper": {
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x18_8RYAJ[0x18]",
+        "Name": "pad0x18_FTGHN[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"
@@ -142,46 +96,11 @@
       }
     ]
   },
-  "CommodityRedemptionTrackingModel": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x2_1Z3UT[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NPCName",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x2"
-      },
-      {
-        "Name": "EntitlementOwnershipConfirmed",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3"
-      },
-      {
-        "Name": "pad0x4_KO2NT[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "CommodityOwner",
-        "Type": "struct UniqueNetIdRepl",
-        "Size": "0x18",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "EventCommodityCrateRedeemed": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x18_UOHI9[0x18]",
+        "Name": "pad0x18_M1G1N[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"
@@ -192,7 +111,7 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x18_E3W54[0x18]",
+        "Name": "pad0x18_ZNOOD[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"
@@ -223,20 +142,84 @@
       }
     ]
   },
-  "ActiveNPCDemands": {
+  "ActiveCommodityDemands": {
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "NPCIdHashes",
+        "Name": "CommodityIdHashes",
         "Type": "TArray<int>",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "NPCDemands",
-        "Type": "TArray<struct ActiveCommodityDemands>",
+        "Name": "CommodityDemands",
+        "Type": "TArray<char>",
         "Size": "0x10",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "CommodityRedemptionTrackingModel": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x2_R2YVI[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NPCName",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x2"
+      },
+      {
+        "Name": "EntitlementOwnershipConfirmed",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3"
+      },
+      {
+        "Name": "pad0x4_C1LP7[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "CommodityOwner",
+        "Type": "struct UniqueNetIdRepl",
+        "Size": "0x18",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CommodityTrackingModel": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ItemOfferId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NPCName",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_ISLJ4[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "pad0x8_EWXOB[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x18"
       }
     ]
   },
@@ -254,6 +237,23 @@
         "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "ActiveNPCDemands": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "NPCIdHashes",
+        "Type": "TArray<int>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NPCDemands",
+        "Type": "TArray<struct ActiveCommodityDemands>",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },

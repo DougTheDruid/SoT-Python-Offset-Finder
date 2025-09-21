@@ -7,30 +7,19 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TaleQuestQueryableStatesQuantityReaderInterface: public Interface
+class EnvQueryContext_TaleContextBase: public EnvQueryContext
 {
 public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TaleQuestArrayEntrySelectionStrategy: public Object
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
+class TaleQuestMacroAsset: public DataAsset
 {
 public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TaleQuestQueryableStateDataID: public Object
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ValueProviderStepInterface: public Interface
-{
-public:
+	class TaleQuestStepDesc*                                     MacroRoot;                                         // 0x28(0x8)
+	struct FText                                                 MacroTooltip;                                      // 0x30(0x38)
+	class TaleStruct*                                            MacroParameters;                                   // 0x68(0x8)
 };
 
 
@@ -45,16 +34,17 @@ public:
 class TaleQuestStep: public Object
 {
 public:
-	char                                                         pad0x60_2PTA6[0x60];                               // 0x28(0x60)
+	char                                                         pad0x60_5DF8B[0x60];                               // 0x28(0x60)
 	class TaleQuestStepDesc*                                     TaleStepDesc;                                      // 0x88(0x8)
-	char                                                         pad0x8_QVBVX[0x8];                                 // 0x90(0x8)
+	char                                                         pad0x8_0QVGZ[0x8];                                 // 0x90(0x8)
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class EnvQueryContext_TaleContextBase: public EnvQueryContext
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
+class TaleQuestService: public Object
 {
 public:
+	char                                                         pad0x38_H0C1F[0x38];                               // 0x28(0x38)
 };
 
 
@@ -76,23 +66,24 @@ public:
 	struct QuestVariableText                                     Afternote;                                         // 0x138(0x30)
 	struct QuestVariableDataAsset                                Layout;                                            // 0x168(0x30)
 	char                                                         RadialMiniIcon;                                    // 0x198(0x1)
-	char                                                         pad0x7_DHSII[0x7];                                 // 0x199(0x7)
+	char                                                         pad0x7_1K6TU[0x7];                                 // 0x199(0x7)
 };
 
 
-// Size 0xd8 (Full Size[0x158] - InheritedSize[0x80]
-class TaleQuestAddXMarksMapStepDesc: public TaleQuestMapStepDescBase
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
+class StartTallTaleConditionalStatTrigger: public ConditionalStatsTriggerType
 {
 public:
-	struct FName                                                 MapID;                                             // 0x80(0x8)
-	char                                                         QuestIconOverride;                                 // 0x88(0x1)
-	char                                                         pad0x7_F4LNB[0x7];                                 // 0x89(0x7)
-	struct QuestVariableName                                     IslandName;                                        // 0x90(0x30)
-	struct QuestVariableVector                                   Location;                                          // 0xc0(0x30)
-	float                                                        LocationRadius;                                    // 0xf0(0x4)
-	char                                                         pad0x4_U75G5[0x4];                                 // 0xf4(0x4)
-	struct QuestVariableBool                                     IsUnderground;                                     // 0xf8(0x30)
-	struct TaleQuestVariableTreasureMapItemDescType              TreasureMapOverride;                               // 0x128(0x30)
+};
+
+
+// Size 0x18 (Full Size[0x48] - InheritedSize[0x30]
+class TaleQuestQueryableStateReadAnyValueBoolNPCDialogConditional: public NPCDialogConditional
+{
+public:
+	TArray<class Class*>                                         AllDataToCheck;                                    // 0x30(0x10)
+	bool                                                         ExpectedValue;                                     // 0x40(0x1)
+	char                                                         pad0x7_C8SFM[0x7];                                 // 0x41(0x7)
 };
 
 
@@ -102,19 +93,73 @@ class TaleQuestQueryableStateCanAnyDataBeReadNPCDialogConditional: public NPCDia
 public:
 	TArray<class Class*>                                         AllDataToCheck;                                    // 0x30(0x10)
 	bool                                                         ExpectedValue;                                     // 0x40(0x1)
-	char                                                         pad0x7_J8TFZ[0x7];                                 // 0x41(0x7)
+	char                                                         pad0x7_31IKX[0x7];                                 // 0x41(0x7)
 };
 
 
-// Size 0x20 (Full Size[0xd8] - InheritedSize[0xb8]
-class TaleQuestQueryableStatesQuantityContainerComponent: public ActorComponent
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TaleQuestQueryableStatesReadInterface: public Interface
 {
 public:
-	char                                                         pad0x8_DVMID[0x8];                                 // 0xb8(0x8)
-	class UClass*                                                QuantityDataID;                                    // 0xc0(0x8)
-	class UClass*                                                OptionalCapacityOverrideDataID;                    // 0xc8(0x8)
-	int                                                          Capacity;                                          // 0xd0(0x4)
-	char                                                         pad0x4_1ZCZH[0x4];                                 // 0xd4(0x4)
+};
+
+
+// Size 0xa0 (Full Size[0xc8] - InheritedSize[0x28]
+class TaleQuestSeasonNotificationDataAsset: public DataAsset
+{
+public:
+	struct SeasonTextPopupAsset                                  SeasonTextPopupAsset;                              // 0x28(0xa0)
+};
+
+
+// Size 0x20 (Full Size[0x640] - InheritedSize[0x620]
+class SplineFootprintPathComponent: public SplineComponent
+{
+public:
+	float                                                        DistanceBetweenDecals;                             // 0x618(0x4)
+	char                                                         pad0x4_2XH6Q[0x4];                                 // 0x61c(0x4)
+	class MaterialInterface*                                     DecalMaterial;                                     // 0x620(0x8)
+	struct SplineFootprintPathTool                               PathTool;                                          // 0x628(0x1)
+	char                                                         pad0x3_RCIOW[0x3];                                 // 0x629(0x3)
+	float                                                        DecalYaw;                                          // 0x62c(0x4)
+	struct Vector                                                DecalUniformScale;                                 // 0x630(0xc)
+	char                                                         pad0x4_QK3OT[0x4];                                 // 0x63c(0x4)
+};
+
+
+// Size 0x18 (Full Size[0x48] - InheritedSize[0x30]
+class TaleQuestQueryableStateReadAllValueBoolNPCDialogConditional: public NPCDialogConditional
+{
+public:
+	TArray<class Class*>                                         AllDataToCheck;                                    // 0x30(0x10)
+	bool                                                         ExpectedValue;                                     // 0x40(0x1)
+	char                                                         pad0x7_6OL7S[0x7];                                 // 0x41(0x7)
+};
+
+
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class TaleQuestWaitForChecklistMapCompletionStepDesc: public TaleQuestMapStepDescBase
+{
+public:
+	struct FName                                                 MapID;                                             // 0x80(0x8)
+};
+
+
+// Size 0x68 (Full Size[0xe8] - InheritedSize[0x80]
+class TaleQuestUpdateMerchantMapStepDesc: public TaleQuestMapStepDescBase
+{
+public:
+	struct FName                                                 MapID;                                             // 0x80(0x8)
+	struct QuestVariableMerchantItem                             Item;                                              // 0x88(0x30)
+	struct QuestVariableInt                                      Index;                                             // 0xb8(0x30)
+};
+
+
+// Size 0x40 (Full Size[0xf8] - InheritedSize[0xb8]
+class ContendedResourceComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x40_KVZPH[0x40];                               // 0xb8(0x40)
 };
 
 
@@ -126,70 +171,19 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TaleQuestQueryableStatesWriteInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
-class TaleQuestIndexedFrame: public Object
-{
-public:
-	char                                                         pad0x8_HS4KH[0x8];                                 // 0x28(0x8)
-	class TaleQuestForEachStepDescBase*                          Desc;                                              // 0x30(0x8)
-	int                                                          Index;                                             // 0x38(0x4)
-	char                                                         pad0x4c_XTOG7[0x4c];                               // 0x3c(0x4c)
-};
-
-
-// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
-class TaleQuestQueryableStateReadValueIntNPCDialogConditional: public NPCDialogConditional
-{
-public:
-	class UClass*                                                DataID;                                            // 0x30(0x8)
-	int                                                          ExpectedValue;                                     // 0x38(0x4)
-	char                                                         ComparisonToExpectedValue;                         // 0x3c(0x1)
-	char                                                         pad0x3_ZCWYZ[0x3];                                 // 0x3d(0x3)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TaleQuestCompoundStepInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
-class TaleQuestRemoveMapStepDesc: public TaleQuestMapStepDescBase
-{
-public:
-	struct FName                                                 MapID;                                             // 0x80(0x8)
-	struct QuestVariableVector                                   Location;                                          // 0x88(0x30)
-};
-
-
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class StartTallTaleConditionalStatTrigger: public ConditionalStatsTriggerType
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TaleQuestStepInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class IslandTypeWeightsDataAsset: public DataAsset
 {
 public:
 	TArray<struct IslandTypeWeights>                             IslandTypeWeightsForDifficultyRanks;               // 0x28(0x10)
+};
+
+
+// Size 0x88 (Full Size[0xc0] - InheritedSize[0x38]
+class TaleQuestImportFrame: public TaleQuestRootFrame
+{
+public:
+	char                                                         pad0x88_OY39R[0x88];                               // 0x38(0x88)
 };
 
 
@@ -205,11 +199,30 @@ public:
 };
 
 
-// Size 0x40 (Full Size[0xf8] - InheritedSize[0xb8]
-class ContendedResourceComponent: public ActorComponent
+// Size 0x20 (Full Size[0xd8] - InheritedSize[0xb8]
+class TaleQuestQueryableStatesAccessComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x40_MYSFG[0x40];                               // 0xb8(0x40)
+	char                                                         pad0x10_UDTKW[0x10];                               // 0xb8(0x10)
+	TArray<struct TaleQuestQueryableStateDataInfo>               TalesData;                                         // 0xc8(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TaleQuestCompoundStepInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
+class TaleQuestIndexedFrame: public Object
+{
+public:
+	char                                                         pad0x8_5OXOG[0x8];                                 // 0x28(0x8)
+	class TaleQuestForEachStepDescBase*                          Desc;                                              // 0x30(0x8)
+	int                                                          Index;                                             // 0x38(0x4)
+	char                                                         pad0x4c_45V7X[0x4c];                               // 0x3c(0x4c)
 };
 
 
@@ -218,51 +231,47 @@ class TaleQuestStepDesc: public Object
 {
 public:
 	bool                                                         Fork;                                              // 0x28(0x1)
-	char                                                         pad0x7_KVFQF[0x7];                                 // 0x29(0x7)
-	char                                                         pad0x50_BU5EO[0x50];                               // 0x30(0x50)
-};
-
-
-// Size 0x18 (Full Size[0x48] - InheritedSize[0x30]
-class TaleQuestQueryableStateReadAllValueBoolNPCDialogConditional: public NPCDialogConditional
-{
-public:
-	TArray<class Class*>                                         AllDataToCheck;                                    // 0x30(0x10)
-	bool                                                         ExpectedValue;                                     // 0x40(0x1)
-	char                                                         pad0x7_HHF1N[0x7];                                 // 0x41(0x7)
+	char                                                         pad0x7_68A2M[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x50_MEUD7[0x50];                               // 0x30(0x50)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TaleQuestQueryableStatesReadInterface: public Interface
+class TaleQuestQueryableStateDataID: public Object
 {
 public:
 };
 
 
-// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
-class TaleQuestMacroAsset: public DataAsset
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TaleQuestQueryableStatesWriteInterface: public Interface
 {
 public:
-	class TaleQuestStepDesc*                                     MacroRoot;                                         // 0x28(0x8)
-	struct FText                                                 MacroTooltip;                                      // 0x30(0x38)
-	class TaleStruct*                                            MacroParameters;                                   // 0x68(0x8)
 };
 
 
-// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
-class TaleQuestMerchantContract: public Object
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ValueProviderStepInterface: public Interface
 {
 public:
-	char                                                         pad0x60_VUVLJ[0x60];                               // 0x28(0x60)
 };
 
 
-// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
-class TaleQuestWaitForChecklistMapCompletionStepDesc: public TaleQuestMapStepDescBase
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TaleQuestQueryableStatesQuantityReaderInterface: public Interface
 {
 public:
-	struct FName                                                 MapID;                                             // 0x80(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
+class TaleQuestQueryableStateReadValueIntNPCDialogConditional: public NPCDialogConditional
+{
+public:
+	class UClass*                                                DataID;                                            // 0x30(0x8)
+	int                                                          ExpectedValue;                                     // 0x38(0x4)
+	char                                                         ComparisonToExpectedValue;                         // 0x3c(0x1)
+	char                                                         pad0x3_ZLN04[0x3];                                 // 0x3d(0x3)
 };
 
 
@@ -270,46 +279,12 @@ public:
 class TaleQuestCargoRunContract: public Object
 {
 public:
-	char                                                         pad0x40_E6W2E[0x40];                               // 0x28(0x40)
+	char                                                         pad0x40_NF6UT[0x40];                               // 0x28(0x40)
 	TArray<struct TaleQuestCargoRunContractItem>                 ItemsToCollect;                                    // 0x68(0x10)
-	char                                                         pad0x10_JTUOL[0x10];                               // 0x78(0x10)
+	char                                                         pad0x10_6WFR4[0x10];                               // 0x78(0x10)
 	class Actor*                                                 DeliverToNPC;                                      // 0x88(0x8)
 	class Actor*                                                 CollectFromNPC;                                    // 0x90(0x8)
-	char                                                         pad0x50_7LKYT[0x50];                               // 0x98(0x50)
-};
-
-
-// Size 0x18 (Full Size[0x48] - InheritedSize[0x30]
-class TaleQuestQueryableStateCanAllDataBeReadNPCDialogConditional: public NPCDialogConditional
-{
-public:
-	TArray<class Class*>                                         AllDataToCheck;                                    // 0x30(0x10)
-	bool                                                         ExpectedValue;                                     // 0x40(0x1)
-	char                                                         pad0x7_E611A[0x7];                                 // 0x41(0x7)
-};
-
-
-// Size 0x20 (Full Size[0x640] - InheritedSize[0x620]
-class SplineFootprintPathComponent: public SplineComponent
-{
-public:
-	float                                                        DistanceBetweenDecals;                             // 0x618(0x4)
-	char                                                         pad0x4_EK1LF[0x4];                                 // 0x61c(0x4)
-	class MaterialInterface*                                     DecalMaterial;                                     // 0x620(0x8)
-	struct SplineFootprintPathTool                               PathTool;                                          // 0x628(0x1)
-	char                                                         pad0x3_1WZS2[0x3];                                 // 0x629(0x3)
-	float                                                        DecalYaw;                                          // 0x62c(0x4)
-	struct Vector                                                DecalUniformScale;                                 // 0x630(0xc)
-	char                                                         pad0x4_8YMBB[0x4];                                 // 0x63c(0x4)
-};
-
-
-// Size 0x20 (Full Size[0xd8] - InheritedSize[0xb8]
-class TaleQuestQueryableStatesAccessComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x10_I7ZU4[0x10];                               // 0xb8(0x10)
-	TArray<struct TaleQuestQueryableStateDataInfo>               TalesData;                                         // 0xc8(0x10)
+	char                                                         pad0x50_KP0MX[0x50];                               // 0x98(0x50)
 };
 
 
@@ -321,17 +296,28 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TaleMigrationAction: public Object
+class TaleQuestStepInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x88 (Full Size[0xc0] - InheritedSize[0x38]
-class TaleQuestImportFrame: public TaleQuestRootFrame
+// Size 0x18 (Full Size[0x48] - InheritedSize[0x30]
+class TaleQuestQueryableStateCanAllDataBeReadNPCDialogConditional: public NPCDialogConditional
 {
 public:
-	char                                                         pad0x88_83FJF[0x88];                               // 0x38(0x88)
+	TArray<class Class*>                                         AllDataToCheck;                                    // 0x30(0x10)
+	bool                                                         ExpectedValue;                                     // 0x40(0x1)
+	char                                                         pad0x7_BOM3F[0x7];                                 // 0x41(0x7)
+};
+
+
+// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
+class TaleQuestAddRiddleMapBaseStepDesc: public TaleQuestMapStepDescBase
+{
+public:
+	struct FName                                                 MapID;                                             // 0x80(0x8)
+	struct QuestVariableName                                     IslandName;                                        // 0x88(0x30)
 };
 
 
@@ -344,51 +330,7 @@ public:
 	struct QuestVariableVector                                   Location;                                          // 0xb8(0x30)
 	float                                                        CircleScale;                                       // 0xe8(0x4)
 	char                                                         RadialMiniIcon;                                    // 0xec(0x1)
-	char                                                         pad0x3_EMEPL[0x3];                                 // 0xed(0x3)
-};
-
-
-// Size 0x68 (Full Size[0xe8] - InheritedSize[0x80]
-class TaleQuestUpdateMerchantMapStepDesc: public TaleQuestMapStepDescBase
-{
-public:
-	struct FName                                                 MapID;                                             // 0x80(0x8)
-	struct QuestVariableMerchantItem                             Item;                                              // 0x88(0x30)
-	struct QuestVariableInt                                      Index;                                             // 0xb8(0x30)
-};
-
-
-// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
-class TaleQuestAdvanceRiddleMapStepDesc: public TaleQuestMapStepDescBase
-{
-public:
-	struct FName                                                 MapID;                                             // 0x80(0x8)
-};
-
-
-// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
-class TaleQuestService: public Object
-{
-public:
-	char                                                         pad0x38_RT4CX[0x38];                               // 0x28(0x38)
-};
-
-
-// Size 0x18 (Full Size[0x48] - InheritedSize[0x30]
-class TaleQuestQueryableStateReadAnyValueBoolNPCDialogConditional: public NPCDialogConditional
-{
-public:
-	TArray<class Class*>                                         AllDataToCheck;                                    // 0x30(0x10)
-	bool                                                         ExpectedValue;                                     // 0x40(0x1)
-	char                                                         pad0x7_8EKIJ[0x7];                                 // 0x41(0x7)
-};
-
-
-// Size 0xa0 (Full Size[0xc8] - InheritedSize[0x28]
-class TaleQuestSeasonNotificationDataAsset: public DataAsset
-{
-public:
-	struct SeasonTextPopupAsset                                  SeasonTextPopupAsset;                              // 0x28(0xa0)
+	char                                                         pad0x3_LS5EP[0x3];                                 // 0xed(0x3)
 };
 
 
@@ -405,6 +347,30 @@ public:
 };
 
 
+// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
+class TaleQuestMerchantContract: public Object
+{
+public:
+	char                                                         pad0x60_L9HYD[0x60];                               // 0x28(0x60)
+};
+
+
+// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
+class TaleQuestRemoveMapStepDesc: public TaleQuestMapStepDescBase
+{
+public:
+	struct FName                                                 MapID;                                             // 0x80(0x8)
+	struct QuestVariableVector                                   Location;                                          // 0x88(0x30)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TaleMigrationAction: public Object
+{
+public:
+};
+
+
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class TaleQuestExpressionInterface: public Interface
 {
@@ -412,12 +378,31 @@ public:
 };
 
 
-// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
-class TaleQuestAddRiddleMapBaseStepDesc: public TaleQuestMapStepDescBase
+// Size 0x20 (Full Size[0xd8] - InheritedSize[0xb8]
+class TaleQuestQueryableStatesQuantityContainerComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_ZXV2F[0x8];                                 // 0xb8(0x8)
+	class UClass*                                                QuantityDataID;                                    // 0xc0(0x8)
+	class UClass*                                                OptionalCapacityOverrideDataID;                    // 0xc8(0x8)
+	int                                                          Capacity;                                          // 0xd0(0x4)
+	char                                                         pad0x4_FMIBB[0x4];                                 // 0xd4(0x4)
+};
+
+
+// Size 0xd8 (Full Size[0x158] - InheritedSize[0x80]
+class TaleQuestAddXMarksMapStepDesc: public TaleQuestMapStepDescBase
 {
 public:
 	struct FName                                                 MapID;                                             // 0x80(0x8)
-	struct QuestVariableName                                     IslandName;                                        // 0x88(0x30)
+	char                                                         QuestIconOverride;                                 // 0x88(0x1)
+	char                                                         pad0x7_VDZ4E[0x7];                                 // 0x89(0x7)
+	struct QuestVariableName                                     IslandName;                                        // 0x90(0x30)
+	struct QuestVariableVector                                   Location;                                          // 0xc0(0x30)
+	float                                                        LocationRadius;                                    // 0xf0(0x4)
+	char                                                         pad0x4_M12ZU[0x4];                                 // 0xf4(0x4)
+	struct QuestVariableBool                                     IsUnderground;                                     // 0xf8(0x30)
+	struct TaleQuestVariableTreasureMapItemDescType              TreasureMapOverride;                               // 0x128(0x30)
 };
 
 
@@ -428,101 +413,53 @@ public:
 };
 
 
-// Size 0xc8 (Full Size[0x148] - InheritedSize[0x80]
-class GenerateDigLocationInRadiusStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableName                                     IslandName;                                        // 0x80(0x30)
-	struct QuestVariableVector                                   Center;                                            // 0xb0(0x30)
-	float                                                        RadiusInCm;                                        // 0xe0(0x4)
-	char                                                         pad0x4_2NN7J[0x4];                                 // 0xe4(0x4)
-	struct QuestVariableVector                                   DigLocation;                                       // 0xe8(0x30)
-	struct QuestVariableArray                                    AllDigLocationsInRadius;                           // 0x118(0x30)
-};
-
-
-// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
-class TaleQuestEventStepDescBase: public TaleQuestStepDesc
-{
-public:
-	class Object*                                                Dispatcher;                                        // 0x80(0x8)
-	struct NativeAndUserDefinedStructSelector                    EventType;                                         // 0x88(0x8)
-	char                                                         pad0x50_7HSAK[0x50];                               // 0x90(0x50)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TaleQuestScopeServiceDesc: public TaleQuestServiceDesc
+class TaleQuestArrayEntrySelectionStrategy: public Object
 {
 public:
 };
 
 
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class EnableInteractionWithActorStepDesc: public TaleQuestStepDesc
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class TaleQuestAdvanceRiddleMapStepDesc: public TaleQuestMapStepDescBase
 {
 public:
-	struct QuestVariableActor                                    TargetActor;                                       // 0x80(0x30)
+	struct FName                                                 MapID;                                             // 0x80(0x8)
 };
 
 
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class TaleQuestGetParticipatingCrewsStepDesc: public TaleQuestStepDesc
+// Size 0x28 (Full Size[0xa8] - InheritedSize[0x80]
+class TaleQuestNotificationQuestsBegunStepDesc: public TaleQuestStepDesc
 {
 public:
-	struct QuestVariableGuidArray                                CrewIds;                                           // 0x80(0x30)
+	int                                                          NumQuests;                                         // 0x80(0x4)
+	char                                                         pad0x4_G8BBK[0x4];                                 // 0x84(0x4)
+	TArray<struct StringAssetReference>                          Icons;                                             // 0x88(0x10)
+	struct StringAssetReference                                  Background;                                        // 0x98(0x10)
 };
 
 
-// Size 0xa0 (Full Size[0x120] - InheritedSize[0x80]
-class ActorRadiusTrackerStepDesc: public TaleQuestStepDesc
+// Size 0x10 (Full Size[0xa8] - InheritedSize[0x98]
+class TaleMigrationVolatileTaskStep: public TaleQuestStep
 {
 public:
-	struct QuestVariableActor                                    TargetActor;                                       // 0x80(0x30)
-	float                                                        DurationBetweenChecks;                             // 0xb0(0x4)
-	char                                                         pad0x4_755G7[0x4];                                 // 0xb4(0x4)
-	struct QuestVariableVector                                   Location;                                          // 0xb8(0x30)
-	float                                                        Radius;                                            // 0xe8(0x4)
-	char                                                         pad0x4_259LF[0x4];                                 // 0xec(0x4)
-	struct QuestVariableBool                                     ActorInsideRadius;                                 // 0xf0(0x30)
+	char                                                         pad0x10_AEF0Q[0x10];                               // 0x98(0x10)
 };
 
 
-// Size 0x90 (Full Size[0x110] - InheritedSize[0x80]
-class SpawnDebrisAtVectorLocationStepDesc: public TaleQuestStepDesc
+// Size 0x108 (Full Size[0x188] - InheritedSize[0x80]
+class SpawnPhasedItemStepDesc: public TaleQuestStepDesc
 {
 public:
-	struct QuestVariableActorAssetType                           ActorToSpawn;                                      // 0x80(0x30)
-	struct QuestVariableVector                                   LocatorVar;                                        // 0xb0(0x30)
-	struct QuestVariableActor                                    ActorVar;                                          // 0xe0(0x30)
-};
-
-
-// Size 0x20 (Full Size[0x80] - InheritedSize[0x60]
-class TaleQuestParticipantDeathService: public TaleQuestService
-{
-public:
-	char                                                         pad0x20_07ITS[0x20];                               // 0x60(0x20)
-};
-
-
-// Size 0x38 (Full Size[0x98] - InheritedSize[0x60]
-class GameEventBlockingTaleService: public TaleQuestService
-{
-public:
-	char                                                         pad0x38_UNMDE[0x38];                               // 0x60(0x38)
-};
-
-
-// Size 0x60 (Full Size[0xf8] - InheritedSize[0x98]
-class TaleQuestFramedStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x8_6VGLE[0x8];                                 // 0x98(0x8)
-	TArray<class TaleQuestService*>                              Services;                                          // 0xa0(0x10)
-	class TaleQuestFramedStepDesc*                               FrameDesc;                                         // 0xb0(0x8)
-	struct UserDefinedStructWithSerialisableValue                Variables;                                         // 0xb8(0x20)
-	struct UserDefinedStructWithSerialisableValue                LocalVariables;                                    // 0xd8(0x20)
+	bool                                                         TrackItem;                                         // 0x80(0x1)
+	bool                                                         MarkItemAsCritical;                                // 0x81(0x1)
+	char                                                         pad0x6_KQWSV[0x6];                                 // 0x82(0x6)
+	struct FText                                                 CriticalActorLostMessage;                          // 0x88(0x38)
+	struct FName                                                 SocketName;                                        // 0xc0(0x8)
+	struct QuestVariableItemDescType                             Item;                                              // 0xc8(0x30)
+	struct QuestVariableActor                                    LocatorVar;                                        // 0xf8(0x30)
+	struct QuestVariableOrientedPoint                            LocatorPoint;                                      // 0x128(0x30)
+	struct QuestVariableItemInfo                                 SpawnedItemVar;                                    // 0x158(0x30)
 };
 
 
@@ -531,84 +468,55 @@ class TaleQuestCheckpointService: public TaleQuestService
 {
 public:
 	class TaleQuestCheckpointServiceDesc*                        Desc;                                              // 0x60(0x8)
-	char                                                         pad0x40_5YJSI[0x40];                               // 0x68(0x40)
+	char                                                         pad0x40_SWICX[0x40];                               // 0x68(0x40)
 };
 
 
-// Size 0x60 (Full Size[0xf8] - InheritedSize[0x98]
-class ForceCannonLoadStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x60_7PF27[0x60];                               // 0x98(0x60)
-};
-
-
-// Size 0x18 (Full Size[0xb0] - InheritedSize[0x98]
-class WaitForSpawnedPawnBaseStep: public TaleQuestStep
-{
-public:
-	class AISpawner*                                             AISpawner;                                         // 0x98(0x8)
-	char                                                         pad0x10_EHW9E[0x10];                               // 0xa0(0x10)
-};
-
-
-// Size 0x28 (Full Size[0xc0] - InheritedSize[0x98]
-class TaleQuestStartPermanentPromptAndWaitForEndEventStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x28_F1BHD[0x28];                               // 0x98(0x28)
-};
-
-
-// Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
-class RequestGameEventBlockStepDesc: public TaleQuestStepDesc
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class SelectNamedPointStep: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
-class SplinePathingActorActivationStepDesc: public TaleQuestStepDesc
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestStructStepBase: public TaleQuestStep
 {
 public:
-	struct QuestVariableActor                                    SplinePathingActor;                                // 0x80(0x30)
-	struct QuestVariableBool                                     IsActivated;                                       // 0xb0(0x30)
 };
 
 
-// Size 0x40 (Full Size[0xa0] - InheritedSize[0x60]
-class TaleQuestCrewGameEventBlockingTaleService: public TaleQuestService
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class FindNamedPointStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x38_ET9FF[0x38];                               // 0x60(0x38)
-	class TaleQuestCrewGameEventBlockingTaleServiceDesc*         ServiceDesc;                                       // 0x98(0x8)
 };
 
 
-// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
-class SetEQSNamedContextStep: public TaleQuestStep
+// Size 0x30 (Full Size[0x90] - InheritedSize[0x60]
+class CutsceneResponsesTaleService: public TaleQuestService
 {
 public:
-	class SetEQSNamedContextStepDesc*                            Desc;                                              // 0x98(0x8)
+	TArray<class CutsceneResponseCoordinator*>                   TrackedResponseCoordinators;                       // 0x60(0x10)
+	TArray<class CutsceneResponseComponent*>                     TrackedResponseComponents;                         // 0x70(0x10)
+	TArray<class Actor*>                                         ResponseRelevantActors;                            // 0x80(0x10)
 };
 
 
-// Size 0x58 (Full Size[0xf0] - InheritedSize[0x98]
-class TaleQuestPersistentForEachCrewTaskStep: public TaleQuestStep
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class DestroySpawnedActorStep: public TaleQuestStep
 {
 public:
-	class TaleQuestPersistentForEachCrewTaskStepDesc*            StepDesc;                                          // 0x98(0x8)
-	char                                                         pad0x50_4M1XR[0x50];                               // 0xa0(0x50)
 };
 
 
-// Size 0x18 (Full Size[0xb0] - InheritedSize[0x98]
-class LoadSequencerAnimationStep: public TaleQuestStep
+// Size 0x90 (Full Size[0x110] - InheritedSize[0x80]
+class WaitForItemPickupStepDesc: public TaleQuestStepDesc
 {
 public:
-	class LoadSequencerAnimationStepDesc*                        StepDesc;                                          // 0x98(0x8)
-	class SequencerCutSceneActor*                                SequencerCutSceneActor;                            // 0xa0(0x8)
-	class Actor*                                                 TargetToSpawnActor;                                // 0xa8(0x8)
+	struct QuestVariableActor                                    Item;                                              // 0x80(0x30)
+	struct QuestVariableBool                                     CompleteOnPickupAndStore;                          // 0xb0(0x30)
+	struct QuestVariableActor                                    PickerUpper;                                       // 0xe0(0x30)
 };
 
 
@@ -619,31 +527,71 @@ public:
 };
 
 
-// Size 0x40 (Full Size[0xd8] - InheritedSize[0x98]
-class TaleQuestGrantRewardStep: public TaleQuestStep
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TaleQuestScopeServiceDesc: public TaleQuestServiceDesc
 {
 public:
-	char                                                         pad0x40_HONEW[0x40];                               // 0x98(0x40)
 };
 
 
-// Size 0xc0 (Full Size[0x140] - InheritedSize[0x80]
-class TaleQuestGetGlobalDigSpotDataStepDesc: public TaleQuestStepDesc
+// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
+class VisualiseLoggerEQSResultsTaleStepDesc: public TaleQuestStepDesc
 {
 public:
-	struct QuestVariableItemSpawnDataType                        OutputItemSpawnData;                               // 0x80(0x30)
-	struct QuestVariableOrientedPoint                            OutputOrientedPoint;                               // 0xb0(0x30)
-	struct QuestVariableGuid                                     OutputVoyageID;                                    // 0xe0(0x30)
-	struct QuestVariableName                                     OutputStoryName;                                   // 0x110(0x30)
+	struct QuestVariableArray                                    ResultsArray;                                      // 0x80(0x30)
+	struct QuestVariableVector                                   SelectedResult;                                    // 0xb0(0x30)
 };
 
 
-// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
-class TaleQuestUpdateSpyglassWakeVisibilityStepDesc: public TaleQuestStepDesc
+// Size 0x30 (Full Size[0x90] - InheritedSize[0x60]
+class RewardGenTaleQuestService: public TaleQuestService
 {
 public:
-	bool                                                         NewVisibility;                                     // 0x80(0x1)
-	char                                                         pad0x7_3HNVG[0x7];                                 // 0x81(0x7)
+	class TaleQuestWeightedItemDescSpawnDataAsset*               GlobalSpawnData;                                   // 0x60(0x8)
+	TArray<int>                                                  ValidSpawnData;                                    // 0x68(0x10)
+	TArray<class ItemSpawnData*>                                 ItemsToSpawn;                                      // 0x78(0x10)
+	char                                                         pad0x8_MGGZ7[0x8];                                 // 0x88(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestSetDigSpotVoyageStatusStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
+class LinkEQSContextWithVariableStepDesc: public TaleQuestStepDesc
+{
+public:
+	class UClass*                                                Context;                                           // 0x80(0x8)
+	struct QuestVariableSetEQSTaleContextValue                   Variable;                                          // 0x88(0x30)
+};
+
+
+// Size 0x60 (Full Size[0xf8] - InheritedSize[0x98]
+class GenerateTinySharkHotspotsStep: public TaleQuestStep
+{
+public:
+	class GenerateTinySharkHotspotsStepDesc*                     Desc;                                              // 0x98(0x8)
+	class TaleQuestEQSService*                                   CachedTaleEQSService;                              // 0xa0(0x8)
+	int                                                          NumGeneratedPoints;                                // 0xa8(0x4)
+	char                                                         pad0x4_EJ8I9[0x4];                                 // 0xac(0x4)
+	TArray<struct Vector>                                        HotspotPathPoints;                                 // 0xb0(0x10)
+	char                                                         pad0x38_4MZYH[0x38];                               // 0xc0(0x38)
+};
+
+
+// Size 0x70 (Full Size[0xf0] - InheritedSize[0x80]
+class OverrideManagedActorStateStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableActor                                    ActorVar;                                          // 0x80(0x30)
+	bool                                                         TrackActor;                                        // 0xb0(0x1)
+	bool                                                         MarkAsCritical;                                    // 0xb1(0x1)
+	char                                                         pad0x6_CKUSP[0x6];                                 // 0xb2(0x6)
+	struct FText                                                 CriticalActorLostMessage;                          // 0xb8(0x38)
 };
 
 
@@ -658,503 +606,20 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TaleQuestMapServiceDesc: public TaleQuestServiceDesc
+// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
+class TaleQuestObstacleCourseSetupAndWaitForCompletionStep: public TaleQuestStep
 {
 public:
+	char                                                         pad0x8_J983O[0x8];                                 // 0x98(0x8)
 };
 
 
-// Size 0x18 (Full Size[0x98] - InheritedSize[0x80]
-class TaleQuestShipSurfaceStepDesc: public TaleQuestStepDesc
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class NumPlayerStatsFromListPhaseBranchSelector: public TaleQuestPhaseBranchSelectorPredicateBase
 {
 public:
-	float                                                        ResurfaceMusicWindUpTime;                          // 0x80(0x4)
-	bool                                                         AutoStopResurfaceMusic;                            // 0x84(0x1)
-	char                                                         pad0x3_KGLCY[0x3];                                 // 0x85(0x3)
-	float                                                        StopResurfaceMusicAfter;                           // 0x88(0x4)
-	struct FName                                                 MusicThemeName;                                    // 0x8c(0x8)
-	char                                                         pad0x4_GCA0X[0x4];                                 // 0x94(0x4)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class TaleQuestPredicatedBranchPhasingServiceDesc: public TaleQuestServiceDesc
-{
-public:
-	bool                                                         ClampAssignments;                                  // 0x28(0x1)
-	bool                                                         TreatOutOfBoundsAssignmentsAsErrors;               // 0x29(0x1)
-	char                                                         pad0x2_01B25[0x2];                                 // 0x2a(0x2)
-	int                                                          NumberOfClusters;                                  // 0x2c(0x4)
-	class TaleQuestPhaseBranchSelectorPredicateBase*             PlayerAssignmentFunction;                          // 0x30(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class CallObjectFunctionStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x20 (Full Size[0xa0] - InheritedSize[0x80]
-class TaleQuestStartCameraFadeStepDesc: public TaleQuestStepDesc
-{
-public:
-	float                                                        FromAlpha;                                         // 0x80(0x4)
-	float                                                        ToAlpha;                                           // 0x84(0x4)
-	float                                                        FadeTimeInSeconds;                                 // 0x88(0x4)
-	struct LinearColor                                           FadeColour;                                        // 0x8c(0x10)
-	bool                                                         ShouldFadeAudio;                                   // 0x9c(0x1)
-	bool                                                         HoldFadeWhenFinished;                              // 0x9d(0x1)
-	char                                                         pad0x2_70OHQ[0x2];                                 // 0x9e(0x2)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestPermanentPromptStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x60 (Full Size[0xc0] - InheritedSize[0x60]
-class TaleQuestFlameOfFateService: public TaleQuestService
-{
-public:
-	class TaleQuestFlameOfFateServiceDesc*                       ServiceDesc;                                       // 0x60(0x8)
-	char                                                         pad0x58_YK10Z[0x58];                               // 0x68(0x58)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestGetParticipatingCrewsStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
-class TaleQuestSetDigSpotVoyageStatusStepDesc: public TaleQuestStepDesc
-{
-public:
-	char                                                         VoyageStatus;                                      // 0x80(0x1)
-	char                                                         pad0x7_OOEMN[0x7];                                 // 0x81(0x7)
-};
-
-
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class TaleQuestStarFieldPuzzleSetupAndWaitForCompletionStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableActor                                    StarFieldPuzzleActor;                              // 0x80(0x30)
-};
-
-
-// Size 0x18 (Full Size[0xb0] - InheritedSize[0x98]
-class TaleQuestShipDiveStep: public TaleQuestStep
-{
-public:
-	class TaleQuestShipDiveStepDesc*                             StepDesc;                                          // 0x98(0x8)
-	char                                                         pad0x10_LIVKN[0x10];                               // 0xa0(0x10)
-};
-
-
-// Size 0x40 (Full Size[0xc0] - InheritedSize[0x80]
-class ProvokeHitReactionDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableActor                                    ActorToProvoke;                                    // 0x80(0x30)
-	class UClass*                                                DamageType;                                        // 0xb0(0x8)
-	float                                                        DamageAmount;                                      // 0xb8(0x4)
-	char                                                         DamageReason;                                      // 0xbc(0x1)
-	char                                                         pad0x3_UMWTN[0x3];                                 // 0xbd(0x3)
-};
-
-
-// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
-class TaleQuestToggleAmbientMigrationForServerStepDesc: public TaleQuestStepDesc
-{
-public:
-	bool                                                         AmbientMigrationAvailable;                         // 0x80(0x1)
-	char                                                         pad0x7_VIJIV[0x7];                                 // 0x81(0x7)
-};
-
-
-// Size 0x10 (Full Size[0xa8] - InheritedSize[0x98]
-class TaleQuestForEachStepBase: public TaleQuestStep
-{
-public:
-	TArray<struct BodyFramePair>                                 Bodies;                                            // 0x98(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestRemoveCommonToolsStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x18 (Full Size[0xb0] - InheritedSize[0x98]
-class TaleQuestShipSurfaceStep: public TaleQuestStep
-{
-public:
-	class TaleQuestShipSurfaceStepDesc*                          StepDesc;                                          // 0x98(0x8)
-	char                                                         pad0x10_DII32[0x10];                               // 0xa0(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x90] - InheritedSize[0x80]
-class TaleQuestAddQuestBookStepDesc: public TaleQuestStepDesc
-{
-public:
-	class UClass*                                                QuestBookDesc;                                     // 0x80(0x8)
-	class UClass*                                                RemapperClass;                                     // 0x88(0x8)
-};
-
-
-// Size 0x18 (Full Size[0x78] - InheritedSize[0x60]
-class TaleShroudBreakerService: public TaleQuestService
-{
-public:
-	char                                                         pad0x18_HPVS4[0x18];                               // 0x60(0x18)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class FindNamedPointAsVectorStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
-class GetActorOfInterestStepDesc: public TaleQuestStepDesc
-{
-public:
-	class UClass*                                                ActorOfInterestId;                                 // 0x80(0x8)
-	struct QuestVariableActor                                    ActorOfInterest;                                   // 0x88(0x30)
-};
-
-
-// Size 0x38 (Full Size[0xd0] - InheritedSize[0x98]
-class ActorRadiusTrackerStep: public TaleQuestStep
-{
-public:
-	class ActorRadiusTrackerStepDesc*                            Desc;                                              // 0x98(0x8)
-	class Actor*                                                 TargetActor;                                       // 0xa0(0x8)
-	char                                                         pad0x28_BC9U1[0x28];                               // 0xa8(0x28)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestAddCircleMapStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestArrayContainsStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestStructStepBase: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x50 (Full Size[0xb0] - InheritedSize[0x60]
-class TaleQuestShipSetSinkingParamsService: public TaleQuestService
-{
-public:
-	class TaleQuestShipSetSinkingParamsServiceDesc*              Desc;                                              // 0x60(0x8)
-	char                                                         pad0x48_IATI6[0x48];                               // 0x68(0x48)
-};
-
-
-// Size 0x18 (Full Size[0x98] - InheritedSize[0x80]
-class TaleQuestShipDiveStepDesc: public TaleQuestStepDesc
-{
-public:
-	float                                                        DiveMusicWindUpTime;                               // 0x80(0x4)
-	bool                                                         AutoStopDiveMusic;                                 // 0x84(0x1)
-	char                                                         pad0x3_Z55GS[0x3];                                 // 0x85(0x3)
-	float                                                        StopDiveMusicAfter;                                // 0x88(0x4)
-	struct FName                                                 MusicThemeName;                                    // 0x8c(0x8)
-	char                                                         pad0x4_6VEU9[0x4];                                 // 0x94(0x4)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestArrayAppendStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x58 (Full Size[0xf0] - InheritedSize[0x98]
-class TaleQuestAwaitEventStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x58_3J9NB[0x58];                               // 0x98(0x58)
-};
-
-
-// Size 0x48 (Full Size[0xa8] - InheritedSize[0x60]
-class TaleResourceBrokerService: public TaleQuestService
-{
-public:
-	char                                                         pad0x20_X9JYO[0x20];                               // 0x60(0x20)
-	TArray<struct MigrationActionPair>                           MigrationActions;                                  // 0x80(0x10)
-	char                                                         pad0x18_DLLSC[0x18];                               // 0x90(0x18)
-};
-
-
-// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
-class TaleQuestGrantRewardStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct RewardId                                              RewardId;                                          // 0x80(0x8)
-	class UClass*                                                Company;                                           // 0x88(0x8)
-	struct Guid                                                  Id;                                                // 0x90(0x10)
-	bool                                                         ShouldGrantToAlliedCrews;                          // 0xa0(0x1)
-	char                                                         pad0x7_4LAZW[0x7];                                 // 0xa1(0x7)
-	struct QuestVariablePlayerActor                              SpecificPlayerToAward;                             // 0xa8(0x30)
-	struct FName                                                 Feature;                                           // 0xd8(0x8)
-};
-
-
-// Size 0x28 (Full Size[0x88] - InheritedSize[0x60]
-class TaleQuestSelectorService: public TaleQuestService
-{
-public:
-	class TaleQuestSelectorServiceDesc*                          Desc;                                              // 0x60(0x8)
-	char                                                         pad0x20_TGLOK[0x20];                               // 0x68(0x20)
-};
-
-
-// Size 0x10 (Full Size[0x70] - InheritedSize[0x60]
-class TaleQuestMerchantContractsService: public TaleQuestService
-{
-public:
-	TArray<class TaleQuestMerchantContract*>                     Contracts;                                         // 0x60(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
-class StartSuppressingCutsceneResponsesStepDesc: public TaleQuestStepDesc
-{
-public:
-};
-
-
-// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
-class SetReplenishableContentSelectorStepDesc: public TaleQuestStepDesc
-{
-public:
-	class StorageContainerContentTypeSelector*                   ContentTypeSelector;                               // 0x80(0x8)
-	struct QuestVariableActor                                    ReplenishableActor;                                // 0x88(0x30)
-};
-
-
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class TaleQuestEnableInteractionStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableActor                                    TargetActor;                                       // 0x80(0x30)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class ReleaseGameEventBlockStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class AddGameEventExclusionZoneStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestRemoveQuestBookStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class PreventInteractionWithActorStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableActor                                    TargetActor;                                       // 0x80(0x30)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class InvokeDamageStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
-class SetEQSNamedContextStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct FName                                                 Name;                                              // 0x80(0x8)
-	struct QuestVariableLinkEQSContext                           Value;                                             // 0x88(0x30)
-};
-
-
-// Size 0x70 (Full Size[0xf0] - InheritedSize[0x80]
-class FindItemInCollectorsChestStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableActor                                    CollectorsChest;                                   // 0x80(0x30)
-	struct QuestVariableActor                                    ItemInChest;                                       // 0xb0(0x30)
-	class UClass*                                                ItemToFind;                                        // 0xe0(0x8)
-	bool                                                         AllowChildClasses;                                 // 0xe8(0x1)
-	char                                                         pad0x7_M1U1G[0x7];                                 // 0xe9(0x7)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TaleShroudBreakerServiceDesc: public TaleQuestServiceDesc
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestAddMerchantMapStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestAddCargoRunMapStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x80 (Full Size[0x118] - InheritedSize[0x98]
-class WaitForHealthToReachFractionStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x80_5MS46[0x80];                               // 0x98(0x80)
-};
-
-
-// Size 0x40 (Full Size[0xc0] - InheritedSize[0x80]
-class TaleQuestAddCommonToolsStepDesc: public TaleQuestStepDesc
-{
-public:
-	TArray<class Class*>                                         ToolsToGive;                                       // 0x80(0x10)
-	struct QuestVariableActor                                    PlayerToWieldImmediately;                          // 0x90(0x30)
-};
-
-
-// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
-class TaleQuestActorOfInterestServiceDesc: public TaleQuestServiceDesc
-{
-public:
-	TArray<class Class*>                                         AllNeededActorsOfInterest;                         // 0x28(0x10)
-	struct FText                                                 ActorOfInterestUnregisteredFailureMessage;         // 0x38(0x38)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestAddBountyMapStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x18 (Full Size[0xb0] - InheritedSize[0x98]
-class GenerateDigLocationInRadiusStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x18_T4Q8X[0x18];                               // 0x98(0x18)
-};
-
-
-// Size 0x10 (Full Size[0xa8] - InheritedSize[0x98]
-class TaleMigrationVolatileTaskStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x10_QG3BR[0x10];                               // 0x98(0x10)
-};
-
-
-// Size 0x58 (Full Size[0xb8] - InheritedSize[0x60]
-class TaleQuestToggleInteractionDescriptionService: public TaleQuestService
-{
-public:
-	char                                                         pad0x50_NB1EW[0x50];                               // 0x60(0x50)
-	class TaleQuestToggleInteractionDescriptionServiceDesc*      Desc;                                              // 0xb0(0x8)
-};
-
-
-// Size 0x68 (Full Size[0xe8] - InheritedSize[0x80]
-class TaleQuestWaitForHandInStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableActor                                    HandInActor;                                       // 0x80(0x30)
-	class UClass*                                                SpecificItem;                                      // 0xb0(0x8)
-	struct QuestVariableItemDescType                             HandInItem;                                        // 0xb8(0x30)
-};
-
-
-// Size 0x28 (Full Size[0xa8] - InheritedSize[0x80]
-class TaleQuestNotificationQuestsBegunStepDesc: public TaleQuestStepDesc
-{
-public:
-	int                                                          NumQuests;                                         // 0x80(0x4)
-	char                                                         pad0x4_S4KPH[0x4];                                 // 0x84(0x4)
-	TArray<struct StringAssetReference>                          Icons;                                             // 0x88(0x10)
-	struct StringAssetReference                                  Background;                                        // 0x98(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class PreventInteractionWithActorStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class SequentialArrayEntrySelectionStrategy: public TaleQuestArrayEntrySelectionStrategy
-{
-public:
-	char                                                         pad0x8_SQ44T[0x8];                                 // 0x28(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class RequestGameEventBlockStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x18 (Full Size[0xb0] - InheritedSize[0x98]
-class SpawnLayerStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x18_ZPLRW[0x18];                               // 0x98(0x18)
+	TArray<struct PlayerStat>                                    UniqueStats;                                       // 0x28(0x10)
+	char                                                         pad0x18_2ODC6[0x18];                               // 0x38(0x18)
 };
 
 
@@ -1165,211 +630,40 @@ public:
 };
 
 
-// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
-class ForceCannonLoadStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableActor                                    Cannon;                                            // 0x80(0x30)
-	struct QuestVariableActor                                    Projectile;                                        // 0xb0(0x30)
-};
-
-
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class IslandReservationTaleServiceDesc: public TaleQuestServiceDesc
-{
-public:
-	struct QuestVariableName                                     IslandName;                                        // 0x28(0x30)
-};
-
-
-// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
-class TrackResponseCoordinatorStep: public TaleQuestStep
-{
-public:
-	class TrackResponseCoordinatorStepDesc*                      StepDesc;                                          // 0x98(0x8)
-};
-
-
 // Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestUpdateSpyglassWakeVisibilityStep: public TaleQuestStep
+class TaleQuestGetVoyageGeneratorIslandStep: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestGetArrayElementStep: public TaleQuestStep
+// Size 0x60 (Full Size[0xf8] - InheritedSize[0x98]
+class TaleQuestFramedStep: public TaleQuestStep
 {
 public:
+	char                                                         pad0x8_D3GQ7[0x8];                                 // 0x98(0x8)
+	TArray<class TaleQuestService*>                              Services;                                          // 0xa0(0x10)
+	class TaleQuestFramedStepDesc*                               FrameDesc;                                         // 0xb0(0x8)
+	struct UserDefinedStructWithSerialisableValue                Variables;                                         // 0xb8(0x20)
+	struct UserDefinedStructWithSerialisableValue                LocalVariables;                                    // 0xd8(0x20)
 };
 
 
-// Size 0xd8 (Full Size[0x138] - InheritedSize[0x60]
-class TaleQuestEQSService: public TaleQuestService
+// Size 0x20 (Full Size[0x80] - InheritedSize[0x60]
+class TaleQuestSuppressIslandBannersService: public TaleQuestService
 {
 public:
-	char                                                         pad0xd8_NAB0U[0xd8];                               // 0x60(0xd8)
+	class TaleQuestSuppressIslandBannersServiceDesc*             Desc;                                              // 0x60(0x8)
+	char                                                         pad0x18_KOB1G[0x18];                               // 0x68(0x18)
 };
 
 
-// Size 0xf8 (Full Size[0x178] - InheritedSize[0x80]
-class PlaySequencerAnimationStepDesc: public TaleQuestStepDesc
+// Size 0x50 (Full Size[0xb0] - InheritedSize[0x60]
+class TaleQuestQueryableStatesService: public TaleQuestService
 {
 public:
-	class LevelSequence*                                         LevelSequenceToPlay;                               // 0x80(0x8)
-	struct QuestVariableActor                                    TargetActorToSpawn;                                // 0x88(0x30)
-	struct QuestVariableActor                                    LevelSequenceActorSpawnLocation;                   // 0xb8(0x30)
-	struct QuestVariableActor                                    DockableBaseActor;                                 // 0xe8(0x30)
-	struct QuestVariableActor                                    InteractingActor;                                  // 0x118(0x30)
-	bool                                                         PlayGlobally;                                      // 0x148(0x1)
-	bool                                                         IsLevelSequenceActorAlawaysRelevant;               // 0x149(0x1)
-	char                                                         pad0x6_2B64Q[0x6];                                 // 0x14a(0x6)
-	class SceneDialogueData*                                     DialogueData;                                      // 0x150(0x8)
-	TArray<struct Text>                                          LocalisableNames;                                  // 0x158(0x10)
-	bool                                                         IsLooping;                                         // 0x168(0x1)
-	char                                                         pad0x3_CVYP8[0x3];                                 // 0x169(0x3)
-	float                                                        SubtitleSphereRadiusInCm;                          // 0x16c(0x4)
-	class LevelSequence*                                         FemaleLevelSequenceToPlay;                         // 0x170(0x8)
-};
-
-
-// Size 0x40 (Full Size[0xc0] - InheritedSize[0x80]
-class WaitForActorOfInterestToUnregisterStepDesc: public TaleQuestStepDesc
-{
-public:
-	class UClass*                                                ActorOfInterestId;                                 // 0x80(0x8)
-	struct FText                                                 ActorOfInterestUnregisteredFailureMessage;         // 0x88(0x38)
-};
-
-
-// Size 0x90 (Full Size[0x110] - InheritedSize[0x80]
-class WaitForItemPickupStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableActor                                    Item;                                              // 0x80(0x30)
-	struct QuestVariableBool                                     CompleteOnPickupAndStore;                          // 0xb0(0x30)
-	struct QuestVariableActor                                    PickerUpper;                                       // 0xe0(0x30)
-};
-
-
-// Size 0x68 (Full Size[0xe8] - InheritedSize[0x80]
-class TaleQuestGetParticipatingCrewsInRadiusStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableGuidArray                                CrewIds;                                           // 0x80(0x30)
-	struct QuestVariableVector                                   Location;                                          // 0xb0(0x30)
-	float                                                        Radius;                                            // 0xe0(0x4)
-	char                                                         pad0x4_TMI9N[0x4];                                 // 0xe4(0x4)
-};
-
-
-// Size 0x38 (Full Size[0x98] - InheritedSize[0x60]
-class TaleQuestActorOfInterestService: public TaleQuestService
-{
-public:
-	class TaleQuestActorOfInterestServiceDesc*                   Desc;                                              // 0x60(0x8)
-	char                                                         pad0x30_H79CH[0x30];                               // 0x68(0x30)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class FindNamedPointAsTransformStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class SetReplenishableContentSelectorStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x90 (Full Size[0x110] - InheritedSize[0x80]
-class SpawnPhasedActorWithTransformStepBaseDesc: public TaleQuestStepDesc
-{
-public:
-	char                                                         pad0x20_QE96I[0x20];                               // 0x80(0x20)
-	bool                                                         MarkAsCritical;                                    // 0xa0(0x1)
-	char                                                         pad0x7_V1APU[0x7];                                 // 0xa1(0x7)
-	struct FText                                                 CriticalActorLostMessage;                          // 0xa8(0x38)
-	struct QuestVariableActor                                    ActorVar;                                          // 0xe0(0x30)
-};
-
-
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class TrackResponseCoordinatorStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableUObject                                  CutsceneResponseCoordinator;                       // 0x80(0x30)
-};
-
-
-// Size 0x68 (Full Size[0xe8] - InheritedSize[0x80]
-class TaleQuestRunnableStepDesc: public TaleQuestStepDesc
-{
-public:
-	char                                                         pad0x68_6MU6S[0x68];                               // 0x80(0x68)
-};
-
-
-// Size 0x80 (Full Size[0x118] - InheritedSize[0x98]
-class TaleQuestPredicateBranchTaskStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x50_CK8LG[0x50];                               // 0x98(0x50)
-	class TaleQuestPredicateBranchStepDesc*                      StepDesc;                                          // 0xe8(0x8)
-	TArray<int>                                                  BranchesCompleted;                                 // 0xf0(0x10)
-	char                                                         pad0x18_51PKH[0x18];                               // 0x100(0x18)
-};
-
-
-// Size 0x70 (Full Size[0xf0] - InheritedSize[0x80]
-class OverrideManagedActorStateStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableActor                                    ActorVar;                                          // 0x80(0x30)
-	bool                                                         TrackActor;                                        // 0xb0(0x1)
-	bool                                                         MarkAsCritical;                                    // 0xb1(0x1)
-	char                                                         pad0x6_EQHU9[0x6];                                 // 0xb2(0x6)
-	struct FText                                                 CriticalActorLostMessage;                          // 0xb8(0x38)
-};
-
-
-// Size 0x98 (Full Size[0x118] - InheritedSize[0x80]
-class TaleQuestSelectEntryFromArrayStepDesc: public TaleQuestStepDesc
-{
-public:
-	class TaleQuestArrayEntrySelectionStrategy*                  SelectionStrategy;                                 // 0x80(0x8)
-	struct QuestVariableArray                                    InputArray;                                        // 0x88(0x30)
-	struct QuestVariableAny                                      OutputEntry;                                       // 0xb8(0x30)
-	struct QuestVariableInt                                      OutputEntryIndex;                                  // 0xe8(0x30)
-};
-
-
-// Size 0x10 (Full Size[0x90] - InheritedSize[0x80]
-class WaitForHealthToReachFractionStepDesc: public TaleQuestStepDesc
-{
-public:
-	class Actor*                                                 HealthOwner;                                       // 0x80(0x8)
-	float                                                        HealthFraction;                                    // 0x88(0x4)
-	char                                                         pad0x4_3QP56[0x4];                                 // 0x8c(0x4)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class VisualiseLoggerEQSResultsTaleStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x190 (Full Size[0x228] - InheritedSize[0x98]
-class WaitForItemPickupStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x190_HXP66[0x190];                             // 0x98(0x190)
+	TArray<struct TaleQuestQueryableStateDataInfo>               AllData;                                           // 0x60(0x10)
+	char                                                         pad0x40_WTBIG[0x40];                               // 0x70(0x40)
 };
 
 
@@ -1377,7 +671,7 @@ public:
 class TaleQuestForEachStepDescBase: public TaleQuestStepDesc
 {
 public:
-	char                                                         pad0x8_6GJHQ[0x8];                                 // 0x80(0x8)
+	char                                                         pad0x8_KXS6S[0x8];                                 // 0x80(0x8)
 	struct FName                                                 Collection;                                        // 0x88(0x8)
 	class TaleQuestStepDesc*                                     Body;                                              // 0x90(0x8)
 	struct FName                                                 KeyPinName;                                        // 0x98(0x8)
@@ -1385,140 +679,12 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
-class TaleQuestMacroRootStepDesc: public TaleQuestStepDesc
+// Size 0x18 (Full Size[0xb0] - InheritedSize[0x98]
+class TaleQuestShipSurfaceStep: public TaleQuestStep
 {
 public:
-	class TaleQuestStepDesc*                                     BodyDesc;                                          // 0x80(0x8)
-};
-
-
-// Size 0x10 (Full Size[0xa8] - InheritedSize[0x98]
-class WaitForGameEventToCompleteStep: public TaleQuestStep
-{
-public:
-	class GameEvent*                                             GameEvent;                                         // 0x98(0x8)
-	char                                                         pad0x8_9FZJ2[0x8];                                 // 0xa0(0x8)
-};
-
-
-// Size 0x98 (Full Size[0x130] - InheritedSize[0x98]
-class TaleQuestChooseIslandFromWeightsStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x90_8GGS2[0x90];                               // 0x98(0x90)
-	class IslandTypeWeightsDataAsset*                            IslandTypeWeights;                                 // 0x128(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestUpdateCheckpointStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class SelectNamedPointStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestStartCameraFadeStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class TaleQuestUpdateSpyglassTargetLocationStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableVector                                   NewLocation;                                       // 0x80(0x30)
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class NumPlayerStatsFromListPhaseBranchSelector: public TaleQuestPhaseBranchSelectorPredicateBase
-{
-public:
-	TArray<struct PlayerStat>                                    UniqueStats;                                       // 0x28(0x10)
-	char                                                         pad0x18_0VQB4[0x18];                               // 0x38(0x18)
-};
-
-
-// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
-class TaleQuestGetCollectionItemCountStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableCollection                               Collection;                                        // 0x80(0x30)
-	struct QuestVariableInt                                      Num;                                               // 0xb0(0x30)
-};
-
-
-// Size 0x10 (Full Size[0xa8] - InheritedSize[0x98]
-class TaleQuestWaitForHandInStep: public TaleQuestStep
-{
-public:
-	class TaleQuestWaitForHandInStepDesc*                        Desc;                                              // 0x98(0x8)
-	char                                                         pad0x8_KA0B3[0x8];                                 // 0xa0(0x8)
-};
-
-
-// Size 0x118 (Full Size[0x198] - InheritedSize[0x80]
-class TaleQuestAddZoomMapStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct FName                                                 MapID;                                             // 0x80(0x8)
-	char                                                         QuestIconOverride;                                 // 0x88(0x1)
-	char                                                         pad0x3_TTNNN[0x3];                                 // 0x89(0x3)
-	float                                                        ZoomLevel;                                         // 0x8c(0x4)
-	struct FText                                                 MapTitle;                                          // 0x90(0x38)
-	TArray<struct Text>                                          Descriptions;                                      // 0xc8(0x10)
-	struct QuestVariableVector                                   ZoomCenterPoint;                                   // 0xd8(0x30)
-	struct QuestVariableVectorArray                              MarkLocations;                                     // 0x108(0x30)
-	struct QuestVariableName                                     IslandName;                                        // 0x138(0x30)
-	struct TaleQuestVariableTreasureMapItemDescType              TreasureMapOverride;                               // 0x168(0x30)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestGetCollectionItemCountStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
-class WaitForActorToFullyDockStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableActor                                    DockerActor;                                       // 0x80(0x30)
-	struct QuestVariableActor                                    DockableTargetActor;                               // 0xb0(0x30)
-};
-
-
-// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
-class TaleQuestTaskStepDescBase: public TaleQuestStepDesc
-{
-public:
-	class TaleQuestStepDesc*                                     Task;                                              // 0x80(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestAddRiddleMapStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestClearTaleProposalsStep: public TaleQuestStep
-{
-public:
+	class TaleQuestShipSurfaceStepDesc*                          StepDesc;                                          // 0x98(0x8)
+	char                                                         pad0x10_BN8UF[0x10];                               // 0xa0(0x10)
 };
 
 
@@ -1530,640 +696,8 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TaleQuestEQSServiceDesc: public TaleQuestServiceDesc
-{
-public:
-};
-
-
-// Size 0x18 (Full Size[0x98] - InheritedSize[0x80]
-class TaleQuestUpdateCheckpointStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct RewardId                                              RewardIdToAward;                                   // 0x80(0x8)
-	struct FName                                                 CampaignIdToRemove;                                // 0x88(0x8)
-	struct FName                                                 Feature;                                           // 0x90(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class FindItemInCollectorsChestStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class TaleQuestFlameOfFateServiceDesc: public TaleQuestServiceDesc
-{
-public:
-	class UClass*                                                LanternItemCategory;                               // 0x28(0x8)
-	char                                                         FlameOfFateTypeToSet;                              // 0x30(0x1)
-	bool                                                         SetFlameOnStart;                                   // 0x31(0x1)
-	char                                                         pad0x6_QFACY[0x6];                                 // 0x32(0x6)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TaleQuestQueryableStatesServiceDesc: public TaleQuestServiceDesc
-{
-public:
-};
-
-
-// Size 0x38 (Full Size[0xd0] - InheritedSize[0x98]
-class PlaySequencerAnimationStep: public TaleQuestStep
-{
-public:
-	class PlaySequencerAnimationStepDesc*                        StepDesc;                                          // 0x98(0x8)
-	class SequencerCutSceneActor*                                SequencerCutSceneActor;                            // 0xa0(0x8)
-	char                                                         pad0x28_GHKKO[0x28];                               // 0xa8(0x28)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestEnableInteractionStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class FixedArrayEntrySelectionStrategy: public TaleQuestArrayEntrySelectionStrategy
-{
-public:
-	int                                                          IndexToSelect;                                     // 0x28(0x4)
-	char                                                         pad0x4_CTABI[0x4];                                 // 0x2c(0x4)
-};
-
-
-// Size 0x10 (Full Size[0x90] - InheritedSize[0x80]
-class TaleQuestRemoveCommonToolsStepDesc: public TaleQuestStepDesc
-{
-public:
-	TArray<class Class*>                                         ToolsToRemove;                                     // 0x80(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestAddXMarksMapStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x18 (Full Size[0x78] - InheritedSize[0x60]
-class TaleQuestInteractionPreventionService: public TaleQuestService
-{
-public:
-	TArray<class Actor*>                                         TrackedInteractionActors;                          // 0x60(0x10)
-	class TaleQuestInteractionPreventionServiceDesc*             Desc;                                              // 0x70(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class StopSuppressingCutsceneResponsesStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestAddQuestBookStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x10 (Full Size[0xa8] - InheritedSize[0x98]
-class SpawnDebrisAtVectorLocationStep: public TaleQuestStep
-{
-public:
-	class SpawnDebrisAtVectorLocationStepDesc*                   Desc;                                              // 0x98(0x8)
-	class TaleQuestActorService*                                 ActorService;                                      // 0xa0(0x8)
-};
-
-
-// Size 0x18 (Full Size[0xb0] - InheritedSize[0x98]
-class TaleQuestEnumSwitchStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x18_GSHZG[0x18];                               // 0x98(0x18)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestFireEventStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestUpdateSpyglassTargetLocationStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class ProvokeHitReactionStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0xc0 (Full Size[0x158] - InheritedSize[0x98]
-class TaleQuestAwaitCrewShipSinkStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0xc0_W88Y6[0xc0];                               // 0x98(0xc0)
-};
-
-
-// Size 0x40 (Full Size[0xc0] - InheritedSize[0x80]
-class InvokeDamageDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableActor                                    ActorToDamage;                                     // 0x80(0x30)
-	class UClass*                                                DamageType;                                        // 0xb0(0x8)
-	float                                                        DamageAmount;                                      // 0xb8(0x4)
-	char                                                         DamageReason;                                      // 0xbc(0x1)
-	char                                                         pad0x3_OX8VY[0x3];                                 // 0xbd(0x3)
-};
-
-
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class TaleQuestAwaitCrewShipSinkStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableGuid                                     CrewId;                                            // 0x80(0x30)
-};
-
-
-// Size 0x68 (Full Size[0xe8] - InheritedSize[0x80]
-class CallObjectFunctionStepDesc: public TaleQuestStepDesc
-{
-public:
-	class Object*                                                Target;                                            // 0x80(0x8)
-	struct ClassFunctionSelectionType                            Function;                                          // 0x88(0x10)
-	char                                                         pad0x50_MEAWH[0x50];                               // 0x98(0x50)
-};
-
-
 // Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
 class GetActorOfInterestStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
-class TaleQuestRemoveQuestBookStepDesc: public TaleQuestStepDesc
-{
-public:
-};
-
-
-// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
-class TaleQuestFramedStepDesc: public TaleQuestStepDesc
-{
-public:
-	TArray<class TaleQuestServiceDesc*>                          Services;                                          // 0x80(0x10)
-	struct UserDefinedStructWithSerialisableValue                VariablesWithDefaults;                             // 0x90(0x20)
-	struct InlineUserDefinedStructDetails                        GeneratedVariables;                                // 0xb0(0x8)
-};
-
-
-// Size 0x20 (Full Size[0xb8] - InheritedSize[0x98]
-class ParticipantRadiusArrayTrackerStep: public TaleQuestStep
-{
-public:
-	class ParticipantRadiusArrayTrackerStepDesc*                 Desc;                                              // 0x98(0x8)
-	char                                                         pad0x18_IWX44[0x18];                               // 0xa0(0x18)
-};
-
-
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class TaleQuestStarFieldPuzzleEndStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableActor                                    StarFieldPuzzleActor;                              // 0x80(0x30)
-};
-
-
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class WaitForGameEventToCompleteStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableGameEvent                                GameEvent;                                         // 0x80(0x30)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GameEventExclusionZoneTaleServiceDesc: public TaleQuestServiceDesc
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TaleQuestParticipantDeathServiceDesc: public TaleQuestServiceDesc
-{
-public:
-};
-
-
-// Size 0x90 (Full Size[0x128] - InheritedSize[0x98]
-class WaitForQueryableStateValueStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x90_KJGEH[0x90];                               // 0x98(0x90)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class SplinePathingActorActivationStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x48 (Full Size[0xe0] - InheritedSize[0x98]
-class PlaySequencerAnimationOnCutsceneActorStep: public TaleQuestStep
-{
-public:
-	class PlaySequencerAnimationOnCutsceneActorStepDesc*         StepDesc;                                          // 0x98(0x8)
-	class SequencerCutSceneActor*                                SequencerCutSceneActor;                            // 0xa0(0x8)
-	TArray<struct PossessableSequence>                           PossessableSequences;                              // 0xa8(0x10)
-	char                                                         pad0x28_BF8VS[0x28];                               // 0xb8(0x28)
-};
-
-
-// Size 0x90 (Full Size[0x110] - InheritedSize[0x80]
-class FindNamedPointStepDescBase: public TaleQuestStepDesc
-{
-public:
-	char                                                         pad0x20_OHAAN[0x20];                               // 0x80(0x20)
-	struct QuestVariableActor                                    ActorToSearch;                                     // 0xa0(0x30)
-	struct QuestVariableName                                     GroupNamePin;                                      // 0xd0(0x30)
-	struct FName                                                 PointGroupName;                                    // 0x100(0x8)
-	char                                                         SearchMethod;                                      // 0x108(0x1)
-	char                                                         ReturnInSpace;                                     // 0x109(0x1)
-	char                                                         pad0x6_51KLR[0x6];                                 // 0x10a(0x6)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestAdvanceRiddleMapStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
-class TaleQuestRemoveMapStep: public TaleQuestStep
-{
-public:
-	class TaleQuestRemoveMapStepDesc*                            StepDesc;                                          // 0x98(0x8)
-};
-
-
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class TaleQuestStartPermanentPromptAndWaitForEndEventStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariablePrioritisedPrompt                        Prompt;                                            // 0x80(0x30)
-};
-
-
-// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
-class TaleQuestArrayItemStepBaseDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariable                                         ArrayQuestVar;                                     // 0x80(0x30)
-	struct QuestVariable                                         ItemQuestVar;                                      // 0xb0(0x30)
-};
-
-
-// Size 0x20 (Full Size[0xa0] - InheritedSize[0x80]
-class TaleQuestPredicateBranchStepDesc: public TaleQuestStepDesc
-{
-public:
-	int                                                          NumBranches;                                       // 0x80(0x4)
-	char                                                         pad0x4_TXK3C[0x4];                                 // 0x84(0x4)
-	class TaleQuestPhaseBranchSelectorPredicateBase*             BranchedTaskAssignmentFunction;                    // 0x88(0x8)
-	TArray<struct TaleQuestPredicateBranchedTaskDesc>            BranchedTasks;                                     // 0x90(0x10)
-};
-
-
-// Size 0x40 (Full Size[0xd8] - InheritedSize[0x98]
-class DebugTaleAddInstancedLevelStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x8_KVNV7[0x8];                                 // 0x98(0x8)
-	class DebugTaleAddInstancedLevelStepDesc*                    StepDesc;                                          // 0xa0(0x8)
-	struct FString                                               InstancedLevelPath;                                // 0xa8(0x10)
-	char                                                         pad0x20_NEKOU[0x20];                               // 0xb8(0x20)
-};
-
-
-// Size 0x198 (Full Size[0x230] - InheritedSize[0x98]
-class TaleQuestSelectShipwreckLocationFromValidCandidatesStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x78_KYUR8[0x78];                               // 0x98(0x78)
-	class TaleQuestSelectorService*                              CachedSelectorService;                             // 0x110(0x8)
-	char                                                         pad0x118_S424Z[0x118];                             // 0x118(0x118)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TaleQuestMerchantContractsServiceDesc: public TaleQuestServiceDesc
-{
-public:
-};
-
-
-// Size 0x28 (Full Size[0x88] - InheritedSize[0x60]
-class IslandReservationTaleService: public TaleQuestService
-{
-public:
-	char                                                         pad0x18_Z3AUQ[0x18];                               // 0x60(0x18)
-	struct FName                                                 NameOfIsland;                                      // 0x78(0x8)
-	class IslandReservationTaleServiceDesc*                      IslandReservationTaleServiceDesc;                  // 0x80(0x8)
-};
-
-
-// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
-class VisualiseLoggerEQSResultsTaleStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableArray                                    ResultsArray;                                      // 0x80(0x30)
-	struct QuestVariableVector                                   SelectedResult;                                    // 0xb0(0x30)
-};
-
-
-// Size 0x50 (Full Size[0xb0] - InheritedSize[0x60]
-class TaleQuestScopeService: public TaleQuestService
-{
-public:
-	char                                                         pad0x50_JV3UZ[0x50];                               // 0x60(0x50)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CutsceneResponsesTaleServiceDesc: public TaleQuestServiceDesc
-{
-public:
-};
-
-
-// Size 0x68 (Full Size[0xe8] - InheritedSize[0x80]
-class TaleQuestGetArrayElementStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableArray                                    InputArray;                                        // 0x80(0x30)
-	int                                                          Index;                                             // 0xb0(0x4)
-	char                                                         pad0x4_04I8B[0x4];                                 // 0xb4(0x4)
-	struct QuestVariableAny                                      OutputEntry;                                       // 0xb8(0x30)
-};
-
-
-// Size 0x40 (Full Size[0xc0] - InheritedSize[0x80]
-class DebugTaleAddInstancedLevelStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct FText                                                 InstancedLevelKeyword;                             // 0x80(0x38)
-	char                                                         pad0x8_0ZXP0[0x8];                                 // 0xb8(0x8)
-};
-
-
-// Size 0x20 (Full Size[0xb8] - InheritedSize[0x98]
-class ParticipantRadiusTrackerStep: public TaleQuestStep
-{
-public:
-	class ParticipantRadiusTrackerStepDesc*                      Desc;                                              // 0x98(0x8)
-	char                                                         pad0x18_4CV2K[0x18];                               // 0xa0(0x18)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestGetVoyageGeneratorIslandStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestGetParticipatingCrewsInRadiusStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x58 (Full Size[0xf0] - InheritedSize[0x98]
-class WaitForActorToFullyDockStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x58_I3GUG[0x58];                               // 0x98(0x58)
-};
-
-
-// Size 0x18 (Full Size[0x98] - InheritedSize[0x80]
-class TaleQuestArrayOperationStepBaseDesc: public TaleQuestStepDesc
-{
-public:
-	struct FName                                                 Array1;                                            // 0x80(0x8)
-	struct FName                                                 Array2;                                            // 0x88(0x8)
-	struct FName                                                 Result;                                            // 0x90(0x8)
-};
-
-
-// Size 0x60 (Full Size[0xf8] - InheritedSize[0x98]
-class GenerateTinySharkHotspotsStep: public TaleQuestStep
-{
-public:
-	class GenerateTinySharkHotspotsStepDesc*                     Desc;                                              // 0x98(0x8)
-	class TaleQuestEQSService*                                   CachedTaleEQSService;                              // 0xa0(0x8)
-	int                                                          NumGeneratedPoints;                                // 0xa8(0x4)
-	char                                                         pad0x4_YD5OF[0x4];                                 // 0xac(0x4)
-	TArray<struct Vector>                                        HotspotPathPoints;                                 // 0xb0(0x10)
-	char                                                         pad0x38_0H6LS[0x38];                               // 0xc0(0x38)
-};
-
-
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class TaleQuestCrewGameEventBlockingTaleServiceDesc: public TaleQuestServiceDesc
-{
-public:
-	float                                                        GracePeriodAfterServiceStops;                      // 0x28(0x4)
-	char                                                         pad0x4_LHIZR[0x4];                                 // 0x2c(0x4)
-};
-
-
-// Size 0x30 (Full Size[0xe8] - InheritedSize[0xb8]
-class TaleQuestAddRiddleMapUsingVariableStepDesc: public TaleQuestAddRiddleMapBaseStepDesc
-{
-public:
-	struct QuestVariableTextArray                                TextVariable;                                      // 0xb8(0x30)
-};
-
-
-// Size 0x10 (Full Size[0x90] - InheritedSize[0x80]
-class RemoveFlameOfFateTypeStepDesc: public TaleQuestStepDesc
-{
-public:
-	char                                                         FlameOfFateTypeToRemove;                           // 0x80(0x1)
-	char                                                         pad0x7_QNPUN[0x7];                                 // 0x81(0x7)
-	class UClass*                                                LanternItemCategory;                               // 0x88(0x8)
-};
-
-
-// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
-class LinkEQSContextWithVariableStep: public TaleQuestStep
-{
-public:
-	class LinkEQSContextWithVariableStepDesc*                    Desc;                                              // 0x98(0x8)
-};
-
-
-// Size 0x70 (Full Size[0xf0] - InheritedSize[0x80]
-class GenerateTinySharkHotspotsStepDesc: public TaleQuestStepDesc
-{
-public:
-	int                                                          NumberOfHotspotsToGenerate;                        // 0x80(0x4)
-	char                                                         pad0x4_9SI2K[0x4];                                 // 0x84(0x4)
-	class EnvQuery*                                              EQSQuery;                                          // 0x88(0x8)
-	struct QuestVariableVector                                   StartLocation;                                     // 0x90(0x30)
-	struct QuestVariableVectorArray                              OutPoints;                                         // 0xc0(0x30)
-};
-
-
-// Size 0xc0 (Full Size[0x120] - InheritedSize[0x60]
-class TaleQuestMapService: public TaleQuestService
-{
-public:
-	char                                                         pad0xc0_XNMT0[0xc0];                               // 0x60(0xc0)
-};
-
-
-// Size 0x58 (Full Size[0xd8] - InheritedSize[0x80]
-class TaleQuestStructStepDescBase: public TaleQuestStepDesc
-{
-public:
-	class ScriptStruct*                                          Struct;                                            // 0x80(0x8)
-	char                                                         pad0x50_N5U55[0x50];                               // 0x88(0x50)
-};
-
-
-// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
-class TaleQuestClearTaleProposalsStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct FName                                                 CampaignId;                                        // 0x80(0x8)
-};
-
-
-// Size 0x20 (Full Size[0x80] - InheritedSize[0x60]
-class TaleQuestSuppressIslandBannersService: public TaleQuestService
-{
-public:
-	class TaleQuestSuppressIslandBannersServiceDesc*             Desc;                                              // 0x60(0x8)
-	char                                                         pad0x18_08Y6E[0x18];                               // 0x68(0x18)
-};
-
-
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class TaleQuestStarFieldPuzzleDimStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableActor                                    StarFieldPuzzleActor;                              // 0x80(0x30)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class FindNamedPointStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GameEventBlockingTaleServiceDesc: public TaleQuestServiceDesc
-{
-public:
-};
-
-
-// Size 0x28 (Full Size[0x88] - InheritedSize[0x60]
-class GameEventExclusionZoneTaleService: public TaleQuestService
-{
-public:
-	TArray<struct GameEventExclusionZone>                        EventExclusionZones;                               // 0x60(0x10)
-	char                                                         pad0x18_5ECKJ[0x18];                               // 0x70(0x18)
-};
-
-
-// Size 0x68 (Full Size[0x100] - InheritedSize[0x98]
-class SpawnPhasedActorWithTransformStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x68_41008[0x68];                               // 0x98(0x68)
-};
-
-
-// Size 0xc8 (Full Size[0x148] - InheritedSize[0x80]
-class ParticipantRadiusTrackerStepDesc: public TaleQuestStepDesc
-{
-public:
-	float                                                        DurationBetweenChecks;                             // 0x80(0x4)
-	char                                                         pad0x4_U5L4A[0x4];                                 // 0x84(0x4)
-	struct QuestVariableVector                                   Location;                                          // 0x88(0x30)
-	struct QuestVariableFloat                                    Radius;                                            // 0xb8(0x30)
-	struct QuestVariableActorArray                               PlayersOutsideRadius;                              // 0xe8(0x30)
-	struct QuestVariableActorArray                               PlayersInsideRadius;                               // 0x118(0x30)
-};
-
-
-// Size 0x80 (Full Size[0xe0] - InheritedSize[0x60]
-class TaleQuestPredicatedBranchPhasingService: public TaleQuestService
-{
-public:
-	TArray<class PhasedClusterRoot*>                             SpawnedPhaseClustersRoots;                         // 0x60(0x10)
-	class TaleQuestPredicatedBranchPhasingServiceDesc*           ServiceDesc;                                       // 0x70(0x8)
-	char                                                         pad0x68_4A4RP[0x68];                               // 0x78(0x68)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class EnableInteractionWithActorStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TaleQuestInteractionPreventionServiceDesc: public TaleQuestServiceDesc
-{
-public:
-};
-
-
-// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
-class TaleQuestShipSetSinkingParamsServiceDesc: public TaleQuestServiceDesc
-{
-public:
-	struct QuestVariableGuid                                     CrewId;                                            // 0x28(0x30)
-	class ShipSinkingParametersDataAsset*                        SmallShipSinkingData;                              // 0x58(0x8)
-	class ShipSinkingParametersDataAsset*                        MediumShipSinkingData;                             // 0x60(0x8)
-	class ShipSinkingParametersDataAsset*                        LargeShipSinkingData;                              // 0x68(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestDisableInteractionStep: public TaleQuestStep
 {
 public:
 };
@@ -2184,6 +718,74 @@ public:
 };
 
 
+// Size 0x90 (Full Size[0x110] - InheritedSize[0x80]
+class SpawnDebrisAtVectorLocationStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableActorAssetType                           ActorToSpawn;                                      // 0x80(0x30)
+	struct QuestVariableVector                                   LocatorVar;                                        // 0xb0(0x30)
+	struct QuestVariableActor                                    ActorVar;                                          // 0xe0(0x30)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class EnableInteractionWithActorStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0xd8 (Full Size[0x138] - InheritedSize[0x60]
+class TaleQuestEQSService: public TaleQuestService
+{
+public:
+	char                                                         pad0xd8_MNEPW[0xd8];                               // 0x60(0xd8)
+};
+
+
+// Size 0x10 (Full Size[0x90] - InheritedSize[0x80]
+class WaitForHealthToReachFractionStepDesc: public TaleQuestStepDesc
+{
+public:
+	class Actor*                                                 HealthOwner;                                       // 0x80(0x8)
+	float                                                        HealthFraction;                                    // 0x88(0x4)
+	char                                                         pad0x4_NDNXH[0x4];                                 // 0x8c(0x4)
+};
+
+
+// Size 0x168 (Full Size[0x1e8] - InheritedSize[0x80]
+class PlaySequencerAnimationOnCutsceneActorStepDesc: public TaleQuestStepDesc
+{
+public:
+	class LevelSequence*                                         LevelSequence;                                     // 0x80(0x8)
+	float                                                        Delay;                                             // 0x88(0x4)
+	char                                                         pad0x4_17II0[0x4];                                 // 0x8c(0x4)
+	struct QuestVariableActor                                    DockableBaseActor;                                 // 0x90(0x30)
+	struct QuestVariableActor                                    SequencerCutSceneActor;                            // 0xc0(0x30)
+	struct QuestVariableActor                                    ActorToPossess;                                    // 0xf0(0x30)
+	struct QuestVariableArray                                    AdditionalPossessables;                            // 0x120(0x30)
+	struct QuestVariableActor                                    ManuallySetInteractor;                             // 0x150(0x30)
+	struct QuestVariableActor                                    InteractingActor;                                  // 0x180(0x30)
+	struct FString                                               PossessableName;                                   // 0x1b0(0x10)
+	class SceneDialogueData*                                     DialogueData;                                      // 0x1c0(0x8)
+	TArray<struct Text>                                          LocalisableNames;                                  // 0x1c8(0x10)
+	bool                                                         IsLevelSequenceActorAlwaysRelevant;                // 0x1d8(0x1)
+	bool                                                         IsLooping;                                         // 0x1d9(0x1)
+	char                                                         pad0x2_4SQUJ[0x2];                                 // 0x1da(0x2)
+	float                                                        SubtitleSphereRadiusInCm;                          // 0x1dc(0x4)
+	class LevelSequence*                                         FemaleLevelSequence;                               // 0x1e0(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x90] - InheritedSize[0x80]
+class TaleQuestAddQuestBookStepDesc: public TaleQuestStepDesc
+{
+public:
+	class UClass*                                                QuestBookDesc;                                     // 0x80(0x8)
+	class UClass*                                                RemapperClass;                                     // 0x88(0x8)
+};
+
+
 // Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
 class TaleQuestGetVoyageGeneratorIslandStepDesc: public TaleQuestStepDesc
 {
@@ -2193,40 +795,101 @@ public:
 };
 
 
-// Size 0x30 (Full Size[0x90] - InheritedSize[0x60]
-class CutsceneResponsesTaleService: public TaleQuestService
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestGetGlobalDigSpotDataStep: public TaleQuestStep
 {
 public:
-	TArray<class CutsceneResponseCoordinator*>                   TrackedResponseCoordinators;                       // 0x60(0x10)
-	TArray<class CutsceneResponseComponent*>                     TrackedResponseComponents;                         // 0x70(0x10)
-	TArray<class Actor*>                                         ResponseRelevantActors;                            // 0x80(0x10)
 };
 
 
-// Size 0x90 (Full Size[0x110] - InheritedSize[0x80]
-class TaleQuestEnumSwitchStepDesc: public TaleQuestStepDesc
+// Size 0x18 (Full Size[0x98] - InheritedSize[0x80]
+class TaleQuestShipDiveStepDesc: public TaleQuestStepDesc
 {
 public:
-	struct QuestVariable                                         EnumVar;                                           // 0x80(0x30)
-	class Enum*                                                  Enum;                                              // 0xb0(0x8)
-	class TaleQuestStepDesc*                                     DefaultBranch;                                     // 0xb8(0x8)
-	char                                                         pad0x50_NSR4I[0x50];                               // 0xc0(0x50)
+	float                                                        DiveMusicWindUpTime;                               // 0x80(0x4)
+	bool                                                         AutoStopDiveMusic;                                 // 0x84(0x1)
+	char                                                         pad0x3_6RG2M[0x3];                                 // 0x85(0x3)
+	float                                                        StopDiveMusicAfter;                                // 0x88(0x4)
+	struct FName                                                 MusicThemeName;                                    // 0x8c(0x8)
+	char                                                         pad0x4_5FL6F[0x4];                                 // 0x94(0x4)
 };
 
 
-// Size 0x48 (Full Size[0xa8] - InheritedSize[0x60]
-class TaleQuestCargoRunContractsService: public TaleQuestService
+// Size 0xe0 (Full Size[0x160] - InheritedSize[0x80]
+class LoadSequencerAnimationStepDesc: public TaleQuestStepDesc
 {
 public:
-	TArray<class TaleQuestCargoRunContract*>                     Contracts;                                         // 0x60(0x10)
-	char                                                         pad0x38_5GH01[0x38];                               // 0x70(0x38)
+	TArray<class LevelSequence*>                                 LevelSequencesToLoad;                              // 0x80(0x10)
+	struct QuestVariableActor                                    TargetActorToSpawn;                                // 0x90(0x30)
+	struct QuestVariableActor                                    LevelSequenceActorSpawnLocation;                   // 0xc0(0x30)
+	struct QuestVariableActor                                    SequencerCutSceneActor;                            // 0xf0(0x30)
+	struct TaleQuestPhaseClusterRootActor                        OptionalPhaseCluster;                              // 0x120(0x30)
+	bool                                                         AttachToTargetActor;                               // 0x150(0x1)
+	char                                                         pad0x3_I6Z0S[0x3];                                 // 0x151(0x3)
+	struct FName                                                 AttachSocketName;                                  // 0x154(0x8)
+	bool                                                         PlayGlobally;                                      // 0x15c(0x1)
+	char                                                         pad0x3_12QE3[0x3];                                 // 0x15d(0x3)
+};
+
+
+// Size 0x18 (Full Size[0x98] - InheritedSize[0x80]
+class TaleQuestUpdateCheckpointStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct RewardId                                              RewardIdToAward;                                   // 0x80(0x8)
+	struct FName                                                 CampaignIdToRemove;                                // 0x88(0x8)
+	struct FName                                                 Feature;                                           // 0x90(0x8)
 };
 
 
 // Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class StartSuppressingCutsceneResponsesStep: public TaleQuestStep
+class TaleQuestClearTaleProposalsStep: public TaleQuestStep
 {
 public:
+};
+
+
+// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
+class TaleQuestArrayItemStepBaseDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariable                                         ArrayQuestVar;                                     // 0x80(0x30)
+	struct QuestVariable                                         ItemQuestVar;                                      // 0xb0(0x30)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TaleQuestMapServiceDesc: public TaleQuestServiceDesc
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestAddBountyMapStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0xf8 (Full Size[0x178] - InheritedSize[0x80]
+class PlaySequencerAnimationStepDesc: public TaleQuestStepDesc
+{
+public:
+	class LevelSequence*                                         LevelSequenceToPlay;                               // 0x80(0x8)
+	struct QuestVariableActor                                    TargetActorToSpawn;                                // 0x88(0x30)
+	struct QuestVariableActor                                    LevelSequenceActorSpawnLocation;                   // 0xb8(0x30)
+	struct QuestVariableActor                                    DockableBaseActor;                                 // 0xe8(0x30)
+	struct QuestVariableActor                                    InteractingActor;                                  // 0x118(0x30)
+	bool                                                         PlayGlobally;                                      // 0x148(0x1)
+	bool                                                         IsLevelSequenceActorAlawaysRelevant;               // 0x149(0x1)
+	char                                                         pad0x6_W9LXW[0x6];                                 // 0x14a(0x6)
+	class SceneDialogueData*                                     DialogueData;                                      // 0x150(0x8)
+	TArray<struct Text>                                          LocalisableNames;                                  // 0x158(0x10)
+	bool                                                         IsLooping;                                         // 0x168(0x1)
+	char                                                         pad0x3_CRBQ7[0x3];                                 // 0x169(0x3)
+	float                                                        SubtitleSphereRadiusInCm;                          // 0x16c(0x4)
+	class LevelSequence*                                         FemaleLevelSequenceToPlay;                         // 0x170(0x8)
 };
 
 
@@ -2237,39 +900,616 @@ public:
 };
 
 
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class FindItemInCollectorsChestStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestGetArrayElementStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x68 (Full Size[0xe8] - InheritedSize[0x80]
+class TaleQuestGetArrayElementStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableArray                                    InputArray;                                        // 0x80(0x30)
+	int                                                          Index;                                             // 0xb0(0x4)
+	char                                                         pad0x4_ZIJKW[0x4];                                 // 0xb4(0x4)
+	struct QuestVariableAny                                      OutputEntry;                                       // 0xb8(0x30)
+};
+
+
+// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
+class TaleQuestPermanentPromptStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariablePrioritisedPrompt                        Prompt;                                            // 0x80(0x30)
+	char                                                         StartOrStop;                                       // 0xb0(0x1)
+	char                                                         pad0x7_W8TBR[0x7];                                 // 0xb1(0x7)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestFireEventStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestStarFieldPuzzleDimStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
+class SetEQSNamedContextStep: public TaleQuestStep
+{
+public:
+	class SetEQSNamedContextStepDesc*                            Desc;                                              // 0x98(0x8)
+};
+
+
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class IslandReservationTaleServiceDesc: public TaleQuestServiceDesc
+{
+public:
+	struct QuestVariableName                                     IslandName;                                        // 0x28(0x30)
+};
+
+
+// Size 0x40 (Full Size[0xc0] - InheritedSize[0x80]
+class RemoveGameEventExclusionZoneStepDesc: public TaleQuestStepDesc
+{
+public:
+	float                                                        Radius;                                            // 0x80(0x4)
+	bool                                                         ShouldGetRadiusFromRemoteConfig;                   // 0x84(0x1)
+	char                                                         pad0x3_P5DB7[0x3];                                 // 0x85(0x3)
+	struct FName                                                 RemoteConfigKeyRadius;                             // 0x88(0x8)
+	struct QuestVariableVector                                   Location;                                          // 0x90(0x30)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestGetCollectionItemCountStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0xa8] - InheritedSize[0x98]
+class DoEQSQueryStep: public TaleQuestStep
+{
+public:
+	class DoEQSQueryStepDesc*                                    Desc;                                              // 0x98(0x8)
+	class TaleQuestEQSService*                                   CachedTaleEQSService;                              // 0xa0(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class RequestGameEventBlockStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x40 (Full Size[0xc0] - InheritedSize[0x80]
+class ProvokeHitReactionDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableActor                                    ActorToProvoke;                                    // 0x80(0x30)
+	class UClass*                                                DamageType;                                        // 0xb0(0x8)
+	float                                                        DamageAmount;                                      // 0xb8(0x4)
+	char                                                         DamageReason;                                      // 0xbc(0x1)
+	char                                                         pad0x3_HOZFF[0x3];                                 // 0xbd(0x3)
+};
+
+
+// Size 0x90 (Full Size[0x128] - InheritedSize[0x98]
+class WaitForQueryableStateValueStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x90_XTDLT[0x90];                               // 0x98(0x90)
+};
+
+
+// Size 0x18 (Full Size[0xb0] - InheritedSize[0x98]
+class TaleQuestStarFieldPuzzleSetupAndWaitForCompletionStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x18_AQJIA[0x18];                               // 0x98(0x18)
+};
+
+
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class TaleQuestMacroRootStepDesc: public TaleQuestStepDesc
+{
+public:
+	class TaleQuestStepDesc*                                     BodyDesc;                                          // 0x80(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestPermanentPromptStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0xa8] - InheritedSize[0x98]
+class TaleQuestStarFieldPuzzleEndStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x10_G0UQ9[0x10];                               // 0x98(0x10)
+};
+
+
+// Size 0x40 (Full Size[0xa0] - InheritedSize[0x60]
+class TaleQuestCrewGameEventBlockingTaleService: public TaleQuestService
+{
+public:
+	char                                                         pad0x38_JZR0N[0x38];                               // 0x60(0x38)
+	class TaleQuestCrewGameEventBlockingTaleServiceDesc*         ServiceDesc;                                       // 0x98(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestAddMerchantMapStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x190 (Full Size[0x228] - InheritedSize[0x98]
+class WaitForItemPickupStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x190_2ECFH[0x190];                             // 0x98(0x190)
+};
+
+
+// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
+class TaleQuestEventStepDescBase: public TaleQuestStepDesc
+{
+public:
+	class Object*                                                Dispatcher;                                        // 0x80(0x8)
+	struct NativeAndUserDefinedStructSelector                    EventType;                                         // 0x88(0x8)
+	char                                                         pad0x50_NUERU[0x50];                               // 0x90(0x50)
+};
+
+
+// Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
+class TaleQuestRemoveQuestBookStepDesc: public TaleQuestStepDesc
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestAdvanceRiddleMapStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestArrayAppendStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
+class SetReplenishableContentSelectorStepDesc: public TaleQuestStepDesc
+{
+public:
+	class StorageContainerContentTypeSelector*                   ContentTypeSelector;                               // 0x80(0x8)
+	struct QuestVariableActor                                    ReplenishableActor;                                // 0x88(0x30)
+};
+
+
+// Size 0x50 (Full Size[0xb0] - InheritedSize[0x60]
+class TaleQuestScopeService: public TaleQuestService
+{
+public:
+	char                                                         pad0x50_ABTJH[0x50];                               // 0x60(0x50)
+};
+
+
+// Size 0x68 (Full Size[0x100] - InheritedSize[0x98]
+class SpawnPhasedActorWithTransformStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x68_BBAR9[0x68];                               // 0x98(0x68)
+};
+
+
+// Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
+class RequestGameEventBlockStepDesc: public TaleQuestStepDesc
+{
+public:
+};
+
+
+// Size 0xc0 (Full Size[0x140] - InheritedSize[0x80]
+class TaleQuestGetGlobalDigSpotDataStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableItemSpawnDataType                        OutputItemSpawnData;                               // 0x80(0x30)
+	struct QuestVariableOrientedPoint                            OutputOrientedPoint;                               // 0xb0(0x30)
+	struct QuestVariableGuid                                     OutputVoyageID;                                    // 0xe0(0x30)
+	struct QuestVariableName                                     OutputStoryName;                                   // 0x110(0x30)
+};
+
+
+// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
+class TaleQuestGrantRewardStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct RewardId                                              RewardId;                                          // 0x80(0x8)
+	class UClass*                                                Company;                                           // 0x88(0x8)
+	struct Guid                                                  Id;                                                // 0x90(0x10)
+	bool                                                         ShouldGrantToAlliedCrews;                          // 0xa0(0x1)
+	char                                                         pad0x7_9N1V7[0x7];                                 // 0xa1(0x7)
+	struct QuestVariablePlayerActor                              SpecificPlayerToAward;                             // 0xa8(0x30)
+	struct FName                                                 Feature;                                           // 0xd8(0x8)
+};
+
+
+// Size 0x40 (Full Size[0xc0] - InheritedSize[0x80]
+class AddGameEventExclusionZoneStepDesc: public TaleQuestStepDesc
+{
+public:
+	float                                                        Radius;                                            // 0x80(0x4)
+	bool                                                         ShouldGetRadiusFromRemoteConfig;                   // 0x84(0x1)
+	char                                                         pad0x3_M9MLD[0x3];                                 // 0x85(0x3)
+	struct FName                                                 RemoteConfigKeyRadius;                             // 0x88(0x8)
+	struct QuestVariableVector                                   Location;                                          // 0x90(0x30)
+};
+
+
 // Size 0x50 (Full Size[0xd0] - InheritedSize[0x80]
 class SpawnLayerStepDesc: public TaleQuestStepDesc
 {
 public:
 	class LayerActorsDataAsset*                                  LayerAsset;                                        // 0x80(0x8)
 	bool                                                         SpawnPhased;                                       // 0x88(0x1)
-	char                                                         pad0x7_SPW2T[0x7];                                 // 0x89(0x7)
+	char                                                         pad0x7_U3N8Q[0x7];                                 // 0x89(0x7)
 	struct QuestVariableActor                                    ActorWithLayers;                                   // 0x90(0x30)
 	TArray<struct QuestVariableActor>                            SpawnedActors;                                     // 0xc0(0x10)
 };
 
 
-// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
-class WaitForQueryableStateValueStepDescBase: public TaleQuestStepDesc
+// Size 0x20 (Full Size[0x80] - InheritedSize[0x60]
+class TaleQuestParticipantDeathService: public TaleQuestService
 {
 public:
-	class UClass*                                                DataID;                                            // 0x80(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class RewardGenTaleQuestServiceDesc: public TaleQuestServiceDesc
-{
-public:
-	class TaleQuestWeightedItemDescSpawnDataAsset*               SpawnData;                                         // 0x28(0x8)
+	char                                                         pad0x20_RWJ4A[0x20];                               // 0x60(0x20)
 };
 
 
 // Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class WaitForSpawnedPawnBaseStepDesc: public TaleQuestStepDesc
+class TaleQuestEnableInteractionStepDesc: public TaleQuestStepDesc
 {
 public:
-	struct QuestVariableAISpawner                                AISpawner;                                         // 0x80(0x30)
+	struct QuestVariableActor                                    TargetActor;                                       // 0x80(0x30)
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class TaleQuestObstacleCourseSetupAndWaitForCompletionStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableActor                                    ObstacleCourseActor;                               // 0x80(0x30)
+};
+
+
+// Size 0x48 (Full Size[0xa8] - InheritedSize[0x60]
+class TaleQuestCargoRunContractsService: public TaleQuestService
+{
+public:
+	TArray<class TaleQuestCargoRunContract*>                     Contracts;                                         // 0x60(0x10)
+	char                                                         pad0x38_FWSTC[0x38];                               // 0x70(0x38)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestUpdateCheckpointStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0x70] - InheritedSize[0x60]
+class TaleQuestPlayerItemsCleaupService: public TaleQuestService
+{
+public:
+	class TaleQuestPlayerItemsCleaupServiceDesc*                 ServiceDesc;                                       // 0x60(0x8)
+	char                                                         pad0x8_J4R0I[0x8];                                 // 0x68(0x8)
+};
+
+
+// Size 0x98 (Full Size[0x118] - InheritedSize[0x80]
+class TaleQuestChooseIslandFromWeightsStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableNameArray                                IslandsToChooseFrom;                               // 0x80(0x30)
+	struct QuestVariableInt                                      DifficultyRank;                                    // 0xb0(0x30)
+	struct QuestVariableName                                     ChosenIsland;                                      // 0xe0(0x30)
+	class IslandTypeWeightsDataAsset*                            IslandTypeWeights;                                 // 0x110(0x8)
+};
+
+
+// Size 0x38 (Full Size[0xd0] - InheritedSize[0x98]
+class TaleQuestCrewTaskStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x38_PU01K[0x38];                               // 0x98(0x38)
+};
+
+
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
+class TaleQuestShipSetSinkingParamsServiceDesc: public TaleQuestServiceDesc
+{
+public:
+	struct QuestVariableGuid                                     CrewId;                                            // 0x28(0x30)
+	class ShipSinkingParametersDataAsset*                        SmallShipSinkingData;                              // 0x58(0x8)
+	class ShipSinkingParametersDataAsset*                        MediumShipSinkingData;                             // 0x60(0x8)
+	class ShipSinkingParametersDataAsset*                        LargeShipSinkingData;                              // 0x68(0x8)
+};
+
+
+// Size 0x10 (Full Size[0xa8] - InheritedSize[0x98]
+class TaleQuestMacroStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x10_8FS3D[0x10];                               // 0x98(0x10)
+};
+
+
+// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
+class TrackResponseCoordinatorStep: public TaleQuestStep
+{
+public:
+	class TrackResponseCoordinatorStepDesc*                      StepDesc;                                          // 0x98(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class SpawnPhasedItemStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class InvokeDamageStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x90 (Full Size[0x110] - InheritedSize[0x80]
+class SpawnPhasedActorWithTransformStepBaseDesc: public TaleQuestStepDesc
+{
+public:
+	char                                                         pad0x20_M3MN4[0x20];                               // 0x80(0x20)
+	bool                                                         MarkAsCritical;                                    // 0xa0(0x1)
+	char                                                         pad0x7_0UXOH[0x7];                                 // 0xa1(0x7)
+	struct FText                                                 CriticalActorLostMessage;                          // 0xa8(0x38)
+	struct QuestVariableActor                                    ActorVar;                                          // 0xe0(0x30)
+};
+
+
+// Size 0x10 (Full Size[0xa8] - InheritedSize[0x98]
+class SpawnDebrisAtVectorLocationStep: public TaleQuestStep
+{
+public:
+	class SpawnDebrisAtVectorLocationStepDesc*                   Desc;                                              // 0x98(0x8)
+	class TaleQuestActorService*                                 ActorService;                                      // 0xa0(0x8)
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class TaleQuestStarFieldPuzzleSetupAndWaitForCompletionStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableActor                                    StarFieldPuzzleActor;                              // 0x80(0x30)
+};
+
+
+// Size 0x90 (Full Size[0x128] - InheritedSize[0x98]
+class TaleQuestSelectEntryFromArrayStep: public TaleQuestStep
+{
+public:
+	struct QuestVariableArray                                    InputArray;                                        // 0x98(0x30)
+	struct QuestVariable                                         OutputEntry;                                       // 0xc8(0x30)
+	struct QuestVariableInt                                      OutputEntryIndex;                                  // 0xf8(0x30)
+};
+
+
+// Size 0x28 (Full Size[0x88] - InheritedSize[0x60]
+class IslandReservationTaleService: public TaleQuestService
+{
+public:
+	char                                                         pad0x18_HIABV[0x18];                               // 0x60(0x18)
+	struct FName                                                 NameOfIsland;                                      // 0x78(0x8)
+	class IslandReservationTaleServiceDesc*                      IslandReservationTaleServiceDesc;                  // 0x80(0x8)
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class TaleQuestStartPermanentPromptAndWaitForEndEventStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariablePrioritisedPrompt                        Prompt;                                            // 0x80(0x30)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class SplinePathingActorActivationStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class TrackResponseCoordinatorStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableUObject                                  CutsceneResponseCoordinator;                       // 0x80(0x30)
+};
+
+
+// Size 0x40 (Full Size[0xc0] - InheritedSize[0x80]
+class WaitForActorOfInterestToUnregisterStepDesc: public TaleQuestStepDesc
+{
+public:
+	class UClass*                                                ActorOfInterestId;                                 // 0x80(0x8)
+	struct FText                                                 ActorOfInterestUnregisteredFailureMessage;         // 0x88(0x38)
+};
+
+
+// Size 0x10 (Full Size[0x70] - InheritedSize[0x60]
+class TaleQuestMerchantContractsService: public TaleQuestService
+{
+public:
+	TArray<class TaleQuestMerchantContract*>                     Contracts;                                         // 0x60(0x10)
+};
+
+
+// Size 0x18 (Full Size[0xb0] - InheritedSize[0x98]
+class LoadSequencerAnimationStep: public TaleQuestStep
+{
+public:
+	class LoadSequencerAnimationStepDesc*                        StepDesc;                                          // 0x98(0x8)
+	class SequencerCutSceneActor*                                SequencerCutSceneActor;                            // 0xa0(0x8)
+	class Actor*                                                 TargetToSpawnActor;                                // 0xa8(0x8)
+};
+
+
+// Size 0x68 (Full Size[0xe8] - InheritedSize[0x80]
+class CallObjectFunctionStepDesc: public TaleQuestStepDesc
+{
+public:
+	class Object*                                                Target;                                            // 0x80(0x8)
+	struct ClassFunctionSelectionType                            Function;                                          // 0x88(0x10)
+	char                                                         pad0x50_62RUY[0x50];                               // 0x98(0x50)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TaleQuestMerchantContractsServiceDesc: public TaleQuestServiceDesc
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class TaleQuestTaskStepDescBase: public TaleQuestStepDesc
+{
+public:
+	class TaleQuestStepDesc*                                     Task;                                              // 0x80(0x8)
+};
+
+
+// Size 0x60 (Full Size[0xc0] - InheritedSize[0x60]
+class TaleQuestFlameOfFateService: public TaleQuestService
+{
+public:
+	class TaleQuestFlameOfFateServiceDesc*                       ServiceDesc;                                       // 0x60(0x8)
+	char                                                         pad0x58_4AV9P[0x58];                               // 0x68(0x58)
+};
+
+
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class TaleQuestSetDigSpotVoyageStatusStepDesc: public TaleQuestStepDesc
+{
+public:
+	char                                                         VoyageStatus;                                      // 0x80(0x1)
+	char                                                         pad0x7_8AJRO[0x7];                                 // 0x81(0x7)
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class SequentialArrayEntrySelectionStrategy: public TaleQuestArrayEntrySelectionStrategy
+{
+public:
+	char                                                         pad0x8_N7FP8[0x8];                                 // 0x28(0x8)
+};
+
+
+// Size 0x68 (Full Size[0xe8] - InheritedSize[0x80]
+class TaleQuestWaitForHandInStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableActor                                    HandInActor;                                       // 0x80(0x30)
+	class UClass*                                                SpecificItem;                                      // 0xb0(0x8)
+	struct QuestVariableItemDescType                             HandInItem;                                        // 0xb8(0x30)
+};
+
+
+// Size 0x48 (Full Size[0xa8] - InheritedSize[0x60]
+class TaleResourceBrokerService: public TaleQuestService
+{
+public:
+	char                                                         pad0x20_KBQI0[0x20];                               // 0x60(0x20)
+	TArray<struct MigrationActionPair>                           MigrationActions;                                  // 0x80(0x10)
+	char                                                         pad0x18_8MK4Y[0x18];                               // 0x90(0x18)
+};
+
+
+// Size 0x28 (Full Size[0xc0] - InheritedSize[0x98]
+class TaleQuestStartPermanentPromptAndWaitForEndEventStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x28_HZUJE[0x28];                               // 0x98(0x28)
+};
+
+
+// Size 0x58 (Full Size[0xf0] - InheritedSize[0x98]
+class TaleQuestAwaitEventStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x58_3J8C3[0x58];                               // 0x98(0x58)
+};
+
+
+// Size 0x20 (Full Size[0xa0] - InheritedSize[0x80]
+class TaleQuestStartCameraFadeStepDesc: public TaleQuestStepDesc
+{
+public:
+	float                                                        FromAlpha;                                         // 0x80(0x4)
+	float                                                        ToAlpha;                                           // 0x84(0x4)
+	float                                                        FadeTimeInSeconds;                                 // 0x88(0x4)
+	struct LinearColor                                           FadeColour;                                        // 0x8c(0x10)
+	bool                                                         ShouldFadeAudio;                                   // 0x9c(0x1)
+	bool                                                         HoldFadeWhenFinished;                              // 0x9d(0x1)
+	char                                                         pad0x2_BAMHL[0x2];                                 // 0x9e(0x2)
+};
+
+
+// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
+class DoEQSQueryStepDesc: public TaleQuestStepDesc
+{
+public:
+	class EnvQuery*                                              EQSQuery;                                          // 0x80(0x8)
+	struct QuestVariableArray                                    OutPoints;                                         // 0x88(0x30)
+};
+
+
+// Size 0x40 (Full Size[0xd8] - InheritedSize[0x98]
+class TaleQuestGrantRewardStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x40_28IG2[0x40];                               // 0x98(0x40)
 };
 
 
@@ -2285,73 +1525,144 @@ public:
 	TArray<struct PhasedActor>                                   PhasedActors;                                      // 0xa0(0x10)
 	TArray<struct PhasedItem>                                    PhasedItems;                                       // 0xb0(0x10)
 	struct FText                                                 CriticalActorHandedInByAnotherCrewFailureMessage;  // 0xc0(0x38)
-	char                                                         pad0x2d8_YOM7C[0x2d8];                             // 0xf8(0x2d8)
+	char                                                         pad0x2d8_YMJW3[0x2d8];                             // 0xf8(0x2d8)
 };
 
 
-// Size 0x90 (Full Size[0x128] - InheritedSize[0x98]
-class TaleQuestSelectEntryFromArrayStep: public TaleQuestStep
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class DestroySpawnedActorStepDesc: public TaleQuestStepDesc
 {
 public:
-	struct QuestVariableArray                                    InputArray;                                        // 0x98(0x30)
-	struct QuestVariable                                         OutputEntry;                                       // 0xc8(0x30)
-	struct QuestVariableInt                                      OutputEntryIndex;                                  // 0xf8(0x30)
+	struct QuestVariableActor                                    ActorVar;                                          // 0x80(0x30)
 };
 
 
-// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
-class TaleQuestEmissaryCompanyActionRewardBoostStepDesc: public TaleQuestStepDesc
+// Size 0x70 (Full Size[0xf0] - InheritedSize[0x80]
+class FindItemInCollectorsChestStepDesc: public TaleQuestStepDesc
 {
 public:
-	char                                                         CompanyActionType;                                 // 0x80(0x1)
-	char                                                         pad0x7_C0UYY[0x7];                                 // 0x81(0x7)
+	struct QuestVariableActor                                    CollectorsChest;                                   // 0x80(0x30)
+	struct QuestVariableActor                                    ItemInChest;                                       // 0xb0(0x30)
+	class UClass*                                                ItemToFind;                                        // 0xe0(0x8)
+	bool                                                         AllowChildClasses;                                 // 0xe8(0x1)
+	char                                                         pad0x7_WML5J[0x7];                                 // 0xe9(0x7)
 };
 
 
-// Size 0x40 (Full Size[0xc0] - InheritedSize[0x80]
-class RemoveGameEventExclusionZoneStepDesc: public TaleQuestStepDesc
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestUpdateSpyglassWakeVisibilityStep: public TaleQuestStep
 {
 public:
-	float                                                        Radius;                                            // 0x80(0x4)
-	bool                                                         ShouldGetRadiusFromRemoteConfig;                   // 0x84(0x1)
-	char                                                         pad0x3_RL17L[0x3];                                 // 0x85(0x3)
-	struct FName                                                 RemoteConfigKeyRadius;                             // 0x88(0x8)
-	struct QuestVariableVector                                   Location;                                          // 0x90(0x30)
 };
 
 
-// Size 0x10 (Full Size[0x70] - InheritedSize[0x60]
-class TaleQuestPlayerItemsCleaupService: public TaleQuestService
+// Size 0x10 (Full Size[0x90] - InheritedSize[0x80]
+class TaleQuestRemoveCommonToolsStepDesc: public TaleQuestStepDesc
 {
 public:
-	class TaleQuestPlayerItemsCleaupServiceDesc*                 ServiceDesc;                                       // 0x60(0x8)
-	char                                                         pad0x8_I65MO[0x8];                                 // 0x68(0x8)
+	TArray<class Class*>                                         ToolsToRemove;                                     // 0x80(0x10)
 };
 
 
-// Size 0x30 (Full Size[0x90] - InheritedSize[0x60]
-class RewardGenTaleQuestService: public TaleQuestService
+// Size 0x10 (Full Size[0x90] - InheritedSize[0x80]
+class RemoveFlameOfFateTypeStepDesc: public TaleQuestStepDesc
 {
 public:
-	class TaleQuestWeightedItemDescSpawnDataAsset*               GlobalSpawnData;                                   // 0x60(0x8)
-	TArray<int>                                                  ValidSpawnData;                                    // 0x68(0x10)
-	TArray<class ItemSpawnData*>                                 ItemsToSpawn;                                      // 0x78(0x10)
-	char                                                         pad0x8_IFPRL[0x8];                                 // 0x88(0x8)
+	char                                                         FlameOfFateTypeToRemove;                           // 0x80(0x1)
+	char                                                         pad0x7_VKXG8[0x7];                                 // 0x81(0x7)
+	class UClass*                                                LanternItemCategory;                               // 0x88(0x8)
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TaleQuestLockGhostShipDoorServiceDesc: public TaleQuestServiceDesc
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class StartSuppressingCutsceneResponsesStep: public TaleQuestStep
 {
 public:
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestRemoveQuestBookStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class TaleQuestStarFieldPuzzleDimStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableActor                                    StarFieldPuzzleActor;                              // 0x80(0x30)
 };
 
 
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class TaleQuestPlayerItemsCleaupServiceDesc: public TaleQuestServiceDesc
+class TaleQuestPredicatedBranchPhasingServiceDesc: public TaleQuestServiceDesc
 {
 public:
-	TArray<class Class*>                                         ItemDescsToRemove;                                 // 0x28(0x10)
+	bool                                                         ClampAssignments;                                  // 0x28(0x1)
+	bool                                                         TreatOutOfBoundsAssignmentsAsErrors;               // 0x29(0x1)
+	char                                                         pad0x2_XEJOA[0x2];                                 // 0x2a(0x2)
+	int                                                          NumberOfClusters;                                  // 0x2c(0x4)
+	class TaleQuestPhaseBranchSelectorPredicateBase*             PlayerAssignmentFunction;                          // 0x30(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class CallObjectFunctionStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class ProvokeHitReactionStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class TaleQuestGetParticipatingCrewsStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableGuidArray                                CrewIds;                                           // 0x80(0x30)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TaleQuestQueryableStatesServiceDesc: public TaleQuestServiceDesc
+{
+public:
+};
+
+
+// Size 0x198 (Full Size[0x230] - InheritedSize[0x98]
+class TaleQuestSelectShipwreckLocationFromValidCandidatesStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x78_XNULZ[0x78];                               // 0x98(0x78)
+	class TaleQuestSelectorService*                              CachedSelectorService;                             // 0x110(0x8)
+	char                                                         pad0x118_NMEML[0x118];                             // 0x118(0x118)
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class RewardGenTaleQuestServiceDesc: public TaleQuestServiceDesc
+{
+public:
+	class TaleQuestWeightedItemDescSpawnDataAsset*               SpawnData;                                         // 0x28(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class TaleQuestFlameOfFateServiceDesc: public TaleQuestServiceDesc
+{
+public:
+	class UClass*                                                LanternItemCategory;                               // 0x28(0x8)
+	char                                                         FlameOfFateTypeToSet;                              // 0x30(0x1)
+	bool                                                         SetFlameOnStart;                                   // 0x31(0x1)
+	char                                                         pad0x6_WK3Y6[0x6];                                 // 0x32(0x6)
 };
 
 
@@ -2359,97 +1670,172 @@ public:
 class GetVoyageDifficultyFromRankStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x38_LV8YT[0x38];                               // 0x98(0x38)
+	char                                                         pad0x38_IORQW[0x38];                               // 0x98(0x38)
 };
 
 
 // Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestAddCommonToolsStep: public TaleQuestStep
+class TaleQuestAddXMarksMapStep: public TaleQuestStep
 {
 public:
-};
-
-
-// Size 0x10 (Full Size[0xa8] - InheritedSize[0x98]
-class TaleQuestMacroStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x10_5L5VU[0x10];                               // 0x98(0x10)
 };
 
 
 // Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestGetGlobalDigSpotDataStep: public TaleQuestStep
+class AddGameEventExclusionZoneStep: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
-class StopSuppressingCutsceneResponsesStepDesc: public TaleQuestStepDesc
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class FindNamedPointAsTransformStep: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class RandomArrayEntrySelectionStrategy: public TaleQuestArrayEntrySelectionStrategy
+// Size 0x40 (Full Size[0xc0] - InheritedSize[0x80]
+class TaleQuestAddCommonToolsStepDesc: public TaleQuestStepDesc
 {
 public:
+	TArray<class Class*>                                         ToolsToGive;                                       // 0x80(0x10)
+	struct QuestVariableActor                                    PlayerToWieldImmediately;                          // 0x90(0x30)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestAddRiddleMapStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class FixedArrayEntrySelectionStrategy: public TaleQuestArrayEntrySelectionStrategy
+{
+public:
+	int                                                          IndexToSelect;                                     // 0x28(0x4)
+	char                                                         pad0x4_R6VTH[0x4];                                 // 0x2c(0x4)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class FindNamedPointAsVectorStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x30 (Full Size[0xe8] - InheritedSize[0xb8]
+class TaleQuestAddRiddleMapUsingVariableStepDesc: public TaleQuestAddRiddleMapBaseStepDesc
+{
+public:
+	struct QuestVariableTextArray                                TextVariable;                                      // 0xb8(0x30)
+};
+
+
+// Size 0x70 (Full Size[0xf0] - InheritedSize[0x80]
+class GenerateTinySharkHotspotsStepDesc: public TaleQuestStepDesc
+{
+public:
+	int                                                          NumberOfHotspotsToGenerate;                        // 0x80(0x4)
+	char                                                         pad0x4_YHOFD[0x4];                                 // 0x84(0x4)
+	class EnvQuery*                                              EQSQuery;                                          // 0x88(0x8)
+	struct QuestVariableVector                                   StartLocation;                                     // 0x90(0x30)
+	struct QuestVariableVectorArray                              OutPoints;                                         // 0xc0(0x30)
+};
+
+
+// Size 0xa0 (Full Size[0x120] - InheritedSize[0x80]
+class ActorRadiusTrackerStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableActor                                    TargetActor;                                       // 0x80(0x30)
+	float                                                        DurationBetweenChecks;                             // 0xb0(0x4)
+	char                                                         pad0x4_NZJ9V[0x4];                                 // 0xb4(0x4)
+	struct QuestVariableVector                                   Location;                                          // 0xb8(0x30)
+	float                                                        Radius;                                            // 0xe8(0x4)
+	char                                                         pad0x4_5HERQ[0x4];                                 // 0xec(0x4)
+	struct QuestVariableBool                                     ActorInsideRadius;                                 // 0xf0(0x30)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestGetParticipatingCrewsInRadiusStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class TaleQuestSuppressIslandBannersServiceDesc: public TaleQuestServiceDesc
+{
+public:
+	bool                                                         DoNotSuppressDiveTargetIsland;                     // 0x28(0x1)
+	char                                                         pad0x7_KRGHX[0x7];                                 // 0x29(0x7)
+};
+
+
+// Size 0x38 (Full Size[0x98] - InheritedSize[0x60]
+class GameEventBlockingTaleService: public TaleQuestService
+{
+public:
+	char                                                         pad0x38_5L4SP[0x38];                               // 0x60(0x38)
 };
 
 
 // Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class TaleQuestObstacleCourseSetupAndWaitForCompletionStepDesc: public TaleQuestStepDesc
+class TaleQuestUpdateSpyglassTargetLocationStepDesc: public TaleQuestStepDesc
 {
 public:
-	struct QuestVariableActor                                    ObstacleCourseActor;                               // 0x80(0x30)
+	struct QuestVariableVector                                   NewLocation;                                       // 0x80(0x30)
 };
 
 
 // Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class SplinePathingActorAddPrimitiveStep: public TaleQuestStep
+class PreventInteractionWithActorStep: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TaleQuestCargoRunContractsServiceDesc: public TaleQuestServiceDesc
+// Size 0x20 (Full Size[0xb8] - InheritedSize[0x98]
+class ParticipantRadiusArrayTrackerStep: public TaleQuestStep
 {
 public:
+	class ParticipantRadiusArrayTrackerStepDesc*                 Desc;                                              // 0x98(0x8)
+	char                                                         pad0x18_HY2KV[0x18];                               // 0xa0(0x18)
 };
 
 
-// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
-class TaleQuestObstacleCourseSetupAndWaitForCompletionStep: public TaleQuestStep
+// Size 0x58 (Full Size[0xf0] - InheritedSize[0x98]
+class WaitForActorToFullyDockStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x8_5IJWE[0x8];                                 // 0x98(0x8)
+	char                                                         pad0x58_A2M4N[0x58];                               // 0x98(0x58)
 };
 
 
-// Size 0x18 (Full Size[0xb0] - InheritedSize[0x98]
-class TaleQuestStarFieldPuzzleSetupAndWaitForCompletionStep: public TaleQuestStep
+// Size 0x40 (Full Size[0xc0] - InheritedSize[0x80]
+class InvokeDamageDesc: public TaleQuestStepDesc
 {
 public:
-	char                                                         pad0x18_B20EW[0x18];                               // 0x98(0x18)
+	struct QuestVariableActor                                    ActorToDamage;                                     // 0x80(0x30)
+	class UClass*                                                DamageType;                                        // 0xb0(0x8)
+	float                                                        DamageAmount;                                      // 0xb8(0x4)
+	char                                                         DamageReason;                                      // 0xbc(0x1)
+	char                                                         pad0x3_51NOX[0x3];                                 // 0xbd(0x3)
 };
 
 
-// Size 0x108 (Full Size[0x188] - InheritedSize[0x80]
-class SpawnPhasedItemStepDesc: public TaleQuestStepDesc
+// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
+class TaleQuestFramedStepDesc: public TaleQuestStepDesc
 {
 public:
-	bool                                                         TrackItem;                                         // 0x80(0x1)
-	bool                                                         MarkItemAsCritical;                                // 0x81(0x1)
-	char                                                         pad0x6_7LQ0S[0x6];                                 // 0x82(0x6)
-	struct FText                                                 CriticalActorLostMessage;                          // 0x88(0x38)
-	struct FName                                                 SocketName;                                        // 0xc0(0x8)
-	struct QuestVariableItemDescType                             Item;                                              // 0xc8(0x30)
-	struct QuestVariableActor                                    LocatorVar;                                        // 0xf8(0x30)
-	struct QuestVariableOrientedPoint                            LocatorPoint;                                      // 0x128(0x30)
-	struct QuestVariableItemInfo                                 SpawnedItemVar;                                    // 0x158(0x30)
+	TArray<class TaleQuestServiceDesc*>                          Services;                                          // 0x80(0x10)
+	struct UserDefinedStructWithSerialisableValue                VariablesWithDefaults;                             // 0x90(0x20)
+	struct InlineUserDefinedStructDetails                        GeneratedVariables;                                // 0xb0(0x8)
 };
 
 
@@ -2461,144 +1847,12 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
-class TaleQuestUpdateMerchantMapStep: public TaleQuestStep
+// Size 0x88 (Full Size[0x120] - InheritedSize[0x98]
+class WaitForActorOfInterestToUnregisterStep: public TaleQuestStep
 {
 public:
-	class TaleQuestUpdateMerchantMapStepDesc*                    Desc;                                              // 0x98(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class TaleQuestActorServiceDesc: public TaleQuestServiceDesc
-{
-public:
-	class UClass*                                                ItemLostFailureRunnable;                           // 0x28(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class TaleQuestToggleInteractionDescriptionServiceDesc: public TaleQuestServiceDesc
-{
-public:
-	bool                                                         ResetDisabledInteractsOnEnd;                       // 0x28(0x1)
-	bool                                                         ResetEnabledInteractsOnEnd;                        // 0x29(0x1)
-	char                                                         pad0x6_VWZOE[0x6];                                 // 0x2a(0x6)
-};
-
-
-// Size 0x38 (Full Size[0xd0] - InheritedSize[0x98]
-class TaleQuestAddZoomMapStep: public TaleQuestStep
-{
-public:
-	class TaleQuestAddZoomMapStepDesc*                           Desc;                                              // 0x98(0x8)
-	class TaleQuestMapService*                                   MapService;                                        // 0xa0(0x8)
-	struct FName                                                 IslandName;                                        // 0xa8(0x8)
-	struct Vector                                                ZoomCenterPoint;                                   // 0xb0(0xc)
-	char                                                         pad0x4_0Y1Q4[0x4];                                 // 0xbc(0x4)
-	TArray<struct Vector>                                        InputLocations;                                    // 0xc0(0x10)
-};
-
-
-// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
-class TaleQuestPermanentPromptStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariablePrioritisedPrompt                        Prompt;                                            // 0x80(0x30)
-	char                                                         StartOrStop;                                       // 0xb0(0x1)
-	char                                                         pad0x7_5HLMO[0x7];                                 // 0xb1(0x7)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestToggleAmbientMigrationForServerStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x10 (Full Size[0xa8] - InheritedSize[0x98]
-class DoEQSQueryStep: public TaleQuestStep
-{
-public:
-	class DoEQSQueryStepDesc*                                    Desc;                                              // 0x98(0x8)
-	class TaleQuestEQSService*                                   CachedTaleEQSService;                              // 0xa0(0x8)
-};
-
-
-// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
-class TaleQuestAddRiddleMapStepDesc: public TaleQuestAddRiddleMapBaseStepDesc
-{
-public:
-	TArray<struct Text>                                          Text;                                              // 0xb8(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class DestroySpawnedActorStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
-class TaleQuestLockGhostShipDoorService: public TaleQuestService
-{
-public:
-	class TaleQuestLockGhostShipDoorServiceDesc*                 Desc;                                              // 0x60(0x8)
-};
-
-
-// Size 0x68 (Full Size[0xe8] - InheritedSize[0x80]
-class TaleQuestMacroStepDesc: public TaleQuestStepDesc
-{
-public:
-	class TaleQuestMacroAsset*                                   MacroAsset;                                        // 0x80(0x8)
-	struct TaleStructInstance                                    ParameterInstance;                                 // 0xd8(0x10)
-};
-
-
-// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
-class SelectNamedPointStepDesc: public TaleQuestStepDesc
-{
-public:
-	char                                                         pad0x20_433TO[0x20];                               // 0x80(0x20)
-	struct FName                                                 GroupName;                                         // 0xa0(0x8)
-	int                                                          PointIndex;                                        // 0xa8(0x4)
-	char                                                         ReturnInSpace;                                     // 0xac(0x1)
-	char                                                         pad0x3_DC4AM[0x3];                                 // 0xad(0x3)
-	struct QuestVariableOrientedPoint                            Point;                                             // 0xb0(0x30)
-};
-
-
-// Size 0x38 (Full Size[0xd0] - InheritedSize[0x98]
-class TaleQuestCrewTaskStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x38_3HELT[0x38];                               // 0x98(0x38)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestSetDigSpotVoyageStatusStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x50 (Full Size[0xb0] - InheritedSize[0x60]
-class TaleQuestQueryableStatesService: public TaleQuestService
-{
-public:
-	TArray<struct TaleQuestQueryableStateDataInfo>               AllData;                                           // 0x60(0x10)
-	char                                                         pad0x40_VO593[0x40];                               // 0x70(0x40)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestArrayUnionStep: public TaleQuestStep
-{
-public:
+	class WaitForActorOfInterestToUnregisterStepDesc*            Desc;                                              // 0x98(0x8)
+	char                                                         pad0x80_LZR8U[0x80];                               // 0xa0(0x80)
 };
 
 
@@ -2618,82 +1872,34 @@ public:
 };
 
 
-// Size 0xe0 (Full Size[0x160] - InheritedSize[0x80]
-class LoadSequencerAnimationStepDesc: public TaleQuestStepDesc
+// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
+class LinkEQSContextWithVariableStep: public TaleQuestStep
 {
 public:
-	TArray<class LevelSequence*>                                 LevelSequencesToLoad;                              // 0x80(0x10)
-	struct QuestVariableActor                                    TargetActorToSpawn;                                // 0x90(0x30)
-	struct QuestVariableActor                                    LevelSequenceActorSpawnLocation;                   // 0xc0(0x30)
-	struct QuestVariableActor                                    SequencerCutSceneActor;                            // 0xf0(0x30)
-	struct TaleQuestPhaseClusterRootActor                        OptionalPhaseCluster;                              // 0x120(0x30)
-	bool                                                         AttachToTargetActor;                               // 0x150(0x1)
-	char                                                         pad0x3_8M4QF[0x3];                                 // 0x151(0x3)
-	struct FName                                                 AttachSocketName;                                  // 0x154(0x8)
-	bool                                                         PlayGlobally;                                      // 0x15c(0x1)
-	char                                                         pad0x3_27NJ0[0x3];                                 // 0x15d(0x3)
+	class LinkEQSContextWithVariableStepDesc*                    Desc;                                              // 0x98(0x8)
 };
 
 
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class SpawnPhasedItemStep: public TaleQuestStep
+// Size 0x90 (Full Size[0x110] - InheritedSize[0x80]
+class FindNamedPointStepDescBase: public TaleQuestStepDesc
 {
 public:
+	char                                                         pad0x20_BB25P[0x20];                               // 0x80(0x20)
+	struct QuestVariableActor                                    ActorToSearch;                                     // 0xa0(0x30)
+	struct QuestVariableName                                     GroupNamePin;                                      // 0xd0(0x30)
+	struct FName                                                 PointGroupName;                                    // 0x100(0x8)
+	char                                                         SearchMethod;                                      // 0x108(0x1)
+	char                                                         ReturnInSpace;                                     // 0x109(0x1)
+	char                                                         pad0x6_070AT[0x6];                                 // 0x10a(0x6)
 };
 
 
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class DestroySpawnedActorStepDesc: public TaleQuestStepDesc
+// Size 0x18 (Full Size[0x78] - InheritedSize[0x60]
+class TaleQuestInteractionPreventionService: public TaleQuestService
 {
 public:
-	struct QuestVariableActor                                    ActorVar;                                          // 0x80(0x30)
-};
-
-
-// Size 0x88 (Full Size[0x120] - InheritedSize[0x98]
-class WaitForActorOfInterestToUnregisterStep: public TaleQuestStep
-{
-public:
-	class WaitForActorOfInterestToUnregisterStepDesc*            Desc;                                              // 0x98(0x8)
-	char                                                         pad0x80_Q02P3[0x80];                               // 0xa0(0x80)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestStarFieldPuzzleDimStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x168 (Full Size[0x1e8] - InheritedSize[0x80]
-class PlaySequencerAnimationOnCutsceneActorStepDesc: public TaleQuestStepDesc
-{
-public:
-	class LevelSequence*                                         LevelSequence;                                     // 0x80(0x8)
-	float                                                        Delay;                                             // 0x88(0x4)
-	char                                                         pad0x4_E8593[0x4];                                 // 0x8c(0x4)
-	struct QuestVariableActor                                    DockableBaseActor;                                 // 0x90(0x30)
-	struct QuestVariableActor                                    SequencerCutSceneActor;                            // 0xc0(0x30)
-	struct QuestVariableActor                                    ActorToPossess;                                    // 0xf0(0x30)
-	struct QuestVariableArray                                    AdditionalPossessables;                            // 0x120(0x30)
-	struct QuestVariableActor                                    ManuallySetInteractor;                             // 0x150(0x30)
-	struct QuestVariableActor                                    InteractingActor;                                  // 0x180(0x30)
-	struct FString                                               PossessableName;                                   // 0x1b0(0x10)
-	class SceneDialogueData*                                     DialogueData;                                      // 0x1c0(0x8)
-	TArray<struct Text>                                          LocalisableNames;                                  // 0x1c8(0x10)
-	bool                                                         IsLevelSequenceActorAlwaysRelevant;                // 0x1d8(0x1)
-	bool                                                         IsLooping;                                         // 0x1d9(0x1)
-	char                                                         pad0x2_0CR1F[0x2];                                 // 0x1da(0x2)
-	float                                                        SubtitleSphereRadiusInCm;                          // 0x1dc(0x4)
-	class LevelSequence*                                         FemaleLevelSequence;                               // 0x1e0(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestAddChecklistMapStep: public TaleQuestStep
-{
-public:
+	TArray<class Actor*>                                         TrackedInteractionActors;                          // 0x60(0x10)
+	class TaleQuestInteractionPreventionServiceDesc*             Desc;                                              // 0x70(0x8)
 };
 
 
@@ -2702,7 +1908,7 @@ class ParticipantRadiusArrayTrackerStepDesc: public TaleQuestStepDesc
 {
 public:
 	float                                                        DurationBetweenChecks;                             // 0x80(0x4)
-	char                                                         pad0x4_Z1TVP[0x4];                                 // 0x84(0x4)
+	char                                                         pad0x4_5U9PT[0x4];                                 // 0x84(0x4)
 	struct QuestVariableActorArray                               Actors;                                            // 0x88(0x30)
 	struct QuestVariableVectorArray                              Locations;                                         // 0xb8(0x30)
 	struct QuestVariableFloat                                    Radius;                                            // 0xe8(0x30)
@@ -2710,39 +1916,171 @@ public:
 };
 
 
-// Size 0x60 (Full Size[0xf8] - InheritedSize[0x98]
-class TaleQuestMacroRootStep: public TaleQuestStep
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class RandomArrayEntrySelectionStrategy: public TaleQuestArrayEntrySelectionStrategy
 {
 public:
-	char                                                         pad0x8_YLNAY[0x8];                                 // 0x98(0x8)
-	struct TaleStructInstance                                    Params;                                            // 0xa0(0x10)
-	char                                                         pad0x48_PXM3A[0x48];                               // 0xb0(0x48)
 };
 
 
-// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
-class DoEQSQueryStepDesc: public TaleQuestStepDesc
+// Size 0x58 (Full Size[0xd8] - InheritedSize[0x80]
+class TaleQuestStructStepDescBase: public TaleQuestStepDesc
 {
 public:
-	class EnvQuery*                                              EQSQuery;                                          // 0x80(0x8)
-	struct QuestVariableArray                                    OutPoints;                                         // 0x88(0x30)
+	class ScriptStruct*                                          Struct;                                            // 0x80(0x8)
+	char                                                         pad0x50_YFJE3[0x50];                               // 0x88(0x50)
 };
 
 
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class TaleQuestSuppressIslandBannersServiceDesc: public TaleQuestServiceDesc
+// Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
+class StopSuppressingCutsceneResponsesStepDesc: public TaleQuestStepDesc
 {
 public:
-	bool                                                         DoNotSuppressDiveTargetIsland;                     // 0x28(0x1)
-	char                                                         pad0x7_5EVG9[0x7];                                 // 0x29(0x7)
+};
+
+
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class TaleQuestClearTaleProposalsStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct FName                                                 CampaignId;                                        // 0x80(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestEnableInteractionStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TaleQuestCargoRunContractsServiceDesc: public TaleQuestServiceDesc
+{
+public:
+};
+
+
+// Size 0x98 (Full Size[0x130] - InheritedSize[0x98]
+class TaleQuestChooseIslandFromWeightsStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x90_KWSI0[0x90];                               // 0x98(0x90)
+	class IslandTypeWeightsDataAsset*                            IslandTypeWeights;                                 // 0x128(0x8)
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class TaleQuestStarFieldPuzzleEndStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableActor                                    StarFieldPuzzleActor;                              // 0x80(0x30)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CutsceneResponsesTaleServiceDesc: public TaleQuestServiceDesc
+{
+public:
 };
 
 
 // Size 0x10 (Full Size[0xa8] - InheritedSize[0x98]
-class TaleQuestStarFieldPuzzleEndStep: public TaleQuestStep
+class WaitForGameEventToCompleteStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x10_ZKLJ8[0x10];                               // 0x98(0x10)
+	class GameEvent*                                             GameEvent;                                         // 0x98(0x8)
+	char                                                         pad0x8_AD2JV[0x8];                                 // 0xa0(0x8)
+};
+
+
+// Size 0x38 (Full Size[0xd0] - InheritedSize[0x98]
+class ActorRadiusTrackerStep: public TaleQuestStep
+{
+public:
+	class ActorRadiusTrackerStepDesc*                            Desc;                                              // 0x98(0x8)
+	class Actor*                                                 TargetActor;                                       // 0xa0(0x8)
+	char                                                         pad0x28_E58MQ[0x28];                               // 0xa8(0x28)
+};
+
+
+// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
+class SetEQSNamedContextStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct FName                                                 Name;                                              // 0x80(0x8)
+	struct QuestVariableLinkEQSContext                           Value;                                             // 0x88(0x30)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestStartCameraFadeStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0xa8] - InheritedSize[0x98]
+class TaleQuestWaitForHandInStep: public TaleQuestStep
+{
+public:
+	class TaleQuestWaitForHandInStepDesc*                        Desc;                                              // 0x98(0x8)
+	char                                                         pad0x8_T6V5S[0x8];                                 // 0xa0(0x8)
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class EnableInteractionWithActorStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableActor                                    TargetActor;                                       // 0x80(0x30)
+};
+
+
+// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
+class SelectNamedPointStepDesc: public TaleQuestStepDesc
+{
+public:
+	char                                                         pad0x20_WRXMD[0x20];                               // 0x80(0x20)
+	struct FName                                                 GroupName;                                         // 0xa0(0x8)
+	int                                                          PointIndex;                                        // 0xa8(0x4)
+	char                                                         ReturnInSpace;                                     // 0xac(0x1)
+	char                                                         pad0x3_L2S72[0x3];                                 // 0xad(0x3)
+	struct QuestVariableOrientedPoint                            Point;                                             // 0xb0(0x30)
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class TaleQuestToggleInteractionDescriptionServiceDesc: public TaleQuestServiceDesc
+{
+public:
+	bool                                                         ResetDisabledInteractsOnEnd;                       // 0x28(0x1)
+	bool                                                         ResetEnabledInteractsOnEnd;                        // 0x29(0x1)
+	char                                                         pad0x6_GHZHD[0x6];                                 // 0x2a(0x6)
+};
+
+
+// Size 0x18 (Full Size[0xb0] - InheritedSize[0x98]
+class SpawnLayerStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x18_HMJF0[0x18];                               // 0x98(0x18)
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class TaleQuestActorServiceDesc: public TaleQuestServiceDesc
+{
+public:
+	class UClass*                                                ItemLostFailureRunnable;                           // 0x28(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class TaleQuestPlayerItemsCleaupServiceDesc: public TaleQuestServiceDesc
+{
+public:
+	TArray<class Class*>                                         ItemDescsToRemove;                                 // 0x28(0x10)
 };
 
 
@@ -2753,24 +2091,448 @@ public:
 };
 
 
-// Size 0x40 (Full Size[0xc0] - InheritedSize[0x80]
-class AddGameEventExclusionZoneStepDesc: public TaleQuestStepDesc
+// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
+class TaleQuestUpdateMerchantMapStep: public TaleQuestStep
 {
 public:
-	float                                                        Radius;                                            // 0x80(0x4)
-	bool                                                         ShouldGetRadiusFromRemoteConfig;                   // 0x84(0x1)
-	char                                                         pad0x3_K40CT[0x3];                                 // 0x85(0x3)
-	struct FName                                                 RemoteConfigKeyRadius;                             // 0x88(0x8)
-	struct QuestVariableVector                                   Location;                                          // 0x90(0x30)
+	class TaleQuestUpdateMerchantMapStepDesc*                    Desc;                                              // 0x98(0x8)
 };
 
 
-// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
-class LinkEQSContextWithVariableStepDesc: public TaleQuestStepDesc
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestGetParticipatingCrewsStep: public TaleQuestStep
 {
 public:
-	class UClass*                                                Context;                                           // 0x80(0x8)
-	struct QuestVariableSetEQSTaleContextValue                   Variable;                                          // 0x88(0x30)
+};
+
+
+// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
+class SplinePathingActorActivationStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableActor                                    SplinePathingActor;                                // 0x80(0x30)
+	struct QuestVariableBool                                     IsActivated;                                       // 0xb0(0x30)
+};
+
+
+// Size 0x20 (Full Size[0xa0] - InheritedSize[0x80]
+class TaleQuestPredicateBranchStepDesc: public TaleQuestStepDesc
+{
+public:
+	int                                                          NumBranches;                                       // 0x80(0x4)
+	char                                                         pad0x4_NNG7M[0x4];                                 // 0x84(0x4)
+	class TaleQuestPhaseBranchSelectorPredicateBase*             BranchedTaskAssignmentFunction;                    // 0x88(0x8)
+	TArray<struct TaleQuestPredicateBranchedTaskDesc>            BranchedTasks;                                     // 0x90(0x10)
+};
+
+
+// Size 0x80 (Full Size[0x118] - InheritedSize[0x98]
+class WaitForHealthToReachFractionStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x80_PSL11[0x80];                               // 0x98(0x80)
+};
+
+
+// Size 0x48 (Full Size[0xe0] - InheritedSize[0x98]
+class PlaySequencerAnimationOnCutsceneActorStep: public TaleQuestStep
+{
+public:
+	class PlaySequencerAnimationOnCutsceneActorStepDesc*         StepDesc;                                          // 0x98(0x8)
+	class SequencerCutSceneActor*                                SequencerCutSceneActor;                            // 0xa0(0x8)
+	TArray<struct PossessableSequence>                           PossessableSequences;                              // 0xa8(0x10)
+	char                                                         pad0x28_R5Y7E[0x28];                               // 0xb8(0x28)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestDisableInteractionStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x68 (Full Size[0xe8] - InheritedSize[0x80]
+class TaleQuestGetParticipatingCrewsInRadiusStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableGuidArray                                CrewIds;                                           // 0x80(0x30)
+	struct QuestVariableVector                                   Location;                                          // 0xb0(0x30)
+	float                                                        Radius;                                            // 0xe0(0x4)
+	char                                                         pad0x4_F2721[0x4];                                 // 0xe4(0x4)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestAddChecklistMapStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TaleQuestInteractionPreventionServiceDesc: public TaleQuestServiceDesc
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TaleQuestEQSServiceDesc: public TaleQuestServiceDesc
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class WaitForQueryableStateValueStepDescBase: public TaleQuestStepDesc
+{
+public:
+	class UClass*                                                DataID;                                            // 0x80(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestAddCircleMapStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x38 (Full Size[0x98] - InheritedSize[0x60]
+class TaleQuestActorOfInterestService: public TaleQuestService
+{
+public:
+	class TaleQuestActorOfInterestServiceDesc*                   Desc;                                              // 0x60(0x8)
+	char                                                         pad0x30_W0F00[0x30];                               // 0x68(0x30)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class StopSuppressingCutsceneResponsesStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class TaleQuestToggleAmbientMigrationForServerStepDesc: public TaleQuestStepDesc
+{
+public:
+	bool                                                         AmbientMigrationAvailable;                         // 0x80(0x1)
+	char                                                         pad0x7_7FH3X[0x7];                                 // 0x81(0x7)
+};
+
+
+// Size 0x18 (Full Size[0xb0] - InheritedSize[0x98]
+class GenerateDigLocationInRadiusStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x18_VX4H4[0x18];                               // 0x98(0x18)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class SplinePathingActorAddPrimitiveStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x40 (Full Size[0xd8] - InheritedSize[0x98]
+class DebugTaleAddInstancedLevelStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x8_NI0SS[0x8];                                 // 0x98(0x8)
+	class DebugTaleAddInstancedLevelStepDesc*                    StepDesc;                                          // 0xa0(0x8)
+	struct FString                                               InstancedLevelPath;                                // 0xa8(0x10)
+	char                                                         pad0x20_RSWNC[0x20];                               // 0xb8(0x20)
+};
+
+
+// Size 0x18 (Full Size[0x98] - InheritedSize[0x80]
+class TaleQuestShipSurfaceStepDesc: public TaleQuestStepDesc
+{
+public:
+	float                                                        ResurfaceMusicWindUpTime;                          // 0x80(0x4)
+	bool                                                         AutoStopResurfaceMusic;                            // 0x84(0x1)
+	char                                                         pad0x3_63O98[0x3];                                 // 0x85(0x3)
+	float                                                        StopResurfaceMusicAfter;                           // 0x88(0x4)
+	struct FName                                                 MusicThemeName;                                    // 0x8c(0x8)
+	char                                                         pad0x4_UPIHP[0x4];                                 // 0x94(0x4)
+};
+
+
+// Size 0xc0 (Full Size[0x120] - InheritedSize[0x60]
+class TaleQuestMapService: public TaleQuestService
+{
+public:
+	char                                                         pad0xc0_K0A6A[0xc0];                               // 0x60(0xc0)
+};
+
+
+// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
+class WaitForActorToFullyDockStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableActor                                    DockerActor;                                       // 0x80(0x30)
+	struct QuestVariableActor                                    DockableTargetActor;                               // 0xb0(0x30)
+};
+
+
+// Size 0x60 (Full Size[0xf8] - InheritedSize[0x98]
+class ForceCannonLoadStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x60_VGDH0[0x60];                               // 0x98(0x60)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestToggleAmbientMigrationForServerStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class TaleQuestCrewGameEventBlockingTaleServiceDesc: public TaleQuestServiceDesc
+{
+public:
+	float                                                        GracePeriodAfterServiceStops;                      // 0x28(0x4)
+	char                                                         pad0x4_AGIEF[0x4];                                 // 0x2c(0x4)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class SetReplenishableContentSelectorStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestUpdateSpyglassTargetLocationStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0xc8 (Full Size[0x148] - InheritedSize[0x80]
+class ParticipantRadiusTrackerStepDesc: public TaleQuestStepDesc
+{
+public:
+	float                                                        DurationBetweenChecks;                             // 0x80(0x4)
+	char                                                         pad0x4_PH7CW[0x4];                                 // 0x84(0x4)
+	struct QuestVariableVector                                   Location;                                          // 0x88(0x30)
+	struct QuestVariableFloat                                    Radius;                                            // 0xb8(0x30)
+	struct QuestVariableActorArray                               PlayersOutsideRadius;                              // 0xe8(0x30)
+	struct QuestVariableActorArray                               PlayersInsideRadius;                               // 0x118(0x30)
+};
+
+
+// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
+class TaleQuestLockGhostShipDoorService: public TaleQuestService
+{
+public:
+	class TaleQuestLockGhostShipDoorServiceDesc*                 Desc;                                              // 0x60(0x8)
+};
+
+
+// Size 0xc0 (Full Size[0x158] - InheritedSize[0x98]
+class TaleQuestAwaitCrewShipSinkStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0xc0_7B8JZ[0xc0];                               // 0x98(0xc0)
+};
+
+
+// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
+class TaleQuestRemoveMapStep: public TaleQuestStep
+{
+public:
+	class TaleQuestRemoveMapStepDesc*                            StepDesc;                                          // 0x98(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestRemoveCommonToolsStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class WaitForSpawnedPawnBaseStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableAISpawner                                AISpawner;                                         // 0x80(0x30)
+};
+
+
+// Size 0x80 (Full Size[0xe0] - InheritedSize[0x60]
+class TaleQuestPredicatedBranchPhasingService: public TaleQuestService
+{
+public:
+	TArray<class PhasedClusterRoot*>                             SpawnedPhaseClustersRoots;                         // 0x60(0x10)
+	class TaleQuestPredicatedBranchPhasingServiceDesc*           ServiceDesc;                                       // 0x70(0x8)
+	char                                                         pad0x68_N8KWL[0x68];                               // 0x78(0x68)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class GameEventExclusionZoneTaleServiceDesc: public TaleQuestServiceDesc
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class ReleaseGameEventBlockStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestAddQuestBookStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x90 (Full Size[0x110] - InheritedSize[0x80]
+class TaleQuestEnumSwitchStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariable                                         EnumVar;                                           // 0x80(0x30)
+	class Enum*                                                  Enum;                                              // 0xb0(0x8)
+	class TaleQuestStepDesc*                                     DefaultBranch;                                     // 0xb8(0x8)
+	char                                                         pad0x50_FBDUV[0x50];                               // 0xc0(0x50)
+};
+
+
+// Size 0x28 (Full Size[0x88] - InheritedSize[0x60]
+class TaleQuestSelectorService: public TaleQuestService
+{
+public:
+	class TaleQuestSelectorServiceDesc*                          Desc;                                              // 0x60(0x8)
+	char                                                         pad0x20_I5UFX[0x20];                               // 0x68(0x20)
+};
+
+
+// Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
+class StartSuppressingCutsceneResponsesStepDesc: public TaleQuestStepDesc
+{
+public:
+};
+
+
+// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
+class TaleQuestGetCollectionItemCountStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableCollection                               Collection;                                        // 0x80(0x30)
+	struct QuestVariableInt                                      Num;                                               // 0xb0(0x30)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TaleQuestLockGhostShipDoorServiceDesc: public TaleQuestServiceDesc
+{
+public:
+};
+
+
+// Size 0x68 (Full Size[0xe8] - InheritedSize[0x80]
+class TaleQuestMacroStepDesc: public TaleQuestStepDesc
+{
+public:
+	class TaleQuestMacroAsset*                                   MacroAsset;                                        // 0x80(0x8)
+	struct TaleStructInstance                                    ParameterInstance;                                 // 0xd8(0x10)
+};
+
+
+// Size 0x40 (Full Size[0xc0] - InheritedSize[0x80]
+class DebugTaleAddInstancedLevelStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct FText                                                 InstancedLevelKeyword;                             // 0x80(0x38)
+	char                                                         pad0x8_PXPZX[0x8];                                 // 0xb8(0x8)
+};
+
+
+// Size 0x18 (Full Size[0xb0] - InheritedSize[0x98]
+class TaleQuestEnumSwitchStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x18_KMNL4[0x18];                               // 0x98(0x18)
+};
+
+
+// Size 0x80 (Full Size[0x118] - InheritedSize[0x98]
+class TaleQuestPredicateBranchTaskStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x50_GQRGF[0x50];                               // 0x98(0x50)
+	class TaleQuestPredicateBranchStepDesc*                      StepDesc;                                          // 0xe8(0x8)
+	TArray<int>                                                  BranchesCompleted;                                 // 0xf0(0x10)
+	char                                                         pad0x18_87EBC[0x18];                               // 0x100(0x18)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestAddCargoRunMapStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
+class TaleQuestAddRiddleMapStepDesc: public TaleQuestAddRiddleMapBaseStepDesc
+{
+public:
+	TArray<struct Text>                                          Text;                                              // 0xb8(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestArrayUnionStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0xc8 (Full Size[0x148] - InheritedSize[0x80]
+class GenerateDigLocationInRadiusStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableName                                     IslandName;                                        // 0x80(0x30)
+	struct QuestVariableVector                                   Center;                                            // 0xb0(0x30)
+	float                                                        RadiusInCm;                                        // 0xe0(0x4)
+	char                                                         pad0x4_3L6MO[0x4];                                 // 0xe4(0x4)
+	struct QuestVariableVector                                   DigLocation;                                       // 0xe8(0x30)
+	struct QuestVariableArray                                    AllDigLocationsInRadius;                           // 0x118(0x30)
+};
+
+
+// Size 0x98 (Full Size[0x118] - InheritedSize[0x80]
+class TaleQuestSelectEntryFromArrayStepDesc: public TaleQuestStepDesc
+{
+public:
+	class TaleQuestArrayEntrySelectionStrategy*                  SelectionStrategy;                                 // 0x80(0x8)
+	struct QuestVariableArray                                    InputArray;                                        // 0x88(0x30)
+	struct QuestVariableAny                                      OutputEntry;                                       // 0xb8(0x30)
+	struct QuestVariableInt                                      OutputEntryIndex;                                  // 0xe8(0x30)
+};
+
+
+// Size 0x20 (Full Size[0xb8] - InheritedSize[0x98]
+class ParticipantRadiusTrackerStep: public TaleQuestStep
+{
+public:
+	class ParticipantRadiusTrackerStepDesc*                      Desc;                                              // 0x98(0x8)
+	char                                                         pad0x18_9OM1P[0x18];                               // 0xa0(0x18)
 };
 
 
@@ -2781,21 +2543,307 @@ public:
 };
 
 
-// Size 0x98 (Full Size[0x118] - InheritedSize[0x80]
-class TaleQuestChooseIslandFromWeightsStepDesc: public TaleQuestStepDesc
+// Size 0x58 (Full Size[0xf0] - InheritedSize[0x98]
+class TaleQuestPersistentForEachCrewTaskStep: public TaleQuestStep
 {
 public:
-	struct QuestVariableNameArray                                IslandsToChooseFrom;                               // 0x80(0x30)
-	struct QuestVariableInt                                      DifficultyRank;                                    // 0xb0(0x30)
-	struct QuestVariableName                                     ChosenIsland;                                      // 0xe0(0x30)
-	class IslandTypeWeightsDataAsset*                            IslandTypeWeights;                                 // 0x110(0x8)
+	class TaleQuestPersistentForEachCrewTaskStepDesc*            StepDesc;                                          // 0x98(0x8)
+	char                                                         pad0x50_UIADI[0x50];                               // 0xa0(0x50)
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class TaleQuestAwaitCrewShipSinkStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableGuid                                     CrewId;                                            // 0x80(0x30)
+};
+
+
+// Size 0x10 (Full Size[0xa8] - InheritedSize[0x98]
+class TaleQuestForEachStepBase: public TaleQuestStep
+{
+public:
+	TArray<struct BodyFramePair>                                 Bodies;                                            // 0x98(0x10)
+};
+
+
+// Size 0x68 (Full Size[0xe8] - InheritedSize[0x80]
+class TaleQuestRunnableStepDesc: public TaleQuestStepDesc
+{
+public:
+	char                                                         pad0x68_BTC68[0x68];                               // 0x80(0x68)
+};
+
+
+// Size 0x28 (Full Size[0x88] - InheritedSize[0x60]
+class GameEventExclusionZoneTaleService: public TaleQuestService
+{
+public:
+	TArray<struct GameEventExclusionZone>                        EventExclusionZones;                               // 0x60(0x10)
+	char                                                         pad0x18_587GP[0x18];                               // 0x70(0x18)
+};
+
+
+// Size 0x38 (Full Size[0xd0] - InheritedSize[0x98]
+class TaleQuestAddZoomMapStep: public TaleQuestStep
+{
+public:
+	class TaleQuestAddZoomMapStepDesc*                           Desc;                                              // 0x98(0x8)
+	class TaleQuestMapService*                                   MapService;                                        // 0xa0(0x8)
+	struct FName                                                 IslandName;                                        // 0xa8(0x8)
+	struct Vector                                                ZoomCenterPoint;                                   // 0xb0(0xc)
+	char                                                         pad0x4_APJDG[0x4];                                 // 0xbc(0x4)
+	TArray<struct Vector>                                        InputLocations;                                    // 0xc0(0x10)
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class WaitForGameEventToCompleteStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableGameEvent                                GameEvent;                                         // 0x80(0x30)
+};
+
+
+// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
+class ForceCannonLoadStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableActor                                    Cannon;                                            // 0x80(0x30)
+	struct QuestVariableActor                                    Projectile;                                        // 0xb0(0x30)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestArrayContainsStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class GameEventBlockingTaleServiceDesc: public TaleQuestServiceDesc
+{
+public:
+};
+
+
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
+class TaleQuestActorOfInterestServiceDesc: public TaleQuestServiceDesc
+{
+public:
+	TArray<class Class*>                                         AllNeededActorsOfInterest;                         // 0x28(0x10)
+	struct FText                                                 ActorOfInterestUnregisteredFailureMessage;         // 0x38(0x38)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TaleQuestParticipantDeathServiceDesc: public TaleQuestServiceDesc
+{
+public:
+};
+
+
+// Size 0x18 (Full Size[0xb0] - InheritedSize[0x98]
+class WaitForSpawnedPawnBaseStep: public TaleQuestStep
+{
+public:
+	class AISpawner*                                             AISpawner;                                         // 0x98(0x8)
+	char                                                         pad0x10_ZLTIS[0x10];                               // 0xa0(0x10)
+};
+
+
+// Size 0x50 (Full Size[0xb0] - InheritedSize[0x60]
+class TaleQuestShipSetSinkingParamsService: public TaleQuestService
+{
+public:
+	class TaleQuestShipSetSinkingParamsServiceDesc*              Desc;                                              // 0x60(0x8)
+	char                                                         pad0x48_J3OOS[0x48];                               // 0x68(0x48)
+};
+
+
+// Size 0x18 (Full Size[0xb0] - InheritedSize[0x98]
+class TaleQuestShipDiveStep: public TaleQuestStep
+{
+public:
+	class TaleQuestShipDiveStepDesc*                             StepDesc;                                          // 0x98(0x8)
+	char                                                         pad0x10_2W35C[0x10];                               // 0xa0(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TaleShroudBreakerServiceDesc: public TaleQuestServiceDesc
+{
+public:
+};
+
+
+// Size 0x58 (Full Size[0xb8] - InheritedSize[0x60]
+class TaleQuestToggleInteractionDescriptionService: public TaleQuestService
+{
+public:
+	char                                                         pad0x50_QE57X[0x50];                               // 0x60(0x50)
+	class TaleQuestToggleInteractionDescriptionServiceDesc*      Desc;                                              // 0xb0(0x8)
+};
+
+
+// Size 0x18 (Full Size[0x78] - InheritedSize[0x60]
+class TaleShroudBreakerService: public TaleQuestService
+{
+public:
+	char                                                         pad0x18_0ER80[0x18];                               // 0x60(0x18)
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class PreventInteractionWithActorStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableActor                                    TargetActor;                                       // 0x80(0x30)
+};
+
+
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class TaleQuestUpdateSpyglassWakeVisibilityStepDesc: public TaleQuestStepDesc
+{
+public:
+	bool                                                         NewVisibility;                                     // 0x80(0x1)
+	char                                                         pad0x7_BLYOE[0x7];                                 // 0x81(0x7)
+};
+
+
+// Size 0x38 (Full Size[0xd0] - InheritedSize[0x98]
+class PlaySequencerAnimationStep: public TaleQuestStep
+{
+public:
+	class PlaySequencerAnimationStepDesc*                        StepDesc;                                          // 0x98(0x8)
+	class SequencerCutSceneActor*                                SequencerCutSceneActor;                            // 0xa0(0x8)
+	char                                                         pad0x28_1NALY[0x28];                               // 0xa8(0x28)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class VisualiseLoggerEQSResultsTaleStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
+class GetActorOfInterestStepDesc: public TaleQuestStepDesc
+{
+public:
+	class UClass*                                                ActorOfInterestId;                                 // 0x80(0x8)
+	struct QuestVariableActor                                    ActorOfInterest;                                   // 0x88(0x30)
+};
+
+
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class TaleQuestEmissaryCompanyActionRewardBoostStepDesc: public TaleQuestStepDesc
+{
+public:
+	char                                                         CompanyActionType;                                 // 0x80(0x1)
+	char                                                         pad0x7_00N9J[0x7];                                 // 0x81(0x7)
+};
+
+
+// Size 0x60 (Full Size[0xf8] - InheritedSize[0x98]
+class TaleQuestMacroRootStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x8_B74YK[0x8];                                 // 0x98(0x8)
+	struct TaleStructInstance                                    Params;                                            // 0xa0(0x10)
+	char                                                         pad0x48_P9PI5[0x48];                               // 0xb0(0x48)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestAddCommonToolsStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x18 (Full Size[0x98] - InheritedSize[0x80]
+class TaleQuestArrayOperationStepBaseDesc: public TaleQuestStepDesc
+{
+public:
+	struct FName                                                 Array1;                                            // 0x80(0x8)
+	struct FName                                                 Array2;                                            // 0x88(0x8)
+	struct FName                                                 Result;                                            // 0x90(0x8)
+};
+
+
+// Size 0x118 (Full Size[0x198] - InheritedSize[0x80]
+class TaleQuestAddZoomMapStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct FName                                                 MapID;                                             // 0x80(0x8)
+	char                                                         QuestIconOverride;                                 // 0x88(0x1)
+	char                                                         pad0x3_Z7WFV[0x3];                                 // 0x89(0x3)
+	float                                                        ZoomLevel;                                         // 0x8c(0x4)
+	struct FText                                                 MapTitle;                                          // 0x90(0x38)
+	TArray<struct Text>                                          Descriptions;                                      // 0xc8(0x10)
+	struct QuestVariableVector                                   ZoomCenterPoint;                                   // 0xd8(0x30)
+	struct QuestVariableVectorArray                              MarkLocations;                                     // 0x108(0x30)
+	struct QuestVariableName                                     IslandName;                                        // 0x138(0x30)
+	struct TaleQuestVariableTreasureMapItemDescType              TreasureMapOverride;                               // 0x168(0x30)
 };
 
 
 // Size 0x0 (Full Size[0xa8] - InheritedSize[0xa8]
-class TaleQuestForEachUnionStep: public TaleQuestForEachStepBase
+class TaleQuestForEachUnionStepDesc: public TaleQuestForEachStepDescBase
 {
 public:
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestArrayUnionStepDesc: public TaleQuestArrayOperationStepBaseDesc
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestArrayAppendStepDesc: public TaleQuestArrayOperationStepBaseDesc
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x90] - InheritedSize[0x88]
+class WaitForQueryableStateValueBoolStepDesc: public WaitForQueryableStateValueStepDescBase
+{
+public:
+	bool                                                         ExpectedValue;                                     // 0x88(0x1)
+	char                                                         pad0x7_SBYL2[0x7];                                 // 0x89(0x7)
+};
+
+
+// Size 0x30 (Full Size[0x110] - InheritedSize[0xe0]
+class TaleQuestArrayContainsStepDesc: public TaleQuestArrayItemStepBaseDesc
+{
+public:
+	struct QuestVariableBool                                     Result;                                            // 0xe0(0x30)
+};
+
+
+// Size 0x40 (Full Size[0xe8] - InheritedSize[0xa8]
+class TaleQuestForEachSequential: public TaleQuestForEachStepBase
+{
+public:
+	class TaleQuestIndexedFrame*                                 Frame;                                             // 0xa8(0x8)
+	char                                                         pad0x38_1Y77L[0x38];                               // 0xb0(0x38)
+};
+
+
+// Size 0x38 (Full Size[0x148] - InheritedSize[0x110]
+class SpawnPhasedActorAtLocationStepDesc: public SpawnPhasedActorWithTransformStepBaseDesc
+{
+public:
+	struct QuestVariableTransform                                Location;                                          // 0x110(0x38)
 };
 
 
@@ -2806,8 +2854,32 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestBreakStructStep: public TaleQuestStructStepBase
+// Size 0x8 (Full Size[0x90] - InheritedSize[0x88]
+class WaitForQueryableStateValueIntStepDesc: public WaitForQueryableStateValueStepDescBase
+{
+public:
+	int                                                          ExpectedValue;                                     // 0x88(0x4)
+	char                                                         ComparisonType;                                    // 0x8c(0x1)
+	char                                                         pad0x3_URGB8[0x3];                                 // 0x8d(0x3)
+};
+
+
+// Size 0x0 (Full Size[0x50] - InheritedSize[0x50]
+class PlayerHasStatsPhaseBranchSelector: public NumPlayerStatsFromListPhaseBranchSelector
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0xa8] - InheritedSize[0xa8]
+class TaleQuestForEachSequentialDesc: public TaleQuestForEachStepDescBase
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x148] - InheritedSize[0x148]
+class WaitUntilAllParticipantsLeaveRadiusStep: public ParticipantRadiusTrackerStepDesc
 {
 public:
 };
@@ -2820,26 +2892,15 @@ public:
 };
 
 
-// Size 0x98 (Full Size[0x180] - InheritedSize[0xe8]
-class TaleQuestFunctionStepLibrary: public TaleQuestRunnableStepDesc
-{
-public:
-	char                                                         pad0x8_9O8N3[0x8];                                 // 0xe8(0x8)
-	class Function*                                              Function;                                          // 0xf0(0x8)
-	char                                                         FunctionStepFlags;                                 // 0x178(0x1)
-	char                                                         pad0x7_5RJP6[0x7];                                 // 0x179(0x7)
-};
-
-
-// Size 0x0 (Full Size[0x50] - InheritedSize[0x50]
-class PlayerHasStatsPhaseBranchSelector: public NumPlayerStatsFromListPhaseBranchSelector
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestBreakStructStep: public TaleQuestStructStepBase
 {
 public:
 };
 
 
-// Size 0x0 (Full Size[0x148] - InheritedSize[0x148]
-class WaitUntilAnyParticipantEntersRadiusStep: public ParticipantRadiusTrackerStepDesc
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestMakeStructStep: public TaleQuestStructStepBase
 {
 public:
 };
@@ -2852,8 +2913,100 @@ public:
 };
 
 
+// Size 0x0 (Full Size[0x148] - InheritedSize[0x148]
+class WaitUntilAllParticipantsEnterRadiusStep: public ParticipantRadiusTrackerStepDesc
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x88] - InheritedSize[0x88]
+class TaleMigrationVolatileTaskStepDesc: public TaleQuestTaskStepDescBase
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x88] - InheritedSize[0x88]
+class TaleQuestPersistentForEachCrewTaskStepDesc: public TaleQuestTaskStepDescBase
+{
+public:
+};
+
+
+// Size 0x30 (Full Size[0xb8] - InheritedSize[0x88]
+class TaleQuestCrewTaskStepDesc: public TaleQuestTaskStepDescBase
+{
+public:
+	struct QuestVariableGuid                                     CrewId;                                            // 0x88(0x30)
+};
+
+
+// Size 0x98 (Full Size[0x180] - InheritedSize[0xe8]
+class TaleQuestFunctionStepLibrary: public TaleQuestRunnableStepDesc
+{
+public:
+	char                                                         pad0x8_U4LUE[0x8];                                 // 0xe8(0x8)
+	class Function*                                              Function;                                          // 0xf0(0x8)
+	char                                                         FunctionStepFlags;                                 // 0x178(0x1)
+	char                                                         pad0x7_XY729[0x7];                                 // 0x179(0x7)
+};
+
+
+// Size 0x0 (Full Size[0x148] - InheritedSize[0x148]
+class WaitUntilAnyParticipantEntersRadiusStep: public ParticipantRadiusTrackerStepDesc
+{
+public:
+};
+
+
 // Size 0x0 (Full Size[0xa8] - InheritedSize[0xa8]
-class TaleQuestForEachSequentialDesc: public TaleQuestForEachStepDescBase
+class TaleQuestForEachAnyStep: public TaleQuestForEachStepBase
+{
+public:
+};
+
+
+// Size 0x60 (Full Size[0x148] - InheritedSize[0xe8]
+class TaleQuestCopyValueStepDesc: public TaleQuestRunnableStepDesc
+{
+public:
+	struct QuestVariable                                         FromVar;                                           // 0xe8(0x30)
+	struct QuestVariable                                         ToVar;                                             // 0x118(0x30)
+};
+
+
+// Size 0x0 (Full Size[0xd8] - InheritedSize[0xd8]
+class TaleQuestBreakStructStepDesc: public TaleQuestStructStepDescBase
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0xd8] - InheritedSize[0xd8]
+class TaleQuestMakeStructStepDesc: public TaleQuestStructStepDescBase
+{
+public:
+};
+
+
+// Size 0x30 (Full Size[0x140] - InheritedSize[0x110]
+class FindNamedPointStepDesc: public FindNamedPointStepDescBase
+{
+public:
+	struct QuestVariableOrientedPoint                            OutputOrientedPoint;                               // 0x110(0x30)
+};
+
+
+// Size 0x0 (Full Size[0xe0] - InheritedSize[0xe0]
+class TaleQuestFireEventStepDesc: public TaleQuestEventStepDescBase
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0xa8] - InheritedSize[0xa8]
+class TaleQuestForEachAnyStepDesc: public TaleQuestForEachStepDescBase
 {
 public:
 };
@@ -2876,188 +3029,60 @@ public:
 
 
 // Size 0x0 (Full Size[0xa8] - InheritedSize[0xa8]
-class TaleQuestForEachAnyStepDesc: public TaleQuestForEachStepDescBase
+class TaleQuestForEachUnionStep: public TaleQuestForEachStepBase
 {
 public:
 };
 
 
-// Size 0x0 (Full Size[0x148] - InheritedSize[0x148]
-class WaitUntilAllParticipantsEnterRadiusStep: public ParticipantRadiusTrackerStepDesc
+// Size 0x48 (Full Size[0x1c8] - InheritedSize[0x180]
+class TaleQuestStoryBranchFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
+	char                                                         pad0x8_T8S9U[0x8];                                 // 0x180(0x8)
+	class TaleQuestStepDesc*                                     Active;                                            // 0x188(0x8)
+	class TaleQuestStepDesc*                                     Inactive;                                          // 0x190(0x8)
+	char                                                         pad0x30_BDMY4[0x30];                               // 0x198(0x30)
 };
 
 
-// Size 0x0 (Full Size[0x88] - InheritedSize[0x88]
-class TaleQuestPersistentForEachCrewTaskStepDesc: public TaleQuestTaskStepDescBase
-{
-public:
-};
-
-
-// Size 0x60 (Full Size[0x148] - InheritedSize[0xe8]
-class TaleQuestCopyValueStepDesc: public TaleQuestRunnableStepDesc
-{
-public:
-	struct QuestVariable                                         FromVar;                                           // 0xe8(0x30)
-	struct QuestVariable                                         ToVar;                                             // 0x118(0x30)
-};
-
-
-// Size 0x30 (Full Size[0xb8] - InheritedSize[0x88]
-class TaleQuestCrewTaskStepDesc: public TaleQuestTaskStepDescBase
-{
-public:
-	struct QuestVariableGuid                                     CrewId;                                            // 0x88(0x30)
-};
-
-
-// Size 0x0 (Full Size[0x88] - InheritedSize[0x88]
-class TaleMigrationVolatileTaskStepDesc: public TaleQuestTaskStepDescBase
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestArrayUnionStepDesc: public TaleQuestArrayOperationStepBaseDesc
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0xe0] - InheritedSize[0xe0]
-class TaleQuestFireEventStepDesc: public TaleQuestEventStepDescBase
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0xa8] - InheritedSize[0xa8]
-class TaleQuestForEachUnionStepDesc: public TaleQuestForEachStepDescBase
-{
-public:
-};
-
-
-// Size 0x8 (Full Size[0x90] - InheritedSize[0x88]
-class WaitForQueryableStateValueIntStepDesc: public WaitForQueryableStateValueStepDescBase
-{
-public:
-	int                                                          ExpectedValue;                                     // 0x88(0x4)
-	char                                                         ComparisonType;                                    // 0x8c(0x1)
-	char                                                         pad0x3_M9EDQ[0x3];                                 // 0x8d(0x3)
-};
-
-
-// Size 0x30 (Full Size[0x140] - InheritedSize[0x110]
-class FindNamedPointStepDesc: public FindNamedPointStepDescBase
-{
-public:
-	struct QuestVariableOrientedPoint                            OutputOrientedPoint;                               // 0x110(0x30)
-};
-
-
-// Size 0x0 (Full Size[0xa8] - InheritedSize[0xa8]
-class TaleQuestForEachAnyStep: public TaleQuestForEachStepBase
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x148] - InheritedSize[0x148]
-class WaitUntilAllParticipantsLeaveRadiusStep: public ParticipantRadiusTrackerStepDesc
-{
-public:
-};
-
-
-// Size 0x38 (Full Size[0x148] - InheritedSize[0x110]
-class SpawnPhasedActorAtLocationStepDesc: public SpawnPhasedActorWithTransformStepBaseDesc
-{
-public:
-	struct QuestVariableTransform                                Location;                                          // 0x110(0x38)
-};
-
-
-// Size 0x40 (Full Size[0xe8] - InheritedSize[0xa8]
-class TaleQuestForEachSequential: public TaleQuestForEachStepBase
-{
-public:
-	class TaleQuestIndexedFrame*                                 Frame;                                             // 0xa8(0x8)
-	char                                                         pad0x38_BPFX6[0x38];                               // 0xb0(0x38)
-};
-
-
-// Size 0x0 (Full Size[0xd8] - InheritedSize[0xd8]
-class TaleQuestBreakStructStepDesc: public TaleQuestStructStepDescBase
-{
-public:
-};
-
-
-// Size 0x30 (Full Size[0x110] - InheritedSize[0xe0]
-class TaleQuestArrayContainsStepDesc: public TaleQuestArrayItemStepBaseDesc
-{
-public:
-	struct QuestVariableBool                                     Result;                                            // 0xe0(0x30)
-};
-
-
-// Size 0x8 (Full Size[0x90] - InheritedSize[0x88]
-class WaitForQueryableStateValueBoolStepDesc: public WaitForQueryableStateValueStepDescBase
-{
-public:
-	bool                                                         ExpectedValue;                                     // 0x88(0x1)
-	char                                                         pad0x7_0CHRH[0x7];                                 // 0x89(0x7)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestArrayAppendStepDesc: public TaleQuestArrayOperationStepBaseDesc
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestMakeStructStep: public TaleQuestStructStepBase
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0xd8] - InheritedSize[0xd8]
-class TaleQuestMakeStructStepDesc: public TaleQuestStructStepDescBase
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestActorFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestNotificationFunctionLibrary: public TaleQuestFunctionStepLibrary
+class TaleQuestQueryableStateAddToIntFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestCrewFunctionLibrary: public TaleQuestFunctionStepLibrary
+class TaleQuestLogicFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestDamageableInterfaceFunctionLibrary: public TaleQuestFunctionStepLibrary
+class TaleQuestUObjectFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestFloatMathsFunctionLibrary: public TaleQuestFunctionStepLibrary
+class TaleQuestSpawnShipFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestQueryableStateReadBoolFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
 };
@@ -3071,21 +3096,128 @@ public:
 
 
 // Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestStatusEffectsFunctionLibrary: public TaleQuestFunctionStepLibrary
+class TaleQuestDialogueFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestTransfromConversionFunctionLibrary: public TaleQuestFunctionStepLibrary
+class TaleQuestClassFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestEmoteFunctionLibrary: public TaleQuestFunctionStepLibrary
+class TaleQuestShipInteractionHandlerFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestShantyFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestAnimationMontageFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x188] - InheritedSize[0x180]
+class TaleQuestStatFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+	struct PlayerStat                                            Stat;                                              // 0x180(0x4)
+	char                                                         pad0x4_MOPK5[0x4];                                 // 0x184(0x4)
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestCutscenesFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestCharacterFunctionStepLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestDeathFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestHealthFunctionStepLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestRandomFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestDamageableInterfaceFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestCrewFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestPredicatedBranchPhasingFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestModifyPagesFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestItemFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestActionStateMachineFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestNotificationFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
 };
@@ -3093,6 +3225,27 @@ public:
 
 // Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
 class NameRedirectionTaleQuestFunctionLibary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestFloatMathsFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestOfferingNPCFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestNamedPointsFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
 };
@@ -3113,70 +3266,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestTransformMathsFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestAudioFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestQueryableStateWriteBoolFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestModifyPagesFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestVectorMathsFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestShipInteractionHandlerFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestIntMathsFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestClassFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestNamedPointsFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestUObjectFunctionLibrary: public TaleQuestFunctionStepLibrary
+class TaleQuestParticipantFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
 };
@@ -3190,195 +3280,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestCharacterFunctionStepLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestAnimationMontageFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestDeathFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestCutscenesFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestItemFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestNameFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestActorFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestRandomFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class ActorOfInterestTaleFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestAnimationStepFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestPredicatedBranchPhasingFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestActionStateMachineFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestShantyFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestSpawnShipFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestConversionFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestQueryableStateReadBoolFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x8 (Full Size[0x188] - InheritedSize[0x180]
-class TaleQuestStatFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-	struct PlayerStat                                            Stat;                                              // 0x180(0x4)
-	char                                                         pad0x4_W1HRP[0x4];                                 // 0x184(0x4)
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestValueFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestCurveFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestParticipantFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestDialogueFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestHealthFunctionStepLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestQueryableStateAddToIntFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x48 (Full Size[0x1c8] - InheritedSize[0x180]
-class TaleQuestStoryBranchFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-	char                                                         pad0x8_R3WTS[0x8];                                 // 0x180(0x8)
-	class TaleQuestStepDesc*                                     Active;                                            // 0x188(0x8)
-	class TaleQuestStepDesc*                                     Inactive;                                          // 0x190(0x8)
-	char                                                         pad0x30_AVN6M[0x30];                               // 0x198(0x30)
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestWaterVolumeFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestClientCommandFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestLogicFunctionLibrary: public TaleQuestFunctionStepLibrary
+class TaleQuestQueryableStateWriteBoolFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
 };
@@ -3392,6 +3294,27 @@ public:
 
 
 // Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestValueFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestVectorMathsFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestStatusEffectsFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
 class TaleQuestQueryableStateReadIntFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
@@ -3399,7 +3322,84 @@ public:
 
 
 // Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestOfferingNPCFunctionLibrary: public TaleQuestFunctionStepLibrary
+class TaleQuestConversionFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestTransformMathsFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class ActorOfInterestTaleFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestAudioFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestWaterVolumeFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestNameFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestAnimationStepFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestEmoteFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestClientCommandFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestCurveFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestTransfromConversionFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestIntMathsFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
 };

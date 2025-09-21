@@ -1,46 +1,4 @@
 {
-  "OtherTestUObject": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ActorThatLogsErrorWhenTicked": {
-    "Super": "Actor",
-    "FullSize": "0x3a0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TestablePlayerControllerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_W8M49[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0xb8"
-      }
-    ]
-  },
-  "TestAbstractActor": {
-    "Super": "Actor",
-    "FullSize": "0x3a0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TestUObject": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "AutomationBlueprintFunctionLibrary": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
@@ -55,7 +13,7 @@
     "ClassSize": "0xc0",
     "Attributes": [
       {
-        "Name": "pad0x8_UZZK1[0x8]",
+        "Name": "pad0x8_Q6BSZ[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3a8"
@@ -97,7 +55,7 @@
         "Offset": "0x3b5"
       },
       {
-        "Name": "pad0x2_935F8[0x2]",
+        "Name": "pad0x2_ODBYI[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x3b6"
@@ -121,7 +79,7 @@
         "Offset": "0x3c9"
       },
       {
-        "Name": "pad0x2_A8EJN[0x2]",
+        "Name": "pad0x2_CLKFF[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x3ca"
@@ -139,7 +97,7 @@
         "Offset": "0x3d0"
       },
       {
-        "Name": "pad0x4_R5LQ6[0x4]",
+        "Name": "pad0x4_D6YRN[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3d4"
@@ -181,17 +139,59 @@
         "Offset": "0x428"
       },
       {
-        "Name": "pad0x3c_CNBQR[0x3c]",
+        "Name": "pad0x3c_UFE4Z[0x3c]",
         "Type": "char",
         "Size": "0x3c",
         "Offset": "0x42c"
       }
     ]
   },
-  "TestSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x38",
-    "InheritedSize": "0x38",
+  "TestUObject": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AggregateAssetAudit": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TestablePlayerController": {
+    "Super": "PlayerController",
+    "FullSize": "0x748",
+    "InheritedSize": "0x748",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ObjectWithSettableWorld": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "World",
+        "Type": "class World*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "DummyReplicatedActor": {
+    "Super": "Actor",
+    "FullSize": "0x3a0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "OtherTestUObject": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -202,12 +202,19 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "pad0x38_OJEMC[0x38]",
+        "Name": "pad0x38_AE4FK[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x28"
       }
     ]
+  },
+  "TestablePlayerControllerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "AssetAuditSettings": {
     "Super": "DeveloperSettings",
@@ -247,45 +254,24 @@
       }
     ]
   },
-  "TestablePlayerControllerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "DummyReplicatedActor": {
-    "Super": "Actor",
-    "FullSize": "0x3a0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ObjectWithSettableWorld": {
-    "Super": "Object",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
+  "TestablePlayerControllerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "World",
-        "Type": "class World*",
-        "Size": "0x8",
-        "Offset": "0x28"
+        "Name": "pad0x20_VBKIJ[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0xb8"
       }
     ]
   },
-  "TestablePlayerController": {
-    "Super": "PlayerController",
-    "FullSize": "0x748",
-    "InheritedSize": "0x748",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RunUnitTestsCommandlet": {
-    "Super": "Commandlet",
-    "FullSize": "0x80",
-    "InheritedSize": "0x80",
+  "TestSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -296,10 +282,17 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "AggregateAssetAudit": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
+  "RunUnitTestsCommandlet": {
+    "Super": "Commandlet",
+    "FullSize": "0x80",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TestAbstractActor": {
+    "Super": "Actor",
+    "FullSize": "0x3a0",
+    "InheritedSize": "0x3a0",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -307,6 +300,13 @@
     "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ActorThatLogsErrorWhenTicked": {
+    "Super": "Actor",
+    "FullSize": "0x3a0",
+    "InheritedSize": "0x3a0",
     "ClassSize": "0x0",
     "Attributes": []
   },

@@ -6,35 +6,13 @@
 #include "DebugMenu_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DebugMenuTestFunctions: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
 // Size 0x50 (Full Size[0x108] - InheritedSize[0xb8]
 class DebugMenuComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x28_GTCE3[0x28];                               // 0xb8(0x28)
+	char                                                         pad0x28_3SEVT[0x28];                               // 0xb8(0x28)
 	class DebugMenu*                                             DebugMenuInstance;                                 // 0xe0(0x8)
-	char                                                         pad0x20_HT67R[0x20];                               // 0xe8(0x20)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DebugMenuEntryGenerator: public Object
-{
-public:
-};
-
-
-// Size 0xd8 (Full Size[0x478] - InheritedSize[0x3a0]
-class DebugMenu: public Actor
-{
-public:
-	char                                                         pad0xd8_NTH42[0xd8];                               // 0x3a0(0xd8)
+	char                                                         pad0x20_CPEB1[0x20];                               // 0xe8(0x20)
 };
 
 
@@ -49,11 +27,33 @@ public:
 };
 
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DebugMenuEntryGenerator: public Object
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DebugMenuTestFunctions: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
+// Size 0xd8 (Full Size[0x478] - InheritedSize[0x3a0]
+class DebugMenu: public Actor
+{
+public:
+	char                                                         pad0xd8_5LQYG[0xd8];                               // 0x3a0(0xd8)
+};
+
+
 // Size 0x8 (Full Size[0x110] - InheritedSize[0x108]
 class DebugMenuComponentMock: public DebugMenuComponent
 {
 public:
-	char                                                         pad0x8_G8HJV[0x8];                                 // 0x108(0x8)
+	char                                                         pad0x8_GD5XZ[0x8];                                 // 0x108(0x8)
 };
 
 

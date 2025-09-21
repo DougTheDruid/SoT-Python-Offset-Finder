@@ -11,7 +11,7 @@ public:
 	TArray<class WwiseEvent*>                                    WwisePlayEvents;                                   // 0x3a8(0x10)
 	struct FName                                                 Wwise Game Parameter;                              // 0x3b8(0x8)
 	float                                                        Wwise Game Parameter Value;                        // 0x3c0(0x4)
-	char                                                         pad0x4_UK24W[0x4];                                 // 0x3c4(0x4)
+	char                                                         pad0x4_LNO4F[0x4];                                 // 0x3c4(0x4)
 	class WwiseObjectPoolWrapper*                                Wwise Object Pool Wrapper;                         // 0x3c8(0x8)
 	TArray<class WwiseEvent*>                                    WwiseStopEvents;                                   // 0x3d0(0x10)
 };

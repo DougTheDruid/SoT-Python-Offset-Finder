@@ -9,7 +9,7 @@ GameplayTag:
   ClassSize: '0x8'
 GameplayTagContainer:
   Attributes:
-  - Name: pad0x8_CBI8D[0x8]
+  - Name: pad0x8_346KA[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -24,7 +24,7 @@ GameplayTagContainer:
   ClassSize: '0x28'
 GameplayTagNode:
   Attributes:
-  - Name: pad0x78_AHWUL[0x78]
+  - Name: pad0x78_NK1XP[0x78]
     Offset: '0x0'
     Size: '0x78'
     Type: char
@@ -35,7 +35,7 @@ GameplayTagQuery:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_SE2HG[0x4]
+  - Name: pad0x4_RWOAP[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char

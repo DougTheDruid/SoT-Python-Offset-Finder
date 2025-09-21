@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 SmugglersRunService:
   Attributes:
-  - Name: pad0x288_1SY4N[0x288]
+  - Name: pad0x288_2OK35[0x288]
     Offset: '0x3a0'
     Size: '0x288'
     Type: char

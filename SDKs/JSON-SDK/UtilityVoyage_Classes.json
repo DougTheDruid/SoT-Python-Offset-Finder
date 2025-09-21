@@ -1,18 +1,4 @@
 {
-  "DispatchUtilityVoyageTaleStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0xa0",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "StepDesc",
-        "Type": "class DispatchUtilityVoyageTaleStepDesc*",
-        "Size": "0x8",
-        "Offset": "0x98"
-      }
-    ]
-  },
   "DispatchUtilityVoyageTaleStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0x90",
@@ -32,10 +18,24 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x7_KOYIS[0x7]",
+        "Name": "pad0x7_W07PM[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x89"
+      }
+    ]
+  },
+  "DispatchUtilityVoyageTaleStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "StepDesc",
+        "Type": "class DispatchUtilityVoyageTaleStepDesc*",
+        "Size": "0x8",
+        "Offset": "0x98"
       }
     ]
   },
@@ -46,7 +46,7 @@
     "ClassSize": "0xb0",
     "Attributes": [
       {
-        "Name": "pad0x90_NH0NK[0x90]",
+        "Name": "pad0x90_JR1GX[0x90]",
         "Type": "char",
         "Size": "0x90",
         "Offset": "0x28"

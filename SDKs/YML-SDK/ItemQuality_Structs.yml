@@ -41,7 +41,7 @@ ComplexItemQualityEntry:
     Offset: '0x5'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_I9LXS[0x2]
+  - Name: pad0x2_DYL8G[0x2]
     Offset: '0x6'
     Size: '0x2'
     Type: char
@@ -60,7 +60,7 @@ EmissaryLevelIncreaseOverrideData:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_KVWO1[0x3]
+  - Name: pad0x3_Y9P9J[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -90,7 +90,7 @@ PerComanyItemQualityEntry:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_XF2WF[0x7]
+  - Name: pad0x7_M43NZ[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char

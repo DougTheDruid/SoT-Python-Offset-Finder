@@ -6,7 +6,7 @@ CleanlinessInfo:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_XS5T1[0x3]
+  - Name: pad0x3_LH32Z[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -18,14 +18,14 @@ CleanlinessInfo:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_JQ97B[0x3]
+  - Name: pad0x3_J7O8Q[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
   ClassSize: '0xc'
 EventQuickCleanRequest:
   Attributes:
-  - Name: pad0x1_17YIS[0x1]
+  - Name: pad0x1_GDNQ8[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char

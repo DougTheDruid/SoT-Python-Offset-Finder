@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 CountHolderComponent:
   Attributes:
-  - Name: pad0x8_D023O[0x8]
+  - Name: pad0x8_CFST3[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -34,7 +34,7 @@ CountMaterialDisplayComponent:
     Offset: '0xc8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_9CMNC[0x4]
+  - Name: pad0x4_YUWDF[0x4]
     Offset: '0xcc'
     Size: '0x4'
     Type: char
@@ -68,7 +68,7 @@ IsCountAmountMetStatCondition:
     Offset: '0x30'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_TBOJ3[0x4]
+  - Name: pad0x4_V1M1R[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char

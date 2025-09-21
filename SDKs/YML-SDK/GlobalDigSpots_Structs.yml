@@ -25,7 +25,7 @@ GlobalDigSpotDefinition:
   ClassSize: '0x30'
 GlobalDigSpotPopupEvent:
   Attributes:
-  - Name: pad0x18_ZMGCS[0x18]
+  - Name: pad0x18_S30AI[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char

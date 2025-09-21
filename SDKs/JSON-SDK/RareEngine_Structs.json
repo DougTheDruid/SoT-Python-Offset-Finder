@@ -1,44 +1,4 @@
 {
-  "MemoryVisualiserStat": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "StatName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DisplayName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "MemoryUsageMB",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x4_HYIAL[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x1c"
-      }
-    ]
-  },
-  "StaticMeshActorList": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Actors",
-        "Type": "TArray<class StaticMeshActor*>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "MemoryCommonData": {
     "ClassSize": "0x50",
     "Attributes": [
@@ -158,6 +118,17 @@
       }
     ]
   },
+  "StaticMeshActorList": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Actors",
+        "Type": "TArray<class StaticMeshActor*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "StaticMeshComponentList": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -166,6 +137,35 @@
         "Type": "TArray<class StaticMeshComponent*>",
         "Size": "0x10",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "MemoryVisualiserStat": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "StatName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DisplayName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "MemoryUsageMB",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x4_JUYCR[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
       }
     ]
   },
@@ -185,7 +185,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_KUHK6[0x7]",
+        "Name": "pad0x7_QFDOP[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
@@ -203,7 +203,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_IUEC2[0x4]",
+        "Name": "pad0x4_O5F03[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x24"
@@ -238,7 +238,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x3_P53CG[0x3]",
+        "Name": "pad0x3_EU9D3[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x31"
@@ -292,7 +292,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x4_IL50C[0x4]",
+        "Name": "pad0x4_YJHQK[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x54"

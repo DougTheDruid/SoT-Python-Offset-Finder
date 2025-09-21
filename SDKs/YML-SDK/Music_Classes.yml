@@ -18,7 +18,7 @@ AISpawnerMusicZoneComponent:
     Offset: '0x3d8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_D36H6[0x7]
+  - Name: pad0x7_19LXO[0x7]
     Offset: '0x3d9'
     Size: '0x7'
     Type: char
@@ -34,7 +34,7 @@ EmitterManipulatorInterface:
   Super: Interface
 MusicZoneComponent:
   Attributes:
-  - Name: pad0x8_ZMM6L[0x8]
+  - Name: pad0x8_UNS1Q[0x8]
     Offset: '0x2d0'
     Size: '0x8'
     Type: char
@@ -58,7 +58,7 @@ MusicZoneComponent:
     Offset: '0x2f0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_X5Q1C[0x7]
+  - Name: pad0x7_W5OLH[0x7]
     Offset: '0x2f1'
     Size: '0x7'
     Type: char
@@ -86,7 +86,7 @@ MusicZoneComponent:
     Offset: '0x321'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_EQXSJ[0x6]
+  - Name: pad0x6_YGKOM[0x6]
     Offset: '0x322'
     Size: '0x6'
     Type: char
@@ -94,7 +94,7 @@ MusicZoneComponent:
     Offset: '0x360'
     Size: '0x20'
     Type: struct MusicZoneRemoteValues
-  - Name: pad0x40_N7RTL[0x40]
+  - Name: pad0x40_XAAUD[0x40]
     Offset: '0x380'
     Size: '0x40'
     Type: char
@@ -110,7 +110,7 @@ MusicZoneInterface:
   Super: EmitterManipulatorInterface
 MusicZoneService:
   Attributes:
-  - Name: pad0xc8_0WL2L[0xc8]
+  - Name: pad0xc8_SUTBF[0xc8]
     Offset: '0x3a0'
     Size: '0xc8'
     Type: char
@@ -144,7 +144,7 @@ SynchedMusicZoneComponent:
     Offset: '0x3bc'
     Size: '0x4'
     Type: int
-  - Name: pad0x30_1FMXD[0x30]
+  - Name: pad0x30_Y8AW5[0x30]
     Offset: '0x3c0'
     Size: '0x30'
     Type: char

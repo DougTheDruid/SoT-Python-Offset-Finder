@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AIHomeComponent:
   Attributes:
-  - Name: pad0x8_ZDZ1F[0x8]
+  - Name: pad0x8_WSTDD[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -34,7 +34,7 @@ BTService_SetBestActionSpotNearTarget:
     Offset: '0xc0'
     Size: '0x34'
     Type: struct BestActionSpotSelectionCriteria
-  - Name: pad0x1c_VQBOK[0x1c]
+  - Name: pad0x1c_SP504[0x1c]
     Offset: '0xf4'
     Size: '0x1c'
     Type: char
@@ -52,7 +52,7 @@ WhileActionSpotAvailableForPatrolAIGoal:
     Offset: '0x44'
     Size: '0x4'
     Type: float
-  - Name: pad0x30_54RFE[0x30]
+  - Name: pad0x30_W1VHT[0x30]
     Offset: '0x48'
     Size: '0x30'
     Type: char
@@ -88,7 +88,7 @@ WhileCanBeInteractedWithAndPlayerIsNearbyAIGoal:
     Offset: '0x68'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_0DU3Y[0x7]
+  - Name: pad0x7_E67WB[0x7]
     Offset: '0x69'
     Size: '0x7'
     Type: char
@@ -124,7 +124,7 @@ WhilePlayerWithinAreaAIGoal:
     Offset: '0x68'
     Size: '0x8'
     Type: class Pawn*
-  - Name: pad0x80_BE2KM[0x80]
+  - Name: pad0x80_FWLHY[0x80]
     Offset: '0x70'
     Size: '0x80'
     Type: char

@@ -12,16 +12,6 @@ public:
 };
 
 
-// Size 0x48
-struct IsNewInteractingPlayerCondition
-{
-public:
-	char                                                         pad0x8_4D5BG[0x8];                                 // 0x0(0x8)
-	struct ConditionContextPayloadSelectorInstance               PlayerPayloadSelector;                             // 0x8(0x20)
-	struct ConditionContextPayloadSelectorInstance               InteractablePayloadSelector;                       // 0x28(0x20)
-};
-
-
 // Size 0x10
 struct EventOptimalInteractionObjectChanged
 {
@@ -41,7 +31,27 @@ public:
 	float                                                        DistancePlayerToLoadable;                          // 0x2c(0x4)
 	bool                                                         IsLoadableValid;                                   // 0x30(0x1)
 	bool                                                         IsInteractableValid;                               // 0x31(0x1)
-	char                                                         pad0x6_TVBZ6[0x6];                                 // 0x32(0x6)
+	char                                                         pad0x6_BXJQH[0x6];                                 // 0x32(0x6)
+};
+
+
+// Size 0x48
+struct IsNewInteractingPlayerCondition
+{
+public:
+	char                                                         pad0x8_2E1U7[0x8];                                 // 0x0(0x8)
+	struct ConditionContextPayloadSelectorInstance               PlayerPayloadSelector;                             // 0x8(0x20)
+	struct ConditionContextPayloadSelectorInstance               InteractablePayloadSelector;                       // 0x28(0x20)
+};
+
+
+// Size 0x18
+struct EventInteractorChangedOptimalInteractionObject
+{
+public:
+	class Actor*                                                 InteractingActor;                                  // 0x0(0x8)
+	class Object*                                                PreviousFocusObject;                               // 0x8(0x8)
+	class Object*                                                NewFocusObject;                                    // 0x10(0x8)
 };
 
 
@@ -59,12 +69,12 @@ struct InteractionDistanceCheckFailedTelemetryEvent
 {
 public:
 	float                                                        Distance;                                          // 0x0(0x4)
-	char                                                         pad0x4_E2W9B[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_EKKZX[0x4];                                 // 0x4(0x4)
 	struct FString                                               DistanceRating;                                    // 0x8(0x10)
 	float                                                        DistanceThreshold_Used;                            // 0x18(0x4)
 	float                                                        DistanceThreshold_Config;                          // 0x1c(0x4)
 	float                                                        DistanceThreshold_Settings;                        // 0x20(0x4)
-	char                                                         pad0x4_9JNON[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_6SI11[0x4];                                 // 0x24(0x4)
 };
 
 

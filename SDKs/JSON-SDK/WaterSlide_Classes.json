@@ -6,7 +6,7 @@
     "ClassSize": "0x68",
     "Attributes": [
       {
-        "Name": "pad0x8_RTJL7[0x8]",
+        "Name": "pad0x8_5GV7H[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xd0"
@@ -30,7 +30,7 @@
         "Offset": "0xe8"
       },
       {
-        "Name": "pad0x4_Z22CH[0x4]",
+        "Name": "pad0x4_8R2F8[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xec"
@@ -66,7 +66,7 @@
         "Offset": "0x110"
       },
       {
-        "Name": "pad0x14_8AKMG[0x14]",
+        "Name": "pad0x14_PV77F[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0x11c"
@@ -79,6 +79,63 @@
       }
     ]
   },
+  "WaterSlideAudioParams": {
+    "Super": "DataAsset",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "WaterSlideStart",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "WaterSlideEnd",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "WaterSlideIsEndOneShot",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "WaterSlideChangeForkOneShot",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "PlayerSpeedOnWaterSlideRTPC",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "PlayerSpeedThatMapsToOne",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "PlayerSpeedThatMapsToZero",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x54"
+      }
+    ]
+  },
+  "WaterSlideActionStateId": {
+    "Super": "ActionStateId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "WaterSlideVeeringAnalogInputId": {
     "Super": "AnalogInputId",
     "FullSize": "0x38",
@@ -86,31 +143,40 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "Ride": {
-    "Super": "Actor",
-    "FullSize": "0x3b8",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x18",
+  "RideTransitionActionStateId": {
+    "Super": "ActionStateId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WaterSlideInputComponent": {
+    "Super": "LookAtOffsetInputComponent",
+    "FullSize": "0x2a0",
+    "InheritedSize": "0x290",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x8_TY33N[0x8]",
+        "Name": "pad0x10_PG4CI[0x10]",
         "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "SplineComponent",
-        "Type": "class SplineComponent*",
-        "Size": "0x8",
-        "Offset": "0x3a8"
-      },
-      {
-        "Name": "Root",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x3b0"
+        "Size": "0x10",
+        "Offset": "0x290"
       }
     ]
+  },
+  "ZiplineEditorComponent": {
+    "Super": "CameraComponent",
+    "FullSize": "0x840",
+    "InheritedSize": "0x840",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RidePlayerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "ZiplineActionStateId": {
     "Super": "ActionStateId",
@@ -130,6 +196,20 @@
         "Type": "struct WaterSlideParams",
         "Size": "0x28",
         "Offset": "0x28"
+      }
+    ]
+  },
+  "ZiplineInputComponent": {
+    "Super": "LookAtOffsetInputComponent",
+    "FullSize": "0x298",
+    "InheritedSize": "0x290",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_GH706[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x290"
       }
     ]
   },
@@ -201,111 +281,31 @@
       }
     ]
   },
-  "WaterSlideActionStateId": {
-    "Super": "ActionStateId",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "WaterSlideAudioParams": {
-    "Super": "DataAsset",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
+  "Ride": {
+    "Super": "Actor",
+    "FullSize": "0x3b8",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "WaterSlideStart",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "WaterSlideEnd",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "WaterSlideIsEndOneShot",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "WaterSlideChangeForkOneShot",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "PlayerSpeedOnWaterSlideRTPC",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "PlayerSpeedThatMapsToOne",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "PlayerSpeedThatMapsToZero",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x54"
-      }
-    ]
-  },
-  "ZiplineInputComponent": {
-    "Super": "LookAtOffsetInputComponent",
-    "FullSize": "0x298",
-    "InheritedSize": "0x290",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_BWR3H[0x8]",
+        "Name": "pad0x8_MRN1Z[0x8]",
         "Type": "char",
         "Size": "0x8",
-        "Offset": "0x290"
-      }
-    ]
-  },
-  "RidePlayerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "WaterSlideInputComponent": {
-    "Super": "LookAtOffsetInputComponent",
-    "FullSize": "0x2a0",
-    "InheritedSize": "0x290",
-    "ClassSize": "0x10",
-    "Attributes": [
+        "Offset": "0x3a0"
+      },
       {
-        "Name": "pad0x10_UAVWW[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x290"
+        "Name": "SplineComponent",
+        "Type": "class SplineComponent*",
+        "Size": "0x8",
+        "Offset": "0x3a8"
+      },
+      {
+        "Name": "Root",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x3b0"
       }
     ]
-  },
-  "ZiplineEditorComponent": {
-    "Super": "CameraComponent",
-    "FullSize": "0x840",
-    "InheritedSize": "0x840",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RideTransitionActionStateId": {
-    "Super": "ActionStateId",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "Zipline": {
     "Super": "Ride",
@@ -326,7 +326,7 @@
         "Offset": "0x3b9"
       },
       {
-        "Name": "pad0x2_OUU0I[0x2]",
+        "Name": "pad0x2_GW3R6[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x3ba"
@@ -368,7 +368,7 @@
         "Offset": "0x6e4"
       },
       {
-        "Name": "pad0x2c_83LYF[0x2c]",
+        "Name": "pad0x2c_VM4XK[0x2c]",
         "Type": "char",
         "Size": "0x2c",
         "Offset": "0x6ec"
@@ -404,7 +404,7 @@
         "Offset": "0x738"
       },
       {
-        "Name": "pad0xc_EC46V[0xc]",
+        "Name": "pad0xc_C18HV[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x73c"
@@ -454,7 +454,7 @@
         "Offset": "0x3e0"
       },
       {
-        "Name": "pad0x3_TH6KT[0x3]",
+        "Name": "pad0x3_1BRYR[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x3e1"
@@ -472,7 +472,7 @@
         "Offset": "0x3f0"
       },
       {
-        "Name": "pad0x8_237RC[0x8]",
+        "Name": "pad0x8_VXB20[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3f8"

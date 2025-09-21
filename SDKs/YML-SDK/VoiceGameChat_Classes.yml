@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 PlayfabPartyVoiceChannel:
   Attributes:
-  - Name: pad0x18_TJ1KV[0x18]
+  - Name: pad0x18_NWI00[0x18]
     Offset: '0x90'
     Size: '0x18'
     Type: char

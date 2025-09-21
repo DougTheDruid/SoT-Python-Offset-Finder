@@ -17,7 +17,7 @@ public:
 class ZoomInOnWieldableItemComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_INLQ6[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_FMVN9[0x8];                                 // 0xb8(0x8)
 	struct FName                                                 FeatureName;                                       // 0xc0(0x8)
 	float                                                        ZoomedInFov;                                       // 0xc8(0x4)
 	float                                                        FreelookPitch;                                     // 0xcc(0x4)
@@ -25,7 +25,7 @@ public:
 	float                                                        FreelookOutInterpolationRate;                      // 0xd4(0x4)
 	float                                                        LookSensitivityScaler;                             // 0xd8(0x4)
 	float                                                        MaxClampedFOV;                                     // 0xdc(0x4)
-	char                                                         pad0x40_V0P92[0x40];                               // 0xe0(0x40)
+	char                                                         pad0x40_190OH[0x40];                               // 0xe0(0x40)
 };
 
 

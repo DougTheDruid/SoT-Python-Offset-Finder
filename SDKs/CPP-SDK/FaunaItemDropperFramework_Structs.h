@@ -15,7 +15,7 @@ public:
 struct FaunaItemProxyStruct
 {
 public:
-	char                                                         pad0x10_L1KQ8[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_UKIQY[0x10];                               // 0x0(0x10)
 };
 
 

@@ -1,10 +1,107 @@
 {
-  "EventEnableLookAtEmoteCamera": {
+  "EmoteId": {
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_1HXHG[0x8]",
+        "Name": "EmoteId",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventEmotePreviewStarted": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_JGUS0[0x1]",
         "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EmotePropRandomObjectResult": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "Mesh",
+        "Type": "class StaticMesh*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "HasTransformValue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_E29SC[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
+      },
+      {
+        "Name": "Transform",
+        "Type": "struct Transform",
+        "Size": "0x30",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "TextureParameterName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "TextureParameterValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x4_H72SD[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      }
+    ]
+  },
+  "EventDisguiseInteractedWith": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_HN285[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventEmoteCompleted": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "EmoteName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_W5G78[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "WalkableEmoteMovementStartEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Event",
+        "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x0"
       }
@@ -14,7 +111,7 @@
     "ClassSize": "0x4",
     "Attributes": [
       {
-        "Name": "pad0x4_DJV3E[0x4]",
+        "Name": "pad0x4_3NQ6I[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x0"
@@ -25,44 +122,118 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_NWYSJ[0x1]",
+        "Name": "pad0x1_ZFI5L[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
       }
     ]
   },
-  "WalkableEmoteDisguiseIdentifierSet": {
+  "EventDisableLookAtEmoteCamera": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_Q8SNF[0x1]",
+        "Name": "pad0x1_EHUEO[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
       }
     ]
   },
-  "EmoteDiceOutcomeTelemetryEvent": {
-    "ClassSize": "0x14",
+  "EventEndEmoteAnimation": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "MaxLimit",
-        "Type": "int",
-        "Size": "0x4",
+        "Name": "pad0x1_72CU4[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventEmoteEndRequested": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "EmoteIdentifier",
+        "Type": "struct FName",
+        "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "RollNumber",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
+        "Name": "EndForcedEmote",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x8"
       },
       {
-        "Name": "OrientationUsed",
-        "Type": "struct Vector",
-        "Size": "0xc",
+        "Name": "pad0x3_0S971[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x9"
+      }
+    ]
+  },
+  "WalkableEmoteMovementStopEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "StopMovementEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PutDownEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "EmoteRandomObjectOutcomeTelemetryEvent": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "MeshName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Transform",
+        "Type": "struct Transform",
+        "Size": "0x30",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "TextureParameterName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "TextureParameterValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "pad0xc_NYXY0[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x54"
+      }
+    ]
+  },
+  "WalkableEmoteToastEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "IsInWalkableEmote",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },
@@ -95,177 +266,14 @@
       }
     ]
   },
-  "EventEmoteCompleted": {
-    "ClassSize": "0xc",
+  "EventEnableLookAtEmoteCamera": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "EmoteName",
-        "Type": "struct FName",
+        "Name": "pad0x8_3YEJ5[0x8]",
+        "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x4_W8FOG[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "EventEmoteEndRequested": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "EmoteIdentifier",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "EndForcedEmote",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x3_8N7TC[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x9"
-      }
-    ]
-  },
-  "EventWalkableEmoteCompleted": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "WalkableEmoteName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "WalkableEmoteType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "DisguiseIdentifier",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xd"
-      },
-      {
-        "Name": "pad0x2_866PW[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0xe"
-      },
-      {
-        "Name": "DistanceTravelled",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "EmotePropRandomObjectResult": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "Mesh",
-        "Type": "class StaticMesh*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "HasTransformValue",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x7_HGXCE[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x9"
-      },
-      {
-        "Name": "Transform",
-        "Type": "struct Transform",
-        "Size": "0x30",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "TextureParameterName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "TextureParameterValue",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "pad0x4_HZIKT[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4c"
-      }
-    ]
-  },
-  "EmoteRandomObjectOutcomeTelemetryEvent": {
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "MeshName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Transform",
-        "Type": "struct Transform",
-        "Size": "0x30",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "TextureParameterName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "TextureParameterValue",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "pad0xc_OGNGB[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x54"
-      }
-    ]
-  },
-  "WalkableEmoteMovementStopEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "StopMovementEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PutDownEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x8"
       }
     ]
   },
@@ -279,7 +287,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_6NWO3[0x7]",
+        "Name": "pad0x7_KWKF3[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -303,75 +311,20 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x7_13JAX[0x7]",
+        "Name": "pad0x7_11APW[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x51"
       }
     ]
   },
-  "EventEndEmoteAnimation": {
+  "WalkableEmoteDisguiseIdentifierSet": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_QE423[0x1]",
+        "Name": "pad0x1_6PZO1[0x1]",
         "Type": "char",
         "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EmoteId": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "EmoteId",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventEmotePreviewStarted": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_42STK[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventDisguiseInteractedWith": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_ARP1K[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventDisableLookAtEmoteCamera": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_R75XG[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "WalkableEmoteMovementStartEvent": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Event",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
         "Offset": "0x0"
       }
     ]
@@ -399,14 +352,78 @@
       }
     ]
   },
-  "WalkableEmoteToastEvent": {
-    "ClassSize": "0x1",
+  "EventWalkableEmoteCompleted": {
+    "ClassSize": "0x14",
     "Attributes": [
       {
-        "Name": "IsInWalkableEmote",
-        "Type": "bool",
-        "Size": "0x1",
+        "Name": "WalkableEmoteName",
+        "Type": "struct FName",
+        "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "WalkableEmoteType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "DisguiseIdentifier",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xd"
+      },
+      {
+        "Name": "pad0x2_OGEVX[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0xe"
+      },
+      {
+        "Name": "DistanceTravelled",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EmoteDiceOutcomeTelemetryEvent": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "MaxLimit",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RollNumber",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "OrientationUsed",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EmoteInteractionTooltipData": {
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "Tooltip",
+        "Type": "struct EmoteInteractionTooltipInstance",
+        "Size": "0x58",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "GreyedOut",
+        "Type": "struct EmoteInteractionTooltipInstance",
+        "Size": "0x58",
+        "Offset": "0x58"
       }
     ]
   },
@@ -456,7 +473,7 @@
         "Offset": "0x81"
       },
       {
-        "Name": "pad0x2_AVG2U[0x2]",
+        "Name": "pad0x2_CXGSQ[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x82"
@@ -486,7 +503,7 @@
         "Offset": "0x91"
       },
       {
-        "Name": "pad0x6_H0BKU[0x6]",
+        "Name": "pad0x6_2FUTK[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x92"
@@ -504,7 +521,7 @@
         "Offset": "0xa0"
       },
       {
-        "Name": "pad0x3_QIK3Q[0x3]",
+        "Name": "pad0x3_JSYW5[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xa1"
@@ -529,24 +546,47 @@
       }
     ]
   },
-  "EmoteInteractionTooltipData": {
-    "ClassSize": "0xb0",
+  "EventEmoteStarted": {
+    "ClassSize": "0xc8",
     "Attributes": [
       {
-        "Name": "Tooltip",
-        "Type": "struct EmoteInteractionTooltipInstance",
-        "Size": "0x58",
+        "Name": "EmoteData",
+        "Type": "struct EmoteData",
+        "Size": "0xc8",
         "Offset": "0x0"
-      },
-      {
-        "Name": "GreyedOut",
-        "Type": "struct EmoteInteractionTooltipInstance",
-        "Size": "0x58",
-        "Offset": "0x58"
       }
     ]
   },
-  "EventEmoteStarted": {
+  "EventEmoteRequested": {
+    "ClassSize": "0xd8",
+    "Attributes": [
+      {
+        "Name": "EmoteData",
+        "Type": "struct EmoteData",
+        "Size": "0xc8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ForcedEmoteIdentifier",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "ForcedEmote",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0x7_HBSPZ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xd1"
+      }
+    ]
+  },
+  "EventEmoteSwapped": {
     "ClassSize": "0xc8",
     "Attributes": [
       {
@@ -561,7 +601,7 @@
     "ClassSize": "0x128",
     "Attributes": [
       {
-        "Name": "pad0xc8_KQ7ZR[0xc8]",
+        "Name": "pad0xc8_N6CJ1[0xc8]",
         "Type": "char",
         "Size": "0xc8",
         "Offset": "0x0"
@@ -579,7 +619,7 @@
         "Offset": "0xc9"
       },
       {
-        "Name": "pad0x2_OOXP6[0x2]",
+        "Name": "pad0x2_CMT20[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0xca"
@@ -597,7 +637,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x7_E1OAD[0x7]",
+        "Name": "pad0x7_X1Q48[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xd1"
@@ -655,46 +695,6 @@
         "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x120"
-      }
-    ]
-  },
-  "EventEmoteRequested": {
-    "ClassSize": "0xd8",
-    "Attributes": [
-      {
-        "Name": "EmoteData",
-        "Type": "struct EmoteData",
-        "Size": "0xc8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ForcedEmoteIdentifier",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "ForcedEmote",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "pad0x7_J6FS2[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0xd1"
-      }
-    ]
-  },
-  "EventEmoteSwapped": {
-    "ClassSize": "0xc8",
-    "Attributes": [
-      {
-        "Name": "EmoteData",
-        "Type": "struct EmoteData",
-        "Size": "0xc8",
-        "Offset": "0x0"
       }
     ]
   },

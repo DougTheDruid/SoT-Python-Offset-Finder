@@ -4,10 +4,10 @@
 // https://github.com/DougTheDruid
 
 // Size 0x1
-struct RotatingCompassSplinePathCompletedEvent
+struct RotatingCompassRotationCurveCompletedEvent
 {
 public:
-	char                                                         pad0x1_3BACE[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_JFZUX[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -15,7 +15,7 @@ public:
 struct RotatingCompassAudioParams
 {
 public:
-	char                                                         pad0x20_JRNFP[0x20];                               // 0x0(0x20)
+	char                                                         pad0x20_N54OZ[0x20];                               // 0x0(0x20)
 	class WwiseObjectPoolWrapper*                                EmitterPool;                                       // 0x20(0x8)
 	struct FName                                                 EmitterName;                                       // 0x28(0x8)
 	class WwiseEvent*                                            OneShotRotationSfx;                                // 0x30(0x8)
@@ -25,10 +25,10 @@ public:
 
 
 // Size 0x1
-struct RotatingCompassRotationCurveCompletedEvent
+struct RotatingCompassSplinePathCompletedEvent
 {
 public:
-	char                                                         pad0x1_C8K68[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_4U1DF[0x1];                                 // 0x0(0x1)
 };
 
 

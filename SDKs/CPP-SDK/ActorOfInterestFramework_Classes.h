@@ -7,13 +7,6 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ActorOfInterestBlueprintFunctionLibrary: public Object
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class ActorOfInterestId: public Object
 {
 public:
@@ -24,7 +17,7 @@ public:
 class ActorOfInterestService: public Actor
 {
 public:
-	char                                                         pad0x60_11TT1[0x60];                               // 0x3a0(0x60)
+	char                                                         pad0x60_IQ3E8[0x60];                               // 0x3a0(0x60)
 	struct ObjectMessagingDispatcher                             EventDispatcher;                                   // 0x400(0xa0)
 };
 
@@ -36,12 +29,19 @@ public:
 };
 
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ActorOfInterestBlueprintFunctionLibrary: public Object
+{
+public:
+};
+
+
 // Size 0x20 (Full Size[0xd8] - InheritedSize[0xb8]
 class ActorOfInterestComponent: public ActorComponent
 {
 public:
 	class UClass*                                                ActorOfInterestId;                                 // 0xb8(0x8)
-	char                                                         pad0x18_VWRPB[0x18];                               // 0xc0(0x18)
+	char                                                         pad0x18_9AYD5[0x18];                               // 0xc0(0x18)
 };
 
 

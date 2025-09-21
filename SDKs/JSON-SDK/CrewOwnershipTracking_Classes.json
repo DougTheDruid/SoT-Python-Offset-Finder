@@ -1,12 +1,5 @@
 {
-  "CustomCrewTrackingInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "CrewOwnershipTrackingControlInterface": {
+  "CrewSpawnOwnershipTrackingInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -20,7 +13,7 @@
     "ClassSize": "0xa8",
     "Attributes": [
       {
-        "Name": "pad0x18_E4FHA[0x18]",
+        "Name": "pad0x18_SDBL6[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0xb8"
@@ -44,14 +37,14 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x60_5AASB[0x60]",
+        "Name": "pad0x60_W7XL8[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0x100"
       }
     ]
   },
-  "CrewSpawnOwnershipTrackingInterface": {
+  "CrewOwnershipTrackingControlInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -59,6 +52,13 @@
     "Attributes": []
   },
   "CrewOwnershipTrackingInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CustomCrewTrackingInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

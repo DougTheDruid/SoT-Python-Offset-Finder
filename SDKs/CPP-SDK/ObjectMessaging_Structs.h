@@ -4,10 +4,10 @@
 // https://github.com/DougTheDruid
 
 // Size 0x8
-struct EventObjectMessagingDispatcherBeingDestroyed
+struct ObjectMessagingDispatcherHandle
 {
 public:
-	char                                                         pad0x8_9Q76W[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_XE61Z[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -15,7 +15,15 @@ public:
 struct ObjectMessagingDispatcher
 {
 public:
-	char                                                         pad0xa0_SYKN0[0xa0];                               // 0x0(0xa0)
+	char                                                         pad0xa0_CPCZY[0xa0];                               // 0x0(0xa0)
+};
+
+
+// Size 0x8
+struct EventObjectMessagingDispatcherBeingDestroyed
+{
+public:
+	char                                                         pad0x8_X5OTA[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -23,7 +31,7 @@ public:
 struct ObjectMessagingObjectScoper
 {
 public:
-	char                                                         pad0x50_MW7LI[0x50];                               // 0x0(0x50)
+	char                                                         pad0x50_JD99O[0x50];                               // 0x0(0x50)
 };
 
 
@@ -31,17 +39,9 @@ public:
 struct ObjectMessagingHandle
 {
 public:
-	char                                                         pad0x8_SYIJG[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_JGN7N[0x8];                                 // 0x0(0x8)
 	class Struct*                                                EventType;                                         // 0x8(0x8)
-	char                                                         pad0x48_1HT2T[0x48];                               // 0x10(0x48)
-};
-
-
-// Size 0x8
-struct ObjectMessagingDispatcherHandle
-{
-public:
-	char                                                         pad0x8_5IR49[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x48_38BD2[0x48];                               // 0x10(0x48)
 };
 
 

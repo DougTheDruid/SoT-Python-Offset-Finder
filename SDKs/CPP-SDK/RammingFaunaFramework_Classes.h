@@ -7,14 +7,14 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class FaunaRammerInterface: public Interface
+class FaunaRammableInterface: public Interface
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class FaunaRammableInterface: public Interface
+class FaunaRammerInterface: public Interface
 {
 public:
 };

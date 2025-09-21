@@ -7,14 +7,14 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GameServiceMapFunctions: public BlueprintFunctionLibrary
+class GameServiceProviderInterface: public Interface
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GameServiceProviderInterface: public Interface
+class GameServiceMapFunctions: public BlueprintFunctionLibrary
 {
 public:
 };
@@ -27,18 +27,18 @@ public:
 };
 
 
-// Size 0x120 (Full Size[0x508] - InheritedSize[0x3e8]
-class ServiceProviderGameState: public GameState
-{
-public:
-	char                                                         pad0x120_8YJIP[0x120];                             // 0x3e8(0x120)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class GameServiceLifecycleInterface: public Interface
 {
 public:
+};
+
+
+// Size 0x120 (Full Size[0x508] - InheritedSize[0x3e8]
+class ServiceProviderGameState: public GameState
+{
+public:
+	char                                                         pad0x120_BCU5T[0x120];                             // 0x3e8(0x120)
 };
 
 

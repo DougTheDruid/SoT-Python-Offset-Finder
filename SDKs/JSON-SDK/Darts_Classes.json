@@ -1,17 +1,17 @@
 {
-  "DartProxyServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "DartInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "DartProxyService": {
+    "Super": "Actor",
+    "FullSize": "0x3b8",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_Z5H2K[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x3a0"
+      }
+    ]
   },
   "DartRadialPressedNotificationInputId": {
     "Super": "NotificationInputId",
@@ -20,35 +20,14 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "AILuredIntoWaterConditionalStatsTrigger": {
+  "HitActorWithDartConditionalStatsTrigger": {
     "Super": "ConditionalStatsTriggerType",
     "FullSize": "0x30",
     "InheritedSize": "0x30",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "DartAttachedInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "DartProxyService": {
-    "Super": "Actor",
-    "FullSize": "0x3b8",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_ZSS29[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x3a0"
-      }
-    ]
-  },
-  "KilledByOwnTeamConditionalStatsTrigger": {
+  "AILuredIntoWaterConditionalStatsTrigger": {
     "Super": "ConditionalStatsTriggerType",
     "FullSize": "0x30",
     "InheritedSize": "0x30",
@@ -62,7 +41,28 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "HitActorWithDartConditionalStatsTrigger": {
+  "DartProxyServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DartAttachedInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DartInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "KilledByOwnTeamConditionalStatsTrigger": {
     "Super": "ConditionalStatsTriggerType",
     "FullSize": "0x30",
     "InheritedSize": "0x30",

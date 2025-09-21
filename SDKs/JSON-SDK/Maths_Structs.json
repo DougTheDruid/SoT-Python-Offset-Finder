@@ -16,160 +16,6 @@
       }
     ]
   },
-  "GrabBag": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_2H92W[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SpatialOffset": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "OffsetValue",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "OffsetMethod",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "pad0x3_UTM92[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x5"
-      }
-    ]
-  },
-  "WeightedProbabilityRange": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x10_DIZB3[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Weights",
-        "Type": "TArray<float>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "OrientedPoint": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Rotation",
-        "Type": "struct Rotator",
-        "Size": "0xc",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "FixedStepInterpCurvePointVector2D": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "OutVal",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Tangent",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "RotationUpdateResult": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "UpdatedRotation",
-        "Type": "struct Rotator",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SpinAngle",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "TiltAngle",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "TiltDirection",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x14"
-      }
-    ]
-  },
-  "InertialSmoothedFloat": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "AccelerationMagnitude",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MaxSpeed",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "CurrentVelocity",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "CurrentValue",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "TimedBuffer": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_YYKUS[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "Pendulum": {
     "ClassSize": "0x60",
     "Attributes": [
@@ -192,7 +38,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x3_0OW2W[0x3]",
+        "Name": "pad0x3_VUO26[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x9"
@@ -234,7 +80,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0xc_9A0F3[0xc]",
+        "Name": "pad0xc_2HHF9[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x24"
@@ -244,6 +90,160 @@
         "Type": "struct Transform",
         "Size": "0x30",
         "Offset": "0x30"
+      }
+    ]
+  },
+  "TimedBuffer": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_BG0IN[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GrabBag": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_1MAUZ[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "InertialSmoothedFloat": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AccelerationMagnitude",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MaxSpeed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "CurrentVelocity",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "CurrentValue",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "SpatialOffset": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "OffsetValue",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "OffsetMethod",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x3_HSOFO[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5"
+      }
+    ]
+  },
+  "FixedStepInterpCurvePointVector2D": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "OutVal",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Tangent",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "WeightedProbabilityRange": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x10_W9T2E[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Weights",
+        "Type": "TArray<float>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "RotationUpdateResult": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "UpdatedRotation",
+        "Type": "struct Rotator",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SpinAngle",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "TiltAngle",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "TiltDirection",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "OrientedPoint": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Rotation",
+        "Type": "struct Rotator",
+        "Size": "0xc",
+        "Offset": "0xc"
       }
     ]
   },
@@ -269,7 +269,7 @@
         "Offset": "0x14"
       },
       {
-        "Name": "pad0x3_NKCXY[0x3]",
+        "Name": "pad0x3_ZQ7RA[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x15"
@@ -280,7 +280,7 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x20_UP1Y0[0x20]",
+        "Name": "pad0x20_3P7D1[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x0"

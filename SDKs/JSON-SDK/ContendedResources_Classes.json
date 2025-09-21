@@ -1,12 +1,12 @@
 {
-  "ReservableContendedResourceInterface": {
+  "ContendedResourceServiceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ContendedResourceServiceInterface": {
+  "ContendedResourceInfoInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -20,14 +20,14 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "WorldResourceRegistryInterface": {
+  "ReservableContendedResourceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ContendedResourceInfoInterface": {
+  "WorldResourceRegistryInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

@@ -7,17 +7,9 @@
 struct RowboatLiveryByWeight
 {
 public:
-	char                                                         pad0x20_L8SA1[0x20];                               // 0x0(0x20)
+	char                                                         pad0x20_Z0Z2V[0x20];                               // 0x0(0x20)
 	float                                                        Weight;                                            // 0x20(0x4)
-	char                                                         pad0x4_41TMW[0x4];                                 // 0x24(0x4)
-};
-
-
-// Size 0x30
-struct QuestVariableWatercraft
-{
-public:
-	char                                                         pad0x30_Z8WBO[0x30];                               // 0x0(0x30)
+	char                                                         pad0x4_FRXG7[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -25,25 +17,62 @@ public:
 struct EventRowboatLoaded
 {
 public:
-	char                                                         pad0x1_BRDD6[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_WW7VK[0x1];                                 // 0x0(0x1)
 };
 
 
-// Size 0x18
-struct RowboatDamageEffectData
+// Size 0x50
+struct WatercraftSpawnTelemetryEvent
 {
 public:
-	class MaterialInstanceDynamic*                               DynamicMaterialInstance;                           // 0x0(0x8)
-	float                                                        FadeInDuration;                                    // 0x8(0x4)
-	char                                                         pad0xc_38UCX[0xc];                                 // 0xc(0xc)
+	struct Guid                                                  WatercraftId;                                      // 0x0(0x10)
+	struct FString                                               WatercraftType;                                    // 0x10(0x10)
+	struct FString                                               OriginDescription;                                 // 0x20(0x10)
+	struct Vector                                                Location;                                          // 0x30(0xc)
+	struct Vector                                                Forward;                                           // 0x3c(0xc)
+	char                                                         pad0x8_PCM9L[0x8];                                 // 0x48(0x8)
 };
 
 
 // Size 0x1
-struct EventRowboatExitedWater
+struct EventOarStrokeEnded
 {
 public:
-	char                                                         pad0x1_HQPPV[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_CQLU5[0x1];                                 // 0x0(0x1)
+};
+
+
+// Size 0x10
+struct EventEnteredWatercraft
+{
+public:
+	class Actor*                                                 Watercraft;                                        // 0x0(0x8)
+	class Actor*                                                 Actor;                                             // 0x8(0x8)
+};
+
+
+// Size 0x20
+struct RowboatStrainDamageData
+{
+public:
+	float                                                        StormDamageScalar;                                 // 0x0(0x4)
+	float                                                        WaterStrengthToCountAsStorm;                       // 0x4(0x4)
+	float                                                        StormStrengthThresholdForDamage;                   // 0x8(0x4)
+	float                                                        MinStormDamageFrequencyInSeconds;                  // 0xc(0x4)
+	float                                                        MaxStormDamageFrequencyInSeconds;                  // 0x10(0x4)
+	float                                                        WorldEdgeDamageScalar;                             // 0x14(0x4)
+	float                                                        MinWorldEdgeDamageFrequencyInSeconds;              // 0x18(0x4)
+	float                                                        MaxWorldEdgeDamageFrequencyInSeconds;              // 0x1c(0x4)
+};
+
+
+// Size 0x14
+struct RowboatMountStateTelemetryEvent
+{
+public:
+	struct Guid                                                  WatercraftId;                                      // 0x0(0x10)
+	char                                                         ActionName;                                        // 0x10(0x1)
+	char                                                         pad0x3_HSRJ5[0x3];                                 // 0x11(0x3)
 };
 
 
@@ -54,18 +83,44 @@ public:
 	struct Guid                                                  WatercraftId;                                      // 0x0(0x10)
 	struct Vector                                                Location;                                          // 0x10(0xc)
 	char                                                         DespawnReason;                                     // 0x1c(0x1)
-	char                                                         pad0x3_U9B73[0x3];                                 // 0x1d(0x3)
-	char                                                         pad0x4_PJQ92[0x4];                                 // 0x20(0x4)
+	char                                                         pad0x3_DCLFE[0x3];                                 // 0x1d(0x3)
+	char                                                         pad0x4_UOSG0[0x4];                                 // 0x20(0x4)
 };
 
 
-// Size 0xc
-struct WatercraftRolloverCorrector
+// Size 0x1
+struct EventRowboatDockStatusHasChanged
 {
 public:
-	float                                                        RollThresholdToConsiderRolledOver;                 // 0x0(0x4)
-	float                                                        TorqueScalar;                                      // 0x4(0x4)
-	char                                                         pad0x4_H4QL1[0x4];                                 // 0x8(0x4)
+	char                                                         pad0x1_PN2SK[0x1];                                 // 0x0(0x1)
+};
+
+
+// Size 0x18
+struct RowboatDamageEffectData
+{
+public:
+	class MaterialInstanceDynamic*                               DynamicMaterialInstance;                           // 0x0(0x8)
+	float                                                        FadeInDuration;                                    // 0x8(0x4)
+	char                                                         pad0xc_DD20P[0xc];                                 // 0xc(0xc)
+};
+
+
+// Size 0x1
+struct EventRowboatExitedWater
+{
+public:
+	char                                                         pad0x1_TXGMZ[0x1];                                 // 0x0(0x1)
+};
+
+
+// Size 0x18
+struct RowboatLiveryPickerDataAssetConditions
+{
+public:
+	class RowboatLiveryPickerDataAsset*                          RowboatLiveryPickerDataAsset;                      // 0x0(0x8)
+	float                                                        Weight;                                            // 0x8(0x4)
+	struct FeatureFlag                                           Feature;                                           // 0xc(0xc)
 };
 
 
@@ -76,25 +131,42 @@ public:
 	class UClass*                                                SpeedBand;                                         // 0x0(0x8)
 	class ForceFeedbackEffect*                                   ForceFeedbackEffect;                               // 0x8(0x8)
 	int                                                          DamageAmount;                                      // 0x10(0x4)
-	char                                                         pad0x4_2R0S5[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_4MF02[0x4];                                 // 0x14(0x4)
+};
+
+
+// Size 0xc
+struct WatercraftRolloverCorrector
+{
+public:
+	float                                                        RollThresholdToConsiderRolledOver;                 // 0x0(0x4)
+	float                                                        TorqueScalar;                                      // 0x4(0x4)
+	char                                                         pad0x4_R96C7[0x4];                                 // 0x8(0x4)
 };
 
 
 // Size 0x1
-struct EventOarStrokeEnded
+struct EventRowboatEnteredWater
 {
 public:
-	char                                                         pad0x1_6NZZG[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_NZEO4[0x1];                                 // 0x0(0x1)
 };
 
 
-// Size 0x14
-struct RowboatMountStateTelemetryEvent
+// Size 0x10
+struct EventExitedWatercraft
 {
 public:
-	struct Guid                                                  WatercraftId;                                      // 0x0(0x10)
-	char                                                         ActionName;                                        // 0x10(0x1)
-	char                                                         pad0x3_Z3LO1[0x3];                                 // 0x11(0x3)
+	class Actor*                                                 Watercraft;                                        // 0x0(0x8)
+	class Actor*                                                 Actor;                                             // 0x8(0x8)
+};
+
+
+// Size 0x30
+struct QuestVariableWatercraft
+{
+public:
+	char                                                         pad0x30_PQO32[0x30];                               // 0x0(0x30)
 };
 
 
@@ -114,84 +186,12 @@ public:
 };
 
 
-// Size 0x20
-struct RowboatStrainDamageData
-{
-public:
-	float                                                        StormDamageScalar;                                 // 0x0(0x4)
-	float                                                        WaterStrengthToCountAsStorm;                       // 0x4(0x4)
-	float                                                        StormStrengthThresholdForDamage;                   // 0x8(0x4)
-	float                                                        MinStormDamageFrequencyInSeconds;                  // 0xc(0x4)
-	float                                                        MaxStormDamageFrequencyInSeconds;                  // 0x10(0x4)
-	float                                                        WorldEdgeDamageScalar;                             // 0x14(0x4)
-	float                                                        MinWorldEdgeDamageFrequencyInSeconds;              // 0x18(0x4)
-	float                                                        MaxWorldEdgeDamageFrequencyInSeconds;              // 0x1c(0x4)
-};
-
-
-// Size 0x50
-struct WatercraftSpawnTelemetryEvent
-{
-public:
-	struct Guid                                                  WatercraftId;                                      // 0x0(0x10)
-	struct FString                                               WatercraftType;                                    // 0x10(0x10)
-	struct FString                                               OriginDescription;                                 // 0x20(0x10)
-	struct Vector                                                Location;                                          // 0x30(0xc)
-	struct Vector                                                Forward;                                           // 0x3c(0xc)
-	char                                                         pad0x8_J80VE[0x8];                                 // 0x48(0x8)
-};
-
-
-// Size 0x10
-struct EventEnteredWatercraft
-{
-public:
-	class Actor*                                                 Watercraft;                                        // 0x0(0x8)
-	class Actor*                                                 Actor;                                             // 0x8(0x8)
-};
-
-
-// Size 0x1
-struct EventRowboatEnteredWater
-{
-public:
-	char                                                         pad0x1_8TPO9[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct EventRowboatDockStatusHasChanged
-{
-public:
-	char                                                         pad0x1_CTVIK[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x10
-struct EventExitedWatercraft
-{
-public:
-	class Actor*                                                 Watercraft;                                        // 0x0(0x8)
-	class Actor*                                                 Actor;                                             // 0x8(0x8)
-};
-
-
-// Size 0x18
-struct RowboatLiveryPickerDataAssetConditions
-{
-public:
-	class RowboatLiveryPickerDataAsset*                          RowboatLiveryPickerDataAsset;                      // 0x0(0x8)
-	float                                                        Weight;                                            // 0x8(0x4)
-	struct FeatureFlag                                           Feature;                                           // 0xc(0xc)
-};
-
-
 // Size 0x60
 struct Oar
 {
 public:
 	struct OarParams                                             OarParams;                                         // 0x0(0x38)
-	char                                                         pad0x28_DU6KV[0x28];                               // 0x38(0x28)
+	char                                                         pad0x28_9ZSLG[0x28];                               // 0x38(0x28)
 };
 
 

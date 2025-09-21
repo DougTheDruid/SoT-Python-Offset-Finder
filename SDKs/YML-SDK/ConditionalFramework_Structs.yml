@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AndCondition:
   Attributes:
-  - Name: pad0x8_W318Q[0x8]
+  - Name: pad0x8_57S0G[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -13,35 +13,35 @@ AndCondition:
   ClassSize: '0x18'
 ConditionBase:
   Attributes:
-  - Name: pad0x8_U531W[0x8]
+  - Name: pad0x8_4VXJY[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
   ClassSize: '0x8'
 ConditionContextPayloadBase:
   Attributes:
-  - Name: pad0x8_RP4PG[0x8]
+  - Name: pad0x8_8G4UM[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
   ClassSize: '0x8'
 ConditionContextPayloadComponentOwnerSelector:
   Attributes:
-  - Name: pad0x18_G5W1P[0x18]
+  - Name: pad0x18_F8U3C[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
   ClassSize: '0x18'
 ConditionContextPayloadObjectSelector:
   Attributes:
-  - Name: pad0x18_JRQWK[0x18]
+  - Name: pad0x18_AZQ0B[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
   ClassSize: '0x18'
 ConditionContextPayloadSelectorBase:
   Attributes:
-  - Name: pad0x8_76C6N[0x8]
+  - Name: pad0x8_2ZOF5[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -52,7 +52,7 @@ ConditionContextPayloadSelectorBase:
   ClassSize: '0x18'
 ConditionContextPayloadSelectorInstance:
   Attributes:
-  - Name: pad0x20_WSNYF[0x20]
+  - Name: pad0x20_1IC73[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
@@ -70,7 +70,7 @@ ConditionContextPayloadTarget:
   ClassSize: '0x10'
 ConditionFromAsset:
   Attributes:
-  - Name: pad0x8_UQ9OC[0x8]
+  - Name: pad0x8_Y6CD1[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -81,14 +81,14 @@ ConditionFromAsset:
   ClassSize: '0x10'
 ConditionInstance:
   Attributes:
-  - Name: pad0x20_DU8J6[0x20]
+  - Name: pad0x20_S1LI5[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
   ClassSize: '0x20'
 InstigatorConditionContextPayload:
   Attributes:
-  - Name: pad0x8_JQT6K[0x8]
+  - Name: pad0x8_GVT9U[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -99,7 +99,7 @@ InstigatorConditionContextPayload:
   ClassSize: '0x10'
 IsFeatureEnabledCondition:
   Attributes:
-  - Name: pad0x8_IYKH2[0x8]
+  - Name: pad0x8_2FZUY[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -107,14 +107,14 @@ IsFeatureEnabledCondition:
     Offset: '0x8'
     Size: '0xc'
     Type: struct FeatureFlag
-  - Name: pad0x4_TD1NR[0x4]
+  - Name: pad0x4_PLZ44[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
   ClassSize: '0x18'
 IsGameOnSpecificPlayModeCondition:
   Attributes:
-  - Name: pad0x28_XI26Q[0x28]
+  - Name: pad0x28_4K21G[0x28]
     Offset: '0x0'
     Size: '0x28'
     Type: char
@@ -122,14 +122,14 @@ IsGameOnSpecificPlayModeCondition:
     Offset: '0x28'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_0F550[0x7]
+  - Name: pad0x7_QYAFN[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
   ClassSize: '0x30'
 IsGameOnSpecificPlayModeVariantCondition:
   Attributes:
-  - Name: pad0x28_NJJN4[0x28]
+  - Name: pad0x28_ZSAMR[0x28]
     Offset: '0x0'
     Size: '0x28'
     Type: char
@@ -137,14 +137,14 @@ IsGameOnSpecificPlayModeVariantCondition:
     Offset: '0x28'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_V3ROQ[0x7]
+  - Name: pad0x7_F5V0D[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
   ClassSize: '0x30'
 IsObjectOfTypeCondition:
   Attributes:
-  - Name: pad0x28_7XU7U[0x28]
+  - Name: pad0x28_VWMMN[0x28]
     Offset: '0x0'
     Size: '0x28'
     Type: char
@@ -155,7 +155,7 @@ IsObjectOfTypeCondition:
   ClassSize: '0x38'
 IsSpecifiedActorCondition:
   Attributes:
-  - Name: pad0x8_OQZFM[0x8]
+  - Name: pad0x8_FXKGN[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -170,7 +170,7 @@ IsSpecifiedActorCondition:
   ClassSize: '0x48'
 NotCondition:
   Attributes:
-  - Name: pad0x8_M8U7R[0x8]
+  - Name: pad0x8_LIQXW[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -181,7 +181,7 @@ NotCondition:
   ClassSize: '0x28'
 OrCondition:
   Attributes:
-  - Name: pad0x8_NQ8CR[0x8]
+  - Name: pad0x8_OH24Y[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -192,7 +192,7 @@ OrCondition:
   ClassSize: '0x18'
 TargetConditionContextPayload:
   Attributes:
-  - Name: pad0x8_GS3JC[0x8]
+  - Name: pad0x8_61W5W[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -203,7 +203,7 @@ TargetConditionContextPayload:
   ClassSize: '0x10'
 TargetedPayloadConditionBase:
   Attributes:
-  - Name: pad0x8_LOQE0[0x8]
+  - Name: pad0x8_0RUA2[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -214,7 +214,7 @@ TargetedPayloadConditionBase:
   ClassSize: '0x28'
 WorldObjectConditionContextPayload:
   Attributes:
-  - Name: pad0x8_5QKVD[0x8]
+  - Name: pad0x8_O2JPG[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char

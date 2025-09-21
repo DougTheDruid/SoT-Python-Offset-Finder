@@ -3,10 +3,10 @@
 BP_FrontendHUD_C:
   Attributes:
   - Name: DefaultSceneRoot
-    Offset: '0x658'
+    Offset: '0x660'
     Size: '0x8'
     Type: class SceneComponent*
   ClassSize: '0x8'
-  FullSize: '0x660'
-  InheritedSize: '0x658'
+  FullSize: '0x668'
+  InheritedSize: '0x660'
   Super: FrontendHUD

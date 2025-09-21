@@ -10,9 +10,9 @@
 class RareGameServiceManagerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_OZX4H[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_Y6LT4[0x8];                                 // 0xb8(0x8)
 	TArray<class Object*>                                        ReplicatedServices;                                // 0xc0(0x10)
-	char                                                         pad0x40_ZV823[0x40];                               // 0xd0(0x40)
+	char                                                         pad0x40_VM90T[0x40];                               // 0xd0(0x40)
 	TArray<struct RareGameServiceSpecification>                  ServiceSpecifications;                             // 0x110(0x10)
 };
 

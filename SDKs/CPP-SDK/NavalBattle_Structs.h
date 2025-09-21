@@ -7,7 +7,7 @@
 struct NavalBattleShipData
 {
 public:
-	char                                                         pad0x2c_PTE38[0x2c];                               // 0x0(0x2c)
+	char                                                         pad0x2c_MA1VW[0x2c];                               // 0x0(0x2c)
 };
 
 

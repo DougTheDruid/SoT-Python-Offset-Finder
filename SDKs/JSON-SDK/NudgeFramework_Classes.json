@@ -1,4 +1,11 @@
 {
+  "NudgePolicyInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "NudgeableInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
@@ -13,7 +20,7 @@
     "ClassSize": "0xa0",
     "Attributes": [
       {
-        "Name": "pad0x90_A9WBE[0x90]",
+        "Name": "pad0x90_BZ89H[0x90]",
         "Type": "char",
         "Size": "0x90",
         "Offset": "0x28"
@@ -31,13 +38,6 @@
         "Offset": "0xc0"
       }
     ]
-  },
-  "NudgePolicyInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "NudgeInterpolationParamsDataAsset": {
     "Super": "DataAsset",

@@ -48,7 +48,7 @@
         "Offset": "0x3d0"
       },
       {
-        "Name": "pad0x20_RE2BH[0x20]",
+        "Name": "pad0x20_GI2IV[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x3d8"

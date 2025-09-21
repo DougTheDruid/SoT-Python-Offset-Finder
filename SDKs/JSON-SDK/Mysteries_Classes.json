@@ -20,7 +20,7 @@
     "ClassSize": "0xf0",
     "Attributes": [
       {
-        "Name": "pad0x8_JC7V1[0x8]",
+        "Name": "pad0x8_68XVG[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3a0"
@@ -56,30 +56,10 @@
         "Offset": "0x3e0"
       },
       {
-        "Name": "pad0xa0_OJAB4[0xa0]",
+        "Name": "pad0xa0_W7PW8[0xa0]",
         "Type": "char",
         "Size": "0xa0",
         "Offset": "0x3f0"
-      }
-    ]
-  },
-  "PopUpNotificationOnItemWieldedComponent": {
-    "Super": "OnItemWieldedComponent",
-    "FullSize": "0x158",
-    "InheritedSize": "0x138",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "PopUpDesc",
-        "Type": "class PopUpMessageDesc*",
-        "Size": "0x8",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "pad0x18_8WSLG[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x140"
       }
     ]
   },
@@ -90,7 +70,7 @@
     "ClassSize": "0xe0",
     "Attributes": [
       {
-        "Name": "pad0x40_0EQ2O[0x40]",
+        "Name": "pad0x40_CE1FY[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0xb8"
@@ -108,10 +88,30 @@
         "Offset": "0x130"
       },
       {
-        "Name": "pad0x30_MWM0U[0x30]",
+        "Name": "pad0x30_WCQPJ[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x168"
+      }
+    ]
+  },
+  "PopUpNotificationOnItemWieldedComponent": {
+    "Super": "OnItemWieldedComponent",
+    "FullSize": "0x158",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "PopUpDesc",
+        "Type": "class PopUpMessageDesc*",
+        "Size": "0x8",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "pad0x18_EN5Q4[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x140"
       }
     ]
   },
@@ -164,7 +164,7 @@
         "Offset": "0x460"
       },
       {
-        "Name": "pad0x20_JH3NN[0x20]",
+        "Name": "pad0x20_7NGSG[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x498"

@@ -1,22 +1,22 @@
 {
-  "RegionActionSpotContainer": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x50_W8N6O[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "ActivityActionSpotContainer": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_R9UP9[0x10]",
+        "Name": "pad0x10_3UONK[0x10]",
         "Type": "char",
         "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "RegionActionSpotContainer": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x50_C1QVX[0x50]",
+        "Type": "char",
+        "Size": "0x50",
         "Offset": "0x0"
       }
     ]

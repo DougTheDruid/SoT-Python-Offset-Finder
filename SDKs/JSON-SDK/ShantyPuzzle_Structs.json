@@ -1,80 +1,12 @@
 {
-  "ShantyPuzzleSingleInteractionZoneStopInteractingEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Player",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "InteractionZoneIdx",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x4_47YXO[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "ShantyPuzzlePlayerExitInteractionZoneEvent": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Player",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "ShantyPuzzleUnlockedCompleteEvent": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_CKPE1[0x1]",
+        "Name": "pad0x1_0MLSL[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "ShantyPuzzleCompleteEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ParticipatingCrews",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ShantyPuzzleSingleInteractionZoneUnlockEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Player",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "InteractionZoneIdx",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x4_I1M5G[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xc"
       }
     ]
   },
@@ -100,7 +32,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_P1FWD[0x3]",
+        "Name": "pad0x3_A0A4O[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
@@ -113,17 +45,6 @@
       }
     ]
   },
-  "ShantyPuzzleUnlockCanceledEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_ZO25R[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "ShantyPuzzlePlayerEnterInteractionZoneEvent": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -131,6 +52,85 @@
         "Name": "Player",
         "Type": "class Actor*",
         "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ShantyPuzzleSingleInteractionZoneUnlockEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Player",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "InteractionZoneIdx",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_I6DZF[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "ShantyPuzzleCompleteEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ParticipatingCrews",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ShantyPuzzlePlayerExitInteractionZoneEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Player",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ShantyPuzzleSingleInteractionZoneStopInteractingEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Player",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "InteractionZoneIdx",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_NVXJN[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "ShantyPuzzleUnlockCanceledEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_T4QUS[0x1]",
+        "Type": "char",
+        "Size": "0x1",
         "Offset": "0x0"
       }
     ]

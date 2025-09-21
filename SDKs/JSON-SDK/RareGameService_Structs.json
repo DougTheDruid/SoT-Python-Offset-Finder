@@ -1,15 +1,4 @@
 {
-  "RareGameServiceManagerStateChangedEvent": {
-    "ClassSize": "0x2",
-    "Attributes": [
-      {
-        "Name": "pad0x2_7TY7H[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "RareGameServiceSpecification": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -38,10 +27,21 @@
         "Offset": "0x11"
       },
       {
-        "Name": "pad0x6_KNUDD[0x6]",
+        "Name": "pad0x6_SAD7Z[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x12"
+      }
+    ]
+  },
+  "RareGameServiceManagerStateChangedEvent": {
+    "ClassSize": "0x2",
+    "Attributes": [
+      {
+        "Name": "pad0x2_O0BNB[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x0"
       }
     ]
   },

@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 LostSandsRowboatGunpowderBarrel:
   Attributes:
-  - Name: pad0xb8_UZ4AH[0xb8]
+  - Name: pad0xb8_VLEVZ[0xb8]
     Offset: '0x3a0'
     Size: '0xb8'
     Type: char
@@ -66,7 +66,7 @@ LostSandsRowboatGunpowderBarrel:
     Offset: '0x54c'
     Size: '0x4'
     Type: struct PlayerStat
-  - Name: pad0x90_RKEYB[0x90]
+  - Name: pad0x90_80NQ1[0x90]
     Offset: '0x550'
     Size: '0x90'
     Type: char

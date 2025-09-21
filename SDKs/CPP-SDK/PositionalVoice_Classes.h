@@ -20,28 +20,28 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class VoiceChatRendererRetreivalInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x198 (Full Size[0x1c0] - InheritedSize[0x28]
 class VoiceChatRenderer: public Object
 {
 public:
-	char                                                         pad0x10_7I5ZV[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_GHKC3[0x10];                               // 0x28(0x10)
 	class WwiseEvent*                                            AttenuatedVoiceEvent;                              // 0x38(0x8)
 	class WwiseEvent*                                            AttenuatedAndSpatialisedVoiceEvent;                // 0x40(0x8)
 	class WwiseEvent*                                            UnattenuatedVoiceEvent;                            // 0x48(0x8)
 	int                                                          PreBufferInMilliseconds;                           // 0x50(0x4)
 	int                                                          ChatRoutingListenerIndex;                          // 0x54(0x4)
 	float                                                        EmitterHoldInSeconds;                              // 0x58(0x4)
-	char                                                         pad0x4_VWBJ4[0x4];                                 // 0x5c(0x4)
+	char                                                         pad0x4_8Z5AR[0x4];                                 // 0x5c(0x4)
 	struct FString                                               UnattenuatedWwiseBusName;                          // 0x60(0x10)
 	class RareAudioHardwareDeviceService*                        HardwareDeviceService;                             // 0x70(0x8)
-	char                                                         pad0x148_6NES9[0x148];                             // 0x78(0x148)
+	char                                                         pad0x148_RZ6NX[0x148];                             // 0x78(0x148)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class VoiceChatRendererRetreivalInterface: public Interface
+{
+public:
 };
 
 

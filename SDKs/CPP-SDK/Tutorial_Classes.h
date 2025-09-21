@@ -6,12 +6,22 @@
 #include "Tutorial_Structs.h"
 
 
+// Size 0xb8 (Full Size[0xe0] - InheritedSize[0x28]
+class CompanyTutorialVoyageProgress: public Object
+{
+public:
+	class UClass*                                                AssignedVoyageProposalDescClass;                   // 0x28(0x8)
+	class UClass*                                                AssignedTaleRankDescClass;                         // 0x30(0x8)
+	char                                                         pad0xa8_ZFI1V[0xa8];                               // 0x38(0xa8)
+};
+
+
 // Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
 class HasTutorialStarterBegunNPCDialogConditional: public NPCDialogConditional
 {
 public:
 	char                                                         TutorialStarterType;                               // 0x30(0x1)
-	char                                                         pad0x7_ABGNI[0x7];                                 // 0x31(0x7)
+	char                                                         pad0x7_IR951[0x7];                                 // 0x31(0x7)
 };
 
 
@@ -21,24 +31,7 @@ class ContextualTutorialComponent: public ActorComponent
 public:
 	TArray<struct ContextualTutorialPromptDesc>                  ContextualTutorialClasses;                         // 0xb8(0x10)
 	TArray<class Actor*>                                         SpawnedPromptActors;                               // 0xc8(0x10)
-	char                                                         pad0x58_J5N5R[0x58];                               // 0xd8(0x58)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TutorialHelpersBlueprintLibrary: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
-// Size 0x8 (Full Size[0xc0] - InheritedSize[0xb8]
-class Tutorial2019Component: public ActorComponent
-{
-public:
-	bool                                                         IsEnabledByServer;                                 // 0xb8(0x1)
-	bool                                                         IsInTutorialTale;                                  // 0xb9(0x1)
-	char                                                         pad0x6_00LS5[0x6];                                 // 0xba(0x6)
+	char                                                         pad0x58_S88IG[0x58];                               // 0xd8(0x58)
 };
 
 
@@ -46,7 +39,7 @@ public:
 class TutorialManager: public ActorComponent
 {
 public:
-	char                                                         pad0x8_7HWAT[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_RIUVG[0x8];                                 // 0xb8(0x8)
 	class UClass*                                                CompanyOnboardingStarterClass;                     // 0xc0(0x8)
 	class UClass*                                                MaidenVoyageStarterClass;                          // 0xc8(0x8)
 	class UClass*                                                BeachNPCSpawnFlowStarterClass;                     // 0xd0(0x8)
@@ -64,7 +57,7 @@ public:
 	bool                                                         HasPlayerFinshedSpawning;                          // 0x10d(0x1)
 	bool                                                         IsPlayerWaitingForCaptaincySessionResponse;        // 0x10e(0x1)
 	bool                                                         HasPlayerPromptsServiceSetup;                      // 0x10f(0x1)
-	char                                                         pad0x20_00XD9[0x20];                               // 0x110(0x20)
+	char                                                         pad0x20_9JD0W[0x20];                               // 0x110(0x20)
 };
 
 
@@ -75,27 +68,13 @@ public:
 	class AthenaPlayerController*                                AthenaPlayerController;                            // 0x28(0x8)
 	bool                                                         ShouldPlayIntroAnimatic;                           // 0x30(0x1)
 	bool                                                         ShouldDisableAllIntroBehaviour;                    // 0x31(0x1)
-	char                                                         pad0x2_MFXGR[0x2];                                 // 0x32(0x2)
+	char                                                         pad0x2_K1N5O[0x2];                                 // 0x32(0x2)
 	struct FirstPersonAnimaticSettings                           IntroAnimationSettings;                            // 0x34(0x2c)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class OnboardingStatusInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class TutorialManagerInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class Tutorial2019FunctionLibrary: public BlueprintFunctionLibrary
 {
 public:
 };
@@ -108,13 +87,34 @@ public:
 };
 
 
-// Size 0xb8 (Full Size[0xe0] - InheritedSize[0x28]
-class CompanyTutorialVoyageProgress: public Object
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class Tutorial2019FunctionLibrary: public BlueprintFunctionLibrary
 {
 public:
-	class UClass*                                                AssignedVoyageProposalDescClass;                   // 0x28(0x8)
-	class UClass*                                                AssignedTaleRankDescClass;                         // 0x30(0x8)
-	char                                                         pad0xa8_8B70K[0xa8];                               // 0x38(0xa8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TutorialHelpersBlueprintLibrary: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0xc0] - InheritedSize[0xb8]
+class Tutorial2019Component: public ActorComponent
+{
+public:
+	bool                                                         IsEnabledByServer;                                 // 0xb8(0x1)
+	bool                                                         IsInTutorialTale;                                  // 0xb9(0x1)
+	char                                                         pad0x6_1HKNI[0x6];                                 // 0xba(0x6)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class OnboardingStatusInterface: public Interface
+{
+public:
 };
 
 
@@ -124,7 +124,42 @@ class IntroductionToSOTFlowStarter: public TutorialStarter
 public:
 	class VoyageDescDataAsset*                                   TutorialTale;                                      // 0x60(0x8)
 	TArray<struct IntroductionToSOTIntroAnimatic>                ShipSizeBasedIntroAnimatics;                       // 0x68(0x10)
-	char                                                         pad0x60_WOJCL[0x60];                               // 0x78(0x60)
+	char                                                         pad0x60_5XZD6[0x60];                               // 0x78(0x60)
+};
+
+
+// Size 0x0 (Full Size[0x60] - InheritedSize[0x60]
+class CompanyOnboardingStarter: public TutorialStarter
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x60] - InheritedSize[0x60]
+class BeachNPCSpawnFlowStarter: public TutorialStarter
+{
+public:
+};
+
+
+// Size 0x98 (Full Size[0xf8] - InheritedSize[0x60]
+class CaptaincyStarter: public TutorialStarter
+{
+public:
+	class VoyageDescDataAsset*                                   TutorialTale;                                      // 0x60(0x8)
+	bool                                                         CheckIfShipNeverSetSail;                           // 0x68(0x1)
+	bool                                                         CheckIfPlayerInOutpost;                            // 0x69(0x1)
+	bool                                                         CheckIfPlayerIsInCaptain;                          // 0x6a(0x1)
+	char                                                         pad0x5_NWVQC[0x5];                                 // 0x6b(0x5)
+	class UClass*                                                CheckIfEntitlementIsOwned;                         // 0x70(0x8)
+	bool                                                         CheckIfCaptainingANewShip;                         // 0x78(0x1)
+	char                                                         pad0x3_M3NWP[0x3];                                 // 0x79(0x3)
+	struct FName                                                 FeatureToggle;                                     // 0x7c(0x8)
+	bool                                                         CheckIfPlayerHasMadeAttempts;                      // 0x84(0x1)
+	char                                                         pad0x3_7EJ4P[0x3];                                 // 0x85(0x3)
+	class UClass*                                                PromptCounterKey;                                  // 0x88(0x8)
+	int                                                          MaxAttemptCount;                                   // 0x90(0x4)
+	char                                                         pad0x64_MEAFT[0x64];                               // 0x94(0x64)
 };
 
 
@@ -140,41 +175,6 @@ class Tutorial2019ContextualDelegatingComponent: public Tutorial2019Component
 {
 public:
 	class ContextualTutorialComponent*                           ContextualTutorialComponent;                       // 0xc0(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x60] - InheritedSize[0x60]
-class CompanyOnboardingStarter: public TutorialStarter
-{
-public:
-};
-
-
-// Size 0x98 (Full Size[0xf8] - InheritedSize[0x60]
-class CaptaincyStarter: public TutorialStarter
-{
-public:
-	class VoyageDescDataAsset*                                   TutorialTale;                                      // 0x60(0x8)
-	bool                                                         CheckIfShipNeverSetSail;                           // 0x68(0x1)
-	bool                                                         CheckIfPlayerInOutpost;                            // 0x69(0x1)
-	bool                                                         CheckIfPlayerIsInCaptain;                          // 0x6a(0x1)
-	char                                                         pad0x5_NMT9O[0x5];                                 // 0x6b(0x5)
-	class UClass*                                                CheckIfEntitlementIsOwned;                         // 0x70(0x8)
-	bool                                                         CheckIfCaptainingANewShip;                         // 0x78(0x1)
-	char                                                         pad0x3_ZU96N[0x3];                                 // 0x79(0x3)
-	struct FName                                                 FeatureToggle;                                     // 0x7c(0x8)
-	bool                                                         CheckIfPlayerHasMadeAttempts;                      // 0x84(0x1)
-	char                                                         pad0x3_GQSL7[0x3];                                 // 0x85(0x3)
-	class UClass*                                                PromptCounterKey;                                  // 0x88(0x8)
-	int                                                          MaxAttemptCount;                                   // 0x90(0x4)
-	char                                                         pad0x64_QXI2Y[0x64];                               // 0x94(0x64)
-};
-
-
-// Size 0x0 (Full Size[0x60] - InheritedSize[0x60]
-class BeachNPCSpawnFlowStarter: public TutorialStarter
-{
-public:
 };
 
 

@@ -4,21 +4,21 @@
 // https://github.com/DougTheDruid
 
 // Size 0x10
-struct ProxyLimit
-{
-public:
-	class UClass*                                                ProxyId;                                           // 0x0(0x8)
-	int                                                          ProxyLimit;                                        // 0x8(0x4)
-	char                                                         pad0x4_0P8DD[0x4];                                 // 0xc(0x4)
-};
-
-
-// Size 0x10
 struct PlayerPersistentProxySpawnedEvent
 {
 public:
 	class UClass*                                                ProxyId;                                           // 0x0(0x8)
 	class Actor*                                                 ProxyActor;                                        // 0x8(0x8)
+};
+
+
+// Size 0x10
+struct ProxyLimit
+{
+public:
+	class UClass*                                                ProxyId;                                           // 0x0(0x8)
+	int                                                          ProxyLimit;                                        // 0x8(0x4)
+	char                                                         pad0x4_93X58[0x4];                                 // 0xc(0x4)
 };
 
 

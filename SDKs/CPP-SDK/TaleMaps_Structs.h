@@ -4,10 +4,18 @@
 // https://github.com/DougTheDruid
 
 // Size 0x30
+struct TaleQuestVariableTreasureMapItemDescType
+{
+public:
+	char                                                         pad0x30_TYMA0[0x30];                               // 0x0(0x30)
+};
+
+
+// Size 0x30
 struct TaleQuestVariableMapMarkType
 {
 public:
-	char                                                         pad0x30_D72RD[0x30];                               // 0x0(0x30)
+	char                                                         pad0x30_LS017[0x30];                               // 0x0(0x30)
 };
 
 
@@ -16,15 +24,7 @@ struct ChecklistActionProgressTracker
 {
 public:
 	class ChecklistActionData*                                   ActionData;                                        // 0x0(0x8)
-	char                                                         pad0x8_MPXUA[0x8];                                 // 0x8(0x8)
-};
-
-
-// Size 0x30
-struct TaleQuestVariableTreasureMapItemDescType
-{
-public:
-	char                                                         pad0x30_6O7HQ[0x30];                               // 0x0(0x30)
+	char                                                         pad0x8_F8CQZ[0x8];                                 // 0x8(0x8)
 };
 
 
@@ -33,7 +33,7 @@ struct TaleQuestChecklistItem
 {
 public:
 	TArray<struct ChecklistActionProgressTracker>                ChecklistActions;                                  // 0x0(0x10)
-	char                                                         pad0x40_A8DGI[0x40];                               // 0x10(0x40)
+	char                                                         pad0x40_JEMBK[0x40];                               // 0x10(0x40)
 };
 
 

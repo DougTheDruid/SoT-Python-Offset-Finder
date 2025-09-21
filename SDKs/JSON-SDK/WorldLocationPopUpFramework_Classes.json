@@ -1,15 +1,72 @@
 {
-  "TalePreventWorldLocationPopUpStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x98",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "WorldLocationPopUpComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x360",
+    "InheritedSize": "0x2d0",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "PopUpData",
+        "Type": "class WorldLocationPopUpDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x2d0"
+      },
+      {
+        "Name": "LocationOverlapVolume",
+        "Type": "class ShapeComponent*",
+        "Size": "0x8",
+        "Offset": "0x2d8"
+      },
+      {
+        "Name": "LocationCooldown",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2e0"
+      },
+      {
+        "Name": "AlwaysShowPopUp",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x2e4"
+      },
+      {
+        "Name": "pad0x63_KJZXL[0x63]",
+        "Type": "char",
+        "Size": "0x63",
+        "Offset": "0x2e5"
+      },
+      {
+        "Name": "SuppressedCrews",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x348"
+      },
+      {
+        "Name": "pad0x8_5Y6VR[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x358"
+      }
+    ]
   },
   "WorldLocationVisitorInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleWorldLocationPopUpServiceDesc": {
+    "Super": "TaleQuestServiceDesc",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleAllowWorldLocationPopUpStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -26,7 +83,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x4_5G7S6[0x4]",
+        "Name": "pad0x4_ONKF7[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x84"
@@ -52,7 +109,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x3_RX0JO[0x3]",
+        "Name": "pad0x3_9NSBK[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x81"
@@ -70,66 +127,6 @@
         "Offset": "0x88"
       }
     ]
-  },
-  "WorldLocationVisitorComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xf8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "pad0x8_91BOA[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "RevisitCooldown",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "pad0x34_OMK5F[0x34]",
-        "Type": "char",
-        "Size": "0x34",
-        "Offset": "0xc4"
-      }
-    ]
-  },
-  "TaleWorldLocationPopUpService": {
-    "Super": "TaleQuestService",
-    "FullSize": "0x90",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "SuppressedWorldLocationPopUpNearbyLocations",
-        "Type": "TArray<struct TaleWorldLocationPopUpServiceEntry>",
-        "Size": "0x10",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "pad0x20_C8BXN[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x70"
-      }
-    ]
-  },
-  "TaleAllowWorldLocationPopUpStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x98",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TaleWorldLocationPopUpServiceDesc": {
-    "Super": "TaleQuestServiceDesc",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "WorldLocationPopUpDataAsset": {
     "Super": "DataAsset",
@@ -163,55 +160,58 @@
       }
     ]
   },
-  "WorldLocationPopUpComponent": {
-    "Super": "SceneComponent",
-    "FullSize": "0x360",
-    "InheritedSize": "0x2d0",
-    "ClassSize": "0x90",
+  "WorldLocationVisitorComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "PopUpData",
-        "Type": "class WorldLocationPopUpDataAsset*",
+        "Name": "pad0x8_IQQRP[0x8]",
+        "Type": "char",
         "Size": "0x8",
-        "Offset": "0x2d0"
+        "Offset": "0xb8"
       },
       {
-        "Name": "LocationOverlapVolume",
-        "Type": "class ShapeComponent*",
-        "Size": "0x8",
-        "Offset": "0x2d8"
-      },
-      {
-        "Name": "LocationCooldown",
+        "Name": "RevisitCooldown",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x2e0"
+        "Offset": "0xc0"
       },
       {
-        "Name": "AlwaysShowPopUp",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x2e4"
-      },
-      {
-        "Name": "pad0x63_V4BRQ[0x63]",
+        "Name": "pad0x34_I0IXD[0x34]",
         "Type": "char",
-        "Size": "0x63",
-        "Offset": "0x2e5"
-      },
-      {
-        "Name": "SuppressedCrews",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x348"
-      },
-      {
-        "Name": "pad0x8_XHA0M[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x358"
+        "Size": "0x34",
+        "Offset": "0xc4"
       }
     ]
+  },
+  "TaleWorldLocationPopUpService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0x90",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "SuppressedWorldLocationPopUpNearbyLocations",
+        "Type": "TArray<struct TaleWorldLocationPopUpServiceEntry>",
+        "Size": "0x10",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x20_0G7SS[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x70"
+      }
+    ]
+  },
+  "TalePreventWorldLocationPopUpStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

@@ -11,19 +11,19 @@ public:
 };
 
 
-// Size 0x8
-struct CaptureResolution
-{
-public:
-	char                                                         pad0x8_EII2U[0x8];                                 // 0x0(0x8)
-};
-
-
 // Size 0x10
 struct CompositionGraphCapturePasses
 {
 public:
 	TArray<String>                                               Value;                                             // 0x0(0x10)
+};
+
+
+// Size 0x8
+struct CaptureResolution
+{
+public:
+	char                                                         pad0x8_D2U65[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -33,15 +33,15 @@ struct MovieSceneCaptureSettings
 public:
 	struct DirectoryPath                                         OutputDirectory;                                   // 0x0(0x10)
 	bool                                                         bCreateTemporaryCopiesOfLevels;                    // 0x10(0x1)
-	char                                                         pad0x7_4W4WU[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_0O4Y7[0x7];                                 // 0x11(0x7)
 	class UClass*                                                GameModeOverride;                                  // 0x18(0x8)
 	struct FString                                               OutputFormat;                                      // 0x20(0x10)
 	bool                                                         bOverwriteExisting;                                // 0x30(0x1)
 	bool                                                         bUseRelativeFrameNumbers;                          // 0x31(0x1)
-	char                                                         pad0x2_FE1JF[0x2];                                 // 0x32(0x2)
+	char                                                         pad0x2_GQBDJ[0x2];                                 // 0x32(0x2)
 	int                                                          HandleFrames;                                      // 0x34(0x4)
 	char                                                         ZeroPadFrameNumbers;                               // 0x38(0x1)
-	char                                                         pad0x3_KPMGS[0x3];                                 // 0x39(0x3)
+	char                                                         pad0x3_MLUIP[0x3];                                 // 0x39(0x3)
 	int                                                          FrameRate;                                         // 0x3c(0x4)
 	struct CaptureResolution                                     Resolution;                                        // 0x40(0x8)
 	bool                                                         bEnableTextureStreaming;                           // 0x48(0x1)
@@ -51,7 +51,7 @@ public:
 	bool                                                         bAllowTurning;                                     // 0x4c(0x1)
 	bool                                                         bShowPlayer;                                       // 0x4d(0x1)
 	bool                                                         bShowHUD;                                          // 0x4e(0x1)
-	char                                                         pad0x1_RHWQS[0x1];                                 // 0x4f(0x1)
+	char                                                         pad0x1_FLBLW[0x1];                                 // 0x4f(0x1)
 };
 
 

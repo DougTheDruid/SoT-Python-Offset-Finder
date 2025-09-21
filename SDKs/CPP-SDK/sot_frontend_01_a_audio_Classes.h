@@ -8,7 +8,6 @@ class sot_frontend_01_a_audio_C: public LevelScriptActor
 {
 public:
 	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3a8(0x8)
-	char                                                         pad0x4b52dd70_FNY55[0x4b52dd70];                   // 0x3b0(0x4b52dd70)
 };
 
 

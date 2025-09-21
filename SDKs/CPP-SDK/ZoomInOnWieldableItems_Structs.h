@@ -7,7 +7,7 @@
 struct ZoomedInOnWieldableItemActionStateConstructionInfo
 {
 public:
-	char                                                         pad0x48_ZTHLM[0x48];                               // 0x0(0x48)
+	char                                                         pad0x48_YGOYG[0x48];                               // 0x0(0x48)
 	float                                                        ZoomedInFov;                                       // 0x48(0x4)
 	float                                                        FreelookPitch;                                     // 0x4c(0x4)
 	float                                                        FreelookYaw;                                       // 0x50(0x4)

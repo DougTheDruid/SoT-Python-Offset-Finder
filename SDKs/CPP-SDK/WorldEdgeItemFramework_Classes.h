@@ -18,21 +18,21 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WorldEdgeItemServiceInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x260 (Full Size[0x600] - InheritedSize[0x3a0]
 class WorldEdgeItemService: public Actor
 {
 public:
-	char                                                         pad0x8_0VC8K[0x8];                                 // 0x3a0(0x8)
+	char                                                         pad0x8_JNNQM[0x8];                                 // 0x3a0(0x8)
 	class WorldEdgeItemServiceParams*                            WorldEdgeItemParameters;                           // 0x3a8(0x8)
 	struct EnvQueryRequest                                       SpawnItemEQSRequest;                               // 0x3b0(0x170)
-	char                                                         pad0xe0_QE7NT[0xe0];                               // 0x520(0xe0)
+	char                                                         pad0xe0_CRD2O[0xe0];                               // 0x520(0xe0)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class WorldEdgeItemServiceInterface: public Interface
+{
+public:
 };
 
 

@@ -1,9 +1,9 @@
 {
-  "EventObjectMessagingDispatcherBeingDestroyed": {
+  "ObjectMessagingDispatcherHandle": {
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_9Q76W[0x8]",
+        "Name": "pad0x8_XE61Z[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"
@@ -14,9 +14,20 @@
     "ClassSize": "0xa0",
     "Attributes": [
       {
-        "Name": "pad0xa0_SYKN0[0xa0]",
+        "Name": "pad0xa0_CPCZY[0xa0]",
         "Type": "char",
         "Size": "0xa0",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventObjectMessagingDispatcherBeingDestroyed": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_X5OTA[0x8]",
+        "Type": "char",
+        "Size": "0x8",
         "Offset": "0x0"
       }
     ]
@@ -25,7 +36,7 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x50_MW7LI[0x50]",
+        "Name": "pad0x50_JD99O[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x0"
@@ -36,7 +47,7 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "pad0x8_SYIJG[0x8]",
+        "Name": "pad0x8_JGN7N[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"
@@ -48,21 +59,10 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x48_1HT2T[0x48]",
+        "Name": "pad0x48_38BD2[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0x10"
-      }
-    ]
-  },
-  "ObjectMessagingDispatcherHandle": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_5IR49[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
       }
     ]
   },

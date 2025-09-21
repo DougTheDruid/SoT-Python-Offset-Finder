@@ -4,6 +4,30 @@
 // https://github.com/DougTheDruid
 
 // Size 0x20
+struct OutgoingServerMigrationCompletedEvent
+{
+public:
+	char                                                         pad0x20_Z4WM9[0x20];                               // 0x0(0x20)
+};
+
+
+// Size 0x20
+struct OutgoingServerMigrationAbortedEvent
+{
+public:
+	char                                                         pad0x20_4LXGU[0x20];                               // 0x0(0x20)
+};
+
+
+// Size 0x18
+struct PrepareForWorldSwitchRpc
+{
+public:
+	char                                                         pad0x18_KEP9M[0x18];                               // 0x0(0x18)
+};
+
+
+// Size 0x20
 struct ServerMigrationRefusedEvent
 {
 public:
@@ -12,68 +36,20 @@ public:
 };
 
 
-// Size 0x20
-struct OutgoingServerMigrationCompletedEvent
-{
-public:
-	char                                                         pad0x20_O3JNS[0x20];                               // 0x0(0x20)
-};
-
-
 // Size 0x48
 struct AddedPendingIncomingGameEventOnDemandCrewEvent
 {
 public:
-	char                                                         pad0x48_CAKDI[0x48];                               // 0x0(0x48)
+	char                                                         pad0x48_OCYPG[0x48];                               // 0x0(0x48)
 };
 
 
 // Size 0x20
-struct ServerMigrationAboutToStartEvent
+struct ServerMigrationInstanceEventBase
 {
 public:
-	char                                                         pad0x20_4O5XX[0x20];                               // 0x0(0x20)
-};
-
-
-// Size 0x20
-struct ServerMigrationAbortEvent
-{
-public:
-	char                                                         pad0x20_0Y3BF[0x20];                               // 0x0(0x20)
-};
-
-
-// Size 0xc
-struct IncomingMigrationPreventionZone
-{
-public:
-	struct Vector2D                                              Location;                                          // 0x0(0x8)
-	float                                                        Radius;                                            // 0x8(0x4)
-};
-
-
-// Size 0x1
-struct ServerMigrationSetupCompleteEvent
-{
-public:
-	char                                                         pad0x1_D4HHR[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x1
-struct ServerMigrationCompleteEvent
-{
-public:
-	char                                                         pad0x1_OK73M[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x20
-struct OutgoingServerMigrationAbortedEvent
-{
-public:
-	char                                                         pad0x20_98F8B[0x20];                               // 0x0(0x20)
+	struct Guid                                                  ServerId;                                          // 0x0(0x10)
+	struct Guid                                                  MigrationId;                                       // 0x10(0x10)
 };
 
 
@@ -90,36 +66,35 @@ public:
 };
 
 
+// Size 0x1
+struct ServerMigrationCompleteEvent
+{
+public:
+	char                                                         pad0x1_KYFSB[0x1];                                 // 0x0(0x1)
+};
+
+
 // Size 0x48
 struct AddedPendingIncomingInvaderCrewEvent
 {
 public:
-	char                                                         pad0x48_LECDP[0x48];                               // 0x0(0x48)
+	char                                                         pad0x48_E48QH[0x48];                               // 0x0(0x48)
 };
 
 
-// Size 0x20
-struct OutgoingServerMigrationCompleteEvent
+// Size 0x90
+struct ServerMigrationReadyToTransferActors
 {
 public:
-	char                                                         pad0x20_BJ7R8[0x20];                               // 0x0(0x20)
+	char                                                         pad0x90_FTBJP[0x90];                               // 0x0(0x90)
 };
 
 
-// Size 0x20
-struct ServerMigrationInstanceEventBase
+// Size 0x1
+struct ServerMigrationSetupRequestEvent
 {
 public:
-	struct Guid                                                  ServerId;                                          // 0x0(0x10)
-	struct Guid                                                  MigrationId;                                       // 0x10(0x10)
-};
-
-
-// Size 0x18
-struct PrepareForWorldSwitchRpc
-{
-public:
-	char                                                         pad0x18_D0F9K[0x18];                               // 0x0(0x18)
+	char                                                         pad0x1_ROPBR[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -127,7 +102,40 @@ public:
 struct OutgoingServerMigrationStartedEvent
 {
 public:
-	char                                                         pad0x20_UT95F[0x20];                               // 0x0(0x20)
+	char                                                         pad0x20_JXQZ1[0x20];                               // 0x0(0x20)
+};
+
+
+// Size 0x20
+struct ServerMigrationAbortEvent
+{
+public:
+	char                                                         pad0x20_VNI7Q[0x20];                               // 0x0(0x20)
+};
+
+
+// Size 0x20
+struct OutgoingServerMigrationCompleteEvent
+{
+public:
+	char                                                         pad0x20_BB5IY[0x20];                               // 0x0(0x20)
+};
+
+
+// Size 0xc
+struct IncomingMigrationPreventionZone
+{
+public:
+	struct Vector2D                                              Location;                                          // 0x0(0x8)
+	float                                                        Radius;                                            // 0x8(0x4)
+};
+
+
+// Size 0x1
+struct ServerMigrationSetupCompleteEvent
+{
+public:
+	char                                                         pad0x1_XE5XT[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -140,11 +148,11 @@ public:
 };
 
 
-// Size 0x1
-struct ServerMigrationSetupRequestEvent
+// Size 0x20
+struct ServerMigrationAboutToStartEvent
 {
 public:
-	char                                                         pad0x1_WEY1K[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x20_CD8IE[0x20];                               // 0x0(0x20)
 };
 
 
@@ -153,14 +161,6 @@ struct AthenaServerMigrationClientContext
 {
 public:
 	struct FString                                               StampId;                                           // 0x0(0x10)
-};
-
-
-// Size 0x90
-struct ServerMigrationReadyToTransferActors
-{
-public:
-	char                                                         pad0x90_5AKWA[0x90];                               // 0x0(0x90)
 };
 
 

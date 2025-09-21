@@ -18,7 +18,7 @@ CrewTrackedItemOwnershipChanged:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_K9XP4[0x7]
+  - Name: pad0x7_YOCQC[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
@@ -47,7 +47,7 @@ TrackItemOwnershipEvent:
     Offset: '0x0'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x10_4U59B[0x10]
+  - Name: pad0x10_IYB77[0x10]
     Offset: '0x8'
     Size: '0x10'
     Type: char

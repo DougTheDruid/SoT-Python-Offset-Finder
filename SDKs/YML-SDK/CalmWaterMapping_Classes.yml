@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AthenaCalmWaterZone:
   Attributes:
-  - Name: pad0x20_21NFK[0x20]
+  - Name: pad0x20_P8BDW[0x20]
     Offset: '0x3a8'
     Size: '0x20'
     Type: char
@@ -18,7 +18,7 @@ CalmWaterMappingInterface:
   Super: Interface
 CalmWaterMappingService:
   Attributes:
-  - Name: pad0x28_0F63Q[0x28]
+  - Name: pad0x28_6EAVD[0x28]
     Offset: '0x28'
     Size: '0x28'
     Type: char

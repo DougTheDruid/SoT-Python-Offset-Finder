@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 SeasonProgressionExclusionComponent:
   Attributes:
-  - Name: pad0x8_VASXB[0x8]
+  - Name: pad0x8_HBSDY[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -10,7 +10,7 @@ SeasonProgressionExclusionComponent:
     Offset: '0xc0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_Y5D2J[0x7]
+  - Name: pad0x7_TNV3H[0x7]
     Offset: '0xc1'
     Size: '0x7'
     Type: char

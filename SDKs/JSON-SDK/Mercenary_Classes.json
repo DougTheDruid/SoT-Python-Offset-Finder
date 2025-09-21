@@ -1,208 +1,4 @@
 {
-  "MercenaryServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MercenarySpawnLocationsDataAsset": {
-    "Super": "IslandItemDataAsset",
-    "FullSize": "0x48",
-    "InheritedSize": "0x48",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MercenaryItemInteractionsComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x2c0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x208",
-    "Attributes": [
-      {
-        "Name": "pad0x28_Q8TZ8[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "EnableAICarryingItems",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "AICarryingItemsEnabled",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xe1"
-      },
-      {
-        "Name": "pad0x6_9RMN3[0x6]",
-        "Type": "char",
-        "Size": "0x6",
-        "Offset": "0xe2"
-      },
-      {
-        "Name": "HoldGiveInteractionTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x108"
-      },
-      {
-        "Name": "pad0x4_E1IWQ[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x10c"
-      },
-      {
-        "Name": "HoldGiveInteractionAllowText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x110"
-      },
-      {
-        "Name": "HoldGiveInteractionDenyText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x148"
-      },
-      {
-        "Name": "HoldTakeInteractionTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x180"
-      },
-      {
-        "Name": "pad0x4_PCL62[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x184"
-      },
-      {
-        "Name": "HoldTakeInteractionAllowText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x188"
-      },
-      {
-        "Name": "HoldTakeInteractionDenyText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x1c0"
-      },
-      {
-        "Name": "CarryItemInteractionInputId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x1f8"
-      },
-      {
-        "Name": "CarryItemInteractionReleasedInputId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x200"
-      },
-      {
-        "Name": "pad0x30_8U46Q[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x208"
-      },
-      {
-        "Name": "EnableAIMapAssistanceInteraction",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x238"
-      },
-      {
-        "Name": "ConsentToAIMapAssistance",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x239"
-      },
-      {
-        "Name": "AIMapAssistanceInteractionEnabled",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x23a"
-      },
-      {
-        "Name": "pad0x1_T51EW[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x23b"
-      },
-      {
-        "Name": "AIMapAssistanceInteractionHoldTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x23c"
-      },
-      {
-        "Name": "AIMapAssistanceInteractionText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x240"
-      },
-      {
-        "Name": "AIMapAssistanceInteractionInputId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x278"
-      },
-      {
-        "Name": "AIMapAssistanceInteractionReleasedInputId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x280"
-      },
-      {
-        "Name": "pad0x30_L3R86[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x288"
-      },
-      {
-        "Name": "LoadedMercenaryItemInteractionDataAsset",
-        "Type": "class MercenaryItemInteractionDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x2b8"
-      }
-    ]
-  },
-  "MercenaryService": {
-    "Super": "Actor",
-    "FullSize": "0x3d0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x20_90VCP[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "MercenaryCleanupDelayTimer",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3c0"
-      },
-      {
-        "Name": "pad0x4_5MXK2[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3c4"
-      },
-      {
-        "Name": "ServiceParams",
-        "Type": "class MercenaryServiceParams*",
-        "Size": "0x8",
-        "Offset": "0x3c8"
-      }
-    ]
-  },
   "MercenaryItemInteractionDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x48",
@@ -223,79 +19,6 @@
       }
     ]
   },
-  "MercenaryServiceParams": {
-    "Super": "DataAsset",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "MercenaryCleanupDelayTimer",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x4_90LEM[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      }
-    ]
-  },
-  "MercenaryFunctionalAssetsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "AISpawnerSettings",
-        "Type": "class AISpawner*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "NamedAIDataAsset",
-        "Type": "class NamedAIDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "EmoteIdToPlayAfterSpawn",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "EmergentSkeletonHandedItemStatTrigger": {
-    "Super": "ConditionalStatsTriggerType",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MercenaryCosmeticAssetsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "PreSpawnInAnimation",
-        "Type": "class AnimationAsset*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "PreSpawnInParticleSystem",
-        "Type": "class ParticleSystem*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      }
-    ]
-  },
   "MercenaryBuriableActor": {
     "Super": "Actor",
     "FullSize": "0x570",
@@ -303,7 +26,7 @@
     "ClassSize": "0x1d0",
     "Attributes": [
       {
-        "Name": "pad0x10_PX73R[0x10]",
+        "Name": "pad0x10_8N18F[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3a0"
@@ -369,13 +92,13 @@
         "Offset": "0x460"
       },
       {
-        "Name": "pad0x7_1HB6Q[0x7]",
+        "Name": "pad0x7_W29GB[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x461"
       },
       {
-        "Name": "pad0x108_5I365[0x108]",
+        "Name": "pad0x108_4X17P[0x108]",
         "Type": "char",
         "Size": "0x108",
         "Offset": "0x468"
@@ -386,6 +109,283 @@
     "Super": "ConditionalStatsTriggerType",
     "FullSize": "0x30",
     "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MercenarySpawnLocationsDataAsset": {
+    "Super": "IslandItemDataAsset",
+    "FullSize": "0x48",
+    "InheritedSize": "0x48",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MercenaryServiceParams": {
+    "Super": "DataAsset",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "MercenaryCleanupDelayTimer",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_EKPQ6[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      }
+    ]
+  },
+  "MercenaryItemInteractionsComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x2c0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x208",
+    "Attributes": [
+      {
+        "Name": "pad0x28_NZZXV[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "EnableAICarryingItems",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "AICarryingItemsEnabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xe1"
+      },
+      {
+        "Name": "pad0x6_O05F7[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0xe2"
+      },
+      {
+        "Name": "HoldGiveInteractionTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x108"
+      },
+      {
+        "Name": "pad0x4_1X59F[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x10c"
+      },
+      {
+        "Name": "HoldGiveInteractionAllowText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "HoldGiveInteractionDenyText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x148"
+      },
+      {
+        "Name": "HoldTakeInteractionTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x180"
+      },
+      {
+        "Name": "pad0x4_21E1L[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x184"
+      },
+      {
+        "Name": "HoldTakeInteractionAllowText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x188"
+      },
+      {
+        "Name": "HoldTakeInteractionDenyText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x1c0"
+      },
+      {
+        "Name": "CarryItemInteractionInputId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x1f8"
+      },
+      {
+        "Name": "CarryItemInteractionReleasedInputId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x200"
+      },
+      {
+        "Name": "pad0x30_T9KCJ[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x208"
+      },
+      {
+        "Name": "EnableAIMapAssistanceInteraction",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x238"
+      },
+      {
+        "Name": "ConsentToAIMapAssistance",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x239"
+      },
+      {
+        "Name": "AIMapAssistanceInteractionEnabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x23a"
+      },
+      {
+        "Name": "pad0x1_MFL2P[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x23b"
+      },
+      {
+        "Name": "AIMapAssistanceInteractionHoldTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x23c"
+      },
+      {
+        "Name": "AIMapAssistanceInteractionText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x240"
+      },
+      {
+        "Name": "AIMapAssistanceInteractionInputId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x278"
+      },
+      {
+        "Name": "AIMapAssistanceInteractionReleasedInputId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x280"
+      },
+      {
+        "Name": "pad0x30_ZUC08[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x288"
+      },
+      {
+        "Name": "LoadedMercenaryItemInteractionDataAsset",
+        "Type": "class MercenaryItemInteractionDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x2b8"
+      }
+    ]
+  },
+  "MercenaryFunctionalAssetsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "AISpawnerSettings",
+        "Type": "class AISpawner*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "NamedAIDataAsset",
+        "Type": "class NamedAIDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "EmoteIdToPlayAfterSpawn",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "MercenaryCosmeticAssetsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "PreSpawnInAnimation",
+        "Type": "class AnimationAsset*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "PreSpawnInParticleSystem",
+        "Type": "class ParticleSystem*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "MercenaryService": {
+    "Super": "Actor",
+    "FullSize": "0x3d0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x20_FS1LO[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "MercenaryCleanupDelayTimer",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c0"
+      },
+      {
+        "Name": "pad0x4_V74DO[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c4"
+      },
+      {
+        "Name": "ServiceParams",
+        "Type": "class MercenaryServiceParams*",
+        "Size": "0x8",
+        "Offset": "0x3c8"
+      }
+    ]
+  },
+  "EmergentSkeletonHandedItemStatTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MercenaryServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },

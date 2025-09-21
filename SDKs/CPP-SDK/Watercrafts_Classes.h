@@ -6,17 +6,27 @@
 #include "Watercrafts_Structs.h"
 
 
-// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class RowboatOarsLeftForwardDeactivatedNotificationInputId: public NotificationInputId
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class ScrapeableDamageDataAsset: public DataAsset
 {
 public:
+	TArray<struct ScrapeableDamageSpeedEntry>                    DamageSpeedParams;                                 // 0x28(0x10)
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WatercraftBlueprintFunctionLibrary: public BlueprintFunctionLibrary
+// Size 0x28 (Full Size[0x88] - InheritedSize[0x60]
+class TaleQuestWatercraftService: public TaleQuestService
 {
 public:
+	char                                                         pad0x28_S1ZOA[0x28];                               // 0x60(0x28)
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class RowboatDescDataAsset: public DataAsset
+{
+public:
+	struct PartDesc                                              PartDesc;                                          // 0x28(0x20)
 };
 
 
@@ -28,75 +38,9 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class RowboatPartInterface: public Interface
+class ControllableOarsInterface: public Interface
 {
 public:
-};
-
-
-// Size 0x8 (Full Size[0x3a8] - InheritedSize[0x3a0]
-class WatercraftService: public Actor
-{
-public:
-	char                                                         pad0x8_H2B63[0x8];                                 // 0x3a0(0x8)
-};
-
-
-// Size 0x18 (Full Size[0xd0] - InheritedSize[0xb8]
-class WatercraftTrackerComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_01GG2[0x8];                                 // 0xb8(0x8)
-	TArray<class Actor*>                                         CurrentWatercrafts;                                // 0xc0(0x10)
-};
-
-
-// Size 0x388 (Full Size[0x728] - InheritedSize[0x3a0]
-class Watercraft: public Actor
-{
-public:
-	char                                                         pad0x38_JD0EV[0x38];                               // 0x3a0(0x38)
-	class BuoyancyComponent*                                     BuoyancyComponent;                                 // 0x3d8(0x8)
-	struct WatercraftRolloverCorrector                           RolloverCorrector;                                 // 0x3e0(0xc)
-	char                                                         pad0x4_930PM[0x4];                                 // 0x3ec(0x4)
-	class ShipNosediveBrake*                                     NosediveBrake;                                     // 0x3f0(0x8)
-	class BowSplashContainer*                                    BowSplashContainer;                                // 0x3f8(0x8)
-	class StaticMeshComponent*                                   CollisionMesh;                                     // 0x400(0x8)
-	class StaticMeshComponent*                                   CraftMesh;                                         // 0x408(0x8)
-	class BoxComponent*                                          OverlapHits;                                       // 0x410(0x8)
-	class StaticMeshComponent*                                   WaterOcclusionVolume;                              // 0x418(0x8)
-	class WaterInteractionComponent*                             WaterInteractionComponent;                         // 0x420(0x8)
-	struct FName                                                 ClientConvexHullCollisionProfile;                  // 0x428(0x8)
-	struct NetTimeStampCalculator                                MovementTimestamp;                                 // 0x430(0x70)
-	struct RigidBodyErrorCorrection                              PhysicsErrorCorrection;                            // 0x4a0(0x1c)
-	char                                                         pad0x3c_TKDZB[0x3c];                               // 0x4bc(0x3c)
-	struct BuoyancySampleMovement                                BuoyancySampleMovement;                            // 0x4f8(0x68)
-	class CurveFloat*                                            SpeedToChoppinessScalarCurve;                      // 0x560(0x8)
-	float                                                        DeepWaterSubmersionThreshold;                      // 0x568(0x4)
-	float                                                        BuoyancyChoppinessWhileSinking;                    // 0x56c(0x4)
-	bool                                                         IsCritical;                                        // 0x570(0x1)
-	bool                                                         RigidBodyAwake;                                    // 0x571(0x1)
-	bool                                                         InContactWithLand;                                 // 0x572(0x1)
-	bool                                                         InDeepWater;                                       // 0x573(0x1)
-	char                                                         pad0x4_IHBB2[0x4];                                 // 0x574(0x4)
-	char                                                         pad0x1b0_EXPE4[0x1b0];                             // 0x578(0x1b0)
-};
-
-
-// Size 0x8 (Full Size[0x298] - InheritedSize[0x290]
-class RowingInputComponent: public LookAtOffsetInputComponent
-{
-public:
-	class RowingSeat*                                            TargetOars;                                        // 0x290(0x8)
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class RowboatLiveryPickerDataAsset: public DataAsset
-{
-public:
-	TArray<struct RowboatLiveryByWeight>                         LiveriesInThisGroup;                               // 0x28(0x10)
-	TArray<struct RowboatLiveryPickerDataAssetConditions>        SubgroupsInPriorityOrder;                          // 0x38(0x10)
 };
 
 
@@ -109,51 +53,42 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class RowboatOarsRightBrakingDeactivatedNotificationInputId: public NotificationInputId
+// Size 0x388 (Full Size[0x728] - InheritedSize[0x3a0]
+class Watercraft: public Actor
 {
 public:
+	char                                                         pad0x38_B6VNP[0x38];                               // 0x3a0(0x38)
+	class BuoyancyComponent*                                     BuoyancyComponent;                                 // 0x3d8(0x8)
+	struct WatercraftRolloverCorrector                           RolloverCorrector;                                 // 0x3e0(0xc)
+	char                                                         pad0x4_OAUKB[0x4];                                 // 0x3ec(0x4)
+	class ShipNosediveBrake*                                     NosediveBrake;                                     // 0x3f0(0x8)
+	class BowSplashContainer*                                    BowSplashContainer;                                // 0x3f8(0x8)
+	class StaticMeshComponent*                                   CollisionMesh;                                     // 0x400(0x8)
+	class StaticMeshComponent*                                   CraftMesh;                                         // 0x408(0x8)
+	class BoxComponent*                                          OverlapHits;                                       // 0x410(0x8)
+	class StaticMeshComponent*                                   WaterOcclusionVolume;                              // 0x418(0x8)
+	class WaterInteractionComponent*                             WaterInteractionComponent;                         // 0x420(0x8)
+	struct FName                                                 ClientConvexHullCollisionProfile;                  // 0x428(0x8)
+	struct NetTimeStampCalculator                                MovementTimestamp;                                 // 0x430(0x70)
+	struct RigidBodyErrorCorrection                              PhysicsErrorCorrection;                            // 0x4a0(0x1c)
+	char                                                         pad0x3c_36KBE[0x3c];                               // 0x4bc(0x3c)
+	struct BuoyancySampleMovement                                BuoyancySampleMovement;                            // 0x4f8(0x68)
+	class CurveFloat*                                            SpeedToChoppinessScalarCurve;                      // 0x560(0x8)
+	float                                                        DeepWaterSubmersionThreshold;                      // 0x568(0x4)
+	float                                                        BuoyancyChoppinessWhileSinking;                    // 0x56c(0x4)
+	bool                                                         IsCritical;                                        // 0x570(0x1)
+	bool                                                         RigidBodyAwake;                                    // 0x571(0x1)
+	bool                                                         InContactWithLand;                                 // 0x572(0x1)
+	bool                                                         InDeepWater;                                       // 0x573(0x1)
+	char                                                         pad0x4_DG0VF[0x4];                                 // 0x574(0x4)
+	char                                                         pad0x1b0_JCB7N[0x1b0];                             // 0x578(0x1b0)
 };
 
 
-// Size 0x48 (Full Size[0x100] - InheritedSize[0xb8]
-class RowboatCustomizationLoadoutComponent: public ActorComponent
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
+class RowboatDockedToShipConditionalStatTrigger: public ConditionalStatsTriggerType
 {
 public:
-	char                                                         pad0x28_1CYWS[0x28];                               // 0xb8(0x28)
-	class UClass*                                                EquippedCustomization;                             // 0xe0(0x8)
-	char                                                         pad0x18_CHY9A[0x18];                               // 0xe8(0x18)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ScrapeableInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x8 (Full Size[0xc8] - InheritedSize[0xc0]
-class RowingSeatAdaptiveTriggerComponent: public AdaptiveTriggerComponent
-{
-public:
-	struct AdaptiveTriggerEffectMode_Feedback                    BothTriggers_Row;                                  // 0xc0(0x3)
-	char                                                         pad0x5_HKYNF[0x5];                                 // 0xc3(0x5)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestSpawnWatercraftStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class ItemProxyWatercraftTrackerComponentDataAsset: public DataAsset
-{
-public:
-	TArray<class Class*>                                         WatercraftTypes;                                   // 0x28(0x10)
 };
 
 
@@ -164,30 +99,15 @@ public:
 };
 
 
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class CheckRowboatTypeStatCondition: public StatCondition
-{
-public:
-	char                                                         pad0x20_SB9BD[0x20];                               // 0x28(0x20)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ControllableOarsInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TaleQuestWatercraftServiceDesc: public TaleQuestServiceDesc
-{
-public:
-};
-
-
 // Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class RowboatOarsRightForwardNotificationInputId: public NotificationInputId
+class RowboatOarsLeftForwardNotificationInputId: public NotificationInputId
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestSinkWatercraftStep: public TaleQuestStep
 {
 public:
 };
@@ -201,29 +121,60 @@ public:
 
 
 // Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class RowboatOarsLeftBrakingActivatedNotificationInputId: public NotificationInputId
+class RowboatOarsRightBrakingDeactivatedNotificationInputId: public NotificationInputId
 {
 public:
 };
 
 
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class RowboatDescDataAsset: public DataAsset
-{
-public:
-	struct PartDesc                                              PartDesc;                                          // 0x28(0x20)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class RowboatInterface: public Interface
+// Size 0x0 (Full Size[0x88] - InheritedSize[0x88]
+class RowboatLiveryCategory: public CategoryBase
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class RowingActionStateId: public ActionStateId
+class TaleQuestWatercraftServiceDesc: public TaleQuestServiceDesc
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x298] - InheritedSize[0x290]
+class RowingInputComponent: public LookAtOffsetInputComponent
+{
+public:
+	class RowingSeat*                                            TargetOars;                                        // 0x290(0x8)
+};
+
+
+// Size 0x30 (Full Size[0x6c8] - InheritedSize[0x698]
+class StorageSeat: public Seat
+{
+public:
+	class UClass*                                                StorageInteractionInput;                           // 0x698(0x8)
+	class StorageContainerComponent*                             StorageContainerComponent;                         // 0x6a0(0x8)
+	char                                                         pad0x20_OJG0U[0x20];                               // 0x6a8(0x20)
+};
+
+
+// Size 0x30 (Full Size[0xe8] - InheritedSize[0xb8]
+class ScrapeableComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_VYHML[0x8];                                 // 0xb8(0x8)
+	float                                                        MinIntervalBetweenScrapeDamage;                    // 0xc0(0x4)
+	char                                                         pad0x4_TUOVG[0x4];                                 // 0xc4(0x4)
+	class ScrapeableDamageDataAsset*                             ScrapeDamageSettings;                              // 0xc8(0x8)
+	struct Vector                                                SafeZoneCenterDirection;                           // 0xd0(0xc)
+	float                                                        SafeZoneMaximumAngle;                              // 0xdc(0x4)
+	class UClass*                                                ScrapeDamagerType;                                 // 0xe0(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestSpawnWatercraftStep: public TaleQuestStep
 {
 public:
 };
@@ -236,167 +187,10 @@ public:
 };
 
 
-// Size 0x28 (Full Size[0x88] - InheritedSize[0x60]
-class TaleQuestWatercraftService: public TaleQuestService
-{
-public:
-	char                                                         pad0x28_N7W0Z[0x28];                               // 0x60(0x28)
-};
-
-
-// Size 0x1e0 (Full Size[0x4b0] - InheritedSize[0x2d0]
-class RowboatAudioComponent: public SceneComponent
-{
-public:
-	class RowboatAudioComponentParams*                           Params;                                            // 0x2d0(0x8)
-	class Rowboat*                                               ParentRowboat;                                     // 0x2d8(0x8)
-	char                                                         pad0x1d0_OSDL6[0x1d0];                             // 0x2e0(0x1d0)
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestWatercraftFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class RowboatDockedToShipConditionalStatTrigger: public ConditionalStatsTriggerType
-{
-public:
-};
-
-
-// Size 0x98 (Full Size[0x150] - InheritedSize[0xb8]
-class ItemProxyWatercraftTrackerComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_HHWMX[0x8];                                 // 0xb8(0x8)
-	class ItemProxyWatercraftTrackerComponentDataAsset*          WatercraftTrackingData;                            // 0xc0(0x8)
-	class Actor*                                                 CurrentWatercraft;                                 // 0xc8(0x8)
-	char                                                         pad0x80_3Z4HH[0x80];                               // 0xd0(0x80)
-};
-
-
 // Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class RowboatOarsLeftForwardNotificationInputId: public NotificationInputId
+class RowboatOarsLeftForwardDeactivatedNotificationInputId: public NotificationInputId
 {
 public:
-};
-
-
-// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class RowboatOarsRightBrakingActivatedNotificationInputId: public NotificationInputId
-{
-public:
-};
-
-
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class TaleQuestSinkWatercraftStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableWatercraft                               Watercraft;                                        // 0x80(0x30)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class RowboatLiveryPicker: public Object
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WatercraftServiceInterface: public Interface
-{
-public:
-};
-
-
-// Size 0xa8 (Full Size[0x128] - InheritedSize[0x80]
-class TaleQuestSpawnWatercraftStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableTransform                                SpawnLocation;                                     // 0x80(0x38)
-	struct QuestVariableWatercraft                               Watercraft;                                        // 0xf8(0x30)
-};
-
-
-// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
-class RowboatLiveryDesc: public EntitlementDesc
-{
-public:
-	struct StringAssetReference                                  RowboatDescDataAsset;                              // 0xc8(0x10)
-};
-
-
-// Size 0x30 (Full Size[0xe8] - InheritedSize[0xb8]
-class ScrapeableComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_ESF5Q[0x8];                                 // 0xb8(0x8)
-	float                                                        MinIntervalBetweenScrapeDamage;                    // 0xc0(0x4)
-	char                                                         pad0x4_BYAIB[0x4];                                 // 0xc4(0x4)
-	class ScrapeableDamageDataAsset*                             ScrapeDamageSettings;                              // 0xc8(0x8)
-	struct Vector                                                SafeZoneCenterDirection;                           // 0xd0(0xc)
-	float                                                        SafeZoneMaximumAngle;                              // 0xdc(0x4)
-	class UClass*                                                ScrapeDamagerType;                                 // 0xe0(0x8)
-};
-
-
-// Size 0x110 (Full Size[0x4b0] - InheritedSize[0x3a0]
-class FakeShip: public Actor
-{
-public:
-	char                                                         pad0x8_QY779[0x8];                                 // 0x3a0(0x8)
-	TArray<class ItemProxy*>                                     AttachedItems;                                     // 0x3a8(0x10)
-	char                                                         pad0xf8_8MHGO[0xf8];                               // 0x3b8(0xf8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class RowboatCustomizationLoadoutInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x30 (Full Size[0x6b8] - InheritedSize[0x688]
-class StorageSeat: public Seat
-{
-public:
-	class UClass*                                                StorageInteractionInput;                           // 0x688(0x8)
-	class StorageContainerComponent*                             StorageContainerComponent;                         // 0x690(0x8)
-	char                                                         pad0x20_N4ADV[0x20];                               // 0x698(0x20)
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class CheckRowboatLiveriesStatCondition: public StatCondition
-{
-public:
-	char                                                         pad0x20_5TGH1[0x20];                               // 0x28(0x20)
-};
-
-
-// Size 0x30 (Full Size[0xb8] - InheritedSize[0x88]
-class WatercraftSpawnData: public ItemSpawnData
-{
-public:
-	char                                                         pad0x20_T4GOZ[0x20];                               // 0x88(0x20)
-	class RowboatLiveryPicker*                                   LiveryPicker;                                      // 0xa8(0x8)
-	float                                                        MinDistanceToNearestWatercraftInMetres;            // 0xb0(0x4)
-	char                                                         pad0x4_1B1SP[0x4];                                 // 0xb4(0x4)
-};
-
-
-// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
-class RowboatEntitlementDesc: public EntitlementDesc
-{
-public:
-	struct StringClassReference                                  Rowboat;                                           // 0xc8(0x10)
 };
 
 
@@ -409,7 +203,7 @@ public:
 	class WwiseEvent*                                            RowboatWakeStop;                                   // 0x38(0x8)
 	struct FName                                                 RowboatSpeedRtpcName;                              // 0x40(0x8)
 	float                                                        RowboatMaxSpeedRtpc;                               // 0x48(0x4)
-	char                                                         pad0x4_ERRKO[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_ZIHVU[0x4];                                 // 0x4c(0x4)
 	class WwiseEvent*                                            RowboatLaunch;                                     // 0x50(0x8)
 	class WwiseEvent*                                            RowboatImpactAndScrapeStart;                       // 0x58(0x8)
 	class WwiseEvent*                                            RowboatImpactAndScrapeStop;                        // 0x60(0x8)
@@ -417,10 +211,10 @@ public:
 	class WwiseEvent*                                            RowboatStrainStop;                                 // 0x70(0x8)
 	struct FName                                                 RowboatStrainRtpcName;                             // 0x78(0x8)
 	float                                                        RowboatMaxStrainRtpc;                              // 0x80(0x4)
-	char                                                         pad0x4_QD4X1[0x4];                                 // 0x84(0x4)
+	char                                                         pad0x4_DISV3[0x4];                                 // 0x84(0x4)
 	class WwiseEvent*                                            RowboatTakenDamage;                                // 0x88(0x8)
 	float                                                        DamageAmountRequiredForNoiseToPlay;                // 0x90(0x4)
-	char                                                         pad0x4_H2YHZ[0x4];                                 // 0x94(0x4)
+	char                                                         pad0x4_Q8P82[0x4];                                 // 0x94(0x4)
 	class WwiseEvent*                                            RowboatAttach;                                     // 0x98(0x8)
 	class WwiseEvent*                                            RowboatDetach;                                     // 0xa0(0x8)
 	class WwiseObjectPoolWrapper*                                WwiseOarEmitterPool;                               // 0xa8(0x8)
@@ -434,25 +228,55 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class ScrapeableDamageDataAsset: public DataAsset
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class CheckRowboatTypeStatCondition: public StatCondition
 {
 public:
-	TArray<struct ScrapeableDamageSpeedEntry>                    DamageSpeedParams;                                 // 0x28(0x10)
+	char                                                         pad0x20_PW5N7[0x20];                               // 0x28(0x20)
 };
 
 
-// Size 0x0 (Full Size[0x88] - InheritedSize[0x88]
-class RowboatLiveryCategory: public CategoryBase
+// Size 0x110 (Full Size[0x4b0] - InheritedSize[0x3a0]
+class FakeShip: public Actor
+{
+public:
+	char                                                         pad0x8_JU9Z6[0x8];                                 // 0x3a0(0x8)
+	TArray<class ItemProxy*>                                     AttachedItems;                                     // 0x3a8(0x10)
+	char                                                         pad0xf8_4855Z[0xf8];                               // 0x3b8(0xf8)
+};
+
+
+// Size 0xa8 (Full Size[0x128] - InheritedSize[0x80]
+class TaleQuestSpawnWatercraftStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableTransform                                SpawnLocation;                                     // 0x80(0x38)
+	struct QuestVariableWatercraft                               Watercraft;                                        // 0xf8(0x30)
+};
+
+
+// Size 0x48 (Full Size[0x100] - InheritedSize[0xb8]
+class RowboatCustomizationLoadoutComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x28_5WXG5[0x28];                               // 0xb8(0x28)
+	class UClass*                                                EquippedCustomization;                             // 0xe0(0x8)
+	char                                                         pad0x18_RYZM1[0x18];                               // 0xe8(0x18)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class RowingActionStateId: public ActionStateId
 {
 public:
 };
 
 
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestSinkWatercraftStep: public TaleQuestStep
+// Size 0x8 (Full Size[0x3a8] - InheritedSize[0x3a0]
+class WatercraftService: public Actor
 {
 public:
+	char                                                         pad0x8_O2IM5[0x8];                                 // 0x3a0(0x8)
 };
 
 
@@ -464,11 +288,179 @@ public:
 };
 
 
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class FixedRowboatLiveryPicker: public RowboatLiveryPicker
+// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
+class RowboatLiveryDesc: public EntitlementDesc
 {
 public:
-	char                                                         pad0x20_WZNLQ[0x20];                               // 0x28(0x20)
+	struct StringAssetReference                                  RowboatDescDataAsset;                              // 0xc8(0x10)
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class TaleQuestSinkWatercraftStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableWatercraft                               Watercraft;                                        // 0x80(0x30)
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class RowboatLiveryPickerDataAsset: public DataAsset
+{
+public:
+	TArray<struct RowboatLiveryByWeight>                         LiveriesInThisGroup;                               // 0x28(0x10)
+	TArray<struct RowboatLiveryPickerDataAssetConditions>        SubgroupsInPriorityOrder;                          // 0x38(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class RowboatPartInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestWatercraftFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x30 (Full Size[0xb8] - InheritedSize[0x88]
+class WatercraftSpawnData: public ItemSpawnData
+{
+public:
+	char                                                         pad0x20_NXK1M[0x20];                               // 0x88(0x20)
+	class RowboatLiveryPicker*                                   LiveryPicker;                                      // 0xa8(0x8)
+	float                                                        MinDistanceToNearestWatercraftInMetres;            // 0xb0(0x4)
+	char                                                         pad0x4_YTVR5[0x4];                                 // 0xb4(0x4)
+};
+
+
+// Size 0x8 (Full Size[0xc8] - InheritedSize[0xc0]
+class RowingSeatAdaptiveTriggerComponent: public AdaptiveTriggerComponent
+{
+public:
+	struct AdaptiveTriggerEffectMode_Feedback                    BothTriggers_Row;                                  // 0xc0(0x3)
+	char                                                         pad0x5_HOEJ4[0x5];                                 // 0xc3(0x5)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class ItemProxyWatercraftTrackerComponentDataAsset: public DataAsset
+{
+public:
+	TArray<class Class*>                                         WatercraftTypes;                                   // 0x28(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class RowboatInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ScrapeableInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class CheckRowboatLiveriesStatCondition: public StatCondition
+{
+public:
+	char                                                         pad0x20_S38LM[0x20];                               // 0x28(0x20)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class WatercraftServiceInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class RowboatCustomizationLoadoutInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class RowboatLiveryPicker: public Object
+{
+public:
+};
+
+
+// Size 0x1e0 (Full Size[0x4b0] - InheritedSize[0x2d0]
+class RowboatAudioComponent: public SceneComponent
+{
+public:
+	class RowboatAudioComponentParams*                           Params;                                            // 0x2d0(0x8)
+	class Rowboat*                                               ParentRowboat;                                     // 0x2d8(0x8)
+	char                                                         pad0x1d0_IHUSG[0x1d0];                             // 0x2e0(0x1d0)
+};
+
+
+// Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
+class RowboatEntitlementDesc: public EntitlementDesc
+{
+public:
+	struct StringClassReference                                  Rowboat;                                           // 0xc8(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class WatercraftBlueprintFunctionLibrary: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
+// Size 0x18 (Full Size[0xd0] - InheritedSize[0xb8]
+class WatercraftTrackerComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_BG3GM[0x8];                                 // 0xb8(0x8)
+	TArray<class Actor*>                                         CurrentWatercrafts;                                // 0xc0(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
+class RowboatOarsLeftBrakingActivatedNotificationInputId: public NotificationInputId
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
+class RowboatOarsRightForwardNotificationInputId: public NotificationInputId
+{
+public:
+};
+
+
+// Size 0x98 (Full Size[0x150] - InheritedSize[0xb8]
+class ItemProxyWatercraftTrackerComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_SP5RR[0x8];                                 // 0xb8(0x8)
+	class ItemProxyWatercraftTrackerComponentDataAsset*          WatercraftTrackingData;                            // 0xc0(0x8)
+	class Actor*                                                 CurrentWatercraft;                                 // 0xc8(0x8)
+	char                                                         pad0x80_VKJ7A[0x80];                               // 0xd0(0x80)
+};
+
+
+// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
+class RowboatOarsRightBrakingActivatedNotificationInputId: public NotificationInputId
+{
+public:
 };
 
 
@@ -476,13 +468,13 @@ public:
 class Rowboat: public Watercraft
 {
 public:
-	char                                                         pad0x50_HCII1[0x50];                               // 0x728(0x50)
+	char                                                         pad0x50_TWMQ7[0x50];                               // 0x728(0x50)
 	class ChildActorComponent*                                   LeftSideClamberSpot;                               // 0x778(0x8)
 	class ChildActorComponent*                                   RightSideClamberSpot;                              // 0x780(0x8)
 	class ChildActorComponent*                                   ForceSpot;                                         // 0x788(0x8)
 	class ChildActorComponent*                                   Lantern;                                           // 0x790(0x8)
 	bool                                                         LanternRequired;                                   // 0x798(0x1)
-	char                                                         pad0x7_G7J92[0x7];                                 // 0x799(0x7)
+	char                                                         pad0x7_EVBLI[0x7];                                 // 0x799(0x7)
 	class ChildActorComponent*                                   RowingSeat;                                        // 0x7a0(0x8)
 	class ChildActorComponent*                                   StorageSeat;                                       // 0x7a8(0x8)
 	class RowboatCustomizationLoadoutComponent*                  CustomizationLoadoutComponent;                     // 0x7b0(0x8)
@@ -491,7 +483,7 @@ public:
 	class RepairableComponent*                                   RepairableComponent;                               // 0x7c8(0x8)
 	struct Vector                                                WaterExclusionOffset;                              // 0x7d0(0xc)
 	struct CollisionProfileName                                  OverrideMountedCollisionProfileName;               // 0x7dc(0x8)
-	char                                                         pad0x4_JPXFJ[0x4];                                 // 0x7e4(0x4)
+	char                                                         pad0x4_SMHK5[0x4];                                 // 0x7e4(0x4)
 	class TetherCustomisationComponent*                          TetherCustomisationComponent;                      // 0x7e8(0x8)
 	class HealthComponent*                                       HealthComponent;                                   // 0x7f0(0x8)
 	class ActorDamageableComponent*                              ActorDamageableComponent;                          // 0x7f8(0x8)
@@ -510,28 +502,36 @@ public:
 	class ShroudBreakerTrackerComponent*                         ShroudBreakerTrackerComponent;                     // 0x890(0x8)
 	bool                                                         IsBeingLaunched;                                   // 0x898(0x1)
 	bool                                                         IsSinking;                                         // 0x899(0x1)
-	char                                                         pad0x2_DPZ8J[0x2];                                 // 0x89a(0x2)
+	char                                                         pad0x2_5OQMK[0x2];                                 // 0x89a(0x2)
 	float                                                        MaxPushingAngle;                                   // 0x89c(0x4)
 	float                                                        CurrentStrainAmount;                               // 0x8a0(0x4)
 	bool                                                         IsDocked;                                          // 0x8a4(0x1)
-	char                                                         pad0x1_EUIS8[0x1];                                 // 0x8a5(0x1)
+	char                                                         pad0x1_C8C46[0x1];                                 // 0x8a5(0x1)
 	char                                                         CoverCollisionChannel;                             // 0x8a6(0x1)
-	char                                                         pad0x1_HTYW4[0x1];                                 // 0x8a7(0x1)
+	char                                                         pad0x1_CI4OP[0x1];                                 // 0x8a7(0x1)
 	float                                                        UnderCoverCheckInterval;                           // 0x8a8(0x4)
 	float                                                        UnderCoverHeight;                                  // 0x8ac(0x4)
 	TArray<struct Vector>                                        RelativeUnderCoverProbeRoots;                      // 0x8b0(0x10)
 	char                                                         TrackedActorType;                                  // 0x8c0(0x1)
-	char                                                         pad0x3_TPREC[0x3];                                 // 0x8c1(0x3)
+	char                                                         pad0x3_73PBI[0x3];                                 // 0x8c1(0x3)
 	float                                                        LightDamagedRepairTime;                            // 0x8c4(0x4)
 	float                                                        ModerateDamagedRepairTime;                         // 0x8c8(0x4)
 	float                                                        HeavyDamagedRepairTime;                            // 0x8cc(0x4)
 	float                                                        LightDamagedHealthThreshold;                       // 0x8d0(0x4)
 	float                                                        ModerateDamagedHealthThreshold;                    // 0x8d4(0x4)
 	float                                                        HeavyDamagedHealthThreshold;                       // 0x8d8(0x4)
-	char                                                         pad0x4_ETLV4[0x4];                                 // 0x8dc(0x4)
+	char                                                         pad0x4_NQVHB[0x4];                                 // 0x8dc(0x4)
 	struct FString                                               SubjectName;                                       // 0x8e0(0x10)
 	struct FName                                                 PremountCollisionProfileName;                      // 0x8f0(0x8)
-	char                                                         pad0x1f8_0URTK[0x1f8];                             // 0x8f8(0x1f8)
+	char                                                         pad0x1f8_E7OBC[0x1f8];                             // 0x8f8(0x1f8)
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class FixedRowboatLiveryPicker: public RowboatLiveryPicker
+{
+public:
+	char                                                         pad0x20_GXKHZ[0x20];                               // 0x28(0x20)
 };
 
 

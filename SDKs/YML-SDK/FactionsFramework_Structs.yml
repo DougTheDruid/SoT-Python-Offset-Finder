@@ -25,7 +25,7 @@ CrewFactionEntry:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_UPWHA[0x3]
+  - Name: pad0x3_A1J0D[0x3]
     Offset: '0x19'
     Size: '0x3'
     Type: char
@@ -64,7 +64,7 @@ CrewFactionEntryData:
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_882XZ[0x4]
+  - Name: pad0x4_TVIPU[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -76,7 +76,7 @@ CrewFactionEntryData:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_ENTHQ[0x7]
+  - Name: pad0x7_Z0OCG[0x7]
     Offset: '0x39'
     Size: '0x7'
     Type: char
@@ -88,7 +88,7 @@ CrewFactionEntryData:
     Offset: '0x50'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_KQV10[0x4]
+  - Name: pad0x4_905OI[0x4]
     Offset: '0x54'
     Size: '0x4'
     Type: char
@@ -96,7 +96,11 @@ CrewFactionEntryData:
     Offset: '0x58'
     Size: '0x10'
     Type: TArray<bool>
-  ClassSize: '0x68'
+  - Name: CrewsSunkRecord
+    Offset: '0x68'
+    Size: '0x10'
+    Type: TArray<struct Guid>
+  ClassSize: '0x78'
 CrewFactionTelemetryData:
   Attributes:
   - Name: CrewId
@@ -156,7 +160,7 @@ CrewLeavingFaction:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_WN2OA[0x7]
+  - Name: pad0x7_GAGM0[0x7]
     Offset: '0x19'
     Size: '0x7'
     Type: char
@@ -175,7 +179,7 @@ CrewLeftFaction:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_2OEXJ[0x7]
+  - Name: pad0x7_SISN3[0x7]
     Offset: '0x19'
     Size: '0x7'
     Type: char
@@ -246,7 +250,7 @@ FactionLeftTelemetryEvent:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_1BV4D[0x3]
+  - Name: pad0x3_36JKT[0x3]
     Offset: '0x19'
     Size: '0x3'
     Type: char
@@ -312,11 +316,11 @@ FactionWaitTimesData:
     Offset: '0x1'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_U6F68[0x6]
+  - Name: pad0x6_DSS5H[0x6]
     Offset: '0x2'
     Size: '0x6'
     Type: char
-  - Name: pad0x8_H0Q54[0x8]
+  - Name: pad0x8_I22A5[0x8]
     Offset: '0x8'
     Size: '0x8'
     Type: char

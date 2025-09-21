@@ -8,7 +8,7 @@ GameLiveStreamingFunctionLibrary:
   Super: BlueprintFunctionLibrary
 QueryLiveStreamsCallbackProxy:
   Attributes:
-  - Name: pad0x20_22IQ6[0x20]
+  - Name: pad0x20_7C6PP[0x20]
     Offset: '0x28'
     Size: '0x20'
     Type: char

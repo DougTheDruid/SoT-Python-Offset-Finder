@@ -1,5 +1,5 @@
 {
-  "UndeployableDeployedTelemetryEvent": {
+  "DeployableDeployedTelemetryEvent": {
     "ClassSize": "0x1c",
     "Attributes": [
       {
@@ -13,23 +13,6 @@
         "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x10"
-      }
-    ]
-  },
-  "FailedDeploymentTelemetryEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "DeployableID",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x14"
       }
     ]
   },
@@ -127,7 +110,7 @@
       }
     ]
   },
-  "DeployableDeployedTelemetryEvent": {
+  "UndeployableDeployedTelemetryEvent": {
     "ClassSize": "0x1c",
     "Attributes": [
       {
@@ -141,6 +124,23 @@
         "Type": "struct Vector",
         "Size": "0xc",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "FailedDeploymentTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "DeployableID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x14"
       }
     ]
   },

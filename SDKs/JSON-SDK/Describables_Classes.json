@@ -6,7 +6,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x8_D7E9G[0x8]",
+        "Name": "pad0x8_MWRG3[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x140"
@@ -18,7 +18,7 @@
         "Offset": "0x148"
       },
       {
-        "Name": "pad0x7_MYF3S[0x7]",
+        "Name": "pad0x7_17ZLY[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x149"
@@ -36,7 +36,7 @@
         "Offset": "0x188"
       },
       {
-        "Name": "pad0x17_N65L5[0x17]",
+        "Name": "pad0x17_X0SXU[0x17]",
         "Type": "char",
         "Size": "0x17",
         "Offset": "0x189"

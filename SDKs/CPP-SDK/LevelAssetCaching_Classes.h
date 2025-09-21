@@ -10,9 +10,9 @@
 class RegionalAssetCache: public Object
 {
 public:
-	char                                                         pad0x10_Z9PIP[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_B4JEZ[0x10];                               // 0x28(0x10)
 	class RegionalAssetListDataAsset*                            CurrentListAsset;                                  // 0x38(0x8)
-	char                                                         pad0x98_AE1TG[0x98];                               // 0x40(0x98)
+	char                                                         pad0x98_G9B6U[0x98];                               // 0x40(0x98)
 };
 
 
@@ -27,25 +27,17 @@ public:
 class LevelAssetCachingService: public Object
 {
 public:
-	char                                                         pad0x18_09VSB[0x18];                               // 0x28(0x18)
+	char                                                         pad0x18_VWNLG[0x18];                               // 0x28(0x18)
 	struct FName                                                 CurrentRegion;                                     // 0x40(0x8)
-	char                                                         pad0x28_ZKVAF[0x28];                               // 0x48(0x28)
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class RegionLookupSeaId: public Object
-{
-public:
-	char                                                         pad0x20_40MBU[0x20];                               // 0x28(0x20)
+	char                                                         pad0x28_D2GP4[0x28];                               // 0x48(0x28)
 };
 
 
 // Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
-class RegionalAssetListSetupDataAsset: public DataAsset
+class RegionalAssetListWorldSetupDataAsset: public DataAsset
 {
 public:
-	char                                                         pad0x50_3750Q[0x50];                               // 0x28(0x50)
+	char                                                         pad0x50_0RPPW[0x50];                               // 0x28(0x50)
 };
 
 
@@ -57,6 +49,14 @@ public:
 };
 
 
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class RegionLookupSeaId: public Object
+{
+public:
+	char                                                         pad0x20_KN0GA[0x20];                               // 0x28(0x20)
+};
+
+
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class RegionalAssetCacheInterface: public Interface
 {
@@ -64,21 +64,21 @@ public:
 };
 
 
-// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
-class RegionalAssetListWorldSetupDataAsset: public DataAsset
-{
-public:
-	char                                                         pad0x50_SZU9S[0x50];                               // 0x28(0x50)
-};
-
-
 // Size 0x88 (Full Size[0xb0] - InheritedSize[0x28]
 class RegionLookupGeneratedGrid: public Object
 {
 public:
-	char                                                         pad0x8_OPD0I[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_5TB9Q[0x8];                                 // 0x28(0x8)
 	struct WorldRegionSetup                                      WorldSetup;                                        // 0x30(0x28)
-	char                                                         pad0x58_WH0OR[0x58];                               // 0x58(0x58)
+	char                                                         pad0x58_EOXUE[0x58];                               // 0x58(0x58)
+};
+
+
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
+class RegionalAssetListSetupDataAsset: public DataAsset
+{
+public:
+	char                                                         pad0x50_WMH09[0x50];                               // 0x28(0x50)
 };
 
 

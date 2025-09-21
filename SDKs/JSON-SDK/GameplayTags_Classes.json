@@ -1,44 +1,4 @@
 {
-  "EditableGameplayTagQueryExpression": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "GameplayTagsManager": {
-    "Super": "Object",
-    "FullSize": "0x170",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x148",
-    "Attributes": [
-      {
-        "Name": "pad0x118_3YG78[0x118]",
-        "Type": "char",
-        "Size": "0x118",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "GameplayTagTables",
-        "Type": "TArray<class DataTable*>",
-        "Size": "0x10",
-        "Offset": "0x140"
-      },
-      {
-        "Name": "pad0x20_N1CKA[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x150"
-      }
-    ]
-  },
-  "GameplayTagAssetInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "GameplayTagsSettings": {
     "Super": "Object",
     "FullSize": "0x38",
@@ -53,13 +13,6 @@
       }
     ]
   },
-  "BlueprintGameplayTagLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "EditableGameplayTagQuery": {
     "Super": "Object",
     "FullSize": "0x98",
@@ -73,7 +26,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x10_Q9WOE[0x10]",
+        "Name": "pad0x10_W58M0[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x38"
@@ -89,6 +42,67 @@
         "Type": "struct GameplayTagQuery",
         "Size": "0x48",
         "Offset": "0x50"
+      }
+    ]
+  },
+  "GameplayTagAssetInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GameplayTagsManager": {
+    "Super": "Object",
+    "FullSize": "0x170",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x148",
+    "Attributes": [
+      {
+        "Name": "pad0x118_33M7C[0x118]",
+        "Type": "char",
+        "Size": "0x118",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "GameplayTagTables",
+        "Type": "TArray<class DataTable*>",
+        "Size": "0x10",
+        "Offset": "0x140"
+      },
+      {
+        "Name": "pad0x20_5E2JM[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x150"
+      }
+    ]
+  },
+  "EditableGameplayTagQueryExpression": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BlueprintGameplayTagLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EditableGameplayTagQueryExpression_AnyExprMatch": {
+    "Super": "EditableGameplayTagQueryExpression",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Expressions",
+        "Type": "TArray<class EditableGameplayTagQueryExpression*>",
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },
@@ -134,20 +148,6 @@
       }
     ]
   },
-  "EditableGameplayTagQueryExpression_NoTagsMatch": {
-    "Super": "EditableGameplayTagQueryExpression",
-    "FullSize": "0x50",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "Tags",
-        "Type": "struct GameplayTagContainer",
-        "Size": "0x28",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "EditableGameplayTagQueryExpression_AllExprMatch": {
     "Super": "EditableGameplayTagQueryExpression",
     "FullSize": "0x38",
@@ -162,16 +162,16 @@
       }
     ]
   },
-  "EditableGameplayTagQueryExpression_AnyExprMatch": {
+  "EditableGameplayTagQueryExpression_NoTagsMatch": {
     "Super": "EditableGameplayTagQueryExpression",
-    "FullSize": "0x38",
+    "FullSize": "0x50",
     "InheritedSize": "0x28",
-    "ClassSize": "0x10",
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "Expressions",
-        "Type": "TArray<class EditableGameplayTagQueryExpression*>",
-        "Size": "0x10",
+        "Name": "Tags",
+        "Type": "struct GameplayTagContainer",
+        "Size": "0x28",
         "Offset": "0x28"
       }
     ]

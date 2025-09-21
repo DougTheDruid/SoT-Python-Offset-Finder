@@ -7,7 +7,7 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CharacterMeshBakeFunctionLibrary: public BlueprintFunctionLibrary
+class WardrobeExcludeDataAsset: public DataAsset
 {
 public:
 };
@@ -21,112 +21,10 @@ public:
 
 
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class MaterialReferencesDataAsset: public DataAsset
-{
-public:
-	TArray<struct MaterialReferencesEntry>                       MaterialReferences;                                // 0x28(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WardrobeFunctionLibrary: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CharacterMeshBakeTestFunctionLibrary: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
-// Size 0x10 (Full Size[0x150] - InheritedSize[0x140]
-class ColorTexture: public Texture
-{
-public:
-	struct LinearColor                                           Color;                                             // 0x140(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class PirateGeneratorMaterials: public Object
 {
 public:
 	TArray<class MaterialInterface*>                             Materials;                                         // 0x28(0x10)
-};
-
-
-// Size 0xb0 (Full Size[0xd8] - InheritedSize[0x28]
-class WardrobeDataAsset: public DataAsset
-{
-public:
-	char                                                         pad0xa0_GUQQI[0xa0];                               // 0x28(0xa0)
-	TArray<struct MeshPatchEntry>                                AssetMap;                                          // 0xc8(0x10)
-};
-
-
-// Size 0xe0 (Full Size[0x228] - InheritedSize[0x148]
-class TextureSwitch: public TextureProxy
-{
-public:
-	char                                                         pad0x80_SEWFZ[0x80];                               // 0x148(0x80)
-	bool                                                         bDuplicated;                                       // 0x1c8(0x1)
-	char                                                         pad0x7_1YAJE[0x7];                                 // 0x1c9(0x7)
-	struct TextureSwitchParameters                               DefaultParameters;                                 // 0x1d0(0x58)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class AnimationSwitchDataAsset: public DataAsset
-{
-public:
-	float                                                        Threshold;                                         // 0x28(0x4)
-	char                                                         pad0x4_BPI7D[0x4];                                 // 0x2c(0x4)
-	TArray<struct AnimationSwitchEntry>                          Entries;                                           // 0x30(0x10)
-};
-
-
-// Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
-class CharacterMeshBakeSpecification: public Object
-{
-public:
-	bool                                                         StripTopLOD;                                       // 0x28(0x1)
-	char                                                         pad0x7_OOFSP[0x7];                                 // 0x29(0x7)
-	class SkeletalMesh*                                          CharacterMesh;                                     // 0x30(0x8)
-	class SkeletalMesh*                                          BaseMeshReferenceSkeleton;                         // 0x38(0x8)
-	class SkeletonsDataAsset*                                    SourceSkeletons;                                   // 0x40(0x8)
-	TArray<struct Name>                                          SourceSkeletonNames;                               // 0x48(0x10)
-	TArray<float>                                                SourceSkeletonWeights;                             // 0x58(0x10)
-	TArray<struct BlendedSubMeshSpecification>                   BlendedSubMeshes;                                  // 0x68(0x10)
-	TArray<class SkeletalMesh*>                                  UnblendedSubMeshes;                                // 0x78(0x10)
-	TArray<struct IPGBlendShape>                                 BlendShapes;                                       // 0x88(0x10)
-};
-
-
-// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
-class SkeletonsDataAsset: public DataAsset
-{
-public:
-	char                                                         pad0x50_8T1FG[0x50];                               // 0x28(0x50)
-};
-
-
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class WardrobeOutfitDataAsset: public DataAsset
-{
-public:
-	TArray<struct Name>                                          FemaleWardrobeItems;                               // 0x28(0x10)
-	TArray<struct Name>                                          MaleWardrobeItems;                                 // 0x38(0x10)
-	TArray<struct WardrobeOutfitCategoryBias>                    BiasPerCategory;                                   // 0x48(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WardrobeExcludeDataAsset: public DataAsset
-{
-public:
 };
 
 
@@ -138,16 +36,29 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class FileAccessFunctionLibrary: public BlueprintFunctionLibrary
+class WardrobeFunctionLibrary: public BlueprintFunctionLibrary
 {
 public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class PirateGeneratorFunctionLibrary: public BlueprintFunctionLibrary
+// Size 0xe0 (Full Size[0x228] - InheritedSize[0x148]
+class TextureSwitch: public TextureProxy
 {
 public:
+	char                                                         pad0x80_5ZG2I[0x80];                               // 0x148(0x80)
+	bool                                                         bDuplicated;                                       // 0x1c8(0x1)
+	char                                                         pad0x7_LYK2S[0x7];                                 // 0x1c9(0x7)
+	struct TextureSwitchParameters                               DefaultParameters;                                 // 0x1d0(0x58)
+};
+
+
+// Size 0xb0 (Full Size[0xd8] - InheritedSize[0x28]
+class WardrobeDataAsset: public DataAsset
+{
+public:
+	TArray<struct MeshPatchEntry>                                AssetMap;                                          // 0x28(0x10)
+	char                                                         pad0xa0_Y4HJN[0xa0];                               // 0x38(0xa0)
 };
 
 
@@ -172,29 +83,96 @@ public:
 	TArray<float>                                                LODHysteresis;                                     // 0x110(0x10)
 	TArray<struct StringAssetReference>                          ExcludeDataAssets;                                 // 0x120(0x10)
 	int                                                          DefaultPirateGenerationSeed;                       // 0x130(0x4)
-	char                                                         pad0x4_4UNAM[0x4];                                 // 0x134(0x4)
+	char                                                         pad0x4_RA7LO[0x4];                                 // 0x134(0x4)
 };
 
 
-// Size 0x20 (Full Size[0x248] - InheritedSize[0x228]
-class TextureSwitchByItem: public TextureSwitch
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class FileAccessFunctionLibrary: public BlueprintFunctionLibrary
 {
 public:
-	struct StringAssetReference                                  FallbackTexture;                                   // 0x228(0x10)
-	TArray<struct TextureSwitchItemEntry>                        Entries;                                           // 0x238(0x10)
 };
 
 
-// Size 0x38 (Full Size[0x260] - InheritedSize[0x228]
-class TextureSwitchBySeed: public TextureSwitch
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CharacterMeshBakeTestFunctionLibrary: public BlueprintFunctionLibrary
 {
 public:
-	struct FName                                                 HashSource;                                        // 0x228(0x8)
-	float                                                        FallbackProbability;                               // 0x230(0x4)
-	struct FName                                                 FallbackReferenceName;                             // 0x234(0x8)
-	char                                                         pad0x4_AN1X4[0x4];                                 // 0x23c(0x4)
-	struct StringAssetReference                                  FallbackTexture;                                   // 0x240(0x10)
-	TArray<struct TextureSwitchSeedEntry>                        Entries;                                           // 0x250(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x150] - InheritedSize[0x140]
+class ColorTexture: public Texture
+{
+public:
+	struct LinearColor                                           Color;                                             // 0x140(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class MaterialReferencesDataAsset: public DataAsset
+{
+public:
+	TArray<struct MaterialReferencesEntry>                       MaterialReferences;                                // 0x28(0x10)
+};
+
+
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
+class SkeletonsDataAsset: public DataAsset
+{
+public:
+	char                                                         pad0x50_I9ZH8[0x50];                               // 0x28(0x50)
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class AnimationSwitchDataAsset: public DataAsset
+{
+public:
+	float                                                        Threshold;                                         // 0x28(0x4)
+	char                                                         pad0x4_8I4WV[0x4];                                 // 0x2c(0x4)
+	TArray<struct AnimationSwitchEntry>                          Entries;                                           // 0x30(0x10)
+};
+
+
+// Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
+class CharacterMeshBakeSpecification: public Object
+{
+public:
+	bool                                                         StripTopLOD;                                       // 0x28(0x1)
+	char                                                         pad0x7_A12E6[0x7];                                 // 0x29(0x7)
+	class SkeletalMesh*                                          CharacterMesh;                                     // 0x30(0x8)
+	class SkeletalMesh*                                          BaseMeshReferenceSkeleton;                         // 0x38(0x8)
+	class SkeletonsDataAsset*                                    SourceSkeletons;                                   // 0x40(0x8)
+	TArray<struct Name>                                          SourceSkeletonNames;                               // 0x48(0x10)
+	TArray<float>                                                SourceSkeletonWeights;                             // 0x58(0x10)
+	TArray<struct BlendedSubMeshSpecification>                   BlendedSubMeshes;                                  // 0x68(0x10)
+	TArray<class SkeletalMesh*>                                  UnblendedSubMeshes;                                // 0x78(0x10)
+	TArray<struct IPGBlendShape>                                 BlendShapes;                                       // 0x88(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class PirateGeneratorFunctionLibrary: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CharacterMeshBakeFunctionLibrary: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class WardrobeOutfitDataAsset: public DataAsset
+{
+public:
+	TArray<struct Name>                                          FemaleWardrobeItems;                               // 0x28(0x10)
+	TArray<struct Name>                                          MaleWardrobeItems;                                 // 0x38(0x10)
+	TArray<struct WardrobeOutfitCategoryBias>                    BiasPerCategory;                                   // 0x48(0x10)
 };
 
 
@@ -207,10 +185,10 @@ public:
 
 
 // Size 0x10 (Full Size[0x238] - InheritedSize[0x228]
-class TextureSwitchByEthnicity: public TextureSwitch
+class TextureSwitchByGender: public TextureSwitch
 {
 public:
-	TArray<struct TextureSwitchEthnicityEntry>                   Entries;                                           // 0x228(0x10)
+	TArray<struct TextureSwitchGenderEntry>                      Entries;                                           // 0x228(0x10)
 };
 
 
@@ -223,11 +201,33 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x238] - InheritedSize[0x228]
-class TextureSwitchByGender: public TextureSwitch
+// Size 0x20 (Full Size[0x248] - InheritedSize[0x228]
+class TextureSwitchByItem: public TextureSwitch
 {
 public:
-	TArray<struct TextureSwitchGenderEntry>                      Entries;                                           // 0x228(0x10)
+	struct StringAssetReference                                  FallbackTexture;                                   // 0x228(0x10)
+	TArray<struct TextureSwitchItemEntry>                        Entries;                                           // 0x238(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x238] - InheritedSize[0x228]
+class TextureSwitchByEthnicity: public TextureSwitch
+{
+public:
+	TArray<struct TextureSwitchEthnicityEntry>                   Entries;                                           // 0x228(0x10)
+};
+
+
+// Size 0x38 (Full Size[0x260] - InheritedSize[0x228]
+class TextureSwitchBySeed: public TextureSwitch
+{
+public:
+	struct FName                                                 HashSource;                                        // 0x228(0x8)
+	float                                                        FallbackProbability;                               // 0x230(0x4)
+	struct FName                                                 FallbackReferenceName;                             // 0x234(0x8)
+	char                                                         pad0x4_YSP9R[0x4];                                 // 0x23c(0x4)
+	struct StringAssetReference                                  FallbackTexture;                                   // 0x240(0x10)
+	TArray<struct TextureSwitchSeedEntry>                        Entries;                                           // 0x250(0x10)
 };
 
 

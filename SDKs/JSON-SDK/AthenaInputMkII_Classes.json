@@ -1,5 +1,5 @@
 {
-  "ClampedFreelookYAnalogInputId": {
+  "ClampedFreelookMouseXInputId": {
     "Super": "AnalogInputId",
     "FullSize": "0x38",
     "InheritedSize": "0x38",
@@ -13,7 +13,7 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ClampedFreelookMouseXInputId": {
+  "ClampedFreelookYAnalogInputId": {
     "Super": "AnalogInputId",
     "FullSize": "0x38",
     "InheritedSize": "0x38",
@@ -27,7 +27,7 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x20_SH536[0x20]",
+        "Name": "pad0x20_Z74DP[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x140"
@@ -48,7 +48,7 @@
     "ClassSize": "0x70",
     "Attributes": [
       {
-        "Name": "pad0x70_D2NEN[0x70]",
+        "Name": "pad0x70_RJLQB[0x70]",
         "Type": "char",
         "Size": "0x70",
         "Offset": "0x160"
@@ -62,24 +62,10 @@
     "ClassSize": "0x128",
     "Attributes": [
       {
-        "Name": "pad0x128_FWDNF[0x128]",
+        "Name": "pad0x128_8WNX5[0x128]",
         "Type": "char",
         "Size": "0x128",
         "Offset": "0x160"
-      }
-    ]
-  },
-  "AthenaCharacterBaseInputComponentWithInterference": {
-    "Super": "AthenaCharacterBaseInputComponent",
-    "FullSize": "0x290",
-    "InheritedSize": "0x288",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_3AFKU[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x288"
       }
     ]
   },
@@ -92,6 +78,20 @@
       {
         "Name": "TargetWieldable",
         "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x288"
+      }
+    ]
+  },
+  "AthenaCharacterBaseInputComponentWithInterference": {
+    "Super": "AthenaCharacterBaseInputComponent",
+    "FullSize": "0x290",
+    "InheritedSize": "0x288",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_QCD8L[0x8]",
+        "Type": "char",
         "Size": "0x8",
         "Offset": "0x288"
       }

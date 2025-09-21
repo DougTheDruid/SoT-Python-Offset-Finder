@@ -9,7 +9,7 @@ class MoviePlayerSettings: public Object
 public:
 	bool                                                         bWaitForMoviesToComplete;                          // 0x28(0x1)
 	bool                                                         bMoviesAreSkippable;                               // 0x29(0x1)
-	char                                                         pad0x6_8OEKW[0x6];                                 // 0x2a(0x6)
+	char                                                         pad0x6_TCRWV[0x6];                                 // 0x2a(0x6)
 	TArray<String>                                               StartupMovies;                                     // 0x30(0x10)
 };
 

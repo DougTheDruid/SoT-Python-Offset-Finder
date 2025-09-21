@@ -12,19 +12,13 @@
         "Offset": "0x3a8"
       },
       {
-        "Name": "pad0x1223d150_INHIY[0x1223d150]",
-        "Type": "char",
-        "Size": "0x1223d150",
-        "Offset": "0x3b0"
-      },
-      {
         "Name": "IsPlaying",
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x3b0"
       },
       {
-        "Name": "pad0x7_WHU5A[0x7]",
+        "Name": "pad0x7_E7CHO[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x3b1"

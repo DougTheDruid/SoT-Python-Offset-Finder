@@ -1,34 +1,11 @@
 {
-  "SeasonsChatNotification": {
-    "ClassSize": "0x60",
+  "DisableMoreButtonEvent": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "IconUrl",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Message",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Audio",
-        "Type": "struct GenericPopupAudioDescriptor",
-        "Size": "0x40",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "SeasonProgressionUITelemetryFragmentInput": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_TTYF6[0x8]",
-        "Type": "char",
-        "Size": "0x8",
+        "Name": "MoreButtonSource",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x0"
       }
     ]
@@ -56,56 +33,26 @@
       }
     ]
   },
-  "SeasonNotificationContent": {
-    "ClassSize": "0x68",
+  "NavigationDesc": {
+    "ClassSize": "0x14",
     "Attributes": [
       {
-        "Name": "GlowIcon",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
+        "Name": "Action",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x0"
       },
       {
-        "Name": "Icon",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "SfxEventName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "EventName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "SwitchName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "SwitchValue",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "ToastHoldDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "pad0x4_9PQUB[0x4]",
+        "Name": "pad0x3_DCWIW[0x3]",
         "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x64"
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "Id",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x4"
       }
     ]
   },
@@ -125,115 +72,21 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_T8JTS[0x4]",
+        "Name": "pad0x4_MHSF5[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
       }
     ]
   },
-  "NavigationDesc": {
-    "ClassSize": "0x14",
+  "SeasonProgressionUITelemetryFragmentInput": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "Action",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x3_OSHBW[0x3]",
+        "Name": "pad0x8_RW6NX[0x8]",
         "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "Id",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "SeasonTextPopupAsset": {
-    "ClassSize": "0xa0",
-    "Attributes": [
-      {
-        "Name": "GlowIcon",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
+        "Size": "0x8",
         "Offset": "0x0"
-      },
-      {
-        "Name": "Icon",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Message",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "ToastSfxEventName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "ToastEventName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x68"
-      },
-      {
-        "Name": "ToastSwitchName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "ToastSwitchValue",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "ToastHoldDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "pad0x4_871BN[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x9c"
-      }
-    ]
-  },
-  "OpenSeasonsMenuEvent": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "NavigationAction",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x3_FKH4U[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "Id",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x4"
       }
     ]
   },
@@ -283,7 +136,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x4_YUXLA[0x4]",
+        "Name": "pad0x4_W9ZYJ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x64"
@@ -294,21 +147,56 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_9Q5LS[0x1]",
+        "Name": "pad0x1_QXW15[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
       }
     ]
   },
-  "DisableMoreButtonEvent": {
-    "ClassSize": "0x1",
+  "OpenSeasonsMenuEvent": {
+    "ClassSize": "0x14",
     "Attributes": [
       {
-        "Name": "MoreButtonSource",
+        "Name": "NavigationAction",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_3JVX1[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "Id",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "SeasonsChatNotification": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "IconUrl",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Message",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Audio",
+        "Type": "struct GenericPopupAudioDescriptor",
+        "Size": "0x40",
+        "Offset": "0x20"
       }
     ]
   },
@@ -370,10 +258,122 @@
         "Offset": "0x78"
       },
       {
-        "Name": "pad0x4_AIN04[0x4]",
+        "Name": "pad0x4_RWJ9K[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x7c"
+      }
+    ]
+  },
+  "SeasonNotificationContent": {
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Name": "GlowIcon",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Icon",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "SfxEventName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "EventName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "SwitchName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "SwitchValue",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "ToastHoldDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x4_EYHXJ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x64"
+      }
+    ]
+  },
+  "SeasonTextPopupAsset": {
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Name": "GlowIcon",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Icon",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Message",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "ToastSfxEventName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "ToastEventName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "ToastSwitchName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "ToastSwitchValue",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "ToastHoldDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x4_9S1WB[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x9c"
       }
     ]
   },
@@ -411,7 +411,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_744QJ[0x4]",
+        "Name": "pad0x4_U1TWI[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c"
@@ -424,26 +424,37 @@
       }
     ]
   },
-  "EnableMoreButtonEvent": {
+  "SeasonsChatNotificationEvent": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "SeasonsChatNotification",
+        "Type": "struct SeasonsChatNotification",
+        "Size": "0x60",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SeasonProgressionUITelemetryFragment": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "MoreButtonSource",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "ReceivedEventsData",
+        "Type": "TArray<struct SeasonProgressionUIEventTypeTelemetryFragment>",
+        "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_QX22I[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1"
+        "Name": "TotalNumReceivedEvents",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
       },
       {
-        "Name": "Navigation",
-        "Type": "struct NavigationDesc",
-        "Size": "0x14",
-        "Offset": "0x4"
+        "Name": "pad0x4_344G4[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
       }
     ]
   },
@@ -499,44 +510,10 @@
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x4_7IJ9X[0x4]",
+        "Name": "pad0x4_G2DM4[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x9c"
-      }
-    ]
-  },
-  "SeasonsChatNotificationEvent": {
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "SeasonsChatNotification",
-        "Type": "struct SeasonsChatNotification",
-        "Size": "0x60",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SeasonProgressionUITelemetryFragment": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "ReceivedEventsData",
-        "Type": "TArray<struct SeasonProgressionUIEventTypeTelemetryFragment>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TotalNumReceivedEvents",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x4_PM0MZ[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x14"
       }
     ]
   },
@@ -544,7 +521,7 @@
     "ClassSize": "0xa0",
     "Attributes": [
       {
-        "Name": "pad0x18_TJQB8[0x18]",
+        "Name": "pad0x18_2466N[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"
@@ -557,11 +534,34 @@
       }
     ]
   },
+  "EnableMoreButtonEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "MoreButtonSource",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_VOPXD[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "Navigation",
+        "Type": "struct NavigationDesc",
+        "Size": "0x14",
+        "Offset": "0x4"
+      }
+    ]
+  },
   "SeasonsChatNotificationNetworkEvent": {
     "ClassSize": "0x78",
     "Attributes": [
       {
-        "Name": "pad0x18_QX07J[0x18]",
+        "Name": "pad0x18_V4C3G[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"

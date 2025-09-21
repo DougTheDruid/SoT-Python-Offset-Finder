@@ -1,38 +1,17 @@
 {
-  "StrProperty": {
+  "BoolProperty": {
     "Super": "Property",
-    "FullSize": "0x70",
+    "FullSize": "0x78",
     "InheritedSize": "0x70",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ScriptStruct": {
-    "Super": "Struct",
-    "FullSize": "0x98",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x10",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x10_LUM0T[0x10]",
+        "Name": "pad0x8_G2CIG[0x8]",
         "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x88"
+        "Size": "0x8",
+        "Offset": "0x70"
       }
     ]
-  },
-  "NumericProperty": {
-    "Super": "Property",
-    "FullSize": "0x70",
-    "InheritedSize": "0x70",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "DelegateFunction": {
-    "Super": "Function",
-    "FullSize": "0xb8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "NameProperty": {
     "Super": "Property",
@@ -41,72 +20,16 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "BoolProperty": {
-    "Super": "Property",
-    "FullSize": "0x78",
-    "InheritedSize": "0x70",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_13T7J[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x70"
-      }
-    ]
-  },
-  "ObjectRedirector": {
+  "LinkerPlaceholderExportObject": {
     "Super": "Object",
-    "FullSize": "0x30",
+    "FullSize": "0x88",
     "InheritedSize": "0x28",
-    "ClassSize": "0x8",
+    "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x8_JCOUL[0x8]",
+        "Name": "pad0x60_YOHNV[0x60]",
         "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "Package": {
-    "Super": "Object",
-    "FullSize": "0x80",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "pad0x58_MZATE[0x58]",
-        "Type": "char",
-        "Size": "0x58",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "GCObjectReferencer": {
-    "Super": "Object",
-    "FullSize": "0x60",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "pad0x38_S2OG4[0x38]",
-        "Type": "char",
-        "Size": "0x38",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "PackageMap": {
-    "Super": "Object",
-    "FullSize": "0x50",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x28_ZMLM2[0x28]",
-        "Type": "char",
-        "Size": "0x28",
+        "Size": "0x60",
         "Offset": "0x28"
       }
     ]
@@ -118,84 +41,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_CDFBZ[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x70"
-      }
-    ]
-  },
-  "MulticastDelegateProperty": {
-    "Super": "Property",
-    "FullSize": "0x78",
-    "InheritedSize": "0x70",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_ZKO25[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x70"
-      }
-    ]
-  },
-  "Interface": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TextBuffer": {
-    "Super": "Object",
-    "FullSize": "0x50",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x28_B2CUN[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "MapProperty": {
-    "Super": "Property",
-    "FullSize": "0xa8",
-    "InheritedSize": "0x70",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "pad0x38_ZTCVU[0x38]",
-        "Type": "char",
-        "Size": "0x38",
-        "Offset": "0x70"
-      }
-    ]
-  },
-  "LinkerPlaceholderClass": {
-    "Super": "Class",
-    "FullSize": "0x310",
-    "InheritedSize": "0x1c0",
-    "ClassSize": "0x150",
-    "Attributes": [
-      {
-        "Name": "pad0x150_AC6I1[0x150]",
-        "Type": "char",
-        "Size": "0x150",
-        "Offset": "0x1c0"
-      }
-    ]
-  },
-  "InterfaceProperty": {
-    "Super": "Property",
-    "FullSize": "0x78",
-    "InheritedSize": "0x70",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_VGDCD[0x8]",
+        "Name": "pad0x8_PH3V7[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x70"
@@ -209,9 +55,184 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x50_6GNMQ[0x50]",
+        "Name": "pad0x50_E0U3W[0x50]",
         "Type": "char",
         "Size": "0x50",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "LinkerPlaceholderClass": {
+    "Super": "Class",
+    "FullSize": "0x310",
+    "InheritedSize": "0x1c0",
+    "ClassSize": "0x150",
+    "Attributes": [
+      {
+        "Name": "pad0x150_JBF1P[0x150]",
+        "Type": "char",
+        "Size": "0x150",
+        "Offset": "0x1c0"
+      }
+    ]
+  },
+  "LinkerPlaceholderFunction": {
+    "Super": "Function",
+    "FullSize": "0x208",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x150",
+    "Attributes": [
+      {
+        "Name": "pad0x150_OB6R8[0x150]",
+        "Type": "char",
+        "Size": "0x150",
+        "Offset": "0xb8"
+      }
+    ]
+  },
+  "MapProperty": {
+    "Super": "Property",
+    "FullSize": "0xa8",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "pad0x38_R2H1E[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x70"
+      }
+    ]
+  },
+  "Default__Class": {
+    "Super": "None",
+    "FullSize": "0x0",
+    "InheritedSize": "0x0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Enum": {
+    "Super": "Field",
+    "FullSize": "0x58",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x28_0ITBH[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "GCObjectReferencer": {
+    "Super": "Object",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "pad0x38_PRBTH[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "DelegateFunction": {
+    "Super": "Function",
+    "FullSize": "0xb8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ScriptStruct": {
+    "Super": "Struct",
+    "FullSize": "0x98",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_IPB94[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x88"
+      }
+    ]
+  },
+  "Interface": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ObjectRedirector": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_LBF7N[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "InterfaceProperty": {
+    "Super": "Property",
+    "FullSize": "0x78",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_HZEAD[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x70"
+      }
+    ]
+  },
+  "ArrayProperty": {
+    "Super": "Property",
+    "FullSize": "0x78",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_1RHXI[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x70"
+      }
+    ]
+  },
+  "Package": {
+    "Super": "Object",
+    "FullSize": "0x80",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "pad0x58_UZR7X[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "TextBuffer": {
+    "Super": "Object",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x28_F77G4[0x28]",
+        "Type": "char",
+        "Size": "0x28",
         "Offset": "0x28"
       }
     ]
@@ -223,12 +244,19 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "Default__Class": {
-    "Super": "None",
-    "FullSize": "0x0",
-    "InheritedSize": "0x0",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "DelegateProperty": {
+    "Super": "Property",
+    "FullSize": "0x78",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_8AN42[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x70"
+      }
+    ]
   },
   "ObjectPropertyBase": {
     "Super": "Property",
@@ -237,94 +265,80 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_ECXH3[0x8]",
+        "Name": "pad0x8_L37F8[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x70"
       }
     ]
   },
-  "DelegateProperty": {
+  "NumericProperty": {
     "Super": "Property",
-    "FullSize": "0x78",
-    "InheritedSize": "0x70",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_V24HB[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x70"
-      }
-    ]
-  },
-  "LinkerPlaceholderFunction": {
-    "Super": "Function",
-    "FullSize": "0x208",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x150",
-    "Attributes": [
-      {
-        "Name": "pad0x150_M3C7I[0x150]",
-        "Type": "char",
-        "Size": "0x150",
-        "Offset": "0xb8"
-      }
-    ]
-  },
-  "ArrayProperty": {
-    "Super": "Property",
-    "FullSize": "0x78",
-    "InheritedSize": "0x70",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_QONQ4[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x70"
-      }
-    ]
-  },
-  "Enum": {
-    "Super": "Field",
-    "FullSize": "0x58",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x28_4084W[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "LinkerPlaceholderExportObject": {
-    "Super": "Object",
-    "FullSize": "0x88",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "pad0x60_KABQV[0x60]",
-        "Type": "char",
-        "Size": "0x60",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "DoubleProperty": {
-    "Super": "NumericProperty",
     "FullSize": "0x70",
     "InheritedSize": "0x70",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "Int8Property": {
-    "Super": "NumericProperty",
+  "PackageMap": {
+    "Super": "Object",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x28_KAL15[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "StrProperty": {
+    "Super": "Property",
     "FullSize": "0x70",
     "InheritedSize": "0x70",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MulticastDelegateProperty": {
+    "Super": "Property",
+    "FullSize": "0x78",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_Y4WLO[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x70"
+      }
+    ]
+  },
+  "SparseDelegateFunction": {
+    "Super": "DelegateFunction",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_EWHF9[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0xb8"
+      }
+    ]
+  },
+  "LazyObjectProperty": {
+    "Super": "ObjectPropertyBase",
+    "FullSize": "0x78",
+    "InheritedSize": "0x78",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AssetObjectProperty": {
+    "Super": "ObjectPropertyBase",
+    "FullSize": "0x78",
+    "InheritedSize": "0x78",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -342,27 +356,6 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ByteProperty": {
-    "Super": "NumericProperty",
-    "FullSize": "0x78",
-    "InheritedSize": "0x70",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_KRQJQ[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x70"
-      }
-    ]
-  },
-  "UInt16Property": {
-    "Super": "NumericProperty",
-    "FullSize": "0x70",
-    "InheritedSize": "0x70",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "UInt32Property": {
     "Super": "NumericProperty",
     "FullSize": "0x70",
@@ -370,10 +363,24 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "AssetObjectProperty": {
-    "Super": "ObjectPropertyBase",
-    "FullSize": "0x78",
-    "InheritedSize": "0x78",
+  "Int64Property": {
+    "Super": "NumericProperty",
+    "FullSize": "0x70",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Int8Property": {
+    "Super": "NumericProperty",
+    "FullSize": "0x70",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DoubleProperty": {
+    "Super": "NumericProperty",
+    "FullSize": "0x70",
+    "InheritedSize": "0x70",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -391,34 +398,6 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "SparseDelegateFunction": {
-    "Super": "DelegateFunction",
-    "FullSize": "0xc8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_2RLAY[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0xb8"
-      }
-    ]
-  },
-  "WeakObjectProperty": {
-    "Super": "ObjectPropertyBase",
-    "FullSize": "0x78",
-    "InheritedSize": "0x78",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "Int64Property": {
-    "Super": "NumericProperty",
-    "FullSize": "0x70",
-    "InheritedSize": "0x70",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "MulticastInlineDelegateProperty": {
     "Super": "MulticastDelegateProperty",
     "FullSize": "0x78",
@@ -426,12 +405,19 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "LazyObjectProperty": {
-    "Super": "ObjectPropertyBase",
+  "ByteProperty": {
+    "Super": "NumericProperty",
     "FullSize": "0x78",
-    "InheritedSize": "0x78",
-    "ClassSize": "0x0",
-    "Attributes": []
+    "InheritedSize": "0x70",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_0DN15[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x70"
+      }
+    ]
   },
   "IntProperty": {
     "Super": "NumericProperty",
@@ -440,19 +426,19 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "AssetClassProperty": {
-    "Super": "AssetObjectProperty",
-    "FullSize": "0x80",
+  "UInt16Property": {
+    "Super": "NumericProperty",
+    "FullSize": "0x70",
+    "InheritedSize": "0x70",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WeakObjectProperty": {
+    "Super": "ObjectPropertyBase",
+    "FullSize": "0x78",
     "InheritedSize": "0x78",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_HD90P[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x78"
-      }
-    ]
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "ClassProperty": {
     "Super": "ObjectProperty",
@@ -461,7 +447,21 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_G3ZHS[0x8]",
+        "Name": "pad0x8_EVXZ3[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x78"
+      }
+    ]
+  },
+  "AssetClassProperty": {
+    "Super": "AssetObjectProperty",
+    "FullSize": "0x80",
+    "InheritedSize": "0x78",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_221N1[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x78"

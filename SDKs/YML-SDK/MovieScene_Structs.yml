@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 CachedMovieSceneEvaluationTemplate:
   Attributes:
-  - Name: pad0x220_X5X3L[0x220]
+  - Name: pad0x220_B0KC2[0x220]
     Offset: '0x0'
     Size: '0x220'
     Type: char
@@ -32,14 +32,14 @@ MovieSceneBindingOverrideData:
     Offset: '0x18'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_WY0GI[0x3]
+  - Name: pad0x3_2HUXE[0x3]
     Offset: '0x19'
     Size: '0x3'
     Type: char
   ClassSize: '0x1c'
 MovieSceneEditorData:
   Attributes:
-  - Name: pad0x50_E65UF[0x50]
+  - Name: pad0x50_JE7DT[0x50]
     Offset: '0x0'
     Size: '0x50'
     Type: char
@@ -54,14 +54,14 @@ MovieSceneEditorData:
   ClassSize: '0x70'
 MovieSceneEmptyStruct:
   Attributes:
-  - Name: pad0x1_CNIQK[0x1]
+  - Name: pad0x1_4BFM2[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 MovieSceneEvalTemplate:
   Attributes:
-  - Name: pad0x10_13QG6[0x10]
+  - Name: pad0x10_8XSL4[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
@@ -69,21 +69,21 @@ MovieSceneEvalTemplate:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_Q4GET[0x7]
+  - Name: pad0x7_8BTH0[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
   ClassSize: '0x18'
 MovieSceneEvalTemplateBase:
   Attributes:
-  - Name: pad0x10_IT2IR[0x10]
+  - Name: pad0x10_HCB18[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
   ClassSize: '0x10'
 MovieSceneEvalTemplatePtr:
   Attributes:
-  - Name: pad0x38_1N84N[0x38]
+  - Name: pad0x38_BISGO[0x38]
     Offset: '0x0'
     Size: '0x38'
     Type: char
@@ -105,7 +105,7 @@ MovieSceneEvaluationField:
   ClassSize: '0x30'
 MovieSceneEvaluationFieldSegmentPtr:
   Attributes:
-  - Name: pad0x8_FXMF8[0x8]
+  - Name: pad0x8_EU9LA[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -142,7 +142,7 @@ MovieSceneEvaluationGroupLUTIndex:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_N0LYA[0x3]
+  - Name: pad0x3_W8OGJ[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -168,7 +168,7 @@ MovieSceneEvaluationMetaData:
   ClassSize: '0x10'
 MovieSceneEvaluationTemplate:
   Attributes:
-  - Name: pad0xa0_QYV12[0xa0]
+  - Name: pad0xa0_QVIEY[0xa0]
     Offset: '0x0'
     Size: '0xa0'
     Type: char
@@ -192,7 +192,7 @@ MovieSceneEvaluationTemplate:
     Offset: '0x218'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_RX7E0[0x7]
+  - Name: pad0x7_4GWNL[0x7]
     Offset: '0x219'
     Size: '0x7'
     Type: char
@@ -207,7 +207,7 @@ MovieSceneEvaluationTrack:
     Offset: '0x12'
     Size: '0x1'
     Type: byte
-  - Name: pad0x5_OYGTJ[0x5]
+  - Name: pad0x5_H94KP[0x5]
     Offset: '0x13'
     Size: '0x5'
     Type: char
@@ -235,7 +235,7 @@ MovieSceneEvaluationTrack:
     Offset: '0x78'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_XM8EC[0x7]
+  - Name: pad0x7_11LUP[0x7]
     Offset: '0x79'
     Size: '0x7'
     Type: char
@@ -249,21 +249,21 @@ MovieSceneExpansionState:
   ClassSize: '0x1'
 MovieSceneGenerationLedger:
   Attributes:
-  - Name: pad0xa8_BSBQY[0xa8]
+  - Name: pad0xa8_JU879[0xa8]
     Offset: '0x0'
     Size: '0xa8'
     Type: char
   ClassSize: '0xa8'
 MovieSceneKeyStruct:
   Attributes:
-  - Name: pad0x8_XT239[0x8]
+  - Name: pad0x8_J7QMF[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
   ClassSize: '0x8'
 MovieSceneLegacyTrackInstanceTemplate:
   Attributes:
-  - Name: pad0x18_WXIYC[0x18]
+  - Name: pad0x18_LS9WD[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -345,14 +345,14 @@ MovieSceneSectionParameters:
   ClassSize: '0x10'
 MovieSceneSegment:
   Attributes:
-  - Name: pad0x40_ULAXT[0x40]
+  - Name: pad0x40_ZIX17[0x40]
     Offset: '0x0'
     Size: '0x40'
     Type: char
   ClassSize: '0x40'
 MovieSceneSequenceCachedSignature:
   Attributes:
-  - Name: pad0x8_O57LO[0x8]
+  - Name: pad0x8_Q91U8[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -363,7 +363,7 @@ MovieSceneSequenceCachedSignature:
   ClassSize: '0x18'
 MovieSceneSequenceHierarchy:
   Attributes:
-  - Name: pad0xa0_5BN23[0xa0]
+  - Name: pad0xa0_OXZTY[0xa0]
     Offset: '0x0'
     Size: '0xa0'
     Type: char
@@ -374,7 +374,7 @@ MovieSceneSequenceHierarchyNode:
     Offset: '0x0'
     Size: '0x4'
     Type: struct MovieSceneSequenceID
-  - Name: pad0x4_GZNCM[0x4]
+  - Name: pad0x4_H4GQ1[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -385,7 +385,7 @@ MovieSceneSequenceHierarchyNode:
   ClassSize: '0x18'
 MovieSceneSequenceID:
   Attributes:
-  - Name: pad0x4_XLP13[0x4]
+  - Name: pad0x4_PF55Q[0x4]
     Offset: '0x0'
     Size: '0x4'
     Type: char
@@ -404,7 +404,7 @@ MovieSceneSequencePlaybackSettings:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_R6JW5[0x3]
+  - Name: pad0x3_ME55U[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -416,11 +416,11 @@ MovieSceneSequencePlaybackSettings:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_GBZIR[0x7]
+  - Name: pad0x7_OX2XO[0x7]
     Offset: '0x11'
     Size: '0x7'
     Type: char
-  - Name: pad0x10_9EHX9[0x10]
+  - Name: pad0x10_88CM5[0x10]
     Offset: '0x18'
     Size: '0x10'
     Type: char
@@ -442,7 +442,7 @@ MovieSceneSpawnable:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_08VE7[0x3]
+  - Name: pad0x3_L097Z[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -450,7 +450,7 @@ MovieSceneSpawnable:
     Offset: '0x4'
     Size: '0x10'
     Type: struct Guid
-  - Name: pad0x4_HO9YU[0x4]
+  - Name: pad0x4_FG7X0[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -470,7 +470,7 @@ MovieSceneSpawnable:
     Offset: '0x40'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_5CQSY[0x7]
+  - Name: pad0x7_YLUR9[0x7]
     Offset: '0x41'
     Size: '0x7'
     Type: char
@@ -493,7 +493,7 @@ MovieSceneSubSequenceData:
     Offset: '0x20'
     Size: '0x4'
     Type: struct MovieSceneSequenceID
-  - Name: pad0x4_Q8UVS[0x4]
+  - Name: pad0x4_F6XZW[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char
@@ -523,28 +523,28 @@ MovieSceneTrackEvalOptions:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_5V3MA[0x3]
+  - Name: pad0x3_95IMT[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
   ClassSize: '0x4'
 MovieSceneTrackIdentifier:
   Attributes:
-  - Name: pad0x4_X2SGM[0x4]
+  - Name: pad0x4_V9IFV[0x4]
     Offset: '0x0'
     Size: '0x4'
     Type: char
   ClassSize: '0x4'
 MovieSceneTrackImplementation:
   Attributes:
-  - Name: pad0x10_FK01T[0x10]
+  - Name: pad0x10_2SYJ0[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
   ClassSize: '0x10'
 MovieSceneTrackImplementationPtr:
   Attributes:
-  - Name: pad0x38_F03E0[0x38]
+  - Name: pad0x38_R4M2M[0x38]
     Offset: '0x0'
     Size: '0x38'
     Type: char

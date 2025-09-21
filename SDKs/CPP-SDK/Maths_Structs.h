@@ -12,59 +12,38 @@ public:
 };
 
 
+// Size 0x60
+struct Pendulum
+{
+public:
+	float                                                        Increment;                                         // 0x0(0x4)
+	float                                                        IncrementDirectionMultiplier;                      // 0x4(0x4)
+	bool                                                         IsSwinging;                                        // 0x8(0x1)
+	char                                                         pad0x3_VUO26[0x3];                                 // 0x9(0x3)
+	float                                                        RPM;                                               // 0xc(0x4)
+	float                                                        MinAngleDegrees;                                   // 0x10(0x4)
+	float                                                        MaxAngleDegrees;                                   // 0x14(0x4)
+	float                                                        Length;                                            // 0x18(0x4)
+	float                                                        CurrentSwingProgress;                              // 0x1c(0x4)
+	float                                                        CurrentRotationAngleDegrees;                       // 0x20(0x4)
+	char                                                         pad0xc_2HHF9[0xc];                                 // 0x24(0xc)
+	struct Transform                                             InterpolationAsTransform;                          // 0x30(0x30)
+};
+
+
+// Size 0x18
+struct TimedBuffer
+{
+public:
+	char                                                         pad0x18_BG0IN[0x18];                               // 0x0(0x18)
+};
+
+
 // Size 0x20
 struct GrabBag
 {
 public:
-	char                                                         pad0x20_2H92W[0x20];                               // 0x0(0x20)
-};
-
-
-// Size 0x8
-struct SpatialOffset
-{
-public:
-	float                                                        OffsetValue;                                       // 0x0(0x4)
-	char                                                         OffsetMethod;                                      // 0x4(0x1)
-	char                                                         pad0x3_UTM92[0x3];                                 // 0x5(0x3)
-};
-
-
-// Size 0x20
-struct WeightedProbabilityRange
-{
-public:
-	char                                                         pad0x10_DIZB3[0x10];                               // 0x0(0x10)
-	TArray<float>                                                Weights;                                           // 0x10(0x10)
-};
-
-
-// Size 0x18
-struct OrientedPoint
-{
-public:
-	struct Vector                                                Location;                                          // 0x0(0xc)
-	struct Rotator                                               Rotation;                                          // 0xc(0xc)
-};
-
-
-// Size 0x10
-struct FixedStepInterpCurvePointVector2D
-{
-public:
-	struct Vector2D                                              OutVal;                                            // 0x0(0x8)
-	struct Vector2D                                              Tangent;                                           // 0x8(0x8)
-};
-
-
-// Size 0x18
-struct RotationUpdateResult
-{
-public:
-	struct Rotator                                               UpdatedRotation;                                   // 0x0(0xc)
-	float                                                        SpinAngle;                                         // 0xc(0x4)
-	float                                                        TiltAngle;                                         // 0x10(0x4)
-	float                                                        TiltDirection;                                     // 0x14(0x4)
+	char                                                         pad0x20_1MAUZ[0x20];                               // 0x0(0x20)
 };
 
 
@@ -79,30 +58,51 @@ public:
 };
 
 
-// Size 0x18
-struct TimedBuffer
+// Size 0x8
+struct SpatialOffset
 {
 public:
-	char                                                         pad0x18_YYKUS[0x18];                               // 0x0(0x18)
+	float                                                        OffsetValue;                                       // 0x0(0x4)
+	char                                                         OffsetMethod;                                      // 0x4(0x1)
+	char                                                         pad0x3_HSOFO[0x3];                                 // 0x5(0x3)
 };
 
 
-// Size 0x60
-struct Pendulum
+// Size 0x10
+struct FixedStepInterpCurvePointVector2D
 {
 public:
-	float                                                        Increment;                                         // 0x0(0x4)
-	float                                                        IncrementDirectionMultiplier;                      // 0x4(0x4)
-	bool                                                         IsSwinging;                                        // 0x8(0x1)
-	char                                                         pad0x3_0OW2W[0x3];                                 // 0x9(0x3)
-	float                                                        RPM;                                               // 0xc(0x4)
-	float                                                        MinAngleDegrees;                                   // 0x10(0x4)
-	float                                                        MaxAngleDegrees;                                   // 0x14(0x4)
-	float                                                        Length;                                            // 0x18(0x4)
-	float                                                        CurrentSwingProgress;                              // 0x1c(0x4)
-	float                                                        CurrentRotationAngleDegrees;                       // 0x20(0x4)
-	char                                                         pad0xc_9A0F3[0xc];                                 // 0x24(0xc)
-	struct Transform                                             InterpolationAsTransform;                          // 0x30(0x30)
+	struct Vector2D                                              OutVal;                                            // 0x0(0x8)
+	struct Vector2D                                              Tangent;                                           // 0x8(0x8)
+};
+
+
+// Size 0x20
+struct WeightedProbabilityRange
+{
+public:
+	char                                                         pad0x10_W9T2E[0x10];                               // 0x0(0x10)
+	TArray<float>                                                Weights;                                           // 0x10(0x10)
+};
+
+
+// Size 0x18
+struct RotationUpdateResult
+{
+public:
+	struct Rotator                                               UpdatedRotation;                                   // 0x0(0xc)
+	float                                                        SpinAngle;                                         // 0xc(0x4)
+	float                                                        TiltAngle;                                         // 0x10(0x4)
+	float                                                        TiltDirection;                                     // 0x14(0x4)
+};
+
+
+// Size 0x18
+struct OrientedPoint
+{
+public:
+	struct Vector                                                Location;                                          // 0x0(0xc)
+	struct Rotator                                               Rotation;                                          // 0xc(0xc)
 };
 
 
@@ -113,7 +113,7 @@ public:
 	TArray<struct FixedStepInterpCurvePointVector2D>             Points;                                            // 0x0(0x10)
 	float                                                        StepTime;                                          // 0x10(0x4)
 	bool                                                         IsLooped;                                          // 0x14(0x1)
-	char                                                         pad0x3_NKCXY[0x3];                                 // 0x15(0x3)
+	char                                                         pad0x3_ZQ7RA[0x3];                                 // 0x15(0x3)
 };
 
 
@@ -121,7 +121,7 @@ public:
 struct WeightedProbabilityRangeOfRanges
 {
 public:
-	char                                                         pad0x20_UP1Y0[0x20];                               // 0x0(0x20)
+	char                                                         pad0x20_3P7D1[0x20];                               // 0x0(0x20)
 	TArray<struct WeightedProbabilityRangeOfRangesFloatPair>     SubRanges;                                         // 0x20(0x10)
 };
 

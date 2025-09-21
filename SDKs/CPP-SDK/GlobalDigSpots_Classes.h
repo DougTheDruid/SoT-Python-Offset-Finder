@@ -6,42 +6,6 @@
 #include "GlobalDigSpots_Structs.h"
 
 
-// Size 0x30 (Full Size[0x3d0] - InheritedSize[0x3a0]
-class GlobalDigSpotService: public Actor
-{
-public:
-	char                                                         pad0x8_ET6KB[0x8];                                 // 0x3a0(0x8)
-	class VoyageDescDataAsset*                                   DefaultVoyageDesc;                                 // 0x3a8(0x8)
-	class PopUpMessageDesc*                                      Notification;                                      // 0x3b0(0x8)
-	class GlobalDigSpotDefinitionList*                           DigSpotDefinitions;                                // 0x3b8(0x8)
-	char                                                         pad0x10_RCY4D[0x10];                               // 0x3c0(0x10)
-};
-
-
-// Size 0x18 (Full Size[0x408] - InheritedSize[0x3f0]
-class GlobalDigSpotVoyageTriggerActor: public GlobalVoyageTriggerActor
-{
-public:
-	char                                                         pad0x18_EF8VE[0x18];                               // 0x3f0(0x18)
-};
-
-
-// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class GlobalDigSpotSettings: public DeveloperSettings
-{
-public:
-	class UClass*                                                GlobalDigSpotServiceClass;                         // 0x38(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x3a8] - InheritedSize[0x3a0]
-class GlobalDigSpotDebugCheat: public Actor
-{
-public:
-	char                                                         pad0x8_Y92P1[0x8];                                 // 0x3a0(0x8)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class GlobalDigSpotDebugCheatInterface: public Interface
 {
@@ -61,6 +25,42 @@ class GlobalDigSpotDefinitionList: public DataAsset
 {
 public:
 	TArray<struct GlobalDigSpotDefinition>                       DigSpotDefinitions;                                // 0x28(0x10)
+};
+
+
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+class GlobalDigSpotSettings: public DeveloperSettings
+{
+public:
+	class UClass*                                                GlobalDigSpotServiceClass;                         // 0x38(0x8)
+};
+
+
+// Size 0x18 (Full Size[0x408] - InheritedSize[0x3f0]
+class GlobalDigSpotVoyageTriggerActor: public GlobalVoyageTriggerActor
+{
+public:
+	char                                                         pad0x18_5R2FB[0x18];                               // 0x3f0(0x18)
+};
+
+
+// Size 0x30 (Full Size[0x3d0] - InheritedSize[0x3a0]
+class GlobalDigSpotService: public Actor
+{
+public:
+	char                                                         pad0x8_M4O6O[0x8];                                 // 0x3a0(0x8)
+	class VoyageDescDataAsset*                                   DefaultVoyageDesc;                                 // 0x3a8(0x8)
+	class PopUpMessageDesc*                                      Notification;                                      // 0x3b0(0x8)
+	class GlobalDigSpotDefinitionList*                           DigSpotDefinitions;                                // 0x3b8(0x8)
+	char                                                         pad0x10_Q9TJ1[0x10];                               // 0x3c0(0x10)
+};
+
+
+// Size 0x8 (Full Size[0x3a8] - InheritedSize[0x3a0]
+class GlobalDigSpotDebugCheat: public Actor
+{
+public:
+	char                                                         pad0x8_2UO30[0x8];                                 // 0x3a0(0x8)
 };
 
 

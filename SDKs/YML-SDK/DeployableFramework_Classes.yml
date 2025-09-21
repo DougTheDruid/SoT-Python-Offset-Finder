@@ -20,7 +20,7 @@ DestroyDeployableConditionalStatTrigger:
   Super: ConditionalStatsTriggerType
 HandoverAmmoComponent:
   Attributes:
-  - Name: pad0x8_6NZIE[0x8]
+  - Name: pad0x8_20ZO0[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char

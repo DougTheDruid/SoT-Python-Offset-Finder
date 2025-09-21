@@ -1,60 +1,4 @@
 {
-  "ButtonWidgetStyle": {
-    "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x2d8",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x2a8",
-    "Attributes": [
-      {
-        "Name": "ButtonStyle",
-        "Type": "struct ButtonStyle",
-        "Size": "0x2a8",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "EditableTextBoxWidgetStyle": {
-    "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x890",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x860",
-    "Attributes": [
-      {
-        "Name": "EditableTextBoxStyle",
-        "Type": "struct EditableTextBoxStyle",
-        "Size": "0x860",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "ComboButtonWidgetStyle": {
-    "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x410",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x3e0",
-    "Attributes": [
-      {
-        "Name": "ComboButtonStyle",
-        "Type": "struct ComboButtonStyle",
-        "Size": "0x3e0",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "ProgressWidgetStyle": {
-    "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x1e8",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x1b8",
-    "Attributes": [
-      {
-        "Name": "ProgressBarStyle",
-        "Type": "struct ProgressBarStyle",
-        "Size": "0x1b8",
-        "Offset": "0x30"
-      }
-    ]
-  },
   "ComboBoxWidgetStyle": {
     "Super": "SlateWidgetStyleContainerBase",
     "FullSize": "0x458",
@@ -65,34 +9,6 @@
         "Name": "ComboBoxStyle",
         "Type": "struct ComboBoxStyle",
         "Size": "0x428",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "TextBlockWidgetStyle": {
-    "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x190",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x160",
-    "Attributes": [
-      {
-        "Name": "TextBlockStyle",
-        "Type": "struct TextBlockStyle",
-        "Size": "0x160",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "SpinBoxWidgetStyle": {
-    "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x348",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x318",
-    "Attributes": [
-      {
-        "Name": "SpinBoxStyle",
-        "Type": "struct SpinBoxStyle",
-        "Size": "0x318",
         "Offset": "0x30"
       }
     ]
@@ -111,16 +27,72 @@
       }
     ]
   },
-  "EditableTextWidgetStyle": {
+  "ButtonWidgetStyle": {
     "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x258",
+    "FullSize": "0x2d8",
     "InheritedSize": "0x30",
-    "ClassSize": "0x228",
+    "ClassSize": "0x2a8",
     "Attributes": [
       {
-        "Name": "EditableTextStyle",
-        "Type": "struct EditableTextStyle",
-        "Size": "0x228",
+        "Name": "ButtonStyle",
+        "Type": "struct ButtonStyle",
+        "Size": "0x2a8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "SpinBoxWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x348",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x318",
+    "Attributes": [
+      {
+        "Name": "SpinBoxStyle",
+        "Type": "struct SpinBoxStyle",
+        "Size": "0x318",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "ComboButtonWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x410",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x3e0",
+    "Attributes": [
+      {
+        "Name": "ComboButtonStyle",
+        "Type": "struct ComboButtonStyle",
+        "Size": "0x3e0",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "EditableTextBoxWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x890",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x860",
+    "Attributes": [
+      {
+        "Name": "EditableTextBoxStyle",
+        "Type": "struct EditableTextBoxStyle",
+        "Size": "0x860",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "TextBlockWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x190",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x160",
+    "Attributes": [
+      {
+        "Name": "TextBlockStyle",
+        "Type": "struct TextBlockStyle",
+        "Size": "0x160",
         "Offset": "0x30"
       }
     ]
@@ -149,6 +121,34 @@
         "Name": "ScrollBoxStyle",
         "Type": "struct ScrollBoxStyle",
         "Size": "0x248",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "ProgressWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x1e8",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x1b8",
+    "Attributes": [
+      {
+        "Name": "ProgressBarStyle",
+        "Type": "struct ProgressBarStyle",
+        "Size": "0x1b8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "EditableTextWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x258",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x228",
+    "Attributes": [
+      {
+        "Name": "EditableTextStyle",
+        "Type": "struct EditableTextStyle",
+        "Size": "0x228",
         "Offset": "0x30"
       }
     ]

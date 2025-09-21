@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 CompetitiveVoyageItemRelocationVolume:
   Attributes:
-  - Name: pad0x8_LTXIB[0x8]
+  - Name: pad0x8_WDUPL[0x8]
     Offset: '0x3a0'
     Size: '0x8'
     Type: char
@@ -22,7 +22,7 @@ CompetitiveVoyageItemRelocationVolume:
     Offset: '0x3c8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x25f_VOT66[0x25f]
+  - Name: pad0x25f_4GOTR[0x25f]
     Offset: '0x3c9'
     Size: '0x25f'
     Type: char
@@ -38,7 +38,7 @@ CompetitiveVoyageLockComponent:
   Super: LockComponent
 CompetitiveVoyageVoteConsumerBase:
   Attributes:
-  - Name: pad0x10_YBNXA[0x10]
+  - Name: pad0x10_PQP7D[0x10]
     Offset: '0x30'
     Size: '0x10'
     Type: char
@@ -46,7 +46,7 @@ CompetitiveVoyageVoteConsumerBase:
     Offset: '0x40'
     Size: '0x8'
     Type: class CompetitiveVoyageVoteValidatorBase*
-  - Name: pad0x48_APD0Q[0x48]
+  - Name: pad0x48_KH6VR[0x48]
     Offset: '0x48'
     Size: '0x48'
     Type: char
@@ -62,7 +62,7 @@ CompetitiveVoyageVoteConsumerBase:
     Offset: '0xa0'
     Size: '0x10'
     Type: TArray<struct CrewMemberVotes>
-  - Name: pad0x18_SR6GG[0x18]
+  - Name: pad0x18_VLTT8[0x18]
     Offset: '0xb0'
     Size: '0x18'
     Type: char
@@ -80,7 +80,7 @@ CompetitiveVoyageVoteValidatorBase:
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: pad0x5c_SPHME[0x5c]
+  - Name: pad0x5c_Z7EX0[0x5c]
     Offset: '0x44'
     Size: '0x5c'
     Type: char
@@ -92,7 +92,7 @@ CompetitiveVoyageVoteValidatorBase:
     Offset: '0xa8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_WUG6I[0x4]
+  - Name: pad0x4_Y22B9[0x4]
     Offset: '0xac'
     Size: '0x4'
     Type: char
@@ -106,7 +106,7 @@ CompetitiveVoyageVoteValidatorBase:
   Super: VoteValidatorInlineBase
 CompetitiveVoyagesService:
   Attributes:
-  - Name: pad0x120_58JMQ[0x120]
+  - Name: pad0x120_7P0W6[0x120]
     Offset: '0x3a0'
     Size: '0x120'
     Type: char
@@ -114,7 +114,7 @@ CompetitiveVoyagesService:
     Offset: '0x4c0'
     Size: '0x10'
     Type: TArray<struct Guid>
-  - Name: pad0x10_DIYPQ[0x10]
+  - Name: pad0x10_0ATSZ[0x10]
     Offset: '0x4d0'
     Size: '0x10'
     Type: char
@@ -126,20 +126,28 @@ CompetitiveVoyagesService:
     Offset: '0x4e8'
     Size: '0x10'
     Type: TArray<class CompetitiveVoyagesServiceParams*>
-  - Name: pad0x2b0_ITUUW[0x2b0]
+  - Name: pad0x68_HRIAO[0x68]
     Offset: '0x4f8'
-    Size: '0x2b0'
+    Size: '0x68'
+    Type: char
+  - Name: ActiveEventIDs
+    Offset: '0x560'
+    Size: '0x10'
+    Type: TArray<struct Guid>
+  - Name: pad0x248_IL4UL[0x248]
+    Offset: '0x570'
+    Size: '0x248'
     Type: char
   - Name: VoyageEventItems
-    Offset: '0x7a8'
+    Offset: '0x7b8'
     Size: '0x10'
     Type: TArray<struct CompetitiveVoyageEventItem>
-  - Name: pad0x108_D8M5D[0x108]
-    Offset: '0x7b8'
+  - Name: pad0x108_X93XV[0x108]
+    Offset: '0x7c8'
     Size: '0x108'
     Type: char
-  ClassSize: '0x520'
-  FullSize: '0x8c0'
+  ClassSize: '0x530'
+  FullSize: '0x8d0'
   InheritedSize: '0x3a0'
   Super: Actor
 CompetitiveVoyagesServiceInterface:
@@ -158,7 +166,7 @@ CompetitiveVoyagesServiceParams:
     Offset: '0x30'
     Size: '0xc'
     Type: struct FeatureFlag
-  - Name: pad0x4_ST6AZ[0x4]
+  - Name: pad0x4_X8OEZ[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -198,7 +206,7 @@ CompetitiveVoyagesServiceParams:
     Offset: '0x178'
     Size: '0x4'
     Type: struct PlayerStat
-  - Name: pad0x4_JP0EG[0x4]
+  - Name: pad0x4_Z6M5S[0x4]
     Offset: '0x17c'
     Size: '0x4'
     Type: char
@@ -214,64 +222,68 @@ DiscombobulatedStatus:
   Super: StatusBase
 HeistVault:
   Attributes:
-  - Name: pad0x18_LNNAO[0x18]
+  - Name: pad0x20_6ZEB9[0x20]
     Offset: '0x3a0'
-    Size: '0x18'
+    Size: '0x20'
     Type: char
   - Name: DespawnTreasureOnResetVault
-    Offset: '0x3b8'
+    Offset: '0x3c0'
     Size: '0x1'
     Type: bool
   - Name: ResetVaultOnMigration
-    Offset: '0x3b9'
+    Offset: '0x3c1'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_DDOSH[0x2]
-    Offset: '0x3ba'
+  - Name: pad0x2_6CVUI[0x2]
+    Offset: '0x3c2'
     Size: '0x2'
     Type: char
   - Name: VaultTimeoutTime
-    Offset: '0x3bc'
+    Offset: '0x3c4'
     Size: '0x4'
     Type: float
   - Name: VaultTimeoutWarningTime
-    Offset: '0x3c0'
+    Offset: '0x3c8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_JYTGE[0x4]
-    Offset: '0x3c4'
+  - Name: VaultClaimCheckTime
+    Offset: '0x3cc'
     Size: '0x4'
-    Type: char
+    Type: float
   - Name: PanicVolumeActor
-    Offset: '0x3c8'
+    Offset: '0x3d0'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x1d0_2E6GX[0x1d0]
-    Offset: '0x3d0'
-    Size: '0x1d0'
+  - Name: pad0x218_65CGF[0x218]
+    Offset: '0x3d8'
+    Size: '0x218'
     Type: char
   - Name: TreasureItemProxies
-    Offset: '0x690'
+    Offset: '0x6e0'
     Size: '0x10'
     Type: TArray<uintptr_t>
-  - Name: pad0x50_2MFT1[0x50]
-    Offset: '0x6a0'
+  - Name: pad0x50_XL56I[0x50]
+    Offset: '0x6f0'
     Size: '0x50'
     Type: char
   - Name: Doors
-    Offset: '0x6f0'
+    Offset: '0x740'
     Size: '0x10'
     Type: TArray<uintptr_t>
   - Name: MechanismDoors
-    Offset: '0x700'
+    Offset: '0x750'
+    Size: '0x10'
+    Type: TArray<uintptr_t>
+  - Name: ContinuousMechanismDoors
+    Offset: '0x760'
     Size: '0x10'
     Type: TArray<uintptr_t>
   - Name: VaultTeleportVolumes
-    Offset: '0x710'
+    Offset: '0x770'
     Size: '0x10'
     Type: TArray<class InstantaneousPanicTeleportVolume*>
-  ClassSize: '0x380'
-  FullSize: '0x720'
+  ClassSize: '0x3e0'
+  FullSize: '0x780'
   InheritedSize: '0x3a0'
   Super: Actor
 MigrationDuplicatedActor:
@@ -336,7 +348,7 @@ StopCompetitiveVoyageVoteValidator:
     Offset: '0xb8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_KR06R[0x7]
+  - Name: pad0x7_VM88A[0x7]
     Offset: '0xb9'
     Size: '0x7'
     Type: char
@@ -352,7 +364,7 @@ TaleQuestCompetitiveVoyagesFunctionStepLibrary:
   Super: TaleQuestFunctionStepLibrary
 TaleQuestCompetitiveVoyagesService:
   Attributes:
-  - Name: pad0x88_3GPSY[0x88]
+  - Name: pad0x88_FACST[0x88]
     Offset: '0x60'
     Size: '0x88'
     Type: char
@@ -360,12 +372,16 @@ TaleQuestCompetitiveVoyagesService:
     Offset: '0xe8'
     Size: '0x10'
     Type: TArray<struct PhasedMarkerItem>
-  - Name: pad0x160_JJHMT[0x160]
+  - Name: AdditionalVoyageItemsForMigration
     Offset: '0xf8'
+    Size: '0x10'
+    Type: TArray<uintptr_t>
+  - Name: pad0x160_Y4YA3[0x160]
+    Offset: '0x108'
     Size: '0x160'
     Type: char
-  ClassSize: '0x1f8'
-  FullSize: '0x258'
+  ClassSize: '0x208'
+  FullSize: '0x268'
   InheritedSize: '0x60'
   Super: TaleQuestService
 TaleQuestCompetitiveVoyagesServiceDesc:
@@ -376,7 +392,7 @@ TaleQuestCompetitiveVoyagesServiceDesc:
   Super: TaleQuestServiceDesc
 WaitForCompVoyageOptInStep:
   Attributes:
-  - Name: pad0x58_HGX5E[0x58]
+  - Name: pad0x58_MHVR4[0x58]
     Offset: '0x98'
     Size: '0x58'
     Type: char

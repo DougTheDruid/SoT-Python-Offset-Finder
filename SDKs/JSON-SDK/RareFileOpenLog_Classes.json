@@ -1,18 +1,4 @@
 {
-  "RareFileOpenFileHandler": {
-    "Super": "Class",
-    "FullSize": "0x208",
-    "InheritedSize": "0x1c0",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "pad0x48_8L8UW[0x48]",
-        "Type": "char",
-        "Size": "0x48",
-        "Offset": "0x1c0"
-      }
-    ]
-  },
   "RareFileOpenLogSettings": {
     "Super": "DeveloperSettings",
     "FullSize": "0x90",
@@ -38,7 +24,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_GEIA8[0x7]",
+        "Name": "pad0x7_RAS14[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
@@ -68,7 +54,7 @@
         "Offset": "0x78"
       },
       {
-        "Name": "pad0x14_6N6UR[0x14]",
+        "Name": "pad0x14_5FXRD[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0x7c"
@@ -82,10 +68,24 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_OQLSM[0x8]",
+        "Name": "pad0x8_1QNXT[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x80"
+      }
+    ]
+  },
+  "RareFileOpenFileHandler": {
+    "Super": "Class",
+    "FullSize": "0x208",
+    "InheritedSize": "0x1c0",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x48_X0O26[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x1c0"
       }
     ]
   },

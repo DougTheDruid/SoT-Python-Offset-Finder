@@ -1,63 +1,138 @@
 {
-  "QuestVariableLinkEQSContext": {
-    "ClassSize": "0x30",
+  "TaleQuestQueryableStateReadValueIntCondition": {
+    "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "pad0x30_FFKRR[0x30]",
+        "Name": "pad0x28_LIHOP[0x28]",
         "Type": "char",
-        "Size": "0x30",
+        "Size": "0x28",
         "Offset": "0x0"
+      },
+      {
+        "Name": "DataID",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ExpectedValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "ComparisonToExpectedValue",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "pad0x3_T0DIQ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x35"
       }
     ]
   },
-  "QuestVariableSetEQSTaleContextValue": {
+  "ToggleModalInteractionNetworkEvent": {
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x30_AAM1J[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "PlayMontageAnimationCommand": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x18_NY2AU[0x18]",
+        "Name": "pad0x18_5GGD3[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"
       },
       {
-        "Name": "PlayRate",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "TargetActor",
+        "Type": "struct NetActorPtr",
+        "Size": "0x14",
         "Offset": "0x18"
       },
       {
-        "Name": "Position",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x1c"
+        "Name": "InteractionBlocked",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "pad0x3_9UI1Z[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x2d"
       }
     ]
   },
-  "PhaseBranchIndexPlayerAssignment": {
-    "ClassSize": "0xc",
+  "TaleActorSpawnParameters": {
+    "ClassSize": "0x3",
     "Attributes": [
       {
-        "Name": "pad0x8_V2JFH[0x8]",
-        "Type": "char",
-        "Size": "0x8",
+        "Name": "Tracked",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x0"
       },
       {
-        "Name": "AssignedPhaseBranchIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
+        "Name": "GatherForMigration",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "DeferredSpawning",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x2"
+      }
+    ]
+  },
+  "JumpToMontageSectionCommand": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x18_BGLKK[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SectionName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "QuestVariablePageLayout": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_WL5Q3[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "QuestVariableItemInfo": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_IMFVA[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "QuestVariableAny": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_61BBW[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
       }
     ]
   },
@@ -65,7 +140,7 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x8_PDQ6X[0x8]",
+        "Name": "pad0x8_DUYRW[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"
@@ -83,10 +158,177 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_KP3A6[0x7]",
+        "Name": "pad0x7_KHGP4[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
+      }
+    ]
+  },
+  "BodyFramePair": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x10_LDGQJ[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Frame",
+        "Type": "class TaleQuestIndexedFrame*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x10_AGMMC[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "TaleQuestDeliveryRequest": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "Id",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_97IJ1[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "Item",
+        "Type": "struct MerchantContractItemDesc",
+        "Size": "0x28",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "NumToDeliver",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "NumToAllocate",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x34"
+      }
+    ]
+  },
+  "QuestVariablePrioritisedPrompt": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_LP63W[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CutsceneStartedTelemetryEvent": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "CutsceneId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CutsceneName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "CutsceneDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "IsLooping",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "pad0x3_DN8NE[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x25"
+      },
+      {
+        "Name": "ParticipatingPlayers",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ParticipatingCrewIds",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "QuestVariableMerchantItem": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_F6L5A[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "MigrationActionPair": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AllocatedResourceHandle",
+        "Type": "struct TaleResourceHandle",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MigrationAction",
+        "Type": "class TaleMigrationAction*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "SetNextMontageSectionCommand": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x18_N39WP[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "FromSectionName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "ToSectionName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x20"
       }
     ]
   },
@@ -107,6 +349,522 @@
       }
     ]
   },
+  "StopMontageAnimationCommand": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x18_CAH82[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BlendOutTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x4_H34ZZ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      }
+    ]
+  },
+  "TriggerOnScreenParticlesRpc": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x18_5F4V4[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Particles",
+        "Type": "class ParticleSystem*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "SnapshottedActorData": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "pad0x10_VQ7RX[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SnapshotID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ActorWasCritical",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "ActorWasTracked",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x21"
+      },
+      {
+        "Name": "pad0x6_14P4C[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x22"
+      },
+      {
+        "Name": "FailureMessage",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "PredicatedBranchedTask": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x48_JY2OK[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TaleQuestStopPermanentPromptEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_DWPHX[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TaleQuestPredicateBranchedTaskDesc": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "BranchIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_GB8SS[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "BranchedTask",
+        "Type": "class TaleQuestStepDesc*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "TaleQuestToggledDefinition": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "FeatureToggle",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Definition",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "PlayMontageAnimationCommand": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x18_VI5KF[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PlayRate",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Position",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      }
+    ]
+  },
+  "PhasedItem": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "ItemProxy",
+        "Type": "class ItemProxy*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ItemInfo",
+        "Type": "class ItemInfo*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Tracked",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x17_Z3DZK[0x17]",
+        "Type": "char",
+        "Size": "0x17",
+        "Offset": "0x11"
+      }
+    ]
+  },
+  "QuestVariableCollection": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_TSCKI[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TaleQuestCargoRunContractItem": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ItemToCollect",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x10_U47NL[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "TaleQuestSelectorServiceSeedSetTelemetryEvent": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "Seed",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "StepMerchantItemDesc": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "Name",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Icon",
+        "Type": "class Texture*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "IslandTypeWeights": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "FeatureIslandWeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ResourceIslandWeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "OutpostIslandWeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "SeapostIslandWeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "FortIslandWeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "TaleQuestPhaseClusterRootActor": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_7DL72[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "QuestVariableItemDescTypeArray": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_GYXDA[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SplineFootprintPathTool": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_DYWBG[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TrackedActorData": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Actor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x8_VBV7H[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "QuestVariableTexture": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_RD3PS[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "QuestVariableGameEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_68J17[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "InteractionOptionSelectedWithQueryableStateNonUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "DataID",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "InstigatorCrewID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "InteractingPlayer",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "TaleQuestQueryableStateDataInfoId": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "MyTaleId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MyScopeId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CompondNodePinDesc": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "DisplayName",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PinId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "QuestVariableLinkEQSContext": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_25CCI[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "QuestVariableBountyTargetArray": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_AII8Q[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EndOnScreenParticlesRpc": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x18_5M1T5[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Particles",
+        "Type": "class ParticleSystem*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "MontageAnimationCommandBase": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x8_697NY[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MyTarget",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "MyMontage",
+        "Type": "class AnimMontage*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "QuestVariableActorArray": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_9WGB9[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "QuestVariableActorAssetTypeArray": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_XDLE9[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "PhaseBranchIndexPlayerAssignment": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "pad0x8_6OCPV[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AssignedPhaseBranchIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "TaleQuestDeliverableItem": {
     "ClassSize": "0x40",
     "Attributes": [
@@ -124,84 +882,11 @@
       }
     ]
   },
-  "StepBountyTargetDesc": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "Name",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Portrait",
-        "Type": "class Texture*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "QuestVariableClassArray": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_SN2MD[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "QuestVariablePageLayout": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_5N6PG[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "QuestVariableAISpawner": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_MT2OI[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TaleQuestPredicateBranchedTaskDesc": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "BranchIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x4_5YJ33[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "BranchedTask",
-        "Type": "class TaleQuestStepDesc*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "TaleQuestDesc": {
     "ClassSize": "0x80",
     "Attributes": [
       {
-        "Name": "pad0x28_Z83AI[0x28]",
+        "Name": "pad0x28_Y8O2D[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x0"
@@ -243,35 +928,29 @@
         "Offset": "0x79"
       },
       {
-        "Name": "pad0x6_11GIQ[0x6]",
+        "Name": "pad0x6_YTQDN[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x7a"
       }
     ]
   },
-  "StepMerchantItemDesc": {
-    "ClassSize": "0x40",
+  "QuestVariableAISpawner": {
+    "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "Name",
-        "Type": "struct FText",
-        "Size": "0x38",
+        "Name": "pad0x30_VVAZM[0x30]",
+        "Type": "char",
+        "Size": "0x30",
         "Offset": "0x0"
-      },
-      {
-        "Name": "Icon",
-        "Type": "class Texture*",
-        "Size": "0x8",
-        "Offset": "0x38"
       }
     ]
   },
-  "TaleQuestQueryableStateReadAllValueBoolCondition": {
+  "TaleQuestQueryableStateCanAllDataBeReadCondition": {
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x28_AOCCA[0x28]",
+        "Name": "pad0x28_G7N6M[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x0"
@@ -289,21 +968,10 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x7_U968D[0x7]",
+        "Name": "pad0x7_Q420W[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x39"
-      }
-    ]
-  },
-  "QuestVariableMerchantItemArray": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_Z63S6[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
       }
     ]
   },
@@ -311,61 +979,112 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x30_TQTSJ[0x30]",
+        "Name": "pad0x30_I6S45[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x0"
       }
     ]
   },
-  "InteractionOptionSelectedWithQueryableStateNonUI": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "DataID",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "InstigatorCrewID",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "InteractingPlayer",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "QuestVariableRotator": {
+  "QuestVariableGuidArray": {
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x30_D2TI9[0x30]",
+        "Name": "pad0x30_1ZI2E[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x0"
       }
     ]
   },
-  "EndOnScreenParticlesRpc": {
+  "PhasedActor": {
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x18_4SUXW[0x18]",
-        "Type": "char",
-        "Size": "0x18",
+        "Name": "MapActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "Particles",
-        "Type": "class ParticleSystem*",
+        "Name": "Actor",
+        "Type": "class Actor*",
         "Size": "0x8",
-        "Offset": "0x18"
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x10_VYCQC[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "ActorSpawnedAutomationEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_11807[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "StepBountyTargetDesc": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "Name",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Portrait",
+        "Type": "class Texture*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "ParticpantToolGroup": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_ZOEMK[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TaleQuestQueryableStateCanAnyDataBeReadCondition": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "pad0x28_LFOCM[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AllDataToCheck",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ExpectedValue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x7_ZWRBQ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x39"
       }
     ]
   },
@@ -373,208 +1092,10 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_3REIY[0x1]",
+        "Name": "pad0x1_NPHT8[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "TaleActorSpawnParameters": {
-    "ClassSize": "0x3",
-    "Attributes": [
-      {
-        "Name": "Tracked",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "GatherForMigration",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "DeferredSpawning",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x2"
-      }
-    ]
-  },
-  "TaleQuestSelectorServiceSeedSetTelemetryEvent": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "Seed",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "QuestVariableGameEvent": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_RSLZ6[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "QuestVariableItemDescType": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_M5NBF[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TriggerOnScreenParticlesRpc": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x18_S0FXO[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Particles",
-        "Type": "class ParticleSystem*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "QuestVariableActorAssetTypeArray": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_GFMWR[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CriticalActorWrapper": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "CriticalActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x38_B6BTH[0x38]",
-        "Type": "char",
-        "Size": "0x38",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "JumpToMontageSectionCommand": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x18_07APZ[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SectionName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "TrackedActorData": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Actor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x8_XJ1B6[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "TaleQuestQueryableStateReadValueIntCondition": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "pad0x28_063FR[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DataID",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "ExpectedValue",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "ComparisonToExpectedValue",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "pad0x3_4MZSG[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x35"
-      }
-    ]
-  },
-  "QuestVariableObjectArray": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_5MK3W[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TaleQuestToggledDefinition": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "FeatureToggle",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Definition",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x8"
       }
     ]
   },
@@ -589,107 +1110,42 @@
       }
     ]
   },
-  "SnapshottedActorData": {
-    "ClassSize": "0x60",
+  "TaleQuestContextInvalidTelemetryEvent": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_E4JN6[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SnapshotID",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "ActorWasCritical",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "ActorWasTracked",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x21"
-      },
-      {
-        "Name": "pad0x6_LG71S[0x6]",
-        "Type": "char",
-        "Size": "0x6",
-        "Offset": "0x22"
-      },
-      {
-        "Name": "FailureMessage",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "SetNextMontageSectionCommand": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x18_JWRV2[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "FromSectionName",
+        "Name": "StepType",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x18"
+        "Offset": "0x0"
       },
       {
-        "Name": "ToSectionName",
+        "Name": "Tale",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "CompondNodePinDesc": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "DisplayName",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PinId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "NameRedirectionTypeInfo": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "NameRedirectionType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x7_YK33B[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "RedirectedName",
-        "Type": "struct FText",
-        "Size": "0x38",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "QuestVariableMerchantItemArray": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_LLHAS[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "QuestVariableSetEQSTaleContextValue": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_FJK8B[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
       }
     ]
   },
@@ -697,20 +1153,9 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x30_9J7GJ[0x30]",
+        "Name": "pad0x30_ZKR7A[0x30]",
         "Type": "char",
         "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ActorSpawnedAutomationEvent": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_X9T43[0x8]",
-        "Type": "char",
-        "Size": "0x8",
         "Offset": "0x0"
       }
     ]
@@ -725,32 +1170,112 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x8_FGU9D[0x8]",
+        "Name": "pad0x8_68Q2K[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x10"
       }
     ]
   },
-  "QuestVariableCollection": {
+  "SetDialogueInteractionPromptClientCommand": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x8_ZRY3L[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DialogueComponent",
+        "Type": "class NPCDialogComponent*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Prompt",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "QuestVariableObjectArray": {
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x30_R1QHH[0x30]",
+        "Name": "pad0x30_48HKB[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x0"
       }
     ]
   },
-  "QuestVariableTaleResourceHandle": {
-    "ClassSize": "0x30",
+  "NameRedirectionTypeInfo": {
+    "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x30_OQFBE[0x30]",
-        "Type": "char",
-        "Size": "0x30",
+        "Name": "NameRedirectionType",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_6P6PJ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "RedirectedName",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "TaleQuestForEachCrewTask": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x28_NM0L3[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "PlaySequencerAutomationEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_4R6TC[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CriticalActorDelegateData": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "CriticalActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "FailureMessage",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x8_GJBFQ[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x40"
       }
     ]
   },
@@ -795,323 +1320,8 @@
       }
     ]
   },
-  "PhasedActor": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "MapActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Actor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x10_ENCK2[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "TaleQuestStopPermanentPromptEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_ZCPX6[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TaleQuestQueryableStateReadAnyValueBoolCondition": {
+  "CriticalActorWrapper": {
     "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "pad0x28_VZ1TD[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AllDataToCheck",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "ExpectedValue",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x7_0F0Q7[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x39"
-      }
-    ]
-  },
-  "IslandTypeWeights": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "FeatureIslandWeight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ResourceIslandWeight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "OutpostIslandWeight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "SeapostIslandWeight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "FortIslandWeight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "SplineFootprintPathTool": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_R0JXP[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "PredicatedBranchedTask": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "pad0x48_FFTV7[0x48]",
-        "Type": "char",
-        "Size": "0x48",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "PlaySequencerAutomationEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_GS7MT[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "PhasedItem": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "ItemProxy",
-        "Type": "class ItemProxy*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ItemInfo",
-        "Type": "class ItemInfo*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Tracked",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x17_VB7XC[0x17]",
-        "Type": "char",
-        "Size": "0x17",
-        "Offset": "0x11"
-      }
-    ]
-  },
-  "TaleQuestDeliveryRequest": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "Id",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x4_3EQCU[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "Item",
-        "Type": "struct MerchantContractItemDesc",
-        "Size": "0x28",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "NumToDeliver",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "NumToAllocate",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x34"
-      }
-    ]
-  },
-  "QuestVariableGuidArray": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_ZYXTR[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ParticpantToolGroup": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_R6U2C[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "MontageAnimationCommandBase": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x8_GTWFX[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MyTarget",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "MyMontage",
-        "Type": "class AnimMontage*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "MigrationActionPair": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "AllocatedResourceHandle",
-        "Type": "struct TaleResourceHandle",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MigrationAction",
-        "Type": "class TaleMigrationAction*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "CutsceneStartedTelemetryEvent": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "CutsceneId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CutsceneName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "CutsceneDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "IsLooping",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x24"
-      },
-      {
-        "Name": "pad0x3_66DL9[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x25"
-      },
-      {
-        "Name": "ParticipatingPlayers",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "ParticipatingCrewIds",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "TaleQuestPhaseClusterRootActor": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_PG1C0[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CriticalActorDelegateData": {
-    "ClassSize": "0x48",
     "Attributes": [
       {
         "Name": "CriticalActor",
@@ -1120,24 +1330,62 @@
         "Offset": "0x0"
       },
       {
-        "Name": "FailureMessage",
-        "Type": "struct FText",
+        "Name": "pad0x38_410UY[0x38]",
+        "Type": "char",
         "Size": "0x38",
         "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x8_JTFC3[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x40"
       }
     ]
   },
-  "TaleQuestQueryableStateCanAnyDataBeReadCondition": {
+  "QuestVariableTaleResourceHandle": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_P2KUJ[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "QuestVariableItemDescType": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_OE5D9[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "QuestVariableClassArray": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_17IXC[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "QuestVariableRotator": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_6RM79[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TaleQuestQueryableStateReadAnyValueBoolCondition": {
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x28_2UT7P[0x28]",
+        "Name": "pad0x28_L1IAQ[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x0"
@@ -1155,287 +1403,56 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x7_INWSD[0x7]",
+        "Name": "pad0x7_MVDCI[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x39"
       }
     ]
   },
-  "ToggleModalInteractionNetworkEvent": {
-    "ClassSize": "0x30",
+  "TaleQuestQueryableStateReadAllValueBoolCondition": {
+    "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x18_DNHBT[0x18]",
+        "Name": "pad0x28_QQEQC[0x28]",
         "Type": "char",
-        "Size": "0x18",
+        "Size": "0x28",
         "Offset": "0x0"
       },
       {
-        "Name": "TargetActor",
-        "Type": "struct NetActorPtr",
-        "Size": "0x14",
-        "Offset": "0x18"
+        "Name": "AllDataToCheck",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x28"
       },
       {
-        "Name": "InteractionBlocked",
+        "Name": "ExpectedValue",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x2c"
+        "Offset": "0x38"
       },
       {
-        "Name": "pad0x3_PGNWR[0x3]",
+        "Name": "pad0x7_7V10W[0x7]",
         "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x2d"
+        "Size": "0x7",
+        "Offset": "0x39"
       }
     ]
   },
-  "StopMontageAnimationCommand": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x18_WO1MX[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "BlendOutTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x4_O9I36[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x1c"
-      }
-    ]
-  },
-  "QuestVariableTexture": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_94PS2[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "QuestVariableActorArray": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_YV1WU[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "BodyFramePair": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x10_ESLV8[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Frame",
-        "Type": "class TaleQuestIndexedFrame*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x10_FZ884[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "QuestVariablePrioritisedPrompt": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_GQR6D[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "QuestVariableBountyTargetArray": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_QP4VT[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SetDialogueInteractionPromptClientCommand": {
+  "NameRedirectionData": {
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x8_S71FR[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DialogueComponent",
-        "Type": "class NPCDialogComponent*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Prompt",
+        "Name": "OriginalName",
         "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "TaleQuestQueryableStateDataInfoId": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "MyTaleId",
-        "Type": "struct Guid",
-        "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "MyScopeId",
-        "Type": "struct Guid",
+        "Name": "RedirectedNames",
+        "Type": "TArray<struct NameRedirectionTypeInfo>",
         "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "QuestVariableItemInfo": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_LSU0R[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "QuestVariableMerchantItem": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_IRDWF[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TaleQuestForEachCrewTask": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x28_6Z3LO[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TaleQuestQueryableStateCanAllDataBeReadCondition": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "pad0x28_C653Q[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AllDataToCheck",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "ExpectedValue",
-        "Type": "bool",
-        "Size": "0x1",
         "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x7_VO6U5[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x39"
-      }
-    ]
-  },
-  "QuestVariableItemDescTypeArray": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_I2YG0[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TaleQuestContextInvalidTelemetryEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "StepType",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Tale",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "TaleQuestCargoRunContractItem": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "ItemToCollect",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x10_SMU24[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "QuestVariableAny": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_9I41M[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
       }
     ]
   },
@@ -1443,7 +1460,7 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x18_H0TNB[0x18]",
+        "Name": "pad0x18_TNSIT[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"
@@ -1455,7 +1472,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_AO27R[0x4]",
+        "Name": "pad0x4_126T8[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x24"
@@ -1484,7 +1501,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x3_X8HAA[0x3]",
+        "Name": "pad0x3_488CW[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x29"
@@ -1494,23 +1511,6 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x2c"
-      }
-    ]
-  },
-  "NameRedirectionData": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "OriginalName",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "RedirectedNames",
-        "Type": "TArray<struct NameRedirectionTypeInfo>",
-        "Size": "0x10",
-        "Offset": "0x38"
       }
     ]
   },

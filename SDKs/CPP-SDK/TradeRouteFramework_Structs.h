@@ -8,9 +8,9 @@ struct TradeRouteMapping
 {
 public:
 	char                                                         Filter;                                            // 0x0(0x1)
-	char                                                         pad0x3_DCMKF[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_9IQL0[0x3];                                 // 0x1(0x3)
 	struct IslandSelectionType                                   StartIsland;                                       // 0x4(0x8)
-	char                                                         pad0x4_CSLNB[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_4GGC6[0x4];                                 // 0xc(0x4)
 	class UClass*                                                DifficultyBand;                                    // 0x10(0x8)
 	struct StringAssetReference                                  TradeRouteReference;                               // 0x18(0x10)
 };
@@ -20,7 +20,7 @@ public:
 struct QuestVariableTradeRouteData
 {
 public:
-	char                                                         pad0x30_RT5JD[0x30];                               // 0x0(0x30)
+	char                                                         pad0x30_TAWLS[0x30];                               // 0x0(0x30)
 };
 
 
@@ -28,7 +28,7 @@ public:
 struct TradeRouteMappingFilterQuestVariable
 {
 public:
-	char                                                         pad0x30_3L7PC[0x30];                               // 0x0(0x30)
+	char                                                         pad0x30_DDW2A[0x30];                               // 0x0(0x30)
 };
 
 

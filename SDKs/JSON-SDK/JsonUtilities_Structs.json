@@ -1,43 +1,10 @@
 {
-  "TestInvalidStringMapSerializationObject": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x50_GSOQB[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TestMessageInt64": {
+  "TestMessageDateTime": {
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_CEMTK[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TestMessageUInt64": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_I19FG[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TestMessageTimespan": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Timespan",
-        "Type": "struct Timespan",
+        "Name": "DateTime",
+        "Type": "struct DateTime",
         "Size": "0x8",
         "Offset": "0x0"
       }
@@ -53,7 +20,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_UP8Y4[0x3]",
+        "Name": "pad0x3_HUM5K[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
@@ -78,35 +45,24 @@
       }
     ]
   },
-  "TestMessageDateTime": {
+  "TestStringMapSerializationObject": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x50_SDJB2[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TestMessageUInt64": {
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "DateTime",
-        "Type": "struct DateTime",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TestEnumObject": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "TestEnum",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "JsonObjectWrapper": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_P9JKT[0x18]",
+        "Name": "pad0x8_BSS9X[0x8]",
         "Type": "char",
-        "Size": "0x18",
+        "Size": "0x8",
         "Offset": "0x0"
       }
     ]
@@ -128,13 +84,46 @@
       }
     ]
   },
-  "TestInt32MapSerializationObject": {
+  "TestUStructMapSerializationObject": {
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x50_5IU4P[0x50]",
+        "Name": "pad0x50_FYOLI[0x50]",
         "Type": "char",
         "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TestInvalidStringMapSerializationObject": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x50_MM292[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TestMessageTimespan": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Timespan",
+        "Type": "struct Timespan",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "JsonObjectWrapper": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_QS9CA[0x18]",
+        "Type": "char",
+        "Size": "0x18",
         "Offset": "0x0"
       }
     ]
@@ -156,22 +145,33 @@
       }
     ]
   },
-  "TestUStructMapSerializationObject": {
-    "ClassSize": "0x50",
+  "TestEnumObject": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x50_6I5SK[0x50]",
-        "Type": "char",
-        "Size": "0x50",
+        "Name": "TestEnum",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x0"
       }
     ]
   },
-  "TestStringMapSerializationObject": {
+  "TestMessageInt64": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_VNH3D[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TestInt32MapSerializationObject": {
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x50_RSX7A[0x50]",
+        "Name": "pad0x50_JD5P9[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x0"

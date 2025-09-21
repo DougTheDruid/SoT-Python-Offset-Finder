@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 UtilityVoyageData:
   Attributes:
-  - Name: pad0x58_CKU26[0x58]
+  - Name: pad0x58_XP3Z3[0x58]
     Offset: '0x0'
     Size: '0x58'
     Type: char

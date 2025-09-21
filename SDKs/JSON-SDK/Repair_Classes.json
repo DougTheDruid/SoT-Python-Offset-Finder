@@ -1,17 +1,17 @@
 {
-  "RepairTypeId": {
-    "Super": "Object",
-    "FullSize": "0x60",
+  "RepairableInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
     "InheritedSize": "0x28",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "DisplayName",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x28"
-      }
-    ]
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RepairObjectActionStateId": {
+    "Super": "ActionStateId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "RepairingInterface": {
     "Super": "Interface",
@@ -27,19 +27,19 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "RepairableInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
+  "RepairTypeId": {
+    "Super": "Object",
+    "FullSize": "0x60",
     "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RepairObjectActionStateId": {
-    "Super": "ActionStateId",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "DisplayName",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x28"
+      }
+    ]
   },
   "WoodRepairTypeId": {
     "Super": "RepairTypeId",

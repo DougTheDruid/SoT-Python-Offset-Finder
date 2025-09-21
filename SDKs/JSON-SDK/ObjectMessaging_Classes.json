@@ -1,6 +1,13 @@
 {
-  "ObjectMessagingFunctions": {
-    "Super": "BlueprintFunctionLibrary",
+  "ObjectMessagingInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ObjectMessagingDispatcherInterface": {
+    "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
@@ -13,22 +20,15 @@
     "ClassSize": "0xa8",
     "Attributes": [
       {
-        "Name": "pad0xa8_QS0C7[0xa8]",
+        "Name": "pad0xa8_NWLWS[0xa8]",
         "Type": "char",
         "Size": "0xa8",
         "Offset": "0xb8"
       }
     ]
   },
-  "ObjectMessagingInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ObjectMessagingDispatcherInterface": {
-    "Super": "Interface",
+  "ObjectMessagingFunctions": {
+    "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",

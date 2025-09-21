@@ -1,331 +1,18 @@
 {
-  "AIStimulus": {
-    "ClassSize": "0x3c",
-    "Attributes": [
-      {
-        "Name": "Age",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ExpirationAge",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "Strength",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "StimulusLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "ReceiverLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "Tag",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x24"
-      },
-      {
-        "Name": "pad0xc_9D43Q[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "bSuccessfullySensed",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x3_J5GUF[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x39"
-      }
-    ]
-  },
-  "AISenseAffiliationFilter": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "bDetectEnemies",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "bDetectNeutrals",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "bDetectFriendlies",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x3_6Q8JB[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1"
-      }
-    ]
-  },
-  "GenericTeamId": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "TeamID",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "BlackboardEntry": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "EntryName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "KeyType",
-        "Type": "class BlackboardKeyType*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "bInstanceSynced",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x7_MUZVT[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x11"
-      }
-    ]
-  },
-  "AIRequestID": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "pad0x4_969E1[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "BlackboardKeySelector": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "AllowedTypes",
-        "Type": "TArray<class BlackboardKeyType*>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SelectedKeyName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "SelectedKeyType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "SelectedKeyID",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "pad0x3_T21UB[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x21"
-      },
-      {
-        "Name": "bNoneIsAllowedValue",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x24"
-      },
-      {
-        "Name": "pad0x3_VOWMN[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x25"
-      }
-    ]
-  },
-  "AIDamageEvent": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Amount",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "HitLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x4_5IBR5[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x1c"
-      },
-      {
-        "Name": "DamagedActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "Instigator",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "AIMoveRequest": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "GoalActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x38_S7U5J[0x38]",
-        "Type": "char",
-        "Size": "0x38",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "BehaviorTreeTemplateInfo": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Asset",
-        "Type": "class BehaviorTree*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Template",
-        "Type": "class BTCompositeNode*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x8_DLNTB[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "EnvIntParam_DEPRECATED": {
+  "IgnoreActorInfo": {
     "ClassSize": "0xc",
     "Attributes": [
       {
-        "Name": "Value",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ParamName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "EnvQueryInstanceCache": {
-    "ClassSize": "0x2e0",
-    "Attributes": [
-      {
-        "Name": "Template",
-        "Type": "class EnvQuery*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x2d8_15ZAE[0x2d8]",
+        "Name": "pad0x8_FU6BP[0x8]",
         "Type": "char",
-        "Size": "0x2d8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "EnvNamedValue": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ParamName",
-        "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "ParamType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x3_EHO48[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x9"
-      },
-      {
-        "Name": "Value",
+        "Name": "TimeRemaining",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xc"
+        "Offset": "0x8"
       }
     ]
   },
@@ -339,7 +26,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_M1L3I[0x4]",
+        "Name": "pad0x4_CQQ0Y[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -453,7 +140,7 @@
         "Offset": "0x34"
       },
       {
-        "Name": "pad0x3_5UX31[0x3]",
+        "Name": "pad0x3_NPHTN[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x35"
@@ -471,125 +158,130 @@
         "Offset": "0x39"
       },
       {
-        "Name": "pad0x6_AOAXW[0x6]",
+        "Name": "pad0x6_TZLL1[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x3a"
       }
     ]
   },
-  "AIPredictionEvent": {
+  "AIDataProviderStructValue": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_A6R3R[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "PawnActionEvent": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "Requestor",
-        "Type": "class Actor*",
+        "Name": "Action",
+        "Type": "class PawnAction*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "PredictedActor",
-        "Type": "class Actor*",
+        "Name": "pad0x10_3BO7R[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "BlackboardEntry": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "EntryName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "KeyType",
+        "Type": "class BlackboardKeyType*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x8_QG5LF[0x8]",
-        "Type": "char",
-        "Size": "0x8",
+        "Name": "bInstanceSynced",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_ZEJWA[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
       }
     ]
   },
-  "BTDecoratorLogic": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "Operation",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x1_99X3V[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "pad0x2_DXZB9[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x2"
-      }
-    ]
-  },
-  "EnvBoolParam": {
+  "EnvIntParam_DEPRECATED": {
     "ClassSize": "0xc",
     "Attributes": [
       {
-        "Name": "pad0xc_F5VK4[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EnvQueryResult": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "pad0x10_36GJM[0x10]",
-        "Type": "char",
-        "Size": "0x10",
+        "Name": "Value",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "ItemType",
+        "Name": "ParamName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "EnvDirection": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "LineFrom",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "LineTo",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Rotation",
         "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x14_38P25[0x14]",
-        "Type": "char",
-        "Size": "0x14",
+        "Name": "DirMode",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x18"
       },
       {
-        "Name": "OptionIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "QueryID",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0xc_IVDNI[0xc]",
+        "Name": "pad0x7_64MCR[0x7]",
         "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x34"
+        "Size": "0x7",
+        "Offset": "0x19"
       }
     ]
   },
-  "CrowdAvoidanceSamplingPattern": {
-    "ClassSize": "0x20",
+  "EnvIntParam": {
+    "ClassSize": "0xc",
     "Attributes": [
       {
-        "Name": "Angles",
-        "Type": "TArray<float>",
-        "Size": "0x10",
+        "Name": "pad0xc_13GOB[0xc]",
+        "Type": "char",
+        "Size": "0xc",
         "Offset": "0x0"
-      },
-      {
-        "Name": "Radii",
-        "Type": "TArray<float>",
-        "Size": "0x10",
-        "Offset": "0x10"
       }
     ]
   },
@@ -610,11 +302,79 @@
       }
     ]
   },
+  "AITouchEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x10_1V3RA[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TouchReceiver",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "OtherActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "EnvBoolParam": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "pad0xc_M45G1[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AIDataProviderBoolValue": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x28_ZL6RL[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DefaultValue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x7_1MW5S[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x29"
+      }
+    ]
+  },
+  "PawnActionStack": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "TopAction",
+        "Type": "class PawnAction*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "AINoiseEvent": {
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x4_DV21E[0x4]",
+        "Name": "pad0x4_W7LMK[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x0"
@@ -650,233 +410,10 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x8_X2SD3[0x8]",
+        "Name": "pad0x8_N5YCD[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
-      }
-    ]
-  },
-  "AIDataProviderTypedValue": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x20_EVOKY[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PropertyType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "AIDataProviderValue": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x8_JMV0P[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CachedProperty",
-        "Type": "class Property*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "DataBinding",
-        "Type": "class AIDataProvider*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "DataField",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "CustomDataProviderObjectPropertySelector": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ObjectClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PropertyName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "IgnoreActorInfo": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "pad0x8_07821[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TimeRemaining",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "PawnActionEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Action",
-        "Type": "class PawnAction*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x10_7QRUY[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AIDataProviderStructValue": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_698Z9[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EnvBoolParam_DEPRECATED": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "Value",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x3_MKHLL[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "ParamName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "AIDataProviderBoolValue": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x28_CMGQL[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DefaultValue",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x7_T8K6N[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x29"
-      }
-    ]
-  },
-  "EnvFloatParam": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "pad0xc_K8XQ6[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "AIDataProviderIntValue": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x28_XAQ4J[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DefaultValue",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x4_DHHW4[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      }
-    ]
-  },
-  "EnvDirection": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "LineFrom",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "LineTo",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Rotation",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "DirMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x7_ULQWD[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x19"
       }
     ]
   },
@@ -945,6 +482,364 @@
       }
     ]
   },
+  "AIDataProviderValue": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x8_0G3GR[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CachedProperty",
+        "Type": "class Property*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "DataBinding",
+        "Type": "class AIDataProvider*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "DataField",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "EnvBoolParam_DEPRECATED": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "Value",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_5DW9T[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "ParamName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "AISenseAffiliationFilter": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "bDetectEnemies",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "bDetectNeutrals",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "bDetectFriendlies",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_PI9H0[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      }
+    ]
+  },
+  "AIDataProviderIntValue": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x28_0AV9V[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DefaultValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_JZM5U[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      }
+    ]
+  },
+  "AIPredictionEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Requestor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PredictedActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x8_6A6D6[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "AIMoveRequest": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "GoalActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x38_3PR51[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AIRequestID": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "pad0x4_740OX[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AIStimulus": {
+    "ClassSize": "0x3c",
+    "Attributes": [
+      {
+        "Name": "Age",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ExpirationAge",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "Strength",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "StimulusLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "ReceiverLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Tag",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "pad0xc_HI8WU[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "bSuccessfullySensed",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x3_LGHPA[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x39"
+      }
+    ]
+  },
+  "EnvFloatParam": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "pad0xc_H62B7[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AISightEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x8_TQJOP[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SeenActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Observer",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "AIDamageEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Amount",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "HitLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_QZZ1T[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "DamagedActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "Instigator",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "AIDataProviderFloatValue": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x28_7DCJG[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DefaultValue",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_IIQPO[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      }
+    ]
+  },
+  "BTDecoratorLogic": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "Operation",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x1_I5HNJ[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "pad0x2_V7FIF[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x2"
+      }
+    ]
+  },
+  "AITeamStimulusEvent": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "pad0x28_WMMNE[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Broadcaster",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Enemy",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
   "EnvQueryRequest": {
     "ClassSize": "0x170",
     "Attributes": [
@@ -967,124 +862,258 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x158_M912N[0x158]",
+        "Name": "pad0x158_6D7DT[0x158]",
         "Type": "char",
         "Size": "0x158",
         "Offset": "0x18"
       }
     ]
   },
-  "AIDataProviderFloatValue": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x28_06Y1C[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DefaultValue",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x4_TEC5Y[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      }
-    ]
-  },
-  "EnvIntParam": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "pad0xc_SNSQ2[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "PawnActionStack": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "TopAction",
-        "Type": "class PawnAction*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "AITouchEvent": {
+  "CrowdAvoidanceSamplingPattern": {
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x10_M2ELT[0x10]",
+        "Name": "Angles",
+        "Type": "TArray<float>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Radii",
+        "Type": "TArray<float>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EnvQueryResult": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "pad0x10_CMK3V[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "TouchReceiver",
-        "Type": "class Actor*",
+        "Name": "ItemType",
+        "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x10"
       },
       {
-        "Name": "OtherActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
+        "Name": "pad0x14_9FLPA[0x14]",
+        "Type": "char",
+        "Size": "0x14",
         "Offset": "0x18"
+      },
+      {
+        "Name": "OptionIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "QueryID",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0xc_YOVR5[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x34"
       }
     ]
   },
-  "AITeamStimulusEvent": {
-    "ClassSize": "0x38",
+  "BlackboardKeySelector": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x28_7O778[0x28]",
-        "Type": "char",
-        "Size": "0x28",
+        "Name": "AllowedTypes",
+        "Type": "TArray<class BlackboardKeyType*>",
+        "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "Broadcaster",
-        "Type": "class Actor*",
+        "Name": "SelectedKeyName",
+        "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x28"
+        "Offset": "0x10"
       },
       {
-        "Name": "Enemy",
-        "Type": "class Actor*",
+        "Name": "SelectedKeyType",
+        "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x30"
+        "Offset": "0x18"
+      },
+      {
+        "Name": "SelectedKeyID",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x3_KL9UJ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x21"
+      },
+      {
+        "Name": "bNoneIsAllowedValue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "pad0x3_HGM5C[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x25"
       }
     ]
   },
-  "AISightEvent": {
+  "GenericTeamId": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "TeamID",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AIDataProviderTypedValue": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x20_3WXV8[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PropertyType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "CustomDataProviderObjectPropertySelector": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ObjectClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PropertyName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "BehaviorTreeTemplateInfo": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x8_O0TI8[0x8]",
-        "Type": "char",
+        "Name": "Asset",
+        "Type": "class BehaviorTree*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "SeenActor",
-        "Type": "class Actor*",
+        "Name": "Template",
+        "Type": "class BTCompositeNode*",
         "Size": "0x8",
         "Offset": "0x8"
       },
       {
-        "Name": "Observer",
-        "Type": "class Actor*",
+        "Name": "pad0x8_3JCEN[0x8]",
+        "Type": "char",
         "Size": "0x8",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "EnvNamedValue": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ParamName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ParamType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x3_0XQ05[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x9"
+      },
+      {
+        "Name": "Value",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "EnvQueryInstanceCache": {
+    "ClassSize": "0x2e0",
+    "Attributes": [
+      {
+        "Name": "Template",
+        "Type": "class EnvQuery*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x2d8_L04BC[0x2d8]",
+        "Type": "char",
+        "Size": "0x2d8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "ActorPerceptionBlueprintInfo": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Target",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "LastSensedStimuli",
+        "Type": "TArray<struct AIStimulus>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "bIsHostile",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x7_OLQ9K[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x19"
       }
     ]
   },
@@ -1114,35 +1143,6 @@
         "Type": "TArray<struct BTDecoratorLogic>",
         "Size": "0x10",
         "Offset": "0x20"
-      }
-    ]
-  },
-  "ActorPerceptionBlueprintInfo": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Target",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "LastSensedStimuli",
-        "Type": "TArray<struct AIStimulus>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "bIsHostile",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x7_GCTNH[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x19"
       }
     ]
   },

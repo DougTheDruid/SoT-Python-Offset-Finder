@@ -6,18 +6,18 @@
 #include "RemoteEmergentVoyage_Structs.h"
 
 
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class RemoteEmergentVoyageService: public Object
-{
-public:
-	char                                                         pad0x8_JL8I6[0x8];                                 // 0x28(0x8)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class RemoteEmergentVoyageInterface: public Interface
 {
 public:
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class RemoteEmergentVoyageService: public Object
+{
+public:
+	char                                                         pad0x8_NRP1S[0x8];                                 // 0x28(0x8)
 };
 
 

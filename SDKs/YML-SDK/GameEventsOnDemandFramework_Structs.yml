@@ -28,7 +28,7 @@ GameEventAvailabilityData:
     Offset: '0x11'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_GIT88[0x6]
+  - Name: pad0x6_LYZ5M[0x6]
     Offset: '0x12'
     Size: '0x6'
     Type: char
@@ -87,7 +87,7 @@ GameEventOnDemandCompletedTelemetryEvent:
   ClassSize: '0x30'
 GameEventOnDemandCrewCancelledVoyageTelemetryEvent:
   Attributes:
-  - Name: pad0x1_3F3BM[0x1]
+  - Name: pad0x1_4ZG14[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -105,7 +105,7 @@ GameEventOnDemandCrewJoinedTelemetryEvent:
   ClassSize: '0x20'
 GameEventOnDemandCrewScuttledTelemetryEvent:
   Attributes:
-  - Name: pad0x1_181BC[0x1]
+  - Name: pad0x1_TQY9T[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -119,7 +119,7 @@ GameEventOnDemandCrewSentToSinkingTunnel:
   ClassSize: '0x10'
 GameEventOnDemandCrewSinkingTelemetryEvent:
   Attributes:
-  - Name: pad0x1_VQS6C[0x1]
+  - Name: pad0x1_2STYY[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char

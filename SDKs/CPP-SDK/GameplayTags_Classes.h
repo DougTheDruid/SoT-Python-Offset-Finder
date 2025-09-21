@@ -6,20 +6,22 @@
 #include "GameplayTags_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class EditableGameplayTagQueryExpression: public Object
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class GameplayTagsSettings: public Object
 {
 public:
+	TArray<String>                                               GameplayTags;                                      // 0x28(0x10)
 };
 
 
-// Size 0x148 (Full Size[0x170] - InheritedSize[0x28]
-class GameplayTagsManager: public Object
+// Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
+class EditableGameplayTagQuery: public Object
 {
 public:
-	char                                                         pad0x118_3YG78[0x118];                             // 0x28(0x118)
-	TArray<class DataTable*>                                     GameplayTagTables;                                 // 0x140(0x10)
-	char                                                         pad0x20_N1CKA[0x20];                               // 0x150(0x20)
+	struct FString                                               UserDescription;                                   // 0x28(0x10)
+	char                                                         pad0x10_W58M0[0x10];                               // 0x38(0x10)
+	class EditableGameplayTagQueryExpression*                    RootExpression;                                    // 0x48(0x8)
+	struct GameplayTagQuery                                      TagQueryExportText_Helper;                         // 0x50(0x48)
 };
 
 
@@ -30,11 +32,20 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class GameplayTagsSettings: public Object
+// Size 0x148 (Full Size[0x170] - InheritedSize[0x28]
+class GameplayTagsManager: public Object
 {
 public:
-	TArray<String>                                               GameplayTags;                                      // 0x28(0x10)
+	char                                                         pad0x118_33M7C[0x118];                             // 0x28(0x118)
+	TArray<class DataTable*>                                     GameplayTagTables;                                 // 0x140(0x10)
+	char                                                         pad0x20_5E2JM[0x20];                               // 0x150(0x20)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class EditableGameplayTagQueryExpression: public Object
+{
+public:
 };
 
 
@@ -45,14 +56,11 @@ public:
 };
 
 
-// Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
-class EditableGameplayTagQuery: public Object
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class EditableGameplayTagQueryExpression_AnyExprMatch: public EditableGameplayTagQueryExpression
 {
 public:
-	struct FString                                               UserDescription;                                   // 0x28(0x10)
-	char                                                         pad0x10_Q9WOE[0x10];                               // 0x38(0x10)
-	class EditableGameplayTagQueryExpression*                    RootExpression;                                    // 0x48(0x8)
-	struct GameplayTagQuery                                      TagQueryExportText_Helper;                         // 0x50(0x48)
+	TArray<class EditableGameplayTagQueryExpression*>            Expressions;                                       // 0x28(0x10)
 };
 
 
@@ -80,14 +88,6 @@ public:
 };
 
 
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class EditableGameplayTagQueryExpression_NoTagsMatch: public EditableGameplayTagQueryExpression
-{
-public:
-	struct GameplayTagContainer                                  Tags;                                              // 0x28(0x28)
-};
-
-
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class EditableGameplayTagQueryExpression_AllExprMatch: public EditableGameplayTagQueryExpression
 {
@@ -96,11 +96,11 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class EditableGameplayTagQueryExpression_AnyExprMatch: public EditableGameplayTagQueryExpression
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class EditableGameplayTagQueryExpression_NoTagsMatch: public EditableGameplayTagQueryExpression
 {
 public:
-	TArray<class EditableGameplayTagQueryExpression*>            Expressions;                                       // 0x28(0x10)
+	struct GameplayTagContainer                                  Tags;                                              // 0x28(0x28)
 };
 
 

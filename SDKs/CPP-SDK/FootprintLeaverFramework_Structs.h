@@ -4,6 +4,15 @@
 // https://github.com/DougTheDruid
 
 // Size 0x20
+struct FootprintLeaverComponentSpawnDecalTelemetryEvent
+{
+public:
+	struct FString                                               DecalComponentName;                                // 0x0(0x10)
+	struct FString                                               ActorThatSpawnedItName;                            // 0x10(0x10)
+};
+
+
+// Size 0x20
 struct FootprintLeaverComponentReusedDecalTelemetryEvent
 {
 public:
@@ -17,19 +26,10 @@ struct BoarFootprintProperties
 {
 public:
 	bool                                                         UseFootprintSpecificScale;                         // 0x0(0x1)
-	char                                                         pad0x7_ZG1H7[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_HBYC7[0x7];                                 // 0x1(0x7)
 	class MaterialInterface*                                     FootprintDecal;                                    // 0x8(0x8)
 	struct Vector                                                FootprintDecalScale;                               // 0x10(0xc)
-	char                                                         pad0x4_4P4ZJ[0x4];                                 // 0x1c(0x4)
-};
-
-
-// Size 0x20
-struct FootprintLeaverComponentSpawnDecalTelemetryEvent
-{
-public:
-	struct FString                                               DecalComponentName;                                // 0x0(0x10)
-	struct FString                                               ActorThatSpawnedItName;                            // 0x10(0x10)
+	char                                                         pad0x4_3LE26[0x4];                                 // 0x1c(0x4)
 };
 
 

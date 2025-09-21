@@ -9,7 +9,7 @@ struct OverheatingReplicatedData
 public:
 	float                                                        CurrentOverheatingTimeInState;                     // 0x0(0x4)
 	char                                                         CurrentOverheatingState;                           // 0x4(0x1)
-	char                                                         pad0x3_9OIT7[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_2IKGV[0x3];                                 // 0x5(0x3)
 };
 
 
@@ -18,7 +18,7 @@ struct OverheatingHandOverData
 {
 public:
 	TArray<uintptr_t>                                            Contributors;                                      // 0x0(0x10)
-	char                                                         pad0x8_GSB9H[0x8];                                 // 0x10(0x8)
+	char                                                         pad0x8_BRYGD[0x8];                                 // 0x10(0x8)
 };
 
 

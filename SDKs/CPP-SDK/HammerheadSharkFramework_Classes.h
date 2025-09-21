@@ -17,21 +17,21 @@ public:
 };
 
 
-// Size 0x88 (Full Size[0x428] - InheritedSize[0x3a0]
-class HammerheadSharkTreasureSite: public Actor
-{
-public:
-	char                                                         pad0x88_A1YSZ[0x88];                               // 0x3a0(0x88)
-};
-
-
 // Size 0xf0 (Full Size[0x490] - InheritedSize[0x3a0]
 class HammerheadService: public Actor
 {
 public:
-	char                                                         pad0x8_5Q9KF[0x8];                                 // 0x3a0(0x8)
+	char                                                         pad0x8_M2GHS[0x8];                                 // 0x3a0(0x8)
 	class DataAsset*                                             ServiceDataAssetParams;                            // 0x3a8(0x8)
-	char                                                         pad0xe0_9RVM0[0xe0];                               // 0x3b0(0xe0)
+	char                                                         pad0xe0_TKICR[0xe0];                               // 0x3b0(0xe0)
+};
+
+
+// Size 0x88 (Full Size[0x428] - InheritedSize[0x3a0]
+class HammerheadSharkTreasureSite: public Actor
+{
+public:
+	char                                                         pad0x88_XDK8V[0x88];                               // 0x3a0(0x88)
 };
 
 

@@ -10,7 +10,7 @@
 class LostSandsRowboatGunpowderBarrel: public Actor
 {
 public:
-	char                                                         pad0xb8_UZ4AH[0xb8];                               // 0x3a0(0xb8)
+	char                                                         pad0xb8_VLEVZ[0xb8];                               // 0x3a0(0xb8)
 	class ActionRulesComponent*                                  ActionRulesComponent;                              // 0x458(0x8)
 	class InteractableComponent*                                 InteractableComponent;                             // 0x460(0x8)
 	class StaticMeshMemoryConstraintComponent*                   StaticMeshComponent;                               // 0x468(0x8)
@@ -26,7 +26,7 @@ public:
 	TArray<float>                                                DistanceFromNamedPoints;                           // 0x538(0x10)
 	struct PlayerStat                                            RowboatDestroyedAtGoldenSandsStat;                 // 0x548(0x4)
 	struct PlayerStat                                            RowboatDestroyedAwayFromGoldenSandsStat;           // 0x54c(0x4)
-	char                                                         pad0x90_RKEYB[0x90];                               // 0x550(0x90)
+	char                                                         pad0x90_80NQ1[0x90];                               // 0x550(0x90)
 };
 
 

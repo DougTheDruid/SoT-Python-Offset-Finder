@@ -7,7 +7,15 @@
 struct FixedSplinePathingActorMovementStartedEvent
 {
 public:
-	char                                                         pad0x1_DQAPW[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_LLBHO[0x1];                                 // 0x0(0x1)
+};
+
+
+// Size 0x1
+struct FixedSplinePathingActorMovementEndedEvent
+{
+public:
+	char                                                         pad0x1_XB1RT[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -16,14 +24,6 @@ struct SplinePathingActorAtDestination
 {
 public:
 	class Actor*                                                 Actor;                                             // 0x0(0x8)
-};
-
-
-// Size 0x1
-struct FixedSplinePathingActorMovementEndedEvent
-{
-public:
-	char                                                         pad0x1_ALMC3[0x1];                                 // 0x0(0x1)
 };
 
 

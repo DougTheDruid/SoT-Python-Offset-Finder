@@ -15,11 +15,11 @@ public:
 	float                                                        MaxRangeFromTarget;                                // 0x38(0x4)
 	float                                                        SubsequentCrewJoinRadiusModifier;                  // 0x3c(0x4)
 	class UClass*                                                GameEventType;                                     // 0x40(0x8)
-	char                                                         pad0xe0_7XOZ6[0xe0];                               // 0x48(0xe0)
+	char                                                         pad0xe0_J4LLY[0xe0];                               // 0x48(0xe0)
 	class VoyageDescDataAsset*                                   LeaveTunnelVoyageDesc;                             // 0x128(0x8)
-	char                                                         pad0x14_SVI89[0x14];                               // 0x130(0x14)
+	char                                                         pad0x14_72O8Q[0x14];                               // 0x130(0x14)
 	float                                                        RetryRequestEventFrequency;                        // 0x144(0x4)
-	char                                                         pad0x10_PDMDY[0x10];                               // 0x148(0x10)
+	char                                                         pad0x10_ROGUW[0x10];                               // 0x148(0x10)
 };
 
 
@@ -27,18 +27,18 @@ public:
 class AdventureOnDemandService: public Actor
 {
 public:
-	char                                                         pad0x10_N87EE[0x10];                               // 0x3a0(0x10)
+	char                                                         pad0x10_WD5FG[0x10];                               // 0x3a0(0x10)
 	class AdventureOnDemandServiceParams*                        Params;                                            // 0x3b0(0x8)
 	class AdventureOnDemandVoyageSelectionDataAsset*             VoyageSelectionDataAsset;                          // 0x3b8(0x8)
 	class QuestTableAdventureOnDemandParams*                     QuestTableAdventureOnDemandParams;                 // 0x3c0(0x8)
 	class TradingCompanyPopUpBackgroundCollectionDataAsset*      TradingCompanyPopUpBackgroundCollection;           // 0x3c8(0x8)
-	char                                                         pad0xa0_V9P3J[0xa0];                               // 0x3d0(0xa0)
+	char                                                         pad0xa0_EWOQ5[0xa0];                               // 0x3d0(0xa0)
 	TArray<struct AdventureOnDemandServiceCrewEntry>             DiveToTunnelEntries;                               // 0x470(0x10)
 	TArray<struct AdventureOnDemandServiceCrewEntry>             LeaveTunnelEntries;                                // 0x480(0x10)
 	TArray<struct Guid>                                          CrewsDivingToTunnel;                               // 0x490(0x10)
 	TArray<struct Guid>                                          CrewsInArrivalTunnel;                              // 0x4a0(0x10)
 	TArray<struct Guid>                                          CrewsOnCooldown;                                   // 0x4b0(0x10)
-	char                                                         pad0x1f0_FQOZI[0x1f0];                             // 0x4c0(0x1f0)
+	char                                                         pad0x1f0_0H1VI[0x1f0];                             // 0x4c0(0x1f0)
 };
 
 
@@ -46,7 +46,7 @@ public:
 class AIShipBattleGameEventOnDemandArrivalTunnelWorker: public GameEventOnDemandArrivalTunnelWorkerBase
 {
 public:
-	char                                                         pad0x10_XNC3Y[0x10];                               // 0x158(0x10)
+	char                                                         pad0x10_45S5H[0x10];                               // 0x158(0x10)
 };
 
 
@@ -55,17 +55,9 @@ class IslandBasedGameEventOnDemandArrivalTunnelWorker: public GameEventOnDemandA
 {
 public:
 	bool                                                         UseSpawnDistanceFromIslandForResurfaceRadius;      // 0x158(0x1)
-	char                                                         pad0x17_8OMKB[0x17];                               // 0x159(0x17)
+	char                                                         pad0x17_7U3O6[0x17];                               // 0x159(0x17)
 	float                                                        ResurfaceMaxRadiusModifier;                        // 0x170(0x4)
-	char                                                         pad0x14_8J6UE[0x14];                               // 0x174(0x14)
-};
-
-
-// Size 0x18 (Full Size[0x1a0] - InheritedSize[0x188]
-class ContendedResourceGameEventOnDemandArrivalTunnelWorker: public IslandBasedGameEventOnDemandArrivalTunnelWorker
-{
-public:
-	char                                                         pad0x18_I9G68[0x18];                               // 0x188(0x18)
+	char                                                         pad0x14_MUK00[0x14];                               // 0x174(0x14)
 };
 
 
@@ -73,15 +65,7 @@ public:
 class CursedSkellyFortEventOnDemandArrivalTunnelWorker: public IslandBasedGameEventOnDemandArrivalTunnelWorker
 {
 public:
-	char                                                         pad0x10_SN8X9[0x10];                               // 0x188(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x198] - InheritedSize[0x188]
-class AshenLordEventOnDemandArrivalTunnelWorker: public IslandBasedGameEventOnDemandArrivalTunnelWorker
-{
-public:
-	char                                                         pad0x10_HTRVE[0x10];                               // 0x188(0x10)
+	char                                                         pad0x10_Q4IH1[0x10];                               // 0x188(0x10)
 };
 
 
@@ -89,7 +73,7 @@ public:
 class SkellyFortEventOnDemandArrivalTunnelWorker: public IslandBasedGameEventOnDemandArrivalTunnelWorker
 {
 public:
-	char                                                         pad0x10_8YYX5[0x10];                               // 0x188(0x10)
+	char                                                         pad0x10_OQM3V[0x10];                               // 0x188(0x10)
 };
 
 
@@ -97,14 +81,23 @@ public:
 class AggressiveGhostShipsEncounterOnDemandArrivalTunnelWorker: public IslandBasedGameEventOnDemandArrivalTunnelWorker
 {
 public:
-	char                                                         pad0x10_V8B0S[0x10];                               // 0x188(0x10)
+	char                                                         pad0x10_E3K95[0x10];                               // 0x188(0x10)
 };
 
 
-// Size 0x0 (Full Size[0x1a0] - InheritedSize[0x1a0]
-class SeaFortGameEventOnDemandArrivalTunnelWorker: public ContendedResourceGameEventOnDemandArrivalTunnelWorker
+// Size 0x10 (Full Size[0x198] - InheritedSize[0x188]
+class AshenLordEventOnDemandArrivalTunnelWorker: public IslandBasedGameEventOnDemandArrivalTunnelWorker
 {
 public:
+	char                                                         pad0x10_2GDWH[0x10];                               // 0x188(0x10)
+};
+
+
+// Size 0x18 (Full Size[0x1a0] - InheritedSize[0x188]
+class ContendedResourceGameEventOnDemandArrivalTunnelWorker: public IslandBasedGameEventOnDemandArrivalTunnelWorker
+{
+public:
+	char                                                         pad0x18_2C2AN[0x18];                               // 0x188(0x18)
 };
 
 
@@ -116,14 +109,21 @@ public:
 
 
 // Size 0x0 (Full Size[0x1a0] - InheritedSize[0x1a0]
-class SkellyCampGameEventOnDemandArrivalTunnelWorker: public ContendedResourceGameEventOnDemandArrivalTunnelWorker
+class SunkenKingdomTreasuryGameEventOnDemandArrivalTunnelWorker: public ContendedResourceGameEventOnDemandArrivalTunnelWorker
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x1a0] - InheritedSize[0x1a0]
-class SunkenKingdomTreasuryGameEventOnDemandArrivalTunnelWorker: public ContendedResourceGameEventOnDemandArrivalTunnelWorker
+class SeaFortGameEventOnDemandArrivalTunnelWorker: public ContendedResourceGameEventOnDemandArrivalTunnelWorker
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x1a0] - InheritedSize[0x1a0]
+class SkellyCampGameEventOnDemandArrivalTunnelWorker: public ContendedResourceGameEventOnDemandArrivalTunnelWorker
 {
 public:
 };

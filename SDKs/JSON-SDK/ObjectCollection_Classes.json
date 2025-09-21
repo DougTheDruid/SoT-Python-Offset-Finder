@@ -1,18 +1,4 @@
 {
-  "TestCollector": {
-    "Super": "Object",
-    "FullSize": "0x88",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "pad0x60_QRIDW[0x60]",
-        "Type": "char",
-        "Size": "0x60",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "ObjectCollectorInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
@@ -27,9 +13,23 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x48_U66JK[0x48]",
+        "Name": "pad0x48_07CN3[0x48]",
         "Type": "char",
         "Size": "0x48",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "TestCollector": {
+    "Super": "Object",
+    "FullSize": "0x88",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "pad0x60_OOS0S[0x60]",
+        "Type": "char",
+        "Size": "0x60",
         "Offset": "0x28"
       }
     ]

@@ -30,7 +30,7 @@ NPCInteractResponseAnimationInstanceInterface:
   Super: Interface
 NPCInteractResponseComponent:
   Attributes:
-  - Name: pad0x8_EBMK2[0x8]
+  - Name: pad0x8_LJ3NY[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char

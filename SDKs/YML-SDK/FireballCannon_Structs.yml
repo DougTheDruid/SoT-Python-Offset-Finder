@@ -6,7 +6,7 @@ EventFireballCannonFiringStateChanged:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_00KDI[0x7]
+  - Name: pad0x7_DA5SN[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -17,21 +17,21 @@ EventFireballCannonFiringStateChanged:
   ClassSize: '0x10'
 EventFireballCannonHasStartedToCooldown:
   Attributes:
-  - Name: pad0x1_5RF0I[0x1]
+  - Name: pad0x1_Y8WBK[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 EventFireballCannonIsReadyToFire:
   Attributes:
-  - Name: pad0x1_Y9SVN[0x1]
+  - Name: pad0x1_0A0Q8[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 EventShootFireballCannon:
   Attributes:
-  - Name: pad0x1_XZY2T[0x1]
+  - Name: pad0x1_1531Z[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char

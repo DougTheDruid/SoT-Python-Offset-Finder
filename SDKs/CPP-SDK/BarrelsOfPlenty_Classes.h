@@ -16,27 +16,20 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class SpawnBarrelsOfPlentyStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class BarrelsOfPlentySpawnManagerProviderInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x28 (Full Size[0x3c8] - InheritedSize[0x3a0]
 class BarrelsOfPlentySpawnProxy: public Actor
 {
 public:
 	class Actor*                                                 Ship;                                              // 0x3a0(0x8)
-	char                                                         pad0x18_68RIK[0x18];                               // 0x3a8(0x18)
+	char                                                         pad0x18_GNCXD[0x18];                               // 0x3a8(0x18)
 	class SceneComponent*                                        SceneComponent;                                    // 0x3c0(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class SpawnBarrelsOfPlentyStep: public TaleQuestStep
+{
+public:
 };
 
 
@@ -45,6 +38,13 @@ class SpawnBarrelsOfPlentyStepDesc: public TaleQuestStepDesc
 {
 public:
 	struct QuestVariableVector                                   LocatorVar;                                        // 0x80(0x30)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class BarrelsOfPlentySpawnManagerProviderInterface: public Interface
+{
+public:
 };
 
 

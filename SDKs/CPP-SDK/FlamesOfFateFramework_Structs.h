@@ -4,24 +4,13 @@
 // https://github.com/DougTheDruid
 
 // Size 0x18
-struct SetShipFlameOfFateEvent
-{
-public:
-	char                                                         FlameOfFateType;                                   // 0x0(0x1)
-	char                                                         pad0x7_N9VQZ[0x7];                                 // 0x1(0x7)
-	class Object*                                                Source;                                            // 0x8(0x8)
-	class Object*                                                Ship;                                              // 0x10(0x8)
-};
-
-
-// Size 0x18
-struct PlayerTookFlameOfFateEvent
+struct PlayerSetFlameOfFateEvent
 {
 public:
 	class Character*                                             PlayerCharacter;                                   // 0x0(0x8)
-	class Object*                                                Source;                                            // 0x8(0x8)
+	class Object*                                                Target;                                            // 0x8(0x8)
 	char                                                         FlameOfFateType;                                   // 0x10(0x1)
-	char                                                         pad0x7_43U3E[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_RLKH0[0x7];                                 // 0x11(0x7)
 };
 
 
@@ -35,22 +24,22 @@ public:
 
 
 // Size 0x18
-struct PlayerSetFlameOfFateEvent
-{
-public:
-	class Character*                                             PlayerCharacter;                                   // 0x0(0x8)
-	class Object*                                                Target;                                            // 0x8(0x8)
-	char                                                         FlameOfFateType;                                   // 0x10(0x1)
-	char                                                         pad0x7_SPRGB[0x7];                                 // 0x11(0x7)
-};
-
-
-// Size 0x18
 struct CycleFlameOfFateSequence
 {
 public:
 	TArray<char>                                                 FlameTypeSequence;                                 // 0x0(0x10)
-	char                                                         pad0x8_81THE[0x8];                                 // 0x10(0x8)
+	char                                                         pad0x8_KQGK6[0x8];                                 // 0x10(0x8)
+};
+
+
+// Size 0x18
+struct SetShipFlameOfFateEvent
+{
+public:
+	char                                                         FlameOfFateType;                                   // 0x0(0x1)
+	char                                                         pad0x7_FZ19T[0x7];                                 // 0x1(0x7)
+	class Object*                                                Source;                                            // 0x8(0x8)
+	class Object*                                                Ship;                                              // 0x10(0x8)
 };
 
 
@@ -59,8 +48,19 @@ struct SetFlameOfFateEvent
 {
 public:
 	char                                                         FlameOfFateType;                                   // 0x0(0x1)
-	char                                                         pad0x7_YP1T9[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_XX5OQ[0x7];                                 // 0x1(0x7)
 	class Object*                                                Source;                                            // 0x8(0x8)
+};
+
+
+// Size 0x18
+struct PlayerTookFlameOfFateEvent
+{
+public:
+	class Character*                                             PlayerCharacter;                                   // 0x0(0x8)
+	class Object*                                                Source;                                            // 0x8(0x8)
+	char                                                         FlameOfFateType;                                   // 0x10(0x1)
+	char                                                         pad0x7_J6LLB[0x7];                                 // 0x11(0x7)
 };
 
 

@@ -6,14 +6,17 @@
 #include "Wind_Structs.h"
 
 
-// Size 0x90 (Full Size[0x360] - InheritedSize[0x2d0]
-class WindZoneComponent: public SceneComponent
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class WindZoneInterface: public Interface
 {
 public:
-	char                                                         pad0x8_5B1NY[0x8];                                 // 0x2d0(0x8)
-	struct WindTurbulenceParameters                              TurbulenceParams;                                  // 0x2d8(0x70)
-	struct WindZoneParams                                        WindZoneParams;                                    // 0x348(0x10)
-	char                                                         pad0x8_WL5FW[0x8];                                 // 0x358(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class WindInterface: public Interface
+{
+public:
 };
 
 
@@ -21,12 +24,12 @@ public:
 class WindService: public Actor
 {
 public:
-	char                                                         pad0x10_KNSJL[0x10];                               // 0x3a0(0x10)
+	char                                                         pad0x10_IE5XW[0x10];                               // 0x3a0(0x10)
 	class WindDirectionalSource*                                 GlobalWindSource;                                  // 0x3b0(0x8)
-	char                                                         pad0x10_NKN2Q[0x10];                               // 0x3b8(0x10)
+	char                                                         pad0x10_LMCFH[0x10];                               // 0x3b8(0x10)
 	float                                                        CurrentWindAngle;                                  // 0x3c8(0x4)
 	float                                                        CurrentWindMagnitude;                              // 0x3cc(0x4)
-	char                                                         pad0xe8_KB2GL[0xe8];                               // 0x3d0(0xe8)
+	char                                                         pad0xe8_AA9HO[0xe8];                               // 0x3d0(0xe8)
 	TArray<class Interface*>                                     WindZones;                                         // 0x4b8(0x10)
 	TArray<struct ExtraWind>                                     ExtraWind;                                         // 0x4c8(0x10)
 };
@@ -46,6 +49,15 @@ public:
 };
 
 
+// Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
+class WindSettings: public DeveloperSettings
+{
+public:
+	struct WindServiceParams                                     WindParams;                                        // 0x38(0x24)
+	char                                                         pad0x4_9VOBF[0x4];                                 // 0x5c(0x4)
+};
+
+
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class DebugWindInterface: public Interface
 {
@@ -53,26 +65,14 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WindInterface: public Interface
+// Size 0x90 (Full Size[0x360] - InheritedSize[0x2d0]
+class WindZoneComponent: public SceneComponent
 {
 public:
-};
-
-
-// Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
-class WindSettings: public DeveloperSettings
-{
-public:
-	struct WindServiceParams                                     WindParams;                                        // 0x38(0x24)
-	char                                                         pad0x4_B0VQH[0x4];                                 // 0x5c(0x4)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WindZoneInterface: public Interface
-{
-public:
+	char                                                         pad0x8_TXRM2[0x8];                                 // 0x2d0(0x8)
+	struct WindTurbulenceParameters                              TurbulenceParams;                                  // 0x2d8(0x70)
+	struct WindZoneParams                                        WindZoneParams;                                    // 0x348(0x10)
+	char                                                         pad0x8_VMURL[0x8];                                 // 0x358(0x8)
 };
 
 
@@ -80,7 +80,7 @@ public:
 class DebugWindService: public WindService
 {
 public:
-	char                                                         pad0x10_GZKVY[0x10];                               // 0x4d8(0x10)
+	char                                                         pad0x10_LBVZW[0x10];                               // 0x4d8(0x10)
 };
 
 

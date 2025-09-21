@@ -1,79 +1,4 @@
 {
-  "RadialDamagerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x110",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "DamageIntervalSeconds",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "DamagePerSecondAtCentre",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xbc"
-      },
-      {
-        "Name": "DamagePerSecondAtMaxRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "DamageRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc4"
-      },
-      {
-        "Name": "pad0x8_FYT7X[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "DamagerType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "HealthChangedReason",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xd8"
-      },
-      {
-        "Name": "pad0x3_1A3HB[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0xd9"
-      },
-      {
-        "Name": "LocalOffset",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0xdc"
-      },
-      {
-        "Name": "pad0x28_I53CG[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0xe8"
-      }
-    ]
-  },
-  "ShockwaveDamagerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "ShipDamagerComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x210",
@@ -81,7 +6,7 @@
     "ClassSize": "0x158",
     "Attributes": [
       {
-        "Name": "pad0x8_TGJKP[0x8]",
+        "Name": "pad0x8_8L9ZJ[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -129,7 +54,7 @@
         "Offset": "0x144"
       },
       {
-        "Name": "pad0xcb_9Y8HV[0xcb]",
+        "Name": "pad0xcb_ZOUBA[0xcb]",
         "Type": "char",
         "Size": "0xcb",
         "Offset": "0x145"
@@ -143,7 +68,7 @@
     "ClassSize": "0x108",
     "Attributes": [
       {
-        "Name": "pad0x8_2RPSZ[0x8]",
+        "Name": "pad0x8_UBXM4[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -167,7 +92,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x7_4GM9W[0x7]",
+        "Name": "pad0x7_KFTBY[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xc9"
@@ -185,7 +110,7 @@
         "Offset": "0x100"
       },
       {
-        "Name": "pad0x7_8ER6N[0x7]",
+        "Name": "pad0x7_54RYP[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x101"
@@ -209,7 +134,7 @@
         "Offset": "0x120"
       },
       {
-        "Name": "pad0x3_VVC10[0x3]",
+        "Name": "pad0x3_X9B8U[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x121"
@@ -233,7 +158,7 @@
         "Offset": "0x12c"
       },
       {
-        "Name": "pad0x3_DLKKY[0x3]",
+        "Name": "pad0x3_RT9Q6[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x12d"
@@ -245,7 +170,7 @@
         "Offset": "0x130"
       },
       {
-        "Name": "pad0x4_HVKLE[0x4]",
+        "Name": "pad0x4_TUVX0[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x134"
@@ -263,12 +188,87 @@
         "Offset": "0x168"
       },
       {
-        "Name": "pad0x48_5VI7T[0x48]",
+        "Name": "pad0x48_SME82[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0x178"
       }
     ]
+  },
+  "RadialDamagerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x110",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "DamageIntervalSeconds",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "DamagePerSecondAtCentre",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xbc"
+      },
+      {
+        "Name": "DamagePerSecondAtMaxRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "DamageRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc4"
+      },
+      {
+        "Name": "pad0x8_0XXF3[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "DamagerType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "HealthChangedReason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "pad0x3_YT1DO[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xd9"
+      },
+      {
+        "Name": "LocalOffset",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0xdc"
+      },
+      {
+        "Name": "pad0x28_OP08I[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0xe8"
+      }
+    ]
+  },
+  "ShockwaveDamagerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

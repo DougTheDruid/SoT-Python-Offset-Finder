@@ -1,84 +1,4 @@
 {
-  "GlobalDigSpotService": {
-    "Super": "Actor",
-    "FullSize": "0x3d0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x8_ET6KB[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "DefaultVoyageDesc",
-        "Type": "class VoyageDescDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x3a8"
-      },
-      {
-        "Name": "Notification",
-        "Type": "class PopUpMessageDesc*",
-        "Size": "0x8",
-        "Offset": "0x3b0"
-      },
-      {
-        "Name": "DigSpotDefinitions",
-        "Type": "class GlobalDigSpotDefinitionList*",
-        "Size": "0x8",
-        "Offset": "0x3b8"
-      },
-      {
-        "Name": "pad0x10_RCY4D[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x3c0"
-      }
-    ]
-  },
-  "GlobalDigSpotVoyageTriggerActor": {
-    "Super": "GlobalVoyageTriggerActor",
-    "FullSize": "0x408",
-    "InheritedSize": "0x3f0",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_EF8VE[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x3f0"
-      }
-    ]
-  },
-  "GlobalDigSpotSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x40",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "GlobalDigSpotServiceClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "GlobalDigSpotDebugCheat": {
-    "Super": "Actor",
-    "FullSize": "0x3a8",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_Y92P1[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x3a0"
-      }
-    ]
-  },
   "GlobalDigSpotDebugCheatInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
@@ -104,6 +24,86 @@
         "Type": "TArray<struct GlobalDigSpotDefinition>",
         "Size": "0x10",
         "Offset": "0x28"
+      }
+    ]
+  },
+  "GlobalDigSpotSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x40",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "GlobalDigSpotServiceClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "GlobalDigSpotVoyageTriggerActor": {
+    "Super": "GlobalVoyageTriggerActor",
+    "FullSize": "0x408",
+    "InheritedSize": "0x3f0",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_5R2FB[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x3f0"
+      }
+    ]
+  },
+  "GlobalDigSpotService": {
+    "Super": "Actor",
+    "FullSize": "0x3d0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x8_M4O6O[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "DefaultVoyageDesc",
+        "Type": "class VoyageDescDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x3a8"
+      },
+      {
+        "Name": "Notification",
+        "Type": "class PopUpMessageDesc*",
+        "Size": "0x8",
+        "Offset": "0x3b0"
+      },
+      {
+        "Name": "DigSpotDefinitions",
+        "Type": "class GlobalDigSpotDefinitionList*",
+        "Size": "0x8",
+        "Offset": "0x3b8"
+      },
+      {
+        "Name": "pad0x10_Q9TJ1[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x3c0"
+      }
+    ]
+  },
+  "GlobalDigSpotDebugCheat": {
+    "Super": "Actor",
+    "FullSize": "0x3a8",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_2UO30[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3a0"
       }
     ]
   },

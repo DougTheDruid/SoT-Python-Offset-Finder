@@ -11,6 +11,21 @@ EventInteractionBlockingStateChanged:
     Size: '0x1'
     Type: byte
   ClassSize: '0x2'
+EventInteractorChangedOptimalInteractionObject:
+  Attributes:
+  - Name: InteractingActor
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class Actor*
+  - Name: PreviousFocusObject
+    Offset: '0x8'
+    Size: '0x8'
+    Type: class Object*
+  - Name: NewFocusObject
+    Offset: '0x10'
+    Size: '0x8'
+    Type: class Object*
+  ClassSize: '0x18'
 EventOptimalInteractionObjectChanged:
   Attributes:
   - Name: PreviousFocusObject
@@ -48,7 +63,7 @@ InteractLoadableValidityCheckFailedTelemetryEvent:
     Offset: '0x31'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_TVBZ6[0x6]
+  - Name: pad0x6_BXJQH[0x6]
     Offset: '0x32'
     Size: '0x6'
     Type: char
@@ -59,7 +74,7 @@ InteractionDistanceCheckFailedTelemetryEvent:
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_E2W9B[0x4]
+  - Name: pad0x4_EKKZX[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -79,7 +94,7 @@ InteractionDistanceCheckFailedTelemetryEvent:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_9JNON[0x4]
+  - Name: pad0x4_6SI11[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char
@@ -97,7 +112,7 @@ InteractionEdTelemetryEvent:
   ClassSize: '0x18'
 IsNewInteractingPlayerCondition:
   Attributes:
-  - Name: pad0x8_4D5BG[0x8]
+  - Name: pad0x8_2E1U7[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char

@@ -6,10 +6,16 @@
 #include "Cleanliness_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CleanlinessTransferInterface: public Interface
+// Size 0x80 (Full Size[0x138] - InheritedSize[0xb8]
+class CleanlinessComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x10_X925W[0x10];                               // 0xb8(0x10)
+	class CurveFloat*                                            DirtinessStrengthToMaterialStrength;               // 0xc8(0x8)
+	struct CleanlinessInfo                                       CleanlinessInfo;                                   // 0xd0(0xc)
+	float                                                        DirtinessDecayRatePerSecond;                       // 0xdc(0x4)
+	float                                                        QuickCleanDirtynessDecayRatePerSecond;             // 0xe0(0x4)
+	char                                                         pad0x54_WAICA[0x54];                               // 0xe4(0x54)
 };
 
 
@@ -20,16 +26,10 @@ public:
 };
 
 
-// Size 0x80 (Full Size[0x138] - InheritedSize[0xb8]
-class CleanlinessComponent: public ActorComponent
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CleanlinessTransferInterface: public Interface
 {
 public:
-	char                                                         pad0x10_3S4U9[0x10];                               // 0xb8(0x10)
-	class CurveFloat*                                            DirtinessStrengthToMaterialStrength;               // 0xc8(0x8)
-	struct CleanlinessInfo                                       CleanlinessInfo;                                   // 0xd0(0xc)
-	float                                                        DirtinessDecayRatePerSecond;                       // 0xdc(0x4)
-	float                                                        QuickCleanDirtynessDecayRatePerSecond;             // 0xe0(0x4)
-	char                                                         pad0x54_V55GC[0x54];                               // 0xe4(0x54)
 };
 
 

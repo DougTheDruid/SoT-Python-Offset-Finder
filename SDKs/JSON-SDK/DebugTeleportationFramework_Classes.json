@@ -13,7 +13,7 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x18_KF0PU[0x18]",
+        "Name": "pad0x18_AS6LG[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x3a0"
@@ -26,14 +26,14 @@
       }
     ]
   },
-  "DebugTeleportationRegistrationInterface": {
+  "DebugTeleportationPresentationInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "DebugTeleportationPresentationInterface": {
+  "DebugTeleportationRegistrationInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

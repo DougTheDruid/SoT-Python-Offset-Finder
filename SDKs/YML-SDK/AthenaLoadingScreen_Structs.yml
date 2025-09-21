@@ -16,21 +16,21 @@ EventAthenaLoadingScreenBlockUntilUIIntialisedClear:
   ClassSize: '0x10'
 EventAthenaLoadingScreenClose:
   Attributes:
-  - Name: pad0x1_5D8TA[0x1]
+  - Name: pad0x1_WF3M0[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 EventAthenaLoadingScreenOpen:
   Attributes:
-  - Name: pad0x1_IUVN9[0x1]
+  - Name: pad0x1_POL82[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 EventAthenaLoadingScreenStateRequest:
   Attributes:
-  - Name: pad0x1_E6VSL[0x1]
+  - Name: pad0x1_OISTU[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -76,7 +76,7 @@ SlateLoadingScreenAdvancedTipDescription:
     Offset: '0xb8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_182M2[0x4]
+  - Name: pad0x4_SQMGA[0x4]
     Offset: '0xbc'
     Size: '0x4'
     Type: char

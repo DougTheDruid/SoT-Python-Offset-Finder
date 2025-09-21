@@ -16,7 +16,7 @@ GlitterBeardFinaleCoordinatorComponent:
     Offset: '0xc0'
     Size: '0x10'
     Type: struct FinaleReplicationState
-  - Name: pad0x90_Y455Q[0x90]
+  - Name: pad0x90_VEPVK[0x90]
     Offset: '0xd0'
     Size: '0x90'
     Type: char
@@ -36,7 +36,7 @@ GlitterBeardLanternSoundEffect:
     Offset: '0x38'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_VMIP2[0x4]
+  - Name: pad0x4_GD0TK[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -52,7 +52,7 @@ GlitterBeardLanternSoundEffect:
     Offset: '0x50'
     Size: '0x20'
     Type: struct WwiseEmitter
-  - Name: pad0x10_2AF6F[0x10]
+  - Name: pad0x10_PK8TG[0x10]
     Offset: '0x70'
     Size: '0x10'
     Type: char
@@ -62,7 +62,7 @@ GlitterBeardLanternSoundEffect:
   Super: EffectBlendObjectBase
 GlitterBeardTelemetryComponent:
   Attributes:
-  - Name: pad0x48_N0HPF[0x48]
+  - Name: pad0x48_2GW2G[0x48]
     Offset: '0xb8'
     Size: '0x48'
     Type: char
@@ -72,7 +72,7 @@ GlitterBeardTelemetryComponent:
   Super: ActorComponent
 GlitterBeardTree:
   Attributes:
-  - Name: pad0x28_ERKLE[0x28]
+  - Name: pad0x28_OTJ75[0x28]
     Offset: '0x3a0'
     Size: '0x28'
     Type: char
@@ -88,7 +88,7 @@ GlitterBeardTree:
     Offset: '0x3d8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_2KWYZ[0x4]
+  - Name: pad0x4_V0OEN[0x4]
     Offset: '0x3dc'
     Size: '0x4'
     Type: char
@@ -128,7 +128,7 @@ GlitterBeardTree:
     Offset: '0x418'
     Size: '0x4'
     Type: float
-  - Name: pad0x24c_CHE4X[0x24c]
+  - Name: pad0x24c_E2EK0[0x24c]
     Offset: '0x41c'
     Size: '0x24c'
     Type: char
@@ -140,7 +140,7 @@ GlitterBeardTree:
     Offset: '0x670'
     Size: '0x20'
     Type: struct WwiseEmitter
-  - Name: pad0x30_MHM4M[0x30]
+  - Name: pad0x30_T90FM[0x30]
     Offset: '0x690'
     Size: '0x30'
     Type: char
@@ -154,7 +154,7 @@ GlitterBeardTreeVisualFeedbackComponent:
     Offset: '0xb8'
     Size: '0x10'
     Type: TArray<struct VisualFeedbackList>
-  - Name: pad0x10_RCNDT[0x10]
+  - Name: pad0x10_0SWT3[0x10]
     Offset: '0xc8'
     Size: '0x10'
     Type: char
@@ -162,7 +162,7 @@ GlitterBeardTreeVisualFeedbackComponent:
     Offset: '0xd8'
     Size: '0x10'
     Type: TArray<char>
-  - Name: pad0x20_AW5K8[0x20]
+  - Name: pad0x20_B9JDB[0x20]
     Offset: '0xe8'
     Size: '0x20'
     Type: char
@@ -190,7 +190,7 @@ GlitterBeardUnlockVFXCoordinatorComponent:
     Offset: '0xd0'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_G7ZMQ[0xc]
+  - Name: pad0xc_LHOY6[0xc]
     Offset: '0xd4'
     Size: '0xc'
     Type: char

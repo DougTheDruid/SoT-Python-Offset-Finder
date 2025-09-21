@@ -1,4 +1,51 @@
 {
+  "LightSensitiveComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x130",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "pad0x68_LTXMW[0x68]",
+        "Type": "char",
+        "Size": "0x68",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "LightSourceManager",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x120"
+      },
+      {
+        "Name": "pad0x8_0FCKS[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x128"
+      }
+    ]
+  },
+  "LightReceptorInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "LightSensitivityInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "LightSourceManagerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "LightSourceManager": {
     "Super": "Actor",
     "FullSize": "0x3f8",
@@ -6,7 +53,7 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "pad0x8_92F5C[0x8]",
+        "Name": "pad0x8_QGIKH[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3a0"
@@ -36,7 +83,7 @@
         "Offset": "0x3cc"
       },
       {
-        "Name": "pad0x1f_X16Y1[0x1f]",
+        "Name": "pad0x1f_UHZT7[0x1f]",
         "Type": "char",
         "Size": "0x1f",
         "Offset": "0x3cd"
@@ -49,13 +96,6 @@
       }
     ]
   },
-  "LightReceptorInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "DebugLightSensitiveComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x118",
@@ -63,7 +103,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x8_E2A7T[0x8]",
+        "Name": "pad0x8_WCD4A[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -75,7 +115,7 @@
         "Offset": "0xc0"
       },
       {
-        "Name": "pad0x50_48A3B[0x50]",
+        "Name": "pad0x50_5UEDZ[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0xc8"
@@ -83,46 +123,6 @@
     ]
   },
   "LightEmitterInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "LightSourceManagerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "LightSensitiveComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x130",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "pad0x68_KVMBE[0x68]",
-        "Type": "char",
-        "Size": "0x68",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "LightSourceManager",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x120"
-      },
-      {
-        "Name": "pad0x8_JTAEM[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x128"
-      }
-    ]
-  },
-  "LightSensitivityInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

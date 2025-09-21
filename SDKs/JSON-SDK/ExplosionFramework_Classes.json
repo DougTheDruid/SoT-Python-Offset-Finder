@@ -1,12 +1,37 @@
 {
-  "ExplosivesServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "StatusResponseExplodeAfterTime": {
+    "Super": "StatusResponse",
+    "FullSize": "0x50",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "MinTimeUntilExplosion",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "MaxTimeUntilExplosion",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "pad0x8_P72HI[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "CachedWorld",
+        "Type": "class World*",
+        "Size": "0x8",
+        "Offset": "0x48"
+      }
+    ]
   },
-  "ExplosiveComponentInterface": {
+  "FuseInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -27,56 +52,17 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "StatusResponseExplodeAfterTime": {
-    "Super": "StatusResponse",
-    "FullSize": "0x50",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "MinTimeUntilExplosion",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "MaxTimeUntilExplosion",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "pad0x8_AGFW5[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "CachedWorld",
-        "Type": "class World*",
-        "Size": "0x8",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "TaleQuestFuseFunctionLibrary": {
-    "Super": "TaleQuestFunctionStepLibrary",
-    "FullSize": "0x180",
-    "InheritedSize": "0x180",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "FuseInterface": {
+  "ExplosivesServiceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ExplosionHitShipConditionalStatsTrigger": {
-    "Super": "ConditionalStatsTriggerType",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
+  "TaleQuestFuseFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x180",
+    "InheritedSize": "0x180",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -87,7 +73,21 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "ExplosionHitShipConditionalStatsTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "ExplosionReceiverInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ExplosiveComponentInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -107,7 +107,7 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x68_NRPPI[0x68]",
+        "Name": "pad0x68_HXD7S[0x68]",
         "Type": "char",
         "Size": "0x68",
         "Offset": "0xc0"

@@ -4,6 +4,15 @@
 // https://github.com/DougTheDruid
 
 // Size 0x20
+struct CustomServerClientData
+{
+public:
+	struct FString                                               Key;                                               // 0x0(0x10)
+	char                                                         pad0x10_V1TFJ[0x10];                               // 0x10(0x10)
+};
+
+
+// Size 0x20
 struct LocPairData
 {
 public:
@@ -12,20 +21,11 @@ public:
 };
 
 
-// Size 0x20
-struct CustomServerClientData
-{
-public:
-	struct FString                                               Key;                                               // 0x0(0x10)
-	char                                                         pad0x10_4O2MK[0x10];                               // 0x10(0x10)
-};
-
-
 // Size 0x50
 struct CustomServerLocalisationModel
 {
 public:
-	char                                                         pad0x50_QD9YU[0x50];                               // 0x0(0x50)
+	char                                                         pad0x50_WMMB4[0x50];                               // 0x0(0x50)
 };
 
 

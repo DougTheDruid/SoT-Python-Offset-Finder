@@ -16,29 +16,6 @@
       }
     ]
   },
-  "IsNewInteractingPlayerCondition": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "pad0x8_4D5BG[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PlayerPayloadSelector",
-        "Type": "struct ConditionContextPayloadSelectorInstance",
-        "Size": "0x20",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "InteractablePayloadSelector",
-        "Type": "struct ConditionContextPayloadSelectorInstance",
-        "Size": "0x20",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "EventOptimalInteractionObjectChanged": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -96,10 +73,56 @@
         "Offset": "0x31"
       },
       {
-        "Name": "pad0x6_TVBZ6[0x6]",
+        "Name": "pad0x6_BXJQH[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x32"
+      }
+    ]
+  },
+  "IsNewInteractingPlayerCondition": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x8_2E1U7[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PlayerPayloadSelector",
+        "Type": "struct ConditionContextPayloadSelectorInstance",
+        "Size": "0x20",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "InteractablePayloadSelector",
+        "Type": "struct ConditionContextPayloadSelectorInstance",
+        "Size": "0x20",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "EventInteractorChangedOptimalInteractionObject": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "InteractingActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PreviousFocusObject",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "NewFocusObject",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x10"
       }
     ]
   },
@@ -130,7 +153,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_E2W9B[0x4]",
+        "Name": "pad0x4_EKKZX[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -160,7 +183,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_9JNON[0x4]",
+        "Name": "pad0x4_6SI11[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x24"
