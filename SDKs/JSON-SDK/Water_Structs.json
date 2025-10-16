@@ -1,4 +1,149 @@
 {
+  "LocalizedHeightOverride": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "pad0xc_S1M17[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventLeftWaterExclusionZone": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_KXA4W[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "WaterSplashProbe": {
+    "ClassSize": "0xd8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_S4ABM[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ProbeDebugName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "LocalOffset",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Height",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "Pitch",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Yaw",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "Roll",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "RateOfChangeThreshold",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "LocalOffsetAdjustment",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "LocalOffsetAdjustmentDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "Type",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "WaterHeightType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x49"
+      },
+      {
+        "Name": "pad0x2_TO4D0[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x4a"
+      },
+      {
+        "Name": "StaticWaterHeightValue",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      },
+      {
+        "Name": "pad0x88_A1WKM[0x88]",
+        "Type": "char",
+        "Size": "0x88",
+        "Offset": "0x50"
+      }
+    ]
+  },
+  "EventWaterHeightChanged": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "WaterPlaneOwner",
+        "Type": "class BaseWaterComponent*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventCurrentWaterPlaneChange": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "FormerWaterPlane",
+        "Type": "class BaseWaterComponent*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NewWaterPlane",
+        "Type": "class BaseWaterComponent*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "WaterQueryData": {
     "ClassSize": "0xa8",
     "Attributes": [
@@ -9,7 +154,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_SWGBR[0x4]",
+        "Name": "pad0x4_WECZE[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -123,7 +268,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x4_EJ2JX[0x4]",
+        "Name": "pad0x4_YQQXF[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x64"
@@ -154,216 +299,6 @@
       }
     ]
   },
-  "WaterSpout": {
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "SpoutLocatorTransform",
-        "Type": "struct Transform",
-        "Size": "0x30",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SpoutParticleSystem",
-        "Type": "class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "SplashParticleSystem",
-        "Type": "class ParticleSystemComponent*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x30_6ML08[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "BuoyancyDragSample": {
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "Offset",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Normal",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "Tangent",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "Radius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x24"
-      },
-      {
-        "Name": "DragCoefficient",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Type",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "pad0x63_ICTFF[0x63]",
-        "Type": "char",
-        "Size": "0x63",
-        "Offset": "0x2d"
-      }
-    ]
-  },
-  "WaterSplashProbe": {
-    "ClassSize": "0xd8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_EZ9S1[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ProbeDebugName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "LocalOffset",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "Height",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x24"
-      },
-      {
-        "Name": "Pitch",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Yaw",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "Roll",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "RateOfChangeThreshold",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "LocalOffsetAdjustment",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "LocalOffsetAdjustmentDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "Type",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "WaterHeightType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x49"
-      },
-      {
-        "Name": "pad0x2_MFBCZ[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x4a"
-      },
-      {
-        "Name": "StaticWaterHeightValue",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4c"
-      },
-      {
-        "Name": "pad0x88_IIDJY[0x88]",
-        "Type": "char",
-        "Size": "0x88",
-        "Offset": "0x50"
-      }
-    ]
-  },
-  "AthenaWaterTimeDataTelemetryEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "NetworkTime",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "WaterThreadCreationTime",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "EventEnteredWaterExclusionZone": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_6DXGF[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventLeftWaterExclusionZone": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_7975N[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "WaterInformation": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -380,10 +315,79 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_3MY3A[0x7]",
+        "Name": "pad0x7_XBAKO[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
+      }
+    ]
+  },
+  "BuoyancySampleMovementConfigurationEntry": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "SampleOffset",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_BZQDD[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "BuoyancyScaleCurve",
+        "Type": "class CurveFloat*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EventEnteredWaterExclusionZone": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_MYLZT[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "FFTWaterQueryResult": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Name": "Height",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Choppiness",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "Normal",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "WaterQueryResult",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x3_L7TME[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x19"
       }
     ]
   },
@@ -397,7 +401,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_2BK96[0x4]",
+        "Name": "pad0x4_5WDED[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -481,7 +485,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x4_U7FFN[0x4]",
+        "Name": "pad0x4_ZJVJI[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x64"
@@ -517,44 +521,67 @@
         "Offset": "0xa8"
       },
       {
-        "Name": "pad0x4_CAE26[0x4]",
+        "Name": "pad0x4_J1OBL[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xac"
       }
     ]
   },
-  "EventCurrentWaterPlaneChange": {
+  "WaterSpout": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "SpoutLocatorTransform",
+        "Type": "struct Transform",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SpoutParticleSystem",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "SplashParticleSystem",
+        "Type": "class ParticleSystemComponent*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x30_85T8Q[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "AthenaWaterTimeDataTelemetryEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "FormerWaterPlane",
-        "Type": "class BaseWaterComponent*",
+        "Name": "NetworkTime",
+        "Type": "double",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "NewWaterPlane",
-        "Type": "class BaseWaterComponent*",
+        "Name": "WaterThreadCreationTime",
+        "Type": "double",
         "Size": "0x8",
         "Offset": "0x8"
       }
     ]
   },
-  "FFTWaterQueryResult": {
-    "ClassSize": "0x1c",
+  "BuoyancyDragSample": {
+    "ClassSize": "0x90",
     "Attributes": [
       {
-        "Name": "Height",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "Offset",
+        "Type": "struct Vector",
+        "Size": "0xc",
         "Offset": "0x0"
-      },
-      {
-        "Name": "Choppiness",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x4"
       },
       {
         "Name": "Normal",
@@ -563,39 +590,34 @@
         "Offset": "0xc"
       },
       {
-        "Name": "WaterQueryResult",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "Tangent",
+        "Type": "struct Vector",
+        "Size": "0xc",
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x3_LZP2Z[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x19"
-      }
-    ]
-  },
-  "BuoyancySampleMovementConfigurationEntry": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "SampleOffset",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x4_GMFHK[0x4]",
-        "Type": "char",
+        "Name": "Radius",
+        "Type": "float",
         "Size": "0x4",
-        "Offset": "0xc"
+        "Offset": "0x24"
       },
       {
-        "Name": "BuoyancyScaleCurve",
-        "Type": "class CurveFloat*",
-        "Size": "0x8",
-        "Offset": "0x10"
+        "Name": "DragCoefficient",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Type",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "pad0x63_GGQV2[0x63]",
+        "Type": "char",
+        "Size": "0x63",
+        "Offset": "0x2d"
       }
     ]
   },
@@ -627,7 +649,7 @@
         "Offset": "0x11"
       },
       {
-        "Name": "pad0x2_7II7W[0x2]",
+        "Name": "pad0x2_ZOYZF[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x12"
@@ -645,7 +667,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_TRYQ4[0x4]",
+        "Name": "pad0x4_70ON1[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
@@ -687,55 +709,10 @@
         "Offset": "0x44"
       },
       {
-        "Name": "pad0x10_ZVV4J[0x10]",
+        "Name": "pad0x10_72KDD[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x48"
-      }
-    ]
-  },
-  "EventWaterHeightChanged": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "WaterPlaneOwner",
-        "Type": "class BaseWaterComponent*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "WaterQueryFrameDataTelemetryEvent": {
-    "ClassSize": "0xa8",
-    "Attributes": [
-      {
-        "Name": "QueryData",
-        "Type": "struct WaterQueryData",
-        "Size": "0xa8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "WaterSplashProbesContainer": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Probes",
-        "Type": "TArray<struct WaterSplashProbe>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ProbeSamplingTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x4_7RK20[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x14"
       }
     ]
   },
@@ -761,7 +738,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_AM0HZ[0x4]",
+        "Name": "pad0x4_9MKKX[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
@@ -785,7 +762,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_R0KCE[0x4]",
+        "Name": "pad0x4_AZLD9[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
@@ -796,7 +773,7 @@
     "ClassSize": "0x128",
     "Attributes": [
       {
-        "Name": "pad0x8_41CRD[0x8]",
+        "Name": "pad0x8_XE4LM[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"
@@ -862,7 +839,7 @@
         "Offset": "0x100"
       },
       {
-        "Name": "pad0x7_UKQG4[0x7]",
+        "Name": "pad0x7_EB2HL[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x101"
@@ -874,10 +851,44 @@
         "Offset": "0x108"
       },
       {
-        "Name": "pad0x18_EZHI0[0x18]",
+        "Name": "pad0x18_1VPWX[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x110"
+      }
+    ]
+  },
+  "WaterQueryFrameDataTelemetryEvent": {
+    "ClassSize": "0xa8",
+    "Attributes": [
+      {
+        "Name": "QueryData",
+        "Type": "struct WaterQueryData",
+        "Size": "0xa8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "WaterSplashProbesContainer": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Probes",
+        "Type": "TArray<struct WaterSplashProbe>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ProbeSamplingTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_4SXC5[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
       }
     ]
   },
@@ -909,7 +920,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_WC617[0x4]",
+        "Name": "pad0x4_6R72Q[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
@@ -939,7 +950,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0xfc_H6LXD[0xfc]",
+        "Name": "pad0xfc_9T7OE[0xfc]",
         "Type": "char",
         "Size": "0xfc",
         "Offset": "0x44"
@@ -956,7 +967,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x40_R3OEN[0x40]",
+        "Name": "pad0x40_FMKNN[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x10"
@@ -974,7 +985,7 @@
         "Offset": "0x58"
       },
       {
-        "Name": "pad0x8_0IV3N[0x8]",
+        "Name": "pad0x8_P0C50[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x60"

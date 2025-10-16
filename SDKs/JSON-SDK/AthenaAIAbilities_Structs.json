@@ -1,27 +1,4 @@
 {
-  "MeleeAttackIdWeights": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MeleeAttackType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Weight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x4_VL34S[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xc"
-      }
-    ]
-  },
   "AshenLordFireShroudParams": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -38,10 +15,33 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_A7A2R[0x4]",
+        "Name": "pad0x4_V0UP2[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
+      }
+    ]
+  },
+  "MeleeAttackIdWeights": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MeleeAttackType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Weight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_BK030[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
       }
     ]
   },

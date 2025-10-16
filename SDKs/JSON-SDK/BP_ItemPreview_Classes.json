@@ -78,7 +78,7 @@
         "Offset": "0x5d8"
       },
       {
-        "Name": "pad0x30_O29E7[0x30]",
+        "Name": "pad0x30_0TSSI[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x5e0"

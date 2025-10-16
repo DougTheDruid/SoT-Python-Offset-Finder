@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 TrackedEncounterEvent:
   Attributes:
-  - Name: pad0x10_3RMW3[0x10]
+  - Name: pad0x10_UJFO5[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
@@ -14,7 +14,7 @@ TrackedEncounterEvent:
     Offset: '0x18'
     Size: '0x8'
     Type: class TrackedEncounter*
-  - Name: pad0x18_00T5P[0x18]
+  - Name: pad0x18_NHNHB[0x18]
     Offset: '0x20'
     Size: '0x18'
     Type: char

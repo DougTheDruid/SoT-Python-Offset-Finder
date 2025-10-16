@@ -1,9 +1,26 @@
 {
+  "EventWarMapStateChanged": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x8_JIW5A[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "WarMapProposalContainer",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "EventWarMapHardModeStateChanged": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_SBCGE[0x1]",
+        "Name": "pad0x1_ZKPR8[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
@@ -29,23 +46,6 @@
         "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "EventWarMapStateChanged": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x8_AJNKW[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "WarMapProposalContainer",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x8"
       }
     ]
   },

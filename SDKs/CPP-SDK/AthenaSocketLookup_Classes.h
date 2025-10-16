@@ -7,7 +7,7 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SocketIdTestFunctions: public BlueprintFunctionLibrary
+class SocketLookupCacheTestFunctions: public BlueprintFunctionLibrary
 {
 public:
 };
@@ -21,7 +21,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SocketLookupCacheTestFunctions: public BlueprintFunctionLibrary
+class SocketIdTestFunctions: public BlueprintFunctionLibrary
 {
 public:
 };

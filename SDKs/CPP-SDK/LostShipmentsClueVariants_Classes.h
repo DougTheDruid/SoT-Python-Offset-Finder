@@ -6,13 +6,105 @@
 #include "LostShipmentsClueVariants_Structs.h"
 
 
-// Size 0xa8 (Full Size[0x140] - InheritedSize[0x98]
-class WaitForClueCollectedStep: public TaleQuestStep
+// Size 0x18 (Full Size[0x150] - InheritedSize[0x138]
+class ObtainClueOnWieldComponent: public OnItemWieldedComponent
 {
 public:
-	class ClueDescriptor*                                        ClueDesc;                                          // 0x98(0x8)
-	class Actor*                                                 ClueActor;                                         // 0xa0(0x8)
-	char                                                         pad0x98_Y015S[0x98];                               // 0xa8(0x98)
+	char                                                         pad0x8_LX9I3[0x8];                                 // 0x138(0x8)
+	class ClueDescriptor*                                        ClueToObtain;                                      // 0x140(0x8)
+	class UClass*                                                ClueSiteType;                                      // 0x148(0x8)
+};
+
+
+// Size 0x98 (Full Size[0x118] - InheritedSize[0x80]
+class TaleQuestGetPhasedVersionOfActorFromAssetMapStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableActor                                    ExistingNPCActor;                                  // 0x80(0x30)
+	struct QuestVariableActorAssetType                           ObtainedPhasedNPCActorType;                        // 0xb0(0x30)
+	struct QuestVariableActor                                    PhasingSourceActor;                                // 0xe0(0x30)
+	class ExistingToPhasedNPCIndexAssetMap*                      IndexAssetMap;                                     // 0x110(0x8)
+};
+
+
+// Size 0x18 (Full Size[0x48] - InheritedSize[0x30]
+class NPCHintDialogueClueCreator: public LandClueCreator
+{
+public:
+	class ExistingToPhasedNPCIndexAssetMap*                      NPCMappingAsset;                                   // 0x30(0x8)
+	int                                                          LootItemSpawnXYDistanceFromClueIncrementMin;       // 0x38(0x4)
+	int                                                          LootItemSpawnXYDistanceFromClueIncrementMax;       // 0x3c(0x4)
+	int                                                          LootItemSpawnZOffset;                              // 0x40(0x4)
+	char                                                         pad0x4_UVTQQ[0x4];                                 // 0x44(0x4)
+};
+
+
+// Size 0x10 (Full Size[0x50] - InheritedSize[0x40]
+class SeaLocationByGridSquareClueDestinationDescriptor: public ClueDestinationDescriptor
+{
+public:
+	struct Vector                                                SeaLocationIdentifier;                             // 0x40(0xc)
+	char                                                         pad0x4_P4JCN[0x4];                                 // 0x4c(0x4)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ShipwreckClueBlueprintFunctionLibrary: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0x4d0] - InheritedSize[0x4c0]
+class MerchantCaptainSpawnComponent: public ItemSpawnComponent
+{
+public:
+	char                                                         pad0x10_562H8[0x10];                               // 0x4c0(0x10)
+};
+
+
+// Size 0xf8 (Full Size[0x1b0] - InheritedSize[0xb8]
+class AbandonedNoteWieldableRenderingComponent: public ActorComponent
+{
+public:
+	int                                                          CanvasWidth;                                       // 0xb8(0x4)
+	int                                                          CanvasHeight;                                      // 0xbc(0x4)
+	class Font*                                                  BodyTextFont;                                      // 0xc0(0x8)
+	class Font*                                                  TitleTextFont;                                     // 0xc8(0x8)
+	float                                                        FontLineSpacing;                                   // 0xd0(0x4)
+	float                                                        FontScale;                                         // 0xd4(0x4)
+	struct TreasureMapWidgetText                                 BodyTextLayout;                                    // 0xd8(0x3c)
+	struct TreasureMapWidgetText                                 TitleTextLayout;                                   // 0x114(0x3c)
+	TArray<struct TextEntryWithLayout>                           ExtraTextFields;                                   // 0x150(0x10)
+	char                                                         pad0x50_LQDY9[0x50];                               // 0x160(0x50)
+};
+
+
+// Size 0x0 (Full Size[0x40] - InheritedSize[0x40]
+class EndOfGooseChaseClueDestinationDescriptor: public ClueDestinationDescriptor
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ShipwreckClueSiteType: public ClueSiteType
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class NPCHintDialogueClueSiteType: public ClueSiteType
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CircleMapClueRenderDataSourceInterface: public Interface
+{
+public:
 };
 
 
@@ -23,37 +115,91 @@ public:
 };
 
 
+// Size 0x40 (Full Size[0x900] - InheritedSize[0x8c0]
+class ClueSiteCircleMapWieldable: public RenderToTextureMapBase
+{
+public:
+	char                                                         pad0x20_P7EHZ[0x20];                               // 0x8c0(0x20)
+	struct MapRadialIconData                                     MapRadialIconData;                                 // 0x8e0(0x18)
+	char                                                         pad0x8_10T24[0x8];                                 // 0x8f8(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class FloatingMessageInABottleClueSiteType: public ClueSiteType
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x90] - InheritedSize[0x90]
+class WashedUpSkeletonClueDestinationGenerator: public ClueDestinationGenerator
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x40] - InheritedSize[0x40]
+class ShipwreckClueDestinationDescriptor: public ClueDestinationDescriptor
+{
+public:
+};
+
+
+// Size 0x98 (Full Size[0x150] - InheritedSize[0xb8]
+class CircleMapClueDestinationContainerComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x10_5CYMY[0x10];                               // 0xb8(0x10)
+	class UClass*                                                MapMarkId;                                         // 0xc8(0x8)
+	float                                                        MapMarkArea;                                       // 0xd0(0x4)
+	float                                                        MapMarkScaleMin;                                   // 0xd4(0x4)
+	float                                                        MapMarkScaleMax;                                   // 0xd8(0x4)
+	float                                                        MapMarkNoiseModifier;                              // 0xdc(0x4)
+	char                                                         MapMarkBlendMode;                                  // 0xe0(0x1)
+	char                                                         pad0x7_PDYG3[0x7];                                 // 0xe1(0x7)
+	class UClass*                                                DebugCrossId;                                      // 0xe8(0x8)
+	bool                                                         ShowCluePositionOnMap;                             // 0xf0(0x1)
+	char                                                         pad0x7_D457H[0x7];                                 // 0xf1(0x7)
+	TArray<struct MapTextureRenderData>                          ClueRenderData;                                    // 0xf8(0x10)
+	char                                                         pad0x48_346SE[0x48];                               // 0x108(0x48)
+};
+
+
 // Size 0x38 (Full Size[0x70] - InheritedSize[0x38]
 class FloatingMessageInABottleClueSiteData: public ClueSiteData
 {
 public:
 	struct Vector                                                SpawnLocation;                                     // 0x38(0xc)
-	char                                                         pad0x2c_ZD8MM[0x2c];                               // 0x44(0x2c)
+	char                                                         pad0x2c_UCGHP[0x2c];                               // 0x44(0x2c)
 };
 
 
-// Size 0x50 (Full Size[0x80] - InheritedSize[0x30]
-class WashedUpMessageInABottleClueCreator: public LandClueCreator
+// Size 0x108 (Full Size[0x1c0] - InheritedSize[0xb8]
+class AbandonedNoteClueDestinationContainerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x20_4EMDN[0x20];                               // 0x30(0x20)
-	int                                                          LootItemSpawnXYDistanceFromClueIncrementMin;       // 0x50(0x4)
-	int                                                          LootItemSpawnXYDistanceFromClueIncrementMax;       // 0x54(0x4)
-	int                                                          LootItemSpawnZOffset;                              // 0x58(0x4)
-	float                                                        LootItemSinkIntoSandZDistanceMin;                  // 0x5c(0x4)
-	float                                                        LootItemSinkIntoSandZDistanceMax;                  // 0x60(0x4)
-	float                                                        LootItemSinkIntoSandRotationMin;                   // 0x64(0x4)
-	float                                                        LootItemSinkIntoSandRotationMax;                   // 0x68(0x4)
-	char                                                         pad0x4_SHEE0[0x4];                                 // 0x6c(0x4)
-	TArray<Class>                                                SinkIntoSandItems;                                 // 0x70(0x10)
+	char                                                         pad0x20_DCK3X[0x20];                               // 0xb8(0x20)
+	class AbandonedNoteClueTextIndexAssetMap*                    ClueTextIndexAssetMap;                             // 0xd8(0x8)
+	struct FString                                               CompositeFormatString;                             // 0xe0(0x10)
+	struct ClueDestinationChoice                                 CurrentClueDestination;                            // 0xf0(0x10)
+	struct FText                                                 CurrentTitleText;                                  // 0x100(0x38)
+	class AbandonedNoteClueTextChoiceSource*                     ClueTextChoiceSource;                              // 0x138(0x8)
+	char                                                         pad0x80_XIRW0[0x80];                               // 0x140(0x80)
 };
 
 
-// Size 0x8 (Full Size[0x48] - InheritedSize[0x40]
-class IslandNameForNPCContextDestinationDescriptor: public ClueDestinationDescriptor
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class BarrelsOfPlentyClueSiteType: public ClueSiteType
 {
 public:
-	struct FName                                                 IslandIdentifier;                                  // 0x40(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x90] - InheritedSize[0x90]
+class ShipwreckClueDestinationGenerator: public ClueDestinationGenerator
+{
+public:
 };
 
 
@@ -66,63 +212,22 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x90] - InheritedSize[0x90]
-class ShipwreckClueDestinationGenerator: public ClueDestinationGenerator
+// Size 0xa8 (Full Size[0xe0] - InheritedSize[0x38]
+class WashedUpMessageInABottleClueSiteData: public ClueSiteData
 {
 public:
-};
-
-
-// Size 0x88 (Full Size[0xc0] - InheritedSize[0x38]
-class WashedUpSkeletonClueSiteData: public ClueSiteData
-{
-public:
-	class UClass*                                                SkeletonPoseType;                                  // 0x38(0x8)
-	class UClass*                                                ClueItemType;                                      // 0x40(0x8)
-	struct FName                                                 IslandNameToSpawnOn;                               // 0x48(0x8)
-	struct Guid                                                  IslandSpawnLocationReservationId;                  // 0x50(0x10)
+	class UClass*                                                BottleItemType;                                    // 0x38(0x8)
+	struct FName                                                 IslandNameToSpawnOn;                               // 0x40(0x8)
+	struct Guid                                                  IslandSpawnLocationReservationId;                  // 0x48(0x10)
+	char                                                         pad0x8_5U29H[0x8];                                 // 0x58(0x8)
 	struct Transform                                             SpawnTransform;                                    // 0x60(0x30)
-	char                                                         pad0x30_OG40X[0x30];                               // 0x90(0x30)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ShipwreckClueSiteType: public ClueSiteType
-{
-public:
-};
-
-
-// Size 0x40 (Full Size[0x830] - InheritedSize[0x7f0]
-class AbandonedNoteWieldable: public SkeletalMeshWieldableItem
-{
-public:
-	char                                                         pad0x10_29MM6[0x10];                               // 0x7f0(0x10)
-	class WieldableItemCanvasRenderingComponent*                 WieldableItemCanvasRenderingComponent;             // 0x800(0x8)
-	class AbandonedNoteWieldableRenderingComponent*              AbandonedNoteRenderingComponent;                   // 0x808(0x8)
-	class InventoryItemComponent*                                InventoryItemComponent;                            // 0x810(0x8)
-	class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x818(0x8)
-	char                                                         QuestMapIcon;                                      // 0x820(0x1)
-	char                                                         pad0xf_8NSR9[0xf];                                 // 0x821(0xf)
+	TArray<class Class*>                                         SinkIntoSandItems;                                 // 0x90(0x10)
+	char                                                         pad0x40_N9PI5[0x40];                               // 0xa0(0x40)
 };
 
 
 // Size 0x0 (Full Size[0x40] - InheritedSize[0x40]
-class AbandonedNoteClueDescriptorGenerator: public ClueDescriptorGenerator
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x90] - InheritedSize[0x90]
-class NPCHintDialogueClueDestinationGenerator: public ClueDestinationGenerator
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WashedUpSkeletonClueSiteType: public ClueSiteType
+class LostShipwreckClueDestinationDescriptor: public ClueDestinationDescriptor
 {
 public:
 };
@@ -133,49 +238,30 @@ class BarrelsOfPlentyClueSiteData: public ClueSiteData
 {
 public:
 	struct Vector                                                SpawnLocation;                                     // 0x38(0xc)
-	char                                                         pad0x2c_JUCWE[0x2c];                               // 0x44(0x2c)
+	char                                                         pad0x2c_DFWMW[0x2c];                               // 0x44(0x2c)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class AbandonedNoteClueTextIndexAssetMap: public DataAsset
+{
+public:
+	TArray<struct ClueDestinationToTextIndex>                    TextIndexMappings;                                 // 0x28(0x10)
+};
+
+
+// Size 0xa8 (Full Size[0x140] - InheritedSize[0x98]
+class WaitForClueCollectedStep: public TaleQuestStep
+{
+public:
+	class ClueDescriptor*                                        ClueDesc;                                          // 0x98(0x8)
+	class Actor*                                                 ClueActor;                                         // 0xa0(0x8)
+	char                                                         pad0x98_548LS[0x98];                               // 0xa8(0x98)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class ClueVariantsBlueprintFunctionLibrary: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
-// Size 0x90 (Full Size[0x110] - InheritedSize[0x80]
-class WaitForClueCollectedStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableClueDescriptor                           Clue;                                              // 0x80(0x30)
-	struct QuestVariableActor                                    ClueActor;                                         // 0xb0(0x30)
-	struct QuestVariableActor                                    Discoverer;                                        // 0xe0(0x30)
-};
-
-
-// Size 0xc8 (Full Size[0x148] - InheritedSize[0x80]
-class TaleQuestSpawnWashedUpSkeletonClueStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableClueSite                                 ClueSite;                                          // 0x80(0x30)
-	struct QuestVariableClueDescriptor                           ClueDescriptor;                                    // 0xb0(0x30)
-	struct QuestVariableActor                                    SkeletonActor;                                     // 0xe0(0x30)
-	struct QuestVariableItemInfo                                 ClueItem;                                          // 0x110(0x30)
-	struct FName                                                 SkeletonClueSocketName;                            // 0x140(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x4c0] - InheritedSize[0x4b0]
-class MerchantCaptainSpawnComponent: public ItemSpawnComponent
-{
-public:
-	char                                                         pad0x10_ETQTO[0x10];                               // 0x4b0(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x40] - InheritedSize[0x40]
-class ShipwreckClueDestinationDescriptor: public ClueDestinationDescriptor
 {
 public:
 };
@@ -196,110 +282,40 @@ public:
 };
 
 
-// Size 0xa8 (Full Size[0xe0] - InheritedSize[0x38]
-class WashedUpMessageInABottleClueSiteData: public ClueSiteData
-{
-public:
-	class UClass*                                                BottleItemType;                                    // 0x38(0x8)
-	struct FName                                                 IslandNameToSpawnOn;                               // 0x40(0x8)
-	struct Guid                                                  IslandSpawnLocationReservationId;                  // 0x48(0x10)
-	char                                                         pad0x8_NQLFR[0x8];                                 // 0x58(0x8)
-	struct Transform                                             SpawnTransform;                                    // 0x60(0x30)
-	TArray<class Class*>                                         SinkIntoSandItems;                                 // 0x90(0x10)
-	char                                                         pad0x40_MT0U5[0x40];                               // 0xa0(0x40)
-};
-
-
-// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
-class TaleQuestRetrieveSpawnedMerchantCaptainFromShipwreckStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableShipwreck                                ShipwreckSpawnedOn;                                // 0x80(0x30)
-	struct QuestVariableActor                                    SpawnedMerchantCaptain;                            // 0xb0(0x30)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AbandonedNoteClueTextSourceInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x40] - InheritedSize[0x40]
-class CircleMapClueDescriptorGenerator: public ClueDescriptorGenerator
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class FloatingMessageInABottleClueSiteType: public ClueSiteType
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestRetrieveSpawnedMerchantCaptainFromShipwreckStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x108 (Full Size[0x1c0] - InheritedSize[0xb8]
-class AbandonedNoteClueDestinationContainerComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x20_Z3U0T[0x20];                               // 0xb8(0x20)
-	class AbandonedNoteClueTextIndexAssetMap*                    ClueTextIndexAssetMap;                             // 0xd8(0x8)
-	struct FString                                               CompositeFormatString;                             // 0xe0(0x10)
-	struct ClueDestinationChoice                                 CurrentClueDestination;                            // 0xf0(0x10)
-	struct FText                                                 CurrentTitleText;                                  // 0x100(0x38)
-	class AbandonedNoteClueTextChoiceSource*                     ClueTextChoiceSource;                              // 0x138(0x8)
-	char                                                         pad0x80_7RG59[0x80];                               // 0x140(0x80)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GooseChaseClueBlueprintFunctionLibrary: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
 // Size 0x8 (Full Size[0x48] - InheritedSize[0x40]
-class IslandByNameClueDestinationDescriptor: public ClueDestinationDescriptor
+class IslandNameForNPCContextDestinationDescriptor: public ClueDestinationDescriptor
 {
 public:
 	struct FName                                                 IslandIdentifier;                                  // 0x40(0x8)
 };
 
 
-// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
-class TaleQuestClueInventoryServiceDesc: public TaleQuestServiceDesc
+// Size 0x40 (Full Size[0x70] - InheritedSize[0x30]
+class WashedUpSkeletonLandClueCreator: public LandClueCreator
 {
 public:
-	char                                                         pad0x40_NUQHL[0x40];                               // 0x28(0x40)
+	TArray<Class>                                                SkeletonPoses;                                     // 0x30(0x10)
+	int                                                          LootItemSpawnXYDistanceFromClueIncrementMin;       // 0x60(0x4)
+	int                                                          LootItemSpawnXYDistanceFromClueIncrementMax;       // 0x64(0x4)
+	int                                                          LootItemSpawnZOffset;                              // 0x68(0x4)
+	char                                                         pad0x4_GW2VT[0x4];                                 // 0x6c(0x4)
 };
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class ExistingToPhasedNPCIndexAssetMap: public DataAsset
+// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
+class InteractableGrammaticalGenderComponent: public ActorComponent
 {
 public:
-	TArray<struct ExistingNPCToPhasedNPC>                        NPCIndexMappings;                                  // 0x28(0x10)
+	char                                                         pad0x8_OEQUO[0x8];                                 // 0xb8(0x8)
+	char                                                         GrammaticalGender;                                 // 0xc0(0x1)
+	char                                                         pad0x7_1R9BE[0x7];                                 // 0xc1(0x7)
 };
 
 
-// Size 0x98 (Full Size[0x118] - InheritedSize[0x80]
-class TaleQuestGetPhasedVersionOfActorFromAssetMapStepDesc: public TaleQuestStepDesc
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestSpawnWashedUpMessageInABottleClueStep: public TaleQuestStep
 {
 public:
-	struct QuestVariableActor                                    ExistingNPCActor;                                  // 0x80(0x30)
-	struct QuestVariableActorAssetType                           ObtainedPhasedNPCActorType;                        // 0xb0(0x30)
-	struct QuestVariableActor                                    PhasingSourceActor;                                // 0xe0(0x30)
-	class ExistingToPhasedNPCIndexAssetMap*                      IndexAssetMap;                                     // 0x110(0x8)
 };
 
 
@@ -312,55 +328,103 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0x48] - InheritedSize[0x30]
-class NPCHintDialogueClueCreator: public LandClueCreator
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ClueDestinationContainerInterface: public Interface
 {
 public:
-	class ExistingToPhasedNPCIndexAssetMap*                      NPCMappingAsset;                                   // 0x30(0x8)
-	int                                                          LootItemSpawnXYDistanceFromClueIncrementMin;       // 0x38(0x4)
-	int                                                          LootItemSpawnXYDistanceFromClueIncrementMax;       // 0x3c(0x4)
-	int                                                          LootItemSpawnZOffset;                              // 0x40(0x4)
-	char                                                         pad0x4_J61IF[0x4];                                 // 0x44(0x4)
 };
 
 
-// Size 0xe8 (Full Size[0x120] - InheritedSize[0x38]
-class NPCHintDialogueClueSiteData: public ClueSiteData
+// Size 0x88 (Full Size[0xc0] - InheritedSize[0x38]
+class WashedUpSkeletonClueSiteData: public ClueSiteData
 {
 public:
-	struct NPCData                                               NPCData;                                           // 0x38(0xb8)
-	char                                                         pad0x30_9SYVY[0x30];                               // 0xf0(0x30)
+	class UClass*                                                SkeletonPoseType;                                  // 0x38(0x8)
+	class UClass*                                                ClueItemType;                                      // 0x40(0x8)
+	struct FName                                                 IslandNameToSpawnOn;                               // 0x48(0x8)
+	struct Guid                                                  IslandSpawnLocationReservationId;                  // 0x50(0x10)
+	struct Transform                                             SpawnTransform;                                    // 0x60(0x30)
+	char                                                         pad0x30_4PN2F[0x30];                               // 0x90(0x30)
 };
 
 
-// Size 0x18 (Full Size[0x150] - InheritedSize[0x138]
-class ObtainClueOnWieldComponent: public OnItemWieldedComponent
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestGetNPCActorFromClueSiteStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x8_3O2UK[0x8];                                 // 0x138(0x8)
-	class ClueDescriptor*                                        ClueToObtain;                                      // 0x140(0x8)
-	class UClass*                                                ClueSiteType;                                      // 0x148(0x8)
 };
 
 
 // Size 0x10 (Full Size[0x50] - InheritedSize[0x40]
-class CompositeClueDestinationDescriptor: public ClueDestinationDescriptor
+class NPCByNameClueDestinationDescriptor: public ClueDestinationDescriptor
 {
 public:
-	class ClueDestinationDescriptor*                             PrimaryClueDestDescriptor;                         // 0x40(0x8)
-	class ClueDestinationDescriptor*                             SecondaryClueDestDescriptor;                       // 0x48(0x8)
+	struct Guid                                                  NPCIdentifier;                                     // 0x40(0x10)
 };
 
 
-// Size 0x228 (Full Size[0x288] - InheritedSize[0x60]
-class TaleQuestClueInventoryService: public TaleQuestService
+// Size 0xc8 (Full Size[0x148] - InheritedSize[0x80]
+class TaleQuestSpawnWashedUpSkeletonClueStepDesc: public TaleQuestStepDesc
 {
 public:
-	char                                                         pad0x18_CNV4Z[0x18];                               // 0x60(0x18)
-	TArray<class ClueDescriptor*>                                ObtainedClues;                                     // 0x78(0x10)
-	char                                                         pad0x50_BOBB4[0x50];                               // 0x88(0x50)
-	struct FText                                                 TitleText;                                         // 0x248(0x38)
-	class AbandonedNoteClueTextChoiceSource*                     ClueTextChoiceSource;                              // 0x280(0x8)
+	struct QuestVariableClueSite                                 ClueSite;                                          // 0x80(0x30)
+	struct QuestVariableClueDescriptor                           ClueDescriptor;                                    // 0xb0(0x30)
+	struct QuestVariableActor                                    SkeletonActor;                                     // 0xe0(0x30)
+	struct QuestVariableItemInfo                                 ClueItem;                                          // 0x110(0x30)
+	struct FName                                                 SkeletonClueSocketName;                            // 0x140(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class GooseChaseClueBlueprintFunctionLibrary: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
+// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
+class TaleQuestClueInventoryServiceDesc: public TaleQuestServiceDesc
+{
+public:
+	char                                                         pad0x40_215FI[0x40];                               // 0x28(0x40)
+};
+
+
+// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
+class BarrelsOfPlentySeaClueCreator: public SeaClueCreator
+{
+public:
+	int                                                          LootItemSpawnXYDistanceFromClueIncrementMin;       // 0x30(0x4)
+	int                                                          LootItemSpawnXYDistanceFromClueIncrementMax;       // 0x34(0x4)
+};
+
+
+// Size 0xb8 (Full Size[0xe0] - InheritedSize[0x28]
+class AbandonedNoteClueTextChoiceSource: public Object
+{
+public:
+	char                                                         pad0xb8_T166M[0xb8];                               // 0x28(0xb8)
+};
+
+
+// Size 0x0 (Full Size[0x90] - InheritedSize[0x90]
+class WashedUpMessageInABottleClueDestinationGenerator: public ClueDestinationGenerator
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestRetrieveSpawnedMerchantCaptainFromShipwreckStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ClueTitleInterface: public Interface
+{
+public:
 };
 
 
@@ -375,7 +439,7 @@ public:
 
 
 // Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
-class BarrelsOfPlentySeaClueCreator: public SeaClueCreator
+class FloatingMessageInABottleSeaClueCreator: public SeaClueCreator
 {
 public:
 	int                                                          LootItemSpawnXYDistanceFromClueIncrementMin;       // 0x30(0x4)
@@ -383,27 +447,69 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x90] - InheritedSize[0x90]
-class FloatingMessageInABottleClueDestinationGenerator: public ClueDestinationGenerator
+// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
+class TaleQuestGetPhasedVersionOfActorFromAssetMapStep: public TaleQuestStep
 {
 public:
+	class ExistingToPhasedNPCIndexAssetMap*                      NPCIndexAssetMap;                                  // 0x98(0x8)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ClueDestinationContainerInterface: public Interface
+class AbandonedNoteClueTextChoiceSourceConsumerInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x18 (Full Size[0x58] - InheritedSize[0x40]
-class LocationOnIslandClueDestinationDescriptor: public ClueDestinationDescriptor
+// Size 0x90 (Full Size[0x110] - InheritedSize[0x80]
+class WaitForClueCollectedStepDesc: public TaleQuestStepDesc
 {
 public:
-	struct FName                                                 IslandIdentifier;                                  // 0x40(0x8)
-	struct Vector                                                WorldPosition;                                     // 0x48(0xc)
-	char                                                         pad0x4_CPGF3[0x4];                                 // 0x54(0x4)
+	struct QuestVariableClueDescriptor                           Clue;                                              // 0x80(0x30)
+	struct QuestVariableActor                                    ClueActor;                                         // 0xb0(0x30)
+	struct QuestVariableActor                                    Discoverer;                                        // 0xe0(0x30)
+};
+
+
+// Size 0x0 (Full Size[0x40] - InheritedSize[0x40]
+class CircleMapClueDescriptorGenerator: public ClueDescriptorGenerator
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class ExistingToPhasedNPCIndexAssetMap: public DataAsset
+{
+public:
+	TArray<struct ExistingNPCToPhasedNPC>                        NPCIndexMappings;                                  // 0x28(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x90] - InheritedSize[0x90]
+class NPCHintDialogueClueDestinationGenerator: public ClueDestinationGenerator
+{
+public:
+};
+
+
+// Size 0x228 (Full Size[0x288] - InheritedSize[0x60]
+class TaleQuestClueInventoryService: public TaleQuestService
+{
+public:
+	char                                                         pad0x18_34T75[0x18];                               // 0x60(0x18)
+	TArray<class ClueDescriptor*>                                ObtainedClues;                                     // 0x78(0x10)
+	char                                                         pad0x50_MVVP9[0x50];                               // 0x88(0x50)
+	struct FText                                                 TitleText;                                         // 0x248(0x38)
+	class AbandonedNoteClueTextChoiceSource*                     ClueTextChoiceSource;                              // 0x280(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AbandonedNoteClueTextSourceInterface: public Interface
+{
+public:
 };
 
 
@@ -414,92 +520,12 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class NPCHintDialogueClueSiteType: public ClueSiteType
+// Size 0x10 (Full Size[0x50] - InheritedSize[0x40]
+class CompositeClueDestinationDescriptor: public ClueDestinationDescriptor
 {
 public:
-};
-
-
-// Size 0x0 (Full Size[0x40] - InheritedSize[0x40]
-class LostShipwreckClueDestinationDescriptor: public ClueDestinationDescriptor
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ShipwreckClueBlueprintFunctionLibrary: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CircleMapClueRenderDataSourceInterface: public Interface
-{
-public:
-};
-
-
-// Size 0xf8 (Full Size[0x1b0] - InheritedSize[0xb8]
-class AbandonedNoteWieldableRenderingComponent: public ActorComponent
-{
-public:
-	int                                                          CanvasWidth;                                       // 0xb8(0x4)
-	int                                                          CanvasHeight;                                      // 0xbc(0x4)
-	class Font*                                                  BodyTextFont;                                      // 0xc0(0x8)
-	class Font*                                                  TitleTextFont;                                     // 0xc8(0x8)
-	float                                                        FontLineSpacing;                                   // 0xd0(0x4)
-	float                                                        FontScale;                                         // 0xd4(0x4)
-	struct TreasureMapWidgetText                                 BodyTextLayout;                                    // 0xd8(0x3c)
-	struct TreasureMapWidgetText                                 TitleTextLayout;                                   // 0x114(0x3c)
-	TArray<struct TextEntryWithLayout>                           ExtraTextFields;                                   // 0x150(0x10)
-	char                                                         pad0x50_XB4GN[0x50];                               // 0x160(0x50)
-};
-
-
-// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
-class FloatingMessageInABottleSeaClueCreator: public SeaClueCreator
-{
-public:
-	int                                                          LootItemSpawnXYDistanceFromClueIncrementMin;       // 0x30(0x4)
-	int                                                          LootItemSpawnXYDistanceFromClueIncrementMax;       // 0x34(0x4)
-};
-
-
-// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
-class InteractableGrammaticalGenderComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_88431[0x8];                                 // 0xb8(0x8)
-	char                                                         GrammaticalGender;                                 // 0xc0(0x1)
-	char                                                         pad0x7_5WVD3[0x7];                                 // 0xc1(0x7)
-};
-
-
-// Size 0x40 (Full Size[0x900] - InheritedSize[0x8c0]
-class ClueSiteCircleMapWieldable: public RenderToTextureMapBase
-{
-public:
-	char                                                         pad0x20_7LD7L[0x20];                               // 0x8c0(0x20)
-	struct MapRadialIconData                                     MapRadialIconData;                                 // 0x8e0(0x18)
-	char                                                         pad0x8_592QH[0x8];                                 // 0x8f8(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class MerchantCaptainSpawnInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class AbandonedNoteClueTextIndexAssetMap: public DataAsset
-{
-public:
-	TArray<struct ClueDestinationToTextIndex>                    TextIndexMappings;                                 // 0x28(0x10)
+	class ClueDestinationDescriptor*                             PrimaryClueDestDescriptor;                         // 0x40(0x8)
+	class ClueDestinationDescriptor*                             SecondaryClueDestDescriptor;                       // 0x48(0x8)
 };
 
 
@@ -512,16 +538,8 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class CircleMapClueDescriptor: public ClueDescriptor
-{
-public:
-	class ClueDestinationDescriptor*                             DestinationDescriptor;                             // 0x28(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ClueTitleInterface: public Interface
+// Size 0x0 (Full Size[0x90] - InheritedSize[0x90]
+class FloatingMessageInABottleClueDestinationGenerator: public ClueDestinationGenerator
 {
 public:
 };
@@ -532,22 +550,64 @@ class IslandByCompassBearingClueDestinationDescriptor: public ClueDestinationDes
 {
 public:
 	char                                                         CompassDirection;                                  // 0x40(0x1)
-	char                                                         pad0x7_2PBV7[0x7];                                 // 0x41(0x7)
+	char                                                         pad0x7_46XDW[0x7];                                 // 0x41(0x7)
 };
 
 
-// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
-class TaleQuestGetPhasedVersionOfActorFromAssetMapStep: public TaleQuestStep
+// Size 0x8 (Full Size[0x48] - InheritedSize[0x40]
+class IslandByNameClueDestinationDescriptor: public ClueDestinationDescriptor
 {
 public:
-	class ExistingToPhasedNPCIndexAssetMap*                      NPCIndexAssetMap;                                  // 0x98(0x8)
+	struct FName                                                 IslandIdentifier;                                  // 0x40(0x8)
 };
 
 
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestSpawnWashedUpMessageInABottleClueStep: public TaleQuestStep
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class MerchantCaptainSpawnInterface: public Interface
 {
 public:
+};
+
+
+// Size 0x50 (Full Size[0x80] - InheritedSize[0x30]
+class WashedUpMessageInABottleClueCreator: public LandClueCreator
+{
+public:
+	char                                                         pad0x20_0KV8C[0x20];                               // 0x30(0x20)
+	int                                                          LootItemSpawnXYDistanceFromClueIncrementMin;       // 0x50(0x4)
+	int                                                          LootItemSpawnXYDistanceFromClueIncrementMax;       // 0x54(0x4)
+	int                                                          LootItemSpawnZOffset;                              // 0x58(0x4)
+	float                                                        LootItemSinkIntoSandZDistanceMin;                  // 0x5c(0x4)
+	float                                                        LootItemSinkIntoSandZDistanceMax;                  // 0x60(0x4)
+	float                                                        LootItemSinkIntoSandRotationMin;                   // 0x64(0x4)
+	float                                                        LootItemSinkIntoSandRotationMax;                   // 0x68(0x4)
+	char                                                         pad0x4_TSAB2[0x4];                                 // 0x6c(0x4)
+	TArray<Class>                                                SinkIntoSandItems;                                 // 0x70(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class WashedUpSkeletonClueSiteType: public ClueSiteType
+{
+public:
+};
+
+
+// Size 0xe8 (Full Size[0x120] - InheritedSize[0x38]
+class NPCHintDialogueClueSiteData: public ClueSiteData
+{
+public:
+	struct NPCData                                               NPCData;                                           // 0x38(0xb8)
+	char                                                         pad0x30_TE22H[0x30];                               // 0xf0(0x30)
+};
+
+
+// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
+class TaleQuestRetrieveSpawnedMerchantCaptainFromShipwreckStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableShipwreck                                ShipwreckSpawnedOn;                                // 0x80(0x30)
+	struct QuestVariableActor                                    SpawnedMerchantCaptain;                            // 0xb0(0x30)
 };
 
 
@@ -558,110 +618,50 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestGetNPCActorFromClueSiteStep: public TaleQuestStep
+// Size 0x18 (Full Size[0x58] - InheritedSize[0x40]
+class LocationOnIslandClueDestinationDescriptor: public ClueDestinationDescriptor
 {
 public:
-};
-
-
-// Size 0xb8 (Full Size[0xe0] - InheritedSize[0x28]
-class AbandonedNoteClueTextChoiceSource: public Object
-{
-public:
-	char                                                         pad0xb8_27Q5V[0xb8];                               // 0x28(0xb8)
-};
-
-
-// Size 0x0 (Full Size[0x90] - InheritedSize[0x90]
-class WashedUpSkeletonClueDestinationGenerator: public ClueDestinationGenerator
-{
-public:
-};
-
-
-// Size 0x98 (Full Size[0x150] - InheritedSize[0xb8]
-class CircleMapClueDestinationContainerComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x10_XFCR5[0x10];                               // 0xb8(0x10)
-	class UClass*                                                MapMarkId;                                         // 0xc8(0x8)
-	float                                                        MapMarkArea;                                       // 0xd0(0x4)
-	float                                                        MapMarkScaleMin;                                   // 0xd4(0x4)
-	float                                                        MapMarkScaleMax;                                   // 0xd8(0x4)
-	float                                                        MapMarkNoiseModifier;                              // 0xdc(0x4)
-	char                                                         MapMarkBlendMode;                                  // 0xe0(0x1)
-	char                                                         pad0x7_APY0O[0x7];                                 // 0xe1(0x7)
-	class UClass*                                                DebugCrossId;                                      // 0xe8(0x8)
-	bool                                                         ShowCluePositionOnMap;                             // 0xf0(0x1)
-	char                                                         pad0x7_MNR8Z[0x7];                                 // 0xf1(0x7)
-	TArray<struct MapTextureRenderData>                          ClueRenderData;                                    // 0xf8(0x10)
-	char                                                         pad0x48_QV230[0x48];                               // 0x108(0x48)
-};
-
-
-// Size 0x0 (Full Size[0x90] - InheritedSize[0x90]
-class WashedUpMessageInABottleClueDestinationGenerator: public ClueDestinationGenerator
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AbandonedNoteClueTextChoiceSourceConsumerInterface: public Interface
-{
-public:
+	struct FName                                                 IslandIdentifier;                                  // 0x40(0x8)
+	struct Vector                                                WorldPosition;                                     // 0x48(0xc)
+	char                                                         pad0x4_ZVYF6[0x4];                                 // 0x54(0x4)
 };
 
 
 // Size 0x0 (Full Size[0x40] - InheritedSize[0x40]
-class EndOfGooseChaseClueDestinationDescriptor: public ClueDestinationDescriptor
+class AbandonedNoteClueDescriptorGenerator: public ClueDescriptorGenerator
 {
 public:
 };
 
 
-// Size 0x40 (Full Size[0x70] - InheritedSize[0x30]
-class WashedUpSkeletonLandClueCreator: public LandClueCreator
+// Size 0x40 (Full Size[0x830] - InheritedSize[0x7f0]
+class AbandonedNoteWieldable: public SkeletalMeshWieldableItem
 {
 public:
-	TArray<Class>                                                SkeletonPoses;                                     // 0x30(0x10)
-	int                                                          LootItemSpawnXYDistanceFromClueIncrementMin;       // 0x60(0x4)
-	int                                                          LootItemSpawnXYDistanceFromClueIncrementMax;       // 0x64(0x4)
-	int                                                          LootItemSpawnZOffset;                              // 0x68(0x4)
-	char                                                         pad0x4_UVKVX[0x4];                                 // 0x6c(0x4)
+	char                                                         pad0x10_VZBYT[0x10];                               // 0x7f0(0x10)
+	class WieldableItemCanvasRenderingComponent*                 WieldableItemCanvasRenderingComponent;             // 0x800(0x8)
+	class AbandonedNoteWieldableRenderingComponent*              AbandonedNoteRenderingComponent;                   // 0x808(0x8)
+	class InventoryItemComponent*                                InventoryItemComponent;                            // 0x810(0x8)
+	class UsableWieldableComponent*                              UsableWieldableComponent;                          // 0x818(0x8)
+	char                                                         QuestMapIcon;                                      // 0x820(0x1)
+	char                                                         pad0xf_VR0KH[0xf];                                 // 0x821(0xf)
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class BarrelsOfPlentyClueSiteType: public ClueSiteType
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class CircleMapClueDescriptor: public ClueDescriptor
 {
 public:
+	class ClueDestinationDescriptor*                             DestinationDescriptor;                             // 0x28(0x8)
 };
 
 
-// Size 0x10 (Full Size[0x50] - InheritedSize[0x40]
-class SeaLocationByGridSquareClueDestinationDescriptor: public ClueDestinationDescriptor
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class AbandonedNoteClueTextIndexAsset: public AbandonedNoteClueTextIndexAssetBase
 {
 public:
-	struct Vector                                                SeaLocationIdentifier;                             // 0x40(0xc)
-	char                                                         pad0x4_XWD2X[0x4];                                 // 0x4c(0x4)
-};
-
-
-// Size 0x10 (Full Size[0x50] - InheritedSize[0x40]
-class NPCByNameClueDestinationDescriptor: public ClueDestinationDescriptor
-{
-public:
-	struct Guid                                                  NPCIdentifier;                                     // 0x40(0x10)
-};
-
-
-// Size 0x80 (Full Size[0x1d0] - InheritedSize[0x150]
-class ObtainClueFromContainerOnWieldComponent: public ObtainClueOnWieldComponent
-{
-public:
-	char                                                         pad0x80_YQV3V[0x80];                               // 0x150(0x80)
+	TArray<class AbandonedNoteClueTextAsset*>                    ClueDestinationDescriptions;                       // 0x28(0x10)
 };
 
 
@@ -673,11 +673,11 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class AbandonedNoteClueTextIndexAsset: public AbandonedNoteClueTextIndexAssetBase
+// Size 0x80 (Full Size[0x1d0] - InheritedSize[0x150]
+class ObtainClueFromContainerOnWieldComponent: public ObtainClueOnWieldComponent
 {
 public:
-	TArray<class AbandonedNoteClueTextAsset*>                    ClueDestinationDescriptions;                       // 0x28(0x10)
+	char                                                         pad0x80_NH5CR[0x80];                               // 0x150(0x80)
 };
 
 

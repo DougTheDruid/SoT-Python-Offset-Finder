@@ -6,18 +6,18 @@
 #include "FlamesOfFateFramework_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class FlamesOfFateServiceInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x18 (Full Size[0x3b8] - InheritedSize[0x3a0]
 class FlamesOfFateService: public Actor
 {
 public:
-	char                                                         pad0x18_C5YW1[0x18];                               // 0x3a0(0x18)
+	char                                                         pad0x18_UPULK[0x18];                               // 0x3a0(0x18)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class FlamesOfFateServiceInterface: public Interface
+{
+public:
 };
 
 

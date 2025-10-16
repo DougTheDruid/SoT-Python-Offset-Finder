@@ -1,4 +1,27 @@
 {
+  "VideoSubtitleEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "MediaTextureName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SubtitleString",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "SubtitleDuration",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
   "VideoPlaybackStartEvent": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -38,37 +61,14 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x18_2Q2KJ[0x18]",
+        "Name": "pad0x18_AMWOQ[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x28"
       }
     ]
   },
-  "VideoSubtitleEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "MediaTextureName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SubtitleString",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "SubtitleDuration",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "VideoPlaybackStopEvent": {
+  "VideoPlaybackPauseEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
@@ -79,7 +79,24 @@
       }
     ]
   },
-  "VideoPlaybackPauseEvent": {
+  "VideoPlaybackLoadEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "MediaTextureName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "VideoUri",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "VideoPlaybackStopEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
@@ -106,27 +123,10 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_O1G9Z[0x7]",
+        "Name": "pad0x7_ZJ7YG[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
-      }
-    ]
-  },
-  "VideoPlaybackLoadEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "MediaTextureName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "VideoUri",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
       }
     ]
   },

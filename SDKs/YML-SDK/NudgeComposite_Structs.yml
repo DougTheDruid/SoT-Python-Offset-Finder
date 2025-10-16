@@ -10,7 +10,7 @@ NudgeChancePerDamagerType:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_8V5GK[0x4]
+  - Name: pad0x4_7MRGF[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char

@@ -1,4 +1,18 @@
 {
+  "SimpleOverlapComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xc0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_LFNIZ[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      }
+    ]
+  },
   "SimpleOverlapCollectionKey": {
     "Super": "Object",
     "FullSize": "0x28",
@@ -13,7 +27,7 @@
     "ClassSize": "0xd8",
     "Attributes": [
       {
-        "Name": "pad0xc8_XAIHR[0xc8]",
+        "Name": "pad0xc8_POE5T[0xc8]",
         "Type": "char",
         "Size": "0xc8",
         "Offset": "0x3a0"
@@ -31,24 +45,10 @@
         "Offset": "0x470"
       },
       {
-        "Name": "pad0x7_GP57R[0x7]",
+        "Name": "pad0x7_L3R7U[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x471"
-      }
-    ]
-  },
-  "SimpleOverlapComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xc0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_1BEMO[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb8"
       }
     ]
   },

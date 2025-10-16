@@ -6,49 +6,6 @@
 #include "GameplayDebugger_Structs.h"
 
 
-// Size 0x230 (Full Size[0x7d0] - InheritedSize[0x5a0]
-class GameplayDebuggingComponent: public PrimitiveComponent
-{
-public:
-	struct FString                                               DebugComponentClassName;                           // 0x5a0(0x10)
-	int                                                          ShowExtendedInformatiomCounter;                    // 0x5b0(0x4)
-	char                                                         pad0x4_MZLQN[0x4];                                 // 0x5b4(0x4)
-	TArray<int>                                                  ReplicateViewDataCounters;                         // 0x5b8(0x10)
-	struct FString                                               ControllerName;                                    // 0x5c8(0x10)
-	struct FString                                               PawnName;                                          // 0x5d8(0x10)
-	struct FString                                               PawnClass;                                         // 0x5e8(0x10)
-	struct FString                                               DebugIcon;                                         // 0x5f8(0x10)
-	struct FString                                               MovementBaseInfo;                                  // 0x608(0x10)
-	struct FString                                               MovementModeInfo;                                  // 0x618(0x10)
-	struct FString                                               PathFollowingInfo;                                 // 0x628(0x10)
-	struct FString                                               CurrentAITask;                                     // 0x638(0x10)
-	struct FString                                               CurrentAIState;                                    // 0x648(0x10)
-	struct FString                                               CurrentAIAssets;                                   // 0x658(0x10)
-	struct FString                                               GameplayTasksState;                                // 0x668(0x10)
-	struct FString                                               NavDataInfo;                                       // 0x678(0x10)
-	struct FString                                               AbilityInfo;                                       // 0x688(0x10)
-	struct FString                                               MontageInfo;                                       // 0x698(0x10)
-	struct FString                                               BrainComponentName;                                // 0x6a8(0x10)
-	struct FString                                               BrainComponentString;                              // 0x6b8(0x10)
-	TArray<char>                                                 BlackboardRepData;                                 // 0x6c8(0x10)
-	char                                                         pad0x10_GO530[0x10];                               // 0x6d8(0x10)
-	TArray<struct Vector>                                        PathPoints;                                        // 0x6e8(0x10)
-	TArray<char>                                                 PathCorridorData;                                  // 0x6f8(0x10)
-	char                                                         pad0x10_1PQUF[0x10];                               // 0x708(0x10)
-	TArray<char>                                                 NavmeshRepData;                                    // 0x718(0x10)
-	TArray<char>                                                 EQSRepData;                                        // 0x728(0x10)
-	struct Vector                                                SensingComponentLocation;                          // 0x738(0xc)
-	int                                                          NextPathPointIndex;                                // 0x744(0x4)
-	bool                                                         bIsUsingPathFollowing;                             // 0x748(0x1)
-	bool                                                         bIsUsingCharacter;                                 // 0x748(0x1)
-	bool                                                         bIsUsingBehaviorTree;                              // 0x748(0x1)
-	bool                                                         bIsUsingAbilities;                                 // 0x748(0x1)
-	char                                                         pad0x7_WR20T[0x7];                                 // 0x749(0x7)
-	class Actor*                                                 TargetActor;                                       // 0x750(0x8)
-	char                                                         pad0x78_OSC0S[0x78];                               // 0x758(0x78)
-};
-
-
 // Size 0x2a0 (Full Size[0x358] - InheritedSize[0xb8]
 class GameplayDebuggingControllerComponent: public ActorComponent
 {
@@ -57,7 +14,7 @@ public:
 	class Actor*                                                 DebugAITargetActor;                                // 0xc0(0x8)
 	class InputComponent*                                        AIDebugViewInputComponent;                         // 0xc8(0x8)
 	class InputComponent*                                        DebugCameraInputComponent;                         // 0xd0(0x8)
-	char                                                         pad0x28_4H4NT[0x28];                               // 0xd8(0x28)
+	char                                                         pad0x28_65N8S[0x28];                               // 0xd8(0x28)
 	struct InputChord                                            ActivationKey;                                     // 0x100(0x28)
 	struct InputChord                                            CategoryZeroBind;                                  // 0x128(0x28)
 	struct InputChord                                            CategoryOneBind;                                   // 0x150(0x28)
@@ -76,6 +33,45 @@ public:
 };
 
 
+// Size 0x30 (Full Size[0x4c8] - InheritedSize[0x498]
+class GaneplayDebuggerProxyHUD: public HUD
+{
+public:
+	char                                                         pad0x30_VQTN3[0x30];                               // 0x498(0x30)
+};
+
+
+// Size 0xb0 (Full Size[0x450] - InheritedSize[0x3a0]
+class GameplayDebuggingReplicator: public Actor
+{
+public:
+	struct FString                                               DebugComponentClassName;                           // 0x3a0(0x10)
+	struct FString                                               DebugComponentHUDClassName;                        // 0x3b0(0x10)
+	struct FString                                               DebugComponentControllerClassName;                 // 0x3c0(0x10)
+	int                                                          MaxEQSQueries;                                     // 0x3d0(0x4)
+	char                                                         pad0x4_8MTMH[0x4];                                 // 0x3d4(0x4)
+	class GameplayDebuggingComponent*                            DebugComponent;                                    // 0x3d8(0x8)
+	class PlayerController*                                      LocalPlayerOwner;                                  // 0x3e0(0x8)
+	class Actor*                                                 LastSelectedActorToDebug;                          // 0x3e8(0x8)
+	bool                                                         bIsGlobalInWorld;                                  // 0x3f0(0x1)
+	bool                                                         bAutoActivate;                                     // 0x3f1(0x1)
+	bool                                                         OverHead;                                          // 0x3f2(0x1)
+	bool                                                         Basic;                                             // 0x3f3(0x1)
+	bool                                                         BehaviorTree;                                      // 0x3f4(0x1)
+	bool                                                         EQS;                                               // 0x3f5(0x1)
+	bool                                                         EnableEQSOnHUD;                                    // 0x3f6(0x1)
+	char                                                         pad0x1_JX22L[0x1];                                 // 0x3f7(0x1)
+	int                                                          ActiveEQSIndex;                                    // 0x3f8(0x4)
+	bool                                                         Perception;                                        // 0x3fc(0x1)
+	bool                                                         GameView1;                                         // 0x3fd(0x1)
+	bool                                                         GameView2;                                         // 0x3fe(0x1)
+	bool                                                         GameView3;                                         // 0x3ff(0x1)
+	bool                                                         GameView4;                                         // 0x400(0x1)
+	bool                                                         GameView5;                                         // 0x401(0x1)
+	char                                                         pad0x4e_600K0[0x4e];                               // 0x402(0x4e)
+};
+
+
 // Size 0x80 (Full Size[0xa8] - InheritedSize[0x28]
 class GameplayDebuggerSettings: public Object
 {
@@ -86,7 +82,7 @@ public:
 	bool                                                         BehaviorTree;                                      // 0x7a(0x1)
 	bool                                                         EQS;                                               // 0x7b(0x1)
 	bool                                                         EnableEQSOnHUD;                                    // 0x7c(0x1)
-	char                                                         pad0x3_KVTMM[0x3];                                 // 0x7d(0x3)
+	char                                                         pad0x3_ZPVH2[0x3];                                 // 0x7d(0x3)
 	int                                                          ActiveEQSIndex;                                    // 0x80(0x4)
 	bool                                                         Perception;                                        // 0x84(0x1)
 	bool                                                         GameView1;                                         // 0x85(0x1)
@@ -94,15 +90,50 @@ public:
 	bool                                                         GameView3;                                         // 0x87(0x1)
 	bool                                                         GameView4;                                         // 0x88(0x1)
 	bool                                                         GameView5;                                         // 0x89(0x1)
-	char                                                         pad0x1e_E0PKL[0x1e];                               // 0x8a(0x1e)
+	char                                                         pad0x1e_4EY9G[0x1e];                               // 0x8a(0x1e)
 };
 
 
-// Size 0x30 (Full Size[0x4c8] - InheritedSize[0x498]
-class GaneplayDebuggerProxyHUD: public HUD
+// Size 0x230 (Full Size[0x7d0] - InheritedSize[0x5a0]
+class GameplayDebuggingComponent: public PrimitiveComponent
 {
 public:
-	char                                                         pad0x30_K43C4[0x30];                               // 0x498(0x30)
+	struct FString                                               DebugComponentClassName;                           // 0x5a0(0x10)
+	int                                                          ShowExtendedInformatiomCounter;                    // 0x5b0(0x4)
+	char                                                         pad0x4_QQULU[0x4];                                 // 0x5b4(0x4)
+	TArray<int>                                                  ReplicateViewDataCounters;                         // 0x5b8(0x10)
+	struct FString                                               ControllerName;                                    // 0x5c8(0x10)
+	struct FString                                               PawnName;                                          // 0x5d8(0x10)
+	struct FString                                               PawnClass;                                         // 0x5e8(0x10)
+	struct FString                                               DebugIcon;                                         // 0x5f8(0x10)
+	struct FString                                               MovementBaseInfo;                                  // 0x608(0x10)
+	struct FString                                               MovementModeInfo;                                  // 0x618(0x10)
+	struct FString                                               PathFollowingInfo;                                 // 0x628(0x10)
+	struct FString                                               CurrentAITask;                                     // 0x638(0x10)
+	struct FString                                               CurrentAIState;                                    // 0x648(0x10)
+	struct FString                                               CurrentAIAssets;                                   // 0x658(0x10)
+	struct FString                                               GameplayTasksState;                                // 0x668(0x10)
+	struct FString                                               NavDataInfo;                                       // 0x678(0x10)
+	struct FString                                               AbilityInfo;                                       // 0x688(0x10)
+	struct FString                                               MontageInfo;                                       // 0x698(0x10)
+	struct FString                                               BrainComponentName;                                // 0x6a8(0x10)
+	struct FString                                               BrainComponentString;                              // 0x6b8(0x10)
+	TArray<char>                                                 BlackboardRepData;                                 // 0x6c8(0x10)
+	char                                                         pad0x10_ISGN9[0x10];                               // 0x6d8(0x10)
+	TArray<struct Vector>                                        PathPoints;                                        // 0x6e8(0x10)
+	TArray<char>                                                 PathCorridorData;                                  // 0x6f8(0x10)
+	char                                                         pad0x10_2H8VY[0x10];                               // 0x708(0x10)
+	TArray<char>                                                 NavmeshRepData;                                    // 0x718(0x10)
+	TArray<char>                                                 EQSRepData;                                        // 0x728(0x10)
+	struct Vector                                                SensingComponentLocation;                          // 0x738(0xc)
+	int                                                          NextPathPointIndex;                                // 0x744(0x4)
+	bool                                                         bIsUsingPathFollowing;                             // 0x748(0x1)
+	bool                                                         bIsUsingCharacter;                                 // 0x748(0x1)
+	bool                                                         bIsUsingBehaviorTree;                              // 0x748(0x1)
+	bool                                                         bIsUsingAbilities;                                 // 0x748(0x1)
+	char                                                         pad0x7_JRVSZ[0x7];                                 // 0x749(0x7)
+	class Actor*                                                 TargetActor;                                       // 0x750(0x8)
+	char                                                         pad0x78_Y2VX1[0x78];                               // 0x758(0x78)
 };
 
 
@@ -116,38 +147,7 @@ public:
 	float                                                        DebugInfoStartY;                                   // 0x3ac(0x4)
 	class Canvas*                                                Canvas;                                            // 0x3b0(0x8)
 	class PlayerController*                                      PlayerOwner;                                       // 0x3b8(0x8)
-	char                                                         pad0xd0_XLQ7E[0xd0];                               // 0x3c0(0xd0)
-};
-
-
-// Size 0xb0 (Full Size[0x450] - InheritedSize[0x3a0]
-class GameplayDebuggingReplicator: public Actor
-{
-public:
-	struct FString                                               DebugComponentClassName;                           // 0x3a0(0x10)
-	struct FString                                               DebugComponentHUDClassName;                        // 0x3b0(0x10)
-	struct FString                                               DebugComponentControllerClassName;                 // 0x3c0(0x10)
-	int                                                          MaxEQSQueries;                                     // 0x3d0(0x4)
-	char                                                         pad0x4_XVS8A[0x4];                                 // 0x3d4(0x4)
-	class GameplayDebuggingComponent*                            DebugComponent;                                    // 0x3d8(0x8)
-	class PlayerController*                                      LocalPlayerOwner;                                  // 0x3e0(0x8)
-	class Actor*                                                 LastSelectedActorToDebug;                          // 0x3e8(0x8)
-	bool                                                         bIsGlobalInWorld;                                  // 0x3f0(0x1)
-	bool                                                         bAutoActivate;                                     // 0x3f1(0x1)
-	bool                                                         OverHead;                                          // 0x3f2(0x1)
-	bool                                                         Basic;                                             // 0x3f3(0x1)
-	bool                                                         BehaviorTree;                                      // 0x3f4(0x1)
-	bool                                                         EQS;                                               // 0x3f5(0x1)
-	bool                                                         EnableEQSOnHUD;                                    // 0x3f6(0x1)
-	char                                                         pad0x1_XLNBR[0x1];                                 // 0x3f7(0x1)
-	int                                                          ActiveEQSIndex;                                    // 0x3f8(0x4)
-	bool                                                         Perception;                                        // 0x3fc(0x1)
-	bool                                                         GameView1;                                         // 0x3fd(0x1)
-	bool                                                         GameView2;                                         // 0x3fe(0x1)
-	bool                                                         GameView3;                                         // 0x3ff(0x1)
-	bool                                                         GameView4;                                         // 0x400(0x1)
-	bool                                                         GameView5;                                         // 0x401(0x1)
-	char                                                         pad0x4e_WBYI6[0x4e];                               // 0x402(0x4e)
+	char                                                         pad0xd0_NIV2S[0xd0];                               // 0x3c0(0xd0)
 };
 
 

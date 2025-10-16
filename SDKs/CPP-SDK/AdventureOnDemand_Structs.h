@@ -7,7 +7,7 @@
 struct AdventureOnDemandServiceCrewEntry
 {
 public:
-	char                                                         pad0x38_985IY[0x38];                               // 0x0(0x38)
+	char                                                         pad0x38_150VG[0x38];                               // 0x0(0x38)
 	class TunnelDesc*                                            TunnelDesc;                                        // 0x38(0x8)
 };
 

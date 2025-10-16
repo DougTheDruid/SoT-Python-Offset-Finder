@@ -4,22 +4,18 @@
 // https://github.com/DougTheDruid
 
 // Size 0x1
-struct ShantyPuzzleUnlockedCompleteEvent
+struct ShantyPuzzleUnlockCanceledEvent
 {
 public:
-	char                                                         pad0x1_0MLSL[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_O18IN[0x1];                                 // 0x0(0x1)
 };
 
 
-// Size 0x18
-struct ShantyPuzzleInteractionZoneDefinition
+// Size 0x10
+struct ShantyPuzzleCompleteEvent
 {
 public:
-	struct Vector                                                Location;                                          // 0x0(0xc)
-	float                                                        Radius;                                            // 0xc(0x4)
-	char                                                         RequiredMusicalInstrumentType;                     // 0x10(0x1)
-	char                                                         pad0x3_A0A4O[0x3];                                 // 0x11(0x3)
-	int                                                          RequiredNumInteractors;                            // 0x14(0x4)
+	TArray<struct Guid>                                          ParticipatingCrews;                                // 0x0(0x10)
 };
 
 
@@ -37,15 +33,15 @@ struct ShantyPuzzleSingleInteractionZoneUnlockEvent
 public:
 	class Actor*                                                 Player;                                            // 0x0(0x8)
 	int                                                          InteractionZoneIdx;                                // 0x8(0x4)
-	char                                                         pad0x4_I6DZF[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_O7A68[0x4];                                 // 0xc(0x4)
 };
 
 
-// Size 0x10
-struct ShantyPuzzleCompleteEvent
+// Size 0x1
+struct ShantyPuzzleUnlockedCompleteEvent
 {
 public:
-	TArray<struct Guid>                                          ParticipatingCrews;                                // 0x0(0x10)
+	char                                                         pad0x1_STU4K[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -63,15 +59,19 @@ struct ShantyPuzzleSingleInteractionZoneStopInteractingEvent
 public:
 	class Actor*                                                 Player;                                            // 0x0(0x8)
 	int                                                          InteractionZoneIdx;                                // 0x8(0x4)
-	char                                                         pad0x4_NVXJN[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_T5J1I[0x4];                                 // 0xc(0x4)
 };
 
 
-// Size 0x1
-struct ShantyPuzzleUnlockCanceledEvent
+// Size 0x18
+struct ShantyPuzzleInteractionZoneDefinition
 {
 public:
-	char                                                         pad0x1_T4QUS[0x1];                                 // 0x0(0x1)
+	struct Vector                                                Location;                                          // 0x0(0xc)
+	float                                                        Radius;                                            // 0xc(0x4)
+	char                                                         RequiredMusicalInstrumentType;                     // 0x10(0x1)
+	char                                                         pad0x3_3BJQC[0x3];                                 // 0x11(0x3)
+	int                                                          RequiredNumInteractors;                            // 0x14(0x4)
 };
 
 

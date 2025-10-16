@@ -7,7 +7,7 @@
 struct EventFaunaMeleeComponentAttack
 {
 public:
-	char                                                         pad0x8_1Y8V8[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_72U39[0x8];                                 // 0x0(0x8)
 };
 
 

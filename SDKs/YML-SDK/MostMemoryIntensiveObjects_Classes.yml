@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 MMIPetDebugCommandSource:
   Attributes:
-  - Name: pad0x18_NAJV1[0x18]
+  - Name: pad0x18_VYPZZ[0x18]
     Offset: '0x28'
     Size: '0x18'
     Type: char

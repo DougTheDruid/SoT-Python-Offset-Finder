@@ -1,4 +1,96 @@
 {
+  "MemoryVisualiserClass": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "ClassType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MemoryGatheringMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_HETY9[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
+      },
+      {
+        "Name": "DisplayName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "MemoryUsageMB",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_0SKUS[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
+      }
+    ]
+  },
+  "StaticMeshComponentList": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Components",
+        "Type": "TArray<class StaticMeshComponent*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "MemoryVisualiserStat": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "StatName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DisplayName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "MemoryUsageMB",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x4_XE9ZP[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      }
+    ]
+  },
+  "StaticMeshActorList": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Actors",
+        "Type": "TArray<class StaticMeshActor*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "MemoryCommonData": {
     "ClassSize": "0x50",
     "Attributes": [
@@ -118,98 +210,6 @@
       }
     ]
   },
-  "StaticMeshActorList": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Actors",
-        "Type": "TArray<class StaticMeshActor*>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "StaticMeshComponentList": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Components",
-        "Type": "TArray<class StaticMeshComponent*>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "MemoryVisualiserStat": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "StatName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DisplayName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "MemoryUsageMB",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x4_JUYCR[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x1c"
-      }
-    ]
-  },
-  "MemoryVisualiserClass": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "ClassType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MemoryGatheringMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x7_QFDOP[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x9"
-      },
-      {
-        "Name": "DisplayName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "MemoryUsageMB",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "pad0x4_O5F03[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x24"
-      }
-    ]
-  },
   "MemoryVisualiserCategory": {
     "ClassSize": "0x58",
     "Attributes": [
@@ -238,7 +238,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x3_EU9D3[0x3]",
+        "Name": "pad0x3_LQZM5[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x31"
@@ -292,7 +292,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x4_YJHQK[0x4]",
+        "Name": "pad0x4_447V1[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x54"

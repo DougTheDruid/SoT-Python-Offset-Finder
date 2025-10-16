@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 DebugLightSensitiveComponent:
   Attributes:
-  - Name: pad0x8_WCD4A[0x8]
+  - Name: pad0x8_73W5D[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -10,7 +10,7 @@ DebugLightSensitiveComponent:
     Offset: '0xc0'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x50_5UEDZ[0x50]
+  - Name: pad0x50_GCZ5U[0x50]
     Offset: '0xc8'
     Size: '0x50'
     Type: char
@@ -32,7 +32,7 @@ LightReceptorInterface:
   Super: Interface
 LightSensitiveComponent:
   Attributes:
-  - Name: pad0x68_LTXMW[0x68]
+  - Name: pad0x68_8N1WH[0x68]
     Offset: '0xb8'
     Size: '0x68'
     Type: char
@@ -40,7 +40,7 @@ LightSensitiveComponent:
     Offset: '0x120'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x8_0FCKS[0x8]
+  - Name: pad0x8_RB3WO[0x8]
     Offset: '0x128'
     Size: '0x8'
     Type: char
@@ -56,7 +56,7 @@ LightSensitivityInterface:
   Super: Interface
 LightSourceManager:
   Attributes:
-  - Name: pad0x8_QGIKH[0x8]
+  - Name: pad0x8_R0335[0x8]
     Offset: '0x3a0'
     Size: '0x8'
     Type: char
@@ -76,7 +76,7 @@ LightSourceManager:
     Offset: '0x3cc'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1f_UHZT7[0x1f]
+  - Name: pad0x1f_2A9W2[0x1f]
     Offset: '0x3cd'
     Size: '0x1f'
     Type: char

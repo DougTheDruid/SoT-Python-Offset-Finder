@@ -8,33 +8,47 @@
   },
   "NavalBattleService": {
     "Super": "Actor",
-    "FullSize": "0x4e8",
+    "FullSize": "0x470",
     "InheritedSize": "0x3a0",
-    "ClassSize": "0x148",
+    "ClassSize": "0xd0",
     "Attributes": [
       {
-        "Name": "pad0x8_MN5YC[0x8]",
+        "Name": "pad0xd0_ICOPL[0xd0]",
         "Type": "char",
-        "Size": "0x8",
+        "Size": "0xd0",
         "Offset": "0x3a0"
-      },
+      }
+    ]
+  },
+  "NavalBattleServiceParamsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
       {
         "Name": "BattleRange",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3a8"
+        "Offset": "0x28"
       },
       {
         "Name": "BattleTime",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x3ac"
+        "Offset": "0x2c"
       },
       {
-        "Name": "pad0x138_9U2UY[0x138]",
+        "Name": "NumberOfSinksToInitiateMigration",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x4_5ZISP[0x4]",
         "Type": "char",
-        "Size": "0x138",
-        "Offset": "0x3b0"
+        "Size": "0x4",
+        "Offset": "0x34"
       }
     ]
   },

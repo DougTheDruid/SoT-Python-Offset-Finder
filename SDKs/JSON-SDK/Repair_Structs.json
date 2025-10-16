@@ -1,4 +1,21 @@
 {
+  "ShipPartDamagePersistenceModel": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ComponentRepairableStates",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Identifier",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "RepairableComponentMaxDamageLevelOverride": {
     "ClassSize": "0xc",
     "Attributes": [
@@ -16,11 +33,68 @@
       }
     ]
   },
+  "RepairableAuthoritiveRepairState": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "RepairableState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_9R1ZD[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "RepairingList",
+        "Type": "TArray<uintptr_t>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventRepairableObjectDestroyed": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_QS2IH[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "DamageZoneRepairableStateChangedEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "DamageZoneActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RepairableState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_3L6KO[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
+      }
+    ]
+  },
   "RepairObjectActionStateConstructionInfo": {
     "ClassSize": "0x78",
     "Attributes": [
       {
-        "Name": "pad0x48_D5S8F[0x48]",
+        "Name": "pad0x48_NSD6T[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0x0"
@@ -45,103 +119,6 @@
       }
     ]
   },
-  "RepairableAuthoritiveRepairState": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "RepairableState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x7_X37PS[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "RepairingList",
-        "Type": "TArray<uintptr_t>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "ShipPartDamagePersistenceModel": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ComponentRepairableStates",
-        "Type": "TArray<char>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Identifier",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "DamageZoneRepairableStateChangedEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "DamageZoneActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "RepairableState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x7_4UJJH[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x9"
-      }
-    ]
-  },
-  "RepairableComponentRepairableStateChangedEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "RepairableComponent",
-        "Type": "class ActorComponent*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "RepairableState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x7_S5VWP[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x9"
-      }
-    ]
-  },
-  "EventRepairableObjectDestroyed": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_M72FE[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "EventRepairableObjectRepairEndedEvent": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -158,7 +135,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_U5Y9M[0x4]",
+        "Name": "pad0x4_J5QTK[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
@@ -182,10 +159,33 @@
         "Offset": "0x24"
       },
       {
-        "Name": "pad0x3_FKEXF[0x3]",
+        "Name": "pad0x3_B0DD5[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x25"
+      }
+    ]
+  },
+  "RepairableComponentRepairableStateChangedEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "RepairableComponent",
+        "Type": "class ActorComponent*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RepairableState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_NOLBY[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
       }
     ]
   },

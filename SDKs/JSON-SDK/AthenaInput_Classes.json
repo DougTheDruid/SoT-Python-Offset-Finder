@@ -1,22 +1,15 @@
 {
-  "ReceivesInputInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
+  "AnalogInputId": {
+    "Super": "Object",
+    "FullSize": "0x38",
     "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "NPCReceivesInputIndicatorComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xc0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x8",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x8_TU464[0x8]",
+        "Name": "pad0x10_E4VYD[0x10]",
         "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb8"
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },
@@ -27,31 +20,17 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_LWOCI[0x10]",
+        "Name": "pad0x10_7CSRZ[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"
       }
     ]
   },
-  "AnalogInputId": {
-    "Super": "Object",
-    "FullSize": "0x38",
+  "ReceivesInputInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
     "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_QD46W[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "OpenEscapeMenuNotificationInputId": {
-    "Super": "NotificationInputId",
-    "FullSize": "0x38",
-    "InheritedSize": "0x38",
     "ClassSize": "0x0",
     "Attributes": []
   },

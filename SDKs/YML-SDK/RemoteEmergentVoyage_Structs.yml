@@ -6,7 +6,7 @@ GiveEmergentVoyageGameServerRequestModel:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_FHN6T[0x4]
+  - Name: pad0x4_7DG64[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char

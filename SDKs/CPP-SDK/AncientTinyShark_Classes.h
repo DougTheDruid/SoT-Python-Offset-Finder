@@ -13,7 +13,7 @@ public:
 	TArray<struct AncientTinySharkSpawnParams>                   AncientTinySharkParams;                            // 0x28(0x10)
 	class EnvQuery*                                              AncientMegSpawnLocationEQSQuery;                   // 0x38(0x8)
 	bool                                                         AllowRepeatedVariants;                             // 0x40(0x1)
-	char                                                         pad0x7_3G0SQ[0x7];                                 // 0x41(0x7)
+	char                                                         pad0x7_4FYSV[0x7];                                 // 0x41(0x7)
 	TArray<struct AncientTinySharkEventBanners>                  AncientTinySharkEventBanners;                      // 0x48(0x10)
 };
 
@@ -26,14 +26,14 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AncientTinySharkVariantInterface: public Interface
+class AncientTinySharkEventServiceInterface: public Interface
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AncientTinySharkEventServiceInterface: public Interface
+class AncientTinySharkVariantInterface: public Interface
 {
 public:
 };
@@ -43,12 +43,12 @@ public:
 class AncientTinySharkEventService: public Actor
 {
 public:
-	char                                                         pad0x58_S04WS[0x58];                               // 0x3a0(0x58)
+	char                                                         pad0x58_V39NI[0x58];                               // 0x3a0(0x58)
 	class AncientTinySharkEventServiceParams*                    AncientTinySharkServiceParams;                     // 0x3f8(0x8)
-	char                                                         pad0x8_1IV70[0x8];                                 // 0x400(0x8)
+	char                                                         pad0x8_7PI6K[0x8];                                 // 0x400(0x8)
 	class UClass*                                                LastDefeatedVariant;                               // 0x408(0x8)
 	TArray<struct AncientTinySharkSpawnParams>                   AncientTinySharkSpawnParamsList;                   // 0x410(0x10)
-	char                                                         pad0x198_KLBA0[0x198];                             // 0x420(0x198)
+	char                                                         pad0x198_EKQJX[0x198];                             // 0x420(0x198)
 };
 
 

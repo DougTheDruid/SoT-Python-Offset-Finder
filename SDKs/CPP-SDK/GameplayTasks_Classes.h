@@ -10,31 +10,11 @@
 class GameplayTasksComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_R5ZB6[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_2TG9Q[0x8];                                 // 0xb8(0x8)
 	TArray<class GameplayTask*>                                  SimulatedTasks;                                    // 0xc0(0x10)
 	TArray<class GameplayTask*>                                  TaskPriorityQueue;                                 // 0xd0(0x10)
-	char                                                         pad0x28_0GVRC[0x28];                               // 0xe0(0x28)
-	char                                                         pad0x10_VXAN2[0x10];                               // 0x108(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class GameplayTaskResource: public Object
-{
-public:
-	int                                                          ManualResourceID;                                  // 0x28(0x4)
-	char                                                         pad0x4_CYBT9[0x4];                                 // 0x2c(0x4)
-	bool                                                         bManuallySetID;                                    // 0x30(0x1)
-	char                                                         pad0x7_UNMJI[0x7];                                 // 0x31(0x7)
-};
-
-
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class GameplayTask: public Object
-{
-public:
-	struct FName                                                 InstanceName;                                      // 0x28(0x8)
-	char                                                         pad0x28_TTYWE[0x28];                               // 0x30(0x28)
+	char                                                         pad0x28_BK3V8[0x28];                               // 0xe0(0x28)
+	char                                                         pad0x10_1WTBR[0x10];                               // 0x108(0x10)
 };
 
 
@@ -45,11 +25,23 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0x70] - InheritedSize[0x58]
-class GameplayTask_WaitDelay: public GameplayTask
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class GameplayTask: public Object
 {
 public:
-	char                                                         pad0x18_88RFJ[0x18];                               // 0x58(0x18)
+	struct FName                                                 InstanceName;                                      // 0x28(0x8)
+	char                                                         pad0x28_Y0YTG[0x28];                               // 0x30(0x28)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class GameplayTaskResource: public Object
+{
+public:
+	int                                                          ManualResourceID;                                  // 0x28(0x4)
+	char                                                         pad0x4_69A5K[0x4];                                 // 0x2c(0x4)
+	bool                                                         bManuallySetID;                                    // 0x30(0x1)
+	char                                                         pad0x7_5V2FA[0x7];                                 // 0x31(0x7)
 };
 
 
@@ -57,8 +49,16 @@ public:
 class GameplayTask_SpawnActor: public GameplayTask
 {
 public:
-	char                                                         pad0x38_YULNW[0x38];                               // 0x58(0x38)
+	char                                                         pad0x38_NILIL[0x38];                               // 0x58(0x38)
 	class UClass*                                                ClassToSpawn;                                      // 0x90(0x8)
+};
+
+
+// Size 0x18 (Full Size[0x70] - InheritedSize[0x58]
+class GameplayTask_WaitDelay: public GameplayTask
+{
+public:
+	char                                                         pad0x18_M0Z42[0x18];                               // 0x58(0x18)
 };
 
 

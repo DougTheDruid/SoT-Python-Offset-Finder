@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 OverheatingComponent:
   Attributes:
-  - Name: pad0x38_RRKEI[0x38]
+  - Name: pad0x38_2I5G7[0x38]
     Offset: '0xb8'
     Size: '0x38'
     Type: char
@@ -42,7 +42,7 @@ OverheatingComponent:
     Offset: '0x128'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6f_H01HY[0x6f]
+  - Name: pad0x6f_ZGSEQ[0x6f]
     Offset: '0x129'
     Size: '0x6f'
     Type: char
@@ -50,12 +50,16 @@ OverheatingComponent:
     Offset: '0x198'
     Size: '0x4'
     Type: float
-  - Name: pad0x24_6QXJO[0x24]
+  - Name: LocalSpaceExplosionLocation
     Offset: '0x19c'
-    Size: '0x24'
+    Size: '0xc'
+    Type: struct Vector
+  - Name: pad0x20_T8DNB[0x20]
+    Offset: '0x1a8'
+    Size: '0x20'
     Type: char
-  ClassSize: '0x108'
-  FullSize: '0x1c0'
+  ClassSize: '0x110'
+  FullSize: '0x1c8'
   InheritedSize: '0xb8'
   Super: ActorComponent
 OverheatingDataAsset:

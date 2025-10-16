@@ -1,11 +1,11 @@
 {
-  "TestStructWithNetId": {
-    "ClassSize": "0x18",
+  "ServiceMessagingTestMessage": {
+    "ClassSize": "0x4",
     "Attributes": [
       {
-        "Name": "NetId",
-        "Type": "struct UniqueNetIdRepl",
-        "Size": "0x18",
+        "Name": "Data",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x0"
       }
     ]
@@ -32,13 +32,13 @@
       }
     ]
   },
-  "ServiceMessagingTestMessage": {
-    "ClassSize": "0x4",
+  "TestStructWithNetId": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "Data",
-        "Type": "int",
-        "Size": "0x4",
+        "Name": "NetId",
+        "Type": "struct UniqueNetIdRepl",
+        "Size": "0x18",
         "Offset": "0x0"
       }
     ]

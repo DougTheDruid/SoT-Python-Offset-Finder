@@ -18,12 +18,12 @@ public:
 class ReviveGhostAnimationInstance: public AnimInstance
 {
 public:
-	char                                                         pad0x8_JNDYD[0x8];                                 // 0x440(0x8)
+	char                                                         pad0x8_Y0K78[0x8];                                 // 0x440(0x8)
 	struct ReviveGhostAnimations                                 ReviveAnimations;                                  // 0x448(0x28)
 	bool                                                         FullyInitialised;                                  // 0x470(0x1)
 	bool                                                         FullyRevived;                                      // 0x471(0x1)
 	bool                                                         FromSwimming;                                      // 0x472(0x1)
-	char                                                         pad0x1d_V3USL[0x1d];                               // 0x473(0x1d)
+	char                                                         pad0x1d_XVF8M[0x1d];                               // 0x473(0x1d)
 };
 
 

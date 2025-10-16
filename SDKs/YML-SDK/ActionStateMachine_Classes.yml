@@ -20,20 +20,20 @@ ActionStateInitialStateCreatorDefinition:
   Super: Object
 ActionStateMachineComponent:
   Attributes:
-  - Name: pad0x7c8_ZTPQZ[0x7c8]
+  - Name: pad0x7d0_KOENL[0x7d0]
     Offset: '0xb8'
-    Size: '0x7c8'
+    Size: '0x7d0'
     Type: char
   - Name: OnScreenLoggingEnabled
-    Offset: '0x880'
+    Offset: '0x888'
     Size: '0x1'
     Type: bool
-  - Name: pad0x17_KDVIA[0x17]
-    Offset: '0x881'
+  - Name: pad0x17_ZUI0A[0x17]
+    Offset: '0x889'
     Size: '0x17'
     Type: char
-  ClassSize: '0x7e0'
-  FullSize: '0x898'
+  ClassSize: '0x7e8'
+  FullSize: '0x8a0'
   InheritedSize: '0xb8'
   Super: ActorComponent
 ActionStateMachineComponentTestFunctions:
@@ -43,6 +43,12 @@ ActionStateMachineComponentTestFunctions:
   InheritedSize: '0x28'
   Super: BlueprintFunctionLibrary
 ActionStateMachineInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+ActionStateMachineStatusInterface:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
@@ -108,7 +114,7 @@ CustomClientValidityCheckCallback:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_25D91[0x7]
+  - Name: pad0x7_6DKPL[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
@@ -124,29 +130,29 @@ NullActionStateId:
   Super: ActionStateId
 SelfInitialisingActionStateMachineComponent:
   Attributes:
-  - Name: pad0x8_U7PO5[0x8]
-    Offset: '0x898'
+  - Name: pad0x8_1WJ5W[0x8]
+    Offset: '0x8a0'
     Size: '0x8'
     Type: char
   - Name: ActionStatePriorityTableData
-    Offset: '0x8a0'
+    Offset: '0x8a8'
     Size: '0x8'
     Type: class ActionStatePriorityTableData*
   - Name: ActionStateCreatorDefinition
-    Offset: '0x8a8'
-    Size: '0x8'
-    Type: class UClass*
-  - Name: ActionStateInitialStateCreatorDefinition
     Offset: '0x8b0'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x28_G91R9[0x28]
+  - Name: ActionStateInitialStateCreatorDefinition
     Offset: '0x8b8'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: pad0x28_F14GF[0x28]
+    Offset: '0x8c0'
     Size: '0x28'
     Type: char
   ClassSize: '0x48'
-  FullSize: '0x8e0'
-  InheritedSize: '0x898'
+  FullSize: '0x8e8'
+  InheritedSize: '0x8a0'
   Super: ActionStateMachineComponent
 SerialisedActionStateConstructionInfoTestFunctions:
   Attributes: []
@@ -156,7 +162,7 @@ SerialisedActionStateConstructionInfoTestFunctions:
   Super: BlueprintFunctionLibrary
 TestActionStateCreatorDefinition:
   Attributes:
-  - Name: pad0x18_4WXP9[0x18]
+  - Name: pad0x18_HVRAE[0x18]
     Offset: '0x3a0'
     Size: '0x18'
     Type: char

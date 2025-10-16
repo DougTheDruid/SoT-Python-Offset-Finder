@@ -1,25 +1,4 @@
 {
-  "MovieSceneCaptureInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MovieSceneCaptureProtocolSettings": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MovieSceneCaptureEnvironment": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "MovieSceneCapture": {
     "Super": "Object",
     "FullSize": "0x1e0",
@@ -27,7 +6,7 @@
     "ClassSize": "0x1b8",
     "Attributes": [
       {
-        "Name": "pad0x10_Y9YTV[0x10]",
+        "Name": "pad0x10_SOST6[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"
@@ -63,7 +42,7 @@
         "Offset": "0x99"
       },
       {
-        "Name": "pad0x6_S5UN4[0x6]",
+        "Name": "pad0x6_C2OTA[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x9a"
@@ -81,12 +60,33 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x120_67V2G[0x120]",
+        "Name": "pad0x120_JGFO2[0x120]",
         "Type": "char",
         "Size": "0x120",
         "Offset": "0xc0"
       }
     ]
+  },
+  "MovieSceneCaptureProtocolSettings": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MovieSceneCaptureInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MovieSceneCaptureEnvironment": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "AutomatedLevelSequenceCapture": {
     "Super": "MovieSceneCapture",
@@ -94,20 +94,6 @@
     "InheritedSize": "0x1e0",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "FrameGrabberProtocolSettings": {
-    "Super": "MovieSceneCaptureProtocolSettings",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_6EOH0[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
   },
   "LevelCapture": {
     "Super": "MovieSceneCapture",
@@ -122,7 +108,7 @@
         "Offset": "0x1e0"
       },
       {
-        "Name": "pad0xb_V6RXF[0xb]",
+        "Name": "pad0xb_0GUU5[0xb]",
         "Type": "char",
         "Size": "0xb",
         "Offset": "0x1e1"
@@ -134,10 +120,24 @@
         "Offset": "0x1ec"
       },
       {
-        "Name": "pad0x4_R8DG8[0x4]",
+        "Name": "pad0x4_LBN1E[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1fc"
+      }
+    ]
+  },
+  "FrameGrabberProtocolSettings": {
+    "Super": "MovieSceneCaptureProtocolSettings",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_W259W[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
       }
     ]
   },
@@ -167,7 +167,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x3_SYPWP[0x3]",
+        "Name": "pad0x3_1U6ET[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x39"
@@ -185,7 +185,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_AUYUN[0x7]",
+        "Name": "pad0x7_9ITJT[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
@@ -211,7 +211,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x3_BXE9V[0x3]",
+        "Name": "pad0x3_P99CJ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x31"
@@ -243,7 +243,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_1XVWI[0x4]",
+        "Name": "pad0x4_QIWTO[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"

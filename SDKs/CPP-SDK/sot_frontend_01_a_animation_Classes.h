@@ -8,6 +8,7 @@ class sot_frontend_01_a_animation_C: public LevelScriptActor
 {
 public:
 	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3a8(0x8)
+	char                                                         pad0xced7d50_MCL4Y[0xced7d50];                     // 0x3b0(0xced7d50)
 	class StaticMeshActor*                                       shipSelectUI_title_14_ExecuteUbergraph_sot_frontend_01_a_animation_RefProperty; // 0x3b0(0x8)
 	class StaticMeshActor*                                       shipSelectUI_gallion_10_ExecuteUbergraph_sot_frontend_01_a_animation_RefProperty; // 0x3b8(0x8)
 	class StaticMeshActor*                                       shipSelectUI_sloop_12_ExecuteUbergraph_sot_frontend_01_a_animation_RefProperty; // 0x3c0(0x8)

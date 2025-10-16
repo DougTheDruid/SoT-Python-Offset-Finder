@@ -6,6 +6,18 @@
 #include "NudgeComposite_Structs.h"
 
 
+// Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
+class NudgeFromWaterLevelPolicy: public NudgePolicy
+{
+public:
+	float                                                        ChanceOfNudge;                                     // 0xc8(0x4)
+	char                                                         pad0x14_KA5YW[0x14];                               // 0xcc(0x14)
+	float                                                        WaterLevelDifferenceBetweenUpdates;                // 0xe0(0x4)
+	float                                                        ZOffsetFromWaterToMountpoint;                      // 0xe4(0x4)
+	char                                                         pad0x8_1YSE1[0x8];                                 // 0xe8(0x8)
+};
+
+
 // Size 0x8 (Full Size[0xd0] - InheritedSize[0xc8]
 class NudgeFromShipCollisionPolicy: public NudgePolicy
 {
@@ -15,34 +27,22 @@ public:
 };
 
 
-// Size 0x90 (Full Size[0x158] - InheritedSize[0xc8]
-class NudgeFromStormPolicy: public NudgePolicy
-{
-public:
-	float                                                        ChanceOfNudge;                                     // 0xc8(0x4)
-	char                                                         pad0x4_BL7IQ[0x4];                                 // 0xcc(0x4)
-	struct WeightedProbabilityRangeOfRanges                      WeightedTimers;                                    // 0xd0(0x30)
-	char                                                         pad0x58_CK9HD[0x58];                               // 0x100(0x58)
-};
-
-
-// Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
-class NudgeFromWaterLevelPolicy: public NudgePolicy
-{
-public:
-	float                                                        ChanceOfNudge;                                     // 0xc8(0x4)
-	char                                                         pad0x14_KXVZQ[0x14];                               // 0xcc(0x14)
-	float                                                        WaterLevelDifferenceBetweenUpdates;                // 0xe0(0x4)
-	float                                                        ZOffsetFromWaterToMountpoint;                      // 0xe4(0x4)
-	char                                                         pad0x8_562UF[0x8];                                 // 0xe8(0x8)
-};
-
-
 // Size 0x10 (Full Size[0xd8] - InheritedSize[0xc8]
 class NudgeFromExplosionsPolicy: public NudgePolicy
 {
 public:
 	TArray<struct NudgeChancePerDamagerType>                     AcceptedDamagerTypes;                              // 0xc8(0x10)
+};
+
+
+// Size 0x90 (Full Size[0x158] - InheritedSize[0xc8]
+class NudgeFromStormPolicy: public NudgePolicy
+{
+public:
+	float                                                        ChanceOfNudge;                                     // 0xc8(0x4)
+	char                                                         pad0x4_Z3ZAF[0x4];                                 // 0xcc(0x4)
+	struct WeightedProbabilityRangeOfRanges                      WeightedTimers;                                    // 0xd0(0x30)
+	char                                                         pad0x58_OQUE4[0x58];                               // 0x100(0x58)
 };
 
 

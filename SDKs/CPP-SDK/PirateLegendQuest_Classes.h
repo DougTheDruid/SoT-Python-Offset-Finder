@@ -18,28 +18,28 @@ public:
 };
 
 
-// Size 0x120 (Full Size[0x180] - InheritedSize[0x60]
-class VeilService: public TaleQuestService
-{
-public:
-	char                                                         pad0x20_KF7X1[0x20];                               // 0x60(0x20)
-	class World*                                                 World;                                             // 0x80(0x8)
-	class GameState*                                             GameState;                                         // 0x88(0x8)
-	char                                                         pad0x8_M2UEJ[0x8];                                 // 0x90(0x8)
-	class VeilOfTheAncients*                                     TrackedVeil;                                       // 0x98(0x8)
-	class Ship*                                                  Ship;                                              // 0xa0(0x8)
-	char                                                         pad0xd8_KKRRI[0xd8];                               // 0xa8(0xd8)
-};
-
-
 // Size 0x18 (Full Size[0x3e8] - InheritedSize[0x3d0]
 class VeilOfTheAncients: public InteractableBase
 {
 public:
 	float                                                        NumberOfGems;                                      // 0x3d0(0x4)
-	char                                                         pad0x4_4EMJ9[0x4];                                 // 0x3d4(0x4)
+	char                                                         pad0x4_K2Y4R[0x4];                                 // 0x3d4(0x4)
 	class LockComponent*                                         LockComponent;                                     // 0x3d8(0x8)
 	class StaticMeshComponent*                                   StaticMeshComponent;                               // 0x3e0(0x8)
+};
+
+
+// Size 0x120 (Full Size[0x180] - InheritedSize[0x60]
+class VeilService: public TaleQuestService
+{
+public:
+	char                                                         pad0x20_DXAMB[0x20];                               // 0x60(0x20)
+	class World*                                                 World;                                             // 0x80(0x8)
+	class GameState*                                             GameState;                                         // 0x88(0x8)
+	char                                                         pad0x8_E7CKT[0x8];                                 // 0x90(0x8)
+	class VeilOfTheAncients*                                     TrackedVeil;                                       // 0x98(0x8)
+	class Ship*                                                  Ship;                                              // 0xa0(0x8)
+	char                                                         pad0xd8_KFUXY[0xd8];                               // 0xa8(0xd8)
 };
 
 

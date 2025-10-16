@@ -1,23 +1,38 @@
 {
-  "PersistentAssetCollectionDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
+  "AdaptiveTriggerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xc0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "Blueprints",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "DataAssets",
-        "Type": "TArray<class DataAsset*>",
-        "Size": "0x10",
-        "Offset": "0x38"
+        "Name": "pad0x8_V95DQ[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
       }
     ]
+  },
+  "ForceFeedbackCondition": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PlayModeInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AdaptiveTriggerControllerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "EmptyObject": {
     "Super": "Object",
@@ -25,120 +40,6 @@
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "StringToAssetClassMap": {
-    "Super": "DataAsset",
-    "FullSize": "0x50",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "StringAssetClassPairs",
-        "Type": "TArray<struct StringAssetClassPair>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x18_Z1PNJ[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "ServicesStampIdInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AthenaGameStateInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ResourceProviderInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PlayModeHelpers": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "SkeletalMeshAggregateTickComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xe8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Mesh",
-        "Type": "class SkeletalMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "pad0x28_5MOAN[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0xc0"
-      }
-    ]
-  },
-  "UnderseaFogVolumeComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xf8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "WorldFadeDistanceStart",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "WorldFadeDistanceRange",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xbc"
-      },
-      {
-        "Name": "FogMaxDensity",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "pad0x34_2CIR7[0x34]",
-        "Type": "char",
-        "Size": "0x34",
-        "Offset": "0xc4"
-      }
-    ]
-  },
-  "NestedWorldRootDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_T2AX0[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
   },
   "DynamicColourPointLightComponent": {
     "Super": "PointLightComponent",
@@ -159,60 +60,12 @@
         "Offset": "0x518"
       },
       {
-        "Name": "pad0x38_42G96[0x38]",
+        "Name": "pad0x38_NFFDE[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x598"
       }
     ]
-  },
-  "HUDInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BoxedRpcDispatcherComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x8_DE4NI[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "AckPendingClientRPCs",
-        "Type": "TArray<struct SerialisedRpc>",
-        "Size": "0x10",
-        "Offset": "0xc0"
-      }
-    ]
-  },
-  "BoxedRpcDispatcherInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AdaptiveTriggerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "SyncedRandomRetrievalInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "RotateMeshToActorComponent": {
     "Super": "ActorComponent",
@@ -251,7 +104,7 @@
         "Offset": "0xcd"
       },
       {
-        "Name": "pad0x2_B05B3[0x2]",
+        "Name": "pad0x2_9RUFA[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0xce"
@@ -269,7 +122,7 @@
         "Offset": "0xd4"
       },
       {
-        "Name": "pad0x3_QH129[0x3]",
+        "Name": "pad0x3_70LS2[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xd5"
@@ -287,33 +140,122 @@
         "Offset": "0xdc"
       },
       {
-        "Name": "pad0x8_YBZA0[0x8]",
+        "Name": "pad0x8_FLTTM[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xe0"
       }
     ]
   },
-  "AdaptiveTriggerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xc0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_Y4ICO[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      }
-    ]
-  },
-  "ForceFeedbackCondition": {
-    "Super": "Object",
+  "ResourceProviderInterface": {
+    "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "BoxedRpcDispatcherInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PersistentAssetCollectionDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Blueprints",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "DataAssets",
+        "Type": "TArray<class DataAsset*>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "PlayModeHelpers": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GameInstanceSessionIdProviderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "NestedWorldRootDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_U08BE[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "HUDInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SyncedRandomRetrievalInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ServicesStampIdInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AthenaEngineInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BoxedRpcDispatcherComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x8_M0SHW[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "AckPendingClientRPCs",
+        "Type": "TArray<struct SerialisedRpc>",
+        "Size": "0x10",
+        "Offset": "0xc0"
+      }
+    ]
   },
   "PrimitiveCollisionExtentAdjustOverTimeComponent": {
     "Super": "ActorComponent",
@@ -328,7 +270,7 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x2c_9IF19[0x2c]",
+        "Name": "pad0x2c_0MARS[0x2c]",
         "Type": "char",
         "Size": "0x2c",
         "Offset": "0xbc"
@@ -340,82 +282,96 @@
         "Offset": "0xe8"
       },
       {
-        "Name": "pad0x8_PBCGM[0x8]",
+        "Name": "pad0x8_WUCKO[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xf0"
       }
     ]
   },
-  "PlayModeInterface": {
+  "AthenaGameStateInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "GameInstanceSessionIdProviderInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AdaptiveTriggerControllerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AthenaEngineInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "SphereCollisionExtentAdjustOverTimeComponent": {
-    "Super": "PrimitiveCollisionExtentAdjustOverTimeComponent",
-    "FullSize": "0x110",
-    "InheritedSize": "0xf8",
-    "ClassSize": "0x18",
+  "UnderseaFogVolumeComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "ShouldAdjustSphereRadius",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xf8"
-      },
-      {
-        "Name": "pad0x3_CMETY[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0xf9"
-      },
-      {
-        "Name": "PostAdjustmentSphereRadius",
+        "Name": "WorldFadeDistanceStart",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xfc"
+        "Offset": "0xb8"
       },
       {
-        "Name": "ServerSizeScale",
+        "Name": "WorldFadeDistanceRange",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x100"
+        "Offset": "0xbc"
       },
       {
-        "Name": "pad0x4_BJG09[0x4]",
-        "Type": "char",
+        "Name": "FogMaxDensity",
+        "Type": "float",
         "Size": "0x4",
-        "Offset": "0x104"
+        "Offset": "0xc0"
       },
       {
-        "Name": "SphereCollisionToAdjust",
-        "Type": "class SphereComponent*",
+        "Name": "pad0x34_VFLOT[0x34]",
+        "Type": "char",
+        "Size": "0x34",
+        "Offset": "0xc4"
+      }
+    ]
+  },
+  "AdaptiveTriggerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "StringToAssetClassMap": {
+    "Super": "DataAsset",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "StringAssetClassPairs",
+        "Type": "TArray<struct StringAssetClassPair>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x18_QN6WA[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "SkeletalMeshAggregateTickComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xe8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Mesh",
+        "Type": "class SkeletalMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x108"
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "pad0x28_0B65Q[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0xc0"
       }
     ]
   },
@@ -432,7 +388,7 @@
         "Offset": "0xf8"
       },
       {
-        "Name": "pad0x3_FIYTH[0x3]",
+        "Name": "pad0x3_P2KNJ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xf9"
@@ -450,7 +406,7 @@
         "Offset": "0x100"
       },
       {
-        "Name": "pad0x3_A1WBY[0x3]",
+        "Name": "pad0x3_QZTK3[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x101"
@@ -468,7 +424,7 @@
         "Offset": "0x108"
       },
       {
-        "Name": "pad0x3_WWARR[0x3]",
+        "Name": "pad0x3_WXPGB[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x109"
@@ -486,7 +442,7 @@
         "Offset": "0x110"
       },
       {
-        "Name": "pad0x4_L68SC[0x4]",
+        "Name": "pad0x4_BEHKV[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x11c"
@@ -496,6 +452,50 @@
         "Type": "class BoxComponent*",
         "Size": "0x8",
         "Offset": "0x120"
+      }
+    ]
+  },
+  "SphereCollisionExtentAdjustOverTimeComponent": {
+    "Super": "PrimitiveCollisionExtentAdjustOverTimeComponent",
+    "FullSize": "0x110",
+    "InheritedSize": "0xf8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ShouldAdjustSphereRadius",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xf8"
+      },
+      {
+        "Name": "pad0x3_SV72N[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xf9"
+      },
+      {
+        "Name": "PostAdjustmentSphereRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xfc"
+      },
+      {
+        "Name": "ServerSizeScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "pad0x4_7DDTZ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x104"
+      },
+      {
+        "Name": "SphereCollisionToAdjust",
+        "Type": "class SphereComponent*",
+        "Size": "0x8",
+        "Offset": "0x108"
       }
     ]
   },

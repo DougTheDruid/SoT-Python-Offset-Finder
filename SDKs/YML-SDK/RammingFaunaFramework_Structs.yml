@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 EventFaunaRammerComponentChargeAttack:
   Attributes:
-  - Name: pad0x8_9GCKQ[0x8]
+  - Name: pad0x8_S77MJ[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char

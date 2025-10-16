@@ -14,126 +14,20 @@ public:
 	struct ActorComponentSelector                                EmitterOwner;                                      // 0xc0(0x10)
 	struct Vector                                                EmitterOffset;                                     // 0xd0(0xc)
 	bool                                                         UseParentEmitter;                                  // 0xdc(0x1)
-	char                                                         pad0x3_VZ613[0x3];                                 // 0xdd(0x3)
+	char                                                         pad0x3_4ZX7T[0x3];                                 // 0xdd(0x3)
 	float                                                        RisingAudioTriggerValue;                           // 0xe0(0x4)
-	char                                                         pad0x4_IHADW[0x4];                                 // 0xe4(0x4)
+	char                                                         pad0x4_1LEZI[0x4];                                 // 0xe4(0x4)
 	class UClass*                                                CameraShake;                                       // 0xe8(0x8)
 	float                                                        ShakeInnerRadius;                                  // 0xf0(0x4)
 	float                                                        ShakeOuterRadius;                                  // 0xf4(0x4)
-	char                                                         pad0x50_A83JM[0x50];                               // 0xf8(0x50)
-};
-
-
-// Size 0x98 (Full Size[0x438] - InheritedSize[0x3a0]
-class SpireService: public Actor
-{
-public:
-	char                                                         pad0x8_7VSEV[0x8];                                 // 0x3a0(0x8)
-	class SpireServiceParams*                                    Params;                                            // 0x3a8(0x8)
-	TArray<struct ServerSpireInfo>                               ServerOnlySpireInfo;                               // 0x3b0(0x10)
-	TArray<struct SpireInfo>                                     SpireLevels;                                       // 0x3c0(0x10)
-	char                                                         pad0x68_MFHW1[0x68];                               // 0x3d0(0x68)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SpireSettingsInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleLoadSpireStep: public TaleQuestStep
-{
-public:
+	char                                                         pad0x50_YFCLL[0x50];                               // 0xf8(0x50)
 };
 
 
 // Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
-class TaleWaitForSpireToLoadStepDesc: public TaleQuestStepDesc
+class TaleMakeSpireVisibleStepDesc: public TaleQuestStepDesc
 {
 public:
-};
-
-
-// Size 0x10 (Full Size[0x3c0] - InheritedSize[0x3b0]
-class SpireShippingDrawDebugActorSphereCollection: public ShippingDebugActorSphereCollection
-{
-public:
-	TArray<uintptr_t>                                            SpireList;                                         // 0x3b0(0x10)
-};
-
-
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class TaleReleaseSpireStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableTaleResourceHandle                       SpireHandle;                                       // 0x80(0x30)
-};
-
-
-// Size 0x10 (Full Size[0x3b0] - InheritedSize[0x3a0]
-class SpireResource: public Actor
-{
-public:
-	char                                                         pad0x10_0U0K2[0x10];                               // 0x3a0(0x10)
-};
-
-
-// Size 0x50 (Full Size[0xe8] - InheritedSize[0x98]
-class TaleWaitForSpireToLoadStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x50_JT8M2[0x50];                               // 0x98(0x50)
-};
-
-
-// Size 0x10 (Full Size[0xa8] - InheritedSize[0x98]
-class TaleRegisterSpireStep: public TaleQuestStep
-{
-public:
-	class TaleRegisterSpireStepDesc*                             StepDesc;                                          // 0x98(0x8)
-	char                                                         pad0x8_QWAX1[0x8];                                 // 0xa0(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
-class TaleUnloadSpireStepDesc: public TaleQuestStepDesc
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleUnloadSpireStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
-class TaleLoadSpireStepDesc: public TaleQuestStepDesc
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleMakeSpireVisibleStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0xc0 (Full Size[0x140] - InheritedSize[0x80]
-class TaleRegisterSpireStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableVector                                   SelectionOriginPoint;                              // 0x80(0x30)
-	struct QuestVariableFloat                                    PlayerExclusionSelectionRadius;                    // 0xb0(0x30)
-	struct QuestVariableTaleResourceHandle                       AllocatedSpireHandle;                              // 0xe0(0x30)
-	struct QuestVariableVector                                   AllocatedSpireLocation;                            // 0x110(0x30)
 };
 
 
@@ -150,10 +44,34 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
-class TaleMakeSpireVisibleStepDesc: public TaleQuestStepDesc
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleLoadSpireStep: public TaleQuestStep
 {
 public:
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class TaleReleaseSpireStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableTaleResourceHandle                       SpireHandle;                                       // 0x80(0x30)
+};
+
+
+// Size 0x10 (Full Size[0x3c0] - InheritedSize[0x3b0]
+class SpireShippingDrawDebugActorSphereCollection: public ShippingDebugActorSphereCollection
+{
+public:
+	TArray<uintptr_t>                                            SpireList;                                         // 0x3b0(0x10)
+};
+
+
+// Size 0x50 (Full Size[0xe8] - InheritedSize[0x98]
+class TaleWaitForSpireToLoadStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x50_IUGZP[0x50];                               // 0x98(0x50)
 };
 
 
@@ -161,6 +79,81 @@ public:
 class TaleSpireServiceDesc: public TaleQuestServiceDesc
 {
 public:
+};
+
+
+// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
+class TaleReleaseSpireStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x8_HKE6O[0x8];                                 // 0x98(0x8)
+};
+
+
+// Size 0x98 (Full Size[0x438] - InheritedSize[0x3a0]
+class SpireService: public Actor
+{
+public:
+	char                                                         pad0x8_LE0KR[0x8];                                 // 0x3a0(0x8)
+	class SpireServiceParams*                                    Params;                                            // 0x3a8(0x8)
+	TArray<struct ServerSpireInfo>                               ServerOnlySpireInfo;                               // 0x3b0(0x10)
+	TArray<struct SpireInfo>                                     SpireLevels;                                       // 0x3c0(0x10)
+	char                                                         pad0x68_Q9ES0[0x68];                               // 0x3d0(0x68)
+};
+
+
+// Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
+class TaleLoadSpireStepDesc: public TaleQuestStepDesc
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
+class TaleUnloadSpireStepDesc: public TaleQuestStepDesc
+{
+public:
+};
+
+
+// Size 0xc0 (Full Size[0x140] - InheritedSize[0x80]
+class TaleRegisterSpireStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableVector                                   SelectionOriginPoint;                              // 0x80(0x30)
+	struct QuestVariableFloat                                    PlayerExclusionSelectionRadius;                    // 0xb0(0x30)
+	struct QuestVariableTaleResourceHandle                       AllocatedSpireHandle;                              // 0xe0(0x30)
+	struct QuestVariableVector                                   AllocatedSpireLocation;                            // 0x110(0x30)
+};
+
+
+// Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
+class TaleWaitForSpireToLoadStepDesc: public TaleQuestStepDesc
+{
+public:
+};
+
+
+// Size 0x48 (Full Size[0xa8] - InheritedSize[0x60]
+class TaleSpireService: public TaleQuestService
+{
+public:
+	char                                                         pad0x48_5RINA[0x48];                               // 0x60(0x48)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleMakeSpireVisibleStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class SpireServiceParams: public DataAsset
+{
+public:
+	class ActorSpawnData*                                        OnCancelFakeSpire;                                 // 0x28(0x8)
 };
 
 
@@ -174,11 +167,34 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class SpireServiceParams: public DataAsset
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class SpireSettingsInterface: public Interface
 {
 public:
-	class ActorSpawnData*                                        OnCancelFakeSpire;                                 // 0x28(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleUnloadSpireStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0xa8] - InheritedSize[0x98]
+class TaleRegisterSpireStep: public TaleQuestStep
+{
+public:
+	class TaleRegisterSpireStepDesc*                             StepDesc;                                          // 0x98(0x8)
+	char                                                         pad0x8_J8129[0x8];                                 // 0xa0(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x3b0] - InheritedSize[0x3a0]
+class SpireResource: public Actor
+{
+public:
+	char                                                         pad0x10_22J7N[0x10];                               // 0x3a0(0x10)
 };
 
 
@@ -186,22 +202,6 @@ public:
 class SpireServiceInterface: public Interface
 {
 public:
-};
-
-
-// Size 0x48 (Full Size[0xa8] - InheritedSize[0x60]
-class TaleSpireService: public TaleQuestService
-{
-public:
-	char                                                         pad0x48_5VXRH[0x48];                               // 0x60(0x48)
-};
-
-
-// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
-class TaleReleaseSpireStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x8_VXGL7[0x8];                                 // 0x98(0x8)
 };
 
 

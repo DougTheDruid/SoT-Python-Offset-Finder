@@ -6,25 +6,25 @@
 #include "SeasonProgressionFramework_Structs.h"
 
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class SeasonProgressionExclusionInterface: public Interface
+{
+public:
+};
+
+
 // Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
 class SeasonProgressionExclusionComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_HBSDY[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_P13M2[0x8];                                 // 0xb8(0x8)
 	bool                                                         ShouldBeExcludedFromSeasonProgessionValue;         // 0xc0(0x1)
-	char                                                         pad0x7_TNV3H[0x7];                                 // 0xc1(0x7)
+	char                                                         pad0x7_Y9S3A[0x7];                                 // 0xc1(0x7)
 };
 
 
 // Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
 class SeasonSettings: public DeveloperSettings
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SeasonProgressionExclusionInterface: public Interface
 {
 public:
 };

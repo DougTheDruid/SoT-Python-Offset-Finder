@@ -18,7 +18,7 @@ public:
 	struct IntPoint                                              Resolution;                                        // 0x30(0x8)
 	class World*                                                 World;                                             // 0x38(0x8)
 	class TextureRenderTarget2D*                                 RenderTarget;                                      // 0x50(0x8)
-	char                                                         pad0x50_XS13X[0x50];                               // 0x58(0x50)
+	char                                                         pad0x50_R8U0N[0x50];                               // 0x58(0x50)
 };
 
 

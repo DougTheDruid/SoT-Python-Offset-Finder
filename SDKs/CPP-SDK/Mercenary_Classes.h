@@ -15,28 +15,24 @@ public:
 };
 
 
-// Size 0x1d0 (Full Size[0x570] - InheritedSize[0x3a0]
-class MercenaryBuriableActor: public Actor
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
+class EmergentSkeletonRevivedStatTrigger: public ConditionalStatsTriggerType
 {
 public:
-	char                                                         pad0x10_8N18F[0x10];                               // 0x3a0(0x10)
-	class InteractableComponentWithActionRules*                  InteractableComponentWithActionRules;              // 0x3b0(0x8)
-	class SkeletalMeshMemoryConstraintComponent*                 SkeletalMeshMMC;                                   // 0x3b8(0x8)
-	class TrackedOwnerComponent*                                 TrackedOwnerComponent;                             // 0x3c0(0x8)
-	struct StringAssetReference                                  CosmeticDataAsset;                                 // 0x3c8(0x10)
-	struct StringAssetReference                                  FunctionalDataAsset;                               // 0x3d8(0x10)
-	struct FText                                                 InteractionTextLocTag;                             // 0x3e8(0x38)
-	struct FText                                                 InvalidInteractionTextLocTag;                      // 0x420(0x38)
-	float                                                        HoldInteractionTime;                               // 0x458(0x4)
-	float                                                        DelayBetweenCosmeticAndConversion;                 // 0x45c(0x4)
-	bool                                                         IsConverting;                                      // 0x460(0x1)
-	char                                                         pad0x7_W29GB[0x7];                                 // 0x461(0x7)
-	char                                                         pad0x108_4X17P[0x108];                             // 0x468(0x108)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class MercenaryCosmeticAssetsDataAsset: public DataAsset
+{
+public:
+	class AnimationAsset*                                        PreSpawnInAnimation;                               // 0x28(0x8)
+	class ParticleSystem*                                        PreSpawnInParticleSystem;                          // 0x30(0x8)
 };
 
 
 // Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class EmergentSkeletonRevivedStatTrigger: public ConditionalStatsTriggerType
+class EmergentSkeletonHandedItemStatTrigger: public ConditionalStatsTriggerType
 {
 public:
 };
@@ -49,44 +45,50 @@ public:
 };
 
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class MercenaryServiceInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x30 (Full Size[0x3d0] - InheritedSize[0x3a0]
+class MercenaryService: public Actor
+{
+public:
+	char                                                         pad0x20_L08WQ[0x20];                               // 0x3a0(0x20)
+	float                                                        MercenaryCleanupDelayTimer;                        // 0x3c0(0x4)
+	char                                                         pad0x4_V1YMH[0x4];                                 // 0x3c4(0x4)
+	class MercenaryServiceParams*                                ServiceParams;                                     // 0x3c8(0x8)
+};
+
+
+// Size 0x1d0 (Full Size[0x570] - InheritedSize[0x3a0]
+class MercenaryBuriableActor: public Actor
+{
+public:
+	char                                                         pad0x10_PY54A[0x10];                               // 0x3a0(0x10)
+	class InteractableComponentWithActionRules*                  InteractableComponentWithActionRules;              // 0x3b0(0x8)
+	class SkeletalMeshMemoryConstraintComponent*                 SkeletalMeshMMC;                                   // 0x3b8(0x8)
+	class TrackedOwnerComponent*                                 TrackedOwnerComponent;                             // 0x3c0(0x8)
+	struct StringAssetReference                                  CosmeticDataAsset;                                 // 0x3c8(0x10)
+	struct StringAssetReference                                  FunctionalDataAsset;                               // 0x3d8(0x10)
+	struct FText                                                 InteractionTextLocTag;                             // 0x3e8(0x38)
+	struct FText                                                 InvalidInteractionTextLocTag;                      // 0x420(0x38)
+	float                                                        HoldInteractionTime;                               // 0x458(0x4)
+	float                                                        DelayBetweenCosmeticAndConversion;                 // 0x45c(0x4)
+	bool                                                         IsConverting;                                      // 0x460(0x1)
+	char                                                         pad0x7_OSS06[0x7];                                 // 0x461(0x7)
+	char                                                         pad0x108_UAWSU[0x108];                             // 0x468(0x108)
+};
+
+
 // Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
 class MercenaryServiceParams: public DataAsset
 {
 public:
 	int                                                          MercenaryCleanupDelayTimer;                        // 0x28(0x4)
-	char                                                         pad0x4_EKPQ6[0x4];                                 // 0x2c(0x4)
-};
-
-
-// Size 0x208 (Full Size[0x2c0] - InheritedSize[0xb8]
-class MercenaryItemInteractionsComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x28_NZZXV[0x28];                               // 0xb8(0x28)
-	bool                                                         EnableAICarryingItems;                             // 0xe0(0x1)
-	bool                                                         AICarryingItemsEnabled;                            // 0xe1(0x1)
-	char                                                         pad0x6_O05F7[0x6];                                 // 0xe2(0x6)
-	float                                                        HoldGiveInteractionTime;                           // 0x108(0x4)
-	char                                                         pad0x4_1X59F[0x4];                                 // 0x10c(0x4)
-	struct FText                                                 HoldGiveInteractionAllowText;                      // 0x110(0x38)
-	struct FText                                                 HoldGiveInteractionDenyText;                       // 0x148(0x38)
-	float                                                        HoldTakeInteractionTime;                           // 0x180(0x4)
-	char                                                         pad0x4_21E1L[0x4];                                 // 0x184(0x4)
-	struct FText                                                 HoldTakeInteractionAllowText;                      // 0x188(0x38)
-	struct FText                                                 HoldTakeInteractionDenyText;                       // 0x1c0(0x38)
-	class UClass*                                                CarryItemInteractionInputId;                       // 0x1f8(0x8)
-	class UClass*                                                CarryItemInteractionReleasedInputId;               // 0x200(0x8)
-	char                                                         pad0x30_T9KCJ[0x30];                               // 0x208(0x30)
-	bool                                                         EnableAIMapAssistanceInteraction;                  // 0x238(0x1)
-	bool                                                         ConsentToAIMapAssistance;                          // 0x239(0x1)
-	bool                                                         AIMapAssistanceInteractionEnabled;                 // 0x23a(0x1)
-	char                                                         pad0x1_MFL2P[0x1];                                 // 0x23b(0x1)
-	float                                                        AIMapAssistanceInteractionHoldTime;                // 0x23c(0x4)
-	struct FText                                                 AIMapAssistanceInteractionText;                    // 0x240(0x38)
-	class UClass*                                                AIMapAssistanceInteractionInputId;                 // 0x278(0x8)
-	class UClass*                                                AIMapAssistanceInteractionReleasedInputId;         // 0x280(0x8)
-	char                                                         pad0x30_ZUC08[0x30];                               // 0x288(0x30)
-	class MercenaryItemInteractionDataAsset*                     LoadedMercenaryItemInteractionDataAsset;           // 0x2b8(0x8)
+	char                                                         pad0x4_JQZQ6[0x4];                                 // 0x2c(0x4)
 };
 
 
@@ -100,37 +102,35 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class MercenaryCosmeticAssetsDataAsset: public DataAsset
+// Size 0x208 (Full Size[0x2c0] - InheritedSize[0xb8]
+class MercenaryItemInteractionsComponent: public ActorComponent
 {
 public:
-	class AnimationAsset*                                        PreSpawnInAnimation;                               // 0x28(0x8)
-	class ParticleSystem*                                        PreSpawnInParticleSystem;                          // 0x30(0x8)
-};
-
-
-// Size 0x30 (Full Size[0x3d0] - InheritedSize[0x3a0]
-class MercenaryService: public Actor
-{
-public:
-	char                                                         pad0x20_FS1LO[0x20];                               // 0x3a0(0x20)
-	float                                                        MercenaryCleanupDelayTimer;                        // 0x3c0(0x4)
-	char                                                         pad0x4_V74DO[0x4];                                 // 0x3c4(0x4)
-	class MercenaryServiceParams*                                ServiceParams;                                     // 0x3c8(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class EmergentSkeletonHandedItemStatTrigger: public ConditionalStatsTriggerType
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class MercenaryServiceInterface: public Interface
-{
-public:
+	char                                                         pad0x28_VMCR8[0x28];                               // 0xb8(0x28)
+	bool                                                         EnableAICarryingItems;                             // 0xe0(0x1)
+	bool                                                         AICarryingItemsEnabled;                            // 0xe1(0x1)
+	char                                                         pad0x6_P9H9N[0x6];                                 // 0xe2(0x6)
+	float                                                        HoldGiveInteractionTime;                           // 0x108(0x4)
+	char                                                         pad0x4_KZ1M1[0x4];                                 // 0x10c(0x4)
+	struct FText                                                 HoldGiveInteractionAllowText;                      // 0x110(0x38)
+	struct FText                                                 HoldGiveInteractionDenyText;                       // 0x148(0x38)
+	float                                                        HoldTakeInteractionTime;                           // 0x180(0x4)
+	char                                                         pad0x4_DUACH[0x4];                                 // 0x184(0x4)
+	struct FText                                                 HoldTakeInteractionAllowText;                      // 0x188(0x38)
+	struct FText                                                 HoldTakeInteractionDenyText;                       // 0x1c0(0x38)
+	class UClass*                                                CarryItemInteractionInputId;                       // 0x1f8(0x8)
+	class UClass*                                                CarryItemInteractionReleasedInputId;               // 0x200(0x8)
+	char                                                         pad0x30_4Y73K[0x30];                               // 0x208(0x30)
+	bool                                                         EnableAIMapAssistanceInteraction;                  // 0x238(0x1)
+	bool                                                         ConsentToAIMapAssistance;                          // 0x239(0x1)
+	bool                                                         AIMapAssistanceInteractionEnabled;                 // 0x23a(0x1)
+	char                                                         pad0x1_4AERA[0x1];                                 // 0x23b(0x1)
+	float                                                        AIMapAssistanceInteractionHoldTime;                // 0x23c(0x4)
+	struct FText                                                 AIMapAssistanceInteractionText;                    // 0x240(0x38)
+	class UClass*                                                AIMapAssistanceInteractionInputId;                 // 0x278(0x8)
+	class UClass*                                                AIMapAssistanceInteractionReleasedInputId;         // 0x280(0x8)
+	char                                                         pad0x30_LR040[0x30];                               // 0x288(0x30)
+	class MercenaryItemInteractionDataAsset*                     LoadedMercenaryItemInteractionDataAsset;           // 0x2b8(0x8)
 };
 
 

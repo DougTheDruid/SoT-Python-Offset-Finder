@@ -1,77 +1,18 @@
 {
-  "StructSerializerNumericTestStruct": {
-    "ClassSize": "0x30",
+  "StructSerializerObjectTestStruct": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x4_DQX0W[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Int32",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "UInt8",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x1_5ZT7U[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x11"
-      },
-      {
-        "Name": "Float",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "pad0x4_ZB4S6[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x24"
-      },
-      {
-        "Name": "Double",
-        "Type": "double",
+        "Name": "Class",
+        "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "StructSerializerBooleanTestStruct": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "BoolFalse",
-        "Type": "bool",
-        "Size": "0x1",
         "Offset": "0x0"
       },
       {
-        "Name": "BoolTrue",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "pad0x2_SH1MT[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x2"
-      },
-      {
-        "Name": "pad0x4_B84CY[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4"
+        "Name": "ObjectPtr",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -132,7 +73,7 @@
         "Offset": "0x14"
       },
       {
-        "Name": "pad0x8_XOGVJ[0x8]",
+        "Name": "pad0x8_HL1ZI[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x18"
@@ -144,7 +85,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0xc_RYMKU[0xc]",
+        "Name": "pad0xc_ETFVW[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x24"
@@ -157,20 +98,79 @@
       }
     ]
   },
-  "StructSerializerObjectTestStruct": {
-    "ClassSize": "0x10",
+  "StructSerializerBooleanTestStruct": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "Class",
-        "Type": "class UClass*",
-        "Size": "0x8",
+        "Name": "BoolFalse",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x0"
       },
       {
-        "Name": "ObjectPtr",
-        "Type": "class Object*",
+        "Name": "BoolTrue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "pad0x2_PSV8H[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x2"
+      },
+      {
+        "Name": "pad0x4_E3G12[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "StructSerializerNumericTestStruct": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x4_W0ZU4[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Int32",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "UInt8",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x1_XLJVK[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "Float",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_L6HPK[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "Double",
+        "Type": "double",
         "Size": "0x8",
-        "Offset": "0x8"
+        "Offset": "0x28"
       }
     ]
   },

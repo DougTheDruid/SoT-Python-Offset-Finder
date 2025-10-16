@@ -13,14 +13,13 @@ public:
 };
 
 
-// Size 0x20
-struct EventOverMemoryThreshold
+// Size 0x28
+struct EventEntityIdsSwitch
 {
 public:
-	struct FString                                               EventId;                                           // 0x0(0x10)
-	struct DateTime                                              ServerTimeUTC;                                     // 0x10(0x8)
-	int                                                          MemoryUsedPercentage;                              // 0x18(0x4)
-	char                                                         pad0x4_O8CWG[0x4];                                 // 0x1c(0x4)
+	struct FName                                                 Event;                                             // 0x0(0x8)
+	TArray<int>                                                  EnableEntityIds;                                   // 0x8(0x10)
+	TArray<int>                                                  DisableEntityIds;                                  // 0x18(0x10)
 };
 
 
@@ -33,13 +32,14 @@ public:
 };
 
 
-// Size 0x28
-struct EventEntityIdsSwitch
+// Size 0x20
+struct EventOverMemoryThreshold
 {
 public:
-	struct FName                                                 Event;                                             // 0x0(0x8)
-	TArray<int>                                                  EnableEntityIds;                                   // 0x8(0x10)
-	TArray<int>                                                  DisableEntityIds;                                  // 0x18(0x10)
+	struct FString                                               EventId;                                           // 0x0(0x10)
+	struct DateTime                                              ServerTimeUTC;                                     // 0x10(0x8)
+	int                                                          MemoryUsedPercentage;                              // 0x18(0x4)
+	char                                                         pad0x4_DB788[0x4];                                 // 0x1c(0x4)
 };
 
 

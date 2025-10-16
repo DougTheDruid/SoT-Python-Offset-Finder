@@ -1,24 +1,45 @@
 {
-  "FinaleReplicationState": {
+  "GlitterbeardPuzzleCancelTelemetryEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "State",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x7_FXO5X[0x7]",
+        "Name": "pad0x10_5PG8I[0x10]",
         "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1"
-      },
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GlitterbeardPlayerPuzzleUnlockFailureTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
       {
-        "Name": "TargetEnsemble",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
+        "Name": "pad0x20_M7QKU[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GlitterbeardSessionBeginTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_AYA3W[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GlitterbeardSessionEndTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_FSSBN[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },
@@ -38,31 +59,20 @@
         "Offset": "0x4"
       },
       {
-        "Name": "pad0x3_41P48[0x3]",
+        "Name": "pad0x3_FHRZX[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x5"
       }
     ]
   },
-  "GlitterbeardPuzzleUnlockTelemetryEvent": {
-    "ClassSize": "0x10",
+  "UnlockEventData": {
+    "ClassSize": "0x4",
     "Attributes": [
       {
-        "Name": "pad0x10_A3JBB[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "GlitterbeardPlayerPuzzleUnlockFailureTelemetryEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_BWHVH[0x20]",
-        "Type": "char",
-        "Size": "0x20",
+        "Name": "Idx",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x0"
       }
     ]
@@ -71,18 +81,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_W06U3[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "GlitterbeardPuzzleCancelTelemetryEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_KD6RC[0x10]",
+        "Name": "pad0x10_QUP33[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x0"
@@ -100,33 +99,34 @@
       }
     ]
   },
-  "UnlockEventData": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "Idx",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "GlitterbeardSessionEndTelemetryEvent": {
+  "FinaleReplicationState": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_6486R[0x10]",
+        "Name": "State",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_L7CKF[0x7]",
         "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "TargetEnsemble",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
-  "GlitterbeardSessionBeginTelemetryEvent": {
+  "GlitterbeardPuzzleUnlockTelemetryEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_Y77L8[0x10]",
+        "Name": "pad0x10_HA32Z[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x0"

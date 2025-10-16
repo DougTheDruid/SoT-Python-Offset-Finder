@@ -1,4 +1,27 @@
 {
+  "OceanCrawlerSporeBreathAnimationData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Into",
+        "Type": "class BlendSpace1D*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Locomotion",
+        "Type": "class BlendSpace1D*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Outof",
+        "Type": "class BlendSpace1D*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "OceanCrawlerLocomotionAnimationDataStructure": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -43,29 +66,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x2c"
-      }
-    ]
-  },
-  "OceanCrawlerSporeBreathAnimationData": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Into",
-        "Type": "class BlendSpace1D*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Locomotion",
-        "Type": "class BlendSpace1D*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Outof",
-        "Type": "class BlendSpace1D*",
-        "Size": "0x8",
-        "Offset": "0x10"
       }
     ]
   },

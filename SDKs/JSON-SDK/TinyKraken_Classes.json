@@ -1,12 +1,12 @@
 {
   "TinyKrakenEventService": {
     "Super": "Actor",
-    "FullSize": "0x438",
+    "FullSize": "0x4d8",
     "InheritedSize": "0x3a0",
-    "ClassSize": "0x98",
+    "ClassSize": "0x138",
     "Attributes": [
       {
-        "Name": "pad0x40_HOU3C[0x40]",
+        "Name": "pad0x40_6AQUZ[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x3a0"
@@ -18,12 +18,19 @@
         "Offset": "0x3e0"
       },
       {
-        "Name": "pad0x50_QU355[0x50]",
+        "Name": "pad0xf0_ZVH6H[0xf0]",
         "Type": "char",
-        "Size": "0x50",
+        "Size": "0xf0",
         "Offset": "0x3e8"
       }
     ]
+  },
+  "SandboxPerformanceConstraintActivity_TinyKraken": {
+    "Super": "SandboxPerformanceConstraintActivityType",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "TinyKrakenEventServiceParams": {
     "Super": "DataAsset",
@@ -50,13 +57,6 @@
         "Offset": "0x38"
       }
     ]
-  },
-  "SandboxPerformanceConstraintActivity_TinyKraken": {
-    "Super": "SandboxPerformanceConstraintActivityType",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "TinyKrakenEventServiceInterface": {
     "Super": "Interface",

@@ -6,7 +6,7 @@ ConsoleSettings:
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_U5LCO[0x4]
+  - Name: pad0x4_63M8P[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -48,7 +48,7 @@ GameMapsSettings:
     Offset: '0x5a'
     Size: '0x1'
     Type: byte
-  - Name: pad0x5_D4ZWF[0x5]
+  - Name: pad0x5_HB2E3[0x5]
     Offset: '0x5b'
     Size: '0x5'
     Type: char
@@ -98,7 +98,7 @@ GameNetworkManagerSettings:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_9NOO0[0x3]
+  - Name: pad0x3_C969M[0x3]
     Offset: '0x39'
     Size: '0x3'
     Type: char
@@ -126,7 +126,7 @@ GameNetworkManagerSettings:
     Offset: '0x50'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_QAVEU[0x4]
+  - Name: pad0x4_IEG42[0x4]
     Offset: '0x54'
     Size: '0x4'
     Type: char
@@ -148,7 +148,7 @@ GameSessionSettings:
     Offset: '0x30'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_N7VMC[0x7]
+  - Name: pad0x7_1G0XJ[0x7]
     Offset: '0x31'
     Size: '0x7'
     Type: char
@@ -222,7 +222,7 @@ HudSettings:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_6MGT6[0x7]
+  - Name: pad0x7_INIS0[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char

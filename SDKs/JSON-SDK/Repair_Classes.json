@@ -1,13 +1,13 @@
 {
-  "RepairableInterface": {
+  "ShipRepairInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "RepairObjectActionStateId": {
-    "Super": "ActionStateId",
+  "RepairableInterface": {
+    "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
@@ -20,8 +20,8 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ShipRepairInterface": {
-    "Super": "Interface",
+  "RepairObjectActionStateId": {
+    "Super": "ActionStateId",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",

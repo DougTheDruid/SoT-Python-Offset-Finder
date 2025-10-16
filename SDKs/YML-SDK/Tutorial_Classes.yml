@@ -24,7 +24,7 @@ CaptaincyStarter:
     Offset: '0x6a'
     Size: '0x1'
     Type: bool
-  - Name: pad0x5_NWVQC[0x5]
+  - Name: pad0x5_AQHT3[0x5]
     Offset: '0x6b'
     Size: '0x5'
     Type: char
@@ -36,7 +36,7 @@ CaptaincyStarter:
     Offset: '0x78'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_M3NWP[0x3]
+  - Name: pad0x3_ZDPXP[0x3]
     Offset: '0x79'
     Size: '0x3'
     Type: char
@@ -48,7 +48,7 @@ CaptaincyStarter:
     Offset: '0x84'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_7EJ4P[0x3]
+  - Name: pad0x3_EBJ30[0x3]
     Offset: '0x85'
     Size: '0x3'
     Type: char
@@ -60,7 +60,7 @@ CaptaincyStarter:
     Offset: '0x90'
     Size: '0x4'
     Type: int
-  - Name: pad0x64_MEAFT[0x64]
+  - Name: pad0x64_7W7AE[0x64]
     Offset: '0x94'
     Size: '0x64'
     Type: char
@@ -90,7 +90,7 @@ CompanyTutorialVoyageProgress:
     Offset: '0x30'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0xa8_ZFI1V[0xa8]
+  - Name: pad0xa8_2LNW3[0xa8]
     Offset: '0x38'
     Size: '0xa8'
     Type: char
@@ -108,7 +108,7 @@ ContextualTutorialComponent:
     Offset: '0xc8'
     Size: '0x10'
     Type: TArray<class Actor*>
-  - Name: pad0x58_S88IG[0x58]
+  - Name: pad0x58_KYPM9[0x58]
     Offset: '0xd8'
     Size: '0x58'
     Type: char
@@ -122,7 +122,7 @@ HasTutorialStarterBegunNPCDialogConditional:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_IR951[0x7]
+  - Name: pad0x7_VNRZ0[0x7]
     Offset: '0x31'
     Size: '0x7'
     Type: char
@@ -140,7 +140,7 @@ IntroductionToSOTFlowStarter:
     Offset: '0x68'
     Size: '0x10'
     Type: TArray<struct IntroductionToSOTIntroAnimatic>
-  - Name: pad0x60_5XZD6[0x60]
+  - Name: pad0x60_9UU6V[0x60]
     Offset: '0x78'
     Size: '0x60'
     Type: char
@@ -170,7 +170,7 @@ Tutorial2019Component:
     Offset: '0xb9'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_1HKNI[0x6]
+  - Name: pad0x6_1P33I[0x6]
     Offset: '0xba'
     Size: '0x6'
     Type: char
@@ -202,7 +202,7 @@ TutorialHelpersBlueprintLibrary:
   Super: BlueprintFunctionLibrary
 TutorialManager:
   Attributes:
-  - Name: pad0x8_RIUVG[0x8]
+  - Name: pad0x8_JWMIP[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -274,7 +274,7 @@ TutorialManager:
     Offset: '0x10f'
     Size: '0x1'
     Type: bool
-  - Name: pad0x20_9JD0W[0x20]
+  - Name: pad0x20_Q36FD[0x20]
     Offset: '0x110'
     Size: '0x20'
     Type: char
@@ -302,7 +302,7 @@ TutorialStarter:
     Offset: '0x31'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_K1N5O[0x2]
+  - Name: pad0x2_7GOET[0x2]
     Offset: '0x32'
     Size: '0x2'
     Type: char

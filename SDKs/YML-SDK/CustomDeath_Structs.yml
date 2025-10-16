@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 CustomDeathConfiguration:
   Attributes:
-  - Name: pad0x18_HR4SA[0x18]
+  - Name: pad0x18_2JPPH[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -13,7 +13,7 @@ CustomPlayerStartConfigGameServerRequestModel:
     Offset: '0x0'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_QNVES[0x4]
+  - Name: pad0x4_CJ67G[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -32,7 +32,7 @@ CustomPlayerStartConfigResponseGameServerRequestModel:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_Z01I0[0x3]
+  - Name: pad0x3_XB398[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -47,7 +47,7 @@ DestroyCustomPlayerStartGameServerRequestModel:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_JUA7R[0x4]
+  - Name: pad0x4_GWSSL[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -66,7 +66,7 @@ ForcePlayerRespawnGameServerRequestModel:
     Offset: '0x4'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_YTD32[0x3]
+  - Name: pad0x3_RMT4S[0x3]
     Offset: '0x5'
     Size: '0x3'
     Type: char
@@ -120,7 +120,7 @@ SetShouldSkipFerryOfTheDamnedGameServerRequestModel:
     Offset: '0x4'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_M9EQJ[0x3]
+  - Name: pad0x3_KZH3A[0x3]
     Offset: '0x5'
     Size: '0x3'
     Type: char
@@ -135,7 +135,7 @@ SetShouldUseRevivalFlowGameServerRequestModel:
     Offset: '0x4'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_FUKWN[0x3]
+  - Name: pad0x3_QSPOI[0x3]
     Offset: '0x5'
     Size: '0x3'
     Type: char

@@ -1,18 +1,4 @@
 {
-  "CommunityEmissaryFlagData": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "GradeData",
-        "Type": "TArray<struct CommunityFlagGradeData>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "CommunityEmissaryFlagComponent": {
     "Super": "StaticMeshComponent",
     "FullSize": "0x630",
@@ -26,7 +12,7 @@
         "Offset": "0x600"
       },
       {
-        "Name": "pad0x18_OPQ8T[0x18]",
+        "Name": "pad0x18_ZI9NI[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x608"
@@ -38,10 +24,24 @@
         "Offset": "0x620"
       },
       {
-        "Name": "pad0xc_JJU4L[0xc]",
+        "Name": "pad0xc_40KP8[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x624"
+      }
+    ]
+  },
+  "CommunityEmissaryFlagData": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "GradeData",
+        "Type": "TArray<struct CommunityFlagGradeData>",
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },

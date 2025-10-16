@@ -6,14 +6,31 @@
 #include "AthenaAudio_Structs.h"
 
 
-// Size 0xc0 (Full Size[0x118] - InheritedSize[0x58]
-class AthenaAudioConfig: public WwiseCoreAssets
+// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
+class AudioSpaceTrackerComponent: public ActorComponent
 {
 public:
-	class WwiseObjectPoolWrapper*                                ItemProxyPool;                                     // 0x58(0x8)
-	class WwiseObjectPoolWrapper*                                AnimNotifyPool;                                    // 0x60(0x8)
-	struct AthenaAudioGameStateSettings                          GameStateSettings;                                 // 0x68(0x30)
-	struct AthenaAudioBootflowEvents                             BootflowEvents;                                    // 0x98(0x80)
+	TArray<class AudioSpaceComponent*>                           CurrentSpaces;                                     // 0xb8(0x10)
+};
+
+
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class StoryDrivenAudioPortalDataAsset: public DataAsset
+{
+public:
+	struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
+	char                                                         pad0x4_BOTAK[0x4];                                 // 0x34(0x4)
+	TArray<struct StoryDrivenAudioPortalSetting>                 StoryResponses;                                    // 0x38(0x10)
+	TArray<class StoryDrivenAudioPortalDataAsset*>               AssetsList;                                        // 0x48(0x10)
+};
+
+
+// Size 0x20 (Full Size[0xd8] - InheritedSize[0xb8]
+class ImmerseCosmeticUnlockerComponent: public ActorComponent
+{
+public:
+	bool                                                         CosmeticUnlocked;                                  // 0xb8(0x1)
+	char                                                         pad0x1f_2N6BP[0x1f];                               // 0xb9(0x1f)
 };
 
 
@@ -25,30 +42,13 @@ public:
 	float                                                        InsideRtpcUpdateDistance;                          // 0x2d4(0x4)
 	float                                                        OutsideRtpcUpdateDistance;                         // 0x2d8(0x4)
 	bool                                                         TrackAttachmentToActor;                            // 0x2dc(0x1)
-	char                                                         pad0x3_K0CEM[0x3];                                 // 0x2dd(0x3)
+	char                                                         pad0x3_I0QBS[0x3];                                 // 0x2dd(0x3)
 	class AudioSpaceDataAsset*                                   AudioInsideSpace;                                  // 0x2e0(0x8)
 	class AudioSpaceDataAsset*                                   AudioOutsideSpace;                                 // 0x2e8(0x8)
 	class AudioSpaceDataAsset*                                   ActiveAudioInsideSpace;                            // 0x2f0(0x8)
 	class AudioSpaceDataAsset*                                   ActiveAudioOutsideSpace;                           // 0x2f8(0x8)
 	class StoryDrivenAudioPortalDataAsset*                       CollectionAsset;                                   // 0x300(0x8)
-	char                                                         pad0x28_MG7TA[0x28];                               // 0x308(0x28)
-};
-
-
-// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
-class AudioSpaceTrackerComponent: public ActorComponent
-{
-public:
-	TArray<class AudioSpaceComponent*>                           CurrentSpaces;                                     // 0xb8(0x10)
-};
-
-
-// Size 0x20 (Full Size[0xd8] - InheritedSize[0xb8]
-class ImmerseCosmeticUnlockerComponent: public ActorComponent
-{
-public:
-	bool                                                         CosmeticUnlocked;                                  // 0xb8(0x1)
-	char                                                         pad0x1f_E9MQ3[0x1f];                               // 0xb9(0x1f)
+	char                                                         pad0x28_VKVMT[0x28];                               // 0x308(0x28)
 };
 
 
@@ -56,7 +56,59 @@ public:
 class AudioPortalService: public Object
 {
 public:
-	char                                                         pad0xb0_M6M1H[0xb0];                               // 0x28(0xb0)
+	char                                                         pad0xb0_G2BMX[0xb0];                               // 0x28(0xb0)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AudioPortalInterface: public Interface
+{
+public:
+};
+
+
+// Size 0xd0 (Full Size[0xf8] - InheritedSize[0x28]
+class ImmerseGameService: public Object
+{
+public:
+	char                                                         pad0xb8_H5CCU[0xb8];                               // 0x28(0xb8)
+	class ImmerseCosmeticUnlockerComponent*                      LocalCosmeticUnlocker;                             // 0xe0(0x8)
+	char                                                         pad0x10_55CS2[0x10];                               // 0xe8(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
+class AthenaAudioModuleSettings: public DeveloperSettings
+{
+public:
+	struct StringAssetReference                                  AudioConfigAsset;                                  // 0x38(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x3b0] - InheritedSize[0x3a0]
+class MultiEmitter: public Actor
+{
+public:
+	class MultiEmitterRootComponent*                             MultiEmitterRootComponent;                         // 0x3a0(0x8)
+	char                                                         pad0x8_JV53J[0x8];                                 // 0x3a8(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ImmerseGameServiceInterface: public Interface
+{
+public:
+};
+
+
+// Size 0xc0 (Full Size[0x118] - InheritedSize[0x58]
+class AthenaAudioConfig: public WwiseCoreAssets
+{
+public:
+	class WwiseObjectPoolWrapper*                                ItemProxyPool;                                     // 0x58(0x8)
+	class WwiseObjectPoolWrapper*                                AnimNotifyPool;                                    // 0x60(0x8)
+	struct AthenaAudioGameStateSettings                          GameStateSettings;                                 // 0x68(0x30)
+	struct AthenaAudioBootflowEvents                             BootflowEvents;                                    // 0x98(0x80)
 };
 
 
@@ -70,61 +122,9 @@ public:
 	float                                                        TriggerEnterRadiusInCms;                           // 0x2f8(0x4)
 	float                                                        TriggerExitRadiusInCms;                            // 0x2fc(0x4)
 	struct Vector                                                EmitterOffset;                                     // 0x300(0xc)
-	char                                                         pad0x14_OJWFZ[0x14];                               // 0x30c(0x14)
+	char                                                         pad0x14_XLVUL[0x14];                               // 0x30c(0x14)
 	class Character*                                             LocalPlayer;                                       // 0x320(0x8)
-	char                                                         pad0x38_6PYHK[0x38];                               // 0x328(0x38)
-};
-
-
-// Size 0xb0 (Full Size[0xd8] - InheritedSize[0x28]
-class ImmerseGameService: public Object
-{
-public:
-	char                                                         pad0xa0_1MB1B[0xa0];                               // 0x28(0xa0)
-	class ImmerseCosmeticUnlockerComponent*                      LocalCosmeticUnlocker;                             // 0xc8(0x8)
-	char                                                         pad0x8_RSXIJ[0x8];                                 // 0xd0(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AudioPortalInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class StoryDrivenAudioPortalDataAsset: public DataAsset
-{
-public:
-	struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
-	char                                                         pad0x4_ZZRJ2[0x4];                                 // 0x34(0x4)
-	TArray<struct StoryDrivenAudioPortalSetting>                 StoryResponses;                                    // 0x38(0x10)
-	TArray<class StoryDrivenAudioPortalDataAsset*>               AssetsList;                                        // 0x48(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x3b0] - InheritedSize[0x3a0]
-class MultiEmitter: public Actor
-{
-public:
-	class MultiEmitterRootComponent*                             MultiEmitterRootComponent;                         // 0x3a0(0x8)
-	char                                                         pad0x8_5N1UD[0x8];                                 // 0x3a8(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ImmerseGameServiceInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class AthenaAudioModuleSettings: public DeveloperSettings
-{
-public:
-	struct StringAssetReference                                  AudioConfigAsset;                                  // 0x38(0x10)
+	char                                                         pad0x38_5TQA0[0x38];                               // 0x328(0x38)
 };
 
 
@@ -135,7 +135,7 @@ public:
 	class AudioSpaceDataAsset*                                   AudioSpace;                                        // 0x600(0x8)
 	class AudioSpaceDataAsset*                                   ActiveAudioSpace;                                  // 0x608(0x8)
 	class StoryDrivenAudioPortalDataAsset*                       CollectionAsset;                                   // 0x610(0x8)
-	char                                                         pad0x18_U3F8N[0x18];                               // 0x618(0x18)
+	char                                                         pad0x18_NAYNY[0x18];                               // 0x618(0x18)
 };
 
 

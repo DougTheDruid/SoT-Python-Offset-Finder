@@ -6,6 +6,23 @@
 #include "SplinePathing_Structs.h"
 
 
+// Size 0xe8 (Full Size[0x488] - InheritedSize[0x3a0]
+class SplinePathingActor: public Actor
+{
+public:
+	char                                                         pad0x8_WNHZK[0x8];                                 // 0x3a0(0x8)
+	struct ObjectMessagingDispatcher                             ObjectMessageDispatcher;                           // 0x3a8(0xa0)
+	char                                                         pad0x10_AKTLM[0x10];                               // 0x448(0x10)
+	class SceneComponent*                                        Root;                                              // 0x458(0x8)
+	class SplineComponent*                                       Spline;                                            // 0x460(0x8)
+	float                                                        Force;                                             // 0x468(0x4)
+	float                                                        MaxVelocity;                                       // 0x46c(0x4)
+	float                                                        DistanceAlongSplineToTarget;                       // 0x470(0x4)
+	int                                                          DistanceFromDestination;                           // 0x474(0x4)
+	char                                                         pad0x10_O8QJO[0x10];                               // 0x478(0x10)
+};
+
+
 // Size 0x50 (Full Size[0x3f0] - InheritedSize[0x3a0]
 class FixedSplinePathingActor: public Actor
 {
@@ -13,27 +30,10 @@ public:
 	class SceneComponent*                                        Root;                                              // 0x3a0(0x8)
 	class FakedBuoyancyComponent*                                FakedBuoyancyComponent;                            // 0x3a8(0x8)
 	float                                                        Speed;                                             // 0x3b0(0x4)
-	char                                                         pad0x4_LCLYQ[0x4];                                 // 0x3b4(0x4)
+	char                                                         pad0x4_B9P3C[0x4];                                 // 0x3b4(0x4)
 	class SplineComponent*                                       FollowingSpline;                                   // 0x3b8(0x8)
 	bool                                                         CanTick;                                           // 0x3c0(0x1)
-	char                                                         pad0x2f_ILACX[0x2f];                               // 0x3c1(0x2f)
-};
-
-
-// Size 0xe8 (Full Size[0x488] - InheritedSize[0x3a0]
-class SplinePathingActor: public Actor
-{
-public:
-	char                                                         pad0x8_EQMX7[0x8];                                 // 0x3a0(0x8)
-	struct ObjectMessagingDispatcher                             ObjectMessageDispatcher;                           // 0x3a8(0xa0)
-	char                                                         pad0x10_0TRG1[0x10];                               // 0x448(0x10)
-	class SceneComponent*                                        Root;                                              // 0x458(0x8)
-	class SplineComponent*                                       Spline;                                            // 0x460(0x8)
-	float                                                        Force;                                             // 0x468(0x4)
-	float                                                        MaxVelocity;                                       // 0x46c(0x4)
-	float                                                        DistanceAlongSplineToTarget;                       // 0x470(0x4)
-	int                                                          DistanceFromDestination;                           // 0x474(0x4)
-	char                                                         pad0x10_EKY4E[0x10];                               // 0x478(0x10)
+	char                                                         pad0x2f_MOBJJ[0x2f];                               // 0x3c1(0x2f)
 };
 
 

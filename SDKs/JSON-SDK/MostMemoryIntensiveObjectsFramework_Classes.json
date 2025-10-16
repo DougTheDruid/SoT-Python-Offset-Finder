@@ -1,4 +1,11 @@
 {
+  "MMICategoryDebugCommandSource": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "MostMemoryIntensiveObjectsRuntimeSettings": {
     "Super": "DeveloperSettings",
     "FullSize": "0x68",
@@ -24,13 +31,6 @@
         "Offset": "0x58"
       }
     ]
-  },
-  "MMICategoryDebugCommandSource": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "MostMemoryIntensiveObjectsDataAsset": {
     "Super": "DataAsset",

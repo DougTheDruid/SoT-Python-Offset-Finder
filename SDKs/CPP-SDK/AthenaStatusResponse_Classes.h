@@ -6,27 +6,26 @@
 #include "AthenaStatusResponse_Structs.h"
 
 
-// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class StatusResponseHealthRegenerationPoolChange: public StatusResponse
+// Size 0x40 (Full Size[0x78] - InheritedSize[0x38]
+class StatusResponseReportNoiseEvent: public StatusResponse
 {
 public:
-	float                                                        HealthPoolChangeIntensityMultiplier;               // 0x38(0x4)
-	char                                                         pad0x4_14HEJ[0x4];                                 // 0x3c(0x4)
+	class UClass*                                                NoiseInstigator;                                   // 0x38(0x8)
+	struct FName                                                 NoiseTag;                                          // 0x40(0x8)
+	float                                                        NoiseRange;                                        // 0x48(0x4)
+	float                                                        NoiseLoudness;                                     // 0x4c(0x4)
+	bool                                                         NoiseMultipleTicks;                                // 0x50(0x1)
+	char                                                         pad0x3_NM6H4[0x3];                                 // 0x51(0x3)
+	float                                                        NoiseTimerTick;                                    // 0x54(0x4)
+	char                                                         pad0x20_R87ZZ[0x20];                               // 0x58(0x20)
 };
 
 
 // Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class StatusResponseCancelStatus: public StatusResponse
+class StatusResponseSuspendStatus: public StatusResponse
 {
 public:
 	TArray<class Class*>                                         Status;                                            // 0x38(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class StatusResponseCook: public StatusResponse
-{
-public:
 };
 
 
@@ -35,6 +34,32 @@ class StatusResponseApplyOneShotStatus: public StatusResponse
 {
 public:
 	struct Status                                                StatusToApply;                                     // 0x38(0x20)
+};
+
+
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+class StatusResponseHealthRegenerationPoolChange: public StatusResponse
+{
+public:
+	float                                                        HealthPoolChangeIntensityMultiplier;               // 0x38(0x4)
+	char                                                         pad0x4_TWJLF[0x4];                                 // 0x3c(0x4)
+};
+
+
+// Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
+class StatusResponseApplyPersistentStatus: public StatusResponse
+{
+public:
+	struct Status                                                StatusToApply;                                     // 0x38(0x20)
+	float                                                        DurationMultiplier;                                // 0x58(0x4)
+	char                                                         pad0x4_IUDC0[0x4];                                 // 0x5c(0x4)
+};
+
+
+// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
+class StatusResponseCook: public StatusResponse
+{
+public:
 };
 
 
@@ -47,35 +72,10 @@ public:
 
 
 // Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class StatusResponseSuspendStatus: public StatusResponse
+class StatusResponseCancelStatus: public StatusResponse
 {
 public:
 	TArray<class Class*>                                         Status;                                            // 0x38(0x10)
-};
-
-
-// Size 0x40 (Full Size[0x78] - InheritedSize[0x38]
-class StatusResponseReportNoiseEvent: public StatusResponse
-{
-public:
-	class UClass*                                                NoiseInstigator;                                   // 0x38(0x8)
-	struct FName                                                 NoiseTag;                                          // 0x40(0x8)
-	float                                                        NoiseRange;                                        // 0x48(0x4)
-	float                                                        NoiseLoudness;                                     // 0x4c(0x4)
-	bool                                                         NoiseMultipleTicks;                                // 0x50(0x1)
-	char                                                         pad0x3_6CQMB[0x3];                                 // 0x51(0x3)
-	float                                                        NoiseTimerTick;                                    // 0x54(0x4)
-	char                                                         pad0x20_J48Y9[0x20];                               // 0x58(0x20)
-};
-
-
-// Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
-class StatusResponseApplyPersistentStatus: public StatusResponse
-{
-public:
-	struct Status                                                StatusToApply;                                     // 0x38(0x20)
-	float                                                        DurationMultiplier;                                // 0x58(0x4)
-	char                                                         pad0x4_GA40G[0x4];                                 // 0x5c(0x4)
 };
 
 

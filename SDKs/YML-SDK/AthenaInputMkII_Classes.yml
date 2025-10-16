@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AthenaCharacterBaseInputComponent:
   Attributes:
-  - Name: pad0x128_8WNX5[0x128]
+  - Name: pad0x128_ZQQ1Q[0x128]
     Offset: '0x160'
     Size: '0x128'
     Type: char
@@ -12,7 +12,7 @@ AthenaCharacterBaseInputComponent:
   Super: AutoMoveInputComponent
 AthenaCharacterBaseInputComponentWithInterference:
   Attributes:
-  - Name: pad0x8_QCD8L[0x8]
+  - Name: pad0x8_J8RMT[0x8]
     Offset: '0x288'
     Size: '0x8'
     Type: char
@@ -22,7 +22,7 @@ AthenaCharacterBaseInputComponentWithInterference:
   Super: AthenaCharacterBaseInputComponent
 AutoMoveInputComponent:
   Attributes:
-  - Name: pad0x20_Z74DP[0x20]
+  - Name: pad0x20_JOX47[0x20]
     Offset: '0x140'
     Size: '0x20'
     Type: char
@@ -66,7 +66,7 @@ LookingAtWieldableInputComponent:
   Super: AthenaCharacterBaseInputComponent
 MovementInterferenceComponent:
   Attributes:
-  - Name: pad0x70_RJLQB[0x70]
+  - Name: pad0x70_7DZG1[0x70]
     Offset: '0x160'
     Size: '0x70'
     Type: char
@@ -74,3 +74,19 @@ MovementInterferenceComponent:
   FullSize: '0x1d0'
   InheritedSize: '0x160'
   Super: AutoMoveInputComponent
+NPCReceivesInputIndicatorComponent:
+  Attributes:
+  - Name: pad0x8_DI5Z4[0x8]
+    Offset: '0xb8'
+    Size: '0x8'
+    Type: char
+  ClassSize: '0x8'
+  FullSize: '0xc0'
+  InheritedSize: '0xb8'
+  Super: ActorComponent
+OpenEscapeMenuNotificationInputId:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x38'
+  InheritedSize: '0x38'
+  Super: NotificationInputId

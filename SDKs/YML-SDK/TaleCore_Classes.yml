@@ -16,7 +16,7 @@ TaleStruct:
     Offset: '0x88'
     Size: '0x10'
     Type: struct Guid
-  - Name: pad0x20_BKS9U[0x20]
+  - Name: pad0x20_FPOSI[0x20]
     Offset: '0x98'
     Size: '0x20'
     Type: char

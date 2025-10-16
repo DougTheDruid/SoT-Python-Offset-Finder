@@ -61,6 +61,249 @@
       }
     ]
   },
+  "SelectWayfinderIslandsFromRegionStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x130",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Name": "RegionData",
+        "Type": "class RegionMapDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "SelectionStrategy",
+        "Type": "class RegionIslandWayfinderSelectionStrategy*",
+        "Size": "0x8",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "VaultActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0xa8"
+      },
+      {
+        "Name": "pad0x80_7VUV6[0x80]",
+        "Type": "char",
+        "Size": "0x80",
+        "Offset": "0xb0"
+      }
+    ]
+  },
+  "TaleQuestLocationMapChestFoundStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_CTCED[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "SelectIslandsFromRegionStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xf8",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "RegionData",
+        "Type": "class RegionMapDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "SelectionStrategy",
+        "Type": "class RegionIslandSelectionStrategyBase*",
+        "Size": "0x8",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "pad0x50_FF9OC[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0xa8"
+      }
+    ]
+  },
+  "TaleQuestWaitForChecklistMapCompletionStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_KAFTT[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "TaleQuestTriggerNamedChecklistEventStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x88",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Event",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x80"
+      }
+    ]
+  },
+  "GetNumberOfCollectedTornMapPiecesStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xd8",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "pad0x40_IHS1H[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "TaleQuestCustomMapFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x1a0",
+    "InheritedSize": "0x180",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "QuestIconOverride",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x180"
+      },
+      {
+        "Name": "pad0x1f_2D9JX[0x1f]",
+        "Type": "char",
+        "Size": "0x1f",
+        "Offset": "0x181"
+      }
+    ]
+  },
+  "AddMarkToTornMapStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xc0",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x20_72G8D[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "MapMark",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      }
+    ]
+  },
+  "AddMarkToTornMapStepDescBase": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "MapID",
+        "Type": "struct QuestVariableGuid",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "MapMark",
+        "Type": "struct TaleQuestVariableMapMarkType",
+        "Size": "0x30",
+        "Offset": "0xb0"
+      }
+    ]
+  },
+  "TaleQuestAddTradeRouteMapStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x128",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "pad0x90_45L05[0x90]",
+        "Type": "char",
+        "Size": "0x90",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "GetNumberOfCollectedTornMapPiecesStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xe0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "MapID",
+        "Type": "struct QuestVariableGuid",
+        "Size": "0x30",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "NumPieces",
+        "Type": "struct QuestVariableInt",
+        "Size": "0x30",
+        "Offset": "0xb0"
+      }
+    ]
+  },
+  "TaleQuestTornMapFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x180",
+    "InheritedSize": "0x180",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RegionIslandSelectionStrategyBase": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestTriggerNamedChecklistEventStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestAddTornMapStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x170",
+    "InheritedSize": "0x98",
+    "ClassSize": "0xd8",
+    "Attributes": [
+      {
+        "Name": "pad0xd8_VTUOR[0xd8]",
+        "Type": "char",
+        "Size": "0xd8",
+        "Offset": "0x98"
+      }
+    ]
+  },
   "SelectIslandsFromRegionStepDesc": {
     "Super": "TaleQuestStepDesc",
     "FullSize": "0x150",
@@ -111,101 +354,12 @@
       }
     ]
   },
-  "TaleQuestLocationMapChestFoundStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0xa0",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_OI03B[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "SelectIslandsFromRegionStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0xf8",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "RegionData",
-        "Type": "class RegionMapDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "SelectionStrategy",
-        "Type": "class RegionIslandSelectionStrategyBase*",
-        "Size": "0x8",
-        "Offset": "0xa0"
-      },
-      {
-        "Name": "pad0x50_VUW1N[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0xa8"
-      }
-    ]
-  },
-  "TaleQuestAddTornMapStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x170",
-    "InheritedSize": "0x98",
-    "ClassSize": "0xd8",
-    "Attributes": [
-      {
-        "Name": "pad0xd8_2ANQM[0xd8]",
-        "Type": "char",
-        "Size": "0xd8",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "TaleQuestAddTradeRouteMapStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x128",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "pad0x90_NQ01A[0x90]",
-        "Type": "char",
-        "Size": "0x90",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "TaleQuestWaitForChecklistMapCompletionStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0xa0",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_QRKRB[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "TaleQuestTriggerNamedChecklistEventStepDesc": {
+  "TaleQuestMapStepDescBase": {
     "Super": "TaleQuestStepDesc",
-    "FullSize": "0x88",
+    "FullSize": "0x80",
     "InheritedSize": "0x80",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Event",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x80"
-      }
-    ]
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "TaleQuestAddLocationMapStep": {
     "Super": "TaleQuestStep",
@@ -214,166 +368,173 @@
     "ClassSize": "0xc0",
     "Attributes": [
       {
-        "Name": "pad0xc0_T25T1[0xc0]",
+        "Name": "pad0xc0_JDK0X[0xc0]",
         "Type": "char",
         "Size": "0xc0",
         "Offset": "0x98"
       }
     ]
   },
-  "TaleQuestTornMapFunctionLibrary": {
-    "Super": "TaleQuestFunctionStepLibrary",
-    "FullSize": "0x180",
-    "InheritedSize": "0x180",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AddMarkToTornMapStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0xc0",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x28",
+  "TaleQuestAddLocationMapStepDesc": {
+    "Super": "TaleQuestMapStepDescBase",
+    "FullSize": "0x148",
+    "InheritedSize": "0x80",
+    "ClassSize": "0xc8",
     "Attributes": [
       {
-        "Name": "pad0x20_8VUWK[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "MapMark",
-        "Type": "class UClass*",
+        "Name": "MapID",
+        "Type": "struct FName",
         "Size": "0x8",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "NumberOfChests",
+        "Type": "struct QuestVariableInt",
+        "Size": "0x30",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "RegionMapData",
+        "Type": "struct QuestVariableDataAsset",
+        "Size": "0x30",
         "Offset": "0xb8"
+      },
+      {
+        "Name": "VaultData",
+        "Type": "struct QuestVariableDataAsset",
+        "Size": "0x30",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "MapParams",
+        "Type": "struct QuestVariableDataAsset",
+        "Size": "0x30",
+        "Offset": "0x118"
       }
     ]
   },
-  "TaleQuestMapStepDescBase": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x80",
+  "TaleQuestAddTornMapStepDesc": {
+    "Super": "TaleQuestMapStepDescBase",
+    "FullSize": "0x140",
     "InheritedSize": "0x80",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AddMarkToTornMapStepDescBase": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x60",
+    "ClassSize": "0xc0",
     "Attributes": [
       {
-        "Name": "MapID",
-        "Type": "struct QuestVariableGuid",
+        "Name": "IslandName",
+        "Type": "struct QuestVariableName",
         "Size": "0x30",
         "Offset": "0x80"
       },
       {
-        "Name": "MapMark",
-        "Type": "struct TaleQuestVariableMapMarkType",
-        "Size": "0x30",
-        "Offset": "0xb0"
-      }
-    ]
-  },
-  "GetNumberOfCollectedTornMapPiecesStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xe0",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "MapID",
-        "Type": "struct QuestVariableGuid",
-        "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "NumPieces",
+        "Name": "NumberOfPieces",
         "Type": "struct QuestVariableInt",
         "Size": "0x30",
         "Offset": "0xb0"
+      },
+      {
+        "Name": "MapParams",
+        "Type": "struct QuestVariableDataAsset",
+        "Size": "0x30",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "MapID",
+        "Type": "struct QuestVariableGuid",
+        "Size": "0x30",
+        "Offset": "0x110"
       }
     ]
   },
-  "TaleQuestCustomMapFunctionLibrary": {
-    "Super": "TaleQuestFunctionStepLibrary",
-    "FullSize": "0x1a0",
-    "InheritedSize": "0x180",
+  "RegionIslandFilteredSelectionStrategy": {
+    "Super": "RegionIslandSelectionStrategyBase",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "IslandTypes",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "UseMaxDistance",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x3_8CKCE[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x39"
+      },
+      {
+        "Name": "MaxDistanceFromStartingIsland",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      }
+    ]
+  },
+  "RegionIslandWayfinderSelectionStrategy": {
+    "Super": "RegionIslandSelectionStrategyBase",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "QuestIconOverride",
-        "Type": "byte",
+        "Name": "IslandTypes",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "EnsureKeyIslandIsLarge",
+        "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x180"
+        "Offset": "0x38"
       },
       {
-        "Name": "pad0x1f_TCGHR[0x1f]",
+        "Name": "pad0x3_IV0ON[0x3]",
         "Type": "char",
-        "Size": "0x1f",
-        "Offset": "0x181"
-      }
-    ]
-  },
-  "TaleQuestTriggerNamedChecklistEventStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x98",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "SelectWayfinderIslandsFromRegionStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x130",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x98",
-    "Attributes": [
-      {
-        "Name": "RegionData",
-        "Type": "class RegionMapDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x98"
+        "Size": "0x3",
+        "Offset": "0x39"
       },
       {
-        "Name": "SelectionStrategy",
-        "Type": "class RegionIslandWayfinderSelectionStrategy*",
-        "Size": "0x8",
-        "Offset": "0xa0"
+        "Name": "StartingIslandMinDistanceFromKeyIsland",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c"
       },
       {
         "Name": "VaultActor",
         "Type": "class Actor*",
         "Size": "0x8",
-        "Offset": "0xa8"
-      },
-      {
-        "Name": "pad0x80_T7FRM[0x80]",
-        "Type": "char",
-        "Size": "0x80",
-        "Offset": "0xb0"
+        "Offset": "0x40"
       }
     ]
   },
-  "GetNumberOfCollectedTornMapPiecesStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0xd8",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "pad0x40_XP797[0x40]",
-        "Type": "char",
-        "Size": "0x40",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "RegionIslandSelectionStrategyBase": {
-    "Super": "Object",
+  "RegionIslandRandomSelectionStrategy": {
+    "Super": "RegionIslandSelectionStrategyBase",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "AddMarkToTornMapAtActorLocationStepDesc": {
+    "Super": "AddMarkToTornMapStepDescBase",
+    "FullSize": "0x110",
+    "InheritedSize": "0xe0",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "MarkLocation",
+        "Type": "struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0xe0"
+      }
+    ]
   },
   "TaleQuestLocationMapChestFoundStepDesc": {
     "Super": "TaleQuestMapStepDescBase",
@@ -432,167 +593,6 @@
         "Type": "class ClueSiteTypeToMapMarkIdDataAsset*",
         "Size": "0x8",
         "Offset": "0x110"
-      }
-    ]
-  },
-  "TaleQuestAddTornMapStepDesc": {
-    "Super": "TaleQuestMapStepDescBase",
-    "FullSize": "0x140",
-    "InheritedSize": "0x80",
-    "ClassSize": "0xc0",
-    "Attributes": [
-      {
-        "Name": "IslandName",
-        "Type": "struct QuestVariableName",
-        "Size": "0x30",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "NumberOfPieces",
-        "Type": "struct QuestVariableInt",
-        "Size": "0x30",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "MapParams",
-        "Type": "struct QuestVariableDataAsset",
-        "Size": "0x30",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "MapID",
-        "Type": "struct QuestVariableGuid",
-        "Size": "0x30",
-        "Offset": "0x110"
-      }
-    ]
-  },
-  "AddMarkToTornMapAtActorLocationStepDesc": {
-    "Super": "AddMarkToTornMapStepDescBase",
-    "FullSize": "0x110",
-    "InheritedSize": "0xe0",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "MarkLocation",
-        "Type": "struct QuestVariableActor",
-        "Size": "0x30",
-        "Offset": "0xe0"
-      }
-    ]
-  },
-  "RegionIslandRandomSelectionStrategy": {
-    "Super": "RegionIslandSelectionStrategyBase",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RegionIslandWayfinderSelectionStrategy": {
-    "Super": "RegionIslandSelectionStrategyBase",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "IslandTypes",
-        "Type": "TArray<char>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "EnsureKeyIslandIsLarge",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x3_W6CWF[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x39"
-      },
-      {
-        "Name": "StartingIslandMinDistanceFromKeyIsland",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "VaultActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "TaleQuestAddLocationMapStepDesc": {
-    "Super": "TaleQuestMapStepDescBase",
-    "FullSize": "0x148",
-    "InheritedSize": "0x80",
-    "ClassSize": "0xc8",
-    "Attributes": [
-      {
-        "Name": "MapID",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "NumberOfChests",
-        "Type": "struct QuestVariableInt",
-        "Size": "0x30",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "RegionMapData",
-        "Type": "struct QuestVariableDataAsset",
-        "Size": "0x30",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "VaultData",
-        "Type": "struct QuestVariableDataAsset",
-        "Size": "0x30",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "MapParams",
-        "Type": "struct QuestVariableDataAsset",
-        "Size": "0x30",
-        "Offset": "0x118"
-      }
-    ]
-  },
-  "RegionIslandFilteredSelectionStrategy": {
-    "Super": "RegionIslandSelectionStrategyBase",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "IslandTypes",
-        "Type": "TArray<char>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "UseMaxDistance",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x3_C4160[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x39"
-      },
-      {
-        "Name": "MaxDistanceFromStartingIsland",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3c"
       }
     ]
   },

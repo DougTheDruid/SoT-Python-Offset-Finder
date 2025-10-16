@@ -8,7 +8,7 @@ class SeasonalEventMemoryReservationActor: public Actor
 {
 public:
 	int                                                          ReservedByteSize;                                  // 0x3a0(0x4)
-	char                                                         pad0xc_J519O[0xc];                                 // 0x3a4(0xc)
+	char                                                         pad0xc_LWEOH[0xc];                                 // 0x3a4(0xc)
 };
 
 

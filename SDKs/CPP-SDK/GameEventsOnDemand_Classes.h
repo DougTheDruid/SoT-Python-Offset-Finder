@@ -10,9 +10,9 @@
 class GameEventsOnDemandAvailabilityService: public Object
 {
 public:
-	char                                                         pad0xd0_K9QY4[0xd0];                               // 0x28(0xd0)
+	char                                                         pad0xd0_SSR5R[0xd0];                               // 0x28(0xd0)
 	class World*                                                 World;                                             // 0xf8(0x8)
-	char                                                         pad0x18_UCR4M[0x18];                               // 0x100(0x18)
+	char                                                         pad0x18_ZF4GR[0x18];                               // 0x100(0x18)
 };
 
 
@@ -20,14 +20,14 @@ public:
 class GameEventsOnDemandLoserTunnelService: public Actor
 {
 public:
-	char                                                         pad0x8_IVCSM[0x8];                                 // 0x3a0(0x8)
+	char                                                         pad0x8_E9A5P[0x8];                                 // 0x3a0(0x8)
 	class World*                                                 World;                                             // 0x3a8(0x8)
-	char                                                         pad0x58_W91ES[0x58];                               // 0x3b0(0x58)
+	char                                                         pad0x58_HZW9Q[0x58];                               // 0x3b0(0x58)
 	class VoyageDescDataAsset*                                   LoserTunnelVoyageDescDataAsset;                    // 0x408(0x8)
-	char                                                         pad0x50_2TT5Z[0x50];                               // 0x410(0x50)
+	char                                                         pad0x50_F8BI1[0x50];                               // 0x410(0x50)
 	TArray<struct GameEventsOnDemandLoserTunnelCrewData>         TrackedCrews;                                      // 0x460(0x10)
 	struct FName                                                 TemporaryBannerTag;                                // 0x470(0x8)
-	char                                                         pad0x68_GMBJI[0x68];                               // 0x478(0x68)
+	char                                                         pad0x68_W947G[0x68];                               // 0x478(0x68)
 };
 
 

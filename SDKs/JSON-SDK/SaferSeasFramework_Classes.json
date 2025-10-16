@@ -1,4 +1,18 @@
 {
+  "SaferSeasSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "SaferSeasBlacklistAsset",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
   "SaferSeasDataAssetProviderServiceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
@@ -20,20 +34,6 @@
       }
     ]
   },
-  "SaferSeasSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x48",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "SaferSeasBlacklistAsset",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
   "SaferSeasDataAssetProviderService": {
     "Super": "Actor",
     "FullSize": "0x3c8",
@@ -41,7 +41,7 @@
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x8_GFMV8[0x8]",
+        "Name": "pad0x8_LA1ZX[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3a0"
@@ -53,7 +53,7 @@
         "Offset": "0x3a8"
       },
       {
-        "Name": "pad0x18_VGHW0[0x18]",
+        "Name": "pad0x18_RRDMT[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x3b0"

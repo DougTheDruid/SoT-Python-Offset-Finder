@@ -1,50 +1,4 @@
 {
-  "CordRenderInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "CordRenderComponent": {
-    "Super": "StaticMeshComponent",
-    "FullSize": "0x640",
-    "InheritedSize": "0x600",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "pad0x8_MUSVX[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x600"
-      },
-      {
-        "Name": "CordMaterials",
-        "Type": "TArray<class MaterialInstanceDynamic*>",
-        "Size": "0x10",
-        "Offset": "0x608"
-      },
-      {
-        "Name": "ThicknessCm",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x618"
-      },
-      {
-        "Name": "pad0x24_IMZK2[0x24]",
-        "Type": "char",
-        "Size": "0x24",
-        "Offset": "0x61c"
-      }
-    ]
-  },
-  "ShouldTetherInWorldSpaceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "TetherCustomisationComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x118",
@@ -52,7 +6,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x8_4HEOI[0x8]",
+        "Name": "pad0x8_UITJW[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -64,7 +18,7 @@
         "Offset": "0xc0"
       },
       {
-        "Name": "pad0x48_4VPYU[0x48]",
+        "Name": "pad0x48_WWIHM[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0xc8"
@@ -88,26 +42,12 @@
         "Offset": "0x115"
       },
       {
-        "Name": "pad0x2_THW8C[0x2]",
+        "Name": "pad0x2_EV6ES[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x116"
       }
     ]
-  },
-  "TetherConstraintInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TetherQueriableInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "TetherInWorldSpaceComponent": {
     "Super": "ActorComponent",
@@ -116,72 +56,10 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_TC2SJ[0x8]",
+        "Name": "pad0x8_Y88C9[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
-      }
-    ]
-  },
-  "DistanceJointComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x140",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x88",
-    "Attributes": [
-      {
-        "Name": "pad0x70_QAFEX[0x70]",
-        "Type": "char",
-        "Size": "0x70",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "MinDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x128"
-      },
-      {
-        "Name": "MaxDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x12c"
-      },
-      {
-        "Name": "SpringStiffness",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x130"
-      },
-      {
-        "Name": "SpringDamping",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x134"
-      },
-      {
-        "Name": "ApplyAsSpring",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "EnforceMinDistance",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x139"
-      },
-      {
-        "Name": "EnforceMaxDistance",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x13a"
-      },
-      {
-        "Name": "pad0x5_1KPV0[0x5]",
-        "Type": "char",
-        "Size": "0x5",
-        "Offset": "0x13b"
       }
     ]
   },
@@ -192,7 +70,7 @@
     "ClassSize": "0x140",
     "Attributes": [
       {
-        "Name": "pad0xf8_1HIHU[0xf8]",
+        "Name": "pad0xf8_OFWKY[0xf8]",
         "Type": "char",
         "Size": "0xf8",
         "Offset": "0x3a0"
@@ -246,7 +124,7 @@
         "Offset": "0x4cc"
       },
       {
-        "Name": "pad0x8_T2P0L[0x8]",
+        "Name": "pad0x8_4YIWY[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x4d0"
@@ -282,10 +160,118 @@
         "Offset": "0x4dc"
       },
       {
-        "Name": "pad0x3_VLX6U[0x3]",
+        "Name": "pad0x3_IPUGU[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x4dd"
+      }
+    ]
+  },
+  "DistanceJointComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x140",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "pad0x70_ZI1VK[0x70]",
+        "Type": "char",
+        "Size": "0x70",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "MinDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "MaxDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x12c"
+      },
+      {
+        "Name": "SpringStiffness",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x130"
+      },
+      {
+        "Name": "SpringDamping",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x134"
+      },
+      {
+        "Name": "ApplyAsSpring",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "EnforceMinDistance",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x139"
+      },
+      {
+        "Name": "EnforceMaxDistance",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x13a"
+      },
+      {
+        "Name": "pad0x5_UMBFH[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0x13b"
+      }
+    ]
+  },
+  "CordRenderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TetherQueriableInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CordRenderComponent": {
+    "Super": "StaticMeshComponent",
+    "FullSize": "0x640",
+    "InheritedSize": "0x600",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "pad0x8_ZSK0Z[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x600"
+      },
+      {
+        "Name": "CordMaterials",
+        "Type": "TArray<class MaterialInstanceDynamic*>",
+        "Size": "0x10",
+        "Offset": "0x608"
+      },
+      {
+        "Name": "ThicknessCm",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x618"
+      },
+      {
+        "Name": "pad0x24_KL9JM[0x24]",
+        "Type": "char",
+        "Size": "0x24",
+        "Offset": "0x61c"
       }
     ]
   },
@@ -295,6 +281,58 @@
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "ShouldTetherInWorldSpaceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TetherConstraintInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DynamicCordRenderComponent": {
+    "Super": "CordRenderComponent",
+    "FullSize": "0x6a0",
+    "InheritedSize": "0x640",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "BoundsPadding",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x638"
+      },
+      {
+        "Name": "pad0x4_8B14N[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x63c"
+      },
+      {
+        "Name": "EndPointA",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x640"
+      },
+      {
+        "Name": "EndPointB",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x648"
+      },
+      {
+        "Name": "pad0x50_7ZS4P[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x650"
+      }
+    ]
   },
   "TetherCustomisationInterface": {
     "Super": "TetherQueriableInterface",
@@ -334,48 +372,10 @@
         "Offset": "0x650"
       },
       {
-        "Name": "pad0xc_KPVV4[0xc]",
+        "Name": "pad0xc_813NQ[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x654"
-      }
-    ]
-  },
-  "DynamicCordRenderComponent": {
-    "Super": "CordRenderComponent",
-    "FullSize": "0x6a0",
-    "InheritedSize": "0x640",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "BoundsPadding",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x638"
-      },
-      {
-        "Name": "pad0x4_K17QR[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x63c"
-      },
-      {
-        "Name": "EndPointA",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x640"
-      },
-      {
-        "Name": "EndPointB",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x648"
-      },
-      {
-        "Name": "pad0x50_FW64C[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x650"
       }
     ]
   },

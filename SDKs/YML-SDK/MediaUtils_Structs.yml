@@ -6,7 +6,7 @@ MediaPlayerOptions:
     Offset: '0x0'
     Size: '0x1c'
     Type: struct MediaPlayerTrackOptions
-  - Name: pad0x4_ECYNB[0x4]
+  - Name: pad0x4_PXONT[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -22,7 +22,7 @@ MediaPlayerOptions:
     Offset: '0x29'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_OBVGT[0x6]
+  - Name: pad0x6_41NBJ[0x6]
     Offset: '0x2a'
     Size: '0x6'
     Type: char

@@ -4,18 +4,18 @@
 // https://github.com/DougTheDruid
 
 // Size 0x1
-struct EventFireballCannonIsReadyToFire
+struct EventFireballCannonHasStartedToCooldown
 {
 public:
-	char                                                         pad0x1_0A0Q8[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_MOWDN[0x1];                                 // 0x0(0x1)
 };
 
 
 // Size 0x1
-struct EventFireballCannonHasStartedToCooldown
+struct EventFireballCannonIsReadyToFire
 {
 public:
-	char                                                         pad0x1_Y8WBK[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_7F44E[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -24,16 +24,8 @@ struct EventFireballCannonFiringStateChanged
 {
 public:
 	char                                                         FireballCannonFiringState;                         // 0x0(0x1)
-	char                                                         pad0x7_DA5SN[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_5PPAE[0x7];                                 // 0x1(0x7)
 	class Object*                                                FireballCannonObject;                              // 0x8(0x8)
-};
-
-
-// Size 0x1
-struct EventShootFireballCannon
-{
-public:
-	char                                                         pad0x1_1531Z[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -55,6 +47,14 @@ public:
 	struct Vector                                                FireFromLocation;                                  // 0x0(0xc)
 	struct Rotator                                               FireFromRotation;                                  // 0xc(0xc)
 	float                                                        FireDelay;                                         // 0x18(0x4)
+};
+
+
+// Size 0x1
+struct EventShootFireballCannon
+{
+public:
+	char                                                         pad0x1_XQOTQ[0x1];                                 // 0x0(0x1)
 };
 
 

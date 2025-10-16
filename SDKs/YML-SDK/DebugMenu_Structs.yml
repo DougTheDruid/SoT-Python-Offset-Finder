@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 DebugErrorHappeningEvent:
   Attributes:
-  - Name: pad0x1_8CK9W[0x1]
+  - Name: pad0x1_B69B5[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -29,7 +29,7 @@ DebugMenuButtonShortcut:
     Offset: '0x34'
     Size: '0x1'
     Type: bool
-  - Name: pad0xb_MPDB8[0xb]
+  - Name: pad0xb_XCCJ2[0xb]
     Offset: '0x35'
     Size: '0xb'
     Type: char
@@ -60,7 +60,7 @@ DebugMenuDataAssetEntry:
     Offset: '0x32'
     Size: '0x1'
     Type: bool
-  - Name: pad0x5_FHQDE[0x5]
+  - Name: pad0x5_KZK7M[0x5]
     Offset: '0x33'
     Size: '0x5'
     Type: char
@@ -117,7 +117,7 @@ PageResultConfig:
     Offset: '0x15'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_O1OLL[0x2]
+  - Name: pad0x2_LLHTT[0x2]
     Offset: '0x16'
     Size: '0x2'
     Type: char

@@ -1,15 +1,4 @@
 {
-  "CaptureProtocolID": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Identifier",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "CompositionGraphCapturePasses": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -25,8 +14,19 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_D2U65[0x8]",
+        "Name": "pad0x8_05UBX[0x8]",
         "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CaptureProtocolID": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Identifier",
+        "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       }
@@ -48,7 +48,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_0O4Y7[0x7]",
+        "Name": "pad0x7_9CQAM[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
@@ -78,7 +78,7 @@
         "Offset": "0x31"
       },
       {
-        "Name": "pad0x2_GQBDJ[0x2]",
+        "Name": "pad0x2_PQHU7[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x32"
@@ -96,7 +96,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x3_MLUIP[0x3]",
+        "Name": "pad0x3_1AE7S[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x39"
@@ -156,7 +156,7 @@
         "Offset": "0x4e"
       },
       {
-        "Name": "pad0x1_FLBLW[0x1]",
+        "Name": "pad0x1_YTNVU[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x4f"

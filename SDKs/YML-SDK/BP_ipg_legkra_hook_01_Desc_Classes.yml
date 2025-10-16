@@ -2,11 +2,11 @@
 # https://github.com/DougTheDruid
 BP_ipg_legkra_hook_01_Desc_C:
   Attributes:
-  - Name: pad0x3f50e79f_AQWQ5[0x3f50e79f]
+  - Name: pad0x1485_AF3P4[0x1485]
     Offset: '0x0'
-    Size: '0x3f50e79f'
+    Size: '0x1485'
     Type: char
-  ClassSize: '0x3f50e79f'
-  FullSize: '0x3f50e79f'
+  ClassSize: '0x1485'
+  FullSize: '0x1485'
   InheritedSize: '0x0'
-  Super: None
+  Super: SimpleMoveToActor

@@ -20,7 +20,7 @@
     "ClassSize": "0x78",
     "Attributes": [
       {
-        "Name": "pad0x78_NK1XP[0x78]",
+        "Name": "pad0x78_LPN33[0x78]",
         "Type": "char",
         "Size": "0x78",
         "Offset": "0x0"
@@ -38,6 +38,29 @@
       }
     ]
   },
+  "GameplayTagContainer": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x8_DF380[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "GameplayTags",
+        "Type": "TArray<struct GameplayTag>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Tags",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
   "GameplayTagQuery": {
     "ClassSize": "0x48",
     "Attributes": [
@@ -48,7 +71,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_RWOAP[0x4]",
+        "Name": "pad0x4_G3TXH[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -76,29 +99,6 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x38"
-      }
-    ]
-  },
-  "GameplayTagContainer": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x8_346KA[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "GameplayTags",
-        "Type": "TArray<struct GameplayTag>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Tags",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x18"
       }
     ]
   },

@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AnalogInputId:
   Attributes:
-  - Name: pad0x10_QD46W[0x10]
+  - Name: pad0x10_E4VYD[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char
@@ -10,19 +10,9 @@ AnalogInputId:
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: Object
-NPCReceivesInputIndicatorComponent:
-  Attributes:
-  - Name: pad0x8_TU464[0x8]
-    Offset: '0xb8'
-    Size: '0x8'
-    Type: char
-  ClassSize: '0x8'
-  FullSize: '0xc0'
-  InheritedSize: '0xb8'
-  Super: ActorComponent
 NotificationInputId:
   Attributes:
-  - Name: pad0x10_LWOCI[0x10]
+  - Name: pad0x10_7CSRZ[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char
@@ -30,12 +20,6 @@ NotificationInputId:
   FullSize: '0x38'
   InheritedSize: '0x28'
   Super: Object
-OpenEscapeMenuNotificationInputId:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x38'
-  InheritedSize: '0x38'
-  Super: NotificationInputId
 ReceivesInputInterface:
   Attributes: []
   ClassSize: '0x0'

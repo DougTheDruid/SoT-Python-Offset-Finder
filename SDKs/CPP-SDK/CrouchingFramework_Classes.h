@@ -6,6 +6,27 @@
 #include "CrouchingFramework_Structs.h"
 
 
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
+class CrouchedDistanceConditionalStatsTrigger: public ConditionalStatsTriggerType
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CrouchActionStateId: public ActionStateId
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
+class IsTargetCrouchingStatCondition: public TargetedStatCondition
+{
+public:
+};
+
+
 // Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
 class CrouchDataAsset: public DataAsset
 {
@@ -19,7 +40,7 @@ public:
 	float                                                        CrouchDistanceThresholdToSendStat;                 // 0x48(0x4)
 	float                                                        NearbyPlayersRangeToSendStat;                      // 0x4c(0x4)
 	float                                                        TimeToBeNearbyPlayersToSendStat;                   // 0x50(0x4)
-	char                                                         pad0x4_4U8HM[0x4];                                 // 0x54(0x4)
+	char                                                         pad0x4_3QZ47[0x4];                                 // 0x54(0x4)
 	class MaterialInterface*                                     CrouchVignette;                                    // 0x58(0x8)
 	float                                                        MaxAnimValue;                                      // 0x60(0x4)
 	float                                                        BlurStrength;                                      // 0x64(0x4)
@@ -27,27 +48,6 @@ public:
 	float                                                        VignetteSpeedModifier;                             // 0x6c(0x4)
 	class WwiseEvent*                                            CrouchStartEvent;                                  // 0x70(0x8)
 	class WwiseEvent*                                            CrouchEndEvent;                                    // 0x78(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class IsTargetCrouchingStatCondition: public TargetedStatCondition
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class CrouchedDistanceConditionalStatsTrigger: public ConditionalStatsTriggerType
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CrouchActionStateId: public ActionStateId
-{
-public:
 };
 
 

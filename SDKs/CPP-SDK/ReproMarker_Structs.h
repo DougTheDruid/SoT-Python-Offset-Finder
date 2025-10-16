@@ -7,7 +7,7 @@
 struct ReproMarkerServiceBeginPlayTelemetryEvent
 {
 public:
-	char                                                         pad0x1_0IZ9K[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_T75GZ[0x1];                                 // 0x0(0x1)
 };
 
 

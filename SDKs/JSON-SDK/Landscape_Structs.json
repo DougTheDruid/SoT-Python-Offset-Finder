@@ -1,147 +1,4 @@
 {
-  "LayerBlendInput": {
-    "ClassSize": "0x98",
-    "Attributes": [
-      {
-        "Name": "LayerName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "BlendType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x7_TDN8Q[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x9"
-      },
-      {
-        "Name": "LayerInput",
-        "Type": "struct ExpressionInput",
-        "Size": "0x38",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "HeightInput",
-        "Type": "struct ExpressionInput",
-        "Size": "0x38",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "PreviewWeight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "ConstLayerInput",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x84"
-      },
-      {
-        "Name": "ConstHeightInput",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x90"
-      },
-      {
-        "Name": "pad0x4_JFK3L[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x94"
-      }
-    ]
-  },
-  "LandscapeWeightmapUsage": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ChannelUsage",
-        "Type": "class LandscapeComponent*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x18_J0M3M[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "LandscapeImportLayerInfo": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_0DLSV[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "LandscapeSplineConnection": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Segment",
-        "Type": "class LandscapeSplineSegment*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "End",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x7_5ITKG[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x9"
-      }
-    ]
-  },
-  "LandscapeEditorLayerSettings": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_Z3Y1I[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ForeignWorldSplineData": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_2A0CU[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ForeignControlPointData": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_RRQCO[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "LandscapeInfoLayerSettings": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -156,6 +13,41 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "WeightmapLayerAllocationInfo": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "LayerInfo",
+        "Type": "class LandscapeLayerInfoObject*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "WeightmapTextureIndex",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "WeightmapTextureChannel",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x9"
+      },
+      {
+        "Name": "GrassMapChannelIndex",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xa"
+      },
+      {
+        "Name": "pad0x5_1LFWQ[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0xb"
       }
     ]
   },
@@ -181,7 +73,7 @@
         "Offset": "0xc"
       },
       {
-        "Name": "pad0x3_FYZ16[0x3]",
+        "Name": "pad0x3_PW1SD[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xd"
@@ -217,7 +109,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x3_XRNT8[0x3]",
+        "Name": "pad0x3_CYDSP[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x21"
@@ -242,17 +134,6 @@
       }
     ]
   },
-  "GizmoSelectData": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x50_ZPFA4[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "LandscapeLayerStruct": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -264,14 +145,164 @@
       }
     ]
   },
-  "ForeignSplineSegmentData": {
+  "ForeignControlPointData": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_9INFP[0x1]",
+        "Name": "pad0x1_EUQOH[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "GizmoSelectData": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x50_XC2V6[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "LayerBlendInput": {
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Name": "LayerName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BlendType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_DBWO1[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
+      },
+      {
+        "Name": "LayerInput",
+        "Type": "struct ExpressionInput",
+        "Size": "0x38",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "HeightInput",
+        "Type": "struct ExpressionInput",
+        "Size": "0x38",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "PreviewWeight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "ConstLayerInput",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x84"
+      },
+      {
+        "Name": "ConstHeightInput",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "pad0x4_FMHSH[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x94"
+      }
+    ]
+  },
+  "LandscapeWeightmapUsage": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ChannelUsage",
+        "Type": "class LandscapeComponent*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x18_0FOKH[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "ForeignWorldSplineData": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_VR6V4[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "LandscapeSplineConnection": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Segment",
+        "Type": "class LandscapeSplineSegment*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "End",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_ZN2WJ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
+      }
+    ]
+  },
+  "LandscapeSplineSegmentConnection": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ControlPoint",
+        "Type": "class LandscapeSplineControlPoint*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TangentLen",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "SocketName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "pad0x4_3T0O3[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
       }
     ]
   },
@@ -297,7 +328,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x3_5UO7K[0x3]",
+        "Name": "pad0x3_JV3ZU[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x19"
@@ -315,7 +346,7 @@
         "Offset": "0x24"
       },
       {
-        "Name": "pad0x3_L6R5I[0x3]",
+        "Name": "pad0x3_AT404[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x25"
@@ -345,39 +376,10 @@
         "Offset": "0x36"
       },
       {
-        "Name": "pad0x1_YKX06[0x1]",
+        "Name": "pad0x1_YA62N[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x37"
-      }
-    ]
-  },
-  "LandscapeSplineSegmentConnection": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "ControlPoint",
-        "Type": "class LandscapeSplineControlPoint*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TangentLen",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "SocketName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "pad0x4_IUPVZ[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x14"
       }
     ]
   },
@@ -445,38 +447,36 @@
       }
     ]
   },
-  "WeightmapLayerAllocationInfo": {
-    "ClassSize": "0x10",
+  "LandscapeEditorLayerSettings": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "LayerInfo",
-        "Type": "class LandscapeLayerInfoObject*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "WeightmapTextureIndex",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "WeightmapTextureChannel",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x9"
-      },
-      {
-        "Name": "GrassMapChannelIndex",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xa"
-      },
-      {
-        "Name": "pad0x5_KC8UR[0x5]",
+        "Name": "pad0x1_H7OIB[0x1]",
         "Type": "char",
-        "Size": "0x5",
-        "Offset": "0xb"
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ForeignSplineSegmentData": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_ZLUPS[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "LandscapeImportLayerInfo": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_OF1AK[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },

@@ -1,6 +1,29 @@
 {
-  "DeployableDeployedTelemetryEvent": {
-    "ClassSize": "0x1c",
+  "UndeployActionRuleVerbiage": {
+    "ClassSize": "0xa8",
+    "Attributes": [
+      {
+        "Name": "PlayerIsDockedVerbiage",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "OverheatedVerbiage",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "CanUndeployVerbiage",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x70"
+      }
+    ]
+  },
+  "FailedDeploymentTelemetryEvent": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "DeployableID",
@@ -12,7 +35,7 @@
         "Name": "Location",
         "Type": "struct Vector",
         "Size": "0xc",
-        "Offset": "0x10"
+        "Offset": "0x14"
       }
     ]
   },
@@ -87,29 +110,6 @@
       }
     ]
   },
-  "UndeployActionRuleVerbiage": {
-    "ClassSize": "0xa8",
-    "Attributes": [
-      {
-        "Name": "PlayerIsDockedVerbiage",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "OverheatedVerbiage",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "CanUndeployVerbiage",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x70"
-      }
-    ]
-  },
   "UndeployableDeployedTelemetryEvent": {
     "ClassSize": "0x1c",
     "Attributes": [
@@ -127,8 +127,8 @@
       }
     ]
   },
-  "FailedDeploymentTelemetryEvent": {
-    "ClassSize": "0x20",
+  "DeployableDeployedTelemetryEvent": {
+    "ClassSize": "0x1c",
     "Attributes": [
       {
         "Name": "DeployableID",
@@ -140,7 +140,7 @@
         "Name": "Location",
         "Type": "struct Vector",
         "Size": "0xc",
-        "Offset": "0x14"
+        "Offset": "0x10"
       }
     ]
   },

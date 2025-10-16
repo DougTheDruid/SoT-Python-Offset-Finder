@@ -8,7 +8,7 @@ struct EmissaryLevelIncreaseOverrideData
 {
 public:
 	bool                                                         EnableEmissaryLevelIncreaseOverride;               // 0x0(0x1)
-	char                                                         pad0x3_Y9P9J[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_192MJ[0x3];                                 // 0x1(0x3)
 	int                                                          CustomEmissaryLevelIncrease;                       // 0x4(0x4)
 };
 
@@ -19,7 +19,7 @@ struct PerComanyItemQualityEntry
 public:
 	class UClass*                                                Company;                                           // 0x0(0x8)
 	char                                                         Quality;                                           // 0x8(0x1)
-	char                                                         pad0x7_M43NZ[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_K2YES[0x7];                                 // 0x9(0x7)
 };
 
 
@@ -33,7 +33,7 @@ public:
 	char                                                         IsStolen;                                          // 0x3(0x1)
 	char                                                         QueryReason;                                       // 0x4(0x1)
 	char                                                         QualityLevel;                                      // 0x5(0x1)
-	char                                                         pad0x2_DYL8G[0x2];                                 // 0x6(0x2)
+	char                                                         pad0x2_FKSR0[0x2];                                 // 0x6(0x2)
 	struct EmissaryLevelIncreaseOverrideData                     EmissaryLevelIncreaseOverride;                     // 0x8(0x8)
 	struct FName                                                 Rarity;                                            // 0x10(0x8)
 };

@@ -1,169 +1,8 @@
 {
-  "AutomationBlueprintFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TestLevelScriptActor": {
-    "Super": "LevelScriptActor",
-    "FullSize": "0x468",
-    "InheritedSize": "0x3a8",
-    "ClassSize": "0xc0",
-    "Attributes": [
-      {
-        "Name": "pad0x8_Q6BSZ[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x3a8"
-      },
-      {
-        "Name": "Category",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x3b0"
-      },
-      {
-        "Name": "Area",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x3b1"
-      },
-      {
-        "Name": "VisualTest",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3b2"
-      },
-      {
-        "Name": "RunInEditor",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3b3"
-      },
-      {
-        "Name": "RunOnServer",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3b4"
-      },
-      {
-        "Name": "RequiresServices",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3b5"
-      },
-      {
-        "Name": "pad0x2_ODBYI[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x3b6"
-      },
-      {
-        "Name": "AdditionalMetadata",
-        "Type": "TArray<struct TestLevelMetadataEntry>",
-        "Size": "0x10",
-        "Offset": "0x3b8"
-      },
-      {
-        "Name": "CaptureType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x3c8"
-      },
-      {
-        "Name": "PlayModeOverride",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x3c9"
-      },
-      {
-        "Name": "pad0x2_CLKFF[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x3ca"
-      },
-      {
-        "Name": "TestTimeout",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3cc"
-      },
-      {
-        "Name": "TestPausedTimeout",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "pad0x4_D6YRN[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3d4"
-      },
-      {
-        "Name": "VerboseLogCategories",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x3d8"
-      },
-      {
-        "Name": "ClientsRunning",
-        "Type": "TArray<int>",
-        "Size": "0x10",
-        "Offset": "0x3e8"
-      },
-      {
-        "Name": "ClientIds",
-        "Type": "TArray<int>",
-        "Size": "0x10",
-        "Offset": "0x3f8"
-      },
-      {
-        "Name": "ClientPawns",
-        "Type": "TArray<struct ClientPawnDetails>",
-        "Size": "0x10",
-        "Offset": "0x408"
-      },
-      {
-        "Name": "SpawnedActors",
-        "Type": "TArray<class Actor*>",
-        "Size": "0x10",
-        "Offset": "0x418"
-      },
-      {
-        "Name": "NextSpawnedActorIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x428"
-      },
-      {
-        "Name": "pad0x3c_UFE4Z[0x3c]",
-        "Type": "char",
-        "Size": "0x3c",
-        "Offset": "0x42c"
-      }
-    ]
-  },
-  "TestUObject": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AggregateAssetAudit": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TestablePlayerController": {
-    "Super": "PlayerController",
-    "FullSize": "0x748",
-    "InheritedSize": "0x748",
+  "TestSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -181,20 +20,6 @@
       }
     ]
   },
-  "DummyReplicatedActor": {
-    "Super": "Actor",
-    "FullSize": "0x3a0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "OtherTestUObject": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "AutomationLatentActionCallback": {
     "Super": "Object",
     "FullSize": "0x60",
@@ -202,7 +27,7 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "pad0x38_AE4FK[0x38]",
+        "Name": "pad0x38_G3POM[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x28"
@@ -213,6 +38,27 @@
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AutomationBlueprintFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TestablePlayerController": {
+    "Super": "PlayerController",
+    "FullSize": "0x748",
+    "InheritedSize": "0x748",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TestAbstractActor": {
+    "Super": "Actor",
+    "FullSize": "0x3a0",
+    "InheritedSize": "0x3a0",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -254,31 +100,17 @@
       }
     ]
   },
-  "TestablePlayerControllerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_VBKIJ[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0xb8"
-      }
-    ]
-  },
-  "TestSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x38",
-    "InheritedSize": "0x38",
+  "DummyReplicatedActor": {
+    "Super": "Actor",
+    "FullSize": "0x3a0",
+    "InheritedSize": "0x3a0",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "MapFixtureTestGameMode": {
-    "Super": "GameMode",
-    "FullSize": "0x498",
-    "InheritedSize": "0x498",
+  "TestUObject": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -289,7 +121,188 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "TestAbstractActor": {
+  "TestLevelScriptActor": {
+    "Super": "LevelScriptActor",
+    "FullSize": "0x468",
+    "InheritedSize": "0x3a8",
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "pad0x8_VRLOX[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3a8"
+      },
+      {
+        "Name": "Category",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x3b0"
+      },
+      {
+        "Name": "Area",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x3b1"
+      },
+      {
+        "Name": "VisualTest",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3b2"
+      },
+      {
+        "Name": "RunInEditor",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3b3"
+      },
+      {
+        "Name": "RunOnServer",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3b4"
+      },
+      {
+        "Name": "RequiresServices",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3b5"
+      },
+      {
+        "Name": "RequiresVideoDecoder",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3b6"
+      },
+      {
+        "Name": "pad0x1_XF7KF[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x3b7"
+      },
+      {
+        "Name": "AdditionalMetadata",
+        "Type": "TArray<struct TestLevelMetadataEntry>",
+        "Size": "0x10",
+        "Offset": "0x3b8"
+      },
+      {
+        "Name": "CaptureType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "PlayModeOverride",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x3c9"
+      },
+      {
+        "Name": "pad0x2_XYG15[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x3ca"
+      },
+      {
+        "Name": "TestTimeout",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3cc"
+      },
+      {
+        "Name": "TestPausedTimeout",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "pad0x4_U9MD6[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3d4"
+      },
+      {
+        "Name": "VerboseLogCategories",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "ClientsRunning",
+        "Type": "TArray<int>",
+        "Size": "0x10",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "ClientIds",
+        "Type": "TArray<int>",
+        "Size": "0x10",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "ClientPawns",
+        "Type": "TArray<struct ClientPawnDetails>",
+        "Size": "0x10",
+        "Offset": "0x408"
+      },
+      {
+        "Name": "SpawnedActors",
+        "Type": "TArray<class Actor*>",
+        "Size": "0x10",
+        "Offset": "0x418"
+      },
+      {
+        "Name": "NextSpawnedActorIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x428"
+      },
+      {
+        "Name": "pad0x3c_19LV4[0x3c]",
+        "Type": "char",
+        "Size": "0x3c",
+        "Offset": "0x42c"
+      }
+    ]
+  },
+  "MapFixtureTestGameMode": {
+    "Super": "GameMode",
+    "FullSize": "0x498",
+    "InheritedSize": "0x498",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AggregateAssetAudit": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "OtherTestUObject": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TestablePlayerControllerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_T77ZN[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0xb8"
+      }
+    ]
+  },
+  "ActorThatLogsErrorWhenTicked": {
     "Super": "Actor",
     "FullSize": "0x3a0",
     "InheritedSize": "0x3a0",
@@ -300,13 +313,6 @@
     "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ActorThatLogsErrorWhenTicked": {
-    "Super": "Actor",
-    "FullSize": "0x3a0",
-    "InheritedSize": "0x3a0",
     "ClassSize": "0x0",
     "Attributes": []
   },

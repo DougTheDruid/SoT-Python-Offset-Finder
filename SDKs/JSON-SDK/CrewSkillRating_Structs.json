@@ -1,32 +1,4 @@
 {
-  "ReportMatchConclusionRequest": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "WinningUserIds",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "LosingUserIds",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "GetPvPSkillForCrewRequestModel": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CrewMemberIds",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "GetPvPSkillForCrewResponseModel": {
     "ClassSize": "0x4",
     "Attributes": [
@@ -52,6 +24,34 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x4"
+      }
+    ]
+  },
+  "GetPvPSkillForCrewRequestModel": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewMemberIds",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ReportMatchConclusionRequest": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "WinningUserIds",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "LosingUserIds",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },

@@ -1,20 +1,20 @@
 {
-  "EventFireballCannonIsReadyToFire": {
+  "EventFireballCannonHasStartedToCooldown": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_0A0Q8[0x1]",
+        "Name": "pad0x1_MOWDN[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
       }
     ]
   },
-  "EventFireballCannonHasStartedToCooldown": {
+  "EventFireballCannonIsReadyToFire": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_Y8WBK[0x1]",
+        "Name": "pad0x1_7F44E[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
@@ -31,7 +31,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_DA5SN[0x7]",
+        "Name": "pad0x7_5PPAE[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -41,17 +41,6 @@
         "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "EventShootFireballCannon": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_1531Z[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
       }
     ]
   },
@@ -104,6 +93,17 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x18"
+      }
+    ]
+  },
+  "EventShootFireballCannon": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_XQOTQ[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },

@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 MockPostPhysicsTickerComponent:
   Attributes:
-  - Name: pad0x10_BT5Y4[0x10]
+  - Name: pad0x10_RNOGT[0x10]
     Offset: '0xb8'
     Size: '0x10'
     Type: char

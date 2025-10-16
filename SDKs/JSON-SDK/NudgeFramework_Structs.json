@@ -1,4 +1,39 @@
 {
+  "TrinketNudgeProgress": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x8_PO7CR[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TrinketRoot",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x10_X7WAE[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Curve",
+        "Type": "class CurveFloat*",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x8_W2BL7[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "NudgeInterpolationParams": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -33,45 +68,10 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x7_GZRQ1[0x7]",
+        "Name": "pad0x7_CLZYC[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x19"
-      }
-    ]
-  },
-  "TrinketNudgeProgress": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x8_UDQOS[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TrinketRoot",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x10_6OZ6Z[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Curve",
-        "Type": "class CurveFloat*",
-        "Size": "0x8",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "pad0x8_TEIK7[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x28"
       }
     ]
   },

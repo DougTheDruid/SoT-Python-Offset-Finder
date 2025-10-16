@@ -7,14 +7,14 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ObjectMessagingInterface: public Interface
+class ObjectMessagingFunctions: public BlueprintFunctionLibrary
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ObjectMessagingDispatcherInterface: public Interface
+class ObjectMessagingInterface: public Interface
 {
 public:
 };
@@ -24,12 +24,12 @@ public:
 class ObjectMessagingDispatcherComponent: public ActorComponent
 {
 public:
-	char                                                         pad0xa8_NWLWS[0xa8];                               // 0xb8(0xa8)
+	char                                                         pad0xa8_DJ7D0[0xa8];                               // 0xb8(0xa8)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ObjectMessagingFunctions: public BlueprintFunctionLibrary
+class ObjectMessagingDispatcherInterface: public Interface
 {
 public:
 };

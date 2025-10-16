@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AncientTinySharkEventService:
   Attributes:
-  - Name: pad0x58_S04WS[0x58]
+  - Name: pad0x58_V39NI[0x58]
     Offset: '0x3a0'
     Size: '0x58'
     Type: char
@@ -10,7 +10,7 @@ AncientTinySharkEventService:
     Offset: '0x3f8'
     Size: '0x8'
     Type: class AncientTinySharkEventServiceParams*
-  - Name: pad0x8_1IV70[0x8]
+  - Name: pad0x8_7PI6K[0x8]
     Offset: '0x400'
     Size: '0x8'
     Type: char
@@ -22,7 +22,7 @@ AncientTinySharkEventService:
     Offset: '0x410'
     Size: '0x10'
     Type: TArray<struct AncientTinySharkSpawnParams>
-  - Name: pad0x198_KLBA0[0x198]
+  - Name: pad0x198_EKQJX[0x198]
     Offset: '0x420'
     Size: '0x198'
     Type: char
@@ -50,7 +50,7 @@ AncientTinySharkEventServiceParams:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_3G0SQ[0x7]
+  - Name: pad0x7_4FYSV[0x7]
     Offset: '0x41'
     Size: '0x7'
     Type: char

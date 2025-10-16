@@ -28,8 +28,17 @@ public:
 	struct FName                                                 ScalarParameterNameToOverride;                     // 0xb8(0x8)
 	class UClass*                                                CountType;                                         // 0xc0(0x8)
 	float                                                        MaximumCountForDynamicMaterialParameterAlphaValue; // 0xc8(0x4)
-	char                                                         pad0x4_YUWDF[0x4];                                 // 0xcc(0x4)
+	char                                                         pad0x4_Y5Z33[0x4];                                 // 0xcc(0x4)
 	TArray<class MaterialInstanceDynamic*>                       OverridenMaterials;                                // 0xd0(0x10)
+};
+
+
+// Size 0x18 (Full Size[0xd0] - InheritedSize[0xb8]
+class CountHolderComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_FBEDC[0x8];                                 // 0xb8(0x8)
+	TArray<struct CountHolder>                                   CountHolders;                                      // 0xc0(0x10)
 };
 
 
@@ -38,17 +47,8 @@ class IsCountAmountMetStatCondition: public TargetedStatCondition
 {
 public:
 	int                                                          CountAmount;                                       // 0x30(0x4)
-	char                                                         pad0x4_V1M1R[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_OXJHE[0x4];                                 // 0x34(0x4)
 	class UClass*                                                CountType;                                         // 0x38(0x8)
-};
-
-
-// Size 0x18 (Full Size[0xd0] - InheritedSize[0xb8]
-class CountHolderComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_CFST3[0x8];                                 // 0xb8(0x8)
-	TArray<struct CountHolder>                                   CountHolders;                                      // 0xc0(0x10)
 };
 
 

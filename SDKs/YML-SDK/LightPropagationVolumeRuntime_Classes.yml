@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 LightPropagationVolumeBlendable:
   Attributes:
-  - Name: pad0x8_EJN0P[0x8]
+  - Name: pad0x8_2B5S9[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
@@ -14,7 +14,7 @@ LightPropagationVolumeBlendable:
     Offset: '0xa0'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_EVZB0[0xc]
+  - Name: pad0xc_3Q34A[0xc]
     Offset: '0xa4'
     Size: '0xc'
     Type: char

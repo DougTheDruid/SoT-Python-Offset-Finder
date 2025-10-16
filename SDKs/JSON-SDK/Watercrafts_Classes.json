@@ -1,57 +1,206 @@
 {
-  "ScrapeableDamageDataAsset": {
+  "RowboatCustomizationLoadoutInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestSinkWatercraftStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Watercraft",
+        "Type": "struct QuestVariableWatercraft",
+        "Size": "0x30",
+        "Offset": "0x80"
+      }
+    ]
+  },
+  "WatercraftBlueprintFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RowboatDestroyedConditionalStatTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CheckRowboatLiveriesStatCondition": {
+    "Super": "StatCondition",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_LWUD7[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "RowboatAudioComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x4b0",
+    "InheritedSize": "0x2d0",
+    "ClassSize": "0x1e0",
+    "Attributes": [
+      {
+        "Name": "Params",
+        "Type": "class RowboatAudioComponentParams*",
+        "Size": "0x8",
+        "Offset": "0x2d0"
+      },
+      {
+        "Name": "ParentRowboat",
+        "Type": "class Rowboat*",
+        "Size": "0x8",
+        "Offset": "0x2d8"
+      },
+      {
+        "Name": "pad0x1d0_JO8B9[0x1d0]",
+        "Type": "char",
+        "Size": "0x1d0",
+        "Offset": "0x2e0"
+      }
+    ]
+  },
+  "RowboatLiveryDesc": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "RowboatDescDataAsset",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      }
+    ]
+  },
+  "RowboatOarsLeftForwardDeactivatedNotificationInputId": {
+    "Super": "NotificationInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ScrapeableInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WatercraftServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RowingInputComponent": {
+    "Super": "LookAtOffsetInputComponent",
+    "FullSize": "0x298",
+    "InheritedSize": "0x290",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "TargetOars",
+        "Type": "class RowingSeat*",
+        "Size": "0x8",
+        "Offset": "0x290"
+      }
+    ]
+  },
+  "ItemProxyWatercraftTrackerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x150",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Name": "pad0x8_13POB[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "WatercraftTrackingData",
+        "Type": "class ItemProxyWatercraftTrackerComponentDataAsset*",
+        "Size": "0x8",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "CurrentWatercraft",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "pad0x80_BS2T7[0x80]",
+        "Type": "char",
+        "Size": "0x80",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "ItemProxyWatercraftTrackerComponentDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "DamageSpeedParams",
-        "Type": "TArray<struct ScrapeableDamageSpeedEntry>",
+        "Name": "WatercraftTypes",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x28"
       }
     ]
   },
-  "TaleQuestWatercraftService": {
-    "Super": "TaleQuestService",
-    "FullSize": "0x88",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x28_S1ZOA[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x60"
-      }
-    ]
+  "RowboatOarsLeftBrakingDeactivatedNotificationInputId": {
+    "Super": "NotificationInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
-  "RowboatDescDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x48",
+  "RowboatLiveryPicker": {
+    "Super": "Object",
+    "FullSize": "0x28",
     "InheritedSize": "0x28",
-    "ClassSize": "0x20",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RowboatSpawnParamsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "PartDesc",
-        "Type": "struct PartDesc",
-        "Size": "0x20",
+        "Name": "RowboatTypes",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
         "Offset": "0x28"
       }
     ]
   },
-  "RowboatTypeCategory": {
-    "Super": "CategoryBase",
-    "FullSize": "0x88",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ControllableOarsInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
+  "TaleQuestSpawnWatercraftStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -75,6 +224,26 @@
       }
     ]
   },
+  "WatercraftTrackerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x8_QKE3Y[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "CurrentWatercrafts",
+        "Type": "TArray<class Actor*>",
+        "Size": "0x10",
+        "Offset": "0xc0"
+      }
+    ]
+  },
   "Watercraft": {
     "Super": "Actor",
     "FullSize": "0x728",
@@ -82,7 +251,7 @@
     "ClassSize": "0x388",
     "Attributes": [
       {
-        "Name": "pad0x38_B6VNP[0x38]",
+        "Name": "pad0x38_LPH0B[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x3a0"
@@ -100,7 +269,7 @@
         "Offset": "0x3e0"
       },
       {
-        "Name": "pad0x4_OAUKB[0x4]",
+        "Name": "pad0x4_A15IW[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3ec"
@@ -166,7 +335,7 @@
         "Offset": "0x4a0"
       },
       {
-        "Name": "pad0x3c_36KBE[0x3c]",
+        "Name": "pad0x3c_VUSG9[0x3c]",
         "Type": "char",
         "Size": "0x3c",
         "Offset": "0x4bc"
@@ -220,114 +389,25 @@
         "Offset": "0x573"
       },
       {
-        "Name": "pad0x4_DG0VF[0x4]",
+        "Name": "pad0x4_3YY9O[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x574"
       },
       {
-        "Name": "pad0x1b0_JCB7N[0x1b0]",
+        "Name": "pad0x1b0_XAVAK[0x1b0]",
         "Type": "char",
         "Size": "0x1b0",
         "Offset": "0x578"
       }
     ]
   },
-  "RowboatDockedToShipConditionalStatTrigger": {
-    "Super": "ConditionalStatsTriggerType",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RowboatOarsLeftBrakingDeactivatedNotificationInputId": {
-    "Super": "NotificationInputId",
-    "FullSize": "0x38",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RowboatOarsLeftForwardNotificationInputId": {
-    "Super": "NotificationInputId",
-    "FullSize": "0x38",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TaleQuestSinkWatercraftStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x98",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RowboatDestroyedConditionalStatTrigger": {
-    "Super": "ConditionalStatsTriggerType",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RowboatOarsRightBrakingDeactivatedNotificationInputId": {
-    "Super": "NotificationInputId",
-    "FullSize": "0x38",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RowboatLiveryCategory": {
-    "Super": "CategoryBase",
-    "FullSize": "0x88",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TaleQuestWatercraftServiceDesc": {
-    "Super": "TaleQuestServiceDesc",
+  "ControllableOarsInterface": {
+    "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "RowingInputComponent": {
-    "Super": "LookAtOffsetInputComponent",
-    "FullSize": "0x298",
-    "InheritedSize": "0x290",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "TargetOars",
-        "Type": "class RowingSeat*",
-        "Size": "0x8",
-        "Offset": "0x290"
-      }
-    ]
-  },
-  "StorageSeat": {
-    "Super": "Seat",
-    "FullSize": "0x6c8",
-    "InheritedSize": "0x698",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "StorageInteractionInput",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x698"
-      },
-      {
-        "Name": "StorageContainerComponent",
-        "Type": "class StorageContainerComponent*",
-        "Size": "0x8",
-        "Offset": "0x6a0"
-      },
-      {
-        "Name": "pad0x20_OJG0U[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x6a8"
-      }
-    ]
   },
   "ScrapeableComponent": {
     "Super": "ActorComponent",
@@ -336,7 +416,7 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x8_VYHML[0x8]",
+        "Name": "pad0x8_PLOTO[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -348,7 +428,7 @@
         "Offset": "0xc0"
       },
       {
-        "Name": "pad0x4_TUOVG[0x4]",
+        "Name": "pad0x4_G3GRQ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc4"
@@ -379,12 +459,33 @@
       }
     ]
   },
-  "TaleQuestSpawnWatercraftStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x98",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "TaleQuestWatercraftService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0x88",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x28_3Q3QT[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "ScrapeableDamageDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "DamageSpeedParams",
+        "Type": "TArray<struct ScrapeableDamageSpeedEntry>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
   },
   "RowboatOarsRightForwardDeactivatedNotificationInputId": {
     "Super": "NotificationInputId",
@@ -393,7 +494,61 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "RowboatOarsLeftForwardDeactivatedNotificationInputId": {
+  "StorageSeat": {
+    "Super": "Seat",
+    "FullSize": "0x6c8",
+    "InheritedSize": "0x698",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "StorageInteractionInput",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x698"
+      },
+      {
+        "Name": "StorageContainerComponent",
+        "Type": "class StorageContainerComponent*",
+        "Size": "0x8",
+        "Offset": "0x6a0"
+      },
+      {
+        "Name": "pad0x20_N3XE5[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x6a8"
+      }
+    ]
+  },
+  "RowboatLiveryCategory": {
+    "Super": "CategoryBase",
+    "FullSize": "0x88",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RowboatOarsRightBrakingDeactivatedNotificationInputId": {
+    "Super": "NotificationInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RowboatDescDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "PartDesc",
+        "Type": "struct PartDesc",
+        "Size": "0x20",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "RowboatOarsLeftForwardNotificationInputId": {
     "Super": "NotificationInputId",
     "FullSize": "0x38",
     "InheritedSize": "0x38",
@@ -437,7 +592,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_ZIHVU[0x4]",
+        "Name": "pad0x4_06DKN[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
@@ -485,7 +640,7 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x4_DISV3[0x4]",
+        "Name": "pad0x4_4O95Q[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x84"
@@ -503,7 +658,7 @@
         "Offset": "0x90"
       },
       {
-        "Name": "pad0x4_Q8P82[0x4]",
+        "Name": "pad0x4_9UBCQ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x94"
@@ -570,19 +725,19 @@
       }
     ]
   },
-  "CheckRowboatTypeStatCondition": {
-    "Super": "StatCondition",
-    "FullSize": "0x48",
+  "RowboatOarsRightBrakingActivatedNotificationInputId": {
+    "Super": "NotificationInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestWatercraftServiceDesc": {
+    "Super": "TaleQuestServiceDesc",
+    "FullSize": "0x28",
     "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_PW5N7[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x28"
-      }
-    ]
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "FakeShip": {
     "Super": "Actor",
@@ -591,7 +746,7 @@
     "ClassSize": "0x110",
     "Attributes": [
       {
-        "Name": "pad0x8_JU9Z6[0x8]",
+        "Name": "pad0x8_ZM7C5[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3a0"
@@ -603,30 +758,65 @@
         "Offset": "0x3a8"
       },
       {
-        "Name": "pad0xf8_4855Z[0xf8]",
+        "Name": "pad0xf8_ASVXP[0xf8]",
         "Type": "char",
         "Size": "0xf8",
         "Offset": "0x3b8"
       }
     ]
   },
-  "TaleQuestSpawnWatercraftStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x128",
-    "InheritedSize": "0x80",
-    "ClassSize": "0xa8",
+  "TaleQuestWatercraftFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x180",
+    "InheritedSize": "0x180",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RowboatTypeCategory": {
+    "Super": "CategoryBase",
+    "FullSize": "0x88",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RowingSeatAdaptiveTriggerComponent": {
+    "Super": "AdaptiveTriggerComponent",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xc0",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "SpawnLocation",
-        "Type": "struct QuestVariableTransform",
-        "Size": "0x38",
-        "Offset": "0x80"
+        "Name": "BothTriggers_Row",
+        "Type": "struct AdaptiveTriggerEffectMode_Feedback",
+        "Size": "0x3",
+        "Offset": "0xc0"
       },
       {
-        "Name": "Watercraft",
-        "Type": "struct QuestVariableWatercraft",
-        "Size": "0x30",
-        "Offset": "0xf8"
+        "Name": "pad0x5_INJX9[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0xc3"
+      }
+    ]
+  },
+  "TaleQuestSinkWatercraftStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WatercraftService": {
+    "Super": "Actor",
+    "FullSize": "0x3a8",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_HFSYO[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3a0"
       }
     ]
   },
@@ -637,7 +827,7 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x28_5WXG5[0x28]",
+        "Name": "pad0x28_UD04L[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0xb8"
@@ -649,75 +839,19 @@
         "Offset": "0xe0"
       },
       {
-        "Name": "pad0x18_RYZM1[0x18]",
+        "Name": "pad0x18_T10QN[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0xe8"
       }
     ]
   },
-  "RowingActionStateId": {
-    "Super": "ActionStateId",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
+  "RowboatDockedToShipConditionalStatTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "WatercraftService": {
-    "Super": "Actor",
-    "FullSize": "0x3a8",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_O2IM5[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x3a0"
-      }
-    ]
-  },
-  "RowboatSpawnParamsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "RowboatTypes",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "RowboatLiveryDesc": {
-    "Super": "EntitlementDesc",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "RowboatDescDataAsset",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0xc8"
-      }
-    ]
-  },
-  "TaleQuestSinkWatercraftStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xb0",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Watercraft",
-        "Type": "struct QuestVariableWatercraft",
-        "Size": "0x30",
-        "Offset": "0x80"
-      }
-    ]
   },
   "RowboatLiveryPickerDataAsset": {
     "Super": "DataAsset",
@@ -739,6 +873,20 @@
       }
     ]
   },
+  "CheckRowboatTypeStatCondition": {
+    "Super": "StatCondition",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_X2ORR[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "RowboatPartInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
@@ -746,10 +894,30 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "TaleQuestWatercraftFunctionLibrary": {
-    "Super": "TaleQuestFunctionStepLibrary",
-    "FullSize": "0x180",
-    "InheritedSize": "0x180",
+  "TaleQuestSpawnWatercraftStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x128",
+    "InheritedSize": "0x80",
+    "ClassSize": "0xa8",
+    "Attributes": [
+      {
+        "Name": "SpawnLocation",
+        "Type": "struct QuestVariableTransform",
+        "Size": "0x38",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "Watercraft",
+        "Type": "struct QuestVariableWatercraft",
+        "Size": "0x30",
+        "Offset": "0xf8"
+      }
+    ]
+  },
+  "RowboatOarsRightForwardNotificationInputId": {
+    "Super": "NotificationInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -760,7 +928,7 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x20_NXK1M[0x20]",
+        "Name": "pad0x20_C7NJW[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x88"
@@ -778,119 +946,10 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x4_YTVR5[0x4]",
+        "Name": "pad0x4_SZKZL[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xb4"
-      }
-    ]
-  },
-  "RowingSeatAdaptiveTriggerComponent": {
-    "Super": "AdaptiveTriggerComponent",
-    "FullSize": "0xc8",
-    "InheritedSize": "0xc0",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "BothTriggers_Row",
-        "Type": "struct AdaptiveTriggerEffectMode_Feedback",
-        "Size": "0x3",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "pad0x5_HOEJ4[0x5]",
-        "Type": "char",
-        "Size": "0x5",
-        "Offset": "0xc3"
-      }
-    ]
-  },
-  "ItemProxyWatercraftTrackerComponentDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "WatercraftTypes",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "RowboatInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ScrapeableInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "CheckRowboatLiveriesStatCondition": {
-    "Super": "StatCondition",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_S38LM[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "WatercraftServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RowboatCustomizationLoadoutInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RowboatLiveryPicker": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RowboatAudioComponent": {
-    "Super": "SceneComponent",
-    "FullSize": "0x4b0",
-    "InheritedSize": "0x2d0",
-    "ClassSize": "0x1e0",
-    "Attributes": [
-      {
-        "Name": "Params",
-        "Type": "class RowboatAudioComponentParams*",
-        "Size": "0x8",
-        "Offset": "0x2d0"
-      },
-      {
-        "Name": "ParentRowboat",
-        "Type": "class Rowboat*",
-        "Size": "0x8",
-        "Offset": "0x2d8"
-      },
-      {
-        "Name": "pad0x1d0_IHUSG[0x1d0]",
-        "Type": "char",
-        "Size": "0x1d0",
-        "Offset": "0x2e0"
       }
     ]
   },
@@ -908,32 +967,12 @@
       }
     ]
   },
-  "WatercraftBlueprintFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
+  "RowingActionStateId": {
+    "Super": "ActionStateId",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "WatercraftTrackerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x8_BG3GM[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "CurrentWatercrafts",
-        "Type": "TArray<class Actor*>",
-        "Size": "0x10",
-        "Offset": "0xc0"
-      }
-    ]
   },
   "RowboatOarsLeftBrakingActivatedNotificationInputId": {
     "Super": "NotificationInputId",
@@ -942,49 +981,10 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "RowboatOarsRightForwardNotificationInputId": {
-    "Super": "NotificationInputId",
-    "FullSize": "0x38",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ItemProxyWatercraftTrackerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x150",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x98",
-    "Attributes": [
-      {
-        "Name": "pad0x8_SP5RR[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "WatercraftTrackingData",
-        "Type": "class ItemProxyWatercraftTrackerComponentDataAsset*",
-        "Size": "0x8",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "CurrentWatercraft",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "pad0x80_VKJ7A[0x80]",
-        "Type": "char",
-        "Size": "0x80",
-        "Offset": "0xd0"
-      }
-    ]
-  },
-  "RowboatOarsRightBrakingActivatedNotificationInputId": {
-    "Super": "NotificationInputId",
-    "FullSize": "0x38",
-    "InheritedSize": "0x38",
+  "RowboatInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -995,7 +995,7 @@
     "ClassSize": "0x3c8",
     "Attributes": [
       {
-        "Name": "pad0x50_TWMQ7[0x50]",
+        "Name": "pad0x50_6MS9A[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x728"
@@ -1031,7 +1031,7 @@
         "Offset": "0x798"
       },
       {
-        "Name": "pad0x7_EVBLI[0x7]",
+        "Name": "pad0x7_P5TG7[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x799"
@@ -1085,7 +1085,7 @@
         "Offset": "0x7dc"
       },
       {
-        "Name": "pad0x4_SMHK5[0x4]",
+        "Name": "pad0x4_SNM2K[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x7e4"
@@ -1199,7 +1199,7 @@
         "Offset": "0x899"
       },
       {
-        "Name": "pad0x2_5OQMK[0x2]",
+        "Name": "pad0x2_YAY9Q[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x89a"
@@ -1223,7 +1223,7 @@
         "Offset": "0x8a4"
       },
       {
-        "Name": "pad0x1_C8C46[0x1]",
+        "Name": "pad0x1_OK6EU[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x8a5"
@@ -1235,7 +1235,7 @@
         "Offset": "0x8a6"
       },
       {
-        "Name": "pad0x1_CI4OP[0x1]",
+        "Name": "pad0x1_L19QK[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x8a7"
@@ -1265,7 +1265,7 @@
         "Offset": "0x8c0"
       },
       {
-        "Name": "pad0x3_73PBI[0x3]",
+        "Name": "pad0x3_MMBVH[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x8c1"
@@ -1307,7 +1307,7 @@
         "Offset": "0x8d8"
       },
       {
-        "Name": "pad0x4_NQVHB[0x4]",
+        "Name": "pad0x4_V2D0R[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x8dc"
@@ -1325,7 +1325,7 @@
         "Offset": "0x8f0"
       },
       {
-        "Name": "pad0x1f8_E7OBC[0x1f8]",
+        "Name": "pad0x1f8_YKBAY[0x1f8]",
         "Type": "char",
         "Size": "0x1f8",
         "Offset": "0x8f8"
@@ -1339,7 +1339,7 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x20_GXKHZ[0x20]",
+        "Name": "pad0x20_GLHJR[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x28"

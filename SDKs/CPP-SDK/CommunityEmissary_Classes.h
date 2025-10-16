@@ -6,22 +6,22 @@
 #include "CommunityEmissary_Structs.h"
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class CommunityEmissaryFlagData: public DataAsset
-{
-public:
-	TArray<struct CommunityFlagGradeData>                        GradeData;                                         // 0x28(0x10)
-};
-
-
 // Size 0x30 (Full Size[0x630] - InheritedSize[0x600]
 class CommunityEmissaryFlagComponent: public StaticMeshComponent
 {
 public:
 	class CommunityEmissaryFlagData*                             CommunityEmissaryDataAsset;                        // 0x600(0x8)
-	char                                                         pad0x18_OPQ8T[0x18];                               // 0x608(0x18)
+	char                                                         pad0x18_ZI9NI[0x18];                               // 0x608(0x18)
 	int                                                          ActiveFlagDataIndex;                               // 0x620(0x4)
-	char                                                         pad0xc_JJU4L[0xc];                                 // 0x624(0xc)
+	char                                                         pad0xc_40KP8[0xc];                                 // 0x624(0xc)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class CommunityEmissaryFlagData: public DataAsset
+{
+public:
+	TArray<struct CommunityFlagGradeData>                        GradeData;                                         // 0x28(0x10)
 };
 
 

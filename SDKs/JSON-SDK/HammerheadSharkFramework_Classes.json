@@ -1,12 +1,26 @@
 {
-  "HammerheadServiceInterface": {
+  "HammerheadSharkTreasureSite": {
+    "Super": "Actor",
+    "FullSize": "0x428",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "pad0x88_ZQ2QP[0x88]",
+        "Type": "char",
+        "Size": "0x88",
+        "Offset": "0x3a0"
+      }
+    ]
+  },
+  "HammerheadHideoutInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "HammerheadHideoutInterface": {
+  "HammerheadServiceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -20,7 +34,7 @@
     "ClassSize": "0xf0",
     "Attributes": [
       {
-        "Name": "pad0x8_M2GHS[0x8]",
+        "Name": "pad0x8_D5PCT[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3a0"
@@ -32,24 +46,10 @@
         "Offset": "0x3a8"
       },
       {
-        "Name": "pad0xe0_TKICR[0xe0]",
+        "Name": "pad0xe0_2CHPW[0xe0]",
         "Type": "char",
         "Size": "0xe0",
         "Offset": "0x3b0"
-      }
-    ]
-  },
-  "HammerheadSharkTreasureSite": {
-    "Super": "Actor",
-    "FullSize": "0x428",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x88",
-    "Attributes": [
-      {
-        "Name": "pad0x88_XDK8V[0x88]",
-        "Type": "char",
-        "Size": "0x88",
-        "Offset": "0x3a0"
       }
     ]
   },

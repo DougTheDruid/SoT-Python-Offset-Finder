@@ -13,7 +13,7 @@ ClientSettings:
   ClassSize: '0x2'
 ServerMigrationCustomMigrationSerialisationStruct:
   Attributes:
-  - Name: pad0x4_QD6AJ[0x4]
+  - Name: pad0x4_AOZ4Y[0x4]
     Offset: '0x0'
     Size: '0x4'
     Type: char
@@ -24,7 +24,7 @@ ServerMigrationSerialisationDetailsTestsUStruct:
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_YJPSM[0x8]
+  - Name: pad0x8_CRIMS[0x8]
     Offset: '0x4'
     Size: '0x8'
     Type: char
@@ -43,7 +43,7 @@ ServerSettings:
     Offset: '0x2'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_UI8TC[0x1]
+  - Name: pad0x1_G0HCE[0x1]
     Offset: '0x3'
     Size: '0x1'
     Type: char

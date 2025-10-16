@@ -1,67 +1,22 @@
 {
-  "GameEventOnDemandCrewSentToSinkingTunnel": {
+  "GameEventOnDemandFailedTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ParticipatingOnDemandCrews",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CrewFailedToJoinGameEventOnDemand": {
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "CrewId",
         "Type": "struct Guid",
         "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "GameEventOnDemandActivatedTelemetryEvent": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "NumCrewsOnDemandLimit",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "GameEventOnDemandBaseTelemetryFragmentInput": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "GameEventType",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "GameEventOnDemandId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "GameEventOnDemandBaseTelemetryFragment": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "GameEventType",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "GameEventOnDemandId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "GameEventOnDemandCrewScuttledTelemetryEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_TQY9T[0x1]",
-        "Type": "char",
-        "Size": "0x1",
         "Offset": "0x0"
       }
     ]
@@ -83,47 +38,35 @@
       }
     ]
   },
-  "GameEventOnDemandCompletedTelemetryEvent": {
-    "ClassSize": "0x30",
+  "GameEventOnDemandCrewCancelledVoyageTelemetryEvent": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "Company",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ParticipatingOnDemandCrews",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "ParticipatingCrews",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "GameEventOnDemandFailedTelemetryEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ParticipatingOnDemandCrews",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
+        "Name": "pad0x1_1E0ZU[0x1]",
+        "Type": "char",
+        "Size": "0x1",
         "Offset": "0x0"
       }
     ]
   },
-  "CrewFailedToJoinGameEventOnDemand": {
-    "ClassSize": "0x10",
+  "GameEventOnDemandCrewScuttledTelemetryEvent": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "CrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
+        "Name": "pad0x1_BDN0U[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GameEventOnDemandCrewSinkingTelemetryEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_V8BFW[0x1]",
+        "Type": "char",
+        "Size": "0x1",
         "Offset": "0x0"
       }
     ]
@@ -151,28 +94,6 @@
       }
     ]
   },
-  "GameEventOnDemandCrewCancelledVoyageTelemetryEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_4ZG14[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "GameEventOnDemandCrewSinkingTelemetryEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_2STYY[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "GameEventAvailabilityData": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -195,7 +116,7 @@
         "Offset": "0x11"
       },
       {
-        "Name": "pad0x6_LYZ5M[0x6]",
+        "Name": "pad0x6_AA7K3[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x12"
@@ -233,6 +154,85 @@
         "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "GameEventOnDemandCompletedTelemetryEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Company",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ParticipatingOnDemandCrews",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ParticipatingCrews",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "GameEventOnDemandActivatedTelemetryEvent": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "NumCrewsOnDemandLimit",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GameEventOnDemandBaseTelemetryFragmentInput": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "GameEventType",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "GameEventOnDemandId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "GameEventOnDemandCrewSentToSinkingTunnel": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GameEventOnDemandBaseTelemetryFragment": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "GameEventType",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "GameEventOnDemandId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },

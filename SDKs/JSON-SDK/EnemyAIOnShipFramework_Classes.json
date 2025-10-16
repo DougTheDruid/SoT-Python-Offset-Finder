@@ -1,11 +1,4 @@
 {
-  "EnemyAIOnShipServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "EnemyAIOnShipService": {
     "Super": "Actor",
     "FullSize": "0x448",
@@ -13,7 +6,7 @@
     "ClassSize": "0xa8",
     "Attributes": [
       {
-        "Name": "pad0x20_CKOSZ[0x20]",
+        "Name": "pad0x20_ZQOH8[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x3a0"
@@ -31,7 +24,7 @@
         "Offset": "0x3c8"
       },
       {
-        "Name": "pad0x70_GFGJ3[0x70]",
+        "Name": "pad0x70_SXGGQ[0x70]",
         "Type": "char",
         "Size": "0x70",
         "Offset": "0x3d8"
@@ -51,6 +44,13 @@
         "Offset": "0x28"
       }
     ]
+  },
+  "EnemyAIOnShipServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "EnemyAIOnShipEncounterDesc": {
     "Super": "DataAsset",
@@ -89,7 +89,7 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_AICAP[0x4]",
+        "Name": "pad0x4_PWMPC[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"

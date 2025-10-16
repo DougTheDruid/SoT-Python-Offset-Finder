@@ -8,7 +8,7 @@ HasPlayerMysteriousNotesRadialContext:
   Super: RadialContextBase
 LookingAtMysteriousNoteInputComponent:
   Attributes:
-  - Name: pad0x30_G8M8P[0x30]
+  - Name: pad0x30_C16CQ[0x30]
     Offset: '0x290'
     Size: '0x30'
     Type: char
@@ -64,7 +64,7 @@ MysteriousNotesCompletionEventsModelDataAsset:
   Super: DataAsset
 MysteriousNotesService:
   Attributes:
-  - Name: pad0x28_L27B2[0x28]
+  - Name: pad0x28_KJKXG[0x28]
     Offset: '0x3a0'
     Size: '0x28'
     Type: char
@@ -80,7 +80,7 @@ MysteriousNotesService:
     Offset: '0x3d8'
     Size: '0x8'
     Type: class MysteriousNotesCompletionEventsModelDataAsset*
-  - Name: pad0x58_R1NN0[0x58]
+  - Name: pad0x58_K14EW[0x58]
     Offset: '0x3e0'
     Size: '0x58'
     Type: char
@@ -96,7 +96,7 @@ MysteriousNotesServiceInterface:
   Super: Interface
 PlayerMysteriousNoteComponent:
   Attributes:
-  - Name: pad0x8_0JY28[0x8]
+  - Name: pad0x8_4J6QL[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -104,7 +104,7 @@ PlayerMysteriousNoteComponent:
     Offset: '0xc0'
     Size: '0x1'
     Type: bool
-  - Name: pad0xef_NLSIP[0xef]
+  - Name: pad0xef_JC9A0[0xef]
     Offset: '0xc1'
     Size: '0xef'
     Type: char
@@ -116,7 +116,7 @@ PlayerMysteriousNoteComponent:
     Offset: '0x1c8'
     Size: '0x1'
     Type: bool
-  - Name: pad0xa7_Y05B1[0xa7]
+  - Name: pad0xa7_2MHDC[0xa7]
     Offset: '0x1c9'
     Size: '0xa7'
     Type: char
@@ -132,7 +132,7 @@ PlayerMysteriousNoteInterface:
   Super: Interface
 WieldableMysteriousNote:
   Attributes:
-  - Name: pad0x10_SUASS[0x10]
+  - Name: pad0x10_VVVHJ[0x10]
     Offset: '0x7f0'
     Size: '0x10'
     Type: char
@@ -152,7 +152,7 @@ WieldableMysteriousNote:
     Offset: '0x810'
     Size: '0x4'
     Type: float
-  - Name: pad0x5c_UBTJY[0x5c]
+  - Name: pad0x5c_UZ3S1[0x5c]
     Offset: '0x814'
     Size: '0x5c'
     Type: char
@@ -168,7 +168,7 @@ WieldableMysteriousNote:
     Offset: '0x880'
     Size: '0x8'
     Type: class InventoryItemComponent*
-  - Name: pad0x108_R1D7W[0x108]
+  - Name: pad0x108_3CB5I[0x108]
     Offset: '0x888'
     Size: '0x108'
     Type: char

@@ -1,21 +1,4 @@
 {
-  "FireworkSequentialSelectionType": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "SelectionIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TimeUntilNextExplosion",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
   "WeightedFireworkVFXData": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -50,10 +33,27 @@
         "Offset": "0x1c"
       },
       {
-        "Name": "pad0x4_UXO3X[0x4]",
+        "Name": "pad0x4_43XDO[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
+      }
+    ]
+  },
+  "FireworkSequentialSelectionType": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "SelectionIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TimeUntilNextExplosion",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
       }
     ]
   },
@@ -61,7 +61,7 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x8_3QA2B[0x8]",
+        "Name": "pad0x8_1VJT6[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"
@@ -85,7 +85,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x20_RW0PI[0x20]",
+        "Name": "pad0x20_HK38J[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x20"
@@ -108,7 +108,7 @@
         "Offset": "0x170"
       },
       {
-        "Name": "pad0x4_CD4OO[0x4]",
+        "Name": "pad0x4_4HIAC[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x174"
@@ -154,7 +154,7 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "pad0xc_SFO3K[0xc]",
+        "Name": "pad0xc_IG727[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x0"
@@ -166,7 +166,7 @@
         "Offset": "0xc"
       },
       {
-        "Name": "pad0x8_XLBK0[0x8]",
+        "Name": "pad0x8_E6A2P[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x20"
@@ -190,7 +190,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x8_89L0C[0x8]",
+        "Name": "pad0x8_Q970U[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x48"

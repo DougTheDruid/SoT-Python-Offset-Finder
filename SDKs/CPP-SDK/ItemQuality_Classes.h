@@ -6,26 +6,26 @@
 #include "ItemQuality_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ItemQualityInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x60 (Full Size[0x118] - InheritedSize[0xb8]
 class ItemQualityComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_69U6A[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_ICN8H[0x8];                                 // 0xb8(0x8)
 	char                                                         ItemQualityLevel;                                  // 0xc0(0x1)
-	char                                                         pad0x7_RA5U6[0x7];                                 // 0xc1(0x7)
+	char                                                         pad0x7_KAFFF[0x7];                                 // 0xc1(0x7)
 	TArray<struct PerComanyItemQualityEntry>                     CompanySpecificItemQualityLevels;                  // 0xc8(0x10)
 	TArray<struct PerComanyComplexItemQualityEntry>              CompanySpecificComplexItemQualityLevels;           // 0xd8(0x10)
 	TArray<struct PerComanyComplexItemQualityEntry>              CompanySpecificComplexItemQualityLevelsHandin;     // 0xe8(0x10)
 	TArray<struct CompanySpecificComplexItemQualityOverrides>    CompanySpecificComplexItemQualityOverrideList;     // 0xf8(0x10)
 	class GuildSettings*                                         GuildSettings;                                     // 0x108(0x8)
-	char                                                         pad0x8_FZ1K5[0x8];                                 // 0x110(0x8)
+	char                                                         pad0x8_HGX7W[0x8];                                 // 0x110(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ItemQualityInterface: public Interface
+{
+public:
 };
 
 

@@ -1,20 +1,20 @@
 {
-  "TaleQuestVariableTreasureMapItemDescType": {
+  "TaleQuestVariableMapMarkType": {
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x30_TYMA0[0x30]",
+        "Name": "pad0x30_2J4V9[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x0"
       }
     ]
   },
-  "TaleQuestVariableMapMarkType": {
+  "TaleQuestVariableTreasureMapItemDescType": {
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x30_LS017[0x30]",
+        "Name": "pad0x30_YWAQO[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x0"
@@ -31,7 +31,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x8_F8CQZ[0x8]",
+        "Name": "pad0x8_DEG4O[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x8"
@@ -48,7 +48,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x40_JEMBK[0x40]",
+        "Name": "pad0x40_66TM7[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x10"

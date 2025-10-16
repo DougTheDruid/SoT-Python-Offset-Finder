@@ -1,4 +1,241 @@
 {
+  "EmissaryActionRewardBoostComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_HT9C5[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0xb8"
+      }
+    ]
+  },
+  "EmissaryLevelSettingsAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x68",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "EmissaryLevelData",
+        "Type": "TArray<struct EmissaryLevelEntry>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "BoostMultiplers",
+        "Type": "struct EmissaryPointBoostMultipliers",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "DefaultEmissaryFlagAssetReferences",
+        "Type": "struct EmissaryFlagMeshReferences",
+        "Size": "0x20",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x8_OQ1DW[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "EmissaryRepresentationMeshComponent": {
+    "Super": "StaticMeshComponent",
+    "FullSize": "0x600",
+    "InheritedSize": "0x600",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmissaryRewardCampaignSettingsAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Companies",
+        "Type": "TArray<struct EmissaryCompanyCampaignSettings>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "EmissaryEntitlementCategory": {
+    "Super": "ItemCategory",
+    "FullSize": "0x90",
+    "InheritedSize": "0x90",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmissaryVoyageInlineVoteConsumerBase": {
+    "Super": "VoteConsumerInlineBase",
+    "FullSize": "0x120",
+    "InheritedSize": "0x30",
+    "ClassSize": "0xf0",
+    "Attributes": [
+      {
+        "Name": "Validator",
+        "Type": "class EmissaryVoyageVoteValidatorBase*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x48_N4L69[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "VoyageCinematicHeader",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "VoyageCinematicTag",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "pad0x20_2SST0[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "Votes",
+        "Type": "TArray<struct CrewMemberVotes>",
+        "Size": "0x10",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "pad0x20_5Q289[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "OwningActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "pad0x8_909TA[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x118"
+      }
+    ]
+  },
+  "EmissaryRewardSettingsAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "EmissaryRewardData",
+        "Type": "TArray<struct EmissaryRewardEntry>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "PlayerKilledExpiryTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x4_4KRL8[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "CampaignSettings",
+        "Type": "class EmissaryRewardCampaignSettingsAsset*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "EmissaryMaxRankQuestProvider": {
+    "Super": "ActorComponent",
+    "FullSize": "0x178",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "MaxRankQuestNotificationID",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "MaxRankQuestToolTipPriority",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "pad0x7_T1A8W[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xc1"
+      },
+      {
+        "Name": "StartMaxRankQuestToolTipText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "CannotStartMaxRankQuestToolTipText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "QuestDesc",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x138"
+      },
+      {
+        "Name": "QuestDescOverrides",
+        "Type": "TArray<struct EmissaryMaxRankQuestProviderQuestOverrides>",
+        "Size": "0x10",
+        "Offset": "0x148"
+      },
+      {
+        "Name": "pad0x18_JXEYW[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x158"
+      },
+      {
+        "Name": "Company",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x170"
+      }
+    ]
+  },
+  "EmissaryParticipantInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "EmissaryFlotsamItemInfo": {
     "Super": "BootyItemInfo",
     "FullSize": "0x788",
@@ -6,7 +243,7 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x8_FIQL6[0x8]",
+        "Name": "pad0x8_9C366[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x740"
@@ -36,12 +273,40 @@
         "Offset": "0x780"
       },
       {
-        "Name": "pad0x7_PQQQD[0x7]",
+        "Name": "pad0x7_00AER[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x781"
       }
     ]
+  },
+  "EmissaryColourSwatchSettingsAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ColourSwatchInformation",
+        "Type": "TArray<struct EmissaryColourSwatchInformation>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "EmissaryEntitlementDesc": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "IsAnEmissaryStatCondition": {
+    "Super": "TargetedStatCondition",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "EmissaryVoyageVoteValidatorBase": {
     "Super": "VoteValidatorInlineBase",
@@ -56,7 +321,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x7_SL6XV[0x7]",
+        "Name": "pad0x7_T6KE3[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x31"
@@ -80,7 +345,7 @@
         "Offset": "0x41"
       },
       {
-        "Name": "pad0x2_2KYT0[0x2]",
+        "Name": "pad0x2_KBE7U[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x42"
@@ -92,7 +357,7 @@
         "Offset": "0x44"
       },
       {
-        "Name": "pad0xab_7C0S9[0xab]",
+        "Name": "pad0xab_NM4LH[0xab]",
         "Type": "char",
         "Size": "0xab",
         "Offset": "0x45"
@@ -117,167 +382,6 @@
       }
     ]
   },
-  "IsAnEmissaryForCompanyStatCondition": {
-    "Super": "TargetedStatCondition",
-    "FullSize": "0x38",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "RequiredEmissaryCompany",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "IsAnEmissaryStatCondition": {
-    "Super": "TargetedStatCondition",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "EmissaryRewardCampaignSettingsAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Companies",
-        "Type": "TArray<struct EmissaryCompanyCampaignSettings>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "EmissaryVoyageInlineVoteConsumerBase": {
-    "Super": "VoteConsumerInlineBase",
-    "FullSize": "0x120",
-    "InheritedSize": "0x30",
-    "ClassSize": "0xf0",
-    "Attributes": [
-      {
-        "Name": "Validator",
-        "Type": "class EmissaryVoyageVoteValidatorBase*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x48_701HH[0x48]",
-        "Type": "char",
-        "Size": "0x48",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "VoyageCinematicHeader",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "VoyageCinematicTag",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "pad0x20_85N66[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "Votes",
-        "Type": "TArray<struct CrewMemberVotes>",
-        "Size": "0x10",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "pad0x20_P5W0O[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "OwningActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x110"
-      },
-      {
-        "Name": "pad0x8_2VPLE[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x118"
-      }
-    ]
-  },
-  "EmissaryColourSwatchSettingsAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ColourSwatchInformation",
-        "Type": "TArray<struct EmissaryColourSwatchInformation>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "EmissaryActiveTableVisualiserComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x148",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "TargetCompany",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "MaterialChanges",
-        "Type": "TArray<struct MaterialVisualisation>",
-        "Size": "0x10",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "pad0x10_YE5QN[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "LightChanges",
-        "Type": "TArray<struct LightVisualisation>",
-        "Size": "0x10",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "pad0x10_OA2EG[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "ParticleChanges",
-        "Type": "TArray<struct ParticleVisualisation>",
-        "Size": "0x10",
-        "Offset": "0x100"
-      },
-      {
-        "Name": "pad0x38_5L9MV[0x38]",
-        "Type": "char",
-        "Size": "0x38",
-        "Offset": "0x110"
-      }
-    ]
-  },
   "EmissaryLevelService": {
     "Super": "Actor",
     "FullSize": "0x6f8",
@@ -285,7 +389,7 @@
     "ClassSize": "0x358",
     "Attributes": [
       {
-        "Name": "pad0xb8_SLWY2[0xb8]",
+        "Name": "pad0xb8_9VA62[0xb8]",
         "Type": "char",
         "Size": "0xb8",
         "Offset": "0x3a0"
@@ -309,24 +413,17 @@
         "Offset": "0x468"
       },
       {
-        "Name": "pad0x288_GCTJ9[0x288]",
+        "Name": "pad0x288_3HYO0[0x288]",
         "Type": "char",
         "Size": "0x288",
         "Offset": "0x470"
       }
     ]
   },
-  "EmissaryRepresentationMeshComponent": {
-    "Super": "StaticMeshComponent",
-    "FullSize": "0x600",
-    "InheritedSize": "0x600",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "EmissaryEntitlementCategory": {
-    "Super": "ItemCategory",
-    "FullSize": "0x90",
-    "InheritedSize": "0x90",
+  "EmissaryFlotsamDuplicationInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -337,41 +434,29 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "EmissaryFlotsamTooltipCustomizerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x28",
+  "IsEmissaryStatCondition": {
+    "Super": "StatCondition",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_IF1XB[0x10]",
+        "Name": "RequiredEmissaryCompany",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "RequiresMaxEmissaryLevel",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x7_M15ND[0x7]",
         "Type": "char",
-        "Size": "0x10",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "CheckForDelivery",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "CheckForPickup",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc9"
-      },
-      {
-        "Name": "WonInBattleFlag",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xca"
-      },
-      {
-        "Name": "pad0x15_H2RY2[0x15]",
-        "Type": "char",
-        "Size": "0x15",
-        "Offset": "0xcb"
+        "Size": "0x7",
+        "Offset": "0x31"
       }
     ]
   },
@@ -412,224 +497,10 @@
         "Offset": "0x320"
       },
       {
-        "Name": "pad0x1c_5QWXL[0x1c]",
+        "Name": "pad0x1c_WJH9N[0x1c]",
         "Type": "char",
         "Size": "0x1c",
         "Offset": "0x324"
-      }
-    ]
-  },
-  "EmissaryLevelServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "EmissaryFlotsamDuplicationInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "EmissaryLevelSettingsAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x68",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "EmissaryLevelData",
-        "Type": "TArray<struct EmissaryLevelEntry>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "BoostMultiplers",
-        "Type": "struct EmissaryPointBoostMultipliers",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "DefaultEmissaryFlagAssetReferences",
-        "Type": "struct EmissaryFlagMeshReferences",
-        "Size": "0x20",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "pad0x8_FI86R[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x60"
-      }
-    ]
-  },
-  "EmissaryMaxRankQuestProvider": {
-    "Super": "ActorComponent",
-    "FullSize": "0x160",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0xa8",
-    "Attributes": [
-      {
-        "Name": "MaxRankQuestNotificationID",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "MaxRankQuestToolTipPriority",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "pad0x7_DZ8CP[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0xc1"
-      },
-      {
-        "Name": "StartMaxRankQuestToolTipText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "CannotStartMaxRankQuestToolTipText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x100"
-      },
-      {
-        "Name": "QuestDesc",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x138"
-      },
-      {
-        "Name": "QuestDescOverrides",
-        "Type": "TArray<struct EmissaryMaxRankQuestProviderQuestOverrides>",
-        "Size": "0x10",
-        "Offset": "0x148"
-      },
-      {
-        "Name": "Company",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x158"
-      }
-    ]
-  },
-  "EmissaryRewardSettingsAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "EmissaryRewardData",
-        "Type": "TArray<struct EmissaryRewardEntry>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "PlayerKilledExpiryTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x4_O1Z25[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "CampaignSettings",
-        "Type": "class EmissaryRewardCampaignSettingsAsset*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "EmissaryParticipantInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "EmissaryActionRewardBoostComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xc8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_6GP8T[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0xb8"
-      }
-    ]
-  },
-  "IsEmissaryStatCondition": {
-    "Super": "StatCondition",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "RequiredEmissaryCompany",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "RequiresMaxEmissaryLevel",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x7_TUSQ7[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x31"
-      }
-    ]
-  },
-  "EmissaryEntitlementDesc": {
-    "Super": "EntitlementDesc",
-    "FullSize": "0xc8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "EmissaryFlotsamItemSpawnComponent": {
-    "Super": "ItemSpawnComponent",
-    "FullSize": "0x590",
-    "InheritedSize": "0x4b0",
-    "ClassSize": "0xe0",
-    "Attributes": [
-      {
-        "Name": "pad0xa0_71V25[0xa0]",
-        "Type": "char",
-        "Size": "0xa0",
-        "Offset": "0x4b0"
-      },
-      {
-        "Name": "GuildSessionEndedFlotsamOffset",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x550"
-      },
-      {
-        "Name": "pad0x34_DNZF0[0x34]",
-        "Type": "char",
-        "Size": "0x34",
-        "Offset": "0x55c"
       }
     ]
   },
@@ -640,7 +511,7 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x10_T9QVF[0x10]",
+        "Name": "pad0x10_OI3X7[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xb8"
@@ -652,7 +523,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x10_33HDI[0x10]",
+        "Name": "pad0x10_I4HDM[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xd8"
@@ -682,7 +553,7 @@
         "Offset": "0xf8"
       },
       {
-        "Name": "pad0x3_JTFOC[0x3]",
+        "Name": "pad0x3_1X2L8[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xf9"
@@ -694,14 +565,149 @@
         "Offset": "0xfc"
       },
       {
-        "Name": "pad0x4_PW8Y5[0x4]",
+        "Name": "pad0x4_AGD55[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x104"
       }
     ]
   },
-  "StartEmissaryVoyageInlineVoteValidator": {
+  "EmissaryLevelServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EmissaryActiveTableVisualiserComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x148",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "TargetCompany",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "MaterialChanges",
+        "Type": "TArray<struct MaterialVisualisation>",
+        "Size": "0x10",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "pad0x10_HVQLG[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "LightChanges",
+        "Type": "TArray<struct LightVisualisation>",
+        "Size": "0x10",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "pad0x10_BFFM1[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "ParticleChanges",
+        "Type": "TArray<struct ParticleVisualisation>",
+        "Size": "0x10",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "pad0x38_7EMYZ[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x110"
+      }
+    ]
+  },
+  "EmissaryFlotsamTooltipCustomizerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x10_2VBYN[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "CheckForDelivery",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "CheckForPickup",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc9"
+      },
+      {
+        "Name": "WonInBattleFlag",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xca"
+      },
+      {
+        "Name": "pad0x15_RYOKV[0x15]",
+        "Type": "char",
+        "Size": "0x15",
+        "Offset": "0xcb"
+      }
+    ]
+  },
+  "IsAnEmissaryForCompanyStatCondition": {
+    "Super": "TargetedStatCondition",
+    "FullSize": "0x38",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "RequiredEmissaryCompany",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "EmissaryFlotsamItemSpawnComponent": {
+    "Super": "ItemSpawnComponent",
+    "FullSize": "0x5b0",
+    "InheritedSize": "0x4c0",
+    "ClassSize": "0xf0",
+    "Attributes": [
+      {
+        "Name": "pad0xa8_0HUK4[0xa8]",
+        "Type": "char",
+        "Size": "0xa8",
+        "Offset": "0x4c0"
+      },
+      {
+        "Name": "GuildSessionEndedFlotsamOffset",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x568"
+      },
+      {
+        "Name": "pad0x3c_6BNU0[0x3c]",
+        "Type": "char",
+        "Size": "0x3c",
+        "Offset": "0x574"
+      }
+    ]
+  },
+  "StopEmissaryVoyageInlineVoteValidator": {
     "Super": "EmissaryVoyageVoteValidatorBase",
     "FullSize": "0x108",
     "InheritedSize": "0x108",
@@ -775,12 +781,19 @@
         "Offset": "0x318"
       },
       {
-        "Name": "pad0x18_QNVOI[0x18]",
+        "Name": "pad0x18_N49PY[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x350"
       }
     ]
+  },
+  "StartEmissaryVoyageInlineVoteValidator": {
+    "Super": "EmissaryVoyageVoteValidatorBase",
+    "FullSize": "0x108",
+    "InheritedSize": "0x108",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "StartEmissaryVoyageInlineVoteConsumer": {
     "Super": "EmissaryVoyageInlineVoteConsumerBase",
@@ -855,31 +868,10 @@
         "Offset": "0x350"
       },
       {
-        "Name": "pad0x18_B31SN[0x18]",
+        "Name": "pad0x18_2PSOQ[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x388"
-      }
-    ]
-  },
-  "StopEmissaryVoyageInlineVoteValidator": {
-    "Super": "EmissaryVoyageVoteValidatorBase",
-    "FullSize": "0x108",
-    "InheritedSize": "0x108",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "StopGuildEmissaryVoyageInlineVoteConsumer": {
-    "Super": "StopEmissaryVoyageInlineVoteConsumer",
-    "FullSize": "0x398",
-    "InheritedSize": "0x368",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_QFY1J[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x368"
       }
     ]
   },
@@ -902,10 +894,24 @@
         "Offset": "0x3d8"
       },
       {
-        "Name": "pad0x30_NRRNR[0x30]",
+        "Name": "pad0x30_SPL6D[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x410"
+      }
+    ]
+  },
+  "StopGuildEmissaryVoyageInlineVoteConsumer": {
+    "Super": "StopEmissaryVoyageInlineVoteConsumer",
+    "FullSize": "0x398",
+    "InheritedSize": "0x368",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_02DNV[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x368"
       }
     ]
   },

@@ -30,7 +30,7 @@ BP_PiratePreview_Lighting_C:
     Offset: '0x3d0'
     Size: '0x8'
     Type: class SceneComponent*
-  - Name: pad0x20_BNULP[0x20]
+  - Name: pad0x20_77UF2[0x20]
     Offset: '0x3d8'
     Size: '0x20'
     Type: char

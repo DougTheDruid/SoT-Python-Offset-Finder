@@ -1,16 +1,5 @@
 {
-  "ActorsOfInterestList": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Actors",
-        "Type": "TArray<class Actor*>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ActorOfInterestRegisteredEvent": {
+  "ActorOfInterestUnregisteredEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
@@ -27,7 +16,18 @@
       }
     ]
   },
-  "ActorOfInterestUnregisteredEvent": {
+  "ActorsOfInterestList": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Actors",
+        "Type": "TArray<class Actor*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ActorOfInterestRegisteredEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {

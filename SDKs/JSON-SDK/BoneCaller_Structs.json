@@ -1,4 +1,61 @@
 {
+  "EventOnBoneCallerSpawned": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "SpawnedCharacter",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "IslandWhereCharacterSpawned",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "BoneCallerSpawnIdShipSizeOverride": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ShipSize",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BoneCallerSpawnIdOverride",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "BoneCallerUsageTelemetry": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_XF7BM[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "Region",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "EventOnBoneCallerDidKillEvent": {
     "ClassSize": "0x38",
     "Attributes": [
@@ -33,20 +90,43 @@
       }
     ]
   },
-  "BoneCallerSpawnIdShipSizeOverride": {
-    "ClassSize": "0x10",
+  "EventOnBoneCallerFromTriggerEvent": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "ShipSize",
-        "Type": "class UClass*",
+        "Name": "TrackedActor",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "BoneCallerSpawnIdOverride",
-        "Type": "class UClass*",
+        "Name": "CrewShip",
+        "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x10_PUP33[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "BoneCallerSpawnId",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "PlayerBoneCallerData": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_62AAA[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
       }
     ]
   },
@@ -66,7 +146,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_UNTLS[0x7]",
+        "Name": "pad0x7_IZ3OC[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
@@ -118,7 +198,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x10_RWCLR[0x10]",
+        "Name": "pad0x10_4SAOQ[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x10"
@@ -128,86 +208,6 @@
         "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x20"
-      }
-    ]
-  },
-  "BoneCallerUsageTelemetry": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x4_6VWU3[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "Region",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "EventOnBoneCallerSpawned": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "SpawnedCharacter",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "IslandWhereCharacterSpawned",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "EventOnBoneCallerFromTriggerEvent": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "TrackedActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CrewShip",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x10_VL9RF[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "BoneCallerSpawnId",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "PlayerBoneCallerData": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_OPKC2[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x0"
       }
     ]
   },

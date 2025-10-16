@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 ShimmerActor:
   Attributes:
-  - Name: pad0xa8_QTSCW[0xa8]
+  - Name: pad0xa8_4TBL7[0xa8]
     Offset: '0x3a0'
     Size: '0xa8'
     Type: char
@@ -12,7 +12,7 @@ ShimmerActor:
   Super: Actor
 SunkenKingdomShrineDeepSeaRegion:
   Attributes:
-  - Name: pad0x8_SEP2E[0x8]
+  - Name: pad0x8_D9IYI[0x8]
     Offset: '0x410'
     Size: '0x8'
     Type: char
@@ -22,7 +22,7 @@ SunkenKingdomShrineDeepSeaRegion:
   Super: DeepSeaRegion
 SunkenKingdomShrineEventRoom:
   Attributes:
-  - Name: pad0x10_89U3U[0x10]
+  - Name: pad0x10_NLTIR[0x10]
     Offset: '0x4d8'
     Size: '0x10'
     Type: char
@@ -46,7 +46,7 @@ SunkenKingdomShrineEventRoom:
     Offset: '0x510'
     Size: '0x8'
     Type: class GameEventItemSpawnSelectorComponent*
-  - Name: pad0x70_PSYF0[0x70]
+  - Name: pad0x70_1XXEN[0x70]
     Offset: '0x518'
     Size: '0x70'
     Type: char
@@ -56,17 +56,17 @@ SunkenKingdomShrineEventRoom:
   Super: EventRoom
 SunkenKingdomShrineFinalRewardSpawnComponent:
   Attributes:
-  - Name: pad0x20_RCPUB[0x20]
-    Offset: '0x4b0'
-    Size: '0x20'
+  - Name: pad0x30_UECYB[0x30]
+    Offset: '0x4c0'
+    Size: '0x30'
     Type: char
-  ClassSize: '0x20'
-  FullSize: '0x4d0'
-  InheritedSize: '0x4b0'
+  ClassSize: '0x30'
+  FullSize: '0x4f0'
+  InheritedSize: '0x4c0'
   Super: ItemSpawnComponent
 SunkenKingdomTreasuryDeepSeaRegion:
   Attributes:
-  - Name: pad0x8_K237A[0x8]
+  - Name: pad0x8_V30PM[0x8]
     Offset: '0x410'
     Size: '0x8'
     Type: char
@@ -76,7 +76,7 @@ SunkenKingdomTreasuryDeepSeaRegion:
   Super: DeepSeaRegion
 TreasuryRoom:
   Attributes:
-  - Name: pad0x20_H7NBK[0x20]
+  - Name: pad0x20_9LJDR[0x20]
     Offset: '0x3a0'
     Size: '0x20'
     Type: char
@@ -192,7 +192,7 @@ TreasuryRoom:
     Offset: '0x4e0'
     Size: '0x4'
     Type: struct PlayerStat
-  - Name: pad0x4_RRNCG[0x4]
+  - Name: pad0x4_M0CDB[0x4]
     Offset: '0x4e4'
     Size: '0x4'
     Type: char
@@ -212,7 +212,7 @@ TreasuryRoom:
     Offset: '0x530'
     Size: '0xa0'
     Type: struct ObjectMessagingDispatcher
-  - Name: pad0x18_JY4WZ[0x18]
+  - Name: pad0x18_XBI47[0x18]
     Offset: '0x5d0'
     Size: '0x18'
     Type: char

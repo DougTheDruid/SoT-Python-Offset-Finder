@@ -6,7 +6,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x8_R5ZB6[0x8]",
+        "Name": "pad0x8_2TG9Q[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -24,16 +24,43 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x28_0GVRC[0x28]",
+        "Name": "pad0x28_BK3V8[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0xe0"
       },
       {
-        "Name": "pad0x10_VXAN2[0x10]",
+        "Name": "pad0x10_1WTBR[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x108"
+      }
+    ]
+  },
+  "GameplayTaskOwnerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GameplayTask": {
+    "Super": "Object",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "InstanceName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x28_Y0YTG[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x30"
       }
     ]
   },
@@ -50,7 +77,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_CYBT9[0x4]",
+        "Name": "pad0x4_69A5K[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
@@ -62,51 +89,10 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x7_UNMJI[0x7]",
+        "Name": "pad0x7_5V2FA[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x31"
-      }
-    ]
-  },
-  "GameplayTask": {
-    "Super": "Object",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "InstanceName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x28_TTYWE[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "GameplayTaskOwnerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "GameplayTask_WaitDelay": {
-    "Super": "GameplayTask",
-    "FullSize": "0x70",
-    "InheritedSize": "0x58",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_88RFJ[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x58"
       }
     ]
   },
@@ -117,7 +103,7 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x38_YULNW[0x38]",
+        "Name": "pad0x38_NILIL[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x58"
@@ -127,6 +113,20 @@
         "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x90"
+      }
+    ]
+  },
+  "GameplayTask_WaitDelay": {
+    "Super": "GameplayTask",
+    "FullSize": "0x70",
+    "InheritedSize": "0x58",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_M0Z42[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x58"
       }
     ]
   },

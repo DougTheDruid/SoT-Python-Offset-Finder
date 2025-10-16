@@ -19,7 +19,16 @@ public:
 	struct Guid                                                  CrewId;                                            // 0x8(0x10)
 	struct Guid                                                  PreviousCrewId;                                    // 0x18(0x10)
 	bool                                                         IsFirstTimeOwnedByThisCrew;                        // 0x28(0x1)
-	char                                                         pad0x7_YOCQC[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_6KE89[0x7];                                 // 0x29(0x7)
+};
+
+
+// Size 0x18
+struct TrackItemOwnershipEvent
+{
+public:
+	class Actor*                                                 TrackedItem;                                       // 0x0(0x8)
+	char                                                         pad0x10_W896R[0x10];                               // 0x8(0x10)
 };
 
 
@@ -29,15 +38,6 @@ struct CrewTrackedItemOwnershipSet
 public:
 	class Actor*                                                 Item;                                              // 0x0(0x8)
 	struct Guid                                                  CrewId;                                            // 0x8(0x10)
-};
-
-
-// Size 0x18
-struct TrackItemOwnershipEvent
-{
-public:
-	class Actor*                                                 TrackedItem;                                       // 0x0(0x8)
-	char                                                         pad0x10_IYB77[0x10];                               // 0x8(0x10)
 };
 
 

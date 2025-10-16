@@ -21,7 +21,7 @@ ClientNoteData:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_VAWYA[0x7]
+  - Name: pad0x7_M19SX[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -32,7 +32,7 @@ ClientNoteData:
   ClassSize: '0x18'
 EventListenForCinematicEndEvent:
   Attributes:
-  - Name: pad0x1_Q5ORM[0x1]
+  - Name: pad0x1_7KJVC[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -61,28 +61,28 @@ EventMarkNoteRead:
   ClassSize: '0x18'
 EventMysteriousNoteContentUpdated:
   Attributes:
-  - Name: pad0x10_BA0WY[0x10]
+  - Name: pad0x10_15G4V[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
   ClassSize: '0x10'
 EventMysteriousNoteCustomContentUpdate:
   Attributes:
-  - Name: pad0x1_9MMZG[0x1]
+  - Name: pad0x1_R636E[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 EventMysteriousNoteRemoved:
   Attributes:
-  - Name: pad0x10_VEF4F[0x10]
+  - Name: pad0x10_FCWH7[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
   ClassSize: '0x10'
 EventMysteriousNoteSettingsLoaded:
   Attributes:
-  - Name: pad0x1_83PJS[0x1]
+  - Name: pad0x1_OA842[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -111,7 +111,7 @@ EventNoteCompletionStep:
   ClassSize: '0x10'
 EventNotesUpdated:
   Attributes:
-  - Name: pad0x1_PECT9[0x1]
+  - Name: pad0x1_1Q7IF[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -133,7 +133,7 @@ EventTriggerMysteriousNotesPopup:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_WFO96[0x7]
+  - Name: pad0x7_RS5BV[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
@@ -152,7 +152,7 @@ MysteriousNoteInfo:
     Offset: '0x11'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_T5A7G[0x2]
+  - Name: pad0x2_B808Z[0x2]
     Offset: '0x12'
     Size: '0x2'
     Type: char
@@ -218,7 +218,7 @@ PlayerMysteriousNoteItem:
     Offset: '0x30'
     Size: '0x10'
     Type: struct FString
-  - Name: pad0x8_OWVUO[0x8]
+  - Name: pad0x8_BEA9K[0x8]
     Offset: '0x40'
     Size: '0x8'
     Type: char

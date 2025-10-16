@@ -4,61 +4,36 @@
 // https://github.com/DougTheDruid
 
 // Size 0x18
-struct LandClueCreationChoice
+struct WeightedClueDestinationDescriptor
 {
 public:
-	class UClass*                                                ClueSiteType;                                      // 0x0(0x8)
-	struct FName                                                 IslandIdentifier;                                  // 0x8(0x8)
-	class LandClueCreator*                                       ClueCreator;                                       // 0x10(0x8)
+	class UClass*                                                DestinationType;                                   // 0x0(0x8)
+	TArray<float>                                                DifficultyWeightings;                              // 0x8(0x10)
 };
 
 
 // Size 0x28
-struct DebrisToRangeDist
+struct LootToRangeDist
 {
 public:
-	struct WeightedProbabilityRange                              NumberOfDebrisItemsToSpawn;                        // 0x0(0x20)
-	class WeightedDebrisDataAsset*                               WeightedDebrisTypeAsset;                           // 0x20(0x8)
+	struct WeightedProbabilityRange                              NumberOfLootItemsToSpawn;                          // 0x0(0x20)
+	class WeightedTreasureChestDescAsset*                        WeightedLootDescAsset;                             // 0x20(0x8)
 };
 
 
-// Size 0x28
-struct WeightedDebris
+// Size 0x30
+struct QuestVariableClueSiteArray
 {
 public:
-	char                                                         pad0x20_9E74P[0x20];                               // 0x0(0x20)
-	float                                                        Weight;                                            // 0x20(0x4)
-	char                                                         pad0x4_G3GGJ[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x30_59FUJ[0x30];                               // 0x0(0x30)
 };
 
 
-// Size 0x20
-struct SeaClueCreationChoice
+// Size 0x30
+struct QuestVariableClueDescriptor
 {
 public:
-	class UClass*                                                SiteType;                                          // 0x0(0x8)
-	class SeaClueCreator*                                        ClueCreator;                                       // 0x8(0x8)
-	char                                                         pad0x10_U6KZ7[0x10];                               // 0x10(0x10)
-};
-
-
-// Size 0x10
-struct RestrictedClueType
-{
-public:
-	class UClass*                                                Type;                                              // 0x0(0x8)
-	int                                                          Max;                                               // 0x8(0x4)
-	char                                                         pad0x4_K1Z6B[0x4];                                 // 0xc(0x4)
-};
-
-
-// Size 0x18
-struct LootSpawnedAtClueSite
-{
-public:
-	class UClass*                                                SiteType;                                          // 0x0(0x8)
-	struct Vector                                                SiteLocation;                                      // 0x8(0xc)
-	int                                                          NumLoot;                                           // 0x14(0x4)
+	char                                                         pad0x30_2LGJE[0x30];                               // 0x0(0x30)
 };
 
 
@@ -69,25 +44,17 @@ public:
 	class UClass*                                                SiteType;                                          // 0x0(0x8)
 	class ClueSiteData*                                          SiteData;                                          // 0x8(0x8)
 	struct Vector                                                Location;                                          // 0x10(0xc)
-	char                                                         pad0x4_9ZNNQ[0x4];                                 // 0x1c(0x4)
+	char                                                         pad0x4_UZSK5[0x4];                                 // 0x1c(0x4)
 };
 
 
 // Size 0x10
-struct ClueSiteLootRestriction
+struct RestrictedClueType
 {
 public:
-	class UClass*                                                SiteType;                                          // 0x0(0x8)
-	int                                                          LootMax;                                           // 0x8(0x4)
-	char                                                         pad0x4_KECR5[0x4];                                 // 0xc(0x4)
-};
-
-
-// Size 0x30
-struct QuestVariableClueSiteArray
-{
-public:
-	char                                                         pad0x30_A6JEX[0x30];                               // 0x0(0x30)
+	class UClass*                                                Type;                                              // 0x0(0x8)
+	int                                                          Max;                                               // 0x8(0x4)
+	char                                                         pad0x4_F9JOA[0x4];                                 // 0xc(0x4)
 };
 
 
@@ -104,16 +71,26 @@ public:
 struct QuestVariableClueSite
 {
 public:
-	char                                                         pad0x30_2KFGA[0x30];                               // 0x0(0x30)
+	char                                                         pad0x30_8PHZ9[0x30];                               // 0x0(0x30)
+};
+
+
+// Size 0x28
+struct DebrisToRangeDist
+{
+public:
+	struct WeightedProbabilityRange                              NumberOfDebrisItemsToSpawn;                        // 0x0(0x20)
+	class WeightedDebrisDataAsset*                               WeightedDebrisTypeAsset;                           // 0x20(0x8)
 };
 
 
 // Size 0x18
-struct WeightedClueDestinationDescriptor
+struct LootSpawnedAtClueSite
 {
 public:
-	class UClass*                                                DestinationType;                                   // 0x0(0x8)
-	TArray<float>                                                DifficultyWeightings;                              // 0x8(0x10)
+	class UClass*                                                SiteType;                                          // 0x0(0x8)
+	struct Vector                                                SiteLocation;                                      // 0x8(0xc)
+	int                                                          NumLoot;                                           // 0x14(0x4)
 };
 
 
@@ -123,32 +100,47 @@ struct EventClueObtained
 public:
 	class ClueDescriptor*                                        ObtainedClue;                                      // 0x0(0x8)
 	class UClass*                                                ObtainedSiteType;                                  // 0x8(0x8)
-	char                                                         pad0x10_8T8NK[0x10];                               // 0x10(0x10)
+	char                                                         pad0x10_YBLGR[0x10];                               // 0x10(0x10)
 };
 
 
-// Size 0x28
-struct LootToRangeDist
+// Size 0x20
+struct SeaClueCreationChoice
 {
 public:
-	struct WeightedProbabilityRange                              NumberOfLootItemsToSpawn;                          // 0x0(0x20)
-	class WeightedTreasureChestDescAsset*                        WeightedLootDescAsset;                             // 0x20(0x8)
+	class UClass*                                                SiteType;                                          // 0x0(0x8)
+	class SeaClueCreator*                                        ClueCreator;                                       // 0x8(0x8)
+	char                                                         pad0x10_8KAFD[0x10];                               // 0x10(0x10)
 };
 
 
-// Size 0x30
-struct QuestVariableClueDescriptor
+// Size 0x18
+struct LandClueCreationChoice
 {
 public:
-	char                                                         pad0x30_PVJJH[0x30];                               // 0x0(0x30)
+	class UClass*                                                ClueSiteType;                                      // 0x0(0x8)
+	struct FName                                                 IslandIdentifier;                                  // 0x8(0x8)
+	class LandClueCreator*                                       ClueCreator;                                       // 0x10(0x8)
 };
 
 
 // Size 0x10
-struct ClueSiteLootHistory
+struct ClueSiteLootRestriction
 {
 public:
-	TArray<struct LootSpawnedAtClueSite>                         History;                                           // 0x0(0x10)
+	class UClass*                                                SiteType;                                          // 0x0(0x8)
+	int                                                          LootMax;                                           // 0x8(0x4)
+	char                                                         pad0x4_25APT[0x4];                                 // 0xc(0x4)
+};
+
+
+// Size 0x28
+struct WeightedDebris
+{
+public:
+	char                                                         pad0x20_VU9IW[0x20];                               // 0x0(0x20)
+	float                                                        Weight;                                            // 0x20(0x4)
+	char                                                         pad0x4_CEXPW[0x4];                                 // 0x24(0x4)
 };
 
 
@@ -158,6 +150,14 @@ struct ClueSiteTypeSupportedDescribedByEntry
 public:
 	class UClass*                                                SiteType;                                          // 0x0(0x8)
 	TArray<struct WeightedClueDescriptor>                        SupportedDescriptors;                              // 0x8(0x10)
+};
+
+
+// Size 0x10
+struct ClueSiteLootHistory
+{
+public:
+	TArray<struct LootSpawnedAtClueSite>                         History;                                           // 0x0(0x10)
 };
 
 

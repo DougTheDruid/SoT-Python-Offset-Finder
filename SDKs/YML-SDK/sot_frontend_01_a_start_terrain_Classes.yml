@@ -6,11 +6,15 @@ sot_frontend_01_a_start_terrain_C:
     Offset: '0x3a8'
     Size: '0x8'
     Type: struct PointerToUberGraphFrame
+  - Name: pad0x287d6690_PAMF1[0x287d6690]
+    Offset: '0x3b0'
+    Size: '0x287d6690'
+    Type: char
   - Name: IsPlaying
     Offset: '0x3b0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_E7CHO[0x7]
+  - Name: pad0x7_BJEWT[0x7]
     Offset: '0x3b1'
     Size: '0x7'
     Type: char

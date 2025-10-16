@@ -6,6 +6,26 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "NetworkRegionService": {
+    "Super": "Object",
+    "FullSize": "0xc8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Name": "pad0x90_E4A2F[0x90]",
+        "Type": "char",
+        "Size": "0x90",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "PlayersThatNeedToBeTicked",
+        "Type": "TArray<class PlayerController*>",
+        "Size": "0x10",
+        "Offset": "0xb8"
+      }
+    ]
+  },
   "RegionAssetCacheActor": {
     "Super": "Actor",
     "FullSize": "0x3e0",
@@ -25,30 +45,10 @@
         "Offset": "0x3b0"
       },
       {
-        "Name": "pad0x20_0FJLL[0x20]",
+        "Name": "pad0x20_QGF9I[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x3c0"
-      }
-    ]
-  },
-  "NetworkRegionService": {
-    "Super": "Object",
-    "FullSize": "0xc8",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xa0",
-    "Attributes": [
-      {
-        "Name": "pad0x90_5F6R3[0x90]",
-        "Type": "char",
-        "Size": "0x90",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "PlayersThatNeedToBeTicked",
-        "Type": "TArray<class PlayerController*>",
-        "Size": "0x10",
-        "Offset": "0xb8"
       }
     ]
   },

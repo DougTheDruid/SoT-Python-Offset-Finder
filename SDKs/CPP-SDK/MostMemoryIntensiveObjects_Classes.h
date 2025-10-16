@@ -10,7 +10,7 @@
 class MMIPetDebugCommandSource: public MMICategoryDebugCommandSource
 {
 public:
-	char                                                         pad0x18_NAJV1[0x18];                               // 0x28(0x18)
+	char                                                         pad0x18_VYPZZ[0x18];                               // 0x28(0x18)
 };
 
 

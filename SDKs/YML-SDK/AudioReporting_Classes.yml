@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AudioReportReaction:
   Attributes:
-  - Name: pad0x8_8JDPB[0x8]
+  - Name: pad0x8_VKWAY[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
@@ -16,7 +16,7 @@ AudioReportingComponent:
     Offset: '0xb8'
     Size: '0x8'
     Type: class PlayerController*
-  - Name: pad0x170_ECXBO[0x170]
+  - Name: pad0x170_NZZLP[0x170]
     Offset: '0xc0'
     Size: '0x170'
     Type: char
@@ -54,7 +54,7 @@ AudioReportingSettings:
     Offset: '0x30'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_2BZLI[0x4]
+  - Name: pad0x4_A01W9[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char

@@ -6,6 +6,10 @@ sot_frontend_01_a_lighting_C:
     Offset: '0x3a8'
     Size: '0x8'
     Type: struct PointerToUberGraphFrame
+  - Name: pad0x3822b250_K8KY7[0x3822b250]
+    Offset: '0x3b0'
+    Size: '0x3822b250'
+    Type: char
   - Name: LightingController_UniqueObjectNameForCooking_441630218_RefProperty
     Offset: '0x3b0'
     Size: '0x8'

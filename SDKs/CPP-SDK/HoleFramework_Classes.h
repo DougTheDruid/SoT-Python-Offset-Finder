@@ -6,18 +6,18 @@
 #include "HoleFramework_Structs.h"
 
 
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class DigsiteObject: public Object
-{
-public:
-	char                                                         pad0x18_EJFP2[0x18];                               // 0x28(0x18)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class HoleServiceInterface: public Interface
 {
 public:
+};
+
+
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class DigsiteObject: public Object
+{
+public:
+	char                                                         pad0x18_OFRNI[0x18];                               // 0x28(0x18)
 };
 
 

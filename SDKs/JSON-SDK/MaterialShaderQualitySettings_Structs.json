@@ -1,4 +1,27 @@
 {
+  "ShaderQualityOverridesListItem": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "RangeName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "QualityProperty",
+        "Type": "class BoolProperty*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "SettingContainer",
+        "Type": "class ShaderPlatformQualitySettings*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
   "MaterialQualityOverrides": {
     "ClassSize": "0x4",
     "Attributes": [
@@ -25,29 +48,6 @@
         "Type": "bool",
         "Size": "0x1",
         "Offset": "0x3"
-      }
-    ]
-  },
-  "ShaderQualityOverridesListItem": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "RangeName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "QualityProperty",
-        "Type": "class BoolProperty*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "SettingContainer",
-        "Type": "class ShaderPlatformQualitySettings*",
-        "Size": "0x8",
-        "Offset": "0x18"
       }
     ]
   },

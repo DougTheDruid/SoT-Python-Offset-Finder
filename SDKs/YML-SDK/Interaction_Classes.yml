@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 CharacterInteractionComponent:
   Attributes:
-  - Name: pad0x8_FK48P[0x8]
+  - Name: pad0x8_CTVCO[0x8]
     Offset: '0x5d0'
     Size: '0x8'
     Type: char
@@ -10,7 +10,7 @@ CharacterInteractionComponent:
     Offset: '0x5d8'
     Size: '0x8'
     Type: class InteractableArea*
-  - Name: pad0xc0_WVMO3[0xc0]
+  - Name: pad0xc0_HDRNZ[0xc0]
     Offset: '0x5e0'
     Size: '0xc0'
     Type: char
@@ -40,7 +40,7 @@ InteractableArea:
     Offset: '0x44'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_LVIDH[0x4]
+  - Name: pad0x4_PSG0O[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -52,7 +52,7 @@ InteractableArea:
     Offset: '0x58'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x10_7AVG6[0x10]
+  - Name: pad0x10_TYDJT[0x10]
     Offset: '0x60'
     Size: '0x10'
     Type: char
@@ -68,7 +68,7 @@ InteractableBlueprintFunctionLibrary:
   Super: BlueprintFunctionLibrary
 InteractableComponent:
   Attributes:
-  - Name: pad0x8_P5AI2[0x8]
+  - Name: pad0x8_2I5UU[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -112,7 +112,7 @@ InteractableComponent:
     Offset: '0xec'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_4Z6CQ[0x3]
+  - Name: pad0x3_XYMI2[0x3]
     Offset: '0xed'
     Size: '0x3'
     Type: char
@@ -120,7 +120,7 @@ InteractableComponent:
     Offset: '0xf0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_DI9WW[0x4]
+  - Name: pad0x4_TJ9UH[0x4]
     Offset: '0xf4'
     Size: '0x4'
     Type: char
@@ -132,7 +132,7 @@ InteractableComponent:
     Offset: '0x108'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_UFI3A[0x4]
+  - Name: pad0x4_5U843[0x4]
     Offset: '0x114'
     Size: '0x4'
     Type: char
@@ -144,7 +144,7 @@ InteractableComponent:
     Offset: '0x120'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1f_GMT7W[0x1f]
+  - Name: pad0x1f_I9U4S[0x1f]
     Offset: '0x121'
     Size: '0x1f'
     Type: char
@@ -166,7 +166,7 @@ InteractableInterface:
   Super: Interface
 InteractableService:
   Attributes:
-  - Name: pad0x10_CRPVC[0x10]
+  - Name: pad0x10_1KP4F[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char
@@ -174,7 +174,7 @@ InteractableService:
     Offset: '0x38'
     Size: '0x10'
     Type: TArray<class InteractableArea*>
-  - Name: pad0x28_LT0B8[0x28]
+  - Name: pad0x28_2G321[0x28]
     Offset: '0x48'
     Size: '0x28'
     Type: char
@@ -190,7 +190,7 @@ InteractableServiceInterface:
   Super: Interface
 InteractionPreventionComponent:
   Attributes:
-  - Name: pad0x8_C2NYD[0x8]
+  - Name: pad0x8_6LYYA[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -222,7 +222,7 @@ InteractionValidatorSetterInterface:
   Super: Interface
 InteractorComponent:
   Attributes:
-  - Name: pad0x8_WQHA8[0x8]
+  - Name: pad0x8_L65WK[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -238,7 +238,7 @@ InteractorInterface:
   Super: Interface
 MockActorWithCharacterInteractionComponent:
   Attributes:
-  - Name: pad0x8_JNSAK[0x8]
+  - Name: pad0x8_PJO8K[0x8]
     Offset: '0x5b0'
     Size: '0x8'
     Type: char
@@ -246,7 +246,7 @@ MockActorWithCharacterInteractionComponent:
     Offset: '0x5b8'
     Size: '0x8'
     Type: class CharacterInteractionComponent*
-  - Name: pad0xa0_LZSPH[0xa0]
+  - Name: pad0xa0_S6J75[0xa0]
     Offset: '0x5c0'
     Size: '0xa0'
     Type: char
@@ -256,7 +256,7 @@ MockActorWithCharacterInteractionComponent:
   Super: Character
 MockInteractableService:
   Attributes:
-  - Name: pad0x18_SNPFM[0x18]
+  - Name: pad0x18_0FNN8[0x18]
     Offset: '0x28'
     Size: '0x18'
     Type: char
@@ -266,7 +266,7 @@ MockInteractableService:
   Super: Object
 MockInteractorActor:
   Attributes:
-  - Name: pad0x8_BBWDM[0x8]
+  - Name: pad0x8_0MOQ0[0x8]
     Offset: '0x3a0'
     Size: '0x8'
     Type: char
@@ -286,13 +286,17 @@ MockInteractorActor:
     Offset: '0x3c0'
     Size: '0x10'
     Type: TArray<class Class*>
-  ClassSize: '0x30'
-  FullSize: '0x3d0'
+  - Name: pad0x8_NTVK7[0x8]
+    Offset: '0x3d0'
+    Size: '0x8'
+    Type: char
+  ClassSize: '0x38'
+  FullSize: '0x3d8'
   InheritedSize: '0x3a0'
   Super: Actor
 ModalInteraction:
   Attributes:
-  - Name: pad0x10_KNKC6[0x10]
+  - Name: pad0x10_8TQVV[0x10]
     Offset: '0x3a0'
     Size: '0x10'
     Type: char
@@ -302,7 +306,7 @@ ModalInteraction:
   Super: Actor
 PlayerInteractionTrackerComponent:
   Attributes:
-  - Name: pad0x8_5EHQ7[0x8]
+  - Name: pad0x8_255IL[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -310,7 +314,7 @@ PlayerInteractionTrackerComponent:
     Offset: '0xc0'
     Size: '0x10'
     Type: TArray<struct UniqueNetIdRepl>
-  - Name: pad0x10_67HYN[0x10]
+  - Name: pad0x10_STB3Q[0x10]
     Offset: '0xd0'
     Size: '0x10'
     Type: char

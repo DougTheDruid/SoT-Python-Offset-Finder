@@ -2,14 +2,14 @@
 # https://github.com/DougTheDruid
 ActivityActionSpotContainer:
   Attributes:
-  - Name: pad0x10_3UONK[0x10]
+  - Name: pad0x10_9HGEB[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
   ClassSize: '0x10'
 RegionActionSpotContainer:
   Attributes:
-  - Name: pad0x50_C1QVX[0x50]
+  - Name: pad0x50_GQKOJ[0x50]
     Offset: '0x0'
     Size: '0x50'
     Type: char

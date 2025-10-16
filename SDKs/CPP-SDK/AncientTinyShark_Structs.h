@@ -4,7 +4,7 @@
 // https://github.com/DougTheDruid
 
 // Size 0x20
-struct AncientTinySharkEventCompletedTelemetryEvent
+struct AncientTinySharkEventCreatedTelemetryEvent
 {
 public:
 	struct Guid                                                  EventId;                                           // 0x0(0x10)
@@ -17,19 +17,10 @@ struct AncientTinySharkSpawnParams
 {
 public:
 	struct FeatureFlag                                           Feature;                                           // 0x0(0xc)
-	char                                                         pad0x4_BYMJU[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_R2YWE[0x4];                                 // 0xc(0x4)
 	class TinySharkParamsDataAsset*                              AncientTinySharkParams;                            // 0x10(0x8)
 	float                                                        WeightedSpawnChance;                               // 0x18(0x4)
-	char                                                         pad0x4_NQZZ7[0x4];                                 // 0x1c(0x4)
-};
-
-
-// Size 0x20
-struct AncientTinySharkEventCreatedTelemetryEvent
-{
-public:
-	struct Guid                                                  EventId;                                           // 0x0(0x10)
-	struct FString                                               AncientTinySharkVariant;                           // 0x10(0x10)
+	char                                                         pad0x4_WB2SJ[0x4];                                 // 0x1c(0x4)
 };
 
 
@@ -40,6 +31,15 @@ public:
 	class UClass*                                                AncientTinySharkClassId;                           // 0x0(0x8)
 	class GameEventBannerDataAsset*                              AncientTinySharkApproachedBanner;                  // 0x8(0x8)
 	class GameEventBannerDataAsset*                              AncientTinySharkDefeatedBanner;                    // 0x10(0x8)
+};
+
+
+// Size 0x20
+struct AncientTinySharkEventCompletedTelemetryEvent
+{
+public:
+	struct Guid                                                  EventId;                                           // 0x0(0x10)
+	struct FString                                               AncientTinySharkVariant;                           // 0x10(0x10)
 };
 
 

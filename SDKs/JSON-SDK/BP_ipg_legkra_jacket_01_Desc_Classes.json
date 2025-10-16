@@ -1,15 +1,15 @@
 {
   "BP_ipg_legkra_jacket_01_Desc_C": {
-    "Super": "None",
-    "FullSize": "0x4",
-    "InheritedSize": "0x0",
-    "ClassSize": "0x4",
+    "Super": "",
+    "FullSize": "-0x5d90a300",
+    "InheritedSize": "0x1017400",
+    "ClassSize": "-0x5e921700",
     "Attributes": [
       {
-        "Name": "pad0x4_OWVLY[0x4]",
+        "Name": "pad-0x5e921700_V92L5[-0x5e921700]",
         "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x0"
+        "Size": "-0x5e921700",
+        "Offset": "0x1017400"
       }
     ]
   },

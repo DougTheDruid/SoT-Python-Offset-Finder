@@ -1,32 +1,4 @@
 {
-  "RareGameEngine": {
-    "Super": "GameEngine",
-    "FullSize": "0xab8",
-    "InheritedSize": "0xa60",
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "pad0x58_13ICJ[0x58]",
-        "Type": "char",
-        "Size": "0x58",
-        "Offset": "0xa60"
-      }
-    ]
-  },
-  "HitchDiagnosisBlueprintFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RareHUD": {
-    "Super": "HUD",
-    "FullSize": "0x498",
-    "InheritedSize": "0x498",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "AssetReferencer": {
     "Super": "DataAsset",
     "FullSize": "0x38",
@@ -40,6 +12,62 @@
         "Offset": "0x28"
       }
     ]
+  },
+  "RareGameEngine": {
+    "Super": "GameEngine",
+    "FullSize": "0xac0",
+    "InheritedSize": "0xa60",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "pad0x60_BVPF5[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0xa60"
+      }
+    ]
+  },
+  "StallDetector": {
+    "Super": "Object",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x28_6GOTJ[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "HitchDiagnosisBlueprintFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MemoryUsageVisualiserSettings": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "VisualiserCategories",
+        "Type": "TArray<struct MemoryVisualiserCategory>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "RareHUD": {
+    "Super": "HUD",
+    "FullSize": "0x498",
+    "InheritedSize": "0x498",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "StaticMeshActorBlueprintLibrary": {
     "Super": "BlueprintFunctionLibrary",
@@ -55,37 +83,9 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x18_JEICO[0x18]",
+        "Name": "pad0x18_0FJCN[0x18]",
         "Type": "char",
         "Size": "0x18",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "StallDetector": {
-    "Super": "Object",
-    "FullSize": "0x50",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x28_2OAVF[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "MemoryUsageVisualiserSettings": {
-    "Super": "Object",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "VisualiserCategories",
-        "Type": "TArray<struct MemoryVisualiserCategory>",
-        "Size": "0x10",
         "Offset": "0x28"
       }
     ]

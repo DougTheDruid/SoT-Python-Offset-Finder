@@ -6,11 +6,27 @@
 #include "RareEngine_Structs.h"
 
 
-// Size 0x58 (Full Size[0xab8] - InheritedSize[0xa60]
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class AssetReferencer: public DataAsset
+{
+public:
+	TArray<Class>                                                AssetsToReference;                                 // 0x28(0x10)
+};
+
+
+// Size 0x60 (Full Size[0xac0] - InheritedSize[0xa60]
 class RareGameEngine: public GameEngine
 {
 public:
-	char                                                         pad0x58_13ICJ[0x58];                               // 0xa60(0x58)
+	char                                                         pad0x60_BVPF5[0x60];                               // 0xa60(0x60)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class StallDetector: public Object
+{
+public:
+	char                                                         pad0x28_6GOTJ[0x28];                               // 0x28(0x28)
 };
 
 
@@ -21,18 +37,18 @@ public:
 };
 
 
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class MemoryUsageVisualiserSettings: public Object
+{
+public:
+	TArray<struct MemoryVisualiserCategory>                      VisualiserCategories;                              // 0x28(0x10)
+};
+
+
 // Size 0x0 (Full Size[0x498] - InheritedSize[0x498]
 class RareHUD: public HUD
 {
 public:
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class AssetReferencer: public DataAsset
-{
-public:
-	TArray<Class>                                                AssetsToReference;                                 // 0x28(0x10)
 };
 
 
@@ -47,23 +63,7 @@ public:
 class AudioHardwareDeviceService: public Object
 {
 public:
-	char                                                         pad0x18_JEICO[0x18];                               // 0x28(0x18)
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class StallDetector: public Object
-{
-public:
-	char                                                         pad0x28_2OAVF[0x28];                               // 0x28(0x28)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class MemoryUsageVisualiserSettings: public Object
-{
-public:
-	TArray<struct MemoryVisualiserCategory>                      VisualiserCategories;                              // 0x28(0x10)
+	char                                                         pad0x18_0FJCN[0x18];                               // 0x28(0x18)
 };
 
 

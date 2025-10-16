@@ -1,134 +1,4 @@
 {
-  "TaleQuestMultiTargetCompassRemoveTrackedLocationStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0xa8",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_3HPY9[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "TaleQuestMultiTargetCompassRemoveTrackedLocationStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xb0",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "TargetID",
-        "Type": "struct QuestVariableGuid",
-        "Size": "0x30",
-        "Offset": "0x80"
-      }
-    ]
-  },
-  "TaleQuestMultiTargetCompassService": {
-    "Super": "TaleQuestToolService",
-    "FullSize": "0x190",
-    "InheritedSize": "0x170",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_FG8TH[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x170"
-      }
-    ]
-  },
-  "TaleQuestSetCompassTargetToTargetStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0xf8",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "pad0x60_HXCS9[0x60]",
-        "Type": "char",
-        "Size": "0x60",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "TaleQuestSetRotationCurveForRotatingCompassStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x88",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "RotationSequenceCurve",
-        "Type": "class CurveFloat*",
-        "Size": "0x8",
-        "Offset": "0x80"
-      }
-    ]
-  },
-  "TaleQuestRotatingCompassService": {
-    "Super": "TaleQuestService",
-    "FullSize": "0x120",
-    "InheritedSize": "0x60",
-    "ClassSize": "0xc0",
-    "Attributes": [
-      {
-        "Name": "pad0x18_CM42J[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "SplinePathActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x78"
-      },
-      {
-        "Name": "RotatingCompass",
-        "Type": "class RotatingCompass*",
-        "Size": "0x8",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "pad0x98_3IBJD[0x98]",
-        "Type": "char",
-        "Size": "0x98",
-        "Offset": "0x88"
-      }
-    ]
-  },
-  "TaleQuestRotatingCompassFunctionLibrary": {
-    "Super": "TaleQuestFunctionStepLibrary",
-    "FullSize": "0x180",
-    "InheritedSize": "0x180",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TaleQuestMultiTargetCompassAddTrackedLocationStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0xa0",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Desc",
-        "Type": "class TaleQuestMultiTargetCompassAddTrackedLocationStepDesc*",
-        "Size": "0x8",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "TaleQuestSetRotationCurveForRotatingCompassStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x98",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "EnchantedCompassProximityAnnouncementComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x200",
@@ -154,7 +24,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x4_6WWGG[0x4]",
+        "Name": "pad0x4_DVOCE[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xcc"
@@ -166,24 +36,126 @@
         "Offset": "0x110"
       },
       {
-        "Name": "pad0xef_NJQV3[0xef]",
+        "Name": "pad0xef_CICCF[0xef]",
         "Type": "char",
         "Size": "0xef",
         "Offset": "0x111"
       }
     ]
   },
-  "RotatingCompassSpinComponent": {
-    "Super": "CompassSpinComponent",
-    "FullSize": "0x1e0",
-    "InheritedSize": "0x1d8",
+  "TaleQuestMultiTargetCompassRemoveTrackedLocationStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xa8",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_NU3KM[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "TaleQuestRotatingCompassFunctionLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x180",
+    "InheritedSize": "0x180",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestMultiTargetCompassAddTrackedLocationStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x98",
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_ISTH1[0x8]",
+        "Name": "Desc",
+        "Type": "class TaleQuestMultiTargetCompassAddTrackedLocationStepDesc*",
+        "Size": "0x8",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "TaleQuestSetCompassTargetToTargetStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xf8",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "pad0x60_9K74Q[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "TaleQuestRotatingCompassService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0x120",
+    "InheritedSize": "0x60",
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "pad0x18_YZGQ7[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "SplinePathActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "RotatingCompass",
+        "Type": "class RotatingCompass*",
+        "Size": "0x8",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x98_0NXBA[0x98]",
+        "Type": "char",
+        "Size": "0x98",
+        "Offset": "0x88"
+      }
+    ]
+  },
+  "TaleQuestMultiTargetCompassService": {
+    "Super": "TaleQuestToolService",
+    "FullSize": "0x190",
+    "InheritedSize": "0x170",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_THR7Y[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x170"
+      }
+    ]
+  },
+  "TaleQuestSetRotationCurveForRotatingCompassStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleQuestRotatingCompassSplinePathSetupAndWaitForCompletionStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_LJNJ8[0x8]",
         "Type": "char",
         "Size": "0x8",
-        "Offset": "0x1d8"
+        "Offset": "0x98"
       }
     ]
   },
@@ -218,7 +190,7 @@
         "Offset": "0x910"
       },
       {
-        "Name": "pad0x8_C41GW[0x8]",
+        "Name": "pad0x8_75L8F[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x918"
@@ -242,40 +214,6 @@
         "Type": "struct QuestVariableGuid",
         "Size": "0x30",
         "Offset": "0xb0"
-      }
-    ]
-  },
-  "TaleQuestRotatingCompassSplinePathSetupAndWaitForCompletionStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0xa0",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_O9NT5[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "TaleQuestSetCompassTargetBaseStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x88",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "TargetUpdateReason",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x80"
-      },
-      {
-        "Name": "pad0x7_KQG0I[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x81"
       }
     ]
   },
@@ -336,7 +274,7 @@
         "Offset": "0xa00"
       },
       {
-        "Name": "pad0x3_ST9UZ[0x3]",
+        "Name": "pad0x3_K16ZV[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xa01"
@@ -354,7 +292,7 @@
         "Offset": "0xa08"
       },
       {
-        "Name": "pad0x4_5B2AS[0x4]",
+        "Name": "pad0x4_3FUVC[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xa0c"
@@ -372,10 +310,38 @@
         "Offset": "0xa58"
       },
       {
-        "Name": "pad0x14_6GPHU[0x14]",
+        "Name": "pad0x14_ICBRG[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0xa5c"
+      }
+    ]
+  },
+  "RotatingCompassSpinComponent": {
+    "Super": "CompassSpinComponent",
+    "FullSize": "0x1e0",
+    "InheritedSize": "0x1d8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_8Y9X7[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x1d8"
+      }
+    ]
+  },
+  "TaleQuestMultiTargetCompassRemoveTrackedLocationStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "TargetID",
+        "Type": "struct QuestVariableGuid",
+        "Size": "0x30",
+        "Offset": "0x80"
       }
     ]
   },
@@ -393,6 +359,26 @@
       }
     ]
   },
+  "TaleQuestSetCompassTargetBaseStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x88",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "TargetUpdateReason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x7_L8ZOK[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x81"
+      }
+    ]
+  },
   "TaleQuestRotatingCompassServiceDesc": {
     "Super": "TaleQuestServiceDesc",
     "FullSize": "0x28",
@@ -400,12 +386,19 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "PrototypeMultiTargetEnchantedCompass": {
-    "Super": "MultiTargetEnchantedCompass",
-    "FullSize": "0x920",
-    "InheritedSize": "0x920",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "TaleQuestSetRotationCurveForRotatingCompassStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x88",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "RotationSequenceCurve",
+        "Type": "class CurveFloat*",
+        "Size": "0x8",
+        "Offset": "0x80"
+      }
+    ]
   },
   "TaleQuestSetCompassTargetToActorStepDesc": {
     "Super": "TaleQuestSetCompassTargetBaseStepDesc",
@@ -420,6 +413,13 @@
         "Offset": "0x88"
       }
     ]
+  },
+  "PrototypeMultiTargetEnchantedCompass": {
+    "Super": "MultiTargetEnchantedCompass",
+    "FullSize": "0x920",
+    "InheritedSize": "0x920",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "TaleQuestSetCompassTargetToPointStepDesc": {
     "Super": "TaleQuestSetCompassTargetBaseStepDesc",

@@ -1,4 +1,18 @@
 {
+  "ClientCommandHandler": {
+    "Super": "Actor",
+    "FullSize": "0x3b8",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "CommandQueue",
+        "Type": "struct ClientCommandQueue",
+        "Size": "0x18",
+        "Offset": "0x3a0"
+      }
+    ]
+  },
   "TaleStruct": {
     "Super": "Struct",
     "FullSize": "0xb8",
@@ -12,24 +26,10 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x20_BKS9U[0x20]",
+        "Name": "pad0x20_FPOSI[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x98"
-      }
-    ]
-  },
-  "ClientCommandHandler": {
-    "Super": "Actor",
-    "FullSize": "0x3b8",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "CommandQueue",
-        "Type": "struct ClientCommandQueue",
-        "Size": "0x18",
-        "Offset": "0x3a0"
       }
     ]
   },

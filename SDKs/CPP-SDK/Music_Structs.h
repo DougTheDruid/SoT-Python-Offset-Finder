@@ -7,24 +7,7 @@
 struct MusicZoneDestroyedEvent
 {
 public:
-	char                                                         pad0x10_4UVDA[0x10];                               // 0x0(0x10)
-};
-
-
-// Size 0xc
-struct MusicZoneEmitterRTPC
-{
-public:
-	struct FName                                                 RTPC;                                              // 0x0(0x8)
-	float                                                        Value;                                             // 0x8(0x4)
-};
-
-
-// Size 0x10
-struct MusicZoneSpawnedEvent
-{
-public:
-	char                                                         pad0x10_TM7VG[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_DTJR1[0x10];                               // 0x0(0x10)
 };
 
 
@@ -34,6 +17,23 @@ struct MusicZoneEmitterSwitch
 public:
 	struct FName                                                 SwitchGroup;                                       // 0x0(0x8)
 	struct FName                                                 Value;                                             // 0x8(0x8)
+};
+
+
+// Size 0x10
+struct MusicZoneSpawnedEvent
+{
+public:
+	char                                                         pad0x10_BUV1M[0x10];                               // 0x0(0x10)
+};
+
+
+// Size 0xc
+struct MusicZoneEmitterRTPC
+{
+public:
+	struct FName                                                 RTPC;                                              // 0x0(0x8)
+	float                                                        Value;                                             // 0x8(0x4)
 };
 
 

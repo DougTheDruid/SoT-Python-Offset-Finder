@@ -1,101 +1,4 @@
 {
-  "WindZoneTurbulence": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Base",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Current",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "WindZoneParams": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "OuterRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "InnerRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "TurbulenceScalar",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "WindOnlyAffectsTrees",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "pad0x3_UACDI[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0xd"
-      }
-    ]
-  },
-  "WindMagnitudeChanged": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_1ADM0[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "WindDirectionChanged": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_GBHIT[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "WindTurbulenceParameters": {
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "GustPower",
-        "Type": "struct FloatRange",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "GustTime",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "CalmTime",
-        "Type": "struct WeightedProbabilityRangeOfRanges",
-        "Size": "0x30",
-        "Offset": "0x40"
-      }
-    ]
-  },
   "ExtraWind": {
     "ClassSize": "0x38",
     "Attributes": [
@@ -112,7 +15,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x28_9QGTI[0x28]",
+        "Name": "pad0x28_3UI6V[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x10"
@@ -175,6 +78,103 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x20"
+      }
+    ]
+  },
+  "WindDirectionChanged": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_K2JHD[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "WindZoneTurbulence": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Base",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Current",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "WindTurbulenceParameters": {
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "GustPower",
+        "Type": "struct FloatRange",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "GustTime",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "CalmTime",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "WindMagnitudeChanged": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_INZTQ[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "WindZoneParams": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "OuterRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "InnerRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "TurbulenceScalar",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "WindOnlyAffectsTrees",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "pad0x3_Y3NPF[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xd"
       }
     ]
   },

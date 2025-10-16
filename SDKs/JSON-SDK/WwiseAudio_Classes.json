@@ -1,23 +1,10 @@
 {
-  "WwiseNonShippingAudioRootAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x48",
+  "WwiseEmitterInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
     "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "NonShippingAudioAssets",
-        "Type": "TArray<class WwiseNonShippingAudioAsset*>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x10_MBAYU[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "WwiseNonShippingAudioAsset": {
     "Super": "DataAsset",
@@ -45,196 +32,6 @@
       }
     ]
   },
-  "WwiseDebugManager": {
-    "Super": "Object",
-    "FullSize": "0x88",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "pad0x60_C24PX[0x60]",
-        "Type": "char",
-        "Size": "0x60",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "WwisePoolManager": {
-    "Super": "Object",
-    "FullSize": "0x100",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xd8",
-    "Attributes": [
-      {
-        "Name": "pad0xd8_F68GP[0xd8]",
-        "Type": "char",
-        "Size": "0xd8",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "AudioReporterSubSystem": {
-    "Super": "Object",
-    "FullSize": "0x78",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x50_5U9H1[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "WwiseInputManager": {
-    "Super": "Object",
-    "FullSize": "0x50",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x28_O6GOE[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "MovieSceneAkTrack": {
-    "Super": "MovieSceneTrack",
-    "FullSize": "0xa0",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Sections",
-        "Type": "TArray<class MovieSceneSection*>",
-        "Size": "0x10",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "bIsAMasterTrack",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "pad0x7_SQXI9[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x99"
-      }
-    ]
-  },
-  "MovieSceneAkAudioEventSection": {
-    "Super": "MovieSceneSection",
-    "FullSize": "0xa0",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Event",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "WwiseMediaManager": {
-    "Super": "Object",
-    "FullSize": "0x78",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x50_72D81[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "WwiseEmitterInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "WwiseBank": {
-    "Super": "Object",
-    "FullSize": "0x70",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "path",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "InitBank",
-        "Type": "class WwiseBank*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "pad0x28_5J96O[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "WwiseInputManagerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MovieSceneAkAudioRTPCSection": {
-    "Super": "MovieSceneSection",
-    "FullSize": "0x128",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "pad0x8_0OPS6[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x98"
-      },
-      {
-        "Name": "Name",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0xa0"
-      },
-      {
-        "Name": "FloatCurve",
-        "Type": "struct RichCurve",
-        "Size": "0x78",
-        "Offset": "0xb0"
-      }
-    ]
-  },
-  "WwiseSoundFrameManager": {
-    "Super": "Object",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_5JWT6[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "MergedMultiEmitterComponent": {
     "Super": "WwiseEmitterComponent",
     "FullSize": "0x310",
@@ -255,74 +52,80 @@
       }
     ]
   },
-  "WwiseEvent": {
-    "Super": "Object",
-    "FullSize": "0x50",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "RequiredBank",
-        "Type": "class WwiseBank*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "WaitForBankToLoad",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x3_63BRM[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x31"
-      },
-      {
-        "Name": "DurationMin",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "DurationMax",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "MaxAttenuation",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "DurationType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "CookedIsStopEvent",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x45"
-      },
-      {
-        "Name": "pad0xa_SYRXG[0xa]",
-        "Type": "char",
-        "Size": "0xa",
-        "Offset": "0x46"
-      }
-    ]
-  },
   "AnimNotifyWwiseEmitterComponentRetrievalInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "WwiseSoundFrameManager": {
+    "Super": "Object",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_2TR4L[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "WwiseBank": {
+    "Super": "Object",
+    "FullSize": "0x70",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "path",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "InitBank",
+        "Type": "class WwiseBank*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x28_ILGGC[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "WwisePoolManager": {
+    "Super": "Object",
+    "FullSize": "0x100",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xd8",
+    "Attributes": [
+      {
+        "Name": "pad0xd8_0UDIY[0xd8]",
+        "Type": "char",
+        "Size": "0xd8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "WwiseEmitterManager": {
+    "Super": "Object",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_VG0L2[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x28"
+      }
+    ]
   },
   "WwiseCoreAssets": {
     "Super": "DataAsset",
@@ -365,6 +168,32 @@
         "Type": "class WwiseIDsDatabase*",
         "Size": "0x8",
         "Offset": "0x50"
+      }
+    ]
+  },
+  "MovieSceneAkTrack": {
+    "Super": "MovieSceneTrack",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Sections",
+        "Type": "TArray<class MovieSceneSection*>",
+        "Size": "0x10",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "bIsAMasterTrack",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "pad0x7_TAWMW[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x99"
       }
     ]
   },
@@ -424,17 +253,188 @@
       }
     ]
   },
-  "WwiseEmitterManager": {
-    "Super": "Object",
+  "MovieSceneAkAudioEventSection": {
+    "Super": "MovieSceneSection",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Event",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "WwiseNonShippingAudioRootAsset": {
+    "Super": "DataAsset",
     "FullSize": "0x48",
     "InheritedSize": "0x28",
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x20_BI1TT[0x20]",
-        "Type": "char",
-        "Size": "0x20",
+        "Name": "NonShippingAudioAssets",
+        "Type": "TArray<class WwiseNonShippingAudioAsset*>",
+        "Size": "0x10",
         "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x10_MOW3G[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "WwiseDebugManager": {
+    "Super": "Object",
+    "FullSize": "0x88",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "pad0x60_RIJU7[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "WwiseInputManager": {
+    "Super": "Object",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x28_CPMFB[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "AudioReporterSubSystem": {
+    "Super": "Object",
+    "FullSize": "0x78",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x50_3L5E9[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "MovieSceneAkAudioRTPCSection": {
+    "Super": "MovieSceneSection",
+    "FullSize": "0x128",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "pad0x8_YIC79[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "Name",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "FloatCurve",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0xb0"
+      }
+    ]
+  },
+  "WwiseMediaManager": {
+    "Super": "Object",
+    "FullSize": "0x78",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x50_I2PRE[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "WwiseInputManagerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WwiseEvent": {
+    "Super": "Object",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "RequiredBank",
+        "Type": "class WwiseBank*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "WaitForBankToLoad",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x3_AJ09Z[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x31"
+      },
+      {
+        "Name": "DurationMin",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "DurationMax",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "MaxAttenuation",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "DurationType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "CookedIsStopEvent",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x45"
+      },
+      {
+        "Name": "pad0xa_36S2S[0xa]",
+        "Type": "char",
+        "Size": "0xa",
+        "Offset": "0x46"
       }
     ]
   },
@@ -458,14 +458,14 @@
       }
     ]
   },
-  "MovieSceneAkAudioEventTrack": {
+  "MovieSceneAkAudioRTPCTrack": {
     "Super": "MovieSceneAkTrack",
     "FullSize": "0xa0",
     "InheritedSize": "0xa0",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "MovieSceneAkAudioRTPCTrack": {
+  "MovieSceneAkAudioEventTrack": {
     "Super": "MovieSceneAkTrack",
     "FullSize": "0xa0",
     "InheritedSize": "0xa0",

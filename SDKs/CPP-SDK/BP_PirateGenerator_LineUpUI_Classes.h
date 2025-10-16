@@ -15,13 +15,13 @@ public:
 	struct RadialCoordinate                                      MinBodyShape;                                      // 0x3e0(0x8)
 	struct RadialCoordinate                                      MaxBodyShape;                                      // 0x3e8(0x8)
 	bool                                                         UseIPG;                                            // 0x3f0(0x1)
-	char                                                         pad0x7_KAB5U[0x7];                                 // 0x3f1(0x7)
+	char                                                         pad0x7_QBD26[0x7];                                 // 0x3f1(0x7)
 	class AnimationDataStoreAsset*                               AnimationAsset;                                    // 0x3f8(0x8)
 	class UClass*                                                DefaultAnimationSet;                               // 0x400(0x8)
 	class CarouselPirateGeneratorParamsAsset*                    PirateGeneratorParams;                             // 0x408(0x8)
 	int                                                          NumberOfPiratesCurrentlyGenerating;                // 0x410(0x4)
-	char                                                         pad0x4_UFDKI[0x4];                                 // 0x414(0x4)
-	char                                                         pad0x10_CD7T2[0x10];                               // 0x418(0x10)
+	char                                                         pad0x4_WYLT3[0x4];                                 // 0x414(0x4)
+	char                                                         pad0x10_DA1DI[0x10];                               // 0x418(0x10)
 };
 
 

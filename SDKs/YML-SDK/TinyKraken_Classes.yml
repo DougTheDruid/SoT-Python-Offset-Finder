@@ -8,7 +8,7 @@ SandboxPerformanceConstraintActivity_TinyKraken:
   Super: SandboxPerformanceConstraintActivityType
 TinyKrakenEventService:
   Attributes:
-  - Name: pad0x40_HOU3C[0x40]
+  - Name: pad0x40_6AQUZ[0x40]
     Offset: '0x3a0'
     Size: '0x40'
     Type: char
@@ -16,12 +16,12 @@ TinyKrakenEventService:
     Offset: '0x3e0'
     Size: '0x8'
     Type: class TinyKrakenEventServiceParams*
-  - Name: pad0x50_QU355[0x50]
+  - Name: pad0xf0_ZVH6H[0xf0]
     Offset: '0x3e8'
-    Size: '0x50'
+    Size: '0xf0'
     Type: char
-  ClassSize: '0x98'
-  FullSize: '0x438'
+  ClassSize: '0x138'
+  FullSize: '0x4d8'
   InheritedSize: '0x3a0'
   Super: Actor
 TinyKrakenEventServiceInterface:

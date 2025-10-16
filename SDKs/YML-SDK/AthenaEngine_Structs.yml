@@ -28,7 +28,7 @@ AdaptiveTriggerEffectMode_Feedback:
   ClassSize: '0x3'
 AdaptiveTriggerEffectMode_Off:
   Attributes:
-  - Name: pad0x1_UAYRE[0x1]
+  - Name: pad0x1_OLOE3[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -73,14 +73,14 @@ AdaptiveTriggerEffectMode_Weapon:
   ClassSize: '0x4'
 AthenaAsyncAssetLoaderWrapper:
   Attributes:
-  - Name: pad0x18_M8LXU[0x18]
+  - Name: pad0x18_8LOHS[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
   ClassSize: '0x18'
 BoxedRpc:
   Attributes:
-  - Name: pad0x8_VCH1B[0x8]
+  - Name: pad0x8_REY0T[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -88,7 +88,7 @@ BoxedRpc:
     Offset: '0x8'
     Size: '0x8'
     Type: class ScriptStruct*
-  - Name: pad0x8_UATUE[0x8]
+  - Name: pad0x8_V97IQ[0x8]
     Offset: '0x10'
     Size: '0x8'
     Type: char
@@ -113,14 +113,14 @@ EventCancelForceFeedback:
   ClassSize: '0x10'
 EventMeshAssigned:
   Attributes:
-  - Name: pad0x2_KK3DV[0x2]
+  - Name: pad0x2_MDUD0[0x2]
     Offset: '0x0'
     Size: '0x2'
     Type: char
   ClassSize: '0x2'
 EventMeshVFXAssigned:
   Attributes:
-  - Name: pad0x1_NZ7TG[0x1]
+  - Name: pad0x1_MHL2M[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -135,7 +135,7 @@ EventTriggerForceFeedback:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_20YCR[0x3]
+  - Name: pad0x3_9I620[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -143,7 +143,7 @@ EventTriggerForceFeedback:
     Offset: '0xc'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_QWY89[0x4]
+  - Name: pad0x4_1HSLT[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -183,7 +183,7 @@ PlayModeDefiniton:
   ClassSize: '0x28'
 PlaySoundRpc:
   Attributes:
-  - Name: pad0x18_9P6P5[0x18]
+  - Name: pad0x18_99DF8[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -195,14 +195,14 @@ PlaySoundRpc:
     Offset: '0x20'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_APM6N[0x7]
+  - Name: pad0x7_NU2AB[0x7]
     Offset: '0x21'
     Size: '0x7'
     Type: char
   ClassSize: '0x28'
 SerialisedRpc:
   Attributes:
-  - Name: pad0x18_NP52E[0x18]
+  - Name: pad0x18_EIVPU[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -235,7 +235,7 @@ StringAssetClassPairFeatureOverride:
     Offset: '0x0'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x20_NNVGU[0x20]
+  - Name: pad0x20_UQ15B[0x20]
     Offset: '0x8'
     Size: '0x20'
     Type: char
@@ -246,7 +246,7 @@ UserDefinedStructWithSerialisableValue:
     Offset: '0x0'
     Size: '0x8'
     Type: class ScriptStruct*
-  - Name: pad0x18_9KYD8[0x18]
+  - Name: pad0x18_OFF6R[0x18]
     Offset: '0x8'
     Size: '0x18'
     Type: char

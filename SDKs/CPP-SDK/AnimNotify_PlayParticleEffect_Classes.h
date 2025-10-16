@@ -10,7 +10,7 @@ public:
 	class ParticleSystem*                                        PSTemplate;                                        // 0x38(0x8)
 	struct FString                                               SocketName;                                        // 0x40(0x10)
 	bool                                                         Attached;                                          // 0x50(0x1)
-	char                                                         pad0x3_DUTSJ[0x3];                                 // 0x51(0x3)
+	char                                                         pad0x3_4HGM2[0x3];                                 // 0x51(0x3)
 	struct Vector                                                LocationOffset;                                    // 0x54(0xc)
 	struct Rotator                                               RotationOffset;                                    // 0x60(0xc)
 };

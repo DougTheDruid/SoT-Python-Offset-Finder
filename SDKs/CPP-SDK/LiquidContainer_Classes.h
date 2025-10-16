@@ -14,27 +14,12 @@ public:
 	struct FName                                                 LiquidMaterialParameterName;                       // 0xc0(0x8)
 	TArray<struct LiquidTypeParams>                              LiquidTypeParams;                                  // 0xc8(0x10)
 	float                                                        StartingLiquidLevelNormalised;                     // 0xd8(0x4)
-	char                                                         pad0x4_8M7WX[0x4];                                 // 0xdc(0x4)
+	char                                                         pad0x4_O9NQ0[0x4];                                 // 0xdc(0x4)
 	class CurveFloat*                                            TransitionCurve;                                   // 0xe0(0x8)
 	float                                                        TransitionSpeedDecrease;                           // 0xe8(0x4)
 	float                                                        TransitionSpeedIncrease;                           // 0xec(0x4)
 	TArray<class MaterialInstanceDynamic*>                       LiquidMaterials;                                   // 0xf0(0x10)
-	char                                                         pad0x18_CV4TG[0x18];                               // 0x100(0x18)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class LiquidContainerServiceInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
-class LiquidLevelTransferComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x10_ZM8E3[0x10];                               // 0xb8(0x10)
+	char                                                         pad0x18_D6I97[0x18];                               // 0x100(0x18)
 };
 
 
@@ -49,7 +34,22 @@ public:
 class LiquidContainerService: public InteractableService
 {
 public:
-	char                                                         pad0x8_DL68F[0x8];                                 // 0x70(0x8)
+	char                                                         pad0x8_CLX2I[0x8];                                 // 0x70(0x8)
+};
+
+
+// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
+class LiquidLevelTransferComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x10_OBSN0[0x10];                               // 0xb8(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class LiquidContainerServiceInterface: public Interface
+{
+public:
 };
 
 

@@ -38,10 +38,27 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_YOCQC[0x7]",
+        "Name": "pad0x7_6KE89[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x29"
+      }
+    ]
+  },
+  "TrackItemOwnershipEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "TrackedItem",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x10_W896R[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x8"
       }
     ]
   },
@@ -57,23 +74,6 @@
       {
         "Name": "CrewId",
         "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "TrackItemOwnershipEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "TrackedItem",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x10_IYB77[0x10]",
-        "Type": "char",
         "Size": "0x10",
         "Offset": "0x8"
       }

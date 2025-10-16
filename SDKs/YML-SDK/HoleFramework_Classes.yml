@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 DigsiteObject:
   Attributes:
-  - Name: pad0x18_EJFP2[0x18]
+  - Name: pad0x18_OFRNI[0x18]
     Offset: '0x28'
     Size: '0x18'
     Type: char

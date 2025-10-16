@@ -2,8 +2,8 @@
 # https://github.com/DougTheDruid
 NavalBattleShipData:
   Attributes:
-  - Name: pad0x2c_MA1VW[0x2c]
+  - Name: pad0xf0_WB554[0xf0]
     Offset: '0x0'
-    Size: '0x2c'
+    Size: '0xf0'
     Type: char
-  ClassSize: '0x2c'
+  ClassSize: '0xf0'

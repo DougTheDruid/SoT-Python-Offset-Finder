@@ -1,9 +1,49 @@
 {
+  "WwiseIOPriorityMappingConfig": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "WwisePriority",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AsyncIOPriority",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x3_TMHE5[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5"
+      }
+    ]
+  },
+  "WwisePlatformMapping": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "UnrealPlatform",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "WwisePlatform",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "ReverbPresetControllerSettings": {
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0xc_7RYMX[0xc]",
+        "Name": "pad0xc_KLOGA[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x0"
@@ -45,33 +85,33 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_3R5Z7[0x4]",
+        "Name": "pad0x4_T8Z9T[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x24"
       }
     ]
   },
-  "WwiseIOPriorityMappingConfig": {
-    "ClassSize": "0x8",
+  "WwiseEventParam": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "WwisePriority",
-        "Type": "int",
-        "Size": "0x4",
+        "Name": "pad0x8_2RD6T[0x8]",
+        "Type": "char",
+        "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "AsyncIOPriority",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x4"
+        "Name": "SourcePath",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
       },
       {
-        "Name": "pad0x3_YQRV0[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x5"
+        "Name": "SourceObj",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
       }
     ]
   },
@@ -92,46 +132,6 @@
       },
       {
         "Name": "LocalPlayerSwitchValue",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "WwisePlatformMapping": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "UnrealPlatform",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "WwisePlatform",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "WwiseEventParam": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x8_N1ALK[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SourcePath",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "SourceObj",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
@@ -201,7 +201,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x3_0GDRN[0x3]",
+        "Name": "pad0x3_J2J5G[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x31"

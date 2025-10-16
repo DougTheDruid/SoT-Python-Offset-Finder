@@ -6,13 +6,106 @@
 #include "StoryFramework_Structs.h"
 
 
-// Size 0x30 (Full Size[0x80] - InheritedSize[0x50]
-class ActiveStorySpawnRequirement: public SpawnRequirement
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class StoryDrivenBlendedLightingZoneComponentDataAsset: public DataAsset
 {
 public:
-	TArray<struct Name>                                          StoryNames;                                        // 0x50(0x10)
-	bool                                                         AllStoriesRequired;                                // 0x60(0x1)
-	char                                                         pad0x1f_K0ZKQ[0x1f];                               // 0x61(0x1f)
+	struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
+	char                                                         pad0x4_PK7PV[0x4];                                 // 0x34(0x4)
+	TArray<struct LightingZoneStoryRelatedSettings>              StoryResponses;                                    // 0x38(0x10)
+	TArray<class StoryDrivenBlendedLightingZoneComponentDataAsset*> AssetsList;                                        // 0x48(0x10)
+};
+
+
+// Size 0x40 (Full Size[0xf8] - InheritedSize[0xb8]
+class StorySpawnedActorsComponent: public ActorComponent
+{
+public:
+	class StorySpawnedActorsComponentDataAsset*                  AssetsCollection;                                  // 0xb8(0x8)
+	char                                                         pad0x38_EL6C0[0x38];                               // 0xc0(0x38)
+};
+
+
+// Size 0x28 (Full Size[0x78] - InheritedSize[0x50]
+class SeasSpawnRequirement: public SpawnRequirement
+{
+public:
+	TArray<class Class*>                                         Seas;                                              // 0x50(0x10)
+	char                                                         pad0x18_XSGLD[0x18];                               // 0x60(0x18)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class StoryClaimedResourcesServiceInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DebugStoryServiceCheatInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x30 (Full Size[0x680] - InheritedSize[0x650]
+class StoryDrivenSalvageItemSpawnComponent: public SalvageItemSpawnComponent
+{
+public:
+	struct StoryFlag                                             Story;                                             // 0x650(0x8)
+	char                                                         pad0x28_CKQSY[0x28];                               // 0x658(0x28)
+};
+
+
+// Size 0x130 (Full Size[0x4d0] - InheritedSize[0x3a0]
+class StoryService: public Actor
+{
+public:
+	char                                                         pad0x28_OJEIM[0x28];                               // 0x3a0(0x28)
+	TArray<struct StoryInfo>                                     Stories;                                           // 0x3c8(0x10)
+	TArray<struct StoryInfo>                                     ActiveStories;                                     // 0x3d8(0x10)
+	char                                                         pad0xe8_6I3WY[0xe8];                               // 0x3e8(0xe8)
+};
+
+
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
+class StorySettings: public DeveloperSettings
+{
+public:
+	struct StringAssetReference                                  StoryNamesCollectionDataAssetLocation;             // 0x38(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x60] - InheritedSize[0x50]
+class IslandSpawnRequirement: public SpawnRequirement
+{
+public:
+	TArray<struct Name>                                          IslandNames;                                       // 0x50(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
+class StorySpawnedActorsSettings: public DeveloperSettings
+{
+public:
+	struct StringAssetReference                                  StorySpawnActorsDataAssetLocation;                 // 0x38(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class StorySpawnedActorsServiceInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x18 (Full Size[0x48] - InheritedSize[0x30]
+class IsStoryActiveNPCDialogConditional: public NPCDialogConditional
+{
+public:
+	struct StoryFlag                                             StoryFlag;                                         // 0x30(0x8)
+	char                                                         pad0x10_I4RGT[0x10];                               // 0x38(0x10)
 };
 
 
@@ -25,82 +118,13 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x60] - InheritedSize[0x50]
-class IslandSpawnRequirement: public SpawnRequirement
+// Size 0x30 (Full Size[0x80] - InheritedSize[0x50]
+class ActiveStorySpawnRequirement: public SpawnRequirement
 {
 public:
-	TArray<struct Name>                                          IslandNames;                                       // 0x50(0x10)
-};
-
-
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class StoryDrivenBlendedLightingZoneComponentDataAsset: public DataAsset
-{
-public:
-	struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
-	char                                                         pad0x4_YKCGZ[0x4];                                 // 0x34(0x4)
-	TArray<struct LightingZoneStoryRelatedSettings>              StoryResponses;                                    // 0x38(0x10)
-	TArray<class StoryDrivenBlendedLightingZoneComponentDataAsset*> AssetsList;                                        // 0x48(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class StorySettings: public DeveloperSettings
-{
-public:
-	struct StringAssetReference                                  StoryNamesCollectionDataAssetLocation;             // 0x38(0x10)
-};
-
-
-// Size 0x58 (Full Size[0x3f8] - InheritedSize[0x3a0]
-class DebugStoryServiceCheat: public Actor
-{
-public:
-	char                                                         pad0x8_X5PSP[0x8];                                 // 0x3a0(0x8)
-	TArray<struct StoryInfo>                                     AllStories;                                        // 0x3a8(0x10)
-	TArray<String>                                               AllIncludeFilters;                                 // 0x3b8(0x10)
-	TArray<String>                                               AllExcludeFilters;                                 // 0x3c8(0x10)
-	char                                                         pad0x20_IPXJA[0x20];                               // 0x3d8(0x20)
-};
-
-
-// Size 0x138 (Full Size[0x4d8] - InheritedSize[0x3a0]
-class StorySpawnedActorsService: public Actor
-{
-public:
-	char                                                         pad0x18_R84FF[0x18];                               // 0x3a0(0x18)
-	TArray<class StorySpawnedActorsComponent*>                   EarlyRegisteredComponents;                         // 0x3b8(0x10)
-	class StorySpawnedActorsDataAsset*                           Asset;                                             // 0x3c8(0x8)
-	char                                                         pad0x108_G7R58[0x108];                             // 0x3d0(0x108)
-};
-
-
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class StorySpawnedActorsDataAsset: public DataAsset
-{
-public:
-	struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
-	char                                                         pad0x4_7D2S1[0x4];                                 // 0x34(0x4)
-	TArray<struct StorySpawnedActorsList>                        StoryResponses;                                    // 0x38(0x10)
-	TArray<class StorySpawnedActorsDataAsset*>                   AssetsList;                                        // 0x48(0x10)
-};
-
-
-// Size 0x130 (Full Size[0x4d0] - InheritedSize[0x3a0]
-class StoryService: public Actor
-{
-public:
-	char                                                         pad0x28_H370C[0x28];                               // 0x3a0(0x28)
-	TArray<struct StoryInfo>                                     Stories;                                           // 0x3c8(0x10)
-	TArray<struct StoryInfo>                                     ActiveStories;                                     // 0x3d8(0x10)
-	char                                                         pad0xe8_Q3MYO[0xe8];                               // 0x3e8(0xe8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class StorySpawnedActorsServiceInterface: public Interface
-{
-public:
+	TArray<struct Name>                                          StoryNames;                                        // 0x50(0x10)
+	bool                                                         AllStoriesRequired;                                // 0x60(0x1)
+	char                                                         pad0x1f_QAWJV[0x1f];                               // 0x61(0x1f)
 };
 
 
@@ -111,45 +135,14 @@ public:
 };
 
 
-// Size 0x20 (Full Size[0x660] - InheritedSize[0x640]
-class StoryDrivenSalvageItemSpawnComponent: public SalvageItemSpawnComponent
+// Size 0x138 (Full Size[0x4d8] - InheritedSize[0x3a0]
+class StorySpawnedActorsService: public Actor
 {
 public:
-	struct StoryFlag                                             Story;                                             // 0x638(0x8)
-	char                                                         pad0x20_JIJQ9[0x20];                               // 0x640(0x20)
-};
-
-
-// Size 0xc0 (Full Size[0x460] - InheritedSize[0x3a0]
-class StoryClaimedResourcesService: public Actor
-{
-public:
-	char                                                         pad0x60_CBNJU[0x60];                               // 0x3a0(0x60)
-	TArray<uintptr_t>                                            PendingClaims;                                     // 0x400(0x10)
-	char                                                         pad0x50_7FTIL[0x50];                               // 0x410(0x50)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class StoryServiceInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x28 (Full Size[0x78] - InheritedSize[0x50]
-class SeasSpawnRequirement: public SpawnRequirement
-{
-public:
-	TArray<class Class*>                                         Seas;                                              // 0x50(0x10)
-	char                                                         pad0x18_2QQWF[0x18];                               // 0x60(0x18)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class StoryClaimedResourcesServiceInterface: public Interface
-{
-public:
+	char                                                         pad0x18_N8RGQ[0x18];                               // 0x3a0(0x18)
+	TArray<class StorySpawnedActorsComponent*>                   EarlyRegisteredComponents;                         // 0x3b8(0x10)
+	class StorySpawnedActorsDataAsset*                           Asset;                                             // 0x3c8(0x8)
+	char                                                         pad0x108_R7JNY[0x108];                             // 0x3d0(0x108)
 };
 
 
@@ -159,23 +152,17 @@ class StoryDrivenBlendedLightingZoneComponent: public BlendedLightingZoneCompone
 public:
 	class StoryDrivenBlendedLightingZoneComponentDataAsset*      StoryDrivenLightingAssetsCollection;               // 0x318(0x8)
 	struct LightingZoneStoryRelatedSettings                      CurrentStoryResponse;                              // 0x320(0x10)
-	char                                                         pad0x20_WJ0FJ[0x20];                               // 0x330(0x20)
+	char                                                         pad0x20_TDFRO[0x20];                               // 0x330(0x20)
 };
 
 
-// Size 0x40 (Full Size[0xf8] - InheritedSize[0xb8]
-class StorySpawnedActorsComponent: public ActorComponent
+// Size 0xc0 (Full Size[0x460] - InheritedSize[0x3a0]
+class StoryClaimedResourcesService: public Actor
 {
 public:
-	class StorySpawnedActorsComponentDataAsset*                  AssetsCollection;                                  // 0xb8(0x8)
-	char                                                         pad0x38_YHOFR[0x38];                               // 0xc0(0x38)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DebugStoryServiceCheatInterface: public Interface
-{
-public:
+	char                                                         pad0x60_2H5BQ[0x60];                               // 0x3a0(0x60)
+	TArray<uintptr_t>                                            PendingClaims;                                     // 0x400(0x10)
+	char                                                         pad0x50_QBRBZ[0x50];                               // 0x410(0x50)
 };
 
 
@@ -184,17 +171,20 @@ class StorySpawnedActorsComponentDataAsset: public DataAsset
 {
 public:
 	struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
-	char                                                         pad0x4_QOVLK[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_GLWYR[0x4];                                 // 0x34(0x4)
 	TArray<struct StorySpawnedActorsComponentList>               StoryResponses;                                    // 0x38(0x10)
 	TArray<class StorySpawnedActorsComponentDataAsset*>          AssetsList;                                        // 0x48(0x10)
 };
 
 
-// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class StorySpawnedActorsSettings: public DeveloperSettings
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class StorySpawnedActorsDataAsset: public DataAsset
 {
 public:
-	struct StringAssetReference                                  StorySpawnActorsDataAssetLocation;                 // 0x38(0x10)
+	struct FeatureFlag                                           Feature;                                           // 0x28(0xc)
+	char                                                         pad0x4_WEEC2[0x4];                                 // 0x34(0x4)
+	TArray<struct StorySpawnedActorsList>                        StoryResponses;                                    // 0x38(0x10)
+	TArray<class StorySpawnedActorsDataAsset*>                   AssetsList;                                        // 0x48(0x10)
 };
 
 
@@ -203,16 +193,26 @@ class StoryClaimableResourceComponent: public ActorComponent
 {
 public:
 	struct StoryFlag                                             ClaimedStoryFlag;                                  // 0xb8(0x8)
-	char                                                         pad0x20_EHDCM[0x20];                               // 0xc0(0x20)
+	char                                                         pad0x20_1DCEZ[0x20];                               // 0xc0(0x20)
 };
 
 
-// Size 0x18 (Full Size[0x48] - InheritedSize[0x30]
-class IsStoryActiveNPCDialogConditional: public NPCDialogConditional
+// Size 0x58 (Full Size[0x3f8] - InheritedSize[0x3a0]
+class DebugStoryServiceCheat: public Actor
 {
 public:
-	struct StoryFlag                                             StoryFlag;                                         // 0x30(0x8)
-	char                                                         pad0x10_EOMB9[0x10];                               // 0x38(0x10)
+	char                                                         pad0x8_OTEI9[0x8];                                 // 0x3a0(0x8)
+	TArray<struct StoryInfo>                                     AllStories;                                        // 0x3a8(0x10)
+	TArray<String>                                               AllIncludeFilters;                                 // 0x3b8(0x10)
+	TArray<String>                                               AllExcludeFilters;                                 // 0x3c8(0x10)
+	char                                                         pad0x20_TO69K[0x20];                               // 0x3d8(0x20)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class StoryServiceInterface: public Interface
+{
+public:
 };
 
 

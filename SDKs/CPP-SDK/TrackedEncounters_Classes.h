@@ -6,6 +6,68 @@
 #include "TrackedEncounters_Structs.h"
 
 
+// Size 0x180 (Full Size[0x520] - InheritedSize[0x3a0]
+class TrackedEncountersEventService: public Actor
+{
+public:
+	char                                                         pad0x10_Q3BHY[0x10];                               // 0x3a0(0x10)
+	class TrackedEncountersEventServiceParams*                   TrackedEncounterServiceParams;                     // 0x3b0(0x8)
+	char                                                         pad0x168_R8N22[0x168];                             // 0x3b8(0x168)
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class TrackedEncountersEventServiceParams: public DataAsset
+{
+public:
+	class UClass*                                                TrackedEncounterClassId;                           // 0x28(0x8)
+	class EnvQuery*                                              EncounterSpawnLocationEQSQuery;                    // 0x30(0x8)
+	class TrackedEncounterParams*                                TrackedEncounterParams;                            // 0x38(0x8)
+	char                                                         MaxNumberOfEvents;                                 // 0x40(0x1)
+	char                                                         pad0x7_2FKDD[0x7];                                 // 0x41(0x7)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class EnvQueryContext_AllGameEventAIEncounterOccupiedLocations: public EnvQueryContext
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class SPC_SharedResource_TrackedEncounters: public SandboxPerformanceConstraintSharedResourceType
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class GameEventAIEncounterDebugFunctionLibrary: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
+// Size 0x98 (Full Size[0xe0] - InheritedSize[0x48]
+class TrackedEncounterParams: public GameEventParams
+{
+public:
+	class AIFixedWavesSpawner*                                   Spawner;                                           // 0x48(0x8)
+	TArray<struct Name>                                          IslandNames;                                       // 0x50(0x10)
+	struct FName                                                 NamedPointsGroup;                                  // 0x60(0x8)
+	class UClass*                                                LootAIClassIdSpawnCriteria;                        // 0x68(0x8)
+	class LootSpawnParamsDataAsset*                              LootDataAsset;                                     // 0x70(0x8)
+	float                                                        EventSignalHeightOffset;                           // 0x98(0x4)
+	char                                                         pad0x4_RUTU2[0x4];                                 // 0x9c(0x4)
+	float                                                        BeaconHeightOffset;                                // 0xc0(0x4)
+	char                                                         pad0x4_NMF0R[0x4];                                 // 0xc4(0x4)
+	class UClass*                                                DioramaLocationSourceActor;                        // 0xc8(0x8)
+	class AIDioramaDesc*                                         DioramaDesc;                                       // 0xd0(0x8)
+	class SceneDialogueData*                                     DioramaDialogue;                                   // 0xd8(0x8)
+};
+
+
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class SPC_Activity_TrackedEncounters: public SandboxPerformanceConstraintActivityType
 {
@@ -20,24 +82,7 @@ public:
 };
 
 
-// Size 0x190 (Full Size[0x530] - InheritedSize[0x3a0]
-class TrackedEncountersEventService: public Actor
-{
-public:
-	char                                                         pad0x10_1IF7B[0x10];                               // 0x3a0(0x10)
-	class TrackedEncountersEventServiceParams*                   TrackedEncounterServiceParams;                     // 0x3b0(0x8)
-	char                                                         pad0x178_WIFGZ[0x178];                             // 0x3b8(0x178)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SPC_SharedResource_TrackedEncounters: public SandboxPerformanceConstraintSharedResourceType
-{
-public:
-};
-
-
-// Size 0x108 (Full Size[0x4a8] - InheritedSize[0x3a0]
+// Size 0x140 (Full Size[0x4e0] - InheritedSize[0x3a0]
 class TrackedEncounter: public Actor
 {
 public:
@@ -46,35 +91,9 @@ public:
 	class AIProximityPlayerTracker*                              ProximityPlayerTracker;                            // 0x3b0(0x8)
 	class AIItemSpawnComponent*                                  LootItemSpawnComponent;                            // 0x3b8(0x8)
 	class UClass*                                                AIClassToTriggerLoot;                              // 0x3c0(0x8)
-	class AIDioramaController*                                   AIDioramaController;                               // 0x3c8(0x8)
-	char                                                         pad0xd8_D58AV[0xd8];                               // 0x3d0(0xd8)
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class TrackedEncountersEventServiceParams: public DataAsset
-{
-public:
-	class UClass*                                                TrackedEncounterClassId;                           // 0x28(0x8)
-	class EnvQuery*                                              EncounterSpawnLocationEQSQuery;                    // 0x30(0x8)
-	class TrackedEncounterParams*                                TrackedEncounterParams;                            // 0x38(0x8)
-	char                                                         MaxNumberOfEvents;                                 // 0x40(0x1)
-	char                                                         pad0x7_JAOGQ[0x7];                                 // 0x41(0x7)
-};
-
-
-// Size 0x58 (Full Size[0xa0] - InheritedSize[0x48]
-class TrackedEncounterParams: public GameEventParams
-{
-public:
-	class AIFixedWavesSpawner*                                   Spawner;                                           // 0x48(0x8)
-	class UClass*                                                LootAIClassIdSpawnCriteria;                        // 0x50(0x8)
-	class LootSpawnParamsDataAsset*                              LootDataAsset;                                     // 0x58(0x8)
-	float                                                        EventSignalHeightOffset;                           // 0x80(0x4)
-	char                                                         pad0x4_EHWCH[0x4];                                 // 0x84(0x4)
-	class AIDioramaDesc*                                         DioramaDesc;                                       // 0x88(0x8)
-	class UClass*                                                DioramaCategory;                                   // 0x90(0x8)
-	class SceneDialogueData*                                     DioramaDialogue;                                   // 0x98(0x8)
+	class AIDioramaLocationSourceActor*                          DioramaLocationSource;                             // 0x3c8(0x8)
+	class AIDioramaController*                                   AIDioramaController;                               // 0x3d0(0x8)
+	char                                                         pad0x108_3E71J[0x108];                             // 0x3d8(0x108)
 };
 
 

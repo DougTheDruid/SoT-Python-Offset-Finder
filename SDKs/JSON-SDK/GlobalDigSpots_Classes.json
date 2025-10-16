@@ -1,17 +1,17 @@
 {
-  "GlobalDigSpotDebugCheatInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "GlobalDigSpotServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "GlobalDigSpotVoyageTriggerActor": {
+    "Super": "GlobalVoyageTriggerActor",
+    "FullSize": "0x408",
+    "InheritedSize": "0x3f0",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_WRYBF[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x3f0"
+      }
+    ]
   },
   "GlobalDigSpotDefinitionList": {
     "Super": "DataAsset",
@@ -27,6 +27,34 @@
       }
     ]
   },
+  "GlobalDigSpotServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GlobalDigSpotDebugCheat": {
+    "Super": "Actor",
+    "FullSize": "0x3a8",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_3P2S8[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3a0"
+      }
+    ]
+  },
+  "GlobalDigSpotDebugCheatInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "GlobalDigSpotSettings": {
     "Super": "DeveloperSettings",
     "FullSize": "0x40",
@@ -41,20 +69,6 @@
       }
     ]
   },
-  "GlobalDigSpotVoyageTriggerActor": {
-    "Super": "GlobalVoyageTriggerActor",
-    "FullSize": "0x408",
-    "InheritedSize": "0x3f0",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_5R2FB[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x3f0"
-      }
-    ]
-  },
   "GlobalDigSpotService": {
     "Super": "Actor",
     "FullSize": "0x3d0",
@@ -62,7 +76,7 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x8_M4O6O[0x8]",
+        "Name": "pad0x8_XS40H[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3a0"
@@ -86,24 +100,10 @@
         "Offset": "0x3b8"
       },
       {
-        "Name": "pad0x10_Q9TJ1[0x10]",
+        "Name": "pad0x10_V81HW[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3c0"
-      }
-    ]
-  },
-  "GlobalDigSpotDebugCheat": {
-    "Super": "Actor",
-    "FullSize": "0x3a8",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_2UO30[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x3a0"
       }
     ]
   },

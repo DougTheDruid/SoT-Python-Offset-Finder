@@ -6,13 +6,6 @@
 #include "ActorSequence_Structs.h"
 
 
-// Size 0x0 (Full Size[0x608] - InheritedSize[0x608]
-class ActorSequencePlayer: public MovieSceneSequencePlayer
-{
-public:
-};
-
-
 // Size 0x28 (Full Size[0x2d0] - InheritedSize[0x2a8]
 class ActorSequence: public MovieSceneSequence
 {
@@ -30,7 +23,14 @@ public:
 	class ActorSequence*                                         Sequence;                                          // 0xe0(0x8)
 	class ActorSequencePlayer*                                   SequencePlayer;                                    // 0xe8(0x8)
 	bool                                                         bAutoPlay;                                         // 0xf0(0x1)
-	char                                                         pad0x7_POI0T[0x7];                                 // 0xf1(0x7)
+	char                                                         pad0x7_GSS8V[0x7];                                 // 0xf1(0x7)
+};
+
+
+// Size 0x0 (Full Size[0x608] - InheritedSize[0x608]
+class ActorSequencePlayer: public MovieSceneSequencePlayer
+{
+public:
 };
 
 

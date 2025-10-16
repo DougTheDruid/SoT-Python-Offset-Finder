@@ -8,7 +8,7 @@ struct EnemyAIOnShipActiveEncounters
 {
 public:
 	class Actor*                                                 Ship;                                              // 0x0(0x8)
-	char                                                         pad0x10_86GYE[0x10];                               // 0x8(0x10)
+	char                                                         pad0x10_P5Y8E[0x10];                               // 0x8(0x10)
 };
 
 

@@ -6,7 +6,7 @@ UdpMessagingSettings:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_NJT3R[0x7]
+  - Name: pad0x7_JN6H3[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
@@ -22,7 +22,7 @@ UdpMessagingSettings:
     Offset: '0x50'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_35KCX[0x7]
+  - Name: pad0x7_83FP1[0x7]
     Offset: '0x51'
     Size: '0x7'
     Type: char
@@ -34,7 +34,7 @@ UdpMessagingSettings:
     Offset: '0x68'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_K407P[0x7]
+  - Name: pad0x7_C0K3P[0x7]
     Offset: '0x69'
     Size: '0x7'
     Type: char

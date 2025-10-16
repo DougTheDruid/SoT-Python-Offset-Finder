@@ -1,4 +1,11 @@
 {
+  "HoleServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "DigsiteObject": {
     "Super": "Object",
     "FullSize": "0x40",
@@ -6,19 +13,12 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x18_EJFP2[0x18]",
+        "Name": "pad0x18_OFRNI[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x28"
       }
     ]
-  },
-  "HoleServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "HoleInterface": {
     "Super": "Interface",

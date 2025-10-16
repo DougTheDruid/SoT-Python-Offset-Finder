@@ -6,54 +6,24 @@
 #include "EnchantedCompass_Structs.h"
 
 
+// Size 0x148 (Full Size[0x200] - InheritedSize[0xb8]
+class EnchantedCompassProximityAnnouncementComponent: public ActorComponent
+{
+public:
+	class WwiseEvent*                                            StartAnnouncingEvent;                              // 0xb8(0x8)
+	class WwiseEvent*                                            StopAnnouncingEvent;                               // 0xc0(0x8)
+	float                                                        MaxFrequencyDistanceSquared;                       // 0xc8(0x4)
+	char                                                         pad0x4_DVOCE[0x4];                                 // 0xcc(0x4)
+	bool                                                         IsSettingEnabled;                                  // 0x110(0x1)
+	char                                                         pad0xef_CICCF[0xef];                               // 0x111(0xef)
+};
+
+
 // Size 0x10 (Full Size[0xa8] - InheritedSize[0x98]
 class TaleQuestMultiTargetCompassRemoveTrackedLocationStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x10_3HPY9[0x10];                               // 0x98(0x10)
-};
-
-
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class TaleQuestMultiTargetCompassRemoveTrackedLocationStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableGuid                                     TargetID;                                          // 0x80(0x30)
-};
-
-
-// Size 0x20 (Full Size[0x190] - InheritedSize[0x170]
-class TaleQuestMultiTargetCompassService: public TaleQuestToolService
-{
-public:
-	char                                                         pad0x20_FG8TH[0x20];                               // 0x170(0x20)
-};
-
-
-// Size 0x60 (Full Size[0xf8] - InheritedSize[0x98]
-class TaleQuestSetCompassTargetToTargetStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x60_HXCS9[0x60];                               // 0x98(0x60)
-};
-
-
-// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
-class TaleQuestSetRotationCurveForRotatingCompassStepDesc: public TaleQuestStepDesc
-{
-public:
-	class CurveFloat*                                            RotationSequenceCurve;                             // 0x80(0x8)
-};
-
-
-// Size 0xc0 (Full Size[0x120] - InheritedSize[0x60]
-class TaleQuestRotatingCompassService: public TaleQuestService
-{
-public:
-	char                                                         pad0x18_CM42J[0x18];                               // 0x60(0x18)
-	class Actor*                                                 SplinePathActor;                                   // 0x78(0x8)
-	class RotatingCompass*                                       RotatingCompass;                                   // 0x80(0x8)
-	char                                                         pad0x98_3IBJD[0x98];                               // 0x88(0x98)
+	char                                                         pad0x10_NU3KM[0x10];                               // 0x98(0x10)
 };
 
 
@@ -72,6 +42,33 @@ public:
 };
 
 
+// Size 0x60 (Full Size[0xf8] - InheritedSize[0x98]
+class TaleQuestSetCompassTargetToTargetStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x60_9K74Q[0x60];                               // 0x98(0x60)
+};
+
+
+// Size 0xc0 (Full Size[0x120] - InheritedSize[0x60]
+class TaleQuestRotatingCompassService: public TaleQuestService
+{
+public:
+	char                                                         pad0x18_YZGQ7[0x18];                               // 0x60(0x18)
+	class Actor*                                                 SplinePathActor;                                   // 0x78(0x8)
+	class RotatingCompass*                                       RotatingCompass;                                   // 0x80(0x8)
+	char                                                         pad0x98_0NXBA[0x98];                               // 0x88(0x98)
+};
+
+
+// Size 0x20 (Full Size[0x190] - InheritedSize[0x170]
+class TaleQuestMultiTargetCompassService: public TaleQuestToolService
+{
+public:
+	char                                                         pad0x20_THR7Y[0x20];                               // 0x170(0x20)
+};
+
+
 // Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
 class TaleQuestSetRotationCurveForRotatingCompassStep: public TaleQuestStep
 {
@@ -79,24 +76,11 @@ public:
 };
 
 
-// Size 0x148 (Full Size[0x200] - InheritedSize[0xb8]
-class EnchantedCompassProximityAnnouncementComponent: public ActorComponent
+// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
+class TaleQuestRotatingCompassSplinePathSetupAndWaitForCompletionStep: public TaleQuestStep
 {
 public:
-	class WwiseEvent*                                            StartAnnouncingEvent;                              // 0xb8(0x8)
-	class WwiseEvent*                                            StopAnnouncingEvent;                               // 0xc0(0x8)
-	float                                                        MaxFrequencyDistanceSquared;                       // 0xc8(0x4)
-	char                                                         pad0x4_6WWGG[0x4];                                 // 0xcc(0x4)
-	bool                                                         IsSettingEnabled;                                  // 0x110(0x1)
-	char                                                         pad0xef_NJQV3[0xef];                               // 0x111(0xef)
-};
-
-
-// Size 0x8 (Full Size[0x1e0] - InheritedSize[0x1d8]
-class RotatingCompassSpinComponent: public CompassSpinComponent
-{
-public:
-	char                                                         pad0x8_ISTH1[0x8];                                 // 0x1d8(0x8)
+	char                                                         pad0x8_LJNJ8[0x8];                                 // 0x98(0x8)
 };
 
 
@@ -108,7 +92,7 @@ public:
 	TArray<struct Guid>                                          LocationIds;                                       // 0x8f8(0x10)
 	class InventoryItemComponent*                                InventoryItem;                                     // 0x908(0x8)
 	class EnchantedCompassProximityAnnouncementComponent*        ProximityAnnouncementComponent;                    // 0x910(0x8)
-	char                                                         pad0x8_C41GW[0x8];                                 // 0x918(0x8)
+	char                                                         pad0x8_75L8F[0x8];                                 // 0x918(0x8)
 };
 
 
@@ -118,23 +102,6 @@ class TaleQuestMultiTargetCompassAddTrackedLocationStepDesc: public TaleQuestSte
 public:
 	struct QuestVariableVector                                   Location;                                          // 0x80(0x30)
 	struct QuestVariableGuid                                     TargetID;                                          // 0xb0(0x30)
-};
-
-
-// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
-class TaleQuestRotatingCompassSplinePathSetupAndWaitForCompletionStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x8_O9NT5[0x8];                                 // 0x98(0x8)
-};
-
-
-// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
-class TaleQuestSetCompassTargetBaseStepDesc: public TaleQuestStepDesc
-{
-public:
-	char                                                         TargetUpdateReason;                                // 0x80(0x1)
-	char                                                         pad0x7_KQG0I[0x7];                                 // 0x81(0x7)
 };
 
 
@@ -156,13 +123,29 @@ public:
 	class Actor*                                                 SplinePathActor;                                   // 0x9f0(0x8)
 	class CurveFloat*                                            RotationSequenceCurve;                             // 0x9f8(0x8)
 	bool                                                         StartRotationSequenceCurve;                        // 0xa00(0x1)
-	char                                                         pad0x3_ST9UZ[0x3];                                 // 0xa01(0x3)
+	char                                                         pad0x3_K16ZV[0x3];                                 // 0xa01(0x3)
 	float                                                        SplineDistanceOffset;                              // 0xa04(0x4)
 	float                                                        TargetYawAngleBeforeRotationSequence;              // 0xa08(0x4)
-	char                                                         pad0x4_5B2AS[0x4];                                 // 0xa0c(0x4)
+	char                                                         pad0x4_3FUVC[0x4];                                 // 0xa0c(0x4)
 	struct RotatingCompassAudioParams                            AudioParams;                                       // 0xa10(0x48)
 	float                                                        MaxSpeedToTriggerOneShotSfx;                       // 0xa58(0x4)
-	char                                                         pad0x14_6GPHU[0x14];                               // 0xa5c(0x14)
+	char                                                         pad0x14_ICBRG[0x14];                               // 0xa5c(0x14)
+};
+
+
+// Size 0x8 (Full Size[0x1e0] - InheritedSize[0x1d8]
+class RotatingCompassSpinComponent: public CompassSpinComponent
+{
+public:
+	char                                                         pad0x8_8Y9X7[0x8];                                 // 0x1d8(0x8)
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class TaleQuestMultiTargetCompassRemoveTrackedLocationStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableGuid                                     TargetID;                                          // 0x80(0x30)
 };
 
 
@@ -174,6 +157,15 @@ public:
 };
 
 
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class TaleQuestSetCompassTargetBaseStepDesc: public TaleQuestStepDesc
+{
+public:
+	char                                                         TargetUpdateReason;                                // 0x80(0x1)
+	char                                                         pad0x7_L8ZOK[0x7];                                 // 0x81(0x7)
+};
+
+
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class TaleQuestRotatingCompassServiceDesc: public TaleQuestServiceDesc
 {
@@ -181,10 +173,11 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x920] - InheritedSize[0x920]
-class PrototypeMultiTargetEnchantedCompass: public MultiTargetEnchantedCompass
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class TaleQuestSetRotationCurveForRotatingCompassStepDesc: public TaleQuestStepDesc
 {
 public:
+	class CurveFloat*                                            RotationSequenceCurve;                             // 0x80(0x8)
 };
 
 
@@ -193,6 +186,13 @@ class TaleQuestSetCompassTargetToActorStepDesc: public TaleQuestSetCompassTarget
 {
 public:
 	struct QuestVariableActor                                    TargetActor;                                       // 0x88(0x30)
+};
+
+
+// Size 0x0 (Full Size[0x920] - InheritedSize[0x920]
+class PrototypeMultiTargetEnchantedCompass: public MultiTargetEnchantedCompass
+{
+public:
 };
 
 

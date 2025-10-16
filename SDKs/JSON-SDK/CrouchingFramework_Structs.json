@@ -1,4 +1,15 @@
 {
+  "OnEndCrouchEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_G688Q[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "CrouchToastEvent": {
     "ClassSize": "0x1",
     "Attributes": [
@@ -17,61 +28,6 @@
         "Name": "CrouchEnd",
         "Type": "class WwiseEvent*",
         "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CrouchActionStateConstructionInfo": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "pad0x48_94AK6[0x48]",
-        "Type": "char",
-        "Size": "0x48",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "OnEndCrouchEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_ZF6Y2[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "OnStartCrouchEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_AFMQQ[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "OnStartCrouchAudioEvent": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "CrouchStart",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CrouchTransitionTelemetry": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "FailReason",
-        "Type": "struct FString",
-        "Size": "0x10",
         "Offset": "0x0"
       }
     ]
@@ -110,10 +66,54 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x7_O3BND[0x7]",
+        "Name": "pad0x7_P7VGG[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x39"
+      }
+    ]
+  },
+  "CrouchActionStateConstructionInfo": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x48_LK8JI[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "OnStartCrouchEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_AAQ1L[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CrouchTransitionTelemetry": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "FailReason",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "OnStartCrouchAudioEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "CrouchStart",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x0"
       }
     ]
   },

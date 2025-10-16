@@ -1,72 +1,9 @@
 {
-  "SessionServiceLog": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "Category",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Data",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "InstanceId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "TimeSeconds",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "Verbosity",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x7_XQ5UU[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x31"
-      }
-    ]
-  },
-  "SessionServiceLogSubscribe": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_4HEIM[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SessionServiceLogUnsubscribe": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_XM73O[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "SessionServicePing": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_D8UEZ[0x1]",
+        "Name": "pad0x1_4ZML4[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
@@ -107,7 +44,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_C1GFW[0x7]",
+        "Name": "pad0x7_AY7J9[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
@@ -143,10 +80,73 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x7_U14S9[0x7]",
+        "Name": "pad0x7_K0BNZ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x89"
+      }
+    ]
+  },
+  "SessionServiceLog": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "Category",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Data",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "InstanceId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "TimeSeconds",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Verbosity",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x7_ONKJM[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x31"
+      }
+    ]
+  },
+  "SessionServiceLogSubscribe": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_ZLR3H[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SessionServiceLogUnsubscribe": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_445M0[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },

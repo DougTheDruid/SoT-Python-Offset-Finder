@@ -4,6 +4,15 @@
 // https://github.com/DougTheDruid
 
 // Size 0x10
+struct ActorOfInterestUnregisteredEvent
+{
+public:
+	class Actor*                                                 ActorOfInterest;                                   // 0x0(0x8)
+	class UClass*                                                ActorOfInterestId;                                 // 0x8(0x8)
+};
+
+
+// Size 0x10
 struct ActorsOfInterestList
 {
 public:
@@ -13,15 +22,6 @@ public:
 
 // Size 0x10
 struct ActorOfInterestRegisteredEvent
-{
-public:
-	class Actor*                                                 ActorOfInterest;                                   // 0x0(0x8)
-	class UClass*                                                ActorOfInterestId;                                 // 0x8(0x8)
-};
-
-
-// Size 0x10
-struct ActorOfInterestUnregisteredEvent
 {
 public:
 	class Actor*                                                 ActorOfInterest;                                   // 0x0(0x8)

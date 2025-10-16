@@ -11,7 +11,7 @@ public:
 	bool                                                         IsFullScreen;                                      // 0x10(0x1)
 	bool                                                         IsMinimized;                                       // 0x11(0x1)
 	bool                                                         IsFocused;                                         // 0x12(0x1)
-	char                                                         pad0x5_1M7EH[0x5];                                 // 0x13(0x5)
+	char                                                         pad0x5_HIGPI[0x5];                                 // 0x13(0x5)
 };
 
 

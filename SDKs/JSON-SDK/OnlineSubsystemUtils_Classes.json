@@ -1,4 +1,32 @@
 {
+  "LeaderboardQueryCallbackProxy": {
+    "Super": "Object",
+    "FullSize": "0x90",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Name": "pad0x68_BR0O5[0x68]",
+        "Type": "char",
+        "Size": "0x68",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "OnlineBlueprintCallProxyBase": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TurnBasedBlueprintLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "LogoutCallbackProxy": {
     "Super": "BlueprintAsyncActionBase",
     "FullSize": "0x60",
@@ -6,56 +34,10 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "pad0x38_9V2PB[0x38]",
+        "Name": "pad0x38_NY3CZ[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x28"
-      }
-    ]
-  },
-  "LeaderboardFlushCallbackProxy": {
-    "Super": "Object",
-    "FullSize": "0x60",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "pad0x38_LIMZT[0x38]",
-        "Type": "char",
-        "Size": "0x38",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "OnlineSessionClient": {
-    "Super": "OnlineSession",
-    "FullSize": "0x178",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x150",
-    "Attributes": [
-      {
-        "Name": "pad0x148_H2OU2[0x148]",
-        "Type": "char",
-        "Size": "0x148",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "bIsFromInvite",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x170"
-      },
-      {
-        "Name": "bHandlingDisconnect",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x171"
-      },
-      {
-        "Name": "pad0x6_PTPYP[0x6]",
-        "Type": "char",
-        "Size": "0x6",
-        "Offset": "0x172"
       }
     ]
   },
@@ -114,33 +96,12 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x10_FG4I5[0x10]",
+        "Name": "pad0x10_N1OY7[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x58"
       }
     ]
-  },
-  "ShowLoginUICallbackProxy": {
-    "Super": "BlueprintAsyncActionBase",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x30_HDWBF[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "LeaderboardBlueprintLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "IpConnection": {
     "Super": "NetConnection",
@@ -149,111 +110,10 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x50_PLZR7[0x50]",
+        "Name": "pad0x50_LDM2B[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x34690"
-      }
-    ]
-  },
-  "AchievementBlueprintLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "InAppPurchaseQueryCallbackProxy": {
-    "Super": "Object",
-    "FullSize": "0x98",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "pad0x70_UT56Z[0x70]",
-        "Type": "char",
-        "Size": "0x70",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "InAppPurchaseRestoreCallbackProxy": {
-    "Super": "Object",
-    "FullSize": "0x98",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "pad0x70_P2YQA[0x70]",
-        "Type": "char",
-        "Size": "0x70",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "InAppPurchaseCallbackProxy": {
-    "Super": "Object",
-    "FullSize": "0x88",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "pad0x60_1NECN[0x60]",
-        "Type": "char",
-        "Size": "0x60",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "LeaderboardQueryCallbackProxy": {
-    "Super": "Object",
-    "FullSize": "0x90",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x68",
-    "Attributes": [
-      {
-        "Name": "pad0x68_IM3HL[0x68]",
-        "Type": "char",
-        "Size": "0x68",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "OnlineBeacon": {
-    "Super": "Actor",
-    "FullSize": "0x3c8",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x8_9BFH7[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "BeaconConnectionInitialTimeout",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3a8"
-      },
-      {
-        "Name": "BeaconConnectionTimeout",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3ac"
-      },
-      {
-        "Name": "NetDriver",
-        "Type": "class NetDriver*",
-        "Size": "0x8",
-        "Offset": "0x3b0"
-      },
-      {
-        "Name": "pad0x10_LJ6GY[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x3b8"
       }
     ]
   },
@@ -283,12 +143,89 @@
       }
     ]
   },
-  "TurnBasedBlueprintLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
+  "ShowLoginUICallbackProxy": {
+    "Super": "BlueprintAsyncActionBase",
+    "FullSize": "0x58",
     "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_3F8KU[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "OnlineBeacon": {
+    "Super": "Actor",
+    "FullSize": "0x3c8",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x8_EVGWO[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "BeaconConnectionInitialTimeout",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3a8"
+      },
+      {
+        "Name": "BeaconConnectionTimeout",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3ac"
+      },
+      {
+        "Name": "NetDriver",
+        "Type": "class NetDriver*",
+        "Size": "0x8",
+        "Offset": "0x3b0"
+      },
+      {
+        "Name": "pad0x10_0EAFT[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x3b8"
+      }
+    ]
+  },
+  "OnlineSessionClient": {
+    "Super": "OnlineSession",
+    "FullSize": "0x178",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x150",
+    "Attributes": [
+      {
+        "Name": "pad0x148_W7DEI[0x148]",
+        "Type": "char",
+        "Size": "0x148",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "bIsFromInvite",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x170"
+      },
+      {
+        "Name": "bHandlingDisconnect",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x171"
+      },
+      {
+        "Name": "pad0x6_XYUN9[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x172"
+      }
+    ]
   },
   "IpNetDriver": {
     "Super": "NetDriver",
@@ -309,36 +246,85 @@
         "Offset": "0x4e0"
       },
       {
-        "Name": "pad0x3_WC5X6[0x3]",
+        "Name": "pad0x3_SF0KI[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x4e1"
       },
       {
-        "Name": "pad0x4c_Y9748[0x4c]",
+        "Name": "pad0x4c_QED2Z[0x4c]",
         "Type": "char",
         "Size": "0x4c",
         "Offset": "0x4e4"
       }
     ]
   },
-  "OnlineBlueprintCallProxyBase": {
+  "InAppPurchaseQueryCallbackProxy": {
     "Super": "Object",
+    "FullSize": "0x98",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "pad0x70_DHYTM[0x70]",
+        "Type": "char",
+        "Size": "0x70",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "AchievementBlueprintLibrary": {
+    "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "CreateSessionCallbackProxy": {
-    "Super": "OnlineBlueprintCallProxyBase",
-    "FullSize": "0x80",
+  "LeaderboardFlushCallbackProxy": {
+    "Super": "Object",
+    "FullSize": "0x60",
     "InheritedSize": "0x28",
-    "ClassSize": "0x58",
+    "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "pad0x58_WL481[0x58]",
+        "Name": "pad0x38_KEESD[0x38]",
         "Type": "char",
-        "Size": "0x58",
+        "Size": "0x38",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "InAppPurchaseRestoreCallbackProxy": {
+    "Super": "Object",
+    "FullSize": "0x98",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "pad0x70_TR84V[0x70]",
+        "Type": "char",
+        "Size": "0x70",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "LeaderboardBlueprintLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "InAppPurchaseCallbackProxy": {
+    "Super": "Object",
+    "FullSize": "0x88",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "pad0x60_Q2XHP[0x60]",
+        "Type": "char",
+        "Size": "0x60",
         "Offset": "0x28"
       }
     ]
@@ -350,7 +336,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x60_AHAY7[0x60]",
+        "Name": "pad0x60_9YTIE[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0x28"
@@ -364,23 +350,44 @@
     "ClassSize": "0x130",
     "Attributes": [
       {
-        "Name": "pad0x130_IJPFU[0x130]",
+        "Name": "pad0x130_HWCSG[0x130]",
         "Type": "char",
         "Size": "0x130",
         "Offset": "0x28"
       }
     ]
   },
-  "AchievementQueryCallbackProxy": {
+  "AchievementWriteCallbackProxy": {
     "Super": "OnlineBlueprintCallProxyBase",
-    "FullSize": "0x60",
+    "FullSize": "0x80",
     "InheritedSize": "0x28",
-    "ClassSize": "0x38",
+    "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "pad0x38_8S1IR[0x38]",
+        "Name": "pad0x58_8EGZM[0x58]",
         "Type": "char",
-        "Size": "0x38",
+        "Size": "0x58",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "TestBeaconHost": {
+    "Super": "OnlineBeaconHostObject",
+    "FullSize": "0x3c8",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "EndTurnCallbackProxy": {
+    "Super": "OnlineBlueprintCallProxyBase",
+    "FullSize": "0x70",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x48_2CHQJ[0x48]",
+        "Type": "char",
+        "Size": "0x48",
         "Offset": "0x28"
       }
     ]
@@ -410,24 +417,56 @@
         "Offset": "0x3d8"
       },
       {
-        "Name": "pad0x17_BURB6[0x17]",
+        "Name": "pad0x17_T2D55[0x17]",
         "Type": "char",
         "Size": "0x17",
         "Offset": "0x3d9"
       }
     ]
   },
-  "AchievementWriteCallbackProxy": {
+  "EndMatchCallbackProxy": {
     "Super": "OnlineBlueprintCallProxyBase",
-    "FullSize": "0x80",
+    "FullSize": "0x78",
     "InheritedSize": "0x28",
-    "ClassSize": "0x58",
+    "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x58_MP7CS[0x58]",
+        "Name": "pad0x50_LLZ6E[0x50]",
         "Type": "char",
-        "Size": "0x58",
+        "Size": "0x50",
         "Offset": "0x28"
+      }
+    ]
+  },
+  "OnlineBeaconHost": {
+    "Super": "OnlineBeacon",
+    "FullSize": "0x480",
+    "InheritedSize": "0x3c8",
+    "ClassSize": "0xb8",
+    "Attributes": [
+      {
+        "Name": "ListenPort",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x3c8"
+      },
+      {
+        "Name": "pad0x4_6UTWE[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3cc"
+      },
+      {
+        "Name": "ClientActors",
+        "Type": "TArray<class OnlineBeaconClient*>",
+        "Size": "0x10",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "pad0xa0_NIWDS[0xa0]",
+        "Type": "char",
+        "Size": "0xa0",
+        "Offset": "0x3e0"
       }
     ]
   },
@@ -444,7 +483,7 @@
         "Offset": "0x3c8"
       },
       {
-        "Name": "pad0x28_8CUCN[0x28]",
+        "Name": "pad0x28_KECRH[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x3d0"
@@ -463,111 +502,16 @@
       }
     ]
   },
-  "ConnectionCallbackProxy": {
+  "AchievementQueryCallbackProxy": {
     "Super": "OnlineBlueprintCallProxyBase",
-    "FullSize": "0x68",
+    "FullSize": "0x60",
     "InheritedSize": "0x28",
-    "ClassSize": "0x40",
+    "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "pad0x40_JON8Z[0x40]",
+        "Name": "pad0x38_QR1O6[0x38]",
         "Type": "char",
-        "Size": "0x40",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "DestroySessionCallbackProxy": {
-    "Super": "OnlineBlueprintCallProxyBase",
-    "FullSize": "0x68",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "pad0x40_R1ZVW[0x40]",
-        "Type": "char",
-        "Size": "0x40",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "EndMatchCallbackProxy": {
-    "Super": "OnlineBlueprintCallProxyBase",
-    "FullSize": "0x78",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x50_PDMGG[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "FindSessionsCallbackProxy": {
-    "Super": "OnlineBlueprintCallProxyBase",
-    "FullSize": "0x88",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "pad0x60_ENBJ2[0x60]",
-        "Type": "char",
-        "Size": "0x60",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "TestBeaconHost": {
-    "Super": "OnlineBeaconHostObject",
-    "FullSize": "0x3c8",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "OnlineBeaconHost": {
-    "Super": "OnlineBeacon",
-    "FullSize": "0x480",
-    "InheritedSize": "0x3c8",
-    "ClassSize": "0xb8",
-    "Attributes": [
-      {
-        "Name": "ListenPort",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x3c8"
-      },
-      {
-        "Name": "pad0x4_I5EHO[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3cc"
-      },
-      {
-        "Name": "ClientActors",
-        "Type": "TArray<class OnlineBeaconClient*>",
-        "Size": "0x10",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "pad0xa0_1IXTZ[0xa0]",
-        "Type": "char",
-        "Size": "0xa0",
-        "Offset": "0x3e0"
-      }
-    ]
-  },
-  "EndTurnCallbackProxy": {
-    "Super": "OnlineBlueprintCallProxyBase",
-    "FullSize": "0x70",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "pad0x48_4JEIW[0x48]",
-        "Type": "char",
-        "Size": "0x48",
+        "Size": "0x38",
         "Offset": "0x28"
       }
     ]
@@ -579,12 +523,75 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x48_B7WJK[0x48]",
+        "Name": "pad0x48_430UQ[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0x28"
       }
     ]
+  },
+  "CreateSessionCallbackProxy": {
+    "Super": "OnlineBlueprintCallProxyBase",
+    "FullSize": "0x80",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "pad0x58_LUEOP[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "DestroySessionCallbackProxy": {
+    "Super": "OnlineBlueprintCallProxyBase",
+    "FullSize": "0x68",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "pad0x40_M1JZQ[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "ConnectionCallbackProxy": {
+    "Super": "OnlineBlueprintCallProxyBase",
+    "FullSize": "0x68",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "pad0x40_K5TQ6[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "FindSessionsCallbackProxy": {
+    "Super": "OnlineBlueprintCallProxyBase",
+    "FullSize": "0x88",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "pad0x60_EL38G[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "TestBeaconClient": {
+    "Super": "OnlineBeaconClient",
+    "FullSize": "0x3f0",
+    "InheritedSize": "0x3f0",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "PartyBeaconClient": {
     "Super": "OnlineBeaconClient",
@@ -593,7 +600,7 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "pad0x10_QD5RZ[0x10]",
+        "Name": "pad0x10_NEDQ9[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x3f0"
@@ -629,19 +636,12 @@
         "Offset": "0x442"
       },
       {
-        "Name": "pad0x5_7TEXO[0x5]",
+        "Name": "pad0x5_MEK0D[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x443"
       }
     ]
-  },
-  "TestBeaconClient": {
-    "Super": "OnlineBeaconClient",
-    "FullSize": "0x3f0",
-    "InheritedSize": "0x3f0",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

@@ -13,14 +13,22 @@ public:
 };
 
 
-// Size 0x148 (Full Size[0x4e8] - InheritedSize[0x3a0]
+// Size 0xd0 (Full Size[0x470] - InheritedSize[0x3a0]
 class NavalBattleService: public Actor
 {
 public:
-	char                                                         pad0x8_MN5YC[0x8];                                 // 0x3a0(0x8)
-	float                                                        BattleRange;                                       // 0x3a8(0x4)
-	float                                                        BattleTime;                                        // 0x3ac(0x4)
-	char                                                         pad0x138_9U2UY[0x138];                             // 0x3b0(0x138)
+	char                                                         pad0xd0_ICOPL[0xd0];                               // 0x3a0(0xd0)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class NavalBattleServiceParamsDataAsset: public DataAsset
+{
+public:
+	float                                                        BattleRange;                                       // 0x28(0x4)
+	float                                                        BattleTime;                                        // 0x2c(0x4)
+	int                                                          NumberOfSinksToInitiateMigration;                  // 0x30(0x4)
+	char                                                         pad0x4_5ZISP[0x4];                                 // 0x34(0x4)
 };
 
 

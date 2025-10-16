@@ -1,4 +1,15 @@
 {
+  "CustomServerLocalisationModel": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x50_MIRFJ[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "CustomServerClientData": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -9,7 +20,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x10_V1TFJ[0x10]",
+        "Name": "pad0x10_JOZ71[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x10"
@@ -30,17 +41,6 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
-      }
-    ]
-  },
-  "CustomServerLocalisationModel": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x50_WMMB4[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x0"
       }
     ]
   },

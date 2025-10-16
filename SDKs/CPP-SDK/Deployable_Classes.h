@@ -6,48 +6,11 @@
 #include "Deployable_Structs.h"
 
 
-// Size 0x428 (Full Size[0x4e0] - InheritedSize[0xb8]
-class ConvertItemToActorComponent: public ActorComponent
+// Size 0x8 (Full Size[0x3a8] - InheritedSize[0x3a0]
+class DeployableExclusionZone: public Actor
 {
 public:
-	char                                                         pad0x18_2YUIC[0x18];                               // 0xb8(0x18)
-	class Actor*                                                 CreatedDeployable;                                 // 0xd0(0x8)
-	class ItemInfo*                                              ItemInfo;                                          // 0xd8(0x8)
-	struct Box                                                   DeployableDimensions;                              // 0x100(0x1c)
-	struct Vector                                                DeployableDimensionOffset;                         // 0x11c(0xc)
-	bool                                                         ProceedWithPeriodicalPlacementChecks;              // 0x128(0x1)
-	bool                                                         ProceedWithIsWithinAcceptableAnglePlacementCheck;  // 0x129(0x1)
-	bool                                                         ProceedWithIsInteractorLevelWithProxyPlacementCheck; // 0x12a(0x1)
-	char                                                         pad0x5_SM8UP[0x5];                                 // 0x12b(0x5)
-	struct DeployActionRuleVerbiage                              DeployActionRuleVerbiage;                          // 0x130(0x268)
-	float                                                        MaxPlacementAngle;                                 // 0x398(0x4)
-	float                                                        HoldTime;                                          // 0x39c(0x4)
-	char                                                         pad0x30_KAPT4[0x30];                               // 0x3a0(0x30)
-	bool                                                         IsInExclusionZone;                                 // 0x3d0(0x1)
-	char                                                         pad0x7_7SKA7[0x7];                                 // 0x3d1(0x7)
-	TArray<char>                                                 ShipRegionWhiteList;                               // 0x3d8(0x10)
-	TArray<Class>                                                CaptainsCabins;                                    // 0x3e8(0x10)
-	bool                                                         IsInCaptainsCabin;                                 // 0x3f8(0x1)
-	bool                                                         DroppedNearAnotherControllable;                    // 0x3f9(0x1)
-	char                                                         pad0x1_Z22DG[0x1];                                 // 0x3fa(0x1)
-	char                                                         CollisionChannel;                                  // 0x3fb(0x1)
-	float                                                        TickInterval;                                      // 0x3fc(0x4)
-	bool                                                         FailedDeployment;                                  // 0x400(0x1)
-	bool                                                         FuseMeshRequired;                                  // 0x401(0x1)
-	char                                                         pad0x2_FWA6Y[0x2];                                 // 0x402(0x2)
-	float                                                        FailedDeploymentDelay;                             // 0x404(0x4)
-	char                                                         pad0x8_GHLIZ[0x8];                                 // 0x408(0x8)
-	float                                                        InteractorLevelWithProxyMinDiff;                   // 0x410(0x4)
-	float                                                        InteractorLevelWithProxyMaxDiff;                   // 0x414(0x4)
-	char                                                         TrackedActorType;                                  // 0x418(0x1)
-	char                                                         InteractionDeploymentState;                        // 0x419(0x1)
-	char                                                         pad0x6_Y334Z[0x6];                                 // 0x41a(0x6)
-	class WwiseEvent*                                            PlayDeploySfx;                                     // 0x420(0x8)
-	class WwiseEvent*                                            StopDeploySfx;                                     // 0x428(0x8)
-	class WwiseObjectPoolWrapper*                                PoolWrapper;                                       // 0x430(0x8)
-	char                                                         pad0x28_FRZRS[0x28];                               // 0x438(0x28)
-	class StaticMeshComponent*                                   FuseStaticMeshComponent;                           // 0x460(0x8)
-	char                                                         pad0x78_34DLX[0x78];                               // 0x468(0x78)
+	class BoxComponent*                                          BoxCollision;                                      // 0x3a0(0x8)
 };
 
 
@@ -58,38 +21,75 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x3a8] - InheritedSize[0x3a0]
-class DeployableExclusionZone: public Actor
-{
-public:
-	class BoxComponent*                                          BoxCollision;                                      // 0x3a0(0x8)
-};
-
-
 // Size 0x1b8 (Full Size[0x270] - InheritedSize[0xb8]
 class ConvertActorToItemComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x10_L6YFT[0x10];                               // 0xb8(0x10)
+	char                                                         pad0x10_ESFCC[0x10];                               // 0xb8(0x10)
 	class ItemInfo*                                              ItemInfo;                                          // 0xc8(0x8)
 	struct StringAssetReference                                  DeploymentAnimation;                               // 0xd0(0x10)
 	struct StringAssetReference                                  UndeploymentAnimation;                             // 0xe0(0x10)
 	bool                                                         ProceedWithUndeploymentChecks;                     // 0xf0(0x1)
-	char                                                         pad0x3_GJ3DE[0x3];                                 // 0xf1(0x3)
+	char                                                         pad0x3_QQUQ1[0x3];                                 // 0xf1(0x3)
 	float                                                        AnimationDelay;                                    // 0xf4(0x4)
 	float                                                        HoldTime;                                          // 0xf8(0x4)
 	float                                                        ZSpawnOffset;                                      // 0xfc(0x4)
 	struct UndeployActionRuleVerbiage                            UndeployActionRuleVerbiage;                        // 0x100(0xa8)
-	char                                                         pad0x18_94K1U[0x18];                               // 0x1a8(0x18)
+	char                                                         pad0x18_LBZEK[0x18];                               // 0x1a8(0x18)
 	char                                                         TrackedActorType;                                  // 0x1f0(0x1)
 	char                                                         DeploymentState;                                   // 0x1f1(0x1)
 	char                                                         InteractionDeploymentState;                        // 0x1f2(0x1)
-	char                                                         pad0x5_R9KXE[0x5];                                 // 0x1f3(0x5)
+	char                                                         pad0x5_STY8F[0x5];                                 // 0x1f3(0x5)
 	class Actor*                                                 CreatedProxyActor;                                 // 0x1f8(0x8)
 	class WwiseEvent*                                            PlayCollapseSfx;                                   // 0x200(0x8)
 	class WwiseEvent*                                            StopCollapseSfx;                                   // 0x208(0x8)
 	class WwiseObjectPoolWrapper*                                PoolWrapper;                                       // 0x210(0x8)
-	char                                                         pad0x58_63W99[0x58];                               // 0x218(0x58)
+	char                                                         pad0x58_7OALS[0x58];                               // 0x218(0x58)
+};
+
+
+// Size 0x428 (Full Size[0x4e0] - InheritedSize[0xb8]
+class ConvertItemToActorComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x18_ZORFA[0x18];                               // 0xb8(0x18)
+	class Actor*                                                 CreatedDeployable;                                 // 0xd0(0x8)
+	class ItemInfo*                                              ItemInfo;                                          // 0xd8(0x8)
+	struct Box                                                   DeployableDimensions;                              // 0x100(0x1c)
+	struct Vector                                                DeployableDimensionOffset;                         // 0x11c(0xc)
+	bool                                                         ProceedWithPeriodicalPlacementChecks;              // 0x128(0x1)
+	bool                                                         ProceedWithIsWithinAcceptableAnglePlacementCheck;  // 0x129(0x1)
+	bool                                                         ProceedWithIsInteractorLevelWithProxyPlacementCheck; // 0x12a(0x1)
+	char                                                         pad0x5_K1SAU[0x5];                                 // 0x12b(0x5)
+	struct DeployActionRuleVerbiage                              DeployActionRuleVerbiage;                          // 0x130(0x268)
+	float                                                        MaxPlacementAngle;                                 // 0x398(0x4)
+	float                                                        HoldTime;                                          // 0x39c(0x4)
+	char                                                         pad0x30_2MAKI[0x30];                               // 0x3a0(0x30)
+	bool                                                         IsInExclusionZone;                                 // 0x3d0(0x1)
+	char                                                         pad0x7_4GPI5[0x7];                                 // 0x3d1(0x7)
+	TArray<char>                                                 ShipRegionWhiteList;                               // 0x3d8(0x10)
+	TArray<Class>                                                CaptainsCabins;                                    // 0x3e8(0x10)
+	bool                                                         IsInCaptainsCabin;                                 // 0x3f8(0x1)
+	bool                                                         DroppedNearAnotherControllable;                    // 0x3f9(0x1)
+	char                                                         pad0x1_L106P[0x1];                                 // 0x3fa(0x1)
+	char                                                         CollisionChannel;                                  // 0x3fb(0x1)
+	float                                                        TickInterval;                                      // 0x3fc(0x4)
+	bool                                                         FailedDeployment;                                  // 0x400(0x1)
+	bool                                                         FuseMeshRequired;                                  // 0x401(0x1)
+	char                                                         pad0x2_KW9HP[0x2];                                 // 0x402(0x2)
+	float                                                        FailedDeploymentDelay;                             // 0x404(0x4)
+	char                                                         pad0x8_KLJ8J[0x8];                                 // 0x408(0x8)
+	float                                                        InteractorLevelWithProxyMinDiff;                   // 0x410(0x4)
+	float                                                        InteractorLevelWithProxyMaxDiff;                   // 0x414(0x4)
+	char                                                         TrackedActorType;                                  // 0x418(0x1)
+	char                                                         InteractionDeploymentState;                        // 0x419(0x1)
+	char                                                         pad0x6_Q675B[0x6];                                 // 0x41a(0x6)
+	class WwiseEvent*                                            PlayDeploySfx;                                     // 0x420(0x8)
+	class WwiseEvent*                                            StopDeploySfx;                                     // 0x428(0x8)
+	class WwiseObjectPoolWrapper*                                PoolWrapper;                                       // 0x430(0x8)
+	char                                                         pad0x28_NVO69[0x28];                               // 0x438(0x28)
+	class StaticMeshComponent*                                   FuseStaticMeshComponent;                           // 0x460(0x8)
+	char                                                         pad0x78_74RC1[0x78];                               // 0x468(0x78)
 };
 
 

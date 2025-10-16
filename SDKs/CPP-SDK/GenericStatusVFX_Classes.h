@@ -6,13 +6,6 @@
 #include "GenericStatusVFX_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GenericStatusVFXInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
 class GenericStatusVFXResponse: public StatusResponse
 {
@@ -25,14 +18,14 @@ public:
 class GenericStatusVFXComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_Z0U29[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_53B2D[0x8];                                 // 0xb8(0x8)
 	class ParticleSystemComponent*                               VFXComponent;                                      // 0xc0(0x8)
 	class World*                                                 CachedWorld;                                       // 0xc8(0x8)
-	char                                                         pad0x20_L6B1M[0x20];                               // 0xd0(0x20)
+	char                                                         pad0x20_NSQ8S[0x20];                               // 0xd0(0x20)
 	class GenericStatusVFXDataAsset*                             VFXDataAsset;                                      // 0xf0(0x8)
-	char                                                         pad0x18_KC79W[0x18];                               // 0xf8(0x18)
+	char                                                         pad0x18_337IO[0x18];                               // 0xf8(0x18)
 	bool                                                         ContainsVFXSource;                                 // 0x110(0x1)
-	char                                                         pad0x7_1LWUO[0x7];                                 // 0x111(0x7)
+	char                                                         pad0x7_6GDB0[0x7];                                 // 0x111(0x7)
 };
 
 
@@ -46,6 +39,13 @@ public:
 	float                                                        VFXFalloffMultiplier;                              // 0x54(0x4)
 	struct FName                                                 VfxSocketName;                                     // 0x58(0x8)
 	struct Transform                                             SocketRelativeOffset;                              // 0x60(0x30)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class GenericStatusVFXInterface: public Interface
+{
+public:
 };
 
 

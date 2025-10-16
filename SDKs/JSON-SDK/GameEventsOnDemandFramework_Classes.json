@@ -1,61 +1,48 @@
 {
-  "WaitForGameEventOnDemandToCompleteStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0x80",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "GameEventOnDemandAvailabilityHandler": {
-    "Super": "Object",
-    "FullSize": "0x180",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x158",
-    "Attributes": [
-      {
-        "Name": "AvailabilityParamsAsset",
-        "Type": "class GameEventAvailabilityParamsDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "AvailabilityStateTracker",
-        "Type": "class GameEventOnDemandAvailabilityStateTracker*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "GameEventType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x60_0YJ1D[0x60]",
-        "Type": "char",
-        "Size": "0x60",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "CompletedState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0xa0"
-      },
-      {
-        "Name": "pad0xdf_6QOBB[0xdf]",
-        "Type": "char",
-        "Size": "0xdf",
-        "Offset": "0xa1"
-      }
-    ]
-  },
-  "GameEventsOnDemandInterface": {
+  "GameEventsOnDemandInstanceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "GameEventOnDemandAvailabilityStateTracker": {
+    "Super": "Object",
+    "FullSize": "0x160",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x138",
+    "Attributes": [
+      {
+        "Name": "pad0x88_J8XRX[0x88]",
+        "Type": "char",
+        "Size": "0x88",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ShipTypeLimit",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "OnDemandParticipatingCrewIds",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "EmergentlyParticipatingCrewIds",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "pad0x88_II0NO[0x88]",
+        "Type": "char",
+        "Size": "0x88",
+        "Offset": "0xd8"
+      }
+    ]
   },
   "GameEventAvailabilityParamsDataAsset": {
     "Super": "DataAsset",
@@ -100,7 +87,7 @@
         "Offset": "0x81"
       },
       {
-        "Name": "pad0x2_Z6OI4[0x2]",
+        "Name": "pad0x2_Q6NAR[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x82"
@@ -124,7 +111,7 @@
         "Offset": "0x89"
       },
       {
-        "Name": "pad0x2_7YWT1[0x2]",
+        "Name": "pad0x2_NN5SM[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x8a"
@@ -137,64 +124,19 @@
       }
     ]
   },
-  "GameEventsOnDemandAvailabilityServiceInterface": {
+  "GameEventOnDemandVoyageProposalDesc": {
+    "Super": "VoyageProposalDesc",
+    "FullSize": "0x138",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GameEventsOnDemandInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "WaitForGameEventOnDemandToCompleteStep": {
-    "Super": "TaleQuestStep",
-    "FullSize": "0x128",
-    "InheritedSize": "0x98",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "pad0x90_V1N85[0x90]",
-        "Type": "char",
-        "Size": "0x90",
-        "Offset": "0x98"
-      }
-    ]
-  },
-  "GameEventOnDemandAvailabilityStateTracker": {
-    "Super": "Object",
-    "FullSize": "0x160",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x138",
-    "Attributes": [
-      {
-        "Name": "pad0x88_S70U9[0x88]",
-        "Type": "char",
-        "Size": "0x88",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "ShipTypeLimit",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0xb0"
-      },
-      {
-        "Name": "OnDemandParticipatingCrewIds",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "EmergentlyParticipatingCrewIds",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "pad0x88_FKWN0[0x88]",
-        "Type": "char",
-        "Size": "0x88",
-        "Offset": "0xd8"
-      }
-    ]
   },
   "GameEventsOnDemandLoserTunnelServiceInterface": {
     "Super": "Interface",
@@ -203,17 +145,75 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "GameEventOnDemandVoyageProposalDesc": {
-    "Super": "VoyageProposalDesc",
-    "FullSize": "0x138",
-    "InheritedSize": "0x138",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "GameEventOnDemandAvailabilityHandler": {
+    "Super": "Object",
+    "FullSize": "0x180",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x158",
+    "Attributes": [
+      {
+        "Name": "AvailabilityParamsAsset",
+        "Type": "class GameEventAvailabilityParamsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "AvailabilityStateTracker",
+        "Type": "class GameEventOnDemandAvailabilityStateTracker*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "GameEventType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x60_ULHLW[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "CompletedState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "pad0xdf_X9NWM[0xdf]",
+        "Type": "char",
+        "Size": "0xdf",
+        "Offset": "0xa1"
+      }
+    ]
   },
-  "GameEventsOnDemandInstanceInterface": {
+  "WaitForGameEventOnDemandToCompleteStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x128",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "pad0x90_9KXCH[0x90]",
+        "Type": "char",
+        "Size": "0x90",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "GameEventsOnDemandAvailabilityServiceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WaitForGameEventOnDemandToCompleteStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x80",
+    "InheritedSize": "0x80",
     "ClassSize": "0x0",
     "Attributes": []
   },

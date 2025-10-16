@@ -48,7 +48,7 @@ HeightTriggerableEffectsComponent:
     Offset: '0xdc'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_VZ613[0x3]
+  - Name: pad0x3_4ZX7T[0x3]
     Offset: '0xdd'
     Size: '0x3'
     Type: char
@@ -56,7 +56,7 @@ HeightTriggerableEffectsComponent:
     Offset: '0xe0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_IHADW[0x4]
+  - Name: pad0x4_1LEZI[0x4]
     Offset: '0xe4'
     Size: '0x4'
     Type: char
@@ -72,7 +72,7 @@ HeightTriggerableEffectsComponent:
     Offset: '0xf4'
     Size: '0x4'
     Type: float
-  - Name: pad0x50_A83JM[0x50]
+  - Name: pad0x50_YFCLL[0x50]
     Offset: '0xf8'
     Size: '0x50'
     Type: char
@@ -82,7 +82,7 @@ HeightTriggerableEffectsComponent:
   Super: ActorComponent
 SpireResource:
   Attributes:
-  - Name: pad0x10_0U0K2[0x10]
+  - Name: pad0x10_22J7N[0x10]
     Offset: '0x3a0'
     Size: '0x10'
     Type: char
@@ -92,7 +92,7 @@ SpireResource:
   Super: Actor
 SpireService:
   Attributes:
-  - Name: pad0x8_7VSEV[0x8]
+  - Name: pad0x8_LE0KR[0x8]
     Offset: '0x3a0'
     Size: '0x8'
     Type: char
@@ -108,7 +108,7 @@ SpireService:
     Offset: '0x3c0'
     Size: '0x10'
     Type: TArray<struct SpireInfo>
-  - Name: pad0x68_MFHW1[0x68]
+  - Name: pad0x68_Q9ES0[0x68]
     Offset: '0x3d0'
     Size: '0x68'
     Type: char
@@ -196,7 +196,7 @@ TaleRegisterSpireStep:
     Offset: '0x98'
     Size: '0x8'
     Type: class TaleRegisterSpireStepDesc*
-  - Name: pad0x8_QWAX1[0x8]
+  - Name: pad0x8_J8129[0x8]
     Offset: '0xa0'
     Size: '0x8'
     Type: char
@@ -228,7 +228,7 @@ TaleRegisterSpireStepDesc:
   Super: TaleQuestStepDesc
 TaleReleaseSpireStep:
   Attributes:
-  - Name: pad0x8_VXGL7[0x8]
+  - Name: pad0x8_HKE6O[0x8]
     Offset: '0x98'
     Size: '0x8'
     Type: char
@@ -248,7 +248,7 @@ TaleReleaseSpireStepDesc:
   Super: TaleQuestStepDesc
 TaleSpireService:
   Attributes:
-  - Name: pad0x48_5VXRH[0x48]
+  - Name: pad0x48_5RINA[0x48]
     Offset: '0x60'
     Size: '0x48'
     Type: char
@@ -276,7 +276,7 @@ TaleUnloadSpireStepDesc:
   Super: TaleQuestStepDesc
 TaleWaitForSpireToLoadStep:
   Attributes:
-  - Name: pad0x50_JT8M2[0x50]
+  - Name: pad0x50_IUGZP[0x50]
     Offset: '0x98'
     Size: '0x50'
     Type: char

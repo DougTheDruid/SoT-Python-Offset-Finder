@@ -1,4 +1,15 @@
 {
+  "TreasuryWaveTracker": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Name": "pad0x1c_EAX22[0x1c]",
+        "Type": "char",
+        "Size": "0x1c",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "TreasuryWaveEncounter": {
     "ClassSize": "0x48",
     "Attributes": [
@@ -9,7 +20,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_A75H8[0x7]",
+        "Name": "pad0x7_D28NJ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -63,43 +74,10 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_ZUAXB[0x7]",
+        "Name": "pad0x7_OT98H[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
-      }
-    ]
-  },
-  "EventTreasuryRoomInactive": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_DXJO9[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventTreasuryRoomActive": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_NMM7F[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TreasuryWaveTracker": {
-    "ClassSize": "0x1c",
-    "Attributes": [
-      {
-        "Name": "pad0x1c_4XV1Y[0x1c]",
-        "Type": "char",
-        "Size": "0x1c",
-        "Offset": "0x0"
       }
     ]
   },
@@ -107,7 +85,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x8_0G19X[0x8]",
+        "Name": "pad0x8_WL7U3[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"
@@ -117,6 +95,28 @@
         "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "EventTreasuryRoomActive": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_DQW8K[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventTreasuryRoomInactive": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_TNFUZ[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },

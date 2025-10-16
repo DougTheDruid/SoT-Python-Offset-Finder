@@ -6,28 +6,28 @@
 #include "FaunaMeleeFramework_Structs.h"
 
 
-// Size 0xb0 (Full Size[0x380] - InheritedSize[0x2d0]
-class FaunaMeleeComponent: public SceneComponent
-{
-public:
-	char                                                         pad0x8_D2TSG[0x8];                                 // 0x2d0(0x8)
-	struct DamageInstance                                        DamageInstance;                                    // 0x2d8(0x30)
-	struct KnockBackInfo                                         KnockBackInfo;                                     // 0x308(0x54)
-	char                                                         pad0x4_E24NV[0x4];                                 // 0x35c(0x4)
-	class UClass*                                                DamagerType;                                       // 0x360(0x8)
-	float                                                        DamageAmount;                                      // 0x368(0x4)
-	char                                                         HealthChangeReason;                                // 0x36c(0x1)
-	char                                                         pad0x3_OMJTQ[0x3];                                 // 0x36d(0x3)
-	float                                                        DistanceToCheckWithTarget;                         // 0x370(0x4)
-	bool                                                         ShouldKnockBack;                                   // 0x374(0x1)
-	char                                                         pad0xb_SPPQD[0xb];                                 // 0x375(0xb)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class FaunaMeleeInterface: public Interface
 {
 public:
+};
+
+
+// Size 0xb0 (Full Size[0x380] - InheritedSize[0x2d0]
+class FaunaMeleeComponent: public SceneComponent
+{
+public:
+	char                                                         pad0x8_R4T2Z[0x8];                                 // 0x2d0(0x8)
+	struct DamageInstance                                        DamageInstance;                                    // 0x2d8(0x30)
+	struct KnockBackInfo                                         KnockBackInfo;                                     // 0x308(0x54)
+	char                                                         pad0x4_I2B0S[0x4];                                 // 0x35c(0x4)
+	class UClass*                                                DamagerType;                                       // 0x360(0x8)
+	float                                                        DamageAmount;                                      // 0x368(0x4)
+	char                                                         HealthChangeReason;                                // 0x36c(0x1)
+	char                                                         pad0x3_5P0R7[0x3];                                 // 0x36d(0x3)
+	float                                                        DistanceToCheckWithTarget;                         // 0x370(0x4)
+	bool                                                         ShouldKnockBack;                                   // 0x374(0x1)
+	char                                                         pad0xb_FNWD5[0xb];                                 // 0x375(0xb)
 };
 
 

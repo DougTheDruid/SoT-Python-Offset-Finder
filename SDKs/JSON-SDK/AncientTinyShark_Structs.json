@@ -1,5 +1,5 @@
 {
-  "AncientTinySharkEventCompletedTelemetryEvent": {
+  "AncientTinySharkEventCreatedTelemetryEvent": {
     "ClassSize": "0x20",
     "Attributes": [
       {
@@ -26,7 +26,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_BYMJU[0x4]",
+        "Name": "pad0x4_R2YWE[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -44,27 +44,10 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_NQZZ7[0x4]",
+        "Name": "pad0x4_WB2SJ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
-      }
-    ]
-  },
-  "AncientTinySharkEventCreatedTelemetryEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "EventId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AncientTinySharkVariant",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
       }
     ]
   },
@@ -87,6 +70,23 @@
         "Name": "AncientTinySharkDefeatedBanner",
         "Type": "class GameEventBannerDataAsset*",
         "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "AncientTinySharkEventCompletedTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "EventId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AncientTinySharkVariant",
+        "Type": "struct FString",
+        "Size": "0x10",
         "Offset": "0x10"
       }
     ]

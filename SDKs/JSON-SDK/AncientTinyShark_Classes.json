@@ -24,7 +24,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_3G0SQ[0x7]",
+        "Name": "pad0x7_4FYSV[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
@@ -44,14 +44,14 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "AncientTinySharkVariantInterface": {
+  "AncientTinySharkEventServiceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "AncientTinySharkEventServiceInterface": {
+  "AncientTinySharkVariantInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -65,7 +65,7 @@
     "ClassSize": "0x218",
     "Attributes": [
       {
-        "Name": "pad0x58_S04WS[0x58]",
+        "Name": "pad0x58_V39NI[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0x3a0"
@@ -77,7 +77,7 @@
         "Offset": "0x3f8"
       },
       {
-        "Name": "pad0x8_1IV70[0x8]",
+        "Name": "pad0x8_7PI6K[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x400"
@@ -95,7 +95,7 @@
         "Offset": "0x410"
       },
       {
-        "Name": "pad0x198_KLBA0[0x198]",
+        "Name": "pad0x198_EKQJX[0x198]",
         "Type": "char",
         "Size": "0x198",
         "Offset": "0x420"

@@ -6,13 +6,20 @@
 #include "TinyKraken_Structs.h"
 
 
-// Size 0x98 (Full Size[0x438] - InheritedSize[0x3a0]
+// Size 0x138 (Full Size[0x4d8] - InheritedSize[0x3a0]
 class TinyKrakenEventService: public Actor
 {
 public:
-	char                                                         pad0x40_HOU3C[0x40];                               // 0x3a0(0x40)
+	char                                                         pad0x40_6AQUZ[0x40];                               // 0x3a0(0x40)
 	class TinyKrakenEventServiceParams*                          TinyKrakenServiceParams;                           // 0x3e0(0x8)
-	char                                                         pad0x50_QU355[0x50];                               // 0x3e8(0x50)
+	char                                                         pad0xf0_ZVH6H[0xf0];                               // 0x3e8(0xf0)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class SandboxPerformanceConstraintActivity_TinyKraken: public SandboxPerformanceConstraintActivityType
+{
+public:
 };
 
 
@@ -23,13 +30,6 @@ public:
 	class EnvQuery*                                              TinyKrakenSpawnLocationEQSQuery;                   // 0x28(0x8)
 	class GameEventBannerDataAsset*                              TinyKrakenApproachedBanner;                        // 0x30(0x8)
 	class GameEventBannerDataAsset*                              TinyKrakenDefeatedBanner;                          // 0x38(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SandboxPerformanceConstraintActivity_TinyKraken: public SandboxPerformanceConstraintActivityType
-{
-public:
 };
 
 

@@ -1,5 +1,5 @@
 {
-  "CrewMatchmakingCancelledDueToInvasion": {
+  "CrewStoppedInvasion": {
     "ClassSize": "0x10",
     "Attributes": [
       {
@@ -7,6 +7,64 @@
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "MatchesCreateMatchSuccessfulRpc": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x18_3991C[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MatchID",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "InvasionCrewData": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "InvasionStatus",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x3_AVOPS[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "FactionIdentifier",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "ReadyForInvasion",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "pad0x3_3D0YQ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1d"
       }
     ]
   },
@@ -27,31 +85,48 @@
       }
     ]
   },
-  "MatchesCreateMatchSuccessfulRpc": {
-    "ClassSize": "0x28",
+  "CrewJoinedInvasionBattleTelemetryEvent": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x18_1971U[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MatchID",
-        "Type": "struct FString",
+        "Name": "ItemsBroughtToBattle",
+        "Type": "TArray<String>",
         "Size": "0x10",
-        "Offset": "0x18"
+        "Offset": "0x0"
       }
     ]
   },
-  "CrewStoppedInvasion": {
-    "ClassSize": "0x10",
+  "TaleDisplayedInvasionBanner": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Player",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "InvasionServiceMatchmakingCrewInfo": {
+    "ClassSize": "0x14",
     "Attributes": [
       {
         "Name": "CrewId",
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "CrewSessionType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x3_N3AJ5[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
       }
     ]
   },
@@ -77,66 +152,10 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x7_VDXVR[0x7]",
+        "Name": "pad0x7_48R6C[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x21"
-      }
-    ]
-  },
-  "MatchesTriggerStartMatchRpc": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x18_LX28Y[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MatchID",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "TaleDisplayedInvasionBanner": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Player",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CrewJoinedInvasionBattleTelemetryEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ItemsBroughtToBattle",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "MatchesTriggerUpdateMatchRpc": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x18_LA38N[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MatchID",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
       }
     ]
   },
@@ -151,34 +170,11 @@
       }
     ]
   },
-  "InvasionServiceMatchmakingCrewInfo": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "CrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CrewSessionType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x3_0M5YL[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x11"
-      }
-    ]
-  },
   "InvasionBannerNetworkEvent": {
     "ClassSize": "0x70",
     "Attributes": [
       {
-        "Name": "pad0x18_MAFFH[0x18]",
+        "Name": "pad0x18_48LUR[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"
@@ -202,7 +198,7 @@
         "Offset": "0x60"
       },
       {
-        "Name": "pad0x3_0LX4B[0x3]",
+        "Name": "pad0x3_W4P9A[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x61"
@@ -220,51 +216,57 @@
         "Offset": "0x6c"
       },
       {
-        "Name": "pad0x3_8BH15[0x3]",
+        "Name": "pad0x3_CZOX2[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x6d"
       }
     ]
   },
-  "InvasionCrewData": {
-    "ClassSize": "0x20",
+  "PhaseData": {
+    "ClassSize": "0x1c",
     "Attributes": [
       {
-        "Name": "CrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
+        "Name": "PhaseTime",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "InvasionStatus",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "SloopInnerRadius",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "SloopOuterRadius",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "BrigInnerRadius",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "BrigOuterRadius",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_F2BKC[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x11"
-      },
-      {
-        "Name": "FactionIdentifier",
-        "Type": "struct FName",
-        "Size": "0x8",
+        "Name": "GalleonInnerRadius",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x14"
       },
       {
-        "Name": "ReadyForInvasion",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1c"
-      },
-      {
-        "Name": "pad0x3_ROAFF[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1d"
+        "Name": "GalleonOuterRadius",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x18"
       }
     ]
   },
@@ -272,7 +274,7 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x18_HM0XE[0x18]",
+        "Name": "pad0x18_VNSXW[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"
@@ -294,6 +296,74 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x38"
+      }
+    ]
+  },
+  "MatchesTriggerUpdateMatchRpc": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x18_5L06S[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MatchID",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "CrewMatchmakingCancelledDueToInvasion": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "MatchesTriggerStartMatchRpc": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x18_27CMC[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MatchID",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "InvasionParticipatingCrewData": {
+    "ClassSize": "0x78",
+    "Attributes": [
+      {
+        "Name": "CrewIds",
+        "Type": "TArray<struct InvasionCrewData>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Participants",
+        "Type": "TArray<class CrewVoyageParticipant*>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x58_RLMAE[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x20"
       }
     ]
   },
@@ -319,7 +389,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_QALJ6[0x4]",
+        "Name": "pad0x4_DODCS[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
@@ -337,10 +407,39 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x7_BG679[0x7]",
+        "Name": "pad0x7_MKJ6L[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x49"
+      }
+    ]
+  },
+  "MatchesTriggerPlayerJoinRpc": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "pad0x18_IX397[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MatchID",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "PlayerData",
+        "Type": "struct PlayerData",
+        "Size": "0x28",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x50"
       }
     ]
   },
@@ -348,7 +447,7 @@
     "ClassSize": "0x78",
     "Attributes": [
       {
-        "Name": "pad0x18_GI5TI[0x18]",
+        "Name": "pad0x18_J1M7A[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"
@@ -366,7 +465,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_6E0WH[0x4]",
+        "Name": "pad0x4_6UR3T[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
@@ -396,7 +495,7 @@
         "Offset": "0x51"
       },
       {
-        "Name": "pad0x6_FLYOZ[0x6]",
+        "Name": "pad0x6_NXLZR[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x52"
@@ -415,63 +514,11 @@
       }
     ]
   },
-  "InvasionParticipatingCrewData": {
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "CrewIds",
-        "Type": "TArray<struct InvasionCrewData>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Participants",
-        "Type": "TArray<class CrewVoyageParticipant*>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x58_PRO1T[0x58]",
-        "Type": "char",
-        "Size": "0x58",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "MatchesTriggerPlayerJoinRpc": {
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "pad0x18_WWD74[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MatchID",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "PlayerData",
-        "Type": "struct PlayerData",
-        "Size": "0x28",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "CrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x50"
-      }
-    ]
-  },
   "MatchesTriggerPlayerLeaveRpc": {
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x18_RTKWR[0x18]",
+        "Name": "pad0x18_9NII1[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"

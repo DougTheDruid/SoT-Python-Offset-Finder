@@ -20,7 +20,7 @@ DispatchUtilityVoyageTaleStepDesc:
     Offset: '0x88'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_W07PM[0x7]
+  - Name: pad0x7_JI82R[0x7]
     Offset: '0x89'
     Size: '0x7'
     Type: char
@@ -30,7 +30,7 @@ DispatchUtilityVoyageTaleStepDesc:
   Super: TaleQuestStepDesc
 UtilityVoyageService:
   Attributes:
-  - Name: pad0x90_JR1GX[0x90]
+  - Name: pad0x90_ZOEWP[0x90]
     Offset: '0x28'
     Size: '0x90'
     Type: char

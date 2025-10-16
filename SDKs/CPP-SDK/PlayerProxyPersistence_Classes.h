@@ -7,14 +7,22 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ProxyPersistenceId: public Object
+class PlayerPersistentProxyInterface: public Interface
 {
 public:
 };
 
 
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class PlayerPersistentProxyLimitsDataAsset: public DataAsset
+{
+public:
+	TArray<struct ProxyLimit>                                    ProxyLimits;                                       // 0x28(0x10)
+};
+
+
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class PlayerPersistentProxyInterface: public Interface
+class ProxyPersistenceId: public Object
 {
 public:
 };
@@ -25,15 +33,7 @@ class PlayerProxyPersistenceComponent: public ActorComponent
 {
 public:
 	class PlayerPersistentProxyLimitsDataAsset*                  ProxyLimitsDataAsset;                              // 0xb8(0x8)
-	char                                                         pad0x60_6GWGS[0x60];                               // 0xc0(0x60)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class PlayerPersistentProxyLimitsDataAsset: public DataAsset
-{
-public:
-	TArray<struct ProxyLimit>                                    ProxyLimits;                                       // 0x28(0x10)
+	char                                                         pad0x60_VQA6D[0x60];                               // 0xc0(0x60)
 };
 
 

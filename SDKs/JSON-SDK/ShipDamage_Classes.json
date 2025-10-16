@@ -1,91 +1,29 @@
 {
-  "StormDamageParamsHandlerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "StrainDamagerType": {
-    "Super": "DamagerType",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ShipPartsDamageTrackerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xc0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x8",
+  "GenericShipDamageablePart": {
+    "Super": "Actor",
+    "FullSize": "0x3c8",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "IsAnyShipPartDamaged",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "pad0x4_VNLR8[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xbc"
-      }
-    ]
-  },
-  "HullDamageProviderInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ShipRestorationSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x48",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MaxDistanceSquared",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x4_4A1OR[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "pad0x8_DIL9X[0x8]",
+        "Name": "pad0x8_0PUT4[0x8]",
         "Type": "char",
         "Size": "0x8",
-        "Offset": "0x40"
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "ShipDamageableComponent",
+        "Type": "class ShipDamageableComponent*",
+        "Size": "0x8",
+        "Offset": "0x3a8"
+      },
+      {
+        "Name": "pad0x18_KSALD[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x3b0"
       }
     ]
-  },
-  "ShipDamagerType": {
-    "Super": "DamagerType",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "LandscapeDamagerType": {
-    "Super": "DamagerType",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "DamageablePartsInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "LevelOfDamagePropertiesDataAsset": {
     "Super": "DataAsset",
@@ -101,6 +39,66 @@
       }
     ]
   },
+  "ShipPartsDamageTrackerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xc0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "IsAnyShipPartDamaged",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "pad0x4_2PTEA[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xbc"
+      }
+    ]
+  },
+  "ShipRestorationSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MaxDistanceSquared",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x4_DJ7ZB[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "pad0x8_DN4O9[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "LandscapeDamagerType": {
+    "Super": "DamagerType",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "StormDamageParamsHandlerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "ShipDamagePartInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
@@ -108,31 +106,12 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "GenericShipDamageablePart": {
-    "Super": "Actor",
-    "FullSize": "0x3c8",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x8_XK0WR[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "ShipDamageableComponent",
-        "Type": "class ShipDamageableComponent*",
-        "Size": "0x8",
-        "Offset": "0x3a8"
-      },
-      {
-        "Name": "pad0x18_G313P[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x3b0"
-      }
-    ]
+  "ShipDamagerType": {
+    "Super": "DamagerType",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "HullDamageInterface": {
     "Super": "Interface",
@@ -141,7 +120,28 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "HullDamageProviderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "StrainDamagerType": {
+    "Super": "DamagerType",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "DamageZoneInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DamageablePartsInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

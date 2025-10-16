@@ -7,31 +7,7 @@
 struct ReplicatedDateTime
 {
 public:
-	char                                                         pad0x8_FU8VX[0x8];                                 // 0x0(0x8)
-};
-
-
-// Size 0x1
-struct EventTimeServiceMigrated
-{
-public:
-	char                                                         pad0x1_R3I10[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x8
-struct GameTime
-{
-public:
-	struct DateTime                                              DateTimeRepresentation;                            // 0x0(0x8)
-};
-
-
-// Size 0x8
-struct ReplicatedTimespan
-{
-public:
-	char                                                         pad0x8_X28R4[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_Q0CFF[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -44,6 +20,30 @@ public:
 	int                                                          Day;                                               // 0x8(0x4)
 	int                                                          Hour;                                              // 0xc(0x4)
 	int                                                          Minute;                                            // 0x10(0x4)
+};
+
+
+// Size 0x8
+struct GameTime
+{
+public:
+	struct DateTime                                              DateTimeRepresentation;                            // 0x0(0x8)
+};
+
+
+// Size 0x1
+struct EventTimeServiceMigrated
+{
+public:
+	char                                                         pad0x1_CFMX8[0x1];                                 // 0x0(0x1)
+};
+
+
+// Size 0x8
+struct ReplicatedTimespan
+{
+public:
+	char                                                         pad0x8_I060G[0x8];                                 // 0x0(0x8)
 };
 
 

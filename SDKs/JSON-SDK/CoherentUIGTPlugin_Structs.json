@@ -1,45 +1,4 @@
 {
-  "CoherentUIGTViewInfo": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "Width",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Height",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "IsTransparent",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x3_KD7NK[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x9"
-      },
-      {
-        "Name": "ClickThroughAlphaThreshold",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "AnimationFrameDefer",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "CoherentUIGTLoadingScreenSettings": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -62,7 +21,7 @@
         "Offset": "0x5"
       },
       {
-        "Name": "pad0x2_L6AVV[0x2]",
+        "Name": "pad0x2_0M81U[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x6"
@@ -72,6 +31,47 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "CoherentUIGTViewInfo": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "Width",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Height",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "IsTransparent",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x3_T2LZA[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x9"
+      },
+      {
+        "Name": "ClickThroughAlphaThreshold",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "AnimationFrameDefer",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
       }
     ]
   },

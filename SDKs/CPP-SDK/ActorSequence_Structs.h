@@ -8,9 +8,9 @@ struct ActorSequenceObjectReference
 {
 public:
 	char                                                         Type;                                              // 0x0(0x1)
-	char                                                         pad0x3_SXITG[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_3JYD7[0x3];                                 // 0x1(0x3)
 	struct Guid                                                  ActorId;                                           // 0x4(0x10)
-	char                                                         pad0x4_94X5I[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_ZYZ5G[0x4];                                 // 0x14(0x4)
 	struct FString                                               PathToComponent;                                   // 0x18(0x10)
 };
 

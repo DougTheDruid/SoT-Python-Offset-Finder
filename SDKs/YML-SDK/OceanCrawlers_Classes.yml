@@ -6,7 +6,7 @@ BTTask_BroadcastOceanCrawlerAbilityAudioEvent:
     Offset: '0x60'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_OC5YI[0x7]
+  - Name: pad0x7_WD6Q4[0x7]
     Offset: '0x61'
     Size: '0x7'
     Type: char
@@ -16,7 +16,7 @@ BTTask_BroadcastOceanCrawlerAbilityAudioEvent:
   Super: BTTaskNode
 OceanCrawlerAudioBroadcaster:
   Attributes:
-  - Name: pad0x20_TTYF8[0x20]
+  - Name: pad0x20_7GQXY[0x20]
     Offset: '0xb8'
     Size: '0x20'
     Type: char
@@ -24,7 +24,7 @@ OceanCrawlerAudioBroadcaster:
     Offset: '0xd8'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x100_68BX8[0x100]
+  - Name: pad0x100_6LTC9[0x100]
     Offset: '0xe0'
     Size: '0x100'
     Type: char

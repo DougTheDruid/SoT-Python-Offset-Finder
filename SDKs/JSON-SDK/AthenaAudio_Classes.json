@@ -1,33 +1,67 @@
 {
-  "AthenaAudioConfig": {
-    "Super": "WwiseCoreAssets",
-    "FullSize": "0x118",
-    "InheritedSize": "0x58",
-    "ClassSize": "0xc0",
+  "AudioSpaceTrackerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "ItemProxyPool",
-        "Type": "class WwiseObjectPoolWrapper*",
-        "Size": "0x8",
-        "Offset": "0x58"
+        "Name": "CurrentSpaces",
+        "Type": "TArray<class AudioSpaceComponent*>",
+        "Size": "0x10",
+        "Offset": "0xb8"
+      }
+    ]
+  },
+  "StoryDrivenAudioPortalDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Feature",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x28"
       },
       {
-        "Name": "AnimNotifyPool",
-        "Type": "class WwiseObjectPoolWrapper*",
-        "Size": "0x8",
-        "Offset": "0x60"
+        "Name": "pad0x4_BOTAK[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
       },
       {
-        "Name": "GameStateSettings",
-        "Type": "struct AthenaAudioGameStateSettings",
-        "Size": "0x30",
-        "Offset": "0x68"
+        "Name": "StoryResponses",
+        "Type": "TArray<struct StoryDrivenAudioPortalSetting>",
+        "Size": "0x10",
+        "Offset": "0x38"
       },
       {
-        "Name": "BootflowEvents",
-        "Type": "struct AthenaAudioBootflowEvents",
-        "Size": "0x80",
-        "Offset": "0x98"
+        "Name": "AssetsList",
+        "Type": "TArray<class StoryDrivenAudioPortalDataAsset*>",
+        "Size": "0x10",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "ImmerseCosmeticUnlockerComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "CosmeticUnlocked",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "pad0x1f_2N6BP[0x1f]",
+        "Type": "char",
+        "Size": "0x1f",
+        "Offset": "0xb9"
       }
     ]
   },
@@ -62,7 +96,7 @@
         "Offset": "0x2dc"
       },
       {
-        "Name": "pad0x3_K0CEM[0x3]",
+        "Name": "pad0x3_I0QBS[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x2dd"
@@ -98,44 +132,10 @@
         "Offset": "0x300"
       },
       {
-        "Name": "pad0x28_MG7TA[0x28]",
+        "Name": "pad0x28_VKVMT[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x308"
-      }
-    ]
-  },
-  "AudioSpaceTrackerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xc8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CurrentSpaces",
-        "Type": "TArray<class AudioSpaceComponent*>",
-        "Size": "0x10",
-        "Offset": "0xb8"
-      }
-    ]
-  },
-  "ImmerseCosmeticUnlockerComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "CosmeticUnlocked",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "pad0x1f_E9MQ3[0x1f]",
-        "Type": "char",
-        "Size": "0x1f",
-        "Offset": "0xb9"
       }
     ]
   },
@@ -146,10 +146,116 @@
     "ClassSize": "0xb0",
     "Attributes": [
       {
-        "Name": "pad0xb0_M6M1H[0xb0]",
+        "Name": "pad0xb0_G2BMX[0xb0]",
         "Type": "char",
         "Size": "0xb0",
         "Offset": "0x28"
+      }
+    ]
+  },
+  "AudioPortalInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ImmerseGameService": {
+    "Super": "Object",
+    "FullSize": "0xf8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xd0",
+    "Attributes": [
+      {
+        "Name": "pad0xb8_H5CCU[0xb8]",
+        "Type": "char",
+        "Size": "0xb8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "LocalCosmeticUnlocker",
+        "Type": "class ImmerseCosmeticUnlockerComponent*",
+        "Size": "0x8",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "pad0x10_55CS2[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0xe8"
+      }
+    ]
+  },
+  "AthenaAudioModuleSettings": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AudioConfigAsset",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "MultiEmitter": {
+    "Super": "Actor",
+    "FullSize": "0x3b0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MultiEmitterRootComponent",
+        "Type": "class MultiEmitterRootComponent*",
+        "Size": "0x8",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "pad0x8_JV53J[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3a8"
+      }
+    ]
+  },
+  "ImmerseGameServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AthenaAudioConfig": {
+    "Super": "WwiseCoreAssets",
+    "FullSize": "0x118",
+    "InheritedSize": "0x58",
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "ItemProxyPool",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "AnimNotifyPool",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "GameStateSettings",
+        "Type": "struct AthenaAudioGameStateSettings",
+        "Size": "0x30",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "BootflowEvents",
+        "Type": "struct AthenaAudioBootflowEvents",
+        "Size": "0x80",
+        "Offset": "0x98"
       }
     ]
   },
@@ -196,7 +302,7 @@
         "Offset": "0x300"
       },
       {
-        "Name": "pad0x14_OJWFZ[0x14]",
+        "Name": "pad0x14_XLVUL[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0x30c"
@@ -208,116 +314,10 @@
         "Offset": "0x320"
       },
       {
-        "Name": "pad0x38_6PYHK[0x38]",
+        "Name": "pad0x38_5TQA0[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x328"
-      }
-    ]
-  },
-  "ImmerseGameService": {
-    "Super": "Object",
-    "FullSize": "0xd8",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xb0",
-    "Attributes": [
-      {
-        "Name": "pad0xa0_1MB1B[0xa0]",
-        "Type": "char",
-        "Size": "0xa0",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "LocalCosmeticUnlocker",
-        "Type": "class ImmerseCosmeticUnlockerComponent*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "pad0x8_RSXIJ[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xd0"
-      }
-    ]
-  },
-  "AudioPortalInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "StoryDrivenAudioPortalDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Feature",
-        "Type": "struct FeatureFlag",
-        "Size": "0xc",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x4_ZZRJ2[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "StoryResponses",
-        "Type": "TArray<struct StoryDrivenAudioPortalSetting>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "AssetsList",
-        "Type": "TArray<class StoryDrivenAudioPortalDataAsset*>",
-        "Size": "0x10",
-        "Offset": "0x48"
-      }
-    ]
-  },
-  "MultiEmitter": {
-    "Super": "Actor",
-    "FullSize": "0x3b0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MultiEmitterRootComponent",
-        "Type": "class MultiEmitterRootComponent*",
-        "Size": "0x8",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "pad0x8_5N1UD[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x3a8"
-      }
-    ]
-  },
-  "ImmerseGameServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AthenaAudioModuleSettings": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x48",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "AudioConfigAsset",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x38"
       }
     ]
   },
@@ -346,7 +346,7 @@
         "Offset": "0x610"
       },
       {
-        "Name": "pad0x18_U3F8N[0x18]",
+        "Name": "pad0x18_NAYNY[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x618"

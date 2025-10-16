@@ -1,4 +1,24 @@
 {
+  "BTTask_BroadcastOceanCrawlerAbilityAudioEvent": {
+    "Super": "BTTaskNode",
+    "FullSize": "0x68",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "OceanCrawlerAudioKeyToBroadcast",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x7_WD6Q4[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x61"
+      }
+    ]
+  },
   "OceanCrawlerAudioParamsDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0xa0",
@@ -50,7 +70,7 @@
     "ClassSize": "0x130",
     "Attributes": [
       {
-        "Name": "pad0x20_TTYF8[0x20]",
+        "Name": "pad0x20_7GQXY[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xb8"
@@ -62,7 +82,7 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x100_68BX8[0x100]",
+        "Name": "pad0x100_6LTC9[0x100]",
         "Type": "char",
         "Size": "0x100",
         "Offset": "0xe0"
@@ -72,26 +92,6 @@
         "Type": "class OceanCrawlerAudioParamsDataAsset*",
         "Size": "0x8",
         "Offset": "0x1e0"
-      }
-    ]
-  },
-  "BTTask_BroadcastOceanCrawlerAbilityAudioEvent": {
-    "Super": "BTTaskNode",
-    "FullSize": "0x68",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "OceanCrawlerAudioKeyToBroadcast",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "pad0x7_OC5YI[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x61"
       }
     ]
   },

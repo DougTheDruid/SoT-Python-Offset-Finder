@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 CompetitiveVoyageEventItem:
   Attributes:
-  - Name: pad0x8_MY4VO[0x8]
+  - Name: pad0x8_IVASU[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -13,7 +13,7 @@ CompetitiveVoyageEventItem:
   ClassSize: '0x18'
 CompetitiveVoyageItemData:
   Attributes:
-  - Name: pad0x8_HJI64[0x8]
+  - Name: pad0x8_AYFL3[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -33,7 +33,7 @@ CompetitiveVoyageItemData:
     Offset: '0x38'
     Size: '0x4'
     Type: int
-  - Name: pad0xc_SLRZE[0xc]
+  - Name: pad0xc_7HCEI[0xc]
     Offset: '0x3c'
     Size: '0xc'
     Type: char
@@ -113,7 +113,7 @@ CompetitiveVoyagesItemUsageTelemetryEvent:
     Offset: '0x18'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_C6350[0x4]
+  - Name: pad0x4_RY9VJ[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -132,7 +132,7 @@ CompetitiveVoyagesMigrationTelemetryEvent:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_8FI9Q[0x4]
+  - Name: pad0x4_J4QSZ[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -151,7 +151,7 @@ CompetitiveVoyagesRespawnConfig:
     Offset: '0xa0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_Z0BKS[0x3]
+  - Name: pad0x3_GFCM6[0x3]
     Offset: '0xa1'
     Size: '0x3'
     Type: char
@@ -174,7 +174,7 @@ CompetitiveVoyagesRespawnConfig:
   ClassSize: '0x108'
 CompetitiveVoyagesRespawnDebugMapData:
   Attributes:
-  - Name: pad0x88_2BT7U[0x88]
+  - Name: pad0x88_ZHTFQ[0x88]
     Offset: '0x0'
     Size: '0x88'
     Type: char
@@ -247,7 +247,7 @@ CompetitiveVoyagesRespawnParams:
   ClassSize: '0x50'
 CompetitiveVoyagesRespawnSpawnScoreData:
   Attributes:
-  - Name: pad0x14_4HLUJ[0x14]
+  - Name: pad0x14_TDG5P[0x14]
     Offset: '0x0'
     Size: '0x14'
     Type: char
@@ -262,7 +262,7 @@ HeistVaultClaimedEventExpiredEvent:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_L1ADS[0x3]
+  - Name: pad0x3_BS1N0[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -288,14 +288,14 @@ HeistVaultMigrationTelemetryEvent:
     Offset: '0x11'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_TFCEE[0x2]
+  - Name: pad0x2_J2LYN[0x2]
     Offset: '0x12'
     Size: '0x2'
     Type: char
   ClassSize: '0x14'
 HeistVaultResetTelemetryEvent:
   Attributes:
-  - Name: pad0x1_EZACJ[0x1]
+  - Name: pad0x1_XXBS9[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -324,7 +324,7 @@ MigratingEventTelemetryData:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_FBXYV[0x4]
+  - Name: pad0x4_JHLJP[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -379,14 +379,14 @@ OnCompetitiveVoyageItemRemoved:
   ClassSize: '0x18'
 OnCompetitiveVoyageMainVoyageStarted:
   Attributes:
-  - Name: pad0x1_NF045[0x1]
+  - Name: pad0x1_5079T[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 OnCompetitiveVoyageMainVoyageStopped:
   Attributes:
-  - Name: pad0x1_4T2P6[0x1]
+  - Name: pad0x1_1CNFR[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -400,7 +400,7 @@ OnCompetitiveVoyageOptOutVotePassed:
   ClassSize: '0x10'
 PhasedMarkerItem:
   Attributes:
-  - Name: pad0x18_PTA5G[0x18]
+  - Name: pad0x18_MCDBQ[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char

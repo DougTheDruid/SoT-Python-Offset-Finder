@@ -4,69 +4,13 @@
 // https://github.com/DougTheDruid
 
 // Size 0x20
-struct RedeemCommodityTelemetryEvent
+struct CommodityTrackingModel
 {
 public:
-	struct FString                                               Commodity;                                         // 0x0(0x10)
-	bool                                                         RedemptionSucceeded;                               // 0x10(0x1)
-	char                                                         pad0x7_I8Y4N[0x7];                                 // 0x11(0x7)
-	double                                                       TimeInSecondsSinceFirstRedemptionAttempt;          // 0x18(0x8)
-};
-
-
-// Size 0x8
-struct CommoditySelectionType
-{
-public:
-	struct FName                                                 CommodityType;                                     // 0x0(0x8)
-};
-
-
-// Size 0x10
-struct MerchantSovereignHandInNameInformation
-{
-public:
-	struct FName                                                 MerchantNPCName;                                   // 0x0(0x8)
-	struct FName                                                 SovereignNPCName;                                  // 0x8(0x8)
-};
-
-
-// Size 0x10
-struct CommodityTypeDataEntry
-{
-public:
-	struct FName                                                 CommodityType;                                     // 0x0(0x8)
-	struct FName                                                 DisplayName;                                       // 0x8(0x8)
-};
-
-
-// Size 0x28
-struct CommoditySourceMetaWrapper
-{
-public:
-	char                                                         pad0x18_FTGHN[0x18];                               // 0x0(0x18)
-	struct FName                                                 NPCIdentifier;                                     // 0x18(0x8)
-	struct FName                                                 IslandIdentifier;                                  // 0x20(0x8)
-};
-
-
-// Size 0x18
-struct EventCommodityCrateRedeemed
-{
-public:
-	char                                                         pad0x18_M1G1N[0x18];                               // 0x0(0x18)
-};
-
-
-// Size 0x48
-struct TrackCommodityPurchaseOnServerRpc
-{
-public:
-	char                                                         pad0x18_ZNOOD[0x18];                               // 0x0(0x18)
-	class Object*                                                CommodityDemandStorageObject;                      // 0x18(0x8)
-	struct FName                                                 NPCName;                                           // 0x20(0x8)
-	struct Guid                                                  ItemOfferId;                                       // 0x28(0x10)
-	struct FString                                               ItemClientId;                                      // 0x38(0x10)
+	struct Guid                                                  ItemOfferId;                                       // 0x0(0x10)
+	char                                                         NPCName;                                           // 0x10(0x1)
+	char                                                         pad0x7_78DI9[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x8_YW75F[0x8];                                 // 0x18(0x8)
 };
 
 
@@ -79,35 +23,82 @@ public:
 };
 
 
+// Size 0x8
+struct CommoditySelectionType
+{
+public:
+	struct FName                                                 CommodityType;                                     // 0x0(0x8)
+};
+
+
+// Size 0x48
+struct TrackCommodityPurchaseOnServerRpc
+{
+public:
+	char                                                         pad0x18_LEWJM[0x18];                               // 0x0(0x18)
+	class Object*                                                CommodityDemandStorageObject;                      // 0x18(0x8)
+	struct FName                                                 NPCName;                                           // 0x20(0x8)
+	struct Guid                                                  ItemOfferId;                                       // 0x28(0x10)
+	struct FString                                               ItemClientId;                                      // 0x38(0x10)
+};
+
+
+// Size 0x18
+struct EventCommodityCrateRedeemed
+{
+public:
+	char                                                         pad0x18_59FW9[0x18];                               // 0x0(0x18)
+};
+
+
+// Size 0x28
+struct CommoditySourceMetaWrapper
+{
+public:
+	char                                                         pad0x18_Y0BNC[0x18];                               // 0x0(0x18)
+	struct FName                                                 NPCIdentifier;                                     // 0x18(0x8)
+	struct FName                                                 IslandIdentifier;                                  // 0x20(0x8)
+};
+
+
+// Size 0x10
+struct MerchantSovereignHandInNameInformation
+{
+public:
+	struct FName                                                 MerchantNPCName;                                   // 0x0(0x8)
+	struct FName                                                 SovereignNPCName;                                  // 0x8(0x8)
+};
+
+
 // Size 0x28
 struct CommodityRedemptionTrackingModel
 {
 public:
-	char                                                         pad0x2_R2YVI[0x2];                                 // 0x0(0x2)
+	char                                                         pad0x2_606E3[0x2];                                 // 0x0(0x2)
 	char                                                         NPCName;                                           // 0x2(0x1)
 	bool                                                         EntitlementOwnershipConfirmed;                     // 0x3(0x1)
-	char                                                         pad0x4_C1LP7[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_21D23[0x4];                                 // 0x4(0x4)
 	struct UniqueNetIdRepl                                       CommodityOwner;                                    // 0x10(0x18)
 };
 
 
 // Size 0x20
-struct CommodityTrackingModel
+struct RedeemCommodityTelemetryEvent
 {
 public:
-	struct Guid                                                  ItemOfferId;                                       // 0x0(0x10)
-	char                                                         NPCName;                                           // 0x10(0x1)
-	char                                                         pad0x7_ISLJ4[0x7];                                 // 0x11(0x7)
-	char                                                         pad0x8_EWXOB[0x8];                                 // 0x18(0x8)
+	struct FString                                               Commodity;                                         // 0x0(0x10)
+	bool                                                         RedemptionSucceeded;                               // 0x10(0x1)
+	char                                                         pad0x7_QTW05[0x7];                                 // 0x11(0x7)
+	double                                                       TimeInSecondsSinceFirstRedemptionAttempt;          // 0x18(0x8)
 };
 
 
 // Size 0x10
-struct CommodityDescWithRedeemId
+struct CommodityTypeDataEntry
 {
 public:
-	struct CommoditySelectionType                                RedeemId;                                          // 0x0(0x8)
-	class UClass*                                                RedeemItemDesc;                                    // 0x8(0x8)
+	struct FName                                                 CommodityType;                                     // 0x0(0x8)
+	struct FName                                                 DisplayName;                                       // 0x8(0x8)
 };
 
 
@@ -117,6 +108,15 @@ struct ActiveNPCDemands
 public:
 	TArray<int>                                                  NPCIdHashes;                                       // 0x0(0x10)
 	TArray<struct ActiveCommodityDemands>                        NPCDemands;                                        // 0x10(0x10)
+};
+
+
+// Size 0x10
+struct CommodityDescWithRedeemId
+{
+public:
+	struct CommoditySelectionType                                RedeemId;                                          // 0x0(0x8)
+	class UClass*                                                RedeemItemDesc;                                    // 0x8(0x8)
 };
 
 

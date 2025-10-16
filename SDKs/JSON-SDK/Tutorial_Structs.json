@@ -1,4 +1,61 @@
 {
+  "BeachNPCSpawnFlowNetworkEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x18_FG876[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "HasTaleCheckpointVoyage",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x7_ZFTU1[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x19"
+      }
+    ]
+  },
+  "HasTutorialStarterBegunCondition": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x28_AMHQ6[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TutorialStarterType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x7_2T5NA[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x29"
+      }
+    ]
+  },
+  "EventTutorialTypeDecided": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "TutorialType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "TutorialStepEndedTelemetryEvent": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -27,10 +84,21 @@
         "Offset": "0x21"
       },
       {
-        "Name": "pad0x6_BXDBP[0x6]",
+        "Name": "pad0x6_3D45O[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x22"
+      }
+    ]
+  },
+  "TutorialShowTutorialLegendaryTavernStrangerEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_JEHWO[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },
@@ -50,44 +118,10 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_MZTZH[0x4]",
+        "Name": "pad0x4_4LA4C[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
-      }
-    ]
-  },
-  "BeachNPCSpawnFlowNetworkEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x18_U9Q53[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "HasTaleCheckpointVoyage",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x7_ZDL78[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x19"
-      }
-    ]
-  },
-  "TutorialShowTutorialLegendaryTavernStrangerEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_QBIAJ[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
       }
     ]
   },
@@ -95,7 +129,7 @@
     "ClassSize": "0x38",
     "Attributes": [
       {
-        "Name": "pad0x20_YHMTF[0x20]",
+        "Name": "pad0x20_R4MU3[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x0"
@@ -117,40 +151,6 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x34"
-      }
-    ]
-  },
-  "HasTutorialStarterBegunCondition": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x28_LSCVK[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TutorialStarterType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x7_BSSEX[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x29"
-      }
-    ]
-  },
-  "EventTutorialTypeDecided": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "TutorialType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
       }
     ]
   },

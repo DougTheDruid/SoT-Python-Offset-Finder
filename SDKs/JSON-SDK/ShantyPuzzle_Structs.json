@@ -1,47 +1,23 @@
 {
-  "ShantyPuzzleUnlockedCompleteEvent": {
+  "ShantyPuzzleUnlockCanceledEvent": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_0MLSL[0x1]",
+        "Name": "pad0x1_O18IN[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
       }
     ]
   },
-  "ShantyPuzzleInteractionZoneDefinition": {
-    "ClassSize": "0x18",
+  "ShantyPuzzleCompleteEvent": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
+        "Name": "ParticipatingCrews",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
         "Offset": "0x0"
-      },
-      {
-        "Name": "Radius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "RequiredMusicalInstrumentType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x3_A0A4O[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x11"
-      },
-      {
-        "Name": "RequiredNumInteractors",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x14"
       }
     ]
   },
@@ -72,20 +48,20 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_I6DZF[0x4]",
+        "Name": "pad0x4_O7A68[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
       }
     ]
   },
-  "ShantyPuzzleCompleteEvent": {
-    "ClassSize": "0x10",
+  "ShantyPuzzleUnlockedCompleteEvent": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "ParticipatingCrews",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
+        "Name": "pad0x1_STU4K[0x1]",
+        "Type": "char",
+        "Size": "0x1",
         "Offset": "0x0"
       }
     ]
@@ -117,21 +93,45 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_NVXJN[0x4]",
+        "Name": "pad0x4_T5J1I[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
       }
     ]
   },
-  "ShantyPuzzleUnlockCanceledEvent": {
-    "ClassSize": "0x1",
+  "ShantyPuzzleInteractionZoneDefinition": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x1_T4QUS[0x1]",
-        "Type": "char",
-        "Size": "0x1",
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
         "Offset": "0x0"
+      },
+      {
+        "Name": "Radius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "RequiredMusicalInstrumentType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x3_3BJQC[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "RequiredNumInteractors",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
       }
     ]
   },

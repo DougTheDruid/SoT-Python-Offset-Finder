@@ -10,18 +10,18 @@ public:
 };
 
 
-// Size 0x80 (Full Size[0xa8] - InheritedSize[0x28]
-class LocationProviderService: public Object
-{
-public:
-	char                                                         pad0x80_RC3IB[0x80];                               // 0x28(0x80)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class LocationType: public Object
 {
 public:
+};
+
+
+// Size 0x80 (Full Size[0xa8] - InheritedSize[0x28]
+class LocationProviderService: public Object
+{
+public:
+	char                                                         pad0x80_ZDGE4[0x80];                               // 0x28(0x80)
 };
 
 

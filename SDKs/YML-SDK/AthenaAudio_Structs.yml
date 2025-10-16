@@ -79,7 +79,7 @@ ImmerseHeadsetUI:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_WUFW7[0x4]
+  - Name: pad0x4_MSSLC[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -88,9 +88,28 @@ ImmerseHeadsetUI:
     Size: '0x10'
     Type: struct FString
   ClassSize: '0x18'
+ImmerseStatusUpdateTelemetryEvent:
+  Attributes:
+  - Name: UserId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct FString
+  - Name: UserState
+    Offset: '0x10'
+    Size: '0x10'
+    Type: struct FString
+  - Name: Status
+    Offset: '0x20'
+    Size: '0x10'
+    Type: struct FString
+  - Name: StatusCode
+    Offset: '0x30'
+    Size: '0x10'
+    Type: struct FString
+  ClassSize: '0x40'
 SpatialAudioGetHeadsetListToGame:
   Attributes:
-  - Name: pad0x1_F0F1B[0x1]
+  - Name: pad0x1_BPIQR[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -125,14 +144,14 @@ SpatialAudioHeadsetSelectionToGame:
   ClassSize: '0x4'
 SpatialAudioPersonalizedHRTFBeginToGame:
   Attributes:
-  - Name: pad0x1_OR05X[0x1]
+  - Name: pad0x1_UPS44[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 SpatialAudioPersonalizedHRTFCancelledToGame:
   Attributes:
-  - Name: pad0x1_HGXG2[0x1]
+  - Name: pad0x1_8193T[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -153,7 +172,7 @@ SpatialAudioPersonalizedHRTFSuccessToUI:
   ClassSize: '0x40'
 SpatialAudioPurchaseBeginToGame:
   Attributes:
-  - Name: pad0x1_EC7LX[0x1]
+  - Name: pad0x1_A07IY[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -205,14 +224,14 @@ SpatialAudioState:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_6SEOP[0x7]
+  - Name: pad0x7_L32KI[0x7]
     Offset: '0x39'
     Size: '0x7'
     Type: char
   ClassSize: '0x40'
 SpatialAudioStateUpdateRequestToGame:
   Attributes:
-  - Name: pad0x1_BY9DJ[0x1]
+  - Name: pad0x1_UW8AV[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char

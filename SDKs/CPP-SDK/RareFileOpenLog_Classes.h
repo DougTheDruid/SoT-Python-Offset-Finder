@@ -10,20 +10,12 @@ public:
 	int                                                          DataSizeSaveIncrement;                             // 0x38(0x4)
 	float                                                        TimeSaveIncrement;                                 // 0x3c(0x4)
 	char                                                         DataSource;                                        // 0x40(0x1)
-	char                                                         pad0x7_RAS14[0x7];                                 // 0x41(0x7)
+	char                                                         pad0x7_K4405[0x7];                                 // 0x41(0x7)
 	TArray<String>                                               SandboxesToEnableByDefault;                        // 0x48(0x10)
 	struct FString                                               OpenOrderLogDirectory;                             // 0x58(0x10)
 	struct FString                                               OutputOrderLogDirectory;                           // 0x68(0x10)
 	int                                                          NumberOfLogsToAggregate;                           // 0x78(0x4)
-	char                                                         pad0x14_5FXRD[0x14];                               // 0x7c(0x14)
-};
-
-
-// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
-class AggregateOpenOrderLogsCommandlet: public Commandlet
-{
-public:
-	char                                                         pad0x8_1QNXT[0x8];                                 // 0x80(0x8)
+	char                                                         pad0x14_NDOOZ[0x14];                               // 0x7c(0x14)
 };
 
 
@@ -31,7 +23,15 @@ public:
 class RareFileOpenFileHandler: public Class
 {
 public:
-	char                                                         pad0x48_X0O26[0x48];                               // 0x1c0(0x48)
+	char                                                         pad0x48_CLKXU[0x48];                               // 0x1c0(0x48)
+};
+
+
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class AggregateOpenOrderLogsCommandlet: public Commandlet
+{
+public:
+	char                                                         pad0x8_QXEHB[0x8];                                 // 0x80(0x8)
 };
 
 

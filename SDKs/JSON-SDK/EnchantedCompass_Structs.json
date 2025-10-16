@@ -1,20 +1,9 @@
 {
-  "RotatingCompassRotationCurveCompletedEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_JFZUX[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "RotatingCompassAudioParams": {
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x20_N54OZ[0x20]",
+        "Name": "pad0x20_H6RNM[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x0"
@@ -55,7 +44,18 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_4U1DF[0x1]",
+        "Name": "pad0x1_IHG6Q[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "RotatingCompassRotationCurveCompletedEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_XP9ZI[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"

@@ -22,6 +22,46 @@
       }
     ]
   },
+  "EventEntityIdsSwitch": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Event",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "EnableEntityIds",
+        "Type": "TArray<int>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "DisableEntityIds",
+        "Type": "TArray<int>",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "GlobalEventSubscriptionGameServerRequestModel": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "EnableEvents",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DisableEvents",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "EventOverMemoryThreshold": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -44,50 +84,10 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x4_O8CWG[0x4]",
+        "Name": "pad0x4_DB788[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
-      }
-    ]
-  },
-  "GlobalEventSubscriptionGameServerRequestModel": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "EnableEvents",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DisableEvents",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "EventEntityIdsSwitch": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "Event",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "EnableEntityIds",
-        "Type": "TArray<int>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "DisableEntityIds",
-        "Type": "TArray<int>",
-        "Size": "0x10",
-        "Offset": "0x18"
       }
     ]
   },

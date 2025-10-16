@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 CrouchActionStateConstructionInfo:
   Attributes:
-  - Name: pad0x48_94AK6[0x48]
+  - Name: pad0x48_LK8JI[0x48]
     Offset: '0x0'
     Size: '0x48'
     Type: char
@@ -29,7 +29,7 @@ CrouchTelemetry:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_O3BND[0x7]
+  - Name: pad0x7_P7VGG[0x7]
     Offset: '0x39'
     Size: '0x7'
     Type: char
@@ -57,7 +57,7 @@ OnEndCrouchAudioEvent:
   ClassSize: '0x8'
 OnEndCrouchEvent:
   Attributes:
-  - Name: pad0x1_ZF6Y2[0x1]
+  - Name: pad0x1_G688Q[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -71,7 +71,7 @@ OnStartCrouchAudioEvent:
   ClassSize: '0x8'
 OnStartCrouchEvent:
   Attributes:
-  - Name: pad0x1_AFMQQ[0x1]
+  - Name: pad0x1_AAQ1L[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char

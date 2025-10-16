@@ -10,13 +10,13 @@
 class PlayerLootMarkerService: public Actor
 {
 public:
-	char                                                         pad0x8_PK04P[0x8];                                 // 0x3a0(0x8)
+	char                                                         pad0x8_5Z3EX[0x8];                                 // 0x3a0(0x8)
 	class PlayerLootMarkerServiceParams*                         Params;                                            // 0x3a8(0x8)
-	char                                                         pad0x20_SKZHL[0x20];                               // 0x3b0(0x20)
+	char                                                         pad0x20_MNWYL[0x20];                               // 0x3b0(0x20)
 	TArray<uintptr_t>                                            ShortRangeMarkers;                                 // 0x3d0(0x10)
-	char                                                         pad0x118_1GC6L[0x118];                             // 0x3e0(0x118)
+	char                                                         pad0x118_GO7I1[0x118];                             // 0x3e0(0x118)
 	TArray<struct PlayerLootMarkerWorldEdgeBatchData>            BatchData;                                         // 0x4f8(0x10)
-	char                                                         pad0x10_0D8ZN[0x10];                               // 0x508(0x10)
+	char                                                         pad0x10_OP758[0x10];                               // 0x508(0x10)
 };
 
 
@@ -26,7 +26,7 @@ class PlayerLootMarkerServiceParams: public DataAsset
 public:
 	class ShortRangeMarkerDataAsset*                             MarkerDataAsset;                                   // 0x28(0x8)
 	float                                                        JettisonMaxMarkerDistance;                         // 0x30(0x4)
-	char                                                         pad0x4_F58DI[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_TY18W[0x4];                                 // 0x34(0x4)
 };
 
 

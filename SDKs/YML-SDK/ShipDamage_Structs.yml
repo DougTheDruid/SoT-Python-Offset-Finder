@@ -21,7 +21,7 @@ DamageZoneDamageLevelChanged:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_9DOO1[0x4]
+  - Name: pad0x4_WXIH6[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -40,7 +40,7 @@ DistanceAndLevelOfDamage:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_7N9XI[0x3]
+  - Name: pad0x3_D5XZG[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -52,7 +52,7 @@ DistanceAndLevelOfDamage:
     Offset: '0x10'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_QHYJ8[0x3]
+  - Name: pad0x3_3HMD8[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -78,7 +78,7 @@ EventShipDamageApplied:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_WD7YC[0x4]
+  - Name: pad0x4_EDUIC[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -112,7 +112,7 @@ HullDamageHit:
     Offset: '0x18'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_Y1YZ0[0x3]
+  - Name: pad0x3_YZCFL[0x3]
     Offset: '0x19'
     Size: '0x3'
     Type: char
@@ -142,7 +142,7 @@ HullDamageZoneInfo:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_WQ4KR[0x7]
+  - Name: pad0x7_YPBQM[0x7]
     Offset: '0x19'
     Size: '0x7'
     Type: char
@@ -200,7 +200,7 @@ LevelOfDamageProperties:
     Offset: '0x60'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_8MDJN[0x4]
+  - Name: pad0x4_MPVF6[0x4]
     Offset: '0x64'
     Size: '0x4'
     Type: char
@@ -227,7 +227,7 @@ LevelOfDamageProperties:
   ClassSize: '0x90'
 SendShipRestoredRpc:
   Attributes:
-  - Name: pad0x18_4SLFN[0x18]
+  - Name: pad0x18_CILNT[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -245,7 +245,7 @@ ShipDamageParams:
   ClassSize: '0x10'
 ShipPartLevelsOfDamage:
   Attributes:
-  - Name: pad0x20_6WR4A[0x20]
+  - Name: pad0x20_CAT35[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
@@ -257,14 +257,14 @@ ShipPartLevelsOfDamage:
     Offset: '0x30'
     Size: '0xc'
     Type: struct FeatureFlag
-  - Name: pad0x4_A62RJ[0x4]
+  - Name: pad0x4_37JHD[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
   ClassSize: '0x40'
 ShipRestoredNetworkEvent:
   Attributes:
-  - Name: pad0x18_L452O[0x18]
+  - Name: pad0x18_XXH1I[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char

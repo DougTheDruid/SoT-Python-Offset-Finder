@@ -46,7 +46,7 @@ EngineServiceNotification:
   ClassSize: '0x18'
 EngineServicePing:
   Attributes:
-  - Name: pad0x1_U0OUB[0x1]
+  - Name: pad0x1_O5X6L[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -65,7 +65,7 @@ EngineServicePong:
     Offset: '0x14'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_2226I[0x3]
+  - Name: pad0x3_U9DQM[0x3]
     Offset: '0x15'
     Size: '0x3'
     Type: char
@@ -85,7 +85,7 @@ EngineServicePong:
     Offset: '0x48'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_M5EL6[0x4]
+  - Name: pad0x4_XJAF9[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char

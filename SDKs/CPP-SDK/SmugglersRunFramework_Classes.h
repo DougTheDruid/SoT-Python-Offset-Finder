@@ -6,18 +6,18 @@
 #include "SmugglersRunFramework_Structs.h"
 
 
-// Size 0x288 (Full Size[0x628] - InheritedSize[0x3a0]
-class SmugglersRunService: public Actor
-{
-public:
-	char                                                         pad0x288_2OK35[0x288];                             // 0x3a0(0x288)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class SmugglersRunServiceInterface: public Interface
 {
 public:
+};
+
+
+// Size 0x288 (Full Size[0x628] - InheritedSize[0x3a0]
+class SmugglersRunService: public Actor
+{
+public:
+	char                                                         pad0x288_WUMLK[0x288];                             // 0x3a0(0x288)
 };
 
 

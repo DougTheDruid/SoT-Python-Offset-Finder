@@ -6,11 +6,10 @@
 #include "Darts_Structs.h"
 
 
-// Size 0x18 (Full Size[0x3b8] - InheritedSize[0x3a0]
-class DartProxyService: public Actor
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
+class AILuredIntoWaterConditionalStatsTrigger: public ConditionalStatsTriggerType
 {
 public:
-	char                                                         pad0x18_Z5H2K[0x18];                               // 0x3a0(0x18)
 };
 
 
@@ -29,21 +28,14 @@ public:
 
 
 // Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class AILuredIntoWaterConditionalStatsTrigger: public ConditionalStatsTriggerType
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
 class KilledWithPoisonDartConditionalStatsTrigger: public ConditionalStatsTriggerType
 {
 public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DartProxyServiceInterface: public Interface
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
+class KilledByOwnTeamConditionalStatsTrigger: public ConditionalStatsTriggerType
 {
 public:
 };
@@ -56,15 +48,23 @@ public:
 };
 
 
+// Size 0x18 (Full Size[0x3b8] - InheritedSize[0x3a0]
+class DartProxyService: public Actor
+{
+public:
+	char                                                         pad0x18_XDG06[0x18];                               // 0x3a0(0x18)
+};
+
+
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DartInterface: public Interface
+class DartProxyServiceInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class KilledByOwnTeamConditionalStatsTrigger: public ConditionalStatsTriggerType
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DartInterface: public Interface
 {
 public:
 };

@@ -1,71 +1,4 @@
 {
-  "ChecklistMapCollectionInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ChecklistItemsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ChecklistItems",
-        "Type": "TArray<struct ChecklistItem>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "ChecklistMapCompletionComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x140",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x88",
-    "Attributes": [
-      {
-        "Name": "ActionData",
-        "Type": "class ChecklistActionData*",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "pad0x80_IJKYM[0x80]",
-        "Type": "char",
-        "Size": "0x80",
-        "Offset": "0xc0"
-      }
-    ]
-  },
-  "ChecklistActionData": {
-    "Super": "Object",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "NumRequiredActions",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "ActionType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "pad0x3_Q8AAO[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x2d"
-      }
-    ]
-  },
   "ChecklistMapSettings": {
     "Super": "DeveloperSettings",
     "FullSize": "0x58",
@@ -85,6 +18,33 @@
         "Offset": "0x48"
       }
     ]
+  },
+  "ChecklistMapCompletionComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x140",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "ActionData",
+        "Type": "class ChecklistActionData*",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "pad0x80_5OB9P[0x80]",
+        "Type": "char",
+        "Size": "0x80",
+        "Offset": "0xc0"
+      }
+    ]
+  },
+  "ChecklistMapCollectionInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "ChecklistMap": {
     "Super": "TreasureMap",
@@ -123,7 +83,7 @@
         "Offset": "0x86c"
       },
       {
-        "Name": "pad0x8_U73RK[0x8]",
+        "Name": "pad0x8_I6GCO[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x870"
@@ -141,24 +101,50 @@
         "Offset": "0x880"
       },
       {
-        "Name": "pad0x48_OZPMX[0x48]",
+        "Name": "pad0x48_MRRNQ[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0x968"
       }
     ]
   },
-  "KillActorChecklistActionData": {
-    "Super": "ChecklistActionData",
-    "FullSize": "0x40",
-    "InheritedSize": "0x30",
+  "ChecklistItemsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "TargetAIClasses",
-        "Type": "TArray<class Class*>",
+        "Name": "ChecklistItems",
+        "Type": "TArray<struct ChecklistItem>",
         "Size": "0x10",
-        "Offset": "0x30"
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "ChecklistActionData": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "NumRequiredActions",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ActionType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "pad0x3_NMPW1[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x2d"
       }
     ]
   },
@@ -179,6 +165,20 @@
         "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x40"
+      }
+    ]
+  },
+  "KillActorChecklistActionData": {
+    "Super": "ChecklistActionData",
+    "FullSize": "0x40",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "TargetAIClasses",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x30"
       }
     ]
   },

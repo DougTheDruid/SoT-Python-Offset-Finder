@@ -6,47 +6,69 @@
 #include "Tethering_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CordRenderInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x40 (Full Size[0x640] - InheritedSize[0x600]
-class CordRenderComponent: public StaticMeshComponent
-{
-public:
-	char                                                         pad0x8_MUSVX[0x8];                                 // 0x600(0x8)
-	TArray<class MaterialInstanceDynamic*>                       CordMaterials;                                     // 0x608(0x10)
-	float                                                        ThicknessCm;                                       // 0x618(0x4)
-	char                                                         pad0x24_IMZK2[0x24];                               // 0x61c(0x24)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ShouldTetherInWorldSpaceInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x60 (Full Size[0x118] - InheritedSize[0xb8]
 class TetherCustomisationComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_4HEOI[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_UITJW[0x8];                                 // 0xb8(0x8)
 	class SceneComponent*                                        ComponentToTetherTo;                               // 0xc0(0x8)
-	char                                                         pad0x48_4VPYU[0x48];                               // 0xc8(0x48)
+	char                                                         pad0x48_WWIHM[0x48];                               // 0xc8(0x48)
 	float                                                        MassIntertiaScale;                                 // 0x110(0x4)
 	bool                                                         CanBeTethered;                                     // 0x114(0x1)
 	bool                                                         IsMassInertiaScalingEnabled;                       // 0x115(0x1)
-	char                                                         pad0x2_THW8C[0x2];                                 // 0x116(0x2)
+	char                                                         pad0x2_EV6ES[0x2];                                 // 0x116(0x2)
+};
+
+
+// Size 0x8 (Full Size[0xc0] - InheritedSize[0xb8]
+class TetherInWorldSpaceComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_Y88C9[0x8];                                 // 0xb8(0x8)
+};
+
+
+// Size 0x140 (Full Size[0x4e0] - InheritedSize[0x3a0]
+class Tether: public Actor
+{
+public:
+	char                                                         pad0xf8_OFWKY[0xf8];                               // 0x3a0(0xf8)
+	class SceneComponent*                                        TetherPositionAnchorComponent;                     // 0x498(0x8)
+	class SphereComponent*                                       SourcePhysicsHandle;                               // 0x4a0(0x8)
+	class SphereComponent*                                       TargetPhysicsHandle;                               // 0x4a8(0x8)
+	class DistanceJointComponent*                                JointComponent;                                    // 0x4b0(0x8)
+	class Actor*                                                 SourceActor;                                       // 0x4b8(0x8)
+	class Actor*                                                 TargetActor;                                       // 0x4c0(0x8)
+	float                                                        SlackCm;                                           // 0x4c8(0x4)
+	float                                                        MaxLengthWhenGrowing;                              // 0x4cc(0x4)
+	char                                                         pad0x8_4YIWY[0x8];                                 // 0x4d0(0x8)
+	bool                                                         HasAttached;                                       // 0x4d8(0x1)
+	bool                                                         HasSourceActor;                                    // 0x4d9(0x1)
+	bool                                                         HasTargetActor;                                    // 0x4da(0x1)
+	bool                                                         IsSlackEnabled;                                    // 0x4db(0x1)
+	char                                                         CurrentTetherMode;                                 // 0x4dc(0x1)
+	char                                                         pad0x3_IPUGU[0x3];                                 // 0x4dd(0x3)
+};
+
+
+// Size 0x88 (Full Size[0x140] - InheritedSize[0xb8]
+class DistanceJointComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x70_ZI1VK[0x70];                               // 0xb8(0x70)
+	float                                                        MinDistance;                                       // 0x128(0x4)
+	float                                                        MaxDistance;                                       // 0x12c(0x4)
+	float                                                        SpringStiffness;                                   // 0x130(0x4)
+	float                                                        SpringDamping;                                     // 0x134(0x4)
+	bool                                                         ApplyAsSpring;                                     // 0x138(0x1)
+	bool                                                         EnforceMinDistance;                                // 0x139(0x1)
+	bool                                                         EnforceMaxDistance;                                // 0x13a(0x1)
+	char                                                         pad0x5_UMBFH[0x5];                                 // 0x13b(0x5)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TetherConstraintInterface: public Interface
+class CordRenderInterface: public Interface
 {
 public:
 };
@@ -59,50 +81,14 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0xc0] - InheritedSize[0xb8]
-class TetherInWorldSpaceComponent: public ActorComponent
+// Size 0x40 (Full Size[0x640] - InheritedSize[0x600]
+class CordRenderComponent: public StaticMeshComponent
 {
 public:
-	char                                                         pad0x8_TC2SJ[0x8];                                 // 0xb8(0x8)
-};
-
-
-// Size 0x88 (Full Size[0x140] - InheritedSize[0xb8]
-class DistanceJointComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x70_QAFEX[0x70];                               // 0xb8(0x70)
-	float                                                        MinDistance;                                       // 0x128(0x4)
-	float                                                        MaxDistance;                                       // 0x12c(0x4)
-	float                                                        SpringStiffness;                                   // 0x130(0x4)
-	float                                                        SpringDamping;                                     // 0x134(0x4)
-	bool                                                         ApplyAsSpring;                                     // 0x138(0x1)
-	bool                                                         EnforceMinDistance;                                // 0x139(0x1)
-	bool                                                         EnforceMaxDistance;                                // 0x13a(0x1)
-	char                                                         pad0x5_1KPV0[0x5];                                 // 0x13b(0x5)
-};
-
-
-// Size 0x140 (Full Size[0x4e0] - InheritedSize[0x3a0]
-class Tether: public Actor
-{
-public:
-	char                                                         pad0xf8_1HIHU[0xf8];                               // 0x3a0(0xf8)
-	class SceneComponent*                                        TetherPositionAnchorComponent;                     // 0x498(0x8)
-	class SphereComponent*                                       SourcePhysicsHandle;                               // 0x4a0(0x8)
-	class SphereComponent*                                       TargetPhysicsHandle;                               // 0x4a8(0x8)
-	class DistanceJointComponent*                                JointComponent;                                    // 0x4b0(0x8)
-	class Actor*                                                 SourceActor;                                       // 0x4b8(0x8)
-	class Actor*                                                 TargetActor;                                       // 0x4c0(0x8)
-	float                                                        SlackCm;                                           // 0x4c8(0x4)
-	float                                                        MaxLengthWhenGrowing;                              // 0x4cc(0x4)
-	char                                                         pad0x8_T2P0L[0x8];                                 // 0x4d0(0x8)
-	bool                                                         HasAttached;                                       // 0x4d8(0x1)
-	bool                                                         HasSourceActor;                                    // 0x4d9(0x1)
-	bool                                                         HasTargetActor;                                    // 0x4da(0x1)
-	bool                                                         IsSlackEnabled;                                    // 0x4db(0x1)
-	char                                                         CurrentTetherMode;                                 // 0x4dc(0x1)
-	char                                                         pad0x3_VLX6U[0x3];                                 // 0x4dd(0x3)
+	char                                                         pad0x8_ZSK0Z[0x8];                                 // 0x600(0x8)
+	TArray<class MaterialInstanceDynamic*>                       CordMaterials;                                     // 0x608(0x10)
+	float                                                        ThicknessCm;                                       // 0x618(0x4)
+	char                                                         pad0x24_KL9JM[0x24];                               // 0x61c(0x24)
 };
 
 
@@ -110,6 +96,32 @@ public:
 class TetherInterface: public Interface
 {
 public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ShouldTetherInWorldSpaceInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TetherConstraintInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x60 (Full Size[0x6a0] - InheritedSize[0x640]
+class DynamicCordRenderComponent: public CordRenderComponent
+{
+public:
+	float                                                        BoundsPadding;                                     // 0x638(0x4)
+	char                                                         pad0x4_8B14N[0x4];                                 // 0x63c(0x4)
+	class SceneComponent*                                        EndPointA;                                         // 0x640(0x8)
+	class SceneComponent*                                        EndPointB;                                         // 0x648(0x8)
+	char                                                         pad0x50_7ZS4P[0x50];                               // 0x650(0x50)
 };
 
 
@@ -128,19 +140,7 @@ public:
 	float                                                        LaunchAnimationDurationSecs;                       // 0x648(0x4)
 	float                                                        HitAnimationDurationSecs;                          // 0x64c(0x4)
 	float                                                        QuickRetractAnimationSpeed;                        // 0x650(0x4)
-	char                                                         pad0xc_KPVV4[0xc];                                 // 0x654(0xc)
-};
-
-
-// Size 0x60 (Full Size[0x6a0] - InheritedSize[0x640]
-class DynamicCordRenderComponent: public CordRenderComponent
-{
-public:
-	float                                                        BoundsPadding;                                     // 0x638(0x4)
-	char                                                         pad0x4_K17QR[0x4];                                 // 0x63c(0x4)
-	class SceneComponent*                                        EndPointA;                                         // 0x640(0x8)
-	class SceneComponent*                                        EndPointB;                                         // 0x648(0x8)
-	char                                                         pad0x50_FW64C[0x50];                               // 0x650(0x50)
+	char                                                         pad0xc_813NQ[0xc];                                 // 0x654(0xc)
 };
 
 

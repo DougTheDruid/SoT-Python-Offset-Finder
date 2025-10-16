@@ -9,7 +9,7 @@ RareGameServiceManagerServiceRegisteredEvent:
   ClassSize: '0x8'
 RareGameServiceManagerStateChangedEvent:
   Attributes:
-  - Name: pad0x2_O0BNB[0x2]
+  - Name: pad0x2_Z48Y7[0x2]
     Offset: '0x0'
     Size: '0x2'
     Type: char
@@ -32,7 +32,7 @@ RareGameServiceSpecification:
     Offset: '0x11'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_SAD7Z[0x6]
+  - Name: pad0x6_BHVOV[0x6]
     Offset: '0x12'
     Size: '0x6'
     Type: char

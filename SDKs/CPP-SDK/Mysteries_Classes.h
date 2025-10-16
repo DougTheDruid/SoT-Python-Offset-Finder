@@ -6,25 +6,17 @@
 #include "Mysteries_Structs.h"
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class AbandonedNoteWeightedTextDataAsset: public DataAsset
-{
-public:
-	TArray<struct AbandonedNoteWeightedTextEntry>                Entries;                                           // 0x28(0x10)
-};
-
-
 // Size 0xf0 (Full Size[0x490] - InheritedSize[0x3a0]
 class SirenPuzzleContext: public Actor
 {
 public:
-	char                                                         pad0x8_68XVG[0x8];                                 // 0x3a0(0x8)
+	char                                                         pad0x8_OY1AF[0x8];                                 // 0x3a0(0x8)
 	class SceneComponent*                                        Root;                                              // 0x3a8(0x8)
 	TArray<struct SirenPuzzleLockState>                          PuzzleLocks;                                       // 0x3b0(0x10)
 	TArray<struct LandmarkReactionKeyFrame>                      UnlockCompleteReactions;                           // 0x3c0(0x10)
 	TArray<struct LandmarkReactionKeyFrame>                      ResetLocksReactions;                               // 0x3d0(0x10)
 	TArray<char>                                                 LockStates;                                        // 0x3e0(0x10)
-	char                                                         pad0xa0_W7PW8[0xa0];                               // 0x3f0(0xa0)
+	char                                                         pad0xa0_I2J4E[0xa0];                               // 0x3f0(0xa0)
 };
 
 
@@ -32,19 +24,10 @@ public:
 class AbandonedNoteWeightedTextSourceComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x40_CE1FY[0x40];                               // 0xb8(0x40)
+	char                                                         pad0x40_AJXHK[0x40];                               // 0xb8(0x40)
 	struct FText                                                 ClueText;                                          // 0xf8(0x38)
 	struct FText                                                 TitleText;                                         // 0x130(0x38)
-	char                                                         pad0x30_WCQPJ[0x30];                               // 0x168(0x30)
-};
-
-
-// Size 0x20 (Full Size[0x158] - InheritedSize[0x138]
-class PopUpNotificationOnItemWieldedComponent: public OnItemWieldedComponent
-{
-public:
-	class PopUpMessageDesc*                                      PopUpDesc;                                         // 0x138(0x8)
-	char                                                         pad0x18_EN5Q4[0x18];                               // 0x140(0x18)
+	char                                                         pad0x30_US7AK[0x30];                               // 0x168(0x30)
 };
 
 
@@ -59,7 +42,24 @@ public:
 	float                                                        InteractionHoldTime;                               // 0x458(0x4)
 	float                                                        InteractionRadius;                                 // 0x45c(0x4)
 	struct FText                                                 DisplayName;                                       // 0x460(0x38)
-	char                                                         pad0x20_7NGSG[0x20];                               // 0x498(0x20)
+	char                                                         pad0x20_OTDWU[0x20];                               // 0x498(0x20)
+};
+
+
+// Size 0x20 (Full Size[0x158] - InheritedSize[0x138]
+class PopUpNotificationOnItemWieldedComponent: public OnItemWieldedComponent
+{
+public:
+	class PopUpMessageDesc*                                      PopUpDesc;                                         // 0x138(0x8)
+	char                                                         pad0x18_0N6VB[0x18];                               // 0x140(0x18)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class AbandonedNoteWeightedTextDataAsset: public DataAsset
+{
+public:
+	TArray<struct AbandonedNoteWeightedTextEntry>                Entries;                                           // 0x28(0x10)
 };
 
 

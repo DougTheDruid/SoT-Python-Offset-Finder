@@ -6,57 +6,15 @@
 #include "AdventureOnDemandFramework_Structs.h"
 
 
-// Size 0x40 (Full Size[0xd0] - InheritedSize[0x90]
-class FriendsInCrewPrerequisite: public InteractionPrerequisiteBase
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class AdventureOnDemandSetHintPopUpStep: public TaleQuestStep
 {
 public:
-	char                                                         MinimumFriendsInCrew;                              // 0x90(0x1)
-	char                                                         pad0x3f_HGDOI[0x3f];                               // 0x91(0x3f)
 };
 
 
-// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
-class AdventureOnDemandVoyageSelectionCompanyDataAsset: public DataAsset
-{
-public:
-	struct FName                                                 CompanyName;                                       // 0x28(0x8)
-	class UClass*                                                Company;                                           // 0x30(0x8)
-	class UClass*                                                DiscoverTileCategory;                              // 0x38(0x8)
-	struct FeatureFlag                                           Feature;                                           // 0x40(0xc)
-	char                                                         pad0x4_5O115[0x4];                                 // 0x4c(0x4)
-	TArray<class InteractionPrerequisiteBase*>                   Prerequisites;                                     // 0x50(0x10)
-	TArray<struct AdventureOnDemandVoyageSelectionVoyageProposalGroup> VoyageGroups;                                      // 0x60(0x10)
-};
-
-
-// Size 0x40 (Full Size[0x8d0] - InheritedSize[0x890]
-class AdventureOnDemandDepartureTunnelOfTheDamned: public DepartureTunnelOfTheDamned
-{
-public:
-	class AdventureOnDemandDepartureTunnelDesc*                  AdventureOnDemandDepartureTunnelDesc;              // 0x890(0x8)
-	char                                                         pad0x38_JRBZU[0x38];                               // 0x898(0x38)
-};
-
-
-// Size 0x20 (Full Size[0xf8] - InheritedSize[0xd8]
-class AdventureOnDemandArrivalTunnelDependencies: public ArrivalTunnelDependencies
-{
-public:
-	char                                                         pad0x20_B4IQT[0x20];                               // 0xd8(0x20)
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class AdventureOnDemandDiscoveryPageMysteryDataAsset: public DataAsset
-{
-public:
-	TArray<class InteractionPrerequisiteBase*>                   Prerequisites;                                     // 0x28(0x10)
-	TArray<struct AdventureOnDemandVoyageDiscoveryPageMysteryProposal> MysteryProposals;                                  // 0x38(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
-class AdventureOnDemandDisplayHintPopUpStepDesc: public TaleQuestStepDesc
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class AdventureOnDemandDisplayHintPopUpStep: public TaleQuestStep
 {
 public:
 };
@@ -69,222 +27,20 @@ public:
 };
 
 
-// Size 0xd8 (Full Size[0x100] - InheritedSize[0x28]
-class AdventureOnDemandTallTaleCategoryDataAsset: public DataAsset
-{
-public:
-	struct FName                                                 TaleId;                                            // 0x28(0x8)
-	char                                                         TaleCategory;                                      // 0x30(0x1)
-	char                                                         pad0x7_DSL9B[0x7];                                 // 0x31(0x7)
-	class UClass*                                                DiscoverTileCategory;                              // 0x38(0x8)
-	struct FText                                                 DisplayName;                                       // 0x40(0x38)
-	struct FText                                                 Description;                                       // 0x78(0x38)
-	struct StringAssetReference                                  BackgroundImageUrl;                                // 0xb0(0x10)
-	struct StringAssetReference                                  IconImageUrl;                                      // 0xc0(0x10)
-	TArray<struct Text>                                          LockedDescriptions;                                // 0xd0(0x10)
-	TArray<class InteractionPrerequisiteBase*>                   Prerequisites;                                     // 0xe0(0x10)
-	TArray<struct AdventureOnDemandTallTaleProposalGroup>        TallTales;                                         // 0xf0(0x10)
-};
-
-
 // Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
-class AdventureOnDemandForceIslandBannerStepDesc: public TaleQuestStepDesc
+class AdventureOnDemandSetHintPopUpStepDesc: public TaleQuestStepDesc
 {
 public:
-	bool                                                         MuteBannerAudio;                                   // 0x80(0x1)
-	char                                                         pad0x7_D1QQF[0x7];                                 // 0x81(0x7)
+	char                                                         HintType;                                          // 0x80(0x1)
+	char                                                         pad0x7_3NJ10[0x7];                                 // 0x81(0x7)
 };
 
 
-// Size 0x18 (Full Size[0xb0] - InheritedSize[0x98]
-class AdventureOnDemandYieldQuestResumeOnConditionsTaleStep: public TaleQuestStep
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class AdventureOnDemandArrivalTunnelWorkerBase: public Object
 {
 public:
-	char                                                         pad0x18_Y2EBS[0x18];                               // 0x98(0x18)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class AdventureOnDemandAreCrewNearQuestTargetStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
-class AdventureOnDemandServiceParams: public DataAsset
-{
-public:
-	class VoyageDescDataAsset*                                   DiveToTunnelVoyageDesc;                            // 0x28(0x8)
-	class TunnelDesc*                                            VoyageTunnelDesc;                                  // 0x30(0x8)
-	class VoyageDescDataAsset*                                   LeaveTunnelVoyageDesc;                             // 0x38(0x8)
-	TArray<struct ExtraSpawnDistanceFromIsland>                  ExtraSpawnDistanceFromIsland;                      // 0x40(0x10)
-	float                                                        WorldEventsCooldown;                               // 0x50(0x4)
-	char                                                         pad0x4_I103J[0x4];                                 // 0x54(0x4)
-	class GameEventsOnDemandBannerDataAsset*                     GameEventsOnDemandBannerDataAsset;                 // 0x58(0x8)
-	class GameEventsOnDemandStatDataAsset*                       GameEventsOnDemandStatDataAsset;                   // 0x60(0x8)
-	class UClass*                                                HuntersCallCompany;                                // 0x68(0x8)
-	TArray<struct QuestTypeTutorialOverride>                     QuestTypeTutorialOverrides;                        // 0x70(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class AdventureOnDemandSetHintPopUpStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x90 (Full Size[0x110] - InheritedSize[0x80]
-class AdventureOnDemandSetDirectionToApproachTargetFromStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableVector                                   DirectionToApproachTargetFrom;                     // 0x80(0x30)
-	struct QuestVariableVector                                   PointOfInterestToGetDirectionToTargetFrom;         // 0xb0(0x30)
-	struct QuestVariableActor                                    ActorToGetDirectionToTargetFrom;                   // 0xe0(0x30)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AdventureOnDemandServiceInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class GameEventsOnDemandStatDataAsset: public DataAsset
-{
-public:
-	TArray<struct GameEventOnDemandCompanyStatData>              CompletedEventStatsPerCompany;                     // 0x28(0x10)
-};
-
-
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class AdventureOnDemandGetTunnelDescStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableDataAsset                                TunnelDesc;                                        // 0x80(0x30)
-};
-
-
-// Size 0xf0 (Full Size[0x118] - InheritedSize[0x28]
-class GameEventsOnDemandBannerDataAsset: public DataAsset
-{
-public:
-	TArray<struct GameEventOnDemandBannerTextData>               GameEventSpecificBannerTextData;                   // 0x28(0x10)
-	struct FText                                                 OnShipSunkBannerText;                              // 0x38(0x38)
-	struct FText                                                 OnVoyageCancelledBannerText;                       // 0x70(0x38)
-	struct FText                                                 OnCrewJoinedGameEventBannerHeaderText;             // 0xa8(0x38)
-	struct FText                                                 OnCrewJoinedGameEventBannerMessageText;            // 0xe0(0x38)
-};
-
-
-// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
-class AdventureOnDemandSuppressIslandBannerStep: public TaleQuestStep
-{
-public:
-	class AdventureOnDemandSuppressIslandBannerStepDesc*         StepDesc;                                          // 0x98(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class AdventureOnDemandSetDirectionToApproachTargetFromStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x10 (Full Size[0x148] - InheritedSize[0x138]
-class AdventureOnDemandDepartureTunnelDependencies: public DepartureTunnelDependencies
-{
-public:
-	char                                                         pad0x10_8R9ST[0x10];                               // 0x138(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x130] - InheritedSize[0x120]
-class AdventureOnDemandDepartureTunnelDesc: public DepartureTunnelDesc
-{
-public:
-	float                                                        SecondsAfterCrewArriveInTunnelBeforeAllowingTunnelCancellation; // 0x120(0x4)
-	float                                                        SecondsBetweenTunnelCancellationPopupReminder;     // 0x124(0x4)
-	class PopUpMessageDesc*                                      DefaultTunnelCancellationAvailableReminderPopup;   // 0x128(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class TradingCompanyPopUpBackgroundCollectionDataAsset: public DataAsset
-{
-public:
-	TArray<struct TradingCompanyPopUpBackgroundEntry>            Entries;                                           // 0x28(0x10)
-};
-
-
-// Size 0xf0 (Full Size[0x170] - InheritedSize[0x80]
-class AdventureOnDemandSetTargetLocationStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableName                                     IslandName;                                        // 0x80(0x30)
-	struct QuestVariableActor                                    IslandData;                                        // 0xb0(0x30)
-	struct QuestVariableVector                                   TargetLocation;                                    // 0xe0(0x30)
-	struct QuestVariableFloat                                    RadiusFromTarget;                                  // 0x110(0x30)
-	struct QuestVariableFloat                                    DefaultRadiusModifier;                             // 0x140(0x30)
-};
-
-
-// Size 0x28 (Full Size[0xc8] - InheritedSize[0xa0]
-class AdventureOnDemandArrivalTunnelDesc: public ClientDestinationPreLoadingArrivalTunnelDesc
-{
-public:
-	struct Vector                                                ResurfaceLocationOffset;                           // 0xa0(0xc)
-	char                                                         pad0x4_YV2H2[0x4];                                 // 0xac(0x4)
-	class AdventureOnDemandArrivalTunnelWorkerBase*              DefaultArrivalLocationWorkerClass;                 // 0xb0(0x8)
-	class EnvQuery*                                              ResurfaceLocationEQ;                               // 0xb8(0x8)
-	bool                                                         ShouldExcludeCrewFromBeingTargetedForGameEvents;   // 0xc0(0x1)
-	char                                                         pad0x3_YRZ0U[0x3];                                 // 0xc1(0x3)
-	float                                                        ExclusionTimerFromBeingTargetedForGameEvents;      // 0xc4(0x4)
-};
-
-
-// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
-class AdventureOnDemandForceIslandBannerStep: public TaleQuestStep
-{
-public:
-	class AdventureOnDemandForceIslandBannerStepDesc*            StepDesc;                                          // 0x98(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class AdventureOnDemandSetTunnelDescStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
-class AdventureOnDemandSuppressIslandBannerStepDesc: public TaleQuestStepDesc
-{
-public:
-	char                                                         BannerSuppressionFlags;                            // 0x80(0x1)
-	char                                                         pad0x7_BPC4V[0x7];                                 // 0x81(0x7)
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class AdventureOnDemandVoyageSelectionDataAsset: public DataAsset
-{
-public:
-	class AdventureOnDemandDiscoveryPageMysteryDataAsset*        DiscoveryPageMysteryEntries;                       // 0x28(0x8)
-	TArray<class AdventureOnDemandVoyageSelectionCompanyDataAsset*> CompanyEntries;                                    // 0x30(0x10)
-	TArray<class AdventureOnDemandTallTaleCategoryDataAsset*>    TallTales;                                         // 0x40(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class AdventureOnDemandGetTunnelDescStep: public TaleQuestStep
-{
-public:
+	class World*                                                 WorldPtr;                                          // 0x28(0x8)
 };
 
 
@@ -311,59 +67,20 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
-class AdventureOnDemandSetTunnelDescStepDesc: public TaleQuestStepDesc
+// Size 0x20 (Full Size[0xf8] - InheritedSize[0xd8]
+class AdventureOnDemandArrivalTunnelDependencies: public ArrivalTunnelDependencies
 {
 public:
-	class TunnelDesc*                                            TunnelDesc;                                        // 0x80(0x8)
+	char                                                         pad0x20_5EW49[0x20];                               // 0xd8(0x20)
 };
 
 
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class AdventureOnDemandArrivalTunnelWorkerBase: public Object
+// Size 0x40 (Full Size[0x8d0] - InheritedSize[0x890]
+class AdventureOnDemandDepartureTunnelOfTheDamned: public DepartureTunnelOfTheDamned
 {
 public:
-	class World*                                                 WorldPtr;                                          // 0x28(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x90] - InheritedSize[0x90]
-class WantsToDivePrerequisite: public InteractionPrerequisiteBase
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class AdventureOnDemandDisplayHintPopUpStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x50 (Full Size[0x6d0] - InheritedSize[0x680]
-class AdventureOnDemandArrivalTunnelOfTheDamned: public ClientDestinationPreLoadingArrivalTunnelOfTheDamned
-{
-public:
-	char                                                         pad0x20_PFD0X[0x20];                               // 0x680(0x20)
-	class AdventureOnDemandArrivalTunnelDesc*                    AdventureOnDemandArrivalTunnelDesc;                // 0x6a0(0x8)
-	class AdventureOnDemandArrivalTunnelWorkerBase*              ArrivalLocationWorker;                             // 0x6a8(0x8)
-	char                                                         pad0x20_CHKSL[0x20];                               // 0x6b0(0x20)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class AdventureOnDemandSetTargetLocationStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class AdventureOnDemandGetIsDivingToTunnelStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableBool                                     IsCrewDivingToTunnel;                              // 0x80(0x30)
+	class AdventureOnDemandDepartureTunnelDesc*                  AdventureOnDemandDepartureTunnelDesc;              // 0x890(0x8)
+	char                                                         pad0x38_C3UMX[0x38];                               // 0x898(0x38)
 };
 
 
@@ -375,11 +92,156 @@ public:
 };
 
 
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class AdventureOnDemandAreCrewNearQuestTargetStepDesc: public TaleQuestStepDesc
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AdventureOnDemandServiceInterface: public Interface
 {
 public:
-	struct QuestVariableBool                                     AreCrewNearQuestTarget;                            // 0x80(0x30)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class AdventureOnDemandSetTargetLocationStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class AdventureOnDemandSetTunnelDescStepDesc: public TaleQuestStepDesc
+{
+public:
+	class TunnelDesc*                                            TunnelDesc;                                        // 0x80(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x130] - InheritedSize[0x120]
+class AdventureOnDemandDepartureTunnelDesc: public DepartureTunnelDesc
+{
+public:
+	float                                                        SecondsAfterCrewArriveInTunnelBeforeAllowingTunnelCancellation; // 0x120(0x4)
+	float                                                        SecondsBetweenTunnelCancellationPopupReminder;     // 0x124(0x4)
+	class PopUpMessageDesc*                                      DefaultTunnelCancellationAvailableReminderPopup;   // 0x128(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
+class AdventureOnDemandDisplayHintPopUpStepDesc: public TaleQuestStepDesc
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0x148] - InheritedSize[0x138]
+class AdventureOnDemandDepartureTunnelDependencies: public DepartureTunnelDependencies
+{
+public:
+	char                                                         pad0x10_FIPLU[0x10];                               // 0x138(0x10)
+};
+
+
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
+class AdventureOnDemandVoyageSelectionCompanyDataAsset: public DataAsset
+{
+public:
+	struct FName                                                 CompanyName;                                       // 0x28(0x8)
+	class UClass*                                                Company;                                           // 0x30(0x8)
+	class UClass*                                                DiscoverTileCategory;                              // 0x38(0x8)
+	struct FeatureFlag                                           Feature;                                           // 0x40(0xc)
+	char                                                         pad0x4_9IWX9[0x4];                                 // 0x4c(0x4)
+	TArray<class InteractionPrerequisiteBase*>                   Prerequisites;                                     // 0x50(0x10)
+	TArray<struct AdventureOnDemandVoyageSelectionVoyageProposalGroup> VoyageGroups;                                      // 0x60(0x10)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class AdventureOnDemandVoyageSelectionDataAsset: public DataAsset
+{
+public:
+	class AdventureOnDemandDiscoveryPageMysteryDataAsset*        DiscoveryPageMysteryEntries;                       // 0x28(0x8)
+	TArray<class AdventureOnDemandVoyageSelectionCompanyDataAsset*> CompanyEntries;                                    // 0x30(0x10)
+	TArray<class AdventureOnDemandTallTaleCategoryDataAsset*>    TallTales;                                         // 0x40(0x10)
+};
+
+
+// Size 0xf0 (Full Size[0x170] - InheritedSize[0x80]
+class AdventureOnDemandSetTargetLocationStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableName                                     IslandName;                                        // 0x80(0x30)
+	struct QuestVariableActor                                    IslandData;                                        // 0xb0(0x30)
+	struct QuestVariableVector                                   TargetLocation;                                    // 0xe0(0x30)
+	struct QuestVariableFloat                                    RadiusFromTarget;                                  // 0x110(0x30)
+	struct QuestVariableFloat                                    DefaultRadiusModifier;                             // 0x140(0x30)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class AdventureOnDemandSetDirectionToApproachTargetFromStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class AdventureOnDemandSetTunnelDescStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x18 (Full Size[0xb0] - InheritedSize[0x98]
+class AdventureOnDemandYieldQuestResumeOnConditionsTaleStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x18_5ISOO[0x18];                               // 0x98(0x18)
+};
+
+
+// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
+class AdventureOnDemandForceIslandBannerStep: public TaleQuestStep
+{
+public:
+	class AdventureOnDemandForceIslandBannerStepDesc*            StepDesc;                                          // 0x98(0x8)
+};
+
+
+// Size 0xf0 (Full Size[0x118] - InheritedSize[0x28]
+class GameEventsOnDemandBannerDataAsset: public DataAsset
+{
+public:
+	TArray<struct GameEventOnDemandBannerTextData>               GameEventSpecificBannerTextData;                   // 0x28(0x10)
+	struct FText                                                 OnShipSunkBannerText;                              // 0x38(0x38)
+	struct FText                                                 OnVoyageCancelledBannerText;                       // 0x70(0x38)
+	struct FText                                                 OnCrewJoinedGameEventBannerHeaderText;             // 0xa8(0x38)
+	struct FText                                                 OnCrewJoinedGameEventBannerMessageText;            // 0xe0(0x38)
+};
+
+
+// Size 0xd8 (Full Size[0x100] - InheritedSize[0x28]
+class AdventureOnDemandTallTaleCategoryDataAsset: public DataAsset
+{
+public:
+	struct FName                                                 TaleId;                                            // 0x28(0x8)
+	char                                                         TaleCategory;                                      // 0x30(0x1)
+	char                                                         pad0x7_F92A8[0x7];                                 // 0x31(0x7)
+	class UClass*                                                DiscoverTileCategory;                              // 0x38(0x8)
+	struct FText                                                 DisplayName;                                       // 0x40(0x38)
+	struct FText                                                 Description;                                       // 0x78(0x38)
+	struct StringAssetReference                                  BackgroundImageUrl;                                // 0xb0(0x10)
+	struct StringAssetReference                                  IconImageUrl;                                      // 0xc0(0x10)
+	TArray<struct Text>                                          LockedDescriptions;                                // 0xd0(0x10)
+	TArray<class InteractionPrerequisiteBase*>                   Prerequisites;                                     // 0xe0(0x10)
+	TArray<struct AdventureOnDemandTallTaleProposalGroup>        TallTales;                                         // 0xf0(0x10)
+};
+
+
+// Size 0x90 (Full Size[0x110] - InheritedSize[0x80]
+class AdventureOnDemandSetDirectionToApproachTargetFromStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableVector                                   DirectionToApproachTargetFrom;                     // 0x80(0x30)
+	struct QuestVariableVector                                   PointOfInterestToGetDirectionToTargetFrom;         // 0xb0(0x30)
+	struct QuestVariableActor                                    ActorToGetDirectionToTargetFrom;                   // 0xe0(0x30)
 };
 
 
@@ -390,17 +252,163 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
-class AdventureOnDemandSetHintPopUpStepDesc: public TaleQuestStepDesc
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class AdventureOnDemandAreCrewNearQuestTargetStepDesc: public TaleQuestStepDesc
 {
 public:
-	char                                                         HintType;                                          // 0x80(0x1)
-	char                                                         pad0x7_P3TVA[0x7];                                 // 0x81(0x7)
+	struct QuestVariableBool                                     AreCrewNearQuestTarget;                            // 0x80(0x30)
 };
 
 
-// Size 0x0 (Full Size[0x130] - InheritedSize[0x130]
-class VoyageOnDemandDepartureTunnelDesc: public AdventureOnDemandDepartureTunnelDesc
+// Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
+class AdventureOnDemandServiceParams: public DataAsset
+{
+public:
+	class VoyageDescDataAsset*                                   DiveToTunnelVoyageDesc;                            // 0x28(0x8)
+	class TunnelDesc*                                            VoyageTunnelDesc;                                  // 0x30(0x8)
+	class VoyageDescDataAsset*                                   LeaveTunnelVoyageDesc;                             // 0x38(0x8)
+	TArray<struct ExtraSpawnDistanceFromIsland>                  ExtraSpawnDistanceFromIsland;                      // 0x40(0x10)
+	float                                                        WorldEventsCooldown;                               // 0x50(0x4)
+	char                                                         pad0x4_N6COA[0x4];                                 // 0x54(0x4)
+	class GameEventsOnDemandBannerDataAsset*                     GameEventsOnDemandBannerDataAsset;                 // 0x58(0x8)
+	class GameEventsOnDemandStatDataAsset*                       GameEventsOnDemandStatDataAsset;                   // 0x60(0x8)
+	class UClass*                                                HuntersCallCompany;                                // 0x68(0x8)
+	TArray<struct QuestTypeTutorialOverride>                     QuestTypeTutorialOverrides;                        // 0x70(0x10)
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class AdventureOnDemandGetIsDivingToTunnelStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableBool                                     IsCrewDivingToTunnel;                              // 0x80(0x30)
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class AdventureOnDemandDiscoveryPageMysteryDataAsset: public DataAsset
+{
+public:
+	TArray<class InteractionPrerequisiteBase*>                   Prerequisites;                                     // 0x28(0x10)
+	TArray<struct AdventureOnDemandVoyageDiscoveryPageMysteryProposal> MysteryProposals;                                  // 0x38(0x10)
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class AdventureOnDemandGetTunnelDescStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableDataAsset                                TunnelDesc;                                        // 0x80(0x30)
+};
+
+
+// Size 0x40 (Full Size[0xd0] - InheritedSize[0x90]
+class FriendsInCrewPrerequisite: public InteractionPrerequisiteBase
+{
+public:
+	char                                                         MinimumFriendsInCrew;                              // 0x90(0x1)
+	char                                                         pad0x3f_RYWQM[0x3f];                               // 0x91(0x3f)
+};
+
+
+// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
+class AdventureOnDemandSuppressIslandBannerStep: public TaleQuestStep
+{
+public:
+	class AdventureOnDemandSuppressIslandBannerStepDesc*         StepDesc;                                          // 0x98(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class AdventureOnDemandSuppressIslandBannerStepDesc: public TaleQuestStepDesc
+{
+public:
+	char                                                         BannerSuppressionFlags;                            // 0x80(0x1)
+	char                                                         pad0x7_34BBT[0x7];                                 // 0x81(0x7)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class TradingCompanyPopUpBackgroundCollectionDataAsset: public DataAsset
+{
+public:
+	TArray<struct TradingCompanyPopUpBackgroundEntry>            Entries;                                           // 0x28(0x10)
+};
+
+
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class AdventureOnDemandForceIslandBannerStepDesc: public TaleQuestStepDesc
+{
+public:
+	bool                                                         MuteBannerAudio;                                   // 0x80(0x1)
+	char                                                         pad0x7_NUV2Y[0x7];                                 // 0x81(0x7)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class AdventureOnDemandGetTunnelDescStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class AdventureOnDemandAreCrewNearQuestTargetStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x50 (Full Size[0x6d0] - InheritedSize[0x680]
+class AdventureOnDemandArrivalTunnelOfTheDamned: public ClientDestinationPreLoadingArrivalTunnelOfTheDamned
+{
+public:
+	char                                                         pad0x20_A9Q2S[0x20];                               // 0x680(0x20)
+	class AdventureOnDemandArrivalTunnelDesc*                    AdventureOnDemandArrivalTunnelDesc;                // 0x6a0(0x8)
+	class AdventureOnDemandArrivalTunnelWorkerBase*              ArrivalLocationWorker;                             // 0x6a8(0x8)
+	char                                                         pad0x20_QIIXH[0x20];                               // 0x6b0(0x20)
+};
+
+
+// Size 0x0 (Full Size[0x90] - InheritedSize[0x90]
+class WantsToDivePrerequisite: public InteractionPrerequisiteBase
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class GameEventsOnDemandStatDataAsset: public DataAsset
+{
+public:
+	TArray<struct GameEventOnDemandCompanyStatData>              CompletedEventStatsPerCompany;                     // 0x28(0x10)
+};
+
+
+// Size 0x28 (Full Size[0xc8] - InheritedSize[0xa0]
+class AdventureOnDemandArrivalTunnelDesc: public ClientDestinationPreLoadingArrivalTunnelDesc
+{
+public:
+	struct Vector                                                ResurfaceLocationOffset;                           // 0xa0(0xc)
+	char                                                         pad0x4_DSA2F[0x4];                                 // 0xac(0x4)
+	class AdventureOnDemandArrivalTunnelWorkerBase*              DefaultArrivalLocationWorkerClass;                 // 0xb0(0x8)
+	class EnvQuery*                                              ResurfaceLocationEQ;                               // 0xb8(0x8)
+	bool                                                         ShouldExcludeCrewFromBeingTargetedForGameEvents;   // 0xc0(0x1)
+	char                                                         pad0x3_9BAAN[0x3];                                 // 0xc1(0x3)
+	float                                                        ExclusionTimerFromBeingTargetedForGameEvents;      // 0xc4(0x4)
+};
+
+
+// Size 0x20 (Full Size[0x150] - InheritedSize[0x130]
+class GameEventOnDemandDepartureTunnelDesc: public AdventureOnDemandDepartureTunnelDesc
+{
+public:
+	char                                                         pad0x20_C0HRA[0x20];                               // 0x130(0x20)
+};
+
+
+// Size 0x0 (Full Size[0x148] - InheritedSize[0x148]
+class VoyageOnDemandDepartureTunnelDependencies: public AdventureOnDemandDepartureTunnelDependencies
 {
 public:
 };
@@ -414,13 +422,6 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x148] - InheritedSize[0x148]
-class GameEventOnDemandDepartureTunnelDependencies: public AdventureOnDemandDepartureTunnelDependencies
-{
-public:
-};
-
-
 // Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
 class VoyageOnDemandArrivalTunnelWorker: public AdventureOnDemandArrivalTunnelWorkerBase
 {
@@ -428,16 +429,15 @@ public:
 };
 
 
-// Size 0x20 (Full Size[0x150] - InheritedSize[0x130]
-class GameEventOnDemandDepartureTunnelDesc: public AdventureOnDemandDepartureTunnelDesc
+// Size 0x0 (Full Size[0x130] - InheritedSize[0x130]
+class VoyageOnDemandDepartureTunnelDesc: public AdventureOnDemandDepartureTunnelDesc
 {
 public:
-	char                                                         pad0x20_Q2RD2[0x20];                               // 0x130(0x20)
 };
 
 
 // Size 0x0 (Full Size[0x148] - InheritedSize[0x148]
-class VoyageOnDemandDepartureTunnelDependencies: public AdventureOnDemandDepartureTunnelDependencies
+class GameEventOnDemandDepartureTunnelDependencies: public AdventureOnDemandDepartureTunnelDependencies
 {
 public:
 };

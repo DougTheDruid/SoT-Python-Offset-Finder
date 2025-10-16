@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 DebugTeleportationDestinationService:
   Attributes:
-  - Name: pad0x18_AS6LG[0x18]
+  - Name: pad0x18_QUOZW[0x18]
     Offset: '0x3a0'
     Size: '0x18'
     Type: char

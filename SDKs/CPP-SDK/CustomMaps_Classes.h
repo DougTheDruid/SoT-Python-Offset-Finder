@@ -11,17 +11,6 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class CustomMapDataTypeBase: public Object
-{
-public:
-	bool                                                         Visible;                                           // 0x28(0x1)
-	char                                                         pad0x3_LVJJ8[0x3];                                 // 0x29(0x3)
-	struct Guid                                                  Guid;                                              // 0x2c(0x10)
-	char                                                         pad0x4_NHT5N[0x4];                                 // 0x3c(0x4)
-};
-
-
 // Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
 class CustomMapData: public DataAsset
 {
@@ -32,14 +21,26 @@ public:
 };
 
 
+// Size 0x40 (Full Size[0x900] - InheritedSize[0x8c0]
+class CustomMap: public RenderToTextureMapBase
+{
+public:
+	char                                                         pad0x8_WL00Q[0x8];                                 // 0x8c0(0x8)
+	class Font*                                                  Font;                                              // 0x8c8(0x8)
+	TArray<class CustomMapDisplayObjectBase*>                    DisplayItems;                                      // 0x8d0(0x10)
+	float                                                        LineSpacing;                                       // 0x8e0(0x4)
+	char                                                         pad0x1c_HT4X8[0x1c];                               // 0x8e4(0x1c)
+};
+
+
 // Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class CustomMapDisplayObjectBase: public Object
+class CustomMapDataTypeBase: public Object
 {
 public:
 	bool                                                         Visible;                                           // 0x28(0x1)
-	char                                                         pad0x3_4BFS5[0x3];                                 // 0x29(0x3)
+	char                                                         pad0x3_Z5RI2[0x3];                                 // 0x29(0x3)
 	struct Guid                                                  Guid;                                              // 0x2c(0x10)
-	char                                                         pad0x4_X27F5[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_C7SNP[0x4];                                 // 0x3c(0x4)
 };
 
 
@@ -50,15 +51,14 @@ public:
 };
 
 
-// Size 0x40 (Full Size[0x900] - InheritedSize[0x8c0]
-class CustomMap: public RenderToTextureMapBase
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class CustomMapDisplayObjectBase: public Object
 {
 public:
-	char                                                         pad0x8_DJ7WY[0x8];                                 // 0x8c0(0x8)
-	class Font*                                                  Font;                                              // 0x8c8(0x8)
-	TArray<class CustomMapDisplayObjectBase*>                    DisplayItems;                                      // 0x8d0(0x10)
-	float                                                        LineSpacing;                                       // 0x8e0(0x4)
-	char                                                         pad0x1c_A1BM4[0x1c];                               // 0x8e4(0x1c)
+	bool                                                         Visible;                                           // 0x28(0x1)
+	char                                                         pad0x3_CWOIF[0x3];                                 // 0x29(0x3)
+	struct Guid                                                  Guid;                                              // 0x2c(0x10)
+	char                                                         pad0x4_6M1JF[0x4];                                 // 0x3c(0x4)
 };
 
 
@@ -68,7 +68,7 @@ class CustomMapDisplayObjectPositional: public CustomMapDisplayObjectBase
 public:
 	struct Vector2D                                              Position;                                          // 0x40(0x8)
 	float                                                        Orientation;                                       // 0x48(0x4)
-	char                                                         pad0x4_70742[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_GL558[0x4];                                 // 0x4c(0x4)
 };
 
 
@@ -78,7 +78,7 @@ class CustomMapDataTypePositional: public CustomMapDataTypeBase
 public:
 	struct Vector2D                                              Position;                                          // 0x40(0x8)
 	float                                                        Orientation;                                       // 0x48(0x4)
-	char                                                         pad0x4_AIR2C[0x4];                                 // 0x4c(0x4)
+	char                                                         pad0x4_JUHTJ[0x4];                                 // 0x4c(0x4)
 };
 
 
@@ -86,29 +86,15 @@ public:
 class CustomMapDataTypeImage: public CustomMapDataTypePositional
 {
 public:
-	char                                                         pad0x20_A0GMV[0x20];                               // 0x50(0x20)
+	char                                                         pad0x20_UHO1V[0x20];                               // 0x50(0x20)
 	float                                                        Width;                                             // 0x70(0x4)
 	float                                                        Height;                                            // 0x74(0x4)
 	bool                                                         FlipX;                                             // 0x78(0x1)
 	bool                                                         ScaleHeightOnMultipleLines;                        // 0x79(0x1)
-	char                                                         pad0x2_HNRI5[0x2];                                 // 0x7a(0x2)
+	char                                                         pad0x2_ZSUUC[0x2];                                 // 0x7a(0x2)
 	struct LinearColor                                           ImageColour;                                       // 0x7c(0x10)
 	char                                                         ImageBlendMode;                                    // 0x8c(0x1)
-	char                                                         pad0x3_Q45OA[0x3];                                 // 0x8d(0x3)
-};
-
-
-// Size 0x58 (Full Size[0xa8] - InheritedSize[0x50]
-class CustomMapDataTypeText: public CustomMapDataTypePositional
-{
-public:
-	struct FText                                                 Text;                                              // 0x50(0x38)
-	float                                                        MaxTextWidth;                                      // 0x88(0x4)
-	float                                                        FontScale;                                         // 0x8c(0x4)
-	bool                                                         StrikeThrough;                                     // 0x90(0x1)
-	char                                                         pad0x3_1ELTA[0x3];                                 // 0x91(0x3)
-	float                                                        StrikethroughThickness;                            // 0x94(0x4)
-	struct LinearColor                                           TextColour;                                        // 0x98(0x10)
+	char                                                         pad0x3_FINGI[0x3];                                 // 0x8d(0x3)
 };
 
 
@@ -121,13 +107,27 @@ public:
 	float                                                        Height;                                            // 0x64(0x4)
 	bool                                                         FlipX;                                             // 0x68(0x1)
 	bool                                                         ScaleHeightOnMultipleLines;                        // 0x69(0x1)
-	char                                                         pad0x2_IQWF1[0x2];                                 // 0x6a(0x2)
+	char                                                         pad0x2_K4HM2[0x2];                                 // 0x6a(0x2)
 	struct LinearColor                                           ImageColour;                                       // 0x6c(0x10)
 	char                                                         ImageBlendMode;                                    // 0x7c(0x1)
-	char                                                         pad0x3_DSXGQ[0x3];                                 // 0x7d(0x3)
+	char                                                         pad0x3_7MJQU[0x3];                                 // 0x7d(0x3)
 	struct TreasureMapWidgetTexture                              TreasureMapWidgetTexture;                          // 0x80(0x30)
 	class Texture*                                               CurrentlySetImage;                                 // 0xb0(0x8)
-	char                                                         pad0x18_GNSYW[0x18];                               // 0xb8(0x18)
+	char                                                         pad0x18_EVDGF[0x18];                               // 0xb8(0x18)
+};
+
+
+// Size 0x58 (Full Size[0xa8] - InheritedSize[0x50]
+class CustomMapDataTypeText: public CustomMapDataTypePositional
+{
+public:
+	struct FText                                                 Text;                                              // 0x50(0x38)
+	float                                                        MaxTextWidth;                                      // 0x88(0x4)
+	float                                                        FontScale;                                         // 0x8c(0x4)
+	bool                                                         StrikeThrough;                                     // 0x90(0x1)
+	char                                                         pad0x3_QCEEI[0x3];                                 // 0x91(0x3)
+	float                                                        StrikethroughThickness;                            // 0x94(0x4)
+	struct LinearColor                                           TextColour;                                        // 0x98(0x10)
 };
 
 
@@ -139,11 +139,11 @@ public:
 	float                                                        MaxTextWidth;                                      // 0x88(0x4)
 	float                                                        FontScale;                                         // 0x8c(0x4)
 	bool                                                         StrikeThrough;                                     // 0x90(0x1)
-	char                                                         pad0x3_BLHD0[0x3];                                 // 0x91(0x3)
+	char                                                         pad0x3_3RV9U[0x3];                                 // 0x91(0x3)
 	float                                                        StrikethroughThickness;                            // 0x94(0x4)
 	struct LinearColor                                           TextColour;                                        // 0x98(0x10)
 	TArray<struct TreasureMapTextEntry>                          TextArguments;                                     // 0xa8(0x10)
-	char                                                         pad0x50_D3MTC[0x50];                               // 0xb8(0x50)
+	char                                                         pad0x50_5XDQZ[0x50];                               // 0xb8(0x50)
 };
 
 

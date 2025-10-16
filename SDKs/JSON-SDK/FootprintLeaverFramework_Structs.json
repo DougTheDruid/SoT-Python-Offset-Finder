@@ -1,5 +1,5 @@
 {
-  "FootprintLeaverComponentSpawnDecalTelemetryEvent": {
+  "FootprintLeaverComponentReusedDecalTelemetryEvent": {
     "ClassSize": "0x20",
     "Attributes": [
       {
@@ -16,7 +16,7 @@
       }
     ]
   },
-  "FootprintLeaverComponentReusedDecalTelemetryEvent": {
+  "FootprintLeaverComponentSpawnDecalTelemetryEvent": {
     "ClassSize": "0x20",
     "Attributes": [
       {
@@ -43,7 +43,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_HBYC7[0x7]",
+        "Name": "pad0x7_3N2UK[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -61,7 +61,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_3LE26[0x4]",
+        "Name": "pad0x4_JPM0B[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"

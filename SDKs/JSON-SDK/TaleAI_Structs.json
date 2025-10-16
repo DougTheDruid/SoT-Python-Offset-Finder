@@ -9,7 +9,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_ZQV1W[0x4]",
+        "Name": "pad0x4_OOAWL[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -27,7 +27,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_8TFHJ[0x7]",
+        "Name": "pad0x7_RBEN5[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
@@ -37,35 +37,6 @@
         "Type": "class TaleQuestStepDesc*",
         "Size": "0x8",
         "Offset": "0x18"
-      }
-    ]
-  },
-  "SpawnAICustomOnSpawnTaskData": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Spawn_Index",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x4_W6ZLL[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "Spawn_Pawn",
-        "Type": "class Pawn*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Body",
-        "Type": "class TaleQuestStepDesc*",
-        "Size": "0x8",
-        "Offset": "0x10"
       }
     ]
   },
@@ -97,7 +68,7 @@
         "Offset": "0x1c"
       },
       {
-        "Name": "pad0x3_CZTR8[0x3]",
+        "Name": "pad0x3_UCZPM[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1d"
@@ -156,7 +127,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_WUJLZ[0x4]",
+        "Name": "pad0x4_IZFKP[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -186,6 +157,35 @@
       }
     ]
   },
+  "SpawnAICustomOnSpawnTaskData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Spawn_Index",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_TE084[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "Spawn_Pawn",
+        "Type": "class Pawn*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Body",
+        "Type": "class TaleQuestStepDesc*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "SpawnActorCustomOnTriggerWaveTaskData": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -196,7 +196,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_K3RTM[0x4]",
+        "Name": "pad0x4_ZZZHA[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"

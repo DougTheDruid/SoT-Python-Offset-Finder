@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 EventDeployableAmmoHandoverComplete:
   Attributes:
-  - Name: pad0x1_GV34C[0x1]
+  - Name: pad0x1_JBB9H[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
