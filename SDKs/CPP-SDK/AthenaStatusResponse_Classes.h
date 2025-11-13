@@ -6,6 +6,24 @@
 #include "AthenaStatusResponse_Structs.h"
 
 
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
+class StatusResponseSuspendStatus: public StatusResponse
+{
+public:
+	TArray<class Class*>                                         Status;                                            // 0x38(0x10)
+};
+
+
+// Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
+class StatusResponseApplyPersistentStatus: public StatusResponse
+{
+public:
+	struct Status                                                StatusToApply;                                     // 0x38(0x20)
+	float                                                        DurationMultiplier;                                // 0x58(0x4)
+	char                                                         pad0x4_WHC11[0x4];                                 // 0x5c(0x4)
+};
+
+
 // Size 0x40 (Full Size[0x78] - InheritedSize[0x38]
 class StatusResponseReportNoiseEvent: public StatusResponse
 {
@@ -15,17 +33,17 @@ public:
 	float                                                        NoiseRange;                                        // 0x48(0x4)
 	float                                                        NoiseLoudness;                                     // 0x4c(0x4)
 	bool                                                         NoiseMultipleTicks;                                // 0x50(0x1)
-	char                                                         pad0x3_NM6H4[0x3];                                 // 0x51(0x3)
+	char                                                         pad0x3_T3MXF[0x3];                                 // 0x51(0x3)
 	float                                                        NoiseTimerTick;                                    // 0x54(0x4)
-	char                                                         pad0x20_R87ZZ[0x20];                               // 0x58(0x20)
+	char                                                         pad0x20_R9MYN[0x20];                               // 0x58(0x20)
 };
 
 
 // Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class StatusResponseSuspendStatus: public StatusResponse
+class StatusResponseSetScalarParamOnCharacter: public StatusResponse
 {
 public:
-	TArray<class Class*>                                         Status;                                            // 0x38(0x10)
+	TArray<struct ScalarParamInfo>                               ParamsToChange;                                    // 0x38(0x10)
 };
 
 
@@ -42,32 +60,7 @@ class StatusResponseHealthRegenerationPoolChange: public StatusResponse
 {
 public:
 	float                                                        HealthPoolChangeIntensityMultiplier;               // 0x38(0x4)
-	char                                                         pad0x4_TWJLF[0x4];                                 // 0x3c(0x4)
-};
-
-
-// Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
-class StatusResponseApplyPersistentStatus: public StatusResponse
-{
-public:
-	struct Status                                                StatusToApply;                                     // 0x38(0x20)
-	float                                                        DurationMultiplier;                                // 0x58(0x4)
-	char                                                         pad0x4_IUDC0[0x4];                                 // 0x5c(0x4)
-};
-
-
-// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class StatusResponseCook: public StatusResponse
-{
-public:
-};
-
-
-// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class StatusResponseSetScalarParamOnCharacter: public StatusResponse
-{
-public:
-	TArray<struct ScalarParamInfo>                               ParamsToChange;                                    // 0x38(0x10)
+	char                                                         pad0x4_R3L5O[0x4];                                 // 0x3c(0x4)
 };
 
 
@@ -76,6 +69,13 @@ class StatusResponseCancelStatus: public StatusResponse
 {
 public:
 	TArray<class Class*>                                         Status;                                            // 0x38(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
+class StatusResponseCook: public StatusResponse
+{
+public:
 };
 
 

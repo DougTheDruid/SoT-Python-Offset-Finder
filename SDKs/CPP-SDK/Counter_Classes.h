@@ -6,11 +6,15 @@
 #include "Counter_Structs.h"
 
 
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class CountType: public Object
+// Size 0x28 (Full Size[0xe0] - InheritedSize[0xb8]
+class CountMaterialDisplayComponent: public ActorComponent
 {
 public:
-	struct FName                                                 UniqueTextIdentifier;                              // 0x28(0x8)
+	struct FName                                                 ScalarParameterNameToOverride;                     // 0xb8(0x8)
+	class UClass*                                                CountType;                                         // 0xc0(0x8)
+	float                                                        MaximumCountForDynamicMaterialParameterAlphaValue; // 0xc8(0x4)
+	char                                                         pad0x4_NJSWK[0x4];                                 // 0xcc(0x4)
+	TArray<class MaterialInstanceDynamic*>                       OverridenMaterials;                                // 0xd0(0x10)
 };
 
 
@@ -21,15 +25,13 @@ public:
 };
 
 
-// Size 0x28 (Full Size[0xe0] - InheritedSize[0xb8]
-class CountMaterialDisplayComponent: public ActorComponent
+// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
+class IsCountAmountMetStatCondition: public TargetedStatCondition
 {
 public:
-	struct FName                                                 ScalarParameterNameToOverride;                     // 0xb8(0x8)
-	class UClass*                                                CountType;                                         // 0xc0(0x8)
-	float                                                        MaximumCountForDynamicMaterialParameterAlphaValue; // 0xc8(0x4)
-	char                                                         pad0x4_Y5Z33[0x4];                                 // 0xcc(0x4)
-	TArray<class MaterialInstanceDynamic*>                       OverridenMaterials;                                // 0xd0(0x10)
+	int                                                          CountAmount;                                       // 0x30(0x4)
+	char                                                         pad0x4_6Y2SK[0x4];                                 // 0x34(0x4)
+	class UClass*                                                CountType;                                         // 0x38(0x8)
 };
 
 
@@ -37,18 +39,16 @@ public:
 class CountHolderComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_FBEDC[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_B5TBT[0x8];                                 // 0xb8(0x8)
 	TArray<struct CountHolder>                                   CountHolders;                                      // 0xc0(0x10)
 };
 
 
-// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
-class IsCountAmountMetStatCondition: public TargetedStatCondition
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class CountType: public Object
 {
 public:
-	int                                                          CountAmount;                                       // 0x30(0x4)
-	char                                                         pad0x4_OXJHE[0x4];                                 // 0x34(0x4)
-	class UClass*                                                CountType;                                         // 0x38(0x8)
+	struct FName                                                 UniqueTextIdentifier;                              // 0x28(0x8)
 };
 
 

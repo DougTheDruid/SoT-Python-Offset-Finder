@@ -6,18 +6,18 @@
 #include "ServiceMessaging_Structs.h"
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class ServiceMessagingListenerTestObject: public Object
-{
-public:
-	char                                                         pad0x10_TA6QU[0x10];                               // 0x28(0x10)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class ServiceMessagingDispatcherInterface: public Interface
 {
 public:
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class ServiceMessagingListenerTestObject: public Object
+{
+public:
+	char                                                         pad0x10_XG0T5[0x10];                               // 0x28(0x10)
 };
 
 

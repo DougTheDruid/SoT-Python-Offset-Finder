@@ -1,9 +1,94 @@
 {
+  "KillStreakHideEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_L1OJG[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "FactionRequest": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Faction",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x18_QSA3K[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "FactionStreakData": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Faction",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "StreakLevel",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_X1RZ5[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "CinematicFactionEvent": {
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "Company",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CinematicData",
+        "Type": "struct CinematicQuestEvent",
+        "Size": "0x80",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "StreakMaterialValue": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Streak",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Length",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
   "FactionShipSunkNetworkEvent": {
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x18_0VX5P[0x18]",
+        "Name": "pad0x18_GOVMU[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"
@@ -15,7 +100,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x3_I0NXR[0x3]",
+        "Name": "pad0x3_L1WS6[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x19"
@@ -57,10 +142,21 @@
         "Offset": "0x3c"
       },
       {
-        "Name": "pad0x3_7D2JP[0x3]",
+        "Name": "pad0x3_0WNSZ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x3d"
+      }
+    ]
+  },
+  "KillStreakShowEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_70PVC[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },
@@ -116,143 +212,6 @@
       }
     ]
   },
-  "StreakMaterial": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Material",
-        "Type": "class MaterialInstance*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PartType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x7_LPXQ2[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x9"
-      }
-    ]
-  },
-  "FactionPopupEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x18_PK6WW[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PopUpDesc",
-        "Type": "class DataAsset*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "UpdateKillStreakEvent": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "NewLevel",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "LootLevelReward": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "LootLevel",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x3_81P2L[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "RewardId",
-        "Type": "struct RewardId",
-        "Size": "0x8",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "pad0x4_TF3LE[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "LootLevelPopUpMessageDesc",
-        "Type": "TArray<struct FactionServicePopUpData>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "PopUpIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "pad0x4_E102A[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x24"
-      }
-    ]
-  },
-  "ActivateKillStreakEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "FactionId",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "FactionRequest": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Faction",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x18_2M5WU[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "DeactivateKillStreakEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_K6SIJ[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "FactionShipSunkUIEvent": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -263,7 +222,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_06V34[0x7]",
+        "Name": "pad0x7_3HG9J[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -305,30 +264,98 @@
       }
     ]
   },
-  "CinematicFactionEvent": {
-    "ClassSize": "0x88",
+  "ActivateKillStreakNetworkEvent": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "Company",
-        "Type": "class UClass*",
+        "Name": "pad0x18_LJP1A[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "FactionId",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x7_LJC6Y[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x19"
+      }
+    ]
+  },
+  "FactionBlockedTaleVoteConsensusReached": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "StreakMaterial": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Material",
+        "Type": "class MaterialInstance*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "CinematicData",
-        "Type": "struct CinematicQuestEvent",
-        "Size": "0x80",
+        "Name": "PartType",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_SMH4O[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
       }
     ]
   },
-  "DeactivateKillStreakNetworkEvent": {
-    "ClassSize": "0x18",
+  "ActivateKillStreakEvent": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x18_LP2AV[0x18]",
+        "Name": "FactionId",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "FactionPopupEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x18_9426P[0x18]",
         "Type": "char",
         "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PopUpDesc",
+        "Type": "class DataAsset*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "DeactivateKillStreakEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_JP33Z[0x1]",
+        "Type": "char",
+        "Size": "0x1",
         "Offset": "0x0"
       }
     ]
@@ -355,10 +382,91 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x7_37WS8[0x7]",
+        "Name": "pad0x7_70YAL[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x19"
+      }
+    ]
+  },
+  "LootLevelReward": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "LootLevel",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_TKV36[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "RewardId",
+        "Type": "struct RewardId",
+        "Size": "0x8",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x4_STVSJ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "LootLevelPopUpMessageDesc",
+        "Type": "TArray<struct FactionServicePopUpData>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "PopUpIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_T5U7D[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
+      }
+    ]
+  },
+  "StreakMesh": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Mesh",
+        "Type": "class StaticMesh*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PartType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_MRFU4[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
+      }
+    ]
+  },
+  "DeactivateKillStreakNetworkEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_HSDHP[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
       }
     ]
   },
@@ -385,132 +493,24 @@
       }
     ]
   },
-  "KillStreakHideEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_XF06F[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ActivateKillStreakNetworkEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x18_32X9X[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "FactionId",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x7_L9UWF[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x19"
-      }
-    ]
-  },
-  "StreakMesh": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Mesh",
-        "Type": "class StaticMesh*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PartType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x7_DYIRF[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x9"
-      }
-    ]
-  },
-  "FactionStreakData": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Faction",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "StreakLevel",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x4_9FPA5[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "FactionBlockedTaleVoteConsensusReached": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "KillStreakShowEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_M760Y[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "StreakMaterialValue": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Streak",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Length",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
   "EventLocalPlayerApproachedHourglass": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_L69B8[0x1]",
+        "Name": "pad0x1_VH7J5[0x1]",
         "Type": "char",
         "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "UpdateKillStreakEvent": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "NewLevel",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x0"
       }
     ]

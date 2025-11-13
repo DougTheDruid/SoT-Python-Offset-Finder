@@ -13,6 +13,34 @@ public:
 
 
 // Size 0x40
+struct StructSerializerArrayTestStruct
+{
+public:
+	TArray<int>                                                  Int32Array;                                        // 0x0(0x10)
+	int                                                          StaticSingleElement;                               // 0x10(0x4)
+	int                                                          StaticInt32Array;                                  // 0x14(0x4)
+	char                                                         pad0x8_3MZ8B[0x8];                                 // 0x18(0x8)
+	float                                                        StaticFloatArray;                                  // 0x20(0x4)
+	char                                                         pad0xc_FQS3U[0xc];                                 // 0x24(0xc)
+	TArray<struct Vector>                                        VectorArray;                                       // 0x30(0x10)
+};
+
+
+// Size 0x30
+struct StructSerializerNumericTestStruct
+{
+public:
+	char                                                         pad0x4_FNODV[0x4];                                 // 0x0(0x4)
+	int                                                          Int32;                                             // 0x4(0x4)
+	char                                                         UInt8;                                             // 0x10(0x1)
+	char                                                         pad0x1_YPOUI[0x1];                                 // 0x11(0x1)
+	float                                                        Float;                                             // 0x20(0x4)
+	char                                                         pad0x4_RXA4I[0x4];                                 // 0x24(0x4)
+	double                                                       Double;                                            // 0x28(0x8)
+};
+
+
+// Size 0x40
 struct StructSerializerBuiltinTestStruct
 {
 public:
@@ -24,42 +52,14 @@ public:
 };
 
 
-// Size 0x40
-struct StructSerializerArrayTestStruct
-{
-public:
-	TArray<int>                                                  Int32Array;                                        // 0x0(0x10)
-	int                                                          StaticSingleElement;                               // 0x10(0x4)
-	int                                                          StaticInt32Array;                                  // 0x14(0x4)
-	char                                                         pad0x8_HL1ZI[0x8];                                 // 0x18(0x8)
-	float                                                        StaticFloatArray;                                  // 0x20(0x4)
-	char                                                         pad0xc_ETFVW[0xc];                                 // 0x24(0xc)
-	TArray<struct Vector>                                        VectorArray;                                       // 0x30(0x10)
-};
-
-
 // Size 0x8
 struct StructSerializerBooleanTestStruct
 {
 public:
 	bool                                                         BoolFalse;                                         // 0x0(0x1)
 	bool                                                         BoolTrue;                                          // 0x1(0x1)
-	char                                                         pad0x2_PSV8H[0x2];                                 // 0x2(0x2)
-	char                                                         pad0x4_E3G12[0x4];                                 // 0x4(0x4)
-};
-
-
-// Size 0x30
-struct StructSerializerNumericTestStruct
-{
-public:
-	char                                                         pad0x4_W0ZU4[0x4];                                 // 0x0(0x4)
-	int                                                          Int32;                                             // 0x4(0x4)
-	char                                                         UInt8;                                             // 0x10(0x1)
-	char                                                         pad0x1_XLJVK[0x1];                                 // 0x11(0x1)
-	float                                                        Float;                                             // 0x20(0x4)
-	char                                                         pad0x4_L6HPK[0x4];                                 // 0x24(0x4)
-	double                                                       Double;                                            // 0x28(0x8)
+	char                                                         pad0x2_AOJ3P[0x2];                                 // 0x2(0x2)
+	char                                                         pad0x4_FYNJ6[0x4];                                 // 0x4(0x4)
 };
 
 

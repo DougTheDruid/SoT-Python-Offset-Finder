@@ -1,18 +1,4 @@
 {
-  "AssetReferencer": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "AssetsToReference",
-        "Type": "TArray<Class>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "RareGameEngine": {
     "Super": "GameEngine",
     "FullSize": "0xac0",
@@ -20,23 +6,23 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x60_BVPF5[0x60]",
+        "Name": "pad0x60_RNZWG[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0xa60"
       }
     ]
   },
-  "StallDetector": {
+  "AudioHardwareDeviceService": {
     "Super": "Object",
-    "FullSize": "0x50",
+    "FullSize": "0x40",
     "InheritedSize": "0x28",
-    "ClassSize": "0x28",
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x28_6GOTJ[0x28]",
+        "Name": "pad0x18_4P5G4[0x18]",
         "Type": "char",
-        "Size": "0x28",
+        "Size": "0x18",
         "Offset": "0x28"
       }
     ]
@@ -62,12 +48,19 @@
       }
     ]
   },
-  "RareHUD": {
-    "Super": "HUD",
-    "FullSize": "0x498",
-    "InheritedSize": "0x498",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "StallDetector": {
+    "Super": "Object",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x28_XD1KC[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x28"
+      }
+    ]
   },
   "StaticMeshActorBlueprintLibrary": {
     "Super": "BlueprintFunctionLibrary",
@@ -76,16 +69,23 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "AudioHardwareDeviceService": {
-    "Super": "Object",
-    "FullSize": "0x40",
+  "RareHUD": {
+    "Super": "HUD",
+    "FullSize": "0x498",
+    "InheritedSize": "0x498",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AssetReferencer": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
     "InheritedSize": "0x28",
-    "ClassSize": "0x18",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x18_0FJCN[0x18]",
-        "Type": "char",
-        "Size": "0x18",
+        "Name": "AssetsToReference",
+        "Type": "TArray<Class>",
+        "Size": "0x10",
         "Offset": "0x28"
       }
     ]

@@ -7,7 +7,7 @@
 struct ObjectMessagingObjectScoper
 {
 public:
-	char                                                         pad0x50_RSMEO[0x50];                               // 0x0(0x50)
+	char                                                         pad0x50_1636E[0x50];                               // 0x0(0x50)
 };
 
 
@@ -15,25 +15,7 @@ public:
 struct EventObjectMessagingDispatcherBeingDestroyed
 {
 public:
-	char                                                         pad0x8_2SDSK[0x8];                                 // 0x0(0x8)
-};
-
-
-// Size 0x58
-struct ObjectMessagingHandle
-{
-public:
-	char                                                         pad0x8_J8LOR[0x8];                                 // 0x0(0x8)
-	class Struct*                                                EventType;                                         // 0x8(0x8)
-	char                                                         pad0x48_PRR42[0x48];                               // 0x10(0x48)
-};
-
-
-// Size 0xa0
-struct ObjectMessagingDispatcher
-{
-public:
-	char                                                         pad0xa0_0SILJ[0xa0];                               // 0x0(0xa0)
+	char                                                         pad0x8_WT9F1[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -41,7 +23,25 @@ public:
 struct ObjectMessagingDispatcherHandle
 {
 public:
-	char                                                         pad0x8_WDQ93[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_KPBDK[0x8];                                 // 0x0(0x8)
+};
+
+
+// Size 0xa0
+struct ObjectMessagingDispatcher
+{
+public:
+	char                                                         pad0xa0_99D4F[0xa0];                               // 0x0(0xa0)
+};
+
+
+// Size 0x58
+struct ObjectMessagingHandle
+{
+public:
+	char                                                         pad0x8_R70EZ[0x8];                                 // 0x0(0x8)
+	class Struct*                                                EventType;                                         // 0x8(0x8)
+	char                                                         pad0x48_RUVT7[0x48];                               // 0x10(0x48)
 };
 
 

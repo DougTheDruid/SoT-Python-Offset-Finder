@@ -1,21 +1,4 @@
 {
-  "LandscapeInfoLayerSettings": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "LayerInfoObj",
-        "Type": "class LandscapeLayerInfoObject*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "LayerName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "WeightmapLayerAllocationInfo": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -44,10 +27,27 @@
         "Offset": "0xa"
       },
       {
-        "Name": "pad0x5_1LFWQ[0x5]",
+        "Name": "pad0x5_9UUFM[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0xb"
+      }
+    ]
+  },
+  "LandscapeInfoLayerSettings": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "LayerInfoObj",
+        "Type": "class LandscapeLayerInfoObject*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "LayerName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -73,7 +73,7 @@
         "Offset": "0xc"
       },
       {
-        "Name": "pad0x3_PW1SD[0x3]",
+        "Name": "pad0x3_8BZT7[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xd"
@@ -109,7 +109,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x3_CYDSP[0x3]",
+        "Name": "pad0x3_TU2QN[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x21"
@@ -134,35 +134,36 @@
       }
     ]
   },
-  "LandscapeLayerStruct": {
-    "ClassSize": "0x8",
+  "LandscapeSplineConnection": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "LayerInfoObj",
-        "Type": "class LandscapeLayerInfoObject*",
+        "Name": "Segment",
+        "Type": "class LandscapeSplineSegment*",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "End",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_7S0UF[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
       }
     ]
   },
-  "ForeignControlPointData": {
+  "LandscapeEditorLayerSettings": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_EUQOH[0x1]",
+        "Name": "pad0x1_V86TU[0x1]",
         "Type": "char",
         "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "GizmoSelectData": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x50_XC2V6[0x50]",
-        "Type": "char",
-        "Size": "0x50",
         "Offset": "0x0"
       }
     ]
@@ -183,7 +184,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_DBWO1[0x7]",
+        "Name": "pad0x7_U83D3[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
@@ -219,90 +220,21 @@
         "Offset": "0x90"
       },
       {
-        "Name": "pad0x4_FMHSH[0x4]",
+        "Name": "pad0x4_ADFKV[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x94"
       }
     ]
   },
-  "LandscapeWeightmapUsage": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ChannelUsage",
-        "Type": "class LandscapeComponent*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x18_0FOKH[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "ForeignWorldSplineData": {
+  "LandscapeImportLayerInfo": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_VR6V4[0x1]",
+        "Name": "pad0x1_SM9ZE[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "LandscapeSplineConnection": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Segment",
-        "Type": "class LandscapeSplineSegment*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "End",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x7_ZN2WJ[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x9"
-      }
-    ]
-  },
-  "LandscapeSplineSegmentConnection": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "ControlPoint",
-        "Type": "class LandscapeSplineControlPoint*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TangentLen",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "SocketName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "pad0x4_3T0O3[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x14"
       }
     ]
   },
@@ -328,7 +260,7 @@
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x3_JV3ZU[0x3]",
+        "Name": "pad0x3_9X7OD[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x19"
@@ -346,7 +278,7 @@
         "Offset": "0x24"
       },
       {
-        "Name": "pad0x3_AT404[0x3]",
+        "Name": "pad0x3_XGLWM[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x25"
@@ -376,10 +308,27 @@
         "Offset": "0x36"
       },
       {
-        "Name": "pad0x1_YA62N[0x1]",
+        "Name": "pad0x1_2TYOQ[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x37"
+      }
+    ]
+  },
+  "LandscapeWeightmapUsage": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ChannelUsage",
+        "Type": "class LandscapeComponent*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x18_BED6O[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x8"
       }
     ]
   },
@@ -403,6 +352,50 @@
         "Type": "struct ExpressionInput",
         "Size": "0x38",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "LandscapeLayerStruct": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "LayerInfoObj",
+        "Type": "class LandscapeLayerInfoObject*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ForeignWorldSplineData": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_TRS1J[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GizmoSelectData": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x50_JH895[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ForeignControlPointData": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_GN7ZW[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },
@@ -447,14 +440,32 @@
       }
     ]
   },
-  "LandscapeEditorLayerSettings": {
-    "ClassSize": "0x1",
+  "LandscapeSplineSegmentConnection": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x1_H7OIB[0x1]",
-        "Type": "char",
-        "Size": "0x1",
+        "Name": "ControlPoint",
+        "Type": "class LandscapeSplineControlPoint*",
+        "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "TangentLen",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "SocketName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "pad0x4_H1129[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
       }
     ]
   },
@@ -462,18 +473,7 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_ZLUPS[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "LandscapeImportLayerInfo": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_OF1AK[0x1]",
+        "Name": "pad0x1_2RZ3A[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"

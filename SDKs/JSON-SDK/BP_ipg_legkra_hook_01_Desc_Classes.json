@@ -1,14 +1,14 @@
 {
   "BP_ipg_legkra_hook_01_Desc_C": {
-    "Super": "SimpleMoveToActor",
-    "FullSize": "0x1485",
+    "Super": "None",
+    "FullSize": "-0x7ccccccd",
     "InheritedSize": "0x0",
-    "ClassSize": "0x1485",
+    "ClassSize": "-0x7ccccccd",
     "Attributes": [
       {
-        "Name": "pad0x1485_AF3P4[0x1485]",
+        "Name": "pad-0x7ccccccd_34C3K[-0x7ccccccd]",
         "Type": "char",
-        "Size": "0x1485",
+        "Size": "-0x7ccccccd",
         "Offset": "0x0"
       }
     ]

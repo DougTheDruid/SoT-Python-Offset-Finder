@@ -25,31 +25,17 @@
       }
     ]
   },
-  "BarrelsOfPlentySpawnManagerProviderInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "SpawnBarrelsOfPlentyStepDesc": {
-    "Super": "TaleQuestStepDesc",
-    "FullSize": "0xb0",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "LocatorVar",
-        "Type": "struct QuestVariableVector",
-        "Size": "0x30",
-        "Offset": "0x80"
-      }
-    ]
-  },
   "SpawnBarrelsOfPlentyStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x98",
     "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BarrelsOfPlentySpawnManagerProviderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -66,7 +52,7 @@
         "Offset": "0x3a0"
       },
       {
-        "Name": "pad0x18_0LU84[0x18]",
+        "Name": "pad0x18_UCDDX[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x3a8"
@@ -76,6 +62,20 @@
         "Type": "class SceneComponent*",
         "Size": "0x8",
         "Offset": "0x3c0"
+      }
+    ]
+  },
+  "SpawnBarrelsOfPlentyStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "LocatorVar",
+        "Type": "struct QuestVariableVector",
+        "Size": "0x30",
+        "Offset": "0x80"
       }
     ]
   },

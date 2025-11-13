@@ -1,21 +1,14 @@
 {
-  "NavalBattleServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "NavalBattleService": {
     "Super": "Actor",
-    "FullSize": "0x470",
+    "FullSize": "0x4a0",
     "InheritedSize": "0x3a0",
-    "ClassSize": "0xd0",
+    "ClassSize": "0x100",
     "Attributes": [
       {
-        "Name": "pad0xd0_ICOPL[0xd0]",
+        "Name": "pad0x100_JWT9L[0x100]",
         "Type": "char",
-        "Size": "0xd0",
+        "Size": "0x100",
         "Offset": "0x3a0"
       }
     ]
@@ -33,20 +26,20 @@
         "Offset": "0x28"
       },
       {
-        "Name": "BattleTime",
+        "Name": "CombatTime",
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x2c"
       },
       {
-        "Name": "NumberOfSinksToInitiateMigration",
-        "Type": "int",
+        "Name": "SinkTime",
+        "Type": "float",
         "Size": "0x4",
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_5ZISP[0x4]",
-        "Type": "char",
+        "Name": "NumberOfSinksToInitiateMigration",
+        "Type": "int",
         "Size": "0x4",
         "Offset": "0x34"
       }

@@ -6,13 +6,6 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "LocationType": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "LocationProviderService": {
     "Super": "Object",
     "FullSize": "0xa8",
@@ -20,12 +13,19 @@
     "ClassSize": "0x80",
     "Attributes": [
       {
-        "Name": "pad0x80_ZDGE4[0x80]",
+        "Name": "pad0x80_0HTYN[0x80]",
         "Type": "char",
         "Size": "0x80",
         "Offset": "0x28"
       }
     ]
+  },
+  "LocationType": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "KrakenLocationType": {
     "Super": "LocationType",

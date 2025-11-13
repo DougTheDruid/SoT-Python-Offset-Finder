@@ -7,7 +7,7 @@
 struct RegionActionSpotContainer
 {
 public:
-	char                                                         pad0x50_GQKOJ[0x50];                               // 0x0(0x50)
+	char                                                         pad0x50_GHQDH[0x50];                               // 0x0(0x50)
 };
 
 
@@ -15,7 +15,7 @@ public:
 struct ActivityActionSpotContainer
 {
 public:
-	char                                                         pad0x10_9HGEB[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_OK5TP[0x10];                               // 0x0(0x10)
 };
 
 

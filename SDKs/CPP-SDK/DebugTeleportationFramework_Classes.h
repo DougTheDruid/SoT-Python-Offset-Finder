@@ -7,6 +7,13 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DebugTeleportationLookupInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class DebugTeleportationRegistrationInterface: public Interface
 {
 public:
@@ -20,18 +27,11 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DebugTeleportationLookupInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x28 (Full Size[0x3c8] - InheritedSize[0x3a0]
 class DebugTeleportationDestinationService: public Actor
 {
 public:
-	char                                                         pad0x18_QUOZW[0x18];                               // 0x3a0(0x18)
+	char                                                         pad0x18_ZCWW9[0x18];                               // 0x3a0(0x18)
 	TArray<struct DebugTeleportDestinationEntry>                 DebugTeleportationRegistry;                        // 0x3b8(0x10)
 };
 

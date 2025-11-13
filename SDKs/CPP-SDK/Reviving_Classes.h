@@ -6,8 +6,39 @@
 #include "Reviving_Structs.h"
 
 
+// Size 0x50 (Full Size[0x190] - InheritedSize[0x140]
+class DeathSelfInteractionComponent: public InteractableComponent
+{
+public:
+	char                                                         pad0x8_XC4K9[0x8];                                 // 0x140(0x8)
+	bool                                                         HasGivenUp;                                        // 0x148(0x1)
+	char                                                         pad0x47_LKK98[0x47];                               // 0x149(0x47)
+};
+
+
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
+class RevivableStatus: public StatusBase
+{
+public:
+};
+
+
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ReviveInterface: public Interface
+class PostReviveLocomotionActionStateId: public ActionStateId
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
+class ReviveConditionalStatTrigger: public ConditionalStatsTriggerType
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ReviveableCharacterInterface: public Interface
 {
 public:
 };
@@ -20,12 +51,78 @@ public:
 };
 
 
-// Size 0x20 (Full Size[0x320] - InheritedSize[0x300]
-class ReviveAudioComponent: public WwiseEmitterComponent
+// Size 0x1a0 (Full Size[0x2e0] - InheritedSize[0x140]
+class ReviveComponent: public InteractableComponent
 {
 public:
-	class ReviveEffectsDataAsset*                                ReviveEffectsDataAsset;                            // 0x300(0x8)
-	char                                                         pad0x18_6IF5V[0x18];                               // 0x308(0x18)
+	char                                                         pad0x10_AX77V[0x10];                               // 0x140(0x10)
+	class Character*                                             OwningCharacter;                                   // 0x150(0x8)
+	class Actor*                                                 ReviveableRepresentationActor;                     // 0x158(0x8)
+	char                                                         ReviveState;                                       // 0x160(0x1)
+	char                                                         InteractionState;                                  // 0x161(0x1)
+	char                                                         pad0x6_30LE9[0x6];                                 // 0x162(0x6)
+	class UClass*                                                ReviveableRepresentationClass;                     // 0x168(0x8)
+	char                                                         pad0xc_W4NO4[0xc];                                 // 0x170(0xc)
+	bool                                                         ReviveWindowIsOpen;                                // 0x17c(0x1)
+	char                                                         pad0xd3_LH3VW[0xd3];                               // 0x17d(0xd3)
+	struct Status                                                RevivableStatus;                                   // 0x250(0x20)
+	char                                                         pad0x70_SA52F[0x70];                               // 0x270(0x70)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class RevivedActionStateId: public ActionStateId
+{
+public:
+};
+
+
+// Size 0x98 (Full Size[0x150] - InheritedSize[0xb8]
+class ReviveDebugComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x98_XGWU0[0x98];                               // 0xb8(0x98)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ReviveInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ReviveableRepresentationInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x50 (Full Size[0x88] - InheritedSize[0x38]
+class ReviveSettings: public DeveloperSettings
+{
+public:
+	float                                                        MaximumReviveDistance;                             // 0x38(0x4)
+	struct LinearColor                                           FadeColour;                                        // 0x3c(0x10)
+	bool                                                         ShouldFadeAudio;                                   // 0x4c(0x1)
+	char                                                         pad0x3_W4K36[0x3];                                 // 0x4d(0x3)
+	float                                                        ReviveTime;                                        // 0x50(0x4)
+	float                                                        MaxRevertEvaporateDuration;                        // 0x54(0x4)
+	TArray<char>                                                 UnsupportedPlayModes;                              // 0x58(0x10)
+	TArray<struct ModeSpecificReviveSettings>                    ModeSpecificSettings;                              // 0x68(0x10)
+	float                                                        GiveUpHoldTime;                                    // 0x78(0x4)
+	float                                                        GiveUpFadeDuration;                                // 0x7c(0x4)
+	float                                                        GiveUpEvaporateDuration;                           // 0x80(0x4)
+	char                                                         pad0x4_454GA[0x4];                                 // 0x84(0x4)
+};
+
+
+// Size 0xc8 (Full Size[0x468] - InheritedSize[0x3a0]
+class RevivableRepresentationActor: public Actor
+{
+public:
+	char                                                         pad0xc8_NKP2X[0xc8];                               // 0x3a0(0xc8)
 };
 
 
@@ -61,45 +158,12 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ReviveableRepresentationInterface: public Interface
+// Size 0x20 (Full Size[0x320] - InheritedSize[0x300]
+class ReviveAudioComponent: public WwiseEmitterComponent
 {
 public:
-};
-
-
-// Size 0x1a0 (Full Size[0x2e0] - InheritedSize[0x140]
-class ReviveComponent: public InteractableComponent
-{
-public:
-	char                                                         pad0x10_XWEU3[0x10];                               // 0x140(0x10)
-	class Character*                                             OwningCharacter;                                   // 0x150(0x8)
-	class Actor*                                                 ReviveableRepresentationActor;                     // 0x158(0x8)
-	char                                                         ReviveState;                                       // 0x160(0x1)
-	char                                                         InteractionState;                                  // 0x161(0x1)
-	char                                                         pad0x6_JBJCG[0x6];                                 // 0x162(0x6)
-	class UClass*                                                ReviveableRepresentationClass;                     // 0x168(0x8)
-	char                                                         pad0xc_9VQFB[0xc];                                 // 0x170(0xc)
-	bool                                                         ReviveWindowIsOpen;                                // 0x17c(0x1)
-	char                                                         pad0xd3_3SWTD[0xd3];                               // 0x17d(0xd3)
-	struct Status                                                RevivableStatus;                                   // 0x250(0x20)
-	char                                                         pad0x70_DB804[0x70];                               // 0x270(0x70)
-};
-
-
-// Size 0xc8 (Full Size[0x468] - InheritedSize[0x3a0]
-class RevivableRepresentationActor: public Actor
-{
-public:
-	char                                                         pad0xc8_OK7JL[0xc8];                               // 0x3a0(0xc8)
-};
-
-
-// Size 0x98 (Full Size[0x150] - InheritedSize[0xb8]
-class ReviveDebugComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x98_VE31H[0x98];                               // 0xb8(0x98)
+	class ReviveEffectsDataAsset*                                ReviveEffectsDataAsset;                            // 0x300(0x8)
+	char                                                         pad0x18_5T990[0x18];                               // 0x308(0x18)
 };
 
 
@@ -110,60 +174,29 @@ public:
 };
 
 
-// Size 0x50 (Full Size[0x190] - InheritedSize[0x140]
-class DeathSelfInteractionComponent: public InteractableComponent
+// Size 0x168 (Full Size[0x220] - InheritedSize[0xb8]
+class RevivableAIComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_7R9H6[0x8];                                 // 0x140(0x8)
-	bool                                                         HasGivenUp;                                        // 0x148(0x1)
-	char                                                         pad0x47_SINY2[0x47];                               // 0x149(0x47)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class PostReviveLocomotionActionStateId: public ActionStateId
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class ReviveConditionalStatTrigger: public ConditionalStatsTriggerType
-{
-public:
-};
-
-
-// Size 0x50 (Full Size[0x88] - InheritedSize[0x38]
-class ReviveSettings: public DeveloperSettings
-{
-public:
-	float                                                        MaximumReviveDistance;                             // 0x38(0x4)
-	struct LinearColor                                           FadeColour;                                        // 0x3c(0x10)
-	bool                                                         ShouldFadeAudio;                                   // 0x4c(0x1)
-	char                                                         pad0x3_IQV3X[0x3];                                 // 0x4d(0x3)
-	float                                                        ReviveTime;                                        // 0x50(0x4)
-	float                                                        MaxRevertEvaporateDuration;                        // 0x54(0x4)
-	TArray<char>                                                 UnsupportedPlayModes;                              // 0x58(0x10)
-	TArray<struct ModeSpecificReviveSettings>                    ModeSpecificSettings;                              // 0x68(0x10)
-	float                                                        GiveUpHoldTime;                                    // 0x78(0x4)
-	float                                                        GiveUpFadeDuration;                                // 0x7c(0x4)
-	float                                                        GiveUpEvaporateDuration;                           // 0x80(0x4)
-	char                                                         pad0x4_UW17K[0x4];                                 // 0x84(0x4)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ReviveableCharacterInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class RevivedActionStateId: public ActionStateId
-{
-public:
+	char                                                         pad0x18_H66WM[0x18];                               // 0xb8(0x18)
+	bool                                                         RevivableOnDeathFromTheStart;                      // 0xd0(0x1)
+	bool                                                         RevivableOnDeath;                                  // 0xd1(0x1)
+	char                                                         pad0x6_SAN2C[0x6];                                 // 0xd2(0x6)
+	struct FText                                                 CannotReviveAIBecauseDiffrentCrewDisplayText;      // 0xd8(0x38)
+	class UClass*                                                StartRevivingInputId;                              // 0x110(0x8)
+	class UClass*                                                HoldToReviveInputId;                               // 0x118(0x8)
+	class UClass*                                                EmoteIdToPlayAfterSuccessfulRevive;                // 0x120(0x8)
+	char                                                         ReviveState;                                       // 0x128(0x1)
+	bool                                                         ReviveWindowIsOpen;                                // 0x129(0x1)
+	bool                                                         OnlyCrewCanReviveFromTheStart;                     // 0x12a(0x1)
+	bool                                                         OnlyCrewCanRevive;                                 // 0x12b(0x1)
+	char                                                         pad0x54_VV1ZU[0x54];                               // 0x12c(0x54)
+	float                                                        ReviveTime;                                        // 0x180(0x4)
+	char                                                         pad0x4_W4NN8[0x4];                                 // 0x184(0x4)
+	class UClass*                                                ReviveableRepresentationClass;                     // 0x188(0x8)
+	struct Status                                                RevivableStatus;                                   // 0x190(0x20)
+	class Actor*                                                 ReviveableRepresentationActor;                     // 0x1b0(0x8)
+	char                                                         pad0x68_DG1O7[0x68];                               // 0x1b8(0x68)
 };
 
 
@@ -174,36 +207,13 @@ public:
 };
 
 
-// Size 0x168 (Full Size[0x220] - InheritedSize[0xb8]
-class RevivableAIComponent: public ActorComponent
+// Size 0x18 (Full Size[0x480] - InheritedSize[0x468]
+class SFXRevivalRepresentationActor: public RevivableRepresentationActor
 {
 public:
-	char                                                         pad0x18_MIY1E[0x18];                               // 0xb8(0x18)
-	bool                                                         RevivableOnDeathFromTheStart;                      // 0xd0(0x1)
-	bool                                                         RevivableOnDeath;                                  // 0xd1(0x1)
-	char                                                         pad0x6_1SIUZ[0x6];                                 // 0xd2(0x6)
-	struct FText                                                 CannotReviveAIBecauseDiffrentCrewDisplayText;      // 0xd8(0x38)
-	class UClass*                                                StartRevivingInputId;                              // 0x110(0x8)
-	class UClass*                                                HoldToReviveInputId;                               // 0x118(0x8)
-	class UClass*                                                EmoteIdToPlayAfterSuccessfulRevive;                // 0x120(0x8)
-	char                                                         ReviveState;                                       // 0x128(0x1)
-	bool                                                         ReviveWindowIsOpen;                                // 0x129(0x1)
-	bool                                                         OnlyCrewCanReviveFromTheStart;                     // 0x12a(0x1)
-	bool                                                         OnlyCrewCanRevive;                                 // 0x12b(0x1)
-	char                                                         pad0x54_DF554[0x54];                               // 0x12c(0x54)
-	float                                                        ReviveTime;                                        // 0x180(0x4)
-	char                                                         pad0x4_XA65D[0x4];                                 // 0x184(0x4)
-	class UClass*                                                ReviveableRepresentationClass;                     // 0x188(0x8)
-	struct Status                                                RevivableStatus;                                   // 0x190(0x20)
-	class Actor*                                                 ReviveableRepresentationActor;                     // 0x1b0(0x8)
-	char                                                         pad0x68_CFD4B[0x68];                               // 0x1b8(0x68)
-};
-
-
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class RevivableStatus: public StatusBase
-{
-public:
+	class SceneComponent*                                        Root;                                              // 0x468(0x8)
+	class ReviveAudioComponent*                                  AudioComponent;                                    // 0x470(0x8)
+	char                                                         pad0x8_VFDUI[0x8];                                 // 0x478(0x8)
 };
 
 
@@ -219,27 +229,17 @@ public:
 	class PostProcessComponent*                                  PostProcessComponent;                              // 0x498(0x8)
 	class DitherComponent*                                       DitherComponent;                                   // 0x4a0(0x8)
 	class ReviveAudioComponent*                                  AudioComponent;                                    // 0x4a8(0x8)
-	char                                                         pad0x8_C14OQ[0x8];                                 // 0x4b0(0x8)
+	char                                                         pad0x8_S3XLW[0x8];                                 // 0x4b0(0x8)
 	char                                                         RevivableOwnerNetRole;                             // 0x4b8(0x1)
-	char                                                         pad0x7_ZV1WG[0x7];                                 // 0x4b9(0x7)
+	char                                                         pad0x7_51AQR[0x7];                                 // 0x4b9(0x7)
 	class GhostDataAsset*                                        ReviveGhostDataAsset;                              // 0x4c0(0x8)
 	class ReviveEffectsDataAsset*                                ReviveEffectsDataAsset;                            // 0x4c8(0x8)
 	struct ReviveEffectsValues                                   ReviveEffectsValues;                               // 0x4d0(0x20)
 	struct ModeSpecificReviveSettings                            ReviveSettings;                                    // 0x4f0(0x38)
-	char                                                         pad0x8c_PRFHX[0x8c];                               // 0x528(0x8c)
+	char                                                         pad0x8c_3GMIQ[0x8c];                               // 0x528(0x8c)
 	TArray<class MaterialInstanceDynamic*>                       AstralCordDynamicMaterials;                        // 0x5e0(0x10)
 	struct GhostPlayModeParameters                               GhostPlayModeSpecificParameters;                   // 0x5f0(0xc)
-	char                                                         pad0x4_S1E86[0x4];                                 // 0x5fc(0x4)
-};
-
-
-// Size 0x18 (Full Size[0x480] - InheritedSize[0x468]
-class SFXRevivalRepresentationActor: public RevivableRepresentationActor
-{
-public:
-	class SceneComponent*                                        Root;                                              // 0x468(0x8)
-	class ReviveAudioComponent*                                  AudioComponent;                                    // 0x470(0x8)
-	char                                                         pad0x8_I1MKQ[0x8];                                 // 0x478(0x8)
+	char                                                         pad0x4_E4RGP[0x4];                                 // 0x5fc(0x4)
 };
 
 

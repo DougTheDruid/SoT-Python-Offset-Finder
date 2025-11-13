@@ -7,43 +7,19 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WwiseEmitterInterface: public Interface
+class WwiseInputManagerInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class WwiseNonShippingAudioAsset: public DataAsset
+// Size 0x90 (Full Size[0x128] - InheritedSize[0x98]
+class MovieSceneAkAudioRTPCSection: public MovieSceneSection
 {
 public:
-	struct FString                                               CodeName;                                          // 0x28(0x10)
-	struct FString                                               UAssetRelativePath;                                // 0x38(0x10)
-	struct FString                                               StreamRelativePath;                                // 0x48(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x310] - InheritedSize[0x300]
-class MergedMultiEmitterComponent: public WwiseEmitterComponent
-{
-public:
-	class WwiseObjectPoolWrapper*                                EmitterPool;                                       // 0x300(0x8)
-	class WwiseEvent*                                            PlayEvent;                                         // 0x308(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AnimNotifyWwiseEmitterComponentRetrievalInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class WwiseSoundFrameManager: public Object
-{
-public:
-	char                                                         pad0x20_2TR4L[0x20];                               // 0x28(0x20)
+	char                                                         pad0x8_XW5EI[0x8];                                 // 0x98(0x8)
+	struct FString                                               Name;                                              // 0xa0(0x10)
+	struct RichCurve                                             FloatCurve;                                        // 0xb0(0x78)
 };
 
 
@@ -53,23 +29,7 @@ class WwiseBank: public Object
 public:
 	struct FString                                               path;                                              // 0x28(0x10)
 	class WwiseBank*                                             InitBank;                                          // 0x40(0x8)
-	char                                                         pad0x28_ILGGC[0x28];                               // 0x48(0x28)
-};
-
-
-// Size 0xd8 (Full Size[0x100] - InheritedSize[0x28]
-class WwisePoolManager: public Object
-{
-public:
-	char                                                         pad0xd8_0UDIY[0xd8];                               // 0x28(0xd8)
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class WwiseEmitterManager: public Object
-{
-public:
-	char                                                         pad0x20_VG0L2[0x20];                               // 0x28(0x20)
+	char                                                         pad0x28_XHJX0[0x28];                               // 0x48(0x28)
 };
 
 
@@ -86,13 +46,78 @@ public:
 };
 
 
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class WwiseSoundFrameManager: public Object
+{
+public:
+	char                                                         pad0x20_3F6VQ[0x20];                               // 0x28(0x20)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AnimNotifyWwiseEmitterComponentRetrievalInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class WwiseEmitterManager: public Object
+{
+public:
+	char                                                         pad0x20_V3S6R[0x20];                               // 0x28(0x20)
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class WwiseNonShippingAudioRootAsset: public DataAsset
+{
+public:
+	TArray<class WwiseNonShippingAudioAsset*>                    NonShippingAudioAssets;                            // 0x28(0x10)
+	char                                                         pad0x10_5DCRL[0x10];                               // 0x38(0x10)
+};
+
+
+// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
+class MovieSceneAkAudioEventSection: public MovieSceneSection
+{
+public:
+	class WwiseEvent*                                            Event;                                             // 0x98(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x310] - InheritedSize[0x300]
+class MergedMultiEmitterComponent: public WwiseEmitterComponent
+{
+public:
+	class WwiseObjectPoolWrapper*                                EmitterPool;                                       // 0x300(0x8)
+	class WwiseEvent*                                            PlayEvent;                                         // 0x308(0x8)
+};
+
+
+// Size 0xd8 (Full Size[0x100] - InheritedSize[0x28]
+class WwisePoolManager: public Object
+{
+public:
+	char                                                         pad0xd8_819SI[0xd8];                               // 0x28(0xd8)
+};
+
+
+// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
+class WwiseDebugManager: public Object
+{
+public:
+	char                                                         pad0x60_703OP[0x60];                               // 0x28(0x60)
+};
+
+
 // Size 0x18 (Full Size[0xa0] - InheritedSize[0x88]
 class MovieSceneAkTrack: public MovieSceneTrack
 {
 public:
 	TArray<class MovieSceneSection*>                             Sections;                                          // 0x88(0x10)
 	bool                                                         bIsAMasterTrack;                                   // 0x98(0x1)
-	char                                                         pad0x7_TAWMW[0x7];                                 // 0x99(0x7)
+	char                                                         pad0x7_FC4KH[0x7];                                 // 0x99(0x7)
 };
 
 
@@ -111,85 +136,20 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
-class MovieSceneAkAudioEventSection: public MovieSceneSection
-{
-public:
-	class WwiseEvent*                                            Event;                                             // 0x98(0x8)
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class WwiseNonShippingAudioRootAsset: public DataAsset
-{
-public:
-	TArray<class WwiseNonShippingAudioAsset*>                    NonShippingAudioAssets;                            // 0x28(0x10)
-	char                                                         pad0x10_MOW3G[0x10];                               // 0x38(0x10)
-};
-
-
-// Size 0x60 (Full Size[0x88] - InheritedSize[0x28]
-class WwiseDebugManager: public Object
-{
-public:
-	char                                                         pad0x60_RIJU7[0x60];                               // 0x28(0x60)
-};
-
-
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class WwiseInputManager: public Object
-{
-public:
-	char                                                         pad0x28_CPMFB[0x28];                               // 0x28(0x28)
-};
-
-
-// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
-class AudioReporterSubSystem: public Object
-{
-public:
-	char                                                         pad0x50_3L5E9[0x50];                               // 0x28(0x50)
-};
-
-
-// Size 0x90 (Full Size[0x128] - InheritedSize[0x98]
-class MovieSceneAkAudioRTPCSection: public MovieSceneSection
-{
-public:
-	char                                                         pad0x8_YIC79[0x8];                                 // 0x98(0x8)
-	struct FString                                               Name;                                              // 0xa0(0x10)
-	struct RichCurve                                             FloatCurve;                                        // 0xb0(0x78)
-};
-
-
-// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
-class WwiseMediaManager: public Object
-{
-public:
-	char                                                         pad0x50_I2PRE[0x50];                               // 0x28(0x50)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WwiseInputManagerInterface: public Interface
+class WwiseEmitterInterface: public Interface
 {
 public:
 };
 
 
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class WwiseEvent: public Object
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class WwiseNonShippingAudioAsset: public DataAsset
 {
 public:
-	class WwiseBank*                                             RequiredBank;                                      // 0x28(0x8)
-	bool                                                         WaitForBankToLoad;                                 // 0x30(0x1)
-	char                                                         pad0x3_AJ09Z[0x3];                                 // 0x31(0x3)
-	float                                                        DurationMin;                                       // 0x38(0x4)
-	float                                                        DurationMax;                                       // 0x3c(0x4)
-	float                                                        MaxAttenuation;                                    // 0x40(0x4)
-	char                                                         DurationType;                                      // 0x44(0x1)
-	bool                                                         CookedIsStopEvent;                                 // 0x45(0x1)
-	char                                                         pad0xa_36S2S[0xa];                                 // 0x46(0xa)
+	struct FString                                               CodeName;                                          // 0x28(0x10)
+	struct FString                                               UAssetRelativePath;                                // 0x38(0x10)
+	struct FString                                               StreamRelativePath;                                // 0x48(0x10)
 };
 
 
@@ -202,15 +162,48 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0xa0] - InheritedSize[0xa0]
-class MovieSceneAkAudioRTPCTrack: public MovieSceneAkTrack
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
+class AudioReporterSubSystem: public Object
 {
 public:
+	char                                                         pad0x50_3KXXV[0x50];                               // 0x28(0x50)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class WwiseInputManager: public Object
+{
+public:
+	char                                                         pad0x28_0DEXE[0x28];                               // 0x28(0x28)
+};
+
+
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
+class WwiseMediaManager: public Object
+{
+public:
+	char                                                         pad0x50_O7WU4[0x50];                               // 0x28(0x50)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class WwiseEvent: public Object
+{
+public:
+	class WwiseBank*                                             RequiredBank;                                      // 0x28(0x8)
+	bool                                                         WaitForBankToLoad;                                 // 0x30(0x1)
+	char                                                         pad0x3_48UCF[0x3];                                 // 0x31(0x3)
+	float                                                        DurationMin;                                       // 0x38(0x4)
+	float                                                        DurationMax;                                       // 0x3c(0x4)
+	float                                                        MaxAttenuation;                                    // 0x40(0x4)
+	char                                                         DurationType;                                      // 0x44(0x1)
+	bool                                                         CookedIsStopEvent;                                 // 0x45(0x1)
+	char                                                         pad0xa_5HGDZ[0xa];                                 // 0x46(0xa)
 };
 
 
 // Size 0x0 (Full Size[0xa0] - InheritedSize[0xa0]
-class MovieSceneAkAudioEventTrack: public MovieSceneAkTrack
+class MovieSceneAkAudioRTPCTrack: public MovieSceneAkTrack
 {
 public:
 };
@@ -221,6 +214,13 @@ class WwiseDDSEvent: public WwiseEvent
 {
 public:
 	TArray<int>                                                  DDSArgumentsGroupsIDs;                             // 0x50(0x10)
+};
+
+
+// Size 0x0 (Full Size[0xa0] - InheritedSize[0xa0]
+class MovieSceneAkAudioEventTrack: public MovieSceneAkTrack
+{
+public:
 };
 
 

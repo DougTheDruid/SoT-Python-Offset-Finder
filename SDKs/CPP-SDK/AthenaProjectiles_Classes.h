@@ -6,19 +6,19 @@
 #include "AthenaProjectiles_Structs.h"
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class AthenaProjectilesThrottledTickCollectionAsset: public DataAsset
-{
-public:
-	TArray<struct ThrottledProjectileTickPool>                   ProjectileTickPools;                               // 0x28(0x10)
-};
-
-
 // Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
 class ProjectileLauncherSpecificSettings: public DeveloperSettings
 {
 public:
 	TArray<struct GlobalProjectileSettings>                      GlobalSettings;                                    // 0x38(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class AthenaProjectilesThrottledTickCollectionAsset: public DataAsset
+{
+public:
+	TArray<struct ThrottledProjectileTickPool>                   ProjectileTickPools;                               // 0x28(0x10)
 };
 
 

@@ -14,23 +14,23 @@ public:
 };
 
 
+// Size 0xb0 (Full Size[0xd8] - InheritedSize[0x28]
+class UtilityVoyageService: public Object
+{
+public:
+	char                                                         pad0x90_T717X[0x90];                               // 0x28(0x90)
+	TArray<class CrewVoyageParticipant*>                         Participants;                                      // 0xb8(0x10)
+	TArray<struct UtilityVoyageData>                             Voyages;                                           // 0xc8(0x10)
+};
+
+
 // Size 0x10 (Full Size[0x90] - InheritedSize[0x80]
 class DispatchUtilityVoyageTaleStepDesc: public TaleQuestStepDesc
 {
 public:
 	class VoyageDescDataAsset*                                   UtilityVoyageDesc;                                 // 0x80(0x8)
 	bool                                                         Migratable;                                        // 0x88(0x1)
-	char                                                         pad0x7_JI82R[0x7];                                 // 0x89(0x7)
-};
-
-
-// Size 0xb0 (Full Size[0xd8] - InheritedSize[0x28]
-class UtilityVoyageService: public Object
-{
-public:
-	char                                                         pad0x90_ZOEWP[0x90];                               // 0x28(0x90)
-	TArray<class CrewVoyageParticipant*>                         Participants;                                      // 0xb8(0x10)
-	TArray<struct UtilityVoyageData>                             Voyages;                                           // 0xc8(0x10)
+	char                                                         pad0x7_483LF[0x7];                                 // 0x89(0x7)
 };
 
 

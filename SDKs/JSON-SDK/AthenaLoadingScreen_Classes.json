@@ -1,37 +1,4 @@
 {
-  "AthenaLoadingScreenParams": {
-    "Super": "DeveloperSettings",
-    "FullSize": "0x68",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "BootLoadingScreen",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "TeleportLoadingScreen",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "AdventureLoadingScreens",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x58"
-      }
-    ]
-  },
-  "LoadingUtilities": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "SlateLoadingScreenParams": {
     "Super": "DataAsset",
     "FullSize": "0x238",
@@ -87,7 +54,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x7_YNRDQ[0x7]",
+        "Name": "pad0x7_S6RUQ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x39"
@@ -129,7 +96,7 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x4_IY02L[0x4]",
+        "Name": "pad0x4_GKMM1[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xb4"
@@ -219,7 +186,7 @@
         "Offset": "0x1e8"
       },
       {
-        "Name": "pad0x4_N58KA[0x4]",
+        "Name": "pad0x4_9WKJX[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1ec"
@@ -243,14 +210,47 @@
         "Offset": "0x230"
       },
       {
-        "Name": "pad0x7_7OS4X[0x7]",
+        "Name": "pad0x7_FTZF4[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x231"
       }
     ]
   },
+  "AthenaLoadingScreenParams": {
+    "Super": "DeveloperSettings",
+    "FullSize": "0x68",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "BootLoadingScreen",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "TeleportLoadingScreen",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "AdventureLoadingScreens",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x58"
+      }
+    ]
+  },
   "AthenaLoadingScreenBlueprintFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "LoadingUtilities": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

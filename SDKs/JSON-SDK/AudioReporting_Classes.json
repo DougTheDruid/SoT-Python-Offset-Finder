@@ -1,4 +1,25 @@
 {
+  "AudioReportReaction": {
+    "Super": "Object",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_RLRZB[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "AudioReportingDebugMenuGenerator": {
+    "Super": "DebugMenuEntryGenerator",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "AudioReportingComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x230",
@@ -12,10 +33,24 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x170_NZZLP[0x170]",
+        "Name": "pad0x170_O7V6V[0x170]",
         "Type": "char",
         "Size": "0x170",
         "Offset": "0xc0"
+      }
+    ]
+  },
+  "EventReactionsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Reactions",
+        "Type": "TArray<struct EventReactionDesc>",
+        "Size": "0x10",
+        "Offset": "0x28"
       }
     ]
   },
@@ -44,7 +79,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_A01W9[0x4]",
+        "Name": "pad0x4_SN5HC[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
@@ -68,41 +103,6 @@
         "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x38"
-      }
-    ]
-  },
-  "AudioReportingDebugMenuGenerator": {
-    "Super": "DebugMenuEntryGenerator",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "EventReactionsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Reactions",
-        "Type": "TArray<struct EventReactionDesc>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "AudioReportReaction": {
-    "Super": "Object",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_VKWAY[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x28"
       }
     ]
   },

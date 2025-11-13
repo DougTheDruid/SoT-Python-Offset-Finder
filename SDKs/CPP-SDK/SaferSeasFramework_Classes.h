@@ -30,9 +30,9 @@ public:
 class SaferSeasDataAssetProviderService: public Actor
 {
 public:
-	char                                                         pad0x8_LA1ZX[0x8];                                 // 0x3a0(0x8)
+	char                                                         pad0x8_KEVRW[0x8];                                 // 0x3a0(0x8)
 	class SaferSeasEntitlementBlacklistDataAsset*                SaferSeasEntitlementBlacklistDataAsset;            // 0x3a8(0x8)
-	char                                                         pad0x18_RRDMT[0x18];                               // 0x3b0(0x18)
+	char                                                         pad0x18_20KKV[0x18];                               // 0x3b0(0x18)
 };
 
 

@@ -7,7 +7,7 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GameServiceProviderInterface: public Interface
+class GameServiceLifecycleInterface: public Interface
 {
 public:
 };
@@ -21,7 +21,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GameServiceLifecycleInterface: public Interface
+class GameServiceProviderInterface: public Interface
 {
 public:
 };
@@ -38,7 +38,7 @@ public:
 class ServiceProviderGameState: public GameState
 {
 public:
-	char                                                         pad0x120_FK9GQ[0x120];                             // 0x3e8(0x120)
+	char                                                         pad0x120_UB82X[0x120];                             // 0x3e8(0x120)
 };
 
 

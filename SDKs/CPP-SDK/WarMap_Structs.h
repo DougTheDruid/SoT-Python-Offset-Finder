@@ -7,16 +7,16 @@
 struct EventWarMapStateChanged
 {
 public:
-	char                                                         pad0x8_JIW5A[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_OCKV9[0x8];                                 // 0x0(0x8)
 	class Actor*                                                 WarMapProposalContainer;                           // 0x8(0x8)
 };
 
 
-// Size 0x1
-struct EventWarMapHardModeStateChanged
+// Size 0x8
+struct WarMapVoteAddedEvent
 {
 public:
-	char                                                         pad0x1_ZKPR8[0x1];                                 // 0x0(0x1)
+	class Actor*                                                 Voter;                                             // 0x0(0x8)
 };
 
 
@@ -28,11 +28,11 @@ public:
 };
 
 
-// Size 0x8
-struct WarMapVoteAddedEvent
+// Size 0x1
+struct EventWarMapHardModeStateChanged
 {
 public:
-	class Actor*                                                 Voter;                                             // 0x0(0x8)
+	char                                                         pad0x1_SFFU6[0x1];                                 // 0x0(0x1)
 };
 
 

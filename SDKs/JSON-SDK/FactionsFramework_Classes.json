@@ -1,15 +1,15 @@
 {
+  "IsTargetWearingGhostCurseStatCondition": {
+    "Super": "TargetedStatCondition",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "FactionCurseInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "IsTargetWearingSkeletonCurseStatCondition": {
-    "Super": "TargetedStatCondition",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -20,7 +20,7 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "IsTargetWearingGhostCurseStatCondition": {
+  "IsTargetWearingSkeletonCurseStatCondition": {
     "Super": "TargetedStatCondition",
     "FullSize": "0x30",
     "InheritedSize": "0x30",

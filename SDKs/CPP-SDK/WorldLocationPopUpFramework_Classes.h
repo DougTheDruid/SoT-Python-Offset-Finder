@@ -6,20 +6,29 @@
 #include "WorldLocationPopUpFramework_Structs.h"
 
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class WorldLocationVisitorInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x30 (Full Size[0x90] - InheritedSize[0x60]
+class TaleWorldLocationPopUpService: public TaleQuestService
+{
+public:
+	TArray<struct TaleWorldLocationPopUpServiceEntry>            SuppressedWorldLocationPopUpNearbyLocations;       // 0x60(0x10)
+	char                                                         pad0x20_GGTCP[0x20];                               // 0x70(0x20)
+};
+
+
 // Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
 class TaleAllowWorldLocationPopUpStepDesc: public TaleQuestStepDesc
 {
 public:
 	float                                                        MaxDistanceFromWorldLocationPopUp;                 // 0x80(0x4)
-	char                                                         pad0x4_E1R6Y[0x4];                                 // 0x84(0x4)
+	char                                                         pad0x4_0HUGE[0x4];                                 // 0x84(0x4)
 	struct QuestVariableActor                                    NearbyActor;                                       // 0x88(0x30)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TalePreventWorldLocationPopUpStep: public TaleQuestStep
-{
-public:
 };
 
 
@@ -27,6 +36,27 @@ public:
 class TaleWorldLocationPopUpServiceDesc: public TaleQuestServiceDesc
 {
 public:
+};
+
+
+// Size 0x40 (Full Size[0xf8] - InheritedSize[0xb8]
+class WorldLocationVisitorComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_MUHB9[0x8];                                 // 0xb8(0x8)
+	float                                                        RevisitCooldown;                                   // 0xc0(0x4)
+	char                                                         pad0x34_BX9FG[0x34];                               // 0xc4(0x34)
+};
+
+
+// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
+class TalePreventWorldLocationPopUpStepDesc: public TaleQuestStepDesc
+{
+public:
+	bool                                                         DisableEntireIsland;                               // 0x80(0x1)
+	char                                                         pad0x3_YKEEA[0x3];                                 // 0x81(0x3)
+	float                                                        MaxDistanceFromWorldLocationPopUp;                 // 0x84(0x4)
+	struct QuestVariableVector                                   NearbyLocation;                                    // 0x88(0x30)
 };
 
 
@@ -41,24 +71,10 @@ public:
 };
 
 
-// Size 0x40 (Full Size[0xf8] - InheritedSize[0xb8]
-class WorldLocationVisitorComponent: public ActorComponent
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TalePreventWorldLocationPopUpStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x8_M0JCC[0x8];                                 // 0xb8(0x8)
-	float                                                        RevisitCooldown;                                   // 0xc0(0x4)
-	char                                                         pad0x34_NMYP9[0x34];                               // 0xc4(0x34)
-};
-
-
-// Size 0x38 (Full Size[0xb8] - InheritedSize[0x80]
-class TalePreventWorldLocationPopUpStepDesc: public TaleQuestStepDesc
-{
-public:
-	bool                                                         DisableEntireIsland;                               // 0x80(0x1)
-	char                                                         pad0x3_HBPH6[0x3];                                 // 0x81(0x3)
-	float                                                        MaxDistanceFromWorldLocationPopUp;                 // 0x84(0x4)
-	struct QuestVariableVector                                   NearbyLocation;                                    // 0x88(0x30)
 };
 
 
@@ -77,25 +93,9 @@ public:
 	class ShapeComponent*                                        LocationOverlapVolume;                             // 0x2d8(0x8)
 	float                                                        LocationCooldown;                                  // 0x2e0(0x4)
 	bool                                                         AlwaysShowPopUp;                                   // 0x2e4(0x1)
-	char                                                         pad0x63_KOAWO[0x63];                               // 0x2e5(0x63)
+	char                                                         pad0x63_KCMYN[0x63];                               // 0x2e5(0x63)
 	TArray<struct Guid>                                          SuppressedCrews;                                   // 0x348(0x10)
-	char                                                         pad0x8_0K2LP[0x8];                                 // 0x358(0x8)
-};
-
-
-// Size 0x30 (Full Size[0x90] - InheritedSize[0x60]
-class TaleWorldLocationPopUpService: public TaleQuestService
-{
-public:
-	TArray<struct TaleWorldLocationPopUpServiceEntry>            SuppressedWorldLocationPopUpNearbyLocations;       // 0x60(0x10)
-	char                                                         pad0x20_KP788[0x20];                               // 0x70(0x20)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WorldLocationVisitorInterface: public Interface
-{
-public:
+	char                                                         pad0x8_4L0GK[0x8];                                 // 0x358(0x8)
 };
 
 

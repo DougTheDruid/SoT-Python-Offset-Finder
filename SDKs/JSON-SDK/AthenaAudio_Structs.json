@@ -1,42 +1,24 @@
 {
-  "AthenaAudioGameStateSettings": {
-    "ClassSize": "0x30",
+  "ImmerseHeadsetUI": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "AudioGameStateGroupName",
-        "Type": "struct FName",
-        "Size": "0x8",
+        "Name": "Id",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x0"
       },
       {
-        "Name": "AudioGameStateFrontend",
-        "Type": "struct FName",
-        "Size": "0x8",
+        "Name": "pad0x4_83Z6Y[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "Name",
+        "Type": "struct FString",
+        "Size": "0x10",
         "Offset": "0x8"
-      },
-      {
-        "Name": "AudioGameStateLoading",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "AudioGameStateIngame",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "EngageAnimationStateGroupName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "EngageAnimationStateEngageName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x28"
       }
     ]
   },
@@ -97,86 +79,7 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_8193T[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SpatialAudioPurchaseBeginToGame": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_A07IY[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ImmerseStatusUpdateTelemetryEvent": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "UserId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "UserState",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Status",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "StatusCode",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "AnimNotify_SoundSwitch": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "SkeletalMeshReference",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SkeletalMeshCategoryName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "SpatialAudioHeadsetSelectionToGame": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "HeadsetSelectedId",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SpatialAudioStateUpdateRequestToGame": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_UW8AV[0x1]",
+        "Name": "pad0x1_37OFH[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
@@ -223,10 +126,54 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x7_L32KI[0x7]",
+        "Name": "pad0x7_MH3QZ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x39"
+      }
+    ]
+  },
+  "SpatialAudioEnableUniversalProfileToGame": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_8XTON[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SpatialAudioHeadsetSelectionToGame": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "HeadsetSelectedId",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SpatialAudioPersonalizedHRTFBeginToGame": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_B25DW[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SpatialAudioStateUpdateRequestToGame": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_40O97[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },
@@ -253,26 +200,112 @@
       }
     ]
   },
-  "ImmerseHeadsetUI": {
+  "SpatialAudioPersonalizedHRTFUpdatedToGame": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_L1R0B[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AnimNotify_SoundSwitch": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "Id",
-        "Type": "int",
-        "Size": "0x4",
+        "Name": "SkeletalMeshReference",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_MSSLC[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
+        "Name": "SkeletalMeshCategoryName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "SpatialAudioPurchaseBeginToGame": {
+    "ClassSize": "0x1",
+    "Attributes": [
       {
-        "Name": "Name",
+        "Name": "pad0x1_9NP8A[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ImmerseStatusUpdateTelemetryEvent": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "UserId",
         "Type": "struct FString",
         "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "UserState",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Status",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "StatusCode",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "AthenaAudioGameStateSettings": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "AudioGameStateGroupName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AudioGameStateFrontend",
+        "Type": "struct FName",
+        "Size": "0x8",
         "Offset": "0x8"
+      },
+      {
+        "Name": "AudioGameStateLoading",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "AudioGameStateIngame",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "EngageAnimationStateGroupName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "EngageAnimationStateEngageName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x28"
       }
     ]
   },
@@ -280,80 +313,14 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_BPIQR[0x1]",
+        "Name": "pad0x1_4XPJ0[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
       }
     ]
   },
-  "SpatialAudioPersonalizedHRTFBeginToGame": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_UPS44[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SpatialAudioStateUpdateToUI": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "State",
-        "Type": "struct SpatialAudioState",
-        "Size": "0x40",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SpatialAudioPurchaseErrorToUI": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "State",
-        "Type": "struct SpatialAudioState",
-        "Size": "0x40",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SpatialAudioPersonalizedHRTFSuccessToUI": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "State",
-        "Type": "struct SpatialAudioState",
-        "Size": "0x40",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SpatialAudioHeadsetSelectionSuccessToUI": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "State",
-        "Type": "struct SpatialAudioState",
-        "Size": "0x40",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SpatialAudioPersonalizedHRTFErrorToUI": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "State",
-        "Type": "struct SpatialAudioState",
-        "Size": "0x40",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "SpatialAudioPurchaseCancelledToUI": {
+  "SpatialAudioPurchaseSuccessToUI": {
     "ClassSize": "0x40",
     "Attributes": [
       {
@@ -375,7 +342,40 @@
       }
     ]
   },
-  "SpatialAudioPurchaseSuccessToUI": {
+  "SpatialAudioPersonalizedHRTFSuccessToUI": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "State",
+        "Type": "struct SpatialAudioState",
+        "Size": "0x40",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SpatialAudioEnableUniversalProfileSuccessToUI": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "State",
+        "Type": "struct SpatialAudioState",
+        "Size": "0x40",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SpatialAudioStateUpdateToUI": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "State",
+        "Type": "struct SpatialAudioState",
+        "Size": "0x40",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SpatialAudioPersonalizedHRTFErrorToUI": {
     "ClassSize": "0x40",
     "Attributes": [
       {
@@ -387,6 +387,50 @@
     ]
   },
   "SpatialAudioHeadsetSelectionErrorToUI": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "State",
+        "Type": "struct SpatialAudioState",
+        "Size": "0x40",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SpatialAudioEnableUniversalProfileErrorToUI": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "State",
+        "Type": "struct SpatialAudioState",
+        "Size": "0x40",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SpatialAudioHeadsetSelectionSuccessToUI": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "State",
+        "Type": "struct SpatialAudioState",
+        "Size": "0x40",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SpatialAudioPurchaseCancelledToUI": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "State",
+        "Type": "struct SpatialAudioState",
+        "Size": "0x40",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SpatialAudioPurchaseErrorToUI": {
     "ClassSize": "0x40",
     "Attributes": [
       {

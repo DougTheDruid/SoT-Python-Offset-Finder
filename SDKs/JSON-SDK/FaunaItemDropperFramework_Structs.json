@@ -22,23 +22,23 @@
       }
     ]
   },
-  "FaunaItemProxyStruct": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_E8K1S[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "FaunaItemDropperSpawnedItemTelemetryEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "SpawnedItemName",
         "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "FaunaItemProxyStruct": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_IFBZQ[0x10]",
+        "Type": "char",
         "Size": "0x10",
         "Offset": "0x0"
       }

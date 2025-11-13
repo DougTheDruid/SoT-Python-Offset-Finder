@@ -1,4 +1,38 @@
 {
+  "MediaComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MediaTexture",
+        "Type": "class MediaTexture*",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "MediaPlayer",
+        "Type": "class MediaPlayer*",
+        "Size": "0x8",
+        "Offset": "0xc0"
+      }
+    ]
+  },
+  "MediaPlaylist": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Items",
+        "Type": "TArray<class MediaSource*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "MediaSource": {
     "Super": "Object",
     "FullSize": "0x80",
@@ -6,10 +40,30 @@
     "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "pad0x58_8ZDH3[0x58]",
+        "Name": "pad0x58_5CVJT[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0x28"
+      }
+    ]
+  },
+  "MediaTimeStampInfo": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Time",
+        "Type": "struct Timespan",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x8_ITB4O[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x30"
       }
     ]
   },
@@ -20,7 +74,7 @@
     "ClassSize": "0x148",
     "Attributes": [
       {
-        "Name": "pad0x80_X31L8[0x80]",
+        "Name": "pad0x80_XA448[0x80]",
         "Type": "char",
         "Size": "0x80",
         "Offset": "0x28"
@@ -56,7 +110,7 @@
         "Offset": "0xc1"
       },
       {
-        "Name": "pad0x2_8XDDI[0x2]",
+        "Name": "pad0x2_J9UDE[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0xc2"
@@ -74,7 +128,7 @@
         "Offset": "0xc4"
       },
       {
-        "Name": "pad0x3_8NIAW[0x3]",
+        "Name": "pad0x3_WR5OH[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xc5"
@@ -92,7 +146,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x4_465IQ[0x4]",
+        "Name": "pad0x4_EZGEU[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xd4"
@@ -122,7 +176,7 @@
         "Offset": "0xe8"
       },
       {
-        "Name": "pad0x64_6D6LY[0x64]",
+        "Name": "pad0x64_KVY3K[0x64]",
         "Type": "char",
         "Size": "0x64",
         "Offset": "0xf4"
@@ -134,7 +188,7 @@
         "Offset": "0x158"
       },
       {
-        "Name": "pad0x8_621MT[0x8]",
+        "Name": "pad0x8_W3Z3V[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x168"
@@ -148,37 +202,23 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "MediaTimeStampInfo": {
-    "Super": "Object",
-    "FullSize": "0x38",
+  "MovieAssetContainer": {
+    "Super": "DataAsset",
+    "FullSize": "0x48",
     "InheritedSize": "0x28",
-    "ClassSize": "0x10",
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "Time",
-        "Type": "struct Timespan",
-        "Size": "0x8",
+        "Name": "MediaTextures",
+        "Type": "TArray<class MediaTexture*>",
+        "Size": "0x10",
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x8_84XKL[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "MediaPlaylist": {
-    "Super": "Object",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Items",
-        "Type": "TArray<class MediaSource*>",
+        "Name": "MediaPlayers",
+        "Type": "TArray<class MediaPlayer*>",
         "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x38"
       }
     ]
   },
@@ -207,7 +247,7 @@
         "Offset": "0x142"
       },
       {
-        "Name": "pad0x1_F151N[0x1]",
+        "Name": "pad0x1_6GWRC[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x143"
@@ -255,7 +295,7 @@
         "Offset": "0x15c"
       },
       {
-        "Name": "pad0x3_EBV67[0x3]",
+        "Name": "pad0x3_JHBD7[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x15d"
@@ -267,50 +307,24 @@
         "Offset": "0x160"
       },
       {
-        "Name": "pad0xc8_N4OT6[0xc8]",
+        "Name": "pad0xc8_DKWBQ[0xc8]",
         "Type": "char",
         "Size": "0xc8",
         "Offset": "0x168"
       }
     ]
   },
-  "MovieAssetContainer": {
-    "Super": "DataAsset",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
+  "PlatformMediaSource": {
+    "Super": "MediaSource",
+    "FullSize": "0x88",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "MediaTextures",
-        "Type": "TArray<class MediaTexture*>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "MediaPlayers",
-        "Type": "TArray<class MediaPlayer*>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "MediaComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xc8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MediaTexture",
-        "Type": "class MediaTexture*",
+        "Name": "MediaSource",
+        "Type": "class MediaSource*",
         "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "MediaPlayer",
-        "Type": "class MediaPlayer*",
-        "Size": "0x8",
-        "Offset": "0xc0"
+        "Offset": "0x80"
       }
     ]
   },
@@ -328,17 +342,35 @@
       }
     ]
   },
-  "PlatformMediaSource": {
-    "Super": "MediaSource",
-    "FullSize": "0x88",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x8",
+  "TimeSynchronizableMediaSource": {
+    "Super": "BaseMediaSource",
+    "FullSize": "0x98",
+    "InheritedSize": "0x88",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "MediaSource",
-        "Type": "class MediaSource*",
+        "Name": "bUseTimeSynchronization",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "pad0x3_AEGPO[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x89"
+      },
+      {
+        "Name": "FrameDelay",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8c"
+      },
+      {
+        "Name": "TimeDelay",
+        "Type": "double",
         "Size": "0x8",
-        "Offset": "0x80"
+        "Offset": "0x90"
       }
     ]
   },
@@ -375,42 +407,10 @@
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x17_5WWLI[0x17]",
+        "Name": "pad0x17_QTAM2[0x17]",
         "Type": "char",
         "Size": "0x17",
         "Offset": "0x99"
-      }
-    ]
-  },
-  "TimeSynchronizableMediaSource": {
-    "Super": "BaseMediaSource",
-    "FullSize": "0x98",
-    "InheritedSize": "0x88",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "bUseTimeSynchronization",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x88"
-      },
-      {
-        "Name": "pad0x3_AQ25Y[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x89"
-      },
-      {
-        "Name": "FrameDelay",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8c"
-      },
-      {
-        "Name": "TimeDelay",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x90"
       }
     ]
   },

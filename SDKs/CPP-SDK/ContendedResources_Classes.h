@@ -11,13 +11,6 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ContendedResourceServiceInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class WorldResourceRegistryInterface: public Interface
 {
 public:
@@ -25,14 +18,21 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ReservableContendedResourceStateInterface: public Interface
+class ContendedResourceInfoInterface: public Interface
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ContendedResourceInfoInterface: public Interface
+class ContendedResourceServiceInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ReservableContendedResourceStateInterface: public Interface
 {
 public:
 };

@@ -1,59 +1,24 @@
 {
-  "AnimNotify_WwiseSound": {
-    "Super": "AnimNotify",
-    "FullSize": "0x80",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x48",
+  "StaticMeshAudioEmittersComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x2e0",
+    "InheritedSize": "0x2d0",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "WwiseEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "OwnedByWorld",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "pad0x3_KPL3P[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x41"
-      },
-      {
-        "Name": "OwnedByWorldEmitterOffset",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x44"
-      },
-      {
-        "Name": "PerspectiveRestriction",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "pad0x7_FB0XM[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x51"
-      },
-      {
-        "Name": "OwnedByWorldWisePoolToUse",
-        "Type": "class WwiseObjectPoolWrapper*",
-        "Size": "0x8",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "pad0x20_Z3H3A[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x60"
+        "Name": "InstanceAssociations",
+        "Type": "TArray<struct StaticMeshComponentAudioAssociation>",
+        "Size": "0x10",
+        "Offset": "0x2d0"
       }
     ]
+  },
+  "AudioIslandStaticMeshAssociatorBase": {
+    "Super": "Actor",
+    "FullSize": "0x3a0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "WwiseEmitterComponent": {
     "Super": "SceneComponent",
@@ -62,7 +27,7 @@
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x8_T788A[0x8]",
+        "Name": "pad0x8_7QOGS[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x2d0"
@@ -81,31 +46,12 @@
       }
     ]
   },
-  "TritonAcousticMap": {
-    "Super": "Object",
-    "FullSize": "0x68",
+  "WwiseEmitterBlueprintLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
     "InheritedSize": "0x28",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "TritonMapFilename",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "CustomCacheRatio",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x2c_PUT0N[0x2c]",
-        "Type": "char",
-        "Size": "0x2c",
-        "Offset": "0x3c"
-      }
-    ]
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "StaticMeshAudioDataAsset": {
     "Super": "DataAsset",
@@ -158,7 +104,7 @@
         "Offset": "0x36"
       },
       {
-        "Name": "pad0x1_2Q1H4[0x1]",
+        "Name": "pad0x1_S7Q2L[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x37"
@@ -170,43 +116,10 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x30_DF4W1[0x30]",
+        "Name": "pad0x30_4PVU6[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x60"
-      }
-    ]
-  },
-  "AudioIslandStaticMeshAssociatorBase": {
-    "Super": "Actor",
-    "FullSize": "0x3a0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AnimNotifyState_WwiseSound": {
-    "Super": "AnimNotifyState",
-    "FullSize": "0x90",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "WwiseEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "WwiseEventEnd",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x50_E98VK[0x50]",
-        "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x40"
       }
     ]
   },
@@ -217,7 +130,7 @@
     "ClassSize": "0x128",
     "Attributes": [
       {
-        "Name": "pad0x10_P515F[0x10]",
+        "Name": "pad0x10_BYM3S[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"
@@ -229,7 +142,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0xa8_209ZM[0xa8]",
+        "Name": "pad0xa8_BTO8Z[0xa8]",
         "Type": "char",
         "Size": "0xa8",
         "Offset": "0x48"
@@ -241,57 +154,10 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x58_U3KXD[0x58]",
+        "Name": "pad0x58_KUFQP[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0xf8"
-      }
-    ]
-  },
-  "TritonComponent": {
-    "Super": "SceneComponent",
-    "FullSize": "0x2e0",
-    "InheritedSize": "0x2d0",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "TritonMapAsset",
-        "Type": "class TritonAcousticMap*",
-        "Size": "0x8",
-        "Offset": "0x2d0"
-      },
-      {
-        "Name": "TritonEffectRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x2d8"
-      },
-      {
-        "Name": "pad0x4_W3A4W[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x2dc"
-      }
-    ]
-  },
-  "WwiseEmitterComponentBlueprintLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "StaticMeshAudioEmittersComponent": {
-    "Super": "SceneComponent",
-    "FullSize": "0x2e0",
-    "InheritedSize": "0x2d0",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "InstanceAssociations",
-        "Type": "TArray<struct StaticMeshComponentAudioAssociation>",
-        "Size": "0x10",
-        "Offset": "0x2d0"
       }
     ]
   },
@@ -321,6 +187,147 @@
       }
     ]
   },
+  "AnimNotify_WwiseSound": {
+    "Super": "AnimNotify",
+    "FullSize": "0x80",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "WwiseEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "OwnedByWorld",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x3_IKFJS[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x41"
+      },
+      {
+        "Name": "OwnedByWorldEmitterOffset",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "PerspectiveRestriction",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "pad0x7_4NT00[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x51"
+      },
+      {
+        "Name": "OwnedByWorldWisePoolToUse",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "pad0x20_ZDGU0[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "WwiseEmitterComponentBlueprintLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AnimNotifyState_WwiseSound": {
+    "Super": "AnimNotifyState",
+    "FullSize": "0x90",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "WwiseEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "WwiseEventEnd",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x50_JZYX3[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "TritonComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x2e0",
+    "InheritedSize": "0x2d0",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "TritonMapAsset",
+        "Type": "class TritonAcousticMap*",
+        "Size": "0x8",
+        "Offset": "0x2d0"
+      },
+      {
+        "Name": "TritonEffectRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2d8"
+      },
+      {
+        "Name": "pad0x4_HEVB9[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2dc"
+      }
+    ]
+  },
+  "TritonAcousticMap": {
+    "Super": "Object",
+    "FullSize": "0x68",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "TritonMapFilename",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "CustomCacheRatio",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x2c_SYNI6[0x2c]",
+        "Type": "char",
+        "Size": "0x2c",
+        "Offset": "0x3c"
+      }
+    ]
+  },
   "RareAudioHardwareDeviceService": {
     "Super": "AudioHardwareDeviceService",
     "FullSize": "0x50",
@@ -328,17 +335,17 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_H5MS8[0x10]",
+        "Name": "pad0x10_ZEN2C[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x40"
       }
     ]
   },
-  "WwiseEmitterBlueprintLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
+  "AnimNotifyWwiseEmitterComponent": {
+    "Super": "WwiseEmitterComponent",
+    "FullSize": "0x300",
+    "InheritedSize": "0x300",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -361,13 +368,6 @@
         "Offset": "0x88"
       }
     ]
-  },
-  "AnimNotifyWwiseEmitterComponent": {
-    "Super": "WwiseEmitterComponent",
-    "FullSize": "0x300",
-    "InheritedSize": "0x300",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

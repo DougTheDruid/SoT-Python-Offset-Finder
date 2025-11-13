@@ -3,31 +3,9 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_G688Q[0x1]",
+        "Name": "pad0x1_3YO48[0x1]",
         "Type": "char",
         "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CrouchToastEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "IsCrouching",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "OnEndCrouchAudioEvent": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "CrouchEnd",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
         "Offset": "0x0"
       }
     ]
@@ -66,7 +44,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x7_P7VGG[0x7]",
+        "Name": "pad0x7_VO7DY[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x39"
@@ -77,20 +55,20 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x48_LK8JI[0x48]",
+        "Name": "pad0x48_ZKPKR[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0x0"
       }
     ]
   },
-  "OnStartCrouchEvent": {
-    "ClassSize": "0x1",
+  "OnStartCrouchAudioEvent": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x1_AAQ1L[0x1]",
-        "Type": "char",
-        "Size": "0x1",
+        "Name": "CrouchStart",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
         "Offset": "0x0"
       }
     ]
@@ -106,11 +84,33 @@
       }
     ]
   },
-  "OnStartCrouchAudioEvent": {
+  "OnStartCrouchEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_OWW6N[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CrouchToastEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "IsCrouching",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "OnEndCrouchAudioEvent": {
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "CrouchStart",
+        "Name": "CrouchEnd",
         "Type": "class WwiseEvent*",
         "Size": "0x8",
         "Offset": "0x0"

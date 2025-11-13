@@ -6,31 +6,6 @@
 #include "DebugMenu_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DebugMenuTestFunctions: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
-// Size 0xd8 (Full Size[0x478] - InheritedSize[0x3a0]
-class DebugMenu: public Actor
-{
-public:
-	char                                                         pad0xd8_MXEHV[0xd8];                               // 0x3a0(0xd8)
-};
-
-
-// Size 0x50 (Full Size[0x108] - InheritedSize[0xb8]
-class DebugMenuComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x28_50ONO[0x28];                               // 0xb8(0x28)
-	class DebugMenu*                                             DebugMenuInstance;                                 // 0xe0(0x8)
-	char                                                         pad0x20_KC5US[0x20];                               // 0xe8(0x20)
-};
-
-
 // Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
 class DebugMenuDataAsset: public DataAsset
 {
@@ -42,8 +17,33 @@ public:
 };
 
 
+// Size 0xd8 (Full Size[0x478] - InheritedSize[0x3a0]
+class DebugMenu: public Actor
+{
+public:
+	char                                                         pad0xd8_WHEP1[0xd8];                               // 0x3a0(0xd8)
+};
+
+
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class DebugMenuEntryGenerator: public Object
+{
+public:
+};
+
+
+// Size 0x50 (Full Size[0x108] - InheritedSize[0xb8]
+class DebugMenuComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x28_ZQ62U[0x28];                               // 0xb8(0x28)
+	class DebugMenu*                                             DebugMenuInstance;                                 // 0xe0(0x8)
+	char                                                         pad0x20_IXE4A[0x20];                               // 0xe8(0x20)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DebugMenuTestFunctions: public BlueprintFunctionLibrary
 {
 public:
 };
@@ -53,7 +53,7 @@ public:
 class DebugMenuComponentMock: public DebugMenuComponent
 {
 public:
-	char                                                         pad0x8_223WB[0x8];                                 // 0x108(0x8)
+	char                                                         pad0x8_N9NFG[0x8];                                 // 0x108(0x8)
 };
 
 

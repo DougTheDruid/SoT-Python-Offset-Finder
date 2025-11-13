@@ -6,6 +6,17 @@
 #include "RareGameService_Structs.h"
 
 
+// Size 0x68 (Full Size[0x120] - InheritedSize[0xb8]
+class RareGameServiceManagerComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_665TF[0x8];                                 // 0xb8(0x8)
+	TArray<class Object*>                                        ReplicatedServices;                                // 0xc0(0x10)
+	char                                                         pad0x40_A4YUC[0x40];                               // 0xd0(0x40)
+	TArray<struct RareGameServiceSpecification>                  ServiceSpecifications;                             // 0x110(0x10)
+};
+
+
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class RareGameServiceInterface: public Interface
 {
@@ -17,17 +28,6 @@ public:
 class RareGameServiceProviderInterface: public Interface
 {
 public:
-};
-
-
-// Size 0x68 (Full Size[0x120] - InheritedSize[0xb8]
-class RareGameServiceManagerComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_F3R3L[0x8];                                 // 0xb8(0x8)
-	TArray<class Object*>                                        ReplicatedServices;                                // 0xc0(0x10)
-	char                                                         pad0x40_VRYNV[0x40];                               // 0xd0(0x40)
-	TArray<struct RareGameServiceSpecification>                  ServiceSpecifications;                             // 0x110(0x10)
 };
 
 

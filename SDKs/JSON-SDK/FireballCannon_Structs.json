@@ -1,46 +1,12 @@
 {
-  "EventFireballCannonHasStartedToCooldown": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_MOWDN[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "EventFireballCannonIsReadyToFire": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_7F44E[0x1]",
+        "Name": "pad0x1_1KME8[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "EventFireballCannonFiringStateChanged": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "FireballCannonFiringState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x7_5PPAE[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "FireballCannonObject",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
       }
     ]
   },
@@ -96,11 +62,45 @@
       }
     ]
   },
+  "EventFireballCannonFiringStateChanged": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "FireballCannonFiringState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_MYHP1[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "FireballCannonObject",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventFireballCannonHasStartedToCooldown": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_GNGML[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "EventShootFireballCannon": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_XQOTQ[0x1]",
+        "Name": "pad0x1_93GJG[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"

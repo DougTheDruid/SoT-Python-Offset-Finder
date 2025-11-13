@@ -1,11 +1,4 @@
 {
-  "LinkerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "LinkerComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x190",
@@ -13,7 +6,7 @@
     "ClassSize": "0xd8",
     "Attributes": [
       {
-        "Name": "pad0xc8_OZS3P[0xc8]",
+        "Name": "pad0xc8_TNZJB[0xc8]",
         "Type": "char",
         "Size": "0xc8",
         "Offset": "0xb8"
@@ -26,6 +19,13 @@
       }
     ]
   },
+  "LinkEndpointIdUtilities": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "LinkEndpointInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
@@ -33,8 +33,8 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "LinkEndpointIdUtilities": {
-    "Super": "BlueprintFunctionLibrary",
+  "LinkerInterface": {
+    "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
@@ -47,7 +47,7 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x18_WLZ7S[0x18]",
+        "Name": "pad0x18_HDC0A[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x28"

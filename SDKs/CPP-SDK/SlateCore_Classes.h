@@ -7,10 +7,10 @@
 
 
 // Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class SlateWidgetStyleContainerBase: public Object
+class SlateWidgetStyleAsset: public Object
 {
 public:
-	char                                                         pad0x8_ZURTT[0x8];                                 // 0x28(0x8)
+	class SlateWidgetStyleContainerBase*                         CustomStyle;                                       // 0x28(0x8)
 };
 
 
@@ -18,6 +18,14 @@ public:
 class SlateWidgetStyleContainerInterface: public Interface
 {
 public:
+};
+
+
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class SlateWidgetStyleContainerBase: public Object
+{
+public:
+	char                                                         pad0x8_930NO[0x8];                                 // 0x28(0x8)
 };
 
 
@@ -32,7 +40,7 @@ public:
 class FontBulkData: public Object
 {
 public:
-	char                                                         pad0x98_I8ZSC[0x98];                               // 0x28(0x98)
+	char                                                         pad0x98_3TN5D[0x98];                               // 0x28(0x98)
 };
 
 
@@ -40,14 +48,6 @@ public:
 class FontProviderInterface: public Interface
 {
 public:
-};
-
-
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class SlateWidgetStyleAsset: public Object
-{
-public:
-	class SlateWidgetStyleContainerBase*                         CustomStyle;                                       // 0x28(0x8)
 };
 
 

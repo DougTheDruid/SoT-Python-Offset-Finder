@@ -7,10 +7,18 @@
 struct TrackedEncounterEvent
 {
 public:
-	char                                                         pad0x10_UJFO5[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_E1O7E[0x10];                               // 0x0(0x10)
 	class UClass*                                                TrackedEncounterClassId;                           // 0x10(0x8)
 	class TrackedEncounter*                                      TrackedEncounter;                                  // 0x18(0x8)
-	char                                                         pad0x18_NHNHB[0x18];                               // 0x20(0x18)
+	char                                                         pad0x18_ADJSA[0x18];                               // 0x20(0x18)
+};
+
+
+// Size 0x1
+struct PlayerEnteredTrackedEncounterDiscoveredEvent
+{
+public:
+	char                                                         pad0x1_AQ3CV[0x1];                                 // 0x0(0x1)
 };
 
 

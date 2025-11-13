@@ -1,4 +1,15 @@
 {
+  "EventExplosionOverlap": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "DamagerType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "EventInstigatedExplosionDamagedActors": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -6,6 +17,17 @@
         "Name": "DamagedActors",
         "Type": "TArray<class Actor*>",
         "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventExplosionIgnitedActor": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "IgnitedActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
         "Offset": "0x0"
       }
     ]
@@ -20,7 +42,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x10_ZMQS6[0x10]",
+        "Name": "pad0x10_E4R6T[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x8"
@@ -49,32 +71,10 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x10_M5XWK[0x10]",
+        "Name": "pad0x10_ORHBD[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "EventExplosionIgnitedActor": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "IgnitedActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventExplosionOverlap": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "DamagerType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
       }
     ]
   },

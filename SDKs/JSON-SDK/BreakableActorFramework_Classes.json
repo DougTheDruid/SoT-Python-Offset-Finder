@@ -12,7 +12,7 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x4_WYVFK[0x4]",
+        "Name": "pad0x4_1Q24F[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xbc"
@@ -72,7 +72,7 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0xb8_1MSP5[0xb8]",
+        "Name": "pad0xb8_Z6UC0[0xb8]",
         "Type": "char",
         "Size": "0xb8",
         "Offset": "0xf8"
@@ -86,7 +86,7 @@
     "ClassSize": "0x190",
     "Attributes": [
       {
-        "Name": "pad0x20_9109I[0x20]",
+        "Name": "pad0x20_AF70F[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x3a0"
@@ -98,7 +98,7 @@
         "Offset": "0x3c0"
       },
       {
-        "Name": "pad0x4_6T7JB[0x4]",
+        "Name": "pad0x4_B1Y85[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c4"
@@ -140,84 +140,10 @@
         "Offset": "0x410"
       },
       {
-        "Name": "pad0x118_W409Z[0x118]",
+        "Name": "pad0x118_3IK5G[0x118]",
         "Type": "char",
         "Size": "0x118",
         "Offset": "0x418"
-      }
-    ]
-  },
-  "BreakableActorDynamicMaterialComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x210",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x158",
-    "Attributes": [
-      {
-        "Name": "pad0x4_OBQ4G[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "MagicColourPropertyName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xbc"
-      },
-      {
-        "Name": "DamageLevelPropertyName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xc4"
-      },
-      {
-        "Name": "TimeBasedPropertyName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xcc"
-      },
-      {
-        "Name": "HitPositionPropertyName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xd4"
-      },
-      {
-        "Name": "CollapseStartTimePropertyName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xdc"
-      },
-      {
-        "Name": "pad0x4_ZK6K1[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xe4"
-      },
-      {
-        "Name": "TargetMesh",
-        "Type": "class PrimitiveComponent*",
-        "Size": "0x8",
-        "Offset": "0xe8"
-      },
-      {
-        "Name": "DynamicMaterials",
-        "Type": "TArray<class MaterialInstanceDynamic*>",
-        "Size": "0x10",
-        "Offset": "0xf0"
-      },
-      {
-        "Name": "BreakableActor",
-        "Type": "class BreakableActorBase*",
-        "Size": "0x8",
-        "Offset": "0x100"
-      },
-      {
-        "Name": "pad0x108_WS6O9[0x108]",
-        "Type": "char",
-        "Size": "0x108",
-        "Offset": "0x108"
       }
     ]
   },
@@ -228,7 +154,7 @@
     "ClassSize": "0x80",
     "Attributes": [
       {
-        "Name": "pad0x80_GBBCO[0x80]",
+        "Name": "pad0x80_DHQTJ[0x80]",
         "Type": "char",
         "Size": "0x80",
         "Offset": "0x4c0"
@@ -248,7 +174,7 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x7_NH0YX[0x7]",
+        "Name": "pad0x7_0B5R9[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xb9"
@@ -284,10 +210,84 @@
         "Offset": "0xe0"
       },
       {
-        "Name": "pad0xd0_YLJDC[0xd0]",
+        "Name": "pad0xd0_W3LC8[0xd0]",
         "Type": "char",
         "Size": "0xd0",
         "Offset": "0xe8"
+      }
+    ]
+  },
+  "BreakableActorDynamicMaterialComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x210",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x158",
+    "Attributes": [
+      {
+        "Name": "pad0x4_L3TBU[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "MagicColourPropertyName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xbc"
+      },
+      {
+        "Name": "DamageLevelPropertyName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xc4"
+      },
+      {
+        "Name": "TimeBasedPropertyName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xcc"
+      },
+      {
+        "Name": "HitPositionPropertyName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xd4"
+      },
+      {
+        "Name": "CollapseStartTimePropertyName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xdc"
+      },
+      {
+        "Name": "pad0x4_FNEFK[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xe4"
+      },
+      {
+        "Name": "TargetMesh",
+        "Type": "class PrimitiveComponent*",
+        "Size": "0x8",
+        "Offset": "0xe8"
+      },
+      {
+        "Name": "DynamicMaterials",
+        "Type": "TArray<class MaterialInstanceDynamic*>",
+        "Size": "0x10",
+        "Offset": "0xf0"
+      },
+      {
+        "Name": "BreakableActor",
+        "Type": "class BreakableActorBase*",
+        "Size": "0x8",
+        "Offset": "0x100"
+      },
+      {
+        "Name": "pad0x108_7NAEL[0x108]",
+        "Type": "char",
+        "Size": "0x108",
+        "Offset": "0x108"
       }
     ]
   },

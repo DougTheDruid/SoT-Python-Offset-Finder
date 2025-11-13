@@ -1,24 +1,12 @@
 {
-  "CookerSmokeFeedbackEntry": {
+  "OnItemStartedCooking": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "FeedbackLevel",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x7_OIJ5M[0x7]",
+        "Name": "pad0x10_TYO8O[0x10]",
         "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "SmokeVFX",
-        "Type": "class ParticleSystem*",
-        "Size": "0x8",
-        "Offset": "0x8"
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },
@@ -33,43 +21,147 @@
       }
     ]
   },
-  "EventActorStoppedCooking": {
-    "ClassSize": "0x18",
+  "CookableComponentSmokeFeedbackTimingEntry": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "FoodType",
+        "Name": "StateDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "StateFeedbackLevel",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x3_SPALD[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5"
+      }
+    ]
+  },
+  "OnPlacedItemInCookingPot": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Interactor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ItemToCook",
+        "Type": "class ItemInfo*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "CookerSmokeFeedbackEntry": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "FeedbackLevel",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_ZHGFV[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "SmokeVFX",
+        "Type": "class ParticleSystem*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "CookEndTelemetryEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "ItemName",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "InitialCookingState",
+        "Name": "CookState",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x10"
       },
       {
-        "Name": "EndCookingState",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "pad0x3_0F5RE[0x3]",
+        "Type": "char",
+        "Size": "0x3",
         "Offset": "0x11"
       },
       {
-        "Name": "pad0x6_KC86X[0x6]",
-        "Type": "char",
-        "Size": "0x6",
-        "Offset": "0x12"
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "CookId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x20"
       }
     ]
   },
-  "OnItemStartedCooking": {
-    "ClassSize": "0x10",
+  "CookingInfo": {
+    "ClassSize": "0xc",
     "Attributes": [
       {
-        "Name": "pad0x10_BEEWW[0x10]",
+        "Name": "pad0xc_2LA04[0xc]",
         "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CookStartTelemetryEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "ItemName",
+        "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "CookState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x3_MT03I[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "CookId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x20"
       }
     ]
   },
@@ -89,7 +181,7 @@
         "Offset": "0x1"
       },
       {
-        "Name": "pad0x6_M9EMP[0x6]",
+        "Name": "pad0x6_4W7YT[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x2"
@@ -119,7 +211,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x3_3CWL3[0x3]",
+        "Name": "pad0x3_LIU0S[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x51"
@@ -143,114 +235,10 @@
         "Offset": "0x5c"
       },
       {
-        "Name": "pad0x4_7ABWI[0x4]",
+        "Name": "pad0x4_S2XZ4[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x64"
-      }
-    ]
-  },
-  "CookEndTelemetryEvent": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "ItemName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CookState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x3_GBNJD[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x11"
-      },
-      {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "CookId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "CookableComponentSmokeFeedbackTimingEntry": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "StateDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "StateFeedbackLevel",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "pad0x3_RJ5MT[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x5"
-      }
-    ]
-  },
-  "CookStartTelemetryEvent": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "ItemName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CookState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x3_05ZVU[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x11"
-      },
-      {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "CookId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "CookingInfo": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "pad0xc_V0ZFU[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x0"
       }
     ]
   },
@@ -258,27 +246,39 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_YE80C[0x1]",
+        "Name": "pad0x1_5B8I6[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
       }
     ]
   },
-  "OnPlacedItemInCookingPot": {
-    "ClassSize": "0x10",
+  "EventActorStoppedCooking": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "Interactor",
-        "Type": "class Actor*",
-        "Size": "0x8",
+        "Name": "FoodType",
+        "Type": "struct FString",
+        "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "ItemToCook",
-        "Type": "class ItemInfo*",
-        "Size": "0x8",
-        "Offset": "0x8"
+        "Name": "InitialCookingState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "EndCookingState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "pad0x6_5IAED[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x12"
       }
     ]
   },

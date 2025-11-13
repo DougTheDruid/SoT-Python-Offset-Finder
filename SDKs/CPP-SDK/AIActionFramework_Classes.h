@@ -6,26 +6,21 @@
 #include "AIActionFramework_Structs.h"
 
 
-// Size 0x28 (Full Size[0xe0] - InheritedSize[0xb8]
-class AIActionInstigatorComponent: public ActorComponent
+// Size 0x58 (Full Size[0x110] - InheritedSize[0xb8]
+class AIActionSpotComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_PVGFS[0x8];                                 // 0xb8(0x8)
-	TArray<class Class*>                                         CurrentRoles;                                      // 0xc0(0x10)
-	class UClass*                                                InitialActivity;                                   // 0xd0(0x8)
-	class UClass*                                                CurrentActivity;                                   // 0xd8(0x8)
+	char                                                         pad0x8_XF4TU[0x8];                                 // 0xb8(0x8)
+	TArray<class Class*>                                         SupportedRoles;                                    // 0xc0(0x10)
+	TArray<class Class*>                                         SupportedActivities;                               // 0xd0(0x10)
+	TArray<class Class*>                                         ContextTags;                                       // 0xe0(0x10)
+	class UClass*                                                CustomAnimInstance;                                // 0xf0(0x8)
+	char                                                         pad0x18_H8T9H[0x18];                               // 0xf8(0x18)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class AIActionActivity: public Object
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AIActionSpotServiceInterface: public Interface
 {
 public:
 };
@@ -38,37 +33,11 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DockableRotationOverrideInterface: public Interface
+// Size 0x68 (Full Size[0x90] - InheritedSize[0x28]
+class AIActionSpotService: public Object
 {
 public:
-};
-
-
-// Size 0x58 (Full Size[0x110] - InheritedSize[0xb8]
-class AIActionSpotComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_4J1L2[0x8];                                 // 0xb8(0x8)
-	TArray<class Class*>                                         SupportedRoles;                                    // 0xc0(0x10)
-	TArray<class Class*>                                         SupportedActivities;                               // 0xd0(0x10)
-	TArray<class Class*>                                         ContextTags;                                       // 0xe0(0x10)
-	class UClass*                                                CustomAnimInstance;                                // 0xf0(0x8)
-	char                                                         pad0x18_86Y4L[0x18];                               // 0xf8(0x18)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AIActionSpotInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AIActionInstigatorInterface: public Interface
-{
-public:
+	char                                                         pad0x68_7WJWI[0x68];                               // 0x28(0x68)
 };
 
 
@@ -76,17 +45,16 @@ public:
 class DockableRotationOverrideComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_QOL5I[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_4QSWH[0x8];                                 // 0xb8(0x8)
 	bool                                                         KeepOwnerRotationWhileDocked;                      // 0xc0(0x1)
-	char                                                         pad0x7_XGJ1L[0x7];                                 // 0xc1(0x7)
+	char                                                         pad0x7_ABZWR[0x7];                                 // 0xc1(0x7)
 };
 
 
-// Size 0x68 (Full Size[0x90] - InheritedSize[0x28]
-class AIActionSpotService: public Object
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AIActionInstigatorInterface: public Interface
 {
 public:
-	char                                                         pad0x68_XESN9[0x68];                               // 0x28(0x68)
 };
 
 
@@ -98,7 +66,39 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AIActionActivity_Quest: public AIActionActivity
+class AIActionSpotInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AIActionSpotServiceInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x28 (Full Size[0xe0] - InheritedSize[0xb8]
+class AIActionInstigatorComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_ZV6HC[0x8];                                 // 0xb8(0x8)
+	TArray<class Class*>                                         CurrentRoles;                                      // 0xc0(0x10)
+	class UClass*                                                InitialActivity;                                   // 0xd0(0x8)
+	class UClass*                                                CurrentActivity;                                   // 0xd8(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DockableRotationOverrideInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AIActionActivity_Follow: public AIActionActivity
 {
 public:
 };
@@ -112,7 +112,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AIActionActivity_Follow: public AIActionActivity
+class AIActionActivity_Quest: public AIActionActivity
 {
 public:
 };

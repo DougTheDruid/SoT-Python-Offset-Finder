@@ -4,28 +4,10 @@
 // https://github.com/DougTheDruid
 
 // Size 0x1
-struct EventFireballCannonHasStartedToCooldown
-{
-public:
-	char                                                         pad0x1_MOWDN[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x1
 struct EventFireballCannonIsReadyToFire
 {
 public:
-	char                                                         pad0x1_7F44E[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x10
-struct EventFireballCannonFiringStateChanged
-{
-public:
-	char                                                         FireballCannonFiringState;                         // 0x0(0x1)
-	char                                                         pad0x7_5PPAE[0x7];                                 // 0x1(0x7)
-	class Object*                                                FireballCannonObject;                              // 0x8(0x8)
+	char                                                         pad0x1_1KME8[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -50,11 +32,29 @@ public:
 };
 
 
+// Size 0x10
+struct EventFireballCannonFiringStateChanged
+{
+public:
+	char                                                         FireballCannonFiringState;                         // 0x0(0x1)
+	char                                                         pad0x7_MYHP1[0x7];                                 // 0x1(0x7)
+	class Object*                                                FireballCannonObject;                              // 0x8(0x8)
+};
+
+
+// Size 0x1
+struct EventFireballCannonHasStartedToCooldown
+{
+public:
+	char                                                         pad0x1_GNGML[0x1];                                 // 0x0(0x1)
+};
+
+
 // Size 0x1
 struct EventShootFireballCannon
 {
 public:
-	char                                                         pad0x1_XQOTQ[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_93GJG[0x1];                                 // 0x0(0x1)
 };
 
 

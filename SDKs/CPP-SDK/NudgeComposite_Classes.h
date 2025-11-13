@@ -6,24 +6,24 @@
 #include "NudgeComposite_Structs.h"
 
 
-// Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
-class NudgeFromWaterLevelPolicy: public NudgePolicy
-{
-public:
-	float                                                        ChanceOfNudge;                                     // 0xc8(0x4)
-	char                                                         pad0x14_KA5YW[0x14];                               // 0xcc(0x14)
-	float                                                        WaterLevelDifferenceBetweenUpdates;                // 0xe0(0x4)
-	float                                                        ZOffsetFromWaterToMountpoint;                      // 0xe4(0x4)
-	char                                                         pad0x8_1YSE1[0x8];                                 // 0xe8(0x8)
-};
-
-
 // Size 0x8 (Full Size[0xd0] - InheritedSize[0xc8]
 class NudgeFromShipCollisionPolicy: public NudgePolicy
 {
 public:
 	int                                                          DamageAmountRequiredToNudge;                       // 0xc8(0x4)
 	float                                                        ChanceOfNudge;                                     // 0xcc(0x4)
+};
+
+
+// Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
+class NudgeFromWaterLevelPolicy: public NudgePolicy
+{
+public:
+	float                                                        ChanceOfNudge;                                     // 0xc8(0x4)
+	char                                                         pad0x14_HX3BR[0x14];                               // 0xcc(0x14)
+	float                                                        WaterLevelDifferenceBetweenUpdates;                // 0xe0(0x4)
+	float                                                        ZOffsetFromWaterToMountpoint;                      // 0xe4(0x4)
+	char                                                         pad0x8_ERIWO[0x8];                                 // 0xe8(0x8)
 };
 
 
@@ -40,9 +40,9 @@ class NudgeFromStormPolicy: public NudgePolicy
 {
 public:
 	float                                                        ChanceOfNudge;                                     // 0xc8(0x4)
-	char                                                         pad0x4_Z3ZAF[0x4];                                 // 0xcc(0x4)
+	char                                                         pad0x4_1VFWS[0x4];                                 // 0xcc(0x4)
 	struct WeightedProbabilityRangeOfRanges                      WeightedTimers;                                    // 0xd0(0x30)
-	char                                                         pad0x58_OQUE4[0x58];                               // 0x100(0x58)
+	char                                                         pad0x58_1ZRBI[0x58];                               // 0x100(0x58)
 };
 
 

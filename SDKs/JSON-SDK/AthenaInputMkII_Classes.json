@@ -1,17 +1,24 @@
 {
-  "AutoMoveInputComponent": {
-    "Super": "InputComponent",
-    "FullSize": "0x160",
-    "InheritedSize": "0x140",
-    "ClassSize": "0x20",
+  "NPCReceivesInputIndicatorComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xc0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x20_JOX47[0x20]",
+        "Name": "pad0x8_P06VS[0x8]",
         "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x140"
+        "Size": "0x8",
+        "Offset": "0xb8"
       }
     ]
+  },
+  "ClampedFreelookMouseYInputId": {
+    "Super": "AnalogInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "ClampedFreelookMouseXInputId": {
     "Super": "AnalogInputId",
@@ -34,47 +41,26 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "AutoMoveInputComponent": {
+    "Super": "InputComponent",
+    "FullSize": "0x160",
+    "InheritedSize": "0x140",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_T45MF[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x140"
+      }
+    ]
+  },
   "OpenEscapeMenuNotificationInputId": {
     "Super": "NotificationInputId",
     "FullSize": "0x38",
     "InheritedSize": "0x38",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "NPCReceivesInputIndicatorComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xc0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_DI5Z4[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      }
-    ]
-  },
-  "ClampedFreelookMouseYInputId": {
-    "Super": "AnalogInputId",
-    "FullSize": "0x38",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MovementInterferenceComponent": {
-    "Super": "AutoMoveInputComponent",
-    "FullSize": "0x1d0",
-    "InheritedSize": "0x160",
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "pad0x70_7DZG1[0x70]",
-        "Type": "char",
-        "Size": "0x70",
-        "Offset": "0x160"
-      }
-    ]
   },
   "AthenaCharacterBaseInputComponent": {
     "Super": "AutoMoveInputComponent",
@@ -83,9 +69,23 @@
     "ClassSize": "0x128",
     "Attributes": [
       {
-        "Name": "pad0x128_ZQQ1Q[0x128]",
+        "Name": "pad0x128_VXG6L[0x128]",
         "Type": "char",
         "Size": "0x128",
+        "Offset": "0x160"
+      }
+    ]
+  },
+  "MovementInterferenceComponent": {
+    "Super": "AutoMoveInputComponent",
+    "FullSize": "0x1d0",
+    "InheritedSize": "0x160",
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "pad0x70_DQKNA[0x70]",
+        "Type": "char",
+        "Size": "0x70",
         "Offset": "0x160"
       }
     ]
@@ -97,7 +97,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_J8RMT[0x8]",
+        "Name": "pad0x8_9UMGP[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x288"

@@ -1,30 +1,10 @@
 {
-  "ActorOfInterestServiceInterface": {
-    "Super": "Interface",
+  "ActorOfInterestId": {
+    "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "ActorOfInterestComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xd8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ActorOfInterestId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "pad0x18_3U2PW[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0xc0"
-      }
-    ]
   },
   "ActorOfInterestService": {
     "Super": "Actor",
@@ -33,7 +13,7 @@
     "ClassSize": "0x100",
     "Attributes": [
       {
-        "Name": "pad0x60_6WNUN[0x60]",
+        "Name": "pad0x60_5IZKZ[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0x3a0"
@@ -53,8 +33,28 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ActorOfInterestId": {
-    "Super": "Object",
+  "ActorOfInterestComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xd8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ActorOfInterestId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "pad0x18_35I8O[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0xc0"
+      }
+    ]
+  },
+  "ActorOfInterestServiceInterface": {
+    "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",

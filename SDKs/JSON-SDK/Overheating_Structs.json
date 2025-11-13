@@ -1,27 +1,4 @@
 {
-  "OverheatingDamageTableEntry": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Reason",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x3_B0NRR[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "TimeToAdd",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
   "HeatUpOverheatingTelemetryEvent": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -56,7 +33,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_8LRE9[0x7]",
+        "Name": "pad0x7_MFU09[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x29"
@@ -97,10 +74,33 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_32UK4[0x7]",
+        "Name": "pad0x7_ACBD0[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x29"
+      }
+    ]
+  },
+  "OverheatingDamageTableEntry": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Reason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_1DU00[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "TimeToAdd",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
       }
     ]
   },

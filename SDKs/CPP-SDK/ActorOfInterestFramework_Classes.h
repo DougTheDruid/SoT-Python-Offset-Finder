@@ -7,18 +7,9 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ActorOfInterestServiceInterface: public Interface
+class ActorOfInterestId: public Object
 {
 public:
-};
-
-
-// Size 0x20 (Full Size[0xd8] - InheritedSize[0xb8]
-class ActorOfInterestComponent: public ActorComponent
-{
-public:
-	class UClass*                                                ActorOfInterestId;                                 // 0xb8(0x8)
-	char                                                         pad0x18_3U2PW[0x18];                               // 0xc0(0x18)
 };
 
 
@@ -26,7 +17,7 @@ public:
 class ActorOfInterestService: public Actor
 {
 public:
-	char                                                         pad0x60_6WNUN[0x60];                               // 0x3a0(0x60)
+	char                                                         pad0x60_5IZKZ[0x60];                               // 0x3a0(0x60)
 	struct ObjectMessagingDispatcher                             EventDispatcher;                                   // 0x400(0xa0)
 };
 
@@ -38,8 +29,17 @@ public:
 };
 
 
+// Size 0x20 (Full Size[0xd8] - InheritedSize[0xb8]
+class ActorOfInterestComponent: public ActorComponent
+{
+public:
+	class UClass*                                                ActorOfInterestId;                                 // 0xb8(0x8)
+	char                                                         pad0x18_35I8O[0x18];                               // 0xc0(0x18)
+};
+
+
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ActorOfInterestId: public Object
+class ActorOfInterestServiceInterface: public Interface
 {
 public:
 };

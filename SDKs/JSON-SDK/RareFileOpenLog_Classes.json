@@ -1,4 +1,32 @@
 {
+  "AggregateOpenOrderLogsCommandlet": {
+    "Super": "Commandlet",
+    "FullSize": "0x88",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_WT7CF[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x80"
+      }
+    ]
+  },
+  "RareFileOpenFileHandler": {
+    "Super": "Class",
+    "FullSize": "0x208",
+    "InheritedSize": "0x1c0",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x48_WALLK[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x1c0"
+      }
+    ]
+  },
   "RareFileOpenLogSettings": {
     "Super": "DeveloperSettings",
     "FullSize": "0x90",
@@ -24,7 +52,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_K4405[0x7]",
+        "Name": "pad0x7_V9R2L[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
@@ -54,38 +82,10 @@
         "Offset": "0x78"
       },
       {
-        "Name": "pad0x14_NDOOZ[0x14]",
+        "Name": "pad0x14_DUMVJ[0x14]",
         "Type": "char",
         "Size": "0x14",
         "Offset": "0x7c"
-      }
-    ]
-  },
-  "RareFileOpenFileHandler": {
-    "Super": "Class",
-    "FullSize": "0x208",
-    "InheritedSize": "0x1c0",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "pad0x48_CLKXU[0x48]",
-        "Type": "char",
-        "Size": "0x48",
-        "Offset": "0x1c0"
-      }
-    ]
-  },
-  "AggregateOpenOrderLogsCommandlet": {
-    "Super": "Commandlet",
-    "FullSize": "0x88",
-    "InheritedSize": "0x80",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_QXEHB[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x80"
       }
     ]
   },

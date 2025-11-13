@@ -7,7 +7,14 @@
 class HarbourService: public Object
 {
 public:
-	char                                                         pad0x28_T1UVJ[0x28];                               // 0x28(0x28)
+	char                                                         pad0x28_6X2MG[0x28];                               // 0x28(0x28)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class HarbourServiceInterface: public Interface
+{
+public:
 };
 
 
@@ -22,16 +29,9 @@ public:
 class HarbourComponent: public SceneComponent
 {
 public:
-	char                                                         pad0x8_L48LN[0x8];                                 // 0x2d0(0x8)
+	char                                                         pad0x8_RDF4T[0x8];                                 // 0x2d0(0x8)
 	float                                                        HarbourRadiusInCentimetres;                        // 0x2d8(0x4)
-	char                                                         pad0x24_FVMXW[0x24];                               // 0x2dc(0x24)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class HarbourServiceInterface: public Interface
-{
-public:
+	char                                                         pad0x24_X28MU[0x24];                               // 0x2dc(0x24)
 };
 
 

@@ -6,27 +6,19 @@
 #include "RareEngine_Structs.h"
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class AssetReferencer: public DataAsset
-{
-public:
-	TArray<Class>                                                AssetsToReference;                                 // 0x28(0x10)
-};
-
-
 // Size 0x60 (Full Size[0xac0] - InheritedSize[0xa60]
 class RareGameEngine: public GameEngine
 {
 public:
-	char                                                         pad0x60_BVPF5[0x60];                               // 0xa60(0x60)
+	char                                                         pad0x60_RNZWG[0x60];                               // 0xa60(0x60)
 };
 
 
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class StallDetector: public Object
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class AudioHardwareDeviceService: public Object
 {
 public:
-	char                                                         pad0x28_6GOTJ[0x28];                               // 0x28(0x28)
+	char                                                         pad0x18_4P5G4[0x18];                               // 0x28(0x18)
 };
 
 
@@ -45,10 +37,11 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x498] - InheritedSize[0x498]
-class RareHUD: public HUD
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class StallDetector: public Object
 {
 public:
+	char                                                         pad0x28_XD1KC[0x28];                               // 0x28(0x28)
 };
 
 
@@ -59,11 +52,18 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class AudioHardwareDeviceService: public Object
+// Size 0x0 (Full Size[0x498] - InheritedSize[0x498]
+class RareHUD: public HUD
 {
 public:
-	char                                                         pad0x18_0FJCN[0x18];                               // 0x28(0x18)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class AssetReferencer: public DataAsset
+{
+public:
+	TArray<Class>                                                AssetsToReference;                                 // 0x28(0x10)
 };
 
 

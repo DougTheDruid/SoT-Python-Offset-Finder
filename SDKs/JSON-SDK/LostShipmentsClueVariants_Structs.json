@@ -1,12 +1,58 @@
 {
-  "ExistingNPCToPhasedNPC": {
-    "ClassSize": "0x40",
+  "TextEntryWithLayout": {
+    "ClassSize": "0x78",
     "Attributes": [
       {
-        "Name": "pad0x40_0QWYA[0x40]",
-        "Type": "char",
-        "Size": "0x40",
+        "Name": "TextEntry",
+        "Type": "struct FText",
+        "Size": "0x38",
         "Offset": "0x0"
+      },
+      {
+        "Name": "TextLayout",
+        "Type": "struct TreasureMapWidgetText",
+        "Size": "0x3c",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x4_HL0BH[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x74"
+      }
+    ]
+  },
+  "ClueDestinationToTextIndex": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "DestinationType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x20_2SXC4[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "ClueDestinationChoice": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Destination",
+        "Type": "class ClueDestinationDescriptor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x8_EJIBW[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -26,33 +72,10 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_WNJHJ[0x4]",
+        "Name": "pad0x4_64LQ1[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
-      }
-    ]
-  },
-  "TextEntryWithLayout": {
-    "ClassSize": "0x78",
-    "Attributes": [
-      {
-        "Name": "TextEntry",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TextLayout",
-        "Type": "struct TreasureMapWidgetText",
-        "Size": "0x3c",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x4_7IMP3[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x74"
       }
     ]
   },
@@ -73,37 +96,14 @@
       }
     ]
   },
-  "ClueDestinationChoice": {
-    "ClassSize": "0x10",
+  "ExistingNPCToPhasedNPC": {
+    "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "Destination",
-        "Type": "class ClueDestinationDescriptor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x8_6M1L9[0x8]",
+        "Name": "pad0x40_DS3WO[0x40]",
         "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "ClueDestinationToTextIndex": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "DestinationType",
-        "Type": "class UClass*",
-        "Size": "0x8",
+        "Size": "0x40",
         "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x20_FFRVP[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x8"
       }
     ]
   },

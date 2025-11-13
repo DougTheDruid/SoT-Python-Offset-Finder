@@ -1,4 +1,15 @@
 {
+  "ConsoleCommands": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_PQYL7[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "ProceduralFoliageInstance": {
     "ClassSize": "0x60",
     "Attributes": [
@@ -9,7 +20,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_SXPM6[0x4]",
+        "Name": "pad0x4_967AV[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -39,7 +50,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_OMLBS[0x4]",
+        "Name": "pad0x4_Q7J8R[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
@@ -51,21 +62,10 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x20_BIOZP[0x20]",
+        "Name": "pad0x20_S21O6[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x40"
-      }
-    ]
-  },
-  "ConsoleCommands": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_TX7VH[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
       }
     ]
   },
@@ -91,7 +91,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_VRNL0[0x7]",
+        "Name": "pad0x7_UP8CA[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"

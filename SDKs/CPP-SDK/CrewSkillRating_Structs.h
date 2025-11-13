@@ -11,12 +11,12 @@ public:
 };
 
 
-// Size 0x8
-struct ReportMatchConclusionResponse
+// Size 0x20
+struct ReportMatchConclusionRequest
 {
 public:
-	int                                                          WinningCrewNewSkillValue;                          // 0x0(0x4)
-	int                                                          LosingCrewNewSkillValue;                           // 0x4(0x4)
+	TArray<String>                                               WinningUserIds;                                    // 0x0(0x10)
+	TArray<String>                                               LosingUserIds;                                     // 0x10(0x10)
 };
 
 
@@ -28,12 +28,12 @@ public:
 };
 
 
-// Size 0x20
-struct ReportMatchConclusionRequest
+// Size 0x8
+struct ReportMatchConclusionResponse
 {
 public:
-	TArray<String>                                               WinningUserIds;                                    // 0x0(0x10)
-	TArray<String>                                               LosingUserIds;                                     // 0x10(0x10)
+	int                                                          WinningCrewNewSkillValue;                          // 0x0(0x4)
+	int                                                          LosingCrewNewSkillValue;                           // 0x4(0x4)
 };
 
 

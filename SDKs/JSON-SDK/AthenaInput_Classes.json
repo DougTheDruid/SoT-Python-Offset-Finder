@@ -1,18 +1,4 @@
 {
-  "AnalogInputId": {
-    "Super": "Object",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_E4VYD[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "NotificationInputId": {
     "Super": "Object",
     "FullSize": "0x38",
@@ -20,7 +6,21 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_7CSRZ[0x10]",
+        "Name": "pad0x10_W9GH2[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "AnalogInputId": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_TI1SD[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"

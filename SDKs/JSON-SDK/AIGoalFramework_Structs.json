@@ -44,7 +44,7 @@
         "Offset": "0x11"
       },
       {
-        "Name": "pad0x6_CEW1L[0x6]",
+        "Name": "pad0x6_MSC77[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x12"

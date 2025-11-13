@@ -14,18 +14,18 @@ public:
 
 
 // Size 0x10
-struct FaunaItemProxyStruct
-{
-public:
-	char                                                         pad0x10_E8K1S[0x10];                               // 0x0(0x10)
-};
-
-
-// Size 0x10
 struct FaunaItemDropperSpawnedItemTelemetryEvent
 {
 public:
 	struct FString                                               SpawnedItemName;                                   // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct FaunaItemProxyStruct
+{
+public:
+	char                                                         pad0x10_IFBZQ[0x10];                               // 0x0(0x10)
 };
 
 

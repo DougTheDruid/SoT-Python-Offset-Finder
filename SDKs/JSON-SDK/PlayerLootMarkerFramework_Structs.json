@@ -1,21 +1,4 @@
 {
-  "PlayerLootMarkerWorldEdgeBatchData": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "BatchId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Actors",
-        "Type": "TArray<uintptr_t>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "PlayerLootMarkerTelemetryEvent": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -34,6 +17,23 @@
       {
         "Name": "LootTypes",
         "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "PlayerLootMarkerWorldEdgeBatchData": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "BatchId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Actors",
+        "Type": "TArray<uintptr_t>",
         "Size": "0x10",
         "Offset": "0x10"
       }

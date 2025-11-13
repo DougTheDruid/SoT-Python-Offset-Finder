@@ -1,50 +1,23 @@
 {
-  "CoherentUIGTLiveView": {
-    "Super": "ActorComponent",
-    "FullSize": "0xe8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x30",
+  "CoherentUIGTJSPayload": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "LinkName",
+        "Name": "EventName",
         "Type": "struct FString",
         "Size": "0x10",
-        "Offset": "0xb8"
+        "Offset": "0x28"
       },
       {
-        "Name": "Texture",
-        "Type": "class TextureRenderTarget2D*",
+        "Name": "pad0x8_XAXCY[0x8]",
+        "Type": "char",
         "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "pad0x18_TZF7N[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0xd0"
+        "Offset": "0x38"
       }
     ]
-  },
-  "CoherentUIGTInputActor": {
-    "Super": "Actor",
-    "FullSize": "0x400",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "pad0x60_6LY6D[0x60]",
-        "Type": "char",
-        "Size": "0x60",
-        "Offset": "0x3a0"
-      }
-    ]
-  },
-  "CoherentUIGTBlueprintFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "CoherentUIGTBaseComponent": {
     "Super": "ActorComponent",
@@ -53,7 +26,7 @@
     "ClassSize": "0x248",
     "Attributes": [
       {
-        "Name": "pad0xa8_5DNL8[0xa8]",
+        "Name": "pad0xa8_ZVQEI[0xa8]",
         "Type": "char",
         "Size": "0xa8",
         "Offset": "0xb8"
@@ -143,12 +116,120 @@
         "Offset": "0x189"
       },
       {
-        "Name": "pad0x176_TPU3Q[0x176]",
+        "Name": "pad0x176_JPVC6[0x176]",
         "Type": "char",
         "Size": "0x176",
         "Offset": "0x18a"
       }
     ]
+  },
+  "CoherentUIGTInputActor": {
+    "Super": "Actor",
+    "FullSize": "0x400",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "pad0x60_4D6MZ[0x60]",
+        "Type": "char",
+        "Size": "0x60",
+        "Offset": "0x3a0"
+      }
+    ]
+  },
+  "CoherentUIGTJSEvent": {
+    "Super": "Object",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "pad0x80_2D0R1[0x80]",
+        "Type": "char",
+        "Size": "0x80",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "StructTypes",
+        "Type": "TArray<class Struct*>",
+        "Size": "0x10",
+        "Offset": "0xa8"
+      }
+    ]
+  },
+  "CoherentUIGTAssetReferencer": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CoherentUIGTSystem": {
+    "Super": "Actor",
+    "FullSize": "0x3f0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x50_6Z6HV[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x3a0"
+      }
+    ]
+  },
+  "CoherentUIGTGameHUD": {
+    "Super": "HUD",
+    "FullSize": "0x530",
+    "InheritedSize": "0x498",
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Name": "CoherentUIGTHUD",
+        "Type": "class CoherentUIGTHUD*",
+        "Size": "0x8",
+        "Offset": "0x498"
+      },
+      {
+        "Name": "pad0x90_SN38N[0x90]",
+        "Type": "char",
+        "Size": "0x90",
+        "Offset": "0x4a0"
+      }
+    ]
+  },
+  "CoherentUIGTLiveView": {
+    "Super": "ActorComponent",
+    "FullSize": "0xe8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "LinkName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "Texture",
+        "Type": "class TextureRenderTarget2D*",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "pad0x18_47W5E[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "CoherentUIGTBlueprintFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "CoherentUIGTSettings": {
     "Super": "Object",
@@ -163,7 +244,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x3_B39SJ[0x3]",
+        "Name": "pad0x3_2FIYM[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x29"
@@ -247,7 +328,7 @@
         "Offset": "0x3e"
       },
       {
-        "Name": "pad0x1_R5KHH[0x1]",
+        "Name": "pad0x1_RZ13Q[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x3f"
@@ -277,66 +358,12 @@
         "Offset": "0x61"
       },
       {
-        "Name": "pad0x6_5A2A8[0x6]",
+        "Name": "pad0x6_K21YB[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x62"
       }
     ]
-  },
-  "CoherentUIGTEventHelpers": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "CoherentUIGTJSPayload": {
-    "Super": "Object",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "EventName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x8_HBTLP[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "CoherentUIGTJSEvent": {
-    "Super": "Object",
-    "FullSize": "0xb8",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "pad0x80_W6A03[0x80]",
-        "Type": "char",
-        "Size": "0x80",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "StructTypes",
-        "Type": "TArray<class Struct*>",
-        "Size": "0x10",
-        "Offset": "0xa8"
-      }
-    ]
-  },
-  "CoherentUIGTAssetReferencer": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "CoherentUIGTWidget": {
     "Super": "Widget",
@@ -345,7 +372,7 @@
     "ClassSize": "0x2a0",
     "Attributes": [
       {
-        "Name": "pad0x20_VIWE6[0x20]",
+        "Name": "pad0x20_JEJH6[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x138"
@@ -387,7 +414,7 @@
         "Offset": "0x1fc"
       },
       {
-        "Name": "pad0x3_1F4EN[0x3]",
+        "Name": "pad0x3_ORGDZ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1fd"
@@ -441,7 +468,7 @@
         "Offset": "0x21c"
       },
       {
-        "Name": "pad0x1a3_CWCKQ[0x1a3]",
+        "Name": "pad0x1a3_ILXL7[0x1a3]",
         "Type": "char",
         "Size": "0x1a3",
         "Offset": "0x21d"
@@ -465,44 +492,63 @@
         "Offset": "0x3d4"
       },
       {
-        "Name": "pad0x3_9O0XL[0x3]",
+        "Name": "pad0x3_765C1[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x3d5"
       }
     ]
   },
-  "CoherentUIGTSystem": {
-    "Super": "Actor",
-    "FullSize": "0x3f0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x50",
+  "CoherentUIGTEventHelpers": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CoherentUIGTRenderToTextureLiveView": {
+    "Super": "CoherentUIGTLiveView",
+    "FullSize": "0xf0",
+    "InheritedSize": "0xe8",
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x50_MRO3B[0x50]",
+        "Name": "pad0x8_BRAXE[0x8]",
         "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x3a0"
+        "Size": "0x8",
+        "Offset": "0xe8"
       }
     ]
   },
-  "CoherentUIGTGameHUD": {
-    "Super": "HUD",
-    "FullSize": "0x530",
-    "InheritedSize": "0x498",
-    "ClassSize": "0x98",
+  "CoherentUIGTHUD": {
+    "Super": "CoherentUIGTBaseComponent",
+    "FullSize": "0x328",
+    "InheritedSize": "0x300",
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "CoherentUIGTHUD",
-        "Type": "class CoherentUIGTHUD*",
-        "Size": "0x8",
-        "Offset": "0x498"
+        "Name": "HUDMaterialName",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x300"
       },
       {
-        "Name": "pad0x90_YIPXS[0x90]",
+        "Name": "HUDMaterial",
+        "Type": "class Material*",
+        "Size": "0x8",
+        "Offset": "0x310"
+      },
+      {
+        "Name": "HUDMaterialInstance",
+        "Type": "class MaterialInstanceDynamic*",
+        "Size": "0x8",
+        "Offset": "0x318"
+      },
+      {
+        "Name": "pad0x8_JPY7C[0x8]",
         "Type": "char",
-        "Size": "0x90",
-        "Offset": "0x4a0"
+        "Size": "0x8",
+        "Offset": "0x320"
       }
     ]
   },
@@ -537,7 +583,7 @@
         "Offset": "0x318"
       },
       {
-        "Name": "pad0x3_2ZLZD[0x3]",
+        "Name": "pad0x3_7P24P[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x319"
@@ -555,56 +601,10 @@
         "Offset": "0x320"
       },
       {
-        "Name": "pad0x17_03R2Y[0x17]",
+        "Name": "pad0x17_EFWDY[0x17]",
         "Type": "char",
         "Size": "0x17",
         "Offset": "0x321"
-      }
-    ]
-  },
-  "CoherentUIGTRenderToTextureLiveView": {
-    "Super": "CoherentUIGTLiveView",
-    "FullSize": "0xf0",
-    "InheritedSize": "0xe8",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_V6UFS[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xe8"
-      }
-    ]
-  },
-  "CoherentUIGTHUD": {
-    "Super": "CoherentUIGTBaseComponent",
-    "FullSize": "0x328",
-    "InheritedSize": "0x300",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "HUDMaterialName",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x300"
-      },
-      {
-        "Name": "HUDMaterial",
-        "Type": "class Material*",
-        "Size": "0x8",
-        "Offset": "0x310"
-      },
-      {
-        "Name": "HUDMaterialInstance",
-        "Type": "class MaterialInstanceDynamic*",
-        "Size": "0x8",
-        "Offset": "0x318"
-      },
-      {
-        "Name": "pad0x8_17H1Z[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x320"
       }
     ]
   },

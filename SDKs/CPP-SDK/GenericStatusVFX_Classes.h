@@ -14,18 +14,10 @@ public:
 };
 
 
-// Size 0x60 (Full Size[0x118] - InheritedSize[0xb8]
-class GenericStatusVFXComponent: public ActorComponent
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class GenericStatusVFXInterface: public Interface
 {
 public:
-	char                                                         pad0x8_53B2D[0x8];                                 // 0xb8(0x8)
-	class ParticleSystemComponent*                               VFXComponent;                                      // 0xc0(0x8)
-	class World*                                                 CachedWorld;                                       // 0xc8(0x8)
-	char                                                         pad0x20_NSQ8S[0x20];                               // 0xd0(0x20)
-	class GenericStatusVFXDataAsset*                             VFXDataAsset;                                      // 0xf0(0x8)
-	char                                                         pad0x18_337IO[0x18];                               // 0xf8(0x18)
-	bool                                                         ContainsVFXSource;                                 // 0x110(0x1)
-	char                                                         pad0x7_6GDB0[0x7];                                 // 0x111(0x7)
 };
 
 
@@ -42,10 +34,18 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GenericStatusVFXInterface: public Interface
+// Size 0x60 (Full Size[0x118] - InheritedSize[0xb8]
+class GenericStatusVFXComponent: public ActorComponent
 {
 public:
+	char                                                         pad0x8_FT3MU[0x8];                                 // 0xb8(0x8)
+	class ParticleSystemComponent*                               VFXComponent;                                      // 0xc0(0x8)
+	class World*                                                 CachedWorld;                                       // 0xc8(0x8)
+	char                                                         pad0x20_D1ZX9[0x20];                               // 0xd0(0x20)
+	class GenericStatusVFXDataAsset*                             VFXDataAsset;                                      // 0xf0(0x8)
+	char                                                         pad0x18_VAS6Q[0x18];                               // 0xf8(0x18)
+	bool                                                         ContainsVFXSource;                                 // 0x110(0x1)
+	char                                                         pad0x7_I2I6S[0x7];                                 // 0x111(0x7)
 };
 
 

@@ -6,21 +6,6 @@
 #include "TrinketFramework_Structs.h"
 
 
-// Size 0x10 (Full Size[0x3b0] - InheritedSize[0x3a0]
-class TrinketReplacementActor: public Actor
-{
-public:
-	char                                                         pad0x10_5UY2W[0x10];                               // 0x3a0(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TrinketSetControlInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
 class TrinketSfxDataAsset: public DataAsset
 {
@@ -32,10 +17,11 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TrinketLoadoutViewInterface: public Interface
+// Size 0x10 (Full Size[0x3b0] - InheritedSize[0x3a0]
+class TrinketReplacementActor: public Actor
 {
 public:
+	char                                                         pad0x10_NQ27O[0x10];                               // 0x3a0(0x10)
 };
 
 
@@ -46,8 +32,8 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x88] - InheritedSize[0x88]
-class TrinketCategory: public CategoryBase
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TrinketLoadoutViewInterface: public Interface
 {
 public:
 };
@@ -71,6 +57,13 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TrinketSetControlInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class TrinketLoadoutControlInterface: public Interface
 {
 public:
@@ -78,7 +71,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x88] - InheritedSize[0x88]
-class InvalidTrinketCategory: public TrinketCategory
+class TrinketCategory: public CategoryBase
 {
 public:
 };
@@ -88,7 +81,14 @@ public:
 class SameActorTrinketLoadoutFinderPolicy: public TrinketLoadoutFinderPolicyBase
 {
 public:
-	char                                                         pad0x10_CN90G[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_YLHQC[0x10];                               // 0x28(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x88] - InheritedSize[0x88]
+class InvalidTrinketCategory: public TrinketCategory
+{
+public:
 };
 
 

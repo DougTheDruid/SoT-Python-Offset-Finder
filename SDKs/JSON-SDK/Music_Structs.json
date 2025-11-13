@@ -1,12 +1,18 @@
 {
-  "MusicZoneDestroyedEvent": {
-    "ClassSize": "0x10",
+  "MusicZoneEmitterRTPC": {
+    "ClassSize": "0xc",
     "Attributes": [
       {
-        "Name": "pad0x10_DTJR1[0x10]",
-        "Type": "char",
-        "Size": "0x10",
+        "Name": "RTPC",
+        "Type": "struct FName",
+        "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "Value",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
       }
     ]
   },
@@ -27,31 +33,25 @@
       }
     ]
   },
-  "MusicZoneSpawnedEvent": {
+  "MusicZoneDestroyedEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_BUV1M[0x10]",
+        "Name": "pad0x10_N1EMX[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x0"
       }
     ]
   },
-  "MusicZoneEmitterRTPC": {
-    "ClassSize": "0xc",
+  "MusicZoneSpawnedEvent": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "RTPC",
-        "Type": "struct FName",
-        "Size": "0x8",
+        "Name": "pad0x10_ZLQOR[0x10]",
+        "Type": "char",
+        "Size": "0x10",
         "Offset": "0x0"
-      },
-      {
-        "Name": "Value",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
       }
     ]
   },

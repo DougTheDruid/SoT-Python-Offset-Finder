@@ -6,18 +6,11 @@
 #include "NavalBattle_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class NavalBattleServiceInterface: public Interface
-{
-public:
-};
-
-
-// Size 0xd0 (Full Size[0x470] - InheritedSize[0x3a0]
+// Size 0x100 (Full Size[0x4a0] - InheritedSize[0x3a0]
 class NavalBattleService: public Actor
 {
 public:
-	char                                                         pad0xd0_ICOPL[0xd0];                               // 0x3a0(0xd0)
+	char                                                         pad0x100_JWT9L[0x100];                             // 0x3a0(0x100)
 };
 
 
@@ -26,9 +19,9 @@ class NavalBattleServiceParamsDataAsset: public DataAsset
 {
 public:
 	float                                                        BattleRange;                                       // 0x28(0x4)
-	float                                                        BattleTime;                                        // 0x2c(0x4)
-	int                                                          NumberOfSinksToInitiateMigration;                  // 0x30(0x4)
-	char                                                         pad0x4_5ZISP[0x4];                                 // 0x34(0x4)
+	float                                                        CombatTime;                                        // 0x2c(0x4)
+	float                                                        SinkTime;                                          // 0x30(0x4)
+	int                                                          NumberOfSinksToInitiateMigration;                  // 0x34(0x4)
 };
 
 

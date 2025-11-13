@@ -6,6 +6,20 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "MostMemoryIntensiveObjectsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MostMemoryIntensiveObjects",
+        "Type": "TArray<struct MMICategoryData>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "MostMemoryIntensiveObjectsRuntimeSettings": {
     "Super": "DeveloperSettings",
     "FullSize": "0x68",
@@ -29,20 +43,6 @@
         "Type": "TArray<Class>",
         "Size": "0x10",
         "Offset": "0x58"
-      }
-    ]
-  },
-  "MostMemoryIntensiveObjectsDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MostMemoryIntensiveObjects",
-        "Type": "TArray<struct MMICategoryData>",
-        "Size": "0x10",
-        "Offset": "0x28"
       }
     ]
   },

@@ -6,23 +6,147 @@
 #include "Water_Structs.h"
 
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class WaterPlaneExclusionInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class WaterPlaneRetrievalProviderInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x80 (Full Size[0x420] - InheritedSize[0x3a0]
+class FFTWaterService: public Actor
+{
+public:
+	char                                                         pad0x78_YY1NC[0x78];                               // 0x3a0(0x78)
+	double                                                       ReplicatedServerCreationTime;                      // 0x418(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class WaterPlaneInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class WaterBuoyancyFunctionLibrary: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class WaterProperties: public Object
+{
+public:
+	TArray<struct WaterInformation>                              WaterInfo;                                         // 0x28(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class UndergroundSeaWaterId: public WaterId
+{
+public:
+};
+
+
+// Size 0x20 (Full Size[0x5f0] - InheritedSize[0x5d0]
+class WaterInteractionComponent: public BoxComponent
+{
+public:
+	char                                                         pad0x14_AZCO1[0x14];                               // 0x5d0(0x14)
+	int                                                          ServerCorrectedWaterExclusionZoneCount;            // 0x5e4(0x4)
+	char                                                         pad0x8_AQLN0[0x8];                                 // 0x5e8(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x5c0] - InheritedSize[0x5b0]
+class FlatWaterPlaneComponent: public BaseWaterComponent
+{
+public:
+	char                                                         pad0x10_A3AEQ[0x10];                               // 0x5b0(0x10)
+};
+
+
+// Size 0x48 (Full Size[0x430] - InheritedSize[0x3e8]
+class AthenaFFTWater: public FFTWater
+{
+public:
+	char                                                         pad0x48_S54HH[0x48];                               // 0x3e8(0x48)
+};
+
+
+// Size 0x58 (Full Size[0x110] - InheritedSize[0xb8]
+class SplashProbeVFXComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x28_KA7B1[0x28];                               // 0xb8(0x28)
+	class SplashProbeDataAsset*                                  Probes;                                            // 0xe0(0x8)
+	class SplashProbeDataAsset*                                  ProbesInstance;                                    // 0xe8(0x8)
+	struct ActorComponentSelector                                AttachProbesToOwner;                               // 0xf0(0x10)
+	class SceneComponent*                                        AttachProbesToComponent;                           // 0x100(0x8)
+	bool                                                         ProbeEnabled;                                      // 0x108(0x1)
+	char                                                         pad0x7_24FDV[0x7];                                 // 0x109(0x7)
+};
+
+
 // Size 0x8 (Full Size[0x3b0] - InheritedSize[0x3a8]
 class AthenaWaterEmissionVolume: public WaterEmissionVolume
 {
 public:
-	char                                                         pad0x8_9JF25[0x8];                                 // 0x3a8(0x8)
+	char                                                         pad0x8_BIFID[0x8];                                 // 0x3a8(0x8)
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class WaterEmissionVolumeService: public Object
+{
+public:
+	char                                                         pad0x20_EASF0[0x20];                               // 0x28(0x20)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class SplashProbeDataAsset: public DataAsset
+{
+public:
+	TArray<struct SplashProbe>                                   Probes;                                            // 0x28(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class FFTWaterInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class WaterSplashProbeFunctionLibrary: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
+// Size 0x18 (Full Size[0xd0] - InheritedSize[0xb8]
+class WaterPlaneExclusionComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_YQV0S[0x8];                                 // 0xb8(0x8)
+	struct ActorComponentSelector                                UseSpecificComponentForOverlaps;                   // 0xc0(0x10)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class WaterInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class NoSwimWaterId: public WaterId
 {
 public:
 };
@@ -36,51 +160,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WaterBuoyancySampleMovementFunctionLibrary: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
-// Size 0x18 (Full Size[0xd0] - InheritedSize[0xb8]
-class WaterPlaneExclusionComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_X5KES[0x8];                                 // 0xb8(0x8)
-	struct ActorComponentSelector                                UseSpecificComponentForOverlaps;                   // 0xc0(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WaterVolumeInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class WaterEmissionVolumeInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class UndergroundSeaWaterId: public WaterId
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WaterSplashProbeFunctionLibrary: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class FFTWaterInterface: public Interface
 {
 public:
 };
@@ -93,114 +173,10 @@ public:
 };
 
 
-// Size 0x48 (Full Size[0x430] - InheritedSize[0x3e8]
-class AthenaFFTWater: public FFTWater
-{
-public:
-	char                                                         pad0x48_QSMMN[0x48];                               // 0x3e8(0x48)
-};
-
-
-// Size 0x20 (Full Size[0x5f0] - InheritedSize[0x5d0]
-class WaterInteractionComponent: public BoxComponent
-{
-public:
-	char                                                         pad0x14_M6AMK[0x14];                               // 0x5d0(0x14)
-	int                                                          ServerCorrectedWaterExclusionZoneCount;            // 0x5e4(0x4)
-	char                                                         pad0x8_GTBO6[0x8];                                 // 0x5e8(0x8)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WaterBuoyancyFunctionLibrary: public BlueprintFunctionLibrary
+class NoSwimWaterId: public WaterId
 {
 public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WaterPlaneRetrievalProviderInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WaterPlaneExclusionInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x80 (Full Size[0x420] - InheritedSize[0x3a0]
-class FFTWaterService: public Actor
-{
-public:
-	char                                                         pad0x78_QPL5W[0x78];                               // 0x3a0(0x78)
-	double                                                       ReplicatedServerCreationTime;                      // 0x418(0x8)
-};
-
-
-// Size 0x90 (Full Size[0x148] - InheritedSize[0xb8]
-class WaterSpoutVFXComponent: public ActorComponent
-{
-public:
-	TArray<struct WaterSpout>                                    WaterSpouts;                                       // 0xb8(0x10)
-	struct Vector                                                SplashEffectPointBottomZ;                          // 0xc8(0xc)
-	char                                                         pad0x4_PEZ8O[0x4];                                 // 0xd4(0x4)
-	class Object*                                                SpoutParticleSystem;                               // 0xd8(0x8)
-	class Object*                                                SplashParticleSystem;                              // 0xe0(0x8)
-	float                                                        WaterSplashDelayMin;                               // 0xe8(0x4)
-	float                                                        WaterSplashDelayMax;                               // 0xec(0x4)
-	float                                                        SplashEffectVFXOffset;                             // 0xf0(0x4)
-	float                                                        SplashSweepRadius;                                 // 0xf4(0x4)
-	bool                                                         ShouldSpawnKillPlaneAtSplash;                      // 0xf8(0x1)
-	char                                                         pad0x7_GFJAS[0x7];                                 // 0xf9(0x7)
-	class StaticMesh*                                            SplashKillPlaneMesh;                               // 0x100(0x8)
-	struct Vector                                                SplashKillPlaneScale;                              // 0x108(0xc)
-	char                                                         pad0x4_3R5I3[0x4];                                 // 0x114(0x4)
-	class StaticMeshComponent*                                   SplashKillPlane;                                   // 0x118(0x8)
-	TArray<struct WaterSpout>                                    ActiveWaterSpouts;                                 // 0x120(0x10)
-	char                                                         pad0x18_BUFXZ[0x18];                               // 0x130(0x18)
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class WaterEmissionVolumeService: public Object
-{
-public:
-	char                                                         pad0x20_I1BD2[0x20];                               // 0x28(0x20)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WaterPlaneInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class MockWaterInterface: public Object
-{
-public:
-	char                                                         pad0x20_ZRDOI[0x20];                               // 0x28(0x20)
-};
-
-
-// Size 0x10 (Full Size[0x5c0] - InheritedSize[0x5b0]
-class FlatWaterPlaneComponent: public BaseWaterComponent
-{
-public:
-	char                                                         pad0x10_ZWZRW[0x10];                               // 0x5b0(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class WaterProperties: public Object
-{
-public:
-	TArray<struct WaterInformation>                              WaterInfo;                                         // 0x28(0x10)
 };
 
 
@@ -211,25 +187,49 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class SplashProbeDataAsset: public DataAsset
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class WaterBuoyancySampleMovementFunctionLibrary: public BlueprintFunctionLibrary
 {
 public:
-	TArray<struct SplashProbe>                                   Probes;                                            // 0x28(0x10)
 };
 
 
-// Size 0x58 (Full Size[0x110] - InheritedSize[0xb8]
-class SplashProbeVFXComponent: public ActorComponent
+// Size 0x90 (Full Size[0x148] - InheritedSize[0xb8]
+class WaterSpoutVFXComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x28_5X0IR[0x28];                               // 0xb8(0x28)
-	class SplashProbeDataAsset*                                  Probes;                                            // 0xe0(0x8)
-	class SplashProbeDataAsset*                                  ProbesInstance;                                    // 0xe8(0x8)
-	struct ActorComponentSelector                                AttachProbesToOwner;                               // 0xf0(0x10)
-	class SceneComponent*                                        AttachProbesToComponent;                           // 0x100(0x8)
-	bool                                                         ProbeEnabled;                                      // 0x108(0x1)
-	char                                                         pad0x7_P7XXQ[0x7];                                 // 0x109(0x7)
+	TArray<struct WaterSpout>                                    WaterSpouts;                                       // 0xb8(0x10)
+	struct Vector                                                SplashEffectPointBottomZ;                          // 0xc8(0xc)
+	char                                                         pad0x4_AWVHM[0x4];                                 // 0xd4(0x4)
+	class Object*                                                SpoutParticleSystem;                               // 0xd8(0x8)
+	class Object*                                                SplashParticleSystem;                              // 0xe0(0x8)
+	float                                                        WaterSplashDelayMin;                               // 0xe8(0x4)
+	float                                                        WaterSplashDelayMax;                               // 0xec(0x4)
+	float                                                        SplashEffectVFXOffset;                             // 0xf0(0x4)
+	float                                                        SplashSweepRadius;                                 // 0xf4(0x4)
+	bool                                                         ShouldSpawnKillPlaneAtSplash;                      // 0xf8(0x1)
+	char                                                         pad0x7_3AGYC[0x7];                                 // 0xf9(0x7)
+	class StaticMesh*                                            SplashKillPlaneMesh;                               // 0x100(0x8)
+	struct Vector                                                SplashKillPlaneScale;                              // 0x108(0xc)
+	char                                                         pad0x4_K9BG4[0x4];                                 // 0x114(0x4)
+	class StaticMeshComponent*                                   SplashKillPlane;                                   // 0x118(0x8)
+	TArray<struct WaterSpout>                                    ActiveWaterSpouts;                                 // 0x120(0x10)
+	char                                                         pad0x18_XBBSJ[0x18];                               // 0x130(0x18)
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class MockWaterInterface: public Object
+{
+public:
+	char                                                         pad0x20_K9DLG[0x20];                               // 0x28(0x20)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class WaterVolumeInterface: public Interface
+{
+public:
 };
 
 

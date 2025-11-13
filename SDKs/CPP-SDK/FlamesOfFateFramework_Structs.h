@@ -19,26 +19,7 @@ public:
 	class Character*                                             PlayerCharacter;                                   // 0x0(0x8)
 	class Object*                                                Source;                                            // 0x8(0x8)
 	char                                                         FlameOfFateType;                                   // 0x10(0x1)
-	char                                                         pad0x7_DPA2J[0x7];                                 // 0x11(0x7)
-};
-
-
-// Size 0x10
-struct SetFlameOfFateEvent
-{
-public:
-	char                                                         FlameOfFateType;                                   // 0x0(0x1)
-	char                                                         pad0x7_F8MP8[0x7];                                 // 0x1(0x7)
-	class Object*                                                Source;                                            // 0x8(0x8)
-};
-
-
-// Size 0x18
-struct CycleFlameOfFateSequence
-{
-public:
-	TArray<char>                                                 FlameTypeSequence;                                 // 0x0(0x10)
-	char                                                         pad0x8_MAMH6[0x8];                                 // 0x10(0x8)
+	char                                                         pad0x7_FDR80[0x7];                                 // 0x11(0x7)
 };
 
 
@@ -47,7 +28,7 @@ struct SetShipFlameOfFateEvent
 {
 public:
 	char                                                         FlameOfFateType;                                   // 0x0(0x1)
-	char                                                         pad0x7_HO06K[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_29W10[0x7];                                 // 0x1(0x7)
 	class Object*                                                Source;                                            // 0x8(0x8)
 	class Object*                                                Ship;                                              // 0x10(0x8)
 };
@@ -60,7 +41,26 @@ public:
 	class Character*                                             PlayerCharacter;                                   // 0x0(0x8)
 	class Object*                                                Target;                                            // 0x8(0x8)
 	char                                                         FlameOfFateType;                                   // 0x10(0x1)
-	char                                                         pad0x7_IPJQZ[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_NCCGD[0x7];                                 // 0x11(0x7)
+};
+
+
+// Size 0x10
+struct SetFlameOfFateEvent
+{
+public:
+	char                                                         FlameOfFateType;                                   // 0x0(0x1)
+	char                                                         pad0x7_BBSW6[0x7];                                 // 0x1(0x7)
+	class Object*                                                Source;                                            // 0x8(0x8)
+};
+
+
+// Size 0x18
+struct CycleFlameOfFateSequence
+{
+public:
+	TArray<char>                                                 FlameTypeSequence;                                 // 0x0(0x10)
+	char                                                         pad0x8_A3HGK[0x8];                                 // 0x10(0x8)
 };
 
 

@@ -13,22 +13,22 @@ public:
 };
 
 
-// Size 0xa0 (Full Size[0xc8] - InheritedSize[0x28]
-class NetworkRegionService: public Object
-{
-public:
-	char                                                         pad0x90_E4A2F[0x90];                               // 0x28(0x90)
-	TArray<class PlayerController*>                              PlayersThatNeedToBeTicked;                         // 0xb8(0x10)
-};
-
-
 // Size 0x40 (Full Size[0x3e0] - InheritedSize[0x3a0]
 class RegionAssetCacheActor: public Actor
 {
 public:
 	TArray<struct RegionAssetsList>                              RegionData;                                        // 0x3a0(0x10)
 	TArray<class Object*>                                        LoadedAssets;                                      // 0x3b0(0x10)
-	char                                                         pad0x20_QGF9I[0x20];                               // 0x3c0(0x20)
+	char                                                         pad0x20_B5IPG[0x20];                               // 0x3c0(0x20)
+};
+
+
+// Size 0xa0 (Full Size[0xc8] - InheritedSize[0x28]
+class NetworkRegionService: public Object
+{
+public:
+	char                                                         pad0x90_9M3F6[0x90];                               // 0x28(0x90)
+	TArray<class PlayerController*>                              PlayersThatNeedToBeTicked;                         // 0xb8(0x10)
 };
 
 

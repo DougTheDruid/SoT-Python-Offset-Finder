@@ -12,14 +12,6 @@ public:
 };
 
 
-// Size 0x78
-struct GameplayTagNode
-{
-public:
-	char                                                         pad0x78_LPN33[0x78];                               // 0x0(0x78)
-};
-
-
 // Size 0x8
 struct GameplayTag
 {
@@ -28,11 +20,19 @@ public:
 };
 
 
+// Size 0x78
+struct GameplayTagNode
+{
+public:
+	char                                                         pad0x78_M5I6G[0x78];                               // 0x0(0x78)
+};
+
+
 // Size 0x28
 struct GameplayTagContainer
 {
 public:
-	char                                                         pad0x8_DF380[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_JBVG2[0x8];                                 // 0x0(0x8)
 	TArray<struct GameplayTag>                                   GameplayTags;                                      // 0x8(0x10)
 	TArray<struct Name>                                          Tags;                                              // 0x18(0x10)
 };
@@ -43,7 +43,7 @@ struct GameplayTagQuery
 {
 public:
 	int                                                          TokenStreamVersion;                                // 0x0(0x4)
-	char                                                         pad0x4_G3TXH[0x4];                                 // 0x4(0x4)
+	char                                                         pad0x4_S58FI[0x4];                                 // 0x4(0x4)
 	TArray<struct GameplayTag>                                   TagDictionary;                                     // 0x8(0x10)
 	TArray<char>                                                 QueryTokenStream;                                  // 0x18(0x10)
 	struct FString                                               UserDescription;                                   // 0x28(0x10)

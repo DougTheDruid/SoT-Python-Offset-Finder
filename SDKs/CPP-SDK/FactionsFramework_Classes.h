@@ -6,15 +6,15 @@
 #include "FactionsFramework_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class FactionCurseInterface: public Interface
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
+class IsTargetWearingGhostCurseStatCondition: public TargetedStatCondition
 {
 public:
 };
 
 
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class IsTargetWearingSkeletonCurseStatCondition: public TargetedStatCondition
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class FactionCurseInterface: public Interface
 {
 public:
 };
@@ -28,7 +28,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class IsTargetWearingGhostCurseStatCondition: public TargetedStatCondition
+class IsTargetWearingSkeletonCurseStatCondition: public TargetedStatCondition
 {
 public:
 };

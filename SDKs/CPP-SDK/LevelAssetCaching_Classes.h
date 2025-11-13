@@ -6,6 +6,40 @@
 #include "LevelAssetCaching_Structs.h"
 
 
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class RegionLookupSeaId: public Object
+{
+public:
+	char                                                         pad0x20_VJXYK[0x20];                               // 0x28(0x20)
+};
+
+
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
+class LevelAssetCachingService: public Object
+{
+public:
+	char                                                         pad0x18_RDXBQ[0x18];                               // 0x28(0x18)
+	struct FName                                                 CurrentRegion;                                     // 0x40(0x8)
+	char                                                         pad0x28_76NKJ[0x28];                               // 0x48(0x28)
+};
+
+
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
+class RegionalAssetListSetupDataAsset: public DataAsset
+{
+public:
+	char                                                         pad0x50_KI1DR[0x50];                               // 0x28(0x50)
+};
+
+
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
+class RegionalAssetListWorldSetupDataAsset: public DataAsset
+{
+public:
+	char                                                         pad0x50_KNSLH[0x50];                               // 0x28(0x50)
+};
+
+
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class RegionalAssetListDataAsset: public DataAsset
 {
@@ -14,13 +48,23 @@ public:
 };
 
 
+// Size 0x88 (Full Size[0xb0] - InheritedSize[0x28]
+class RegionLookupGeneratedGrid: public Object
+{
+public:
+	char                                                         pad0x8_32UAV[0x8];                                 // 0x28(0x8)
+	struct WorldRegionSetup                                      WorldSetup;                                        // 0x30(0x28)
+	char                                                         pad0x58_EP5ZS[0x58];                               // 0x58(0x58)
+};
+
+
 // Size 0xb0 (Full Size[0xd8] - InheritedSize[0x28]
 class RegionalAssetCache: public Object
 {
 public:
-	char                                                         pad0x10_8WNE2[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_CFSHC[0x10];                               // 0x28(0x10)
 	class RegionalAssetListDataAsset*                            CurrentListAsset;                                  // 0x38(0x8)
-	char                                                         pad0x98_JUUKW[0x98];                               // 0x40(0x98)
+	char                                                         pad0x98_8VAD4[0x98];                               // 0x40(0x98)
 };
 
 
@@ -28,50 +72,6 @@ public:
 class RegionalAssetCacheInterface: public Interface
 {
 public:
-};
-
-
-// Size 0x88 (Full Size[0xb0] - InheritedSize[0x28]
-class RegionLookupGeneratedGrid: public Object
-{
-public:
-	char                                                         pad0x8_MC844[0x8];                                 // 0x28(0x8)
-	struct WorldRegionSetup                                      WorldSetup;                                        // 0x30(0x28)
-	char                                                         pad0x58_JHT0X[0x58];                               // 0x58(0x58)
-};
-
-
-// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
-class RegionalAssetListWorldSetupDataAsset: public DataAsset
-{
-public:
-	char                                                         pad0x50_SESE5[0x50];                               // 0x28(0x50)
-};
-
-
-// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
-class LevelAssetCachingService: public Object
-{
-public:
-	char                                                         pad0x18_PC02G[0x18];                               // 0x28(0x18)
-	struct FName                                                 CurrentRegion;                                     // 0x40(0x8)
-	char                                                         pad0x28_8MHAQ[0x28];                               // 0x48(0x28)
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class RegionLookupSeaId: public Object
-{
-public:
-	char                                                         pad0x20_G8NL4[0x20];                               // 0x28(0x20)
-};
-
-
-// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
-class RegionalAssetListSetupDataAsset: public DataAsset
-{
-public:
-	char                                                         pad0x50_ELYIC[0x50];                               // 0x28(0x50)
 };
 
 

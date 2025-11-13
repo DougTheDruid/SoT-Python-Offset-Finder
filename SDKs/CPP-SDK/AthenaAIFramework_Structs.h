@@ -7,7 +7,7 @@
 struct AIControllerParamsUpdatedEvent
 {
 public:
-	char                                                         pad0x8_49H18[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_Y40VF[0x8];                                 // 0x0(0x8)
 };
 
 

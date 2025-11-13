@@ -21,25 +21,6 @@ public:
 };
 
 
-// Size 0x20
-struct BoneCallerUsageTelemetry
-{
-public:
-	struct Vector                                                Location;                                          // 0x0(0xc)
-	char                                                         pad0x4_XF7BM[0x4];                                 // 0xc(0x4)
-	struct FString                                               Region;                                            // 0x10(0x10)
-};
-
-
-// Size 0x38
-struct EventOnBoneCallerDidKillEvent
-{
-public:
-	class Actor*                                                 KilledCharacter;                                   // 0x0(0x8)
-	struct DamageInstance                                        DamageInstance;                                    // 0x8(0x30)
-};
-
-
 // Size 0x10
 struct EventOnBoneCallerAIKilled
 {
@@ -49,14 +30,13 @@ public:
 };
 
 
-// Size 0x28
-struct EventOnBoneCallerFromTriggerEvent
+// Size 0x18
+struct BoneCallerPawnKillTelemetry
 {
 public:
-	class Actor*                                                 TrackedActor;                                      // 0x0(0x8)
-	class Actor*                                                 CrewShip;                                          // 0x8(0x8)
-	char                                                         pad0x10_PUP33[0x10];                               // 0x10(0x10)
-	class Object*                                                BoneCallerSpawnId;                                 // 0x20(0x8)
+	struct FString                                               KilledPawnName;                                    // 0x0(0x10)
+	bool                                                         WasSpawnedByBoneCaller;                            // 0x10(0x1)
+	char                                                         pad0x7_3JYOD[0x7];                                 // 0x11(0x7)
 };
 
 
@@ -64,17 +44,7 @@ public:
 struct PlayerBoneCallerData
 {
 public:
-	char                                                         pad0x20_62AAA[0x20];                               // 0x0(0x20)
-};
-
-
-// Size 0x18
-struct BoneCallerPawnKillTelemetry
-{
-public:
-	struct FString                                               KilledPawnName;                                    // 0x0(0x10)
-	bool                                                         WasSpawnedByBoneCaller;                            // 0x10(0x1)
-	char                                                         pad0x7_IZ3OC[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x20_56V4Z[0x20];                               // 0x0(0x20)
 };
 
 
@@ -90,12 +60,42 @@ public:
 
 
 // Size 0x28
+struct EventOnBoneCallerFromTriggerEvent
+{
+public:
+	class Actor*                                                 TrackedActor;                                      // 0x0(0x8)
+	class Actor*                                                 CrewShip;                                          // 0x8(0x8)
+	char                                                         pad0x10_GKH3U[0x10];                               // 0x10(0x10)
+	class Object*                                                BoneCallerSpawnId;                                 // 0x20(0x8)
+};
+
+
+// Size 0x20
+struct BoneCallerUsageTelemetry
+{
+public:
+	struct Vector                                                Location;                                          // 0x0(0xc)
+	char                                                         pad0x4_2106W[0x4];                                 // 0xc(0x4)
+	struct FString                                               Region;                                            // 0x10(0x10)
+};
+
+
+// Size 0x38
+struct EventOnBoneCallerDidKillEvent
+{
+public:
+	class Actor*                                                 KilledCharacter;                                   // 0x0(0x8)
+	struct DamageInstance                                        DamageInstance;                                    // 0x8(0x30)
+};
+
+
+// Size 0x28
 struct EventOnBoneCallerExploded
 {
 public:
 	class Actor*                                                 RootInstigator;                                    // 0x0(0x8)
 	class Actor*                                                 HitActor;                                          // 0x8(0x8)
-	char                                                         pad0x10_4SAOQ[0x10];                               // 0x10(0x10)
+	char                                                         pad0x10_Z0QH4[0x10];                               // 0x10(0x10)
 	class Object*                                                BoneCallerSpawnId;                                 // 0x20(0x8)
 };
 

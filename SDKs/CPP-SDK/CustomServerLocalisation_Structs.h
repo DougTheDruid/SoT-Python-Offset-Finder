@@ -7,16 +7,7 @@
 struct CustomServerLocalisationModel
 {
 public:
-	char                                                         pad0x50_MIRFJ[0x50];                               // 0x0(0x50)
-};
-
-
-// Size 0x20
-struct CustomServerClientData
-{
-public:
-	struct FString                                               Key;                                               // 0x0(0x10)
-	char                                                         pad0x10_JOZ71[0x10];                               // 0x10(0x10)
+	char                                                         pad0x50_5WK1A[0x50];                               // 0x0(0x50)
 };
 
 
@@ -26,6 +17,15 @@ struct LocPairData
 public:
 	struct FString                                               Locale;                                            // 0x0(0x10)
 	struct FString                                               Value;                                             // 0x10(0x10)
+};
+
+
+// Size 0x20
+struct CustomServerClientData
+{
+public:
+	struct FString                                               Key;                                               // 0x0(0x10)
+	char                                                         pad0x10_P7TBN[0x10];                               // 0x10(0x10)
 };
 
 

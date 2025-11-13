@@ -6,23 +6,12 @@
 #include "BoneCaller_Structs.h"
 
 
-// Size 0x410 (Full Size[0x7b0] - InheritedSize[0x3a0]
-class BoneCallerService: public Actor
+// Size 0x18 (Full Size[0xd0] - InheritedSize[0xb8]
+class BoneCallerSpawnComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x398_BBIB9[0x398];                             // 0x3a0(0x398)
-	class BoneCallerServiceParams*                               ServiceParams;                                     // 0x738(0x8)
-	char                                                         pad0x70_MRMDR[0x70];                               // 0x740(0x70)
-};
-
-
-// Size 0x90 (Full Size[0x7c8] - InheritedSize[0x738]
-class BoneCallerCannonProjectile: public CannonProjectile
-{
-public:
-	class UClass*                                                BoneCallerSpawnId;                                 // 0x738(0x8)
-	class UClass*                                                FiredFromReapersTributeShipBoneCallerSpawnId;      // 0x740(0x8)
-	char                                                         pad0x80_AE7O3[0x80];                               // 0x748(0x80)
+	class UClass*                                                BoneCallerSpawnId;                                 // 0xb8(0x8)
+	TArray<struct BoneCallerSpawnIdShipSizeOverride>             BoneCallerSpawnIdShipSizeOverride;                 // 0xc0(0x10)
 };
 
 
@@ -33,22 +22,13 @@ public:
 };
 
 
-// Size 0x70 (Full Size[0x128] - InheritedSize[0xb8]
-class BoneCallerOwnershipComponent: public ActorComponent
+// Size 0x90 (Full Size[0x7c8] - InheritedSize[0x738]
+class BoneCallerCannonProjectile: public CannonProjectile
 {
 public:
-	char                                                         pad0x8_2UDD4[0x8];                                 // 0xb8(0x8)
-	struct Guid                                                  OwningCrewID;                                      // 0xc0(0x10)
-	char                                                         pad0x58_894IZ[0x58];                               // 0xd0(0x58)
-};
-
-
-// Size 0x18 (Full Size[0xd0] - InheritedSize[0xb8]
-class BoneCallerSpawnComponent: public ActorComponent
-{
-public:
-	class UClass*                                                BoneCallerSpawnId;                                 // 0xb8(0x8)
-	TArray<struct BoneCallerSpawnIdShipSizeOverride>             BoneCallerSpawnIdShipSizeOverride;                 // 0xc0(0x10)
+	class UClass*                                                BoneCallerSpawnId;                                 // 0x738(0x8)
+	class UClass*                                                FiredFromReapersTributeShipBoneCallerSpawnId;      // 0x740(0x8)
+	char                                                         pad0x80_HS716[0x80];                               // 0x748(0x80)
 };
 
 
@@ -59,7 +39,27 @@ public:
 	TArray<struct BoneCallerImpactIdToSpawner>                   IDToSpawnerData;                                   // 0x28(0x10)
 	class NamedAIDataAsset*                                      NamedAIDataAsset;                                  // 0x38(0x8)
 	char                                                         ReplacedDeathType;                                 // 0x40(0x1)
-	char                                                         pad0x7_P7N55[0x7];                                 // 0x41(0x7)
+	char                                                         pad0x7_Z2FY6[0x7];                                 // 0x41(0x7)
+};
+
+
+// Size 0x410 (Full Size[0x7b0] - InheritedSize[0x3a0]
+class BoneCallerService: public Actor
+{
+public:
+	char                                                         pad0x398_6JIZ1[0x398];                             // 0x3a0(0x398)
+	class BoneCallerServiceParams*                               ServiceParams;                                     // 0x738(0x8)
+	char                                                         pad0x70_NTG2W[0x70];                               // 0x740(0x70)
+};
+
+
+// Size 0x70 (Full Size[0x128] - InheritedSize[0xb8]
+class BoneCallerOwnershipComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_C627Z[0x8];                                 // 0xb8(0x8)
+	struct Guid                                                  OwningCrewID;                                      // 0xc0(0x10)
+	char                                                         pad0x58_FAXNH[0x58];                               // 0xd0(0x58)
 };
 
 
@@ -78,14 +78,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ElectricOceanCrawlerBoneCallerSpawnId: public BoneCallerSpawnId
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ElectricOceanCrawlerHardBoneCallerSpawnId: public BoneCallerSpawnId
+class ShadowBoneCallerSpawnId: public BoneCallerSpawnId
 {
 public:
 };
@@ -99,6 +92,13 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ElectricOceanCrawlerBoneCallerSpawnId: public BoneCallerSpawnId
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class ElectricOceanCrawlerMediumBoneCallerSpawnId: public BoneCallerSpawnId
 {
 public:
@@ -106,7 +106,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ShadowBoneCallerSpawnId: public BoneCallerSpawnId
+class ElectricOceanCrawlerHardBoneCallerSpawnId: public BoneCallerSpawnId
 {
 public:
 };

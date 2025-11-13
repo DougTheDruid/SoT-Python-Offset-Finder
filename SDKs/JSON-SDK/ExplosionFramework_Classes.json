@@ -1,5 +1,5 @@
 {
-  "ExplosiveComponentInterface": {
+  "ExplosivesServiceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -13,10 +13,31 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ExplosionConditionalStatsTrigger": {
-    "Super": "ConditionalStatsTriggerType",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
+  "StatusResponseCancelFuse": {
+    "Super": "StatusResponse",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ExplosionInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "FuseInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ExplosiveComponentInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -39,7 +60,7 @@
         "Offset": "0x3c"
       },
       {
-        "Name": "pad0x8_QUNMA[0x8]",
+        "Name": "pad0x8_DJEVY[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x40"
@@ -59,20 +80,6 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "StatusResponseCancelFuse": {
-    "Super": "StatusResponse",
-    "FullSize": "0x38",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "FuseInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "CreateActorInstanceOnExplodeComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x128",
@@ -86,28 +93,21 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x68_0PBFE[0x68]",
+        "Name": "pad0x68_P8OUB[0x68]",
         "Type": "char",
         "Size": "0x68",
         "Offset": "0xc0"
       }
     ]
   },
-  "ExplosivesServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
+  "ExplosionConditionalStatsTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "ExplosionReceiverInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ExplosionInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

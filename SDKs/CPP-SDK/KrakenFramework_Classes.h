@@ -4,14 +4,14 @@
 // https://github.com/DougTheDruid
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class KrakenServiceInterface: public Interface
+class KrakenAnimatedTentacleLocationInterface: public Interface
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class KrakenAnimatedTentacleLocationInterface: public Interface
+class KrakenServiceInterface: public Interface
 {
 public:
 };

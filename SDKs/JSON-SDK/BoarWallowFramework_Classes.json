@@ -6,39 +6,6 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "BoarsAndBoarWallowRandomiserService": {
-    "Super": "Actor",
-    "FullSize": "0x450",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0xb0",
-    "Attributes": [
-      {
-        "Name": "pad0x8_XYHSJ[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "BoarsAndBoarWallowIslandsMap",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x3a8"
-      },
-      {
-        "Name": "pad0x98_3PKWO[0x98]",
-        "Type": "char",
-        "Size": "0x98",
-        "Offset": "0x3b8"
-      }
-    ]
-  },
-  "BoarWallowServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "BoarWallowService": {
     "Super": "Actor",
     "FullSize": "0x7c0",
@@ -46,7 +13,7 @@
     "ClassSize": "0x420",
     "Attributes": [
       {
-        "Name": "pad0xd0_YM2N0[0xd0]",
+        "Name": "pad0xd0_M76WF[0xd0]",
         "Type": "char",
         "Size": "0xd0",
         "Offset": "0x3a0"
@@ -64,71 +31,12 @@
         "Offset": "0x478"
       },
       {
-        "Name": "pad0x338_FPZIJ[0x338]",
+        "Name": "pad0x338_L45TU[0x338]",
         "Type": "char",
         "Size": "0x338",
         "Offset": "0x488"
       }
     ]
-  },
-  "BoarWallowServiceParams": {
-    "Super": "DataAsset",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "BoarWallowAssetTemplate",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "BoarWallow": {
-    "Super": "Actor",
-    "FullSize": "0x450",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0xb0",
-    "Attributes": [
-      {
-        "Name": "pad0x18_XCMC5[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "NumberOfBoarsInHideout",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x3b8"
-      },
-      {
-        "Name": "MaxNumberOfBoarsInHideout",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x3bc"
-      },
-      {
-        "Name": "pad0x80_9VGIQ[0x80]",
-        "Type": "char",
-        "Size": "0x80",
-        "Offset": "0x3c0"
-      },
-      {
-        "Name": "FaunasSubscribedWithThisHideout",
-        "Type": "TArray<class Pawn*>",
-        "Size": "0x10",
-        "Offset": "0x440"
-      }
-    ]
-  },
-  "BoarsAndBoarWallowRandomiserInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "FaunaBoarWallowFinder": {
     "Super": "ActorComponent",
@@ -149,10 +57,102 @@
         "Offset": "0xc0"
       },
       {
-        "Name": "pad0x7_WBCW0[0x7]",
+        "Name": "pad0x7_QQ8KC[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xc1"
+      }
+    ]
+  },
+  "BoarsAndBoarWallowRandomiserInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BoarsAndBoarWallowRandomiserService": {
+    "Super": "Actor",
+    "FullSize": "0x450",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "pad0x8_312GK[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "BoarsAndBoarWallowIslandsMap",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x3a8"
+      },
+      {
+        "Name": "pad0x98_BS00G[0x98]",
+        "Type": "char",
+        "Size": "0x98",
+        "Offset": "0x3b8"
+      }
+    ]
+  },
+  "BoarWallowServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BoarWallow": {
+    "Super": "Actor",
+    "FullSize": "0x450",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "pad0x18_H7VEG[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "NumberOfBoarsInHideout",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x3b8"
+      },
+      {
+        "Name": "MaxNumberOfBoarsInHideout",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x3bc"
+      },
+      {
+        "Name": "pad0x80_NVV0V[0x80]",
+        "Type": "char",
+        "Size": "0x80",
+        "Offset": "0x3c0"
+      },
+      {
+        "Name": "FaunasSubscribedWithThisHideout",
+        "Type": "TArray<class Pawn*>",
+        "Size": "0x10",
+        "Offset": "0x440"
+      }
+    ]
+  },
+  "BoarWallowServiceParams": {
+    "Super": "DataAsset",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "BoarWallowAssetTemplate",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x28"
       }
     ]
   },

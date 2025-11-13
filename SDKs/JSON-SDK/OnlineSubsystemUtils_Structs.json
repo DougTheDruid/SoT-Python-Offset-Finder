@@ -1,15 +1,4 @@
 {
-  "BlueprintSessionResult": {
-    "ClassSize": "0xf0",
-    "Attributes": [
-      {
-        "Name": "pad0xf0_MPF70[0xf0]",
-        "Type": "char",
-        "Size": "0xf0",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "PlayerReservation": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -32,10 +21,21 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_7M3BW[0x4]",
+        "Name": "pad0x4_RH6XS[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
+      }
+    ]
+  },
+  "BlueprintSessionResult": {
+    "ClassSize": "0xf0",
+    "Attributes": [
+      {
+        "Name": "pad0xf0_D11SR[0xf0]",
+        "Type": "char",
+        "Size": "0xf0",
+        "Offset": "0x0"
       }
     ]
   },
@@ -49,7 +49,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_N2Z1D[0x4]",
+        "Name": "pad0x4_K4X09[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"

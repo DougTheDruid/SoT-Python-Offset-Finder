@@ -7,26 +7,17 @@
 struct SPCSetId
 {
 public:
-	char                                                         pad0x10_L412W[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_X1YAN[0x10];                               // 0x0(0x10)
 };
 
 
-// Size 0x28
-struct SandboxPerformanceConstraintActivityTelemetryData
+// Size 0x50
+struct SandboxPerformanceConstraintActivityDeactivationFailureTelemetryEvent
 {
 public:
-	struct FString                                               ActivityType;                                      // 0x0(0x10)
-	struct Vector                                                Location;                                          // 0x10(0xc)
-	char                                                         pad0x4_KJIP1[0x4];                                 // 0x1c(0x4)
-	double                                                       LifetimeInSeconds;                                 // 0x20(0x8)
-};
-
-
-// Size 0x10
-struct SandboxPerformanceConstraintActivityContainer
-{
-public:
-	TArray<class Class*>                                         Activities;                                        // 0x0(0x10)
+	char                                                         pad0x30_3AQMM[0x30];                               // 0x0(0x30)
+	struct FString                                               Reason;                                            // 0x30(0x10)
+	struct FString                                               DeactivationReason;                                // 0x40(0x10)
 };
 
 
@@ -38,43 +29,23 @@ public:
 };
 
 
+// Size 0x50
+struct SandboxPerformanceConstraintActivityActivationDeniedTelemetryEvent
+{
+public:
+	char                                                         pad0x30_LHV8Q[0x30];                               // 0x0(0x30)
+	struct Vector                                                Location;                                          // 0x30(0xc)
+	char                                                         pad0x4_OQGXF[0x4];                                 // 0x3c(0x4)
+	struct FString                                               Reason;                                            // 0x40(0x10)
+};
+
+
 // Size 0x40
 struct SandboxPerformanceConstraintNullConsumerTelemetryEvent
 {
 public:
-	char                                                         pad0x30_33SX0[0x30];                               // 0x0(0x30)
+	char                                                         pad0x30_J62PX[0x30];                               // 0x0(0x30)
 	struct FString                                               Reason;                                            // 0x30(0x10)
-};
-
-
-// Size 0x58
-struct SandboxPerformanceConstraintActivityUpdateTelemetryEvent
-{
-public:
-	char                                                         pad0x30_DY8WS[0x30];                               // 0x0(0x30)
-	struct Vector                                                NewLocation;                                       // 0x30(0xc)
-	char                                                         pad0x4_CEBIL[0x4];                                 // 0x3c(0x4)
-	struct DateTime                                              UpdateTime;                                        // 0x40(0x8)
-	struct FString                                               ConstrainedDeactivationReason;                     // 0x48(0x10)
-};
-
-
-// Size 0x10
-struct SandboxPerformanceConstraintInstancedResourceContainer
-{
-public:
-	float                                                        ServerMemoryUsageInMB;                             // 0x0(0x4)
-	float                                                        ClientMemoryUsageInMB;                             // 0x4(0x4)
-	float                                                        ServerCPUUsageInMs;                                // 0x8(0x4)
-	float                                                        ClientCPUUsageInMs;                                // 0xc(0x4)
-};
-
-
-// Size 0x10
-struct SPCIdBase
-{
-public:
-	struct Guid                                                  Id;                                                // 0x0(0x10)
 };
 
 
@@ -89,23 +60,45 @@ public:
 };
 
 
-// Size 0x50
-struct SandboxPerformanceConstraintActivityDeactivationFailureTelemetryEvent
+// Size 0x10
+struct SandboxPerformanceConstraintActivityInstanceCount
 {
 public:
-	char                                                         pad0x30_9VSWJ[0x30];                               // 0x0(0x30)
-	struct FString                                               Reason;                                            // 0x30(0x10)
-	struct FString                                               DeactivationReason;                                // 0x40(0x10)
+	class UClass*                                                ActivityType;                                      // 0x0(0x8)
+	int                                                          NumInstances;                                      // 0x8(0x4)
+	char                                                         pad0x4_643K4[0x4];                                 // 0xc(0x4)
 };
 
 
-// Size 0x18
-struct SandboxPerformanceConstraintSharedResourceTelemetryData
+// Size 0x58
+struct SandboxPerformanceConstraintActivityDeactivationTelemetryEvent
 {
 public:
-	struct FString                                               SharedResourceType;                                // 0x0(0x10)
-	int                                                          NumConsumers;                                      // 0x10(0x4)
-	char                                                         pad0x4_C4OY6[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x30_W2PUS[0x30];                               // 0x0(0x30)
+	struct FString                                               Reason;                                            // 0x30(0x10)
+	bool                                                         DeactivatedWhileEngaged;                           // 0x40(0x1)
+	char                                                         pad0x7_GSQHI[0x7];                                 // 0x41(0x7)
+	struct DateTime                                              StartTime;                                         // 0x48(0x8)
+	struct DateTime                                              EndTime;                                           // 0x50(0x8)
+};
+
+
+// Size 0x28
+struct SandboxPerformanceConstraintActivityTelemetryData
+{
+public:
+	struct FString                                               ActivityType;                                      // 0x0(0x10)
+	struct Vector                                                Location;                                          // 0x10(0xc)
+	char                                                         pad0x4_CEUO4[0x4];                                 // 0x1c(0x4)
+	double                                                       LifetimeInSeconds;                                 // 0x20(0x8)
+};
+
+
+// Size 0x10
+struct SPCActivityId
+{
+public:
+	char                                                         pad0x10_X1JYX[0x10];                               // 0x0(0x10)
 };
 
 
@@ -119,87 +112,44 @@ public:
 };
 
 
-// Size 0x50
-struct SandboxPerformanceConstraintActivityActivationDeniedTelemetryEvent
+// Size 0x58
+struct SandboxPerformanceConstraintActivityUpdateTelemetryEvent
 {
 public:
-	char                                                         pad0x30_R84E0[0x30];                               // 0x0(0x30)
-	struct Vector                                                Location;                                          // 0x30(0xc)
-	char                                                         pad0x4_I27QD[0x4];                                 // 0x3c(0x4)
-	struct FString                                               Reason;                                            // 0x40(0x10)
+	char                                                         pad0x30_QOB30[0x30];                               // 0x0(0x30)
+	struct Vector                                                NewLocation;                                       // 0x30(0xc)
+	char                                                         pad0x4_4NCF6[0x4];                                 // 0x3c(0x4)
+	struct DateTime                                              UpdateTime;                                        // 0x40(0x8)
+	struct FString                                               ConstrainedDeactivationReason;                     // 0x48(0x10)
 };
 
 
-// Size 0x50
-struct SandboxPerformanceConstraintActivityDeactivationTelemetryEvent
+// Size 0x18
+struct SandboxPerformanceConstraintSharedResourceTelemetryData
 {
 public:
-	char                                                         pad0x30_H1FT2[0x30];                               // 0x0(0x30)
-	struct FString                                               Reason;                                            // 0x30(0x10)
-	struct DateTime                                              StartTime;                                         // 0x40(0x8)
-	struct DateTime                                              EndTime;                                           // 0x48(0x8)
-};
-
-
-// Size 0x10
-struct SandboxPerformanceConstraintActivityInstanceCount
-{
-public:
-	class UClass*                                                ActivityType;                                      // 0x0(0x8)
-	int                                                          NumInstances;                                      // 0x8(0x4)
-	char                                                         pad0x4_PXHYC[0x4];                                 // 0xc(0x4)
+	struct FString                                               SharedResourceType;                                // 0x0(0x10)
+	int                                                          NumConsumers;                                      // 0x10(0x4)
+	char                                                         pad0x4_UIVG9[0x4];                                 // 0x14(0x4)
 };
 
 
 // Size 0x10
-struct SPCActivityId
+struct SPCIdBase
 {
 public:
-	char                                                         pad0x10_K6FG3[0x10];                               // 0x0(0x10)
-};
-
-
-// Size 0x30
-struct SandboxPerformanceConstraintActivityScore
-{
-public:
-	class UClass*                                                ActivityType;                                      // 0x0(0x8)
-	struct SPCSetId                                              SetId;                                             // 0x8(0x10)
-	struct SPCActivityId                                         ActivityId;                                        // 0x18(0x10)
-	float                                                        Score;                                             // 0x28(0x4)
-	char                                                         pad0x4_7RI30[0x4];                                 // 0x2c(0x4)
+	struct Guid                                                  Id;                                                // 0x0(0x10)
 };
 
 
 // Size 0x10
-struct SandboxPerformanceConstraintActivityRequestContainer
+struct SandboxPerformanceConstraintInstancedResourceContainer
 {
 public:
-	TArray<struct SPCActivityId>                                 ActivityRequests;                                  // 0x0(0x10)
-};
-
-
-// Size 0x38
-struct SandboxPerformanceConstraintActivitySet
-{
-public:
-	struct SPCSetId                                              SetId;                                             // 0x0(0x10)
-	TArray<struct SPCActivityId>                                 ActivityIds;                                       // 0x10(0x10)
-	struct DateTime                                              StartTime;                                         // 0x20(0x8)
-	char                                                         pad0x10_LPDYC[0x10];                               // 0x28(0x10)
-};
-
-
-// Size 0x70
-struct SandboxPerformanceConstraintActivityActivationTelemetryEvent
-{
-public:
-	char                                                         pad0x30_A7CKF[0x30];                               // 0x0(0x30)
-	TArray<struct SandboxPerformanceConstraintSharedResourceContainer> SharedResourceUsages;                              // 0x30(0x10)
-	TArray<struct SandboxPerformanceConstraintInstancedResourceContainer> InstancedResourceUsages;                           // 0x40(0x10)
-	struct Vector                                                Location;                                          // 0x50(0xc)
-	char                                                         pad0x4_7SPXZ[0x4];                                 // 0x5c(0x4)
-	struct FString                                               ConstrainedDeactivationReason;                     // 0x60(0x10)
+	float                                                        ServerMemoryUsageInMB;                             // 0x0(0x4)
+	float                                                        ClientMemoryUsageInMB;                             // 0x4(0x4)
+	float                                                        ServerCPUUsageInMs;                                // 0x8(0x4)
+	float                                                        ClientCPUUsageInMs;                                // 0xc(0x4)
 };
 
 
@@ -216,12 +166,57 @@ public:
 };
 
 
+// Size 0x70
+struct SandboxPerformanceConstraintActivityActivationTelemetryEvent
+{
+public:
+	char                                                         pad0x30_ZVVVL[0x30];                               // 0x0(0x30)
+	TArray<struct SandboxPerformanceConstraintSharedResourceContainer> SharedResourceUsages;                              // 0x30(0x10)
+	TArray<struct SandboxPerformanceConstraintInstancedResourceContainer> InstancedResourceUsages;                           // 0x40(0x10)
+	struct Vector                                                Location;                                          // 0x50(0xc)
+	char                                                         pad0x4_6OA98[0x4];                                 // 0x5c(0x4)
+	struct FString                                               ConstrainedDeactivationReason;                     // 0x60(0x10)
+};
+
+
+// Size 0x38
+struct SandboxPerformanceConstraintActivityScore
+{
+public:
+	class UClass*                                                ActivityType;                                      // 0x0(0x8)
+	struct SPCSetId                                              SetId;                                             // 0x8(0x10)
+	struct SPCActivityId                                         ActivityId;                                        // 0x18(0x10)
+	struct DateTime                                              StartTime;                                         // 0x28(0x8)
+	float                                                        Score;                                             // 0x30(0x4)
+	char                                                         pad0x4_LV4PD[0x4];                                 // 0x34(0x4)
+};
+
+
+// Size 0x38
+struct SandboxPerformanceConstraintActivitySet
+{
+public:
+	struct SPCSetId                                              SetId;                                             // 0x0(0x10)
+	TArray<struct SPCActivityId>                                 ActivityIds;                                       // 0x10(0x10)
+	struct DateTime                                              StartTime;                                         // 0x20(0x8)
+	char                                                         pad0x10_PKTPU[0x10];                               // 0x28(0x10)
+};
+
+
 // Size 0x20
 struct SandboxPerformanceConstraintResourceContainer
 {
 public:
 	TArray<class Class*>                                         SharedResourceTypes;                               // 0x0(0x10)
 	struct SandboxPerformanceConstraintInstancedResourceContainer InstancedResourceUsage;                            // 0x10(0x10)
+};
+
+
+// Size 0x10
+struct SandboxPerformanceConstraintActivityRequestContainer
+{
+public:
+	TArray<struct SPCActivityId>                                 ActivityRequests;                                  // 0x0(0x10)
 };
 
 
@@ -239,7 +234,7 @@ struct SandboxPerformanceConstraintActivityConsumerData
 {
 public:
 	struct SandboxPerformanceConstraintActivityCustomResourceContainer ActivityCustomResource;                            // 0x0(0x28)
-	char                                                         pad0x10_EC6ML[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_0N45T[0x10];                               // 0x28(0x10)
 	struct SPCSetId                                              SetId;                                             // 0x38(0x10)
 	struct SPCActivityId                                         ActivityId;                                        // 0x48(0x10)
 	struct Vector                                                Location;                                          // 0x58(0xc)

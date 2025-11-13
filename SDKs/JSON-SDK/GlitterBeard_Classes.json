@@ -1,17 +1,43 @@
 {
-  "GlitterBeardTrustedTreeInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "GlitterBeardTelemetryComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x100",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x48_N24IY[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0xb8"
+      }
+    ]
   },
-  "GlitterBeardEntitlementDesc": {
-    "Super": "EntitlementDesc",
-    "FullSize": "0xc8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "GlitterBeardFinaleCoordinatorComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x160",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0xa8",
+    "Attributes": [
+      {
+        "Name": "AudioEventToSynchronise",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "ReplicationState",
+        "Type": "struct FinaleReplicationState",
+        "Size": "0x10",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "pad0x90_U29WG[0x90]",
+        "Type": "char",
+        "Size": "0x90",
+        "Offset": "0xd0"
+      }
+    ]
   },
   "GlitterBeardIsHideoutOpenConditional": {
     "Super": "NPCDialogConditional",
@@ -20,70 +46,6 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "GlitterBeardTreeVisualFeedbackComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x108",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "FeedbackActions",
-        "Type": "TArray<struct VisualFeedbackList>",
-        "Size": "0x10",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "pad0x10_52SQD[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "CurrentStates",
-        "Type": "TArray<char>",
-        "Size": "0x10",
-        "Offset": "0xd8"
-      },
-      {
-        "Name": "pad0x20_LMC9M[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0xe8"
-      }
-    ]
-  },
-  "GlitterBeardUnlockVFXCoordinatorComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "TreeActor",
-        "Type": "struct ActorComponentSelector",
-        "Size": "0x10",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "TreeMaterialInstanceDynamic",
-        "Type": "class MaterialInstanceDynamic*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "TreeBlendTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "pad0xc_SZGIG[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0xd4"
-      }
-    ]
-  },
   "GlitterBeardTree": {
     "Super": "Actor",
     "FullSize": "0x6c0",
@@ -91,7 +53,7 @@
     "ClassSize": "0x320",
     "Attributes": [
       {
-        "Name": "pad0x28_57BRZ[0x28]",
+        "Name": "pad0x28_52R23[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x3a0"
@@ -115,7 +77,7 @@
         "Offset": "0x3d8"
       },
       {
-        "Name": "pad0x4_EN96J[0x4]",
+        "Name": "pad0x4_WE9UK[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3dc"
@@ -175,7 +137,7 @@
         "Offset": "0x418"
       },
       {
-        "Name": "pad0x24c_H3H34[0x24c]",
+        "Name": "pad0x24c_592HL[0x24c]",
         "Type": "char",
         "Size": "0x24c",
         "Offset": "0x41c"
@@ -193,24 +155,10 @@
         "Offset": "0x670"
       },
       {
-        "Name": "pad0x30_B2LVU[0x30]",
+        "Name": "pad0x30_VK9UE[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x690"
-      }
-    ]
-  },
-  "GlitterBeardTelemetryComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x100",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "pad0x48_O55H1[0x48]",
-        "Type": "char",
-        "Size": "0x48",
-        "Offset": "0xb8"
       }
     ]
   },
@@ -228,31 +176,44 @@
       }
     ]
   },
-  "GlitterBeardFinaleCoordinatorComponent": {
+  "GlitterBeardTreeVisualFeedbackComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x160",
+    "FullSize": "0x108",
     "InheritedSize": "0xb8",
-    "ClassSize": "0xa8",
+    "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "AudioEventToSynchronise",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
+        "Name": "FeedbackActions",
+        "Type": "TArray<struct VisualFeedbackList>",
+        "Size": "0x10",
         "Offset": "0xb8"
       },
       {
-        "Name": "ReplicationState",
-        "Type": "struct FinaleReplicationState",
+        "Name": "pad0x10_8QFYM[0x10]",
+        "Type": "char",
         "Size": "0x10",
-        "Offset": "0xc0"
+        "Offset": "0xc8"
       },
       {
-        "Name": "pad0x90_TO8SL[0x90]",
+        "Name": "CurrentStates",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "pad0x20_ATAQ4[0x20]",
         "Type": "char",
-        "Size": "0x90",
-        "Offset": "0xd0"
+        "Size": "0x20",
+        "Offset": "0xe8"
       }
     ]
+  },
+  "GlitterBeardEntitlementDesc": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "GlitterBeardLanternSoundEffect": {
     "Super": "EffectBlendObjectBase",
@@ -267,7 +228,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_80DT9[0x4]",
+        "Name": "pad0x4_RMPAI[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c"
@@ -291,10 +252,49 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x10_VZ6FE[0x10]",
+        "Name": "pad0x10_G958W[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x70"
+      }
+    ]
+  },
+  "GlitterBeardTrustedTreeInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GlitterBeardUnlockVFXCoordinatorComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xe0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "TreeActor",
+        "Type": "struct ActorComponentSelector",
+        "Size": "0x10",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "TreeMaterialInstanceDynamic",
+        "Type": "class MaterialInstanceDynamic*",
+        "Size": "0x8",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "TreeBlendTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0xc_L6SHF[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0xd4"
       }
     ]
   },

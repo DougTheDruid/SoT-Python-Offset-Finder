@@ -1,51 +1,35 @@
 {
-  "SirenPuzzleContext": {
-    "Super": "Actor",
-    "FullSize": "0x490",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0xf0",
+  "AbandonedNoteWeightedTextDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x8_OY1AF[0x8]",
-        "Type": "char",
+        "Name": "Entries",
+        "Type": "TArray<struct AbandonedNoteWeightedTextEntry>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "PopUpNotificationOnItemWieldedComponent": {
+    "Super": "OnItemWieldedComponent",
+    "FullSize": "0x158",
+    "InheritedSize": "0x138",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "PopUpDesc",
+        "Type": "class PopUpMessageDesc*",
         "Size": "0x8",
-        "Offset": "0x3a0"
+        "Offset": "0x138"
       },
       {
-        "Name": "Root",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x3a8"
-      },
-      {
-        "Name": "PuzzleLocks",
-        "Type": "TArray<struct SirenPuzzleLockState>",
-        "Size": "0x10",
-        "Offset": "0x3b0"
-      },
-      {
-        "Name": "UnlockCompleteReactions",
-        "Type": "TArray<struct LandmarkReactionKeyFrame>",
-        "Size": "0x10",
-        "Offset": "0x3c0"
-      },
-      {
-        "Name": "ResetLocksReactions",
-        "Type": "TArray<struct LandmarkReactionKeyFrame>",
-        "Size": "0x10",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "LockStates",
-        "Type": "TArray<char>",
-        "Size": "0x10",
-        "Offset": "0x3e0"
-      },
-      {
-        "Name": "pad0xa0_I2J4E[0xa0]",
+        "Name": "pad0x18_MPD3E[0x18]",
         "Type": "char",
-        "Size": "0xa0",
-        "Offset": "0x3f0"
+        "Size": "0x18",
+        "Offset": "0x140"
       }
     ]
   },
@@ -56,7 +40,7 @@
     "ClassSize": "0xe0",
     "Attributes": [
       {
-        "Name": "pad0x40_AJXHK[0x40]",
+        "Name": "pad0x40_H4020[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0xb8"
@@ -74,7 +58,7 @@
         "Offset": "0x130"
       },
       {
-        "Name": "pad0x30_US7AK[0x30]",
+        "Name": "pad0x30_PO6XI[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x168"
@@ -130,44 +114,60 @@
         "Offset": "0x460"
       },
       {
-        "Name": "pad0x20_OTDWU[0x20]",
+        "Name": "pad0x20_BVWMT[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x498"
       }
     ]
   },
-  "PopUpNotificationOnItemWieldedComponent": {
-    "Super": "OnItemWieldedComponent",
-    "FullSize": "0x158",
-    "InheritedSize": "0x138",
-    "ClassSize": "0x20",
+  "SirenPuzzleContext": {
+    "Super": "Actor",
+    "FullSize": "0x490",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0xf0",
     "Attributes": [
       {
-        "Name": "PopUpDesc",
-        "Type": "class PopUpMessageDesc*",
+        "Name": "pad0x8_OLROQ[0x8]",
+        "Type": "char",
         "Size": "0x8",
-        "Offset": "0x138"
+        "Offset": "0x3a0"
       },
       {
-        "Name": "pad0x18_0N6VB[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x140"
-      }
-    ]
-  },
-  "AbandonedNoteWeightedTextDataAsset": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
+        "Name": "Root",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x3a8"
+      },
       {
-        "Name": "Entries",
-        "Type": "TArray<struct AbandonedNoteWeightedTextEntry>",
+        "Name": "PuzzleLocks",
+        "Type": "TArray<struct SirenPuzzleLockState>",
         "Size": "0x10",
-        "Offset": "0x28"
+        "Offset": "0x3b0"
+      },
+      {
+        "Name": "UnlockCompleteReactions",
+        "Type": "TArray<struct LandmarkReactionKeyFrame>",
+        "Size": "0x10",
+        "Offset": "0x3c0"
+      },
+      {
+        "Name": "ResetLocksReactions",
+        "Type": "TArray<struct LandmarkReactionKeyFrame>",
+        "Size": "0x10",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "LockStates",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "pad0xa0_YC6YZ[0xa0]",
+        "Type": "char",
+        "Size": "0xa0",
+        "Offset": "0x3f0"
       }
     ]
   },

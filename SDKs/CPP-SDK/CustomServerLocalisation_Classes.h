@@ -6,20 +6,20 @@
 #include "CustomServerLocalisation_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CustomServerLocalisationInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x98 (Full Size[0x438] - InheritedSize[0x3a0]
 class CustomServerLocalisationService: public Actor
 {
 public:
-	char                                                         pad0x8_T1HZR[0x8];                                 // 0x3a0(0x8)
+	char                                                         pad0x8_2WMA8[0x8];                                 // 0x3a0(0x8)
 	TArray<struct CustomServerLocalisationData>                  LocalisationData;                                  // 0x3a8(0x10)
-	char                                                         pad0x80_G6EB7[0x80];                               // 0x3b8(0x80)
+	char                                                         pad0x80_A1BBB[0x80];                               // 0x3b8(0x80)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CustomServerLocalisationInterface: public Interface
+{
+public:
 };
 
 

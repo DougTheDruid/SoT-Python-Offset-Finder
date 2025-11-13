@@ -4,10 +4,10 @@
 // https://github.com/DougTheDruid
 
 // Size 0x1
-struct SessionServicePing
+struct SessionServiceLogSubscribe
 {
 public:
-	char                                                         pad0x1_4ZML4[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_474F5[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -20,13 +20,13 @@ public:
 	struct Guid                                                  InstanceId;                                        // 0x20(0x10)
 	struct FString                                               InstanceName;                                      // 0x30(0x10)
 	bool                                                         IsConsoleBuild;                                    // 0x40(0x1)
-	char                                                         pad0x7_AY7J9[0x7];                                 // 0x41(0x7)
+	char                                                         pad0x7_WQZ9J[0x7];                                 // 0x41(0x7)
 	struct FString                                               PlatformName;                                      // 0x48(0x10)
 	struct Guid                                                  SessionId;                                         // 0x58(0x10)
 	struct FString                                               SessionName;                                       // 0x68(0x10)
 	struct FString                                               SessionOwner;                                      // 0x78(0x10)
 	bool                                                         Standalone;                                        // 0x88(0x1)
-	char                                                         pad0x7_K0BNZ[0x7];                                 // 0x89(0x7)
+	char                                                         pad0x7_34EC0[0x7];                                 // 0x89(0x7)
 };
 
 
@@ -39,15 +39,7 @@ public:
 	struct Guid                                                  InstanceId;                                        // 0x18(0x10)
 	double                                                       TimeSeconds;                                       // 0x28(0x8)
 	char                                                         Verbosity;                                         // 0x30(0x1)
-	char                                                         pad0x7_ONKJM[0x7];                                 // 0x31(0x7)
-};
-
-
-// Size 0x1
-struct SessionServiceLogSubscribe
-{
-public:
-	char                                                         pad0x1_ZLR3H[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x7_74IA4[0x7];                                 // 0x31(0x7)
 };
 
 
@@ -55,7 +47,15 @@ public:
 struct SessionServiceLogUnsubscribe
 {
 public:
-	char                                                         pad0x1_445M0[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_TVH3D[0x1];                                 // 0x0(0x1)
+};
+
+
+// Size 0x1
+struct SessionServicePing
+{
+public:
+	char                                                         pad0x1_7F001[0x1];                                 // 0x0(0x1)
 };
 
 

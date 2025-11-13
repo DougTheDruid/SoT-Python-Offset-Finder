@@ -9,7 +9,7 @@ struct GiveItemToAITelemetryEvent
 public:
 	struct Guid                                                  BootyId;                                           // 0x0(0x10)
 	char                                                         BootyType;                                         // 0x10(0x1)
-	char                                                         pad0x7_JTCLM[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_4Q9X5[0x7];                                 // 0x11(0x7)
 	struct FString                                               BootyName;                                         // 0x18(0x10)
 };
 
@@ -20,7 +20,7 @@ struct TakeItemFromAITelemetryEvent
 public:
 	struct Guid                                                  BootyId;                                           // 0x0(0x10)
 	char                                                         BootyType;                                         // 0x10(0x1)
-	char                                                         pad0x7_F5K7K[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_W86ZA[0x7];                                 // 0x11(0x7)
 	struct FString                                               BootyName;                                         // 0x18(0x10)
 };
 

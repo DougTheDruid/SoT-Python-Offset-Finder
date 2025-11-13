@@ -6,31 +6,10 @@
 #include "GameplayTasks_Structs.h"
 
 
-// Size 0x60 (Full Size[0x118] - InheritedSize[0xb8]
-class GameplayTasksComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_2TG9Q[0x8];                                 // 0xb8(0x8)
-	TArray<class GameplayTask*>                                  SimulatedTasks;                                    // 0xc0(0x10)
-	TArray<class GameplayTask*>                                  TaskPriorityQueue;                                 // 0xd0(0x10)
-	char                                                         pad0x28_BK3V8[0x28];                               // 0xe0(0x28)
-	char                                                         pad0x10_1WTBR[0x10];                               // 0x108(0x10)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class GameplayTaskOwnerInterface: public Interface
 {
 public:
-};
-
-
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
-class GameplayTask: public Object
-{
-public:
-	struct FName                                                 InstanceName;                                      // 0x28(0x8)
-	char                                                         pad0x28_Y0YTG[0x28];                               // 0x30(0x28)
 };
 
 
@@ -39,9 +18,30 @@ class GameplayTaskResource: public Object
 {
 public:
 	int                                                          ManualResourceID;                                  // 0x28(0x4)
-	char                                                         pad0x4_69A5K[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x4_R0L8P[0x4];                                 // 0x2c(0x4)
 	bool                                                         bManuallySetID;                                    // 0x30(0x1)
-	char                                                         pad0x7_5V2FA[0x7];                                 // 0x31(0x7)
+	char                                                         pad0x7_UBY7U[0x7];                                 // 0x31(0x7)
+};
+
+
+// Size 0x60 (Full Size[0x118] - InheritedSize[0xb8]
+class GameplayTasksComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_GMWNH[0x8];                                 // 0xb8(0x8)
+	TArray<class GameplayTask*>                                  SimulatedTasks;                                    // 0xc0(0x10)
+	TArray<class GameplayTask*>                                  TaskPriorityQueue;                                 // 0xd0(0x10)
+	char                                                         pad0x28_OATAZ[0x28];                               // 0xe0(0x28)
+	char                                                         pad0x10_XS3PS[0x10];                               // 0x108(0x10)
+};
+
+
+// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+class GameplayTask: public Object
+{
+public:
+	struct FName                                                 InstanceName;                                      // 0x28(0x8)
+	char                                                         pad0x28_N36HX[0x28];                               // 0x30(0x28)
 };
 
 
@@ -49,7 +49,7 @@ public:
 class GameplayTask_SpawnActor: public GameplayTask
 {
 public:
-	char                                                         pad0x38_NILIL[0x38];                               // 0x58(0x38)
+	char                                                         pad0x38_3JJ85[0x38];                               // 0x58(0x38)
 	class UClass*                                                ClassToSpawn;                                      // 0x90(0x8)
 };
 
@@ -58,7 +58,7 @@ public:
 class GameplayTask_WaitDelay: public GameplayTask
 {
 public:
-	char                                                         pad0x18_M0Z42[0x18];                               // 0x58(0x18)
+	char                                                         pad0x18_XLN3V[0x18];                               // 0x58(0x18)
 };
 
 

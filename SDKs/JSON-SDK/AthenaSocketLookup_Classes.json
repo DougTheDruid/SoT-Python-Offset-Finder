@@ -1,12 +1,12 @@
 {
-  "SocketLookupCacheTestFunctions": {
-    "Super": "BlueprintFunctionLibrary",
+  "SocketLookupInterface": {
+    "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "SocketLookupFunctions": {
+  "SocketLookupCacheTestFunctions": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -20,8 +20,8 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "SocketLookupInterface": {
-    "Super": "Interface",
+  "SocketLookupFunctions": {
+    "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",

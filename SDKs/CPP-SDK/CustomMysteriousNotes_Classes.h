@@ -10,7 +10,7 @@
 class CustomMysteriousNotesService: public Actor
 {
 public:
-	char                                                         pad0x58_F8UQE[0x58];                               // 0x3a0(0x58)
+	char                                                         pad0x58_EXCTV[0x58];                               // 0x3a0(0x58)
 };
 
 

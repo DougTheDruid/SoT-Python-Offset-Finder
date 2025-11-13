@@ -1,4 +1,21 @@
 {
+  "GlobalDigSpotPopupEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x18_U9CAY[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PopUpDesc",
+        "Type": "class PopUpMessageDesc*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
   "GlobalDigSpotDefinition": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -31,23 +48,6 @@
         "Type": "class TaleQuestWeightedItemDescSpawnDataAsset*",
         "Size": "0x8",
         "Offset": "0x28"
-      }
-    ]
-  },
-  "GlobalDigSpotPopupEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x18_O6M0T[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PopUpDesc",
-        "Type": "class PopUpMessageDesc*",
-        "Size": "0x8",
-        "Offset": "0x18"
       }
     ]
   },

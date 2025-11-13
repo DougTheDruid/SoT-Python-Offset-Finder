@@ -17,7 +17,7 @@ public:
 class DigsiteObject: public Object
 {
 public:
-	char                                                         pad0x18_OFRNI[0x18];                               // 0x28(0x18)
+	char                                                         pad0x18_K0IV7[0x18];                               // 0x28(0x18)
 };
 
 

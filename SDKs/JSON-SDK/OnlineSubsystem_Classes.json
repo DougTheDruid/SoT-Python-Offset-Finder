@@ -1,4 +1,30 @@
 {
+  "NamedInterfaces": {
+    "Super": "Object",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "NamedInterfaces",
+        "Type": "TArray<struct NamedInterface>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "NamedInterfaceDefs",
+        "Type": "TArray<struct NamedInterfaceDef>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x18_9S4G1[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x48"
+      }
+    ]
+  },
   "DefaultOnlineEnvironmentSettings": {
     "Super": "Object",
     "FullSize": "0x60",
@@ -22,32 +48,6 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x50"
-      }
-    ]
-  },
-  "NamedInterfaces": {
-    "Super": "Object",
-    "FullSize": "0x60",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "NamedInterfaces",
-        "Type": "TArray<struct NamedInterface>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "NamedInterfaceDefs",
-        "Type": "TArray<struct NamedInterfaceDef>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x18_P02PK[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x48"
       }
     ]
   },

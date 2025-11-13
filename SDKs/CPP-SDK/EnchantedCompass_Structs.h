@@ -7,7 +7,7 @@
 struct RotatingCompassAudioParams
 {
 public:
-	char                                                         pad0x20_H6RNM[0x20];                               // 0x0(0x20)
+	char                                                         pad0x20_45H4N[0x20];                               // 0x0(0x20)
 	class WwiseObjectPoolWrapper*                                EmitterPool;                                       // 0x20(0x8)
 	struct FName                                                 EmitterName;                                       // 0x28(0x8)
 	class WwiseEvent*                                            OneShotRotationSfx;                                // 0x30(0x8)
@@ -20,7 +20,7 @@ public:
 struct RotatingCompassSplinePathCompletedEvent
 {
 public:
-	char                                                         pad0x1_IHG6Q[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_EI1GS[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -28,7 +28,7 @@ public:
 struct RotatingCompassRotationCurveCompletedEvent
 {
 public:
-	char                                                         pad0x1_XP9ZI[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_XZPJT[0x1];                                 // 0x0(0x1)
 };
 
 

@@ -1,14 +1,14 @@
 {
   "BP_ipg_legkra_hat_01_Desc_C": {
     "Super": "None",
-    "FullSize": "0x3f50e79f",
+    "FullSize": "-0x58d5b580",
     "InheritedSize": "0x0",
-    "ClassSize": "0x3f50e79f",
+    "ClassSize": "-0x58d5b580",
     "Attributes": [
       {
-        "Name": "pad0x3f50e79f_1OEBH[0x3f50e79f]",
+        "Name": "pad-0x58d5b580_Q18MK[-0x58d5b580]",
         "Type": "char",
-        "Size": "0x3f50e79f",
+        "Size": "-0x58d5b580",
         "Offset": "0x0"
       }
     ]

@@ -7,7 +7,7 @@
 struct EventDeployableAmmoHandoverComplete
 {
 public:
-	char                                                         pad0x1_JBB9H[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_KTV7Z[0x1];                                 // 0x0(0x1)
 };
 
 

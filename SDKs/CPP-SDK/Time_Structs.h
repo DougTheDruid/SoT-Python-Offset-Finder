@@ -7,7 +7,15 @@
 struct ReplicatedDateTime
 {
 public:
-	char                                                         pad0x8_Q0CFF[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_XS838[0x8];                                 // 0x0(0x8)
+};
+
+
+// Size 0x1
+struct EventTimeServiceMigrated
+{
+public:
+	char                                                         pad0x1_1LNRS[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -24,35 +32,18 @@ public:
 
 
 // Size 0x8
-struct GameTime
+struct ReplicatedTimespan
 {
 public:
-	struct DateTime                                              DateTimeRepresentation;                            // 0x0(0x8)
-};
-
-
-// Size 0x1
-struct EventTimeServiceMigrated
-{
-public:
-	char                                                         pad0x1_CFMX8[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x8_E8YN7[0x8];                                 // 0x0(0x8)
 };
 
 
 // Size 0x8
-struct ReplicatedTimespan
+struct GameTime
 {
 public:
-	char                                                         pad0x8_I060G[0x8];                                 // 0x0(0x8)
-};
-
-
-// Size 0x10
-struct GameTimeRange
-{
-public:
-	struct GameTime                                              Start;                                             // 0x0(0x8)
-	struct GameTime                                              End;                                               // 0x8(0x8)
+	struct DateTime                                              DateTimeRepresentation;                            // 0x0(0x8)
 };
 
 
@@ -62,6 +53,15 @@ struct ReplicatedAuthoritativeTime
 public:
 	struct ReplicatedDateTime                                    WorldTime;                                         // 0x0(0x8)
 	struct ReplicatedDateTime                                    SyncTime;                                          // 0x8(0x8)
+};
+
+
+// Size 0x10
+struct GameTimeRange
+{
+public:
+	struct GameTime                                              Start;                                             // 0x0(0x8)
+	struct GameTime                                              End;                                               // 0x8(0x8)
 };
 
 

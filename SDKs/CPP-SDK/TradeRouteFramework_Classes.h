@@ -6,26 +6,13 @@
 #include "TradeRouteFramework_Structs.h"
 
 
-// Size 0x98 (Full Size[0xc0] - InheritedSize[0x28]
-class TradeRouteData: public DataAsset
-{
-public:
-	struct IslandSelectionType                                   StartIsland;                                       // 0x28(0x8)
-	struct IslandSelectionType                                   EndIsland;                                         // 0x30(0x8)
-	struct PlayerStat                                            RouteCompletionStat;                               // 0x38(0x4)
-	char                                                         MapOrientation;                                    // 0x3c(0x1)
-	char                                                         pad0x3_7BM59[0x3];                                 // 0x3d(0x3)
-	struct TradeRouteMapData                                     TradeRouteMapData;                                 // 0x40(0x80)
-};
-
-
 // Size 0xf8 (Full Size[0x178] - InheritedSize[0x80]
 class TaleQuestSelectTradeRouteStepDesc: public TaleQuestStepDesc
 {
 public:
 	struct TradeRouteMappingFilterQuestVariable                  TradeRouteMappingFilter;                           // 0x80(0x30)
 	int                                                          NumSelectFromClosestIslands;                       // 0xb0(0x4)
-	char                                                         pad0x4_L5EZG[0x4];                                 // 0xb4(0x4)
+	char                                                         pad0x4_KF95I[0x4];                                 // 0xb4(0x4)
 	struct QuestVariableVector                                   SelectionOriginPointVar;                           // 0xb8(0x30)
 	struct QuestVariableInt                                      TradeRouteDifficulty;                              // 0xe8(0x30)
 	struct QuestVariableTradeRouteData                           TradeRoute;                                        // 0x118(0x30)
@@ -33,12 +20,18 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class TradeRouteDifficultyBand: public Object
+// Size 0x98 (Full Size[0x130] - InheritedSize[0x98]
+class TaleQuestGetProjectionPointOnTradeRouteStep: public TaleQuestStep
 {
 public:
-	int                                                          MinimumRank;                                       // 0x28(0x4)
-	char                                                         pad0x4_W6DST[0x4];                                 // 0x2c(0x4)
+	char                                                         pad0x98_R3WOP[0x98];                               // 0x98(0x98)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class WorldTradeRouteInterface: public Interface
+{
+public:
 };
 
 
@@ -50,30 +43,12 @@ public:
 };
 
 
-// Size 0x98 (Full Size[0x118] - InheritedSize[0x80]
-class TaleQuestGetProjectionPointOnTradeRouteStepDesc: public TaleQuestStepDesc
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class TradeRouteDifficultyBand: public Object
 {
 public:
-	float                                                        ProjectionProportion;                              // 0x80(0x4)
-	char                                                         pad0x4_6X3UK[0x4];                                 // 0x84(0x4)
-	struct QuestVariableVector                                   SourcePoint;                                       // 0x88(0x30)
-	struct QuestVariableTradeRouteData                           TradeRouteData;                                    // 0xb8(0x30)
-	struct QuestVariableVector                                   ProjectedPoint;                                    // 0xe8(0x30)
-};
-
-
-// Size 0x98 (Full Size[0x130] - InheritedSize[0x98]
-class TaleQuestGetProjectionPointOnTradeRouteStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x98_L0U9W[0x98];                               // 0x98(0x98)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WorldTradeRouteInterface: public Interface
-{
-public:
+	int                                                          MinimumRank;                                       // 0x28(0x4)
+	char                                                         pad0x4_D6C38[0x4];                                 // 0x2c(0x4)
 };
 
 
@@ -82,7 +57,32 @@ class TaleQuestSelectTradeRouteStep: public TaleQuestStep
 {
 public:
 	class TaleQuestSelectTradeRouteStepDesc*                     Desc;                                              // 0x98(0x8)
-	char                                                         pad0x18_R3EVQ[0x18];                               // 0xa0(0x18)
+	char                                                         pad0x18_98DQM[0x18];                               // 0xa0(0x18)
+};
+
+
+// Size 0x98 (Full Size[0x118] - InheritedSize[0x80]
+class TaleQuestGetProjectionPointOnTradeRouteStepDesc: public TaleQuestStepDesc
+{
+public:
+	float                                                        ProjectionProportion;                              // 0x80(0x4)
+	char                                                         pad0x4_TFR8M[0x4];                                 // 0x84(0x4)
+	struct QuestVariableVector                                   SourcePoint;                                       // 0x88(0x30)
+	struct QuestVariableTradeRouteData                           TradeRouteData;                                    // 0xb8(0x30)
+	struct QuestVariableVector                                   ProjectedPoint;                                    // 0xe8(0x30)
+};
+
+
+// Size 0x98 (Full Size[0xc0] - InheritedSize[0x28]
+class TradeRouteData: public DataAsset
+{
+public:
+	struct IslandSelectionType                                   StartIsland;                                       // 0x28(0x8)
+	struct IslandSelectionType                                   EndIsland;                                         // 0x30(0x8)
+	struct PlayerStat                                            RouteCompletionStat;                               // 0x38(0x4)
+	char                                                         MapOrientation;                                    // 0x3c(0x1)
+	char                                                         pad0x3_QH9W3[0x3];                                 // 0x3d(0x3)
+	struct TradeRouteMapData                                     TradeRouteMapData;                                 // 0x40(0x80)
 };
 
 

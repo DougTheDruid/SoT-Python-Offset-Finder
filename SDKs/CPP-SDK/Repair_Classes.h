@@ -27,18 +27,18 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class RepairObjectActionStateId: public ActionStateId
-{
-public:
-};
-
-
 // Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
 class RepairTypeId: public Object
 {
 public:
 	struct FText                                                 DisplayName;                                       // 0x28(0x38)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class RepairObjectActionStateId: public ActionStateId
+{
+public:
 };
 
 

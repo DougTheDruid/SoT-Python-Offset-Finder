@@ -1,4 +1,33 @@
 {
+  "EventOverMemoryThreshold": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "EventId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ServerTimeUTC",
+        "Type": "struct DateTime",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "MemoryUsedPercentage",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x4_5T9T5[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      }
+    ]
+  },
   "GameServerWebSocketEntityEvent": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -22,6 +51,23 @@
       }
     ]
   },
+  "GlobalEventSubscriptionGameServerRequestModel": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "EnableEvents",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DisableEvents",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "EventEntityIdsSwitch": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -42,52 +88,6 @@
         "Type": "TArray<int>",
         "Size": "0x10",
         "Offset": "0x18"
-      }
-    ]
-  },
-  "GlobalEventSubscriptionGameServerRequestModel": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "EnableEvents",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DisableEvents",
-        "Type": "TArray<struct Name>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "EventOverMemoryThreshold": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "EventId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ServerTimeUTC",
-        "Type": "struct DateTime",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "MemoryUsedPercentage",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x4_DB788[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x1c"
       }
     ]
   },
