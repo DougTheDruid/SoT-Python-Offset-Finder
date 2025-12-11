@@ -1,0 +1,275 @@
+{
+  "TinyKrakenEventCreatedTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "EventId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TinyKrakenBattleProgressionDamageDealtParams": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_ESPGJ[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TinyKrakenBattleProgressionTentaclesDestroyedParams": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_TNW3A[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventTinyKrakenHeadHealthChanged": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "HealthChangedEvent",
+        "Type": "struct EventHealthChanged",
+        "Size": "0x48",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TinyKrakenBattleProgressionKrakenKilledParams": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_XFRNJ[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TinyKrakenHeadIdleBehaviourParams": {
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "pad0x88_BQ19N[0x88]",
+        "Type": "char",
+        "Size": "0x88",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TinyKrakenRoarShockwaveBehaviourParams": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_2QFGD[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TinyKrakenEventCompletedTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "EventId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TinyKrakenHeadParams": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_LJJGM[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventTinyKrakenHeadTakenDamage": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_LRADZ[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventTinyKrakenHeadKilled": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_XTWKS[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TinyKrakenHeadBehaviourParams": {
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "SpawningQueryTemplate",
+        "Type": "class EnvQuery*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "HeadClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "MinPlayRateScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "MaxPlayRateScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "PanicDespawnShipRangeRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "PanicDespawnWatercraftRangeRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "PanicDespawnAnimationPlayRateScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "PreDeathAnimationPlayRateScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "TimeToSpendInInactiveState",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "TimeToSpendInActiveState",
+        "Type": "struct WeightedProbabilityRangeOfRanges",
+        "Size": "0x30",
+        "Offset": "0x58"
+      }
+    ]
+  },
+  "TinyKrakenBattlePhaseParams": {
+    "ClassSize": "0x178",
+    "Attributes": [
+      {
+        "Name": "TentaclesActiveInPhase",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "HeadActiveInPhase",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "pad0x6_CH2BK[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x2"
+      },
+      {
+        "Name": "KrakenParams",
+        "Type": "struct KrakenParams",
+        "Size": "0x160",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "KrakenHeadParams",
+        "Type": "struct TinyKrakenHeadParams",
+        "Size": "0x1",
+        "Offset": "0x168"
+      },
+      {
+        "Name": "ShouldFailPhaseAfterTimer",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x169"
+      },
+      {
+        "Name": "pad0x2_BHFVB[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x16a"
+      },
+      {
+        "Name": "TimeBeforeReturnToPreviousPhase",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x16c"
+      },
+      {
+        "Name": "PhaseProgressionCriteria",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x170"
+      },
+      {
+        "Name": "DamageDealtProgressionParams",
+        "Type": "struct TinyKrakenBattleProgressionDamageDealtParams",
+        "Size": "0x1",
+        "Offset": "0x171"
+      },
+      {
+        "Name": "TentaclesDestroyedProgressionParams",
+        "Type": "struct TinyKrakenBattleProgressionTentaclesDestroyedParams",
+        "Size": "0x1",
+        "Offset": "0x172"
+      },
+      {
+        "Name": "KrakenKilledProgressionParams",
+        "Type": "struct TinyKrakenBattleProgressionKrakenKilledParams",
+        "Size": "0x1",
+        "Offset": "0x173"
+      },
+      {
+        "Name": "pad0x4_CTKLQ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x174"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by dougthedruid on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}

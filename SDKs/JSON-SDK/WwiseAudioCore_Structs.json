@@ -1,0 +1,233 @@
+{
+  "WwiseEventParam": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x8_P221B[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SourcePath",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "SourceObj",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "WwiseNetworkRelationship": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "SwitchGroupName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RemotePlayerSwitchValue",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "LocalPlayerSwitchValue",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "WwiseIOPriorityMappingConfig": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "WwisePriority",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AsyncIOPriority",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x3_9YATZ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5"
+      }
+    ]
+  },
+  "WwisePlatformMapping": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "UnrealPlatform",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "WwisePlatform",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "ReverbPresetControllerSettings": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0xc_P1V8B[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "HorizontalConeSegmentElevationAngle",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "UpwardsConeAngle",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "TraceVectorLength",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "TimeToDiscardSample",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "DistanceToDiscardSample",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "BiasTowardsVerticalSegment",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_0TSH9[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
+      }
+    ]
+  },
+  "WwisePlatformMappings": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "DefaultWwisePlatform",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Mappings",
+        "Type": "TArray<struct WwisePlatformMapping>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "WwiseAudioReverbPresets": {
+    "ClassSize": "0x64",
+    "Attributes": [
+      {
+        "Name": "ShortEarlyReflectionPresetName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "LongEarlyReflectionPresetName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "SpaceSizeRTPCName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "EnclosedRatioRTPCName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "MaterialThicknessRTPCName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "MaterialReflectivityRTPCName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "EnvironmentTraceChannel",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x3_F820Q[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x31"
+      },
+      {
+        "Name": "MinSpaceSizeWindowForEarlyReflections",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "MaxSpaceSizeWindowforEarlyReflections",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "SamplingSettings",
+        "Type": "struct ReverbPresetControllerSettings",
+        "Size": "0x28",
+        "Offset": "0x3c"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by dougthedruid on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}
