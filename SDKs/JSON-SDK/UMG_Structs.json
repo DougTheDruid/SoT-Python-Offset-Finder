@@ -1,0 +1,388 @@
+{
+  "WidgetAnimationBinding": {
+    "ClassSize": "0x24",
+    "Attributes": [
+      {
+        "Name": "WidgetName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SlotWidgetName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "AnimationGuid",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "bIsRootWidget",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x3_K4S8J[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x21"
+      }
+    ]
+  },
+  "PropertyPathSegment": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Name",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ArrayIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_YNRS1[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "Struct",
+        "Type": "class Struct*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Field",
+        "Type": "class Field*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "SlateChildSize": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Value",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SizeRule",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x3_G9IT2[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5"
+      }
+    ]
+  },
+  "AnchorData": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Offsets",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Anchors",
+        "Type": "struct Anchors",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Alignment",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "MovieSceneMarginSectionTemplate": {
+    "ClassSize": "0x218",
+    "Attributes": [
+      {
+        "Name": "pad0x18_2LXUA[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PropertyData",
+        "Type": "struct MovieScenePropertySectionData",
+        "Size": "0x20",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "TopCurve",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "LeftCurve",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "RightCurve",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "BottomCurve",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x1a0"
+      }
+    ]
+  },
+  "WidgetTransform": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Name": "Translation",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Scale",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Shear",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Angle",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "PaintContext": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_FRGTG[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventReply": {
+    "ClassSize": "0xe8",
+    "Attributes": [
+      {
+        "Name": "pad0xe8_VV712[0xe8]",
+        "Type": "char",
+        "Size": "0xe8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "NamedSlotBinding": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Name",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Content",
+        "Type": "class Widget*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "WidgetNavigationData": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "Rule",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_5DMQV[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "WidgetToFocus",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x8_DPJ07[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "MovieSceneWidgetMaterialSectionTemplate": {
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "pad0x48_CXUQO[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BrushPropertyNamePath",
+        "Type": "TArray<struct Name>",
+        "Size": "0x10",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "MovieScene2DTransformSectionTemplate": {
+    "ClassSize": "0x380",
+    "Attributes": [
+      {
+        "Name": "pad0x18_DZ8MN[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PropertyData",
+        "Type": "struct MovieScenePropertySectionData",
+        "Size": "0x20",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Translation",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x78_7KZJZ[0x78]",
+        "Type": "char",
+        "Size": "0x78",
+        "Offset": "0xb0"
+      },
+      {
+        "Name": "Rotation",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "Scale",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x1a0"
+      },
+      {
+        "Name": "pad0x78_FV8SP[0x78]",
+        "Type": "char",
+        "Size": "0x78",
+        "Offset": "0x218"
+      },
+      {
+        "Name": "Shear",
+        "Type": "struct RichCurve",
+        "Size": "0x78",
+        "Offset": "0x290"
+      },
+      {
+        "Name": "pad0x78_SYUKJ[0x78]",
+        "Type": "char",
+        "Size": "0x78",
+        "Offset": "0x308"
+      }
+    ]
+  },
+  "DynamicPropertyPath": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Segments",
+        "Type": "TArray<struct PropertyPathSegment>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "DelegateRuntimeBinding": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "ObjectName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PropertyName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "FunctionName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "SourcePath",
+        "Type": "struct DynamicPropertyPath",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "Kind",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x7_LNDFH[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x31"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by dougthedruid on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}

@@ -4,12 +4,19 @@
 // https://github.com/DougTheDruid
 
 // Size 0x8
-struct Int32RangeBound
+struct FloatInterval
 {
 public:
-	char                                                         Type;                                              // 0x0(0x1)
-	char                                                         pad0x3_GJVAJ[0x3];                                 // 0x1(0x3)
-	int                                                          Value;                                             // 0x4(0x4)
+	float                                                        Min;                                               // 0x0(0x4)
+	float                                                        Max;                                               // 0x4(0x4)
+};
+
+
+// Size 0x10
+struct StringAssetReference
+{
+public:
+	struct FString                                               AssetLongPathname;                                 // 0x0(0x10)
 };
 
 
@@ -22,21 +29,53 @@ public:
 };
 
 
-// Size 0x1
-struct FallbackStruct
+// Size 0x14
+struct InterpCurvePointFloat
 {
 public:
-	char                                                         pad0x1_GCWZF[0x1];                                 // 0x0(0x1)
+	float                                                        InVal;                                             // 0x0(0x4)
+	float                                                        OutVal;                                            // 0x4(0x4)
+	float                                                        ArriveTangent;                                     // 0x8(0x4)
+	float                                                        LeaveTangent;                                      // 0xc(0x4)
+	char                                                         InterpMode;                                        // 0x10(0x1)
+	char                                                         pad0x3_2SRM3[0x3];                                 // 0x11(0x3)
 };
 
 
 // Size 0x8
-struct FloatRangeBound
+struct DateTime
 {
 public:
-	char                                                         Type;                                              // 0x0(0x1)
-	char                                                         pad0x3_OGAY4[0x3];                                 // 0x1(0x3)
-	float                                                        Value;                                             // 0x4(0x4)
+	char                                                         pad0x8_AIANU[0x8];                                 // 0x0(0x8)
+};
+
+
+// Size 0x10
+struct Guid
+{
+public:
+	int                                                          A;                                                 // 0x0(0x4)
+	int                                                          B;                                                 // 0x4(0x4)
+	int                                                          C;                                                 // 0x8(0x4)
+	int                                                          D;                                                 // 0xc(0x4)
+};
+
+
+// Size 0x1
+struct FallbackStruct
+{
+public:
+	char                                                         pad0x1_INRHR[0x1];                                 // 0x0(0x1)
+};
+
+
+// Size 0xc
+struct IntVector
+{
+public:
+	int                                                          X;                                                 // 0x0(0x4)
+	int                                                          Y;                                                 // 0x4(0x4)
+	int                                                          Z;                                                 // 0x8(0x4)
 };
 
 
@@ -51,21 +90,30 @@ public:
 };
 
 
-// Size 0x10
-struct StringClassReference
+// Size 0x8
+struct Int32Interval
 {
 public:
-	char                                                         pad0x10_FG3DK[0x10];                               // 0x0(0x10)
+	int                                                          Min;                                               // 0x0(0x4)
+	int                                                          Max;                                               // 0x4(0x4)
 };
 
 
-// Size 0x10
-struct Quat
+// Size 0xc
+struct Vector
 {
 public:
 	float                                                        X;                                                 // 0x0(0x4)
 	float                                                        Y;                                                 // 0x4(0x4)
 	float                                                        Z;                                                 // 0x8(0x4)
+};
+
+
+// Size 0x10
+struct Plane
+{
+public:
+	char                                                         pad0xc_VH3YZ[0xc];                                 // 0x0(0xc)
 	float                                                        W;                                                 // 0xc(0x4)
 };
 
@@ -82,36 +130,6 @@ public:
 
 
 // Size 0x8
-struct Vector2D
-{
-public:
-	float                                                        X;                                                 // 0x0(0x4)
-	float                                                        Y;                                                 // 0x4(0x4)
-};
-
-
-// Size 0xc
-struct Vector
-{
-public:
-	float                                                        X;                                                 // 0x0(0x4)
-	float                                                        Y;                                                 // 0x4(0x4)
-	float                                                        Z;                                                 // 0x8(0x4)
-};
-
-
-// Size 0x10
-struct Guid
-{
-public:
-	int                                                          A;                                                 // 0x0(0x4)
-	int                                                          B;                                                 // 0x4(0x4)
-	int                                                          C;                                                 // 0x8(0x4)
-	int                                                          D;                                                 // 0xc(0x4)
-};
-
-
-// Size 0x8
 struct IntPoint
 {
 public:
@@ -120,90 +138,30 @@ public:
 };
 
 
-// Size 0x4
-struct Color
-{
-public:
-	char                                                         B;                                                 // 0x0(0x1)
-	char                                                         G;                                                 // 0x1(0x1)
-	char                                                         R;                                                 // 0x2(0x1)
-	char                                                         A;                                                 // 0x3(0x1)
-};
-
-
-// Size 0xc
-struct Rotator
-{
-public:
-	float                                                        Pitch;                                             // 0x0(0x4)
-	float                                                        Yaw;                                               // 0x4(0x4)
-	float                                                        Roll;                                              // 0x8(0x4)
-};
-
-
-// Size 0x10
-struct Plane
-{
-public:
-	char                                                         pad0xc_RT43P[0xc];                                 // 0x0(0xc)
-	float                                                        W;                                                 // 0xc(0x4)
-};
-
-
-// Size 0xc
-struct IntVector
-{
-public:
-	int                                                          X;                                                 // 0x0(0x4)
-	int                                                          Y;                                                 // 0x4(0x4)
-	int                                                          Z;                                                 // 0x8(0x4)
-};
-
-
-// Size 0x8
-struct Int32Interval
-{
-public:
-	int                                                          Min;                                               // 0x0(0x4)
-	int                                                          Max;                                               // 0x4(0x4)
-};
-
-
-// Size 0x8
-struct FloatInterval
-{
-public:
-	float                                                        Min;                                               // 0x0(0x4)
-	float                                                        Max;                                               // 0x4(0x4)
-};
-
-
-// Size 0x8
-struct DateTime
-{
-public:
-	char                                                         pad0x8_RDT5H[0x8];                                 // 0x0(0x8)
-};
-
-
 // Size 0x8
 struct Timespan
 {
 public:
-	char                                                         pad0x8_I9RCC[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_KJYAN[0x8];                                 // 0x0(0x8)
 };
 
 
-// Size 0x14
-struct InterpCurvePointFloat
+// Size 0x8
+struct Vector2D
 {
 public:
-	float                                                        InVal;                                             // 0x0(0x4)
-	float                                                        OutVal;                                            // 0x4(0x4)
-	float                                                        ArriveTangent;                                     // 0x8(0x4)
-	float                                                        LeaveTangent;                                      // 0xc(0x4)
-	char                                                         InterpMode;                                        // 0x10(0x1)
-	char                                                         pad0x3_L46FL[0x3];                                 // 0x11(0x3)
+	float                                                        X;                                                 // 0x0(0x4)
+	float                                                        Y;                                                 // 0x4(0x4)
+};
+
+
+// Size 0x8
+struct FloatRangeBound
+{
+public:
+	char                                                         Type;                                              // 0x0(0x1)
+	char                                                         pad0x3_E34R7[0x3];                                 // 0x1(0x3)
+	float                                                        Value;                                             // 0x4(0x4)
 };
 
 
@@ -226,10 +184,125 @@ public:
 
 
 // Size 0x10
-struct StringAssetReference
+struct StringClassReference
 {
 public:
-	struct FString                                               AssetLongPathname;                                 // 0x0(0x10)
+	char                                                         pad0x10_4F07P[0x10];                               // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct Quat
+{
+public:
+	float                                                        X;                                                 // 0x0(0x4)
+	float                                                        Y;                                                 // 0x4(0x4)
+	float                                                        Z;                                                 // 0x8(0x4)
+	float                                                        W;                                                 // 0xc(0x4)
+};
+
+
+// Size 0x8
+struct Int32RangeBound
+{
+public:
+	char                                                         Type;                                              // 0x0(0x1)
+	char                                                         pad0x3_FTRR9[0x3];                                 // 0x1(0x3)
+	int                                                          Value;                                             // 0x4(0x4)
+};
+
+
+// Size 0xc
+struct Rotator
+{
+public:
+	float                                                        Pitch;                                             // 0x0(0x4)
+	float                                                        Yaw;                                               // 0x4(0x4)
+	float                                                        Roll;                                              // 0x8(0x4)
+};
+
+
+// Size 0x4
+struct Color
+{
+public:
+	char                                                         B;                                                 // 0x0(0x1)
+	char                                                         G;                                                 // 0x1(0x1)
+	char                                                         R;                                                 // 0x2(0x1)
+	char                                                         A;                                                 // 0x3(0x1)
+};
+
+
+// Size 0x3c
+struct OrientedBox
+{
+public:
+	struct Vector                                                Center;                                            // 0x0(0xc)
+	struct Vector                                                AxisX;                                             // 0xc(0xc)
+	struct Vector                                                AxisY;                                             // 0x18(0xc)
+	struct Vector                                                AxisZ;                                             // 0x24(0xc)
+	float                                                        ExtentX;                                           // 0x30(0x4)
+	float                                                        ExtentY;                                           // 0x34(0x4)
+	float                                                        ExtentZ;                                           // 0x38(0x4)
+};
+
+
+// Size 0x2c
+struct InterpCurvePointVector
+{
+public:
+	float                                                        InVal;                                             // 0x0(0x4)
+	struct Vector                                                OutVal;                                            // 0x4(0xc)
+	struct Vector                                                ArriveTangent;                                     // 0x10(0xc)
+	struct Vector                                                LeaveTangent;                                      // 0x1c(0xc)
+	char                                                         InterpMode;                                        // 0x28(0x1)
+	char                                                         pad0x3_7GZOB[0x3];                                 // 0x29(0x3)
+};
+
+
+// Size 0x30
+struct Transform
+{
+public:
+	struct Quat                                                  Rotation;                                          // 0x0(0x10)
+	struct Vector                                                Translation;                                       // 0x10(0xc)
+	char                                                         pad0x4_YSBXV[0x4];                                 // 0x1c(0x4)
+	struct Vector                                                Scale3D;                                           // 0x20(0xc)
+	char                                                         pad0x4_W0K1W[0x4];                                 // 0x2c(0x4)
+};
+
+
+// Size 0x40
+struct Matrix
+{
+public:
+	struct Plane                                                 XPlane;                                            // 0x0(0x10)
+	struct Plane                                                 YPlane;                                            // 0x10(0x10)
+	struct Plane                                                 ZPlane;                                            // 0x20(0x10)
+	struct Plane                                                 WPlane;                                            // 0x30(0x10)
+};
+
+
+// Size 0x50
+struct InterpCurvePointQuat
+{
+public:
+	float                                                        InVal;                                             // 0x0(0x4)
+	char                                                         pad0xc_ZLTZG[0xc];                                 // 0x4(0xc)
+	struct Quat                                                  OutVal;                                            // 0x10(0x10)
+	struct Quat                                                  ArriveTangent;                                     // 0x20(0x10)
+	struct Quat                                                  LeaveTangent;                                      // 0x30(0x10)
+	char                                                         InterpMode;                                        // 0x40(0x1)
+	char                                                         pad0xf_9F1O0[0xf];                                 // 0x41(0xf)
+};
+
+
+// Size 0x10
+struct FloatRange
+{
+public:
+	struct FloatRangeBound                                       LowerBound;                                        // 0x0(0x8)
+	struct FloatRangeBound                                       UpperBound;                                        // 0x8(0x8)
 };
 
 
@@ -239,8 +312,28 @@ struct InterpCurveFloat
 public:
 	TArray<struct InterpCurvePointFloat>                         Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
-	char                                                         pad0x3_5L26E[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_A1H8O[0x3];                                 // 0x11(0x3)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
+};
+
+
+// Size 0x14
+struct Box2D
+{
+public:
+	struct Vector2D                                              Min;                                               // 0x0(0x8)
+	struct Vector2D                                              Max;                                               // 0x8(0x8)
+	char                                                         IsValid;                                           // 0x10(0x1)
+	char                                                         pad0x3_82WFU[0x3];                                 // 0x11(0x3)
+};
+
+
+// Size 0x18
+struct TwoVectors
+{
+public:
+	struct Vector                                                v1;                                                // 0x0(0xc)
+	struct Vector                                                v2;                                                // 0xc(0xc)
 };
 
 
@@ -251,7 +344,29 @@ public:
 	struct Vector                                                Min;                                               // 0x0(0xc)
 	struct Vector                                                Max;                                               // 0xc(0xc)
 	char                                                         IsValid;                                           // 0x18(0x1)
-	char                                                         pad0x3_RPSVF[0x3];                                 // 0x19(0x3)
+	char                                                         pad0x3_QUH5Z[0x3];                                 // 0x19(0x3)
+};
+
+
+// Size 0x38
+struct InterpCurvePointLinearColor
+{
+public:
+	float                                                        InVal;                                             // 0x0(0x4)
+	struct LinearColor                                           OutVal;                                            // 0x4(0x10)
+	struct LinearColor                                           ArriveTangent;                                     // 0x14(0x10)
+	struct LinearColor                                           LeaveTangent;                                      // 0x24(0x10)
+	char                                                         InterpMode;                                        // 0x34(0x1)
+	char                                                         pad0x3_62TVZ[0x3];                                 // 0x35(0x3)
+};
+
+
+// Size 0x10
+struct Int32Range
+{
+public:
+	struct Int32RangeBound                                       LowerBound;                                        // 0x0(0x8)
+	struct Int32RangeBound                                       UpperBound;                                        // 0x8(0x8)
 };
 
 
@@ -274,144 +389,7 @@ public:
 	struct Vector2D                                              ArriveTangent;                                     // 0xc(0x8)
 	struct Vector2D                                              LeaveTangent;                                      // 0x14(0x8)
 	char                                                         InterpMode;                                        // 0x1c(0x1)
-	char                                                         pad0x3_4VIVK[0x3];                                 // 0x1d(0x3)
-};
-
-
-// Size 0x30
-struct Transform
-{
-public:
-	struct Quat                                                  Rotation;                                          // 0x0(0x10)
-	struct Vector                                                Translation;                                       // 0x10(0xc)
-	char                                                         pad0x4_VCAMM[0x4];                                 // 0x1c(0x4)
-	struct Vector                                                Scale3D;                                           // 0x20(0xc)
-	char                                                         pad0x4_7TFRF[0x4];                                 // 0x2c(0x4)
-};
-
-
-// Size 0x10
-struct FloatRange
-{
-public:
-	struct FloatRangeBound                                       LowerBound;                                        // 0x0(0x8)
-	struct FloatRangeBound                                       UpperBound;                                        // 0x8(0x8)
-};
-
-
-// Size 0x10
-struct Int32Range
-{
-public:
-	struct Int32RangeBound                                       LowerBound;                                        // 0x0(0x8)
-	struct Int32RangeBound                                       UpperBound;                                        // 0x8(0x8)
-};
-
-
-// Size 0x18
-struct TwoVectors
-{
-public:
-	struct Vector                                                v1;                                                // 0x0(0xc)
-	struct Vector                                                v2;                                                // 0xc(0xc)
-};
-
-
-// Size 0x38
-struct InterpCurvePointLinearColor
-{
-public:
-	float                                                        InVal;                                             // 0x0(0x4)
-	struct LinearColor                                           OutVal;                                            // 0x4(0x10)
-	struct LinearColor                                           ArriveTangent;                                     // 0x14(0x10)
-	struct LinearColor                                           LeaveTangent;                                      // 0x24(0x10)
-	char                                                         InterpMode;                                        // 0x34(0x1)
-	char                                                         pad0x3_F7Q78[0x3];                                 // 0x35(0x3)
-};
-
-
-// Size 0x50
-struct InterpCurvePointQuat
-{
-public:
-	float                                                        InVal;                                             // 0x0(0x4)
-	char                                                         pad0xc_MZTJ8[0xc];                                 // 0x4(0xc)
-	struct Quat                                                  OutVal;                                            // 0x10(0x10)
-	struct Quat                                                  ArriveTangent;                                     // 0x20(0x10)
-	struct Quat                                                  LeaveTangent;                                      // 0x30(0x10)
-	char                                                         InterpMode;                                        // 0x40(0x1)
-	char                                                         pad0xf_SPYPJ[0xf];                                 // 0x41(0xf)
-};
-
-
-// Size 0x40
-struct Matrix
-{
-public:
-	struct Plane                                                 XPlane;                                            // 0x0(0x10)
-	struct Plane                                                 YPlane;                                            // 0x10(0x10)
-	struct Plane                                                 ZPlane;                                            // 0x20(0x10)
-	struct Plane                                                 WPlane;                                            // 0x30(0x10)
-};
-
-
-// Size 0x2c
-struct InterpCurvePointVector
-{
-public:
-	float                                                        InVal;                                             // 0x0(0x4)
-	struct Vector                                                OutVal;                                            // 0x4(0xc)
-	struct Vector                                                ArriveTangent;                                     // 0x10(0xc)
-	struct Vector                                                LeaveTangent;                                      // 0x1c(0xc)
-	char                                                         InterpMode;                                        // 0x28(0x1)
-	char                                                         pad0x3_UXTII[0x3];                                 // 0x29(0x3)
-};
-
-
-// Size 0x14
-struct Box2D
-{
-public:
-	struct Vector2D                                              Min;                                               // 0x0(0x8)
-	struct Vector2D                                              Max;                                               // 0x8(0x8)
-	char                                                         IsValid;                                           // 0x10(0x1)
-	char                                                         pad0x3_UG30H[0x3];                                 // 0x11(0x3)
-};
-
-
-// Size 0x3c
-struct OrientedBox
-{
-public:
-	struct Vector                                                Center;                                            // 0x0(0xc)
-	struct Vector                                                AxisX;                                             // 0xc(0xc)
-	struct Vector                                                AxisY;                                             // 0x18(0xc)
-	struct Vector                                                AxisZ;                                             // 0x24(0xc)
-	float                                                        ExtentX;                                           // 0x30(0x4)
-	float                                                        ExtentY;                                           // 0x34(0x4)
-	float                                                        ExtentZ;                                           // 0x38(0x4)
-};
-
-
-// Size 0x18
-struct InterpCurveVector2D
-{
-public:
-	TArray<struct InterpCurvePointVector2D>                      Points;                                            // 0x0(0x10)
-	bool                                                         bIsLooped;                                         // 0x10(0x1)
-	char                                                         pad0x3_QE1MD[0x3];                                 // 0x11(0x3)
-	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
-};
-
-
-// Size 0x18
-struct InterpCurveVector
-{
-public:
-	TArray<struct InterpCurvePointVector>                        Points;                                            // 0x0(0x10)
-	bool                                                         bIsLooped;                                         // 0x10(0x1)
-	char                                                         pad0x3_NGFKM[0x3];                                 // 0x11(0x3)
-	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
+	char                                                         pad0x3_CVGYA[0x3];                                 // 0x1d(0x3)
 };
 
 
@@ -424,18 +402,7 @@ public:
 	struct TwoVectors                                            ArriveTangent;                                     // 0x1c(0x18)
 	struct TwoVectors                                            LeaveTangent;                                      // 0x34(0x18)
 	char                                                         InterpMode;                                        // 0x4c(0x1)
-	char                                                         pad0x3_VFCQA[0x3];                                 // 0x4d(0x3)
-};
-
-
-// Size 0x18
-struct InterpCurveLinearColor
-{
-public:
-	TArray<struct InterpCurvePointLinearColor>                   Points;                                            // 0x0(0x10)
-	bool                                                         bIsLooped;                                         // 0x10(0x1)
-	char                                                         pad0x3_ZTOQT[0x3];                                 // 0x11(0x3)
-	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
+	char                                                         pad0x3_64QTN[0x3];                                 // 0x4d(0x3)
 };
 
 
@@ -445,7 +412,40 @@ struct InterpCurveQuat
 public:
 	TArray<struct InterpCurvePointQuat>                          Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
-	char                                                         pad0x3_P4GRK[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_WLU0C[0x3];                                 // 0x11(0x3)
+	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
+};
+
+
+// Size 0x18
+struct InterpCurveVector
+{
+public:
+	TArray<struct InterpCurvePointVector>                        Points;                                            // 0x0(0x10)
+	bool                                                         bIsLooped;                                         // 0x10(0x1)
+	char                                                         pad0x3_2X37V[0x3];                                 // 0x11(0x3)
+	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
+};
+
+
+// Size 0x18
+struct InterpCurveVector2D
+{
+public:
+	TArray<struct InterpCurvePointVector2D>                      Points;                                            // 0x0(0x10)
+	bool                                                         bIsLooped;                                         // 0x10(0x1)
+	char                                                         pad0x3_Q5DL7[0x3];                                 // 0x11(0x3)
+	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
+};
+
+
+// Size 0x18
+struct InterpCurveLinearColor
+{
+public:
+	TArray<struct InterpCurvePointLinearColor>                   Points;                                            // 0x0(0x10)
+	bool                                                         bIsLooped;                                         // 0x10(0x1)
+	char                                                         pad0x3_ZZC24[0x3];                                 // 0x11(0x3)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 
@@ -456,7 +456,7 @@ struct InterpCurveTwoVectors
 public:
 	TArray<struct InterpCurvePointTwoVectors>                    Points;                                            // 0x0(0x10)
 	bool                                                         bIsLooped;                                         // 0x10(0x1)
-	char                                                         pad0x3_LUFT7[0x3];                                 // 0x11(0x3)
+	char                                                         pad0x3_DG02E[0x3];                                 // 0x11(0x3)
 	float                                                        LoopKeyOffset;                                     // 0x14(0x4)
 };
 

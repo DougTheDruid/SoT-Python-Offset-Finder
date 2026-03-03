@@ -1,0 +1,1778 @@
+{
+  "PointerEvent": {
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "pad0x88_PZ4T0[0x88]",
+        "Type": "char",
+        "Size": "0x88",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SlateFontInfo": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "FontObject",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "FontMaterial",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x18_RXJU0[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "TypefaceFontName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Size",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "FontName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "Hinting",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "pad0x3_90TN1[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x3d"
+      }
+    ]
+  },
+  "MotionEvent": {
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "pad0x58_HN55P[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "NavigationEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_73MDE[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SlateWidgetStyle": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_LZT9L[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "Geometry": {
+    "ClassSize": "0x34",
+    "Attributes": [
+      {
+        "Name": "pad0x34_J3IWG[0x34]",
+        "Type": "char",
+        "Size": "0x34",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AnalogInputEvent": {
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "pad0x58_G7MYW[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "KeyEvent": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x50_5NH8R[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SlateColor": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "SpecifiedColor",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ColorUseRule",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x1f_PVYHT[0x1f]",
+        "Type": "char",
+        "Size": "0x1f",
+        "Offset": "0x11"
+      }
+    ]
+  },
+  "ControllerEvent": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x50_432LE[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "SlateSound": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ResourceObject",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x10_DQVYE[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "FocusEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_IQE1L[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "Margin": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Left",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Top",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "Right",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Bottom",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "InputEvent": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x28_NY0SG[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CharacterEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x30_DB8WG[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "FontData": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "FontFilename",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BulkDataPtr",
+        "Type": "class FontBulkData*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Hinting",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x7_O3UZQ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x19"
+      },
+      {
+        "Name": "FontData",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "TypefaceEntry": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "Name",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Font",
+        "Type": "struct FontData",
+        "Size": "0x30",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "SlateBrush": {
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "ImageSize",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DrawAs",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x3_5BUAY[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x9"
+      },
+      {
+        "Name": "Margin",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "Tint",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "pad0x4_HO44J[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "TintColor",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "Tiling",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "Mirroring",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x61"
+      },
+      {
+        "Name": "ImageType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x62"
+      },
+      {
+        "Name": "pad0x5_K97VB[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0x63"
+      },
+      {
+        "Name": "ResourceObject",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "ResourceName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "bIsDynamicallyLoaded",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "bHasUObject",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x79"
+      },
+      {
+        "Name": "pad0x2_E5IL3[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x7a"
+      },
+      {
+        "Name": "UVRegion",
+        "Type": "struct Box2D",
+        "Size": "0x14",
+        "Offset": "0x7c"
+      }
+    ]
+  },
+  "ProgressBarStyle": {
+    "ClassSize": "0x1b8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_N0H79[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BackgroundImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "FillImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "MarqueeImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x128"
+      }
+    ]
+  },
+  "SplitterStyle": {
+    "ClassSize": "0x128",
+    "Attributes": [
+      {
+        "Name": "pad0x8_CVBND[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "HandleNormalBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "HandleHighlightBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "Typeface": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Fonts",
+        "Type": "TArray<struct TypefaceEntry>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TextBlockStyle": {
+    "ClassSize": "0x160",
+    "Attributes": [
+      {
+        "Name": "pad0x8_P5CL9[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Font",
+        "Type": "struct SlateFontInfo",
+        "Size": "0x40",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ColorAndOpacity",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "ShadowOffset",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "ShadowColorAndOpacity",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "SelectedBackgroundColor",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "HighlightColor",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "HighlightShape",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "ScrollBorderStyle": {
+    "ClassSize": "0x128",
+    "Attributes": [
+      {
+        "Name": "pad0x8_AHXWI[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TopShadowBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "BottomShadowBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "TableColumnHeaderStyle": {
+    "ClassSize": "0x518",
+    "Attributes": [
+      {
+        "Name": "pad0x8_FL2Z4[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SortPrimaryAscendingImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "SortPrimaryDescendingImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "SortSecondaryAscendingImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "SortSecondaryDescendingImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x1b8"
+      },
+      {
+        "Name": "NormalBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x248"
+      },
+      {
+        "Name": "HoveredBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x2d8"
+      },
+      {
+        "Name": "MenuDropdownImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x368"
+      },
+      {
+        "Name": "MenuDropdownNormalBorderBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "MenuDropdownHoveredBorderBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x488"
+      }
+    ]
+  },
+  "ExpandableAreaStyle": {
+    "ClassSize": "0x128",
+    "Attributes": [
+      {
+        "Name": "pad0x8_FIES5[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CollapsedImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ExpandedImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "CheckBoxStyle": {
+    "ClassSize": "0x5f0",
+    "Attributes": [
+      {
+        "Name": "pad0x8_JS7JT[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CheckBoxType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x7_FIFJY[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x9"
+      },
+      {
+        "Name": "UncheckedImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "UncheckedHoveredImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0xa0"
+      },
+      {
+        "Name": "UncheckedPressedImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x130"
+      },
+      {
+        "Name": "CheckedImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x1c0"
+      },
+      {
+        "Name": "CheckedHoveredImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x250"
+      },
+      {
+        "Name": "CheckedPressedImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x2e0"
+      },
+      {
+        "Name": "UndeterminedImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x370"
+      },
+      {
+        "Name": "UndeterminedHoveredImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "UndeterminedPressedImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x490"
+      },
+      {
+        "Name": "Padding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x520"
+      },
+      {
+        "Name": "ForegroundColor",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x530"
+      },
+      {
+        "Name": "BorderBackgroundColor",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x560"
+      },
+      {
+        "Name": "CheckedSlateSound",
+        "Type": "struct SlateSound",
+        "Size": "0x18",
+        "Offset": "0x590"
+      },
+      {
+        "Name": "UncheckedSlateSound",
+        "Type": "struct SlateSound",
+        "Size": "0x18",
+        "Offset": "0x5a8"
+      },
+      {
+        "Name": "HoveredSlateSound",
+        "Type": "struct SlateSound",
+        "Size": "0x18",
+        "Offset": "0x5c0"
+      },
+      {
+        "Name": "CheckedSound",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x5d8"
+      },
+      {
+        "Name": "UncheckedSound",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x5e0"
+      },
+      {
+        "Name": "HoveredSound",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x5e8"
+      }
+    ]
+  },
+  "ScrollBarStyle": {
+    "ClassSize": "0x518",
+    "Attributes": [
+      {
+        "Name": "pad0x8_6P144[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "HorizontalBackgroundImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "VerticalBackgroundImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "VerticalTopSlotImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "HorizontalTopSlotImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x1b8"
+      },
+      {
+        "Name": "VerticalBottomSlotImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x248"
+      },
+      {
+        "Name": "HorizontalBottomSlotImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x2d8"
+      },
+      {
+        "Name": "NormalThumbImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x368"
+      },
+      {
+        "Name": "HoveredThumbImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "DraggedThumbImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x488"
+      }
+    ]
+  },
+  "InlineTextImageStyle": {
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Name": "pad0x8_SKOBR[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Image",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x8_R8QF8[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x98"
+      }
+    ]
+  },
+  "ButtonStyle": {
+    "ClassSize": "0x2a8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_0AQT9[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Normal",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Hovered",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "Pressed",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "Disabled",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x1b8"
+      },
+      {
+        "Name": "NormalPadding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x248"
+      },
+      {
+        "Name": "PressedPadding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x258"
+      },
+      {
+        "Name": "PressedSlateSound",
+        "Type": "struct SlateSound",
+        "Size": "0x18",
+        "Offset": "0x268"
+      },
+      {
+        "Name": "HoveredSlateSound",
+        "Type": "struct SlateSound",
+        "Size": "0x18",
+        "Offset": "0x280"
+      },
+      {
+        "Name": "PressedSound",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x298"
+      },
+      {
+        "Name": "HoveredSound",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x2a0"
+      }
+    ]
+  },
+  "SpinBoxStyle": {
+    "ClassSize": "0x318",
+    "Attributes": [
+      {
+        "Name": "pad0x8_Q2U1X[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BackgroundBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "HoveredBackgroundBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "ActiveFillBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "InactiveFillBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x1b8"
+      },
+      {
+        "Name": "ArrowsImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x248"
+      },
+      {
+        "Name": "ForegroundColor",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x2d8"
+      },
+      {
+        "Name": "TextPadding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x308"
+      }
+    ]
+  },
+  "TableRowStyle": {
+    "ClassSize": "0x728",
+    "Attributes": [
+      {
+        "Name": "pad0x8_MDCXD[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SelectorFocusedBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ActiveHoveredBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "ActiveBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "InactiveHoveredBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x1b8"
+      },
+      {
+        "Name": "InactiveBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x248"
+      },
+      {
+        "Name": "EvenRowBackgroundHoveredBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x2d8"
+      },
+      {
+        "Name": "EvenRowBackgroundBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x368"
+      },
+      {
+        "Name": "OddRowBackgroundHoveredBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "OddRowBackgroundBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x488"
+      },
+      {
+        "Name": "TextColor",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x518"
+      },
+      {
+        "Name": "SelectedTextColor",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x548"
+      },
+      {
+        "Name": "DropIndicator_Above",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x578"
+      },
+      {
+        "Name": "DropIndicator_Onto",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x608"
+      },
+      {
+        "Name": "DropIndicator_Below",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x698"
+      }
+    ]
+  },
+  "ScrollBoxStyle": {
+    "ClassSize": "0x248",
+    "Attributes": [
+      {
+        "Name": "pad0x8_ITTBK[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TopShadowBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "BottomShadowBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "LeftShadowBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "RightShadowBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x1b8"
+      }
+    ]
+  },
+  "SliderStyle": {
+    "ClassSize": "0x248",
+    "Attributes": [
+      {
+        "Name": "pad0x8_ULX9X[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NormalBarImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "DisabledBarImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "NormalThumbImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "DisabledThumbImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x1b8"
+      }
+    ]
+  },
+  "EditableTextStyle": {
+    "ClassSize": "0x228",
+    "Attributes": [
+      {
+        "Name": "pad0x8_C1Z0O[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Font",
+        "Type": "struct SlateFontInfo",
+        "Size": "0x40",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ColorAndOpacity",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "BackgroundImageSelected",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "BackgroundImageComposing",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x108"
+      },
+      {
+        "Name": "CaretImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x198"
+      }
+    ]
+  },
+  "VolumeControlStyle": {
+    "ClassSize": "0x520",
+    "Attributes": [
+      {
+        "Name": "pad0x8_3B8UH[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SliderStyle",
+        "Type": "struct SliderStyle",
+        "Size": "0x248",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "HighVolumeImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x250"
+      },
+      {
+        "Name": "MidVolumeImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x2e0"
+      },
+      {
+        "Name": "LowVolumeImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x370"
+      },
+      {
+        "Name": "NoVolumeImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "MutedImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x490"
+      }
+    ]
+  },
+  "WindowStyle": {
+    "ClassSize": "0x1028",
+    "Attributes": [
+      {
+        "Name": "pad0x8_6PG49[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MinimizeButtonStyle",
+        "Type": "struct ButtonStyle",
+        "Size": "0x2a8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "MaximizeButtonStyle",
+        "Type": "struct ButtonStyle",
+        "Size": "0x2a8",
+        "Offset": "0x2b0"
+      },
+      {
+        "Name": "RestoreButtonStyle",
+        "Type": "struct ButtonStyle",
+        "Size": "0x2a8",
+        "Offset": "0x558"
+      },
+      {
+        "Name": "CloseButtonStyle",
+        "Type": "struct ButtonStyle",
+        "Size": "0x2a8",
+        "Offset": "0x800"
+      },
+      {
+        "Name": "TitleTextStyle",
+        "Type": "struct TextBlockStyle",
+        "Size": "0x160",
+        "Offset": "0xaa8"
+      },
+      {
+        "Name": "ActiveTitleBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0xc08"
+      },
+      {
+        "Name": "InactiveTitleBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0xc98"
+      },
+      {
+        "Name": "FlashTitleBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0xd28"
+      },
+      {
+        "Name": "OutlineBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0xdb8"
+      },
+      {
+        "Name": "OutlineColor",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0xe48"
+      },
+      {
+        "Name": "BorderBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0xe78"
+      },
+      {
+        "Name": "BackgroundBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0xf08"
+      },
+      {
+        "Name": "ChildBackgroundBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0xf98"
+      }
+    ]
+  },
+  "HyperlinkStyle": {
+    "ClassSize": "0x420",
+    "Attributes": [
+      {
+        "Name": "pad0x8_L1GEP[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "UnderlineStyle",
+        "Type": "struct ButtonStyle",
+        "Size": "0x2a8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "TextStyle",
+        "Type": "struct TextBlockStyle",
+        "Size": "0x160",
+        "Offset": "0x2b0"
+      },
+      {
+        "Name": "Padding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x410"
+      }
+    ]
+  },
+  "CompositeSubFont": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "Typeface",
+        "Type": "struct Typeface",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CharacterRanges",
+        "Type": "TArray<struct Int32Range>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Languages",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "ScalingFactor",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x4_KPRUI[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
+      }
+    ]
+  },
+  "ComboButtonStyle": {
+    "ClassSize": "0x3e0",
+    "Attributes": [
+      {
+        "Name": "pad0x8_WAT1U[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ButtonStyle",
+        "Type": "struct ButtonStyle",
+        "Size": "0x2a8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "DownArrowImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x2b0"
+      },
+      {
+        "Name": "MenuBorderBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x340"
+      },
+      {
+        "Name": "MenuBorderPadding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x3d0"
+      }
+    ]
+  },
+  "DockTabStyle": {
+    "ClassSize": "0x6e8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_LPMNI[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CloseButtonStyle",
+        "Type": "struct ButtonStyle",
+        "Size": "0x2a8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "NormalBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x2b0"
+      },
+      {
+        "Name": "ActiveBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x340"
+      },
+      {
+        "Name": "ColorOverlayBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "ForegroundBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x460"
+      },
+      {
+        "Name": "HoveredBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x4f0"
+      },
+      {
+        "Name": "ContentAreaBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x580"
+      },
+      {
+        "Name": "TabWellBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x610"
+      },
+      {
+        "Name": "TabPadding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x6a0"
+      },
+      {
+        "Name": "OverlapWidth",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x6b0"
+      },
+      {
+        "Name": "pad0x4_W2479[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x6b4"
+      },
+      {
+        "Name": "FlashColor",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x6b8"
+      }
+    ]
+  },
+  "EditableTextBoxStyle": {
+    "ClassSize": "0x860",
+    "Attributes": [
+      {
+        "Name": "pad0x8_5BUPH[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BackgroundImageNormal",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "BackgroundImageHovered",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x98"
+      },
+      {
+        "Name": "BackgroundImageFocused",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "BackgroundImageReadOnly",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x1b8"
+      },
+      {
+        "Name": "Padding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x248"
+      },
+      {
+        "Name": "Font",
+        "Type": "struct SlateFontInfo",
+        "Size": "0x40",
+        "Offset": "0x258"
+      },
+      {
+        "Name": "ForegroundColor",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x298"
+      },
+      {
+        "Name": "BackgroundColor",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x2c8"
+      },
+      {
+        "Name": "ReadOnlyForegroundColor",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0x2f8"
+      },
+      {
+        "Name": "HScrollBarPadding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x328"
+      },
+      {
+        "Name": "VScrollBarPadding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0x338"
+      },
+      {
+        "Name": "ScrollBarStyle",
+        "Type": "struct ScrollBarStyle",
+        "Size": "0x518",
+        "Offset": "0x348"
+      }
+    ]
+  },
+  "HeaderRowStyle": {
+    "ClassSize": "0xc20",
+    "Attributes": [
+      {
+        "Name": "pad0x8_MDDGH[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ColumnStyle",
+        "Type": "struct TableColumnHeaderStyle",
+        "Size": "0x518",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "LastColumnStyle",
+        "Type": "struct TableColumnHeaderStyle",
+        "Size": "0x518",
+        "Offset": "0x520"
+      },
+      {
+        "Name": "ColumnSplitterStyle",
+        "Type": "struct SplitterStyle",
+        "Size": "0x128",
+        "Offset": "0xa38"
+      },
+      {
+        "Name": "BackgroundBrush",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0xb60"
+      },
+      {
+        "Name": "ForegroundColor",
+        "Type": "struct SlateColor",
+        "Size": "0x30",
+        "Offset": "0xbf0"
+      }
+    ]
+  },
+  "ComboBoxStyle": {
+    "ClassSize": "0x428",
+    "Attributes": [
+      {
+        "Name": "pad0x8_55RGH[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ComboButtonStyle",
+        "Type": "struct ComboButtonStyle",
+        "Size": "0x3e0",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "PressedSlateSound",
+        "Type": "struct SlateSound",
+        "Size": "0x18",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "SelectionChangeSlateSound",
+        "Type": "struct SlateSound",
+        "Size": "0x18",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "PressedSound",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x418"
+      },
+      {
+        "Name": "SelectionChangeSound",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x420"
+      }
+    ]
+  },
+  "CompositeFont": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "DefaultTypeface",
+        "Type": "struct Typeface",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SubTypefaces",
+        "Type": "TArray<struct CompositeSubFont>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x8_EM1TV[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "InlineEditableTextBlockStyle": {
+    "ClassSize": "0x9c8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_7AUC8[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "EditableTextBoxStyle",
+        "Type": "struct EditableTextBoxStyle",
+        "Size": "0x860",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "TextStyle",
+        "Type": "struct TextBlockStyle",
+        "Size": "0x160",
+        "Offset": "0x868"
+      }
+    ]
+  },
+  "SearchBoxStyle": {
+    "ClassSize": "0xb00",
+    "Attributes": [
+      {
+        "Name": "pad0x8_4JWG4[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TextBoxStyle",
+        "Type": "struct EditableTextBoxStyle",
+        "Size": "0x860",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ActiveFontInfo",
+        "Type": "struct SlateFontInfo",
+        "Size": "0x40",
+        "Offset": "0x868"
+      },
+      {
+        "Name": "UpArrowImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x8a8"
+      },
+      {
+        "Name": "DownArrowImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x938"
+      },
+      {
+        "Name": "GlassImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0x9c8"
+      },
+      {
+        "Name": "ClearImage",
+        "Type": "struct SlateBrush",
+        "Size": "0x90",
+        "Offset": "0xa58"
+      },
+      {
+        "Name": "ImagePadding",
+        "Type": "struct Margin",
+        "Size": "0x10",
+        "Offset": "0xae8"
+      },
+      {
+        "Name": "bLeftAlignButtons",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xaf8"
+      },
+      {
+        "Name": "pad0x7_5OSH2[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xaf9"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by dougthedruid on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}

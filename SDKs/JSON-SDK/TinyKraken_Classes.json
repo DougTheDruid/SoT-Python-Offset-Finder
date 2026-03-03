@@ -1,0 +1,337 @@
+{
+  "TinyKrakenHead": {
+    "Super": "Actor",
+    "FullSize": "0x528",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x188",
+    "Attributes": [
+      {
+        "Name": "pad0x30_NKICZ[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "Root",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "SkeletalMesh",
+        "Type": "class SkeletalMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "HealthComponent",
+        "Type": "class HealthComponent*",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "DamageableComponent",
+        "Type": "class ActorDamageableComponent*",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "SphereComponent",
+        "Type": "class SphereComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "TinyKrakenExplosionComponent",
+        "Type": "class TinyKrakenExplosionComponent*",
+        "Size": "0x8",
+        "Offset": "0x3f8"
+      },
+      {
+        "Name": "HeadAnimInstance",
+        "Type": "class KrakenHeadAnimationInstance*",
+        "Size": "0x8",
+        "Offset": "0x400"
+      },
+      {
+        "Name": "pad0x120_IHZ4H[0x120]",
+        "Type": "char",
+        "Size": "0x120",
+        "Offset": "0x408"
+      }
+    ]
+  },
+  "BattlePhaseProgressionTrackerBase": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ShouldPhaseTimeout",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x3_DAYTB[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x29"
+      },
+      {
+        "Name": "PhaseTimeLimit",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "ResetProgressOnTimeLimitReached",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x7_A7RLS[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x31"
+      }
+    ]
+  },
+  "SandboxPerformanceConstraintActivity_TinyKraken": {
+    "Super": "SandboxPerformanceConstraintActivityType",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TinyKrakenEventServiceParams": {
+    "Super": "DataAsset",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "TinyKrakenSpawnLocationEQSQuery",
+        "Type": "class EnvQuery*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "TinyKrakenApproachedBanner",
+        "Type": "class GameEventBannerDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "TinyKrakenDefeatedBanner",
+        "Type": "class GameEventBannerDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "TentacleType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "TinyKrakenType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "TinyKrakenMultiPhaseEventData",
+        "Type": "class TinyKrakenMultiPhaseEventDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x50"
+      }
+    ]
+  },
+  "TinyKrakenShipBitingBehaviourParamsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x130",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x108",
+    "Attributes": [
+      {
+        "Name": "BitingParams",
+        "Type": "struct TinyKrakenShipBitingBehaviourParams",
+        "Size": "0xe8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "DraggingParams",
+        "Type": "struct KrakenShipWrappingBehaviourParamsCollection",
+        "Size": "0x10",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "WrappingParams",
+        "Type": "struct KrakenShipWrappingBehaviourParamsCollection",
+        "Size": "0x10",
+        "Offset": "0x120"
+      }
+    ]
+  },
+  "TinyKrakenRoarShockwaveBehaviourParamsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x80",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "Params",
+        "Type": "struct TinyKrakenRoarShockwaveBehaviourParams",
+        "Size": "0x58",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "TinyKraken": {
+    "Super": "Kraken",
+    "FullSize": "0xa00",
+    "InheritedSize": "0x970",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "HeadSpawnZOffset",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x968"
+      },
+      {
+        "Name": "pad0x4_TVQOA[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x96c"
+      },
+      {
+        "Name": "TinyKrakenBattlePhaseParamsList",
+        "Type": "TArray<struct TinyKrakenBattlePhaseParams>",
+        "Size": "0x10",
+        "Offset": "0x970"
+      },
+      {
+        "Name": "pad0x80_B4XO0[0x80]",
+        "Type": "char",
+        "Size": "0x80",
+        "Offset": "0x980"
+      }
+    ]
+  },
+  "TinyKrakenHeadParamsDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Params",
+        "Type": "struct TinyKrakenHeadParams",
+        "Size": "0x30",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "TinyKrakenEventService": {
+    "Super": "Actor",
+    "FullSize": "0x5a0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x200",
+    "Attributes": [
+      {
+        "Name": "pad0x40_HFOA8[0x40]",
+        "Type": "char",
+        "Size": "0x40",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "TinyKrakenServiceParams",
+        "Type": "class TinyKrakenEventServiceParams*",
+        "Size": "0x8",
+        "Offset": "0x3e0"
+      },
+      {
+        "Name": "ActiveTinyKraken",
+        "Type": "class TinyKraken*",
+        "Size": "0x8",
+        "Offset": "0x3e8"
+      },
+      {
+        "Name": "pad0x1b0_9KKP0[0x1b0]",
+        "Type": "char",
+        "Size": "0x1b0",
+        "Offset": "0x3f0"
+      }
+    ]
+  },
+  "TinyKrakenMultiPhaseEventDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "TinyKrakenBattlePhaseParamsList",
+        "Type": "TArray<struct TinyKrakenBattlePhaseParams>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "BattlePhaseProgressionTrackerTentaclesDestroyed": {
+    "Super": "BattlePhaseProgressionTrackerBase",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x68",
+    "Attributes": [
+      {
+        "Name": "pad0x68_DF0XV[0x68]",
+        "Type": "char",
+        "Size": "0x68",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "BattlePhaseProgressionTrackerKrakenKilled": {
+    "Super": "BattlePhaseProgressionTrackerBase",
+    "FullSize": "0x90",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "pad0x58_4MX9O[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "BattlePhaseProgressionTrackerDamage": {
+    "Super": "BattlePhaseProgressionTrackerBase",
+    "FullSize": "0xf8",
+    "InheritedSize": "0x38",
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "DamageRequiredToProgress",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0xbc_6S720[0xbc]",
+        "Type": "char",
+        "Size": "0xbc",
+        "Offset": "0x3c"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by dougthedruid on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}

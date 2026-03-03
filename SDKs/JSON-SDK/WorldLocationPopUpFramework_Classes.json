@@ -1,0 +1,220 @@
+{
+  "TaleAllowWorldLocationPopUpStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TalePreventWorldLocationPopUpStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0x98",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WorldLocationPopUpDataAsset": {
+    "Super": "DataAsset",
+    "FullSize": "0x80",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "Id",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "BannerIcon",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "DisplayText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "AudioOverride",
+        "Type": "class PopUpAudioDesc*",
+        "Size": "0x8",
+        "Offset": "0x78"
+      }
+    ]
+  },
+  "WorldLocationVisitorComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xf8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "pad0x8_PR3WQ[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "RevisitCooldown",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "pad0x34_IDW5T[0x34]",
+        "Type": "char",
+        "Size": "0x34",
+        "Offset": "0xc4"
+      }
+    ]
+  },
+  "TaleAllowWorldLocationPopUpStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "MaxDistanceFromWorldLocationPopUp",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x4_B1J0U[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x84"
+      },
+      {
+        "Name": "NearbyActor",
+        "Type": "struct QuestVariableActor",
+        "Size": "0x30",
+        "Offset": "0x88"
+      }
+    ]
+  },
+  "TaleWorldLocationPopUpServiceDesc": {
+    "Super": "TaleQuestServiceDesc",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "WorldLocationVisitorInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "TaleWorldLocationPopUpService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0x90",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "SuppressedWorldLocationPopUpNearbyLocations",
+        "Type": "TArray<struct TaleWorldLocationPopUpServiceEntry>",
+        "Size": "0x10",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x20_RTMIS[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x70"
+      }
+    ]
+  },
+  "TalePreventWorldLocationPopUpStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0xb8",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "DisableEntireIsland",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "pad0x3_YS2O8[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x81"
+      },
+      {
+        "Name": "MaxDistanceFromWorldLocationPopUp",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x84"
+      },
+      {
+        "Name": "NearbyLocation",
+        "Type": "struct QuestVariableVector",
+        "Size": "0x30",
+        "Offset": "0x88"
+      }
+    ]
+  },
+  "WorldLocationPopUpComponent": {
+    "Super": "SceneComponent",
+    "FullSize": "0x360",
+    "InheritedSize": "0x2d0",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "PopUpData",
+        "Type": "class WorldLocationPopUpDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x2d0"
+      },
+      {
+        "Name": "LocationOverlapVolume",
+        "Type": "class ShapeComponent*",
+        "Size": "0x8",
+        "Offset": "0x2d8"
+      },
+      {
+        "Name": "LocationCooldown",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2e0"
+      },
+      {
+        "Name": "AlwaysShowPopUp",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x2e4"
+      },
+      {
+        "Name": "pad0x63_G7TFR[0x63]",
+        "Type": "char",
+        "Size": "0x63",
+        "Offset": "0x2e5"
+      },
+      {
+        "Name": "SuppressedCrews",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x348"
+      },
+      {
+        "Name": "pad0x8_WWRRX[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x358"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by dougthedruid on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}

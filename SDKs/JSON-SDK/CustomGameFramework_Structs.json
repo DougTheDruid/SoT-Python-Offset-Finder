@@ -1,0 +1,380 @@
+{
+  "CustomSeasRequestExitLobbyEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_4ICF8[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionCodeRequestToGame": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_6OJYJ[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasOpenSessionToUI": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "SessionType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasHostUpdateSessionLaunchStateToGame": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "NewState",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionStartGameRequestToGame": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_ULUVE[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionDetailsRequestToGame": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_YHQ03[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasRoleChangeToUI": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "NewRole",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionCodeUpdateToUI": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Code",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSubscriptionStateRequestToGame": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_DDEJA[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSubscriptionStateUpdateToUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Status",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SubscribedSince",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CustomSeasSessionRosterPlayerInformation": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "UserId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Gamertag",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Role",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "Platform",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x7_U7YO7[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x31"
+      },
+      {
+        "Name": "ShipId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "IsSubscribed",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x7_RCS2G[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x49"
+      }
+    ]
+  },
+  "CustomSeasSessionLaunchStateUpdateToUI": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "NewState",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasRequestStartSessionEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_MY5HR[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasCreateSessionRequestToGame": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "SessionType",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Activities",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "SessionVisibility",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "CustomSeasExitSessionToGame": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_EONHT[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasRequestCustomGameCreateLobbyEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "SessionType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionRosterShipInformation": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "ShipId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ShipName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ShipIconUrl",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "ShipType",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "IsDamaged",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x7_OJ65D[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x41"
+      }
+    ]
+  },
+  "CustomSeasUISessionDetailsInformation": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "PrimaryTag",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "IsRarePreset",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_N6K6H[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "Activities",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "PreferController",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "ScoreboardsEnabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x29"
+      },
+      {
+        "Name": "pad0x6_AQ78Q[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x2a"
+      }
+    ]
+  },
+  "CustomSeasSessionRosterRequestToGame": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_SUWA0[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionDetailsUpdateToUI": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Details",
+        "Type": "struct CustomSeasUISessionDetailsInformation",
+        "Size": "0x30",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionRosterUIInfo": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Players",
+        "Type": "TArray<struct CustomSeasSessionRosterPlayerInformation>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Ships",
+        "Type": "TArray<struct CustomSeasSessionRosterShipInformation>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CustomSeasSessionRosterUpdateToUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Roster",
+        "Type": "struct CustomSeasSessionRosterUIInfo",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by dougthedruid on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}

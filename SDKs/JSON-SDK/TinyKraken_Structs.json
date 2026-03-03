@@ -1,0 +1,429 @@
+{
+  "TinyKrakenBattlePhaseParams": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "PhaseName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TentaclesActiveInPhase",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "HeadActiveInPhase",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x9"
+      },
+      {
+        "Name": "pad0x6_J82XH[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0xa"
+      },
+      {
+        "Name": "KrakenParams",
+        "Type": "class KrakenParamsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "KrakenHeadParams",
+        "Type": "class TinyKrakenHeadParamsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "BattlePhaseProgressionTracker",
+        "Type": "class BattlePhaseProgressionTrackerBase*",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "DelayBeforeNextPhase",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "InactiveTimerBeforeSubmerge",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      }
+    ]
+  },
+  "TinyKrakenHeadIdleBehaviourParams": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "pad0x38_TRFH9[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TinyKrakenHeadBehaviourParams": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "AttackType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_EUKRE[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "HeadMoveEQSQuery",
+        "Type": "class EnvQuery*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "TimeBeforeNextHeadAttack",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "MinPlayRateScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "MaxPlayRateScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "PanicDespawnShipRangeRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "PanicDespawnWatercraftRangeRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "PanicDespawnAnimationPlayRateScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "PreDeathAnimationPlayRateScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "AttackSubmergedZOffset",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "DamageRequiredToCancelAttack",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x4_0PX7U[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
+      }
+    ]
+  },
+  "TinyKrakenBehaviourParams": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Type",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_CJWOD[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "RoarShockwaveParams",
+        "Type": "class TinyKrakenRoarShockwaveBehaviourParamsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "FuryOfTheSeaParams",
+        "Type": "class TinyKrakenShipBitingBehaviourParamsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "TinyKrakenBiteAttackShipData": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ShipSize",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MinHullDamageHoles",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "MaxHullDamageHoles",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "RollImpulseForce",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "RollImpulseLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "TinyKrakenHeadWeightedBehaviour": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Weight",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BehaviourType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x3_I8EY5[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5"
+      }
+    ]
+  },
+  "TinyKrakenRoarShockwaveBehaviourParams": {
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "pad0x38_IHJR6[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RoarRadialAngle",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "RoarDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "RoarHeadRotationAngle",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "RoarHeadRotationSpeed",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x44"
+      },
+      {
+        "Name": "RoarBuildUpTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "RoarCooldownTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      },
+      {
+        "Name": "PlayerKnockbackCooldown",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "ShipDamageCooldown",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x54"
+      }
+    ]
+  },
+  "TinyKrakenHeadParams": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "SpawningQueryTemplate",
+        "Type": "class EnvQuery*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "HeadClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ShipInteractingBehaviourWeights",
+        "Type": "TArray<struct TinyKrakenHeadWeightedBehaviour>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Behaviours",
+        "Type": "TArray<struct TinyKrakenBehaviourParams>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "TinyKrakenShipBitingBehaviourParams": {
+    "ClassSize": "0xe8",
+    "Attributes": [
+      {
+        "Name": "pad0x38_B8LLB[0x38]",
+        "Type": "char",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AttackTimeout",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "BiteRange",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "DamageCauserType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "HealthChangedReason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x3_1L14N[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x49"
+      },
+      {
+        "Name": "PlayerBiteRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      },
+      {
+        "Name": "PlayerBiteDamage",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "pad0x4_Z7SLZ[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x54"
+      },
+      {
+        "Name": "PlayerStatusEffectToApply",
+        "Type": "struct Status",
+        "Size": "0x20",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "PlayerKnockbackParams",
+        "Type": "struct KnockBackInfo",
+        "Size": "0x54",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "HullDamageLevel",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0xcc"
+      },
+      {
+        "Name": "ShipBiteAttackData",
+        "Type": "TArray<struct TinyKrakenBiteAttackShipData>",
+        "Size": "0x10",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "CollisionChannelForGunpowderKegs",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "pad0x7_145M2[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0xe1"
+      }
+    ]
+  },
+  "DougTheDruid": {
+    "Notes": "Generated by dougthedruid on Discord",
+    "Reference": "https://github.com/DougTheDruid"
+  }
+}
