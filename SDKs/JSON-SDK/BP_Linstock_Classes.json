@@ -12,6 +12,12 @@
         "Offset": "0x3a0"
       },
       {
+        "Name": "pad0x536f0258_TBSM6[0x536f0258]",
+        "Type": "char",
+        "Size": "0x536f0258",
+        "Offset": "0x3a8"
+      },
+      {
         "Name": "StaticMesh",
         "Type": "class StaticMeshComponent*",
         "Size": "0x8",

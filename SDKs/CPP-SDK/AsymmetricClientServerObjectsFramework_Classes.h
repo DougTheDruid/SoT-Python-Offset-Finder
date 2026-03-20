@@ -7,7 +7,7 @@
 class AsymmetricClientObject: public Actor
 {
 public:
-	char                                                         pad0x18_PYSB8[0x18];                               // 0x3a0(0x18)
+	char                                                         pad0x18_50F9W[0x18];                               // 0x3a0(0x18)
 	class BoxComponent*                                          BaseComponent;                                     // 0x3b8(0x8)
 	class StaticMeshMemoryConstraintComponent*                   ThirdPersonMesh;                                   // 0x3c0(0x8)
 	class WaterInteractionComponent*                             WaterInteractionComponent;                         // 0x3c8(0x8)
@@ -22,11 +22,11 @@ public:
 class AsymmetricObjectServerManager: public Actor
 {
 public:
-	char                                                         pad0x18_UGM9O[0x18];                               // 0x3a0(0x18)
+	char                                                         pad0x18_157BF[0x18];                               // 0x3a0(0x18)
 	class AsymmetricClientObject*                                SpawnedObject;                                     // 0x3b8(0x8)
 	class SceneComponent*                                        SceneComponent;                                    // 0x3c0(0x8)
 	struct StringAssetReference                                  AsymmetricObjectAsset;                             // 0x3c8(0x10)
-	char                                                         pad0x20_JAOGL[0x20];                               // 0x3d8(0x20)
+	char                                                         pad0x20_E5WXI[0x20];                               // 0x3d8(0x20)
 };
 
 

@@ -1,17 +1,43 @@
 {
-  "GlitterBeardIsHideoutOpenConditional": {
-    "Super": "NPCDialogConditional",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "GlitterBeardFinaleCoordinatorComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x160",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0xa8",
+    "Attributes": [
+      {
+        "Name": "AudioEventToSynchronise",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "ReplicationState",
+        "Type": "struct FinaleReplicationState",
+        "Size": "0x10",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "pad0x90_NKT3I[0x90]",
+        "Type": "char",
+        "Size": "0x90",
+        "Offset": "0xd0"
+      }
+    ]
   },
-  "GlitterBeardEntitlementDesc": {
-    "Super": "EntitlementDesc",
-    "FullSize": "0xc8",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "GlitterBeardTelemetryComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x100",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "pad0x48_G5OKU[0x48]",
+        "Type": "char",
+        "Size": "0x48",
+        "Offset": "0xb8"
+      }
+    ]
   },
   "GlitterBeardTrustedTreeInterface": {
     "Super": "Interface",
@@ -20,96 +46,6 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "GlitterBeardLanternSoundEffect": {
-    "Super": "EffectBlendObjectBase",
-    "FullSize": "0x80",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "TriggerThreshold",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x4_HHSHK[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "WwisePool",
-        "Type": "class WwiseObjectPoolWrapper*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "WwiseEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "Emitter",
-        "Type": "struct WwiseEmitter",
-        "Size": "0x20",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "pad0x10_NUL83[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x70"
-      }
-    ]
-  },
-  "GlitterBeardUnlockVFXCoordinatorComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xe0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "TreeActor",
-        "Type": "struct ActorComponentSelector",
-        "Size": "0x10",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "TreeMaterialInstanceDynamic",
-        "Type": "class MaterialInstanceDynamic*",
-        "Size": "0x8",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "TreeBlendTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "pad0xc_KBNJV[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0xd4"
-      }
-    ]
-  },
-  "GlitterbeardSlidingDoor": {
-    "Super": "SlidingDoor",
-    "FullSize": "0x520",
-    "InheritedSize": "0x518",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "DecalBlendComponent",
-        "Type": "class EffectBlendControllerComponent*",
-        "Size": "0x8",
-        "Offset": "0x518"
-      }
-    ]
-  },
   "GlitterBeardTree": {
     "Super": "Actor",
     "FullSize": "0x6c0",
@@ -117,7 +53,7 @@
     "ClassSize": "0x320",
     "Attributes": [
       {
-        "Name": "pad0x28_QLNSB[0x28]",
+        "Name": "pad0x28_U9ZH1[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x3a0"
@@ -141,7 +77,7 @@
         "Offset": "0x3d8"
       },
       {
-        "Name": "pad0x4_HS0F8[0x4]",
+        "Name": "pad0x4_6DZ4N[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3dc"
@@ -201,7 +137,7 @@
         "Offset": "0x418"
       },
       {
-        "Name": "pad0x24c_WZU6D[0x24c]",
+        "Name": "pad0x24c_DZ9J7[0x24c]",
         "Type": "char",
         "Size": "0x24c",
         "Offset": "0x41c"
@@ -219,50 +155,49 @@
         "Offset": "0x670"
       },
       {
-        "Name": "pad0x30_RE1XG[0x30]",
+        "Name": "pad0x30_G8W04[0x30]",
         "Type": "char",
         "Size": "0x30",
         "Offset": "0x690"
       }
     ]
   },
-  "GlitterBeardTelemetryComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x100",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "pad0x48_2KCIB[0x48]",
-        "Type": "char",
-        "Size": "0x48",
-        "Offset": "0xb8"
-      }
-    ]
+  "GlitterBeardEntitlementDesc": {
+    "Super": "EntitlementDesc",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
-  "GlitterBeardFinaleCoordinatorComponent": {
+  "GlitterBeardUnlockVFXCoordinatorComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x160",
+    "FullSize": "0xe0",
     "InheritedSize": "0xb8",
-    "ClassSize": "0xa8",
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "AudioEventToSynchronise",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
+        "Name": "TreeActor",
+        "Type": "struct ActorComponentSelector",
+        "Size": "0x10",
         "Offset": "0xb8"
       },
       {
-        "Name": "ReplicationState",
-        "Type": "struct FinaleReplicationState",
-        "Size": "0x10",
-        "Offset": "0xc0"
+        "Name": "TreeMaterialInstanceDynamic",
+        "Type": "class MaterialInstanceDynamic*",
+        "Size": "0x8",
+        "Offset": "0xc8"
       },
       {
-        "Name": "pad0x90_T3R5P[0x90]",
-        "Type": "char",
-        "Size": "0x90",
+        "Name": "TreeBlendTime",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0xd0"
+      },
+      {
+        "Name": "pad0xc_R5254[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0xd4"
       }
     ]
   },
@@ -279,7 +214,7 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x10_A6NYB[0x10]",
+        "Name": "pad0x10_1T7V8[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xc8"
@@ -291,10 +226,75 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x20_LC8FO[0x20]",
+        "Name": "pad0x20_IV81E[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xe8"
+      }
+    ]
+  },
+  "GlitterBeardLanternSoundEffect": {
+    "Super": "EffectBlendObjectBase",
+    "FullSize": "0x80",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "TriggerThreshold",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x4_JHRUH[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "WwisePool",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "WwiseEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "Emitter",
+        "Type": "struct WwiseEmitter",
+        "Size": "0x20",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "pad0x10_RBUKD[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x70"
+      }
+    ]
+  },
+  "GlitterBeardIsHideoutOpenConditional": {
+    "Super": "NPCDialogConditional",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GlitterbeardSlidingDoor": {
+    "Super": "SlidingDoor",
+    "FullSize": "0x518",
+    "InheritedSize": "0x510",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "DecalBlendComponent",
+        "Type": "class EffectBlendControllerComponent*",
+        "Size": "0x8",
+        "Offset": "0x510"
       }
     ]
   },

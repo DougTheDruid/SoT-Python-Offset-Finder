@@ -79,7 +79,7 @@ ImmerseHeadsetUI:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_36I56[0x4]
+  - Name: pad0x4_E189J[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -123,14 +123,14 @@ SpatialAudioEnableUniversalProfileSuccessToUI:
   ClassSize: '0x40'
 SpatialAudioEnableUniversalProfileToGame:
   Attributes:
-  - Name: pad0x1_ODR1C[0x1]
+  - Name: pad0x1_QGOE2[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 SpatialAudioGetHeadsetListToGame:
   Attributes:
-  - Name: pad0x1_COU42[0x1]
+  - Name: pad0x1_0YKQP[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -165,14 +165,14 @@ SpatialAudioHeadsetSelectionToGame:
   ClassSize: '0x4'
 SpatialAudioPersonalizedHRTFBeginToGame:
   Attributes:
-  - Name: pad0x1_EM2JZ[0x1]
+  - Name: pad0x1_KU537[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 SpatialAudioPersonalizedHRTFCancelledToGame:
   Attributes:
-  - Name: pad0x1_EW9O5[0x1]
+  - Name: pad0x1_9Z1FN[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -193,14 +193,14 @@ SpatialAudioPersonalizedHRTFSuccessToUI:
   ClassSize: '0x40'
 SpatialAudioPersonalizedHRTFUpdatedToGame:
   Attributes:
-  - Name: pad0x1_H54SJ[0x1]
+  - Name: pad0x1_U98EQ[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 SpatialAudioPurchaseBeginToGame:
   Attributes:
-  - Name: pad0x1_PAH0B[0x1]
+  - Name: pad0x1_XW2J7[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -252,14 +252,14 @@ SpatialAudioState:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_YUVEY[0x7]
+  - Name: pad0x7_Q6BA9[0x7]
     Offset: '0x39'
     Size: '0x7'
     Type: char
   ClassSize: '0x40'
 SpatialAudioStateUpdateRequestToGame:
   Attributes:
-  - Name: pad0x1_EFO32[0x1]
+  - Name: pad0x1_Q0LE6[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char

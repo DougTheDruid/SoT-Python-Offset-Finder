@@ -1,43 +1,4 @@
 {
-  "ReportMatchConclusionResponse": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "WinningCrewNewSkillValue",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "LosingCrewNewSkillValue",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "ReportMultiCrewSubModesMatch_CrewData": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "UserIds",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ReportMultiCrewSubModesMatchStartedResponse": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "CrewSkillRating",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "ReportMultiCrewSubModesMatchStartedRequest": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -60,12 +21,56 @@
       }
     ]
   },
+  "ReportMultiCrewSubModesMatch_CrewData": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "UserIds",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "MultiCrewSubModesMatchAggregateCrewSkillUpdated": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewSkillRatings",
+        "Type": "TArray<int>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ReportMultiCrewSubModesMatchStartedResponse": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "CrewSkillRating",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "GetPvPSkillForCrewRequestModel": {
     "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "CrewMemberIds",
         "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ReportMultiCrewSubModesMatchConclusionResponse": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewNewSkillValuesByFinishOrder",
+        "Type": "TArray<int>",
         "Size": "0x10",
         "Offset": "0x0"
       }
@@ -105,14 +110,20 @@
       }
     ]
   },
-  "ReportMultiCrewSubModesMatchConclusionResponse": {
-    "ClassSize": "0x10",
+  "ReportMatchConclusionResponse": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "CrewNewSkillValuesByFinishOrder",
-        "Type": "TArray<int>",
-        "Size": "0x10",
+        "Name": "WinningCrewNewSkillValue",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x0"
+      },
+      {
+        "Name": "LosingCrewNewSkillValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
       }
     ]
   },

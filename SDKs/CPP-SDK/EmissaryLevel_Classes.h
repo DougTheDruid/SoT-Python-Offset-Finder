@@ -6,75 +6,6 @@
 #include "EmissaryLevel_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class EmissaryFlotsamDuplicationInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x28 (Full Size[0xe0] - InheritedSize[0xb8]
-class EmissaryFlotsamTooltipCustomizerComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x10_GXRWM[0x10];                               // 0xb8(0x10)
-	bool                                                         CheckForDelivery;                                  // 0xc8(0x1)
-	bool                                                         CheckForPickup;                                    // 0xc9(0x1)
-	bool                                                         WonInBattleFlag;                                   // 0xca(0x1)
-	char                                                         pad0x15_S5GCO[0x15];                               // 0xcb(0x15)
-};
-
-
-// Size 0xd8 (Full Size[0x108] - InheritedSize[0x30]
-class EmissaryVoyageVoteValidatorBase: public VoteValidatorInlineBase
-{
-public:
-	char                                                         ValidatorType;                                     // 0x30(0x1)
-	char                                                         pad0x7_PZ13D[0x7];                                 // 0x31(0x7)
-	class UClass*                                                RequiredEntitlement;                               // 0x38(0x8)
-	bool                                                         BlockDuringSaferSeas;                              // 0x40(0x1)
-	bool                                                         BlockDuringPrivateSandbox;                         // 0x41(0x1)
-	char                                                         pad0x2_88MZI[0x2];                                 // 0x42(0x2)
-	bool                                                         IsValidatorTypeEntitlement;                        // 0x44(0x1)
-	char                                                         pad0xab_85CMA[0xab];                               // 0x45(0xab)
-	class UClass*                                                TargetCompany;                                     // 0xf0(0x8)
-	class EmissaryVoyageInlineVoteConsumerBase*                  Consumer;                                          // 0xf8(0x8)
-	class GuildSettings*                                         GuildSettings;                                     // 0x100(0x8)
-};
-
-
-// Size 0x358 (Full Size[0x6f8] - InheritedSize[0x3a0]
-class EmissaryLevelService: public Actor
-{
-public:
-	char                                                         pad0xb8_UTXRM[0xb8];                               // 0x3a0(0xb8)
-	class EmissaryLevelSettingsAsset*                            Settings;                                          // 0x458(0x8)
-	class EmissaryRewardSettingsAsset*                           RewardSettings;                                    // 0x460(0x8)
-	class GuildSettings*                                         GuildSettings;                                     // 0x468(0x8)
-	char                                                         pad0x288_ZIAAE[0x288];                             // 0x470(0x288)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class EmissaryMaxRankQuestProviderInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x48 (Full Size[0x798] - InheritedSize[0x750]
-class EmissaryFlotsamItemInfo: public BootyItemInfo
-{
-public:
-	char                                                         pad0x8_CTZ4J[0x8];                                 // 0x750(0x8)
-	struct CompanySpecificBootyReward                            HandInOwnFlotsamReward;                            // 0x758(0x18)
-	struct CompanySpecificBootyReward                            AlternateHandInOwnFlotsamReward;                   // 0x770(0x18)
-	class UClass*                                                PermittedFlotsamPurchaseCompany;                   // 0x788(0x8)
-	bool                                                         FlotsamCanBeDuplicated;                            // 0x790(0x1)
-	char                                                         pad0x7_NHX7Y[0x7];                                 // 0x791(0x7)
-};
-
-
 // Size 0x0 (Full Size[0x90] - InheritedSize[0x90]
 class EmissaryEntitlementCategory: public ItemCategory
 {
@@ -82,178 +13,22 @@ public:
 };
 
 
-// Size 0xf0 (Full Size[0x120] - InheritedSize[0x30]
-class EmissaryVoyageInlineVoteConsumerBase: public VoteConsumerInlineBase
-{
-public:
-	class EmissaryVoyageVoteValidatorBase*                       Validator;                                         // 0x30(0x8)
-	char                                                         pad0x48_049TI[0x48];                               // 0x38(0x48)
-	struct FText                                                 VoyageCinematicHeader;                             // 0x80(0x38)
-	struct FName                                                 VoyageCinematicTag;                                // 0xb8(0x8)
-	char                                                         pad0x20_8FFLY[0x20];                               // 0xc0(0x20)
-	TArray<struct CrewMemberVotes>                               Votes;                                             // 0xe0(0x10)
-	char                                                         pad0x20_TMB7N[0x20];                               // 0xf0(0x20)
-	class Actor*                                                 OwningActor;                                       // 0x110(0x8)
-	char                                                         pad0x8_OVQID[0x8];                                 // 0x118(0x8)
-};
-
-
-// Size 0x90 (Full Size[0x148] - InheritedSize[0xb8]
-class EmissaryActiveTableVisualiserComponent: public ActorComponent
-{
-public:
-	class UClass*                                                TargetCompany;                                     // 0xb8(0x8)
-	TArray<struct MaterialVisualisation>                         MaterialChanges;                                   // 0xc0(0x10)
-	char                                                         pad0x10_GSCXX[0x10];                               // 0xd0(0x10)
-	TArray<struct LightVisualisation>                            LightChanges;                                      // 0xe0(0x10)
-	char                                                         pad0x10_L4EAG[0x10];                               // 0xf0(0x10)
-	TArray<struct ParticleVisualisation>                         ParticleChanges;                                   // 0x100(0x10)
-	char                                                         pad0x38_DPGV4[0x38];                               // 0x110(0x38)
-};
-
-
-// Size 0x70 (Full Size[0x340] - InheritedSize[0x2d0]
-class EmissaryShipAffiliationTrackerComponent: public SceneComponent
-{
-public:
-	class UClass*                                                TrackedCompany;                                    // 0x2d0(0x8)
-	TArray<struct Transform>                                     EmissaryRepresentationTransforms;                  // 0x2f8(0x10)
-	TArray<class StaticMeshComponent*>                           EmissaryRepresentationMeshes;                      // 0x308(0x10)
-	class UClass*                                                LoadedEmissaryRepresentationMesh;                  // 0x318(0x8)
-	int                                                          EmissaryCount;                                     // 0x320(0x4)
-	char                                                         pad0x1c_HDOK3[0x1c];                               // 0x324(0x1c)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class EmissaryLevelServiceInterface: public Interface
-{
-public:
-};
-
-
-// Size 0xe8 (Full Size[0x1a0] - InheritedSize[0xb8]
-class EmissaryMaxRankQuestProvider: public ActorComponent
-{
-public:
-	char                                                         pad0x8_1SN4F[0x8];                                 // 0xb8(0x8)
-	class UClass*                                                MaxRankQuestNotificationID;                        // 0xc0(0x8)
-	char                                                         MaxRankQuestToolTipPriority;                       // 0xc8(0x1)
-	char                                                         pad0x7_KIUJX[0x7];                                 // 0xc9(0x7)
-	struct FText                                                 StartMaxRankQuestToolTipText;                      // 0xd0(0x38)
-	struct FText                                                 CannotStartMaxRankQuestToolTipText;                // 0x108(0x38)
-	struct StringAssetReference                                  QuestDesc;                                         // 0x140(0x10)
-	TArray<struct EmissaryMaxRankQuestProviderQuestOverrides>    QuestDescOverrides;                                // 0x150(0x10)
-	char                                                         pad0x38_L0WQE[0x38];                               // 0x160(0x38)
-	class UClass*                                                Company;                                           // 0x198(0x8)
-};
-
-
 // Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class IncreasingAGradeWithAnEmissaryConditionalStatTrigger: public ConditionalStatsTriggerType
+class IsAnEmissaryStatCondition: public TargetedStatCondition
 {
 public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class EmissaryParticipantInterface: public Interface
+// Size 0x358 (Full Size[0x6f8] - InheritedSize[0x3a0]
+class EmissaryLevelService: public Actor
 {
 public:
-};
-
-
-// Size 0x50 (Full Size[0x108] - InheritedSize[0xb8]
-class EmissaryParticipantComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x10_D9BKU[0x10];                               // 0xb8(0x10)
-	TArray<struct MysteriousNotesCompletionEventsModelEntry>     NoteCompletionIdents;                              // 0xc8(0x10)
-	char                                                         pad0x10_Q10VV[0x10];                               // 0xd8(0x10)
-	int                                                          EmissaryLevel;                                     // 0xe8(0x4)
-	float                                                        EmissaryLevelProgress;                             // 0xec(0x4)
-	struct FName                                                 AffiliatedCompany;                                 // 0xf0(0x8)
-	bool                                                         IsEmissaryMaxRankQuestBeenActivatedThisSession;    // 0xf8(0x1)
-	char                                                         pad0x3_PPTO8[0x3];                                 // 0xf9(0x3)
-	struct FName                                                 VotedCompany;                                      // 0xfc(0x8)
-	char                                                         pad0x4_EY0B9[0x4];                                 // 0x104(0x4)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class IsEmissaryStatCondition: public StatCondition
-{
-public:
-	class UClass*                                                RequiredEmissaryCompany;                           // 0x28(0x8)
-	bool                                                         RequiresMaxEmissaryLevel;                          // 0x30(0x1)
-	char                                                         pad0x7_CRCPI[0x7];                                 // 0x31(0x7)
-};
-
-
-// Size 0xf0 (Full Size[0x5b0] - InheritedSize[0x4c0]
-class EmissaryFlotsamItemSpawnComponent: public ItemSpawnComponent
-{
-public:
-	char                                                         pad0xa8_0GQN8[0xa8];                               // 0x4c0(0xa8)
-	struct Vector                                                GuildSessionEndedFlotsamOffset;                    // 0x568(0xc)
-	char                                                         pad0x3c_OSTPC[0x3c];                               // 0x574(0x3c)
-};
-
-
-// Size 0x0 (Full Size[0x600] - InheritedSize[0x600]
-class EmissaryRepresentationMeshComponent: public StaticMeshComponent
-{
-public:
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class EmissaryRewardCampaignSettingsAsset: public DataAsset
-{
-public:
-	TArray<struct EmissaryCompanyCampaignSettings>               Companies;                                         // 0x28(0x10)
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class EmissaryRewardSettingsAsset: public DataAsset
-{
-public:
-	TArray<struct EmissaryRewardEntry>                           EmissaryRewardData;                                // 0x28(0x10)
-	float                                                        PlayerKilledExpiryTime;                            // 0x38(0x4)
-	char                                                         pad0x4_I4EDR[0x4];                                 // 0x3c(0x4)
-	class EmissaryRewardCampaignSettingsAsset*                   CampaignSettings;                                  // 0x40(0x8)
-};
-
-
-// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
-class EmissaryActionRewardBoostComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x10_BYR1C[0x10];                               // 0xb8(0x10)
-};
-
-
-// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
-class IsAnEmissaryForCompanyStatCondition: public TargetedStatCondition
-{
-public:
-	class UClass*                                                RequiredEmissaryCompany;                           // 0x30(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class EmissaryColourSwatchSettingsAsset: public DataAsset
-{
-public:
-	TArray<struct EmissaryColourSwatchInformation>               ColourSwatchInformation;                           // 0x28(0x10)
-};
-
-
-// Size 0x0 (Full Size[0xc8] - InheritedSize[0xc8]
-class EmissaryEntitlementDesc: public EntitlementDesc
-{
-public:
+	char                                                         pad0xb8_PGWDV[0xb8];                               // 0x3a0(0xb8)
+	class EmissaryLevelSettingsAsset*                            Settings;                                          // 0x458(0x8)
+	class EmissaryRewardSettingsAsset*                           RewardSettings;                                    // 0x460(0x8)
+	class GuildSettings*                                         GuildSettings;                                     // 0x468(0x8)
+	char                                                         pad0x288_MQRNB[0x288];                             // 0x470(0x288)
 };
 
 
@@ -268,42 +43,240 @@ public:
 };
 
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class EmissaryMaxRankQuestProviderInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class EmissaryRewardSettingsAsset: public DataAsset
+{
+public:
+	TArray<struct EmissaryRewardEntry>                           EmissaryRewardData;                                // 0x28(0x10)
+	float                                                        PlayerKilledExpiryTime;                            // 0x38(0x4)
+	char                                                         pad0x4_7TG0X[0x4];                                 // 0x3c(0x4)
+	class EmissaryRewardCampaignSettingsAsset*                   CampaignSettings;                                  // 0x40(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class EmissaryColourSwatchSettingsAsset: public DataAsset
+{
+public:
+	TArray<struct EmissaryColourSwatchInformation>               ColourSwatchInformation;                           // 0x28(0x10)
+};
+
+
+// Size 0xe8 (Full Size[0x1a0] - InheritedSize[0xb8]
+class EmissaryMaxRankQuestProvider: public ActorComponent
+{
+public:
+	char                                                         pad0x8_RRZ2Y[0x8];                                 // 0xb8(0x8)
+	class UClass*                                                MaxRankQuestNotificationID;                        // 0xc0(0x8)
+	char                                                         MaxRankQuestToolTipPriority;                       // 0xc8(0x1)
+	char                                                         pad0x7_VADO3[0x7];                                 // 0xc9(0x7)
+	struct FText                                                 StartMaxRankQuestToolTipText;                      // 0xd0(0x38)
+	struct FText                                                 CannotStartMaxRankQuestToolTipText;                // 0x108(0x38)
+	struct StringAssetReference                                  QuestDesc;                                         // 0x140(0x10)
+	TArray<struct EmissaryMaxRankQuestProviderQuestOverrides>    QuestDescOverrides;                                // 0x150(0x10)
+	char                                                         pad0x38_VAQEP[0x38];                               // 0x160(0x38)
+	class UClass*                                                Company;                                           // 0x198(0x8)
+};
+
+
+// Size 0xf0 (Full Size[0x5b0] - InheritedSize[0x4c0]
+class EmissaryFlotsamItemSpawnComponent: public ItemSpawnComponent
+{
+public:
+	char                                                         pad0xa8_PC8KA[0xa8];                               // 0x4c0(0xa8)
+	struct Vector                                                GuildSessionEndedFlotsamOffset;                    // 0x568(0xc)
+	char                                                         pad0x3c_Q4HSS[0x3c];                               // 0x574(0x3c)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class EmissaryRewardCampaignSettingsAsset: public DataAsset
+{
+public:
+	TArray<struct EmissaryCompanyCampaignSettings>               Companies;                                         // 0x28(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class IsEmissaryStatCondition: public StatCondition
+{
+public:
+	class UClass*                                                RequiredEmissaryCompany;                           // 0x28(0x8)
+	bool                                                         RequiresMaxEmissaryLevel;                          // 0x30(0x1)
+	char                                                         pad0x7_0OYIV[0x7];                                 // 0x31(0x7)
+};
+
+
+// Size 0x48 (Full Size[0x7a8] - InheritedSize[0x760]
+class EmissaryFlotsamItemInfo: public BootyItemInfo
+{
+public:
+	char                                                         pad0x8_AJVLI[0x8];                                 // 0x760(0x8)
+	struct CompanySpecificBootyReward                            HandInOwnFlotsamReward;                            // 0x768(0x18)
+	struct CompanySpecificBootyReward                            AlternateHandInOwnFlotsamReward;                   // 0x780(0x18)
+	class UClass*                                                PermittedFlotsamPurchaseCompany;                   // 0x798(0x8)
+	bool                                                         FlotsamCanBeDuplicated;                            // 0x7a0(0x1)
+	char                                                         pad0x7_O28BM[0x7];                                 // 0x7a1(0x7)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class EmissaryParticipantInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x70 (Full Size[0x340] - InheritedSize[0x2d0]
+class EmissaryShipAffiliationTrackerComponent: public SceneComponent
+{
+public:
+	class UClass*                                                TrackedCompany;                                    // 0x2d0(0x8)
+	TArray<struct Transform>                                     EmissaryRepresentationTransforms;                  // 0x2f8(0x10)
+	TArray<class StaticMeshComponent*>                           EmissaryRepresentationMeshes;                      // 0x308(0x10)
+	class UClass*                                                LoadedEmissaryRepresentationMesh;                  // 0x318(0x8)
+	int                                                          EmissaryCount;                                     // 0x320(0x4)
+	char                                                         pad0x1c_4F3W9[0x1c];                               // 0x324(0x1c)
+};
+
+
 // Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class IsAnEmissaryStatCondition: public TargetedStatCondition
+class IncreasingAGradeWithAnEmissaryConditionalStatTrigger: public ConditionalStatsTriggerType
 {
 public:
 };
 
 
-// Size 0x0 (Full Size[0x108] - InheritedSize[0x108]
+// Size 0x50 (Full Size[0x108] - InheritedSize[0xb8]
+class EmissaryParticipantComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x10_70IBH[0x10];                               // 0xb8(0x10)
+	TArray<struct MysteriousNotesCompletionEventsModelEntry>     NoteCompletionIdents;                              // 0xc8(0x10)
+	char                                                         pad0x10_2K2EY[0x10];                               // 0xd8(0x10)
+	int                                                          EmissaryLevel;                                     // 0xe8(0x4)
+	float                                                        EmissaryLevelProgress;                             // 0xec(0x4)
+	struct FName                                                 AffiliatedCompany;                                 // 0xf0(0x8)
+	bool                                                         IsEmissaryMaxRankQuestBeenActivatedThisSession;    // 0xf8(0x1)
+	char                                                         pad0x3_T7C6K[0x3];                                 // 0xf9(0x3)
+	struct FName                                                 VotedCompany;                                      // 0xfc(0x8)
+	char                                                         pad0x4_3724X[0x4];                                 // 0x104(0x4)
+};
+
+
+// Size 0x28 (Full Size[0xe0] - InheritedSize[0xb8]
+class EmissaryFlotsamTooltipCustomizerComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x10_BRHHN[0x10];                               // 0xb8(0x10)
+	bool                                                         CheckForDelivery;                                  // 0xc8(0x1)
+	bool                                                         CheckForPickup;                                    // 0xc9(0x1)
+	bool                                                         WonInBattleFlag;                                   // 0xca(0x1)
+	char                                                         pad0x15_L9F9D[0x15];                               // 0xcb(0x15)
+};
+
+
+// Size 0xf0 (Full Size[0x120] - InheritedSize[0x30]
+class EmissaryVoyageInlineVoteConsumerBase: public VoteConsumerInlineBase
+{
+public:
+	class EmissaryVoyageVoteValidatorBase*                       Validator;                                         // 0x30(0x8)
+	char                                                         pad0x48_1NR6O[0x48];                               // 0x38(0x48)
+	struct FText                                                 VoyageCinematicHeader;                             // 0x80(0x38)
+	struct FName                                                 VoyageCinematicTag;                                // 0xb8(0x8)
+	char                                                         pad0x20_SBI3N[0x20];                               // 0xc0(0x20)
+	TArray<struct CrewMemberVotes>                               Votes;                                             // 0xe0(0x10)
+	char                                                         pad0x20_ZRN5E[0x20];                               // 0xf0(0x20)
+	class Actor*                                                 OwningActor;                                       // 0x110(0x8)
+	char                                                         pad0x8_SAZ9C[0x8];                                 // 0x118(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x38] - InheritedSize[0x30]
+class IsAnEmissaryForCompanyStatCondition: public TargetedStatCondition
+{
+public:
+	class UClass*                                                RequiredEmissaryCompany;                           // 0x30(0x8)
+};
+
+
+// Size 0x90 (Full Size[0x148] - InheritedSize[0xb8]
+class EmissaryActiveTableVisualiserComponent: public ActorComponent
+{
+public:
+	class UClass*                                                TargetCompany;                                     // 0xb8(0x8)
+	TArray<struct MaterialVisualisation>                         MaterialChanges;                                   // 0xc0(0x10)
+	char                                                         pad0x10_PL469[0x10];                               // 0xd0(0x10)
+	TArray<struct LightVisualisation>                            LightChanges;                                      // 0xe0(0x10)
+	char                                                         pad0x10_PC9RL[0x10];                               // 0xf0(0x10)
+	TArray<struct ParticleVisualisation>                         ParticleChanges;                                   // 0x100(0x10)
+	char                                                         pad0x38_5V3KZ[0x38];                               // 0x110(0x38)
+};
+
+
+// Size 0x0 (Full Size[0x600] - InheritedSize[0x600]
+class EmissaryRepresentationMeshComponent: public StaticMeshComponent
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class EmissaryFlotsamDuplicationInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0xc8] - InheritedSize[0xb8]
+class EmissaryActionRewardBoostComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x10_JT2EQ[0x10];                               // 0xb8(0x10)
+};
+
+
+// Size 0xf0 (Full Size[0x120] - InheritedSize[0x30]
+class EmissaryVoyageVoteValidatorBase: public VoteValidatorInlineBase
+{
+public:
+	char                                                         ValidatorType;                                     // 0x30(0x1)
+	char                                                         pad0x7_4C48P[0x7];                                 // 0x31(0x7)
+	class UClass*                                                RequiredEntitlement;                               // 0x38(0x8)
+	bool                                                         BlockDuringSaferSeas;                              // 0x40(0x1)
+	bool                                                         BlockDuringPrivateSandbox;                         // 0x41(0x1)
+	char                                                         pad0x2_86EV8[0x2];                                 // 0x42(0x2)
+	bool                                                         IsValidatorTypeEntitlement;                        // 0x44(0x1)
+	char                                                         pad0xc3_RFG4B[0xc3];                               // 0x45(0xc3)
+	class UClass*                                                TargetCompany;                                     // 0x108(0x8)
+	class EmissaryVoyageInlineVoteConsumerBase*                  Consumer;                                          // 0x110(0x8)
+	class GuildSettings*                                         GuildSettings;                                     // 0x118(0x8)
+};
+
+
+// Size 0x0 (Full Size[0xc8] - InheritedSize[0xc8]
+class EmissaryEntitlementDesc: public EntitlementDesc
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class EmissaryLevelServiceInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x120] - InheritedSize[0x120]
 class StartEmissaryVoyageInlineVoteValidator: public EmissaryVoyageVoteValidatorBase
-{
-public:
-};
-
-
-// Size 0x2b8 (Full Size[0x3d8] - InheritedSize[0x120]
-class StartEmissaryVoyageInlineVoteConsumer: public EmissaryVoyageInlineVoteConsumerBase
-{
-public:
-	struct FText                                                 EmissaryVotingCastVote;                            // 0x120(0x38)
-	struct FText                                                 EmissaryVotingCantVote;                            // 0x158(0x38)
-	struct FText                                                 EmissaryVotingCantVoteReasonCrewShipOutsideRange;  // 0x190(0x38)
-	struct FText                                                 EmissaryVotingCantVoteReasonNoEmissaryEntitlement; // 0x1c8(0x38)
-	struct FText                                                 EmissaryVotingCantVoteReasonHasActiveVoteForDifferentCompany; // 0x200(0x38)
-	struct FText                                                 EmissaryVotingCantVoteReasonOnOpposingFaction;     // 0x238(0x38)
-	struct FText                                                 EmissaryVotingCantVoteReasonSaferSeas;             // 0x270(0x38)
-	struct FText                                                 EmissaryVotingCantVoteReasonPrivateSandbox;        // 0x2a8(0x38)
-	struct FText                                                 EmissaryVotingCantVoteReasonCrewShipSinking;       // 0x2e0(0x38)
-	struct FText                                                 EmissaryVotingCantVoteReasonBlockedBySwitches;     // 0x318(0x38)
-	struct FText                                                 EmissaryVotingRemoveVote;                          // 0x350(0x38)
-	struct FText                                                 EmissaryVotingCantRemoveVote;                      // 0x388(0x38)
-	char                                                         pad0x18_8FXKO[0x18];                               // 0x3c0(0x18)
-};
-
-
-// Size 0x0 (Full Size[0x108] - InheritedSize[0x108]
-class StopEmissaryVoyageInlineVoteValidator: public EmissaryVoyageVoteValidatorBase
 {
 public:
 };
@@ -323,17 +296,35 @@ public:
 	struct FText                                                 EmissaryVotingCantVoteReasonCrewShipSinking;       // 0x2a8(0x38)
 	struct FText                                                 EmissaryVotingRemoveVote;                          // 0x2e0(0x38)
 	struct FText                                                 EmissaryVotingCantRemoveVote;                      // 0x318(0x38)
-	char                                                         pad0x18_MVG7B[0x18];                               // 0x350(0x18)
+	char                                                         pad0x18_8PW61[0x18];                               // 0x350(0x18)
 };
 
 
-// Size 0xa0 (Full Size[0x478] - InheritedSize[0x3d8]
-class StartGuildEmissaryVoyageInlineVoteConsumer: public StartEmissaryVoyageInlineVoteConsumer
+// Size 0x2f0 (Full Size[0x410] - InheritedSize[0x120]
+class StartEmissaryVoyageInlineVoteConsumer: public EmissaryVoyageInlineVoteConsumerBase
 {
 public:
-	struct FText                                                 GuildEmissaryVotingCantVoteReasonGuildEmissaryNotUnlocked; // 0x3d8(0x38)
-	struct FText                                                 GuildEmissaryVotingCantVoteReasonNoGuildShip;      // 0x410(0x38)
-	char                                                         pad0x30_UV8RE[0x30];                               // 0x448(0x30)
+	struct FText                                                 EmissaryVotingCastVote;                            // 0x120(0x38)
+	struct FText                                                 EmissaryVotingCantVote;                            // 0x158(0x38)
+	struct FText                                                 EmissaryVotingCantVoteReasonCrewShipOutsideRange;  // 0x190(0x38)
+	struct FText                                                 EmissaryVotingCantVoteReasonNoEmissaryEntitlement; // 0x1c8(0x38)
+	struct FText                                                 EmissaryVotingCantVoteReasonHasActiveVoteForDifferentCompany; // 0x200(0x38)
+	struct FText                                                 EmissaryVotingCantVoteReasonOnOpposingFaction;     // 0x238(0x38)
+	struct FText                                                 EmissaryVotingCantVoteReasonSaferSeas;             // 0x270(0x38)
+	struct FText                                                 EmissaryVotingCantVoteReasonPrivateSandbox;        // 0x2a8(0x38)
+	struct FText                                                 EmissaryVotingCantVoteReasonCrewShipSinking;       // 0x2e0(0x38)
+	struct FText                                                 EmissaryVotingCantVoteReasonBlockedBySwitches;     // 0x318(0x38)
+	struct FText                                                 EmissaryVotingCantVoteReasonSailingForGMU;         // 0x350(0x38)
+	struct FText                                                 EmissaryVotingRemoveVote;                          // 0x388(0x38)
+	struct FText                                                 EmissaryVotingCantRemoveVote;                      // 0x3c0(0x38)
+	char                                                         pad0x18_1VGFA[0x18];                               // 0x3f8(0x18)
+};
+
+
+// Size 0x0 (Full Size[0x120] - InheritedSize[0x120]
+class StopEmissaryVoyageInlineVoteValidator: public EmissaryVoyageVoteValidatorBase
+{
+public:
 };
 
 
@@ -341,7 +332,17 @@ public:
 class StopGuildEmissaryVoyageInlineVoteConsumer: public StopEmissaryVoyageInlineVoteConsumer
 {
 public:
-	char                                                         pad0x30_B8W09[0x30];                               // 0x368(0x30)
+	char                                                         pad0x30_8R7K8[0x30];                               // 0x368(0x30)
+};
+
+
+// Size 0xa0 (Full Size[0x4b0] - InheritedSize[0x410]
+class StartGuildEmissaryVoyageInlineVoteConsumer: public StartEmissaryVoyageInlineVoteConsumer
+{
+public:
+	struct FText                                                 GuildEmissaryVotingCantVoteReasonGuildEmissaryNotUnlocked; // 0x410(0x38)
+	struct FText                                                 GuildEmissaryVotingCantVoteReasonNoGuildShip;      // 0x448(0x38)
+	char                                                         pad0x30_TVVTA[0x30];                               // 0x480(0x30)
 };
 
 

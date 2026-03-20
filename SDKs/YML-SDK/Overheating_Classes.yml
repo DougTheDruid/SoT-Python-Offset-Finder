@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 OverheatingComponent:
   Attributes:
-  - Name: pad0x38_E0PST[0x38]
+  - Name: pad0x38_KLOJK[0x38]
     Offset: '0xb8'
     Size: '0x38'
     Type: char
@@ -42,7 +42,7 @@ OverheatingComponent:
     Offset: '0x128'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6f_6X1KH[0x6f]
+  - Name: pad0x6f_FAAWQ[0x6f]
     Offset: '0x129'
     Size: '0x6f'
     Type: char
@@ -54,7 +54,7 @@ OverheatingComponent:
     Offset: '0x19c'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x20_2O1KQ[0x20]
+  - Name: pad0x20_IQGFU[0x20]
     Offset: '0x1a8'
     Size: '0x20'
     Type: char

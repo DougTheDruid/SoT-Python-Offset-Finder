@@ -1,4 +1,30 @@
 {
+  "RegionLookupGeneratedGrid": {
+    "Super": "Object",
+    "FullSize": "0xb0",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "pad0x8_DUH4E[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "WorldSetup",
+        "Type": "struct WorldRegionSetup",
+        "Size": "0x28",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x58_UFJO2[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0x58"
+      }
+    ]
+  },
   "RegionalAssetListSetupDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x78",
@@ -6,7 +32,7 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x50_24CKY[0x50]",
+        "Name": "pad0x50_8DGJH[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x28"
@@ -20,12 +46,59 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x50_OB9GK[0x50]",
+        "Name": "pad0x50_RZHLO[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x28"
       }
     ]
+  },
+  "RegionLookupSeaId": {
+    "Super": "Object",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_BFJIY[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x28"
+      }
+    ]
+  },
+  "RegionalAssetCache": {
+    "Super": "Object",
+    "FullSize": "0xd8",
+    "InheritedSize": "0x28",
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "pad0x10_E4JYE[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "CurrentListAsset",
+        "Type": "class RegionalAssetListDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x98_RHLL9[0x98]",
+        "Type": "char",
+        "Size": "0x98",
+        "Offset": "0x40"
+      }
+    ]
+  },
+  "RegionalAssetCacheInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "LevelAssetCachingService": {
     "Super": "Object",
@@ -34,7 +107,7 @@
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x18_N8323[0x18]",
+        "Name": "pad0x18_L28U9[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x28"
@@ -46,28 +119,14 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x28_EFG46[0x28]",
+        "Name": "pad0x28_2W0HS[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x48"
       }
     ]
   },
-  "RegionLookupSeaId": {
-    "Super": "Object",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_KGIR7[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "RegionalAssetCacheInterface": {
+  "RegionLookupInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -85,65 +144,6 @@
         "Type": "TArray<struct StringAssetReference>",
         "Size": "0x10",
         "Offset": "0x28"
-      }
-    ]
-  },
-  "RegionalAssetCache": {
-    "Super": "Object",
-    "FullSize": "0xd8",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xb0",
-    "Attributes": [
-      {
-        "Name": "pad0x10_CM0Q8[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "CurrentListAsset",
-        "Type": "class RegionalAssetListDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x98_FACHC[0x98]",
-        "Type": "char",
-        "Size": "0x98",
-        "Offset": "0x40"
-      }
-    ]
-  },
-  "RegionLookupInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RegionLookupGeneratedGrid": {
-    "Super": "Object",
-    "FullSize": "0xb0",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x88",
-    "Attributes": [
-      {
-        "Name": "pad0x8_KRPII[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "WorldSetup",
-        "Type": "struct WorldRegionSetup",
-        "Size": "0x28",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x58_NQ6AQ[0x58]",
-        "Type": "char",
-        "Size": "0x58",
-        "Offset": "0x58"
       }
     ]
   },

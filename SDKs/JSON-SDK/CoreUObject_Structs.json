@@ -1,4 +1,88 @@
 {
+  "Default__ScriptStruct": {
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "Plane": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0xc_D1TJ0[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "W",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "IntPoint": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "X",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Y",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "Quat": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "X",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Y",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "Z",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "W",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "Int32Interval": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Min",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Max",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
   "FloatInterval": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -16,31 +100,43 @@
       }
     ]
   },
-  "StringAssetReference": {
-    "ClassSize": "0x10",
+  "DateTime": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "AssetLongPathname",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Name": "pad0x8_OMNMI[0x8]",
+        "Type": "char",
+        "Size": "0x8",
         "Offset": "0x0"
       }
     ]
   },
-  "RandomStream": {
-    "ClassSize": "0x8",
+  "Color": {
+    "ClassSize": "0x4",
     "Attributes": [
       {
-        "Name": "InitialSeed",
-        "Type": "int",
-        "Size": "0x4",
+        "Name": "B",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x0"
       },
       {
-        "Name": "Seed",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
+        "Name": "G",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "R",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x2"
+      },
+      {
+        "Name": "A",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x3"
       }
     ]
   },
@@ -78,84 +174,10 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_2SRM3[0x3]",
+        "Name": "pad0x3_FIYKO[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
-      }
-    ]
-  },
-  "DateTime": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_AIANU[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "Guid": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "A",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "B",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "C",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "D",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "FallbackStruct": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_INRHR[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "IntVector": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "X",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Y",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "Z",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
       }
     ]
   },
@@ -188,20 +210,25 @@
       }
     ]
   },
-  "Int32Interval": {
+  "Timespan": {
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "Min",
-        "Type": "int",
-        "Size": "0x4",
+        "Name": "pad0x8_FBXGZ[0x8]",
+        "Type": "char",
+        "Size": "0x8",
         "Offset": "0x0"
-      },
+      }
+    ]
+  },
+  "StringClassReference": {
+    "ClassSize": "0x10",
+    "Attributes": [
       {
-        "Name": "Max",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
+        "Name": "pad0x10_9ECPD[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
       }
     ]
   },
@@ -225,120 +252,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "Plane": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0xc_VH3YZ[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "W",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "PackedNormal": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "X",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Y",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "Z",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x2"
-      },
-      {
-        "Name": "W",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x3"
-      }
-    ]
-  },
-  "IntPoint": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "X",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Y",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "Timespan": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_KJYAN[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "Vector2D": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "X",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Y",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "FloatRangeBound": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Type",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x3_E34R7[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "Value",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
       }
     ]
   },
@@ -371,51 +284,116 @@
       }
     ]
   },
-  "Default__ScriptStruct": {
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "StringClassReference": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_4F07P[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "Quat": {
-    "ClassSize": "0x10",
+  "IntVector": {
+    "ClassSize": "0xc",
     "Attributes": [
       {
         "Name": "X",
-        "Type": "float",
+        "Type": "int",
         "Size": "0x4",
         "Offset": "0x0"
       },
       {
         "Name": "Y",
-        "Type": "float",
+        "Type": "int",
         "Size": "0x4",
         "Offset": "0x4"
       },
       {
         "Name": "Z",
-        "Type": "float",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "FallbackStruct": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_31435[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "PackedNormal": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "X",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Y",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "Z",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x2"
+      },
+      {
+        "Name": "W",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x3"
+      }
+    ]
+  },
+  "RandomStream": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "InitialSeed",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Seed",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "Guid": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "A",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "B",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "C",
+        "Type": "int",
         "Size": "0x4",
         "Offset": "0x8"
       },
       {
-        "Name": "W",
-        "Type": "float",
+        "Name": "D",
+        "Type": "int",
         "Size": "0x4",
         "Offset": "0xc"
       }
     ]
   },
-  "Int32RangeBound": {
+  "FloatRangeBound": {
     "ClassSize": "0x8",
     "Attributes": [
       {
@@ -425,14 +403,14 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x3_FTRR9[0x3]",
+        "Name": "pad0x3_Z7VL6[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x1"
       },
       {
         "Name": "Value",
-        "Type": "int",
+        "Type": "float",
         "Size": "0x4",
         "Offset": "0x4"
       }
@@ -461,32 +439,228 @@
       }
     ]
   },
-  "Color": {
-    "ClassSize": "0x4",
+  "Int32RangeBound": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "B",
+        "Name": "Type",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
       },
       {
-        "Name": "G",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "pad0x3_FG9AF[0x3]",
+        "Type": "char",
+        "Size": "0x3",
         "Offset": "0x1"
       },
       {
-        "Name": "R",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x2"
+        "Name": "Value",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "StringAssetReference": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AssetLongPathname",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "Vector2D": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "X",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
       },
       {
-        "Name": "A",
+        "Name": "Y",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "TwoVectors": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "v1",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "v2",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "InterpCurvePointVector2D": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "InVal",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "OutVal",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "ArriveTangent",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "LeaveTangent",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "InterpMode",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x3"
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "pad0x3_7W9QZ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1d"
+      }
+    ]
+  },
+  "Box": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Name": "Min",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Max",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "IsValid",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x3_L1J8F[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x19"
+      }
+    ]
+  },
+  "InterpCurvePointLinearColor": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "InVal",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "OutVal",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "ArriveTangent",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "LeaveTangent",
+        "Type": "struct LinearColor",
+        "Size": "0x10",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "InterpMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "pad0x3_0NXIZ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x35"
+      }
+    ]
+  },
+  "Int32Range": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "LowerBound",
+        "Type": "struct Int32RangeBound",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "UpperBound",
+        "Type": "struct Int32RangeBound",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "InterpCurveFloat": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Points",
+        "Type": "TArray<struct InterpCurvePointFloat>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "bIsLooped",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x3_RA5J8[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "LoopKeyOffset",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14"
       }
     ]
   },
@@ -537,6 +711,186 @@
       }
     ]
   },
+  "BoxSphereBounds": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Name": "Origin",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BoxExtent",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "SphereRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "Matrix": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "XPlane",
+        "Type": "struct Plane",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "YPlane",
+        "Type": "struct Plane",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ZPlane",
+        "Type": "struct Plane",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "WPlane",
+        "Type": "struct Plane",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "Box2D": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "Min",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Max",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "IsValid",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x3_OOLT7[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
+      }
+    ]
+  },
+  "FloatRange": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "LowerBound",
+        "Type": "struct FloatRangeBound",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "UpperBound",
+        "Type": "struct FloatRangeBound",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "Transform": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Rotation",
+        "Type": "struct Quat",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Translation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_ZF2HV[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "Scale3D",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_ZPS5W[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      }
+    ]
+  },
+  "InterpCurvePointQuat": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "InVal",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0xc_XCPLW[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "OutVal",
+        "Type": "struct Quat",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ArriveTangent",
+        "Type": "struct Quat",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "LeaveTangent",
+        "Type": "struct Quat",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "InterpMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0xf_QP466[0xf]",
+        "Type": "char",
+        "Size": "0xf",
+        "Offset": "0x41"
+      }
+    ]
+  },
   "InterpCurvePointVector": {
     "ClassSize": "0x2c",
     "Attributes": [
@@ -571,147 +925,19 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x3_7GZOB[0x3]",
+        "Name": "pad0x3_31W5S[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x29"
       }
     ]
   },
-  "Transform": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "Rotation",
-        "Type": "struct Quat",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Translation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x4_YSBXV[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x1c"
-      },
-      {
-        "Name": "Scale3D",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "pad0x4_W0K1W[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      }
-    ]
-  },
-  "Matrix": {
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "XPlane",
-        "Type": "struct Plane",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "YPlane",
-        "Type": "struct Plane",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "ZPlane",
-        "Type": "struct Plane",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "WPlane",
-        "Type": "struct Plane",
-        "Size": "0x10",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "InterpCurvePointQuat": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "InVal",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0xc_ZLTZG[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "OutVal",
-        "Type": "struct Quat",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "ArriveTangent",
-        "Type": "struct Quat",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "LeaveTangent",
-        "Type": "struct Quat",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "InterpMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "pad0xf_9F1O0[0xf]",
-        "Type": "char",
-        "Size": "0xf",
-        "Offset": "0x41"
-      }
-    ]
-  },
-  "FloatRange": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "LowerBound",
-        "Type": "struct FloatRangeBound",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "UpperBound",
-        "Type": "struct FloatRangeBound",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "InterpCurveFloat": {
+  "InterpCurveLinearColor": {
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "Points",
-        "Type": "TArray<struct InterpCurvePointFloat>",
+        "Type": "TArray<struct InterpCurvePointLinearColor>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -722,7 +948,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_A1H8O[0x3]",
+        "Name": "pad0x3_JUFE1[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
@@ -732,203 +958,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x14"
-      }
-    ]
-  },
-  "Box2D": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "Min",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Max",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "IsValid",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x3_82WFU[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x11"
-      }
-    ]
-  },
-  "TwoVectors": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "v1",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "v2",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "Box": {
-    "ClassSize": "0x1c",
-    "Attributes": [
-      {
-        "Name": "Min",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Max",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "IsValid",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x3_QUH5Z[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x19"
-      }
-    ]
-  },
-  "InterpCurvePointLinearColor": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "InVal",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "OutVal",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "ArriveTangent",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "LeaveTangent",
-        "Type": "struct LinearColor",
-        "Size": "0x10",
-        "Offset": "0x24"
-      },
-      {
-        "Name": "InterpMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "pad0x3_62TVZ[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x35"
-      }
-    ]
-  },
-  "Int32Range": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "LowerBound",
-        "Type": "struct Int32RangeBound",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "UpperBound",
-        "Type": "struct Int32RangeBound",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "BoxSphereBounds": {
-    "ClassSize": "0x1c",
-    "Attributes": [
-      {
-        "Name": "Origin",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "BoxExtent",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "SphereRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "InterpCurvePointVector2D": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "InVal",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "OutVal",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "ArriveTangent",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "LeaveTangent",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "InterpMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x1c"
-      },
-      {
-        "Name": "pad0x3_CVGYA[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1d"
       }
     ]
   },
@@ -966,7 +995,7 @@
         "Offset": "0x4c"
       },
       {
-        "Name": "pad0x3_64QTN[0x3]",
+        "Name": "pad0x3_1DFI4[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x4d"
@@ -989,36 +1018,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_WLU0C[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x11"
-      },
-      {
-        "Name": "LoopKeyOffset",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x14"
-      }
-    ]
-  },
-  "InterpCurveVector": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Points",
-        "Type": "TArray<struct InterpCurvePointVector>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "bIsLooped",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x3_2X37V[0x3]",
+        "Name": "pad0x3_W1GL7[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
@@ -1047,7 +1047,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_Q5DL7[0x3]",
+        "Name": "pad0x3_ZH6MQ[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
@@ -1060,12 +1060,12 @@
       }
     ]
   },
-  "InterpCurveLinearColor": {
+  "InterpCurveVector": {
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "Points",
-        "Type": "TArray<struct InterpCurvePointLinearColor>",
+        "Type": "TArray<struct InterpCurvePointVector>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -1076,7 +1076,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_ZZC24[0x3]",
+        "Name": "pad0x3_16OXD[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"
@@ -1105,7 +1105,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_DG02E[0x3]",
+        "Name": "pad0x3_EWJXU[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x11"

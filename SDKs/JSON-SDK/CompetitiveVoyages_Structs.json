@@ -1,24 +1,240 @@
 {
-  "HeistVaultClaimedEventExpiredEvent": {
-    "ClassSize": "0x14",
+  "HeistVaultUnclaimedTelemetryEvent": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "VoyageID",
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "CompetitiveVoyageEventItem": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x8_RSVIX[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
       },
       {
-        "Name": "SuccessfullyUnclaimed",
-        "Type": "bool",
-        "Size": "0x1",
+        "Name": "EventId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "MigratingEventTelemetryData": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "EventId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NumMigratingCrews",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x3_G4L7Z[0x3]",
+        "Name": "pad0x4_KR7NZ[0x4]",
         "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x11"
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "GameEventType",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "CompetitiveVoyagesItemUsageTelemetryEvent": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "EventId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ClassName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "NumTimesSwappedHands",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x4_X58ZI[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "GameEventType",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "HeistVaultTreasureSpawnedTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "VoyageID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "HeistVaultClaimedTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "VoyageID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CompetitiveVoyagesEventCreatedTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "EventId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "GameEventType",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CompetitiveVoyagesCrewShipRespawnTelemetryEvent": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "EventId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "SinkLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "SpawnLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "GameEventType",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "OnCompetitiveVoyageItemAdded": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "AddedItem",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CompetitiveVoyageEventId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "CompetitiveVoyagesRespawnDebugMapData": {
+    "ClassSize": "0x88",
+    "Attributes": [
+      {
+        "Name": "pad0x88_7MGJW[0x88]",
+        "Type": "char",
+        "Size": "0x88",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "OnCompetitiveVoyageMainVoyageStarted": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_LZP69[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ShipSpeedCurseModifyingValues": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "SloopSpeedCurseModifier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BrigantineSpeedCurseModifier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "GalleonSpeedCurseModifier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "HeistVaultResetTelemetryEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_WBIVO[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },
@@ -69,38 +285,14 @@
       }
     ]
   },
-  "CompetitiveVoyagesCrewShipRespawnTelemetryEvent": {
-    "ClassSize": "0x48",
+  "OnCompetitiveVoyageCrewOptInEvent": {
+    "ClassSize": "0x10",
     "Attributes": [
-      {
-        "Name": "EventId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
       {
         "Name": "CrewId",
         "Type": "struct Guid",
         "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "SinkLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "SpawnLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "GameEventType",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x38"
+        "Offset": "0x0"
       }
     ]
   },
@@ -126,231 +318,10 @@
         "Offset": "0x11"
       },
       {
-        "Name": "pad0x2_UQ3CC[0x2]",
+        "Name": "pad0x2_HZHIE[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x12"
-      }
-    ]
-  },
-  "OnCompetitiveVoyageMainVoyageStarted": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_IE9TL[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "OnCompetitiveVoyageCrewOptInEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "CrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CompetitiveVoyageEventItem": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x8_N0XMC[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "EventId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "CompetitiveVoyageItemData": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "pad0x8_3YWV6[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "FirstHoldingCrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "PreviousHoldingCrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "CurrentHoldingCrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "NumTimesSwappedHands",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0xc_4KNS6[0xc]",
-        "Type": "char",
-        "Size": "0xc",
-        "Offset": "0x3c"
-      }
-    ]
-  },
-  "PhasedMarkerItem": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_0SAZU[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CompetitiveVoyagesEventCreatedTelemetryEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "EventId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "GameEventType",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "OnCompetitiveVoyageItemAdded": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "AddedItem",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CompetitiveVoyageEventId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "CompetitiveVoyagesRespawnDebugMapData": {
-    "ClassSize": "0x88",
-    "Attributes": [
-      {
-        "Name": "pad0x88_RNJQ7[0x88]",
-        "Type": "char",
-        "Size": "0x88",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ShipSpeedCurseModifyingValues": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "SloopSpeedCurseModifier",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "BrigantineSpeedCurseModifier",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "GalleonSpeedCurseModifier",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "HeistVaultUnclaimedTelemetryEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "VoyageID",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "HeistVaultClaimedTelemetryEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "VoyageID",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "OnCompetitiveVoyageItemRemoved": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "RemovedItem",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CompetitiveVoyageEventId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "OnCompetitiveVoyageCrewRespawned": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "CrewId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SinkLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "SpawnLocation",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x1c"
       }
     ]
   },
@@ -395,53 +366,36 @@
       }
     ]
   },
-  "OnCompetitiveVoyageMainVoyageStopped": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_KMSJ2[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "MigratingEventTelemetryData": {
+  "OnCompetitiveVoyageCrewRespawned": {
     "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "EventId",
+        "Name": "CrewId",
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "NumMigratingCrews",
-        "Type": "int",
-        "Size": "0x4",
+        "Name": "SinkLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_MU09J[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "GameEventType",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
+        "Name": "SpawnLocation",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x1c"
       }
     ]
   },
-  "HeistVaultResetTelemetryEvent": {
-    "ClassSize": "0x1",
+  "CompetitiveVoyagesRespawnSpawnScoreData": {
+    "ClassSize": "0x14",
     "Attributes": [
       {
-        "Name": "pad0x1_MIHXF[0x1]",
+        "Name": "pad0x14_XOBTH[0x14]",
         "Type": "char",
-        "Size": "0x1",
+        "Size": "0x14",
         "Offset": "0x0"
       }
     ]
@@ -457,60 +411,106 @@
       }
     ]
   },
-  "CompetitiveVoyagesRespawnSpawnScoreData": {
-    "ClassSize": "0x14",
+  "CompetitiveVoyageItemData": {
+    "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x14_OFE3Z[0x14]",
+        "Name": "pad0x8_8NY24[0x8]",
         "Type": "char",
-        "Size": "0x14",
+        "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "FirstHoldingCrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "PreviousHoldingCrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "CurrentHoldingCrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "NumTimesSwappedHands",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0xc_PLGAI[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0x3c"
       }
     ]
   },
-  "HeistVaultTreasureSpawnedTelemetryEvent": {
-    "ClassSize": "0x10",
+  "OnCompetitiveVoyageItemRemoved": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "RemovedItem",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CompetitiveVoyageEventId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "HeistVaultClaimedEventExpiredEvent": {
+    "ClassSize": "0x14",
     "Attributes": [
       {
         "Name": "VoyageID",
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "CompetitiveVoyagesItemUsageTelemetryEvent": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "EventId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
       },
       {
-        "Name": "ClassName",
-        "Type": "struct FName",
-        "Size": "0x8",
+        "Name": "SuccessfullyUnclaimed",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x10"
       },
       {
-        "Name": "NumTimesSwappedHands",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x4_E99JQ[0x4]",
+        "Name": "pad0x3_R36OR[0x3]",
         "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x1c"
-      },
+        "Size": "0x3",
+        "Offset": "0x11"
+      }
+    ]
+  },
+  "PhasedMarkerItem": {
+    "ClassSize": "0x18",
+    "Attributes": [
       {
-        "Name": "GameEventType",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x20"
+        "Name": "pad0x18_9WXY5[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "OnCompetitiveVoyageMainVoyageStopped": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_DAF6J[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },
@@ -583,7 +583,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_L090K[0x4]",
+        "Name": "pad0x4_0YTM1[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"
@@ -612,7 +612,7 @@
         "Offset": "0xa0"
       },
       {
-        "Name": "pad0x3_CVC1V[0x3]",
+        "Name": "pad0x3_FA4P2[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xa1"

@@ -8,7 +8,7 @@ SimpleOverlapCollectionKey:
   Super: Object
 SimpleOverlapComponent:
   Attributes:
-  - Name: pad0x8_89XV8[0x8]
+  - Name: pad0x8_PRP3C[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -18,23 +18,23 @@ SimpleOverlapComponent:
   Super: ActorComponent
 SimpleOverlapZone:
   Attributes:
-  - Name: pad0xc8_PJ48K[0xc8]
+  - Name: pad0xc0_Q6YUO[0xc0]
     Offset: '0x3a0'
-    Size: '0xc8'
+    Size: '0xc0'
     Type: char
   - Name: CollisionMesh
-    Offset: '0x468'
+    Offset: '0x460'
     Size: '0x8'
     Type: class BoxComponent*
   - Name: StartActive
-    Offset: '0x470'
+    Offset: '0x468'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_KLUOQ[0x7]
-    Offset: '0x471'
+  - Name: pad0x7_VDQF5[0x7]
+    Offset: '0x469'
     Size: '0x7'
     Type: char
-  ClassSize: '0xd8'
-  FullSize: '0x478'
+  ClassSize: '0xd0'
+  FullSize: '0x470'
   InheritedSize: '0x3a0'
   Super: Actor

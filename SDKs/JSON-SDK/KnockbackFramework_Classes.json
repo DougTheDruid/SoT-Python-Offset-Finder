@@ -24,7 +24,7 @@
         "Offset": "0x5d8"
       },
       {
-        "Name": "pad0x3_4GET4[0x3]",
+        "Name": "pad0x3_MIIJ7[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x5d9"
@@ -48,7 +48,7 @@
         "Offset": "0x640"
       },
       {
-        "Name": "pad0x4_T7YGC[0x4]",
+        "Name": "pad0x4_IZBZT[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x644"
@@ -60,7 +60,7 @@
         "Offset": "0x648"
       },
       {
-        "Name": "pad0x7_AE0V0[0x7]",
+        "Name": "pad0x7_5OPND[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x649"

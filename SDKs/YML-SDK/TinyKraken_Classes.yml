@@ -6,7 +6,7 @@ BattlePhaseProgressionTrackerBase:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_DAYTB[0x3]
+  - Name: pad0x3_EGRWT[0x3]
     Offset: '0x29'
     Size: '0x3'
     Type: char
@@ -18,7 +18,7 @@ BattlePhaseProgressionTrackerBase:
     Offset: '0x30'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_A7RLS[0x7]
+  - Name: pad0x7_G60WG[0x7]
     Offset: '0x31'
     Size: '0x7'
     Type: char
@@ -32,7 +32,7 @@ BattlePhaseProgressionTrackerDamage:
     Offset: '0x38'
     Size: '0x4'
     Type: float
-  - Name: pad0xbc_6S720[0xbc]
+  - Name: pad0xbc_YI304[0xbc]
     Offset: '0x3c'
     Size: '0xbc'
     Type: char
@@ -42,7 +42,7 @@ BattlePhaseProgressionTrackerDamage:
   Super: BattlePhaseProgressionTrackerBase
 BattlePhaseProgressionTrackerKrakenKilled:
   Attributes:
-  - Name: pad0x58_4MX9O[0x58]
+  - Name: pad0x58_NZ3DT[0x58]
     Offset: '0x38'
     Size: '0x58'
     Type: char
@@ -52,7 +52,7 @@ BattlePhaseProgressionTrackerKrakenKilled:
   Super: BattlePhaseProgressionTrackerBase
 BattlePhaseProgressionTrackerTentaclesDestroyed:
   Attributes:
-  - Name: pad0x68_DF0XV[0x68]
+  - Name: pad0x68_NI8SS[0x68]
     Offset: '0x38'
     Size: '0x68'
     Type: char
@@ -69,28 +69,28 @@ SandboxPerformanceConstraintActivity_TinyKraken:
 TinyKraken:
   Attributes:
   - Name: HeadSpawnZOffset
-    Offset: '0x968'
+    Offset: '0x960'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_TVQOA[0x4]
-    Offset: '0x96c'
+  - Name: pad0x4_2IXLZ[0x4]
+    Offset: '0x964'
     Size: '0x4'
     Type: char
   - Name: TinyKrakenBattlePhaseParamsList
-    Offset: '0x970'
+    Offset: '0x968'
     Size: '0x10'
     Type: TArray<struct TinyKrakenBattlePhaseParams>
-  - Name: pad0x80_B4XO0[0x80]
-    Offset: '0x980'
-    Size: '0x80'
+  - Name: pad0x88_4MBZX[0x88]
+    Offset: '0x978'
+    Size: '0x88'
     Type: char
-  ClassSize: '0x90'
+  ClassSize: '0xa0'
   FullSize: '0xa00'
-  InheritedSize: '0x970'
+  InheritedSize: '0x960'
   Super: Kraken
 TinyKrakenEventService:
   Attributes:
-  - Name: pad0x40_HFOA8[0x40]
+  - Name: pad0x40_BVMWU[0x40]
     Offset: '0x3a0'
     Size: '0x40'
     Type: char
@@ -102,7 +102,7 @@ TinyKrakenEventService:
     Offset: '0x3e8'
     Size: '0x8'
     Type: class TinyKraken*
-  - Name: pad0x1b0_9KKP0[0x1b0]
+  - Name: pad0x1b0_73RGK[0x1b0]
     Offset: '0x3f0'
     Size: '0x1b0'
     Type: char
@@ -142,7 +142,7 @@ TinyKrakenEventServiceParams:
   Super: DataAsset
 TinyKrakenHead:
   Attributes:
-  - Name: pad0x30_NKICZ[0x30]
+  - Name: pad0x30_2QQ84[0x30]
     Offset: '0x3a0'
     Size: '0x30'
     Type: char
@@ -173,23 +173,85 @@ TinyKrakenHead:
   - Name: HeadAnimInstance
     Offset: '0x400'
     Size: '0x8'
-    Type: class KrakenHeadAnimationInstance*
-  - Name: pad0x120_IHZ4H[0x120]
+    Type: class TinyKrakenHeadAnimationInstance*
+  - Name: pad0x128_LE0CC[0x128]
     Offset: '0x408'
-    Size: '0x120'
+    Size: '0x128'
     Type: char
-  ClassSize: '0x188'
-  FullSize: '0x528'
+  ClassSize: '0x190'
+  FullSize: '0x530'
   InheritedSize: '0x3a0'
   Super: Actor
+TinyKrakenHeadAnimationInstance:
+  Attributes:
+  - Name: OwningTinyKrakenHead
+    Offset: '0x440'
+    Size: '0x8'
+    Type: class Actor*
+  - Name: IsSubmerged
+    Offset: '0x448'
+    Size: '0x1'
+    Type: bool
+  - Name: IsAttacking
+    Offset: '0x449'
+    Size: '0x1'
+    Type: bool
+  - Name: IsAttacking1
+    Offset: '0x44a'
+    Size: '0x1'
+    Type: bool
+  - Name: IsAttacking2
+    Offset: '0x44b'
+    Size: '0x1'
+    Type: bool
+  - Name: IsAttacking3
+    Offset: '0x44c'
+    Size: '0x1'
+    Type: bool
+  - Name: Attack3InRange
+    Offset: '0x44d'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x2_J6HHM[0x2]
+    Offset: '0x44e'
+    Size: '0x2'
+    Type: char
+  - Name: Attack3ShipDistance
+    Offset: '0x450'
+    Size: '0x4'
+    Type: float
+  - Name: IsDead
+    Offset: '0x454'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x2c3_I062N[0x2c3]
+    Offset: '0x455'
+    Size: '0x2c3'
+    Type: char
+  - Name: PlayingMontage
+    Offset: '0x718'
+    Size: '0x8'
+    Type: class AnimMontage*
+  - Name: KrakenHeadHitReactionAsset
+    Offset: '0x720'
+    Size: '0x8'
+    Type: class KrakenHeadHitReactAnimationsDataAsset*
+  - Name: pad0x18_JI06D[0x18]
+    Offset: '0x728'
+    Size: '0x18'
+    Type: char
+  ClassSize: '0x300'
+  FullSize: '0x740'
+  InheritedSize: '0x440'
+  Super: AnimInstance
 TinyKrakenHeadParamsDataAsset:
   Attributes:
   - Name: Params
     Offset: '0x28'
-    Size: '0x30'
+    Size: '0x28'
     Type: struct TinyKrakenHeadParams
-  ClassSize: '0x30'
-  FullSize: '0x58'
+  ClassSize: '0x28'
+  FullSize: '0x50'
   InheritedSize: '0x28'
   Super: DataAsset
 TinyKrakenMultiPhaseEventDataAsset:
@@ -206,27 +268,27 @@ TinyKrakenRoarShockwaveBehaviourParamsDataAsset:
   Attributes:
   - Name: Params
     Offset: '0x28'
-    Size: '0x58'
+    Size: '0x38'
     Type: struct TinyKrakenRoarShockwaveBehaviourParams
-  ClassSize: '0x58'
-  FullSize: '0x80'
+  ClassSize: '0x38'
+  FullSize: '0x60'
   InheritedSize: '0x28'
   Super: DataAsset
 TinyKrakenShipBitingBehaviourParamsDataAsset:
   Attributes:
   - Name: BitingParams
     Offset: '0x28'
-    Size: '0xe8'
+    Size: '0xc8'
     Type: struct TinyKrakenShipBitingBehaviourParams
   - Name: DraggingParams
-    Offset: '0x110'
+    Offset: '0xf0'
     Size: '0x10'
     Type: struct KrakenShipWrappingBehaviourParamsCollection
   - Name: WrappingParams
-    Offset: '0x120'
+    Offset: '0x100'
     Size: '0x10'
     Type: struct KrakenShipWrappingBehaviourParamsCollection
-  ClassSize: '0x108'
-  FullSize: '0x130'
+  ClassSize: '0xe8'
+  FullSize: '0x110'
   InheritedSize: '0x28'
   Super: DataAsset

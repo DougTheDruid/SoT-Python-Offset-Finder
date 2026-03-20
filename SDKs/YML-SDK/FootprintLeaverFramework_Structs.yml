@@ -6,7 +6,7 @@ BoarFootprintProperties:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_ZLWUZ[0x7]
+  - Name: pad0x7_HCH3U[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -18,7 +18,7 @@ BoarFootprintProperties:
     Offset: '0x10'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_Q1I2S[0x4]
+  - Name: pad0x4_KOR8O[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char

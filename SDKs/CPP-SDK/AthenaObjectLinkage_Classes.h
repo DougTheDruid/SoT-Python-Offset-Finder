@@ -7,17 +7,18 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class LinkEndpointInterface: public Interface
+class LinkEndpointIdUtilities: public BlueprintFunctionLibrary
 {
 public:
 };
 
 
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class EndPlayHandler: public Object
+// Size 0xd8 (Full Size[0x190] - InheritedSize[0xb8]
+class LinkerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x18_GC9E9[0x18];                               // 0x28(0x18)
+	char                                                         pad0xc8_E9WTK[0xc8];                               // 0xb8(0xc8)
+	TArray<class EndPlayHandler*>                                EndPlayHandlers;                                   // 0x180(0x10)
 };
 
 
@@ -28,17 +29,16 @@ public:
 };
 
 
-// Size 0xd8 (Full Size[0x190] - InheritedSize[0xb8]
-class LinkerComponent: public ActorComponent
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class EndPlayHandler: public Object
 {
 public:
-	char                                                         pad0xc8_6VHQZ[0xc8];                               // 0xb8(0xc8)
-	TArray<class EndPlayHandler*>                                EndPlayHandlers;                                   // 0x180(0x10)
+	char                                                         pad0x18_G2FK9[0x18];                               // 0x28(0x18)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class LinkEndpointIdUtilities: public BlueprintFunctionLibrary
+class LinkEndpointInterface: public Interface
 {
 public:
 };

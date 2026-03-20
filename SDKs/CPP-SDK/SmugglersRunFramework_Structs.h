@@ -7,15 +7,15 @@
 struct SmugglersClearPickUp
 {
 public:
-	char                                                         pad0x10_6XOWS[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_2TEPS[0x10];                               // 0x0(0x10)
 };
 
 
-// Size 0x30
+// Size 0x34
 struct SmugglersSetPickUpPointForCargo
 {
 public:
-	char                                                         pad0x30_YRLNH[0x30];                               // 0x0(0x30)
+	char                                                         pad0x34_BKG83[0x34];                               // 0x0(0x34)
 };
 
 

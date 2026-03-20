@@ -24,7 +24,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_OFHMS[0x7]",
+        "Name": "pad0x7_GPVXH[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
@@ -37,15 +37,15 @@
       }
     ]
   },
-  "SPC_SharedResource_AncientTinySharkCoral": {
-    "Super": "SandboxPerformanceConstraintSharedResourceType",
+  "SPC_Activity_AncientTinySharkAshen": {
+    "Super": "SandboxPerformanceConstraintActivityType",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "SPC_SharedResource_AncientTinySharkAshen": {
-    "Super": "SandboxPerformanceConstraintSharedResourceType",
+  "AncientTinySharkVariantInterface": {
+    "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
@@ -58,7 +58,7 @@
     "ClassSize": "0x218",
     "Attributes": [
       {
-        "Name": "pad0x58_PQE16[0x58]",
+        "Name": "pad0x58_4AJVD[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0x3a0"
@@ -70,7 +70,7 @@
         "Offset": "0x3f8"
       },
       {
-        "Name": "pad0x8_3U6A4[0x8]",
+        "Name": "pad0x8_CH8IB[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x400"
@@ -88,19 +88,12 @@
         "Offset": "0x410"
       },
       {
-        "Name": "pad0x198_XIOLY[0x198]",
+        "Name": "pad0x198_AZI8Z[0x198]",
         "Type": "char",
         "Size": "0x198",
         "Offset": "0x420"
       }
     ]
-  },
-  "SPC_Activity_AncientTinySharkAshen": {
-    "Super": "SandboxPerformanceConstraintActivityType",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "SPC_Activity_AncientTinySharkCoral": {
     "Super": "SandboxPerformanceConstraintActivityType",
@@ -109,8 +102,15 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "AncientTinySharkVariantInterface": {
-    "Super": "Interface",
+  "SPC_SharedResource_AncientTinySharkAshen": {
+    "Super": "SandboxPerformanceConstraintSharedResourceType",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SPC_SharedResource_AncientTinySharkCoral": {
+    "Super": "SandboxPerformanceConstraintSharedResourceType",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",

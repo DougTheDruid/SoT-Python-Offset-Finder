@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 CordRenderComponent:
   Attributes:
-  - Name: pad0x8_0U1DZ[0x8]
+  - Name: pad0x8_L4CMI[0x8]
     Offset: '0x600'
     Size: '0x8'
     Type: char
@@ -14,7 +14,7 @@ CordRenderComponent:
     Offset: '0x618'
     Size: '0x4'
     Type: float
-  - Name: pad0x24_2JUEL[0x24]
+  - Name: pad0x24_4Y09W[0x24]
     Offset: '0x61c'
     Size: '0x24'
     Type: char
@@ -30,7 +30,7 @@ CordRenderInterface:
   Super: Interface
 DistanceJointComponent:
   Attributes:
-  - Name: pad0x70_VMXJ8[0x70]
+  - Name: pad0x70_RQOSU[0x70]
     Offset: '0xb8'
     Size: '0x70'
     Type: char
@@ -62,7 +62,7 @@ DistanceJointComponent:
     Offset: '0x13a'
     Size: '0x1'
     Type: bool
-  - Name: pad0x5_3WF0Q[0x5]
+  - Name: pad0x5_TZXP5[0x5]
     Offset: '0x13b'
     Size: '0x5'
     Type: char
@@ -76,7 +76,7 @@ DynamicCordRenderComponent:
     Offset: '0x638'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_BIRPD[0x4]
+  - Name: pad0x4_2S5QE[0x4]
     Offset: '0x63c'
     Size: '0x4'
     Type: char
@@ -88,7 +88,7 @@ DynamicCordRenderComponent:
     Offset: '0x648'
     Size: '0x8'
     Type: class SceneComponent*
-  - Name: pad0x50_CQCQM[0x50]
+  - Name: pad0x50_GJCX9[0x50]
     Offset: '0x650'
     Size: '0x50'
     Type: char
@@ -114,7 +114,7 @@ HarpoonRenderComponent:
     Offset: '0x650'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_9E9FB[0xc]
+  - Name: pad0xc_GBKOS[0xc]
     Offset: '0x654'
     Size: '0xc'
     Type: char
@@ -130,72 +130,72 @@ ShouldTetherInWorldSpaceInterface:
   Super: Interface
 Tether:
   Attributes:
-  - Name: pad0xf8_VHF4B[0xf8]
+  - Name: pad0xf0_J5UT8[0xf0]
     Offset: '0x3a0'
-    Size: '0xf8'
+    Size: '0xf0'
     Type: char
   - Name: TetherPositionAnchorComponent
-    Offset: '0x498'
+    Offset: '0x490'
     Size: '0x8'
     Type: class SceneComponent*
   - Name: SourcePhysicsHandle
-    Offset: '0x4a0'
+    Offset: '0x498'
     Size: '0x8'
     Type: class SphereComponent*
   - Name: TargetPhysicsHandle
-    Offset: '0x4a8'
+    Offset: '0x4a0'
     Size: '0x8'
     Type: class SphereComponent*
   - Name: JointComponent
-    Offset: '0x4b0'
+    Offset: '0x4a8'
     Size: '0x8'
     Type: class DistanceJointComponent*
   - Name: SourceActor
-    Offset: '0x4b8'
+    Offset: '0x4b0'
     Size: '0x8'
     Type: class Actor*
   - Name: TargetActor
-    Offset: '0x4c0'
+    Offset: '0x4b8'
     Size: '0x8'
     Type: class Actor*
   - Name: SlackCm
-    Offset: '0x4c8'
+    Offset: '0x4c0'
     Size: '0x4'
     Type: float
   - Name: MaxLengthWhenGrowing
-    Offset: '0x4cc'
+    Offset: '0x4c4'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_XEH1R[0x8]
-    Offset: '0x4d0'
+  - Name: pad0x8_P5DCD[0x8]
+    Offset: '0x4c8'
     Size: '0x8'
     Type: char
   - Name: HasAttached
-    Offset: '0x4d8'
+    Offset: '0x4d0'
     Size: '0x1'
     Type: bool
   - Name: HasSourceActor
-    Offset: '0x4d9'
+    Offset: '0x4d1'
     Size: '0x1'
     Type: bool
   - Name: HasTargetActor
-    Offset: '0x4da'
+    Offset: '0x4d2'
     Size: '0x1'
     Type: bool
   - Name: IsSlackEnabled
-    Offset: '0x4db'
+    Offset: '0x4d3'
     Size: '0x1'
     Type: bool
   - Name: CurrentTetherMode
-    Offset: '0x4dc'
+    Offset: '0x4d4'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_9F2P7[0x3]
-    Offset: '0x4dd'
+  - Name: pad0x3_DF92C[0x3]
+    Offset: '0x4d5'
     Size: '0x3'
     Type: char
-  ClassSize: '0x140'
-  FullSize: '0x4e0'
+  ClassSize: '0x138'
+  FullSize: '0x4d8'
   InheritedSize: '0x3a0'
   Super: Actor
 TetherConstraintInterface:
@@ -206,7 +206,7 @@ TetherConstraintInterface:
   Super: Interface
 TetherCustomisationComponent:
   Attributes:
-  - Name: pad0x8_FWCQ0[0x8]
+  - Name: pad0x8_EIQ0N[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -214,7 +214,7 @@ TetherCustomisationComponent:
     Offset: '0xc0'
     Size: '0x8'
     Type: class SceneComponent*
-  - Name: pad0x48_U852F[0x48]
+  - Name: pad0x48_46IKT[0x48]
     Offset: '0xc8'
     Size: '0x48'
     Type: char
@@ -230,7 +230,7 @@ TetherCustomisationComponent:
     Offset: '0x115'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_AWL14[0x2]
+  - Name: pad0x2_4UPUU[0x2]
     Offset: '0x116'
     Size: '0x2'
     Type: char
@@ -246,7 +246,7 @@ TetherCustomisationInterface:
   Super: TetherQueriableInterface
 TetherInWorldSpaceComponent:
   Attributes:
-  - Name: pad0x8_JOABS[0x8]
+  - Name: pad0x8_BICV3[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char

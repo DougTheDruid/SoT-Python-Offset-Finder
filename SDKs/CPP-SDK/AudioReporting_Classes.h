@@ -6,13 +6,6 @@
 #include "AudioReporting_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AudioReportingDebugMenuGenerator: public DebugMenuEntryGenerator
-{
-public:
-};
-
-
 // Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
 class AudioReportingConfig: public DeveloperSettings
 {
@@ -21,12 +14,20 @@ public:
 };
 
 
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class EventReactionsDataAsset: public DataAsset
+{
+public:
+	TArray<struct EventReactionDesc>                             Reactions;                                         // 0x28(0x10)
+};
+
+
 // Size 0x178 (Full Size[0x230] - InheritedSize[0xb8]
 class AudioReportingComponent: public ActorComponent
 {
 public:
 	class PlayerController*                                      CachedOwningController;                            // 0xb8(0x8)
-	char                                                         pad0x170_34755[0x170];                             // 0xc0(0x170)
+	char                                                         pad0x170_YRPXE[0x170];                             // 0xc0(0x170)
 };
 
 
@@ -37,7 +38,7 @@ public:
 	int                                                          MaxReactionCount;                                  // 0x28(0x4)
 	float                                                        AudioVeryCloseThresholdDistance;                   // 0x2c(0x4)
 	float                                                        AttenuationFilterScaler;                           // 0x30(0x4)
-	char                                                         pad0x4_8T1TJ[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x4_E3EWC[0x4];                                 // 0x34(0x4)
 	TArray<class EventReactionsDataAsset*>                       EventReactionDataAssets;                           // 0x38(0x10)
 };
 
@@ -46,15 +47,14 @@ public:
 class AudioReportReaction: public Object
 {
 public:
-	char                                                         pad0x8_US496[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_CDDJS[0x8];                                 // 0x28(0x8)
 };
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class EventReactionsDataAsset: public DataAsset
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AudioReportingDebugMenuGenerator: public DebugMenuEntryGenerator
 {
 public:
-	TArray<struct EventReactionDesc>                             Reactions;                                         // 0x28(0x10)
 };
 
 

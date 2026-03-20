@@ -6,22 +6,22 @@
 #include "SimpleOverlaps_Structs.h"
 
 
+// Size 0xd0 (Full Size[0x470] - InheritedSize[0x3a0]
+class SimpleOverlapZone: public Actor
+{
+public:
+	char                                                         pad0xc0_Q6YUO[0xc0];                               // 0x3a0(0xc0)
+	class BoxComponent*                                          CollisionMesh;                                     // 0x460(0x8)
+	bool                                                         StartActive;                                       // 0x468(0x1)
+	char                                                         pad0x7_VDQF5[0x7];                                 // 0x469(0x7)
+};
+
+
 // Size 0x8 (Full Size[0xc0] - InheritedSize[0xb8]
 class SimpleOverlapComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_89XV8[0x8];                                 // 0xb8(0x8)
-};
-
-
-// Size 0xd8 (Full Size[0x478] - InheritedSize[0x3a0]
-class SimpleOverlapZone: public Actor
-{
-public:
-	char                                                         pad0xc8_PJ48K[0xc8];                               // 0x3a0(0xc8)
-	class BoxComponent*                                          CollisionMesh;                                     // 0x468(0x8)
-	bool                                                         StartActive;                                       // 0x470(0x1)
-	char                                                         pad0x7_KLUOQ[0x7];                                 // 0x471(0x7)
+	char                                                         pad0x8_PRP3C[0x8];                                 // 0xb8(0x8)
 };
 
 

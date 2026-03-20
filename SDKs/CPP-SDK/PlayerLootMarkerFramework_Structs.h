@@ -4,21 +4,21 @@
 // https://github.com/DougTheDruid
 
 // Size 0x20
+struct PlayerLootMarkerWorldEdgeBatchData
+{
+public:
+	struct Guid                                                  BatchId;                                           // 0x0(0x10)
+	TArray<uintptr_t>                                            Actors;                                            // 0x10(0x10)
+};
+
+
+// Size 0x20
 struct PlayerLootMarkerTelemetryEvent
 {
 public:
 	struct Vector                                                Location;                                          // 0x0(0xc)
 	int                                                          ItemCount;                                         // 0xc(0x4)
 	TArray<String>                                               LootTypes;                                         // 0x10(0x10)
-};
-
-
-// Size 0x20
-struct PlayerLootMarkerWorldEdgeBatchData
-{
-public:
-	struct Guid                                                  BatchId;                                           // 0x0(0x10)
-	TArray<uintptr_t>                                            Actors;                                            // 0x10(0x10)
 };
 
 

@@ -10,29 +10,6 @@
       }
     ]
   },
-  "ChecklistMapItemData": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "Description",
-        "Type": "struct TreasureMapTextDesc",
-        "Size": "0x48",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "IsComplete",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "pad0x7_XX7DM[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x49"
-      }
-    ]
-  },
   "ChecklistItemCompletedTelemetryEvent": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -49,7 +26,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_57PMD[0x7]",
+        "Name": "pad0x7_BM8AX[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
@@ -78,7 +55,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_NFYAV[0x4]",
+        "Name": "pad0x4_45ADP[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c"
@@ -88,17 +65,6 @@
         "Type": "TArray<class ChecklistActionData*>",
         "Size": "0x10",
         "Offset": "0x40"
-      }
-    ]
-  },
-  "CompleteEntireChecklistEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_5LX7L[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
       }
     ]
   },
@@ -116,6 +82,40 @@
         "Type": "class Actor*",
         "Size": "0x8",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "ChecklistMapItemData": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "Description",
+        "Type": "struct TreasureMapTextDesc",
+        "Size": "0x48",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "IsComplete",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x7_S8IKT[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x49"
+      }
+    ]
+  },
+  "CompleteEntireChecklistEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_PYGXF[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },

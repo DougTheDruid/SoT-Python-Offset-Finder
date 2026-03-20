@@ -7,106 +7,28 @@
 
 
 // Size 0x8 (Full Size[0x3a8] - InheritedSize[0x3a0]
-class ServerMigrationSerialisationDetailsTestsMigrationChildActorLinkedActor: public Actor
+class TestActorWithUObjectProperty: public Actor
 {
 public:
-	class ChildActorComponent*                                   Component;                                         // 0x3a0(0x8)
+	class Object*                                                ObjectProperty;                                    // 0x3a0(0x8)
 };
 
 
-// Size 0x0 (Full Size[0x3a0] - InheritedSize[0x3a0]
-class MigrationRelevancyClusterActor: public Actor
+// Size 0x20 (Full Size[0x3c0] - InheritedSize[0x3a0]
+class ServerMigrationSerialisationDetailsTestsMigrationReferenceActor: public Actor
 {
 public:
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class ServerMigrationSerialisationDetailsTestsUStructProperty: public Object
-{
-public:
-	struct ServerMigrationSerialisationDetailsTestsUStruct       SubStructWithMigrationMarkup;                      // 0x28(0xc)
-	char                                                         pad0x4_LKBS2[0x4];                                 // 0x34(0x4)
+	char                                                         pad0x8_W9RR6[0x8];                                 // 0x3a0(0x8)
+	class Actor*                                                 ActorReferenceWithMigrationMarkup;                 // 0x3a8(0x8)
+	char                                                         pad0x10_WBZ26[0x10];                               // 0x3b0(0x10)
 };
 
 
 // Size 0x8 (Full Size[0x3a8] - InheritedSize[0x3a0]
-class ServerMigrationSerialisationDetailsTestsMigrationActorCallsOrderingTestActor: public Actor
+class ServerMigrationSerialisationDetailsTestsMigrationChildActorLinkedActor: public Actor
 {
 public:
-	char                                                         pad0x8_83XPD[0x8];                                 // 0x3a0(0x8)
-};
-
-
-// Size 0x18 (Full Size[0x3b8] - InheritedSize[0x3a0]
-class ServerMigrationSerialisationDetailsTestsActorWithNetActorPtr: public Actor
-{
-public:
-	struct NetActorPtr                                           ActorPtr;                                          // 0x3a0(0x14)
-	char                                                         pad0x4_GTL7H[0x4];                                 // 0x3b4(0x4)
-};
-
-
-// Size 0x10 (Full Size[0x3b0] - InheritedSize[0x3a0]
-class ServerMigrationSerialisationDetailsTestsMigrationReferenceActor: public Actor
-{
-public:
-	class Actor*                                                 ActorReferenceWithMigrationMarkup;                 // 0x3a0(0x8)
-	char                                                         pad0x8_1J8KD[0x8];                                 // 0x3a8(0x8)
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class ServerMigrationSerialisationDetailsTestsPropertyMarkup: public Object
-{
-public:
-	int                                                          Int32NoMarkup;                                     // 0x28(0x4)
-	bool                                                         BoolWithMigrationMarkup;                           // 0x2c(0x1)
-	char                                                         pad0x3_VO6PC[0x3];                                 // 0x2d(0x3)
-	struct FString                                               StringWithSaveGameMarkup;                          // 0x30(0x10)
-	float                                                        FloatWithMigrationAndReplicationMarkup;            // 0x40(0x4)
-	char                                                         pad0x4_29IV2[0x4];                                 // 0x44(0x4)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class NetworkTestingBlueprintFunctionLibrary: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class ServerMigrationSerialisationDetailsTestsTArrayProperty: public Object
-{
-public:
-	TArray<int>                                                  IntegerArrayWithMigrationMarkup;                   // 0x28(0x10)
-};
-
-
-// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
-class ServerMigrationSettings: public Object
-{
-public:
-	int                                                          MaxSimultaneousMigrations;                         // 0x28(0x4)
-	char                                                         pad0x4_CJ093[0x4];                                 // 0x2c(0x4)
-	struct FString                                               TransportImplementation;                           // 0x30(0x10)
-	int                                                          ServerDefaultListenPort;                           // 0x40(0x4)
-	int                                                          ServerListenPortRangeSize;                         // 0x44(0x4)
-	struct FString                                               InstanceImplementation;                            // 0x48(0x10)
-	float                                                        MigrationConnectionTimeoutSeconds;                 // 0x58(0x4)
-	float                                                        MigrationTimeoutSeconds;                           // 0x5c(0x4)
-	float                                                        WaitForClientActorRemappingTimeoutLength;          // 0x60(0x4)
-	float                                                        WaitForTransferOwnershipAcknowledgementTimeoutLength; // 0x64(0x4)
-	float                                                        DeserialisationTimeSliceLength;                    // 0x68(0x4)
-	int                                                          AutomationServerDefaultListenPort;                 // 0x6c(0x4)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ServerMigrationBlueprintFunctionLibrary: public BlueprintFunctionLibrary
-{
-public:
+	class ChildActorComponent*                                   Component;                                         // 0x3a0(0x8)
 };
 
 
@@ -118,28 +40,26 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x3a8] - InheritedSize[0x3a0]
-class ServerMigrationSerialisationDetailsTestsMigrationGetLinkedActor: public Actor
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ServerMigrationBlueprintFunctionLibrary: public BlueprintFunctionLibrary
 {
 public:
-	class Actor*                                                 DependentActor;                                    // 0x3a0(0x8)
 };
 
 
-// Size 0x48 (Full Size[0xb0] - InheritedSize[0x68]
-class MigrationControlChannel: public Channel
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class ServerMigrationSerialisationDetailsTestsUStructProperty: public Object
 {
 public:
-	char                                                         pad0x48_PDNU0[0x48];                               // 0x68(0x48)
+	struct ServerMigrationSerialisationDetailsTestsUStruct       SubStructWithMigrationMarkup;                      // 0x28(0xc)
+	char                                                         pad0x4_5WDEV[0x4];                                 // 0x34(0x4)
 };
 
 
-// Size 0x8 (Full Size[0x3a8] - InheritedSize[0x3a0]
-class ServerMigrationSerialisationDetailsTestsMigrationCustomSerialiseActor: public Actor
+// Size 0x0 (Full Size[0x3a0] - InheritedSize[0x3a0]
+class ServerMigrationSerialisationDetailsTestsMigrationActorWithRootComponentSimulatePhysicsEnabledByDefault: public Actor
 {
 public:
-	struct ServerMigrationCustomMigrationSerialisationStruct     TestStruct;                                        // 0x3a0(0x4)
-	char                                                         pad0x4_Q7L2L[0x4];                                 // 0x3a4(0x4)
 };
 
 
@@ -153,11 +73,36 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x3a8] - InheritedSize[0x3a0]
-class ServerMigrationSerialisationDetailsTestsActorWithReplicatedChild: public Actor
+// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
+class TestUObjectWithObjectProperty: public Object
 {
 public:
-	class ChildActorComponent*                                   ChildActorComponent;                               // 0x3a0(0x8)
+	class Object*                                                ObjectProperty;                                    // 0x28(0x8)
+};
+
+
+// Size 0x8 (Full Size[0x3a8] - InheritedSize[0x3a0]
+class ServerMigrationSerialisationDetailsTestsMigrationCustomSerialiseActor: public Actor
+{
+public:
+	struct ServerMigrationCustomMigrationSerialisationStruct     TestStruct;                                        // 0x3a0(0x4)
+	char                                                         pad0x4_EMLEI[0x4];                                 // 0x3a4(0x4)
+};
+
+
+// Size 0x48 (Full Size[0xb0] - InheritedSize[0x68]
+class MigrationControlChannel: public Channel
+{
+public:
+	char                                                         pad0x48_ZZYY4[0x48];                               // 0x68(0x48)
+};
+
+
+// Size 0x8 (Full Size[0x3a8] - InheritedSize[0x3a0]
+class ServerMigrationSerialisationDetailsTestsMigratableComponentActor: public Actor
+{
+public:
+	class ServerMigrationSerialisationDetailsTestsMigratableComponent* ComponentWithMigrationMarkup;                      // 0x3a0(0x8)
 };
 
 
@@ -169,17 +114,48 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0xc0] - InheritedSize[0xb8]
-class ServerMigrationSerialisationDetailsTestsMigratableComponent: public ActorComponent
+// Size 0x8 (Full Size[0x3a8] - InheritedSize[0x3a0]
+class ServerMigrationSerialisationDetailsTestsMigrationActorCallsOrderingTestActor: public Actor
 {
 public:
-	float                                                        FloatWithMigrationMarkup;                          // 0xb8(0x4)
-	int                                                          IntWithNoMarkup;                                   // 0xbc(0x4)
+	char                                                         pad0x8_VT6IM[0x8];                                 // 0x3a0(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class ServerMigrationSerialisationDetailsTestsTArrayProperty: public Object
+{
+public:
+	TArray<int>                                                  IntegerArrayWithMigrationMarkup;                   // 0x28(0x10)
 };
 
 
 // Size 0x0 (Full Size[0x3a0] - InheritedSize[0x3a0]
-class ServerMigrationSerialisationDetailsTestsMigrationActorWithRootComponentSimulatePhysicsEnabledByDefault: public Actor
+class MigrationRelevancyClusterActor: public Actor
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x3a8] - InheritedSize[0x3a0]
+class ServerMigrationSerialisationDetailsTestsActorWithReplicatedChild: public Actor
+{
+public:
+	class ChildActorComponent*                                   ChildActorComponent;                               // 0x3a0(0x8)
+};
+
+
+// Size 0x18 (Full Size[0x3b8] - InheritedSize[0x3a0]
+class ServerMigrationSerialisationDetailsTestsActorWithNetActorPtr: public Actor
+{
+public:
+	struct NetActorPtr                                           ActorPtr;                                          // 0x3a0(0x14)
+	char                                                         pad0x4_QCND9[0x4];                                 // 0x3b4(0x4)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class NetworkTestingBlueprintFunctionLibrary: public BlueprintFunctionLibrary
 {
 public:
 };
@@ -193,19 +169,11 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
-class TestUObjectWithObjectProperty: public Object
-{
-public:
-	class Object*                                                ObjectProperty;                                    // 0x28(0x8)
-};
-
-
 // Size 0x8 (Full Size[0x3a8] - InheritedSize[0x3a0]
-class TestActorWithUObjectProperty: public Actor
+class ServerMigrationSerialisationDetailsTestsMigrationGetLinkedActor: public Actor
 {
 public:
-	class Object*                                                ObjectProperty;                                    // 0x3a0(0x8)
+	class Actor*                                                 DependentActor;                                    // 0x3a0(0x8)
 };
 
 
@@ -217,6 +185,15 @@ public:
 };
 
 
+// Size 0x8 (Full Size[0xc0] - InheritedSize[0xb8]
+class ServerMigrationSerialisationDetailsTestsMigratableComponent: public ActorComponent
+{
+public:
+	float                                                        FloatWithMigrationMarkup;                          // 0xb8(0x4)
+	int                                                          IntWithNoMarkup;                                   // 0xbc(0x4)
+};
+
+
 // Size 0x8 (Full Size[0x3a8] - InheritedSize[0x3a0]
 class ServerMigrationSerialisationDetailsTestsActorThatMovesOnBeginPlay: public Actor
 {
@@ -225,11 +202,35 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0x3a8] - InheritedSize[0x3a0]
-class ServerMigrationSerialisationDetailsTestsMigratableComponentActor: public Actor
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class ServerMigrationSerialisationDetailsTestsPropertyMarkup: public Object
 {
 public:
-	class ServerMigrationSerialisationDetailsTestsMigratableComponent* ComponentWithMigrationMarkup;                      // 0x3a0(0x8)
+	int                                                          Int32NoMarkup;                                     // 0x28(0x4)
+	bool                                                         BoolWithMigrationMarkup;                           // 0x2c(0x1)
+	char                                                         pad0x3_E5E5O[0x3];                                 // 0x2d(0x3)
+	struct FString                                               StringWithSaveGameMarkup;                          // 0x30(0x10)
+	float                                                        FloatWithMigrationAndReplicationMarkup;            // 0x40(0x4)
+	char                                                         pad0x4_4QY9C[0x4];                                 // 0x44(0x4)
+};
+
+
+// Size 0x48 (Full Size[0x70] - InheritedSize[0x28]
+class ServerMigrationSettings: public Object
+{
+public:
+	int                                                          MaxSimultaneousMigrations;                         // 0x28(0x4)
+	char                                                         pad0x4_DHMCP[0x4];                                 // 0x2c(0x4)
+	struct FString                                               TransportImplementation;                           // 0x30(0x10)
+	int                                                          ServerDefaultListenPort;                           // 0x40(0x4)
+	int                                                          ServerListenPortRangeSize;                         // 0x44(0x4)
+	struct FString                                               InstanceImplementation;                            // 0x48(0x10)
+	float                                                        MigrationConnectionTimeoutSeconds;                 // 0x58(0x4)
+	float                                                        MigrationTimeoutSeconds;                           // 0x5c(0x4)
+	float                                                        WaitForClientActorRemappingTimeoutLength;          // 0x60(0x4)
+	float                                                        WaitForTransferOwnershipAcknowledgementTimeoutLength; // 0x64(0x4)
+	float                                                        DeserialisationTimeSliceLength;                    // 0x68(0x4)
+	int                                                          AutomationServerDefaultListenPort;                 // 0x6c(0x4)
 };
 
 

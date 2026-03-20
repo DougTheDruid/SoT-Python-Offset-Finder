@@ -1,10 +1,121 @@
 {
-  "TetherQueriableInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "Tether": {
+    "Super": "Actor",
+    "FullSize": "0x4d8",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x138",
+    "Attributes": [
+      {
+        "Name": "pad0xf0_J5UT8[0xf0]",
+        "Type": "char",
+        "Size": "0xf0",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "TetherPositionAnchorComponent",
+        "Type": "class SceneComponent*",
+        "Size": "0x8",
+        "Offset": "0x490"
+      },
+      {
+        "Name": "SourcePhysicsHandle",
+        "Type": "class SphereComponent*",
+        "Size": "0x8",
+        "Offset": "0x498"
+      },
+      {
+        "Name": "TargetPhysicsHandle",
+        "Type": "class SphereComponent*",
+        "Size": "0x8",
+        "Offset": "0x4a0"
+      },
+      {
+        "Name": "JointComponent",
+        "Type": "class DistanceJointComponent*",
+        "Size": "0x8",
+        "Offset": "0x4a8"
+      },
+      {
+        "Name": "SourceActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x4b0"
+      },
+      {
+        "Name": "TargetActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x4b8"
+      },
+      {
+        "Name": "SlackCm",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4c0"
+      },
+      {
+        "Name": "MaxLengthWhenGrowing",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4c4"
+      },
+      {
+        "Name": "pad0x8_P5DCD[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x4c8"
+      },
+      {
+        "Name": "HasAttached",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x4d0"
+      },
+      {
+        "Name": "HasSourceActor",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x4d1"
+      },
+      {
+        "Name": "HasTargetActor",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x4d2"
+      },
+      {
+        "Name": "IsSlackEnabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x4d3"
+      },
+      {
+        "Name": "CurrentTetherMode",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x4d4"
+      },
+      {
+        "Name": "pad0x3_DF92C[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x4d5"
+      }
+    ]
+  },
+  "TetherInWorldSpaceComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xc0",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_BICV3[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      }
+    ]
   },
   "TetherInterface": {
     "Super": "Interface",
@@ -13,111 +124,7 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "Tether": {
-    "Super": "Actor",
-    "FullSize": "0x4e0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x140",
-    "Attributes": [
-      {
-        "Name": "pad0xf8_VHF4B[0xf8]",
-        "Type": "char",
-        "Size": "0xf8",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "TetherPositionAnchorComponent",
-        "Type": "class SceneComponent*",
-        "Size": "0x8",
-        "Offset": "0x498"
-      },
-      {
-        "Name": "SourcePhysicsHandle",
-        "Type": "class SphereComponent*",
-        "Size": "0x8",
-        "Offset": "0x4a0"
-      },
-      {
-        "Name": "TargetPhysicsHandle",
-        "Type": "class SphereComponent*",
-        "Size": "0x8",
-        "Offset": "0x4a8"
-      },
-      {
-        "Name": "JointComponent",
-        "Type": "class DistanceJointComponent*",
-        "Size": "0x8",
-        "Offset": "0x4b0"
-      },
-      {
-        "Name": "SourceActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x4b8"
-      },
-      {
-        "Name": "TargetActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x4c0"
-      },
-      {
-        "Name": "SlackCm",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4c8"
-      },
-      {
-        "Name": "MaxLengthWhenGrowing",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4cc"
-      },
-      {
-        "Name": "pad0x8_XEH1R[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x4d0"
-      },
-      {
-        "Name": "HasAttached",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x4d8"
-      },
-      {
-        "Name": "HasSourceActor",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x4d9"
-      },
-      {
-        "Name": "HasTargetActor",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x4da"
-      },
-      {
-        "Name": "IsSlackEnabled",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x4db"
-      },
-      {
-        "Name": "CurrentTetherMode",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x4dc"
-      },
-      {
-        "Name": "pad0x3_9F2P7[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x4dd"
-      }
-    ]
-  },
-  "CordRenderInterface": {
+  "TetherConstraintInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -131,7 +138,7 @@
     "ClassSize": "0x88",
     "Attributes": [
       {
-        "Name": "pad0x70_VMXJ8[0x70]",
+        "Name": "pad0x70_RQOSU[0x70]",
         "Type": "char",
         "Size": "0x70",
         "Offset": "0xb8"
@@ -179,19 +186,44 @@
         "Offset": "0x13a"
       },
       {
-        "Name": "pad0x5_3WF0Q[0x5]",
+        "Name": "pad0x5_TZXP5[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x13b"
       }
     ]
   },
-  "TetherConstraintInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "CordRenderComponent": {
+    "Super": "StaticMeshComponent",
+    "FullSize": "0x640",
+    "InheritedSize": "0x600",
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "pad0x8_L4CMI[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x600"
+      },
+      {
+        "Name": "CordMaterials",
+        "Type": "TArray<class MaterialInstanceDynamic*>",
+        "Size": "0x10",
+        "Offset": "0x608"
+      },
+      {
+        "Name": "ThicknessCm",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x618"
+      },
+      {
+        "Name": "pad0x24_4Y09W[0x24]",
+        "Type": "char",
+        "Size": "0x24",
+        "Offset": "0x61c"
+      }
+    ]
   },
   "TetherCustomisationComponent": {
     "Super": "ActorComponent",
@@ -200,7 +232,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x8_FWCQ0[0x8]",
+        "Name": "pad0x8_EIQ0N[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -212,7 +244,7 @@
         "Offset": "0xc0"
       },
       {
-        "Name": "pad0x48_U852F[0x48]",
+        "Name": "pad0x48_46IKT[0x48]",
         "Type": "char",
         "Size": "0x48",
         "Offset": "0xc8"
@@ -236,44 +268,26 @@
         "Offset": "0x115"
       },
       {
-        "Name": "pad0x2_AWL14[0x2]",
+        "Name": "pad0x2_4UPUU[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x116"
       }
     ]
   },
-  "CordRenderComponent": {
-    "Super": "StaticMeshComponent",
-    "FullSize": "0x640",
-    "InheritedSize": "0x600",
-    "ClassSize": "0x40",
-    "Attributes": [
-      {
-        "Name": "pad0x8_0U1DZ[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x600"
-      },
-      {
-        "Name": "CordMaterials",
-        "Type": "TArray<class MaterialInstanceDynamic*>",
-        "Size": "0x10",
-        "Offset": "0x608"
-      },
-      {
-        "Name": "ThicknessCm",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x618"
-      },
-      {
-        "Name": "pad0x24_2JUEL[0x24]",
-        "Type": "char",
-        "Size": "0x24",
-        "Offset": "0x61c"
-      }
-    ]
+  "TetherQueriableInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CordRenderInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "ShouldTetherInWorldSpaceInterface": {
     "Super": "Interface",
@@ -282,19 +296,12 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "TetherInWorldSpaceComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xc0",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_JOABS[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      }
-    ]
+  "TetherCustomisationInterface": {
+    "Super": "TetherQueriableInterface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "HarpoonRenderComponent": {
     "Super": "CordRenderComponent",
@@ -327,7 +334,7 @@
         "Offset": "0x650"
       },
       {
-        "Name": "pad0xc_9E9FB[0xc]",
+        "Name": "pad0xc_GBKOS[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x654"
@@ -347,7 +354,7 @@
         "Offset": "0x638"
       },
       {
-        "Name": "pad0x4_BIRPD[0x4]",
+        "Name": "pad0x4_2S5QE[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x63c"
@@ -365,19 +372,12 @@
         "Offset": "0x648"
       },
       {
-        "Name": "pad0x50_CQCQM[0x50]",
+        "Name": "pad0x50_GJCX9[0x50]",
         "Type": "char",
         "Size": "0x50",
         "Offset": "0x650"
       }
     ]
-  },
-  "TetherCustomisationInterface": {
-    "Super": "TetherQueriableInterface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

@@ -1,11 +1,11 @@
 {
-  "TinyKrakenEventCreatedTelemetryEvent": {
-    "ClassSize": "0x10",
+  "EventTinyKrakenHeadFuryShipInRange": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "EventId",
-        "Type": "struct Guid",
-        "Size": "0x10",
+        "Name": "pad0x1_44PY6[0x1]",
+        "Type": "char",
+        "Size": "0x1",
         "Offset": "0x0"
       }
     ]
@@ -17,39 +17,6 @@
         "Name": "EventId",
         "Type": "struct Guid",
         "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventTinyKrakenHeadKilled": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_LL4NY[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventTinyKrakenHeadTakenDamage": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_4SZAP[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventTinyKrakenHeadHealthChanged": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "HealthChangedEvent",
-        "Type": "struct EventHealthChanged",
-        "Size": "0x48",
         "Offset": "0x0"
       }
     ]
@@ -70,10 +37,98 @@
         "Offset": "0xc"
       },
       {
-        "Name": "pad0x3_LN234[0x3]",
+        "Name": "pad0x3_9T339[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xd"
+      }
+    ]
+  },
+  "EventTinyKrakenHeadKilled": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_AEDO5[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventTinyKrakenHeadAttackCompleted": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_MXY7J[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventTinyKrakenHeadUpdateFuryShipDistance": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "pad0x4_3E5ZV[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventTinyKrakenHeadTakenDamage": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_JPZMJ[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventTinyKrakenHeadSubmergingStateChange": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_7KXHC[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventTinyKrakenHeadAttackTriggered": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_D41LV[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "TinyKrakenEventCreatedTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "EventId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventTinyKrakenHeadHealthChanged": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "HealthChangedEvent",
+        "Type": "struct EventHealthChanged",
+        "Size": "0x48",
+        "Offset": "0x0"
       }
     ]
   },

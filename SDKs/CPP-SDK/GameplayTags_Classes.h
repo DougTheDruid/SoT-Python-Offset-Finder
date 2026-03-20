@@ -6,21 +6,12 @@
 #include "GameplayTags_Structs.h"
 
 
-// Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
-class EditableGameplayTagQuery: public Object
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class GameplayTagsList: public Object
 {
 public:
-	struct FString                                               UserDescription;                                   // 0x28(0x10)
-	char                                                         pad0x10_DKJY2[0x10];                               // 0x38(0x10)
-	class EditableGameplayTagQueryExpression*                    RootExpression;                                    // 0x48(0x8)
-	struct GameplayTagQuery                                      TagQueryExportText_Helper;                         // 0x50(0x48)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GameplayTagAssetInterface: public Interface
-{
-public:
+	struct FString                                               ConfigFileName;                                    // 0x28(0x10)
+	TArray<struct GameplayTagTableRow>                           GameplayTagList;                                   // 0x38(0x10)
 };
 
 
@@ -31,11 +22,43 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class GameplayTagsSettings: public Object
+// Size 0x190 (Full Size[0x1b8] - InheritedSize[0x28]
+class GameplayTagsManager: public Object
 {
 public:
-	TArray<String>                                               GameplayTags;                                      // 0x28(0x10)
+	char                                                         pad0xa0_GHG97[0xa0];                               // 0x28(0xa0)
+	TArray<struct GameplayTagSource>                             TagSources;                                        // 0xc8(0x10)
+	char                                                         pad0x80_JCK6R[0x80];                               // 0xd8(0x80)
+	TArray<class DataTable*>                                     GameplayTagTables;                                 // 0x158(0x10)
+	char                                                         pad0x50_XNV3F[0x50];                               // 0x168(0x50)
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class RestrictedGameplayTagsList: public Object
+{
+public:
+	struct FString                                               ConfigFileName;                                    // 0x28(0x10)
+	TArray<struct RestrictedGameplayTagTableRow>                 RestrictedGameplayTagList;                         // 0x38(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class GameplayTagsDeveloperSettings: public Object
+{
+public:
+	struct FString                                               DeveloperConfigName;                               // 0x28(0x10)
+};
+
+
+// Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
+class EditableGameplayTagQuery: public Object
+{
+public:
+	struct FString                                               UserDescription;                                   // 0x28(0x10)
+	char                                                         pad0x10_W354J[0x10];                               // 0x38(0x10)
+	class EditableGameplayTagQueryExpression*                    RootExpression;                                    // 0x48(0x8)
+	struct GameplayTagQuery                                      TagQueryExportText_Helper;                         // 0x50(0x48)
 };
 
 
@@ -46,13 +69,10 @@ public:
 };
 
 
-// Size 0x148 (Full Size[0x170] - InheritedSize[0x28]
-class GameplayTagsManager: public Object
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class GameplayTagAssetInterface: public Interface
 {
 public:
-	char                                                         pad0x118_PUWKL[0x118];                             // 0x28(0x118)
-	TArray<class DataTable*>                                     GameplayTagTables;                                 // 0x140(0x10)
-	char                                                         pad0x20_WENRL[0x20];                               // 0x150(0x20)
 };
 
 
@@ -64,40 +84,59 @@ public:
 };
 
 
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class EditableGameplayTagQueryExpression_NoTagsMatch: public EditableGameplayTagQueryExpression
+// Size 0x70 (Full Size[0xb8] - InheritedSize[0x48]
+class GameplayTagsSettings: public GameplayTagsList
 {
 public:
-	struct GameplayTagContainer                                  Tags;                                              // 0x28(0x28)
+	bool                                                         ImportTagsFromConfig;                              // 0x48(0x1)
+	bool                                                         WarnOnInvalidTags;                                 // 0x49(0x1)
+	bool                                                         FastReplication;                                   // 0x4a(0x1)
+	char                                                         pad0x5_D14SK[0x5];                                 // 0x4b(0x5)
+	struct FString                                               InvalidTagCharacters;                              // 0x50(0x10)
+	TArray<struct GameplayTagCategoryRemap>                      CategoryRemapping;                                 // 0x60(0x10)
+	TArray<struct StringAssetReference>                          GameplayTagTableList;                              // 0x70(0x10)
+	TArray<struct GameplayTagRedirect>                           GameplayTagRedirects;                              // 0x80(0x10)
+	TArray<struct Name>                                          CommonlyReplicatedTags;                            // 0x90(0x10)
+	int                                                          NumBitsForContainerSize;                           // 0xa0(0x4)
+	int                                                          NetIndexFirstBitSegment;                           // 0xa4(0x4)
+	TArray<struct RestrictedConfigInfo>                          RestrictedConfigFiles;                             // 0xa8(0x10)
 };
 
 
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
 class EditableGameplayTagQueryExpression_AnyTagsMatch: public EditableGameplayTagQueryExpression
 {
 public:
-	struct GameplayTagContainer                                  Tags;                                              // 0x28(0x28)
+	struct GameplayTagContainer                                  Tags;                                              // 0x28(0x20)
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class EditableGameplayTagQueryExpression_AllTagsMatch: public EditableGameplayTagQueryExpression
+{
+public:
+	struct GameplayTagContainer                                  Tags;                                              // 0x28(0x20)
 };
 
 
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class EditableGameplayTagQueryExpression_AllExprMatch: public EditableGameplayTagQueryExpression
+class EditableGameplayTagQueryExpression_AnyExprMatch: public EditableGameplayTagQueryExpression
 {
 public:
 	TArray<class EditableGameplayTagQueryExpression*>            Expressions;                                       // 0x28(0x10)
 };
 
 
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class EditableGameplayTagQueryExpression_AllTagsMatch: public EditableGameplayTagQueryExpression
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class EditableGameplayTagQueryExpression_NoTagsMatch: public EditableGameplayTagQueryExpression
 {
 public:
-	struct GameplayTagContainer                                  Tags;                                              // 0x28(0x28)
+	struct GameplayTagContainer                                  Tags;                                              // 0x28(0x20)
 };
 
 
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class EditableGameplayTagQueryExpression_AnyExprMatch: public EditableGameplayTagQueryExpression
+class EditableGameplayTagQueryExpression_AllExprMatch: public EditableGameplayTagQueryExpression
 {
 public:
 	TArray<class EditableGameplayTagQueryExpression*>            Expressions;                                       // 0x28(0x10)

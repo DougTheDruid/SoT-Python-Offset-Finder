@@ -6,6 +6,10 @@ BP_Harpoon_C:
     Offset: '0x3a0'
     Size: '0x8'
     Type: struct PointerToUberGraphFrame
+  - Name: pad0x536f0348_KEZY0[0x536f0348]
+    Offset: '0x3a8'
+    Size: '0x536f0348'
+    Type: char
   - Name: shp_rope_coil_02_a
     Offset: '0x3a8'
     Size: '0x8'

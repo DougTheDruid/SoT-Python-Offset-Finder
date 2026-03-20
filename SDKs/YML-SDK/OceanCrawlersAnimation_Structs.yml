@@ -84,7 +84,7 @@ OceanCrawlerSporeBreathAnimationData:
     Offset: '0x8'
     Size: '0x8'
     Type: class BlendSpace1D*
-  - Name: Outof
+  - Name: OutOf
     Offset: '0x10'
     Size: '0x8'
     Type: class BlendSpace1D*

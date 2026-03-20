@@ -1,11 +1,4 @@
 {
-  "VeilOfTheAncientsServiceDesc": {
-    "Super": "TaleQuestServiceDesc",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "GetVeilOfTheAncientsStep": {
     "Super": "TaleQuestStep",
     "FullSize": "0x98",
@@ -13,37 +6,12 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "VeilOfTheAncients": {
-    "Super": "InteractableBase",
-    "FullSize": "0x3e8",
-    "InheritedSize": "0x3d0",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "NumberOfGems",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3d0"
-      },
-      {
-        "Name": "pad0x4_AUIC7[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3d4"
-      },
-      {
-        "Name": "LockComponent",
-        "Type": "class LockComponent*",
-        "Size": "0x8",
-        "Offset": "0x3d8"
-      },
-      {
-        "Name": "StaticMeshComponent",
-        "Type": "class StaticMeshComponent*",
-        "Size": "0x8",
-        "Offset": "0x3e0"
-      }
-    ]
+  "VeilOfTheAncientsServiceDesc": {
+    "Super": "TaleQuestServiceDesc",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "VeilService": {
     "Super": "TaleQuestService",
@@ -52,7 +20,7 @@
     "ClassSize": "0x120",
     "Attributes": [
       {
-        "Name": "pad0x20_SJPNJ[0x20]",
+        "Name": "pad0x20_VEPMT[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x60"
@@ -70,7 +38,7 @@
         "Offset": "0x88"
       },
       {
-        "Name": "pad0x8_TN1WW[0x8]",
+        "Name": "pad0x8_2XC1A[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x90"
@@ -88,10 +56,42 @@
         "Offset": "0xa0"
       },
       {
-        "Name": "pad0xd8_4BTZ5[0xd8]",
+        "Name": "pad0xd8_QW0KJ[0xd8]",
         "Type": "char",
         "Size": "0xd8",
         "Offset": "0xa8"
+      }
+    ]
+  },
+  "VeilOfTheAncients": {
+    "Super": "InteractableBase",
+    "FullSize": "0x3e8",
+    "InheritedSize": "0x3d0",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "NumberOfGems",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3d0"
+      },
+      {
+        "Name": "pad0x4_CKONY[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3d4"
+      },
+      {
+        "Name": "LockComponent",
+        "Type": "class LockComponent*",
+        "Size": "0x8",
+        "Offset": "0x3d8"
+      },
+      {
+        "Name": "StaticMeshComponent",
+        "Type": "class StaticMeshComponent*",
+        "Size": "0x8",
+        "Offset": "0x3e0"
       }
     ]
   },

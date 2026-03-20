@@ -1,26 +1,5 @@
 {
-  "CookableInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BurntItemConditionalStatTrigger": {
-    "Super": "ConditionalStatsTriggerType",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "CookerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "CookingStateInterface": {
+  "MixableInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -40,21 +19,70 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x7_9CS12[0x7]",
+        "Name": "pad0x7_RB1GI[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x31"
       }
     ]
   },
+  "CookItemConditionalStatTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CookingDefaultsInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CookedItemIgnitedConditionalStatTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CookingStatusPublisherInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "CookItemFromRawConditionalStatTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "PottableInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BurntItemOnShipConditionalStatTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "CookingPot": {
     "Super": "InteractableBase",
-    "FullSize": "0x5b0",
+    "FullSize": "0x5a8",
     "InheritedSize": "0x3d0",
-    "ClassSize": "0x1e0",
+    "ClassSize": "0x1d8",
     "Attributes": [
       {
-        "Name": "pad0x8_RSCCD[0x8]",
+        "Name": "pad0x8_E3KHN[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3d0"
@@ -84,7 +112,7 @@
         "Offset": "0x3f0"
       },
       {
-        "Name": "pad0x4_OC5JZ[0x4]",
+        "Name": "pad0x4_L7VM0[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3f4"
@@ -120,12 +148,19 @@
         "Offset": "0x4d8"
       },
       {
-        "Name": "pad0xa0_U6X74[0xa0]",
+        "Name": "pad0x98_KT0RN[0x98]",
         "Type": "char",
-        "Size": "0xa0",
+        "Size": "0x98",
         "Offset": "0x510"
       }
     ]
+  },
+  "CookingStateInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "PottableComponent": {
     "Super": "ActorComponent",
@@ -134,7 +169,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x8_Q7AHL[0x8]",
+        "Name": "pad0x8_66J9A[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -146,12 +181,19 @@
         "Offset": "0xc0"
       },
       {
-        "Name": "pad0x7_AZ6OU[0x7]",
+        "Name": "pad0x7_6GJZP[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xc1"
       }
     ]
+  },
+  "BurntItemConditionalStatTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "CookerComponent": {
     "Super": "ActorComponent",
@@ -160,7 +202,7 @@
     "ClassSize": "0x180",
     "Attributes": [
       {
-        "Name": "pad0x8_09HWS[0x8]",
+        "Name": "pad0x8_W1W07[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -214,7 +256,7 @@
         "Offset": "0x104"
       },
       {
-        "Name": "pad0x3_UHFV9[0x3]",
+        "Name": "pad0x3_G7T88[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x105"
@@ -232,7 +274,7 @@
         "Offset": "0x110"
       },
       {
-        "Name": "pad0x7_UO16H[0x7]",
+        "Name": "pad0x7_2IL08[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x111"
@@ -274,35 +316,14 @@
         "Offset": "0x199"
       },
       {
-        "Name": "pad0x9e_Y89Q2[0x9e]",
+        "Name": "pad0x9e_S8Z93[0x9e]",
         "Type": "char",
         "Size": "0x9e",
         "Offset": "0x19a"
       }
     ]
   },
-  "CookItemFromRawConditionalStatTrigger": {
-    "Super": "ConditionalStatsTriggerType",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "CookingDefaultsInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MixableInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "PottableInterface": {
+  "CookableInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -328,7 +349,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_6BHXR[0x4]",
+        "Name": "pad0x4_D7SI4[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3c"
@@ -406,125 +427,117 @@
         "Offset": "0x98"
       },
       {
-        "Name": "pad0x4_OQIIY[0x4]",
+        "Name": "pad0x4_QSBGT[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x9c"
       }
     ]
   },
-  "BurntItemOnShipConditionalStatTrigger": {
-    "Super": "ConditionalStatsTriggerType",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "CookItemConditionalStatTrigger": {
-    "Super": "ConditionalStatsTriggerType",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
+  "CookerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
   "CookableComponent": {
     "Super": "ActorComponent",
-    "FullSize": "0x118",
+    "FullSize": "0x128",
     "InheritedSize": "0xb8",
-    "ClassSize": "0x60",
+    "ClassSize": "0x70",
     "Attributes": [
       {
-        "Name": "pad0x20_REVAS[0x20]",
+        "Name": "pad0x28_0UJLV[0x28]",
         "Type": "char",
-        "Size": "0x20",
+        "Size": "0x28",
         "Offset": "0xb8"
       },
       {
         "Name": "NextCookState",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0xd8"
+        "Offset": "0xe0"
       },
       {
         "Name": "TimeToNextCookState",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0xe0"
+        "Offset": "0xe8"
       },
       {
-        "Name": "pad0x4_WCRLI[0x4]",
+        "Name": "pad0x4_PWUGE[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0xe4"
+        "Offset": "0xec"
       },
       {
         "Name": "SmokeFeedbackLevels",
         "Type": "TArray<struct CookableComponentSmokeFeedbackTimingEntry>",
         "Size": "0x10",
-        "Offset": "0xe8"
+        "Offset": "0xf0"
       },
       {
         "Name": "VisibleCookedExtentOverTime",
         "Type": "class CurveFloat*",
         "Size": "0x8",
-        "Offset": "0xf8"
+        "Offset": "0x100"
       },
       {
         "Name": "DefaultVisibleCookedExtent",
         "Type": "float",
         "Size": "0x4",
-        "Offset": "0x100"
+        "Offset": "0x108"
       },
       {
         "Name": "CookableTypeName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x104"
+        "Offset": "0x10c"
       },
       {
         "Name": "CookedStat",
         "Type": "struct PlayerStat",
         "Size": "0x4",
-        "Offset": "0x10c"
+        "Offset": "0x114"
       },
       {
         "Name": "ShipCookedStat",
         "Type": "struct PlayerStat",
         "Size": "0x4",
-        "Offset": "0x110"
+        "Offset": "0x118"
       },
       {
         "Name": "CookingState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x114"
+        "Offset": "0x11c"
       },
       {
         "Name": "InitialCookingState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x115"
+        "Offset": "0x11d"
       },
       {
         "Name": "RemovedCookingState",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x116"
+        "Offset": "0x11e"
       },
       {
         "Name": "IgnoreCookedFromRawStats",
         "Type": "bool",
         "Size": "0x1",
-        "Offset": "0x117"
+        "Offset": "0x11f"
+      },
+      {
+        "Name": "pad0x8_SFZZ7[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x120"
       }
     ]
-  },
-  "CookingStatusPublisherInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

@@ -7,35 +7,49 @@ GameplayTag:
     Size: '0x8'
     Type: struct FName
   ClassSize: '0x8'
+GameplayTagCategoryRemap:
+  Attributes:
+  - Name: BaseCategory
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct FString
+  - Name: RemapCategories
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<String>
+  ClassSize: '0x20'
 GameplayTagContainer:
   Attributes:
-  - Name: pad0x8_R4U2I[0x8]
-    Offset: '0x0'
-    Size: '0x8'
-    Type: char
   - Name: GameplayTags
-    Offset: '0x8'
+    Offset: '0x0'
     Size: '0x10'
     Type: TArray<struct GameplayTag>
-  - Name: Tags
-    Offset: '0x18'
+  - Name: ParentTags
+    Offset: '0x10'
     Size: '0x10'
-    Type: TArray<struct Name>
-  ClassSize: '0x28'
+    Type: TArray<struct GameplayTag>
+  ClassSize: '0x20'
+GameplayTagCreationWidgetHelper:
+  Attributes:
+  - Name: pad0x1_20OXS[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
 GameplayTagNode:
   Attributes:
-  - Name: pad0x78_P1PRA[0x78]
+  - Name: pad0x58_VCHHR[0x58]
     Offset: '0x0'
-    Size: '0x78'
+    Size: '0x58'
     Type: char
-  ClassSize: '0x78'
+  ClassSize: '0x58'
 GameplayTagQuery:
   Attributes:
   - Name: TokenStreamVersion
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_SM8BS[0x4]
+  - Name: pad0x4_BA5LP[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -56,14 +70,81 @@ GameplayTagQuery:
     Size: '0x10'
     Type: struct FString
   ClassSize: '0x48'
+GameplayTagRedirect:
+  Attributes:
+  - Name: OldTagName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: NewTagName
+    Offset: '0x8'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x10'
+GameplayTagReferenceHelper:
+  Attributes:
+  - Name: pad0x8_5MW5T[0x8]
+    Offset: '0x0'
+    Size: '0x8'
+    Type: char
+  ClassSize: '0x8'
+GameplayTagSource:
+  Attributes:
+  - Name: SourceName
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: SourceType
+    Offset: '0x8'
+    Size: '0x1'
+    Type: byte
+  - Name: pad0x7_Q3JV4[0x7]
+    Offset: '0x9'
+    Size: '0x7'
+    Type: char
+  - Name: SourceTagList
+    Offset: '0x10'
+    Size: '0x8'
+    Type: class GameplayTagsList*
+  - Name: SourceRestrictedTagList
+    Offset: '0x18'
+    Size: '0x8'
+    Type: class RestrictedGameplayTagsList*
+  ClassSize: '0x20'
 GameplayTagTableRow:
   Attributes:
   - Name: Tag
     Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: DevComment
+    Offset: '0x8'
     Size: '0x10'
     Type: struct FString
-  - Name: CategoryText
+  ClassSize: '0x18'
+RestrictedConfigInfo:
+  Attributes:
+  - Name: RestrictedConfigName
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct FString
+  - Name: Owners
     Offset: '0x10'
-    Size: '0x38'
-    Type: struct FText
-  ClassSize: '0x48'
+    Size: '0x10'
+    Type: TArray<String>
+  ClassSize: '0x20'
+RestrictedGameplayTagTableRow:
+  Attributes:
+  - Name: pad0x18_QB4PI[0x18]
+    Offset: '0x0'
+    Size: '0x18'
+    Type: char
+  - Name: bAllowNonRestrictedChildren
+    Offset: '0x18'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x7_NRAGM[0x7]
+    Offset: '0x19'
+    Size: '0x7'
+    Type: char
+  ClassSize: '0x20'

@@ -8,7 +8,7 @@ CustomizableTimeInterface:
   Super: Interface
 CustomizableTimeService:
   Attributes:
-  - Name: pad0x8_PSJSF[0x8]
+  - Name: pad0x8_B271C[0x8]
     Offset: '0x4d8'
     Size: '0x8'
     Type: char
@@ -24,7 +24,7 @@ DebugTimeInterface:
   Super: Interface
 DebugTimeService:
   Attributes:
-  - Name: pad0x8_550G0[0x8]
+  - Name: pad0x8_46ODR[0x8]
     Offset: '0x4d0'
     Size: '0x8'
     Type: char
@@ -58,7 +58,7 @@ TimeInterface:
   Super: Interface
 TimeService:
   Attributes:
-  - Name: pad0x38_SGFWC[0x38]
+  - Name: pad0x38_OMNY8[0x38]
     Offset: '0x3a0'
     Size: '0x38'
     Type: char
@@ -66,7 +66,7 @@ TimeService:
     Offset: '0x3d8'
     Size: '0x8'
     Type: struct Timespan
-  - Name: pad0x4_9NFHL[0x4]
+  - Name: pad0x4_JB0TM[0x4]
     Offset: '0x3e0'
     Size: '0x4'
     Type: char
@@ -122,7 +122,7 @@ TimeService:
     Offset: '0x470'
     Size: '0x10'
     Type: struct ReplicatedAuthoritativeTime
-  - Name: pad0x50_S31CF[0x50]
+  - Name: pad0x50_P32VE[0x50]
     Offset: '0x480'
     Size: '0x50'
     Type: char

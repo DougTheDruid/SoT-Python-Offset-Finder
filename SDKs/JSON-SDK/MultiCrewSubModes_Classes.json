@@ -1,35 +1,88 @@
 {
-  "MultiCrewSubModesService": {
-    "Super": "Actor",
-    "FullSize": "0x548",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x1a8",
+  "TaleQuestWaitForSessionStatusChangeStep": {
+    "Super": "TaleQuestStep",
+    "FullSize": "0xf8",
+    "InheritedSize": "0x98",
+    "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x50_XS62W[0x50]",
+        "Name": "pad0x60_VZ64M[0x60]",
         "Type": "char",
-        "Size": "0x50",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "ActiveSessionData",
-        "Type": "struct SubModeSessionData",
-        "Size": "0x18",
-        "Offset": "0x3f0"
-      },
-      {
-        "Name": "pad0x140_QMF1P[0x140]",
-        "Type": "char",
-        "Size": "0x140",
-        "Offset": "0x408"
+        "Size": "0x60",
+        "Offset": "0x98"
       }
     ]
   },
+  "SubModesSessionLayerDesc": {
+    "Super": "Object",
+    "FullSize": "0x60",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "Identifier",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "Stories",
+        "Type": "struct StoryFlagContainer",
+        "Size": "0x18",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "Feature",
+        "Type": "struct FeatureFlag",
+        "Size": "0xc",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "pad0x4_2FXIG[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x5c"
+      }
+    ]
+  },
+  "SubModesSessionLayer": {
+    "Super": "Object",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x18_6O7EB[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "CachedWorld",
+        "Type": "class World*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "Params",
+        "Type": "class SubModesSessionLayerDesc*",
+        "Size": "0x8",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "MultiCrewSubModesServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "MultiCrewSubModesServiceParamsDataAsset": {
     "Super": "DataAsset",
-    "FullSize": "0x48",
+    "FullSize": "0x60",
     "InheritedSize": "0x28",
-    "ClassSize": "0x20",
+    "ClassSize": "0x38",
     "Attributes": [
       {
         "Name": "MaxCrews",
@@ -50,39 +103,457 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_GM97H[0x4]",
-        "Type": "char",
-        "Size": "0x4",
+        "Name": "ReduceMinCrewsOverTime",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x34"
+      },
+      {
+        "Name": "pad0x3_MUBJA[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x35"
+      },
+      {
+        "Name": "InitialMinCrewsReductionTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "MinCrewsReductionTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c"
       },
       {
         "Name": "SpawnLocations",
         "Type": "TArray<struct Transform>",
         "Size": "0x10",
-        "Offset": "0x38"
+        "Offset": "0x40"
+      },
+      {
+        "Name": "Layers",
+        "Type": "TArray<class SubModesSessionLayerDesc*>",
+        "Size": "0x10",
+        "Offset": "0x50"
+      }
+    ]
+  },
+  "TaleQuestWaitForSessionStatusChangeStepDesc": {
+    "Super": "TaleQuestStepDesc",
+    "FullSize": "0x88",
+    "InheritedSize": "0x80",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "SessionStatus",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "HaveTimeout",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x81"
+      },
+      {
+        "Name": "pad0x2_SG2FP[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x82"
+      },
+      {
+        "Name": "TimeoutDurationSeconds",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x84"
+      }
+    ]
+  },
+  "MultiCrewSubModesService": {
+    "Super": "Actor",
+    "FullSize": "0x640",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x2a0",
+    "Attributes": [
+      {
+        "Name": "pad0x50_TYRRS[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "ActiveSessionData",
+        "Type": "struct SubModeSessionData",
+        "Size": "0x48",
+        "Offset": "0x3f0"
+      },
+      {
+        "Name": "pad0x208_0YBCM[0x208]",
+        "Type": "char",
+        "Size": "0x208",
+        "Offset": "0x438"
       }
     ]
   },
   "MultiCrewSubModesArrivalTunnel": {
     "Super": "ClientDestinationPreLoadingArrivalTunnelOfTheDamned",
-    "FullSize": "0x6d0",
-    "InheritedSize": "0x680",
+    "FullSize": "0x6e0",
+    "InheritedSize": "0x690",
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x50_BO2XF[0x50]",
+        "Name": "pad0x50_LZOY5[0x50]",
         "Type": "char",
         "Size": "0x50",
-        "Offset": "0x680"
+        "Offset": "0x690"
       }
     ]
   },
-  "MultiCrewSubModesServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
+  "TaleQuestMultiCrewSubModesFunctionStepLibrary": {
+    "Super": "TaleQuestFunctionStepLibrary",
+    "FullSize": "0x180",
+    "InheritedSize": "0x180",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "SubModesSessionTaleLayer": {
+    "Super": "SubModesSessionLayer",
+    "FullSize": "0x78",
+    "InheritedSize": "0x50",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "TriggerPoint",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "UseAllParticipants",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x51"
+      },
+      {
+        "Name": "pad0x6_BT3H2[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x52"
+      },
+      {
+        "Name": "VoyageDesc",
+        "Type": "class VoyageDescDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "pad0x18_SNYY3[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "SubModesSessionDebugFactionsLayerDesc": {
+    "Super": "SubModesSessionLayerDesc",
+    "FullSize": "0x70",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "FactionList",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "SubModesSessionActorSpawnLayerDesc": {
+    "Super": "SubModesSessionLayerDesc",
+    "FullSize": "0x88",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "TriggerPoint",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "DestroyTriggerPoint",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x61"
+      },
+      {
+        "Name": "pad0x6_SSG5N[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x62"
+      },
+      {
+        "Name": "ActorWithNamedPointsComponent",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "NamedPointsGroup",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "ToSpawn",
+        "Type": "class ItemSpawnData*",
+        "Size": "0x8",
+        "Offset": "0x80"
+      }
+    ]
+  },
+  "SubModesSessionActorSpawnLayer": {
+    "Super": "SubModesSessionLayer",
+    "FullSize": "0xa0",
+    "InheritedSize": "0x50",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "TriggerPoint",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "DestroyTriggerPoint",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x51"
+      },
+      {
+        "Name": "pad0x6_R0SY6[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x52"
+      },
+      {
+        "Name": "ActorWithNamedPointsComponent",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "NamedPointsGroup",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x68"
+      },
+      {
+        "Name": "ToSpawn",
+        "Type": "class ItemSpawnData*",
+        "Size": "0x8",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "pad0x18_R43U9[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "SpawnedActors",
+        "Type": "TArray<class Actor*>",
+        "Size": "0x10",
+        "Offset": "0x90"
+      }
+    ]
+  },
+  "SubModesSessionSendAllianceRewardsLayerDesc": {
+    "Super": "SubModesSessionLayerDesc",
+    "FullSize": "0x98",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "RewardIDRanks",
+        "Type": "TArray<struct RewardId>",
+        "Size": "0x10",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "LastPlaceRewardID",
+        "Type": "struct RewardId",
+        "Size": "0x8",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "MinimumStreakRank",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "pad0x4_XE97X[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x7c"
+      },
+      {
+        "Name": "SandsOfFateRewardsPerParticipants",
+        "Type": "TArray<struct SubModesSandsOfFateParticipantData>",
+        "Size": "0x10",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "NotifyPlayer",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "RequestGold",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x91"
+      },
+      {
+        "Name": "RequestXP",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x92"
+      },
+      {
+        "Name": "RequestRenown",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x93"
+      },
+      {
+        "Name": "RequestFactionAllegiance",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x94"
+      },
+      {
+        "Name": "RequestSovereignHandIn",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x95"
+      },
+      {
+        "Name": "pad0x2_82499[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x96"
+      }
+    ]
+  },
+  "SubModesSessionTaleLayerDesc": {
+    "Super": "SubModesSessionLayerDesc",
+    "FullSize": "0x70",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "TriggerPoint",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "UseAllParticipants",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x61"
+      },
+      {
+        "Name": "pad0x6_PS8NS[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x62"
+      },
+      {
+        "Name": "VoyageDesc",
+        "Type": "class VoyageDescDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x68"
+      }
+    ]
+  },
+  "SubModesSessionDebugFactionsLayer": {
+    "Super": "SubModesSessionLayer",
+    "FullSize": "0x50",
+    "InheritedSize": "0x50",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SubModesSessionRepairShipsLayer": {
+    "Super": "SubModesSessionLayer",
+    "FullSize": "0x70",
+    "InheritedSize": "0x50",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "TriggerPoint",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "pad0x3_4G2MD[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x51"
+      },
+      {
+        "Name": "NumShipsToRepair",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x54"
+      },
+      {
+        "Name": "pad0x18_MAJUL[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x58"
+      }
+    ]
+  },
+  "SubModesSessionSendAllianceRewardsLayer": {
+    "Super": "SubModesSessionLayer",
+    "FullSize": "0x50",
+    "InheritedSize": "0x50",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "SubModesSessionRepairShipsLayerDesc": {
+    "Super": "SubModesSessionLayerDesc",
+    "FullSize": "0x68",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "TriggerPoint",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "pad0x3_XTRAD[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x61"
+      },
+      {
+        "Name": "NumShipsToRepair",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x64"
+      }
+    ]
   },
   "DougTheDruid": {
     "Notes": "Generated by dougthedruid on Discord",

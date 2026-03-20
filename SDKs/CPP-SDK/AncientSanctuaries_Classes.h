@@ -7,20 +7,20 @@
 class AncientSanctuary: public Actor
 {
 public:
-	char                                                         pad0x8_EVUA6[0x8];                                 // 0x3a0(0x8)
+	char                                                         pad0x8_TX183[0x8];                                 // 0x3a0(0x8)
 	TArray<uintptr_t>                                            SanctuaryCompartments;                             // 0x3a8(0x10)
 	TArray<class ItemSpawnComponent*>                            ItemSpawners;                                      // 0x3b8(0x10)
 	TArray<class ItemSpawnComponent*>                            CompartmentItemSpawners;                           // 0x3c8(0x10)
 	bool                                                         DespawnTreasureOnResetVault;                       // 0x3d8(0x1)
-	char                                                         pad0x3_NQ4VX[0x3];                                 // 0x3d9(0x3)
+	char                                                         pad0x3_T3JFL[0x3];                                 // 0x3d9(0x3)
 	float                                                        GracePeriod;                                       // 0x3dc(0x4)
-	char                                                         pad0x8_VCSCO[0x8];                                 // 0x3e0(0x8)
+	char                                                         pad0x8_KAJEQ[0x8];                                 // 0x3e0(0x8)
 	class InstantaneousPanicTeleportVolume*                      SanctuaryPanicVolume;                              // 0x3e8(0x8)
 	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3f0(0x8)
 	class ShapeComponent*                                        SanctuaryOverlapVolume;                            // 0x3f8(0x8)
-	char                                                         pad0x68_USWSV[0x68];                               // 0x400(0x68)
+	char                                                         pad0x68_EWMEG[0x68];                               // 0x400(0x68)
 	float                                                        ServerMigrationExclusionRadius;                    // 0x468(0x4)
-	char                                                         pad0x1c_B35UK[0x1c];                               // 0x46c(0x1c)
+	char                                                         pad0x1c_E24YN[0x1c];                               // 0x46c(0x1c)
 };
 
 

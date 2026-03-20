@@ -12,7 +12,7 @@ AbandonedNoteWeightedTextDataAsset:
   Super: DataAsset
 AbandonedNoteWeightedTextSourceComponent:
   Attributes:
-  - Name: pad0x40_3OVVC[0x40]
+  - Name: pad0x40_KYQQ5[0x40]
     Offset: '0xb8'
     Size: '0x40'
     Type: char
@@ -24,7 +24,7 @@ AbandonedNoteWeightedTextSourceComponent:
     Offset: '0x130'
     Size: '0x38'
     Type: struct FText
-  - Name: pad0x30_PIZOJ[0x30]
+  - Name: pad0x30_9QBB7[0x30]
     Offset: '0x168'
     Size: '0x30'
     Type: char
@@ -62,7 +62,7 @@ OneShotRewardableObjectBase:
     Offset: '0x460'
     Size: '0x38'
     Type: struct FText
-  - Name: pad0x20_74P1O[0x20]
+  - Name: pad0x20_UGX82[0x20]
     Offset: '0x498'
     Size: '0x20'
     Type: char
@@ -76,7 +76,7 @@ PopUpNotificationOnItemWieldedComponent:
     Offset: '0x138'
     Size: '0x8'
     Type: class PopUpMessageDesc*
-  - Name: pad0x18_QHDKZ[0x18]
+  - Name: pad0x18_OA3Z1[0x18]
     Offset: '0x140'
     Size: '0x18'
     Type: char
@@ -86,7 +86,7 @@ PopUpNotificationOnItemWieldedComponent:
   Super: OnItemWieldedComponent
 SirenPuzzleContext:
   Attributes:
-  - Name: pad0x8_28KHN[0x8]
+  - Name: pad0x8_B91Y2[0x8]
     Offset: '0x3a0'
     Size: '0x8'
     Type: char
@@ -110,11 +110,11 @@ SirenPuzzleContext:
     Offset: '0x3e0'
     Size: '0x10'
     Type: TArray<char>
-  - Name: pad0xa0_0IXSD[0xa0]
+  - Name: pad0x98_DUPJS[0x98]
     Offset: '0x3f0'
-    Size: '0xa0'
+    Size: '0x98'
     Type: char
-  ClassSize: '0xf0'
-  FullSize: '0x490'
+  ClassSize: '0xe8'
+  FullSize: '0x488'
   InheritedSize: '0x3a0'
   Super: Actor

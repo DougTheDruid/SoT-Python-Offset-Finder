@@ -1,4 +1,18 @@
 {
+  "NavalBattleService": {
+    "Super": "Actor",
+    "FullSize": "0x4a0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x100",
+    "Attributes": [
+      {
+        "Name": "pad0x100_GR1GG[0x100]",
+        "Type": "char",
+        "Size": "0x100",
+        "Offset": "0x3a0"
+      }
+    ]
+  },
   "NavalBattleServiceParamsDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x38",
@@ -28,20 +42,6 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x34"
-      }
-    ]
-  },
-  "NavalBattleService": {
-    "Super": "Actor",
-    "FullSize": "0x4a0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x100",
-    "Attributes": [
-      {
-        "Name": "pad0x100_ARJV4[0x100]",
-        "Type": "char",
-        "Size": "0x100",
-        "Offset": "0x3a0"
       }
     ]
   },

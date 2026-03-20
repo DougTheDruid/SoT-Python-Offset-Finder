@@ -6,6 +6,21 @@
 #include "RareEngine_Structs.h"
 
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class HitchDiagnosisBlueprintFunctionLibrary: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class AssetReferencer: public DataAsset
+{
+public:
+	TArray<Class>                                                AssetsToReference;                                 // 0x28(0x10)
+};
+
+
 // Size 0x0 (Full Size[0x498] - InheritedSize[0x498]
 class RareHUD: public HUD
 {
@@ -20,26 +35,19 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class HitchDiagnosisBlueprintFunctionLibrary: public BlueprintFunctionLibrary
+// Size 0x60 (Full Size[0xac0] - InheritedSize[0xa60]
+class RareGameEngine: public GameEngine
 {
 public:
+	char                                                         pad0x60_2Z04W[0x60];                               // 0xa60(0x60)
 };
 
 
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class StallDetector: public Object
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class AudioHardwareDeviceService: public Object
 {
 public:
-	char                                                         pad0x28_BE469[0x28];                               // 0x28(0x28)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class AssetReferencer: public DataAsset
-{
-public:
-	TArray<Class>                                                AssetsToReference;                                 // 0x28(0x10)
+	char                                                         pad0x18_LN3QU[0x18];                               // 0x28(0x18)
 };
 
 
@@ -51,19 +59,11 @@ public:
 };
 
 
-// Size 0x60 (Full Size[0xac0] - InheritedSize[0xa60]
-class RareGameEngine: public GameEngine
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class StallDetector: public Object
 {
 public:
-	char                                                         pad0x60_RS1PE[0x60];                               // 0xa60(0x60)
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class AudioHardwareDeviceService: public Object
-{
-public:
-	char                                                         pad0x18_OIBWU[0x18];                               // 0x28(0x18)
+	char                                                         pad0x28_BBTFS[0x28];                               // 0x28(0x28)
 };
 
 

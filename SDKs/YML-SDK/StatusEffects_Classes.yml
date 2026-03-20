@@ -16,7 +16,7 @@ AppliedStatusToSelfStatCondition:
     Offset: '0x40'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_KQH9R[0x7]
+  - Name: pad0x7_ETRHO[0x7]
     Offset: '0x41'
     Size: '0x7'
     Type: char
@@ -26,7 +26,7 @@ AppliedStatusToSelfStatCondition:
   Super: TargetedStatCondition
 BuffReceiverComponent:
   Attributes:
-  - Name: pad0x8_9KIQS[0x8]
+  - Name: pad0x8_412IF[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -34,7 +34,7 @@ BuffReceiverComponent:
     Offset: '0xc0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_XNBW9[0x7]
+  - Name: pad0x7_VTBOY[0x7]
     Offset: '0xc1'
     Size: '0x7'
     Type: char
@@ -72,9 +72,9 @@ DebugStatusTicketHolder:
   FullSize: '0x3a8'
   InheritedSize: '0x3a0'
   Super: Actor
-LightWeightStatusEffectManagerComponent:
+LightweightStatusEffectManagerComponent:
   Attributes:
-  - Name: pad0x20_RPVZT[0x20]
+  - Name: pad0x20_1LA1U[0x20]
     Offset: '0xb8'
     Size: '0x20'
     Type: char
@@ -92,7 +92,7 @@ LightWeightStatusEffectManagerComponent:
   Super: ActorComponent
 MaterialStatusSusceptibilityComponent:
   Attributes:
-  - Name: pad0x8_XIW82[0x8]
+  - Name: pad0x8_9ERRN[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -100,7 +100,7 @@ MaterialStatusSusceptibilityComponent:
     Offset: '0xc0'
     Size: '0x8'
     Type: class PhysicalMaterial*
-  - Name: pad0x20_BQ409[0x20]
+  - Name: pad0x20_JSHUG[0x20]
     Offset: '0xc8'
     Size: '0x20'
     Type: char
@@ -124,7 +124,7 @@ SetCanReceiveBuffStatusResponse:
     Offset: '0x39'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_KBMNG[0x6]
+  - Name: pad0x6_L84P8[0x6]
     Offset: '0x3a'
     Size: '0x6'
     Type: char
@@ -134,7 +134,7 @@ SetCanReceiveBuffStatusResponse:
   Super: StatusResponse
 SphericalStatusEffectZone:
   Attributes:
-  - Name: pad0x8_T710Z[0x8]
+  - Name: pad0x8_FWOEA[0x8]
     Offset: '0x3a0'
     Size: '0x8'
     Type: char
@@ -150,12 +150,12 @@ SphericalStatusEffectZone:
     Offset: '0x3b8'
     Size: '0x8'
     Type: class StatusEffectVolumeComponent*
-  - Name: pad0xa0_QK9AR[0xa0]
+  - Name: pad0x98_UF3ED[0x98]
     Offset: '0x3c0'
-    Size: '0xa0'
+    Size: '0x98'
     Type: char
-  ClassSize: '0xc0'
-  FullSize: '0x460'
+  ClassSize: '0xb8'
+  FullSize: '0x458'
   InheritedSize: '0x3a0'
   Super: Actor
 StatusApplicationDesc:
@@ -180,7 +180,7 @@ StatusApplicationMonitorComponent:
   Super: ActorComponent
 StatusBase:
   Attributes:
-  - Name: pad0x8_F5ZJ5[0x8]
+  - Name: pad0x8_5YOVA[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
@@ -202,7 +202,7 @@ StatusEffectHelperFunctionLibrary:
   Super: BlueprintFunctionLibrary
 StatusEffectManagerComponent:
   Attributes:
-  - Name: pad0x28_NSKK8[0x28]
+  - Name: pad0x28_75N90[0x28]
     Offset: '0xb8'
     Size: '0x28'
     Type: char
@@ -221,20 +221,20 @@ StatusEffectManagerComponent:
 StatusEffectOverlapZone:
   Attributes:
   - Name: StatusesToApplyOnOverlap
-    Offset: '0x478'
+    Offset: '0x470'
     Size: '0x10'
     Type: TArray<struct DelayedStatusEffect>
-  - Name: pad0x10_UPAN6[0x10]
-    Offset: '0x488'
+  - Name: pad0x10_0XDVS[0x10]
+    Offset: '0x480'
     Size: '0x10'
     Type: char
   ClassSize: '0x20'
-  FullSize: '0x498'
-  InheritedSize: '0x478'
+  FullSize: '0x490'
+  InheritedSize: '0x470'
   Super: SimpleOverlapZone
 StatusEffectPersistenceComponent:
   Attributes:
-  - Name: pad0x8_YY12D[0x8]
+  - Name: pad0x8_ALI0D[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -278,7 +278,7 @@ StatusEffectVolumeComponent:
     Offset: '0x2d0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_XM7S0[0x7]
+  - Name: pad0x7_FVGCL[0x7]
     Offset: '0x2d1'
     Size: '0x7'
     Type: char
@@ -294,7 +294,7 @@ StatusEffectVolumeComponent:
     Offset: '0x2e9'
     Size: '0x1'
     Type: byte
-  - Name: pad0x66_4YZFU[0x66]
+  - Name: pad0x66_WBHAJ[0x66]
     Offset: '0x2ea'
     Size: '0x66'
     Type: char
@@ -332,7 +332,7 @@ StatusRecipientResponseList:
   Super: DataAsset
 StatusResponse:
   Attributes:
-  - Name: pad0x10_AVLGV[0x10]
+  - Name: pad0x10_IGPFN[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char

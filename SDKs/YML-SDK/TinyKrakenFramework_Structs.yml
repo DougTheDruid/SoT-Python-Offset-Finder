@@ -10,11 +10,32 @@ EventTinyKrakenBattlePhaseCompleted:
     Offset: '0xc'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_LN234[0x3]
+  - Name: pad0x3_9T339[0x3]
     Offset: '0xd'
     Size: '0x3'
     Type: char
   ClassSize: '0x10'
+EventTinyKrakenHeadAttackCompleted:
+  Attributes:
+  - Name: pad0x1_MXY7J[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
+EventTinyKrakenHeadAttackTriggered:
+  Attributes:
+  - Name: pad0x1_D41LV[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
+EventTinyKrakenHeadFuryShipInRange:
+  Attributes:
+  - Name: pad0x1_44PY6[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
 EventTinyKrakenHeadHealthChanged:
   Attributes:
   - Name: HealthChangedEvent
@@ -24,18 +45,32 @@ EventTinyKrakenHeadHealthChanged:
   ClassSize: '0x48'
 EventTinyKrakenHeadKilled:
   Attributes:
-  - Name: pad0x1_LL4NY[0x1]
+  - Name: pad0x1_AEDO5[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
+EventTinyKrakenHeadSubmergingStateChange:
+  Attributes:
+  - Name: pad0x1_7KXHC[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 EventTinyKrakenHeadTakenDamage:
   Attributes:
-  - Name: pad0x1_4SZAP[0x1]
+  - Name: pad0x1_JPZMJ[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
+EventTinyKrakenHeadUpdateFuryShipDistance:
+  Attributes:
+  - Name: pad0x4_3E5ZV[0x4]
+    Offset: '0x0'
+    Size: '0x4'
+    Type: char
+  ClassSize: '0x4'
 TinyKrakenEventCompletedTelemetryEvent:
   Attributes:
   - Name: EventId

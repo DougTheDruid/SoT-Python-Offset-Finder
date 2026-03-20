@@ -7,14 +7,7 @@
 class TestObjectForCollection: public Object
 {
 public:
-	char                                                         pad0x48_OF1MZ[0x48];                               // 0x28(0x48)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ObjectCollectorInterface: public Interface
-{
-public:
+	char                                                         pad0x48_VDL3P[0x48];                               // 0x28(0x48)
 };
 
 
@@ -22,7 +15,14 @@ public:
 class TestCollector: public Object
 {
 public:
-	char                                                         pad0x60_H998R[0x60];                               // 0x28(0x60)
+	char                                                         pad0x60_B015H[0x60];                               // 0x28(0x60)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ObjectCollectorInterface: public Interface
+{
+public:
 };
 
 

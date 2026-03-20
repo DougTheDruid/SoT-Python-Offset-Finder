@@ -1,90 +1,4 @@
 {
-  "MerchantSovereignHandInNameInformation": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MerchantNPCName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SovereignNPCName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "CommoditySourceMetaWrapper": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x18_N09U0[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NPCIdentifier",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "IslandIdentifier",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "EventCommodityCrateRedeemed": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_LOG2H[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CommodityRedemptionTrackingModel": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x2_NB0E1[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NPCName",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x2"
-      },
-      {
-        "Name": "EntitlementOwnershipConfirmed",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x3"
-      },
-      {
-        "Name": "pad0x4_3UQRL[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "CommodityOwner",
-        "Type": "struct UniqueNetIdRepl",
-        "Size": "0x18",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "CommodityTypeDataEntry": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -102,41 +16,116 @@
       }
     ]
   },
-  "CommoditySelectionType": {
-    "ClassSize": "0x8",
+  "MerchantSovereignHandInNameInformation": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "CommodityType",
+        "Name": "MerchantNPCName",
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "SovereignNPCName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
-  "CommodityTrackingModel": {
-    "ClassSize": "0x20",
+  "CommodityRedemptionTrackingModel": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "ItemOfferId",
-        "Type": "struct Guid",
-        "Size": "0x10",
+        "Name": "pad0x2_XWH4W[0x2]",
+        "Type": "char",
+        "Size": "0x2",
         "Offset": "0x0"
       },
       {
         "Name": "NPCName",
         "Type": "byte",
         "Size": "0x1",
+        "Offset": "0x2"
+      },
+      {
+        "Name": "EntitlementOwnershipConfirmed",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x3"
+      },
+      {
+        "Name": "pad0x4_CR25F[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "CommodityOwner",
+        "Type": "struct UniqueNetIdRepl",
+        "Size": "0x18",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EventCommodityCrateRedeemed": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_DQNP4[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CommodityItemSlot": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_VWK90[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "ItemsInSlot",
+        "Type": "TArray<class Actor*>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "RedeemCommodityTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Commodity",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RedemptionSucceeded",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_3Y422[0x7]",
+        "Name": "pad0x7_OHKLN[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
       },
       {
-        "Name": "pad0x8_WAVKK[0x8]",
-        "Type": "char",
+        "Name": "TimeInSecondsSinceFirstRedemptionAttempt",
+        "Type": "double",
         "Size": "0x8",
         "Offset": "0x18"
       }
@@ -159,11 +148,74 @@
       }
     ]
   },
+  "CommoditySourceMetaWrapper": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x18_Z731Q[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NPCIdentifier",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "IslandIdentifier",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "CommodityTrackingModel": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ItemOfferId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NPCName",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_RFDAZ[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "pad0x8_87Q9C[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "CommoditySelectionType": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "CommodityType",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "TrackCommodityPurchaseOnServerRpc": {
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x18_8JEZI[0x18]",
+        "Name": "pad0x18_APN8G[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"
@@ -194,32 +246,20 @@
       }
     ]
   },
-  "RedeemCommodityTelemetryEvent": {
-    "ClassSize": "0x20",
+  "CommodityDescWithRedeemId": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "Commodity",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Name": "RedeemId",
+        "Type": "struct CommoditySelectionType",
+        "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "RedemptionSucceeded",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x7_VEJN9[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x11"
-      },
-      {
-        "Name": "TimeInSecondsSinceFirstRedemptionAttempt",
-        "Type": "double",
+        "Name": "RedeemItemDesc",
+        "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x18"
+        "Offset": "0x8"
       }
     ]
   },
@@ -237,23 +277,6 @@
         "Type": "TArray<struct ActiveCommodityDemands>",
         "Size": "0x10",
         "Offset": "0x10"
-      }
-    ]
-  },
-  "CommodityDescWithRedeemId": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "RedeemId",
-        "Type": "struct CommoditySelectionType",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "RedeemItemDesc",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x8"
       }
     ]
   },

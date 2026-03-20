@@ -1,12 +1,41 @@
 {
-  "CustomPlayerNoteList": {
-    "ClassSize": "0x10",
+  "DestroyMysteriousNoteGameServerRequestModel": {
+    "ClassSize": "0x14",
     "Attributes": [
       {
-        "Name": "Notes",
-        "Type": "TArray<struct NotesRemoteServiceNoteDetailModel>",
-        "Size": "0x10",
+        "Name": "PlayerNetGUID",
+        "Type": "int",
+        "Size": "0x4",
         "Offset": "0x0"
+      },
+      {
+        "Name": "NoteGUID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "CreateMysteriousNoteGameServerResponseModel": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "Success",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_EZ4AA[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "NoteId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x4"
       }
     ]
   },
@@ -20,7 +49,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_DHPZT[0x4]",
+        "Name": "pad0x4_VNOWG[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -50,50 +79,21 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x7_HTEXU[0x7]",
+        "Name": "pad0x7_1WUCU[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x39"
       }
     ]
   },
-  "DestroyMysteriousNoteGameServerRequestModel": {
-    "ClassSize": "0x14",
+  "CustomPlayerNoteList": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "PlayerNetGUID",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NoteGUID",
-        "Type": "struct Guid",
+        "Name": "Notes",
+        "Type": "TArray<struct NotesRemoteServiceNoteDetailModel>",
         "Size": "0x10",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "CreateMysteriousNoteGameServerResponseModel": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "Success",
-        "Type": "bool",
-        "Size": "0x1",
         "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x3_X5DJP[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "NoteId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x4"
       }
     ]
   },

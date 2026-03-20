@@ -10,17 +10,17 @@
 class FaunaMeleeComponent: public SceneComponent
 {
 public:
-	char                                                         pad0x8_7CP30[0x8];                                 // 0x2d0(0x8)
+	char                                                         pad0x8_GQ3I2[0x8];                                 // 0x2d0(0x8)
 	struct DamageInstance                                        DamageInstance;                                    // 0x2d8(0x30)
 	struct KnockBackInfo                                         KnockBackInfo;                                     // 0x308(0x54)
-	char                                                         pad0x4_A9S91[0x4];                                 // 0x35c(0x4)
+	char                                                         pad0x4_7NS23[0x4];                                 // 0x35c(0x4)
 	class UClass*                                                DamagerType;                                       // 0x360(0x8)
 	float                                                        DamageAmount;                                      // 0x368(0x4)
 	char                                                         HealthChangeReason;                                // 0x36c(0x1)
-	char                                                         pad0x3_KQ516[0x3];                                 // 0x36d(0x3)
+	char                                                         pad0x3_NAHOP[0x3];                                 // 0x36d(0x3)
 	float                                                        DistanceToCheckWithTarget;                         // 0x370(0x4)
 	bool                                                         ShouldKnockBack;                                   // 0x374(0x1)
-	char                                                         pad0xb_FLBZ4[0xb];                                 // 0x375(0xb)
+	char                                                         pad0xb_UZKK3[0xb];                                 // 0x375(0xb)
 };
 
 

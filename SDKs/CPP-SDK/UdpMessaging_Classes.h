@@ -8,14 +8,14 @@ class UdpMessagingSettings: public Object
 {
 public:
 	bool                                                         EnableTransport;                                   // 0x28(0x1)
-	char                                                         pad0x7_RU1GS[0x7];                                 // 0x29(0x7)
+	char                                                         pad0x7_7VZFM[0x7];                                 // 0x29(0x7)
 	struct FString                                               UnicastEndpoint;                                   // 0x30(0x10)
 	struct FString                                               MulticastEndpoint;                                 // 0x40(0x10)
 	char                                                         MulticastTimeToLive;                               // 0x50(0x1)
-	char                                                         pad0x7_8UFG7[0x7];                                 // 0x51(0x7)
+	char                                                         pad0x7_B75OG[0x7];                                 // 0x51(0x7)
 	TArray<String>                                               StaticEndpoints;                                   // 0x58(0x10)
 	bool                                                         EnableTunnel;                                      // 0x68(0x1)
-	char                                                         pad0x7_81FYM[0x7];                                 // 0x69(0x7)
+	char                                                         pad0x7_B37XH[0x7];                                 // 0x69(0x7)
 	struct FString                                               TunnelUnicastEndpoint;                             // 0x70(0x10)
 	struct FString                                               TunnelMulticastEndpoint;                           // 0x80(0x10)
 	TArray<String>                                               RemoteTunnelEndpoints;                             // 0x90(0x10)

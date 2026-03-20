@@ -1,12 +1,37 @@
 {
-  "AIAreaOfOperationInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
+  "AIAreaOfOperationComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x8_7TLMD[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "UseAreaOfOperationOnSpawn",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "pad0x3_P48PV[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0xc1"
+      },
+      {
+        "Name": "InitialRadius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc4"
+      }
+    ]
   },
-  "AIGoalProcessorInterface": {
+  "AIAreaOfOperationInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -27,6 +52,46 @@
       }
     ]
   },
+  "AIGoal": {
+    "Super": "Object",
+    "FullSize": "0x40",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "BehaviorTree",
+        "Type": "class BehaviorTree*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "WhileActiveActivityType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x8_NZPF0[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "AIHomeInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AIGoalProcessorInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "AIGoalProcessorComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x118",
@@ -34,7 +99,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x8_P4JBU[0x8]",
+        "Name": "pad0x8_1H883[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -64,75 +129,10 @@
         "Offset": "0xe0"
       },
       {
-        "Name": "pad0x28_XWOKC[0x28]",
+        "Name": "pad0x28_A7N6N[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0xf0"
-      }
-    ]
-  },
-  "AIHomeInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AIGoal": {
-    "Super": "Object",
-    "FullSize": "0x40",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "BehaviorTree",
-        "Type": "class BehaviorTree*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "WhileActiveActivityType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x8_OQLOW[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "AIAreaOfOperationComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xc8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x8_8RNOF[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "UseAreaOfOperationOnSpawn",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "pad0x3_3UNST[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0xc1"
-      },
-      {
-        "Name": "InitialRadius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc4"
       }
     ]
   },

@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 BlueprintSessionResult:
   Attributes:
-  - Name: pad0xf0_9LIT9[0xf0]
+  - Name: pad0xf0_C9S6S[0xf0]
     Offset: '0x0'
     Size: '0xf0'
     Type: char
@@ -13,7 +13,7 @@ PartyReservation:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_HXCVH[0x4]
+  - Name: pad0x4_UY2U9[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -40,7 +40,7 @@ PlayerReservation:
     Offset: '0x28'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_S5M48[0x4]
+  - Name: pad0x4_2HFC8[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char

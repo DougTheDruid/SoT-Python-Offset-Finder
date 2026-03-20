@@ -22,7 +22,7 @@ EnemyAIOnShipEncounterDesc:
     Offset: '0x48'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_ME3N3[0x4]
+  - Name: pad0x4_VWYG2[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -32,7 +32,7 @@ EnemyAIOnShipEncounterDesc:
   Super: DataAsset
 EnemyAIOnShipService:
   Attributes:
-  - Name: pad0x20_BKD6V[0x20]
+  - Name: pad0x20_HT6JG[0x20]
     Offset: '0x3a0'
     Size: '0x20'
     Type: char
@@ -44,7 +44,7 @@ EnemyAIOnShipService:
     Offset: '0x3c8'
     Size: '0x10'
     Type: TArray<struct EnemyAIOnShipActiveEncounters>
-  - Name: pad0x70_D7L4S[0x70]
+  - Name: pad0x70_S9W0Z[0x70]
     Offset: '0x3d8'
     Size: '0x70'
     Type: char

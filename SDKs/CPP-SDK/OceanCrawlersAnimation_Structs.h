@@ -9,7 +9,7 @@ struct OceanCrawlerSporeBreathAnimationData
 public:
 	class BlendSpace1D*                                          Into;                                              // 0x0(0x8)
 	class BlendSpace1D*                                          Locomotion;                                        // 0x8(0x8)
-	class BlendSpace1D*                                          Outof;                                             // 0x10(0x8)
+	class BlendSpace1D*                                          OutOf;                                             // 0x10(0x8)
 };
 
 

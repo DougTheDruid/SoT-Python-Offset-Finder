@@ -16,20 +16,20 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TurnBasedMatchInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
 class NamedInterfaces: public Object
 {
 public:
 	TArray<struct NamedInterface>                                NamedInterfaces;                                   // 0x28(0x10)
 	TArray<struct NamedInterfaceDef>                             NamedInterfaceDefs;                                // 0x38(0x10)
-	char                                                         pad0x18_2R9IA[0x18];                               // 0x48(0x18)
+	char                                                         pad0x18_QH0L3[0x18];                               // 0x48(0x18)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TurnBasedMatchInterface: public Interface
+{
+public:
 };
 
 

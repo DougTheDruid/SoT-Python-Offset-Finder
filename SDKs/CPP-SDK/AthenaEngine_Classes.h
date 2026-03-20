@@ -6,58 +6,43 @@
 #include "AthenaEngine_Structs.h"
 
 
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class StringToAssetClassMap: public DataAsset
-{
-public:
-	TArray<struct StringAssetClassPair>                          StringAssetClassPairs;                             // 0x28(0x10)
-	char                                                         pad0x18_ZLPKQ[0x18];                               // 0x38(0x18)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AdaptiveTriggerControllerInterface: public Interface
+class PlayModeHelpers: public BlueprintFunctionLibrary
 {
 public:
-};
-
-
-// Size 0x18 (Full Size[0xd0] - InheritedSize[0xb8]
-class BoxedRpcDispatcherComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_HFZTJ[0x8];                                 // 0xb8(0x8)
-	TArray<struct SerialisedRpc>                                 AckPendingClientRPCs;                              // 0xc0(0x10)
 };
 
 
 // Size 0x40 (Full Size[0xf8] - InheritedSize[0xb8]
-class PrimitiveCollisionExtentAdjustOverTimeComponent: public ActorComponent
+class UnderseaFogVolumeComponent: public ActorComponent
 {
 public:
-	float                                                        DelayBeforeExtentAdjustment;                       // 0xb8(0x4)
-	char                                                         pad0x2c_4M6HG[0x2c];                               // 0xbc(0x2c)
-	class World*                                                 CachedWorld;                                       // 0xe8(0x8)
-	char                                                         pad0x8_J6IAW[0x8];                                 // 0xf0(0x8)
+	float                                                        WorldFadeDistanceStart;                            // 0xb8(0x4)
+	float                                                        WorldFadeDistanceRange;                            // 0xbc(0x4)
+	float                                                        FogMaxDensity;                                     // 0xc0(0x4)
+	char                                                         pad0x34_P0TFE[0x34];                               // 0xc4(0x34)
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AthenaGameStateInterface: public Interface
+// Size 0x30 (Full Size[0xe8] - InheritedSize[0xb8]
+class SkeletalMeshAggregateTickComponent: public ActorComponent
 {
 public:
+	class SkeletalMeshComponent*                                 Mesh;                                              // 0xb8(0x8)
+	char                                                         pad0x28_D9TX9[0x28];                               // 0xc0(0x28)
+};
+
+
+// Size 0x8 (Full Size[0xc0] - InheritedSize[0xb8]
+class AdaptiveTriggerComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_3IS6T[0x8];                                 // 0xb8(0x8)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class GameInstanceSessionIdProviderInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class HUDInterface: public Interface
 {
 public:
 };
@@ -72,28 +57,67 @@ public:
 	float                                                        CloseProximityRadius;                              // 0xc8(0x4)
 	bool                                                         Use2DDistanceForCloseProximityRadius;              // 0xcc(0x1)
 	bool                                                         WhenInCloseProximityKeepLastYaw;                   // 0xcd(0x1)
-	char                                                         pad0x2_CSW6D[0x2];                                 // 0xce(0x2)
+	char                                                         pad0x2_UE3X4[0x2];                                 // 0xce(0x2)
 	float                                                        RotationSpeed;                                     // 0xd0(0x4)
 	bool                                                         PreventPitchModification;                          // 0xd4(0x1)
-	char                                                         pad0x3_IEDE0[0x3];                                 // 0xd5(0x3)
+	char                                                         pad0x3_Y6X4O[0x3];                                 // 0xd5(0x3)
 	float                                                        MaxPitch;                                          // 0xd8(0x4)
 	float                                                        CloseProximityYawRotation;                         // 0xdc(0x4)
-	char                                                         pad0x8_U7TMX[0x8];                                 // 0xe0(0x8)
-};
-
-
-// Size 0x8 (Full Size[0xc0] - InheritedSize[0xb8]
-class AdaptiveTriggerComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x8_6N708[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_GH234[0x8];                                 // 0xe0(0x8)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ServicesStampIdInterface: public Interface
+class SyncedRandomRetrievalInterface: public Interface
 {
 public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class HUDInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class BoxedRpcDispatcherInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AthenaEngineInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x18 (Full Size[0xd0] - InheritedSize[0xb8]
+class BoxedRpcDispatcherComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_0SSP6[0x8];                                 // 0xb8(0x8)
+	TArray<struct SerialisedRpc>                                 AckPendingClientRPCs;                              // 0xc0(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class NestedWorldRootDataAsset: public DataAsset
+{
+public:
+	char                                                         pad0x10_Z3ETF[0x10];                               // 0x28(0x10)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class StringToAssetClassMap: public DataAsset
+{
+public:
+	TArray<struct StringAssetClassPair>                          StringAssetClassPairs;                             // 0x28(0x10)
+	char                                                         pad0x18_TXGUV[0x18];                               // 0x38(0x18)
 };
 
 
@@ -104,43 +128,6 @@ public:
 };
 
 
-// Size 0x40 (Full Size[0xf8] - InheritedSize[0xb8]
-class UnderseaFogVolumeComponent: public ActorComponent
-{
-public:
-	float                                                        WorldFadeDistanceStart;                            // 0xb8(0x4)
-	float                                                        WorldFadeDistanceRange;                            // 0xbc(0x4)
-	float                                                        FogMaxDensity;                                     // 0xc0(0x4)
-	char                                                         pad0x34_NTONQ[0x34];                               // 0xc4(0x34)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class PlayModeHelpers: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
-// Size 0x30 (Full Size[0xe8] - InheritedSize[0xb8]
-class SkeletalMeshAggregateTickComponent: public ActorComponent
-{
-public:
-	class SkeletalMeshComponent*                                 Mesh;                                              // 0xb8(0x8)
-	char                                                         pad0x28_NN5SP[0x28];                               // 0xc0(0x28)
-};
-
-
-// Size 0x130 (Full Size[0x5d0] - InheritedSize[0x4a0]
-class DynamicColourPointLightComponent: public PointLightComponent
-{
-public:
-	struct RuntimeFloatCurve                                     ActivationCurve;                                   // 0x498(0x80)
-	struct RuntimeFloatCurve                                     DeactivationCurve;                                 // 0x518(0x80)
-	char                                                         pad0x38_3R6DB[0x38];                               // 0x598(0x38)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class ForceFeedbackCondition: public Object
 {
@@ -148,11 +135,24 @@ public:
 };
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class NestedWorldRootDataAsset: public DataAsset
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AdaptiveTriggerControllerInterface: public Interface
 {
 public:
-	char                                                         pad0x10_ITJSU[0x10];                               // 0x28(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class AthenaGameStateInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ServicesStampIdInterface: public Interface
+{
+public:
 };
 
 
@@ -173,7 +173,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class BoxedRpcDispatcherInterface: public Interface
+class AdaptiveTriggerInterface: public Interface
 {
 public:
 };
@@ -186,24 +186,24 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AthenaEngineInterface: public Interface
+// Size 0x130 (Full Size[0x5d0] - InheritedSize[0x4a0]
+class DynamicColourPointLightComponent: public PointLightComponent
 {
 public:
+	struct RuntimeFloatCurve                                     ActivationCurve;                                   // 0x498(0x80)
+	struct RuntimeFloatCurve                                     DeactivationCurve;                                 // 0x518(0x80)
+	char                                                         pad0x38_V8C9I[0x38];                               // 0x598(0x38)
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SyncedRandomRetrievalInterface: public Interface
+// Size 0x40 (Full Size[0xf8] - InheritedSize[0xb8]
+class PrimitiveCollisionExtentAdjustOverTimeComponent: public ActorComponent
 {
 public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AdaptiveTriggerInterface: public Interface
-{
-public:
+	float                                                        DelayBeforeExtentAdjustment;                       // 0xb8(0x4)
+	char                                                         pad0x2c_ERXYG[0x2c];                               // 0xbc(0x2c)
+	class World*                                                 CachedWorld;                                       // 0xe8(0x8)
+	char                                                         pad0x8_J5UE0[0x8];                                 // 0xf0(0x8)
 };
 
 
@@ -214,35 +214,35 @@ public:
 };
 
 
-// Size 0x30 (Full Size[0x128] - InheritedSize[0xf8]
-class BoxCollisionExtentAdjustOverTimeComponent: public PrimitiveCollisionExtentAdjustOverTimeComponent
-{
-public:
-	bool                                                         ShouldAdjustBoxExtentX;                            // 0xf8(0x1)
-	char                                                         pad0x3_LC1LT[0x3];                                 // 0xf9(0x3)
-	float                                                        PostAdjustmentBoxExtentX;                          // 0xfc(0x4)
-	bool                                                         ShouldAdjustBoxExtentY;                            // 0x100(0x1)
-	char                                                         pad0x3_D48XE[0x3];                                 // 0x101(0x3)
-	float                                                        PostAdjustmentBoxExtentY;                          // 0x104(0x4)
-	bool                                                         ShouldAdjustBoxExtentZ;                            // 0x108(0x1)
-	char                                                         pad0x3_BOOLT[0x3];                                 // 0x109(0x3)
-	float                                                        PostAdjustmentBoxExtentZ;                          // 0x10c(0x4)
-	struct Vector                                                ServerSizeScale;                                   // 0x110(0xc)
-	char                                                         pad0x4_MT6KN[0x4];                                 // 0x11c(0x4)
-	class BoxComponent*                                          BoxCollisionToAdjust;                              // 0x120(0x8)
-};
-
-
 // Size 0x18 (Full Size[0x110] - InheritedSize[0xf8]
 class SphereCollisionExtentAdjustOverTimeComponent: public PrimitiveCollisionExtentAdjustOverTimeComponent
 {
 public:
 	bool                                                         ShouldAdjustSphereRadius;                          // 0xf8(0x1)
-	char                                                         pad0x3_L21SS[0x3];                                 // 0xf9(0x3)
+	char                                                         pad0x3_7SUTL[0x3];                                 // 0xf9(0x3)
 	float                                                        PostAdjustmentSphereRadius;                        // 0xfc(0x4)
 	float                                                        ServerSizeScale;                                   // 0x100(0x4)
-	char                                                         pad0x4_8ANZP[0x4];                                 // 0x104(0x4)
+	char                                                         pad0x4_BQX90[0x4];                                 // 0x104(0x4)
 	class SphereComponent*                                       SphereCollisionToAdjust;                           // 0x108(0x8)
+};
+
+
+// Size 0x30 (Full Size[0x128] - InheritedSize[0xf8]
+class BoxCollisionExtentAdjustOverTimeComponent: public PrimitiveCollisionExtentAdjustOverTimeComponent
+{
+public:
+	bool                                                         ShouldAdjustBoxExtentX;                            // 0xf8(0x1)
+	char                                                         pad0x3_S3F0I[0x3];                                 // 0xf9(0x3)
+	float                                                        PostAdjustmentBoxExtentX;                          // 0xfc(0x4)
+	bool                                                         ShouldAdjustBoxExtentY;                            // 0x100(0x1)
+	char                                                         pad0x3_00W3C[0x3];                                 // 0x101(0x3)
+	float                                                        PostAdjustmentBoxExtentY;                          // 0x104(0x4)
+	bool                                                         ShouldAdjustBoxExtentZ;                            // 0x108(0x1)
+	char                                                         pad0x3_2587D[0x3];                                 // 0x109(0x3)
+	float                                                        PostAdjustmentBoxExtentZ;                          // 0x10c(0x4)
+	struct Vector                                                ServerSizeScale;                                   // 0x110(0xc)
+	char                                                         pad0x4_7091W[0x4];                                 // 0x11c(0x4)
+	class BoxComponent*                                          BoxCollisionToAdjust;                              // 0x120(0x8)
 };
 
 

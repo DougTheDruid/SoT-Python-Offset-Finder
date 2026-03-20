@@ -64,7 +64,7 @@ SlateLoadingScreenParams:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_DIOHZ[0x7]
+  - Name: pad0x7_WGMY3[0x7]
     Offset: '0x39'
     Size: '0x7'
     Type: char
@@ -92,7 +92,7 @@ SlateLoadingScreenParams:
     Offset: '0xb0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_787TV[0x4]
+  - Name: pad0x4_899DV[0x4]
     Offset: '0xb4'
     Size: '0x4'
     Type: char
@@ -152,7 +152,7 @@ SlateLoadingScreenParams:
     Offset: '0x1e8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_X92CN[0x4]
+  - Name: pad0x4_YAF9S[0x4]
     Offset: '0x1ec'
     Size: '0x4'
     Type: char
@@ -168,7 +168,7 @@ SlateLoadingScreenParams:
     Offset: '0x230'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_T7NII[0x7]
+  - Name: pad0x7_ZOAH8[0x7]
     Offset: '0x231'
     Size: '0x7'
     Type: char

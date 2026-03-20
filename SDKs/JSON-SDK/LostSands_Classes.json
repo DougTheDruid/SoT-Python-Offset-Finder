@@ -1,111 +1,111 @@
 {
   "LostSandsRowboatGunpowderBarrel": {
     "Super": "Actor",
-    "FullSize": "0x5e0",
+    "FullSize": "0x5d8",
     "InheritedSize": "0x3a0",
-    "ClassSize": "0x240",
+    "ClassSize": "0x238",
     "Attributes": [
       {
-        "Name": "pad0xb8_957SM[0xb8]",
+        "Name": "pad0xb0_8H380[0xb0]",
         "Type": "char",
-        "Size": "0xb8",
+        "Size": "0xb0",
         "Offset": "0x3a0"
       },
       {
         "Name": "ActionRulesComponent",
         "Type": "class ActionRulesComponent*",
         "Size": "0x8",
-        "Offset": "0x458"
+        "Offset": "0x450"
       },
       {
         "Name": "InteractableComponent",
         "Type": "class InteractableComponent*",
         "Size": "0x8",
-        "Offset": "0x460"
+        "Offset": "0x458"
       },
       {
         "Name": "StaticMeshComponent",
         "Type": "class StaticMeshMemoryConstraintComponent*",
         "Size": "0x8",
-        "Offset": "0x468"
+        "Offset": "0x460"
       },
       {
         "Name": "FlammableComponent",
         "Type": "class FlammableWieldableComponent*",
         "Size": "0x8",
-        "Offset": "0x470"
+        "Offset": "0x468"
       },
       {
         "Name": "StatusEffectComponent",
-        "Type": "class LightWeightStatusEffectManagerComponent*",
+        "Type": "class LightweightStatusEffectManagerComponent*",
         "Size": "0x8",
-        "Offset": "0x478"
+        "Offset": "0x470"
       },
       {
         "Name": "ItemHealthComponent",
         "Type": "class ItemHealthComponent*",
         "Size": "0x8",
-        "Offset": "0x480"
+        "Offset": "0x478"
       },
       {
         "Name": "ExplosionComponent",
         "Type": "class ExplosionComponent*",
         "Size": "0x8",
-        "Offset": "0x488"
+        "Offset": "0x480"
       },
       {
         "Name": "RewindComponent",
         "Type": "class RewindComponent*",
         "Size": "0x8",
-        "Offset": "0x490"
+        "Offset": "0x488"
       },
       {
         "Name": "ToggleFuseInputId",
         "Type": "class UClass*",
         "Size": "0x8",
-        "Offset": "0x498"
+        "Offset": "0x490"
       },
       {
         "Name": "LightFuseDescription",
         "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x4a0"
+        "Offset": "0x498"
       },
       {
         "Name": "ExtinguishFuseDescription",
         "Type": "struct FText",
         "Size": "0x38",
-        "Offset": "0x4d8"
+        "Offset": "0x4d0"
       },
       {
         "Name": "NamedPointsGroupName",
         "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x510"
+        "Offset": "0x508"
       },
       {
         "Name": "DistanceFromNamedPoints",
         "Type": "TArray<float>",
         "Size": "0x10",
-        "Offset": "0x538"
+        "Offset": "0x530"
       },
       {
         "Name": "RowboatDestroyedAtGoldenSandsStat",
         "Type": "struct PlayerStat",
         "Size": "0x4",
-        "Offset": "0x548"
+        "Offset": "0x540"
       },
       {
         "Name": "RowboatDestroyedAwayFromGoldenSandsStat",
         "Type": "struct PlayerStat",
         "Size": "0x4",
-        "Offset": "0x54c"
+        "Offset": "0x544"
       },
       {
-        "Name": "pad0x90_CIN28[0x90]",
+        "Name": "pad0x90_LHO39[0x90]",
         "Type": "char",
         "Size": "0x90",
-        "Offset": "0x550"
+        "Offset": "0x548"
       }
     ]
   },

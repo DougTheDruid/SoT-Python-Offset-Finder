@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 PermanentPromptNetworkEvent:
   Attributes:
-  - Name: pad0x18_W17RK[0x18]
+  - Name: pad0x18_9F3QG[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -14,7 +14,7 @@ PermanentPromptNetworkEvent:
     Offset: '0x88'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_5ZTBW[0x7]
+  - Name: pad0x7_RIDAS[0x7]
     Offset: '0x89'
     Size: '0x7'
     Type: char
@@ -40,7 +40,7 @@ PrioritisedPrompt:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_GPOXP[0x7]
+  - Name: pad0x7_Y3E9T[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -64,7 +64,7 @@ PrioritisedPrompt:
     Offset: '0x59'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_ZSBOR[0x6]
+  - Name: pad0x6_DKGV5[0x6]
     Offset: '0x5a'
     Size: '0x6'
     Type: char
@@ -93,7 +93,7 @@ PromptEvaluation:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_FHSVT[0x7]
+  - Name: pad0x7_EFOW9[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -111,7 +111,7 @@ PromptsCounterIncrementEvent:
   ClassSize: '0x8'
 PromptsServiceSetupEvent:
   Attributes:
-  - Name: pad0x1_FA9LM[0x1]
+  - Name: pad0x1_Y23GP[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char

@@ -4,10 +4,10 @@
 // https://github.com/DougTheDruid
 
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class NotificationInputId: public Object
+class AnalogInputId: public Object
 {
 public:
-	char                                                         pad0x10_U6LXO[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_C5HXE[0x10];                               // 0x28(0x10)
 };
 
 
@@ -19,10 +19,10 @@ public:
 
 
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class AnalogInputId: public Object
+class NotificationInputId: public Object
 {
 public:
-	char                                                         pad0x10_ESNZX[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_ZPATY[0x10];                               // 0x28(0x10)
 };
 
 

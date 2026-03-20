@@ -7,7 +7,32 @@
 struct EngineServicePing
 {
 public:
-	char                                                         pad0x1_NTVJU[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_S49KG[0x1];                                 // 0x0(0x1)
+};
+
+
+// Size 0x50
+struct EngineServicePong
+{
+public:
+	struct FString                                               CurrentLevel;                                      // 0x0(0x10)
+	int                                                          EngineVersion;                                     // 0x10(0x4)
+	bool                                                         HasBegunPlay;                                      // 0x14(0x1)
+	char                                                         pad0x3_A4LUW[0x3];                                 // 0x15(0x3)
+	struct Guid                                                  InstanceId;                                        // 0x18(0x10)
+	struct FString                                               InstanceType;                                      // 0x28(0x10)
+	struct Guid                                                  SessionId;                                         // 0x38(0x10)
+	float                                                        WorldTimeSeconds;                                  // 0x48(0x4)
+	char                                                         pad0x4_CEQHB[0x4];                                 // 0x4c(0x4)
+};
+
+
+// Size 0x18
+struct EngineServiceNotification
+{
+public:
+	struct FString                                               Text;                                              // 0x0(0x10)
+	double                                                       TimeSeconds;                                       // 0x10(0x8)
 };
 
 
@@ -20,31 +45,6 @@ public:
 };
 
 
-// Size 0x50
-struct EngineServicePong
-{
-public:
-	struct FString                                               CurrentLevel;                                      // 0x0(0x10)
-	int                                                          EngineVersion;                                     // 0x10(0x4)
-	bool                                                         HasBegunPlay;                                      // 0x14(0x1)
-	char                                                         pad0x3_IS7JX[0x3];                                 // 0x15(0x3)
-	struct Guid                                                  InstanceId;                                        // 0x18(0x10)
-	struct FString                                               InstanceType;                                      // 0x28(0x10)
-	struct Guid                                                  SessionId;                                         // 0x38(0x10)
-	float                                                        WorldTimeSeconds;                                  // 0x48(0x4)
-	char                                                         pad0x4_S9WP0[0x4];                                 // 0x4c(0x4)
-};
-
-
-// Size 0x20
-struct EngineServiceAuthDeny
-{
-public:
-	struct FString                                               UserName;                                          // 0x0(0x10)
-	struct FString                                               UserToDeny;                                        // 0x10(0x10)
-};
-
-
 // Size 0x20
 struct EngineServiceAuthGrant
 {
@@ -54,12 +54,12 @@ public:
 };
 
 
-// Size 0x18
-struct EngineServiceNotification
+// Size 0x20
+struct EngineServiceAuthDeny
 {
 public:
-	struct FString                                               Text;                                              // 0x0(0x10)
-	double                                                       TimeSeconds;                                       // 0x10(0x8)
+	struct FString                                               UserName;                                          // 0x0(0x10)
+	struct FString                                               UserToDeny;                                        // 0x10(0x10)
 };
 
 

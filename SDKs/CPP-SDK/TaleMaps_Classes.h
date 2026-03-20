@@ -6,45 +6,37 @@
 #include "TaleMaps_Structs.h"
 
 
-// Size 0x98 (Full Size[0x130] - InheritedSize[0x98]
-class SelectWayfinderIslandsFromRegionStep: public TaleQuestStep
+// Size 0x28 (Full Size[0xc0] - InheritedSize[0x98]
+class AddMarkToTornMapStep: public TaleQuestStep
 {
 public:
-	class RegionMapDataAsset*                                    RegionData;                                        // 0x98(0x8)
-	class RegionIslandWayfinderSelectionStrategy*                SelectionStrategy;                                 // 0xa0(0x8)
-	class Actor*                                                 VaultActor;                                        // 0xa8(0x8)
-	char                                                         pad0x80_FYSAP[0x80];                               // 0xb0(0x80)
+	char                                                         pad0x20_STGEO[0x20];                               // 0x98(0x20)
+	class UClass*                                                MapMark;                                           // 0xb8(0x8)
 };
 
 
-// Size 0x60 (Full Size[0xf8] - InheritedSize[0x98]
-class SelectIslandsFromRegionStep: public TaleQuestStep
+// Size 0x20 (Full Size[0x1a0] - InheritedSize[0x180]
+class TaleQuestCustomMapFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
-	class RegionMapDataAsset*                                    RegionData;                                        // 0x98(0x8)
-	class RegionIslandSelectionStrategyBase*                     SelectionStrategy;                                 // 0xa0(0x8)
-	char                                                         pad0x50_OFS68[0x50];                               // 0xa8(0x50)
+	char                                                         QuestIconOverride;                                 // 0x180(0x1)
+	char                                                         pad0x1f_Q14M4[0x1f];                               // 0x181(0x1f)
 };
 
 
-// Size 0xd0 (Full Size[0x150] - InheritedSize[0x80]
-class SelectIslandsFromRegionStepDesc: public TaleQuestStepDesc
+// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
+class TaleQuestWaitForChecklistMapCompletionStep: public TaleQuestStep
 {
 public:
-	struct QuestVariableDataAsset                                Region;                                            // 0x80(0x30)
-	struct QuestVariableInt                                      NumIslands;                                        // 0xb0(0x30)
-	struct QuestVariableInt                                      MaxDifferentIslands;                               // 0xe0(0x30)
-	struct QuestVariableNameArray                                SelectedIslands;                                   // 0x110(0x30)
-	class RegionIslandSelectionStrategyBase*                     SelectionStrategy;                                 // 0x140(0x8)
-	int                                                          DefaultNumIslands;                                 // 0x148(0x4)
-	int                                                          DefaultMaxDifferentIslands;                        // 0x14c(0x4)
+	char                                                         pad0x8_6AA9K[0x8];                                 // 0x98(0x8)
 };
 
 
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestBuildChecklistItemsFromChallengeDeedsDataStep: public TaleQuestStep
+// Size 0xd8 (Full Size[0x170] - InheritedSize[0x98]
+class TaleQuestAddTornMapStep: public TaleQuestStep
 {
 public:
+	char                                                         pad0xd8_0EHXK[0xd8];                               // 0x98(0xd8)
 };
 
 
@@ -52,15 +44,7 @@ public:
 class GetNumberOfCollectedTornMapPiecesStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x40_EGS2Q[0x40];                               // 0x98(0x40)
-};
-
-
-// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
-class TaleQuestTriggerNamedChecklistEventStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct FName                                                 Event;                                             // 0x80(0x8)
+	char                                                         pad0x40_5F3IM[0x40];                               // 0x98(0x40)
 };
 
 
@@ -80,18 +64,65 @@ public:
 };
 
 
+// Size 0xd0 (Full Size[0x150] - InheritedSize[0x80]
+class SelectIslandsFromRegionStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableDataAsset                                Region;                                            // 0x80(0x30)
+	struct QuestVariableInt                                      NumIslands;                                        // 0xb0(0x30)
+	struct QuestVariableInt                                      MaxDifferentIslands;                               // 0xe0(0x30)
+	struct QuestVariableNameArray                                SelectedIslands;                                   // 0x110(0x30)
+	class RegionIslandSelectionStrategyBase*                     SelectionStrategy;                                 // 0x140(0x8)
+	int                                                          DefaultNumIslands;                                 // 0x148(0x4)
+	int                                                          DefaultMaxDifferentIslands;                        // 0x14c(0x4)
+};
+
+
+// Size 0x60 (Full Size[0xf8] - InheritedSize[0x98]
+class SelectIslandsFromRegionStep: public TaleQuestStep
+{
+public:
+	class RegionMapDataAsset*                                    RegionData;                                        // 0x98(0x8)
+	class RegionIslandSelectionStrategyBase*                     SelectionStrategy;                                 // 0xa0(0x8)
+	char                                                         pad0x50_V2GLB[0x50];                               // 0xa8(0x50)
+};
+
+
+// Size 0x90 (Full Size[0x128] - InheritedSize[0x98]
+class TaleQuestAddTradeRouteMapStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x90_615SK[0x90];                               // 0x98(0x90)
+};
+
+
+// Size 0xc0 (Full Size[0x158] - InheritedSize[0x98]
+class TaleQuestAddLocationMapStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0xc0_6OQ4D[0xc0];                               // 0x98(0xc0)
+};
+
+
+// Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
+class TaleQuestMapStepDescBase: public TaleQuestStepDesc
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestTriggerNamedChecklistEventStep: public TaleQuestStep
+{
+public:
+};
+
+
 // Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
 class TaleQuestLocationMapChestFoundStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x8_Q6ZGX[0x8];                                 // 0x98(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestTornMapFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
+	char                                                         pad0x8_72D9F[0x8];                                 // 0x98(0x8)
 };
 
 
@@ -104,20 +135,31 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
-class TaleQuestWaitForChecklistMapCompletionStep: public TaleQuestStep
+// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
+class AddMarkToTornMapStepDescBase: public TaleQuestStepDesc
 {
 public:
-	char                                                         pad0x8_JA7VA[0x8];                                 // 0x98(0x8)
+	struct QuestVariableGuid                                     MapID;                                             // 0x80(0x30)
+	struct TaleQuestVariableMapMarkType                          MapMark;                                           // 0xb0(0x30)
 };
 
 
-// Size 0x20 (Full Size[0x1a0] - InheritedSize[0x180]
-class TaleQuestCustomMapFunctionLibrary: public TaleQuestFunctionStepLibrary
+// Size 0x48 (Full Size[0xc8] - InheritedSize[0x80]
+class TaleQuestBuildChecklistItemsFromChallengeDeedsDataStepDesc: public TaleQuestStepDesc
 {
 public:
-	char                                                         QuestIconOverride;                                 // 0x180(0x1)
-	char                                                         pad0x1f_43XRQ[0x1f];                               // 0x181(0x1f)
+	int                                                          MaxNumberOfChallenges;                             // 0x80(0x4)
+	char                                                         pad0x4_7ZDMN[0x4];                                 // 0x84(0x4)
+	struct FString                                               ChallengeEventPrefix;                              // 0x88(0x10)
+	struct QuestVariableDataAsset                                ChecklistItemsData;                                // 0x98(0x30)
+};
+
+
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class TaleQuestTriggerNamedChecklistEventStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct FName                                                 Event;                                             // 0x80(0x8)
 };
 
 
@@ -128,70 +170,35 @@ public:
 };
 
 
-// Size 0x48 (Full Size[0xc8] - InheritedSize[0x80]
-class TaleQuestBuildChecklistItemsFromChallengeDeedsDataStepDesc: public TaleQuestStepDesc
-{
-public:
-	int                                                          MaxNumberOfChallenges;                             // 0x80(0x4)
-	char                                                         pad0x4_MXSPJ[0x4];                                 // 0x84(0x4)
-	struct FString                                               ChallengeEventPrefix;                              // 0x88(0x10)
-	struct QuestVariableDataAsset                                ChecklistItemsData;                                // 0x98(0x30)
-};
-
-
-// Size 0xc0 (Full Size[0x158] - InheritedSize[0x98]
-class TaleQuestAddLocationMapStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0xc0_AVSKG[0xc0];                               // 0x98(0xc0)
-};
-
-
-// Size 0x90 (Full Size[0x128] - InheritedSize[0x98]
-class TaleQuestAddTradeRouteMapStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x90_0AT14[0x90];                               // 0x98(0x90)
-};
-
-
-// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
-class AddMarkToTornMapStepDescBase: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableGuid                                     MapID;                                             // 0x80(0x30)
-	struct TaleQuestVariableMapMarkType                          MapMark;                                           // 0xb0(0x30)
-};
-
-
-// Size 0x28 (Full Size[0xc0] - InheritedSize[0x98]
-class AddMarkToTornMapStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x20_0N10X[0x20];                               // 0x98(0x20)
-	class UClass*                                                MapMark;                                           // 0xb8(0x8)
-};
-
-
 // Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestTriggerNamedChecklistEventStep: public TaleQuestStep
+class TaleQuestBuildChecklistItemsFromChallengeDeedsDataStep: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x0 (Full Size[0x80] - InheritedSize[0x80]
-class TaleQuestMapStepDescBase: public TaleQuestStepDesc
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestTornMapFunctionLibrary: public TaleQuestFunctionStepLibrary
 {
 public:
 };
 
 
-// Size 0xd8 (Full Size[0x170] - InheritedSize[0x98]
-class TaleQuestAddTornMapStep: public TaleQuestStep
+// Size 0x98 (Full Size[0x130] - InheritedSize[0x98]
+class SelectWayfinderIslandsFromRegionStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0xd8_C3EM9[0xd8];                               // 0x98(0xd8)
+	class RegionMapDataAsset*                                    RegionData;                                        // 0x98(0x8)
+	class RegionIslandWayfinderSelectionStrategy*                SelectionStrategy;                                 // 0xa0(0x8)
+	class Actor*                                                 VaultActor;                                        // 0xa8(0x8)
+	char                                                         pad0x80_59BTM[0x80];                               // 0xb0(0x80)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class RegionIslandRandomSelectionStrategy: public RegionIslandSelectionStrategyBase
+{
+public:
 };
 
 
@@ -201,39 +208,8 @@ class RegionIslandFilteredSelectionStrategy: public RegionIslandSelectionStrateg
 public:
 	TArray<char>                                                 IslandTypes;                                       // 0x28(0x10)
 	bool                                                         UseMaxDistance;                                    // 0x38(0x1)
-	char                                                         pad0x3_FD3PP[0x3];                                 // 0x39(0x3)
+	char                                                         pad0x3_QRSMJ[0x3];                                 // 0x39(0x3)
 	float                                                        MaxDistanceFromStartingIsland;                     // 0x3c(0x4)
-};
-
-
-// Size 0x98 (Full Size[0x118] - InheritedSize[0x80]
-class TaleQuestAddTradeRouteMapStepDesc: public TaleQuestMapStepDescBase
-{
-public:
-	struct QuestVariableDataAsset                                TradeRouteData;                                    // 0x80(0x30)
-	struct QuestVariableText                                     VesselName;                                        // 0xb0(0x30)
-	struct QuestVariableGuid                                     MapID;                                             // 0xe0(0x30)
-	class ClueSiteTypeToMapMarkIdDataAsset*                      ClueSiteToMapMarkIdMap;                            // 0x110(0x8)
-};
-
-
-// Size 0x30 (Full Size[0x110] - InheritedSize[0xe0]
-class AddMarkToTornMapAtActorLocationStepDesc: public AddMarkToTornMapStepDescBase
-{
-public:
-	struct QuestVariableActor                                    MarkLocation;                                      // 0xe0(0x30)
-};
-
-
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class RegionIslandWayfinderSelectionStrategy: public RegionIslandSelectionStrategyBase
-{
-public:
-	TArray<char>                                                 IslandTypes;                                       // 0x28(0x10)
-	bool                                                         EnsureKeyIslandIsLarge;                            // 0x38(0x1)
-	char                                                         pad0x3_E7DHD[0x3];                                 // 0x39(0x3)
-	float                                                        StartingIslandMinDistanceFromKeyIsland;            // 0x3c(0x4)
-	class Actor*                                                 VaultActor;                                        // 0x40(0x8)
 };
 
 
@@ -248,6 +224,14 @@ public:
 };
 
 
+// Size 0x30 (Full Size[0x110] - InheritedSize[0xe0]
+class AddMarkToTornMapAtLocationStepDesc: public AddMarkToTornMapStepDescBase
+{
+public:
+	struct QuestVariableVector                                   MarkLocation;                                      // 0xe0(0x30)
+};
+
+
 // Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
 class TaleQuestLocationMapChestFoundStepDesc: public TaleQuestMapStepDescBase
 {
@@ -257,17 +241,36 @@ public:
 
 
 // Size 0x30 (Full Size[0x110] - InheritedSize[0xe0]
-class AddMarkToTornMapAtLocationStepDesc: public AddMarkToTornMapStepDescBase
+class AddMarkToTornMapAtActorLocationStepDesc: public AddMarkToTornMapStepDescBase
 {
 public:
-	struct QuestVariableVector                                   MarkLocation;                                      // 0xe0(0x30)
+	struct QuestVariableActor                                    MarkLocation;                                      // 0xe0(0x30)
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class RegionIslandRandomSelectionStrategy: public RegionIslandSelectionStrategyBase
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
+class RegionIslandWayfinderSelectionStrategy: public RegionIslandSelectionStrategyBase
 {
 public:
+	TArray<char>                                                 IslandTypes;                                       // 0x28(0x10)
+	bool                                                         EnsureKeyIslandIsLarge;                            // 0x38(0x1)
+	char                                                         pad0x3_0ABXP[0x3];                                 // 0x39(0x3)
+	float                                                        StartingIslandMinDistanceFromKeyIsland;            // 0x3c(0x4)
+	bool                                                         ExcludeIslandsWithParticipatingCrewsPresent;       // 0x40(0x1)
+	char                                                         pad0x7_OXVO5[0x7];                                 // 0x41(0x7)
+	class Actor*                                                 VaultActor;                                        // 0x48(0x8)
+	char                                                         pad0x10_R253N[0x10];                               // 0x50(0x10)
+};
+
+
+// Size 0x98 (Full Size[0x118] - InheritedSize[0x80]
+class TaleQuestAddTradeRouteMapStepDesc: public TaleQuestMapStepDescBase
+{
+public:
+	struct QuestVariableDataAsset                                TradeRouteData;                                    // 0x80(0x30)
+	struct QuestVariableText                                     VesselName;                                        // 0xb0(0x30)
+	struct QuestVariableGuid                                     MapID;                                             // 0xe0(0x30)
+	class ClueSiteTypeToMapMarkIdDataAsset*                      ClueSiteToMapMarkIdMap;                            // 0x110(0x8)
 };
 
 

@@ -8,7 +8,7 @@ ActorLayerInterface:
   Super: Interface
 InstancedLayerComponent:
   Attributes:
-  - Name: pad0x8_ZSAE5[0x8]
+  - Name: pad0x8_J9U9R[0x8]
     Offset: '0x2d0'
     Size: '0x8'
     Type: char
@@ -16,12 +16,16 @@ InstancedLayerComponent:
     Offset: '0x2d8'
     Size: '0x10'
     Type: TArray<struct InstancedLayer>
-  - Name: pad0x18_BJRCL[0x18]
+  - Name: SpawnedActors
     Offset: '0x2e8'
+    Size: '0x10'
+    Type: TArray<struct SpawnedLayer>
+  - Name: pad0x18_8AJXF[0x18]
+    Offset: '0x2f8'
     Size: '0x18'
     Type: char
-  ClassSize: '0x30'
-  FullSize: '0x300'
+  ClassSize: '0x40'
+  FullSize: '0x310'
   InheritedSize: '0x2d0'
   Super: SceneComponent
 LayerActorsDataAsset:
@@ -29,12 +33,32 @@ LayerActorsDataAsset:
   - Name: Actors
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<Class>
+    Type: TArray<struct LayerActorsDataAssetActor>
   - Name: Items
     Offset: '0x38'
     Size: '0x10'
-    Type: TArray<Class>
+    Type: TArray<struct LayerActorsDataAssetItem>
   ClassSize: '0x20'
   FullSize: '0x48'
   InheritedSize: '0x28'
   Super: DataAsset
+RelationInterface:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Interface
+RelationType:
+  Attributes:
+  - Name: Label
+    Offset: '0x28'
+    Size: '0x10'
+    Type: struct FString
+  - Name: Colour
+    Offset: '0x38'
+    Size: '0x10'
+    Type: struct LinearColor
+  ClassSize: '0x20'
+  FullSize: '0x48'
+  InheritedSize: '0x28'
+  Super: Object

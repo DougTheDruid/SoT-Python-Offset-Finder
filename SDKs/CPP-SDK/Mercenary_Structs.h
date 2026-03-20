@@ -9,7 +9,18 @@ struct GiveItemToAITelemetryEvent
 public:
 	struct Guid                                                  BootyId;                                           // 0x0(0x10)
 	char                                                         BootyType;                                         // 0x10(0x1)
-	char                                                         pad0x7_BUD92[0x7];                                 // 0x11(0x7)
+	char                                                         pad0x7_44E6R[0x7];                                 // 0x11(0x7)
+	struct FString                                               BootyName;                                         // 0x18(0x10)
+};
+
+
+// Size 0x28
+struct TakeItemFromAITelemetryEvent
+{
+public:
+	struct Guid                                                  BootyId;                                           // 0x0(0x10)
+	char                                                         BootyType;                                         // 0x10(0x1)
+	char                                                         pad0x7_GZ5LS[0x7];                                 // 0x11(0x7)
 	struct FString                                               BootyName;                                         // 0x18(0x10)
 };
 
@@ -22,17 +33,6 @@ public:
 	struct FName                                                 ActionSourceName;                                  // 0x8(0x8)
 	struct FName                                                 IslandName;                                        // 0x10(0x8)
 	struct Vector                                                Location;                                          // 0x18(0xc)
-};
-
-
-// Size 0x28
-struct TakeItemFromAITelemetryEvent
-{
-public:
-	struct Guid                                                  BootyId;                                           // 0x0(0x10)
-	char                                                         BootyType;                                         // 0x10(0x1)
-	char                                                         pad0x7_XQKUT[0x7];                                 // 0x11(0x7)
-	struct FString                                               BootyName;                                         // 0x18(0x10)
 };
 
 

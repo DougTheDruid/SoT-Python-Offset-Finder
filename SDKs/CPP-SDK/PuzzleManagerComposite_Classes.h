@@ -6,14 +6,14 @@
 #include "PuzzleManagerComposite_Structs.h"
 
 
-// Size 0x28 (Full Size[0x108] - InheritedSize[0xe0]
+// Size 0x28 (Full Size[0x100] - InheritedSize[0xd8]
 class SwitchesActivatedInCorrectOrderPuzzleManagerPolicy: public PuzzleManagerPolicy
 {
 public:
-	TArray<class Actor*>                                         Switches;                                          // 0xe0(0x10)
-	bool                                                         IsRandomSwitchOrder;                               // 0xf0(0x1)
-	char                                                         pad0x7_3HN1F[0x7];                                 // 0xf1(0x7)
-	TArray<struct SwitchesActivatedInCorrectOrderPresetParams>   Presets;                                           // 0xf8(0x10)
+	TArray<class Actor*>                                         Switches;                                          // 0xd8(0x10)
+	bool                                                         IsRandomSwitchOrder;                               // 0xe8(0x1)
+	char                                                         pad0x7_IFVXV[0x7];                                 // 0xe9(0x7)
+	TArray<struct SwitchesActivatedInCorrectOrderPresetParams>   Presets;                                           // 0xf0(0x10)
 };
 
 

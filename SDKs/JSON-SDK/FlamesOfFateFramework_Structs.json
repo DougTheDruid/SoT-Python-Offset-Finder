@@ -1,18 +1,30 @@
 {
-  "CycleFlameOfFateSequence": {
+  "PlayerSetFlameOfFateEvent": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "FlameTypeSequence",
-        "Type": "TArray<char>",
-        "Size": "0x10",
+        "Name": "PlayerCharacter",
+        "Type": "class Character*",
+        "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x8_AFDQ4[0x8]",
-        "Type": "char",
+        "Name": "Target",
+        "Type": "class Object*",
         "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "FlameOfFateType",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_994AE[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
       }
     ]
   },
@@ -26,7 +38,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_XTJFB[0x7]",
+        "Name": "pad0x7_PKC6T[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -45,8 +57,8 @@
       }
     ]
   },
-  "FlameData": {
-    "ClassSize": "0x2",
+  "SetFlameOfFateEvent": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
         "Name": "FlameOfFateType",
@@ -55,10 +67,16 @@
         "Offset": "0x0"
       },
       {
-        "Name": "SkipChangeAnimation",
-        "Type": "bool",
-        "Size": "0x1",
+        "Name": "pad0x7_MF491[0x7]",
+        "Type": "char",
+        "Size": "0x7",
         "Offset": "0x1"
+      },
+      {
+        "Name": "Source",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
       }
     ]
   },
@@ -84,15 +102,15 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_H0ZDO[0x7]",
+        "Name": "pad0x7_NC602[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
       }
     ]
   },
-  "SetFlameOfFateEvent": {
-    "ClassSize": "0x10",
+  "FlameData": {
+    "ClassSize": "0x2",
     "Attributes": [
       {
         "Name": "FlameOfFateType",
@@ -101,45 +119,27 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_R2ANV[0x7]",
-        "Type": "char",
-        "Size": "0x7",
+        "Name": "SkipChangeAnimation",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x1"
-      },
-      {
-        "Name": "Source",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
       }
     ]
   },
-  "PlayerSetFlameOfFateEvent": {
+  "CycleFlameOfFateSequence": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "PlayerCharacter",
-        "Type": "class Character*",
-        "Size": "0x8",
+        "Name": "FlameTypeSequence",
+        "Type": "TArray<char>",
+        "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "Target",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "FlameOfFateType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x7_UVBR8[0x7]",
+        "Name": "pad0x8_ACR86[0x8]",
         "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x11"
+        "Size": "0x8",
+        "Offset": "0x10"
       }
     ]
   },

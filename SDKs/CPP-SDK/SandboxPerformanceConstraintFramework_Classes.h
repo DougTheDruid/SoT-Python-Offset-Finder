@@ -6,13 +6,6 @@
 #include "SandboxPerformanceConstraintFramework_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SandboxPerformanceConstraintSharedResourceType: public Object
-{
-public:
-};
-
-
 // Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
 class SandboxPerformanceConstraintServiceAsset: public DataAsset
 {
@@ -22,35 +15,8 @@ public:
 	float                                                        ServerCPUBudgetInMs;                               // 0x30(0x4)
 	float                                                        ClientCPUBudgetInMs;                               // 0x34(0x4)
 	float                                                        MinimumDistanceToCheckUpdateLocation;              // 0x38(0x4)
-	char                                                         pad0x4_2C6S4[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x4_W3MIS[0x4];                                 // 0x3c(0x4)
 	TArray<class SandboxPerformanceConstraintActivityGroupAsset*> ActivityGroups;                                    // 0x40(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SandboxPerformanceConstraintServiceInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x140 (Full Size[0x168] - InheritedSize[0x28]
-class SandboxPerformanceConstraintService: public Object
-{
-public:
-	char                                                         pad0xc0_1R9WV[0xc0];                               // 0x28(0xc0)
-	TArray<struct SandboxPerformanceConstraintActivityScore>     ActivitiesScores;                                  // 0xe8(0x10)
-	class SandboxPerformanceConstraintServiceAsset*              ServiceAsset;                                      // 0xf8(0x8)
-	char                                                         pad0x68_JPHT8[0x68];                               // 0x100(0x68)
-};
-
-
-// Size 0x50 (Full Size[0x88] - InheritedSize[0x38]
-class SandboxPerformanceConstraintSettings: public DeveloperSettings
-{
-public:
-	struct StringAssetReference                                  SandboxPerformanceConstraintServiceAsset;          // 0x38(0x10)
-	char                                                         pad0x40_FNVBF[0x40];                               // 0x48(0x40)
 };
 
 
@@ -65,19 +31,9 @@ public:
 class SandboxPerformanceConstraintMemoryCaptureHelper: public Actor
 {
 public:
-	char                                                         pad0x10_62361[0x10];                               // 0x3a0(0x10)
+	char                                                         pad0x10_S60SG[0x10];                               // 0x3a0(0x10)
 	int                                                          SettingToProcess;                                  // 0x3b0(0x4)
 	int                                                          CommandToProcess;                                  // 0x3b4(0x4)
-};
-
-
-// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
-class SandboxPerformanceConstraintActivityResourceAsset: public DataAsset
-{
-public:
-	TArray<struct SandboxPerformanceConstraintActivityInstanceCount> ActivityDependencies;                              // 0x28(0x10)
-	class UClass*                                                ActivityType;                                      // 0x38(0x8)
-	struct SandboxPerformanceConstraintResourceContainer         ResourceUsage;                                     // 0x40(0x28)
 };
 
 
@@ -100,6 +56,20 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class SandboxPerformanceConstraintServiceInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class SandboxPerformanceConstraintSharedResourceType: public Object
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class SandboxPerformanceConstraintConsumerInterface: public Interface
 {
 public:
@@ -107,7 +77,47 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SandboxPerformanceConstraintTelemetryInterface: public Interface
+class SandboxPerformanceConstraintActivityOriginType: public Object
+{
+public:
+};
+
+
+// Size 0x50 (Full Size[0x88] - InheritedSize[0x38]
+class SandboxPerformanceConstraintSettings: public DeveloperSettings
+{
+public:
+	struct StringAssetReference                                  SandboxPerformanceConstraintServiceAsset;          // 0x38(0x10)
+	char                                                         pad0x40_CN06Y[0x40];                               // 0x48(0x40)
+};
+
+
+// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
+class SandboxPerformanceConstraintActivityResourceAsset: public DataAsset
+{
+public:
+	TArray<struct SandboxPerformanceConstraintActivityInstanceCount> ActivityDependencies;                              // 0x28(0x10)
+	class UClass*                                                ActivityType;                                      // 0x38(0x8)
+	struct SandboxPerformanceConstraintResourceContainer         ResourceUsage;                                     // 0x40(0x28)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class SandboxPerformanceConstraintActivityOriginError: public SandboxPerformanceConstraintActivityOriginType
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class SandboxPerformanceConstraintActivityOriginStandalone: public SandboxPerformanceConstraintActivityOriginType
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class SandboxPerformanceConstraintActivityOriginPlayer: public SandboxPerformanceConstraintActivityOriginType
 {
 public:
 };

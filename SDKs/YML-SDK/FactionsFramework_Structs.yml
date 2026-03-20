@@ -11,6 +11,17 @@ CompanyFactionAlignment:
     Size: '0x8'
     Type: class UClass*
   ClassSize: '0x10'
+CrewFactionEmissaryData:
+  Attributes:
+  - Name: CrewId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct Guid
+  - Name: LastInvasionEmissary
+    Offset: '0x10'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x18'
 CrewFactionEntry:
   Attributes:
   - Name: CrewId
@@ -25,7 +36,7 @@ CrewFactionEntry:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_ILLAW[0x3]
+  - Name: pad0x3_PPIAE[0x3]
     Offset: '0x19'
     Size: '0x3'
     Type: char
@@ -64,7 +75,7 @@ CrewFactionEntryData:
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_BJCY4[0x4]
+  - Name: pad0x4_77233[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -76,9 +87,13 @@ CrewFactionEntryData:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_9ZPZR[0x7]
+  - Name: LastInvasionWasRequeued
     Offset: '0x39'
-    Size: '0x7'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x6_L6DTK[0x6]
+    Offset: '0x3a'
+    Size: '0x6'
     Type: char
   - Name: EligibleLootBootyIds
     Offset: '0x40'
@@ -88,7 +103,7 @@ CrewFactionEntryData:
     Offset: '0x50'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_7O8XE[0x4]
+  - Name: pad0x4_YOQI8[0x4]
     Offset: '0x54'
     Size: '0x4'
     Type: char
@@ -134,7 +149,15 @@ CrewJoinedFaction:
     Offset: '0x10'
     Size: '0x8'
     Type: class UClass*
-  ClassSize: '0x18'
+  - Name: AutoQueue
+    Offset: '0x18'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x7_MQLHI[0x7]
+    Offset: '0x19'
+    Size: '0x7'
+    Type: char
+  ClassSize: '0x20'
 CrewJoinedFactionSuccess:
   Attributes:
   - Name: JoiningCrewId
@@ -160,7 +183,7 @@ CrewLeavingFaction:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_WPDZ8[0x7]
+  - Name: pad0x7_L6SGI[0x7]
     Offset: '0x19'
     Size: '0x7'
     Type: char
@@ -179,7 +202,7 @@ CrewLeftFaction:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_1CJNO[0x7]
+  - Name: pad0x7_UU8MP[0x7]
     Offset: '0x19'
     Size: '0x7'
     Type: char
@@ -250,7 +273,7 @@ FactionLeftTelemetryEvent:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_LW3MO[0x3]
+  - Name: pad0x3_Y0OGE[0x3]
     Offset: '0x19'
     Size: '0x3'
     Type: char
@@ -316,11 +339,11 @@ FactionWaitTimesData:
     Offset: '0x1'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_MBZI9[0x6]
+  - Name: pad0x6_ZJDU5[0x6]
     Offset: '0x2'
     Size: '0x6'
     Type: char
-  - Name: pad0x8_I1DMT[0x8]
+  - Name: pad0x8_Z0VA5[0x8]
     Offset: '0x8'
     Size: '0x8'
     Type: char

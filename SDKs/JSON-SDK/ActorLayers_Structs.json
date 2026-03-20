@@ -1,4 +1,142 @@
 {
+  "InstanceNode": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "Transform",
+        "Type": "struct Transform",
+        "Size": "0x30",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Name",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "Guid",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x8_472P9[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x48"
+      }
+    ]
+  },
+  "LayerActorsDataAssetActor": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x20_2XZEH[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Guid",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "LayerActor": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ActorClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x10_5JXUD[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "LayerActorsDataAssetItem": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x20_6BQW6[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Guid",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "SpawnedLayer": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Layer",
+        "Type": "class LayerActorsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SpawnedActors",
+        "Type": "TArray<class Actor*>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x18_TX44N[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "InstanceRelation": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "RelationId",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "From",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "To",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "pad0x4_NL65U[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "RelationTypes",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "InstancedLayer": {
     "ClassSize": "0x48",
     "Attributes": [
@@ -9,19 +147,19 @@
         "Offset": "0x0"
       },
       {
-        "Name": "ActorTransforms",
-        "Type": "TArray<struct Transform>",
+        "Name": "InstanceNodes",
+        "Type": "TArray<struct InstanceNode>",
         "Size": "0x10",
         "Offset": "0x8"
       },
       {
-        "Name": "SpawnedActors",
-        "Type": "TArray<class Actor*>",
+        "Name": "InstanceRelations",
+        "Type": "TArray<struct InstanceRelation>",
         "Size": "0x10",
         "Offset": "0x18"
       },
       {
-        "Name": "pad0x20_0JH5I[0x20]",
+        "Name": "pad0x20_M04LL[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x28"

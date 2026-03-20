@@ -10,7 +10,7 @@
 class AnimSequencerInstance: public AnimInstance
 {
 public:
-	char                                                         pad0x1a0_AZ8M7[0x1a0];                             // 0x440(0x1a0)
+	char                                                         pad0x1a0_A89FI[0x1a0];                             // 0x440(0x1a0)
 };
 
 

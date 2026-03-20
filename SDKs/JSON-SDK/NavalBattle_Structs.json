@@ -1,26 +1,4 @@
 {
-  "NavalBattleShipForcedMigratedTelemetry": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_RGANB[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "NavalBattleSinkTimerElapsedTelemetry": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_ITX68[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "NavalBattleShipDamagedTelemetry": {
     "ClassSize": "0x20",
     "Attributes": [
@@ -35,17 +13,6 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
-      }
-    ]
-  },
-  "NavalBattleCrewDestroyedTelemetry": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_PDXWF[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
       }
     ]
   },
@@ -138,11 +105,44 @@
       }
     ]
   },
-  "NavalBattleShipAddedTelemetry": {
+  "NavalBattleShipForcedMigratedTelemetry": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_0QKEJ[0x1]",
+        "Name": "pad0x1_YYZW2[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "NavalBattleCrewTradedSinksTelemetry": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ShipSunkId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "NavalBattleShipSunkTelemetry": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_I6URC[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "NavalBattleCrewDestroyedTelemetry": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_9INSD[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
@@ -166,24 +166,13 @@
       }
     ]
   },
-  "NavalBattleShipSunkTelemetry": {
+  "NavalBattleSinkTimerElapsedTelemetry": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_EW3R8[0x1]",
+        "Name": "pad0x1_U35MH[0x1]",
         "Type": "char",
         "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "NavalBattleTelemetryFragmentInput": {
-    "ClassSize": "0x150",
-    "Attributes": [
-      {
-        "Name": "NavalBattleShipData",
-        "Type": "struct NavalBattleShipData",
-        "Size": "0x150",
         "Offset": "0x0"
       }
     ]
@@ -199,13 +188,24 @@
       }
     ]
   },
-  "NavalBattleCrewTradedSinksTelemetry": {
-    "ClassSize": "0x10",
+  "NavalBattleTelemetryFragmentInput": {
+    "ClassSize": "0x150",
     "Attributes": [
       {
-        "Name": "ShipSunkId",
-        "Type": "struct Guid",
-        "Size": "0x10",
+        "Name": "NavalBattleShipData",
+        "Type": "struct NavalBattleShipData",
+        "Size": "0x150",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "NavalBattleShipAddedTelemetry": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_VTY52[0x1]",
+        "Type": "char",
+        "Size": "0x1",
         "Offset": "0x0"
       }
     ]

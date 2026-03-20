@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AncientSanctuary:
   Attributes:
-  - Name: pad0x8_EVUA6[0x8]
+  - Name: pad0x8_TX183[0x8]
     Offset: '0x3a0'
     Size: '0x8'
     Type: char
@@ -22,7 +22,7 @@ AncientSanctuary:
     Offset: '0x3d8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_NQ4VX[0x3]
+  - Name: pad0x3_T3JFL[0x3]
     Offset: '0x3d9'
     Size: '0x3'
     Type: char
@@ -30,7 +30,7 @@ AncientSanctuary:
     Offset: '0x3dc'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_VCSCO[0x8]
+  - Name: pad0x8_KAJEQ[0x8]
     Offset: '0x3e0'
     Size: '0x8'
     Type: char
@@ -46,7 +46,7 @@ AncientSanctuary:
     Offset: '0x3f8'
     Size: '0x8'
     Type: class ShapeComponent*
-  - Name: pad0x68_USWSV[0x68]
+  - Name: pad0x68_EWMEG[0x68]
     Offset: '0x400'
     Size: '0x68'
     Type: char
@@ -54,7 +54,7 @@ AncientSanctuary:
     Offset: '0x468'
     Size: '0x4'
     Type: float
-  - Name: pad0x1c_B35UK[0x1c]
+  - Name: pad0x1c_E24YN[0x1c]
     Offset: '0x46c'
     Size: '0x1c'
     Type: char

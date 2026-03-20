@@ -1,5 +1,5 @@
 {
-  "EventNoteCompletionStep": {
+  "EventNoteClientCompletionStep": {
     "ClassSize": "0x10",
     "Attributes": [
       {
@@ -13,89 +13,6 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "EventMysteriousNoteContentUpdated": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_RHHDY[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "MysteriousNotesCompletionEventsModel": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "CompletionIdent",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventMarkNoteRead": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "PlayerController",
-        "Type": "class PlayerController*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NoteId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "EventMysteriousNoteCustomContentUpdate": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_Y36S2[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "PlayerSentNotesTelemetryEvent": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "NoteCount",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventOnlineAthenaPlayerControllerUnpossessed": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "PlayerController",
-        "Type": "class PlayerController*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "MysteriousNoteTheme": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "NoteType",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
       }
     ]
   },
@@ -115,10 +32,21 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_0OCBF[0x7]",
+        "Name": "pad0x7_B5FCA[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
+      }
+    ]
+  },
+  "EventMysteriousNoteSettingsLoaded": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_FNKHS[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
       }
     ]
   },
@@ -175,30 +103,8 @@
       }
     ]
   },
-  "EventMysteriousNoteRemoved": {
+  "EventNoteCompletionStep": {
     "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_070D4[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventMysteriousNoteSettingsLoaded": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_H2M4P[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventMarkNoteDeleted": {
-    "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "PlayerController",
@@ -207,27 +113,32 @@
         "Offset": "0x0"
       },
       {
-        "Name": "NoteId",
-        "Type": "struct Guid",
-        "Size": "0x10",
+        "Name": "CompletionStepID",
+        "Type": "struct FName",
+        "Size": "0x8",
         "Offset": "0x8"
       }
     ]
   },
-  "PlayerNoteStateChangeTelemetryEvent": {
-    "ClassSize": "0x20",
+  "EventNotesUpdated": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "NoteId",
-        "Type": "struct Guid",
-        "Size": "0x10",
+        "Name": "pad0x1_ULH74[0x1]",
+        "Type": "char",
+        "Size": "0x1",
         "Offset": "0x0"
-      },
+      }
+    ]
+  },
+  "PlayerSentNotesTelemetryEvent": {
+    "ClassSize": "0x4",
+    "Attributes": [
       {
-        "Name": "NoteState",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
+        "Name": "NoteCount",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
       }
     ]
   },
@@ -253,65 +164,37 @@
         "Offset": "0x11"
       },
       {
-        "Name": "pad0x2_0E1QW[0x2]",
+        "Name": "pad0x2_T8Z11[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x12"
       }
     ]
   },
-  "EventListenForCinematicEndEvent": {
-    "ClassSize": "0x1",
+  "MysteriousNotesCompletionEventsModelEntry": {
+    "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x1_SWS9H[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "EventNotesUpdated": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_V2BOL[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "MysteriousNoteRequest": {
-    "ClassSize": "0x80",
-    "Attributes": [
-      {
-        "Name": "PlayerController",
-        "Type": "class PlayerController*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PirateIdentity",
-        "Type": "struct PirateIdentity",
-        "Size": "0x78",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "EventNoteClientCompletionStep": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "PlayerController",
-        "Type": "class PlayerController*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "CompletionStepID",
+        "Name": "CompletionIdent",
         "Type": "struct FName",
         "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventMarkNoteRead": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "PlayerController",
+        "Type": "class PlayerController*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NoteId",
+        "Type": "struct Guid",
+        "Size": "0x10",
         "Offset": "0x8"
       }
     ]
@@ -333,13 +216,69 @@
       }
     ]
   },
-  "MysteriousNotesCompletionEventsModelEntry": {
+  "MysteriousNoteRequest": {
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Name": "PlayerController",
+        "Type": "class PlayerController*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PirateIdentity",
+        "Type": "struct PirateIdentity",
+        "Size": "0x78",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventMarkNoteDeleted": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "PlayerController",
+        "Type": "class PlayerController*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NoteId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventMysteriousNoteContentUpdated": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_LXRX1[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventOnlineAthenaPlayerControllerUnpossessed": {
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "CompletionIdent",
-        "Type": "struct FName",
+        "Name": "PlayerController",
+        "Type": "class PlayerController*",
         "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "MysteriousNoteTheme": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "NoteType",
+        "Type": "struct FString",
+        "Size": "0x10",
         "Offset": "0x0"
       }
     ]
@@ -372,10 +311,71 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x8_BZXET[0x8]",
+        "Name": "pad0x8_IDMTR[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x40"
+      }
+    ]
+  },
+  "EventMysteriousNoteRemoved": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_GEJV2[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventListenForCinematicEndEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_PS8RW[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "MysteriousNotesCompletionEventsModel": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "CompletionIdent",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "EventMysteriousNoteCustomContentUpdate": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_92ZQA[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "PlayerNoteStateChangeTelemetryEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "NoteId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NoteState",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
@@ -412,7 +412,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_PS4KJ[0x7]",
+        "Name": "pad0x7_FO02J[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"

@@ -1,11 +1,4 @@
 {
-  "NetworkRegionServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "NetworkRegionService": {
     "Super": "Object",
     "FullSize": "0xc8",
@@ -13,7 +6,7 @@
     "ClassSize": "0xa0",
     "Attributes": [
       {
-        "Name": "pad0x90_DZACJ[0x90]",
+        "Name": "pad0x90_RIRLS[0x90]",
         "Type": "char",
         "Size": "0x90",
         "Offset": "0x28"
@@ -25,6 +18,13 @@
         "Offset": "0xb8"
       }
     ]
+  },
+  "NetworkRegionServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "RegionAssetCacheActor": {
     "Super": "Actor",
@@ -45,7 +45,7 @@
         "Offset": "0x3b0"
       },
       {
-        "Name": "pad0x20_PHI26[0x20]",
+        "Name": "pad0x20_AO2PA[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x3c0"

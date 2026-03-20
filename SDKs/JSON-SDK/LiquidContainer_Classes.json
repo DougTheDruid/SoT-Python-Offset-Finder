@@ -1,11 +1,4 @@
 {
-  "LiquidContainerServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "LiquidLevelTransferComponent": {
     "Super": "ActorComponent",
     "FullSize": "0xc8",
@@ -13,12 +6,19 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_3ABQP[0x10]",
+        "Name": "pad0x10_JUSYI[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0xb8"
       }
     ]
+  },
+  "LiquidContainerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "LiquidContainerComponent": {
     "Super": "ActorComponent",
@@ -51,7 +51,7 @@
         "Offset": "0xd8"
       },
       {
-        "Name": "pad0x4_CR3FM[0x4]",
+        "Name": "pad0x4_QSEK9[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xdc"
@@ -81,7 +81,7 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x18_HGS4Z[0x18]",
+        "Name": "pad0x18_D4UII[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x100"
@@ -95,14 +95,14 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_MKQ9S[0x8]",
+        "Name": "pad0x8_JB3LW[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x70"
       }
     ]
   },
-  "LiquidContainerInterface": {
+  "LiquidContainerServiceInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

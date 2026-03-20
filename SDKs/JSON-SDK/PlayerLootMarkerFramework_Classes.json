@@ -1,4 +1,11 @@
 {
+  "PlayerLootMarkerServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "PlayerLootMarkerService": {
     "Super": "Actor",
     "FullSize": "0x518",
@@ -6,7 +13,7 @@
     "ClassSize": "0x178",
     "Attributes": [
       {
-        "Name": "pad0x8_SGC0X[0x8]",
+        "Name": "pad0x8_SGQQA[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3a0"
@@ -18,7 +25,7 @@
         "Offset": "0x3a8"
       },
       {
-        "Name": "pad0x20_3V76E[0x20]",
+        "Name": "pad0x20_4NSZK[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x3b0"
@@ -30,7 +37,7 @@
         "Offset": "0x3d0"
       },
       {
-        "Name": "pad0x118_0KGRL[0x118]",
+        "Name": "pad0x118_DOHNG[0x118]",
         "Type": "char",
         "Size": "0x118",
         "Offset": "0x3e0"
@@ -42,19 +49,12 @@
         "Offset": "0x4f8"
       },
       {
-        "Name": "pad0x10_YHL65[0x10]",
+        "Name": "pad0x10_UM0OM[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x508"
       }
     ]
-  },
-  "PlayerLootMarkerServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "PlayerLootMarkerServiceParams": {
     "Super": "DataAsset",
@@ -75,7 +75,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_NRK9R[0x4]",
+        "Name": "pad0x4_9GFT2[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"

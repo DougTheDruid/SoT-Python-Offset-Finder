@@ -8,16 +8,7 @@ struct ClueDestinationToTextIndex
 {
 public:
 	class UClass*                                                DestinationType;                                   // 0x0(0x8)
-	char                                                         pad0x20_Q1PGU[0x20];                               // 0x8(0x20)
-};
-
-
-// Size 0x10
-struct ClueDestinationChoice
-{
-public:
-	class ClueDestinationDescriptor*                             Destination;                                       // 0x0(0x8)
-	char                                                         pad0x8_VNEVI[0x8];                                 // 0x8(0x8)
+	char                                                         pad0x20_JGVV1[0x20];                               // 0x8(0x20)
 };
 
 
@@ -27,16 +18,7 @@ struct TextEntryWithLayout
 public:
 	struct FText                                                 TextEntry;                                         // 0x0(0x38)
 	struct TreasureMapWidgetText                                 TextLayout;                                        // 0x38(0x3c)
-	char                                                         pad0x4_WOZ9S[0x4];                                 // 0x74(0x4)
-};
-
-
-// Size 0x70
-struct GenderSpecificTextPairings
-{
-public:
-	struct FText                                                 MasculineClueDestinationDescription;               // 0x0(0x38)
-	struct FText                                                 FeminineClueDestinationDescription;                // 0x38(0x38)
+	char                                                         pad0x4_GLKOT[0x4];                                 // 0x74(0x4)
 };
 
 
@@ -44,7 +26,7 @@ public:
 struct ExistingNPCToPhasedNPC
 {
 public:
-	char                                                         pad0x40_TT7F9[0x40];                               // 0x0(0x40)
+	char                                                         pad0x40_13NUK[0x40];                               // 0x0(0x40)
 };
 
 
@@ -54,7 +36,25 @@ struct MapRadialIconData
 public:
 	struct StringAssetReference                                  AssetReference;                                    // 0x0(0x10)
 	float                                                        Rotation;                                          // 0x10(0x4)
-	char                                                         pad0x4_A4F5S[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_XTC87[0x4];                                 // 0x14(0x4)
+};
+
+
+// Size 0x10
+struct ClueDestinationChoice
+{
+public:
+	class ClueDestinationDescriptor*                             Destination;                                       // 0x0(0x8)
+	char                                                         pad0x8_YPTJR[0x8];                                 // 0x8(0x8)
+};
+
+
+// Size 0x70
+struct GenderSpecificTextPairings
+{
+public:
+	struct FText                                                 MasculineClueDestinationDescription;               // 0x0(0x38)
+	struct FText                                                 FeminineClueDestinationDescription;                // 0x38(0x38)
 };
 
 

@@ -6,10 +6,11 @@
 #include "GameService_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GameServiceProviderInterface: public Interface
+// Size 0x118 (Full Size[0x500] - InheritedSize[0x3e8]
+class ServiceProviderGameState: public GameState
 {
 public:
+	char                                                         pad0x118_FBEF8[0x118];                             // 0x3e8(0x118)
 };
 
 
@@ -21,22 +22,21 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GameServiceTickInterface: public Interface
+class GameServiceLifecycleInterface: public Interface
 {
 public:
-};
-
-
-// Size 0x120 (Full Size[0x508] - InheritedSize[0x3e8]
-class ServiceProviderGameState: public GameState
-{
-public:
-	char                                                         pad0x120_ZWLD6[0x120];                             // 0x3e8(0x120)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GameServiceLifecycleInterface: public Interface
+class GameServiceProviderInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class GameServiceTickInterface: public Interface
 {
 public:
 };

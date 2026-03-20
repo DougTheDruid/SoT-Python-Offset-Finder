@@ -42,14 +42,14 @@ EarthquakeStoryCustomisationData:
   ClassSize: '0x10'
 EventRegisterGeyserExclusionVolume:
   Attributes:
-  - Name: pad0x8_7TEIK[0x8]
+  - Name: pad0x8_Y2UAH[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
   ClassSize: '0x8'
 EventUnregisterGeyserExclusionVolume:
   Attributes:
-  - Name: pad0x8_CBRC3[0x8]
+  - Name: pad0x8_XBARH[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -115,7 +115,7 @@ PlayerFeedback:
   ClassSize: '0x80'
 VolcanoEruptionTelemetryEvent:
   Attributes:
-  - Name: pad0x8_8X2JY[0x8]
+  - Name: pad0x8_T2VH2[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -160,7 +160,7 @@ VolcanoSetupDataEmbersEntry:
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_G3816[0x4]
+  - Name: pad0x4_67AQP[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -175,7 +175,7 @@ VolcanoStateData:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_K6RZI[0x3]
+  - Name: pad0x3_AGGLJ[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -209,7 +209,7 @@ VolcanoTarget:
     Offset: '0x1'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_H0VK8[0x6]
+  - Name: pad0x6_6QI0E[0x6]
     Offset: '0x2'
     Size: '0x6'
     Type: char
@@ -221,7 +221,7 @@ VolcanoTarget:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_HRJ6N[0x4]
+  - Name: pad0x4_E6E40[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -240,7 +240,7 @@ VolcanoTargetChances:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_2FUC9[0x4]
+  - Name: pad0x4_SRYNE[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -256,7 +256,7 @@ VolcanoTargetChances:
     Offset: '0x50'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_N398K[0x4]
+  - Name: pad0x4_KWMDH[0x4]
     Offset: '0x54'
     Size: '0x4'
     Type: char
@@ -267,7 +267,7 @@ VolcanoTargetCoolDown:
     Offset: '0x0'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x8_22RFH[0x8]
+  - Name: pad0x8_0G6T1[0x8]
     Offset: '0x8'
     Size: '0x8'
     Type: char
@@ -309,7 +309,7 @@ WeightedVolcanoProjectile:
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_F5HTS[0x4]
+  - Name: pad0x4_9BARE[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -337,7 +337,7 @@ WeightedVolcanoProjectile:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_AOLDA[0x4]
+  - Name: pad0x4_G7S23[0x4]
     Offset: '0x24'
     Size: '0x4'
     Type: char

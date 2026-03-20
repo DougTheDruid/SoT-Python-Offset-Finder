@@ -8,10 +8,10 @@ struct CleanlinessInfo
 {
 public:
 	char                                                         DirtinessType;                                     // 0x0(0x1)
-	char                                                         pad0x3_ULYAE[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_MBBUZ[0x3];                                 // 0x1(0x3)
 	float                                                        Strength;                                          // 0x4(0x4)
 	bool                                                         QuickClean;                                        // 0x8(0x1)
-	char                                                         pad0x3_0U532[0x3];                                 // 0x9(0x3)
+	char                                                         pad0x3_EKB19[0x3];                                 // 0x9(0x3)
 };
 
 
@@ -19,7 +19,7 @@ public:
 struct EventQuickCleanRequest
 {
 public:
-	char                                                         pad0x1_0JJ3B[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_R560N[0x1];                                 // 0x0(0x1)
 };
 
 

@@ -1,12 +1,5 @@
 {
-  "OpenEscapeMenuNotificationInputId": {
-    "Super": "NotificationInputId",
-    "FullSize": "0x38",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ClampedFreelookYAnalogInputId": {
+  "ClampedFreelookXAnalogInputId": {
     "Super": "AnalogInputId",
     "FullSize": "0x38",
     "InheritedSize": "0x38",
@@ -20,12 +13,26 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_JZ64M[0x8]",
+        "Name": "pad0x8_7U3TQ[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
       }
     ]
+  },
+  "ClampedFreelookYAnalogInputId": {
+    "Super": "AnalogInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "OpenEscapeMenuNotificationInputId": {
+    "Super": "NotificationInputId",
+    "FullSize": "0x38",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "ClampedFreelookMouseXInputId": {
     "Super": "AnalogInputId",
@@ -34,7 +41,7 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ClampedFreelookXAnalogInputId": {
+  "ClampedFreelookMouseYInputId": {
     "Super": "AnalogInputId",
     "FullSize": "0x38",
     "InheritedSize": "0x38",
@@ -48,31 +55,10 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x20_5IU6D[0x20]",
+        "Name": "pad0x20_F6OCH[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x140"
-      }
-    ]
-  },
-  "ClampedFreelookMouseYInputId": {
-    "Super": "AnalogInputId",
-    "FullSize": "0x38",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MovementInterferenceComponent": {
-    "Super": "AutoMoveInputComponent",
-    "FullSize": "0x1d0",
-    "InheritedSize": "0x160",
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "pad0x70_GN2U6[0x70]",
-        "Type": "char",
-        "Size": "0x70",
-        "Offset": "0x160"
       }
     ]
   },
@@ -83,9 +69,23 @@
     "ClassSize": "0x128",
     "Attributes": [
       {
-        "Name": "pad0x128_Z48JL[0x128]",
+        "Name": "pad0x128_C7BRM[0x128]",
         "Type": "char",
         "Size": "0x128",
+        "Offset": "0x160"
+      }
+    ]
+  },
+  "MovementInterferenceComponent": {
+    "Super": "AutoMoveInputComponent",
+    "FullSize": "0x1d0",
+    "InheritedSize": "0x160",
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "pad0x70_DO665[0x70]",
+        "Type": "char",
+        "Size": "0x70",
         "Offset": "0x160"
       }
     ]
@@ -97,7 +97,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_I7KRY[0x8]",
+        "Name": "pad0x8_43FQG[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x288"

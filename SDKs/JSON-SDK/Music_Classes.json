@@ -1,18 +1,4 @@
 {
-  "MusicZoneServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "EmitterManipulatorInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "NetMusicZoneActor": {
     "Super": "Actor",
     "FullSize": "0x3a8",
@@ -34,12 +20,26 @@
     "ClassSize": "0xc8",
     "Attributes": [
       {
-        "Name": "pad0xc8_VBLXO[0xc8]",
+        "Name": "pad0xc8_ITIP6[0xc8]",
         "Type": "char",
         "Size": "0xc8",
         "Offset": "0x3a0"
       }
     ]
+  },
+  "EmitterManipulatorInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "MusicZoneServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "MusicZoneComponent": {
     "Super": "SceneComponent",
@@ -48,7 +48,7 @@
     "ClassSize": "0xf0",
     "Attributes": [
       {
-        "Name": "pad0x8_D2AVN[0x8]",
+        "Name": "pad0x8_TKXGW[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x2d0"
@@ -84,7 +84,7 @@
         "Offset": "0x2f0"
       },
       {
-        "Name": "pad0x7_IA4M8[0x7]",
+        "Name": "pad0x7_FVK2L[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x2f1"
@@ -126,7 +126,7 @@
         "Offset": "0x321"
       },
       {
-        "Name": "pad0x6_TED7K[0x6]",
+        "Name": "pad0x6_AO00N[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x322"
@@ -138,7 +138,7 @@
         "Offset": "0x360"
       },
       {
-        "Name": "pad0x40_LETRU[0x40]",
+        "Name": "pad0x40_SS72V[0x40]",
         "Type": "char",
         "Size": "0x40",
         "Offset": "0x380"
@@ -151,6 +151,32 @@
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "SynchedMusicZoneComponent": {
+    "Super": "MusicZoneComponent",
+    "FullSize": "0x3f0",
+    "InheritedSize": "0x3c0",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "StartDelayTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3b8"
+      },
+      {
+        "Name": "PlayFromStartTimeMS",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x3bc"
+      },
+      {
+        "Name": "pad0x30_TNP6Y[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x3c0"
+      }
+    ]
   },
   "AISpawnerMusicZoneComponent": {
     "Super": "MusicZoneComponent",
@@ -183,36 +209,10 @@
         "Offset": "0x3d8"
       },
       {
-        "Name": "pad0x7_JRFN5[0x7]",
+        "Name": "pad0x7_GW1GY[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x3d9"
-      }
-    ]
-  },
-  "SynchedMusicZoneComponent": {
-    "Super": "MusicZoneComponent",
-    "FullSize": "0x3f0",
-    "InheritedSize": "0x3c0",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "StartDelayTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x3b8"
-      },
-      {
-        "Name": "PlayFromStartTimeMS",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x3bc"
-      },
-      {
-        "Name": "pad0x30_B518H[0x30]",
-        "Type": "char",
-        "Size": "0x30",
-        "Offset": "0x3c0"
       }
     ]
   },

@@ -10,7 +10,7 @@
 class SmugglersRunService: public Actor
 {
 public:
-	char                                                         pad0x288_KM4B8[0x288];                             // 0x3a0(0x288)
+	char                                                         pad0x288_5H65L[0x288];                             // 0x3a0(0x288)
 };
 
 

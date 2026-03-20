@@ -3,19 +3,19 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_R0CZB[0x8]",
+        "Name": "pad0x8_UNH2O[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"
       }
     ]
   },
-  "GameTime": {
+  "ReplicatedTimespan": {
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "DateTimeRepresentation",
-        "Type": "struct DateTime",
+        "Name": "pad0x8_NZM0Z[0x8]",
+        "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"
       }
@@ -60,38 +60,21 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_P25L6[0x1]",
+        "Name": "pad0x1_I1OYT[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
       }
     ]
   },
-  "ReplicatedTimespan": {
+  "GameTime": {
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_ZF2P0[0x8]",
-        "Type": "char",
+        "Name": "DateTimeRepresentation",
+        "Type": "struct DateTime",
         "Size": "0x8",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "GameTimeRange": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Start",
-        "Type": "struct GameTime",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "End",
-        "Type": "struct GameTime",
-        "Size": "0x8",
-        "Offset": "0x8"
       }
     ]
   },
@@ -107,6 +90,23 @@
       {
         "Name": "SyncTime",
         "Type": "struct ReplicatedDateTime",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "GameTimeRange": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Start",
+        "Type": "struct GameTime",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "End",
+        "Type": "struct GameTime",
         "Size": "0x8",
         "Offset": "0x8"
       }

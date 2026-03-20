@@ -6,7 +6,7 @@ CreateActorInstanceOnExplodeComponent:
     Offset: '0xb8'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x68_ZNT9U[0x68]
+  - Name: pad0x68_FH58G[0x68]
     Offset: '0xc0'
     Size: '0x68'
     Type: char
@@ -72,7 +72,7 @@ StatusResponseExplodeAfterTime:
     Offset: '0x3c'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_O1C4G[0x8]
+  - Name: pad0x8_890M2[0x8]
     Offset: '0x40'
     Size: '0x8'
     Type: char
@@ -92,11 +92,11 @@ TaleQuestFuseFunctionLibrary:
   Super: TaleQuestFunctionStepLibrary
 TinyKrakenExplosionComponent:
   Attributes:
-  - Name: pad0x58_FS4T9[0x58]
-    Offset: '0x2d8'
+  - Name: pad0x58_N79MF[0x58]
+    Offset: '0x2f0'
     Size: '0x58'
     Type: char
   ClassSize: '0x58'
-  FullSize: '0x330'
-  InheritedSize: '0x2d8'
+  FullSize: '0x348'
+  InheritedSize: '0x2f0'
   Super: ExplosionComponent

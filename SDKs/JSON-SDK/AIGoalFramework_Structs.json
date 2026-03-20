@@ -1,32 +1,4 @@
 {
-  "EventAIGoalHighPriorityTargetSuggestion": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "HighPriorityTarget",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "AIGoalMovementModeFilter": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "DisallowedMovementModes",
-        "Type": "TArray<char>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DisallowedCustomMovementModes",
-        "Type": "TArray<char>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "EventAIGoalTargetActorChanged": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -55,10 +27,38 @@
         "Offset": "0x11"
       },
       {
-        "Name": "pad0x6_YF6FZ[0x6]",
+        "Name": "pad0x6_KKKHU[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x12"
+      }
+    ]
+  },
+  "AIGoalMovementModeFilter": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "DisallowedMovementModes",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DisallowedCustomMovementModes",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EventAIGoalHighPriorityTargetSuggestion": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "HighPriorityTarget",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x0"
       }
     ]
   },

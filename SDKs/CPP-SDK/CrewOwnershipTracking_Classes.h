@@ -6,27 +6,8 @@
 #include "CrewOwnershipTracking_Structs.h"
 
 
-// Size 0xa8 (Full Size[0x160] - InheritedSize[0xb8]
-class CrewOwnershipTrackingComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x18_P5EWJ[0x18];                               // 0xb8(0x18)
-	struct Guid                                                  SpawningCrewId;                                    // 0xd0(0x10)
-	struct Guid                                                  CurrentOwnedByCrewId;                              // 0xe0(0x10)
-	struct OwnerListEntry                                        PreviousOwnedByCrewIdList;                         // 0xf0(0x10)
-	char                                                         pad0x60_KVF6G[0x60];                               // 0x100(0x60)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class CrewSpawnOwnershipTrackingInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CustomCrewTrackingInterface: public Interface
 {
 public:
 };
@@ -43,6 +24,25 @@ public:
 class CrewOwnershipTrackingControlInterface: public Interface
 {
 public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CustomCrewTrackingInterface: public Interface
+{
+public:
+};
+
+
+// Size 0xa8 (Full Size[0x160] - InheritedSize[0xb8]
+class CrewOwnershipTrackingComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x18_718UF[0x18];                               // 0xb8(0x18)
+	struct Guid                                                  SpawningCrewId;                                    // 0xd0(0x10)
+	struct Guid                                                  CurrentOwnedByCrewId;                              // 0xe0(0x10)
+	struct OwnerListEntry                                        PreviousOwnedByCrewIdList;                         // 0xf0(0x10)
+	char                                                         pad0x60_AB53H[0x60];                               // 0x100(0x60)
 };
 
 

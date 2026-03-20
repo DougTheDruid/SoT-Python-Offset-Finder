@@ -6,51 +6,26 @@
 #include "InvasionFramework_Structs.h"
 
 
-// Size 0xe0 (Full Size[0x108] - InheritedSize[0x28]
-class TaleQuestInvasionServiceDesc: public TaleQuestServiceDesc
+// Size 0x3a8 (Full Size[0x748] - InheritedSize[0x3a0]
+class InvasionService: public Actor
 {
 public:
-	struct FText                                                 OnCrewLeftServerMessage;                           // 0x28(0x38)
-	struct FText                                                 OnCrewLeftFightMessage;                            // 0x60(0x38)
-	struct FText                                                 FactionGBannerTag;                                 // 0x98(0x38)
-	struct FText                                                 FactionBBannerTag;                                 // 0xd0(0x38)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class InvasionLocationsDataAssetGetterInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class InvasionBlueprintFunctionLibrary: public BlueprintFunctionLibrary
-{
-public:
-};
-
-
-// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class TaleQuestInvasionRemoveBattleBoundsStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableActor                                    ShipInBattleBounds;                                // 0x80(0x30)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class InvasionLocationsDataAsset: public DataAsset
-{
-public:
-	TArray<struct Vector2D>                                      AggressiveAggressiveLocations;                     // 0x28(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestInvasionCreateBattleBoundsStep: public TaleQuestStep
-{
-public:
+	char                                                         pad0x40_FBBUB[0x40];                               // 0x3a0(0x40)
+	class InvasionSettings*                                      InvasionSettings;                                  // 0x3e0(0x8)
+	class InvasionServiceDataAsset*                              InvasionServiceDataAsset;                          // 0x3e8(0x8)
+	class InvasionLocationsDataAsset*                            InvasionLocationsDataAsset;                        // 0x3f0(0x8)
+	class InvasionBattleBoundsDataAsset*                         InvasionBattleBoundsDataAsset;                     // 0x3f8(0x8)
+	char                                                         pad0x178_Q51RW[0x178];                             // 0x400(0x178)
+	TArray<struct InvasionParticipatingCrewData>                 MatchmakingCrews;                                  // 0x578(0x10)
+	TArray<struct InvasionParticipatingCrewData>                 InvadingCrews;                                     // 0x588(0x10)
+	TArray<struct ReplicatedInvasionCrewMusicState>              ReplicatedInvasionCrewMusicStates;                 // 0x598(0x10)
+	TArray<struct InvasionServiceMatchmakingCrewInfo>            MatchmakingCrewsReplicated;                        // 0x5a8(0x10)
+	TArray<struct Guid>                                          InvadingCrewsReplicated;                           // 0x5b8(0x10)
+	TArray<class InvasionBattleBounds*>                          InvasionBattleBoundsList;                          // 0x5c8(0x10)
+	char                                                         pad0x98_P9YG1[0x98];                               // 0x5d8(0x98)
+	TArray<struct InvasionServiceLosingCrewInfo>                 PreviousFactionForCrewData;                        // 0x670(0x10)
+	char                                                         pad0xb8_3ZIV5[0xb8];                               // 0x680(0xb8)
+	struct InvasionCrateRuntimeSettings                          InvasionCrateRuntimeSettings;                      // 0x738(0x10)
 };
 
 
@@ -59,147 +34,19 @@ class TaleQuestInvasionMatchmakingService: public TaleQuestService
 {
 public:
 	class TaleQuestInvasionMatchmakingServiceDesc*               ServiceDesc;                                       // 0x60(0x8)
-	char                                                         pad0x1c0_FN43O[0x1c0];                             // 0x68(0x1c0)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class GetInvasionShipsStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class InvasionSettings: public DeveloperSettings
-{
-public:
-	struct StringAssetReference                                  InvasionServiceDataAsset;                          // 0x38(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class TaleQuestInvasionRemoveBattleBoundsStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
-class TaleQuestInvasionCreateBattleBoundsStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableActor                                    Ship1;                                             // 0x80(0x30)
-	struct QuestVariableActor                                    Ship2;                                             // 0xb0(0x30)
-};
-
-
-// Size 0x2e0 (Full Size[0x680] - InheritedSize[0x3a0]
-class InvasionService: public Actor
-{
-public:
-	char                                                         pad0x40_Z83DT[0x40];                               // 0x3a0(0x40)
-	class InvasionSettings*                                      InvasionSettings;                                  // 0x3e0(0x8)
-	class InvasionServiceDataAsset*                              InvasionServiceDataAsset;                          // 0x3e8(0x8)
-	class InvasionLocationsDataAsset*                            InvasionLocationsDataAsset;                        // 0x3f0(0x8)
-	class InvasionBattleBoundsDataAsset*                         InvasionBattleBoundsDataAsset;                     // 0x3f8(0x8)
-	char                                                         pad0x148_N9O28[0x148];                             // 0x400(0x148)
-	TArray<struct InvasionParticipatingCrewData>                 MatchmakingCrews;                                  // 0x548(0x10)
-	TArray<struct InvasionParticipatingCrewData>                 InvadingCrews;                                     // 0x558(0x10)
-	TArray<struct ReplicatedInvasionCrewMusicState>              ReplicatedInvasionCrewMusicStates;                 // 0x568(0x10)
-	TArray<struct InvasionServiceMatchmakingCrewInfo>            MatchmakingCrewsReplicated;                        // 0x578(0x10)
-	TArray<struct Guid>                                          InvadingCrewsReplicated;                           // 0x588(0x10)
-	TArray<class InvasionBattleBounds*>                          InvasionBattleBoundsList;                          // 0x598(0x10)
-	char                                                         pad0xd8_TDKP2[0xd8];                               // 0x5a8(0xd8)
-};
-
-
-// Size 0xa8 (Full Size[0xd0] - InheritedSize[0x28]
-class InvasionServiceDataAsset: public DataAsset
-{
-public:
-	class VoyageDescDataAsset*                                   Matchmaking_VoyageDescDataAsset;                   // 0x28(0x8)
-	class VoyageDescDataAsset*                                   MatchmakingFast_VoyageDescDataAsset;               // 0x30(0x8)
-	class VoyageDescDataAsset*                                   Invasion_AggressivePassive_VoyageDescDataAsset;    // 0x38(0x8)
-	class VoyageDescDataAsset*                                   Invasion_AggressiveAggressive_VoyageDescDataAsset; // 0x40(0x8)
-	float                                                        VoteValidationRivalShipDetectionRadius;            // 0x48(0x4)
-	char                                                         pad0x4_LL3ZQ[0x4];                                 // 0x4c(0x4)
-	class VoyageDescDataAsset*                                   Invasion_LosingCrew_VoyageDescDataAsset;           // 0x50(0x8)
-	class EnvQuery*                                              AggressivePassive_EnvQueryTemplate;                // 0x58(0x8)
-	class EnvQuery*                                              AggressiveAggressive_InvasionLocation_EnvQueryTemplate; // 0x60(0x8)
-	class EnvQuery*                                              AggressiveAggressive_PrimaryShipLocation_EnvQueryTemplate; // 0x68(0x8)
-	class EnvQuery*                                              AggressiveAggressive_SecondaryShipLocation_EnvQueryTemplate; // 0x70(0x8)
-	float                                                        AggressivePassive_EQSQueryParamData_SailingTargetDistanceInMetres_Min; // 0x78(0x4)
-	float                                                        AggressivePassive_EQSQueryParamData_SailingTargetDistanceInMetres_Max; // 0x7c(0x4)
-	float                                                        AggressivePassive_EQSQueryParamData_StationaryTargetDistanceInMetres_Min; // 0x80(0x4)
-	float                                                        AggressivePassive_EQSQueryParamData_StationaryTargetDistanceInMetres_Max; // 0x84(0x4)
-	float                                                        AggressivePassive_EQSQueryParamData_TargetLocationOffsetInMetres; // 0x88(0x4)
-	float                                                        AggressiveAggressive_EQSQueryParamData_InvasionLocationStormExclusionRadius; // 0x8c(0x4)
-	float                                                        AggressiveAggressive_EQSQueryParamData_PrimaryShipTargetDistanceInMetres_Min; // 0x90(0x4)
-	float                                                        AggressiveAggressive_EQSQueryParamData_PrimaryShipTargetDistanceInMetres_Max; // 0x94(0x4)
-	float                                                        AggressiveAggressive_EQSQueryParamData_SecondaryShipTargetDistanceInMetres_Min; // 0x98(0x4)
-	float                                                        AggressiveAggressive_EQSQueryParamData_SecondaryShipTargetDistanceInMetres_Max; // 0x9c(0x4)
-	class VoyageDescDataAsset*                                   Invasion_Debug_AggressivePassive_VoyageDescDataAsset; // 0xa0(0x8)
-	class VoyageDescDataAsset*                                   Invasion_Debug_AggressiveAggressive_VoyageDescDataAsset; // 0xa8(0x8)
-	class InvasionBattleBoundsDataAsset*                         Battle_Bounds_DataAsset;                           // 0xb0(0x8)
-	TArray<struct InvasionCrateSettingsPerFaction>               Invasion_Crate_Settings;                           // 0xb8(0x10)
-	float                                                        WorldEventsCooldown;                               // 0xc8(0x4)
-	char                                                         pad0x4_2W6YO[0x4];                                 // 0xcc(0x4)
-};
-
-
-// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
-class SetInvasionMusicStateForCrewStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x8_KOD9K[0x8];                                 // 0x98(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class DisplayInvasionBannersStep: public TaleQuestStep
-{
-public:
-};
-
-
-// Size 0x1a8 (Full Size[0x208] - InheritedSize[0x60]
-class TaleQuestInvasionService: public TaleQuestService
-{
-public:
-	class TaleQuestInvasionServiceDesc*                          ServiceDesc;                                       // 0x60(0x8)
-	char                                                         pad0x1a0_8C3U5[0x1a0];                             // 0x68(0x1a0)
-};
-
-
-// Size 0x18 (Full Size[0xb0] - InheritedSize[0x98]
-class WaitForShipToBeDefeatedStep: public TaleQuestStep
-{
-public:
-	char                                                         pad0x18_PYDWB[0x18];                               // 0x98(0x18)
-};
-
-
-// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
-class GetInvasionBattleLocationStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct QuestVariableVector                                   Location;                                          // 0x80(0x30)
-	struct QuestVariableFloat                                    Radius;                                            // 0xb0(0x30)
-};
-
-
-// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
-class SetInvasionMusicStateForCrewStepDesc: public TaleQuestStepDesc
-{
-public:
-	char                                                         MusicState;                                        // 0x80(0x1)
-	char                                                         pad0x7_Y2UUA[0x7];                                 // 0x81(0x7)
+	char                                                         pad0x1c0_4Q8PU[0x1c0];                             // 0x68(0x1c0)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class InvasionBattleBoundsShipComponentInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestInvasionCreateBattleBoundsStep: public TaleQuestStep
 {
 public:
 };
@@ -213,17 +60,72 @@ public:
 
 
 // Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
-class TaleQuestInvasionSpawnRestockCrateStepDesc: public TaleQuestStepDesc
+class TaleQuestInvasionRemoveBattleBoundsStepDesc: public TaleQuestStepDesc
 {
 public:
-	struct QuestVariableActor                                    Ship;                                              // 0x80(0x30)
+	struct QuestVariableActor                                    ShipInBattleBounds;                                // 0x80(0x30)
 };
 
 
-// Size 0x0 (Full Size[0x58] - InheritedSize[0x58]
-class EnvQueryGenerator_AggressiveAggressiveSpawnLocations: public EnvQueryGenerator
+// Size 0x18 (Full Size[0xb0] - InheritedSize[0x98]
+class WaitForShipToBeDefeatedStep: public TaleQuestStep
 {
 public:
+	char                                                         pad0x18_GE8NH[0x18];                               // 0x98(0x18)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class InvasionLocationsDataAssetGetterInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
+class GetInvasionBattleLocationStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableVector                                   Location;                                          // 0x80(0x30)
+	struct QuestVariableFloat                                    Radius;                                            // 0xb0(0x30)
+};
+
+
+// Size 0x1a8 (Full Size[0x548] - InheritedSize[0x3a0]
+class InvasionBattleBounds: public Actor
+{
+public:
+	class SceneComponent*                                        Root;                                              // 0x3a0(0x8)
+	char                                                         pad0x10_CTENF[0x10];                               // 0x3a8(0x10)
+	class Actor*                                                 ShipToTrack1;                                      // 0x3b8(0x8)
+	class Actor*                                                 ShipToTrack2;                                      // 0x3c0(0x8)
+	struct InvasionBattleBoundsRepData                           BoundaryRepData;                                   // 0x3c8(0x20)
+	char                                                         pad0x40_7B193[0x40];                               // 0x3e8(0x40)
+	class Actor*                                                 ShipThatWasDestroyed;                              // 0x428(0x8)
+	TArray<class Actor*>                                         HasLeftBattleBounds;                               // 0x430(0x10)
+	char                                                         pad0xc_UUO8U[0xc];                                 // 0x440(0xc)
+	float                                                        GoToBoundaryFadeTime;                              // 0x44c(0x4)
+	float                                                        GoToBoundaryMaxAlpha;                              // 0x450(0x4)
+	char                                                         pad0x4_HE48P[0x4];                                 // 0x454(0x4)
+	class PhasedActorComponent*                                  BoundsVFXPhasingComponent;                         // 0x510(0x8)
+	class Murk*                                                  MurkActor;                                         // 0x538(0x8)
+	bool                                                         ShouldShowDebug;                                   // 0x540(0x1)
+	char                                                         pad0x7_WACPT[0x7];                                 // 0x541(0x7)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class GetInvasionShipsStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class TaleQuestInvasionAutoActivateEmissaryStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableActor                                    Ship;                                              // 0x80(0x30)
 };
 
 
@@ -235,21 +137,18 @@ public:
 
 
 // Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
-class GetInvasionBattleLocationStep: public TaleQuestStep
+class TaleQuestInvasionAutoActivateEmissaryStep: public TaleQuestStep
 {
 public:
 };
 
 
-// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
-class InvasionBattleBoundsDataAsset: public DataAsset
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class SetInvasionMusicStateForCrewStepDesc: public TaleQuestStepDesc
 {
 public:
-	TArray<struct PhaseData>                                     PhasesData;                                        // 0x28(0x10)
-	struct TransitionData                                        TransitionData;                                    // 0x38(0xc)
-	float                                                        PreShrinkBuildUpTime;                              // 0x44(0x4)
-	float                                                        GoToBoundaryFadeTime;                              // 0x48(0x4)
-	float                                                        GoToBoundaryMaxAlpha;                              // 0x4c(0x4)
+	char                                                         MusicState;                                        // 0x80(0x1)
+	char                                                         pad0x7_GX5CR[0x7];                                 // 0x81(0x7)
 };
 
 
@@ -259,18 +158,6 @@ class TaleQuestInvasionMatchmakingServiceDesc: public TaleQuestServiceDesc
 public:
 	struct FText                                                 OnCrewLeftServerMessage;                           // 0x28(0x38)
 	struct FText                                                 OnCrewLeftFightMessage;                            // 0x60(0x38)
-};
-
-
-// Size 0xa0 (Full Size[0x120] - InheritedSize[0x80]
-class DisplayInvasionBannersStepDesc: public TaleQuestStepDesc
-{
-public:
-	struct FText                                                 Message;                                           // 0x80(0x38)
-	bool                                                         DisableMusic;                                      // 0xb8(0x1)
-	char                                                         pad0x7_S2KWN[0x7];                                 // 0xb9(0x7)
-	struct QuestVariableGuid                                     DisplayShipsNameForCrewId;                         // 0xc0(0x30)
-	struct QuestVariableName                                     DisplayBannersForFaction;                          // 0xf0(0x30)
 };
 
 
@@ -285,7 +172,7 @@ public:
 	struct QuestVariableName                                     WinningFaction;                                    // 0x140(0x30)
 	struct QuestVariableName                                     DefeatedFaction;                                   // 0x170(0x30)
 	float                                                        TimeoutTimerIntervalInMinutes;                     // 0x1a0(0x4)
-	char                                                         pad0x4_OBHFJ[0x4];                                 // 0x1a4(0x4)
+	char                                                         pad0x4_GPAMI[0x4];                                 // 0x1a4(0x4)
 	struct FText                                                 FailMessage;                                       // 0x1a8(0x38)
 };
 
@@ -306,28 +193,92 @@ public:
 };
 
 
-// Size 0x158 (Full Size[0x4f8] - InheritedSize[0x3a0]
-class InvasionBattleBounds: public Actor
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class InvasionLocationsDataAsset: public DataAsset
 {
 public:
-	class SceneComponent*                                        Root;                                              // 0x3a0(0x8)
-	double                                                       LastAudioEventTimestamp;                           // 0x3a8(0x8)
-	char                                                         LastAudioEvent;                                    // 0x3b0(0x1)
-	char                                                         pad0x7_5YMU3[0x7];                                 // 0x3b1(0x7)
-	class Actor*                                                 ShipToTrack1;                                      // 0x3b8(0x8)
-	class Actor*                                                 ShipToTrack2;                                      // 0x3c0(0x8)
-	float                                                        InnerRadius;                                       // 0x3c8(0x4)
-	float                                                        OuterRadius;                                       // 0x3cc(0x4)
-	char                                                         pad0x38_NSSEJ[0x38];                               // 0x3d0(0x38)
-	class Actor*                                                 ShipThatWasDestroyed;                              // 0x408(0x8)
-	TArray<class Actor*>                                         HasLeftBattleBounds;                               // 0x410(0x10)
-	char                                                         pad0x10_3AEWR[0x10];                               // 0x420(0x10)
-	TArray<struct PhaseData>                                     PhasesData;                                        // 0x430(0x10)
-	struct TransitionData                                        TransitionData;                                    // 0x440(0xc)
-	float                                                        GoToBoundaryFadeTime;                              // 0x44c(0x4)
-	float                                                        GoToBoundaryMaxAlpha;                              // 0x450(0x4)
-	char                                                         pad0x4_YOQ2V[0x4];                                 // 0x454(0x4)
-	char                                                         pad0xa0_DZO7E[0xa0];                               // 0x458(0xa0)
+	TArray<struct Vector2D>                                      AggressiveAggressiveLocations;                     // 0x28(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class TaleQuestInvasionRemoveBattleBoundsStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x1a8 (Full Size[0x208] - InheritedSize[0x60]
+class TaleQuestInvasionService: public TaleQuestService
+{
+public:
+	class TaleQuestInvasionServiceDesc*                          ServiceDesc;                                       // 0x60(0x8)
+	char                                                         pad0x1a0_UV5S0[0x1a0];                             // 0x68(0x1a0)
+};
+
+
+// Size 0xe0 (Full Size[0x108] - InheritedSize[0x28]
+class TaleQuestInvasionServiceDesc: public TaleQuestServiceDesc
+{
+public:
+	struct FText                                                 OnCrewLeftServerMessage;                           // 0x28(0x38)
+	struct FText                                                 OnCrewLeftFightMessage;                            // 0x60(0x38)
+	struct FText                                                 FactionGBannerTag;                                 // 0x98(0x38)
+	struct FText                                                 FactionBBannerTag;                                 // 0xd0(0x38)
+};
+
+
+// Size 0x0 (Full Size[0x58] - InheritedSize[0x58]
+class EnvQueryGenerator_AggressiveAggressiveSpawnLocations: public EnvQueryGenerator
+{
+public:
+};
+
+
+// Size 0x60 (Full Size[0xe0] - InheritedSize[0x80]
+class TaleQuestInvasionCreateBattleBoundsStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableActor                                    Ship1;                                             // 0x80(0x30)
+	struct QuestVariableActor                                    Ship2;                                             // 0xb0(0x30)
+};
+
+
+// Size 0x198 (Full Size[0x538] - InheritedSize[0x3a0]
+class MultiShipInvasionBattleBounds: public Actor
+{
+public:
+	class InvasionBattleBoundsDataAsset*                         BattleBoundsDataAsset;                             // 0x3a0(0x8)
+	class SceneComponent*                                        Root;                                              // 0x3a8(0x8)
+	char                                                         pad0x10_JA11A[0x10];                               // 0x3b0(0x10)
+	TArray<class Actor*>                                         ShipsToTrack;                                      // 0x3c0(0x10)
+	struct InvasionBattleBoundsRepData                           BoundaryRepData;                                   // 0x3d0(0x20)
+	char                                                         pad0x50_4RDBT[0x50];                               // 0x3f0(0x50)
+	class Actor*                                                 ShipThatWasDestroyed;                              // 0x440(0x8)
+	TArray<class Actor*>                                         HasLeftBattleBounds;                               // 0x448(0x10)
+	char                                                         pad0x10_E9VJ2[0x10];                               // 0x458(0x10)
+	TArray<struct PhaseData>                                     PhasesData;                                        // 0x468(0x10)
+	struct TransitionData                                        TransitionData;                                    // 0x478(0xc)
+	float                                                        GoToBoundaryFadeTime;                              // 0x484(0x4)
+	float                                                        GoToBoundaryMaxAlpha;                              // 0x488(0x4)
+	char                                                         pad0x4_ROS6I[0x4];                                 // 0x48c(0x4)
+	bool                                                         ShouldShowDebug;                                   // 0x530(0x1)
+	char                                                         pad0x7_QFDFY[0x7];                                 // 0x531(0x7)
+};
+
+
+// Size 0x30 (Full Size[0xb0] - InheritedSize[0x80]
+class TaleQuestInvasionSpawnRestockCrateStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct QuestVariableActor                                    Ship;                                              // 0x80(0x30)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class DisplayInvasionBannersStep: public TaleQuestStep
+{
+public:
 };
 
 
@@ -336,6 +287,104 @@ class InvasionCrateSettingsDataAsset: public DataAsset
 {
 public:
 	TArray<struct InvasionCrateSettings>                         CrateSettings;                                     // 0x28(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x98] - InheritedSize[0x98]
+class GetInvasionBattleLocationStep: public TaleQuestStep
+{
+public:
+};
+
+
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
+class InvasionBattleBoundsDataAsset: public DataAsset
+{
+public:
+	char                                                         pad0x20_ATZWR[0x20];                               // 0x28(0x20)
+	TArray<struct PhaseData>                                     PhasesData;                                        // 0x48(0x10)
+	struct TransitionData                                        TransitionData;                                    // 0x58(0xc)
+	float                                                        TimePreStopShrinkMusic;                            // 0x64(0x4)
+	float                                                        TimePreStartShrinkSFX;                             // 0x68(0x4)
+	float                                                        TimePreStopShrinkSFX;                              // 0x6c(0x4)
+	float                                                        GoToBoundaryFadeTime;                              // 0x70(0x4)
+	float                                                        GoToBoundaryMaxAlpha;                              // 0x74(0x4)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class InvasionBlueprintFunctionLibrary: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0xa0] - InheritedSize[0x98]
+class SetInvasionMusicStateForCrewStep: public TaleQuestStep
+{
+public:
+	char                                                         pad0x8_O50J6[0x8];                                 // 0x98(0x8)
+};
+
+
+// Size 0xa0 (Full Size[0x120] - InheritedSize[0x80]
+class DisplayInvasionBannersStepDesc: public TaleQuestStepDesc
+{
+public:
+	struct FText                                                 Message;                                           // 0x80(0x38)
+	bool                                                         DisableMusic;                                      // 0xb8(0x1)
+	char                                                         pad0x7_3CA04[0x7];                                 // 0xb9(0x7)
+	struct QuestVariableGuid                                     DisplayShipsNameForCrewId;                         // 0xc0(0x30)
+	struct QuestVariableName                                     DisplayBannersForFaction;                          // 0xf0(0x30)
+};
+
+
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
+class InvasionSettings: public DeveloperSettings
+{
+public:
+	struct StringAssetReference                                  InvasionServiceDataAsset;                          // 0x38(0x10)
+};
+
+
+// Size 0xd0 (Full Size[0xf8] - InheritedSize[0x28]
+class InvasionServiceDataAsset: public DataAsset
+{
+public:
+	class VoyageDescDataAsset*                                   Matchmaking_VoyageDescDataAsset;                   // 0x28(0x8)
+	class VoyageDescDataAsset*                                   MatchmakingFast_VoyageDescDataAsset;               // 0x30(0x8)
+	class VoyageDescDataAsset*                                   Invasion_AggressivePassive_VoyageDescDataAsset;    // 0x38(0x8)
+	class VoyageDescDataAsset*                                   Invasion_AggressiveAggressive_VoyageDescDataAsset; // 0x40(0x8)
+	float                                                        VoteValidationRivalShipDetectionRadius;            // 0x48(0x4)
+	char                                                         pad0x4_5DAOR[0x4];                                 // 0x4c(0x4)
+	class VoyageDescDataAsset*                                   Invasion_LosingCrew_VoyageDescDataAsset;           // 0x50(0x8)
+	class EnvQuery*                                              AggressivePassive_EnvQueryTemplate;                // 0x58(0x8)
+	class EnvQuery*                                              AggressiveAggressive_InvasionLocation_EnvQueryTemplate; // 0x60(0x8)
+	class EnvQuery*                                              AggressiveAggressive_PrimaryShipLocation_EnvQueryTemplate; // 0x68(0x8)
+	class EnvQuery*                                              AggressiveAggressive_SecondaryShipLocation_EnvQueryTemplate; // 0x70(0x8)
+	float                                                        AggressivePassive_EQSQueryParamData_SailingTargetDistanceInMetres_Min; // 0x78(0x4)
+	float                                                        AggressivePassive_EQSQueryParamData_SailingTargetDistanceInMetres_Max; // 0x7c(0x4)
+	float                                                        AggressivePassive_EQSQueryParamData_StationaryTargetDistanceInMetres_Min; // 0x80(0x4)
+	float                                                        AggressivePassive_EQSQueryParamData_StationaryTargetDistanceInMetres_Max; // 0x84(0x4)
+	float                                                        AggressivePassive_EQSQueryParamData_TargetLocationOffsetInMetres; // 0x88(0x4)
+	float                                                        AggressiveAggressive_EQSQueryParamData_InvasionLocationStormExclusionRadius; // 0x8c(0x4)
+	float                                                        AggressiveAggressive_EQSQueryParamData_PrimaryShipTargetDistanceInMetres_Min; // 0x90(0x4)
+	float                                                        AggressiveAggressive_EQSQueryParamData_PrimaryShipTargetDistanceInMetres_Max; // 0x94(0x4)
+	float                                                        AggressiveAggressive_EQSQueryParamData_SecondaryShipTargetDistanceInMetres_Min; // 0x98(0x4)
+	float                                                        AggressiveAggressive_EQSQueryParamData_SecondaryShipTargetDistanceInMetres_Max; // 0x9c(0x4)
+	class VoyageDescDataAsset*                                   Invasion_Debug_AggressivePassive_VoyageDescDataAsset; // 0xa0(0x8)
+	class VoyageDescDataAsset*                                   Invasion_Debug_AggressiveAggressive_VoyageDescDataAsset; // 0xa8(0x8)
+	class InvasionBattleBoundsDataAsset*                         Battle_Bounds_DataAsset;                           // 0xb0(0x8)
+	TArray<struct InvasionCrateSettingsPerFaction>               Invasion_Crate_Settings;                           // 0xb8(0x10)
+	TArray<struct InvasionEmissarySettingsPerFaction>            Invasion_Emissary_Settings;                        // 0xc8(0x10)
+	bool                                                         AutoActivateRandomEmissaryWhenFactionEmissaryNotEntitled; // 0xd8(0x1)
+	char                                                         pad0x3_6EMFL[0x3];                                 // 0xd9(0x3)
+	float                                                        RestockCrateSpawnDelay;                            // 0xdc(0x4)
+	float                                                        EmissaryActivationDelay;                           // 0xe0(0x4)
+	float                                                        WorldEventsCooldown;                               // 0xe4(0x4)
+	class UClass*                                                InvasionActivityIdentifier;                        // 0xe8(0x8)
+	int                                                          MaxRecentOpponentsToTrack;                         // 0xf0(0x4)
+	char                                                         pad0x4_4YKEG[0x4];                                 // 0xf4(0x4)
 };
 
 

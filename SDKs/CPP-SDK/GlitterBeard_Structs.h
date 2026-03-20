@@ -4,10 +4,18 @@
 // https://github.com/DougTheDruid
 
 // Size 0x10
-struct GlitterbeardPuzzleUnlockTelemetryEvent
+struct GlitterbeardSessionEndTelemetryEvent
 {
 public:
-	char                                                         pad0x10_YR9JM[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_EB5GV[0x10];                               // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct GlitterbeardSessionBeginTelemetryEvent
+{
+public:
+	char                                                         pad0x10_8DO2N[0x10];                               // 0x0(0x10)
 };
 
 
@@ -16,7 +24,7 @@ struct FinaleReplicationState
 {
 public:
 	char                                                         State;                                             // 0x0(0x1)
-	char                                                         pad0x7_ZX0S8[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_3VELD[0x7];                                 // 0x1(0x7)
 	class Object*                                                TargetEnsemble;                                    // 0x8(0x8)
 };
 
@@ -30,10 +38,26 @@ public:
 
 
 // Size 0x10
-struct GlitterbeardSessionBeginTelemetryEvent
+struct GlitterbeardPuzzleUnlockTelemetryEvent
 {
 public:
-	char                                                         pad0x10_S44O4[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_E9A9R[0x10];                               // 0x0(0x10)
+};
+
+
+// Size 0x10
+struct GlitterbeardPuzzleCancelTelemetryEvent
+{
+public:
+	char                                                         pad0x10_9XDQ5[0x10];                               // 0x0(0x10)
+};
+
+
+// Size 0x20
+struct GlitterbeardPlayerPuzzleUnlockFailureTelemetryEvent
+{
+public:
+	char                                                         pad0x20_NCQ9K[0x20];                               // 0x0(0x20)
 };
 
 
@@ -43,7 +67,7 @@ struct ChangeGlitterBeardVFXStateEvent
 public:
 	int                                                          Index;                                             // 0x0(0x4)
 	char                                                         Target;                                            // 0x4(0x1)
-	char                                                         pad0x3_RQOGG[0x3];                                 // 0x5(0x3)
+	char                                                         pad0x3_RE8LB[0x3];                                 // 0x5(0x3)
 };
 
 
@@ -56,34 +80,10 @@ public:
 
 
 // Size 0x10
-struct GlitterbeardPuzzleCancelTelemetryEvent
-{
-public:
-	char                                                         pad0x10_6L1KY[0x10];                               // 0x0(0x10)
-};
-
-
-// Size 0x10
 struct GlitterbeardPlayerPuzzleUnlockSuccessTelemetryEvent
 {
 public:
-	char                                                         pad0x10_24D2R[0x10];                               // 0x0(0x10)
-};
-
-
-// Size 0x20
-struct GlitterbeardPlayerPuzzleUnlockFailureTelemetryEvent
-{
-public:
-	char                                                         pad0x20_IKJVE[0x20];                               // 0x0(0x20)
-};
-
-
-// Size 0x10
-struct GlitterbeardSessionEndTelemetryEvent
-{
-public:
-	char                                                         pad0x10_N53I7[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_YS5HX[0x10];                               // 0x0(0x10)
 };
 
 

@@ -7,7 +7,7 @@
 struct NavalBattleShipData
 {
 public:
-	char                                                         pad0x150_K9RM4[0x150];                             // 0x0(0x150)
+	char                                                         pad0x150_G5550[0x150];                             // 0x0(0x150)
 };
 
 

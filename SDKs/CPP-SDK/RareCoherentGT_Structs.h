@@ -9,7 +9,7 @@ struct CoherentSyncLoadData
 public:
 	struct FString                                               FileName;                                          // 0x0(0x10)
 	double                                                       DurationInMS;                                      // 0x10(0x8)
-	char                                                         pad0x8_6X3MW[0x8];                                 // 0x18(0x8)
+	char                                                         pad0x8_FDEUD[0x8];                                 // 0x18(0x8)
 };
 
 

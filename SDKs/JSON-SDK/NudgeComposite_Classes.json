@@ -1,42 +1,4 @@
 {
-  "NudgeFromWaterLevelPolicy": {
-    "Super": "NudgePolicy",
-    "FullSize": "0xf0",
-    "InheritedSize": "0xc8",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "ChanceOfNudge",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc8"
-      },
-      {
-        "Name": "pad0x14_POCL9[0x14]",
-        "Type": "char",
-        "Size": "0x14",
-        "Offset": "0xcc"
-      },
-      {
-        "Name": "WaterLevelDifferenceBetweenUpdates",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xe0"
-      },
-      {
-        "Name": "ZOffsetFromWaterToMountpoint",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xe4"
-      },
-      {
-        "Name": "pad0x8_J2JEK[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xe8"
-      }
-    ]
-  },
   "NudgeFromStormPolicy": {
     "Super": "NudgePolicy",
     "FullSize": "0x158",
@@ -50,7 +12,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x4_470IX[0x4]",
+        "Name": "pad0x4_JJ1RO[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xcc"
@@ -62,7 +24,7 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x58_ZFEJ2[0x58]",
+        "Name": "pad0x58_TZGYP[0x58]",
         "Type": "char",
         "Size": "0x58",
         "Offset": "0x100"
@@ -80,6 +42,44 @@
         "Type": "TArray<struct NudgeChancePerDamagerType>",
         "Size": "0x10",
         "Offset": "0xc8"
+      }
+    ]
+  },
+  "NudgeFromWaterLevelPolicy": {
+    "Super": "NudgePolicy",
+    "FullSize": "0xf0",
+    "InheritedSize": "0xc8",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "ChanceOfNudge",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc8"
+      },
+      {
+        "Name": "pad0x14_Y6RFA[0x14]",
+        "Type": "char",
+        "Size": "0x14",
+        "Offset": "0xcc"
+      },
+      {
+        "Name": "WaterLevelDifferenceBetweenUpdates",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xe0"
+      },
+      {
+        "Name": "ZOffsetFromWaterToMountpoint",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xe4"
+      },
+      {
+        "Name": "pad0x8_61TAL[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xe8"
       }
     ]
   },

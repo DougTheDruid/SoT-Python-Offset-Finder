@@ -1,15 +1,4 @@
 {
-  "PortableHarpoonTelemetryTemporaryData": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "pad0x14_GQ6PI[0x14]",
-        "Type": "char",
-        "Size": "0x14",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "PortableHarpoonTelemetryEvent": {
     "ClassSize": "0xc0",
     "Attributes": [
@@ -26,7 +15,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_AW801[0x7]",
+        "Name": "pad0x7_AH6S9[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
@@ -86,7 +75,7 @@
         "Offset": "0x4d"
       },
       {
-        "Name": "pad0x2_NT5TK[0x2]",
+        "Name": "pad0x2_18QVG[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x4e"
@@ -122,7 +111,7 @@
         "Offset": "0x84"
       },
       {
-        "Name": "pad0x3_ITAPM[0x3]",
+        "Name": "pad0x3_8DQAX[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x85"
@@ -152,7 +141,7 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x7_X0GQF[0x7]",
+        "Name": "pad0x7_YJF29[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xb9"
@@ -220,7 +209,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_7JPZS[0x7]",
+        "Name": "pad0x7_4U6HH[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
@@ -248,6 +237,17 @@
         "Type": "class PhysicalMaterial*",
         "Size": "0x8",
         "Offset": "0x30"
+      }
+    ]
+  },
+  "PortableHarpoonTelemetryTemporaryData": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "pad0x14_YA9FX[0x14]",
+        "Type": "char",
+        "Size": "0x14",
+        "Offset": "0x0"
       }
     ]
   },

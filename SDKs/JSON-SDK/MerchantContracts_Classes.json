@@ -1,6 +1,6 @@
 {
-  "PlayerMerchantContractsInterface": {
-    "Super": "Interface",
+  "DoesWieldedItemSatisfyMerchantContractStatCondition": {
+    "Super": "StatCondition",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
@@ -13,7 +13,7 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x8_NC8QJ[0x8]",
+        "Name": "pad0x8_C8HO8[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -26,6 +26,13 @@
       }
     ]
   },
+  "MerchantContractsServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "MerchantContractsService": {
     "Super": "Object",
     "FullSize": "0xd8",
@@ -33,7 +40,7 @@
     "ClassSize": "0xb0",
     "Attributes": [
       {
-        "Name": "pad0x8_2XGZR[0x8]",
+        "Name": "pad0x8_GQONH[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x28"
@@ -45,7 +52,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x98_KRK51[0x98]",
+        "Name": "pad0x98_TZZ2Y[0x98]",
         "Type": "char",
         "Size": "0x98",
         "Offset": "0x40"
@@ -59,15 +66,8 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "MerchantContractsServiceInterface": {
+  "PlayerMerchantContractsInterface": {
     "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "DoesWieldedItemSatisfyMerchantContractStatCondition": {
-    "Super": "StatCondition",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",

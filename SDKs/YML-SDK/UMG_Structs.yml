@@ -37,7 +37,7 @@ DelegateRuntimeBinding:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_LNDFH[0x7]
+  - Name: pad0x7_XPS85[0x7]
     Offset: '0x31'
     Size: '0x7'
     Type: char
@@ -51,14 +51,14 @@ DynamicPropertyPath:
   ClassSize: '0x10'
 EventReply:
   Attributes:
-  - Name: pad0xe8_VV712[0xe8]
+  - Name: pad0xe8_SQT1T[0xe8]
     Offset: '0x0'
     Size: '0xe8'
     Type: char
   ClassSize: '0xe8'
 MovieScene2DTransformSectionTemplate:
   Attributes:
-  - Name: pad0x18_DZ8MN[0x18]
+  - Name: pad0x18_S3OO6[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -70,7 +70,7 @@ MovieScene2DTransformSectionTemplate:
     Offset: '0x38'
     Size: '0x78'
     Type: struct RichCurve
-  - Name: pad0x78_7KZJZ[0x78]
+  - Name: pad0x78_XLJ7P[0x78]
     Offset: '0xb0'
     Size: '0x78'
     Type: char
@@ -82,7 +82,7 @@ MovieScene2DTransformSectionTemplate:
     Offset: '0x1a0'
     Size: '0x78'
     Type: struct RichCurve
-  - Name: pad0x78_FV8SP[0x78]
+  - Name: pad0x78_PUYZD[0x78]
     Offset: '0x218'
     Size: '0x78'
     Type: char
@@ -90,14 +90,14 @@ MovieScene2DTransformSectionTemplate:
     Offset: '0x290'
     Size: '0x78'
     Type: struct RichCurve
-  - Name: pad0x78_SYUKJ[0x78]
+  - Name: pad0x78_H1QMV[0x78]
     Offset: '0x308'
     Size: '0x78'
     Type: char
   ClassSize: '0x380'
 MovieSceneMarginSectionTemplate:
   Attributes:
-  - Name: pad0x18_2LXUA[0x18]
+  - Name: pad0x18_G8GD7[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -124,7 +124,7 @@ MovieSceneMarginSectionTemplate:
   ClassSize: '0x218'
 MovieSceneWidgetMaterialSectionTemplate:
   Attributes:
-  - Name: pad0x48_CXUQO[0x48]
+  - Name: pad0x48_U06SO[0x48]
     Offset: '0x0'
     Size: '0x48'
     Type: char
@@ -146,7 +146,7 @@ NamedSlotBinding:
   ClassSize: '0x10'
 PaintContext:
   Attributes:
-  - Name: pad0x30_FRGTG[0x30]
+  - Name: pad0x30_B9YJE[0x30]
     Offset: '0x0'
     Size: '0x30'
     Type: char
@@ -161,7 +161,7 @@ PropertyPathSegment:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_YNRS1[0x4]
+  - Name: pad0x4_4GJCY[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -184,7 +184,7 @@ SlateChildSize:
     Offset: '0x4'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_G9IT2[0x3]
+  - Name: pad0x3_U27Z1[0x3]
     Offset: '0x5'
     Size: '0x3'
     Type: char
@@ -207,7 +207,7 @@ WidgetAnimationBinding:
     Offset: '0x20'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_K4S8J[0x3]
+  - Name: pad0x3_HG3BO[0x3]
     Offset: '0x21'
     Size: '0x3'
     Type: char
@@ -218,7 +218,7 @@ WidgetNavigationData:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_5DMQV[0x3]
+  - Name: pad0x3_SVLPR[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -226,7 +226,7 @@ WidgetNavigationData:
     Offset: '0x4'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x8_DPJ07[0x8]
+  - Name: pad0x8_F665L[0x8]
     Offset: '0xc'
     Size: '0x8'
     Type: char

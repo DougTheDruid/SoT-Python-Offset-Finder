@@ -1,51 +1,4 @@
 {
-  "PerObjectIncrementalActorBuildStepStats": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "NumChildActorComponents",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x4_FJB2T[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "SlowestChildActorComponentName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "MinTimeSpentMs",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "MaxTimeSpentMs",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "AvgTimeSpentMs",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "StdDevTimeSpentMs",
-        "Type": "double",
-        "Size": "0x8",
-        "Offset": "0x30"
-      }
-    ]
-  },
   "IncrementalActorBuilderFailedTelemetryEvent": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -126,7 +79,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_MAOQT[0x4]",
+        "Name": "pad0x4_3VI6E[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
@@ -156,8 +109,55 @@
       }
     ]
   },
+  "PerObjectIncrementalActorBuildStepStats": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "NumChildActorComponents",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_XSLK6[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "SlowestChildActorComponentName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "MinTimeSpentMs",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "MaxTimeSpentMs",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "AvgTimeSpentMs",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "StdDevTimeSpentMs",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x30"
+      }
+    ]
+  },
   "IncrementalActorBuilderCompletedTelemetryEvent": {
-    "ClassSize": "0x148",
+    "ClassSize": "0x150",
     "Attributes": [
       {
         "Name": "BuildId",
@@ -220,22 +220,28 @@
         "Offset": "0x130"
       },
       {
+        "Name": "CompleteActorBuildMs",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x138"
+      },
+      {
         "Name": "NumChildActorComponents",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x138"
+        "Offset": "0x140"
       },
       {
         "Name": "NumComponents",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x13c"
+        "Offset": "0x144"
       },
       {
         "Name": "PerFrameTimeBudgetMs",
         "Type": "double",
         "Size": "0x8",
-        "Offset": "0x140"
+        "Offset": "0x148"
       }
     ]
   },

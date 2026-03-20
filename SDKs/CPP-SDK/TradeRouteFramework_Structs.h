@@ -4,18 +4,18 @@
 // https://github.com/DougTheDruid
 
 // Size 0x30
-struct QuestVariableTradeRouteData
+struct TradeRouteMappingFilterQuestVariable
 {
 public:
-	char                                                         pad0x30_EJ036[0x30];                               // 0x0(0x30)
+	char                                                         pad0x30_ODEDG[0x30];                               // 0x0(0x30)
 };
 
 
 // Size 0x30
-struct TradeRouteMappingFilterQuestVariable
+struct QuestVariableTradeRouteData
 {
 public:
-	char                                                         pad0x30_S4YOD[0x30];                               // 0x0(0x30)
+	char                                                         pad0x30_BPBK4[0x30];                               // 0x0(0x30)
 };
 
 
@@ -24,9 +24,9 @@ struct TradeRouteMapping
 {
 public:
 	char                                                         Filter;                                            // 0x0(0x1)
-	char                                                         pad0x3_JPTZL[0x3];                                 // 0x1(0x3)
+	char                                                         pad0x3_X31LH[0x3];                                 // 0x1(0x3)
 	struct IslandSelectionType                                   StartIsland;                                       // 0x4(0x8)
-	char                                                         pad0x4_DPIK8[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_Z8RYT[0x4];                                 // 0xc(0x4)
 	class UClass*                                                DifficultyBand;                                    // 0x10(0x8)
 	struct StringAssetReference                                  TradeRouteReference;                               // 0x18(0x10)
 };

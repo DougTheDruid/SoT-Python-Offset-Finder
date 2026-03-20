@@ -1,4 +1,228 @@
 {
+  "ToggleRevivalOnDeathInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ReviveableActionStateId": {
+    "Super": "ActionStateId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ReviveInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RevivableAIComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x220",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x168",
+    "Attributes": [
+      {
+        "Name": "pad0x18_WNBEX[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "RevivableOnDeathFromTheStart",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xd0"
+      },
+      {
+        "Name": "RevivableOnDeath",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0xd1"
+      },
+      {
+        "Name": "pad0x6_LAR8G[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0xd2"
+      },
+      {
+        "Name": "CannotReviveAIBecauseDiffrentCrewDisplayText",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0xd8"
+      },
+      {
+        "Name": "StartRevivingInputId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x110"
+      },
+      {
+        "Name": "HoldToReviveInputId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x118"
+      },
+      {
+        "Name": "EmoteIdToPlayAfterSuccessfulRevive",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x120"
+      },
+      {
+        "Name": "ReviveState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x128"
+      },
+      {
+        "Name": "ReviveWindowIsOpen",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x129"
+      },
+      {
+        "Name": "OnlyCrewCanReviveFromTheStart",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x12a"
+      },
+      {
+        "Name": "OnlyCrewCanRevive",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x12b"
+      },
+      {
+        "Name": "pad0x54_T83SX[0x54]",
+        "Type": "char",
+        "Size": "0x54",
+        "Offset": "0x12c"
+      },
+      {
+        "Name": "ReviveTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x180"
+      },
+      {
+        "Name": "pad0x4_U1TPM[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x184"
+      },
+      {
+        "Name": "ReviveableRepresentationClass",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x188"
+      },
+      {
+        "Name": "RevivableStatus",
+        "Type": "struct Status",
+        "Size": "0x20",
+        "Offset": "0x190"
+      },
+      {
+        "Name": "ReviveableRepresentationActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0x1b0"
+      },
+      {
+        "Name": "pad0x68_X42OW[0x68]",
+        "Type": "char",
+        "Size": "0x68",
+        "Offset": "0x1b8"
+      }
+    ]
+  },
+  "ReviveableCharacterInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ReviveAudioComponent": {
+    "Super": "WwiseEmitterComponent",
+    "FullSize": "0x320",
+    "InheritedSize": "0x300",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ReviveEffectsDataAsset",
+        "Type": "class ReviveEffectsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x300"
+      },
+      {
+        "Name": "pad0x18_AUAD2[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x308"
+      }
+    ]
+  },
+  "ReviveableRepresentationInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ReviveConditionalStatTrigger": {
+    "Super": "ConditionalStatsTriggerType",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RevivePlayerActionStateId": {
+    "Super": "ActionStateId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "RevivableStatus": {
+    "Super": "StatusBase",
+    "FullSize": "0x30",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "DeathSelfInteractionComponent": {
+    "Super": "InteractableComponent",
+    "FullSize": "0x190",
+    "InheritedSize": "0x140",
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x8_H9FU1[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x140"
+      },
+      {
+        "Name": "HasGivenUp",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x148"
+      },
+      {
+        "Name": "pad0x47_R2Q36[0x47]",
+        "Type": "char",
+        "Size": "0x47",
+        "Offset": "0x149"
+      }
+    ]
+  },
   "ReviveEffectsDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0xd0",
@@ -157,37 +381,10 @@
       }
     ]
   },
-  "ReviveAudioComponent": {
-    "Super": "WwiseEmitterComponent",
-    "FullSize": "0x320",
-    "InheritedSize": "0x300",
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "ReviveEffectsDataAsset",
-        "Type": "class ReviveEffectsDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x300"
-      },
-      {
-        "Name": "pad0x18_CKJN5[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x308"
-      }
-    ]
-  },
-  "ReviveableCharacterInterface": {
-    "Super": "Interface",
+  "PostReviveLocomotionActionStateId": {
+    "Super": "ActionStateId",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ReviveConditionalStatTrigger": {
-    "Super": "ConditionalStatsTriggerType",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
     "ClassSize": "0x0",
     "Attributes": []
   },
@@ -198,7 +395,7 @@
     "ClassSize": "0x1a0",
     "Attributes": [
       {
-        "Name": "pad0x10_JHUX4[0x10]",
+        "Name": "pad0x10_HF1Q2[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x140"
@@ -228,7 +425,7 @@
         "Offset": "0x161"
       },
       {
-        "Name": "pad0x6_5U0J8[0x6]",
+        "Name": "pad0x6_NOESU[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x162"
@@ -240,7 +437,7 @@
         "Offset": "0x168"
       },
       {
-        "Name": "pad0xc_J6501[0xc]",
+        "Name": "pad0xc_TC6KV[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x170"
@@ -252,7 +449,7 @@
         "Offset": "0x17c"
       },
       {
-        "Name": "pad0xd3_FBFGB[0xd3]",
+        "Name": "pad0xd3_00LTI[0xd3]",
         "Type": "char",
         "Size": "0xd3",
         "Offset": "0x17d"
@@ -264,188 +461,33 @@
         "Offset": "0x250"
       },
       {
-        "Name": "pad0x70_UZIE6[0x70]",
+        "Name": "pad0x70_8C7VY[0x70]",
         "Type": "char",
         "Size": "0x70",
         "Offset": "0x270"
       }
     ]
   },
-  "PostReviveLocomotionActionStateId": {
+  "RevivableRepresentationActor": {
+    "Super": "Actor",
+    "FullSize": "0x460",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0xc0",
+    "Attributes": [
+      {
+        "Name": "pad0xc0_IQU00[0xc0]",
+        "Type": "char",
+        "Size": "0xc0",
+        "Offset": "0x3a0"
+      }
+    ]
+  },
+  "RevivedActionStateId": {
     "Super": "ActionStateId",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
-  },
-  "ReviveableActionStateId": {
-    "Super": "ActionStateId",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ToggleRevivalOnDeathInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RevivableStatus": {
-    "Super": "StatusBase",
-    "FullSize": "0x30",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RevivableAIComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x220",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x168",
-    "Attributes": [
-      {
-        "Name": "pad0x18_3W4HX[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "RevivableOnDeathFromTheStart",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xd0"
-      },
-      {
-        "Name": "RevivableOnDeath",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0xd1"
-      },
-      {
-        "Name": "pad0x6_85H57[0x6]",
-        "Type": "char",
-        "Size": "0x6",
-        "Offset": "0xd2"
-      },
-      {
-        "Name": "CannotReviveAIBecauseDiffrentCrewDisplayText",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0xd8"
-      },
-      {
-        "Name": "StartRevivingInputId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x110"
-      },
-      {
-        "Name": "HoldToReviveInputId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x118"
-      },
-      {
-        "Name": "EmoteIdToPlayAfterSuccessfulRevive",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x120"
-      },
-      {
-        "Name": "ReviveState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x128"
-      },
-      {
-        "Name": "ReviveWindowIsOpen",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x129"
-      },
-      {
-        "Name": "OnlyCrewCanReviveFromTheStart",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x12a"
-      },
-      {
-        "Name": "OnlyCrewCanRevive",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x12b"
-      },
-      {
-        "Name": "pad0x54_6HR68[0x54]",
-        "Type": "char",
-        "Size": "0x54",
-        "Offset": "0x12c"
-      },
-      {
-        "Name": "ReviveTime",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x180"
-      },
-      {
-        "Name": "pad0x4_S0XT2[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x184"
-      },
-      {
-        "Name": "ReviveableRepresentationClass",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x188"
-      },
-      {
-        "Name": "RevivableStatus",
-        "Type": "struct Status",
-        "Size": "0x20",
-        "Offset": "0x190"
-      },
-      {
-        "Name": "ReviveableRepresentationActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0x1b0"
-      },
-      {
-        "Name": "pad0x68_I7LHU[0x68]",
-        "Type": "char",
-        "Size": "0x68",
-        "Offset": "0x1b8"
-      }
-    ]
-  },
-  "DeathSelfInteractionComponent": {
-    "Super": "InteractableComponent",
-    "FullSize": "0x190",
-    "InheritedSize": "0x140",
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "pad0x8_PEU72[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x140"
-      },
-      {
-        "Name": "HasGivenUp",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x148"
-      },
-      {
-        "Name": "pad0x47_YPUAY[0x47]",
-        "Type": "char",
-        "Size": "0x47",
-        "Offset": "0x149"
-      }
-    ]
   },
   "ReviveDebugComponent": {
     "Super": "ActorComponent",
@@ -454,38 +496,10 @@
     "ClassSize": "0x98",
     "Attributes": [
       {
-        "Name": "pad0x98_5NDKS[0x98]",
+        "Name": "pad0x98_GB3CD[0x98]",
         "Type": "char",
         "Size": "0x98",
         "Offset": "0xb8"
-      }
-    ]
-  },
-  "ReviveInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ReviveableRepresentationInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RevivableRepresentationActor": {
-    "Super": "Actor",
-    "FullSize": "0x468",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0xc8",
-    "Attributes": [
-      {
-        "Name": "pad0xc8_Q38X5[0xc8]",
-        "Type": "char",
-        "Size": "0xc8",
-        "Offset": "0x3a0"
       }
     ]
   },
@@ -514,7 +528,7 @@
         "Offset": "0x4c"
       },
       {
-        "Name": "pad0x3_VZUGQ[0x3]",
+        "Name": "pad0x3_E70K1[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x4d"
@@ -562,172 +576,158 @@
         "Offset": "0x80"
       },
       {
-        "Name": "pad0x4_OGFDD[0x4]",
+        "Name": "pad0x4_JLEPY[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x84"
       }
     ]
   },
-  "RevivePlayerActionStateId": {
-    "Super": "ActionStateId",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "RevivedActionStateId": {
-    "Super": "ActionStateId",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "ReviveGhost": {
     "Super": "RevivableRepresentationActor",
-    "FullSize": "0x600",
-    "InheritedSize": "0x468",
+    "FullSize": "0x5f8",
+    "InheritedSize": "0x460",
     "ClassSize": "0x198",
     "Attributes": [
       {
         "Name": "CorpseMaterials",
         "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
-        "Offset": "0x468"
+        "Offset": "0x460"
       },
       {
         "Name": "Root",
         "Type": "class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x478"
+        "Offset": "0x470"
       },
       {
         "Name": "MeshComponent",
         "Type": "class SkeletalMeshComponent*",
         "Size": "0x8",
-        "Offset": "0x480"
+        "Offset": "0x478"
       },
       {
         "Name": "AstralCordContainer",
         "Type": "class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x488"
+        "Offset": "0x480"
       },
       {
         "Name": "AnimationDataStoreComponent",
         "Type": "class AnimationDataStoreComponent*",
         "Size": "0x8",
-        "Offset": "0x490"
+        "Offset": "0x488"
       },
       {
         "Name": "PostProcessComponent",
         "Type": "class PostProcessComponent*",
         "Size": "0x8",
-        "Offset": "0x498"
+        "Offset": "0x490"
       },
       {
         "Name": "DitherComponent",
         "Type": "class DitherComponent*",
         "Size": "0x8",
-        "Offset": "0x4a0"
+        "Offset": "0x498"
       },
       {
         "Name": "AudioComponent",
         "Type": "class ReviveAudioComponent*",
         "Size": "0x8",
-        "Offset": "0x4a8"
+        "Offset": "0x4a0"
       },
       {
-        "Name": "pad0x8_I0HDK[0x8]",
+        "Name": "pad0x8_EIS0Z[0x8]",
         "Type": "char",
         "Size": "0x8",
-        "Offset": "0x4b0"
+        "Offset": "0x4a8"
       },
       {
         "Name": "RevivableOwnerNetRole",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x4b8"
+        "Offset": "0x4b0"
       },
       {
-        "Name": "pad0x7_XKQFF[0x7]",
+        "Name": "pad0x7_2R8ON[0x7]",
         "Type": "char",
         "Size": "0x7",
-        "Offset": "0x4b9"
+        "Offset": "0x4b1"
       },
       {
         "Name": "ReviveGhostDataAsset",
         "Type": "class GhostDataAsset*",
         "Size": "0x8",
-        "Offset": "0x4c0"
+        "Offset": "0x4b8"
       },
       {
         "Name": "ReviveEffectsDataAsset",
         "Type": "class ReviveEffectsDataAsset*",
         "Size": "0x8",
-        "Offset": "0x4c8"
+        "Offset": "0x4c0"
       },
       {
         "Name": "ReviveEffectsValues",
         "Type": "struct ReviveEffectsValues",
         "Size": "0x20",
-        "Offset": "0x4d0"
+        "Offset": "0x4c8"
       },
       {
         "Name": "ReviveSettings",
         "Type": "struct ModeSpecificReviveSettings",
         "Size": "0x38",
-        "Offset": "0x4f0"
+        "Offset": "0x4e8"
       },
       {
-        "Name": "pad0x8c_GSB6W[0x8c]",
+        "Name": "pad0x8c_7IM5D[0x8c]",
         "Type": "char",
         "Size": "0x8c",
-        "Offset": "0x528"
+        "Offset": "0x520"
       },
       {
         "Name": "AstralCordDynamicMaterials",
         "Type": "TArray<class MaterialInstanceDynamic*>",
         "Size": "0x10",
-        "Offset": "0x5e0"
+        "Offset": "0x5d8"
       },
       {
         "Name": "GhostPlayModeSpecificParameters",
         "Type": "struct GhostPlayModeParameters",
         "Size": "0xc",
-        "Offset": "0x5f0"
+        "Offset": "0x5e8"
       },
       {
-        "Name": "pad0x4_X3JDP[0x4]",
+        "Name": "pad0x4_QT7WT[0x4]",
         "Type": "char",
         "Size": "0x4",
-        "Offset": "0x5fc"
+        "Offset": "0x5f4"
       }
     ]
   },
   "SFXRevivalRepresentationActor": {
     "Super": "RevivableRepresentationActor",
-    "FullSize": "0x480",
-    "InheritedSize": "0x468",
+    "FullSize": "0x478",
+    "InheritedSize": "0x460",
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "Root",
         "Type": "class SceneComponent*",
         "Size": "0x8",
-        "Offset": "0x468"
+        "Offset": "0x460"
       },
       {
         "Name": "AudioComponent",
         "Type": "class ReviveAudioComponent*",
         "Size": "0x8",
-        "Offset": "0x470"
+        "Offset": "0x468"
       },
       {
-        "Name": "pad0x8_EQQYN[0x8]",
+        "Name": "pad0x8_GTUKN[0x8]",
         "Type": "char",
         "Size": "0x8",
-        "Offset": "0x478"
+        "Offset": "0x470"
       }
     ]
   },

@@ -11,6 +11,14 @@ public:
 };
 
 
+// Size 0x1
+struct GameEventOnDemandCrewScuttledTelemetryEvent
+{
+public:
+	char                                                         pad0x1_JIL30[0x1];                                 // 0x0(0x1)
+};
+
+
 // Size 0x30
 struct GameEventAvailabilityData
 {
@@ -18,17 +26,9 @@ public:
 	struct FString                                               EventName;                                         // 0x0(0x10)
 	char                                                         EventCategory;                                     // 0x10(0x1)
 	char                                                         AvailabilityState;                                 // 0x11(0x1)
-	char                                                         pad0x6_RH6VA[0x6];                                 // 0x12(0x6)
+	char                                                         pad0x6_60WU9[0x6];                                 // 0x12(0x6)
 	class UClass*                                                ShipSizeLimit;                                     // 0x18(0x8)
 	TArray<struct Guid>                                          ParticipatingCrewIds;                              // 0x20(0x10)
-};
-
-
-// Size 0x10
-struct GameEventOnDemandDeactivated
-{
-public:
-	TArray<struct Guid>                                          OnDemandCrewIds;                                   // 0x0(0x10)
 };
 
 
@@ -37,6 +37,23 @@ struct GameEventOnDemandCrewSentToSinkingTunnel
 {
 public:
 	struct Guid                                                  CrewId;                                            // 0x0(0x10)
+};
+
+
+// Size 0x4
+struct GameEventOnDemandActivatedTelemetryEvent
+{
+public:
+	int                                                          NumCrewsOnDemandLimit;                             // 0x0(0x4)
+};
+
+
+// Size 0x20
+struct GameEventOnDemandBaseTelemetryFragment
+{
+public:
+	struct FString                                               GameEventType;                                     // 0x0(0x10)
+	struct Guid                                                  GameEventOnDemandId;                               // 0x10(0x10)
 };
 
 
@@ -54,15 +71,7 @@ public:
 struct GameEventOnDemandCrewSinkingTelemetryEvent
 {
 public:
-	char                                                         pad0x1_E3X13[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x4
-struct GameEventOnDemandActivatedTelemetryEvent
-{
-public:
-	int                                                          NumCrewsOnDemandLimit;                             // 0x0(0x4)
+	char                                                         pad0x1_HUM6Z[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -75,10 +84,18 @@ public:
 
 
 // Size 0x1
-struct GameEventOnDemandCrewScuttledTelemetryEvent
+struct GameEventOnDemandCrewCancelledVoyageTelemetryEvent
 {
 public:
-	char                                                         pad0x1_827D6[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_1GX7R[0x1];                                 // 0x0(0x1)
+};
+
+
+// Size 0x10
+struct GameEventOnDemandFailedTelemetryEvent
+{
+public:
+	TArray<struct Guid>                                          ParticipatingOnDemandCrews;                        // 0x0(0x10)
 };
 
 
@@ -91,20 +108,11 @@ public:
 };
 
 
-// Size 0x20
-struct GameEventOnDemandBaseTelemetryFragment
+// Size 0x10
+struct GameEventOnDemandDeactivated
 {
 public:
-	struct FString                                               GameEventType;                                     // 0x0(0x10)
-	struct Guid                                                  GameEventOnDemandId;                               // 0x10(0x10)
-};
-
-
-// Size 0x1
-struct GameEventOnDemandCrewCancelledVoyageTelemetryEvent
-{
-public:
-	char                                                         pad0x1_GJM1L[0x1];                                 // 0x0(0x1)
+	TArray<struct Guid>                                          OnDemandCrewIds;                                   // 0x0(0x10)
 };
 
 
@@ -115,14 +123,6 @@ public:
 	struct FString                                               Company;                                           // 0x0(0x10)
 	TArray<struct Guid>                                          ParticipatingOnDemandCrews;                        // 0x10(0x10)
 	TArray<struct Guid>                                          ParticipatingCrews;                                // 0x20(0x10)
-};
-
-
-// Size 0x10
-struct GameEventOnDemandFailedTelemetryEvent
-{
-public:
-	TArray<struct Guid>                                          ParticipatingOnDemandCrews;                        // 0x0(0x10)
 };
 
 

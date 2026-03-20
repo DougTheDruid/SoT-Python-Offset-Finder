@@ -6,11 +6,21 @@
 #include "PrioritisedPrompts_Structs.h"
 
 
-// Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
-class PromptsLocalService: public Object
+// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
+class PrioritisedPromptsManager: public Object
 {
 public:
-	char                                                         pad0x70_0L52Y[0x70];                               // 0x28(0x70)
+	char                                                         pad0x8_GYUPL[0x8];                                 // 0x28(0x8)
+	TArray<struct PrioritisedPromptWithHandle>                   AllPrompts;                                        // 0x30(0x10)
+	class PlayerController*                                      PlayerController;                                  // 0x40(0x8)
+	char                                                         pad0x30_XXNHK[0x30];                               // 0x48(0x30)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class PrioritisedPromptsManagerInterface: public Interface
+{
+public:
 };
 
 
@@ -22,30 +32,11 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class PrioritisedPromptsManagerInterface: public Interface
-{
-public:
-};
-
-
-// Size 0xf0 (Full Size[0x118] - InheritedSize[0x28]
-class BasePromptCoordinator: public Object
-{
-public:
-	class AthenaPlayerController*                                PlayerController;                                  // 0x28(0x8)
-	char                                                         pad0x10_L5IKN[0x10];                               // 0x30(0x10)
-	class PrioritisedPromptsManager*                             PrioritisedPromptsManager;                         // 0x40(0x8)
-	class Character*                                             CharacterWithRegisteredEvents;                     // 0x48(0x8)
-	char                                                         pad0xc8_1LVPT[0xc8];                               // 0x50(0xc8)
-};
-
-
 // Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
 class GetPromptsLocalService: public BlueprintAsyncActionBase
 {
 public:
-	char                                                         pad0x10_MH2NR[0x10];                               // 0x28(0x10)
+	char                                                         pad0x10_761ZX[0x10];                               // 0x28(0x10)
 	class Object*                                                WorldContextObject;                                // 0x38(0x8)
 };
 
@@ -57,14 +48,23 @@ public:
 };
 
 
-// Size 0x50 (Full Size[0x78] - InheritedSize[0x28]
-class PrioritisedPromptsManager: public Object
+// Size 0xf0 (Full Size[0x118] - InheritedSize[0x28]
+class BasePromptCoordinator: public Object
 {
 public:
-	char                                                         pad0x8_63I8M[0x8];                                 // 0x28(0x8)
-	TArray<struct PrioritisedPromptWithHandle>                   AllPrompts;                                        // 0x30(0x10)
-	class PlayerController*                                      PlayerController;                                  // 0x40(0x8)
-	char                                                         pad0x30_DE1YQ[0x30];                               // 0x48(0x30)
+	class AthenaPlayerController*                                PlayerController;                                  // 0x28(0x8)
+	char                                                         pad0x10_2HVFK[0x10];                               // 0x30(0x10)
+	class PrioritisedPromptsManager*                             PrioritisedPromptsManager;                         // 0x40(0x8)
+	class Character*                                             CharacterWithRegisteredEvents;                     // 0x48(0x8)
+	char                                                         pad0xc8_EQSHI[0xc8];                               // 0x50(0xc8)
+};
+
+
+// Size 0x70 (Full Size[0x98] - InheritedSize[0x28]
+class PromptsLocalService: public Object
+{
+public:
+	char                                                         pad0x70_RE9M8[0x70];                               // 0x28(0x70)
 };
 
 

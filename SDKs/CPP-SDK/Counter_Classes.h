@@ -13,25 +13,17 @@ public:
 	struct FName                                                 ScalarParameterNameToOverride;                     // 0xb8(0x8)
 	class UClass*                                                CountType;                                         // 0xc0(0x8)
 	float                                                        MaximumCountForDynamicMaterialParameterAlphaValue; // 0xc8(0x4)
-	char                                                         pad0x4_D5Y4J[0x4];                                 // 0xcc(0x4)
+	char                                                         pad0x4_52J1M[0x4];                                 // 0xcc(0x4)
 	TArray<class MaterialInstanceDynamic*>                       OverridenMaterials;                                // 0xd0(0x10)
 };
 
 
-// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
-class IsCountAmountMetStatCondition: public TargetedStatCondition
+// Size 0x18 (Full Size[0xd0] - InheritedSize[0xb8]
+class CountHolderComponent: public ActorComponent
 {
 public:
-	int                                                          CountAmount;                                       // 0x30(0x4)
-	char                                                         pad0x4_J26DI[0x4];                                 // 0x34(0x4)
-	class UClass*                                                CountType;                                         // 0x38(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class CountPolicy: public Object
-{
-public:
+	char                                                         pad0x8_DRB8N[0x8];                                 // 0xb8(0x8)
+	TArray<struct CountHolder>                                   CountHolders;                                      // 0xc0(0x10)
 };
 
 
@@ -50,12 +42,20 @@ public:
 };
 
 
-// Size 0x18 (Full Size[0xd0] - InheritedSize[0xb8]
-class CountHolderComponent: public ActorComponent
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class CountPolicy: public Object
 {
 public:
-	char                                                         pad0x8_9J586[0x8];                                 // 0xb8(0x8)
-	TArray<struct CountHolder>                                   CountHolders;                                      // 0xc0(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x40] - InheritedSize[0x30]
+class IsCountAmountMetStatCondition: public TargetedStatCondition
+{
+public:
+	int                                                          CountAmount;                                       // 0x30(0x4)
+	char                                                         pad0x4_5Q3KZ[0x4];                                 // 0x34(0x4)
+	class UClass*                                                CountType;                                         // 0x38(0x8)
 };
 
 

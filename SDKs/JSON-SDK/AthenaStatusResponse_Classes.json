@@ -6,6 +6,20 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "StatusResponseSuspendStatus": {
+    "Super": "StatusResponse",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Status",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
   "StatusResponseApplyPersistentStatus": {
     "Super": "StatusResponse",
     "FullSize": "0x60",
@@ -25,10 +39,44 @@
         "Offset": "0x58"
       },
       {
-        "Name": "pad0x4_PC2EC[0x4]",
+        "Name": "pad0x4_B2DQZ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x5c"
+      }
+    ]
+  },
+  "StatusResponseSetScalarParamOnCharacter": {
+    "Super": "StatusResponse",
+    "FullSize": "0x48",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ParamsToChange",
+        "Type": "TArray<struct ScalarParamInfo>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "StatusResponseHealthRegenerationPoolChange": {
+    "Super": "StatusResponse",
+    "FullSize": "0x40",
+    "InheritedSize": "0x38",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "HealthPoolChangeIntensityMultiplier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x4_1TUO2[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
       }
     ]
   },
@@ -69,7 +117,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x3_9WXGT[0x3]",
+        "Name": "pad0x3_CMV80[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x51"
@@ -81,34 +129,14 @@
         "Offset": "0x54"
       },
       {
-        "Name": "pad0x20_IEIIZ[0x20]",
+        "Name": "pad0x20_ID2NR[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x58"
       }
     ]
   },
-  "StatusResponseHealthRegenerationPoolChange": {
-    "Super": "StatusResponse",
-    "FullSize": "0x40",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "HealthPoolChangeIntensityMultiplier",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x4_X3HZF[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      }
-    ]
-  },
-  "StatusResponseSuspendStatus": {
+  "StatusResponseCancelStatus": {
     "Super": "StatusResponse",
     "FullSize": "0x48",
     "InheritedSize": "0x38",
@@ -117,20 +145,6 @@
       {
         "Name": "Status",
         "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "StatusResponseSetScalarParamOnCharacter": {
-    "Super": "StatusResponse",
-    "FullSize": "0x48",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ParamsToChange",
-        "Type": "TArray<struct ScalarParamInfo>",
         "Size": "0x10",
         "Offset": "0x38"
       }
@@ -146,20 +160,6 @@
         "Name": "StatusToApply",
         "Type": "struct Status",
         "Size": "0x20",
-        "Offset": "0x38"
-      }
-    ]
-  },
-  "StatusResponseCancelStatus": {
-    "Super": "StatusResponse",
-    "FullSize": "0x48",
-    "InheritedSize": "0x38",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Status",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
         "Offset": "0x38"
       }
     ]

@@ -1,9 +1,55 @@
 {
+  "StructSerializerBooleanTestStruct": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "BoolFalse",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BoolTrue",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "pad0x2_BOGOF[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x2"
+      },
+      {
+        "Name": "pad0x4_K7A5U[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "StructSerializerObjectTestStruct": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Class",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ObjectPtr",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
   "StructSerializerNumericTestStruct": {
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x4_TIFK2[0x4]",
+        "Name": "pad0x4_NB8OD[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x0"
@@ -21,7 +67,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x1_J58BX[0x1]",
+        "Name": "pad0x1_ZZEZN[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x11"
@@ -33,7 +79,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_78NIY[0x4]",
+        "Name": "pad0x4_QWBYO[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x24"
@@ -103,7 +149,7 @@
         "Offset": "0x14"
       },
       {
-        "Name": "pad0x8_7C3RT[0x8]",
+        "Name": "pad0x8_JKIFA[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x18"
@@ -115,7 +161,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0xc_GJK8R[0xc]",
+        "Name": "pad0xc_MCVG6[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x24"
@@ -125,52 +171,6 @@
         "Type": "TArray<struct Vector>",
         "Size": "0x10",
         "Offset": "0x30"
-      }
-    ]
-  },
-  "StructSerializerObjectTestStruct": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Class",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ObjectPtr",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "StructSerializerBooleanTestStruct": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "BoolFalse",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "BoolTrue",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "pad0x2_JN5BP[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x2"
-      },
-      {
-        "Name": "pad0x4_J6007[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4"
       }
     ]
   },

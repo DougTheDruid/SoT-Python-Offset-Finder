@@ -1,64 +1,12 @@
 {
-  "EventFireballCannonHasStartedToCooldown": {
+  "EventFireballCannonIsReadyToFire": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_836HK[0x1]",
+        "Name": "pad0x1_JGLMG[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "EventFireballCannonFiringStateChanged": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "FireballCannonFiringState",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x7_YQ36B[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "FireballCannonObject",
-        "Type": "class Object*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "FireballCannonDynamicMaterialParameters": {
-    "ClassSize": "0x14",
-    "Attributes": [
-      {
-        "Name": "VectorMaterialParameterName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ReadyToFireValue",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "FiringValue",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "NoChargeValue",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
       }
     ]
   },
@@ -89,21 +37,73 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_CI0AV[0x1]",
+        "Name": "pad0x1_2DDOT[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
       }
     ]
   },
-  "EventFireballCannonIsReadyToFire": {
+  "EventFireballCannonFiringStateChanged": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "FireballCannonFiringState",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_HOS3Y[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "FireballCannonObject",
+        "Type": "class Object*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "EventFireballCannonHasStartedToCooldown": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_TWACK[0x1]",
+        "Name": "pad0x1_D3LOZ[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "FireballCannonDynamicMaterialParameters": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "VectorMaterialParameterName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ReadyToFireValue",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "FiringValue",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "NoChargeValue",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x10"
       }
     ]
   },

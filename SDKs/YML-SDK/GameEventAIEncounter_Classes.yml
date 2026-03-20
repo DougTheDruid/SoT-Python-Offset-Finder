@@ -6,44 +6,16 @@ EnvQueryContext_AllGameEventAIEncounterOccupiedLocations:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: EnvQueryContext
-GameEventAIEncounterDebugFunctionLibrary:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: BlueprintFunctionLibrary
-ReduceTrackedEncounterTaleService:
+GameEventAIEncounter:
   Attributes:
-  - Name: pad0x8_IB8IZ[0x8]
-    Offset: '0x60'
-    Size: '0x8'
-    Type: char
-  ClassSize: '0x8'
-  FullSize: '0x68'
-  InheritedSize: '0x60'
-  Super: TaleQuestService
-ReduceTrackedEncounterTaleServiceDesc:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: TaleQuestServiceDesc
-SPC_Activity_TrackedEncounters:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: SandboxPerformanceConstraintActivityType
-TrackedEncounter:
-  Attributes:
-  - Name: pad0x8_MUPHL[0x8]
+  - Name: pad0x8_MJLWS[0x8]
     Offset: '0x3a0'
     Size: '0x8'
     Type: char
   - Name: Params
     Offset: '0x3a8'
     Size: '0x8'
-    Type: class TrackedEncounterParams*
+    Type: class GameEventAIEncounterParams*
   - Name: Spawner
     Offset: '0x3b0'
     Size: '0x8'
@@ -76,7 +48,13 @@ TrackedEncounter:
   FullSize: '0x3e8'
   InheritedSize: '0x3a0'
   Super: Actor
-TrackedEncounterParams:
+GameEventAIEncounterDebugFunctionLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: BlueprintFunctionLibrary
+GameEventAIEncounterParams:
   Attributes:
   - Name: Spawner
     Offset: '0x48'
@@ -85,7 +63,7 @@ TrackedEncounterParams:
   - Name: WeightedIslandNameGroups
     Offset: '0x50'
     Size: '0x10'
-    Type: TArray<struct TrackedEncounterWeightedIslandNamesGroup>
+    Type: TArray<struct GameEventAIEncounterWeightedIslandNamesGroup>
   - Name: IslandReselectionCooldownTime
     Offset: '0x60'
     Size: '0x4'
@@ -94,7 +72,7 @@ TrackedEncounterParams:
     Offset: '0x64'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x4_1OLXO[0x4]
+  - Name: pad0x4_JY2TH[0x4]
     Offset: '0x6c'
     Size: '0x4'
     Type: char
@@ -110,7 +88,7 @@ TrackedEncounterParams:
     Offset: '0xa0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_ZU3FR[0x4]
+  - Name: pad0x4_XTZ2N[0x4]
     Offset: '0xa4'
     Size: '0x4'
     Type: char
@@ -118,7 +96,7 @@ TrackedEncounterParams:
     Offset: '0xc8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_2Y3ZR[0x4]
+  - Name: pad0x4_NLWPW[0x4]
     Offset: '0xcc'
     Size: '0x4'
     Type: char
@@ -194,7 +172,7 @@ TrackedEncounterParams:
     Offset: '0x158'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_6XEW7[0x4]
+  - Name: pad0x4_KA6S3[0x4]
     Offset: '0x15c'
     Size: '0x4'
     Type: char
@@ -202,17 +180,17 @@ TrackedEncounterParams:
   FullSize: '0x160'
   InheritedSize: '0x48'
   Super: GameEventParams
-TrackedEncountersEventService:
+GameEventAIEncounterService:
   Attributes:
-  - Name: pad0x10_2RBE5[0x10]
+  - Name: pad0x10_UV6UI[0x10]
     Offset: '0x3a0'
     Size: '0x10'
     Type: char
-  - Name: TrackedEncounterServiceParams
+  - Name: EncounterServiceParams
     Offset: '0x3b0'
     Size: '0x8'
-    Type: class TrackedEncountersEventServiceParams*
-  - Name: pad0x198_FSP65[0x198]
+    Type: class GameEventAIEncounterServiceParams*
+  - Name: pad0x198_Q3Y2G[0x198]
     Offset: '0x3b8'
     Size: '0x198'
     Type: char
@@ -220,15 +198,15 @@ TrackedEncountersEventService:
   FullSize: '0x550'
   InheritedSize: '0x3a0'
   Super: Actor
-TrackedEncountersEventServiceInterface:
+GameEventAIEncounterServiceInterface:
   Attributes: []
   ClassSize: '0x0'
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
-TrackedEncountersEventServiceParams:
+GameEventAIEncounterServiceParams:
   Attributes:
-  - Name: TrackedEncounterClassId
+  - Name: EncounterClassId
     Offset: '0x28'
     Size: '0x8'
     Type: class UClass*
@@ -236,15 +214,15 @@ TrackedEncountersEventServiceParams:
     Offset: '0x30'
     Size: '0x8'
     Type: class EnvQuery*
-  - Name: TrackedEncounterParams
+  - Name: EncounterParams
     Offset: '0x38'
     Size: '0x8'
-    Type: class TrackedEncounterParams*
+    Type: class GameEventAIEncounterParams*
   - Name: MaxNumberOfEvents
     Offset: '0x40'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_492DK[0x3]
+  - Name: pad0x3_EEIT2[0x3]
     Offset: '0x41'
     Size: '0x3'
     Type: char
@@ -256,3 +234,25 @@ TrackedEncountersEventServiceParams:
   FullSize: '0x48'
   InheritedSize: '0x28'
   Super: DataAsset
+ReduceGameEventAIEncounterTaleService:
+  Attributes:
+  - Name: pad0x8_JZSB3[0x8]
+    Offset: '0x60'
+    Size: '0x8'
+    Type: char
+  ClassSize: '0x8'
+  FullSize: '0x68'
+  InheritedSize: '0x60'
+  Super: TaleQuestService
+ReduceGameEventAIEncounterTaleServiceDesc:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: TaleQuestServiceDesc
+SPC_Activity_GameEventAIEncounter:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: SandboxPerformanceConstraintActivityType

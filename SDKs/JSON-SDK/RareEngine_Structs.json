@@ -15,7 +15,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x7_CZZZK[0x7]",
+        "Name": "pad0x7_STLG1[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x9"
@@ -33,21 +33,39 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_VAQDE[0x4]",
+        "Name": "pad0x4_OSUJ9[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x24"
       }
     ]
   },
-  "StaticMeshComponentList": {
-    "ClassSize": "0x10",
+  "MemoryVisualiserStat": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "Components",
-        "Type": "TArray<class StaticMeshComponent*>",
-        "Size": "0x10",
+        "Name": "StatName",
+        "Type": "struct FName",
+        "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "DisplayName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "MemoryUsageMB",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x4_AMBHH[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
       }
     ]
   },
@@ -181,32 +199,14 @@
       }
     ]
   },
-  "MemoryVisualiserStat": {
-    "ClassSize": "0x20",
+  "StaticMeshComponentList": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "StatName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DisplayName",
-        "Type": "struct FString",
+        "Name": "Components",
+        "Type": "TArray<class StaticMeshComponent*>",
         "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "MemoryUsageMB",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x4_0DXC2[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x1c"
+        "Offset": "0x0"
       }
     ]
   },
@@ -238,7 +238,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x3_3YUL3[0x3]",
+        "Name": "pad0x3_EZB34[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x31"
@@ -292,7 +292,7 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x4_YK0U6[0x4]",
+        "Name": "pad0x4_NDHQN[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x54"

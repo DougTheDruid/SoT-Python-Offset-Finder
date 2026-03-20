@@ -12,7 +12,7 @@ EditableGameplayTagQuery:
     Offset: '0x28'
     Size: '0x10'
     Type: struct FString
-  - Name: pad0x10_DKJY2[0x10]
+  - Name: pad0x10_W354J[0x10]
     Offset: '0x38'
     Size: '0x10'
     Type: char
@@ -48,10 +48,10 @@ EditableGameplayTagQueryExpression_AllTagsMatch:
   Attributes:
   - Name: Tags
     Offset: '0x28'
-    Size: '0x28'
+    Size: '0x20'
     Type: struct GameplayTagContainer
-  ClassSize: '0x28'
-  FullSize: '0x50'
+  ClassSize: '0x20'
+  FullSize: '0x48'
   InheritedSize: '0x28'
   Super: EditableGameplayTagQueryExpression
 EditableGameplayTagQueryExpression_AnyExprMatch:
@@ -68,10 +68,10 @@ EditableGameplayTagQueryExpression_AnyTagsMatch:
   Attributes:
   - Name: Tags
     Offset: '0x28'
-    Size: '0x28'
+    Size: '0x20'
     Type: struct GameplayTagContainer
-  ClassSize: '0x28'
-  FullSize: '0x50'
+  ClassSize: '0x20'
+  FullSize: '0x48'
   InheritedSize: '0x28'
   Super: EditableGameplayTagQueryExpression
 EditableGameplayTagQueryExpression_NoExprMatch:
@@ -88,10 +88,10 @@ EditableGameplayTagQueryExpression_NoTagsMatch:
   Attributes:
   - Name: Tags
     Offset: '0x28'
-    Size: '0x28'
+    Size: '0x20'
     Type: struct GameplayTagContainer
-  ClassSize: '0x28'
-  FullSize: '0x50'
+  ClassSize: '0x20'
+  FullSize: '0x48'
   InheritedSize: '0x28'
   Super: EditableGameplayTagQueryExpression
 GameplayTagAssetInterface:
@@ -100,31 +100,121 @@ GameplayTagAssetInterface:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Interface
+GameplayTagsDeveloperSettings:
+  Attributes:
+  - Name: DeveloperConfigName
+    Offset: '0x28'
+    Size: '0x10'
+    Type: struct FString
+  ClassSize: '0x10'
+  FullSize: '0x38'
+  InheritedSize: '0x28'
+  Super: Object
+GameplayTagsList:
+  Attributes:
+  - Name: ConfigFileName
+    Offset: '0x28'
+    Size: '0x10'
+    Type: struct FString
+  - Name: GameplayTagList
+    Offset: '0x38'
+    Size: '0x10'
+    Type: TArray<struct GameplayTagTableRow>
+  ClassSize: '0x20'
+  FullSize: '0x48'
+  InheritedSize: '0x28'
+  Super: Object
 GameplayTagsManager:
   Attributes:
-  - Name: pad0x118_PUWKL[0x118]
+  - Name: pad0xa0_GHG97[0xa0]
     Offset: '0x28'
-    Size: '0x118'
+    Size: '0xa0'
+    Type: char
+  - Name: TagSources
+    Offset: '0xc8'
+    Size: '0x10'
+    Type: TArray<struct GameplayTagSource>
+  - Name: pad0x80_JCK6R[0x80]
+    Offset: '0xd8'
+    Size: '0x80'
     Type: char
   - Name: GameplayTagTables
-    Offset: '0x140'
+    Offset: '0x158'
     Size: '0x10'
     Type: TArray<class DataTable*>
-  - Name: pad0x20_WENRL[0x20]
-    Offset: '0x150'
-    Size: '0x20'
+  - Name: pad0x50_XNV3F[0x50]
+    Offset: '0x168'
+    Size: '0x50'
     Type: char
-  ClassSize: '0x148'
-  FullSize: '0x170'
+  ClassSize: '0x190'
+  FullSize: '0x1b8'
   InheritedSize: '0x28'
   Super: Object
 GameplayTagsSettings:
   Attributes:
-  - Name: GameplayTags
+  - Name: ImportTagsFromConfig
+    Offset: '0x48'
+    Size: '0x1'
+    Type: bool
+  - Name: WarnOnInvalidTags
+    Offset: '0x49'
+    Size: '0x1'
+    Type: bool
+  - Name: FastReplication
+    Offset: '0x4a'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x5_D14SK[0x5]
+    Offset: '0x4b'
+    Size: '0x5'
+    Type: char
+  - Name: InvalidTagCharacters
+    Offset: '0x50'
+    Size: '0x10'
+    Type: struct FString
+  - Name: CategoryRemapping
+    Offset: '0x60'
+    Size: '0x10'
+    Type: TArray<struct GameplayTagCategoryRemap>
+  - Name: GameplayTagTableList
+    Offset: '0x70'
+    Size: '0x10'
+    Type: TArray<struct StringAssetReference>
+  - Name: GameplayTagRedirects
+    Offset: '0x80'
+    Size: '0x10'
+    Type: TArray<struct GameplayTagRedirect>
+  - Name: CommonlyReplicatedTags
+    Offset: '0x90'
+    Size: '0x10'
+    Type: TArray<struct Name>
+  - Name: NumBitsForContainerSize
+    Offset: '0xa0'
+    Size: '0x4'
+    Type: int
+  - Name: NetIndexFirstBitSegment
+    Offset: '0xa4'
+    Size: '0x4'
+    Type: int
+  - Name: RestrictedConfigFiles
+    Offset: '0xa8'
+    Size: '0x10'
+    Type: TArray<struct RestrictedConfigInfo>
+  ClassSize: '0x70'
+  FullSize: '0xb8'
+  InheritedSize: '0x48'
+  Super: GameplayTagsList
+RestrictedGameplayTagsList:
+  Attributes:
+  - Name: ConfigFileName
     Offset: '0x28'
     Size: '0x10'
-    Type: TArray<String>
-  ClassSize: '0x10'
-  FullSize: '0x38'
+    Type: struct FString
+  - Name: RestrictedGameplayTagList
+    Offset: '0x38'
+    Size: '0x10'
+    Type: TArray<struct RestrictedGameplayTagTableRow>
+  ClassSize: '0x20'
+  FullSize: '0x48'
   InheritedSize: '0x28'
   Super: Object

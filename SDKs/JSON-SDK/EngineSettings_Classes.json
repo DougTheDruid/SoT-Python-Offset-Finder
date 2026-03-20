@@ -1,36 +1,4 @@
 {
-  "GameSessionSettings": {
-    "Super": "Object",
-    "FullSize": "0x38",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MaxSpectators",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "MaxPlayers",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "bRequiresPushToTalk",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x7_Y55A8[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x31"
-      }
-    ]
-  },
   "GeneralEngineSettings": {
     "Super": "Object",
     "FullSize": "0x28",
@@ -75,7 +43,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x3_5Q4HB[0x3]",
+        "Name": "pad0x3_7K8L1[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x39"
@@ -117,42 +85,10 @@
         "Offset": "0x50"
       },
       {
-        "Name": "pad0x4_Z2NI6[0x4]",
+        "Name": "pad0x4_34GCS[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x54"
-      }
-    ]
-  },
-  "ConsoleSettings": {
-    "Super": "Object",
-    "FullSize": "0x50",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "MaxScrollbackSize",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x4_SVYMB[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x2c"
-      },
-      {
-        "Name": "ManualAutoCompleteList",
-        "Type": "TArray<struct AutoCompleteCommand>",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "AutoCompleteMapPaths",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x40"
       }
     ]
   },
@@ -199,7 +135,7 @@
         "Offset": "0x5a"
       },
       {
-        "Name": "pad0x5_TKUPC[0x5]",
+        "Name": "pad0x5_2AR0M[0x5]",
         "Type": "char",
         "Size": "0x5",
         "Offset": "0x5b"
@@ -236,6 +172,38 @@
       }
     ]
   },
+  "ConsoleSettings": {
+    "Super": "Object",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "MaxScrollbackSize",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_ZE3ZX[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "ManualAutoCompleteList",
+        "Type": "TArray<struct AutoCompleteCommand>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "AutoCompleteMapPaths",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x40"
+      }
+    ]
+  },
   "HudSettings": {
     "Super": "Object",
     "FullSize": "0x40",
@@ -249,7 +217,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x7_JIQT9[0x7]",
+        "Name": "pad0x7_CGXPN[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x29"
@@ -339,6 +307,38 @@
         "Type": "struct FText",
         "Size": "0x38",
         "Offset": "0xd8"
+      }
+    ]
+  },
+  "GameSessionSettings": {
+    "Super": "Object",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MaxSpectators",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "MaxPlayers",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x2c"
+      },
+      {
+        "Name": "bRequiresPushToTalk",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x7_E6ONS[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x31"
       }
     ]
   },

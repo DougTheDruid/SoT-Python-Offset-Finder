@@ -1,4 +1,11 @@
 {
+  "ActorSequencePlayer": {
+    "Super": "MovieSceneSequencePlayer",
+    "FullSize": "0x608",
+    "InheritedSize": "0x608",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "ActorSequence": {
     "Super": "MovieSceneSequence",
     "FullSize": "0x2d0",
@@ -18,13 +25,6 @@
         "Offset": "0x2b0"
       }
     ]
-  },
-  "ActorSequencePlayer": {
-    "Super": "MovieSceneSequencePlayer",
-    "FullSize": "0x608",
-    "InheritedSize": "0x608",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "ActorSequenceComponent": {
     "Super": "ActorComponent",
@@ -57,7 +57,7 @@
         "Offset": "0xf0"
       },
       {
-        "Name": "pad0x7_F95T1[0x7]",
+        "Name": "pad0x7_AJ43O[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0xf1"

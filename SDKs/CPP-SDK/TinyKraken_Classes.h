@@ -6,41 +6,6 @@
 #include "TinyKraken_Structs.h"
 
 
-// Size 0x188 (Full Size[0x528] - InheritedSize[0x3a0]
-class TinyKrakenHead: public Actor
-{
-public:
-	char                                                         pad0x30_NKICZ[0x30];                               // 0x3a0(0x30)
-	class SceneComponent*                                        Root;                                              // 0x3d0(0x8)
-	class SkeletalMeshComponent*                                 SkeletalMesh;                                      // 0x3d8(0x8)
-	class HealthComponent*                                       HealthComponent;                                   // 0x3e0(0x8)
-	class ActorDamageableComponent*                              DamageableComponent;                               // 0x3e8(0x8)
-	class SphereComponent*                                       SphereComponent;                                   // 0x3f0(0x8)
-	class TinyKrakenExplosionComponent*                          TinyKrakenExplosionComponent;                      // 0x3f8(0x8)
-	class KrakenHeadAnimationInstance*                           HeadAnimInstance;                                  // 0x400(0x8)
-	char                                                         pad0x120_IHZ4H[0x120];                             // 0x408(0x120)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class BattlePhaseProgressionTrackerBase: public Object
-{
-public:
-	bool                                                         ShouldPhaseTimeout;                                // 0x28(0x1)
-	char                                                         pad0x3_DAYTB[0x3];                                 // 0x29(0x3)
-	float                                                        PhaseTimeLimit;                                    // 0x2c(0x4)
-	bool                                                         ResetProgressOnTimeLimitReached;                   // 0x30(0x1)
-	char                                                         pad0x7_A7RLS[0x7];                                 // 0x31(0x7)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class SandboxPerformanceConstraintActivity_TinyKraken: public SandboxPerformanceConstraintActivityType
-{
-public:
-};
-
-
 // Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
 class TinyKrakenEventServiceParams: public DataAsset
 {
@@ -54,51 +19,96 @@ public:
 };
 
 
-// Size 0x108 (Full Size[0x130] - InheritedSize[0x28]
-class TinyKrakenShipBitingBehaviourParamsDataAsset: public DataAsset
-{
-public:
-	struct TinyKrakenShipBitingBehaviourParams                   BitingParams;                                      // 0x28(0xe8)
-	struct KrakenShipWrappingBehaviourParamsCollection           DraggingParams;                                    // 0x110(0x10)
-	struct KrakenShipWrappingBehaviourParamsCollection           WrappingParams;                                    // 0x120(0x10)
-};
-
-
-// Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
-class TinyKrakenRoarShockwaveBehaviourParamsDataAsset: public DataAsset
-{
-public:
-	struct TinyKrakenRoarShockwaveBehaviourParams                Params;                                            // 0x28(0x58)
-};
-
-
-// Size 0x90 (Full Size[0xa00] - InheritedSize[0x970]
+// Size 0xa0 (Full Size[0xa00] - InheritedSize[0x960]
 class TinyKraken: public Kraken
 {
 public:
-	float                                                        HeadSpawnZOffset;                                  // 0x968(0x4)
-	char                                                         pad0x4_TVQOA[0x4];                                 // 0x96c(0x4)
-	TArray<struct TinyKrakenBattlePhaseParams>                   TinyKrakenBattlePhaseParamsList;                   // 0x970(0x10)
-	char                                                         pad0x80_B4XO0[0x80];                               // 0x980(0x80)
+	float                                                        HeadSpawnZOffset;                                  // 0x960(0x4)
+	char                                                         pad0x4_2IXLZ[0x4];                                 // 0x964(0x4)
+	TArray<struct TinyKrakenBattlePhaseParams>                   TinyKrakenBattlePhaseParamsList;                   // 0x968(0x10)
+	char                                                         pad0x88_4MBZX[0x88];                               // 0x978(0x88)
 };
 
 
-// Size 0x30 (Full Size[0x58] - InheritedSize[0x28]
+// Size 0x190 (Full Size[0x530] - InheritedSize[0x3a0]
+class TinyKrakenHead: public Actor
+{
+public:
+	char                                                         pad0x30_2QQ84[0x30];                               // 0x3a0(0x30)
+	class SceneComponent*                                        Root;                                              // 0x3d0(0x8)
+	class SkeletalMeshComponent*                                 SkeletalMesh;                                      // 0x3d8(0x8)
+	class HealthComponent*                                       HealthComponent;                                   // 0x3e0(0x8)
+	class ActorDamageableComponent*                              DamageableComponent;                               // 0x3e8(0x8)
+	class SphereComponent*                                       SphereComponent;                                   // 0x3f0(0x8)
+	class TinyKrakenExplosionComponent*                          TinyKrakenExplosionComponent;                      // 0x3f8(0x8)
+	class TinyKrakenHeadAnimationInstance*                       HeadAnimInstance;                                  // 0x400(0x8)
+	char                                                         pad0x128_LE0CC[0x128];                             // 0x408(0x128)
+};
+
+
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
 class TinyKrakenHeadParamsDataAsset: public DataAsset
 {
 public:
-	struct TinyKrakenHeadParams                                  Params;                                            // 0x28(0x30)
+	struct TinyKrakenHeadParams                                  Params;                                            // 0x28(0x28)
 };
 
 
-// Size 0x200 (Full Size[0x5a0] - InheritedSize[0x3a0]
-class TinyKrakenEventService: public Actor
+// Size 0xe8 (Full Size[0x110] - InheritedSize[0x28]
+class TinyKrakenShipBitingBehaviourParamsDataAsset: public DataAsset
 {
 public:
-	char                                                         pad0x40_HFOA8[0x40];                               // 0x3a0(0x40)
-	class TinyKrakenEventServiceParams*                          TinyKrakenServiceParams;                           // 0x3e0(0x8)
-	class TinyKraken*                                            ActiveTinyKraken;                                  // 0x3e8(0x8)
-	char                                                         pad0x1b0_9KKP0[0x1b0];                             // 0x3f0(0x1b0)
+	struct TinyKrakenShipBitingBehaviourParams                   BitingParams;                                      // 0x28(0xc8)
+	struct KrakenShipWrappingBehaviourParamsCollection           DraggingParams;                                    // 0xf0(0x10)
+	struct KrakenShipWrappingBehaviourParamsCollection           WrappingParams;                                    // 0x100(0x10)
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class BattlePhaseProgressionTrackerBase: public Object
+{
+public:
+	bool                                                         ShouldPhaseTimeout;                                // 0x28(0x1)
+	char                                                         pad0x3_EGRWT[0x3];                                 // 0x29(0x3)
+	float                                                        PhaseTimeLimit;                                    // 0x2c(0x4)
+	bool                                                         ResetProgressOnTimeLimitReached;                   // 0x30(0x1)
+	char                                                         pad0x7_G60WG[0x7];                                 // 0x31(0x7)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class SandboxPerformanceConstraintActivity_TinyKraken: public SandboxPerformanceConstraintActivityType
+{
+public:
+};
+
+
+// Size 0x300 (Full Size[0x740] - InheritedSize[0x440]
+class TinyKrakenHeadAnimationInstance: public AnimInstance
+{
+public:
+	class Actor*                                                 OwningTinyKrakenHead;                              // 0x440(0x8)
+	bool                                                         IsSubmerged;                                       // 0x448(0x1)
+	bool                                                         IsAttacking;                                       // 0x449(0x1)
+	bool                                                         IsAttacking1;                                      // 0x44a(0x1)
+	bool                                                         IsAttacking2;                                      // 0x44b(0x1)
+	bool                                                         IsAttacking3;                                      // 0x44c(0x1)
+	bool                                                         Attack3InRange;                                    // 0x44d(0x1)
+	char                                                         pad0x2_J6HHM[0x2];                                 // 0x44e(0x2)
+	float                                                        Attack3ShipDistance;                               // 0x450(0x4)
+	bool                                                         IsDead;                                            // 0x454(0x1)
+	char                                                         pad0x2c3_I062N[0x2c3];                             // 0x455(0x2c3)
+	class AnimMontage*                                           PlayingMontage;                                    // 0x718(0x8)
+	class KrakenHeadHitReactAnimationsDataAsset*                 KrakenHeadHitReactionAsset;                        // 0x720(0x8)
+	char                                                         pad0x18_JI06D[0x18];                               // 0x728(0x18)
+};
+
+
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
+class TinyKrakenRoarShockwaveBehaviourParamsDataAsset: public DataAsset
+{
+public:
+	struct TinyKrakenRoarShockwaveBehaviourParams                Params;                                            // 0x28(0x38)
 };
 
 
@@ -110,19 +120,14 @@ public:
 };
 
 
-// Size 0x68 (Full Size[0xa0] - InheritedSize[0x38]
-class BattlePhaseProgressionTrackerTentaclesDestroyed: public BattlePhaseProgressionTrackerBase
+// Size 0x200 (Full Size[0x5a0] - InheritedSize[0x3a0]
+class TinyKrakenEventService: public Actor
 {
 public:
-	char                                                         pad0x68_DF0XV[0x68];                               // 0x38(0x68)
-};
-
-
-// Size 0x58 (Full Size[0x90] - InheritedSize[0x38]
-class BattlePhaseProgressionTrackerKrakenKilled: public BattlePhaseProgressionTrackerBase
-{
-public:
-	char                                                         pad0x58_4MX9O[0x58];                               // 0x38(0x58)
+	char                                                         pad0x40_BVMWU[0x40];                               // 0x3a0(0x40)
+	class TinyKrakenEventServiceParams*                          TinyKrakenServiceParams;                           // 0x3e0(0x8)
+	class TinyKraken*                                            ActiveTinyKraken;                                  // 0x3e8(0x8)
+	char                                                         pad0x1b0_73RGK[0x1b0];                             // 0x3f0(0x1b0)
 };
 
 
@@ -131,7 +136,23 @@ class BattlePhaseProgressionTrackerDamage: public BattlePhaseProgressionTrackerB
 {
 public:
 	float                                                        DamageRequiredToProgress;                          // 0x38(0x4)
-	char                                                         pad0xbc_6S720[0xbc];                               // 0x3c(0xbc)
+	char                                                         pad0xbc_YI304[0xbc];                               // 0x3c(0xbc)
+};
+
+
+// Size 0x68 (Full Size[0xa0] - InheritedSize[0x38]
+class BattlePhaseProgressionTrackerTentaclesDestroyed: public BattlePhaseProgressionTrackerBase
+{
+public:
+	char                                                         pad0x68_NI8SS[0x68];                               // 0x38(0x68)
+};
+
+
+// Size 0x58 (Full Size[0x90] - InheritedSize[0x38]
+class BattlePhaseProgressionTrackerKrakenKilled: public BattlePhaseProgressionTrackerBase
+{
+public:
+	char                                                         pad0x58_NZ3DT[0x58];                               // 0x38(0x58)
 };
 
 

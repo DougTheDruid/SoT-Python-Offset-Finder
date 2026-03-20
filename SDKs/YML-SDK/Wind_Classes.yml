@@ -8,13 +8,13 @@ DebugWindInterface:
   Super: Interface
 DebugWindService:
   Attributes:
-  - Name: pad0x10_BLLQW[0x10]
-    Offset: '0x4d8'
+  - Name: pad0x10_UWXLB[0x10]
+    Offset: '0x4d0'
     Size: '0x10'
     Type: char
   ClassSize: '0x10'
-  FullSize: '0x4e8'
-  InheritedSize: '0x4d8'
+  FullSize: '0x4e0'
+  InheritedSize: '0x4d0'
   Super: WindService
 WindFunctions:
   Attributes: []
@@ -30,7 +30,7 @@ WindInterface:
   Super: Interface
 WindService:
   Attributes:
-  - Name: pad0x10_ID7LA[0x10]
+  - Name: pad0x10_U88M7[0x10]
     Offset: '0x3a0'
     Size: '0x10'
     Type: char
@@ -38,7 +38,7 @@ WindService:
     Offset: '0x3b0'
     Size: '0x8'
     Type: class WindDirectionalSource*
-  - Name: pad0x10_82HUS[0x10]
+  - Name: pad0x10_J811H[0x10]
     Offset: '0x3b8'
     Size: '0x10'
     Type: char
@@ -50,20 +50,20 @@ WindService:
     Offset: '0x3cc'
     Size: '0x4'
     Type: float
-  - Name: pad0xe8_RIH8T[0xe8]
+  - Name: pad0xe0_QIQRM[0xe0]
     Offset: '0x3d0'
-    Size: '0xe8'
+    Size: '0xe0'
     Type: char
   - Name: WindZones
-    Offset: '0x4b8'
+    Offset: '0x4b0'
     Size: '0x10'
     Type: TArray<class Interface*>
   - Name: ExtraWind
-    Offset: '0x4c8'
+    Offset: '0x4c0'
     Size: '0x10'
     Type: TArray<struct ExtraWind>
-  ClassSize: '0x138'
-  FullSize: '0x4d8'
+  ClassSize: '0x130'
+  FullSize: '0x4d0'
   InheritedSize: '0x3a0'
   Super: Actor
 WindServiceParamsFunctionLibrary:
@@ -78,7 +78,7 @@ WindSettings:
     Offset: '0x38'
     Size: '0x24'
     Type: struct WindServiceParams
-  - Name: pad0x4_2CURL[0x4]
+  - Name: pad0x4_DRI5Q[0x4]
     Offset: '0x5c'
     Size: '0x4'
     Type: char
@@ -88,7 +88,7 @@ WindSettings:
   Super: DeveloperSettings
 WindZoneComponent:
   Attributes:
-  - Name: pad0x8_M4KHC[0x8]
+  - Name: pad0x8_NIVDJ[0x8]
     Offset: '0x2d0'
     Size: '0x8'
     Type: char
@@ -100,7 +100,7 @@ WindZoneComponent:
     Offset: '0x348'
     Size: '0x10'
     Type: struct WindZoneParams
-  - Name: pad0x8_UTEM8[0x8]
+  - Name: pad0x8_HPMU8[0x8]
     Offset: '0x358'
     Size: '0x8'
     Type: char

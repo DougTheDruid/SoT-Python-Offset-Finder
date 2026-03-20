@@ -7,7 +7,7 @@
 struct UtilityVoyageData
 {
 public:
-	char                                                         pad0x58_NC8HK[0x58];                               // 0x0(0x58)
+	char                                                         pad0x58_XGH2T[0x58];                               // 0x0(0x58)
 };
 
 

@@ -17,10 +17,10 @@ public:
 class WwiseAudioSettings: public Object
 {
 public:
-	char                                                         pad0xc0_HY08J[0xc0];                               // 0x28(0xc0)
+	char                                                         pad0xc0_4YQE7[0xc0];                               // 0x28(0xc0)
 	struct WwisePlatformMappings                                 PlatformMappings;                                  // 0xe8(0x20)
 	struct WwiseAudioReverbPresets                               ReverbPresetSettings;                              // 0x108(0x64)
-	char                                                         pad0x4_XOQXR[0x4];                                 // 0x16c(0x4)
+	char                                                         pad0x4_TTE5Y[0x4];                                 // 0x16c(0x4)
 	struct StringAssetReference                                  WwiseCoreAssetsPath;                               // 0x170(0x10)
 	struct DirectoryPath                                         WwiseSoundbanksRoot;                               // 0x180(0x10)
 	struct DirectoryPath                                         WwiseStreamedFilesRoot;                            // 0x190(0x10)
@@ -30,7 +30,7 @@ public:
 	struct FString                                               SinkSharesetName;                                  // 0x1d0(0x10)
 	struct WwiseNetworkRelationship                              NetworkRelationship;                               // 0x1e0(0x18)
 	class WwiseCoreAssets*                                       WwiseCoreAssets;                                   // 0x200(0x8)
-	char                                                         pad0x58_EZJWL[0x58];                               // 0x208(0x58)
+	char                                                         pad0x58_Q3BBK[0x58];                               // 0x208(0x58)
 };
 
 

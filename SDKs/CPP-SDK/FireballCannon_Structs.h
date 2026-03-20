@@ -4,31 +4,10 @@
 // https://github.com/DougTheDruid
 
 // Size 0x1
-struct EventFireballCannonHasStartedToCooldown
+struct EventFireballCannonIsReadyToFire
 {
 public:
-	char                                                         pad0x1_836HK[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x10
-struct EventFireballCannonFiringStateChanged
-{
-public:
-	char                                                         FireballCannonFiringState;                         // 0x0(0x1)
-	char                                                         pad0x7_YQ36B[0x7];                                 // 0x1(0x7)
-	class Object*                                                FireballCannonObject;                              // 0x8(0x8)
-};
-
-
-// Size 0x14
-struct FireballCannonDynamicMaterialParameters
-{
-public:
-	struct FName                                                 VectorMaterialParameterName;                       // 0x0(0x8)
-	float                                                        ReadyToFireValue;                                  // 0x8(0x4)
-	float                                                        FiringValue;                                       // 0xc(0x4)
-	float                                                        NoChargeValue;                                     // 0x10(0x4)
+	char                                                         pad0x1_JGLMG[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -46,15 +25,36 @@ public:
 struct EventShootFireballCannon
 {
 public:
-	char                                                         pad0x1_CI0AV[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_2DDOT[0x1];                                 // 0x0(0x1)
+};
+
+
+// Size 0x10
+struct EventFireballCannonFiringStateChanged
+{
+public:
+	char                                                         FireballCannonFiringState;                         // 0x0(0x1)
+	char                                                         pad0x7_HOS3Y[0x7];                                 // 0x1(0x7)
+	class Object*                                                FireballCannonObject;                              // 0x8(0x8)
 };
 
 
 // Size 0x1
-struct EventFireballCannonIsReadyToFire
+struct EventFireballCannonHasStartedToCooldown
 {
 public:
-	char                                                         pad0x1_TWACK[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_D3LOZ[0x1];                                 // 0x0(0x1)
+};
+
+
+// Size 0x14
+struct FireballCannonDynamicMaterialParameters
+{
+public:
+	struct FName                                                 VectorMaterialParameterName;                       // 0x0(0x8)
+	float                                                        ReadyToFireValue;                                  // 0x8(0x4)
+	float                                                        FiringValue;                                       // 0xc(0x4)
+	float                                                        NoChargeValue;                                     // 0x10(0x4)
 };
 
 

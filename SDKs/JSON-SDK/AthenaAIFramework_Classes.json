@@ -1,11 +1,4 @@
 {
-  "AIControllerParamProviderInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "AINameplateInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
@@ -21,6 +14,13 @@
     "Attributes": []
   },
   "HelpfulAIItemInteractionsInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AIControllerParamProviderInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

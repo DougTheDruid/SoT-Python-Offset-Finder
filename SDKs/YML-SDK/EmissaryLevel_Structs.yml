@@ -14,10 +14,18 @@ ActivateEmissaryForCrew:
     Offset: '0x18'
     Size: '0x10'
     Type: struct Guid
-  ClassSize: '0x28'
+  - Name: AutoJoinedViaInvasion
+    Offset: '0x28'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x3_WNE8Z[0x3]
+    Offset: '0x29'
+    Size: '0x3'
+    Type: char
+  ClassSize: '0x2c'
 ActivateEmissaryMaxRankQuestForSession:
   Attributes:
-  - Name: pad0x1_DFWWQ[0x1]
+  - Name: pad0x1_IRZ00[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -62,7 +70,7 @@ DeactivateEmissaryForCrew:
     Offset: '0x38'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_OTEJG[0x3]
+  - Name: pad0x3_PZJNR[0x3]
     Offset: '0x39'
     Size: '0x3'
     Type: char
@@ -130,7 +138,7 @@ EmissaryCompanyActionReward:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_XVPGT[0x3]
+  - Name: pad0x3_WNO7G[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -153,7 +161,7 @@ EmissaryCompanyActionRewardBoostServiceEvent:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_EIDLK[0x3]
+  - Name: pad0x3_FZQH8[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -168,7 +176,7 @@ EmissaryCompanyActionRewardStoryOverrides:
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_WKGOT[0x4]
+  - Name: pad0x4_6KUPA[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -227,7 +235,7 @@ EmissaryCompanyCampaignSettings:
   ClassSize: '0x28'
 EmissaryCompanyChangedEvent:
   Attributes:
-  - Name: pad0x10_GJWW6[0x10]
+  - Name: pad0x10_UT2F7[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
@@ -245,14 +253,14 @@ EmissaryCompanyCosmetics:
   ClassSize: '0x20'
 EmissaryDeactivatedNetworkEvent:
   Attributes:
-  - Name: pad0x18_4RSTR[0x18]
+  - Name: pad0x18_W6ZP1[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
   ClassSize: '0x18'
 EmissaryDiscoveredCargoRunCrateNetworkEvent:
   Attributes:
-  - Name: pad0x18_Z2ANE[0x18]
+  - Name: pad0x18_BC7A6[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -263,7 +271,7 @@ EmissaryDiscoveredCargoRunCrateNetworkEvent:
   ClassSize: '0x20'
 EmissaryDiscoveredLootNetworkEvent:
   Attributes:
-  - Name: pad0x18_N1BYK[0x18]
+  - Name: pad0x18_CO2L8[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -288,7 +296,7 @@ EmissaryEncounteredKrakenEvent:
   ClassSize: '0x8'
 EmissaryEncounteredSkellyFortNetworkEvent:
   Attributes:
-  - Name: pad0x18_A1LSW[0x18]
+  - Name: pad0x18_AXSK0[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -325,7 +333,7 @@ EmissaryEventAward:
     Offset: '0x2'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1_OLHWI[0x1]
+  - Name: pad0x1_25JRV[0x1]
     Offset: '0x3'
     Size: '0x1'
     Type: char
@@ -340,7 +348,7 @@ EmissaryFactionActionReward:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_ZO7CB[0x3]
+  - Name: pad0x3_KNYWA[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -355,7 +363,7 @@ EmissaryFactionActionRewardBoostServiceEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_72JGU[0x3]
+  - Name: pad0x3_Q36HF[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -385,7 +393,7 @@ EmissaryGameEventsReward:
     Offset: '0x8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_48Y0A[0x4]
+  - Name: pad0x4_EAKLR[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -410,7 +418,7 @@ EmissaryGlobalActionRewardBoostServiceEvent:
   ClassSize: '0x18'
 EmissaryJoinedNetworkEvent:
   Attributes:
-  - Name: pad0x18_RCE83[0x18]
+  - Name: pad0x18_I4P9K[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -429,7 +437,7 @@ EmissaryKillPlayerReward:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_B4SOA[0x4]
+  - Name: pad0x4_K3W6I[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -455,7 +463,7 @@ EmissaryKillScaleFactor:
   ClassSize: '0x8'
 EmissaryKilledAnotherEmissaryNetworkEvent:
   Attributes:
-  - Name: pad0x18_OP78Y[0x18]
+  - Name: pad0x18_V7MYU[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -500,7 +508,7 @@ EmissaryLevelData:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_Y3AXT[0x4]
+  - Name: pad0x4_4AGFR[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -559,35 +567,39 @@ EmissaryLevelEntry:
     Offset: '0x20'
     Size: '0x8'
     Type: class DataAsset*
-  - Name: EmissarySunkPopUpToastData
+  - Name: EmissaryAutoJoinedViaInvasionPopUpToastData
     Offset: '0x28'
     Size: '0x8'
     Type: class DataAsset*
-  - Name: CompanyCosmetics
+  - Name: EmissarySunkPopUpToastData
     Offset: '0x30'
+    Size: '0x8'
+    Type: class DataAsset*
+  - Name: CompanyCosmetics
+    Offset: '0x38'
     Size: '0x20'
     Type: struct EmissaryCompanyCosmetics
   - Name: TimeSpentAtMaxRankStat
-    Offset: '0x50'
+    Offset: '0x58'
     Size: '0x4'
     Type: struct PlayerStat
-  - Name: pad0x4_ZEK54[0x4]
-    Offset: '0x54'
+  - Name: pad0x4_FY0NH[0x4]
+    Offset: '0x5c'
     Size: '0x4'
     Type: char
   - Name: StatsToFireOnFullEmissaryClothing
-    Offset: '0x58'
+    Offset: '0x60'
     Size: '0x10'
     Type: TArray<struct PlayerStat>
   - Name: StatsToFireOnFullEmissaryShipCustomizations
-    Offset: '0x68'
+    Offset: '0x70'
     Size: '0x10'
     Type: TArray<struct PlayerStat>
   - Name: StatsToFireOnFullShipCustomizationsAndClothing
-    Offset: '0x78'
+    Offset: '0x80'
     Size: '0x10'
     Type: TArray<struct PlayerStat>
-  ClassSize: '0x88'
+  ClassSize: '0x90'
 EmissaryLevelProgressUpdatedEvent:
   Attributes:
   - Name: LevelProgress
@@ -612,7 +624,7 @@ EmissaryLevelRankChange:
   ClassSize: '0xc'
 EmissaryLevelResetProgress:
   Attributes:
-  - Name: pad0x1_2H6V2[0x1]
+  - Name: pad0x1_NI8GG[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -626,7 +638,7 @@ EmissaryLevelStatusStatInfo:
   ClassSize: '0x4'
 EmissaryMaxLevelReachedNetworkEvent:
   Attributes:
-  - Name: pad0x18_B9M16[0x18]
+  - Name: pad0x18_9HO43[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -645,7 +657,7 @@ EmissaryMaxRankQuestProviderQuestOverrides:
     Offset: '0x0'
     Size: '0xc'
     Type: struct FeatureFlag
-  - Name: pad0x4_B0K1O[0x4]
+  - Name: pad0x4_BK0UV[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -657,7 +669,7 @@ EmissaryMaxRankQuestProviderQuestOverrides:
     Offset: '0x20'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_O5APV[0x7]
+  - Name: pad0x7_RQOCW[0x7]
     Offset: '0x21'
     Size: '0x7'
     Type: char
@@ -682,14 +694,14 @@ EmissaryPointBoostMultipliers:
   ClassSize: '0x8'
 EmissaryPointsBoostCriteria:
   Attributes:
-  - Name: pad0x8_0QDA1[0x8]
+  - Name: pad0x8_2J358[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
   ClassSize: '0x8'
 EmissaryProgressUpdatedNetworkEvent:
   Attributes:
-  - Name: pad0x18_UKG0B[0x18]
+  - Name: pad0x18_HAHVW[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -712,7 +724,7 @@ EmissaryQuestCompanyActionRewardBoostEvent:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_I0DOK[0x3]
+  - Name: pad0x3_5HEY6[0x3]
     Offset: '0x1'
     Size: '0x3'
     Type: char
@@ -750,7 +762,7 @@ EmissaryRoleplayActionTelemetryEvent:
     Offset: '0x1c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_CVQS7[0x3]
+  - Name: pad0x3_OLW2V[0x3]
     Offset: '0x1d'
     Size: '0x3'
     Type: char
@@ -770,14 +782,14 @@ EmissaryRoleplayActionTelemetryEvent:
     Offset: '0x2c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_VYTW5[0x3]
+  - Name: pad0x3_UXJEY[0x3]
     Offset: '0x2d'
     Size: '0x3'
     Type: char
   ClassSize: '0x30'
 EmissarySecuredLootOnShipNetworkEvent:
   Attributes:
-  - Name: pad0x18_US779[0x18]
+  - Name: pad0x18_CHTG9[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -800,7 +812,7 @@ EmissarySessionEndTelemetryEvent:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_NAZEG[0x3]
+  - Name: pad0x3_XWUJQ[0x3]
     Offset: '0x19'
     Size: '0x3'
     Type: char
@@ -826,7 +838,7 @@ EmissarySessionStartTelemetryEvent:
   ClassSize: '0x2c'
 EmissarySoldLootNetworkEvent:
   Attributes:
-  - Name: pad0x18_MAUXZ[0x18]
+  - Name: pad0x18_R7598[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -848,7 +860,7 @@ EmissaryStateUpdateEvent:
   ClassSize: '0xc'
 EmissaryStoleLootNetworkEvent:
   Attributes:
-  - Name: pad0x18_O52D2[0x18]
+  - Name: pad0x18_FG56K[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -859,7 +871,7 @@ EmissaryStoleLootNetworkEvent:
   ClassSize: '0x20'
 EmissarySunkNetworkEvent:
   Attributes:
-  - Name: pad0x18_X7E0M[0x18]
+  - Name: pad0x18_DCYGY[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -908,7 +920,7 @@ LightVisualisation:
     Offset: '0x18'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_2QY4D[0x4]
+  - Name: pad0x4_2DEWP[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -999,7 +1011,7 @@ PlayerAddedToEmissaryCrew:
   ClassSize: '0x10'
 PlayerRemovedFromEmissaryCrew:
   Attributes:
-  - Name: pad0x1_84X2H[0x1]
+  - Name: pad0x1_W03ZA[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -1052,7 +1064,7 @@ UpdateEmissaryValueForCompany:
     Offset: '0x28'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_UIYPA[0x3]
+  - Name: pad0x3_4C8LC[0x3]
     Offset: '0x29'
     Size: '0x3'
     Type: char

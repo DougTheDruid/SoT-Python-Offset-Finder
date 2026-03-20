@@ -7,9 +7,20 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class MigrationProgressInterface: public Interface
+class AthenaServerMigrationGameAuthorityProviderInterface: public Interface
 {
 public:
+};
+
+
+// Size 0x20 (Full Size[0xd8] - InheritedSize[0xb8]
+class RegisterServerMigrationPointOfInterestComponent: public ActorComponent
+{
+public:
+	char                                                         MigrationInfluence;                                // 0xb8(0x1)
+	char                                                         pad0x3_XDA7Z[0x3];                                 // 0xb9(0x3)
+	float                                                        MigrationRadius;                                   // 0xbc(0x4)
+	char                                                         pad0x18_OZPTM[0x18];                               // 0xc0(0x18)
 };
 
 
@@ -21,23 +32,14 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class AthenaServerMigrationGameAuthorityProviderInterface: public Interface
+class ServerMigrationGatherableActorInterface: public Interface
 {
 public:
-};
-
-
-// Size 0x20 (Full Size[0xd8] - InheritedSize[0xb8]
-class RegisterServerMigrationPointOfInterestComponent: public ActorComponent
-{
-public:
-	float                                                        MigrationRadius;                                   // 0xb8(0x4)
-	char                                                         pad0x1c_UO46P[0x1c];                               // 0xbc(0x1c)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ServerMigrationGatherableActorInterface: public Interface
+class MigrationProgressInterface: public Interface
 {
 public:
 };

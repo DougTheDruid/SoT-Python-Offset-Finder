@@ -1,18 +1,4 @@
 {
-  "CalmWaterMappingService": {
-    "Super": "Object",
-    "FullSize": "0x50",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "pad0x28_3UBX1[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x28"
-      }
-    ]
-  },
   "AthenaCalmWaterZone": {
     "Super": "CalmWaterZone",
     "FullSize": "0x3c8",
@@ -20,10 +6,24 @@
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x20_K9651[0x20]",
+        "Name": "pad0x20_47MM8[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0x3a8"
+      }
+    ]
+  },
+  "CalmWaterMappingService": {
+    "Super": "Object",
+    "FullSize": "0x50",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "pad0x28_4OGVN[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x28"
       }
     ]
   },

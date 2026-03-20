@@ -12,12 +12,6 @@
         "Offset": "0x3a8"
       },
       {
-        "Name": "pad0x2ba65210_LOKF1[0x2ba65210]",
-        "Type": "char",
-        "Size": "0x2ba65210",
-        "Offset": "0x3b0"
-      },
-      {
         "Name": "PirateUI",
         "Type": "class PirateSelector*",
         "Size": "0x8",
@@ -42,7 +36,7 @@
         "Offset": "0x3ba"
       },
       {
-        "Name": "pad0x1_Q8ZDY[0x1]",
+        "Name": "pad0x1_994HH[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x3bb"
@@ -72,7 +66,7 @@
         "Offset": "0x3c5"
       },
       {
-        "Name": "pad0x2_N295W[0x2]",
+        "Name": "pad0x2_IYC44[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x3c6"
@@ -84,7 +78,7 @@
         "Offset": "0x3c8"
       },
       {
-        "Name": "pad0x4_5Q70X[0x4]",
+        "Name": "pad0x4_VAUXN[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x3cc"
@@ -114,7 +108,7 @@
         "Offset": "0x3e5"
       },
       {
-        "Name": "pad0x2_FFENI[0x2]",
+        "Name": "pad0x2_KBY7R[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x3e6"

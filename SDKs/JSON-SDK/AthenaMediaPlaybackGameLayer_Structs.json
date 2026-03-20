@@ -1,4 +1,27 @@
 {
+  "VideoPlaybackStateEvent": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "MediaTextureName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "State",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_AJM4B[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      }
+    ]
+  },
   "VideoPlaybackStartEvent": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -7,6 +30,23 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "VideoPlaybackLoadEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "MediaTextureName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "VideoUri",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
@@ -44,29 +84,6 @@
       }
     ]
   },
-  "VideoPlaybackStateEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "MediaTextureName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "State",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x7_QGUPX[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x11"
-      }
-    ]
-  },
   "VideoPlaybackPauseEvent": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -75,23 +92,6 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "VideoPlaybackLoadEvent": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "MediaTextureName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "VideoUri",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
       }
     ]
   },
@@ -123,7 +123,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x18_FTQAW[0x18]",
+        "Name": "pad0x18_LV097[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x28"

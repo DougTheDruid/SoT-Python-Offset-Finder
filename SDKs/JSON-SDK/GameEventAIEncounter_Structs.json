@@ -1,9 +1,91 @@
 {
-  "TrackedEncounterStateChangedTelemetryEvent": {
+  "GameEventAIEncounterDespawnedTelemetryEvent": {
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "TrackedEncounterId",
+        "Name": "EncounterId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SubjectName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "EncounterDuration",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "DespawnReason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "pad0x3_NIOXJ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x25"
+      },
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x4_ZJRKF[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "RegionName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x38"
+      }
+    ]
+  },
+  "GameEventAIEncounterInfo": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "pad0x10_IOGFH[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "EncounterClassId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Encounter",
+        "Type": "class GameEventAIEncounter*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x18_ZSYCB[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "GameEventAIEncounterStateChangedTelemetryEvent": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "EncounterId",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
@@ -51,7 +133,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_PEUUH[0x4]",
+        "Name": "pad0x4_6DBY8[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
@@ -64,18 +146,7 @@
       }
     ]
   },
-  "PlayerEnteredTrackedEncounterDiscoveredEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_LX3AB[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TrackedEncounterFeatureToggledIslandName": {
+  "GameEventAIEncounterFeatureToggledIslandName": {
     "ClassSize": "0x14",
     "Attributes": [
       {
@@ -92,94 +163,23 @@
       }
     ]
   },
-  "TrackedEncounterEvent": {
-    "ClassSize": "0x38",
+  "PlayerEnteredGameEventAIEncounterDiscoveredEvent": {
+    "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x10_CIM39[0x10]",
+        "Name": "pad0x1_S3XB2[0x1]",
         "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "TrackedEncounterClassId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "TrackedEncounter",
-        "Type": "class TrackedEncounter*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x18_VYNKU[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "TrackedEncounterDespawnedTelemetryEvent": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "TrackedEncounterId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SubjectName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "EncounterDuration",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "DespawnReason",
-        "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x24"
-      },
-      {
-        "Name": "pad0x3_DZM7T[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x25"
-      },
-      {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x4_VEHX0[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x34"
-      },
-      {
-        "Name": "RegionName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x38"
+        "Offset": "0x0"
       }
     ]
   },
-  "TrackedEncounterWeightedIslandNamesGroup": {
+  "GameEventAIEncounterWeightedIslandNamesGroup": {
     "ClassSize": "0x18",
     "Attributes": [
       {
         "Name": "IslandNames",
-        "Type": "TArray<struct TrackedEncounterFeatureToggledIslandName>",
+        "Type": "TArray<struct GameEventAIEncounterFeatureToggledIslandName>",
         "Size": "0x10",
         "Offset": "0x0"
       },
@@ -190,7 +190,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_5RTAO[0x4]",
+        "Name": "pad0x4_OP4T4[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x14"

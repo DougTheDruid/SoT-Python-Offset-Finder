@@ -13,18 +13,18 @@ public:
 };
 
 
-// Size 0xa8 (Full Size[0x160] - InheritedSize[0xb8]
-class ObjectMessagingDispatcherComponent: public ActorComponent
-{
-public:
-	char                                                         pad0xa8_5ADXH[0xa8];                               // 0xb8(0xa8)
-};
-
-
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class ObjectMessagingFunctions: public BlueprintFunctionLibrary
 {
 public:
+};
+
+
+// Size 0xa0 (Full Size[0x158] - InheritedSize[0xb8]
+class ObjectMessagingDispatcherComponent: public ActorComponent
+{
+public:
+	char                                                         pad0xa0_ASABN[0xa0];                               // 0xb8(0xa0)
 };
 
 

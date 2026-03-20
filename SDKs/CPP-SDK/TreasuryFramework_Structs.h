@@ -7,16 +7,16 @@
 struct EventTreasuryRoomFlooded
 {
 public:
-	char                                                         pad0x8_J0T6B[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_QK3DK[0x8];                                 // 0x0(0x8)
 	class Actor*                                                 Treasury;                                          // 0x8(0x8)
 };
 
 
 // Size 0x1
-struct EventTreasuryRoomActive
+struct EventTreasuryRoomInactive
 {
 public:
-	char                                                         pad0x1_FV664[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_TMONT[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -25,7 +25,7 @@ struct TreasuryWaveEncounter
 {
 public:
 	char                                                         EncounterType;                                     // 0x0(0x1)
-	char                                                         pad0x7_XY038[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_BRM7S[0x7];                                 // 0x1(0x7)
 	class SpawnAIWaveMechanismAction*                            SpawnerMechanism;                                  // 0x8(0x8)
 	class Actor*                                                 MechanismTrigger;                                  // 0x10(0x8)
 	class SpawnAIWaveMechanismAction*                            SpawnerMechanismVaultMaster;                       // 0x18(0x8)
@@ -34,7 +34,7 @@ public:
 	class TreasuryWaveDataAsset*                                 FinalWaves;                                        // 0x30(0x8)
 	class TreasuryWaveDataAsset*                                 FinalWavesVaultMaster;                             // 0x38(0x8)
 	bool                                                         NeedsRoomFlooded;                                  // 0x40(0x1)
-	char                                                         pad0x7_WQ9GK[0x7];                                 // 0x41(0x7)
+	char                                                         pad0x7_QGFMS[0x7];                                 // 0x41(0x7)
 };
 
 
@@ -42,15 +42,15 @@ public:
 struct TreasuryWaveTracker
 {
 public:
-	char                                                         pad0x1c_WPBIF[0x1c];                               // 0x0(0x1c)
+	char                                                         pad0x1c_Y7CGX[0x1c];                               // 0x0(0x1c)
 };
 
 
 // Size 0x1
-struct EventTreasuryRoomInactive
+struct EventTreasuryRoomActive
 {
 public:
-	char                                                         pad0x1_RREBH[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_LCM92[0x1];                                 // 0x0(0x1)
 };
 
 

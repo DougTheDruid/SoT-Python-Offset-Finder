@@ -1,59 +1,84 @@
 {
-  "TrackedEncountersEventService": {
-    "Super": "Actor",
-    "FullSize": "0x550",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x1b0",
-    "Attributes": [
-      {
-        "Name": "pad0x10_2RBE5[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "TrackedEncounterServiceParams",
-        "Type": "class TrackedEncountersEventServiceParams*",
-        "Size": "0x8",
-        "Offset": "0x3b0"
-      },
-      {
-        "Name": "pad0x198_FSP65[0x198]",
-        "Type": "char",
-        "Size": "0x198",
-        "Offset": "0x3b8"
-      }
-    ]
-  },
-  "GameEventAIEncounterDebugFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
+  "GameEventAIEncounterServiceInterface": {
+    "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ReduceTrackedEncounterTaleService": {
-    "Super": "TaleQuestService",
-    "FullSize": "0x68",
-    "InheritedSize": "0x60",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_IB8IZ[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x60"
-      }
-    ]
-  },
-  "ReduceTrackedEncounterTaleServiceDesc": {
+  "ReduceGameEventAIEncounterTaleServiceDesc": {
     "Super": "TaleQuestServiceDesc",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "TrackedEncounterParams": {
+  "EnvQueryContext_AllGameEventAIEncounterOccupiedLocations": {
+    "Super": "EnvQueryContext",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GameEventAIEncounterServiceParams": {
+    "Super": "DataAsset",
+    "FullSize": "0x48",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "EncounterClassId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "EncounterSpawnLocationEQSQuery",
+        "Type": "class EnvQuery*",
+        "Size": "0x8",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "EncounterParams",
+        "Type": "class GameEventAIEncounterParams*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "MaxNumberOfEvents",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x3_EEIT2[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x41"
+      },
+      {
+        "Name": "ReduceEventsUpdateInterval",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x44"
+      }
+    ]
+  },
+  "ReduceGameEventAIEncounterTaleService": {
+    "Super": "TaleQuestService",
+    "FullSize": "0x68",
+    "InheritedSize": "0x60",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_JZSB3[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x60"
+      }
+    ]
+  },
+  "GameEventAIEncounterParams": {
     "Super": "GameEventParams",
     "FullSize": "0x160",
     "InheritedSize": "0x48",
@@ -67,7 +92,7 @@
       },
       {
         "Name": "WeightedIslandNameGroups",
-        "Type": "TArray<struct TrackedEncounterWeightedIslandNamesGroup>",
+        "Type": "TArray<struct GameEventAIEncounterWeightedIslandNamesGroup>",
         "Size": "0x10",
         "Offset": "0x50"
       },
@@ -84,7 +109,7 @@
         "Offset": "0x64"
       },
       {
-        "Name": "pad0x4_1OLXO[0x4]",
+        "Name": "pad0x4_JY2TH[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x6c"
@@ -108,7 +133,7 @@
         "Offset": "0xa0"
       },
       {
-        "Name": "pad0x4_ZU3FR[0x4]",
+        "Name": "pad0x4_XTZ2N[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xa4"
@@ -120,7 +145,7 @@
         "Offset": "0xc8"
       },
       {
-        "Name": "pad0x4_2Y3ZR[0x4]",
+        "Name": "pad0x4_NLWPW[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xcc"
@@ -234,28 +259,35 @@
         "Offset": "0x158"
       },
       {
-        "Name": "pad0x4_6XEW7[0x4]",
+        "Name": "pad0x4_KA6S3[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x15c"
       }
     ]
   },
-  "TrackedEncounter": {
+  "SPC_Activity_GameEventAIEncounter": {
+    "Super": "SandboxPerformanceConstraintActivityType",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "GameEventAIEncounter": {
     "Super": "Actor",
     "FullSize": "0x3e8",
     "InheritedSize": "0x3a0",
     "ClassSize": "0x48",
     "Attributes": [
       {
-        "Name": "pad0x8_MUPHL[0x8]",
+        "Name": "pad0x8_MJLWS[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x3a0"
       },
       {
         "Name": "Params",
-        "Type": "class TrackedEncounterParams*",
+        "Type": "class GameEventAIEncounterParams*",
         "Size": "0x8",
         "Offset": "0x3a8"
       },
@@ -303,68 +335,36 @@
       }
     ]
   },
-  "SPC_Activity_TrackedEncounters": {
-    "Super": "SandboxPerformanceConstraintActivityType",
+  "GameEventAIEncounterDebugFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "TrackedEncountersEventServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "EnvQueryContext_AllGameEventAIEncounterOccupiedLocations": {
-    "Super": "EnvQueryContext",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "TrackedEncountersEventServiceParams": {
-    "Super": "DataAsset",
-    "FullSize": "0x48",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x20",
+  "GameEventAIEncounterService": {
+    "Super": "Actor",
+    "FullSize": "0x550",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x1b0",
     "Attributes": [
       {
-        "Name": "TrackedEncounterClassId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "EncounterSpawnLocationEQSQuery",
-        "Type": "class EnvQuery*",
-        "Size": "0x8",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "TrackedEncounterParams",
-        "Type": "class TrackedEncounterParams*",
-        "Size": "0x8",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "MaxNumberOfEvents",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "pad0x3_492DK[0x3]",
+        "Name": "pad0x10_UV6UI[0x10]",
         "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x41"
+        "Size": "0x10",
+        "Offset": "0x3a0"
       },
       {
-        "Name": "ReduceEventsUpdateInterval",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x44"
+        "Name": "EncounterServiceParams",
+        "Type": "class GameEventAIEncounterServiceParams*",
+        "Size": "0x8",
+        "Offset": "0x3b0"
+      },
+      {
+        "Name": "pad0x198_Q3Y2G[0x198]",
+        "Type": "char",
+        "Size": "0x198",
+        "Offset": "0x3b8"
       }
     ]
   },

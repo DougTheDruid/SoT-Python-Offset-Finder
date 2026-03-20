@@ -38,15 +38,19 @@ StartWarMapVoyageVoteConsumer:
     Offset: '0x2d0'
     Size: '0x38'
     Type: struct FText
-  ClassSize: '0x1f8'
-  FullSize: '0x308'
+  - Name: InvasionActivityIdentifier
+    Offset: '0x308'
+    Size: '0x8'
+    Type: class UClass*
+  ClassSize: '0x200'
+  FullSize: '0x310'
   InheritedSize: '0x110'
   Super: WarMapVoteConsumerBase
 StartWarMapVoyageVoteValidator:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x130'
-  InheritedSize: '0x130'
+  FullSize: '0x138'
+  InheritedSize: '0x138'
   Super: WarMapVoteValidatorBase
 StopWarMapVoyageVoteConsumer:
   Attributes:
@@ -66,27 +70,31 @@ StopWarMapVoyageVoteConsumer:
     Offset: '0x1b8'
     Size: '0x38'
     Type: struct FText
-  ClassSize: '0xe0'
-  FullSize: '0x1f0'
+  - Name: InvasionActivityIdentifier
+    Offset: '0x1f0'
+    Size: '0x8'
+    Type: class UClass*
+  ClassSize: '0xe8'
+  FullSize: '0x1f8'
   InheritedSize: '0x110'
   Super: WarMapVoteConsumerBase
 StopWarMapVoyageVoteValidator:
   Attributes:
   - Name: ShowWhenInHardModeMatchmaking
-    Offset: '0x130'
+    Offset: '0x138'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_PJ68Z[0x7]
-    Offset: '0x131'
+  - Name: pad0x7_W5PDL[0x7]
+    Offset: '0x139'
     Size: '0x7'
     Type: char
   ClassSize: '0x8'
-  FullSize: '0x138'
-  InheritedSize: '0x130'
+  FullSize: '0x140'
+  InheritedSize: '0x138'
   Super: WarMapVoteValidatorBase
 WarMapInteractionComponent:
   Attributes:
-  - Name: pad0x8_0PNAF[0x8]
+  - Name: pad0x8_Y1V9V[0x8]
     Offset: '0x140'
     Size: '0x8'
     Type: char
@@ -102,7 +110,7 @@ WarMapInteractionComponent:
     Offset: '0x1b8'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x20_Q0GWL[0x20]
+  - Name: pad0x20_3VLIR[0x20]
     Offset: '0x1c0'
     Size: '0x20'
     Type: char
@@ -112,7 +120,7 @@ WarMapInteractionComponent:
   Super: InteractableComponent
 WarMapInteractionVoteComponent:
   Attributes:
-  - Name: pad0x10_8CPER[0x10]
+  - Name: pad0x10_5LENX[0x10]
     Offset: '0x168'
     Size: '0x10'
     Type: char
@@ -140,7 +148,7 @@ WarMapVoteConsumerBase:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0x67_OTUIR[0x67]
+  - Name: pad0x67_K3Z98[0x67]
     Offset: '0x41'
     Size: '0x67'
     Type: char
@@ -148,7 +156,7 @@ WarMapVoteConsumerBase:
     Offset: '0xa8'
     Size: '0x10'
     Type: TArray<class PlayerState*>
-  - Name: pad0x58_NU2NF[0x58]
+  - Name: pad0x58_ZZAQ5[0x58]
     Offset: '0xb8'
     Size: '0x58'
     Type: char
@@ -158,7 +166,7 @@ WarMapVoteConsumerBase:
   Super: VoteConsumerInlineBase
 WarMapVoteInteractionActor:
   Attributes:
-  - Name: pad0x10_3DBX6[0x10]
+  - Name: pad0x10_TOTEP[0x10]
     Offset: '0x3a0'
     Size: '0x10'
     Type: char
@@ -170,7 +178,7 @@ WarMapVoteInteractionActor:
     Offset: '0x3b4'
     Size: '0x8'
     Type: struct Vector2D
-  - Name: pad0x4_80EAG[0x4]
+  - Name: pad0x4_4OCYC[0x4]
     Offset: '0x3bc'
     Size: '0x4'
     Type: char
@@ -178,21 +186,25 @@ WarMapVoteInteractionActor:
     Offset: '0x3c0'
     Size: '0x8'
     Type: class StaticMeshComponent*
-  - Name: BoxedRpcDispatcherComponent
+  - Name: InvasionActivityIdentifier
     Offset: '0x3c8'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: BoxedRpcDispatcherComponent
+    Offset: '0x3d0'
     Size: '0x8'
     Type: class BoxedRpcDispatcherComponent*
   - Name: FactionInfos
-    Offset: '0x3d0'
+    Offset: '0x3d8'
     Size: '0x10'
     Type: TArray<struct FactionDisplayInfo>
   - Name: FactionInfoPtrs
-    Offset: '0x3e0'
+    Offset: '0x3e8'
     Size: '0x10'
     Type: TArray<struct FactionRequest>
-  - Name: pad0x230_DZUN2[0x230]
-    Offset: '0x3f0'
-    Size: '0x230'
+  - Name: pad0x228_YJSKY[0x228]
+    Offset: '0x3f8'
+    Size: '0x228'
     Type: char
   ClassSize: '0x280'
   FullSize: '0x620'
@@ -212,11 +224,19 @@ WarMapVoteValidatorBase:
     Offset: '0x40'
     Size: '0x1'
     Type: bool
-  - Name: pad0xef_9RHH4[0xef]
+  - Name: pad0x7_W5JWR[0x7]
     Offset: '0x41'
-    Size: '0xef'
+    Size: '0x7'
     Type: char
-  ClassSize: '0x100'
-  FullSize: '0x130'
+  - Name: InvasionActivityIdentifier
+    Offset: '0x48'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: pad0xe8_4KPD3[0xe8]
+    Offset: '0x50'
+    Size: '0xe8'
+    Type: char
+  ClassSize: '0x108'
+  FullSize: '0x138'
   InheritedSize: '0x30'
   Super: VoteValidatorInlineBase

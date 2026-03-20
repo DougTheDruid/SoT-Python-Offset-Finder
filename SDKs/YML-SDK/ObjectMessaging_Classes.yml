@@ -2,12 +2,12 @@
 # https://github.com/DougTheDruid
 ObjectMessagingDispatcherComponent:
   Attributes:
-  - Name: pad0xa8_5ADXH[0xa8]
+  - Name: pad0xa0_ASABN[0xa0]
     Offset: '0xb8'
-    Size: '0xa8'
+    Size: '0xa0'
     Type: char
-  ClassSize: '0xa8'
-  FullSize: '0x160'
+  ClassSize: '0xa0'
+  FullSize: '0x158'
   InheritedSize: '0xb8'
   Super: ActorComponent
 ObjectMessagingDispatcherInterface:

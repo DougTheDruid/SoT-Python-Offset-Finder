@@ -6,26 +6,14 @@
 #include "NudgeComposite_Structs.h"
 
 
-// Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
-class NudgeFromWaterLevelPolicy: public NudgePolicy
-{
-public:
-	float                                                        ChanceOfNudge;                                     // 0xc8(0x4)
-	char                                                         pad0x14_POCL9[0x14];                               // 0xcc(0x14)
-	float                                                        WaterLevelDifferenceBetweenUpdates;                // 0xe0(0x4)
-	float                                                        ZOffsetFromWaterToMountpoint;                      // 0xe4(0x4)
-	char                                                         pad0x8_J2JEK[0x8];                                 // 0xe8(0x8)
-};
-
-
 // Size 0x90 (Full Size[0x158] - InheritedSize[0xc8]
 class NudgeFromStormPolicy: public NudgePolicy
 {
 public:
 	float                                                        ChanceOfNudge;                                     // 0xc8(0x4)
-	char                                                         pad0x4_470IX[0x4];                                 // 0xcc(0x4)
+	char                                                         pad0x4_JJ1RO[0x4];                                 // 0xcc(0x4)
 	struct WeightedProbabilityRangeOfRanges                      WeightedTimers;                                    // 0xd0(0x30)
-	char                                                         pad0x58_ZFEJ2[0x58];                               // 0x100(0x58)
+	char                                                         pad0x58_TZGYP[0x58];                               // 0x100(0x58)
 };
 
 
@@ -34,6 +22,18 @@ class NudgeFromExplosionsPolicy: public NudgePolicy
 {
 public:
 	TArray<struct NudgeChancePerDamagerType>                     AcceptedDamagerTypes;                              // 0xc8(0x10)
+};
+
+
+// Size 0x28 (Full Size[0xf0] - InheritedSize[0xc8]
+class NudgeFromWaterLevelPolicy: public NudgePolicy
+{
+public:
+	float                                                        ChanceOfNudge;                                     // 0xc8(0x4)
+	char                                                         pad0x14_Y6RFA[0x14];                               // 0xcc(0x14)
+	float                                                        WaterLevelDifferenceBetweenUpdates;                // 0xe0(0x4)
+	float                                                        ZOffsetFromWaterToMountpoint;                      // 0xe4(0x4)
+	char                                                         pad0x8_61TAL[0x8];                                 // 0xe8(0x8)
 };
 
 

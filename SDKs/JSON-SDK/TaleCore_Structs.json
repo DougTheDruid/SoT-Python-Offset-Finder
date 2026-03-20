@@ -1,4 +1,26 @@
 {
+  "ClientCommandQueue": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_A23E6[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "ClientCommandBase": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_FFYHS[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "TaleStructInstance": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -9,32 +31,10 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x8_VTARD[0x8]",
+        "Name": "pad0x8_Z3AZT[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "ClientCommandBase": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_ZSJEJ[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "ClientCommandQueue": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_5236V[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
       }
     ]
   },

@@ -1,4 +1,36 @@
 {
+  "SimpleOverlapZone": {
+    "Super": "Actor",
+    "FullSize": "0x470",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0xd0",
+    "Attributes": [
+      {
+        "Name": "pad0xc0_Q6YUO[0xc0]",
+        "Type": "char",
+        "Size": "0xc0",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "CollisionMesh",
+        "Type": "class BoxComponent*",
+        "Size": "0x8",
+        "Offset": "0x460"
+      },
+      {
+        "Name": "StartActive",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x468"
+      },
+      {
+        "Name": "pad0x7_VDQF5[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x469"
+      }
+    ]
+  },
   "SimpleOverlapComponent": {
     "Super": "ActorComponent",
     "FullSize": "0xc0",
@@ -6,42 +38,10 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_89XV8[0x8]",
+        "Name": "pad0x8_PRP3C[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
-      }
-    ]
-  },
-  "SimpleOverlapZone": {
-    "Super": "Actor",
-    "FullSize": "0x478",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0xd8",
-    "Attributes": [
-      {
-        "Name": "pad0xc8_PJ48K[0xc8]",
-        "Type": "char",
-        "Size": "0xc8",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "CollisionMesh",
-        "Type": "class BoxComponent*",
-        "Size": "0x8",
-        "Offset": "0x468"
-      },
-      {
-        "Name": "StartActive",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x470"
-      },
-      {
-        "Name": "pad0x7_KLUOQ[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x471"
       }
     ]
   },

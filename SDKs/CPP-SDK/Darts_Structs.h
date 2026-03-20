@@ -7,7 +7,7 @@
 struct DartProxyNoiseEventItem
 {
 public:
-	char                                                         pad0x1c_25UFN[0x1c];                               // 0x0(0x1c)
+	char                                                         pad0x1c_IAFC0[0x1c];                               // 0x0(0x1c)
 };
 
 

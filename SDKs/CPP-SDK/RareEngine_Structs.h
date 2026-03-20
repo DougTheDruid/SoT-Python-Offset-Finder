@@ -9,18 +9,21 @@ struct MemoryVisualiserClass
 public:
 	class UClass*                                                ClassType;                                         // 0x0(0x8)
 	char                                                         MemoryGatheringMode;                               // 0x8(0x1)
-	char                                                         pad0x7_CZZZK[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_STLG1[0x7];                                 // 0x9(0x7)
 	struct FString                                               DisplayName;                                       // 0x10(0x10)
 	float                                                        MemoryUsageMB;                                     // 0x20(0x4)
-	char                                                         pad0x4_VAQDE[0x4];                                 // 0x24(0x4)
+	char                                                         pad0x4_OSUJ9[0x4];                                 // 0x24(0x4)
 };
 
 
-// Size 0x10
-struct StaticMeshComponentList
+// Size 0x20
+struct MemoryVisualiserStat
 {
 public:
-	TArray<class StaticMeshComponent*>                           Components;                                        // 0x0(0x10)
+	struct FName                                                 StatName;                                          // 0x0(0x8)
+	struct FString                                               DisplayName;                                       // 0x8(0x10)
+	float                                                        MemoryUsageMB;                                     // 0x18(0x4)
+	char                                                         pad0x4_AMBHH[0x4];                                 // 0x1c(0x4)
 };
 
 
@@ -58,14 +61,11 @@ public:
 };
 
 
-// Size 0x20
-struct MemoryVisualiserStat
+// Size 0x10
+struct StaticMeshComponentList
 {
 public:
-	struct FName                                                 StatName;                                          // 0x0(0x8)
-	struct FString                                               DisplayName;                                       // 0x8(0x10)
-	float                                                        MemoryUsageMB;                                     // 0x18(0x4)
-	char                                                         pad0x4_0DXC2[0x4];                                 // 0x1c(0x4)
+	TArray<class StaticMeshComponent*>                           Components;                                        // 0x0(0x10)
 };
 
 
@@ -77,7 +77,7 @@ public:
 	TArray<struct MemoryVisualiserStat>                          CategoryStats;                                     // 0x10(0x10)
 	TArray<struct MemoryVisualiserClass>                         CategoryClasses;                                   // 0x20(0x10)
 	bool                                                         CollectOnServer;                                   // 0x30(0x1)
-	char                                                         pad0x3_3YUL3[0x3];                                 // 0x31(0x3)
+	char                                                         pad0x3_EZB34[0x3];                                 // 0x31(0x3)
 	float                                                        XboxOneBudgetMB;                                   // 0x34(0x4)
 	float                                                        XboxOneSBudgetMB;                                  // 0x38(0x4)
 	float                                                        XboxOneXBudgetMB;                                  // 0x3c(0x4)
@@ -86,7 +86,7 @@ public:
 	float                                                        PCHighSpecBudgetMB;                                // 0x48(0x4)
 	float                                                        PCUltraSpecBudgetMB;                               // 0x4c(0x4)
 	float                                                        MemoryUsageMB;                                     // 0x50(0x4)
-	char                                                         pad0x4_YK0U6[0x4];                                 // 0x54(0x4)
+	char                                                         pad0x4_NDHQN[0x4];                                 // 0x54(0x4)
 };
 
 

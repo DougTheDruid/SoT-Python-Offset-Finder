@@ -8,6 +8,7 @@ class BP_Harpoon_C: public Actor
 {
 public:
 	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3a0(0x8)
+	char                                                         pad0x536f0348_KEZY0[0x536f0348];                   // 0x3a8(0x536f0348)
 	class StaticMeshComponent*                                   shp_rope_coil_02_a;                                // 0x3a8(0x8)
 	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3b0(0x8)
 };

@@ -15,7 +15,7 @@ public:
 	class SpotLightComponent*                                    SpotLightComponent;                                // 0x3e8(0x8)
 	struct CinematicCameraReplicatedSpotLightParams              ReplicatedLightParams;                             // 0x3f0(0x40)
 	int                                                          LightIndex;                                        // 0x430(0x4)
-	char                                                         pad0x4_447GI[0x4];                                 // 0x434(0x4)
+	char                                                         pad0x4_H7MQE[0x4];                                 // 0x434(0x4)
 };
 
 

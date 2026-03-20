@@ -53,19 +53,23 @@ IncrementalActorBuilderCompletedTelemetryEvent:
     Offset: '0x130'
     Size: '0x8'
     Type: double
-  - Name: NumChildActorComponents
+  - Name: CompleteActorBuildMs
     Offset: '0x138'
+    Size: '0x8'
+    Type: double
+  - Name: NumChildActorComponents
+    Offset: '0x140'
     Size: '0x4'
     Type: int
   - Name: NumComponents
-    Offset: '0x13c'
+    Offset: '0x144'
     Size: '0x4'
     Type: int
   - Name: PerFrameTimeBudgetMs
-    Offset: '0x140'
+    Offset: '0x148'
     Size: '0x8'
     Type: double
-  ClassSize: '0x148'
+  ClassSize: '0x150'
 IncrementalActorBuilderFailedTelemetryEvent:
   Attributes:
   - Name: BuildId
@@ -118,7 +122,7 @@ PerFrameIncrementalActorBuildStepStats:
     Offset: '0x30'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_MAOQT[0x4]
+  - Name: pad0x4_3VI6E[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
@@ -133,7 +137,7 @@ PerObjectIncrementalActorBuildStepStats:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_FJB2T[0x4]
+  - Name: pad0x4_XSLK6[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char

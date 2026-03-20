@@ -25,14 +25,14 @@ FixedStepInterpCurveVector2D:
     Offset: '0x14'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_OV1OQ[0x3]
+  - Name: pad0x3_ON7P7[0x3]
     Offset: '0x15'
     Size: '0x3'
     Type: char
   ClassSize: '0x18'
 GrabBag:
   Attributes:
-  - Name: pad0x20_3MACG[0x20]
+  - Name: pad0x20_HCDKT[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
@@ -81,7 +81,7 @@ Pendulum:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_S5N3Y[0x3]
+  - Name: pad0x3_BKRH3[0x3]
     Offset: '0x9'
     Size: '0x3'
     Type: char
@@ -109,7 +109,7 @@ Pendulum:
     Offset: '0x20'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_00OIQ[0xc]
+  - Name: pad0xc_IDP2F[0xc]
     Offset: '0x24'
     Size: '0xc'
     Type: char
@@ -147,21 +147,21 @@ SpatialOffset:
     Offset: '0x4'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_XICL7[0x3]
+  - Name: pad0x3_YWVCX[0x3]
     Offset: '0x5'
     Size: '0x3'
     Type: char
   ClassSize: '0x8'
 TimedBuffer:
   Attributes:
-  - Name: pad0x18_9A52N[0x18]
+  - Name: pad0x18_KWQ66[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
   ClassSize: '0x18'
 WeightedProbabilityRange:
   Attributes:
-  - Name: pad0x10_YTQMY[0x10]
+  - Name: pad0x10_0G90U[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
@@ -172,7 +172,7 @@ WeightedProbabilityRange:
   ClassSize: '0x20'
 WeightedProbabilityRangeOfRanges:
   Attributes:
-  - Name: pad0x20_R9HPW[0x20]
+  - Name: pad0x20_F48FN[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char

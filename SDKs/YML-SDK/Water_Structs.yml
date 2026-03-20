@@ -37,7 +37,7 @@ BuoyancyDragSample:
     Offset: '0x2c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x63_MGHMK[0x63]
+  - Name: pad0x63_QBHB1[0x63]
     Offset: '0x2d'
     Size: '0x63'
     Type: char
@@ -48,7 +48,7 @@ BuoyancySampleMovement:
     Offset: '0x0'
     Size: '0x10'
     Type: TArray<struct BuoyancySampleMovementConfiguration>
-  - Name: pad0x40_0WG24[0x40]
+  - Name: pad0x40_SGQY2[0x40]
     Offset: '0x10'
     Size: '0x40'
     Type: char
@@ -60,7 +60,7 @@ BuoyancySampleMovement:
     Offset: '0x58'
     Size: '0x8'
     Type: class CurveFloat*
-  - Name: pad0x8_2E1GK[0x8]
+  - Name: pad0x8_LKY8O[0x8]
     Offset: '0x60'
     Size: '0x8'
     Type: char
@@ -79,7 +79,7 @@ BuoyancySampleMovementConfiguration:
     Offset: '0x18'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_VFYZR[0x4]
+  - Name: pad0x4_PHXV3[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -95,7 +95,7 @@ BuoyancySampleMovementConfiguration:
     Offset: '0x30'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_GCEC9[0x4]
+  - Name: pad0x4_UEAZV[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
@@ -106,7 +106,7 @@ BuoyancySampleMovementConfigurationEntry:
     Offset: '0x0'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_AP3TH[0x4]
+  - Name: pad0x4_XN0NR[0x4]
     Offset: '0xc'
     Size: '0x4'
     Type: char
@@ -133,7 +133,7 @@ BuoyancyVolumeSample:
     Offset: '0x11'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_32RKY[0x2]
+  - Name: pad0x2_5VR8W[0x2]
     Offset: '0x12'
     Size: '0x2'
     Type: char
@@ -145,7 +145,7 @@ BuoyancyVolumeSample:
     Offset: '0x18'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_Y0LUD[0x4]
+  - Name: pad0x4_LJU6H[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -173,7 +173,7 @@ BuoyancyVolumeSample:
     Offset: '0x44'
     Size: '0x4'
     Type: float
-  - Name: pad0x10_1DQ0F[0x10]
+  - Name: pad0x10_UJL0A[0x10]
     Offset: '0x48'
     Size: '0x10'
     Type: char
@@ -191,14 +191,14 @@ EventCurrentWaterPlaneChange:
   ClassSize: '0x10'
 EventEnteredWaterExclusionZone:
   Attributes:
-  - Name: pad0x1_5WVTY[0x1]
+  - Name: pad0x1_9OU9E[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 EventLeftWaterExclusionZone:
   Attributes:
-  - Name: pad0x1_ZH0PP[0x1]
+  - Name: pad0x1_TVZM5[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -228,77 +228,77 @@ FFTWaterQueryResult:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_T1XA4[0x3]
+  - Name: pad0x3_VT0J5[0x3]
     Offset: '0x19'
     Size: '0x3'
     Type: char
   ClassSize: '0x1c'
 LocalizedHeightOverride:
   Attributes:
-  - Name: pad0xc_4CX4E[0xc]
+  - Name: pad0xc_BU2XU[0xc]
     Offset: '0x0'
     Size: '0xc'
     Type: char
   ClassSize: '0xc'
 SplashProbe:
   Attributes:
-  - Name: pad0x8_19FE9[0x8]
+  - Name: pad0x8_PWNJ2[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
   - Name: Probe
     Offset: '0x8'
-    Size: '0xd8'
+    Size: '0xd0'
     Type: struct WaterSplashProbe
   - Name: ProbeSamplingTime
-    Offset: '0xe0'
+    Offset: '0xd8'
     Size: '0x4'
     Type: float
   - Name: TimeBetweenProbeVfx
-    Offset: '0xe4'
+    Offset: '0xdc'
     Size: '0x4'
     Type: float
   - Name: ParticleSystem
-    Offset: '0xe8'
+    Offset: '0xe0'
     Size: '0x8'
     Type: class Object*
   - Name: UnderwaterUsage
-    Offset: '0xf0'
+    Offset: '0xe8'
     Size: '0x1'
     Type: byte
   - Name: SpawnAttached
-    Offset: '0xf1'
+    Offset: '0xe9'
     Size: '0x1'
     Type: bool
   - Name: AttachToWaterSurface
-    Offset: '0xf2'
+    Offset: '0xea'
     Size: '0x1'
     Type: bool
   - Name: SplashAttachType
-    Offset: '0xf3'
+    Offset: '0xeb'
     Size: '0x1'
     Type: byte
   - Name: VfxSpawnOffset
-    Offset: '0xf4'
+    Offset: '0xec'
     Size: '0xc'
     Type: struct Vector
   - Name: Enabled
-    Offset: '0x100'
+    Offset: '0xf8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_1LM6L[0x7]
-    Offset: '0x101'
+  - Name: pad0x7_1V12I[0x7]
+    Offset: '0xf9'
     Size: '0x7'
     Type: char
   - Name: CurrentlyPlayingVFX
-    Offset: '0x108'
+    Offset: '0x100'
     Size: '0x8'
     Type: class ParticleSystemComponent*
-  - Name: pad0x18_T39XS[0x18]
-    Offset: '0x110'
+  - Name: pad0x18_K65FJ[0x18]
+    Offset: '0x108'
     Size: '0x18'
     Type: char
-  ClassSize: '0x128'
+  ClassSize: '0x120'
 WaterBuoyancy:
   Attributes:
   - Name: PrimitiveComponent
@@ -317,7 +317,7 @@ WaterBuoyancy:
     Offset: '0x10'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_W4THJ[0x4]
+  - Name: pad0x4_96KDS[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -337,7 +337,7 @@ WaterBuoyancy:
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: pad0xfc_6ZPJD[0xfc]
+  - Name: pad0xfc_VU5QD[0xfc]
     Offset: '0x44'
     Size: '0xfc'
     Type: char
@@ -352,7 +352,7 @@ WaterInformation:
     Offset: '0x8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_YOBC5[0x7]
+  - Name: pad0x7_3LDPW[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
@@ -363,7 +363,7 @@ WaterQueryData:
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_BR75B[0x4]
+  - Name: pad0x4_TC8AD[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -439,7 +439,7 @@ WaterQueryData:
     Offset: '0x60'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_9US5F[0x4]
+  - Name: pad0x4_HV84E[0x4]
     Offset: '0x64'
     Size: '0x4'
     Type: char
@@ -473,7 +473,7 @@ WaterServiceFrameDataTelemetryEvent:
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_W4J6K[0x4]
+  - Name: pad0x4_9IMPG[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -529,7 +529,7 @@ WaterServiceFrameDataTelemetryEvent:
     Offset: '0x60'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_DW9KN[0x4]
+  - Name: pad0x4_16CKL[0x4]
     Offset: '0x64'
     Size: '0x4'
     Type: char
@@ -553,74 +553,70 @@ WaterServiceFrameDataTelemetryEvent:
     Offset: '0xa8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_UAWKR[0x4]
+  - Name: pad0x4_IHG43[0x4]
     Offset: '0xac'
     Size: '0x4'
     Type: char
   ClassSize: '0xb0'
 WaterSplashProbe:
   Attributes:
-  - Name: pad0x8_KIWS1[0x8]
-    Offset: '0x0'
-    Size: '0x8'
-    Type: char
   - Name: ProbeDebugName
-    Offset: '0x8'
+    Offset: '0x0'
     Size: '0x10'
     Type: struct FString
   - Name: LocalOffset
-    Offset: '0x18'
+    Offset: '0x10'
     Size: '0xc'
     Type: struct Vector
   - Name: Height
-    Offset: '0x24'
+    Offset: '0x1c'
     Size: '0x4'
     Type: float
   - Name: Pitch
-    Offset: '0x28'
+    Offset: '0x20'
     Size: '0x4'
     Type: float
   - Name: Yaw
-    Offset: '0x2c'
+    Offset: '0x24'
     Size: '0x4'
     Type: float
   - Name: Roll
-    Offset: '0x30'
+    Offset: '0x28'
     Size: '0x4'
     Type: float
   - Name: RateOfChangeThreshold
-    Offset: '0x34'
+    Offset: '0x2c'
     Size: '0x4'
     Type: float
   - Name: LocalOffsetAdjustment
-    Offset: '0x38'
+    Offset: '0x30'
     Size: '0xc'
     Type: struct Vector
   - Name: LocalOffsetAdjustmentDuration
-    Offset: '0x44'
+    Offset: '0x3c'
     Size: '0x4'
     Type: float
   - Name: Type
-    Offset: '0x48'
+    Offset: '0x40'
     Size: '0x1'
     Type: byte
   - Name: WaterHeightType
-    Offset: '0x49'
+    Offset: '0x41'
     Size: '0x1'
     Type: byte
-  - Name: pad0x2_62WWA[0x2]
-    Offset: '0x4a'
+  - Name: pad0x2_GZ6O2[0x2]
+    Offset: '0x42'
     Size: '0x2'
     Type: char
   - Name: StaticWaterHeightValue
-    Offset: '0x4c'
+    Offset: '0x44'
     Size: '0x4'
     Type: float
-  - Name: pad0x88_9FQLR[0x88]
-    Offset: '0x50'
+  - Name: pad0x88_FVBJP[0x88]
+    Offset: '0x48'
     Size: '0x88'
     Type: char
-  ClassSize: '0xd8'
+  ClassSize: '0xd0'
 WaterSplashProbesContainer:
   Attributes:
   - Name: Probes
@@ -631,7 +627,7 @@ WaterSplashProbesContainer:
     Offset: '0x10'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_DI2S8[0x4]
+  - Name: pad0x4_0N8HW[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -650,7 +646,7 @@ WaterSpout:
     Offset: '0x38'
     Size: '0x8'
     Type: class ParticleSystemComponent*
-  - Name: pad0x30_WPOPV[0x30]
+  - Name: pad0x30_4ENUQ[0x30]
     Offset: '0x40'
     Size: '0x30'
     Type: char

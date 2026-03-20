@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 CustomMap:
   Attributes:
-  - Name: pad0x8_DL1WJ[0x8]
+  - Name: pad0x8_QV9IB[0x8]
     Offset: '0x8c0'
     Size: '0x8'
     Type: char
@@ -18,7 +18,7 @@ CustomMap:
     Offset: '0x8e0'
     Size: '0x4'
     Type: float
-  - Name: pad0x1c_HXQDW[0x1c]
+  - Name: pad0x1c_QCWQL[0x1c]
     Offset: '0x8e4'
     Size: '0x1c'
     Type: char
@@ -56,7 +56,7 @@ CustomMapDataTypeBase:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_RXYYZ[0x3]
+  - Name: pad0x3_VTDUL[0x3]
     Offset: '0x29'
     Size: '0x3'
     Type: char
@@ -64,7 +64,7 @@ CustomMapDataTypeBase:
     Offset: '0x2c'
     Size: '0x10'
     Type: struct Guid
-  - Name: pad0x4_B065S[0x4]
+  - Name: pad0x4_AG6RM[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -74,7 +74,7 @@ CustomMapDataTypeBase:
   Super: Object
 CustomMapDataTypeImage:
   Attributes:
-  - Name: pad0x20_78YQ8[0x20]
+  - Name: pad0x20_IEF3C[0x20]
     Offset: '0x50'
     Size: '0x20'
     Type: char
@@ -94,7 +94,7 @@ CustomMapDataTypeImage:
     Offset: '0x79'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_DICWG[0x2]
+  - Name: pad0x2_W3V55[0x2]
     Offset: '0x7a'
     Size: '0x2'
     Type: char
@@ -106,7 +106,7 @@ CustomMapDataTypeImage:
     Offset: '0x8c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_BOCJS[0x3]
+  - Name: pad0x3_0WFFD[0x3]
     Offset: '0x8d'
     Size: '0x3'
     Type: char
@@ -124,7 +124,7 @@ CustomMapDataTypePositional:
     Offset: '0x48'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_E7K2L[0x4]
+  - Name: pad0x4_EWWGP[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -150,7 +150,7 @@ CustomMapDataTypeText:
     Offset: '0x90'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_DU7FL[0x3]
+  - Name: pad0x3_4WIQC[0x3]
     Offset: '0x91'
     Size: '0x3'
     Type: char
@@ -172,7 +172,7 @@ CustomMapDisplayObjectBase:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_43XC9[0x3]
+  - Name: pad0x3_50KGU[0x3]
     Offset: '0x29'
     Size: '0x3'
     Type: char
@@ -180,7 +180,7 @@ CustomMapDisplayObjectBase:
     Offset: '0x2c'
     Size: '0x10'
     Type: struct Guid
-  - Name: pad0x4_PK9W0[0x4]
+  - Name: pad0x4_9KZM4[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -210,7 +210,7 @@ CustomMapDisplayObjectImage:
     Offset: '0x69'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_AQUC0[0x2]
+  - Name: pad0x2_ZUG6H[0x2]
     Offset: '0x6a'
     Size: '0x2'
     Type: char
@@ -222,7 +222,7 @@ CustomMapDisplayObjectImage:
     Offset: '0x7c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_LP9L2[0x3]
+  - Name: pad0x3_745TU[0x3]
     Offset: '0x7d'
     Size: '0x3'
     Type: char
@@ -234,7 +234,7 @@ CustomMapDisplayObjectImage:
     Offset: '0xb0'
     Size: '0x8'
     Type: class Texture*
-  - Name: pad0x18_W09ZD[0x18]
+  - Name: pad0x18_3GPUO[0x18]
     Offset: '0xb8'
     Size: '0x18'
     Type: char
@@ -252,7 +252,7 @@ CustomMapDisplayObjectPositional:
     Offset: '0x48'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_MSH9N[0x4]
+  - Name: pad0x4_NDT7D[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -278,7 +278,7 @@ CustomMapDisplayObjectText:
     Offset: '0x90'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_LTYU9[0x3]
+  - Name: pad0x3_WBRJK[0x3]
     Offset: '0x91'
     Size: '0x3'
     Type: char
@@ -294,7 +294,7 @@ CustomMapDisplayObjectText:
     Offset: '0xa8'
     Size: '0x10'
     Type: TArray<struct TreasureMapTextEntry>
-  - Name: pad0x50_F2N2J[0x50]
+  - Name: pad0x50_7OMTJ[0x50]
     Offset: '0xb8'
     Size: '0x50'
     Type: char

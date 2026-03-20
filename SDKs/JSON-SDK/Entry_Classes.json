@@ -12,9 +12,9 @@
         "Offset": "0x3a8"
       },
       {
-        "Name": "pad0x2715ed30_3JB46[0x2715ed30]",
+        "Name": "pad0x2be287d0_DIO0F[0x2be287d0]",
         "Type": "char",
-        "Size": "0x2715ed30",
+        "Size": "0x2be287d0",
         "Offset": "0x3b0"
       }
     ]

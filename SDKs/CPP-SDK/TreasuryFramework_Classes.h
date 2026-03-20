@@ -6,68 +6,11 @@
 #include "TreasuryFramework_Structs.h"
 
 
-// Size 0x8 (Full Size[0x418] - InheritedSize[0x410]
-class SunkenKingdomTreasuryDeepSeaRegion: public DeepSeaRegion
-{
-public:
-	char                                                         pad0x8_LCI11[0x8];                                 // 0x410(0x8)
-};
-
-
-// Size 0xb0 (Full Size[0x588] - InheritedSize[0x4d8]
-class SunkenKingdomShrineEventRoom: public EventRoom
-{
-public:
-	char                                                         pad0x10_8TY0H[0x10];                               // 0x4d8(0x10)
-	class Actor*                                                 EntranceActor;                                     // 0x4e8(0x8)
-	class GameEventOnDemandAvailabilityHandler*                  GameEventOnDemandAvailabilityHandler;              // 0x4f0(0x8)
-	struct StringAssetReference                                  AvailabilityParamsAssetFileLocation;               // 0x4f8(0x10)
-	class ObjectProximityResetComponent*                         PuzzleResetComponent;                              // 0x508(0x8)
-	class GameEventItemSpawnSelectorComponent*                   ItemSpawnSelectorComponent;                        // 0x510(0x8)
-	char                                                         pad0x70_00XG1[0x70];                               // 0x518(0x70)
-};
-
-
-// Size 0xa8 (Full Size[0x448] - InheritedSize[0x3a0]
-class ShimmerActor: public Actor
-{
-public:
-	char                                                         pad0xa8_1NJTA[0xa8];                               // 0x3a0(0xa8)
-};
-
-
-// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
-class TreasuryWaveDataAsset: public DataAsset
-{
-public:
-	TArray<class AIProgressiveWavesSpawner*>                     Waves1Player;                                      // 0x28(0x10)
-	TArray<class AIProgressiveWavesSpawner*>                     Waves2Player;                                      // 0x38(0x10)
-	TArray<class AIProgressiveWavesSpawner*>                     Waves3Player;                                      // 0x48(0x10)
-	TArray<class AIProgressiveWavesSpawner*>                     Waves4Player;                                      // 0x58(0x10)
-};
-
-
-// Size 0x30 (Full Size[0x4f0] - InheritedSize[0x4c0]
-class SunkenKingdomShrineFinalRewardSpawnComponent: public ItemSpawnComponent
-{
-public:
-	char                                                         pad0x30_ABLRJ[0x30];                               // 0x4c0(0x30)
-};
-
-
-// Size 0x8 (Full Size[0x418] - InheritedSize[0x410]
-class SunkenKingdomShrineDeepSeaRegion: public DeepSeaRegion
-{
-public:
-	char                                                         pad0x8_61IVU[0x8];                                 // 0x410(0x8)
-};
-
-
-// Size 0x248 (Full Size[0x5e8] - InheritedSize[0x3a0]
+// Size 0x240 (Full Size[0x5e0] - InheritedSize[0x3a0]
 class TreasuryRoom: public Actor
 {
 public:
-	char                                                         pad0x20_E7UX2[0x20];                               // 0x3a0(0x20)
+	char                                                         pad0x20_I4TXA[0x20];                               // 0x3a0(0x20)
 	class BoxComponent*                                          RoomAreaComponent;                                 // 0x3c0(0x8)
 	float                                                        TreasuryInactiveDurationMinSeconds;                // 0x3c8(0x4)
 	float                                                        TreasuryInactiveDurationMaxSeconds;                // 0x3cc(0x4)
@@ -96,12 +39,69 @@ public:
 	TArray<uintptr_t>                                            CachedParticipantControllers;                      // 0x4c8(0x10)
 	class Actor*                                                 VaultLootSpawnerActor;                             // 0x4d8(0x8)
 	struct PlayerStat                                            VaultOpenStat;                                     // 0x4e0(0x4)
-	char                                                         pad0x4_GGW5M[0x4];                                 // 0x4e4(0x4)
+	char                                                         pad0x4_RMCBY[0x4];                                 // 0x4e4(0x4)
 	class MechanismActionComponent*                              FloodMechanismComponent;                           // 0x4e8(0x8)
 	class MechanismActionComponent*                              DrainMechanismComponent;                           // 0x4f0(0x8)
 	class MechanismActionComponent*                              VaultMechanismComponent;                           // 0x4f8(0x8)
-	struct ObjectMessagingDispatcher                             EventDispatcher;                                   // 0x530(0xa0)
-	char                                                         pad0x18_EGRP4[0x18];                               // 0x5d0(0x18)
+	struct ObjectMessagingDispatcher                             EventDispatcher;                                   // 0x530(0x98)
+	char                                                         pad0x18_VZAO3[0x18];                               // 0x5c8(0x18)
+};
+
+
+// Size 0x40 (Full Size[0x68] - InheritedSize[0x28]
+class TreasuryWaveDataAsset: public DataAsset
+{
+public:
+	TArray<class AIProgressiveWavesSpawner*>                     Waves1Player;                                      // 0x28(0x10)
+	TArray<class AIProgressiveWavesSpawner*>                     Waves2Player;                                      // 0x38(0x10)
+	TArray<class AIProgressiveWavesSpawner*>                     Waves3Player;                                      // 0x48(0x10)
+	TArray<class AIProgressiveWavesSpawner*>                     Waves4Player;                                      // 0x58(0x10)
+};
+
+
+// Size 0x8 (Full Size[0x418] - InheritedSize[0x410]
+class SunkenKingdomShrineDeepSeaRegion: public DeepSeaRegion
+{
+public:
+	char                                                         pad0x8_C1W76[0x8];                                 // 0x410(0x8)
+};
+
+
+// Size 0xa0 (Full Size[0x440] - InheritedSize[0x3a0]
+class ShimmerActor: public Actor
+{
+public:
+	char                                                         pad0xa0_7UGOG[0xa0];                               // 0x3a0(0xa0)
+};
+
+
+// Size 0x8 (Full Size[0x418] - InheritedSize[0x410]
+class SunkenKingdomTreasuryDeepSeaRegion: public DeepSeaRegion
+{
+public:
+	char                                                         pad0x8_EVL70[0x8];                                 // 0x410(0x8)
+};
+
+
+// Size 0x30 (Full Size[0x4f0] - InheritedSize[0x4c0]
+class SunkenKingdomShrineFinalRewardSpawnComponent: public ItemSpawnComponent
+{
+public:
+	char                                                         pad0x30_1OYRK[0x30];                               // 0x4c0(0x30)
+};
+
+
+// Size 0xb0 (Full Size[0x580] - InheritedSize[0x4d0]
+class SunkenKingdomShrineEventRoom: public EventRoom
+{
+public:
+	char                                                         pad0x10_DFGD0[0x10];                               // 0x4d0(0x10)
+	class Actor*                                                 EntranceActor;                                     // 0x4e0(0x8)
+	class GameEventOnDemandAvailabilityHandler*                  GameEventOnDemandAvailabilityHandler;              // 0x4e8(0x8)
+	struct StringAssetReference                                  AvailabilityParamsAssetFileLocation;               // 0x4f0(0x10)
+	class ObjectProximityResetComponent*                         PuzzleResetComponent;                              // 0x500(0x8)
+	class GameEventItemSpawnSelectorComponent*                   ItemSpawnSelectorComponent;                        // 0x508(0x8)
+	char                                                         pad0x70_0Q0XF[0x70];                               // 0x510(0x70)
 };
 
 

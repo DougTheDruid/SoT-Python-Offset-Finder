@@ -10,23 +10,23 @@
       }
     ]
   },
-  "CaptureResolution": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_06AZN[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "CaptureProtocolID": {
     "ClassSize": "0x8",
     "Attributes": [
       {
         "Name": "Identifier",
         "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CaptureResolution": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_ZRYJR[0x8]",
+        "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"
       }
@@ -48,7 +48,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_LIQ3W[0x7]",
+        "Name": "pad0x7_CWEB8[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
@@ -78,7 +78,7 @@
         "Offset": "0x31"
       },
       {
-        "Name": "pad0x2_NK2QL[0x2]",
+        "Name": "pad0x2_8LOOA[0x2]",
         "Type": "char",
         "Size": "0x2",
         "Offset": "0x32"
@@ -96,7 +96,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x3_763TG[0x3]",
+        "Name": "pad0x3_8WRW6[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x39"
@@ -156,7 +156,7 @@
         "Offset": "0x4e"
       },
       {
-        "Name": "pad0x1_D8W3I[0x1]",
+        "Name": "pad0x1_TLVQX[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x4f"

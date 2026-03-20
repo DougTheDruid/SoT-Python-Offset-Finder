@@ -16,7 +16,7 @@ GlitterBeardFinaleCoordinatorComponent:
     Offset: '0xc0'
     Size: '0x10'
     Type: struct FinaleReplicationState
-  - Name: pad0x90_T3R5P[0x90]
+  - Name: pad0x90_NKT3I[0x90]
     Offset: '0xd0'
     Size: '0x90'
     Type: char
@@ -36,7 +36,7 @@ GlitterBeardLanternSoundEffect:
     Offset: '0x38'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_HHSHK[0x4]
+  - Name: pad0x4_JHRUH[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -52,7 +52,7 @@ GlitterBeardLanternSoundEffect:
     Offset: '0x50'
     Size: '0x20'
     Type: struct WwiseEmitter
-  - Name: pad0x10_NUL83[0x10]
+  - Name: pad0x10_RBUKD[0x10]
     Offset: '0x70'
     Size: '0x10'
     Type: char
@@ -62,7 +62,7 @@ GlitterBeardLanternSoundEffect:
   Super: EffectBlendObjectBase
 GlitterBeardTelemetryComponent:
   Attributes:
-  - Name: pad0x48_2KCIB[0x48]
+  - Name: pad0x48_G5OKU[0x48]
     Offset: '0xb8'
     Size: '0x48'
     Type: char
@@ -72,7 +72,7 @@ GlitterBeardTelemetryComponent:
   Super: ActorComponent
 GlitterBeardTree:
   Attributes:
-  - Name: pad0x28_QLNSB[0x28]
+  - Name: pad0x28_U9ZH1[0x28]
     Offset: '0x3a0'
     Size: '0x28'
     Type: char
@@ -88,7 +88,7 @@ GlitterBeardTree:
     Offset: '0x3d8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_HS0F8[0x4]
+  - Name: pad0x4_6DZ4N[0x4]
     Offset: '0x3dc'
     Size: '0x4'
     Type: char
@@ -128,7 +128,7 @@ GlitterBeardTree:
     Offset: '0x418'
     Size: '0x4'
     Type: float
-  - Name: pad0x24c_WZU6D[0x24c]
+  - Name: pad0x24c_DZ9J7[0x24c]
     Offset: '0x41c'
     Size: '0x24c'
     Type: char
@@ -140,7 +140,7 @@ GlitterBeardTree:
     Offset: '0x670'
     Size: '0x20'
     Type: struct WwiseEmitter
-  - Name: pad0x30_RE1XG[0x30]
+  - Name: pad0x30_G8W04[0x30]
     Offset: '0x690'
     Size: '0x30'
     Type: char
@@ -154,7 +154,7 @@ GlitterBeardTreeVisualFeedbackComponent:
     Offset: '0xb8'
     Size: '0x10'
     Type: TArray<struct VisualFeedbackList>
-  - Name: pad0x10_A6NYB[0x10]
+  - Name: pad0x10_1T7V8[0x10]
     Offset: '0xc8'
     Size: '0x10'
     Type: char
@@ -162,7 +162,7 @@ GlitterBeardTreeVisualFeedbackComponent:
     Offset: '0xd8'
     Size: '0x10'
     Type: TArray<char>
-  - Name: pad0x20_LC8FO[0x20]
+  - Name: pad0x20_IV81E[0x20]
     Offset: '0xe8'
     Size: '0x20'
     Type: char
@@ -190,7 +190,7 @@ GlitterBeardUnlockVFXCoordinatorComponent:
     Offset: '0xd0'
     Size: '0x4'
     Type: float
-  - Name: pad0xc_KBNJV[0xc]
+  - Name: pad0xc_R5254[0xc]
     Offset: '0xd4'
     Size: '0xc'
     Type: char
@@ -201,10 +201,10 @@ GlitterBeardUnlockVFXCoordinatorComponent:
 GlitterbeardSlidingDoor:
   Attributes:
   - Name: DecalBlendComponent
-    Offset: '0x518'
+    Offset: '0x510'
     Size: '0x8'
     Type: class EffectBlendControllerComponent*
   ClassSize: '0x8'
-  FullSize: '0x520'
-  InheritedSize: '0x518'
+  FullSize: '0x518'
+  InheritedSize: '0x510'
   Super: SlidingDoor

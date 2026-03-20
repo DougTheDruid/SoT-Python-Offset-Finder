@@ -6,33 +6,32 @@
 #include "MultiCrewSubModes_Structs.h"
 
 
-// Size 0x1a8 (Full Size[0x548] - InheritedSize[0x3a0]
-class MultiCrewSubModesService: public Actor
+// Size 0x60 (Full Size[0xf8] - InheritedSize[0x98]
+class TaleQuestWaitForSessionStatusChangeStep: public TaleQuestStep
 {
 public:
-	char                                                         pad0x50_XS62W[0x50];                               // 0x3a0(0x50)
-	struct SubModeSessionData                                    ActiveSessionData;                                 // 0x3f0(0x18)
-	char                                                         pad0x140_QMF1P[0x140];                             // 0x408(0x140)
+	char                                                         pad0x60_VZ64M[0x60];                               // 0x98(0x60)
 };
 
 
-// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class MultiCrewSubModesServiceParamsDataAsset: public DataAsset
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
+class SubModesSessionLayerDesc: public Object
 {
 public:
-	int                                                          MaxCrews;                                          // 0x28(0x4)
-	int                                                          MinCrews;                                          // 0x2c(0x4)
-	float                                                        WaitToStartTime;                                   // 0x30(0x4)
-	char                                                         pad0x4_GM97H[0x4];                                 // 0x34(0x4)
-	TArray<struct Transform>                                     SpawnLocations;                                    // 0x38(0x10)
+	struct FString                                               Identifier;                                        // 0x28(0x10)
+	struct StoryFlagContainer                                    Stories;                                           // 0x38(0x18)
+	struct FeatureFlag                                           Feature;                                           // 0x50(0xc)
+	char                                                         pad0x4_2FXIG[0x4];                                 // 0x5c(0x4)
 };
 
 
-// Size 0x50 (Full Size[0x6d0] - InheritedSize[0x680]
-class MultiCrewSubModesArrivalTunnel: public ClientDestinationPreLoadingArrivalTunnelOfTheDamned
+// Size 0x28 (Full Size[0x50] - InheritedSize[0x28]
+class SubModesSessionLayer: public Object
 {
 public:
-	char                                                         pad0x50_BO2XF[0x50];                               // 0x680(0x50)
+	char                                                         pad0x18_6O7EB[0x18];                               // 0x28(0x18)
+	class World*                                                 CachedWorld;                                       // 0x40(0x8)
+	class SubModesSessionLayerDesc*                              Params;                                            // 0x48(0x8)
 };
 
 
@@ -40,6 +39,171 @@ public:
 class MultiCrewSubModesServiceInterface: public Interface
 {
 public:
+};
+
+
+// Size 0x38 (Full Size[0x60] - InheritedSize[0x28]
+class MultiCrewSubModesServiceParamsDataAsset: public DataAsset
+{
+public:
+	int                                                          MaxCrews;                                          // 0x28(0x4)
+	int                                                          MinCrews;                                          // 0x2c(0x4)
+	float                                                        WaitToStartTime;                                   // 0x30(0x4)
+	bool                                                         ReduceMinCrewsOverTime;                            // 0x34(0x1)
+	char                                                         pad0x3_MUBJA[0x3];                                 // 0x35(0x3)
+	float                                                        InitialMinCrewsReductionTime;                      // 0x38(0x4)
+	float                                                        MinCrewsReductionTime;                             // 0x3c(0x4)
+	TArray<struct Transform>                                     SpawnLocations;                                    // 0x40(0x10)
+	TArray<class SubModesSessionLayerDesc*>                      Layers;                                            // 0x50(0x10)
+};
+
+
+// Size 0x8 (Full Size[0x88] - InheritedSize[0x80]
+class TaleQuestWaitForSessionStatusChangeStepDesc: public TaleQuestStepDesc
+{
+public:
+	char                                                         SessionStatus;                                     // 0x80(0x1)
+	bool                                                         HaveTimeout;                                       // 0x81(0x1)
+	char                                                         pad0x2_SG2FP[0x2];                                 // 0x82(0x2)
+	float                                                        TimeoutDurationSeconds;                            // 0x84(0x4)
+};
+
+
+// Size 0x2a0 (Full Size[0x640] - InheritedSize[0x3a0]
+class MultiCrewSubModesService: public Actor
+{
+public:
+	char                                                         pad0x50_TYRRS[0x50];                               // 0x3a0(0x50)
+	struct SubModeSessionData                                    ActiveSessionData;                                 // 0x3f0(0x48)
+	char                                                         pad0x208_0YBCM[0x208];                             // 0x438(0x208)
+};
+
+
+// Size 0x50 (Full Size[0x6e0] - InheritedSize[0x690]
+class MultiCrewSubModesArrivalTunnel: public ClientDestinationPreLoadingArrivalTunnelOfTheDamned
+{
+public:
+	char                                                         pad0x50_LZOY5[0x50];                               // 0x690(0x50)
+};
+
+
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestMultiCrewSubModesFunctionStepLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x28 (Full Size[0x78] - InheritedSize[0x50]
+class SubModesSessionTaleLayer: public SubModesSessionLayer
+{
+public:
+	char                                                         TriggerPoint;                                      // 0x50(0x1)
+	bool                                                         UseAllParticipants;                                // 0x51(0x1)
+	char                                                         pad0x6_BT3H2[0x6];                                 // 0x52(0x6)
+	class VoyageDescDataAsset*                                   VoyageDesc;                                        // 0x58(0x8)
+	char                                                         pad0x18_SNYY3[0x18];                               // 0x60(0x18)
+};
+
+
+// Size 0x10 (Full Size[0x70] - InheritedSize[0x60]
+class SubModesSessionDebugFactionsLayerDesc: public SubModesSessionLayerDesc
+{
+public:
+	TArray<class Class*>                                         FactionList;                                       // 0x60(0x10)
+};
+
+
+// Size 0x28 (Full Size[0x88] - InheritedSize[0x60]
+class SubModesSessionActorSpawnLayerDesc: public SubModesSessionLayerDesc
+{
+public:
+	char                                                         TriggerPoint;                                      // 0x60(0x1)
+	char                                                         DestroyTriggerPoint;                               // 0x61(0x1)
+	char                                                         pad0x6_SSG5N[0x6];                                 // 0x62(0x6)
+	struct StringAssetReference                                  ActorWithNamedPointsComponent;                     // 0x68(0x10)
+	struct FName                                                 NamedPointsGroup;                                  // 0x78(0x8)
+	class ItemSpawnData*                                         ToSpawn;                                           // 0x80(0x8)
+};
+
+
+// Size 0x50 (Full Size[0xa0] - InheritedSize[0x50]
+class SubModesSessionActorSpawnLayer: public SubModesSessionLayer
+{
+public:
+	char                                                         TriggerPoint;                                      // 0x50(0x1)
+	char                                                         DestroyTriggerPoint;                               // 0x51(0x1)
+	char                                                         pad0x6_R0SY6[0x6];                                 // 0x52(0x6)
+	struct StringAssetReference                                  ActorWithNamedPointsComponent;                     // 0x58(0x10)
+	struct FName                                                 NamedPointsGroup;                                  // 0x68(0x8)
+	class ItemSpawnData*                                         ToSpawn;                                           // 0x70(0x8)
+	char                                                         pad0x18_R43U9[0x18];                               // 0x78(0x18)
+	TArray<class Actor*>                                         SpawnedActors;                                     // 0x90(0x10)
+};
+
+
+// Size 0x38 (Full Size[0x98] - InheritedSize[0x60]
+class SubModesSessionSendAllianceRewardsLayerDesc: public SubModesSessionLayerDesc
+{
+public:
+	TArray<struct RewardId>                                      RewardIDRanks;                                     // 0x60(0x10)
+	struct RewardId                                              LastPlaceRewardID;                                 // 0x70(0x8)
+	int                                                          MinimumStreakRank;                                 // 0x78(0x4)
+	char                                                         pad0x4_XE97X[0x4];                                 // 0x7c(0x4)
+	TArray<struct SubModesSandsOfFateParticipantData>            SandsOfFateRewardsPerParticipants;                 // 0x80(0x10)
+	char                                                         NotifyPlayer;                                      // 0x90(0x1)
+	char                                                         RequestGold;                                       // 0x91(0x1)
+	char                                                         RequestXP;                                         // 0x92(0x1)
+	char                                                         RequestRenown;                                     // 0x93(0x1)
+	char                                                         RequestFactionAllegiance;                          // 0x94(0x1)
+	char                                                         RequestSovereignHandIn;                            // 0x95(0x1)
+	char                                                         pad0x2_82499[0x2];                                 // 0x96(0x2)
+};
+
+
+// Size 0x10 (Full Size[0x70] - InheritedSize[0x60]
+class SubModesSessionTaleLayerDesc: public SubModesSessionLayerDesc
+{
+public:
+	char                                                         TriggerPoint;                                      // 0x60(0x1)
+	bool                                                         UseAllParticipants;                                // 0x61(0x1)
+	char                                                         pad0x6_PS8NS[0x6];                                 // 0x62(0x6)
+	class VoyageDescDataAsset*                                   VoyageDesc;                                        // 0x68(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x50] - InheritedSize[0x50]
+class SubModesSessionDebugFactionsLayer: public SubModesSessionLayer
+{
+public:
+};
+
+
+// Size 0x20 (Full Size[0x70] - InheritedSize[0x50]
+class SubModesSessionRepairShipsLayer: public SubModesSessionLayer
+{
+public:
+	char                                                         TriggerPoint;                                      // 0x50(0x1)
+	char                                                         pad0x3_4G2MD[0x3];                                 // 0x51(0x3)
+	int                                                          NumShipsToRepair;                                  // 0x54(0x4)
+	char                                                         pad0x18_MAJUL[0x18];                               // 0x58(0x18)
+};
+
+
+// Size 0x0 (Full Size[0x50] - InheritedSize[0x50]
+class SubModesSessionSendAllianceRewardsLayer: public SubModesSessionLayer
+{
+public:
+};
+
+
+// Size 0x8 (Full Size[0x68] - InheritedSize[0x60]
+class SubModesSessionRepairShipsLayerDesc: public SubModesSessionLayerDesc
+{
+public:
+	char                                                         TriggerPoint;                                      // 0x60(0x1)
+	char                                                         pad0x3_XTRAD[0x3];                                 // 0x61(0x3)
+	int                                                          NumShipsToRepair;                                  // 0x64(0x4)
 };
 
 

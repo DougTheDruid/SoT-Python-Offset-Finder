@@ -21,7 +21,7 @@ ContestMatchmakingFactionMapEntry:
     Offset: '0x8'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_B0Q9Y[0x7]
+  - Name: pad0x7_URTP1[0x7]
     Offset: '0x9'
     Size: '0x7'
     Type: char
@@ -68,7 +68,7 @@ ContestMatchmakingServerRequestModel:
     Offset: '0x98'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_A0NDU[0x3]
+  - Name: pad0x3_4R3HL[0x3]
     Offset: '0x99'
     Size: '0x3'
     Type: char
@@ -80,7 +80,7 @@ ContestMatchmakingServerRequestModel:
     Offset: '0xac'
     Size: '0x10'
     Type: struct Guid
-  - Name: pad0x4_RS1UW[0x4]
+  - Name: pad0x4_DYC8X[0x4]
     Offset: '0xbc'
     Size: '0x4'
     Type: char
@@ -99,7 +99,7 @@ ExistingServerCrewModel:
     Offset: '0x14'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_GPOUJ[0x3]
+  - Name: pad0x3_R895X[0x3]
     Offset: '0x15'
     Size: '0x3'
     Type: char
@@ -107,7 +107,7 @@ ExistingServerCrewModel:
     Offset: '0x18'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_LZ4EH[0x4]
+  - Name: pad0x4_J0WMM[0x4]
     Offset: '0x1c'
     Size: '0x4'
     Type: char
@@ -127,7 +127,15 @@ ExistingServerCrewModel:
     Offset: '0x48'
     Size: '0x10'
     Type: TArray<struct UniqueNetIdRepl>
-  ClassSize: '0x58'
+  - Name: TimeSinceLastCrewEncounter
+    Offset: '0x58'
+    Size: '0x8'
+    Type: struct Timespan
+  - Name: RecentOpponentCrewIds
+    Offset: '0x60'
+    Size: '0x10'
+    Type: TArray<struct Guid>
+  ClassSize: '0x70'
 GameEventAvailabilityModel:
   Attributes:
   - Name: MainEvents
@@ -161,7 +169,7 @@ GameMainEventTypeModel:
     Offset: '0x31'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_5TS8D[0x6]
+  - Name: pad0x6_SV4OC[0x6]
     Offset: '0x32'
     Size: '0x6'
     Type: char
@@ -176,14 +184,14 @@ GameSubEventTypeModel:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_M3TAJ[0x4]
+  - Name: pad0x4_81MAX[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
   ClassSize: '0x18'
 OptionalPlayModeModel:
   Attributes:
-  - Name: pad0x50_IROF1[0x50]
+  - Name: pad0x50_XGIHM[0x50]
     Offset: '0x0'
     Size: '0x50'
     Type: char
@@ -225,7 +233,7 @@ ServerCrewModel:
     Offset: '0x48'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_L1E59[0x4]
+  - Name: pad0x4_9VCGM[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -241,7 +249,7 @@ ServerCrewModel:
     Offset: '0x70'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_07QL9[0x3]
+  - Name: pad0x3_1ZPML[0x3]
     Offset: '0x71'
     Size: '0x3'
     Type: char
@@ -261,7 +269,7 @@ ServerCrewModel:
     Offset: '0x8c'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_8MHZV[0x3]
+  - Name: pad0x3_KJYHT[0x3]
     Offset: '0x8d'
     Size: '0x3'
     Type: char
@@ -289,11 +297,19 @@ ServerCrewModel:
     Offset: '0xd8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_I87FS[0x7]
+  - Name: pad0x7_RCCN4[0x7]
     Offset: '0xd9'
     Size: '0x7'
     Type: char
-  ClassSize: '0xe0'
+  - Name: TimeSinceLastCrewEncounter
+    Offset: '0xe0'
+    Size: '0x8'
+    Type: struct Timespan
+  - Name: RecentOpponentCrewIds
+    Offset: '0xe8'
+    Size: '0x10'
+    Type: TArray<struct Guid>
+  ClassSize: '0xf8'
 ServerCrewRequestModel:
   Attributes:
   - Name: ServerId
@@ -375,7 +391,7 @@ ServerCrewResponseModel:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_L1N3S[0x7]
+  - Name: pad0x7_58NGZ[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -447,12 +463,47 @@ ServerQueueWaitTimesResponseModel:
   ClassSize: '0x10'
 ServerRegionModel:
   Attributes:
-  - Name: Position
+  - Name: Context
     Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Position
+    Offset: '0x8'
     Size: '0x8'
     Type: struct Vector2D
   - Name: Radius
-    Offset: '0x8'
+    Offset: '0x10'
     Size: '0x4'
     Type: float
-  ClassSize: '0xc'
+  ClassSize: '0x14'
+TryMigrateCrewsAwayTelemetry:
+  Attributes:
+  - Name: ServerId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct Guid
+  - Name: Crews
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<struct Guid>
+  - Name: MigrationThresholdExceeded
+    Offset: '0x20'
+    Size: '0x1'
+    Type: bool
+  - Name: ServerExpired
+    Offset: '0x21'
+    Size: '0x1'
+    Type: bool
+  - Name: StampExpired
+    Offset: '0x22'
+    Size: '0x1'
+    Type: bool
+  - Name: ServerWasOverCapacity
+    Offset: '0x23'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x4_YG1OD[0x4]
+    Offset: '0x24'
+    Size: '0x4'
+    Type: char
+  ClassSize: '0x28'

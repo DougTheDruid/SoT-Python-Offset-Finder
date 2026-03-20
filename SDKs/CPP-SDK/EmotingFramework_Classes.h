@@ -6,44 +6,11 @@
 #include "EmotingFramework_Structs.h"
 
 
-// Size 0x20 (Full Size[0x50] - InheritedSize[0x30]
-class IsTargetInDisguiseStatCondition: public TargetedStatCondition
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class EmoteIdListingAsset: public DataAsset
 {
 public:
-	TArray<char>                                                 TargetDisguiseTypes;                               // 0x30(0x10)
-	TArray<class Class*>                                         TargetDisguiseIdentifiers;                         // 0x40(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class BrokenOutOfWalkableDisguiseConditionalStatsTrigger: public ConditionalStatsTriggerType
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class WalkableEmoteDistanceConditionalStatsTrigger: public ConditionalStatsTriggerType
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class EmotePropData: public DataAsset
-{
-public:
-};
-
-
-// Size 0x140 (Full Size[0x4e0] - InheritedSize[0x3a0]
-class EmoteRandomObject: public Actor
-{
-public:
-	char                                                         pad0x8_0IY6V[0x8];                                 // 0x3a0(0x8)
-	class StaticMeshComponent*                                   MeshComponent;                                     // 0x3a8(0x8)
-	class MaterialInstanceDynamic*                               DynamicMaterialInstance;                           // 0x3b0(0x8)
-	char                                                         pad0x128_SSYQK[0x128];                             // 0x3b8(0x128)
+	TArray<struct Name>                                          EmoteIds;                                          // 0x28(0x10)
 };
 
 
@@ -62,7 +29,129 @@ public:
 
 
 // Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
+class EmoteZoomOutAnalogInputId: public AnalogInputId
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class WalkableEmotesInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class EmoteInteractionObjectsProviderInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
+class BrokenOutOfWalkableDisguiseConditionalStatsTrigger: public ConditionalStatsTriggerType
+{
+public:
+};
+
+
+// Size 0x128 (Full Size[0x4c8] - InheritedSize[0x3a0]
+class EmoteDice: public Actor
+{
+public:
+	char                                                         pad0x128_B283C[0x128];                             // 0x3a0(0x128)
+};
+
+
+// Size 0x138 (Full Size[0x4d8] - InheritedSize[0x3a0]
+class EmoteRandomObject: public Actor
+{
+public:
+	char                                                         pad0x8_ZN3MP[0x8];                                 // 0x3a0(0x8)
+	class StaticMeshComponent*                                   MeshComponent;                                     // 0x3a8(0x8)
+	class MaterialInstanceDynamic*                               DynamicMaterialInstance;                           // 0x3b0(0x8)
+	char                                                         pad0x120_PD4YY[0x120];                             // 0x3b8(0x120)
+};
+
+
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+class EmoteSettings: public DeveloperSettings
+{
+public:
+	int                                                          NumPages;                                          // 0x38(0x4)
+	char                                                         pad0x4_KQMR4[0x4];                                 // 0x3c(0x4)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class EmotePropData: public DataAsset
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class EmoteRandomFromListAsset: public DataAsset
+{
+public:
+	TArray<struct EmoteData>                                     EmoteDataList;                                     // 0x28(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
+class BreakWalkableDisguiseConditionalStatsTrigger: public ConditionalStatsTriggerType
+{
+public:
+};
+
+
+// Size 0x148 (Full Size[0x4e8] - InheritedSize[0x3a0]
+class EmoteCard: public Actor
+{
+public:
+	char                                                         pad0x8_A44FE[0x8];                                 // 0x3a0(0x8)
+	class MaterialInstanceDynamic*                               DynamicCardSelectionMaterialInstance;              // 0x3a8(0x8)
+	class StaticMeshComponent*                                   MeshComponent;                                     // 0x3b0(0x8)
+	struct FName                                                 RandomCardParameterName;                           // 0x3b8(0x8)
+	struct Int32Range                                            RandomCardParameterRange;                          // 0x3c0(0x10)
+	char                                                         pad0x118_RPYSV[0x118];                             // 0x3d0(0x118)
+};
+
+
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
+class WalkableEmoteDistanceConditionalStatsTrigger: public ConditionalStatsTriggerType
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
 class EmoteZoomMouseAnalogInputId: public AnalogInputId
+{
+public:
+};
+
+
+// Size 0x20 (Full Size[0x50] - InheritedSize[0x30]
+class IsTargetInDisguiseStatCondition: public TargetedStatCondition
+{
+public:
+	TArray<char>                                                 TargetDisguiseTypes;                               // 0x30(0x10)
+	TArray<class Class*>                                         TargetDisguiseIdentifiers;                         // 0x40(0x10)
+};
+
+
+// Size 0x120 (Full Size[0x4c0] - InheritedSize[0x3a0]
+class EmoteCoin: public Actor
+{
+public:
+	char                                                         pad0x120_3LW1Q[0x120];                             // 0x3a0(0x120)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DisguiseHandlerInterface: public Interface
 {
 public:
 };
@@ -77,70 +166,11 @@ public:
 };
 
 
-// Size 0x130 (Full Size[0x4d0] - InheritedSize[0x3a0]
-class EmoteDice: public Actor
-{
-public:
-	char                                                         pad0x130_ANN4X[0x130];                             // 0x3a0(0x130)
-};
-
-
-// Size 0x128 (Full Size[0x4c8] - InheritedSize[0x3a0]
-class EmoteCoin: public Actor
-{
-public:
-	char                                                         pad0x128_HRZZP[0x128];                             // 0x3a0(0x128)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class EmoteInteractionObjectsProviderInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class WalkableEmotesInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class EmoteZoomOutAnalogInputId: public AnalogInputId
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DisguiseHandlerInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class BreakWalkableDisguiseConditionalStatsTrigger: public ConditionalStatsTriggerType
-{
-public:
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class EmoteIdListingAsset: public DataAsset
-{
-public:
-	TArray<struct Name>                                          EmoteIds;                                          // 0x28(0x10)
-};
-
-
 // Size 0xe8 (Full Size[0x1a0] - InheritedSize[0xb8]
 class DisguiseHandlerComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_ELK2C[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_830WS[0x8];                                 // 0xb8(0x8)
 	class DisguiseTypesDataAsset*                                DisguiseTypesDataAsset;                            // 0xc0(0x8)
 	class CurveFloat*                                            BarrelDisguiseInvisibilityCurve;                   // 0xc8(0x8)
 	class UClass*                                                BarrelDisguiseItemSpawnClass;                      // 0xd0(0x8)
@@ -149,40 +179,10 @@ public:
 	class CurveFloat*                                            DisguiseInvisibilityCurve;                         // 0xe8(0x8)
 	struct DisguiseTypeData                                      DisguiseTypeData;                                  // 0xf0(0x18)
 	float                                                        CurrentInvisibilityValue;                          // 0x108(0x4)
-	char                                                         pad0x1c_A3VQI[0x1c];                               // 0x10c(0x1c)
+	char                                                         pad0x1c_B3P59[0x1c];                               // 0x10c(0x1c)
 	class MemoryConstrainedMeshInitializer*                      DisguiseMMCMeshInitializer;                        // 0x128(0x8)
 	bool                                                         IsPiratePreviewActor;                              // 0x130(0x1)
-	char                                                         pad0x6f_SFVPU[0x6f];                               // 0x131(0x6f)
-};
-
-
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class EmoteRandomFromListAsset: public DataAsset
-{
-public:
-	TArray<struct EmoteData>                                     EmoteDataList;                                     // 0x28(0x10)
-};
-
-
-// Size 0x150 (Full Size[0x4f0] - InheritedSize[0x3a0]
-class EmoteCard: public Actor
-{
-public:
-	char                                                         pad0x8_D7979[0x8];                                 // 0x3a0(0x8)
-	class MaterialInstanceDynamic*                               DynamicCardSelectionMaterialInstance;              // 0x3a8(0x8)
-	class StaticMeshComponent*                                   MeshComponent;                                     // 0x3b0(0x8)
-	struct FName                                                 RandomCardParameterName;                           // 0x3b8(0x8)
-	struct Int32Range                                            RandomCardParameterRange;                          // 0x3c0(0x10)
-	char                                                         pad0x120_OKQIF[0x120];                             // 0x3d0(0x120)
-};
-
-
-// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class EmoteSettings: public DeveloperSettings
-{
-public:
-	int                                                          NumPages;                                          // 0x38(0x4)
-	char                                                         pad0x4_KWB1A[0x4];                                 // 0x3c(0x4)
+	char                                                         pad0x6f_88OMO[0x6f];                               // 0x131(0x6f)
 };
 
 
@@ -191,7 +191,7 @@ class EmotePropDiceData: public EmotePropData
 {
 public:
 	char                                                         DiceType;                                          // 0x28(0x1)
-	char                                                         pad0x3_3F1QU[0x3];                                 // 0x29(0x3)
+	char                                                         pad0x3_IS742[0x3];                                 // 0x29(0x3)
 	int                                                          Outcome;                                           // 0x2c(0x4)
 };
 

@@ -1,89 +1,63 @@
 {
-  "CustomSeasRequestExitLobbyEvent": {
-    "ClassSize": "0x1",
+  "CustomSeasBootflowFailedtoJoinLobbyTelemetryEvent": {
+    "ClassSize": "0x2",
     "Attributes": [
       {
-        "Name": "pad0x1_4ICF8[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CustomSeasSessionCodeRequestToGame": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_6OJYJ[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CustomSeasOpenSessionToUI": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "SessionType",
+        "Name": "Reason",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "CustomSeasHostUpdateSessionLaunchStateToGame": {
-    "ClassSize": "0x10",
-    "Attributes": [
+      },
       {
-        "Name": "NewState",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CustomSeasSessionStartGameRequestToGame": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_ULUVE[0x1]",
-        "Type": "char",
+        "Name": "JoinType",
+        "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x0"
+        "Offset": "0x1"
       }
     ]
   },
-  "CustomSeasSessionDetailsRequestToGame": {
-    "ClassSize": "0x1",
+  "CustomSeasSessionSwitchesCategoriesErrorToUI": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x1_YHQ03[0x1]",
+        "Name": "pad0x20_6WVVB[0x20]",
         "Type": "char",
-        "Size": "0x1",
+        "Size": "0x20",
         "Offset": "0x0"
       }
     ]
   },
-  "CustomSeasRoleChangeToUI": {
-    "ClassSize": "0x10",
+  "CustomSeasSessionSwitchesDefinitionsRequestToGame": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "NewRole",
+        "Name": "Category",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "Page",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
-  "CustomSeasSessionCodeUpdateToUI": {
-    "ClassSize": "0x10",
+  "CustomSeasRequestMovePlayersEvent": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "Code",
-        "Type": "struct FString",
+        "Name": "Players",
+        "Type": "TArray<String>",
         "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
@@ -91,144 +65,68 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_DDEJA[0x1]",
+        "Name": "pad0x1_H3JPK[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
       }
     ]
   },
-  "CustomSeasSubscriptionStateUpdateToUI": {
-    "ClassSize": "0x20",
+  "CustomSeasServerSessionTelemetryFragmentInput": {
+    "ClassSize": "0x58",
     "Attributes": [
       {
-        "Name": "Status",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Name": "LobbyModel",
+        "Type": "struct CustomGameLobbyServerResponseModel",
+        "Size": "0x58",
         "Offset": "0x0"
-      },
-      {
-        "Name": "SubscribedSince",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
       }
     ]
   },
-  "CustomSeasSessionRosterPlayerInformation": {
-    "ClassSize": "0x50",
+  "CustomSeasBootflowLobbyUpdateFailedTelemetryEvent": {
+    "ClassSize": "0x2",
     "Attributes": [
       {
-        "Name": "UserId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Gamertag",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Role",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "Platform",
+        "Name": "UdpatedReason",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x30"
+        "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_U7YO7[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x31"
-      },
-      {
-        "Name": "ShipId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "IsSubscribed",
-        "Type": "bool",
+        "Name": "FailedReason",
+        "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "pad0x7_RCS2G[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x49"
+        "Offset": "0x1"
       }
     ]
   },
-  "CustomSeasSessionLaunchStateUpdateToUI": {
+  "CustomSeasRequestRemovePlayerEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "NewState",
+        "Name": "Xuid",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       }
     ]
   },
-  "CustomSeasRequestStartSessionEvent": {
+  "CustomSeasPresetsRequestToGame": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_MY5HR[0x1]",
+        "Name": "pad0x1_J2O8L[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
       }
     ]
   },
-  "CustomSeasCreateSessionRequestToGame": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "SessionType",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Activities",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "SessionVisibility",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x20"
-      }
-    ]
-  },
-  "CustomSeasExitSessionToGame": {
+  "CustomGameClientFailedToCreateLobbySessionTelemetryEvent": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_EONHT[0x1]",
-        "Type": "char",
-        "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "CustomSeasRequestCustomGameCreateLobbyEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "SessionType",
+        "Name": "FailedReason",
         "Type": "byte",
         "Size": "0x1",
         "Offset": "0x0"
@@ -269,10 +167,405 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_OJ65D[0x7]",
+        "Name": "pad0x7_GV92S[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
+      }
+    ]
+  },
+  "CustomSeasSessionSwitchesDefinitionsUpdateToUI": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "Definitions",
+        "Type": "TArray<struct UISwitchDefinition>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Category",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Page",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "CustomSeasUpdateSessionPermissionsErrorToUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_3WNF5[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasRequestPlayerDemotionEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Xuid",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasPermissionStatus": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "Enabled",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasUpdatePresetRequestToGame": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Id",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomGameSessionDetailsUpdateFailedEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_DZ345[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionCodeRequestToGame": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_D1IV0[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasPlayerInvite": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Xuid",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PlatformId",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_7LC2C[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      }
+    ]
+  },
+  "CustomSeasPromotePlayerErrorToUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_R7KG3[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasAddShipSuccessToUI": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_PEUVZ[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomGameServerRolePermissionsUpdatedData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "RolePermissions",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Role",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_9G03I[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      }
+    ]
+  },
+  "CustomSeasSessionSwitchesResetRequestToGame": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "SwitchIDs",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasRemovePlayerFromSessionErrorToUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_DRG31[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "BootFlowStartCustomGameConnectToServerStateStateEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_2HFUE[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasRemovePlayerFromSessionSuccessToUI": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_6VBUV[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionRosterRequestToGame": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_HLIG1[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasDeletePresetSuccessToUI": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_T09JP[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasDemotePlayerErrorToUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_EX7NV[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasLobbyIsReadyEvent": {
+    "ClassSize": "0x110",
+    "Attributes": [
+      {
+        "Name": "LobbyData",
+        "Type": "struct CustomGameLobbyUpdateResponseModel",
+        "Size": "0x110",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasJoinLobbyToServerRetryTelemetryEvent": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "RetryDelayInSeconds",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasUpdatePresetErrorToUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_MN1H1[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasCreateSessionRequestToGame": {
+    "ClassSize": "0x40",
+    "Attributes": [
+      {
+        "Name": "SessionType",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Activities",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "SessionVisibility",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "PresetId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "CustomSeasCreatePresetRequestToGame": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Name",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomGameSessionDetailsUpdatedEvent": {
+    "ClassSize": "0x118",
+    "Attributes": [
+      {
+        "Name": "pad0x118_A0XXU[0x118]",
+        "Type": "char",
+        "Size": "0x118",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionSwitchesCategoriesRequestToGame": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Page",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasActivityMessageTelemetryEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_QYA0E[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionLaunchStateUpdateToUI": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "NewState",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasRemoveShipSuccessToUI": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_TAP1Z[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasCreatePresetSuccessToUI": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_TL84P[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionSetPresetRequestToGame": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "PresetId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasPresetsErrorToUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_V5HL5[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
       }
     ]
   },
@@ -292,7 +585,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_N6K6H[0x7]",
+        "Name": "pad0x7_59XFG[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
@@ -316,20 +609,1285 @@
         "Offset": "0x29"
       },
       {
-        "Name": "pad0x6_AQ78Q[0x6]",
+        "Name": "pad0x6_B6ETR[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x2a"
       }
     ]
   },
-  "CustomSeasSessionRosterRequestToGame": {
+  "CustomSeasCreatePresetErrorToUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_0UG72[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasServerSessionTelemetryFragment": {
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "LobbyId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Crews",
+        "Type": "TArray<struct CustomGameCrewModel>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "RolePermissions",
+        "Type": "TArray<struct CustomGameRolePermissionResponseModel>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "LobbySession",
+        "Type": "struct UnsignedLobbySessionResponseModel",
+        "Size": "0x20",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "PlayModeVariant",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "IsDevLobby",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x51"
+      },
+      {
+        "Name": "IsOpenLobby",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x52"
+      },
+      {
+        "Name": "pad0x5_I2VQK[0x5]",
+        "Type": "char",
+        "Size": "0x5",
+        "Offset": "0x53"
+      }
+    ]
+  },
+  "CustomSeasRenamePresetErrorToUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_431J1[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasHeartbeatFailedTelemetryEvent": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_SUWA0[0x1]",
+        "Name": "pad0x1_CPC51[0x1]",
         "Type": "char",
         "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasRenamePresetSuccessToUI": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_OZDRZ[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasHostUpdateSessionLaunchStateToGame": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "NewState",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasOpenSessionErrorToUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_I56K7[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasRoleRequestToGame": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_6N900[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasGenericErrorEventToUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Title",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Body",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CustomGameServerNewShipAddedData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "NewShipSize",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_0CUIE[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "MaxCrewMembers",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "CustomSeasChangeShipTypeSuccessToUI": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_LTJFY[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "FCustomGameCrewChangedData": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "PlayerId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PreviousCrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "NewCrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x20"
+      }
+    ]
+  },
+  "CustomSeasChangeShipTypeRequestToGame": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "ShipId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ShipType",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CustomSeasJoinLobbyToServerFailedTelemetryEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_Q8U9E[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionSwitchesResetSuccessToUI": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_YG4GH[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSubscriptionStateUpdateToUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Status",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SubscribedSince",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CustomSeasChangeShipTypeErrorToUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_QK6ZW[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionSwitchesPageLocLookupErrorToUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_X5R0I[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasLobbyCompletedTelemetryEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_Y1VKM[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "BootFlowStartCustomGamePresetSelectionStateEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_NSYYQ[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasRoleChangeToUI": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "NewRole",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasAddShipRequestToGame": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ShipType",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasInviteSuccessToUI": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_3MDVH[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomGameSessionRolePlayerData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "PlayerId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SessionRole",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x7_RXX0I[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x11"
+      }
+    ]
+  },
+  "CustomSeasUpdateSessionPermissionsRequestToGame": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "SettingID",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NewValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_7EFGC[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "CustomGameSessionStateFailedToCreateOrJoinLobbyEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_O0Q45[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionRosterPlayerInformation": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "UserId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Gamertag",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Role",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "Platform",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "pad0x7_5366X[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x31"
+      },
+      {
+        "Name": "ShipId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "IsSubscribed",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x7_8NV7Y[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x49"
+      }
+    ]
+  },
+  "CustomSeasPromotePlayerRequestToGame": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Xuid",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "BootFlowStartCustomGameSessionStateEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_SLZHR[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasRequestPlayerPromotionEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Xuid",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionRosterErrorToUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_CCAOQ[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasUIRolePermissionsInformation": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "Role",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x50_VKVCZ[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CustomSeasSessionStartGameRequestToGame": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_0HD5D[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasExitSessionToGame": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_X8W9C[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasStartServerSessionFailedTelemetryEvent": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "LobbyId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "FailedReason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x3_TY3ZA[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
+      }
+    ]
+  },
+  "CustomSeasDeletePresetErrorToUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_ODYC0[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasDeletePresetRequestToGame": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Id",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasRenamePresetRequestToGame": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Id",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NewName",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CustomSeasRemovePlayerFromSessionRequestToGame": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Xuid",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasOpenSessionWithCodeRequestToGame": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Code",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionSwitchesPageLocLookupResponseToUI": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "pad0x50_6FR99[0x50]",
+        "Type": "char",
+        "Size": "0x50",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionTelemetryFragmentInput": {
+    "ClassSize": "0x110",
+    "Attributes": [
+      {
+        "Name": "LobbyModel",
+        "Type": "struct CustomGameLobbyUpdateResponseModel",
+        "Size": "0x110",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionDetailsRequestToGame": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_WGQRG[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionSwitchesResetErrorToUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_45PO5[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasUpdatePresetSuccessToUI": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_N808Z[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionSwitchesDefinitionsErrorToUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_LKKR1[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasRequestJoinViaCodeEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "JoinCode",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasStartServerSessionSuccessTelemetryEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_HPYR2[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionCodeUpdateToUI": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Code",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionTelemetryFragment": {
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "LobbyId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RolePermissions",
+        "Type": "TArray<struct CustomGameRolePermissionResponseModel>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Players",
+        "Type": "TArray<struct CustomGamePersistentPlayerModel>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "Crews",
+        "Type": "TArray<struct CustomGamePersistentCrewModel>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "LobbySession",
+        "Type": "struct SignedLobbySessionResponseModel",
+        "Size": "0x30",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "LobbyStatus",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "pad0x7_IT4GK[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x71"
+      },
+      {
+        "Name": "InviteJoinCode",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x78"
+      },
+      {
+        "Name": "IsOpenLobby",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x88"
+      },
+      {
+        "Name": "pad0x7_TLMU2[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x89"
+      }
+    ]
+  },
+  "CustomSeasRequestCustomGameCreateLobbyEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "SessionType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionCodeErrorToUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_AO4L3[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasDemotePlayerSuccessToUI": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_81NCG[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasMovePlayersToShipErrorToUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_XF93R[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomGameRolePermissionsData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Role",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_O13ZS[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "Permissions",
+        "Type": "TArray<char>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "CustomSeasPresetsResponseToUI": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "MaxPresets",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x4_9FM5O[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "Presets",
+        "Type": "TArray<struct SwitchPreset>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "CustomGameServerShipSizeChangedUpdatedData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "NewShipSize",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_8S4AH[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "MaxCrewMembers",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "CustomGamePlayerRolesData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "PlayerId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PreviousRole",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "NewRole",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "pad0x6_CW9UW[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x12"
+      }
+    ]
+  },
+  "CustomSeasRequestChangeCrewShip": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ShipType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x3_V1X0U[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
+      }
+    ]
+  },
+  "CustomSeasSessionSwitchesPageLocLookupRequestToGame": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_1A7E6[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSwitchValueUpdateToGame": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "SwitchID",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Value",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_JGNBO[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "CustomSeasSessionSwitchesCategoriesResponseToUI": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Categories",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasAddShipErrorToUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_I67FA[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasRemoveShipErrorToUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_Q9YC8[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasJoinLobbyToServerSuccessTelemetryEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_VW8TT[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasPromotePlayerSuccessToUI": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_KFXRV[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasOpenSessionToUI": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "SessionType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasRequestStartSessionEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_28D7R[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasRequestExitLobbyEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_ASQLT[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasDemotePlayerRequestToGame": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Xuid",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasBootflowLobbyUpdateSuccessTelemetryEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "UdpatedReason",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasUpdateSessionPermissionsSuccessToUI": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_AD235[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasMovePlayersToShipRequestToGame": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Players",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "TargetShipID",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CustomSeasRolePermissionsRequestToGame": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_T5S8Q[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasRequestRemoveCrew": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasLobbyConnectionDetailsTimeoutTelemetryEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_0I324[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionSetPresetSuccessToUI": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_H5RYQ[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasRequestCreateCrew": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "ShipType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasSessionSetPresetErrorToUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_OLSDZ[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasHeartbeatSuccessTelemetryEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_UJ74G[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasRemoveShipRequestToGame": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ShipId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasInviteErrorToUI": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_0NQ53[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasMovePlayersToShipSuccessToUI": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_BWRHQ[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasRolePermissionsUpdateToUI": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Permissions",
+        "Type": "TArray<struct CustomSeasUIRolePermissionsInformation>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "CustomSeasInviteToShipRequestToGame": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Players",
+        "Type": "TArray<struct CustomSeasPlayerInvite>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ShipId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "CustomSeasInviteToSessionRequestToGame": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Players",
+        "Type": "TArray<struct CustomSeasPlayerInvite>",
+        "Size": "0x10",
         "Offset": "0x0"
       }
     ]
@@ -359,6 +1917,88 @@
         "Type": "TArray<struct CustomSeasSessionRosterShipInformation>",
         "Size": "0x10",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "CustomGameServerSessionData": {
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Name": "AddedPlayerIds",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "RemovedPlayerIds",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "PlayerRolesData",
+        "Type": "TArray<struct CustomGamePlayerRolesData>",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "PlayerCrewChanges",
+        "Type": "TArray<struct FCustomGameCrewChangedData>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "RolePermissionsUpdatedData",
+        "Type": "TArray<struct CustomGameServerRolePermissionsUpdatedData>",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "ShipChangesData",
+        "Type": "TArray<struct CustomGameServerShipSizeChangedUpdatedData>",
+        "Size": "0x10",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "AddedCrews",
+        "Type": "TArray<struct CustomGameServerNewShipAddedData>",
+        "Size": "0x10",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "RemovedCrewId",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
+        "Offset": "0x70"
+      }
+    ]
+  },
+  "CustomSeasServerSessionUpdatedEvent": {
+    "ClassSize": "0x98",
+    "Attributes": [
+      {
+        "Name": "SessionData",
+        "Type": "struct CustomGameServerSessionData",
+        "Size": "0x80",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CustomGameSessionId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x80"
+      },
+      {
+        "Name": "UpdateType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x90"
+      },
+      {
+        "Name": "pad0x7_4XOKM[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x91"
       }
     ]
   },

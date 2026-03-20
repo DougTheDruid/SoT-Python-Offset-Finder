@@ -1,4 +1,25 @@
 {
+  "HitchDiagnosisBlueprintFunctionLibrary": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "AssetReferencer": {
+    "Super": "DataAsset",
+    "FullSize": "0x38",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AssetsToReference",
+        "Type": "TArray<Class>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "RareHUD": {
     "Super": "HUD",
     "FullSize": "0x498",
@@ -13,37 +34,30 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "HitchDiagnosisBlueprintFunctionLibrary": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "StallDetector": {
-    "Super": "Object",
-    "FullSize": "0x50",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x28",
+  "RareGameEngine": {
+    "Super": "GameEngine",
+    "FullSize": "0xac0",
+    "InheritedSize": "0xa60",
+    "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x28_BE469[0x28]",
+        "Name": "pad0x60_2Z04W[0x60]",
         "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x28"
+        "Size": "0x60",
+        "Offset": "0xa60"
       }
     ]
   },
-  "AssetReferencer": {
-    "Super": "DataAsset",
-    "FullSize": "0x38",
+  "AudioHardwareDeviceService": {
+    "Super": "Object",
+    "FullSize": "0x40",
     "InheritedSize": "0x28",
-    "ClassSize": "0x10",
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "AssetsToReference",
-        "Type": "TArray<Class>",
-        "Size": "0x10",
+        "Name": "pad0x18_LN3QU[0x18]",
+        "Type": "char",
+        "Size": "0x18",
         "Offset": "0x28"
       }
     ]
@@ -62,30 +76,16 @@
       }
     ]
   },
-  "RareGameEngine": {
-    "Super": "GameEngine",
-    "FullSize": "0xac0",
-    "InheritedSize": "0xa60",
-    "ClassSize": "0x60",
-    "Attributes": [
-      {
-        "Name": "pad0x60_RS1PE[0x60]",
-        "Type": "char",
-        "Size": "0x60",
-        "Offset": "0xa60"
-      }
-    ]
-  },
-  "AudioHardwareDeviceService": {
+  "StallDetector": {
     "Super": "Object",
-    "FullSize": "0x40",
+    "FullSize": "0x50",
     "InheritedSize": "0x28",
-    "ClassSize": "0x18",
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "pad0x18_OIBWU[0x18]",
+        "Name": "pad0x28_BBTFS[0x28]",
         "Type": "char",
-        "Size": "0x18",
+        "Size": "0x28",
         "Offset": "0x28"
       }
     ]

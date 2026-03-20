@@ -6,33 +6,11 @@
 #include "GlobalDigSpots_Structs.h"
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GlobalDigSpotDebugCheatInterface: public Interface
-{
-public:
-};
-
-
 // Size 0x8 (Full Size[0x3a8] - InheritedSize[0x3a0]
 class GlobalDigSpotDebugCheat: public Actor
 {
 public:
-	char                                                         pad0x8_JNU9O[0x8];                                 // 0x3a0(0x8)
-};
-
-
-// Size 0x18 (Full Size[0x408] - InheritedSize[0x3f0]
-class GlobalDigSpotVoyageTriggerActor: public GlobalVoyageTriggerActor
-{
-public:
-	char                                                         pad0x18_VPVO0[0x18];                               // 0x3f0(0x18)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class GlobalDigSpotServiceInterface: public Interface
-{
-public:
+	char                                                         pad0x8_DTN2F[0x8];                                 // 0x3a0(0x8)
 };
 
 
@@ -44,15 +22,30 @@ public:
 };
 
 
+// Size 0x18 (Full Size[0x408] - InheritedSize[0x3f0]
+class GlobalDigSpotVoyageTriggerActor: public GlobalVoyageTriggerActor
+{
+public:
+	char                                                         pad0x18_AL1NT[0x18];                               // 0x3f0(0x18)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class GlobalDigSpotServiceInterface: public Interface
+{
+public:
+};
+
+
 // Size 0x30 (Full Size[0x3d0] - InheritedSize[0x3a0]
 class GlobalDigSpotService: public Actor
 {
 public:
-	char                                                         pad0x8_KJY3O[0x8];                                 // 0x3a0(0x8)
+	char                                                         pad0x8_JWXXP[0x8];                                 // 0x3a0(0x8)
 	class VoyageDescDataAsset*                                   DefaultVoyageDesc;                                 // 0x3a8(0x8)
 	class PopUpMessageDesc*                                      Notification;                                      // 0x3b0(0x8)
 	class GlobalDigSpotDefinitionList*                           DigSpotDefinitions;                                // 0x3b8(0x8)
-	char                                                         pad0x10_V7D2D[0x10];                               // 0x3c0(0x10)
+	char                                                         pad0x10_ZCTEZ[0x10];                               // 0x3c0(0x10)
 };
 
 
@@ -61,6 +54,13 @@ class GlobalDigSpotSettings: public DeveloperSettings
 {
 public:
 	class UClass*                                                GlobalDigSpotServiceClass;                         // 0x38(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class GlobalDigSpotDebugCheatInterface: public Interface
+{
+public:
 };
 
 

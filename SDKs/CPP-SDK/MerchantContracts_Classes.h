@@ -7,7 +7,7 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class PlayerMerchantContractsInterface: public Interface
+class DoesWieldedItemSatisfyMerchantContractStatCondition: public StatCondition
 {
 public:
 };
@@ -17,8 +17,15 @@ public:
 class PlayerMerchantContractsComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_NC8QJ[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_C8HO8[0x8];                                 // 0xb8(0x8)
 	TArray<struct PlayerMerchantContract>                        Contracts;                                         // 0xc0(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class MerchantContractsServiceInterface: public Interface
+{
+public:
 };
 
 
@@ -26,9 +33,9 @@ public:
 class MerchantContractsService: public Object
 {
 public:
-	char                                                         pad0x8_2XGZR[0x8];                                 // 0x28(0x8)
+	char                                                         pad0x8_GQONH[0x8];                                 // 0x28(0x8)
 	TArray<struct MerchantContract>                              Contracts;                                         // 0x30(0x10)
-	char                                                         pad0x98_KRK51[0x98];                               // 0x40(0x98)
+	char                                                         pad0x98_TZZ2Y[0x98];                               // 0x40(0x98)
 };
 
 
@@ -40,14 +47,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class MerchantContractsServiceInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DoesWieldedItemSatisfyMerchantContractStatCondition: public StatCondition
+class PlayerMerchantContractsInterface: public Interface
 {
 public:
 };

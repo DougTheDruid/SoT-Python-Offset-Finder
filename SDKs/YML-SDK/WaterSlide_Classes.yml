@@ -24,7 +24,7 @@ InteractableZipline:
   Super: Zipline
 Ride:
   Attributes:
-  - Name: pad0x8_PMZPK[0x8]
+  - Name: pad0x8_QH050[0x8]
     Offset: '0x3a0'
     Size: '0x8'
     Type: char
@@ -42,7 +42,7 @@ Ride:
   Super: Actor
 RidePlayerComponent:
   Attributes:
-  - Name: pad0x8_OHZC4[0x8]
+  - Name: pad0x8_7YX89[0x8]
     Offset: '0xd0'
     Size: '0x8'
     Type: char
@@ -58,7 +58,7 @@ RidePlayerComponent:
     Offset: '0xe8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_0A6U7[0x4]
+  - Name: pad0x4_5LP9O[0x4]
     Offset: '0xec'
     Size: '0x4'
     Type: char
@@ -82,7 +82,7 @@ RidePlayerComponent:
     Offset: '0x110'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x14_TGFKD[0x14]
+  - Name: pad0x14_M6ZZJ[0x14]
     Offset: '0x11c'
     Size: '0x14'
     Type: char
@@ -132,7 +132,7 @@ WaterSlide:
     Offset: '0x3e0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_9EWGD[0x3]
+  - Name: pad0x3_7WLBO[0x3]
     Offset: '0x3e1'
     Size: '0x3'
     Type: char
@@ -144,7 +144,7 @@ WaterSlide:
     Offset: '0x3f0'
     Size: '0x8'
     Type: class WaterSlideAudioParams*
-  - Name: pad0x8_HT5AU[0x8]
+  - Name: pad0x8_PTSEY[0x8]
     Offset: '0x3f8'
     Size: '0x8'
     Type: char
@@ -194,7 +194,7 @@ WaterSlideAudioParams:
   Super: DataAsset
 WaterSlideInputComponent:
   Attributes:
-  - Name: pad0x10_GS2AB[0x10]
+  - Name: pad0x10_T7CDA[0x10]
     Offset: '0x290'
     Size: '0x10'
     Type: char
@@ -228,7 +228,7 @@ Zipline:
     Offset: '0x3b9'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_71RTI[0x2]
+  - Name: pad0x2_P4W2L[0x2]
     Offset: '0x3ba'
     Size: '0x2'
     Type: char
@@ -256,7 +256,7 @@ Zipline:
     Offset: '0x6e4'
     Size: '0x8'
     Type: struct Vector2D
-  - Name: pad0x2c_GGH4S[0x2c]
+  - Name: pad0x2c_858LN[0x2c]
     Offset: '0x6ec'
     Size: '0x2c'
     Type: char
@@ -280,7 +280,7 @@ Zipline:
     Offset: '0x738'
     Size: '0x4'
     Type: struct PlayerStat
-  - Name: pad0xc_R4RIY[0xc]
+  - Name: pad0xc_8CHW0[0xc]
     Offset: '0x73c'
     Size: '0xc'
     Type: char
@@ -348,7 +348,7 @@ ZiplineFXParams:
   Super: DataAsset
 ZiplineInputComponent:
   Attributes:
-  - Name: pad0x8_FKNUL[0x8]
+  - Name: pad0x8_DTW9N[0x8]
     Offset: '0x290'
     Size: '0x8'
     Type: char

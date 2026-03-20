@@ -1,4 +1,245 @@
 {
+  "MultiCrewSubModeArrivalTunnelReleasedTelemetryEvent": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "pad0x14_F6HQL[0x14]",
+        "Type": "char",
+        "Size": "0x14",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "MultiCrewSubModesSessionFinishedEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "SessionId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "MultiCrewSubModesSessionStartedEvent": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "SessionId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Participants",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "MultiCrewSubModesSessionCrewJoinedEvent": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "SessionId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CrewsInEvent",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "MultiCrewSubModeBaseTelemetryEvent": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "NumCrews",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ReduceMinCrewsOverTime",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x3_ILYPY[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5"
+      },
+      {
+        "Name": "CurrentMinCrews",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "MinCrews",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "MaxCrews",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "MultiCrewSubModesSession_UpdatedSkillValue": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NewValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "OldValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "Ranking",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "MultiCrewSubModesCrewUnreadyTelemetryEvent": {
+    "ClassSize": "0x24",
+    "Attributes": [
+      {
+        "Name": "pad0x14_CEVEU[0x14]",
+        "Type": "char",
+        "Size": "0x14",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "SubModesSandsOfFateData": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "PerStreakSands",
+        "Type": "TArray<int>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PerOpponentStreakSands",
+        "Type": "TArray<int>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "MultiCrewSubModesSessionInitiatedEvent": {
+    "ClassSize": "0x1c",
+    "Attributes": [
+      {
+        "Name": "SessionId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MinCrewCount",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "MaxCrewCount",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "ReduceMinCrewsOverTime",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x3_CRBIT[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x19"
+      }
+    ]
+  },
+  "MultiCrewSubModesCrewSkillValuesSetEvent": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "SessionId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SkillValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "OnSubModesSessionStatusChangedTelemetryEvent": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "PreviousStatus",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CurrentStatus",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "pad0x2_E1GB5[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x2"
+      },
+      {
+        "Name": "TimeSeconds",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
   "SubModeSessionCrewData": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -27,7 +268,7 @@
         "Offset": "0x24"
       },
       {
-        "Name": "pad0x3_V2YB8[0x3]",
+        "Name": "pad0x3_6MGI8[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x25"
@@ -39,39 +280,201 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_AHMA7[0x4]",
+        "Name": "pad0x4_9KJAT[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
       }
     ]
   },
-  "SubModeSessionData": {
+  "MultiCrewSubModesCrewReadyTelemetryEvent": {
+    "ClassSize": "0x24",
+    "Attributes": [
+      {
+        "Name": "pad0x14_55VLF[0x14]",
+        "Type": "char",
+        "Size": "0x14",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CrewId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "MultiCrewSubModesSessionCrewRankedEvent": {
+    "ClassSize": "0x14",
+    "Attributes": [
+      {
+        "Name": "SessionId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Ranking",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "MultiCrewSubModesHeartbeatTelemetryEvent": {
     "ClassSize": "0x18",
     "Attributes": [
+      {
+        "Name": "pad0x14_6P42I[0x14]",
+        "Type": "char",
+        "Size": "0x14",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NumValidCrews",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "OnSubModesSessionStatusChangedEvent": {
+    "ClassSize": "0x2",
+    "Attributes": [
+      {
+        "Name": "PreviousStatus",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "CurrentStatus",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1"
+      }
+    ]
+  },
+  "SubModesSandsOfFateParticipantData": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "PerRankData",
+        "Type": "TArray<struct SubModesSandsOfFateData>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x8_W6WRG[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "MultiCrewSubModesSessionSkillValuesUpdatedEvent": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "SessionId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SkillValues",
+        "Type": "TArray<struct MultiCrewSubModesSession_UpdatedSkillValue>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "SubModeSessionData": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "SessionId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
       {
         "Name": "CrewsInEvent",
         "Type": "TArray<struct SubModeSessionCrewData>",
         "Size": "0x10",
-        "Offset": "0x0"
+        "Offset": "0x10"
       },
       {
         "Name": "CrewCount",
         "Type": "int",
         "Size": "0x4",
-        "Offset": "0x10"
+        "Offset": "0x20"
+      },
+      {
+        "Name": "ValidCrewCount",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "MinCrews",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "MaxCrews",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x2c"
       },
       {
         "Name": "Status",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x14"
+        "Offset": "0x30"
       },
       {
-        "Name": "pad0x3_ZYMNP[0x3]",
+        "Name": "pad0x3_98L1T[0x3]",
         "Type": "char",
         "Size": "0x3",
-        "Offset": "0x15"
+        "Offset": "0x31"
+      },
+      {
+        "Name": "CurrentMinCrews",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x34"
+      },
+      {
+        "Name": "ReduceMinCrewsOverTime",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x3_HS6CQ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x39"
+      },
+      {
+        "Name": "RemainingReductionTime",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "WaitingToStartTimer",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x4_R1BKL[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x44"
       }
     ]
   },

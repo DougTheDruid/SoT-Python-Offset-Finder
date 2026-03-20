@@ -6,26 +6,26 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ObjectMessagingDispatcherComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x160",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0xa8",
-    "Attributes": [
-      {
-        "Name": "pad0xa8_5ADXH[0xa8]",
-        "Type": "char",
-        "Size": "0xa8",
-        "Offset": "0xb8"
-      }
-    ]
-  },
   "ObjectMessagingFunctions": {
     "Super": "BlueprintFunctionLibrary",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
+  },
+  "ObjectMessagingDispatcherComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x158",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Name": "pad0xa0_ASABN[0xa0]",
+        "Type": "char",
+        "Size": "0xa0",
+        "Offset": "0xb8"
+      }
+    ]
   },
   "ObjectMessagingDispatcherInterface": {
     "Super": "Interface",

@@ -20,7 +20,7 @@ FactionFlipMeshComponent:
     Offset: '0x610'
     Size: '0x4'
     Type: float
-  - Name: pad0x244_EL4DY[0x244]
+  - Name: pad0x244_PTJQM[0x244]
     Offset: '0x614'
     Size: '0x244'
     Type: char
@@ -36,7 +36,7 @@ FactionFlipMeshComponent:
     Offset: '0x86c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_NHIER[0x3]
+  - Name: pad0x3_UEHG3[0x3]
     Offset: '0x86d'
     Size: '0x3'
     Type: char
@@ -60,7 +60,7 @@ FactionInteractionVoteComponent:
   Super: InlineVotingInteractionComponent
 FactionIntervoteService:
   Attributes:
-  - Name: pad0x8_VI66A[0x8]
+  - Name: pad0x8_01YZF[0x8]
     Offset: '0x3a0'
     Size: '0x8'
     Type: char
@@ -68,7 +68,7 @@ FactionIntervoteService:
     Offset: '0x3a8'
     Size: '0x10'
     Type: TArray<class FactionVoteConsumerBase*>
-  - Name: pad0x30_T0U9N[0x30]
+  - Name: pad0x30_2945F[0x30]
     Offset: '0x3b8'
     Size: '0x30'
     Type: char
@@ -94,7 +94,7 @@ FactionLootLevelRewardsAsset:
   Super: DataAsset
 FactionOutpostVoteInteractionActor:
   Attributes:
-  - Name: pad0x10_DNAII[0x10]
+  - Name: pad0x10_BVX4F[0x10]
     Offset: '0x3a0'
     Size: '0x10'
     Type: char
@@ -102,7 +102,7 @@ FactionOutpostVoteInteractionActor:
     Offset: '0x3b0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_4SJ6R[0x4]
+  - Name: pad0x4_KWMHP[0x4]
     Offset: '0x3b4'
     Size: '0x4'
     Type: char
@@ -114,7 +114,7 @@ FactionOutpostVoteInteractionActor:
     Offset: '0x458'
     Size: '0xa0'
     Type: struct FactionDisplayInfo
-  - Name: pad0x18_36J15[0x18]
+  - Name: pad0x18_VBUT0[0x18]
     Offset: '0x4f8'
     Size: '0x18'
     Type: char
@@ -122,17 +122,17 @@ FactionOutpostVoteInteractionActor:
     Offset: '0x510'
     Size: '0x20'
     Type: struct FactionRequest
-  - Name: pad0xa0_THVU7[0xa0]
+  - Name: pad0x98_AZVGA[0x98]
     Offset: '0x530'
-    Size: '0xa0'
+    Size: '0x98'
     Type: char
-  ClassSize: '0x230'
-  FullSize: '0x5d0'
+  ClassSize: '0x228'
+  FullSize: '0x5c8'
   InheritedSize: '0x3a0'
   Super: Actor
 FactionParticleComponent:
   Attributes:
-  - Name: pad0x178_CYXQ4[0x178]
+  - Name: pad0x178_BI53W[0x178]
     Offset: '0x8a0'
     Size: '0x178'
     Type: char
@@ -156,7 +156,7 @@ FactionParticleComponent:
     Offset: '0xa3c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_44DVV[0x3]
+  - Name: pad0x3_21C99[0x3]
     Offset: '0xa3d'
     Size: '0x3'
     Type: char
@@ -166,7 +166,7 @@ FactionParticleComponent:
   Super: ParticleSystemComponent
 FactionService:
   Attributes:
-  - Name: pad0x10_6P0E9[0x10]
+  - Name: pad0x10_82SUJ[0x10]
     Offset: '0x3a0'
     Size: '0x10'
     Type: char
@@ -178,7 +178,7 @@ FactionService:
     Offset: '0x3b8'
     Size: '0x8'
     Type: class FactionLootLevelRewardsAsset*
-  - Name: pad0xc0_0VI46[0xc0]
+  - Name: pad0xc0_7UK1O[0xc0]
     Offset: '0x3c0'
     Size: '0xc0'
     Type: char
@@ -194,28 +194,40 @@ FactionService:
     Offset: '0x4a0'
     Size: '0x10'
     Type: TArray<struct CrewFactionEntryData>
-  - Name: FactionAlignedCrews
+  - Name: FactionAlignedCrewEmissaryData
     Offset: '0x4b0'
+    Size: '0x10'
+    Type: TArray<struct CrewFactionEmissaryData>
+  - Name: FactionAlignedCrews
+    Offset: '0x4c0'
     Size: '0x10'
     Type: TArray<struct CrewFactionEntry>
   - Name: MatchmakingWaitTimes
-    Offset: '0x4c0'
+    Offset: '0x4d0'
     Size: '0x10'
     Type: TArray<struct FactionWaitTimesData>
-  - Name: pad0x138_LLBLQ[0x138]
-    Offset: '0x4d0'
+  - Name: pad0x138_DYED5[0x138]
+    Offset: '0x4e0'
     Size: '0x138'
     Type: char
   - Name: DebugRepActor
-    Offset: '0x608'
+    Offset: '0x618'
     Size: '0x8'
     Type: class FactionServiceDebugRepActor*
-  - Name: pad0x20_4DVZ8[0x20]
-    Offset: '0x610'
+  - Name: pad0x20_I12CE[0x20]
+    Offset: '0x620'
     Size: '0x20'
     Type: char
-  ClassSize: '0x290'
-  FullSize: '0x630'
+  - Name: InvasionActivityIdentifier
+    Offset: '0x640'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: pad0x8_X2M2O[0x8]
+    Offset: '0x648'
+    Size: '0x8'
+    Type: char
+  ClassSize: '0x2b0'
+  FullSize: '0x650'
   InheritedSize: '0x3a0'
   Super: Actor
 FactionServiceDebugRepActor:
@@ -224,7 +236,7 @@ FactionServiceDebugRepActor:
     Offset: '0x3a0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_0JHDX[0x7]
+  - Name: pad0x7_625UZ[0x7]
     Offset: '0x3a1'
     Size: '0x7'
     Type: char
@@ -338,8 +350,12 @@ FactionSettingsAsset:
     Offset: '0x190'
     Size: '0x38'
     Type: struct FText
-  ClassSize: '0x1a0'
-  FullSize: '0x1c8'
+  - Name: InvasionActivityIdentifier
+    Offset: '0x1c8'
+    Size: '0x8'
+    Type: class UClass*
+  ClassSize: '0x1a8'
+  FullSize: '0x1d0'
   InheritedSize: '0x28'
   Super: DataAsset
 FactionShipStreakDataAsset:
@@ -374,7 +390,7 @@ FactionVoteAudioComponent:
     Offset: '0xf8'
     Size: '0x10'
     Type: TArray<struct Name>
-  - Name: pad0x100_6GQ8O[0x100]
+  - Name: pad0x100_2Y3GA[0x100]
     Offset: '0x108'
     Size: '0x100'
     Type: char
@@ -384,7 +400,7 @@ FactionVoteAudioComponent:
   Super: VoteAudioComponent
 FactionVoteConsumerBase:
   Attributes:
-  - Name: pad0x10_MX3ZC[0x10]
+  - Name: pad0x10_0LDUV[0x10]
     Offset: '0x30'
     Size: '0x10'
     Type: char
@@ -392,7 +408,7 @@ FactionVoteConsumerBase:
     Offset: '0x40'
     Size: '0x8'
     Type: class FactionVoteValidatorBase*
-  - Name: pad0x48_JUVP9[0x48]
+  - Name: pad0x48_WIDMY[0x48]
     Offset: '0x48'
     Size: '0x48'
     Type: char
@@ -408,7 +424,7 @@ FactionVoteConsumerBase:
     Offset: '0xa8'
     Size: '0x10'
     Type: TArray<struct CrewMemberVotes>
-  - Name: pad0x28_ZZYOL[0x28]
+  - Name: pad0x28_4NJ92[0x28]
     Offset: '0xb8'
     Size: '0x28'
     Type: char
@@ -418,7 +434,7 @@ FactionVoteConsumerBase:
   Super: VoteConsumerInlineBase
 FactionVoteInteractionActor:
   Attributes:
-  - Name: pad0x10_X7S9R[0x10]
+  - Name: pad0x10_9CYUS[0x10]
     Offset: '0x3a0'
     Size: '0x10'
     Type: char
@@ -426,7 +442,7 @@ FactionVoteInteractionActor:
     Offset: '0x3b0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_E7AFU[0x4]
+  - Name: pad0x4_UYA4U[0x4]
     Offset: '0x3b4'
     Size: '0x4'
     Type: char
@@ -462,10 +478,14 @@ FactionVoteInteractionActor:
     Offset: '0x428'
     Size: '0x10'
     Type: TArray<struct FactionRequest>
-  - Name: pad0xa0_O6JW8[0xa0]
+  - Name: pad0x98_BP2JW[0x98]
     Offset: '0x438'
-    Size: '0xa0'
+    Size: '0x98'
     Type: char
+  - Name: InvasionActivityIdentifier
+    Offset: '0x4d0'
+    Size: '0x8'
+    Type: class UClass*
   ClassSize: '0x138'
   FullSize: '0x4d8'
   InheritedSize: '0x3a0'
@@ -480,7 +500,7 @@ FactionVoteValidatorBase:
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: pad0xa4_8PQKQ[0xa4]
+  - Name: pad0xa4_DX1KX[0xa4]
     Offset: '0x44'
     Size: '0xa4'
     Type: char
@@ -496,7 +516,7 @@ FactionVoteValidatorBase:
     Offset: '0xf4'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_L6HYP[0x8]
+  - Name: pad0x8_NSTKW[0x8]
     Offset: '0xf8'
     Size: '0x8'
     Type: char
@@ -504,8 +524,12 @@ FactionVoteValidatorBase:
     Offset: '0x100'
     Size: '0x8'
     Type: class Actor*
-  ClassSize: '0xd8'
-  FullSize: '0x108'
+  - Name: InvasionActivityIdentifier
+    Offset: '0x108'
+    Size: '0x8'
+    Type: class UClass*
+  ClassSize: '0xe0'
+  FullSize: '0x110'
   InheritedSize: '0x30'
   Super: VoteValidatorInlineBase
 IsInFactionStatCondition:
@@ -518,7 +542,7 @@ IsInFactionStatCondition:
     Offset: '0x31'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_5EBJV[0x6]
+  - Name: pad0x6_W7YPR[0x6]
     Offset: '0x32'
     Size: '0x6'
     Type: char
@@ -534,7 +558,7 @@ IsInFactionStatCondition:
     Offset: '0x41'
     Size: '0x1'
     Type: bool
-  - Name: pad0x6_AAZT1[0x6]
+  - Name: pad0x6_H0FCE[0x6]
     Offset: '0x42'
     Size: '0x6'
     Type: char
@@ -560,7 +584,7 @@ IsWearingCursePrerequisite:
     Offset: '0x92'
     Size: '0x1'
     Type: bool
-  - Name: pad0x5_UZONJ[0x5]
+  - Name: pad0x5_PB0UF[0x5]
     Offset: '0x93'
     Size: '0x5'
     Type: char
@@ -586,7 +610,7 @@ ShipFactionCustomisation:
     Offset: '0xd8'
     Size: '0x10'
     Type: TArray<struct StreakDynamicMaterials>
-  - Name: pad0x48_89M1X[0x48]
+  - Name: pad0x48_Z28UM[0x48]
     Offset: '0xe8'
     Size: '0x48'
     Type: char
@@ -604,7 +628,7 @@ ShipSunkTrackingComponent:
     Offset: '0xb8'
     Size: '0x4'
     Type: float
-  - Name: pad0x2c_R7O0Q[0x2c]
+  - Name: pad0x2c_8S39N[0x2c]
     Offset: '0xbc'
     Size: '0x2c'
     Type: char
@@ -682,7 +706,7 @@ StartFactionVoyageVoteConsumer:
     Offset: '0x460'
     Size: '0x38'
     Type: struct FText
-  - Name: pad0x18_ZASG5[0x18]
+  - Name: pad0x18_FKRVG[0x18]
     Offset: '0x498'
     Size: '0x18'
     Type: char
@@ -693,8 +717,8 @@ StartFactionVoyageVoteConsumer:
 StartFactionVoyageVoteValidator:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0x110'
+  InheritedSize: '0x110'
   Super: FactionVoteValidatorBase
 StopFactionVoyageVoteConsumer:
   Attributes:
@@ -745,8 +769,8 @@ StopFactionVoyageVoteConsumer:
 StopFactionVoyageVoteValidator:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x108'
-  InheritedSize: '0x108'
+  FullSize: '0x110'
+  InheritedSize: '0x110'
   Super: FactionVoteValidatorBase
 StreakMaterialDataAsset:
   Attributes:

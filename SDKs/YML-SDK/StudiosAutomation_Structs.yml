@@ -10,7 +10,7 @@ AssetAuditConstantEntry:
     Offset: '0x10'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_BTX2F[0x4]
+  - Name: pad0x4_DBUTF[0x4]
     Offset: '0x14'
     Size: '0x4'
     Type: char
@@ -54,7 +54,7 @@ CollectionLimits:
     Offset: '0xa'
     Size: '0x1'
     Type: bool
-  - Name: pad0x1_7DTH2[0x1]
+  - Name: pad0x1_VAWAE[0x1]
     Offset: '0xb'
     Size: '0x1'
     Type: char
@@ -82,7 +82,7 @@ CollectionLimits:
     Offset: '0x31'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_YJDKA[0x2]
+  - Name: pad0x2_DVR8U[0x2]
     Offset: '0x32'
     Size: '0x2'
     Type: char
@@ -107,14 +107,14 @@ CollectionMeshLimitsBase:
   ClassSize: '0x8'
 CollectionSkeleMeshLimits:
   Attributes:
-  - Name: pad0x8_22V92[0x8]
+  - Name: pad0x8_DOJVC[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
   ClassSize: '0x8'
 CollectionStaticMeshLimits:
   Attributes:
-  - Name: pad0x8_UX4YB[0x8]
+  - Name: pad0x8_A7LMC[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -144,7 +144,7 @@ FolderTotals:
     Offset: '0x0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_16DDF[0x7]
+  - Name: pad0x7_R221K[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -200,7 +200,7 @@ TextureAuditorGroupProperties:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_GLW1I[0x7]
+  - Name: pad0x7_0AAP9[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -215,7 +215,7 @@ TextureAuditorProperties:
     Offset: '0x0'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_7U5PM[0x7]
+  - Name: pad0x7_66MSJ[0x7]
     Offset: '0x1'
     Size: '0x7'
     Type: char
@@ -223,7 +223,7 @@ TextureAuditorProperties:
     Offset: '0x8'
     Size: '0x10'
     Type: TArray<char>
-  - Name: pad0x8_CP14Z[0x8]
+  - Name: pad0x8_NFUQE[0x8]
     Offset: '0x18'
     Size: '0x8'
     Type: char

@@ -1,9 +1,9 @@
 {
-  "MusicZoneDestroyedEvent": {
+  "MusicZoneSpawnedEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_VF9KG[0x10]",
+        "Name": "pad0x10_KT5AE[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x0"
@@ -44,11 +44,11 @@
       }
     ]
   },
-  "MusicZoneSpawnedEvent": {
+  "MusicZoneDestroyedEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_2E4Y6[0x10]",
+        "Name": "pad0x10_0HA20[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x0"

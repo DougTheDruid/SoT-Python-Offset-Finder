@@ -2,14 +2,14 @@
 # https://github.com/DougTheDruid
 AddedPendingIncomingGameEventOnDemandCrewEvent:
   Attributes:
-  - Name: pad0x48_NFJGS[0x48]
+  - Name: pad0x48_Z6ETN[0x48]
     Offset: '0x0'
     Size: '0x48'
     Type: char
   ClassSize: '0x48'
 AddedPendingIncomingInvaderCrewEvent:
   Attributes:
-  - Name: pad0x48_J8I49[0x48]
+  - Name: pad0x48_VP40P[0x48]
     Offset: '0x0'
     Size: '0x48'
     Type: char
@@ -23,71 +23,109 @@ AthenaServerMigrationClientContext:
   ClassSize: '0x10'
 IncomingMigrationPreventionZone:
   Attributes:
-  - Name: Location
+  - Name: Context
     Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Location
+    Offset: '0x8'
     Size: '0x8'
     Type: struct Vector2D
   - Name: Radius
-    Offset: '0x8'
+    Offset: '0x10'
     Size: '0x4'
     Type: float
-  ClassSize: '0xc'
+  ClassSize: '0x14'
 OutgoingServerMigrationAbortedEvent:
   Attributes:
-  - Name: pad0x20_SZ6VI[0x20]
+  - Name: pad0x20_GSNBQ[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
   ClassSize: '0x20'
 OutgoingServerMigrationCompleteEvent:
   Attributes:
-  - Name: pad0x20_H1AE3[0x20]
+  - Name: pad0x20_1FMVH[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
   ClassSize: '0x20'
 OutgoingServerMigrationCompletedEvent:
   Attributes:
-  - Name: pad0x20_JVA2J[0x20]
+  - Name: pad0x20_EOCZW[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
   ClassSize: '0x20'
 OutgoingServerMigrationStartedEvent:
   Attributes:
-  - Name: pad0x20_HCC9F[0x20]
+  - Name: pad0x20_8IT34[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
   ClassSize: '0x20'
 PrepareForWorldSwitchRpc:
   Attributes:
-  - Name: pad0x18_MAPKI[0x18]
+  - Name: pad0x18_0YRGP[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
   ClassSize: '0x18'
 ServerMigrationAbortEvent:
   Attributes:
-  - Name: pad0x20_TSTTP[0x20]
+  - Name: pad0x20_0JK5T[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
   ClassSize: '0x20'
 ServerMigrationAboutToStartEvent:
   Attributes:
-  - Name: pad0x20_GXZ7D[0x20]
+  - Name: pad0x20_P02QF[0x20]
     Offset: '0x0'
     Size: '0x20'
     Type: char
   ClassSize: '0x20'
 ServerMigrationCompleteEvent:
   Attributes:
-  - Name: pad0x1_AAZ9T[0x1]
+  - Name: pad0x1_FFQSL[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
+ServerMigrationHeartbeatEvent:
+  Attributes:
+  - Name: PointOfInterestProviders
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<struct ServerMigrationHeartbeatProviderData>
+  ClassSize: '0x10'
+ServerMigrationHeartbeatProviderData:
+  Attributes:
+  - Name: TimeStamp
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct DateTime
+  - Name: Handle
+    Offset: '0x8'
+    Size: '0x10'
+    Type: struct Guid
+  - Name: Context
+    Offset: '0x18'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Influence
+    Offset: '0x20'
+    Size: '0x1'
+    Type: byte
+  - Name: pad0x7_OUUVU[0x7]
+    Offset: '0x21'
+    Size: '0x7'
+    Type: char
+  - Name: PointsOfInterest
+    Offset: '0x28'
+    Size: '0x10'
+    Type: TArray<struct ServerMigrationPointOfInterest>
+  ClassSize: '0x38'
 ServerMigrationInstanceEventBase:
   Attributes:
   - Name: ServerId
@@ -99,9 +137,24 @@ ServerMigrationInstanceEventBase:
     Size: '0x10'
     Type: struct Guid
   ClassSize: '0x20'
+ServerMigrationPointOfInterest:
+  Attributes:
+  - Name: Context
+    Offset: '0x0'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Position
+    Offset: '0x8'
+    Size: '0x8'
+    Type: struct Vector2D
+  - Name: Radius
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x14'
 ServerMigrationReadyToTransferActors:
   Attributes:
-  - Name: pad0x90_YS8Y2[0x90]
+  - Name: pad0x90_FZ80W[0x90]
     Offset: '0x0'
     Size: '0x90'
     Type: char
@@ -117,6 +170,25 @@ ServerMigrationRefusedEvent:
     Size: '0x10'
     Type: TArray<struct Guid>
   ClassSize: '0x20'
+ServerMigrationRegisteredPointOfInterestProviderEvent:
+  Attributes:
+  - Name: Handle
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct Guid
+  - Name: Context
+    Offset: '0x10'
+    Size: '0x8'
+    Type: struct FName
+  - Name: Influence
+    Offset: '0x18'
+    Size: '0x1'
+    Type: byte
+  - Name: pad0x3_IN9HC[0x3]
+    Offset: '0x19'
+    Size: '0x3'
+    Type: char
+  ClassSize: '0x1c'
 ServerMigrationRequestBroadcastEvent:
   Attributes:
   - Name: DestinationAddress
@@ -157,15 +229,26 @@ ServerMigrationRequestEvent:
   ClassSize: '0x60'
 ServerMigrationSetupCompleteEvent:
   Attributes:
-  - Name: pad0x1_5PYZ0[0x1]
+  - Name: pad0x1_S0CFI[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 ServerMigrationSetupRequestEvent:
   Attributes:
-  - Name: pad0x1_Y3X9W[0x1]
+  - Name: pad0x1_C4KOM[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
+ServerMigrationUnregisteredPointOfInterestProviderEvent:
+  Attributes:
+  - Name: Handle
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct Guid
+  - Name: Context
+    Offset: '0x10'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x18'

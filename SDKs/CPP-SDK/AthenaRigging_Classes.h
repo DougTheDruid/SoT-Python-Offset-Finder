@@ -6,31 +6,12 @@
 #include "AthenaRigging_Structs.h"
 
 
-// Size 0x40 (Full Size[0x310] - InheritedSize[0x2d0]
-class RiggingSystemComponent: public SceneComponent
+// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
+class MaterialExpressionRopeParameter: public MaterialExpression
 {
 public:
-	struct RopeStyleParams                                       RopeStyle;                                         // 0x2d0(0x20)
-	TArray<struct RiggingSystemLineGroup>                        LineGroups;                                        // 0x2f0(0x10)
-	class RiggingSystem*                                         Impl;                                              // 0x300(0x8)
-	char                                                         pad0x8_LVHVG[0x8];                                 // 0x308(0x8)
-};
-
-
-// Size 0x150 (Full Size[0x4f0] - InheritedSize[0x3a0]
-class RiggingSystem: public Actor
-{
-public:
-	char                                                         pad0x8_0BP60[0x8];                                 // 0x3a0(0x8)
-	class SceneComponent*                                        Root;                                              // 0x3a8(0x8)
-	class InstancedRopeComponent*                                InstancedRopes;                                    // 0x3b0(0x8)
-	TArray<struct RiggingSystemLine>                             Lines;                                             // 0x3b8(0x10)
-	TArray<struct InstancedRopeParams>                           Ropes;                                             // 0x3c8(0x10)
-	TArray<class MobileInstancedStaticMeshComponent*>            PulleyInstances;                                   // 0x3d8(0x10)
-	struct RiggingSystemPulleyData                               Pulleys;                                           // 0x3e8(0x60)
-	TArray<struct SocketId>                                      Sockets;                                           // 0x448(0x10)
-	TArray<float>                                                InitialMainRopeLengths;                            // 0x458(0x10)
-	char                                                         pad0x88_7UQEV[0x88];                               // 0x468(0x88)
+	char                                                         RopeParameterType;                                 // 0x70(0x1)
+	char                                                         pad0x7_WGUQT[0x7];                                 // 0x71(0x7)
 };
 
 
@@ -41,22 +22,6 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x640] - InheritedSize[0x640]
-class RopeCatenaryRenderComponent: public CordRenderComponent
-{
-public:
-};
-
-
-// Size 0x8 (Full Size[0x78] - InheritedSize[0x70]
-class MaterialExpressionRopeParameter: public MaterialExpression
-{
-public:
-	char                                                         RopeParameterType;                                 // 0x70(0x1)
-	char                                                         pad0x7_KEQ9Y[0x7];                                 // 0x71(0x7)
-};
-
-
 // Size 0xc0 (Full Size[0x660] - InheritedSize[0x5a0]
 class InstancedRopeComponent: public PrimitiveComponent
 {
@@ -64,7 +29,42 @@ public:
 	class StaticMesh*                                            StaticMesh;                                        // 0x598(0x8)
 	TArray<struct InstancedRopeParams>                           Ropes;                                             // 0x5a0(0x10)
 	int                                                          ShadowLOD;                                         // 0x5b0(0x4)
-	char                                                         pad0xac_J00J5[0xac];                               // 0x5b4(0xac)
+	char                                                         pad0xac_0D7AB[0xac];                               // 0x5b4(0xac)
+};
+
+
+// Size 0x150 (Full Size[0x4f0] - InheritedSize[0x3a0]
+class RiggingSystem: public Actor
+{
+public:
+	char                                                         pad0x8_V7FNC[0x8];                                 // 0x3a0(0x8)
+	class SceneComponent*                                        Root;                                              // 0x3a8(0x8)
+	class InstancedRopeComponent*                                InstancedRopes;                                    // 0x3b0(0x8)
+	TArray<struct RiggingSystemLine>                             Lines;                                             // 0x3b8(0x10)
+	TArray<struct InstancedRopeParams>                           Ropes;                                             // 0x3c8(0x10)
+	TArray<class MobileInstancedStaticMeshComponent*>            PulleyInstances;                                   // 0x3d8(0x10)
+	struct RiggingSystemPulleyData                               Pulleys;                                           // 0x3e8(0x60)
+	TArray<struct SocketId>                                      Sockets;                                           // 0x448(0x10)
+	TArray<float>                                                InitialMainRopeLengths;                            // 0x458(0x10)
+	char                                                         pad0x88_61T63[0x88];                               // 0x468(0x88)
+};
+
+
+// Size 0x0 (Full Size[0x640] - InheritedSize[0x640]
+class RopeCatenaryRenderComponent: public CordRenderComponent
+{
+public:
+};
+
+
+// Size 0x40 (Full Size[0x310] - InheritedSize[0x2d0]
+class RiggingSystemComponent: public SceneComponent
+{
+public:
+	struct RopeStyleParams                                       RopeStyle;                                         // 0x2d0(0x20)
+	TArray<struct RiggingSystemLineGroup>                        LineGroups;                                        // 0x2f0(0x10)
+	class RiggingSystem*                                         Impl;                                              // 0x300(0x8)
+	char                                                         pad0x8_7I3X0[0x8];                                 // 0x308(0x8)
 };
 
 

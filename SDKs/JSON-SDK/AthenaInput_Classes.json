@@ -1,12 +1,12 @@
 {
-  "NotificationInputId": {
+  "AnalogInputId": {
     "Super": "Object",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_U6LXO[0x10]",
+        "Name": "pad0x10_C5HXE[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"
@@ -20,14 +20,14 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "AnalogInputId": {
+  "NotificationInputId": {
     "Super": "Object",
     "FullSize": "0x38",
     "InheritedSize": "0x28",
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_ESNZX[0x10]",
+        "Name": "pad0x10_ZPATY[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"

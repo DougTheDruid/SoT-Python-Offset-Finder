@@ -7,14 +7,7 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class HandoverAmmoInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class IsDestroyedDeployableOnEnemyShipStatCondition: public StatCondition
+class ConvertItemToActorInterface: public Interface
 {
 public:
 };
@@ -28,7 +21,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ConvertItemToActorInterface: public Interface
+class IsDestroyedDeployableOnEnemyShipStatCondition: public StatCondition
 {
 public:
 };
@@ -38,8 +31,15 @@ public:
 class HandoverAmmoComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_ZUYPM[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_WLMWA[0x8];                                 // 0xb8(0x8)
 	class ItemInfo*                                              LoadedAmmoClass;                                   // 0xc0(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class HandoverAmmoInterface: public Interface
+{
+public:
 };
 
 

@@ -1,24 +1,4 @@
 {
-  "GameplayTask": {
-    "Super": "Object",
-    "FullSize": "0x58",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "InstanceName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x28_RU9IC[0x28]",
-        "Type": "char",
-        "Size": "0x28",
-        "Offset": "0x30"
-      }
-    ]
-  },
   "GameplayTasksComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x118",
@@ -26,7 +6,7 @@
     "ClassSize": "0x60",
     "Attributes": [
       {
-        "Name": "pad0x8_CC07M[0x8]",
+        "Name": "pad0x8_DHKA9[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0xb8"
@@ -44,16 +24,36 @@
         "Offset": "0xd0"
       },
       {
-        "Name": "pad0x28_7WQLP[0x28]",
+        "Name": "pad0x28_TXIST[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0xe0"
       },
       {
-        "Name": "pad0x10_P1T45[0x10]",
+        "Name": "pad0x10_5GUDP[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x108"
+      }
+    ]
+  },
+  "GameplayTask": {
+    "Super": "Object",
+    "FullSize": "0x58",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "InstanceName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "pad0x28_VU653[0x28]",
+        "Type": "char",
+        "Size": "0x28",
+        "Offset": "0x30"
       }
     ]
   },
@@ -77,7 +77,7 @@
         "Offset": "0x28"
       },
       {
-        "Name": "pad0x4_OITN1[0x4]",
+        "Name": "pad0x4_M9H89[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
@@ -89,7 +89,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x7_R01ZW[0x7]",
+        "Name": "pad0x7_VGQPQ[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x31"
@@ -103,7 +103,7 @@
     "ClassSize": "0x40",
     "Attributes": [
       {
-        "Name": "pad0x38_1A8OJ[0x38]",
+        "Name": "pad0x38_R7C3X[0x38]",
         "Type": "char",
         "Size": "0x38",
         "Offset": "0x58"
@@ -123,7 +123,7 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x18_NDS94[0x18]",
+        "Name": "pad0x18_ZG0XU[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x58"

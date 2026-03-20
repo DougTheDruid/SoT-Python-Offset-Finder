@@ -2,26 +2,34 @@
 # https://github.com/DougTheDruid
 BoundsStartedShrinkingTelemetryEvent:
   Attributes:
-  - Name: OldRadius
+  - Name: OldInnerRadius
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: BoundsId
+  - Name: OldOuterRadius
     Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: BoundsId
+    Offset: '0x8'
     Size: '0x10'
     Type: struct Guid
-  ClassSize: '0x14'
+  ClassSize: '0x18'
 BoundsStoppedShrinkingTelemetryEvent:
   Attributes:
-  - Name: NewRadius
+  - Name: NewInnerRadius
     Offset: '0x0'
     Size: '0x4'
     Type: float
-  - Name: BoundsId
+  - Name: NewOuterRadius
     Offset: '0x4'
+    Size: '0x4'
+    Type: float
+  - Name: BoundsId
+    Offset: '0x8'
     Size: '0x10'
     Type: struct Guid
-  ClassSize: '0x14'
+  ClassSize: '0x18'
 CrewJoinedInvasionBattleTelemetryEvent:
   Attributes:
   - Name: ItemsBroughtToBattle
@@ -57,30 +65,63 @@ CrewStoppedInvasion:
     Size: '0x10'
     Type: struct Guid
   ClassSize: '0x10'
-EventBoundsPreStartShrinking:
+EventBoundsStartShrinkMusic:
   Attributes:
-  - Name: pad0x10_797QL[0x10]
+  - Name: pad0x10_SPQWW[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
   ClassSize: '0x10'
-EventBoundsStartedShrinking:
+EventBoundsStartShrinkSFX:
   Attributes:
-  - Name: pad0x10_COHXQ[0x10]
+  - Name: pad0x10_LWNZI[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
   ClassSize: '0x10'
-EventBoundsStoppedShrinking:
+EventBoundsStopShrinkMusic:
   Attributes:
-  - Name: pad0x10_0ZKNP[0x10]
+  - Name: pad0x10_GFZ35[0x10]
     Offset: '0x0'
     Size: '0x10'
     Type: char
   ClassSize: '0x10'
+EventBoundsStopShrinkSFX:
+  Attributes:
+  - Name: pad0x10_O7Q3G[0x10]
+    Offset: '0x0'
+    Size: '0x10'
+    Type: char
+  ClassSize: '0x10'
+EventForceStopShrinkingAudio:
+  Attributes:
+  - Name: pad0x1_WDGVB[0x1]
+    Offset: '0x0'
+    Size: '0x1'
+    Type: char
+  ClassSize: '0x1'
+InvasionAutoActivatedEmissaryTelemetryEvent:
+  Attributes:
+  - Name: Result
+    Offset: '0x0'
+    Size: '0x1'
+    Type: byte
+  - Name: pad0x3_HYYP6[0x3]
+    Offset: '0x1'
+    Size: '0x3'
+    Type: char
+  - Name: Faction
+    Offset: '0x4'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ActivatedEmissaryCompany
+    Offset: '0xc'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x14'
 InvasionBannerNetworkEvent:
   Attributes:
-  - Name: pad0x18_LO4IT[0x18]
+  - Name: pad0x18_8APUC[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -96,7 +137,7 @@ InvasionBannerNetworkEvent:
     Offset: '0x60'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_Y7792[0x3]
+  - Name: pad0x3_G93JU[0x3]
     Offset: '0x61'
     Size: '0x3'
     Type: char
@@ -108,7 +149,7 @@ InvasionBannerNetworkEvent:
     Offset: '0x6c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_E1DTT[0x3]
+  - Name: pad0x3_7HMIM[0x3]
     Offset: '0x6d'
     Size: '0x3'
     Type: char
@@ -119,7 +160,7 @@ InvasionBattleBoundsAudioEvent:
     Offset: '0x0'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_88A42[0x4]
+  - Name: pad0x4_6UT7X[0x4]
     Offset: '0x4'
     Size: '0x4'
     Type: char
@@ -128,7 +169,49 @@ InvasionBattleBoundsAudioEvent:
     Size: '0x8'
     Type: double
   ClassSize: '0x10'
+InvasionBattleBoundsRepData:
+  Attributes:
+  - Name: TransitionStartTimestamp
+    Offset: '0x0'
+    Size: '0x8'
+    Type: double
+  - Name: TransitionDuration
+    Offset: '0x8'
+    Size: '0x4'
+    Type: float
+  - Name: StartInnerRadius
+    Offset: '0xc'
+    Size: '0x4'
+    Type: float
+  - Name: StartOuterRadius
+    Offset: '0x10'
+    Size: '0x4'
+    Type: float
+  - Name: TargetInnerRadius
+    Offset: '0x14'
+    Size: '0x4'
+    Type: float
+  - Name: TargetOuterRadius
+    Offset: '0x18'
+    Size: '0x4'
+    Type: float
+  - Name: pad0x4_SZ208[0x4]
+    Offset: '0x1c'
+    Size: '0x4'
+    Type: char
+  ClassSize: '0x20'
 InvasionBattleCrewSuppliesAfterRestockTelemetryEvent:
+  Attributes:
+  - Name: TelemetryId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct Guid
+  - Name: Json
+    Offset: '0x10'
+    Size: '0x18'
+    Type: struct JsonObjectWrapper
+  ClassSize: '0x28'
+InvasionBattleCrewSuppliesOnFinishTelemetryEvent:
   Attributes:
   - Name: TelemetryId
     Offset: '0x0'
@@ -153,11 +236,86 @@ InvasionBattleCrewSuppliesOnJoinTelemetryEvent:
     Offset: '0x28'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_AUP1F[0x7]
+  - Name: pad0x7_2D4KG[0x7]
     Offset: '0x29'
     Size: '0x7'
     Type: char
   ClassSize: '0x30'
+InvasionBoundsSpawnedTelemetryEvent:
+  Attributes:
+  - Name: BoundsId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct Guid
+  - Name: Crew1Id
+    Offset: '0x10'
+    Size: '0x10'
+    Type: struct Guid
+  - Name: Crew2Id
+    Offset: '0x20'
+    Size: '0x10'
+    Type: struct Guid
+  - Name: InnerRadius
+    Offset: '0x30'
+    Size: '0x4'
+    Type: float
+  - Name: OuterRadius
+    Offset: '0x34'
+    Size: '0x4'
+    Type: float
+  - Name: Location
+    Offset: '0x38'
+    Size: '0xc'
+    Type: struct Vector
+  ClassSize: '0x44'
+InvasionCrateRuntimeFactionSettings:
+  Attributes:
+  - Name: Faction
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: ShipSizeSettings
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<struct InvasionCrateRuntimeShipSizeSettings>
+  ClassSize: '0x18'
+InvasionCrateRuntimeItemLimitSettings:
+  Attributes:
+  - Name: ItemDesc
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: MaxNumItems
+    Offset: '0x8'
+    Size: '0x4'
+    Type: int
+  - Name: RestockNumItems
+    Offset: '0xc'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x10'
+InvasionCrateRuntimeSettings:
+  Attributes:
+  - Name: FactionSettings
+    Offset: '0x0'
+    Size: '0x10'
+    Type: TArray<struct InvasionCrateRuntimeFactionSettings>
+  ClassSize: '0x10'
+InvasionCrateRuntimeShipSizeSettings:
+  Attributes:
+  - Name: ShipSize
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: CrateDesc
+    Offset: '0x8'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: ItemLimits
+    Offset: '0x10'
+    Size: '0x10'
+    Type: TArray<struct InvasionCrateRuntimeItemLimitSettings>
+  ClassSize: '0x20'
 InvasionCrateSettings:
   Attributes:
   - Name: ItemDesc
@@ -168,10 +326,10 @@ InvasionCrateSettings:
     Offset: '0x8'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_DSDUB[0x4]
+  - Name: RestockNumItems
     Offset: '0xc'
     Size: '0x4'
-    Type: char
+    Type: int
   ClassSize: '0x10'
 InvasionCrateSettingsPerFaction:
   Attributes:
@@ -209,7 +367,7 @@ InvasionCrewData:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_UB2G4[0x3]
+  - Name: pad0x3_26O73[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
@@ -221,11 +379,26 @@ InvasionCrewData:
     Offset: '0x1c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_IF9R3[0x3]
+  - Name: pad0x3_V80SL[0x3]
     Offset: '0x1d'
     Size: '0x3'
     Type: char
   ClassSize: '0x20'
+InvasionEmissarySettingsPerFaction:
+  Attributes:
+  - Name: Faction
+    Offset: '0x0'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: AssociatedEmissaryCompany
+    Offset: '0x8'
+    Size: '0x8'
+    Type: class UClass*
+  - Name: pad0x20_MHA8D[0x20]
+    Offset: '0x10'
+    Size: '0x20'
+    Type: char
+  ClassSize: '0x30'
 InvasionEndedTelemetryEvent:
   Attributes:
   - Name: Participants
@@ -240,7 +413,7 @@ InvasionEndedTelemetryEvent:
     Offset: '0x30'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_M4SI3[0x4]
+  - Name: pad0x4_8JQGD[0x4]
     Offset: '0x34'
     Size: '0x4'
     Type: char
@@ -252,7 +425,7 @@ InvasionEndedTelemetryEvent:
     Offset: '0x48'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_N1F5U[0x7]
+  - Name: pad0x7_CUZF6[0x7]
     Offset: '0x49'
     Size: '0x7'
     Type: char
@@ -267,11 +440,22 @@ InvasionParticipatingCrewData:
     Offset: '0x10'
     Size: '0x10'
     Type: TArray<class CrewVoyageParticipant*>
-  - Name: pad0x58_828BJ[0x58]
+  - Name: pad0x58_RVKXU[0x58]
     Offset: '0x20'
     Size: '0x58'
     Type: char
   ClassSize: '0x78'
+InvasionServiceLosingCrewInfo:
+  Attributes:
+  - Name: CrewId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct Guid
+  - Name: FactionName
+    Offset: '0x10'
+    Size: '0x8'
+    Type: struct FName
+  ClassSize: '0x18'
 InvasionServiceMatchmakingCrewInfo:
   Attributes:
   - Name: CrewId
@@ -282,14 +466,29 @@ InvasionServiceMatchmakingCrewInfo:
     Offset: '0x10'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3_N1JL8[0x3]
+  - Name: pad0x3_16504[0x3]
+    Offset: '0x11'
+    Size: '0x3'
+    Type: char
+  ClassSize: '0x14'
+InvasionVotingTimerCompleted:
+  Attributes:
+  - Name: CrewId
+    Offset: '0x0'
+    Size: '0x10'
+    Type: struct Guid
+  - Name: VotePassed
+    Offset: '0x10'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x3_G691N[0x3]
     Offset: '0x11'
     Size: '0x3'
     Type: char
   ClassSize: '0x14'
 MatchesCreateMatchSuccessfulRpc:
   Attributes:
-  - Name: pad0x18_FX8AS[0x18]
+  - Name: pad0x18_QQB0Z[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -300,7 +499,7 @@ MatchesCreateMatchSuccessfulRpc:
   ClassSize: '0x28'
 MatchesTriggerCreateMatchRpc:
   Attributes:
-  - Name: pad0x18_QUM6W[0x18]
+  - Name: pad0x18_23H1N[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -312,7 +511,7 @@ MatchesTriggerCreateMatchRpc:
     Offset: '0x28'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_H0HXM[0x4]
+  - Name: pad0x4_F5Y4F[0x4]
     Offset: '0x2c'
     Size: '0x4'
     Type: char
@@ -332,7 +531,7 @@ MatchesTriggerCreateMatchRpc:
     Offset: '0x51'
     Size: '0x1'
     Type: byte
-  - Name: pad0x6_OG7OG[0x6]
+  - Name: pad0x6_MXIXJ[0x6]
     Offset: '0x52'
     Size: '0x6'
     Type: char
@@ -347,7 +546,7 @@ MatchesTriggerCreateMatchRpc:
   ClassSize: '0x78'
 MatchesTriggerEndMatchRpc:
   Attributes:
-  - Name: pad0x18_KFNTO[0x18]
+  - Name: pad0x18_O3U0C[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -366,7 +565,7 @@ MatchesTriggerEndMatchRpc:
   ClassSize: '0x48'
 MatchesTriggerPlayerJoinRpc:
   Attributes:
-  - Name: pad0x18_86UWG[0x18]
+  - Name: pad0x18_3WPYG[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -385,7 +584,7 @@ MatchesTriggerPlayerJoinRpc:
   ClassSize: '0x60'
 MatchesTriggerPlayerLeaveRpc:
   Attributes:
-  - Name: pad0x18_L00UX[0x18]
+  - Name: pad0x18_GH5QL[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -400,7 +599,7 @@ MatchesTriggerPlayerLeaveRpc:
   ClassSize: '0x50'
 MatchesTriggerStartMatchRpc:
   Attributes:
-  - Name: pad0x18_J1W6O[0x18]
+  - Name: pad0x18_VCFKF[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -411,7 +610,7 @@ MatchesTriggerStartMatchRpc:
   ClassSize: '0x28'
 MatchesTriggerUpdateMatchRpc:
   Attributes:
-  - Name: pad0x18_W5KBT[0x18]
+  - Name: pad0x18_MD88T[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char
@@ -465,7 +664,7 @@ PlayerData:
     Offset: '0x20'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_WVIXE[0x7]
+  - Name: pad0x7_KW06M[0x7]
     Offset: '0x21'
     Size: '0x7'
     Type: char

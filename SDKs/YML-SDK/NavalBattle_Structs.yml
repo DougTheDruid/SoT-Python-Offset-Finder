@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 NavalBattleCrewDestroyedTelemetry:
   Attributes:
-  - Name: pad0x1_PDXWF[0x1]
+  - Name: pad0x1_9INSD[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -23,7 +23,7 @@ NavalBattleCrewTradedSinksTelemetry:
   ClassSize: '0x10'
 NavalBattleShipAddedTelemetry:
   Attributes:
-  - Name: pad0x1_0QKEJ[0x1]
+  - Name: pad0x1_VTY52[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
@@ -52,21 +52,21 @@ NavalBattleShipDamagerTelemetry:
   ClassSize: '0x20'
 NavalBattleShipForcedMigratedTelemetry:
   Attributes:
-  - Name: pad0x1_RGANB[0x1]
+  - Name: pad0x1_YYZW2[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 NavalBattleShipSunkTelemetry:
   Attributes:
-  - Name: pad0x1_EW3R8[0x1]
+  - Name: pad0x1_I6URC[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char
   ClassSize: '0x1'
 NavalBattleSinkTimerElapsedTelemetry:
   Attributes:
-  - Name: pad0x1_ITX68[0x1]
+  - Name: pad0x1_U35MH[0x1]
     Offset: '0x0'
     Size: '0x1'
     Type: char

@@ -3,27 +3,10 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_NTVJU[0x1]",
+        "Name": "pad0x1_S49KG[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
-      }
-    ]
-  },
-  "EngineServiceExecuteCommand": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Command",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "UserName",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
       }
     ]
   },
@@ -49,7 +32,7 @@
         "Offset": "0x14"
       },
       {
-        "Name": "pad0x3_IS7JX[0x3]",
+        "Name": "pad0x3_A4LUW[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x15"
@@ -79,24 +62,41 @@
         "Offset": "0x48"
       },
       {
-        "Name": "pad0x4_S9WP0[0x4]",
+        "Name": "pad0x4_CEQHB[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
       }
     ]
   },
-  "EngineServiceAuthDeny": {
-    "ClassSize": "0x20",
+  "EngineServiceNotification": {
+    "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "UserName",
+        "Name": "Text",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "UserToDeny",
+        "Name": "TimeSeconds",
+        "Type": "double",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EngineServiceExecuteCommand": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Command",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "UserName",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x10"
@@ -120,19 +120,19 @@
       }
     ]
   },
-  "EngineServiceNotification": {
-    "ClassSize": "0x18",
+  "EngineServiceAuthDeny": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "Text",
+        "Name": "UserName",
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "TimeSeconds",
-        "Type": "double",
-        "Size": "0x8",
+        "Name": "UserToDeny",
+        "Type": "struct FString",
+        "Size": "0x10",
         "Offset": "0x10"
       }
     ]

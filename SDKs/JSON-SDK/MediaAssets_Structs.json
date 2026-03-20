@@ -1,21 +1,4 @@
 {
-  "MediaCaptureDevice": {
-    "ClassSize": "0x48",
-    "Attributes": [
-      {
-        "Name": "DisplayName",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "URL",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x38"
-      }
-    ]
-  },
   "PlatformPlayerEntry": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -30,6 +13,23 @@
         "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x10"
+      }
+    ]
+  },
+  "MediaCaptureDevice": {
+    "ClassSize": "0x48",
+    "Attributes": [
+      {
+        "Name": "DisplayName",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "URL",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x38"
       }
     ]
   },

@@ -1,136 +1,4 @@
 {
-  "RopeCatenarySwingParams": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "LengthForNeutralSwing",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "LengthBias",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "RopeCatenaryLengthPair": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Taut",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Catenary",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "RopeStyleParams": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Mesh",
-        "Type": "class StaticMesh*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "DiffuseTexture",
-        "Type": "class Texture2D*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "NormalTexture",
-        "Type": "class Texture2D*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "ShadowLOD",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x4_RLXMA[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x1c"
-      }
-    ]
-  },
-  "RopeVisualParams": {
-    "ClassSize": "0xc",
-    "Attributes": [
-      {
-        "Name": "Thickness",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "UVScale",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "Roughness",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "RopeCatenaryDynamicsParams": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "CatenaryToTautLengthRatioToConsiderCatenary",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ReactsToWind",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "pad0x3_YRVPC[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x5"
-      }
-    ]
-  },
-  "RopeCatenarySlopeBlendParams": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "MinSlopeForTautBlend",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MaxSlopeForTautBlend",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
   "RiggingSystemPulleyData": {
     "ClassSize": "0x60",
     "Attributes": [
@@ -176,15 +44,15 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_0USNU[0x10]",
+        "Name": "pad0x10_FGJC8[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x0"
       }
     ]
   },
-  "PulleyVisualParams": {
-    "ClassSize": "0x10",
+  "RopeStyleParams": {
+    "ClassSize": "0x20",
     "Attributes": [
       {
         "Name": "Mesh",
@@ -193,16 +61,28 @@
         "Offset": "0x0"
       },
       {
-        "Name": "Scale",
-        "Type": "float",
-        "Size": "0x4",
+        "Name": "DiffuseTexture",
+        "Type": "class Texture2D*",
+        "Size": "0x8",
         "Offset": "0x8"
       },
       {
-        "Name": "Radius",
-        "Type": "float",
+        "Name": "NormalTexture",
+        "Type": "class Texture2D*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "ShadowLOD",
+        "Type": "int",
         "Size": "0x4",
-        "Offset": "0xc"
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x4_W4WRY[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x1c"
       }
     ]
   },
@@ -232,6 +112,126 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0xc"
+      }
+    ]
+  },
+  "RopeCatenarySwingParams": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "LengthForNeutralSwing",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "LengthBias",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "RopeCatenarySlopeBlendParams": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "MinSlopeForTautBlend",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MaxSlopeForTautBlend",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "PulleyVisualParams": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "Mesh",
+        "Type": "class StaticMesh*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Scale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Radius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "RopeVisualParams": {
+    "ClassSize": "0xc",
+    "Attributes": [
+      {
+        "Name": "Thickness",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "UVScale",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "Roughness",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "RopeCatenaryLengthPair": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Taut",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Catenary",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "RopeCatenaryDynamicsParams": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "CatenaryToTautLengthRatioToConsiderCatenary",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ReactsToWind",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "pad0x3_54C6N[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x5"
       }
     ]
   },
@@ -356,7 +356,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_0Y3IK[0x4]",
+        "Name": "pad0x4_SXRWU[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x24"
@@ -374,7 +374,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x4_Z8O8T[0x4]",
+        "Name": "pad0x4_WM780[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4c"
@@ -415,7 +415,7 @@
         "Offset": "0x5c"
       },
       {
-        "Name": "pad0x4_MD5KZ[0x4]",
+        "Name": "pad0x4_2HWO5[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x74"

@@ -1,17 +1,42 @@
 {
-  "PromptsLocalService": {
+  "PrioritisedPromptsManager": {
     "Super": "Object",
-    "FullSize": "0x98",
+    "FullSize": "0x78",
     "InheritedSize": "0x28",
-    "ClassSize": "0x70",
+    "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x70_0L52Y[0x70]",
+        "Name": "pad0x8_GYUPL[0x8]",
         "Type": "char",
-        "Size": "0x70",
+        "Size": "0x8",
         "Offset": "0x28"
+      },
+      {
+        "Name": "AllPrompts",
+        "Type": "TArray<struct PrioritisedPromptWithHandle>",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "PlayerController",
+        "Type": "class PlayerController*",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "pad0x30_XXNHK[0x30]",
+        "Type": "char",
+        "Size": "0x30",
+        "Offset": "0x48"
       }
     ]
+  },
+  "PrioritisedPromptsManagerInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "PromptCounterAccessKey": {
     "Super": "Object",
@@ -27,51 +52,6 @@
       }
     ]
   },
-  "PrioritisedPromptsManagerInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BasePromptCoordinator": {
-    "Super": "Object",
-    "FullSize": "0x118",
-    "InheritedSize": "0x28",
-    "ClassSize": "0xf0",
-    "Attributes": [
-      {
-        "Name": "PlayerController",
-        "Type": "class AthenaPlayerController*",
-        "Size": "0x8",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "pad0x10_L5IKN[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "PrioritisedPromptsManager",
-        "Type": "class PrioritisedPromptsManager*",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "CharacterWithRegisteredEvents",
-        "Type": "class Character*",
-        "Size": "0x8",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "pad0xc8_1LVPT[0xc8]",
-        "Type": "char",
-        "Size": "0xc8",
-        "Offset": "0x50"
-      }
-    ]
-  },
   "GetPromptsLocalService": {
     "Super": "BlueprintAsyncActionBase",
     "FullSize": "0x40",
@@ -79,7 +59,7 @@
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "pad0x10_MH2NR[0x10]",
+        "Name": "pad0x10_761ZX[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"
@@ -99,35 +79,55 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "PrioritisedPromptsManager": {
+  "BasePromptCoordinator": {
     "Super": "Object",
-    "FullSize": "0x78",
+    "FullSize": "0x118",
     "InheritedSize": "0x28",
-    "ClassSize": "0x50",
+    "ClassSize": "0xf0",
     "Attributes": [
       {
-        "Name": "pad0x8_63I8M[0x8]",
-        "Type": "char",
+        "Name": "PlayerController",
+        "Type": "class AthenaPlayerController*",
         "Size": "0x8",
         "Offset": "0x28"
       },
       {
-        "Name": "AllPrompts",
-        "Type": "TArray<struct PrioritisedPromptWithHandle>",
+        "Name": "pad0x10_2HVFK[0x10]",
+        "Type": "char",
         "Size": "0x10",
         "Offset": "0x30"
       },
       {
-        "Name": "PlayerController",
-        "Type": "class PlayerController*",
+        "Name": "PrioritisedPromptsManager",
+        "Type": "class PrioritisedPromptsManager*",
         "Size": "0x8",
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x30_DE1YQ[0x30]",
-        "Type": "char",
-        "Size": "0x30",
+        "Name": "CharacterWithRegisteredEvents",
+        "Type": "class Character*",
+        "Size": "0x8",
         "Offset": "0x48"
+      },
+      {
+        "Name": "pad0xc8_EQSHI[0xc8]",
+        "Type": "char",
+        "Size": "0xc8",
+        "Offset": "0x50"
+      }
+    ]
+  },
+  "PromptsLocalService": {
+    "Super": "Object",
+    "FullSize": "0x98",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "pad0x70_RE9M8[0x70]",
+        "Type": "char",
+        "Size": "0x70",
+        "Offset": "0x28"
       }
     ]
   },

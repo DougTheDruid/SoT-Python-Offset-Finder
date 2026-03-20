@@ -6,6 +6,69 @@
 #include "ExplosionFramework_Structs.h"
 
 
+// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
+class TaleQuestFuseFunctionLibrary: public TaleQuestFunctionStepLibrary
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
+class ExplosionHitShipConditionalStatsTrigger: public ConditionalStatsTriggerType
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
+class ExplosionConditionalStatsTrigger: public ConditionalStatsTriggerType
+{
+public:
+};
+
+
+// Size 0x58 (Full Size[0x348] - InheritedSize[0x2f0]
+class TinyKrakenExplosionComponent: public ExplosionComponent
+{
+public:
+	char                                                         pad0x58_N79MF[0x58];                               // 0x2f0(0x58)
+};
+
+
+// Size 0x70 (Full Size[0x128] - InheritedSize[0xb8]
+class CreateActorInstanceOnExplodeComponent: public ActorComponent
+{
+public:
+	class UClass*                                                ActorToInstance;                                   // 0xb8(0x8)
+	char                                                         pad0x68_FH58G[0x68];                               // 0xc0(0x68)
+};
+
+
+// Size 0x18 (Full Size[0x50] - InheritedSize[0x38]
+class StatusResponseExplodeAfterTime: public StatusResponse
+{
+public:
+	float                                                        MinTimeUntilExplosion;                             // 0x38(0x4)
+	float                                                        MaxTimeUntilExplosion;                             // 0x3c(0x4)
+	char                                                         pad0x8_890M2[0x8];                                 // 0x40(0x8)
+	class World*                                                 CachedWorld;                                       // 0x48(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
+class StatusResponseCancelFuse: public StatusResponse
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ExplosionInterface: public Interface
+{
+public:
+};
+
+
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
 class ExplosiveComponentInterface: public Interface
 {
@@ -20,8 +83,8 @@ public:
 };
 
 
-// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class StatusResponseCancelFuse: public StatusResponse
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ExplosionReceiverInterface: public Interface
 {
 public:
 };
@@ -31,69 +94,6 @@ public:
 class ExplosivesServiceInterface: public Interface
 {
 public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ExplosionInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class ExplosionHitShipConditionalStatsTrigger: public ConditionalStatsTriggerType
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ExplosionReceiverInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x0 (Full Size[0x30] - InheritedSize[0x30]
-class ExplosionConditionalStatsTrigger: public ConditionalStatsTriggerType
-{
-public:
-};
-
-
-// Size 0x70 (Full Size[0x128] - InheritedSize[0xb8]
-class CreateActorInstanceOnExplodeComponent: public ActorComponent
-{
-public:
-	class UClass*                                                ActorToInstance;                                   // 0xb8(0x8)
-	char                                                         pad0x68_ZNT9U[0x68];                               // 0xc0(0x68)
-};
-
-
-// Size 0x18 (Full Size[0x50] - InheritedSize[0x38]
-class StatusResponseExplodeAfterTime: public StatusResponse
-{
-public:
-	float                                                        MinTimeUntilExplosion;                             // 0x38(0x4)
-	float                                                        MaxTimeUntilExplosion;                             // 0x3c(0x4)
-	char                                                         pad0x8_O1C4G[0x8];                                 // 0x40(0x8)
-	class World*                                                 CachedWorld;                                       // 0x48(0x8)
-};
-
-
-// Size 0x0 (Full Size[0x180] - InheritedSize[0x180]
-class TaleQuestFuseFunctionLibrary: public TaleQuestFunctionStepLibrary
-{
-public:
-};
-
-
-// Size 0x58 (Full Size[0x330] - InheritedSize[0x2d8]
-class TinyKrakenExplosionComponent: public ExplosionComponent
-{
-public:
-	char                                                         pad0x58_FS4T9[0x58];                               // 0x2d8(0x58)
 };
 
 

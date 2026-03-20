@@ -13,13 +13,38 @@ public:
 };
 
 
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
+class StatusResponseSuspendStatus: public StatusResponse
+{
+public:
+	TArray<class Class*>                                         Status;                                            // 0x38(0x10)
+};
+
+
 // Size 0x28 (Full Size[0x60] - InheritedSize[0x38]
 class StatusResponseApplyPersistentStatus: public StatusResponse
 {
 public:
 	struct Status                                                StatusToApply;                                     // 0x38(0x20)
 	float                                                        DurationMultiplier;                                // 0x58(0x4)
-	char                                                         pad0x4_PC2EC[0x4];                                 // 0x5c(0x4)
+	char                                                         pad0x4_B2DQZ[0x4];                                 // 0x5c(0x4)
+};
+
+
+// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
+class StatusResponseSetScalarParamOnCharacter: public StatusResponse
+{
+public:
+	TArray<struct ScalarParamInfo>                               ParamsToChange;                                    // 0x38(0x10)
+};
+
+
+// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
+class StatusResponseHealthRegenerationPoolChange: public StatusResponse
+{
+public:
+	float                                                        HealthPoolChangeIntensityMultiplier;               // 0x38(0x4)
+	char                                                         pad0x4_1TUO2[0x4];                                 // 0x3c(0x4)
 };
 
 
@@ -32,42 +57,9 @@ public:
 	float                                                        NoiseRange;                                        // 0x48(0x4)
 	float                                                        NoiseLoudness;                                     // 0x4c(0x4)
 	bool                                                         NoiseMultipleTicks;                                // 0x50(0x1)
-	char                                                         pad0x3_9WXGT[0x3];                                 // 0x51(0x3)
+	char                                                         pad0x3_CMV80[0x3];                                 // 0x51(0x3)
 	float                                                        NoiseTimerTick;                                    // 0x54(0x4)
-	char                                                         pad0x20_IEIIZ[0x20];                               // 0x58(0x20)
-};
-
-
-// Size 0x8 (Full Size[0x40] - InheritedSize[0x38]
-class StatusResponseHealthRegenerationPoolChange: public StatusResponse
-{
-public:
-	float                                                        HealthPoolChangeIntensityMultiplier;               // 0x38(0x4)
-	char                                                         pad0x4_X3HZF[0x4];                                 // 0x3c(0x4)
-};
-
-
-// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class StatusResponseSuspendStatus: public StatusResponse
-{
-public:
-	TArray<class Class*>                                         Status;                                            // 0x38(0x10)
-};
-
-
-// Size 0x10 (Full Size[0x48] - InheritedSize[0x38]
-class StatusResponseSetScalarParamOnCharacter: public StatusResponse
-{
-public:
-	TArray<struct ScalarParamInfo>                               ParamsToChange;                                    // 0x38(0x10)
-};
-
-
-// Size 0x20 (Full Size[0x58] - InheritedSize[0x38]
-class StatusResponseApplyOneShotStatus: public StatusResponse
-{
-public:
-	struct Status                                                StatusToApply;                                     // 0x38(0x20)
+	char                                                         pad0x20_ID2NR[0x20];                               // 0x58(0x20)
 };
 
 
@@ -76,6 +68,14 @@ class StatusResponseCancelStatus: public StatusResponse
 {
 public:
 	TArray<class Class*>                                         Status;                                            // 0x38(0x10)
+};
+
+
+// Size 0x20 (Full Size[0x58] - InheritedSize[0x38]
+class StatusResponseApplyOneShotStatus: public StatusResponse
+{
+public:
+	struct Status                                                StatusToApply;                                     // 0x38(0x20)
 };
 
 

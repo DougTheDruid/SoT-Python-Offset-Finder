@@ -6,38 +6,11 @@
 #include "MediaAssets_Structs.h"
 
 
-// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
-class MediaPlaylist: public Object
+// Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
+class MediaSource: public Object
 {
 public:
-	TArray<class MediaSource*>                                   Items;                                             // 0x28(0x10)
-};
-
-
-// Size 0x148 (Full Size[0x170] - InheritedSize[0x28]
-class MediaPlayer: public Object
-{
-public:
-	char                                                         pad0x80_5M3MZ[0x80];                               // 0x28(0x80)
-	struct Timespan                                              CacheAhead;                                        // 0xa8(0x8)
-	struct Timespan                                              CacheBehind;                                       // 0xb0(0x8)
-	struct Timespan                                              CacheBehindGame;                                   // 0xb8(0x8)
-	bool                                                         NativeAudioOut;                                    // 0xc0(0x1)
-	bool                                                         PlayOnOpen;                                        // 0xc1(0x1)
-	char                                                         pad0x2_85IGZ[0x2];                                 // 0xc2(0x2)
-	bool                                                         Shuffle;                                           // 0xc4(0x1)
-	bool                                                         Loop;                                              // 0xc4(0x1)
-	char                                                         pad0x3_6VSIT[0x3];                                 // 0xc5(0x3)
-	class MediaPlaylist*                                         Playlist;                                          // 0xc8(0x8)
-	int                                                          PlaylistIndex;                                     // 0xd0(0x4)
-	char                                                         pad0x4_OQUX3[0x4];                                 // 0xd4(0x4)
-	struct Timespan                                              TimeDelay;                                         // 0xd8(0x8)
-	float                                                        HorizontalFieldOfView;                             // 0xe0(0x4)
-	float                                                        VerticalFieldOfView;                               // 0xe4(0x4)
-	struct Rotator                                               ViewRotation;                                      // 0xe8(0xc)
-	char                                                         pad0x64_XDQCE[0x64];                               // 0xf4(0x64)
-	struct Guid                                                  PlayerGuid;                                        // 0x158(0x10)
-	char                                                         pad0x8_YS6GU[0x8];                                 // 0x168(0x8)
+	char                                                         pad0x58_EFYPG[0x58];                               // 0x28(0x58)
 };
 
 
@@ -50,24 +23,45 @@ public:
 };
 
 
-// Size 0xf0 (Full Size[0x230] - InheritedSize[0x140]
-class MediaTexture: public Texture
+// Size 0x148 (Full Size[0x170] - InheritedSize[0x28]
+class MediaPlayer: public Object
 {
 public:
-	char                                                         AddressX;                                          // 0x140(0x1)
-	char                                                         AddressY;                                          // 0x141(0x1)
-	bool                                                         AutoClear;                                         // 0x142(0x1)
-	char                                                         pad0x1_M74VC[0x1];                                 // 0x143(0x1)
-	struct LinearColor                                           ClearColor;                                        // 0x144(0x10)
-	bool                                                         EnableGenMips;                                     // 0x154(0x1)
-	char                                                         NumMips;                                           // 0x155(0x1)
-	bool                                                         NewStyleOutput;                                    // 0x156(0x1)
-	char                                                         OutputFormat;                                      // 0x157(0x1)
-	float                                                        CurrentAspectRatio;                                // 0x158(0x4)
-	char                                                         CurrentOrientation;                                // 0x15c(0x1)
-	char                                                         pad0x3_DW42B[0x3];                                 // 0x15d(0x3)
-	class MediaPlayer*                                           MediaPlayer;                                       // 0x160(0x8)
-	char                                                         pad0xc8_JFVSM[0xc8];                               // 0x168(0xc8)
+	char                                                         pad0x80_3Z4WP[0x80];                               // 0x28(0x80)
+	struct Timespan                                              CacheAhead;                                        // 0xa8(0x8)
+	struct Timespan                                              CacheBehind;                                       // 0xb0(0x8)
+	struct Timespan                                              CacheBehindGame;                                   // 0xb8(0x8)
+	bool                                                         NativeAudioOut;                                    // 0xc0(0x1)
+	bool                                                         PlayOnOpen;                                        // 0xc1(0x1)
+	char                                                         pad0x2_B6ZM8[0x2];                                 // 0xc2(0x2)
+	bool                                                         Shuffle;                                           // 0xc4(0x1)
+	bool                                                         Loop;                                              // 0xc4(0x1)
+	char                                                         pad0x3_GJ8AB[0x3];                                 // 0xc5(0x3)
+	class MediaPlaylist*                                         Playlist;                                          // 0xc8(0x8)
+	int                                                          PlaylistIndex;                                     // 0xd0(0x4)
+	char                                                         pad0x4_SVHLH[0x4];                                 // 0xd4(0x4)
+	struct Timespan                                              TimeDelay;                                         // 0xd8(0x8)
+	float                                                        HorizontalFieldOfView;                             // 0xe0(0x4)
+	float                                                        VerticalFieldOfView;                               // 0xe4(0x4)
+	struct Rotator                                               ViewRotation;                                      // 0xe8(0xc)
+	char                                                         pad0x64_IAFJG[0x64];                               // 0xf4(0x64)
+	struct Guid                                                  PlayerGuid;                                        // 0x158(0x10)
+	char                                                         pad0x8_S6XO7[0x8];                                 // 0x168(0x8)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class MediaBlueprintFunctionLibrary: public BlueprintFunctionLibrary
+{
+public:
+};
+
+
+// Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
+class MediaPlaylist: public Object
+{
+public:
+	TArray<class MediaSource*>                                   Items;                                             // 0x28(0x10)
 };
 
 
@@ -85,22 +79,28 @@ class MediaTimeStampInfo: public Object
 {
 public:
 	struct Timespan                                              Time;                                              // 0x28(0x8)
-	char                                                         pad0x8_ILN1F[0x8];                                 // 0x30(0x8)
+	char                                                         pad0x8_GRFW7[0x8];                                 // 0x30(0x8)
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class MediaBlueprintFunctionLibrary: public BlueprintFunctionLibrary
+// Size 0xf0 (Full Size[0x230] - InheritedSize[0x140]
+class MediaTexture: public Texture
 {
 public:
-};
-
-
-// Size 0x58 (Full Size[0x80] - InheritedSize[0x28]
-class MediaSource: public Object
-{
-public:
-	char                                                         pad0x58_F7GEF[0x58];                               // 0x28(0x58)
+	char                                                         AddressX;                                          // 0x140(0x1)
+	char                                                         AddressY;                                          // 0x141(0x1)
+	bool                                                         AutoClear;                                         // 0x142(0x1)
+	char                                                         pad0x1_5WE2L[0x1];                                 // 0x143(0x1)
+	struct LinearColor                                           ClearColor;                                        // 0x144(0x10)
+	bool                                                         EnableGenMips;                                     // 0x154(0x1)
+	char                                                         NumMips;                                           // 0x155(0x1)
+	bool                                                         NewStyleOutput;                                    // 0x156(0x1)
+	char                                                         OutputFormat;                                      // 0x157(0x1)
+	float                                                        CurrentAspectRatio;                                // 0x158(0x4)
+	char                                                         CurrentOrientation;                                // 0x15c(0x1)
+	char                                                         pad0x3_BD4A1[0x3];                                 // 0x15d(0x3)
+	class MediaPlayer*                                           MediaPlayer;                                       // 0x160(0x8)
+	char                                                         pad0xc8_SLDLJ[0xc8];                               // 0x168(0xc8)
 };
 
 
@@ -121,17 +121,6 @@ public:
 
 
 // Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
-class TimeSynchronizableMediaSource: public BaseMediaSource
-{
-public:
-	bool                                                         bUseTimeSynchronization;                           // 0x88(0x1)
-	char                                                         pad0x3_ATJMX[0x3];                                 // 0x89(0x3)
-	int                                                          FrameDelay;                                        // 0x8c(0x4)
-	double                                                       TimeDelay;                                         // 0x90(0x8)
-};
-
-
-// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
 class StreamMediaSource: public BaseMediaSource
 {
 public:
@@ -145,7 +134,18 @@ class FileMediaSource: public BaseMediaSource
 public:
 	struct FString                                               FilePath;                                          // 0x88(0x10)
 	bool                                                         PrecacheFile;                                      // 0x98(0x1)
-	char                                                         pad0x17_814OB[0x17];                               // 0x99(0x17)
+	char                                                         pad0x17_7WXC3[0x17];                               // 0x99(0x17)
+};
+
+
+// Size 0x10 (Full Size[0x98] - InheritedSize[0x88]
+class TimeSynchronizableMediaSource: public BaseMediaSource
+{
+public:
+	bool                                                         bUseTimeSynchronization;                           // 0x88(0x1)
+	char                                                         pad0x3_4UXEM[0x3];                                 // 0x89(0x3)
+	int                                                          FrameDelay;                                        // 0x8c(0x4)
+	double                                                       TimeDelay;                                         // 0x90(0x8)
 };
 
 

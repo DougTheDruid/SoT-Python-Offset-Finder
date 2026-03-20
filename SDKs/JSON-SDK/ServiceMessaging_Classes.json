@@ -1,11 +1,4 @@
 {
-  "ServiceMessagingDispatcherInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "ServiceMessagingListenerTestObject": {
     "Super": "Object",
     "FullSize": "0x38",
@@ -13,12 +6,19 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_ZS2WY[0x10]",
+        "Name": "pad0x10_U0P93[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"
       }
     ]
+  },
+  "ServiceMessagingDispatcherInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
   },
   "ServiceMessagingFunctions": {
     "Super": "BlueprintFunctionLibrary",

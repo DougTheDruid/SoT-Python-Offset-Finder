@@ -6,7 +6,7 @@ LightBeamParams:
     Offset: '0x0'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x28_PD83F[0x28]
+  - Name: pad0x28_9YZHD[0x28]
     Offset: '0x8'
     Size: '0x28'
     Type: char

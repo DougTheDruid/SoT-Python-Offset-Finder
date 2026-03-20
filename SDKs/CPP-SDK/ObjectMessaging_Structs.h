@@ -7,9 +7,17 @@
 struct ObjectMessagingHandle
 {
 public:
-	char                                                         pad0x8_GPBRT[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_6N4JI[0x8];                                 // 0x0(0x8)
 	class Struct*                                                EventType;                                         // 0x8(0x8)
-	char                                                         pad0x48_GGO0T[0x48];                               // 0x10(0x48)
+	char                                                         pad0x48_Y0Z92[0x48];                               // 0x10(0x48)
+};
+
+
+// Size 0x98
+struct ObjectMessagingDispatcher
+{
+public:
+	char                                                         pad0x98_95VRQ[0x98];                               // 0x0(0x98)
 };
 
 
@@ -17,23 +25,7 @@ public:
 struct ObjectMessagingObjectScoper
 {
 public:
-	char                                                         pad0x50_VY3ES[0x50];                               // 0x0(0x50)
-};
-
-
-// Size 0x8
-struct EventObjectMessagingDispatcherBeingDestroyed
-{
-public:
-	char                                                         pad0x8_UZPYP[0x8];                                 // 0x0(0x8)
-};
-
-
-// Size 0xa0
-struct ObjectMessagingDispatcher
-{
-public:
-	char                                                         pad0xa0_JDEUK[0xa0];                               // 0x0(0xa0)
+	char                                                         pad0x50_U9AAD[0x50];                               // 0x0(0x50)
 };
 
 
@@ -41,7 +33,15 @@ public:
 struct ObjectMessagingDispatcherHandle
 {
 public:
-	char                                                         pad0x8_6417F[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_MCUQQ[0x8];                                 // 0x0(0x8)
+};
+
+
+// Size 0x8
+struct EventObjectMessagingDispatcherBeingDestroyed
+{
+public:
+	char                                                         pad0x8_ILSSD[0x8];                                 // 0x0(0x8)
 };
 
 

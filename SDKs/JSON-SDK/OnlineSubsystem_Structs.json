@@ -1,4 +1,39 @@
 {
+  "AchievementUpdatedEvent": {
+    "ClassSize": "0x38",
+    "Attributes": [
+      {
+        "Name": "AchievementId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Successful",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "pad0x3_BAT4J[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x15"
+      },
+      {
+        "Name": "Reason",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "Platform",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x28"
+      }
+    ]
+  },
   "NamedInterfaceDef": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -13,6 +48,94 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "OnlineStoreCatalogItem": {
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "ProductId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Title",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Description",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "FormattedPrice",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x30"
+      },
+      {
+        "Name": "FormattedBasePrice",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "IsOnSale",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x50"
+      },
+      {
+        "Name": "pad0x7_4NKM1[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x51"
+      },
+      {
+        "Name": "SaleEndDate",
+        "Type": "struct DateTime",
+        "Size": "0x8",
+        "Offset": "0x58"
+      },
+      {
+        "Name": "ImageUri",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x60"
+      },
+      {
+        "Name": "CurrencyCode",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "MetaTags",
+        "Type": "TArray<String>",
+        "Size": "0x10",
+        "Offset": "0x80"
+      }
+    ]
+  },
+  "InAppPurchaseRestoreInfo": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "Identifier",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ReceiptData",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
@@ -81,77 +204,6 @@
       }
     ]
   },
-  "OnlineStoreCatalogItem": {
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "ProductId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Title",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Description",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "FormattedPrice",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "FormattedBasePrice",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "IsOnSale",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x50"
-      },
-      {
-        "Name": "pad0x7_R68G9[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x51"
-      },
-      {
-        "Name": "SaleEndDate",
-        "Type": "struct DateTime",
-        "Size": "0x8",
-        "Offset": "0x58"
-      },
-      {
-        "Name": "ImageUri",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x60"
-      },
-      {
-        "Name": "CurrencyCode",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "MetaTags",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x80"
-      }
-    ]
-  },
   "InAppPurchaseProductRequest": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -168,7 +220,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x7_BFGUY[0x7]",
+        "Name": "pad0x7_T7C1T[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x11"
@@ -189,58 +241,6 @@
         "Type": "class Object*",
         "Size": "0x8",
         "Offset": "0x8"
-      }
-    ]
-  },
-  "AchievementUpdatedEvent": {
-    "ClassSize": "0x38",
-    "Attributes": [
-      {
-        "Name": "AchievementId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Successful",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "pad0x3_4WZR3[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x15"
-      },
-      {
-        "Name": "Reason",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "Platform",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x28"
-      }
-    ]
-  },
-  "InAppPurchaseRestoreInfo": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "Identifier",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ReceiptData",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
       }
     ]
   },

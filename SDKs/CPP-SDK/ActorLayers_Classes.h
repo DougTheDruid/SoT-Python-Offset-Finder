@@ -6,22 +6,30 @@
 #include "ActorLayers_Structs.h"
 
 
-// Size 0x30 (Full Size[0x300] - InheritedSize[0x2d0]
+// Size 0x40 (Full Size[0x310] - InheritedSize[0x2d0]
 class InstancedLayerComponent: public SceneComponent
 {
 public:
-	char                                                         pad0x8_ZSAE5[0x8];                                 // 0x2d0(0x8)
+	char                                                         pad0x8_J9U9R[0x8];                                 // 0x2d0(0x8)
 	TArray<struct InstancedLayer>                                InstancedLayers;                                   // 0x2d8(0x10)
-	char                                                         pad0x18_BJRCL[0x18];                               // 0x2e8(0x18)
+	TArray<struct SpawnedLayer>                                  SpawnedActors;                                     // 0x2e8(0x10)
+	char                                                         pad0x18_8AJXF[0x18];                               // 0x2f8(0x18)
 };
 
 
 // Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
-class LayerActorsDataAsset: public DataAsset
+class RelationType: public Object
 {
 public:
-	TArray<Class>                                                Actors;                                            // 0x28(0x10)
-	TArray<Class>                                                Items;                                             // 0x38(0x10)
+	struct FString                                               Label;                                             // 0x28(0x10)
+	struct LinearColor                                           Colour;                                            // 0x38(0x10)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class RelationInterface: public Interface
+{
+public:
 };
 
 
@@ -29,6 +37,15 @@ public:
 class ActorLayerInterface: public Interface
 {
 public:
+};
+
+
+// Size 0x20 (Full Size[0x48] - InheritedSize[0x28]
+class LayerActorsDataAsset: public DataAsset
+{
+public:
+	TArray<struct LayerActorsDataAssetActor>                     Actors;                                            // 0x28(0x10)
+	TArray<struct LayerActorsDataAssetItem>                      Items;                                             // 0x38(0x10)
 };
 
 

@@ -1,14 +1,14 @@
 {
-  "CheckBoxWidgetStyle": {
+  "ProgressWidgetStyle": {
     "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x620",
+    "FullSize": "0x1e8",
     "InheritedSize": "0x30",
-    "ClassSize": "0x5f0",
+    "ClassSize": "0x1b8",
     "Attributes": [
       {
-        "Name": "CheckBoxStyle",
-        "Type": "struct CheckBoxStyle",
-        "Size": "0x5f0",
+        "Name": "ProgressBarStyle",
+        "Type": "struct ProgressBarStyle",
+        "Size": "0x1b8",
         "Offset": "0x30"
       }
     ]
@@ -27,44 +27,16 @@
       }
     ]
   },
-  "ScrollBoxWidgetStyle": {
+  "ComboBoxWidgetStyle": {
     "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x278",
+    "FullSize": "0x458",
     "InheritedSize": "0x30",
-    "ClassSize": "0x248",
+    "ClassSize": "0x428",
     "Attributes": [
       {
-        "Name": "ScrollBoxStyle",
-        "Type": "struct ScrollBoxStyle",
-        "Size": "0x248",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "ProgressWidgetStyle": {
-    "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x1e8",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x1b8",
-    "Attributes": [
-      {
-        "Name": "ProgressBarStyle",
-        "Type": "struct ProgressBarStyle",
-        "Size": "0x1b8",
-        "Offset": "0x30"
-      }
-    ]
-  },
-  "ButtonWidgetStyle": {
-    "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x2d8",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x2a8",
-    "Attributes": [
-      {
-        "Name": "ButtonStyle",
-        "Type": "struct ButtonStyle",
-        "Size": "0x2a8",
+        "Name": "ComboBoxStyle",
+        "Type": "struct ComboBoxStyle",
+        "Size": "0x428",
         "Offset": "0x30"
       }
     ]
@@ -83,16 +55,58 @@
       }
     ]
   },
-  "ComboBoxWidgetStyle": {
+  "ButtonWidgetStyle": {
     "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x458",
+    "FullSize": "0x2d8",
     "InheritedSize": "0x30",
-    "ClassSize": "0x428",
+    "ClassSize": "0x2a8",
     "Attributes": [
       {
-        "Name": "ComboBoxStyle",
-        "Type": "struct ComboBoxStyle",
-        "Size": "0x428",
+        "Name": "ButtonStyle",
+        "Type": "struct ButtonStyle",
+        "Size": "0x2a8",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "ScrollBoxWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x278",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x248",
+    "Attributes": [
+      {
+        "Name": "ScrollBoxStyle",
+        "Type": "struct ScrollBoxStyle",
+        "Size": "0x248",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "CheckBoxWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x620",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x5f0",
+    "Attributes": [
+      {
+        "Name": "CheckBoxStyle",
+        "Type": "struct CheckBoxStyle",
+        "Size": "0x5f0",
+        "Offset": "0x30"
+      }
+    ]
+  },
+  "EditableTextBoxWidgetStyle": {
+    "Super": "SlateWidgetStyleContainerBase",
+    "FullSize": "0x890",
+    "InheritedSize": "0x30",
+    "ClassSize": "0x860",
+    "Attributes": [
+      {
+        "Name": "EditableTextBoxStyle",
+        "Type": "struct EditableTextBoxStyle",
+        "Size": "0x860",
         "Offset": "0x30"
       }
     ]
@@ -111,20 +125,6 @@
       }
     ]
   },
-  "ComboButtonWidgetStyle": {
-    "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x410",
-    "InheritedSize": "0x30",
-    "ClassSize": "0x3e0",
-    "Attributes": [
-      {
-        "Name": "ComboButtonStyle",
-        "Type": "struct ComboButtonStyle",
-        "Size": "0x3e0",
-        "Offset": "0x30"
-      }
-    ]
-  },
   "SpinBoxWidgetStyle": {
     "Super": "SlateWidgetStyleContainerBase",
     "FullSize": "0x348",
@@ -139,16 +139,16 @@
       }
     ]
   },
-  "EditableTextBoxWidgetStyle": {
+  "ComboButtonWidgetStyle": {
     "Super": "SlateWidgetStyleContainerBase",
-    "FullSize": "0x890",
+    "FullSize": "0x410",
     "InheritedSize": "0x30",
-    "ClassSize": "0x860",
+    "ClassSize": "0x3e0",
     "Attributes": [
       {
-        "Name": "EditableTextBoxStyle",
-        "Type": "struct EditableTextBoxStyle",
-        "Size": "0x860",
+        "Name": "ComboButtonStyle",
+        "Type": "struct ComboButtonStyle",
+        "Size": "0x3e0",
         "Offset": "0x30"
       }
     ]

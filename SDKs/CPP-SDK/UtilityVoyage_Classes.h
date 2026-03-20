@@ -6,21 +6,11 @@
 #include "UtilityVoyage_Structs.h"
 
 
-// Size 0x10 (Full Size[0x90] - InheritedSize[0x80]
-class DispatchUtilityVoyageTaleStepDesc: public TaleQuestStepDesc
-{
-public:
-	class VoyageDescDataAsset*                                   UtilityVoyageDesc;                                 // 0x80(0x8)
-	bool                                                         Migratable;                                        // 0x88(0x1)
-	char                                                         pad0x7_VD1XQ[0x7];                                 // 0x89(0x7)
-};
-
-
 // Size 0xb0 (Full Size[0xd8] - InheritedSize[0x28]
 class UtilityVoyageService: public Object
 {
 public:
-	char                                                         pad0x90_V3Y21[0x90];                               // 0x28(0x90)
+	char                                                         pad0x90_1RHO1[0x90];                               // 0x28(0x90)
 	TArray<class CrewVoyageParticipant*>                         Participants;                                      // 0xb8(0x10)
 	TArray<struct UtilityVoyageData>                             Voyages;                                           // 0xc8(0x10)
 };
@@ -31,6 +21,16 @@ class DispatchUtilityVoyageTaleStep: public TaleQuestStep
 {
 public:
 	class DispatchUtilityVoyageTaleStepDesc*                     StepDesc;                                          // 0x98(0x8)
+};
+
+
+// Size 0x10 (Full Size[0x90] - InheritedSize[0x80]
+class DispatchUtilityVoyageTaleStepDesc: public TaleQuestStepDesc
+{
+public:
+	class VoyageDescDataAsset*                                   UtilityVoyageDesc;                                 // 0x80(0x8)
+	bool                                                         Migratable;                                        // 0x88(0x1)
+	char                                                         pad0x7_GOSYN[0x7];                                 // 0x89(0x7)
 };
 
 

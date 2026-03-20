@@ -9,7 +9,7 @@ struct NudgeChancePerDamagerType
 public:
 	class UClass*                                                DamagerType;                                       // 0x0(0x8)
 	float                                                        ChanceOfNudge;                                     // 0x8(0x4)
-	char                                                         pad0x4_JC9YF[0x4];                                 // 0xc(0x4)
+	char                                                         pad0x4_C8PR4[0x4];                                 // 0xc(0x4)
 };
 
 

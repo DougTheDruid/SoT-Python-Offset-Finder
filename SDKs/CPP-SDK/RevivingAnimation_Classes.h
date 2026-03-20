@@ -14,24 +14,24 @@ public:
 };
 
 
-// Size 0x50 (Full Size[0x490] - InheritedSize[0x440]
-class ReviveGhostAnimationInstance: public AnimInstance
-{
-public:
-	char                                                         pad0x8_YXQB2[0x8];                                 // 0x440(0x8)
-	struct ReviveGhostAnimations                                 ReviveAnimations;                                  // 0x448(0x28)
-	bool                                                         FullyInitialised;                                  // 0x470(0x1)
-	bool                                                         FullyRevived;                                      // 0x471(0x1)
-	bool                                                         FromSwimming;                                      // 0x472(0x1)
-	char                                                         pad0x1d_1JHUI[0x1d];                               // 0x473(0x1d)
-};
-
-
 // Size 0x8 (Full Size[0x30] - InheritedSize[0x28]
 class ReviveGhostAnimationData: public AnimationData
 {
 public:
 	class ReviveGhostAnimationDataAsset*                         ReviveAnimationsDataAsset;                         // 0x28(0x8)
+};
+
+
+// Size 0x50 (Full Size[0x490] - InheritedSize[0x440]
+class ReviveGhostAnimationInstance: public AnimInstance
+{
+public:
+	char                                                         pad0x8_8ZU9W[0x8];                                 // 0x440(0x8)
+	struct ReviveGhostAnimations                                 ReviveAnimations;                                  // 0x448(0x28)
+	bool                                                         FullyInitialised;                                  // 0x470(0x1)
+	bool                                                         FullyRevived;                                      // 0x471(0x1)
+	bool                                                         FromSwimming;                                      // 0x472(0x1)
+	char                                                         pad0x1d_R9B9W[0x1d];                               // 0x473(0x1d)
 };
 
 

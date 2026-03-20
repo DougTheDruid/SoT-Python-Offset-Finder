@@ -14,6 +14,30 @@ SandboxPerformanceConstraintActivityGroupAsset:
   FullSize: '0x48'
   InheritedSize: '0x28'
   Super: DataAsset
+SandboxPerformanceConstraintActivityOriginError:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: SandboxPerformanceConstraintActivityOriginType
+SandboxPerformanceConstraintActivityOriginPlayer:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: SandboxPerformanceConstraintActivityOriginType
+SandboxPerformanceConstraintActivityOriginStandalone:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: SandboxPerformanceConstraintActivityOriginType
+SandboxPerformanceConstraintActivityOriginType:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: Object
 SandboxPerformanceConstraintActivityResourceAsset:
   Attributes:
   - Name: ActivityDependencies
@@ -46,7 +70,7 @@ SandboxPerformanceConstraintConsumerInterface:
   Super: Interface
 SandboxPerformanceConstraintMemoryCaptureHelper:
   Attributes:
-  - Name: pad0x10_62361[0x10]
+  - Name: pad0x10_S60SG[0x10]
     Offset: '0x3a0'
     Size: '0x10'
     Type: char
@@ -62,28 +86,6 @@ SandboxPerformanceConstraintMemoryCaptureHelper:
   FullSize: '0x3b8'
   InheritedSize: '0x3a0'
   Super: Actor
-SandboxPerformanceConstraintService:
-  Attributes:
-  - Name: pad0xc0_1R9WV[0xc0]
-    Offset: '0x28'
-    Size: '0xc0'
-    Type: char
-  - Name: ActivitiesScores
-    Offset: '0xe8'
-    Size: '0x10'
-    Type: TArray<struct SandboxPerformanceConstraintActivityScore>
-  - Name: ServiceAsset
-    Offset: '0xf8'
-    Size: '0x8'
-    Type: class SandboxPerformanceConstraintServiceAsset*
-  - Name: pad0x68_JPHT8[0x68]
-    Offset: '0x100'
-    Size: '0x68'
-    Type: char
-  ClassSize: '0x140'
-  FullSize: '0x168'
-  InheritedSize: '0x28'
-  Super: Object
 SandboxPerformanceConstraintServiceAsset:
   Attributes:
   - Name: ServerMemoryBudgetInMB
@@ -106,7 +108,7 @@ SandboxPerformanceConstraintServiceAsset:
     Offset: '0x38'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_2C6S4[0x4]
+  - Name: pad0x4_W3MIS[0x4]
     Offset: '0x3c'
     Size: '0x4'
     Type: char
@@ -130,7 +132,7 @@ SandboxPerformanceConstraintSettings:
     Offset: '0x38'
     Size: '0x10'
     Type: struct StringAssetReference
-  - Name: pad0x40_FNVBF[0x40]
+  - Name: pad0x40_CN06Y[0x40]
     Offset: '0x48'
     Size: '0x40'
     Type: char
@@ -158,9 +160,3 @@ SandboxPerformanceConstraintSharedResourceType:
   FullSize: '0x28'
   InheritedSize: '0x28'
   Super: Object
-SandboxPerformanceConstraintTelemetryInterface:
-  Attributes: []
-  ClassSize: '0x0'
-  FullSize: '0x28'
-  InheritedSize: '0x28'
-  Super: Interface

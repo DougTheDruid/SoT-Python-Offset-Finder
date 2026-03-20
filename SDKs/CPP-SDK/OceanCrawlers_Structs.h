@@ -17,7 +17,7 @@ struct OceanCrawlerAudioKeyPair
 {
 public:
 	char                                                         AudioKey;                                          // 0x0(0x1)
-	char                                                         pad0x7_QU2YD[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_0V949[0x7];                                 // 0x1(0x7)
 	class WwiseEvent*                                            AudioEvent;                                        // 0x8(0x8)
 };
 

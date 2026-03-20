@@ -2,30 +2,30 @@
 # https://github.com/DougTheDruid
 MultiCrewSubModesArrivalTunnel:
   Attributes:
-  - Name: pad0x50_BO2XF[0x50]
-    Offset: '0x680'
+  - Name: pad0x50_LZOY5[0x50]
+    Offset: '0x690'
     Size: '0x50'
     Type: char
   ClassSize: '0x50'
-  FullSize: '0x6d0'
-  InheritedSize: '0x680'
+  FullSize: '0x6e0'
+  InheritedSize: '0x690'
   Super: ClientDestinationPreLoadingArrivalTunnelOfTheDamned
 MultiCrewSubModesService:
   Attributes:
-  - Name: pad0x50_XS62W[0x50]
+  - Name: pad0x50_TYRRS[0x50]
     Offset: '0x3a0'
     Size: '0x50'
     Type: char
   - Name: ActiveSessionData
     Offset: '0x3f0'
-    Size: '0x18'
+    Size: '0x48'
     Type: struct SubModeSessionData
-  - Name: pad0x140_QMF1P[0x140]
-    Offset: '0x408'
-    Size: '0x140'
+  - Name: pad0x208_0YBCM[0x208]
+    Offset: '0x438'
+    Size: '0x208'
     Type: char
-  ClassSize: '0x1a8'
-  FullSize: '0x548'
+  ClassSize: '0x2a0'
+  FullSize: '0x640'
   InheritedSize: '0x3a0'
   Super: Actor
 MultiCrewSubModesServiceInterface:
@@ -48,15 +48,341 @@ MultiCrewSubModesServiceParamsDataAsset:
     Offset: '0x30'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_GM97H[0x4]
+  - Name: ReduceMinCrewsOverTime
     Offset: '0x34'
-    Size: '0x4'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x3_MUBJA[0x3]
+    Offset: '0x35'
+    Size: '0x3'
     Type: char
-  - Name: SpawnLocations
+  - Name: InitialMinCrewsReductionTime
     Offset: '0x38'
+    Size: '0x4'
+    Type: float
+  - Name: MinCrewsReductionTime
+    Offset: '0x3c'
+    Size: '0x4'
+    Type: float
+  - Name: SpawnLocations
+    Offset: '0x40'
     Size: '0x10'
     Type: TArray<struct Transform>
-  ClassSize: '0x20'
-  FullSize: '0x48'
+  - Name: Layers
+    Offset: '0x50'
+    Size: '0x10'
+    Type: TArray<class SubModesSessionLayerDesc*>
+  ClassSize: '0x38'
+  FullSize: '0x60'
   InheritedSize: '0x28'
   Super: DataAsset
+SubModesSessionActorSpawnLayer:
+  Attributes:
+  - Name: TriggerPoint
+    Offset: '0x50'
+    Size: '0x1'
+    Type: byte
+  - Name: DestroyTriggerPoint
+    Offset: '0x51'
+    Size: '0x1'
+    Type: byte
+  - Name: pad0x6_R0SY6[0x6]
+    Offset: '0x52'
+    Size: '0x6'
+    Type: char
+  - Name: ActorWithNamedPointsComponent
+    Offset: '0x58'
+    Size: '0x10'
+    Type: struct StringAssetReference
+  - Name: NamedPointsGroup
+    Offset: '0x68'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ToSpawn
+    Offset: '0x70'
+    Size: '0x8'
+    Type: class ItemSpawnData*
+  - Name: pad0x18_R43U9[0x18]
+    Offset: '0x78'
+    Size: '0x18'
+    Type: char
+  - Name: SpawnedActors
+    Offset: '0x90'
+    Size: '0x10'
+    Type: TArray<class Actor*>
+  ClassSize: '0x50'
+  FullSize: '0xa0'
+  InheritedSize: '0x50'
+  Super: SubModesSessionLayer
+SubModesSessionActorSpawnLayerDesc:
+  Attributes:
+  - Name: TriggerPoint
+    Offset: '0x60'
+    Size: '0x1'
+    Type: byte
+  - Name: DestroyTriggerPoint
+    Offset: '0x61'
+    Size: '0x1'
+    Type: byte
+  - Name: pad0x6_SSG5N[0x6]
+    Offset: '0x62'
+    Size: '0x6'
+    Type: char
+  - Name: ActorWithNamedPointsComponent
+    Offset: '0x68'
+    Size: '0x10'
+    Type: struct StringAssetReference
+  - Name: NamedPointsGroup
+    Offset: '0x78'
+    Size: '0x8'
+    Type: struct FName
+  - Name: ToSpawn
+    Offset: '0x80'
+    Size: '0x8'
+    Type: class ItemSpawnData*
+  ClassSize: '0x28'
+  FullSize: '0x88'
+  InheritedSize: '0x60'
+  Super: SubModesSessionLayerDesc
+SubModesSessionDebugFactionsLayer:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x50'
+  InheritedSize: '0x50'
+  Super: SubModesSessionLayer
+SubModesSessionDebugFactionsLayerDesc:
+  Attributes:
+  - Name: FactionList
+    Offset: '0x60'
+    Size: '0x10'
+    Type: TArray<class Class*>
+  ClassSize: '0x10'
+  FullSize: '0x70'
+  InheritedSize: '0x60'
+  Super: SubModesSessionLayerDesc
+SubModesSessionLayer:
+  Attributes:
+  - Name: pad0x18_6O7EB[0x18]
+    Offset: '0x28'
+    Size: '0x18'
+    Type: char
+  - Name: CachedWorld
+    Offset: '0x40'
+    Size: '0x8'
+    Type: class World*
+  - Name: Params
+    Offset: '0x48'
+    Size: '0x8'
+    Type: class SubModesSessionLayerDesc*
+  ClassSize: '0x28'
+  FullSize: '0x50'
+  InheritedSize: '0x28'
+  Super: Object
+SubModesSessionLayerDesc:
+  Attributes:
+  - Name: Identifier
+    Offset: '0x28'
+    Size: '0x10'
+    Type: struct FString
+  - Name: Stories
+    Offset: '0x38'
+    Size: '0x18'
+    Type: struct StoryFlagContainer
+  - Name: Feature
+    Offset: '0x50'
+    Size: '0xc'
+    Type: struct FeatureFlag
+  - Name: pad0x4_2FXIG[0x4]
+    Offset: '0x5c'
+    Size: '0x4'
+    Type: char
+  ClassSize: '0x38'
+  FullSize: '0x60'
+  InheritedSize: '0x28'
+  Super: Object
+SubModesSessionRepairShipsLayer:
+  Attributes:
+  - Name: TriggerPoint
+    Offset: '0x50'
+    Size: '0x1'
+    Type: byte
+  - Name: pad0x3_4G2MD[0x3]
+    Offset: '0x51'
+    Size: '0x3'
+    Type: char
+  - Name: NumShipsToRepair
+    Offset: '0x54'
+    Size: '0x4'
+    Type: int
+  - Name: pad0x18_MAJUL[0x18]
+    Offset: '0x58'
+    Size: '0x18'
+    Type: char
+  ClassSize: '0x20'
+  FullSize: '0x70'
+  InheritedSize: '0x50'
+  Super: SubModesSessionLayer
+SubModesSessionRepairShipsLayerDesc:
+  Attributes:
+  - Name: TriggerPoint
+    Offset: '0x60'
+    Size: '0x1'
+    Type: byte
+  - Name: pad0x3_XTRAD[0x3]
+    Offset: '0x61'
+    Size: '0x3'
+    Type: char
+  - Name: NumShipsToRepair
+    Offset: '0x64'
+    Size: '0x4'
+    Type: int
+  ClassSize: '0x8'
+  FullSize: '0x68'
+  InheritedSize: '0x60'
+  Super: SubModesSessionLayerDesc
+SubModesSessionSendAllianceRewardsLayer:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x50'
+  InheritedSize: '0x50'
+  Super: SubModesSessionLayer
+SubModesSessionSendAllianceRewardsLayerDesc:
+  Attributes:
+  - Name: RewardIDRanks
+    Offset: '0x60'
+    Size: '0x10'
+    Type: TArray<struct RewardId>
+  - Name: LastPlaceRewardID
+    Offset: '0x70'
+    Size: '0x8'
+    Type: struct RewardId
+  - Name: MinimumStreakRank
+    Offset: '0x78'
+    Size: '0x4'
+    Type: int
+  - Name: pad0x4_XE97X[0x4]
+    Offset: '0x7c'
+    Size: '0x4'
+    Type: char
+  - Name: SandsOfFateRewardsPerParticipants
+    Offset: '0x80'
+    Size: '0x10'
+    Type: TArray<struct SubModesSandsOfFateParticipantData>
+  - Name: NotifyPlayer
+    Offset: '0x90'
+    Size: '0x1'
+    Type: byte
+  - Name: RequestGold
+    Offset: '0x91'
+    Size: '0x1'
+    Type: byte
+  - Name: RequestXP
+    Offset: '0x92'
+    Size: '0x1'
+    Type: byte
+  - Name: RequestRenown
+    Offset: '0x93'
+    Size: '0x1'
+    Type: byte
+  - Name: RequestFactionAllegiance
+    Offset: '0x94'
+    Size: '0x1'
+    Type: byte
+  - Name: RequestSovereignHandIn
+    Offset: '0x95'
+    Size: '0x1'
+    Type: byte
+  - Name: pad0x2_82499[0x2]
+    Offset: '0x96'
+    Size: '0x2'
+    Type: char
+  ClassSize: '0x38'
+  FullSize: '0x98'
+  InheritedSize: '0x60'
+  Super: SubModesSessionLayerDesc
+SubModesSessionTaleLayer:
+  Attributes:
+  - Name: TriggerPoint
+    Offset: '0x50'
+    Size: '0x1'
+    Type: byte
+  - Name: UseAllParticipants
+    Offset: '0x51'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x6_BT3H2[0x6]
+    Offset: '0x52'
+    Size: '0x6'
+    Type: char
+  - Name: VoyageDesc
+    Offset: '0x58'
+    Size: '0x8'
+    Type: class VoyageDescDataAsset*
+  - Name: pad0x18_SNYY3[0x18]
+    Offset: '0x60'
+    Size: '0x18'
+    Type: char
+  ClassSize: '0x28'
+  FullSize: '0x78'
+  InheritedSize: '0x50'
+  Super: SubModesSessionLayer
+SubModesSessionTaleLayerDesc:
+  Attributes:
+  - Name: TriggerPoint
+    Offset: '0x60'
+    Size: '0x1'
+    Type: byte
+  - Name: UseAllParticipants
+    Offset: '0x61'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x6_PS8NS[0x6]
+    Offset: '0x62'
+    Size: '0x6'
+    Type: char
+  - Name: VoyageDesc
+    Offset: '0x68'
+    Size: '0x8'
+    Type: class VoyageDescDataAsset*
+  ClassSize: '0x10'
+  FullSize: '0x70'
+  InheritedSize: '0x60'
+  Super: SubModesSessionLayerDesc
+TaleQuestMultiCrewSubModesFunctionStepLibrary:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x180'
+  InheritedSize: '0x180'
+  Super: TaleQuestFunctionStepLibrary
+TaleQuestWaitForSessionStatusChangeStep:
+  Attributes:
+  - Name: pad0x60_VZ64M[0x60]
+    Offset: '0x98'
+    Size: '0x60'
+    Type: char
+  ClassSize: '0x60'
+  FullSize: '0xf8'
+  InheritedSize: '0x98'
+  Super: TaleQuestStep
+TaleQuestWaitForSessionStatusChangeStepDesc:
+  Attributes:
+  - Name: SessionStatus
+    Offset: '0x80'
+    Size: '0x1'
+    Type: byte
+  - Name: HaveTimeout
+    Offset: '0x81'
+    Size: '0x1'
+    Type: bool
+  - Name: pad0x2_SG2FP[0x2]
+    Offset: '0x82'
+    Size: '0x2'
+    Type: char
+  - Name: TimeoutDurationSeconds
+    Offset: '0x84'
+    Size: '0x4'
+    Type: float
+  ClassSize: '0x8'
+  FullSize: '0x88'
+  InheritedSize: '0x80'
+  Super: TaleQuestStepDesc

@@ -6,7 +6,7 @@ SeasonalEventMemoryReservationActor:
     Offset: '0x3a0'
     Size: '0x4'
     Type: int
-  - Name: pad0xc_0DWSJ[0xc]
+  - Name: pad0xc_6A8XK[0xc]
     Offset: '0x3a4'
     Size: '0xc'
     Type: char

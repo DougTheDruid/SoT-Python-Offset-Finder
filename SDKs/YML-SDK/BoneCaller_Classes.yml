@@ -9,24 +9,24 @@ AshenBoneCallerSpawnId:
 BoneCallerCannonProjectile:
   Attributes:
   - Name: BoneCallerSpawnId
-    Offset: '0x738'
+    Offset: '0x730'
     Size: '0x8'
     Type: class UClass*
   - Name: FiredFromReapersTributeShipBoneCallerSpawnId
-    Offset: '0x740'
+    Offset: '0x738'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x80_0XZ0T[0x80]
-    Offset: '0x748'
+  - Name: pad0x80_KYC08[0x80]
+    Offset: '0x740'
     Size: '0x80'
     Type: char
   ClassSize: '0x90'
-  FullSize: '0x7c8'
-  InheritedSize: '0x738'
+  FullSize: '0x7c0'
+  InheritedSize: '0x730'
   Super: CannonProjectile
 BoneCallerOwnershipComponent:
   Attributes:
-  - Name: pad0x8_RIQ26[0x8]
+  - Name: pad0x8_BDXBP[0x8]
     Offset: '0xb8'
     Size: '0x8'
     Type: char
@@ -34,7 +34,7 @@ BoneCallerOwnershipComponent:
     Offset: '0xc0'
     Size: '0x10'
     Type: struct Guid
-  - Name: pad0x58_DUN2K[0x58]
+  - Name: pad0x58_UZ721[0x58]
     Offset: '0xd0'
     Size: '0x58'
     Type: char
@@ -44,7 +44,7 @@ BoneCallerOwnershipComponent:
   Super: ActorComponent
 BoneCallerService:
   Attributes:
-  - Name: pad0x398_DAOP5[0x398]
+  - Name: pad0x398_ZGS6A[0x398]
     Offset: '0x3a0'
     Size: '0x398'
     Type: char
@@ -52,7 +52,7 @@ BoneCallerService:
     Offset: '0x738'
     Size: '0x8'
     Type: class BoneCallerServiceParams*
-  - Name: pad0x70_R1GEZ[0x70]
+  - Name: pad0x70_FV3AZ[0x70]
     Offset: '0x740'
     Size: '0x70'
     Type: char
@@ -80,7 +80,7 @@ BoneCallerServiceParams:
     Offset: '0x40'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_XKDN0[0x7]
+  - Name: pad0x7_GW26I[0x7]
     Offset: '0x41'
     Size: '0x7'
     Type: char

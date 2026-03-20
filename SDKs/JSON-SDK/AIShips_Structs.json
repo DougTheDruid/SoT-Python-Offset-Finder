@@ -1,4 +1,33 @@
 {
+  "AIShipCrewFormType": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "IconType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_F04B7[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "IconColour",
+        "Type": "struct Color",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "Form",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
   "AIShipEncounterDynamicWaveShipSpawnedTelemetryEvent": {
     "ClassSize": "0x18",
     "Attributes": [
@@ -19,93 +48,6 @@
         "Type": "float",
         "Size": "0x4",
         "Offset": "0x14"
-      }
-    ]
-  },
-  "AIShipEncounterDynamicBalancingCrewStrengthToTargetWaveDesc": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "MinCrewStrength",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "MinWaveStrength",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "MaxWaveStrength",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "WaveCountIncrement",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "AIShipDescAssetToSandboxPerformanceConstraintActivity": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Asset",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "RelatedActivityType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "CursedSailsBattleParams": {
-    "ClassSize": "0x80",
-    "Attributes": [
-      {
-        "Name": "Name",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SkellyCrewName",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "CannonBallType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x70"
-      },
-      {
-        "Name": "SkellyType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x71"
-      },
-      {
-        "Name": "pad0x6_KUK35[0x6]",
-        "Type": "char",
-        "Size": "0x6",
-        "Offset": "0x72"
-      },
-      {
-        "Name": "EncounterDescription",
-        "Type": "class AIShipEncounterDesc*",
-        "Size": "0x8",
-        "Offset": "0x78"
       }
     ]
   },
@@ -168,198 +110,6 @@
       }
     ]
   },
-  "AIShipCrewFormType": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "IconType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x3_0ACD2[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "IconColour",
-        "Type": "struct Color",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "Form",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "AIShipEncounterDynamicBalancingPlayerShipValueDesc": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ShipSize",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "ShipValue",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x4_UCR7Z[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "AIShipSizeDynamicContexts": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "ShipSize",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AIShipsInPool",
-        "Type": "TArray<class AIShipContextDescDataAsset*>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AIShipEncounterParamsSpawnerData": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "Spawner",
-        "Type": "class AISpawner*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SpawnLocationType",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "ShipPlayerTrackerType",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x3_0AG5L[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x11"
-      },
-      {
-        "Name": "CaptainName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "CanRepairDamage",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1c"
-      },
-      {
-        "Name": "CanUseCannons",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1d"
-      },
-      {
-        "Name": "IsCaptain",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1e"
-      },
-      {
-        "Name": "BelowDeck",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1f"
-      },
-      {
-        "Name": "EnableRespawnLimit",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "EnableDespawnRefund",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x21"
-      },
-      {
-        "Name": "pad0x2_MWPN7[0x2]",
-        "Type": "char",
-        "Size": "0x2",
-        "Offset": "0x22"
-      },
-      {
-        "Name": "MaxNumberOfRespawns",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x24"
-      }
-    ]
-  },
-  "AIShipDespawnTelemetryEvent": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "AIShipId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "AIShipDestructionReason",
-        "Type": "byte",
-        "Size": "0x1",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x7_NT4HR[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x11"
-      }
-    ]
-  },
-  "ShipTypeAIShipEncounterParams": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ShipSize",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Params",
-        "Type": "class AIShipEncounterParamsDataAsset*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
   "AIShipContextDescDamageParams": {
     "ClassSize": "0x14",
     "Attributes": [
@@ -376,7 +126,7 @@
         "Offset": "0x4"
       },
       {
-        "Name": "pad0x3_CMK2L[0x3]",
+        "Name": "pad0x3_Q0G0U[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x5"
@@ -394,7 +144,7 @@
         "Offset": "0xc"
       },
       {
-        "Name": "pad0x3_KQ25K[0x3]",
+        "Name": "pad0x3_JZ8SB[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0xd"
@@ -407,118 +157,43 @@
       }
     ]
   },
-  "AIShipWeightedSize": {
+  "AIShipCrewAmmoType": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "Feature",
-        "Type": "struct FName",
-        "Size": "0x8",
+        "Name": "IconType",
+        "Type": "byte",
+        "Size": "0x1",
         "Offset": "0x0"
       },
       {
-        "Name": "Weight",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x4_BN52N[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "ShipSize",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "AIShipSailData": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "SailRGB",
-        "Type": "struct Color",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "IconRGB",
-        "Type": "struct Color",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "CrewIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "CursedCannonballIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0xc"
-      }
-    ]
-  },
-  "AIShipEncounterDynamicWaveTelemetryEvent": {
-    "ClassSize": "0x1c",
-    "Attributes": [
-      {
-        "Name": "EncounterId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "WaveIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "CrewStrength",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x14"
-      },
-      {
-        "Name": "WaveCost",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x18"
-      }
-    ]
-  },
-  "AIShipSkeletonSkillsetOverride": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "SpawnLocationType",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Skillset",
+        "Name": "AmmoType",
         "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x8"
       }
     ]
   },
-  "AIShipEncounterWaveDesc": {
+  "AIShipEncounterDynamicBalancingPoolSizeDesc": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "ShipSizes",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
+        "Name": "ShipSize",
+        "Type": "class UClass*",
+        "Size": "0x8",
         "Offset": "0x0"
+      },
+      {
+        "Name": "PoolSize",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_TMC8L[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
       }
     ]
   },
@@ -611,141 +286,95 @@
       }
     ]
   },
-  "TrackingNoiseGenerator": {
+  "AIShipWeightedSize": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "ParallelOffsetCurve",
-        "Type": "class CurveFloat*",
+        "Name": "Feature",
+        "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "OscillationTime",
-        "Type": "float",
+        "Name": "Weight",
+        "Type": "int",
         "Size": "0x4",
         "Offset": "0x8"
       },
       {
-        "Name": "pad0xc_ZCCHO[0xc]",
+        "Name": "pad0x4_BQDK0[0x4]",
         "Type": "char",
-        "Size": "0xc",
+        "Size": "0x4",
         "Offset": "0xc"
-      }
-    ]
-  },
-  "AIShipSizeLimit": {
-    "ClassSize": "0x10",
-    "Attributes": [
+      },
       {
         "Name": "ShipSize",
         "Type": "class UClass*",
         "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "AIShipDescAssetToSandboxPerformanceConstraintActivity": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Asset",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "MaxInstances",
+        "Name": "RelatedActivityType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "AIShipEncounterDynamicBalancingCrewStrengthToTargetWaveDesc": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "MinCrewStrength",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "MinWaveStrength",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "MaxWaveStrength",
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_F4VNC[0x4]",
-        "Type": "char",
+        "Name": "WaveCountIncrement",
+        "Type": "int",
         "Size": "0x4",
         "Offset": "0xc"
       }
     ]
   },
-  "AIShipEncounterWave": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "AIShipsInWave",
-        "Type": "TArray<class AIShipContextDescDataAsset*>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "AIShipEncounterDynamicBalancingWaveConfigCostDesc": {
+  "ToggleableAIShipsServiceDataAssetFileLocation": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "ShipSizes",
-        "Type": "TArray<class Class*>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "WaveCost",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x4_SA2NX[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x14"
-      }
-    ]
-  },
-  "AIShipBattleParams": {
-    "ClassSize": "0x50",
-    "Attributes": [
-      {
-        "Name": "Name",
-        "Type": "struct FText",
-        "Size": "0x38",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SeaId",
-        "Type": "class UClass*",
+        "Name": "ToggleName",
+        "Type": "struct FName",
         "Size": "0x8",
-        "Offset": "0x38"
+        "Offset": "0x0"
       },
       {
         "Name": "Location",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "Radius",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x48"
-      },
-      {
-        "Name": "pad0x4_QKUP9[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x4c"
-      }
-    ]
-  },
-  "AIShipEncounterDynamicBalancingPoolSizeDesc": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ShipSize",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PoolSize",
-        "Type": "int",
-        "Size": "0x4",
+        "Type": "struct StringAssetReference",
+        "Size": "0x10",
         "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x4_4SZ9X[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xc"
       }
     ]
   },
@@ -778,37 +407,101 @@
       }
     ]
   },
-  "ToggleableAIShipsServiceDataAssetFileLocation": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "ToggleName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Location",
-        "Type": "struct StringAssetReference",
-        "Size": "0x10",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "AIShipCaptainParams": {
+  "AIShipSizeLimit": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "AIClassId",
+        "Name": "ShipSize",
         "Type": "class UClass*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "Name",
-        "Type": "struct FName",
+        "Name": "MaxInstances",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_7ZSWU[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "ShipTypeAIShipEncounterParams": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ShipSize",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Params",
+        "Type": "class AIShipEncounterParamsDataAsset*",
         "Size": "0x8",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "AIShipSizeDynamicContexts": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ShipSize",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "AIShipsInPool",
+        "Type": "TArray<class AIShipContextDescDataAsset*>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "CursedSailsBattleParams": {
+    "ClassSize": "0x80",
+    "Attributes": [
+      {
+        "Name": "Name",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SkellyCrewName",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "CannonBallType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x70"
+      },
+      {
+        "Name": "SkellyType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x71"
+      },
+      {
+        "Name": "pad0x6_75ZQ8[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x72"
+      },
+      {
+        "Name": "EncounterDescription",
+        "Type": "class AIShipEncounterDesc*",
+        "Size": "0x8",
+        "Offset": "0x78"
       }
     ]
   },
@@ -828,7 +521,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x4_25A8I[0x4]",
+        "Name": "pad0x4_47QVY[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1c"
@@ -852,24 +545,105 @@
         "Offset": "0x34"
       },
       {
-        "Name": "pad0x4_V0PL0[0x4]",
+        "Name": "pad0x4_6K9IQ[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x44"
       }
     ]
   },
-  "AIShipCrewAmmoType": {
-    "ClassSize": "0x18",
+  "AIShipEncounterDynamicWaveTelemetryEvent": {
+    "ClassSize": "0x1c",
     "Attributes": [
       {
-        "Name": "IconType",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "EncounterId",
+        "Type": "struct Guid",
+        "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "AmmoType",
+        "Name": "WaveIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "CrewStrength",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "WaveCost",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "AIShipEncounterDynamicBalancingPlayerShipValueDesc": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ShipSize",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ShipValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_8FH94[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "AIShipSailData": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "SailRGB",
+        "Type": "struct Color",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "IconRGB",
+        "Type": "struct Color",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "CrewIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "CursedCannonballIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "AIShipSkeletonSkillsetOverride": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "SpawnLocationType",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Skillset",
         "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x8"
@@ -888,6 +662,163 @@
       {
         "Name": "Params",
         "Type": "class AIShipEncounterParamsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "AIShipEncounterWaveDesc": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ShipSizes",
+        "Type": "TArray<class Class*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AIShipBootyItem": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "DescType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "BootyType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x3_GVZH2[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x9"
+      },
+      {
+        "Name": "Rarity",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "pad0x4_FRK6B[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "AIShipEncounterWave": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AIShipsInWave",
+        "Type": "TArray<class AIShipContextDescDataAsset*>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "AIShipEncounterParamsSpawnerData": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "Spawner",
+        "Type": "class AISpawner*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SpawnLocationType",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ShipPlayerTrackerType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x3_9AAQQ[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x11"
+      },
+      {
+        "Name": "CaptainName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x14"
+      },
+      {
+        "Name": "CanRepairDamage",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1c"
+      },
+      {
+        "Name": "CanUseCannons",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1d"
+      },
+      {
+        "Name": "IsCaptain",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1e"
+      },
+      {
+        "Name": "BelowDeck",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1f"
+      },
+      {
+        "Name": "EnableRespawnLimit",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "EnableDespawnRefund",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x21"
+      },
+      {
+        "Name": "pad0x2_FU8R1[0x2]",
+        "Type": "char",
+        "Size": "0x2",
+        "Offset": "0x22"
+      },
+      {
+        "Name": "MaxNumberOfRespawns",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x24"
+      }
+    ]
+  },
+  "AIShipCaptainParams": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "AIClassId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Name",
+        "Type": "struct FName",
         "Size": "0x8",
         "Offset": "0x8"
       }
@@ -915,7 +846,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x4_JN5IL[0x4]",
+        "Name": "pad0x4_ZUFJV[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0xc"
@@ -928,131 +859,107 @@
       }
     ]
   },
-  "AIShipBootyItem": {
+  "AIShipDespawnTelemetryEvent": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "DescType",
-        "Type": "class UClass*",
-        "Size": "0x8",
+        "Name": "AIShipId",
+        "Type": "struct FString",
+        "Size": "0x10",
         "Offset": "0x0"
       },
       {
-        "Name": "BootyType",
+        "Name": "AIShipDestructionReason",
         "Type": "byte",
         "Size": "0x1",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x3_2Q4Y5[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x9"
-      },
-      {
-        "Name": "Rarity",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "pad0x4_165L3[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x14"
-      }
-    ]
-  },
-  "AIShipEncounterDynamicBalancingDesc": {
-    "ClassSize": "0x58",
-    "Attributes": [
-      {
-        "Name": "UseDynamicBalancing",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x3_MS150[0x3]",
-        "Type": "char",
-        "Size": "0x3",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "InitialWaveGenEncounterRadiusMultiplier",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "HardShipType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "PlayerShipSizeValues",
-        "Type": "TArray<struct AIShipEncounterDynamicBalancingPlayerShipValueDesc>",
-        "Size": "0x10",
         "Offset": "0x10"
       },
       {
-        "Name": "PlayerValue",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "pad0x4_0TQFX[0x4]",
+        "Name": "pad0x7_RTCGX[0x7]",
         "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x24"
-      },
-      {
-        "Name": "DynamicWaveCostConfigurations",
-        "Type": "TArray<struct AIShipEncounterDynamicBalancingWaveConfigCostDesc>",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "PlayerCrewStrengthTargetWaveMapping",
-        "Type": "TArray<struct AIShipEncounterDynamicBalancingCrewStrengthToTargetWaveDesc>",
-        "Size": "0x10",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "DynamicShipSizePools",
-        "Type": "TArray<struct AIShipEncounterDynamicBalancingPoolSizeDesc>",
-        "Size": "0x10",
-        "Offset": "0x48"
+        "Size": "0x7",
+        "Offset": "0x11"
       }
     ]
   },
-  "AIShipClassWeightedSizes": {
+  "TrackingNoiseGenerator": {
     "ClassSize": "0x18",
     "Attributes": [
       {
-        "Name": "TargetShipSize",
-        "Type": "class UClass*",
+        "Name": "ParallelOffsetCurve",
+        "Type": "class CurveFloat*",
         "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "ShipSizes",
-        "Type": "TArray<struct AIShipWeightedSize>",
-        "Size": "0x10",
+        "Name": "OscillationTime",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x8"
+      },
+      {
+        "Name": "pad0xc_VNQ8F[0xc]",
+        "Type": "char",
+        "Size": "0xc",
+        "Offset": "0xc"
       }
     ]
   },
-  "AIShipEncounterBattleDesc": {
-    "ClassSize": "0x10",
+  "AIShipBattleParams": {
+    "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "WaveDescs",
-        "Type": "TArray<struct AIShipEncounterWaveDesc>",
+        "Name": "Name",
+        "Type": "struct FText",
+        "Size": "0x38",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SeaId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "Location",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "Radius",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x48"
+      },
+      {
+        "Name": "pad0x4_F06UI[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4c"
+      }
+    ]
+  },
+  "AIShipEncounterDynamicBalancingWaveConfigCostDesc": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "ShipSizes",
+        "Type": "TArray<class Class*>",
         "Size": "0x10",
         "Offset": "0x0"
+      },
+      {
+        "Name": "WaveCost",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x4_MIM6E[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x14"
       }
     ]
   },
@@ -1066,7 +973,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_CSSSR[0x4]",
+        "Name": "pad0x4_OWO0U[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -1089,7 +996,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_H3IUC[0x4]",
+        "Name": "pad0x4_SD8UT[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -1107,98 +1014,21 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0x4_K9L6I[0x4]",
+        "Name": "pad0x4_IXFZ4[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x2c"
       }
     ]
   },
-  "AIShipEncounterBattleGenerationParams": {
-    "ClassSize": "0x60",
+  "AIShipEncounterBattleDesc": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "HardShipType",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "NumberOfWaves",
-        "Type": "struct WeightedProbabilityRange",
-        "Size": "0x20",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "MinMaxNumberOfShips",
-        "Type": "struct Int32Range",
-        "Size": "0x10",
-        "Offset": "0x28"
-      },
-      {
-        "Name": "MinNumberOfShipsInFinalWave",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x38"
-      },
-      {
-        "Name": "pad0x4_18E9L[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x3c"
-      },
-      {
-        "Name": "ShipSizeLimits",
-        "Type": "TArray<struct AIShipSizeLimit>",
-        "Size": "0x10",
-        "Offset": "0x40"
-      },
-      {
-        "Name": "WaveConfigurations",
+        "Name": "WaveDescs",
         "Type": "TArray<struct AIShipEncounterWaveDesc>",
         "Size": "0x10",
-        "Offset": "0x50"
-      }
-    ]
-  },
-  "WeightedSpawnDirection": {
-    "ClassSize": "0xb0",
-    "Attributes": [
-      {
-        "Name": "DirectionAngle",
-        "Type": "float",
-        "Size": "0x4",
         "Offset": "0x0"
-      },
-      {
-        "Name": "DirectionWidth",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      },
-      {
-        "Name": "Weight",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x4_EGVTA[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "SpawnOffsets",
-        "Type": "TArray<struct WeightedSpawnOffset>",
-        "Size": "0x10",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "pad0x90_5N157[0x90]",
-        "Type": "char",
-        "Size": "0x90",
-        "Offset": "0x20"
       }
     ]
   },
@@ -1231,6 +1061,64 @@
       }
     ]
   },
+  "AIShipClassWeightedSizes": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "TargetShipSize",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ShipSizes",
+        "Type": "TArray<struct AIShipWeightedSize>",
+        "Size": "0x10",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "WeightedSpawnDirection": {
+    "ClassSize": "0xb0",
+    "Attributes": [
+      {
+        "Name": "DirectionAngle",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "DirectionWidth",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "Weight",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_90KHV[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "SpawnOffsets",
+        "Type": "TArray<struct WeightedSpawnOffset>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "pad0x90_KDDHA[0x90]",
+        "Type": "char",
+        "Size": "0x90",
+        "Offset": "0x20"
+      }
+    ]
+  },
   "WeightedAIShipCrewFormType": {
     "ClassSize": "0x28",
     "Attributes": [
@@ -1241,7 +1129,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x4_BSB3A[0x4]",
+        "Name": "pad0x4_OBI8D[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x4"
@@ -1251,6 +1139,118 @@
         "Type": "struct AIShipCrewFormType",
         "Size": "0x20",
         "Offset": "0x8"
+      }
+    ]
+  },
+  "AIShipEncounterBattleGenerationParams": {
+    "ClassSize": "0x60",
+    "Attributes": [
+      {
+        "Name": "HardShipType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "NumberOfWaves",
+        "Type": "struct WeightedProbabilityRange",
+        "Size": "0x20",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "MinMaxNumberOfShips",
+        "Type": "struct Int32Range",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "MinNumberOfShipsInFinalWave",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x4_NA113[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x3c"
+      },
+      {
+        "Name": "ShipSizeLimits",
+        "Type": "TArray<struct AIShipSizeLimit>",
+        "Size": "0x10",
+        "Offset": "0x40"
+      },
+      {
+        "Name": "WaveConfigurations",
+        "Type": "TArray<struct AIShipEncounterWaveDesc>",
+        "Size": "0x10",
+        "Offset": "0x50"
+      }
+    ]
+  },
+  "AIShipEncounterDynamicBalancingDesc": {
+    "ClassSize": "0x58",
+    "Attributes": [
+      {
+        "Name": "UseDynamicBalancing",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x3_VZZE4[0x3]",
+        "Type": "char",
+        "Size": "0x3",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "InitialWaveGenEncounterRadiusMultiplier",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      },
+      {
+        "Name": "HardShipType",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "PlayerShipSizeValues",
+        "Type": "TArray<struct AIShipEncounterDynamicBalancingPlayerShipValueDesc>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "PlayerValue",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "pad0x4_G4LMG[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
+      },
+      {
+        "Name": "DynamicWaveCostConfigurations",
+        "Type": "TArray<struct AIShipEncounterDynamicBalancingWaveConfigCostDesc>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "PlayerCrewStrengthTargetWaveMapping",
+        "Type": "TArray<struct AIShipEncounterDynamicBalancingCrewStrengthToTargetWaveDesc>",
+        "Size": "0x10",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "DynamicShipSizePools",
+        "Type": "TArray<struct AIShipEncounterDynamicBalancingPoolSizeDesc>",
+        "Size": "0x10",
+        "Offset": "0x48"
       }
     ]
   },
@@ -1270,10 +1270,69 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x10_Y02DZ[0x10]",
+        "Name": "pad0x10_U5XHW[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x68"
+      }
+    ]
+  },
+  "AIShipGenerationParams": {
+    "ClassSize": "0x50",
+    "Attributes": [
+      {
+        "Name": "EncounterType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "ShipType",
+        "Type": "byte",
+        "Size": "0x1",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "pad0x6_1VFWQ[0x6]",
+        "Type": "char",
+        "Size": "0x6",
+        "Offset": "0x2"
+      },
+      {
+        "Name": "ShipControllerParams",
+        "Type": "class AthenaAIShipControllerParamsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "ShipControllerParamsAsAnAlly",
+        "Type": "class AthenaAIShipControllerParamsDataAsset*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "SkillsetOverrides",
+        "Type": "TArray<struct AIShipSkeletonSkillsetOverride>",
+        "Size": "0x10",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "SkeletonAmmoTypeOverrides",
+        "Type": "TArray<struct WeightedAIShipCrewAmmoType>",
+        "Size": "0x10",
+        "Offset": "0x28"
+      },
+      {
+        "Name": "DamageParams",
+        "Type": "struct AIShipContextDescDamageParams",
+        "Size": "0x14",
+        "Offset": "0x38"
+      },
+      {
+        "Name": "pad0x4_VYWZV[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x4c"
       }
     ]
   },
@@ -1285,6 +1344,23 @@
         "Type": "TArray<struct AIShipClassWeightedSizes>",
         "Size": "0x10",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "RelativeSpawnLocationGeneratorParams": {
+    "ClassSize": "0xa0",
+    "Attributes": [
+      {
+        "Name": "SpawnDirections",
+        "Type": "TArray<struct WeightedSpawnDirection>",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x90_810ZV[0x90]",
+        "Type": "char",
+        "Size": "0x90",
+        "Offset": "0x10"
       }
     ]
   },
@@ -1329,73 +1405,38 @@
       }
     ]
   },
-  "AIShipGenerationParams": {
-    "ClassSize": "0x48",
+  "AIShipBattleEncounterDescGenerationParams": {
+    "ClassSize": "0x80",
     "Attributes": [
       {
-        "Name": "EncounterType",
-        "Type": "byte",
+        "Name": "EnableHardShip",
+        "Type": "bool",
         "Size": "0x1",
         "Offset": "0x0"
       },
       {
-        "Name": "ShipType",
-        "Type": "byte",
-        "Size": "0x1",
+        "Name": "pad0x7_ESJT2[0x7]",
+        "Type": "char",
+        "Size": "0x7",
         "Offset": "0x1"
       },
       {
-        "Name": "pad0x6_31XUW[0x6]",
-        "Type": "char",
-        "Size": "0x6",
-        "Offset": "0x2"
-      },
-      {
-        "Name": "ShipControllerParams",
-        "Type": "class AthenaAIShipControllerParamsDataAsset*",
-        "Size": "0x8",
+        "Name": "BattleGenerationParams",
+        "Type": "TArray<struct FeatureLockedAIShipEncounterBattleGenerationParams>",
+        "Size": "0x10",
         "Offset": "0x8"
       },
       {
-        "Name": "SkillsetOverrides",
-        "Type": "TArray<struct AIShipSkeletonSkillsetOverride>",
+        "Name": "BattleDescs",
+        "Type": "TArray<struct AIShipEncounterBattleDesc>",
         "Size": "0x10",
-        "Offset": "0x10"
+        "Offset": "0x18"
       },
       {
-        "Name": "SkeletonAmmoTypeOverrides",
-        "Type": "TArray<struct WeightedAIShipCrewAmmoType>",
-        "Size": "0x10",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "DamageParams",
-        "Type": "struct AIShipContextDescDamageParams",
-        "Size": "0x14",
-        "Offset": "0x30"
-      },
-      {
-        "Name": "pad0x4_8XCS2[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x44"
-      }
-    ]
-  },
-  "RelativeSpawnLocationGeneratorParams": {
-    "ClassSize": "0xa0",
-    "Attributes": [
-      {
-        "Name": "SpawnDirections",
-        "Type": "TArray<struct WeightedSpawnDirection>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x90_GGDON[0x90]",
-        "Type": "char",
-        "Size": "0x90",
-        "Offset": "0x10"
+        "Name": "DynamicBalancingDesc",
+        "Type": "struct AIShipEncounterDynamicBalancingDesc",
+        "Size": "0x58",
+        "Offset": "0x28"
       }
     ]
   },
@@ -1425,41 +1466,6 @@
         "Type": "TArray<struct AIShipGenerationParams>",
         "Size": "0x10",
         "Offset": "0x18"
-      }
-    ]
-  },
-  "AIShipBattleEncounterDescGenerationParams": {
-    "ClassSize": "0x80",
-    "Attributes": [
-      {
-        "Name": "EnableHardShip",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x7_PP1I3[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "BattleGenerationParams",
-        "Type": "TArray<struct FeatureLockedAIShipEncounterBattleGenerationParams>",
-        "Size": "0x10",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "BattleDescs",
-        "Type": "TArray<struct AIShipEncounterBattleDesc>",
-        "Size": "0x10",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "DynamicBalancingDesc",
-        "Type": "struct AIShipEncounterDynamicBalancingDesc",
-        "Size": "0x58",
-        "Offset": "0x28"
       }
     ]
   },

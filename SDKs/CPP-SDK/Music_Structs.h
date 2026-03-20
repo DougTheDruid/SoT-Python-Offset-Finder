@@ -4,10 +4,10 @@
 // https://github.com/DougTheDruid
 
 // Size 0x10
-struct MusicZoneDestroyedEvent
+struct MusicZoneSpawnedEvent
 {
 public:
-	char                                                         pad0x10_VF9KG[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_KT5AE[0x10];                               // 0x0(0x10)
 };
 
 
@@ -30,10 +30,10 @@ public:
 
 
 // Size 0x10
-struct MusicZoneSpawnedEvent
+struct MusicZoneDestroyedEvent
 {
 public:
-	char                                                         pad0x10_2E4Y6[0x10];                               // 0x0(0x10)
+	char                                                         pad0x10_0HA20[0x10];                               // 0x0(0x10)
 };
 
 

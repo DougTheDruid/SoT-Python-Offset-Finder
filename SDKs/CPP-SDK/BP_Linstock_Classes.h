@@ -8,6 +8,7 @@ class BP_Linstock_C: public Actor
 {
 public:
 	struct PointerToUberGraphFrame                               UberGraphFrame;                                    // 0x3a0(0x8)
+	char                                                         pad0x536f0258_TBSM6[0x536f0258];                   // 0x3a8(0x536f0258)
 	class StaticMeshComponent*                                   StaticMesh;                                        // 0x3a8(0x8)
 	class SceneComponent*                                        DefaultSceneRoot;                                  // 0x3b0(0x8)
 };

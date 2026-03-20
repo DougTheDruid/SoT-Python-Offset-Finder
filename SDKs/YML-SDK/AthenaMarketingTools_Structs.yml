@@ -42,14 +42,14 @@ CinematicCameraReplicatedSpotLightParams:
     Offset: '0x3d'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_X4S3A[0x2]
+  - Name: pad0x2_PG55W[0x2]
     Offset: '0x3e'
     Size: '0x2'
     Type: char
   ClassSize: '0x40'
 UpdateCinematicSpotLightParamsRpc:
   Attributes:
-  - Name: pad0x18_0XINI[0x18]
+  - Name: pad0x18_5LRRS[0x18]
     Offset: '0x0'
     Size: '0x18'
     Type: char

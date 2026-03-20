@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AthenaCheatManager:
   Attributes:
-  - Name: pad0x18_TO3OM[0x18]
+  - Name: pad0x18_497W2[0x18]
     Offset: '0x78'
     Size: '0x18'
     Type: char
@@ -14,7 +14,7 @@ AthenaCheatManager:
     Offset: '0x98'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x28_JFYQJ[0x28]
+  - Name: pad0x28_05G2N[0x28]
     Offset: '0xa0'
     Size: '0x28'
     Type: char
@@ -34,7 +34,7 @@ AthenaCheatManager:
     Offset: '0xe8'
     Size: '0x4'
     Type: float
-  - Name: pad0x54_7P1YH[0x54]
+  - Name: pad0x54_717VA[0x54]
     Offset: '0xec'
     Size: '0x54'
     Type: char
@@ -42,3 +42,9 @@ AthenaCheatManager:
   FullSize: '0x140'
   InheritedSize: '0x78'
   Super: CheatManager
+SandboxPerformanceConstraintActivityOriginCheat:
+  Attributes: []
+  ClassSize: '0x0'
+  FullSize: '0x28'
+  InheritedSize: '0x28'
+  Super: SandboxPerformanceConstraintActivityOriginType

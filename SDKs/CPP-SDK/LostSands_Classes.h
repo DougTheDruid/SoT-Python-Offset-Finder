@@ -6,27 +6,27 @@
 #include "LostSands_Structs.h"
 
 
-// Size 0x240 (Full Size[0x5e0] - InheritedSize[0x3a0]
+// Size 0x238 (Full Size[0x5d8] - InheritedSize[0x3a0]
 class LostSandsRowboatGunpowderBarrel: public Actor
 {
 public:
-	char                                                         pad0xb8_957SM[0xb8];                               // 0x3a0(0xb8)
-	class ActionRulesComponent*                                  ActionRulesComponent;                              // 0x458(0x8)
-	class InteractableComponent*                                 InteractableComponent;                             // 0x460(0x8)
-	class StaticMeshMemoryConstraintComponent*                   StaticMeshComponent;                               // 0x468(0x8)
-	class FlammableWieldableComponent*                           FlammableComponent;                                // 0x470(0x8)
-	class LightWeightStatusEffectManagerComponent*               StatusEffectComponent;                             // 0x478(0x8)
-	class ItemHealthComponent*                                   ItemHealthComponent;                               // 0x480(0x8)
-	class ExplosionComponent*                                    ExplosionComponent;                                // 0x488(0x8)
-	class RewindComponent*                                       RewindComponent;                                   // 0x490(0x8)
-	class UClass*                                                ToggleFuseInputId;                                 // 0x498(0x8)
-	struct FText                                                 LightFuseDescription;                              // 0x4a0(0x38)
-	struct FText                                                 ExtinguishFuseDescription;                         // 0x4d8(0x38)
-	struct FName                                                 NamedPointsGroupName;                              // 0x510(0x8)
-	TArray<float>                                                DistanceFromNamedPoints;                           // 0x538(0x10)
-	struct PlayerStat                                            RowboatDestroyedAtGoldenSandsStat;                 // 0x548(0x4)
-	struct PlayerStat                                            RowboatDestroyedAwayFromGoldenSandsStat;           // 0x54c(0x4)
-	char                                                         pad0x90_CIN28[0x90];                               // 0x550(0x90)
+	char                                                         pad0xb0_8H380[0xb0];                               // 0x3a0(0xb0)
+	class ActionRulesComponent*                                  ActionRulesComponent;                              // 0x450(0x8)
+	class InteractableComponent*                                 InteractableComponent;                             // 0x458(0x8)
+	class StaticMeshMemoryConstraintComponent*                   StaticMeshComponent;                               // 0x460(0x8)
+	class FlammableWieldableComponent*                           FlammableComponent;                                // 0x468(0x8)
+	class LightweightStatusEffectManagerComponent*               StatusEffectComponent;                             // 0x470(0x8)
+	class ItemHealthComponent*                                   ItemHealthComponent;                               // 0x478(0x8)
+	class ExplosionComponent*                                    ExplosionComponent;                                // 0x480(0x8)
+	class RewindComponent*                                       RewindComponent;                                   // 0x488(0x8)
+	class UClass*                                                ToggleFuseInputId;                                 // 0x490(0x8)
+	struct FText                                                 LightFuseDescription;                              // 0x498(0x38)
+	struct FText                                                 ExtinguishFuseDescription;                         // 0x4d0(0x38)
+	struct FName                                                 NamedPointsGroupName;                              // 0x508(0x8)
+	TArray<float>                                                DistanceFromNamedPoints;                           // 0x530(0x10)
+	struct PlayerStat                                            RowboatDestroyedAtGoldenSandsStat;                 // 0x540(0x4)
+	struct PlayerStat                                            RowboatDestroyedAwayFromGoldenSandsStat;           // 0x544(0x4)
+	char                                                         pad0x90_LHO39[0x90];                               // 0x548(0x90)
 };
 
 

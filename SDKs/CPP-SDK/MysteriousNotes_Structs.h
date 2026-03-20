@@ -4,68 +4,11 @@
 // https://github.com/DougTheDruid
 
 // Size 0x10
-struct EventNoteCompletionStep
+struct EventNoteClientCompletionStep
 {
 public:
 	class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
 	struct FName                                                 CompletionStepID;                                  // 0x8(0x8)
-};
-
-
-// Size 0x10
-struct EventMysteriousNoteContentUpdated
-{
-public:
-	char                                                         pad0x10_RHHDY[0x10];                               // 0x0(0x10)
-};
-
-
-// Size 0x8
-struct MysteriousNotesCompletionEventsModel
-{
-public:
-	struct FName                                                 CompletionIdent;                                   // 0x0(0x8)
-};
-
-
-// Size 0x18
-struct EventMarkNoteRead
-{
-public:
-	class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
-	struct Guid                                                  NoteId;                                            // 0x8(0x10)
-};
-
-
-// Size 0x1
-struct EventMysteriousNoteCustomContentUpdate
-{
-public:
-	char                                                         pad0x1_Y36S2[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x4
-struct PlayerSentNotesTelemetryEvent
-{
-public:
-	int                                                          NoteCount;                                         // 0x0(0x4)
-};
-
-
-// Size 0x8
-struct EventOnlineAthenaPlayerControllerUnpossessed
-{
-public:
-	class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
-};
-
-
-// Size 0x10
-struct MysteriousNoteTheme
-{
-public:
-	struct FString                                               NoteType;                                          // 0x0(0x10)
 };
 
 
@@ -75,7 +18,15 @@ struct EventTriggerMysteriousNotesPopup
 public:
 	class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
 	bool                                                         CinematicSkipped;                                  // 0x8(0x1)
-	char                                                         pad0x7_0OCBF[0x7];                                 // 0x9(0x7)
+	char                                                         pad0x7_B5FCA[0x7];                                 // 0x9(0x7)
+};
+
+
+// Size 0x1
+struct EventMysteriousNoteSettingsLoaded
+{
+public:
+	char                                                         pad0x1_FNKHS[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -95,36 +46,27 @@ public:
 
 
 // Size 0x10
-struct EventMysteriousNoteRemoved
+struct EventNoteCompletionStep
 {
 public:
-	char                                                         pad0x10_070D4[0x10];                               // 0x0(0x10)
+	class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
+	struct FName                                                 CompletionStepID;                                  // 0x8(0x8)
 };
 
 
 // Size 0x1
-struct EventMysteriousNoteSettingsLoaded
+struct EventNotesUpdated
 {
 public:
-	char                                                         pad0x1_H2M4P[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_ULH74[0x1];                                 // 0x0(0x1)
 };
 
 
-// Size 0x18
-struct EventMarkNoteDeleted
+// Size 0x4
+struct PlayerSentNotesTelemetryEvent
 {
 public:
-	class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
-	struct Guid                                                  NoteId;                                            // 0x8(0x10)
-};
-
-
-// Size 0x20
-struct PlayerNoteStateChangeTelemetryEvent
-{
-public:
-	struct Guid                                                  NoteId;                                            // 0x0(0x10)
-	struct FString                                               NoteState;                                         // 0x10(0x10)
+	int                                                          NoteCount;                                         // 0x0(0x4)
 };
 
 
@@ -135,41 +77,24 @@ public:
 	struct Guid                                                  NoteId;                                            // 0x0(0x10)
 	bool                                                         NoteRead;                                          // 0x10(0x1)
 	bool                                                         ShowNoteAnimation;                                 // 0x11(0x1)
-	char                                                         pad0x2_0E1QW[0x2];                                 // 0x12(0x2)
+	char                                                         pad0x2_T8Z11[0x2];                                 // 0x12(0x2)
 };
 
 
-// Size 0x1
-struct EventListenForCinematicEndEvent
+// Size 0x8
+struct MysteriousNotesCompletionEventsModelEntry
 {
 public:
-	char                                                         pad0x1_SWS9H[0x1];                                 // 0x0(0x1)
+	struct FName                                                 CompletionIdent;                                   // 0x0(0x8)
 };
 
 
-// Size 0x1
-struct EventNotesUpdated
-{
-public:
-	char                                                         pad0x1_V2BOL[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x80
-struct MysteriousNoteRequest
+// Size 0x18
+struct EventMarkNoteRead
 {
 public:
 	class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
-	struct PirateIdentity                                        PirateIdentity;                                    // 0x8(0x78)
-};
-
-
-// Size 0x10
-struct EventNoteClientCompletionStep
-{
-public:
-	class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
-	struct FName                                                 CompletionStepID;                                  // 0x8(0x8)
+	struct Guid                                                  NoteId;                                            // 0x8(0x10)
 };
 
 
@@ -182,11 +107,45 @@ public:
 };
 
 
-// Size 0x8
-struct MysteriousNotesCompletionEventsModelEntry
+// Size 0x80
+struct MysteriousNoteRequest
 {
 public:
-	struct FName                                                 CompletionIdent;                                   // 0x0(0x8)
+	class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
+	struct PirateIdentity                                        PirateIdentity;                                    // 0x8(0x78)
+};
+
+
+// Size 0x18
+struct EventMarkNoteDeleted
+{
+public:
+	class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
+	struct Guid                                                  NoteId;                                            // 0x8(0x10)
+};
+
+
+// Size 0x10
+struct EventMysteriousNoteContentUpdated
+{
+public:
+	char                                                         pad0x10_LXRX1[0x10];                               // 0x0(0x10)
+};
+
+
+// Size 0x8
+struct EventOnlineAthenaPlayerControllerUnpossessed
+{
+public:
+	class PlayerController*                                      PlayerController;                                  // 0x0(0x8)
+};
+
+
+// Size 0x10
+struct MysteriousNoteTheme
+{
+public:
+	struct FString                                               NoteType;                                          // 0x0(0x10)
 };
 
 
@@ -198,7 +157,48 @@ public:
 	struct FString                                               LocalisedTitle;                                    // 0x10(0x10)
 	struct FString                                               LocalisedBody;                                     // 0x20(0x10)
 	struct FString                                               NoteType;                                          // 0x30(0x10)
-	char                                                         pad0x8_BZXET[0x8];                                 // 0x40(0x8)
+	char                                                         pad0x8_IDMTR[0x8];                                 // 0x40(0x8)
+};
+
+
+// Size 0x10
+struct EventMysteriousNoteRemoved
+{
+public:
+	char                                                         pad0x10_GEJV2[0x10];                               // 0x0(0x10)
+};
+
+
+// Size 0x1
+struct EventListenForCinematicEndEvent
+{
+public:
+	char                                                         pad0x1_PS8RW[0x1];                                 // 0x0(0x1)
+};
+
+
+// Size 0x8
+struct MysteriousNotesCompletionEventsModel
+{
+public:
+	struct FName                                                 CompletionIdent;                                   // 0x0(0x8)
+};
+
+
+// Size 0x1
+struct EventMysteriousNoteCustomContentUpdate
+{
+public:
+	char                                                         pad0x1_92ZQA[0x1];                                 // 0x0(0x1)
+};
+
+
+// Size 0x20
+struct PlayerNoteStateChangeTelemetryEvent
+{
+public:
+	struct Guid                                                  NoteId;                                            // 0x0(0x10)
+	struct FString                                               NoteState;                                         // 0x10(0x10)
 };
 
 
@@ -217,7 +217,7 @@ struct ClientNoteData
 {
 public:
 	bool                                                         NotifyArrival;                                     // 0x0(0x1)
-	char                                                         pad0x7_PS4KJ[0x7];                                 // 0x1(0x7)
+	char                                                         pad0x7_FO02J[0x7];                                 // 0x1(0x7)
 	TArray<struct MysteriousNoteInfo>                            PendingNotes;                                      // 0x8(0x10)
 };
 

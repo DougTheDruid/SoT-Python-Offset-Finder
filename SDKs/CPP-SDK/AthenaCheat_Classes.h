@@ -7,15 +7,22 @@
 class AthenaCheatManager: public CheatManager
 {
 public:
-	char                                                         pad0x18_TO3OM[0x18];                               // 0x78(0x18)
+	char                                                         pad0x18_497W2[0x18];                               // 0x78(0x18)
 	class CinematicCameraController*                             CinematicCameraController;                         // 0x90(0x8)
 	class UClass*                                                CinematicCameraControllerClass;                    // 0x98(0x8)
-	char                                                         pad0x28_JFYQJ[0x28];                               // 0xa0(0x28)
+	char                                                         pad0x28_05G2N[0x28];                               // 0xa0(0x28)
 	TArray<struct WorldMarkerDesc>                               CreatedWorldMarkers;                               // 0xc8(0x10)
 	class GameEventSchedulerSettingsAsset*                       DebugSchedulerSettings;                            // 0xd8(0x8)
 	class ServerPerformanceReplicator*                           ServerPerformanceReplicator;                       // 0xe0(0x8)
 	float                                                        TeleportToDigsiteHeightOffset;                     // 0xe8(0x4)
-	char                                                         pad0x54_7P1YH[0x54];                               // 0xec(0x54)
+	char                                                         pad0x54_717VA[0x54];                               // 0xec(0x54)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class SandboxPerformanceConstraintActivityOriginCheat: public SandboxPerformanceConstraintActivityOriginType
+{
+public:
 };
 
 

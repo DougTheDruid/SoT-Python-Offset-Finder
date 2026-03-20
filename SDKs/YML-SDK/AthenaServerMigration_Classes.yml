@@ -20,13 +20,21 @@ MigrationServiceInterface:
   Super: Interface
 RegisterServerMigrationPointOfInterestComponent:
   Attributes:
-  - Name: MigrationRadius
+  - Name: MigrationInfluence
     Offset: '0xb8'
+    Size: '0x1'
+    Type: byte
+  - Name: pad0x3_XDA7Z[0x3]
+    Offset: '0xb9'
+    Size: '0x3'
+    Type: char
+  - Name: MigrationRadius
+    Offset: '0xbc'
     Size: '0x4'
     Type: float
-  - Name: pad0x1c_UO46P[0x1c]
-    Offset: '0xbc'
-    Size: '0x1c'
+  - Name: pad0x18_OZPTM[0x18]
+    Offset: '0xc0'
+    Size: '0x18'
     Type: char
   ClassSize: '0x20'
   FullSize: '0xd8'

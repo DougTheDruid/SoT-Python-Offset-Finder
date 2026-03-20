@@ -1,18 +1,92 @@
 {
-  "WeightedProbabilityRange": {
-    "ClassSize": "0x20",
+  "FixedStepInterpCurvePointVector2D": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_YTQMY[0x10]",
-        "Type": "char",
-        "Size": "0x10",
+        "Name": "OutVal",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
         "Offset": "0x0"
       },
       {
-        "Name": "Weights",
-        "Type": "TArray<float>",
-        "Size": "0x10",
+        "Name": "Tangent",
+        "Type": "struct Vector2D",
+        "Size": "0x8",
+        "Offset": "0x8"
+      }
+    ]
+  },
+  "RotationUpdateResult": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "UpdatedRotation",
+        "Type": "struct Rotator",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SpinAngle",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "TiltAngle",
+        "Type": "float",
+        "Size": "0x4",
         "Offset": "0x10"
+      },
+      {
+        "Name": "TiltDirection",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x14"
+      }
+    ]
+  },
+  "TimedBuffer": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "pad0x18_KWQ66[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "OrientedPoint": {
+    "ClassSize": "0x18",
+    "Attributes": [
+      {
+        "Name": "Location",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Rotation",
+        "Type": "struct Rotator",
+        "Size": "0xc",
+        "Offset": "0xc"
+      }
+    ]
+  },
+  "WeightedProbabilityRangeOfRangesFloatPair": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Min",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Max",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
       }
     ]
   },
@@ -32,10 +106,38 @@
         "Offset": "0x4"
       },
       {
-        "Name": "pad0x3_XICL7[0x3]",
+        "Name": "pad0x3_YWVCX[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x5"
+      }
+    ]
+  },
+  "WeightedProbabilityRange": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x10_0G90U[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Weights",
+        "Type": "TArray<float>",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "GrabBag": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x20_HCDKT[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
       }
     ]
   },
@@ -68,68 +170,6 @@
       }
     ]
   },
-  "WeightedProbabilityRangeOfRangesFloatPair": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Min",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Max",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "FixedStepInterpCurvePointVector2D": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "OutVal",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Tangent",
-        "Type": "struct Vector2D",
-        "Size": "0x8",
-        "Offset": "0x8"
-      }
-    ]
-  },
-  "GrabBag": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x20_3MACG[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "OrientedPoint": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "Location",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Rotation",
-        "Type": "struct Rotator",
-        "Size": "0xc",
-        "Offset": "0xc"
-      }
-    ]
-  },
   "Pendulum": {
     "ClassSize": "0x60",
     "Attributes": [
@@ -152,7 +192,7 @@
         "Offset": "0x8"
       },
       {
-        "Name": "pad0x3_S5N3Y[0x3]",
+        "Name": "pad0x3_BKRH3[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x9"
@@ -194,7 +234,7 @@
         "Offset": "0x20"
       },
       {
-        "Name": "pad0xc_00OIQ[0xc]",
+        "Name": "pad0xc_IDP2F[0xc]",
         "Type": "char",
         "Size": "0xc",
         "Offset": "0x24"
@@ -204,63 +244,6 @@
         "Type": "struct Transform",
         "Size": "0x30",
         "Offset": "0x30"
-      }
-    ]
-  },
-  "RotationUpdateResult": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "UpdatedRotation",
-        "Type": "struct Rotator",
-        "Size": "0xc",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SpinAngle",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "TiltAngle",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "TiltDirection",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x14"
-      }
-    ]
-  },
-  "TimedBuffer": {
-    "ClassSize": "0x18",
-    "Attributes": [
-      {
-        "Name": "pad0x18_9A52N[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "WeightedProbabilityRangeOfRanges": {
-    "ClassSize": "0x30",
-    "Attributes": [
-      {
-        "Name": "pad0x20_R9HPW[0x20]",
-        "Type": "char",
-        "Size": "0x20",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "SubRanges",
-        "Type": "TArray<struct WeightedProbabilityRangeOfRangesFloatPair>",
-        "Size": "0x10",
-        "Offset": "0x20"
       }
     ]
   },
@@ -286,10 +269,27 @@
         "Offset": "0x14"
       },
       {
-        "Name": "pad0x3_OV1OQ[0x3]",
+        "Name": "pad0x3_ON7P7[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x15"
+      }
+    ]
+  },
+  "WeightedProbabilityRangeOfRanges": {
+    "ClassSize": "0x30",
+    "Attributes": [
+      {
+        "Name": "pad0x20_F48FN[0x20]",
+        "Type": "char",
+        "Size": "0x20",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "SubRanges",
+        "Type": "TArray<struct WeightedProbabilityRangeOfRangesFloatPair>",
+        "Size": "0x10",
+        "Offset": "0x20"
       }
     ]
   },

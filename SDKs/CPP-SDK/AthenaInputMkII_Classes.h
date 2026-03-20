@@ -4,9 +4,17 @@
 // https://github.com/DougTheDruid
 
 // Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class OpenEscapeMenuNotificationInputId: public NotificationInputId
+class ClampedFreelookXAnalogInputId: public AnalogInputId
 {
 public:
+};
+
+
+// Size 0x8 (Full Size[0xc0] - InheritedSize[0xb8]
+class NPCReceivesInputIndicatorComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x8_7U3TQ[0x8];                                 // 0xb8(0x8)
 };
 
 
@@ -17,11 +25,10 @@ public:
 };
 
 
-// Size 0x8 (Full Size[0xc0] - InheritedSize[0xb8]
-class NPCReceivesInputIndicatorComponent: public ActorComponent
+// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
+class OpenEscapeMenuNotificationInputId: public NotificationInputId
 {
 public:
-	char                                                         pad0x8_JZ64M[0x8];                                 // 0xb8(0x8)
 };
 
 
@@ -33,7 +40,7 @@ public:
 
 
 // Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class ClampedFreelookXAnalogInputId: public AnalogInputId
+class ClampedFreelookMouseYInputId: public AnalogInputId
 {
 public:
 };
@@ -43,22 +50,7 @@ public:
 class AutoMoveInputComponent: public InputComponent
 {
 public:
-	char                                                         pad0x20_5IU6D[0x20];                               // 0x140(0x20)
-};
-
-
-// Size 0x0 (Full Size[0x38] - InheritedSize[0x38]
-class ClampedFreelookMouseYInputId: public AnalogInputId
-{
-public:
-};
-
-
-// Size 0x70 (Full Size[0x1d0] - InheritedSize[0x160]
-class MovementInterferenceComponent: public AutoMoveInputComponent
-{
-public:
-	char                                                         pad0x70_GN2U6[0x70];                               // 0x160(0x70)
+	char                                                         pad0x20_F6OCH[0x20];                               // 0x140(0x20)
 };
 
 
@@ -66,7 +58,15 @@ public:
 class AthenaCharacterBaseInputComponent: public AutoMoveInputComponent
 {
 public:
-	char                                                         pad0x128_Z48JL[0x128];                             // 0x160(0x128)
+	char                                                         pad0x128_C7BRM[0x128];                             // 0x160(0x128)
+};
+
+
+// Size 0x70 (Full Size[0x1d0] - InheritedSize[0x160]
+class MovementInterferenceComponent: public AutoMoveInputComponent
+{
+public:
+	char                                                         pad0x70_DO665[0x70];                               // 0x160(0x70)
 };
 
 
@@ -74,7 +74,7 @@ public:
 class AthenaCharacterBaseInputComponentWithInterference: public AthenaCharacterBaseInputComponent
 {
 public:
-	char                                                         pad0x8_I7KRY[0x8];                                 // 0x288(0x8)
+	char                                                         pad0x8_43FQG[0x8];                                 // 0x288(0x8)
 };
 
 

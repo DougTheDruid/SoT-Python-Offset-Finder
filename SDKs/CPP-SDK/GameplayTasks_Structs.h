@@ -7,7 +7,7 @@
 struct GameplayResourceSet
 {
 public:
-	char                                                         pad0x2_3A6T5[0x2];                                 // 0x0(0x2)
+	char                                                         pad0x2_4J3EY[0x2];                                 // 0x0(0x2)
 };
 
 

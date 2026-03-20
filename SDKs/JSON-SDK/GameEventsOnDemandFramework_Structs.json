@@ -10,6 +10,17 @@
       }
     ]
   },
+  "GameEventOnDemandCrewScuttledTelemetryEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_JIL30[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "GameEventAvailabilityData": {
     "ClassSize": "0x30",
     "Attributes": [
@@ -32,7 +43,7 @@
         "Offset": "0x11"
       },
       {
-        "Name": "pad0x6_RH6VA[0x6]",
+        "Name": "pad0x6_60WU9[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x12"
@@ -51,17 +62,6 @@
       }
     ]
   },
-  "GameEventOnDemandDeactivated": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "OnDemandCrewIds",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
   "GameEventOnDemandCrewSentToSinkingTunnel": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -70,6 +70,34 @@
         "Type": "struct Guid",
         "Size": "0x10",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "GameEventOnDemandActivatedTelemetryEvent": {
+    "ClassSize": "0x4",
+    "Attributes": [
+      {
+        "Name": "NumCrewsOnDemandLimit",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GameEventOnDemandBaseTelemetryFragment": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "GameEventType",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "GameEventOnDemandId",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0x10"
       }
     ]
   },
@@ -100,20 +128,9 @@
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_E3X13[0x1]",
+        "Name": "pad0x1_HUM6Z[0x1]",
         "Type": "char",
         "Size": "0x1",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "GameEventOnDemandActivatedTelemetryEvent": {
-    "ClassSize": "0x4",
-    "Attributes": [
-      {
-        "Name": "NumCrewsOnDemandLimit",
-        "Type": "int",
-        "Size": "0x4",
         "Offset": "0x0"
       }
     ]
@@ -129,13 +146,24 @@
       }
     ]
   },
-  "GameEventOnDemandCrewScuttledTelemetryEvent": {
+  "GameEventOnDemandCrewCancelledVoyageTelemetryEvent": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_827D6[0x1]",
+        "Name": "pad0x1_1GX7R[0x1]",
         "Type": "char",
         "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "GameEventOnDemandFailedTelemetryEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "ParticipatingOnDemandCrews",
+        "Type": "TArray<struct Guid>",
+        "Size": "0x10",
         "Offset": "0x0"
       }
     ]
@@ -157,30 +185,13 @@
       }
     ]
   },
-  "GameEventOnDemandBaseTelemetryFragment": {
-    "ClassSize": "0x20",
+  "GameEventOnDemandDeactivated": {
+    "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "GameEventType",
-        "Type": "struct FString",
+        "Name": "OnDemandCrewIds",
+        "Type": "TArray<struct Guid>",
         "Size": "0x10",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "GameEventOnDemandId",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
-  "GameEventOnDemandCrewCancelledVoyageTelemetryEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_GJM1L[0x1]",
-        "Type": "char",
-        "Size": "0x1",
         "Offset": "0x0"
       }
     ]
@@ -205,17 +216,6 @@
         "Type": "TArray<struct Guid>",
         "Size": "0x10",
         "Offset": "0x20"
-      }
-    ]
-  },
-  "GameEventOnDemandFailedTelemetryEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "ParticipatingOnDemandCrews",
-        "Type": "TArray<struct Guid>",
-        "Size": "0x10",
-        "Offset": "0x0"
       }
     ]
   },

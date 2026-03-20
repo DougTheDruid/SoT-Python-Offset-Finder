@@ -1,4 +1,55 @@
 {
+  "TrinketLoadoutModelEntry": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "EntitlementId",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "LocationIndex",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "pad0x4_9R5V9[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0xc"
+      },
+      {
+        "Name": "UserId",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x10"
+      }
+    ]
+  },
+  "EventTrinketSetReady": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_PSR72[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "RequestTrinketChestItemInfoEvent": {
+    "ClassSize": "0x1",
+    "Attributes": [
+      {
+        "Name": "pad0x1_ND3XK[0x1]",
+        "Type": "char",
+        "Size": "0x1",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "TrinketLoadoutEntry": {
     "ClassSize": "0x8",
     "Attributes": [
@@ -13,17 +64,6 @@
         "Type": "int",
         "Size": "0x4",
         "Offset": "0x4"
-      }
-    ]
-  },
-  "RequestTrinketLoadoutUIEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "Categories",
-        "Type": "TArray<String>",
-        "Size": "0x10",
-        "Offset": "0x0"
       }
     ]
   },
@@ -67,40 +107,11 @@
       }
     ]
   },
-  "TrinketLoadoutModelEntry": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "EntitlementId",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "LocationIndex",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "pad0x4_CHT54[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0xc"
-      },
-      {
-        "Name": "UserId",
-        "Type": "struct FString",
-        "Size": "0x10",
-        "Offset": "0x10"
-      }
-    ]
-  },
   "RemoveInteractingPlayerFromTrinketMountpointRpc": {
     "ClassSize": "0x30",
     "Attributes": [
       {
-        "Name": "pad0x18_7RLHS[0x18]",
+        "Name": "pad0x18_0NFUU[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"
@@ -119,6 +130,17 @@
       }
     ]
   },
+  "TrinketLoadoutUpdatedEvent": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x10_UZ146[0x10]",
+        "Type": "char",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
   "RequestTrinketEntitlementsUIEvent": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -130,35 +152,13 @@
       }
     ]
   },
-  "EventTrinketSetReady": {
+  "RequestTrinketLoadoutUIEvent": {
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x10_BQ0PE[0x10]",
-        "Type": "char",
+        "Name": "Categories",
+        "Type": "TArray<String>",
         "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "TrinketLoadoutUpdatedEvent": {
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x10_4DPJU[0x10]",
-        "Type": "char",
-        "Size": "0x10",
-        "Offset": "0x0"
-      }
-    ]
-  },
-  "RequestTrinketChestItemInfoEvent": {
-    "ClassSize": "0x1",
-    "Attributes": [
-      {
-        "Name": "pad0x1_EKHTB[0x1]",
-        "Type": "char",
-        "Size": "0x1",
         "Offset": "0x0"
       }
     ]
@@ -190,7 +190,7 @@
         "Offset": "0x10"
       },
       {
-        "Name": "pad0x28_2E1UM[0x28]",
+        "Name": "pad0x28_INXRV[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0x20"

@@ -1,6 +1,13 @@
 {
-  "ActorOfInterestServiceInterface": {
-    "Super": "Interface",
+  "ActorOfInterestId": {
+    "Super": "Object",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ActorOfInterestBlueprintFunctionLibrary": {
+    "Super": "Object",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
@@ -19,28 +26,21 @@
         "Offset": "0xb8"
       },
       {
-        "Name": "pad0x18_2W88K[0x18]",
+        "Name": "pad0x18_HY464[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0xc0"
       }
     ]
   },
-  "ActorOfInterestBlueprintFunctionLibrary": {
-    "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "ActorOfInterestService": {
     "Super": "Actor",
-    "FullSize": "0x4a0",
+    "FullSize": "0x498",
     "InheritedSize": "0x3a0",
-    "ClassSize": "0x100",
+    "ClassSize": "0xf8",
     "Attributes": [
       {
-        "Name": "pad0x60_2K1RI[0x60]",
+        "Name": "pad0x60_8Z76P[0x60]",
         "Type": "char",
         "Size": "0x60",
         "Offset": "0x3a0"
@@ -48,13 +48,13 @@
       {
         "Name": "EventDispatcher",
         "Type": "struct ObjectMessagingDispatcher",
-        "Size": "0xa0",
+        "Size": "0x98",
         "Offset": "0x400"
       }
     ]
   },
-  "ActorOfInterestId": {
-    "Super": "Object",
+  "ActorOfInterestServiceInterface": {
+    "Super": "Interface",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",

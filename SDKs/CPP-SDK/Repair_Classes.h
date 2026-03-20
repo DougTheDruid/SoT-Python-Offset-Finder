@@ -7,14 +7,14 @@
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class RepairingInterface: public Interface
+class RepairObjectActionStateId: public ActionStateId
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ShipRepairInterface: public Interface
+class RepairingInterface: public Interface
 {
 public:
 };
@@ -29,14 +29,14 @@ public:
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class RepairableInterface: public Interface
+class ShipRepairInterface: public Interface
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class RepairObjectActionStateId: public ActionStateId
+class RepairableInterface: public Interface
 {
 public:
 };

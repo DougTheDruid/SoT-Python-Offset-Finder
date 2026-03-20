@@ -11,14 +11,6 @@ public:
 };
 
 
-// Size 0x4
-struct ServiceMessagingTestMessage
-{
-public:
-	int                                                          Data;                                              // 0x0(0x4)
-};
-
-
 // Size 0x18
 struct TestStructWithNetId
 {
@@ -32,6 +24,14 @@ struct ServiceMessagingUnsubscribedEvent
 {
 public:
 	struct FString                                               RoutingKey;                                        // 0x0(0x10)
+};
+
+
+// Size 0x4
+struct ServiceMessagingTestMessage
+{
+public:
+	int                                                          Data;                                              // 0x0(0x4)
 };
 
 

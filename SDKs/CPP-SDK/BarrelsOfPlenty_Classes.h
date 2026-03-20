@@ -36,7 +36,7 @@ class BarrelsOfPlentySpawnProxy: public Actor
 {
 public:
 	class Actor*                                                 Ship;                                              // 0x3a0(0x8)
-	char                                                         pad0x18_0ZS9Q[0x18];                               // 0x3a8(0x18)
+	char                                                         pad0x18_HH7RL[0x18];                               // 0x3a8(0x18)
 	class SceneComponent*                                        SceneComponent;                                    // 0x3c0(0x8)
 };
 

@@ -22,14 +22,14 @@ NudgeInterpolationParams:
     Offset: '0x18'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_QFH26[0x7]
+  - Name: pad0x7_97B60[0x7]
     Offset: '0x19'
     Size: '0x7'
     Type: char
   ClassSize: '0x20'
 TrinketNudgeProgress:
   Attributes:
-  - Name: pad0x8_6ZL9P[0x8]
+  - Name: pad0x8_OPFAT[0x8]
     Offset: '0x0'
     Size: '0x8'
     Type: char
@@ -37,7 +37,7 @@ TrinketNudgeProgress:
     Offset: '0x8'
     Size: '0x8'
     Type: class SceneComponent*
-  - Name: pad0x10_SSF02[0x10]
+  - Name: pad0x10_38DXT[0x10]
     Offset: '0x10'
     Size: '0x10'
     Type: char
@@ -45,7 +45,7 @@ TrinketNudgeProgress:
     Offset: '0x20'
     Size: '0x8'
     Type: class CurveFloat*
-  - Name: pad0x8_ED62P[0x8]
+  - Name: pad0x8_DVDUJ[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char

@@ -13,13 +13,13 @@ public:
 	struct CollisionProfileName                                  SolidCollisionProfile;                             // 0x5c8(0x8)
 	struct CollisionProfileName                                  KnockbackTraceProfile;                             // 0x5d0(0x8)
 	char                                                         KnockbackType;                                     // 0x5d8(0x1)
-	char                                                         pad0x3_4GET4[0x3];                                 // 0x5d9(0x3)
+	char                                                         pad0x3_MIIJ7[0x3];                                 // 0x5d9(0x3)
 	struct KnockBackInfo                                         KnockbackParams;                                   // 0x5dc(0x54)
 	class UClass*                                                KnockbackDamageType;                               // 0x638(0x8)
 	float                                                        KnockbackInterval;                                 // 0x640(0x4)
-	char                                                         pad0x4_T7YGC[0x4];                                 // 0x644(0x4)
+	char                                                         pad0x4_IZBZT[0x4];                                 // 0x644(0x4)
 	char                                                         SolidState;                                        // 0x648(0x1)
-	char                                                         pad0x7_AE0V0[0x7];                                 // 0x649(0x7)
+	char                                                         pad0x7_5OPND[0x7];                                 // 0x649(0x7)
 };
 
 

@@ -3,7 +3,7 @@
     "ClassSize": "0x10",
     "Attributes": [
       {
-        "Name": "pad0x8_J0T6B[0x8]",
+        "Name": "pad0x8_QK3DK[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x0"
@@ -16,11 +16,11 @@
       }
     ]
   },
-  "EventTreasuryRoomActive": {
+  "EventTreasuryRoomInactive": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_FV664[0x1]",
+        "Name": "pad0x1_TMONT[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"
@@ -37,7 +37,7 @@
         "Offset": "0x0"
       },
       {
-        "Name": "pad0x7_XY038[0x7]",
+        "Name": "pad0x7_BRM7S[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x1"
@@ -91,7 +91,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_WQ9GK[0x7]",
+        "Name": "pad0x7_QGFMS[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
@@ -102,18 +102,18 @@
     "ClassSize": "0x1c",
     "Attributes": [
       {
-        "Name": "pad0x1c_WPBIF[0x1c]",
+        "Name": "pad0x1c_Y7CGX[0x1c]",
         "Type": "char",
         "Size": "0x1c",
         "Offset": "0x0"
       }
     ]
   },
-  "EventTreasuryRoomInactive": {
+  "EventTreasuryRoomActive": {
     "ClassSize": "0x1",
     "Attributes": [
       {
-        "Name": "pad0x1_RREBH[0x1]",
+        "Name": "pad0x1_LCM92[0x1]",
         "Type": "char",
         "Size": "0x1",
         "Offset": "0x0"

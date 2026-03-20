@@ -6,11 +6,20 @@
 #include "AthenaDebug_Structs.h"
 
 
+// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
+class VideprinterService: public Object
+{
+public:
+	char                                                         pad0x8_ICP1W[0x8];                                 // 0x28(0x8)
+	TArray<class Videprinter*>                                   Videprinters;                                      // 0x30(0x10)
+};
+
+
 // Size 0x138 (Full Size[0x4d8] - InheritedSize[0x3a0]
 class DrawDebugService: public Actor
 {
 public:
-	char                                                         pad0x8_R7HTL[0x8];                                 // 0x3a0(0x8)
+	char                                                         pad0x8_IXNN9[0x8];                                 // 0x3a0(0x8)
 	TArray<struct DrawDebugItemMessage>                          MessagesReplicated;                                // 0x3a8(0x10)
 	TArray<struct DrawDebugItemSphere>                           SpheresReplicated;                                 // 0x3b8(0x10)
 	TArray<struct DrawDebugItemCircle>                           CirclesReplicated;                                 // 0x3c8(0x10)
@@ -21,45 +30,18 @@ public:
 	TArray<struct DrawDebugItemSector>                           SectorsReplicated;                                 // 0x418(0x10)
 	TArray<struct DrawDebugItemString>                           StringsReplicated;                                 // 0x428(0x10)
 	bool                                                         IsDrawDebugActive;                                 // 0x438(0x1)
-	char                                                         pad0x9f_68C7X[0x9f];                               // 0x439(0x9f)
+	char                                                         pad0x9f_LPMBJ[0x9f];                               // 0x439(0x9f)
 };
 
 
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class VideprinterServiceInterface: public Interface
+// Size 0x28 (Full Size[0x3c8] - InheritedSize[0x3a0]
+class Videprinter: public Actor
 {
 public:
-};
-
-
-// Size 0x18 (Full Size[0x40] - InheritedSize[0x28]
-class VideprinterService: public Object
-{
-public:
-	char                                                         pad0x8_YSXM9[0x8];                                 // 0x28(0x8)
-	TArray<class Videprinter*>                                   Videprinters;                                      // 0x30(0x10)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class TickableDebugDrawingServiceInterface: public Interface
-{
-public:
-};
-
-
-// Size 0x80 (Full Size[0x138] - InheritedSize[0xb8]
-class HitchDebugComponent: public ActorComponent
-{
-public:
-	char                                                         pad0x80_39MJM[0x80];                               // 0xb8(0x80)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class DrawDebugServiceInterface: public Interface
-{
-public:
+	TArray<String>                                               OutputRingBuffer;                                  // 0x3a0(0x10)
+	int                                                          AddAt;                                             // 0x3b0(0x4)
+	struct FName                                                 Id;                                                // 0x3b4(0x8)
+	char                                                         pad0xc_J5TZX[0xc];                                 // 0x3bc(0xc)
 };
 
 
@@ -71,14 +53,32 @@ public:
 };
 
 
-// Size 0x28 (Full Size[0x3c8] - InheritedSize[0x3a0]
-class Videprinter: public Actor
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class DrawDebugServiceInterface: public Interface
 {
 public:
-	TArray<String>                                               OutputRingBuffer;                                  // 0x3a0(0x10)
-	int                                                          AddAt;                                             // 0x3b0(0x4)
-	struct FName                                                 Id;                                                // 0x3b4(0x8)
-	char                                                         pad0xc_EXN3J[0xc];                                 // 0x3bc(0xc)
+};
+
+
+// Size 0x80 (Full Size[0x138] - InheritedSize[0xb8]
+class HitchDebugComponent: public ActorComponent
+{
+public:
+	char                                                         pad0x80_8QRQ4[0x80];                               // 0xb8(0x80)
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class VideprinterServiceInterface: public Interface
+{
+public:
+};
+
+
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class TickableDebugDrawingServiceInterface: public Interface
+{
+public:
 };
 
 

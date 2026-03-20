@@ -7,15 +7,15 @@
 struct ReplicatedDateTime
 {
 public:
-	char                                                         pad0x8_R0CZB[0x8];                                 // 0x0(0x8)
+	char                                                         pad0x8_UNH2O[0x8];                                 // 0x0(0x8)
 };
 
 
 // Size 0x8
-struct GameTime
+struct ReplicatedTimespan
 {
 public:
-	struct DateTime                                              DateTimeRepresentation;                            // 0x0(0x8)
+	char                                                         pad0x8_NZM0Z[0x8];                                 // 0x0(0x8)
 };
 
 
@@ -35,24 +35,15 @@ public:
 struct EventTimeServiceMigrated
 {
 public:
-	char                                                         pad0x1_P25L6[0x1];                                 // 0x0(0x1)
+	char                                                         pad0x1_I1OYT[0x1];                                 // 0x0(0x1)
 };
 
 
 // Size 0x8
-struct ReplicatedTimespan
+struct GameTime
 {
 public:
-	char                                                         pad0x8_ZF2P0[0x8];                                 // 0x0(0x8)
-};
-
-
-// Size 0x10
-struct GameTimeRange
-{
-public:
-	struct GameTime                                              Start;                                             // 0x0(0x8)
-	struct GameTime                                              End;                                               // 0x8(0x8)
+	struct DateTime                                              DateTimeRepresentation;                            // 0x0(0x8)
 };
 
 
@@ -62,6 +53,15 @@ struct ReplicatedAuthoritativeTime
 public:
 	struct ReplicatedDateTime                                    WorldTime;                                         // 0x0(0x8)
 	struct ReplicatedDateTime                                    SyncTime;                                          // 0x8(0x8)
+};
+
+
+// Size 0x10
+struct GameTimeRange
+{
+public:
+	struct GameTime                                              Start;                                             // 0x0(0x8)
+	struct GameTime                                              End;                                               // 0x8(0x8)
 };
 
 

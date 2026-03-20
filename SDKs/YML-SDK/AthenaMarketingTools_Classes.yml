@@ -22,7 +22,7 @@ CinematicCameraSpotLight:
     Offset: '0x430'
     Size: '0x4'
     Type: int
-  - Name: pad0x4_447GI[0x4]
+  - Name: pad0x4_H7MQE[0x4]
     Offset: '0x434'
     Size: '0x4'
     Type: char

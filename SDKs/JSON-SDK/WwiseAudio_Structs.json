@@ -1,29 +1,117 @@
 {
-  "WwiseExternalSource": {
-    "ClassSize": "0x10",
+  "WwiseNativeEmitterPoolDensityParams": {
+    "ClassSize": "0x28",
     "Attributes": [
       {
-        "Name": "path",
-        "Type": "struct FString",
-        "Size": "0x10",
+        "Name": "PlayPoolDensityAudio",
+        "Type": "bool",
+        "Size": "0x1",
         "Offset": "0x0"
+      },
+      {
+        "Name": "pad0x7_P1Q4U[0x7]",
+        "Type": "char",
+        "Size": "0x7",
+        "Offset": "0x1"
+      },
+      {
+        "Name": "PoolDensityAudioPlayEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "PoolDensityAudioStopEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "DensityRtpcName",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "FullDensityAmount",
+        "Type": "int",
+        "Size": "0x4",
+        "Offset": "0x20"
+      },
+      {
+        "Name": "DensityDistance",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x24"
       }
     ]
   },
-  "MovieSceneAkAudioRTPCTemplate": {
+  "MovieSceneAkAudioEventTemplate": {
     "ClassSize": "0x20",
     "Attributes": [
       {
-        "Name": "pad0x18_VB6SV[0x18]",
+        "Name": "pad0x18_ONN09[0x18]",
         "Type": "char",
         "Size": "0x18",
         "Offset": "0x0"
       },
       {
         "Name": "Section",
-        "Type": "class MovieSceneAkAudioRTPCSection*",
+        "Type": "class MovieSceneAkAudioEventSection*",
         "Size": "0x8",
         "Offset": "0x18"
+      }
+    ]
+  },
+  "WwiseAudioAcousticSurfaceParams": {
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "Thickness",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Reflectivity",
+        "Type": "float",
+        "Size": "0x4",
+        "Offset": "0x4"
+      }
+    ]
+  },
+  "MultiEmitterData": {
+    "ClassSize": "0x28",
+    "Attributes": [
+      {
+        "Name": "PoolWrapper",
+        "Type": "class WwiseObjectPoolWrapper*",
+        "Size": "0x8",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "PlayEvent",
+        "Type": "class WwiseEvent*",
+        "Size": "0x8",
+        "Offset": "0x8"
+      },
+      {
+        "Name": "Name",
+        "Type": "struct FName",
+        "Size": "0x8",
+        "Offset": "0x10"
+      },
+      {
+        "Name": "Offset",
+        "Type": "struct Vector",
+        "Size": "0xc",
+        "Offset": "0x18"
+      },
+      {
+        "Name": "pad0x4_XOP14[0x4]",
+        "Type": "char",
+        "Size": "0x4",
+        "Offset": "0x24"
       }
     ]
   },
@@ -62,40 +150,6 @@
       }
     ]
   },
-  "WwiseEmitterParams": {
-    "ClassSize": "0x2",
-    "Attributes": [
-      {
-        "Name": "bEnableObstructionAndOcclusion",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "bEnableAccoustics",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x1"
-      }
-    ]
-  },
-  "MovieSceneAkAudioEventTemplate": {
-    "ClassSize": "0x20",
-    "Attributes": [
-      {
-        "Name": "pad0x18_0SAC3[0x18]",
-        "Type": "char",
-        "Size": "0x18",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Section",
-        "Type": "class MovieSceneAkAudioEventSection*",
-        "Size": "0x8",
-        "Offset": "0x18"
-      }
-    ]
-  },
   "MovieSceneAkAudioRTPCSectionData": {
     "ClassSize": "0x88",
     "Attributes": [
@@ -113,105 +167,6 @@
       }
     ]
   },
-  "WwiseAudioAcousticSurfaceParams": {
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "Thickness",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "Reflectivity",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x4"
-      }
-    ]
-  },
-  "WwiseNativeEmitterPoolDensityParams": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "PlayPoolDensityAudio",
-        "Type": "bool",
-        "Size": "0x1",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "pad0x7_9UP5E[0x7]",
-        "Type": "char",
-        "Size": "0x7",
-        "Offset": "0x1"
-      },
-      {
-        "Name": "PoolDensityAudioPlayEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "PoolDensityAudioStopEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "DensityRtpcName",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "FullDensityAmount",
-        "Type": "int",
-        "Size": "0x4",
-        "Offset": "0x20"
-      },
-      {
-        "Name": "DensityDistance",
-        "Type": "float",
-        "Size": "0x4",
-        "Offset": "0x24"
-      }
-    ]
-  },
-  "MultiEmitterData": {
-    "ClassSize": "0x28",
-    "Attributes": [
-      {
-        "Name": "PoolWrapper",
-        "Type": "class WwiseObjectPoolWrapper*",
-        "Size": "0x8",
-        "Offset": "0x0"
-      },
-      {
-        "Name": "PlayEvent",
-        "Type": "class WwiseEvent*",
-        "Size": "0x8",
-        "Offset": "0x8"
-      },
-      {
-        "Name": "Name",
-        "Type": "struct FName",
-        "Size": "0x8",
-        "Offset": "0x10"
-      },
-      {
-        "Name": "Offset",
-        "Type": "struct Vector",
-        "Size": "0xc",
-        "Offset": "0x18"
-      },
-      {
-        "Name": "pad0x4_BE0XW[0x4]",
-        "Type": "char",
-        "Size": "0x4",
-        "Offset": "0x24"
-      }
-    ]
-  },
   "WwiseSubtitle": {
     "ClassSize": "0x10",
     "Attributes": [
@@ -220,6 +175,51 @@
         "Type": "struct FString",
         "Size": "0x10",
         "Offset": "0x0"
+      }
+    ]
+  },
+  "MovieSceneAkAudioRTPCTemplate": {
+    "ClassSize": "0x20",
+    "Attributes": [
+      {
+        "Name": "pad0x18_713NA[0x18]",
+        "Type": "char",
+        "Size": "0x18",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "Section",
+        "Type": "class MovieSceneAkAudioRTPCSection*",
+        "Size": "0x8",
+        "Offset": "0x18"
+      }
+    ]
+  },
+  "WwiseExternalSource": {
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "path",
+        "Type": "struct FString",
+        "Size": "0x10",
+        "Offset": "0x0"
+      }
+    ]
+  },
+  "WwiseEmitterParams": {
+    "ClassSize": "0x2",
+    "Attributes": [
+      {
+        "Name": "bEnableObstructionAndOcclusion",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x0"
+      },
+      {
+        "Name": "bEnableAccoustics",
+        "Type": "bool",
+        "Size": "0x1",
+        "Offset": "0x1"
       }
     ]
   },

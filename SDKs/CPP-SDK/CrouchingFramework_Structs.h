@@ -11,14 +11,6 @@ public:
 };
 
 
-// Size 0x1
-struct OnEndCrouchEvent
-{
-public:
-	char                                                         pad0x1_WXRTF[0x1];                                 // 0x0(0x1)
-};
-
-
 // Size 0x10
 struct CrouchTransitionTelemetry
 {
@@ -27,11 +19,11 @@ public:
 };
 
 
-// Size 0x48
-struct CrouchActionStateConstructionInfo
+// Size 0x1
+struct OnStartCrouchEvent
 {
 public:
-	char                                                         pad0x48_JP93N[0x48];                               // 0x0(0x48)
+	char                                                         pad0x1_E2I33[0x1];                                 // 0x0(0x1)
 };
 
 
@@ -44,23 +36,7 @@ public:
 	struct FString                                               NearestIsland;                                     // 0x18(0x10)
 	struct Guid                                                  CrouchingId;                                       // 0x28(0x10)
 	bool                                                         IsCrouching;                                       // 0x38(0x1)
-	char                                                         pad0x7_LUNVO[0x7];                                 // 0x39(0x7)
-};
-
-
-// Size 0x1
-struct OnStartCrouchEvent
-{
-public:
-	char                                                         pad0x1_KFEH7[0x1];                                 // 0x0(0x1)
-};
-
-
-// Size 0x8
-struct OnEndCrouchAudioEvent
-{
-public:
-	class WwiseEvent*                                            CrouchEnd;                                         // 0x0(0x8)
+	char                                                         pad0x7_AFT33[0x7];                                 // 0x39(0x7)
 };
 
 
@@ -69,6 +45,30 @@ struct CrouchToastEvent
 {
 public:
 	bool                                                         IsCrouching;                                       // 0x0(0x1)
+};
+
+
+// Size 0x48
+struct CrouchActionStateConstructionInfo
+{
+public:
+	char                                                         pad0x48_9DDKM[0x48];                               // 0x0(0x48)
+};
+
+
+// Size 0x1
+struct OnEndCrouchEvent
+{
+public:
+	char                                                         pad0x1_JYPUO[0x1];                                 // 0x0(0x1)
+};
+
+
+// Size 0x8
+struct OnEndCrouchAudioEvent
+{
+public:
+	class WwiseEvent*                                            CrouchEnd;                                         // 0x0(0x8)
 };
 
 

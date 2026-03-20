@@ -6,6 +6,14 @@
 #include "NavalBattle_Structs.h"
 
 
+// Size 0x100 (Full Size[0x4a0] - InheritedSize[0x3a0]
+class NavalBattleService: public Actor
+{
+public:
+	char                                                         pad0x100_GR1GG[0x100];                             // 0x3a0(0x100)
+};
+
+
 // Size 0x10 (Full Size[0x38] - InheritedSize[0x28]
 class NavalBattleServiceParamsDataAsset: public DataAsset
 {
@@ -14,14 +22,6 @@ public:
 	float                                                        CombatTime;                                        // 0x2c(0x4)
 	float                                                        SinkTime;                                          // 0x30(0x4)
 	int                                                          NumberOfSinksToInitiateMigration;                  // 0x34(0x4)
-};
-
-
-// Size 0x100 (Full Size[0x4a0] - InheritedSize[0x3a0]
-class NavalBattleService: public Actor
-{
-public:
-	char                                                         pad0x100_ARJV4[0x100];                             // 0x3a0(0x100)
 };
 
 

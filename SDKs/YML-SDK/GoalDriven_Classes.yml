@@ -2,17 +2,17 @@
 # https://github.com/DougTheDruid
 GoalDrivenAIController:
   Attributes:
-  - Name: pad0xd0_GZSLI[0xd0]
+  - Name: pad0xc8_OMRKR[0xc8]
     Offset: '0x490'
-    Size: '0xd0'
+    Size: '0xc8'
     Type: char
-  ClassSize: '0xd0'
-  FullSize: '0x560'
+  ClassSize: '0xc8'
+  FullSize: '0x558'
   InheritedSize: '0x490'
   Super: AIController
 GoalDrivenCharacter:
   Attributes:
-  - Name: pad0x10_X1Z4H[0x10]
+  - Name: pad0x10_CNE18[0x10]
     Offset: '0x5d0'
     Size: '0x10'
     Type: char
@@ -22,7 +22,7 @@ GoalDrivenCharacter:
   Super: CharacterWithActionStateMachine
 GoalDrivenCharacterAggregationComponent:
   Attributes:
-  - Name: pad0x30_O9ZCB[0x30]
+  - Name: pad0x30_YC1B3[0x30]
     Offset: '0xb8'
     Size: '0x30'
     Type: char
@@ -44,7 +44,7 @@ GoalDrivenCharacterDockingPolicyDefinition:
   Super: DockingPolicyDefinition
 GoalDrivenCharacterMovementComponent:
   Attributes:
-  - Name: pad0x10_8V7ZV[0x10]
+  - Name: pad0x10_WJ4HN[0x10]
     Offset: '0x580'
     Size: '0x10'
     Type: char
@@ -52,7 +52,7 @@ GoalDrivenCharacterMovementComponent:
     Offset: '0x590'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_6NXIE[0x3]
+  - Name: pad0x3_EFZFA[0x3]
     Offset: '0x591'
     Size: '0x3'
     Type: char
@@ -68,7 +68,7 @@ GoalDrivenCharacterMovementComponent:
     Offset: '0x59c'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_26DC6[0x3]
+  - Name: pad0x3_PBF2O[0x3]
     Offset: '0x59d'
     Size: '0x3'
     Type: char
@@ -96,7 +96,7 @@ GoalDrivenCharacterMovementComponent:
     Offset: '0x5b4'
     Size: '0x4'
     Type: float
-  - Name: pad0x38_3NH9M[0x38]
+  - Name: pad0x38_SXQ3Y[0x38]
     Offset: '0x5b8'
     Size: '0x38'
     Type: char
@@ -120,7 +120,7 @@ GoalDrivenPathFollowingComponent:
     Offset: '0x2ac'
     Size: '0x4'
     Type: float
-  - Name: pad0x8_3IOLI[0x8]
+  - Name: pad0x8_7HHCP[0x8]
     Offset: '0x2b0'
     Size: '0x8'
     Type: char

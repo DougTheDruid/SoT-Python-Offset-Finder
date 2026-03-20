@@ -6,6 +6,13 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "MovieSceneCaptureInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "MovieSceneCapture": {
     "Super": "Object",
     "FullSize": "0x1e0",
@@ -13,7 +20,7 @@
     "ClassSize": "0x1b8",
     "Attributes": [
       {
-        "Name": "pad0x10_KIXND[0x10]",
+        "Name": "pad0x10_NPF3G[0x10]",
         "Type": "char",
         "Size": "0x10",
         "Offset": "0x28"
@@ -49,7 +56,7 @@
         "Offset": "0x99"
       },
       {
-        "Name": "pad0x6_XCB3W[0x6]",
+        "Name": "pad0x6_W1IFY[0x6]",
         "Type": "char",
         "Size": "0x6",
         "Offset": "0x9a"
@@ -67,7 +74,7 @@
         "Offset": "0xb0"
       },
       {
-        "Name": "pad0x120_9IRWU[0x120]",
+        "Name": "pad0x120_S81UQ[0x120]",
         "Type": "char",
         "Size": "0x120",
         "Offset": "0xc0"
@@ -76,27 +83,6 @@
   },
   "MovieSceneCaptureProtocolSettings": {
     "Super": "Object",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "MovieSceneCaptureInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "AutomatedLevelSequenceCapture": {
-    "Super": "MovieSceneCapture",
-    "FullSize": "0x1e0",
-    "InheritedSize": "0x1e0",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "BmpImageCaptureSettings": {
-    "Super": "MovieSceneCaptureProtocolSettings",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
@@ -121,7 +107,7 @@
         "Offset": "0x38"
       },
       {
-        "Name": "pad0x3_LY16A[0x3]",
+        "Name": "pad0x3_Z3WK1[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x39"
@@ -139,7 +125,7 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_DATBK[0x7]",
+        "Name": "pad0x7_7PVKI[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
@@ -149,6 +135,34 @@
         "Type": "struct StringAssetReference",
         "Size": "0x10",
         "Offset": "0x48"
+      }
+    ]
+  },
+  "AutomatedLevelSequenceCapture": {
+    "Super": "MovieSceneCapture",
+    "FullSize": "0x1e0",
+    "InheritedSize": "0x1e0",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BmpImageCaptureSettings": {
+    "Super": "MovieSceneCaptureProtocolSettings",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "FrameGrabberProtocolSettings": {
+    "Super": "MovieSceneCaptureProtocolSettings",
+    "FullSize": "0x30",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x8",
+    "Attributes": [
+      {
+        "Name": "pad0x8_K6WNP[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0x28"
       }
     ]
   },
@@ -165,7 +179,7 @@
         "Offset": "0x1e0"
       },
       {
-        "Name": "pad0xb_M6DJK[0xb]",
+        "Name": "pad0xb_HSE82[0xb]",
         "Type": "char",
         "Size": "0xb",
         "Offset": "0x1e1"
@@ -177,24 +191,10 @@
         "Offset": "0x1ec"
       },
       {
-        "Name": "pad0x4_3NONM[0x4]",
+        "Name": "pad0x4_29OWD[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x1fc"
-      }
-    ]
-  },
-  "FrameGrabberProtocolSettings": {
-    "Super": "MovieSceneCaptureProtocolSettings",
-    "FullSize": "0x30",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x8",
-    "Attributes": [
-      {
-        "Name": "pad0x8_15BD3[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0x28"
       }
     ]
   },
@@ -211,7 +211,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x4_SGP1C[0x4]",
+        "Name": "pad0x4_UG05Z[0x4]",
         "Type": "char",
         "Size": "0x4",
         "Offset": "0x34"
@@ -231,7 +231,7 @@
         "Offset": "0x30"
       },
       {
-        "Name": "pad0x3_819SP[0x3]",
+        "Name": "pad0x3_AK1XM[0x3]",
         "Type": "char",
         "Size": "0x3",
         "Offset": "0x31"

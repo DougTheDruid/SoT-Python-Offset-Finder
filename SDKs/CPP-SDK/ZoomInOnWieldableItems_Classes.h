@@ -6,11 +6,18 @@
 #include "ZoomInOnWieldableItems_Structs.h"
 
 
+// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
+class ZoomedInOnWieldableItemActionStateId: public ActionStateId
+{
+public:
+};
+
+
 // Size 0x68 (Full Size[0x120] - InheritedSize[0xb8]
 class ZoomInOnWieldableItemComponent: public ActorComponent
 {
 public:
-	char                                                         pad0x8_IRIXX[0x8];                                 // 0xb8(0x8)
+	char                                                         pad0x8_FK6S3[0x8];                                 // 0xb8(0x8)
 	struct FName                                                 FeatureName;                                       // 0xc0(0x8)
 	float                                                        ZoomedInFov;                                       // 0xc8(0x4)
 	float                                                        FreelookPitch;                                     // 0xcc(0x4)
@@ -18,14 +25,7 @@ public:
 	float                                                        FreelookOutInterpolationRate;                      // 0xd4(0x4)
 	float                                                        LookSensitivityScaler;                             // 0xd8(0x4)
 	float                                                        MaxClampedFOV;                                     // 0xdc(0x4)
-	char                                                         pad0x40_43LU9[0x40];                               // 0xe0(0x40)
-};
-
-
-// Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class ZoomedInOnWieldableItemActionStateId: public ActionStateId
-{
-public:
+	char                                                         pad0x40_1UHB4[0x40];                               // 0xe0(0x40)
 };
 
 

@@ -6,7 +6,7 @@ EventAffectedByExplosion:
     Offset: '0x0'
     Size: '0x8'
     Type: class UClass*
-  - Name: pad0x10_KRW3P[0x10]
+  - Name: pad0x10_9C7W2[0x10]
     Offset: '0x8'
     Size: '0x10'
     Type: char
@@ -38,7 +38,7 @@ EventOnExploded:
     Offset: '0x0'
     Size: '0x8'
     Type: class Actor*
-  - Name: pad0x10_M2Q0W[0x10]
+  - Name: pad0x10_5R8C4[0x10]
     Offset: '0x8'
     Size: '0x10'
     Type: char
@@ -51,3 +51,18 @@ EventOnExploded:
     Size: '0x8'
     Type: class Actor*
   ClassSize: '0x28'
+ExplosionDamagedActorStatRule:
+  Attributes:
+  - Name: PlayerStat
+    Offset: '0x0'
+    Size: '0x4'
+    Type: struct PlayerStat
+  - Name: pad0x4_ZCEFZ[0x4]
+    Offset: '0x4'
+    Size: '0x4'
+    Type: char
+  - Name: TargetActorClasses
+    Offset: '0x8'
+    Size: '0x10'
+    Type: TArray<Class>
+  ClassSize: '0x18'

@@ -1,4 +1,30 @@
 {
+  "BoneCallerService": {
+    "Super": "Actor",
+    "FullSize": "0x7b0",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0x410",
+    "Attributes": [
+      {
+        "Name": "pad0x398_ZGS6A[0x398]",
+        "Type": "char",
+        "Size": "0x398",
+        "Offset": "0x3a0"
+      },
+      {
+        "Name": "ServiceParams",
+        "Type": "class BoneCallerServiceParams*",
+        "Size": "0x8",
+        "Offset": "0x738"
+      },
+      {
+        "Name": "pad0x70_FV3AZ[0x70]",
+        "Type": "char",
+        "Size": "0x70",
+        "Offset": "0x740"
+      }
+    ]
+  },
   "BoneCallerServiceParams": {
     "Super": "DataAsset",
     "FullSize": "0x48",
@@ -24,10 +50,69 @@
         "Offset": "0x40"
       },
       {
-        "Name": "pad0x7_XKDN0[0x7]",
+        "Name": "pad0x7_GW26I[0x7]",
         "Type": "char",
         "Size": "0x7",
         "Offset": "0x41"
+      }
+    ]
+  },
+  "BoneCallerServiceInterface": {
+    "Super": "Interface",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "BoneCallerOwnershipComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0x128",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x70",
+    "Attributes": [
+      {
+        "Name": "pad0x8_BDXBP[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "OwningCrewID",
+        "Type": "struct Guid",
+        "Size": "0x10",
+        "Offset": "0xc0"
+      },
+      {
+        "Name": "pad0x58_UZ721[0x58]",
+        "Type": "char",
+        "Size": "0x58",
+        "Offset": "0xd0"
+      }
+    ]
+  },
+  "BoneCallerCannonProjectile": {
+    "Super": "CannonProjectile",
+    "FullSize": "0x7c0",
+    "InheritedSize": "0x730",
+    "ClassSize": "0x90",
+    "Attributes": [
+      {
+        "Name": "BoneCallerSpawnId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x730"
+      },
+      {
+        "Name": "FiredFromReapersTributeShipBoneCallerSpawnId",
+        "Type": "class UClass*",
+        "Size": "0x8",
+        "Offset": "0x738"
+      },
+      {
+        "Name": "pad0x80_KYC08[0x80]",
+        "Type": "char",
+        "Size": "0x80",
+        "Offset": "0x740"
       }
     ]
   },
@@ -51,91 +136,6 @@
       }
     ]
   },
-  "BoneCallerCannonProjectile": {
-    "Super": "CannonProjectile",
-    "FullSize": "0x7c8",
-    "InheritedSize": "0x738",
-    "ClassSize": "0x90",
-    "Attributes": [
-      {
-        "Name": "BoneCallerSpawnId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x738"
-      },
-      {
-        "Name": "FiredFromReapersTributeShipBoneCallerSpawnId",
-        "Type": "class UClass*",
-        "Size": "0x8",
-        "Offset": "0x740"
-      },
-      {
-        "Name": "pad0x80_0XZ0T[0x80]",
-        "Type": "char",
-        "Size": "0x80",
-        "Offset": "0x748"
-      }
-    ]
-  },
-  "BoneCallerOwnershipComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0x128",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x70",
-    "Attributes": [
-      {
-        "Name": "pad0x8_RIQ26[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "OwningCrewID",
-        "Type": "struct Guid",
-        "Size": "0x10",
-        "Offset": "0xc0"
-      },
-      {
-        "Name": "pad0x58_DUN2K[0x58]",
-        "Type": "char",
-        "Size": "0x58",
-        "Offset": "0xd0"
-      }
-    ]
-  },
-  "BoneCallerService": {
-    "Super": "Actor",
-    "FullSize": "0x7b0",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0x410",
-    "Attributes": [
-      {
-        "Name": "pad0x398_DAOP5[0x398]",
-        "Type": "char",
-        "Size": "0x398",
-        "Offset": "0x3a0"
-      },
-      {
-        "Name": "ServiceParams",
-        "Type": "class BoneCallerServiceParams*",
-        "Size": "0x8",
-        "Offset": "0x738"
-      },
-      {
-        "Name": "pad0x70_R1GEZ[0x70]",
-        "Type": "char",
-        "Size": "0x70",
-        "Offset": "0x740"
-      }
-    ]
-  },
-  "BoneCallerServiceInterface": {
-    "Super": "Interface",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
   "BoneCallerSpawnId": {
     "Super": "Object",
     "FullSize": "0x28",
@@ -143,14 +143,7 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "DefaultBoneCallerSpawnId": {
-    "Super": "BoneCallerSpawnId",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
-  },
-  "ElectricOceanCrawlerMediumBoneCallerSpawnId": {
+  "AshenBoneCallerSpawnId": {
     "Super": "BoneCallerSpawnId",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
@@ -164,14 +157,21 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "ShadowBoneCallerSpawnId": {
+  "ElectricOceanCrawlerMediumBoneCallerSpawnId": {
     "Super": "BoneCallerSpawnId",
     "FullSize": "0x28",
     "InheritedSize": "0x28",
     "ClassSize": "0x0",
     "Attributes": []
   },
-  "AshenBoneCallerSpawnId": {
+  "DefaultBoneCallerSpawnId": {
+    "Super": "BoneCallerSpawnId",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
+  "ShadowBoneCallerSpawnId": {
     "Super": "BoneCallerSpawnId",
     "FullSize": "0x28",
     "InheritedSize": "0x28",

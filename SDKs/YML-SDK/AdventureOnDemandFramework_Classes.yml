@@ -18,13 +18,13 @@ AdventureOnDemandAreCrewNearQuestTargetStepDesc:
   Super: TaleQuestStepDesc
 AdventureOnDemandArrivalTunnelDependencies:
   Attributes:
-  - Name: pad0x20_MG4Z9[0x20]
-    Offset: '0xd8'
+  - Name: pad0x20_81M82[0x20]
+    Offset: '0xe8'
     Size: '0x20'
     Type: char
   ClassSize: '0x20'
-  FullSize: '0xf8'
-  InheritedSize: '0xd8'
+  FullSize: '0x108'
+  InheritedSize: '0xe8'
   Super: ArrivalTunnelDependencies
 AdventureOnDemandArrivalTunnelDesc:
   Attributes:
@@ -32,7 +32,7 @@ AdventureOnDemandArrivalTunnelDesc:
     Offset: '0xa0'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_YYGOV[0x4]
+  - Name: pad0x4_E5RJ2[0x4]
     Offset: '0xac'
     Size: '0x4'
     Type: char
@@ -48,7 +48,7 @@ AdventureOnDemandArrivalTunnelDesc:
     Offset: '0xc0'
     Size: '0x1'
     Type: bool
-  - Name: pad0x3_N42U5[0x3]
+  - Name: pad0x3_Z04VZ[0x3]
     Offset: '0xc1'
     Size: '0x3'
     Type: char
@@ -62,25 +62,25 @@ AdventureOnDemandArrivalTunnelDesc:
   Super: ClientDestinationPreLoadingArrivalTunnelDesc
 AdventureOnDemandArrivalTunnelOfTheDamned:
   Attributes:
-  - Name: pad0x20_JT6WJ[0x20]
-    Offset: '0x680'
+  - Name: pad0x20_U72F8[0x20]
+    Offset: '0x690'
     Size: '0x20'
     Type: char
   - Name: AdventureOnDemandArrivalTunnelDesc
-    Offset: '0x6a0'
+    Offset: '0x6b0'
     Size: '0x8'
     Type: class AdventureOnDemandArrivalTunnelDesc*
   - Name: ArrivalLocationWorker
-    Offset: '0x6a8'
+    Offset: '0x6b8'
     Size: '0x8'
     Type: class AdventureOnDemandArrivalTunnelWorkerBase*
-  - Name: pad0x20_MDZRS[0x20]
-    Offset: '0x6b0'
+  - Name: pad0x20_N0NGQ[0x20]
+    Offset: '0x6c0'
     Size: '0x20'
     Type: char
   ClassSize: '0x50'
-  FullSize: '0x6d0'
-  InheritedSize: '0x680'
+  FullSize: '0x6e0'
+  InheritedSize: '0x690'
   Super: ClientDestinationPreLoadingArrivalTunnelOfTheDamned
 AdventureOnDemandArrivalTunnelWorkerBase:
   Attributes:
@@ -94,13 +94,13 @@ AdventureOnDemandArrivalTunnelWorkerBase:
   Super: Object
 AdventureOnDemandDepartureTunnelDependencies:
   Attributes:
-  - Name: pad0x10_G9Y5Y[0x10]
-    Offset: '0x138'
+  - Name: pad0x10_PY8KE[0x10]
+    Offset: '0x148'
     Size: '0x10'
     Type: char
   ClassSize: '0x10'
-  FullSize: '0x148'
-  InheritedSize: '0x138'
+  FullSize: '0x158'
+  InheritedSize: '0x148'
   Super: DepartureTunnelDependencies
 AdventureOnDemandDepartureTunnelDesc:
   Attributes:
@@ -123,16 +123,16 @@ AdventureOnDemandDepartureTunnelDesc:
 AdventureOnDemandDepartureTunnelOfTheDamned:
   Attributes:
   - Name: AdventureOnDemandDepartureTunnelDesc
-    Offset: '0x890'
+    Offset: '0x8a0'
     Size: '0x8'
     Type: class AdventureOnDemandDepartureTunnelDesc*
-  - Name: pad0x38_A20SF[0x38]
-    Offset: '0x898'
+  - Name: pad0x38_97MO4[0x38]
+    Offset: '0x8a8'
     Size: '0x38'
     Type: char
   ClassSize: '0x40'
-  FullSize: '0x8d0'
-  InheritedSize: '0x890'
+  FullSize: '0x8e0'
+  InheritedSize: '0x8a0'
   Super: DepartureTunnelOfTheDamned
 AdventureOnDemandDiscoveryPageMysteryDataAsset:
   Attributes:
@@ -176,7 +176,7 @@ AdventureOnDemandForceIslandBannerStepDesc:
     Offset: '0x80'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_6M0XY[0x7]
+  - Name: pad0x7_7HMVX[0x7]
     Offset: '0x81'
     Size: '0x7'
     Type: char
@@ -244,7 +244,7 @@ AdventureOnDemandServiceParams:
     Offset: '0x50'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_J2SJ8[0x4]
+  - Name: pad0x4_I0EDF[0x4]
     Offset: '0x54'
     Size: '0x4'
     Type: char
@@ -304,7 +304,7 @@ AdventureOnDemandSetHintPopUpStepDesc:
     Offset: '0x80'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_UL7Q5[0x7]
+  - Name: pad0x7_CIAS5[0x7]
     Offset: '0x81'
     Size: '0x7'
     Type: char
@@ -376,7 +376,7 @@ AdventureOnDemandSuppressIslandBannerStepDesc:
     Offset: '0x80'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_J0ZE4[0x7]
+  - Name: pad0x7_I2J0A[0x7]
     Offset: '0x81'
     Size: '0x7'
     Type: char
@@ -400,7 +400,7 @@ AdventureOnDemandTallTaleCategoryDataAsset:
     Offset: '0x30'
     Size: '0x1'
     Type: byte
-  - Name: pad0x7_MH7WO[0x7]
+  - Name: pad0x7_LNRWR[0x7]
     Offset: '0x31'
     Size: '0x7'
     Type: char
@@ -458,7 +458,7 @@ AdventureOnDemandVoyageSelectionCompanyDataAsset:
     Offset: '0x40'
     Size: '0xc'
     Type: struct FeatureFlag
-  - Name: pad0x4_HPVHZ[0x4]
+  - Name: pad0x4_BEFPF[0x4]
     Offset: '0x4c'
     Size: '0x4'
     Type: char
@@ -504,7 +504,7 @@ AdventureOnDemandYieldQuestResumeOnConditionsStepDesc:
   Super: TaleQuestStepDesc
 AdventureOnDemandYieldQuestResumeOnConditionsTaleStep:
   Attributes:
-  - Name: pad0x18_WR3O1[0x18]
+  - Name: pad0x18_FT6RG[0x18]
     Offset: '0x98'
     Size: '0x18'
     Type: char
@@ -518,7 +518,7 @@ FriendsInCrewPrerequisite:
     Offset: '0x90'
     Size: '0x1'
     Type: byte
-  - Name: pad0x3f_HH3HU[0x3f]
+  - Name: pad0x3f_LU417[0x3f]
     Offset: '0x91'
     Size: '0x3f'
     Type: char
@@ -529,12 +529,12 @@ FriendsInCrewPrerequisite:
 GameEventOnDemandDepartureTunnelDependencies:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x148'
-  InheritedSize: '0x148'
+  FullSize: '0x158'
+  InheritedSize: '0x158'
   Super: AdventureOnDemandDepartureTunnelDependencies
 GameEventOnDemandDepartureTunnelDesc:
   Attributes:
-  - Name: pad0x20_627HM[0x20]
+  - Name: pad0x20_NLOI7[0x20]
     Offset: '0x138'
     Size: '0x20'
     Type: char
@@ -545,12 +545,12 @@ GameEventOnDemandDepartureTunnelDesc:
 GameEventOnDemandDepartureTunnelOfTheDamned:
   Attributes:
   - Name: GameEventOnDemandDepartureTunnelDesc
-    Offset: '0x8c8'
+    Offset: '0x8d8'
     Size: '0x8'
     Type: class GameEventOnDemandDepartureTunnelDesc*
   ClassSize: '0x0'
-  FullSize: '0x8d0'
-  InheritedSize: '0x8d0'
+  FullSize: '0x8e0'
+  InheritedSize: '0x8e0'
   Super: AdventureOnDemandDepartureTunnelOfTheDamned
 GameEventsOnDemandBannerDataAsset:
   Attributes:
@@ -681,8 +681,8 @@ VoyageOnDemandArrivalTunnelWorker:
 VoyageOnDemandDepartureTunnelDependencies:
   Attributes: []
   ClassSize: '0x0'
-  FullSize: '0x148'
-  InheritedSize: '0x148'
+  FullSize: '0x158'
+  InheritedSize: '0x158'
   Super: AdventureOnDemandDepartureTunnelDependencies
 VoyageOnDemandDepartureTunnelDesc:
   Attributes: []
@@ -693,12 +693,12 @@ VoyageOnDemandDepartureTunnelDesc:
 VoyageOnDemandDepartureTunnelOfTheDamned:
   Attributes:
   - Name: VoyageOnDemandDepartureTunnelDesc
-    Offset: '0x8c8'
+    Offset: '0x8d8'
     Size: '0x8'
     Type: class VoyageOnDemandDepartureTunnelDesc*
   ClassSize: '0x0'
-  FullSize: '0x8d0'
-  InheritedSize: '0x8d0'
+  FullSize: '0x8e0'
+  InheritedSize: '0x8e0'
   Super: AdventureOnDemandDepartureTunnelOfTheDamned
 WantsToDivePrerequisite:
   Attributes: []

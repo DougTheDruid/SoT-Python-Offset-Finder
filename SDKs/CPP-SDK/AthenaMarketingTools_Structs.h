@@ -17,7 +17,7 @@ public:
 	int                                                          RepUpdateCounter;                                  // 0x38(0x4)
 	bool                                                         Enabled;                                           // 0x3c(0x1)
 	bool                                                         CastShadows;                                       // 0x3d(0x1)
-	char                                                         pad0x2_X4S3A[0x2];                                 // 0x3e(0x2)
+	char                                                         pad0x2_PG55W[0x2];                                 // 0x3e(0x2)
 };
 
 
@@ -25,7 +25,7 @@ public:
 struct UpdateCinematicSpotLightParamsRpc
 {
 public:
-	char                                                         pad0x18_0XINI[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_5LRRS[0x18];                               // 0x0(0x18)
 	class CinematicCameraSpotLight*                              LightActor;                                        // 0x18(0x8)
 	struct CinematicCameraReplicatedSpotLightParams              LightParams;                                       // 0x20(0x40)
 };

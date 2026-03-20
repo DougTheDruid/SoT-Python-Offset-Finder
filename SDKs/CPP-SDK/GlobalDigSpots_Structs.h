@@ -4,18 +4,6 @@
 // https://github.com/DougTheDruid
 
 // Size 0x30
-struct GlobalDigSpotDefinition
-{
-public:
-	struct StoryFlag                                             Story;                                             // 0x0(0x8)
-	class VoyageDescDataAsset*                                   VoyageDesc;                                        // 0x8(0x8)
-	struct StringAssetReference                                  ActorWithNamedPointComponent;                      // 0x10(0x10)
-	struct FName                                                 NamedPoint;                                        // 0x20(0x8)
-	class TaleQuestWeightedItemDescSpawnDataAsset*               Rewards;                                           // 0x28(0x8)
-};
-
-
-// Size 0x30
 struct GlobalDigSpotStatusUpdateTelemetryEvent
 {
 public:
@@ -29,8 +17,20 @@ public:
 struct GlobalDigSpotPopupEvent
 {
 public:
-	char                                                         pad0x18_N9WPG[0x18];                               // 0x0(0x18)
+	char                                                         pad0x18_LZ94S[0x18];                               // 0x0(0x18)
 	class PopUpMessageDesc*                                      PopUpDesc;                                         // 0x18(0x8)
+};
+
+
+// Size 0x30
+struct GlobalDigSpotDefinition
+{
+public:
+	struct StoryFlag                                             Story;                                             // 0x0(0x8)
+	class VoyageDescDataAsset*                                   VoyageDesc;                                        // 0x8(0x8)
+	struct StringAssetReference                                  ActorWithNamedPointComponent;                      // 0x10(0x10)
+	struct FName                                                 NamedPoint;                                        // 0x20(0x8)
+	class TaleQuestWeightedItemDescSpawnDataAsset*               Rewards;                                           // 0x28(0x8)
 };
 
 

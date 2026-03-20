@@ -7,19 +7,19 @@
 class LocationProviderService: public Object
 {
 public:
-	char                                                         pad0x80_QSCJR[0x80];                               // 0x28(0x80)
+	char                                                         pad0x80_99ZAC[0x80];                               // 0x28(0x80)
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class LocationType: public Object
+class LocationProviderServiceInterface: public Interface
 {
 public:
 };
 
 
 // Size 0x0 (Full Size[0x28] - InheritedSize[0x28]
-class LocationProviderServiceInterface: public Interface
+class LocationType: public Object
 {
 public:
 };

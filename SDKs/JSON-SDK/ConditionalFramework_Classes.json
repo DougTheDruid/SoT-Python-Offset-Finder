@@ -1,24 +1,4 @@
 {
-  "ActorSpecifierComponent": {
-    "Super": "ActorComponent",
-    "FullSize": "0xc8",
-    "InheritedSize": "0xb8",
-    "ClassSize": "0x10",
-    "Attributes": [
-      {
-        "Name": "pad0x8_W0VCC[0x8]",
-        "Type": "char",
-        "Size": "0x8",
-        "Offset": "0xb8"
-      },
-      {
-        "Name": "SpecifiedActor",
-        "Type": "class Actor*",
-        "Size": "0x8",
-        "Offset": "0xc0"
-      }
-    ]
-  },
   "ActorSpecifierInterface": {
     "Super": "Interface",
     "FullSize": "0x28",
@@ -37,6 +17,26 @@
         "Type": "struct ConditionInstance",
         "Size": "0x20",
         "Offset": "0x28"
+      }
+    ]
+  },
+  "ActorSpecifierComponent": {
+    "Super": "ActorComponent",
+    "FullSize": "0xc8",
+    "InheritedSize": "0xb8",
+    "ClassSize": "0x10",
+    "Attributes": [
+      {
+        "Name": "pad0x8_S0UNE[0x8]",
+        "Type": "char",
+        "Size": "0x8",
+        "Offset": "0xb8"
+      },
+      {
+        "Name": "SpecifiedActor",
+        "Type": "class Actor*",
+        "Size": "0x8",
+        "Offset": "0xc0"
       }
     ]
   },

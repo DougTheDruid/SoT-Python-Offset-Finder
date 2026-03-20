@@ -16,7 +16,7 @@ CoordinatedKrakenPhaseActionsDataAsset:
     Offset: '0x38'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_JLGQ3[0x7]
+  - Name: pad0x7_8QNFL[0x7]
     Offset: '0x39'
     Size: '0x7'
     Type: char
@@ -70,7 +70,7 @@ EnvQueryGenerator_KrakenTentacleSpawnLocations:
     Offset: '0x58'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_VEW53[0x7]
+  - Name: pad0x7_NPMNQ[0x7]
     Offset: '0x59'
     Size: '0x7'
     Type: char
@@ -86,7 +86,7 @@ KillingTheKrakenConditionalStatTrigger:
   Super: ConditionalStatsTriggerType
 Kraken:
   Attributes:
-  - Name: pad0x18_XAIL2[0x18]
+  - Name: pad0x18_NSXTR[0x18]
     Offset: '0x3a0'
     Size: '0x18'
     Type: char
@@ -94,7 +94,7 @@ Kraken:
     Offset: '0x3b8'
     Size: '0x4'
     Type: float
-  - Name: pad0x14_Q8SRK[0x14]
+  - Name: pad0x14_130LO[0x14]
     Offset: '0x3bc'
     Size: '0x14'
     Type: char
@@ -118,7 +118,7 @@ Kraken:
     Offset: '0x3dd'
     Size: '0x1'
     Type: byte
-  - Name: pad0x1b2_91TVC[0x1b2]
+  - Name: pad0x1b2_FCXID[0x1b2]
     Offset: '0x3de'
     Size: '0x1b2'
     Type: char
@@ -150,7 +150,7 @@ Kraken:
     Offset: '0x690'
     Size: '0x170'
     Type: struct KrakenParams
-  - Name: pad0x18_5CF5H[0x18]
+  - Name: pad0x18_NXKQT[0x18]
     Offset: '0x800'
     Size: '0x18'
     Type: char
@@ -158,12 +158,12 @@ Kraken:
     Offset: '0x818'
     Size: '0x4'
     Type: int
-  - Name: pad0x154_UUOPR[0x154]
+  - Name: pad0x144_MNMB6[0x144]
     Offset: '0x81c'
-    Size: '0x154'
+    Size: '0x144'
     Type: char
-  ClassSize: '0x5d0'
-  FullSize: '0x970'
+  ClassSize: '0x5c0'
+  FullSize: '0x960'
   InheritedSize: '0x3a0'
   Super: Actor
 KrakenAnimatedTentacleAnimationDataAsset:
@@ -192,7 +192,7 @@ KrakenAnimatedTentacleAnimationDataAsset:
     Offset: '0x3d'
     Size: '0x1'
     Type: bool
-  - Name: pad0x2_XDFHF[0x2]
+  - Name: pad0x2_RAQN9[0x2]
     Offset: '0x3e'
     Size: '0x2'
     Type: char
@@ -200,7 +200,7 @@ KrakenAnimatedTentacleAnimationDataAsset:
     Offset: '0x40'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_NWCIE[0x4]
+  - Name: pad0x4_QC4Q8[0x4]
     Offset: '0x44'
     Size: '0x4'
     Type: char
@@ -234,7 +234,7 @@ KrakenAnimatedTentacleAnimationSpecDataAsset:
   Super: DataAsset
 KrakenAnimatedTentacleStateAnimationsDataAsset:
   Attributes:
-  - Name: pad0x20_8UQVE[0x20]
+  - Name: pad0x20_E7ZDH[0x20]
     Offset: '0x28'
     Size: '0x20'
     Type: char
@@ -248,7 +248,7 @@ KrakenAnimatedTentacleStateAnimationsDataAsset:
   Super: DataAsset
 KrakenHead:
   Attributes:
-  - Name: pad0x10_Q5HVS[0x10]
+  - Name: pad0x10_6M957[0x10]
     Offset: '0x3a0'
     Size: '0x10'
     Type: char
@@ -288,7 +288,7 @@ KrakenHead:
     Offset: '0x3f8'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_IO4QH[0x4]
+  - Name: pad0x4_VTOC1[0x4]
     Offset: '0x3fc'
     Size: '0x4'
     Type: char
@@ -300,7 +300,7 @@ KrakenHead:
     Offset: '0x410'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_AT82V[0x4]
+  - Name: pad0x4_VQFT1[0x4]
     Offset: '0x414'
     Size: '0x4'
     Type: char
@@ -316,7 +316,7 @@ KrakenHead:
     Offset: '0x428'
     Size: '0x54'
     Type: struct KnockBackInfo
-  - Name: pad0x4_11F5N[0x4]
+  - Name: pad0x4_3FDPF[0x4]
     Offset: '0x47c'
     Size: '0x4'
     Type: char
@@ -328,7 +328,7 @@ KrakenHead:
     Offset: '0x488'
     Size: '0xc'
     Type: struct Vector
-  - Name: pad0x4_SCQ13[0x4]
+  - Name: pad0x4_5ZDHF[0x4]
     Offset: '0x494'
     Size: '0x4'
     Type: char
@@ -344,7 +344,7 @@ KrakenHead:
     Offset: '0x4b8'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_MQP69[0x7]
+  - Name: pad0x7_LAGVO[0x7]
     Offset: '0x4b9'
     Size: '0x7'
     Type: char
@@ -352,20 +352,20 @@ KrakenHead:
     Offset: '0x4c0'
     Size: '0x8'
     Type: class SceneComponent*
-  - Name: pad0xc0_9CKV4[0xc0]
+  - Name: pad0xb8_I1Y4P[0xb8]
     Offset: '0x4c8'
-    Size: '0xc0'
+    Size: '0xb8'
     Type: char
   - Name: BiteAttackImpactNamedPointsGroupName
-    Offset: '0x588'
+    Offset: '0x580'
     Size: '0x8'
     Type: struct FName
-  - Name: pad0x20_24YW3[0x20]
-    Offset: '0x590'
+  - Name: pad0x20_RJJ1V[0x20]
+    Offset: '0x588'
     Size: '0x20'
     Type: char
-  ClassSize: '0x210'
-  FullSize: '0x5b0'
+  ClassSize: '0x208'
+  FullSize: '0x5a8'
   InheritedSize: '0x3a0'
   Super: Actor
 KrakenHeadAnimationInstance:
@@ -394,7 +394,7 @@ KrakenHeadAnimationInstance:
     Offset: '0x460'
     Size: '0x1'
     Type: bool
-  - Name: pad0x7_WEFPT[0x7]
+  - Name: pad0x7_JEPBM[0x7]
     Offset: '0x461'
     Size: '0x7'
     Type: char
@@ -402,7 +402,7 @@ KrakenHeadAnimationInstance:
     Offset: '0x468'
     Size: '0x8'
     Type: class AnimMontage*
-  - Name: pad0x10_TF6VC[0x10]
+  - Name: pad0x10_QNKAK[0x10]
     Offset: '0x470'
     Size: '0x10'
     Type: char
@@ -410,7 +410,7 @@ KrakenHeadAnimationInstance:
     Offset: '0x480'
     Size: '0x8'
     Type: class KrakenHeadHitReactAnimationsDataAsset*
-  - Name: pad0x18_HWDHD[0x18]
+  - Name: pad0x18_V3JRE[0x18]
     Offset: '0x488'
     Size: '0x18'
     Type: char
@@ -492,7 +492,7 @@ KrakenPlayerGrabbingBehaviourParamsDataAsset:
   Super: DataAsset
 KrakenService:
   Attributes:
-  - Name: pad0x10_V4HJE[0x10]
+  - Name: pad0x10_OPLQO[0x10]
     Offset: '0x3a0'
     Size: '0x10'
     Type: char
@@ -500,7 +500,7 @@ KrakenService:
     Offset: '0x3b0'
     Size: '0x40'
     Type: struct KrakenServiceParams
-  - Name: pad0x20_O6X5B[0x20]
+  - Name: pad0x20_PWNL2[0x20]
     Offset: '0x3f0'
     Size: '0x20'
     Type: char
@@ -508,7 +508,7 @@ KrakenService:
     Offset: '0x410'
     Size: '0x8'
     Type: class Kraken*
-  - Name: pad0x268_RC7ZH[0x268]
+  - Name: pad0x268_9OH3J[0x268]
     Offset: '0x418'
     Size: '0x268'
     Type: char
@@ -538,7 +538,7 @@ KrakenShipHittingBehaviourParamsDataAsset:
   Super: DataAsset
 KrakenShipWrappingBehaviourParamsDataAsset:
   Attributes:
-  - Name: pad0x8_TLF38[0x8]
+  - Name: pad0x8_T37TM[0x8]
     Offset: '0x28'
     Size: '0x8'
     Type: char
@@ -568,7 +568,7 @@ KrakenShipWrappingKnockbackRegionComponent:
     Offset: '0x2e8'
     Size: '0x54'
     Type: struct KnockBackInfo
-  - Name: pad0x34_IU3D4[0x34]
+  - Name: pad0x34_9GHTZ[0x34]
     Offset: '0x33c'
     Size: '0x34'
     Type: char
@@ -579,80 +579,80 @@ KrakenShipWrappingKnockbackRegionComponent:
 KrakenShipWrappingTentacle:
   Attributes:
   - Name: SceneRoot
-    Offset: '0x4f0'
+    Offset: '0x4e8'
     Size: '0x8'
     Type: class SceneComponent*
   - Name: TentacleCollisions
-    Offset: '0x4f8'
+    Offset: '0x4f0'
     Size: '0x8'
     Type: class StaticMeshComponent*
   - Name: TentacleMesh
-    Offset: '0x500'
+    Offset: '0x4f8'
     Size: '0x8'
     Type: class StaticMeshComponent*
   - Name: DamageZone
-    Offset: '0x508'
+    Offset: '0x500'
     Size: '0x8'
     Type: class BoxComponent*
   - Name: InteractableBlockingRegions
-    Offset: '0x510'
+    Offset: '0x508'
     Size: '0x8'
     Type: class SceneComponent*
   - Name: KnockbackRegions
-    Offset: '0x518'
+    Offset: '0x510'
     Size: '0x8'
     Type: class SceneComponent*
   - Name: TentacleHeadCollisions
-    Offset: '0x520'
+    Offset: '0x518'
     Size: '0x8'
     Type: class BoxComponent*
   - Name: TentacleHeadKnockbackRegions
-    Offset: '0x528'
+    Offset: '0x520'
     Size: '0x8'
     Type: class SceneComponent*
   - Name: AudioComponent
-    Offset: '0x530'
+    Offset: '0x528'
     Size: '0x8'
     Type: class KrakenShipWrappingTentacleAIAudioComponent*
   - Name: LowDetailTentacleMesh
-    Offset: '0x538'
+    Offset: '0x530'
     Size: '0x8'
     Type: class StaticMesh*
   - Name: HighDetailTentacleMeshAsset
-    Offset: '0x540'
+    Offset: '0x538'
     Size: '0x10'
     Type: struct StringAssetReference
   - Name: Params
-    Offset: '0x550'
+    Offset: '0x548'
     Size: '0xf0'
     Type: struct KrakenShipWrappingTentacleParams
   - Name: TentacleDynamicMaterialInstance
-    Offset: '0x640'
+    Offset: '0x638'
     Size: '0x8'
     Type: class MaterialInstanceDynamic*
   - Name: HighDetailTentacleMesh
-    Offset: '0x648'
+    Offset: '0x640'
     Size: '0x8'
     Type: class StaticMesh*
   - Name: CurrentServerAnimationState
-    Offset: '0x650'
+    Offset: '0x648'
     Size: '0x10'
     Type: struct KrakenShipWrappingTentacleAnimationState
   - Name: PendingServerAnimationState
-    Offset: '0x660'
+    Offset: '0x658'
     Size: '0x10'
     Type: struct KrakenShipWrappingTentacleAnimationState
-  - Name: pad0x70_OTCQV[0x70]
-    Offset: '0x670'
+  - Name: pad0x70_TLZH8[0x70]
+    Offset: '0x668'
     Size: '0x70'
     Type: char
   ClassSize: '0x1f0'
-  FullSize: '0x6e0'
-  InheritedSize: '0x4f0'
+  FullSize: '0x6d8'
+  InheritedSize: '0x4e8'
   Super: KrakenTentacle
 KrakenTelemetryComponent:
   Attributes:
-  - Name: pad0x190_5PW6J[0x190]
+  - Name: pad0x190_NM1YQ[0x190]
     Offset: '0xb8'
     Size: '0x190'
     Type: char
@@ -662,7 +662,7 @@ KrakenTelemetryComponent:
   Super: ActorComponent
 KrakenTentacle:
   Attributes:
-  - Name: pad0x28_I1WA0[0x28]
+  - Name: pad0x28_TDI0R[0x28]
     Offset: '0x3a0'
     Size: '0x28'
     Type: char
@@ -682,12 +682,12 @@ KrakenTentacle:
     Offset: '0x3e0'
     Size: '0x4'
     Type: float
-  - Name: pad0x10c_NUY4C[0x10c]
+  - Name: pad0x104_SXAWF[0x104]
     Offset: '0x3e4'
-    Size: '0x10c'
+    Size: '0x104'
     Type: char
-  ClassSize: '0x150'
-  FullSize: '0x4f0'
+  ClassSize: '0x148'
+  FullSize: '0x4e8'
   InheritedSize: '0x3a0'
   Super: Actor
 Murk:
@@ -712,7 +712,7 @@ Murk:
     Offset: '0x3c0'
     Size: '0x4'
     Type: float
-  - Name: pad0x4_REN0T[0x4]
+  - Name: pad0x4_ZHKNS[0x4]
     Offset: '0x3c4'
     Size: '0x4'
     Type: char
@@ -724,7 +724,7 @@ Murk:
     Offset: '0x3d0'
     Size: '0x8'
     Type: class MaterialInstanceDynamic*
-  - Name: pad0x68_GWL15[0x68]
+  - Name: pad0x68_OT4HI[0x68]
     Offset: '0x3d8'
     Size: '0x68'
     Type: char

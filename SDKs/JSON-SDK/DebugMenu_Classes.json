@@ -1,18 +1,4 @@
 {
-  "DebugMenu": {
-    "Super": "Actor",
-    "FullSize": "0x478",
-    "InheritedSize": "0x3a0",
-    "ClassSize": "0xd8",
-    "Attributes": [
-      {
-        "Name": "pad0xd8_IUP8S[0xd8]",
-        "Type": "char",
-        "Size": "0xd8",
-        "Offset": "0x3a0"
-      }
-    ]
-  },
   "DebugMenuDataAsset": {
     "Super": "DataAsset",
     "FullSize": "0x68",
@@ -52,6 +38,27 @@
     "ClassSize": "0x0",
     "Attributes": []
   },
+  "DebugMenu": {
+    "Super": "Actor",
+    "FullSize": "0x478",
+    "InheritedSize": "0x3a0",
+    "ClassSize": "0xd8",
+    "Attributes": [
+      {
+        "Name": "pad0xd8_68YNM[0xd8]",
+        "Type": "char",
+        "Size": "0xd8",
+        "Offset": "0x3a0"
+      }
+    ]
+  },
+  "DebugMenuTestFunctions": {
+    "Super": "BlueprintFunctionLibrary",
+    "FullSize": "0x28",
+    "InheritedSize": "0x28",
+    "ClassSize": "0x0",
+    "Attributes": []
+  },
   "DebugMenuComponent": {
     "Super": "ActorComponent",
     "FullSize": "0x108",
@@ -59,7 +66,7 @@
     "ClassSize": "0x50",
     "Attributes": [
       {
-        "Name": "pad0x28_BC4S5[0x28]",
+        "Name": "pad0x28_7JWQB[0x28]",
         "Type": "char",
         "Size": "0x28",
         "Offset": "0xb8"
@@ -71,19 +78,12 @@
         "Offset": "0xe0"
       },
       {
-        "Name": "pad0x20_9ZH7R[0x20]",
+        "Name": "pad0x20_EC39P[0x20]",
         "Type": "char",
         "Size": "0x20",
         "Offset": "0xe8"
       }
     ]
-  },
-  "DebugMenuTestFunctions": {
-    "Super": "BlueprintFunctionLibrary",
-    "FullSize": "0x28",
-    "InheritedSize": "0x28",
-    "ClassSize": "0x0",
-    "Attributes": []
   },
   "DebugMenuComponentMock": {
     "Super": "DebugMenuComponent",
@@ -92,7 +92,7 @@
     "ClassSize": "0x8",
     "Attributes": [
       {
-        "Name": "pad0x8_1GK1V[0x8]",
+        "Name": "pad0x8_55SUN[0x8]",
         "Type": "char",
         "Size": "0x8",
         "Offset": "0x108"

@@ -2,7 +2,7 @@
 # https://github.com/DougTheDruid
 AnalogInputId:
   Attributes:
-  - Name: pad0x10_ESNZX[0x10]
+  - Name: pad0x10_C5HXE[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char
@@ -12,7 +12,7 @@ AnalogInputId:
   Super: Object
 NotificationInputId:
   Attributes:
-  - Name: pad0x10_U6LXO[0x10]
+  - Name: pad0x10_ZPATY[0x10]
     Offset: '0x28'
     Size: '0x10'
     Type: char

@@ -9,7 +9,7 @@ struct MMIRuntimePetInfo
 public:
 	struct FString                                               PetId;                                             // 0x0(0x10)
 	int                                                          ExclusiveSize;                                     // 0x10(0x4)
-	char                                                         pad0x4_7Z5DY[0x4];                                 // 0x14(0x4)
+	char                                                         pad0x4_OMSAJ[0x4];                                 // 0x14(0x4)
 };
 
 

@@ -8,7 +8,7 @@ struct LightBeamParams
 {
 public:
 	class Actor*                                                 SourceActor;                                       // 0x0(0x8)
-	char                                                         pad0x28_PD83F[0x28];                               // 0x8(0x28)
+	char                                                         pad0x28_9YZHD[0x28];                               // 0x8(0x28)
 };
 
 
