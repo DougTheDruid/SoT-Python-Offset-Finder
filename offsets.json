@@ -3,7 +3,7 @@
   "Actor.rootComponent": 352,
   "CameraCacheEntry.MinimalViewInfo": 16,
   "Crew.Players": 32,
-  "Crew.Size": 160,
+  "Crew.Size": 176,
   "CrewService.Crews": 1144,
   "GameInstance.LocalPlayers": 56,
   "LocalPlayer.PlayerController": 48,
